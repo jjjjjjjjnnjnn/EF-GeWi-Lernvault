@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import type { Lang } from "../i18n";
 import { MascotFox } from "../components/mascot/MascotFox";
+import { THEMES, getStoredTheme, setStoredTheme, type ThemeId } from "../engine/theme";
 
 export interface DashboardCockpitProps {
   lang: Lang;
@@ -320,6 +321,16 @@ export function DashboardCockpit({
   const [hoveredMetricCode, setHoveredMetricCode] = useState<string | null>(null);
   const [expandedDetail, setExpandedDetail] = useState(false);
   const [selectedStufeId, setSelectedStufeId] = useState<string>("q1_vertiefung");
+  const [currentThemeId, setCurrentThemeId] = useState<ThemeId>(getStoredTheme);
+  const currentThemeObj = THEMES.find((t) => t.id === currentThemeId) || THEMES[0];
+
+  const cycleTheme = () => {
+    const currentIndex = THEMES.findIndex((t) => t.id === currentThemeId);
+    const nextIndex = (currentIndex + 1) % THEMES.length;
+    const nextTheme = THEMES[nextIndex];
+    setCurrentThemeId(nextTheme.id);
+    setStoredTheme(nextTheme.id);
+  };
 
   const toggleMission = (id: string, xp: number) => {
     setCompletedMissions((prev) => {
@@ -376,23 +387,19 @@ export function DashboardCockpit({
             </span>
           </div>
 
-          {/* 主题切换器 */}
+          {/* 主题切换器 (4 大学术主题风格轮换) */}
           <button
             type="button"
-            onClick={() => {
-              const current = document.documentElement.getAttribute("data-theme") || "academic";
-              const nextTheme = current === "cyber" ? "academic" : "cyber";
-              document.documentElement.setAttribute("data-theme", nextTheme);
-              try {
-                localStorage.setItem("ef_lernstyle_theme", nextTheme);
-              } catch {
-                // ignore
-              }
-            }}
-            className="text-xs font-mono text-slate-600 hover:text-slate-900 border border-slate-200/90 px-3 py-1.5 rounded-xl bg-white hover:bg-slate-50 transition-all cursor-pointer"
-            title={de ? "Theme wechseln (Cyber / Academic)" : "切换主题 (暗黑精锐 / 极简学术)"}
+            onClick={cycleTheme}
+            className="text-xs font-mono text-slate-800 hover:text-slate-950 border border-slate-300 px-3 py-1.5 rounded-xl bg-white hover:bg-slate-50 transition-all cursor-pointer flex items-center gap-1.5 font-semibold"
+            title={de ? `Thema: ${currentThemeObj.nameDE} (Klicken zum Wechseln)` : `主题风格: ${currentThemeObj.nameZH} (点击切换)`}
           >
-            {de ? "Theme" : "暗黑/浅色"}
+            <svg width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
+              <circle cx="8" cy="8" r="6" />
+              <path d="M8 2v12" />
+              <path d="M8 2a6 6 0 0 1 0 12z" fill="currentColor" opacity="0.3" />
+            </svg>
+            <span>{de ? currentThemeObj.nameDE : currentThemeObj.nameZH}</span>
           </button>
 
           {onSwitchToLegacy && (
@@ -462,7 +469,7 @@ export function DashboardCockpit({
             </div>
           </div>
 
-          {/* 3. 内嵌式考纲阶段时间线 (合并原独立通栏 Stepper，省出150px高度) */}
+          {/* 3. 内嵌式轻量时间线 Stepper (去套娃矩形框，纯净点线连接) */}
           <div className="pt-4 border-t border-slate-100 space-y-2.5">
             <div className="flex items-center justify-between text-xs">
               <span className="font-mono text-[10px] uppercase tracking-wider text-slate-500 font-bold">
@@ -473,49 +480,52 @@ export function DashboardCockpit({
               </span>
             </div>
 
-            {/* 水平轻量 Stepper：纯网格卡片内自适应，无溢出风险 */}
-            <div className="grid grid-cols-3 gap-2">
-              {DEMO_STUFEN.map((s) => {
+            {/* 纯净时间线节点展示 */}
+            <div className="flex items-center justify-between gap-1 py-1">
+              {DEMO_STUFEN.map((s, index) => {
                 const isDone = s.status === "completed";
                 const isCurr = s.status === "current";
                 const isSelected = s.id === selectedStufeId;
 
                 return (
-                  <button
-                    key={s.id}
-                    type="button"
-                    onClick={() => setSelectedStufeId(s.id)}
-                    className={`p-2 rounded-lg border text-left transition-all cursor-pointer flex items-center gap-2 ${
-                      isSelected
-                        ? "bg-slate-100/90 border-slate-300 ring-1 ring-slate-300"
-                        : "bg-white border-slate-200 hover:bg-slate-50"
-                    }`}
-                  >
-                    <div className="w-5 h-5 rounded-full flex items-center justify-center shrink-0 border border-slate-300 bg-white">
-                      {isDone ? (
-                        <svg width="10" height="10" viewBox="0 0 12 12" fill="none">
-                          <path d="M2.5 6L5 8.5L9.5 3.5" stroke="#16A34A" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                        </svg>
-                      ) : isCurr ? (
-                        <span className="w-2 h-2 rounded-full bg-slate-900" />
-                      ) : (
-                        <span className="w-1.5 h-1.5 rounded-full bg-slate-300" />
-                      )}
-                    </div>
-                    <div className="min-w-0">
-                      <div className="text-xs font-bold text-slate-900 truncate">
+                  <div key={s.id} className="flex items-center flex-1 last:flex-none">
+                    <button
+                      type="button"
+                      onClick={() => setSelectedStufeId(s.id)}
+                      className={`flex items-center gap-1.5 py-1 px-1.5 rounded-lg transition-all cursor-pointer ${
+                        isSelected
+                          ? "bg-slate-100/90 text-slate-900 font-bold"
+                          : "hover:bg-slate-50 text-slate-700"
+                      }`}
+                    >
+                      <div className="w-4 h-4 rounded-full flex items-center justify-center shrink-0 border border-slate-300 bg-white">
+                        {isDone ? (
+                          <svg width="9" height="9" viewBox="0 0 12 12" fill="none">
+                            <path d="M2.5 6L5 8.5L9.5 3.5" stroke="#16A34A" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
+                          </svg>
+                        ) : isCurr ? (
+                          <span className="w-2 h-2 rounded-full bg-slate-900" />
+                        ) : (
+                          <span className="w-1.5 h-1.5 rounded-full bg-slate-300" />
+                        )}
+                      </div>
+                      <span className={`text-xs ${isCurr ? "font-bold text-slate-900" : "font-medium"}`}>
                         {de ? s.stufeDE : s.stufeZH}
-                      </div>
-                      <div className="font-mono text-[10px] text-slate-500">
-                        &ge; {s.minNP} NP
-                      </div>
-                    </div>
-                  </button>
+                      </span>
+                      <span className="font-mono text-[10px] text-slate-400">
+                        (&ge;{s.minNP})
+                      </span>
+                    </button>
+
+                    {index < DEMO_STUFEN.length - 1 && (
+                      <div className="h-px bg-slate-200 flex-1 mx-2 min-w-3" />
+                    )}
+                  </div>
                 );
               })}
             </div>
 
-            {/* 当前选中阶的已解锁战力提示（保留测试所需：已解锁基础术语词典） */}
+            {/* 当前选中阶的特权清单 */}
             <div className="flex flex-wrap items-center gap-1.5 text-xs pt-0.5">
               <span className="font-mono text-[10px] text-slate-500 font-bold">
                 {de ? "Freigeschaltet:" : "已解锁战力:"}
@@ -532,8 +542,8 @@ export function DashboardCockpit({
           </div>
         </div>
 
-        {/* 右侧：今日行动卡 (4 Col, Surface 1 白卡，与左侧视觉平权) */}
-        <div className="lg:col-span-4 card-elevation p-6 flex flex-col justify-between relative overflow-hidden space-y-5">
+        {/* 右侧：今日行动卡 (4 Col, Surface 1 白卡，饱满对称沉稳) */}
+        <div className="lg:col-span-4 card-elevation p-6 flex flex-col justify-between relative overflow-hidden space-y-4">
           {/* 极浅的环境装饰光 (Diffuse Accent) */}
           <div className="absolute -top-12 -right-12 w-36 h-36 bg-amber-500/10 rounded-full blur-2xl pointer-events-none" />
 
@@ -544,7 +554,7 @@ export function DashboardCockpit({
               </span>
               <span className="text-xs text-slate-600 font-mono font-bold">15 Min</span>
             </div>
-            <h3 className="text-lg font-bold text-slate-900 mt-3 font-serif">
+            <h3 className="text-lg font-bold text-slate-900 mt-2.5 font-serif">
               {de ? "Klausur-Fokussprint" : "今日考点靶向冲刺"}
             </h3>
             <p className="text-xs text-slate-700 mt-1 leading-relaxed">
@@ -555,7 +565,20 @@ export function DashboardCockpit({
             </p>
           </div>
 
-          <div className="space-y-2 pt-2">
+          {/* 中部收益摘要微卡，消除大片真空 */}
+          <div className="p-3 rounded-xl bg-slate-50/80 border border-slate-200/80 space-y-1 text-xs">
+            <div className="flex items-center justify-between text-slate-700 font-medium">
+              <span>{de ? "Fokus-Paket:" : "今日攻坚包:"}</span>
+              <span className="font-mono font-bold text-slate-900">3 Rezepte · 15 Min</span>
+            </div>
+            <div className="text-[11px] text-slate-500 leading-normal">
+              {de
+                ? "1x GeWi Argumentation (D2) + 2x MINT/Fachtermini"
+                : "覆盖 1 项文科深度论证 (D2) + 2 项理科采分点与词卡"}
+            </div>
+          </div>
+
+          <div className="space-y-2 pt-1">
             <button
               type="button"
               onClick={() => onNavigateToTab?.("flashcards")}
@@ -620,7 +643,7 @@ export function DashboardCockpit({
                   return (
                     <div
                       key={m.id}
-                      className={`py-3.5 flex items-center justify-between group gap-3 ${
+                      className={`py-3 px-2 rounded-xl flex items-center justify-between group gap-3 hover:bg-slate-50/80 transition-colors ${
                         done ? "opacity-60" : ""
                       }`}
                     >
@@ -645,11 +668,11 @@ export function DashboardCockpit({
                             <span className="px-1.5 py-0.5 rounded text-[10px] font-bold bg-slate-100 text-slate-700 border border-slate-200 font-mono">
                               {m.tag}
                             </span>
-                            <span className="text-xs font-bold text-slate-900 group-hover:text-blue-700 transition-colors">
+                            <span className="text-sm font-semibold text-slate-900 group-hover:text-blue-700 transition-colors">
                               {de ? m.titleDE : m.titleZH}
                             </span>
                           </div>
-                          <div className="text-[11px] text-slate-600 font-mono flex items-center gap-2">
+                          <div className="text-xs text-slate-500 font-mono flex items-center gap-2">
                             <span className="font-medium">{de ? m.difficultyDE : m.difficultyZH}</span>
                             <span>&bull;</span>
                             <span className="text-amber-800 font-bold">+{m.xpReward} XP</span>
