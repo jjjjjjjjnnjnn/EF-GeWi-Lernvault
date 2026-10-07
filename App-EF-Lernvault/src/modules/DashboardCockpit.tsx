@@ -218,6 +218,8 @@ const DEMO_BE_METRICS: RadarMetric[] = [
 interface MissionItem {
   id: string;
   type: "flashcards" | "reise" | "klausursim" | "lego";
+  fach: "Deutsch" | "SoWi" | "Mathe" | "Englisch" | "Physik";
+  afb: "AFB I" | "AFB II" | "AFB III";
   titleDE: string;
   titleZH: string;
   tag: string;
@@ -233,6 +235,8 @@ const DEMO_MISSIONS: MissionItem[] = [
   {
     id: "m1",
     type: "flashcards",
+    fach: "Deutsch",
+    afb: "AFB I",
     titleDE: "12 fällige [D4]-Fachtermini im FSRS-Expressdurchlauf festigen",
     titleZH: "清空 12 张 [D4] 学科专业术语薄弱词卡 (FSRS 智能提权)",
     tag: "Vokabeln · D4",
@@ -245,6 +249,8 @@ const DEMO_MISSIONS: MissionItem[] = [
   {
     id: "m2",
     type: "reise",
+    fach: "SoWi",
+    afb: "AFB II",
     titleDE: "SoWi IF 1: «Drei-Ebenen-Trennung: Deskription vs. Deutung»",
     titleZH: "攻克 1 门微课: SoWi «三态分流：客观描述 vs 机制分析 vs 价值评价»",
     tag: "Lernreise · D2",
@@ -258,6 +264,8 @@ const DEMO_MISSIONS: MissionItem[] = [
   {
     id: "m3",
     type: "klausursim",
+    fach: "Mathe",
+    afb: "AFB II",
     titleDE: "10-Minuten-Aufgabe: Extremwert-Randwertvergleich (BE-Genauigkeit)",
     titleZH: "限时 10 分钟冲刺: 数学极值闭区间端点检验题 (BE-Genauigkeit 专项)",
     tag: "Klausur · MINT-BE",
@@ -358,10 +366,13 @@ export function DashboardCockpit({
         </div>
 
         <div className="flex items-center gap-2.5 self-start sm:self-auto">
-          {/* 连续打卡动量徽章 (Streak Momentum) */}
-          <div className="flex items-center gap-2 border border-[var(--line)] bg-[var(--surface)] px-2.5 py-1 rounded">
-            <span className="w-2 h-2 rounded-full bg-[var(--accent)] animate-pulse" />
-            <span className="font-mono text-xs font-semibold text-[var(--ink)]">
+          {/* 连续打卡动量徽章 (Streak Momentum - German Precision) */}
+          <div className="flex items-center gap-2 border border-[var(--accent)]/30 bg-[var(--paper-subtle)] px-2.5 py-1 rounded select-none">
+            <span className="relative flex h-2 w-2">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[var(--accent)] opacity-75" />
+              <span className="relative inline-flex rounded-full h-2 w-2 bg-[var(--accent)]" />
+            </span>
+            <span className="font-mono text-xs font-bold text-[var(--ink)] tabular-nums">
               18 {de ? "Tage Streak" : "天连胜"}
             </span>
           </div>
@@ -404,7 +415,7 @@ export function DashboardCockpit({
         <div className="absolute -top-12 -right-12 w-48 h-48 rounded-full bg-[var(--accent)]/5 pointer-events-none blur-2xl" />
 
         <div className="flex flex-col md:flex-row md:items-center justify-between gap-5 relative z-10">
-          {/* 左侧：战力徽章与经验池 */}
+          {/* 左侧：战力徽章与经验池 (German Abitur 1-15 Notenpunkte System) */}
           <div className="flex items-center gap-4">
             {/* 精致学术盾牌/质感印章徽标 */}
             <div className="flex items-center justify-center w-14 h-14 rounded border border-[var(--accent)]/30 bg-[var(--paper-subtle)] shrink-0 select-none transition-transform hover:scale-105 duration-200">
@@ -412,7 +423,7 @@ export function DashboardCockpit({
                 <span className="block font-mono text-[9px] uppercase tracking-wider text-[var(--gray)] font-semibold">
                   LEVEL
                 </span>
-                <span className="block font-serif text-2xl font-bold text-[var(--ink)] leading-none">
+                <span className="block font-serif text-2xl font-bold text-[var(--ink)] leading-none tabular-nums">
                   11
                 </span>
                 <span className="block font-mono text-[8px] text-[var(--accent)] font-bold tracking-tight">
@@ -422,18 +433,21 @@ export function DashboardCockpit({
             </div>
 
             <div className="space-y-1">
-              <div className="flex items-center gap-2">
+              <div className="flex items-center gap-2 flex-wrap">
                 <span className="font-serif text-xl font-medium text-[var(--ink)]">
                   11 Notenpunkte
                 </span>
                 <span className="font-mono text-[10px] uppercase px-2 py-0.5 rounded bg-[var(--accent)] text-[var(--paper)] font-bold tracking-wide">
                   {de ? "Stufe II · Q1-Niveau" : "第二阶 · Q1 进阶期"}
                 </span>
+                <span className="font-mono text-[10px] px-1.5 py-0.5 rounded border border-[var(--line)] bg-[var(--paper)] text-[var(--gray)] font-medium">
+                  {de ? "Note 2 (Gut)" : "2分档 · 良好 (Gut)"}
+                </span>
               </div>
-              <div className="flex items-center gap-2 font-mono text-xs text-[var(--gray)]">
+              <div className="flex items-center gap-2 font-mono text-xs text-[var(--gray)] tabular-nums">
                 <span className="text-[var(--ink)] font-semibold">{currentXP} / {targetXP} XP</span>
                 <span>·</span>
-                <span>{de ? `noch ${targetXP - currentXP} XP bis Stufe 12 NP` : `还差 ${targetXP - currentXP} XP 晋升 12 NP`}</span>
+                <span>{de ? `noch ${targetXP - currentXP} XP bis Sprung auf 13 NP (Note 1- Sehr gut)` : `还差 ${targetXP - currentXP} XP 跃升 13 NP (1分档·优秀)`}</span>
               </div>
             </div>
           </div>
@@ -454,9 +468,14 @@ export function DashboardCockpit({
           </div>
         </div>
 
-        {/* 经验进度条 (平滑补间动画与微光条) */}
-        <div className="mt-4 pt-3 border-t border-[var(--line)]/50">
-          <div className="h-1.5 w-full rounded-full bg-[var(--paper-subtle)] overflow-hidden">
+        {/* 经验进度条 (平滑补间动画与德国 Oberstufe 档位刻度) */}
+        <div className="mt-4 pt-3 border-t border-[var(--line)]/50 space-y-1.5">
+          <div className="flex items-center justify-between font-mono text-[10px] text-[var(--gray)] tabular-nums px-0.5">
+            <span>10 NP (Defizit-Grenze)</span>
+            <span className="text-[var(--accent)] font-semibold">11 NP (Aktuell)</span>
+            <span>13 NP (Sehr Gut Ziel)</span>
+          </div>
+          <div className="h-2 w-full rounded-full bg-[var(--paper-subtle)] overflow-hidden">
             <div
               className="h-full bg-[var(--accent)] rounded-full transition-all duration-700 ease-out"
               style={{ width: mounted ? `${(currentXP / targetXP) * 100}%` : "0%" }}
@@ -520,13 +539,21 @@ export function DashboardCockpit({
                         </button>
                         <div className="space-y-1">
                           <div className="flex items-center gap-1.5 flex-wrap">
+                            {/* 德国高中学科微标签 */}
+                            <span className="font-mono text-[9px] uppercase px-1.5 py-0.2 rounded border border-[var(--accent)]/30 bg-[var(--paper-subtle)] text-[var(--ink)] font-semibold">
+                              [{m.fach}]
+                            </span>
+                            {/* 认知层级 AFB I-III 规范徽章 */}
+                            <span className="font-mono text-[9px] uppercase px-1.5 py-0.2 rounded border border-[var(--line)] bg-[var(--surface)] text-[var(--gray)] font-medium">
+                              {m.afb}
+                            </span>
                             <span className="font-mono text-[9px] uppercase px-1.5 py-0.2 rounded border border-[var(--line)] bg-[var(--surface)] text-[var(--gray)] font-medium">
                               {m.tag}
                             </span>
-                            <span className="font-mono text-xs text-[var(--accent)] font-bold">
+                            <span className="font-mono text-xs text-[var(--accent)] font-bold tabular-nums">
                               +{m.xpReward} XP
                             </span>
-                            <span className="font-mono text-[10px] text-[var(--gray)]">
+                            <span className="font-mono text-[10px] text-[var(--gray)] tabular-nums">
                               · {de ? m.difficultyDE : m.difficultyZH}
                             </span>
                           </div>
