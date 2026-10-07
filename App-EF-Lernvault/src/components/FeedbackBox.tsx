@@ -320,6 +320,7 @@ export function FeedbackFloat({ lang }: { lang: Lang }) {
       >
         {open && <CloseIcon />}
         <span className="select-none">{`反馈${entries.length > 0 ? ` (${entries.length})` : ""}`}</span>
+        <span className="sr-only">Feedback / 反馈</span>
       </button>
     </div>
   );

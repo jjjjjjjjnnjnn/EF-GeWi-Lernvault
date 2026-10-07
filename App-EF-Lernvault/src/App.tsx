@@ -599,7 +599,7 @@ export default function App() {
               onClick={() => switchTab("home")}
               aria-current={tab === "home" ? "page" : undefined}
               aria-label={tr.home}
-              title={`${tr.home} (Alt 1)`}
+              title={tr.home}
               className={`group flex h-8 w-full items-center justify-center rounded-[var(--radius)] px-2 text-left text-xs transition-colors cursor-pointer xl:justify-start xl:gap-2 ${
                 tab === "home"
                   ? "bg-[var(--surface)] font-medium text-[var(--accent)] border border-[var(--line)] shadow-none"
@@ -612,9 +612,6 @@ export default function App() {
               <span className="hidden truncate font-sans text-xs font-medium xl:inline">
                 {tr.home}
               </span>
-              <kbd className="ml-auto hidden font-mono text-[10px] font-medium text-[var(--gray)] opacity-0 group-hover:opacity-100 transition-opacity xl:inline select-none">
-                Alt 1
-              </kbd>
             </button>
           </div>
 
@@ -632,7 +629,7 @@ export default function App() {
                   onClick={() => switchTab(sub.id)}
                   aria-current={isActive ? "page" : undefined}
                   aria-label={sub.label}
-                  title={`${sub.label} (${sub.shortcut})`}
+                  title={sub.label}
                   className={`group flex h-8 w-full items-center justify-center rounded-[var(--radius)] px-2 text-left text-xs transition-colors cursor-pointer xl:justify-start xl:gap-2 ${
                     isActive
                       ? "bg-[var(--surface)] font-medium text-[var(--accent)] border border-[var(--line)] shadow-none"
@@ -645,9 +642,6 @@ export default function App() {
                   <span className="hidden truncate font-sans text-xs font-medium xl:inline">
                     {sub.label}
                   </span>
-                  <kbd className="ml-auto hidden font-mono text-[10px] font-medium text-[var(--gray)] opacity-0 group-hover:opacity-100 transition-opacity xl:inline select-none">
-                    {sub.shortcut}
-                  </kbd>
                 </button>
               );
             })}
@@ -667,7 +661,7 @@ export default function App() {
                   onClick={() => switchTab(sub.id)}
                   aria-current={isActive ? "page" : undefined}
                   aria-label={sub.label}
-                  title={`${sub.label} (${sub.shortcut})`}
+                  title={sub.label}
                   className={`group flex h-8 w-full items-center justify-center rounded-[var(--radius)] px-2 text-left text-xs transition-colors cursor-pointer xl:justify-start xl:gap-2 ${
                     isActive
                       ? "bg-[var(--surface)] font-medium text-[var(--accent)] border border-[var(--line)] shadow-none"
@@ -680,9 +674,6 @@ export default function App() {
                   <span className="hidden truncate font-sans text-xs font-medium xl:inline">
                     {sub.label}
                   </span>
-                  <kbd className="ml-auto hidden font-mono text-[10px] font-medium text-[var(--gray)] opacity-0 group-hover:opacity-100 transition-opacity xl:inline select-none">
-                    {sub.shortcut}
-                  </kbd>
                 </button>
               );
             })}
@@ -702,7 +693,7 @@ export default function App() {
                   onClick={() => switchTab(sub.id)}
                   aria-current={isActive ? "page" : undefined}
                   aria-label={sub.label}
-                  title={`${sub.label} (${sub.shortcut})`}
+                  title={sub.label}
                   className={`group flex h-8 w-full items-center justify-center rounded-[var(--radius)] px-2 text-left text-xs transition-colors cursor-pointer xl:justify-start xl:gap-2 ${
                     isActive
                       ? "bg-[var(--surface)] font-medium text-[var(--accent)] border border-[var(--line)] shadow-none"
@@ -715,9 +706,6 @@ export default function App() {
                   <span className="hidden truncate font-sans text-xs font-medium xl:inline">
                     {sub.label}
                   </span>
-                  <kbd className="ml-auto hidden font-mono text-[10px] font-medium text-[var(--gray)] opacity-0 group-hover:opacity-100 transition-opacity xl:inline select-none">
-                    {sub.shortcut}
-                  </kbd>
                 </button>
               );
             })}
@@ -729,7 +717,7 @@ export default function App() {
             onClick={() => switchTab("einstellungen")}
             aria-current={tab === "einstellungen" ? "page" : undefined}
             aria-label={tr.settings}
-            title={`${tr.settings} (Alt 0)`}
+            title={tr.settings}
             className={`group flex h-8 w-full items-center justify-center rounded-[var(--radius)] px-2 text-left text-xs transition-colors cursor-pointer xl:justify-start xl:gap-2 ${
               tab === "einstellungen"
                 ? "bg-[var(--surface)] font-medium text-[var(--accent)] border border-[var(--line)] shadow-none"
@@ -742,9 +730,6 @@ export default function App() {
             <span className="hidden truncate font-sans text-xs font-medium xl:inline">
               {tr.settings}
             </span>
-            <kbd className="ml-auto hidden font-mono text-[10px] font-medium text-[var(--gray)] opacity-0 group-hover:opacity-100 transition-opacity xl:inline select-none">
-              Alt 0
-            </kbd>
           </button>
         </div>
 

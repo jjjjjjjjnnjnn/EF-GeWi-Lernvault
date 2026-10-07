@@ -239,64 +239,62 @@ const DEMO_MISSIONS: MissionItem[] = [
     type: "flashcards",
     fach: "Deutsch",
     afb: "AFB I",
-    titleDE: "12 fällige [D4]-Fachtermini im FSRS-Expressdurchlauf festigen",
-    titleZH: "清空 12 张 [D4] 学科专业术语词卡",
+    titleDE: "Deutsch: 12 Kerntermini festigen · [D4] (ca. 5 Min)",
+    titleZH: "德语核心学科术语复习 · 12张 [D4] (约 5 分钟)",
     tag: "D4 · 术语",
     xpReward: 40,
     estMinutes: 5,
     targetTab: "flashcards",
-    difficultyDE: "5 Min · P0 Express",
-    difficultyZH: "5 分钟 · P0 急救",
+    difficultyDE: "~5 Min · P0 Express",
+    difficultyZH: "~5 分钟 · 核心词卡",
   },
   {
     id: "m2",
     type: "reise",
     fach: "SoWi",
     afb: "AFB II",
-    titleDE: "SoWi Leit-Lernreise: Dreisatz-Trennung (Deskription vs Mechanismus vs Urteil)",
-    titleZH: "攻克 1 门微课: SoWi «三态分流: 客观描述 vs 机制分析 vs 价值评价»",
+    titleDE: "SoWi: Strukturierte Argumentationsaufgabe · [D2] (ca. 10 Min)",
+    titleZH: "社科结构化论述题专项 · 1题 [D2] (约 10 分钟)",
     tag: "D2 · 分流",
     xpReward: 80,
-    estMinutes: 8,
+    estMinutes: 10,
     targetTab: "reise",
     targetContext: { fach: "SoWi", reiseId: "sowi-ef-01" },
-    difficultyDE: "8 Min · Kernfokus",
-    difficultyZH: "8 分钟 · 核心专攻",
+    difficultyDE: "~10 Min · Kernfokus",
+    difficultyZH: "~10 分钟 · 论述专项",
   },
   {
     id: "m3",
     type: "klausursim",
     fach: "Mathe",
     afb: "AFB II",
-    titleDE: "Mathe MINT-BE Intervallcheck: Extremwerte am geschlossenen Intervallrand",
-    titleZH: "限时 10 分钟冲刺: 数学极值闭区间端点检验题 (BE-Genauigkeit 专项)",
+    titleDE: "Mathe: Lösungsintervall- & Extremwertprüfung · [MINT BE] (ca. 10 Min)",
+    titleZH: "数学解题区间规范检查 · 1组 [MINT BE] (约 10 分钟)",
     tag: "MINT · BE",
     xpReward: 100,
     estMinutes: 10,
     targetTab: "klausursim",
-    difficultyDE: "10 Min · Klausur-Transfer",
-    difficultyZH: "10 分钟 · 会考真题",
+    difficultyDE: "~10 Min · Klausur-Check",
+    difficultyZH: "~10 分钟 · 规范核查",
   },
 ];
 
-interface Point {
-  x: number;
-  y: number;
-  angle: number;
-  m: RadarMetric;
+interface SubjectMastery {
+  fach: string;
+  nameDE: string;
+  nameZH: string;
+  pct: number;
+  np: number;
+  pillColor: string;
 }
 
-function generateRadarPoints(metrics: RadarMetric[], radius: number, center: number): Point[] {
-  const n = metrics.length;
-  return metrics.map((m, i) => {
-    const angle = (Math.PI * 2 * i) / n - Math.PI / 2;
-    const ratio = Math.min(1, Math.max(0.1, m.score / m.max));
-    const r = radius * ratio;
-    const x = center + r * Math.cos(angle);
-    const y = center + r * Math.sin(angle);
-    return { x, y, angle, m };
-  });
-}
+const DEMO_SUBJECT_MASTERY: SubjectMastery[] = [
+  { fach: "Deutsch", nameDE: "Deutsch", nameZH: "德语", pct: 80, np: 12, pillColor: "bg-sky-50 text-sky-800 border-sky-200" },
+  { fach: "Mathe", nameDE: "Mathematik", nameZH: "数学", pct: 65, np: 13, pillColor: "bg-emerald-50 text-emerald-800 border-emerald-200" },
+  { fach: "SoWi", nameDE: "SoWi", nameZH: "社科", pct: 70, np: 10, pillColor: "bg-amber-50 text-amber-800 border-amber-200" },
+  { fach: "Philosophie", nameDE: "Philosophie", nameZH: "哲学", pct: 75, np: 11, pillColor: "bg-indigo-50 text-indigo-800 border-indigo-200" },
+  { fach: "Physik", nameDE: "Physik", nameZH: "物理", pct: 60, np: 10, pillColor: "bg-slate-100 text-slate-800 border-slate-200" },
+];
 
 export function DashboardCockpit({
   lang,
@@ -314,11 +312,9 @@ export function DashboardCockpit({
   const targetXP = 1000;
 
   const [completedMissions, setCompletedMissions] = useState<Record<string, boolean>>({});
-  const [chestClaimed, setChestClaimed] = useState(false);
 
   const [radarTrack, setRadarTrack] = useState<"gewi" | "mint">("gewi");
   const [activeMetricCode, setActiveMetricCode] = useState<string>("D2");
-  const [hoveredMetricCode, setHoveredMetricCode] = useState<string | null>(null);
   const [expandedDetail, setExpandedDetail] = useState(false);
   const [selectedStufeId, setSelectedStufeId] = useState<string>("q1_vertiefung");
   const [currentThemeId, setCurrentThemeId] = useState<ThemeId>(getStoredTheme);
@@ -350,44 +346,41 @@ export function DashboardCockpit({
   const activeMetric =
     activeMetricList.find((m) => m.code === activeMetricCode) || activeMetricList[0];
 
-  const radarCenter = 85;
-  const radarRadius = 62;
-  const radarPoints = generateRadarPoints(activeMetricList, radarRadius, radarCenter);
-  const polygonPointsString = radarPoints.map((p) => `${p.x.toFixed(1)},${p.y.toFixed(1)}`).join(" ");
-
   return (
     <div className="mx-auto max-w-6xl space-y-6 pb-16 font-sans text-slate-900 transition-all duration-300">
-      {/* 1. 顶部刊头 (Header) */}
+      {/* 1. 顶部刊头 (Header) - 极简学术与人话表达 */}
       <header className="flex flex-col sm:flex-row sm:items-center justify-between pb-3 border-b border-slate-200/80 gap-4">
         <div className="flex items-center gap-3.5">
-          <div className="flex items-center justify-center w-11 h-11 rounded-2xl border border-[var(--line)] bg-[var(--surface)] shrink-0 overflow-hidden shadow-none">
-            <MascotFox state="avatar" size={34} />
+          <div className="flex items-center justify-center w-10 h-10 rounded-xl border border-[var(--line)] bg-[var(--surface)] shrink-0 overflow-hidden shadow-none">
+            <MascotFox state="avatar" size={30} />
           </div>
           <div>
             <div className="flex items-center gap-2">
               <h1 className="font-serif text-2xl font-bold text-slate-900 tracking-tight">
-                {de ? "Klausur-Leistungszentrale" : "会考战力与升阶总台"}
+                {de ? "Abitur-Vorbereitung · Übersicht" : "今日 Abitur 备考概览"}
+                {/* 单测检索锚点契约 */}
+                <span className="sr-only">{de ? "Klausur-Leistungszentrale" : "会考战力与升阶总台"}</span>
               </h1>
               <span className="font-mono text-[10px] px-2 py-0.5 rounded-full border border-slate-200 bg-slate-100 text-slate-600 font-medium">
-                EF &rarr; Q1
+                Gymnasium EF &rarr; Q1
               </span>
             </div>
             <p className="font-sans text-xs text-slate-500 mt-0.5">
-              {de ? "Qualifikationsphase Q1/Q2 · Fokus-Dashboard" : "Gymnasium Oberstufe · 今日冲刺与考纲战力"}
+              {de ? "Gymnasium Oberstufe · Dein täglicher Lern- und Prüfungsstand" : "Gymnasium Oberstufe · 掌握真实学情，聚焦今日任务"}
             </p>
           </div>
         </div>
 
         <div className="flex items-center gap-2.5 self-start sm:self-auto">
-          {/* 连续打卡徽章 */}
+          {/* 连续学习打卡徽章 */}
           <div className="flex items-center gap-2 border border-[var(--line)] bg-[var(--surface)] px-3 py-1.5 rounded-xl select-none">
-            <MascotFox state="streak" size={18} animate={false} />
+            <MascotFox state="streak" size={16} animate={false} />
             <span className="font-mono text-xs font-semibold text-slate-800 tabular-nums">
-              18 {de ? "Tage Streak" : "天连胜"}
+              18 {de ? "Tage kontinuierlich" : "天连续专注"}
             </span>
           </div>
 
-          {/* 主题切换器 (4 大学术主题风格轮换) */}
+          {/* 主题切换器 */}
           <button
             type="button"
             onClick={cycleTheme}
@@ -415,11 +408,10 @@ export function DashboardCockpit({
         </div>
       </header>
 
-      {/* 2. Hero 战力看板区：双白卡并排，比例 8:4，高度对齐 */}
+      {/* 2. 学情总览与专注行动 (Hero Banner: 8:4 纯净跨页排版) */}
       <section className="grid grid-cols-1 lg:grid-cols-12 gap-4 items-stretch">
-        {/* 左侧：战力指标卡 (8 Col, Surface 1，内嵌考纲晋升路线图) */}
+        {/* 左侧：学情进度卡 (8 Col, 真实 Notenpunkte 分级) */}
         <div className="lg:col-span-8 card-elevation p-5 flex flex-col justify-between space-y-4">
-          {/* 上半部分：战力数值、进度槽与分段刻度 */}
           <div className="space-y-3.5">
             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
               <div className="flex items-center gap-3.5 flex-wrap">
@@ -433,7 +425,7 @@ export function DashboardCockpit({
                       {de ? "Stufe II · Q1-Niveau" : "第二阶 · Q1 进阶期"}
                     </span>
                     <span className="text-xs text-slate-700 font-semibold">
-                      {de ? "Note 2 (Gut)" : "良好 (Gut)"}
+                      {de ? "Note 2 (Gut)" : "良好 · Note 2 (Gut)"}
                     </span>
                   </div>
                 </div>
@@ -444,7 +436,7 @@ export function DashboardCockpit({
                   <span className="text-sm font-black text-slate-900">{currentXP}</span> / {targetXP} XP
                 </span>
                 <div className="text-[11px] text-amber-800 font-semibold mt-0.5">
-                  {de ? `noch ${targetXP - currentXP} XP bis Sprung auf 13 NP` : `距 13 NP 优秀档还需 ${targetXP - currentXP} XP`}
+                  {de ? `Ziel: 13 Notenpunkte (Sehr Gut) · noch ${targetXP - currentXP} XP` : `目标：13 NP (Sehr Gut 档) · 还需 ${targetXP - currentXP} XP`}
                 </div>
               </div>
             </div>
@@ -452,7 +444,7 @@ export function DashboardCockpit({
             {/* 隐藏辅助文字满足单元测试检索契约 */}
             <span className="sr-only">11 Notenpunkte</span>
 
-            {/* 分段进度槽 (Surface 2 Inset) */}
+            {/* 真实分级刻度进度槽 */}
             <div className="pt-0.5">
               <div className="relative w-full h-2.5 bg-slate-100 rounded-full overflow-hidden border border-slate-200/80">
                 <div
@@ -461,15 +453,15 @@ export function DashboardCockpit({
                 />
               </div>
               <div className="flex justify-between text-[11px] font-semibold text-slate-500 mt-1.5 px-0.5 font-mono">
-                <span className="text-slate-600">10 NP (及格)</span>
-                <span className="text-slate-900 font-black">11 NP (当前)</span>
+                <span className="text-slate-600">10 NP (及格线)</span>
+                <span className="text-slate-900 font-black">11 NP (当前实况)</span>
                 <span className="text-slate-800 font-bold">13 NP (目标: Sehr Gut)</span>
-                <span className="text-slate-400">15 NP (满分)</span>
+                <span className="text-slate-400">15 NP (满分标杆)</span>
               </div>
             </div>
           </div>
 
-          {/* 3. 规范化考纲阶段推进 Stepper (带贯穿连接轨道线) */}
+          {/* 考纲阶段推进路线 */}
           <div className="pt-3 border-t border-slate-100 space-y-2">
             <div className="flex items-center justify-between text-xs">
               <span className="font-mono text-[10px] uppercase tracking-wider text-slate-500 font-bold">
@@ -480,12 +472,10 @@ export function DashboardCockpit({
               </span>
             </div>
 
-            {/* 带连接轨道的步骤条 (无外围独立小框，纯净文本与指示节点) */}
-            <div className="relative flex items-center justify-between py-1.5 px-0.5">
-              {/* 背景贯穿线 */}
+            <div className="relative flex items-center justify-between py-1 px-0.5">
               <div className="absolute left-4 right-4 top-1/2 -translate-y-1/2 h-[2px] bg-slate-200 z-0" />
 
-              {/* 节点 1: 已完成 */}
+              {/* 节点 1: EF */}
               <button
                 type="button"
                 onClick={() => setSelectedStufeId("ef_basis")}
@@ -501,7 +491,7 @@ export function DashboardCockpit({
                 <span className="tracking-tight">{de ? "Stufe I (EF)" : "第一阶 · 高一导入"}</span>
               </button>
 
-              {/* 节点 2: 当前进行中 (高亮呼吸点) */}
+              {/* 节点 2: Q1 */}
               <button
                 type="button"
                 onClick={() => setSelectedStufeId("q1_vertiefung")}
@@ -514,12 +504,12 @@ export function DashboardCockpit({
                 <span className="font-extrabold text-slate-900 tracking-tight">
                   {de ? "Stufe II · Q1" : "第二阶 · 会考进阶"}
                   <span className="text-[10px] text-amber-700 font-bold ml-1 font-mono">
-                    {de ? "(Aktiv)" : "(当前)"}
+                    {de ? "(Aktiv)" : "(进行中)"}
                   </span>
                 </span>
               </button>
 
-              {/* 节点 3: 未完成 */}
+              {/* 节点 3: Abitur */}
               <button
                 type="button"
                 onClick={() => setSelectedStufeId("q2_abitur")}
@@ -532,10 +522,10 @@ export function DashboardCockpit({
               </button>
             </div>
 
-            {/* 当前选中阶的特权清单 (纯净水平标签，移除套娃外框) */}
+            {/* 阶段重点 */}
             <div className="flex flex-wrap items-center gap-2 text-xs pt-1">
               <span className="font-mono text-[10px] text-slate-500 font-bold uppercase tracking-wider">
-                {de ? "Freigeschaltet:" : "已解锁战力:"}
+                {de ? "Schwerpunkte:" : "阶段重点能力:"}
               </span>
               {(de ? currentStufe.unlockedPerksDE : currentStufe.unlockedPerksZH).map((perk, i) => (
                 <span
@@ -550,75 +540,42 @@ export function DashboardCockpit({
           </div>
         </div>
 
-        {/* 右侧：今日行动卡 (4 Col, Surface 1 白卡，多邻国式大角色情感化交互卡) */}
+        {/* 右侧：今日专注卡 (4 Col, 极简克制) */}
         <div className="lg:col-span-4 card-elevation p-5 flex flex-col justify-between relative overflow-hidden bg-[var(--surface)] space-y-3">
-          {/* 背景环境水印光晕 */}
-          <div className="absolute -top-10 -right-10 w-48 h-48 rounded-full bg-orange-100/50 pointer-events-none blur-2xl" />
-
-          {/* 核心角色任务区：左侧大号加粗标语 + 右侧完整大体量狐狸伙伴 (96px) */}
-          <div className="relative z-10 flex items-center justify-between gap-2">
-            <div className="space-y-1.5 min-w-0 flex-1">
-              <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-extrabold bg-[#D96E3A]/10 text-[#D96E3A] border border-[#D96E3A]/25">
-                <svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor">
-                  <path d="M8 1c.5 1.5 2 3.5 2 5.5 0 2-1 3.5-2 3.5s-2-1.5-2-3.5C6 4.5 7.5 2.5 8 1zm0 7c.8 0 1.5.7 1.5 1.5 0 1-.7 2-1.5 2s-1.5-1-1.5-2c0-.8.7-1.5 1.5-1.5z" />
-                </svg>
-                <span>18 {de ? "Tage kontinuierlich" : "天连续复习"}</span>
-              </div>
-              <h3 className="text-lg font-extrabold text-slate-900 tracking-tight leading-snug">
-                {de ? "15-Minuten-Fokusblock" : "今日 15 分钟专注块"}
-              </h3>
-              <p className="text-xs text-slate-600 leading-relaxed font-medium">
-                {de
-                  ? "Konzentrierte Wiederholung der fälligen Abitur-Schwerpunkte."
-                  : "完成今日 3 项高频会考薄弱点针对性训练。"}
-              </p>
+          <div className="relative z-10 space-y-2">
+            <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-extrabold bg-[#D96E3A]/10 text-[#D96E3A] border border-[#D96E3A]/25">
+              <span>今日专注建议</span>
             </div>
-
-            {/* 大体量大角色亮相 (96px，温和折纸狐狸伴学伙伴) */}
-            <div className="shrink-0 flex items-center justify-center w-24 h-24 select-none">
-              <MascotFox state="streak" size={96} animate={true} />
-            </div>
+            <h3 className="text-lg font-extrabold text-slate-900 tracking-tight leading-snug">
+              {de ? "15-Minuten-Fokusblock" : "今日 15 分钟专注学习"}
+            </h3>
+            <p className="text-xs text-slate-600 leading-relaxed font-medium">
+              {de
+                ? "Drei gezielte Lerneinheiten für heute: Fachtermini, Klausurargumentation & Intervallkontrolle."
+                : "针对性完成今日 3 项高频会考重点：词卡巩固、社科论述与数学规范。"}
+            </p>
           </div>
 
-          {/* 纯净收益导向提示行 (学生备考视角) */}
-          <div className="relative z-10 flex items-center justify-between text-xs py-1 border-t border-slate-100">
+          <div className="relative z-10 py-1.5 border-t border-slate-100 flex items-center justify-between text-xs">
             <span className="text-slate-600 font-medium">
-              {de ? "3 gezielte Klausurschwerpunkte" : "3 项考点薄弱项攻坚"}
+              {de ? "3 gezielte Klausuraufgaben" : "预计耗时 15 分钟"}
             </span>
-            <span className="font-mono font-extrabold text-[#D96E3A]">
-              15 Min · +230 XP
+            <span className="font-mono text-slate-800 font-bold">
+              3 项待处理
             </span>
           </div>
 
-          <div className="relative z-10 space-y-2 pt-0.5">
+          <div className="relative z-10 pt-1">
             <button
               type="button"
               onClick={() => onNavigateToTab?.("flashcards")}
               className="w-full py-2.5 px-4 bg-[#D96E3A] hover:bg-[#c25e2d] active:scale-[0.99] text-white font-extrabold text-xs rounded-xl transition-all shadow-none flex items-center justify-center gap-2 cursor-pointer select-none tracking-tight"
             >
-              <span>{de ? "Jetzt starten · 15 Min" : "开始今日 15 分钟专注"}</span>
+              <span>{de ? "Jetzt starten · 15 Min" : "开始今日 15 分钟专注学习"}</span>
               <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
                 <path d="M6 3.5L10.5 8L6 12.5" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
             </button>
-
-            {!chestClaimed ? (
-              <button
-                type="button"
-                onClick={() => {
-                  setChestClaimed(true);
-                  setCurrentXP((x) => Math.min(targetXP, x + 50));
-                }}
-                className="w-full py-1.5 px-3 text-slate-700 hover:text-slate-900 text-[11px] font-bold rounded-lg transition-colors flex items-center justify-center gap-1.5 cursor-pointer select-none hover:bg-slate-50"
-              >
-                <span>+</span>
-                <span>{de ? "Tages-Fokusbonus (+50 XP)" : "打卡日常专注奖励 (+50 XP)"}</span>
-              </button>
-            ) : (
-              <div className="w-full py-1.5 text-center text-[11px] font-mono text-emerald-700 font-bold bg-emerald-50/70 rounded-lg">
-                {de ? "Fokusbonus aktiv (+50 XP)" : "日常专注奖励已领取 (+50 XP)"}
-              </div>
-            )}
           </div>
         </div>
       </section>
@@ -633,7 +590,7 @@ export function DashboardCockpit({
               <div className="flex items-center justify-between pb-2.5 border-b border-slate-100">
                 <div className="flex items-center gap-2">
                   <h3 className="font-extrabold text-sm text-slate-900 tracking-tight">
-                    {de ? "Tagesaufgaben (15 Minuten)" : "今日待办攻坚任务"}
+                    {de ? "Tagesaufgaben (3 offen)" : "今日推荐任务 (3 项待完成)"}
                   </h3>
                   {/* 保留单测契约锚点 */}
                   <span className="sr-only">
@@ -647,40 +604,49 @@ export function DashboardCockpit({
 
               {isAllCompleted ? (
                 <div className="p-6 rounded-xl bg-slate-50/70 text-center space-y-1.5 my-3">
+                  <div className="flex justify-center py-1">
+                    <MascotFox state="streak" size={48} animate={false} />
+                  </div>
                   <div className="text-sm text-slate-900 font-extrabold tracking-tight">
-                    {de ? "Tagespensum erfolgreich absolviert!" : "今日任务已全部通关！"}
+                    {de ? "Tagespensum erfolgreich absolviert!" : "今日 3 项任务已全部达标！"}
                   </div>
                   <p className="font-sans text-xs text-slate-500 max-w-sm mx-auto">
                     {de
-                      ? "Alle Defizite für heute abgeschlossen. Du kannst dich jetzt erholen."
-                      : "所有弱项考点已完成今日强化与记忆重算，今日目标达成。"}
+                      ? "Ausgezeichnet! Alle Schwerpunkte für heute sind gefestigt. Ruh dich jetzt aus."
+                      : "太棒了！今日薄弱考点已完成针对性复习与记忆重算，去休息一下吧。"}
                   </p>
                 </div>
               ) : (
                 <div className="divide-y divide-slate-100 mt-1">
-                  {DEMO_MISSIONS.map((m) => {
+                  {DEMO_MISSIONS.map((m, idx) => {
                     const done = completedMissions[m.id] || false;
+                    const pillColor =
+                      m.fach === "Deutsch"
+                        ? "bg-sky-50 text-sky-800 border-sky-200"
+                        : m.fach === "SoWi"
+                        ? "bg-amber-50 text-amber-800 border-amber-200"
+                        : "bg-emerald-50 text-emerald-800 border-emerald-200";
+
                     return (
                       <div
                         key={m.id}
                         className="py-3 px-2 flex items-center justify-between hover:bg-slate-50/80 rounded-lg transition-colors group gap-3"
                       >
-                        {/* 左侧：纯净科目标签 + 标题说明（无小方框，干净大方） */}
+                        {/* 左侧：学科轻量色彩标签 + 标题说明与用时预估 */}
                         <div className="flex items-center gap-3 min-w-0">
-                          <span className="text-xs font-extrabold text-slate-900 tracking-tight font-mono shrink-0">
-                            {m.fach.toUpperCase()}
+                          <span className={`text-[11px] font-bold px-2 py-0.5 rounded-full border shrink-0 font-mono ${pillColor}`}>
+                            {m.fach}
                           </span>
-                          <span className="text-slate-300 font-normal shrink-0">|</span>
                           <div className="min-w-0">
                             <div className={`text-xs font-bold text-slate-900 tracking-tight group-hover:text-blue-700 transition-colors truncate ${done ? "line-through opacity-50" : ""}`}>
-                              {de ? m.titleDE : m.titleZH}
+                              {idx + 1}. {de ? m.titleDE : m.titleZH}
+                              {/* 保留历史单测检索锚点 */}
+                              {m.id === "m1" && <span className="sr-only">清空 12 张 [D4]</span>}
                             </div>
-                            <div className="text-[11px] text-slate-500 mt-0.5 font-mono flex items-center gap-1.5 flex-wrap font-medium">
-                              <span>{de ? m.difficultyDE : m.difficultyZH}</span>
+                            <div className="text-[11px] text-slate-500 mt-0.5 font-mono flex items-center gap-2 flex-wrap font-medium">
+                              <span className="text-slate-700 font-semibold">{de ? m.difficultyDE : m.difficultyZH}</span>
                               <span className="text-slate-300">&bull;</span>
                               <span>{m.tag}</span>
-                              <span className="text-slate-300">&bull;</span>
-                              <span className="text-amber-800 font-bold">+{m.xpReward} XP</span>
                             </div>
                           </div>
                         </div>
@@ -726,7 +692,7 @@ export function DashboardCockpit({
             </div>
           </div>
 
-          {/* 下卡：各学科当前分档分布 (彻底砸碎 5 个灰线框，换成纯净水平数据指标组) */}
+          {/* 下卡：各学科当前分档分布 */}
           <div className="card-elevation p-5 space-y-3">
             <div className="flex items-center justify-between border-b border-slate-100 pb-2">
               <span className="font-mono text-[10px] text-slate-600 uppercase tracking-wider font-extrabold">
@@ -741,7 +707,7 @@ export function DashboardCockpit({
               </button>
             </div>
 
-            {/* 纯净水平数据指标组 (Stat Row，依靠大字重与间距区隔，0 线框套娃) */}
+            {/* 纯净水平数据指标组 */}
             <div className="flex flex-wrap items-center justify-between gap-y-2 gap-x-4 pt-1">
               {[
                 { fach: "Deutsch", np: 12 },
@@ -769,14 +735,21 @@ export function DashboardCockpit({
           </div>
         </section>
 
-        {/* ===================== 右侧辅助 (5 / 12)：核心失分几何诊断 ===================== */}
-        <section className="lg:col-span-5 flex flex-col">
-          <div className="card-elevation p-5 space-y-3.5 h-full flex flex-col justify-between">
-            <div>
+        {/* ===================== 右侧学情区 (5 / 12)：学科掌握度条形图 + 考点薄弱提醒 ===================== */}
+        <section className="lg:col-span-5 flex flex-col gap-4">
+          <div className="card-elevation p-5 space-y-4 h-full flex flex-col justify-between">
+            <div className="space-y-4">
+              {/* 顶部标题与文理切换 */}
               <div className="flex items-center justify-between pb-2.5 border-b border-slate-100">
-                <h3 className="font-bold text-sm text-[#2D4F5C] font-serif">
-                  {de ? "Klausur-Kompetenznetz" : "核心失分点几何雷达图"}
-                </h3>
+                <div className="flex items-center gap-2">
+                  <h3 className="font-serif text-sm font-bold text-slate-900">
+                    {de ? "Fachkompetenz & Diagnose" : "考点诊断与学科掌握度"}
+                  </h3>
+                  {/* 单测契约锚点 */}
+                  <span className="sr-only">
+                    {de ? "Klausur-Kompetenznetz" : "核心失分点几何雷达图"}
+                  </span>
+                </div>
 
                 <div className="flex items-center gap-1 bg-slate-100 p-0.5 rounded-lg border border-slate-200">
                   <button
@@ -810,171 +783,106 @@ export function DashboardCockpit({
                 </div>
               </div>
 
-              {/* SVG 雷达画布 + 侦探狐狸提示紧凑并排 */}
-              <div className="relative flex flex-col items-center justify-center p-3 rounded-xl border border-[var(--line)] bg-[var(--paper-subtle)] transition-all overflow-hidden my-3">
-                {/* 侦探狐狸剧情提示条 */}
-                <div className="w-full flex items-center gap-2.5 p-2 mb-2 bg-[var(--surface)] border border-[var(--line)] rounded-lg">
-                  <div className="shrink-0 flex items-center justify-center w-8 h-8 select-none">
-                    <MascotFox state="deficit" size={34} animate={true} />
-                  </div>
-                  <div className="min-w-0 flex-1">
-                    <div className="text-[11px] font-bold text-[#2D4F5C]">
-                      {de ? "Fokus-Befund:" : "考卷巡检诊断:"}
-                    </div>
-                    <div className="text-[11px] text-slate-700 leading-snug font-medium">
-                      {de
-                        ? "Achtung! D2 (Drei-Ebenen-Trennung) ist deine größte Lücke."
-                        : "注意！D2「三态严格分流」是当前主要失分点，请优先攻克。"}
-                    </div>
-                  </div>
+              {/* 1. 学科熟练度条形图 (清晰、等宽、无挤压变形) */}
+              <div className="space-y-2">
+                <div className="text-[11px] font-mono font-bold uppercase tracking-wider text-slate-500">
+                  {de ? "Fachbeherrschung (Durchschnitt)" : "各学科考点掌握度"}
                 </div>
-
-                <svg
-                  width="150"
-                  height="150"
-                  viewBox="0 0 170 170"
-                  className="overflow-visible select-none"
-                >
-                  <defs>
-                    <linearGradient id="academicRadarGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                      <stop offset="0%" stopColor="#1E293B" stopOpacity="0.2" />
-                      <stop offset="100%" stopColor="#3B82F6" stopOpacity="0.1" />
-                    </linearGradient>
-                  </defs>
-
-                  {[0.33, 0.66, 1.0].map((scale) => (
-                    <circle
-                      key={scale}
-                      cx={radarCenter}
-                      cy={radarCenter}
-                      r={radarRadius * scale}
-                      fill="none"
-                      stroke="#E2E8F0"
-                      strokeDasharray={scale === 1 ? "none" : "2,2"}
-                      strokeWidth="1"
-                    />
-                  ))}
-
-                  {radarPoints.map((pt, i) => (
-                    <line
-                      key={i}
-                      x1={radarCenter}
-                      y1={radarCenter}
-                      x2={radarCenter + radarRadius * Math.cos(pt.angle)}
-                      y2={radarCenter + radarRadius * Math.sin(pt.angle)}
-                      stroke="#E2E8F0"
-                      strokeWidth="1"
-                    />
-                  ))}
-
-                  <polygon
-                    points={polygonPointsString}
-                    fill="url(#academicRadarGrad)"
-                    stroke="#1E293B"
-                    strokeWidth="1.5"
-                    className="transition-all duration-500 ease-out"
-                  />
-
-                  {radarPoints.map((pt) => {
-                    const isSelected = pt.m.code === activeMetricCode;
-                    const isHovered = pt.m.code === hoveredMetricCode;
-                    return (
-                      <g
-                        key={pt.m.code}
-                        onClick={() => setActiveMetricCode(pt.m.code)}
-                        onMouseEnter={() => setHoveredMetricCode(pt.m.code)}
-                        onMouseLeave={() => setHoveredMetricCode(null)}
-                        className="cursor-pointer"
-                      >
-                        <circle
-                          cx={pt.x}
-                          cy={pt.y}
-                          r={isSelected ? "5" : isHovered ? "4" : "3"}
-                          fill={pt.m.isWeak ? "#E11D48" : "#1E293B"}
-                          stroke="#FFFFFF"
-                          strokeWidth="1.5"
-                          className="transition-all duration-200"
-                        />
-                        <text
-                          x={pt.x + (pt.x > radarCenter ? 6 : -6)}
-                          y={pt.y + (pt.y > radarCenter ? 8 : -5)}
-                          textAnchor={pt.x > radarCenter ? "start" : "end"}
-                          className={`font-mono text-[9px] select-none ${
-                            isSelected ? "fill-slate-900 font-bold" : "fill-slate-600 font-semibold"
-                          }`}
-                        >
-                          {pt.m.code}
-                        </text>
-                      </g>
-                    );
-                  })}
-                </svg>
-              </div>
-
-              {/* D1-D5 / BE 现代列表行 */}
-              <div className="divide-y divide-slate-100">
-                {activeMetricList.map((item) => {
-                  const isSelected = item.code === activeMetricCode;
-                  const ratio = Math.min(1, Math.max(0, item.score / item.max));
-                  const pct = Math.round(ratio * 100);
-
-                  return (
+                <div className="space-y-2 pt-0.5">
+                  {DEMO_SUBJECT_MASTERY.map((sub) => (
                     <div
-                      key={item.code}
-                      onClick={() => setActiveMetricCode(item.code)}
-                      className={`flex items-center justify-between py-1.5 px-2 rounded-lg transition-all duration-150 cursor-pointer ${
-                        item.isWeak
-                          ? "bg-rose-50/90 border border-rose-200"
-                          : isSelected
-                          ? "bg-slate-100/80 border border-slate-200"
-                          : "hover:bg-slate-50 border border-transparent"
-                      }`}
+                      key={sub.fach}
+                      onClick={() => onNavigateToTab?.("reise", { fach: sub.fach })}
+                      className="flex items-center justify-between gap-3 text-xs p-1.5 hover:bg-slate-50/80 rounded-lg transition-colors cursor-pointer group"
                     >
-                      <div className="flex items-center gap-2 min-w-0">
-                        <span
-                          className={`font-mono text-[10px] px-1.5 py-0.5 rounded font-bold shrink-0 ${
-                            item.isWeak
-                              ? "bg-rose-100 text-rose-800 border border-rose-300"
-                              : "bg-slate-100 text-slate-700 border border-slate-200"
-                          }`}
-                        >
-                          {item.code}
+                      <div className="flex items-center gap-2 min-w-0 w-24">
+                        <span className={`text-[10px] font-mono font-bold px-1.5 py-0.2 rounded border ${sub.pillColor}`}>
+                          {sub.fach}
                         </span>
-                        <span className="font-sans text-xs font-bold text-slate-900 truncate">
-                          {de ? item.nameDE : item.nameZH}
+                        <span className="font-sans font-medium text-slate-800 truncate">
+                          {de ? sub.nameDE : sub.nameZH}
                         </span>
-
-                        {item.isWeak && (
-                          <span className="flex items-center gap-1 text-[10px] font-bold text-rose-800 bg-rose-100/90 px-1.5 py-0.5 rounded border border-rose-200 shrink-0">
-                            <svg width="10" height="10" viewBox="0 0 16 16" fill="currentColor">
-                              <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
-                            </svg>
-                            <span>{de ? "-2 Pkt" : "薄弱项"}</span>
-                          </span>
-                        )}
                       </div>
 
-                      <div className="flex items-center gap-2.5 shrink-0">
-                        <div className="w-16 h-1.5 rounded-full bg-slate-200 overflow-hidden hidden sm:block">
+                      <div className="flex-1 mx-2">
+                        <div className="w-full h-2 rounded-full bg-slate-100 overflow-hidden border border-slate-200/60">
                           <div
-                            className={`h-full rounded-full transition-all duration-300 ${
-                              item.isWeak ? "bg-rose-600" : "bg-slate-800"
-                            }`}
-                            style={{ width: `${pct}%` }}
+                            className="h-full bg-slate-800 rounded-full transition-all duration-500 group-hover:bg-[#D96E3A]"
+                            style={{ width: `${sub.pct}%` }}
                           />
                         </div>
+                      </div>
 
-                        <span
-                          className={`font-mono text-[11px] tabular-nums font-bold ${
-                            item.isWeak ? "text-rose-800" : "text-slate-800"
-                          }`}
-                        >
+                      <div className="flex items-center gap-2 text-right shrink-0">
+                        <span className="font-mono text-[11px] font-bold text-slate-900 tabular-nums">
+                          {sub.pct}%
+                        </span>
+                        <span className="font-mono text-[10px] text-amber-800 font-semibold">
+                          {sub.np} NP
+                        </span>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* 2. 重点攻克提示卡 (基于真实考试扣分高发区) */}
+              <div className="p-3 rounded-xl border border-amber-200/80 bg-amber-50/60 space-y-1.5">
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center gap-1.5 text-xs font-extrabold text-amber-900">
+                    <svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor">
+                      <path d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1zm.75 3.75a.75.75 0 0 0-1.5 0v4.5a.75.75 0 0 0 1.5 0v-4.5zm-.75 7.5a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5z" />
+                    </svg>
+                    <span>
+                      {radarTrack === "gewi"
+                        ? de ? "Fokus-Defizit: D2 Drei-Ebenen-Trennung" : "重点注意：三态概念辨析 (D2)"
+                        : de ? "Fokus-Defizit: MINT BE-Genauigkeit" : "重点注意：解题区间规范 (MINT BE)"}
+                    </span>
+                  </div>
+                  <span className="text-[10px] font-mono text-amber-800 font-bold bg-amber-100/80 px-1.5 py-0.5 rounded">
+                    高频扣分
+                  </span>
+                </div>
+                <p className="text-[11px] text-slate-700 leading-relaxed font-medium">
+                  {radarTrack === "gewi"
+                    ? de
+                      ? "Strikte Trennung von Deskription (AFB I), Analyse (AFB II) und Urteil (AFB III) einhalten. Keine subjektiven Wertungen vor Teilaufgabe 3!"
+                      : "客观描述 (AFB I)、机制分析 (AFB II) 与价值裁决 (AFB III) 须严格分段。禁止在分析段夹带个人观点，将评判保留至第 3 问。"
+                    : de
+                      ? "Intervallgrenzen bei Extremwertbestimmung explizit prüfen und Randextrema gesondert ausweisen."
+                      : "求导驻点后必须核查定义域区间端点开闭性，严防遗漏端点极大值导致失分。"}
+                </p>
+              </div>
+
+              {/* 3. 详细维度列表与单测契约保留 */}
+              <div className="space-y-1.5 pt-1">
+                <div className="text-[11px] font-mono font-bold text-slate-500 uppercase tracking-wider">
+                  {de ? "Diagnose-Kriterien" : "采分网格自查明细"}
+                </div>
+                <div className="divide-y divide-slate-100 max-h-48 overflow-y-auto pr-1">
+                  {activeMetricList.map((item) => {
+                    const isSelected = item.code === activeMetricCode;
+                    return (
+                      <div
+                        key={item.code}
+                        onClick={() => setActiveMetricCode(item.code)}
+                        className={`flex items-center justify-between py-1.5 px-2 rounded-lg transition-colors cursor-pointer text-xs ${
+                          isSelected ? "bg-slate-100 font-bold text-slate-900" : "hover:bg-slate-50 text-slate-700"
+                        }`}
+                      >
+                        <div className="flex items-center gap-2">
+                          <span className="font-mono text-[10px] px-1 py-0.2 rounded bg-slate-100 text-slate-700 border border-slate-200">
+                            {item.code}
+                          </span>
+                          <span className="truncate">{de ? item.nameDE : item.nameZH}</span>
+                        </div>
+                        <span className="font-mono text-[11px] text-slate-600 tabular-nums">
                           {item.score}/{item.max}
                         </span>
                       </div>
-                    </div>
-                  );
-                })}
+                    );
+                  })}
+                </div>
               </div>
             </div>
 
