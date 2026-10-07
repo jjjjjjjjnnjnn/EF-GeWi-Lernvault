@@ -26,9 +26,23 @@
 
 ---
 
-## 当前状态（2026-10-06 最新里程碑与交接就绪）
+## 当前状态（2026-10-07 最新里程碑与交接就绪）
 
-- ✅ **Phase 2.3 错误日志诊断编码与 SM-2/FSRS 智能加权深度打通（2026-10-06 最新交付）**：
+- ✅ **Phase 2.4 主页战力与升阶总台深度重构（2026-10-07 最新交付，下阶段聚焦 UI/美术设计）**：
+  - **二分屏清晰动线（Linear + Duolingo 看板）**：告别原先密密麻麻的行政体检表，重构为极简战力 Hero 卡片、左侧 ~60% 今日战场（Actionable）与右侧 ~40% 战力诊断室（Analytical，折叠面板抽屉收拢细则，认知减负 70%）；
+  - **德国文理中学评分体系可视化（Abitur Flight Cockpit）**：
+    - `11 Notenpunkte` 锚定至德国官方分级 `Note 2 (Gut)`，动态展示跃升至 `13 NP (Note 1- Sehr gut)` 所需进度；
+    - 刻度尺融入官方分档线（`10 NP Defizit-Grenze` / `11 NP Aktuell` / `13 NP Sehr Gut Ziel`），数字采用等宽排版（`tabular-nums`）；
+    - 任务清单标注学科徽标（`[SoWi]`, `[Mathe]`, `[Deutsch]`）及官方认知要求（`AFB I-III`）；
+  - **游戏化成长探索感与即时正反馈**：
+    - 伴学微伙伴（`[o_o]`）多态情绪反馈与互动；
+    - 每日首战可变增益卡（`[+] 首战增益 (+50 XP)`）；
+    - 连贯通关路线指示条（Milestone Stepper Path，Stufe I $\to$ II $\to$ III 动态指示）；
+    - 连续打卡动量能量环（18天连胜带 `animate-ping` 脉冲）；
+  - **暗黑精锐模式（Cyber Obsidian Mode）**：注入深炭黑 `#090A0F`、磨砂太空灰 `#181C28` 与电光青 `#38BDF8` 配色，右上角工具栏提供一键持久化切换；
+  - **工程门禁**：`DashboardCockpit.test.tsx` 4/4 通过、`modules.test.tsx` 23/23 通过、`npx tsc -b` 0 报错、`vault-check.py` PASS。
+
+- ✅ **Phase 2.3 错误日志诊断编码与 SM-2/FSRS 智能加权深度打通（2026-10-06 交付）**：
   - **结构化诊断引擎落地（`diagnostics.ts`）**：将文科 D1–D5（审题、三层次分离、引证、术语、复合句衔接）与理科 MINT 四阶 BE（公式起步、SI量纲、有效数字精度、结论句）进行状态与缺陷模式建模，支持自动诊断识别与建议输出；
   - **KlausurSim 错题补丁联动升级**：考场评审自查面板在复制 Fehlerlog 补丁时，自动将诊断出的 D1–D5 / BE 缺陷结构化格式化为 Markdown 规范行，直接沉淀入 `Fehlerlog.md`；
   - **SM-2 / FSRS 考点智能加权与穿透（`applyDiagnosticWeighting`）**：在 `scheduler.ts` 中实现缺陷加权算法（基于诊断代码的 Priority Boost 抑制稳定性 Stability Damping、增加难度 Difficulty Boost，并将受影响卡片立即设为到期），并在 `KlausurSim.tsx` 评审区提供一键「Defizite in FSRS priorisieren」调度，与 `Flashcards` 记忆系统实现无缝联动。
