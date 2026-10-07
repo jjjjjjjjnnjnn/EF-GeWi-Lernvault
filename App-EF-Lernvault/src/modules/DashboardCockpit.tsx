@@ -138,12 +138,12 @@ const DEMO_D_RADAR: RadarMetric[] = [
     isWeak: true,
     descDE: "Dichte Verwendung von präzisen Termini statt Alltagssprache.",
     descZH: "高频使用学科规范学术词，剔除口语与生活化用语。",
-    fixGuideDE: "Ersetze Alltagsverben durch Fachtermini (z. B. 'manifestiert' statt 'zeigt').",
-    fixGuideZH: "背诵每科核心学术高频动词，杜绝口语化表述。",
+    fixGuideDE: "Ersetze umgangssprachliche Verben durch Nomen-Verb-Gefüge und Fachbegriffe.",
+    fixGuideZH: "使用名词化结构（Nominalstil）代替泛泛说明。",
   },
   {
     code: "D5",
-    nameDE: "Satzverknüpfung",
+    nameDE: "Satzbau & Verknüpfung",
     nameZH: "复合句学术张力",
     score: 3,
     max: 4,
@@ -252,14 +252,14 @@ const DEMO_MISSIONS: MissionItem[] = [
     type: "reise",
     fach: "SoWi",
     afb: "AFB II",
-    titleDE: "SoWi IF 1: «Drei-Ebenen-Trennung: Deskription vs. Deutung»",
-    titleZH: "攻克 1 门微课: SoWi «三态分流：客观描述 vs 机制分析 vs 价值评价»",
+    titleDE: "SoWi Leit-Lernreise: Dreisatz-Trennung (Deskription vs Mechanismus vs Urteil)",
+    titleZH: "攻克 1 门微课: SoWi «三态分流: 客观描述 vs 机制分析 vs 价值评价»",
     tag: "Lernreise · D2",
     xpReward: 80,
     estMinutes: 8,
     targetTab: "reise",
-    targetContext: { fach: "SoWi" },
-    difficultyDE: "8 Min · Kernmodul",
+    targetContext: { fach: "SoWi", reiseId: "sowi-ef-01" },
+    difficultyDE: "8 Min · Kernfokus",
     difficultyZH: "8 分钟 · 核心专攻",
   },
   {
@@ -267,24 +267,29 @@ const DEMO_MISSIONS: MissionItem[] = [
     type: "klausursim",
     fach: "Mathe",
     afb: "AFB II",
-    titleDE: "10-Minuten-Aufgabe: Extremwert-Randwertvergleich (BE-Genauigkeit)",
+    titleDE: "Mathe MINT-BE Intervallcheck: Extremwerte am geschlossenen Intervallrand",
     titleZH: "限时 10 分钟冲刺: 数学极值闭区间端点检验题 (BE-Genauigkeit 专项)",
     tag: "Klausur · MINT-BE",
     xpReward: 100,
     estMinutes: 10,
     targetTab: "klausursim",
-    targetContext: { fach: "Mathe" },
-    difficultyDE: "10 Min · Klausur",
+    difficultyDE: "10 Min · Klausur-Transfer",
     difficultyZH: "10 分钟 · 会考真题",
   },
 ];
 
-// SVG 多边形几何雷达图生成函数
-function generateRadarPoints(metrics: RadarMetric[], radius: number, center: number) {
-  const total = metrics.length;
+interface Point {
+  x: number;
+  y: number;
+  angle: number;
+  m: RadarMetric;
+}
+
+function generateRadarPoints(metrics: RadarMetric[], radius: number, center: number): Point[] {
+  const n = metrics.length;
   return metrics.map((m, i) => {
-    const angle = (Math.PI * 2 / total) * i - Math.PI / 2;
-    const ratio = Math.max(0.2, m.score / m.max);
+    const angle = (Math.PI * 2 * i) / n - Math.PI / 2;
+    const ratio = Math.min(1, Math.max(0.1, m.score / m.max));
     const r = radius * ratio;
     const x = center + r * Math.cos(angle);
     const y = center + r * Math.sin(angle);
@@ -298,43 +303,33 @@ export function DashboardCockpit({
   onSwitchToLegacy,
 }: DashboardCockpitProps) {
   const de = lang === "de";
-  const [completedMissions, setCompletedMissions] = useState<Record<string, boolean>>({});
-  const [currentXP, setCurrentXP] = useState<number>(680);
+
+  const [mounted, setMounted] = useState(false);
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  const [currentXP, setCurrentXP] = useState(680);
   const targetXP = 1000;
 
-  // 交互状态：当前选中的天梯节点（展开段位学术详情）
-  const [selectedStufeId, setSelectedStufeId] = useState<string>("q1_vertiefung");
-  // 交互状态：双轨雷达当前查看的指标（展开学术评测细则与纠错指引）
-  const [activeMetricCode, setActiveMetricCode] = useState<string>("D2");
-  // 交互状态：雷达视角切换（文科 D1-D5 vs 理科 BE）
-  const [radarTrack, setRadarTrack] = useState<"gewi" | "mint">("gewi");
-  // 交互状态：鼠标悬停的雷达节点 (动态指引悬停)
-  const [hoveredMetricCode, setHoveredMetricCode] = useState<string | null>(null);
-  // 交互状态：是否展开答题细则抽屉 (Accordion)
-  const [expandedDetail, setExpandedDetail] = useState<boolean>(false);
-  // 挂载平滑补间动画状态
-  const [mounted, setMounted] = useState<boolean>(false);
-  // 伴学猫头鹰 / 伙伴互动状态 (Duolingo 拟态心理支持)
-  const [mascotMood, setMascotMood] = useState<"cheer" | "focus" | "proud">("focus");
-  // 每日首战增益宝箱 (Variable Reward Boost)
-  const [chestClaimed, setChestClaimed] = useState<boolean>(false);
+  const [completedMissions, setCompletedMissions] = useState<Record<string, boolean>>({});
+  const [chestClaimed, setChestClaimed] = useState(false);
+  const [mascotMood, setMascotMood] = useState<"focus" | "cheer" | "proud">("focus");
 
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setMounted(true);
-    }, 50);
-    return () => clearTimeout(timer);
-  }, []);
+  const [radarTrack, setRadarTrack] = useState<"gewi" | "mint">("gewi");
+  const [activeMetricCode, setActiveMetricCode] = useState<string>("D2");
+  const [hoveredMetricCode, setHoveredMetricCode] = useState<string | null>(null);
+  const [expandedDetail, setExpandedDetail] = useState(false);
+  const [selectedStufeId, setSelectedStufeId] = useState<string>("q1_vertiefung");
 
   const toggleMission = (id: string, xp: number) => {
     setCompletedMissions((prev) => {
-      const next = !prev[id];
-      if (next) {
+      const next = { ...prev, [id]: !prev[id] };
+      if (next[id]) {
         setCurrentXP((x) => Math.min(targetXP, x + xp));
-      } else {
-        setCurrentXP((x) => Math.max(0, x - xp));
+        setMascotMood("cheer");
       }
-      return { ...prev, [id]: next };
+      return next;
     });
   };
 
@@ -346,7 +341,6 @@ export function DashboardCockpit({
   const activeMetric =
     activeMetricList.find((m) => m.code === activeMetricCode) || activeMetricList[0];
 
-  // SVG 雷达参数 (精简紧凑版)
   const radarCenter = 85;
   const radarRadius = 62;
   const radarPoints = generateRadarPoints(activeMetricList, radarRadius, radarCenter);
@@ -354,32 +348,37 @@ export function DashboardCockpit({
 
   return (
     <div className="mx-auto max-w-6xl space-y-6 pb-16 transition-all duration-300">
-      {/* 1. 顶部刊头与极简工具栏 (MASTHEAD & TOOLS) */}
-      <header className="flex flex-col sm:flex-row sm:items-center justify-between pb-2 border-b border-[var(--line)] gap-4">
-        <div className="flex items-center gap-3">
-          <div className="flex items-center justify-center w-10 h-10 rounded border border-[var(--line)] bg-[var(--surface)] shrink-0 overflow-hidden">
-            <MascotFox state="avatar" size={32} />
+      {/* 1. 顶部刊头与极简工具栏 (Linear Header) */}
+      <header className="flex flex-col sm:flex-row sm:items-center justify-between pb-3 border-b border-slate-200/80 gap-4">
+        <div className="flex items-center gap-3.5">
+          <div className="flex items-center justify-center w-11 h-11 rounded-xl border border-slate-200/90 bg-white shrink-0 overflow-hidden shadow-none">
+            <MascotFox state="avatar" size={34} />
           </div>
           <div>
-            <h1 className="font-serif text-2xl font-normal text-[var(--ink)] tracking-tight">
-              {de ? "Klausur-Leistungszentrale" : "会考战力与升阶总台"}
-            </h1>
-            <p className="font-sans text-xs text-[var(--gray)]">
+            <div className="flex items-center gap-2">
+              <h1 className="font-serif text-2xl font-semibold text-slate-900 tracking-tight">
+                {de ? "Klausur-Leistungszentrale" : "会考战力与升阶总台"}
+              </h1>
+              <span className="font-mono text-[10px] px-2 py-0.5 rounded-full border border-slate-200 bg-slate-100 text-slate-600 font-medium">
+                EF &rarr; Q1
+              </span>
+            </div>
+            <p className="font-sans text-xs text-slate-500 mt-0.5">
               {de ? "Qualifikationsphase Q1/Q2 · Fokus-Dashboard" : "Gymnasium Oberstufe · 今日冲刺与考纲战力"}
             </p>
           </div>
         </div>
 
         <div className="flex items-center gap-2.5 self-start sm:self-auto">
-          {/* 连续打卡动量徽章 (Streak Momentum - German Precision) */}
-          <div className="flex items-center gap-2 border border-[var(--accent)]/30 bg-[var(--paper-subtle)] px-2.5 py-1 rounded select-none">
+          {/* 连续打卡动量徽章 */}
+          <div className="flex items-center gap-2 border border-slate-200/90 bg-white px-3 py-1.5 rounded-xl select-none">
             <MascotFox state="streak" size={18} animate={false} />
-            <span className="font-mono text-xs font-bold text-[var(--ink)] tabular-nums">
+            <span className="font-mono text-xs font-semibold text-slate-800 tabular-nums">
               18 {de ? "Tage Streak" : "天连胜"}
             </span>
           </div>
 
-          {/* 主题切换器 (暗黑精锐 / 极简学术) */}
+          {/* 主题切换器 */}
           <button
             type="button"
             onClick={() => {
@@ -392,7 +391,7 @@ export function DashboardCockpit({
                 // ignore
               }
             }}
-            className="text-xs font-mono text-[var(--gray)] hover:text-[var(--accent)] border border-[var(--line)] px-2.5 py-1 rounded bg-[var(--surface)] hover:bg-[var(--paper)] transition-all active:scale-95 cursor-pointer"
+            className="text-xs font-mono text-slate-600 hover:text-slate-900 border border-slate-200/90 px-3 py-1.5 rounded-xl bg-white hover:bg-slate-50 transition-all cursor-pointer"
             title={de ? "Theme wechseln (Cyber / Academic)" : "切换主题 (暗黑精锐 / 极简学术)"}
           >
             {de ? "Theme" : "暗黑/浅色"}
@@ -402,7 +401,7 @@ export function DashboardCockpit({
             <button
               type="button"
               onClick={onSwitchToLegacy}
-              className="text-xs font-mono text-[var(--gray)] hover:text-[var(--ink)] border border-[var(--line)] px-2.5 py-1 rounded bg-[var(--surface)] hover:bg-[var(--paper)] transition-all active:scale-95 cursor-pointer"
+              className="text-xs font-mono text-slate-600 hover:text-slate-900 border border-slate-200/90 px-3 py-1.5 rounded-xl bg-white hover:bg-slate-50 transition-all cursor-pointer"
               title={de ? "Zur klassischen Übersicht" : "返回旧版概览"}
             >
               {de ? "Klassik" : "经典版"}
@@ -411,67 +410,47 @@ export function DashboardCockpit({
         </div>
       </header>
 
-      {/* 2. 减负聚合区：极简 HERO 战力卡片 + 主行动号召 (PRIMARY HERO) */}
-      <section className="stagger-1 academic-card p-5 transition-all relative overflow-hidden">
-        {/* 背景微环境柔光 (Academic Focus Glow) */}
-        <div className="absolute -top-12 -right-12 w-48 h-48 rounded-full bg-[var(--accent)]/5 pointer-events-none blur-2xl" />
-
-        <div className="flex flex-col md:flex-row md:items-center justify-between gap-5 relative z-10">
-          {/* 左侧：战力徽章与经验池 (German Abitur 1-15 Notenpunkte System) */}
-          <div className="flex items-center gap-4">
-            {/* 精致学术盾牌/质感印章徽标 */}
-            <div className="flex items-center justify-center w-14 h-14 rounded border border-[var(--accent)]/30 bg-[var(--paper-subtle)] shrink-0 select-none transition-transform hover:scale-105 duration-200">
-              <div className="text-center">
-                <span className="block font-mono text-[9px] uppercase tracking-wider text-[var(--gray)] font-semibold">
-                  LEVEL
-                </span>
-                <span className="block font-serif text-2xl font-bold text-[var(--ink)] leading-none tabular-nums">
-                  11
-                </span>
-                <span className="block font-mono text-[8px] text-[var(--accent)] font-bold tracking-tight">
-                  NP
-                </span>
-              </div>
+      {/* 2. 核心战力看板 (Hero Section: 紧凑左右结构 + 饱满轨道) */}
+      <section className="bg-white rounded-xl border border-slate-200/80 p-5 md:p-6 space-y-5 transition-all">
+        <div className="flex flex-col md:flex-row md:items-center justify-between gap-5">
+          {/* 左侧：等级大号排版 + 微圆角 Badge + XP 进度 */}
+          <div className="space-y-1.5">
+            <div className="flex items-center gap-3 flex-wrap">
+              <span className="font-serif text-3xl md:text-4xl font-bold tracking-tight text-slate-900">
+                11 Notenpunkte
+              </span>
+              <span className="font-mono text-xs px-2.5 py-0.5 rounded-md border border-blue-200 bg-blue-50 text-blue-700 font-semibold">
+                {de ? "Stufe II · Q1-Niveau" : "第二阶 · Q1 进阶期"}
+              </span>
+              <span className="font-mono text-xs px-2 py-0.5 rounded-md border border-slate-200 bg-slate-50 text-slate-600 font-medium">
+                {de ? "Note 2 (Gut)" : "2分档 · 良好 (Gut)"}
+              </span>
             </div>
-
-            <div className="space-y-1">
-              <div className="flex items-center gap-2 flex-wrap">
-                <span className="font-serif text-xl font-medium text-[var(--ink)]">
-                  11 Notenpunkte
-                </span>
-                <span className="font-mono text-[10px] uppercase px-2 py-0.5 rounded bg-[var(--accent)] text-[var(--paper)] font-bold tracking-wide">
-                  {de ? "Stufe II · Q1-Niveau" : "第二阶 · Q1 进阶期"}
-                </span>
-                <span className="font-mono text-[10px] px-1.5 py-0.5 rounded border border-[var(--line)] bg-[var(--paper)] text-[var(--gray)] font-medium">
-                  {de ? "Note 2 (Gut)" : "2分档 · 良好 (Gut)"}
-                </span>
-              </div>
-              <div className="flex items-center gap-2 font-mono text-xs text-[var(--gray)] tabular-nums">
-                <span className="text-[var(--ink)] font-semibold">{currentXP} / {targetXP} XP</span>
-                <span>·</span>
-                <span>{de ? `noch ${targetXP - currentXP} XP bis Sprung auf 13 NP (Note 1- Sehr gut)` : `还差 ${targetXP - currentXP} XP 跃升 13 NP (1分档·优秀)`}</span>
-              </div>
+            <div className="flex items-center gap-2 font-mono text-xs text-slate-500 tabular-nums">
+              <span className="text-slate-800 font-semibold">{currentXP} / {targetXP} XP</span>
+              <span className="text-slate-300">&bull;</span>
+              <span>{de ? `noch ${targetXP - currentXP} XP bis Sprung auf 13 NP (Note 1- Sehr gut)` : `还差 ${targetXP - currentXP} XP 跃升 13 NP (1分档·优秀)`}</span>
             </div>
           </div>
 
-          {/* 右侧：唯一的超级主行动 CTA 按钮与伴学/宝箱探索激励 */}
+          {/* 右侧：激励互动与主行动 CTA */}
           <div className="flex flex-col sm:flex-row items-center gap-3">
-            {/* 伴学助手伙伴微互动 (Companion Buddy) */}
+            {/* 伴学助手微互动 */}
             <button
               type="button"
               onClick={() => {
                 setMascotMood((m) => (m === "focus" ? "cheer" : m === "cheer" ? "proud" : "focus"));
               }}
-              className="px-2.5 py-1.5 rounded border border-[var(--line)] bg-[var(--paper)] text-left hover:border-[var(--accent)] transition-all cursor-pointer flex items-center gap-2 group select-none"
+              className="w-full sm:w-auto px-3 py-2 rounded-xl border border-slate-200 bg-slate-50/70 hover:bg-slate-100 text-left transition-all cursor-pointer flex items-center gap-2.5 select-none"
               title={de ? "Klick mich für Feedback" : "点击伴学伙伴互动"}
             >
-              <div className="w-7 h-7 rounded-full border border-[var(--accent)]/40 bg-[var(--paper-subtle)] flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform overflow-hidden">
+              <div className="w-7 h-7 rounded-full border border-slate-200 bg-white flex items-center justify-center shrink-0 overflow-hidden">
                 <MascotFox
                   state={mascotMood === "focus" ? "avatar" : mascotMood === "cheer" ? "levelup" : "streak"}
                   size={24}
                 />
               </div>
-              <div className="text-[11px] font-sans text-[var(--ink)]">
+              <div className="text-xs font-sans text-slate-700">
                 {mascotMood === "focus"
                   ? (de ? "Fokus bereit" : "保持专注")
                   : mascotMood === "cheer"
@@ -480,7 +459,7 @@ export function DashboardCockpit({
               </div>
             </button>
 
-            {/* 每日首战可变增益卡 (Variable Reward Chest) */}
+            {/* 每日首战增益 */}
             {!chestClaimed ? (
               <button
                 type="button"
@@ -488,74 +467,100 @@ export function DashboardCockpit({
                   setChestClaimed(true);
                   setCurrentXP((x) => Math.min(targetXP, x + 50));
                 }}
-                className="px-2.5 py-1.5 rounded border border-[var(--accent)]/40 bg-[var(--paper-subtle)] hover:border-[var(--accent)] text-[11px] font-mono text-[var(--accent)] font-semibold flex items-center gap-1.5 cursor-pointer active:scale-95 transition-all select-none"
+                className="w-full sm:w-auto px-3 py-2 rounded-xl border border-blue-200 bg-blue-50 hover:bg-blue-100 text-xs font-mono text-blue-700 font-semibold flex items-center justify-center gap-1.5 cursor-pointer transition-all select-none"
                 title={de ? "Tages-Booster: +50 XP freischalten" : "领取今日探索增益: +50 XP"}
               >
-                <span>[+]</span>
+                <span>+</span>
                 <span>{de ? "Tages-Bonus (+50 XP)" : "首战增益 (+50 XP)"}</span>
               </button>
             ) : (
-              <span className="px-2 py-1 rounded border border-[var(--line)] bg-[var(--paper-subtle)] text-[10px] font-mono text-[var(--gray)] select-none">
-                {de ? "[OK] Bonus aktiv" : "[OK] 增益已生效"}
+              <span className="w-full sm:w-auto px-3 py-2 rounded-xl border border-slate-200 bg-slate-50 text-xs font-mono text-slate-400 select-none text-center">
+                {de ? "Bonus aktiv" : "增益已生效"}
               </span>
             )}
 
+            {/* 主行动号召 (CTA 按钮: 深色饱满圆角 + 精细 SVG 箭头) */}
             <button
               type="button"
               onClick={() => onNavigateToTab?.("flashcards")}
-              className="academic-hero-button w-full sm:w-auto flex items-center justify-center gap-2.5 px-6 py-3 rounded border border-[var(--ink)] bg-[var(--ink)] text-[var(--paper)] font-sans text-sm font-medium hover:bg-[var(--accent)] hover:border-[var(--accent)] cursor-pointer select-none group"
+              className="w-full sm:w-auto flex items-center justify-center gap-2.5 px-6 py-2.5 rounded-xl border border-slate-900 bg-slate-900 text-white font-sans text-xs font-medium hover:bg-slate-800 transition-all cursor-pointer select-none group"
             >
-              <div className="academic-shimmer" />
               <span>{de ? "Heute lernen (15 Min. starten)" : "开始今日冲刺 (15分钟)"}</span>
-              <span className="font-mono font-bold transition-transform duration-150 group-hover:translate-x-1">
-                {"->"}
-              </span>
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                className="transition-transform group-hover:translate-x-0.5"
+              >
+                <path
+                  d="M6 3.5L10.5 8L6 12.5"
+                  stroke="currentColor"
+                  strokeWidth="1.8"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
             </button>
           </div>
         </div>
 
-        {/* 经验进度条 (平滑补间动画与德国 Oberstufe 档位刻度) */}
-        <div className="mt-4 pt-3 border-t border-[var(--line)]/50 space-y-1.5">
-          <div className="flex items-center justify-between font-mono text-[10px] text-[var(--gray)] tabular-nums px-0.5">
-            <span>10 NP (Defizit-Grenze)</span>
-            <span className="text-[var(--accent)] font-semibold">11 NP (Aktuell)</span>
-            <span>13 NP (Sehr Gut Ziel)</span>
+        {/* 经验进度槽 (h-3 高度 + 刻度节点点位) */}
+        <div className="pt-3 border-t border-slate-100 space-y-2">
+          {/* 刻度文字与节点 */}
+          <div className="relative flex justify-between font-mono text-[10px] text-slate-500 tabular-nums px-1">
+            <span className="text-slate-400">05 NP</span>
+            <span className="text-slate-600 font-medium">10 NP (Defizit)</span>
+            <span className="text-blue-600 font-bold">11 NP (Aktuell)</span>
+            <span className="text-slate-600 font-medium">13 NP (Sehr Gut)</span>
+            <span className="text-slate-400">15 NP</span>
           </div>
-          <div className="h-2 w-full rounded-full bg-[var(--paper-subtle)] overflow-hidden">
+
+          <div className="relative w-full h-3 rounded-full bg-slate-100 overflow-hidden">
             <div
-              className="h-full bg-[var(--accent)] rounded-full transition-all duration-700 ease-out"
+              className="h-full bg-slate-800 rounded-full transition-all duration-700 ease-out"
               style={{ width: mounted ? `${(currentXP / targetXP) * 100}%` : "0%" }}
             />
+          </div>
+
+          {/* 刻度点指示 */}
+          <div className="relative w-full flex justify-between px-1 -mt-1 pointer-events-none">
+            <span className="w-1.5 h-1.5 rounded-full bg-slate-300" />
+            <span className="w-1.5 h-1.5 rounded-full bg-slate-400" />
+            <span className="w-2 h-2 rounded-full bg-blue-600 ring-2 ring-blue-100 -mt-0.5" />
+            <span className="w-1.5 h-1.5 rounded-full bg-slate-400" />
+            <span className="w-1.5 h-1.5 rounded-full bg-slate-300" />
           </div>
         </div>
       </section>
 
-      {/* 3. 二分屏核心动线：左侧 60% 今日战场 (Actionable) vs 右侧 40% 战力与弱项诊断 (Analytical) */}
+      {/* 3. 二分屏核心动线：左侧 7/12 今日战场 vs 右侧 5/12 战力与弱项诊断 */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
-        {/* ===================== 左侧主体 (7 / 12 约 58%)：今日战场 ===================== */}
-        <section className="lg:col-span-7 space-y-4 stagger-2">
+        {/* ===================== 左侧主体 (7 / 12)：今日战场 ===================== */}
+        <section className="lg:col-span-7 space-y-5">
           {/* 今日任务卡片容器 */}
-          <div className="rounded border border-[var(--line)] bg-[var(--surface)] p-5 space-y-4">
-            <div className="flex items-center justify-between border-b border-[var(--line)]/60 pb-3">
+          <div className="rounded-xl border border-slate-200/80 bg-white p-5 space-y-4">
+            <div className="flex items-center justify-between border-b border-slate-100 pb-3">
               <div>
-                <div className="font-mono text-[10px] text-[var(--gray)] uppercase tracking-wider">
+                <div className="font-mono text-[10px] text-slate-400 uppercase tracking-wider">
                   {de ? "Aktionsplan · Heute fällig" : "今日战场 · 靶向处方"}
                 </div>
-                <h2 className="font-serif text-lg text-[var(--ink)]">
+                <h2 className="font-serif text-lg text-slate-900 font-medium">
                   {de ? "Tages-Rezeptur (15 Minuten)" : "靶向弱项消除处方"}
                 </h2>
               </div>
-              <span className="font-mono text-xs text-[var(--gray)] border border-[var(--line)] px-2 py-0.5 rounded bg-[var(--paper-subtle)] font-medium">
+              <span className="font-mono text-xs text-slate-500 border border-slate-200 px-2 py-0.5 rounded-md bg-slate-50 font-medium">
                 {completedCount} / {DEMO_MISSIONS.length} {de ? "erledigt" : "已完成"}
               </span>
             </div>
 
             {isAllCompleted ? (
-              <div className="p-5 rounded border border-[var(--line)] bg-[var(--paper)] text-center space-y-2 tab-enter">
-                <div className="font-serif text-base text-[var(--ink)]">
-                  {de ? "[OK] Tagespensum erfolgreich absolviert!" : "[OK] 今日任务已全部通关！"}
+              <div className="p-6 rounded-xl border border-slate-200/80 bg-slate-50/50 text-center space-y-2">
+                <div className="font-serif text-base text-slate-900 font-medium">
+                  {de ? "Tagespensum erfolgreich absolviert!" : "今日任务已全部通关！"}
                 </div>
-                <p className="font-sans text-xs text-[var(--gray)] max-w-sm mx-auto">
+                <p className="font-sans text-xs text-slate-500 max-w-sm mx-auto">
                   {de
                     ? "Alle Defizite für heute abgeschlossen. Du kannst dich jetzt erholen."
                     : "所有弱项考点已完成今日强化与记忆重算，今日目标达成。"}
@@ -568,44 +573,46 @@ export function DashboardCockpit({
                   return (
                     <div
                       key={m.id}
-                      className={`group flex items-start justify-between p-3.5 rounded border transition-all duration-200 gap-3 ${
+                      className={`group flex items-start justify-between p-3.5 rounded-xl border transition-all duration-200 gap-3 ${
                         done
-                          ? "border-[var(--line)] bg-[var(--paper-subtle)]/40 opacity-60"
-                          : "border-[var(--line)] bg-[var(--paper)] hover:border-[var(--accent)] hover:-translate-y-0.5"
+                          ? "border-slate-200 bg-slate-50/50 opacity-60"
+                          : "border-slate-200/80 bg-white hover:border-slate-300"
                       }`}
                     >
                       <div className="flex items-start gap-3">
                         <button
                           type="button"
                           onClick={() => toggleMission(m.id, m.xpReward)}
-                          className="mt-0.5 w-4 h-4 rounded border border-[var(--line)] bg-[var(--surface)] flex items-center justify-center text-xs font-mono cursor-pointer hover:border-[var(--accent)] active:scale-90 transition-all shrink-0"
+                          className="mt-0.5 w-4 h-4 rounded border border-slate-300 bg-white flex items-center justify-center text-xs font-mono cursor-pointer hover:border-slate-500 transition-all shrink-0"
                           title={de ? "Als erledigt markieren" : "勾选标记完成"}
                         >
-                          {done ? "x" : ""}
+                          {done && (
+                            <svg width="10" height="10" viewBox="0 0 12 12" fill="none">
+                              <path d="M2.5 6L5 8.5L9.5 3.5" stroke="#16A34A" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
+                            </svg>
+                          )}
                         </button>
                         <div className="space-y-1">
                           <div className="flex items-center gap-1.5 flex-wrap">
-                            {/* 德国高中学科微标签 */}
-                            <span className="font-mono text-[9px] uppercase px-1.5 py-0.2 rounded border border-[var(--accent)]/30 bg-[var(--paper-subtle)] text-[var(--ink)] font-semibold">
-                              [{m.fach}]
+                            <span className="font-mono text-[9px] uppercase px-1.5 py-0.5 rounded border border-slate-200 bg-slate-50 text-slate-700 font-semibold">
+                              {m.fach}
                             </span>
-                            {/* 认知层级 AFB I-III 规范徽章 */}
-                            <span className="font-mono text-[9px] uppercase px-1.5 py-0.2 rounded border border-[var(--line)] bg-[var(--surface)] text-[var(--gray)] font-medium">
+                            <span className="font-mono text-[9px] uppercase px-1.5 py-0.5 rounded border border-slate-200 bg-slate-50 text-slate-500 font-medium">
                               {m.afb}
                             </span>
-                            <span className="font-mono text-[9px] uppercase px-1.5 py-0.2 rounded border border-[var(--line)] bg-[var(--surface)] text-[var(--gray)] font-medium">
+                            <span className="font-mono text-[9px] uppercase px-1.5 py-0.5 rounded border border-slate-200 bg-slate-50 text-slate-500 font-medium">
                               {m.tag}
                             </span>
-                            <span className="font-mono text-xs text-[var(--accent)] font-bold tabular-nums">
+                            <span className="font-mono text-xs text-blue-600 font-bold tabular-nums">
                               +{m.xpReward} XP
                             </span>
-                            <span className="font-mono text-[10px] text-[var(--gray)] tabular-nums">
-                              · {de ? m.difficultyDE : m.difficultyZH}
+                            <span className="font-mono text-[10px] text-slate-400 tabular-nums">
+                              &bull; {de ? m.difficultyDE : m.difficultyZH}
                             </span>
                           </div>
                           <div
                             className={`font-sans text-xs font-medium transition-colors ${
-                              done ? "line-through text-[var(--gray)]" : "text-[var(--ink)]"
+                              done ? "line-through text-slate-400" : "text-slate-800"
                             }`}
                           >
                             {de ? m.titleDE : m.titleZH}
@@ -616,9 +623,13 @@ export function DashboardCockpit({
                       <button
                         type="button"
                         onClick={() => onNavigateToTab?.(m.targetTab, m.targetContext)}
-                        className="shrink-0 font-mono text-xs text-[var(--ink)] border border-[var(--line)] hover:border-[var(--accent)] hover:text-[var(--accent)] px-2.5 py-1 rounded bg-[var(--surface)] active:scale-95 transition-all cursor-pointer font-medium flex items-center gap-1 group-hover:border-[var(--accent)]"
+                        className="shrink-0 font-mono text-xs text-slate-700 border border-slate-200 hover:border-slate-400 px-2.5 py-1 rounded-lg bg-white transition-all cursor-pointer font-medium flex items-center gap-1"
+                        aria-label={de ? "Start ->" : "去执行 ->"}
                       >
-                        <span>{de ? "Start ->" : "去执行 ->"}</span>
+                        <span>{de ? "Start" : "去执行"}</span>
+                        <svg width="10" height="10" viewBox="0 0 12 12" fill="none">
+                          <path d="M4.5 2.5L8 6L4.5 9.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                        </svg>
                       </button>
                     </div>
                   );
@@ -627,26 +638,35 @@ export function DashboardCockpit({
             )}
           </div>
 
-          {/* 年级战役通关路线 (带柔和激活焦点环与阻尼过渡) */}
-          <div className="rounded border border-[var(--line)] bg-[var(--surface)] p-4 space-y-3">
-            <div className="flex items-center justify-between border-b border-[var(--line)]/50 pb-2">
-              <span className="font-mono text-[10px] uppercase tracking-wider text-[var(--gray)]">
+          {/* 4. 底部三阶晋升路线：水平时间线步进器 (Horizontal Stepper) */}
+          <div className="rounded-xl border border-slate-200/80 bg-white p-5 space-y-4">
+            <div className="flex items-center justify-between border-b border-slate-100 pb-2.5">
+              <span className="font-mono text-[10px] uppercase tracking-wider text-slate-400">
                 {de ? "Abitur-Stufenleiter" : "年级战役路线"}
               </span>
-              <span className="font-mono text-xs text-[var(--accent)] font-semibold">
+              <span className="font-mono text-xs text-slate-700 font-semibold">
                 {currentStufe.id.toUpperCase()}
               </span>
             </div>
 
-            {/* 连贯通关路线指示条 */}
-            <div className="relative mb-1">
-              <div className="absolute top-1/2 left-6 right-6 h-0.5 bg-[var(--line)] -translate-y-1/2 z-0" />
+            {/* 水平时间线步进器 */}
+            <div className="relative py-2">
+              {/* 连接轨线 */}
+              <div className="absolute top-5 left-10 right-10 h-0.5 bg-slate-200 -translate-y-1/2 z-0" />
               <div
-                className="absolute top-1/2 left-6 h-0.5 bg-[var(--accent)] -translate-y-1/2 z-0 transition-all duration-500"
-                style={{ width: selectedStufeId === "ef_basis" ? "0%" : selectedStufeId === "q1_vertiefung" ? "50%" : "100%" }}
+                className="absolute top-5 left-10 h-0.5 bg-slate-800 -translate-y-1/2 z-0 transition-all duration-500"
+                style={{
+                  width:
+                    selectedStufeId === "ef_basis"
+                      ? "0%"
+                      : selectedStufeId === "q1_vertiefung"
+                      ? "50%"
+                      : "100%",
+                }}
               />
+
               <div className="relative z-10 grid grid-cols-3 gap-2">
-                {DEMO_STUFEN.map((s, idx) => {
+                {DEMO_STUFEN.map((s) => {
                   const isDone = s.status === "completed";
                   const isCurr = s.status === "current";
                   const isSelected = s.id === selectedStufeId;
@@ -656,32 +676,30 @@ export function DashboardCockpit({
                       key={s.id}
                       type="button"
                       onClick={() => setSelectedStufeId(s.id)}
-                      className={`p-2.5 rounded border text-left transition-all duration-150 cursor-pointer ${
+                      className={`flex flex-col items-center text-center p-2 rounded-xl transition-all cursor-pointer ${
                         isSelected
-                          ? "border-[var(--accent)] bg-[var(--paper)] -translate-y-0.5"
-                          : "border-[var(--line)] bg-[var(--paper)]/60 hover:bg-[var(--paper)] hover:border-[var(--line)]/80"
+                          ? "bg-slate-50 ring-1 ring-slate-300"
+                          : "hover:bg-slate-50/60"
                       }`}
                     >
-                      <div className="flex items-center justify-between font-mono text-[10px]">
-                        <span className="font-bold text-[var(--ink)]">0{idx + 1}</span>
-                        <span className="flex items-center gap-1">
-                          {isDone ? (
-                            <span className="w-2 h-2 rounded-full bg-[var(--success)] inline-block" title="Abgeschlossen" />
-                          ) : isCurr ? (
-                            <span className="relative flex h-2 w-2">
-                              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[var(--accent)] opacity-75" />
-                              <span className="relative inline-flex rounded-full h-2 w-2 bg-[var(--accent)]" />
-                            </span>
-                          ) : (
-                            <span className="w-2 h-2 rounded-full border border-[var(--line)] bg-[var(--paper)] inline-block" title="Gesperrt" />
-                          )}
-                        </span>
+                      {/* 图形状态圆点 */}
+                      <div className="w-6 h-6 rounded-full flex items-center justify-center bg-white border border-slate-300 mb-2">
+                        {isDone ? (
+                          <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+                            <path d="M2.5 6L5 8.5L9.5 3.5" stroke="#16A34A" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                          </svg>
+                        ) : isCurr ? (
+                          <span className="w-2.5 h-2.5 rounded-full bg-slate-900" />
+                        ) : (
+                          <span className="w-2 h-2 rounded-full bg-slate-300" />
+                        )}
                       </div>
-                      <div className="font-sans text-xs font-medium text-[var(--ink)] truncate mt-1">
+
+                      <div className="font-sans text-xs font-medium text-slate-800">
                         {de ? s.stufeDE : s.stufeZH}
                       </div>
-                      <div className="font-mono text-[10px] text-[var(--gray)] mt-1">
-                        &gt;= {s.minNP} NP
+                      <div className="font-mono text-[10px] text-slate-400 mt-0.5">
+                        &ge; {s.minNP} NP
                       </div>
                     </button>
                   );
@@ -689,16 +707,16 @@ export function DashboardCockpit({
               </div>
             </div>
 
-            {/* 当前选中年级特权展示 */}
-            <div className="pt-2 border-t border-[var(--line)]/50 text-xs space-y-1">
-              <div className="font-mono text-[10px] text-[var(--gray)] uppercase">
+            {/* 当前选中年级特权清单 */}
+            <div className="pt-2 border-t border-slate-100 text-xs space-y-1.5">
+              <div className="font-mono text-[10px] text-slate-400 uppercase">
                 {de ? "Freigeschaltete Kompetenzen:" : "段位特权与能力清单:"}
               </div>
-              <div className="flex flex-wrap gap-1.5 pt-0.5">
+              <div className="flex flex-wrap gap-1.5">
                 {(de ? currentStufe.unlockedPerksDE : currentStufe.unlockedPerksZH).map((perk, i) => (
                   <span
                     key={i}
-                    className="font-mono text-[10px] px-2 py-0.5 rounded border border-[var(--line)] bg-[var(--paper)] text-[var(--ink)]"
+                    className="font-mono text-[10px] px-2.5 py-0.5 rounded-md border border-slate-200 bg-slate-50 text-slate-700"
                   >
                     {perk}
                   </span>
@@ -708,31 +726,31 @@ export function DashboardCockpit({
           </div>
         </section>
 
-        {/* ===================== 右侧辅助 (5 / 12 约 42%)：战力诊断室 ===================== */}
-        <section className="lg:col-span-5 space-y-4 stagger-3">
-          <div className="rounded border border-[var(--line)] bg-[var(--surface)] p-5 space-y-4">
-            {/* 诊断室头部与轨道微切换 */}
-            <div className="flex items-center justify-between border-b border-[var(--line)]/60 pb-3">
+        {/* ===================== 右侧辅助 (5 / 12)：战力诊断室 ===================== */}
+        <section className="lg:col-span-5 space-y-5">
+          <div className="rounded-xl border border-slate-200/80 bg-white p-5 space-y-4">
+            {/* 诊断室头部 */}
+            <div className="flex items-center justify-between border-b border-slate-100 pb-3">
               <div>
-                <div className="font-mono text-[10px] text-[var(--gray)] uppercase tracking-wider">
+                <div className="font-mono text-[10px] text-slate-400 uppercase tracking-wider">
                   {de ? "Diagnose" : "战力诊断"}
                 </div>
-                <h3 className="font-serif text-base text-[var(--ink)]">
+                <h3 className="font-serif text-base text-slate-900 font-medium">
                   {de ? "Klausur-Kompetenznetz" : "核心失分点几何雷达图"}
                 </h3>
               </div>
 
-              <div className="flex items-center gap-1 bg-[var(--paper-subtle)] p-0.5 rounded border border-[var(--line)]">
+              <div className="flex items-center gap-1 bg-slate-100 p-0.5 rounded-lg border border-slate-200/60">
                 <button
                   type="button"
                   onClick={() => {
                     setRadarTrack("gewi");
                     setActiveMetricCode("D2");
                   }}
-                  className={`px-2 py-0.5 text-[10px] font-mono rounded transition-all cursor-pointer ${
+                  className={`px-2.5 py-1 text-[10px] font-mono rounded-md transition-all cursor-pointer ${
                     radarTrack === "gewi"
-                      ? "bg-[var(--surface)] text-[var(--ink)] font-bold border border-[var(--line)] shadow-none"
-                      : "text-[var(--gray)] hover:text-[var(--ink)]"
+                      ? "bg-white text-slate-900 font-semibold border border-slate-200/80"
+                      : "text-slate-500 hover:text-slate-900"
                   }`}
                 >
                   {de ? "GeWi D1-D5" : "文科 D1-D5 表达雷达"}
@@ -743,10 +761,10 @@ export function DashboardCockpit({
                     setRadarTrack("mint");
                     setActiveMetricCode("BE-Genauigkeit");
                   }}
-                  className={`px-2 py-0.5 text-[10px] font-mono rounded transition-all cursor-pointer ${
+                  className={`px-2.5 py-1 text-[10px] font-mono rounded-md transition-all cursor-pointer ${
                     radarTrack === "mint"
-                      ? "bg-[var(--surface)] text-[var(--ink)] font-bold border border-[var(--line)] shadow-none"
-                      : "text-[var(--gray)] hover:text-[var(--ink)]"
+                      ? "bg-white text-slate-900 font-semibold border border-slate-200/80"
+                      : "text-slate-500 hover:text-slate-900"
                   }`}
                 >
                   {de ? "MINT BE-Exaktheit" : "理科 BE 采分步进雷达"}
@@ -754,8 +772,8 @@ export function DashboardCockpit({
               </div>
             </div>
 
-            {/* 紧凑版 SVG 几何雷达画布 */}
-            <div className="flex flex-col items-center justify-center p-3 rounded border border-[var(--line)] bg-[var(--paper)] transition-all">
+            {/* SVG 几何雷达画布 */}
+            <div className="flex flex-col items-center justify-center p-3 rounded-xl border border-slate-100 bg-slate-50/50 transition-all">
               <svg
                 width="170"
                 height="170"
@@ -764,8 +782,8 @@ export function DashboardCockpit({
               >
                 <defs>
                   <linearGradient id="academicRadarGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                    <stop offset="0%" stopColor="var(--ink)" stopOpacity="0.22" />
-                    <stop offset="100%" stopColor="var(--accent)" stopOpacity="0.12" />
+                    <stop offset="0%" stopColor="#1E293B" stopOpacity="0.2" />
+                    <stop offset="100%" stopColor="#3B82F6" stopOpacity="0.1" />
                   </linearGradient>
                 </defs>
 
@@ -777,7 +795,7 @@ export function DashboardCockpit({
                     cy={radarCenter}
                     r={radarRadius * scale}
                     fill="none"
-                    stroke="var(--line)"
+                    stroke="#E2E8F0"
                     strokeDasharray={scale === 1 ? "none" : "2,2"}
                     strokeWidth="1"
                   />
@@ -791,16 +809,16 @@ export function DashboardCockpit({
                     y1={radarCenter}
                     x2={radarCenter + radarRadius * Math.cos(pt.angle)}
                     y2={radarCenter + radarRadius * Math.sin(pt.angle)}
-                    stroke="var(--line)"
+                    stroke="#E2E8F0"
                     strokeWidth="1"
                   />
                 ))}
 
-                {/* 纸墨渐变多边形 */}
+                {/* 纸墨多边形 */}
                 <polygon
                   points={polygonPointsString}
                   fill="url(#academicRadarGrad)"
-                  stroke="var(--accent)"
+                  stroke="#1E293B"
                   strokeWidth="1.5"
                   className="transition-all duration-500 ease-out"
                 />
@@ -821,8 +839,8 @@ export function DashboardCockpit({
                         cx={pt.x}
                         cy={pt.y}
                         r={isSelected ? "5" : isHovered ? "4" : "3"}
-                        fill={pt.m.isWeak ? "var(--warning)" : "var(--ink)"}
-                        stroke="var(--surface)"
+                        fill={pt.m.isWeak ? "#E11D48" : "#1E293B"}
+                        stroke="#FFFFFF"
                         strokeWidth="1.5"
                         className="transition-all duration-200"
                       />
@@ -831,7 +849,7 @@ export function DashboardCockpit({
                         y={pt.y + (pt.y > radarCenter ? 8 : -5)}
                         textAnchor={pt.x > radarCenter ? "start" : "end"}
                         className={`font-mono text-[9px] select-none ${
-                          isSelected ? "fill-[var(--accent)] font-bold" : "fill-[var(--gray)]"
+                          isSelected ? "fill-slate-900 font-bold" : "fill-slate-500"
                         }`}
                       >
                         {pt.m.code}
@@ -842,8 +860,8 @@ export function DashboardCockpit({
               </svg>
             </div>
 
-            {/* 失分点列表：从矩形边框表格跃升为无边框质感列表 + 视觉微进度条 (Mini Segment Bar) */}
-            <div className="divide-y divide-[var(--line)]/50 pt-1">
+            {/* 3. 右侧诊断与弱项列表：带轻微分割线的无边框列表 + 薄弱项淡红底色 (bg-rose-50/border-rose-100) */}
+            <div className="divide-y divide-slate-100">
               {activeMetricList.map((item) => {
                 const isSelected = item.code === activeMetricCode;
                 const ratio = Math.min(1, Math.max(0, item.score / item.max));
@@ -853,44 +871,45 @@ export function DashboardCockpit({
                   <div
                     key={item.code}
                     onClick={() => setActiveMetricCode(item.code)}
-                    className={`flex items-center justify-between py-2 px-2 transition-all duration-150 cursor-pointer ${
-                      isSelected
-                        ? "bg-[var(--paper-subtle)] font-medium"
-                        : "hover:bg-[var(--paper-subtle)]/60"
-                    } ${item.isWeak ? "bg-[var(--warning)]/5" : ""}`}
+                    className={`flex items-center justify-between py-2.5 px-2.5 rounded-lg transition-all duration-150 cursor-pointer ${
+                      item.isWeak
+                        ? "bg-rose-50/80 border border-rose-100"
+                        : isSelected
+                        ? "bg-slate-50"
+                        : "hover:bg-slate-50/60"
+                    }`}
                   >
                     <div className="flex items-center gap-2.5 min-w-0">
-                      <span className={`font-mono text-[10px] px-1.5 py-0.5 rounded font-semibold shrink-0 ${
-                        item.isWeak
-                          ? "bg-[var(--warning)]/15 text-[var(--warning)] border border-[var(--warning)]/30"
-                          : "bg-[var(--surface)] text-[var(--gray)] border border-[var(--line)]"
-                      }`}>
+                      <span
+                        className={`font-mono text-[10px] px-1.5 py-0.5 rounded font-semibold shrink-0 ${
+                          item.isWeak
+                            ? "bg-rose-100 text-rose-700 border border-rose-200"
+                            : "bg-slate-100 text-slate-600 border border-slate-200/60"
+                        }`}
+                      >
                         {item.code}
                       </span>
-                      <span className="font-sans text-xs text-[var(--ink)] truncate">
+                      <span className="font-sans text-xs text-slate-800 truncate">
                         {de ? item.nameDE : item.nameZH}
                       </span>
-                      {item.isWeak && (
-                        <span className="text-[10px] font-mono text-[var(--warning)] font-bold shrink-0" title={de ? "Kritischer Abzugsanker" : "重点失分警戒"}>
-                          !
-                        </span>
-                      )}
                     </div>
 
                     <div className="flex items-center gap-3 shrink-0">
-                      {/* 微型拟物进度槽 (Mini Segmented Progress Bar) */}
-                      <div className="w-16 h-1.5 rounded-full bg-[var(--line)]/60 overflow-hidden hidden sm:block">
+                      {/* 标准进度槽位 */}
+                      <div className="w-16 h-1.5 rounded-full bg-slate-200 overflow-hidden hidden sm:block">
                         <div
                           className={`h-full rounded-full transition-all duration-300 ${
-                            item.isWeak ? "bg-[var(--warning)]" : "bg-[var(--accent)]"
+                            item.isWeak ? "bg-rose-500" : "bg-slate-700"
                           }`}
                           style={{ width: `${pct}%` }}
                         />
                       </div>
 
-                      <span className={`font-mono text-[11px] tabular-nums ${
-                        item.isWeak ? "text-[var(--warning)] font-bold" : "text-[var(--gray)]"
-                      }`}>
+                      <span
+                        className={`font-mono text-[11px] tabular-nums ${
+                          item.isWeak ? "text-rose-700 font-bold" : "text-slate-500"
+                        }`}
+                      >
                         {item.score}/{item.max}
                       </span>
                     </div>
@@ -899,27 +918,27 @@ export function DashboardCockpit({
               })}
             </div>
 
-            {/* 可折叠的考点细则与答题法则 (Accordion 避免满屏塞爆) */}
-            <div className="border border-[var(--line)] rounded bg-[var(--paper)] p-3 text-xs space-y-2">
+            {/* 可折叠的考点细则与答题法则 */}
+            <div className="border border-slate-200/80 rounded-xl bg-slate-50/50 p-3 text-xs space-y-2">
               <div
                 className="flex items-center justify-between cursor-pointer"
                 onClick={() => setExpandedDetail(!expandedDetail)}
               >
-                <div className="font-mono text-[11px] font-bold text-[var(--ink)]">
+                <div className="font-mono text-[11px] font-bold text-slate-800">
                   {de ? "Klausur-Diagnose:" : "当前考点细则:"} [{activeMetric.code}]
                 </div>
-                <button type="button" className="font-mono text-[10px] text-[var(--gray)] underline">
-                  {expandedDetail ? (de ? "Einklappen ▲" : "收起细则 ▲") : (de ? "Details ▼" : "展开细则 ▼")}
+                <button type="button" className="font-mono text-[10px] text-slate-500 underline">
+                  {expandedDetail ? (de ? "Einklappen" : "收起细则") : (de ? "Details" : "展开细则")}
                 </button>
               </div>
 
               {expandedDetail && (
-                <div className="pt-2 border-t border-[var(--line)]/50 space-y-1.5 tab-enter">
-                  <p className="font-sans text-xs text-[var(--ink)]">
+                <div className="pt-2 border-t border-slate-200/60 space-y-1.5">
+                  <p className="font-sans text-xs text-slate-700">
                     {de ? activeMetric.descDE : activeMetric.descZH}
                   </p>
-                  <div className="pt-1 text-[11px] font-mono text-[var(--gray)]">
-                    <span className="font-bold text-[var(--ink)]">{de ? "Fix: " : "化解法则: "}</span>
+                  <div className="pt-1 text-[11px] font-mono text-slate-500">
+                    <span className="font-bold text-slate-800">{de ? "Fix: " : "化解法则: "}</span>
                     {de ? activeMetric.fixGuideDE : activeMetric.fixGuideZH}
                   </div>
                 </div>
@@ -927,10 +946,10 @@ export function DashboardCockpit({
             </div>
           </div>
 
-          {/* 右下侧补强：薄弱学科监测 TOP 3 (消除右侧留白，使双列底部对齐) */}
-          <div className="rounded border border-[var(--line)] bg-[var(--surface)] p-4 space-y-2.5">
-            <div className="flex items-center justify-between border-b border-[var(--line)]/50 pb-2">
-              <span className="font-mono text-[10px] uppercase tracking-wider text-[var(--gray)]">
+          {/* 右下侧补强：薄弱学科监测 TOP 3 */}
+          <div className="rounded-xl border border-slate-200/80 bg-white p-4 space-y-2.5">
+            <div className="flex items-center justify-between border-b border-slate-100 pb-2">
+              <span className="font-mono text-[10px] uppercase tracking-wider text-slate-400">
                 {de ? "Defizit-Frühwarnung (Top 3)" : "薄弱学科监测 (TOP 3 预警)"}
               </span>
               <MascotFox state="deficit" size={16} animate={false} />
@@ -944,25 +963,25 @@ export function DashboardCockpit({
               ].map((w) => (
                 <div
                   key={w.fach}
-                  className="flex items-center justify-between p-2 rounded border border-[var(--line)] bg-[var(--paper)]"
+                  className="flex items-center justify-between p-2.5 rounded-xl border border-slate-100 bg-slate-50/60"
                 >
                   <div className="space-y-0.5">
                     <div className="flex items-center gap-2">
-                      <span className="font-mono font-bold text-[var(--ink)]">[{w.fach}]</span>
-                      <span className="font-mono text-[10px] text-[var(--warning)] font-semibold">
+                      <span className="font-mono font-bold text-slate-800">{w.fach}</span>
+                      <span className="font-mono text-[10px] text-rose-600 font-semibold">
                         {w.np} NP &lt; {w.target} NP
                       </span>
                     </div>
-                    <div className="font-sans text-[11px] text-[var(--gray)]">
+                    <div className="font-sans text-[11px] text-slate-500">
                       {de ? w.issueDE : w.issueZH}
                     </div>
                   </div>
                   <button
                     type="button"
                     onClick={() => onNavigateToTab?.("reise", { fach: w.fach })}
-                    className="font-mono text-[11px] px-2 py-1 rounded border border-[var(--line)] hover:border-[var(--accent)] hover:text-[var(--accent)] bg-[var(--surface)] transition-all cursor-pointer"
+                    className="font-mono text-[11px] px-2.5 py-1 rounded-lg border border-slate-200 hover:border-slate-400 bg-white transition-all cursor-pointer text-slate-700"
                   >
-                    {de ? "Üben ->" : "特训 ->"}
+                    {de ? "Üben" : "特训"}
                   </button>
                 </div>
               ))}
@@ -972,17 +991,17 @@ export function DashboardCockpit({
       </div>
 
       {/* 4. 底部极简学科穿梭码头 */}
-      <section className="rounded border border-[var(--line)] bg-[var(--surface)] p-4 space-y-2">
-        <div className="flex items-center justify-between border-b border-[var(--line)]/60 pb-2">
-          <span className="font-mono text-[10px] text-[var(--gray)] uppercase tracking-wider">
+      <section className="rounded-xl border border-slate-200/80 bg-white p-4 space-y-2">
+        <div className="flex items-center justify-between border-b border-slate-100 pb-2">
+          <span className="font-mono text-[10px] text-slate-400 uppercase tracking-wider">
             {de ? "Fächer-Schnellzugriff" : "学科考点码头"}
           </span>
           <button
             type="button"
             onClick={() => onNavigateToTab?.("lernbaum")}
-            className="font-mono text-xs text-[var(--gray)] hover:text-[var(--ink)] underline cursor-pointer"
+            className="font-mono text-xs text-slate-500 hover:text-slate-900 underline cursor-pointer"
           >
-            {de ? "Alle Fächer ->" : "学科树全貌 ->"}
+            {de ? "Alle Fächer" : "学科树全貌"}
           </button>
         </div>
 
@@ -998,10 +1017,10 @@ export function DashboardCockpit({
               key={item.fach}
               type="button"
               onClick={() => onNavigateToTab?.("reise", { fach: item.fach })}
-              className="p-2 rounded border border-[var(--line)] bg-[var(--paper)] hover:border-[var(--accent)] text-left transition-all cursor-pointer"
+              className="p-2.5 rounded-xl border border-slate-200/80 bg-slate-50/60 hover:bg-slate-100 text-left transition-all cursor-pointer"
             >
-              <div className="font-mono text-xs font-bold text-[var(--ink)]">{item.fach}</div>
-              <div className="font-serif text-xs text-[var(--gray)] mt-0.5">{item.np} NP</div>
+              <div className="font-mono text-xs font-bold text-slate-800">{item.fach}</div>
+              <div className="font-serif text-xs text-slate-500 mt-0.5">{item.np} NP</div>
             </button>
           ))}
         </div>
