@@ -273,6 +273,8 @@
 - [2026-09-28-scholarly-atelier-color-and-layout-redesign](Journal/2026-09-28-scholarly-atelier-color-and-layout-redesign.md) — **学术工坊美学：去 AI 化与全套调色板及布局重构**：剔除深黑发光赛博朋克与霓虹色块+确立毫米方格图纸与墨水/纸张基底+八大生产交互组件与展厅全面脱敏（tsc/vault-check/npm run build全绿）
 - [2026-09-28-vorlesungs-buehne-und-60fps-physics](Journal/2026-09-28-vorlesungs-buehne-und-60fps-physics.md) — **互动微课剧场与60FPS微观物理重构**：哈伯法独立Canvas物理循环根治4FPS跳帧+纯代码驱动免录制微课引擎上线+首门经济学标杆微课《证券存托与订单簿》落地（全绿）
 - [2026-10-05-cross-subject-vernetzung-sandkasten](Journal/2026-10-05-cross-subject-vernetzung-sandkasten.md) — **方向二：跨学科联动树形图与核心考点全景沙盘**：异化劳动/马克思/康德目的公式/社科基尼系数与贫困化/米勒推销员全景沙盘研制+CrossDisciplinarySandbox+Lernbaum一键穿梭透镜集成（60套件419测试全绿+门禁PASS）
+- [2026-10-07-home-dashboard-linear-duolingo-refactoring](Journal/2026-10-07-home-dashboard-linear-duolingo-refactoring.md) — **主页仪表盘德式极简成长探索总台重构**：二分屏动线+德国会考Notenpunkte分阶刻度+失分点雷达图与诊断抽屉
+- [2026-10-07-dashboard-mascot-rollback](Journal/2026-10-07-dashboard-mascot-rollback.md) — **吉祥物嵌入与总台重构回退记录**：依据用户实测审查，移除低多边形小狐狸及伴学桌宠，完全回退恢复至经典的德国学术功能主义黑白纸墨总台
 - 约定：文件名 `YYYY-MM-DD-<thema>.md`，头部frontmatter（`fach`可空，`tags: [EF, Meta]`）。
 
 
