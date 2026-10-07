@@ -664,8 +664,17 @@ export function DashboardCockpit({
                     >
                       <div className="flex items-center justify-between font-mono text-[10px]">
                         <span className="font-bold text-[var(--ink)]">0{idx + 1}</span>
-                        <span className={`font-semibold ${isDone ? "text-[var(--success)]" : isCurr ? "text-[var(--accent)]" : "text-[var(--gray)]"}`}>
-                          {isDone ? "[OK]" : isCurr ? "[*]" : "[ ]"}
+                        <span className="flex items-center gap-1">
+                          {isDone ? (
+                            <span className="w-2 h-2 rounded-full bg-[var(--success)] inline-block" title="Abgeschlossen" />
+                          ) : isCurr ? (
+                            <span className="relative flex h-2 w-2">
+                              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[var(--accent)] opacity-75" />
+                              <span className="relative inline-flex rounded-full h-2 w-2 bg-[var(--accent)]" />
+                            </span>
+                          ) : (
+                            <span className="w-2 h-2 rounded-full border border-[var(--line)] bg-[var(--paper)] inline-block" title="Gesperrt" />
+                          )}
                         </span>
                       </div>
                       <div className="font-sans text-xs font-medium text-[var(--ink)] truncate mt-1">
@@ -833,39 +842,56 @@ export function DashboardCockpit({
               </svg>
             </div>
 
-            {/* 失分点列表：默认精简收拢为微徽章 + 进度 */}
-            <div className="space-y-1.5">
+            {/* 失分点列表：从矩形边框表格跃升为无边框质感列表 + 视觉微进度条 (Mini Segment Bar) */}
+            <div className="divide-y divide-[var(--line)]/50 pt-1">
               {activeMetricList.map((item) => {
                 const isSelected = item.code === activeMetricCode;
+                const ratio = Math.min(1, Math.max(0, item.score / item.max));
+                const pct = Math.round(ratio * 100);
+
                 return (
                   <div
                     key={item.code}
                     onClick={() => setActiveMetricCode(item.code)}
-                    className={`flex items-center justify-between p-2.5 rounded border text-xs cursor-pointer transition-all duration-150 ${
+                    className={`flex items-center justify-between py-2 px-2 transition-all duration-150 cursor-pointer ${
                       isSelected
-                        ? "border-[var(--accent)] bg-[var(--paper)] -translate-x-0.5"
-                        : "border-[var(--line)] bg-[var(--surface)] hover:bg-[var(--paper-subtle)]"
-                    }`}
+                        ? "bg-[var(--paper-subtle)] font-medium"
+                        : "hover:bg-[var(--paper-subtle)]/60"
+                    } ${item.isWeak ? "bg-[var(--warning)]/5" : ""}`}
                   >
-                    <div className="flex items-center gap-2">
-                      <span className="font-mono font-semibold text-[var(--ink)]">
-                        [{item.code}]
+                    <div className="flex items-center gap-2.5 min-w-0">
+                      <span className={`font-mono text-[10px] px-1.5 py-0.5 rounded font-semibold shrink-0 ${
+                        item.isWeak
+                          ? "bg-[var(--warning)]/15 text-[var(--warning)] border border-[var(--warning)]/30"
+                          : "bg-[var(--surface)] text-[var(--gray)] border border-[var(--line)]"
+                      }`}>
+                        {item.code}
                       </span>
-                      <span className="font-sans text-xs text-[var(--ink)]">
+                      <span className="font-sans text-xs text-[var(--ink)] truncate">
                         {de ? item.nameDE : item.nameZH}
                       </span>
+                      {item.isWeak && (
+                        <span className="text-[10px] font-mono text-[var(--warning)] font-bold shrink-0" title={de ? "Kritischer Abzugsanker" : "重点失分警戒"}>
+                          !
+                        </span>
+                      )}
                     </div>
 
-                    <div className="flex items-center gap-2">
-                      <span
-                        className={`font-mono text-[10px] px-2 py-0.5 rounded border font-medium ${
-                          item.isWeak
-                            ? "border-[var(--warning)]/40 text-[var(--warning)] bg-[var(--warning)]/5 font-bold"
-                            : "border-[var(--line)] text-[var(--gray)] bg-[var(--paper-subtle)]"
-                        }`}
-                      >
-                        {item.isWeak && "[!] "}
-                        {de ? item.statusTextDE : item.statusTextZH}
+                    <div className="flex items-center gap-3 shrink-0">
+                      {/* 微型拟物进度槽 (Mini Segmented Progress Bar) */}
+                      <div className="w-16 h-1.5 rounded-full bg-[var(--line)]/60 overflow-hidden hidden sm:block">
+                        <div
+                          className={`h-full rounded-full transition-all duration-300 ${
+                            item.isWeak ? "bg-[var(--warning)]" : "bg-[var(--accent)]"
+                          }`}
+                          style={{ width: `${pct}%` }}
+                        />
+                      </div>
+
+                      <span className={`font-mono text-[11px] tabular-nums ${
+                        item.isWeak ? "text-[var(--warning)] font-bold" : "text-[var(--gray)]"
+                      }`}>
+                        {item.score}/{item.max}
                       </span>
                     </div>
                   </div>
