@@ -75,10 +75,22 @@ tags: [EF, Meta, Journal]
 4. **侧边栏快捷键修复**：
    - 将所有快捷键徽章修复为高对比度固定胶囊（`text-slate-600 bg-slate-100/90 border border-slate-200/90 font-semibold`），杜绝因过度淡化而隐形的问题。
 
-## 6. 质量门禁与验证
-- `npx vitest run src/modules/DashboardCockpit.test.tsx src/modules.test.tsx`: 27 个测试全部通过（含 UI source contract：零 Emoji、无非法阴影/斜体门禁）；
-- `npx tsc -b`: 0 编译错误；
-- `python scripts/vault-check.py`: PASS。
+## 7. 去除“AI机械合成感”系统级跃升（高质量教育SaaS质感落地）
+1. **字体系统与排版间距跃升（消除发虚与散漫感）**：
+   - 全局引入现代高质感几何无衬线字体栈 `Plus Jakarta Sans:wght@400;500;600;700;800`，替换此前 Windows 默认宋体/微软雅黑的松散字形；
+   - 在 `App-EF-Lernvault/src/index.css` 全局注入紧凑现代字间距 `letter-spacing: -0.015em` 与次像素平滑渲染优化（`-webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;`）；
+   - 主标题采用沉稳深青灰色 `--fox-slate`（`#2D4F5C font-bold`），消除所有发虚细弱的小号灰色文字，字阶层次分明。
+2. **彻底消灭工程师调试符号（消除 Demo 痕迹）**：
+   - 清理所有机械修饰符（如 `(+50 XP)` 改为 `+50 XP`，`Stufe II (Q1)` 改为 `第二阶 · 会考进阶`）；
+   - 移除了所有开发调试残留的占位符与机械编码标记。
+3. **吉祥物深度融入卡片场景（杜绝随意漂浮的“贴纸感”）**：
+   - **右上角冲刺卡**：狐狸伙伴从外部边框悬空位置收拢至卡片内部右侧，手捧火焰端坐，与卡片标题、徽章形成自然的左右构图，卡片背后附带微弱暖调环境光；
+   - **雷达图侦探狐狸**：彻底淘汰缩小成一团的黑色微型悬浮对话泡，重构为卡片内置的【考卷巡检诊断条】（`text-xs font-bold #2D4F5C` 标题 + 清晰正文），字号放大至扎实可读的 `text-xs`，与几何雷达图形成有机的上下层级。
+4. **全套门禁 100% 验证通过**：
+   - `vitest run src/modules/DashboardCockpit.test.tsx` 4/4 PASS；
+   - `vitest run src/modules.test.tsx` 23/23 PASS；
+   - `npx tsc -b` 0 报错；
+   - `python scripts/vault-check.py` 182 文件 0 错误 PASS。
 
 
 
