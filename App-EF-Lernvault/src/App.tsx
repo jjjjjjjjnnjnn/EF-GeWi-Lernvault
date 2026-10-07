@@ -771,7 +771,7 @@ export default function App() {
       </aside>
 
       {/* Main Workspace */}
-      <main className={`flex min-w-0 flex-1 flex-col overflow-hidden ${tab === "home" ? "bg-[#F8FAFC]" : "bg-[var(--paper)]"}`}>
+      <main className="flex min-w-0 flex-1 flex-col overflow-hidden bg-[var(--paper)]">
         {/* Top bar with hairline divider */}
         <header className="flex min-h-11 h-auto shrink-0 flex-wrap items-center justify-between gap-2.5 border-b border-[var(--line)] bg-[var(--paper)] px-4 py-1.5 sm:px-6">
           <div className="flex items-center gap-2">

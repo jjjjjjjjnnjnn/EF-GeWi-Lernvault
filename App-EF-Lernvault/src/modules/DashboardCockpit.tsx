@@ -360,7 +360,7 @@ export function DashboardCockpit({
       {/* 1. 顶部刊头 (Header) */}
       <header className="flex flex-col sm:flex-row sm:items-center justify-between pb-3 border-b border-slate-200/80 gap-4">
         <div className="flex items-center gap-3.5">
-          <div className="flex items-center justify-center w-11 h-11 rounded-2xl border border-slate-200/90 bg-white shrink-0 overflow-hidden shadow-none">
+          <div className="flex items-center justify-center w-11 h-11 rounded-2xl border border-[var(--line)] bg-[var(--surface)] shrink-0 overflow-hidden shadow-none">
             <MascotFox state="avatar" size={34} />
           </div>
           <div>
@@ -380,7 +380,7 @@ export function DashboardCockpit({
 
         <div className="flex items-center gap-2.5 self-start sm:self-auto">
           {/* 连续打卡徽章 */}
-          <div className="flex items-center gap-2 border border-slate-200/90 bg-white px-3 py-1.5 rounded-xl select-none">
+          <div className="flex items-center gap-2 border border-[var(--line)] bg-[var(--surface)] px-3 py-1.5 rounded-xl select-none">
             <MascotFox state="streak" size={18} animate={false} />
             <span className="font-mono text-xs font-semibold text-slate-800 tabular-nums">
               18 {de ? "Tage Streak" : "天连胜"}
@@ -391,7 +391,7 @@ export function DashboardCockpit({
           <button
             type="button"
             onClick={cycleTheme}
-            className="text-xs font-mono text-slate-800 hover:text-slate-950 border border-slate-300 px-3 py-1.5 rounded-xl bg-white hover:bg-slate-50 transition-all cursor-pointer flex items-center gap-1.5 font-semibold"
+            className="text-xs font-mono text-slate-800 hover:text-slate-950 border border-[var(--line)] px-3 py-1.5 rounded-xl bg-[var(--surface)] hover:bg-[var(--paper-subtle)] transition-all cursor-pointer flex items-center gap-1.5 font-semibold"
             title={de ? `Thema: ${currentThemeObj.nameDE} (Klicken zum Wechseln)` : `主题风格: ${currentThemeObj.nameZH} (点击切换)`}
           >
             <svg width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
@@ -489,7 +489,7 @@ export function DashboardCockpit({
               <button
                 type="button"
                 onClick={() => setSelectedStufeId("ef_basis")}
-                className={`relative z-10 flex items-center gap-1.5 bg-white px-2 py-0.5 text-xs transition-all cursor-pointer ${
+                className={`relative z-10 flex items-center gap-1.5 bg-[var(--surface)] px-2 py-0.5 text-xs transition-all cursor-pointer ${
                   selectedStufeId === "ef_basis" ? "font-extrabold text-slate-900" : "text-slate-600 font-medium hover:text-slate-900"
                 }`}
               >
@@ -505,7 +505,7 @@ export function DashboardCockpit({
               <button
                 type="button"
                 onClick={() => setSelectedStufeId("q1_vertiefung")}
-                className="relative z-10 flex items-center gap-2 bg-white px-2 py-0.5 text-xs cursor-pointer"
+                className="relative z-10 flex items-center gap-2 bg-[var(--surface)] px-2 py-0.5 text-xs cursor-pointer"
               >
                 <span className="relative flex h-3 w-3 shrink-0">
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-400 opacity-75" />
@@ -523,7 +523,7 @@ export function DashboardCockpit({
               <button
                 type="button"
                 onClick={() => setSelectedStufeId("q2_abitur")}
-                className={`relative z-10 flex items-center gap-1.5 bg-white px-2 py-0.5 text-xs transition-all cursor-pointer ${
+                className={`relative z-10 flex items-center gap-1.5 bg-[var(--surface)] px-2 py-0.5 text-xs transition-all cursor-pointer ${
                   selectedStufeId === "q2_abitur" ? "font-extrabold text-slate-900" : "text-slate-400 font-medium hover:text-slate-700"
                 }`}
               >
@@ -551,7 +551,7 @@ export function DashboardCockpit({
         </div>
 
         {/* 右侧：今日行动卡 (4 Col, Surface 1 白卡，多邻国式大角色情感化交互卡) */}
-        <div className="lg:col-span-4 card-elevation p-5 flex flex-col justify-between relative overflow-hidden bg-white space-y-3">
+        <div className="lg:col-span-4 card-elevation p-5 flex flex-col justify-between relative overflow-hidden bg-[var(--surface)] space-y-3">
           {/* 背景环境水印光晕 */}
           <div className="absolute -top-10 -right-10 w-48 h-48 rounded-full bg-orange-100/50 pointer-events-none blur-2xl" />
 
@@ -705,7 +705,7 @@ export function DashboardCockpit({
                           <button
                             type="button"
                             onClick={() => onNavigateToTab?.(m.targetTab, m.targetContext)}
-                            className="text-xs font-bold text-slate-900 group-hover:text-blue-700 px-3 py-1.5 rounded-lg border border-slate-200 bg-white hover:border-slate-300 transition-all cursor-pointer flex items-center gap-1.5 shrink-0 tracking-tight"
+                            className="text-xs font-bold text-slate-900 group-hover:text-blue-700 px-3 py-1.5 rounded-lg border border-[var(--line)] bg-[var(--surface)] hover:bg-[var(--paper-subtle)] transition-all cursor-pointer flex items-center gap-1.5 shrink-0 tracking-tight"
                             aria-label={de ? "Start ->" : "去执行 ->"}
                           >
                             <span>{de ? "Start" : "去执行"}</span>
@@ -748,7 +748,7 @@ export function DashboardCockpit({
                   key={item.fach}
                   type="button"
                   onClick={() => onNavigateToTab?.("reise", { fach: item.fach })}
-                  className="flex items-baseline gap-2 py-1 px-1.5 hover:bg-slate-50 rounded-lg transition-colors cursor-pointer group"
+                  className="flex items-baseline gap-2 py-1 px-1.5 hover:bg-[var(--paper-subtle)] rounded-lg transition-colors cursor-pointer group"
                 >
                   <span className="text-xs font-extrabold text-slate-900 group-hover:text-blue-700 tracking-tight">
                     {item.fach}
@@ -781,7 +781,7 @@ export function DashboardCockpit({
                     }}
                     className={`px-2 py-0.5 text-[10px] font-mono rounded-md transition-all cursor-pointer ${
                       radarTrack === "gewi"
-                        ? "bg-white text-slate-900 font-bold border border-slate-200"
+                        ? "bg-[var(--surface)] text-slate-900 font-bold border border-[var(--line)]"
                         : "text-slate-600 hover:text-slate-900 font-semibold"
                     }`}
                   >
@@ -795,7 +795,7 @@ export function DashboardCockpit({
                     }}
                     className={`px-2 py-0.5 text-[10px] font-mono rounded-md transition-all cursor-pointer ${
                       radarTrack === "mint"
-                        ? "bg-white text-slate-900 font-bold border border-slate-200"
+                        ? "bg-[var(--surface)] text-slate-900 font-bold border border-[var(--line)]"
                         : "text-slate-600 hover:text-slate-900 font-semibold"
                     }`}
                   >
@@ -805,9 +805,9 @@ export function DashboardCockpit({
               </div>
 
               {/* SVG 雷达画布 + 侦探狐狸提示紧凑并排 */}
-              <div className="relative flex flex-col items-center justify-center p-3 rounded-xl border border-slate-200/80 bg-slate-50/70 transition-all overflow-hidden my-3">
+              <div className="relative flex flex-col items-center justify-center p-3 rounded-xl border border-[var(--line)] bg-[var(--paper-subtle)] transition-all overflow-hidden my-3">
                 {/* 侦探狐狸剧情提示条 */}
-                <div className="w-full flex items-center gap-2.5 p-2 mb-2 bg-white border border-slate-200/90 rounded-lg">
+                <div className="w-full flex items-center gap-2.5 p-2 mb-2 bg-[var(--surface)] border border-[var(--line)] rounded-lg">
                   <div className="shrink-0 flex items-center justify-center w-8 h-8 select-none">
                     <MascotFox state="deficit" size={34} animate={true} />
                   </div>
