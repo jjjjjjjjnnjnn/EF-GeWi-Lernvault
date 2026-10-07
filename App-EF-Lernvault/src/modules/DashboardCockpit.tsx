@@ -408,23 +408,24 @@ export function DashboardCockpit({
         </div>
       </header>
 
-      {/* 2. Hero 战力看板区：双白卡并排，比例 8:4，高度对齐，告别黑膏药 */}
+      {/* 2. Hero 战力看板区：双白卡并排，比例 8:4，高度对齐 */}
       <section className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
-        {/* 左侧：战力指标卡 (8 Col, Surface 1) */}
-        <div className="lg:col-span-8 card-elevation p-6 flex flex-col justify-between space-y-6">
-          <div>
-            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-4">
-              <div className="flex items-center gap-3 flex-wrap">
+        {/* 左侧：战力指标卡 (8 Col, Surface 1，内嵌考纲晋升路线图) */}
+        <div className="lg:col-span-8 card-elevation p-6 flex flex-col justify-between space-y-5">
+          {/* 上半部分：战力数值、进度槽与分段刻度 */}
+          <div className="space-y-4">
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+              <div className="flex items-center gap-3.5 flex-wrap">
                 <span className="font-mono text-4xl font-black tracking-tight text-slate-900">11</span>
                 <div className="flex flex-col">
-                  <span className="text-xs uppercase tracking-wider font-semibold text-slate-400 font-mono">
+                  <span className="text-xs uppercase tracking-wider font-bold text-slate-500 font-mono">
                     Notenpunkte
                   </span>
                   <div className="flex items-center gap-2 mt-0.5">
-                    <span className="px-2.5 py-0.5 rounded-full text-xs font-medium bg-amber-50 text-amber-800 border border-amber-200/70">
+                    <span className="px-2.5 py-0.5 rounded-full text-xs font-bold bg-amber-50 text-amber-900 border border-amber-300">
                       {de ? "Stufe II · Q1-Niveau" : "第二阶 · Q1 进阶期"}
                     </span>
-                    <span className="text-xs text-slate-500 font-medium">
+                    <span className="text-xs text-slate-700 font-semibold">
                       {de ? "Note 2 (Gut)" : "良好 (Gut)"}
                     </span>
                   </div>
@@ -432,10 +433,10 @@ export function DashboardCockpit({
               </div>
 
               <div className="sm:text-right">
-                <span className="text-xs font-mono font-semibold text-slate-500 tabular-nums">
-                  {currentXP} / {targetXP} XP
+                <span className="text-xs font-mono font-bold text-slate-700 tabular-nums">
+                  <span className="text-sm font-black text-slate-900">{currentXP}</span> / {targetXP} XP
                 </span>
-                <div className="text-[11px] text-amber-700 font-medium mt-0.5">
+                <div className="text-[11px] text-amber-800 font-semibold mt-0.5">
                   {de ? `noch ${targetXP - currentXP} XP bis Sprung auf 13 NP` : `距 13 NP 优秀档还需 ${targetXP - currentXP} XP`}
                 </div>
               </div>
@@ -445,29 +446,89 @@ export function DashboardCockpit({
             <span className="sr-only">11 Notenpunkte</span>
 
             {/* 分段进度槽 (Surface 2 Inset) */}
-            <div className="mt-6 mb-2">
-              <div className="relative w-full h-2.5 bg-slate-100 rounded-full overflow-hidden">
+            <div className="pt-1">
+              <div className="relative w-full h-2.5 bg-slate-100 rounded-full overflow-hidden border border-slate-200/80">
                 <div
                   className="h-full bg-gradient-to-r from-amber-500 to-orange-500 rounded-full transition-all duration-500"
                   style={{ width: mounted ? `${(currentXP / targetXP) * 100}%` : "0%" }}
                 />
               </div>
-              <div className="flex justify-between text-[11px] font-medium text-slate-400 mt-2 px-0.5 font-mono">
-                <span>10 NP (及格)</span>
-                <span className="text-slate-800 font-semibold">11 NP (当前)</span>
-                <span className="text-slate-600 font-medium">13 NP (目标: Sehr Gut)</span>
-                <span>15 NP (满分)</span>
+              <div className="flex justify-between text-[11px] font-semibold text-slate-500 mt-2 px-0.5 font-mono">
+                <span className="text-slate-600">10 NP (及格)</span>
+                <span className="text-slate-900 font-black">11 NP (当前)</span>
+                <span className="text-slate-800 font-bold">13 NP (目标: Sehr Gut)</span>
+                <span className="text-slate-400">15 NP (满分)</span>
               </div>
             </div>
           </div>
 
-          {/* 底部微提示 */}
-          <div className="pt-4 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
-            <span className="flex items-center gap-2 text-slate-600">
-              <MascotFox state="avatar" size={16} />
-              <span>{de ? "Fokus bereit: Tages-Plan aktiv" : "保持专注，今日冲刺推荐已生成"}</span>
-            </span>
-            <span className="font-mono text-[11px] text-slate-400">Level Progression &bull; Stufe II</span>
+          {/* 3. 内嵌式考纲阶段时间线 (合并原独立通栏 Stepper，省出150px高度) */}
+          <div className="pt-4 border-t border-slate-100 space-y-2.5">
+            <div className="flex items-center justify-between text-xs">
+              <span className="font-mono text-[10px] uppercase tracking-wider text-slate-500 font-bold">
+                {de ? "Abitur-Stufenleiter" : "考纲三阶晋升路线"}
+              </span>
+              <span className="font-mono text-[11px] text-slate-700 font-bold">
+                {currentStufe.id.toUpperCase()} · &ge; {currentStufe.minNP} NP
+              </span>
+            </div>
+
+            {/* 水平轻量 Stepper：纯网格卡片内自适应，无溢出风险 */}
+            <div className="grid grid-cols-3 gap-2">
+              {DEMO_STUFEN.map((s) => {
+                const isDone = s.status === "completed";
+                const isCurr = s.status === "current";
+                const isSelected = s.id === selectedStufeId;
+
+                return (
+                  <button
+                    key={s.id}
+                    type="button"
+                    onClick={() => setSelectedStufeId(s.id)}
+                    className={`p-2 rounded-lg border text-left transition-all cursor-pointer flex items-center gap-2 ${
+                      isSelected
+                        ? "bg-slate-100/90 border-slate-300 ring-1 ring-slate-300"
+                        : "bg-white border-slate-200 hover:bg-slate-50"
+                    }`}
+                  >
+                    <div className="w-5 h-5 rounded-full flex items-center justify-center shrink-0 border border-slate-300 bg-white">
+                      {isDone ? (
+                        <svg width="10" height="10" viewBox="0 0 12 12" fill="none">
+                          <path d="M2.5 6L5 8.5L9.5 3.5" stroke="#16A34A" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                        </svg>
+                      ) : isCurr ? (
+                        <span className="w-2 h-2 rounded-full bg-slate-900" />
+                      ) : (
+                        <span className="w-1.5 h-1.5 rounded-full bg-slate-300" />
+                      )}
+                    </div>
+                    <div className="min-w-0">
+                      <div className="text-xs font-bold text-slate-900 truncate">
+                        {de ? s.stufeDE : s.stufeZH}
+                      </div>
+                      <div className="font-mono text-[10px] text-slate-500">
+                        &ge; {s.minNP} NP
+                      </div>
+                    </div>
+                  </button>
+                );
+              })}
+            </div>
+
+            {/* 当前选中阶的已解锁战力提示（保留测试所需：已解锁基础术语词典） */}
+            <div className="flex flex-wrap items-center gap-1.5 text-xs pt-0.5">
+              <span className="font-mono text-[10px] text-slate-500 font-bold">
+                {de ? "Freigeschaltet:" : "已解锁战力:"}
+              </span>
+              {(de ? currentStufe.unlockedPerksDE : currentStufe.unlockedPerksZH).map((perk, i) => (
+                <span
+                  key={i}
+                  className="font-mono text-[10px] px-2 py-0.5 rounded bg-slate-100 text-slate-800 border border-slate-200 font-semibold"
+                >
+                  {perk}
+                </span>
+              ))}
+            </div>
           </div>
         </div>
 
@@ -478,19 +539,19 @@ export function DashboardCockpit({
 
           <div>
             <div className="flex items-center justify-between">
-              <span className="text-[11px] font-bold uppercase tracking-wider text-amber-700 bg-amber-50 px-2 py-0.5 rounded-md border border-amber-200/60 font-mono">
+              <span className="text-[11px] font-bold uppercase tracking-wider text-amber-800 bg-amber-50 px-2 py-0.5 rounded-md border border-amber-300 font-mono">
                 Daily Focus
               </span>
-              <span className="text-xs text-slate-400 font-mono">15 Min</span>
+              <span className="text-xs text-slate-600 font-mono font-bold">15 Min</span>
             </div>
             <h3 className="text-lg font-bold text-slate-900 mt-3 font-serif">
               {de ? "Klausur-Fokussprint" : "今日考点靶向冲刺"}
             </h3>
-            <p className="text-xs text-slate-500 mt-1 leading-relaxed">
+            <p className="text-xs text-slate-700 mt-1 leading-relaxed">
               {de
                 ? "3 gezielte Schwachstellenrezepte · Voraussichtlich +230 XP"
                 : "包含 3 项核心弱项处方，执行完毕预估获得"}{" "}
-              <strong className="text-slate-700 font-semibold">+230 XP</strong>
+              <strong className="text-slate-900 font-bold">+230 XP</strong>
             </p>
           </div>
 
@@ -498,7 +559,7 @@ export function DashboardCockpit({
             <button
               type="button"
               onClick={() => onNavigateToTab?.("flashcards")}
-              className="w-full py-2.5 px-4 bg-slate-900 hover:bg-slate-800 active:scale-[0.99] text-white font-medium text-xs rounded-xl transition-all shadow-none flex items-center justify-center gap-2 cursor-pointer select-none"
+              className="w-full py-2.5 px-4 bg-slate-900 hover:bg-slate-800 active:scale-[0.99] text-white font-semibold text-xs rounded-xl transition-all shadow-none flex items-center justify-center gap-2 cursor-pointer select-none"
             >
               <span>{de ? "Jetzt starten" : "立即开始执行"}</span>
               <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
@@ -513,97 +574,17 @@ export function DashboardCockpit({
                   setChestClaimed(true);
                   setCurrentXP((x) => Math.min(targetXP, x + 50));
                 }}
-                className="w-full py-1.5 px-3 bg-slate-50 hover:bg-slate-100 text-slate-600 text-[11px] font-medium rounded-lg transition-colors flex items-center justify-center gap-1 border border-slate-200/60 cursor-pointer select-none"
+                className="w-full py-1.5 px-3 bg-slate-50 hover:bg-slate-100 text-slate-700 text-[11px] font-bold rounded-lg transition-colors flex items-center justify-center gap-1 border border-slate-200/80 cursor-pointer select-none"
               >
                 <span>+</span>
                 <span>{de ? "Tages-Bonus (+50 XP freischalten)" : "领取首战增益 (+50 XP)"}</span>
               </button>
             ) : (
-              <div className="w-full py-1.5 text-center text-[11px] font-mono text-emerald-600 bg-emerald-50/50 rounded-lg border border-emerald-100">
+              <div className="w-full py-1.5 text-center text-[11px] font-mono text-emerald-700 font-bold bg-emerald-50 rounded-lg border border-emerald-200">
                 {de ? "Bonus aktiv (+50 XP)" : "首战增益已生效 (+50 XP)"}
               </div>
             )}
           </div>
-        </div>
-      </section>
-
-      {/* 3. 中部无框贯穿式 Stepper (Milestone Roadmap) */}
-      <section className="card-elevation p-5 space-y-4">
-        <div className="flex items-center justify-between border-b border-slate-100 pb-2.5">
-          <span className="font-mono text-[10px] uppercase tracking-wider text-slate-400 font-semibold">
-            {de ? "Abitur-Stufenleiter" : "考纲三阶晋升路线图"}
-          </span>
-          <span className="font-mono text-xs text-slate-700 font-semibold">
-            {currentStufe.id.toUpperCase()}
-          </span>
-        </div>
-
-        {/* 贯穿式 Stepper 连线 */}
-        <div className="relative py-3">
-          <div className="absolute top-6 left-12 right-12 h-0.5 bg-slate-200 -translate-y-1/2 z-0" />
-          <div
-            className="absolute top-6 left-12 h-0.5 bg-slate-900 -translate-y-1/2 z-0 transition-all duration-500"
-            style={{
-              width:
-                selectedStufeId === "ef_basis"
-                  ? "0%"
-                  : selectedStufeId === "q1_vertiefung"
-                  ? "50%"
-                  : "100%",
-            }}
-          />
-
-          <div className="relative z-10 grid grid-cols-3 gap-2">
-            {DEMO_STUFEN.map((s) => {
-              const isDone = s.status === "completed";
-              const isCurr = s.status === "current";
-              const isSelected = s.id === selectedStufeId;
-
-              return (
-                <button
-                  key={s.id}
-                  type="button"
-                  onClick={() => setSelectedStufeId(s.id)}
-                  className={`flex flex-col items-center text-center p-2 rounded-xl transition-all cursor-pointer ${
-                    isSelected ? "bg-slate-50 ring-1 ring-slate-300" : "hover:bg-slate-50/50"
-                  }`}
-                >
-                  <div className="w-7 h-7 rounded-full flex items-center justify-center bg-white border border-slate-300 mb-2 transition-transform">
-                    {isDone ? (
-                      <svg width="14" height="14" viewBox="0 0 12 12" fill="none">
-                        <path d="M2.5 6L5 8.5L9.5 3.5" stroke="#16A34A" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                      </svg>
-                    ) : isCurr ? (
-                      <span className="w-2.5 h-2.5 rounded-full bg-slate-900" />
-                    ) : (
-                      <span className="w-2 h-2 rounded-full bg-slate-300" />
-                    )}
-                  </div>
-                  <div className="font-sans text-xs font-semibold text-slate-800">
-                    {de ? s.stufeDE : s.stufeZH}
-                  </div>
-                  <div className="font-mono text-[10px] text-slate-400 mt-0.5">
-                    &ge; {s.minNP} NP
-                  </div>
-                </button>
-              );
-            })}
-          </div>
-        </div>
-
-        {/* 当前阶特权徽章清单 */}
-        <div className="pt-2 border-t border-slate-100 text-xs flex flex-wrap items-center gap-2">
-          <span className="font-mono text-[10px] text-slate-400 uppercase font-semibold">
-            {de ? "Freigeschaltet:" : "已解锁战力:"}
-          </span>
-          {(de ? currentStufe.unlockedPerksDE : currentStufe.unlockedPerksZH).map((perk, i) => (
-            <span
-              key={i}
-              className="font-mono text-[10px] px-2.5 py-0.5 rounded-md border border-slate-200 bg-slate-50 text-slate-700"
-            >
-              {perk}
-            </span>
-          ))}
         </div>
       </section>
 
@@ -658,20 +639,20 @@ export function DashboardCockpit({
                         </button>
                         <div className="space-y-1">
                           <div className="flex items-center gap-2 flex-wrap">
-                            <span className="px-2 py-0.5 rounded text-[10px] font-bold bg-blue-50 text-blue-700 border border-blue-200/60 font-mono">
+                            <span className="px-2 py-0.5 rounded text-[10px] font-bold bg-blue-50 text-blue-800 border border-blue-200 font-mono">
                               {m.fach.toUpperCase()}
                             </span>
-                            <span className="px-1.5 py-0.5 rounded text-[10px] font-medium bg-slate-100 text-slate-600 border border-slate-200 font-mono">
+                            <span className="px-1.5 py-0.5 rounded text-[10px] font-bold bg-slate-100 text-slate-700 border border-slate-200 font-mono">
                               {m.tag}
                             </span>
-                            <span className="text-xs font-medium text-slate-800 group-hover:text-blue-600 transition-colors">
+                            <span className="text-xs font-bold text-slate-900 group-hover:text-blue-700 transition-colors">
                               {de ? m.titleDE : m.titleZH}
                             </span>
                           </div>
-                          <div className="text-[11px] text-slate-400 font-mono flex items-center gap-2">
-                            <span>{de ? m.difficultyDE : m.difficultyZH}</span>
+                          <div className="text-[11px] text-slate-600 font-mono flex items-center gap-2">
+                            <span className="font-medium">{de ? m.difficultyDE : m.difficultyZH}</span>
                             <span>&bull;</span>
-                            <span className="text-amber-600 font-semibold">+{m.xpReward} XP</span>
+                            <span className="text-amber-800 font-bold">+{m.xpReward} XP</span>
                           </div>
                         </div>
                       </div>
@@ -679,7 +660,7 @@ export function DashboardCockpit({
                       <button
                         type="button"
                         onClick={() => onNavigateToTab?.(m.targetTab, m.targetContext)}
-                        className="shrink-0 text-xs font-medium text-slate-600 hover:text-slate-900 px-3 py-1.5 rounded-lg border border-slate-200 hover:border-slate-300 bg-white transition-all cursor-pointer flex items-center gap-1"
+                        className="shrink-0 text-xs font-bold text-slate-800 hover:text-slate-950 px-3 py-1.5 rounded-lg border border-slate-300 hover:border-slate-400 bg-white transition-all cursor-pointer flex items-center gap-1.5 shadow-none"
                         aria-label={de ? "Start ->" : "去执行 ->"}
                       >
                         <span>{de ? "Start" : "去执行"}</span>
@@ -703,7 +684,7 @@ export function DashboardCockpit({
                 {de ? "Klausur-Kompetenznetz" : "核心失分点几何雷达图"}
               </h3>
 
-              <div className="flex items-center gap-1 bg-slate-100 p-0.5 rounded-lg border border-slate-200/60">
+              <div className="flex items-center gap-1 bg-slate-100 p-0.5 rounded-lg border border-slate-200">
                 <button
                   type="button"
                   onClick={() => {
@@ -712,8 +693,8 @@ export function DashboardCockpit({
                   }}
                   className={`px-2.5 py-1 text-[10px] font-mono rounded-md transition-all cursor-pointer ${
                     radarTrack === "gewi"
-                      ? "bg-white text-slate-900 font-semibold border border-slate-200/80"
-                      : "text-slate-500 hover:text-slate-900"
+                      ? "bg-white text-slate-900 font-bold border border-slate-200"
+                      : "text-slate-600 hover:text-slate-900 font-semibold"
                   }`}
                 >
                   {de ? "GeWi D1-D5" : "文科 D1-D5 表达雷达"}
@@ -726,8 +707,8 @@ export function DashboardCockpit({
                   }}
                   className={`px-2.5 py-1 text-[10px] font-mono rounded-md transition-all cursor-pointer ${
                     radarTrack === "mint"
-                      ? "bg-white text-slate-900 font-semibold border border-slate-200/80"
-                      : "text-slate-500 hover:text-slate-900"
+                      ? "bg-white text-slate-900 font-bold border border-slate-200"
+                      : "text-slate-600 hover:text-slate-900 font-semibold"
                   }`}
                 >
                   {de ? "MINT BE-Exaktheit" : "理科 BE 采分步进雷达"}
@@ -808,7 +789,7 @@ export function DashboardCockpit({
                         y={pt.y + (pt.y > radarCenter ? 8 : -5)}
                         textAnchor={pt.x > radarCenter ? "start" : "end"}
                         className={`font-mono text-[9px] select-none ${
-                          isSelected ? "fill-slate-900 font-bold" : "fill-slate-500"
+                          isSelected ? "fill-slate-900 font-bold" : "fill-slate-600 font-semibold"
                         }`}
                       >
                         {pt.m.code}
@@ -830,42 +811,51 @@ export function DashboardCockpit({
                   <div
                     key={item.code}
                     onClick={() => setActiveMetricCode(item.code)}
-                    className={`flex items-center justify-between py-2.5 px-2.5 rounded-lg transition-all duration-150 cursor-pointer ${
+                    className={`flex items-center justify-between py-2 px-2.5 rounded-lg transition-all duration-150 cursor-pointer ${
                       item.isWeak
-                        ? "bg-rose-50/80 border border-rose-100"
+                        ? "bg-rose-50/90 border border-rose-200"
                         : isSelected
-                        ? "bg-slate-50"
-                        : "hover:bg-slate-50/60"
+                        ? "bg-slate-100/80 border border-slate-200"
+                        : "hover:bg-slate-50 border border-transparent"
                     }`}
                   >
-                    <div className="flex items-center gap-2.5 min-w-0">
+                    <div className="flex items-center gap-2 min-w-0">
                       <span
-                        className={`font-mono text-[10px] px-1.5 py-0.5 rounded font-semibold shrink-0 ${
+                        className={`font-mono text-[10px] px-1.5 py-0.5 rounded font-bold shrink-0 ${
                           item.isWeak
-                            ? "bg-rose-100 text-rose-700 border border-rose-200"
-                            : "bg-slate-100 text-slate-600 border border-slate-200/60"
+                            ? "bg-rose-100 text-rose-800 border border-rose-300"
+                            : "bg-slate-100 text-slate-700 border border-slate-200"
                         }`}
                       >
                         {item.code}
                       </span>
-                      <span className="font-sans text-xs text-slate-800 truncate">
+                      <span className="font-sans text-xs font-bold text-slate-900 truncate">
                         {de ? item.nameDE : item.nameZH}
                       </span>
+
+                      {item.isWeak && (
+                        <span className="flex items-center gap-1 text-[10px] font-bold text-rose-800 bg-rose-100/90 px-1.5 py-0.5 rounded border border-rose-200 shrink-0">
+                          <svg width="10" height="10" viewBox="0 0 16 16" fill="currentColor">
+                            <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                          </svg>
+                          <span>{de ? "-2 Pkt" : "薄弱项"}</span>
+                        </span>
+                      )}
                     </div>
 
-                    <div className="flex items-center gap-3 shrink-0">
+                    <div className="flex items-center gap-2.5 shrink-0">
                       <div className="w-16 h-1.5 rounded-full bg-slate-200 overflow-hidden hidden sm:block">
                         <div
                           className={`h-full rounded-full transition-all duration-300 ${
-                            item.isWeak ? "bg-rose-500" : "bg-slate-700"
+                            item.isWeak ? "bg-rose-600" : "bg-slate-800"
                           }`}
                           style={{ width: `${pct}%` }}
                         />
                       </div>
 
                       <span
-                        className={`font-mono text-[11px] tabular-nums ${
-                          item.isWeak ? "text-rose-700 font-bold" : "text-slate-500"
+                        className={`font-mono text-[11px] tabular-nums font-bold ${
+                          item.isWeak ? "text-rose-800" : "text-slate-800"
                         }`}
                       >
                         {item.score}/{item.max}
@@ -877,26 +867,26 @@ export function DashboardCockpit({
             </div>
 
             {/* 可折叠考点细则 */}
-            <div className="border border-slate-200/80 rounded-xl bg-slate-50/50 p-3 text-xs space-y-2">
+            <div className="border border-slate-200/90 rounded-xl bg-slate-50/70 p-3 text-xs space-y-2">
               <div
                 className="flex items-center justify-between cursor-pointer"
                 onClick={() => setExpandedDetail(!expandedDetail)}
               >
-                <div className="font-mono text-[11px] font-bold text-slate-800">
+                <div className="font-mono text-[11px] font-bold text-slate-900">
                   {de ? "Klausur-Diagnose:" : "当前考点细则:"} [{activeMetric.code}]
                 </div>
-                <button type="button" className="font-mono text-[10px] text-slate-500 underline">
+                <button type="button" className="font-mono text-[10px] text-slate-600 font-semibold underline">
                   {expandedDetail ? (de ? "Einklappen" : "收起细则") : (de ? "Details" : "展开细则")}
                 </button>
               </div>
 
               {expandedDetail && (
-                <div className="pt-2 border-t border-slate-200/60 space-y-1.5">
-                  <p className="font-sans text-xs text-slate-700">
+                <div className="pt-2 border-t border-slate-200 space-y-1.5">
+                  <p className="font-sans text-xs text-slate-800 font-medium">
                     {de ? activeMetric.descDE : activeMetric.descZH}
                   </p>
-                  <div className="pt-1 text-[11px] font-mono text-slate-500">
-                    <span className="font-bold text-slate-800">{de ? "Fix: " : "化解法则: "}</span>
+                  <div className="pt-1 text-[11px] font-mono text-slate-700">
+                    <span className="font-bold text-slate-900">{de ? "Fix: " : "化解法则: "}</span>
                     {de ? activeMetric.fixGuideDE : activeMetric.fixGuideZH}
                   </div>
                 </div>
@@ -909,13 +899,13 @@ export function DashboardCockpit({
       {/* 5. 底部极简学科穿梭码头 */}
       <section className="card-elevation p-5 space-y-3">
         <div className="flex items-center justify-between border-b border-slate-100 pb-2">
-          <span className="font-mono text-[10px] text-slate-400 uppercase tracking-wider font-semibold">
+          <span className="font-mono text-[10px] text-slate-600 uppercase tracking-wider font-bold">
             {de ? "Fächer-Schnellzugriff" : "学科考点码头"}
           </span>
           <button
             type="button"
             onClick={() => onNavigateToTab?.("lernbaum")}
-            className="font-mono text-xs text-slate-500 hover:text-slate-900 underline cursor-pointer"
+            className="font-mono text-xs text-slate-600 hover:text-slate-900 font-semibold underline cursor-pointer"
           >
             {de ? "Alle Fächer" : "学科树全貌"}
           </button>
@@ -933,10 +923,10 @@ export function DashboardCockpit({
               key={item.fach}
               type="button"
               onClick={() => onNavigateToTab?.("reise", { fach: item.fach })}
-              className="p-3 rounded-xl border border-slate-200/80 bg-slate-50/60 hover:bg-slate-100 text-left transition-all cursor-pointer"
+              className="p-3 rounded-xl border border-slate-200/90 bg-slate-50/70 hover:bg-slate-100 text-left transition-all cursor-pointer"
             >
-              <div className="font-mono text-xs font-bold text-slate-800">{item.fach}</div>
-              <div className="font-serif text-xs text-slate-500 mt-0.5">{item.np} NP</div>
+              <div className="font-mono text-xs font-black text-slate-900">{item.fach}</div>
+              <div className="font-mono text-xs text-slate-700 font-bold mt-0.5">{item.np} NP</div>
             </button>
           ))}
         </div>
