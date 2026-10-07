@@ -30,6 +30,7 @@ import { getStudyStreak } from "./engine/dailyMix";
 import Settings from "./modules/Settings";
 import Onboarding, { loadOnboarding, saveOnboarding, type OnboardingResult } from "./modules/Onboarding";
 import { initTheme } from "./engine/theme";
+import { SidebarPet } from "./components/mascot/SidebarPet";
 
 type Tab = "home" | "library" | "flashcards" | "quiz" | "klausursim" | "tutor" | "planner" | "mindmap" | "lernbaum" | "reise" | "labor" | "designlab" | "werkzeuge" | "einstellungen";
 
@@ -714,7 +715,7 @@ export default function App() {
                   <span className="hidden truncate font-sans text-xs font-medium xl:inline">
                     {sub.label}
                   </span>
-                  <kbd className="ml-auto hidden font-mono text-[var(--text-meta)] text-[var(--gray)] px-1.5 py-0.5 rounded border border-[var(--line)] bg-[var(--paper)] xl:inline select-none">
+                  <kbd className="ml-auto hidden font-mono text-[9px] text-[var(--gray)]/60 px-1 py-0.2 rounded border border-[var(--line)]/50 bg-[var(--paper)]/50 xl:inline select-none">
                     {sub.shortcut}
                   </kbd>
                 </button>
@@ -741,13 +742,21 @@ export default function App() {
             <span className="hidden truncate font-sans text-xs font-medium xl:inline">
               {tr.settings}
             </span>
-            <kbd className="ml-auto hidden font-mono text-[var(--text-meta)] text-[var(--gray)] px-1.5 py-0.5 rounded border border-[var(--line)] bg-[var(--paper)] xl:inline select-none">
+            <kbd className="ml-auto hidden font-mono text-[9px] text-[var(--gray)]/60 px-1 py-0.2 rounded border border-[var(--line)]/50 bg-[var(--paper)]/50 xl:inline select-none">
               Alt 0
             </kbd>
           </button>
         </div>
 
-        <div className="mt-auto hidden pt-2 border-t border-[var(--line)] text-[var(--text-meta)] font-mono text-[var(--gray)] leading-relaxed xl:block">
+        {/* 侧端常驻伴学折纸桌宠 (Sidebar Pet Companion) */}
+        <SidebarPet
+          lang={lang}
+          currentStreak={getStudyStreak().currentStreak || 18}
+          xpToday={120}
+          onOpenFocusSprint={() => setSprintOpen(true)}
+        />
+
+        <div className="hidden pt-2 border-t border-[var(--line)] text-[var(--text-meta)] font-mono text-[var(--gray)] leading-relaxed xl:block">
           <div className="flex items-center justify-between">
             <span>v0.2.0 · Offline</span>
             <button

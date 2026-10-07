@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import type { Lang } from "../i18n";
+import { MascotFox } from "../components/mascot/MascotFox";
 
 export interface DashboardCockpitProps {
   lang: Lang;
@@ -356,8 +357,8 @@ export function DashboardCockpit({
       {/* 1. 顶部刊头与极简工具栏 (MASTHEAD & TOOLS) */}
       <header className="flex flex-col sm:flex-row sm:items-center justify-between pb-2 border-b border-[var(--line)] gap-4">
         <div className="flex items-center gap-3">
-          <div className="flex items-center justify-center w-8 h-8 rounded border border-[var(--line)] bg-[var(--surface)] text-[var(--accent)] font-bold font-mono text-sm">
-            LV
+          <div className="flex items-center justify-center w-10 h-10 rounded border border-[var(--line)] bg-[var(--surface)] shrink-0 overflow-hidden">
+            <MascotFox state="avatar" size={32} />
           </div>
           <div>
             <h1 className="font-serif text-2xl font-normal text-[var(--ink)] tracking-tight">
@@ -372,10 +373,7 @@ export function DashboardCockpit({
         <div className="flex items-center gap-2.5 self-start sm:self-auto">
           {/* 连续打卡动量徽章 (Streak Momentum - German Precision) */}
           <div className="flex items-center gap-2 border border-[var(--accent)]/30 bg-[var(--paper-subtle)] px-2.5 py-1 rounded select-none">
-            <span className="relative flex h-2 w-2">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[var(--accent)] opacity-75" />
-              <span className="relative inline-flex rounded-full h-2 w-2 bg-[var(--accent)]" />
-            </span>
+            <MascotFox state="streak" size={18} animate={false} />
             <span className="font-mono text-xs font-bold text-[var(--ink)] tabular-nums">
               18 {de ? "Tage Streak" : "天连胜"}
             </span>
@@ -467,8 +465,11 @@ export function DashboardCockpit({
               className="px-2.5 py-1.5 rounded border border-[var(--line)] bg-[var(--paper)] text-left hover:border-[var(--accent)] transition-all cursor-pointer flex items-center gap-2 group select-none"
               title={de ? "Klick mich für Feedback" : "点击伴学伙伴互动"}
             >
-              <div className="w-6 h-6 rounded-full border border-[var(--accent)]/40 bg-[var(--paper-subtle)] flex items-center justify-center font-mono text-[10px] font-bold text-[var(--accent)] group-hover:scale-110 transition-transform">
-                {mascotMood === "focus" ? "[o_o]" : mascotMood === "cheer" ? "^_^" : "(*)"}
+              <div className="w-7 h-7 rounded-full border border-[var(--accent)]/40 bg-[var(--paper-subtle)] flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform overflow-hidden">
+                <MascotFox
+                  state={mascotMood === "focus" ? "avatar" : mascotMood === "cheer" ? "levelup" : "streak"}
+                  size={24}
+                />
               </div>
               <div className="text-[11px] font-sans text-[var(--ink)]">
                 {mascotMood === "focus"
@@ -897,6 +898,48 @@ export function DashboardCockpit({
                   </div>
                 </div>
               )}
+            </div>
+          </div>
+
+          {/* 右下侧补强：薄弱学科监测 TOP 3 (消除右侧留白，使双列底部对齐) */}
+          <div className="rounded border border-[var(--line)] bg-[var(--surface)] p-4 space-y-2.5">
+            <div className="flex items-center justify-between border-b border-[var(--line)]/50 pb-2">
+              <span className="font-mono text-[10px] uppercase tracking-wider text-[var(--gray)]">
+                {de ? "Defizit-Frühwarnung (Top 3)" : "薄弱学科监测 (TOP 3 预警)"}
+              </span>
+              <MascotFox state="deficit" size={16} animate={false} />
+            </div>
+
+            <div className="space-y-2 text-xs">
+              {[
+                { fach: "SoWi", np: 10, target: 13, issueDE: "D2 Begründungstiefe", issueZH: "D2 论证穿透度不足" },
+                { fach: "Physik", np: 10, target: 12, issueDE: "BE-Genauigkeit", issueZH: "有效数字中间舍入误差" },
+                { fach: "Englisch", np: 11, target: 13, issueDE: "D3 Textverknüpfung", issueZH: "连接词学术层次欠缺" },
+              ].map((w) => (
+                <div
+                  key={w.fach}
+                  className="flex items-center justify-between p-2 rounded border border-[var(--line)] bg-[var(--paper)]"
+                >
+                  <div className="space-y-0.5">
+                    <div className="flex items-center gap-2">
+                      <span className="font-mono font-bold text-[var(--ink)]">[{w.fach}]</span>
+                      <span className="font-mono text-[10px] text-[var(--warning)] font-semibold">
+                        {w.np} NP &lt; {w.target} NP
+                      </span>
+                    </div>
+                    <div className="font-sans text-[11px] text-[var(--gray)]">
+                      {de ? w.issueDE : w.issueZH}
+                    </div>
+                  </div>
+                  <button
+                    type="button"
+                    onClick={() => onNavigateToTab?.("reise", { fach: w.fach })}
+                    className="font-mono text-[11px] px-2 py-1 rounded border border-[var(--line)] hover:border-[var(--accent)] hover:text-[var(--accent)] bg-[var(--surface)] transition-all cursor-pointer"
+                  >
+                    {de ? "Üben ->" : "特训 ->"}
+                  </button>
+                </div>
+              ))}
             </div>
           </div>
         </section>
