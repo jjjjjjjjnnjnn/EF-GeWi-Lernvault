@@ -313,6 +313,10 @@ export function DashboardCockpit({
   const [expandedDetail, setExpandedDetail] = useState<boolean>(false);
   // 挂载平滑补间动画状态
   const [mounted, setMounted] = useState<boolean>(false);
+  // 伴学猫头鹰 / 伙伴互动状态 (Duolingo 拟态心理支持)
+  const [mascotMood, setMascotMood] = useState<"cheer" | "focus" | "proud">("focus");
+  // 每日首战增益宝箱 (Variable Reward Boost)
+  const [chestClaimed, setChestClaimed] = useState<boolean>(false);
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -452,12 +456,53 @@ export function DashboardCockpit({
             </div>
           </div>
 
-          {/* 右侧：唯一的超级主行动 CTA 按钮 (学术暗黑金属质感 + 微光波扫过) */}
-          <div className="flex items-center gap-3">
+          {/* 右侧：唯一的超级主行动 CTA 按钮与伴学/宝箱探索激励 */}
+          <div className="flex flex-col sm:flex-row items-center gap-3">
+            {/* 伴学助手伙伴微互动 (Companion Buddy) */}
+            <button
+              type="button"
+              onClick={() => {
+                setMascotMood((m) => (m === "focus" ? "cheer" : m === "cheer" ? "proud" : "focus"));
+              }}
+              className="px-2.5 py-1.5 rounded border border-[var(--line)] bg-[var(--paper)] text-left hover:border-[var(--accent)] transition-all cursor-pointer flex items-center gap-2 group select-none"
+              title={de ? "Klick mich für Feedback" : "点击伴学伙伴互动"}
+            >
+              <div className="w-6 h-6 rounded-full border border-[var(--accent)]/40 bg-[var(--paper-subtle)] flex items-center justify-center font-mono text-[10px] font-bold text-[var(--accent)] group-hover:scale-110 transition-transform">
+                {mascotMood === "focus" ? "[o_o]" : mascotMood === "cheer" ? "^_^" : "(*)"}
+              </div>
+              <div className="text-[11px] font-sans text-[var(--ink)]">
+                {mascotMood === "focus"
+                  ? (de ? "Fokus bereit" : "保持专注")
+                  : mascotMood === "cheer"
+                  ? (de ? "Du schaffst das!" : "今日冲刺！")
+                  : (de ? "18 Tage stark!" : "连胜势头超强！")}
+              </div>
+            </button>
+
+            {/* 每日首战可变增益卡 (Variable Reward Chest) */}
+            {!chestClaimed ? (
+              <button
+                type="button"
+                onClick={() => {
+                  setChestClaimed(true);
+                  setCurrentXP((x) => Math.min(targetXP, x + 50));
+                }}
+                className="px-2.5 py-1.5 rounded border border-[var(--accent)]/40 bg-[var(--paper-subtle)] hover:border-[var(--accent)] text-[11px] font-mono text-[var(--accent)] font-semibold flex items-center gap-1.5 cursor-pointer active:scale-95 transition-all select-none"
+                title={de ? "Tages-Booster: +50 XP freischalten" : "领取今日探索增益: +50 XP"}
+              >
+                <span>[+]</span>
+                <span>{de ? "Tages-Bonus (+50 XP)" : "首战增益 (+50 XP)"}</span>
+              </button>
+            ) : (
+              <span className="px-2 py-1 rounded border border-[var(--line)] bg-[var(--paper-subtle)] text-[10px] font-mono text-[var(--gray)] select-none">
+                {de ? "[OK] Bonus aktiv" : "[OK] 增益已生效"}
+              </span>
+            )}
+
             <button
               type="button"
               onClick={() => onNavigateToTab?.("flashcards")}
-              className="academic-hero-button w-full md:w-auto flex items-center justify-center gap-2.5 px-6 py-3 rounded border border-[var(--ink)] bg-[var(--ink)] text-[var(--paper)] font-sans text-sm font-medium hover:bg-[var(--accent)] hover:border-[var(--accent)] cursor-pointer select-none group"
+              className="academic-hero-button w-full sm:w-auto flex items-center justify-center gap-2.5 px-6 py-3 rounded border border-[var(--ink)] bg-[var(--ink)] text-[var(--paper)] font-sans text-sm font-medium hover:bg-[var(--accent)] hover:border-[var(--accent)] cursor-pointer select-none group"
             >
               <div className="academic-shimmer" />
               <span>{de ? "Heute lernen (15 Min. starten)" : "开始今日冲刺 (15分钟)"}</span>
@@ -592,38 +637,46 @@ export function DashboardCockpit({
               </span>
             </div>
 
-            <div className="grid grid-cols-3 gap-2">
-              {DEMO_STUFEN.map((s, idx) => {
-                const isDone = s.status === "completed";
-                const isCurr = s.status === "current";
-                const isSelected = s.id === selectedStufeId;
+            {/* 连贯通关路线指示条 */}
+            <div className="relative mb-1">
+              <div className="absolute top-1/2 left-6 right-6 h-0.5 bg-[var(--line)] -translate-y-1/2 z-0" />
+              <div
+                className="absolute top-1/2 left-6 h-0.5 bg-[var(--accent)] -translate-y-1/2 z-0 transition-all duration-500"
+                style={{ width: selectedStufeId === "ef_basis" ? "0%" : selectedStufeId === "q1_vertiefung" ? "50%" : "100%" }}
+              />
+              <div className="relative z-10 grid grid-cols-3 gap-2">
+                {DEMO_STUFEN.map((s, idx) => {
+                  const isDone = s.status === "completed";
+                  const isCurr = s.status === "current";
+                  const isSelected = s.id === selectedStufeId;
 
-                return (
-                  <button
-                    key={s.id}
-                    type="button"
-                    onClick={() => setSelectedStufeId(s.id)}
-                    className={`p-2.5 rounded border text-left transition-all duration-150 cursor-pointer ${
-                      isSelected
-                        ? "border-[var(--accent)] bg-[var(--paper)] -translate-y-0.5"
-                        : "border-[var(--line)] bg-[var(--paper)]/60 hover:bg-[var(--paper)] hover:border-[var(--line)]/80"
-                    }`}
-                  >
-                    <div className="flex items-center justify-between font-mono text-[10px]">
-                      <span className="font-bold text-[var(--ink)]">0{idx + 1}</span>
-                      <span className={`font-semibold ${isDone ? "text-[var(--success)]" : isCurr ? "text-[var(--accent)]" : "text-[var(--gray)]"}`}>
-                        {isDone ? "[OK]" : isCurr ? "[*]" : "[ ]"}
-                      </span>
-                    </div>
-                    <div className="font-sans text-xs font-medium text-[var(--ink)] truncate mt-1">
-                      {de ? s.stufeDE : s.stufeZH}
-                    </div>
-                    <div className="font-mono text-[10px] text-[var(--gray)] mt-1">
-                      &gt;= {s.minNP} NP
-                    </div>
-                  </button>
-                );
-              })}
+                  return (
+                    <button
+                      key={s.id}
+                      type="button"
+                      onClick={() => setSelectedStufeId(s.id)}
+                      className={`p-2.5 rounded border text-left transition-all duration-150 cursor-pointer ${
+                        isSelected
+                          ? "border-[var(--accent)] bg-[var(--paper)] -translate-y-0.5"
+                          : "border-[var(--line)] bg-[var(--paper)]/60 hover:bg-[var(--paper)] hover:border-[var(--line)]/80"
+                      }`}
+                    >
+                      <div className="flex items-center justify-between font-mono text-[10px]">
+                        <span className="font-bold text-[var(--ink)]">0{idx + 1}</span>
+                        <span className={`font-semibold ${isDone ? "text-[var(--success)]" : isCurr ? "text-[var(--accent)]" : "text-[var(--gray)]"}`}>
+                          {isDone ? "[OK]" : isCurr ? "[*]" : "[ ]"}
+                        </span>
+                      </div>
+                      <div className="font-sans text-xs font-medium text-[var(--ink)] truncate mt-1">
+                        {de ? s.stufeDE : s.stufeZH}
+                      </div>
+                      <div className="font-mono text-[10px] text-[var(--gray)] mt-1">
+                        &gt;= {s.minNP} NP
+                      </div>
+                    </button>
+                  );
+                })}
+              </div>
             </div>
 
             {/* 当前选中年级特权展示 */}
