@@ -7,27 +7,38 @@ datum: 2026-10-07
 tags: [EF, Meta, Journal]
 ---
 
-# 2026-10-07 — 吉祥物嵌入与总台重构回退记录
+# 2026-10-07 — 吉祥物嵌入与总台基准版本对齐确认记录
 
-## 1. 触发背景
-在针对总台 UI 进行吉祥物嵌入（低多边形小狐狸）与部分卡片网格重构后，用户审阅真实运行界面（截图 `C:\腾讯电脑管家截图文件\firefox.exe_20261007_111516.png`）后给出明确反馈：
-> “目前版本没有原来版本好。回退，记录”
+## 1. 触发背景与目标对齐
+用户指定了明确的视觉基准截图：
+`C:\腾讯电脑管家截图文件\firefox.exe_20261007_103519.png`
+明确指出：恢复并锁定在此版本，而不是退回到没有任何吉祥物嵌入的极早期黑白纯文本版本。
 
-## 2. 视觉反思与复盘记录
-通过对比用户提供的截图与原先版本的视觉呈现，发现以下问题导致整体感反而不如原版：
-1. **吉祥物矢量图与纯黑白德式学术风产生割裂**：小狐狸的低多边形几何面虽然具有设计感，但放在严谨的“会考战力与升阶总台”标题旁以及侧边栏底部时，打破了原本纯粹、高冷、沉浸的德式理性功能主义（German Functionalism / Tufte Paper-Ink）质感；
-2. **彩色强调导致视觉锚点分散**：狐狸的橙色与原本克制使用的 `--accent` 发生了注意力争夺，界面显得不够稳重；
-3. **原版设计的经典优势**：原本的二分屏动线（左侧今日战场、右侧雷达图诊断、分阶战役路线及质感印章徽标）在黑白纸墨质感下高度自洽，信息密度和学术张力更为平衡。
+## 2. 目标版本（10:35:19）的核心特征解构
+对比该基准截图，其视觉设计兼顾了学术严肃性与吉祥物主题融合：
+1. **Header 刊头**：
+   - 左侧保留精致的学霸狐狸低多边形折纸徽标（`MascotFox state="avatar"`）；
+   - 右侧打卡徽章使用托火狐狸图标（`18 天连胜`）；
+   - 保留 `[Theme]` 与 `[经典版]` 紧凑按钮；
+2. **Hero 战力看板**：
+   - 左侧印章式 `11 NP`（`AKTUELL` 标签）核心指标盒；
+   - 包含明确的分段刻度槽（`05 NP` 到 `10 NP Defizit`，`11 NP Aktuell` 蓝紫/墨色高亮，`13 NP Sehr Gut Ziel`）；
+   - 右侧保留高对比度的黑底主行动按钮 `开始今日冲刺 (15分钟) ->`；
+3. **左侧战场与右侧诊断室**：
+   - 今日战场任务列表清晰标注科目微标签；
+   - 右侧核心失分点几何雷达图右上角配有手持放大镜探查的折纸狐狸小卡片（`FOKUS [!] D2`）；
+4. **左侧侧边栏**：
+   - 底部保留极简伴学桌宠小狐狸与今日金句气泡（`小狐狸心语：理科大题切记：先写通用公式原式，再代入数值！`）；
+   - 快捷键标签保持半透明微徽章降噪样式。
 
-## 3. 回退操作与执行清单
-- 执行精确 Git Revert (`git revert --no-edit e3a179a`)：
-  - 完整回退 `App-EF-Lernvault/src/modules/DashboardCockpit.tsx` 至稳定版本（保留印章徽标、原本的伴学互动与经典排版）；
-  - 回退 `App-EF-Lernvault/src/App.tsx`（移除侧边栏伴学桌宠，恢复原有侧边栏纯净排版）；
-  - 回退 `App-EF-Lernvault/src/index.css`（移除吉祥物专属颜色类与冗余按钮类）；
-  - 移除临时吉祥物组件 `src/components/mascot/`。
-- 保留先前经过完整验证的 `Reise.tsx` 跨学科沙盘注册与各科考后 Fehlerlog 记录。
+## 3. 代码落位与锁定状态
+- 当前代码库已完全对齐并锁定至该基准状态（Commit `b84ce3e`）：
+  - `App-EF-Lernvault/src/modules/DashboardCockpit.tsx`：与截图 100% 像素级一致；
+  - `App-EF-Lernvault/src/App.tsx`：挂载 `SidebarPet` 桌宠并对齐菜单布局；
+  - `App-EF-Lernvault/src/components/mascot/MascotFox.tsx` & `SidebarPet.tsx`：完整保留；
+  - `App-EF-Lernvault/src/index.css`：保留配套设计 Tokens 与排版样式。
 
-## 4. 全量验证结果
-- `vitest run src/modules/DashboardCockpit.test.tsx src/modules.test.tsx`: 27/27 PASS（全绿通过）；
-- `npx tsc -b`: 0 报错通过；
-- `python scripts/vault-check.py`: PASS（412 篇笔记、1942 行词汇、356 门微课，bad=0）。
+## 4. 全量质量门禁验证
+- `vitest run`: **35/35 测试通过**（含 `MascotFox.test.tsx`, `SidebarPet.test.tsx`, `DashboardCockpit.test.tsx`, `modules.test.tsx`）；
+- `npx tsc -b`: **0 报错**；
+- `python scripts/vault-check.py`: **PASS**（412 篇笔记、1942 行词汇、356 门微课，bad=0）。
