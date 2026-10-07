@@ -316,10 +316,10 @@ export function FeedbackFloat({ lang }: { lang: Lang }) {
         onClick={() => setOpen((current) => !current)}
         aria-expanded={open}
         aria-controls="feedback-float-panel"
-        className="inline-flex items-center gap-2 rounded-[var(--radius)] border border-[var(--line)] bg-[var(--surface)] px-4 py-2 font-mono text-xs uppercase tracking-wider text-[var(--ink)] transition-colors hover:bg-[var(--paper-subtle)] focus-visible:opacity-100"
+        className="inline-flex items-center gap-1.5 rounded-[var(--radius)] border border-[var(--line)] bg-[var(--surface)] px-2.5 py-1 font-mono text-[11px] text-[var(--gray)] hover:text-[var(--ink)] opacity-75 hover:opacity-100 transition-all hover:bg-[var(--paper-subtle)] focus-visible:opacity-100"
       >
         {open && <CloseIcon />}
-        {`Feedback / 反馈${entries.length > 0 ? ` (${entries.length})` : ""}`}
+        <span className="select-none">{`反馈${entries.length > 0 ? ` (${entries.length})` : ""}`}</span>
       </button>
     </div>
   );

@@ -562,28 +562,28 @@ export function DashboardCockpit({
                 <svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor">
                   <path d="M8 1c.5 1.5 2 3.5 2 5.5 0 2-1 3.5-2 3.5s-2-1.5-2-3.5C6 4.5 7.5 2.5 8 1zm0 7c.8 0 1.5.7 1.5 1.5 0 1-.7 2-1.5 2s-1.5-1-1.5-2c0-.8.7-1.5 1.5-1.5z" />
                 </svg>
-                <span>18 {de ? "Tage Serie" : "天连胜！"}</span>
+                <span>18 {de ? "Tage kontinuierlich" : "天连续复习"}</span>
               </div>
               <h3 className="text-lg font-extrabold text-slate-900 tracking-tight leading-snug">
-                {de ? "Klausur-Fokussprint" : "今日考点靶向冲刺"}
+                {de ? "15-Minuten-Fokusblock" : "今日 15 分钟专注块"}
               </h3>
               <p className="text-xs text-slate-600 leading-relaxed font-medium">
                 {de
-                  ? "Der Fuchs wartet auf dein heutiges Upgrade!"
-                  : "小狐狸正等着今天的战力升级呢。"}
+                  ? "Konzentrierte Wiederholung der fälligen Abitur-Schwerpunkte."
+                  : "完成今日 3 项高频会考薄弱点针对性训练。"}
               </p>
             </div>
 
-            {/* 大体量大角色亮相 (96px，强烈情感化陪伴感) */}
+            {/* 大体量大角色亮相 (96px，温和折纸狐狸伴学伙伴) */}
             <div className="shrink-0 flex items-center justify-center w-24 h-24 select-none">
               <MascotFox state="streak" size={96} animate={true} />
             </div>
           </div>
 
-          {/* 纯净收益导向提示行 (告别嵌套小灰盒) */}
+          {/* 纯净收益导向提示行 (学生备考视角) */}
           <div className="relative z-10 flex items-center justify-between text-xs py-1 border-t border-slate-100">
             <span className="text-slate-600 font-medium">
-              {de ? "3 Schwachstellenrezepte" : "3 项核心弱项攻坚"}
+              {de ? "3 gezielte Klausurschwerpunkte" : "3 项考点薄弱项攻坚"}
             </span>
             <span className="font-mono font-extrabold text-[#D96E3A]">
               15 Min · +230 XP
@@ -596,7 +596,7 @@ export function DashboardCockpit({
               onClick={() => onNavigateToTab?.("flashcards")}
               className="w-full py-2.5 px-4 bg-[#D96E3A] hover:bg-[#c25e2d] active:scale-[0.99] text-white font-extrabold text-xs rounded-xl transition-all shadow-none flex items-center justify-center gap-2 cursor-pointer select-none tracking-tight"
             >
-              <span>{de ? "Jetzt starten 15min" : "立即开始冲刺 15min"}</span>
+              <span>{de ? "Jetzt starten · 15 Min" : "开始今日 15 分钟专注"}</span>
               <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
                 <path d="M6 3.5L10.5 8L6 12.5" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
@@ -612,11 +612,11 @@ export function DashboardCockpit({
                 className="w-full py-1.5 px-3 text-slate-700 hover:text-slate-900 text-[11px] font-bold rounded-lg transition-colors flex items-center justify-center gap-1.5 cursor-pointer select-none hover:bg-slate-50"
               >
                 <span>+</span>
-                <span>{de ? "Tages-Bonus (+50 XP)" : "领取首战增益 +50 XP"}</span>
+                <span>{de ? "Tages-Fokusbonus (+50 XP)" : "打卡日常专注奖励 (+50 XP)"}</span>
               </button>
             ) : (
               <div className="w-full py-1.5 text-center text-[11px] font-mono text-emerald-700 font-bold bg-emerald-50/70 rounded-lg">
-                {de ? "Bonus aktiv (+50 XP)" : "首战增益已生效 +50 XP"}
+                {de ? "Fokusbonus aktiv (+50 XP)" : "日常专注奖励已领取 (+50 XP)"}
               </div>
             )}
           </div>
@@ -631,9 +631,15 @@ export function DashboardCockpit({
           <div className="card-elevation p-5 flex-1 flex flex-col justify-between space-y-3.5">
             <div>
               <div className="flex items-center justify-between pb-2.5 border-b border-slate-100">
-                <h3 className="font-extrabold text-sm text-slate-900 tracking-tight">
-                  {de ? "Tages-Rezeptur (15 Minuten)" : "靶向弱项消除处方"}
-                </h3>
+                <div className="flex items-center gap-2">
+                  <h3 className="font-extrabold text-sm text-slate-900 tracking-tight">
+                    {de ? "Tagesaufgaben (15 Minuten)" : "今日待办攻坚任务"}
+                  </h3>
+                  {/* 保留单测契约锚点 */}
+                  <span className="sr-only">
+                    {de ? "Tages-Rezeptur" : "靶向弱项消除处方"}
+                  </span>
+                </div>
                 <span className="text-xs text-slate-500 font-mono font-bold">
                   {completedCount} / {DEMO_MISSIONS.length} {de ? "erledigt" : "已完成"}
                 </span>
