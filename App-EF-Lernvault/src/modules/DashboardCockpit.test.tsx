@@ -36,9 +36,11 @@ describe("DashboardCockpit UI Demo", () => {
     await user.click(execBtns[0]);
     expect(onNavigate).toHaveBeenCalledWith("flashcards", undefined);
 
-    // Click toggle check on mission 1
-    const checkBoxes = screen.getAllByTitle("勾选标记完成");
-    await user.click(checkBoxes[0]);
+    // Toggle completion on mission 1
+    const missionItems = screen.getAllByText(/清空 12 张 \[D4\]/);
+    expect(missionItems.length).toBeGreaterThan(0);
+    const completeBtns = screen.getAllByTitle("标记完成状态");
+    await user.click(completeBtns[0]);
     expect(screen.getByText(/1 \/ 3 已完成/)).toBeInTheDocument();
   });
 
