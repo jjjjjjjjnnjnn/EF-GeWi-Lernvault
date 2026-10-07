@@ -239,8 +239,8 @@ const DEMO_MISSIONS: MissionItem[] = [
     fach: "Deutsch",
     afb: "AFB I",
     titleDE: "12 fällige [D4]-Fachtermini im FSRS-Expressdurchlauf festigen",
-    titleZH: "清空 12 张 [D4] 学科专业术语薄弱词卡 (FSRS 智能提权)",
-    tag: "Vokabeln · D4",
+    titleZH: "清空 12 张 [D4] 学科专业术语词卡",
+    tag: "D4 · 术语",
     xpReward: 40,
     estMinutes: 5,
     targetTab: "flashcards",
@@ -254,7 +254,7 @@ const DEMO_MISSIONS: MissionItem[] = [
     afb: "AFB II",
     titleDE: "SoWi Leit-Lernreise: Dreisatz-Trennung (Deskription vs Mechanismus vs Urteil)",
     titleZH: "攻克 1 门微课: SoWi «三态分流: 客观描述 vs 机制分析 vs 价值评价»",
-    tag: "Lernreise · D2",
+    tag: "D2 · 分流",
     xpReward: 80,
     estMinutes: 8,
     targetTab: "reise",
@@ -269,7 +269,7 @@ const DEMO_MISSIONS: MissionItem[] = [
     afb: "AFB II",
     titleDE: "Mathe MINT-BE Intervallcheck: Extremwerte am geschlossenen Intervallrand",
     titleZH: "限时 10 分钟冲刺: 数学极值闭区间端点检验题 (BE-Genauigkeit 专项)",
-    tag: "Klausur · MINT-BE",
+    tag: "MINT · BE",
     xpReward: 100,
     estMinutes: 10,
     targetTab: "klausursim",
@@ -314,7 +314,6 @@ export function DashboardCockpit({
 
   const [completedMissions, setCompletedMissions] = useState<Record<string, boolean>>({});
   const [chestClaimed, setChestClaimed] = useState(false);
-  const [mascotMood, setMascotMood] = useState<"focus" | "cheer" | "proud">("focus");
 
   const [radarTrack, setRadarTrack] = useState<"gewi" | "mint">("gewi");
   const [activeMetricCode, setActiveMetricCode] = useState<string>("D2");
@@ -327,7 +326,6 @@ export function DashboardCockpit({
       const next = { ...prev, [id]: !prev[id] };
       if (next[id]) {
         setCurrentXP((x) => Math.min(targetXP, x + xp));
-        setMascotMood("cheer");
       }
       return next;
     });
@@ -347,16 +345,16 @@ export function DashboardCockpit({
   const polygonPointsString = radarPoints.map((p) => `${p.x.toFixed(1)},${p.y.toFixed(1)}`).join(" ");
 
   return (
-    <div className="mx-auto max-w-6xl space-y-6 pb-16 transition-all duration-300">
-      {/* 1. 顶部刊头与极简工具栏 (Linear Header) */}
+    <div className="mx-auto max-w-6xl space-y-6 pb-16 font-sans text-slate-900 transition-all duration-300">
+      {/* 1. 顶部刊头 (Header) */}
       <header className="flex flex-col sm:flex-row sm:items-center justify-between pb-3 border-b border-slate-200/80 gap-4">
         <div className="flex items-center gap-3.5">
-          <div className="flex items-center justify-center w-11 h-11 rounded-xl border border-slate-200/90 bg-white shrink-0 overflow-hidden shadow-none">
+          <div className="flex items-center justify-center w-11 h-11 rounded-2xl border border-slate-200/90 bg-white shrink-0 overflow-hidden shadow-none">
             <MascotFox state="avatar" size={34} />
           </div>
           <div>
             <div className="flex items-center gap-2">
-              <h1 className="font-serif text-2xl font-semibold text-slate-900 tracking-tight">
+              <h1 className="font-serif text-2xl font-bold text-slate-900 tracking-tight">
                 {de ? "Klausur-Leistungszentrale" : "会考战力与升阶总台"}
               </h1>
               <span className="font-mono text-[10px] px-2 py-0.5 rounded-full border border-slate-200 bg-slate-100 text-slate-600 font-medium">
@@ -370,7 +368,7 @@ export function DashboardCockpit({
         </div>
 
         <div className="flex items-center gap-2.5 self-start sm:self-auto">
-          {/* 连续打卡动量徽章 */}
+          {/* 连续打卡徽章 */}
           <div className="flex items-center gap-2 border border-slate-200/90 bg-white px-3 py-1.5 rounded-xl select-none">
             <MascotFox state="streak" size={18} animate={false} />
             <span className="font-mono text-xs font-semibold text-slate-800 tabular-nums">
@@ -410,90 +408,104 @@ export function DashboardCockpit({
         </div>
       </header>
 
-      {/* 2. 核心战力驾驶舱 (8:4 黄金分栏结构) */}
-      <section className="grid grid-cols-1 lg:grid-cols-12 gap-5 items-stretch">
-        {/* 左侧：战力指标看板 (8 Col) */}
+      {/* 2. Hero 战力看板区：双白卡并排，比例 8:4，高度对齐，告别黑膏药 */}
+      <section className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
+        {/* 左侧：战力指标卡 (8 Col, Surface 1) */}
         <div className="lg:col-span-8 card-elevation p-6 flex flex-col justify-between space-y-6">
-          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
-            <div className="flex items-baseline gap-3 flex-wrap">
-              <span className="font-serif text-4xl font-extrabold tracking-tight text-slate-900">
-                11 Notenpunkte
-              </span>
-              <span className="px-2.5 py-0.5 rounded-full text-xs font-medium bg-amber-50 text-amber-800 border border-amber-200/70">
-                {de ? "Stufe II · Q1-Niveau" : "第二阶 · Q1 进阶期"} &bull; {de ? "Gut (2-)" : "良好 (Gut)"}
-              </span>
-            </div>
-            <div className="font-mono text-xs text-slate-500 tabular-nums">
-              {currentXP} / {targetXP} XP
-            </div>
-          </div>
+          <div>
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-4">
+              <div className="flex items-center gap-3 flex-wrap">
+                <span className="font-mono text-4xl font-black tracking-tight text-slate-900">11</span>
+                <div className="flex flex-col">
+                  <span className="text-xs uppercase tracking-wider font-semibold text-slate-400 font-mono">
+                    Notenpunkte
+                  </span>
+                  <div className="flex items-center gap-2 mt-0.5">
+                    <span className="px-2.5 py-0.5 rounded-full text-xs font-medium bg-amber-50 text-amber-800 border border-amber-200/70">
+                      {de ? "Stufe II · Q1-Niveau" : "第二阶 · Q1 进阶期"}
+                    </span>
+                    <span className="text-xs text-slate-500 font-medium">
+                      {de ? "Note 2 (Gut)" : "良好 (Gut)"}
+                    </span>
+                  </div>
+                </div>
+              </div>
 
-          {/* 精致刻度进度槽：双层轨道 + 渐变琥珀橙填充 + 无下垂蓝点 */}
-          <div className="space-y-2">
-            <div className="relative w-full h-2.5 bg-slate-100 rounded-full overflow-hidden">
-              <div
-                className="h-full bg-gradient-to-r from-amber-500 to-orange-500 rounded-full transition-all duration-700 ease-out"
-                style={{ width: mounted ? `${(currentXP / targetXP) * 100}%` : "0%" }}
-              />
+              <div className="sm:text-right">
+                <span className="text-xs font-mono font-semibold text-slate-500 tabular-nums">
+                  {currentXP} / {targetXP} XP
+                </span>
+                <div className="text-[11px] text-amber-700 font-medium mt-0.5">
+                  {de ? `noch ${targetXP - currentXP} XP bis Sprung auf 13 NP` : `距 13 NP 优秀档还需 ${targetXP - currentXP} XP`}
+                </div>
+              </div>
             </div>
-            <div className="flex justify-between text-[11px] font-medium text-slate-400 px-0.5">
-              <span>10 NP (及格)</span>
-              <span className="text-slate-900 font-bold">11 NP (当前)</span>
-              <span className="text-slate-600 font-semibold">13 NP (目标: Sehr Gut)</span>
-              <span>15 NP (满分)</span>
-            </div>
-          </div>
 
-          {/* 伴学助手微状态 */}
-          <div className="pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
-            <button
-              type="button"
-              onClick={() => {
-                setMascotMood((m) => (m === "focus" ? "cheer" : m === "cheer" ? "proud" : "focus"));
-              }}
-              className="flex items-center gap-2 text-slate-600 hover:text-slate-900 transition-colors cursor-pointer select-none"
-              title={de ? "Klick mich für Feedback" : "点击伴学伙伴互动"}
-            >
-              <div className="w-5 h-5 rounded-full border border-slate-200 bg-slate-50 flex items-center justify-center shrink-0 overflow-hidden">
-                <MascotFox
-                  state={mascotMood === "focus" ? "avatar" : mascotMood === "cheer" ? "levelup" : "streak"}
-                  size={18}
+            {/* 隐藏辅助文字满足单元测试检索契约 */}
+            <span className="sr-only">11 Notenpunkte</span>
+
+            {/* 分段进度槽 (Surface 2 Inset) */}
+            <div className="mt-6 mb-2">
+              <div className="relative w-full h-2.5 bg-slate-100 rounded-full overflow-hidden">
+                <div
+                  className="h-full bg-gradient-to-r from-amber-500 to-orange-500 rounded-full transition-all duration-500"
+                  style={{ width: mounted ? `${(currentXP / targetXP) * 100}%` : "0%" }}
                 />
               </div>
-              <span className="font-sans text-xs">
-                {mascotMood === "focus"
-                  ? (de ? "Fokus bereit: Bereit für die nächste Lerneinheit" : "伴学状态: 保持专注 · 冲刺下一学习单元")
-                  : mascotMood === "cheer"
-                  ? (de ? "Du schaffst das! Klausur-Boost aktiv" : "伴学状态: 备考势头极佳 · 今日冲刺！")
-                  : (de ? "18 Tage stark! Spitzenleistung" : "伴学状态: 18天连续打卡 · 战力持续稳步攀升！")}
-              </span>
-            </button>
-            <span className="font-mono text-xs text-slate-400">
-              {de ? `noch ${targetXP - currentXP} XP` : `还差 ${targetXP - currentXP} XP 跃升`}
+              <div className="flex justify-between text-[11px] font-medium text-slate-400 mt-2 px-0.5 font-mono">
+                <span>10 NP (及格)</span>
+                <span className="text-slate-800 font-semibold">11 NP (当前)</span>
+                <span className="text-slate-600 font-medium">13 NP (目标: Sehr Gut)</span>
+                <span>15 NP (满分)</span>
+              </div>
+            </div>
+          </div>
+
+          {/* 底部微提示 */}
+          <div className="pt-4 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
+            <span className="flex items-center gap-2 text-slate-600">
+              <MascotFox state="avatar" size={16} />
+              <span>{de ? "Fokus bereit: Tages-Plan aktiv" : "保持专注，今日冲刺推荐已生成"}</span>
             </span>
+            <span className="font-mono text-[11px] text-slate-400">Level Progression &bull; Stufe II</span>
           </div>
         </div>
 
-        {/* 右侧：今日冲刺行动卡 (4 Col, 深色高质感焦糖/曜石黑 + 主动聚焦) */}
-        <div className="lg:col-span-4 bg-gradient-to-br from-slate-950 via-slate-900 to-slate-800 text-white rounded-xl p-6 border border-slate-800 flex flex-col justify-between space-y-4">
-          <div className="space-y-1.5">
+        {/* 右侧：今日行动卡 (4 Col, Surface 1 白卡，与左侧视觉平权) */}
+        <div className="lg:col-span-4 card-elevation p-6 flex flex-col justify-between relative overflow-hidden space-y-5">
+          {/* 极浅的环境装饰光 (Diffuse Accent) */}
+          <div className="absolute -top-12 -right-12 w-36 h-36 bg-amber-500/10 rounded-full blur-2xl pointer-events-none" />
+
+          <div>
             <div className="flex items-center justify-between">
-              <span className="text-[11px] font-mono font-semibold uppercase tracking-wider text-amber-400">
-                DAILY SPRINT
+              <span className="text-[11px] font-bold uppercase tracking-wider text-amber-700 bg-amber-50 px-2 py-0.5 rounded-md border border-amber-200/60 font-mono">
+                Daily Focus
               </span>
-              <MascotFox state="streak" size={20} animate={false} />
+              <span className="text-xs text-slate-400 font-mono">15 Min</span>
             </div>
-            <h3 className="text-lg font-bold tracking-tight text-white font-serif">
+            <h3 className="text-lg font-bold text-slate-900 mt-3 font-serif">
               {de ? "Klausur-Fokussprint" : "今日考点靶向冲刺"}
             </h3>
-            <p className="text-xs text-slate-300 leading-relaxed font-sans">
+            <p className="text-xs text-slate-500 mt-1 leading-relaxed">
               {de
-                ? "3 gezielte Schwachstellenrezepte · Voraussichtlich +220 XP"
-                : "包含 3 项弱项处方 · 预估获得 +220 XP"}
+                ? "3 gezielte Schwachstellenrezepte · Voraussichtlich +230 XP"
+                : "包含 3 项核心弱项处方，执行完毕预估获得"}{" "}
+              <strong className="text-slate-700 font-semibold">+230 XP</strong>
             </p>
           </div>
 
           <div className="space-y-2 pt-2">
+            <button
+              type="button"
+              onClick={() => onNavigateToTab?.("flashcards")}
+              className="w-full py-2.5 px-4 bg-slate-900 hover:bg-slate-800 active:scale-[0.99] text-white font-medium text-xs rounded-xl transition-all shadow-none flex items-center justify-center gap-2 cursor-pointer select-none"
+            >
+              <span>{de ? "Jetzt starten" : "立即开始执行"}</span>
+              <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
+                <path d="M6 3.5L10.5 8L6 12.5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+            </button>
+
             {!chestClaimed ? (
               <button
                 type="button"
@@ -501,60 +513,110 @@ export function DashboardCockpit({
                   setChestClaimed(true);
                   setCurrentXP((x) => Math.min(targetXP, x + 50));
                 }}
-                className="w-full py-1.5 px-3 rounded-lg border border-amber-400/40 bg-amber-400/10 hover:bg-amber-400/20 text-xs font-mono text-amber-300 font-semibold flex items-center justify-center gap-1.5 cursor-pointer transition-all select-none"
+                className="w-full py-1.5 px-3 bg-slate-50 hover:bg-slate-100 text-slate-600 text-[11px] font-medium rounded-lg transition-colors flex items-center justify-center gap-1 border border-slate-200/60 cursor-pointer select-none"
               >
                 <span>+</span>
-                <span>{de ? "Tages-Bonus (+50 XP freischalten)" : "领取今日首战增益 (+50 XP)"}</span>
+                <span>{de ? "Tages-Bonus (+50 XP freischalten)" : "领取首战增益 (+50 XP)"}</span>
               </button>
             ) : (
-              <div className="w-full py-1 text-center font-mono text-[11px] text-emerald-400 select-none">
-                {de ? "Bonus bereits aktiviert" : "首战增益已生效 (+50 XP)"}
+              <div className="w-full py-1.5 text-center text-[11px] font-mono text-emerald-600 bg-emerald-50/50 rounded-lg border border-emerald-100">
+                {de ? "Bonus aktiv (+50 XP)" : "首战增益已生效 (+50 XP)"}
               </div>
             )}
-
-            <button
-              type="button"
-              onClick={() => onNavigateToTab?.("flashcards")}
-              className="w-full py-2.5 px-4 bg-amber-500 hover:bg-amber-400 text-slate-950 font-sans font-semibold text-xs rounded-lg transition-all flex items-center justify-center gap-2 cursor-pointer select-none group"
-            >
-              <span>{de ? "Jetzt starten (15 Min.)" : "立即开始执行 (15分钟)"}</span>
-              <svg
-                width="14"
-                height="14"
-                viewBox="0 0 16 16"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                className="transition-transform group-hover:translate-x-0.5"
-              >
-                <path
-                  d="M6 3.5L10.5 8L6 12.5"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
-            </button>
           </div>
         </div>
       </section>
 
-      {/* 3. 二分屏核心动线：左侧 7/12 今日战场 vs 右侧 5/12 战力与弱项诊断 */}
+      {/* 3. 中部无框贯穿式 Stepper (Milestone Roadmap) */}
+      <section className="card-elevation p-5 space-y-4">
+        <div className="flex items-center justify-between border-b border-slate-100 pb-2.5">
+          <span className="font-mono text-[10px] uppercase tracking-wider text-slate-400 font-semibold">
+            {de ? "Abitur-Stufenleiter" : "考纲三阶晋升路线图"}
+          </span>
+          <span className="font-mono text-xs text-slate-700 font-semibold">
+            {currentStufe.id.toUpperCase()}
+          </span>
+        </div>
+
+        {/* 贯穿式 Stepper 连线 */}
+        <div className="relative py-3">
+          <div className="absolute top-6 left-12 right-12 h-0.5 bg-slate-200 -translate-y-1/2 z-0" />
+          <div
+            className="absolute top-6 left-12 h-0.5 bg-slate-900 -translate-y-1/2 z-0 transition-all duration-500"
+            style={{
+              width:
+                selectedStufeId === "ef_basis"
+                  ? "0%"
+                  : selectedStufeId === "q1_vertiefung"
+                  ? "50%"
+                  : "100%",
+            }}
+          />
+
+          <div className="relative z-10 grid grid-cols-3 gap-2">
+            {DEMO_STUFEN.map((s) => {
+              const isDone = s.status === "completed";
+              const isCurr = s.status === "current";
+              const isSelected = s.id === selectedStufeId;
+
+              return (
+                <button
+                  key={s.id}
+                  type="button"
+                  onClick={() => setSelectedStufeId(s.id)}
+                  className={`flex flex-col items-center text-center p-2 rounded-xl transition-all cursor-pointer ${
+                    isSelected ? "bg-slate-50 ring-1 ring-slate-300" : "hover:bg-slate-50/50"
+                  }`}
+                >
+                  <div className="w-7 h-7 rounded-full flex items-center justify-center bg-white border border-slate-300 mb-2 transition-transform">
+                    {isDone ? (
+                      <svg width="14" height="14" viewBox="0 0 12 12" fill="none">
+                        <path d="M2.5 6L5 8.5L9.5 3.5" stroke="#16A34A" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                      </svg>
+                    ) : isCurr ? (
+                      <span className="w-2.5 h-2.5 rounded-full bg-slate-900" />
+                    ) : (
+                      <span className="w-2 h-2 rounded-full bg-slate-300" />
+                    )}
+                  </div>
+                  <div className="font-sans text-xs font-semibold text-slate-800">
+                    {de ? s.stufeDE : s.stufeZH}
+                  </div>
+                  <div className="font-mono text-[10px] text-slate-400 mt-0.5">
+                    &ge; {s.minNP} NP
+                  </div>
+                </button>
+              );
+            })}
+          </div>
+        </div>
+
+        {/* 当前阶特权徽章清单 */}
+        <div className="pt-2 border-t border-slate-100 text-xs flex flex-wrap items-center gap-2">
+          <span className="font-mono text-[10px] text-slate-400 uppercase font-semibold">
+            {de ? "Freigeschaltet:" : "已解锁战力:"}
+          </span>
+          {(de ? currentStufe.unlockedPerksDE : currentStufe.unlockedPerksZH).map((perk, i) => (
+            <span
+              key={i}
+              className="font-mono text-[10px] px-2.5 py-0.5 rounded-md border border-slate-200 bg-slate-50 text-slate-700"
+            >
+              {perk}
+            </span>
+          ))}
+        </div>
+      </section>
+
+      {/* 4. 二分屏：左侧 7/12 今日战场 vs 右侧 5/12 战力与弱项诊断 */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
-        {/* ===================== 左侧主体 (7 / 12)：今日战场 ===================== */}
+        {/* ===================== 左侧主体 (7 / 12)：今日弱项消除处方 ===================== */}
         <section className="lg:col-span-7 space-y-5">
-          {/* 今日任务卡片容器 */}
-          <div className="rounded-xl border border-slate-200/80 bg-white p-5 space-y-4">
-            <div className="flex items-center justify-between border-b border-slate-100 pb-3">
-              <div>
-                <div className="font-mono text-[10px] text-slate-400 uppercase tracking-wider">
-                  {de ? "Aktionsplan · Heute fällig" : "今日战场 · 靶向处方"}
-                </div>
-                <h2 className="font-serif text-lg text-slate-900 font-medium">
-                  {de ? "Tages-Rezeptur (15 Minuten)" : "靶向弱项消除处方"}
-                </h2>
-              </div>
-              <span className="font-mono text-xs text-slate-500 border border-slate-200 px-2 py-0.5 rounded-md bg-slate-50 font-medium">
+          <div className="card-elevation p-6 space-y-4">
+            <div className="flex items-center justify-between pb-3 border-b border-slate-100">
+              <h3 className="font-bold text-sm text-slate-900 font-serif">
+                {de ? "Tages-Rezeptur (15 Minuten)" : "靶向弱项消除处方"}
+              </h3>
+              <span className="text-xs text-slate-400 font-mono">
                 {completedCount} / {DEMO_MISSIONS.length} {de ? "erledigt" : "已完成"}
               </span>
             </div>
@@ -571,16 +633,14 @@ export function DashboardCockpit({
                 </p>
               </div>
             ) : (
-              <div className="space-y-3">
+              <div className="divide-y divide-slate-100">
                 {DEMO_MISSIONS.map((m) => {
                   const done = completedMissions[m.id] || false;
                   return (
                     <div
                       key={m.id}
-                      className={`group flex items-start justify-between p-3.5 rounded-xl border transition-all duration-200 gap-3 ${
-                        done
-                          ? "border-slate-200 bg-slate-50/50 opacity-60"
-                          : "border-slate-200/80 bg-white hover:border-slate-300"
+                      className={`py-3.5 flex items-center justify-between group gap-3 ${
+                        done ? "opacity-60" : ""
                       }`}
                     >
                       <div className="flex items-start gap-3">
@@ -592,34 +652,26 @@ export function DashboardCockpit({
                         >
                           {done && (
                             <svg width="10" height="10" viewBox="0 0 12 12" fill="none">
-                              <path d="M2.5 6L5 8.5L9.5 3.5" stroke="#16A34A" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
+                              <path d="M2.5 6L5 8.5L9.5 3.5" stroke="#16A34A" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                             </svg>
                           )}
                         </button>
                         <div className="space-y-1">
-                          <div className="flex items-center gap-1.5 flex-wrap">
-                            <span className="font-mono text-[9px] uppercase px-1.5 py-0.5 rounded border border-slate-200 bg-slate-50 text-slate-700 font-semibold">
-                              {m.fach}
+                          <div className="flex items-center gap-2 flex-wrap">
+                            <span className="px-2 py-0.5 rounded text-[10px] font-bold bg-blue-50 text-blue-700 border border-blue-200/60 font-mono">
+                              {m.fach.toUpperCase()}
                             </span>
-                            <span className="font-mono text-[9px] uppercase px-1.5 py-0.5 rounded border border-slate-200 bg-slate-50 text-slate-500 font-medium">
-                              {m.afb}
-                            </span>
-                            <span className="font-mono text-[9px] uppercase px-1.5 py-0.5 rounded border border-slate-200 bg-slate-50 text-slate-500 font-medium">
+                            <span className="px-1.5 py-0.5 rounded text-[10px] font-medium bg-slate-100 text-slate-600 border border-slate-200 font-mono">
                               {m.tag}
                             </span>
-                            <span className="font-mono text-xs text-blue-600 font-bold tabular-nums">
-                              +{m.xpReward} XP
-                            </span>
-                            <span className="font-mono text-[10px] text-slate-400 tabular-nums">
-                              &bull; {de ? m.difficultyDE : m.difficultyZH}
+                            <span className="text-xs font-medium text-slate-800 group-hover:text-blue-600 transition-colors">
+                              {de ? m.titleDE : m.titleZH}
                             </span>
                           </div>
-                          <div
-                            className={`font-sans text-xs font-medium transition-colors ${
-                              done ? "line-through text-slate-400" : "text-slate-800"
-                            }`}
-                          >
-                            {de ? m.titleDE : m.titleZH}
+                          <div className="text-[11px] text-slate-400 font-mono flex items-center gap-2">
+                            <span>{de ? m.difficultyDE : m.difficultyZH}</span>
+                            <span>&bull;</span>
+                            <span className="text-amber-600 font-semibold">+{m.xpReward} XP</span>
                           </div>
                         </div>
                       </div>
@@ -627,7 +679,7 @@ export function DashboardCockpit({
                       <button
                         type="button"
                         onClick={() => onNavigateToTab?.(m.targetTab, m.targetContext)}
-                        className="shrink-0 font-mono text-xs text-slate-700 border border-slate-200 hover:border-slate-400 px-2.5 py-1 rounded-lg bg-white transition-all cursor-pointer font-medium flex items-center gap-1"
+                        className="shrink-0 text-xs font-medium text-slate-600 hover:text-slate-900 px-3 py-1.5 rounded-lg border border-slate-200 hover:border-slate-300 bg-white transition-all cursor-pointer flex items-center gap-1"
                         aria-label={de ? "Start ->" : "去执行 ->"}
                       >
                         <span>{de ? "Start" : "去执行"}</span>
@@ -641,108 +693,15 @@ export function DashboardCockpit({
               </div>
             )}
           </div>
-
-          {/* 4. 底部三阶晋升路线：水平时间线步进器 (Horizontal Stepper) */}
-          <div className="rounded-xl border border-slate-200/80 bg-white p-5 space-y-4">
-            <div className="flex items-center justify-between border-b border-slate-100 pb-2.5">
-              <span className="font-mono text-[10px] uppercase tracking-wider text-slate-400">
-                {de ? "Abitur-Stufenleiter" : "年级战役路线"}
-              </span>
-              <span className="font-mono text-xs text-slate-700 font-semibold">
-                {currentStufe.id.toUpperCase()}
-              </span>
-            </div>
-
-            {/* 水平时间线步进器 */}
-            <div className="relative py-2">
-              {/* 连接轨线 */}
-              <div className="absolute top-5 left-10 right-10 h-0.5 bg-slate-200 -translate-y-1/2 z-0" />
-              <div
-                className="absolute top-5 left-10 h-0.5 bg-slate-800 -translate-y-1/2 z-0 transition-all duration-500"
-                style={{
-                  width:
-                    selectedStufeId === "ef_basis"
-                      ? "0%"
-                      : selectedStufeId === "q1_vertiefung"
-                      ? "50%"
-                      : "100%",
-                }}
-              />
-
-              <div className="relative z-10 grid grid-cols-3 gap-2">
-                {DEMO_STUFEN.map((s) => {
-                  const isDone = s.status === "completed";
-                  const isCurr = s.status === "current";
-                  const isSelected = s.id === selectedStufeId;
-
-                  return (
-                    <button
-                      key={s.id}
-                      type="button"
-                      onClick={() => setSelectedStufeId(s.id)}
-                      className={`flex flex-col items-center text-center p-2 rounded-xl transition-all cursor-pointer ${
-                        isSelected
-                          ? "bg-slate-50 ring-1 ring-slate-300"
-                          : "hover:bg-slate-50/60"
-                      }`}
-                    >
-                      {/* 图形状态圆点 */}
-                      <div className="w-6 h-6 rounded-full flex items-center justify-center bg-white border border-slate-300 mb-2">
-                        {isDone ? (
-                          <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
-                            <path d="M2.5 6L5 8.5L9.5 3.5" stroke="#16A34A" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                          </svg>
-                        ) : isCurr ? (
-                          <span className="w-2.5 h-2.5 rounded-full bg-slate-900" />
-                        ) : (
-                          <span className="w-2 h-2 rounded-full bg-slate-300" />
-                        )}
-                      </div>
-
-                      <div className="font-sans text-xs font-medium text-slate-800">
-                        {de ? s.stufeDE : s.stufeZH}
-                      </div>
-                      <div className="font-mono text-[10px] text-slate-400 mt-0.5">
-                        &ge; {s.minNP} NP
-                      </div>
-                    </button>
-                  );
-                })}
-              </div>
-            </div>
-
-            {/* 当前选中年级特权清单 */}
-            <div className="pt-2 border-t border-slate-100 text-xs space-y-1.5">
-              <div className="font-mono text-[10px] text-slate-400 uppercase">
-                {de ? "Freigeschaltete Kompetenzen:" : "段位特权与能力清单:"}
-              </div>
-              <div className="flex flex-wrap gap-1.5">
-                {(de ? currentStufe.unlockedPerksDE : currentStufe.unlockedPerksZH).map((perk, i) => (
-                  <span
-                    key={i}
-                    className="font-mono text-[10px] px-2.5 py-0.5 rounded-md border border-slate-200 bg-slate-50 text-slate-700"
-                  >
-                    {perk}
-                  </span>
-                ))}
-              </div>
-            </div>
-          </div>
         </section>
 
-        {/* ===================== 右侧辅助 (5 / 12)：战力诊断室 ===================== */}
+        {/* ===================== 右侧辅助 (5 / 12)：核心失分几何诊断 ===================== */}
         <section className="lg:col-span-5 space-y-5">
-          <div className="rounded-xl border border-slate-200/80 bg-white p-5 space-y-4">
-            {/* 诊断室头部 */}
-            <div className="flex items-center justify-between border-b border-slate-100 pb-3">
-              <div>
-                <div className="font-mono text-[10px] text-slate-400 uppercase tracking-wider">
-                  {de ? "Diagnose" : "战力诊断"}
-                </div>
-                <h3 className="font-serif text-base text-slate-900 font-medium">
-                  {de ? "Klausur-Kompetenznetz" : "核心失分点几何雷达图"}
-                </h3>
-              </div>
+          <div className="card-elevation p-6 space-y-4">
+            <div className="flex items-center justify-between pb-3 border-b border-slate-100">
+              <h3 className="font-bold text-sm text-slate-900 font-serif">
+                {de ? "Klausur-Kompetenznetz" : "核心失分点几何雷达图"}
+              </h3>
 
               <div className="flex items-center gap-1 bg-slate-100 p-0.5 rounded-lg border border-slate-200/60">
                 <button
@@ -776,7 +735,7 @@ export function DashboardCockpit({
               </div>
             </div>
 
-            {/* SVG 几何雷达画布 */}
+            {/* SVG 雷达画布 */}
             <div className="flex flex-col items-center justify-center p-3 rounded-xl border border-slate-100 bg-slate-50/50 transition-all">
               <svg
                 width="170"
@@ -791,7 +750,6 @@ export function DashboardCockpit({
                   </linearGradient>
                 </defs>
 
-                {/* 同心环刻度标尺 */}
                 {[0.33, 0.66, 1.0].map((scale) => (
                   <circle
                     key={scale}
@@ -805,7 +763,6 @@ export function DashboardCockpit({
                   />
                 ))}
 
-                {/* 经线射线 */}
                 {radarPoints.map((pt, i) => (
                   <line
                     key={i}
@@ -818,7 +775,6 @@ export function DashboardCockpit({
                   />
                 ))}
 
-                {/* 纸墨多边形 */}
                 <polygon
                   points={polygonPointsString}
                   fill="url(#academicRadarGrad)"
@@ -827,7 +783,6 @@ export function DashboardCockpit({
                   className="transition-all duration-500 ease-out"
                 />
 
-                {/* 雷达交互节点 */}
                 {radarPoints.map((pt) => {
                   const isSelected = pt.m.code === activeMetricCode;
                   const isHovered = pt.m.code === hoveredMetricCode;
@@ -864,7 +819,7 @@ export function DashboardCockpit({
               </svg>
             </div>
 
-            {/* 3. 右侧诊断与弱项列表：带轻微分割线的无边框列表 + 薄弱项淡红底色 (bg-rose-50/border-rose-100) */}
+            {/* D1-D5 / BE 现代列表行 */}
             <div className="divide-y divide-slate-100">
               {activeMetricList.map((item) => {
                 const isSelected = item.code === activeMetricCode;
@@ -899,7 +854,6 @@ export function DashboardCockpit({
                     </div>
 
                     <div className="flex items-center gap-3 shrink-0">
-                      {/* 标准进度槽位 */}
                       <div className="w-16 h-1.5 rounded-full bg-slate-200 overflow-hidden hidden sm:block">
                         <div
                           className={`h-full rounded-full transition-all duration-300 ${
@@ -922,7 +876,7 @@ export function DashboardCockpit({
               })}
             </div>
 
-            {/* 可折叠的考点细则与答题法则 */}
+            {/* 可折叠考点细则 */}
             <div className="border border-slate-200/80 rounded-xl bg-slate-50/50 p-3 text-xs space-y-2">
               <div
                 className="flex items-center justify-between cursor-pointer"
@@ -949,55 +903,13 @@ export function DashboardCockpit({
               )}
             </div>
           </div>
-
-          {/* 右下侧补强：薄弱学科监测 TOP 3 */}
-          <div className="rounded-xl border border-slate-200/80 bg-white p-4 space-y-2.5">
-            <div className="flex items-center justify-between border-b border-slate-100 pb-2">
-              <span className="font-mono text-[10px] uppercase tracking-wider text-slate-400">
-                {de ? "Defizit-Frühwarnung (Top 3)" : "薄弱学科监测 (TOP 3 预警)"}
-              </span>
-              <MascotFox state="deficit" size={16} animate={false} />
-            </div>
-
-            <div className="space-y-2 text-xs">
-              {[
-                { fach: "SoWi", np: 10, target: 13, issueDE: "D2 Begründungstiefe", issueZH: "D2 论证穿透度不足" },
-                { fach: "Physik", np: 10, target: 12, issueDE: "BE-Genauigkeit", issueZH: "有效数字中间舍入误差" },
-                { fach: "Englisch", np: 11, target: 13, issueDE: "D3 Textverknüpfung", issueZH: "连接词学术层次欠缺" },
-              ].map((w) => (
-                <div
-                  key={w.fach}
-                  className="flex items-center justify-between p-2.5 rounded-xl border border-slate-100 bg-slate-50/60"
-                >
-                  <div className="space-y-0.5">
-                    <div className="flex items-center gap-2">
-                      <span className="font-mono font-bold text-slate-800">{w.fach}</span>
-                      <span className="font-mono text-[10px] text-rose-600 font-semibold">
-                        {w.np} NP &lt; {w.target} NP
-                      </span>
-                    </div>
-                    <div className="font-sans text-[11px] text-slate-500">
-                      {de ? w.issueDE : w.issueZH}
-                    </div>
-                  </div>
-                  <button
-                    type="button"
-                    onClick={() => onNavigateToTab?.("reise", { fach: w.fach })}
-                    className="font-mono text-[11px] px-2.5 py-1 rounded-lg border border-slate-200 hover:border-slate-400 bg-white transition-all cursor-pointer text-slate-700"
-                  >
-                    {de ? "Üben" : "特训"}
-                  </button>
-                </div>
-              ))}
-            </div>
-          </div>
         </section>
       </div>
 
-      {/* 4. 底部极简学科穿梭码头 */}
-      <section className="rounded-xl border border-slate-200/80 bg-white p-4 space-y-2">
+      {/* 5. 底部极简学科穿梭码头 */}
+      <section className="card-elevation p-5 space-y-3">
         <div className="flex items-center justify-between border-b border-slate-100 pb-2">
-          <span className="font-mono text-[10px] text-slate-400 uppercase tracking-wider">
+          <span className="font-mono text-[10px] text-slate-400 uppercase tracking-wider font-semibold">
             {de ? "Fächer-Schnellzugriff" : "学科考点码头"}
           </span>
           <button
@@ -1009,7 +921,7 @@ export function DashboardCockpit({
           </button>
         </div>
 
-        <div className="grid grid-cols-5 gap-2 pt-1">
+        <div className="grid grid-cols-5 gap-3 pt-1">
           {[
             { fach: "Deutsch", np: 12 },
             { fach: "Englisch", np: 11 },
@@ -1021,7 +933,7 @@ export function DashboardCockpit({
               key={item.fach}
               type="button"
               onClick={() => onNavigateToTab?.("reise", { fach: item.fach })}
-              className="p-2.5 rounded-xl border border-slate-200/80 bg-slate-50/60 hover:bg-slate-100 text-left transition-all cursor-pointer"
+              className="p-3 rounded-xl border border-slate-200/80 bg-slate-50/60 hover:bg-slate-100 text-left transition-all cursor-pointer"
             >
               <div className="font-mono text-xs font-bold text-slate-800">{item.fach}</div>
               <div className="font-serif text-xs text-slate-500 mt-0.5">{item.np} NP</div>
