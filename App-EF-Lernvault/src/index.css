@@ -38,8 +38,8 @@
   --sp-8: 48px;
   --radius: 4px;
   --text-meta: 11px;
-  --font-de: Georgia, "Songti SC", "SimSun", serif;
-  --font-zh: system-ui, -apple-system, "Segoe UI", "PingFang SC", "Noto Sans SC", "Microsoft YaHei", sans-serif;
+  --font-de: "Plus Jakarta Sans", Georgia, "Songti SC", "SimSun", serif;
+  --font-zh: "Plus Jakarta Sans", system-ui, -apple-system, "Segoe UI", "PingFang SC", "Noto Sans SC", "Microsoft YaHei", sans-serif;
   --font-mono: ui-monospace, "SF Mono", Consolas, "Liberation Mono", Menlo, monospace;
   --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
   --dur-fast: 100ms;
@@ -124,7 +124,9 @@ body {
   font-family: var(--font-zh);
   font-size: 13.5px;
   line-height: 1.5;
+  letter-spacing: -0.015em;
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 [data-density="compact"] body,

@@ -45,7 +45,7 @@ const DEMO_STUFEN: StufenLevel[] = [
     nameDE: "Q1 Klausur-Analyse & Transfer",
     nameZH: "Q1 综合大题与微积分实战",
     stufeDE: "Stufe II (Q1)",
-    stufeZH: "第二阶 · 会考进阶 (当前)",
+    stufeZH: "第二阶 · 会考进阶",
     roman: "II",
     status: "current",
     minNP: 11,
@@ -551,48 +551,54 @@ export function DashboardCockpit({
           </div>
         </div>
 
-        {/* 右侧：今日行动卡 (4 Col, Surface 1 白卡，多邻国破框打卡) */}
-        <div className="lg:col-span-4 card-elevation p-6 flex flex-col justify-between relative overflow-visible space-y-4">
-          {/* 破框而出的狐狸（手捧火焰，趴在卡片右上角） */}
-          <div className="absolute -top-9 -right-2 w-24 h-24 pointer-events-none z-10 select-none">
-            <MascotFox state="streak" size={82} animate={true} />
-          </div>
+        {/* 右侧：今日行动卡 (4 Col, Surface 1 白卡，与狐狸伙伴场景化融合) */}
+        <div className="lg:col-span-4 card-elevation p-6 flex flex-col justify-between relative overflow-hidden bg-white space-y-4">
+          {/* 背景环境水印光晕 */}
+          <div className="absolute -top-12 -right-12 w-44 h-44 rounded-full bg-orange-100/40 pointer-events-none blur-2xl" />
 
-          <div className="pr-16 sm:pr-20">
-            <div className="flex items-center gap-2">
-              <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-xs font-bold bg-[#D96E3A]/10 text-[#D96E3A] border border-[#D96E3A]/30">
-                <svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor">
-                  <path d="M8 1c.5 1.5 2 3.5 2 5.5 0 2-1 3.5-2 3.5s-2-1.5-2-3.5C6 4.5 7.5 2.5 8 1zm0 7c.8 0 1.5.7 1.5 1.5 0 1-.7 2-1.5 2s-1.5-1-1.5-2c0-.8.7-1.5 1.5-1.5z" />
-                </svg>
-                <span>18 {de ? "Tage Serie" : "天连胜"}</span>
-              </span>
-              <span className="text-xs text-slate-500 font-mono font-bold">15 Min</span>
+          {/* 顶部区域：徽标、标题与内嵌卡片场景的狐狸伙伴 */}
+          <div className="relative z-10 flex items-start justify-between gap-3">
+            <div className="space-y-2 min-w-0 flex-1">
+              <div className="flex items-center gap-2">
+                <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-bold bg-[#D96E3A]/10 text-[#D96E3A] border border-[#D96E3A]/30">
+                  <svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor">
+                    <path d="M8 1c.5 1.5 2 3.5 2 5.5 0 2-1 3.5-2 3.5s-2-1.5-2-3.5C6 4.5 7.5 2.5 8 1zm0 7c.8 0 1.5.7 1.5 1.5 0 1-.7 2-1.5 2s-1.5-1-1.5-2c0-.8.7-1.5 1.5-1.5z" />
+                  </svg>
+                  <span>18 {de ? "Tage Serie" : "天连胜"}</span>
+                </span>
+                <span className="text-xs text-slate-500 font-mono font-bold">15 Min</span>
+              </div>
+              <h3 className="text-lg font-bold text-[#2D4F5C] tracking-tight leading-snug">
+                {de ? "Klausur-Fokussprint" : "今日考点靶向冲刺"}
+              </h3>
+              <p className="text-xs text-slate-600 leading-relaxed">
+                {de
+                  ? "3 gezielte Schwachstellenrezepte · Voraussichtlich +230 XP"
+                  : "针对当前 3 项核心弱项智能配题，通关可获得"}{" "}
+                <strong className="text-amber-800 font-bold font-mono">+230 XP</strong>
+              </p>
             </div>
-            <h3 className="text-lg font-bold text-[#2D4F5C] mt-2 font-serif">
-              {de ? "Klausur-Fokussprint" : "今日考点靶向冲刺"}
-            </h3>
-            <p className="text-xs text-slate-600 mt-1 leading-relaxed">
-              {de
-                ? "3 gezielte Schwachstellenrezepte · Voraussichtlich +230 XP"
-                : "包含 3 项核心弱项处方，执行完毕预估获得"}{" "}
-              <strong className="text-amber-800 font-bold">+230 XP</strong>
-            </p>
+
+            {/* 内嵌场景的狐狸伙伴（右侧端坐，优雅融入卡片场景） */}
+            <div className="shrink-0 flex items-center justify-center w-20 h-20 select-none -mt-1 -mr-1">
+              <MascotFox state="streak" size={72} animate={true} />
+            </div>
           </div>
 
           {/* 中部收益摘要微卡 */}
-          <div className="p-3 rounded-xl bg-slate-50/80 border border-slate-200/80 space-y-1 text-xs">
+          <div className="relative z-10 p-3 rounded-xl bg-slate-50 border border-slate-200/80 space-y-1 text-xs">
             <div className="flex items-center justify-between text-slate-700 font-medium">
               <span>{de ? "Fokus-Paket:" : "今日攻坚包:"}</span>
-              <span className="font-mono font-bold text-slate-900">3 Rezepte · 15 Min</span>
+              <span className="font-mono font-bold text-slate-900">3 处方 · 15 分钟</span>
             </div>
-            <div className="text-[11px] text-slate-500 leading-normal">
+            <div className="text-[11px] text-slate-600 leading-normal">
               {de
                 ? "1x GeWi Argumentation (D2) + 2x MINT/Fachtermini"
-                : "覆盖 1 项文科深度论证 (D2) + 2 项理科采分点与词卡"}
+                : "覆盖 1 项文科深度论证 (D2) 与 2 项理科采分点与词卡"}
             </div>
           </div>
 
-          <div className="space-y-2 pt-1">
+          <div className="relative z-10 space-y-2 pt-1">
             <button
               type="button"
               onClick={() => onNavigateToTab?.("flashcards")}
@@ -611,14 +617,14 @@ export function DashboardCockpit({
                   setChestClaimed(true);
                   setCurrentXP((x) => Math.min(targetXP, x + 50));
                 }}
-                className="w-full py-1.5 px-3 bg-slate-50 hover:bg-slate-100 text-slate-700 text-[11px] font-bold rounded-lg transition-colors flex items-center justify-center gap-1 border border-slate-200/80 cursor-pointer select-none"
+                className="w-full py-1.5 px-3 bg-slate-50 hover:bg-slate-100 text-slate-700 text-[11px] font-bold rounded-lg transition-colors flex items-center justify-center gap-1.5 border border-slate-200/80 cursor-pointer select-none"
               >
                 <span>+</span>
-                <span>{de ? "Tages-Bonus (+50 XP freischalten)" : "领取首战增益 (+50 XP)"}</span>
+                <span>{de ? "Tages-Bonus (+50 XP freischalten)" : "领取首战增益 +50 XP"}</span>
               </button>
             ) : (
               <div className="w-full py-1.5 text-center text-[11px] font-mono text-emerald-700 font-bold bg-emerald-50 rounded-lg border border-emerald-200">
-                {de ? "Bonus aktiv (+50 XP)" : "首战增益已生效 (+50 XP)"}
+                {de ? "Bonus aktiv (+50 XP)" : "首战增益已生效 +50 XP"}
               </div>
             )}
           </div>
@@ -747,16 +753,22 @@ export function DashboardCockpit({
             </div>
 
             {/* SVG 雷达画布 + 侦探狐狸剧情化互动 */}
-            <div className="relative flex flex-col items-center justify-center p-3 rounded-xl border border-slate-100 bg-slate-50/50 transition-all overflow-visible">
-              {/* 左下角侦探狐狸 (手持放大镜) */}
-              <div className="absolute -bottom-2 -left-1 w-14 h-14 pointer-events-none z-10 select-none">
-                <MascotFox state="deficit" size={50} animate={true} />
-              </div>
-
-              {/* 多邻国式对话气泡 */}
-              <div className="absolute -bottom-2.5 left-12 bg-[#2D4F5C] text-white text-[10px] py-1 px-2.5 rounded-lg shadow-none max-w-[155px] leading-tight select-none z-20">
-                <span>{de ? "Achtung! D2 ist die größte Lücke!" : "注意！D2 论证穿透度是最大失分点！"}</span>
-                <div className="absolute top-2 -left-1 w-0 h-0 border-y-4 border-y-transparent border-r-4 border-r-[#2D4F5C]" />
+            <div className="relative flex flex-col items-center justify-center p-4 rounded-xl border border-slate-200/80 bg-slate-50/70 transition-all overflow-hidden">
+              {/* 侦探狐狸剧情提示条 (替换悬空小气泡，融为一体) */}
+              <div className="w-full flex items-center gap-3 p-2.5 mb-3 bg-white border border-slate-200/90 rounded-lg">
+                <div className="shrink-0 flex items-center justify-center w-10 h-10 select-none">
+                  <MascotFox state="deficit" size={42} animate={true} />
+                </div>
+                <div className="min-w-0 flex-1">
+                  <div className="text-xs font-bold text-[#2D4F5C]">
+                    {de ? "Fokus-Befund:" : "考卷巡检诊断:"}
+                  </div>
+                  <div className="text-xs text-slate-700 leading-snug font-medium">
+                    {de
+                      ? "Achtung! D2 (Drei-Ebenen-Trennung) ist deine größte Lücke."
+                      : "注意！D2「三态严格分流」是当前主要失分点，请优先攻克。"}
+                  </div>
+                </div>
               </div>
 
               <svg
