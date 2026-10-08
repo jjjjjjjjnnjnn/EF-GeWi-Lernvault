@@ -1,0 +1,2744 @@
+{
+  "schemaVersion": 1,
+  "fach": "Musik",
+  "nameDE": "Musik",
+  "nameZH": "音乐 (Musik)",
+  "descriptionDE": "Satzlehre und Form, Musikgeschichte der Epochen, Werkanalyse, Musik in Kontexten sowie Aesthetik und Reflexion (NRW Oberstufe & Uni-Prep)",
+  "descriptionZH": "乐理与曲式、音乐史各时代、作品分析、音乐语境用途与音乐美学反思的全景引力星系图谱 (NRW 高中与大学衔接)",
+  "isCustomSubject": false,
+  "categories": [
+    "Satzlehre-und-Form",
+    "Musikgeschichte-Epochen",
+    "Werkanalyse",
+    "Musik-und-Kontext",
+    "Aesthetik-und-Reflexion"
+  ],
+  "availableTags": [
+    "Formel",
+    "Modell",
+    "Axiom",
+    "Definition",
+    "Verfahren",
+    "Quelle",
+    "Basiswissen",
+    "Klausur-Dauerbrenner",
+    "Schwerpunkt-2026",
+    "AFB-III",
+    "Uni-Prep",
+    "Aesthetik",
+    "Epoche",
+    "Formanalyse",
+    "Gattung",
+    "Gehoerbildung",
+    "Gender",
+    "Harmonielehre",
+    "Hoerbeispiel",
+    "Instrumentation",
+    "Interpretation",
+    "Klausur-Methode",
+    "Kontext",
+    "Medien",
+    "Motiv",
+    "Muendliche-Pruefung",
+    "Notation",
+    "Paradigma",
+    "Rezeption",
+    "Semiotik",
+    "Werk"
+  ],
+  "nodes": [
+    {
+      "id": "musik-notenlehre-notenschluessel",
+      "fach": "Musik",
+      "titleDE": "Notenlehre: Notenschlüssel, Notenwerte und Pausenwerte",
+      "titleZH": "记谱基础：谱号、音符时值与休止符",
+      "summaryDE": "Notenschlüssel legen die Tonhöhenlage fest, Noten- und Pausenwerte die relative Dauer; erst beide Systeme zusammen ergeben lesbare Musik.",
+      "summaryZH": "谱号确定音高位置，音符与休止时值确定相对时长；两套系统合起来才让乐谱可读。",
+      "category": "Satzlehre-und-Form",
+      "curriculumTier": "Sek_I",
+      "stage": "einfuehrung",
+      "level": 1,
+      "xpReward": 60,
+      "estimatedMinutes": 8,
+      "prerequisites": [],
+      "keyFormulaOrSentence": "Notenwerte sind Verhältniswerte: ganze = 4/4, halbe = 2/4, Viertel = 1/4, Achtel = 1/8; ein Punkt verlängert um die Hälfte.",
+      "commonFallacy": "Notenwerte als absolute Zeitangaben lesen - sie sind Verhältniswerte, die erst durch das Tempo zu Sekunden werden.",
+      "layerIndex": 0,
+      "tags": [
+        "Definition",
+        "Basiswissen",
+        "Notation"
+      ]
+    },
+    {
+      "id": "musik-rhythmus-takt-metrum",
+      "fach": "Musik",
+      "titleDE": "Rhythmus, Metrum und Taktordnung",
+      "titleZH": "节奏、节拍重音与拍号体系",
+      "summaryDE": "Das Metrum ist das regelmäßige Betonungsraster, der Rhythmus die konkrete Folge von Dauern darüber; die Taktart notiert, wie viele Grundschläge zusammengefasst werden.",
+      "summaryZH": "节拍是规则的强弱网格，节奏是其上具体的时值序列；拍号记录若干基本拍被组合成一个单位。",
+      "category": "Satzlehre-und-Form",
+      "curriculumTier": "Sek_I",
+      "stage": "einfuehrung",
+      "level": 1,
+      "xpReward": 65,
+      "estimatedMinutes": 8,
+      "prerequisites": [],
+      "keyFormulaOrSentence": "Metrum = regelmäßiges Betonungsraster, Rhythmus = konkrete Dauernfolge darüber; 4/4 bedeutet vier Viertel pro Takt.",
+      "commonFallacy": "Metrum und Rhythmus gleichsetzen - der Takt gibt nur das Raster, der Rhythmus kann es synkopisch überspielen.",
+      "layerIndex": 0,
+      "tags": [
+        "Definition",
+        "Basiswissen",
+        "Gehoerbildung"
+      ]
+    },
+    {
+      "id": "musik-intervalle-bestimmung",
+      "fach": "Musik",
+      "titleDE": "Intervalle: Größe, Qualität und Klangcharakter",
+      "titleZH": "音程：度数、性质与听觉张力",
+      "summaryDE": "Jedes Intervall wird über die Zahl der Stufen und die Halbtonschritte bestimmt; Konsonanz und Dissonanz ergeben sich aus dem Frequenzverhältnis.",
+      "summaryZH": "音程由级数与半音数共同确定；协和与不协和来自频率比关系。",
+      "category": "Satzlehre-und-Form",
+      "curriculumTier": "Sek_I",
+      "stage": "einfuehrung",
+      "level": 1,
+      "xpReward": 70,
+      "estimatedMinutes": 10,
+      "prerequisites": [
+        "musik-notenlehre-notenschluessel"
+      ],
+      "keyFormulaOrSentence": "Große Terz = 4 Halbtonschritte, reine Quinte = 7 Halbtonschritte; die kleine Sekunde mit 1 Halbtonschritt ist die schärfste Dissonanz.",
+      "commonFallacy": "Intervalle nur nach der Stufenzahl benennen und die Halbtonschritte ignorieren - dadurch wird die große Terz zur kleinen.",
+      "layerIndex": 1,
+      "tags": [
+        "Formel",
+        "Basiswissen",
+        "Gehoerbildung"
+      ]
+    },
+    {
+      "id": "musik-dur-moll-tonleiter",
+      "fach": "Musik",
+      "titleDE": "Dur- und Molltonleitern mit Vorzeichen",
+      "titleZH": "大小调音阶与调号推导",
+      "summaryDE": "Die Durtonleiter folgt dem Stufenmuster Ganz-Ganz-Halb-Ganz-Ganz-Ganz-Halb; Moll entsteht durch Absenken der dritten Stufe und kennt drei Varianten.",
+      "summaryZH": "大调音阶遵循全全半全全全半的级进模式；小调降低三级音，并有自然、和声、旋律三种形态。",
+      "category": "Satzlehre-und-Form",
+      "curriculumTier": "Sek_I",
+      "stage": "einfuehrung",
+      "level": 1,
+      "xpReward": 70,
+      "estimatedMinutes": 10,
+      "prerequisites": [
+        "musik-notenlehre-notenschluessel"
+      ],
+      "keyFormulaOrSentence": "Dur: Ganz - Ganz - Halb - Ganz - Ganz - Ganz - Halb; harmonisches Moll erhöht die siebte Stufe zum Leitton.",
+      "commonFallacy": "Moll als trauriges Dur beschreiben - Moll ist eine andere Intervallstruktur, nicht eine Stimmung.",
+      "layerIndex": 1,
+      "tags": [
+        "Formel",
+        "Basiswissen",
+        "Harmonielehre"
+      ]
+    },
+    {
+      "id": "musik-dreiklaenge-umkehrungen",
+      "fach": "Musik",
+      "titleDE": "Dreiklänge und ihre Umkehrungen",
+      "titleZH": "三和弦及其转位形态",
+      "summaryDE": "Ein Dreiklang stapelt zwei Terzen; durch Umkehrung wandert der tiefste Ton nach oben, während der Akkordinhalt gleich bleibt.",
+      "summaryZH": "三和弦由两个三度叠置构成；转位把最低音移高，和弦内容不变而低音位置改变。",
+      "category": "Satzlehre-und-Form",
+      "curriculumTier": "Sek_I",
+      "stage": "grundlagen",
+      "level": 1,
+      "xpReward": 80,
+      "estimatedMinutes": 12,
+      "prerequisites": [
+        "musik-intervalle-bestimmung",
+        "musik-dur-moll-tonleiter"
+      ],
+      "keyFormulaOrSentence": "Grundstellung = Terz und Quinte über dem Grundton; Sextakkord = Terz im Bass, Quartsextakkord = Quinte im Bass.",
+      "commonFallacy": "Umkehrungen für andere Akkorde halten - der Akkord bleibt derselbe, nur der Basston ändert sich.",
+      "layerIndex": 2,
+      "tags": [
+        "Definition",
+        "Basiswissen",
+        "Harmonielehre"
+      ]
+    },
+    {
+      "id": "musik-kadenz-harmonielehre",
+      "fach": "Musik",
+      "titleDE": "Kadenz und Funktionsharmonik",
+      "titleZH": "终止式与功能进行",
+      "summaryDE": "Die Kadenz verbindet Tonika, Subdominante und Dominante zur Schlussformel; die Dominante enthält den Leitton und erzwingt die Rückkehr zur Tonika.",
+      "summaryZH": "终止式把主、下属、属功能连成收束公式；属和弦含导音，迫使音乐回到主和弦。",
+      "category": "Satzlehre-und-Form",
+      "curriculumTier": "EF",
+      "stage": "grundlagen",
+      "level": 2,
+      "xpReward": 95,
+      "estimatedMinutes": 14,
+      "prerequisites": [
+        "musik-dreiklaenge-umkehrungen"
+      ],
+      "keyFormulaOrSentence": "T - S - D - T: Tonika, Subdominante, Dominante, Tonika; die Dominante enthält den Leitton und verlangt die Auflösung in die Tonika.",
+      "commonFallacy": "Die Kadenz mit der Klausel verwechseln - Kadenz meint hier das Harmonieschema, nicht den solistischen Einschub im Konzert.",
+      "layerIndex": 3,
+      "tags": [
+        "Formel",
+        "Klausur-Dauerbrenner",
+        "Harmonielehre"
+      ]
+    },
+    {
+      "id": "musik-satzarten-homophon-polyphon",
+      "fach": "Musik",
+      "titleDE": "Satzarten: homophon, polyphon, kontrapunktisch",
+      "titleZH": "织体类型：主调、复调与对位写法",
+      "summaryDE": "Homophoner Satz führt eine Melodie mit Begleitung, polyphoner Satz führt mehrere gleichberechtigte Stimmen; der Kontrapunkt regelt deren Zusammenklang.",
+      "summaryZH": "主调织体是旋律加伴奏，复调织体是多个平等声部并行；对位法则规定声部间的结合规则。",
+      "category": "Satzlehre-und-Form",
+      "curriculumTier": "EF",
+      "stage": "grundlagen",
+      "level": 1,
+      "xpReward": 90,
+      "estimatedMinutes": 12,
+      "prerequisites": [
+        "musik-rhythmus-takt-metrum"
+      ],
+      "keyFormulaOrSentence": "Homophon = eine führende Stimme mit Begleitung; polyphon = mehrere selbständige Stimmen von gleichem Rang.",
+      "commonFallacy": "Jede Mehrstimmigkeit als Polyphonie bezeichnen - Begleitakkorde machen einen Satz noch nicht polyphon.",
+      "layerIndex": 1,
+      "tags": [
+        "Definition",
+        "Basiswissen",
+        "Formanalyse"
+      ]
+    },
+    {
+      "id": "musik-funktionsharmonik-stufen",
+      "fach": "Musik",
+      "titleDE": "Stufenanalyse und Kadenzerweiterung",
+      "titleZH": "级数分析与终止式扩展",
+      "summaryDE": "Jeder Akkord lässt sich als Stufe der Tonart lesen; Zwischen- und Nebendominanten erweitern die Kadenz, ohne die Grundtonart zu verlassen.",
+      "summaryZH": "每个和弦都可读作调内级数；中间属与副属和弦在不离开主调的前提下扩展终止式。",
+      "category": "Satzlehre-und-Form",
+      "curriculumTier": "EF",
+      "stage": "grundlagen",
+      "level": 2,
+      "xpReward": 105,
+      "estimatedMinutes": 15,
+      "prerequisites": [
+        "musik-kadenz-harmonielehre"
+      ],
+      "keyFormulaOrSentence": "Hauptstufen: I = T, IV = S, V = D; die Nebendominante V/V führt als Zwischendominante zur Dominante.",
+      "commonFallacy": "Funktionsbezeichnung und Stufenzahl gleichsetzen - in Moll stimmen Stufe und Funktion nicht immer überein.",
+      "layerIndex": 4,
+      "tags": [
+        "Verfahren",
+        "Klausur-Dauerbrenner",
+        "Harmonielehre"
+      ]
+    },
+    {
+      "id": "musik-generalbass-bezifferung",
+      "fach": "Musik",
+      "titleDE": "Generalbass und Bezifferung",
+      "titleZH": "通奏低音与数字低音读法",
+      "summaryDE": "Die Bezifferung unter der Bassstimme gibt die Intervalle über dem Basston an; aus ihr rekonstruiert man Akkorde und Stimmführung.",
+      "summaryZH": "低音线下方的数字表示其上方音程；据此可重建和弦与声部进行。",
+      "category": "Satzlehre-und-Form",
+      "curriculumTier": "EF",
+      "stage": "grundlagen",
+      "level": 2,
+      "xpReward": 105,
+      "estimatedMinutes": 15,
+      "prerequisites": [
+        "musik-kadenz-harmonielehre"
+      ],
+      "keyFormulaOrSentence": "Leer = Grundstellung, 6 = Sextakkord, 6/4 = Quartsextakkord, 7 = Septakkord; die Ziffern benennen Intervalle über dem Basston.",
+      "commonFallacy": "Die Ziffern als Akkordnamen lesen - sie nennen Intervalle über dem Bass, nicht die Grundstellung des Akkords.",
+      "layerIndex": 4,
+      "tags": [
+        "Verfahren",
+        "Quelle",
+        "Harmonielehre"
+      ]
+    },
+    {
+      "id": "musik-motiv-begriff",
+      "fach": "Musik",
+      "titleDE": "Motiv: Definition und drei Erkennungsmerkmale",
+      "titleZH": "动机：定义与三大识别特征",
+      "summaryDE": "Das Motiv ist die kleinste sinnvolle musikalische Einheit; erkannt wird es an Rhythmus, Intervallverlauf und Klanggestalt.",
+      "summaryZH": "动机是最小的有意义乐思单位；通过节奏、音程走向与音响形态三特征辨认。",
+      "category": "Satzlehre-und-Form",
+      "curriculumTier": "EF",
+      "stage": "grundlagen",
+      "level": 1,
+      "xpReward": 90,
+      "estimatedMinutes": 12,
+      "prerequisites": [
+        "musik-rhythmus-takt-metrum"
+      ],
+      "keyFormulaOrSentence": "Ein Motiv erkenne ich an drei Merkmalen: am Rhythmus, am Intervallverlauf und an der Klanggestalt.",
+      "commonFallacy": "Motiv und Thema verwechseln - das Thema ist ein geschlossener Gedanke, das Motiv sein kleinster Baustein.",
+      "layerIndex": 1,
+      "tags": [
+        "Definition",
+        "Klausur-Dauerbrenner",
+        "Motiv"
+      ]
+    },
+    {
+      "id": "musik-periode-satzbau",
+      "fach": "Musik",
+      "titleDE": "Periode: Vorder- und Nachsatz",
+      "titleZH": "乐段：前句与后句的问答结构",
+      "summaryDE": "Die Periode besteht aus einem Vorder- und einem Nachsatz; der Vordersatz endet offen, der Nachsatz schließt die aufgestaute Spannung.",
+      "summaryZH": "乐段由前句与后句构成；前句开放悬置，后句收束解决张力。",
+      "category": "Satzlehre-und-Form",
+      "curriculumTier": "EF",
+      "stage": "vertiefung",
+      "level": 2,
+      "xpReward": 110,
+      "estimatedMinutes": 15,
+      "prerequisites": [
+        "musik-motiv-begriff",
+        "musik-satzarten-homophon-polyphon"
+      ],
+      "keyFormulaOrSentence": "Periode = Vordersatz mit offenem Halbschluss plus Nachsatz mit geschlossenem Ganzschluss.",
+      "commonFallacy": "Die Periode mit dem Satz gleichsetzen - die Periode ist eine Themeform, der Satz ein ganzer Formteil.",
+      "layerIndex": 2,
+      "tags": [
+        "Definition",
+        "Klausur-Dauerbrenner",
+        "Formanalyse"
+      ]
+    },
+    {
+      "id": "musik-sonatenhauptsatzform",
+      "fach": "Musik",
+      "titleDE": "Sonatenhauptsatzform: Exposition, Durchführung, Reprise",
+      "titleZH": "奏鸣曲式：呈示、展开与再现",
+      "summaryDE": "Die Exposition stellt Haupt- und Seitensatz in verschiedenen Tonarten gegenüber, die Durchführung verarbeitet deren Motive, die Reprise bringt beide Themen in der Tonika zur Deckung.",
+      "summaryZH": "呈示部把主部与副部置于不同调性形成对立，展开部加工其动机，再现部让两主题统一回到主调。",
+      "category": "Satzlehre-und-Form",
+      "curriculumTier": "EF",
+      "stage": "vertiefung",
+      "level": 2,
+      "xpReward": 120,
+      "estimatedMinutes": 18,
+      "prerequisites": [
+        "musik-periode-satzbau",
+        "musik-funktionsharmonik-stufen"
+      ],
+      "keyFormulaOrSentence": "Exposition - Durchführung - Reprise; in der Exposition steht der Seitensatz in der Dominante, in der Reprise in der Tonika.",
+      "commonFallacy": "Die Tonartenrelation der Exposition auf die Reprise übertragen - erst die Reprise löst die Spannung durch Angleichung an die Tonika.",
+      "layerIndex": 5,
+      "tags": [
+        "Modell",
+        "Klausur-Dauerbrenner",
+        "Schwerpunkt-2026",
+        "Formanalyse"
+      ]
+    },
+    {
+      "id": "musik-kontrapunkt-fuge",
+      "fach": "Musik",
+      "titleDE": "Kontrapunkt und Fugenexposition",
+      "titleZH": "对位法与赋格呈示部",
+      "summaryDE": "Die Fuge setzt das Thema nacheinander in allen Stimmen an; Dux und Comes bilden den Kern der Exposition, Zwischenspiele lockern das Geflecht.",
+      "summaryZH": "赋格让主题在各声部依次进入；主题与答题构成呈示部核心，间插段松弛织体。",
+      "category": "Satzlehre-und-Form",
+      "curriculumTier": "Q1",
+      "stage": "vertiefung",
+      "level": 2,
+      "xpReward": 135,
+      "estimatedMinutes": 18,
+      "prerequisites": [
+        "musik-satzarten-homophon-polyphon"
+      ],
+      "keyFormulaOrSentence": "Fugenexposition: Dux als Thema in der Grundtonart, Comes als Antwort in der Dominante, dazwischen Zwischenspiele.",
+      "commonFallacy": "Jede imitatorische Stelle als Fuge bezeichnen - zur Fuge gehört die vollständige Durchführung des Themas in allen Stimmen.",
+      "layerIndex": 2,
+      "tags": [
+        "Verfahren",
+        "Klausur-Dauerbrenner",
+        "Formanalyse"
+      ]
+    },
+    {
+      "id": "musik-erweiterte-harmonik-chromatik",
+      "fach": "Musik",
+      "titleDE": "Erweiterte Harmonik: Chromatik, Alteration und Modulation",
+      "titleZH": "扩展和声：半音化、变音与转调",
+      "summaryDE": "Chromatische Töne und alterierte Akkorde erweitern das Kadenzschema; die Modulation verlässt die Ausgangstonart dauerhaft und etabliert eine neue.",
+      "summaryZH": "半音与变音和弦扩展终止图式；转调则永久离开原调并确立新调。",
+      "category": "Satzlehre-und-Form",
+      "curriculumTier": "Q1",
+      "stage": "vertiefung",
+      "level": 3,
+      "xpReward": 150,
+      "estimatedMinutes": 20,
+      "prerequisites": [
+        "musik-funktionsharmonik-stufen",
+        "musik-generalbass-bezifferung"
+      ],
+      "keyFormulaOrSentence": "Modulation = dauerhafter Wechsel der Tonart mit etablierter neuer Tonika; Ausweichung = vorübergehendes Verlassen der Tonart.",
+      "commonFallacy": "Modulation und Ausweichung gleichsetzen - nur die Modulation etabliert eine neue Tonika dauerhaft.",
+      "layerIndex": 5,
+      "tags": [
+        "Verfahren",
+        "AFB-III",
+        "Harmonielehre"
+      ]
+    },
+    {
+      "id": "musik-funktionsharmonik-riemann",
+      "fach": "Musik",
+      "titleDE": "Riemannsche Funktionstheorie",
+      "titleZH": "里曼功能理论：T/S/D 体系",
+      "summaryDE": "Riemann reduziert alle Akkorde auf drei Funktionen und erklärt Moll als Spiegelung von Dur; damit wird Harmonik als System lesbar.",
+      "summaryZH": "里曼把一切和弦归约为三大功能，并以大调的镜像解释小调，使和声成为可读的系统。",
+      "category": "Satzlehre-und-Form",
+      "curriculumTier": "Uni_Prep",
+      "stage": "synthese",
+      "level": 3,
+      "xpReward": 185,
+      "estimatedMinutes": 24,
+      "prerequisites": [
+        "musik-funktionsharmonik-stufen",
+        "musik-generalbass-bezifferung",
+        "musik-erweiterte-harmonik-chromatik"
+      ],
+      "keyFormulaOrSentence": "Alle Akkorde lassen sich auf die drei Funktionen T, S und D zurückführen; Moll ist das Spiegelbild von Dur.",
+      "commonFallacy": "Die drei Funktionen für eine Naturtatsache halten - sie sind ein analytisches Modell, das an Grenzen stößt.",
+      "layerIndex": 6,
+      "tags": [
+        "Modell",
+        "Uni-Prep",
+        "Harmonielehre"
+      ]
+    },
+    {
+      "id": "musik-instrumentenkunde-gruppen",
+      "fach": "Musik",
+      "titleDE": "Instrumentenkunde: Gruppen, Klang und Spieltechnik",
+      "titleZH": "乐器学：分组、音色与演奏技法",
+      "summaryDE": "Instrumente werden nach der Art der Klangerzeugung gruppiert; Spieltechnik und Klangmischung bestimmen, welche Klangfarbe eine Besetzung erzeugen kann.",
+      "summaryZH": "乐器按发声方式分组；演奏技法与音色融合决定一种编制能产生何种音响。",
+      "category": "Musikgeschichte-Epochen",
+      "curriculumTier": "Sek_I",
+      "stage": "einfuehrung",
+      "level": 1,
+      "xpReward": 65,
+      "estimatedMinutes": 10,
+      "prerequisites": [],
+      "keyFormulaOrSentence": "Instrumentengruppen: Streicher, Holzbläser, Blechbläser, Schlagzeug, Tasteninstrumente; die Klangfarbe entsteht aus Material, Erregung und Spieltechnik.",
+      "commonFallacy": "Klangfarbe für eine feste Eigenschaft des Instruments halten - erst Spieltechnik und Zusammenklang erzeugen den Klang.",
+      "layerIndex": 0,
+      "tags": [
+        "Definition",
+        "Basiswissen",
+        "Instrumentation"
+      ]
+    },
+    {
+      "id": "musik-epoche-mittelalter-gregorianik",
+      "fach": "Musik",
+      "titleDE": "Mittelalter: Gregorianik, Modalität und Organum",
+      "titleZH": "中世纪：格里高利圣咏、调式与奥尔加农",
+      "summaryDE": "Der gregorianische Choral ist einstimmig und kirchentonal; das Organum verdoppelt ihn zunächst in Quintparallelen, später in selbständigen Stimmen.",
+      "summaryZH": "格里高利圣咏为单声部教会调式；奥尔加农先以五度平行加倍，后发展为独立声部。",
+      "category": "Musikgeschichte-Epochen",
+      "curriculumTier": "EF",
+      "stage": "einfuehrung",
+      "level": 1,
+      "xpReward": 90,
+      "estimatedMinutes": 12,
+      "prerequisites": [
+        "musik-instrumentenkunde-gruppen"
+      ],
+      "keyFormulaOrSentence": "Einstimmiger Choral in kirchentonalen Modi; das Organum setzt eine zweite Stimme hinzu und ist der Ausgangspunkt der Mehrstimmigkeit.",
+      "commonFallacy": "Die Kirchentonarten mit Dur und Moll gleichsetzen - sie haben andere Finales und kein festes Leittonverhalten.",
+      "layerIndex": 1,
+      "tags": [
+        "Epoche",
+        "Quelle",
+        "Formanalyse"
+      ]
+    },
+    {
+      "id": "musik-epoche-renaissance-imitationspolyphonie",
+      "fach": "Musik",
+      "titleDE": "Renaissance: Imitationspolyphonie, Motette und Messe",
+      "titleZH": "文艺复兴：模仿复调、经文歌与弥撒",
+      "summaryDE": "Alle Stimmen sind gleichberechtigt und nehmen dasselbe Motiv nacheinander auf; die Imitation stiftet Einheit, ohne dass eine Stimme führt.",
+      "summaryZH": "各声部地位平等，先后承接同一动机；模仿在不设主旋律的情况下造成统一。",
+      "category": "Musikgeschichte-Epochen",
+      "curriculumTier": "EF",
+      "stage": "grundlagen",
+      "level": 2,
+      "xpReward": 100,
+      "estimatedMinutes": 14,
+      "prerequisites": [
+        "musik-epoche-mittelalter-gregorianik"
+      ],
+      "keyFormulaOrSentence": "Imitationspolyphonie: alle Stimmen sind gleichberechtigt und greifen dasselbe Motiv nacheinander auf.",
+      "commonFallacy": "Die Renaissance-Motette nach Akkorden hören - ihre Einheit entsteht aus der Imitation, nicht aus einer Harmoniefolge.",
+      "layerIndex": 2,
+      "tags": [
+        "Epoche",
+        "Gattung",
+        "Formanalyse"
+      ]
+    },
+    {
+      "id": "musik-epoche-barock-generalbass-affekt",
+      "fach": "Musik",
+      "titleDE": "Barock: Generalbass, Affektenlehre und Konzertieren",
+      "titleZH": "巴洛克：通奏低音、情感学说与协奏风格",
+      "summaryDE": "Eine Basslinie mit Bezifferung trägt das ganze Stück, während die Oberstimmen im Konzertieren abwechseln; die Affektenlehre bindet einen Satz an einen Grundaffekt.",
+      "summaryZH": "带数字的低音线承载全曲，上声部以协奏方式交替；情感学说让一个乐章绑定一种基本情感。",
+      "category": "Musikgeschichte-Epochen",
+      "curriculumTier": "EF",
+      "stage": "grundlagen",
+      "level": 2,
+      "xpReward": 110,
+      "estimatedMinutes": 15,
+      "prerequisites": [
+        "musik-epoche-renaissance-imitationspolyphonie"
+      ],
+      "keyFormulaOrSentence": "Generalbass = Basslinie mit Bezifferung als tragendes Fundament; die Affektenlehre ordnet einem Satz einen einheitlichen Grundaffekt zu.",
+      "commonFallacy": "Den Generalbass für eine ausgeschriebene Begleitung halten - er ist ein Gerüst, das erst ausgeführt werden muss.",
+      "layerIndex": 3,
+      "tags": [
+        "Epoche",
+        "Klausur-Dauerbrenner",
+        "Harmonielehre"
+      ]
+    },
+    {
+      "id": "musik-epoche-wiener-klassik-sinfonie",
+      "fach": "Musik",
+      "titleDE": "Wiener Klassik: Sinfonie, Sonate und Kammermusik",
+      "titleZH": "维也纳古典：交响曲、奏鸣曲与室内乐",
+      "summaryDE": "Die Wiener Klassik formt die Sonatenhauptsatzform zum zentralen Bauplan; das motivische Arbeiten ersetzt die barocke Fortspinnung.",
+      "summaryZH": "维也纳古典把奏鸣曲式塑造成核心结构蓝图；动机加工取代巴洛克的绵延展开。",
+      "category": "Musikgeschichte-Epochen",
+      "curriculumTier": "EF",
+      "stage": "grundlagen",
+      "level": 2,
+      "xpReward": 115,
+      "estimatedMinutes": 16,
+      "prerequisites": [
+        "musik-epoche-barock-generalbass-affekt"
+      ],
+      "keyFormulaOrSentence": "Die Wiener Klassik macht die Sonatenhauptsatzform zum zentralen Formmodell und ersetzt die barocke Fortspinnung durch motivische Arbeit.",
+      "commonFallacy": "Beethoven nur als Romantiker hören - seine Formarbeit steht noch ganz in der klassischen Tradition.",
+      "layerIndex": 4,
+      "tags": [
+        "Epoche",
+        "Klausur-Dauerbrenner",
+        "Gattung"
+      ]
+    },
+    {
+      "id": "musik-epoche-romantik-ausdrucksharmonik",
+      "fach": "Musik",
+      "titleDE": "Romantik: Ausdrucksharmonik und Kunstlied",
+      "titleZH": "浪漫主义：表现性和声与艺术歌曲",
+      "summaryDE": "Chromatik, erweiterte Kadenzen und häufige Modulationen dehnen die Tonalität; das Klavierlied verschränkt Text und Musik auf engstem Raum.",
+      "summaryZH": "半音化、扩展终止与频繁转调撑开调性；钢琴艺术歌曲在极小篇幅里把诗与乐缠结起来。",
+      "category": "Musikgeschichte-Epochen",
+      "curriculumTier": "Q1",
+      "stage": "vertiefung",
+      "level": 2,
+      "xpReward": 135,
+      "estimatedMinutes": 18,
+      "prerequisites": [
+        "musik-epoche-wiener-klassik-sinfonie"
+      ],
+      "keyFormulaOrSentence": "Chromatisierte Kadenzen, Vorhalte und enharmonische Rückungen erweitern die Tonalität, ohne sie aufzuheben.",
+      "commonFallacy": "Romantik über die Stimmung statt über die Harmonik definieren - das entscheidende Merkmal ist die chromatische Erweiterung.",
+      "layerIndex": 5,
+      "tags": [
+        "Epoche",
+        "AFB-III",
+        "Harmonielehre"
+      ]
+    },
+    {
+      "id": "musik-epoche-impressionismus-klangfarbe",
+      "fach": "Musik",
+      "titleDE": "Impressionismus: Klangfarbe als Formprinzip",
+      "titleZH": "印象主义：音色成为形式要素",
+      "summaryDE": "Ganztonleitern, Pentatonik und parallel geführte Akkorde lösen die kadenzielle Logik; die Klangfarbe wird zum eigenständigen Formmittel.",
+      "summaryZH": "全音阶、五声音阶与平行和弦消解终止逻辑；音色自身上升为独立的形式手段。",
+      "category": "Musikgeschichte-Epochen",
+      "curriculumTier": "Q1",
+      "stage": "vertiefung",
+      "level": 2,
+      "xpReward": 135,
+      "estimatedMinutes": 18,
+      "prerequisites": [
+        "musik-epoche-wiener-klassik-sinfonie"
+      ],
+      "keyFormulaOrSentence": "Ganztonleiter und parallele Mixturen heben die kadenzielle Auflösung auf und machen die Klangfarbe zum autonomen Formelement.",
+      "commonFallacy": "Impressionismus für programmatische Malerei halten - entscheidend ist die Emanzipation der Klangfarbe von der Funktion.",
+      "layerIndex": 5,
+      "tags": [
+        "Epoche",
+        "AFB-III",
+        "Instrumentation"
+      ]
+    },
+    {
+      "id": "musik-epoche-expressionismus-freie-atonalitaet",
+      "fach": "Musik",
+      "titleDE": "Expressionismus: freie Atonalität und Sprechstimme",
+      "titleZH": "表现主义：自由无调性与念唱发声",
+      "summaryDE": "Die freie Atonalität verzichtet auf Grundton und kadenzielle Auflösung; die Sprechstimme verlässt die feste Tonhöhe zugunsten des Sprechens.",
+      "summaryZH": "自由无调性放弃主音与终止解决；念唱发声放弃固定音高而偏向说话。",
+      "category": "Musikgeschichte-Epochen",
+      "curriculumTier": "Q1",
+      "stage": "vertiefung",
+      "level": 2,
+      "xpReward": 140,
+      "estimatedMinutes": 18,
+      "prerequisites": [
+        "musik-epoche-romantik-ausdrucksharmonik",
+        "musik-epoche-impressionismus-klangfarbe"
+      ],
+      "keyFormulaOrSentence": "Freie Atonalität = Verzicht auf Grundton und kadenzielle Auflösung; die Emanzipation der Dissonanz macht sie zum eigenständigen Klang.",
+      "commonFallacy": "Atonalität für tonlose Musik halten - gemeint ist der Verzicht auf eine leittonige Tonart, nicht auf Struktur.",
+      "layerIndex": 6,
+      "tags": [
+        "Epoche",
+        "AFB-III",
+        "Paradigma"
+      ]
+    },
+    {
+      "id": "musik-zwoelftontechnik-reihe",
+      "fach": "Musik",
+      "titleDE": "Zwölftontechnik: Reihe, Umkehrung und Krebs",
+      "titleZH": "十二音技法：音列、倒影与逆行",
+      "summaryDE": "Alle zwölf Töne werden in einer festen Reihe geordnet und nur in ihren vier Grundgestalten verwendet; damit tritt die Reihe an die Stelle der Tonart.",
+      "summaryZH": "十二个音被排成固定音列，仅以四种基本形态使用；音列由此取代了调性。",
+      "category": "Musikgeschichte-Epochen",
+      "curriculumTier": "Q1",
+      "stage": "vertiefung",
+      "level": 3,
+      "xpReward": 155,
+      "estimatedMinutes": 20,
+      "prerequisites": [
+        "musik-epoche-expressionismus-freie-atonalitaet"
+      ],
+      "keyFormulaOrSentence": "Grundgestalt, Umkehrung, Krebs und Krebsumkehrung sind die vier Erscheinungsformen der Reihe; jede erklingt in allen zwölf Transpositionen.",
+      "commonFallacy": "Die Zwölftontechnik für zufällige Atonalität halten - die Reihe ist ein strenges Ordnungssystem.",
+      "layerIndex": 7,
+      "tags": [
+        "Verfahren",
+        "Klausur-Dauerbrenner",
+        "Paradigma"
+      ]
+    },
+    {
+      "id": "musik-jazz-blues-swing-improvisation",
+      "fach": "Musik",
+      "titleDE": "Jazz: Blues, Swing und Improvisation",
+      "titleZH": "爵士：布鲁斯、摇摆与即兴",
+      "summaryDE": "Der Blues liefert ein festes Form- und Harmonieschema, der Swing das rhythmische Fundament; improvisiert wird über vorgegebene Changes.",
+      "summaryZH": "布鲁斯提供固定曲式与和声框架，摇摆提供律动基础；即兴建立在既定和声进行之上。",
+      "category": "Musikgeschichte-Epochen",
+      "curriculumTier": "Q1",
+      "stage": "grundlagen",
+      "level": 2,
+      "xpReward": 130,
+      "estimatedMinutes": 16,
+      "prerequisites": [
+        "musik-epoche-barock-generalbass-affekt"
+      ],
+      "keyFormulaOrSentence": "Improvisiert wird über vorgegebenen Changes; der Blues folgt zwölf Takten mit den Hauptstufen I - IV - I - V - I.",
+      "commonFallacy": "Improvisation für Regellosigkeit halten - sie ist ein Gestalten innerhalb eines vorgegebenen Harmoniemodells.",
+      "layerIndex": 4,
+      "tags": [
+        "Epoche",
+        "Gattung",
+        "Rezeption"
+      ]
+    },
+    {
+      "id": "musik-pop-rock-songstruktur-produktion",
+      "fach": "Musik",
+      "titleDE": "Pop und Rock: Songstruktur und Produktion",
+      "titleZH": "流行与摇滚：歌曲结构与制作",
+      "summaryDE": "Pop-Songs bauen auf wiederkehrenden Bausteinen wie Strophe, Refrain und Bridge; die Produktion selbst wird zum kompositorischen Mittel.",
+      "summaryZH": "流行歌曲由主歌、副歌、桥段等反复模块构成；制作本身成为作曲手段。",
+      "category": "Musikgeschichte-Epochen",
+      "curriculumTier": "Q2",
+      "stage": "grundlagen",
+      "level": 2,
+      "xpReward": 165,
+      "estimatedMinutes": 18,
+      "prerequisites": [
+        "musik-jazz-blues-swing-improvisation"
+      ],
+      "keyFormulaOrSentence": "Die Form entsteht aus wiederkehrenden Bausteinen wie Strophe, Refrain und Bridge; Klangfarbe und Produktion sind Teil der Komposition.",
+      "commonFallacy": "Pop für formlos halten - die Wiederkehr des Refrains ist ein strenges Formprinzip.",
+      "layerIndex": 5,
+      "tags": [
+        "Gattung",
+        "Medien",
+        "Rezeption"
+      ]
+    },
+    {
+      "id": "musik-klangvorstellungen-epochenvergleich",
+      "fach": "Musik",
+      "titleDE": "Klangvorstellungen im Epochenvergleich",
+      "titleZH": "跨时代音响想象的对比",
+      "summaryDE": "Jede Epoche hat eine eigene Klangvorstellung, die Besetzung, Textur und Harmonik prägt; erst der Vergleich macht Stilmerkmale sichtbar.",
+      "summaryZH": "每个时代都有自成一体的音响想象，塑造编制、织体与和声；唯有对比才让风格特征显形。",
+      "category": "Musikgeschichte-Epochen",
+      "curriculumTier": "Q2",
+      "stage": "synthese",
+      "level": 3,
+      "xpReward": 175,
+      "estimatedMinutes": 22,
+      "prerequisites": [
+        "musik-epoche-barock-generalbass-affekt",
+        "musik-epoche-romantik-ausdrucksharmonik",
+        "musik-epoche-impressionismus-klangfarbe"
+      ],
+      "keyFormulaOrSentence": "Barock: durchbrochener Generalbasssatz - Klassik: motivisch durchgebildeter Satz - Romantik: chromatisch erweiterte Klangfläche.",
+      "commonFallacy": "Epochen an einzelnen Instrumenten festmachen - die Klangvorstellung betrifft das ganze Verhältnis von Satz, Besetzung und Harmonie.",
+      "layerIndex": 6,
+      "tags": [
+        "Epoche",
+        "AFB-III",
+        "Interpretation"
+      ]
+    },
+    {
+      "id": "musik-gattungsmerkmale-historischer-kontext",
+      "fach": "Musik",
+      "titleDE": "Gattungsmerkmale im historisch-gesellschaftlichen Kontext",
+      "titleZH": "历史社会语境中的体裁特征",
+      "summaryDE": "Gattungen sind historisch entstanden und an Institutionen gebunden; ihre Merkmale erklären sich aus der Funktion, die sie für ein Publikum erfüllen.",
+      "summaryZH": "体裁历史地生成并绑定于机构；其特征需从它对特定听众承担的功能来解释。",
+      "category": "Musikgeschichte-Epochen",
+      "curriculumTier": "Q2",
+      "stage": "synthese",
+      "level": 3,
+      "xpReward": 180,
+      "estimatedMinutes": 24,
+      "prerequisites": [
+        "musik-zwoelftontechnik-reihe",
+        "musik-jazz-blues-swing-improvisation",
+        "musik-pop-rock-songstruktur-produktion"
+      ],
+      "keyFormulaOrSentence": "Gattungsmerkmale sind nicht technische Zufälle, sondern Ergebnis der Institution, für die eine Gattung geschrieben wurde.",
+      "commonFallacy": "Gattungen als reine Formlisten behandeln - ohne die Institution fehlt die Begründung der Merkmale.",
+      "layerIndex": 8,
+      "tags": [
+        "Gattung",
+        "AFB-III",
+        "Kontext"
+      ]
+    },
+    {
+      "id": "musik-historische-auffuehrungspraxis",
+      "fach": "Musik",
+      "titleDE": "Historische Aufführungspraxis und Quellenkritik",
+      "titleZH": "历史演奏实践与史料批判",
+      "summaryDE": "Historische Aufführungspraxis rekonstruiert Klangideal, Tempo und Artikulation aus Quellen; die Quellenkritik prüft deren Aussagekraft und Überlieferungsweg.",
+      "summaryZH": "历史演奏实践从史料重建音色理想、速度与分句；史料批判检验其证据力与流传路径。",
+      "category": "Musikgeschichte-Epochen",
+      "curriculumTier": "Uni_Prep",
+      "stage": "synthese",
+      "level": 3,
+      "xpReward": 185,
+      "estimatedMinutes": 26,
+      "prerequisites": [
+        "musik-klangvorstellungen-epochenvergleich",
+        "musik-gattungsmerkmale-historischer-kontext",
+        "musik-epoche-expressionismus-freie-atonalitaet"
+      ],
+      "keyFormulaOrSentence": "Historische Aufführungspraxis rekonstruiert Klangideal und Artikulation aus Quellen; jede Quelle ist auf Entstehung und Funktion zu prüfen.",
+      "commonFallacy": "Die Partitur für die vollständige Information halten - Tempo, Artikulation und Besetzung stehen oft nur in Nebenquellen.",
+      "layerIndex": 9,
+      "tags": [
+        "Quelle",
+        "Uni-Prep",
+        "Interpretation"
+      ]
+    },
+    {
+      "id": "musik-gehoerbildung-parameter",
+      "fach": "Musik",
+      "titleDE": "Gehörbildung: Parameter hören und benennen",
+      "titleZH": "听觉训练：分辨并命名音乐参数",
+      "summaryDE": "Musik wird hörend in die Parameter Melodik, Rhythmik, Harmonik, Dynamik und Klangfarbe zerlegt; erst die Benennung macht den Eindruck prüfbar.",
+      "summaryZH": "听辨时把音乐拆成旋律、节奏、和声、力度与音色五个参数；只有命名才使印象可检验。",
+      "category": "Werkanalyse",
+      "curriculumTier": "Sek_I",
+      "stage": "einfuehrung",
+      "level": 1,
+      "xpReward": 70,
+      "estimatedMinutes": 10,
+      "prerequisites": [
+        "musik-rhythmus-takt-metrum",
+        "musik-instrumentenkunde-gruppen"
+      ],
+      "keyFormulaOrSentence": "Ich höre ... (Parameter). Das wirkt ... , weil ... (Fachbegriff).",
+      "commonFallacy": "Beim Eindruck stehen bleiben und den Parameter nicht benennen - ohne Fachbegriff gibt es keine Punkte.",
+      "layerIndex": 1,
+      "tags": [
+        "Verfahren",
+        "Basiswissen",
+        "Gehoerbildung"
+      ]
+    },
+    {
+      "id": "musik-partitur-klavierauszug-lesen",
+      "fach": "Musik",
+      "titleDE": "Partitur- und Klavierauszuglesen",
+      "titleZH": "总谱与钢琴缩编谱的读法",
+      "summaryDE": "Die Partitur ordnet die Instrumente übereinander, der Klavierauszug fasst die Orchesterstimmen auf zwei Systemen zusammen; beide geben unterschiedliche Informationen.",
+      "summaryZH": "总谱把各乐器纵向排列，钢琴缩编谱把乐队声部压缩到两行；两者提供的信息不同。",
+      "category": "Werkanalyse",
+      "curriculumTier": "Sek_I",
+      "stage": "einfuehrung",
+      "level": 1,
+      "xpReward": 70,
+      "estimatedMinutes": 10,
+      "prerequisites": [
+        "musik-notenlehre-notenschluessel",
+        "musik-instrumentenkunde-gruppen"
+      ],
+      "keyFormulaOrSentence": "Die Partitur ordnet die Instrumente von oben nach unten; der Klavierauszug fasst die Orchesterstimmen auf zwei Systemen zusammen.",
+      "commonFallacy": "Den Klavierauszug für eine vollständige Vorlage halten - Besetzung und Klangfarbe sind dort verdichtet.",
+      "layerIndex": 1,
+      "tags": [
+        "Verfahren",
+        "Quelle",
+        "Notation"
+      ]
+    },
+    {
+      "id": "musik-rhythmusdiktat-taktarten",
+      "fach": "Musik",
+      "titleDE": "Rhythmusdiktat und Taktarten",
+      "titleZH": "节奏听写与拍号判定",
+      "summaryDE": "Beim Rhythmusdiktat wird zuerst das Metrum festgelegt, dann werden Dauern und Pausen notiert; Synkopen und Auftakte sind die häufigsten Fehlerquellen.",
+      "summaryZH": "节奏听写先确定节拍网格，再记录时值与休止；切分与弱起是常见错误源。",
+      "category": "Werkanalyse",
+      "curriculumTier": "Sek_I",
+      "stage": "einfuehrung",
+      "level": 1,
+      "xpReward": 75,
+      "estimatedMinutes": 10,
+      "prerequisites": [
+        "musik-rhythmus-takt-metrum",
+        "musik-intervalle-bestimmung"
+      ],
+      "keyFormulaOrSentence": "Erst das Metrum festlegen, dann Dauern und Pausen notieren; Auftakt und Synkope sind gesondert zu kennzeichnen.",
+      "commonFallacy": "Ohne festgelegtes Metrum notieren - dadurch verschieben sich alle Taktgrenzen.",
+      "layerIndex": 2,
+      "tags": [
+        "Verfahren",
+        "Basiswissen",
+        "Gehoerbildung"
+      ]
+    },
+    {
+      "id": "musik-analyse-hoerprotokoll-methode",
+      "fach": "Musik",
+      "titleDE": "Hörprotokoll: Methode der strukturierten Analyse",
+      "titleZH": "听觉记录法：结构化分析的步骤",
+      "summaryDE": "Das Hörprotokoll trennt Beschreibung, Analyse und Deutung; jeder Befund wird mit Taktangabe und Parameter belegt.",
+      "summaryZH": "听觉记录分离描述、分析与诠释；每条发现都以小节位置与参数为证据。",
+      "category": "Werkanalyse",
+      "curriculumTier": "EF",
+      "stage": "grundlagen",
+      "level": 1,
+      "xpReward": 95,
+      "estimatedMinutes": 14,
+      "prerequisites": [
+        "musik-gehoerbildung-parameter",
+        "musik-rhythmus-takt-metrum"
+      ],
+      "keyFormulaOrSentence": "Beschreibung - Analyse - Deutung: jeder Befund wird mit Taktangabe und Parameter belegt.",
+      "commonFallacy": "Beschreibung und Deutung vermischen - erst die belegte Analyse trägt ein Urteil.",
+      "layerIndex": 2,
+      "tags": [
+        "Verfahren",
+        "Klausur-Methode",
+        "Rezeption"
+      ]
+    },
+    {
+      "id": "musik-motivverarbeitung-krebs-umkehrung",
+      "fach": "Musik",
+      "titleDE": "Motivverarbeitung: Krebs, Umkehrung und Abspaltung",
+      "titleZH": "动机加工：逆行、倒影与剥离",
+      "summaryDE": "Ein Motiv kann rhythmisch verändert, gespiegelt, rückwärts gelesen oder in Teile zerlegt werden; die Abspaltung treibt die Entwicklung am stärksten.",
+      "summaryZH": "动机可被改变节奏、倒影、逆行或拆成片段；剥离对展开的推动最强。",
+      "category": "Werkanalyse",
+      "curriculumTier": "EF",
+      "stage": "grundlagen",
+      "level": 2,
+      "xpReward": 105,
+      "estimatedMinutes": 15,
+      "prerequisites": [
+        "musik-motiv-begriff"
+      ],
+      "keyFormulaOrSentence": "Umkehrung = Spiegelung der Intervallrichtung, Krebs = rückwärtige Lesart, Abspaltung = Verwendung eines Teilmotivs.",
+      "commonFallacy": "Krebs und Umkehrung verwechseln - der Krebs dreht die Reihenfolge, die Umkehrung die Richtung.",
+      "layerIndex": 2,
+      "tags": [
+        "Verfahren",
+        "Klausur-Dauerbrenner",
+        "Motiv"
+      ]
+    },
+    {
+      "id": "musik-melodische-analyse-phrasierung",
+      "fach": "Musik",
+      "titleDE": "Melodische Analyse und Phrasierung",
+      "titleZH": "旋律分析与乐句划分",
+      "summaryDE": "Melodien werden nach Ambitus, Schwerpunkttönen und Bewegungsrichtung beschrieben; die Phrasierung zeigt, wo ein Gedanke endet.",
+      "summaryZH": "旋律按音域、支点音与进行方向描述；分句显示一个乐思在哪里结束。",
+      "category": "Werkanalyse",
+      "curriculumTier": "EF",
+      "stage": "grundlagen",
+      "level": 2,
+      "xpReward": 110,
+      "estimatedMinutes": 15,
+      "prerequisites": [
+        "musik-periode-satzbau",
+        "musik-intervalle-bestimmung"
+      ],
+      "keyFormulaOrSentence": "Melodische Analyse erfasst Ambitus, Richtung, Schwerpunkttöne und Phrasengrenzen; der höchste Ton markiert oft den Spannungshöhepunkt.",
+      "commonFallacy": "Die Phrasengrenze mit dem Taktstrich gleichsetzen - Phrasen können den Takt überspielen.",
+      "layerIndex": 3,
+      "tags": [
+        "Verfahren",
+        "Formanalyse",
+        "Interpretation"
+      ]
+    },
+    {
+      "id": "musik-harmonische-analyse-modulation",
+      "fach": "Musik",
+      "titleDE": "Harmonische Analyse und Modulation",
+      "titleZH": "和声分析与转调判定",
+      "summaryDE": "Die harmonische Analyse bestimmt Akkorde, Funktionen und Kadenzen; eine Modulation wird erst dann behauptet, wenn die neue Tonika bestätigt ist.",
+      "summaryZH": "和声分析判定和弦、功能与终止；只有新主音被确认后，才能称为转调。",
+      "category": "Werkanalyse",
+      "curriculumTier": "Q1",
+      "stage": "vertiefung",
+      "level": 2,
+      "xpReward": 135,
+      "estimatedMinutes": 16,
+      "prerequisites": [
+        "musik-funktionsharmonik-stufen",
+        "musik-kadenz-harmonielehre"
+      ],
+      "keyFormulaOrSentence": "Eine Modulation liegt erst vor, wenn die neue Tonika durch eine eigene Kadenz bestätigt ist.",
+      "commonFallacy": "Jeden fremden Akkord für eine Modulation halten - chromatische Rückungen bleiben oft innerhalb der Tonart.",
+      "layerIndex": 5,
+      "tags": [
+        "Verfahren",
+        "Klausur-Dauerbrenner",
+        "Harmonielehre"
+      ]
+    },
+    {
+      "id": "musik-beethoven-sinfonie-5-motiv",
+      "fach": "Musik",
+      "titleDE": "Beethoven, Sinfonie Nr. 5: die motivische Keimzelle",
+      "titleZH": "贝多芬第五交响曲：动机胚芽的贯穿",
+      "summaryDE": "Der Satz baut auf einem viertönigen Kernmotiv; aus seiner rhythmischen Prägnanz und dem Terzschritt entwickelt sich das ganze Allegro.",
+      "summaryZH": "整个乐章建立在一个四音核心动机上；其节奏尖锐性与三度音程支撑起整个快板。",
+      "category": "Werkanalyse",
+      "curriculumTier": "EF",
+      "stage": "vertiefung",
+      "level": 2,
+      "xpReward": 120,
+      "estimatedMinutes": 18,
+      "prerequisites": [
+        "musik-motivverarbeitung-krebs-umkehrung",
+        "musik-sonatenhauptsatzform"
+      ],
+      "keyFormulaOrSentence": "Das viertönige Kernmotiv prägt den ganzen Satz; seine rhythmische Zuspitzung und der Terzschritt tragen die Entwicklung.",
+      "commonFallacy": "Das Werk über die Stimmung deuten statt über die Verarbeitung des Motivs - Punkte bringt nur der Nachweis der Technik.",
+      "layerIndex": 6,
+      "tags": [
+        "Werk",
+        "Klausur-Dauerbrenner",
+        "Schwerpunkt-2026",
+        "Motiv"
+      ]
+    },
+    {
+      "id": "musik-klangfarbe-instrumentation-analyse",
+      "fach": "Musik",
+      "titleDE": "Klangfarbe und Instrumentation als Analysekategorie",
+      "titleZH": "音色与配器作为分析范畴",
+      "summaryDE": "Instrumentation wird beschrieben als Frage, wer was spielt und wie sich Klänge mischen; Klangwechsel markieren häufig Formgrenzen.",
+      "summaryZH": "配器分析追问谁演奏什么、音色如何融合；音色变换常标示形式边界。",
+      "category": "Werkanalyse",
+      "curriculumTier": "Q1",
+      "stage": "vertiefung",
+      "level": 2,
+      "xpReward": 130,
+      "estimatedMinutes": 16,
+      "prerequisites": [
+        "musik-instrumentenkunde-gruppen",
+        "musik-partitur-klavierauszug-lesen"
+      ],
+      "keyFormulaOrSentence": "Instrumentationsanalyse fragt: welches Instrument spielt welche Stimme, und wie mischt sich der Klang?",
+      "commonFallacy": "Den Klangwechsel für zufällig halten - er markiert meist einen Formabschnitt.",
+      "layerIndex": 2,
+      "tags": [
+        "Verfahren",
+        "Instrumentation",
+        "Formanalyse"
+      ]
+    },
+    {
+      "id": "musik-werkanalyse-sinfoniesatz-formteile",
+      "fach": "Musik",
+      "titleDE": "Formteile des Sinfoniesatzes bestimmen",
+      "titleZH": "判定交响乐章的形式段落",
+      "summaryDE": "Formteile werden über Themeneinsätze, Tonarten und Zäsuren bestimmt; die Tonart des Seitensatzes verrät, ob Exposition oder Reprise vorliegt.",
+      "summaryZH": "形式段落靠主题进入、调性与停顿判定；副部所处调性揭示当前是呈示部还是再现部。",
+      "category": "Werkanalyse",
+      "curriculumTier": "Q1",
+      "stage": "vertiefung",
+      "level": 2,
+      "xpReward": 140,
+      "estimatedMinutes": 18,
+      "prerequisites": [
+        "musik-sonatenhauptsatzform",
+        "musik-harmonische-analyse-modulation"
+      ],
+      "keyFormulaOrSentence": "Der Seitensatz erscheint in der Exposition in der Dominante, in der Reprise in der Tonika - daran unterscheide ich die Abschnitte.",
+      "commonFallacy": "Die Reprise für eine bloße Wiederholung halten - sie verändert die Tonartenrelation und damit den Formverlauf.",
+      "layerIndex": 6,
+      "tags": [
+        "Verfahren",
+        "Klausur-Dauerbrenner",
+        "Formanalyse"
+      ]
+    },
+    {
+      "id": "musik-motivisch-thematische-arbeit",
+      "fach": "Musik",
+      "titleDE": "Motivisch-thematische Arbeit",
+      "titleZH": "动机-主题性加工",
+      "summaryDE": "Ein thematischer Gedanke wird in seine Bestandteile zerlegt und neu zusammengesetzt; die Durchführung lebt von dieser Arbeit, nicht von neuen Themen.",
+      "summaryZH": "主题乐思被拆解为构件再重新组合；展开部正靠这种工作而非新主题获得动力。",
+      "category": "Werkanalyse",
+      "curriculumTier": "Q1",
+      "stage": "vertiefung",
+      "level": 3,
+      "xpReward": 150,
+      "estimatedMinutes": 20,
+      "prerequisites": [
+        "musik-motivverarbeitung-krebs-umkehrung",
+        "musik-beethoven-sinfonie-5-motiv",
+        "musik-sonatenhauptsatzform"
+      ],
+      "keyFormulaOrSentence": "Motivisch-thematische Arbeit zerlegt das Thema in Bestandteile und setzt sie neu zusammen; die Durchführung entfaltet es, statt neues Material zu bringen.",
+      "commonFallacy": "In der Durchführung nach neuen Themen suchen - sie verarbeitet vorhandenes Material.",
+      "layerIndex": 7,
+      "tags": [
+        "Verfahren",
+        "AFB-III",
+        "Schwerpunkt-2026",
+        "Motiv"
+      ]
+    },
+    {
+      "id": "musik-paradigmenwechsel-musik-20-jahrhundert",
+      "fach": "Musik",
+      "titleDE": "Paradigmenwechsel in der Musik des 20. Jahrhunderts",
+      "titleZH": "二十世纪音乐的范式转换",
+      "summaryDE": "Ein Paradigmenwechsel liegt vor, wenn die Grundannahmen des Komponierens selbst wechseln; Stilwandel bleibt dagegen innerhalb des alten Rahmens.",
+      "summaryZH": "范式转换指作曲的根本前提本身被替换；风格演变则仍停留在旧框架之内。",
+      "category": "Werkanalyse",
+      "curriculumTier": "Q2",
+      "stage": "synthese",
+      "level": 3,
+      "xpReward": 175,
+      "estimatedMinutes": 24,
+      "prerequisites": [
+        "musik-zwoelftontechnik-reihe",
+        "musik-epoche-expressionismus-freie-atonalitaet",
+        "musik-motivisch-thematische-arbeit"
+      ],
+      "keyFormulaOrSentence": "Ein Paradigmenwechsel liegt vor, wenn nicht der Stil, sondern die Grundannahmen des Komponierens selbst ausgetauscht werden.",
+      "commonFallacy": "Jeden Stilwechsel für einen Paradigmenwechsel ausgeben - entscheidend ist der Austausch der Grundannahmen.",
+      "layerIndex": 8,
+      "tags": [
+        "Modell",
+        "AFB-III",
+        "Schwerpunkt-2026",
+        "Paradigma"
+      ]
+    },
+    {
+      "id": "musik-vergleich-zweier-interpretationen",
+      "fach": "Musik",
+      "titleDE": "Vergleich zweier Interpretationen",
+      "titleZH": "两个演绎版本的对比",
+      "summaryDE": "Interpretationen werden über Tempo, Artikulation, Klangbalance und Phrasierung verglichen; die Abweichungen zeigen, welche Entscheidungen der Notentext offen lässt.",
+      "summaryZH": "从速度、分句、音色平衡与乐句处理比较演绎；差异揭示乐谱留下了哪些决策空间。",
+      "category": "Werkanalyse",
+      "curriculumTier": "Q2",
+      "stage": "synthese",
+      "level": 3,
+      "xpReward": 175,
+      "estimatedMinutes": 22,
+      "prerequisites": [
+        "musik-motivisch-thematische-arbeit",
+        "musik-klangfarbe-instrumentation-analyse",
+        "musik-analyse-hoerprotokoll-methode"
+      ],
+      "keyFormulaOrSentence": "Verglichen werden Tempo, Artikulation, Klangbalance und Phrasierung; die Abweichungen zeigen, was der Notentext offen lässt.",
+      "commonFallacy": "Eine Interpretation für die einzig richtige halten - der Notentext lässt einen Spielraum, der erst die Deutung ausmacht.",
+      "layerIndex": 8,
+      "tags": [
+        "Interpretation",
+        "AFB-III",
+        "Hoerbeispiel"
+      ]
+    },
+    {
+      "id": "musik-schenkeranalyse-schichtenlehre",
+      "fach": "Musik",
+      "titleDE": "Schenker-Analyse: Schichtenlehre und Ursatz",
+      "titleZH": "申克分析：层次理论与基本结构",
+      "summaryDE": "Die Schenker-Analyse reduziert einen Satz schrittweise auf einen Ursatz aus Urlinie und Bassbrechung; alle Zwischenschichten bleiben auf diesen Kern bezogen.",
+      "summaryZH": "申克分析把乐曲逐层还原为由基本线条与低音分解构成的基本结构；所有中间层次都指向该核心。",
+      "category": "Werkanalyse",
+      "curriculumTier": "Uni_Prep",
+      "stage": "synthese",
+      "level": 3,
+      "xpReward": 190,
+      "estimatedMinutes": 26,
+      "prerequisites": [
+        "musik-funktionsharmonik-riemann",
+        "musik-melodische-analyse-phrasierung",
+        "musik-werkanalyse-sinfoniesatz-formteile"
+      ],
+      "keyFormulaOrSentence": "Der Ursatz besteht aus Urlinie als absteigender Linie zur Terz, Quinte oder Oktave und Bassbrechung I - V - I.",
+      "commonFallacy": "Die Reduktion für den erklingenden Satz halten - sie ist ein analytisches Konstrukt, kein Höreindruck.",
+      "layerIndex": 7,
+      "tags": [
+        "Modell",
+        "Uni-Prep",
+        "Harmonielehre"
+      ]
+    },
+    {
+      "id": "musik-funktionskontexte-alltag",
+      "fach": "Musik",
+      "titleDE": "Musik im Alltag: Funktionen und Anlässe",
+      "titleZH": "日常生活中的音乐：功能与场合",
+      "summaryDE": "Musik begleitet im Alltag bestimmte Anlässe und erfüllt dort eine Aufgabe: sie strukturiert Zeit, stiftet Zugehörigkeit oder reguliert Stimmung.",
+      "summaryZH": "日常音乐伴随特定场合并承担任务：组织时间、建立归属感或调节情绪。",
+      "category": "Musik-und-Kontext",
+      "curriculumTier": "Sek_I",
+      "stage": "einfuehrung",
+      "level": 1,
+      "xpReward": 65,
+      "estimatedMinutes": 8,
+      "prerequisites": [
+        "musik-instrumentenkunde-gruppen"
+      ],
+      "keyFormulaOrSentence": "Musik wird nach ihrem Verwendungszweck beschrieben: Anlass - Funktion - musikalische Mittel.",
+      "commonFallacy": "Musik im Alltag für zweckfreie Kunst halten - jede Verwendung legt eine Funktion fest.",
+      "layerIndex": 1,
+      "tags": [
+        "Kontext",
+        "Basiswissen",
+        "Rezeption"
+      ]
+    },
+    {
+      "id": "musik-ritual-und-zeremonielle-musik",
+      "fach": "Musik",
+      "titleDE": "Ritual- und Zeremonialmusik",
+      "titleZH": "仪式与典礼音乐",
+      "summaryDE": "In Ritualen markiert Musik den Ablauf und bindet die Anwesenden an eine gemeinsame Ordnung; ihre Wirkung beruht auf Wiederholbarkeit und Vorhersehbarkeit.",
+      "summaryZH": "仪式中音乐标记流程并把在场者绑定到共同秩序；其效力来自可重复与可预期。",
+      "category": "Musik-und-Kontext",
+      "curriculumTier": "EF",
+      "stage": "einfuehrung",
+      "level": 1,
+      "xpReward": 90,
+      "estimatedMinutes": 12,
+      "prerequisites": [
+        "musik-funktionskontexte-alltag"
+      ],
+      "keyFormulaOrSentence": "Zeremonialmusik markiert den Ablauf des Rituals und bindet die Teilnehmenden an eine gemeinsame Ordnung.",
+      "commonFallacy": "Ritualmusik nach ästhetischen Kriterien beurteilen - ihr Maßstab ist die Funktion, nicht der Kunstanspruch.",
+      "layerIndex": 2,
+      "tags": [
+        "Kontext",
+        "Gattung",
+        "Rezeption"
+      ]
+    },
+    {
+      "id": "musik-wirkungsabsicht-vs-wirkung",
+      "fach": "Musik",
+      "titleDE": "Wirkungsabsicht und tatsächliche Wirkung",
+      "titleZH": "效果意图与实际效果之辨",
+      "summaryDE": "Die Wirkungsabsicht ist das geplante Ziel des Produzenten, die Wirkung das, was beim Hörer tatsächlich eintritt; beide können auseinanderfallen.",
+      "summaryZH": "效果意图是制作者的预定目标，实际效果是听者身上真正发生的反应；二者可能分离。",
+      "category": "Musik-und-Kontext",
+      "curriculumTier": "EF",
+      "stage": "grundlagen",
+      "level": 1,
+      "xpReward": 95,
+      "estimatedMinutes": 12,
+      "prerequisites": [
+        "musik-funktionskontexte-alltag"
+      ],
+      "keyFormulaOrSentence": "Ich unterscheide zwischen der Wirkungsabsicht des Produzenten und der tatsächlichen Wirkung beim Hörer.",
+      "commonFallacy": "Die Absicht mit der Wirkung gleichsetzen - dieselbe Struktur kann in einem anderen Kontext anders wirken.",
+      "layerIndex": 2,
+      "tags": [
+        "Definition",
+        "AFB-III",
+        "Kontext"
+      ]
+    },
+    {
+      "id": "musik-stereotype-klischees-musik",
+      "fach": "Musik",
+      "titleDE": "Musikalische Stereotype und Klischees",
+      "titleZH": "音乐刻板印象与陈词滥调",
+      "summaryDE": "Stereotype wirken, weil Hörer eine Konvention teilen; Klischees sind dieselben Muster, abgenutzt durch übermäßige Wiederholung.",
+      "summaryZH": "刻板套路之所以有效，是因为听者共享同一惯例；陈词滥调则是被过度重复磨损的同一套路。",
+      "category": "Musik-und-Kontext",
+      "curriculumTier": "EF",
+      "stage": "grundlagen",
+      "level": 1,
+      "xpReward": 100,
+      "estimatedMinutes": 14,
+      "prerequisites": [
+        "musik-wirkungsabsicht-vs-wirkung"
+      ],
+      "keyFormulaOrSentence": "Ein Stereotyp wirkt nur, weil Hörer die Konvention teilen; das Klischee ist dasselbe Muster nach übermäßigem Gebrauch.",
+      "commonFallacy": "Stereotype für Naturtatsachen halten - sie funktionieren nur als geteiltes Wissen einer Hörgemeinschaft.",
+      "layerIndex": 3,
+      "tags": [
+        "Definition",
+        "Klausur-Dauerbrenner",
+        "Kontext"
+      ]
+    },
+    {
+      "id": "musik-film-und-werbemusik",
+      "fach": "Musik",
+      "titleDE": "Filmmusik und Werbemusik",
+      "titleZH": "电影音乐与广告音乐",
+      "summaryDE": "Filmmusik steuert, wie eine Szene verstanden wird, Werbemusik zielt auf Erinnerung und Sympathie; beide arbeiten mit denselben Parametern wie autonome Musik.",
+      "summaryZH": "电影音乐操控对场景的理解，广告音乐追求记忆与好感；两者使用的参数与自律音乐相同。",
+      "category": "Musik-und-Kontext",
+      "curriculumTier": "Q1",
+      "stage": "grundlagen",
+      "level": 2,
+      "xpReward": 130,
+      "estimatedMinutes": 16,
+      "prerequisites": [
+        "musik-ritual-und-zeremonielle-musik",
+        "musik-wirkungsabsicht-vs-wirkung"
+      ],
+      "keyFormulaOrSentence": "Filmmusik und Werbemusik sind nicht dekorativ, sondern bedeutungskonstituierend: sie entscheiden mit, was das Bild bedeutet.",
+      "commonFallacy": "Filmmusik für bloße Untermalung halten - sie stellt Bedeutung erst her.",
+      "layerIndex": 3,
+      "tags": [
+        "Kontext",
+        "Klausur-Dauerbrenner",
+        "Schwerpunkt-2026",
+        "Medien"
+      ]
+    },
+    {
+      "id": "musik-diegese-nichtdiegetische-musik",
+      "fach": "Musik",
+      "titleDE": "Diegetische und nicht-diegetische Musik",
+      "titleZH": "叙事内与非叙事内音乐",
+      "summaryDE": "Diegetische Musik gehört zur erzählten Welt und ist für die Figuren hörbar, nicht-diegetische Musik erreicht allein das Publikum.",
+      "summaryZH": "叙事内音乐属于故事世界、角色也能听见；非叙事内音乐只抵达观众。",
+      "category": "Musik-und-Kontext",
+      "curriculumTier": "Q1",
+      "stage": "grundlagen",
+      "level": 2,
+      "xpReward": 135,
+      "estimatedMinutes": 16,
+      "prerequisites": [
+        "musik-film-und-werbemusik"
+      ],
+      "keyFormulaOrSentence": "Diegetische Musik hören auch die Figuren; nicht-diegetische Musik richtet sich allein an das Publikum.",
+      "commonFallacy": "Die Unterscheidung für nebensächlich halten - sie entscheidet darüber, wie die Musik gedeutet werden darf.",
+      "layerIndex": 4,
+      "tags": [
+        "Definition",
+        "Klausur-Dauerbrenner",
+        "Medien"
+      ]
+    },
+    {
+      "id": "musik-leitmotiv-filmmusik",
+      "fach": "Musik",
+      "titleDE": "Leitmotivtechnik im Film",
+      "titleZH": "电影中的主导动机技法",
+      "summaryDE": "Ein Leitmotiv ist an eine Figur, ein Objekt oder eine Idee gebunden; seine Wiederkehr erinnert, kommentiert und verbindet weit auseinanderliegende Szenen.",
+      "summaryZH": "主导动机绑定于某个人物、物件或观念；其复现唤起记忆、作出评注并串联远隔的场景。",
+      "category": "Musik-und-Kontext",
+      "curriculumTier": "Q1",
+      "stage": "vertiefung",
+      "level": 2,
+      "xpReward": 140,
+      "estimatedMinutes": 18,
+      "prerequisites": [
+        "musik-diegese-nichtdiegetische-musik"
+      ],
+      "keyFormulaOrSentence": "Ein Leitmotiv ist an Figur, Ort oder Idee gebunden; seine Wiederkehr erinnert und kommentiert, ohne dass ein Wort fällt.",
+      "commonFallacy": "Jede wiederkehrende Melodie ein Leitmotiv nennen - nötig ist die feste Bindung an eine Bedeutung.",
+      "layerIndex": 5,
+      "tags": [
+        "Verfahren",
+        "Motiv",
+        "Medien"
+      ]
+    },
+    {
+      "id": "musik-werbemusik-soundlogo-ohrwurm",
+      "fach": "Musik",
+      "titleDE": "Werbemusik: Sound Logo und Ohrwurm",
+      "titleZH": "广告音乐：声音商标与记忆钩",
+      "summaryDE": "Das Sound Logo verknüpft eine Marke mit einer kurzen Klangfigur; der Ohrwurm sichert Wiedererkennung, der Emotionstransfer überträgt Gefühle auf das Produkt.",
+      "summaryZH": "声音商标把品牌与短小音型绑定；记忆钩保证识别度，情绪迁移把好感转移到产品上。",
+      "category": "Musik-und-Kontext",
+      "curriculumTier": "Q1",
+      "stage": "grundlagen",
+      "level": 2,
+      "xpReward": 135,
+      "estimatedMinutes": 16,
+      "prerequisites": [
+        "musik-film-und-werbemusik"
+      ],
+      "keyFormulaOrSentence": "Das Sound Logo bindet die Marke an eine kurze Klangfigur; der Emotionstransfer überträgt die ausgelöste Stimmung auf das Produkt.",
+      "commonFallacy": "Werbemusik für beliebig halten - Melodik, Tempo und Klangfarbe werden gezielt auf die Zielgruppe zugeschnitten.",
+      "layerIndex": 4,
+      "tags": [
+        "Kontext",
+        "Medien",
+        "Rezeption"
+      ]
+    },
+    {
+      "id": "musik-wahrnehmungssteuerung-mechanismen",
+      "fach": "Musik",
+      "titleDE": "Wahrnehmungssteuerung durch Musik",
+      "titleZH": "通过音乐进行的感知操控",
+      "summaryDE": "Musik steuert Wahrnehmung über Semantisierung, Emotionalisierung, Strukturierung, Erwartungssteuerung und Perspektivierung.",
+      "summaryZH": "音乐通过意义赋予、情绪着色、结构划分、期待操控与视角引导来操控感知。",
+      "category": "Musik-und-Kontext",
+      "curriculumTier": "Q2",
+      "stage": "vertiefung",
+      "level": 3,
+      "xpReward": 170,
+      "estimatedMinutes": 22,
+      "prerequisites": [
+        "musik-leitmotiv-filmmusik",
+        "musik-werbemusik-soundlogo-ohrwurm",
+        "musik-stereotype-klischees-musik"
+      ],
+      "keyFormulaOrSentence": "Wahrnehmungssteuerung geschieht durch Semantisierung, Emotionalisierung, Strukturierung, Erwartungssteuerung und Perspektivierung.",
+      "commonFallacy": "Von der Wirkung auf die Absicht schließen - dieselbe Stelle kann anders gemeint als verstanden sein.",
+      "layerIndex": 6,
+      "tags": [
+        "Modell",
+        "AFB-III",
+        "Schwerpunkt-2026",
+        "Medien"
+      ]
+    },
+    {
+      "id": "musik-politische-musik-hymne-protest",
+      "fach": "Musik",
+      "titleDE": "Politische Musik: Hymne, Protest und Propaganda",
+      "titleZH": "政治音乐：颂歌、抗议与宣传",
+      "summaryDE": "Politische Musik bindet musikalische Mittel an kollektive Ziele; Hymne und Propagandalied setzen auf Einstimmigkeit und Wiederholbarkeit, Protestmusik auf Zitat und Verfremdung.",
+      "summaryZH": "政治音乐把音乐手段绑定到集体目标；颂歌与宣传歌依赖齐唱与可重复，抗议音乐则用引用与陌生化。",
+      "category": "Musik-und-Kontext",
+      "curriculumTier": "Q2",
+      "stage": "vertiefung",
+      "level": 2,
+      "xpReward": 165,
+      "estimatedMinutes": 20,
+      "prerequisites": [
+        "musik-wirkungsabsicht-vs-wirkung",
+        "musik-stereotype-klischees-musik"
+      ],
+      "keyFormulaOrSentence": "Politische Musik bindet musikalische Mittel an kollektive Ziele; der Protest arbeitet häufig mit Zitat und Verfremdung.",
+      "commonFallacy": "Politische Musik nur am Text messen - die musikalische Gestaltung trägt die Wirkung mit.",
+      "layerIndex": 4,
+      "tags": [
+        "Kontext",
+        "AFB-III",
+        "Rezeption"
+      ]
+    },
+    {
+      "id": "musik-musikindustrie-streaming-algorithmus",
+      "fach": "Musik",
+      "titleDE": "Musikwirtschaft und Streaming-Algorithmen",
+      "titleZH": "音乐产业与流媒体算法",
+      "summaryDE": "Plattformen bestimmen über Reihenfolge und Sichtbarkeit; das Leitkriterium ist die Verweildauer, nicht die aufführungsästhetische Qualität.",
+      "summaryZH": "平台决定顺序与可见度；主导判据是停留时长，而非演奏美学意义上的质量。",
+      "category": "Musik-und-Kontext",
+      "curriculumTier": "Uni_Prep",
+      "stage": "synthese",
+      "level": 3,
+      "xpReward": 180,
+      "estimatedMinutes": 24,
+      "prerequisites": [
+        "musik-stereotype-klischees-musik",
+        "musik-werbemusik-soundlogo-ohrwurm"
+      ],
+      "keyFormulaOrSentence": "Plattformen optimieren Verweildauer, nicht Werkqualität; damit verschiebt sich, was als gelungen gilt.",
+      "commonFallacy": "Die Plattform für ein neutrales Verteilungsmedium halten - ihre Reihenfolge ist selbst eine Formvorgabe.",
+      "layerIndex": 5,
+      "tags": [
+        "Kontext",
+        "Uni-Prep",
+        "Medien"
+      ]
+    },
+    {
+      "id": "musik-sinfonische-dichtung-programmmusik",
+      "fach": "Musik",
+      "titleDE": "Sinfonische Dichtung und Programmmusik",
+      "titleZH": "交响诗与标题音乐",
+      "summaryDE": "Programmmusik bindet instrumentale Form an ein außermusikalisches Sujet; die sinfonische Dichtung verdichtet das zu einem einsätzigen Orchesterwerk.",
+      "summaryZH": "标题音乐把器乐形式绑定到非音乐题材；交响诗将其压缩为单乐章管弦乐作品。",
+      "category": "Musik-und-Kontext",
+      "curriculumTier": "Q2",
+      "stage": "vertiefung",
+      "level": 3,
+      "xpReward": 170,
+      "estimatedMinutes": 20,
+      "prerequisites": [
+        "musik-epoche-romantik-ausdrucksharmonik",
+        "musik-diegese-nichtdiegetische-musik"
+      ],
+      "keyFormulaOrSentence": "Programmmusik verknüpft instrumentale Form mit einem außermusikalischen Sujet; die sinfonische Dichtung ist ihre einsätzige Orchesterform.",
+      "commonFallacy": "Programmmusik als bloße Nachahmung von Geräuschen lesen - entscheidend ist die formbildende Funktion des Programms.",
+      "layerIndex": 6,
+      "tags": [
+        "Gattung",
+        "AFB-III",
+        "Kontext"
+      ]
+    },
+    {
+      "id": "musik-musik-in-ausseren-kontexten",
+      "fach": "Musik",
+      "titleDE": "Musik in außermusikalischen Kontexten",
+      "titleZH": "非音乐语境中的音乐",
+      "summaryDE": "Musik in außermusikalischen Kontexten steht zwischen Autonomie und Dienstfunktion; die Analyse muss beide Seiten gewichten, statt Funktionen aufzuzählen.",
+      "summaryZH": "非音乐语境中的音乐处于自律与服务功能之间；分析须权衡两端，而非罗列功能。",
+      "category": "Musik-und-Kontext",
+      "curriculumTier": "Q2",
+      "stage": "synthese",
+      "level": 3,
+      "xpReward": 180,
+      "estimatedMinutes": 24,
+      "prerequisites": [
+        "musik-wahrnehmungssteuerung-mechanismen",
+        "musik-politische-musik-hymne-protest",
+        "musik-sinfonische-dichtung-programmmusik"
+      ],
+      "keyFormulaOrSentence": "Musik in außermusikalischen Kontexten steht zwischen Autonomie und Dienstfunktion; zu beurteilen ist das Verhältnis beider.",
+      "commonFallacy": "Die Funktionsliste für die Analyse halten - verlangt ist die Gewichtung von Autonomie und Dienstfunktion.",
+      "layerIndex": 7,
+      "tags": [
+        "Kontext",
+        "AFB-III",
+        "Interpretation"
+      ]
+    },
+    {
+      "id": "musik-popmusikforschung-cultural-studies",
+      "fach": "Musik",
+      "titleDE": "Popmusikforschung und Cultural Studies",
+      "titleZH": "流行音乐研究与文化研究",
+      "summaryDE": "Popmusikforschung liest Musik als Teil kultureller Praktiken; sie fragt nach Szenen, Medien und Aneignung statt nach Werkautonomie.",
+      "summaryZH": "流行音乐研究把音乐读作文化实践的一部分；追问场景、媒介与挪用，而非作品自律性。",
+      "category": "Musik-und-Kontext",
+      "curriculumTier": "Uni_Prep",
+      "stage": "synthese",
+      "level": 3,
+      "xpReward": 190,
+      "estimatedMinutes": 26,
+      "prerequisites": [
+        "musik-wahrnehmungssteuerung-mechanismen",
+        "musik-musikindustrie-streaming-algorithmus",
+        "musik-musik-in-ausseren-kontexten"
+      ],
+      "keyFormulaOrSentence": "Popmusikforschung untersucht Musik als kulturelle Praxis: Szene, Medien und Aneignung treten an die Stelle der Werkautonomie.",
+      "commonFallacy": "Pop mit den Kategorien autonomer Kunst messen - der Gegenstand verlangt andere Analysekategorien.",
+      "layerIndex": 8,
+      "tags": [
+        "Kontext",
+        "Uni-Prep",
+        "Medien"
+      ]
+    },
+    {
+      "id": "musik-ausdrucksgeste-und-konvention",
+      "fach": "Musik",
+      "titleDE": "Ausdrucksgeste vor dem Hintergrund musikalischer Konventionen",
+      "titleZH": "音乐惯例背景下的表达姿态",
+      "summaryDE": "Eine Ausdrucksgeste wirkt nicht durch sich selbst, sondern weil sie eine geteilte Konvention aufruft; die Analyse nennt Geste und Konvention getrennt.",
+      "summaryZH": "表达姿态并非自身生效，而是唤起了共享惯例；分析须分别指认姿态与惯例。",
+      "category": "Aesthetik-und-Reflexion",
+      "curriculumTier": "EF",
+      "stage": "einfuehrung",
+      "level": 2,
+      "xpReward": 100,
+      "estimatedMinutes": 14,
+      "prerequisites": [
+        "musik-motiv-begriff",
+        "musik-rhythmus-takt-metrum"
+      ],
+      "keyFormulaOrSentence": "Ich höre eine Ausdrucksgeste; sie wirkt als Ausdruck, weil sie auf eine geteilte musikalische Konvention verweist.",
+      "commonFallacy": "Den Ausdruck für eine Eigenschaft der Töne halten - er entsteht aus der Konvention, die der Hörer kennt.",
+      "layerIndex": 2,
+      "tags": [
+        "Definition",
+        "Klausur-Dauerbrenner",
+        "Aesthetik"
+      ]
+    },
+    {
+      "id": "musik-seufzer-lamento-figur",
+      "fach": "Musik",
+      "titleDE": "Seufzer- und Lamento-Figur als Ausdruckskonvention",
+      "titleZH": "叹息动机与哀歌音型",
+      "summaryDE": "Der Seufzer ist ein fallender kleiner Sekundschritt, oft punktiert; als Figur ist er konventionalisiert und kann zitiert, gesteigert oder ironisiert werden.",
+      "summaryZH": "叹息动机是下行小二度、常带附点；作为修辞格它已被惯例化，可被引用、强化或反讽。",
+      "category": "Aesthetik-und-Reflexion",
+      "curriculumTier": "EF",
+      "stage": "grundlagen",
+      "level": 1,
+      "xpReward": 105,
+      "estimatedMinutes": 14,
+      "prerequisites": [
+        "musik-ausdrucksgeste-und-konvention"
+      ],
+      "keyFormulaOrSentence": "Der Seufzer ist ein fallender kleiner Sekundschritt, häufig punktiert; als Figur ist er konventionalisiert und zitierfähig.",
+      "commonFallacy": "Die Figur für unmittelbaren Gefühlsausdruck halten - sie ist eine Konvention, die auch gebrochen eingesetzt werden kann.",
+      "layerIndex": 3,
+      "tags": [
+        "Definition",
+        "Quelle",
+        "Aesthetik"
+      ]
+    },
+    {
+      "id": "musik-aesthetische-konzeptionen-vergleich",
+      "fach": "Musik",
+      "titleDE": "Ästhetische Konzeptionen: Autonomie und Heteronomie",
+      "titleZH": "美学构想：自律与他律",
+      "summaryDE": "Ästhetische Konzeptionen sind systematische Aussagen darüber, was Musik sein soll; Autonomieästhetik und Heteronomieästhetik sind ihre beiden Pole.",
+      "summaryZH": "美学构想是关于音乐应当如何的系统主张；自律美学与他律美学构成两极。",
+      "category": "Aesthetik-und-Reflexion",
+      "curriculumTier": "Q1",
+      "stage": "vertiefung",
+      "level": 3,
+      "xpReward": 150,
+      "estimatedMinutes": 20,
+      "prerequisites": [
+        "musik-seufzer-lamento-figur",
+        "musik-epoche-romantik-ausdrucksharmonik"
+      ],
+      "keyFormulaOrSentence": "Autonomieästhetik: Musik folgt allein ihren eigenen Formgesetzen; Heteronomieästhetik: ihre Bedeutung kommt von außen.",
+      "commonFallacy": "Eine Konzeption für die Beschreibung eines Werkes halten - sie ist ein Programm, das am Werk erst geprüft werden muss.",
+      "layerIndex": 6,
+      "tags": [
+        "Modell",
+        "AFB-III",
+        "Aesthetik"
+      ]
+    },
+    {
+      "id": "musik-gebrauchsmusik-vs-autonome-kunst",
+      "fach": "Musik",
+      "titleDE": "Gebrauchsmusik und autonome Kunst",
+      "titleZH": "实用音乐与自律艺术",
+      "summaryDE": "Gebrauchsmusik wird für einen Anlass geschrieben und an ihrer Funktion gemessen; autonome Kunst beansprucht, ohne äußeren Zweck zu gelten.",
+      "summaryZH": "实用音乐为特定场合而写并以功能衡量；自律艺术则主张不服务于外在目的。",
+      "category": "Aesthetik-und-Reflexion",
+      "curriculumTier": "Q1",
+      "stage": "vertiefung",
+      "level": 2,
+      "xpReward": 145,
+      "estimatedMinutes": 18,
+      "prerequisites": [
+        "musik-epoche-romantik-ausdrucksharmonik",
+        "musik-wirkungsabsicht-vs-wirkung"
+      ],
+      "keyFormulaOrSentence": "Gebrauchsmusik wird an ihrer Funktion gemessen, autonome Kunst an ihrer inneren Stimmigkeit.",
+      "commonFallacy": "Die Unterscheidung für eine Wertung halten - sie beschreibt zunächst nur, woran ein Werk gemessen wird.",
+      "layerIndex": 6,
+      "tags": [
+        "Definition",
+        "AFB-III",
+        "Aesthetik"
+      ]
+    },
+    {
+      "id": "musik-sprachcharakter-musik-semiotik",
+      "fach": "Musik",
+      "titleDE": "Sprachcharakter der Musik",
+      "titleZH": "音乐的语言性",
+      "summaryDE": "Musik besitzt Syntax, Artikulation und rhetorische Figuren wie Sprache, aber keine feste Referenz; ihre Bedeutung bleibt mehrdeutig.",
+      "summaryZH": "音乐像语言一样有句法、断句与修辞格，却没有固定指称；其意义始终多义。",
+      "category": "Aesthetik-und-Reflexion",
+      "curriculumTier": "Q2",
+      "stage": "synthese",
+      "level": 3,
+      "xpReward": 170,
+      "estimatedMinutes": 22,
+      "prerequisites": [
+        "musik-aesthetische-konzeptionen-vergleich",
+        "musik-motiv-begriff"
+      ],
+      "keyFormulaOrSentence": "Musik hat Syntax, Artikulation und Figuren wie Sprache, aber keine feste Referenz - ihre Bedeutung bleibt mehrdeutig.",
+      "commonFallacy": "Musik für eine Sprache mit Wörtern halten - es fehlt die eindeutige Referenz.",
+      "layerIndex": 7,
+      "tags": [
+        "Modell",
+        "AFB-III",
+        "Semiotik"
+      ]
+    },
+    {
+      "id": "musik-musikbegriff-und-bedeutung",
+      "fach": "Musik",
+      "titleDE": "Musikbegriff und Bedeutung: Was kann Musik sagen?",
+      "titleZH": "音乐概念与意义：音乐能说什么",
+      "summaryDE": "Der Musikbegriff legt fest, was überhaupt als Musik gilt; die Bedeutungsfrage klärt, ob Musik etwas aussagt oder nur strukturell wirkt.",
+      "summaryZH": "音乐概念界定什么才算音乐；意义问题澄清音乐是有所陈述还是仅以结构起作用。",
+      "category": "Aesthetik-und-Reflexion",
+      "curriculumTier": "Q2",
+      "stage": "synthese",
+      "level": 3,
+      "xpReward": 175,
+      "estimatedMinutes": 24,
+      "prerequisites": [
+        "musik-sprachcharakter-musik-semiotik",
+        "musik-gebrauchsmusik-vs-autonome-kunst",
+        "musik-ausdrucksgeste-und-konvention"
+      ],
+      "keyFormulaOrSentence": "Die Frage lautet nicht, was Musik bedeutet, sondern unter welchem Musikbegriff sie überhaupt als bedeutend gelten kann.",
+      "commonFallacy": "Die Bedeutungsfrage für empirisch entscheidbar halten - sie ist eine Begriffs- und Geltungsfrage.",
+      "layerIndex": 8,
+      "tags": [
+        "Axiom",
+        "AFB-III",
+        "Aesthetik"
+      ]
+    },
+    {
+      "id": "musik-absolute-musik-und-programmmusik-streit",
+      "fach": "Musik",
+      "titleDE": "Der Streit um absolute Musik und Programmmusik",
+      "titleZH": "绝对音乐与标题音乐之争",
+      "summaryDE": "Der Streit betrifft nicht Vorlieben, sondern die Geltungsfrage: ob Musik ihre Form aus sich selbst oder aus einem außermusikalischen Programm begründet.",
+      "summaryZH": "这场争论不是口味之别，而是效力来源之争：音乐的形式依据来自自身还是来自外部标题。",
+      "category": "Aesthetik-und-Reflexion",
+      "curriculumTier": "Q2",
+      "stage": "synthese",
+      "level": 3,
+      "xpReward": 175,
+      "estimatedMinutes": 22,
+      "prerequisites": [
+        "musik-aesthetische-konzeptionen-vergleich",
+        "musik-sinfonische-dichtung-programmmusik"
+      ],
+      "keyFormulaOrSentence": "Der Streit betrifft die Geltungsfrage: begründet Musik ihre Form aus sich selbst oder aus einem außermusikalischen Programm?",
+      "commonFallacy": "Den Streit für erledigt halten - er strukturiert bis heute die Bewertung instrumentaler Musik.",
+      "layerIndex": 7,
+      "tags": [
+        "Aesthetik",
+        "AFB-III",
+        "Interpretation"
+      ]
+    },
+    {
+      "id": "musik-analyse-als-deutung-hermeneutik",
+      "fach": "Musik",
+      "titleDE": "Musikalische Analyse als Deutung",
+      "titleZH": "音乐分析作为诠释",
+      "summaryDE": "Analyse ist kein neutrales Zerlegen, sondern wählt Kategorien und damit Deutungen; die Wahl der Kategorien muss begründet werden.",
+      "summaryZH": "分析并非中性的拆解，它选择范畴因而选择诠释；范畴选择本身必须被论证。",
+      "category": "Aesthetik-und-Reflexion",
+      "curriculumTier": "Uni_Prep",
+      "stage": "synthese",
+      "level": 3,
+      "xpReward": 185,
+      "estimatedMinutes": 26,
+      "prerequisites": [
+        "musik-sprachcharakter-musik-semiotik",
+        "musik-vergleich-zweier-interpretationen",
+        "musik-klangfarbe-instrumentation-analyse"
+      ],
+      "keyFormulaOrSentence": "Analyse ist nicht neutral: die Wahl der Analysekategorien ist selbst eine Deutung und muss begründet werden.",
+      "commonFallacy": "Das Analyseergebnis für objektiv halten - schon die gewählten Kategorien präjudizieren das Resultat.",
+      "layerIndex": 9,
+      "tags": [
+        "Modell",
+        "Uni-Prep",
+        "Interpretation"
+      ]
+    },
+    {
+      "id": "musik-musiksoziologie-adorno",
+      "fach": "Musik",
+      "titleDE": "Musiksoziologie: Adorno und die Kulturindustrie",
+      "titleZH": "音乐社会学：阿多诺与文化工业",
+      "summaryDE": "Adorno unterscheidet autonome Kunst von der Ware; die Kulturindustrie standardisiert und macht das Besondere zur Wiederholung.",
+      "summaryZH": "阿多诺区分自律艺术与商品；文化工业把特殊标准化为重复。",
+      "category": "Aesthetik-und-Reflexion",
+      "curriculumTier": "Uni_Prep",
+      "stage": "synthese",
+      "level": 3,
+      "xpReward": 185,
+      "estimatedMinutes": 24,
+      "prerequisites": [
+        "musik-gebrauchsmusik-vs-autonome-kunst",
+        "musik-musikindustrie-streaming-algorithmus",
+        "musik-wahrnehmungssteuerung-mechanismen"
+      ],
+      "keyFormulaOrSentence": "Adorno unterscheidet autonome Kunst von der Ware; die Kulturindustrie standardisiert das Besondere zur Wiederholung.",
+      "commonFallacy": "Adornos These für eine empirische Beschreibung halten - sie ist ein normativer Maßstab.",
+      "layerIndex": 7,
+      "tags": [
+        "Modell",
+        "Uni-Prep",
+        "Kontext"
+      ]
+    },
+    {
+      "id": "musik-musikalische-semiotik-zeichentheorie",
+      "fach": "Musik",
+      "titleDE": "Musikalische Semiotik und Zeichentheorie",
+      "titleZH": "音乐符号学与记号理论",
+      "summaryDE": "Musik wird als Zeichensystem beschrieben; zu unterscheiden sind Zeichen, deren Bedeutung konventionell, ikonisch oder indexikalisch begründet ist.",
+      "summaryZH": "音乐被描述为符号系统；须区分其意义来自约定、图像相似还是索引关联的符号。",
+      "category": "Aesthetik-und-Reflexion",
+      "curriculumTier": "Uni_Prep",
+      "stage": "synthese",
+      "level": 3,
+      "xpReward": 185,
+      "estimatedMinutes": 24,
+      "prerequisites": [
+        "musik-sprachcharakter-musik-semiotik",
+        "musik-musikbegriff-und-bedeutung",
+        "musik-aesthetische-konzeptionen-vergleich"
+      ],
+      "keyFormulaOrSentence": "Musikalische Zeichen wirken konventionell, ikonisch oder indexikalisch - die Unterscheidung klärt, worauf ihre Bedeutung beruht.",
+      "commonFallacy": "Alle musikalischen Zeichen für konventionell halten - ikonische und indexikalische Beziehungen funktionieren anders.",
+      "layerIndex": 9,
+      "tags": [
+        "Modell",
+        "Uni-Prep",
+        "Semiotik"
+      ]
+    },
+    {
+      "id": "musik-musikwissenschaft-methoden-uni",
+      "fach": "Musik",
+      "titleDE": "Methoden der Musikwissenschaft",
+      "titleZH": "音乐学方法体系",
+      "summaryDE": "Historische, systematische und ethnologische Methoden greifen ineinander; die Wahl der Methode entscheidet, welche Fragen überhaupt beantwortbar werden.",
+      "summaryZH": "历史、系统与民族音乐学方法相互交织；方法的选择决定哪些问题原则上可答。",
+      "category": "Aesthetik-und-Reflexion",
+      "curriculumTier": "Uni_Prep",
+      "stage": "synthese",
+      "level": 3,
+      "xpReward": 195,
+      "estimatedMinutes": 28,
+      "prerequisites": [
+        "musik-funktionsharmonik-riemann",
+        "musik-schenkeranalyse-schichtenlehre",
+        "musik-musikalische-semiotik-zeichentheorie",
+        "musik-analyse-als-deutung-hermeneutik"
+      ],
+      "keyFormulaOrSentence": "Historische, systematische und ethnologische Methoden ergänzen sich; die Methode bestimmt, welche Frage beantwortbar ist.",
+      "commonFallacy": "Eine Methode für die einzig wissenschaftliche halten - jede beantwortet nur ihren eigenen Fragetyp.",
+      "layerIndex": 10,
+      "tags": [
+        "Verfahren",
+        "Uni-Prep",
+        "Quelle"
+      ]
+    },
+    {
+      "id": "musik-geschlechterforschung-rollenbilder",
+      "fach": "Musik",
+      "titleDE": "Geschlechterforschung: Rollenbilder in der Musik",
+      "titleZH": "性别研究：音乐中的角色图景",
+      "summaryDE": "Rollenbilder werden über Libretto, Stimmlage, Klangtopos und Zuschreibung vermittelt; die Analyse fragt zusätzlich, wer komponieren und wer nur darstellen durfte.",
+      "summaryZH": "角色图景通过剧本、声部音域、音响套式与归属建构传递；分析还须追问谁被允许创作、谁只被允许演绎。",
+      "category": "Aesthetik-und-Reflexion",
+      "curriculumTier": "Uni_Prep",
+      "stage": "synthese",
+      "level": 3,
+      "xpReward": 185,
+      "estimatedMinutes": 24,
+      "prerequisites": [
+        "musik-gebrauchsmusik-vs-autonome-kunst",
+        "musik-gattungsmerkmale-historischer-kontext",
+        "musik-musiksoziologie-adorno"
+      ],
+      "keyFormulaOrSentence": "Rollenbilder werden über Libretto, Stimmlage, Klangtopos und Zuschreibung vermittelt; zusätzlich zu fragen ist nach den institutionellen Zugängen.",
+      "commonFallacy": "Die Kategorie für eine Zusatzfrage halten - sie betrifft Text, Musik und Institution zugleich.",
+      "layerIndex": 9,
+      "tags": [
+        "Modell",
+        "Uni-Prep",
+        "Gender"
+      ]
+    },
+    {
+      "id": "musik-klausur-synthese-abitur",
+      "fach": "Musik",
+      "titleDE": "Abitur-Synthese: Analyse, Deutung und begründetes Urteil",
+      "titleZH": "高考口试综合：分析、诠释与有据判断",
+      "summaryDE": "Die Prüfungsleistung verbindet Hörbefund, Analyse, Deutung und begründetes Urteil; jede Stufe muss auf der vorigen aufbauen und ausdrücklich benannt werden.",
+      "summaryZH": "考试表现把听觉发现、分析、诠释与有据判断串联起来；每一级都必须建立在前一级之上并被明确命名。",
+      "category": "Aesthetik-und-Reflexion",
+      "curriculumTier": "Q2",
+      "stage": "klausur_praxis",
+      "level": 3,
+      "xpReward": 185,
+      "estimatedMinutes": 28,
+      "prerequisites": [
+        "musik-musikbegriff-und-bedeutung",
+        "musik-musik-in-ausseren-kontexten",
+        "musik-vergleich-zweier-interpretationen",
+        "musik-paradigmenwechsel-musik-20-jahrhundert"
+      ],
+      "keyFormulaOrSentence": "Ich höre ... (Parameter), das wirkt ... , weil ... (Fachbegriff); daraus folgt ... (Deutung), und deshalb beurteile ich ... (Urteil).",
+      "commonFallacy": "Direkt vom Höreindruck zum Urteil springen - ohne belegte Analyse ist das Urteil nicht tragfähig.",
+      "layerIndex": 9,
+      "tags": [
+        "Klausur-Methode",
+        "AFB-III",
+        "Muendliche-Pruefung"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "id": "e-musik-notenlehre-notenschluessel-musik-intervalle-bestimmung",
+      "from": "musik-notenlehre-notenschluessel",
+      "to": "musik-intervalle-bestimmung",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-musik-notenlehre-notenschluessel-musik-dur-moll-tonleiter",
+      "from": "musik-notenlehre-notenschluessel",
+      "to": "musik-dur-moll-tonleiter",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-musik-intervalle-bestimmung-musik-dreiklaenge-umkehrungen",
+      "from": "musik-intervalle-bestimmung",
+      "to": "musik-dreiklaenge-umkehrungen",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-musik-dur-moll-tonleiter-musik-dreiklaenge-umkehrungen",
+      "from": "musik-dur-moll-tonleiter",
+      "to": "musik-dreiklaenge-umkehrungen",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-musik-dreiklaenge-umkehrungen-musik-kadenz-harmonielehre",
+      "from": "musik-dreiklaenge-umkehrungen",
+      "to": "musik-kadenz-harmonielehre",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-musik-rhythmus-takt-metrum-musik-satzarten-homophon-polyphon",
+      "from": "musik-rhythmus-takt-metrum",
+      "to": "musik-satzarten-homophon-polyphon",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-musik-kadenz-harmonielehre-musik-funktionsharmonik-stufen",
+      "from": "musik-kadenz-harmonielehre",
+      "to": "musik-funktionsharmonik-stufen",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-musik-kadenz-harmonielehre-musik-generalbass-bezifferung",
+      "from": "musik-kadenz-harmonielehre",
+      "to": "musik-generalbass-bezifferung",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-musik-rhythmus-takt-metrum-musik-motiv-begriff",
+      "from": "musik-rhythmus-takt-metrum",
+      "to": "musik-motiv-begriff",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-musik-motiv-begriff-musik-periode-satzbau",
+      "from": "musik-motiv-begriff",
+      "to": "musik-periode-satzbau",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-musik-satzarten-homophon-polyphon-musik-periode-satzbau",
+      "from": "musik-satzarten-homophon-polyphon",
+      "to": "musik-periode-satzbau",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-musik-periode-satzbau-musik-sonatenhauptsatzform",
+      "from": "musik-periode-satzbau",
+      "to": "musik-sonatenhauptsatzform",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-musik-funktionsharmonik-stufen-musik-sonatenhauptsatzform",
+      "from": "musik-funktionsharmonik-stufen",
+      "to": "musik-sonatenhauptsatzform",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-musik-satzarten-homophon-polyphon-musik-kontrapunkt-fuge",
+      "from": "musik-satzarten-homophon-polyphon",
+      "to": "musik-kontrapunkt-fuge",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-musik-funktionsharmonik-stufen-musik-erweiterte-harmonik-chromatik",
+      "from": "musik-funktionsharmonik-stufen",
+      "to": "musik-erweiterte-harmonik-chromatik",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-musik-generalbass-bezifferung-musik-erweiterte-harmonik-chromatik",
+      "from": "musik-generalbass-bezifferung",
+      "to": "musik-erweiterte-harmonik-chromatik",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-musik-funktionsharmonik-stufen-musik-funktionsharmonik-riemann",
+      "from": "musik-funktionsharmonik-stufen",
+      "to": "musik-funktionsharmonik-riemann",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-musik-generalbass-bezifferung-musik-funktionsharmonik-riemann",
+      "from": "musik-generalbass-bezifferung",
+      "to": "musik-funktionsharmonik-riemann",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-musik-erweiterte-harmonik-chromatik-musik-funktionsharmonik-riemann",
+      "from": "musik-erweiterte-harmonik-chromatik",
+      "to": "musik-funktionsharmonik-riemann",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-musik-instrumentenkunde-gruppen-musik-epoche-mittelalter-gregorianik",
+      "from": "musik-instrumentenkunde-gruppen",
+      "to": "musik-epoche-mittelalter-gregorianik",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-musik-epoche-mittelalter-gregorianik-musik-epoche-renaissance-imitationspolyphonie",
+      "from": "musik-epoche-mittelalter-gregorianik",
+      "to": "musik-epoche-renaissance-imitationspolyphonie",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-musik-epoche-renaissance-imitationspolyphonie-musik-epoche-barock-generalbass-affekt",
+      "from": "musik-epoche-renaissance-imitationspolyphonie",
+      "to": "musik-epoche-barock-generalbass-affekt",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-musik-epoche-barock-generalbass-affekt-musik-epoche-wiener-klassik-sinfonie",
+      "from": "musik-epoche-barock-generalbass-affekt",
+      "to": "musik-epoche-wiener-klassik-sinfonie",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-musik-epoche-wiener-klassik-sinfonie-musik-epoche-romantik-ausdrucksharmonik",
+      "from": "musik-epoche-wiener-klassik-sinfonie",
+      "to": "musik-epoche-romantik-ausdrucksharmonik",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-musik-epoche-wiener-klassik-sinfonie-musik-epoche-impressionismus-klangfarbe",
+      "from": "musik-epoche-wiener-klassik-sinfonie",
+      "to": "musik-epoche-impressionismus-klangfarbe",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-musik-epoche-romantik-ausdrucksharmonik-musik-epoche-expressionismus-freie-atonalitaet",
+      "from": "musik-epoche-romantik-ausdrucksharmonik",
+      "to": "musik-epoche-expressionismus-freie-atonalitaet",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-musik-epoche-impressionismus-klangfarbe-musik-epoche-expressionismus-freie-atonalitaet",
+      "from": "musik-epoche-impressionismus-klangfarbe",
+      "to": "musik-epoche-expressionismus-freie-atonalitaet",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-musik-epoche-expressionismus-freie-atonalitaet-musik-zwoelftontechnik-reihe",
+      "from": "musik-epoche-expressionismus-freie-atonalitaet",
+      "to": "musik-zwoelftontechnik-reihe",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-musik-epoche-barock-generalbass-affekt-musik-jazz-blues-swing-improvisation",
+      "from": "musik-epoche-barock-generalbass-affekt",
+      "to": "musik-jazz-blues-swing-improvisation",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-musik-jazz-blues-swing-improvisation-musik-pop-rock-songstruktur-produktion",
+      "from": "musik-jazz-blues-swing-improvisation",
+      "to": "musik-pop-rock-songstruktur-produktion",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-musik-epoche-barock-generalbass-affekt-musik-klangvorstellungen-epochenvergleich",
+      "from": "musik-epoche-barock-generalbass-affekt",
+      "to": "musik-klangvorstellungen-epochenvergleich",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-musik-epoche-romantik-ausdrucksharmonik-musik-klangvorstellungen-epochenvergleich",
+      "from": "musik-epoche-romantik-ausdrucksharmonik",
+      "to": "musik-klangvorstellungen-epochenvergleich",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-musik-epoche-impressionismus-klangfarbe-musik-klangvorstellungen-epochenvergleich",
+      "from": "musik-epoche-impressionismus-klangfarbe",
+      "to": "musik-klangvorstellungen-epochenvergleich",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-musik-zwoelftontechnik-reihe-musik-gattungsmerkmale-historischer-kontext",
+      "from": "musik-zwoelftontechnik-reihe",
+      "to": "musik-gattungsmerkmale-historischer-kontext",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-musik-jazz-blues-swing-improvisation-musik-gattungsmerkmale-historischer-kontext",
+      "from": "musik-jazz-blues-swing-improvisation",
+      "to": "musik-gattungsmerkmale-historischer-kontext",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-musik-pop-rock-songstruktur-produktion-musik-gattungsmerkmale-historischer-kontext",
+      "from": "musik-pop-rock-songstruktur-produktion",
+      "to": "musik-gattungsmerkmale-historischer-kontext",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-musik-klangvorstellungen-epochenvergleich-musik-historische-auffuehrungspraxis",
+      "from": "musik-klangvorstellungen-epochenvergleich",
+      "to": "musik-historische-auffuehrungspraxis",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-musik-gattungsmerkmale-historischer-kontext-musik-historische-auffuehrungspraxis",
+      "from": "musik-gattungsmerkmale-historischer-kontext",
+      "to": "musik-historische-auffuehrungspraxis",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-musik-epoche-expressionismus-freie-atonalitaet-musik-historische-auffuehrungspraxis",
+      "from": "musik-epoche-expressionismus-freie-atonalitaet",
+      "to": "musik-historische-auffuehrungspraxis",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-musik-rhythmus-takt-metrum-musik-gehoerbildung-parameter",
+      "from": "musik-rhythmus-takt-metrum",
+      "to": "musik-gehoerbildung-parameter",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-musik-instrumentenkunde-gruppen-musik-gehoerbildung-parameter",
+      "from": "musik-instrumentenkunde-gruppen",
+      "to": "musik-gehoerbildung-parameter",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-musik-notenlehre-notenschluessel-musik-partitur-klavierauszug-lesen",
+      "from": "musik-notenlehre-notenschluessel",
+      "to": "musik-partitur-klavierauszug-lesen",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-musik-instrumentenkunde-gruppen-musik-partitur-klavierauszug-lesen",
+      "from": "musik-instrumentenkunde-gruppen",
+      "to": "musik-partitur-klavierauszug-lesen",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-musik-rhythmus-takt-metrum-musik-rhythmusdiktat-taktarten",
+      "from": "musik-rhythmus-takt-metrum",
+      "to": "musik-rhythmusdiktat-taktarten",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-musik-intervalle-bestimmung-musik-rhythmusdiktat-taktarten",
+      "from": "musik-intervalle-bestimmung",
+      "to": "musik-rhythmusdiktat-taktarten",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-musik-gehoerbildung-parameter-musik-analyse-hoerprotokoll-methode",
+      "from": "musik-gehoerbildung-parameter",
+      "to": "musik-analyse-hoerprotokoll-methode",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-musik-rhythmus-takt-metrum-musik-analyse-hoerprotokoll-methode",
+      "from": "musik-rhythmus-takt-metrum",
+      "to": "musik-analyse-hoerprotokoll-methode",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-musik-motiv-begriff-musik-motivverarbeitung-krebs-umkehrung",
+      "from": "musik-motiv-begriff",
+      "to": "musik-motivverarbeitung-krebs-umkehrung",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-musik-periode-satzbau-musik-melodische-analyse-phrasierung",
+      "from": "musik-periode-satzbau",
+      "to": "musik-melodische-analyse-phrasierung",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-musik-intervalle-bestimmung-musik-melodische-analyse-phrasierung",
+      "from": "musik-intervalle-bestimmung",
+      "to": "musik-melodische-analyse-phrasierung",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-musik-funktionsharmonik-stufen-musik-harmonische-analyse-modulation",
+      "from": "musik-funktionsharmonik-stufen",
+      "to": "musik-harmonische-analyse-modulation",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-musik-kadenz-harmonielehre-musik-harmonische-analyse-modulation",
+      "from": "musik-kadenz-harmonielehre",
+      "to": "musik-harmonische-analyse-modulation",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-musik-motivverarbeitung-krebs-umkehrung-musik-beethoven-sinfonie-5-motiv",
+      "from": "musik-motivverarbeitung-krebs-umkehrung",
+      "to": "musik-beethoven-sinfonie-5-motiv",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-musik-sonatenhauptsatzform-musik-beethoven-sinfonie-5-motiv",
+      "from": "musik-sonatenhauptsatzform",
+      "to": "musik-beethoven-sinfonie-5-motiv",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-musik-instrumentenkunde-gruppen-musik-klangfarbe-instrumentation-analyse",
+      "from": "musik-instrumentenkunde-gruppen",
+      "to": "musik-klangfarbe-instrumentation-analyse",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-musik-partitur-klavierauszug-lesen-musik-klangfarbe-instrumentation-analyse",
+      "from": "musik-partitur-klavierauszug-lesen",
+      "to": "musik-klangfarbe-instrumentation-analyse",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-musik-sonatenhauptsatzform-musik-werkanalyse-sinfoniesatz-formteile",
+      "from": "musik-sonatenhauptsatzform",
+      "to": "musik-werkanalyse-sinfoniesatz-formteile",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-musik-harmonische-analyse-modulation-musik-werkanalyse-sinfoniesatz-formteile",
+      "from": "musik-harmonische-analyse-modulation",
+      "to": "musik-werkanalyse-sinfoniesatz-formteile",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-musik-motivverarbeitung-krebs-umkehrung-musik-motivisch-thematische-arbeit",
+      "from": "musik-motivverarbeitung-krebs-umkehrung",
+      "to": "musik-motivisch-thematische-arbeit",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-musik-beethoven-sinfonie-5-motiv-musik-motivisch-thematische-arbeit",
+      "from": "musik-beethoven-sinfonie-5-motiv",
+      "to": "musik-motivisch-thematische-arbeit",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-musik-sonatenhauptsatzform-musik-motivisch-thematische-arbeit",
+      "from": "musik-sonatenhauptsatzform",
+      "to": "musik-motivisch-thematische-arbeit",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-musik-zwoelftontechnik-reihe-musik-paradigmenwechsel-musik-20-jahrhundert",
+      "from": "musik-zwoelftontechnik-reihe",
+      "to": "musik-paradigmenwechsel-musik-20-jahrhundert",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-musik-epoche-expressionismus-freie-atonalitaet-musik-paradigmenwechsel-musik-20-jahrhundert",
+      "from": "musik-epoche-expressionismus-freie-atonalitaet",
+      "to": "musik-paradigmenwechsel-musik-20-jahrhundert",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-musik-motivisch-thematische-arbeit-musik-paradigmenwechsel-musik-20-jahrhundert",
+      "from": "musik-motivisch-thematische-arbeit",
+      "to": "musik-paradigmenwechsel-musik-20-jahrhundert",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-musik-motivisch-thematische-arbeit-musik-vergleich-zweier-interpretationen",
+      "from": "musik-motivisch-thematische-arbeit",
+      "to": "musik-vergleich-zweier-interpretationen",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-musik-klangfarbe-instrumentation-analyse-musik-vergleich-zweier-interpretationen",
+      "from": "musik-klangfarbe-instrumentation-analyse",
+      "to": "musik-vergleich-zweier-interpretationen",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-musik-analyse-hoerprotokoll-methode-musik-vergleich-zweier-interpretationen",
+      "from": "musik-analyse-hoerprotokoll-methode",
+      "to": "musik-vergleich-zweier-interpretationen",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-musik-funktionsharmonik-riemann-musik-schenkeranalyse-schichtenlehre",
+      "from": "musik-funktionsharmonik-riemann",
+      "to": "musik-schenkeranalyse-schichtenlehre",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-musik-melodische-analyse-phrasierung-musik-schenkeranalyse-schichtenlehre",
+      "from": "musik-melodische-analyse-phrasierung",
+      "to": "musik-schenkeranalyse-schichtenlehre",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-musik-werkanalyse-sinfoniesatz-formteile-musik-schenkeranalyse-schichtenlehre",
+      "from": "musik-werkanalyse-sinfoniesatz-formteile",
+      "to": "musik-schenkeranalyse-schichtenlehre",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-musik-instrumentenkunde-gruppen-musik-funktionskontexte-alltag",
+      "from": "musik-instrumentenkunde-gruppen",
+      "to": "musik-funktionskontexte-alltag",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-musik-funktionskontexte-alltag-musik-ritual-und-zeremonielle-musik",
+      "from": "musik-funktionskontexte-alltag",
+      "to": "musik-ritual-und-zeremonielle-musik",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-musik-funktionskontexte-alltag-musik-wirkungsabsicht-vs-wirkung",
+      "from": "musik-funktionskontexte-alltag",
+      "to": "musik-wirkungsabsicht-vs-wirkung",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-musik-wirkungsabsicht-vs-wirkung-musik-stereotype-klischees-musik",
+      "from": "musik-wirkungsabsicht-vs-wirkung",
+      "to": "musik-stereotype-klischees-musik",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-musik-ritual-und-zeremonielle-musik-musik-film-und-werbemusik",
+      "from": "musik-ritual-und-zeremonielle-musik",
+      "to": "musik-film-und-werbemusik",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-musik-wirkungsabsicht-vs-wirkung-musik-film-und-werbemusik",
+      "from": "musik-wirkungsabsicht-vs-wirkung",
+      "to": "musik-film-und-werbemusik",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-musik-film-und-werbemusik-musik-diegese-nichtdiegetische-musik",
+      "from": "musik-film-und-werbemusik",
+      "to": "musik-diegese-nichtdiegetische-musik",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-musik-diegese-nichtdiegetische-musik-musik-leitmotiv-filmmusik",
+      "from": "musik-diegese-nichtdiegetische-musik",
+      "to": "musik-leitmotiv-filmmusik",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-musik-film-und-werbemusik-musik-werbemusik-soundlogo-ohrwurm",
+      "from": "musik-film-und-werbemusik",
+      "to": "musik-werbemusik-soundlogo-ohrwurm",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-musik-leitmotiv-filmmusik-musik-wahrnehmungssteuerung-mechanismen",
+      "from": "musik-leitmotiv-filmmusik",
+      "to": "musik-wahrnehmungssteuerung-mechanismen",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-musik-werbemusik-soundlogo-ohrwurm-musik-wahrnehmungssteuerung-mechanismen",
+      "from": "musik-werbemusik-soundlogo-ohrwurm",
+      "to": "musik-wahrnehmungssteuerung-mechanismen",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-musik-stereotype-klischees-musik-musik-wahrnehmungssteuerung-mechanismen",
+      "from": "musik-stereotype-klischees-musik",
+      "to": "musik-wahrnehmungssteuerung-mechanismen",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-musik-wirkungsabsicht-vs-wirkung-musik-politische-musik-hymne-protest",
+      "from": "musik-wirkungsabsicht-vs-wirkung",
+      "to": "musik-politische-musik-hymne-protest",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-musik-stereotype-klischees-musik-musik-politische-musik-hymne-protest",
+      "from": "musik-stereotype-klischees-musik",
+      "to": "musik-politische-musik-hymne-protest",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-musik-stereotype-klischees-musik-musik-musikindustrie-streaming-algorithmus",
+      "from": "musik-stereotype-klischees-musik",
+      "to": "musik-musikindustrie-streaming-algorithmus",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-musik-werbemusik-soundlogo-ohrwurm-musik-musikindustrie-streaming-algorithmus",
+      "from": "musik-werbemusik-soundlogo-ohrwurm",
+      "to": "musik-musikindustrie-streaming-algorithmus",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-musik-epoche-romantik-ausdrucksharmonik-musik-sinfonische-dichtung-programmmusik",
+      "from": "musik-epoche-romantik-ausdrucksharmonik",
+      "to": "musik-sinfonische-dichtung-programmmusik",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-musik-diegese-nichtdiegetische-musik-musik-sinfonische-dichtung-programmmusik",
+      "from": "musik-diegese-nichtdiegetische-musik",
+      "to": "musik-sinfonische-dichtung-programmmusik",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-musik-wahrnehmungssteuerung-mechanismen-musik-musik-in-ausseren-kontexten",
+      "from": "musik-wahrnehmungssteuerung-mechanismen",
+      "to": "musik-musik-in-ausseren-kontexten",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-musik-politische-musik-hymne-protest-musik-musik-in-ausseren-kontexten",
+      "from": "musik-politische-musik-hymne-protest",
+      "to": "musik-musik-in-ausseren-kontexten",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-musik-sinfonische-dichtung-programmmusik-musik-musik-in-ausseren-kontexten",
+      "from": "musik-sinfonische-dichtung-programmmusik",
+      "to": "musik-musik-in-ausseren-kontexten",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-musik-wahrnehmungssteuerung-mechanismen-musik-popmusikforschung-cultural-studies",
+      "from": "musik-wahrnehmungssteuerung-mechanismen",
+      "to": "musik-popmusikforschung-cultural-studies",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-musik-musikindustrie-streaming-algorithmus-musik-popmusikforschung-cultural-studies",
+      "from": "musik-musikindustrie-streaming-algorithmus",
+      "to": "musik-popmusikforschung-cultural-studies",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-musik-musik-in-ausseren-kontexten-musik-popmusikforschung-cultural-studies",
+      "from": "musik-musik-in-ausseren-kontexten",
+      "to": "musik-popmusikforschung-cultural-studies",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-musik-motiv-begriff-musik-ausdrucksgeste-und-konvention",
+      "from": "musik-motiv-begriff",
+      "to": "musik-ausdrucksgeste-und-konvention",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-musik-rhythmus-takt-metrum-musik-ausdrucksgeste-und-konvention",
+      "from": "musik-rhythmus-takt-metrum",
+      "to": "musik-ausdrucksgeste-und-konvention",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-musik-ausdrucksgeste-und-konvention-musik-seufzer-lamento-figur",
+      "from": "musik-ausdrucksgeste-und-konvention",
+      "to": "musik-seufzer-lamento-figur",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-musik-seufzer-lamento-figur-musik-aesthetische-konzeptionen-vergleich",
+      "from": "musik-seufzer-lamento-figur",
+      "to": "musik-aesthetische-konzeptionen-vergleich",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-musik-epoche-romantik-ausdrucksharmonik-musik-aesthetische-konzeptionen-vergleich",
+      "from": "musik-epoche-romantik-ausdrucksharmonik",
+      "to": "musik-aesthetische-konzeptionen-vergleich",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-musik-epoche-romantik-ausdrucksharmonik-musik-gebrauchsmusik-vs-autonome-kunst",
+      "from": "musik-epoche-romantik-ausdrucksharmonik",
+      "to": "musik-gebrauchsmusik-vs-autonome-kunst",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-musik-wirkungsabsicht-vs-wirkung-musik-gebrauchsmusik-vs-autonome-kunst",
+      "from": "musik-wirkungsabsicht-vs-wirkung",
+      "to": "musik-gebrauchsmusik-vs-autonome-kunst",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-musik-aesthetische-konzeptionen-vergleich-musik-sprachcharakter-musik-semiotik",
+      "from": "musik-aesthetische-konzeptionen-vergleich",
+      "to": "musik-sprachcharakter-musik-semiotik",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-musik-motiv-begriff-musik-sprachcharakter-musik-semiotik",
+      "from": "musik-motiv-begriff",
+      "to": "musik-sprachcharakter-musik-semiotik",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-musik-sprachcharakter-musik-semiotik-musik-musikbegriff-und-bedeutung",
+      "from": "musik-sprachcharakter-musik-semiotik",
+      "to": "musik-musikbegriff-und-bedeutung",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-musik-gebrauchsmusik-vs-autonome-kunst-musik-musikbegriff-und-bedeutung",
+      "from": "musik-gebrauchsmusik-vs-autonome-kunst",
+      "to": "musik-musikbegriff-und-bedeutung",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-musik-ausdrucksgeste-und-konvention-musik-musikbegriff-und-bedeutung",
+      "from": "musik-ausdrucksgeste-und-konvention",
+      "to": "musik-musikbegriff-und-bedeutung",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-musik-aesthetische-konzeptionen-vergleich-musik-absolute-musik-und-programmmusik-streit",
+      "from": "musik-aesthetische-konzeptionen-vergleich",
+      "to": "musik-absolute-musik-und-programmmusik-streit",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-musik-sinfonische-dichtung-programmmusik-musik-absolute-musik-und-programmmusik-streit",
+      "from": "musik-sinfonische-dichtung-programmmusik",
+      "to": "musik-absolute-musik-und-programmmusik-streit",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-musik-sprachcharakter-musik-semiotik-musik-analyse-als-deutung-hermeneutik",
+      "from": "musik-sprachcharakter-musik-semiotik",
+      "to": "musik-analyse-als-deutung-hermeneutik",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-musik-vergleich-zweier-interpretationen-musik-analyse-als-deutung-hermeneutik",
+      "from": "musik-vergleich-zweier-interpretationen",
+      "to": "musik-analyse-als-deutung-hermeneutik",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-musik-klangfarbe-instrumentation-analyse-musik-analyse-als-deutung-hermeneutik",
+      "from": "musik-klangfarbe-instrumentation-analyse",
+      "to": "musik-analyse-als-deutung-hermeneutik",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-musik-gebrauchsmusik-vs-autonome-kunst-musik-musiksoziologie-adorno",
+      "from": "musik-gebrauchsmusik-vs-autonome-kunst",
+      "to": "musik-musiksoziologie-adorno",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-musik-musikindustrie-streaming-algorithmus-musik-musiksoziologie-adorno",
+      "from": "musik-musikindustrie-streaming-algorithmus",
+      "to": "musik-musiksoziologie-adorno",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-musik-wahrnehmungssteuerung-mechanismen-musik-musiksoziologie-adorno",
+      "from": "musik-wahrnehmungssteuerung-mechanismen",
+      "to": "musik-musiksoziologie-adorno",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-musik-sprachcharakter-musik-semiotik-musik-musikalische-semiotik-zeichentheorie",
+      "from": "musik-sprachcharakter-musik-semiotik",
+      "to": "musik-musikalische-semiotik-zeichentheorie",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-musik-musikbegriff-und-bedeutung-musik-musikalische-semiotik-zeichentheorie",
+      "from": "musik-musikbegriff-und-bedeutung",
+      "to": "musik-musikalische-semiotik-zeichentheorie",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-musik-aesthetische-konzeptionen-vergleich-musik-musikalische-semiotik-zeichentheorie",
+      "from": "musik-aesthetische-konzeptionen-vergleich",
+      "to": "musik-musikalische-semiotik-zeichentheorie",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-musik-funktionsharmonik-riemann-musik-musikwissenschaft-methoden-uni",
+      "from": "musik-funktionsharmonik-riemann",
+      "to": "musik-musikwissenschaft-methoden-uni",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-musik-schenkeranalyse-schichtenlehre-musik-musikwissenschaft-methoden-uni",
+      "from": "musik-schenkeranalyse-schichtenlehre",
+      "to": "musik-musikwissenschaft-methoden-uni",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-musik-musikalische-semiotik-zeichentheorie-musik-musikwissenschaft-methoden-uni",
+      "from": "musik-musikalische-semiotik-zeichentheorie",
+      "to": "musik-musikwissenschaft-methoden-uni",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-musik-analyse-als-deutung-hermeneutik-musik-musikwissenschaft-methoden-uni",
+      "from": "musik-analyse-als-deutung-hermeneutik",
+      "to": "musik-musikwissenschaft-methoden-uni",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-musik-gebrauchsmusik-vs-autonome-kunst-musik-geschlechterforschung-rollenbilder",
+      "from": "musik-gebrauchsmusik-vs-autonome-kunst",
+      "to": "musik-geschlechterforschung-rollenbilder",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-musik-gattungsmerkmale-historischer-kontext-musik-geschlechterforschung-rollenbilder",
+      "from": "musik-gattungsmerkmale-historischer-kontext",
+      "to": "musik-geschlechterforschung-rollenbilder",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-musik-musiksoziologie-adorno-musik-geschlechterforschung-rollenbilder",
+      "from": "musik-musiksoziologie-adorno",
+      "to": "musik-geschlechterforschung-rollenbilder",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-musik-musikbegriff-und-bedeutung-musik-klausur-synthese-abitur",
+      "from": "musik-musikbegriff-und-bedeutung",
+      "to": "musik-klausur-synthese-abitur",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-musik-musik-in-ausseren-kontexten-musik-klausur-synthese-abitur",
+      "from": "musik-musik-in-ausseren-kontexten",
+      "to": "musik-klausur-synthese-abitur",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-musik-vergleich-zweier-interpretationen-musik-klausur-synthese-abitur",
+      "from": "musik-vergleich-zweier-interpretationen",
+      "to": "musik-klausur-synthese-abitur",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-musik-paradigmenwechsel-musik-20-jahrhundert-musik-klausur-synthese-abitur",
+      "from": "musik-paradigmenwechsel-musik-20-jahrhundert",
+      "to": "musik-klausur-synthese-abitur",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-syn-1",
+      "from": "musik-funktionsharmonik-stufen",
+      "to": "musik-generalbass-bezifferung",
+      "type": "synergy",
+      "descriptionZH": "Stufenanalyse und Bezifferung beschreiben denselben Satz aus zwei Richtungen; die eine liest Funktionen, die andere Intervalle."
+    },
+    {
+      "id": "e-syn-2",
+      "from": "musik-periode-satzbau",
+      "to": "musik-sonatenhauptsatzform",
+      "type": "synergy",
+      "descriptionZH": "Die Periode ist die Themeform, die Sonatenhauptsatzform der Formteil, in dem sie steht."
+    },
+    {
+      "id": "e-syn-3",
+      "from": "musik-epoche-romantik-ausdrucksharmonik",
+      "to": "musik-epoche-impressionismus-klangfarbe",
+      "type": "synergy",
+      "descriptionZH": "Beide dehnen die Tonalität, die eine über die Chromatik, die andere über die Klangfläche."
+    },
+    {
+      "id": "e-syn-4",
+      "from": "musik-motivverarbeitung-krebs-umkehrung",
+      "to": "musik-motivisch-thematische-arbeit",
+      "type": "synergy",
+      "descriptionZH": "Die Verarbeitungstechniken sind das Handwerkszeug der motivisch-thematischen Arbeit."
+    },
+    {
+      "id": "e-syn-5",
+      "from": "musik-gehoerbildung-parameter",
+      "to": "musik-rhythmusdiktat-taktarten",
+      "type": "synergy",
+      "descriptionZH": "Parameterhören und Rhythmusdiktat trainieren dieselbe Wahrnehmung an verschiedenen Gegenständen."
+    },
+    {
+      "id": "e-syn-6",
+      "from": "musik-film-und-werbemusik",
+      "to": "musik-werbemusik-soundlogo-ohrwurm",
+      "type": "synergy",
+      "descriptionZH": "Film und Werbung teilen die Parameter, unterscheiden sich aber im Ziel: Szene gegen Marke."
+    },
+    {
+      "id": "e-syn-7",
+      "from": "musik-diegese-nichtdiegetische-musik",
+      "to": "musik-leitmotiv-filmmusik",
+      "type": "synergy",
+      "descriptionZH": "Erst die Diegese-Entscheidung klärt, ob ein Leitmotiv erinnern oder kommentieren darf."
+    },
+    {
+      "id": "e-syn-8",
+      "from": "musik-aesthetische-konzeptionen-vergleich",
+      "to": "musik-gebrauchsmusik-vs-autonome-kunst",
+      "type": "synergy",
+      "descriptionZH": "Die Autonomieästhetik ist der theoretische Grund, auf den sich die Rede von autonomer Kunst stützt."
+    },
+    {
+      "id": "e-syn-9",
+      "from": "musik-sprachcharakter-musik-semiotik",
+      "to": "musik-musikbegriff-und-bedeutung",
+      "type": "synergy",
+      "descriptionZH": "Wer den Sprachcharakter klärt, kann die Frage nach der Bedeutung überhaupt erst stellen."
+    },
+    {
+      "id": "e-syn-10",
+      "from": "musik-intervalle-bestimmung",
+      "to": "musik-dur-moll-tonleiter",
+      "type": "synergy",
+      "descriptionZH": "Intervallgrößen und Tonleiterstufen sind zwei Ansichten desselben Tonmaterials."
+    },
+    {
+      "id": "e-cross-1",
+      "from": "musik-kadenz-harmonielehre",
+      "to": "musik-epoche-barock-generalbass-affekt",
+      "type": "cross_disciplinary",
+      "descriptionZH": "Die Kadenz ist das Gerüst, das der Generalbass im Barock aussetzt und beziffert."
+    },
+    {
+      "id": "e-cross-2",
+      "from": "musik-motivisch-thematische-arbeit",
+      "to": "musik-epoche-romantik-ausdrucksharmonik",
+      "type": "cross_disciplinary",
+      "descriptionZH": "Die motivische Arbeit der Klassik wird in der Romantik mit chromatischer Harmonik aufgeladen."
+    },
+    {
+      "id": "e-cross-3",
+      "from": "musik-epoche-impressionismus-klangfarbe",
+      "to": "musik-klangfarbe-instrumentation-analyse",
+      "type": "cross_disciplinary",
+      "descriptionZH": "Die emanzipierte Klangfarbe der Epoche verlangt eine eigene Analysekategorie."
+    },
+    {
+      "id": "e-cross-4",
+      "from": "musik-stereotype-klischees-musik",
+      "to": "musik-seufzer-lamento-figur",
+      "type": "cross_disciplinary",
+      "descriptionZH": "Die Lamento-Figur ist der älteste Belegfall eines musikalischen Stereotyps."
+    },
+    {
+      "id": "e-cross-5",
+      "from": "musik-wahrnehmungssteuerung-mechanismen",
+      "to": "musik-sprachcharakter-musik-semiotik",
+      "type": "cross_disciplinary",
+      "descriptionZH": "Wahrnehmungssteuerung ist die praktische Kehrseite der Frage, wie Musik überhaupt Zeichen sein kann."
+    },
+    {
+      "id": "e-cross-6",
+      "from": "musik-erweiterte-harmonik-chromatik",
+      "to": "musik-epoche-romantik-ausdrucksharmonik",
+      "type": "cross_disciplinary",
+      "descriptionZH": "Chromatik und Alteration sind die harmonischen Mittel, mit denen die Romantik ihren Ausdruck erzeugt."
+    }
+  ]
+}
