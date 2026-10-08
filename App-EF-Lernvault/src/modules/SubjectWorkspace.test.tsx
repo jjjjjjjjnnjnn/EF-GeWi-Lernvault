@@ -144,4 +144,34 @@ describe("SubjectWorkspace (学科专区/学科主页) 独立测试", () => {
     fireEvent.click(closeBtn);
     expect(screen.queryByText(/概念大卡沉浸速测/i)).toBeNull();
   });
+
+  it("defaults to '所有学科 (ALL)' when currentFach is omitted or 'alle'", () => {
+    render(<SubjectWorkspace lang="zh" />);
+
+    // 默认展示“所有学科”
+    expect(screen.getByText(/所有学科 \(ALL\)/i)).toBeInTheDocument();
+
+    // ALL 胶囊按钮被选中
+    const allBtn = screen.getByRole("button", { name: /ALL/i });
+    expect(allBtn).toHaveAttribute("aria-pressed", "true");
+
+    // 搜索框 placeholder 显示“搜索全库考点”
+    expect(screen.getByPlaceholderText("搜索全库考点...")).toBeInTheDocument();
+  });
+
+  it("switches back to 'alle' when clicking the ALL pill", () => {
+    const handleSubjectChange = vi.fn();
+    render(
+      <SubjectWorkspace
+        currentFach="Mathe"
+        onSubjectChange={handleSubjectChange}
+        lang="zh"
+      />
+    );
+
+    const allBtn = screen.getByRole("button", { name: /ALL/i });
+    fireEvent.click(allBtn);
+    expect(handleSubjectChange).toHaveBeenCalledWith("alle");
+  });
 });
+

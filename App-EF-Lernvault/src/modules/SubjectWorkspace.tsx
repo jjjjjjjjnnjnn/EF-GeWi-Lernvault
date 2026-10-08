@@ -1,5 +1,5 @@
 import React, { useState, useMemo } from "react";
-import { FAECHER, getFach, type FachInfo } from "../fach";
+import { FAECHER, getFach } from "../fach";
 import { repository, type KnowledgeNote, type KnowledgeCard } from "../framework";
 import { SIMULATION_REGISTRY, type SimEntry } from "./laborRegistry";
 import Blocks from "../components/Blocks";
@@ -17,18 +17,34 @@ export interface SubjectWorkspaceProps {
 
 type WorkspaceSubTab = "notes" | "cards" | "sims" | "exam";
 
+export interface DisplayFachInfo {
+  id: string;
+  kurz: string;
+  nameDE: string;
+  nameZH: string;
+}
+
+const ALL_FACH_INFO: DisplayFachInfo = {
+  id: "alle",
+  kurz: "ALL",
+  nameDE: "Alle Fächer",
+  nameZH: "所有学科",
+};
+
 export const SubjectWorkspace: React.FC<SubjectWorkspaceProps> = ({
-  currentFach = "SoWi",
+  currentFach = "alle",
   onSubjectChange,
   onNavigateToTab,
   lang = "zh",
 }) => {
   const de = lang === "de";
+  const isAllFaecher = !currentFach || currentFach.toLowerCase() === "alle";
 
   // 1. 当前选中学科解析
-  const activeFachInfo: FachInfo = useMemo(() => {
-    return getFach(currentFach) || FAECHER[7]; // 默认 SoWi
-  }, [currentFach]);
+  const activeFachInfo: DisplayFachInfo = useMemo(() => {
+    if (isAllFaecher) return ALL_FACH_INFO;
+    return getFach(currentFach) || ALL_FACH_INFO;
+  }, [currentFach, isAllFaecher]);
 
   // 2. 当前子标签页
   const [subTab, setSubTab] = useState<WorkspaceSubTab>("notes");
@@ -38,22 +54,25 @@ export const SubjectWorkspace: React.FC<SubjectWorkspaceProps> = ({
   const allCards: KnowledgeCard[] = useMemo(() => repository.getAllCards(), []);
 
   const subjectNotes = useMemo(() => {
+    if (isAllFaecher) return allNotes;
     return allNotes.filter(
       (n) => n.fach.toLowerCase() === activeFachInfo.id.toLowerCase()
     );
-  }, [allNotes, activeFachInfo.id]);
+  }, [allNotes, activeFachInfo.id, isAllFaecher]);
 
   const subjectCards = useMemo(() => {
+    if (isAllFaecher) return allCards;
     return allCards.filter(
       (c) => c.fach.toLowerCase() === activeFachInfo.id.toLowerCase()
     );
-  }, [allCards, activeFachInfo.id]);
+  }, [allCards, activeFachInfo.id, isAllFaecher]);
 
   const subjectSims: SimEntry[] = useMemo(() => {
+    if (isAllFaecher) return SIMULATION_REGISTRY;
     return SIMULATION_REGISTRY.filter(
       (s) => s.fach.toLowerCase() === activeFachInfo.id.toLowerCase()
     );
-  }, [activeFachInfo.id]);
+  }, [activeFachInfo.id, isAllFaecher]);
 
   // 4. 笔记阅读选定状态
   const [selectedNoteId, setSelectedNoteId] = useState<string | null>(() => {
@@ -67,6 +86,7 @@ export const SubjectWorkspace: React.FC<SubjectWorkspaceProps> = ({
     return subjectNotes.filter(
       (n) =>
         n.thema.toLowerCase().includes(q) ||
+        n.fach.toLowerCase().includes(q) ||
         n.operatoren.some((op) => op.toLowerCase().includes(q)) ||
         n.tags.some((t) => t.toLowerCase().includes(q))
     );
@@ -87,7 +107,10 @@ export const SubjectWorkspace: React.FC<SubjectWorkspaceProps> = ({
   const handleSelectFach = (fachId: string) => {
     onSubjectChange?.(fachId);
     setNoteSearchQuery("");
-    const nextNotes = allNotes.filter((n) => n.fach.toLowerCase() === fachId.toLowerCase());
+    const isNextAll = fachId.toLowerCase() === "alle";
+    const nextNotes = isNextAll
+      ? allNotes
+      : allNotes.filter((n) => n.fach.toLowerCase() === fachId.toLowerCase());
     if (nextNotes.length > 0) {
       setSelectedNoteId(nextNotes[0].id);
     } else {
@@ -128,10 +151,25 @@ export const SubjectWorkspace: React.FC<SubjectWorkspaceProps> = ({
             </div>
           </div>
 
-          {/* 10 门学科药丸横向切换器 */}
+          {/* 学科药丸横向切换器：包含 ALL 所有学科 + 10 门具体学科 */}
           <div className="flex flex-wrap items-center gap-1" role="tablist" aria-label="Fächer">
+            <button
+              type="button"
+              onClick={() => handleSelectFach("alle")}
+              aria-pressed={isAllFaecher}
+              className={`rounded px-2.5 py-1 font-mono text-xs transition-colors cursor-pointer ${
+                isAllFaecher
+                  ? "bg-[var(--ink)] text-[var(--paper)] font-medium"
+                  : "border border-[var(--line)] bg-[var(--surface)] text-[var(--ink)] hover:border-[var(--gray)]"
+              }`}
+            >
+              <span>ALL</span>
+              <span className="hidden xl:inline ml-1 font-sans opacity-80 text-[11px]">
+                {de ? "Alle Fächer" : "所有学科"}
+              </span>
+            </button>
             {FAECHER.map((f) => {
-              const isSelected = f.id.toLowerCase() === activeFachInfo.id.toLowerCase();
+              const isSelected = !isAllFaecher && f.id.toLowerCase() === activeFachInfo.id.toLowerCase();
               return (
                 <button
                   key={f.id}
@@ -247,7 +285,15 @@ export const SubjectWorkspace: React.FC<SubjectWorkspaceProps> = ({
                   type="text"
                   value={noteSearchQuery}
                   onChange={(e) => setNoteSearchQuery(e.target.value)}
-                  placeholder={de ? "Thema filtern..." : "搜索本学科考点..."}
+                  placeholder={
+                    de
+                      ? isAllFaecher
+                        ? "Alle Notizen durchsuchen..."
+                        : "Thema filtern..."
+                      : isAllFaecher
+                      ? "搜索全库考点..."
+                      : "搜索本学科考点..."
+                  }
                   className="w-full rounded border border-[var(--line)] bg-[var(--paper)] px-2 py-1 font-sans text-xs text-[var(--ink)] placeholder:text-[var(--gray)] focus:border-[var(--accent)] focus:outline-none"
                 />
                 <button
@@ -285,11 +331,18 @@ export const SubjectWorkspace: React.FC<SubjectWorkspaceProps> = ({
                           <div className="font-serif text-xs leading-snug line-clamp-2">
                             {note.thema}
                           </div>
-                          {note.klausurrelevant && (
-                            <span className="shrink-0 rounded bg-[var(--ink)] px-1 py-0.2 font-mono text-[9px] text-[var(--paper)]">
-                              Klausur
-                            </span>
-                          )}
+                          <div className="flex items-center gap-1 shrink-0">
+                            {isAllFaecher && (
+                              <span className="rounded border border-[var(--line)] bg-[var(--surface)] px-1 py-0.2 font-mono text-[9px] text-[var(--ink)]">
+                                {note.fach}
+                              </span>
+                            )}
+                            {note.klausurrelevant && (
+                              <span className="rounded bg-[var(--ink)] px-1 py-0.2 font-mono text-[9px] text-[var(--paper)]">
+                                Klausur
+                              </span>
+                            )}
+                          </div>
                         </div>
 
                         {note.operatoren.length > 0 && (

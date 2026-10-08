@@ -876,7 +876,7 @@ export default function App() {
           )}
           {tab === "fach" && (
             <SubjectWorkspace
-              currentFach={selectedFach === "alle" ? "SoWi" : selectedFach}
+              currentFach={selectedFach}
               onSubjectChange={(fachId) => setSelectedFach(fachId)}
               onNavigateToTab={(targetTab, opts) => {
                 if (opts?.fach) setSelectedFach(opts.fach);
