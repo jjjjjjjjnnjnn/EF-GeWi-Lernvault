@@ -158,5 +158,11 @@ export default defineConfig({
     environment: "jsdom",
     setupFiles: ["./src/test/setup.ts"],
     include: ["src/**/*.test.{ts,tsx}"],
+    // The skill-tree canvas renders every node of a subject graph as SVG.
+    // Since the knowledge graphs grew to 60-80 nodes per subject (and the
+    // compiled graphs module to ~1 MB), a full canvas render in jsdom takes
+    // several seconds; under full-suite worker contention that exceeds the
+    // vitest 5s default. Raised deliberately, not to mask a hang.
+    testTimeout: 20000,
   },
 });

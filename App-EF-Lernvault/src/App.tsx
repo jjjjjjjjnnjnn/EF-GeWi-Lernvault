@@ -3,6 +3,7 @@ import { t, type Lang } from "./i18n";
 import { repository, type KnowledgeNote, type KnowledgeCard } from "./framework";
 import { KnowledgeManagerModal } from "./components/KnowledgeManagerModal";
 import { CoursePipelineModal } from "./components/CoursePipelineModal";
+import { SkillTreeModal } from "./components/SkillTreeModal";
 import { GLOBAL_KEYS, MODULE_KEYS, isTyping, matchesKey } from "./keys";
 import { FAECHER, getFach } from "./fach";
 import Palette, { type PaletteItem } from "./components/Palette";
@@ -342,6 +343,7 @@ export default function App() {
   const [sprintOpen, setSprintOpen] = useState(false);
   const [knowledgeManagerOpen, setKnowledgeManagerOpen] = useState(false);
   const [coursePipelineOpen, setCoursePipelineOpen] = useState(false);
+  const [skillTreeOpen, setSkillTreeOpen] = useState(false);
   const [knowledgeVersion, setKnowledgeVersion] = useState(0);
 
   useEffect(() => {
@@ -462,6 +464,7 @@ export default function App() {
           else if (paletteOpen) setPaletteOpen(false);
           else if (helpOpen) setHelpOpen(false);
           else if (sprintOpen) setSprintOpen(false);
+          else if (skillTreeOpen) setSkillTreeOpen(false);
         }
         return;
       }
@@ -579,9 +582,16 @@ export default function App() {
       {
         id: "act-course-pipeline",
         group: lang === "de" ? "Aktionen" : "操作",
-        label: lang === "de" ? "Kurs-Pipeline (Buch ➔ Kursserie)" : "课程工坊 (书本 ➔ 趣味课程集生成流水线)",
+        label: lang === "de" ? "Kurs-Pipeline (Buch -> Kursserie)" : "课程工坊 (书本 -> 趣味课程集生成流水线)",
         hint: "P",
         run: () => setCoursePipelineOpen(true),
+      },
+      {
+        id: "act-skill-tree",
+        group: lang === "de" ? "Aktionen" : "操作",
+        label: lang === "de" ? "Wissens- & Kompetenzbaum (Skill Tree)" : "学科知识图谱与前置解锁技能树",
+        hint: "K",
+        run: () => setSkillTreeOpen(true),
       },
     ],
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -833,7 +843,7 @@ export default function App() {
               type="button"
               onClick={() => setCoursePipelineOpen(true)}
               className="flex items-center gap-1.5 rounded-[var(--radius)] border border-[var(--line)] bg-[var(--surface)] px-2.5 py-1 font-mono text-xs text-[var(--ink)] transition-colors hover:bg-[var(--paper-subtle)] cursor-pointer"
-              title={lang === "de" ? "Kursserie aus Buch generieren (Pipeline)" : "书本 ➔ 趣味课程集生成流水线"}
+              title={lang === "de" ? "Kursserie aus Buch generieren (Pipeline)" : "书本 -> 趣味课程集生成流水线"}
             >
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" className="h-3.5 w-3.5">
                 <path d="M2.5 3.5h5a2 2 0 0 1 2 2v7.5a1.5 1.5 0 0 0-1.5-1.5H2.5z" />
@@ -841,6 +851,20 @@ export default function App() {
                 <path d="M11.5 6.5l1.5 1.5-1.5 1.5" />
               </svg>
               <span>{lang === "de" ? "Kurs-Pipeline" : "课程工坊"}</span>
+            </button>
+            <button
+              type="button"
+              onClick={() => setSkillTreeOpen(true)}
+              className="flex items-center gap-1.5 rounded-[var(--radius)] border border-[var(--line)] bg-[var(--surface)] px-2.5 py-1 font-mono text-xs text-[var(--ink)] transition-colors hover:bg-[var(--paper-subtle)] cursor-pointer"
+              title={lang === "de" ? "Wissens- & Kompetenzbaum öffnen" : "打开学科知识图谱与前置解锁技能树"}
+            >
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" className="h-3.5 w-3.5">
+                <circle cx="8" cy="3.5" r="2" />
+                <circle cx="4" cy="12.5" r="2" />
+                <circle cx="12" cy="12.5" r="2" />
+                <path d="M8 5.5v3M8 8.5L4 10.5M8 8.5l4 2" />
+              </svg>
+              <span>{lang === "de" ? "Skill-Tree" : "技能树"}</span>
             </button>
             <button
               type="button"
@@ -1064,6 +1088,23 @@ export default function App() {
         onLaunchCourse={() => {
           setCoursePipelineOpen(false);
           switchTab("reise");
+        }}
+      />
+      <SkillTreeModal
+        isOpen={skillTreeOpen}
+        onClose={() => setSkillTreeOpen(false)}
+        lang={lang}
+        initialFach={selectedFach === "alle" ? "SoWi" : selectedFach}
+        onStartCourse={(courseId) => {
+          switchTab("reise");
+          setActiveReiseId(courseId);
+        }}
+        onOpenNote={(noteId) => {
+          switchTab("library");
+          setSelectedNoteId(noteId);
+        }}
+        onOpenTool={() => {
+          switchTab("werkzeuge");
         }}
       />
       <FeedbackFloat lang={lang} />
