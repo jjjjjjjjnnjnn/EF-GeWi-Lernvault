@@ -102,4 +102,46 @@ describe("SubjectWorkspace (学科专区/学科主页) 独立测试", () => {
     // 翻转后应出现“背面”
     expect(screen.getByText("背面")).toBeInTheDocument();
   });
+
+  it("supports collapsing and expanding the note catalog panel and toggling width", () => {
+    render(<SubjectWorkspace currentFach="SoWi" lang="zh" />);
+
+    // 点击收起目录按钮
+    const collapseBtn = screen.getByTitle("收起目录");
+    fireEvent.click(collapseBtn);
+
+    // 应该出现展开目录按钮
+    expect(screen.getByTitle("展开目录")).toBeInTheDocument();
+
+    // 点击展开目录按钮
+    const expandBtn = screen.getByTitle("展开目录");
+    fireEvent.click(expandBtn);
+    expect(screen.getByTitle("收起目录")).toBeInTheDocument();
+
+    // 切换排版宽度
+    const widthBtn = screen.getByTitle("切换排版宽度");
+    expect(widthBtn.textContent).toContain("全宽排版");
+    fireEvent.click(widthBtn);
+    expect(widthBtn.textContent).toContain("居中排版");
+  });
+
+  it("supports opening zoomed modal for flashcards in Tab 2", () => {
+    render(<SubjectWorkspace currentFach="SoWi" lang="zh" />);
+
+    const cardsTab = screen.getByRole("button", { name: /2\. 抽认卡片/i });
+    fireEvent.click(cardsTab);
+
+    // 找到放大按钮
+    const zoomBtns = screen.getAllByTitle("放大查看");
+    expect(zoomBtns.length).toBeGreaterThan(0);
+    fireEvent.click(zoomBtns[0]);
+
+    // 弹窗应打开
+    expect(screen.getByText(/概念大卡沉浸速测/i)).toBeInTheDocument();
+
+    // 点击关闭按钮
+    const closeBtn = screen.getByRole("button", { name: "关闭" });
+    fireEvent.click(closeBtn);
+    expect(screen.queryByText(/概念大卡沉浸速测/i)).toBeNull();
+  });
 });

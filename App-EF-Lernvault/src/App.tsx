@@ -838,7 +838,12 @@ export default function App() {
         </header>
 
         {/* Content Viewport */}
-        <div key={tab} className="tab-enter min-w-0 flex-1 overflow-y-auto p-4 sm:p-6 xl:p-8">
+        <div
+          key={tab}
+          className={`tab-enter min-w-0 flex-1 ${
+            tab === "fach" ? "overflow-hidden p-0 h-full flex flex-col" : "overflow-y-auto p-4 sm:p-6 xl:p-8"
+          }`}
+        >
           {tab === "home" && (
             useCockpitHome ? (
               <DashboardCockpit
