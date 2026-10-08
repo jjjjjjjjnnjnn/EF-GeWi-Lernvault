@@ -1,0 +1,2959 @@
+{
+  "schemaVersion": 1,
+  "fach": "Chemie",
+  "nameDE": "Chemie",
+  "nameZH": "化学 (Chemie)",
+  "descriptionDE": "Atombau und Bindung, chemische Reaktionen und Stöchiometrie, Kinetik und Gleichgewicht, Säure-Base-Gleichgewichte, Elektrochemie und Organische Chemie der gymnasialen Oberstufe (NRW EF bis Abitur & Uni-Prep)",
+  "descriptionZH": "原子结构与化学键、化学反应与化学计量、动力学与平衡、酸碱平衡、电化学及有机化学的完整行星引力星系图谱 (NRW 高中 EF 至毕业考试与大学衔接)",
+  "isCustomSubject": false,
+  "categories": [
+    "Atombau-und-Bindung",
+    "Chemische-Reaktionen",
+    "Kinetik-und-Gleichgewicht",
+    "Saeure-Base",
+    "Elektrochemie",
+    "Organische-Chemie"
+  ],
+  "availableTags": [
+    "Formel",
+    "Modell",
+    "Axiom",
+    "Definition",
+    "Verfahren",
+    "Grafik",
+    "Basiswissen",
+    "Klausur-Dauerbrenner",
+    "Schwerpunkt-2026",
+    "AFB-III",
+    "Uni-Prep",
+    "Atombau",
+    "Atomorbital",
+    "Bindung",
+    "Periodensystem",
+    "Stoffeigenschaften",
+    "Reaktion",
+    "Stoechiometrie",
+    "Energetik",
+    "Entropie",
+    "Kinetik",
+    "Gleichgewicht",
+    "Katalyse",
+    "Saeure-Base",
+    "pH-Wert",
+    "Titration",
+    "Puffer",
+    "Redox",
+    "Elektrochemie",
+    "Elektrolyse",
+    "Korrosion",
+    "Organik",
+    "Mechanismus",
+    "Kunststoffe",
+    "Naturstoffe",
+    "Analytik",
+    "Labor",
+    "Alltag",
+    "Industrie",
+    "Mathematisierung"
+  ],
+  "nodes": [
+    {
+      "id": "chemie-atomaufbau-schalenmodell",
+      "fach": "Chemie",
+      "titleDE": "Schalenmodell & Atomaufbau",
+      "titleZH": "玻尔壳层模型与原子结构：质子、中子与电子排布",
+      "summaryDE": "Atome bestehen aus einem Kern aus Protonen und Neutronen sowie einer Elektronenhülle; im Schalenmodell werden die Elektronen diskreten Energieniveaus zugeordnet.",
+      "summaryZH": "原子由质子中子构成的原子核与电子壳层组成，壳层模型把电子分配到分立的能级上。",
+      "category": "Atombau-und-Bindung",
+      "curriculumTier": "Sek_I",
+      "stage": "einfuehrung",
+      "level": 1,
+      "xpReward": 60,
+      "estimatedMinutes": 8,
+      "prerequisites": [],
+      "keyFormulaOrSentence": "Kernladungszahl Z = Zahl der Protonen = Zahl der Elektronen im Neutralatom;  Schalenbesetzung 2 / 8 / 8 ...",
+      "commonFallacy": "Elektronen als ruhende Punkte auf festen Kreisbahnen zeichnen - das Schalenmodell beschreibt Aufenthaltsbereiche, keine exakten Bahnen.",
+      "layerIndex": 0,
+      "tags": [
+        "Modell",
+        "Definition",
+        "Atombau",
+        "Basiswissen"
+      ]
+    },
+    {
+      "id": "chemie-stoffeigenschaften-stoffgemische",
+      "fach": "Chemie",
+      "titleDE": "Stoffeigenschaften und Stoffgemische",
+      "titleZH": "物质性质与混合物分类：纯净物与混合体系的判据",
+      "summaryDE": "Reinstoffe besitzen reproduzierbare charakteristische Eigenschaften wie einen scharfen Schmelz- und Siedepunkt, Gemische dagegen nicht.",
+      "summaryZH": "纯净物具有可复现的特征性质（如确定的熔点与沸点），混合物则没有。",
+      "category": "Atombau-und-Bindung",
+      "curriculumTier": "Sek_I",
+      "stage": "einfuehrung",
+      "level": 1,
+      "xpReward": 60,
+      "estimatedMinutes": 8,
+      "prerequisites": [],
+      "keyFormulaOrSentence": "Kennzeichen eines Reinstoffs: scharfer Schmelz- und Siedepunkt;  ein Gemisch siedet ueber einen Siedebereich",
+      "commonFallacy": "Leitungswasser oder Luft für einen Reinstoff halten - beide sind Gemische und besitzen deshalb keinen scharfen Siedepunkt.",
+      "layerIndex": 0,
+      "tags": [
+        "Definition",
+        "Stoffeigenschaften",
+        "Basiswissen",
+        "Labor"
+      ]
+    },
+    {
+      "id": "chemie-trennverfahren-gemische",
+      "fach": "Chemie",
+      "titleDE": "Trennverfahren für Stoffgemische",
+      "titleZH": "混合物分离五法：过滤、蒸馏、萃取、色谱与磁选",
+      "summaryDE": "Trennverfahren nutzen unterschiedliche physikalische Eigenschaften der Bestandteile: Korngröße, Siedetemperatur, Löslichkeit oder Dichte.",
+      "summaryZH": "分离方法利用各组分的物理性质差异：颗粒大小、沸点、溶解性或密度。",
+      "category": "Atombau-und-Bindung",
+      "curriculumTier": "Sek_I",
+      "stage": "einfuehrung",
+      "level": 1,
+      "xpReward": 70,
+      "estimatedMinutes": 10,
+      "prerequisites": [
+        "chemie-stoffeigenschaften-stoffgemische"
+      ],
+      "keyFormulaOrSentence": "Destillation nutzt die Siedetemperaturdifferenz, Extraktion die unterschiedliche Löslichkeit im gewählten Lösungsmittel",
+      "commonFallacy": "Bei der Destillation eines Gemischs einen scharfen Siedepunkt wie beim Reinstoff erwarten - ein Gemisch destilliert über einen Siedebereich.",
+      "layerIndex": 1,
+      "tags": [
+        "Verfahren",
+        "Stoffeigenschaften",
+        "Labor",
+        "Basiswissen"
+      ]
+    },
+    {
+      "id": "chemie-periodensystem-elementgruppen",
+      "fach": "Chemie",
+      "titleDE": "Periodensystem und Elementgruppen",
+      "titleZH": "元素周期表：主族编号与原子结构的周期性",
+      "summaryDE": "Die Ordnung der Elemente nach Kernladungszahl erzeugt eine periodische Wiederkehr der Valenzelektronenkonfiguration und damit der chemischen Eigenschaften.",
+      "summaryZH": "按核电荷数排序后价电子构型周期性重复，化学性质随之呈现周期性。",
+      "category": "Atombau-und-Bindung",
+      "curriculumTier": "Sek_I",
+      "stage": "einfuehrung",
+      "level": 1,
+      "xpReward": 75,
+      "estimatedMinutes": 10,
+      "prerequisites": [
+        "chemie-atomaufbau-schalenmodell"
+      ],
+      "keyFormulaOrSentence": "Hauptgruppennummer = Zahl der Valenzelektronen;  Periodennummer = Zahl der besetzten Schalen",
+      "commonFallacy": "Die Gruppennummer der Nebengruppen wie die einer Hauptgruppe als Valenzelektronenzahl lesen - dort gilt diese einfache Regel nicht.",
+      "layerIndex": 2,
+      "tags": [
+        "Modell",
+        "Periodensystem",
+        "Basiswissen",
+        "Grafik"
+      ]
+    },
+    {
+      "id": "chemie-ionenbindung-ionengitter",
+      "fach": "Chemie",
+      "titleDE": "Ionenbindung und Ionengitter",
+      "titleZH": "离子键与离子晶格：电子转移与库仑静电作用",
+      "summaryDE": "Metallatome geben Valenzelektronen an Nichtmetallatome ab; die entstehenden Ionen bilden ein dreidimensionales Gitter, das durch Coulomb-Kräfte zusammengehalten wird.",
+      "summaryZH": "金属原子把价电子交给非金属原子，形成的阴阳离子以库仑静电作用构成三维离子晶格。",
+      "category": "Atombau-und-Bindung",
+      "curriculumTier": "Sek_I",
+      "stage": "einfuehrung",
+      "level": 1,
+      "xpReward": 80,
+      "estimatedMinutes": 10,
+      "prerequisites": [
+        "chemie-periodensystem-elementgruppen"
+      ],
+      "keyFormulaOrSentence": "Coulomb-Anziehung im Gitter: E ~ (q1 * q2) / r  - höhere Ladungen und kleinere Ionenabstände erhöhen die Gitterenergie",
+      "commonFallacy": "Ionenbindung als gerichtete Bindung zwischen einzelnen Teilchenpaaren darstellen - Ionenkräfte wirken allseitig und ungerichtet.",
+      "layerIndex": 3,
+      "tags": [
+        "Modell",
+        "Bindung",
+        "Basiswissen",
+        "Definition"
+      ]
+    },
+    {
+      "id": "chemie-atombindung-elektronenpaarbindung",
+      "fach": "Chemie",
+      "titleDE": "Atombindung und Elektronenpaarbindung",
+      "titleZH": "共价键：电子对共用与八隅体规则",
+      "summaryDE": "Nichtmetallatome erreichen die Edelgaskonfiguration, indem sie bindende Elektronenpaare gemeinsam nutzen; die entstehenden Moleküle sind nach außen ungeladen.",
+      "summaryZH": "非金属原子通过共用电子对达到稀有气体构型，形成的分子整体呈电中性。",
+      "category": "Atombau-und-Bindung",
+      "curriculumTier": "Sek_I",
+      "stage": "einfuehrung",
+      "level": 1,
+      "xpReward": 80,
+      "estimatedMinutes": 10,
+      "prerequisites": [
+        "chemie-periodensystem-elementgruppen"
+      ],
+      "keyFormulaOrSentence": "Edelgasregel: jedes Atom strebt acht Valenzelektronen an;  Wasserstoff erreicht die Zweielektronenkonfiguration",
+      "commonFallacy": "Die bindenden Elektronenpaare einem der beiden Atome allein zuordnen - beide Partner stellen je ein Elektron.",
+      "layerIndex": 3,
+      "tags": [
+        "Modell",
+        "Bindung",
+        "Basiswissen",
+        "Definition"
+      ]
+    },
+    {
+      "id": "chemie-elektronegativitaet-bindungspolaritaet",
+      "fach": "Chemie",
+      "titleDE": "Elektronegativität und Bindungspolarität",
+      "titleZH": "电负性差与键极性：从非极性键到离子键的连续过渡",
+      "summaryDE": "Die Elektronegativitätsdifferenz der Bindungspartner bestimmt, wie stark das bindende Elektronenpaar zum elektronegativeren Atom verschoben wird.",
+      "summaryZH": "成键两原子的电负性之差决定共用电子对向电负性较大一方偏移的程度。",
+      "category": "Atombau-und-Bindung",
+      "curriculumTier": "EF",
+      "stage": "grundlagen",
+      "level": 2,
+      "xpReward": 100,
+      "estimatedMinutes": 12,
+      "prerequisites": [
+        "chemie-atombindung-elektronenpaarbindung"
+      ],
+      "keyFormulaOrSentence": "Richtwerte nach Pauling: Delta-EN < 0.4 unpolare, 0.4 bis 1.7 polare Atombindung, > 1.7 ionische Bindung",
+      "commonFallacy": "Polare Atombindung und Ionenbindung als zwei scharf getrennte Bindungsarten behandeln - dazwischen liegt ein kontinuierlicher Übergang.",
+      "layerIndex": 5,
+      "tags": [
+        "Formel",
+        "Bindung",
+        "Definition",
+        "Klausur-Dauerbrenner"
+      ]
+    },
+    {
+      "id": "chemie-molekuelgeometrie-epa-modell",
+      "fach": "Chemie",
+      "titleDE": "Molekülgeometrie nach dem EPA-Modell",
+      "titleZH": "电子对排斥模型与分子空间构型预测",
+      "summaryDE": "Elektronenpaare stoßen sich maximal ab; die Zahl der bindenden und freien Elektronenpaare am Zentralatom legt die räumliche Gestalt des Moleküls fest.",
+      "summaryZH": "中心原子周围的成键与孤对电子对互相排斥并尽量远离，由此决定分子的空间构型。",
+      "category": "Atombau-und-Bindung",
+      "curriculumTier": "EF",
+      "stage": "grundlagen",
+      "level": 2,
+      "xpReward": 105,
+      "estimatedMinutes": 14,
+      "prerequisites": [
+        "chemie-elektronegativitaet-bindungspolaritaet"
+      ],
+      "keyFormulaOrSentence": "2 EPA linear, 3 EPA trigonal-planar, 4 EPA tetraedrisch;  freie Elektronenpaare verkleinern den Bindungswinkel",
+      "commonFallacy": "Den Bindungswinkel aus der Zahl der Bindungspartner statt aus der Gesamtzahl der Elektronenpaare ableiten - freie Paare verkleinern ihn zusätzlich.",
+      "layerIndex": 6,
+      "tags": [
+        "Modell",
+        "Grafik",
+        "Bindung",
+        "Klausur-Dauerbrenner"
+      ]
+    },
+    {
+      "id": "chemie-zwischenmolekulare-kraefte-van-der-waals",
+      "fach": "Chemie",
+      "titleDE": "Van-der-Waals-Kräfte und Dipol-Dipol-Wechselwirkungen",
+      "titleZH": "范德华力与偶极-偶极相互作用：分子间作用力的强度阶梯",
+      "summaryDE": "Zwischen unpolaren Molekülen wirken schwache induzierte Dipolkräfte, zwischen polaren Molekülen zusätzlich permanente Dipol-Dipol-Kräfte; beide wachsen mit der Molekülgröße.",
+      "summaryZH": "非极性分子间存在瞬时诱导偶极力，极性分子间还叠加永久偶极作用，两者都随分子尺寸增大而增强。",
+      "category": "Atombau-und-Bindung",
+      "curriculumTier": "Q1",
+      "stage": "grundlagen",
+      "level": 2,
+      "xpReward": 125,
+      "estimatedMinutes": 14,
+      "prerequisites": [
+        "chemie-molekuelgeometrie-epa-modell"
+      ],
+      "keyFormulaOrSentence": "Van-der-Waals-Kräfte wachsen mit Molmasse und Kontaktfläche: E ~ 1 / r^6",
+      "commonFallacy": "Zwischenmolekulare Kräfte und chemische Bindungen gleichsetzen - sie sind ein bis zwei Größenordnungen schwächer und brechen beim Sieden, nicht beim Reagieren.",
+      "layerIndex": 9,
+      "tags": [
+        "Modell",
+        "Bindung",
+        "Stoffeigenschaften",
+        "Klausur-Dauerbrenner"
+      ]
+    },
+    {
+      "id": "chemie-wasserstoffbruecken-stoffeigenschaften",
+      "fach": "Chemie",
+      "titleDE": "Wasserstoffbrückenbindungen und Stoffeigenschaften",
+      "titleZH": "氢键网络与物质性质：异常沸点、密度与溶解性",
+      "summaryDE": "An O-H-, N-H- und F-H-Gruppen bilden sich gerichtete Wasserstoffbrücken; sie erklären die anomal hohen Siedepunkte und die Dichteanomalie des Wassers.",
+      "summaryZH": "O-H、N-H、F-H 基团之间形成有方向性的氢键，由此解释水与醇类异常高的沸点以及水的密度异常。",
+      "category": "Atombau-und-Bindung",
+      "curriculumTier": "Q1",
+      "stage": "vertiefung",
+      "level": 2,
+      "xpReward": 135,
+      "estimatedMinutes": 16,
+      "prerequisites": [
+        "chemie-zwischenmolekulare-kraefte-van-der-waals",
+        "chemie-elektronegativitaet-bindungspolaritaet"
+      ],
+      "keyFormulaOrSentence": "Voraussetzung: elektronegatives Atom mit freiem Elektronenpaar und H an N, O oder F;  Bindungsenergie 10 bis 40 kJ/mol",
+      "commonFallacy": "Wasserstoffbrücken als echte kovalente Bindung behandeln - sie sind rund zehnmal schwächer als eine O-H-Bindung.",
+      "layerIndex": 10,
+      "tags": [
+        "Modell",
+        "Stoffeigenschaften",
+        "Bindung",
+        "Klausur-Dauerbrenner"
+      ]
+    },
+    {
+      "id": "chemie-molekuelorbital-konzept",
+      "fach": "Chemie",
+      "titleDE": "Molekülorbital-Konzept",
+      "titleZH": "分子轨道理论：成键轨道、反键轨道与键级",
+      "summaryDE": "Atomorbitale überlagern sich zu bindenden und antibindenden Molekülorbitalen; deren Besetzung erklärt Bindungsordnung, Magnetismus und Spektren.",
+      "summaryZH": "原子轨道线性组合成成键与反键分子轨道，电子按能量填充，由此解释键级、磁性与光谱。",
+      "category": "Atombau-und-Bindung",
+      "curriculumTier": "Uni_Prep",
+      "stage": "synthese",
+      "level": 3,
+      "xpReward": 185,
+      "estimatedMinutes": 25,
+      "prerequisites": [
+        "chemie-elektronegativitaet-bindungspolaritaet",
+        "chemie-molekuelgeometrie-epa-modell",
+        "chemie-wasserstoffbruecken-stoffeigenschaften"
+      ],
+      "keyFormulaOrSentence": "Bindungsordnung = (Zahl bindender Elektronen - Zahl antibindender Elektronen) / 2",
+      "commonFallacy": "Das MO-Schema als bloße Umzeichnung der Lewis-Formel lesen - erst die Besetzung antibindender Orbitale erklärt den Paramagnetismus des Sauerstoffmoleküls.",
+      "layerIndex": 18,
+      "tags": [
+        "Modell",
+        "Mathematisierung",
+        "Uni-Prep",
+        "Atomorbital"
+      ]
+    },
+    {
+      "id": "chemie-quantenchemie-orbitalmodell",
+      "fach": "Chemie",
+      "titleDE": "Quantenchemisches Orbitalmodell",
+      "titleZH": "量子化学轨道模型：波函数、概率密度与轨道形状",
+      "summaryDE": "Ein Elektron wird durch eine Wellenfunktion beschrieben; das Betragsquadrat gibt die Aufenthaltswahrscheinlichkeit und damit die Gestalt der s- und p-Orbitale an.",
+      "summaryZH": "电子由波函数描述，其模方给出概率密度，由此得到 s、p 轨道的形状与节面结构。",
+      "category": "Atombau-und-Bindung",
+      "curriculumTier": "Uni_Prep",
+      "stage": "synthese",
+      "level": 3,
+      "xpReward": 195,
+      "estimatedMinutes": 28,
+      "prerequisites": [
+        "chemie-molekuelorbital-konzept",
+        "chemie-zwischenmolekulare-kraefte-van-der-waals",
+        "chemie-atomaufbau-schalenmodell"
+      ],
+      "keyFormulaOrSentence": "psi^2 = Aufenthaltswahrscheinlichkeit;  die Quantenzahlen n, l, m_l und m_s legen Zustand, Form und Orientierung fest",
+      "commonFallacy": "Orbitale als feste Bahnen oder materielle Hüllen zeichnen - sie sind Wahrscheinlichkeitsverteilungen ohne scharfe Grenze.",
+      "layerIndex": 19,
+      "tags": [
+        "Modell",
+        "Mathematisierung",
+        "Uni-Prep",
+        "Atomorbital"
+      ]
+    },
+    {
+      "id": "chemie-reaktionsgleichungen-ausgleichen",
+      "fach": "Chemie",
+      "titleDE": "Chemische Reaktionsgleichungen aufstellen",
+      "titleZH": "化学方程式的书写与配平：质量守恒与最小公倍法",
+      "summaryDE": "Eine Reaktionsgleichung bilanziert Atome und Ladungen; die Koeffizienten werden so gewählt, dass auf beiden Seiten jedes Atom gleich oft vorkommt.",
+      "summaryZH": "化学方程式必须满足原子与电荷守恒，系数取最小整数比使两侧各原子数目相等。",
+      "category": "Chemische-Reaktionen",
+      "curriculumTier": "Sek_I",
+      "stage": "einfuehrung",
+      "level": 1,
+      "xpReward": 65,
+      "estimatedMinutes": 8,
+      "prerequisites": [],
+      "keyFormulaOrSentence": "Massenerhaltung: Summe der Atome links = Summe der Atome rechts, Koeffizienten ganzzahlig und teilerfremd",
+      "commonFallacy": "Die Indizes in den Summenformeln statt der Koeffizienten verändern - dadurch entsteht eine andere Substanz und die Gleichung wird falsch.",
+      "layerIndex": 0,
+      "tags": [
+        "Formel",
+        "Reaktion",
+        "Basiswissen",
+        "Klausur-Dauerbrenner"
+      ]
+    },
+    {
+      "id": "chemie-stoechiometrie-stoffmenge",
+      "fach": "Chemie",
+      "titleDE": "Stöchiometrie und Stoffmenge",
+      "titleZH": "化学计量与物质的量：摩尔换算的三座桥梁",
+      "summaryDE": "Die Stoffmenge verknüpft Masse, molare Masse und Teilchenzahl; das Stoffmengenverhältnis der Gleichung liefert daraus die umgesetzten Mengen.",
+      "summaryZH": "物质的量把质量、摩尔质量与粒子数联系起来，方程式中的计量比给出各物质转化的量。",
+      "category": "Chemische-Reaktionen",
+      "curriculumTier": "Sek_I",
+      "stage": "einfuehrung",
+      "level": 1,
+      "xpReward": 75,
+      "estimatedMinutes": 10,
+      "prerequisites": [
+        "chemie-reaktionsgleichungen-ausgleichen"
+      ],
+      "keyFormulaOrSentence": "n = m / M  und  N = n * N_A  mit  N_A = 6.022e23 1/mol",
+      "commonFallacy": "Konzentration und Stoffmenge gleichsetzen - es gilt c = n / V; ohne Volumenangabe lässt sich aus c keine Stoffmenge berechnen.",
+      "layerIndex": 1,
+      "tags": [
+        "Formel",
+        "Stoechiometrie",
+        "Basiswissen",
+        "Klausur-Dauerbrenner"
+      ]
+    },
+    {
+      "id": "chemie-energieumsatz-exotherm-endotherm",
+      "fach": "Chemie",
+      "titleDE": "Exotherme und endotherme Reaktionen",
+      "titleZH": "放热与吸热反应：反应焓的符号约定",
+      "summaryDE": "Bei exothermen Reaktionen liegt das Energieniveau der Produkte tiefer als das der Edukte, bei endothermen höher; die Differenz ist die Reaktionsenthalpie.",
+      "summaryZH": "放热反应产物的能量低于反应物，吸热反应则更高，二者之差即反应焓变。",
+      "category": "Chemische-Reaktionen",
+      "curriculumTier": "Sek_I",
+      "stage": "einfuehrung",
+      "level": 1,
+      "xpReward": 70,
+      "estimatedMinutes": 8,
+      "prerequisites": [
+        "chemie-reaktionsgleichungen-ausgleichen"
+      ],
+      "keyFormulaOrSentence": "Delta-H < 0 exotherm, Delta-H > 0 endotherm;  die Umgebung erwärmt sich bzw. kühlt ab",
+      "commonFallacy": "Aus der Erwärmung des Reaktionsgefäßes auf eine Erhöhung der inneren Energie der Produkte schließen - die Reaktion gibt Energie an die Umgebung ab.",
+      "layerIndex": 1,
+      "tags": [
+        "Definition",
+        "Energetik",
+        "Basiswissen",
+        "Alltag"
+      ]
+    },
+    {
+      "id": "chemie-reaktionstypen-faellung-neutralisation",
+      "fach": "Chemie",
+      "titleDE": "Reaktionstypen: Fällung, Neutralisation und Redox",
+      "titleZH": "反应类型识别：沉淀、中和与氧化还原的判据",
+      "summaryDE": "Reaktionstypen werden nach dem übertragenen Teilchen unterschieden: Protonen bei der Neutralisation, Elektronen bei der Redoxreaktion, Ionen bei der Fällung.",
+      "summaryZH": "按转移的粒子种类区分反应类型：中和转移质子，氧化还原转移电子，沉淀反应只是离子结合为难溶物。",
+      "category": "Chemische-Reaktionen",
+      "curriculumTier": "EF",
+      "stage": "grundlagen",
+      "level": 2,
+      "xpReward": 95,
+      "estimatedMinutes": 12,
+      "prerequisites": [
+        "chemie-reaktionsgleichungen-ausgleichen"
+      ],
+      "keyFormulaOrSentence": "Fällung: Ag+ + Cl- -> AgCl(s);  Neutralisation: H3O+ + OH- -> 2 H2O",
+      "commonFallacy": "Jede Reaktion zwischen Ionen für eine Redoxreaktion halten - bei Fällung und Neutralisation ändern sich keine Oxidationszahlen.",
+      "layerIndex": 4,
+      "tags": [
+        "Definition",
+        "Reaktion",
+        "Basiswissen",
+        "Klausur-Dauerbrenner"
+      ]
+    },
+    {
+      "id": "chemie-stoffkreislauf-technische-verfahren",
+      "fach": "Chemie",
+      "titleDE": "Natürliche Stoffkreisläufe und technische Verfahren",
+      "titleZH": "自然物质循环与工业流程：从元素循环到催化合成",
+      "summaryDE": "Natürliche Kreisläufe und technische Prozesse folgen derselben Reaktionslogik; technische Verfahren erzwingen über Druck, Temperatur und Katalysator eine hohe Ausbeute.",
+      "summaryZH": "自然循环与工业流程遵循同一反应逻辑，工业上通过压力、温度与催化剂强制提高产率。",
+      "category": "Chemische-Reaktionen",
+      "curriculumTier": "EF",
+      "stage": "grundlagen",
+      "level": 2,
+      "xpReward": 110,
+      "estimatedMinutes": 14,
+      "prerequisites": [
+        "chemie-stoechiometrie-stoffmenge",
+        "chemie-reaktionstypen-faellung-neutralisation"
+      ],
+      "keyFormulaOrSentence": "Technische Umsetzung = Reaktionsgleichung + Reaktionsbedingungen (Druck, Temperatur, Katalysator) + Stoffbilanz",
+      "commonFallacy": "Technische Verfahren nur über die Reaktionsgleichung bewerten - Ausbeute, Energiebedarf und Nebenprodukte entscheiden über die Beurteilung.",
+      "layerIndex": 5,
+      "tags": [
+        "Verfahren",
+        "Industrie",
+        "Reaktion",
+        "AFB-III"
+      ]
+    },
+    {
+      "id": "chemie-katalyse-energieprofil",
+      "fach": "Chemie",
+      "titleDE": "Katalyse und Energieprofil",
+      "titleZH": "催化与能量剖面：活化能降低但不改变反应焓",
+      "summaryDE": "Ein Katalysator senkt die Aktivierungsenergie, indem er einen anderen Reaktionsweg eröffnet; er ändert weder Reaktionsenthalpie noch Gleichgewichtslage.",
+      "summaryZH": "催化剂通过提供另一条反应路径降低活化能，但不改变反应焓与平衡位置。",
+      "category": "Chemische-Reaktionen",
+      "curriculumTier": "EF",
+      "stage": "grundlagen",
+      "level": 2,
+      "xpReward": 110,
+      "estimatedMinutes": 14,
+      "prerequisites": [
+        "chemie-energieumsatz-exotherm-endotherm",
+        "chemie-reaktionstypen-faellung-neutralisation"
+      ],
+      "keyFormulaOrSentence": "Der Katalysator senkt E_A, Delta-H bleibt unverändert, weil Anfangs- und Endzustand gleich bleiben",
+      "commonFallacy": "Annehmen, ein Katalysator verschiebe das Gleichgewicht zur Produktseite - er verkürzt nur die Zeit bis zum Erreichen des Gleichgewichts.",
+      "layerIndex": 6,
+      "tags": [
+        "Modell",
+        "Katalyse",
+        "Energetik",
+        "Grafik"
+      ]
+    },
+    {
+      "id": "chemie-enthalpie-kalorimetrie",
+      "fach": "Chemie",
+      "titleDE": "Reaktionsenthalpie und Kalorimetrie",
+      "titleZH": "反应焓与量热法：由温度变化换算焓变",
+      "summaryDE": "Die bei einer Reaktion umgesetzte Wärmemenge wird kalorimetrisch aus der Temperaturänderung bestimmt und auf die Stoffmenge bezogen.",
+      "summaryZH": "用温度变化量热测定反应交换的热量，再按物质的量换算为摩尔焓变。",
+      "category": "Chemische-Reaktionen",
+      "curriculumTier": "Q1",
+      "stage": "grundlagen",
+      "level": 2,
+      "xpReward": 125,
+      "estimatedMinutes": 14,
+      "prerequisites": [
+        "chemie-energieumsatz-exotherm-endotherm"
+      ],
+      "keyFormulaOrSentence": "Q = c_Wasser * m_Wasser * Delta-T  und  Delta-H = -Q / n",
+      "commonFallacy": "Das Vorzeichen vergessen - eine Temperaturerhöhung im Kalorimeter bedeutet eine exotherme Reaktion und damit ein negatives Delta-H.",
+      "layerIndex": 9,
+      "tags": [
+        "Formel",
+        "Energetik",
+        "Labor",
+        "Klausur-Dauerbrenner"
+      ]
+    },
+    {
+      "id": "chemie-satz-von-hess-bildungsenthalpie",
+      "fach": "Chemie",
+      "titleDE": "Satz von Hess und Standardbildungsenthalpie",
+      "titleZH": "盖斯定律与标准生成焓：反应焓的路径无关计算",
+      "summaryDE": "Die Reaktionsenthalpie ist wegunabhängig; sie lässt sich aus Standardbildungsenthalpien berechnen, auch wenn die Reaktion selbst nicht direkt messbar ist.",
+      "summaryZH": "反应焓与路径无关，可用标准生成焓间接求出，即使反应本身无法直接测量。",
+      "category": "Chemische-Reaktionen",
+      "curriculumTier": "Q1",
+      "stage": "vertiefung",
+      "level": 2,
+      "xpReward": 135,
+      "estimatedMinutes": 16,
+      "prerequisites": [
+        "chemie-enthalpie-kalorimetrie"
+      ],
+      "keyFormulaOrSentence": "Delta-H_R = Summe(n_i * Delta-H_B,Produkte) - Summe(n_i * Delta-H_B,Edukte)",
+      "commonFallacy": "Bildungsenthalpien der Produkte von denen der Edukte abziehen und dabei die stöchiometrischen Koeffizienten vergessen.",
+      "layerIndex": 10,
+      "tags": [
+        "Formel",
+        "Energetik",
+        "Klausur-Dauerbrenner",
+        "AFB-III"
+      ]
+    },
+    {
+      "id": "chemie-entropie-zweiter-hauptsatz",
+      "fach": "Chemie",
+      "titleDE": "Entropie und zweiter Hauptsatz",
+      "titleZH": "熵与热力学第二定律：自发性的无序度判据",
+      "summaryDE": "Die Entropie misst die Zahl der möglichen Mikrozustände; der zweite Hauptsatz verlangt, dass die Gesamtentropie von System und Umgebung bei spontanen Prozessen zunimmt.",
+      "summaryZH": "熵衡量可实现微观状态数的多少，第二定律要求自发过程中系统与环境的熵之和增加。",
+      "category": "Chemische-Reaktionen",
+      "curriculumTier": "Q1",
+      "stage": "vertiefung",
+      "level": 2,
+      "xpReward": 140,
+      "estimatedMinutes": 18,
+      "prerequisites": [
+        "chemie-satz-von-hess-bildungsenthalpie"
+      ],
+      "keyFormulaOrSentence": "Delta-S_gesamt = Delta-S_System + Delta-S_Umgebung >= 0 (spontan);  Delta-S = Q_rev / T",
+      "commonFallacy": "Annehmen, spontane Reaktionen müssten immer exotherm sein - ein endothermer Prozess läuft ab, wenn die Entropiezunahme den Enthalpieterm überkompensiert.",
+      "layerIndex": 11,
+      "tags": [
+        "Axiom",
+        "Entropie",
+        "AFB-III",
+        "Klausur-Dauerbrenner"
+      ]
+    },
+    {
+      "id": "chemie-gibbs-helmholtz-freie-enthalpie",
+      "fach": "Chemie",
+      "titleDE": "Gibbs-Helmholtz-Gleichung und freie Enthalpie",
+      "titleZH": "吉布斯-亥姆霍兹方程与自由焓：自发性的单一判据",
+      "summaryDE": "Die freie Enthalpie verrechnet Enthalpie- und Entropieterm zu einem einzigen Kriterium: Nur bei negativem Delta-G läuft die Reaktion freiwillig ab.",
+      "summaryZH": "自由焓把焓项与熵项合并为单一判据，只有 ΔG < 0 时反应才自发进行。",
+      "category": "Chemische-Reaktionen",
+      "curriculumTier": "Q2",
+      "stage": "synthese",
+      "level": 3,
+      "xpReward": 165,
+      "estimatedMinutes": 18,
+      "prerequisites": [
+        "chemie-entropie-zweiter-hauptsatz",
+        "chemie-satz-von-hess-bildungsenthalpie",
+        "chemie-katalyse-energieprofil"
+      ],
+      "keyFormulaOrSentence": "Delta G = Delta H - T * Delta S",
+      "commonFallacy": "Ein negatives Delta-G als schnellen Ablauf lesen - die freie Enthalpie sagt nur, ob die Reaktion überhaupt freiwillig abläuft, nichts über ihre Geschwindigkeit.",
+      "layerIndex": 13,
+      "tags": [
+        "Formel",
+        "Energetik",
+        "AFB-III",
+        "Klausur-Dauerbrenner"
+      ]
+    },
+    {
+      "id": "chemie-energiebilanz-industrieller-prozesse",
+      "fach": "Chemie",
+      "titleDE": "Energiebilanzen industrieller Prozesse",
+      "titleZH": "工业过程的能量衡算：焓变、熵变与工艺条件决策",
+      "summaryDE": "Industrielle Prozesse werden über eine vollständige Energie- und Entropiebilanz bewertet; Temperaturführung und Kopplung von Teilschritten entscheiden über die Wirtschaftlichkeit.",
+      "summaryZH": "工业流程靠完整的焓熵衡算评价，温度控制与工序耦合决定其经济性。",
+      "category": "Chemische-Reaktionen",
+      "curriculumTier": "Q2",
+      "stage": "synthese",
+      "level": 3,
+      "xpReward": 170,
+      "estimatedMinutes": 20,
+      "prerequisites": [
+        "chemie-gibbs-helmholtz-freie-enthalpie",
+        "chemie-stoffkreislauf-technische-verfahren",
+        "chemie-entropie-zweiter-hauptsatz"
+      ],
+      "keyFormulaOrSentence": "Bewertungsschema: Delta-H messen -> Delta-S abschätzen -> Delta-G bei Prozesstemperatur berechnen -> Kopplung und Katalysator prüfen",
+      "commonFallacy": "Nur die Reaktionsenthalpie betrachten und den Term T * Delta-S vernachlässigen - bei hohen Temperaturen dominiert der Entropieanteil.",
+      "layerIndex": 14,
+      "tags": [
+        "Verfahren",
+        "Industrie",
+        "Energetik",
+        "AFB-III"
+      ]
+    },
+    {
+      "id": "chemie-thermodynamik-formal-hauptsaetze",
+      "fach": "Chemie",
+      "titleDE": "Formale Thermodynamik: Hauptsätze und Zustandsfunktionen",
+      "titleZH": "形式热力学：主定律与状态函数体系",
+      "summaryDE": "Innere Energie, Enthalpie, Entropie und freie Enthalpie sind Zustandsfunktionen; ihre formalen Verknüpfungen machen jede Energieumwandlung bilanzierbar.",
+      "summaryZH": "内能、焓、熵与自由焓都是状态函数，其形式关系使任何能量转化都可被严格衡算。",
+      "category": "Chemische-Reaktionen",
+      "curriculumTier": "Uni_Prep",
+      "stage": "synthese",
+      "level": 3,
+      "xpReward": 185,
+      "estimatedMinutes": 25,
+      "prerequisites": [
+        "chemie-gibbs-helmholtz-freie-enthalpie",
+        "chemie-energiebilanz-industrieller-prozesse",
+        "chemie-entropie-zweiter-hauptsatz"
+      ],
+      "keyFormulaOrSentence": "dU = dQ + dW;  H = U + p * V;  G = H - T * S;  dG = V * dp - S * dT",
+      "commonFallacy": "Wärme und Arbeit als Zustandsgrößen behandeln - sie sind Prozessgrößen; nur die Differenzen der Zustandsfunktionen sind wegunabhängig.",
+      "layerIndex": 18,
+      "tags": [
+        "Axiom",
+        "Mathematisierung",
+        "Uni-Prep",
+        "Energetik"
+      ]
+    },
+    {
+      "id": "chemie-reaktionsgeschwindigkeit-mittlere-geschwindigkeit",
+      "fach": "Chemie",
+      "titleDE": "Reaktionsgeschwindigkeit und ihre Messung",
+      "titleZH": "反应速率及其测定：平均速率与浓度-时间曲线",
+      "summaryDE": "Die Reaktionsgeschwindigkeit gibt die Konzentrationsänderung eines Stoffes pro Zeit an; sie wird experimentell aus dem Zeitverlauf einer messbaren Größe bestimmt.",
+      "summaryZH": "反应速率是单位时间内某物质浓度的变化，由可测量量随时间的实验曲线求得。",
+      "category": "Kinetik-und-Gleichgewicht",
+      "curriculumTier": "EF",
+      "stage": "grundlagen",
+      "level": 2,
+      "xpReward": 100,
+      "estimatedMinutes": 12,
+      "prerequisites": [
+        "chemie-reaktionsgleichungen-ausgleichen"
+      ],
+      "keyFormulaOrSentence": "v = -Delta c(Edukt) / Delta t = +Delta c(Produkt) / Delta t",
+      "commonFallacy": "Die über den gesamten Versuch gemittelte Geschwindigkeit mit der Momentangeschwindigkeit zu Beginn der Reaktion verwechseln.",
+      "layerIndex": 4,
+      "tags": [
+        "Formel",
+        "Kinetik",
+        "Labor",
+        "Grafik"
+      ]
+    },
+    {
+      "id": "chemie-stosstheorie-kollision-molekuele",
+      "fach": "Chemie",
+      "titleDE": "Stoßtheorie und wirksame Kollisionen",
+      "titleZH": "碰撞理论：有效碰撞与分子取向的作用",
+      "summaryDE": "Nur Zusammenstöße mit ausreichender kinetischer Energie und günstiger Orientierung führen zur Reaktion; die Stoßzahl wächst mit Konzentration und Temperatur.",
+      "summaryZH": "只有能量足够且取向有利的碰撞才引发反应，碰撞频率随浓度与温度上升。",
+      "category": "Kinetik-und-Gleichgewicht",
+      "curriculumTier": "EF",
+      "stage": "grundlagen",
+      "level": 2,
+      "xpReward": 105,
+      "estimatedMinutes": 12,
+      "prerequisites": [
+        "chemie-reaktionsgeschwindigkeit-mittlere-geschwindigkeit"
+      ],
+      "keyFormulaOrSentence": "wirksamer Stoß: E_kin >= E_A und geeignete Orientierung;  v ~ Z * exp(-E_A / (R * T))",
+      "commonFallacy": "Jede Kollision für reaktionsauslösend halten - bei Raumtemperatur ist nur ein verschwindend kleiner Anteil der Stöße wirksam.",
+      "layerIndex": 5,
+      "tags": [
+        "Modell",
+        "Kinetik",
+        "Basiswissen",
+        "Mathematisierung"
+      ]
+    },
+    {
+      "id": "chemie-einflussfaktoren-konzentration-temperatur",
+      "fach": "Chemie",
+      "titleDE": "Beeinflussung der Reaktionsgeschwindigkeit",
+      "titleZH": "反应速率的影响因素：浓度、温度、压力与表面",
+      "summaryDE": "Konzentration, Temperatur, Druck und Zerteilungsgrad verändern die Zahl oder die Wirksamkeit der Stöße und damit die Reaktionsgeschwindigkeit.",
+      "summaryZH": "浓度、温度、压力与分散度改变有效碰撞的数量或几率，从而影响反应速率。",
+      "category": "Kinetik-und-Gleichgewicht",
+      "curriculumTier": "EF",
+      "stage": "grundlagen",
+      "level": 2,
+      "xpReward": 110,
+      "estimatedMinutes": 14,
+      "prerequisites": [
+        "chemie-stosstheorie-kollision-molekuele"
+      ],
+      "keyFormulaOrSentence": "RGT-Regel: eine Temperaturerhöhung um 10 K verdoppelt bis verdreifacht die Reaktionsgeschwindigkeit",
+      "commonFallacy": "Annehmen, eine Temperaturerhöhung verschiebe das Gleichgewicht immer zur Produktseite - zunächst werden Hin- und Rückreaktion gleichermaßen beschleunigt.",
+      "layerIndex": 6,
+      "tags": [
+        "Verfahren",
+        "Kinetik",
+        "Labor",
+        "Klausur-Dauerbrenner"
+      ]
+    },
+    {
+      "id": "chemie-massenwirkungsgesetz-gleichgewichtskonstante",
+      "fach": "Chemie",
+      "titleDE": "Massenwirkungsgesetz & Gleichgewichtskonstante Kc",
+      "titleZH": "质量作用定律与浓度平衡常数 Kc 的建立",
+      "summaryDE": "Im Gleichgewicht ist der Quotient aus den Produkten der Gleichgewichtskonzentrationen von Produkten und Edukten konstant; seine Größe quantifiziert die Lage des Gleichgewichts.",
+      "summaryZH": "平衡时产物与反应物平衡浓度幂次乘积之比为常数，其数值定量描述平衡位置。",
+      "category": "Kinetik-und-Gleichgewicht",
+      "curriculumTier": "EF",
+      "stage": "grundlagen",
+      "level": 2,
+      "xpReward": 115,
+      "estimatedMinutes": 14,
+      "prerequisites": [
+        "chemie-reaktionsgleichungen-ausgleichen"
+      ],
+      "keyFormulaOrSentence": "Kc = (c(C)^c * c(D)^d) / (c(A)^a * c(B)^b)  fuer  a A + b B <=> c C + d D",
+      "commonFallacy": "Kc als Geschwindigkeitskonstante lesen oder von der Ausgangskonzentration abhängig machen - Kc hängt allein von der Temperatur ab.",
+      "layerIndex": 5,
+      "tags": [
+        "Formel",
+        "Gleichgewicht",
+        "Klausur-Dauerbrenner",
+        "Basiswissen"
+      ]
+    },
+    {
+      "id": "chemie-prinzip-von-le-chatelier",
+      "fach": "Chemie",
+      "titleDE": "Prinzip von Le Chatelier",
+      "titleZH": "勒夏特列原理：外部应激下的平衡移动方向",
+      "summaryDE": "Ein System im Gleichgewicht weicht einer Störung so aus, dass die Wirkung der Störung verringert wird; daraus folgen Richtung und Ausmaß der Verschiebung.",
+      "summaryZH": "平衡体系通过削弱外界扰动来抵消该扰动，由此可判断平衡移动的方向与幅度。",
+      "category": "Kinetik-und-Gleichgewicht",
+      "curriculumTier": "EF",
+      "stage": "vertiefung",
+      "level": 2,
+      "xpReward": 115,
+      "estimatedMinutes": 14,
+      "prerequisites": [
+        "chemie-massenwirkungsgesetz-gleichgewichtskonstante",
+        "chemie-einflussfaktoren-konzentration-temperatur"
+      ],
+      "keyFormulaOrSentence": "Temperatur erhöhen begünstigt die endotherme Richtung, Druck erhöhen die Seite mit weniger Gasteilchen, Eduktzugabe die Produktbildung",
+      "commonFallacy": "Von einer Verschiebung sprechen, ohne die Art der Störung zu benennen - ohne Störgröße ist jede Aussage über die Richtung beliebig.",
+      "layerIndex": 7,
+      "tags": [
+        "Axiom",
+        "Gleichgewicht",
+        "Klausur-Dauerbrenner",
+        "AFB-III"
+      ]
+    },
+    {
+      "id": "chemie-gleichgewichtsberechnung-dreisatz-tabelle",
+      "fach": "Chemie",
+      "titleDE": "Quantitative Gleichgewichtsberechnung",
+      "titleZH": "平衡的定量计算：起始-变化-平衡三行表法",
+      "summaryDE": "Mit einer Bilanzierungstabelle aus Startkonzentration, Änderung und Gleichgewichtskonzentration lassen sich Kc oder eine unbekannte Gleichgewichtskonzentration berechnen.",
+      "summaryZH": "用「起始-变化-平衡」三行表列式，可求 Kc 或未知的平衡浓度。",
+      "category": "Kinetik-und-Gleichgewicht",
+      "curriculumTier": "Q1",
+      "stage": "vertiefung",
+      "level": 2,
+      "xpReward": 130,
+      "estimatedMinutes": 16,
+      "prerequisites": [
+        "chemie-prinzip-von-le-chatelier",
+        "chemie-massenwirkungsgesetz-gleichgewichtskonstante"
+      ],
+      "keyFormulaOrSentence": "c(Gleichgewicht) = c(Start) - n * x  mit dem Umsatz x aus dem Stoffmengenverhältnis der Gleichung",
+      "commonFallacy": "Die Änderungszeile mit den Koeffizienten verrechnen, ohne Vorzeichen für Edukte und Produkte zu trennen - Edukte nehmen ab, Produkte zu.",
+      "layerIndex": 9,
+      "tags": [
+        "Verfahren",
+        "Gleichgewicht",
+        "Mathematisierung",
+        "Klausur-Dauerbrenner"
+      ]
+    },
+    {
+      "id": "chemie-technische-gleichgewichte-haber-bosch",
+      "fach": "Chemie",
+      "titleDE": "Technische Gleichgewichte am Beispiel der Ammoniaksynthese",
+      "titleZH": "工业平衡实例：合成氨工艺中的产率与速率权衡",
+      "summaryDE": "Die Ammoniaksynthese zeigt den Zielkonflikt zwischen Gleichgewichtslage und Reaktionsgeschwindigkeit: hoher Druck begünstigt die Ausbeute, hohe Temperatur die Geschwindigkeit.",
+      "summaryZH": "合成氨体现平衡位置与反应速率之间的矛盾：高压提高产率，高温提高速率，工艺必须折中。",
+      "category": "Kinetik-und-Gleichgewicht",
+      "curriculumTier": "Q1",
+      "stage": "vertiefung",
+      "level": 2,
+      "xpReward": 140,
+      "estimatedMinutes": 18,
+      "prerequisites": [
+        "chemie-prinzip-von-le-chatelier",
+        "chemie-gleichgewichtsberechnung-dreisatz-tabelle",
+        "chemie-stoffkreislauf-technische-verfahren"
+      ],
+      "keyFormulaOrSentence": "N2 + 3 H2 <=> 2 NH3 mit Delta-H < 0: Druck erhöhen, Temperatur maßvoll wählen, Katalysator einsetzen",
+      "commonFallacy": "Für maximale Ausbeute die Temperatur immer weiter senken - dann wird die Gleichgewichtseinstellung so langsam, dass die Raum-Zeit-Ausbeute sinkt.",
+      "layerIndex": 10,
+      "tags": [
+        "Industrie",
+        "Gleichgewicht",
+        "Klausur-Dauerbrenner",
+        "AFB-III"
+      ]
+    },
+    {
+      "id": "chemie-loeslichkeitsgleichgewicht-kl",
+      "fach": "Chemie",
+      "titleDE": "Löslichkeitsgleichgewicht und Löslichkeitsprodukt",
+      "titleZH": "溶解平衡与溶度积 KL：难溶盐的定性与定量判据",
+      "summaryDE": "Zwischen einem schwer löslichen Salz und seinen Ionen stellt sich ein Gleichgewicht ein; das Löslichkeitsprodukt erlaubt die Vorhersage, ob ein Niederschlag ausfällt.",
+      "summaryZH": "难溶盐与其离子之间建立平衡，溶度积可预测是否生成沉淀。",
+      "category": "Kinetik-und-Gleichgewicht",
+      "curriculumTier": "Q2",
+      "stage": "synthese",
+      "level": 3,
+      "xpReward": 165,
+      "estimatedMinutes": 18,
+      "prerequisites": [
+        "chemie-massenwirkungsgesetz-gleichgewichtskonstante",
+        "chemie-gleichgewichtsberechnung-dreisatz-tabelle",
+        "chemie-reaktionstypen-faellung-neutralisation"
+      ],
+      "keyFormulaOrSentence": "KL = c(Ag+)^a * c(Cl-)^b;  eine Fällung tritt ein, sobald das Ionenprodukt KL überschreitet",
+      "commonFallacy": "Das Löslichkeitsprodukt mit der Löslichkeit gleichsetzen - KL ist ein Produkt von Konzentrationen mit stöchiometrieabhängiger Einheit.",
+      "layerIndex": 13,
+      "tags": [
+        "Formel",
+        "Gleichgewicht",
+        "Analytik",
+        "AFB-III"
+      ]
+    },
+    {
+      "id": "chemie-gleichgewicht-ausbeute-industrie-optimierung",
+      "fach": "Chemie",
+      "titleDE": "Gleichgewichtssteuerung und Ausbeuteoptimierung",
+      "titleZH": "平衡调控与产率优化：从实验室数据到工业装置",
+      "summaryDE": "Ausbeuteoptimierung verbindet Kc-Berechnung, Le-Chatelier-Analyse und kinetische Daten zu einer Prozessentscheidung, die Energieeinsatz und Nebenprodukte mitbewertet.",
+      "summaryZH": "产率优化把 Kc 计算、平衡移动分析与动力学数据整合成工艺决策，并一并评价能耗与副产物。",
+      "category": "Kinetik-und-Gleichgewicht",
+      "curriculumTier": "Q2",
+      "stage": "synthese",
+      "level": 3,
+      "xpReward": 175,
+      "estimatedMinutes": 20,
+      "prerequisites": [
+        "chemie-technische-gleichgewichte-haber-bosch",
+        "chemie-gleichgewichtsberechnung-dreisatz-tabelle",
+        "chemie-loeslichkeitsgleichgewicht-kl"
+      ],
+      "keyFormulaOrSentence": "Vorgehen: Kc bei Zieltemperatur berechnen -> Störgröße wählen -> Ausbeute abschätzen -> Energiebilanz und Katalyse gegenrechnen",
+      "commonFallacy": "Die Gleichgewichtskonstante als frei wählbaren Prozessparameter behandeln - Kc ist durch die Temperatur festgelegt, gesteuert werden nur die Randbedingungen.",
+      "layerIndex": 14,
+      "tags": [
+        "Verfahren",
+        "Gleichgewicht",
+        "Industrie",
+        "AFB-III"
+      ]
+    },
+    {
+      "id": "chemie-kinetik-formal-arrhenius-reaktionsordnung",
+      "fach": "Chemie",
+      "titleDE": "Formale Kinetik: Reaktionsordnung und Arrhenius-Gleichung",
+      "titleZH": "形式动力学：反应级数与阿伦尼乌斯方程",
+      "summaryDE": "Die Reaktionsordnung wird experimentell aus Konzentrations-Zeit-Daten bestimmt; die Arrhenius-Gleichung verknüpft Geschwindigkeitskonstante, Aktivierungsenergie und Temperatur.",
+      "summaryZH": "反应级数由浓度-时间数据实验确定，阿伦尼乌斯方程把速率常数、活化能与温度联系起来。",
+      "category": "Kinetik-und-Gleichgewicht",
+      "curriculumTier": "Uni_Prep",
+      "stage": "synthese",
+      "level": 3,
+      "xpReward": 185,
+      "estimatedMinutes": 25,
+      "prerequisites": [
+        "chemie-stosstheorie-kollision-molekuele",
+        "chemie-einflussfaktoren-konzentration-temperatur",
+        "chemie-reaktionsgeschwindigkeit-mittlere-geschwindigkeit"
+      ],
+      "keyFormulaOrSentence": "v = k * c(A)^m * c(B)^n  und  k = A * exp(-E_A / (R * T))",
+      "commonFallacy": "Die Reaktionsordnung aus den stöchiometrischen Koeffizienten der Gleichung ablesen - sie muss experimentell bestimmt werden und kann null oder gebrochen sein.",
+      "layerIndex": 18,
+      "tags": [
+        "Formel",
+        "Kinetik",
+        "Mathematisierung",
+        "Uni-Prep"
+      ]
+    },
+    {
+      "id": "chemie-mikrokinetik-uebergangszustand-theorie",
+      "fach": "Chemie",
+      "titleDE": "Übergangszustandstheorie und Mikrokinetik",
+      "titleZH": "过渡态理论与微观动力学：活化配合物与反应坐标",
+      "summaryDE": "Die Theorie des Übergangszustands beschreibt die Reaktion als Weg über einen energiereichen aktivierten Komplex; die Höhe dieser Barriere bestimmt die Geschwindigkeit.",
+      "summaryZH": "过渡态理论把反应描述为经过高能活化配合物的过程，该能垒的高度决定反应速率。",
+      "category": "Kinetik-und-Gleichgewicht",
+      "curriculumTier": "Uni_Prep",
+      "stage": "synthese",
+      "level": 3,
+      "xpReward": 190,
+      "estimatedMinutes": 25,
+      "prerequisites": [
+        "chemie-kinetik-formal-arrhenius-reaktionsordnung",
+        "chemie-einflussfaktoren-konzentration-temperatur",
+        "chemie-katalyse-energieprofil"
+      ],
+      "keyFormulaOrSentence": "k = (k_B * T / h) * K_Uebergangszustand  mit  Delta-G_Uebergangszustand = Delta-H_Uebergangszustand - T * Delta-S_Uebergangszustand",
+      "commonFallacy": "Den Übergangszustand als isolierbare Zwischenstufe mit endlicher Lebensdauer behandeln - er ist ein Maximum auf der Reaktionskoordinate.",
+      "layerIndex": 19,
+      "tags": [
+        "Modell",
+        "Mathematisierung",
+        "Kinetik",
+        "Uni-Prep"
+      ]
+    },
+    {
+      "id": "chemie-gleichgewicht-formal-thermodynamik-delta-g",
+      "fach": "Chemie",
+      "titleDE": "Gleichgewicht und Thermodynamik: Kc aus Delta-G",
+      "titleZH": "平衡的热力学本质：由 ΔG 导出平衡常数",
+      "summaryDE": "Die Gleichgewichtskonstante ist thermodynamisch an die freie Standardenthalpie gekoppelt; damit werden Kinetik, Energetik und Gleichgewicht zu einer Theorie verbunden.",
+      "summaryZH": "平衡常数与标准自由焓在热力学上直接耦合，由此把动力学、能量学与平衡统一为一个理论。",
+      "category": "Kinetik-und-Gleichgewicht",
+      "curriculumTier": "Uni_Prep",
+      "stage": "synthese",
+      "level": 3,
+      "xpReward": 195,
+      "estimatedMinutes": 28,
+      "prerequisites": [
+        "chemie-gleichgewicht-ausbeute-industrie-optimierung",
+        "chemie-gibbs-helmholtz-freie-enthalpie",
+        "chemie-kinetik-formal-arrhenius-reaktionsordnung"
+      ],
+      "keyFormulaOrSentence": "Delta-G = Delta-G_0 + R * T * ln(Q)  und im Gleichgewicht gilt  Delta-G_0 = -R * T * ln(K)",
+      "commonFallacy": "Delta-G_0 = 0 für jede Gleichgewichtseinstellung annehmen - im Gleichgewicht ist Delta-G null, nicht Delta-G_0.",
+      "layerIndex": 20,
+      "tags": [
+        "Axiom",
+        "Mathematisierung",
+        "Uni-Prep",
+        "Gleichgewicht"
+      ]
+    },
+    {
+      "id": "chemie-broensted-saeure-base-konzept",
+      "fach": "Chemie",
+      "titleDE": "Brønsted-Säure-Base-Konzept & pH-Wert",
+      "titleZH": "布朗斯特酸碱质子理论：共轭酸碱对与质子传递",
+      "summaryDE": "Säuren sind Protonendonatoren, Basen Protonenakzeptoren; jede Protolyse erzeugt ein korrespondierendes Säure-Base-Paar.",
+      "summaryZH": "酸是质子供体，碱是质子受体，每一次质子转移都生成一对共轭酸碱。",
+      "category": "Saeure-Base",
+      "curriculumTier": "EF",
+      "stage": "grundlagen",
+      "level": 2,
+      "xpReward": 100,
+      "estimatedMinutes": 12,
+      "prerequisites": [
+        "chemie-reaktionstypen-faellung-neutralisation",
+        "chemie-atombindung-elektronenpaarbindung"
+      ],
+      "keyFormulaOrSentence": "Säure <=> Base + H+;  korrespondierende Paare: H3O+/H2O, H2O/OH-, NH4+/NH3",
+      "commonFallacy": "Das Brønsted-Konzept auf wässrige Systeme beschränken - Protonenübergänge laufen auch in wasserfreien Medien wie flüssigem Ammoniak ab.",
+      "layerIndex": 5,
+      "tags": [
+        "Definition",
+        "Saeure-Base",
+        "Basiswissen",
+        "Klausur-Dauerbrenner"
+      ]
+    },
+    {
+      "id": "chemie-autoprotolyse-wasser-kw-ph-wert",
+      "fach": "Chemie",
+      "titleDE": "Autoprotolyse des Wassers und pH-Wert",
+      "titleZH": "水的自耦电离与 pH 值：离子积常数 Kw 与对数标度",
+      "summaryDE": "Wasser protolysiert mit sich selbst; das Ionenprodukt Kw legt fest, wie pH- und pOH-Wert bei 25 Grad Celsius verknüpft sind.",
+      "summaryZH": "水自身发生质子自递，离子积 Kw 规定了 25 摄氏度下 pH 与 pOH 的固定关系。",
+      "category": "Saeure-Base",
+      "curriculumTier": "EF",
+      "stage": "grundlagen",
+      "level": 2,
+      "xpReward": 105,
+      "estimatedMinutes": 12,
+      "prerequisites": [
+        "chemie-broensted-saeure-base-konzept"
+      ],
+      "keyFormulaOrSentence": "Kw = c(H3O+) * c(OH-) = 1e-14 mol^2/l^2  und  pH = -log(c(H3O+))  sowie  pH + pOH = 14",
+      "commonFallacy": "Bei einer stark verdünnten Säure einen pH-Wert über 7 erwarten - die Autoprotolyse des Wassers setzt eine untere Grenze von etwa pH 7.",
+      "layerIndex": 6,
+      "tags": [
+        "Formel",
+        "pH-Wert",
+        "Basiswissen",
+        "Klausur-Dauerbrenner"
+      ]
+    },
+    {
+      "id": "chemie-neutralisation-titration-indikator",
+      "fach": "Chemie",
+      "titleDE": "Neutralisation und Säure-Base-Titration",
+      "titleZH": "中和反应与酸碱滴定：指示剂与滴定终点的确定",
+      "summaryDE": "Bei der Neutralisation reagieren Oxonium- und Hydroxidionen zu Wasser; die Titration nutzt diesen Umsatz zur Konzentrationsbestimmung über das Volumen bis zum Farbumschlag.",
+      "summaryZH": "中和时水合氢离子与氢氧根结合成水，滴定利用该反应由变色时的体积求未知浓度。",
+      "category": "Saeure-Base",
+      "curriculumTier": "EF",
+      "stage": "grundlagen",
+      "level": 2,
+      "xpReward": 110,
+      "estimatedMinutes": 14,
+      "prerequisites": [
+        "chemie-autoprotolyse-wasser-kw-ph-wert",
+        "chemie-reaktionstypen-faellung-neutralisation"
+      ],
+      "keyFormulaOrSentence": "c(Säure) * V(Säure) = c(Base) * V(Base)  bei vollständiger Neutralisation mit z = 1",
+      "commonFallacy": "Den Farbumschlag des Indikators mit dem Äquivalenzpunkt gleichsetzen - der Umschlag zeigt nur den Endpunkt der Titration an.",
+      "layerIndex": 7,
+      "tags": [
+        "Verfahren",
+        "Titration",
+        "Labor",
+        "Klausur-Dauerbrenner"
+      ]
+    },
+    {
+      "id": "chemie-saeurestaerke-ks-pks-werte",
+      "fach": "Chemie",
+      "titleDE": "Säurestärke: Ks- und pKs-Werte",
+      "titleZH": "酸强度：Ks 与 pKs 值的定量标度",
+      "summaryDE": "Die Säurekonstante beschreibt die Lage des Protolysegleichgewichts; über pKs-Werte lassen sich Säure-Base-Reaktionen als Verdrängungsreaktionen vorhersagen.",
+      "summaryZH": "酸常数描述质子转移平衡的位置，用 pKs 值可把酸碱反应判定为向生成较弱酸的方向排代。",
+      "category": "Saeure-Base",
+      "curriculumTier": "Q1",
+      "stage": "vertiefung",
+      "level": 2,
+      "xpReward": 135,
+      "estimatedMinutes": 14,
+      "prerequisites": [
+        "chemie-autoprotolyse-wasser-kw-ph-wert",
+        "chemie-massenwirkungsgesetz-gleichgewichtskonstante"
+      ],
+      "keyFormulaOrSentence": "Ks = c(H3O+) * c(A-) / c(HA)  und  pKs = -log(Ks)  sowie  pKs(HA) + pKB(A-) = 14",
+      "commonFallacy": "Von einem kleinen pKs-Wert direkt auf eine hohe Oxoniumkonzentration schließen - die Säurestärke sagt nichts über die eingesetzte Konzentration aus.",
+      "layerIndex": 9,
+      "tags": [
+        "Formel",
+        "Saeure-Base",
+        "Klausur-Dauerbrenner",
+        "AFB-III"
+      ]
+    },
+    {
+      "id": "chemie-schwache-saeuren-ph-berechnung",
+      "fach": "Chemie",
+      "titleDE": "pH-Berechnung schwacher Säuren und Basen",
+      "titleZH": "弱酸弱碱的 pH 计算：简化近似的适用边界",
+      "summaryDE": "Bei schwachen Säuren wird nur ein kleiner Teil der Moleküle protoniert; die Näherung über die Wurzel aus Ks mal c0 liefert den pH-Wert, solange der Protolysegrad klein bleibt.",
+      "summaryZH": "弱酸只有少部分分子发生质子化，在电离度很小时可用 Ks 与起始浓度乘积开方求 pH。",
+      "category": "Saeure-Base",
+      "curriculumTier": "Q1",
+      "stage": "vertiefung",
+      "level": 2,
+      "xpReward": 140,
+      "estimatedMinutes": 16,
+      "prerequisites": [
+        "chemie-saeurestaerke-ks-pks-werte"
+      ],
+      "keyFormulaOrSentence": "c(H3O+) = sqrt(Ks * c0)  als Näherung für einen Protolysegrad unter 5 Prozent",
+      "commonFallacy": "Bei einer schwachen Säure der Konzentration 0.1 mol/l einen pH-Wert von 1 annehmen - dieser Schluss ist der klassische Fehler, da nur teilweise protolysiert wird.",
+      "layerIndex": 10,
+      "tags": [
+        "Formel",
+        "pH-Wert",
+        "Mathematisierung",
+        "Klausur-Dauerbrenner"
+      ]
+    },
+    {
+      "id": "chemie-titrationskurve-halbaequivalenzpunkt",
+      "fach": "Chemie",
+      "titleDE": "Titrationskurve und Halbäquivalenzpunkt",
+      "titleZH": "滴定曲线：半当点、当点与缓冲平台",
+      "summaryDE": "Der Verlauf der Titrationskurve verrät die Stärke der titrierten Säure; am Halbäquivalenzpunkt gilt pH gleich pKs, am Äquivalenzpunkt entscheidet das gebildete Salz über den pH-Wert.",
+      "summaryZH": "滴定曲线形状反映被滴定酸的强度，半当点时 pH 等于 pKs，当点时溶液的 pH 由生成的盐决定。",
+      "category": "Saeure-Base",
+      "curriculumTier": "Q1",
+      "stage": "vertiefung",
+      "level": 3,
+      "xpReward": 145,
+      "estimatedMinutes": 18,
+      "prerequisites": [
+        "chemie-neutralisation-titration-indikator",
+        "chemie-saeurestaerke-ks-pks-werte"
+      ],
+      "keyFormulaOrSentence": "Halbäquivalenzpunkt: c(HA) = c(A-) und damit pH = pKs",
+      "commonFallacy": "Am Äquivalenzpunkt immer pH 7 erwarten - bei schwacher Säure und starker Base reagiert die Lösung durch die Hydrolyse der konjugierten Base alkalisch.",
+      "layerIndex": 11,
+      "tags": [
+        "Grafik",
+        "Titration",
+        "Klausur-Dauerbrenner",
+        "AFB-III"
+      ]
+    },
+    {
+      "id": "chemie-ph-messung-potentiometrie",
+      "fach": "Chemie",
+      "titleDE": "pH-Messung und potentiometrische Titration",
+      "titleZH": "pH 测量与电位滴定：由电极电位读出滴定曲线",
+      "summaryDE": "Eine Glaselektrode liefert eine zur Wasserstoffionenkonzentration logarithmisch proportionale Spannung; deren Aufzeichnung ergibt automatisch die Titrationskurve.",
+      "summaryZH": "玻璃电极给出与氢离子浓度成对数关系的电位，记录该电位即可自动得到滴定曲线。",
+      "category": "Saeure-Base",
+      "curriculumTier": "Q1",
+      "stage": "vertiefung",
+      "level": 2,
+      "xpReward": 145,
+      "estimatedMinutes": 18,
+      "prerequisites": [
+        "chemie-titrationskurve-halbaequivalenzpunkt",
+        "chemie-neutralisation-titration-indikator"
+      ],
+      "keyFormulaOrSentence": "Das Elektrodenpotential folgt der Nernst-Gleichung: Delta-E = (0.059 V / z) * log(c(Ox) / c(Red)) mit z = 1",
+      "commonFallacy": "Die Anzeige des pH-Meters für eine absolute Größe halten - sie beruht auf einer Kalibrierung mit Pufferlösungen bekannten pH-Werts.",
+      "layerIndex": 12,
+      "tags": [
+        "Verfahren",
+        "Titration",
+        "Analytik",
+        "Grafik"
+      ]
+    },
+    {
+      "id": "chemie-puffer-systeme-henderson-hasselbalch",
+      "fach": "Chemie",
+      "titleDE": "Puffersysteme und Henderson-Hasselbalch-Gleichung",
+      "titleZH": "缓冲体系与亨德森-哈塞尔巴赫方程",
+      "summaryDE": "Ein Gemisch aus schwacher Säure und ihrer konjugierten Base hält den pH-Wert weitgehend konstant; die Henderson-Hasselbalch-Gleichung verknüpft pKs und Konzentrationsverhältnis.",
+      "summaryZH": "弱酸与其共轭碱的混合体系能大致稳定 pH 值，亨德森-哈塞尔巴赫方程把 pKs 与浓度比联系起来。",
+      "category": "Saeure-Base",
+      "curriculumTier": "Q2",
+      "stage": "synthese",
+      "level": 3,
+      "xpReward": 165,
+      "estimatedMinutes": 18,
+      "prerequisites": [
+        "chemie-schwache-saeuren-ph-berechnung",
+        "chemie-saeurestaerke-ks-pks-werte",
+        "chemie-titrationskurve-halbaequivalenzpunkt"
+      ],
+      "keyFormulaOrSentence": "pH = pKs + log(c(A-) / c(HA))",
+      "commonFallacy": "Annehmen, ein Puffer halte den pH-Wert bei jeder Zugabe konstant - die Pufferkapazität ist begrenzt und erschöpft sich mit steigender Menge starker Säure oder Base.",
+      "layerIndex": 13,
+      "tags": [
+        "Formel",
+        "Puffer",
+        "Klausur-Dauerbrenner",
+        "AFB-III"
+      ]
+    },
+    {
+      "id": "chemie-saeurebase-gleichgewichte-quantitativ",
+      "fach": "Chemie",
+      "titleDE": "Quantitative Protolysegleichgewichte",
+      "titleZH": "质子转移平衡的定量处理：pH、pKs 与浓度的联合计算",
+      "summaryDE": "Protolysegleichgewichte werden mit Stoffmengenbilanzen und dem Massenwirkungsgesetz vollständig beschrieben; daraus folgen pH-Wert, Protolysegrad und Verdünnungseffekte.",
+      "summaryZH": "用物质的量衡算与质量作用定律完整描述质子转移平衡，由此求 pH、电离度与稀释效应。",
+      "category": "Saeure-Base",
+      "curriculumTier": "Q2",
+      "stage": "synthese",
+      "level": 3,
+      "xpReward": 170,
+      "estimatedMinutes": 20,
+      "prerequisites": [
+        "chemie-schwache-saeuren-ph-berechnung",
+        "chemie-titrationskurve-halbaequivalenzpunkt",
+        "chemie-ph-messung-potentiometrie"
+      ],
+      "keyFormulaOrSentence": "Bilanzsystem: Ks-Ansatz + Massenbilanz + Elektroneutralitätsbedingung -> c(H3O+) berechnen",
+      "commonFallacy": "Bei sehr verdünnten Lösungen die Eigendissoziation des Wassers weglassen und dadurch pH-Werte über 7 für saure Lösungen erhalten.",
+      "layerIndex": 14,
+      "tags": [
+        "Verfahren",
+        "Saeure-Base",
+        "Mathematisierung",
+        "Klausur-Dauerbrenner"
+      ]
+    },
+    {
+      "id": "chemie-puffer-kapazitaet-anwendungen",
+      "fach": "Chemie",
+      "titleDE": "Pufferkapazität und technische Anwendungen",
+      "titleZH": "缓冲容量与实际应用：血液、生物体系与工业介质",
+      "summaryDE": "Die Pufferkapazität ist am größten, wenn die Konzentrationen von Säure und konjugierter Base gleich sind; biologische und technische Systeme nutzen genau dieses Verhältnis.",
+      "summaryZH": "当弱酸与其共轭碱浓度相等时缓冲容量最大，生物与工业体系正是利用这一比例稳定 pH。",
+      "category": "Saeure-Base",
+      "curriculumTier": "Q2",
+      "stage": "synthese",
+      "level": 3,
+      "xpReward": 170,
+      "estimatedMinutes": 20,
+      "prerequisites": [
+        "chemie-puffer-systeme-henderson-hasselbalch",
+        "chemie-saeurebase-gleichgewichte-quantitativ"
+      ],
+      "keyFormulaOrSentence": "maximale Pufferkapazität bei pH = pKs;  günstige Wahl: pKs im Bereich des Ziel-pH-Werts plus/minus 1",
+      "commonFallacy": "Für einen Ziel-pH-Wert von 7.4 einen Puffer mit pKs 3 wählen - außerhalb des Bereichs pKs plus/minus 1 ist die Pufferkapazität praktisch wirkungslos.",
+      "layerIndex": 15,
+      "tags": [
+        "Verfahren",
+        "Puffer",
+        "Alltag",
+        "AFB-III"
+      ]
+    },
+    {
+      "id": "chemie-saeurebase-formal-pks-ableitung",
+      "fach": "Chemie",
+      "titleDE": "Formale Ableitung von Ks und pKs aus dem Massenwirkungsgesetz",
+      "titleZH": "由质量作用定律形式化导出 Ks 与 pKs",
+      "summaryDE": "Die Säurekonstante entsteht formal durch Anwendung des Massenwirkungsgesetzes auf das Protolysegleichgewicht; pKs-Werte machen die Verdrängungsrichtung quantitativ vergleichbar.",
+      "summaryZH": "把质量作用定律用于质子转移平衡即形式化地得到酸常数，pKs 值使排代方向可定量比较。",
+      "category": "Saeure-Base",
+      "curriculumTier": "Uni_Prep",
+      "stage": "synthese",
+      "level": 3,
+      "xpReward": 185,
+      "estimatedMinutes": 25,
+      "prerequisites": [
+        "chemie-saeurestaerke-ks-pks-werte",
+        "chemie-schwache-saeuren-ph-berechnung",
+        "chemie-saeurebase-gleichgewichte-quantitativ"
+      ],
+      "keyFormulaOrSentence": "Ks = Kc * c(H2O) mit c(H2O) als Konstante;  Verdrängung: pKs1 < pKs2, das Gleichgewicht liegt auf der Seite der schwächeren Säure",
+      "commonFallacy": "Die Aktivität durch die Konzentration ersetzen und dabei vergessen, dass die Ableitung nur für verdünnte Lösungen gilt.",
+      "layerIndex": 18,
+      "tags": [
+        "Axiom",
+        "Mathematisierung",
+        "Saeure-Base",
+        "Uni-Prep"
+      ]
+    },
+    {
+      "id": "chemie-elektrolytgleichgewichte-formal-aktivitaet",
+      "fach": "Chemie",
+      "titleDE": "Elektrolytgleichgewichte und Aktivitäten",
+      "titleZH": "电解质平衡与活度：浓度之外的离子间相互作用",
+      "summaryDE": "In konzentrierten Elektrolytlösungen wechselwirken die Ionen miteinander; die Aktivität ersetzt die Konzentration und korrigiert damit pKs-Werte und Löslichkeitsprodukte.",
+      "summaryZH": "浓电解质溶液中离子间相互作用显著，用活度代替浓度才能修正 pKs 值与溶度积。",
+      "category": "Saeure-Base",
+      "curriculumTier": "Uni_Prep",
+      "stage": "synthese",
+      "level": 3,
+      "xpReward": 190,
+      "estimatedMinutes": 26,
+      "prerequisites": [
+        "chemie-saeurebase-formal-pks-ableitung",
+        "chemie-puffer-systeme-henderson-hasselbalch",
+        "chemie-loeslichkeitsgleichgewicht-kl"
+      ],
+      "keyFormulaOrSentence": "a_i = gamma_i * c_i / c_0  mit dem Aktivitätskoeffizienten gamma_i kleiner als 1",
+      "commonFallacy": "Aktivität und Konzentration als identische Größen behandeln - erst im Grenzfall unendlicher Verdünnung gilt gamma gleich 1.",
+      "layerIndex": 19,
+      "tags": [
+        "Modell",
+        "Mathematisierung",
+        "Analytik",
+        "Uni-Prep"
+      ]
+    },
+    {
+      "id": "chemie-oxidation-reduktion-elektronenuebertragung",
+      "fach": "Chemie",
+      "titleDE": "Oxidation und Reduktion als Elektronenübertragung",
+      "titleZH": "氧化还原即电子转移：给体-受体原理入门",
+      "summaryDE": "Oxidation bedeutet Elektronenabgabe, Reduktion Elektronenaufnahme; beides läuft gekoppelt ab, weil Elektronen nicht frei bestehen können.",
+      "summaryZH": "氧化是失去电子，还原是得到电子，两者必须耦合发生，因为电子不能独立存在。",
+      "category": "Elektrochemie",
+      "curriculumTier": "Sek_I",
+      "stage": "einfuehrung",
+      "level": 1,
+      "xpReward": 80,
+      "estimatedMinutes": 10,
+      "prerequisites": [
+        "chemie-reaktionsgleichungen-ausgleichen"
+      ],
+      "keyFormulaOrSentence": "Oxidation = Elektronenabgabe (Donator), Reduktion = Elektronenaufnahme (Akzeptor);  Oxidation ist Abgabe",
+      "commonFallacy": "Sauerstoff als zwingenden Bestandteil einer Oxidation annehmen - entscheidend ist die Elektronenabgabe, die auch ohne Sauerstoff abläuft.",
+      "layerIndex": 1,
+      "tags": [
+        "Definition",
+        "Redox",
+        "Basiswissen",
+        "Klausur-Dauerbrenner"
+      ]
+    },
+    {
+      "id": "chemie-oxidationszahlen-redoxreaktionen-aufstellen",
+      "fach": "Chemie",
+      "titleDE": "Oxidationszahlen und Redoxgleichungen aufstellen",
+      "titleZH": "氧化数与氧化还原方程式的配平：电子平衡法",
+      "summaryDE": "Oxidationszahlen ordnen die Bindungselektronen formal einem Partner zu; die Differenz zwischen Ausgangs- und Endzustand liefert die Zahl der übertragenen Elektronen.",
+      "summaryZH": "氧化数把成键电子形式地归属于某一方，反应前后氧化数之差给出转移的电子数。",
+      "category": "Elektrochemie",
+      "curriculumTier": "EF",
+      "stage": "grundlagen",
+      "level": 2,
+      "xpReward": 95,
+      "estimatedMinutes": 12,
+      "prerequisites": [
+        "chemie-oxidation-reduktion-elektronenuebertragung"
+      ],
+      "keyFormulaOrSentence": "Summe der Oxidationszahlen = Ionenladung;  Elektronenbilanz: aufgenommene Elektronen = abgegebene Elektronen",
+      "commonFallacy": "Oxidationszahl und Ionenladung gleichsetzen - die Oxidationszahl ist eine formale Rechengröße und muss bei kovalenten Bindungen nicht der realen Ladung entsprechen.",
+      "layerIndex": 4,
+      "tags": [
+        "Verfahren",
+        "Redox",
+        "Klausur-Dauerbrenner",
+        "Formel"
+      ]
+    },
+    {
+      "id": "chemie-elektrochemische-spannungsreihe",
+      "fach": "Chemie",
+      "titleDE": "Elektrochemische Spannungsreihe",
+      "titleZH": "电化学电位序：标准电极电势与氧化还原能力排序",
+      "summaryDE": "Die Spannungsreihe ordnet Redoxpaare nach ihrem Standardpotential; sie erlaubt die Vorhersage, welche Reaktion freiwillig abläuft und wie groß die Zellspannung ist.",
+      "summaryZH": "电位序按标准电极电势排列氧化还原电对，可预测反应能否自发及电池电压的大小。",
+      "category": "Elektrochemie",
+      "curriculumTier": "EF",
+      "stage": "grundlagen",
+      "level": 2,
+      "xpReward": 105,
+      "estimatedMinutes": 12,
+      "prerequisites": [
+        "chemie-oxidationszahlen-redoxreaktionen-aufstellen"
+      ],
+      "keyFormulaOrSentence": "E0(Zn/Zn2+) = -0.76 V und E0(Cu/Cu2+) = +0.34 V;  Delta-E0 = E0(Kathode) - E0(Anode)",
+      "commonFallacy": "Aus einem positiven Standardpotential direkt auf eine hohe Reaktionsgeschwindigkeit schließen - die Spannungsreihe beschreibt die Triebkraft, nicht die Kinetik.",
+      "layerIndex": 5,
+      "tags": [
+        "Modell",
+        "Elektrochemie",
+        "Redox",
+        "Klausur-Dauerbrenner"
+      ]
+    },
+    {
+      "id": "chemie-galvanische-zelle-daniell-element",
+      "fach": "Chemie",
+      "titleDE": "Galvanische Zelle und Daniell-Element",
+      "titleZH": "伽伐尼电池与丹尼尔电池：外电路电子流与盐桥离子流",
+      "summaryDE": "In einer galvanischen Zelle laufen Oxidation und Reduktion räumlich getrennt ab; Elektronenfluss im Leiter und Ionenfluss in der Salzbrücke schließen den Stromkreis.",
+      "summaryZH": "原电池中氧化与还原在空间上分开进行，导线中走电子、盐桥中走离子，共同闭合回路。",
+      "category": "Elektrochemie",
+      "curriculumTier": "EF",
+      "stage": "grundlagen",
+      "level": 2,
+      "xpReward": 110,
+      "estimatedMinutes": 14,
+      "prerequisites": [
+        "chemie-elektrochemische-spannungsreihe"
+      ],
+      "keyFormulaOrSentence": "Anode = Oxidation (Minuspol), Kathode = Reduktion (Pluspol);  Zellspannung Delta-E = E(Kathode) - E(Anode)",
+      "commonFallacy": "Anode und Kathode mit Plus- und Minuspol gleichsetzen - im galvanischen Element ist die Anode der Minuspol, bei der Elektrolyse dagegen der Pluspol.",
+      "layerIndex": 6,
+      "tags": [
+        "Modell",
+        "Elektrochemie",
+        "Klausur-Dauerbrenner",
+        "Grafik"
+      ]
+    },
+    {
+      "id": "chemie-elektrolyse-grundlagen",
+      "fach": "Chemie",
+      "titleDE": "Elektrolyse als erzwungene Redoxreaktion",
+      "titleZH": "电解：外加电压驱动的强制氧化还原",
+      "summaryDE": "Bei der Elektrolyse erzwingt eine äußere Spannungsquelle die nicht spontane Reaktion; die Zersetzungsspannung muss mindestens der Zellspannung der Umkehrreaktion entsprechen.",
+      "summaryZH": "电解用外部电源迫使非自发反应发生，分解电压至少需等于逆反应的电池电压。",
+      "category": "Elektrochemie",
+      "curriculumTier": "EF",
+      "stage": "grundlagen",
+      "level": 2,
+      "xpReward": 110,
+      "estimatedMinutes": 14,
+      "prerequisites": [
+        "chemie-oxidationszahlen-redoxreaktionen-aufstellen",
+        "chemie-elektrochemische-spannungsreihe"
+      ],
+      "keyFormulaOrSentence": "Elektrolyse: Anode = Oxidation (Pluspol), Kathode = Reduktion (Minuspol);  U_Zersetzung >= Delta-E der Umkehrreaktion",
+      "commonFallacy": "Die Elektrolyse als bloße Umkehrung der galvanischen Zelle ohne energetische Betrachtung darstellen - sie läuft nur bei aufgeprägter Spannung und verbraucht Energie.",
+      "layerIndex": 6,
+      "tags": [
+        "Modell",
+        "Elektrolyse",
+        "Redox",
+        "Klausur-Dauerbrenner"
+      ]
+    },
+    {
+      "id": "chemie-zellspannung-berechnung-standardpotentiale",
+      "fach": "Chemie",
+      "titleDE": "Berechnung der Zellspannung aus Standardpotentialen",
+      "titleZH": "由标准电极电势计算电池电压：电动势的定量分析",
+      "summaryDE": "Die Zellspannung ergibt sich als Differenz der Standardpotentiale von Kathode und Anode; ihr Vorzeichen zeigt, ob die Reaktion freiwillig verläuft.",
+      "summaryZH": "电池电压等于阴极与阳极标准电势之差，其正负表明反应能否自发进行。",
+      "category": "Elektrochemie",
+      "curriculumTier": "Q1",
+      "stage": "vertiefung",
+      "level": 2,
+      "xpReward": 135,
+      "estimatedMinutes": 16,
+      "prerequisites": [
+        "chemie-galvanische-zelle-daniell-element"
+      ],
+      "keyFormulaOrSentence": "Delta-E0 = E0(Akzeptor) - E0(Donator)  und  Delta-G0 = -z * F * Delta-E0  mit F = 96485 C/mol",
+      "commonFallacy": "Beim Bilden der Differenz Anode und Kathode vertauschen und dadurch ein falsches Vorzeichen der Zellspannung erhalten.",
+      "layerIndex": 9,
+      "tags": [
+        "Formel",
+        "Elektrochemie",
+        "Mathematisierung",
+        "Klausur-Dauerbrenner"
+      ]
+    },
+    {
+      "id": "chemie-nernst-gleichung-konzentrationszelle",
+      "fach": "Chemie",
+      "titleDE": "Elektrochemische Spannungsreihe & Nernst-Gleichung",
+      "titleZH": "能斯特方程与浓差电池：浓度对电极电势的影响",
+      "summaryDE": "Das Elektrodenpotential hängt über die Nernst-Gleichung von der Konzentration der beteiligten Ionen ab; eine Konzentrationszelle nutzt genau diese Abhängigkeit als Spannungsquelle.",
+      "summaryZH": "电极电势按能斯特方程依赖于相关离子浓度，浓差电池正是利用这一依赖输出电能。",
+      "category": "Elektrochemie",
+      "curriculumTier": "Q1",
+      "stage": "vertiefung",
+      "level": 3,
+      "xpReward": 145,
+      "estimatedMinutes": 18,
+      "prerequisites": [
+        "chemie-zellspannung-berechnung-standardpotentiale",
+        "chemie-massenwirkungsgesetz-gleichgewichtskonstante"
+      ],
+      "keyFormulaOrSentence": "E = E0 + (0.059 V / z) * log(c(Ox) / c(Red))  bei 25 Grad Celsius",
+      "commonFallacy": "Die Nernst-Gleichung auf Feststoffe und reines Wasser anwenden - deren Aktivität ist definitionsgemäß 1 und erscheint daher nicht im Logarithmus.",
+      "layerIndex": 10,
+      "tags": [
+        "Formel",
+        "Elektrochemie",
+        "Mathematisierung",
+        "AFB-III"
+      ]
+    },
+    {
+      "id": "chemie-elektrolyse-quantitativ-faraday-gesetze",
+      "fach": "Chemie",
+      "titleDE": "Quantitative Elektrolyse und Faraday-Gesetze",
+      "titleZH": "电解定量计算与法拉第定律：电量与物质的量之比",
+      "summaryDE": "Die abgeschiedene Stoffmenge ist proportional zur geflossenen Ladung; der Proportionalitätsfaktor ist die zur Reaktion gehörende Elektronenzahl.",
+      "summaryZH": "电解沉积的物质的量与通过的电量成正比，比例因子是反应所转移的电子数。",
+      "category": "Elektrochemie",
+      "curriculumTier": "Q1",
+      "stage": "vertiefung",
+      "level": 3,
+      "xpReward": 145,
+      "estimatedMinutes": 18,
+      "prerequisites": [
+        "chemie-elektrolyse-grundlagen",
+        "chemie-stoechiometrie-stoffmenge"
+      ],
+      "keyFormulaOrSentence": "Q = I * t  und  n = Q / (z * F)  mit F = 96485 C/mol",
+      "commonFallacy": "Die Stromstärke direkt als Stoffmenge einsetzen - erst über Q = I * t und die Elektronenzahl z entsteht aus der Ladung eine Stoffmenge.",
+      "layerIndex": 10,
+      "tags": [
+        "Formel",
+        "Elektrolyse",
+        "Stoechiometrie",
+        "Klausur-Dauerbrenner"
+      ]
+    },
+    {
+      "id": "chemie-batterien-akkumulatoren-energietraeger",
+      "fach": "Chemie",
+      "titleDE": "Batterien, Akkumulatoren und alternative Energieträger",
+      "titleZH": "电池、蓄电池与替代能源：能量密度与循环性能",
+      "summaryDE": "Batterien wandeln gespeicherte chemische Energie direkt in elektrische um; Akkumulatoren sind umkehrbar, Primärzellen nicht. Entscheidend sind Energie- und Leistungsdichte.",
+      "summaryZH": "电池把储存的化学能直接转换成电能，蓄电池可逆而原电池不可逆，关键在于能量密度与功率密度。",
+      "category": "Elektrochemie",
+      "curriculumTier": "Q1",
+      "stage": "vertiefung",
+      "level": 2,
+      "xpReward": 150,
+      "estimatedMinutes": 18,
+      "prerequisites": [
+        "chemie-zellspannung-berechnung-standardpotentiale",
+        "chemie-elektrolyse-grundlagen"
+      ],
+      "keyFormulaOrSentence": "Energie je Stoffmenge = Delta-E * z * F;  Bewertungsgrößen sind Energiedichte, Leistungsdichte, Zyklenzahl und Wirkungsgrad",
+      "commonFallacy": "Batterien als Energiespeicher mit dem Wirkungsgrad eines Kondensators vergleichen - Energiedichte, Leistungsdichte und Lebensdauer sind drei getrennte Kenngrößen.",
+      "layerIndex": 11,
+      "tags": [
+        "Verfahren",
+        "Elektrochemie",
+        "Alltag",
+        "AFB-III"
+      ]
+    },
+    {
+      "id": "chemie-korrosion-korrosionsschutz",
+      "fach": "Chemie",
+      "titleDE": "Korrosion und Korrosionsschutz",
+      "titleZH": "金属腐蚀与防腐：局部原电池与牺牲阳极",
+      "summaryDE": "Metallkorrosion ist eine kurzgeschlossene galvanische Zelle an der Oberfläche; Schutz gelingt durch Abschirmung, Passivierung oder kathodischen Schutz.",
+      "summaryZH": "金属腐蚀是表面上的短路原电池，可通过隔离、钝化或阴极保护来防止。",
+      "category": "Elektrochemie",
+      "curriculumTier": "Q2",
+      "stage": "synthese",
+      "level": 3,
+      "xpReward": 160,
+      "estimatedMinutes": 18,
+      "prerequisites": [
+        "chemie-elektrochemische-spannungsreihe",
+        "chemie-galvanische-zelle-daniell-element"
+      ],
+      "keyFormulaOrSentence": "Sauerstoffkorrosion: Fe -> Fe2+ + 2 e- (anodisch) und O2 + 2 H2O + 4 e- -> 4 OH- (kathodisch)",
+      "commonFallacy": "Korrosion als reinen Materialabtrag durch Säure darstellen - auch neutrales Wasser mit gelöstem Sauerstoff greift unedlere Metalle über Lokalelemente an.",
+      "layerIndex": 13,
+      "tags": [
+        "Modell",
+        "Korrosion",
+        "Alltag",
+        "AFB-III"
+      ]
+    },
+    {
+      "id": "chemie-brennstoffzelle-wirkungsgrad",
+      "fach": "Chemie",
+      "titleDE": "Brennstoffzelle und Wirkungsgrad",
+      "titleZH": "燃料电池与效率：化学能到电能的直接转化",
+      "summaryDE": "Die Brennstoffzelle wandelt die Reaktionsenthalpie eines Brennstoffs direkt in elektrische Energie um und umgeht damit die Carnot-Grenze der Wärmekraftmaschine.",
+      "summaryZH": "燃料电池把燃料的反应焓直接转换为电能，从而绕开热机的卡诺极限。",
+      "category": "Elektrochemie",
+      "curriculumTier": "Q2",
+      "stage": "synthese",
+      "level": 3,
+      "xpReward": 170,
+      "estimatedMinutes": 20,
+      "prerequisites": [
+        "chemie-batterien-akkumulatoren-energietraeger",
+        "chemie-nernst-gleichung-konzentrationszelle",
+        "chemie-gibbs-helmholtz-freie-enthalpie"
+      ],
+      "keyFormulaOrSentence": "Delta-G = -z * F * Delta-E  und  eta_max = Delta-G / Delta-H",
+      "commonFallacy": "Für eine Brennstoffzelle einen Wirkungsgrad über 100 Prozent behaupten, weil der Brennwert genutzt wird - auch hier gilt die Bilanz aus Enthalpie, Entropie und freier Enthalpie.",
+      "layerIndex": 14,
+      "tags": [
+        "Modell",
+        "Elektrochemie",
+        "Industrie",
+        "AFB-III"
+      ]
+    },
+    {
+      "id": "chemie-elektrochemie-umwelt-bewertung",
+      "fach": "Chemie",
+      "titleDE": "Elektrochemie im Spannungsfeld von Technik und Umwelt",
+      "titleZH": "电化学的技术与环境权衡：储能、电解与材料循环",
+      "summaryDE": "Elektrochemische Verfahren werden über Energiebilanz, Rohstoffbedarf, Recycling und Emissionen bewertet; die Bewertung trennt Sachurteil und Werturteil.",
+      "summaryZH": "电化学工艺按能量衡算、原料需求、回收与排放评价，评价时必须区分事实判断与价值判断。",
+      "category": "Elektrochemie",
+      "curriculumTier": "Q2",
+      "stage": "synthese",
+      "level": 3,
+      "xpReward": 175,
+      "estimatedMinutes": 20,
+      "prerequisites": [
+        "chemie-batterien-akkumulatoren-energietraeger",
+        "chemie-korrosion-korrosionsschutz",
+        "chemie-brennstoffzelle-wirkungsgrad"
+      ],
+      "keyFormulaOrSentence": "Bewertungsraster: Rohstoffe -> Energie- und Stoffbilanz -> Emissionen -> Recycling -> gesellschaftliche Bewertung",
+      "commonFallacy": "Ein Sachurteil über den Wirkungsgrad als Werturteil über die Technologie ausgeben - beide Urteilsformen müssen getrennt begründet werden.",
+      "layerIndex": 16,
+      "tags": [
+        "Verfahren",
+        "Alltag",
+        "Industrie",
+        "AFB-III"
+      ]
+    },
+    {
+      "id": "chemie-alkane-homologe-reihe-nomenklatur",
+      "fach": "Chemie",
+      "titleDE": "Alkane, homologe Reihe und Nomenklatur",
+      "titleZH": "烷烃同系物与系统命名：碳骨架的构造规则",
+      "summaryDE": "Alkane sind gesättigte Kohlenwasserstoffe mit Einfachbindungen; die homologe Reihe wächst je um eine CH2-Gruppe, die systematische Nomenklatur benennt jede Kette eindeutig.",
+      "summaryZH": "烷烃是只含单键的饱和烃，同系物逐级增加一个 CH2，系统命名法给出唯一的链名。",
+      "category": "Organische-Chemie",
+      "curriculumTier": "EF",
+      "stage": "grundlagen",
+      "level": 2,
+      "xpReward": 95,
+      "estimatedMinutes": 12,
+      "prerequisites": [
+        "chemie-atombindung-elektronenpaarbindung"
+      ],
+      "keyFormulaOrSentence": "C_nH_(2n+2);  Nomenklatur: längste Kette, Stammsystem, Substituenten alphabetisch, kleinste Lokanten",
+      "commonFallacy": "Die Hauptkette nach der ersten gefundenen Richtung wählen - die Nummerierung muss die kleinen Lokanten liefern, nicht die bequeme Leserichtung.",
+      "layerIndex": 4,
+      "tags": [
+        "Definition",
+        "Organik",
+        "Basiswissen",
+        "Verfahren"
+      ]
+    },
+    {
+      "id": "chemie-funktionelle-gruppen-nachweise",
+      "fach": "Chemie",
+      "titleDE": "Funktionelle Gruppen und ihre Nachweise",
+      "titleZH": "官能团及其检验：羟基、羰基、羧基与酯基的鉴别",
+      "summaryDE": "Funktionelle Gruppen bestimmen Reaktivität und typische Nachweisreaktionen; eine unbekannte Probe wird über eine Abfolge charakteristischer Nachweise eingeordnet.",
+      "summaryZH": "官能团决定反应活性与特征检验，未知样品通过一系列特征反应被归类。",
+      "category": "Organische-Chemie",
+      "curriculumTier": "EF",
+      "stage": "grundlagen",
+      "level": 2,
+      "xpReward": 105,
+      "estimatedMinutes": 14,
+      "prerequisites": [
+        "chemie-alkane-homologe-reihe-nomenklatur",
+        "chemie-elektronegativitaet-bindungspolaritaet"
+      ],
+      "keyFormulaOrSentence": "Nachweise: Hydroxygruppe über die Oxidationsprodukte, Carbonylgruppe über Silberspiegel oder roten Niederschlag, Carboxygruppe über Kohlendioxid aus Carbonat",
+      "commonFallacy": "Aus einem positiven Nachweis direkt auf eine bestimmte Verbindung schließen - der Nachweis belegt nur die funktionelle Gruppe, nicht die gesamte Konstitution.",
+      "layerIndex": 6,
+      "tags": [
+        "Verfahren",
+        "Labor",
+        "Organik",
+        "Klausur-Dauerbrenner"
+      ]
+    },
+    {
+      "id": "chemie-alkohole-oxidationsreihe",
+      "fach": "Chemie",
+      "titleDE": "Alkohole und ihre Oxidationsreihe",
+      "titleZH": "醇的氧化序列：由伯醇经醛到羧酸的氧化数攀升",
+      "summaryDE": "Alkohole werden schrittweise über Aldehyde zu Carbonsäuren oxidiert; die Oxidationszahl des funktionellen Kohlenstoffatoms steigt dabei in definierten Stufen.",
+      "summaryZH": "醇逐步经醛被氧化为羧酸，官能团碳原子的氧化数沿此序列逐级升高。",
+      "category": "Organische-Chemie",
+      "curriculumTier": "EF",
+      "stage": "grundlagen",
+      "level": 2,
+      "xpReward": 110,
+      "estimatedMinutes": 14,
+      "prerequisites": [
+        "chemie-funktionelle-gruppen-nachweise",
+        "chemie-oxidationszahlen-redoxreaktionen-aufstellen"
+      ],
+      "keyFormulaOrSentence": "primärer Alkohol -> Aldehyd -> Carbonsäure;  Oxidationszahlen des funktionellen C: -1 -> +1 -> +3",
+      "commonFallacy": "Die Oxidationsstufe des Alkohols und des Aldehyds gleichsetzen - jeder Schritt der Reihe erhöht die Oxidationszahl des funktionellen Kohlenstoffatoms.",
+      "layerIndex": 7,
+      "tags": [
+        "Verfahren",
+        "Redox",
+        "Organik",
+        "Klausur-Dauerbrenner"
+      ]
+    },
+    {
+      "id": "chemie-konstitutionsisomerie-stereoisomerie",
+      "fach": "Chemie",
+      "titleDE": "Konstitutionsisomerie und cis-trans-Stereoisomerie",
+      "titleZH": "构造异构与顺反立体异构：结构多样性的两个层级",
+      "summaryDE": "Konstitutionsisomere unterscheiden sich im Verknüpfungsmuster, Stereoisomere in der räumlichen Anordnung; bei Doppelbindungen ist diese Anordnung durch die fehlende Drehbarkeit festgelegt.",
+      "summaryZH": "构造异构体的连接方式不同，立体异构体的空间排列不同；双键不能自由旋转因而固定了顺反构型。",
+      "category": "Organische-Chemie",
+      "curriculumTier": "Q1",
+      "stage": "grundlagen",
+      "level": 2,
+      "xpReward": 130,
+      "estimatedMinutes": 16,
+      "prerequisites": [
+        "chemie-funktionelle-gruppen-nachweise",
+        "chemie-alkane-homologe-reihe-nomenklatur"
+      ],
+      "keyFormulaOrSentence": "Konstitutionsisomerie bedeutet verschiedene Verknüpfung;  cis-trans-Isomerie erfordert Doppelbindung oder Ring und je zwei verschiedene Substituenten",
+      "commonFallacy": "cis-trans-Isomerie an einer C-C-Einfachbindung zeichnen - dort erlaubt die freie Rotation keine dauerhafte Anordnung.",
+      "layerIndex": 9,
+      "tags": [
+        "Modell",
+        "Organik",
+        "Grafik",
+        "Klausur-Dauerbrenner"
+      ]
+    },
+    {
+      "id": "chemie-alkene-alkine-mehrfachbindungen",
+      "fach": "Chemie",
+      "titleDE": "Alkene, Alkine und Mehrfachbindungen",
+      "titleZH": "烯烃与炔烃：多键的电子结构、构型与加成活性",
+      "summaryDE": "Doppel- und Dreifachbindungen bestehen aus sigma- und pi-Bindungen; die locker gebundenen pi-Elektronen machen Mehrfachbindungen zum Angriffspunkt für Additionen.",
+      "summaryZH": "双键与三键由 σ 键与 π 键组成，π 电子结合较松，使多键成为加成反应的进攻位点。",
+      "category": "Organische-Chemie",
+      "curriculumTier": "Q1",
+      "stage": "vertiefung",
+      "level": 2,
+      "xpReward": 135,
+      "estimatedMinutes": 16,
+      "prerequisites": [
+        "chemie-alkane-homologe-reihe-nomenklatur",
+        "chemie-molekuelgeometrie-epa-modell"
+      ],
+      "keyFormulaOrSentence": "Doppelbindung = 1 sigma + 1 pi;  Dreifachbindung = 1 sigma + 2 pi;  Ethen C2H4, Ethin C2H2",
+      "commonFallacy": "Das pi-Elektronenpaar wie ein zusätzliches freies Elektronenpaar eines Atoms behandeln - es ist über beide Kohlenstoffatome verteilt und senkrecht zur Molekülebene orientiert.",
+      "layerIndex": 10,
+      "tags": [
+        "Modell",
+        "Organik",
+        "Bindung",
+        "Klausur-Dauerbrenner"
+      ]
+    },
+    {
+      "id": "chemie-carbonsaeuren-ester-veresterung",
+      "fach": "Chemie",
+      "titleDE": "Carbonsäuren, Ester und Veresterung",
+      "titleZH": "羧酸与酯：酯化平衡、酸催化与产率调控",
+      "summaryDE": "Carbonsäuren reagieren mit Alkoholen unter Säurekatalyse zu Estern und Wasser; die Veresterung ist eine Gleichgewichtsreaktion, die über Le Chatelier gesteuert wird.",
+      "summaryZH": "羧酸在酸催化下与醇生成酯和水，酯化是可逆平衡反应，可用勒夏特列原理调控。",
+      "category": "Organische-Chemie",
+      "curriculumTier": "Q1",
+      "stage": "vertiefung",
+      "level": 2,
+      "xpReward": 145,
+      "estimatedMinutes": 16,
+      "prerequisites": [
+        "chemie-alkohole-oxidationsreihe",
+        "chemie-konstitutionsisomerie-stereoisomerie",
+        "chemie-prinzip-von-le-chatelier"
+      ],
+      "keyFormulaOrSentence": "R-COOH + R'-OH <=> R-COO-R' + H2O  mit Kc und Wasserentzug zur Verschiebung nach rechts",
+      "commonFallacy": "Die Veresterung als vollständig ablaufende Reaktion behandeln - sie ist eine Gleichgewichtsreaktion mit begrenzter Ausbeute.",
+      "layerIndex": 11,
+      "tags": [
+        "Formel",
+        "Organik",
+        "Gleichgewicht",
+        "Klausur-Dauerbrenner"
+      ]
+    },
+    {
+      "id": "chemie-elektrophile-addition-alkene",
+      "fach": "Chemie",
+      "titleDE": "Elektrophile Addition an Alkene",
+      "titleZH": "烯烃的亲电加成：碳正离子中间体与马氏规则",
+      "summaryDE": "Ein Elektrophil greift die pi-Elektronenwolke an; nach Bildung eines Carbokations lagert sich das Nucleophil an, wobei die stabilere Zwischenstufe bevorzugt entsteht.",
+      "summaryZH": "亲电试剂进攻 π 电子云，形成碳正离子中间体后亲核试剂加成，较稳定的碳正离子优先生成。",
+      "category": "Organische-Chemie",
+      "curriculumTier": "Q2",
+      "stage": "synthese",
+      "level": 3,
+      "xpReward": 160,
+      "estimatedMinutes": 18,
+      "prerequisites": [
+        "chemie-alkene-alkine-mehrfachbindungen",
+        "chemie-alkohole-oxidationsreihe"
+      ],
+      "keyFormulaOrSentence": "H2C=CH2 + Br2 -> 1,2-Dibromethan;  das Proton addiert sich an den wasserstoffreicheren Kohlenstoff, weil dort das stabilere Carbokation entsteht",
+      "commonFallacy": "Bei der Addition an ein unsymmetrisches Alken beide möglichen Produkte als gleich häufig annehmen - die Stabilität des Carbokations entscheidet eindeutig.",
+      "layerIndex": 13,
+      "tags": [
+        "Mechanismus",
+        "Organik",
+        "Reaktion",
+        "Klausur-Dauerbrenner"
+      ]
+    },
+    {
+      "id": "chemie-nukleophile-substitution-sn1-sn2-eliminierung",
+      "fach": "Chemie",
+      "titleDE": "Nukleophile Substitution SN1/SN2 und Eliminierung",
+      "titleZH": "亲核取代 SN1/SN2 与消除反应：四种机理的竞争",
+      "summaryDE": "Am gesättigten Kohlenstoff konkurrieren bimolekulare und unimolekulare Substitution mit der Eliminierung; Substrat, Nucleophil, Lösungsmittel und Temperatur entscheiden über den Weg.",
+      "summaryZH": "饱和碳上双分子与单分子取代同消除反应相互竞争，底物、亲核试剂、溶剂与温度共同决定路径。",
+      "category": "Organische-Chemie",
+      "curriculumTier": "Q2",
+      "stage": "synthese",
+      "level": 3,
+      "xpReward": 165,
+      "estimatedMinutes": 20,
+      "prerequisites": [
+        "chemie-alkohole-oxidationsreihe",
+        "chemie-konstitutionsisomerie-stereoisomerie",
+        "chemie-elektrophile-addition-alkene"
+      ],
+      "keyFormulaOrSentence": "SN2: v = k * c(Substrat) * c(Nucleophil) mit Konfigurationsumkehr;  SN1: v = k * c(Substrat) mit Racemat über ein Carbokation",
+      "commonFallacy": "SN1 und SN2 allein nach der Reaktionsgleichung unterscheiden - entscheidend sind Molekularität, Stereochemie des Produkts und Stabilität des Carbokations.",
+      "layerIndex": 14,
+      "tags": [
+        "Mechanismus",
+        "Organik",
+        "Mathematisierung",
+        "Klausur-Dauerbrenner"
+      ]
+    },
+    {
+      "id": "chemie-kunststoffe-naturstoffe-makromolekuele",
+      "fach": "Chemie",
+      "titleDE": "Kunststoffe und Naturstoffe",
+      "titleZH": "高分子与天然产物：聚合类型、链结构与生物大分子",
+      "summaryDE": "Kunststoffe entstehen durch Polyaddition, Polykondensation oder radikalische Polymerisation; Naturstoffe wie Fette, Kohlenhydrate und Proteine zeigen dieselben Bindungsmuster in biologischer Funktion.",
+      "summaryZH": "高分子通过加聚、缩聚或自由基聚合生成，脂肪、糖与蛋白质等天然产物在生物功能中呈现相同的键合模式。",
+      "category": "Organische-Chemie",
+      "curriculumTier": "Q2",
+      "stage": "synthese",
+      "level": 3,
+      "xpReward": 170,
+      "estimatedMinutes": 20,
+      "prerequisites": [
+        "chemie-carbonsaeuren-ester-veresterung",
+        "chemie-elektrophile-addition-alkene",
+        "chemie-alkene-alkine-mehrfachbindungen"
+      ],
+      "keyFormulaOrSentence": "Polymerisation: n Monomer -> Polymer;  Additionspolymerisation ohne Nebenprodukt, Polykondensation unter Abspaltung von Wasser oder Alkohol",
+      "commonFallacy": "Die Wiederholeinheit eines Polymers mit dem Monomer gleichsetzen - bei der Polykondensation enthält die Wiederholeinheit ein Atom weniger als das Monomer.",
+      "layerIndex": 15,
+      "tags": [
+        "Modell",
+        "Kunststoffe",
+        "Naturstoffe",
+        "Klausur-Dauerbrenner"
+      ]
+    },
+    {
+      "id": "chemie-klausur-synthese-abitur",
+      "fach": "Chemie",
+      "titleDE": "Klausur-Synthese: mehrstufige Reaktionswege im Abitur",
+      "titleZH": "毕业考试综合题：多步反应路线与跨领域论证链",
+      "summaryDE": "Eine Abituraufgabe verknüpft Strukturanalyse, Reaktionsweg, Energetik und Bewertung zu einer durchgehenden Argumentationskette von der Aufgabenstellung bis zum begründeten Urteil.",
+      "summaryZH": "毕业考试综合题把结构分析、反应路径、能量学与评价串联成一条从题干到结论的完整论证链。",
+      "category": "Organische-Chemie",
+      "curriculumTier": "Q2",
+      "stage": "klausur_praxis",
+      "level": 3,
+      "xpReward": 200,
+      "estimatedMinutes": 30,
+      "prerequisites": [
+        "chemie-nukleophile-substitution-sn1-sn2-eliminierung",
+        "chemie-kunststoffe-naturstoffe-makromolekuele",
+        "chemie-saeurebase-gleichgewichte-quantitativ",
+        "chemie-gleichgewicht-ausbeute-industrie-optimierung",
+        "chemie-elektrochemie-umwelt-bewertung"
+      ],
+      "keyFormulaOrSentence": "Lösungsschema: Struktur aus den Daten ableiten -> Reaktionsweg mit Mechanismus und Bedingungen begründen -> energetisch und kinetisch prüfen -> Sachurteil und Werturteil trennen",
+      "commonFallacy": "Sofort Reaktionsgleichungen aufschreiben, ohne die Struktur erst aus den gegebenen Daten abzuleiten - damit fehlt der Ansatz und die AFB-III-Punkte sind verloren.",
+      "layerIndex": 17,
+      "tags": [
+        "Verfahren",
+        "AFB-III",
+        "Klausur-Dauerbrenner",
+        "Schwerpunkt-2026"
+      ]
+    },
+    {
+      "id": "chemie-reaktionsmechanismen-formal-elektronenpaar",
+      "fach": "Chemie",
+      "titleDE": "Formale Reaktionsmechanismen und Elektronenpaarübergänge",
+      "titleZH": "形式化反应机理：电子对转移、形式电荷与诱导效应",
+      "summaryDE": "Mechanismen werden formal mit gekrümmten Pfeilen beschrieben, die Elektronenpaarverschiebungen anzeigen; Formalladung und Mesomerie erklären Stabilität und Reaktionsort.",
+      "summaryZH": "机理用弯箭号形式化地表示电子对转移，形式电荷与共振离域解释中间体的稳定性与反应位点。",
+      "category": "Organische-Chemie",
+      "curriculumTier": "Uni_Prep",
+      "stage": "synthese",
+      "level": 3,
+      "xpReward": 185,
+      "estimatedMinutes": 25,
+      "prerequisites": [
+        "chemie-nukleophile-substitution-sn1-sn2-eliminierung",
+        "chemie-carbonsaeuren-ester-veresterung",
+        "chemie-funktionelle-gruppen-nachweise"
+      ],
+      "keyFormulaOrSentence": "Formalladung = Valenzelektronen - (freie Elektronen + halbe Bindungselektronen);  der Pfeil zeigt den Elektronenpaarfluss vom Donor zum Akzeptor",
+      "commonFallacy": "Gekrümmte Pfeile von Atom zu Atom zeichnen statt vom Elektronenpaar zum Akzeptoratom - dadurch werden Ladungen und Bindungsänderungen falsch zugeordnet.",
+      "layerIndex": 18,
+      "tags": [
+        "Axiom",
+        "Mechanismus",
+        "Mathematisierung",
+        "Uni-Prep"
+      ]
+    },
+    {
+      "id": "chemie-spektroskopie-ir-nmr",
+      "fach": "Chemie",
+      "titleDE": "Spektroskopie: IR- und NMR-Spektren auswerten",
+      "titleZH": "波谱解析：红外与核磁共振谱的结构推断",
+      "summaryDE": "IR-Spektren zeigen charakteristische Schwingungen funktioneller Gruppen, NMR-Spektren die Zahl und Umgebung der Wasserstoffatome; zusammen ergeben sie ein Strukturbild.",
+      "summaryZH": "红外谱给出官能团的特征振动，核磁共振谱给出氢原子的数量与环境，两者结合完成结构推断。",
+      "category": "Organische-Chemie",
+      "curriculumTier": "Uni_Prep",
+      "stage": "synthese",
+      "level": 3,
+      "xpReward": 185,
+      "estimatedMinutes": 25,
+      "prerequisites": [
+        "chemie-funktionelle-gruppen-nachweise",
+        "chemie-konstitutionsisomerie-stereoisomerie",
+        "chemie-reaktionsmechanismen-formal-elektronenpaar"
+      ],
+      "keyFormulaOrSentence": "IR: Wellenzahl in cm^-1, Carbonylbande bei etwa 1700 cm^-1;  NMR: Zahl der Signale = Zahl ungleichwertiger H-Atome, Fläche = Verhältnis, Aufspaltung = Nachbar-H",
+      "commonFallacy": "Aus einem einzigen IR-Signal auf eine vollständige Struktur schließen - IR zeigt funktionelle Gruppen, liefert aber kein vollständiges Kohlenstoffskelett.",
+      "layerIndex": 19,
+      "tags": [
+        "Verfahren",
+        "Analytik",
+        "Organik",
+        "Uni-Prep"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "id": "e-chemie-stoffeigenschaften-stoffgemische-chemie-trennverfahren-gemische",
+      "from": "chemie-stoffeigenschaften-stoffgemische",
+      "to": "chemie-trennverfahren-gemische",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-chemie-atomaufbau-schalenmodell-chemie-periodensystem-elementgruppen",
+      "from": "chemie-atomaufbau-schalenmodell",
+      "to": "chemie-periodensystem-elementgruppen",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-chemie-periodensystem-elementgruppen-chemie-ionenbindung-ionengitter",
+      "from": "chemie-periodensystem-elementgruppen",
+      "to": "chemie-ionenbindung-ionengitter",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-chemie-periodensystem-elementgruppen-chemie-atombindung-elektronenpaarbindung",
+      "from": "chemie-periodensystem-elementgruppen",
+      "to": "chemie-atombindung-elektronenpaarbindung",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-chemie-atombindung-elektronenpaarbindung-chemie-elektronegativitaet-bindungspolaritaet",
+      "from": "chemie-atombindung-elektronenpaarbindung",
+      "to": "chemie-elektronegativitaet-bindungspolaritaet",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-chemie-elektronegativitaet-bindungspolaritaet-chemie-molekuelgeometrie-epa-modell",
+      "from": "chemie-elektronegativitaet-bindungspolaritaet",
+      "to": "chemie-molekuelgeometrie-epa-modell",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-chemie-molekuelgeometrie-epa-modell-chemie-zwischenmolekulare-kraefte-van-der-waals",
+      "from": "chemie-molekuelgeometrie-epa-modell",
+      "to": "chemie-zwischenmolekulare-kraefte-van-der-waals",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-chemie-zwischenmolekulare-kraefte-van-der-waals-chemie-wasserstoffbruecken-stoffeigenschaften",
+      "from": "chemie-zwischenmolekulare-kraefte-van-der-waals",
+      "to": "chemie-wasserstoffbruecken-stoffeigenschaften",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-chemie-elektronegativitaet-bindungspolaritaet-chemie-wasserstoffbruecken-stoffeigenschaften",
+      "from": "chemie-elektronegativitaet-bindungspolaritaet",
+      "to": "chemie-wasserstoffbruecken-stoffeigenschaften",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-chemie-elektronegativitaet-bindungspolaritaet-chemie-molekuelorbital-konzept",
+      "from": "chemie-elektronegativitaet-bindungspolaritaet",
+      "to": "chemie-molekuelorbital-konzept",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-chemie-molekuelgeometrie-epa-modell-chemie-molekuelorbital-konzept",
+      "from": "chemie-molekuelgeometrie-epa-modell",
+      "to": "chemie-molekuelorbital-konzept",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-chemie-wasserstoffbruecken-stoffeigenschaften-chemie-molekuelorbital-konzept",
+      "from": "chemie-wasserstoffbruecken-stoffeigenschaften",
+      "to": "chemie-molekuelorbital-konzept",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-chemie-molekuelorbital-konzept-chemie-quantenchemie-orbitalmodell",
+      "from": "chemie-molekuelorbital-konzept",
+      "to": "chemie-quantenchemie-orbitalmodell",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-chemie-zwischenmolekulare-kraefte-van-der-waals-chemie-quantenchemie-orbitalmodell",
+      "from": "chemie-zwischenmolekulare-kraefte-van-der-waals",
+      "to": "chemie-quantenchemie-orbitalmodell",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-chemie-atomaufbau-schalenmodell-chemie-quantenchemie-orbitalmodell",
+      "from": "chemie-atomaufbau-schalenmodell",
+      "to": "chemie-quantenchemie-orbitalmodell",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-chemie-reaktionsgleichungen-ausgleichen-chemie-stoechiometrie-stoffmenge",
+      "from": "chemie-reaktionsgleichungen-ausgleichen",
+      "to": "chemie-stoechiometrie-stoffmenge",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-chemie-reaktionsgleichungen-ausgleichen-chemie-energieumsatz-exotherm-endotherm",
+      "from": "chemie-reaktionsgleichungen-ausgleichen",
+      "to": "chemie-energieumsatz-exotherm-endotherm",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-chemie-reaktionsgleichungen-ausgleichen-chemie-reaktionstypen-faellung-neutralisation",
+      "from": "chemie-reaktionsgleichungen-ausgleichen",
+      "to": "chemie-reaktionstypen-faellung-neutralisation",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-chemie-stoechiometrie-stoffmenge-chemie-stoffkreislauf-technische-verfahren",
+      "from": "chemie-stoechiometrie-stoffmenge",
+      "to": "chemie-stoffkreislauf-technische-verfahren",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-chemie-reaktionstypen-faellung-neutralisation-chemie-stoffkreislauf-technische-verfahren",
+      "from": "chemie-reaktionstypen-faellung-neutralisation",
+      "to": "chemie-stoffkreislauf-technische-verfahren",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-chemie-energieumsatz-exotherm-endotherm-chemie-katalyse-energieprofil",
+      "from": "chemie-energieumsatz-exotherm-endotherm",
+      "to": "chemie-katalyse-energieprofil",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-chemie-reaktionstypen-faellung-neutralisation-chemie-katalyse-energieprofil",
+      "from": "chemie-reaktionstypen-faellung-neutralisation",
+      "to": "chemie-katalyse-energieprofil",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-chemie-energieumsatz-exotherm-endotherm-chemie-enthalpie-kalorimetrie",
+      "from": "chemie-energieumsatz-exotherm-endotherm",
+      "to": "chemie-enthalpie-kalorimetrie",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-chemie-enthalpie-kalorimetrie-chemie-satz-von-hess-bildungsenthalpie",
+      "from": "chemie-enthalpie-kalorimetrie",
+      "to": "chemie-satz-von-hess-bildungsenthalpie",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-chemie-satz-von-hess-bildungsenthalpie-chemie-entropie-zweiter-hauptsatz",
+      "from": "chemie-satz-von-hess-bildungsenthalpie",
+      "to": "chemie-entropie-zweiter-hauptsatz",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-chemie-entropie-zweiter-hauptsatz-chemie-gibbs-helmholtz-freie-enthalpie",
+      "from": "chemie-entropie-zweiter-hauptsatz",
+      "to": "chemie-gibbs-helmholtz-freie-enthalpie",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-chemie-satz-von-hess-bildungsenthalpie-chemie-gibbs-helmholtz-freie-enthalpie",
+      "from": "chemie-satz-von-hess-bildungsenthalpie",
+      "to": "chemie-gibbs-helmholtz-freie-enthalpie",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-chemie-katalyse-energieprofil-chemie-gibbs-helmholtz-freie-enthalpie",
+      "from": "chemie-katalyse-energieprofil",
+      "to": "chemie-gibbs-helmholtz-freie-enthalpie",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-chemie-gibbs-helmholtz-freie-enthalpie-chemie-energiebilanz-industrieller-prozesse",
+      "from": "chemie-gibbs-helmholtz-freie-enthalpie",
+      "to": "chemie-energiebilanz-industrieller-prozesse",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-chemie-stoffkreislauf-technische-verfahren-chemie-energiebilanz-industrieller-prozesse",
+      "from": "chemie-stoffkreislauf-technische-verfahren",
+      "to": "chemie-energiebilanz-industrieller-prozesse",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-chemie-entropie-zweiter-hauptsatz-chemie-energiebilanz-industrieller-prozesse",
+      "from": "chemie-entropie-zweiter-hauptsatz",
+      "to": "chemie-energiebilanz-industrieller-prozesse",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-chemie-gibbs-helmholtz-freie-enthalpie-chemie-thermodynamik-formal-hauptsaetze",
+      "from": "chemie-gibbs-helmholtz-freie-enthalpie",
+      "to": "chemie-thermodynamik-formal-hauptsaetze",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-chemie-energiebilanz-industrieller-prozesse-chemie-thermodynamik-formal-hauptsaetze",
+      "from": "chemie-energiebilanz-industrieller-prozesse",
+      "to": "chemie-thermodynamik-formal-hauptsaetze",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-chemie-entropie-zweiter-hauptsatz-chemie-thermodynamik-formal-hauptsaetze",
+      "from": "chemie-entropie-zweiter-hauptsatz",
+      "to": "chemie-thermodynamik-formal-hauptsaetze",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-chemie-reaktionsgleichungen-ausgleichen-chemie-reaktionsgeschwindigkeit-mittlere-geschwindigkeit",
+      "from": "chemie-reaktionsgleichungen-ausgleichen",
+      "to": "chemie-reaktionsgeschwindigkeit-mittlere-geschwindigkeit",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-chemie-reaktionsgeschwindigkeit-mittlere-geschwindigkeit-chemie-stosstheorie-kollision-molekuele",
+      "from": "chemie-reaktionsgeschwindigkeit-mittlere-geschwindigkeit",
+      "to": "chemie-stosstheorie-kollision-molekuele",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-chemie-stosstheorie-kollision-molekuele-chemie-einflussfaktoren-konzentration-temperatur",
+      "from": "chemie-stosstheorie-kollision-molekuele",
+      "to": "chemie-einflussfaktoren-konzentration-temperatur",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-chemie-reaktionsgleichungen-ausgleichen-chemie-massenwirkungsgesetz-gleichgewichtskonstante",
+      "from": "chemie-reaktionsgleichungen-ausgleichen",
+      "to": "chemie-massenwirkungsgesetz-gleichgewichtskonstante",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-chemie-massenwirkungsgesetz-gleichgewichtskonstante-chemie-prinzip-von-le-chatelier",
+      "from": "chemie-massenwirkungsgesetz-gleichgewichtskonstante",
+      "to": "chemie-prinzip-von-le-chatelier",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-chemie-einflussfaktoren-konzentration-temperatur-chemie-prinzip-von-le-chatelier",
+      "from": "chemie-einflussfaktoren-konzentration-temperatur",
+      "to": "chemie-prinzip-von-le-chatelier",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-chemie-prinzip-von-le-chatelier-chemie-gleichgewichtsberechnung-dreisatz-tabelle",
+      "from": "chemie-prinzip-von-le-chatelier",
+      "to": "chemie-gleichgewichtsberechnung-dreisatz-tabelle",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-chemie-massenwirkungsgesetz-gleichgewichtskonstante-chemie-gleichgewichtsberechnung-dreisatz-tabelle",
+      "from": "chemie-massenwirkungsgesetz-gleichgewichtskonstante",
+      "to": "chemie-gleichgewichtsberechnung-dreisatz-tabelle",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-chemie-prinzip-von-le-chatelier-chemie-technische-gleichgewichte-haber-bosch",
+      "from": "chemie-prinzip-von-le-chatelier",
+      "to": "chemie-technische-gleichgewichte-haber-bosch",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-chemie-gleichgewichtsberechnung-dreisatz-tabelle-chemie-technische-gleichgewichte-haber-bosch",
+      "from": "chemie-gleichgewichtsberechnung-dreisatz-tabelle",
+      "to": "chemie-technische-gleichgewichte-haber-bosch",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-chemie-stoffkreislauf-technische-verfahren-chemie-technische-gleichgewichte-haber-bosch",
+      "from": "chemie-stoffkreislauf-technische-verfahren",
+      "to": "chemie-technische-gleichgewichte-haber-bosch",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-chemie-massenwirkungsgesetz-gleichgewichtskonstante-chemie-loeslichkeitsgleichgewicht-kl",
+      "from": "chemie-massenwirkungsgesetz-gleichgewichtskonstante",
+      "to": "chemie-loeslichkeitsgleichgewicht-kl",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-chemie-gleichgewichtsberechnung-dreisatz-tabelle-chemie-loeslichkeitsgleichgewicht-kl",
+      "from": "chemie-gleichgewichtsberechnung-dreisatz-tabelle",
+      "to": "chemie-loeslichkeitsgleichgewicht-kl",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-chemie-reaktionstypen-faellung-neutralisation-chemie-loeslichkeitsgleichgewicht-kl",
+      "from": "chemie-reaktionstypen-faellung-neutralisation",
+      "to": "chemie-loeslichkeitsgleichgewicht-kl",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-chemie-technische-gleichgewichte-haber-bosch-chemie-gleichgewicht-ausbeute-industrie-optimierung",
+      "from": "chemie-technische-gleichgewichte-haber-bosch",
+      "to": "chemie-gleichgewicht-ausbeute-industrie-optimierung",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-chemie-gleichgewichtsberechnung-dreisatz-tabelle-chemie-gleichgewicht-ausbeute-industrie-optimierung",
+      "from": "chemie-gleichgewichtsberechnung-dreisatz-tabelle",
+      "to": "chemie-gleichgewicht-ausbeute-industrie-optimierung",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-chemie-loeslichkeitsgleichgewicht-kl-chemie-gleichgewicht-ausbeute-industrie-optimierung",
+      "from": "chemie-loeslichkeitsgleichgewicht-kl",
+      "to": "chemie-gleichgewicht-ausbeute-industrie-optimierung",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-chemie-stosstheorie-kollision-molekuele-chemie-kinetik-formal-arrhenius-reaktionsordnung",
+      "from": "chemie-stosstheorie-kollision-molekuele",
+      "to": "chemie-kinetik-formal-arrhenius-reaktionsordnung",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-chemie-einflussfaktoren-konzentration-temperatur-chemie-kinetik-formal-arrhenius-reaktionsordnung",
+      "from": "chemie-einflussfaktoren-konzentration-temperatur",
+      "to": "chemie-kinetik-formal-arrhenius-reaktionsordnung",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-chemie-reaktionsgeschwindigkeit-mittlere-geschwindigkeit-chemie-kinetik-formal-arrhenius-reaktionsordnung",
+      "from": "chemie-reaktionsgeschwindigkeit-mittlere-geschwindigkeit",
+      "to": "chemie-kinetik-formal-arrhenius-reaktionsordnung",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-chemie-kinetik-formal-arrhenius-reaktionsordnung-chemie-mikrokinetik-uebergangszustand-theorie",
+      "from": "chemie-kinetik-formal-arrhenius-reaktionsordnung",
+      "to": "chemie-mikrokinetik-uebergangszustand-theorie",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-chemie-einflussfaktoren-konzentration-temperatur-chemie-mikrokinetik-uebergangszustand-theorie",
+      "from": "chemie-einflussfaktoren-konzentration-temperatur",
+      "to": "chemie-mikrokinetik-uebergangszustand-theorie",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-chemie-katalyse-energieprofil-chemie-mikrokinetik-uebergangszustand-theorie",
+      "from": "chemie-katalyse-energieprofil",
+      "to": "chemie-mikrokinetik-uebergangszustand-theorie",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-chemie-gleichgewicht-ausbeute-industrie-optimierung-chemie-gleichgewicht-formal-thermodynamik-delta-g",
+      "from": "chemie-gleichgewicht-ausbeute-industrie-optimierung",
+      "to": "chemie-gleichgewicht-formal-thermodynamik-delta-g",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-chemie-gibbs-helmholtz-freie-enthalpie-chemie-gleichgewicht-formal-thermodynamik-delta-g",
+      "from": "chemie-gibbs-helmholtz-freie-enthalpie",
+      "to": "chemie-gleichgewicht-formal-thermodynamik-delta-g",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-chemie-kinetik-formal-arrhenius-reaktionsordnung-chemie-gleichgewicht-formal-thermodynamik-delta-g",
+      "from": "chemie-kinetik-formal-arrhenius-reaktionsordnung",
+      "to": "chemie-gleichgewicht-formal-thermodynamik-delta-g",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-chemie-reaktionstypen-faellung-neutralisation-chemie-broensted-saeure-base-konzept",
+      "from": "chemie-reaktionstypen-faellung-neutralisation",
+      "to": "chemie-broensted-saeure-base-konzept",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-chemie-atombindung-elektronenpaarbindung-chemie-broensted-saeure-base-konzept",
+      "from": "chemie-atombindung-elektronenpaarbindung",
+      "to": "chemie-broensted-saeure-base-konzept",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-chemie-broensted-saeure-base-konzept-chemie-autoprotolyse-wasser-kw-ph-wert",
+      "from": "chemie-broensted-saeure-base-konzept",
+      "to": "chemie-autoprotolyse-wasser-kw-ph-wert",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-chemie-autoprotolyse-wasser-kw-ph-wert-chemie-neutralisation-titration-indikator",
+      "from": "chemie-autoprotolyse-wasser-kw-ph-wert",
+      "to": "chemie-neutralisation-titration-indikator",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-chemie-reaktionstypen-faellung-neutralisation-chemie-neutralisation-titration-indikator",
+      "from": "chemie-reaktionstypen-faellung-neutralisation",
+      "to": "chemie-neutralisation-titration-indikator",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-chemie-autoprotolyse-wasser-kw-ph-wert-chemie-saeurestaerke-ks-pks-werte",
+      "from": "chemie-autoprotolyse-wasser-kw-ph-wert",
+      "to": "chemie-saeurestaerke-ks-pks-werte",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-chemie-massenwirkungsgesetz-gleichgewichtskonstante-chemie-saeurestaerke-ks-pks-werte",
+      "from": "chemie-massenwirkungsgesetz-gleichgewichtskonstante",
+      "to": "chemie-saeurestaerke-ks-pks-werte",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-chemie-saeurestaerke-ks-pks-werte-chemie-schwache-saeuren-ph-berechnung",
+      "from": "chemie-saeurestaerke-ks-pks-werte",
+      "to": "chemie-schwache-saeuren-ph-berechnung",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-chemie-neutralisation-titration-indikator-chemie-titrationskurve-halbaequivalenzpunkt",
+      "from": "chemie-neutralisation-titration-indikator",
+      "to": "chemie-titrationskurve-halbaequivalenzpunkt",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-chemie-saeurestaerke-ks-pks-werte-chemie-titrationskurve-halbaequivalenzpunkt",
+      "from": "chemie-saeurestaerke-ks-pks-werte",
+      "to": "chemie-titrationskurve-halbaequivalenzpunkt",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-chemie-titrationskurve-halbaequivalenzpunkt-chemie-ph-messung-potentiometrie",
+      "from": "chemie-titrationskurve-halbaequivalenzpunkt",
+      "to": "chemie-ph-messung-potentiometrie",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-chemie-neutralisation-titration-indikator-chemie-ph-messung-potentiometrie",
+      "from": "chemie-neutralisation-titration-indikator",
+      "to": "chemie-ph-messung-potentiometrie",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-chemie-schwache-saeuren-ph-berechnung-chemie-puffer-systeme-henderson-hasselbalch",
+      "from": "chemie-schwache-saeuren-ph-berechnung",
+      "to": "chemie-puffer-systeme-henderson-hasselbalch",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-chemie-saeurestaerke-ks-pks-werte-chemie-puffer-systeme-henderson-hasselbalch",
+      "from": "chemie-saeurestaerke-ks-pks-werte",
+      "to": "chemie-puffer-systeme-henderson-hasselbalch",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-chemie-titrationskurve-halbaequivalenzpunkt-chemie-puffer-systeme-henderson-hasselbalch",
+      "from": "chemie-titrationskurve-halbaequivalenzpunkt",
+      "to": "chemie-puffer-systeme-henderson-hasselbalch",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-chemie-schwache-saeuren-ph-berechnung-chemie-saeurebase-gleichgewichte-quantitativ",
+      "from": "chemie-schwache-saeuren-ph-berechnung",
+      "to": "chemie-saeurebase-gleichgewichte-quantitativ",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-chemie-titrationskurve-halbaequivalenzpunkt-chemie-saeurebase-gleichgewichte-quantitativ",
+      "from": "chemie-titrationskurve-halbaequivalenzpunkt",
+      "to": "chemie-saeurebase-gleichgewichte-quantitativ",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-chemie-ph-messung-potentiometrie-chemie-saeurebase-gleichgewichte-quantitativ",
+      "from": "chemie-ph-messung-potentiometrie",
+      "to": "chemie-saeurebase-gleichgewichte-quantitativ",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-chemie-puffer-systeme-henderson-hasselbalch-chemie-puffer-kapazitaet-anwendungen",
+      "from": "chemie-puffer-systeme-henderson-hasselbalch",
+      "to": "chemie-puffer-kapazitaet-anwendungen",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-chemie-saeurebase-gleichgewichte-quantitativ-chemie-puffer-kapazitaet-anwendungen",
+      "from": "chemie-saeurebase-gleichgewichte-quantitativ",
+      "to": "chemie-puffer-kapazitaet-anwendungen",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-chemie-saeurestaerke-ks-pks-werte-chemie-saeurebase-formal-pks-ableitung",
+      "from": "chemie-saeurestaerke-ks-pks-werte",
+      "to": "chemie-saeurebase-formal-pks-ableitung",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-chemie-schwache-saeuren-ph-berechnung-chemie-saeurebase-formal-pks-ableitung",
+      "from": "chemie-schwache-saeuren-ph-berechnung",
+      "to": "chemie-saeurebase-formal-pks-ableitung",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-chemie-saeurebase-gleichgewichte-quantitativ-chemie-saeurebase-formal-pks-ableitung",
+      "from": "chemie-saeurebase-gleichgewichte-quantitativ",
+      "to": "chemie-saeurebase-formal-pks-ableitung",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-chemie-saeurebase-formal-pks-ableitung-chemie-elektrolytgleichgewichte-formal-aktivitaet",
+      "from": "chemie-saeurebase-formal-pks-ableitung",
+      "to": "chemie-elektrolytgleichgewichte-formal-aktivitaet",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-chemie-puffer-systeme-henderson-hasselbalch-chemie-elektrolytgleichgewichte-formal-aktivitaet",
+      "from": "chemie-puffer-systeme-henderson-hasselbalch",
+      "to": "chemie-elektrolytgleichgewichte-formal-aktivitaet",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-chemie-loeslichkeitsgleichgewicht-kl-chemie-elektrolytgleichgewichte-formal-aktivitaet",
+      "from": "chemie-loeslichkeitsgleichgewicht-kl",
+      "to": "chemie-elektrolytgleichgewichte-formal-aktivitaet",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-chemie-reaktionsgleichungen-ausgleichen-chemie-oxidation-reduktion-elektronenuebertragung",
+      "from": "chemie-reaktionsgleichungen-ausgleichen",
+      "to": "chemie-oxidation-reduktion-elektronenuebertragung",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-chemie-oxidation-reduktion-elektronenuebertragung-chemie-oxidationszahlen-redoxreaktionen-aufstellen",
+      "from": "chemie-oxidation-reduktion-elektronenuebertragung",
+      "to": "chemie-oxidationszahlen-redoxreaktionen-aufstellen",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-chemie-oxidationszahlen-redoxreaktionen-aufstellen-chemie-elektrochemische-spannungsreihe",
+      "from": "chemie-oxidationszahlen-redoxreaktionen-aufstellen",
+      "to": "chemie-elektrochemische-spannungsreihe",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-chemie-elektrochemische-spannungsreihe-chemie-galvanische-zelle-daniell-element",
+      "from": "chemie-elektrochemische-spannungsreihe",
+      "to": "chemie-galvanische-zelle-daniell-element",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-chemie-oxidationszahlen-redoxreaktionen-aufstellen-chemie-elektrolyse-grundlagen",
+      "from": "chemie-oxidationszahlen-redoxreaktionen-aufstellen",
+      "to": "chemie-elektrolyse-grundlagen",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-chemie-elektrochemische-spannungsreihe-chemie-elektrolyse-grundlagen",
+      "from": "chemie-elektrochemische-spannungsreihe",
+      "to": "chemie-elektrolyse-grundlagen",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-chemie-galvanische-zelle-daniell-element-chemie-zellspannung-berechnung-standardpotentiale",
+      "from": "chemie-galvanische-zelle-daniell-element",
+      "to": "chemie-zellspannung-berechnung-standardpotentiale",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-chemie-zellspannung-berechnung-standardpotentiale-chemie-nernst-gleichung-konzentrationszelle",
+      "from": "chemie-zellspannung-berechnung-standardpotentiale",
+      "to": "chemie-nernst-gleichung-konzentrationszelle",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-chemie-massenwirkungsgesetz-gleichgewichtskonstante-chemie-nernst-gleichung-konzentrationszelle",
+      "from": "chemie-massenwirkungsgesetz-gleichgewichtskonstante",
+      "to": "chemie-nernst-gleichung-konzentrationszelle",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-chemie-elektrolyse-grundlagen-chemie-elektrolyse-quantitativ-faraday-gesetze",
+      "from": "chemie-elektrolyse-grundlagen",
+      "to": "chemie-elektrolyse-quantitativ-faraday-gesetze",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-chemie-stoechiometrie-stoffmenge-chemie-elektrolyse-quantitativ-faraday-gesetze",
+      "from": "chemie-stoechiometrie-stoffmenge",
+      "to": "chemie-elektrolyse-quantitativ-faraday-gesetze",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-chemie-zellspannung-berechnung-standardpotentiale-chemie-batterien-akkumulatoren-energietraeger",
+      "from": "chemie-zellspannung-berechnung-standardpotentiale",
+      "to": "chemie-batterien-akkumulatoren-energietraeger",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-chemie-elektrolyse-grundlagen-chemie-batterien-akkumulatoren-energietraeger",
+      "from": "chemie-elektrolyse-grundlagen",
+      "to": "chemie-batterien-akkumulatoren-energietraeger",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-chemie-elektrochemische-spannungsreihe-chemie-korrosion-korrosionsschutz",
+      "from": "chemie-elektrochemische-spannungsreihe",
+      "to": "chemie-korrosion-korrosionsschutz",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-chemie-galvanische-zelle-daniell-element-chemie-korrosion-korrosionsschutz",
+      "from": "chemie-galvanische-zelle-daniell-element",
+      "to": "chemie-korrosion-korrosionsschutz",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-chemie-batterien-akkumulatoren-energietraeger-chemie-brennstoffzelle-wirkungsgrad",
+      "from": "chemie-batterien-akkumulatoren-energietraeger",
+      "to": "chemie-brennstoffzelle-wirkungsgrad",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-chemie-nernst-gleichung-konzentrationszelle-chemie-brennstoffzelle-wirkungsgrad",
+      "from": "chemie-nernst-gleichung-konzentrationszelle",
+      "to": "chemie-brennstoffzelle-wirkungsgrad",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-chemie-gibbs-helmholtz-freie-enthalpie-chemie-brennstoffzelle-wirkungsgrad",
+      "from": "chemie-gibbs-helmholtz-freie-enthalpie",
+      "to": "chemie-brennstoffzelle-wirkungsgrad",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-chemie-batterien-akkumulatoren-energietraeger-chemie-elektrochemie-umwelt-bewertung",
+      "from": "chemie-batterien-akkumulatoren-energietraeger",
+      "to": "chemie-elektrochemie-umwelt-bewertung",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-chemie-korrosion-korrosionsschutz-chemie-elektrochemie-umwelt-bewertung",
+      "from": "chemie-korrosion-korrosionsschutz",
+      "to": "chemie-elektrochemie-umwelt-bewertung",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-chemie-brennstoffzelle-wirkungsgrad-chemie-elektrochemie-umwelt-bewertung",
+      "from": "chemie-brennstoffzelle-wirkungsgrad",
+      "to": "chemie-elektrochemie-umwelt-bewertung",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-chemie-atombindung-elektronenpaarbindung-chemie-alkane-homologe-reihe-nomenklatur",
+      "from": "chemie-atombindung-elektronenpaarbindung",
+      "to": "chemie-alkane-homologe-reihe-nomenklatur",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-chemie-alkane-homologe-reihe-nomenklatur-chemie-funktionelle-gruppen-nachweise",
+      "from": "chemie-alkane-homologe-reihe-nomenklatur",
+      "to": "chemie-funktionelle-gruppen-nachweise",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-chemie-elektronegativitaet-bindungspolaritaet-chemie-funktionelle-gruppen-nachweise",
+      "from": "chemie-elektronegativitaet-bindungspolaritaet",
+      "to": "chemie-funktionelle-gruppen-nachweise",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-chemie-funktionelle-gruppen-nachweise-chemie-alkohole-oxidationsreihe",
+      "from": "chemie-funktionelle-gruppen-nachweise",
+      "to": "chemie-alkohole-oxidationsreihe",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-chemie-oxidationszahlen-redoxreaktionen-aufstellen-chemie-alkohole-oxidationsreihe",
+      "from": "chemie-oxidationszahlen-redoxreaktionen-aufstellen",
+      "to": "chemie-alkohole-oxidationsreihe",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-chemie-funktionelle-gruppen-nachweise-chemie-konstitutionsisomerie-stereoisomerie",
+      "from": "chemie-funktionelle-gruppen-nachweise",
+      "to": "chemie-konstitutionsisomerie-stereoisomerie",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-chemie-alkane-homologe-reihe-nomenklatur-chemie-konstitutionsisomerie-stereoisomerie",
+      "from": "chemie-alkane-homologe-reihe-nomenklatur",
+      "to": "chemie-konstitutionsisomerie-stereoisomerie",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-chemie-alkane-homologe-reihe-nomenklatur-chemie-alkene-alkine-mehrfachbindungen",
+      "from": "chemie-alkane-homologe-reihe-nomenklatur",
+      "to": "chemie-alkene-alkine-mehrfachbindungen",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-chemie-molekuelgeometrie-epa-modell-chemie-alkene-alkine-mehrfachbindungen",
+      "from": "chemie-molekuelgeometrie-epa-modell",
+      "to": "chemie-alkene-alkine-mehrfachbindungen",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-chemie-alkohole-oxidationsreihe-chemie-carbonsaeuren-ester-veresterung",
+      "from": "chemie-alkohole-oxidationsreihe",
+      "to": "chemie-carbonsaeuren-ester-veresterung",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-chemie-konstitutionsisomerie-stereoisomerie-chemie-carbonsaeuren-ester-veresterung",
+      "from": "chemie-konstitutionsisomerie-stereoisomerie",
+      "to": "chemie-carbonsaeuren-ester-veresterung",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-chemie-prinzip-von-le-chatelier-chemie-carbonsaeuren-ester-veresterung",
+      "from": "chemie-prinzip-von-le-chatelier",
+      "to": "chemie-carbonsaeuren-ester-veresterung",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-chemie-alkene-alkine-mehrfachbindungen-chemie-elektrophile-addition-alkene",
+      "from": "chemie-alkene-alkine-mehrfachbindungen",
+      "to": "chemie-elektrophile-addition-alkene",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-chemie-alkohole-oxidationsreihe-chemie-elektrophile-addition-alkene",
+      "from": "chemie-alkohole-oxidationsreihe",
+      "to": "chemie-elektrophile-addition-alkene",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-chemie-alkohole-oxidationsreihe-chemie-nukleophile-substitution-sn1-sn2-eliminierung",
+      "from": "chemie-alkohole-oxidationsreihe",
+      "to": "chemie-nukleophile-substitution-sn1-sn2-eliminierung",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-chemie-konstitutionsisomerie-stereoisomerie-chemie-nukleophile-substitution-sn1-sn2-eliminierung",
+      "from": "chemie-konstitutionsisomerie-stereoisomerie",
+      "to": "chemie-nukleophile-substitution-sn1-sn2-eliminierung",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-chemie-elektrophile-addition-alkene-chemie-nukleophile-substitution-sn1-sn2-eliminierung",
+      "from": "chemie-elektrophile-addition-alkene",
+      "to": "chemie-nukleophile-substitution-sn1-sn2-eliminierung",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-chemie-carbonsaeuren-ester-veresterung-chemie-kunststoffe-naturstoffe-makromolekuele",
+      "from": "chemie-carbonsaeuren-ester-veresterung",
+      "to": "chemie-kunststoffe-naturstoffe-makromolekuele",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-chemie-elektrophile-addition-alkene-chemie-kunststoffe-naturstoffe-makromolekuele",
+      "from": "chemie-elektrophile-addition-alkene",
+      "to": "chemie-kunststoffe-naturstoffe-makromolekuele",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-chemie-alkene-alkine-mehrfachbindungen-chemie-kunststoffe-naturstoffe-makromolekuele",
+      "from": "chemie-alkene-alkine-mehrfachbindungen",
+      "to": "chemie-kunststoffe-naturstoffe-makromolekuele",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-chemie-nukleophile-substitution-sn1-sn2-eliminierung-chemie-klausur-synthese-abitur",
+      "from": "chemie-nukleophile-substitution-sn1-sn2-eliminierung",
+      "to": "chemie-klausur-synthese-abitur",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-chemie-kunststoffe-naturstoffe-makromolekuele-chemie-klausur-synthese-abitur",
+      "from": "chemie-kunststoffe-naturstoffe-makromolekuele",
+      "to": "chemie-klausur-synthese-abitur",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-chemie-saeurebase-gleichgewichte-quantitativ-chemie-klausur-synthese-abitur",
+      "from": "chemie-saeurebase-gleichgewichte-quantitativ",
+      "to": "chemie-klausur-synthese-abitur",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-chemie-gleichgewicht-ausbeute-industrie-optimierung-chemie-klausur-synthese-abitur",
+      "from": "chemie-gleichgewicht-ausbeute-industrie-optimierung",
+      "to": "chemie-klausur-synthese-abitur",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-chemie-elektrochemie-umwelt-bewertung-chemie-klausur-synthese-abitur",
+      "from": "chemie-elektrochemie-umwelt-bewertung",
+      "to": "chemie-klausur-synthese-abitur",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-chemie-nukleophile-substitution-sn1-sn2-eliminierung-chemie-reaktionsmechanismen-formal-elektronenpaar",
+      "from": "chemie-nukleophile-substitution-sn1-sn2-eliminierung",
+      "to": "chemie-reaktionsmechanismen-formal-elektronenpaar",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-chemie-carbonsaeuren-ester-veresterung-chemie-reaktionsmechanismen-formal-elektronenpaar",
+      "from": "chemie-carbonsaeuren-ester-veresterung",
+      "to": "chemie-reaktionsmechanismen-formal-elektronenpaar",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-chemie-funktionelle-gruppen-nachweise-chemie-reaktionsmechanismen-formal-elektronenpaar",
+      "from": "chemie-funktionelle-gruppen-nachweise",
+      "to": "chemie-reaktionsmechanismen-formal-elektronenpaar",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-chemie-funktionelle-gruppen-nachweise-chemie-spektroskopie-ir-nmr",
+      "from": "chemie-funktionelle-gruppen-nachweise",
+      "to": "chemie-spektroskopie-ir-nmr",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-chemie-konstitutionsisomerie-stereoisomerie-chemie-spektroskopie-ir-nmr",
+      "from": "chemie-konstitutionsisomerie-stereoisomerie",
+      "to": "chemie-spektroskopie-ir-nmr",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-chemie-reaktionsmechanismen-formal-elektronenpaar-chemie-spektroskopie-ir-nmr",
+      "from": "chemie-reaktionsmechanismen-formal-elektronenpaar",
+      "to": "chemie-spektroskopie-ir-nmr",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-chemie-syn-1",
+      "from": "chemie-ionenbindung-ionengitter",
+      "to": "chemie-atombindung-elektronenpaarbindung",
+      "type": "synergy",
+      "descriptionZH": "离子键与共价键在同一个电负性连续谱上互为对照，共同解释键型判据"
+    },
+    {
+      "id": "e-chemie-syn-2",
+      "from": "chemie-elektronegativitaet-bindungspolaritaet",
+      "to": "chemie-molekuelgeometrie-epa-modell",
+      "type": "synergy",
+      "descriptionZH": "键极性给出偶极方向，分子几何给出偶极叠加结果，两者共同决定净偶极矩"
+    },
+    {
+      "id": "e-chemie-syn-3",
+      "from": "chemie-zwischenmolekulare-kraefte-van-der-waals",
+      "to": "chemie-wasserstoffbruecken-stoffeigenschaften",
+      "type": "synergy",
+      "descriptionZH": "三类分子间作用力构成强度阶梯，共同解释沸点与溶解度的完整趋势"
+    },
+    {
+      "id": "e-chemie-syn-4",
+      "from": "chemie-enthalpie-kalorimetrie",
+      "to": "chemie-entropie-zweiter-hauptsatz",
+      "type": "synergy",
+      "descriptionZH": "焓项与熵项分别量化能量与无序，二者合成自由焓判据"
+    },
+    {
+      "id": "e-chemie-syn-5",
+      "from": "chemie-gleichgewichtsberechnung-dreisatz-tabelle",
+      "to": "chemie-technische-gleichgewichte-haber-bosch",
+      "type": "synergy",
+      "descriptionZH": "实验室的平衡计算与工业装置的工艺条件选择互为验证"
+    },
+    {
+      "id": "e-chemie-syn-6",
+      "from": "chemie-loeslichkeitsgleichgewicht-kl",
+      "to": "chemie-gleichgewicht-ausbeute-industrie-optimierung",
+      "type": "synergy",
+      "descriptionZH": "溶度积与产率优化共享同一套平衡移动判据"
+    },
+    {
+      "id": "e-chemie-syn-7",
+      "from": "chemie-saeurestaerke-ks-pks-werte",
+      "to": "chemie-titrationskurve-halbaequivalenzpunkt",
+      "type": "synergy",
+      "descriptionZH": "pKs 值决定滴定曲线在当点附近的形状与 pH 跳变幅度"
+    },
+    {
+      "id": "e-chemie-syn-8",
+      "from": "chemie-puffer-systeme-henderson-hasselbalch",
+      "to": "chemie-puffer-kapazitaet-anwendungen",
+      "type": "synergy",
+      "descriptionZH": "缓冲方程给出 pH 值，容量分析给出可承受的酸碱加入量"
+    },
+    {
+      "id": "e-chemie-syn-9",
+      "from": "chemie-galvanische-zelle-daniell-element",
+      "to": "chemie-elektrolyse-grundlagen",
+      "type": "synergy",
+      "descriptionZH": "原电池与电解互为逆过程，两极命名与能量方向正好相反"
+    },
+    {
+      "id": "e-chemie-syn-10",
+      "from": "chemie-nernst-gleichung-konzentrationszelle",
+      "to": "chemie-elektrolyse-quantitativ-faraday-gesetze",
+      "type": "synergy",
+      "descriptionZH": "能斯特方程给出电势，法拉第定律给出物质转化量，共同完成电解定量分析"
+    },
+    {
+      "id": "e-chemie-syn-11",
+      "from": "chemie-elektrophile-addition-alkene",
+      "to": "chemie-nukleophile-substitution-sn1-sn2-eliminierung",
+      "type": "synergy",
+      "descriptionZH": "加成、取代与消除三条路径的竞争由底物结构与反应条件共同决定"
+    },
+    {
+      "id": "e-chemie-syn-12",
+      "from": "chemie-kunststoffe-naturstoffe-makromolekuele",
+      "to": "chemie-spektroskopie-ir-nmr",
+      "type": "synergy",
+      "descriptionZH": "光谱数据是验证高分子与天然产物结构的主要证据来源"
+    },
+    {
+      "id": "e-chemie-cross-1",
+      "from": "chemie-broensted-saeure-base-konzept",
+      "to": "chemie-massenwirkungsgesetz-gleichgewichtskonstante",
+      "type": "cross_disciplinary",
+      "descriptionZH": "质子转移平衡是质量作用定律在酸碱体系中的直接应用"
+    },
+    {
+      "id": "e-chemie-cross-2",
+      "from": "chemie-gibbs-helmholtz-freie-enthalpie",
+      "to": "chemie-brennstoffzelle-wirkungsgrad",
+      "type": "cross_disciplinary",
+      "descriptionZH": "自由焓给出电化学能量转换的理论上限"
+    },
+    {
+      "id": "e-chemie-cross-3",
+      "from": "chemie-oxidationszahlen-redoxreaktionen-aufstellen",
+      "to": "chemie-alkohole-oxidationsreihe",
+      "type": "cross_disciplinary",
+      "descriptionZH": "氧化数概念把无机电子转移与有机氧化序列统一为同一套记账方式"
+    },
+    {
+      "id": "e-chemie-cross-4",
+      "from": "chemie-molekuelorbital-konzept",
+      "to": "chemie-spektroskopie-ir-nmr",
+      "type": "cross_disciplinary",
+      "descriptionZH": "轨道能级差决定光谱吸收位置，是波谱解析的理论底层"
+    },
+    {
+      "id": "e-chemie-cross-5",
+      "from": "chemie-katalyse-energieprofil",
+      "to": "chemie-technische-gleichgewichte-haber-bosch",
+      "type": "cross_disciplinary",
+      "descriptionZH": "催化剂只改速率不改平衡位置，工业合成氨的工艺设计正建立在这一区分之上"
+    },
+    {
+      "id": "e-chemie-cross-6",
+      "from": "chemie-wasserstoffbruecken-stoffeigenschaften",
+      "to": "chemie-kunststoffe-naturstoffe-makromolekuele",
+      "type": "cross_disciplinary",
+      "descriptionZH": "氢键与范德华力决定生物大分子的构象与材料性能"
+    },
+    {
+      "id": "e-chemie-cross-7",
+      "from": "chemie-stoffkreislauf-technische-verfahren",
+      "to": "chemie-gleichgewicht-ausbeute-industrie-optimierung",
+      "type": "cross_disciplinary",
+      "descriptionZH": "物质循环的定量描述与工业产率优化使用同一套平衡与衡算工具"
+    }
+  ]
+}
