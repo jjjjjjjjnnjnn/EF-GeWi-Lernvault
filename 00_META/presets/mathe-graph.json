@@ -1,0 +1,2828 @@
+{
+  "schemaVersion": 1,
+  "fach": "Mathe",
+  "nameDE": "Mathematik",
+  "nameZH": "数学 (Mathe)",
+  "descriptionDE": "Funktionen und Analysis, Kurvendiskussion, Extremwertmodellierung, Analytische Geometrie und Lineare Algebra sowie Stochastik (NRW Oberstufe & Uni-Prep)",
+  "descriptionZH": "函数与分析、曲线讨论、最优化建模、空间解析几何与线性代数、随机统计的全景引力星系图谱 (NRW 高中与大学衔接)",
+  "isCustomSubject": false,
+  "categories": [
+    "Analysis",
+    "Kurvendiskussion",
+    "Optimierungsmodell",
+    "Lineare-Algebra",
+    "Stochastik"
+  ],
+  "availableTags": [
+    "AFB-III",
+    "Abstand",
+    "Algebra",
+    "Axiom",
+    "Basiswissen",
+    "Baumdiagramm",
+    "Bedingte-Wahrscheinlichkeit",
+    "Beweis",
+    "Binomialverteilung",
+    "Definition",
+    "Differentialrechnung",
+    "Ebenen",
+    "Extrempunkte",
+    "Formel",
+    "Funktionen",
+    "Geometrie",
+    "Geraden",
+    "Grafik",
+    "Grenzwert",
+    "Hypothesentest",
+    "Integralrechnung",
+    "Klausur-Dauerbrenner",
+    "Koerper",
+    "Konfidenzintervall",
+    "Kumulation",
+    "Kurvendiskussion",
+    "Lineare-Algebra",
+    "Logarithmus",
+    "Modell",
+    "Modellierung",
+    "Monotonie",
+    "Normalverteilung",
+    "Numerik",
+    "Optimierung",
+    "Prozentrechnung",
+    "Sachkontext",
+    "Scharen",
+    "Schwerpunkt-2026",
+    "Skalarprodukt",
+    "Statistik",
+    "Steckbrief",
+    "Stochastik",
+    "Tangente",
+    "Trigonometrie",
+    "Uni-Prep",
+    "Vektoren",
+    "Verfahren",
+    "Wachstum",
+    "Wahrscheinlichkeit",
+    "Wendepunkt",
+    "Zufallsgroesse",
+    "e-Funktion"
+  ],
+  "nodes": [
+    {
+      "id": "mathe-zahlen-operationen-rechengesetze",
+      "fach": "Mathe",
+      "titleDE": "Zahlenbereiche & Rechengesetze",
+      "titleZH": "数域与运算律：交换律、结合律与分配律",
+      "summaryDE": "Natuerliche, ganze, rationale und reelle Zahlen bilden den Zahlenvorrat; Kommutativ-, Assoziativ- und Distributivgesetz erlauben das Umformen jedes Terms ohne Wertaenderung.",
+      "summaryZH": "从自然数到实数的逐级扩张给出完整数域；交换、结合、分配三律保证恒等变形中取值不变。",
+      "category": "Analysis",
+      "curriculumTier": "Sek_I",
+      "stage": "einfuehrung",
+      "level": 1,
+      "xpReward": 60,
+      "estimatedMinutes": 8,
+      "prerequisites": [],
+      "keyFormulaOrSentence": "a + b = b + a,  a * (b + c) = a*b + a*c  und  -(a - b) = -a + b (Minus vor der Klammer dreht alle Vorzeichen).",
+      "commonFallacy": "Bei -(a - b) nur das erste Glied umdrehen und -a - b schreiben - das Minus vor der Klammer wirkt auf jeden Summanden.",
+      "layerIndex": 0,
+      "tags": [
+        "Definition",
+        "Basiswissen",
+        "Algebra"
+      ]
+    },
+    {
+      "id": "mathe-terme-gleichungen-umformen",
+      "fach": "Mathe",
+      "titleDE": "Terme umformen & lineare Gleichungen loesen",
+      "titleZH": "代数式变形与一元一次方程求解",
+      "summaryDE": "Aequivalenzumformungen (Addieren, Subtrahieren sowie Multiplizieren mit einer Zahl ungleich null) veraendern die Loesungsmenge einer Gleichung nicht.",
+      "summaryZH": "等价变形（两边同加减、同乘除非零数）不改变方程解集，是逐步孤立未知数的合法依据。",
+      "category": "Analysis",
+      "curriculumTier": "Sek_I",
+      "stage": "einfuehrung",
+      "level": 1,
+      "xpReward": 65,
+      "estimatedMinutes": 8,
+      "prerequisites": [
+        "mathe-zahlen-operationen-rechengesetze"
+      ],
+      "keyFormulaOrSentence": "3x + 5 = 20  ->  3x = 15  ->  L = {5}; jede Aequivalenzumformung erhaelt die Loesungsmenge.",
+      "commonFallacy": "Eine Gleichung mit einem Term multiplizieren, der null werden kann - dadurch entsteht eine Scheinloesung, die die Probe nicht besteht.",
+      "layerIndex": 1,
+      "tags": [
+        "Verfahren",
+        "Basiswissen",
+        "Algebra"
+      ]
+    },
+    {
+      "id": "mathe-proportionalitaet-prozent",
+      "fach": "Mathe",
+      "titleDE": "Proportionalitaet, Dreisatz & Prozentrechnung",
+      "titleZH": "正比例、反比例与百分比增长计算",
+      "summaryDE": "Proportionale Zuordnungen haben einen konstanten Quotienten, antiproportionale einen konstanten Produktwert; die Prozentrechnung ist der Sonderfall mit dem Grundwert 100.",
+      "summaryZH": "正比例保持商恒定，反比例保持积恒定；百分数只是以 100 为基准值的特殊比例。",
+      "category": "Analysis",
+      "curriculumTier": "Sek_I",
+      "stage": "einfuehrung",
+      "level": 1,
+      "xpReward": 70,
+      "estimatedMinutes": 10,
+      "prerequisites": [
+        "mathe-zahlen-operationen-rechengesetze"
+      ],
+      "keyFormulaOrSentence": "y = k * x (proportional) bzw. y = k / x (antiproportional);  W = (p/100) * G  und  G = W / (p/100).",
+      "commonFallacy": "Bei antiproportionalen Zuordnungen mit dem Dreisatz 'je mehr, desto mehr' rechnen - dort gilt: je mehr, desto weniger.",
+      "layerIndex": 1,
+      "tags": [
+        "Formel",
+        "Basiswissen",
+        "Prozentrechnung"
+      ]
+    },
+    {
+      "id": "mathe-funktionsbegriff-definition",
+      "fach": "Mathe",
+      "titleDE": "Funktionsbegriff, Definitions- und Wertebereich",
+      "titleZH": "函数概念：定义域、值域与唯一对应",
+      "summaryDE": "Eine Funktion ordnet jedem Element des Definitionsbereichs genau einen Funktionswert zu; Definitionsluecken entstehen durch Nenner-Nullstellen, Wurzeln negativer Zahlen und Logarithmen.",
+      "summaryZH": "函数把定义域中每个元素唯一映到一个函数值；分母零点、负数开方与对数真数条件共同限定定义域。",
+      "category": "Analysis",
+      "curriculumTier": "EF",
+      "stage": "einfuehrung",
+      "level": 1,
+      "xpReward": 80,
+      "estimatedMinutes": 10,
+      "prerequisites": [
+        "mathe-proportionalitaet-prozent"
+      ],
+      "keyFormulaOrSentence": "f: D -> W, x |-> f(x);  jeder senkrechte Teststrahl schneidet den Graphen hoechstens einmal.",
+      "commonFallacy": "Bei impliziten Kurven wie x^2 + y^2 = 1 von einer Funktion in y ausgehen - die Zuordnung ist dort nicht eindeutig.",
+      "layerIndex": 2,
+      "tags": [
+        "Definition",
+        "Basiswissen",
+        "Funktionen"
+      ]
+    },
+    {
+      "id": "mathe-potenzfunktionen-wurzelfunktionen",
+      "fach": "Mathe",
+      "titleDE": "Potenz- und Wurzelfunktionen",
+      "titleZH": "幂函数与根式函数：指数对图像形态的支配",
+      "summaryDE": "Der Exponent n legt Globalverhalten und Symmetrie der Potenzfunktion fest; die Wurzelfunktion ist die Umkehrung von x^2 auf einem eingeschraenkten Definitionsbereich.",
+      "summaryZH": "指数 n 的奇偶与符号决定幂函数的对称性和两端走势；根式函数是限制定义域后二次函数的反函数。",
+      "category": "Analysis",
+      "curriculumTier": "EF",
+      "stage": "grundlagen",
+      "level": 2,
+      "xpReward": 95,
+      "estimatedMinutes": 12,
+      "prerequisites": [
+        "mathe-terme-gleichungen-umformen",
+        "mathe-funktionsbegriff-definition"
+      ],
+      "keyFormulaOrSentence": "f(x) = a * x^n;  x^(1/2) = Wurzel(x) fuer x >= 0  und  (Wurzel(x))^2 = x.",
+      "commonFallacy": "Wurzel(x^2) = x setzen - korrekt ist Wurzel(x^2) = |x|, weil die Wurzel nie negativ wird.",
+      "layerIndex": 3,
+      "tags": [
+        "Formel",
+        "Funktionen",
+        "Basiswissen",
+        "Grafik"
+      ]
+    },
+    {
+      "id": "mathe-exponentialfunktionen-wachstum",
+      "fach": "Mathe",
+      "titleDE": "Exponentialfunktionen: Wachstum und Zerfall",
+      "titleZH": "指数函数：倍增结构与增长衰减率",
+      "summaryDE": "Bei exponentiellem Wachstum wird der Bestand in gleichen Zeitschritten mit demselben Faktor multipliziert; die Aenderungsrate ist proportional zum aktuellen Bestand.",
+      "summaryZH": "指数增长中每经过相同时段就乘同一个增长因子；变化率与当前存量成正比，这是它与线性增长的本质差别。",
+      "category": "Analysis",
+      "curriculumTier": "EF",
+      "stage": "grundlagen",
+      "level": 2,
+      "xpReward": 105,
+      "estimatedMinutes": 14,
+      "prerequisites": [
+        "mathe-potenzfunktionen-wurzelfunktionen"
+      ],
+      "keyFormulaOrSentence": "f(x) = a * b^x mit b > 0 und b != 1;  b = 1 + p/100 ist der Wachstumsfaktor, a der Anfangswert f(0).",
+      "commonFallacy": "Aus zwei Messpunkten ein lineares Modell ableiten, obwohl sich der Bestand in gleichen Schritten mit konstantem Faktor aendert.",
+      "layerIndex": 4,
+      "tags": [
+        "Formel",
+        "Wachstum",
+        "Funktionen",
+        "Modell"
+      ],
+      "linkedNoteId": "03_Mathe/Exponentialfunktionen-Wachstum-und-Zerfall.md"
+    },
+    {
+      "id": "mathe-aenderungsrate-sekante",
+      "fach": "Mathe",
+      "titleDE": "Mittlere Aenderungsrate (Differenzenquotient)",
+      "titleZH": "平均变化率与割线斜率",
+      "summaryDE": "Der Differenzenquotient misst die Steigung der Sekante durch zwei Kurvenpunkte und damit die mittlere Aenderung des Bestands ueber dem gesamten Intervall.",
+      "summaryZH": "差商给出割线斜率，量化整个区间上的平均变化速度，是瞬时导数的离散前身。",
+      "category": "Analysis",
+      "curriculumTier": "EF",
+      "stage": "einfuehrung",
+      "level": 1,
+      "xpReward": 60,
+      "estimatedMinutes": 8,
+      "prerequisites": [
+        "mathe-lineare-funktionen-steigung"
+      ],
+      "keyFormulaOrSentence": "m = (f(x1) - f(x0)) / (x1 - x0)",
+      "commonFallacy": "Die mittlere Aenderungsrate als Steigung im Kurvenpunkt deuten - sie gilt nur fuer das gesamte Intervall, nicht fuer einen einzelnen Punkt.",
+      "layerIndex": 3,
+      "tags": [
+        "Formel",
+        "Differentialrechnung",
+        "Basiswissen",
+        "Grafik"
+      ],
+      "linkedReiseId": "Mathe-Sekante-zu-Tangente-L1",
+      "linkedNoteId": "03_Mathe/Sekante-zu-Tangente-Lokale-Aenderungsrate.md"
+    },
+    {
+      "id": "mathe-lokale-ableitung-grenzwert",
+      "fach": "Mathe",
+      "titleDE": "Lokale Aenderungsrate & Ableitung",
+      "titleZH": "瞬时导数定义与切线极限逼近",
+      "summaryDE": "Laesst man den Abstand h zwischen den beiden Sekantenpunkten gegen null gehen, so geht die Sekantensteigung in die Tangentensteigung f'(x0) ueber.",
+      "summaryZH": "两割点间距 h 趋于零时割线绕切点旋转直至与切线重合，其极限即为该点导数。",
+      "category": "Analysis",
+      "curriculumTier": "EF",
+      "stage": "grundlagen",
+      "level": 2,
+      "xpReward": 110,
+      "estimatedMinutes": 12,
+      "prerequisites": [
+        "mathe-aenderungsrate-sekante"
+      ],
+      "keyFormulaOrSentence": "f'(x0) = lim_{h->0} (f(x0+h) - f(x0)) / h",
+      "commonFallacy": "h einfach als 0 einsetzen, bevor gekuerzt wurde (fuehrt zu Division durch 0).",
+      "layerIndex": 4,
+      "tags": [
+        "Definition",
+        "Differentialrechnung",
+        "Grenzwert",
+        "Klausur-Dauerbrenner"
+      ],
+      "linkedToolId": "tangent-slider"
+    },
+    {
+      "id": "mathe-ableitungsregeln-polynom",
+      "fach": "Mathe",
+      "titleDE": "Ableitungsregeln (Potenz- & Summenregel)",
+      "titleZH": "多项式导数运算法则",
+      "summaryDE": "Die Potenzregel senkt den Exponenten um eins und multipliziert mit dem alten Exponenten; Faktor- und Summenregel uebertragen dies gliedweise auf ganze Polynome.",
+      "summaryZH": "幂函数法则把指数降一并乘上原指数；常数倍法则与和差法则使整式多项式可以逐项求导。",
+      "category": "Analysis",
+      "curriculumTier": "EF",
+      "stage": "grundlagen",
+      "level": 1,
+      "xpReward": 80,
+      "estimatedMinutes": 10,
+      "prerequisites": [
+        "mathe-lokale-ableitung-grenzwert"
+      ],
+      "keyFormulaOrSentence": "f(x) = a*x^n  ->  f'(x) = a*n*x^(n-1);  (f + g)' = f' + g'  und  (c*f)' = c*f'.",
+      "commonFallacy": "Beim Ableiten einer Summe nur den ersten Summanden bearbeiten - die Summenregel gilt gliedweise fuer jeden Summanden.",
+      "layerIndex": 5,
+      "tags": [
+        "Formel",
+        "Verfahren",
+        "Differentialrechnung",
+        "Basiswissen"
+      ],
+      "linkedReiseId": "Mathe-Ableitungsregeln-Polynome-L1",
+      "linkedNoteId": "03_Mathe/Nachweis-einer-Ableitungsregel.md"
+    },
+    {
+      "id": "mathe-e-funktion-natuerlicher-logarithmus",
+      "fach": "Mathe",
+      "titleDE": "e-Funktion und natuerlicher Logarithmus",
+      "titleZH": "自然指数函数与自然对数：互为反函数的增长基",
+      "summaryDE": "Die e-Funktion ist die einzige Funktion, deren Ableitung mit der Funktion selbst uebereinstimmt; der natuerliche Logarithmus ist ihre Umkehrfunktion und macht unbekannte Exponenten zugaenglich.",
+      "summaryZH": "e 函数是唯一导数等于自身的函数；自然对数作为其反函数，把未知指数从指数位置解放出来。",
+      "category": "Analysis",
+      "curriculumTier": "Q1",
+      "stage": "grundlagen",
+      "level": 2,
+      "xpReward": 120,
+      "estimatedMinutes": 14,
+      "prerequisites": [
+        "mathe-exponentialfunktionen-wachstum"
+      ],
+      "keyFormulaOrSentence": "(e^x)' = e^x;  ln(e^x) = x  und  e^(ln x) = x fuer x > 0;  (ln x)' = 1/x.",
+      "commonFallacy": "ln(a + b) = ln a + ln b annehmen - der Logarithmus ist kein linearer Operator, nur ln(a * b) = ln a + ln b gilt.",
+      "layerIndex": 6,
+      "tags": [
+        "Formel",
+        "e-Funktion",
+        "Logarithmus",
+        "Funktionen"
+      ],
+      "linkedNoteId": "03_Mathe/Trigonometrische-und-Logarithmusfunktionen-LK.md"
+    },
+    {
+      "id": "mathe-produkt-und-kettenregel",
+      "fach": "Mathe",
+      "titleDE": "Produkt-, Quotienten- und Kettenregel",
+      "titleZH": "乘积法则、商法则与链式法则",
+      "summaryDE": "Produkt- und Kettenregel zerlegen die Ableitung zusammengesetzter Terme in ableitbare Bausteine; die Kettenregel verlangt zusaetzlich die Ableitung der inneren Funktion.",
+      "summaryZH": "乘积法则与链式法则把复合表达式拆成可导构件；链式法则额外要求乘上内层函数的导数。",
+      "category": "Analysis",
+      "curriculumTier": "Q1",
+      "stage": "vertiefung",
+      "level": 2,
+      "xpReward": 130,
+      "estimatedMinutes": 16,
+      "prerequisites": [
+        "mathe-ableitungsregeln-polynom",
+        "mathe-e-funktion-natuerlicher-logarithmus"
+      ],
+      "keyFormulaOrSentence": "(u * v)' = u' * v + u * v';  (u(v(x)))' = u'(v(x)) * v'(x);  (u / v)' = (u'*v - u*v') / v^2.",
+      "commonFallacy": "(u * v)' = u' * v' annehmen und bei der Kettenregel die innere Ableitung v'(x) vergessen.",
+      "layerIndex": 7,
+      "tags": [
+        "Formel",
+        "Differentialrechnung",
+        "Klausur-Dauerbrenner",
+        "AFB-III"
+      ],
+      "linkedNoteId": "03_Mathe/Produkt-und-Kettenregel.md"
+    },
+    {
+      "id": "mathe-stammfunktion-aufleiten",
+      "fach": "Mathe",
+      "titleDE": "Stammfunktion und Aufleitungsregeln",
+      "titleZH": "原函数与反求导：积分常数的来源",
+      "summaryDE": "Aufleiten ist das Umkehren des Ableitens: jede Funktion besitzt unendlich viele Stammfunktionen, die sich nur um die additive Konstante C unterscheiden.",
+      "summaryZH": "求原函数是求导的逆运算；因常数的导数为零，同一函数的原函数构成只差常数 C 的函数族。",
+      "category": "Analysis",
+      "curriculumTier": "Q1",
+      "stage": "grundlagen",
+      "level": 2,
+      "xpReward": 120,
+      "estimatedMinutes": 14,
+      "prerequisites": [
+        "mathe-ableitungsregeln-polynom"
+      ],
+      "keyFormulaOrSentence": "F'(x) = f(x);  Integral von x^n dx = (1/(n+1)) * x^(n+1) + C  fuer n != -1.",
+      "commonFallacy": "Die Integrationskonstante C beim Aufleiten weglassen - damit geht die gesamte Loesungsvielfalt verloren.",
+      "layerIndex": 7,
+      "tags": [
+        "Verfahren",
+        "Integralrechnung",
+        "Formel"
+      ]
+    },
+    {
+      "id": "mathe-hauptsatz-differential-integralrechnung",
+      "fach": "Mathe",
+      "titleDE": "Hauptsatz der Differential- und Integralrechnung",
+      "titleZH": "微积分基本定理：导数与原函数的互逆桥梁",
+      "summaryDE": "Der Hauptsatz verbindet die beiden Grundprobleme der Analysis: Der orientierte Flaecheninhalt zwischen Graph und x-Achse ist die Differenz zweier Stammfunktionswerte.",
+      "summaryZH": "基本定理把分析学的两个互逆问题合一：图形与 x 轴之间的定向面积等于任一原函数在两端点取值之差。",
+      "category": "Analysis",
+      "curriculumTier": "Q1",
+      "stage": "vertiefung",
+      "level": 3,
+      "xpReward": 140,
+      "estimatedMinutes": 18,
+      "prerequisites": [
+        "mathe-stammfunktion-aufleiten",
+        "mathe-exponentialfunktionen-wachstum"
+      ],
+      "keyFormulaOrSentence": "Integral_a^b f(x) dx = F(b) - F(a),  wobei F eine beliebige Stammfunktion von f ist.",
+      "commonFallacy": "Die Konstante C im bestimmten Integral mitschleppen - in der Differenz F(b) - F(a) hebt sie sich auf.",
+      "layerIndex": 8,
+      "tags": [
+        "Axiom",
+        "Integralrechnung",
+        "AFB-III",
+        "Klausur-Dauerbrenner"
+      ],
+      "linkedNoteId": "03_Mathe/Integralrechnung-Sechs-Konzepte.md"
+    },
+    {
+      "id": "mathe-uni-grenzwert-epsilon-delta-stetigkeit",
+      "fach": "Mathe",
+      "titleDE": "Epsilon-Delta-Kriterium und formale Stetigkeit",
+      "titleZH": "ε-δ 极限定义与严格连续性判据",
+      "summaryDE": "Das Epsilon-Delta-Kriterium ersetzt die anschauliche Formulierung 'beliebig nah' durch eine quantifizierte Bedingung und macht Grenzwerte erstmals beweisbar.",
+      "summaryZH": "ε-δ 判据把「任意接近」量化为带量词的不等式条件，使极限与连续性第一次可以严格证明。",
+      "category": "Analysis",
+      "curriculumTier": "Uni_Prep",
+      "stage": "vertiefung",
+      "level": 3,
+      "xpReward": 175,
+      "estimatedMinutes": 24,
+      "prerequisites": [
+        "mathe-lokale-ableitung-grenzwert",
+        "mathe-hauptsatz-differential-integralrechnung"
+      ],
+      "keyFormulaOrSentence": "lim_{x->x0} f(x) = L genau dann, wenn zu jedem epsilon > 0 ein delta > 0 existiert mit |x - x0| < delta  =>  |f(x) - L| < epsilon.",
+      "commonFallacy": "Die Reihenfolge der Quantoren vertauschen - delta darf von epsilon abhaengen, epsilon aber niemals von delta.",
+      "layerIndex": 11,
+      "tags": [
+        "Definition",
+        "Grenzwert",
+        "Uni-Prep",
+        "Axiom"
+      ]
+    },
+    {
+      "id": "mathe-lineare-funktionen-steigung",
+      "fach": "Mathe",
+      "titleDE": "Lineare Funktionen: Steigung und Achsenabschnitt",
+      "titleZH": "一次函数：斜率与截距的图线意义",
+      "summaryDE": "Eine lineare Funktion beschreibt eine konstante Aenderungsrate; Steigung und y-Achsenabschnitt legen den Graphen eindeutig fest.",
+      "summaryZH": "一次函数对应恒定的变化率；斜率与 y 轴截距两个参数即可完全确定一条直线。",
+      "category": "Kurvendiskussion",
+      "curriculumTier": "Sek_I",
+      "stage": "einfuehrung",
+      "level": 1,
+      "xpReward": 65,
+      "estimatedMinutes": 8,
+      "prerequisites": [
+        "mathe-proportionalitaet-prozent"
+      ],
+      "keyFormulaOrSentence": "y = m*x + b;  m = (y2 - y1) / (x2 - x1) ist die Steigung, b der y-Achsenabschnitt.",
+      "commonFallacy": "Die Steigung als Quotient (x2 - x1)/(y2 - y1) bilden - die Aenderung der y-Werte gehoert in den Zaehler.",
+      "layerIndex": 2,
+      "tags": [
+        "Formel",
+        "Funktionen",
+        "Basiswissen",
+        "Algebra"
+      ]
+    },
+    {
+      "id": "mathe-quadratische-funktionen-parabel",
+      "fach": "Mathe",
+      "titleDE": "Quadratische Funktionen und Parabelform",
+      "titleZH": "二次函数与抛物线：顶点式与因式分解",
+      "summaryDE": "Die Scheitelpunktform macht Lage und Oeffnungsrichtung der Parabel unmittelbar ablesbar; Nullstellen ergeben sich aus der faktorisierten Form oder der Loesungsformel.",
+      "summaryZH": "顶点式直接读出抛物线顶点与开口方向；因式分解或求根公式给出与 x 轴的交点。",
+      "category": "Kurvendiskussion",
+      "curriculumTier": "Sek_I",
+      "stage": "grundlagen",
+      "level": 2,
+      "xpReward": 80,
+      "estimatedMinutes": 10,
+      "prerequisites": [
+        "mathe-terme-gleichungen-umformen"
+      ],
+      "keyFormulaOrSentence": "f(x) = a*(x - d)^2 + e mit Scheitelpunkt S(d | e);  Nullstellen: x = -p/2 +- Wurzel((p/2)^2 - q) in der Normalform x^2 + p*x + q.",
+      "commonFallacy": "Aus x^2 + p*x + q die Nullstellen x = -p/2 +- Wurzel(q) ablesen - korrekt ist x = -p/2 +- Wurzel((p/2)^2 - q).",
+      "layerIndex": 3,
+      "tags": [
+        "Formel",
+        "Funktionen",
+        "Grafik",
+        "Basiswissen"
+      ]
+    },
+    {
+      "id": "mathe-transformationen-verschiebung-streckung",
+      "fach": "Mathe",
+      "titleDE": "Transformationen: Verschiebung, Streckung, Spiegelung",
+      "titleZH": "函数图像变换：平移、伸缩与对称翻转",
+      "summaryDE": "Jeder Parameter der allgemeinen Form wirkt gezielt auf den Graphen: a streckt in y-Richtung, b in x-Richtung, c verschiebt horizontal, d vertikal.",
+      "summaryZH": "一般式中的每个参数各司其职：a 控制纵向伸缩、b 控制横向伸缩、c 横向平移、d 纵向平移。",
+      "category": "Kurvendiskussion",
+      "curriculumTier": "EF",
+      "stage": "grundlagen",
+      "level": 2,
+      "xpReward": 95,
+      "estimatedMinutes": 12,
+      "prerequisites": [
+        "mathe-quadratische-funktionen-parabel"
+      ],
+      "keyFormulaOrSentence": "g(x) = a * f(b*(x - c)) + d:  a streckt in y-Richtung, b staucht in x-Richtung, c verschiebt nach rechts, d nach oben.",
+      "commonFallacy": "f(x - c) als Verschiebung nach links lesen - das Minus im Argument verschiebt den Graphen nach rechts.",
+      "layerIndex": 4,
+      "tags": [
+        "Verfahren",
+        "Funktionen",
+        "Grafik"
+      ],
+      "linkedNoteId": "03_Mathe/Transformationen-Verschiebung-Symmetrie-Streckung.md"
+    },
+    {
+      "id": "mathe-nullstellen-vielfachheit",
+      "fach": "Mathe",
+      "titleDE": "Nullstellen und Vielfachheit (Linearfaktorzerlegung)",
+      "titleZH": "零点与重数：因式分解与符号穿越判据",
+      "summaryDE": "Die Vielfachheit einer Nullstelle bestimmt, ob der Graph die x-Achse durchquert oder nur beruehrt; die Linearfaktorzerlegung macht sie unmittelbar ablesbar.",
+      "summaryZH": "零点重数决定图像是穿过还是仅触及 x 轴；线性因式分解让重数一目了然。",
+      "category": "Kurvendiskussion",
+      "curriculumTier": "EF",
+      "stage": "grundlagen",
+      "level": 2,
+      "xpReward": 100,
+      "estimatedMinutes": 12,
+      "prerequisites": [
+        "mathe-quadratische-funktionen-parabel"
+      ],
+      "keyFormulaOrSentence": "Faktor (x - x1)^k:  k ungerade -> Vorzeichenwechsel und Durchgang;  k gerade -> Beruehrpunkt ohne Vorzeichenwechsel.",
+      "commonFallacy": "Bei einer doppelten Nullstelle einen Vorzeichenwechsel erwarten - der Graph beruehrt dort nur und kehrt nicht zurueck.",
+      "layerIndex": 4,
+      "tags": [
+        "Verfahren",
+        "Kurvendiskussion",
+        "Basiswissen"
+      ],
+      "linkedNoteId": "03_Mathe/Nullstellen-Gleichung-Ungleichung.md"
+    },
+    {
+      "id": "mathe-symmetrie-ganzrationale",
+      "fach": "Mathe",
+      "titleDE": "Symmetrieverhalten ganzrationaler Funktionen",
+      "titleZH": "整式函数对称性：偶次幂与奇次幂判据",
+      "summaryDE": "Achsen- und Punktsymmetrie lassen sich an den Exponenten ablesen und halbieren den Rechenaufwand bei der Kurvendiskussion.",
+      "summaryZH": "轴对称与中心对称可由指数奇偶直接看出，能把曲线分析的计算量减半。",
+      "category": "Kurvendiskussion",
+      "curriculumTier": "EF",
+      "stage": "grundlagen",
+      "level": 2,
+      "xpReward": 100,
+      "estimatedMinutes": 12,
+      "prerequisites": [
+        "mathe-nullstellen-vielfachheit",
+        "mathe-potenzfunktionen-wurzelfunktionen"
+      ],
+      "keyFormulaOrSentence": "f(-x) = f(x) -> Achsensymmetrie zur y-Achse (nur gerade Exponenten);  f(-x) = -f(x) -> Punktsymmetrie zum Ursprung (nur ungerade Exponenten).",
+      "commonFallacy": "Symmetrie zum Ursprung mit Symmetrie zu einem beliebigen Punkt verwechseln - bei verschobenem Graphen liegt keine Ursprungssymmetrie vor.",
+      "layerIndex": 5,
+      "tags": [
+        "Verfahren",
+        "Kurvendiskussion",
+        "Grafik"
+      ],
+      "linkedReiseId": "Mathe-Rekonstruktion-Symmetrie-Bedingungen-L2"
+    },
+    {
+      "id": "mathe-grenzverhalten-ganzrational",
+      "fach": "Mathe",
+      "titleDE": "Globalverhalten und Leitkoeffizient",
+      "titleZH": "整式函数在无穷远处的走向：首项支配",
+      "summaryDE": "Fuer betragsmaessig grosse x dominiert der Summand mit dem hoechsten Exponenten; Vorzeichen des Leitkoeffizienten und Paritaet des Grades legen das Globalverhalten fest.",
+      "summaryZH": "自变量绝对值很大时最高次项完全支配函数值；首项系数符号与次数奇偶共同决定两端走向。",
+      "category": "Kurvendiskussion",
+      "curriculumTier": "EF",
+      "stage": "grundlagen",
+      "level": 2,
+      "xpReward": 95,
+      "estimatedMinutes": 10,
+      "prerequisites": [
+        "mathe-potenzfunktionen-wurzelfunktionen"
+      ],
+      "keyFormulaOrSentence": "Fuer x -> +-unendlich gilt f(x) ~ a_n * x^n;  a_n > 0 und n gerade -> beide Aeste streben nach +unendlich.",
+      "commonFallacy": "Das Globalverhalten an den kleineren Summanden ablesen - fuer grosse x zaehlt allein der hoechste Exponent.",
+      "layerIndex": 5,
+      "tags": [
+        "Verfahren",
+        "Kurvendiskussion",
+        "Grafik"
+      ]
+    },
+    {
+      "id": "mathe-ableitung-graphisch-deuten",
+      "fach": "Mathe",
+      "titleDE": "Graphisches Ableiten und Tangentensteigung",
+      "titleZH": "由图读导数：单调与极值的图像互译",
+      "summaryDE": "Der Graph der Ableitung entsteht aus dem Monotoniewechsel des Ausgangsgraphen: Steigungsverhalten wird zu Vorzeichen, Extremstellen werden zu Nullstellen.",
+      "summaryZH": "导函数图像由原函数单调性生成：上升下降转为符号，极值点转为导函数零点。",
+      "category": "Kurvendiskussion",
+      "curriculumTier": "EF",
+      "stage": "grundlagen",
+      "level": 2,
+      "xpReward": 105,
+      "estimatedMinutes": 12,
+      "prerequisites": [
+        "mathe-lokale-ableitung-grenzwert"
+      ],
+      "keyFormulaOrSentence": "f'(x) > 0 -> Graph steigt;  f'(x) < 0 -> Graph faellt;  Extremstelle von f -> Nullstelle von f' mit Vorzeichenwechsel.",
+      "commonFallacy": "Vom Vorzeichen von f(x) auf die Steigung schliessen - entscheidend ist allein das Vorzeichen von f'(x).",
+      "layerIndex": 5,
+      "tags": [
+        "Grafik",
+        "Differentialrechnung",
+        "Verfahren"
+      ]
+    },
+    {
+      "id": "mathe-tangenten-normalen-gleichung",
+      "fach": "Mathe",
+      "titleDE": "Tangenten- und Normalengleichung",
+      "titleZH": "切线与法线方程：点斜式与正交斜率",
+      "summaryDE": "Die Tangente ersetzt die Kurve in der Naehe des Beruehrpunkts durch eine lineare Funktion; die Normale steht senkrecht darauf.",
+      "summaryZH": "切线在切点附近用线性函数替代曲线；法线与切线垂直，斜率互为负倒数。",
+      "category": "Kurvendiskussion",
+      "curriculumTier": "EF",
+      "stage": "vertiefung",
+      "level": 2,
+      "xpReward": 115,
+      "estimatedMinutes": 14,
+      "prerequisites": [
+        "mathe-lokale-ableitung-grenzwert"
+      ],
+      "keyFormulaOrSentence": "t: y = f'(x0) * (x - x0) + f(x0);  n: y = -(1/f'(x0)) * (x - x0) + f(x0)  fuer f'(x0) != 0.",
+      "commonFallacy": "Als Normalensteigung den Kehrwert f'(x0) verwenden - korrekt ist der negative Kehrwert -1/f'(x0).",
+      "layerIndex": 5,
+      "tags": [
+        "Formel",
+        "Tangente",
+        "Differentialrechnung",
+        "Klausur-Dauerbrenner"
+      ]
+    },
+    {
+      "id": "mathe-monotonie-intervall-bestimmung",
+      "fach": "Mathe",
+      "titleDE": "Monotonieintervalle und Vorzeichen der Ableitung",
+      "titleZH": "单调区间判定：导函数符号表",
+      "summaryDE": "Die Monotonie auf einem Intervall haengt allein vom Vorzeichen der ersten Ableitung ab; die Nullstellen von f' zerlegen die x-Achse in Monotonieabschnitte.",
+      "summaryZH": "函数在区间上的单调性完全由一阶导数符号决定；导函数零点把数轴切成若干单调段。",
+      "category": "Kurvendiskussion",
+      "curriculumTier": "EF",
+      "stage": "vertiefung",
+      "level": 2,
+      "xpReward": 115,
+      "estimatedMinutes": 14,
+      "prerequisites": [
+        "mathe-ableitungsregeln-polynom",
+        "mathe-nullstellen-vielfachheit"
+      ],
+      "keyFormulaOrSentence": "f'(x) > 0 auf I -> f streng monoton steigend auf I;  f'(x) < 0 auf I -> f streng monoton fallend auf I.",
+      "commonFallacy": "Aus f'(x) = 0 an einer einzelnen Stelle auf konstantes Verhalten schliessen - Monotonie ist eine Intervallaussage.",
+      "layerIndex": 6,
+      "tags": [
+        "Verfahren",
+        "Monotonie",
+        "Kurvendiskussion"
+      ]
+    },
+    {
+      "id": "mathe-wendepunkt-kruemmungswechsel",
+      "fach": "Mathe",
+      "titleDE": "Kruemmungsverhalten und Wendepunkte",
+      "titleZH": "曲率方向与拐点：二阶导数变号",
+      "summaryDE": "Links- und Rechtskruemmung werden vom Vorzeichen der zweiten Ableitung bestimmt; ein Wendepunkt liegt nur bei einem tatsaechlichen Vorzeichenwechsel von f'' vor.",
+      "summaryZH": "左右曲率由二阶导数符号决定；只有 f'' 真正变号时才构成拐点。",
+      "category": "Kurvendiskussion",
+      "curriculumTier": "Q1",
+      "stage": "vertiefung",
+      "level": 2,
+      "xpReward": 125,
+      "estimatedMinutes": 15,
+      "prerequisites": [
+        "mathe-monotonie-intervall-bestimmung",
+        "mathe-produkt-und-kettenregel"
+      ],
+      "keyFormulaOrSentence": "f''(x) > 0 -> Linkskruemmung;  f''(x) < 0 -> Rechtskruemmung;  Wendepunkt: f''(x_W) = 0 und Vorzeichenwechsel von f''.",
+      "commonFallacy": "f''(x_W) = 0 allein als hinreichend ansehen - ohne Vorzeichenwechsel liegt kein Wendepunkt, sondern eine Flachstelle vor.",
+      "layerIndex": 8,
+      "tags": [
+        "Verfahren",
+        "Wendepunkt",
+        "Kurvendiskussion",
+        "AFB-III"
+      ],
+      "linkedReiseId": "Mathe-Kurvendiskussion-Wendepunkte-L1"
+    },
+    {
+      "id": "mathe-kurvendiskussion-kriterien",
+      "fach": "Mathe",
+      "titleDE": "Kurvendiskussion & Extrempunkte",
+      "titleZH": "函数性质判别：驻点、极值与拐点",
+      "summaryDE": "Notwendige Bedingung f'(x) = 0. Hinreichende Bedingung f''(x) != 0 oder Vorzeichenwechsel (VZW).",
+      "summaryZH": "一阶导零点结合二阶导或变号法则判定极大值与极小值；拐点判别。",
+      "category": "Kurvendiskussion",
+      "curriculumTier": "Q1",
+      "stage": "vertiefung",
+      "level": 2,
+      "xpReward": 140,
+      "estimatedMinutes": 15,
+      "prerequisites": [
+        "mathe-ableitungsregeln-polynom",
+        "mathe-monotonie-intervall-bestimmung",
+        "mathe-wendepunkt-kruemmungswechsel"
+      ],
+      "keyFormulaOrSentence": "Notwendig: f'(x_E) = 0; Hinreichend: f''(x_E) < 0 (Hochpunkt) bzw. f''(x_E) > 0 (Tiefpunkt).",
+      "commonFallacy": "Vergessen der hinreichenden Bedingung (Sattelpunkt f'(x)=0 ohne Extremum).",
+      "layerIndex": 9,
+      "tags": [
+        "Kurvendiskussion",
+        "Extrempunkte",
+        "Klausur-Dauerbrenner",
+        "AFB-III"
+      ],
+      "linkedNoteId": "03_Mathe/Ganzrationale-Funktionen-Kurvendiskussion.md",
+      "linkedReiseId": "Mathe-Kurvendiskussion-Kompakt-L1"
+    },
+    {
+      "id": "mathe-funktionsscharen-parameterdiskussion",
+      "fach": "Mathe",
+      "titleDE": "Funktionsscharen und Parameterdiskussion",
+      "titleZH": "函数族参数讨论：解随参数的分支变化",
+      "summaryDE": "Ein Parameter verschiebt oder verzerrt die gesamte Kurvenschar; die Lage der Extrem- und Wendestellen wird als Funktion des Parameters angegeben und diskutiert.",
+      "summaryZH": "参数使整族曲线平移或变形；极值与拐点位置写成参数的函数并分情况讨论。",
+      "category": "Kurvendiskussion",
+      "curriculumTier": "Q1",
+      "stage": "vertiefung",
+      "level": 3,
+      "xpReward": 150,
+      "estimatedMinutes": 20,
+      "prerequisites": [
+        "mathe-kurvendiskussion-kriterien",
+        "mathe-produkt-und-kettenregel"
+      ],
+      "keyFormulaOrSentence": "f_t(x): Extremstellen x_E(t) aus f_t'(x) = 0;  Ortskurve durch Eliminieren von t aus x = x_E(t) und y = f_t(x_E(t)).",
+      "commonFallacy": "Den Parameter beim Ableiten wie eine Konstante behandeln, aber anschliessend die Fallunterscheidung t = 0 vergessen.",
+      "layerIndex": 10,
+      "tags": [
+        "Scharen",
+        "Kurvendiskussion",
+        "AFB-III",
+        "Klausur-Dauerbrenner"
+      ],
+      "linkedNoteId": "03_Mathe/Funktionsscharen-und-Parameterdiskussion-LK.md",
+      "linkedReiseId": "Mathe-Analysis-Funktionenscharen-und-Ortskurven-L1"
+    },
+    {
+      "id": "mathe-funktionsschar-ortslinie-anwendung",
+      "fach": "Mathe",
+      "titleDE": "Ortskurven und Scharanalyse im Sachkontext",
+      "titleZH": "轨迹曲线与参数族在情境中的解释",
+      "summaryDE": "Die Ortskurve fasst alle Extrem- oder Wendepunkte einer Schar in einer einzigen Kurve zusammen und macht den Einfluss des Parameters im Sachkontext lesbar.",
+      "summaryZH": "轨迹曲线把整族曲线的极值点或拐点汇成一条线，使参数在情境中的含义变得可读。",
+      "category": "Kurvendiskussion",
+      "curriculumTier": "Q2",
+      "stage": "synthese",
+      "level": 3,
+      "xpReward": 160,
+      "estimatedMinutes": 20,
+      "prerequisites": [
+        "mathe-funktionsscharen-parameterdiskussion",
+        "mathe-kurvendiskussion-kriterien"
+      ],
+      "keyFormulaOrSentence": "Ortskurve: x = x(t), y = f_t(x(t)) -> t eliminieren; anschliessend Parameterdeutung im Sachzusammenhang angeben.",
+      "commonFallacy": "Die Ortskurve mit dem Graphen eines einzelnen Scharelements verwechseln - sie verbindet Punkte aus verschiedenen Kurven.",
+      "layerIndex": 11,
+      "tags": [
+        "Scharen",
+        "Sachkontext",
+        "AFB-III",
+        "Modellierung"
+      ],
+      "linkedReiseId": "Mathe-Ganzrationale-Funktionen-Sachkontext-L1"
+    },
+    {
+      "id": "mathe-klausur-synthese-abitur",
+      "fach": "Mathe",
+      "titleDE": "Abitur-Synthese: Analysis, Geometrie und Stochastik vernetzt",
+      "titleZH": "高考综合大题：三领域联结的完整论证链",
+      "summaryDE": "Die Abiturpruefung verlangt eine durchgehende Argumentationskette ueber alle drei Inhaltsfelder: Modell waehlen, rechnen, Ergebnis im Sachkontext deuten und die Modellgrenzen reflektieren.",
+      "summaryZH": "高考大题要求贯穿三大内容领域的完整论证链：选模型、算结果、回译情境并反思模型边界。",
+      "category": "Kurvendiskussion",
+      "curriculumTier": "Q2",
+      "stage": "klausur_praxis",
+      "level": 3,
+      "xpReward": 200,
+      "estimatedMinutes": 30,
+      "prerequisites": [
+        "mathe-funktionsschar-ortslinie-anwendung",
+        "mathe-hauptsatz-differential-integralrechnung",
+        "mathe-extremwert-optimierung",
+        "mathe-orthogonalitaet-spiegelung-anwendung"
+      ],
+      "keyFormulaOrSentence": "Bewertet wird die vollstaendige Kette: Ansatz begruenden -> Rechnung nachvollziehbar darstellen -> Ergebnis mit Einheit deuten -> Gueltigkeit reflektieren.",
+      "commonFallacy": "Ergebnisse ohne Antwortsatz und ohne Einheit stehen lassen - im Sachkontext fehlen damit die entscheidenden Bewertungspunkte.",
+      "layerIndex": 12,
+      "tags": [
+        "Klausur-Dauerbrenner",
+        "AFB-III",
+        "Schwerpunkt-2026",
+        "Kurvendiskussion"
+      ],
+      "linkedNoteId": "03_Mathe/Mathe-Q1-Q2-Terminologie.md",
+      "linkedReiseId": "Mathe-ZKE-2027-L1"
+    },
+    {
+      "id": "mathe-koerperberechnung-volumen",
+      "fach": "Mathe",
+      "titleDE": "Koerperberechnung: Volumen und Oberflaeche",
+      "titleZH": "几何体体积与表面积：柱锥球公式群",
+      "summaryDE": "Volumen und Oberflaeche von Zylinder, Kegel und Kugel ergeben sich aus Grundflaeche und Hoehe bzw. aus dem Radius; diese Formeln sind die Bausteine spaeterer Optimierungsaufgaben.",
+      "summaryZH": "柱、锥、球的体积与表面积由底面积、高与半径决定；这些公式是后续最优化建模的基本零件。",
+      "category": "Optimierungsmodell",
+      "curriculumTier": "Sek_I",
+      "stage": "grundlagen",
+      "level": 2,
+      "xpReward": 75,
+      "estimatedMinutes": 10,
+      "prerequisites": [
+        "mathe-zahlen-operationen-rechengesetze"
+      ],
+      "keyFormulaOrSentence": "V_Zylinder = pi * r^2 * h;  V_Kegel = (1/3) * pi * r^2 * h;  V_Kugel = (4/3) * pi * r^3;  O_Kugel = 4 * pi * r^2.",
+      "commonFallacy": "Beim Kegel den Faktor 1/3 vergessen - dasselbe Grundflaechen-Hoehen-Produkt ergibt beim Zylinder das Dreifache.",
+      "layerIndex": 2,
+      "tags": [
+        "Formel",
+        "Koerper",
+        "Basiswissen",
+        "Geometrie"
+      ]
+    },
+    {
+      "id": "mathe-steckbriefaufgaben-bedingungen",
+      "fach": "Mathe",
+      "titleDE": "Steckbriefaufgaben: Bedingungen aufstellen",
+      "titleZH": "待定系数法：几何条件翻译为线性方程组",
+      "summaryDE": "Aus Eigenschaften des Graphen werden Gleichungen fuer die Koeffizienten des Funktionsterms; die Zahl der unabhaengigen Bedingungen muss zum Grad des Ansatzes passen.",
+      "summaryZH": "把图像的几何性质翻译成关于系数的方程；独立条件个数必须与所设多项式次数匹配。",
+      "category": "Optimierungsmodell",
+      "curriculumTier": "EF",
+      "stage": "vertiefung",
+      "level": 2,
+      "xpReward": 135,
+      "estimatedMinutes": 18,
+      "prerequisites": [
+        "mathe-nullstellen-vielfachheit",
+        "mathe-symmetrie-ganzrationale",
+        "mathe-ableitungsregeln-polynom"
+      ],
+      "keyFormulaOrSentence": "Punkt P(a | b) -> f(a) = b;  Extremum in a -> f'(a) = 0;  Wendepunkt in a -> f''(a) = 0;  Sattelpunkt in a -> f'(a) = 0 und f''(a) = 0.",
+      "commonFallacy": "Zu wenige unabhaengige Bedingungen aufstellen oder dieselbe Bedingung doppelt verwenden, sodass das LGS unterbestimmt bleibt.",
+      "layerIndex": 6,
+      "tags": [
+        "Verfahren",
+        "Steckbrief",
+        "Modellierung",
+        "Klausur-Dauerbrenner"
+      ],
+      "linkedNoteId": "03_Mathe/Steckbriefaufgaben-und-Funktionsanpassung.md",
+      "linkedReiseId": "Mathe-Steckbriefaufgaben-Verfahren-L1"
+    },
+    {
+      "id": "mathe-optimierung-randwerte-intervall",
+      "fach": "Mathe",
+      "titleDE": "Extremwerte auf abgeschlossenen Intervallen",
+      "titleZH": "闭区间上的绝对极值：驻点与端点比较",
+      "summaryDE": "Im abgeschlossenen Intervall konkurrieren die inneren Stationaerstellen mit den beiden Randwerten; das globale Extremum ist der groesste bzw. kleinste unter allen Kandidaten.",
+      "summaryZH": "闭区间上内部驻点与两个端点共同竞争；绝对极值取自全部候选值中的最大或最小者。",
+      "category": "Optimierungsmodell",
+      "curriculumTier": "EF",
+      "stage": "vertiefung",
+      "level": 2,
+      "xpReward": 130,
+      "estimatedMinutes": 16,
+      "prerequisites": [
+        "mathe-monotonie-intervall-bestimmung",
+        "mathe-ableitungsregeln-polynom"
+      ],
+      "keyFormulaOrSentence": "Kandidaten fuer globale Extrema auf [a; b]: alle x mit f'(x) = 0 sowie x = a und x = b; danach Funktionswerte vergleichen.",
+      "commonFallacy": "Nur die Nullstellen der ersten Ableitung pruefen und die beiden Randwerte des Intervalls vergessen.",
+      "layerIndex": 7,
+      "tags": [
+        "Verfahren",
+        "Optimierung",
+        "Klausur-Dauerbrenner"
+      ]
+    },
+    {
+      "id": "mathe-wachstumsmodelle-begrenzt-logistisch",
+      "fach": "Mathe",
+      "titleDE": "Wachstumsmodelle: begrenztes und logistisches Wachstum",
+      "titleZH": "增长模型：有界增长与逻辑斯蒂增长",
+      "summaryDE": "Beim begrenzten Wachstum ist die Aenderungsrate proportional zur Differenz zwischen Saettigungsgrenze und Bestand; das logistische Modell ergaenzt einen bestandsabhaengigen Bremsterm.",
+      "summaryZH": "有界增长的变化率与「饱和上限减当前存量」成正比；逻辑斯蒂模型再叠加一个随存量增大的阻尼项。",
+      "category": "Optimierungsmodell",
+      "curriculumTier": "Q1",
+      "stage": "vertiefung",
+      "level": 2,
+      "xpReward": 145,
+      "estimatedMinutes": 18,
+      "prerequisites": [
+        "mathe-exponentialfunktionen-wachstum",
+        "mathe-e-funktion-natuerlicher-logarithmus"
+      ],
+      "keyFormulaOrSentence": "Begrenzt: B(t) = S - (S - B(0)) * e^(-k*t);  logistisch: f(t) = S / (1 + c * e^(-k*t)).",
+      "commonFallacy": "Die Saettigungsgrenze S als Anfangswert verwenden - S ist der Grenzwert fuer t -> unendlich, nicht B(0).",
+      "layerIndex": 7,
+      "tags": [
+        "Modell",
+        "Wachstum",
+        "Sachkontext",
+        "AFB-III"
+      ]
+    },
+    {
+      "id": "mathe-extremwertprobleme-nebenbedingung",
+      "fach": "Mathe",
+      "titleDE": "Zielfunktion & Nebenbedingung (Eliminationsverfahren)",
+      "titleZH": "带约束条件的极值建模：目标函数与消元",
+      "summaryDE": "Die Zielfunktion haengt zunaechst von zwei Groessen ab; die Nebenbedingung verknuepft beide, sodass nach dem Einsetzen eine Funktion einer einzigen Variablen entsteht.",
+      "summaryZH": "目标函数起初含两个变量，约束条件把它们联系起来，代入后化为一元函数再求极值。",
+      "category": "Optimierungsmodell",
+      "curriculumTier": "Q1",
+      "stage": "vertiefung",
+      "level": 3,
+      "xpReward": 155,
+      "estimatedMinutes": 22,
+      "prerequisites": [
+        "mathe-produkt-und-kettenregel",
+        "mathe-kurvendiskussion-kriterien",
+        "mathe-optimierung-randwerte-intervall"
+      ],
+      "keyFormulaOrSentence": "Zielfunktion Z(x, y) aufstellen, Nebenbedingung nach y aufloesen und einsetzen -> Z(x); danach Z'(x) = 0 mit Randkontrolle im Sachkontext.",
+      "commonFallacy": "Direkt die Ableitung der Zielfunktion bilden, ohne die Nebenbedingung eingesetzt zu haben - dann bleiben zwei Unbekannte in einer Gleichung.",
+      "layerIndex": 10,
+      "tags": [
+        "Optimierung",
+        "Modellierung",
+        "AFB-III",
+        "Klausur-Dauerbrenner"
+      ],
+      "linkedNoteId": "03_Mathe/Vom-Extremwert-zum-Beweis.md",
+      "linkedReiseId": "Mathe-Analysis-Extremwertprobleme-mit-Nebenbedingungen-L1"
+    },
+    {
+      "id": "mathe-rotationskoerper-volumenintegral",
+      "fach": "Mathe",
+      "titleDE": "Rotationskoerper und Volumenintegral",
+      "titleZH": "旋转体体积：圆盘叠加的积分模型",
+      "summaryDE": "Rotiert der Graph um die x-Achse, entsteht ein Koerper aus kreisfoermigen Querschnitten; das Volumen ist das Integral ueber die Querschnittsflaechen.",
+      "summaryZH": "图像绕 x 轴旋转生成由圆形截面堆叠而成的立体；体积即各截面面积沿轴的积分。",
+      "category": "Optimierungsmodell",
+      "curriculumTier": "Q1",
+      "stage": "vertiefung",
+      "level": 3,
+      "xpReward": 150,
+      "estimatedMinutes": 18,
+      "prerequisites": [
+        "mathe-hauptsatz-differential-integralrechnung",
+        "mathe-koerperberechnung-volumen"
+      ],
+      "keyFormulaOrSentence": "V = pi * Integral_a^b (f(x))^2 dx  bei Rotation des Graphen um die x-Achse.",
+      "commonFallacy": "f(x) statt (f(x))^2 integrieren - der Querschnitt ist eine Kreisflaeche mit dem Radius f(x).",
+      "layerIndex": 9,
+      "tags": [
+        "Integralrechnung",
+        "Formel",
+        "Koerper",
+        "AFB-III"
+      ],
+      "linkedNoteId": "03_Mathe/Uneigentliche-Integrale-und-Rotationsvolumen-LK.md"
+    },
+    {
+      "id": "mathe-integral-flaechenbilanz",
+      "fach": "Mathe",
+      "titleDE": "Flaechenbilanz und Bestandsrekonstruktion",
+      "titleZH": "面积平衡与存量重建：定积分的应用",
+      "summaryDE": "Bei Vorzeichenwechseln muss abschnittsweise integriert werden, damit sich positive und negative Flaechenstuecke nicht aufheben; dasselbe Integral rekonstruiert aus einer Aenderungsrate den Bestand.",
+      "summaryZH": "有符号变化时分段积分，避免正负面积相互抵消；同一积分还能由变化率反推存量。",
+      "category": "Optimierungsmodell",
+      "curriculumTier": "Q2",
+      "stage": "synthese",
+      "level": 3,
+      "xpReward": 160,
+      "estimatedMinutes": 20,
+      "prerequisites": [
+        "mathe-hauptsatz-differential-integralrechnung",
+        "mathe-nullstellen-vielfachheit"
+      ],
+      "keyFormulaOrSentence": "A = |Integral_a^b f(x) dx| nur bei konstantem Vorzeichen; sonst abschnittsweise integrieren.  Bestand: B(b) = B(a) + Integral_a^b B'(x) dx.",
+      "commonFallacy": "Ueber eine Nullstelle hinweg das Integral als Flaecheninhalt deuten - dann hebt sich ein Teil der Flaeche auf.",
+      "layerIndex": 10,
+      "tags": [
+        "Integralrechnung",
+        "Sachkontext",
+        "AFB-III",
+        "Schwerpunkt-2026"
+      ],
+      "linkedNoteId": "03_Mathe/Iterationsprozesse-und-Kumulation.md"
+    },
+    {
+      "id": "mathe-extremwert-optimierung",
+      "fach": "Mathe",
+      "titleDE": "Extremwertprobleme mit Nebenbedingung",
+      "titleZH": "实际几何与经济最优化建模",
+      "summaryDE": "Zielfunktion aufstellen, Nebenbedingung einsetzen, auf Randextrema und Definitionsbereich achten.",
+      "summaryZH": "目标函数构建、约束条件消元、一阶求导驻点与闭区间端点值比对 (AFB III)。",
+      "category": "Optimierungsmodell",
+      "curriculumTier": "Q2",
+      "stage": "klausur_praxis",
+      "level": 3,
+      "xpReward": 160,
+      "estimatedMinutes": 20,
+      "prerequisites": [
+        "mathe-extremwertprobleme-nebenbedingung",
+        "mathe-rotationskoerper-volumenintegral",
+        "mathe-steckbriefaufgaben-bedingungen"
+      ],
+      "keyFormulaOrSentence": "Antwortsatz im Sachkontext inklusive Ueberpruefung der Randwerte ist obligatorisch.",
+      "commonFallacy": "Nach dem Ausrechnen des Extremums die Randwerte und die Sinnhaftigkeit des Definitionsbereichs nicht pruefen.",
+      "layerIndex": 11,
+      "tags": [
+        "Optimierung",
+        "AFB-III",
+        "Modellierung",
+        "Klausur-Dauerbrenner"
+      ],
+      "linkedToolId": "box-optimizer",
+      "linkedNoteId": "03_Mathe/Klausur-Training/Mathe-Operatoren-Check.md",
+      "linkedReiseId": "Mathe-Extremwertprobleme-Optimierung-L1"
+    },
+    {
+      "id": "mathe-uneigentliche-integrale-grenzwert",
+      "fach": "Mathe",
+      "titleDE": "Uneigentliche Integrale",
+      "titleZH": "反常积分：区间或函数值无界时的收敛判定",
+      "summaryDE": "Bei unbeschraenktem Integrationsintervall oder Polstelle im Integrationsbereich wird das Integral als Grenzwert definiert; nur wenn dieser Grenzwert existiert, heisst das Integral konvergent.",
+      "summaryZH": "当积分区间无界或被积函数在区间内有瑕点时，用极限定义积分；极限存在才称收敛。",
+      "category": "Optimierungsmodell",
+      "curriculumTier": "Q2",
+      "stage": "vertiefung",
+      "level": 3,
+      "xpReward": 160,
+      "estimatedMinutes": 18,
+      "prerequisites": [
+        "mathe-hauptsatz-differential-integralrechnung",
+        "mathe-rotationskoerper-volumenintegral"
+      ],
+      "keyFormulaOrSentence": "Integral_a^unendlich f(x) dx = lim_{b->unendlich} Integral_a^b f(x) dx,  sofern dieser Grenzwert existiert.",
+      "commonFallacy": "Den Grenzwert einfach an der oberen Grenze einsetzen, ohne die Konvergenz vorher nachzuweisen.",
+      "layerIndex": 10,
+      "tags": [
+        "Integralrechnung",
+        "Grenzwert",
+        "Uni-Prep",
+        "AFB-III"
+      ],
+      "linkedReiseId": "Mathe-Rotationsvolumen-und-Uneigentliche-Integrale-L1"
+    },
+    {
+      "id": "mathe-uni-beweisverfahren-induktion",
+      "fach": "Mathe",
+      "titleDE": "Vollstaendige Induktion und Beweisverfahren",
+      "titleZH": "数学归纳法与常见证明方法体系",
+      "summaryDE": "Die vollstaendige Induktion beweist Aussagen ueber alle natuerlichen Zahlen in zwei Schritten: Verankerung am Anfang und Schluss von n auf n + 1.",
+      "summaryZH": "数学归纳法通过起始验证与 n 到 n+1 的递推两步，证明关于全部自然数的命题。",
+      "category": "Optimierungsmodell",
+      "curriculumTier": "Uni_Prep",
+      "stage": "vertiefung",
+      "level": 3,
+      "xpReward": 185,
+      "estimatedMinutes": 25,
+      "prerequisites": [
+        "mathe-hauptsatz-differential-integralrechnung",
+        "mathe-integral-flaechenbilanz"
+      ],
+      "keyFormulaOrSentence": "Induktionsanfang A(1) zeigen;  Induktionsschluss: aus A(n) folgt A(n+1) fuer beliebiges n;  Induktionsbehauptung A(n+1) explizit ausformulieren.",
+      "commonFallacy": "Im Induktionsschluss die Induktionsvoraussetzung A(n) gar nicht verwenden - dann ist der Beweis rechnerisch, aber nicht logisch gueltig.",
+      "layerIndex": 11,
+      "tags": [
+        "Axiom",
+        "Beweis",
+        "Uni-Prep",
+        "Definition"
+      ]
+    },
+    {
+      "id": "mathe-uni-modellbildung-differentialgleichung",
+      "fach": "Mathe",
+      "titleDE": "Modellbildung mit Differentialgleichungen",
+      "titleZH": "微分方程建模：增长、衰减与平衡解",
+      "summaryDE": "Sachverhalte mit proportionaler Aenderungsrate fuehren auf eine Differentialgleichung, deren Loesung die gesuchte Bestandsfunktion ist.",
+      "summaryZH": "变化率与存量成正比的情境都归结为一个微分方程，其解就是待求的存量函数。",
+      "category": "Optimierungsmodell",
+      "curriculumTier": "Uni_Prep",
+      "stage": "synthese",
+      "level": 3,
+      "xpReward": 190,
+      "estimatedMinutes": 28,
+      "prerequisites": [
+        "mathe-wachstumsmodelle-begrenzt-logistisch",
+        "mathe-uneigentliche-integrale-grenzwert",
+        "mathe-uni-grenzwert-epsilon-delta-stetigkeit"
+      ],
+      "keyFormulaOrSentence": "f'(x) = k * f(x) hat die Loesungen f(x) = c * e^(k*x);  beschraenktes Wachstum erfuellt f' = k * (S - f).",
+      "commonFallacy": "Aus der Differentialgleichung direkt einen Zahlenwert ablesen wollen - gesucht ist die Funktion, nicht eine einzelne Steigung.",
+      "layerIndex": 12,
+      "tags": [
+        "Modell",
+        "Uni-Prep",
+        "Wachstum",
+        "AFB-III"
+      ]
+    },
+    {
+      "id": "mathe-uni-optimierung-mehrdimensional-gradient",
+      "fach": "Mathe",
+      "titleDE": "Mehrdimensionale Optimierung und Gradient",
+      "titleZH": "多元最优化与梯度：临界点判别",
+      "summaryDE": "Im Mehrdimensionalen verschwindet der Gradient im Extremum; ob Maximum, Minimum oder Sattelpunkt vorliegt, entscheidet die zweite Ableitungsinformation.",
+      "summaryZH": "多元情形下极值点处梯度为零；究竟是极大、极小还是鞍点，由二阶信息判别。",
+      "category": "Optimierungsmodell",
+      "curriculumTier": "Uni_Prep",
+      "stage": "synthese",
+      "level": 3,
+      "xpReward": 190,
+      "estimatedMinutes": 28,
+      "prerequisites": [
+        "mathe-extremwertprobleme-nebenbedingung",
+        "mathe-extremwert-optimierung",
+        "mathe-produkt-und-kettenregel"
+      ],
+      "keyFormulaOrSentence": "Notwendig: grad f(x, y) = 0;  die Hesse-Matrix entscheidet ueber Maximum, Minimum oder Sattelpunkt.",
+      "commonFallacy": "Vom Verschwinden des Gradienten direkt auf ein Extremum schliessen - Gradient null bedeutet zunaechst nur eine kritische Stelle.",
+      "layerIndex": 12,
+      "tags": [
+        "Optimierung",
+        "Uni-Prep",
+        "AFB-III",
+        "Verfahren"
+      ]
+    },
+    {
+      "id": "mathe-uni-numerische-verfahren-newton",
+      "fach": "Mathe",
+      "titleDE": "Numerische Verfahren: Newton-Verfahren und Naeherung",
+      "titleZH": "数值方法：牛顿迭代与近似求根",
+      "summaryDE": "Das Newton-Verfahren ersetzt die Kurve durch ihre Tangente und nutzt deren Nullstelle als naechste Naeherung; bei einfacher Nullstelle konvergiert es quadratisch.",
+      "summaryZH": "牛顿法用切线代替曲线，以切线的零点作为下一次近似；在单零点附近呈平方阶收敛。",
+      "category": "Optimierungsmodell",
+      "curriculumTier": "Uni_Prep",
+      "stage": "vertiefung",
+      "level": 3,
+      "xpReward": 180,
+      "estimatedMinutes": 25,
+      "prerequisites": [
+        "mathe-kurvendiskussion-kriterien",
+        "mathe-ableitungsregeln-polynom",
+        "mathe-optimierung-randwerte-intervall"
+      ],
+      "keyFormulaOrSentence": "x_{n+1} = x_n - f(x_n) / f'(x_n)  mit einem Startwert x_0 nahe der gesuchten Nullstelle.",
+      "commonFallacy": "Das Verfahren mit beliebigem Startwert anwenden - bei f'(x_n) nahe null oder unguenstigem Startwert divergiert die Folge.",
+      "layerIndex": 12,
+      "tags": [
+        "Verfahren",
+        "Uni-Prep",
+        "Numerik",
+        "Definition"
+      ]
+    },
+    {
+      "id": "mathe-uni-theorie-konvergenz-synthese",
+      "fach": "Mathe",
+      "titleDE": "Theorie-Konvergenz: Grenzwert, Beweis und Modell formal",
+      "titleZH": "理论综合：极限、证明与建模的形式化统一",
+      "summaryDE": "Die formale Analysis vereinigt Grenzwertbegriff, Beweistechnik und Modellbildung: Jede Naeherung ist als Grenzaussage formulierbar, jede Optimierung als Extremalprinzip, jede Modellierung als Differentialgleichung.",
+      "summaryZH": "形式化分析把极限、证明与建模统一起来：近似都是极限陈述，最优化都是极值原理，建模都归结为微分方程。",
+      "category": "Optimierungsmodell",
+      "curriculumTier": "Uni_Prep",
+      "stage": "synthese",
+      "level": 3,
+      "xpReward": 200,
+      "estimatedMinutes": 30,
+      "prerequisites": [
+        "mathe-uni-grenzwert-epsilon-delta-stetigkeit",
+        "mathe-uni-modellbildung-differentialgleichung",
+        "mathe-uni-optimierung-mehrdimensional-gradient",
+        "mathe-uni-numerische-verfahren-newton"
+      ],
+      "keyFormulaOrSentence": "Ein Konvergenzbeweis besteht aus einem epsilon-N-Argument: die Aussage muss fuer jedes epsilon > 0 mit einem endlichen Index N gezeigt werden.",
+      "commonFallacy": "Anschauliche Formulierungen wie 'wird unendlich klein' als Beweis akzeptieren - formal ist eine epsilon-N-Abschaetzung erforderlich.",
+      "layerIndex": 13,
+      "tags": [
+        "Axiom",
+        "Uni-Prep",
+        "Grenzwert",
+        "AFB-III"
+      ]
+    },
+    {
+      "id": "mathe-pythagoras-laengen",
+      "fach": "Mathe",
+      "titleDE": "Satz des Pythagoras und Laengen im Raum",
+      "titleZH": "勾股定理与空间两点距离公式",
+      "summaryDE": "In jedem rechtwinkligen Dreieck gilt a^2 + b^2 = c^2; zweifach angewendet liefert der Satz die Raumdiagonale und den Abstand zweier Punkte im Koordinatensystem.",
+      "summaryZH": "直角三角形中两直角边平方和等于斜边平方；连用两次即得空间对角线，也就是两点的坐标距离公式。",
+      "category": "Lineare-Algebra",
+      "curriculumTier": "Sek_I",
+      "stage": "einfuehrung",
+      "level": 1,
+      "xpReward": 65,
+      "estimatedMinutes": 8,
+      "prerequisites": [],
+      "keyFormulaOrSentence": "a^2 + b^2 = c^2;  |PQ| = Wurzel((x2 - x1)^2 + (y2 - y1)^2 + (z2 - z1)^2).",
+      "commonFallacy": "Die Hypotenuse mit einer Kathete verwechseln - die Hypotenuse liegt stets dem rechten Winkel gegenueber.",
+      "layerIndex": 0,
+      "tags": [
+        "Axiom",
+        "Geometrie",
+        "Basiswissen",
+        "Formel"
+      ]
+    },
+    {
+      "id": "mathe-trigonometrie-rechtwinklig",
+      "fach": "Mathe",
+      "titleDE": "Trigonometrie am rechtwinkligen Dreieck",
+      "titleZH": "直角三角形三角比：正弦、余弦与正切",
+      "summaryDE": "Seitenverhaeltnisse im rechtwinkligen Dreieck lassen sich als Sinus, Kosinus und Tangens eines Winkels auffassen und machen aus einem Winkel eine berechenbare Groesse.",
+      "summaryZH": "把直角三角形中的边长比定义为角的正弦、余弦与正切，使角度转变为可计算的量。",
+      "category": "Lineare-Algebra",
+      "curriculumTier": "Sek_I",
+      "stage": "grundlagen",
+      "level": 2,
+      "xpReward": 80,
+      "estimatedMinutes": 10,
+      "prerequisites": [
+        "mathe-pythagoras-laengen"
+      ],
+      "keyFormulaOrSentence": "sin(alpha) = Gegenkathete/Hypotenuse,  cos(alpha) = Ankathete/Hypotenuse,  tan(alpha) = Gegenkathete/Ankathete.",
+      "commonFallacy": "Sinus und Kosinus verwechseln, weil An- und Gegenkathete nicht vom Bezugswinkel aus bestimmt wurden.",
+      "layerIndex": 2,
+      "tags": [
+        "Formel",
+        "Trigonometrie",
+        "Geometrie",
+        "Basiswissen"
+      ]
+    },
+    {
+      "id": "mathe-vektoren-grundlagen-raum",
+      "fach": "Mathe",
+      "titleDE": "Vektoren und Koordinatisierung des Raumes",
+      "titleZH": "空间向量与坐标化：位移的有向表示",
+      "summaryDE": "Ein Vektor beschreibt eine Verschiebung mit Richtung und Laenge und ist unabhaengig von seinem Startpunkt; Koordinaten machen Rechnungen im Raum algebraisch.",
+      "summaryZH": "向量表示带方向的位移，与起点无关；坐标化把空间几何问题变成纯代数运算。",
+      "category": "Lineare-Algebra",
+      "curriculumTier": "EF",
+      "stage": "einfuehrung",
+      "level": 1,
+      "xpReward": 85,
+      "estimatedMinutes": 12,
+      "prerequisites": [
+        "mathe-pythagoras-laengen"
+      ],
+      "keyFormulaOrSentence": "Vektor AB = b - a (Spitze minus Fuss);  die Verschiebung um AB bildet P auf P + AB ab.",
+      "commonFallacy": "Den Vektor AB mit dem Ortsvektor von A gleichsetzen - der Verbindungsvektor entsteht aus der Differenz beider Ortsvektoren.",
+      "layerIndex": 3,
+      "tags": [
+        "Definition",
+        "Vektoren",
+        "Geometrie",
+        "Basiswissen"
+      ],
+      "linkedNoteId": "03_Mathe/Vektor-Grundlagen-EF.md"
+    },
+    {
+      "id": "mathe-vektor-laenge-kollinearitaet",
+      "fach": "Mathe",
+      "titleDE": "Vektorlaenge und Kollinearitaet",
+      "titleZH": "向量长度与共线判定",
+      "summaryDE": "Die Laenge eines Vektors ergibt sich aus dem Satz des Pythagoras; zwei Vektoren sind kollinear, wenn sie Vielfache voneinander sind.",
+      "summaryZH": "向量长度由勾股定理给出；两向量成比例即为共线（平行）。",
+      "category": "Lineare-Algebra",
+      "curriculumTier": "EF",
+      "stage": "grundlagen",
+      "level": 2,
+      "xpReward": 95,
+      "estimatedMinutes": 12,
+      "prerequisites": [
+        "mathe-vektoren-grundlagen-raum"
+      ],
+      "keyFormulaOrSentence": "|a| = Wurzel(a1^2 + a2^2 + a3^2);  a und b sind kollinear genau dann, wenn a = r * b fuer ein r != 0 gilt.",
+      "commonFallacy": "Kollinearitaet und gleiche Laenge verwechseln - kollineare Vektoren duerfen verschieden lang sein.",
+      "layerIndex": 4,
+      "tags": [
+        "Formel",
+        "Vektoren",
+        "Geometrie"
+      ],
+      "linkedNoteId": "03_Mathe/Basis-und-Linearkombination.md"
+    },
+    {
+      "id": "mathe-geraden-parameterform",
+      "fach": "Mathe",
+      "titleDE": "Geraden in Parameterform",
+      "titleZH": "直线参数方程：点向式与参数的意义",
+      "summaryDE": "Eine Gerade entsteht aus einem Aufpunkt und einem Richtungsvektor; der Parameter t erzeugt durch Verschiebung jeden Punkt der Geraden.",
+      "summaryZH": "直线由一个定点和一个方向向量生成；参数 t 从定点出发沿方向滑动，覆盖整条直线。",
+      "category": "Lineare-Algebra",
+      "curriculumTier": "EF",
+      "stage": "grundlagen",
+      "level": 2,
+      "xpReward": 100,
+      "estimatedMinutes": 12,
+      "prerequisites": [
+        "mathe-vektor-laenge-kollinearitaet"
+      ],
+      "keyFormulaOrSentence": "g: x = p + t * u  mit Aufpunkt p und Richtungsvektor u;  jeder Punkt der Geraden gehoert zu genau einem t.",
+      "commonFallacy": "Den Parameter t als Koordinate des Punktes lesen - t ist eine Weglänge entlang des Richtungsvektors, keine Ortskoordinate.",
+      "layerIndex": 5,
+      "tags": [
+        "Formel",
+        "Geraden",
+        "Vektoren",
+        "Verfahren"
+      ],
+      "linkedNoteId": "03_Mathe/Geraden-Parameterform-und-Lagebeziehungen.md"
+    },
+    {
+      "id": "mathe-lagebeziehung-geraden",
+      "fach": "Mathe",
+      "titleDE": "Lagebeziehungen von Geraden",
+      "titleZH": "直线位置关系：平行、相交、重合与异面",
+      "summaryDE": "Ob zwei Geraden identisch, parallel, schneidend oder windschief sind, entscheiden zuerst die Richtungsvektoren und anschliessend die Loesbarkeit des entstehenden Gleichungssystems.",
+      "summaryZH": "判断两直线是重合、平行、相交还是异面，先看方向向量是否成比例，再看方程组是否有解。",
+      "category": "Lineare-Algebra",
+      "curriculumTier": "EF",
+      "stage": "vertiefung",
+      "level": 3,
+      "xpReward": 120,
+      "estimatedMinutes": 15,
+      "prerequisites": [
+        "mathe-geraden-parameterform"
+      ],
+      "keyFormulaOrSentence": "Richtungsvektoren kollinear -> parallel oder identisch (Punktprobe);  sonst LGS loesen -> eindeutige Loesung (Schnittpunkt) oder keine Loesung (windschief).",
+      "commonFallacy": "Zwei Geraden im Raum ohne kollineare Richtungsvektoren automatisch als schneidend ansehen - windschief ist der haeufigere Fall.",
+      "layerIndex": 6,
+      "tags": [
+        "Verfahren",
+        "Geraden",
+        "Geometrie",
+        "AFB-III"
+      ]
+    },
+    {
+      "id": "mathe-lineare-gleichungssysteme-loesen",
+      "fach": "Mathe",
+      "titleDE": "Lineare Gleichungssysteme und Loesungsmengen",
+      "titleZH": "线性方程组：高斯消元与解集的几何含义",
+      "summaryDE": "Das Gauss-Verfahren bringt das System auf Stufenform; daran liest man ab, ob es genau eine, unendlich viele oder keine Loesungen besitzt.",
+      "summaryZH": "高斯消元把方程组化为阶梯形，由此判断有唯一解、无穷多解还是无解。",
+      "category": "Lineare-Algebra",
+      "curriculumTier": "EF",
+      "stage": "grundlagen",
+      "level": 2,
+      "xpReward": 110,
+      "estimatedMinutes": 14,
+      "prerequisites": [
+        "mathe-terme-gleichungen-umformen",
+        "mathe-geraden-parameterform"
+      ],
+      "keyFormulaOrSentence": "Stufenform per Gauss-Algorithmus;  eine Zeile 0 = c mit c != 0 bedeutet: das System ist unloesbar.",
+      "commonFallacy": "Bei einer Nullzeile 0 = 0 sofort 'keine Loesung' schliessen - eine Nullzeile zeigt einen freien Parameter und damit unendlich viele Loesungen.",
+      "layerIndex": 6,
+      "tags": [
+        "Verfahren",
+        "Lineare-Algebra",
+        "Algebra",
+        "Basiswissen"
+      ],
+      "linkedNoteId": "03_Mathe/Lineare-Gleichungssysteme-und-Loesungsmengen.md"
+    },
+    {
+      "id": "mathe-skalarprodukt-orthogonalitaet",
+      "fach": "Mathe",
+      "titleDE": "Skalarprodukt und Orthogonalitaet",
+      "titleZH": "数量积与正交判定：投影与向量夹角",
+      "summaryDE": "Das Skalarprodukt verknuepft Laenge und Winkel zweier Vektoren; es liefert eine Zahl, die genau dann null ist, wenn die Vektoren senkrecht aufeinander stehen.",
+      "summaryZH": "数量积把两向量的长度与夹角统一起来，得到的是标量；当且仅当两向量垂直时其值为零。",
+      "category": "Lineare-Algebra",
+      "curriculumTier": "Q1",
+      "stage": "grundlagen",
+      "level": 2,
+      "xpReward": 125,
+      "estimatedMinutes": 15,
+      "prerequisites": [
+        "mathe-vektor-laenge-kollinearitaet",
+        "mathe-geraden-parameterform"
+      ],
+      "keyFormulaOrSentence": "a * b = a1*b1 + a2*b2 + a3*b3 = |a| * |b| * cos(alpha);  a senkrecht zu b genau dann, wenn a * b = 0.",
+      "commonFallacy": "Das Skalarprodukt mit der skalaren Multiplikation verwechseln - das Ergebnis ist eine Zahl, kein Vektor.",
+      "layerIndex": 7,
+      "tags": [
+        "Formel",
+        "Skalarprodukt",
+        "Vektoren",
+        "Klausur-Dauerbrenner"
+      ],
+      "linkedReiseId": "Mathe-Vektoren-Raum-Skalarprodukt-L1"
+    },
+    {
+      "id": "mathe-ebenen-parameterform-normalenvektor",
+      "fach": "Mathe",
+      "titleDE": "Ebenen: Parameterform, Normalenvektor und Koordinatenform",
+      "titleZH": "平面方程：参数式、法向量与坐标式",
+      "summaryDE": "Eine Ebene wird von zwei nicht kollinearen Spannvektoren aufgespannt; ein dazu senkrechter Normalenvektor fuehrt auf die Koordinatenform und macht die Punktprobe besonders einfach.",
+      "summaryZH": "平面由两个不共线方向向量张成；与两者都垂直的法向量导出坐标式，使点检验变得极简。",
+      "category": "Lineare-Algebra",
+      "curriculumTier": "Q1",
+      "stage": "grundlagen",
+      "level": 2,
+      "xpReward": 130,
+      "estimatedMinutes": 16,
+      "prerequisites": [
+        "mathe-skalarprodukt-orthogonalitaet",
+        "mathe-geraden-parameterform"
+      ],
+      "keyFormulaOrSentence": "E: x = p + s*u + t*v;  Koordinatenform n1*x1 + n2*x2 + n3*x3 = d mit einem Normalenvektor n senkrecht zu u und v.",
+      "commonFallacy": "Einen Spannvektor als Normalenvektor verwenden - der Normalenvektor muss auf beiden Spannvektoren senkrecht stehen.",
+      "layerIndex": 8,
+      "tags": [
+        "Formel",
+        "Ebenen",
+        "Vektoren",
+        "Klausur-Dauerbrenner"
+      ],
+      "linkedNoteId": "03_Mathe/Skalarprodukt-und-Ebenen.md",
+      "linkedReiseId": "Mathe-Vektor-Skalarprodukt-Orthogonalitaet-L1"
+    },
+    {
+      "id": "mathe-schnittpunkte-gerade-ebene",
+      "fach": "Mathe",
+      "titleDE": "Schnittpunkte von Geraden und Ebenen",
+      "titleZH": "直线与平面的交点：参数代入与解集讨论",
+      "summaryDE": "Setzt man den Geradenterm in die Koordinatenform der Ebene ein, entsteht eine lineare Gleichung in t; ihre Loesung liefert den Schnittpunkt oder den Nachweis der Parallelitaet.",
+      "summaryZH": "把直线方程代入平面坐标式得到关于 t 的一元方程；有解给出交点，无解说明直线与平面平行。",
+      "category": "Lineare-Algebra",
+      "curriculumTier": "Q1",
+      "stage": "vertiefung",
+      "level": 2,
+      "xpReward": 130,
+      "estimatedMinutes": 16,
+      "prerequisites": [
+        "mathe-ebenen-parameterform-normalenvektor",
+        "mathe-lineare-gleichungssysteme-loesen"
+      ],
+      "keyFormulaOrSentence": "Geradenterm in die Koordinatenform einsetzen, den Parameter t bestimmen und in die Geradengleichung zuruecksetzen.",
+      "commonFallacy": "Bei einer Gleichung 0 = c mit c != 0 von einem Schnittpunkt ausgehen - dieses Ergebnis bedeutet Parallelitaet ohne gemeinsamen Punkt.",
+      "layerIndex": 9,
+      "tags": [
+        "Verfahren",
+        "Ebenen",
+        "Geraden",
+        "Geometrie"
+      ],
+      "linkedReiseId": "Mathe-Analytische-Geometrie-Ebenen-und-Normalenvektor-L1"
+    },
+    {
+      "id": "mathe-schnittwinkel-geraden-ebenen",
+      "fach": "Mathe",
+      "titleDE": "Schnittwinkel zwischen Geraden und Ebenen",
+      "titleZH": "线线、线面与面面夹角的统一算法",
+      "summaryDE": "Alle Schnittwinkel werden ueber das Skalarprodukt der Richtungs- bzw. Normalenvektoren berechnet; beim Winkel zwischen Gerade und Ebene tritt der Sinus an die Stelle des Kosinus.",
+      "summaryZH": "所有夹角都通过方向向量或法向量的数量积计算；线面夹角处正弦替代余弦。",
+      "category": "Lineare-Algebra",
+      "curriculumTier": "Q1",
+      "stage": "vertiefung",
+      "level": 3,
+      "xpReward": 140,
+      "estimatedMinutes": 16,
+      "prerequisites": [
+        "mathe-skalarprodukt-orthogonalitaet",
+        "mathe-ebenen-parameterform-normalenvektor"
+      ],
+      "keyFormulaOrSentence": "cos(alpha) = |u * v| / (|u| * |v|);  Winkel zwischen Gerade und Ebene: sin(alpha) = |u * n| / (|u| * |n|).",
+      "commonFallacy": "Beim Winkel zwischen Gerade und Ebene mit dem Kosinus rechnen - der Winkel wird gegen den Normalenvektor gemessen, also ueber den Sinus.",
+      "layerIndex": 9,
+      "tags": [
+        "Formel",
+        "Ebenen",
+        "Skalarprodukt",
+        "AFB-III"
+      ],
+      "linkedReiseId": "Mathe-Kosinussatz-Orthogonalitaet-L1"
+    },
+    {
+      "id": "mathe-abstand-punkt-gerade-ebene",
+      "fach": "Mathe",
+      "titleDE": "Abstandsprobleme: Punkt, Gerade und Ebene",
+      "titleZH": "距离问题：点、线与面三类标准算法",
+      "summaryDE": "Der Abstand eines Punktes von einer Ebene wird ueber die Hessesche Normalenform berechnet; Abstaende zwischen Geraden lassen sich mit Hilfsebenen auf diesen Grundfall zurueckfuehren.",
+      "summaryZH": "点到平面的距离由黑塞法式直接给出；线与线、线与面的距离都通过辅助平面化归到这个基本情形。",
+      "category": "Lineare-Algebra",
+      "curriculumTier": "Q2",
+      "stage": "vertiefung",
+      "level": 3,
+      "xpReward": 155,
+      "estimatedMinutes": 20,
+      "prerequisites": [
+        "mathe-ebenen-parameterform-normalenvektor",
+        "mathe-schnittwinkel-geraden-ebenen",
+        "mathe-schnittpunkte-gerade-ebene"
+      ],
+      "keyFormulaOrSentence": "d(P, E) = |n1*p1 + n2*p2 + n3*p3 - d| / |n|  (Hessesche Normalenform).",
+      "commonFallacy": "Den Abstand ohne Betrag berechnen und ein negatives Ergebnis als Laenge angeben - der Abstand ist stets nicht negativ.",
+      "layerIndex": 10,
+      "tags": [
+        "Verfahren",
+        "Abstand",
+        "Ebenen",
+        "Klausur-Dauerbrenner"
+      ],
+      "linkedReiseId": "Mathe-Ebenen-Hessesche-Normalenform-L1"
+    },
+    {
+      "id": "mathe-orthogonalitaet-spiegelung-anwendung",
+      "fach": "Mathe",
+      "titleDE": "Spiegelung und Orthogonalitaetsargumente im Raum",
+      "titleZH": "空间对称与镜像：正交投影的构造",
+      "summaryDE": "Das Spiegelbild eines Punktes an einer Ebene entsteht, indem man den doppelten Lotanteil in Richtung des Normalenvektors abzieht; derselbe Lotfuss liefert auch den Abstand.",
+      "summaryZH": "把点沿法向量方向减去两倍垂足分量即得镜像点；同一个垂足同时给出距离。",
+      "category": "Lineare-Algebra",
+      "curriculumTier": "Q2",
+      "stage": "synthese",
+      "level": 3,
+      "xpReward": 170,
+      "estimatedMinutes": 20,
+      "prerequisites": [
+        "mathe-abstand-punkt-gerade-ebene",
+        "mathe-skalarprodukt-orthogonalitaet"
+      ],
+      "keyFormulaOrSentence": "P' = P - 2 * ((n * p - d) / |n|^2) * n  als Spiegelbild von P an der Ebene n1*x1 + n2*x2 + n3*x3 = d.",
+      "commonFallacy": "Den einfachen statt des doppelten Lotanteils abziehen - dann landet man auf dem Lotfuss und nicht am Spiegelbild.",
+      "layerIndex": 11,
+      "tags": [
+        "Verfahren",
+        "Ebenen",
+        "Geometrie",
+        "AFB-III"
+      ]
+    },
+    {
+      "id": "mathe-uni-matrizen-vektorraeume",
+      "fach": "Mathe",
+      "titleDE": "Matrizen, Gauss-Algorithmus und Vektorraeume",
+      "titleZH": "矩阵、高斯消元与向量空间：线性代数的公理化框架",
+      "summaryDE": "Ein lineares Gleichungssystem wird als Matrizenprodukt A x = b geschrieben; Rangbetrachtungen entscheiden die Loesbarkeit, Basis und Dimension beschreiben die Struktur des Loesungsraums.",
+      "summaryZH": "线性方程组写成矩阵乘积 A x = b；秩判定可解性，基与维数刻画解空间的结构。",
+      "category": "Lineare-Algebra",
+      "curriculumTier": "Uni_Prep",
+      "stage": "synthese",
+      "level": 3,
+      "xpReward": 195,
+      "estimatedMinutes": 28,
+      "prerequisites": [
+        "mathe-lineare-gleichungssysteme-loesen",
+        "mathe-skalarprodukt-orthogonalitaet",
+        "mathe-abstand-punkt-gerade-ebene"
+      ],
+      "keyFormulaOrSentence": "A x = b ist loesbar genau dann, wenn Rang(A) = Rang(A | b);  dim Kern(A) = n - Rang(A) (Rangsatz).",
+      "commonFallacy": "Aus Rang(A) < n direkt auf Unloesbarkeit schliessen - das bedeutet nur, dass der Kern nicht trivial ist und freie Parameter auftreten.",
+      "layerIndex": 12,
+      "tags": [
+        "Definition",
+        "Lineare-Algebra",
+        "Uni-Prep",
+        "Axiom"
+      ],
+      "linkedReiseId": "Mathe-Stochastik-Markov-Ketten-Uebergangsmatrizen-L1"
+    },
+    {
+      "id": "mathe-statistik-lage-und-streuung",
+      "fach": "Mathe",
+      "titleDE": "Beschreibende Statistik: Lage- und Streumasse",
+      "titleZH": "描述统计：平均数、中位数与离散程度",
+      "summaryDE": "Lage- und Streumasse verdichten eine Datenreihe zu wenigen Kennzahlen; das arithmetische Mittel reagiert empfindlich auf Ausreisser, der Median dagegen kaum.",
+      "summaryZH": "位置量与离散量把整列数据压缩成少数指标；算术平均受极端值影响大，而中位数几乎不受影响。",
+      "category": "Stochastik",
+      "curriculumTier": "Sek_I",
+      "stage": "grundlagen",
+      "level": 1,
+      "xpReward": 70,
+      "estimatedMinutes": 10,
+      "prerequisites": [
+        "mathe-proportionalitaet-prozent"
+      ],
+      "keyFormulaOrSentence": "x_quer = (1/n) * Summe x_i;  Spannweite = x_max - x_min;  der Median teilt die geordnete Liste in zwei Haelften.",
+      "commonFallacy": "Mittelwert und Median gleichsetzen - bei schiefen Verteilungen liegen sie deutlich auseinander.",
+      "layerIndex": 2,
+      "tags": [
+        "Verfahren",
+        "Statistik",
+        "Basiswissen"
+      ]
+    },
+    {
+      "id": "mathe-wahrscheinlichkeit-mehrstufig",
+      "fach": "Mathe",
+      "titleDE": "Ein- und mehrstufige Zufallsexperimente",
+      "titleZH": "单阶段与多阶段随机试验：树形图路径法则",
+      "summaryDE": "Mehrstufige Experimente werden im Baumdiagramm dargestellt; entlang eines Pfades werden die Wahrscheinlichkeiten multipliziert, ueber mehrere Pfade addiert.",
+      "summaryZH": "多阶段试验用树形图展开：沿一条路径概率相乘，跨多条路径概率相加。",
+      "category": "Stochastik",
+      "curriculumTier": "Sek_I",
+      "stage": "grundlagen",
+      "level": 2,
+      "xpReward": 80,
+      "estimatedMinutes": 10,
+      "prerequisites": [
+        "mathe-statistik-lage-und-streuung"
+      ],
+      "keyFormulaOrSentence": "Pfadregel: P(Pfad) = Produkt der Wahrscheinlichkeiten entlang des Pfades;  Summenregel: P(Ereignis) = Summe der zugehoerigen Pfadwahrscheinlichkeiten.",
+      "commonFallacy": "Die Wahrscheinlichkeiten zweier Pfade addieren, obwohl das gesuchte Ereignis nur einen einzigen Pfad umfasst.",
+      "layerIndex": 3,
+      "tags": [
+        "Formel",
+        "Wahrscheinlichkeit",
+        "Stochastik",
+        "Basiswissen"
+      ]
+    },
+    {
+      "id": "mathe-baumdiagramm-vierfeldertafel",
+      "fach": "Mathe",
+      "titleDE": "Baumdiagramm und Vierfeldertafel",
+      "titleZH": "树形图与四格表：两种表征的自由转换",
+      "summaryDE": "Vierfeldertafel und Baumdiagramm enthalten dieselbe Information in unterschiedlicher Anordnung; die Randsummen der Tafel sind die Wahrscheinlichkeiten der Einzelmerkmale.",
+      "summaryZH": "四格表与树形图承载同样的信息，只是排列不同；表的边缘和即单个性状的概率。",
+      "category": "Stochastik",
+      "curriculumTier": "Q1",
+      "stage": "grundlagen",
+      "level": 2,
+      "xpReward": 95,
+      "estimatedMinutes": 12,
+      "prerequisites": [
+        "mathe-wahrscheinlichkeit-mehrstufig"
+      ],
+      "keyFormulaOrSentence": "P(A) = P(A und B) + P(A und nicht B);  die Randsummen einer Vierfeldertafel sind die Randwahrscheinlichkeiten.",
+      "commonFallacy": "In der Vierfeldertafel Zeilen- und Spaltensummen vertauschen - dadurch werden alle bedingten Wahrscheinlichkeiten falsch.",
+      "layerIndex": 4,
+      "tags": [
+        "Verfahren",
+        "Baumdiagramm",
+        "Wahrscheinlichkeit",
+        "Grafik"
+      ],
+      "linkedNoteId": "03_Mathe/Baumdiagramm-Vierfeldertafel.md"
+    },
+    {
+      "id": "mathe-bedingte-wahrscheinlichkeit-unabhaengigkeit",
+      "fach": "Mathe",
+      "titleDE": "Bedingte Wahrscheinlichkeit und stochastische Unabhaengigkeit",
+      "titleZH": "条件概率与独立性：两个方向不可互换",
+      "summaryDE": "Die bedingte Wahrscheinlichkeit schraenkt den Ergebnisraum auf ein bekanntes Ereignis ein; Unabhaengigkeit liegt genau dann vor, wenn diese Einschraenkung nichts aendert.",
+      "summaryZH": "条件概率把结果空间收缩到已知事件上；当这种收缩不改变概率时，两个事件相互独立。",
+      "category": "Stochastik",
+      "curriculumTier": "Q1",
+      "stage": "vertiefung",
+      "level": 2,
+      "xpReward": 120,
+      "estimatedMinutes": 15,
+      "prerequisites": [
+        "mathe-baumdiagramm-vierfeldertafel"
+      ],
+      "keyFormulaOrSentence": "P(A|B) = P(A und B) / P(B)  mit P(B) > 0;  unabhaengig genau dann, wenn P(A und B) = P(A) * P(B).",
+      "commonFallacy": "P(A|B) und P(B|A) verwechseln - die Bedingung steht im Nenner, und die Beziehung ist nicht symmetrisch.",
+      "layerIndex": 5,
+      "tags": [
+        "Formel",
+        "Bedingte-Wahrscheinlichkeit",
+        "Wahrscheinlichkeit",
+        "Klausur-Dauerbrenner"
+      ]
+    },
+    {
+      "id": "mathe-zufallsgroesse-erwartungswert-varianz",
+      "fach": "Mathe",
+      "titleDE": "Zufallsgroessen: Erwartungswert, Varianz, Standardabweichung",
+      "titleZH": "随机变量：期望值、方差与标准差",
+      "summaryDE": "Der Erwartungswert ist der mit den Wahrscheinlichkeiten gewichtete Mittelwert; Varianz und Standardabweichung messen, wie stark die Werte um ihn streuen.",
+      "summaryZH": "期望值是以概率加权的平均值；方差与标准差衡量取值围绕它的离散程度。",
+      "category": "Stochastik",
+      "curriculumTier": "Q1",
+      "stage": "vertiefung",
+      "level": 2,
+      "xpReward": 125,
+      "estimatedMinutes": 15,
+      "prerequisites": [
+        "mathe-bedingte-wahrscheinlichkeit-unabhaengigkeit",
+        "mathe-statistik-lage-und-streuung"
+      ],
+      "keyFormulaOrSentence": "E(X) = Summe x_i * P(X = x_i);  Var(X) = Summe (x_i - E(X))^2 * P(X = x_i);  sigma = Wurzel(Var(X)).",
+      "commonFallacy": "Die Varianz direkt als Streuung in der Einheit von X interpretieren - erst sigma = Wurzel(Var(X)) hat dieselbe Einheit wie X.",
+      "layerIndex": 6,
+      "tags": [
+        "Formel",
+        "Zufallsgroesse",
+        "Stochastik",
+        "Klausur-Dauerbrenner"
+      ]
+    },
+    {
+      "id": "mathe-binomialverteilung-kenngroessen",
+      "fach": "Mathe",
+      "titleDE": "Binomialverteilung und ihre Kenngroessen",
+      "titleZH": "二项分布：伯努利链的计数模型",
+      "summaryDE": "Die Binomialverteilung zaehlt Treffer in einer festen Anzahl unabhaengiger Versuche mit konstanter Trefferwahrscheinlichkeit; Erwartungswert und Streuung haengen nur von n und p ab.",
+      "summaryZH": "二项分布统计固定次数的独立同概率伯努利试验中的命中数；期望与离散程度只由 n 与 p 决定。",
+      "category": "Stochastik",
+      "curriculumTier": "Q2",
+      "stage": "vertiefung",
+      "level": 2,
+      "xpReward": 140,
+      "estimatedMinutes": 16,
+      "prerequisites": [
+        "mathe-zufallsgroesse-erwartungswert-varianz"
+      ],
+      "keyFormulaOrSentence": "P(X = k) = C(n, k) * p^k * (1 - p)^(n - k);  E(X) = n * p;  sigma = Wurzel(n * p * (1 - p)).",
+      "commonFallacy": "Die Binomialverteilung bei nicht unabhaengigen Versuchen oder veraenderlicher Trefferwahrscheinlichkeit anwenden.",
+      "layerIndex": 7,
+      "tags": [
+        "Formel",
+        "Binomialverteilung",
+        "Stochastik",
+        "Klausur-Dauerbrenner"
+      ],
+      "linkedNoteId": "03_Mathe/Stochastik-Q1-Baumdiagramm-bis-Binomialverteilung.md",
+      "linkedReiseId": "Mathe-Stochastik-Bernoulli-und-Binomialverteilung-L1"
+    },
+    {
+      "id": "mathe-sigma-regeln-streuungsintervalle",
+      "fach": "Mathe",
+      "titleDE": "Sigma-Regeln und Streuungsintervalle",
+      "titleZH": "σ 区间法则：集中范围的快速估算",
+      "summaryDE": "Bei ausreichend grosser Standardabweichung liegen feste Prozentanteile aller Ergebnisse innerhalb von ein, zwei oder drei Sigma um den Erwartungswert.",
+      "summaryZH": "标准差足够大时，全部结果中固定比例落在期望值周围的一个、两个或三个 σ 内。",
+      "category": "Stochastik",
+      "curriculumTier": "Q2",
+      "stage": "vertiefung",
+      "level": 3,
+      "xpReward": 150,
+      "estimatedMinutes": 16,
+      "prerequisites": [
+        "mathe-binomialverteilung-kenngroessen"
+      ],
+      "keyFormulaOrSentence": "Fuer sigma > 3 gilt naeherungsweise: 68,3 % in [mu - sigma; mu + sigma], 95,4 % in [mu - 2*sigma; mu + 2*sigma], 99,7 % in [mu - 3*sigma; mu + 3*sigma].",
+      "commonFallacy": "Die Sigma-Regeln ohne die Voraussetzung sigma > 3 auf beliebige Binomialverteilungen anwenden.",
+      "layerIndex": 8,
+      "tags": [
+        "Formel",
+        "Binomialverteilung",
+        "AFB-III",
+        "Stochastik"
+      ]
+    },
+    {
+      "id": "mathe-hypothesentest-fehler-arten",
+      "fach": "Mathe",
+      "titleDE": "Hypothesentest und Fehler erster und zweiter Art",
+      "titleZH": "假设检验：显著性水平与两类错误",
+      "summaryDE": "Beim einseitigen Hypothesentest wird der Ablehnungsbereich so gewaehlt, dass die Wahrscheinlichkeit einer irrtuemlichen Ablehnung hoechstens das Signifikanzniveau betraegt.",
+      "summaryZH": "单侧假设检验把拒绝域选得使「错误拒绝原假设」的概率不超过显著性水平。",
+      "category": "Stochastik",
+      "curriculumTier": "Q2",
+      "stage": "synthese",
+      "level": 3,
+      "xpReward": 165,
+      "estimatedMinutes": 22,
+      "prerequisites": [
+        "mathe-sigma-regeln-streuungsintervalle",
+        "mathe-binomialverteilung-kenngroessen"
+      ],
+      "keyFormulaOrSentence": "Ablehnungsbereich so waehlen, dass P(X im Ablehnungsbereich | p = p0) <= alpha;  Fehler 1. Art: H0 wird verworfen, obwohl H0 wahr ist.",
+      "commonFallacy": "Fehler 1. Art und Fehler 2. Art verwechseln - alpha wird vorgegeben, beta ergibt sich aus Testaufbau und Stichprobenumfang.",
+      "layerIndex": 9,
+      "tags": [
+        "Verfahren",
+        "Hypothesentest",
+        "AFB-III",
+        "Schwerpunkt-2026"
+      ],
+      "linkedReiseId": "Mathe-Stochastik-Hypothesentest-Fehler-1-und-2-Art-L1"
+    },
+    {
+      "id": "mathe-konfidenzintervall-prognoseintervall",
+      "fach": "Mathe",
+      "titleDE": "Konfidenz- und Prognoseintervall",
+      "titleZH": "置信区间与预测区间：区间估计的两种口径",
+      "summaryDE": "Ein Konfidenzintervall schaetzt den unbekannten Anteil der Grundgesamtheit aus einer Stichprobe; ein Prognoseintervall beschreibt dagegen das erwartete Ergebnis der naechsten Stichprobe.",
+      "summaryZH": "置信区间由样本估计总体比例；预测区间描述下一次抽样结果可能落到的范围。",
+      "category": "Stochastik",
+      "curriculumTier": "Q2",
+      "stage": "synthese",
+      "level": 3,
+      "xpReward": 160,
+      "estimatedMinutes": 20,
+      "prerequisites": [
+        "mathe-sigma-regeln-streuungsintervalle"
+      ],
+      "keyFormulaOrSentence": "Konfidenzintervall fuer p (95 %): [h - 1,96 * Wurzel(h*(1-h)/n); h + 1,96 * Wurzel(h*(1-h)/n)].",
+      "commonFallacy": "Das Konfidenzintervall als Prognoseintervall lesen - es beschreibt den Parameter der Grundgesamtheit, nicht das Ergebnis einer neuen Stichprobe.",
+      "layerIndex": 9,
+      "tags": [
+        "Formel",
+        "Konfidenzintervall",
+        "AFB-III",
+        "Schwerpunkt-2026"
+      ],
+      "linkedNoteId": "03_Mathe/Beurteilende-Statistik-Prognose-und-Konfidenzintervall.md"
+    },
+    {
+      "id": "mathe-normalverteilung-glockenkurve",
+      "fach": "Mathe",
+      "titleDE": "Normalverteilung und Verteilungsfunktion als Integralfunktion",
+      "titleZH": "正态分布与钟形曲线：分布函数的积分表示",
+      "summaryDE": "Die Normalverteilung ist die stetige Verteilung mit glockenfoermiger Dichte; Wahrscheinlichkeiten entstehen erst durch Integration der Dichte ueber ein Intervall.",
+      "summaryZH": "正态分布是密度呈钟形的连续分布；概率必须通过对密度函数在区间上积分才能得到。",
+      "category": "Stochastik",
+      "curriculumTier": "Q2",
+      "stage": "synthese",
+      "level": 3,
+      "xpReward": 175,
+      "estimatedMinutes": 22,
+      "prerequisites": [
+        "mathe-hauptsatz-differential-integralrechnung",
+        "mathe-sigma-regeln-streuungsintervalle"
+      ],
+      "keyFormulaOrSentence": "phi(x) = 1/(sigma * Wurzel(2*pi)) * e^(-(x - mu)^2 / (2*sigma^2));  Phi(x) = Integral_{-unendlich}^{x} phi(t) dt.",
+      "commonFallacy": "Die Dichtefunktion als Wahrscheinlichkeit eines einzelnen Punktes lesen - erst das Integral ueber ein Intervall liefert eine Wahrscheinlichkeit.",
+      "layerIndex": 9,
+      "tags": [
+        "Formel",
+        "Normalverteilung",
+        "AFB-III",
+        "Kumulation"
+      ],
+      "linkedNoteId": "03_Mathe/Normalverteilung-und-Verteilungsfunktion-als-Integralfunktion.md"
+    },
+    {
+      "id": "mathe-verflechtung-analysis-stochastik",
+      "fach": "Mathe",
+      "titleDE": "Verflechtung von Analysis und Stochastik",
+      "titleZH": "分析与随机的交叉：连续分布的积分视角",
+      "summaryDE": "Verteilungsfunktion und Dichte sind ueber den Hauptsatz verknuepft: Die Verteilungsfunktion ist die Integralfunktion der Dichte, die Dichte deren Ableitung.",
+      "summaryZH": "分布函数与密度通过基本定理相连：分布函数是密度的积分函数，密度是分布函数的导数。",
+      "category": "Stochastik",
+      "curriculumTier": "Q2",
+      "stage": "synthese",
+      "level": 3,
+      "xpReward": 180,
+      "estimatedMinutes": 22,
+      "prerequisites": [
+        "mathe-normalverteilung-glockenkurve",
+        "mathe-hauptsatz-differential-integralrechnung"
+      ],
+      "keyFormulaOrSentence": "P(a <= X <= b) = Phi(b) - Phi(a);  Phi'(x) = phi(x) - die Verteilungsfunktion ist die Integralfunktion der Dichtefunktion.",
+      "commonFallacy": "Diskrete Summenformeln unveraendert auf stetige Verteilungen uebertragen und statt des Integrals eine Summe bilden.",
+      "layerIndex": 10,
+      "tags": [
+        "AFB-III",
+        "Kumulation",
+        "Normalverteilung",
+        "Schwerpunkt-2026"
+      ]
+    },
+    {
+      "id": "mathe-uni-wahrscheinlichkeitsraum-axiome",
+      "fach": "Mathe",
+      "titleDE": "Wahrscheinlichkeitsraum und Kolmogorow-Axiome",
+      "titleZH": "概率空间与柯尔莫哥洛夫公理体系",
+      "summaryDE": "Die Axiome von Kolmogorow definieren Wahrscheinlichkeit als normiertes, sigma-additives Mass auf einem Ereignisraum und machen alle Rechenregeln daraus ableitbar.",
+      "summaryZH": "柯尔莫哥洛夫公理把概率定义为事件域上规范化的 σ-可加测度，所有概率运算法则都由此推出。",
+      "category": "Stochastik",
+      "curriculumTier": "Uni_Prep",
+      "stage": "vertiefung",
+      "level": 3,
+      "xpReward": 185,
+      "estimatedMinutes": 25,
+      "prerequisites": [
+        "mathe-bedingte-wahrscheinlichkeit-unabhaengigkeit",
+        "mathe-zufallsgroesse-erwartungswert-varianz",
+        "mathe-terme-gleichungen-umformen"
+      ],
+      "keyFormulaOrSentence": "P: A -> [0; 1] mit P(Omega) = 1 und P(A1 vereinigt A2 vereinigt ...) = Summe P(A_i) fuer paarweise disjunkte Ereignisse.",
+      "commonFallacy": "Die Axiome als Rechenrezepte missverstehen - sie sind Setzungen, aus denen Gegenwahrscheinlichkeit und Additionsregel erst folgen.",
+      "layerIndex": 10,
+      "tags": [
+        "Axiom",
+        "Uni-Prep",
+        "Wahrscheinlichkeit",
+        "Definition"
+      ]
+    },
+    {
+      "id": "mathe-uni-zentraler-grenzwertsatz",
+      "fach": "Mathe",
+      "titleDE": "Zentraler Grenzwertsatz und Konvergenz",
+      "titleZH": "中心极限定理：大量独立和的分布趋近正态",
+      "summaryDE": "Der zentrale Grenzwertsatz erklaert, warum die Normalverteilung ueberall auftritt: standardisierte Summen vieler unabhaengiger Zufallsgroessen streben gegen die Standardnormalverteilung.",
+      "summaryZH": "中心极限定理说明正态分布为何无处不在：大量独立随机变量之和标准化后趋于标准正态分布。",
+      "category": "Stochastik",
+      "curriculumTier": "Uni_Prep",
+      "stage": "synthese",
+      "level": 3,
+      "xpReward": 195,
+      "estimatedMinutes": 28,
+      "prerequisites": [
+        "mathe-hypothesentest-fehler-arten",
+        "mathe-normalverteilung-glockenkurve",
+        "mathe-uni-wahrscheinlichkeitsraum-axiome"
+      ],
+      "keyFormulaOrSentence": "Die standardisierte Summe S_n konvergiert fuer n -> unendlich gegen die Standardnormalverteilung, sofern die Summanden unabhaengig und identisch verteilt sind.",
+      "commonFallacy": "Den Grenzwertsatz auch bei stark abhaengigen oder extrem schief verteilten Summanden kleiner Anzahl anwenden.",
+      "layerIndex": 11,
+      "tags": [
+        "Axiom",
+        "Uni-Prep",
+        "Normalverteilung",
+        "Grenzwert"
+      ]
+    },
+    {
+      "id": "mathe-uni-schliessende-statistik-theorie",
+      "fach": "Mathe",
+      "titleDE": "Schliessende Statistik: Schaetzer, Erwartungstreue und Testtheorie",
+      "titleZH": "推断统计理论：估计量、无偏性与检验效能",
+      "summaryDE": "Ein Schaetzer ist eine Zufallsgroesse, deren Realisation den unbekannten Parameter schaetzt; Erwartungstreue und Teststaerke bewerten seine Qualitaet.",
+      "summaryZH": "估计量是随机变量，其取值给出未知参数的估计；无偏性与检验效能用于评价其优劣。",
+      "category": "Stochastik",
+      "curriculumTier": "Uni_Prep",
+      "stage": "synthese",
+      "level": 3,
+      "xpReward": 200,
+      "estimatedMinutes": 28,
+      "prerequisites": [
+        "mathe-konfidenzintervall-prognoseintervall",
+        "mathe-uni-zentraler-grenzwertsatz",
+        "mathe-binomialverteilung-kenngroessen"
+      ],
+      "keyFormulaOrSentence": "Ein Schaetzer T heisst erwartungstreu fuer theta, wenn E(T) = theta gilt;  die Teststaerke ist 1 - beta.",
+      "commonFallacy": "Erwartungstreue mit Genauigkeit verwechseln - ein erwartungstreuer Schaetzer kann trotzdem stark streuen.",
+      "layerIndex": 12,
+      "tags": [
+        "Axiom",
+        "Uni-Prep",
+        "Statistik",
+        "AFB-III"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "id": "e-mathe-zahlen-operationen-rechengesetze-mathe-terme-gleichungen-umformen",
+      "from": "mathe-zahlen-operationen-rechengesetze",
+      "to": "mathe-terme-gleichungen-umformen",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-mathe-zahlen-operationen-rechengesetze-mathe-proportionalitaet-prozent",
+      "from": "mathe-zahlen-operationen-rechengesetze",
+      "to": "mathe-proportionalitaet-prozent",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-mathe-proportionalitaet-prozent-mathe-funktionsbegriff-definition",
+      "from": "mathe-proportionalitaet-prozent",
+      "to": "mathe-funktionsbegriff-definition",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-mathe-terme-gleichungen-umformen-mathe-potenzfunktionen-wurzelfunktionen",
+      "from": "mathe-terme-gleichungen-umformen",
+      "to": "mathe-potenzfunktionen-wurzelfunktionen",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-mathe-funktionsbegriff-definition-mathe-potenzfunktionen-wurzelfunktionen",
+      "from": "mathe-funktionsbegriff-definition",
+      "to": "mathe-potenzfunktionen-wurzelfunktionen",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-mathe-potenzfunktionen-wurzelfunktionen-mathe-exponentialfunktionen-wachstum",
+      "from": "mathe-potenzfunktionen-wurzelfunktionen",
+      "to": "mathe-exponentialfunktionen-wachstum",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-mathe-lineare-funktionen-steigung-mathe-aenderungsrate-sekante",
+      "from": "mathe-lineare-funktionen-steigung",
+      "to": "mathe-aenderungsrate-sekante",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-mathe-aenderungsrate-sekante-mathe-lokale-ableitung-grenzwert",
+      "from": "mathe-aenderungsrate-sekante",
+      "to": "mathe-lokale-ableitung-grenzwert",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-mathe-lokale-ableitung-grenzwert-mathe-ableitungsregeln-polynom",
+      "from": "mathe-lokale-ableitung-grenzwert",
+      "to": "mathe-ableitungsregeln-polynom",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-mathe-exponentialfunktionen-wachstum-mathe-e-funktion-natuerlicher-logarithmus",
+      "from": "mathe-exponentialfunktionen-wachstum",
+      "to": "mathe-e-funktion-natuerlicher-logarithmus",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-mathe-ableitungsregeln-polynom-mathe-produkt-und-kettenregel",
+      "from": "mathe-ableitungsregeln-polynom",
+      "to": "mathe-produkt-und-kettenregel",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-mathe-e-funktion-natuerlicher-logarithmus-mathe-produkt-und-kettenregel",
+      "from": "mathe-e-funktion-natuerlicher-logarithmus",
+      "to": "mathe-produkt-und-kettenregel",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-mathe-ableitungsregeln-polynom-mathe-stammfunktion-aufleiten",
+      "from": "mathe-ableitungsregeln-polynom",
+      "to": "mathe-stammfunktion-aufleiten",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-mathe-stammfunktion-aufleiten-mathe-hauptsatz-differential-integralrechnung",
+      "from": "mathe-stammfunktion-aufleiten",
+      "to": "mathe-hauptsatz-differential-integralrechnung",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-mathe-exponentialfunktionen-wachstum-mathe-hauptsatz-differential-integralrechnung",
+      "from": "mathe-exponentialfunktionen-wachstum",
+      "to": "mathe-hauptsatz-differential-integralrechnung",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-mathe-lokale-ableitung-grenzwert-mathe-uni-grenzwert-epsilon-delta-stetigkeit",
+      "from": "mathe-lokale-ableitung-grenzwert",
+      "to": "mathe-uni-grenzwert-epsilon-delta-stetigkeit",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-mathe-hauptsatz-differential-integralrechnung-mathe-uni-grenzwert-epsilon-delta-stetigkeit",
+      "from": "mathe-hauptsatz-differential-integralrechnung",
+      "to": "mathe-uni-grenzwert-epsilon-delta-stetigkeit",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-mathe-proportionalitaet-prozent-mathe-lineare-funktionen-steigung",
+      "from": "mathe-proportionalitaet-prozent",
+      "to": "mathe-lineare-funktionen-steigung",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-mathe-terme-gleichungen-umformen-mathe-quadratische-funktionen-parabel",
+      "from": "mathe-terme-gleichungen-umformen",
+      "to": "mathe-quadratische-funktionen-parabel",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-mathe-quadratische-funktionen-parabel-mathe-transformationen-verschiebung-streckung",
+      "from": "mathe-quadratische-funktionen-parabel",
+      "to": "mathe-transformationen-verschiebung-streckung",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-mathe-quadratische-funktionen-parabel-mathe-nullstellen-vielfachheit",
+      "from": "mathe-quadratische-funktionen-parabel",
+      "to": "mathe-nullstellen-vielfachheit",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-mathe-nullstellen-vielfachheit-mathe-symmetrie-ganzrationale",
+      "from": "mathe-nullstellen-vielfachheit",
+      "to": "mathe-symmetrie-ganzrationale",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-mathe-potenzfunktionen-wurzelfunktionen-mathe-symmetrie-ganzrationale",
+      "from": "mathe-potenzfunktionen-wurzelfunktionen",
+      "to": "mathe-symmetrie-ganzrationale",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-mathe-potenzfunktionen-wurzelfunktionen-mathe-grenzverhalten-ganzrational",
+      "from": "mathe-potenzfunktionen-wurzelfunktionen",
+      "to": "mathe-grenzverhalten-ganzrational",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-mathe-lokale-ableitung-grenzwert-mathe-ableitung-graphisch-deuten",
+      "from": "mathe-lokale-ableitung-grenzwert",
+      "to": "mathe-ableitung-graphisch-deuten",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-mathe-lokale-ableitung-grenzwert-mathe-tangenten-normalen-gleichung",
+      "from": "mathe-lokale-ableitung-grenzwert",
+      "to": "mathe-tangenten-normalen-gleichung",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-mathe-ableitungsregeln-polynom-mathe-monotonie-intervall-bestimmung",
+      "from": "mathe-ableitungsregeln-polynom",
+      "to": "mathe-monotonie-intervall-bestimmung",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-mathe-nullstellen-vielfachheit-mathe-monotonie-intervall-bestimmung",
+      "from": "mathe-nullstellen-vielfachheit",
+      "to": "mathe-monotonie-intervall-bestimmung",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-mathe-monotonie-intervall-bestimmung-mathe-wendepunkt-kruemmungswechsel",
+      "from": "mathe-monotonie-intervall-bestimmung",
+      "to": "mathe-wendepunkt-kruemmungswechsel",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-mathe-produkt-und-kettenregel-mathe-wendepunkt-kruemmungswechsel",
+      "from": "mathe-produkt-und-kettenregel",
+      "to": "mathe-wendepunkt-kruemmungswechsel",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-mathe-ableitungsregeln-polynom-mathe-kurvendiskussion-kriterien",
+      "from": "mathe-ableitungsregeln-polynom",
+      "to": "mathe-kurvendiskussion-kriterien",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-mathe-monotonie-intervall-bestimmung-mathe-kurvendiskussion-kriterien",
+      "from": "mathe-monotonie-intervall-bestimmung",
+      "to": "mathe-kurvendiskussion-kriterien",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-mathe-wendepunkt-kruemmungswechsel-mathe-kurvendiskussion-kriterien",
+      "from": "mathe-wendepunkt-kruemmungswechsel",
+      "to": "mathe-kurvendiskussion-kriterien",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-mathe-kurvendiskussion-kriterien-mathe-funktionsscharen-parameterdiskussion",
+      "from": "mathe-kurvendiskussion-kriterien",
+      "to": "mathe-funktionsscharen-parameterdiskussion",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-mathe-produkt-und-kettenregel-mathe-funktionsscharen-parameterdiskussion",
+      "from": "mathe-produkt-und-kettenregel",
+      "to": "mathe-funktionsscharen-parameterdiskussion",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-mathe-funktionsscharen-parameterdiskussion-mathe-funktionsschar-ortslinie-anwendung",
+      "from": "mathe-funktionsscharen-parameterdiskussion",
+      "to": "mathe-funktionsschar-ortslinie-anwendung",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-mathe-kurvendiskussion-kriterien-mathe-funktionsschar-ortslinie-anwendung",
+      "from": "mathe-kurvendiskussion-kriterien",
+      "to": "mathe-funktionsschar-ortslinie-anwendung",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-mathe-funktionsschar-ortslinie-anwendung-mathe-klausur-synthese-abitur",
+      "from": "mathe-funktionsschar-ortslinie-anwendung",
+      "to": "mathe-klausur-synthese-abitur",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-mathe-hauptsatz-differential-integralrechnung-mathe-klausur-synthese-abitur",
+      "from": "mathe-hauptsatz-differential-integralrechnung",
+      "to": "mathe-klausur-synthese-abitur",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-mathe-extremwert-optimierung-mathe-klausur-synthese-abitur",
+      "from": "mathe-extremwert-optimierung",
+      "to": "mathe-klausur-synthese-abitur",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-mathe-orthogonalitaet-spiegelung-anwendung-mathe-klausur-synthese-abitur",
+      "from": "mathe-orthogonalitaet-spiegelung-anwendung",
+      "to": "mathe-klausur-synthese-abitur",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-mathe-zahlen-operationen-rechengesetze-mathe-koerperberechnung-volumen",
+      "from": "mathe-zahlen-operationen-rechengesetze",
+      "to": "mathe-koerperberechnung-volumen",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-mathe-nullstellen-vielfachheit-mathe-steckbriefaufgaben-bedingungen",
+      "from": "mathe-nullstellen-vielfachheit",
+      "to": "mathe-steckbriefaufgaben-bedingungen",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-mathe-symmetrie-ganzrationale-mathe-steckbriefaufgaben-bedingungen",
+      "from": "mathe-symmetrie-ganzrationale",
+      "to": "mathe-steckbriefaufgaben-bedingungen",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-mathe-ableitungsregeln-polynom-mathe-steckbriefaufgaben-bedingungen",
+      "from": "mathe-ableitungsregeln-polynom",
+      "to": "mathe-steckbriefaufgaben-bedingungen",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-mathe-monotonie-intervall-bestimmung-mathe-optimierung-randwerte-intervall",
+      "from": "mathe-monotonie-intervall-bestimmung",
+      "to": "mathe-optimierung-randwerte-intervall",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-mathe-ableitungsregeln-polynom-mathe-optimierung-randwerte-intervall",
+      "from": "mathe-ableitungsregeln-polynom",
+      "to": "mathe-optimierung-randwerte-intervall",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-mathe-exponentialfunktionen-wachstum-mathe-wachstumsmodelle-begrenzt-logistisch",
+      "from": "mathe-exponentialfunktionen-wachstum",
+      "to": "mathe-wachstumsmodelle-begrenzt-logistisch",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-mathe-e-funktion-natuerlicher-logarithmus-mathe-wachstumsmodelle-begrenzt-logistisch",
+      "from": "mathe-e-funktion-natuerlicher-logarithmus",
+      "to": "mathe-wachstumsmodelle-begrenzt-logistisch",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-mathe-produkt-und-kettenregel-mathe-extremwertprobleme-nebenbedingung",
+      "from": "mathe-produkt-und-kettenregel",
+      "to": "mathe-extremwertprobleme-nebenbedingung",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-mathe-kurvendiskussion-kriterien-mathe-extremwertprobleme-nebenbedingung",
+      "from": "mathe-kurvendiskussion-kriterien",
+      "to": "mathe-extremwertprobleme-nebenbedingung",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-mathe-optimierung-randwerte-intervall-mathe-extremwertprobleme-nebenbedingung",
+      "from": "mathe-optimierung-randwerte-intervall",
+      "to": "mathe-extremwertprobleme-nebenbedingung",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-mathe-hauptsatz-differential-integralrechnung-mathe-rotationskoerper-volumenintegral",
+      "from": "mathe-hauptsatz-differential-integralrechnung",
+      "to": "mathe-rotationskoerper-volumenintegral",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-mathe-koerperberechnung-volumen-mathe-rotationskoerper-volumenintegral",
+      "from": "mathe-koerperberechnung-volumen",
+      "to": "mathe-rotationskoerper-volumenintegral",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-mathe-hauptsatz-differential-integralrechnung-mathe-integral-flaechenbilanz",
+      "from": "mathe-hauptsatz-differential-integralrechnung",
+      "to": "mathe-integral-flaechenbilanz",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-mathe-nullstellen-vielfachheit-mathe-integral-flaechenbilanz",
+      "from": "mathe-nullstellen-vielfachheit",
+      "to": "mathe-integral-flaechenbilanz",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-mathe-extremwertprobleme-nebenbedingung-mathe-extremwert-optimierung",
+      "from": "mathe-extremwertprobleme-nebenbedingung",
+      "to": "mathe-extremwert-optimierung",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-mathe-rotationskoerper-volumenintegral-mathe-extremwert-optimierung",
+      "from": "mathe-rotationskoerper-volumenintegral",
+      "to": "mathe-extremwert-optimierung",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-mathe-steckbriefaufgaben-bedingungen-mathe-extremwert-optimierung",
+      "from": "mathe-steckbriefaufgaben-bedingungen",
+      "to": "mathe-extremwert-optimierung",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-mathe-hauptsatz-differential-integralrechnung-mathe-uneigentliche-integrale-grenzwert",
+      "from": "mathe-hauptsatz-differential-integralrechnung",
+      "to": "mathe-uneigentliche-integrale-grenzwert",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-mathe-rotationskoerper-volumenintegral-mathe-uneigentliche-integrale-grenzwert",
+      "from": "mathe-rotationskoerper-volumenintegral",
+      "to": "mathe-uneigentliche-integrale-grenzwert",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-mathe-hauptsatz-differential-integralrechnung-mathe-uni-beweisverfahren-induktion",
+      "from": "mathe-hauptsatz-differential-integralrechnung",
+      "to": "mathe-uni-beweisverfahren-induktion",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-mathe-integral-flaechenbilanz-mathe-uni-beweisverfahren-induktion",
+      "from": "mathe-integral-flaechenbilanz",
+      "to": "mathe-uni-beweisverfahren-induktion",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-mathe-wachstumsmodelle-begrenzt-logistisch-mathe-uni-modellbildung-differentialgleichung",
+      "from": "mathe-wachstumsmodelle-begrenzt-logistisch",
+      "to": "mathe-uni-modellbildung-differentialgleichung",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-mathe-uneigentliche-integrale-grenzwert-mathe-uni-modellbildung-differentialgleichung",
+      "from": "mathe-uneigentliche-integrale-grenzwert",
+      "to": "mathe-uni-modellbildung-differentialgleichung",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-mathe-uni-grenzwert-epsilon-delta-stetigkeit-mathe-uni-modellbildung-differentialgleichung",
+      "from": "mathe-uni-grenzwert-epsilon-delta-stetigkeit",
+      "to": "mathe-uni-modellbildung-differentialgleichung",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-mathe-extremwertprobleme-nebenbedingung-mathe-uni-optimierung-mehrdimensional-gradient",
+      "from": "mathe-extremwertprobleme-nebenbedingung",
+      "to": "mathe-uni-optimierung-mehrdimensional-gradient",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-mathe-extremwert-optimierung-mathe-uni-optimierung-mehrdimensional-gradient",
+      "from": "mathe-extremwert-optimierung",
+      "to": "mathe-uni-optimierung-mehrdimensional-gradient",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-mathe-produkt-und-kettenregel-mathe-uni-optimierung-mehrdimensional-gradient",
+      "from": "mathe-produkt-und-kettenregel",
+      "to": "mathe-uni-optimierung-mehrdimensional-gradient",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-mathe-kurvendiskussion-kriterien-mathe-uni-numerische-verfahren-newton",
+      "from": "mathe-kurvendiskussion-kriterien",
+      "to": "mathe-uni-numerische-verfahren-newton",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-mathe-ableitungsregeln-polynom-mathe-uni-numerische-verfahren-newton",
+      "from": "mathe-ableitungsregeln-polynom",
+      "to": "mathe-uni-numerische-verfahren-newton",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-mathe-optimierung-randwerte-intervall-mathe-uni-numerische-verfahren-newton",
+      "from": "mathe-optimierung-randwerte-intervall",
+      "to": "mathe-uni-numerische-verfahren-newton",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-mathe-uni-grenzwert-epsilon-delta-stetigkeit-mathe-uni-theorie-konvergenz-synthese",
+      "from": "mathe-uni-grenzwert-epsilon-delta-stetigkeit",
+      "to": "mathe-uni-theorie-konvergenz-synthese",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-mathe-uni-modellbildung-differentialgleichung-mathe-uni-theorie-konvergenz-synthese",
+      "from": "mathe-uni-modellbildung-differentialgleichung",
+      "to": "mathe-uni-theorie-konvergenz-synthese",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-mathe-uni-optimierung-mehrdimensional-gradient-mathe-uni-theorie-konvergenz-synthese",
+      "from": "mathe-uni-optimierung-mehrdimensional-gradient",
+      "to": "mathe-uni-theorie-konvergenz-synthese",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-mathe-uni-numerische-verfahren-newton-mathe-uni-theorie-konvergenz-synthese",
+      "from": "mathe-uni-numerische-verfahren-newton",
+      "to": "mathe-uni-theorie-konvergenz-synthese",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-mathe-pythagoras-laengen-mathe-trigonometrie-rechtwinklig",
+      "from": "mathe-pythagoras-laengen",
+      "to": "mathe-trigonometrie-rechtwinklig",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-mathe-pythagoras-laengen-mathe-vektoren-grundlagen-raum",
+      "from": "mathe-pythagoras-laengen",
+      "to": "mathe-vektoren-grundlagen-raum",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-mathe-vektoren-grundlagen-raum-mathe-vektor-laenge-kollinearitaet",
+      "from": "mathe-vektoren-grundlagen-raum",
+      "to": "mathe-vektor-laenge-kollinearitaet",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-mathe-vektor-laenge-kollinearitaet-mathe-geraden-parameterform",
+      "from": "mathe-vektor-laenge-kollinearitaet",
+      "to": "mathe-geraden-parameterform",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-mathe-geraden-parameterform-mathe-lagebeziehung-geraden",
+      "from": "mathe-geraden-parameterform",
+      "to": "mathe-lagebeziehung-geraden",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-mathe-terme-gleichungen-umformen-mathe-lineare-gleichungssysteme-loesen",
+      "from": "mathe-terme-gleichungen-umformen",
+      "to": "mathe-lineare-gleichungssysteme-loesen",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-mathe-geraden-parameterform-mathe-lineare-gleichungssysteme-loesen",
+      "from": "mathe-geraden-parameterform",
+      "to": "mathe-lineare-gleichungssysteme-loesen",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-mathe-vektor-laenge-kollinearitaet-mathe-skalarprodukt-orthogonalitaet",
+      "from": "mathe-vektor-laenge-kollinearitaet",
+      "to": "mathe-skalarprodukt-orthogonalitaet",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-mathe-geraden-parameterform-mathe-skalarprodukt-orthogonalitaet",
+      "from": "mathe-geraden-parameterform",
+      "to": "mathe-skalarprodukt-orthogonalitaet",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-mathe-skalarprodukt-orthogonalitaet-mathe-ebenen-parameterform-normalenvektor",
+      "from": "mathe-skalarprodukt-orthogonalitaet",
+      "to": "mathe-ebenen-parameterform-normalenvektor",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-mathe-geraden-parameterform-mathe-ebenen-parameterform-normalenvektor",
+      "from": "mathe-geraden-parameterform",
+      "to": "mathe-ebenen-parameterform-normalenvektor",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-mathe-ebenen-parameterform-normalenvektor-mathe-schnittpunkte-gerade-ebene",
+      "from": "mathe-ebenen-parameterform-normalenvektor",
+      "to": "mathe-schnittpunkte-gerade-ebene",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-mathe-lineare-gleichungssysteme-loesen-mathe-schnittpunkte-gerade-ebene",
+      "from": "mathe-lineare-gleichungssysteme-loesen",
+      "to": "mathe-schnittpunkte-gerade-ebene",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-mathe-skalarprodukt-orthogonalitaet-mathe-schnittwinkel-geraden-ebenen",
+      "from": "mathe-skalarprodukt-orthogonalitaet",
+      "to": "mathe-schnittwinkel-geraden-ebenen",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-mathe-ebenen-parameterform-normalenvektor-mathe-schnittwinkel-geraden-ebenen",
+      "from": "mathe-ebenen-parameterform-normalenvektor",
+      "to": "mathe-schnittwinkel-geraden-ebenen",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-mathe-ebenen-parameterform-normalenvektor-mathe-abstand-punkt-gerade-ebene",
+      "from": "mathe-ebenen-parameterform-normalenvektor",
+      "to": "mathe-abstand-punkt-gerade-ebene",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-mathe-schnittwinkel-geraden-ebenen-mathe-abstand-punkt-gerade-ebene",
+      "from": "mathe-schnittwinkel-geraden-ebenen",
+      "to": "mathe-abstand-punkt-gerade-ebene",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-mathe-schnittpunkte-gerade-ebene-mathe-abstand-punkt-gerade-ebene",
+      "from": "mathe-schnittpunkte-gerade-ebene",
+      "to": "mathe-abstand-punkt-gerade-ebene",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-mathe-abstand-punkt-gerade-ebene-mathe-orthogonalitaet-spiegelung-anwendung",
+      "from": "mathe-abstand-punkt-gerade-ebene",
+      "to": "mathe-orthogonalitaet-spiegelung-anwendung",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-mathe-skalarprodukt-orthogonalitaet-mathe-orthogonalitaet-spiegelung-anwendung",
+      "from": "mathe-skalarprodukt-orthogonalitaet",
+      "to": "mathe-orthogonalitaet-spiegelung-anwendung",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-mathe-lineare-gleichungssysteme-loesen-mathe-uni-matrizen-vektorraeume",
+      "from": "mathe-lineare-gleichungssysteme-loesen",
+      "to": "mathe-uni-matrizen-vektorraeume",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-mathe-skalarprodukt-orthogonalitaet-mathe-uni-matrizen-vektorraeume",
+      "from": "mathe-skalarprodukt-orthogonalitaet",
+      "to": "mathe-uni-matrizen-vektorraeume",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-mathe-abstand-punkt-gerade-ebene-mathe-uni-matrizen-vektorraeume",
+      "from": "mathe-abstand-punkt-gerade-ebene",
+      "to": "mathe-uni-matrizen-vektorraeume",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-mathe-proportionalitaet-prozent-mathe-statistik-lage-und-streuung",
+      "from": "mathe-proportionalitaet-prozent",
+      "to": "mathe-statistik-lage-und-streuung",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-mathe-statistik-lage-und-streuung-mathe-wahrscheinlichkeit-mehrstufig",
+      "from": "mathe-statistik-lage-und-streuung",
+      "to": "mathe-wahrscheinlichkeit-mehrstufig",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-mathe-wahrscheinlichkeit-mehrstufig-mathe-baumdiagramm-vierfeldertafel",
+      "from": "mathe-wahrscheinlichkeit-mehrstufig",
+      "to": "mathe-baumdiagramm-vierfeldertafel",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-mathe-baumdiagramm-vierfeldertafel-mathe-bedingte-wahrscheinlichkeit-unabhaengigkeit",
+      "from": "mathe-baumdiagramm-vierfeldertafel",
+      "to": "mathe-bedingte-wahrscheinlichkeit-unabhaengigkeit",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-mathe-bedingte-wahrscheinlichkeit-unabhaengigkeit-mathe-zufallsgroesse-erwartungswert-varianz",
+      "from": "mathe-bedingte-wahrscheinlichkeit-unabhaengigkeit",
+      "to": "mathe-zufallsgroesse-erwartungswert-varianz",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-mathe-statistik-lage-und-streuung-mathe-zufallsgroesse-erwartungswert-varianz",
+      "from": "mathe-statistik-lage-und-streuung",
+      "to": "mathe-zufallsgroesse-erwartungswert-varianz",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-mathe-zufallsgroesse-erwartungswert-varianz-mathe-binomialverteilung-kenngroessen",
+      "from": "mathe-zufallsgroesse-erwartungswert-varianz",
+      "to": "mathe-binomialverteilung-kenngroessen",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-mathe-binomialverteilung-kenngroessen-mathe-sigma-regeln-streuungsintervalle",
+      "from": "mathe-binomialverteilung-kenngroessen",
+      "to": "mathe-sigma-regeln-streuungsintervalle",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-mathe-sigma-regeln-streuungsintervalle-mathe-hypothesentest-fehler-arten",
+      "from": "mathe-sigma-regeln-streuungsintervalle",
+      "to": "mathe-hypothesentest-fehler-arten",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-mathe-binomialverteilung-kenngroessen-mathe-hypothesentest-fehler-arten",
+      "from": "mathe-binomialverteilung-kenngroessen",
+      "to": "mathe-hypothesentest-fehler-arten",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-mathe-sigma-regeln-streuungsintervalle-mathe-konfidenzintervall-prognoseintervall",
+      "from": "mathe-sigma-regeln-streuungsintervalle",
+      "to": "mathe-konfidenzintervall-prognoseintervall",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-mathe-hauptsatz-differential-integralrechnung-mathe-normalverteilung-glockenkurve",
+      "from": "mathe-hauptsatz-differential-integralrechnung",
+      "to": "mathe-normalverteilung-glockenkurve",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-mathe-sigma-regeln-streuungsintervalle-mathe-normalverteilung-glockenkurve",
+      "from": "mathe-sigma-regeln-streuungsintervalle",
+      "to": "mathe-normalverteilung-glockenkurve",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-mathe-normalverteilung-glockenkurve-mathe-verflechtung-analysis-stochastik",
+      "from": "mathe-normalverteilung-glockenkurve",
+      "to": "mathe-verflechtung-analysis-stochastik",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-mathe-hauptsatz-differential-integralrechnung-mathe-verflechtung-analysis-stochastik",
+      "from": "mathe-hauptsatz-differential-integralrechnung",
+      "to": "mathe-verflechtung-analysis-stochastik",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-mathe-bedingte-wahrscheinlichkeit-unabhaengigkeit-mathe-uni-wahrscheinlichkeitsraum-axiome",
+      "from": "mathe-bedingte-wahrscheinlichkeit-unabhaengigkeit",
+      "to": "mathe-uni-wahrscheinlichkeitsraum-axiome",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-mathe-zufallsgroesse-erwartungswert-varianz-mathe-uni-wahrscheinlichkeitsraum-axiome",
+      "from": "mathe-zufallsgroesse-erwartungswert-varianz",
+      "to": "mathe-uni-wahrscheinlichkeitsraum-axiome",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-mathe-terme-gleichungen-umformen-mathe-uni-wahrscheinlichkeitsraum-axiome",
+      "from": "mathe-terme-gleichungen-umformen",
+      "to": "mathe-uni-wahrscheinlichkeitsraum-axiome",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-mathe-hypothesentest-fehler-arten-mathe-uni-zentraler-grenzwertsatz",
+      "from": "mathe-hypothesentest-fehler-arten",
+      "to": "mathe-uni-zentraler-grenzwertsatz",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-mathe-normalverteilung-glockenkurve-mathe-uni-zentraler-grenzwertsatz",
+      "from": "mathe-normalverteilung-glockenkurve",
+      "to": "mathe-uni-zentraler-grenzwertsatz",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-mathe-uni-wahrscheinlichkeitsraum-axiome-mathe-uni-zentraler-grenzwertsatz",
+      "from": "mathe-uni-wahrscheinlichkeitsraum-axiome",
+      "to": "mathe-uni-zentraler-grenzwertsatz",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-mathe-konfidenzintervall-prognoseintervall-mathe-uni-schliessende-statistik-theorie",
+      "from": "mathe-konfidenzintervall-prognoseintervall",
+      "to": "mathe-uni-schliessende-statistik-theorie",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-mathe-uni-zentraler-grenzwertsatz-mathe-uni-schliessende-statistik-theorie",
+      "from": "mathe-uni-zentraler-grenzwertsatz",
+      "to": "mathe-uni-schliessende-statistik-theorie",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-mathe-binomialverteilung-kenngroessen-mathe-uni-schliessende-statistik-theorie",
+      "from": "mathe-binomialverteilung-kenngroessen",
+      "to": "mathe-uni-schliessende-statistik-theorie",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-syn-1",
+      "from": "mathe-exponentialfunktionen-wachstum",
+      "to": "mathe-wachstumsmodelle-begrenzt-logistisch",
+      "type": "synergy",
+      "descriptionZH": "指数函数给出增长模型的函数形式，增长模型给出它的情境解释"
+    },
+    {
+      "id": "e-syn-2",
+      "from": "mathe-hauptsatz-differential-integralrechnung",
+      "to": "mathe-normalverteilung-glockenkurve",
+      "type": "synergy",
+      "descriptionZH": "分布函数就是密度的积分函数，基本定理是这两个领域最深的接口"
+    },
+    {
+      "id": "e-syn-3",
+      "from": "mathe-kurvendiskussion-kriterien",
+      "to": "mathe-extremwertprobleme-nebenbedingung",
+      "type": "synergy",
+      "descriptionZH": "极值判据是带约束最优化求解内核的计算引擎"
+    },
+    {
+      "id": "e-syn-4",
+      "from": "mathe-nullstellen-vielfachheit",
+      "to": "mathe-integral-flaechenbilanz",
+      "type": "synergy",
+      "descriptionZH": "零点重数决定符号是否穿越，从而决定是否必须分段积分"
+    },
+    {
+      "id": "e-syn-5",
+      "from": "mathe-skalarprodukt-orthogonalitaet",
+      "to": "mathe-schnittwinkel-geraden-ebenen",
+      "type": "synergy",
+      "descriptionZH": "数量积是全部夹角公式的统一来源"
+    },
+    {
+      "id": "e-syn-6",
+      "from": "mathe-geraden-parameterform",
+      "to": "mathe-lagebeziehung-geraden",
+      "type": "synergy",
+      "descriptionZH": "参数式是判定直线位置关系的形式基础"
+    },
+    {
+      "id": "e-syn-7",
+      "from": "mathe-sigma-regeln-streuungsintervalle",
+      "to": "mathe-konfidenzintervall-prognoseintervall",
+      "type": "synergy",
+      "descriptionZH": "σ 区间给出区间估计的宽度直觉"
+    },
+    {
+      "id": "e-syn-8",
+      "from": "mathe-zufallsgroesse-erwartungswert-varianz",
+      "to": "mathe-binomialverteilung-kenngroessen",
+      "type": "synergy",
+      "descriptionZH": "期望与方差公式在二项分布上获得 n 与 p 的显式表达"
+    },
+    {
+      "id": "e-syn-9",
+      "from": "mathe-produkt-und-kettenregel",
+      "to": "mathe-stammfunktion-aufleiten",
+      "type": "synergy",
+      "descriptionZH": "求导与求原函数互为逆运算，两套规则相互印证"
+    },
+    {
+      "id": "e-syn-10",
+      "from": "mathe-ableitung-graphisch-deuten",
+      "to": "mathe-tangenten-normalen-gleichung",
+      "type": "synergy",
+      "descriptionZH": "图像读出的斜率正是切线方程中的斜率参数"
+    },
+    {
+      "id": "e-cross-1",
+      "from": "mathe-uni-grenzwert-epsilon-delta-stetigkeit",
+      "to": "mathe-uni-matrizen-vektorraeume",
+      "type": "cross_disciplinary",
+      "descriptionZH": "公理化与量化语言是分析与线性代数共同的形式基础"
+    },
+    {
+      "id": "e-cross-2",
+      "from": "mathe-funktionsschar-ortslinie-anwendung",
+      "to": "mathe-abstand-punkt-gerade-ebene",
+      "type": "cross_disciplinary",
+      "descriptionZH": "参数族轨迹与空间距离模型共享同一个参数化对象"
+    },
+    {
+      "id": "e-cross-3",
+      "from": "mathe-uni-modellbildung-differentialgleichung",
+      "to": "mathe-uni-zentraler-grenzwertsatz",
+      "type": "cross_disciplinary",
+      "descriptionZH": "连续极限过程与概率极限定理使用同一套收敛语言"
+    },
+    {
+      "id": "e-cross-4",
+      "from": "mathe-zufallsgroesse-erwartungswert-varianz",
+      "to": "mathe-hauptsatz-differential-integralrechnung",
+      "type": "cross_disciplinary",
+      "descriptionZH": "期望值在离散情形是求和、在连续情形是积分，结构完全平行"
+    },
+    {
+      "id": "e-cross-5",
+      "from": "mathe-rotationskoerper-volumenintegral",
+      "to": "mathe-ebenen-parameterform-normalenvektor",
+      "type": "cross_disciplinary",
+      "descriptionZH": "旋转体与平面都是空间几何对象，一个用积分一个用向量描述"
+    },
+    {
+      "id": "e-cross-6",
+      "from": "mathe-tangenten-normalen-gleichung",
+      "to": "mathe-schnittwinkel-geraden-ebenen",
+      "type": "cross_disciplinary",
+      "descriptionZH": "从平面中的斜率夹角推广到空间中的向量夹角"
+    }
+  ]
+}
