@@ -32,6 +32,7 @@ export default function Settings({
   onExportXp,
   onRedoOnboarding,
   onOpenHelp,
+  onOpenKnowledgeManager,
   devMode = false,
   onDevModeChange,
 }: {
@@ -44,6 +45,7 @@ export default function Settings({
   onExportXp: () => void;
   onRedoOnboarding: () => void;
   onOpenHelp: () => void;
+  onOpenKnowledgeManager?: () => void;
   devMode?: boolean;
   onDevModeChange?: (active: boolean) => void;
 }) {
@@ -196,15 +198,24 @@ export default function Settings({
         </div>
       </section>
 
-      {/* 3. Wissensquelle */}
+      {/* 3. Wissensquelle & Framework */}
       <section className="mt-6 border-t border-[var(--line)] pt-4">
         <h2 className="font-mono text-[var(--text-meta)] uppercase tracking-wider text-[var(--gray)]">
-          3. {tr.stSource}
+          3. {lang === "de" ? "Wissensbasis & Modularität" : "知识库架构与模块化管理"}
         </h2>
         <p className="mt-2 font-mono text-xs text-[var(--gray)]">
           {vaultConnected ? vaultMsg : tr.stVaultDemo}
         </p>
         <div className="mt-2 flex flex-wrap gap-2">
+          {onOpenKnowledgeManager && (
+            <button
+              type="button"
+              onClick={onOpenKnowledgeManager}
+              className="rounded-[var(--radius)] border border-[var(--ink)] bg-[var(--ink)] px-3 py-1.5 font-sans text-xs text-[var(--paper)] hover:bg-[var(--accent)] hover:border-[var(--accent)] active:scale-95 transition-all duration-150"
+            >
+              {lang === "de" ? "Wissensbasis verwalten (Import / Export / Custom)" : "管理知识库 (导入/导出/自定义增添)"}
+            </button>
+          )}
           <button type="button" onClick={onOpenVault} className={btn}>
             {tr.stVaultOpen}
           </button>

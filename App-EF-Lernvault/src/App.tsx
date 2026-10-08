@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useRef, useState, type ReactNode } from "react";
 import { t, type Lang } from "./i18n";
-import { notes, defaultVaultNotes } from "./data";
+import { repository, type KnowledgeNote, type KnowledgeCard } from "./framework";
+import { KnowledgeManagerModal } from "./components/KnowledgeManagerModal";
 import { GLOBAL_KEYS, MODULE_KEYS, isTyping, matchesKey } from "./keys";
 import { FAECHER } from "./fach";
 import Palette, { type PaletteItem } from "./components/Palette";
@@ -328,6 +329,14 @@ export default function App() {
   const [paletteOpen, setPaletteOpen] = useState(false);
   const [helpOpen, setHelpOpen] = useState(false);
   const [sprintOpen, setSprintOpen] = useState(false);
+  const [knowledgeManagerOpen, setKnowledgeManagerOpen] = useState(false);
+  const [knowledgeVersion, setKnowledgeVersion] = useState(0);
+
+  useEffect(() => {
+    return repository.subscribe(() => {
+      setKnowledgeVersion((v) => v + 1);
+    });
+  }, []);
 
   useEffect(() => {
     initTheme();
@@ -343,6 +352,9 @@ export default function App() {
   const [vault, setVault] = useState<VaultData | null>(null);
   const [vaultMsg, setVaultMsg] = useState("");
 
+  const activeNotes: KnowledgeNote[] = useMemo(() => repository.getAllNotes(), [knowledgeVersion, vault]);
+  const activeCards: KnowledgeCard[] = useMemo(() => repository.getAllCards(), [knowledgeVersion, vault]);
+
   const openVault = async () => {
     try {
       if (!("showDirectoryPicker" in window)) {
@@ -351,6 +363,7 @@ export default function App() {
       }
       const v = await pickVault();
       setVault(v);
+      repository.setExternalVault(v);
       setVaultMsg(
         lang === "de"
           ? `${v.rootName}: ${v.notes.length} Notizen · ${v.cards.length} Karten · ${v.reisen.length} Reisen`
@@ -433,7 +446,8 @@ export default function App() {
         } else if (globalBinding.id === "language") {
           toggleLang();
         } else if (globalBinding.id === "escape") {
-          if (paletteOpen) setPaletteOpen(false);
+          if (knowledgeManagerOpen) setKnowledgeManagerOpen(false);
+          else if (paletteOpen) setPaletteOpen(false);
           else if (helpOpen) setHelpOpen(false);
           else if (sprintOpen) setSprintOpen(false);
         }
@@ -473,27 +487,23 @@ export default function App() {
           switchTab("library");
         },
       })),
-      ...(vault
-        ? vault.notes.map((n) => ({
-            id: `note-${n.id}`,
-            group: lang === "de" ? "Notizen" : "笔记",
-            label: n.thema,
-            sub: `${n.fach} · ${n.operatoren.join(" / ")}`,
-            run: () => {
-              switchTab("library");
-              setQuery(n.thema);
-            },
-          }))
-        : notes.map((n) => ({
-            id: `note-${n.id}`,
-            group: lang === "de" ? "Notizen" : "笔记",
-            label: n.thema,
-            sub: `${n.fach} · ${n.zh}`,
-            run: () => {
-              switchTab("library");
-              setQuery(n.thema);
-            },
-          }))),
+      ...activeNotes.map((n) => ({
+        id: `note-${n.id}`,
+        group: lang === "de" ? "Notizen" : "笔记",
+        label: n.thema,
+        sub: `${n.fach} · ${n.operatoren.join(" / ")}`,
+        run: () => {
+          switchTab("library");
+          setQuery(n.thema);
+        },
+      })),
+      {
+        id: "act-knowledge-manager",
+        group: lang === "de" ? "Aktionen" : "操作",
+        label: lang === "de" ? "Wissensbasis & Framework verwalten" : "知识库管理与模块化扩展",
+        hint: "Import/Export",
+        run: () => setKnowledgeManagerOpen(true),
+      },
       {
         id: "act-vault",
         group: lang === "de" ? "Aktionen" : "操作",
@@ -556,7 +566,7 @@ export default function App() {
       },
     ],
     // eslint-disable-next-line react-hooks/exhaustive-deps
-    [allNavItems, lang, vault]
+    [allNavItems, lang, activeNotes]
   );
 
   // Erststart: Vollbild-Assistent statt Modul-Chrome (L für Sprache gilt weiter).
@@ -783,6 +793,20 @@ export default function App() {
             </div>
             <button
               type="button"
+              onClick={() => setKnowledgeManagerOpen(true)}
+              className="flex items-center gap-1.5 rounded-[var(--radius)] border border-[var(--line)] bg-[var(--surface)] px-2.5 py-1 font-mono text-xs text-[var(--ink)] transition-colors hover:bg-[var(--paper-subtle)] cursor-pointer"
+              title={lang === "de" ? "Wissensbasis & Framework verwalten" : "知识库管理与模块化扩展"}
+            >
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" className="h-3.5 w-3.5">
+                <path d="M2.5 3.5h11M2.5 8h11M2.5 12.5h11" />
+                <circle cx="5" cy="3.5" r="1" fill="currentColor" />
+                <circle cx="10" cy="8" r="1" fill="currentColor" />
+                <circle cx="7" cy="12.5" r="1" fill="currentColor" />
+              </svg>
+              <span>{lang === "de" ? "Wissensbasis" : "知识库"}</span>
+            </button>
+            <button
+              type="button"
               onClick={() => setSprintOpen(true)}
               className="flex items-center gap-1.5 rounded-[var(--radius)] border border-[var(--line)] bg-[var(--surface)] px-2.5 py-1 font-mono text-xs text-[var(--ink)] transition-colors hover:bg-[var(--paper-subtle)] cursor-pointer"
             >
@@ -831,15 +855,15 @@ export default function App() {
                     {lang === "de" ? "-> Zum neuen Cockpit V3 (Diagnose & Stufen)" : "-> 切换到全新战力总台 V3 (诊断与段位天梯)"}
                   </button>
                 </div>
-                <Home lang={lang} cards={vault?.cards ?? null} onJumpToLibrary={jumpToLibrary} />
+                <Home lang={lang} cards={activeCards} onJumpToLibrary={jumpToLibrary} />
               </div>
             )
           )}
           {tab === "library" && (
             <Library
               query={query}
-              vault={vault?.notes ?? null}
-              cards={vault?.cards ?? null}
+              vault={activeNotes}
+              cards={activeCards}
               selectedFach={selectedFach}
               selectedNoteId={selectedNoteId}
               onClearQuery={() => setQuery("")}
@@ -856,7 +880,7 @@ export default function App() {
           {tab === "flashcards" && (
             <Flashcards
               lang={lang}
-              vault={vault?.cards ?? null}
+              vault={activeCards}
               selectedFach={selectedFach}
               onSubjectChange={setSelectedFach}
             />
@@ -864,8 +888,8 @@ export default function App() {
           {tab === "quiz" && (
             <Quiz
               lang={lang}
-              vault={vault?.notes ?? defaultVaultNotes}
-              cards={vault?.cards ?? null}
+              vault={activeNotes}
+              cards={activeCards}
               preselectedFach={selectedFach === "alle" ? undefined : selectedFach}
               onJumpToLibrary={jumpToLibrary}
             />
@@ -880,7 +904,7 @@ export default function App() {
           )}
           {tab === "klausursim" && (
             <KlausurSim
-              notes={vault?.notes ?? defaultVaultNotes}
+              notes={activeNotes}
               currentFach={selectedFach === "alle" ? undefined : selectedFach}
               onSubjectChange={setSelectedFach}
               onJumpToLibrary={jumpToLibrary}
@@ -889,7 +913,7 @@ export default function App() {
           {tab === "tutor" && (
             <Tutor
               lang={lang}
-              vaultNotes={vault?.notes ?? defaultVaultNotes}
+              vaultNotes={activeNotes}
               activeFach={selectedFach === "alle" ? undefined : selectedFach}
               initialInput={tutorPrefilledInput}
               onSubjectChange={setSelectedFach}
@@ -897,11 +921,11 @@ export default function App() {
               onOpenSettings={() => switchTab("einstellungen")}
             />
           )}
-          {tab === "planner" && <Planner lang={lang} vaultNotes={vault?.notes ?? defaultVaultNotes} />}
+          {tab === "planner" && <Planner lang={lang} vaultNotes={activeNotes} />}
           {tab === "mindmap" && (
             <Mindmap
               lang={lang}
-              vaultNotes={vault?.notes ?? defaultVaultNotes}
+              vaultNotes={activeNotes}
               selectedFach={selectedFach}
               onSubjectChange={setSelectedFach}
               onJumpToLibrary={jumpToLibrary}
@@ -928,7 +952,7 @@ export default function App() {
             <Lernbaum
               lang={lang}
               baeume={BAEUME_LISTE}
-              vaultNotes={vault?.notes ?? defaultVaultNotes}
+              vaultNotes={activeNotes}
               vaultReisen={vault?.reisen ?? defaultVaultReisen}
               selectedFach={selectedFach}
               initialAnsicht="pfad"
@@ -951,6 +975,7 @@ export default function App() {
               vaultConnected={vault !== null}
               vaultMsg={vaultMsg}
               onOpenVault={() => void openVault()}
+              onOpenKnowledgeManager={() => setKnowledgeManagerOpen(true)}
               onExportFsrs={exportFsrs}
               onExportXp={exportXp}
               onRedoOnboarding={() => setObOpen(true)}
@@ -967,9 +992,14 @@ export default function App() {
         isOpen={sprintOpen}
         lang={lang}
         onClose={() => setSprintOpen(false)}
-        cards={vault?.cards ?? []}
-        notes={vault?.notes ?? []}
+        cards={activeCards}
+        notes={activeNotes}
         currentFach={selectedFach === "alle" ? "SoWi" : selectedFach}
+      />
+      <KnowledgeManagerModal
+        isOpen={knowledgeManagerOpen}
+        onClose={() => setKnowledgeManagerOpen(false)}
+        lang={lang}
       />
       <FeedbackFloat lang={lang} />
     </div>
