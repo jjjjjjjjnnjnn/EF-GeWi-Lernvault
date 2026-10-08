@@ -3,40 +3,28 @@ import { render, screen, fireEvent } from "@testing-library/react";
 import { SubjectWorkspace } from "./SubjectWorkspace";
 
 describe("SubjectWorkspace (学科专区/学科主页) 独立测试", () => {
-  it("renders subject header, asset statistics, and all 10 subject pills", () => {
+  it("renders streamlined category navigation tabs with counts and quick action buttons", () => {
     render(<SubjectWorkspace currentFach="SoWi" lang="zh" />);
 
-    // 标题展示当前学科名称
-    expect(screen.getByText(/社会科学 \(SW\)/i)).toBeInTheDocument();
+    // 四大直观分类 Tab 存在且展示对应数量
+    expect(screen.getByRole("button", { name: /1\. 知识笔记/i })).toBeInTheDocument();
+    expect(screen.getByRole("button", { name: /2\. 抽认卡片/i })).toBeInTheDocument();
+    expect(screen.getByRole("button", { name: /3\. 实验与教具/i })).toBeInTheDocument();
+    expect(screen.getByRole("button", { name: /4\. 模拟真题/i })).toBeInTheDocument();
 
-    // 资产统计卡片
-    expect(screen.getByText("核心考点笔记")).toBeInTheDocument();
-    expect(screen.getByText("考纲抽认词卡")).toBeInTheDocument();
-    expect(screen.getByText("仿真实验与教具")).toBeInTheDocument();
-    expect(screen.getByText("真题模拟与练习")).toBeInTheDocument();
-
-    // 10 门学科胶囊按钮存在
-    expect(screen.getByText("DE")).toBeInTheDocument();
-    expect(screen.getByText("SW")).toBeInTheDocument();
-    expect(screen.getByText("MA")).toBeInTheDocument();
-    expect(screen.getByText("PH")).toBeInTheDocument();
+    // 快捷行动按钮存在
+    expect(screen.getByRole("button", { name: /开启词卡背诵/i })).toBeInTheDocument();
+    expect(screen.getByRole("button", { name: /开始45分钟模考/i })).toBeInTheDocument();
+    expect(screen.getByRole("button", { name: /向AI助教请教/i })).toBeInTheDocument();
   });
 
-  it("triggers onSubjectChange when clicking another subject pill", () => {
-    const handleSubjectChange = vi.fn();
-    render(
-      <SubjectWorkspace
-        currentFach="SoWi"
-        onSubjectChange={handleSubjectChange}
-        lang="zh"
-      />
-    );
+  it("automatically synchronizes selected note when currentFach prop changes", () => {
+    const { rerender } = render(<SubjectWorkspace currentFach="SoWi" lang="zh" />);
 
-    // 点击数学 (MA)
-    const matheBtn = screen.getByText("MA").closest("button")!;
-    fireEvent.click(matheBtn);
+    expect(screen.getByPlaceholderText("搜索本学科考点...")).toBeInTheDocument();
 
-    expect(handleSubjectChange).toHaveBeenCalledWith("Mathe");
+    rerender(<SubjectWorkspace currentFach="Mathe" lang="zh" />);
+    expect(screen.getByPlaceholderText("搜索本学科考点...")).toBeInTheDocument();
   });
 
   it("switches smoothly between the 4 content tabs (notes, cards, sims, exam)", () => {
@@ -148,30 +136,18 @@ describe("SubjectWorkspace (学科专区/学科主页) 独立测试", () => {
   it("defaults to '所有学科 (ALL)' when currentFach is omitted or 'alle'", () => {
     render(<SubjectWorkspace lang="zh" />);
 
-    // 默认展示“所有学科”
-    expect(screen.getByText(/所有学科 \(ALL\)/i)).toBeInTheDocument();
-
-    // ALL 胶囊按钮被选中
-    const allBtn = screen.getByRole("button", { name: /ALL/i });
-    expect(allBtn).toHaveAttribute("aria-pressed", "true");
-
     // 搜索框 placeholder 显示“搜索全库考点”
     expect(screen.getByPlaceholderText("搜索全库考点...")).toBeInTheDocument();
   });
 
-  it("switches back to 'alle' when clicking the ALL pill", () => {
-    const handleSubjectChange = vi.fn();
-    render(
-      <SubjectWorkspace
-        currentFach="Mathe"
-        onSubjectChange={handleSubjectChange}
-        lang="zh"
-      />
-    );
+  it("switches search and note scope when currentFach is updated", () => {
+    const { rerender } = render(<SubjectWorkspace currentFach="Mathe" lang="zh" />);
 
-    const allBtn = screen.getByRole("button", { name: /ALL/i });
-    fireEvent.click(allBtn);
-    expect(handleSubjectChange).toHaveBeenCalledWith("alle");
+    // 搜索框 placeholder 显示“搜索本学科考点”
+    expect(screen.getByPlaceholderText("搜索本学科考点...")).toBeInTheDocument();
+
+    rerender(<SubjectWorkspace currentFach="alle" lang="zh" />);
+    expect(screen.getByPlaceholderText("搜索全库考点...")).toBeInTheDocument();
   });
 });
 

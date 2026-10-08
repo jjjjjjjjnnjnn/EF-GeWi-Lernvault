@@ -3,7 +3,7 @@ import { t, type Lang } from "./i18n";
 import { repository, type KnowledgeNote, type KnowledgeCard } from "./framework";
 import { KnowledgeManagerModal } from "./components/KnowledgeManagerModal";
 import { GLOBAL_KEYS, MODULE_KEYS, isTyping, matchesKey } from "./keys";
-import { FAECHER } from "./fach";
+import { FAECHER, getFach } from "./fach";
 import Palette, { type PaletteItem } from "./components/Palette";
 import HelpOverlay from "./components/HelpOverlay";
 import { FeedbackFloat, setFeedbackContext } from "./components/FeedbackBox";
@@ -767,6 +767,11 @@ export default function App() {
             <span className="text-[var(--gray)] text-xs">/</span>
             <span className="font-serif text-sm font-medium text-[var(--ink)]">
               {allNavItems.find((n) => n.id === tab)?.label}
+              {tab === "fach" && selectedFach !== "alle" && (
+                <span className="ml-1.5 font-mono text-xs font-normal text-[var(--gray)]">
+                  · {lang === "de" ? getFach(selectedFach)?.nameDE : getFach(selectedFach)?.nameZH}
+                </span>
+              )}
             </span>
           </div>
 

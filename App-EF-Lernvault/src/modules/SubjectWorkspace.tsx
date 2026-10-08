@@ -1,5 +1,5 @@
-import React, { useState, useMemo } from "react";
-import { FAECHER, getFach } from "../fach";
+import React, { useState, useMemo, useEffect } from "react";
+import { getFach } from "../fach";
 import { repository, type KnowledgeNote, type KnowledgeCard } from "../framework";
 import { SIMULATION_REGISTRY, type SimEntry } from "./laborRegistry";
 import Blocks from "../components/Blocks";
@@ -33,7 +33,7 @@ const ALL_FACH_INFO: DisplayFachInfo = {
 
 export const SubjectWorkspace: React.FC<SubjectWorkspaceProps> = ({
   currentFach = "alle",
-  onSubjectChange,
+  onSubjectChange: _onSubjectChange,
   onNavigateToTab,
   lang = "zh",
 }) => {
@@ -103,97 +103,24 @@ export const SubjectWorkspace: React.FC<SubjectWorkspaceProps> = ({
   const [isFullWidthReading, setIsFullWidthReading] = useState(true);
   const [fontSizeLevel, setFontSizeLevel] = useState<"sm" | "base" | "lg">("base");
 
-  // 6. 切换学科处理
-  const handleSelectFach = (fachId: string) => {
-    onSubjectChange?.(fachId);
-    setNoteSearchQuery("");
-    const isNextAll = fachId.toLowerCase() === "alle";
-    const nextNotes = isNextAll
-      ? allNotes
-      : allNotes.filter((n) => n.fach.toLowerCase() === fachId.toLowerCase());
-    if (nextNotes.length > 0) {
-      setSelectedNoteId(nextNotes[0].id);
+  // 6. 当外部学科改变时，如当前选中笔记不属于该学科则自动同步
+  useEffect(() => {
+    if (selectedNoteId && subjectNotes.some((n) => n.id === selectedNoteId)) {
+      return;
+    }
+    if (subjectNotes.length > 0) {
+      setSelectedNoteId(subjectNotes[0].id);
     } else {
       setSelectedNoteId(null);
     }
-  };
+  }, [currentFach, subjectNotes]);
 
   return (
     <div className="flex h-full w-full min-h-0 min-w-0 flex-col overflow-hidden bg-[var(--paper)]">
-      {/* 顶部常驻工作台控制条 (Sticky Workspace Bar) */}
-      <header className="shrink-0 border-b border-[var(--line)] bg-[var(--paper)] px-4 py-2.5 sm:px-6">
-        {/* 第一行：学科选择器与资产总览徽标 */}
-        <div className="flex flex-wrap items-center justify-between gap-2.5">
-          <div className="flex items-center gap-3">
-            <div>
-              <div className="font-mono text-[10px] uppercase tracking-wider text-[var(--gray)]">
-                {de ? "Fach-Bereich wählen" : "选择学科专区"}
-              </div>
-              <h1 className="font-serif text-lg font-bold tracking-tight text-[var(--ink)] leading-none mt-0.5">
-                {de ? activeFachInfo.nameDE : activeFachInfo.nameZH} ({activeFachInfo.kurz})
-              </h1>
-            </div>
-
-            {/* 核心资产统计标签 (紧凑显示，告别大块留白) */}
-            <div className="hidden lg:flex items-center gap-1.5 border-l border-[var(--line)] pl-3 font-mono text-[11px] text-[var(--ink)]">
-              <span className="rounded border border-[var(--line)] bg-[var(--surface)] px-2 py-0.5">
-                <span>{de ? "Wissensnotizen" : "核心考点笔记"}</span>: {subjectNotes.length}
-              </span>
-              <span className="rounded border border-[var(--line)] bg-[var(--surface)] px-2 py-0.5">
-                <span>{de ? "Karteikarten" : "考纲抽认词卡"}</span>: {subjectCards.length}
-              </span>
-              <span className="rounded border border-[var(--line)] bg-[var(--surface)] px-2 py-0.5">
-                <span>{de ? "Simulationen & Werkzeuge" : "仿真实验与教具"}</span>: {subjectSims.length}
-              </span>
-              <span className="rounded border border-[var(--line)] bg-[var(--surface)] px-2 py-0.5">
-                <span>{de ? "Klausur & Training" : "真题模拟与练习"}</span>: NRW EF
-              </span>
-            </div>
-          </div>
-
-          {/* 学科药丸横向切换器：包含 ALL 所有学科 + 10 门具体学科 */}
-          <div className="flex flex-wrap items-center gap-1" role="tablist" aria-label="Fächer">
-            <button
-              type="button"
-              onClick={() => handleSelectFach("alle")}
-              aria-pressed={isAllFaecher}
-              className={`rounded px-2.5 py-1 font-mono text-xs transition-colors cursor-pointer ${
-                isAllFaecher
-                  ? "bg-[var(--ink)] text-[var(--paper)] font-medium"
-                  : "border border-[var(--line)] bg-[var(--surface)] text-[var(--ink)] hover:border-[var(--gray)]"
-              }`}
-            >
-              <span>ALL</span>
-              <span className="hidden xl:inline ml-1 font-sans opacity-80 text-[11px]">
-                {de ? "Alle Fächer" : "所有学科"}
-              </span>
-            </button>
-            {FAECHER.map((f) => {
-              const isSelected = !isAllFaecher && f.id.toLowerCase() === activeFachInfo.id.toLowerCase();
-              return (
-                <button
-                  key={f.id}
-                  type="button"
-                  onClick={() => handleSelectFach(f.id)}
-                  aria-pressed={isSelected}
-                  className={`rounded px-2 py-1 font-mono text-xs transition-colors cursor-pointer ${
-                    isSelected
-                      ? "bg-[var(--ink)] text-[var(--paper)] font-medium"
-                      : "border border-[var(--line)] bg-[var(--surface)] text-[var(--ink)] hover:border-[var(--gray)]"
-                  }`}
-                >
-                  <span>{f.kurz}</span>
-                  <span className="hidden xl:inline ml-1 font-sans opacity-80 text-[11px]">
-                    {de ? f.nameDE : f.nameZH}
-                  </span>
-                </button>
-              );
-            })}
-          </div>
-        </div>
-
-        {/* 第二行：四大直观标签页切换 + 快捷行动条 */}
-        <div className="mt-2.5 flex flex-wrap items-center justify-between gap-2 pt-2 border-t border-[var(--line)]">
+      {/* 顶部常驻工作台分类与快捷行动条 (精简单栏，消除与全局顶栏功能重复) */}
+      <header className="shrink-0 border-b border-[var(--line)] bg-[var(--paper)] px-4 py-2 sm:px-6">
+        <div className="flex flex-wrap items-center justify-between gap-2">
+          {/* 四大直观分类标签页切换 */}
           <div className="flex items-center gap-1">
             <button
               type="button"
@@ -248,14 +175,14 @@ export const SubjectWorkspace: React.FC<SubjectWorkspaceProps> = ({
               onClick={() => onNavigateToTab?.("flashcards", { fach: activeFachInfo.id })}
               className="flex items-center gap-1 rounded border border-[var(--line)] bg-[var(--surface)] px-2 py-0.5 font-mono text-[11px] text-[var(--ink)] hover:border-[var(--accent)] hover:text-[var(--accent)] cursor-pointer"
             >
-              <span>{de ? "Karten drillen (Alt 2)" : "开启词卡背诵 (Alt 2)"}</span>
+              <span>{de ? "Karten drillen (Alt 3)" : "开启词卡背诵 (Alt 3)"}</span>
             </button>
             <button
               type="button"
               onClick={() => onNavigateToTab?.("klausursim", { fach: activeFachInfo.id })}
               className="flex items-center gap-1 rounded border border-[var(--ink)] bg-[var(--ink)] px-2 py-0.5 font-mono text-[11px] text-[var(--paper)] hover:bg-[var(--accent)] hover:border-[var(--accent)] cursor-pointer"
             >
-              <span>{de ? "45 Min Klausur starten (Alt 3)" : "开始45分钟模考 (Alt 3)"}</span>
+              <span>{de ? "45 Min Klausur starten (Alt 5)" : "开始45分钟模考 (Alt 5)"}</span>
             </button>
             <button
               type="button"
