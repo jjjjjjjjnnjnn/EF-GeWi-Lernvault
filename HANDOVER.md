@@ -26,9 +26,22 @@
 
 ---
 
-## 当前状态（2026-10-07 最新里程碑与交接就绪）
+## 当前状态（2026-10-08 最新里程碑与交接就绪）
 
-- ✅ **Phase 2.5 面向 Gymnasium Oberstufe 严肃学习平台定位重构与视觉降噪收官（2026-10-07 最新交付）**：
+- ✅ **Phase 2.7 课程流水线引擎与书本到趣味互动课程集生成工坊落地（2026-10-08 最新交付）**：
+  - **书籍大纲解构与战役世界观引擎（`coursePipeline.ts`）**：支持多级章节与列表大纲解析，自动生成宏大战役背景与高紧迫度危机情境 Hook，将枯燥教科书解构为好玩的 RPG 关卡；
+  - **16 款仿真教具精准装配与 8 步微课编译器**：自动为关卡匹配魔法四角沙盘、伦理辩证天平、切线逼近滑块等教具，产出符合 `Lesson-v3` 规范的微课 Markdown，100% 兼容原生 `parseReiseFile` 解析与关卡启动；
+  - **课程工坊交互界面（`CoursePipelineModal.tsx`）与顶栏入口**：Tufte 黑白纸墨双栏工作台，内置经典教材预设（SoWi/Philo/Mathe/Bio）、关卡战役地图（Quest Map）、Markdown 源码复制与研习室一键开课；顶栏增设「课程工坊」按钮，Palette 注册快捷动作 `P`；
+  - **阅读区工具栏极致精简**：根据真实视口反馈彻底移除 `SubjectWorkspace` 中冗余的长文阅读操作条，释放阅读视界；
+  - **工程门禁**：`coursePipeline.test.ts` 4/4、`CoursePipelineModal.test.tsx` 4/4 绿灯、`npx tsc -b` 0 报错、`npm run build` 打包通过、`python scripts/vault-check.py` PASS。
+
+- 🎯 **Phase 3.0 规划中主线：课程专区与前置解锁技能树系统（2026-10-08 架构路线图已定稿）**：
+  - **开源生态调研与选型**：深度对标 Roadmap.sh、Boot.dev、Duolingo、SkillTreePlatform，确立轻量 DAG 有向无环图数据结构与零新增 npm 依赖的原生 SVG 图形学渲染；
+  - **前置依赖解锁状态机**：设计 `locked` $\to$ `available` $\to$ `in_progress` $\to$ `mastered` 四态流转算法与前置依赖判定门禁；
+  - **双模式图谱可视化**：规划「RPG 线性通关技能树」与「极坐标发散蜘蛛网/星云图谱」双模态；
+  - **全景方案文档落地**：产出 [`00_META/Course-Zone-SkillTree-Roadmap.md`](00_META/Course-Zone-SkillTree-Roadmap.md)，完成四步研发流程与四阶段实施路线图规划。
+
+- ✅ **Phase 2.5 面向 Gymnasium Oberstufe 严肃学习平台定位重构与视觉降噪收官（2026-10-07 交付）**：
   - **语言体系去页游化**：全面清除“领取首战增益 +50XP”、“靶向弱项消除处方”等劣质页游与医疗黑话，重构为主打高中生自主掌控的「今日 15 分钟专注块」、「开始今日 15 分钟专注」与「今日待办攻坚任务」，任务明晰标示预计耗时（~5 min / ~8 min / ~10 min）；
   - **侧边栏与悬浮窗极致降噪**：侧栏 `Alt 1` ~ `Alt 9` 密集快捷键徽标改为透明静音设计（悬停淡入），清理视觉垃圾；右下角浮动条收敛为极简的纸墨微型标签（`反馈`）；
   - **材质深度与四大学术主题全量统一**：彻底消除死板写死白色底色，温润纸书模式下全屏象牙浅黄与卡片底色完全统一步调；砸碎所有套娃线框，呈现纯净无边框现代列表；
@@ -189,14 +202,20 @@
 ### 1. 先跑门禁建基线（3 条命令，确认「全绿」不是文档声明）
 
 ```bash
-python scripts/vault-check.py                      # 期望 PASS(notes=401, csv_rows=1921, reisen=356)
-cd App-EF-Lernvault && npx vitest run              # 期望 59 套件 / 398 测试 100% PASS
+python scripts/vault-check.py                      # 期望 PASS(notes=412, csv_rows=1942, reisen=356)
+cd App-EF-Lernvault && npx vitest run              # 期望全部测试 100% PASS
 cd App-EF-Lernvault && npm run build               # 期望 ✓ built (0 错误)
 ```
 
-### 2. 外部 AI 海量内容搜集与批量充实（核心动作）— ✅ 已完成（2026-09-25）
+### 2. 核心主线：推进 Phase 3.0【课程专区】学科图谱与前置解锁技能树系统研发（核心动作）
 
-按 [`00_META/Lehrplan-Content-Spezifikation.md`](00_META/Lehrplan-Content-Spezifikation.md) 中的【即用型外部 AI 批量提示词】，已由外部 AI 批量产出各科紧缺的交互新课并入库：`Lernreise/` 由 **5 篇 → 70 篇**（十科全覆盖，9 步 Lesson-v3），十科笔记缺口经审计**已全部收官**。详见 [`00_META/Journal/2026-09-25-lernreise-vollausbau.md`](00_META/Journal/2026-09-25-lernreise-vollausbau.md)。剩余可选动作：两篇旧版 5 步制试点（Musik-Hoeranalyse / Sport-Bewegung-Erklaeren）升级为 9 步；新课程配套 Anki 词卡。
+- **技术规约与方案路线图**：[`00_META/Course-Zone-SkillTree-Roadmap.md`](00_META/Course-Zone-SkillTree-Roadmap.md)；
+- **业务目标**：为学生提供学科/课程/知识图谱（思维导图、蜘蛛网放射发散与 RPG 技能树），且后续高阶微课/考点必须在学完并通过前置课程后才可点亮解锁；
+- **四步闭环研发动线**：
+  - **① 独立制作**：在 `App-EF-Lernvault/src/engine/skillTree.ts` 构建轻量 DAG 依赖图与解锁状态机算法（`locked` $\to$ `available` $\to$ `in_progress` $\to$ `mastered`），在 `src/components/SkillTreeCanvas.tsx` 开发 Tufte 纯黑白 SVG 画布；
+  - **② 独立测试**：编写 `skillTree.test.ts` 跑通拓扑排序、多依赖解锁与防死锁检测；
+  - **③ 接入集成**：在工作区总线中注册课程专区入口，与 `Reise` 模块（微课通关即点亮后续节点）打通闭环；
+  - **④ 回归验证**：`npx tsc -b` 0 报错、`npm run build` 成功通过。
 
 ### 3. 把德语问询稿发给老师 ← **唯一能解锁剩余阻塞的动作**
 
