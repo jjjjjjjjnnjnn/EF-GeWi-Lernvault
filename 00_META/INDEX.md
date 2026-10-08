@@ -276,6 +276,7 @@
 - [2026-10-07-home-dashboard-linear-duolingo-refactoring](Journal/2026-10-07-home-dashboard-linear-duolingo-refactoring.md) — **主页仪表盘德式极简成长探索总台重构**：二分屏动线+德国会考Notenpunkte分阶刻度+失分点雷达图与诊断抽屉
 - [2026-10-07-dashboard-mascot-rollback](Journal/2026-10-07-dashboard-mascot-rollback.md) — **吉祥物嵌入与总台重构回退记录**：依据用户实测审查，移除低多边形小狐狸及伴学桌宠，完全回退恢复至经典的德国学术功能主义黑白纸墨总台
 - [2026-10-08-wissensbasis-modularitaet](Journal/2026-10-08-wissensbasis-modularitaet.md) — **知识库框架模块化与导入导出总台落地**：解耦可扩展知识库仓储单例+对标BiliNote的FachRegistry插件体系+全格式导入导出+Tufte黑白纸墨管理总台+门禁全绿（454单测/build/vault-check PASS）
+- [2026-10-08-fach-bereich-workspace-demo](Journal/2026-10-08-fach-bereich-workspace-demo.md) — **学科专区一站式空间化工作台落成与架构重组验证**：通俗直观四大分类（知识笔记/抽认卡片/实验与教具/模拟真题）+10科药丸切换+行动推荐条+门禁全绿（459单测/build/vault-check PASS）
 - 约定：文件名 `YYYY-MM-DD-<thema>.md`，头部frontmatter（`fach`可空，`tags: [EF, Meta]`）。
 
 
