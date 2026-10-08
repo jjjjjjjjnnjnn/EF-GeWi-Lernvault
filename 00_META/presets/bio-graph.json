@@ -1,0 +1,2927 @@
+{
+  "schemaVersion": 1,
+  "fach": "Bio",
+  "nameDE": "Biologie",
+  "nameZH": "生物 (Bio)",
+  "descriptionDE": "Zellbiologie, Stoffwechsel und Energie, Genetik, Neurobiologie, Ökologie und Evolutionäre Biologie (NRW Oberstufe & Uni-Prep)",
+  "descriptionZH": "细胞生物学、代谢与能量、遗传学、神经生物学、生态学与演化生物学的全景引力星系图谱 (NRW 高中与大学衔接)",
+  "isCustomSubject": false,
+  "categories": [
+    "Zellbiologie",
+    "Stoffwechsel-Energie",
+    "Genetik",
+    "Neurobiologie",
+    "Oekologie",
+    "Evolution"
+  ],
+  "availableTags": [
+    "Formel",
+    "Modell",
+    "Definition",
+    "Verfahren",
+    "Grafik",
+    "Quelle",
+    "Basiswissen",
+    "Klausur-Dauerbrenner",
+    "Schwerpunkt-2026",
+    "AFB-III",
+    "Uni-Prep",
+    "Zellbiologie",
+    "Stoffwechsel",
+    "Enzymatik",
+    "Fotosynthese",
+    "Zellatmung",
+    "Membrantransport",
+    "Genetik",
+    "Molekulargenetik",
+    "Gentechnik",
+    "Epigenetik",
+    "Neurobiologie",
+    "Nervenzelle",
+    "Synapse",
+    "Hormon",
+    "Sinnesphysiologie",
+    "Oekologie",
+    "Populationsdynamik",
+    "Nachhaltigkeit",
+    "Evolution",
+    "Populationsgenetik",
+    "Systematik",
+    "Immunbiologie",
+    "Bioinformatik",
+    "Systembiologie",
+    "Experiment",
+    "Alltag",
+    "Bewertung"
+  ],
+  "nodes": [
+    {
+      "id": "bio-zelle-grundbausteine",
+      "fach": "Bio",
+      "titleDE": "Zellen als Grundbausteine des Lebens",
+      "titleZH": "细胞：生命的基本结构单位",
+      "summaryDE": "Alle Lebewesen sind aus Zellen aufgebaut; die Zelltheorie, die typische Zellgröße und die Grundausstattung einer Zelle erklären den Unterschied zwischen Lebendigem und Totem.",
+      "summaryZH": "所有生物都由细胞构成；细胞学说、细胞尺度与基本装备划出了生命与非生命的界限。",
+      "category": "Zellbiologie",
+      "curriculumTier": "Sek_I",
+      "stage": "einfuehrung",
+      "level": 1,
+      "xpReward": 60,
+      "estimatedMinutes": 8,
+      "prerequisites": [],
+      "layerIndex": 0,
+      "keyFormulaOrSentence": "Zelltheorie: Alle Organismen bestehen aus Zellen, Zellen entstehen nur aus bereits vorhandenen Zellen, und die Zelle ist die kleinste lebensfähige Einheit.",
+      "commonFallacy": "Viren als \"Zellen ohne Zellkern\" einordnen - Viren besitzen keinen eigenen Stoffwechsel und sind deshalb keine Zellen.",
+      "tags": [
+        "Definition",
+        "Basiswissen",
+        "Zellbiologie"
+      ]
+    },
+    {
+      "id": "bio-pflanzliche-tierische-zelle",
+      "fach": "Bio",
+      "titleDE": "Pflanzliche und tierische Zelle im Vergleich",
+      "titleZH": "植物细胞与动物细胞：结构对照与功能分工",
+      "summaryDE": "Beide Zelltypen teilen Zellkern, Mitochondrien, Ribosomen und Cytoplasma; Zellwand, große Vakuole und Chloroplasten sind die pflanzlichen Sondermerkmale.",
+      "summaryZH": "两类细胞共有细胞核、线粒体、核糖体与细胞质；细胞壁、大液泡与叶绿体是植物细胞独有的三项标志。",
+      "category": "Zellbiologie",
+      "curriculumTier": "Sek_I",
+      "stage": "einfuehrung",
+      "level": 1,
+      "xpReward": 65,
+      "estimatedMinutes": 10,
+      "prerequisites": [
+        "bio-zelle-grundbausteine"
+      ],
+      "layerIndex": 1,
+      "keyFormulaOrSentence": "Vergleichsschema: Gemeinsamkeiten (Zellkern, Mitochondrien, Ribosomen, Cytoplasma) den Unterschieden (Zellwand, große Vakuole, Chloroplasten) gegenüberstellen und jedem Merkmal eine Funktion zuordnen.",
+      "commonFallacy": "Die Zellwand mit der Biomembran gleichsetzen - die Zellwand ist totes, formgebendes Baumaterial, die Biomembran lebendig und selektiv permeabel.",
+      "tags": [
+        "Definition",
+        "Basiswissen",
+        "Zellbiologie"
+      ]
+    },
+    {
+      "id": "bio-zellorganellen-kompartimentierung",
+      "fach": "Bio",
+      "titleDE": "Zellorganellen & Kompartimentierung",
+      "titleZH": "细胞器分工与区室化原理",
+      "summaryDE": "Membranumhüllte Kompartimente trennen Reaktionsräume, sodass gleichzeitig ablaufende, einander widersprechende Stoffwechselwege überhaupt möglich werden.",
+      "summaryZH": "膜包被的区室把互不相容的反应空间隔开，使方向相反的两条代谢途径能在同一细胞内同时进行。",
+      "category": "Zellbiologie",
+      "curriculumTier": "EF",
+      "stage": "grundlagen",
+      "level": 1,
+      "xpReward": 85,
+      "estimatedMinutes": 12,
+      "prerequisites": [
+        "bio-pflanzliche-tierische-zelle"
+      ],
+      "layerIndex": 2,
+      "keyFormulaOrSentence": "Kompartimentierung bedeutet Reaktionsraumtrennung durch Biomembranen: der Fettsäureabbau im Mitochondrium und die Fettsäuresynthese im Cytosol laufen gleichzeitig ab, ohne sich gegenseitig aufzuheben.",
+      "commonFallacy": "Organellen als isolierte Bauklötze lernen - Prüfungsaufgaben verlangen stets das Zusammenspiel, etwa Ribosom, Endoplasmatisches Retikulum, Golgi-Apparat und Vesikel.",
+      "tags": [
+        "Definition",
+        "Modell",
+        "Basiswissen",
+        "Zellbiologie"
+      ]
+    },
+    {
+      "id": "bio-prokaryot-eukaryot-vergleich",
+      "fach": "Bio",
+      "titleDE": "Prokaryotische vs. eukaryotische Zelle",
+      "titleZH": "原核与真核细胞：尺度、结构与组织方式的根本分野",
+      "summaryDE": "Prokaryoten besitzen keinen membranumhüllten Kern und keine Kompartimente; Eukaryoten trennen Transkription und Translation räumlich voneinander.",
+      "summaryZH": "原核细胞没有膜包被的细胞核与细胞器，真核细胞则把转录与翻译在空间上分开。",
+      "category": "Zellbiologie",
+      "curriculumTier": "EF",
+      "stage": "grundlagen",
+      "level": 2,
+      "xpReward": 90,
+      "estimatedMinutes": 12,
+      "prerequisites": [
+        "bio-zellorganellen-kompartimentierung"
+      ],
+      "layerIndex": 3,
+      "keyFormulaOrSentence": "Prokaryot: ringförmige DNA im Nucleoid, 70S-Ribosomen, keine membranumhüllten Organellen. Eukaryot: lineare Chromosomen im Zellkern, 80S-Ribosomen, Kompartimentierung erlaubt die Kopplung von Transkription und Translation an verschiedenen Orten.",
+      "commonFallacy": "Prokaryoten für \"kleine Eukaryoten ohne Kern\" halten - es fehlt die gesamte Kompartimentierung, nicht nur die Kernhülle.",
+      "tags": [
+        "Definition",
+        "Modell",
+        "Basiswissen",
+        "Zellbiologie"
+      ]
+    },
+    {
+      "id": "bio-biomembran-transportmechanismen",
+      "fach": "Bio",
+      "titleDE": "Biomembran & Transportmechanismen",
+      "titleZH": "生物膜流动镶嵌模型与跨膜转运",
+      "summaryDE": "Die amphiphile Phospholipid-Doppelschicht ist selektiv permeabel; Kanal- und Carrierproteine erweitern das Spektrum der transportierbaren Stoffe erheblich.",
+      "summaryZH": "两亲性磷脂双分子层具选择透过性；通道蛋白与载体蛋白大幅扩展了可跨膜转运的物质范围。",
+      "category": "Zellbiologie",
+      "curriculumTier": "EF",
+      "stage": "grundlagen",
+      "level": 2,
+      "xpReward": 95,
+      "estimatedMinutes": 15,
+      "prerequisites": [
+        "bio-zellorganellen-kompartimentierung"
+      ],
+      "layerIndex": 3,
+      "keyFormulaOrSentence": "Flüssig-Mosaik-Modell: amphiphile Phospholipid-Doppelschicht als Grundgerüst, darin frei bewegliche integrale und periphere Proteine; kleine unpolare Teilchen diffundieren direkt durch die Lipidschicht, Ionen und Zucker nur über Kanal- oder Carrierproteine.",
+      "commonFallacy": "Diffusion mit Osmose verwechseln - Diffusion ist der Ausgleich beliebiger Teilchen, Osmose ausschließlich die Diffusion von Wasser durch eine selektiv permeable Membran.",
+      "tags": [
+        "Modell",
+        "Definition",
+        "Klausur-Dauerbrenner",
+        "Membrantransport",
+        "Zellbiologie"
+      ]
+    },
+    {
+      "id": "bio-diffusion-osmose-plasmolyse",
+      "fach": "Bio",
+      "titleDE": "Diffusion, Osmose & Plasmolyse",
+      "titleZH": "扩散、渗透与植物细胞的质壁分离",
+      "summaryDE": "Wasser diffundiert stets in Richtung der höheren Konzentration gelöster Teilchen; in hypertoner Lösung löst sich der Protoplast von der Zellwand ab.",
+      "summaryZH": "水总是朝向溶质浓度更高的一侧净移动；在高渗液中原生质体从细胞壁内侧脱开，形成质壁分离。",
+      "category": "Zellbiologie",
+      "curriculumTier": "EF",
+      "stage": "vertiefung",
+      "level": 2,
+      "xpReward": 100,
+      "estimatedMinutes": 15,
+      "prerequisites": [
+        "bio-biomembran-transportmechanismen"
+      ],
+      "layerIndex": 4,
+      "keyFormulaOrSentence": "Osmose: Wasser diffundiert durch die selektiv permeable Membran von der hypotonen zur hypertonen Lösung. Hyperton bedeutet Plasmolyse, hypoton bedeutet Turgeszenz beziehungsweise Deplasmolyse.",
+      "commonFallacy": "Osmose als \"Wasser wandert dorthin, wo wenig Wasser ist\" formulieren - entscheidend ist die Konzentration der gelösten Teilchen, nicht die absolute Wassermenge.",
+      "tags": [
+        "Definition",
+        "Klausur-Dauerbrenner",
+        "Verfahren",
+        "Membrantransport",
+        "Experiment"
+      ]
+    },
+    {
+      "id": "bio-aktiver-transport-natrium-kalium-pumpe",
+      "fach": "Bio",
+      "titleDE": "Aktiver Transport & Natrium-Kalium-Pumpe",
+      "titleZH": "主动运输与钠钾泵：逆浓度梯度的能量代价",
+      "summaryDE": "Die Natrium-Kalium-Pumpe hydrolysiert ATP, um drei Natriumionen auszuschleusen und zwei Kaliumionen einzuwärts zu transportieren; so entstehen die Ionengradienten der Zelle.",
+      "summaryZH": "钠钾泵水解 ATP，每循环排出三个钠离子、泵入两个钾离子，由此建立起细胞的跨膜离子梯度。",
+      "category": "Zellbiologie",
+      "curriculumTier": "EF",
+      "stage": "vertiefung",
+      "level": 2,
+      "xpReward": 105,
+      "estimatedMinutes": 15,
+      "prerequisites": [
+        "bio-biomembran-transportmechanismen"
+      ],
+      "layerIndex": 4,
+      "keyFormulaOrSentence": "Primär aktiver Transport: 3 Na+ nach außen gegen 2 K+ nach innen pro hydrolysiertem ATP, also Bewegung gegen das elektrochemische Gefälle unter direkter Kopplung an die ATP-Hydrolyse.",
+      "commonFallacy": "Glauben, für aktiven Transport genüge ein Transportprotein - ohne ATP-Hydrolyse kann kein Stoff gegen sein elektrochemisches Gefälle bewegt werden.",
+      "tags": [
+        "Definition",
+        "Formel",
+        "Klausur-Dauerbrenner",
+        "Membrantransport"
+      ]
+    },
+    {
+      "id": "bio-mitose-zellzyklus-regulation",
+      "fach": "Bio",
+      "titleDE": "Mitose & Regulation des Zellzyklus",
+      "titleZH": "有丝分裂与细胞周期检查点调控",
+      "summaryDE": "Der Zellzyklus wird an Kontrollpunkten über Cyclin-CDK-Komplexe geprüft; entgleiste Proliferation führt zum Tumorwachstum.",
+      "summaryZH": "细胞周期在检查点由周期蛋白-CDK复合物审核；增殖失控则通向肿瘤。",
+      "category": "Zellbiologie",
+      "curriculumTier": "Q1",
+      "stage": "grundlagen",
+      "level": 2,
+      "xpReward": 120,
+      "estimatedMinutes": 14,
+      "prerequisites": [
+        "bio-zellorganellen-kompartimentierung",
+        "bio-prokaryot-eukaryot-vergleich"
+      ],
+      "layerIndex": 4,
+      "keyFormulaOrSentence": "Mitoseablauf: Prophase, Metaphase, Anaphase, Telophase; Ergebnis sind zwei genetisch identische, diploide Zellen. Der G1/S-Kontrollpunkt prüft Zellgröße, Nährstoffversorgung und DNA-Schäden, bevor die Replikation startet.",
+      "commonFallacy": "Mitose und Meiose denselben Zweck zuschreiben - die Mitose erhält den Chromosomensatz, die Meiose halbiert ihn und erzeugt Neukombination.",
+      "tags": [
+        "Verfahren",
+        "Definition",
+        "Klausur-Dauerbrenner",
+        "Zellbiologie"
+      ]
+    },
+    {
+      "id": "bio-meiose-rekombination",
+      "fach": "Bio",
+      "titleDE": "Meiose & Rekombination",
+      "titleZH": "减数分裂与互换重组：遗传多样性的细胞源头",
+      "summaryDE": "Zwei aufeinanderfolgende Reifeteilungen halbieren den Chromosomensatz; Crossing-over und die freie Kombination der Homologen erzeugen neue Genkombinationen.",
+      "summaryZH": "两次连续分裂把染色体数减半；交叉互换与同源染色体的自由组合制造出全新的等位基因组合。",
+      "category": "Zellbiologie",
+      "curriculumTier": "Q1",
+      "stage": "vertiefung",
+      "level": 2,
+      "xpReward": 125,
+      "estimatedMinutes": 15,
+      "prerequisites": [
+        "bio-mitose-zellzyklus-regulation",
+        "bio-zellorganellen-kompartimentierung"
+      ],
+      "layerIndex": 5,
+      "keyFormulaOrSentence": "Meiose I trennt die homologen Chromosomen (Reduktionsteilung), Meiose II trennt die Chromatiden; das Crossing-over in der Prophase I erzeugt intrachromosomale Rekombination und damit neue Allelkombinationen.",
+      "commonFallacy": "Crossing-over und Chromosomenmutation gleichsetzen - der Austausch homologer Abschnitte ist ein regulärer, geplanter Vorgang und keine Schädigung des Erbguts.",
+      "tags": [
+        "Verfahren",
+        "Definition",
+        "Klausur-Dauerbrenner",
+        "Genetik"
+      ]
+    },
+    {
+      "id": "bio-endosymbiontentheorie",
+      "fach": "Bio",
+      "titleDE": "Endosymbiontentheorie",
+      "titleZH": "内共生学说：线粒体与叶绿体的演化起源",
+      "summaryDE": "Mitochondrien und Chloroplasten stammen von frei lebenden Prokaryoten ab, die als Endosymbionten dauerhaft in eine Wirtszelle aufgenommen und dort in Zellorganellen umgewandelt wurden.",
+      "summaryZH": "线粒体与叶绿体源自被宿主细胞长期内吞的自由生活原核生物，逐步被整合为细胞器。",
+      "category": "Zellbiologie",
+      "curriculumTier": "Q2",
+      "stage": "synthese",
+      "level": 3,
+      "xpReward": 155,
+      "estimatedMinutes": 16,
+      "prerequisites": [
+        "bio-prokaryot-eukaryot-vergleich",
+        "bio-mitose-zellzyklus-regulation",
+        "bio-biomembran-transportmechanismen"
+      ],
+      "layerIndex": 5,
+      "keyFormulaOrSentence": "Beleglage: eigene ringförmige DNA, 70S-Ribosomen, doppelte Membranhülle und eigene Teilung - alles Merkmale, die sonst ausschließlich Prokaryoten zeigen und die auf eine gemeinsame Abstammung verweisen.",
+      "commonFallacy": "Die Endosymbiontentheorie als bewiesene Tatsache hinstellen - sie ist eine empirisch sehr gut gestützte, methodisch aber historische Hypothese über einmalige Ereignisse.",
+      "tags": [
+        "Modell",
+        "AFB-III",
+        "Zellbiologie",
+        "Evolution"
+      ]
+    },
+    {
+      "id": "bio-immunsystem-abwehr-impfung-allergie",
+      "fach": "Bio",
+      "titleDE": "Immunbiologie: Abwehr, Impfung & Allergie",
+      "titleZH": "免疫生物学：非特异与特异性防御、疫苗与过敏",
+      "summaryDE": "Unspezifische und spezifische Abwehr greifen zeitlich gestaffelt ineinander; Impfungen erzeugen ein immunologisches Gedächtnis, Allergien sind fehlgeleitete Überempfindlichkeitsreaktionen.",
+      "summaryZH": "非特异性与特异性免疫在时间上分层协作；疫苗建立免疫记忆，过敏则是误判性过度应答。",
+      "category": "Zellbiologie",
+      "curriculumTier": "Q2",
+      "stage": "synthese",
+      "level": 3,
+      "xpReward": 160,
+      "estimatedMinutes": 18,
+      "prerequisites": [
+        "bio-biomembran-transportmechanismen",
+        "bio-diffusion-osmose-plasmolyse",
+        "bio-mitose-zellzyklus-regulation"
+      ],
+      "layerIndex": 5,
+      "keyFormulaOrSentence": "Unspezifische Abwehr: Fieber, Entzündung, Phagozytose, Komplementsystem. Spezifische Abwehr: B-Lymphozyten bilden Antikörper (humorale Abwehr), T-Lymphozyten steuern die zelluläre Abwehr. Impfung bedeutet aktive Immunisierung durch Antigenkontakt ohne Erkrankung, allergische Reaktionen sind Typ-I-Reaktionen über IgE an Mastzellen.",
+      "commonFallacy": "Antikörper für direkt zellzerstörend halten - Antikörper markieren und neutralisieren Antigene, die eigentliche Zerstörung leisten Komplementproteine und Fresszellen.",
+      "tags": [
+        "Definition",
+        "Bewertung",
+        "Klausur-Dauerbrenner",
+        "Immunbiologie"
+      ]
+    },
+    {
+      "id": "bio-signaltransduktion-rezeptorkaskaden",
+      "fach": "Bio",
+      "titleDE": "Signaltransduktion & Rezeptorkaskaden",
+      "titleZH": "细胞信号转导：受体、第二信使与级联放大",
+      "summaryDE": "Extrazelluläre Signale werden an Membranrezeptoren gebunden, über Second Messenger verstärkt und schließlich als Enzym- oder Genantwort umgesetzt.",
+      "summaryZH": "胞外信号与膜受体结合，经第二信使级联放大，最终转化为酶活性或基因表达的改变。",
+      "category": "Zellbiologie",
+      "curriculumTier": "Uni_Prep",
+      "stage": "synthese",
+      "level": 3,
+      "xpReward": 180,
+      "estimatedMinutes": 22,
+      "prerequisites": [
+        "bio-biomembran-transportmechanismen",
+        "bio-aktiver-transport-natrium-kalium-pumpe",
+        "bio-immunsystem-abwehr-impfung-allergie"
+      ],
+      "layerIndex": 6,
+      "keyFormulaOrSentence": "Signalweg: Ligand, Rezeptor, Second Messenger (cAMP, Ca2+, IP3), Proteinkinase-Kaskade, zelluläre Antwort. Durch Kaskadenverstärkung aktiviert ein einziges Ligandmolekül viele Effektorproteine.",
+      "commonFallacy": "Rezeptoren mit Transportproteinen verwechseln - ein Rezeptor transportiert den Liganden nicht über die Membran, er wandelt nur die Information um.",
+      "tags": [
+        "Modell",
+        "Uni-Prep",
+        "AFB-III",
+        "Systembiologie",
+        "Zellbiologie"
+      ]
+    },
+    {
+      "id": "bio-fotosynthese-grundlagen",
+      "fach": "Bio",
+      "titleDE": "Fotosynthese: Grundlagen & Blattaufbau",
+      "titleZH": "光合作用基础与叶片结构适应",
+      "summaryDE": "Chlorophyll nimmt Lichtenergie auf und wandelt Kohlenstoffdioxid und Wasser in Glucose und Sauerstoff um; der Blattaufbau optimiert gleichzeitig Lichtausbeute und Gasaustausch.",
+      "summaryZH": "叶绿素吸收光能，把二氧化碳与水转化为葡萄糖和氧气；叶片分层结构兼顾采光与气体交换。",
+      "category": "Stoffwechsel-Energie",
+      "curriculumTier": "Sek_I",
+      "stage": "einfuehrung",
+      "level": 1,
+      "xpReward": 70,
+      "estimatedMinutes": 10,
+      "prerequisites": [],
+      "layerIndex": 0,
+      "keyFormulaOrSentence": "6 CO2 + 6 H2O -> C6H12O6 + 6 O2 als lichtabhängige Gesamtbilanz; das Palisadengewebe ist auf Lichtabsorption spezialisiert, das Schwammgewebe auf Gasaustausch, die Spaltöffnungen regulieren den Wasserverlust.",
+      "commonFallacy": "Annehmen, Pflanzen atmeten nicht - auch grüne Pflanzen betreiben rund um die Uhr Zellatmung, nur überwiegt am Tag die Fotosyntheserate.",
+      "tags": [
+        "Formel",
+        "Basiswissen",
+        "Fotosynthese"
+      ]
+    },
+    {
+      "id": "bio-zellatmung-grundlagen",
+      "fach": "Bio",
+      "titleDE": "Zellatmung: Grundlagen & Energieumsatz",
+      "titleZH": "细胞呼吸基础与能量释放",
+      "summaryDE": "Glucose wird in vielen Teilschritten oxidiert; die frei werdende Energie wird in ATP zwischengespeichert, statt in einer einzigen Reaktion als Wärme zu verpuffen.",
+      "summaryZH": "葡萄糖被分步氧化，释放的能量逐级存入 ATP，而不是一次性以热的形式散失。",
+      "category": "Stoffwechsel-Energie",
+      "curriculumTier": "Sek_I",
+      "stage": "einfuehrung",
+      "level": 1,
+      "xpReward": 70,
+      "estimatedMinutes": 10,
+      "prerequisites": [],
+      "layerIndex": 0,
+      "keyFormulaOrSentence": "C6H12O6 + 6 O2 -> 6 CO2 + 6 H2O mit stark negativer freier Reaktionsenthalpie; die Energie wird über viele gekoppelte Teilschritte auf ATP übertragen, damit die Zelle sie nutzen kann.",
+      "commonFallacy": "Zellatmung mit dem Gasaustausch der Lunge gleichsetzen - Zellatmung ist ein enzymatischer Stoffwechselweg in Mitochondrien und Cytosol.",
+      "tags": [
+        "Formel",
+        "Basiswissen",
+        "Zellatmung"
+      ]
+    },
+    {
+      "id": "bio-blutkreislauf-atemorgane",
+      "fach": "Bio",
+      "titleDE": "Blutkreislauf & Atmungsorgane",
+      "titleZH": "血液循环与呼吸器官：把氧气送到细胞",
+      "summaryDE": "Doppelter Blutkreislauf und Lungenbläschen sichern den Transport von Sauerstoff und Glucose bis zu jeder Körperzelle.",
+      "summaryZH": "双循环与肺泡结构共同保证氧气和葡萄糖被输送到每一个体细胞。",
+      "category": "Stoffwechsel-Energie",
+      "curriculumTier": "Sek_I",
+      "stage": "einfuehrung",
+      "level": 1,
+      "xpReward": 65,
+      "estimatedMinutes": 10,
+      "prerequisites": [
+        "bio-zellatmung-grundlagen"
+      ],
+      "layerIndex": 1,
+      "keyFormulaOrSentence": "Körperkreislauf und Lungenkreislauf sind hintereinandergeschaltet; die große Oberfläche und die dünne Wand der Alveolen maximieren den Diffusionsstrom von Sauerstoff und Kohlenstoffdioxid.",
+      "commonFallacy": "Arterien pauschal für \"sauerstoffreiche Gefäße\" halten - die Lungenschlagader ist eine Arterie und führt sauerstoffarmes Blut.",
+      "tags": [
+        "Definition",
+        "Basiswissen",
+        "Alltag",
+        "Zellatmung"
+      ]
+    },
+    {
+      "id": "bio-stoffgruppen-kohlenhydrate-lipide-proteine",
+      "fach": "Bio",
+      "titleDE": "Stoffgruppen: Kohlenhydrate, Lipide & Proteine",
+      "titleZH": "三大有机物：糖类、脂质与蛋白质的结构-功能关系",
+      "summaryDE": "Kohlenhydrate, Lipide und Proteine unterscheiden sich in Grundbausteinen und funktionellen Gruppen; daraus folgen ihre unterschiedlichen Aufgaben im Organismus.",
+      "summaryZH": "三大类有机物的单体与官能团不同，由此决定了它们在供能、储能与催化上的分工。",
+      "category": "Stoffwechsel-Energie",
+      "curriculumTier": "EF",
+      "stage": "grundlagen",
+      "level": 1,
+      "xpReward": 85,
+      "estimatedMinutes": 12,
+      "prerequisites": [
+        "bio-fotosynthese-grundlagen"
+      ],
+      "layerIndex": 1,
+      "keyFormulaOrSentence": "Kohlenhydrate: Monosaccharide über glykosidische Bindung. Lipide: Glycerin und Fettsäuren über Esterbindung, dadurch amphiphil. Proteine: 20 Aminosäuren über Peptidbindung, die variablen Reste bestimmen Faltung und Funktion.",
+      "commonFallacy": "Proteine allein als Baustoff betrachten - Proteine sind zugleich Enzyme, Transportmoleküle, Rezeptoren, Hormone und Antikörper.",
+      "tags": [
+        "Definition",
+        "Basiswissen",
+        "Stoffwechsel"
+      ]
+    },
+    {
+      "id": "bio-enzymaufbau-schluessel-schloss",
+      "fach": "Bio",
+      "titleDE": "Enzymaufbau & Schlüssel-Schloss-Prinzip",
+      "titleZH": "酶的结构、活性中心与锁钥/诱导契合",
+      "summaryDE": "Enzyme sind Proteine mit einer substratspezifischen Bindetasche; sie senken die Aktivierungsenergie und gehen unverändert aus der Reaktion hervor.",
+      "summaryZH": "酶是带底物特异性结合凹槽的蛋白质；它们降低活化能，并在反应后原样再生。",
+      "category": "Stoffwechsel-Energie",
+      "curriculumTier": "EF",
+      "stage": "grundlagen",
+      "level": 1,
+      "xpReward": 90,
+      "estimatedMinutes": 12,
+      "prerequisites": [
+        "bio-stoffgruppen-kohlenhydrate-lipide-proteine"
+      ],
+      "layerIndex": 2,
+      "keyFormulaOrSentence": "Enzym + Substrat -> Enzym-Substrat-Komplex -> Enzym + Produkt; die katalytische Wirkung besteht in der Herabsetzung der Aktivierungsenergie, nicht in einer Verschiebung der Gleichgewichtslage.",
+      "commonFallacy": "Glauben, Enzyme würden bei der Reaktion verbraucht - Enzyme gehen unverändert aus der Katalyse hervor und werden nur in katalytischen Spuren benötigt.",
+      "tags": [
+        "Modell",
+        "Definition",
+        "Klausur-Dauerbrenner",
+        "Enzymatik"
+      ]
+    },
+    {
+      "id": "bio-atp-adp-redoxsystem",
+      "fach": "Bio",
+      "titleDE": "ATP-ADP-System & Redoxreaktionen",
+      "titleZH": "ATP/ADP 能量货币与氧化还原反应",
+      "summaryDE": "ATP speichert Energie in seiner Phosphorsäureanhydridbindung; Redoxreaktionen übertragen Elektronen und verschieben damit Energie zwischen Stoffen.",
+      "summaryZH": "ATP 把能量储存在磷酸酐键中；氧化还原反应通过电子转移在物质之间搬运能量。",
+      "category": "Stoffwechsel-Energie",
+      "curriculumTier": "EF",
+      "stage": "grundlagen",
+      "level": 2,
+      "xpReward": 95,
+      "estimatedMinutes": 14,
+      "prerequisites": [
+        "bio-zellatmung-grundlagen",
+        "bio-stoffgruppen-kohlenhydrate-lipide-proteine"
+      ],
+      "layerIndex": 2,
+      "keyFormulaOrSentence": "ATP + H2O -> ADP + Pi + Energie (unter Standardbedingungen etwa 30 kJ/mol). Oxidation ist Elektronenabgabe durch den Elektronendonator, Reduktion ist Elektronenaufnahme; NAD+ und NADH dienen als Überträger.",
+      "commonFallacy": "ATP mit Glucose als Energiespeicher gleichsetzen - ATP ist ein Kurzzeittransporter, Glucose und Fette sind die Langzeitspeicher.",
+      "tags": [
+        "Formel",
+        "Definition",
+        "Klausur-Dauerbrenner",
+        "Stoffwechsel"
+      ]
+    },
+    {
+      "id": "bio-enzymkinetik-hemmtypen",
+      "fach": "Bio",
+      "titleDE": "Enzymkinetik & Hemmtypen",
+      "titleZH": "酶动力学与竞争/非竞争性抑制",
+      "summaryDE": "Die Reaktionsgeschwindigkeit sättigt mit steigender Substratkonzentration; Hemmstoffe greifen kompetitiv am aktiven Zentrum oder nichtkompetitiv an anderer Stelle an.",
+      "summaryZH": "反应速率随底物浓度增大趋于饱和；抑制剂或竞争活性中心，或结合别处改变构象。",
+      "category": "Stoffwechsel-Energie",
+      "curriculumTier": "Q1",
+      "stage": "vertiefung",
+      "level": 2,
+      "xpReward": 120,
+      "estimatedMinutes": 16,
+      "prerequisites": [
+        "bio-enzymaufbau-schluessel-schloss",
+        "bio-atp-adp-redoxsystem"
+      ],
+      "layerIndex": 3,
+      "keyFormulaOrSentence": "Michaelis-Menten: v = (v_max * [S]) / (K_m + [S]). Bei kompetitiver Hemmung steigt der scheinbare K_m-Wert, v_max bleibt jedoch erreichbar; bei nichtkompetitiver Hemmung sinkt v_max, während K_m unverändert bleibt.",
+      "commonFallacy": "Bei kompetitiver Hemmung einen sinkenden v_max-Wert angeben - v_max bleibt erreichbar, sobald genug Substrat den Hemmstoff vom aktiven Zentrum verdrängt.",
+      "tags": [
+        "Formel",
+        "Grafik",
+        "Klausur-Dauerbrenner",
+        "Enzymatik",
+        "AFB-III"
+      ]
+    },
+    {
+      "id": "bio-glykolyse-oxidative-decarboxylierung",
+      "fach": "Bio",
+      "titleDE": "Glykolyse & oxidative Decarboxylierung",
+      "titleZH": "糖酵解与氧化脱羧：从细胞质到线粒体的接力",
+      "summaryDE": "Im Cytosol entsteht aus Glucose Pyruvat; nach dem Transport ins Mitochondrium wird Pyruvat zu Acetyl-CoA decarboxyliert und oxidiert.",
+      "summaryZH": "胞质中葡萄糖裂解为丙酮酸，进入线粒体后氧化脱羧生成乙酰辅酶A。",
+      "category": "Stoffwechsel-Energie",
+      "curriculumTier": "Q1",
+      "stage": "grundlagen",
+      "level": 2,
+      "xpReward": 125,
+      "estimatedMinutes": 16,
+      "prerequisites": [
+        "bio-atp-adp-redoxsystem",
+        "bio-enzymkinetik-hemmtypen"
+      ],
+      "layerIndex": 4,
+      "keyFormulaOrSentence": "Glykolyse: Glucose + 2 NAD+ + 2 ADP + 2 Pi -> 2 Pyruvat + 2 NADH + 2 ATP über Substratkettenphosphorylierung, ohne Beteiligung von Sauerstoff. Die oxidative Decarboxylierung liefert je Pyruvat ein NADH und ein CO2.",
+      "commonFallacy": "Annehmen, die Glykolyse finde im Mitochondrium statt - sie läuft im Cytosol ab und ist der einzige auch anaerob mögliche Teilweg.",
+      "tags": [
+        "Verfahren",
+        "Basiswissen",
+        "Zellatmung",
+        "Stoffwechsel"
+      ]
+    },
+    {
+      "id": "bio-citratzyklus-atmungskette",
+      "fach": "Bio",
+      "titleDE": "Citratzyklus & Atmungskette",
+      "titleZH": "柠檬酸循环与呼吸链：彻底氧化与电子传递",
+      "summaryDE": "Im Citratzyklus wird Acetyl-CoA vollständig zu Kohlenstoffdioxid oxidiert; die Atmungskette überträgt die dabei gewonnenen Elektronen schließlich auf Sauerstoff.",
+      "summaryZH": "柠檬酸循环把乙酰辅酶A彻底氧化为二氧化碳，呼吸链再把电子最终交给氧。",
+      "category": "Stoffwechsel-Energie",
+      "curriculumTier": "Q1",
+      "stage": "vertiefung",
+      "level": 3,
+      "xpReward": 140,
+      "estimatedMinutes": 18,
+      "prerequisites": [
+        "bio-glykolyse-oxidative-decarboxylierung",
+        "bio-enzymkinetik-hemmtypen"
+      ],
+      "layerIndex": 5,
+      "keyFormulaOrSentence": "Citratzyklus pro Acetyl-CoA: 3 NADH, 1 FADH2, 1 GTP und 2 CO2. Elektronentransportkette: NADH -> Komplex I -> Ubichinon -> Komplex III -> Cytochrom c -> Komplex IV -> 1/2 O2 -> H2O.",
+      "commonFallacy": "Sauerstoff zum Elektronendonator machen - O2 ist der terminale Elektronenakzeptor der Atmungskette und wird dabei zu Wasser reduziert.",
+      "tags": [
+        "Verfahren",
+        "Klausur-Dauerbrenner",
+        "Zellatmung",
+        "Stoffwechsel"
+      ]
+    },
+    {
+      "id": "bio-chemiosmotische-atp-bildung",
+      "fach": "Bio",
+      "titleDE": "Chemiosmotische ATP-Bildung",
+      "titleZH": "化学渗透假说：质子梯度驱动 ATP 合酶",
+      "summaryDE": "Die Atmungskette pumpt Protonen in den Intermembranraum; der Rückstrom über die ATP-Synthase treibt die Phosphorylierung von ADP an.",
+      "summaryZH": "呼吸链把质子泵入膜间隙，质子经 ATP 合酶回流时驱动 ADP 磷酸化。",
+      "category": "Stoffwechsel-Energie",
+      "curriculumTier": "Q1",
+      "stage": "vertiefung",
+      "level": 3,
+      "xpReward": 145,
+      "estimatedMinutes": 18,
+      "prerequisites": [
+        "bio-citratzyklus-atmungskette",
+        "bio-glykolyse-oxidative-decarboxylierung",
+        "bio-atp-adp-redoxsystem"
+      ],
+      "layerIndex": 6,
+      "keyFormulaOrSentence": "Chemiosmose: Protonengradient und elektrisches Potenzial über die innere Mitochondrienmembran bilden zusammen die protonenmotorische Kraft. Die ATP-Synthase nutzt den Rückstrom der Protonen, nicht eine direkte Substratkopplung, zur Phosphorylierung von ADP.",
+      "commonFallacy": "Die Atmungskette selbst ATP herstellen lassen - die Kette baut ausschließlich den Protonengradienten auf, ATP entsteht nur an der ATP-Synthase.",
+      "tags": [
+        "Modell",
+        "Formel",
+        "Klausur-Dauerbrenner",
+        "Zellatmung",
+        "AFB-III"
+      ]
+    },
+    {
+      "id": "bio-photosynthese-lichtreaktion-calvin-zyklus",
+      "fach": "Bio",
+      "titleDE": "Primär- & Sekundärreaktion der Fotosynthese",
+      "titleZH": "光反应与卡尔文循环的耦合",
+      "summaryDE": "An den Thylakoidmembranen entstehen durch Lichtanregung ATP und NADPH; im Stroma fixiert Rubisco Kohlenstoffdioxid und baut daraus Triosephosphat auf.",
+      "summaryZH": "类囊体膜上光反应产生 ATP 与 NADPH；基质中 RuBisCO 固定二氧化碳并还原生成三碳糖。",
+      "category": "Stoffwechsel-Energie",
+      "curriculumTier": "Q2",
+      "stage": "synthese",
+      "level": 3,
+      "xpReward": 155,
+      "estimatedMinutes": 20,
+      "prerequisites": [
+        "bio-fotosynthese-grundlagen",
+        "bio-chemiosmotische-atp-bildung",
+        "bio-atp-adp-redoxsystem"
+      ],
+      "layerIndex": 7,
+      "keyFormulaOrSentence": "Primärreaktion: 2 H2O -> 4 H+ + 4 e- + O2, der Elektronentransport erzeugt ATP und NADPH. Sekundärreaktion (Calvin-Zyklus) in drei Phasen: Fixierung, Reduktion, Regeneration, mit einem Verbrauch von 3 ATP und 2 NADPH pro fixiertem CO2.",
+      "commonFallacy": "Den Sauerstoff der Fotosynthese aus dem Kohlenstoffdioxid stammen lassen - das freigesetzte O2 stammt ausschließlich aus der Photolyse des Wassers.",
+      "tags": [
+        "Formel",
+        "Modell",
+        "Klausur-Dauerbrenner",
+        "Schwerpunkt-2026",
+        "Fotosynthese",
+        "AFB-III"
+      ]
+    },
+    {
+      "id": "bio-c4-gaerung-energetisches-modell",
+      "fach": "Bio",
+      "titleDE": "C4-Photosynthese, Gärung & energetisches Modell",
+      "titleZH": "C4 途径、发酵与能量模型：跨界比较",
+      "summaryDE": "C4-Pflanzen vermeiden photorespirative Verluste durch räumliche Trennung der Reaktionsschritte; Gärung ermöglicht ohne Sauerstoff die Rückgewinnung von NAD+.",
+      "summaryZH": "C4 植物用空间分离规避光呼吸损失；发酵则在无氧条件下再生 NAD⁺ 以维持糖酵解。",
+      "category": "Stoffwechsel-Energie",
+      "curriculumTier": "Uni_Prep",
+      "stage": "synthese",
+      "level": 3,
+      "xpReward": 180,
+      "estimatedMinutes": 24,
+      "prerequisites": [
+        "bio-photosynthese-lichtreaktion-calvin-zyklus",
+        "bio-chemiosmotische-atp-bildung",
+        "bio-citratzyklus-atmungskette",
+        "bio-glykolyse-oxidative-decarboxylierung"
+      ],
+      "layerIndex": 8,
+      "keyFormulaOrSentence": "Energiebilanz pro Glucose: Glykolyse, Citratzyklus und Atmungskette liefern zusammen etwa 30 bis 32 ATP, die alkoholische Gärung nur 2 ATP. C4-Pflanzen konzentrieren CO2 über die PEP-Carboxylase in den Bündelscheidenzellen und unterdrücken dadurch die Photorespiration.",
+      "commonFallacy": "Gärung als nutzlosen Weg ohne ATP-Gewinn abtun - entscheidend ist die Regeneration von NAD+, ohne die selbst die Glykolyse zum Erliegen käme.",
+      "tags": [
+        "Formel",
+        "Modell",
+        "Uni-Prep",
+        "AFB-III",
+        "Stoffwechsel",
+        "Fotosynthese"
+      ]
+    },
+    {
+      "id": "bio-mendelsche-regeln",
+      "fach": "Bio",
+      "titleDE": "Mendelsche Regeln",
+      "titleZH": "孟德尔定律与棋盘方格计算",
+      "summaryDE": "Uniformitäts-, Spaltungs- und Unabhängigkeitsregel beschreiben die Weitergabe von Allelen über Generationen und erlauben Vorhersagen über Nachkommenschaftsverhältnisse.",
+      "summaryZH": "统一律、分离律与自由组合律描述等位基因在世代间的传递，并可预测后代的性状比例。",
+      "category": "Genetik",
+      "curriculumTier": "Sek_I",
+      "stage": "einfuehrung",
+      "level": 1,
+      "xpReward": 70,
+      "estimatedMinutes": 12,
+      "prerequisites": [],
+      "layerIndex": 0,
+      "keyFormulaOrSentence": "Kreuzungsschema Aa x Aa ergibt 1 AA : 2 Aa : 1 aa, phänotypisch also 3 : 1. Die Testkreuzung mit einem homozygot rezessiven Partner deckt den Genotyp eines dominanten Phänotyps auf.",
+      "commonFallacy": "Dominant mit häufig verwechseln - dominant bedeutet nur, dass das Merkmal im Heterozygoten sichtbar wird, nicht dass das Allel in der Population überwiegt.",
+      "tags": [
+        "Definition",
+        "Verfahren",
+        "Basiswissen",
+        "Genetik"
+      ]
+    },
+    {
+      "id": "bio-erbgut-chromosomen-karyogramm",
+      "fach": "Bio",
+      "titleDE": "Erbgut, Chromosomen & Karyogramm",
+      "titleZH": "遗传物质、染色体与核型图判读",
+      "summaryDE": "Die DNA ist in Chromosomen verpackt; ein Karyogramm ordnet die Chromosomen nach Größe und Bandenmuster und deckt Genommutationen auf.",
+      "summaryZH": "DNA 缠绕成染色体；核型图按大小与带型排列染色体，可识别基因组层面的畸变。",
+      "category": "Genetik",
+      "curriculumTier": "Sek_I",
+      "stage": "einfuehrung",
+      "level": 1,
+      "xpReward": 70,
+      "estimatedMinutes": 10,
+      "prerequisites": [
+        "bio-mendelsche-regeln"
+      ],
+      "layerIndex": 1,
+      "keyFormulaOrSentence": "Der Mensch besitzt 46 Chromosomen, also 22 homologe Paare plus XX oder XY. Trisomie 21 bedeutet ein zusätzliches Chromosom 21 und wird als 47,XX+21 beziehungsweise 47,XY+21 notiert.",
+      "commonFallacy": "Aus dem Karyogramm auf einzelne Gene schließen - das Karyogramm zeigt nur Chromosomenzahl und -struktur, niemals die Sequenz.",
+      "tags": [
+        "Grafik",
+        "Verfahren",
+        "Basiswissen",
+        "Genetik"
+      ]
+    },
+    {
+      "id": "bio-dna-bau-doppelhelix",
+      "fach": "Bio",
+      "titleDE": "Bau der DNA & Doppelhelix",
+      "titleZH": "DNA 双螺旋与碱基互补配对",
+      "summaryDE": "Zwei antiparallele Stränge werden über komplementäre Basenpaare zusammengehalten; ihre Sequenz trägt die genetische Information.",
+      "summaryZH": "两条反向平行链通过互补碱基配对相连，其碱基序列即遗传信息本身。",
+      "category": "Genetik",
+      "curriculumTier": "EF",
+      "stage": "grundlagen",
+      "level": 1,
+      "xpReward": 85,
+      "estimatedMinutes": 12,
+      "prerequisites": [
+        "bio-erbgut-chromosomen-karyogramm"
+      ],
+      "layerIndex": 2,
+      "keyFormulaOrSentence": "Adenin paart mit Thymin über zwei, Guanin mit Cytosin über drei Wasserstoffbrückenbindungen; die Stränge verlaufen antiparallel und bilden eine rechtsgängige Doppelhelix. Chargaff-Regel: A = T und G = C.",
+      "commonFallacy": "Die Basenpaarung für kovalent halten - kovalent ist nur das Zucker-Phosphat-Rückgrat, die Basenpaare werden durch Wasserstoffbrücken zusammengehalten.",
+      "tags": [
+        "Modell",
+        "Definition",
+        "Basiswissen",
+        "Molekulargenetik"
+      ]
+    },
+    {
+      "id": "bio-dna-replikation-semikonservativ",
+      "fach": "Bio",
+      "titleDE": "Semikonservative Replikation",
+      "titleZH": "DNA 半保留复制与复制叉机制",
+      "summaryDE": "Jeder Tochterdoppelstrang enthält einen alten und einen neu synthetisierten Strang; am Replikationsauge laufen die beiden Stränge gegenläufig ab.",
+      "summaryZH": "每个子代双链都保留一条母链；复制叉上两条模板方向相反，因此一条连续合成、一条不连续合成。",
+      "category": "Genetik",
+      "curriculumTier": "EF",
+      "stage": "grundlagen",
+      "level": 2,
+      "xpReward": 90,
+      "estimatedMinutes": 14,
+      "prerequisites": [
+        "bio-dna-bau-doppelhelix"
+      ],
+      "layerIndex": 3,
+      "keyFormulaOrSentence": "Semikonservativ: Die Helikase trennt die Stränge, die Primase setzt RNA-Primer, die DNA-Polymerase verlängert ausschließlich in 5'->3'-Richtung. Der Leitstrang wird kontinuierlich, der Folgestrang diskontinuierlich in Okazaki-Fragmenten synthetisiert.",
+      "commonFallacy": "Annehmen, die Replikation beginne an einem Ende und laufe geradlinig durch - sie startet an vielen Replikationsursprüngen gleichzeitig und bidirektional.",
+      "tags": [
+        "Verfahren",
+        "Klausur-Dauerbrenner",
+        "Molekulargenetik",
+        "Modell"
+      ]
+    },
+    {
+      "id": "bio-genmutationen-erbkrankheiten",
+      "fach": "Bio",
+      "titleDE": "Genmutationen & Erbkrankheiten",
+      "titleZH": "基因突变类型与遗传病机制",
+      "summaryDE": "Punktmutationen, Rastermutationen und Nonsense-Mutationen wirken unterschiedlich stark auf das Genprodukt und damit auf den Phänotyp.",
+      "summaryZH": "点突变、移码突变与无义突变对基因产物的破坏程度差异极大，决定表型后果的轻重。",
+      "category": "Genetik",
+      "curriculumTier": "EF",
+      "stage": "grundlagen",
+      "level": 2,
+      "xpReward": 95,
+      "estimatedMinutes": 12,
+      "prerequisites": [
+        "bio-dna-replikation-semikonservativ"
+      ],
+      "layerIndex": 4,
+      "keyFormulaOrSentence": "Substitution (still, missense, nonsense), Deletion und Insertion. Verschiebt sich das Leseraster, verändert sich ab der Mutationsstelle jedes folgende Codon, sodass ein völlig verändertes Protein entsteht (Rastermutation).",
+      "commonFallacy": "Annehmen, Mutationen entstünden gezielt als Antwort auf einen Bedarf - Mutationen entstehen zufällig und werden erst nachträglich durch Selektion bewertet.",
+      "tags": [
+        "Definition",
+        "Klausur-Dauerbrenner",
+        "Molekulargenetik",
+        "Genetik"
+      ]
+    },
+    {
+      "id": "bio-proteinbiosynthese-transkription-translation",
+      "fach": "Bio",
+      "titleDE": "Proteinbiosynthese (Transkription & Translation)",
+      "titleZH": "转录与翻译：从基因到蛋白质的中央法则",
+      "summaryDE": "Die DNA-Sequenz wird in mRNA umgeschrieben und am Ribosom in eine Aminosäuresequenz übersetzt.",
+      "summaryZH": "DNA 序列先被抄写成 mRNA，再由核糖体按密码子翻译为氨基酸序列。",
+      "category": "Genetik",
+      "curriculumTier": "Q1",
+      "stage": "vertiefung",
+      "level": 2,
+      "xpReward": 130,
+      "estimatedMinutes": 18,
+      "prerequisites": [
+        "bio-dna-replikation-semikonservativ",
+        "bio-erbgut-chromosomen-karyogramm"
+      ],
+      "layerIndex": 4,
+      "keyFormulaOrSentence": "Transkription im Nucleus am Template-Strang ergibt mRNA mit Uracil statt Thymin. Translation am Ribosom: Codon der mRNA paart mit dem Anticodon der tRNA und legt die Aminosäure fest; drei Codons wirken als Stoppsignale.",
+      "commonFallacy": "Transkription und Translation vertauschen - transkribiert wird DNA in RNA, translatiert wird mRNA in ein Protein.",
+      "tags": [
+        "Verfahren",
+        "Klausur-Dauerbrenner",
+        "Molekulargenetik",
+        "AFB-III"
+      ]
+    },
+    {
+      "id": "bio-familienstammbaum-erbgang-analyse",
+      "fach": "Bio",
+      "titleDE": "Familienstammbaum-Analyse & Erbgang",
+      "titleZH": "家系图分析与遗传方式判定",
+      "summaryDE": "Aus dem Verteilungsmuster eines Merkmals über Generationen und Geschlechter wird auf dominant oder rezessiv sowie autosomal oder gonosomal geschlossen.",
+      "summaryZH": "依据性状在世代与性别间的分布格局，推断显隐性以及常染色体或性染色体遗传。",
+      "category": "Genetik",
+      "curriculumTier": "Q1",
+      "stage": "vertiefung",
+      "level": 3,
+      "xpReward": 145,
+      "estimatedMinutes": 18,
+      "prerequisites": [
+        "bio-mendelsche-regeln",
+        "bio-genmutationen-erbkrankheiten"
+      ],
+      "layerIndex": 5,
+      "keyFormulaOrSentence": "Entscheidungsregel: erkranktes Kind aus gesunden Eltern beweist rezessiven Erbgang; tritt das Merkmal bei jedem betroffenen Elternteil in jeder Generation auf, ist der Erbgang dominant; sind nur Söhne betroffen und ist die Mutter klinisch gesund, liegt ein X-chromosomal rezessiver Erbgang mit Konduktorin nahe.",
+      "commonFallacy": "Aus \"Mutter und Vater gesund, Sohn krank\" direkt einen autosomalen Erbgang ableiten - dasselbe Muster entsteht auch bei X-chromosomal rezessiver Vererbung.",
+      "tags": [
+        "Verfahren",
+        "Grafik",
+        "AFB-III",
+        "Klausur-Dauerbrenner",
+        "Genetik"
+      ]
+    },
+    {
+      "id": "bio-genregulation-transkriptionsfaktoren",
+      "fach": "Bio",
+      "titleDE": "Genregulation bei Eukaryoten",
+      "titleZH": "真核基因表达调控与转录因子",
+      "summaryDE": "Transkriptionsfaktoren, Enhancer und Silencer steuern, welche Gene in welcher Zelle zu welchem Zeitpunkt abgelesen werden.",
+      "summaryZH": "转录因子、增强子与沉默子共同决定哪些基因在何时何地被读取。",
+      "category": "Genetik",
+      "curriculumTier": "Q1",
+      "stage": "vertiefung",
+      "level": 3,
+      "xpReward": 145,
+      "estimatedMinutes": 18,
+      "prerequisites": [
+        "bio-proteinbiosynthese-transkription-translation",
+        "bio-dna-bau-doppelhelix"
+      ],
+      "layerIndex": 5,
+      "keyFormulaOrSentence": "Differentielle Genaktivität: Alle Körperzellen besitzen dasselbe Genom, unterscheiden sich aber in ihren Genprodukten. Transkriptionsfaktoren binden an Promotor- und Enhancerbereiche und regulieren die Initiation der Transkription.",
+      "commonFallacy": "Genregulation damit erklären, dass \"Gene gelöscht werden\" - bei der Zelldifferenzierung wird keine DNA entfernt, sie wird nur unterschiedlich abgelesen.",
+      "tags": [
+        "Modell",
+        "Definition",
+        "Klausur-Dauerbrenner",
+        "Genetik",
+        "AFB-III"
+      ]
+    },
+    {
+      "id": "bio-gentechnik-pcr-gelelektrophorese",
+      "fach": "Bio",
+      "titleDE": "Gentechnik: PCR, Gelelektrophorese & Klonierung",
+      "titleZH": "基因工程：PCR 扩增、凝胶电泳与重组克隆",
+      "summaryDE": "DNA wird in vitro vervielfältigt, nach Fragmentgröße getrennt und über Restriktionsschnittstellen in Vektoren eingebaut.",
+      "summaryZH": "DNA 在体外被扩增、按片段大小分离，并通过限制性酶切位点插入载体实现克隆。",
+      "category": "Genetik",
+      "curriculumTier": "Q2",
+      "stage": "vertiefung",
+      "level": 2,
+      "xpReward": 150,
+      "estimatedMinutes": 18,
+      "prerequisites": [
+        "bio-proteinbiosynthese-transkription-translation",
+        "bio-genmutationen-erbkrankheiten"
+      ],
+      "layerIndex": 5,
+      "keyFormulaOrSentence": "PCR-Zyklus: Denaturierung bei etwa 95 °C, Primer-Anlagerung bei etwa 55 bis 60 °C, Elongation bei etwa 72 °C durch eine hitzestabile Polymerase. Im Elektrophoresegel wandern kurze Fragmente weiter als lange, weil sie das Gelnetzwerk leichter durchdringen.",
+      "commonFallacy": "Im Gel die größere Bande für die weiter gewanderte halten - kleine Fragmente wandern schneller und liegen näher an der Anode.",
+      "tags": [
+        "Verfahren",
+        "Experiment",
+        "Klausur-Dauerbrenner",
+        "Gentechnik"
+      ]
+    },
+    {
+      "id": "bio-gentherapie-beratung-bewertung",
+      "fach": "Bio",
+      "titleDE": "Gentherapie & genetische Beratung",
+      "titleZH": "基因治疗与遗传咨询：技术路径与伦理权衡",
+      "summaryDE": "Somatische Gentherapie verändert nur Zellen des Patienten, Keimbahneingriffe betreffen alle Nachkommen; aus dieser Reichweite folgen unterschiedliche ethische Bewertungen.",
+      "summaryZH": "体细胞基因治疗只改变患者本人细胞，生殖系编辑影响全部后代，这一影响范围的差异决定了伦理评价的分野。",
+      "category": "Genetik",
+      "curriculumTier": "Q2",
+      "stage": "synthese",
+      "level": 3,
+      "xpReward": 165,
+      "estimatedMinutes": 20,
+      "prerequisites": [
+        "bio-gentechnik-pcr-gelelektrophorese",
+        "bio-familienstammbaum-erbgang-analyse",
+        "bio-genregulation-transkriptionsfaktoren"
+      ],
+      "layerIndex": 6,
+      "keyFormulaOrSentence": "Bewertungsschema in vier Schritten: medizinischer Nutzen, Risiko (Off-Target-Effekte, Immunreaktion, Vektorintegration), Reichweite (somatisch gegen Keimbahn), Autonomie und gerechter Zugang.",
+      "commonFallacy": "Somatische und Keimbahntherapie gleich bewerten - nur die Keimbahnveränderung wird vererbt und berührt damit auch die Selbstbestimmung künftiger Personen.",
+      "tags": [
+        "Bewertung",
+        "AFB-III",
+        "Uni-Prep",
+        "Gentechnik"
+      ]
+    },
+    {
+      "id": "bio-epigenetik-methylierung-histonmodifikation",
+      "fach": "Bio",
+      "titleDE": "Epigenetik: DNA-Methylierung & Histonmodifikation",
+      "titleZH": "表观遗传：DNA 甲基化与组蛋白修饰",
+      "summaryDE": "Methylierung und Histonmodifikation verändern die Ablesbarkeit von Genen, ohne die Basensequenz zu verändern.",
+      "summaryZH": "甲基化与组蛋白修饰改变基因的可读性，却不改动碱基序列本身。",
+      "category": "Genetik",
+      "curriculumTier": "Uni_Prep",
+      "stage": "synthese",
+      "level": 3,
+      "xpReward": 175,
+      "estimatedMinutes": 20,
+      "prerequisites": [
+        "bio-genregulation-transkriptionsfaktoren",
+        "bio-proteinbiosynthese-transkription-translation",
+        "bio-dna-bau-doppelhelix"
+      ],
+      "layerIndex": 6,
+      "keyFormulaOrSentence": "CpG-Methylierung im Promotor verdichtet das Chromatin und hemmt die Transkription; Histonacetylierung lockert das Chromatin und fördert sie. Das Epigenom ist somatisch vererbbar, aber im Gegensatz zur Mutation prinzipiell reversibel.",
+      "commonFallacy": "Epigenetische Veränderungen für Mutationen halten - die Basensequenz bleibt unverändert, deshalb sind sie reversibel und durch Umweltfaktoren beeinflussbar.",
+      "tags": [
+        "Modell",
+        "Uni-Prep",
+        "AFB-III",
+        "Epigenetik",
+        "Genetik"
+      ]
+    },
+    {
+      "id": "bio-crispr-bioinformatik-genomeditierung",
+      "fach": "Bio",
+      "titleDE": "CRISPR/Cas & Bioinformatik der Genomeditierung",
+      "titleZH": "CRISPR/Cas 基因编辑与生物信息学分析",
+      "summaryDE": "Eine guide-RNA führt Cas9 sequenzspezifisch zur Zielstelle; die Reparatur über NHEJ oder HDR erzeugt einen Knockout oder einen gezielten Einbau.",
+      "summaryZH": "向导 RNA 把 Cas9 精确带到目标位点，NHEJ 或 HDR 修复途径产生敲除或定点插入。",
+      "category": "Genetik",
+      "curriculumTier": "Uni_Prep",
+      "stage": "synthese",
+      "level": 3,
+      "xpReward": 195,
+      "estimatedMinutes": 26,
+      "prerequisites": [
+        "bio-epigenetik-methylierung-histonmodifikation",
+        "bio-gentechnik-pcr-gelelektrophorese",
+        "bio-genregulation-transkriptionsfaktoren",
+        "bio-proteinbiosynthese-transkription-translation"
+      ],
+      "layerIndex": 7,
+      "keyFormulaOrSentence": "CRISPR/Cas9: guide-RNA mit etwa 20 Nukleotiden plus PAM-Erkennung führt zum Doppelstrangbruch; NHEJ repariert fehleranfällig und erzeugt einen Knockout, HDR baut mit Donor-DNA präzise ein. Off-Target-Effekte werden bioinformatisch über Sequenz-Alignments gegen das Referenzgenom abgeschätzt.",
+      "commonFallacy": "Annehmen, CRISPR/Cas sei ein gentechnisch konstruiertes Enzym - das System stammt aus der prokaryotischen Immunabwehr und wird lediglich adaptiert.",
+      "tags": [
+        "Verfahren",
+        "Uni-Prep",
+        "AFB-III",
+        "Gentechnik",
+        "Bioinformatik"
+      ]
+    },
+    {
+      "id": "bio-nervensystem-grundlagen",
+      "fach": "Bio",
+      "titleDE": "Nervensystem & Reiz-Reaktions-Kette",
+      "titleZH": "神经系统与刺激-反应链：从感受器到效应器",
+      "summaryDE": "Reize werden von Rezeptoren aufgenommen, über Nervenbahnen geleitet und lösen über Effektoren eine Reaktion aus.",
+      "summaryZH": "感受器接收刺激，经神经通路传导，最终由效应器产生反应。",
+      "category": "Neurobiologie",
+      "curriculumTier": "Sek_I",
+      "stage": "einfuehrung",
+      "level": 1,
+      "xpReward": 65,
+      "estimatedMinutes": 8,
+      "prerequisites": [],
+      "layerIndex": 0,
+      "keyFormulaOrSentence": "Reiz -> Rezeptor -> afferente Bahn -> Zentralnervensystem -> efferente Bahn -> Effektor -> Reaktion; zentrales und peripheres Nervensystem sind funktionell gekoppelt.",
+      "commonFallacy": "Nerven mit Blutgefäßen verwechseln - Nerven leiten elektrische Signale und transportieren keine Nährstoffe.",
+      "tags": [
+        "Definition",
+        "Basiswissen",
+        "Neurobiologie"
+      ]
+    },
+    {
+      "id": "bio-sinnesorgane-auge-ohr",
+      "fach": "Bio",
+      "titleDE": "Sinnesorgane: Auge & Ohr",
+      "titleZH": "感觉器官：眼与耳的结构与信号转换",
+      "summaryDE": "Auge und Ohr wandeln Licht beziehungsweise Schall in neuronale Signale um; Bau und Funktion sind auf die jeweilige Reizart abgestimmt.",
+      "summaryZH": "眼把光、耳把声波转换为神经信号，其结构分别针对特定刺激类型优化。",
+      "category": "Neurobiologie",
+      "curriculumTier": "Sek_I",
+      "stage": "einfuehrung",
+      "level": 1,
+      "xpReward": 70,
+      "estimatedMinutes": 10,
+      "prerequisites": [
+        "bio-nervensystem-grundlagen"
+      ],
+      "layerIndex": 1,
+      "keyFormulaOrSentence": "Auge: Die Linse bündelt Licht auf der Netzhaut, Stäbchen und Zapfen wandeln Photonen in Rezeptorpotenziale um. Ohr: Schall -> Trommelfell -> Gehörknöchelchen -> Cochlea, wobei die Frequenzanalyse entlang der Basilarmembran erfolgt.",
+      "commonFallacy": "Das Netzhautbild für aufrecht halten - die Linse erzeugt ein umgekehrtes und verkleinertes Bild, das erst im Gehirn aufgerichtet wird.",
+      "tags": [
+        "Definition",
+        "Grafik",
+        "Basiswissen",
+        "Sinnesphysiologie"
+      ]
+    },
+    {
+      "id": "bio-neuron-ruhepotential",
+      "fach": "Bio",
+      "titleDE": "Neuron & Ruhepotenzial",
+      "titleZH": "神经元结构与静息电位：离子分布与膜电位",
+      "summaryDE": "Das Ruhepotenzial entsteht aus ungleicher Ionenverteilung und unterschiedlicher Membranpermeabilität und wird von der Natrium-Kalium-Pumpe aufrechterhalten.",
+      "summaryZH": "静息电位源于离子分布不均与膜通透性差异，由钠钾泵持续维持。",
+      "category": "Neurobiologie",
+      "curriculumTier": "EF",
+      "stage": "grundlagen",
+      "level": 2,
+      "xpReward": 95,
+      "estimatedMinutes": 15,
+      "prerequisites": [
+        "bio-nervensystem-grundlagen"
+      ],
+      "layerIndex": 1,
+      "keyFormulaOrSentence": "Ruhepotenzial etwa -70 mV, innen negativ. Nernst-Gleichung für ein einzelnes Ion: E = (R * T) / (z * F) * ln([Ion]außen / [Ion]innen). Kalium dominiert die Ruhepermeabilität, die Natrium-Kalium-Pumpe hält die Gradienten aufrecht.",
+      "commonFallacy": "Das Ruhepotenzial als reines Kalium-Gleichgewichtspotenzial von etwa -90 mV angeben - wegen der geringen Natrium-Leitfähigkeit liegt es real bei etwa -70 mV.",
+      "tags": [
+        "Formel",
+        "Modell",
+        "Klausur-Dauerbrenner",
+        "Nervenzelle"
+      ]
+    },
+    {
+      "id": "bio-reflexe-reflexbogen",
+      "fach": "Bio",
+      "titleDE": "Reflexe & Reflexbogen",
+      "titleZH": "反射弧与反射协调",
+      "summaryDE": "Ein Reflexbogen verarbeitet Reize ohne Beteiligung des Bewusstseins; Eigenreflexe und Fremdreflexe unterscheiden sich in Verschaltung und Latenz.",
+      "summaryZH": "反射弧无需意识参与；固有反射与外来反射在环路结构与潜伏期上不同。",
+      "category": "Neurobiologie",
+      "curriculumTier": "EF",
+      "stage": "grundlagen",
+      "level": 1,
+      "xpReward": 85,
+      "estimatedMinutes": 10,
+      "prerequisites": [
+        "bio-nervensystem-grundlagen"
+      ],
+      "layerIndex": 1,
+      "keyFormulaOrSentence": "Reflexbogen: Rezeptor -> afferente Bahn -> Verschaltung im Rückenmark -> efferente Bahn -> Effektor. Der monosynaptische Eigenreflex besitzt nur eine einzige Synapse und damit die kürzeste Latenzzeit.",
+      "commonFallacy": "Reflexe für bewusste Reaktionen halten - die Verschaltung im Rückenmark läuft ohne bewusste Kontrolle ab und ist gerade deshalb besonders schnell.",
+      "tags": [
+        "Definition",
+        "Verfahren",
+        "Basiswissen",
+        "Neurobiologie"
+      ]
+    },
+    {
+      "id": "bio-aktionspotential-saltatorische-leitung",
+      "fach": "Bio",
+      "titleDE": "Aktionspotential & saltatorische Erregungsleitung",
+      "titleZH": "动作电位与跳跃式传导",
+      "summaryDE": "Ein Reiz oberhalb der Schwelle öffnet spannungsgesteuerte Natriumkanäle; entlang myelinisierten Axonen pflanzt sich die Erregung saltatorisch fort.",
+      "summaryZH": "阈上刺激打开电压门控钠通道；在髓鞘化轴突上冲动以跳跃方式传导。",
+      "category": "Neurobiologie",
+      "curriculumTier": "Q1",
+      "stage": "vertiefung",
+      "level": 2,
+      "xpReward": 130,
+      "estimatedMinutes": 18,
+      "prerequisites": [
+        "bio-neuron-ruhepotential"
+      ],
+      "layerIndex": 2,
+      "keyFormulaOrSentence": "Ablauf: Schwellenreiz -> Na+-Einstrom -> Depolarisation bis etwa +30 mV -> Na+-Inaktivierung und K+-Ausstrom -> Repolarisation -> Hyperpolarisation -> Wiederherstellung durch die Pumpe. Saltatorisch: Die Erregung springt von Schnürring zu Schnürring, wodurch die Leitungsgeschwindigkeit deutlich steigt.",
+      "commonFallacy": "Depolarisation und Repolarisation vertauschen - Depolarisation ist der Natriumeinstrom, Repolarisation der Kaliumausstrom.",
+      "tags": [
+        "Verfahren",
+        "Grafik",
+        "Klausur-Dauerbrenner",
+        "Schwerpunkt-2026",
+        "Nervenzelle",
+        "AFB-III"
+      ]
+    },
+    {
+      "id": "bio-chemische-synapse-neurotransmitter",
+      "fach": "Bio",
+      "titleDE": "Chemische Synapse & Neurotransmitter",
+      "titleZH": "化学突触与神经递质释放",
+      "summaryDE": "Calciumeinstrom in die präsynaptische Endigung setzt die Vesikelfusion in Gang; der Transmitter erregt oder hemmt die postsynaptische Zelle.",
+      "summaryZH": "钙离子内流触发突触小泡融合；递质使突触后膜去极化或超极化。",
+      "category": "Neurobiologie",
+      "curriculumTier": "Q1",
+      "stage": "vertiefung",
+      "level": 2,
+      "xpReward": 135,
+      "estimatedMinutes": 18,
+      "prerequisites": [
+        "bio-aktionspotential-saltatorische-leitung"
+      ],
+      "layerIndex": 3,
+      "keyFormulaOrSentence": "Signalweg: Aktionspotential -> Ca2+-Einstrom -> Exocytose der Vesikel -> Diffusion des Transmitters durch den synaptischen Spalt -> Bindung an Rezeptoren -> postsynaptisches Potenzial als EPSP oder IPSP; Beendigung durch enzymatischen Abbau oder Wiederaufnahme.",
+      "commonFallacy": "Die Erregung im synaptischen Spalt elektrisch weiterlaufen lassen - der Spalt wird chemisch über den Transmitter überbrückt, woraus die synaptische Verzögerung folgt.",
+      "tags": [
+        "Modell",
+        "Klausur-Dauerbrenner",
+        "Synapse",
+        "Nervenzelle"
+      ]
+    },
+    {
+      "id": "bio-drogen-gifte-synapsenwirkung",
+      "fach": "Bio",
+      "titleDE": "Stoffeinwirkung an Synapsen",
+      "titleZH": "药物与毒物对突触的作用位点",
+      "summaryDE": "Fremdstoffe greifen an Rezeptoren, an Transmittern oder an Abbauenzymen an und verstärken oder blockieren dadurch die Erregungsübertragung.",
+      "summaryZH": "外源物质作用于受体、递质或降解酶，从而增强或阻断突触传递。",
+      "category": "Neurobiologie",
+      "curriculumTier": "Q1",
+      "stage": "grundlagen",
+      "level": 2,
+      "xpReward": 125,
+      "estimatedMinutes": 14,
+      "prerequisites": [
+        "bio-chemische-synapse-neurotransmitter"
+      ],
+      "layerIndex": 4,
+      "keyFormulaOrSentence": "Angriffspunkte: Agonist (aktiviert den Rezeptor), Antagonist (blockiert ihn), Hemmung der Cholinesterase (Transmitter bleibt länger im Spalt), Hemmung der Wiederaufnahme. Die Folge ist eine verstärkte oder eine ausbleibende Erregungsübertragung.",
+      "commonFallacy": "Bei jeder Substanz nur Verstärkung oder nur Blockade annehmen - dieselbe Substanz kann an verschiedenen Synapsentypen entgegengesetzt wirken.",
+      "tags": [
+        "Definition",
+        "Alltag",
+        "Synapse",
+        "Bewertung"
+      ]
+    },
+    {
+      "id": "bio-neuromuskulaere-synapse-motorik",
+      "fach": "Bio",
+      "titleDE": "Neuromuskuläre Synapse & Motorik",
+      "titleZH": "神经-肌肉接头与运动终板",
+      "summaryDE": "Acetylcholin überträgt die Erregung auf die Muskelzelle; das Endplattenpotenzial löst über Calcium die Kontraktion aus.",
+      "summaryZH": "乙酰胆碱把冲动传给肌细胞；终板电位经钙信号触发肌丝滑行收缩。",
+      "category": "Neurobiologie",
+      "curriculumTier": "Q1",
+      "stage": "vertiefung",
+      "level": 2,
+      "xpReward": 130,
+      "estimatedMinutes": 16,
+      "prerequisites": [
+        "bio-chemische-synapse-neurotransmitter",
+        "bio-reflexe-reflexbogen"
+      ],
+      "layerIndex": 4,
+      "keyFormulaOrSentence": "Erregungs-Kontraktions-Kopplung: Acetylcholin -> Endplattenpotenzial -> Aktionspotential der Muskelzelle -> Ca2+-Freisetzung aus dem sarkoplasmatischen Retikulum -> Querbrückenzyklus von Aktin und Myosin unter ATP-Verbrauch.",
+      "commonFallacy": "Die Muskelkontraktion ohne ATP erklären - sowohl die Calciumpumpe als auch der Querbrückenzyklus benötigen ATP; ohne ATP bleibt der Muskel in der Starre.",
+      "tags": [
+        "Verfahren",
+        "Klausur-Dauerbrenner",
+        "Synapse",
+        "Alltag"
+      ]
+    },
+    {
+      "id": "bio-sinneszellen-rezeptorpotential",
+      "fach": "Bio",
+      "titleDE": "Primäre & sekundäre Sinneszelle",
+      "titleZH": "初级与次级感觉细胞及感受器电位",
+      "summaryDE": "Rezeptorzellen wandeln Reize in graduierte Rezeptorpotenziale um; primäre Sinneszellen leiten direkt weiter, sekundäre über eine Synapse.",
+      "summaryZH": "感受器把刺激转成等级性感受器电位；初级感觉细胞直接传导，次级细胞需经突触中继。",
+      "category": "Neurobiologie",
+      "curriculumTier": "Q2",
+      "stage": "vertiefung",
+      "level": 3,
+      "xpReward": 155,
+      "estimatedMinutes": 20,
+      "prerequisites": [
+        "bio-aktionspotential-saltatorische-leitung",
+        "bio-sinnesorgane-auge-ohr"
+      ],
+      "layerIndex": 3,
+      "keyFormulaOrSentence": "Das Rezeptorpotenzial ist graduiert und dekrementell, also nicht nach dem Alles-oder-nichts-Prinzip fortleitungsfähig; überschreitet es an der ersten Ranvierschen Schnürring die Schwelle, entsteht ein Aktionspotential. Primäre Sinneszelle: Rezeptorpotenzial führt direkt zum Aktionspotential. Sekundäre Sinneszelle: Rezeptorpotenzial führt zur Transmitterausschüttung und erst postsynaptisch zum Aktionspotential.",
+      "commonFallacy": "Das Rezeptorpotenzial für ein Aktionspotential halten - es ist graduiert und klingt mit der Entfernung ab, während das Aktionspotential alles-oder-nichts folgt.",
+      "tags": [
+        "Modell",
+        "AFB-III",
+        "Sinnesphysiologie",
+        "Klausur-Dauerbrenner"
+      ]
+    },
+    {
+      "id": "bio-hormone-stressreaktion",
+      "fach": "Bio",
+      "titleDE": "Hormone & Stressreaktion",
+      "titleZH": "激素调控与应激反应轴",
+      "summaryDE": "Die Stressachse verschaltet Hypothalamus, Hypophyse und Nebenniere; hormonelle und neuronale Steuerung greifen dabei ineinander.",
+      "summaryZH": "应激轴把下丘脑、垂体与肾上腺串联，激素调节与神经调节在此交织。",
+      "category": "Neurobiologie",
+      "curriculumTier": "Q2",
+      "stage": "vertiefung",
+      "level": 2,
+      "xpReward": 150,
+      "estimatedMinutes": 18,
+      "prerequisites": [
+        "bio-chemische-synapse-neurotransmitter",
+        "bio-neuromuskulaere-synapse-motorik"
+      ],
+      "layerIndex": 5,
+      "keyFormulaOrSentence": "Zwei Achsen im Vergleich: die schnelle sympathische Aktivierung mit Adrenalin aus dem Nebennierenmark wirkt in Sekunden, die hormonelle Achse CRH -> ACTH -> Cortisol wirkt in Minuten bis Stunden. Cortisol wirkt als Steroidhormon über intrazelluläre Rezeptoren und verändert die Genregulation.",
+      "commonFallacy": "Adrenalin und Cortisol denselben Wirkmechanismus zuschreiben - Adrenalin wirkt über Membranrezeptoren und Second Messenger, Cortisol über Kernrezeptoren und Genregulation.",
+      "tags": [
+        "Definition",
+        "Hormon",
+        "Klausur-Dauerbrenner",
+        "AFB-III"
+      ]
+    },
+    {
+      "id": "bio-neuronale-plastizitaet-lernen",
+      "fach": "Bio",
+      "titleDE": "Neuronale Plastizität, Summation & Lernen",
+      "titleZH": "神经可塑性、突触整合与学习记忆",
+      "summaryDE": "Erregende und hemmende Synapsen werden räumlich und zeitlich summiert; häufige Nutzung verstärkt Synapsen dauerhaft und verändert Netzwerke.",
+      "summaryZH": "兴奋性与抑制性突触信号在空间与时间上叠加；高频使用会让突触产生持久强化。",
+      "category": "Neurobiologie",
+      "curriculumTier": "Uni_Prep",
+      "stage": "synthese",
+      "level": 3,
+      "xpReward": 175,
+      "estimatedMinutes": 24,
+      "prerequisites": [
+        "bio-chemische-synapse-neurotransmitter",
+        "bio-sinneszellen-rezeptorpotential",
+        "bio-hormone-stressreaktion"
+      ],
+      "layerIndex": 6,
+      "keyFormulaOrSentence": "Räumliche Summation: gleichzeitige EPSPs verschiedener Synapsen addieren sich am Axonhügel. Zeitliche Summation: schnell aufeinanderfolgende EPSPs derselben Synapse addieren sich. Die Langzeitpotenzierung beruht auf verstärktem Ca2+-Einstrom über NMDA-Rezeptoren und dauerhaft erhöhter synaptischer Effizienz.",
+      "commonFallacy": "Lernen als Ablegen einer Information an einer bestimmten Stelle erklären - Lernen ist die Änderung synaptischer Gewichtungen in ganzen Netzwerken.",
+      "tags": [
+        "Modell",
+        "Uni-Prep",
+        "AFB-III",
+        "Synapse",
+        "Systembiologie"
+      ]
+    },
+    {
+      "id": "bio-neuroinformatik-hodgkin-huxley-modell",
+      "fach": "Bio",
+      "titleDE": "Hodgkin-Huxley-Modell & Neuroinformatik",
+      "titleZH": "霍奇金-赫胥黎模型与计算神经科学",
+      "summaryDE": "Das Modell beschreibt das Aktionspotential quantitativ über spannungsabhängige Ionenleitfähigkeiten und sagt das Schwellenverhalten korrekt voraus.",
+      "summaryZH": "该模型用电压门控离子电导定量描述动作电位，并能正确预测阈上行为。",
+      "category": "Neurobiologie",
+      "curriculumTier": "Uni_Prep",
+      "stage": "synthese",
+      "level": 3,
+      "xpReward": 185,
+      "estimatedMinutes": 26,
+      "prerequisites": [
+        "bio-aktionspotential-saltatorische-leitung",
+        "bio-neuron-ruhepotential",
+        "bio-neuronale-plastizitaet-lernen"
+      ],
+      "layerIndex": 7,
+      "keyFormulaOrSentence": "Membranstromgleichung: C_m * dV/dt = -I_Na - I_K - I_L + I_ext, mit I_ion = g_ion * (V - E_ion) und den spannungs- sowie zeitabhängigen Leitfähigkeiten g_Na(t,V) und g_K(t,V).",
+      "commonFallacy": "Das Modell für eine Messung halten - es ist eine mathematische Rekonstruktion, deren Parameter an Messdaten angepasst wurden und die anschließend Vorhersagen erlaubt.",
+      "tags": [
+        "Formel",
+        "Modell",
+        "Uni-Prep",
+        "Systembiologie",
+        "Bioinformatik"
+      ]
+    },
+    {
+      "id": "bio-oekosystem-wald",
+      "fach": "Bio",
+      "titleDE": "Ökosystem Wald: Stockwerke & Nahrungsbeziehungen",
+      "titleZH": "森林生态系统：成层结构与食物网",
+      "summaryDE": "Biotop und Biozönose bilden ein Wirkungsgefüge; Produzenten, Konsumenten und Destruenten sind über Nahrungsbeziehungen miteinander verknüpft.",
+      "summaryZH": "生境与生物群落构成作用整体；生产者、消费者与分解者通过食物关系相连。",
+      "category": "Oekologie",
+      "curriculumTier": "Sek_I",
+      "stage": "einfuehrung",
+      "level": 1,
+      "xpReward": 65,
+      "estimatedMinutes": 10,
+      "prerequisites": [],
+      "layerIndex": 0,
+      "keyFormulaOrSentence": "Stofffluss im Wald: Produzenten (Baum- und Krautschicht) -> Konsumenten erster und zweiter Ordnung -> Destruenten. Die Stockwerke von der Kronen- bis zur Wurzelschicht sind unterschiedlich beleuchtet und beherbergen jeweils eigene Artengemeinschaften.",
+      "commonFallacy": "Destruenten für entbehrlich halten - ohne sie würden Nährstoffe dauerhaft in der Streu festliegen und der Stoffkreislauf käme zum Stillstand.",
+      "tags": [
+        "Modell",
+        "Basiswissen",
+        "Oekologie"
+      ]
+    },
+    {
+      "id": "bio-anpassung-extremstandorte",
+      "fach": "Bio",
+      "titleDE": "Angepasstheit an Jahreszeiten & Extremstandorte",
+      "titleZH": "生物对季节与极端生境的适应形态与行为",
+      "summaryDE": "Überwinterungsstrategien und Anpassungen an Extremstandorte sind Ergebnisse von Selektion und zeigen sich in Bau, Physiologie und Verhalten.",
+      "summaryZH": "越冬策略与极端生境适应是自然选择的结果，体现在形态、生理与行为三个层面。",
+      "category": "Oekologie",
+      "curriculumTier": "EF",
+      "stage": "grundlagen",
+      "level": 1,
+      "xpReward": 85,
+      "estimatedMinutes": 12,
+      "prerequisites": [
+        "bio-oekosystem-wald"
+      ],
+      "layerIndex": 1,
+      "keyFormulaOrSentence": "Anpassungsdreischritt: Standortfaktor benennen, Struktur des Organismus beschreiben, daraus den Selektionsvorteil ableiten. Beispiel: Nadeln mit dicker Cuticula und eingesenkten Spaltöffnungen senken die Transpiration im Winter.",
+      "commonFallacy": "Anpassung als das beschreiben, was ein Individuum in seinem Leben tut - Anpassung ist eine Eigenschaft von Populationen über Generationen, nicht eine Leistung des Einzelwesens.",
+      "tags": [
+        "Definition",
+        "Basiswissen",
+        "Evolution",
+        "Oekologie"
+      ]
+    },
+    {
+      "id": "bio-biotische-abiotische-faktoren",
+      "fach": "Bio",
+      "titleDE": "Biotische & abiotische Faktoren",
+      "titleZH": "生物因子与非生物因子及其交互作用",
+      "summaryDE": "Abiotische Faktoren wie Licht, Temperatur und Wasser bestimmen die Überlebensgrenzen; biotische Faktoren ergeben sich aus den Beziehungen zwischen Organismen.",
+      "summaryZH": "光、温、水等非生物因子决定生存边界；生物因子则来自生物之间的相互关系。",
+      "category": "Oekologie",
+      "curriculumTier": "EF",
+      "stage": "grundlagen",
+      "level": 1,
+      "xpReward": 85,
+      "estimatedMinutes": 12,
+      "prerequisites": [
+        "bio-oekosystem-wald"
+      ],
+      "layerIndex": 1,
+      "keyFormulaOrSentence": "Abiotisch: Temperatur, Licht, Wasser, pH-Wert, Bodenbeschaffenheit, Salzgehalt. Biotisch: Konkurrenz, Prädation, Parasitismus, Symbiose, Fortpflanzungspartner. Nach dem Minimumgesetz begrenzt der im Minimum befindliche Faktor Wachstum und Verbreitung.",
+      "commonFallacy": "Abiotische Faktoren für bloßen Hintergrund halten - sie setzen die absoluten Verbreitungsgrenzen, biotische Faktoren verschieben die Besiedlung nur innerhalb dieser Grenzen.",
+      "tags": [
+        "Definition",
+        "Grafik",
+        "Basiswissen",
+        "Oekologie"
+      ]
+    },
+    {
+      "id": "bio-toleranzkurven-oekologische-potenz",
+      "fach": "Bio",
+      "titleDE": "Toleranzkurven & ökologische Potenz",
+      "titleZH": "耐受曲线与生态幅：最适区、耐受区与不适区",
+      "summaryDE": "Die Toleranzkurve zeigt den Aktivitätsverlauf über einem Umweltfaktor; erst der Vergleich mit Konkurrenten ergibt die realisierte ökologische Potenz.",
+      "summaryZH": "耐受曲线刻画活动强度随环境因子的变化；与竞争关系比较后才得到实际生态幅。",
+      "category": "Oekologie",
+      "curriculumTier": "EF",
+      "stage": "grundlagen",
+      "level": 2,
+      "xpReward": 95,
+      "estimatedMinutes": 15,
+      "prerequisites": [
+        "bio-biotische-abiotische-faktoren"
+      ],
+      "layerIndex": 2,
+      "keyFormulaOrSentence": "Dreigliederung der Toleranzkurve: Minimum, Optimum und Maximum, unterteilt in Präferenzbereich, Toleranzbereich und Intoleranzbereich. Die physiologische Potenz gilt ohne Konkurrenz, die realisierte Potenz unter Konkurrenzdruck und ist stets schmaler.",
+      "commonFallacy": "Physiologische und realisierte ökologische Potenz gleichsetzen - Konkurrenten und Feinde verengen den tatsächlich besiedelten Bereich erheblich.",
+      "tags": [
+        "Grafik",
+        "Modell",
+        "Klausur-Dauerbrenner",
+        "Oekologie"
+      ]
+    },
+    {
+      "id": "bio-oekologische-nische-konkurrenz",
+      "fach": "Bio",
+      "titleDE": "Ökologische Nische & Konkurrenzausschluss",
+      "titleZH": "生态位与竞争排斥原理",
+      "summaryDE": "Die ökologische Nische ist die Gesamtheit aller Umweltbeziehungen einer Art; vollständige Überlappung zweier Nischen führt zum Konkurrenzausschluss.",
+      "summaryZH": "生态位是一个物种全部环境关系的总和；两个生态位完全重叠则导致竞争排斥。",
+      "category": "Oekologie",
+      "curriculumTier": "EF",
+      "stage": "grundlagen",
+      "level": 2,
+      "xpReward": 95,
+      "estimatedMinutes": 14,
+      "prerequisites": [
+        "bio-biotische-abiotische-faktoren"
+      ],
+      "layerIndex": 2,
+      "keyFormulaOrSentence": "Die Nische umfasst Aufenthaltsort, Nahrung, Aktivitätszeit, Fortpflanzung und Feinde. Konkurrenzausschlussprinzip: Zwei Arten mit identischer Nische können auf Dauer nicht koexistieren, deshalb kommt es zur Nischendifferenzierung.",
+      "commonFallacy": "Den Lebensraum mit der Nische gleichsetzen - der Lebensraum ist nur eine einzige Dimension der ökologischen Nische.",
+      "tags": [
+        "Definition",
+        "Modell",
+        "Klausur-Dauerbrenner",
+        "Oekologie"
+      ]
+    },
+    {
+      "id": "bio-symbiose-parasitismus-raeubeute",
+      "fach": "Bio",
+      "titleDE": "Intra- & interspezifische Beziehungen",
+      "titleZH": "种内与种间关系：共生、寄生与捕食、竞争",
+      "summaryDE": "Zwischenartliche Beziehungen lassen sich über den Nutzen für beide Partner systematisieren; daraus ergeben sich Koevolutionsdynamiken.",
+      "summaryZH": "种间关系可按双方得失系统分类，由此产生协同进化动态。",
+      "category": "Oekologie",
+      "curriculumTier": "EF",
+      "stage": "vertiefung",
+      "level": 2,
+      "xpReward": 100,
+      "estimatedMinutes": 14,
+      "prerequisites": [
+        "bio-oekologische-nische-konkurrenz",
+        "bio-toleranzkurven-oekologische-potenz"
+      ],
+      "layerIndex": 3,
+      "keyFormulaOrSentence": "Bewertungsschema der Beziehung über die Vorzeichen für beide Partner: Symbiose (+,+), Parasitismus (+,-), Konkurrenz (-,-), Prädation (+,-), Kommensalismus (+,0).",
+      "commonFallacy": "Parasitismus für einen Betriebsunfall der Natur halten - ein gut angepasster Parasit schädigt seinen Wirt nur so weit, dass dieser überlebt, denn ein toter Wirt beendet auch die eigene Fortpflanzung.",
+      "tags": [
+        "Modell",
+        "Basiswissen",
+        "Oekologie",
+        "Evolution"
+      ]
+    },
+    {
+      "id": "bio-sukzession-klimaxstadium",
+      "fach": "Bio",
+      "titleDE": "Sukzession & Klimaxstadium",
+      "titleZH": "群落演替与顶极群落",
+      "summaryDE": "Nach einer Störung durchlaufen Biozönosen eine gerichtete Abfolge, bis ein standortabhängiges Gleichgewicht erreicht ist.",
+      "summaryZH": "受干扰后生物群落沿既定顺序演替，直至达到随生境而定的相对稳定状态。",
+      "category": "Oekologie",
+      "curriculumTier": "Q1",
+      "stage": "vertiefung",
+      "level": 2,
+      "xpReward": 130,
+      "estimatedMinutes": 16,
+      "prerequisites": [
+        "bio-oekosystem-wald",
+        "bio-biotische-abiotische-faktoren"
+      ],
+      "layerIndex": 2,
+      "keyFormulaOrSentence": "Primärsukzession läuft auf neuem Substrat wie Fels oder Sand ab, Sekundärsukzession nach einer Störung auf bereits vorhandenem Boden. Pionierarten sind an Extrembedingungen angepasst, Klimaxarten an Konkurrenz; Artenzahl und Biomasse steigen im Verlauf in der Regel an.",
+      "commonFallacy": "Das Klimaxstadium für einen endgültigen Endzustand halten - es ist ein Gleichgewicht, das nach Störungen oder Klimawandel erneut durchlaufen wird.",
+      "tags": [
+        "Modell",
+        "Verfahren",
+        "Oekologie"
+      ]
+    },
+    {
+      "id": "bio-populationsdynamik-lotka-volterra",
+      "fach": "Bio",
+      "titleDE": "Populationsdynamik & Lotka-Volterra",
+      "titleZH": "种群动态与捕食者-猎物振荡模型",
+      "summaryDE": "Räuber- und Beutepopulationen beeinflussen sich mit Zeitverzögerung, wodurch charakteristische Oszillationen der Individuenzahlen entstehen.",
+      "summaryZH": "捕食与被食种群存在时滞互作，由此产生个体数量的周期性振荡。",
+      "category": "Oekologie",
+      "curriculumTier": "Q1",
+      "stage": "vertiefung",
+      "level": 3,
+      "xpReward": 145,
+      "estimatedMinutes": 18,
+      "prerequisites": [
+        "bio-toleranzkurven-oekologische-potenz",
+        "bio-symbiose-parasitismus-raeubeute"
+      ],
+      "layerIndex": 4,
+      "keyFormulaOrSentence": "Räuber-Beute-Regel: Die Maxima von Beute und Räuber fallen nicht zusammen, die Räuberkurve läuft der Beutekurve um etwa eine Viertelperiode nach. Ursache ist der Zeitverzug zwischen Nahrungsangebot und Fortpflanzungserfolg.",
+      "commonFallacy": "Erwarten, dass Räuber- und Beutemaxima gleichzeitig auftreten - das Räubermaximum folgt dem Beutemaximum deutlich verzögert.",
+      "tags": [
+        "Grafik",
+        "Formel",
+        "Klausur-Dauerbrenner",
+        "Populationsdynamik",
+        "AFB-III"
+      ]
+    },
+    {
+      "id": "bio-r-k-strategien-wachstumsmodelle",
+      "fach": "Bio",
+      "titleDE": "r-/K-Strategien & Wachstumsmodelle",
+      "titleZH": "r/K 对策与指数、逻辑斯谛增长模型",
+      "summaryDE": "Exponentielles Wachstum gilt bei unbegrenzten Ressourcen, logistisches Wachstum bei begrenzter Kapazität; r- und K-Strategen bilden die beiden Gegenpole.",
+      "summaryZH": "资源无限时呈指数增长，受容量限制时呈逻辑斯谛增长；r 对策与 K 对策构成两极。",
+      "category": "Oekologie",
+      "curriculumTier": "Q1",
+      "stage": "vertiefung",
+      "level": 3,
+      "xpReward": 145,
+      "estimatedMinutes": 20,
+      "prerequisites": [
+        "bio-populationsdynamik-lotka-volterra",
+        "bio-symbiose-parasitismus-raeubeute"
+      ],
+      "layerIndex": 5,
+      "keyFormulaOrSentence": "Exponentielles Wachstum: dN/dt = r * N. Logistisches Wachstum: dN/dt = r * N * (K - N) / K mit der Umweltkapazität K. Der Wendepunkt der logistischen Kurve liegt bei N = K/2, dort ist die absolute Zuwachsrate maximal.",
+      "commonFallacy": "Beim logistischen Wachstum auch nach dem Wendepunkt weiter steigende Zuwachsraten angeben - ab N = K/2 sinkt die absolute Zuwachsrate wieder.",
+      "tags": [
+        "Formel",
+        "Grafik",
+        "Klausur-Dauerbrenner",
+        "Populationsdynamik",
+        "AFB-III"
+      ]
+    },
+    {
+      "id": "bio-stoffkreislauf-energiefluss",
+      "fach": "Bio",
+      "titleDE": "Stoffkreislauf & Energiefluss",
+      "titleZH": "物质循环与能量流动：碳循环与氮循环",
+      "summaryDE": "Stoffe kreisen in geschlossenen Kreisläufen, Energie dagegen fließt gerichtet durch das System und wird auf jeder Stufe entwertet.",
+      "summaryZH": "物质在闭合循环中往复，能量却单向流动并在每一级被贬质耗散。",
+      "category": "Oekologie",
+      "curriculumTier": "Q2",
+      "stage": "synthese",
+      "level": 3,
+      "xpReward": 160,
+      "estimatedMinutes": 20,
+      "prerequisites": [
+        "bio-populationsdynamik-lotka-volterra",
+        "bio-r-k-strategien-wachstumsmodelle",
+        "bio-biotische-abiotische-faktoren",
+        "bio-sukzession-klimaxstadium"
+      ],
+      "layerIndex": 6,
+      "keyFormulaOrSentence": "Kohlenstoffkreislauf: Die Fotosynthese bindet CO2, Atmung und Zersetzung setzen es frei, die Verbrennung fossiler Brennstoffe verschiebt den Speicher in die Atmosphäre. Energiefluss: Nur etwa 10 Prozent der Energie einer Trophieebene gelangen in die nächste, der Rest wird als Wärme entwertet.",
+      "commonFallacy": "Energie wie Materie im Kreis laufen lassen - Energie wird bei jeder Umwandlung teilweise entwertet und kann nicht zurückgewonnen werden.",
+      "tags": [
+        "Modell",
+        "Grafik",
+        "Klausur-Dauerbrenner",
+        "Schwerpunkt-2026",
+        "Oekologie",
+        "AFB-III"
+      ]
+    },
+    {
+      "id": "bio-treibhauseffekt-nachhaltigkeit",
+      "fach": "Bio",
+      "titleDE": "Anthropogener Treibhauseffekt & Nachhaltigkeit",
+      "titleZH": "人为温室效应与可持续生态管理",
+      "summaryDE": "Zusätzliche Treibhausgase verstärken die Absorption der infraroten Rückstrahlung; Ursache-Wirkungs-Ketten liefern die Grundlage für Erhaltungs- und Renaturierungsmaßnahmen.",
+      "summaryZH": "额外温室气体增强对红外回辐射的吸收；因果链分析构成保护与修复措施的依据。",
+      "category": "Oekologie",
+      "curriculumTier": "Q2",
+      "stage": "klausur_praxis",
+      "level": 3,
+      "xpReward": 165,
+      "estimatedMinutes": 22,
+      "prerequisites": [
+        "bio-stoffkreislauf-energiefluss",
+        "bio-sukzession-klimaxstadium"
+      ],
+      "layerIndex": 7,
+      "keyFormulaOrSentence": "Argumentationskette: Emission -> steigende Konzentration strahlungsaktiver Gase -> verstärkte Absorption der infraroten Rückstrahlung -> Anstieg der mittleren Globaltemperatur -> Verschiebung von Arealen und Verlust an Biodiversität. Nachhaltigkeitsbewertung prüft ökologische, ökonomische und soziale Tragfähigkeit gleichzeitig.",
+      "commonFallacy": "Den Treibhauseffekt insgesamt für menschengemacht erklären - der natürliche Treibhauseffekt ist Voraussetzung für Leben auf der Erde, anthropogen ist allein seine Verstärkung.",
+      "tags": [
+        "Bewertung",
+        "AFB-III",
+        "Klausur-Dauerbrenner",
+        "Nachhaltigkeit",
+        "Oekologie"
+      ]
+    },
+    {
+      "id": "bio-biodiversitaet-oekosystemmanagement",
+      "fach": "Bio",
+      "titleDE": "Biodiversität & Ökosystemmanagement",
+      "titleZH": "生物多样性研究与生态系统管理决策",
+      "summaryDE": "Biodiversität umfasst genetische, Arten- und Ökosystemvielfalt; Managemententscheidungen müssen Zielkonflikte zwischen Nutzung und Erhalt offenlegen.",
+      "summaryZH": "生物多样性含遗传、物种与生态系统三个层次；管理决策必须明确利用与保护之间的目标冲突。",
+      "category": "Oekologie",
+      "curriculumTier": "Uni_Prep",
+      "stage": "synthese",
+      "level": 3,
+      "xpReward": 180,
+      "estimatedMinutes": 24,
+      "prerequisites": [
+        "bio-stoffkreislauf-energiefluss",
+        "bio-treibhauseffekt-nachhaltigkeit",
+        "bio-r-k-strategien-wachstumsmodelle",
+        "bio-symbiose-parasitismus-raeubeute"
+      ],
+      "layerIndex": 8,
+      "keyFormulaOrSentence": "Drei Ebenen der Biodiversität: genetische Vielfalt als Grundlage der Anpassungsfähigkeit, Artenvielfalt als Artenspektrum, Ökosystemvielfalt als Vielfalt der Lebensraumtypen. Kriteriengeleitete Bewertung verbindet ökologischen Wert, ökonomischen Nutzen, ethische Verantwortung und das Recht auf Entwicklung, argumentativ geankert an Schlüsselarten und Ökosystemleistungen.",
+      "commonFallacy": "Biodiversität mit der Artenzahl gleichsetzen - auch die genetische Vielfalt innerhalb einer Art und die Vielfalt der Lebensraumtypen zählen dazu.",
+      "tags": [
+        "Bewertung",
+        "Uni-Prep",
+        "AFB-III",
+        "Nachhaltigkeit",
+        "Oekologie"
+      ]
+    },
+    {
+      "id": "bio-lamarck-darwin-vergleich",
+      "fach": "Bio",
+      "titleDE": "Lamarckismus & Darwinsche Evolutionstheorie",
+      "titleZH": "拉马克学说与达尔文进化论的范式对比",
+      "summaryDE": "Lamarck erklärt Anpassung durch Gebrauch und Vererbung erworbener Eigenschaften, Darwin dagegen durch Variation und Selektion über Generationen.",
+      "summaryZH": "拉马克用用进废退与获得性遗传来解释适应，达尔文则用变异与世代间的自然选择来解释。",
+      "category": "Evolution",
+      "curriculumTier": "EF",
+      "stage": "grundlagen",
+      "level": 1,
+      "xpReward": 85,
+      "estimatedMinutes": 12,
+      "prerequisites": [
+        "bio-oekosystem-wald"
+      ],
+      "layerIndex": 1,
+      "keyFormulaOrSentence": "Kerndifferenz: Lamarck setzt die Ursache der Veränderung in das Individuum und seine Lebensweise, Darwin setzt sie in die Variation der Population und die ungleiche Fortpflanzung. Erworbene Merkmale sind nicht erblich.",
+      "commonFallacy": "Anpassung als das beschreiben, was ein Individuum in seinem Leben erreicht - Anpassung entsteht über Generationen durch Selektion, nicht im Einzelwesen.",
+      "tags": [
+        "Definition",
+        "Modell",
+        "Basiswissen",
+        "Evolution"
+      ]
+    },
+    {
+      "id": "bio-variabilitaet-mutation-selektion",
+      "fach": "Bio",
+      "titleDE": "Variation, Mutation & Selektion",
+      "titleZH": "变异、突变与选择的因果链",
+      "summaryDE": "Mutation und Rekombination erzeugen zufällige Variabilität; die Selektion bewertet diese Variabilität anschließend über den Fortpflanzungserfolg.",
+      "summaryZH": "突变与重组产生随机变异，选择再以繁殖成功率对这些变异进行筛选。",
+      "category": "Evolution",
+      "curriculumTier": "EF",
+      "stage": "grundlagen",
+      "level": 2,
+      "xpReward": 95,
+      "estimatedMinutes": 14,
+      "prerequisites": [
+        "bio-lamarck-darwin-vergleich"
+      ],
+      "layerIndex": 2,
+      "keyFormulaOrSentence": "Wirkkette der Evolution: Mutation und Rekombination erzeugen Variabilität -> die Umwelt wirkt als Selektionsfaktor -> differentielle Fortpflanzung (reproduktive Fitness) -> Verschiebung der Allelfrequenzen in der Population.",
+      "commonFallacy": "Mutationen für gerichtet halten - sie entstehen unabhängig von jedem Bedarf, nur ihre Weitergabe ist selektionsabhängig.",
+      "tags": [
+        "Definition",
+        "Modell",
+        "Klausur-Dauerbrenner",
+        "Evolution"
+      ]
+    },
+    {
+      "id": "bio-synthetische-evolutionstheorie",
+      "fach": "Bio",
+      "titleDE": "Synthetische Evolutionstheorie",
+      "titleZH": "综合进化论：五因子框架",
+      "summaryDE": "Die moderne Synthese verbindet Genetik und Darwinsche Selektion zu einem Faktorenmodell, das alle Evolutionsursachen systematisch ordnet.",
+      "summaryZH": "现代综合把遗传学与达尔文选择论融合为系统排列全部进化成因的因子模型。",
+      "category": "Evolution",
+      "curriculumTier": "Q1",
+      "stage": "vertiefung",
+      "level": 3,
+      "xpReward": 140,
+      "estimatedMinutes": 18,
+      "prerequisites": [
+        "bio-variabilitaet-mutation-selektion",
+        "bio-lamarck-darwin-vergleich"
+      ],
+      "layerIndex": 3,
+      "keyFormulaOrSentence": "Fünf Evolutionsfaktoren: Mutation, Rekombination, Selektion, Gendrift und Isolation. Mutation und Rekombination erzeugen Variabilität, Selektion und Gendrift verändern Allelfrequenzen, Isolation unterbricht den Genfluss zwischen Teilpopulationen.",
+      "commonFallacy": "Selektion für eine zielgerichtet auf ein Wunschergebnis hinarbeitende Kraft halten - Selektion ist ein statistischer Fortpflanzungsvorteil unter den gerade herrschenden Bedingungen und kehrt sich mit der Umwelt um.",
+      "tags": [
+        "Modell",
+        "AFB-III",
+        "Klausur-Dauerbrenner",
+        "Evolution"
+      ]
+    },
+    {
+      "id": "bio-selektionstypen-fitness",
+      "fach": "Bio",
+      "titleDE": "Selektionstypen & reproduktive Fitness",
+      "titleZH": "选择类型与繁殖适应度",
+      "summaryDE": "Stabilisierende, gerichtete, disruptive und sexuelle Selektion formen die Verteilung von Merkmalen auf unterschiedliche Weise.",
+      "summaryZH": "稳定选择、定向选择、分裂选择与性选择以不同方式塑造性状分布。",
+      "category": "Evolution",
+      "curriculumTier": "Q1",
+      "stage": "vertiefung",
+      "level": 2,
+      "xpReward": 130,
+      "estimatedMinutes": 16,
+      "prerequisites": [
+        "bio-variabilitaet-mutation-selektion"
+      ],
+      "layerIndex": 3,
+      "keyFormulaOrSentence": "Wirkung auf die Merkmalsverteilung: stabilisierend verengt die Verteilung um den Mittelwert, gerichtet verschiebt den Mittelwert, disruptiv spaltet sie in zwei Gipfel. Fitness ist der relative Beitrag eines Genotyps zur nächsten Generation, gemessen an Überlebens- und Fortpflanzungserfolg.",
+      "commonFallacy": "Fitness mit körperlicher Stärke oder Größe gleichsetzen - entscheidend ist allein der Fortpflanzungserfolg.",
+      "tags": [
+        "Grafik",
+        "Modell",
+        "Klausur-Dauerbrenner",
+        "Evolution"
+      ]
+    },
+    {
+      "id": "bio-gendrift-mutation-rekombination",
+      "fach": "Bio",
+      "titleDE": "Gendrift & genetische Variabilität",
+      "titleZH": "遗传漂变与遗传变异的来源",
+      "summaryDE": "In kleinen Populationen verändert Gendrift Allelfrequenzen zufällig und kann unabhängig von Selektion zum Fixieren oder Verlust von Allelen führen.",
+      "summaryZH": "在小种群中漂变随机改变等位基因频率，可独立于选择导致固定或丢失。",
+      "category": "Evolution",
+      "curriculumTier": "Q2",
+      "stage": "synthese",
+      "level": 3,
+      "xpReward": 155,
+      "estimatedMinutes": 18,
+      "prerequisites": [
+        "bio-synthetische-evolutionstheorie",
+        "bio-selektionstypen-fitness"
+      ],
+      "layerIndex": 4,
+      "keyFormulaOrSentence": "Flaschenhalseffekt und Gründereffekt sind Sonderfälle der Gendrift; je kleiner die Population, desto stärker wirkt der Zufall. Gendrift wirkt ungerichtet, Selektion wirkt gerichtet, Rekombination erzeugt neue Allelkombinationen.",
+      "commonFallacy": "Jede Allelfrequenzänderung auf Selektion zurückführen - in kleinen Populationen ist der Zufall oft der stärkere Faktor.",
+      "tags": [
+        "Modell",
+        "Klausur-Dauerbrenner",
+        "Populationsgenetik",
+        "AFB-III"
+      ]
+    },
+    {
+      "id": "bio-stammbaumanalyse-homologien",
+      "fach": "Bio",
+      "titleDE": "Stammbaumanalyse & Homologien",
+      "titleZH": "系统发育树重建：同源性与原始/衍生性状",
+      "summaryDE": "Verwandtschaft wird über homologe Merkmale und deren Bewertung als ursprünglich oder abgeleitet rekonstruiert.",
+      "summaryZH": "亲缘关系依据同源性状及其祖征/衍征状态重建。",
+      "category": "Evolution",
+      "curriculumTier": "Q2",
+      "stage": "synthese",
+      "level": 3,
+      "xpReward": 155,
+      "estimatedMinutes": 20,
+      "prerequisites": [
+        "bio-familienstammbaum-erbgang-analyse",
+        "bio-synthetische-evolutionstheorie",
+        "bio-selektionstypen-fitness"
+      ],
+      "layerIndex": 6,
+      "keyFormulaOrSentence": "Kriterien: Homologie (gleicher Grundbauplan bei verschiedener Funktion) von Analogie (gleiche Funktion bei verschiedenem Bauplan) abgrenzen. Ein Stammbaum wird ausschließlich mit abgeleiteten Merkmalen verzweigt, denn nur abgeleitete Merkmale belegen gemeinsame Abstammung.",
+      "commonFallacy": "Ähnlichkeit ohne Prüfung des Bauplans für Verwandtschaft halten - konvergente Entwicklung erzeugt Analogien, die keine Abstammungsgemeinschaft belegen.",
+      "tags": [
+        "Verfahren",
+        "Grafik",
+        "Quelle",
+        "AFB-III",
+        "Systematik",
+        "Klausur-Dauerbrenner"
+      ]
+    },
+    {
+      "id": "bio-artbegriff-artbildung-isolation",
+      "fach": "Bio",
+      "titleDE": "Artbegriff & Artbildung",
+      "titleZH": "物种概念与物种形成：隔离机制",
+      "summaryDE": "Der populationsgenetische Artbegriff fasst Populationen mit gemeinsamem Genpool zusammen; Isolation unterbricht den Genfluss und spaltet Arten auf.",
+      "summaryZH": "群体遗传学物种概念以共同基因库界定物种；隔离中断基因流从而分化出新种。",
+      "category": "Evolution",
+      "curriculumTier": "Q2",
+      "stage": "synthese",
+      "level": 3,
+      "xpReward": 160,
+      "estimatedMinutes": 18,
+      "prerequisites": [
+        "bio-gendrift-mutation-rekombination",
+        "bio-stammbaumanalyse-homologien",
+        "bio-selektionstypen-fitness"
+      ],
+      "layerIndex": 7,
+      "keyFormulaOrSentence": "Allopatrische Artbildung durch geographische Trennung, sympatrische Artbildung durch ökologische oder genetische Isolation. Isolationsmechanismen wirken präzygotisch (zeitlich, räumlich, Verhalten, Mechanik) oder postzygotisch (Sterilität oder Letalität der Hybriden).",
+      "commonFallacy": "Arten für eine feste, von Menschen gesetzte Kategorie halten - der Artbegriff ist ein Modell, das je nach Fragestellung morphologisch, genetisch oder ökologisch anders gefasst wird.",
+      "tags": [
+        "Definition",
+        "Modell",
+        "AFB-III",
+        "Evolution"
+      ]
+    },
+    {
+      "id": "bio-humanevolution-kulturelle-evolution",
+      "fach": "Bio",
+      "titleDE": "Humanevolution & kulturelle Evolution",
+      "titleZH": "人类演化与文化演化的交织",
+      "summaryDE": "Fossilien und molekulare Daten belegen die Ausbreitung des modernen Menschen; kulturelle Weitergabe verändert dabei die Selektionsbedingungen.",
+      "summaryZH": "化石与分子证据重建现代人的扩散路径；文化传承反过来改变了选择条件。",
+      "category": "Evolution",
+      "curriculumTier": "Q2",
+      "stage": "synthese",
+      "level": 3,
+      "xpReward": 165,
+      "estimatedMinutes": 20,
+      "prerequisites": [
+        "bio-stammbaumanalyse-homologien",
+        "bio-artbegriff-artbildung-isolation",
+        "bio-selektionstypen-fitness"
+      ],
+      "layerIndex": 8,
+      "keyFormulaOrSentence": "Out-of-Africa-Modell: Die frühesten Fossilien des anatomisch modernen Menschen stammen aus Afrika, die Ausbreitung nach Eurasien erfolgte in mehreren Wellen. Belege liefern Fossilien, Steinwerkzeuge und mitochondriale DNA. Kulturelle Evolution ist lamarckistisch, weil Erlerntes weitergegeben wird, genetische Evolution ist es nicht.",
+      "commonFallacy": "Die Evolution des Menschen als geradlinige Reihe vom Affen zum Menschen zeichnen - tatsächlich war sie ein verzweigter Prozess mit mehreren zeitgleich existierenden Homininenformen.",
+      "tags": [
+        "Modell",
+        "Quelle",
+        "AFB-III",
+        "Evolution",
+        "Klausur-Dauerbrenner"
+      ]
+    },
+    {
+      "id": "bio-klausur-synthese-abitur",
+      "fach": "Bio",
+      "titleDE": "Klausur-Synthese: Evolutionsbiologie im Gesamtzusammenhang",
+      "titleZH": "毕业考综合题：演化视角下的跨领域论证",
+      "summaryDE": "Eine Abituraufgabe verknüpft Molekulargenetik, Neurobiologie, Stoffwechsel und Ökologie über den Evolutionsbegriff zu einer durchgehenden Argumentation.",
+      "summaryZH": "高考综合题以演化为主线，把分子遗传、神经生物学、代谢与生态串成一条完整论证链。",
+      "category": "Evolution",
+      "curriculumTier": "Q2",
+      "stage": "klausur_praxis",
+      "level": 3,
+      "xpReward": 200,
+      "estimatedMinutes": 30,
+      "prerequisites": [
+        "bio-humanevolution-kulturelle-evolution",
+        "bio-artbegriff-artbildung-isolation",
+        "bio-stammbaumanalyse-homologien",
+        "bio-treibhauseffekt-nachhaltigkeit"
+      ],
+      "layerIndex": 9,
+      "keyFormulaOrSentence": "Argumentationsgerüst für 15 Notenpunkte: Beobachtung und Datenlage beschreiben -> Evolutionsfaktoren (Mutation, Rekombination, Selektion, Gendrift, Isolation) zuordnen -> Selektionsvorteil über reproduktive Fitness begründen -> Alternativhypothese abwägen -> Ergebnis auf molekularer oder ökologischer Ebene belegen.",
+      "commonFallacy": "Sofort eine fertige Deutung liefern, ohne Datenlage und Selektionsfaktor ausdrücklich zu benennen - damit fehlen die Begründungs- und Bewertungspunkte vollständig.",
+      "tags": [
+        "Verfahren",
+        "AFB-III",
+        "Klausur-Dauerbrenner",
+        "Schwerpunkt-2026",
+        "Evolution"
+      ]
+    },
+    {
+      "id": "bio-koevolution-kosten-nutzen",
+      "fach": "Bio",
+      "titleDE": "Koevolution & Kosten-Nutzen-Analyse des Verhaltens",
+      "titleZH": "协同进化与行为的成本收益分析",
+      "summaryDE": "Wechselseitige Selektion zwischen Arten treibt die Koevolution; Verhalten lässt sich über Nutzen und Kosten für die Fitness bilanzieren.",
+      "summaryZH": "物种间相互选择驱动协同进化；行为可用对适应度的成本与收益来核算。",
+      "category": "Evolution",
+      "curriculumTier": "Uni_Prep",
+      "stage": "synthese",
+      "level": 3,
+      "xpReward": 175,
+      "estimatedMinutes": 22,
+      "prerequisites": [
+        "bio-selektionstypen-fitness",
+        "bio-artbegriff-artbildung-isolation",
+        "bio-humanevolution-kulturelle-evolution"
+      ],
+      "layerIndex": 9,
+      "keyFormulaOrSentence": "Kosten-Nutzen-Bilanz: Der Nutzen eines Verhaltens wird gegen Risiko, Energieaufwand und entgangene Fortpflanzungschancen aufgerechnet. Koevolution entsteht, wenn die Fitness von Art A von der Merkmalsausprägung von Art B abhängt und umgekehrt.",
+      "commonFallacy": "Verhalten mit menschlichen Motiven begründen - in der Verhaltensökologie zählt ausschließlich der Beitrag zur reproduktiven Fitness, nicht Absicht oder Bewusstsein.",
+      "tags": [
+        "Modell",
+        "Uni-Prep",
+        "AFB-III",
+        "Evolution"
+      ]
+    },
+    {
+      "id": "bio-hardy-weinberg-populationsgenetik",
+      "fach": "Bio",
+      "titleDE": "Hardy-Weinberg-Gleichgewicht & Populationsgenetik",
+      "titleZH": "哈迪-温伯格平衡与群体遗传学计算",
+      "summaryDE": "Ohne Evolutionsfaktoren bleiben Allel- und Genotypfrequenzen konstant; Abweichungen zeigen, dass Selektion, Gendrift oder Genfluss wirksam sind.",
+      "summaryZH": "无进化因子作用时等位与基因型频率保持恒定；偏离即提示选择、漂变或基因流正在起作用。",
+      "category": "Evolution",
+      "curriculumTier": "Uni_Prep",
+      "stage": "synthese",
+      "level": 3,
+      "xpReward": 185,
+      "estimatedMinutes": 24,
+      "prerequisites": [
+        "bio-mendelsche-regeln",
+        "bio-gendrift-mutation-rekombination",
+        "bio-selektionstypen-fitness"
+      ],
+      "layerIndex": 5,
+      "keyFormulaOrSentence": "Hardy-Weinberg: p + q = 1 und p^2 + 2pq + q^2 = 1, wobei p die Frequenz des dominanten und q die Frequenz des rezessiven Allels bezeichnet. Die rezessive Allelfrequenz ergibt sich als Wurzel aus der Häufigkeit des homozygot rezessiven Genotyps.",
+      "commonFallacy": "Aus der Häufigkeit des dominanten Phänotyps direkt die Allelfrequenz p ablesen - der dominante Phänotyp umfasst AA und Aa, deshalb muss zuerst q aus dem rezessiven Genotyp bestimmt werden.",
+      "tags": [
+        "Formel",
+        "Uni-Prep",
+        "AFB-III",
+        "Populationsgenetik",
+        "Klausur-Dauerbrenner"
+      ]
+    },
+    {
+      "id": "bio-phylogenetik-molekulare-uhr-bioinformatik",
+      "fach": "Bio",
+      "titleDE": "Phylogenetik & molekulare Uhr",
+      "titleZH": "分子系统发生学与分子钟",
+      "summaryDE": "Sequenzunterschiede in konservierten Genen erlauben datierte Verwandtschaftsbäume; Alignment und Distanzmaße machen sie quantitativ auswertbar.",
+      "summaryZH": "保守基因的序列差异可构建带年代的亲缘树，比对与距离度量使其定量化。",
+      "category": "Evolution",
+      "curriculumTier": "Uni_Prep",
+      "stage": "synthese",
+      "level": 3,
+      "xpReward": 195,
+      "estimatedMinutes": 28,
+      "prerequisites": [
+        "bio-stammbaumanalyse-homologien",
+        "bio-artbegriff-artbildung-isolation",
+        "bio-humanevolution-kulturelle-evolution",
+        "bio-hardy-weinberg-populationsgenetik"
+      ],
+      "layerIndex": 9,
+      "keyFormulaOrSentence": "Molekulare Uhr: Die Divergenzzeit ist näherungsweise proportional zur Zahl der Sequenzunterschiede in neutralen Abschnitten, sofern eine konstante Mutationsrate angenommen wird. Methoden sind Sequenz-Alignment, Distanzmatrix (etwa Neighbor-Joining) und das Parsimonie-Kriterium.",
+      "commonFallacy": "Die molekulare Uhr für eine exakte Stoppuhr halten - die Mutationsrate ist selbst artspezifisch und lässt sich nicht aus dem Datensatz allein schätzen.",
+      "tags": [
+        "Verfahren",
+        "Quelle",
+        "Uni-Prep",
+        "AFB-III",
+        "Systematik",
+        "Bioinformatik"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "id": "e-bio-aktionspotential-saltatorische-leitung-bio-chemische-synapse-neurotransmitter",
+      "from": "bio-aktionspotential-saltatorische-leitung",
+      "to": "bio-chemische-synapse-neurotransmitter",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-bio-aktionspotential-saltatorische-leitung-bio-neuroinformatik-hodgkin-huxley-modell",
+      "from": "bio-aktionspotential-saltatorische-leitung",
+      "to": "bio-neuroinformatik-hodgkin-huxley-modell",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-bio-aktionspotential-saltatorische-leitung-bio-sinneszellen-rezeptorpotential",
+      "from": "bio-aktionspotential-saltatorische-leitung",
+      "to": "bio-sinneszellen-rezeptorpotential",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-bio-aktiver-transport-natrium-kalium-pumpe-bio-signaltransduktion-rezeptorkaskaden",
+      "from": "bio-aktiver-transport-natrium-kalium-pumpe",
+      "to": "bio-signaltransduktion-rezeptorkaskaden",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-bio-artbegriff-artbildung-isolation-bio-humanevolution-kulturelle-evolution",
+      "from": "bio-artbegriff-artbildung-isolation",
+      "to": "bio-humanevolution-kulturelle-evolution",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-bio-artbegriff-artbildung-isolation-bio-klausur-synthese-abitur",
+      "from": "bio-artbegriff-artbildung-isolation",
+      "to": "bio-klausur-synthese-abitur",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-bio-artbegriff-artbildung-isolation-bio-koevolution-kosten-nutzen",
+      "from": "bio-artbegriff-artbildung-isolation",
+      "to": "bio-koevolution-kosten-nutzen",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-bio-artbegriff-artbildung-isolation-bio-phylogenetik-molekulare-uhr-bioinformatik",
+      "from": "bio-artbegriff-artbildung-isolation",
+      "to": "bio-phylogenetik-molekulare-uhr-bioinformatik",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-bio-atp-adp-redoxsystem-bio-chemiosmotische-atp-bildung",
+      "from": "bio-atp-adp-redoxsystem",
+      "to": "bio-chemiosmotische-atp-bildung",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-bio-atp-adp-redoxsystem-bio-enzymkinetik-hemmtypen",
+      "from": "bio-atp-adp-redoxsystem",
+      "to": "bio-enzymkinetik-hemmtypen",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-bio-atp-adp-redoxsystem-bio-glykolyse-oxidative-decarboxylierung",
+      "from": "bio-atp-adp-redoxsystem",
+      "to": "bio-glykolyse-oxidative-decarboxylierung",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-bio-atp-adp-redoxsystem-bio-photosynthese-lichtreaktion-calvin-zyklus",
+      "from": "bio-atp-adp-redoxsystem",
+      "to": "bio-photosynthese-lichtreaktion-calvin-zyklus",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-bio-biomembran-transportmechanismen-bio-aktiver-transport-natrium-kalium-pumpe",
+      "from": "bio-biomembran-transportmechanismen",
+      "to": "bio-aktiver-transport-natrium-kalium-pumpe",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-bio-biomembran-transportmechanismen-bio-diffusion-osmose-plasmolyse",
+      "from": "bio-biomembran-transportmechanismen",
+      "to": "bio-diffusion-osmose-plasmolyse",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-bio-biomembran-transportmechanismen-bio-endosymbiontentheorie",
+      "from": "bio-biomembran-transportmechanismen",
+      "to": "bio-endosymbiontentheorie",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-bio-biomembran-transportmechanismen-bio-immunsystem-abwehr-impfung-allergie",
+      "from": "bio-biomembran-transportmechanismen",
+      "to": "bio-immunsystem-abwehr-impfung-allergie",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-bio-biomembran-transportmechanismen-bio-signaltransduktion-rezeptorkaskaden",
+      "from": "bio-biomembran-transportmechanismen",
+      "to": "bio-signaltransduktion-rezeptorkaskaden",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-bio-biotische-abiotische-faktoren-bio-oekologische-nische-konkurrenz",
+      "from": "bio-biotische-abiotische-faktoren",
+      "to": "bio-oekologische-nische-konkurrenz",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-bio-biotische-abiotische-faktoren-bio-stoffkreislauf-energiefluss",
+      "from": "bio-biotische-abiotische-faktoren",
+      "to": "bio-stoffkreislauf-energiefluss",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-bio-biotische-abiotische-faktoren-bio-sukzession-klimaxstadium",
+      "from": "bio-biotische-abiotische-faktoren",
+      "to": "bio-sukzession-klimaxstadium",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-bio-biotische-abiotische-faktoren-bio-toleranzkurven-oekologische-potenz",
+      "from": "bio-biotische-abiotische-faktoren",
+      "to": "bio-toleranzkurven-oekologische-potenz",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-bio-chemiosmotische-atp-bildung-bio-c4-gaerung-energetisches-modell",
+      "from": "bio-chemiosmotische-atp-bildung",
+      "to": "bio-c4-gaerung-energetisches-modell",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-bio-chemiosmotische-atp-bildung-bio-photosynthese-lichtreaktion-calvin-zyklus",
+      "from": "bio-chemiosmotische-atp-bildung",
+      "to": "bio-photosynthese-lichtreaktion-calvin-zyklus",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-bio-chemische-synapse-neurotransmitter-bio-drogen-gifte-synapsenwirkung",
+      "from": "bio-chemische-synapse-neurotransmitter",
+      "to": "bio-drogen-gifte-synapsenwirkung",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-bio-chemische-synapse-neurotransmitter-bio-hormone-stressreaktion",
+      "from": "bio-chemische-synapse-neurotransmitter",
+      "to": "bio-hormone-stressreaktion",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-bio-chemische-synapse-neurotransmitter-bio-neuromuskulaere-synapse-motorik",
+      "from": "bio-chemische-synapse-neurotransmitter",
+      "to": "bio-neuromuskulaere-synapse-motorik",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-bio-chemische-synapse-neurotransmitter-bio-neuronale-plastizitaet-lernen",
+      "from": "bio-chemische-synapse-neurotransmitter",
+      "to": "bio-neuronale-plastizitaet-lernen",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-bio-citratzyklus-atmungskette-bio-c4-gaerung-energetisches-modell",
+      "from": "bio-citratzyklus-atmungskette",
+      "to": "bio-c4-gaerung-energetisches-modell",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-bio-citratzyklus-atmungskette-bio-chemiosmotische-atp-bildung",
+      "from": "bio-citratzyklus-atmungskette",
+      "to": "bio-chemiosmotische-atp-bildung",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-bio-diffusion-osmose-plasmolyse-bio-immunsystem-abwehr-impfung-allergie",
+      "from": "bio-diffusion-osmose-plasmolyse",
+      "to": "bio-immunsystem-abwehr-impfung-allergie",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-bio-dna-bau-doppelhelix-bio-dna-replikation-semikonservativ",
+      "from": "bio-dna-bau-doppelhelix",
+      "to": "bio-dna-replikation-semikonservativ",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-bio-dna-bau-doppelhelix-bio-epigenetik-methylierung-histonmodifikation",
+      "from": "bio-dna-bau-doppelhelix",
+      "to": "bio-epigenetik-methylierung-histonmodifikation",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-bio-dna-bau-doppelhelix-bio-genregulation-transkriptionsfaktoren",
+      "from": "bio-dna-bau-doppelhelix",
+      "to": "bio-genregulation-transkriptionsfaktoren",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-bio-dna-replikation-semikonservativ-bio-genmutationen-erbkrankheiten",
+      "from": "bio-dna-replikation-semikonservativ",
+      "to": "bio-genmutationen-erbkrankheiten",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-bio-dna-replikation-semikonservativ-bio-proteinbiosynthese-transkription-translation",
+      "from": "bio-dna-replikation-semikonservativ",
+      "to": "bio-proteinbiosynthese-transkription-translation",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-bio-enzymaufbau-schluessel-schloss-bio-enzymkinetik-hemmtypen",
+      "from": "bio-enzymaufbau-schluessel-schloss",
+      "to": "bio-enzymkinetik-hemmtypen",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-bio-enzymkinetik-hemmtypen-bio-citratzyklus-atmungskette",
+      "from": "bio-enzymkinetik-hemmtypen",
+      "to": "bio-citratzyklus-atmungskette",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-bio-enzymkinetik-hemmtypen-bio-glykolyse-oxidative-decarboxylierung",
+      "from": "bio-enzymkinetik-hemmtypen",
+      "to": "bio-glykolyse-oxidative-decarboxylierung",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-bio-epigenetik-methylierung-histonmodifikation-bio-crispr-bioinformatik-genomeditierung",
+      "from": "bio-epigenetik-methylierung-histonmodifikation",
+      "to": "bio-crispr-bioinformatik-genomeditierung",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-bio-erbgut-chromosomen-karyogramm-bio-dna-bau-doppelhelix",
+      "from": "bio-erbgut-chromosomen-karyogramm",
+      "to": "bio-dna-bau-doppelhelix",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-bio-erbgut-chromosomen-karyogramm-bio-proteinbiosynthese-transkription-translation",
+      "from": "bio-erbgut-chromosomen-karyogramm",
+      "to": "bio-proteinbiosynthese-transkription-translation",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-bio-familienstammbaum-erbgang-analyse-bio-gentherapie-beratung-bewertung",
+      "from": "bio-familienstammbaum-erbgang-analyse",
+      "to": "bio-gentherapie-beratung-bewertung",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-bio-familienstammbaum-erbgang-analyse-bio-stammbaumanalyse-homologien",
+      "from": "bio-familienstammbaum-erbgang-analyse",
+      "to": "bio-stammbaumanalyse-homologien",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-bio-fotosynthese-grundlagen-bio-photosynthese-lichtreaktion-calvin-zyklus",
+      "from": "bio-fotosynthese-grundlagen",
+      "to": "bio-photosynthese-lichtreaktion-calvin-zyklus",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-bio-fotosynthese-grundlagen-bio-stoffgruppen-kohlenhydrate-lipide-proteine",
+      "from": "bio-fotosynthese-grundlagen",
+      "to": "bio-stoffgruppen-kohlenhydrate-lipide-proteine",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-bio-gendrift-mutation-rekombination-bio-artbegriff-artbildung-isolation",
+      "from": "bio-gendrift-mutation-rekombination",
+      "to": "bio-artbegriff-artbildung-isolation",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-bio-gendrift-mutation-rekombination-bio-hardy-weinberg-populationsgenetik",
+      "from": "bio-gendrift-mutation-rekombination",
+      "to": "bio-hardy-weinberg-populationsgenetik",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-bio-genmutationen-erbkrankheiten-bio-familienstammbaum-erbgang-analyse",
+      "from": "bio-genmutationen-erbkrankheiten",
+      "to": "bio-familienstammbaum-erbgang-analyse",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-bio-genmutationen-erbkrankheiten-bio-gentechnik-pcr-gelelektrophorese",
+      "from": "bio-genmutationen-erbkrankheiten",
+      "to": "bio-gentechnik-pcr-gelelektrophorese",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-bio-genregulation-transkriptionsfaktoren-bio-crispr-bioinformatik-genomeditierung",
+      "from": "bio-genregulation-transkriptionsfaktoren",
+      "to": "bio-crispr-bioinformatik-genomeditierung",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-bio-genregulation-transkriptionsfaktoren-bio-epigenetik-methylierung-histonmodifikation",
+      "from": "bio-genregulation-transkriptionsfaktoren",
+      "to": "bio-epigenetik-methylierung-histonmodifikation",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-bio-genregulation-transkriptionsfaktoren-bio-gentherapie-beratung-bewertung",
+      "from": "bio-genregulation-transkriptionsfaktoren",
+      "to": "bio-gentherapie-beratung-bewertung",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-bio-gentechnik-pcr-gelelektrophorese-bio-crispr-bioinformatik-genomeditierung",
+      "from": "bio-gentechnik-pcr-gelelektrophorese",
+      "to": "bio-crispr-bioinformatik-genomeditierung",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-bio-gentechnik-pcr-gelelektrophorese-bio-gentherapie-beratung-bewertung",
+      "from": "bio-gentechnik-pcr-gelelektrophorese",
+      "to": "bio-gentherapie-beratung-bewertung",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-bio-glykolyse-oxidative-decarboxylierung-bio-c4-gaerung-energetisches-modell",
+      "from": "bio-glykolyse-oxidative-decarboxylierung",
+      "to": "bio-c4-gaerung-energetisches-modell",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-bio-glykolyse-oxidative-decarboxylierung-bio-chemiosmotische-atp-bildung",
+      "from": "bio-glykolyse-oxidative-decarboxylierung",
+      "to": "bio-chemiosmotische-atp-bildung",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-bio-glykolyse-oxidative-decarboxylierung-bio-citratzyklus-atmungskette",
+      "from": "bio-glykolyse-oxidative-decarboxylierung",
+      "to": "bio-citratzyklus-atmungskette",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-bio-hardy-weinberg-populationsgenetik-bio-phylogenetik-molekulare-uhr-bioinformatik",
+      "from": "bio-hardy-weinberg-populationsgenetik",
+      "to": "bio-phylogenetik-molekulare-uhr-bioinformatik",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-bio-hormone-stressreaktion-bio-neuronale-plastizitaet-lernen",
+      "from": "bio-hormone-stressreaktion",
+      "to": "bio-neuronale-plastizitaet-lernen",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-bio-humanevolution-kulturelle-evolution-bio-klausur-synthese-abitur",
+      "from": "bio-humanevolution-kulturelle-evolution",
+      "to": "bio-klausur-synthese-abitur",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-bio-humanevolution-kulturelle-evolution-bio-koevolution-kosten-nutzen",
+      "from": "bio-humanevolution-kulturelle-evolution",
+      "to": "bio-koevolution-kosten-nutzen",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-bio-humanevolution-kulturelle-evolution-bio-phylogenetik-molekulare-uhr-bioinformatik",
+      "from": "bio-humanevolution-kulturelle-evolution",
+      "to": "bio-phylogenetik-molekulare-uhr-bioinformatik",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-bio-immunsystem-abwehr-impfung-allergie-bio-signaltransduktion-rezeptorkaskaden",
+      "from": "bio-immunsystem-abwehr-impfung-allergie",
+      "to": "bio-signaltransduktion-rezeptorkaskaden",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-bio-lamarck-darwin-vergleich-bio-synthetische-evolutionstheorie",
+      "from": "bio-lamarck-darwin-vergleich",
+      "to": "bio-synthetische-evolutionstheorie",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-bio-lamarck-darwin-vergleich-bio-variabilitaet-mutation-selektion",
+      "from": "bio-lamarck-darwin-vergleich",
+      "to": "bio-variabilitaet-mutation-selektion",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-bio-mendelsche-regeln-bio-erbgut-chromosomen-karyogramm",
+      "from": "bio-mendelsche-regeln",
+      "to": "bio-erbgut-chromosomen-karyogramm",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-bio-mendelsche-regeln-bio-familienstammbaum-erbgang-analyse",
+      "from": "bio-mendelsche-regeln",
+      "to": "bio-familienstammbaum-erbgang-analyse",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-bio-mendelsche-regeln-bio-hardy-weinberg-populationsgenetik",
+      "from": "bio-mendelsche-regeln",
+      "to": "bio-hardy-weinberg-populationsgenetik",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-bio-mitose-zellzyklus-regulation-bio-endosymbiontentheorie",
+      "from": "bio-mitose-zellzyklus-regulation",
+      "to": "bio-endosymbiontentheorie",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-bio-mitose-zellzyklus-regulation-bio-immunsystem-abwehr-impfung-allergie",
+      "from": "bio-mitose-zellzyklus-regulation",
+      "to": "bio-immunsystem-abwehr-impfung-allergie",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-bio-mitose-zellzyklus-regulation-bio-meiose-rekombination",
+      "from": "bio-mitose-zellzyklus-regulation",
+      "to": "bio-meiose-rekombination",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-bio-nervensystem-grundlagen-bio-neuron-ruhepotential",
+      "from": "bio-nervensystem-grundlagen",
+      "to": "bio-neuron-ruhepotential",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-bio-nervensystem-grundlagen-bio-reflexe-reflexbogen",
+      "from": "bio-nervensystem-grundlagen",
+      "to": "bio-reflexe-reflexbogen",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-bio-nervensystem-grundlagen-bio-sinnesorgane-auge-ohr",
+      "from": "bio-nervensystem-grundlagen",
+      "to": "bio-sinnesorgane-auge-ohr",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-bio-neuromuskulaere-synapse-motorik-bio-hormone-stressreaktion",
+      "from": "bio-neuromuskulaere-synapse-motorik",
+      "to": "bio-hormone-stressreaktion",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-bio-neuron-ruhepotential-bio-aktionspotential-saltatorische-leitung",
+      "from": "bio-neuron-ruhepotential",
+      "to": "bio-aktionspotential-saltatorische-leitung",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-bio-neuron-ruhepotential-bio-neuroinformatik-hodgkin-huxley-modell",
+      "from": "bio-neuron-ruhepotential",
+      "to": "bio-neuroinformatik-hodgkin-huxley-modell",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-bio-neuronale-plastizitaet-lernen-bio-neuroinformatik-hodgkin-huxley-modell",
+      "from": "bio-neuronale-plastizitaet-lernen",
+      "to": "bio-neuroinformatik-hodgkin-huxley-modell",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-bio-oekologische-nische-konkurrenz-bio-symbiose-parasitismus-raeubeute",
+      "from": "bio-oekologische-nische-konkurrenz",
+      "to": "bio-symbiose-parasitismus-raeubeute",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-bio-oekosystem-wald-bio-anpassung-extremstandorte",
+      "from": "bio-oekosystem-wald",
+      "to": "bio-anpassung-extremstandorte",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-bio-oekosystem-wald-bio-biotische-abiotische-faktoren",
+      "from": "bio-oekosystem-wald",
+      "to": "bio-biotische-abiotische-faktoren",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-bio-oekosystem-wald-bio-lamarck-darwin-vergleich",
+      "from": "bio-oekosystem-wald",
+      "to": "bio-lamarck-darwin-vergleich",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-bio-oekosystem-wald-bio-sukzession-klimaxstadium",
+      "from": "bio-oekosystem-wald",
+      "to": "bio-sukzession-klimaxstadium",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-bio-pflanzliche-tierische-zelle-bio-zellorganellen-kompartimentierung",
+      "from": "bio-pflanzliche-tierische-zelle",
+      "to": "bio-zellorganellen-kompartimentierung",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-bio-photosynthese-lichtreaktion-calvin-zyklus-bio-c4-gaerung-energetisches-modell",
+      "from": "bio-photosynthese-lichtreaktion-calvin-zyklus",
+      "to": "bio-c4-gaerung-energetisches-modell",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-bio-populationsdynamik-lotka-volterra-bio-r-k-strategien-wachstumsmodelle",
+      "from": "bio-populationsdynamik-lotka-volterra",
+      "to": "bio-r-k-strategien-wachstumsmodelle",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-bio-populationsdynamik-lotka-volterra-bio-stoffkreislauf-energiefluss",
+      "from": "bio-populationsdynamik-lotka-volterra",
+      "to": "bio-stoffkreislauf-energiefluss",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-bio-prokaryot-eukaryot-vergleich-bio-endosymbiontentheorie",
+      "from": "bio-prokaryot-eukaryot-vergleich",
+      "to": "bio-endosymbiontentheorie",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-bio-prokaryot-eukaryot-vergleich-bio-mitose-zellzyklus-regulation",
+      "from": "bio-prokaryot-eukaryot-vergleich",
+      "to": "bio-mitose-zellzyklus-regulation",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-bio-proteinbiosynthese-transkription-translation-bio-crispr-bioinformatik-genomeditierung",
+      "from": "bio-proteinbiosynthese-transkription-translation",
+      "to": "bio-crispr-bioinformatik-genomeditierung",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-bio-proteinbiosynthese-transkription-translation-bio-epigenetik-methylierung-histonmodifikation",
+      "from": "bio-proteinbiosynthese-transkription-translation",
+      "to": "bio-epigenetik-methylierung-histonmodifikation",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-bio-proteinbiosynthese-transkription-translation-bio-genregulation-transkriptionsfaktoren",
+      "from": "bio-proteinbiosynthese-transkription-translation",
+      "to": "bio-genregulation-transkriptionsfaktoren",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-bio-proteinbiosynthese-transkription-translation-bio-gentechnik-pcr-gelelektrophorese",
+      "from": "bio-proteinbiosynthese-transkription-translation",
+      "to": "bio-gentechnik-pcr-gelelektrophorese",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-bio-r-k-strategien-wachstumsmodelle-bio-biodiversitaet-oekosystemmanagement",
+      "from": "bio-r-k-strategien-wachstumsmodelle",
+      "to": "bio-biodiversitaet-oekosystemmanagement",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-bio-r-k-strategien-wachstumsmodelle-bio-stoffkreislauf-energiefluss",
+      "from": "bio-r-k-strategien-wachstumsmodelle",
+      "to": "bio-stoffkreislauf-energiefluss",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-bio-reflexe-reflexbogen-bio-neuromuskulaere-synapse-motorik",
+      "from": "bio-reflexe-reflexbogen",
+      "to": "bio-neuromuskulaere-synapse-motorik",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-bio-selektionstypen-fitness-bio-artbegriff-artbildung-isolation",
+      "from": "bio-selektionstypen-fitness",
+      "to": "bio-artbegriff-artbildung-isolation",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-bio-selektionstypen-fitness-bio-gendrift-mutation-rekombination",
+      "from": "bio-selektionstypen-fitness",
+      "to": "bio-gendrift-mutation-rekombination",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-bio-selektionstypen-fitness-bio-hardy-weinberg-populationsgenetik",
+      "from": "bio-selektionstypen-fitness",
+      "to": "bio-hardy-weinberg-populationsgenetik",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-bio-selektionstypen-fitness-bio-humanevolution-kulturelle-evolution",
+      "from": "bio-selektionstypen-fitness",
+      "to": "bio-humanevolution-kulturelle-evolution",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-bio-selektionstypen-fitness-bio-koevolution-kosten-nutzen",
+      "from": "bio-selektionstypen-fitness",
+      "to": "bio-koevolution-kosten-nutzen",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-bio-selektionstypen-fitness-bio-stammbaumanalyse-homologien",
+      "from": "bio-selektionstypen-fitness",
+      "to": "bio-stammbaumanalyse-homologien",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-bio-sinnesorgane-auge-ohr-bio-sinneszellen-rezeptorpotential",
+      "from": "bio-sinnesorgane-auge-ohr",
+      "to": "bio-sinneszellen-rezeptorpotential",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-bio-sinneszellen-rezeptorpotential-bio-neuronale-plastizitaet-lernen",
+      "from": "bio-sinneszellen-rezeptorpotential",
+      "to": "bio-neuronale-plastizitaet-lernen",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-bio-stammbaumanalyse-homologien-bio-artbegriff-artbildung-isolation",
+      "from": "bio-stammbaumanalyse-homologien",
+      "to": "bio-artbegriff-artbildung-isolation",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-bio-stammbaumanalyse-homologien-bio-humanevolution-kulturelle-evolution",
+      "from": "bio-stammbaumanalyse-homologien",
+      "to": "bio-humanevolution-kulturelle-evolution",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-bio-stammbaumanalyse-homologien-bio-klausur-synthese-abitur",
+      "from": "bio-stammbaumanalyse-homologien",
+      "to": "bio-klausur-synthese-abitur",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-bio-stammbaumanalyse-homologien-bio-phylogenetik-molekulare-uhr-bioinformatik",
+      "from": "bio-stammbaumanalyse-homologien",
+      "to": "bio-phylogenetik-molekulare-uhr-bioinformatik",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-bio-stoffgruppen-kohlenhydrate-lipide-proteine-bio-atp-adp-redoxsystem",
+      "from": "bio-stoffgruppen-kohlenhydrate-lipide-proteine",
+      "to": "bio-atp-adp-redoxsystem",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-bio-stoffgruppen-kohlenhydrate-lipide-proteine-bio-enzymaufbau-schluessel-schloss",
+      "from": "bio-stoffgruppen-kohlenhydrate-lipide-proteine",
+      "to": "bio-enzymaufbau-schluessel-schloss",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-bio-stoffkreislauf-energiefluss-bio-biodiversitaet-oekosystemmanagement",
+      "from": "bio-stoffkreislauf-energiefluss",
+      "to": "bio-biodiversitaet-oekosystemmanagement",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-bio-stoffkreislauf-energiefluss-bio-treibhauseffekt-nachhaltigkeit",
+      "from": "bio-stoffkreislauf-energiefluss",
+      "to": "bio-treibhauseffekt-nachhaltigkeit",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-bio-sukzession-klimaxstadium-bio-stoffkreislauf-energiefluss",
+      "from": "bio-sukzession-klimaxstadium",
+      "to": "bio-stoffkreislauf-energiefluss",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-bio-sukzession-klimaxstadium-bio-treibhauseffekt-nachhaltigkeit",
+      "from": "bio-sukzession-klimaxstadium",
+      "to": "bio-treibhauseffekt-nachhaltigkeit",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-bio-symbiose-parasitismus-raeubeute-bio-biodiversitaet-oekosystemmanagement",
+      "from": "bio-symbiose-parasitismus-raeubeute",
+      "to": "bio-biodiversitaet-oekosystemmanagement",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-bio-symbiose-parasitismus-raeubeute-bio-populationsdynamik-lotka-volterra",
+      "from": "bio-symbiose-parasitismus-raeubeute",
+      "to": "bio-populationsdynamik-lotka-volterra",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-bio-symbiose-parasitismus-raeubeute-bio-r-k-strategien-wachstumsmodelle",
+      "from": "bio-symbiose-parasitismus-raeubeute",
+      "to": "bio-r-k-strategien-wachstumsmodelle",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-bio-synthetische-evolutionstheorie-bio-gendrift-mutation-rekombination",
+      "from": "bio-synthetische-evolutionstheorie",
+      "to": "bio-gendrift-mutation-rekombination",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-bio-synthetische-evolutionstheorie-bio-stammbaumanalyse-homologien",
+      "from": "bio-synthetische-evolutionstheorie",
+      "to": "bio-stammbaumanalyse-homologien",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-bio-toleranzkurven-oekologische-potenz-bio-populationsdynamik-lotka-volterra",
+      "from": "bio-toleranzkurven-oekologische-potenz",
+      "to": "bio-populationsdynamik-lotka-volterra",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-bio-toleranzkurven-oekologische-potenz-bio-symbiose-parasitismus-raeubeute",
+      "from": "bio-toleranzkurven-oekologische-potenz",
+      "to": "bio-symbiose-parasitismus-raeubeute",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-bio-treibhauseffekt-nachhaltigkeit-bio-biodiversitaet-oekosystemmanagement",
+      "from": "bio-treibhauseffekt-nachhaltigkeit",
+      "to": "bio-biodiversitaet-oekosystemmanagement",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-bio-treibhauseffekt-nachhaltigkeit-bio-klausur-synthese-abitur",
+      "from": "bio-treibhauseffekt-nachhaltigkeit",
+      "to": "bio-klausur-synthese-abitur",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-bio-variabilitaet-mutation-selektion-bio-selektionstypen-fitness",
+      "from": "bio-variabilitaet-mutation-selektion",
+      "to": "bio-selektionstypen-fitness",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-bio-variabilitaet-mutation-selektion-bio-synthetische-evolutionstheorie",
+      "from": "bio-variabilitaet-mutation-selektion",
+      "to": "bio-synthetische-evolutionstheorie",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-bio-zellatmung-grundlagen-bio-atp-adp-redoxsystem",
+      "from": "bio-zellatmung-grundlagen",
+      "to": "bio-atp-adp-redoxsystem",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-bio-zellatmung-grundlagen-bio-blutkreislauf-atemorgane",
+      "from": "bio-zellatmung-grundlagen",
+      "to": "bio-blutkreislauf-atemorgane",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-bio-zelle-grundbausteine-bio-pflanzliche-tierische-zelle",
+      "from": "bio-zelle-grundbausteine",
+      "to": "bio-pflanzliche-tierische-zelle",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-bio-zellorganellen-kompartimentierung-bio-biomembran-transportmechanismen",
+      "from": "bio-zellorganellen-kompartimentierung",
+      "to": "bio-biomembran-transportmechanismen",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-bio-zellorganellen-kompartimentierung-bio-meiose-rekombination",
+      "from": "bio-zellorganellen-kompartimentierung",
+      "to": "bio-meiose-rekombination",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-bio-zellorganellen-kompartimentierung-bio-mitose-zellzyklus-regulation",
+      "from": "bio-zellorganellen-kompartimentierung",
+      "to": "bio-mitose-zellzyklus-regulation",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-bio-zellorganellen-kompartimentierung-bio-prokaryot-eukaryot-vergleich",
+      "from": "bio-zellorganellen-kompartimentierung",
+      "to": "bio-prokaryot-eukaryot-vergleich",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-syn-bio-1",
+      "from": "bio-diffusion-osmose-plasmolyse",
+      "to": "bio-aktiver-transport-natrium-kalium-pumpe",
+      "type": "synergy",
+      "descriptionZH": "被动与主动跨膜转运互为对照，同一张浓度梯度图上可同时判断方向与能量代价。"
+    },
+    {
+      "id": "e-syn-bio-2",
+      "from": "bio-mitose-zellzyklus-regulation",
+      "to": "bio-meiose-rekombination",
+      "type": "synergy",
+      "descriptionZH": "有丝与减数分裂共享纺锤体机制，对比两者可一次补齐染色体数目与重组两个考点。"
+    },
+    {
+      "id": "e-syn-bio-3",
+      "from": "bio-enzymkinetik-hemmtypen",
+      "to": "bio-chemiosmotische-atp-bildung",
+      "type": "synergy",
+      "descriptionZH": "酶动力学与化学渗透共享同一条饱和曲线的读图方法，抑制剂分析与质子梯度分析互为迁移。"
+    },
+    {
+      "id": "e-syn-bio-4",
+      "from": "bio-glykolyse-oxidative-decarboxylierung",
+      "to": "bio-photosynthese-lichtreaktion-calvin-zyklus",
+      "type": "synergy",
+      "descriptionZH": "呼吸与光合是同一套氧化还原逻辑的两个方向，对照记忆可显著降低能量账目混淆。"
+    },
+    {
+      "id": "e-syn-bio-5",
+      "from": "bio-dna-bau-doppelhelix",
+      "to": "bio-erbgut-chromosomen-karyogramm",
+      "type": "synergy",
+      "descriptionZH": "从碱基配对到染色体包装是两个尺度上的同一份遗传信息，联动复习可建立尺度感。"
+    },
+    {
+      "id": "e-syn-bio-6",
+      "from": "bio-genregulation-transkriptionsfaktoren",
+      "to": "bio-epigenetik-methylierung-histonmodifikation",
+      "type": "synergy",
+      "descriptionZH": "转录因子调控与表观修饰共同回答同一问题：为何同一个基因组会产生不同的细胞类型。"
+    },
+    {
+      "id": "e-syn-bio-7",
+      "from": "bio-neuron-ruhepotential",
+      "to": "bio-aktionspotential-saltatorische-leitung",
+      "type": "synergy",
+      "descriptionZH": "静息与动作电位共用同一张膜电位坐标图，两点连读即可完整掌握电位随时间的变化轨迹。"
+    },
+    {
+      "id": "e-syn-bio-8",
+      "from": "bio-sinneszellen-rezeptorpotential",
+      "to": "bio-neuronale-plastizitaet-lernen",
+      "type": "synergy",
+      "descriptionZH": "感受器电位与突触后电位同属等级性电位，对照记忆可一次厘清两类非全或无信号。"
+    },
+    {
+      "id": "e-syn-bio-9",
+      "from": "bio-toleranzkurven-oekologische-potenz",
+      "to": "bio-oekologische-nische-konkurrenz",
+      "type": "synergy",
+      "descriptionZH": "耐受曲线提供单因子维度，生态位提供多维框架，两者组合才能解释同域共存。"
+    },
+    {
+      "id": "e-syn-bio-10",
+      "from": "bio-populationsdynamik-lotka-volterra",
+      "to": "bio-r-k-strategien-wachstumsmodelle",
+      "type": "synergy",
+      "descriptionZH": "捕食振荡模型与增长模型共用微分形式的建模语言，一并训练可覆盖全部定量生态题。"
+    },
+    {
+      "id": "e-syn-bio-11",
+      "from": "bio-synthetische-evolutionstheorie",
+      "to": "bio-selektionstypen-fitness",
+      "type": "synergy",
+      "descriptionZH": "因子框架解释原因，选择类型解释效应，两者互为因果两端，联动后论证链完整。"
+    },
+    {
+      "id": "e-syn-bio-12",
+      "from": "bio-stammbaumanalyse-homologien",
+      "to": "bio-hardy-weinberg-populationsgenetik",
+      "type": "synergy",
+      "descriptionZH": "系统树刻画历史分化，群体遗传刻画当下频率，两条证据线在物种形成问题上汇合。"
+    },
+    {
+      "id": "e-cross-bio-1",
+      "from": "bio-atp-adp-redoxsystem",
+      "to": "bio-aktiver-transport-natrium-kalium-pumpe",
+      "type": "cross_disciplinary",
+      "descriptionZH": "ATP 的能量账目在此落地为具体的离子泵做功，能量代谢与膜转运在同一道题里交汇。"
+    },
+    {
+      "id": "e-cross-bio-2",
+      "from": "bio-chemiosmotische-atp-bildung",
+      "to": "bio-neuron-ruhepotential",
+      "type": "cross_disciplinary",
+      "descriptionZH": "化学渗透建立的离子梯度与神经元静息电位共享同一套电化学原理。"
+    },
+    {
+      "id": "e-cross-bio-3",
+      "from": "bio-proteinbiosynthese-transkription-translation",
+      "to": "bio-neuroinformatik-hodgkin-huxley-modell",
+      "type": "cross_disciplinary",
+      "descriptionZH": "基因表达决定离子通道蛋白的构成，从而决定可被建模的膜电学性质。"
+    },
+    {
+      "id": "e-cross-bio-4",
+      "from": "bio-stammbaumanalyse-homologien",
+      "to": "bio-endosymbiontentheorie",
+      "type": "cross_disciplinary",
+      "descriptionZH": "内共生学说本质上是一次系统发育推断，同源性与分子证据在此支撑细胞器起源。"
+    },
+    {
+      "id": "e-cross-bio-5",
+      "from": "bio-populationsdynamik-lotka-volterra",
+      "to": "bio-gendrift-mutation-rekombination",
+      "type": "cross_disciplinary",
+      "descriptionZH": "种群数量的随机波动与等位基因的随机漂变共用同一套小种群随机性论证。"
+    },
+    {
+      "id": "e-cross-bio-6",
+      "from": "bio-immunsystem-abwehr-impfung-allergie",
+      "to": "bio-synthetische-evolutionstheorie",
+      "type": "cross_disciplinary",
+      "descriptionZH": "病原体抗原变异与免疫记忆的军备竞赛，是选择压力驱动等位频率变化的直观案例。"
+    }
+  ]
+}
