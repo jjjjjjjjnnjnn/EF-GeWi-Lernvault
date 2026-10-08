@@ -2,6 +2,7 @@ import { useEffect, useMemo, useRef, useState, type ReactNode } from "react";
 import { t, type Lang } from "./i18n";
 import { repository, type KnowledgeNote, type KnowledgeCard } from "./framework";
 import { KnowledgeManagerModal } from "./components/KnowledgeManagerModal";
+import { CoursePipelineModal } from "./components/CoursePipelineModal";
 import { GLOBAL_KEYS, MODULE_KEYS, isTyping, matchesKey } from "./keys";
 import { FAECHER, getFach } from "./fach";
 import Palette, { type PaletteItem } from "./components/Palette";
@@ -340,6 +341,7 @@ export default function App() {
   const [helpOpen, setHelpOpen] = useState(false);
   const [sprintOpen, setSprintOpen] = useState(false);
   const [knowledgeManagerOpen, setKnowledgeManagerOpen] = useState(false);
+  const [coursePipelineOpen, setCoursePipelineOpen] = useState(false);
   const [knowledgeVersion, setKnowledgeVersion] = useState(0);
 
   useEffect(() => {
@@ -573,6 +575,13 @@ export default function App() {
         label: tr.settings,
         hint: settingsShortcut.altHint,
         run: () => switchTab("einstellungen"),
+      },
+      {
+        id: "act-course-pipeline",
+        group: lang === "de" ? "Aktionen" : "操作",
+        label: lang === "de" ? "Kurs-Pipeline (Buch ➔ Kursserie)" : "课程工坊 (书本 ➔ 趣味课程集生成流水线)",
+        hint: "P",
+        run: () => setCoursePipelineOpen(true),
       },
     ],
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -822,6 +831,19 @@ export default function App() {
             </button>
             <button
               type="button"
+              onClick={() => setCoursePipelineOpen(true)}
+              className="flex items-center gap-1.5 rounded-[var(--radius)] border border-[var(--line)] bg-[var(--surface)] px-2.5 py-1 font-mono text-xs text-[var(--ink)] transition-colors hover:bg-[var(--paper-subtle)] cursor-pointer"
+              title={lang === "de" ? "Kursserie aus Buch generieren (Pipeline)" : "书本 ➔ 趣味课程集生成流水线"}
+            >
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" className="h-3.5 w-3.5">
+                <path d="M2.5 3.5h5a2 2 0 0 1 2 2v7.5a1.5 1.5 0 0 0-1.5-1.5H2.5z" />
+                <path d="M13.5 3.5h-5a2 2 0 0 0-2 2v7.5a1.5 1.5 0 0 1 1.5-1.5h5.5z" />
+                <path d="M11.5 6.5l1.5 1.5-1.5 1.5" />
+              </svg>
+              <span>{lang === "de" ? "Kurs-Pipeline" : "课程工坊"}</span>
+            </button>
+            <button
+              type="button"
               onClick={() => setSprintOpen(true)}
               className="flex items-center gap-1.5 rounded-[var(--radius)] border border-[var(--line)] bg-[var(--surface)] px-2.5 py-1 font-mono text-xs text-[var(--ink)] transition-colors hover:bg-[var(--paper-subtle)] cursor-pointer"
             >
@@ -1009,6 +1031,7 @@ export default function App() {
               vaultMsg={vaultMsg}
               onOpenVault={() => void openVault()}
               onOpenKnowledgeManager={() => setKnowledgeManagerOpen(true)}
+              onOpenCoursePipeline={() => setCoursePipelineOpen(true)}
               onExportFsrs={exportFsrs}
               onExportXp={exportXp}
               onRedoOnboarding={() => setObOpen(true)}
@@ -1033,6 +1056,15 @@ export default function App() {
         isOpen={knowledgeManagerOpen}
         onClose={() => setKnowledgeManagerOpen(false)}
         lang={lang}
+      />
+      <CoursePipelineModal
+        isOpen={coursePipelineOpen}
+        onClose={() => setCoursePipelineOpen(false)}
+        lang={lang}
+        onLaunchCourse={() => {
+          setCoursePipelineOpen(false);
+          switchTab("reise");
+        }}
       />
       <FeedbackFloat lang={lang} />
     </div>

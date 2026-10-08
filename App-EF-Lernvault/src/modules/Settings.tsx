@@ -33,6 +33,7 @@ export default function Settings({
   onRedoOnboarding,
   onOpenHelp,
   onOpenKnowledgeManager,
+  onOpenCoursePipeline,
   devMode = false,
   onDevModeChange,
 }: {
@@ -46,6 +47,7 @@ export default function Settings({
   onRedoOnboarding: () => void;
   onOpenHelp: () => void;
   onOpenKnowledgeManager?: () => void;
+  onOpenCoursePipeline?: () => void;
   devMode?: boolean;
   onDevModeChange?: (active: boolean) => void;
 }) {
@@ -214,6 +216,15 @@ export default function Settings({
               className="rounded-[var(--radius)] border border-[var(--ink)] bg-[var(--ink)] px-3 py-1.5 font-sans text-xs text-[var(--paper)] hover:bg-[var(--accent)] hover:border-[var(--accent)] active:scale-95 transition-all duration-150"
             >
               {lang === "de" ? "Wissensbasis verwalten (Import / Export / Custom)" : "管理知识库 (导入/导出/自定义增添)"}
+            </button>
+          )}
+          {onOpenCoursePipeline && (
+            <button
+              type="button"
+              onClick={onOpenCoursePipeline}
+              className="rounded-[var(--radius)] border border-[var(--line)] bg-[var(--surface)] px-3 py-1.5 font-sans text-xs text-[var(--ink)] hover:border-[var(--accent)] active:scale-95 transition-all duration-150"
+            >
+              {lang === "de" ? "Kurs-Pipeline (Buch ➔ Kursserie)" : "课程工坊 (书本 ➔ 趣味课程集生成)"}
             </button>
           )}
           <button type="button" onClick={onOpenVault} className={btn}>
