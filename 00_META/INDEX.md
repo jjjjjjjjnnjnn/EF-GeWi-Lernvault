@@ -279,6 +279,7 @@
 - [2026-10-08-planetary-gravitational-graph-and-quality-gate](Journal/2026-10-08-planetary-gravitational-graph-and-quality-gate.md) — **行星引力发散式知识星系、多维分类标记与自动化质量门禁体系落地**：同心引力轨道+星区辐射+大学先修无上限扩充+JSON导入导出中心+Python自动化质量门禁
 - [2026-10-08-planetary-astrolabe-visual-redesign](Journal/2026-10-08-planetary-astrolabe-visual-redesign.md) — **行星引力图星盘测天仪 (Astrolabe Star Atlas) 视觉重塑与学术排版升级**：消除极坐标与方格冲突+真行星天体星核与吸积光环+外向辐射学术名牌+24齿星盘太阳核心与动态精通进度弧
 - [2026-10-08-planetary-graph-ten-subject-expansion](Journal/2026-10-08-planetary-graph-ten-subject-expansion.md) — **十科行星引力图谱批量扩张至 712 节点**：预设契约冻结+结构不变量自检器+编译期图谱接入+防漂移守卫测试；21 个既有节点 ID 逐字保留，进度零丢失
+- [2026-10-08-planetary-interaction-and-navigation-redesign](Journal/2026-10-08-planetary-interaction-and-navigation-redesign.md) — **行星知识图谱交互革命**：自由节点拖拽与一键复位+双指捏合与鼠标滚轮平滑缩放+单行全部分类Chip防换行重构+学科分页器与高中全科学科星系总录展开导航（516单测/build/vault-check全绿）
 - 约定：文件名 `YYYY-MM-DD-<thema>.md`，头部frontmatter（`fach`可空，`tags: [EF, Meta]`）。
 
 
