@@ -1,0 +1,2511 @@
+{
+  "schemaVersion": 1,
+  "fach": "SoWi",
+  "nameDE": "Sozialwissenschaften",
+  "nameZH": "社会科学 (SoWi)",
+  "descriptionDE": "Wirtschaftspolitik, Soziale Marktwirtschaft, Ungleichheit, politisches System der BRD und Europäische Integration (NRW Oberstufe & Uni-Prep)",
+  "descriptionZH": "经济政策、社会市场经济机制、分配不平等、德国政治体制与欧洲一体化 (全景引力星系图谱)",
+  "isCustomSubject": false,
+  "categories": [
+    "Mikrooekonomie",
+    "Makrooekonomie",
+    "Ordnungspolitik",
+    "Sozialstruktur",
+    "Politisches-System"
+  ],
+  "availableTags": [
+    "AFB-III",
+    "Basiswissen",
+    "Beschaeftigung",
+    "Buergergeld",
+    "Definition",
+    "Demokratie",
+    "EU",
+    "EZB",
+    "Fiskalpolitik",
+    "Formel",
+    "Geldpolitik",
+    "Gini",
+    "Globalisierung",
+    "Grafik",
+    "Inflation",
+    "Klausur-Dauerbrenner",
+    "Konjunktur",
+    "Markt",
+    "Marktversagen",
+    "Modell",
+    "Ordnungspolitik",
+    "Partizipation",
+    "Preisbildung",
+    "Quelle",
+    "Schwerpunkt-2026",
+    "Sozialisation",
+    "Sozialstaat",
+    "Spieltheorie",
+    "Ungleichheit",
+    "Uni-Prep",
+    "Verfahren",
+    "Verfassung",
+    "Wachstum",
+    "Wettbewerb",
+    "Wirtschaftspolitik"
+  ],
+  "nodes": [
+    {
+      "id": "sowi-oekonomisches-prinzip",
+      "fach": "SoWi",
+      "titleDE": "Ökonomisches Prinzip & Mittelwahl",
+      "titleZH": "经济性原则：最大化与最小化双轨决策",
+      "summaryDE": "Wirtschaftliches Handeln setzt knappe Mittel so ein, dass ein Ziel mit minimalem Aufwand oder mit gegebenem Aufwand der maximale Ertrag erreicht wird.",
+      "summaryZH": "经济行为的本质是在稀缺约束下理性配置资源：给定投入求最大产出，或给定目标求最小投入。",
+      "category": "Mikrooekonomie",
+      "curriculumTier": "Sek_I",
+      "stage": "einfuehrung",
+      "level": 1,
+      "xpReward": 60,
+      "estimatedMinutes": 6,
+      "prerequisites": [],
+      "layerIndex": 0,
+      "keyFormulaOrSentence": "Das ökonomische Prinzip verlangt den rationalen Einsatz knapper Mittel zur Erreichung eines Ziels.",
+      "commonFallacy": "Maximal- und Minimalprinzip werden vertauscht: Beim Maximalprinzip ist der Einsatz fixiert, beim Minimalprinzip das Ziel.",
+      "tags": [
+        "Basiswissen",
+        "Definition",
+        "Markt"
+      ],
+      "klausurTip": "Immer zuerst benennen, welche Größe im Szenario fixiert ist."
+    },
+    {
+      "id": "sowi-gueterarten-beduerfnisse",
+      "fach": "SoWi",
+      "titleDE": "Bedürfnisarten & Güterkategorien",
+      "titleZH": "需求层次与自由品/经济品的界限",
+      "summaryDE": "Bedürfnisse sind unbegrenzt, Güter begrenzt; freie Güter stehen unentgeltlich bereit, knappe Wirtschaftsgüter müssen bewirtschaftet werden.",
+      "summaryZH": "需求无限而资源有限；自由品无需代价即可取用，而经济品因稀缺必须被配置与交易。",
+      "category": "Mikrooekonomie",
+      "curriculumTier": "Sek_I",
+      "stage": "einfuehrung",
+      "level": 1,
+      "xpReward": 60,
+      "estimatedMinutes": 6,
+      "prerequisites": [],
+      "layerIndex": 0,
+      "keyFormulaOrSentence": "Erst die Knappheit eines Gutes macht es zum Wirtschaftsgut und erzeugt einen Preis.",
+      "commonFallacy": "Freie Güter (Luft) werden mit öffentlichen Gütern verwechselt, die zwar unentgeltlich nutzbar, aber nicht unbegrenzt sind.",
+      "tags": [
+        "Basiswissen",
+        "Definition",
+        "Markt"
+      ]
+    },
+    {
+      "id": "sowi-nachfrage-gesetz",
+      "fach": "SoWi",
+      "titleDE": "Nachfragekurve & Gesetz der Nachfrage",
+      "titleZH": "需求曲线与需求量反向规律",
+      "summaryDE": "Bei sinkendem Preis steigt die nachgefragte Menge; die Nachfragekurve verläuft deshalb ceteris paribus fallend.",
+      "summaryZH": "价格下降则需求量上升，需求曲线因此向右下方倾斜。",
+      "category": "Mikrooekonomie",
+      "curriculumTier": "Sek_I",
+      "stage": "grundlagen",
+      "level": 1,
+      "xpReward": 70,
+      "estimatedMinutes": 8,
+      "prerequisites": [
+        "sowi-oekonomisches-prinzip"
+      ],
+      "layerIndex": 1,
+      "keyFormulaOrSentence": "Die Nachfragekurve verläuft ceteris paribus fallend, weil ein sinkender Preis die nachgefragte Menge erhöht.",
+      "commonFallacy": "Nachfrage (ganze Kurve) und nachgefragte Menge (Punkt auf der Kurve) werden gleichgesetzt.",
+      "tags": [
+        "Basiswissen",
+        "Grafik",
+        "Markt"
+      ]
+    },
+    {
+      "id": "sowi-angebot-gesetz",
+      "fach": "SoWi",
+      "titleDE": "Angebotskurve & Grenzkosten",
+      "titleZH": "供给曲线与边际成本门槛",
+      "summaryDE": "Bei steigendem Preis steigt die angebotene Menge, da höhere Preise zusätzliche Grenzkosten decken.",
+      "summaryZH": "价格上升则供给量增加，因为更高价格足以覆盖新增单位的边际成本。",
+      "category": "Mikrooekonomie",
+      "curriculumTier": "Sek_I",
+      "stage": "grundlagen",
+      "level": 1,
+      "xpReward": 70,
+      "estimatedMinutes": 8,
+      "prerequisites": [
+        "sowi-oekonomisches-prinzip"
+      ],
+      "layerIndex": 1,
+      "keyFormulaOrSentence": "Die Angebotskurve entspricht ceteris paribus den Grenzkosten der Produktion und verläuft steigend.",
+      "commonFallacy": "Angebot und Produktionsmenge werden verwechselt; angeboten wird nur, was zum Marktpreis profitabel ist.",
+      "tags": [
+        "Basiswissen",
+        "Grafik",
+        "Markt"
+      ]
+    },
+    {
+      "id": "sowi-beduerfnis-knappheit",
+      "fach": "SoWi",
+      "titleDE": "Knappheit & Homo Oeconomicus",
+      "titleZH": "稀缺性公理与经济人假说批判",
+      "summaryDE": "Unendliche Bedürfnisse treffen auf begrenzte Güter; das Modell des rationalen Nutzensmaximierers erklärt Handeln, hat aber enge Grenzen.",
+      "summaryZH": "无限欲望与有限资源的矛盾；理性自利人模型的解释力与边界局限。",
+      "category": "Mikrooekonomie",
+      "curriculumTier": "EF",
+      "stage": "einfuehrung",
+      "level": 1,
+      "xpReward": 60,
+      "estimatedMinutes": 8,
+      "prerequisites": [],
+      "layerIndex": 2,
+      "keyFormulaOrSentence": "Das ökonomische Prinzip verlangt rationalen Mitteleinsatz (Maximal- oder Minimalprinzip).",
+      "commonFallacy": "Verwechslung von Maximalprinzip (gegebener Einsatz -> maximaler Ertrag) und Minimalprinzip (gegebenes Ziel -> minimaler Einsatz).",
+      "tags": [
+        "Basiswissen",
+        "Modell",
+        "Markt"
+      ],
+      "klausurTip": "Immer explizit abgrenzen, welches Prinzip im Szenario vorliegt."
+    },
+    {
+      "id": "sowi-preismechanismus",
+      "fach": "SoWi",
+      "titleDE": "Preismechanismus & Marktgleichgewicht",
+      "titleZH": "价格形成机制与市场均衡十字",
+      "summaryDE": "Zusammenspiel von Angebot und Nachfrage bestimmt Gleichgewichtspreis und -menge; der Preis übernimmt Signal-, Ausgleichs- und Lenkungsfunktion.",
+      "summaryZH": "供求双曲线交汇于均衡价格与均衡数量；价格发挥信号、调节与分配三大功能。",
+      "category": "Mikrooekonomie",
+      "curriculumTier": "EF",
+      "stage": "grundlagen",
+      "level": 2,
+      "xpReward": 100,
+      "estimatedMinutes": 10,
+      "prerequisites": [
+        "sowi-beduerfnis-knappheit",
+        "sowi-nachfrage-gesetz",
+        "sowi-angebot-gesetz"
+      ],
+      "layerIndex": 3,
+      "keyFormulaOrSentence": "Der Gleichgewichtspreis erfüllt Signalfunktion, Ausgleichsfunktion und Lenkungsfunktion.",
+      "commonFallacy": "Annahme, dass Höchstpreise das Angebot ausweiten (erzeugt in Wahrheit Nachfrageüberhang / Mangel).",
+      "tags": [
+        "Klausur-Dauerbrenner",
+        "Modell",
+        "Preisbildung",
+        "Markt"
+      ],
+      "linkedReiseId": "Sowi-Preismechanismus-Markt-L1",
+      "linkedNoteId": "08_SoWi/Texte-Analyse/Preismechanismus-und-Marktformen.md",
+      "linkedToolId": "markt-sim"
+    },
+    {
+      "id": "sowi-preiselastizitaet",
+      "fach": "SoWi",
+      "titleDE": "Preiselastizität der Nachfrage",
+      "titleZH": "需求价格弹性与税收归宿",
+      "summaryDE": "Die Preiselastizität misst die relative Mengenreaktion auf eine Preisänderung und entscheidet über die Steuerinzidenz.",
+      "summaryZH": "价格弹性衡量需求量对价格变化的相对反应强度，并决定税收负担在买卖双方间的归属。",
+      "category": "Mikrooekonomie",
+      "curriculumTier": "EF",
+      "stage": "vertiefung",
+      "level": 2,
+      "xpReward": 110,
+      "estimatedMinutes": 12,
+      "prerequisites": [
+        "sowi-preismechanismus"
+      ],
+      "layerIndex": 4,
+      "keyFormulaOrSentence": "Die Preiselastizität der Nachfrage ist der Quotient aus prozentualer Mengen- und prozentualer Preisänderung.",
+      "commonFallacy": "Elastizität wird mit der Steigung der Nachfragekurve verwechselt; Elastizität ist ein Verhältnis von Prozentänderungen.",
+      "tags": [
+        "Formel",
+        "Verfahren",
+        "Preisbildung"
+      ]
+    },
+    {
+      "id": "sowi-staatliche-preiseingriffe",
+      "fach": "SoWi",
+      "titleDE": "Staatliche Preisinterventionen",
+      "titleZH": "价格管制、税收与最低工资的福利代价",
+      "summaryDE": "Höchst-, Mindestpreise und Steuern verändern das Marktgleichgewicht und erzeugen Überhänge, Unterangebote oder Wohlfahrtsverluste.",
+      "summaryZH": "最高限价、最低限价与税收都会扭曲市场均衡，造成需求过剩、供给不足或无谓损失。",
+      "category": "Mikrooekonomie",
+      "curriculumTier": "EF",
+      "stage": "vertiefung",
+      "level": 2,
+      "xpReward": 110,
+      "estimatedMinutes": 12,
+      "prerequisites": [
+        "sowi-preismechanismus"
+      ],
+      "layerIndex": 4,
+      "keyFormulaOrSentence": "Ein bindender Höchstpreis unterhalb des Gleichgewichtspreises erzeugt einen Nachfrageüberhang.",
+      "commonFallacy": "Es wird angenommen, ein Mindestlohn über dem Gleichgewichtslohn schaffe Arbeitsplätze statt sie zu vernichten.",
+      "tags": [
+        "Klausur-Dauerbrenner",
+        "Modell",
+        "Preisbildung"
+      ]
+    },
+    {
+      "id": "sowi-marktversagen",
+      "fach": "SoWi",
+      "titleDE": "Marktversagen & Externe Effekte",
+      "titleZH": "市场失灵与负外部性困境",
+      "summaryDE": "Negative externe Effekte, Monopole und asymmetrische Information erfordern staatliche Rahmenordnung.",
+      "summaryZH": "负外部效应、自然垄断与信息不对称阻碍帕累托最优，构成国家介入的前提。",
+      "category": "Mikrooekonomie",
+      "curriculumTier": "EF",
+      "stage": "vertiefung",
+      "level": 2,
+      "xpReward": 110,
+      "estimatedMinutes": 12,
+      "prerequisites": [
+        "sowi-preismechanismus"
+      ],
+      "layerIndex": 5,
+      "keyFormulaOrSentence": "Negative externe Effekte führen zur Überproduktion auf Kosten Dritter (Internalisierung nötig).",
+      "commonFallacy": "Glaube, dass der Markt Umweltzerstörung von selbst internalisiert (Tragödie der Allmende).",
+      "tags": [
+        "Klausur-Dauerbrenner",
+        "Modell",
+        "Marktversagen"
+      ]
+    },
+    {
+      "id": "sowi-marktformen-monopol",
+      "fach": "SoWi",
+      "titleDE": "Marktformen & Kartellaufsicht",
+      "titleZH": "市场形态、垄断寡头与卡特尔监管",
+      "summaryDE": "Polypol, Oligopol und Monopol unterscheiden sich in der Preissetzungsmacht; das Bundeskartellamt schützt den Wettbewerb.",
+      "summaryZH": "完全竞争、寡头垄断与完全垄断的价格形成权柄；德国联邦卡特尔局对市场势力的监管。",
+      "category": "Mikrooekonomie",
+      "curriculumTier": "Q1",
+      "stage": "vertiefung",
+      "level": 2,
+      "xpReward": 115,
+      "estimatedMinutes": 12,
+      "prerequisites": [
+        "sowi-marktversagen"
+      ],
+      "layerIndex": 6,
+      "keyFormulaOrSentence": "Monopolistische Preissetzung mindert die Konsumentenrente und erzeugt Wohlfahrtsverluste.",
+      "commonFallacy": "Glaube, ein Monopolist setze den höchsten möglichen Preis; tatsächlich maximiert er den Gewinn beim Cournot-Punkt.",
+      "tags": [
+        "Klausur-Dauerbrenner",
+        "Modell",
+        "Wettbewerb"
+      ],
+      "linkedToolId": "orderbuch-simulator"
+    },
+    {
+      "id": "sowi-oeffentliche-gueter",
+      "fach": "SoWi",
+      "titleDE": "Öffentliche Güter & Allmendeproblem",
+      "titleZH": "公共品、俱乐部品与公地悲剧",
+      "summaryDE": "Öffentliche Güter sind nicht rivalisierend und nicht ausschließbar; Trittbrettfahrer führen zur Unterversorgung.",
+      "summaryZH": "公共品同时具有非竞争性与非排他性，搭便车行为导致供给不足。",
+      "category": "Mikrooekonomie",
+      "curriculumTier": "Q1",
+      "stage": "vertiefung",
+      "level": 2,
+      "xpReward": 120,
+      "estimatedMinutes": 12,
+      "prerequisites": [
+        "sowi-marktversagen"
+      ],
+      "layerIndex": 6,
+      "keyFormulaOrSentence": "Öffentliche Güter sind durch Nicht-Rivalität und Nicht-Ausschließbarkeit gekennzeichnet.",
+      "commonFallacy": "Öffentliche Güter werden mit staatlich bereitgestellten Gütern gleichgesetzt; Bereitstellung und Gütereigenschaft sind zu trennen.",
+      "tags": [
+        "Modell",
+        "Definition",
+        "Marktversagen"
+      ]
+    },
+    {
+      "id": "sowi-asymmetrische-information",
+      "fach": "SoWi",
+      "titleDE": "Asymmetrische Information",
+      "titleZH": "信息不对称：逆向选择与道德风险",
+      "summaryDE": "Wenn eine Marktseite besser informiert ist, drohen adverse Selektion und Moral Hazard bis hin zum Marktzusammenbruch.",
+      "summaryZH": "当一方掌握更多信息时，会出现逆向选择与道德风险，严重时导致市场崩溃。",
+      "category": "Mikrooekonomie",
+      "curriculumTier": "Q1",
+      "stage": "vertiefung",
+      "level": 2,
+      "xpReward": 120,
+      "estimatedMinutes": 12,
+      "prerequisites": [
+        "sowi-marktversagen"
+      ],
+      "layerIndex": 6,
+      "keyFormulaOrSentence": "Asymmetrische Information führt zu adverser Selektion, wenn Qualität für Käufer nicht beobachtbar ist.",
+      "commonFallacy": "Adverse Selektion und Moral Hazard werden vertauscht: Selektion wirkt vor Vertragsschluss, Moral Hazard danach.",
+      "tags": [
+        "Modell",
+        "Definition",
+        "Marktversagen"
+      ]
+    },
+    {
+      "id": "sowi-wohlfahrtsverlust-monopol",
+      "fach": "SoWi",
+      "titleDE": "Wohlfahrtsverlust & Konsumentenrente",
+      "titleZH": "垄断无谓损失与消费者剩余再分配",
+      "summaryDE": "Monopolpreise verschieben Rente von Konsumenten zu Produzenten und erzeugen einen nicht kompensierten Wohlfahrtsverlust.",
+      "summaryZH": "垄断定价将剩余从消费者转移给生产者，并造成无法回收的无谓福利损失。",
+      "category": "Mikrooekonomie",
+      "curriculumTier": "Q2",
+      "stage": "synthese",
+      "level": 3,
+      "xpReward": 150,
+      "estimatedMinutes": 16,
+      "prerequisites": [
+        "sowi-marktformen-monopol",
+        "sowi-preiselastizitaet"
+      ],
+      "layerIndex": 8,
+      "keyFormulaOrSentence": "Die Wohlfahrt ist maximal, wenn der Preis den Grenzkosten entspricht; jede Abweichung erzeugt einen Nettowohlfahrtsverlust.",
+      "commonFallacy": "Der Wohlfahrtsverlust wird mit dem reinen Rententransfer verwechselt; nur der nicht kompensierte Teil ist ein echter Verlust.",
+      "tags": [
+        "AFB-III",
+        "Klausur-Dauerbrenner",
+        "Wettbewerb"
+      ]
+    },
+    {
+      "id": "sowi-spieltheorie-nash",
+      "fach": "SoWi",
+      "titleDE": "Spieltheorie & Nash-Gleichgewicht",
+      "titleZH": "博弈论与纳什均衡 (大学先修)",
+      "summaryDE": "Strategische Interaktion im Oligopol: Gefangenendilemma, dominante Strategien und die Stabilität von Kartellen.",
+      "summaryZH": "寡头市场战略互动；囚徒困境与占优策略；非合作博弈在卡特尔合谋稳定性中的应用。",
+      "category": "Mikrooekonomie",
+      "curriculumTier": "Uni_Prep",
+      "stage": "vertiefung",
+      "level": 2,
+      "xpReward": 150,
+      "estimatedMinutes": 20,
+      "prerequisites": [
+        "sowi-marktformen-monopol"
+      ],
+      "layerIndex": 7,
+      "keyFormulaOrSentence": "Im Nash-Gleichgewicht hat kein Spieler einen einseitigen Anreiz, von seiner Strategie abzuweichen.",
+      "commonFallacy": "Glaube, dass das Nash-Gleichgewicht stets die gesellschaftlich beste Lösung (Pareto-Optimum) darstellt.",
+      "tags": [
+        "Uni-Prep",
+        "Modell",
+        "Spieltheorie"
+      ],
+      "klausurTip": "Auszahlungsmatrix präzise aufstellen und Beste-Antworten unterstreichen."
+    },
+    {
+      "id": "sowi-spieltheorie-wiederholte-spiele",
+      "fach": "SoWi",
+      "titleDE": "Gefangenendilemma & Wiederholte Spiele",
+      "titleZH": "囚徒困境与重复博弈的合谋稳定性",
+      "summaryDE": "Im einmaligen Gefangenendilemma ist Defektion dominant; in unendlich wiederholten Spielen kann Kooperation durch Tit-for-Tat stabil werden.",
+      "summaryZH": "单次囚徒困境中背叛是占优策略；在无限重复博弈中，以牙还牙策略可维持合作均衡。",
+      "category": "Mikrooekonomie",
+      "curriculumTier": "Uni_Prep",
+      "stage": "synthese",
+      "level": 3,
+      "xpReward": 160,
+      "estimatedMinutes": 22,
+      "prerequisites": [
+        "sowi-spieltheorie-nash",
+        "sowi-asymmetrische-information"
+      ],
+      "layerIndex": 8,
+      "keyFormulaOrSentence": "Kooperation ist in wiederholten Spielen nur stabil, wenn der Diskontfaktor hoch genug ist, um zukünftige Vergeltung wirksam zu machen.",
+      "commonFallacy": "Die dominante Strategie des Einmalspiels wird ungeprüft auf wiederholte Spiele übertragen.",
+      "tags": [
+        "Uni-Prep",
+        "AFB-III",
+        "Spieltheorie"
+      ]
+    },
+    {
+      "id": "sowi-wirtschaftskreislauf",
+      "fach": "SoWi",
+      "titleDE": "Wirtschaftskreislauf & Sektoren",
+      "titleZH": "经济循环模型与三大部门流量",
+      "summaryDE": "Haushalte, Unternehmen, Staat und Ausland tauschen Güterströme gegen Geldströme; der Kreislauf macht gesamtwirtschaftliche Zusammenhänge sichtbar.",
+      "summaryZH": "家庭、企业、国家与国外之间以货币流交换商品流，经济循环模型揭示宏观变量间的联动。",
+      "category": "Makrooekonomie",
+      "curriculumTier": "Sek_I",
+      "stage": "einfuehrung",
+      "level": 1,
+      "xpReward": 60,
+      "estimatedMinutes": 8,
+      "prerequisites": [],
+      "layerIndex": 0,
+      "keyFormulaOrSentence": "Im einfachen Wirtschaftskreislauf entspricht das Volkseinkommen der Summe aller Faktoreinkommen.",
+      "commonFallacy": "Güter- und Geldströme werden gleichgerichtet gezeichnet; sie laufen im Kreislauf entgegengesetzt.",
+      "tags": [
+        "Basiswissen",
+        "Modell",
+        "Wachstum"
+      ]
+    },
+    {
+      "id": "sowi-bip-wachstum",
+      "fach": "SoWi",
+      "titleDE": "Bruttoinlandsprodukt & Wachstum",
+      "titleZH": "国内生产总值与增长核算",
+      "summaryDE": "Das BIP misst den Wert aller im Inland erzeugten Endprodukte; sein reales Wachstum zeigt die Veränderung der Produktionskapazität.",
+      "summaryZH": "国内生产总值衡量一国境内最终产品的市场价值，其实际增长率反映生产能力的变化。",
+      "category": "Makrooekonomie",
+      "curriculumTier": "EF",
+      "stage": "einfuehrung",
+      "level": 1,
+      "xpReward": 80,
+      "estimatedMinutes": 10,
+      "prerequisites": [
+        "sowi-wirtschaftskreislauf"
+      ],
+      "layerIndex": 1,
+      "keyFormulaOrSentence": "Das reale BIP ist um Preisänderungen bereinigt und dient als Indikator der gesamtwirtschaftlichen Entwicklung.",
+      "commonFallacy": "Nominales und reales BIP werden verwechselt; nur das reale BIP ist um Inflation bereinigt.",
+      "tags": [
+        "Basiswissen",
+        "Definition",
+        "Wachstum"
+      ]
+    },
+    {
+      "id": "sowi-konjunkturzyklus",
+      "fach": "SoWi",
+      "titleDE": "Konjunkturzyklus & Indikatoren",
+      "titleZH": "景气周期四阶段与领先指标",
+      "summaryDE": "Konjunktur verläuft in den Phasen Aufschwung, Hochkonjunktur, Abschwung und Rezession; Frühindikatoren kündigen Wendepunkte an.",
+      "summaryZH": "景气循环经历复苏、繁荣、衰退与萧条四阶段，先行指标预示转折点。",
+      "category": "Makrooekonomie",
+      "curriculumTier": "EF",
+      "stage": "grundlagen",
+      "level": 2,
+      "xpReward": 90,
+      "estimatedMinutes": 10,
+      "prerequisites": [
+        "sowi-bip-wachstum"
+      ],
+      "layerIndex": 3,
+      "keyFormulaOrSentence": "Eine Rezession liegt technisch vor, wenn das reale BIP zwei Quartale in Folge schrumpft.",
+      "commonFallacy": "Konjunktur und Wachstum werden gleichgesetzt; Wachstum ist der langfristige Trend, Konjunktur die kurzfristige Schwankung um ihn.",
+      "tags": [
+        "Klausur-Dauerbrenner",
+        "Modell",
+        "Konjunktur"
+      ]
+    },
+    {
+      "id": "sowi-inflation-geldwert",
+      "fach": "SoWi",
+      "titleDE": "Inflation & Geldwertstabilität",
+      "titleZH": "通胀类型、购买力侵蚀与恶性通胀",
+      "summaryDE": "Inflation ist ein anhaltender Anstieg des allgemeinen Preisniveaus, der die Kaufkraft des Geldes senkt und Umverteilungswirkungen entfaltet.",
+      "summaryZH": "通胀是总体价格水平的持续上涨，侵蚀货币购买力并引发再分配效应。",
+      "category": "Makrooekonomie",
+      "curriculumTier": "EF",
+      "stage": "grundlagen",
+      "level": 2,
+      "xpReward": 90,
+      "estimatedMinutes": 10,
+      "prerequisites": [
+        "sowi-bip-wachstum"
+      ],
+      "layerIndex": 3,
+      "keyFormulaOrSentence": "Inflation bezeichnet einen anhaltenden Anstieg des allgemeinen Preisniveaus und damit einen sinkenden Geldwert.",
+      "commonFallacy": "Einzelne Preiserhöhungen werden als Inflation gedeutet; Inflation betrifft das allgemeine Preisniveau.",
+      "tags": [
+        "Klausur-Dauerbrenner",
+        "Definition",
+        "Inflation"
+      ]
+    },
+    {
+      "id": "sowi-arbeitsmarkt-beschaeftigung",
+      "fach": "SoWi",
+      "titleDE": "Arbeitsmarkt & Beschäftigung",
+      "titleZH": "劳动力市场、失业类型与自然失业率",
+      "summaryDE": "Arbeitsangebot und Arbeitsnachfrage bestimmen Lohn und Beschäftigung; friktionelle, saisonale, konjunkturelle und strukturelle Arbeitslosigkeit sind zu unterscheiden.",
+      "summaryZH": "劳动力供求决定工资与就业水平；需区分摩擦性、季节性、周期性与结构性失业。",
+      "category": "Makrooekonomie",
+      "curriculumTier": "EF",
+      "stage": "vertiefung",
+      "level": 2,
+      "xpReward": 100,
+      "estimatedMinutes": 12,
+      "prerequisites": [
+        "sowi-konjunkturzyklus"
+      ],
+      "layerIndex": 4,
+      "keyFormulaOrSentence": "Konjunkturelle Arbeitslosigkeit ist nachfragebedingt, strukturelle Arbeitslosigkeit entsteht durch dauerhafte Qualifikations- und Branchenverschiebungen.",
+      "commonFallacy": "Jede Arbeitslosigkeit wird als konjunkturell gedeutet; strukturelle Ursachen verlangen andere Instrumente.",
+      "tags": [
+        "Klausur-Dauerbrenner",
+        "Definition",
+        "Beschaeftigung"
+      ]
+    },
+    {
+      "id": "sowi-magisches-viereck",
+      "fach": "SoWi",
+      "titleDE": "Magisches Viereck (StabG 1967)",
+      "titleZH": "宏观经济魔术四角与目标冲突",
+      "summaryDE": "Vier Staatsziele des StabG: Preisniveaustabilität, hoher Beschäftigungsstand, stetiges angemessenes Wachstum und außenwirtschaftliches Gleichgewicht.",
+      "summaryZH": "1967稳定法§1四大目标：物价稳定、充分就业、适度增长、外贸平衡；目标不可同时实现。",
+      "category": "Makrooekonomie",
+      "curriculumTier": "Q1",
+      "stage": "vertiefung",
+      "level": 2,
+      "xpReward": 140,
+      "estimatedMinutes": 15,
+      "prerequisites": [
+        "sowi-konjunkturzyklus",
+        "sowi-arbeitsmarkt-beschaeftigung",
+        "sowi-marktversagen"
+      ],
+      "layerIndex": 6,
+      "keyFormulaOrSentence": "Zwischen Preisniveaustabilität und hohem Beschäftigungsstand besteht kurzfristig ein Phillips-Zielkonflikt.",
+      "commonFallacy": "Glaube, dass alle vier Ziele simultan zu 100% maximiert werden können.",
+      "tags": [
+        "Klausur-Dauerbrenner",
+        "Modell",
+        "Konjunktur"
+      ],
+      "linkedToolId": "magisches-viereck"
+    },
+    {
+      "id": "sowi-phillips-kurve",
+      "fach": "SoWi",
+      "titleDE": "Phillips-Kurve & Zielkonflikt",
+      "titleZH": "菲利普斯曲线与通胀失业权衡",
+      "summaryDE": "Die Phillips-Kurve beschreibt den kurzfristigen Trade-off zwischen Inflation und Arbeitslosigkeit, der langfristig verschwindet.",
+      "summaryZH": "菲利普斯曲线描述短期内通胀与失业的权衡关系，长期则趋于垂直。",
+      "category": "Makrooekonomie",
+      "curriculumTier": "Q1",
+      "stage": "vertiefung",
+      "level": 2,
+      "xpReward": 130,
+      "estimatedMinutes": 14,
+      "prerequisites": [
+        "sowi-magisches-viereck"
+      ],
+      "layerIndex": 7,
+      "keyFormulaOrSentence": "Langfristig ist die Phillips-Kurve vertikal, weil sich Inflationserwartungen an das tatsächliche Preisniveau anpassen.",
+      "commonFallacy": "Der kurzfristige Trade-off wird als dauerhaft stabiler Zusammenhang missverstanden.",
+      "tags": [
+        "Modell",
+        "Grafik",
+        "Konjunktur"
+      ]
+    },
+    {
+      "id": "sowi-ezb-geldpolitik",
+      "fach": "SoWi",
+      "titleDE": "EZB Geldpolitik & Inflation",
+      "titleZH": "欧洲央行利率政策与通胀治理",
+      "summaryDE": "Leitzinsinstrumente, Mindestreserve und quantitative Lockerung zur Wahrung der Preisniveaustabilität.",
+      "summaryZH": "三大基准利率、公开市场操作与量化宽松；以 2% 对称通胀为法定义务的货币传导机制。",
+      "category": "Makrooekonomie",
+      "curriculumTier": "Q1",
+      "stage": "vertiefung",
+      "level": 2,
+      "xpReward": 130,
+      "estimatedMinutes": 15,
+      "prerequisites": [
+        "sowi-magisches-viereck"
+      ],
+      "layerIndex": 7,
+      "keyFormulaOrSentence": "Eine Leitzinserhöhung dämpft die Kreditnachfrage, hemmt Investitionen und bremst die Inflation.",
+      "commonFallacy": "Annahme, die EZB könne einzelne Preise direkt steuern; Geldpolitik wirkt nur mittelbar über Zinsen und Erwartungen.",
+      "tags": [
+        "Klausur-Dauerbrenner",
+        "EZB",
+        "Geldpolitik",
+        "Inflation"
+      ],
+      "linkedToolId": "ezb-geldpolitik-sim"
+    },
+    {
+      "id": "sowi-geldpolitische-transmission",
+      "fach": "SoWi",
+      "titleDE": "Geldpolitische Transmission",
+      "titleZH": "货币政策传导链条与政策时滞",
+      "summaryDE": "Leitzinsänderungen wirken über Zins-, Kredit-, Vermögens- und Erwartungskanäle verzögert auf Preise und Produktion.",
+      "summaryZH": "基准利率变动通过利率、信贷、资产价格与预期渠道，滞后地影响物价与产出。",
+      "category": "Makrooekonomie",
+      "curriculumTier": "Q1",
+      "stage": "vertiefung",
+      "level": 2,
+      "xpReward": 140,
+      "estimatedMinutes": 16,
+      "prerequisites": [
+        "sowi-ezb-geldpolitik",
+        "sowi-phillips-kurve"
+      ],
+      "layerIndex": 8,
+      "keyFormulaOrSentence": "Geldpolitik wirkt mit time lags von mehreren Quartalen, sodass Wirkung und Zielgröße zeitlich auseinanderfallen.",
+      "commonFallacy": "Es wird angenommen, geldpolitische Impulse wirken sofort und punktgenau auf die Inflationsrate.",
+      "tags": [
+        "Klausur-Dauerbrenner",
+        "Verfahren",
+        "Geldpolitik"
+      ]
+    },
+    {
+      "id": "sowi-staatsverschuldung",
+      "fach": "SoWi",
+      "titleDE": "Staatsverschuldung & Fiskalpolitik",
+      "titleZH": "财政赤字、债务刹车与代际公平",
+      "summaryDE": "Defizitfinanzierte Fiskalpolitik kann Nachfrage stützen, belastet aber über Zinslast und Schuldenbremse künftige Haushalte.",
+      "summaryZH": "赤字财政可托底需求，但利息负担与债务刹车会把成本转嫁给未来世代。",
+      "category": "Makrooekonomie",
+      "curriculumTier": "Q2",
+      "stage": "synthese",
+      "level": 2,
+      "xpReward": 150,
+      "estimatedMinutes": 16,
+      "prerequisites": [
+        "sowi-magisches-viereck"
+      ],
+      "layerIndex": 9,
+      "keyFormulaOrSentence": "Deficit Spending kann kurzfristig die Nachfrage stabilisieren, erhöht aber langfristig die Zinslast und schränkt den fiskalischen Spielraum ein.",
+      "commonFallacy": "Staatsschulden werden mit privaten Schulden gleichgesetzt; die Tragfähigkeit hängt vom Wachstum-Zins-Verhältnis ab.",
+      "tags": [
+        "Klausur-Dauerbrenner",
+        "Wirtschaftspolitik",
+        "Fiskalpolitik"
+      ]
+    },
+    {
+      "id": "sowi-angebotsorientierte-wirtschaftspolitik",
+      "fach": "SoWi",
+      "titleDE": "Angebotsorientierte Wirtschaftspolitik",
+      "titleZH": "供给侧政策：减税、去管制与结构改革",
+      "summaryDE": "Angebotsorientierung setzt auf Steuerentlastung, Deregulierung und Investitionsanreize statt auf staatliche Nachfragesteuerung.",
+      "summaryZH": "供给侧政策以减税、放松管制与投资激励替代国家需求刺激。",
+      "category": "Makrooekonomie",
+      "curriculumTier": "Q2",
+      "stage": "synthese",
+      "level": 2,
+      "xpReward": 150,
+      "estimatedMinutes": 16,
+      "prerequisites": [
+        "sowi-magisches-viereck"
+      ],
+      "layerIndex": 9,
+      "keyFormulaOrSentence": "Angebotsorientierte Politik stärkt die Produktionsbedingungen und senkt die Inflationsgefahr, wirkt aber erst mittel- bis langfristig.",
+      "commonFallacy": "Angebotspolitik wird als bloße Steuersenkung verkürzt; entscheidend ist die Verbesserung der Angebotsbedingungen.",
+      "tags": [
+        "Klausur-Dauerbrenner",
+        "Wirtschaftspolitik",
+        "Wachstum"
+      ]
+    },
+    {
+      "id": "sowi-keynes-vs-friedman",
+      "fach": "SoWi",
+      "titleDE": "Keynesianismus vs. Monetarismus",
+      "titleZH": "凯恩斯需求论 vs 货币主义 (大学先修)",
+      "summaryDE": "Paradigmenstreit: Fiskalische Nachfragesteuerung (Deficit Spending) versus geldmengenorientierte Politik.",
+      "summaryZH": "经济哲学范式之争：国家逆周期赤字扩张刺激需求 vs 货币主义以控制货币供应量为核心。",
+      "category": "Makrooekonomie",
+      "curriculumTier": "Uni_Prep",
+      "stage": "vertiefung",
+      "level": 3,
+      "xpReward": 160,
+      "estimatedMinutes": 20,
+      "prerequisites": [
+        "sowi-ezb-geldpolitik",
+        "sowi-geldpolitische-transmission"
+      ],
+      "layerIndex": 10,
+      "keyFormulaOrSentence": "Keynes betont die kurzfristige Instabilität privater Nachfrage, während Monetaristen staatliche Intervention als Hauptursache von Zyklen sehen.",
+      "commonFallacy": "Annahme, dass Deficit Spending ohne inflationäre Folgerisiken unbegrenzt möglich sei.",
+      "tags": [
+        "Uni-Prep",
+        "AFB-III",
+        "Wirtschaftspolitik"
+      ],
+      "klausurTip": "Beide Schulen strukturiert gegenüberstellen (Annahme, Diagnose, Therapie)."
+    },
+    {
+      "id": "sowi-makrooekonomie-theorievergleich",
+      "fach": "SoWi",
+      "titleDE": "Theorievergleich: Nachfrage- vs. Angebotssteuerung",
+      "titleZH": "宏观范式总对照：需求管理、供给改革与规则约束",
+      "summaryDE": "Der Vergleich ordnet keynesianische, monetaristische und angebotsorientierte Konzeptionen nach Annahmen, Diagnose und Therapie der Wirtschaftspolitik.",
+      "summaryZH": "该对照按假设、诊断与处方三个维度排列凯恩斯主义、货币主义与供给侧三大宏观构想。",
+      "category": "Makrooekonomie",
+      "curriculumTier": "Uni_Prep",
+      "stage": "synthese",
+      "level": 3,
+      "xpReward": 180,
+      "estimatedMinutes": 24,
+      "prerequisites": [
+        "sowi-keynes-vs-friedman",
+        "sowi-angebotsorientierte-wirtschaftspolitik",
+        "sowi-staatsverschuldung"
+      ],
+      "layerIndex": 11,
+      "keyFormulaOrSentence": "Wirtschaftspolitische Konzeptionen unterscheiden sich vor allem in der Frage, ob der Staat die Nachfrage steuert oder die Angebotsbedingungen verbessert.",
+      "commonFallacy": "Die Konzeptionen werden nur über ihre Instrumente verglichen, ohne die unterschiedlichen Annahmen über Marktstabilität zu prüfen.",
+      "tags": [
+        "Uni-Prep",
+        "AFB-III",
+        "Wirtschaftspolitik",
+        "Klausur-Dauerbrenner"
+      ]
+    },
+    {
+      "id": "sowi-qualitatives-wachstum",
+      "fach": "SoWi",
+      "titleDE": "Qualitatives Wachstum & Nachhaltigkeit",
+      "titleZH": "质量型增长、生态边界与代际可持续",
+      "summaryDE": "Qualitatives Wachstum ersetzt die Steigerung des BIP-Volumens durch Ziele wie Lebensqualität, Ressourcenschonung und Nachhaltigkeit.",
+      "summaryZH": "质量型增长以生活质量、资源节约与可持续性替代单纯的GDP总量扩张。",
+      "category": "Makrooekonomie",
+      "curriculumTier": "Uni_Prep",
+      "stage": "synthese",
+      "level": 3,
+      "xpReward": 160,
+      "estimatedMinutes": 20,
+      "prerequisites": [
+        "sowi-angebotsorientierte-wirtschaftspolitik",
+        "sowi-staatsverschuldung"
+      ],
+      "layerIndex": 10,
+      "keyFormulaOrSentence": "Qualitatives Wachstum misst Fortschritt nicht am BIP-Volumen, sondern an Lebensqualität und ökologischer Tragfähigkeit.",
+      "commonFallacy": "Wachstumskritik wird mit Wachstumsverzicht gleichgesetzt; qualitatives Wachstum zielt auf Strukturwandel, nicht auf Stillstand.",
+      "tags": [
+        "Uni-Prep",
+        "AFB-III",
+        "Wachstum"
+      ]
+    },
+    {
+      "id": "sowi-marktwirtschaft-grundprinzip",
+      "fach": "SoWi",
+      "titleDE": "Marktwirtschaft als Ordnungsidee",
+      "titleZH": "市场经济秩序理念与私有产权前提",
+      "summaryDE": "Die Marktwirtschaft beruht auf Privateigentum, Vertragsfreiheit, freiem Wettbewerb und dezentraler Koordination über Preise.",
+      "summaryZH": "市场经济以私有产权、契约自由、自由竞争与价格分散协调为制度基石。",
+      "category": "Ordnungspolitik",
+      "curriculumTier": "Sek_I",
+      "stage": "einfuehrung",
+      "level": 1,
+      "xpReward": 60,
+      "estimatedMinutes": 8,
+      "prerequisites": [],
+      "layerIndex": 0,
+      "keyFormulaOrSentence": "Die Marktwirtschaft koordiniert arbeitsteiliges Handeln dezentral über Preise statt über zentrale Planung.",
+      "commonFallacy": "Marktwirtschaft wird mit Regellosigkeit verwechselt; sie braucht eine staatlich gesicherte Wettbewerbsordnung.",
+      "tags": [
+        "Basiswissen",
+        "Definition",
+        "Ordnungspolitik"
+      ]
+    },
+    {
+      "id": "sowi-ordnungselemente-wettbewerb",
+      "fach": "SoWi",
+      "titleDE": "Ordnungselemente & Wettbewerbsfunktionen",
+      "titleZH": "秩序要素与竞争四大功能",
+      "summaryDE": "Wettbewerb erfüllt Lenkungs-, Verteilungs-, Innovations- und Kontrollfunktion und ist konstitutives Element der Wirtschaftsordnung.",
+      "summaryZH": "竞争承担调节、分配、创新与控制四大功能，是经济秩序的核心构成要素。",
+      "category": "Ordnungspolitik",
+      "curriculumTier": "EF",
+      "stage": "grundlagen",
+      "level": 2,
+      "xpReward": 90,
+      "estimatedMinutes": 10,
+      "prerequisites": [
+        "sowi-marktwirtschaft-grundprinzip"
+      ],
+      "layerIndex": 3,
+      "keyFormulaOrSentence": "Funktionsfähiger Wettbewerb erfüllt Lenkungs-, Verteilungs-, Innovations- und Kontrollfunktion.",
+      "commonFallacy": "Wettbewerb wird nur als Preismechanismus verstanden; seine Innovations- und Kontrollfunktion wird übersehen.",
+      "tags": [
+        "Klausur-Dauerbrenner",
+        "Definition",
+        "Wettbewerb"
+      ]
+    },
+    {
+      "id": "sowi-soziale-marktwirtschaft",
+      "fach": "SoWi",
+      "titleDE": "Soziale Marktwirtschaft & Ordoliberalismus",
+      "titleZH": "社会市场经济与秩序自由主义",
+      "summaryDE": "Verbindung von freier Marktinitiative und sozialem Ausgleich nach Müller-Armack und Erhard; der Staat sichert Wettbewerbsordnung und sozialen Ausgleich.",
+      "summaryZH": "市场自由竞争与社会平衡的制度统一；国家作为守门人维护竞争规则反对垄断。",
+      "category": "Ordnungspolitik",
+      "curriculumTier": "EF",
+      "stage": "grundlagen",
+      "level": 2,
+      "xpReward": 120,
+      "estimatedMinutes": 12,
+      "prerequisites": [
+        "sowi-beduerfnis-knappheit",
+        "sowi-ordnungselemente-wettbewerb"
+      ],
+      "layerIndex": 4,
+      "keyFormulaOrSentence": "Wohlstand für alle entsteht durch funktionierenden Wettbewerb, flankiert durch soziale Absicherung.",
+      "commonFallacy": "Soziale Marktwirtschaft wird als Wohlfahrtsstaat oder als reiner Liberalismus gedeutet; sie ist die Verbindung beider Prinzipien.",
+      "tags": [
+        "Klausur-Dauerbrenner",
+        "Modell",
+        "Ordnungspolitik"
+      ],
+      "linkedReiseId": "Sowi-Soziale-Marktwirtschaft-L1",
+      "linkedNoteId": "08_SoWi/Texte-Analyse/Soziale-Marktwirtschaft.md"
+    },
+    {
+      "id": "sowi-ordoliberalismus-freiburg",
+      "fach": "SoWi",
+      "titleDE": "Ordoliberalismus & Freiburger Schule",
+      "titleZH": "秩序自由主义与弗莱堡学派竞争秩序",
+      "summaryDE": "Die Freiburger Schule fordert einen starken Staat, der den Wettbewerb als Ordnung setzt, aber nicht selbst in den Marktprozess eingreift.",
+      "summaryZH": "弗莱堡学派主张强势国家设定竞争秩序，但国家自身不介入市场过程。",
+      "category": "Ordnungspolitik",
+      "curriculumTier": "EF",
+      "stage": "grundlagen",
+      "level": 2,
+      "xpReward": 90,
+      "estimatedMinutes": 10,
+      "prerequisites": [
+        "sowi-ordnungselemente-wettbewerb"
+      ],
+      "layerIndex": 4,
+      "keyFormulaOrSentence": "Der Ordoliberalismus verlangt einen starken Staat, der die Wettbewerbsordnung sichert, ohne in den Marktprozess einzugreifen.",
+      "commonFallacy": "Ordoliberalismus wird mit Laissez-faire verwechselt; er fordert gerade eine aktive staatliche Ordnungspolitik.",
+      "tags": [
+        "Modell",
+        "Quelle",
+        "Ordnungspolitik"
+      ]
+    },
+    {
+      "id": "sowi-wettbewerbspolitik-kartellamt",
+      "fach": "SoWi",
+      "titleDE": "Wettbewerbspolitik & Bundeskartellamt",
+      "titleZH": "竞争政策、GWB与联邦卡特尔局执法",
+      "summaryDE": "Das GWB verbietet Kartelle, missbraucht Marktmacht und untersagt wettbewerbsschädliche Fusionen; durchgesetzt wird es vom Bundeskartellamt.",
+      "summaryZH": "《反限制竞争法》禁止卡特尔、滥用市场支配地位与损害竞争的合并，由联邦卡特尔局负责执行。",
+      "category": "Ordnungspolitik",
+      "curriculumTier": "Q1",
+      "stage": "vertiefung",
+      "level": 2,
+      "xpReward": 130,
+      "estimatedMinutes": 14,
+      "prerequisites": [
+        "sowi-soziale-marktwirtschaft",
+        "sowi-ordoliberalismus-freiburg"
+      ],
+      "layerIndex": 6,
+      "keyFormulaOrSentence": "Kartellverbot, Missbrauchsaufsicht und Fusionskontrolle sind die drei Säulen des deutschen Wettbewerbsrechts.",
+      "commonFallacy": "Wettbewerbspolitik wird auf die Zerschlagung von Monopolen verkürzt; entscheidend ist der Schutz des Wettbewerbsprozesses.",
+      "tags": [
+        "Klausur-Dauerbrenner",
+        "Verfahren",
+        "Wettbewerb"
+      ]
+    },
+    {
+      "id": "sowi-wirtschaftsordnung-vergleich",
+      "fach": "SoWi",
+      "titleDE": "Wirtschaftsordnungen im Vergleich",
+      "titleZH": "经济体制比较：中央计划与市场协调",
+      "summaryDE": "Zentralverwaltungswirtschaft und Marktwirtschaft unterscheiden sich in Eigentumsordnung, Koordinationsmechanismus und Rolle des Staates.",
+      "summaryZH": "中央计划经济与市场经济在产权制度、协调机制与国家角色上根本不同。",
+      "category": "Ordnungspolitik",
+      "curriculumTier": "Uni_Prep",
+      "stage": "synthese",
+      "level": 3,
+      "xpReward": 150,
+      "estimatedMinutes": 18,
+      "prerequisites": [
+        "sowi-ordnungselemente-wettbewerb",
+        "sowi-soziale-marktwirtschaft"
+      ],
+      "layerIndex": 6,
+      "keyFormulaOrSentence": "Wirtschaftsordnungen lassen sich anhand von Eigentumsordnung, Koordinationsmechanismus und staatlicher Lenkung vergleichen.",
+      "commonFallacy": "Reale Wirtschaftsordnungen werden als reine Typen behandelt; tatsächlich sind sie Mischformen.",
+      "tags": [
+        "Uni-Prep",
+        "Modell",
+        "Ordnungspolitik"
+      ]
+    },
+    {
+      "id": "sowi-sozialprinzip-grundgesetz",
+      "fach": "SoWi",
+      "titleDE": "Sozialstaatsprinzip (Art. 20 & 28 GG)",
+      "titleZH": "社会国原则与基本法制度承诺",
+      "summaryDE": "Das Sozialstaatsprinzip verpflichtet den Staat, für soziale Sicherheit und einen Ausgleich der Lebensverhältnisse zu sorgen.",
+      "summaryZH": "社会国原则要求国家保障社会安全并平衡生活状况差距。",
+      "category": "Ordnungspolitik",
+      "curriculumTier": "Q1",
+      "stage": "vertiefung",
+      "level": 2,
+      "xpReward": 120,
+      "estimatedMinutes": 12,
+      "prerequisites": [
+        "sowi-soziale-marktwirtschaft"
+      ],
+      "layerIndex": 7,
+      "keyFormulaOrSentence": "Das Sozialstaatsprinzip verpflichtet den Staat zu sozialer Sicherheit und zum Ausgleich der Lebensverhältnisse.",
+      "commonFallacy": "Das Sozialstaatsprinzip wird als Anspruch auf ein bestimmtes Leistungsniveau gedeutet; es ist ein Gestaltungsauftrag, kein Leistungsgrundrecht.",
+      "tags": [
+        "Klausur-Dauerbrenner",
+        "Definition",
+        "Sozialstaat"
+      ]
+    },
+    {
+      "id": "sowi-tarifautonomie-sozialpartner",
+      "fach": "SoWi",
+      "titleDE": "Tarifautonomie & Sozialpartner",
+      "titleZH": "劳资自治、集体协议与工资谈判",
+      "summaryDE": "Tarifautonomie überlässt die Lohnfindung den Gewerkschaften und Arbeitgeberverbänden, ohne staatliche Lohndiktate.",
+      "summaryZH": "劳资自治把工资决定权交给工会与雇主协会，排除国家直接规定工资。",
+      "category": "Ordnungspolitik",
+      "curriculumTier": "Q1",
+      "stage": "vertiefung",
+      "level": 2,
+      "xpReward": 120,
+      "estimatedMinutes": 12,
+      "prerequisites": [
+        "sowi-soziale-marktwirtschaft"
+      ],
+      "layerIndex": 7,
+      "keyFormulaOrSentence": "Die Tarifautonomie überträgt die Lohnfindung den Tarifparteien und schließt staatliche Lohndiktate aus.",
+      "commonFallacy": "Tarifautonomie wird als staatliche Lohnfestsetzung missverstanden; der Staat setzt nur den rechtlichen Rahmen.",
+      "tags": [
+        "Definition",
+        "Verfahren",
+        "Sozialstaat"
+      ]
+    },
+    {
+      "id": "sowi-mitbestimmung-betrieb",
+      "fach": "SoWi",
+      "titleDE": "Mitbestimmung & Betriebsverfassung",
+      "titleZH": "企业共决与劳资共同治理",
+      "summaryDE": "Mitbestimmung sichert Beschäftigten Einfluss auf Unternehmensentscheidungen und gilt als ökonomisches und soziales Ordnungselement.",
+      "summaryZH": "共决制保障雇员对企业决策的影响力，兼具经济秩序与社会秩序双重属性。",
+      "category": "Ordnungspolitik",
+      "curriculumTier": "Q2",
+      "stage": "synthese",
+      "level": 2,
+      "xpReward": 140,
+      "estimatedMinutes": 14,
+      "prerequisites": [
+        "sowi-tarifautonomie-sozialpartner"
+      ],
+      "layerIndex": 8,
+      "keyFormulaOrSentence": "Mitbestimmung verbindet wirtschaftliche Effizienz mit sozialer Teilhabe der Beschäftigten.",
+      "commonFallacy": "Mitbestimmung wird als reine Arbeitnehmervertretung ohne ökonomische Funktion gedeutet.",
+      "tags": [
+        "Modell",
+        "Sozialstaat",
+        "Ordnungspolitik"
+      ]
+    },
+    {
+      "id": "sowi-wohlfahrtsstaat-legitimation",
+      "fach": "SoWi",
+      "titleDE": "Legitimation des Wohlfahrtsstaats",
+      "titleZH": "福利国家正当性：效率与合法性双标准",
+      "summaryDE": "Sozialstaatliches Handeln muss sich an Effizienz (Anreizwirkung) und Legitimität (soziale Gerechtigkeit) zugleich messen lassen.",
+      "summaryZH": "社会国行为必须同时接受效率（激励效应）与合法性（社会公正）双重标准的检验。",
+      "category": "Ordnungspolitik",
+      "curriculumTier": "Q2",
+      "stage": "synthese",
+      "level": 3,
+      "xpReward": 150,
+      "estimatedMinutes": 16,
+      "prerequisites": [
+        "sowi-sozialprinzip-grundgesetz",
+        "sowi-wettbewerbspolitik-kartellamt"
+      ],
+      "layerIndex": 9,
+      "keyFormulaOrSentence": "Sozialstaatliches Handeln ist an den Kriterien Effizienz und Legitimität zu beurteilen.",
+      "commonFallacy": "Umverteilung wird allein unter Gerechtigkeitsaspekten bewertet, ohne die Anreizwirkung auf Arbeitsangebot und Investition zu prüfen.",
+      "tags": [
+        "AFB-III",
+        "Klausur-Dauerbrenner",
+        "Sozialstaat"
+      ]
+    },
+    {
+      "id": "sowi-wirtschaftspolitik-legitimation",
+      "fach": "SoWi",
+      "titleDE": "Legitimation staatlicher Wirtschaftspolitik",
+      "titleZH": "国家经济干预的正当性论证",
+      "summaryDE": "Staatliches Eingreifen in die Wirtschaft ist legitim, wenn es Marktversagen korrigiert und dabei Verhältnismäßigkeit und Ordnungskonformität wahrt.",
+      "summaryZH": "国家对经济的干预只有在其纠正市场失灵且符合比例与秩序一致性时才具正当性。",
+      "category": "Ordnungspolitik",
+      "curriculumTier": "Q2",
+      "stage": "synthese",
+      "level": 3,
+      "xpReward": 150,
+      "estimatedMinutes": 16,
+      "prerequisites": [
+        "sowi-wettbewerbspolitik-kartellamt",
+        "sowi-sozialprinzip-grundgesetz"
+      ],
+      "layerIndex": 9,
+      "keyFormulaOrSentence": "Staatliche Wirtschaftspolitik ist legitimiert, wenn sie Marktversagen korrigiert und ordnungskonform bleibt.",
+      "commonFallacy": "Jede Korrektur von Marktversagen wird als legitim akzeptiert; auch Staatsversagen kann Wohlfahrt kosten.",
+      "tags": [
+        "AFB-III",
+        "Klausur-Dauerbrenner",
+        "Wirtschaftspolitik"
+      ]
+    },
+    {
+      "id": "sowi-wohlfahrtsstaat-finanzierung",
+      "fach": "SoWi",
+      "titleDE": "Finanzierung & Zukunft des Sozialstaats",
+      "titleZH": "社会国融资可持续性与人口结构压力",
+      "summaryDE": "Der demografische Wandel verschärft den Zielkonflikt zwischen Beitragssätzen, Leistungsniveau und Generationengerechtigkeit.",
+      "summaryZH": "人口结构变迁加剧缴费率、待遇水平与代际公平之间的目标冲突。",
+      "category": "Ordnungspolitik",
+      "curriculumTier": "Q2",
+      "stage": "synthese",
+      "level": 3,
+      "xpReward": 150,
+      "estimatedMinutes": 16,
+      "prerequisites": [
+        "sowi-wohlfahrtsstaat-legitimation",
+        "sowi-sozialprinzip-grundgesetz"
+      ],
+      "layerIndex": 10,
+      "keyFormulaOrSentence": "Der demografische Wandel verschiebt das Verhältnis von Beitragszahlern zu Leistungsempfängern und gefährdet die Finanzierbarkeit.",
+      "commonFallacy": "Die Finanzierung wird als rein fiskalisches Problem gesehen, ohne die Wirkung auf Erwerbsanreize und Generationengerechtigkeit.",
+      "tags": [
+        "AFB-III",
+        "Schwerpunkt-2026",
+        "Sozialstaat"
+      ]
+    },
+    {
+      "id": "sowi-ordnungspolitik-synthese",
+      "fach": "SoWi",
+      "titleDE": "Ordnungspolitische Synthese",
+      "titleZH": "秩序政策综合：竞争秩序与社会平衡的再权衡",
+      "summaryDE": "Die Synthese verbindet Wettbewerbsordnung, staatliche Legitimation und sozialen Ausgleich zu einem konsistenten ordnungspolitischen Urteil.",
+      "summaryZH": "该综合把竞争秩序、国家正当性与社会平衡整合为一个自洽的秩序政策判断。",
+      "category": "Ordnungspolitik",
+      "curriculumTier": "Uni_Prep",
+      "stage": "synthese",
+      "level": 3,
+      "xpReward": 180,
+      "estimatedMinutes": 24,
+      "prerequisites": [
+        "sowi-wettbewerbspolitik-kartellamt",
+        "sowi-wirtschaftspolitik-legitimation",
+        "sowi-wohlfahrtsstaat-legitimation"
+      ],
+      "layerIndex": 11,
+      "keyFormulaOrSentence": "Eine tragfähige Wirtschaftsordnung muss Wettbewerb sichern und sozialen Ausgleich ermöglichen, ohne die Anreizfunktion zu zerstören.",
+      "commonFallacy": "Wettbewerbsziele und Ausgleichsziele werden als unvereinbare Gegensätze behandelt statt als abzuwägende Ordnungsziele.",
+      "tags": [
+        "Uni-Prep",
+        "AFB-III",
+        "Ordnungspolitik"
+      ]
+    },
+    {
+      "id": "sowi-rolle-identitaet",
+      "fach": "SoWi",
+      "titleDE": "Rolle, Identität & Rollenkonflikt",
+      "titleZH": "角色、身份认同与角色冲突",
+      "summaryDE": "Soziale Rollen bündeln Erwartungen an eine Position; Rollenkonflikte und Identitätsbildung entstehen im Spannungsfeld mehrerer Rollen.",
+      "summaryZH": "社会角色凝聚了对特定地位的期待；多重角色张力引发角色冲突与身份建构。",
+      "category": "Sozialstruktur",
+      "curriculumTier": "Sek_I",
+      "stage": "einfuehrung",
+      "level": 1,
+      "xpReward": 60,
+      "estimatedMinutes": 8,
+      "prerequisites": [],
+      "layerIndex": 0,
+      "keyFormulaOrSentence": "Rollenhandeln folgt sozialen Erwartungen, während Identität die individuelle Verarbeitung dieser Erwartungen ist.",
+      "commonFallacy": "Rolle und Person werden gleichgesetzt; Rollenhandeln ist nur ein Ausschnitt der Person.",
+      "tags": [
+        "Basiswissen",
+        "Definition",
+        "Sozialisation"
+      ]
+    },
+    {
+      "id": "sowi-gruppen-verhalten",
+      "fach": "SoWi",
+      "titleDE": "Verhalten in Gruppen",
+      "titleZH": "群体行为、从众与群体极化",
+      "summaryDE": "In Gruppen verändert sich individuelles Verhalten durch Konformitätsdruck, Rollenzuweisung und Gruppenpolarisierung.",
+      "summaryZH": "在群体中，从众压力、角色分配与群体极化会改变个体行为。",
+      "category": "Sozialstruktur",
+      "curriculumTier": "Sek_I",
+      "stage": "grundlagen",
+      "level": 1,
+      "xpReward": 70,
+      "estimatedMinutes": 8,
+      "prerequisites": [
+        "sowi-rolle-identitaet"
+      ],
+      "layerIndex": 1,
+      "keyFormulaOrSentence": "Gruppen können Leistungen steigern, aber auch Konformitätsdruck und Risikoverschiebung erzeugen.",
+      "commonFallacy": "Gruppenentscheidungen werden pauschal als besser angenommen; Gruppendenken kann Urteile verschlechtern.",
+      "tags": [
+        "Basiswissen",
+        "Modell",
+        "Sozialisation"
+      ]
+    },
+    {
+      "id": "sowi-sozialisation-werte",
+      "fach": "SoWi",
+      "titleDE": "Sozialisation, Normen & Werte",
+      "titleZH": "社会化机构、规范内化与价值传递",
+      "summaryDE": "Sozialisationsinstanzen wie Familie, Schule und Peergroup vermitteln Normen und Werte, die individuelles Handeln dauerhaft prägen.",
+      "summaryZH": "家庭、学校与同辈群体等社会化机构传递规范与价值，持久塑造个体行为。",
+      "category": "Sozialstruktur",
+      "curriculumTier": "EF",
+      "stage": "grundlagen",
+      "level": 2,
+      "xpReward": 90,
+      "estimatedMinutes": 10,
+      "prerequisites": [
+        "sowi-rolle-identitaet"
+      ],
+      "layerIndex": 3,
+      "keyFormulaOrSentence": "Sozialisation ist der Prozess, in dem Individuen gesellschaftliche Normen und Werte verinnerlichen.",
+      "commonFallacy": "Sozialisation wird als einseitige Prägung verstanden; sie ist ein wechselseitiger Prozess zwischen Individuum und Gesellschaft.",
+      "tags": [
+        "Klausur-Dauerbrenner",
+        "Definition",
+        "Sozialisation"
+      ]
+    },
+    {
+      "id": "sowi-soziale-schichtung",
+      "fach": "SoWi",
+      "titleDE": "Soziale Schichtung & Mobilität",
+      "titleZH": "社会阶层分化与代际流动壁垒",
+      "summaryDE": "Modelle sozialer Ungleichheit (Dahrendorf, Geißler) beschreiben vertikale Schichtung; Bildung, Beruf und Einkommen bestimmen die Position.",
+      "summaryZH": "达伦多夫与盖斯勒阶层结构模型；教育传承壁垒与社会阶层流动性停滞。",
+      "category": "Sozialstruktur",
+      "curriculumTier": "EF",
+      "stage": "grundlagen",
+      "level": 1,
+      "xpReward": 90,
+      "estimatedMinutes": 10,
+      "prerequisites": [
+        "sowi-beduerfnis-knappheit",
+        "sowi-sozialisation-werte"
+      ],
+      "layerIndex": 4,
+      "keyFormulaOrSentence": "Bildungsherkunft bestimmt in Deutschland überproportional den sozioökonomischen Status.",
+      "commonFallacy": "Schichtung wird mit Klassen oder Kasten gleichgesetzt; Schichten sind durchlässiger als Stände, aber nicht offen.",
+      "tags": [
+        "Klausur-Dauerbrenner",
+        "Modell",
+        "Ungleichheit"
+      ]
+    },
+    {
+      "id": "sowi-strukturfunktionalismus-handeln",
+      "fach": "SoWi",
+      "titleDE": "Strukturfunktionalismus vs. Handlungstheorie",
+      "titleZH": "结构功能主义与行动理论之争",
+      "summaryDE": "Der Strukturfunktionalismus erklärt Handeln aus sozialen Strukturen, die Handlungstheorie aus den Deutungen und Entscheidungen der Akteure.",
+      "summaryZH": "结构功能主义从社会结构解释行为，行动理论则从行动者的解释与选择出发。",
+      "category": "Sozialstruktur",
+      "curriculumTier": "EF",
+      "stage": "vertiefung",
+      "level": 2,
+      "xpReward": 100,
+      "estimatedMinutes": 12,
+      "prerequisites": [
+        "sowi-sozialisation-werte"
+      ],
+      "layerIndex": 4,
+      "keyFormulaOrSentence": "Strukturfunktionalismus erklärt soziales Handeln aus Strukturen, Handlungstheorie aus dem subjektiven Sinn der Akteure.",
+      "commonFallacy": "Beide Ansätze werden als unvereinbar dargestellt; sie sind komplementäre Erklärungsrichtungen.",
+      "tags": [
+        "Modell",
+        "AFB-III",
+        "Sozialisation"
+      ]
+    },
+    {
+      "id": "sowi-ungleichheits-dimensionen",
+      "fach": "SoWi",
+      "titleDE": "Dimensionen sozialer Ungleichheit",
+      "titleZH": "社会不平等的四维测度：收入、财富、教育与权力",
+      "summaryDE": "Soziale Ungleichheit zeigt sich in Einkommen, Vermögen, Bildung und Macht; diese Dimensionen verstärken sich wechselseitig.",
+      "summaryZH": "社会不平等体现在收入、财富、教育与权力四个维度，且相互强化。",
+      "category": "Sozialstruktur",
+      "curriculumTier": "EF",
+      "stage": "vertiefung",
+      "level": 2,
+      "xpReward": 100,
+      "estimatedMinutes": 12,
+      "prerequisites": [
+        "sowi-soziale-schichtung"
+      ],
+      "layerIndex": 5,
+      "keyFormulaOrSentence": "Soziale Ungleichheit ist mehrdimensional und umfasst Einkommen, Vermögen, Bildung sowie Macht und Prestige.",
+      "commonFallacy": "Ungleichheit wird auf Einkommen reduziert; Vermögen ist deutlich ungleicher verteilt als Einkommen.",
+      "tags": [
+        "Klausur-Dauerbrenner",
+        "Definition",
+        "Ungleichheit"
+      ]
+    },
+    {
+      "id": "sowi-soziale-mobilitaet",
+      "fach": "SoWi",
+      "titleDE": "Soziale Mobilität & Chancengleichheit",
+      "titleZH": "社会流动、代际传递与机会平等",
+      "summaryDE": "Soziale Mobilität beschreibt Auf- und Abstiege zwischen Schichten; geringe intergenerationale Mobilität signalisiert verfestigte Ungleichheit.",
+      "summaryZH": "社会流动描述阶层间的升降；代际流动低下意味着不平等固化。",
+      "category": "Sozialstruktur",
+      "curriculumTier": "Q1",
+      "stage": "vertiefung",
+      "level": 2,
+      "xpReward": 120,
+      "estimatedMinutes": 14,
+      "prerequisites": [
+        "sowi-soziale-schichtung",
+        "sowi-ungleichheits-dimensionen"
+      ],
+      "layerIndex": 6,
+      "keyFormulaOrSentence": "Geringe intergenerationale Mobilität zeigt, dass der sozioökonomische Status weitgehend vererbt wird.",
+      "commonFallacy": "Hohe Einkommensmobilität wird mit hoher Chancengleichheit verwechselt; entscheidend ist die Herkunftsunabhängigkeit.",
+      "tags": [
+        "Klausur-Dauerbrenner",
+        "Verfahren",
+        "Ungleichheit"
+      ]
+    },
+    {
+      "id": "sowi-buergergeld-transfer",
+      "fach": "SoWi",
+      "titleDE": "Bürgergeld & Sozialstaatstransfer",
+      "titleZH": "公民金与社会国二次转移支付",
+      "summaryDE": "Staatliche Umverteilung sichert das Existenzminimum nach dem Sozialstaatsprinzip und muss zugleich Erwerbsanreize erhalten.",
+      "summaryZH": "基本法社会国原则下的基础生活保障与工作激励效应之间的权衡。",
+      "category": "Sozialstruktur",
+      "curriculumTier": "Q1",
+      "stage": "vertiefung",
+      "level": 2,
+      "xpReward": 120,
+      "estimatedMinutes": 12,
+      "prerequisites": [
+        "sowi-soziale-schichtung"
+      ],
+      "layerIndex": 6,
+      "keyFormulaOrSentence": "Das Lohnabstandsgebot verlangt, dass Erwerbsarbeit finanziell spürbar attraktiver bleibt als Transferleistungen.",
+      "commonFallacy": "Transfers werden als reine Kosten gesehen; sie stabilisieren zugleich Nachfrage und sozialen Frieden.",
+      "tags": [
+        "Klausur-Dauerbrenner",
+        "Sozialstaat",
+        "Buergergeld"
+      ]
+    },
+    {
+      "id": "sowi-bildungsungleichheit",
+      "fach": "SoWi",
+      "titleDE": "Bildungsungleichheit & Herkunftseffekt",
+      "titleZH": "教育不平等与出身效应、机会固化",
+      "summaryDE": "Der Zusammenhang von sozialer Herkunft und Bildungserfolg ist in Deutschland besonders eng; frühe Selektion verstärkt ihn.",
+      "summaryZH": "在德国，社会出身与教育成就的关联尤为紧密，早期分流进一步放大该效应。",
+      "category": "Sozialstruktur",
+      "curriculumTier": "Q1",
+      "stage": "vertiefung",
+      "level": 2,
+      "xpReward": 120,
+      "estimatedMinutes": 14,
+      "prerequisites": [
+        "sowi-soziale-mobilitaet"
+      ],
+      "layerIndex": 7,
+      "keyFormulaOrSentence": "Der Bildungserfolg hängt in Deutschland stärker von der sozialen Herkunft ab als in vielen vergleichbaren Ländern.",
+      "commonFallacy": "Bildungsungleichheit wird allein auf Begabungsunterschiede zurückgeführt statt auf Herkunfts- und Institutionseffekte.",
+      "tags": [
+        "Klausur-Dauerbrenner",
+        "Ungleichheit",
+        "Sozialisation"
+      ]
+    },
+    {
+      "id": "sowi-ungleichheits-theorien",
+      "fach": "SoWi",
+      "titleDE": "Modelle & Theorien der Ungleichheit",
+      "titleZH": "不平等理论：阶级、阶层与生活情境模型",
+      "summaryDE": "Klassen-, Schichten- und Milieumodelle erklären Ungleichheit aus unterschiedlichen Strukturmerkmalen und Reichweiten.",
+      "summaryZH": "阶级模型、阶层模型与生活情境模型从不同结构特征与适用范围解释不平等。",
+      "category": "Sozialstruktur",
+      "curriculumTier": "Q1",
+      "stage": "vertiefung",
+      "level": 2,
+      "xpReward": 130,
+      "estimatedMinutes": 14,
+      "prerequisites": [
+        "sowi-ungleichheits-dimensionen"
+      ],
+      "layerIndex": 7,
+      "keyFormulaOrSentence": "Klassenmodelle betonen die Stellung im Produktionsprozess, Schichtenmodelle die vertikale Rangordnung, Milieumodelle die Lebensführung.",
+      "commonFallacy": "Die Modelle werden als austauschbar behandelt; sie haben unterschiedliche Reichweite und Erklärungsanspruch.",
+      "tags": [
+        "Klausur-Dauerbrenner",
+        "Modell",
+        "Ungleichheit"
+      ]
+    },
+    {
+      "id": "sowi-sozialstaat-kontroverse",
+      "fach": "SoWi",
+      "titleDE": "Sozialstaatskontroverse",
+      "titleZH": "社会国家争论：去商品化与财政可持续性",
+      "summaryDE": "Die Kontroverse streitet über Umfang und Finanzierung sozialer Sicherung zwischen Armutsvermeidung, Anreizwirkung und Generationengerechtigkeit.",
+      "summaryZH": "争论聚焦社会保护的规模与融资：反贫困、激励效应与代际公平之间的取舍。",
+      "category": "Sozialstruktur",
+      "curriculumTier": "Q2",
+      "stage": "synthese",
+      "level": 3,
+      "xpReward": 150,
+      "estimatedMinutes": 16,
+      "prerequisites": [
+        "sowi-buergergeld-transfer",
+        "sowi-ungleichheits-theorien"
+      ],
+      "layerIndex": 8,
+      "keyFormulaOrSentence": "Der Sozialstaat ist an den Kriterien Armutsvermeidung, Anreizwirkung und Generationengerechtigkeit zu beurteilen.",
+      "commonFallacy": "Sozialstaatskritik wird mit Sozialstaatsabbau gleichgesetzt; Reformen können auch die Zielgenauigkeit erhöhen.",
+      "tags": [
+        "AFB-III",
+        "Klausur-Dauerbrenner",
+        "Sozialstaat"
+      ]
+    },
+    {
+      "id": "sowi-soziale-ungleichheit",
+      "fach": "SoWi",
+      "titleDE": "Soziale Ungleichheit & Umverteilung (AFB III)",
+      "titleZH": "社会不平等、基尼系数与再分配终极评析",
+      "summaryDE": "Einkommens- und Vermögensverteilung, Lorenz-Kurve, Gini-Koeffizient und staatliche Transferleistungen im Zusammenspiel.",
+      "summaryZH": "洛伦兹曲线与基尼系数测算；汇聚市场竞争、宏观通胀与社会转移支付的终极会考大题。",
+      "category": "Sozialstruktur",
+      "curriculumTier": "Q2",
+      "stage": "klausur_praxis",
+      "level": 3,
+      "xpReward": 160,
+      "estimatedMinutes": 18,
+      "prerequisites": [
+        "sowi-magisches-viereck",
+        "sowi-buergergeld-transfer",
+        "sowi-ungleichheits-dimensionen"
+      ],
+      "layerIndex": 9,
+      "keyFormulaOrSentence": "Ein steigender Gini-Koeffizient signalisiert wachsende Disparitäten zwischen Primär- und Sekundärverteilung.",
+      "commonFallacy": "Vermögensungleichheit mit Einkommensungleichheit gleichsetzen (Vermögen ist in DE deutlich ungleicher verteilt).",
+      "tags": [
+        "AFB-III",
+        "Klausur-Dauerbrenner",
+        "Gini",
+        "Ungleichheit"
+      ],
+      "klausurTip": "In AFB III immer die Dualität aus Anreizfunktion der Leistung und sozialem Frieden abwägen.",
+      "linkedNoteId": "08_SoWi/Texte-Analyse/Soziale-Ungleichheit.md"
+    },
+    {
+      "id": "sowi-vermoegensverteilung-gini",
+      "fach": "SoWi",
+      "titleDE": "Vermögensverteilung & Lorenz-Kurve",
+      "titleZH": "财富分配、洛伦兹曲线与基尼系数",
+      "summaryDE": "Die Lorenz-Kurve veranschaulicht die Verteilung des Einkommens; der Gini-Koeffizient verdichtet sie zu einer Maßzahl zwischen 0 und 1.",
+      "summaryZH": "洛伦兹曲线直观呈现收入分配，基尼系数将其压缩为0到1之间的度量值。",
+      "category": "Sozialstruktur",
+      "curriculumTier": "Q2",
+      "stage": "synthese",
+      "level": 3,
+      "xpReward": 150,
+      "estimatedMinutes": 16,
+      "prerequisites": [
+        "sowi-ungleichheits-dimensionen",
+        "sowi-soziale-mobilitaet"
+      ],
+      "layerIndex": 9,
+      "keyFormulaOrSentence": "Der Gini-Koeffizient misst die Abweichung der tatsächlichen Verteilung von der Gleichverteilung.",
+      "commonFallacy": "Ein steigender Gini-Wert wird mit sinkendem Wohlstand verwechselt; er beschreibt nur die Verteilung, nicht das Niveau.",
+      "tags": [
+        "AFB-III",
+        "Grafik",
+        "Gini"
+      ]
+    },
+    {
+      "id": "sowi-sozialstruktur-synthese",
+      "fach": "SoWi",
+      "titleDE": "Sozialstrukturelle Synthese",
+      "titleZH": "社会结构综合：不平等、社会国与再分配裁决",
+      "summaryDE": "Die Synthese verknüpft Ungleichheitsdiagnose, Theoriebezug und sozialstaatliche Instrumente zu einem kriteriengeleiteten Gesamturteil.",
+      "summaryZH": "该综合将不平等诊断、理论坐标与社会国工具整合为一项标准导向的整体判断。",
+      "category": "Sozialstruktur",
+      "curriculumTier": "Uni_Prep",
+      "stage": "synthese",
+      "level": 3,
+      "xpReward": 180,
+      "estimatedMinutes": 24,
+      "prerequisites": [
+        "sowi-soziale-ungleichheit",
+        "sowi-sozialstaat-kontroverse",
+        "sowi-ungleichheits-theorien"
+      ],
+      "layerIndex": 10,
+      "keyFormulaOrSentence": "Ein kriteriengeleitetes Urteil verbindet die Ungleichheitsdiagnose mit Theoriebezug und sozialstaatlicher Instrumentenwahl.",
+      "commonFallacy": "Empirische Befunde werden ohne Theoriebezug bewertet; AFB III verlangt stets die theoretische Verortung.",
+      "tags": [
+        "Uni-Prep",
+        "AFB-III",
+        "Ungleichheit"
+      ]
+    },
+    {
+      "id": "sowi-grundrechte-art1",
+      "fach": "SoWi",
+      "titleDE": "Menschenwürde & Grundrechte (Art. 1 GG)",
+      "titleZH": "人的尊严与基本权利基石",
+      "summaryDE": "Art. 1 GG bindet alle Staatsgewalt an die Menschenwürde und die Grundrechte; sie sind einklagbare Abwehrrechte gegen den Staat.",
+      "summaryZH": "基本法第1条将国家权力绑定于人的尊严与基本权利，它们是可诉的国家防御权。",
+      "category": "Politisches-System",
+      "curriculumTier": "Sek_I",
+      "stage": "einfuehrung",
+      "level": 1,
+      "xpReward": 60,
+      "estimatedMinutes": 8,
+      "prerequisites": [],
+      "layerIndex": 0,
+      "keyFormulaOrSentence": "Die Menschenwürde ist nach Art. 1 Abs. 1 GG unantastbar und verpflichtet alle staatliche Gewalt.",
+      "commonFallacy": "Grundrechte werden als reine Programmsätze gesehen; sie sind unmittelbar geltendes Recht.",
+      "tags": [
+        "Basiswissen",
+        "Definition",
+        "Verfassung"
+      ]
+    },
+    {
+      "id": "sowi-demokratie-volkssouveraenitaet",
+      "fach": "SoWi",
+      "titleDE": "Demokratieprinzip & Volkssouveränität",
+      "titleZH": "民主原则与人民主权",
+      "summaryDE": "Nach Art. 20 Abs. 2 GG geht alle Staatsgewalt vom Volk aus und wird durch Wahlen und Abstimmungen sowie durch besondere Organe ausgeübt.",
+      "summaryZH": "基本法第20条第2款规定一切国家权力来自人民，经由选举、表决与特定机关行使。",
+      "category": "Politisches-System",
+      "curriculumTier": "Sek_I",
+      "stage": "grundlagen",
+      "level": 1,
+      "xpReward": 70,
+      "estimatedMinutes": 8,
+      "prerequisites": [
+        "sowi-grundrechte-art1"
+      ],
+      "layerIndex": 1,
+      "keyFormulaOrSentence": "Alle Staatsgewalt geht vom Volke aus und wird durch Wahlen, Abstimmungen und besondere Organe ausgeübt.",
+      "commonFallacy": "Demokratie wird auf Mehrheitsherrschaft verkürzt; Minderheitenschutz und Rechtsbindung gehören dazu.",
+      "tags": [
+        "Basiswissen",
+        "Definition",
+        "Demokratie"
+      ]
+    },
+    {
+      "id": "sowi-grundgesetz-verfassungsprinzipien",
+      "fach": "SoWi",
+      "titleDE": "Verfassungsprinzipien des Grundgesetzes",
+      "titleZH": "基本法宪法原则：民主、法治、联邦与社会国",
+      "summaryDE": "Art. 20 GG verankert Demokratie-, Rechtsstaats-, Bundesstaats- und Sozialstaatsprinzip sowie die Gewaltenteilung.",
+      "summaryZH": "基本法第20条确立民主、法治、联邦与社会国原则以及权力分立。",
+      "category": "Politisches-System",
+      "curriculumTier": "EF",
+      "stage": "grundlagen",
+      "level": 2,
+      "xpReward": 100,
+      "estimatedMinutes": 12,
+      "prerequisites": [
+        "sowi-grundrechte-art1"
+      ],
+      "layerIndex": 3,
+      "keyFormulaOrSentence": "Art. 20 GG verankert Demokratie, Rechtsstaat, Bundesstaat und Sozialstaat als tragende Verfassungsprinzipien.",
+      "commonFallacy": "Die vier Staatsstrukturprinzipien werden vermischt; sie haben je eigene Ausprägungen und Schranken.",
+      "tags": [
+        "Klausur-Dauerbrenner",
+        "Definition",
+        "Verfassung"
+      ]
+    },
+    {
+      "id": "sowi-verfassungsorgane",
+      "fach": "SoWi",
+      "titleDE": "Verfassungsorgane & Gewaltenteilung",
+      "titleZH": "宪法机关与权力分立结构",
+      "summaryDE": "Bundestag, Bundesrat, Bundesregierung, Bundespräsident und Bundesverfassungsgericht üben getrennte, sich kontrollierende Funktionen aus.",
+      "summaryZH": "联邦议院、联邦参议院、联邦政府、联邦总统与联邦宪法法院行使相互制衡的职能。",
+      "category": "Politisches-System",
+      "curriculumTier": "EF",
+      "stage": "grundlagen",
+      "level": 2,
+      "xpReward": 100,
+      "estimatedMinutes": 12,
+      "prerequisites": [
+        "sowi-grundgesetz-verfassungsprinzipien"
+      ],
+      "layerIndex": 4,
+      "keyFormulaOrSentence": "Die Gewaltenteilung ordnet Gesetzgebung, Vollziehung und Rechtsprechung getrennten Organen zu und sichert ihre gegenseitige Kontrolle.",
+      "commonFallacy": "Gewaltenteilung wird als strikte Trennung gedeutet; die Verfassung verbindet sie mit wechselseitiger Kontrolle und Verschränkung.",
+      "tags": [
+        "Klausur-Dauerbrenner",
+        "Verfahren",
+        "Verfassung"
+      ]
+    },
+    {
+      "id": "sowi-parteien-willensbildung",
+      "fach": "SoWi",
+      "titleDE": "Parteien & politische Willensbildung",
+      "titleZH": "政党功能与政治意志形成",
+      "summaryDE": "Parteien bündeln Interessen, rekrutieren Personal und strukturieren den Wettbewerb um politische Programme; Art. 21 GG sichert ihre Rolle.",
+      "summaryZH": "政党凝聚利益、遴选政治精英并组织纲领竞争，基本法第21条保障其宪法地位。",
+      "category": "Politisches-System",
+      "curriculumTier": "EF",
+      "stage": "grundlagen",
+      "level": 2,
+      "xpReward": 100,
+      "estimatedMinutes": 12,
+      "prerequisites": [
+        "sowi-demokratie-volkssouveraenitaet",
+        "sowi-grundgesetz-verfassungsprinzipien"
+      ],
+      "layerIndex": 4,
+      "keyFormulaOrSentence": "Parteien wirken nach Art. 21 GG an der politischen Willensbildung des Volkes mit.",
+      "commonFallacy": "Parteien werden als bloße Wahlkampfmaschinen gesehen; ihre Funktion reicht von Interessenaggregation bis zur Regierungsbildung.",
+      "tags": [
+        "Klausur-Dauerbrenner",
+        "Definition",
+        "Demokratie"
+      ]
+    },
+    {
+      "id": "sowi-partizipation-wahlen",
+      "fach": "SoWi",
+      "titleDE": "Wahlen & Partizipationsformen",
+      "titleZH": "选举制度与参与形式谱系",
+      "summaryDE": "Wahlen sind die zentrale Form politischer Beteiligung; daneben stehen Parteimitgliedschaft, Bürgerinitiativen, Petitionen und Protest.",
+      "summaryZH": "选举是政治参与的核心形式，此外还有入党、公民倡议、请愿与抗议等渠道。",
+      "category": "Politisches-System",
+      "curriculumTier": "EF",
+      "stage": "vertiefung",
+      "level": 2,
+      "xpReward": 110,
+      "estimatedMinutes": 12,
+      "prerequisites": [
+        "sowi-demokratie-volkssouveraenitaet"
+      ],
+      "layerIndex": 5,
+      "keyFormulaOrSentence": "Wahlen legitimieren Herrschaft, doch konventionelle und unkonventionelle Beteiligung ergänzen einander.",
+      "commonFallacy": "Partizipation wird auf Wahlen verengt; unkonventionelle Formen sind ebenfalls legitime Beteiligung.",
+      "tags": [
+        "Klausur-Dauerbrenner",
+        "Verfahren",
+        "Partizipation"
+      ]
+    },
+    {
+      "id": "sowi-wehrhafte-demokratie",
+      "fach": "SoWi",
+      "titleDE": "Wehrhafte Demokratie & Parteiverbot",
+      "titleZH": "防御性民主与政党禁令机制",
+      "summaryDE": "Die wehrhafte Demokratie erlaubt die Abwehr von Gegnern der freiheitlichen Ordnung durch Grundrechtseinschränkung und Parteiverbot.",
+      "summaryZH": "防御性民主允许通过限制基本权利与政党禁令抵御自由民主秩序的敌人。",
+      "category": "Politisches-System",
+      "curriculumTier": "Q1",
+      "stage": "vertiefung",
+      "level": 2,
+      "xpReward": 120,
+      "estimatedMinutes": 12,
+      "prerequisites": [
+        "sowi-grundgesetz-verfassungsprinzipien"
+      ],
+      "layerIndex": 6,
+      "keyFormulaOrSentence": "Art. 21 Abs. 2 GG erlaubt das Verbot verfassungswidriger Parteien als Instrument der wehrhaften Demokratie.",
+      "commonFallacy": "Die wehrhafte Demokratie wird als Widerspruch zur Meinungsfreiheit missverstanden; sie schützt gerade deren Grundlagen.",
+      "tags": [
+        "Klausur-Dauerbrenner",
+        "Definition",
+        "Demokratie"
+      ]
+    },
+    {
+      "id": "sowi-foederalismus",
+      "fach": "SoWi",
+      "titleDE": "Föderalismus & Bund-Länder-Ordnung",
+      "titleZH": "联邦制与联邦—州权限划分",
+      "summaryDE": "Der Bundesstaat verteilt Zuständigkeiten zwischen Bund und Ländern und verbindet Einheitlichkeit mit regionaler Eigenverantwortung.",
+      "summaryZH": "联邦制在联邦与各州之间分配权限，兼顾统一性与地方自主责任。",
+      "category": "Politisches-System",
+      "curriculumTier": "Q1",
+      "stage": "vertiefung",
+      "level": 2,
+      "xpReward": 120,
+      "estimatedMinutes": 12,
+      "prerequisites": [
+        "sowi-grundgesetz-verfassungsprinzipien"
+      ],
+      "layerIndex": 7,
+      "keyFormulaOrSentence": "Der Föderalismus verteilt staatliche Aufgaben zwischen Bund und Ländern und sichert regionale Eigenverantwortung.",
+      "commonFallacy": "Föderalismus wird als bloße Verwaltungsgliederung gesehen; er ist ein Machtverteilungs- und Mitbestimmungsprinzip.",
+      "tags": [
+        "Klausur-Dauerbrenner",
+        "Verfassung",
+        "Demokratie"
+      ]
+    },
+    {
+      "id": "sowi-eu-institutionen",
+      "fach": "SoWi",
+      "titleDE": "EU-Institutionen & Entscheidungsverfahren",
+      "titleZH": "欧盟机构与决策程序",
+      "summaryDE": "Kommission, Rat, Europäisches Parlament und EuGH teilen sich Gesetzgebung, Exekutive und Rechtsprechung im Mehrebenensystem.",
+      "summaryZH": "欧委会、理事会、欧洲议会与欧洲法院在多层治理体系中分掌立法、执行与司法。",
+      "category": "Politisches-System",
+      "curriculumTier": "Q1",
+      "stage": "vertiefung",
+      "level": 2,
+      "xpReward": 130,
+      "estimatedMinutes": 14,
+      "prerequisites": [
+        "sowi-verfassungsorgane"
+      ],
+      "layerIndex": 7,
+      "keyFormulaOrSentence": "Die EU-Organe üben ihre Befugnisse nach dem Prinzip der begrenzten Einzelermächtigung aus.",
+      "commonFallacy": "Die EU wird als Staat mit klassischer Gewaltenteilung dargestellt; ihre Organstruktur folgt eigener Sui-generis-Logik.",
+      "tags": [
+        "Klausur-Dauerbrenner",
+        "Verfahren",
+        "EU"
+      ]
+    },
+    {
+      "id": "sowi-demokratietheorie-modelle",
+      "fach": "SoWi",
+      "titleDE": "Demokratietheoretische Grundkonzepte",
+      "titleZH": "民主理论范式：竞争式与参与式民主",
+      "summaryDE": "Konkurrenz- und Partizipationsdemokratie unterscheiden sich darin, ob Demokratie primär der Elitenauswahl oder der breiten Beteiligung dient.",
+      "summaryZH": "竞争式民主与参与式民主的分歧在于：民主首要服务于精英遴选还是公民广泛参与。",
+      "category": "Politisches-System",
+      "curriculumTier": "Uni_Prep",
+      "stage": "synthese",
+      "level": 3,
+      "xpReward": 150,
+      "estimatedMinutes": 18,
+      "prerequisites": [
+        "sowi-demokratie-volkssouveraenitaet"
+      ],
+      "layerIndex": 6,
+      "keyFormulaOrSentence": "Demokratietheoretische Konzepte unterscheiden sich im Verhältnis von Beteiligung und Repräsentation.",
+      "commonFallacy": "Demokratie wird auf ein einziges Modell festgelegt; die Theorien sind idealtypische Zuspitzungen realer Systeme.",
+      "tags": [
+        "Uni-Prep",
+        "AFB-III",
+        "Demokratie"
+      ]
+    },
+    {
+      "id": "sowi-eu-integration-modelle",
+      "fach": "SoWi",
+      "titleDE": "Europäische Integrationsmodelle",
+      "titleZH": "欧洲一体化理论：功能主义与政府间主义",
+      "summaryDE": "Neofunktionalismus und Intergouvernementalismus erklären Integration entweder als Sachzwang-Dynamik oder als Ergebnis staatlicher Verhandlungen.",
+      "summaryZH": "新功能主义与政府间主义分别把一体化解释为外溢动力或国家间谈判的结果。",
+      "category": "Politisches-System",
+      "curriculumTier": "Uni_Prep",
+      "stage": "synthese",
+      "level": 3,
+      "xpReward": 160,
+      "estimatedMinutes": 20,
+      "prerequisites": [
+        "sowi-eu-institutionen"
+      ],
+      "layerIndex": 8,
+      "keyFormulaOrSentence": "Integrationsmodelle unterscheiden sich darin, ob Integration aus Sachzwängen erwächst oder von nationalen Regierungen ausgehandelt wird.",
+      "commonFallacy": "Die EU wird entweder als Föderalstaat oder als reines Staatenbündnis gedeutet; sie ist ein eigenständiger Verbund.",
+      "tags": [
+        "Uni-Prep",
+        "AFB-III",
+        "EU"
+      ]
+    },
+    {
+      "id": "sowi-eu-binnenmarkt",
+      "fach": "SoWi",
+      "titleDE": "Europäischer Binnenmarkt",
+      "titleZH": "欧洲单一市场：四大自由与规制协调",
+      "summaryDE": "Der Binnenmarkt verwirklicht den freien Verkehr von Waren, Personen, Dienstleistungen und Kapital und verlangt gemeinsame Regeln.",
+      "summaryZH": "内部市场实现商品、人员、服务与资本四大自由，并要求共同规则协调。",
+      "category": "Politisches-System",
+      "curriculumTier": "Q2",
+      "stage": "synthese",
+      "level": 2,
+      "xpReward": 140,
+      "estimatedMinutes": 14,
+      "prerequisites": [
+        "sowi-eu-institutionen"
+      ],
+      "layerIndex": 9,
+      "keyFormulaOrSentence": "Der Binnenmarkt sichert die vier Grundfreiheiten des freien Verkehrs von Waren, Personen, Dienstleistungen und Kapital.",
+      "commonFallacy": "Der Binnenmarkt wird als bloße Zollunion gedeutet; er umfasst auch die Angleichung von Standards und Beihilferegeln.",
+      "tags": [
+        "Klausur-Dauerbrenner",
+        "EU",
+        "Wettbewerb"
+      ]
+    },
+    {
+      "id": "sowi-internationale-sicherheitspolitik",
+      "fach": "SoWi",
+      "titleDE": "Internationale Friedens- & Sicherheitspolitik",
+      "titleZH": "国际和平与安全：联合国与集体安全",
+      "summaryDE": "Die UN als System kollektiver Sicherheit soll Konflikte friedlich lösen; Durchsetzungsgrenzen entstehen durch Veto und Souveränitätsvorbehalte.",
+      "summaryZH": "联合国作为集体安全体系应和平解决冲突，但否决权与主权保留限制其执行能力。",
+      "category": "Politisches-System",
+      "curriculumTier": "Q2",
+      "stage": "synthese",
+      "level": 3,
+      "xpReward": 150,
+      "estimatedMinutes": 16,
+      "prerequisites": [
+        "sowi-eu-institutionen"
+      ],
+      "layerIndex": 9,
+      "keyFormulaOrSentence": "Kollektive Sicherheit beruht auf der Verpflichtung, Aggression gemeinsam abzuwehren, scheitert aber am Vetorecht im Sicherheitsrat.",
+      "commonFallacy": "Die UN wird als Weltregierung verstanden; sie ist ein zwischenstaatlicher Verbund ohne eigene Zwangsgewalt.",
+      "tags": [
+        "Klausur-Dauerbrenner",
+        "AFB-III",
+        "Globalisierung"
+      ]
+    },
+    {
+      "id": "sowi-klausur-synthese-abitur",
+      "fach": "SoWi",
+      "titleDE": "Klausur-Synthese: Abitur SoWi",
+      "titleZH": "会考综合大题：经济、社会与政治的跨域裁决",
+      "summaryDE": "Die Synthese verbindet wirtschaftspolitische Zielkonflikte, sozialstrukturelle Ungleichheit und politische Mehrebenen-Entscheidungen zu einem kriteriengeleiteten Gesamturteil.",
+      "summaryZH": "该综合把经济政策目标冲突、社会结构不平等与政治多层决策整合为一项标准导向的整体裁决。",
+      "category": "Politisches-System",
+      "curriculumTier": "Q2",
+      "stage": "klausur_praxis",
+      "level": 3,
+      "xpReward": 200,
+      "estimatedMinutes": 30,
+      "prerequisites": [
+        "sowi-soziale-ungleichheit",
+        "sowi-magisches-viereck",
+        "sowi-eu-institutionen",
+        "sowi-internationale-sicherheitspolitik"
+      ],
+      "layerIndex": 10,
+      "keyFormulaOrSentence": "Ein 15-Punkte-Urteil verknüpft Sachanalyse, Theoriebezug und kriteriengeleitete Bewertung über mehrere Inhaltsfelder hinweg.",
+      "commonFallacy": "Die Teilaufgaben werden isoliert beantwortet, ohne die geforderte Inhaltsfeld übergreifende Verknüpfung zu leisten.",
+      "tags": [
+        "AFB-III",
+        "Schwerpunkt-2026",
+        "Klausur-Dauerbrenner"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "id": "e-sowi-oekonomisches-prinzip-sowi-nachfrage-gesetz",
+      "from": "sowi-oekonomisches-prinzip",
+      "to": "sowi-nachfrage-gesetz",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sowi-oekonomisches-prinzip-sowi-angebot-gesetz",
+      "from": "sowi-oekonomisches-prinzip",
+      "to": "sowi-angebot-gesetz",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sowi-beduerfnis-knappheit-sowi-preismechanismus",
+      "from": "sowi-beduerfnis-knappheit",
+      "to": "sowi-preismechanismus",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sowi-nachfrage-gesetz-sowi-preismechanismus",
+      "from": "sowi-nachfrage-gesetz",
+      "to": "sowi-preismechanismus",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sowi-angebot-gesetz-sowi-preismechanismus",
+      "from": "sowi-angebot-gesetz",
+      "to": "sowi-preismechanismus",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sowi-preismechanismus-sowi-preiselastizitaet",
+      "from": "sowi-preismechanismus",
+      "to": "sowi-preiselastizitaet",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sowi-preismechanismus-sowi-staatliche-preiseingriffe",
+      "from": "sowi-preismechanismus",
+      "to": "sowi-staatliche-preiseingriffe",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sowi-preismechanismus-sowi-marktversagen",
+      "from": "sowi-preismechanismus",
+      "to": "sowi-marktversagen",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sowi-marktversagen-sowi-marktformen-monopol",
+      "from": "sowi-marktversagen",
+      "to": "sowi-marktformen-monopol",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sowi-marktversagen-sowi-oeffentliche-gueter",
+      "from": "sowi-marktversagen",
+      "to": "sowi-oeffentliche-gueter",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sowi-marktversagen-sowi-asymmetrische-information",
+      "from": "sowi-marktversagen",
+      "to": "sowi-asymmetrische-information",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sowi-marktformen-monopol-sowi-wohlfahrtsverlust-monopol",
+      "from": "sowi-marktformen-monopol",
+      "to": "sowi-wohlfahrtsverlust-monopol",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sowi-preiselastizitaet-sowi-wohlfahrtsverlust-monopol",
+      "from": "sowi-preiselastizitaet",
+      "to": "sowi-wohlfahrtsverlust-monopol",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sowi-marktformen-monopol-sowi-spieltheorie-nash",
+      "from": "sowi-marktformen-monopol",
+      "to": "sowi-spieltheorie-nash",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sowi-spieltheorie-nash-sowi-spieltheorie-wiederholte-spiele",
+      "from": "sowi-spieltheorie-nash",
+      "to": "sowi-spieltheorie-wiederholte-spiele",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sowi-asymmetrische-information-sowi-spieltheorie-wiederholte-spiele",
+      "from": "sowi-asymmetrische-information",
+      "to": "sowi-spieltheorie-wiederholte-spiele",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sowi-wirtschaftskreislauf-sowi-bip-wachstum",
+      "from": "sowi-wirtschaftskreislauf",
+      "to": "sowi-bip-wachstum",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sowi-bip-wachstum-sowi-konjunkturzyklus",
+      "from": "sowi-bip-wachstum",
+      "to": "sowi-konjunkturzyklus",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sowi-bip-wachstum-sowi-inflation-geldwert",
+      "from": "sowi-bip-wachstum",
+      "to": "sowi-inflation-geldwert",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sowi-konjunkturzyklus-sowi-arbeitsmarkt-beschaeftigung",
+      "from": "sowi-konjunkturzyklus",
+      "to": "sowi-arbeitsmarkt-beschaeftigung",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sowi-konjunkturzyklus-sowi-magisches-viereck",
+      "from": "sowi-konjunkturzyklus",
+      "to": "sowi-magisches-viereck",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sowi-arbeitsmarkt-beschaeftigung-sowi-magisches-viereck",
+      "from": "sowi-arbeitsmarkt-beschaeftigung",
+      "to": "sowi-magisches-viereck",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sowi-marktversagen-sowi-magisches-viereck",
+      "from": "sowi-marktversagen",
+      "to": "sowi-magisches-viereck",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sowi-magisches-viereck-sowi-phillips-kurve",
+      "from": "sowi-magisches-viereck",
+      "to": "sowi-phillips-kurve",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sowi-magisches-viereck-sowi-ezb-geldpolitik",
+      "from": "sowi-magisches-viereck",
+      "to": "sowi-ezb-geldpolitik",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sowi-ezb-geldpolitik-sowi-geldpolitische-transmission",
+      "from": "sowi-ezb-geldpolitik",
+      "to": "sowi-geldpolitische-transmission",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sowi-phillips-kurve-sowi-geldpolitische-transmission",
+      "from": "sowi-phillips-kurve",
+      "to": "sowi-geldpolitische-transmission",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sowi-magisches-viereck-sowi-staatsverschuldung",
+      "from": "sowi-magisches-viereck",
+      "to": "sowi-staatsverschuldung",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sowi-magisches-viereck-sowi-angebotsorientierte-wirtschaftspolitik",
+      "from": "sowi-magisches-viereck",
+      "to": "sowi-angebotsorientierte-wirtschaftspolitik",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sowi-ezb-geldpolitik-sowi-keynes-vs-friedman",
+      "from": "sowi-ezb-geldpolitik",
+      "to": "sowi-keynes-vs-friedman",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sowi-geldpolitische-transmission-sowi-keynes-vs-friedman",
+      "from": "sowi-geldpolitische-transmission",
+      "to": "sowi-keynes-vs-friedman",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sowi-keynes-vs-friedman-sowi-makrooekonomie-theorievergleich",
+      "from": "sowi-keynes-vs-friedman",
+      "to": "sowi-makrooekonomie-theorievergleich",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sowi-angebotsorientierte-wirtschaftspolitik-sowi-makrooekonomie-theorievergleich",
+      "from": "sowi-angebotsorientierte-wirtschaftspolitik",
+      "to": "sowi-makrooekonomie-theorievergleich",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sowi-staatsverschuldung-sowi-makrooekonomie-theorievergleich",
+      "from": "sowi-staatsverschuldung",
+      "to": "sowi-makrooekonomie-theorievergleich",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sowi-angebotsorientierte-wirtschaftspolitik-sowi-qualitatives-wachstum",
+      "from": "sowi-angebotsorientierte-wirtschaftspolitik",
+      "to": "sowi-qualitatives-wachstum",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sowi-staatsverschuldung-sowi-qualitatives-wachstum",
+      "from": "sowi-staatsverschuldung",
+      "to": "sowi-qualitatives-wachstum",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sowi-marktwirtschaft-grundprinzip-sowi-ordnungselemente-wettbewerb",
+      "from": "sowi-marktwirtschaft-grundprinzip",
+      "to": "sowi-ordnungselemente-wettbewerb",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sowi-beduerfnis-knappheit-sowi-soziale-marktwirtschaft",
+      "from": "sowi-beduerfnis-knappheit",
+      "to": "sowi-soziale-marktwirtschaft",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sowi-ordnungselemente-wettbewerb-sowi-soziale-marktwirtschaft",
+      "from": "sowi-ordnungselemente-wettbewerb",
+      "to": "sowi-soziale-marktwirtschaft",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sowi-ordnungselemente-wettbewerb-sowi-ordoliberalismus-freiburg",
+      "from": "sowi-ordnungselemente-wettbewerb",
+      "to": "sowi-ordoliberalismus-freiburg",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sowi-soziale-marktwirtschaft-sowi-wettbewerbspolitik-kartellamt",
+      "from": "sowi-soziale-marktwirtschaft",
+      "to": "sowi-wettbewerbspolitik-kartellamt",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sowi-ordoliberalismus-freiburg-sowi-wettbewerbspolitik-kartellamt",
+      "from": "sowi-ordoliberalismus-freiburg",
+      "to": "sowi-wettbewerbspolitik-kartellamt",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sowi-ordnungselemente-wettbewerb-sowi-wirtschaftsordnung-vergleich",
+      "from": "sowi-ordnungselemente-wettbewerb",
+      "to": "sowi-wirtschaftsordnung-vergleich",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sowi-soziale-marktwirtschaft-sowi-wirtschaftsordnung-vergleich",
+      "from": "sowi-soziale-marktwirtschaft",
+      "to": "sowi-wirtschaftsordnung-vergleich",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sowi-soziale-marktwirtschaft-sowi-sozialprinzip-grundgesetz",
+      "from": "sowi-soziale-marktwirtschaft",
+      "to": "sowi-sozialprinzip-grundgesetz",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sowi-soziale-marktwirtschaft-sowi-tarifautonomie-sozialpartner",
+      "from": "sowi-soziale-marktwirtschaft",
+      "to": "sowi-tarifautonomie-sozialpartner",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sowi-tarifautonomie-sozialpartner-sowi-mitbestimmung-betrieb",
+      "from": "sowi-tarifautonomie-sozialpartner",
+      "to": "sowi-mitbestimmung-betrieb",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sowi-sozialprinzip-grundgesetz-sowi-wohlfahrtsstaat-legitimation",
+      "from": "sowi-sozialprinzip-grundgesetz",
+      "to": "sowi-wohlfahrtsstaat-legitimation",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sowi-wettbewerbspolitik-kartellamt-sowi-wohlfahrtsstaat-legitimation",
+      "from": "sowi-wettbewerbspolitik-kartellamt",
+      "to": "sowi-wohlfahrtsstaat-legitimation",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sowi-wettbewerbspolitik-kartellamt-sowi-wirtschaftspolitik-legitimation",
+      "from": "sowi-wettbewerbspolitik-kartellamt",
+      "to": "sowi-wirtschaftspolitik-legitimation",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sowi-sozialprinzip-grundgesetz-sowi-wirtschaftspolitik-legitimation",
+      "from": "sowi-sozialprinzip-grundgesetz",
+      "to": "sowi-wirtschaftspolitik-legitimation",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sowi-wohlfahrtsstaat-legitimation-sowi-wohlfahrtsstaat-finanzierung",
+      "from": "sowi-wohlfahrtsstaat-legitimation",
+      "to": "sowi-wohlfahrtsstaat-finanzierung",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sowi-sozialprinzip-grundgesetz-sowi-wohlfahrtsstaat-finanzierung",
+      "from": "sowi-sozialprinzip-grundgesetz",
+      "to": "sowi-wohlfahrtsstaat-finanzierung",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sowi-wettbewerbspolitik-kartellamt-sowi-ordnungspolitik-synthese",
+      "from": "sowi-wettbewerbspolitik-kartellamt",
+      "to": "sowi-ordnungspolitik-synthese",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sowi-wirtschaftspolitik-legitimation-sowi-ordnungspolitik-synthese",
+      "from": "sowi-wirtschaftspolitik-legitimation",
+      "to": "sowi-ordnungspolitik-synthese",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sowi-wohlfahrtsstaat-legitimation-sowi-ordnungspolitik-synthese",
+      "from": "sowi-wohlfahrtsstaat-legitimation",
+      "to": "sowi-ordnungspolitik-synthese",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sowi-rolle-identitaet-sowi-gruppen-verhalten",
+      "from": "sowi-rolle-identitaet",
+      "to": "sowi-gruppen-verhalten",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sowi-rolle-identitaet-sowi-sozialisation-werte",
+      "from": "sowi-rolle-identitaet",
+      "to": "sowi-sozialisation-werte",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sowi-beduerfnis-knappheit-sowi-soziale-schichtung",
+      "from": "sowi-beduerfnis-knappheit",
+      "to": "sowi-soziale-schichtung",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sowi-sozialisation-werte-sowi-soziale-schichtung",
+      "from": "sowi-sozialisation-werte",
+      "to": "sowi-soziale-schichtung",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sowi-sozialisation-werte-sowi-strukturfunktionalismus-handeln",
+      "from": "sowi-sozialisation-werte",
+      "to": "sowi-strukturfunktionalismus-handeln",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sowi-soziale-schichtung-sowi-ungleichheits-dimensionen",
+      "from": "sowi-soziale-schichtung",
+      "to": "sowi-ungleichheits-dimensionen",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sowi-soziale-schichtung-sowi-soziale-mobilitaet",
+      "from": "sowi-soziale-schichtung",
+      "to": "sowi-soziale-mobilitaet",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sowi-ungleichheits-dimensionen-sowi-soziale-mobilitaet",
+      "from": "sowi-ungleichheits-dimensionen",
+      "to": "sowi-soziale-mobilitaet",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sowi-soziale-schichtung-sowi-buergergeld-transfer",
+      "from": "sowi-soziale-schichtung",
+      "to": "sowi-buergergeld-transfer",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sowi-soziale-mobilitaet-sowi-bildungsungleichheit",
+      "from": "sowi-soziale-mobilitaet",
+      "to": "sowi-bildungsungleichheit",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sowi-ungleichheits-dimensionen-sowi-ungleichheits-theorien",
+      "from": "sowi-ungleichheits-dimensionen",
+      "to": "sowi-ungleichheits-theorien",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sowi-buergergeld-transfer-sowi-sozialstaat-kontroverse",
+      "from": "sowi-buergergeld-transfer",
+      "to": "sowi-sozialstaat-kontroverse",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sowi-ungleichheits-theorien-sowi-sozialstaat-kontroverse",
+      "from": "sowi-ungleichheits-theorien",
+      "to": "sowi-sozialstaat-kontroverse",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sowi-magisches-viereck-sowi-soziale-ungleichheit",
+      "from": "sowi-magisches-viereck",
+      "to": "sowi-soziale-ungleichheit",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sowi-buergergeld-transfer-sowi-soziale-ungleichheit",
+      "from": "sowi-buergergeld-transfer",
+      "to": "sowi-soziale-ungleichheit",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sowi-ungleichheits-dimensionen-sowi-soziale-ungleichheit",
+      "from": "sowi-ungleichheits-dimensionen",
+      "to": "sowi-soziale-ungleichheit",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sowi-ungleichheits-dimensionen-sowi-vermoegensverteilung-gini",
+      "from": "sowi-ungleichheits-dimensionen",
+      "to": "sowi-vermoegensverteilung-gini",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sowi-soziale-mobilitaet-sowi-vermoegensverteilung-gini",
+      "from": "sowi-soziale-mobilitaet",
+      "to": "sowi-vermoegensverteilung-gini",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sowi-soziale-ungleichheit-sowi-sozialstruktur-synthese",
+      "from": "sowi-soziale-ungleichheit",
+      "to": "sowi-sozialstruktur-synthese",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sowi-sozialstaat-kontroverse-sowi-sozialstruktur-synthese",
+      "from": "sowi-sozialstaat-kontroverse",
+      "to": "sowi-sozialstruktur-synthese",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sowi-ungleichheits-theorien-sowi-sozialstruktur-synthese",
+      "from": "sowi-ungleichheits-theorien",
+      "to": "sowi-sozialstruktur-synthese",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sowi-grundrechte-art1-sowi-demokratie-volkssouveraenitaet",
+      "from": "sowi-grundrechte-art1",
+      "to": "sowi-demokratie-volkssouveraenitaet",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sowi-grundrechte-art1-sowi-grundgesetz-verfassungsprinzipien",
+      "from": "sowi-grundrechte-art1",
+      "to": "sowi-grundgesetz-verfassungsprinzipien",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sowi-grundgesetz-verfassungsprinzipien-sowi-verfassungsorgane",
+      "from": "sowi-grundgesetz-verfassungsprinzipien",
+      "to": "sowi-verfassungsorgane",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sowi-demokratie-volkssouveraenitaet-sowi-parteien-willensbildung",
+      "from": "sowi-demokratie-volkssouveraenitaet",
+      "to": "sowi-parteien-willensbildung",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sowi-grundgesetz-verfassungsprinzipien-sowi-parteien-willensbildung",
+      "from": "sowi-grundgesetz-verfassungsprinzipien",
+      "to": "sowi-parteien-willensbildung",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sowi-demokratie-volkssouveraenitaet-sowi-partizipation-wahlen",
+      "from": "sowi-demokratie-volkssouveraenitaet",
+      "to": "sowi-partizipation-wahlen",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sowi-grundgesetz-verfassungsprinzipien-sowi-wehrhafte-demokratie",
+      "from": "sowi-grundgesetz-verfassungsprinzipien",
+      "to": "sowi-wehrhafte-demokratie",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sowi-grundgesetz-verfassungsprinzipien-sowi-foederalismus",
+      "from": "sowi-grundgesetz-verfassungsprinzipien",
+      "to": "sowi-foederalismus",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sowi-verfassungsorgane-sowi-eu-institutionen",
+      "from": "sowi-verfassungsorgane",
+      "to": "sowi-eu-institutionen",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sowi-demokratie-volkssouveraenitaet-sowi-demokratietheorie-modelle",
+      "from": "sowi-demokratie-volkssouveraenitaet",
+      "to": "sowi-demokratietheorie-modelle",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sowi-eu-institutionen-sowi-eu-integration-modelle",
+      "from": "sowi-eu-institutionen",
+      "to": "sowi-eu-integration-modelle",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sowi-eu-institutionen-sowi-eu-binnenmarkt",
+      "from": "sowi-eu-institutionen",
+      "to": "sowi-eu-binnenmarkt",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sowi-eu-institutionen-sowi-internationale-sicherheitspolitik",
+      "from": "sowi-eu-institutionen",
+      "to": "sowi-internationale-sicherheitspolitik",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sowi-soziale-ungleichheit-sowi-klausur-synthese-abitur",
+      "from": "sowi-soziale-ungleichheit",
+      "to": "sowi-klausur-synthese-abitur",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sowi-magisches-viereck-sowi-klausur-synthese-abitur",
+      "from": "sowi-magisches-viereck",
+      "to": "sowi-klausur-synthese-abitur",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sowi-eu-institutionen-sowi-klausur-synthese-abitur",
+      "from": "sowi-eu-institutionen",
+      "to": "sowi-klausur-synthese-abitur",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sowi-internationale-sicherheitspolitik-sowi-klausur-synthese-abitur",
+      "from": "sowi-internationale-sicherheitspolitik",
+      "to": "sowi-klausur-synthese-abitur",
+      "type": "prerequisite"
+    },
+    {
+      "id": "syn1",
+      "from": "sowi-marktformen-monopol",
+      "to": "sowi-soziale-marktwirtschaft",
+      "type": "synergy",
+      "descriptionZH": "有效竞争保护是社会市场经济的基石"
+    },
+    {
+      "id": "syn2",
+      "from": "sowi-ezb-geldpolitik",
+      "to": "sowi-buergergeld-transfer",
+      "type": "synergy",
+      "descriptionZH": "通货膨胀直接侵蚀底层低收入群体的实际购买力"
+    },
+    {
+      "id": "e-syn-preiselastizitaet-staatliche-preiseingriffe",
+      "from": "sowi-preiselastizitaet",
+      "to": "sowi-staatliche-preiseingriffe",
+      "type": "synergy",
+      "descriptionZH": "弹性大小决定价格干预的福利代价方向"
+    },
+    {
+      "id": "e-syn-asymmetrische-information-spieltheorie-nash",
+      "from": "sowi-asymmetrische-information",
+      "to": "sowi-spieltheorie-nash",
+      "type": "synergy",
+      "descriptionZH": "信息不完全改变博弈的均衡结构"
+    },
+    {
+      "id": "e-syn-bildungsungleichheit-buergergeld-transfer",
+      "from": "sowi-bildungsungleichheit",
+      "to": "sowi-buergergeld-transfer",
+      "type": "synergy",
+      "descriptionZH": "教育机会固化放大了转移支付的必要性"
+    },
+    {
+      "id": "e-syn-eu-binnenmarkt-wettbewerbspolitik-kartellamt",
+      "from": "sowi-eu-binnenmarkt",
+      "to": "sowi-wettbewerbspolitik-kartellamt",
+      "type": "synergy",
+      "descriptionZH": "内部市场的竞争需要跨境卡特尔监管配套"
+    },
+    {
+      "id": "e-syn-phillips-kurve-arbeitsmarkt-beschaeftigung",
+      "from": "sowi-phillips-kurve",
+      "to": "sowi-arbeitsmarkt-beschaeftigung",
+      "type": "synergy",
+      "descriptionZH": "通胀与失业的权衡直接作用于劳动力市场"
+    },
+    {
+      "id": "e-syn-demokratietheorie-partizipation",
+      "from": "sowi-demokratietheorie-modelle",
+      "to": "sowi-partizipation-wahlen",
+      "type": "synergy",
+      "descriptionZH": "民主理论决定对参与形式的价值评判"
+    },
+    {
+      "id": "e-syn-foederalismus-eu-institutionen",
+      "from": "sowi-foederalismus",
+      "to": "sowi-eu-institutionen",
+      "type": "synergy",
+      "descriptionZH": "联邦多层治理经验映射到欧盟多层体系"
+    },
+    {
+      "id": "e-syn-gini-wohlfahrtsstaat-finanzierung",
+      "from": "sowi-vermoegensverteilung-gini",
+      "to": "sowi-wohlfahrtsstaat-finanzierung",
+      "type": "synergy",
+      "descriptionZH": "分配差距数据是福利融资争论的经验基础"
+    },
+    {
+      "id": "e-syn-eu-integration-modelle-eu-binnenmarkt",
+      "from": "sowi-eu-integration-modelle",
+      "to": "sowi-eu-binnenmarkt",
+      "type": "synergy",
+      "descriptionZH": "一体化理论框架解释内部市场的深化逻辑"
+    },
+    {
+      "id": "e-cross-inflation-geldwert-soziale-ungleichheit",
+      "from": "sowi-inflation-geldwert",
+      "to": "sowi-soziale-ungleichheit",
+      "type": "cross_disciplinary",
+      "descriptionZH": "通胀的再分配效应加剧收入与财富不平等"
+    },
+    {
+      "id": "e-cross-magisches-viereck-sozialstaat-kontroverse",
+      "from": "sowi-magisches-viereck",
+      "to": "sowi-sozialstaat-kontroverse",
+      "type": "cross_disciplinary",
+      "descriptionZH": "宏观目标冲突约束社会支出的财政空间"
+    },
+    {
+      "id": "e-cross-bildungsungleichheit-demokratietheorie-modelle",
+      "from": "sowi-bildungsungleichheit",
+      "to": "sowi-demokratietheorie-modelle",
+      "type": "cross_disciplinary",
+      "descriptionZH": "教育不平等影响民主参与的实际平等性"
+    },
+    {
+      "id": "e-cross-tarifautonomie-arbeitsmarkt-beschaeftigung",
+      "from": "sowi-tarifautonomie-sozialpartner",
+      "to": "sowi-arbeitsmarkt-beschaeftigung",
+      "type": "cross_disciplinary",
+      "descriptionZH": "工资谈判制度直接塑造劳动力市场结果"
+    }
+  ]
+}
