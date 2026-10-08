@@ -1,0 +1,2820 @@
+{
+  "schemaVersion": 1,
+  "fach": "Englisch",
+  "nameDE": "Englisch",
+  "nameZH": "英语 (Englisch)",
+  "descriptionDE": "Comprehension und Analysis, Sprachmittlung, Literatur und Film, Society and Identity, Grammar and Stylistics sowie Landeskunde der englischsprachigen Welt (NRW Oberstufe & Uni-Prep)",
+  "descriptionZH": "文本理解与分析、跨语中介、文学与电影、社会与身份、语法与文体学、英语世界国别知识的全景引力星系图谱 (NRW 高中与大学衔接)",
+  "isCustomSubject": false,
+  "categories": [
+    "Comprehension-and-Analysis",
+    "Mediation",
+    "Literature-and-Film",
+    "Society-and-Identity",
+    "Grammar-and-Stylistics",
+    "Landeskunde"
+  ],
+  "availableTags": [
+    "AFB-III",
+    "Basiswissen",
+    "Definition",
+    "Drama",
+    "Film",
+    "Gesellschaft",
+    "Globalisierung",
+    "Grafik",
+    "Grammatik",
+    "Hoerverstehen",
+    "Identitaet",
+    "Interkulturell",
+    "Klausur-Dauerbrenner",
+    "Klausurstrategie",
+    "Landeskunde",
+    "Leseverstehen",
+    "Literatur",
+    "Lyrik",
+    "Mediation",
+    "Modell",
+    "Narratologie",
+    "Postkolonial",
+    "Rhetorik",
+    "Sachtext",
+    "Schreiben",
+    "Schwerpunkt-2026",
+    "Sprachvariation",
+    "Sprechen",
+    "Stilistik",
+    "Textanalyse",
+    "UK",
+    "USA",
+    "Uni-Prep",
+    "Verfahren",
+    "Wortschatz"
+  ],
+  "nodes": [
+    {
+      "id": "englisch-grammar-word-classes-word-formation",
+      "fach": "Englisch",
+      "titleDE": "Wortarten und Wortbildung (word classes and word formation)",
+      "titleZH": "词性辨识与构词法：前缀后缀转换词族",
+      "summaryDE": "Wortarten bestimmen die Satzfunktion; Ableitung, Zusammensetzung und Konversion erweitern den Wortschatz systematisch.",
+      "summaryZH": "词性决定句法功能；派生、合成与转类三种构词方式让词汇量成体系地扩张。",
+      "category": "Grammar-and-Stylistics",
+      "curriculumTier": "Sek_I",
+      "stage": "einfuehrung",
+      "level": 1,
+      "xpReward": 60,
+      "estimatedMinutes": 8,
+      "prerequisites": [],
+      "keyFormulaOrSentence": "Konversion: 'to email' (Verb) -> 'the email' (Nomen) -> 'email' (Attribut) - dieselbe Form, andere Wortart.",
+      "commonFallacy": "Wortart und Satzglied verwechseln - 'book' kann Nomen oder Verb sein, erst die Satzposition entscheidet.",
+      "layerIndex": 0,
+      "tags": [
+        "Definition",
+        "Basiswissen",
+        "Wortschatz"
+      ]
+    },
+    {
+      "id": "englisch-grammar-tenses-aspect-basics",
+      "fach": "Englisch",
+      "titleDE": "Zeit und Aspekt: simple present vs. present progressive",
+      "titleZH": "一般现在时与现在进行时：状态与进行的时间观",
+      "summaryDE": "Simple present markiert Gewohnheit und dauerhafte Tatsachen, present progressive markiert Verlauf und voruebergehende Handlungen.",
+      "summaryZH": "一般现在时表示习惯与恒常事实，现在进行时表示进行中的临时动作，信号词是判断锚点。",
+      "category": "Grammar-and-Stylistics",
+      "curriculumTier": "Sek_I",
+      "stage": "einfuehrung",
+      "level": 1,
+      "xpReward": 65,
+      "estimatedMinutes": 8,
+      "prerequisites": [],
+      "keyFormulaOrSentence": "Signalwoerter: 'always, usually, every day' -> simple present; 'now, at the moment, currently' -> present progressive.",
+      "commonFallacy": "Zustaende wie 'know, believe, own' im progressive verwenden - Zustaende sind nicht als Verlauf darstellbar.",
+      "layerIndex": 0,
+      "tags": [
+        "Definition",
+        "Basiswissen",
+        "Grammatik"
+      ]
+    },
+    {
+      "id": "englisch-grammar-simple-past-vs-present-perfect",
+      "fach": "Englisch",
+      "titleDE": "Simple past vs. present perfect",
+      "titleZH": "一般过去时与现在完成时：时间锚点决定时态",
+      "summaryDE": "Simple past nennt eine abgeschlossene Handlung mit abgeschlossenem Zeitbezug; present perfect verbindet das Ereignis mit der Gegenwart.",
+      "summaryZH": "一般过去时指向已结束的过去时间点，现在完成时把事件与现在联系起来，时间状语是唯一可靠的判据。",
+      "category": "Grammar-and-Stylistics",
+      "curriculumTier": "Sek_I",
+      "stage": "einfuehrung",
+      "level": 1,
+      "xpReward": 75,
+      "estimatedMinutes": 10,
+      "prerequisites": [
+        "englisch-grammar-tenses-aspect-basics"
+      ],
+      "keyFormulaOrSentence": "'yesterday, in 2019, last week' -> simple past; 'since, for, already, yet, just' -> present perfect.",
+      "commonFallacy": "Mit 'yesterday' das present perfect benutzen - das feste Vergangenheitsadverbial schliesst present perfect aus.",
+      "layerIndex": 1,
+      "tags": [
+        "Definition",
+        "Basiswissen",
+        "Klausur-Dauerbrenner",
+        "Grammatik"
+      ]
+    },
+    {
+      "id": "englisch-grammar-conditionals-if-clauses",
+      "fach": "Englisch",
+      "titleDE": "Konditionalsaetze Typ I-III (conditionals)",
+      "titleZH": "条件句三型：真实、虚拟与过去虚拟",
+      "summaryDE": "Typ I steht fuer real erfuellbare Bedingungen, Typ II fuer hypothetische Gegenwart, Typ III fuer nicht mehr korrigierbare Vergangenheit.",
+      "summaryZH": "一型表真实可能，二型表现实虚拟，三型表无法挽回的过去假设，混合条件句按时间层各取一半。",
+      "category": "Grammar-and-Stylistics",
+      "curriculumTier": "Sek_I",
+      "stage": "grundlagen",
+      "level": 2,
+      "xpReward": 80,
+      "estimatedMinutes": 12,
+      "prerequisites": [
+        "englisch-grammar-tenses-aspect-basics",
+        "englisch-grammar-simple-past-vs-present-perfect"
+      ],
+      "keyFormulaOrSentence": "Type III: 'If the government had acted earlier, the crisis would not have escalated.' - if + past perfect, would have + past participle.",
+      "commonFallacy": "Im if-Satz 'would' verwenden ('If I would know') - 'would' gehoert nur in den Hauptsatz.",
+      "layerIndex": 2,
+      "tags": [
+        "Definition",
+        "Verfahren",
+        "Basiswissen",
+        "Grammatik"
+      ]
+    },
+    {
+      "id": "englisch-grammar-passive-voice-agent",
+      "fach": "Englisch",
+      "titleDE": "Passivbildung und by-Agent",
+      "titleZH": "被动语态：be 加过去分词与施动者省略",
+      "summaryDE": "Das Passiv rueckt das Patiens in die Subjektposition; der by-Agent wird nur genannt, wenn er neue Information traegt.",
+      "summaryZH": "被动语态把受事提为主语，by 短语仅在施动者携带新信息时才出现。",
+      "category": "Grammar-and-Stylistics",
+      "curriculumTier": "Sek_I",
+      "stage": "grundlagen",
+      "level": 1,
+      "xpReward": 75,
+      "estimatedMinutes": 10,
+      "prerequisites": [
+        "englisch-grammar-simple-past-vs-present-perfect"
+      ],
+      "keyFormulaOrSentence": "Passiv in allen Zeiten: 'is done / was done / has been done / will be done / must be done'.",
+      "commonFallacy": "Bei Verben mit zwei Objekten das falsche Objekt zum Subjekt machen - 'I was given the book' ist korrekt, nicht 'The book was given me'.",
+      "layerIndex": 2,
+      "tags": [
+        "Definition",
+        "Basiswissen",
+        "Grammatik"
+      ]
+    },
+    {
+      "id": "englisch-grammar-reported-speech-backshift",
+      "fach": "Englisch",
+      "titleDE": "Indirekte Rede und backshift of tenses",
+      "titleZH": "间接引语：时态后移与时地状语替换",
+      "summaryDE": "Bei berichteter Rede verschieben sich Zeiten, Pronomen sowie Orts- und Zeitangaben; nur ein uebergeordnetes Verb in der Vergangenheit loest den shift aus.",
+      "summaryZH": "转述他人话语时时态、代词与时地状语同步后移；只有当主句动词是过去时才会触发后移。",
+      "category": "Grammar-and-Stylistics",
+      "curriculumTier": "Sek_I",
+      "stage": "grundlagen",
+      "level": 2,
+      "xpReward": 80,
+      "estimatedMinutes": 12,
+      "prerequisites": [
+        "englisch-grammar-conditionals-if-clauses",
+        "englisch-grammar-passive-voice-agent"
+      ],
+      "keyFormulaOrSentence": "Backshift-Muster: aus 'I will call you tomorrow' wird in der indirekten Rede 'she said she would call me the next day'.",
+      "commonFallacy": "Den backshift vergessen, wenn das einleitende Verb im simple past steht - 'said' verlangt die Verschiebung.",
+      "layerIndex": 3,
+      "tags": [
+        "Definition",
+        "Verfahren",
+        "Grammatik"
+      ]
+    },
+    {
+      "id": "englisch-grammar-register-formal-informal",
+      "fach": "Englisch",
+      "titleDE": "Register: formal vs. informal style",
+      "titleZH": "语域切换：正式与非正式文体的用词分寸",
+      "summaryDE": "Register entsteht aus Wortwahl, Kontraktionen, Passivgebrauch und Anrede; es muss zu Adressat und Textsorte passen.",
+      "summaryZH": "语域由措辞、缩略、被动使用与称呼共同构成，必须与读者对象和文本体裁匹配。",
+      "category": "Grammar-and-Stylistics",
+      "curriculumTier": "EF",
+      "stage": "grundlagen",
+      "level": 2,
+      "xpReward": 100,
+      "estimatedMinutes": 14,
+      "prerequisites": [
+        "englisch-grammar-word-classes-word-formation",
+        "englisch-grammar-reported-speech-backshift"
+      ],
+      "keyFormulaOrSentence": "'I would like to enquire about ...' statt 'I wanna ask about ...' - Register ist Teil der Aufgabe, nicht Zierde.",
+      "commonFallacy": "Umgangssprache in formelle Briefe mischen - ein 'gonna' kostet im Bewertungsraster den Stilpunkt.",
+      "layerIndex": 4,
+      "tags": [
+        "Definition",
+        "Verfahren",
+        "Klausur-Dauerbrenner",
+        "Stilistik"
+      ]
+    },
+    {
+      "id": "englisch-grammar-linking-devices-cohesion",
+      "fach": "Englisch",
+      "titleDE": "Konnektoren und Textkohaesion (linking devices)",
+      "titleZH": "连接词与篇章衔接：逻辑关系的显性标记",
+      "summaryDE": "Konnektoren machen die logische Beziehung zwischen Saetzen explizit und tragen damit die Argumentationsstruktur.",
+      "summaryZH": "连接词把句子之间的逻辑关系显性化，是论证结构的骨架，误用比不用更伤分数。",
+      "category": "Grammar-and-Stylistics",
+      "curriculumTier": "EF",
+      "stage": "grundlagen",
+      "level": 2,
+      "xpReward": 95,
+      "estimatedMinutes": 12,
+      "prerequisites": [
+        "englisch-grammar-word-classes-word-formation",
+        "englisch-grammar-simple-past-vs-present-perfect"
+      ],
+      "keyFormulaOrSentence": "'however' markiert Gegensatz, 'moreover' additive Verstaerkung, 'therefore' Konsequenz - jede Klasse hat ihr eigenes Signal.",
+      "commonFallacy": "'on the one hand' ohne 'on the other hand' stehen lassen - die angekuendigte Gegenueberstellung fehlt dann.",
+      "layerIndex": 2,
+      "tags": [
+        "Verfahren",
+        "Basiswissen",
+        "Schreiben",
+        "Stilistik"
+      ]
+    },
+    {
+      "id": "englisch-grammar-stylistic-devices-effect",
+      "fach": "Englisch",
+      "titleDE": "Stilistische Mittel und ihre Wirkung (stylistic devices)",
+      "titleZH": "修辞格的读者效应：从命名到阐释的桥接",
+      "summaryDE": "Jedes stilistische Mittel muss ueber die blosse Kategorie hinaus auf seine Wirkung beim Leser bezogen werden.",
+      "summaryZH": "识别修辞格只是起点，必须说明它如何影响读者感受与作者意图，才能进入分析档位。",
+      "category": "Grammar-and-Stylistics",
+      "curriculumTier": "Q1",
+      "stage": "vertiefung",
+      "level": 2,
+      "xpReward": 135,
+      "estimatedMinutes": 18,
+      "prerequisites": [
+        "englisch-grammar-register-formal-informal",
+        "englisch-grammar-linking-devices-cohesion"
+      ],
+      "keyFormulaOrSentence": "Muster: 'The author employs <device> in line X, which <effect verb> the reader's sense of ... and thereby reinforces the argument that ...'",
+      "commonFallacy": "Nur das Mittel benennen ('There is a metaphor') ohne Wirkung - das bleibt AFB I und verliert die Analysepunkte.",
+      "layerIndex": 5,
+      "tags": [
+        "Verfahren",
+        "Klausur-Dauerbrenner",
+        "Stilistik",
+        "Textanalyse"
+      ]
+    },
+    {
+      "id": "englisch-grammar-sentence-structure-rhetoric",
+      "fach": "Englisch",
+      "titleDE": "Satzbau als rhetorisches Mittel (syntax and rhetoric)",
+      "titleZH": "句法即修辞：长短句、倒装与平行结构的说服力",
+      "summaryDE": "Satzlaenge, Parallelismus und Inversion steuern Tempo und Nachdruck einer Rede oder eines Essays.",
+      "summaryZH": "句子长短、平行结构与倒装控制行文节奏与强调重点，是演讲稿分析的核心抓手。",
+      "category": "Grammar-and-Stylistics",
+      "curriculumTier": "Q2",
+      "stage": "klausur_praxis",
+      "level": 3,
+      "xpReward": 170,
+      "estimatedMinutes": 22,
+      "prerequisites": [
+        "englisch-grammar-stylistic-devices-effect",
+        "englisch-grammar-register-formal-informal"
+      ],
+      "keyFormulaOrSentence": "Muster: 'The sustained parallelism in lines X-Y gives the passage a liturgical rhythm that makes the speaker's appeal sound inevitable.'",
+      "commonFallacy": "Satzbau nur beschreiben, ohne ihn mit der Wirkung auf das Publikum zu verbinden - dann bleibt die Analyse auf der Formebene stehen.",
+      "layerIndex": 6,
+      "tags": [
+        "Verfahren",
+        "Klausur-Dauerbrenner",
+        "AFB-III",
+        "Rhetorik",
+        "Stilistik"
+      ]
+    },
+    {
+      "id": "englisch-uni-stylistics-foregrounding",
+      "fach": "Englisch",
+      "titleDE": "Stylistics: foregrounding und deviation",
+      "titleZH": "文体学前沿化理论：偏离与平行如何制造显著度",
+      "summaryDE": "Foregrounding erklaert literarische Wirkung als Abweichung von der sprachlichen Norm oder als uebermaessige Regelmaessigkeit.",
+      "summaryZH": "前沿化理论把文学效果解释为对语言常规的偏离，或超常的规则性重复。",
+      "category": "Grammar-and-Stylistics",
+      "curriculumTier": "Uni_Prep",
+      "stage": "synthese",
+      "level": 3,
+      "xpReward": 190,
+      "estimatedMinutes": 26,
+      "prerequisites": [
+        "englisch-grammar-stylistic-devices-effect"
+      ],
+      "keyFormulaOrSentence": "Foregrounding = deviation (Abweichung von der Erwartung) + parallelism (Verstaerkung durch Wiederholung).",
+      "commonFallacy": "Foregrounding mit 'wichtiger Inhalt' gleichsetzen - gemeint ist eine sprachliche Auffaelligkeit, nicht inhaltliche Bedeutung.",
+      "layerIndex": 6,
+      "tags": [
+        "Modell",
+        "Uni-Prep",
+        "Stilistik"
+      ]
+    },
+    {
+      "id": "englisch-uni-discourse-analysis-critical",
+      "fach": "Englisch",
+      "titleDE": "Critical Discourse Analysis: Sprache und Macht",
+      "titleZH": "批评性话语分析：语言如何建构权力与意识形态",
+      "summaryDE": "Die Diskursanalyse untersucht, wie Wortwahl, Nominalisierung und Passivierung Verantwortung im Text unsichtbar machen.",
+      "summaryZH": "话语分析考察措辞、名词化与被动化如何让文本中的责任主体隐形，从而服务特定权力结构。",
+      "category": "Grammar-and-Stylistics",
+      "curriculumTier": "Uni_Prep",
+      "stage": "synthese",
+      "level": 3,
+      "xpReward": 195,
+      "estimatedMinutes": 28,
+      "prerequisites": [
+        "englisch-grammar-stylistic-devices-effect",
+        "englisch-grammar-sentence-structure-rhetoric",
+        "englisch-uni-stylistics-foregrounding"
+      ],
+      "keyFormulaOrSentence": "Agency-Test: 'Wer handelt im Satz?' - Passivierung und Nominalisierung sind die zuverlaessigsten Ideologieindikatoren.",
+      "commonFallacy": "Diskursanalyse als reine Inhaltswiedergabe betreiben - gefragt ist die sprachliche Konstruktion von Wirklichkeit, nicht die Zusammenfassung.",
+      "layerIndex": 7,
+      "tags": [
+        "Modell",
+        "Uni-Prep",
+        "AFB-III",
+        "Rhetorik",
+        "Textanalyse"
+      ]
+    },
+    {
+      "id": "englisch-comprehension-reading-strategies",
+      "fach": "Englisch",
+      "titleDE": "Lesestrategien: skimming, scanning und close reading",
+      "titleZH": "阅读三策略：略读抓主旨、扫读定位、精读抠词句",
+      "summaryDE": "Skimming erfasst die Gesamtaussage, scanning lokalisiert Einzelinformationen, close reading sichert implizite Aussagen.",
+      "summaryZH": "略读抓全文主旨，扫读定位具体信息，精读处理隐含意义，三者按题型切换使用。",
+      "category": "Comprehension-and-Analysis",
+      "curriculumTier": "Sek_I",
+      "stage": "einfuehrung",
+      "level": 1,
+      "xpReward": 65,
+      "estimatedMinutes": 8,
+      "prerequisites": [],
+      "keyFormulaOrSentence": "Drei Durchgaenge: erst Gesamtaussage (skimming), dann die Aufgabenstellung scannen, zuletzt die Belegstelle close lesen.",
+      "commonFallacy": "Den Text zuerst wortwoertlich uebersetzen - das kostet Zeit und liefert trotzdem keine Gesamtaussage.",
+      "layerIndex": 0,
+      "tags": [
+        "Verfahren",
+        "Basiswissen",
+        "Leseverstehen"
+      ]
+    },
+    {
+      "id": "englisch-comprehension-outline-and-summary",
+      "fach": "Englisch",
+      "titleDE": "Outline und summary schreiben",
+      "titleZH": "概要写作：非个人化语言与事实筛选",
+      "summaryDE": "Ein summary referiert die Kernaussagen in eigener, neutraler Sprache und nennt Autor, Textsorte, Thema und Hauptaussagen.",
+      "summaryZH": "概要必须用中立的第三人称转述核心信息，交代作者、体裁、主题与要点，绝不夹带个人评价。",
+      "category": "Comprehension-and-Analysis",
+      "curriculumTier": "EF",
+      "stage": "grundlagen",
+      "level": 1,
+      "xpReward": 95,
+      "estimatedMinutes": 14,
+      "prerequisites": [
+        "englisch-comprehension-reading-strategies"
+      ],
+      "keyFormulaOrSentence": "The text deals with ... and aims to ... ; the author first ... , then ... , and finally ...",
+      "commonFallacy": "In die Zusammenfassung die eigene Meinung einbauen - Bewertung gehoert ausschliesslich in den comment.",
+      "layerIndex": 1,
+      "tags": [
+        "Verfahren",
+        "Basiswissen",
+        "Klausur-Dauerbrenner",
+        "Schreiben"
+      ]
+    },
+    {
+      "id": "englisch-comprehension-text-type-conventions",
+      "fach": "Englisch",
+      "titleDE": "Textsortenmerkmale und Belegtechnik",
+      "titleZH": "文体特征与引证技术：从体裁预判结构",
+      "summaryDE": "Jede Textsorte hat typische Bausteine; die Analyse muss Merkmale benennen und mit Zeilenbelegen stuetzen.",
+      "summaryZH": "每种文体都有固定的结构套路，分析时须点出文体特征并用行号引证支撑。",
+      "category": "Comprehension-and-Analysis",
+      "curriculumTier": "EF",
+      "stage": "grundlagen",
+      "level": 2,
+      "xpReward": 90,
+      "estimatedMinutes": 12,
+      "prerequisites": [
+        "englisch-comprehension-reading-strategies",
+        "englisch-grammar-word-classes-word-formation"
+      ],
+      "keyFormulaOrSentence": "Belegformel: 'This is typical of a newspaper editorial, as shown by the direct address in line 12.'",
+      "commonFallacy": "Behauptungen ohne Zeilenbeleg aufstellen - im NRW-Raster ist jeder Deutungsschritt an den Text zu binden.",
+      "layerIndex": 1,
+      "tags": [
+        "Definition",
+        "Verfahren",
+        "Sachtext",
+        "Textanalyse"
+      ]
+    },
+    {
+      "id": "englisch-comprehension-argumentation-analysis",
+      "fach": "Englisch",
+      "titleDE": "Argumentationsstruktur analysieren (line of argument)",
+      "titleZH": "论证链解析：主张、理由与证据的三段还原",
+      "summaryDE": "Die Argumentationsanalyse rekonstruiert claim, reason und evidence in ihrer Reihenfolge und prueft ihre Stuetzung.",
+      "summaryZH": "论证分析要还原主张、理由与证据的排列顺序，并检验论据是否真正支撑主张。",
+      "category": "Comprehension-and-Analysis",
+      "curriculumTier": "EF",
+      "stage": "grundlagen",
+      "level": 2,
+      "xpReward": 100,
+      "estimatedMinutes": 15,
+      "prerequisites": [
+        "englisch-comprehension-outline-and-summary",
+        "englisch-comprehension-text-type-conventions"
+      ],
+      "keyFormulaOrSentence": "Muster: 'The author claims that ... , supports this with ... , and reinforces it by ...'",
+      "commonFallacy": "Den Text nacherzaehlen statt die Argumentationsschritte zu ordnen - eine Inhaltsangabe ist keine Analyse.",
+      "layerIndex": 2,
+      "tags": [
+        "Verfahren",
+        "Sachtext",
+        "Textanalyse",
+        "Klausur-Dauerbrenner"
+      ]
+    },
+    {
+      "id": "englisch-comprehension-characterization",
+      "fach": "Englisch",
+      "titleDE": "Charakterisierung mit dem P.E.E.-Prinzip",
+      "titleZH": "人物刻画三步法：观点、引文、阐释",
+      "summaryDE": "Die Charakterisierung belegt jede Eigenschaft mit einer Textstelle und erklaert deren Wirkung (point, evidence, explanation).",
+      "summaryZH": "人物刻画每一条性格结论都要配引文并解释其效应，形成观点、证据、阐释的闭环。",
+      "category": "Comprehension-and-Analysis",
+      "curriculumTier": "EF",
+      "stage": "vertiefung",
+      "level": 2,
+      "xpReward": 100,
+      "estimatedMinutes": 15,
+      "prerequisites": [
+        "englisch-comprehension-outline-and-summary",
+        "englisch-comprehension-text-type-conventions"
+      ],
+      "keyFormulaOrSentence": "P.E.E.: 'The narrator presents X as ... (point); this becomes clear when ... (evidence); the choice of ... suggests that ... (explanation).'",
+      "commonFallacy": "Den Erzaehler mit der Figur verwechseln - Aussagen des narrators sind nicht automatisch Meinungen der Figur.",
+      "layerIndex": 2,
+      "tags": [
+        "Verfahren",
+        "Literatur",
+        "Textanalyse"
+      ]
+    },
+    {
+      "id": "englisch-comprehension-rhetorical-appeals",
+      "fach": "Englisch",
+      "titleDE": "Rhetorische Appelle: ethos, pathos, logos",
+      "titleZH": "说服三诉求：人格信誉、情感共鸣与逻辑论证",
+      "summaryDE": "Reden ueberzeugen ueber die Glaubwuerdigkeit des Sprechers, die Emotion des Publikums oder die Schluessigkeit der Argumente.",
+      "summaryZH": "演讲通过说话者信誉、听众情感与论证逻辑三条通道说服人，分析时须指明每条通道的语言证据。",
+      "category": "Comprehension-and-Analysis",
+      "curriculumTier": "Q1",
+      "stage": "vertiefung",
+      "level": 2,
+      "xpReward": 130,
+      "estimatedMinutes": 18,
+      "prerequisites": [
+        "englisch-comprehension-argumentation-analysis",
+        "englisch-grammar-linking-devices-cohesion"
+      ],
+      "keyFormulaOrSentence": "Muster: 'By invoking ... the speaker appeals to the audience's sense of ... , which prepares them to accept the claim that ...'",
+      "commonFallacy": "Jede emotionale Formulierung pauschal als pathos etikettieren - erst der Bezug zum Publikum macht den Appell zum Appell.",
+      "layerIndex": 3,
+      "tags": [
+        "Modell",
+        "Rhetorik",
+        "Textanalyse",
+        "Klausur-Dauerbrenner"
+      ]
+    },
+    {
+      "id": "englisch-comprehension-cartoon-visual-analysis",
+      "fach": "Englisch",
+      "titleDE": "Cartoon- und Bildanalyse",
+      "titleZH": "漫画与图像分析：视觉符号的解码顺序",
+      "summaryDE": "Die Bildanalyse beschreibt zuerst den sichtbaren Befund, deutet Symbole und erklaert die kritische Aussage.",
+      "summaryZH": "图像分析先客观描述可见元素，再解码符号寓意，最后归纳批判性立场。",
+      "category": "Comprehension-and-Analysis",
+      "curriculumTier": "Q1",
+      "stage": "vertiefung",
+      "level": 2,
+      "xpReward": 125,
+      "estimatedMinutes": 16,
+      "prerequisites": [
+        "englisch-comprehension-text-type-conventions",
+        "englisch-comprehension-characterization"
+      ],
+      "keyFormulaOrSentence": "Dreischritt: describe (was ist zu sehen) -> interpret (was bedeutet es) -> evaluate (welche Haltung zeigt es).",
+      "commonFallacy": "Sofort deuten, ohne die Bildelemente beschrieben zu haben - die Beschreibung ist die Belegbasis der Deutung.",
+      "layerIndex": 3,
+      "tags": [
+        "Grafik",
+        "Verfahren",
+        "Textanalyse"
+      ]
+    },
+    {
+      "id": "englisch-comprehension-multimodal-texts",
+      "fach": "Englisch",
+      "titleDE": "Multimodale und diskontinuierliche Texte auswerten",
+      "titleZH": "多模态与图表文本：图文互参的交叉验证",
+      "summaryDE": "In multimodalen Texten tragen Bild, Layout und Zahlen eigene Bedeutung, die mit dem Fliesstext abgeglichen werden muss.",
+      "summaryZH": "多模态文本中图像、版式与数据各自携带意义，必须与正文交叉对照后才能得出完整结论。",
+      "category": "Comprehension-and-Analysis",
+      "curriculumTier": "Q1",
+      "stage": "vertiefung",
+      "level": 2,
+      "xpReward": 130,
+      "estimatedMinutes": 18,
+      "prerequisites": [
+        "englisch-comprehension-cartoon-visual-analysis",
+        "englisch-comprehension-characterization"
+      ],
+      "keyFormulaOrSentence": "Muster: 'The statistic in the infographic contrasts with the reassuring tone of the headline, which undermines the article's claim.'",
+      "commonFallacy": "Nur den Fliesstext auswerten und die Grafik ignorieren - bei multimodalen Aufgaben ist die Grafik oft der eigentliche Beleg.",
+      "layerIndex": 4,
+      "tags": [
+        "Grafik",
+        "Textanalyse",
+        "Sachtext"
+      ]
+    },
+    {
+      "id": "englisch-comprehension-political-speech-analysis",
+      "fach": "Englisch",
+      "titleDE": "Politische Rede analysieren",
+      "titleZH": "政治演讲分析：修辞、结构与受众定位",
+      "summaryDE": "Die Redenanalyse verbindet Aufbau, rhetorische Mittel, Anlass und Publikum zu einer begruendeten Wirkungshypothese.",
+      "summaryZH": "演讲分析把结构、修辞手法、时代背景与受众整合成一个关于效果的完整假设。",
+      "category": "Comprehension-and-Analysis",
+      "curriculumTier": "Q2",
+      "stage": "klausur_praxis",
+      "level": 3,
+      "xpReward": 175,
+      "estimatedMinutes": 24,
+      "prerequisites": [
+        "englisch-comprehension-rhetorical-appeals",
+        "englisch-comprehension-multimodal-texts"
+      ],
+      "keyFormulaOrSentence": "Muster: 'Given the occasion of ... and the audience of ... , the speaker's use of ... serves to ...'",
+      "commonFallacy": "Rhetorische Mittel auflisten, ohne die Redesituation einzubeziehen - Wirkung ist immer situationsgebunden.",
+      "layerIndex": 5,
+      "tags": [
+        "Rhetorik",
+        "Textanalyse",
+        "Klausur-Dauerbrenner",
+        "AFB-III"
+      ]
+    },
+    {
+      "id": "englisch-comprehension-evaluation-and-comment",
+      "fach": "Englisch",
+      "titleDE": "Comment und begruendete Stellungnahme",
+      "titleZH": "评论写作：立场、论据与反驳的完整闭环",
+      "summaryDE": "Ein comment entwickelt eine klare These, stuetz sie mit Argumenten und raeumt Gegenpositionen ein.",
+      "summaryZH": "评论先立明确论点，用论据支撑，主动处理反方立场，最后收束成可检验的结论。",
+      "category": "Comprehension-and-Analysis",
+      "curriculumTier": "Q2",
+      "stage": "synthese",
+      "level": 3,
+      "xpReward": 180,
+      "estimatedMinutes": 24,
+      "prerequisites": [
+        "englisch-comprehension-rhetorical-appeals",
+        "englisch-comprehension-political-speech-analysis"
+      ],
+      "keyFormulaOrSentence": "Struktur: These -> Argument mit Beleg -> Gegeneinwand entkraeften -> Fazit, eingeleitet mit 'In my view ... because ...'",
+      "commonFallacy": "Nur die eigene Meinung behaupten, ohne Argument und Beleg - eine Stellungnahme ohne Begruendung bleibt AFB I.",
+      "layerIndex": 6,
+      "tags": [
+        "Verfahren",
+        "Schreiben",
+        "AFB-III",
+        "Klausur-Dauerbrenner"
+      ]
+    },
+    {
+      "id": "englisch-klausur-synthese-abitur",
+      "fach": "Englisch",
+      "titleDE": "Abitur-Synthese: comprehension, analysis und mediation verbinden",
+      "titleZH": "高考终极综合：读写分析与跨语中介一体化",
+      "summaryDE": "Die Abituraufgabe verlangt eine durchgaengige Analyse und die Uebertragung der Kernaussagen in die andere Sprache unter Zeitdruck.",
+      "summaryZH": "高考综合题要求在限时内完成脉络贯通的分析，并把核心信息按受众要求转入另一语言。",
+      "category": "Comprehension-and-Analysis",
+      "curriculumTier": "Q2",
+      "stage": "klausur_praxis",
+      "level": 3,
+      "xpReward": 200,
+      "estimatedMinutes": 30,
+      "prerequisites": [
+        "englisch-comprehension-political-speech-analysis",
+        "englisch-comprehension-evaluation-and-comment",
+        "englisch-mediation-klausur-teil-b-integration",
+        "englisch-literature-film-adaptation-and-message"
+      ],
+      "keyFormulaOrSentence": "Zeitplan: comprehension 20 Prozent, analysis 50 Prozent, mediation 30 Prozent - jeder Teil endet mit einem eigenen Deutungssatz.",
+      "commonFallacy": "Teil A und Teil B inhaltlich doppelt schreiben - die Mediation verlangt eine neue Adressatenorientierung, keine Wiederholung.",
+      "layerIndex": 8,
+      "tags": [
+        "Klausurstrategie",
+        "AFB-III",
+        "Klausur-Dauerbrenner",
+        "Schwerpunkt-2026",
+        "Schreiben"
+      ]
+    },
+    {
+      "id": "englisch-uni-pragmatics-speech-acts",
+      "fach": "Englisch",
+      "titleDE": "Pragmatik: Sprechakte und Implikatur",
+      "titleZH": "语用学：言语行为与言外之意的推导",
+      "summaryDE": "Sprechakte trennen das Gesagte vom Gemeinten; Implikaturen entstehen aus der Verletzung von Konversationsmaximen.",
+      "summaryZH": "言语行为理论区分字面所说与真正所为，会话含义产生于对合作原则准则的刻意违反。",
+      "category": "Comprehension-and-Analysis",
+      "curriculumTier": "Uni_Prep",
+      "stage": "vertiefung",
+      "level": 3,
+      "xpReward": 190,
+      "estimatedMinutes": 26,
+      "prerequisites": [
+        "englisch-comprehension-evaluation-and-comment",
+        "englisch-comprehension-rhetorical-appeals"
+      ],
+      "keyFormulaOrSentence": "Analyseformel: locution (was gesagt wird) -> illocution (was damit getan wird) -> perlocution (was damit bewirkt wird).",
+      "commonFallacy": "Ironie als unehrliche Aussage deuten - Ironie ist eine Implikatur, die die Maxime der Qualitaet absichtlich ausnutzt.",
+      "layerIndex": 7,
+      "tags": [
+        "Modell",
+        "Uni-Prep",
+        "Textanalyse"
+      ]
+    },
+    {
+      "id": "englisch-mediation-everyday-situations",
+      "fach": "Englisch",
+      "titleDE": "Sprachmittlung in Alltagssituationen",
+      "titleZH": "日常场景中介：把意思说清楚而不是逐词搬",
+      "summaryDE": "Sprachmittlung uebertraegt eine Aussage sinngemaess in die andere Sprache und passt sie an Situation und Adressat an.",
+      "summaryZH": "语言中介追求把意思完整传达给新受众，而不是保留原句结构逐词搬运。",
+      "category": "Mediation",
+      "curriculumTier": "Sek_I",
+      "stage": "einfuehrung",
+      "level": 1,
+      "xpReward": 60,
+      "estimatedMinutes": 8,
+      "prerequisites": [],
+      "keyFormulaOrSentence": "'What she means is that ...' - die Wiedergabe beginnt mit dem Sinn, nicht mit der Wortfolge.",
+      "commonFallacy": "Wort fuer Wort uebersetzen und dadurch unverstaendliches Englisch produzieren - Sprachmittlung ist kein Wortschatztest.",
+      "layerIndex": 0,
+      "tags": [
+        "Definition",
+        "Basiswissen",
+        "Mediation",
+        "Interkulturell"
+      ]
+    },
+    {
+      "id": "englisch-mediation-meaning-transfer-not-translation",
+      "fach": "Englisch",
+      "titleDE": "Sinngemaesses Uebertragen statt Uebersetzen",
+      "titleZH": "意义转述优先：脱离原文句法的重组",
+      "summaryDE": "Die Mittlung zerlegt den Ausgangstext in Sinnabschnitte und formuliert sie in der Zielsprache voellig neu.",
+      "summaryZH": "中介把源文本拆为语义单元，再用目标语完全重新组织表达，句法结构不予保留。",
+      "category": "Mediation",
+      "curriculumTier": "EF",
+      "stage": "grundlagen",
+      "level": 1,
+      "xpReward": 95,
+      "estimatedMinutes": 12,
+      "prerequisites": [
+        "englisch-mediation-everyday-situations"
+      ],
+      "keyFormulaOrSentence": "Arbeitsschritt: Sinnabschnitt markieren -> Kernaussage in eigenen Worten notieren -> erst danach in die Zielsprache formulieren.",
+      "commonFallacy": "Die deutsche Satzklammer ins Englische uebertragen - dadurch entstehen unlesbare Schachtelsaetze.",
+      "layerIndex": 1,
+      "tags": [
+        "Verfahren",
+        "Mediation",
+        "Basiswissen"
+      ]
+    },
+    {
+      "id": "englisch-mediation-addressee-and-register",
+      "fach": "Englisch",
+      "titleDE": "Adressatenbezug und Register in der Sprachmittlung",
+      "titleZH": "受众定位与语域匹配：中介文本的得体性",
+      "summaryDE": "Die Mittlung muss Wissensstand und Verhaeltnis zum Adressaten treffen und entsprechend foermlich oder locker formulieren.",
+      "summaryZH": "中介文本必须匹配受众的知识背景与亲疏关系，据此选择正式或口语化的表达。",
+      "category": "Mediation",
+      "curriculumTier": "EF",
+      "stage": "grundlagen",
+      "level": 2,
+      "xpReward": 100,
+      "estimatedMinutes": 14,
+      "prerequisites": [
+        "englisch-mediation-meaning-transfer-not-translation"
+      ],
+      "keyFormulaOrSentence": "'I would like to give you a quick overview of ...' fuer formelle Adressaten, 'Just to fill you in ...' fuer vertraute.",
+      "commonFallacy": "Register und Adressat ignorieren - im NRW-Raster ist die situative Angemessenheit ein eigenes Bewertungskriterium.",
+      "layerIndex": 2,
+      "tags": [
+        "Verfahren",
+        "Mediation",
+        "Interkulturell",
+        "Klausur-Dauerbrenner"
+      ]
+    },
+    {
+      "id": "englisch-mediation-cultural-terms-explanation",
+      "fach": "Englisch",
+      "titleDE": "Kulturelle Begriffe erklaeren (Abitur, FSJ, Amt)",
+      "titleZH": "文化专有词释义：用目标语解释本土制度",
+      "summaryDE": "Deutsche Institutionen werden nicht uebersetzt, sondern im Englischen umschrieben und funktional erklaert.",
+      "summaryZH": "德国制度词汇不音译，而是用英语功能性解释其含义与用途，让外来读者真正理解。",
+      "category": "Mediation",
+      "curriculumTier": "EF",
+      "stage": "grundlagen",
+      "level": 2,
+      "xpReward": 105,
+      "estimatedMinutes": 15,
+      "prerequisites": [
+        "englisch-mediation-meaning-transfer-not-translation",
+        "englisch-mediation-addressee-and-register"
+      ],
+      "keyFormulaOrSentence": "'the Abitur, the German school-leaving examination that qualifies students for university entrance' - Apposition statt Lehnwort.",
+      "commonFallacy": "Deutsche Woerter unerklaert stehen lassen ('a FSJ') - der Adressat versteht ohne Erlaeuterung nichts.",
+      "layerIndex": 3,
+      "tags": [
+        "Verfahren",
+        "Interkulturell",
+        "Mediation",
+        "Landeskunde"
+      ]
+    },
+    {
+      "id": "englisch-mediation-german-source-to-english",
+      "fach": "Englisch",
+      "titleDE": "Mediation Deutsch nach Englisch",
+      "titleZH": "德译英中介：从德语源文到英语受众",
+      "summaryDE": "In der Richtung Deutsch nach Englisch dominiert die Umformung langer Nominalphrasen in englische Verbalstrukturen.",
+      "summaryZH": "德译英方向的核心难点是把德语的名词堆叠还原为英语的动词结构。",
+      "category": "Mediation",
+      "curriculumTier": "Q1",
+      "stage": "vertiefung",
+      "level": 2,
+      "xpReward": 135,
+      "estimatedMinutes": 18,
+      "prerequisites": [
+        "englisch-mediation-addressee-and-register",
+        "englisch-mediation-cultural-terms-explanation"
+      ],
+      "keyFormulaOrSentence": "'Die Durchfuehrung der Untersuchung erfolgte ...' wird zu 'The researchers carried out the study ...' - Nominalstil aufloesen.",
+      "commonFallacy": "Deutsche Nominalketten eins zu eins uebernehmen - Englisch bevorzugt Verbalstil und kurze Saetze.",
+      "layerIndex": 4,
+      "tags": [
+        "Verfahren",
+        "Mediation",
+        "Sprachvariation",
+        "Sachtext"
+      ]
+    },
+    {
+      "id": "englisch-mediation-english-source-to-german",
+      "fach": "Englisch",
+      "titleDE": "Mediation Englisch nach Deutsch",
+      "titleZH": "英译德中介：从句嵌套的解构与再编码",
+      "summaryDE": "In der Richtung Englisch nach Deutsch muessen Partizipialkonstruktionen in deutsche Nebensaetze oder Nominalphrasen ueberfuehrt werden.",
+      "summaryZH": "英译德方向要把英语的分词结构与紧凑从句解构为德语可接受的主从结构。",
+      "category": "Mediation",
+      "curriculumTier": "Q1",
+      "stage": "vertiefung",
+      "level": 2,
+      "xpReward": 130,
+      "estimatedMinutes": 18,
+      "prerequisites": [
+        "englisch-mediation-addressee-and-register",
+        "englisch-mediation-cultural-terms-explanation"
+      ],
+      "keyFormulaOrSentence": "'Having read the report, the minister decided ...' wird zu 'Nachdem er den Bericht gelesen hatte, entschied der Minister ...'",
+      "commonFallacy": "Englische Partizipien unveraendert ins Deutsche spiegeln - daraus entstehen nicht idiomatische Partizipialattribute.",
+      "layerIndex": 4,
+      "tags": [
+        "Verfahren",
+        "Mediation",
+        "Sachtext"
+      ]
+    },
+    {
+      "id": "englisch-mediation-format-and-genre-adaptation",
+      "fach": "Englisch",
+      "titleDE": "Textsorten- und Formatwechsel in der Mediation",
+      "titleZH": "体裁转换：从报道到邮件、博客或演讲稿",
+      "summaryDE": "Die Zieltextsorte bestimmt Aufbau, Anrede und Schlussformel der Mittlung.",
+      "summaryZH": "目标体裁决定中介文本的开头称呼、段落结构与结束语，格式本身就是得分点。",
+      "category": "Mediation",
+      "curriculumTier": "Q1",
+      "stage": "vertiefung",
+      "level": 2,
+      "xpReward": 130,
+      "estimatedMinutes": 16,
+      "prerequisites": [
+        "englisch-mediation-cultural-terms-explanation",
+        "englisch-comprehension-text-type-conventions"
+      ],
+      "keyFormulaOrSentence": "E-Mail: subject line, salutation, purpose sentence, body, closing formula - jede Textsorte hat ihr festes Geruest.",
+      "commonFallacy": "Eine E-Mail ohne Anrede und Grussformel abgeben - die Formverletzung kostet Punkte unabhaengig vom Inhalt.",
+      "layerIndex": 4,
+      "tags": [
+        "Verfahren",
+        "Mediation",
+        "Schreiben",
+        "Sachtext"
+      ]
+    },
+    {
+      "id": "englisch-mediation-listening-mediation",
+      "fach": "Englisch",
+      "titleDE": "Muendliche Sprachmittlung und Hoermediation",
+      "titleZH": "口头中介：听解后即时转述与追问应对",
+      "summaryDE": "Muendliche Mittlung verlangt Notizen in der Zielsprache, spontane Nachfragen und flexible Reparaturstrategien.",
+      "summaryZH": "口头中介要求用目标语速记要点，并能应对追问与即时修补表达。",
+      "category": "Mediation",
+      "curriculumTier": "Q2",
+      "stage": "synthese",
+      "level": 2,
+      "xpReward": 165,
+      "estimatedMinutes": 22,
+      "prerequisites": [
+        "englisch-mediation-german-source-to-english",
+        "englisch-mediation-english-source-to-german"
+      ],
+      "keyFormulaOrSentence": "'Let me put it in my own words: ...' - Signalphrasen sichern dem Sprecher Zeit und markieren die Mittlung.",
+      "commonFallacy": "Erst vollstaendig zuhoeren und dann alles berichten wollen - ohne Notizen geht unter Zeitdruck die Haelfte verloren.",
+      "layerIndex": 5,
+      "tags": [
+        "Hoerverstehen",
+        "Mediation",
+        "Sprechen",
+        "Verfahren"
+      ]
+    },
+    {
+      "id": "englisch-mediation-adding-explanations",
+      "fach": "Englisch",
+      "titleDE": "Erlaeuterungen ergaenzen (adding explanations)",
+      "titleZH": "补充说明策略：为陌生背景加注解",
+      "summaryDE": "Wo das Vorwissen des Adressaten fehlt, fuegt die Mittlung kurze erklaerende Einschuebe ein, ohne den Kern zu sprengen.",
+      "summaryZH": "当受众缺乏必要背景时，中介须插入简短解释性补充，但不得让注解淹没核心信息。",
+      "category": "Mediation",
+      "curriculumTier": "Q2",
+      "stage": "klausur_praxis",
+      "level": 3,
+      "xpReward": 170,
+      "estimatedMinutes": 22,
+      "prerequisites": [
+        "englisch-mediation-format-and-genre-adaptation",
+        "englisch-mediation-listening-mediation"
+      ],
+      "keyFormulaOrSentence": "'... , a tradition that dates back to ...' - die Erklaerung als Relativsatz oder Apposition, nicht als eigener Absatz.",
+      "commonFallacy": "Erlaeuterungen zu Hauptaussagen machen - der Kern der Mittlung bleibt der Ausgangstext, nicht die eigene Zusatzinformation.",
+      "layerIndex": 6,
+      "tags": [
+        "Verfahren",
+        "Mediation",
+        "Interkulturell",
+        "AFB-III"
+      ]
+    },
+    {
+      "id": "englisch-mediation-klausur-teil-b-integration",
+      "fach": "Englisch",
+      "titleDE": "Klausurteil B: Mediation im Abiturformat",
+      "titleZH": "高考 B 部分中介题：情境、体裁与要点的三重对齐",
+      "summaryDE": "Im Klausurteil B entscheidet die Passung von Situationsvorgabe, Textsorte und Adressat ueber die Bewertung.",
+      "summaryZH": "B 部分的评分核心是任务情境、目标体裁与受众三者的对齐程度。",
+      "category": "Mediation",
+      "curriculumTier": "Q2",
+      "stage": "klausur_praxis",
+      "level": 3,
+      "xpReward": 185,
+      "estimatedMinutes": 26,
+      "prerequisites": [
+        "englisch-mediation-listening-mediation",
+        "englisch-mediation-adding-explanations",
+        "englisch-mediation-meaning-transfer-not-translation"
+      ],
+      "keyFormulaOrSentence": "Checkliste vor der Abgabe: Situation erklaert? Textsorte formal korrekt? Alle Kernpunkte uebertragen? Register passend?",
+      "commonFallacy": "Die Situationsvorgabe ueberlesen und einen neutralen Bericht schreiben - die Aufgabe verlangt eine bestimmte Rolle.",
+      "layerIndex": 7,
+      "tags": [
+        "Klausurstrategie",
+        "Mediation",
+        "Klausur-Dauerbrenner",
+        "Schwerpunkt-2026"
+      ]
+    },
+    {
+      "id": "englisch-uni-translation-studies-equivalence",
+      "fach": "Englisch",
+      "titleDE": "Translation Studies: Aequivalenz und Skopos",
+      "titleZH": "翻译学：对等理论与目的论的功能转向",
+      "summaryDE": "Aequivalenztheorien vergleichen Ausgangs- und Zieltext; die Skopostheorie entscheidet vom Zweck des Zieltextes her.",
+      "summaryZH": "对等理论比较源文与译文的关系，目的论则从译文的功能目的出发决定翻译策略。",
+      "category": "Mediation",
+      "curriculumTier": "Uni_Prep",
+      "stage": "synthese",
+      "level": 3,
+      "xpReward": 190,
+      "estimatedMinutes": 26,
+      "prerequisites": [
+        "englisch-mediation-klausur-teil-b-integration",
+        "englisch-mediation-adding-explanations"
+      ],
+      "keyFormulaOrSentence": "Skoposregel: die Funktion des Zieltextes bestimmt die Uebersetzungsstrategie, nicht die Form des Ausgangstextes.",
+      "commonFallacy": "Aequivalenz als einzige Norm setzen - funktionale Uebersetzung darf bewusst von der Form abweichen.",
+      "layerIndex": 8,
+      "tags": [
+        "Modell",
+        "Uni-Prep",
+        "Mediation",
+        "Interkulturell"
+      ]
+    },
+    {
+      "id": "englisch-uni-intercultural-mediation-theory",
+      "fach": "Englisch",
+      "titleDE": "Interkulturelle Kompetenz und Mittlungstheorie",
+      "titleZH": "跨文化能力理论：中介者的第三空间角色",
+      "summaryDE": "Interkulturelle Mittlung wird als Aushandlung zwischen zwei Deutungssystemen beschrieben, nicht als Transport von Information.",
+      "summaryZH": "跨文化中介被理解为两套意义系统之间的协商，而非信息的中性搬运。",
+      "category": "Mediation",
+      "curriculumTier": "Uni_Prep",
+      "stage": "synthese",
+      "level": 3,
+      "xpReward": 200,
+      "estimatedMinutes": 28,
+      "prerequisites": [
+        "englisch-mediation-klausur-teil-b-integration",
+        "englisch-uni-translation-studies-equivalence",
+        "englisch-mediation-cultural-terms-explanation"
+      ],
+      "keyFormulaOrSentence": "Kernformel: interkulturelle Mittlung schafft einen dritten Raum, in dem beide Deutungssysteme verhandelbar werden.",
+      "commonFallacy": "Kultur als nationale Eigenschaft von Personen behandeln - in der neueren Theorie ist Kultur ein Deutungsangebot, kein Besitz.",
+      "layerIndex": 9,
+      "tags": [
+        "Modell",
+        "Uni-Prep",
+        "Interkulturell",
+        "Mediation"
+      ]
+    },
+    {
+      "id": "englisch-literature-genres-and-text-types",
+      "fach": "Englisch",
+      "titleDE": "Literarische Gattungen und Textsorten",
+      "titleZH": "文学体裁三分：叙事、抒情与戏剧的识别",
+      "summaryDE": "Epik, Lyrik und Dramatik unterscheiden sich in Erzaehlweise, Form und Auffuehrungsbezug; die Gattung lenkt das Analyseverfahren.",
+      "summaryZH": "叙事、抒情、戏剧在叙述方式、形式与表演属性上各不相同，体裁决定分析方法。",
+      "category": "Literature-and-Film",
+      "curriculumTier": "EF",
+      "stage": "einfuehrung",
+      "level": 1,
+      "xpReward": 95,
+      "estimatedMinutes": 12,
+      "prerequisites": [
+        "englisch-comprehension-text-type-conventions"
+      ],
+      "keyFormulaOrSentence": "Gattungsfrage zuerst: 'Who speaks? In which form? For which audience?' - daraus folgt die Methode.",
+      "commonFallacy": "Eine Kurzgeschichte wie ein Gedicht behandeln - jedes Genre verlangt seine eigenen Analysekategorien.",
+      "layerIndex": 2,
+      "tags": [
+        "Definition",
+        "Literatur",
+        "Basiswissen"
+      ]
+    },
+    {
+      "id": "englisch-literature-narrative-perspective",
+      "fach": "Englisch",
+      "titleDE": "Erzaehlperspektive und unreliable narrator",
+      "titleZH": "叙述视角：第一与第三人称、可靠与不可靠叙述者",
+      "summaryDE": "Die Erzaehlperspektive steuert Informationszugang und Sympathielenkung; ein unreliable narrator untergraebt die eigene Darstellung.",
+      "summaryZH": "叙述视角控制读者能知道什么、同情谁；不可靠叙述者的自述与事实相悖，制造反讽空间。",
+      "category": "Literature-and-Film",
+      "curriculumTier": "EF",
+      "stage": "grundlagen",
+      "level": 2,
+      "xpReward": 105,
+      "estimatedMinutes": 15,
+      "prerequisites": [
+        "englisch-literature-genres-and-text-types"
+      ],
+      "keyFormulaOrSentence": "Analyseformel: 'The first-person narrator reports only what she can know, which limits the reader's information to her perspective.'",
+      "commonFallacy": "Die Aussagen des Erzaehlers als Wahrheit des Textes nehmen - bei unzuverlaessigem Erzaehlen ist genau das die Falle.",
+      "layerIndex": 3,
+      "tags": [
+        "Definition",
+        "Literatur",
+        "Narratologie",
+        "Textanalyse"
+      ]
+    },
+    {
+      "id": "englisch-literature-poetry-imagery-analysis",
+      "fach": "Englisch",
+      "titleDE": "Lyrikanalyse: imagery, rhyme und Metrum",
+      "titleZH": "诗歌分析：意象、韵律与格律的协同效应",
+      "summaryDE": "Die Gedichtanalyse verbindet Bildfelder, Reimschema und Metrum zu einer Aussage ueber Stimmung und Thema.",
+      "summaryZH": "诗歌分析把意象群、押韵格式与格律整合为对情绪与主题的判断。",
+      "category": "Literature-and-Film",
+      "curriculumTier": "EF",
+      "stage": "grundlagen",
+      "level": 2,
+      "xpReward": 105,
+      "estimatedMinutes": 15,
+      "prerequisites": [
+        "englisch-literature-genres-and-text-types",
+        "englisch-grammar-linking-devices-cohesion"
+      ],
+      "keyFormulaOrSentence": "Reimschema notieren (abab, aabb oder free verse) und mit dem Inhalt verrechnen, nicht isoliert auflisten.",
+      "commonFallacy": "Metrum und Reim aufzaehlen, ohne ihre Funktion fuer Stimmung oder Aussage zu nennen.",
+      "layerIndex": 3,
+      "tags": [
+        "Lyrik",
+        "Literatur",
+        "Textanalyse",
+        "Stilistik"
+      ]
+    },
+    {
+      "id": "englisch-literature-shakespeare-drama",
+      "fach": "Englisch",
+      "titleDE": "Shakespeares Dramen analysieren",
+      "titleZH": "莎士比亚戏剧：独白、对话结构与戏剧张力",
+      "summaryDE": "Dramenanalyse erschliesst Konflikt, Figurenkonstellation und die dramatische Funktion von Monolog, Dialog und Szene.",
+      "summaryZH": "戏剧分析围绕冲突、人物关系网，以及独白、对白与场面的戏剧功能展开。",
+      "category": "Literature-and-Film",
+      "curriculumTier": "Q1",
+      "stage": "vertiefung",
+      "level": 2,
+      "xpReward": 140,
+      "estimatedMinutes": 20,
+      "prerequisites": [
+        "englisch-literature-narrative-perspective",
+        "englisch-literature-poetry-imagery-analysis"
+      ],
+      "keyFormulaOrSentence": "Funktionsfrage: 'What does this soliloquy reveal to the audience that no other character knows?'",
+      "commonFallacy": "Die Handlung nacherzaehlen - im Drama zaehlt der Konflikt und seine szenische Zuspitzung, nicht der Plot.",
+      "layerIndex": 4,
+      "tags": [
+        "Drama",
+        "Literatur",
+        "Textanalyse",
+        "Klausur-Dauerbrenner"
+      ]
+    },
+    {
+      "id": "englisch-literature-dystopian-novel",
+      "fach": "Englisch",
+      "titleDE": "Dystopische Romane analysieren",
+      "titleZH": "反乌托邦小说：控制机制与反抗叙事的对位",
+      "summaryDE": "Dystopien entwerfen eine Kontrollordnung und pruefen sie an einer Figur, die sich ihr widersetzt.",
+      "summaryZH": "反乌托邦设定一套控制秩序，并通过一个抵抗者来检验其内在裂缝。",
+      "category": "Literature-and-Film",
+      "curriculumTier": "Q1",
+      "stage": "vertiefung",
+      "level": 2,
+      "xpReward": 140,
+      "estimatedMinutes": 20,
+      "prerequisites": [
+        "englisch-literature-narrative-perspective",
+        "englisch-literature-genres-and-text-types"
+      ],
+      "keyFormulaOrSentence": "Analyseraster: Kontrollinstrument -> Reaktion der Figur -> Aussage ueber Macht und Freiheit.",
+      "commonFallacy": "Die dargestellte Welt mit der Botschaft des Romans verwechseln - erst die Wertung des Textes macht die Aussage.",
+      "layerIndex": 4,
+      "tags": [
+        "Literatur",
+        "Narratologie",
+        "Textanalyse",
+        "Klausur-Dauerbrenner"
+      ]
+    },
+    {
+      "id": "englisch-literature-film-camera-mise-en-scene",
+      "fach": "Englisch",
+      "titleDE": "Filmanalyse: Kamerafuehrung und mise-en-scene",
+      "titleZH": "电影分析：镜头语言与场面调度",
+      "summaryDE": "Kameraeinstellung, Perspektive und Bildkomposition lenken die Aufmerksamkeit und erzeugen Naehe oder Distanz.",
+      "summaryZH": "景别、机位与构图引导观众注意力，制造亲近或疏离的心理距离。",
+      "category": "Literature-and-Film",
+      "curriculumTier": "Q1",
+      "stage": "vertiefung",
+      "level": 2,
+      "xpReward": 140,
+      "estimatedMinutes": 20,
+      "prerequisites": [
+        "englisch-comprehension-cartoon-visual-analysis",
+        "englisch-literature-genres-and-text-types"
+      ],
+      "keyFormulaOrSentence": "Fachbegriffe: close-up, medium shot, long shot, low angle, high angle, rule of thirds - jeweils mit Wirkungsangabe.",
+      "commonFallacy": "Ein filmisches Mittel nennen, aber ueber die Handlung sprechen - die Analyse fragt nach der Wirkung der Inszenierung.",
+      "layerIndex": 4,
+      "tags": [
+        "Film",
+        "Grafik",
+        "Textanalyse"
+      ]
+    },
+    {
+      "id": "englisch-literature-film-sound-and-editing",
+      "fach": "Englisch",
+      "titleDE": "Filmanalyse: Ton, Schnitt und Montage",
+      "titleZH": "电影声画分析：配乐、音效与剪辑节奏",
+      "summaryDE": "Diegetischer und nicht-diegetischer Ton sowie die Schnittfrequenz steuern Spannung und Perspektive des Publikums.",
+      "summaryZH": "画内音与画外音、剪辑频率共同操纵观众的情绪紧张度与视角站位。",
+      "category": "Literature-and-Film",
+      "curriculumTier": "Q1",
+      "stage": "vertiefung",
+      "level": 2,
+      "xpReward": 145,
+      "estimatedMinutes": 20,
+      "prerequisites": [
+        "englisch-literature-film-camera-mise-en-scene"
+      ],
+      "keyFormulaOrSentence": "Analyseschritt: Tonquelle bestimmen -> Verhaeltnis zum Bild pruefen -> Wirkung auf den Spannungsaufbau benennen.",
+      "commonFallacy": "Musik nur als Stimmung beschreiben, ohne zu pruefen, ob sie zur Szene passt oder ihr widerspricht.",
+      "layerIndex": 5,
+      "tags": [
+        "Film",
+        "Verfahren",
+        "Textanalyse"
+      ]
+    },
+    {
+      "id": "englisch-literature-american-drama",
+      "fach": "Englisch",
+      "titleDE": "Amerikanisches Drama und der American Dream",
+      "titleZH": "美国戏剧：成功神话的破灭与家庭悲剧",
+      "summaryDE": "Das moderne amerikanische Drama prueft den American Dream an Figuren, die an seinem Versprechen scheitern.",
+      "summaryZH": "现代美国戏剧用失败者的命运检验美国梦诺言的真伪，家庭冲突是社会批判的缩影。",
+      "category": "Literature-and-Film",
+      "curriculumTier": "Q1",
+      "stage": "vertiefung",
+      "level": 3,
+      "xpReward": 150,
+      "estimatedMinutes": 22,
+      "prerequisites": [
+        "englisch-literature-shakespeare-drama",
+        "englisch-literature-dystopian-novel"
+      ],
+      "keyFormulaOrSentence": "Muster: 'The play stages the collapse of the American Dream through a protagonist whose private failure mirrors a public promise.'",
+      "commonFallacy": "Das Stueck auf eine moralische Lehre reduzieren - gefragt ist die Verknuepfung von Figur, Gesellschaft und Textstrategie.",
+      "layerIndex": 5,
+      "tags": [
+        "Drama",
+        "Literatur",
+        "Identitaet",
+        "USA",
+        "Klausur-Dauerbrenner"
+      ]
+    },
+    {
+      "id": "englisch-literature-dystopia-power-and-surveillance",
+      "fach": "Englisch",
+      "titleDE": "Dystopie als Gesellschaftskritik: Ueberwachung und Sprache",
+      "titleZH": "反乌托邦的社会批判：监控、语言操控与真相",
+      "summaryDE": "Dystopische Texte zeigen, wie Sprache selbst zum Instrument der Macht wird und Wirklichkeit umformt.",
+      "summaryZH": "反乌托邦文本揭示语言本身如何成为权力工具，并据此重塑现实。",
+      "category": "Literature-and-Film",
+      "curriculumTier": "Q2",
+      "stage": "synthese",
+      "level": 3,
+      "xpReward": 175,
+      "estimatedMinutes": 24,
+      "prerequisites": [
+        "englisch-literature-dystopian-novel",
+        "englisch-literature-american-drama"
+      ],
+      "keyFormulaOrSentence": "Kernthese: 'The novel argues that whoever controls language controls what can be thought.'",
+      "commonFallacy": "Den Plot als Botschaft verkaufen - die Aussage liegt in der Analyse der Kontrollmechanismen, nicht in der Handlung.",
+      "layerIndex": 6,
+      "tags": [
+        "Literatur",
+        "Narratologie",
+        "Rhetorik",
+        "AFB-III",
+        "Textanalyse"
+      ]
+    },
+    {
+      "id": "englisch-literature-film-adaptation-and-message",
+      "fach": "Englisch",
+      "titleDE": "Literaturverfilmung: medium, message und Adaption",
+      "titleZH": "文学改编电影：媒介转换中的意义偏移",
+      "summaryDE": "Die Adaptionsanalyse vergleicht Erzaehlstrategien von Buch und Film und fragt nach den Folgen des Medienwechsels.",
+      "summaryZH": "改编分析比较小说与电影各自的叙事策略，追问媒介转换造成的意义位移。",
+      "category": "Literature-and-Film",
+      "curriculumTier": "Q2",
+      "stage": "klausur_praxis",
+      "level": 3,
+      "xpReward": 180,
+      "estimatedMinutes": 26,
+      "prerequisites": [
+        "englisch-literature-film-sound-and-editing",
+        "englisch-literature-dystopia-power-and-surveillance",
+        "englisch-literature-film-camera-mise-en-scene"
+      ],
+      "keyFormulaOrSentence": "Kernvergleich: 'Where the novel narrates X through an unreliable voice, the film shows it directly, which removes the irony.'",
+      "commonFallacy": "Den Film an der Buchvorlage messen und Abweichungen als Fehler werten - Adaption ist Deutung, nicht Kopie.",
+      "layerIndex": 7,
+      "tags": [
+        "Film",
+        "Literatur",
+        "AFB-III",
+        "Klausurstrategie"
+      ]
+    },
+    {
+      "id": "englisch-literature-creative-writing-re-creation",
+      "fach": "Englisch",
+      "titleDE": "Creative writing und re-creation",
+      "titleZH": "创意改写：续写、换视角与仿写",
+      "summaryDE": "Die re-creation behaelt Genre, Figurenstimme und Perspektive der Vorlage bei und erweitert sie eigenstaendig.",
+      "summaryZH": "创意改写须保持原作的体裁、人物语气与视角，再作自洽的延展。",
+      "category": "Literature-and-Film",
+      "curriculumTier": "Q2",
+      "stage": "synthese",
+      "level": 2,
+      "xpReward": 170,
+      "estimatedMinutes": 24,
+      "prerequisites": [
+        "englisch-literature-dystopia-power-and-surveillance",
+        "englisch-literature-american-drama"
+      ],
+      "keyFormulaOrSentence": "Checkliste: gleiche Erzaehlperspektive? Stimmiger Figurenton? Zeit- und Ortsbezug konsistent?",
+      "commonFallacy": "Im eigenen Stil weiterschreiben und die Figurenstimme der Vorlage verlieren - Bewertungskriterium ist die Treue zur Vorlage.",
+      "layerIndex": 7,
+      "tags": [
+        "Schreiben",
+        "Literatur",
+        "Verfahren"
+      ]
+    },
+    {
+      "id": "englisch-uni-narratology-story-discourse",
+      "fach": "Englisch",
+      "titleDE": "Narratologie: story und discourse",
+      "titleZH": "叙事学：故事与话语的分层分析",
+      "summaryDE": "Die Narratologie trennt das Was der Handlung (story) von der Art der Vermittlung (discourse) und ordnet Erzaehlzeit der erzaehlten Zeit zu.",
+      "summaryZH": "叙事学把事件的先后（故事）与讲述方式（话语）分层，并对照叙述时间与被叙述时间。",
+      "category": "Literature-and-Film",
+      "curriculumTier": "Uni_Prep",
+      "stage": "synthese",
+      "level": 3,
+      "xpReward": 195,
+      "estimatedMinutes": 28,
+      "prerequisites": [
+        "englisch-literature-narrative-perspective",
+        "englisch-literature-dystopia-power-and-surveillance",
+        "englisch-literature-creative-writing-re-creation"
+      ],
+      "keyFormulaOrSentence": "Kategorienpaare: story und discourse, fabula und sjuzet, Erzaehlzeit und erzaehlte Zeit, Autor und impliziter Autor.",
+      "commonFallacy": "Autor und impliziten Autor gleichsetzen - in der Narratologie ist die Stimme des Textes nicht die Person des Schreibenden.",
+      "layerIndex": 8,
+      "tags": [
+        "Narratologie",
+        "Modell",
+        "Uni-Prep",
+        "Literatur"
+      ]
+    },
+    {
+      "id": "englisch-society-everyday-life-teenagers",
+      "fach": "Englisch",
+      "titleDE": "Alltag Jugendlicher im englischsprachigen Raum",
+      "titleZH": "英语国家青少年日常：校园、家庭与社交",
+      "summaryDE": "Schule, Familie, Freundeskreis und Freizeit bilden den Erfahrungshintergrund fuer alle spaeteren Identitaetsthemen.",
+      "summaryZH": "校园、家庭、朋友圈与休闲构成背景知识，是后续身份议题讨论的经验起点。",
+      "category": "Society-and-Identity",
+      "curriculumTier": "Sek_I",
+      "stage": "einfuehrung",
+      "level": 1,
+      "xpReward": 60,
+      "estimatedMinutes": 8,
+      "prerequisites": [],
+      "keyFormulaOrSentence": "Orientierungssatz: 'In the UK students specialise early, whereas in the US high school follows a broader curriculum.'",
+      "commonFallacy": "Deutsche Schulstrukturen auf das englischsprachige System uebertragen - die Schulsysteme sind grundverschieden.",
+      "layerIndex": 0,
+      "tags": [
+        "Landeskunde",
+        "Identitaet",
+        "Basiswissen"
+      ]
+    },
+    {
+      "id": "englisch-society-role-models",
+      "fach": "Englisch",
+      "titleDE": "Role models und Identitaetsbildung",
+      "titleZH": "榜样与身份建构：偶像如何塑造自我认知",
+      "summaryDE": "Role models liefern Vorbilder fuer Werte und Verhalten; Medien verstaerken oder verzerren diese Orientierung.",
+      "summaryZH": "榜样为价值观与行为提供参照，媒体既放大也扭曲这种认同指向。",
+      "category": "Society-and-Identity",
+      "curriculumTier": "EF",
+      "stage": "grundlagen",
+      "level": 2,
+      "xpReward": 100,
+      "estimatedMinutes": 14,
+      "prerequisites": [
+        "englisch-society-everyday-life-teenagers",
+        "englisch-comprehension-outline-and-summary"
+      ],
+      "keyFormulaOrSentence": "Muster: 'The text presents X as a role model because ... , yet it also questions this by ...'",
+      "commonFallacy": "Role model mit celebrity verwechseln - ein Vorbild wirkt ueber Werte, nicht ueber Aufmerksamkeit.",
+      "layerIndex": 2,
+      "tags": [
+        "Identitaet",
+        "Textanalyse",
+        "Gesellschaft"
+      ]
+    },
+    {
+      "id": "englisch-society-coming-of-age",
+      "fach": "Englisch",
+      "titleDE": "Coming of age und young adult fiction",
+      "titleZH": "成长小说：青春期转折与自我确立",
+      "summaryDE": "Coming-of-age-Erzaehlungen zeigen einen Reifeprozess, in dem die Figur Werte der Erwachsenenwelt prueft und verwirft.",
+      "summaryZH": "成长叙事展示主角在检验并部分否定成人世界价值观之后完成自我确立。",
+      "category": "Society-and-Identity",
+      "curriculumTier": "EF",
+      "stage": "grundlagen",
+      "level": 2,
+      "xpReward": 105,
+      "estimatedMinutes": 16,
+      "prerequisites": [
+        "englisch-society-role-models",
+        "englisch-literature-narrative-perspective"
+      ],
+      "keyFormulaOrSentence": "Muster: 'The protagonist's development becomes visible in the shift from ... to ... in her language and decisions.'",
+      "commonFallacy": "Jede Veraenderung der Figur als Reifung lesen - ein Rueckschritt kann ebenso Teil des Entwicklungsmusters sein.",
+      "layerIndex": 4,
+      "tags": [
+        "Literatur",
+        "Identitaet",
+        "Textanalyse"
+      ]
+    },
+    {
+      "id": "englisch-society-migration-multiculturalism",
+      "fach": "Englisch",
+      "titleDE": "Migration und Multikulturalitaet",
+      "titleZH": "移民与多元文化：归属感的多重张力",
+      "summaryDE": "Migrationsnarrative verhandeln Zugehoerigkeit, Sprachwechsel und das Spannungsfeld zwischen Herkunft und Aufnahmegesellschaft.",
+      "summaryZH": "移民叙事处理归属、语言转换，以及原乡与接纳社会之间的持续张力。",
+      "category": "Society-and-Identity",
+      "curriculumTier": "EF",
+      "stage": "grundlagen",
+      "level": 2,
+      "xpReward": 105,
+      "estimatedMinutes": 15,
+      "prerequisites": [
+        "englisch-society-everyday-life-teenagers",
+        "englisch-society-role-models"
+      ],
+      "keyFormulaOrSentence": "Muster: 'The experience of migration is presented as a negotiation between two cultural frameworks rather than a one-way assimilation.'",
+      "commonFallacy": "Integration eindimensional als Anpassung darstellen - zeitgenoessische Texte betonen die wechselseitige Aushandlung.",
+      "layerIndex": 3,
+      "tags": [
+        "Gesellschaft",
+        "Identitaet",
+        "Interkulturell",
+        "Textanalyse"
+      ]
+    },
+    {
+      "id": "englisch-society-identity-diversity",
+      "fach": "Englisch",
+      "titleDE": "Identitaet und Diversitaet (ethnisch, sozial, gender)",
+      "titleZH": "身份与多样性：族群、阶层与性别的交叉",
+      "summaryDE": "Identitaet entsteht aus dem Zusammenspiel mehrerer Zugehoerigkeitsachsen, die sich gegenseitig verstaerken oder widersprechen.",
+      "summaryZH": "身份由族群、阶层、性别等多条归属轴线交织而成，这些轴线彼此强化或冲突。",
+      "category": "Society-and-Identity",
+      "curriculumTier": "EF",
+      "stage": "vertiefung",
+      "level": 2,
+      "xpReward": 110,
+      "estimatedMinutes": 16,
+      "prerequisites": [
+        "englisch-society-role-models",
+        "englisch-society-migration-multiculturalism"
+      ],
+      "keyFormulaOrSentence": "Analyseraster: Zugehoerigkeitsachsen benennen und zeigen, an welcher Stelle sie im Text kollidieren.",
+      "commonFallacy": "Diversitaet auf ein einziges Merkmal reduzieren - Intersektionalitaet meint das Zusammenwirken mehrerer Achsen.",
+      "layerIndex": 4,
+      "tags": [
+        "Identitaet",
+        "Gesellschaft",
+        "Interkulturell",
+        "AFB-III"
+      ]
+    },
+    {
+      "id": "englisch-society-conformity-vs-individualism",
+      "fach": "Englisch",
+      "titleDE": "Konformitaet vs. Individualismus",
+      "titleZH": "从众与个人主义：群体压力下的自我坚持",
+      "summaryDE": "Texte pruefen, ob die Figur den Gruppenerwartungen folgt oder den eigenen Wertmassstaeben treu bleibt.",
+      "summaryZH": "文本检验人物是服从群体期待，还是坚守自身价值尺度，并追问其代价。",
+      "category": "Society-and-Identity",
+      "curriculumTier": "Q1",
+      "stage": "vertiefung",
+      "level": 3,
+      "xpReward": 155,
+      "estimatedMinutes": 22,
+      "prerequisites": [
+        "englisch-society-identity-diversity",
+        "englisch-society-coming-of-age"
+      ],
+      "keyFormulaOrSentence": "Beurteilungsformel: 'Whether conformity is presented as safety or as self-betrayal depends on the narrative perspective.'",
+      "commonFallacy": "Individualismus automatisch positiv werten - beide Werteorientierungen werden im Text unterschiedlich bewertet.",
+      "layerIndex": 5,
+      "tags": [
+        "Identitaet",
+        "AFB-III",
+        "Textanalyse",
+        "Klausur-Dauerbrenner"
+      ]
+    },
+    {
+      "id": "englisch-society-attention-economy-social-media",
+      "fach": "Englisch",
+      "titleDE": "Attention Economy und soziale Medien",
+      "titleZH": "注意力经济与社交媒体：参与、操纵与算法",
+      "summaryDE": "Digitale Plattformen belohnen Aufmerksamkeit und formen damit Selbstdarstellung, Meinungsbildung und Manipulationsrisiken.",
+      "summaryZH": "平台以注意力为奖励机制，从而重塑自我呈现、舆论形成与被操纵的风险。",
+      "category": "Society-and-Identity",
+      "curriculumTier": "Q1",
+      "stage": "vertiefung",
+      "level": 2,
+      "xpReward": 150,
+      "estimatedMinutes": 20,
+      "prerequisites": [
+        "englisch-society-migration-multiculturalism",
+        "englisch-grammar-stylistic-devices-effect"
+      ],
+      "keyFormulaOrSentence": "Muster: 'The platform does not sell content but attention, which makes outrage a profitable design choice.'",
+      "commonFallacy": "Soziale Medien als neutrale Kanaele behandeln - die Geschaeftsmodelle selbst praegen die Inhalte.",
+      "layerIndex": 6,
+      "tags": [
+        "Gesellschaft",
+        "Rhetorik",
+        "Schwerpunkt-2026",
+        "Sachtext"
+      ]
+    },
+    {
+      "id": "englisch-society-globalisation-and-work",
+      "fach": "Englisch",
+      "titleDE": "Globalisierung und Welt der Arbeit",
+      "titleZH": "全球化与世界劳动力市场：机遇与不平等",
+      "summaryDE": "Der globale Arbeitsmarkt verspricht Mobilitaet, erzeugt aber neue Ungleichheiten und verschaerkten Konkurrenzdruck.",
+      "summaryZH": "全球劳动力市场许诺流动自由，同时制造新的不平等与竞争压力。",
+      "category": "Society-and-Identity",
+      "curriculumTier": "Q1",
+      "stage": "vertiefung",
+      "level": 2,
+      "xpReward": 145,
+      "estimatedMinutes": 20,
+      "prerequisites": [
+        "englisch-society-migration-multiculturalism",
+        "englisch-mediation-german-source-to-english"
+      ],
+      "keyFormulaOrSentence": "Muster: 'Globalisation offers mobility to the qualified while exposing those without credentials to intensified competition.'",
+      "commonFallacy": "Globalisierung nur als Gewinn oder nur als Verlust darstellen - das Raster verlangt das Abwaegen beider Seiten.",
+      "layerIndex": 5,
+      "tags": [
+        "Globalisierung",
+        "Gesellschaft",
+        "Sachtext"
+      ]
+    },
+    {
+      "id": "englisch-society-american-dream",
+      "fach": "Englisch",
+      "titleDE": "Der American Dream: Ideale und Realitaeten",
+      "titleZH": "美国梦：自由平等理想与现实落差",
+      "summaryDE": "Der American Dream verbindet Freiheit, Gleichheit und das Streben nach Glueck, wird aber an sozialer Herkunft gemessen und haeufig widerlegt.",
+      "summaryZH": "美国梦把自由、平等与追求幸福绑在一起，却常因阶层出身而被现实证伪。",
+      "category": "Society-and-Identity",
+      "curriculumTier": "Q2",
+      "stage": "synthese",
+      "level": 3,
+      "xpReward": 180,
+      "estimatedMinutes": 26,
+      "prerequisites": [
+        "englisch-society-conformity-vs-individualism",
+        "englisch-society-globalisation-and-work",
+        "englisch-literature-american-drama"
+      ],
+      "keyFormulaOrSentence": "Kernthese: 'The Dream promises equality of opportunity, yet the texts show that social origin still predetermines the outcome.'",
+      "commonFallacy": "Den American Dream als reine Ideologie abtun - die Aufgabe verlangt die Analyse seines Doppelcharakters aus Ideal und Realitaet.",
+      "layerIndex": 6,
+      "tags": [
+        "USA",
+        "Identitaet",
+        "Gesellschaft",
+        "AFB-III",
+        "Klausur-Dauerbrenner"
+      ]
+    },
+    {
+      "id": "englisch-society-postcolonial-identity-nigeria",
+      "fach": "Englisch",
+      "titleDE": "Postkoloniale Identitaet am Beispiel Nigeria",
+      "titleZH": "后殖民身份：以尼日利亚为参照文化的自我定位",
+      "summaryDE": "Postkoloniale Texte verhandeln das Erbe britischer Herrschaft zwischen Aneignung und Abgrenzung.",
+      "summaryZH": "后殖民文本处理英国统治遗产在吸纳与划界之间的双重姿态。",
+      "category": "Society-and-Identity",
+      "curriculumTier": "Q2",
+      "stage": "vertiefung",
+      "level": 3,
+      "xpReward": 175,
+      "estimatedMinutes": 24,
+      "prerequisites": [
+        "englisch-society-conformity-vs-individualism",
+        "englisch-landeskunde-nigeria-reference-culture"
+      ],
+      "keyFormulaOrSentence": "Muster: 'The text stages the colonial legacy as a site of both appropriation and demarcation.'",
+      "commonFallacy": "Postkoloniale Literatur als reine Anklage lesen - viele Texte verhandeln die Ambivalenz zwischen Uebernahme und Abgrenzung.",
+      "layerIndex": 6,
+      "tags": [
+        "Postkolonial",
+        "Identitaet",
+        "Interkulturell",
+        "AFB-III"
+      ]
+    },
+    {
+      "id": "englisch-uni-postcolonial-theory",
+      "fach": "Englisch",
+      "titleDE": "Postkoloniale Theorie: Othering, Hybriditaet, Mimikry",
+      "titleZH": "后殖民理论：他者化、混杂性与模仿",
+      "summaryDE": "Die Theorie beschreibt, wie koloniale Macht Differenz erzeugt und wie kolonisierte Subjekte sie durch Mimikry und Hybriditaet unterlaufen.",
+      "summaryZH": "该理论揭示殖民权力如何生产差异，以及被殖民主体如何以模仿与混杂性将其颠覆。",
+      "category": "Society-and-Identity",
+      "curriculumTier": "Uni_Prep",
+      "stage": "synthese",
+      "level": 3,
+      "xpReward": 195,
+      "estimatedMinutes": 28,
+      "prerequisites": [
+        "englisch-society-postcolonial-identity-nigeria",
+        "englisch-society-american-dream",
+        "englisch-society-identity-diversity"
+      ],
+      "keyFormulaOrSentence": "Begriffstrias: Othering (Konstruktion des Anderen) -> Mimikry (fast gleich, nie gleich) -> Hybriditaet (dritter Raum).",
+      "commonFallacy": "Hybriditaet als einfache Mischung zweier Kulturen deuten - gemeint ist die Untergrabung der Trennung selbst.",
+      "layerIndex": 7,
+      "tags": [
+        "Postkolonial",
+        "Modell",
+        "Uni-Prep",
+        "Identitaet"
+      ]
+    },
+    {
+      "id": "englisch-uni-cultural-studies-identity",
+      "fach": "Englisch",
+      "titleDE": "Cultural Studies: Identitaet als Konstruktion",
+      "titleZH": "文化研究：身份是被建构的叙述而非血缘事实",
+      "summaryDE": "Identitaet wird in den Cultural Studies als erzaehlte und situierte Konstruktion gefasst, nicht als natuerliche Gegebenheit.",
+      "summaryZH": "文化研究把身份视为在具体情境中被叙述和建构的产物，而非天然给定的事实。",
+      "category": "Society-and-Identity",
+      "curriculumTier": "Uni_Prep",
+      "stage": "synthese",
+      "level": 3,
+      "xpReward": 195,
+      "estimatedMinutes": 28,
+      "prerequisites": [
+        "englisch-uni-postcolonial-theory",
+        "englisch-society-conformity-vs-individualism"
+      ],
+      "keyFormulaOrSentence": "Kernsatz: Identitaet ist kein Besitz, sondern eine fortlaufende Erzaehlung, die unter bestimmten Bedingungen erzaehlt wird.",
+      "commonFallacy": "Kulturelle Zugehoerigkeit als unveraenderliches Wesensmerkmal behandeln - Cultural Studies betonen Wandel und Aushandlung.",
+      "layerIndex": 8,
+      "tags": [
+        "Identitaet",
+        "Modell",
+        "Uni-Prep",
+        "Gesellschaft"
+      ]
+    },
+    {
+      "id": "englisch-landeskunde-uk-and-usa-orientation",
+      "fach": "Englisch",
+      "titleDE": "Orientierungswissen UK und USA: Grundlagen",
+      "titleZH": "英美概况基础：地理、象征与节日体系",
+      "summaryDE": "Geografie, Staatssymbole und wichtige Feiertage bilden das Grundgeruest fuer alle weiteren landeskundlichen Themen.",
+      "summaryZH": "地理、国家象征与重要节庆构成后续国别知识的基本骨架。",
+      "category": "Landeskunde",
+      "curriculumTier": "Sek_I",
+      "stage": "einfuehrung",
+      "level": 1,
+      "xpReward": 60,
+      "estimatedMinutes": 8,
+      "prerequisites": [],
+      "keyFormulaOrSentence": "Orientierung: das UK besteht aus vier Nationen mit einem Parlament, die USA aus fuenfzig Staaten mit einer Bundesregierung.",
+      "commonFallacy": "England und Grossbritannien gleichsetzen - England ist nur eine der vier Nationen des Vereinigten Koenigreichs.",
+      "layerIndex": 0,
+      "tags": [
+        "Landeskunde",
+        "UK",
+        "USA",
+        "Basiswissen"
+      ]
+    },
+    {
+      "id": "englisch-landeskunde-uk-political-system",
+      "fach": "Englisch",
+      "titleDE": "Das politische System des Vereinigten Koenigreichs",
+      "titleZH": "英国政治制度：议会主权与首相制",
+      "summaryDE": "Das UK ist eine konstitutionelle Monarchie mit parlamentarischer Souvernitaet; eine kodifizierte Verfassung fehlt.",
+      "summaryZH": "英国是议会主权的君主立宪制，没有成文宪法，权力重心在下院与首相。",
+      "category": "Landeskunde",
+      "curriculumTier": "EF",
+      "stage": "grundlagen",
+      "level": 2,
+      "xpReward": 100,
+      "estimatedMinutes": 14,
+      "prerequisites": [
+        "englisch-landeskunde-uk-and-usa-orientation"
+      ],
+      "keyFormulaOrSentence": "Kernsatz: 'The UK has no codified constitution; sovereignty rests with Parliament, not with a written document.'",
+      "commonFallacy": "Das US-amerikanische Gewaltenteilungsschema auf das UK uebertragen - dort gilt parliamentary sovereignty.",
+      "layerIndex": 1,
+      "tags": [
+        "Landeskunde",
+        "UK",
+        "Basiswissen"
+      ]
+    },
+    {
+      "id": "englisch-landeskunde-usa-political-system",
+      "fach": "Englisch",
+      "titleDE": "Das politische System der USA",
+      "titleZH": "美国政治制度：三权分立与制衡机制",
+      "summaryDE": "Die USA trennen Legislative, Exekutive und Judikative und sichern die Trennung durch gegenseitige Kontrollrechte.",
+      "summaryZH": "美国立法、行政、司法三权分立，并以相互否决权实现制衡。",
+      "category": "Landeskunde",
+      "curriculumTier": "EF",
+      "stage": "grundlagen",
+      "level": 2,
+      "xpReward": 100,
+      "estimatedMinutes": 14,
+      "prerequisites": [
+        "englisch-landeskunde-uk-and-usa-orientation"
+      ],
+      "keyFormulaOrSentence": "Kernsatz: 'Checks and balances mean that no branch can govern alone; a presidential veto can be overridden by Congress.'",
+      "commonFallacy": "Den US-Praesidenten als Regierungschef mit sicherer Mehrheit im Parlament denken - das System ist auf Blockade angelegt.",
+      "layerIndex": 1,
+      "tags": [
+        "Landeskunde",
+        "USA",
+        "Basiswissen"
+      ]
+    },
+    {
+      "id": "englisch-landeskunde-uk-monarchy-and-brexit",
+      "fach": "Englisch",
+      "titleDE": "Monarchie, nationale Selbstkonzepte und Brexit",
+      "titleZH": "君主制、民族自我构想与脱欧",
+      "summaryDE": "Die Rolle der Monarchie und der Brexit verhandeln das britische Selbstbild zwischen Tradition, Europa und globaler Orientierung.",
+      "summaryZH": "王室角色与脱欧共同折射英国在传统、欧洲与全球定位之间的自我想象。",
+      "category": "Landeskunde",
+      "curriculumTier": "EF",
+      "stage": "grundlagen",
+      "level": 2,
+      "xpReward": 105,
+      "estimatedMinutes": 16,
+      "prerequisites": [
+        "englisch-landeskunde-uk-political-system"
+      ],
+      "keyFormulaOrSentence": "Kernsatz: 'Brexit is read as a negotiation of national self-conception between European integration and post-imperial global orientation.'",
+      "commonFallacy": "Den Brexit allein wirtschaftlich erklaeren - die Dimension des nationalen Selbstkonzepts ist im KLP ausdruecklich Teil des Themas.",
+      "layerIndex": 2,
+      "tags": [
+        "Landeskunde",
+        "UK",
+        "Gesellschaft",
+        "Schwerpunkt-2026"
+      ]
+    },
+    {
+      "id": "englisch-landeskunde-usa-american-values",
+      "fach": "Englisch",
+      "titleDE": "Amerikanische Ideale und Realitaeten",
+      "titleZH": "美国理想与现实：自由、平等与幸福追求",
+      "summaryDE": "Freiheit, Gleichheit und das Streben nach Glueck sind die Leitideale, an denen die USA gemessen und kritisiert werden.",
+      "summaryZH": "自由、平等与对幸福的追求是衡量并批判美国现实的三大理想标尺。",
+      "category": "Landeskunde",
+      "curriculumTier": "EF",
+      "stage": "grundlagen",
+      "level": 2,
+      "xpReward": 105,
+      "estimatedMinutes": 15,
+      "prerequisites": [
+        "englisch-landeskunde-usa-political-system"
+      ],
+      "keyFormulaOrSentence": "Kerntrias: liberty, equality und pursuit of happiness - jede gesellschaftliche Debatte laesst sich an einer dieser Achsen messen.",
+      "commonFallacy": "Die Ideale als reine Beschreibung nehmen - sie sind ein Versprechen, an dem die Realitaet geprueft wird.",
+      "layerIndex": 2,
+      "tags": [
+        "Landeskunde",
+        "USA",
+        "Identitaet",
+        "Basiswissen"
+      ]
+    },
+    {
+      "id": "englisch-landeskunde-uk-colonial-legacy",
+      "fach": "Englisch",
+      "titleDE": "Das koloniale Erbe Grossbritanniens",
+      "titleZH": "英国殖民遗产：帝国记忆与当代回响",
+      "summaryDE": "Commonwealth, Migration nach Britain und Debatten um Denkmaeler zeigen das Nachleben des Empire.",
+      "summaryZH": "英联邦、战后移民与雕像争议共同显示帝国遗产在当代的持续作用。",
+      "category": "Landeskunde",
+      "curriculumTier": "Q1",
+      "stage": "vertiefung",
+      "level": 3,
+      "xpReward": 150,
+      "estimatedMinutes": 20,
+      "prerequisites": [
+        "englisch-landeskunde-uk-monarchy-and-brexit"
+      ],
+      "keyFormulaOrSentence": "Muster: 'The colonial past is present in contemporary Britain through ... , which shows the continuity of imperial structures.'",
+      "commonFallacy": "Das Empire als abgeschlossene Epoche behandeln - seine Strukturen wirken in Politik, Sprache und Migration fort.",
+      "layerIndex": 3,
+      "tags": [
+        "Landeskunde",
+        "UK",
+        "Postkolonial",
+        "AFB-III"
+      ]
+    },
+    {
+      "id": "englisch-landeskunde-usa-civil-rights",
+      "fach": "Englisch",
+      "titleDE": "Buergerrechtsbewegung und Rassismus in den USA",
+      "titleZH": "美国民权运动与种族问题的延续",
+      "summaryDE": "Die Buergerrechtsbewegung errang formale Gleichheit, waehrend strukturelle Ungleichheit bis in die Gegenwart fortbesteht.",
+      "summaryZH": "民权运动赢得形式平等，而结构性不平等延续至今，构成持续的政治议题。",
+      "category": "Landeskunde",
+      "curriculumTier": "Q1",
+      "stage": "vertiefung",
+      "level": 2,
+      "xpReward": 145,
+      "estimatedMinutes": 20,
+      "prerequisites": [
+        "englisch-landeskunde-usa-american-values"
+      ],
+      "keyFormulaOrSentence": "Muster: 'Formal equality was achieved in law, whereas de facto inequality persists in housing, education and policing.'",
+      "commonFallacy": "Die Wahl eines Praesidenten als Beweis fuer das Ende des Rassismus werten - Rechtsgleichheit und gelebte Gleichheit sind zu trennen.",
+      "layerIndex": 3,
+      "tags": [
+        "Landeskunde",
+        "USA",
+        "Gesellschaft"
+      ]
+    },
+    {
+      "id": "englisch-landeskunde-nigeria-reference-culture",
+      "fach": "Englisch",
+      "titleDE": "Nigeria als weitere englischsprachige Bezugskultur",
+      "titleZH": "尼日利亚作为第三英语参照文化",
+      "summaryDE": "Nigeria verbindet koloniale Praegung, Mehrsprachigkeit und eigenstaendige Gegenwartsliteratur zu einer Referenzkultur eigener Art.",
+      "summaryZH": "尼日利亚把殖民烙印、多语现实与自主的当代文学结合成独特的参照文化。",
+      "category": "Landeskunde",
+      "curriculumTier": "Q1",
+      "stage": "vertiefung",
+      "level": 2,
+      "xpReward": 150,
+      "estimatedMinutes": 20,
+      "prerequisites": [
+        "englisch-landeskunde-uk-and-usa-orientation",
+        "englisch-landeskunde-uk-colonial-legacy"
+      ],
+      "keyFormulaOrSentence": "Kernsatz: 'Nigerian literature turns the colonial language into a medium of self-representation rather than of foreign rule.'",
+      "commonFallacy": "Nigeria auf das Thema Armut verkuerzen - die Aufgabe verlangt die Auseinandersetzung mit Selbstbild und Eigenstaendigkeit.",
+      "layerIndex": 4,
+      "tags": [
+        "Landeskunde",
+        "Postkolonial",
+        "Interkulturell",
+        "Sachtext"
+      ]
+    },
+    {
+      "id": "englisch-landeskunde-varieties-of-english",
+      "fach": "Englisch",
+      "titleDE": "Varietaeten des Englischen (World Standard English)",
+      "titleZH": "英语变体：世界标准英语与区域差异",
+      "summaryDE": "Britische, amerikanische und postkoloniale Varietaeten unterscheiden sich in Lexik, Orthografie und Pragmatik, gelten aber als gleichermassen korrekt.",
+      "summaryZH": "英式、美式与后殖民变体在词汇、拼写与语用上各异，但同为规范英语。",
+      "category": "Landeskunde",
+      "curriculumTier": "Q2",
+      "stage": "synthese",
+      "level": 2,
+      "xpReward": 165,
+      "estimatedMinutes": 22,
+      "prerequisites": [
+        "englisch-landeskunde-uk-colonial-legacy",
+        "englisch-landeskunde-nigeria-reference-culture"
+      ],
+      "keyFormulaOrSentence": "Kernsatz: 'World Standard English accepts multiple norms; consistency within one text matters more than the choice of variety.'",
+      "commonFallacy": "Eine Variante fuer die einzig korrekte halten - im KLP ist die Anerkennung der Varietaeten ausdruecklich gefordert.",
+      "layerIndex": 5,
+      "tags": [
+        "Sprachvariation",
+        "Landeskunde",
+        "Uni-Prep"
+      ]
+    },
+    {
+      "id": "englisch-landeskunde-media-and-political-rhetoric",
+      "fach": "Englisch",
+      "titleDE": "Medien, Meinungsbildung und politische Rhetorik",
+      "titleZH": "媒体舆论与政治修辞：信息与操控的边界",
+      "summaryDE": "Journalismus bewegt sich zwischen Information, Meinungsbildung und Unterhaltung; politische Rhetorik nutzt dieselben Mechanismen.",
+      "summaryZH": "新闻在信息、舆论塑造与娱乐之间摇摆，政治修辞使用的正是同一套机制。",
+      "category": "Landeskunde",
+      "curriculumTier": "Q2",
+      "stage": "klausur_praxis",
+      "level": 3,
+      "xpReward": 180,
+      "estimatedMinutes": 24,
+      "prerequisites": [
+        "englisch-landeskunde-varieties-of-english",
+        "englisch-landeskunde-usa-civil-rights",
+        "englisch-comprehension-rhetorical-appeals"
+      ],
+      "keyFormulaOrSentence": "Kernfrage: 'Is the text informing, shaping opinion, or entertaining - and which linguistic signals reveal which function?'",
+      "commonFallacy": "Meinungsbildende Passagen fuer neutrale Berichterstattung halten - die Funktionszuordnung muss am Wortlaut belegt werden.",
+      "layerIndex": 6,
+      "tags": [
+        "Rhetorik",
+        "Gesellschaft",
+        "Sachtext",
+        "Klausur-Dauerbrenner"
+      ]
+    },
+    {
+      "id": "englisch-uni-sociolinguistics-variation",
+      "fach": "Englisch",
+      "titleDE": "Soziolinguistik: Variation, Prestige und Identitaet",
+      "titleZH": "社会语言学：语言变异、声望与身份标记",
+      "summaryDE": "Sprachliche Variation markiert soziale Zugehoerigkeit; das Prestige einer Variante ist ein Machtverhaeltnis, kein Qualitaetsurteil.",
+      "summaryZH": "语言变异标记社会归属，所谓“高级”变体反映的是权力关系而非语言质量。",
+      "category": "Landeskunde",
+      "curriculumTier": "Uni_Prep",
+      "stage": "synthese",
+      "level": 3,
+      "xpReward": 190,
+      "estimatedMinutes": 26,
+      "prerequisites": [
+        "englisch-landeskunde-varieties-of-english",
+        "englisch-mediation-german-source-to-english"
+      ],
+      "keyFormulaOrSentence": "Kernsatz: 'Standard English is one variety among many; its prestige is socially, not linguistically motivated.'",
+      "commonFallacy": "Nichtstandard-Varianten als fehlerhaftes Englisch werten - die Soziolinguistik trennt Regelmaessigkeit von Bewertung.",
+      "layerIndex": 6,
+      "tags": [
+        "Sprachvariation",
+        "Modell",
+        "Uni-Prep"
+      ]
+    },
+    {
+      "id": "englisch-uni-cultural-studies-britishness",
+      "fach": "Englisch",
+      "titleDE": "Britishness: nationale Selbstkonzepte im Wandel",
+      "titleZH": "英国性：多民族国家的国族自我叙事",
+      "summaryDE": "Britishness ist ein umkaempftes Konzept, das Empire, Europa und innere Devolution gleichzeitig verarbeiten muss.",
+      "summaryZH": "“英国性”是争议性概念，须同时处理帝国记忆、欧洲定位与内部权力下放。",
+      "category": "Landeskunde",
+      "curriculumTier": "Uni_Prep",
+      "stage": "synthese",
+      "level": 3,
+      "xpReward": 190,
+      "estimatedMinutes": 26,
+      "prerequisites": [
+        "englisch-landeskunde-uk-colonial-legacy",
+        "englisch-landeskunde-media-and-political-rhetoric"
+      ],
+      "keyFormulaOrSentence": "Kernsatz: 'Britishness is not a fixed identity but a contested narrative shaped by empire, Europe and devolution.'",
+      "commonFallacy": "Britishness mit Englishness gleichsetzen - schottische, walisische und nordirische Selbstkonzepte sind eigenstaendig.",
+      "layerIndex": 7,
+      "tags": [
+        "Landeskunde",
+        "UK",
+        "Identitaet",
+        "Uni-Prep"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "id": "e-englisch-grammar-tenses-aspect-basics-englisch-grammar-simple-past-vs-present-perfect",
+      "from": "englisch-grammar-tenses-aspect-basics",
+      "to": "englisch-grammar-simple-past-vs-present-perfect",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-englisch-grammar-tenses-aspect-basics-englisch-grammar-conditionals-if-clauses",
+      "from": "englisch-grammar-tenses-aspect-basics",
+      "to": "englisch-grammar-conditionals-if-clauses",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-englisch-grammar-simple-past-vs-present-perfect-englisch-grammar-conditionals-if-clauses",
+      "from": "englisch-grammar-simple-past-vs-present-perfect",
+      "to": "englisch-grammar-conditionals-if-clauses",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-englisch-grammar-simple-past-vs-present-perfect-englisch-grammar-passive-voice-agent",
+      "from": "englisch-grammar-simple-past-vs-present-perfect",
+      "to": "englisch-grammar-passive-voice-agent",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-englisch-grammar-conditionals-if-clauses-englisch-grammar-reported-speech-backshift",
+      "from": "englisch-grammar-conditionals-if-clauses",
+      "to": "englisch-grammar-reported-speech-backshift",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-englisch-grammar-passive-voice-agent-englisch-grammar-reported-speech-backshift",
+      "from": "englisch-grammar-passive-voice-agent",
+      "to": "englisch-grammar-reported-speech-backshift",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-englisch-grammar-word-classes-word-formation-englisch-grammar-register-formal-informal",
+      "from": "englisch-grammar-word-classes-word-formation",
+      "to": "englisch-grammar-register-formal-informal",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-englisch-grammar-reported-speech-backshift-englisch-grammar-register-formal-informal",
+      "from": "englisch-grammar-reported-speech-backshift",
+      "to": "englisch-grammar-register-formal-informal",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-englisch-grammar-word-classes-word-formation-englisch-grammar-linking-devices-cohesion",
+      "from": "englisch-grammar-word-classes-word-formation",
+      "to": "englisch-grammar-linking-devices-cohesion",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-englisch-grammar-simple-past-vs-present-perfect-englisch-grammar-linking-devices-cohesion",
+      "from": "englisch-grammar-simple-past-vs-present-perfect",
+      "to": "englisch-grammar-linking-devices-cohesion",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-englisch-grammar-register-formal-informal-englisch-grammar-stylistic-devices-effect",
+      "from": "englisch-grammar-register-formal-informal",
+      "to": "englisch-grammar-stylistic-devices-effect",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-englisch-grammar-linking-devices-cohesion-englisch-grammar-stylistic-devices-effect",
+      "from": "englisch-grammar-linking-devices-cohesion",
+      "to": "englisch-grammar-stylistic-devices-effect",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-englisch-grammar-stylistic-devices-effect-englisch-grammar-sentence-structure-rhetoric",
+      "from": "englisch-grammar-stylistic-devices-effect",
+      "to": "englisch-grammar-sentence-structure-rhetoric",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-englisch-grammar-register-formal-informal-englisch-grammar-sentence-structure-rhetoric",
+      "from": "englisch-grammar-register-formal-informal",
+      "to": "englisch-grammar-sentence-structure-rhetoric",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-englisch-grammar-stylistic-devices-effect-englisch-uni-stylistics-foregrounding",
+      "from": "englisch-grammar-stylistic-devices-effect",
+      "to": "englisch-uni-stylistics-foregrounding",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-englisch-grammar-stylistic-devices-effect-englisch-uni-discourse-analysis-critical",
+      "from": "englisch-grammar-stylistic-devices-effect",
+      "to": "englisch-uni-discourse-analysis-critical",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-englisch-grammar-sentence-structure-rhetoric-englisch-uni-discourse-analysis-critical",
+      "from": "englisch-grammar-sentence-structure-rhetoric",
+      "to": "englisch-uni-discourse-analysis-critical",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-englisch-uni-stylistics-foregrounding-englisch-uni-discourse-analysis-critical",
+      "from": "englisch-uni-stylistics-foregrounding",
+      "to": "englisch-uni-discourse-analysis-critical",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-englisch-comprehension-reading-strategies-englisch-comprehension-outline-and-summary",
+      "from": "englisch-comprehension-reading-strategies",
+      "to": "englisch-comprehension-outline-and-summary",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-englisch-comprehension-reading-strategies-englisch-comprehension-text-type-conventions",
+      "from": "englisch-comprehension-reading-strategies",
+      "to": "englisch-comprehension-text-type-conventions",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-englisch-grammar-word-classes-word-formation-englisch-comprehension-text-type-conventions",
+      "from": "englisch-grammar-word-classes-word-formation",
+      "to": "englisch-comprehension-text-type-conventions",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-englisch-comprehension-outline-and-summary-englisch-comprehension-argumentation-analysis",
+      "from": "englisch-comprehension-outline-and-summary",
+      "to": "englisch-comprehension-argumentation-analysis",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-englisch-comprehension-text-type-conventions-englisch-comprehension-argumentation-analysis",
+      "from": "englisch-comprehension-text-type-conventions",
+      "to": "englisch-comprehension-argumentation-analysis",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-englisch-comprehension-outline-and-summary-englisch-comprehension-characterization",
+      "from": "englisch-comprehension-outline-and-summary",
+      "to": "englisch-comprehension-characterization",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-englisch-comprehension-text-type-conventions-englisch-comprehension-characterization",
+      "from": "englisch-comprehension-text-type-conventions",
+      "to": "englisch-comprehension-characterization",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-englisch-comprehension-argumentation-analysis-englisch-comprehension-rhetorical-appeals",
+      "from": "englisch-comprehension-argumentation-analysis",
+      "to": "englisch-comprehension-rhetorical-appeals",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-englisch-grammar-linking-devices-cohesion-englisch-comprehension-rhetorical-appeals",
+      "from": "englisch-grammar-linking-devices-cohesion",
+      "to": "englisch-comprehension-rhetorical-appeals",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-englisch-comprehension-text-type-conventions-englisch-comprehension-cartoon-visual-analysis",
+      "from": "englisch-comprehension-text-type-conventions",
+      "to": "englisch-comprehension-cartoon-visual-analysis",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-englisch-comprehension-characterization-englisch-comprehension-cartoon-visual-analysis",
+      "from": "englisch-comprehension-characterization",
+      "to": "englisch-comprehension-cartoon-visual-analysis",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-englisch-comprehension-cartoon-visual-analysis-englisch-comprehension-multimodal-texts",
+      "from": "englisch-comprehension-cartoon-visual-analysis",
+      "to": "englisch-comprehension-multimodal-texts",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-englisch-comprehension-characterization-englisch-comprehension-multimodal-texts",
+      "from": "englisch-comprehension-characterization",
+      "to": "englisch-comprehension-multimodal-texts",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-englisch-comprehension-rhetorical-appeals-englisch-comprehension-political-speech-analysis",
+      "from": "englisch-comprehension-rhetorical-appeals",
+      "to": "englisch-comprehension-political-speech-analysis",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-englisch-comprehension-multimodal-texts-englisch-comprehension-political-speech-analysis",
+      "from": "englisch-comprehension-multimodal-texts",
+      "to": "englisch-comprehension-political-speech-analysis",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-englisch-comprehension-rhetorical-appeals-englisch-comprehension-evaluation-and-comment",
+      "from": "englisch-comprehension-rhetorical-appeals",
+      "to": "englisch-comprehension-evaluation-and-comment",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-englisch-comprehension-political-speech-analysis-englisch-comprehension-evaluation-and-comment",
+      "from": "englisch-comprehension-political-speech-analysis",
+      "to": "englisch-comprehension-evaluation-and-comment",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-englisch-comprehension-political-speech-analysis-englisch-klausur-synthese-abitur",
+      "from": "englisch-comprehension-political-speech-analysis",
+      "to": "englisch-klausur-synthese-abitur",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-englisch-comprehension-evaluation-and-comment-englisch-klausur-synthese-abitur",
+      "from": "englisch-comprehension-evaluation-and-comment",
+      "to": "englisch-klausur-synthese-abitur",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-englisch-mediation-klausur-teil-b-integration-englisch-klausur-synthese-abitur",
+      "from": "englisch-mediation-klausur-teil-b-integration",
+      "to": "englisch-klausur-synthese-abitur",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-englisch-literature-film-adaptation-and-message-englisch-klausur-synthese-abitur",
+      "from": "englisch-literature-film-adaptation-and-message",
+      "to": "englisch-klausur-synthese-abitur",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-englisch-comprehension-evaluation-and-comment-englisch-uni-pragmatics-speech-acts",
+      "from": "englisch-comprehension-evaluation-and-comment",
+      "to": "englisch-uni-pragmatics-speech-acts",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-englisch-comprehension-rhetorical-appeals-englisch-uni-pragmatics-speech-acts",
+      "from": "englisch-comprehension-rhetorical-appeals",
+      "to": "englisch-uni-pragmatics-speech-acts",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-englisch-mediation-everyday-situations-englisch-mediation-meaning-transfer-not-translation",
+      "from": "englisch-mediation-everyday-situations",
+      "to": "englisch-mediation-meaning-transfer-not-translation",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-englisch-mediation-meaning-transfer-not-translation-englisch-mediation-addressee-and-register",
+      "from": "englisch-mediation-meaning-transfer-not-translation",
+      "to": "englisch-mediation-addressee-and-register",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-englisch-mediation-meaning-transfer-not-translation-englisch-mediation-cultural-terms-explanation",
+      "from": "englisch-mediation-meaning-transfer-not-translation",
+      "to": "englisch-mediation-cultural-terms-explanation",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-englisch-mediation-addressee-and-register-englisch-mediation-cultural-terms-explanation",
+      "from": "englisch-mediation-addressee-and-register",
+      "to": "englisch-mediation-cultural-terms-explanation",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-englisch-mediation-addressee-and-register-englisch-mediation-german-source-to-english",
+      "from": "englisch-mediation-addressee-and-register",
+      "to": "englisch-mediation-german-source-to-english",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-englisch-mediation-cultural-terms-explanation-englisch-mediation-german-source-to-english",
+      "from": "englisch-mediation-cultural-terms-explanation",
+      "to": "englisch-mediation-german-source-to-english",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-englisch-mediation-addressee-and-register-englisch-mediation-english-source-to-german",
+      "from": "englisch-mediation-addressee-and-register",
+      "to": "englisch-mediation-english-source-to-german",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-englisch-mediation-cultural-terms-explanation-englisch-mediation-english-source-to-german",
+      "from": "englisch-mediation-cultural-terms-explanation",
+      "to": "englisch-mediation-english-source-to-german",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-englisch-mediation-cultural-terms-explanation-englisch-mediation-format-and-genre-adaptation",
+      "from": "englisch-mediation-cultural-terms-explanation",
+      "to": "englisch-mediation-format-and-genre-adaptation",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-englisch-comprehension-text-type-conventions-englisch-mediation-format-and-genre-adaptation",
+      "from": "englisch-comprehension-text-type-conventions",
+      "to": "englisch-mediation-format-and-genre-adaptation",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-englisch-mediation-german-source-to-english-englisch-mediation-listening-mediation",
+      "from": "englisch-mediation-german-source-to-english",
+      "to": "englisch-mediation-listening-mediation",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-englisch-mediation-english-source-to-german-englisch-mediation-listening-mediation",
+      "from": "englisch-mediation-english-source-to-german",
+      "to": "englisch-mediation-listening-mediation",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-englisch-mediation-format-and-genre-adaptation-englisch-mediation-adding-explanations",
+      "from": "englisch-mediation-format-and-genre-adaptation",
+      "to": "englisch-mediation-adding-explanations",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-englisch-mediation-listening-mediation-englisch-mediation-adding-explanations",
+      "from": "englisch-mediation-listening-mediation",
+      "to": "englisch-mediation-adding-explanations",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-englisch-mediation-listening-mediation-englisch-mediation-klausur-teil-b-integration",
+      "from": "englisch-mediation-listening-mediation",
+      "to": "englisch-mediation-klausur-teil-b-integration",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-englisch-mediation-adding-explanations-englisch-mediation-klausur-teil-b-integration",
+      "from": "englisch-mediation-adding-explanations",
+      "to": "englisch-mediation-klausur-teil-b-integration",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-englisch-mediation-meaning-transfer-not-translation-englisch-mediation-klausur-teil-b-integration",
+      "from": "englisch-mediation-meaning-transfer-not-translation",
+      "to": "englisch-mediation-klausur-teil-b-integration",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-englisch-mediation-klausur-teil-b-integration-englisch-uni-translation-studies-equivalence",
+      "from": "englisch-mediation-klausur-teil-b-integration",
+      "to": "englisch-uni-translation-studies-equivalence",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-englisch-mediation-adding-explanations-englisch-uni-translation-studies-equivalence",
+      "from": "englisch-mediation-adding-explanations",
+      "to": "englisch-uni-translation-studies-equivalence",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-englisch-mediation-klausur-teil-b-integration-englisch-uni-intercultural-mediation-theory",
+      "from": "englisch-mediation-klausur-teil-b-integration",
+      "to": "englisch-uni-intercultural-mediation-theory",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-englisch-uni-translation-studies-equivalence-englisch-uni-intercultural-mediation-theory",
+      "from": "englisch-uni-translation-studies-equivalence",
+      "to": "englisch-uni-intercultural-mediation-theory",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-englisch-mediation-cultural-terms-explanation-englisch-uni-intercultural-mediation-theory",
+      "from": "englisch-mediation-cultural-terms-explanation",
+      "to": "englisch-uni-intercultural-mediation-theory",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-englisch-comprehension-text-type-conventions-englisch-literature-genres-and-text-types",
+      "from": "englisch-comprehension-text-type-conventions",
+      "to": "englisch-literature-genres-and-text-types",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-englisch-literature-genres-and-text-types-englisch-literature-narrative-perspective",
+      "from": "englisch-literature-genres-and-text-types",
+      "to": "englisch-literature-narrative-perspective",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-englisch-literature-genres-and-text-types-englisch-literature-poetry-imagery-analysis",
+      "from": "englisch-literature-genres-and-text-types",
+      "to": "englisch-literature-poetry-imagery-analysis",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-englisch-grammar-linking-devices-cohesion-englisch-literature-poetry-imagery-analysis",
+      "from": "englisch-grammar-linking-devices-cohesion",
+      "to": "englisch-literature-poetry-imagery-analysis",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-englisch-literature-narrative-perspective-englisch-literature-shakespeare-drama",
+      "from": "englisch-literature-narrative-perspective",
+      "to": "englisch-literature-shakespeare-drama",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-englisch-literature-poetry-imagery-analysis-englisch-literature-shakespeare-drama",
+      "from": "englisch-literature-poetry-imagery-analysis",
+      "to": "englisch-literature-shakespeare-drama",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-englisch-literature-narrative-perspective-englisch-literature-dystopian-novel",
+      "from": "englisch-literature-narrative-perspective",
+      "to": "englisch-literature-dystopian-novel",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-englisch-literature-genres-and-text-types-englisch-literature-dystopian-novel",
+      "from": "englisch-literature-genres-and-text-types",
+      "to": "englisch-literature-dystopian-novel",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-englisch-comprehension-cartoon-visual-analysis-englisch-literature-film-camera-mise-en-scene",
+      "from": "englisch-comprehension-cartoon-visual-analysis",
+      "to": "englisch-literature-film-camera-mise-en-scene",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-englisch-literature-genres-and-text-types-englisch-literature-film-camera-mise-en-scene",
+      "from": "englisch-literature-genres-and-text-types",
+      "to": "englisch-literature-film-camera-mise-en-scene",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-englisch-literature-film-camera-mise-en-scene-englisch-literature-film-sound-and-editing",
+      "from": "englisch-literature-film-camera-mise-en-scene",
+      "to": "englisch-literature-film-sound-and-editing",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-englisch-literature-shakespeare-drama-englisch-literature-american-drama",
+      "from": "englisch-literature-shakespeare-drama",
+      "to": "englisch-literature-american-drama",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-englisch-literature-dystopian-novel-englisch-literature-american-drama",
+      "from": "englisch-literature-dystopian-novel",
+      "to": "englisch-literature-american-drama",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-englisch-literature-dystopian-novel-englisch-literature-dystopia-power-and-surveillance",
+      "from": "englisch-literature-dystopian-novel",
+      "to": "englisch-literature-dystopia-power-and-surveillance",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-englisch-literature-american-drama-englisch-literature-dystopia-power-and-surveillance",
+      "from": "englisch-literature-american-drama",
+      "to": "englisch-literature-dystopia-power-and-surveillance",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-englisch-literature-film-sound-and-editing-englisch-literature-film-adaptation-and-message",
+      "from": "englisch-literature-film-sound-and-editing",
+      "to": "englisch-literature-film-adaptation-and-message",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-englisch-literature-dystopia-power-and-surveillance-englisch-literature-film-adaptation-and-message",
+      "from": "englisch-literature-dystopia-power-and-surveillance",
+      "to": "englisch-literature-film-adaptation-and-message",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-englisch-literature-film-camera-mise-en-scene-englisch-literature-film-adaptation-and-message",
+      "from": "englisch-literature-film-camera-mise-en-scene",
+      "to": "englisch-literature-film-adaptation-and-message",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-englisch-literature-dystopia-power-and-surveillance-englisch-literature-creative-writing-re-creation",
+      "from": "englisch-literature-dystopia-power-and-surveillance",
+      "to": "englisch-literature-creative-writing-re-creation",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-englisch-literature-american-drama-englisch-literature-creative-writing-re-creation",
+      "from": "englisch-literature-american-drama",
+      "to": "englisch-literature-creative-writing-re-creation",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-englisch-literature-narrative-perspective-englisch-uni-narratology-story-discourse",
+      "from": "englisch-literature-narrative-perspective",
+      "to": "englisch-uni-narratology-story-discourse",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-englisch-literature-dystopia-power-and-surveillance-englisch-uni-narratology-story-discourse",
+      "from": "englisch-literature-dystopia-power-and-surveillance",
+      "to": "englisch-uni-narratology-story-discourse",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-englisch-literature-creative-writing-re-creation-englisch-uni-narratology-story-discourse",
+      "from": "englisch-literature-creative-writing-re-creation",
+      "to": "englisch-uni-narratology-story-discourse",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-englisch-society-everyday-life-teenagers-englisch-society-role-models",
+      "from": "englisch-society-everyday-life-teenagers",
+      "to": "englisch-society-role-models",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-englisch-comprehension-outline-and-summary-englisch-society-role-models",
+      "from": "englisch-comprehension-outline-and-summary",
+      "to": "englisch-society-role-models",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-englisch-society-role-models-englisch-society-coming-of-age",
+      "from": "englisch-society-role-models",
+      "to": "englisch-society-coming-of-age",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-englisch-literature-narrative-perspective-englisch-society-coming-of-age",
+      "from": "englisch-literature-narrative-perspective",
+      "to": "englisch-society-coming-of-age",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-englisch-society-everyday-life-teenagers-englisch-society-migration-multiculturalism",
+      "from": "englisch-society-everyday-life-teenagers",
+      "to": "englisch-society-migration-multiculturalism",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-englisch-society-role-models-englisch-society-migration-multiculturalism",
+      "from": "englisch-society-role-models",
+      "to": "englisch-society-migration-multiculturalism",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-englisch-society-role-models-englisch-society-identity-diversity",
+      "from": "englisch-society-role-models",
+      "to": "englisch-society-identity-diversity",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-englisch-society-migration-multiculturalism-englisch-society-identity-diversity",
+      "from": "englisch-society-migration-multiculturalism",
+      "to": "englisch-society-identity-diversity",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-englisch-society-identity-diversity-englisch-society-conformity-vs-individualism",
+      "from": "englisch-society-identity-diversity",
+      "to": "englisch-society-conformity-vs-individualism",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-englisch-society-coming-of-age-englisch-society-conformity-vs-individualism",
+      "from": "englisch-society-coming-of-age",
+      "to": "englisch-society-conformity-vs-individualism",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-englisch-society-migration-multiculturalism-englisch-society-attention-economy-social-media",
+      "from": "englisch-society-migration-multiculturalism",
+      "to": "englisch-society-attention-economy-social-media",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-englisch-grammar-stylistic-devices-effect-englisch-society-attention-economy-social-media",
+      "from": "englisch-grammar-stylistic-devices-effect",
+      "to": "englisch-society-attention-economy-social-media",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-englisch-society-migration-multiculturalism-englisch-society-globalisation-and-work",
+      "from": "englisch-society-migration-multiculturalism",
+      "to": "englisch-society-globalisation-and-work",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-englisch-mediation-german-source-to-english-englisch-society-globalisation-and-work",
+      "from": "englisch-mediation-german-source-to-english",
+      "to": "englisch-society-globalisation-and-work",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-englisch-society-conformity-vs-individualism-englisch-society-american-dream",
+      "from": "englisch-society-conformity-vs-individualism",
+      "to": "englisch-society-american-dream",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-englisch-society-globalisation-and-work-englisch-society-american-dream",
+      "from": "englisch-society-globalisation-and-work",
+      "to": "englisch-society-american-dream",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-englisch-literature-american-drama-englisch-society-american-dream",
+      "from": "englisch-literature-american-drama",
+      "to": "englisch-society-american-dream",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-englisch-society-conformity-vs-individualism-englisch-society-postcolonial-identity-nigeria",
+      "from": "englisch-society-conformity-vs-individualism",
+      "to": "englisch-society-postcolonial-identity-nigeria",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-englisch-landeskunde-nigeria-reference-culture-englisch-society-postcolonial-identity-nigeria",
+      "from": "englisch-landeskunde-nigeria-reference-culture",
+      "to": "englisch-society-postcolonial-identity-nigeria",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-englisch-society-postcolonial-identity-nigeria-englisch-uni-postcolonial-theory",
+      "from": "englisch-society-postcolonial-identity-nigeria",
+      "to": "englisch-uni-postcolonial-theory",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-englisch-society-american-dream-englisch-uni-postcolonial-theory",
+      "from": "englisch-society-american-dream",
+      "to": "englisch-uni-postcolonial-theory",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-englisch-society-identity-diversity-englisch-uni-postcolonial-theory",
+      "from": "englisch-society-identity-diversity",
+      "to": "englisch-uni-postcolonial-theory",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-englisch-uni-postcolonial-theory-englisch-uni-cultural-studies-identity",
+      "from": "englisch-uni-postcolonial-theory",
+      "to": "englisch-uni-cultural-studies-identity",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-englisch-society-conformity-vs-individualism-englisch-uni-cultural-studies-identity",
+      "from": "englisch-society-conformity-vs-individualism",
+      "to": "englisch-uni-cultural-studies-identity",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-englisch-landeskunde-uk-and-usa-orientation-englisch-landeskunde-uk-political-system",
+      "from": "englisch-landeskunde-uk-and-usa-orientation",
+      "to": "englisch-landeskunde-uk-political-system",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-englisch-landeskunde-uk-and-usa-orientation-englisch-landeskunde-usa-political-system",
+      "from": "englisch-landeskunde-uk-and-usa-orientation",
+      "to": "englisch-landeskunde-usa-political-system",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-englisch-landeskunde-uk-political-system-englisch-landeskunde-uk-monarchy-and-brexit",
+      "from": "englisch-landeskunde-uk-political-system",
+      "to": "englisch-landeskunde-uk-monarchy-and-brexit",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-englisch-landeskunde-usa-political-system-englisch-landeskunde-usa-american-values",
+      "from": "englisch-landeskunde-usa-political-system",
+      "to": "englisch-landeskunde-usa-american-values",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-englisch-landeskunde-uk-monarchy-and-brexit-englisch-landeskunde-uk-colonial-legacy",
+      "from": "englisch-landeskunde-uk-monarchy-and-brexit",
+      "to": "englisch-landeskunde-uk-colonial-legacy",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-englisch-landeskunde-usa-american-values-englisch-landeskunde-usa-civil-rights",
+      "from": "englisch-landeskunde-usa-american-values",
+      "to": "englisch-landeskunde-usa-civil-rights",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-englisch-landeskunde-uk-and-usa-orientation-englisch-landeskunde-nigeria-reference-culture",
+      "from": "englisch-landeskunde-uk-and-usa-orientation",
+      "to": "englisch-landeskunde-nigeria-reference-culture",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-englisch-landeskunde-uk-colonial-legacy-englisch-landeskunde-nigeria-reference-culture",
+      "from": "englisch-landeskunde-uk-colonial-legacy",
+      "to": "englisch-landeskunde-nigeria-reference-culture",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-englisch-landeskunde-uk-colonial-legacy-englisch-landeskunde-varieties-of-english",
+      "from": "englisch-landeskunde-uk-colonial-legacy",
+      "to": "englisch-landeskunde-varieties-of-english",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-englisch-landeskunde-nigeria-reference-culture-englisch-landeskunde-varieties-of-english",
+      "from": "englisch-landeskunde-nigeria-reference-culture",
+      "to": "englisch-landeskunde-varieties-of-english",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-englisch-landeskunde-varieties-of-english-englisch-landeskunde-media-and-political-rhetoric",
+      "from": "englisch-landeskunde-varieties-of-english",
+      "to": "englisch-landeskunde-media-and-political-rhetoric",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-englisch-landeskunde-usa-civil-rights-englisch-landeskunde-media-and-political-rhetoric",
+      "from": "englisch-landeskunde-usa-civil-rights",
+      "to": "englisch-landeskunde-media-and-political-rhetoric",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-englisch-comprehension-rhetorical-appeals-englisch-landeskunde-media-and-political-rhetoric",
+      "from": "englisch-comprehension-rhetorical-appeals",
+      "to": "englisch-landeskunde-media-and-political-rhetoric",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-englisch-landeskunde-varieties-of-english-englisch-uni-sociolinguistics-variation",
+      "from": "englisch-landeskunde-varieties-of-english",
+      "to": "englisch-uni-sociolinguistics-variation",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-englisch-mediation-german-source-to-english-englisch-uni-sociolinguistics-variation",
+      "from": "englisch-mediation-german-source-to-english",
+      "to": "englisch-uni-sociolinguistics-variation",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-englisch-landeskunde-uk-colonial-legacy-englisch-uni-cultural-studies-britishness",
+      "from": "englisch-landeskunde-uk-colonial-legacy",
+      "to": "englisch-uni-cultural-studies-britishness",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-englisch-landeskunde-media-and-political-rhetoric-englisch-uni-cultural-studies-britishness",
+      "from": "englisch-landeskunde-media-and-political-rhetoric",
+      "to": "englisch-uni-cultural-studies-britishness",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-syn-1",
+      "from": "englisch-grammar-register-formal-informal",
+      "to": "englisch-grammar-stylistic-devices-effect",
+      "type": "synergy",
+      "descriptionZH": "语域判断与修辞效果分析共用同一套语言敏感度，互为训练场景"
+    },
+    {
+      "id": "e-syn-2",
+      "from": "englisch-comprehension-argumentation-analysis",
+      "to": "englisch-comprehension-rhetorical-appeals",
+      "type": "synergy",
+      "descriptionZH": "论证链还原与说服三诉求互为表里，同一段落可作双向分析"
+    },
+    {
+      "id": "e-syn-3",
+      "from": "englisch-mediation-german-source-to-english",
+      "to": "englisch-mediation-english-source-to-german",
+      "type": "synergy",
+      "descriptionZH": "双向中介互为镜像训练，同一语料正反各做一遍收益最大"
+    },
+    {
+      "id": "e-syn-4",
+      "from": "englisch-literature-film-camera-mise-en-scene",
+      "to": "englisch-literature-film-sound-and-editing",
+      "type": "synergy",
+      "descriptionZH": "画面与声音共同构成场面调度，分开分析会漏掉声画对位"
+    },
+    {
+      "id": "e-syn-5",
+      "from": "englisch-society-identity-diversity",
+      "to": "englisch-society-attention-economy-social-media",
+      "type": "synergy",
+      "descriptionZH": "身份多样性与平台算法互相塑造，是同一议题的社会与媒介两面"
+    },
+    {
+      "id": "e-syn-6",
+      "from": "englisch-landeskunde-uk-political-system",
+      "to": "englisch-landeskunde-usa-political-system",
+      "type": "synergy",
+      "descriptionZH": "英美两套政治制度对比记忆，差异点本身就是考点"
+    },
+    {
+      "id": "e-syn-7",
+      "from": "englisch-comprehension-outline-and-summary",
+      "to": "englisch-mediation-meaning-transfer-not-translation",
+      "type": "synergy",
+      "descriptionZH": "概要写作与中介转述共用同一项信息筛选能力"
+    },
+    {
+      "id": "e-syn-8",
+      "from": "englisch-grammar-stylistic-devices-effect",
+      "to": "englisch-comprehension-political-speech-analysis",
+      "type": "synergy",
+      "descriptionZH": "修辞格分析直接服务政治演讲分析，是后者的工具层"
+    },
+    {
+      "id": "e-syn-9",
+      "from": "englisch-literature-dystopia-power-and-surveillance",
+      "to": "englisch-society-american-dream",
+      "type": "synergy",
+      "descriptionZH": "反乌托邦叙事与美国梦理想互为正反面镜像"
+    },
+    {
+      "id": "e-cross-1",
+      "from": "englisch-uni-discourse-analysis-critical",
+      "to": "englisch-landeskunde-media-and-political-rhetoric",
+      "type": "cross_disciplinary",
+      "descriptionZH": "批评性话语分析为国别媒体修辞分析提供理论工具"
+    },
+    {
+      "id": "e-cross-2",
+      "from": "englisch-uni-cultural-studies-identity",
+      "to": "englisch-uni-narratology-story-discourse",
+      "type": "cross_disciplinary",
+      "descriptionZH": "身份叙事研究与叙事学共享 story 与 discourse 的分层框架"
+    },
+    {
+      "id": "e-cross-3",
+      "from": "englisch-uni-intercultural-mediation-theory",
+      "to": "englisch-uni-postcolonial-theory",
+      "type": "cross_disciplinary",
+      "descriptionZH": "跨文化中介理论与后殖民理论共用他者化与第三空间概念"
+    },
+    {
+      "id": "e-cross-4",
+      "from": "englisch-uni-pragmatics-speech-acts",
+      "to": "englisch-uni-translation-studies-equivalence",
+      "type": "cross_disciplinary",
+      "descriptionZH": "语用学为翻译对等提供言语行为层面的判据"
+    },
+    {
+      "id": "e-cross-5",
+      "from": "englisch-uni-sociolinguistics-variation",
+      "to": "englisch-uni-stylistics-foregrounding",
+      "type": "cross_disciplinary",
+      "descriptionZH": "社会语言学的变异研究与文体学的偏离概念共享同一套标记理论"
+    }
+  ]
+}
