@@ -1,0 +1,2734 @@
+{
+  "schemaVersion": 1,
+  "fach": "Physik",
+  "nameDE": "Physik",
+  "nameZH": "物理 (Physik)",
+  "descriptionDE": "Kinematik, Dynamik, Erhaltungssaetze, Elektrodynamik, Thermodynamik und Quantenphysik (NRW Oberstufe & Uni-Prep)",
+  "descriptionZH": "运动学、动力学、守恒律、电动力学、热力学与量子物理的全景引力星系图谱 (NRW 高中与大学衔接)",
+  "isCustomSubject": false,
+  "categories": [
+    "Kinematik",
+    "Dynamik",
+    "Energie-Impuls",
+    "Elektrodynamik",
+    "Thermodynamik",
+    "Quantenphysik"
+  ],
+  "availableTags": [
+    "Formel",
+    "Modell",
+    "Axiom",
+    "Definition",
+    "Verfahren",
+    "Grafik",
+    "Basiswissen",
+    "Klausur-Dauerbrenner",
+    "Schwerpunkt-2026",
+    "AFB-III",
+    "Uni-Prep",
+    "Kinematik",
+    "Mechanik",
+    "Energie",
+    "Impuls",
+    "Stoesse",
+    "Gravitation",
+    "Elektrizitaet",
+    "Magnetismus",
+    "Induktion",
+    "Feld",
+    "Schwingung",
+    "Welle",
+    "Optik",
+    "Thermodynamik",
+    "Gasgesetz",
+    "Entropie",
+    "Quantenphysik",
+    "Photon",
+    "Atomphysik",
+    "Kernphysik",
+    "Relativitaet",
+    "Mathematisierung",
+    "Experiment",
+    "Alltag"
+  ],
+  "nodes": [
+    {
+      "id": "physik-messen-einheiten-groessen",
+      "fach": "Physik",
+      "titleDE": "Messen, Einheiten und Größenordnungen",
+      "titleZH": "物理量与单位制：测量、量纲与数量级估算",
+      "summaryDE": "Jede physikalische Größe ist das Produkt aus Maßzahl und Einheit; SI-Basiseinheiten und Vorsätze erlauben konsistente Umrechnung.",
+      "summaryZH": "任何物理量都是数值与单位的乘积；掌握SI基本单位与词头即可统一换算并做量纲检验。",
+      "category": "Kinematik",
+      "curriculumTier": "Sek_I",
+      "stage": "einfuehrung",
+      "level": 1,
+      "xpReward": 60,
+      "estimatedMinutes": 8,
+      "prerequisites": [],
+      "keyFormulaOrSentence": "1 km/h = 1/3.6 m/s  und  Einheitenkontrolle: [v] = m/s = m * s^-1",
+      "commonFallacy": "Nur die Maßzahl notieren und die Einheit weglassen - ohne Einheit ist das Ergebnis physikalisch bedeutungslos.",
+      "layerIndex": 0,
+      "tags": [
+        "Formel",
+        "Basiswissen",
+        "Mechanik"
+      ]
+    },
+    {
+      "id": "physik-gleichfoermige-bewegung",
+      "fach": "Physik",
+      "titleDE": "Gleichförmige geradlinige Bewegung",
+      "titleZH": "匀速直线运动与v-t图面积法",
+      "summaryDE": "Bei konstanter Geschwindigkeit wächst der zurückgelegte Weg linear mit der Zeit; die Steigung im s-t-Diagramm ist die Geschwindigkeit.",
+      "summaryZH": "速度恒定时位移随时间线性增长；s-t图象的切线斜率就是速度，v-t图象下方面积就是位移。",
+      "category": "Kinematik",
+      "curriculumTier": "Sek_I",
+      "stage": "einfuehrung",
+      "level": 1,
+      "xpReward": 70,
+      "estimatedMinutes": 10,
+      "prerequisites": [
+        "physik-messen-einheiten-groessen"
+      ],
+      "keyFormulaOrSentence": "v = s / t  mit  v = const.  und  a = 0",
+      "commonFallacy": "Momentan- und Durchschnittsgeschwindigkeit gleichsetzen - identisch sind beide nur bei gleichförmiger Bewegung.",
+      "layerIndex": 1,
+      "tags": [
+        "Formel",
+        "Grafik",
+        "Kinematik",
+        "Basiswissen"
+      ]
+    },
+    {
+      "id": "physik-bewegungsdiagramme-analyse",
+      "fach": "Physik",
+      "titleDE": "Auswertung von s-t- und v-t-Diagrammen",
+      "titleZH": "s-t与v-t图象的斜率-面积互译",
+      "summaryDE": "Die Steigung im s-t-Diagramm ergibt die Geschwindigkeit, die Fläche unter dem v-t-Diagramm ergibt den zurückgelegten Weg.",
+      "summaryZH": "位移-时间图的斜率给出速度，速度-时间图下方的面积给出路程，二者互为图解微积分。",
+      "category": "Kinematik",
+      "curriculumTier": "EF",
+      "stage": "grundlagen",
+      "level": 1,
+      "xpReward": 90,
+      "estimatedMinutes": 12,
+      "prerequisites": [
+        "physik-gleichfoermige-bewegung"
+      ],
+      "keyFormulaOrSentence": "v = ds/dt (Steigung im s-t-Graph);  s = Fläche unter v(t) (grafische Integration)",
+      "commonFallacy": "Die Fläche unter dem s-t-Diagramm als Weg deuten - nur die Fläche unter dem v-t-Diagramm hat die Dimension einer Strecke.",
+      "layerIndex": 3,
+      "tags": [
+        "Grafik",
+        "Verfahren",
+        "Kinematik",
+        "Klausur-Dauerbrenner"
+      ]
+    },
+    {
+      "id": "physik-gleichmaessig-beschleunigte-bewegung",
+      "fach": "Physik",
+      "titleDE": "Gleichmäßig beschleunigte Bewegung",
+      "titleZH": "匀加速运动三大方程与抛物线位移",
+      "summaryDE": "Eine konstante Beschleunigung erzeugt ein lineares Geschwindigkeits-Zeit-Gesetz und ein quadratisches Orts-Zeit-Gesetz.",
+      "summaryZH": "加速度恒定时速度随时间线性增长、位移随时间平方增长，轨迹为抛物线。",
+      "category": "Kinematik",
+      "curriculumTier": "EF",
+      "stage": "grundlagen",
+      "level": 2,
+      "xpReward": 105,
+      "estimatedMinutes": 14,
+      "prerequisites": [
+        "physik-gleichfoermige-bewegung"
+      ],
+      "keyFormulaOrSentence": "s = 1/2 * a * t^2  und  v = a * t  sowie  v^2 = 2 * a * s",
+      "commonFallacy": "Die mittlere Geschwindigkeit mit v = a*t ansetzen statt mit v_mittel = (v_0 + v) / 2.",
+      "layerIndex": 3,
+      "tags": [
+        "Formel",
+        "Kinematik",
+        "Basiswissen",
+        "Klausur-Dauerbrenner"
+      ]
+    },
+    {
+      "id": "physik-freier-fall",
+      "fach": "Physik",
+      "titleDE": "Freier Fall",
+      "titleZH": "自由落体与重力加速度的普适性",
+      "summaryDE": "Im Vakuum fällt jeder Körper mit derselben Beschleunigung g, weil träge und schwere Masse proportional sind.",
+      "summaryZH": "真空中一切物体以相同加速度g下落，因为惯性质量与重力质量严格成比例。",
+      "category": "Kinematik",
+      "curriculumTier": "EF",
+      "stage": "grundlagen",
+      "level": 2,
+      "xpReward": 105,
+      "estimatedMinutes": 12,
+      "prerequisites": [
+        "physik-gleichmaessig-beschleunigte-bewegung"
+      ],
+      "keyFormulaOrSentence": "h = 1/2 * g * t^2  und  v = g * t  mit  g = 9.81 m/s^2",
+      "commonFallacy": "Annehmen, ein schwererer Körper falle schneller - das gilt nur bei Luftreibung, nicht im Vakuum.",
+      "layerIndex": 4,
+      "tags": [
+        "Formel",
+        "Experiment",
+        "Kinematik",
+        "Basiswissen"
+      ]
+    },
+    {
+      "id": "physik-vektorielle-groessen-zerlegung",
+      "fach": "Physik",
+      "titleDE": "Vektorielle Größen und Komponentenzerlegung",
+      "titleZH": "矢量正交分解与叠加原理",
+      "summaryDE": "Gerichtete Größen werden in unabhängige Komponenten zerlegt; diese Unabhängigkeit ist die Grundlage des Superpositionsprinzips beim Wurf.",
+      "summaryZH": "带方向的量可分解为互相独立的分量，这一独立性正是抛体运动叠加原理的基础。",
+      "category": "Kinematik",
+      "curriculumTier": "EF",
+      "stage": "grundlagen",
+      "level": 2,
+      "xpReward": 100,
+      "estimatedMinutes": 12,
+      "prerequisites": [
+        "physik-gleichmaessig-beschleunigte-bewegung"
+      ],
+      "keyFormulaOrSentence": "v_x = v * cos(alpha),  v_y = v * sin(alpha),  v = sqrt(v_x^2 + v_y^2)",
+      "commonFallacy": "Betrag und Richtung vermischen - das Vorzeichen einer Komponente gibt die Richtung an, nicht die Länge.",
+      "layerIndex": 4,
+      "tags": [
+        "Verfahren",
+        "Mathematisierung",
+        "Kinematik",
+        "AFB-III"
+      ]
+    },
+    {
+      "id": "physik-waagerechter-wurf-superposition",
+      "fach": "Physik",
+      "titleDE": "Waagerechter Wurf und Superpositionsprinzip",
+      "titleZH": "平抛运动：水平匀速与竖直自由落体叠加",
+      "summaryDE": "Die waagerechte Komponente bleibt gleichförmig, die senkrechte folgt dem freien Fall; beide Komponenten sind unabhängig und ergeben zusammen eine Parabel.",
+      "summaryZH": "水平分量匀速、竖直分量自由落体，两分量互不干扰，合成轨迹为抛物线。",
+      "category": "Kinematik",
+      "curriculumTier": "Q1",
+      "stage": "vertiefung",
+      "level": 2,
+      "xpReward": 125,
+      "estimatedMinutes": 14,
+      "prerequisites": [
+        "physik-freier-fall",
+        "physik-vektorielle-groessen-zerlegung"
+      ],
+      "keyFormulaOrSentence": "x = v_0 * t  und  y = 1/2 * g * t^2  ->  Wurfparabel y = g * x^2 / (2 * v_0^2)",
+      "commonFallacy": "Glauben, die Anfangsgeschwindigkeit v_0 verlängere die Fallzeit - die Fallzeit ist von v_0 unabhängig.",
+      "layerIndex": 8,
+      "tags": [
+        "Formel",
+        "Grafik",
+        "Kinematik",
+        "AFB-III"
+      ]
+    },
+    {
+      "id": "physik-kreisbewegung-kinematik",
+      "fach": "Physik",
+      "titleDE": "Gleichförmige Kreisbewegung (Kinematik)",
+      "titleZH": "匀速圆周运动的角速度与周期频率",
+      "summaryDE": "Bei konstantem Betrag der Bahngeschwindigkeit ändert sich die Richtung ständig; Periode, Frequenz und Winkelgeschwindigkeit beschreiben die Bewegung vollständig.",
+      "summaryZH": "速率不变而方向持续改变；周期、频率与角速度三量完整刻画匀速圆周运动。",
+      "category": "Kinematik",
+      "curriculumTier": "Q1",
+      "stage": "grundlagen",
+      "level": 2,
+      "xpReward": 125,
+      "estimatedMinutes": 12,
+      "prerequisites": [
+        "physik-gleichfoermige-bewegung",
+        "physik-vektorielle-groessen-zerlegung"
+      ],
+      "keyFormulaOrSentence": "v = 2 * pi * r / T  und  omega = 2 * pi / T  mit  v = omega * r",
+      "commonFallacy": "Von konstanter Geschwindigkeit sprechen, obwohl sich der Geschwindigkeitsvektor ständig ändert - konstant ist nur sein Betrag.",
+      "layerIndex": 8,
+      "tags": [
+        "Formel",
+        "Kinematik",
+        "Klausur-Dauerbrenner"
+      ]
+    },
+    {
+      "id": "physik-keplersche-gesetze",
+      "fach": "Physik",
+      "titleDE": "Keplersche Gesetze",
+      "titleZH": "开普勒三定律与行星轨道周期律",
+      "summaryDE": "Die Planeten bewegen sich auf Ellipsen mit konstanter Flächengeschwindigkeit; das Verhältnis T^2 / a^3 ist für alle Körper eines Zentralfeldes gleich.",
+      "summaryZH": "行星沿椭圆运行且面积速度守恒，同一中心场中 T^2/a^3 对所有天体相同。",
+      "category": "Kinematik",
+      "curriculumTier": "Q1",
+      "stage": "vertiefung",
+      "level": 3,
+      "xpReward": 140,
+      "estimatedMinutes": 15,
+      "prerequisites": [
+        "physik-kreisbewegung-kinematik",
+        "physik-gravitationsgesetz-newton"
+      ],
+      "keyFormulaOrSentence": "T1^2 / a1^3 = T2^2 / a2^3 = 4 * pi^2 / (G * M)",
+      "commonFallacy": "Annehmen, im Perihel wirke eine zusätzliche Kraft - die höhere Bahngeschwindigkeit folgt dort aus der Drehimpulserhaltung.",
+      "layerIndex": 9,
+      "tags": [
+        "Formel",
+        "Gravitation",
+        "Klausur-Dauerbrenner",
+        "AFB-III"
+      ]
+    },
+    {
+      "id": "physik-relativistische-zeitdilatation",
+      "fach": "Physik",
+      "titleDE": "Zeitdilatation und Lichtuhr",
+      "titleZH": "光钟思想实验与时间膨胀",
+      "summaryDE": "Aus der Konstanz der Lichtgeschwindigkeit folgt, dass bewegte Uhren langsamer gehen; nur die Eigenzeit ist bezugssystemunabhängig.",
+      "summaryZH": "由光速不变推出运动的时钟变慢，只有本征时间与参照系无关。",
+      "category": "Kinematik",
+      "curriculumTier": "Q2",
+      "stage": "synthese",
+      "level": 3,
+      "xpReward": 165,
+      "estimatedMinutes": 20,
+      "prerequisites": [
+        "physik-gleichfoermige-bewegung",
+        "physik-elektromagnetische-wellen-hertz"
+      ],
+      "keyFormulaOrSentence": "t = t_0 / sqrt(1 - v^2 / c^2)  (t_0 = Eigenzeit des bewegten Systems)",
+      "commonFallacy": "Das Zwillingsparadoxon als logischen Widerspruch deuten - die Umkehr des Reisenden bricht die Symmetrie der Bezugssysteme.",
+      "layerIndex": 12,
+      "tags": [
+        "Formel",
+        "Relativitaet",
+        "AFB-III",
+        "Klausur-Dauerbrenner"
+      ]
+    },
+    {
+      "id": "physik-laengenkontraktion-relativistisch",
+      "fach": "Physik",
+      "titleDE": "Längenkontraktion",
+      "titleZH": "长度收缩与同时性的相对性",
+      "summaryDE": "Längen in Bewegungsrichtung werden verkürzt gemessen; die Ursache ist die Relativität der Gleichzeitigkeit, nicht eine mechanische Stauchung.",
+      "summaryZH": "沿运动方向测得的长度收缩，其根源是同时性的相对性而非物体被压扁。",
+      "category": "Kinematik",
+      "curriculumTier": "Q2",
+      "stage": "synthese",
+      "level": 3,
+      "xpReward": 170,
+      "estimatedMinutes": 18,
+      "prerequisites": [
+        "physik-relativistische-zeitdilatation"
+      ],
+      "keyFormulaOrSentence": "l = l_0 * sqrt(1 - v^2 / c^2)",
+      "commonFallacy": "Die Kontraktion als echte mechanische Verformung des Körpers missverstehen.",
+      "layerIndex": 13,
+      "tags": [
+        "Formel",
+        "Relativitaet",
+        "AFB-III"
+      ]
+    },
+    {
+      "id": "physik-raumzeit-minkowski-diagramm",
+      "fach": "Physik",
+      "titleDE": "Minkowski-Raumzeit und Lichtkegel",
+      "titleZH": "闵可夫斯基时空与光锥因果结构",
+      "summaryDE": "Raum und Zeit bilden eine vierdimensionale Raumzeit mit invarianter Metrik; der Lichtkegel trennt zeitartige, lichtartige und raumartige Abstände.",
+      "summaryZH": "时空统一为四维流形，时空间隔是洛伦兹不变量；光锥划分类时、类光与类空区域并界定因果可达范围。",
+      "category": "Kinematik",
+      "curriculumTier": "Uni_Prep",
+      "stage": "synthese",
+      "level": 3,
+      "xpReward": 180,
+      "estimatedMinutes": 25,
+      "prerequisites": [
+        "physik-relativistische-zeitdilatation",
+        "physik-laengenkontraktion-relativistisch"
+      ],
+      "keyFormulaOrSentence": "s^2 = c^2 * t^2 - x^2 = invariant  (Minkowski-Metrik, Vorzeichenkonvention + - - -)",
+      "commonFallacy": "Raumzeitdiagramme mit euklidischer Geometrie lesen - die c*t-Achse ist keine Strecke im üblichen Sinn.",
+      "layerIndex": 17,
+      "tags": [
+        "Modell",
+        "Mathematisierung",
+        "Relativitaet",
+        "Uni-Prep"
+      ]
+    },
+    {
+      "id": "physik-lorentz-transformation",
+      "fach": "Physik",
+      "titleDE": "Lorentz-Transformation und relativistische Geschwindigkeitsaddition",
+      "titleZH": "洛伦兹变换与相对论速度叠加公式",
+      "summaryDE": "Der Wechsel zwischen Inertialsystemen erfolgt über Lorentz-Transformationen, die c*t und x linear mischen; Geschwindigkeiten addieren sich nicht einfach, sondern bleiben unterhalb von c.",
+      "summaryZH": "惯性系之间的坐标变换是线性的洛伦兹变换；速度叠加经非线性公式修正后永远不超过光速。",
+      "category": "Kinematik",
+      "curriculumTier": "Uni_Prep",
+      "stage": "synthese",
+      "level": 3,
+      "xpReward": 195,
+      "estimatedMinutes": 28,
+      "prerequisites": [
+        "physik-raumzeit-minkowski-diagramm",
+        "physik-relativistische-zeitdilatation"
+      ],
+      "keyFormulaOrSentence": "x' = gamma * (x - v * t),  t' = gamma * (t - v * x / c^2)  und  u = (u' + v) / (1 + u' * v / c^2)",
+      "commonFallacy": "Die klassische Geschwindigkeitsaddition anwenden - dann könnte die Summe zweier Teilgeschwindigkeiten c überschreiten.",
+      "layerIndex": 19,
+      "tags": [
+        "Formel",
+        "Mathematisierung",
+        "Relativitaet",
+        "Uni-Prep"
+      ]
+    },
+    {
+      "id": "physik-kraft-masse-gewichtskraft",
+      "fach": "Physik",
+      "titleDE": "Kraft, Masse und Gewichtskraft",
+      "titleZH": "力、质量与重力：两个量不可混同",
+      "summaryDE": "Die Masse ist eine unveränderliche Eigenschaft des Körpers, die Gewichtskraft das Produkt aus Masse und Ortsfaktor.",
+      "summaryZH": "质量是物体的固有属性，重力是质量与当地重力加速度的乘积，两者量纲截然不同。",
+      "category": "Dynamik",
+      "curriculumTier": "Sek_I",
+      "stage": "einfuehrung",
+      "level": 1,
+      "xpReward": 65,
+      "estimatedMinutes": 8,
+      "prerequisites": [],
+      "keyFormulaOrSentence": "F_G = m * g  mit  g = 9.81 N/kg",
+      "commonFallacy": "Masse und Gewichtskraft gleichsetzen - auf dem Mond bleibt die Masse, die Gewichtskraft sinkt auf etwa ein Sechstel.",
+      "layerIndex": 1,
+      "tags": [
+        "Formel",
+        "Definition",
+        "Mechanik",
+        "Basiswissen"
+      ]
+    },
+    {
+      "id": "physik-druck-und-auftrieb",
+      "fach": "Physik",
+      "titleDE": "Druck, Schweredruck und Auftrieb",
+      "titleZH": "压强、液体压强与阿基米德浮力",
+      "summaryDE": "Druck ist Kraft pro Fläche; der Schweredruck wächst mit der Eintauchtiefe und erzeugt eine nach oben gerichtete Auftriebskraft.",
+      "summaryZH": "压强是垂直作用力除以受力面积；液体压强随深度线性增大，并产生向上的浮力。",
+      "category": "Dynamik",
+      "curriculumTier": "Sek_I",
+      "stage": "einfuehrung",
+      "level": 1,
+      "xpReward": 80,
+      "estimatedMinutes": 12,
+      "prerequisites": [
+        "physik-kraft-masse-gewichtskraft"
+      ],
+      "keyFormulaOrSentence": "p = F / A  und  F_A = rho_Fl * g * V_verdraengt",
+      "commonFallacy": "Den Auftrieb von der Masse des Körpers abhängig machen statt vom verdrängten Flüssigkeitsvolumen.",
+      "layerIndex": 2,
+      "tags": [
+        "Formel",
+        "Mechanik",
+        "Experiment",
+        "Basiswissen"
+      ]
+    },
+    {
+      "id": "physik-newtonsche-axiome",
+      "fach": "Physik",
+      "titleDE": "Newtonsche Axiome",
+      "titleZH": "牛顿三大定律：惯性、F=ma与作用反作用",
+      "summaryDE": "Trägheitsprinzip, Grundgleichung der Mechanik und Wechselwirkungsprinzip bilden das Fundament der klassischen Dynamik.",
+      "summaryZH": "惯性定律、动力学基本方程与作用反作用定律共同构成经典力学的公理体系。",
+      "category": "Dynamik",
+      "curriculumTier": "EF",
+      "stage": "grundlagen",
+      "level": 2,
+      "xpReward": 105,
+      "estimatedMinutes": 15,
+      "prerequisites": [
+        "physik-kraft-masse-gewichtskraft"
+      ],
+      "keyFormulaOrSentence": "F_res = m * a  (Kraft als Ursache der Beschleunigung, nicht der Geschwindigkeit)",
+      "commonFallacy": "Aus Ruhe auf Kraftfreiheit schließen - Kräftegleichgewicht bedeutet a = 0, nicht v = 0.",
+      "layerIndex": 3,
+      "tags": [
+        "Axiom",
+        "Mechanik",
+        "Klausur-Dauerbrenner"
+      ]
+    },
+    {
+      "id": "physik-kraftzerlegung-geneigte-ebene",
+      "fach": "Physik",
+      "titleDE": "Kräftezerlegung an der geneigten Ebene",
+      "titleZH": "斜面上重力的正交分解",
+      "summaryDE": "Am Hang wird die Gewichtskraft in eine hangabwärts gerichtete und eine senkrecht zur Unterlage stehende Komponente zerlegt.",
+      "summaryZH": "斜面上把重力分解为沿斜面下滑的分力与垂直压向斜面的正压力。",
+      "category": "Dynamik",
+      "curriculumTier": "EF",
+      "stage": "grundlagen",
+      "level": 2,
+      "xpReward": 105,
+      "estimatedMinutes": 14,
+      "prerequisites": [
+        "physik-newtonsche-axiome",
+        "physik-vektorielle-groessen-zerlegung"
+      ],
+      "keyFormulaOrSentence": "F_H = m * g * sin(alpha)  und  F_N = m * g * cos(alpha)",
+      "commonFallacy": "Sinus und Kosinus vertauschen - der Hangabtrieb hängt am Winkel zwischen Kraft und Normale, nicht direkt am Neigungswinkel.",
+      "layerIndex": 5,
+      "tags": [
+        "Verfahren",
+        "Mechanik",
+        "Klausur-Dauerbrenner"
+      ]
+    },
+    {
+      "id": "physik-reibungskraefte",
+      "fach": "Physik",
+      "titleDE": "Haftreibung und Gleitreibung",
+      "titleZH": "静摩擦与滑动摩擦模型",
+      "summaryDE": "Reibungskräfte wirken der Relativbewegung entgegen und sind im Modell proportional zur Normalkraft; der Haftreibungskoeffizient ist größer als der Gleitreibungskoeffizient.",
+      "summaryZH": "摩擦力方向与相对运动相反，模型下大小正比于正压力；最大静摩擦系数大于滑动摩擦系数。",
+      "category": "Dynamik",
+      "curriculumTier": "EF",
+      "stage": "vertiefung",
+      "level": 2,
+      "xpReward": 110,
+      "estimatedMinutes": 12,
+      "prerequisites": [
+        "physik-kraftzerlegung-geneigte-ebene"
+      ],
+      "keyFormulaOrSentence": "F_R = mu * F_N  und  F_H,max = mu_H * F_N",
+      "commonFallacy": "Reibung von der Auflagefläche oder der Geschwindigkeit abhängig machen - im Modell zählt nur die Normalkraft.",
+      "layerIndex": 6,
+      "tags": [
+        "Formel",
+        "Modell",
+        "Mechanik",
+        "Alltag"
+      ]
+    },
+    {
+      "id": "physik-gravitationsgesetz-newton",
+      "fach": "Physik",
+      "titleDE": "Newtonsches Gravitationsgesetz",
+      "titleZH": "万有引力定律与平方反比规律",
+      "summaryDE": "Zwei Massen ziehen sich gegenseitig an; die Kraft ist proportional zum Produkt der Massen und umgekehrt proportional zum Quadrat ihres Abstands.",
+      "summaryZH": "两质点相互吸引，引力正比于质量乘积、反比于距离平方，方向沿两质点连线。",
+      "category": "Dynamik",
+      "curriculumTier": "EF",
+      "stage": "vertiefung",
+      "level": 2,
+      "xpReward": 115,
+      "estimatedMinutes": 12,
+      "prerequisites": [
+        "physik-newtonsche-axiome"
+      ],
+      "keyFormulaOrSentence": "F_G = G * m1 * m2 / r^2  mit  G = 6.674e-11 N * m^2 / kg^2",
+      "commonFallacy": "r als Höhe über der Erdoberfläche einsetzen statt als Abstand der Massenmittelpunkte.",
+      "layerIndex": 7,
+      "tags": [
+        "Formel",
+        "Gravitation",
+        "Klausur-Dauerbrenner"
+      ]
+    },
+    {
+      "id": "physik-zentripetalkraft",
+      "fach": "Physik",
+      "titleDE": "Zentripetalkraft",
+      "titleZH": "向心力：圆周运动的动力学条件",
+      "summaryDE": "Die zum Zentrum gerichtete resultierende Kraft hält den Körper auf der Kreisbahn; sie ändert die Richtung, nicht den Betrag der Geschwindigkeit.",
+      "summaryZH": "指向圆心的合力维持圆周运动，只改变速度方向而不改变速率。",
+      "category": "Dynamik",
+      "curriculumTier": "Q1",
+      "stage": "vertiefung",
+      "level": 2,
+      "xpReward": 130,
+      "estimatedMinutes": 14,
+      "prerequisites": [
+        "physik-kreisbewegung-kinematik",
+        "physik-newtonsche-axiome"
+      ],
+      "keyFormulaOrSentence": "F_Z = m * v^2 / r = m * omega^2 * r",
+      "commonFallacy": "Eine nach außen gerichtete Zentrifugalkraft als reale Kraft im Inertialsystem ansetzen - dort ist sie nur eine Scheinkraft.",
+      "layerIndex": 9,
+      "tags": [
+        "Formel",
+        "Mechanik",
+        "Klausur-Dauerbrenner"
+      ]
+    },
+    {
+      "id": "physik-harmonische-schwingung-federpendel",
+      "fach": "Physik",
+      "titleDE": "Harmonische Schwingung am Federpendel",
+      "titleZH": "弹簧振子的简谐运动",
+      "summaryDE": "Die rücktreibende Kraft ist proportional zur Auslenkung; daraus folgen ein sinusförmiger Zeitverlauf und eine amplitudenunabhängige Periodendauer.",
+      "summaryZH": "回复力正比于位移，由此得到正弦形式的时间曲线与与振幅无关的周期。",
+      "category": "Dynamik",
+      "curriculumTier": "Q1",
+      "stage": "vertiefung",
+      "level": 2,
+      "xpReward": 135,
+      "estimatedMinutes": 15,
+      "prerequisites": [
+        "physik-newtonsche-axiome",
+        "physik-mechanische-energie-erhaltungssatz"
+      ],
+      "keyFormulaOrSentence": "F = -D * s  und  T = 2 * pi * sqrt(m / D)",
+      "commonFallacy": "Annehmen, eine größere Amplitude verlängere die Schwingungsdauer - die Periode hängt nur von m und D ab.",
+      "layerIndex": 10,
+      "tags": [
+        "Formel",
+        "Schwingung",
+        "Klausur-Dauerbrenner"
+      ]
+    },
+    {
+      "id": "physik-gravitationsfeld-feldstaerke",
+      "fach": "Physik",
+      "titleDE": "Gravitationsfeld und Feldstärke",
+      "titleZH": "引力场与场强：从超距作用到场描述",
+      "summaryDE": "Das Gravitationsfeld beschreibt die ortsabhängige Wirkung einer Masse; die Feldstärke ist die Kraft pro Probemasse.",
+      "summaryZH": "引力场刻画质量在空间各点的作用能力，场强定义为单位试探质量所受的力。",
+      "category": "Dynamik",
+      "curriculumTier": "Q1",
+      "stage": "vertiefung",
+      "level": 2,
+      "xpReward": 140,
+      "estimatedMinutes": 14,
+      "prerequisites": [
+        "physik-gravitationsgesetz-newton",
+        "physik-zentripetalkraft"
+      ],
+      "keyFormulaOrSentence": "g(r) = G * M / r^2  (Feldstaerke als Kraft pro Masse)",
+      "commonFallacy": "Feldstärke und Potential gleichsetzen - die Feldstärke ist ein Vektor, das Potential ein Skalar.",
+      "layerIndex": 10,
+      "tags": [
+        "Modell",
+        "Gravitation",
+        "Feld"
+      ]
+    },
+    {
+      "id": "physik-erzwungene-schwingung-resonanz",
+      "fach": "Physik",
+      "titleDE": "Erzwungene Schwingung und Resonanz",
+      "titleZH": "受迫振动与共振：相位与能量吸收",
+      "summaryDE": "Ein periodisch antreibender Erreger erzwingt seine Frequenz; bei Resonanz sind Erreger und System in Phase, und die Amplitude wird maximal.",
+      "summaryZH": "周期性驱动迫使系统按驱动频率振动；共振时驱动与系统同相，振幅达到极大。",
+      "category": "Dynamik",
+      "curriculumTier": "Q2",
+      "stage": "synthese",
+      "level": 3,
+      "xpReward": 165,
+      "estimatedMinutes": 18,
+      "prerequisites": [
+        "physik-harmonische-schwingung-federpendel"
+      ],
+      "keyFormulaOrSentence": "Resonanz bei f_Erreger = f_0 mit Phasenverschiebung phi = 0",
+      "commonFallacy": "Resonanz ohne Phasenbetrachtung nur als Amplitudenvergrößerung beschreiben - ohne Phase lässt sich die Energieübertragung nicht erklären.",
+      "layerIndex": 12,
+      "tags": [
+        "Schwingung",
+        "Modell",
+        "AFB-III"
+      ]
+    },
+    {
+      "id": "physik-lagrange-formalismus",
+      "fach": "Physik",
+      "titleDE": "Lagrange-Formalismus",
+      "titleZH": "拉格朗日力学：作用量与欧拉-拉格朗日方程",
+      "summaryDE": "Statt Kräfte zu bilanzieren, wird die Differenz aus kinetischer und potentieller Energie über generalisierte Koordinaten variiert.",
+      "summaryZH": "不再逐项平衡受力，而是用广义坐标对动能减势能构成的拉格朗日量作变分。",
+      "category": "Dynamik",
+      "curriculumTier": "Uni_Prep",
+      "stage": "synthese",
+      "level": 3,
+      "xpReward": 185,
+      "estimatedMinutes": 25,
+      "prerequisites": [
+        "physik-newtonsche-axiome",
+        "physik-mechanische-energie-erhaltungssatz"
+      ],
+      "keyFormulaOrSentence": "L = T - V  und  d/dt (dL/dq_dot) - dL/dq = 0",
+      "commonFallacy": "Die Lagrangefunktion als Gesamtenergie lesen - sie ist die Differenz T - V, nicht die Summe.",
+      "layerIndex": 17,
+      "tags": [
+        "Modell",
+        "Mathematisierung",
+        "Uni-Prep"
+      ]
+    },
+    {
+      "id": "physik-hamilton-formalismus",
+      "fach": "Physik",
+      "titleDE": "Hamilton-Formalismus und Phasenraum",
+      "titleZH": "哈密顿力学与相空间演化",
+      "summaryDE": "Die Hamiltonfunktion entsteht als Legendre-Transformierte der Lagrangefunktion; ihre kanonischen Gleichungen beschreiben die Bewegung im Phasenraum.",
+      "summaryZH": "哈密顿量由拉格朗日量经勒让德变换得到，其正则方程在相空间中给出确定性演化。",
+      "category": "Dynamik",
+      "curriculumTier": "Uni_Prep",
+      "stage": "synthese",
+      "level": 3,
+      "xpReward": 190,
+      "estimatedMinutes": 25,
+      "prerequisites": [
+        "physik-lagrange-formalismus"
+      ],
+      "keyFormulaOrSentence": "H = T + V (konservativ)  mit  q_dot = dH/dp  und  p_dot = -dH/dq",
+      "commonFallacy": "H immer mit der Gesamtenergie gleichsetzen - das gilt nur für zeitunabhängige konservative Systeme.",
+      "layerIndex": 18,
+      "tags": [
+        "Modell",
+        "Mathematisierung",
+        "Uni-Prep"
+      ]
+    },
+    {
+      "id": "physik-kraftwandler-mechanische-arbeit",
+      "fach": "Physik",
+      "titleDE": "Kraftwandler und mechanische Arbeit",
+      "titleZH": "简单机械与机械功：省力不省功",
+      "summaryDE": "Kraftwandler wie Hebel und Rolle ändern Richtung oder Betrag einer Kraft, nicht aber das Produkt aus Kraft und Weg.",
+      "summaryZH": "杠杆与滑轮只改变力的大小或方向，不改变力与位移的乘积，即功不变。",
+      "category": "Energie-Impuls",
+      "curriculumTier": "Sek_I",
+      "stage": "einfuehrung",
+      "level": 1,
+      "xpReward": 70,
+      "estimatedMinutes": 10,
+      "prerequisites": [
+        "physik-kraft-masse-gewichtskraft"
+      ],
+      "keyFormulaOrSentence": "W = F * s  (Kraft in Wegrichtung; goldene Regel: Kraftersparnis erzwingt Wegverlängerung)",
+      "commonFallacy": "Beim Flaschenzug den Kraftgewinn als Energiegewinn deuten - die verrichtete Arbeit bleibt gleich.",
+      "layerIndex": 2,
+      "tags": [
+        "Formel",
+        "Energie",
+        "Alltag",
+        "Basiswissen"
+      ]
+    },
+    {
+      "id": "physik-energieformen-energieerhaltung",
+      "fach": "Physik",
+      "titleDE": "Energieformen und Energieerhaltung",
+      "titleZH": "能量形式与普遍能量守恒",
+      "summaryDE": "Energie kann umgewandelt, aber weder erzeugt noch vernichtet werden; in einem abgeschlossenen System bleibt die Gesamtenergie konstant.",
+      "summaryZH": "能量可以转化但不能创生或消灭，孤立系统中总能量保持不变。",
+      "category": "Energie-Impuls",
+      "curriculumTier": "Sek_I",
+      "stage": "einfuehrung",
+      "level": 1,
+      "xpReward": 85,
+      "estimatedMinutes": 12,
+      "prerequisites": [
+        "physik-kraftwandler-mechanische-arbeit"
+      ],
+      "keyFormulaOrSentence": "E_ges = const.  (Energieerhaltungssatz als universeller Bilanzsatz)",
+      "commonFallacy": "Energie und Kraft gleichsetzen - viel Energie bedeutet nicht automatisch eine große Kraft.",
+      "layerIndex": 3,
+      "tags": [
+        "Definition",
+        "Energie",
+        "Basiswissen"
+      ]
+    },
+    {
+      "id": "physik-mechanische-energie-erhaltungssatz",
+      "fach": "Physik",
+      "titleDE": "Erhaltung der mechanischen Energie",
+      "titleZH": "机械能守恒及其适用边界",
+      "summaryDE": "Ohne Reibung bleibt die Summe aus kinetischer und potentieller Energie konstant; bei Reibung tritt Reibarbeit als zusätzlicher Bilanzposten auf.",
+      "summaryZH": "无摩擦时动能与势能之和恒定；有摩擦时必须把摩擦功列为附加的能量项。",
+      "category": "Energie-Impuls",
+      "curriculumTier": "EF",
+      "stage": "grundlagen",
+      "level": 2,
+      "xpReward": 110,
+      "estimatedMinutes": 14,
+      "prerequisites": [
+        "physik-energieformen-energieerhaltung"
+      ],
+      "keyFormulaOrSentence": "E_kin + E_pot = const.  mit  E_kin = 1/2 * m * v^2  und  E_pot = m * g * h",
+      "commonFallacy": "Den Energieansatz auch bei Reibung unverändert verwenden, ohne Reibarbeit zu bilanzieren.",
+      "layerIndex": 5,
+      "tags": [
+        "Formel",
+        "Energie",
+        "Klausur-Dauerbrenner"
+      ]
+    },
+    {
+      "id": "physik-arbeit-leistung-wirkungsgrad",
+      "fach": "Physik",
+      "titleDE": "Arbeit, Leistung und Wirkungsgrad",
+      "titleZH": "功、功率与效率：能量的时间视角",
+      "summaryDE": "Arbeit ist der Energieumsatz längs eines Weges, Leistung die Arbeit pro Zeit, und der Wirkungsgrad vergleicht Nutzen mit Aufwand.",
+      "summaryZH": "功是沿路径的能量转移，功率是单位时间的功，效率比较有用输出与总投入。",
+      "category": "Energie-Impuls",
+      "curriculumTier": "EF",
+      "stage": "grundlagen",
+      "level": 2,
+      "xpReward": 105,
+      "estimatedMinutes": 12,
+      "prerequisites": [
+        "physik-mechanische-energie-erhaltungssatz"
+      ],
+      "keyFormulaOrSentence": "W = F * s * cos(alpha),  P = W / t,  eta = E_nutz / E_zu",
+      "commonFallacy": "Den Wirkungsgrad als Energieverlust deuten - Energie bleibt erhalten, sie wird lediglich entwertet.",
+      "layerIndex": 6,
+      "tags": [
+        "Formel",
+        "Energie",
+        "Alltag",
+        "Klausur-Dauerbrenner"
+      ]
+    },
+    {
+      "id": "physik-impuls-grundlagen",
+      "fach": "Physik",
+      "titleDE": "Impuls und Impulserhaltung",
+      "titleZH": "动量定义与动量守恒定律",
+      "summaryDE": "Der Impuls ist das Produkt aus Masse und Geschwindigkeit; in einem abgeschlossenen System bleibt die Vektorsumme aller Impulse konstant.",
+      "summaryZH": "动量等于质量与速度之积；孤立系统中所有物体动量的矢量和保持不变。",
+      "category": "Energie-Impuls",
+      "curriculumTier": "EF",
+      "stage": "grundlagen",
+      "level": 2,
+      "xpReward": 110,
+      "estimatedMinutes": 12,
+      "prerequisites": [
+        "physik-newtonsche-axiome",
+        "physik-energieformen-energieerhaltung"
+      ],
+      "keyFormulaOrSentence": "p = m * v  und  sum(p_vor) = sum(p_nach)  (vektorielle Bilanz)",
+      "commonFallacy": "Impuls und kinetische Energie gleichsetzen - beim unelastischen Stoß bleibt p erhalten, E_kin nicht.",
+      "layerIndex": 6,
+      "tags": [
+        "Definition",
+        "Impuls",
+        "Klausur-Dauerbrenner"
+      ]
+    },
+    {
+      "id": "physik-stossarten-zentraler-stoss",
+      "fach": "Physik",
+      "titleDE": "Zentrale Stoßvorgänge",
+      "titleZH": "一维碰撞：弹性、非弹性与完全非弹性",
+      "summaryDE": "Beim elastischen Stoß bleiben Impuls und kinetische Energie erhalten, beim unelastischen nur der Impuls.",
+      "summaryZH": "弹性碰撞中动量与动能都守恒；非弹性碰撞只有动量守恒，动能有损失。",
+      "category": "Energie-Impuls",
+      "curriculumTier": "EF",
+      "stage": "vertiefung",
+      "level": 2,
+      "xpReward": 120,
+      "estimatedMinutes": 16,
+      "prerequisites": [
+        "physik-impuls-grundlagen",
+        "physik-mechanische-energie-erhaltungssatz"
+      ],
+      "keyFormulaOrSentence": "elastisch: Impulserhaltung UND E_kin-Erhaltung; unelastisch: nur Impulserhaltung",
+      "commonFallacy": "Beim unelastischen Stoß zusätzlich die Energieerhaltung ansetzen und damit ein überbestimmtes System lösen.",
+      "layerIndex": 7,
+      "tags": [
+        "Verfahren",
+        "Impuls",
+        "Stoesse",
+        "Klausur-Dauerbrenner"
+      ]
+    },
+    {
+      "id": "physik-impulserhaltung-anwendungen",
+      "fach": "Physik",
+      "titleDE": "Impulserhaltung in zwei Dimensionen und Rückstoß",
+      "titleZH": "二维动量守恒与反冲推进",
+      "summaryDE": "Auch bei Richtungsänderungen bleibt der Gesamtimpuls vektoriell erhalten; Rückstoß und Raketenantrieb folgen unmittelbar daraus.",
+      "summaryZH": "即使方向改变，总动量仍按矢量守恒；反冲与火箭推进都是其直接推论。",
+      "category": "Energie-Impuls",
+      "curriculumTier": "Q1",
+      "stage": "vertiefung",
+      "level": 2,
+      "xpReward": 130,
+      "estimatedMinutes": 14,
+      "prerequisites": [
+        "physik-stossarten-zentraler-stoss",
+        "physik-vektorielle-groessen-zerlegung"
+      ],
+      "keyFormulaOrSentence": "m1 * v1x + m2 * v2x = m1 * u1x + m2 * u2x  (komponentenweise Bilanz)",
+      "commonFallacy": "In zwei Dimensionen nur eine Komponente bilanzieren und die andere vernachlässigen.",
+      "layerIndex": 9,
+      "tags": [
+        "Verfahren",
+        "Impuls",
+        "AFB-III"
+      ]
+    },
+    {
+      "id": "physik-energie-im-gravitationsfeld",
+      "fach": "Physik",
+      "titleDE": "Energie im Gravitationsfeld",
+      "titleZH": "引力场中的势能与逃逸速度",
+      "summaryDE": "Im radialen Gravitationsfeld wird die potentielle Energie mit Nullpunkt im Unendlichen negativ; die Fluchtgeschwindigkeit folgt aus dem Energiesatz.",
+      "summaryZH": "径向引力场中势能以无穷远为零点因而取负值，逃逸速度由能量守恒直接给出。",
+      "category": "Energie-Impuls",
+      "curriculumTier": "Q1",
+      "stage": "vertiefung",
+      "level": 2,
+      "xpReward": 135,
+      "estimatedMinutes": 15,
+      "prerequisites": [
+        "physik-gravitationsfeld-feldstaerke",
+        "physik-mechanische-energie-erhaltungssatz"
+      ],
+      "keyFormulaOrSentence": "E_pot(r) = -G * M * m / r  und  v_esc = sqrt(2 * G * M / R)",
+      "commonFallacy": "E_pot = m * g * h auch für große Entfernungen verwenden - die Näherung gilt nur nahe der Oberfläche.",
+      "layerIndex": 11,
+      "tags": [
+        "Formel",
+        "Gravitation",
+        "Energie"
+      ]
+    },
+    {
+      "id": "physik-massendefekt-bindungsenergie",
+      "fach": "Physik",
+      "titleDE": "Massendefekt und Bindungsenergie",
+      "titleZH": "质量亏损与核结合能",
+      "summaryDE": "Die Masse eines Atomkerns ist kleiner als die Summe der Nukleonenmassen; die Differenz erscheint über E = m * c^2 als Bindungsenergie.",
+      "summaryZH": "原子核质量小于核子质量之和，其差值经 E = m·c² 表现为结合能。",
+      "category": "Energie-Impuls",
+      "curriculumTier": "Q2",
+      "stage": "synthese",
+      "level": 3,
+      "xpReward": 170,
+      "estimatedMinutes": 18,
+      "prerequisites": [
+        "physik-kernspaltung-kernfusion",
+        "physik-energieformen-energieerhaltung"
+      ],
+      "keyFormulaOrSentence": "E_B = delta_m * c^2  mit  delta_m = Z * m_p + N * m_n - m_Kern",
+      "commonFallacy": "Die maximale Bindungsenergie pro Nukleon beim leichtesten Kern vermuten - das Maximum liegt bei Eisen-56.",
+      "layerIndex": 13,
+      "tags": [
+        "Formel",
+        "Kernphysik",
+        "AFB-III",
+        "Schwerpunkt-2026"
+      ]
+    },
+    {
+      "id": "physik-relativistischer-impuls-energie",
+      "fach": "Physik",
+      "titleDE": "Relativistischer Impuls und Energie-Masse-Äquivalenz",
+      "titleZH": "相对论动量与质能等价",
+      "summaryDE": "Bei hohen Geschwindigkeiten wächst der Impuls überproportional; Gesamtenergie, Ruheenergie und Impuls sind über die invariante Masse verknüpft.",
+      "summaryZH": "高速时动量非线性增长，总能量、静止能量与动量通过不变质量相互联系。",
+      "category": "Energie-Impuls",
+      "curriculumTier": "Q2",
+      "stage": "synthese",
+      "level": 3,
+      "xpReward": 175,
+      "estimatedMinutes": 20,
+      "prerequisites": [
+        "physik-massendefekt-bindungsenergie",
+        "physik-laengenkontraktion-relativistisch"
+      ],
+      "keyFormulaOrSentence": "p = m * v / sqrt(1 - v^2/c^2)  und  E^2 = (p*c)^2 + (m*c^2)^2",
+      "commonFallacy": "E = m * c^2 als Umwandlung von Masse in Energie deuten - gemeint ist die Äquivalenz beider Größen.",
+      "layerIndex": 14,
+      "tags": [
+        "Formel",
+        "Relativitaet",
+        "AFB-III"
+      ]
+    },
+    {
+      "id": "physik-klausur-synthese-abitur",
+      "fach": "Physik",
+      "titleDE": "Klausur-Synthese: Erhaltungssätze über alle Inhaltsfelder",
+      "titleZH": "毕业考试综合题：跨领域十五点满分范式",
+      "summaryDE": "Eine Abituraufgabe verknüpft typischerweise Erhaltungssätze aus Mechanik, Feldlehre, Thermodynamik und Quantenphysik in einer durchgehenden Argumentationskette.",
+      "summaryZH": "高考级综合题通常把力学、场、热学与量子物理中的守恒律串成一条完整的论证链。",
+      "category": "Energie-Impuls",
+      "curriculumTier": "Q2",
+      "stage": "klausur_praxis",
+      "level": 3,
+      "xpReward": 200,
+      "estimatedMinutes": 30,
+      "prerequisites": [
+        "physik-relativistischer-impuls-energie",
+        "physik-welle-teilchen-dualismus-heisenberg",
+        "physik-waermekraftmaschine-carnot",
+        "physik-selbstinduktion-schwingkreis"
+      ],
+      "keyFormulaOrSentence": "Bilanzschema: Systemgrenze waehlen -> Erhaltungssatz begruenden -> Zustandsgroessen vorher/nachher verknuepfen -> Ergebnis mit Einheit und Grenzfall pruefen",
+      "commonFallacy": "Sofort Formeln einsetzen, ohne Systemgrenze und Erhaltungssatz zu benennen - der Ansatz verliert damit alle AFB-III-Punkte.",
+      "layerIndex": 15,
+      "tags": [
+        "Verfahren",
+        "AFB-III",
+        "Klausur-Dauerbrenner",
+        "Schwerpunkt-2026"
+      ]
+    },
+    {
+      "id": "physik-noether-symmetrie-erhaltungssaetze",
+      "fach": "Physik",
+      "titleDE": "Symmetrien und Erhaltungssätze (Noether-Theorem)",
+      "titleZH": "诺特定理：对称性生成守恒律",
+      "summaryDE": "Jede kontinuierliche Symmetrie der Wirkung erzeugt einen Erhaltungssatz: Zeittranslation die Energie, Ortstranslation den Impuls, Rotation den Drehimpuls.",
+      "summaryZH": "作用量的每个连续对称性都对应一个守恒量：时间平移对应能量、空间平移对应动量、旋转对应角动量。",
+      "category": "Energie-Impuls",
+      "curriculumTier": "Uni_Prep",
+      "stage": "synthese",
+      "level": 3,
+      "xpReward": 195,
+      "estimatedMinutes": 28,
+      "prerequisites": [
+        "physik-impuls-grundlagen",
+        "physik-mechanische-energie-erhaltungssatz",
+        "physik-lagrange-formalismus"
+      ],
+      "keyFormulaOrSentence": "Zeittranslationsinvarianz -> Energieerhaltung;  Raumtranslationsinvarianz -> Impulserhaltung",
+      "commonFallacy": "Erhaltungssätze nur als Erfahrungstatsachen lernen, ohne ihren Ursprung in Symmetrien zu erkennen.",
+      "layerIndex": 19,
+      "tags": [
+        "Axiom",
+        "Mathematisierung",
+        "Uni-Prep"
+      ]
+    },
+    {
+      "id": "physik-ohmsches-gesetz-stromkreis",
+      "fach": "Physik",
+      "titleDE": "Strom, Spannung, Widerstand und das Ohmsche Gesetz",
+      "titleZH": "电流、电压、电阻与欧姆定律",
+      "summaryDE": "Die Stromstärke ist proportional zur Spannung und umgekehrt proportional zum Widerstand; Reihen- und Parallelschaltung folgen unterschiedlichen Regeln.",
+      "summaryZH": "电流正比于电压、反比于电阻；串联与并联电路遵循不同的电阻合成规律。",
+      "category": "Elektrodynamik",
+      "curriculumTier": "Sek_I",
+      "stage": "einfuehrung",
+      "level": 1,
+      "xpReward": 75,
+      "estimatedMinutes": 10,
+      "prerequisites": [],
+      "keyFormulaOrSentence": "U = R * I  und  Reihe: R_ges = R1 + R2;  Parallel: 1/R_ges = 1/R1 + 1/R2",
+      "commonFallacy": "Bei der Parallelschaltung die Widerstände addieren - der Gesamtwiderstand ist dort kleiner als der kleinste Einzelwiderstand.",
+      "layerIndex": 1,
+      "tags": [
+        "Formel",
+        "Elektrizitaet",
+        "Basiswissen",
+        "Klausur-Dauerbrenner"
+      ]
+    },
+    {
+      "id": "physik-magnetismus-grundlagen",
+      "fach": "Physik",
+      "titleDE": "Magnetismus und Elektromagnet",
+      "titleZH": "磁现象与电磁铁：电流的磁效应",
+      "summaryDE": "Magnetische Pole treten nie einzeln auf; ein stromdurchflossener Leiter erzeugt ein Magnetfeld, dessen Stärke mit Strom und Windungszahl wächst.",
+      "summaryZH": "磁极不能单独存在；通电导线产生磁场，其强度随电流与匝数增大。",
+      "category": "Elektrodynamik",
+      "curriculumTier": "Sek_I",
+      "stage": "einfuehrung",
+      "level": 1,
+      "xpReward": 80,
+      "estimatedMinutes": 10,
+      "prerequisites": [
+        "physik-ohmsches-gesetz-stromkreis"
+      ],
+      "keyFormulaOrSentence": "Feldlinien sind immer geschlossen; die Feldstärke einer Spule waechst mit I und N.",
+      "commonFallacy": "Magnetische Feldlinien wie elektrische als offene Linien zeichnen - magnetische Feldlinien sind stets geschlossen.",
+      "layerIndex": 2,
+      "tags": [
+        "Definition",
+        "Magnetismus",
+        "Experiment",
+        "Basiswissen"
+      ]
+    },
+    {
+      "id": "physik-elektrische-ladung-influenz",
+      "fach": "Physik",
+      "titleDE": "Elektrische Ladung, Influenz und Elementarladung",
+      "titleZH": "电荷、静电感应与元电荷量子化",
+      "summaryDE": "Ladungen treten in zwei Arten auf und sind quantisiert; Influenz trennt Ladungen in einem Leiter, ohne dass Berührung nötig ist.",
+      "summaryZH": "电荷分正负两类且是量子化的；静电感应无需接触即可使导体内部电荷分离。",
+      "category": "Elektrodynamik",
+      "curriculumTier": "EF",
+      "stage": "grundlagen",
+      "level": 1,
+      "xpReward": 90,
+      "estimatedMinutes": 10,
+      "prerequisites": [
+        "physik-ohmsches-gesetz-stromkreis"
+      ],
+      "keyFormulaOrSentence": "Q = n * e  mit  e = 1.602e-19 C  (Ladungsquantisierung)",
+      "commonFallacy": "Annehmen, bei der Influenz entstünden Ladungen neu - sie werden nur getrennt, die Gesamtladung bleibt null.",
+      "layerIndex": 4,
+      "tags": [
+        "Definition",
+        "Elektrizitaet",
+        "Basiswissen"
+      ]
+    },
+    {
+      "id": "physik-elektrisches-feld-feldlinien",
+      "fach": "Physik",
+      "titleDE": "Elektrisches Feld und Feldlinienbild",
+      "titleZH": "电场与电场线图示",
+      "summaryDE": "Das elektrische Feld beschreibt die Kraftwirkung auf Ladungen; Feldlinien geben Richtung und Dichte der Feldstärke an.",
+      "summaryZH": "电场描述对电荷的力的作用；电场线给出场强方向，其疏密表示场强大小。",
+      "category": "Elektrodynamik",
+      "curriculumTier": "EF",
+      "stage": "grundlagen",
+      "level": 2,
+      "xpReward": 100,
+      "estimatedMinutes": 12,
+      "prerequisites": [
+        "physik-elektrische-ladung-influenz"
+      ],
+      "keyFormulaOrSentence": "E = F / q  (Feldstaerke als Kraft pro Probeladung)",
+      "commonFallacy": "Feldlinien als Bahnen von Ladungen deuten - sie geben nur die Richtung der wirkenden Kraft an.",
+      "layerIndex": 5,
+      "tags": [
+        "Modell",
+        "Feld",
+        "Elektrizitaet"
+      ]
+    },
+    {
+      "id": "physik-magnetfeld-lorentzkraft-qualitativ",
+      "fach": "Physik",
+      "titleDE": "Magnetfeld und Lorentzkraft (qualitativ)",
+      "titleZH": "磁场与洛伦兹力：方向判定的定性分析",
+      "summaryDE": "Die Kraft auf eine bewegte Ladung im Magnetfeld steht senkrecht auf Geschwindigkeit und Feldrichtung; ihre Richtung liefert die Drei-Finger-Regel.",
+      "summaryZH": "运动电荷在磁场中受力同时垂直于速度与磁场方向，方向由右手三指定则判定。",
+      "category": "Elektrodynamik",
+      "curriculumTier": "EF",
+      "stage": "grundlagen",
+      "level": 2,
+      "xpReward": 105,
+      "estimatedMinutes": 12,
+      "prerequisites": [
+        "physik-elektrisches-feld-feldlinien",
+        "physik-magnetismus-grundlagen"
+      ],
+      "keyFormulaOrSentence": "F_L steht senkrecht zu v und B  (Richtung ueber Drei-Finger-Regel, Betrag F = q * v * B)",
+      "commonFallacy": "Die Lorentzkraft als beschleunigende Kraft in Bewegungsrichtung deuten - sie steht immer senkrecht zur Geschwindigkeit.",
+      "layerIndex": 6,
+      "tags": [
+        "Modell",
+        "Magnetismus",
+        "Feld"
+      ]
+    },
+    {
+      "id": "physik-coulombsches-gesetz",
+      "fach": "Physik",
+      "titleDE": "Coulombsches Gesetz",
+      "titleZH": "库仑定律与静电力平方反比",
+      "summaryDE": "Die Kraft zwischen zwei Punktladungen ist proportional zum Produkt der Ladungen und umgekehrt proportional zum Quadrat ihres Abstands.",
+      "summaryZH": "两静止点电荷之间的作用力正比于电荷量乘积、反比于距离平方。",
+      "category": "Elektrodynamik",
+      "curriculumTier": "Q1",
+      "stage": "grundlagen",
+      "level": 2,
+      "xpReward": 125,
+      "estimatedMinutes": 12,
+      "prerequisites": [
+        "physik-elektrisches-feld-feldlinien"
+      ],
+      "keyFormulaOrSentence": "F_C = 1/(4 * pi * epsilon_0) * q1 * q2 / r^2  mit  1/(4 pi eps_0) = 8.99e9 N * m^2 / C^2",
+      "commonFallacy": "Das Vorzeichen des Ergebnisses falsch deuten - ein negatives Ergebnis bedeutet Anziehung, nicht ein negatives Feld.",
+      "layerIndex": 8,
+      "tags": [
+        "Formel",
+        "Elektrizitaet",
+        "Feld",
+        "Klausur-Dauerbrenner"
+      ]
+    },
+    {
+      "id": "physik-magnetfeld-lorentzkraft-quantitativ",
+      "fach": "Physik",
+      "titleDE": "Lorentzkraft quantitativ, Fadenstrahlrohr und Hall-Effekt",
+      "titleZH": "洛伦兹力定量计算与电子束实验",
+      "summaryDE": "Im homogenen Magnetfeld erzwingt die Lorentzkraft eine Kreisbahn; aus dem Bahnradius folgt die spezifische Ladung des Elektrons.",
+      "summaryZH": "匀强磁场中洛伦兹力充当向心力形成圆轨道，由轨道半径可测定电子的荷质比。",
+      "category": "Elektrodynamik",
+      "curriculumTier": "Q1",
+      "stage": "vertiefung",
+      "level": 2,
+      "xpReward": 135,
+      "estimatedMinutes": 15,
+      "prerequisites": [
+        "physik-magnetfeld-lorentzkraft-qualitativ",
+        "physik-coulombsches-gesetz"
+      ],
+      "keyFormulaOrSentence": "F_L = q * v * B  und  r = m * v / (q * B)",
+      "commonFallacy": "Die Geschwindigkeit aus der Beschleunigungsspannung nicht berechnen: q * U = 1/2 * m * v^2.",
+      "layerIndex": 9,
+      "tags": [
+        "Formel",
+        "Magnetismus",
+        "Experiment",
+        "Klausur-Dauerbrenner"
+      ]
+    },
+    {
+      "id": "physik-kondensator-kapazitaet",
+      "fach": "Physik",
+      "titleDE": "Kondensator und Kapazität",
+      "titleZH": "电容器与电容：电场储能",
+      "summaryDE": "Die Kapazität eines Plattenkondensators hängt von Plattenfläche und -abstand ab; im geladenen Kondensator steckt Energie im elektrischen Feld.",
+      "summaryZH": "平板电容器的电容由极板面积与板距决定；带电电容器中的能量储存在电场里。",
+      "category": "Elektrodynamik",
+      "curriculumTier": "Q1",
+      "stage": "vertiefung",
+      "level": 2,
+      "xpReward": 130,
+      "estimatedMinutes": 14,
+      "prerequisites": [
+        "physik-coulombsches-gesetz",
+        "physik-elektrisches-feld-feldlinien"
+      ],
+      "keyFormulaOrSentence": "C = Q / U  und  E_Feld = 1/2 * C * U^2",
+      "commonFallacy": "Die Kapazität von der angelegten Spannung abhängig machen - sie ist eine Bauteileigenschaft, während Q mit U wächst.",
+      "layerIndex": 10,
+      "tags": [
+        "Formel",
+        "Elektrizitaet",
+        "Energie",
+        "Klausur-Dauerbrenner"
+      ]
+    },
+    {
+      "id": "physik-induktion-lenzsche-regel",
+      "fach": "Physik",
+      "titleDE": "Induktion und Lenzsche Regel",
+      "titleZH": "电磁感应与楞次定律：能量守恒的体现",
+      "summaryDE": "Eine Änderung des magnetischen Flusses erzeugt eine Induktionsspannung; der Induktionsstrom wirkt seiner Ursache stets entgegen.",
+      "summaryZH": "磁通量变化产生感应电动势；感应电流的磁场总是阻碍引起它的原因，这正是能量守恒的体现。",
+      "category": "Elektrodynamik",
+      "curriculumTier": "Q1",
+      "stage": "vertiefung",
+      "level": 3,
+      "xpReward": 145,
+      "estimatedMinutes": 16,
+      "prerequisites": [
+        "physik-magnetfeld-lorentzkraft-quantitativ"
+      ],
+      "keyFormulaOrSentence": "U_ind = -N * delta(Phi) / delta(t)  bzw.  U_ind = -N * B * l * v",
+      "commonFallacy": "Die Lenzsche Regel als bloße Vorzeichenkonvention abtun - das Minuszeichen drückt die Energieerhaltung aus.",
+      "layerIndex": 10,
+      "tags": [
+        "Formel",
+        "Induktion",
+        "Klausur-Dauerbrenner",
+        "AFB-III"
+      ]
+    },
+    {
+      "id": "physik-wechselstrom-generator-transformator",
+      "fach": "Physik",
+      "titleDE": "Wechselstrom, Generator und Transformator",
+      "titleZH": "交流电、发电机与变压器",
+      "summaryDE": "Eine rotierende Spule im Magnetfeld erzeugt eine sinusförmige Wechselspannung; Transformatoren setzen Spannungen im Verhältnis der Windungszahlen um.",
+      "summaryZH": "磁场中旋转的线圈产生正弦交流电压；变压器按匝数比升降电压，理想情况下功率不变。",
+      "category": "Elektrodynamik",
+      "curriculumTier": "Q2",
+      "stage": "synthese",
+      "level": 2,
+      "xpReward": 155,
+      "estimatedMinutes": 18,
+      "prerequisites": [
+        "physik-induktion-lenzsche-regel"
+      ],
+      "keyFormulaOrSentence": "U1 / U2 = N1 / N2  und  U_eff = U_Dach / sqrt(2)",
+      "commonFallacy": "Beim Transformator einen Leistungsgewinn annehmen - die Spannung steigt, die Stromstärke sinkt entsprechend.",
+      "layerIndex": 12,
+      "tags": [
+        "Formel",
+        "Induktion",
+        "Elektrizitaet",
+        "Klausur-Dauerbrenner"
+      ]
+    },
+    {
+      "id": "physik-selbstinduktion-schwingkreis",
+      "fach": "Physik",
+      "titleDE": "Selbstinduktion und elektromagnetischer Schwingkreis",
+      "titleZH": "自感现象与LC振荡电路",
+      "summaryDE": "Eine Spule wirkt ihrer eigenen Stromänderung entgegen; Spule und Kondensator bilden einen Schwingkreis mit der Thomsonschen Periodendauer.",
+      "summaryZH": "线圈阻碍自身电流的变化；线圈与电容构成LC振荡电路，周期由汤姆孙公式给出。",
+      "category": "Elektrodynamik",
+      "curriculumTier": "Q2",
+      "stage": "synthese",
+      "level": 3,
+      "xpReward": 165,
+      "estimatedMinutes": 20,
+      "prerequisites": [
+        "physik-induktion-lenzsche-regel",
+        "physik-wechselstrom-generator-transformator",
+        "physik-kondensator-kapazitaet"
+      ],
+      "keyFormulaOrSentence": "U_ind = -L * dI/dt  und  T = 2 * pi * sqrt(L * C)",
+      "commonFallacy": "Den Schwingkreis mechanisch mit dem Federpendel gleichsetzen - analog ist die Struktur, nicht die Art der Energieträger.",
+      "layerIndex": 13,
+      "tags": [
+        "Formel",
+        "Induktion",
+        "Schwingung",
+        "AFB-III"
+      ]
+    },
+    {
+      "id": "physik-maxwell-gleichungen-konzept",
+      "fach": "Physik",
+      "titleDE": "Maxwell-Gleichungen als Feldkonzept",
+      "titleZH": "麦克斯韦方程组：电磁场的统一描述",
+      "summaryDE": "Vier gekoppelte Feldgleichungen verknüpfen Ladungen, Ströme und Felder; sie sagen elektromagnetische Wellen mit Lichtgeschwindigkeit voraus.",
+      "summaryZH": "四个耦合的场方程把电荷、电流与电磁场统一起来，并预言以光速传播的电磁波。",
+      "category": "Elektrodynamik",
+      "curriculumTier": "Uni_Prep",
+      "stage": "synthese",
+      "level": 3,
+      "xpReward": 190,
+      "estimatedMinutes": 28,
+      "prerequisites": [
+        "physik-coulombsches-gesetz",
+        "physik-induktion-lenzsche-regel",
+        "physik-elektromagnetische-wellen-hertz"
+      ],
+      "keyFormulaOrSentence": "div(E) = rho / eps_0;  div(B) = 0;  rot(E) = -dB/dt;  rot(B) = mu_0 * j + mu_0 * eps_0 * dE/dt",
+      "commonFallacy": "Die Maxwell-Gleichungen als bloße Zusammenfassung bekannter Gesetze sehen - Verschiebungsstrom und Wellengleichung sind neu.",
+      "layerIndex": 16,
+      "tags": [
+        "Axiom",
+        "Feld",
+        "Mathematisierung",
+        "Uni-Prep"
+      ]
+    },
+    {
+      "id": "physik-temperatur-waermeuebertragung",
+      "fach": "Physik",
+      "titleDE": "Temperatur und Wärmeübertragung",
+      "titleZH": "温度与热传递：传导、对流与辐射",
+      "summaryDE": "Die Temperatur beschreibt den thermischen Zustand, Wärme ist übertragene Energie; der Transport erfolgt durch Leitung, Strömung und Strahlung.",
+      "summaryZH": "温度描述热力学状态，热量是被转移的能量，传递方式有传导、对流与辐射。",
+      "category": "Thermodynamik",
+      "curriculumTier": "Sek_I",
+      "stage": "einfuehrung",
+      "level": 1,
+      "xpReward": 70,
+      "estimatedMinutes": 10,
+      "prerequisites": [],
+      "keyFormulaOrSentence": "Waerme ist Energietransport infolge einer Temperaturdifferenz, nicht der Energieinhalt eines Koerpers.",
+      "commonFallacy": "Wärme und Temperatur gleichsetzen - ein Körper besitzt keine Wärme, sondern innere Energie.",
+      "layerIndex": 1,
+      "tags": [
+        "Definition",
+        "Thermodynamik",
+        "Alltag",
+        "Basiswissen"
+      ]
+    },
+    {
+      "id": "physik-spezifische-waermekapazitaet",
+      "fach": "Physik",
+      "titleDE": "Spezifische Wärmekapazität",
+      "titleZH": "比热容与热量计算",
+      "summaryDE": "Die zum Erwärmen nötige Wärme ist proportional zu Masse, Temperaturdifferenz und stoffspezifischer Wärmekapazität.",
+      "summaryZH": "升高温度所需的热量正比于质量、温升与物质的比热容。",
+      "category": "Thermodynamik",
+      "curriculumTier": "EF",
+      "stage": "grundlagen",
+      "level": 2,
+      "xpReward": 100,
+      "estimatedMinutes": 12,
+      "prerequisites": [
+        "physik-temperatur-waermeuebertragung",
+        "physik-energieformen-energieerhaltung"
+      ],
+      "keyFormulaOrSentence": "Q = m * c * delta_T",
+      "commonFallacy": "Die Temperaturdifferenz in falscher Einheit einsetzen - entscheidend ist die Differenz, in K oder Grad Celsius gleichermaßen.",
+      "layerIndex": 5,
+      "tags": [
+        "Formel",
+        "Thermodynamik",
+        "Experiment",
+        "Klausur-Dauerbrenner"
+      ]
+    },
+    {
+      "id": "physik-aggregatzustaende-latentwaerme",
+      "fach": "Physik",
+      "titleDE": "Aggregatzustände und latente Wärme",
+      "titleZH": "物态变化与潜热：熔化热与汽化热",
+      "summaryDE": "Während eines Phasenübergangs bleibt die Temperatur konstant, obwohl weiter Wärme zugeführt wird; diese Energie verändert die Bindungsstruktur.",
+      "summaryZH": "相变过程中温度保持不变但持续吸热，这部分能量用于改变分子间的结合结构。",
+      "category": "Thermodynamik",
+      "curriculumTier": "EF",
+      "stage": "grundlagen",
+      "level": 1,
+      "xpReward": 95,
+      "estimatedMinutes": 12,
+      "prerequisites": [
+        "physik-spezifische-waermekapazitaet"
+      ],
+      "keyFormulaOrSentence": "Q = m * q_s  (q_s = spezifische Schmelz- bzw. Verdampfungswaerme)",
+      "commonFallacy": "Im Schmelzplateau weiter mit Q = m * c * delta_T rechnen - dort gilt die latente Wärme.",
+      "layerIndex": 6,
+      "tags": [
+        "Formel",
+        "Thermodynamik",
+        "Grafik",
+        "Basiswissen"
+      ]
+    },
+    {
+      "id": "physik-ideales-gas-zustandsgleichung",
+      "fach": "Physik",
+      "titleDE": "Ideales Gas und Zustandsgleichung",
+      "titleZH": "理想气体状态方程",
+      "summaryDE": "Druck, Volumen und Temperatur eines eingeschlossenen Gases sind über die Zustandsgleichung verknüpft; die Temperatur ist dabei in Kelvin einzusetzen.",
+      "summaryZH": "封闭气体的压强、体积与温度由状态方程联系，温度必须用开尔文表示。",
+      "category": "Thermodynamik",
+      "curriculumTier": "Q1",
+      "stage": "grundlagen",
+      "level": 2,
+      "xpReward": 125,
+      "estimatedMinutes": 14,
+      "prerequisites": [
+        "physik-spezifische-waermekapazitaet"
+      ],
+      "keyFormulaOrSentence": "p * V = n * R * T  bzw.  p1 * V1 / T1 = p2 * V2 / T2",
+      "commonFallacy": "Temperaturen in Grad Celsius einsetzen - in der Zustandsgleichung ist nur die absolute Temperatur zulässig.",
+      "layerIndex": 8,
+      "tags": [
+        "Formel",
+        "Gasgesetz",
+        "Thermodynamik",
+        "Klausur-Dauerbrenner"
+      ]
+    },
+    {
+      "id": "physik-kinetische-gastheorie",
+      "fach": "Physik",
+      "titleDE": "Kinetische Gastheorie",
+      "titleZH": "气体动理论：温度的微观诠释",
+      "summaryDE": "Druck und Temperatur lassen sich als Mittelwerte der Teilchenbewegung deuten; die mittlere kinetische Energie ist proportional zur absoluten Temperatur.",
+      "summaryZH": "压强与温度可解释为分子运动的统计平均，平均动能正比于绝对温度。",
+      "category": "Thermodynamik",
+      "curriculumTier": "Q1",
+      "stage": "vertiefung",
+      "level": 2,
+      "xpReward": 135,
+      "estimatedMinutes": 15,
+      "prerequisites": [
+        "physik-ideales-gas-zustandsgleichung"
+      ],
+      "keyFormulaOrSentence": "E_kin,mittel = 3/2 * k_B * T  und  p * V = 2/3 * N * E_kin,mittel",
+      "commonFallacy": "Aus der kinetischen Gastheorie auf einzelne Teilchen schließen - alle Aussagen sind statistische Mittelwerte.",
+      "layerIndex": 9,
+      "tags": [
+        "Modell",
+        "Gasgesetz",
+        "Thermodynamik",
+        "Mathematisierung"
+      ]
+    },
+    {
+      "id": "physik-erster-hauptsatz-innere-energie",
+      "fach": "Physik",
+      "titleDE": "Erster Hauptsatz und innere Energie",
+      "titleZH": "热力学第一定律与内能",
+      "summaryDE": "Die Änderung der inneren Energie ist die Summe aus zugeführter Wärme und am System verrichteter Arbeit; Energie geht dabei nie verloren.",
+      "summaryZH": "内能的变化等于吸收的热量与外界对系统做功之和，能量永不消失。",
+      "category": "Thermodynamik",
+      "curriculumTier": "Q1",
+      "stage": "vertiefung",
+      "level": 2,
+      "xpReward": 140,
+      "estimatedMinutes": 16,
+      "prerequisites": [
+        "physik-kinetische-gastheorie",
+        "physik-ideales-gas-zustandsgleichung",
+        "physik-energieformen-energieerhaltung"
+      ],
+      "keyFormulaOrSentence": "delta_U = Q + W  (Vorzeichenkonvention: dem System zugefuehrt wird positiv gezaehlt)",
+      "commonFallacy": "Die Vorzeichenkonvention wechseln - ob W als am System oder vom System verrichtete Arbeit zählt, muss konstant bleiben.",
+      "layerIndex": 10,
+      "tags": [
+        "Axiom",
+        "Thermodynamik",
+        "Energie",
+        "Klausur-Dauerbrenner"
+      ]
+    },
+    {
+      "id": "physik-zweiter-hauptsatz-entropie",
+      "fach": "Physik",
+      "titleDE": "Zweiter Hauptsatz und Entropie",
+      "titleZH": "热力学第二定律与熵增原理",
+      "summaryDE": "Prozesse laufen von selbst nur in eine Richtung ab; die Entropie eines abgeschlossenen Systems nimmt dabei niemals ab.",
+      "summaryZH": "自发过程只沿一个方向进行，孤立系统的熵永不减少。",
+      "category": "Thermodynamik",
+      "curriculumTier": "Q2",
+      "stage": "synthese",
+      "level": 2,
+      "xpReward": 155,
+      "estimatedMinutes": 16,
+      "prerequisites": [
+        "physik-erster-hauptsatz-innere-energie",
+        "physik-aggregatzustaende-latentwaerme"
+      ],
+      "keyFormulaOrSentence": "delta_S >= 0 fuer abgeschlossene Systeme (reversibler Grenzfall: delta_S = 0)",
+      "commonFallacy": "Aus dem zweiten Hauptsatz auf einen Energieschwund schließen - die Energie bleibt erhalten, nur ihre Nutzbarkeit sinkt.",
+      "layerIndex": 12,
+      "tags": [
+        "Axiom",
+        "Entropie",
+        "Thermodynamik",
+        "AFB-III"
+      ]
+    },
+    {
+      "id": "physik-waermekraftmaschine-carnot",
+      "fach": "Physik",
+      "titleDE": "Wärmekraftmaschine und Carnot-Wirkungsgrad",
+      "titleZH": "热机与卡诺效率上限",
+      "summaryDE": "Eine Wärmekraftmaschine wandelt einen Teil der aufgenommenen Wärme in Arbeit um; der maximale Wirkungsgrad hängt nur von den beiden Reservoirtemperaturen ab.",
+      "summaryZH": "热机把所吸热量的一部分转化为功，其效率上限只取决于高温与低温热源的温度。",
+      "category": "Thermodynamik",
+      "curriculumTier": "Q2",
+      "stage": "synthese",
+      "level": 3,
+      "xpReward": 165,
+      "estimatedMinutes": 18,
+      "prerequisites": [
+        "physik-zweiter-hauptsatz-entropie",
+        "physik-ideales-gas-zustandsgleichung"
+      ],
+      "keyFormulaOrSentence": "eta_Carnot = 1 - T_kalt / T_warm  (Temperaturen in Kelvin)",
+      "commonFallacy": "Einen Wirkungsgrad von 100 Prozent für erreichbar halten - der zweite Hauptsatz verbietet ihn.",
+      "layerIndex": 14,
+      "tags": [
+        "Formel",
+        "Thermodynamik",
+        "Entropie",
+        "Schwerpunkt-2026"
+      ]
+    },
+    {
+      "id": "physik-entropie-formal-zweiter-hauptsatz",
+      "fach": "Physik",
+      "titleDE": "Entropie als Zustandsfunktion",
+      "titleZH": "熵作为状态函数：克劳修斯定义",
+      "summaryDE": "Die Entropie ist eine Zustandsfunktion; ihre Änderung ergibt sich aus der reversibel ausgetauschten Wärme geteilt durch die Temperatur.",
+      "summaryZH": "熵是状态函数，其变化等于可逆过程中交换的热量除以温度。",
+      "category": "Thermodynamik",
+      "curriculumTier": "Uni_Prep",
+      "stage": "synthese",
+      "level": 3,
+      "xpReward": 180,
+      "estimatedMinutes": 26,
+      "prerequisites": [
+        "physik-zweiter-hauptsatz-entropie",
+        "physik-erster-hauptsatz-innere-energie"
+      ],
+      "keyFormulaOrSentence": "dS = delta_Q_rev / T  und  delta_S_Universum >= 0",
+      "commonFallacy": "Entropie im Alltagssinn als Unordnung definieren - formal ist sie über die reversibel ausgetauschte Wärme definiert.",
+      "layerIndex": 17,
+      "tags": [
+        "Definition",
+        "Entropie",
+        "Mathematisierung",
+        "Uni-Prep"
+      ]
+    },
+    {
+      "id": "physik-statistische-mechanik-boltzmann",
+      "fach": "Physik",
+      "titleDE": "Statistische Mechanik und Boltzmann-Verteilung",
+      "titleZH": "统计力学与玻尔兹曼分布",
+      "summaryDE": "Makroskopische Zustandsgrößen entstehen als Mittelwerte über mikroskopische Zustände; die Entropie ist proportional zum Logarithmus der Zahl der Mikrozustände.",
+      "summaryZH": "宏观状态量是微观状态的统计平均，熵正比于可实现微观状态数的对数。",
+      "category": "Thermodynamik",
+      "curriculumTier": "Uni_Prep",
+      "stage": "synthese",
+      "level": 3,
+      "xpReward": 195,
+      "estimatedMinutes": 30,
+      "prerequisites": [
+        "physik-entropie-formal-zweiter-hauptsatz",
+        "physik-kinetische-gastheorie",
+        "physik-ideales-gas-zustandsgleichung"
+      ],
+      "keyFormulaOrSentence": "S = k_B * ln(W)  und  p_i proportional zu exp(-E_i / (k_B * T))",
+      "commonFallacy": "Die Entropiezunahme als Gesetz für einzelne Teilchen deuten - sie ist eine Aussage über Wahrscheinlichkeiten.",
+      "layerIndex": 19,
+      "tags": [
+        "Modell",
+        "Entropie",
+        "Mathematisierung",
+        "Uni-Prep"
+      ]
+    },
+    {
+      "id": "physik-optik-brechung-linsen",
+      "fach": "Physik",
+      "titleDE": "Reflexion, Brechung und Linsen",
+      "titleZH": "反射、折射与透镜成像",
+      "summaryDE": "Licht breitet sich geradlinig aus und ändert an Grenzflächen seine Richtung; Linsen bündeln achsenparallel einfallendes Licht im Brennpunkt.",
+      "summaryZH": "光沿直线传播，在介质界面改变方向；透镜把平行于主轴入射的光汇聚到焦点。",
+      "category": "Quantenphysik",
+      "curriculumTier": "Sek_I",
+      "stage": "einfuehrung",
+      "level": 1,
+      "xpReward": 75,
+      "estimatedMinutes": 12,
+      "prerequisites": [
+        "physik-messen-einheiten-groessen"
+      ],
+      "keyFormulaOrSentence": "n = c_0 / c  und  1/f = 1/g + 1/b  (Linsengleichung)",
+      "commonFallacy": "Beim Übergang ins optisch dichtere Medium den Strahl vom Lot weg brechen - er wird zum Lot hin gebrochen.",
+      "layerIndex": 2,
+      "tags": [
+        "Formel",
+        "Optik",
+        "Grafik",
+        "Basiswissen"
+      ]
+    },
+    {
+      "id": "physik-wellen-grundlagen-huygens",
+      "fach": "Physik",
+      "titleDE": "Wellenphänomene und Huygenssches Prinzip",
+      "titleZH": "波的描述与惠更斯原理",
+      "summaryDE": "Eine Welle transportiert Energie ohne Materietransport; jeder Punkt einer Wellenfront ist Ausgangspunkt einer neuen Elementarwelle.",
+      "summaryZH": "波传播能量而不输运物质；波前上每一点都可视为新的子波源。",
+      "category": "Quantenphysik",
+      "curriculumTier": "EF",
+      "stage": "grundlagen",
+      "level": 2,
+      "xpReward": 100,
+      "estimatedMinutes": 14,
+      "prerequisites": [
+        "physik-optik-brechung-linsen"
+      ],
+      "keyFormulaOrSentence": "c = lambda * f  und  Huygens: jede Wellenfront ist die Einhuellende ihrer Elementarwellen",
+      "commonFallacy": "Bei einer Welle annehmen, die Teilchen würden mit der Welle mitwandern - sie schwingen nur um ihre Ruhelage.",
+      "layerIndex": 5,
+      "tags": [
+        "Modell",
+        "Welle",
+        "Grafik"
+      ]
+    },
+    {
+      "id": "physik-elektromagnetische-wellen-hertz",
+      "fach": "Physik",
+      "titleDE": "Elektromagnetische Wellen und Hertzscher Dipol",
+      "titleZH": "电磁波与赫兹实验",
+      "summaryDE": "Ein schwingender Dipol strahlt elektromagnetische Wellen ab; elektrisches und magnetisches Feld schwingen senkrecht zueinander und senkrecht zur Ausbreitungsrichtung.",
+      "summaryZH": "振荡偶极子辐射电磁波，电场与磁场互相垂直并都垂直于传播方向。",
+      "category": "Quantenphysik",
+      "curriculumTier": "EF",
+      "stage": "grundlagen",
+      "level": 2,
+      "xpReward": 110,
+      "estimatedMinutes": 14,
+      "prerequisites": [
+        "physik-wellen-grundlagen-huygens",
+        "physik-magnetismus-grundlagen"
+      ],
+      "keyFormulaOrSentence": "c = lambda * f  mit  c = 3.0e8 m/s  (im Vakuum fuer alle Frequenzen gleich)",
+      "commonFallacy": "Für zwei verschiedene Frequenzen im Vakuum unterschiedliche Lichtgeschwindigkeiten annehmen - c ist konstant.",
+      "layerIndex": 6,
+      "tags": [
+        "Formel",
+        "Welle",
+        "Feld",
+        "Klausur-Dauerbrenner"
+      ]
+    },
+    {
+      "id": "physik-interferenz-beugung-gitter",
+      "fach": "Physik",
+      "titleDE": "Interferenz und Beugung am Doppelspalt und Gitter",
+      "titleZH": "双缝与光栅的干涉衍射",
+      "summaryDE": "Zwei kohärente Wellen überlagern sich; Maxima entstehen bei ganzzahligem Gangunterschied, und ein Gitter mit vielen Spalten erzeugt scharfe, weit getrennte Ordnungen.",
+      "summaryZH": "两束相干波叠加，光程差为波长整数倍时出现亮纹；多缝光栅产生锐利且分离的衍射级次。",
+      "category": "Quantenphysik",
+      "curriculumTier": "EF",
+      "stage": "vertiefung",
+      "level": 2,
+      "xpReward": 120,
+      "estimatedMinutes": 18,
+      "prerequisites": [
+        "physik-wellen-grundlagen-huygens"
+      ],
+      "keyFormulaOrSentence": "delta_s = k * lambda  und  sin(alpha_k) = k * lambda / g  (Doppelspalt: g = Spaltabstand d)",
+      "commonFallacy": "Interferenz als Beweis für den korpuskularen Lichtcharakter deuten - sie ist ein Wellenphänomen.",
+      "layerIndex": 7,
+      "tags": [
+        "Formel",
+        "Optik",
+        "Welle",
+        "Klausur-Dauerbrenner"
+      ]
+    },
+    {
+      "id": "physik-atommodell-bohr-energieniveaus",
+      "fach": "Physik",
+      "titleDE": "Bohrsches Atommodell und Energieniveaus",
+      "titleZH": "玻尔原子模型与离散能级",
+      "summaryDE": "Elektronen bewegen sich nur auf ausgezeichneten Bahnen mit diskreten Energien; Licht wird ausschließlich beim Übergang zwischen zwei Niveaus emittiert oder absorbiert.",
+      "summaryZH": "电子只能在具有离散能量的特定轨道上运动，光的发射与吸收只发生在能级跃迁时。",
+      "category": "Quantenphysik",
+      "curriculumTier": "Q1",
+      "stage": "vertiefung",
+      "level": 2,
+      "xpReward": 140,
+      "estimatedMinutes": 16,
+      "prerequisites": [
+        "physik-interferenz-beugung-gitter",
+        "physik-elektromagnetische-wellen-hertz"
+      ],
+      "keyFormulaOrSentence": "E_n = -13.6 eV / n^2  und  h * f = E_m - E_n  (Bohrsche Frequenzbedingung)",
+      "commonFallacy": "Aus dem Modell auf einen realen Bahnradius des Elektrons schließen - die Bohrschen Bahnen sind ein Modellbild.",
+      "layerIndex": 9,
+      "tags": [
+        "Modell",
+        "Atomphysik",
+        "Quantenphysik",
+        "Klausur-Dauerbrenner"
+      ]
+    },
+    {
+      "id": "physik-radioaktivitaet-zerfallsgesetze",
+      "fach": "Physik",
+      "titleDE": "Radioaktivität und Zerfallsgesetze",
+      "titleZH": "放射性衰变与指数衰变定律",
+      "summaryDE": "Der Zerfall eines einzelnen Kerns ist ein statistischer Prozess; die Zahl der noch vorhandenen Kerne sinkt exponentiell mit der Zeit.",
+      "summaryZH": "单个核的衰变是随机事件，剩余核的数目随时间按指数规律减少。",
+      "category": "Quantenphysik",
+      "curriculumTier": "Q1",
+      "stage": "vertiefung",
+      "level": 2,
+      "xpReward": 135,
+      "estimatedMinutes": 15,
+      "prerequisites": [
+        "physik-atommodell-bohr-energieniveaus"
+      ],
+      "keyFormulaOrSentence": "N(t) = N_0 * e^(-lambda * t)  und  T_1/2 = ln(2) / lambda",
+      "commonFallacy": "Vorhersagen, wann ein einzelnes Atom zerfällt - das Zerfallsgesetz gilt nur für große Kollektive.",
+      "layerIndex": 10,
+      "tags": [
+        "Formel",
+        "Kernphysik",
+        "Mathematisierung",
+        "Klausur-Dauerbrenner"
+      ]
+    },
+    {
+      "id": "physik-kernspaltung-kernfusion",
+      "fach": "Physik",
+      "titleDE": "Kernspaltung, Kettenreaktion und Kernfusion",
+      "titleZH": "核裂变、链式反应与核聚变",
+      "summaryDE": "Beim Zerlegen schwerer Kerne oder beim Verschmelzen leichter Kerne wird Energie frei, weil die Bindungsenergie pro Nukleon zunimmt.",
+      "summaryZH": "重核裂变与轻核聚变都释放能量，因为产物的每核子结合能更大。",
+      "category": "Quantenphysik",
+      "curriculumTier": "Q1",
+      "stage": "vertiefung",
+      "level": 3,
+      "xpReward": 145,
+      "estimatedMinutes": 16,
+      "prerequisites": [
+        "physik-radioaktivitaet-zerfallsgesetze",
+        "physik-atommodell-bohr-energieniveaus"
+      ],
+      "keyFormulaOrSentence": "Energiefreisetzung durch Zunahme der Bindungsenergie pro Nukleon (Maximum bei Eisen-56)",
+      "commonFallacy": "Fusion und Spaltung nach derselben Bilanz rechnen - beide nähern sich dem Maximum, aber von verschiedenen Seiten.",
+      "layerIndex": 11,
+      "tags": [
+        "Kernphysik",
+        "Energie",
+        "AFB-III"
+      ]
+    },
+    {
+      "id": "physik-photoeffekt-lichtquantenhypothese",
+      "fach": "Physik",
+      "titleDE": "Photoeffekt und Lichtquantenhypothese",
+      "titleZH": "光电效应与光量子假说",
+      "summaryDE": "Elektronen treten nur aus, wenn die Frequenz des Lichts eine materialspezifische Grenzfrequenz übersteigt; die Energie wird in Quanten der Größe h * f übertragen.",
+      "summaryZH": "只有当光频率超过材料特定的截止频率时才有电子逸出，能量以 h·f 的量子形式被传递。",
+      "category": "Quantenphysik",
+      "curriculumTier": "Q2",
+      "stage": "synthese",
+      "level": 3,
+      "xpReward": 165,
+      "estimatedMinutes": 18,
+      "prerequisites": [
+        "physik-atommodell-bohr-energieniveaus",
+        "physik-interferenz-beugung-gitter"
+      ],
+      "keyFormulaOrSentence": "E_kin,max = h * f - W_A  mit  W_A = h * f_Grenz",
+      "commonFallacy": "Annehmen, höhere Intensität könne das fehlende Energiequantum ersetzen - Intensität erhöht nur die Zahl der Elektronen, nicht ihre Maximalenergie.",
+      "layerIndex": 12,
+      "tags": [
+        "Formel",
+        "Quantenphysik",
+        "Photon",
+        "Klausur-Dauerbrenner",
+        "Schwerpunkt-2026"
+      ]
+    },
+    {
+      "id": "physik-photon-impuls-compton-effekt",
+      "fach": "Physik",
+      "titleDE": "Photonenimpuls und Compton-Effekt",
+      "titleZH": "光子动量与康普顿散射",
+      "summaryDE": "Photonen tragen neben Energie auch Impuls; bei der Streuung an Elektronen verschiebt sich die Wellenlänge gemäß der gemeinsamen Energie- und Impulsbilanz.",
+      "summaryZH": "光子不仅携带能量也携带动量；与电子散射时波长发生移动，遵循能量与动量守恒。",
+      "category": "Quantenphysik",
+      "curriculumTier": "Q2",
+      "stage": "synthese",
+      "level": 3,
+      "xpReward": 170,
+      "estimatedMinutes": 18,
+      "prerequisites": [
+        "physik-photoeffekt-lichtquantenhypothese"
+      ],
+      "keyFormulaOrSentence": "p_Photon = h / lambda  und  delta_lambda = (h / (m_e * c)) * (1 - cos(phi))",
+      "commonFallacy": "Das Photon als masseloses Teilchen ohne Impuls beschreiben - es hat Impuls, aber keine Ruhemasse.",
+      "layerIndex": 13,
+      "tags": [
+        "Formel",
+        "Photon",
+        "Quantenphysik",
+        "AFB-III"
+      ]
+    },
+    {
+      "id": "physik-de-broglie-wellenlaenge",
+      "fach": "Physik",
+      "titleDE": "De-Broglie-Wellenlänge",
+      "titleZH": "德布罗意物质波",
+      "summaryDE": "Jedem Teilchen mit dem Impuls p lässt sich eine Wellenlänge zuordnen; die Elektronenbeugung bestätigt den Wellencharakter der Materie.",
+      "summaryZH": "任何具有动量 p 的粒子都对应一个波长，电子衍射实验证实了物质的波动性。",
+      "category": "Quantenphysik",
+      "curriculumTier": "Q2",
+      "stage": "synthese",
+      "level": 3,
+      "xpReward": 165,
+      "estimatedMinutes": 16,
+      "prerequisites": [
+        "physik-photoeffekt-lichtquantenhypothese",
+        "physik-interferenz-beugung-gitter"
+      ],
+      "keyFormulaOrSentence": "lambda = h / p = h / (m * v)",
+      "commonFallacy": "Die De-Broglie-Wellenlänge makroskopischer Körper für beobachtbar halten - sie ist dort verschwindend klein.",
+      "layerIndex": 13,
+      "tags": [
+        "Formel",
+        "Quantenphysik",
+        "Welle",
+        "Klausur-Dauerbrenner"
+      ]
+    },
+    {
+      "id": "physik-welle-teilchen-dualismus-heisenberg",
+      "fach": "Physik",
+      "titleDE": "Welle-Teilchen-Dualismus und Heisenbergsche Unschärferelation",
+      "titleZH": "波粒二象性与海森堡不确定性关系",
+      "summaryDE": "Quantenobjekte zeigen je nach Experiment Wellen- oder Teilcheneigenschaften; Ort und Impuls können nicht gleichzeitig beliebig genau festgelegt werden.",
+      "summaryZH": "量子客体依实验条件呈现波动性或粒子性；位置与动量不可能同时任意精确地确定。",
+      "category": "Quantenphysik",
+      "curriculumTier": "Q2",
+      "stage": "synthese",
+      "level": 3,
+      "xpReward": 180,
+      "estimatedMinutes": 20,
+      "prerequisites": [
+        "physik-photon-impuls-compton-effekt",
+        "physik-de-broglie-wellenlaenge",
+        "physik-interferenz-beugung-gitter"
+      ],
+      "keyFormulaOrSentence": "delta_p * delta_x >= h / (4 * pi)",
+      "commonFallacy": "Die Unschärfe als Messfehler des Experimentators deuten - sie ist eine grundsätzliche Eigenschaft der Quantenobjekte.",
+      "layerIndex": 14,
+      "tags": [
+        "Axiom",
+        "Quantenphysik",
+        "AFB-III",
+        "Schwerpunkt-2026"
+      ]
+    },
+    {
+      "id": "physik-schroedingergleichung-qualitativ",
+      "fach": "Physik",
+      "titleDE": "Schrödingergleichung (qualitativ)",
+      "titleZH": "薛定谔方程：量子态的时间演化",
+      "summaryDE": "Die Schrödingergleichung beschreibt, wie sich ein quantenmechanischer Zustand zeitlich entwickelt; ihre Lösungen liefern die erlaubten Energieniveaus.",
+      "summaryZH": "薛定谔方程描述量子态随时间演化，其解给出允许的能级与定态波函数。",
+      "category": "Quantenphysik",
+      "curriculumTier": "Uni_Prep",
+      "stage": "synthese",
+      "level": 3,
+      "xpReward": 185,
+      "estimatedMinutes": 28,
+      "prerequisites": [
+        "physik-de-broglie-wellenlaenge",
+        "physik-welle-teilchen-dualismus-heisenberg"
+      ],
+      "keyFormulaOrSentence": "i * h_quer * d(psi)/dt = H * psi  (H = Hamiltonoperator, h_quer = h / (2 * pi))",
+      "commonFallacy": "Die Schrödingergleichung als klassische Wellengleichung lesen - psi selbst ist keine messbare Größe.",
+      "layerIndex": 16,
+      "tags": [
+        "Axiom",
+        "Quantenphysik",
+        "Mathematisierung",
+        "Uni-Prep"
+      ]
+    },
+    {
+      "id": "physik-wellenfunktion-wahrscheinlichkeitsdichte",
+      "fach": "Physik",
+      "titleDE": "Wellenfunktion und Wahrscheinlichkeitsdichte",
+      "titleZH": "波函数与概率密度诠释",
+      "summaryDE": "Die Wellenfunktion trägt die vollständige Information über den Zustand; ihr Betragsquadrat gibt die Aufenthaltswahrscheinlichkeitsdichte an.",
+      "summaryZH": "波函数承载量子态的全部信息，其模方给出粒子出现的概率密度。",
+      "category": "Quantenphysik",
+      "curriculumTier": "Uni_Prep",
+      "stage": "synthese",
+      "level": 3,
+      "xpReward": 190,
+      "estimatedMinutes": 28,
+      "prerequisites": [
+        "physik-schroedingergleichung-qualitativ",
+        "physik-de-broglie-wellenlaenge",
+        "physik-welle-teilchen-dualismus-heisenberg"
+      ],
+      "keyFormulaOrSentence": "rho(x) = |psi(x)|^2  und  Normierung: Integral von |psi|^2 dx = 1",
+      "commonFallacy": "Aus der Wellenfunktion auf eine klassische Bahn des Teilchens schließen - sie liefert nur Wahrscheinlichkeiten.",
+      "layerIndex": 18,
+      "tags": [
+        "Modell",
+        "Quantenphysik",
+        "Mathematisierung",
+        "Uni-Prep"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "id": "e-physik-messen-einheiten-groessen-physik-gleichfoermige-bewegung",
+      "from": "physik-messen-einheiten-groessen",
+      "to": "physik-gleichfoermige-bewegung",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-physik-gleichfoermige-bewegung-physik-bewegungsdiagramme-analyse",
+      "from": "physik-gleichfoermige-bewegung",
+      "to": "physik-bewegungsdiagramme-analyse",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-physik-gleichfoermige-bewegung-physik-gleichmaessig-beschleunigte-bewegung",
+      "from": "physik-gleichfoermige-bewegung",
+      "to": "physik-gleichmaessig-beschleunigte-bewegung",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-physik-gleichmaessig-beschleunigte-bewegung-physik-freier-fall",
+      "from": "physik-gleichmaessig-beschleunigte-bewegung",
+      "to": "physik-freier-fall",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-physik-gleichmaessig-beschleunigte-bewegung-physik-vektorielle-groessen-zerlegung",
+      "from": "physik-gleichmaessig-beschleunigte-bewegung",
+      "to": "physik-vektorielle-groessen-zerlegung",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-physik-freier-fall-physik-waagerechter-wurf-superposition",
+      "from": "physik-freier-fall",
+      "to": "physik-waagerechter-wurf-superposition",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-physik-vektorielle-groessen-zerlegung-physik-waagerechter-wurf-superposition",
+      "from": "physik-vektorielle-groessen-zerlegung",
+      "to": "physik-waagerechter-wurf-superposition",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-physik-gleichfoermige-bewegung-physik-kreisbewegung-kinematik",
+      "from": "physik-gleichfoermige-bewegung",
+      "to": "physik-kreisbewegung-kinematik",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-physik-vektorielle-groessen-zerlegung-physik-kreisbewegung-kinematik",
+      "from": "physik-vektorielle-groessen-zerlegung",
+      "to": "physik-kreisbewegung-kinematik",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-physik-kreisbewegung-kinematik-physik-keplersche-gesetze",
+      "from": "physik-kreisbewegung-kinematik",
+      "to": "physik-keplersche-gesetze",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-physik-gravitationsgesetz-newton-physik-keplersche-gesetze",
+      "from": "physik-gravitationsgesetz-newton",
+      "to": "physik-keplersche-gesetze",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-physik-gleichfoermige-bewegung-physik-relativistische-zeitdilatation",
+      "from": "physik-gleichfoermige-bewegung",
+      "to": "physik-relativistische-zeitdilatation",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-physik-elektromagnetische-wellen-hertz-physik-relativistische-zeitdilatation",
+      "from": "physik-elektromagnetische-wellen-hertz",
+      "to": "physik-relativistische-zeitdilatation",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-physik-relativistische-zeitdilatation-physik-laengenkontraktion-relativistisch",
+      "from": "physik-relativistische-zeitdilatation",
+      "to": "physik-laengenkontraktion-relativistisch",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-physik-relativistische-zeitdilatation-physik-raumzeit-minkowski-diagramm",
+      "from": "physik-relativistische-zeitdilatation",
+      "to": "physik-raumzeit-minkowski-diagramm",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-physik-laengenkontraktion-relativistisch-physik-raumzeit-minkowski-diagramm",
+      "from": "physik-laengenkontraktion-relativistisch",
+      "to": "physik-raumzeit-minkowski-diagramm",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-physik-raumzeit-minkowski-diagramm-physik-lorentz-transformation",
+      "from": "physik-raumzeit-minkowski-diagramm",
+      "to": "physik-lorentz-transformation",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-physik-relativistische-zeitdilatation-physik-lorentz-transformation",
+      "from": "physik-relativistische-zeitdilatation",
+      "to": "physik-lorentz-transformation",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-physik-kraft-masse-gewichtskraft-physik-druck-und-auftrieb",
+      "from": "physik-kraft-masse-gewichtskraft",
+      "to": "physik-druck-und-auftrieb",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-physik-kraft-masse-gewichtskraft-physik-newtonsche-axiome",
+      "from": "physik-kraft-masse-gewichtskraft",
+      "to": "physik-newtonsche-axiome",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-physik-newtonsche-axiome-physik-kraftzerlegung-geneigte-ebene",
+      "from": "physik-newtonsche-axiome",
+      "to": "physik-kraftzerlegung-geneigte-ebene",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-physik-vektorielle-groessen-zerlegung-physik-kraftzerlegung-geneigte-ebene",
+      "from": "physik-vektorielle-groessen-zerlegung",
+      "to": "physik-kraftzerlegung-geneigte-ebene",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-physik-kraftzerlegung-geneigte-ebene-physik-reibungskraefte",
+      "from": "physik-kraftzerlegung-geneigte-ebene",
+      "to": "physik-reibungskraefte",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-physik-newtonsche-axiome-physik-gravitationsgesetz-newton",
+      "from": "physik-newtonsche-axiome",
+      "to": "physik-gravitationsgesetz-newton",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-physik-kreisbewegung-kinematik-physik-zentripetalkraft",
+      "from": "physik-kreisbewegung-kinematik",
+      "to": "physik-zentripetalkraft",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-physik-newtonsche-axiome-physik-zentripetalkraft",
+      "from": "physik-newtonsche-axiome",
+      "to": "physik-zentripetalkraft",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-physik-newtonsche-axiome-physik-harmonische-schwingung-federpendel",
+      "from": "physik-newtonsche-axiome",
+      "to": "physik-harmonische-schwingung-federpendel",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-physik-mechanische-energie-erhaltungssatz-physik-harmonische-schwingung-federpendel",
+      "from": "physik-mechanische-energie-erhaltungssatz",
+      "to": "physik-harmonische-schwingung-federpendel",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-physik-gravitationsgesetz-newton-physik-gravitationsfeld-feldstaerke",
+      "from": "physik-gravitationsgesetz-newton",
+      "to": "physik-gravitationsfeld-feldstaerke",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-physik-zentripetalkraft-physik-gravitationsfeld-feldstaerke",
+      "from": "physik-zentripetalkraft",
+      "to": "physik-gravitationsfeld-feldstaerke",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-physik-harmonische-schwingung-federpendel-physik-erzwungene-schwingung-resonanz",
+      "from": "physik-harmonische-schwingung-federpendel",
+      "to": "physik-erzwungene-schwingung-resonanz",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-physik-newtonsche-axiome-physik-lagrange-formalismus",
+      "from": "physik-newtonsche-axiome",
+      "to": "physik-lagrange-formalismus",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-physik-mechanische-energie-erhaltungssatz-physik-lagrange-formalismus",
+      "from": "physik-mechanische-energie-erhaltungssatz",
+      "to": "physik-lagrange-formalismus",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-physik-lagrange-formalismus-physik-hamilton-formalismus",
+      "from": "physik-lagrange-formalismus",
+      "to": "physik-hamilton-formalismus",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-physik-kraft-masse-gewichtskraft-physik-kraftwandler-mechanische-arbeit",
+      "from": "physik-kraft-masse-gewichtskraft",
+      "to": "physik-kraftwandler-mechanische-arbeit",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-physik-kraftwandler-mechanische-arbeit-physik-energieformen-energieerhaltung",
+      "from": "physik-kraftwandler-mechanische-arbeit",
+      "to": "physik-energieformen-energieerhaltung",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-physik-energieformen-energieerhaltung-physik-mechanische-energie-erhaltungssatz",
+      "from": "physik-energieformen-energieerhaltung",
+      "to": "physik-mechanische-energie-erhaltungssatz",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-physik-mechanische-energie-erhaltungssatz-physik-arbeit-leistung-wirkungsgrad",
+      "from": "physik-mechanische-energie-erhaltungssatz",
+      "to": "physik-arbeit-leistung-wirkungsgrad",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-physik-newtonsche-axiome-physik-impuls-grundlagen",
+      "from": "physik-newtonsche-axiome",
+      "to": "physik-impuls-grundlagen",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-physik-energieformen-energieerhaltung-physik-impuls-grundlagen",
+      "from": "physik-energieformen-energieerhaltung",
+      "to": "physik-impuls-grundlagen",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-physik-impuls-grundlagen-physik-stossarten-zentraler-stoss",
+      "from": "physik-impuls-grundlagen",
+      "to": "physik-stossarten-zentraler-stoss",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-physik-mechanische-energie-erhaltungssatz-physik-stossarten-zentraler-stoss",
+      "from": "physik-mechanische-energie-erhaltungssatz",
+      "to": "physik-stossarten-zentraler-stoss",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-physik-stossarten-zentraler-stoss-physik-impulserhaltung-anwendungen",
+      "from": "physik-stossarten-zentraler-stoss",
+      "to": "physik-impulserhaltung-anwendungen",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-physik-vektorielle-groessen-zerlegung-physik-impulserhaltung-anwendungen",
+      "from": "physik-vektorielle-groessen-zerlegung",
+      "to": "physik-impulserhaltung-anwendungen",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-physik-gravitationsfeld-feldstaerke-physik-energie-im-gravitationsfeld",
+      "from": "physik-gravitationsfeld-feldstaerke",
+      "to": "physik-energie-im-gravitationsfeld",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-physik-mechanische-energie-erhaltungssatz-physik-energie-im-gravitationsfeld",
+      "from": "physik-mechanische-energie-erhaltungssatz",
+      "to": "physik-energie-im-gravitationsfeld",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-physik-kernspaltung-kernfusion-physik-massendefekt-bindungsenergie",
+      "from": "physik-kernspaltung-kernfusion",
+      "to": "physik-massendefekt-bindungsenergie",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-physik-energieformen-energieerhaltung-physik-massendefekt-bindungsenergie",
+      "from": "physik-energieformen-energieerhaltung",
+      "to": "physik-massendefekt-bindungsenergie",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-physik-massendefekt-bindungsenergie-physik-relativistischer-impuls-energie",
+      "from": "physik-massendefekt-bindungsenergie",
+      "to": "physik-relativistischer-impuls-energie",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-physik-laengenkontraktion-relativistisch-physik-relativistischer-impuls-energie",
+      "from": "physik-laengenkontraktion-relativistisch",
+      "to": "physik-relativistischer-impuls-energie",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-physik-relativistischer-impuls-energie-physik-klausur-synthese-abitur",
+      "from": "physik-relativistischer-impuls-energie",
+      "to": "physik-klausur-synthese-abitur",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-physik-welle-teilchen-dualismus-heisenberg-physik-klausur-synthese-abitur",
+      "from": "physik-welle-teilchen-dualismus-heisenberg",
+      "to": "physik-klausur-synthese-abitur",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-physik-waermekraftmaschine-carnot-physik-klausur-synthese-abitur",
+      "from": "physik-waermekraftmaschine-carnot",
+      "to": "physik-klausur-synthese-abitur",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-physik-selbstinduktion-schwingkreis-physik-klausur-synthese-abitur",
+      "from": "physik-selbstinduktion-schwingkreis",
+      "to": "physik-klausur-synthese-abitur",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-physik-impuls-grundlagen-physik-noether-symmetrie-erhaltungssaetze",
+      "from": "physik-impuls-grundlagen",
+      "to": "physik-noether-symmetrie-erhaltungssaetze",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-physik-mechanische-energie-erhaltungssatz-physik-noether-symmetrie-erhaltungssaetze",
+      "from": "physik-mechanische-energie-erhaltungssatz",
+      "to": "physik-noether-symmetrie-erhaltungssaetze",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-physik-lagrange-formalismus-physik-noether-symmetrie-erhaltungssaetze",
+      "from": "physik-lagrange-formalismus",
+      "to": "physik-noether-symmetrie-erhaltungssaetze",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-physik-ohmsches-gesetz-stromkreis-physik-magnetismus-grundlagen",
+      "from": "physik-ohmsches-gesetz-stromkreis",
+      "to": "physik-magnetismus-grundlagen",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-physik-ohmsches-gesetz-stromkreis-physik-elektrische-ladung-influenz",
+      "from": "physik-ohmsches-gesetz-stromkreis",
+      "to": "physik-elektrische-ladung-influenz",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-physik-elektrische-ladung-influenz-physik-elektrisches-feld-feldlinien",
+      "from": "physik-elektrische-ladung-influenz",
+      "to": "physik-elektrisches-feld-feldlinien",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-physik-elektrisches-feld-feldlinien-physik-magnetfeld-lorentzkraft-qualitativ",
+      "from": "physik-elektrisches-feld-feldlinien",
+      "to": "physik-magnetfeld-lorentzkraft-qualitativ",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-physik-magnetismus-grundlagen-physik-magnetfeld-lorentzkraft-qualitativ",
+      "from": "physik-magnetismus-grundlagen",
+      "to": "physik-magnetfeld-lorentzkraft-qualitativ",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-physik-elektrisches-feld-feldlinien-physik-coulombsches-gesetz",
+      "from": "physik-elektrisches-feld-feldlinien",
+      "to": "physik-coulombsches-gesetz",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-physik-magnetfeld-lorentzkraft-qualitativ-physik-magnetfeld-lorentzkraft-quantitativ",
+      "from": "physik-magnetfeld-lorentzkraft-qualitativ",
+      "to": "physik-magnetfeld-lorentzkraft-quantitativ",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-physik-coulombsches-gesetz-physik-magnetfeld-lorentzkraft-quantitativ",
+      "from": "physik-coulombsches-gesetz",
+      "to": "physik-magnetfeld-lorentzkraft-quantitativ",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-physik-coulombsches-gesetz-physik-kondensator-kapazitaet",
+      "from": "physik-coulombsches-gesetz",
+      "to": "physik-kondensator-kapazitaet",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-physik-elektrisches-feld-feldlinien-physik-kondensator-kapazitaet",
+      "from": "physik-elektrisches-feld-feldlinien",
+      "to": "physik-kondensator-kapazitaet",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-physik-magnetfeld-lorentzkraft-quantitativ-physik-induktion-lenzsche-regel",
+      "from": "physik-magnetfeld-lorentzkraft-quantitativ",
+      "to": "physik-induktion-lenzsche-regel",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-physik-induktion-lenzsche-regel-physik-wechselstrom-generator-transformator",
+      "from": "physik-induktion-lenzsche-regel",
+      "to": "physik-wechselstrom-generator-transformator",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-physik-induktion-lenzsche-regel-physik-selbstinduktion-schwingkreis",
+      "from": "physik-induktion-lenzsche-regel",
+      "to": "physik-selbstinduktion-schwingkreis",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-physik-wechselstrom-generator-transformator-physik-selbstinduktion-schwingkreis",
+      "from": "physik-wechselstrom-generator-transformator",
+      "to": "physik-selbstinduktion-schwingkreis",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-physik-kondensator-kapazitaet-physik-selbstinduktion-schwingkreis",
+      "from": "physik-kondensator-kapazitaet",
+      "to": "physik-selbstinduktion-schwingkreis",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-physik-coulombsches-gesetz-physik-maxwell-gleichungen-konzept",
+      "from": "physik-coulombsches-gesetz",
+      "to": "physik-maxwell-gleichungen-konzept",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-physik-induktion-lenzsche-regel-physik-maxwell-gleichungen-konzept",
+      "from": "physik-induktion-lenzsche-regel",
+      "to": "physik-maxwell-gleichungen-konzept",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-physik-elektromagnetische-wellen-hertz-physik-maxwell-gleichungen-konzept",
+      "from": "physik-elektromagnetische-wellen-hertz",
+      "to": "physik-maxwell-gleichungen-konzept",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-physik-temperatur-waermeuebertragung-physik-spezifische-waermekapazitaet",
+      "from": "physik-temperatur-waermeuebertragung",
+      "to": "physik-spezifische-waermekapazitaet",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-physik-energieformen-energieerhaltung-physik-spezifische-waermekapazitaet",
+      "from": "physik-energieformen-energieerhaltung",
+      "to": "physik-spezifische-waermekapazitaet",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-physik-spezifische-waermekapazitaet-physik-aggregatzustaende-latentwaerme",
+      "from": "physik-spezifische-waermekapazitaet",
+      "to": "physik-aggregatzustaende-latentwaerme",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-physik-spezifische-waermekapazitaet-physik-ideales-gas-zustandsgleichung",
+      "from": "physik-spezifische-waermekapazitaet",
+      "to": "physik-ideales-gas-zustandsgleichung",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-physik-ideales-gas-zustandsgleichung-physik-kinetische-gastheorie",
+      "from": "physik-ideales-gas-zustandsgleichung",
+      "to": "physik-kinetische-gastheorie",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-physik-kinetische-gastheorie-physik-erster-hauptsatz-innere-energie",
+      "from": "physik-kinetische-gastheorie",
+      "to": "physik-erster-hauptsatz-innere-energie",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-physik-ideales-gas-zustandsgleichung-physik-erster-hauptsatz-innere-energie",
+      "from": "physik-ideales-gas-zustandsgleichung",
+      "to": "physik-erster-hauptsatz-innere-energie",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-physik-energieformen-energieerhaltung-physik-erster-hauptsatz-innere-energie",
+      "from": "physik-energieformen-energieerhaltung",
+      "to": "physik-erster-hauptsatz-innere-energie",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-physik-erster-hauptsatz-innere-energie-physik-zweiter-hauptsatz-entropie",
+      "from": "physik-erster-hauptsatz-innere-energie",
+      "to": "physik-zweiter-hauptsatz-entropie",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-physik-aggregatzustaende-latentwaerme-physik-zweiter-hauptsatz-entropie",
+      "from": "physik-aggregatzustaende-latentwaerme",
+      "to": "physik-zweiter-hauptsatz-entropie",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-physik-zweiter-hauptsatz-entropie-physik-waermekraftmaschine-carnot",
+      "from": "physik-zweiter-hauptsatz-entropie",
+      "to": "physik-waermekraftmaschine-carnot",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-physik-ideales-gas-zustandsgleichung-physik-waermekraftmaschine-carnot",
+      "from": "physik-ideales-gas-zustandsgleichung",
+      "to": "physik-waermekraftmaschine-carnot",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-physik-zweiter-hauptsatz-entropie-physik-entropie-formal-zweiter-hauptsatz",
+      "from": "physik-zweiter-hauptsatz-entropie",
+      "to": "physik-entropie-formal-zweiter-hauptsatz",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-physik-erster-hauptsatz-innere-energie-physik-entropie-formal-zweiter-hauptsatz",
+      "from": "physik-erster-hauptsatz-innere-energie",
+      "to": "physik-entropie-formal-zweiter-hauptsatz",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-physik-entropie-formal-zweiter-hauptsatz-physik-statistische-mechanik-boltzmann",
+      "from": "physik-entropie-formal-zweiter-hauptsatz",
+      "to": "physik-statistische-mechanik-boltzmann",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-physik-kinetische-gastheorie-physik-statistische-mechanik-boltzmann",
+      "from": "physik-kinetische-gastheorie",
+      "to": "physik-statistische-mechanik-boltzmann",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-physik-ideales-gas-zustandsgleichung-physik-statistische-mechanik-boltzmann",
+      "from": "physik-ideales-gas-zustandsgleichung",
+      "to": "physik-statistische-mechanik-boltzmann",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-physik-messen-einheiten-groessen-physik-optik-brechung-linsen",
+      "from": "physik-messen-einheiten-groessen",
+      "to": "physik-optik-brechung-linsen",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-physik-optik-brechung-linsen-physik-wellen-grundlagen-huygens",
+      "from": "physik-optik-brechung-linsen",
+      "to": "physik-wellen-grundlagen-huygens",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-physik-wellen-grundlagen-huygens-physik-elektromagnetische-wellen-hertz",
+      "from": "physik-wellen-grundlagen-huygens",
+      "to": "physik-elektromagnetische-wellen-hertz",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-physik-magnetismus-grundlagen-physik-elektromagnetische-wellen-hertz",
+      "from": "physik-magnetismus-grundlagen",
+      "to": "physik-elektromagnetische-wellen-hertz",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-physik-wellen-grundlagen-huygens-physik-interferenz-beugung-gitter",
+      "from": "physik-wellen-grundlagen-huygens",
+      "to": "physik-interferenz-beugung-gitter",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-physik-interferenz-beugung-gitter-physik-atommodell-bohr-energieniveaus",
+      "from": "physik-interferenz-beugung-gitter",
+      "to": "physik-atommodell-bohr-energieniveaus",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-physik-elektromagnetische-wellen-hertz-physik-atommodell-bohr-energieniveaus",
+      "from": "physik-elektromagnetische-wellen-hertz",
+      "to": "physik-atommodell-bohr-energieniveaus",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-physik-atommodell-bohr-energieniveaus-physik-radioaktivitaet-zerfallsgesetze",
+      "from": "physik-atommodell-bohr-energieniveaus",
+      "to": "physik-radioaktivitaet-zerfallsgesetze",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-physik-radioaktivitaet-zerfallsgesetze-physik-kernspaltung-kernfusion",
+      "from": "physik-radioaktivitaet-zerfallsgesetze",
+      "to": "physik-kernspaltung-kernfusion",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-physik-atommodell-bohr-energieniveaus-physik-kernspaltung-kernfusion",
+      "from": "physik-atommodell-bohr-energieniveaus",
+      "to": "physik-kernspaltung-kernfusion",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-physik-atommodell-bohr-energieniveaus-physik-photoeffekt-lichtquantenhypothese",
+      "from": "physik-atommodell-bohr-energieniveaus",
+      "to": "physik-photoeffekt-lichtquantenhypothese",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-physik-interferenz-beugung-gitter-physik-photoeffekt-lichtquantenhypothese",
+      "from": "physik-interferenz-beugung-gitter",
+      "to": "physik-photoeffekt-lichtquantenhypothese",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-physik-photoeffekt-lichtquantenhypothese-physik-photon-impuls-compton-effekt",
+      "from": "physik-photoeffekt-lichtquantenhypothese",
+      "to": "physik-photon-impuls-compton-effekt",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-physik-photoeffekt-lichtquantenhypothese-physik-de-broglie-wellenlaenge",
+      "from": "physik-photoeffekt-lichtquantenhypothese",
+      "to": "physik-de-broglie-wellenlaenge",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-physik-interferenz-beugung-gitter-physik-de-broglie-wellenlaenge",
+      "from": "physik-interferenz-beugung-gitter",
+      "to": "physik-de-broglie-wellenlaenge",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-physik-photon-impuls-compton-effekt-physik-welle-teilchen-dualismus-heisenberg",
+      "from": "physik-photon-impuls-compton-effekt",
+      "to": "physik-welle-teilchen-dualismus-heisenberg",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-physik-de-broglie-wellenlaenge-physik-welle-teilchen-dualismus-heisenberg",
+      "from": "physik-de-broglie-wellenlaenge",
+      "to": "physik-welle-teilchen-dualismus-heisenberg",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-physik-interferenz-beugung-gitter-physik-welle-teilchen-dualismus-heisenberg",
+      "from": "physik-interferenz-beugung-gitter",
+      "to": "physik-welle-teilchen-dualismus-heisenberg",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-physik-de-broglie-wellenlaenge-physik-schroedingergleichung-qualitativ",
+      "from": "physik-de-broglie-wellenlaenge",
+      "to": "physik-schroedingergleichung-qualitativ",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-physik-welle-teilchen-dualismus-heisenberg-physik-schroedingergleichung-qualitativ",
+      "from": "physik-welle-teilchen-dualismus-heisenberg",
+      "to": "physik-schroedingergleichung-qualitativ",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-physik-schroedingergleichung-qualitativ-physik-wellenfunktion-wahrscheinlichkeitsdichte",
+      "from": "physik-schroedingergleichung-qualitativ",
+      "to": "physik-wellenfunktion-wahrscheinlichkeitsdichte",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-physik-de-broglie-wellenlaenge-physik-wellenfunktion-wahrscheinlichkeitsdichte",
+      "from": "physik-de-broglie-wellenlaenge",
+      "to": "physik-wellenfunktion-wahrscheinlichkeitsdichte",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-physik-welle-teilchen-dualismus-heisenberg-physik-wellenfunktion-wahrscheinlichkeitsdichte",
+      "from": "physik-welle-teilchen-dualismus-heisenberg",
+      "to": "physik-wellenfunktion-wahrscheinlichkeitsdichte",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-syn-1",
+      "from": "physik-mechanische-energie-erhaltungssatz",
+      "to": "physik-impuls-grundlagen",
+      "type": "synergy",
+      "descriptionZH": "同一次碰撞必须同时从能量视角与动量视角分析，两条守恒律相互约束"
+    },
+    {
+      "id": "e-syn-2",
+      "from": "physik-induktion-lenzsche-regel",
+      "to": "physik-energieformen-energieerhaltung",
+      "type": "synergy",
+      "descriptionZH": "楞次定律的负号就是能量守恒在电磁感应中的直接体现"
+    },
+    {
+      "id": "e-syn-3",
+      "from": "physik-keplersche-gesetze",
+      "to": "physik-gravitationsfeld-feldstaerke",
+      "type": "synergy",
+      "descriptionZH": "开普勒定律与中心场描述互为几何表象与动力学表象"
+    },
+    {
+      "id": "e-syn-4",
+      "from": "physik-harmonische-schwingung-federpendel",
+      "to": "physik-selbstinduktion-schwingkreis",
+      "type": "synergy",
+      "descriptionZH": "机械振子与LC振荡电路结构同构，能量在两种储能形式之间往返"
+    },
+    {
+      "id": "e-syn-5",
+      "from": "physik-photoeffekt-lichtquantenhypothese",
+      "to": "physik-de-broglie-wellenlaenge",
+      "type": "synergy",
+      "descriptionZH": "光子图像与物质波共同支撑波粒二象性的双向论证"
+    },
+    {
+      "id": "e-syn-6",
+      "from": "physik-kinetische-gastheorie",
+      "to": "physik-spezifische-waermekapazitaet",
+      "type": "synergy",
+      "descriptionZH": "比热容的微观解释依赖分子自由度与能量均分"
+    },
+    {
+      "id": "e-syn-7",
+      "from": "physik-gravitationsgesetz-newton",
+      "to": "physik-coulombsches-gesetz",
+      "type": "synergy",
+      "descriptionZH": "两个平方反比定律共享同一数学结构，可用同一解法处理"
+    },
+    {
+      "id": "e-syn-8",
+      "from": "physik-zentripetalkraft",
+      "to": "physik-magnetfeld-lorentzkraft-quantitativ",
+      "type": "synergy",
+      "descriptionZH": "洛伦兹力与向心力在此合成同一条圆周运动条件"
+    },
+    {
+      "id": "e-syn-9",
+      "from": "physik-erster-hauptsatz-innere-energie",
+      "to": "physik-mechanische-energie-erhaltungssatz",
+      "type": "synergy",
+      "descriptionZH": "机械能守恒是热力学第一定律在无热交换情形下的特例"
+    },
+    {
+      "id": "e-cross-1",
+      "from": "physik-radioaktivitaet-zerfallsgesetze",
+      "to": "physik-messen-einheiten-groessen",
+      "type": "cross_disciplinary",
+      "descriptionZH": "衰变曲线的对数化与线性拟合：数学与实验数据处理方法的跨学科应用"
+    },
+    {
+      "id": "e-cross-2",
+      "from": "physik-hamilton-formalismus",
+      "to": "physik-statistische-mechanik-boltzmann",
+      "type": "cross_disciplinary",
+      "descriptionZH": "分析力学与统计物理共用哈密顿量语言，是理论物理的公共基础"
+    },
+    {
+      "id": "e-cross-3",
+      "from": "physik-maxwell-gleichungen-konzept",
+      "to": "physik-optik-brechung-linsen",
+      "type": "cross_disciplinary",
+      "descriptionZH": "麦克斯韦方程组为折射率与光速提供统一的电磁学解释"
+    },
+    {
+      "id": "e-cross-4",
+      "from": "physik-waermekraftmaschine-carnot",
+      "to": "physik-erster-hauptsatz-innere-energie",
+      "type": "cross_disciplinary",
+      "descriptionZH": "热机效率分析把物理原理与工程、化学的能量核算连接起来"
+    },
+    {
+      "id": "e-cross-5",
+      "from": "physik-kernspaltung-kernfusion",
+      "to": "physik-energie-im-gravitationsfeld",
+      "type": "cross_disciplinary",
+      "descriptionZH": "恒星核聚变与引力平衡：核物理与天体物理的交叉地带"
+    }
+  ]
+}
