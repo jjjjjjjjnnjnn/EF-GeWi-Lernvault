@@ -29,11 +29,12 @@ import { DesignLab } from "./modules/DesignLab";
 import { DailySprintModal } from "./components/DailySprintModal";
 import { getStudyStreak } from "./engine/dailyMix";
 import Settings from "./modules/Settings";
+import { SubjectWorkspace } from "./modules/SubjectWorkspace";
 import Onboarding, { loadOnboarding, saveOnboarding, type OnboardingResult } from "./modules/Onboarding";
 import { initTheme } from "./engine/theme";
 import { SidebarPet } from "./components/mascot/SidebarPet";
 
-type Tab = "home" | "library" | "flashcards" | "quiz" | "klausursim" | "tutor" | "planner" | "mindmap" | "lernbaum" | "reise" | "labor" | "designlab" | "werkzeuge" | "einstellungen";
+type Tab = "home" | "fach" | "library" | "flashcards" | "quiz" | "klausursim" | "tutor" | "planner" | "mindmap" | "lernbaum" | "reise" | "labor" | "designlab" | "werkzeuge" | "einstellungen";
 
 const settingsShortcut = MODULE_KEYS.find((binding) => binding.module === "einstellungen")!;
 
@@ -56,6 +57,13 @@ const icons: Record<Tab, ReactNode> = {
       <path d="M2.5 8.2L8 3l5.5 5.2" />
       <path d="M4.3 7.4V13.5h7.4V7.4" />
       <path d="M6.8 13.5v-3h2.4v3" />
+    </svg>
+  ),
+  fach: (
+    <svg {...iconProps}>
+      <rect x="2.5" y="2.5" width="11" height="11" rx="1" />
+      <path d="M2.5 6.5h11" />
+      <path d="M7 6.5v7" />
     </svg>
   ),
   library: (
@@ -170,7 +178,7 @@ const getInitialTab = (): Tab => {
     if (t === "designlab" && !isDevModeActive()) {
       return "home";
     }
-    if (["home", "library", "flashcards", "quiz", "klausursim", "tutor", "planner", "mindmap", "lernbaum", "reise", "labor", "designlab", "werkzeuge", "einstellungen"].includes(t)) {
+    if (["home", "fach", "library", "flashcards", "quiz", "klausursim", "tutor", "planner", "mindmap", "lernbaum", "reise", "labor", "designlab", "werkzeuge", "einstellungen"].includes(t)) {
       return t;
     }
   }
@@ -271,10 +279,11 @@ export default function App() {
 
   const coreTabs: NavItem[] = useMemo(() => [
     { id: "home", label: tr.home, icon: icons.home },
+    { id: "fach", label: lang === "de" ? "Fach-Bereich" : "学科专区", icon: icons.fach },
     { id: "library", label: tr.library, icon: icons.library },
     { id: "flashcards", label: tr.flashcards, icon: icons.flashcards },
     { id: "klausursim", label: tr.klausursim, icon: icons.klausursim },
-  ], [tr]);
+  ], [tr, lang]);
 
   const auxTabs: SubNavItem[] = useMemo(() => {
     const list: SubNavItem[] = [
@@ -298,6 +307,7 @@ export default function App() {
     () => {
       const list: NavItem[] = [
         { id: "home", label: tr.home, icon: icons.home },
+        { id: "fach", label: lang === "de" ? "Fach-Bereich" : "学科专区", icon: icons.fach },
         { id: "library", label: tr.library, icon: icons.library },
         { id: "lernbaum", label: tr.lernbaum, icon: icons.lernbaum },
         { id: "mindmap", label: tr.mindmap, icon: icons.mindmap },
@@ -858,6 +868,19 @@ export default function App() {
                 <Home lang={lang} cards={activeCards} onJumpToLibrary={jumpToLibrary} />
               </div>
             )
+          )}
+          {tab === "fach" && (
+            <SubjectWorkspace
+              currentFach={selectedFach === "alle" ? "SoWi" : selectedFach}
+              onSubjectChange={(fachId) => setSelectedFach(fachId)}
+              onNavigateToTab={(targetTab, opts) => {
+                if (opts?.fach) setSelectedFach(opts.fach);
+                if (opts?.query) setQuery(opts.query);
+                if (opts?.noteId) setSelectedNoteId(opts.noteId);
+                switchTab(targetTab as Tab);
+              }}
+              lang={lang}
+            />
           )}
           {tab === "library" && (
             <Library
