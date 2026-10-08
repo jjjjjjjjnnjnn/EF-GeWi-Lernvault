@@ -275,6 +275,7 @@
 - [2026-10-05-cross-subject-vernetzung-sandkasten](Journal/2026-10-05-cross-subject-vernetzung-sandkasten.md) — **方向二：跨学科联动树形图与核心考点全景沙盘**：异化劳动/马克思/康德目的公式/社科基尼系数与贫困化/米勒推销员全景沙盘研制+CrossDisciplinarySandbox+Lernbaum一键穿梭透镜集成（60套件419测试全绿+门禁PASS）
 - [2026-10-07-home-dashboard-linear-duolingo-refactoring](Journal/2026-10-07-home-dashboard-linear-duolingo-refactoring.md) — **主页仪表盘德式极简成长探索总台重构**：二分屏动线+德国会考Notenpunkte分阶刻度+失分点雷达图与诊断抽屉
 - [2026-10-07-dashboard-mascot-rollback](Journal/2026-10-07-dashboard-mascot-rollback.md) — **吉祥物嵌入与总台重构回退记录**：依据用户实测审查，移除低多边形小狐狸及伴学桌宠，完全回退恢复至经典的德国学术功能主义黑白纸墨总台
+- [2026-10-08-wissensbasis-modularitaet](Journal/2026-10-08-wissensbasis-modularitaet.md) — **知识库框架模块化与导入导出总台落地**：解耦可扩展知识库仓储单例+对标BiliNote的FachRegistry插件体系+全格式导入导出+Tufte黑白纸墨管理总台+门禁全绿（454单测/build/vault-check PASS）
 - 约定：文件名 `YYYY-MM-DD-<thema>.md`，头部frontmatter（`fach`可空，`tags: [EF, Meta]`）。
 
 
