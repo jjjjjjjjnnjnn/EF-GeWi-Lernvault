@@ -33,8 +33,8 @@ export interface SkillTreeCanvasProps {
 }
 
 // 阶梯树模式常量
-const TREE_BOX_WIDTH = 190;
-const TREE_BOX_HEIGHT = 76;
+const TREE_BOX_WIDTH = 194;
+const TREE_BOX_HEIGHT = 78;
 const TREE_LAYER_STEP_X = 250;
 const TREE_LAYER_STEP_Y = 130;
 
@@ -767,9 +767,9 @@ export function SkillTreeCanvas({
       className={`relative flex flex-col w-full h-full bg-[var(--surface)] text-[var(--ink)] overflow-hidden ${className}`}
       data-testid="skill-tree-canvas-container"
     >
-      {/* 顶部主控制栏：学科选择、翻页/总录展开、进度、模式切换与操作 */}
-      <div className="relative flex flex-wrap items-center justify-between border-b border-[var(--line)] px-4 py-2 bg-[var(--surface)] shrink-0 gap-2 z-30">
-        <div className="flex items-center gap-2 flex-wrap sm:flex-nowrap">
+      {/* 顶部主控制栏：学科选择、翻页/总录展开、进度、模式切换与操作 (强制单行不折行) */}
+      <div className="relative flex items-center justify-between border-b border-[var(--line)] px-4 py-2 bg-[var(--surface)] shrink-0 gap-3 z-30 overflow-x-auto no-scrollbar flex-nowrap">
+        <div className="flex items-center gap-2 shrink-0 flex-nowrap">
           <span className="font-mono text-xs text-[var(--gray)] font-medium shrink-0">
             {de ? "Fach:" : "学科:"}
           </span>
@@ -948,20 +948,20 @@ export function SkillTreeCanvas({
           </button>
         </div>
 
-        {/* 右侧：模式切换、进度与操作动作 */}
-        <div className="flex items-center gap-3 text-xs font-mono">
+        {/* 右侧：模式切换、进度与操作动作 (单行不折叠) */}
+        <div className="flex items-center gap-2.5 text-xs font-mono shrink-0 flex-nowrap ml-auto">
           {/* 自定义拖拽复位按钮 (当有节点被移动时高亮呈现) */}
           {customNodePositions.size > 0 && (
             <button
               type="button"
               onClick={() => setCustomNodePositions(new Map())}
-              className="flex items-center gap-1 h-7 px-2.5 rounded-[var(--radius)] bg-[var(--ink)] text-[var(--surface)] text-xs font-mono font-bold hover:opacity-90 transition-all cursor-pointer shadow-none whitespace-nowrap"
-              title={de ? "Knotenpositionen auf Standard zurücksetzen" : "复位所有已移动节点到默认引力位置"}
+              className="flex items-center gap-1 h-7 px-2 rounded-[var(--radius)] bg-[var(--ink)] text-[var(--surface)] text-xs font-mono font-bold hover:opacity-90 transition-all cursor-pointer shadow-none whitespace-nowrap shrink-0"
+              title={de ? `Positionen zurücksetzen (${customNodePositions.size})` : `复位所有已移动节点到默认引力位置 (${customNodePositions.size})`}
             >
-              <svg {...iconProps}>
+              <svg {...iconProps} className="w-3.5 h-3.5">
                 <path d="M2.5 8a5.5 5.5 0 1 0 1.6-3.9L2 6.5M2 2.5v4h4" />
               </svg>
-              <span>{de ? `Reset (${customNodePositions.size})` : `复位位置 (${customNodePositions.size})`}</span>
+              <span>{de ? `Reset (${customNodePositions.size})` : `复位 (${customNodePositions.size})`}</span>
             </button>
           )}
 
@@ -1074,7 +1074,7 @@ export function SkillTreeCanvas({
       </div>
 
       {/* 二级筛选栏：分类星区 Chips、多维标签 Filter 与全文快速检索 (整行单行对齐无折叠) */}
-      <div className="flex flex-wrap sm:flex-nowrap items-center justify-between border-b border-[var(--line)] px-4 py-1.5 bg-[var(--paper-subtle)] text-xs font-mono gap-2 z-10 shrink-0 min-h-[40px]">
+      <div className="flex items-center justify-between border-b border-[var(--line)] px-4 py-1.5 bg-[var(--paper-subtle)] text-xs font-mono gap-2 z-10 shrink-0 min-h-[40px] overflow-x-auto no-scrollbar flex-nowrap">
         {/* 分类星区筛选 Chips */}
         <div className="flex items-center gap-1.5 overflow-x-auto no-scrollbar flex-nowrap py-0.5">
           <span className="text-[var(--gray)] font-medium shrink-0">
@@ -1154,7 +1154,7 @@ export function SkillTreeCanvas({
       </div>
 
       {/* SVG 主画布 */}
-      <div className="relative flex-1 w-full h-full cursor-grab active:cursor-grabbing select-none overflow-hidden touch-none">
+      <div className="relative flex-1 w-full h-full cursor-grab active:cursor-grabbing select-none overflow-hidden touch-none bg-[var(--paper)]">
         {/* 自定义拖拽复位悬浮标牌 */}
         {customNodePositions.size > 0 && (
           <div className="absolute top-3 left-1/2 -translate-x-1/2 z-20 flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-[var(--surface)] border border-[var(--ink)] text-xs font-mono text-[var(--ink)] select-none animate-fade-in">
@@ -1576,10 +1576,14 @@ export function SkillTreeCanvas({
 
                 // 判定知识点位于星盘左侧或右侧（外向辐射排布）
                 const isLeft = cx < PLANETARY_CENTER_X - 10;
-                const cardW = 168;
-                const cardH = 50;
+                const cardW = 186;
+                const cardH = 54;
                 const cardX = isLeft ? -24 - cardW : 24;
                 const cardY = -cardH / 2;
+
+                const tierText = node.curriculumTier === "Uni_Prep" ? "Uni" : (node.curriculumTier ?? "EF");
+                const afbText = `AFB ${node.level === 1 ? "I" : node.level === 2 ? "II" : "III"}`;
+                const minutesText = `~${node.estimatedMinutes || 15}m`;
 
                 const displayTitleZH =
                   node.titleZH.length > 15 ? `${node.titleZH.slice(0, 14)}…` : node.titleZH;
@@ -1656,7 +1660,7 @@ export function SkillTreeCanvas({
                       {/* 核心球体 (Core Sphere) */}
                       <circle
                         r="15"
-                        fill={isMastered ? "var(--ink)" : "var(--surface)"}
+                        fill={isMastered ? "var(--ink)" : isAvailable ? "var(--surface)" : "var(--paper-subtle)"}
                         stroke={
                           isSelected
                             ? "var(--ink)"
@@ -1719,13 +1723,13 @@ export function SkillTreeCanvas({
 
                     {/* C. 学术名牌标牌 (Academic Data Cartouche) */}
                     <g className="planetary-cartouche">
-                      {/* 标牌底板 */}
+                      {/* 标牌底板：纯白卡片，脱颖于背景纸面 */}
                       <rect
                         x={cardX}
                         y={cardY}
                         width={cardW}
                         height={cardH}
-                        rx="5"
+                        rx="4"
                         fill="var(--surface)"
                         stroke={
                           isSelected
@@ -1736,9 +1740,41 @@ export function SkillTreeCanvas({
                             ? "var(--ink)"
                             : "var(--line)"
                         }
-                        strokeWidth={isSelected ? 2.0 : isAvailable ? 1.4 : 1.0}
+                        strokeWidth={isSelected ? 2.0 : isAvailable ? 1.3 : isMastered ? 1.2 : 0.9}
                         strokeDasharray={isLocked ? "3 2" : "none"}
                         className="transition-all duration-150 group-hover:stroke-[var(--ink)]"
+                      />
+
+                      {/* 标牌内缘细微蚀刻线 (Tufte 学术双发丝内框，增强纸张层次感) */}
+                      <rect
+                        x={cardX + 1.5}
+                        y={cardY + 1.5}
+                        width={cardW - 3}
+                        height={cardH - 3}
+                        rx="3"
+                        fill="none"
+                        stroke="var(--paper-subtle)"
+                        strokeWidth="0.8"
+                        pointerEvents="none"
+                      />
+
+                      {/* 顶部学术状态标饰线 (Top Ink Status Header Bar) */}
+                      <rect
+                        x={cardX}
+                        y={cardY}
+                        width={cardW}
+                        height={2.5}
+                        rx="1.2"
+                        fill={
+                          isSelected
+                            ? "var(--ink)"
+                            : isMastered
+                            ? "var(--ink)"
+                            : isAvailable
+                            ? "var(--ink)"
+                            : "var(--line)"
+                        }
+                        opacity={isSelected ? 1.0 : isMastered ? 0.85 : isAvailable ? 0.5 : 0.3}
                       />
 
                       {/* 选中态星盘十字准星定位线 (Reticle Corner Brackets) */}
@@ -1751,43 +1787,54 @@ export function SkillTreeCanvas({
                         </g>
                       )}
 
-                      {/* 第一行：学段难度 Pill 标牌与预计耗时 */}
+                      {/* 第一行：学段难度 Pill 标牌与预计耗时 (空间充裕，绝不溢出) */}
                       <rect
                         x={cardX + 8}
-                        y={cardY + 6}
-                        width={60}
-                        height={13}
+                        y={cardY + 6.5}
+                        width={28}
+                        height={12.5}
                         rx="2"
                         fill="var(--paper-subtle)"
                         stroke="var(--line)"
                         strokeWidth="0.6"
                       />
                       <text
-                        x={cardX + 38}
-                        y={cardY + 15}
+                        x={cardX + 22}
+                        y={cardY + 15.5}
                         textAnchor="middle"
                         fontFamily="monospace"
-                        fontSize="8"
+                        fontSize="7.5"
                         fontWeight="bold"
                         fill="var(--ink)"
                       >
-                        {`${node.curriculumTier ?? "EF"} · AFB ${node.level === 1 ? "I" : node.level === 2 ? "II" : "III"}`}
+                        {tierText}
+                      </text>
+                      <text
+                        x={cardX + 41}
+                        y={cardY + 15.5}
+                        fontFamily="monospace"
+                        fontSize="8"
+                        fill="var(--gray)"
+                        className="select-none"
+                      >
+                        {afbText}
                       </text>
                       <text
                         x={cardX + cardW - 8}
-                        y={cardY + 15}
+                        y={cardY + 15.5}
                         textAnchor="end"
                         fontFamily="monospace"
                         fontSize="8"
                         fill="var(--gray)"
+                        className="select-none"
                       >
-                        {`~${node.estimatedMinutes}m`}
+                        {minutesText}
                       </text>
 
                       {/* 第二行：中文典范知识点名称 */}
                       <text
                         x={cardX + 8}
-                        y={cardY + 30.5}
+                        y={cardY + 31.5}
                         fontFamily="serif"
                         fontSize="11"
                         fontWeight="bold"
@@ -1800,7 +1847,7 @@ export function SkillTreeCanvas({
                       {/* 第三行：德语学术微缩术语 */}
                       <text
                         x={cardX + 8}
-                        y={cardY + 43}
+                        y={cardY + 45}
                         fontFamily="monospace"
                         fontSize="8.5"
                         fill="var(--gray)"
@@ -1855,9 +1902,19 @@ export function SkillTreeCanvas({
                         ? "var(--ink)"
                         : "var(--line)"
                     }
-                    strokeWidth={isSelected ? 2.2 : isAvailable ? 1.6 : 1.0}
+                    strokeWidth={isSelected ? 2.0 : isAvailable ? 1.4 : isMastered ? 1.2 : 0.9}
                     strokeDasharray={isLocked ? "3,3" : "none"}
                     className="transition-all duration-150 group-hover:stroke-[var(--ink)]"
+                  />
+                  {/* 顶部学术状态标饰条 */}
+                  <rect
+                    x="0"
+                    y="0"
+                    width={TREE_BOX_WIDTH}
+                    height="3"
+                    rx="1.5"
+                    fill={isSelected ? "var(--ink)" : isMastered ? "var(--ink)" : isAvailable ? "var(--ink)" : "var(--line)"}
+                    opacity={isSelected ? 1.0 : isMastered ? 0.85 : isAvailable ? 0.5 : 0.25}
                   />
 
                   <g transform="translate(10, 16)">
@@ -1883,11 +1940,11 @@ export function SkillTreeCanvas({
                       x="18"
                       y="7"
                       fontFamily="monospace"
-                      fontSize="9"
+                      fontSize="8.5"
                       fill="var(--gray)"
                       fontWeight="bold"
                     >
-                      {`${node.curriculumTier ?? "EF"} · AFB ${node.level === 1 ? "I" : node.level === 2 ? "II" : "III"}`}
+                      {`${node.curriculumTier === "Uni_Prep" ? "Uni" : (node.curriculumTier ?? "EF")} · AFB ${node.level === 1 ? "I" : node.level === 2 ? "II" : "III"}`}
                     </text>
 
                     <text
@@ -1895,7 +1952,7 @@ export function SkillTreeCanvas({
                       y="7"
                       textAnchor="end"
                       fontFamily="monospace"
-                      fontSize="9"
+                      fontSize="8.5"
                       fill="var(--gray)"
                     >
                       {`~${node.estimatedMinutes}m`}
@@ -1906,23 +1963,23 @@ export function SkillTreeCanvas({
                     x="10"
                     y="42"
                     fontFamily="serif"
-                    fontSize="13"
+                    fontSize="12.5"
                     fontWeight="bold"
                     fill="var(--ink)"
                     className="select-none"
                   >
-                    {node.titleZH.length > 13 ? `${node.titleZH.slice(0, 12)}…` : node.titleZH}
+                    {node.titleZH.length > 14 ? `${node.titleZH.slice(0, 13)}…` : node.titleZH}
                   </text>
 
                   <text
                     x="10"
                     y="60"
                     fontFamily="monospace"
-                    fontSize="9.5"
+                    fontSize="9"
                     fill="var(--gray)"
                     className="select-none"
                   >
-                    {node.titleDE.length > 22 ? `${node.titleDE.slice(0, 21)}…` : node.titleDE}
+                    {node.titleDE.length > 21 ? `${node.titleDE.slice(0, 20)}…` : node.titleDE}
                   </text>
                 </g>
               );
