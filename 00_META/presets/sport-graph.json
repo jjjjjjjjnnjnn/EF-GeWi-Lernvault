@@ -1,0 +1,2682 @@
+{
+  "schemaVersion": 1,
+  "fach": "Sport",
+  "nameDE": "Sport",
+  "nameZH": "体育 (Sport)",
+  "descriptionDE": "Trainingslehre, Sportphysiologie, Bewegungslehre und Biomechanik, Sportpsychologie, Sportsoziologie sowie Sportmedizin und Praevention (NRW Oberstufe & Uni-Prep)",
+  "descriptionZH": "训练学、运动生理、运动结构与生物力学、运动心理、体育社会学、运动医学与预防——NRW 高中体育口试全领域知识星系",
+  "isCustomSubject": false,
+  "categories": [
+    "Trainingslehre",
+    "Sportphysiologie",
+    "Bewegungslehre-und-Biomechanik",
+    "Sportpsychologie",
+    "Sportsoziologie",
+    "Sportmedizin-Praevention"
+  ],
+  "availableTags": [
+    "AFB-III",
+    "Alltag",
+    "Ausdauer",
+    "Basiswissen",
+    "Biomechanik",
+    "Definition",
+    "Doping",
+    "Energiebereitstellung",
+    "Ernaehrung",
+    "Fairness",
+    "Formel",
+    "Gesundheit",
+    "Grafik",
+    "Inklusion",
+    "Klausur-Dauerbrenner",
+    "Kommerzialisierung",
+    "Koordination",
+    "Kraft",
+    "Laktat",
+    "Leistungsdiagnostik",
+    "Methodik",
+    "Modell",
+    "Motorisches-Lernen",
+    "Praevention",
+    "Schwerpunkt-2026",
+    "Sportmedizin",
+    "Sportphysiologie",
+    "Sportpsychologie",
+    "Sportsoziologie",
+    "Trainingslehre",
+    "Uni-Prep",
+    "Verfahren"
+  ],
+  "nodes": [
+    {
+      "id": "sport-aufwaermen-vorbereitung",
+      "fach": "Sport",
+      "titleDE": "Aufwärmen und Vorbereitung auf Belastung",
+      "titleZH": "热身与赛前准备：体温、激活与心理就绪",
+      "summaryDE": "Allgemeines und spezifisches Aufwärmen erhöhen Muskel- und Kerntemperatur, senken die Verletzungsgefahr und bereiten Nervensystem und Psyche auf die Hauptbelastung vor.",
+      "summaryZH": "一般性与专项性热身升高肌肉与核心温度、降低受伤风险，并让神经系统与心理进入负荷就绪状态。",
+      "category": "Trainingslehre",
+      "curriculumTier": "Sek_I",
+      "stage": "einfuehrung",
+      "level": 1,
+      "xpReward": 60,
+      "estimatedMinutes": 8,
+      "prerequisites": [],
+      "keyFormulaOrSentence": "Aufwaermschema: 10-15 min allgemeines Aufwaermen (Puls ca. 130-150/min) -> Mobilisation der Gelenke -> sportartspezifische Steigerungslaeufe -> Hauptbelastung.",
+      "commonFallacy": "Aufwärmen für überflüssig halten, weil man sich 'auch so warm fühlt' - ohne Temperatur- und Aktivierungsanstieg bleibt die neuromuskuläre Ansteuerung unterschwellig.",
+      "layerIndex": 0,
+      "tags": ["Definition", "Basiswissen", "Alltag"]
+    },
+    {
+      "id": "sport-ausdauer-grundlagen-alltag",
+      "fach": "Sport",
+      "titleDE": "Grundlagen der Ausdauerfähigkeit",
+      "titleZH": "耐力素质基础：从日常步行到持续奔跑",
+      "summaryDE": "Ausdauer ist die Fähigkeit, eine Belastung möglichst lange ohne Leistungsabfall durchzuhalten; sie stützt Gesundheit, Regeneration und alle anderen motorischen Fähigkeiten.",
+      "summaryZH": "耐力是尽可能长时间维持负荷而不掉速的能力，它既支撑健康与恢复，也是其他一切运动能力的地基。",
+      "category": "Trainingslehre",
+      "curriculumTier": "Sek_I",
+      "stage": "einfuehrung",
+      "level": 1,
+      "xpReward": 60,
+      "estimatedMinutes": 8,
+      "prerequisites": [],
+      "keyFormulaOrSentence": "Ausdauer ist die Fähigkeit, eine Belastung über einen möglichst langen Zeitraum ohne Ermüdungsabbruch aufrechtzuerhalten.",
+      "commonFallacy": "Ausdauer mit 'langsam laufen' gleichsetzen - auch kurze hochintensive Belastungen sind Ausdauerleistungen, nur mit anderer Energiebereitstellung.",
+      "layerIndex": 0,
+      "tags": ["Definition", "Basiswissen", "Ausdauer"]
+    },
+    {
+      "id": "sport-kraft-grundlagen-koerpergewicht",
+      "fach": "Sport",
+      "titleDE": "Grundlagen der Kraftfähigkeit",
+      "titleZH": "力量素质基础：以自身体重为负荷",
+      "summaryDE": "Kraft ist die Fähigkeit, durch Muskelkontraktion Widerstände zu überwinden oder ihnen entgegenzuwirken; sie wird in Maximalkraft, Schnellkraft und Kraftausdauer gegliedert.",
+      "summaryZH": "力量是肌肉收缩克服或对抗阻力的能力，分为最大力量、快速力量与力量耐力三种表现形态。",
+      "category": "Trainingslehre",
+      "curriculumTier": "Sek_I",
+      "stage": "einfuehrung",
+      "level": 1,
+      "xpReward": 65,
+      "estimatedMinutes": 10,
+      "prerequisites": [],
+      "keyFormulaOrSentence": "Kraft = Masse * Beschleunigung (F = m * a); Erscheinungsformen: Maximalkraft, Schnellkraft, Kraftausdauer.",
+      "commonFallacy": "Kraft allein über den Muskelquerschnitt definieren - Kraft ist immer auch eine Frage der neuronalen Ansteuerung und der Hebelverhältnisse.",
+      "layerIndex": 1,
+      "tags": ["Formel", "Basiswissen", "Kraft"]
+    },
+    {
+      "id": "sport-trainingsprinzipien-belastungsnormative",
+      "fach": "Sport",
+      "titleDE": "Trainingsprinzipien & Belastungsnormative",
+      "titleZH": "训练原则与负荷规范：把旋钮拧对的说明书",
+      "summaryDE": "Trainingsprinzipien sind übergeordnete Regeln der Trainingsgestaltung; die Belastungsnormative Intensität, Umfang, Dauer, Dichte und Frequenz sind die Stellgrößen, mit denen sie umgesetzt werden.",
+      "summaryZH": "训练原则是训练设计的上位规则，强度、量、持续时间、密度与频率这五个负荷规范则是把原则落到实处的调节旋钮。",
+      "category": "Trainingslehre",
+      "curriculumTier": "EF",
+      "stage": "grundlagen",
+      "level": 2,
+      "xpReward": 100,
+      "estimatedMinutes": 18,
+      "prerequisites": [
+        "sport-aufwaermen-vorbereitung",
+        "sport-ausdauer-grundlagen-alltag",
+        "sport-kraft-grundlagen-koerpergewicht"
+      ],
+      "keyFormulaOrSentence": "Prinzip des wirksamen Belastungsreizes: Der Reiz muss die Reizschwelle überschreiten und über progressive Belastungssteigerung an das gestiegene Anpassungsniveau angepasst werden.",
+      "commonFallacy": "Trainingsprinzipien als beliebige Liste auswendig lernen, statt sie als Kriterienkatalog für die Beurteilung eines vorgelegten Trainingsplans zu nutzen.",
+      "layerIndex": 3,
+      "tags": ["Definition", "Klausur-Dauerbrenner", "Trainingslehre", "AFB-III"]
+    },
+    {
+      "id": "sport-superkompensation-anpassungsphasen",
+      "fach": "Sport",
+      "titleDE": "Superkompensation & Anpassungsphasen",
+      "titleZH": "超量恢复四阶段曲线：下一次刺激必须落在波峰窗口",
+      "summaryDE": "Nach einer Belastung sinkt die Leistungsfähigkeit zunächst, steigt in der Erholung über das Ausgangsniveau und fällt danach wieder darauf zurück; der nächste Reiz muss in der Superkompensationsphase liegen.",
+      "summaryZH": "负荷后能力先下降、恢复中越过原有水平、随后又回落；下一次刺激必须精准落在超量恢复窗口内才能累积成绩。",
+      "category": "Trainingslehre",
+      "curriculumTier": "EF",
+      "stage": "grundlagen",
+      "level": 2,
+      "xpReward": 110,
+      "estimatedMinutes": 20,
+      "prerequisites": [
+        "sport-trainingsprinzipien-belastungsnormative"
+      ],
+      "keyFormulaOrSentence": "Phasenmodell: Belastung -> Ermüdung (Leistungsabfall) -> Wiederherstellung bis zum Ausgangsniveau -> Superkompensation (Überschreiten) -> Rückkehr zum Ausgangsniveau.",
+      "commonFallacy": "Superkompensation als automatische Folge jeder Belastung annehmen - sie tritt nur bei korrekt dosiertem Reiz und ausreichend langer, aber nicht zu langer Erholung ein.",
+      "layerIndex": 4,
+      "tags": ["Modell", "Grafik", "Klausur-Dauerbrenner", "Trainingslehre"]
+    },
+    {
+      "id": "sport-trainingsmethoden-ausdauer",
+      "fach": "Sport",
+      "titleDE": "Trainingsmethoden der Ausdauer",
+      "titleZH": "耐力训练方法谱系：从持续法到高强度间歇",
+      "summaryDE": "Ausdauermethoden unterscheiden sich vor allem in Intensität und Belastungs-Pausen-Verhältnis: Dauermethode, extensive und intensive Intervallmethode sowie Wiederholungsmethode.",
+      "summaryZH": "耐力方法的核心差异在强度与负荷—间歇比：持续法、广泛与强化间歇法、重复法各自指向不同的供能系统与适应目标。",
+      "category": "Trainingslehre",
+      "curriculumTier": "EF",
+      "stage": "grundlagen",
+      "level": 2,
+      "xpReward": 110,
+      "estimatedMinutes": 20,
+      "prerequisites": [
+        "sport-trainingsprinzipien-belastungsnormative",
+        "sport-ausdauer-grundlagen-alltag"
+      ],
+      "keyFormulaOrSentence": "Extensive Intervallmethode: Intensität ca. 60-75 % der maximalen Herzfrequenz, Belastung 2-5 min, Pause 1-3 min (lohnende Pause); intensive Intervallmethode: 80-90 %, die lohnende Pause wird nicht abgewartet.",
+      "commonFallacy": "Methoden nur über die Laufstrecke unterscheiden - entscheidend sind Intensität und das Verhältnis von Belastung zu Pause, nicht die Distanz.",
+      "layerIndex": 5,
+      "tags": ["Verfahren", "Trainingslehre", "Ausdauer", "Basiswissen"]
+    },
+    {
+      "id": "sport-trainingsmethoden-kraft",
+      "fach": "Sport",
+      "titleDE": "Trainingsmethoden der Kraft",
+      "titleZH": "力量训练方法：最大力量、快速力量与力量耐力的分野",
+      "summaryDE": "Krafttrainingsmethoden werden über die Höhe des Lastwiderstands, die Wiederholungszahl und die Bewegungsgeschwindigkeit gesteuert und zielen je auf Maximalkraft, Schnellkraft oder Kraftausdauer.",
+      "summaryZH": "力量方法由负荷重量、重复次数与动作速度三者共同定义，分别指向最大力量、快速力量或力量耐力目标。",
+      "category": "Trainingslehre",
+      "curriculumTier": "EF",
+      "stage": "grundlagen",
+      "level": 2,
+      "xpReward": 110,
+      "estimatedMinutes": 18,
+      "prerequisites": [
+        "sport-trainingsprinzipien-belastungsnormative",
+        "sport-kraft-grundlagen-koerpergewicht"
+      ],
+      "keyFormulaOrSentence": "Maximalkraft: 1-5 Wiederholungen bei 85-100 % des 1-RM; Kraftausdauer: 15-30 Wiederholungen bei 30-50 % des 1-RM; Schnellkraft: Lasten um 30-60 % bei maximaler Kontraktionsgeschwindigkeit.",
+      "commonFallacy": "Viele Wiederholungen mit kleinem Gewicht für gleichwertig mit Maximalkrafttraining halten - der Trainingsreiz ist qualitativ ein anderer.",
+      "layerIndex": 5,
+      "tags": ["Verfahren", "Trainingslehre", "Kraft", "Basiswissen"]
+    },
+    {
+      "id": "sport-trainingsplanung-periodisierung",
+      "fach": "Sport",
+      "titleDE": "Trainingsplanung und Periodisierung",
+      "titleZH": "训练计划与周期化：把大中小周期编成一条起伏曲线",
+      "summaryDE": "Trainingsplanung ordnet Belastung und Erholung in Makro-, Meso- und Mikrozyklen und richtet die Belastungsverteilung an Wettkampfhöhepunkten aus.",
+      "summaryZH": "训练计划把负荷与恢复编排进大周期、中周期与小周期，并使负荷曲线对准赛季重点比赛。",
+      "category": "Trainingslehre",
+      "curriculumTier": "Q1",
+      "stage": "vertiefung",
+      "level": 2,
+      "xpReward": 135,
+      "estimatedMinutes": 24,
+      "prerequisites": [
+        "sport-superkompensation-anpassungsphasen",
+        "sport-trainingsmethoden-ausdauer",
+        "sport-trainingsmethoden-kraft"
+      ],
+      "keyFormulaOrSentence": "Periodisierung: Makrozyklus (Saison) -> Mesozyklus (mehrere Wochen) -> Mikrozyklus (Trainingswoche); die Belastung wird wellenfoermig gesteigert und vor dem Wettkampf reduziert (Tapering).",
+      "commonFallacy": "Periodisierung als bloßes Kalendergerüst verstehen - ohne wellenfoermige Belastungssteuerung entsteht keine gezielte Formausprägung.",
+      "layerIndex": 7,
+      "tags": ["Verfahren", "Trainingslehre", "Klausur-Dauerbrenner", "AFB-III"]
+    },
+    {
+      "id": "sport-belastungssteuerung-intensitaet",
+      "fach": "Sport",
+      "titleDE": "Belastungssteuerung und Intensitätszonen",
+      "titleZH": "负荷调控与强度区间：用心率把训练精确刻度化",
+      "summaryDE": "Die Trainingsintensität wird über Herzfrequenz, Laktat oder Belastungsempfinden gesteuert; die Karvonen-Formel leitet aus Ruhe- und Maximalpuls den individuellen Trainingspuls ab.",
+      "summaryZH": "训练强度可用心率、血乳酸或主观用力感来标定，Karvonen 公式由静息心率与最大心率推出个体化训练心率。",
+      "category": "Trainingslehre",
+      "curriculumTier": "Q1",
+      "stage": "vertiefung",
+      "level": 2,
+      "xpReward": 135,
+      "estimatedMinutes": 22,
+      "prerequisites": [
+        "sport-superkompensation-anpassungsphasen",
+        "sport-trainingsmethoden-ausdauer"
+      ],
+      "keyFormulaOrSentence": "HF_train = HF_ruhe + (HF_max - HF_ruhe) * Intensitaet, mit HF_max = 220 - Lebensalter.",
+      "commonFallacy": "220 minus Lebensalter als exakten Maximalpuls behandeln - die Formel ist nur eine Populationsschätzung mit erheblicher individueller Streuung.",
+      "layerIndex": 8,
+      "tags": ["Formel", "Verfahren", "Trainingslehre", "Klausur-Dauerbrenner"]
+    },
+    {
+      "id": "sport-uebertraining-regeneration-monitoring",
+      "fach": "Sport",
+      "titleDE": "Übertraining, Regeneration und Belastungsmonitoring",
+      "titleZH": "过度训练与再生：练太密的代价与监控指标",
+      "summaryDE": "Wiederholte Belastungen ohne ausreichende Erholung führen vom Übertraining ins Burnout; Monitoring von Ruhepuls, Herzfrequenzvariabilität und subjektivem Befinden erkennt die Überlastung frühzeitig.",
+      "summaryZH": "恢复不足的反复负荷会从过度训练滑向耗竭，静息心率、心率变异性与主观状态监控能提前识别过载。",
+      "category": "Trainingslehre",
+      "curriculumTier": "Q2",
+      "stage": "synthese",
+      "level": 3,
+      "xpReward": 175,
+      "estimatedMinutes": 26,
+      "prerequisites": [
+        "sport-trainingsplanung-periodisierung",
+        "sport-belastungssteuerung-intensitaet",
+        "sport-superkompensation-anpassungsphasen"
+      ],
+      "keyFormulaOrSentence": "Übertraining liegt vor, wenn trotz fortgesetzter Belastung die Leistungsfähigkeit über mehrere Wochen sinkt und sich auch nach Erholung nicht kurzfristig normalisiert.",
+      "commonFallacy": "Übertraining mit normaler Müdigkeit verwechseln - entscheidend ist der ausbleibende Leistungsanstieg trotz weiterer Belastung und die verlängerte Erholungsdauer.",
+      "layerIndex": 12,
+      "tags": ["Definition", "Klausur-Dauerbrenner", "Trainingslehre", "AFB-III"]
+    },
+    {
+      "id": "sport-klausur-synthese-abitur",
+      "fach": "Sport",
+      "titleDE": "Klausur-Synthese: Trainingsplanung über alle Inhaltsfelder",
+      "titleZH": "口试综合大题：跨内容领域的十五点满分范式",
+      "summaryDE": "Eine Prüfungsaufgabe verbindet Belastungsnormative, Superkompensation, Energiebereitstellung, Bewegungsanalyse und gesellschaftliche Rahmung zu einer durchgehenden Argumentationskette.",
+      "summaryZH": "口试综合题把负荷规范、超量恢复、供能代谢、动作分析与体育社会框架串成一条完整的论证链。",
+      "category": "Trainingslehre",
+      "curriculumTier": "Q2",
+      "stage": "klausur_praxis",
+      "level": 3,
+      "xpReward": 200,
+      "estimatedMinutes": 30,
+      "prerequisites": [
+        "sport-trainingsplanung-periodisierung",
+        "sport-belastungssteuerung-intensitaet",
+        "sport-uebertraining-regeneration-monitoring",
+        "sport-laktatschwelle-anaerobe-schwelle",
+        "sport-bewegungsstruktur-funktionsanalyse",
+        "sport-doping-steuerung-manipulation",
+        "sport-gesundheitskonzepte-sportlichen-handelns"
+      ],
+      "keyFormulaOrSentence": "Argumentationsschema: Ist-Zustand und Ziel beschreiben -> Belastungsnormative begruenden -> physiologische Wirkung (Energiebereitstellung, Superkompensation) ableiten -> Risiken und gesellschaftliche Bedingungen abwaegen -> begruendetes Urteil formulieren.",
+      "commonFallacy": "Einzelwissen unverbunden nacheinander aufsagen - die 15 Notenpunkte entstehen erst durch die begruendete Verknuepfung von Belastungsnormativen, Physiologie und Urteil.",
+      "layerIndex": 15,
+      "tags": ["Klausur-Dauerbrenner", "AFB-III", "Trainingslehre", "Schwerpunkt-2026"]
+    },
+    {
+      "id": "sport-trainingswissenschaft-leistungsstruktur",
+      "fach": "Sport",
+      "titleDE": "Trainingswissenschaftliche Modelle der Leistungsstruktur",
+      "titleZH": "训练学的成绩结构模型：把成绩拆成可训练的因子",
+      "summaryDE": "Trainingswissenschaftliche Modelle zerlegen sportliche Leistung in konditionelle, technische, taktische und psychische Leistungsfaktoren und beschreiben deren Wechselwirkung im Anforderungsprofil.",
+      "summaryZH": "训练学模型把运动成绩拆解为体能、技术、战术与心理等成绩因子，并在项目要求剖面中描述它们的相互作用。",
+      "category": "Trainingslehre",
+      "curriculumTier": "Uni_Prep",
+      "stage": "synthese",
+      "level": 3,
+      "xpReward": 195,
+      "estimatedMinutes": 28,
+      "prerequisites": [
+        "sport-trainingsplanung-periodisierung",
+        "sport-klausur-synthese-abitur",
+        "sport-laktatschwelle-anaerobe-schwelle"
+      ],
+      "keyFormulaOrSentence": "Anforderungsprofil: Leistung = f(konditionelle, technisch-koordinative, taktisch-kognitive und psychische Faktoren), gewichtet nach sportartspezifischer Relevanz.",
+      "commonFallacy": "Trainingswissenschaft auf Rechenmodelle reduzieren - Modelle sind Hypothesen über Wirkzusammenhänge und müssen am Einzelfall überprüft werden.",
+      "layerIndex": 16,
+      "tags": ["Modell", "Uni-Prep", "Trainingslehre", "AFB-III"]
+    },
+    {
+      "id": "sport-herz-kreislauf-grundlagen",
+      "fach": "Sport",
+      "titleDE": "Herz-Kreislauf-System unter Belastung",
+      "titleZH": "负荷下的心血管系统：把氧气送到肌肉的泵",
+      "summaryDE": "Das Herz-Kreislauf-System transportiert Sauerstoff und Nährstoffe zu den arbeitenden Muskeln; bei Belastung steigen Herzfrequenz, Schlagvolumen und damit das Herzzeitvolumen.",
+      "summaryZH": "心血管系统把氧气与营养送往工作肌群，负荷时心率与每搏输出量上升，从而提升心输出量。",
+      "category": "Sportphysiologie",
+      "curriculumTier": "Sek_I",
+      "stage": "einfuehrung",
+      "level": 1,
+      "xpReward": 60,
+      "estimatedMinutes": 8,
+      "prerequisites": [],
+      "keyFormulaOrSentence": "Herzzeitvolumen = Herzfrequenz * Schlagvolumen (HZV = HF * SV); in Ruhe ca. 5 l/min, unter maximaler Belastung bis über 20 l/min.",
+      "commonFallacy": "Den Pulsanstieg unter Belastung als Zeichen von Untrainiertheit deuten - er ist die notwendige Anpassung an den gestiegenen Sauerstoffbedarf.",
+      "layerIndex": 0,
+      "tags": ["Formel", "Basiswissen", "Sportphysiologie"]
+    },
+    {
+      "id": "sport-atmung-sauerstoffaufnahme-grundlagen",
+      "fach": "Sport",
+      "titleDE": "Atmung und Sauerstoffaufnahme",
+      "titleZH": "呼吸与摄氧：从肺泡到线粒体的通路",
+      "summaryDE": "Die Atmung sorgt für den Gasaustausch in der Lunge; die Sauerstoffaufnahme hängt von Ventilation, Diffusionskapazität und der Transportkapazität des Blutes ab.",
+      "summaryZH": "呼吸在肺内完成气体交换，摄氧能力取决于通气、弥散能力与血液运输能力三者的共同限制。",
+      "category": "Sportphysiologie",
+      "curriculumTier": "Sek_I",
+      "stage": "einfuehrung",
+      "level": 1,
+      "xpReward": 65,
+      "estimatedMinutes": 10,
+      "prerequisites": [],
+      "keyFormulaOrSentence": "Sauerstoffaufnahme = Herzzeitvolumen * arteriovenöse Sauerstoffdifferenz (VO2 = HZV * (CaO2 - CvO2)).",
+      "commonFallacy": "Schnelles Atmen mit guter Sauerstoffversorgung gleichsetzen - entscheidend ist die arteriovenöse Differenz, nicht das bloße Ventilationsvolumen.",
+      "layerIndex": 1,
+      "tags": ["Formel", "Basiswissen", "Sportphysiologie"]
+    },
+    {
+      "id": "sport-energiebereitstellung-atp",
+      "fach": "Sport",
+      "titleDE": "Energiebereitstellung und ATP-Resynthese",
+      "titleZH": "能量供应与ATP再合成：三条供能通路的接力",
+      "summaryDE": "Muskelarbeit läuft ausschließlich über ATP; die Zelle resynthetisiert ATP über Kreatinphosphat, anaerobe Glykolyse und aerobe Oxidation in unterschiedlicher zeitlicher Abfolge.",
+      "summaryZH": "肌肉做功只直接消耗ATP，细胞通过磷酸肌酸、无氧糖酵解与有氧氧化三条通路以不同时间序列再合成ATP。",
+      "category": "Sportphysiologie",
+      "curriculumTier": "EF",
+      "stage": "grundlagen",
+      "level": 2,
+      "xpReward": 100,
+      "estimatedMinutes": 18,
+      "prerequisites": [
+        "sport-herz-kreislauf-grundlagen",
+        "sport-atmung-sauerstoffaufnahme-grundlagen"
+      ],
+      "keyFormulaOrSentence": "Energiebereitstellung: ATP und Kreatinphosphat (0-10 s) -> anaerobe Glykolyse mit Laktatbildung (10 s bis 2 min) -> aerobe Oxidation von Kohlenhydraten und Fetten (ab etwa 2 min dominant).",
+      "commonFallacy": "Die drei Energiesysteme als strikt nacheinander geschaltete Stufen auffassen - sie laufen zeitlich überlappend, nur mit wechselndem Anteil an der Gesamtenergiebereitstellung.",
+      "layerIndex": 3,
+      "tags": ["Modell", "Energiebereitstellung", "Klausur-Dauerbrenner", "Sportphysiologie"]
+    },
+    {
+      "id": "sport-anaerob-laktazid-glykolyse",
+      "fach": "Sport",
+      "titleDE": "Anaerob-laktazide Glykolyse",
+      "titleZH": "无氧糖酵解：三十秒爆发背后的乳酸代价",
+      "summaryDE": "Bei hoher Intensität zerlegt die Zelle Glukose ohne Sauerstoff zu Laktat; die dabei freigesetzte Energie deckt kurze, maximale Belastungen, führt aber rasch zur Azidose.",
+      "summaryZH": "高强度下细胞无氧分解葡萄糖生成乳酸，释放的能量覆盖短时极限负荷，但会迅速导致酸中毒。",
+      "category": "Sportphysiologie",
+      "curriculumTier": "EF",
+      "stage": "grundlagen",
+      "level": 2,
+      "xpReward": 105,
+      "estimatedMinutes": 18,
+      "prerequisites": [
+        "sport-energiebereitstellung-atp"
+      ],
+      "keyFormulaOrSentence": "Glykolyse: Glukose -> 2 Pyruvat + 2 ATP; bei Sauerstoffmangel wird Pyruvat zu Laktat reduziert, damit NAD+ für die weitere Glykolyse regeneriert wird.",
+      "commonFallacy": "Laktat als Ursache des Muskelkaters ansehen - der Muskelkater entsteht durch Mikrotraumen, Laktat wird innerhalb von Stunden abgebaut.",
+      "layerIndex": 4,
+      "tags": ["Formel", "Laktat", "Energiebereitstellung", "Klausur-Dauerbrenner"]
+    },
+    {
+      "id": "sport-aerobe-energiebereitstellung-fettoxidation",
+      "fach": "Sport",
+      "titleDE": "Aerobe Energiebereitstellung und Fettoxidation",
+      "titleZH": "有氧供能与脂肪氧化：慢但取之不尽的能量库",
+      "summaryDE": "Mit Sauerstoff gewinnt die Zelle aus Kohlenhydraten und Fettsäuren sehr viel ATP; der Anteil der Fettoxidation steigt mit sinkender Intensität und längerer Belastungsdauer.",
+      "summaryZH": "在有氧条件下细胞从糖与脂肪酸中获得大量ATP，强度越低、时间越长，脂肪氧化的比例越高。",
+      "category": "Sportphysiologie",
+      "curriculumTier": "EF",
+      "stage": "grundlagen",
+      "level": 2,
+      "xpReward": 105,
+      "estimatedMinutes": 18,
+      "prerequisites": [
+        "sport-energiebereitstellung-atp",
+        "sport-atmung-sauerstoffaufnahme-grundlagen"
+      ],
+      "keyFormulaOrSentence": "Aerobe Oxidation: Glukose + 6 O2 -> 6 CO2 + 6 H2O + ca. 32 ATP; die vollständige Fettoxidation liefert pro Gramm mehr als doppelt so viel Energie wie Kohlenhydrate.",
+      "commonFallacy": "Fettverbrennung durch möglichst hohe Intensität maximieren zu wollen - mit steigender Intensität verschiebt sich die Energiebereitstellung hin zu Kohlenhydraten.",
+      "layerIndex": 4,
+      "tags": ["Formel", "Energiebereitstellung", "Sportphysiologie", "Basiswissen"]
+    },
+    {
+      "id": "sport-muskelkontraktion-fasertypen",
+      "fach": "Sport",
+      "titleDE": "Muskelkontraktion und Fasertypen",
+      "titleZH": "肌肉收缩与肌纤维类型：慢肌与快肌的分工",
+      "summaryDE": "Die Gleitfilamenttheorie erklärt die Kontraktion über das Ineinandergleiten von Aktin und Myosin; Typ-I-Fasern arbeiten ausdauernd, Typ-II-Fasern schnell und kräftig.",
+      "summaryZH": "滑行丝理论用肌动蛋白与肌球蛋白相互滑入解释收缩，I型纤维耐疲劳、II型纤维快而有力。",
+      "category": "Sportphysiologie",
+      "curriculumTier": "EF",
+      "stage": "grundlagen",
+      "level": 2,
+      "xpReward": 110,
+      "estimatedMinutes": 18,
+      "prerequisites": [
+        "sport-herz-kreislauf-grundlagen",
+        "sport-energiebereitstellung-atp"
+      ],
+      "keyFormulaOrSentence": "Gleitfilamenttheorie: Die Kontraktion entsteht durch das Ineinandergleiten von Aktin- und Myosinfilamenten; die Kraft hängt von der Zahl der aktivierten motorischen Einheiten ab.",
+      "commonFallacy": "Fasertypen für vollständig unveränderlich halten - die prozentuale Verteilung ist genetisch geprägt, die Eigenschaften der Fasern sind aber trainierbar.",
+      "layerIndex": 5,
+      "tags": ["Definition", "Sportphysiologie", "Kraft", "Basiswissen"]
+    },
+    {
+      "id": "sport-laktatschwelle-anaerobe-schwelle",
+      "fach": "Sport",
+      "titleDE": "Laktatschwelle und anaerobe Schwelle",
+      "titleZH": "乳酸阈与无氧阈：有氧与无氧的分水岭",
+      "summaryDE": "Die Laktatschwelle markiert die höchste Belastungsintensität, bei der Laktatbildung und Laktatabbau noch im Gleichgewicht bleiben; oberhalb dieser Schwelle steigt der Laktatwert steil an.",
+      "summaryZH": "乳酸阈是乳酸生成与清除仍能保持平衡的最高强度，越过该阈后乳酸浓度便急剧上升。",
+      "category": "Sportphysiologie",
+      "curriculumTier": "Q1",
+      "stage": "vertiefung",
+      "level": 2,
+      "xpReward": 135,
+      "estimatedMinutes": 24,
+      "prerequisites": [
+        "sport-anaerob-laktazid-glykolyse",
+        "sport-aerobe-energiebereitstellung-fettoxidation",
+        "sport-muskelkontraktion-fasertypen"
+      ],
+      "keyFormulaOrSentence": "Die anaerobe Schwelle liegt bei einem Laktatwert von etwa 4 mmol/l; sie trennt den aerob dominierten vom anaerob dominierten Intensitätsbereich.",
+      "commonFallacy": "Die anaerobe Schwelle als festen biologischen Schwellenwert behandeln - der 4-mmol-Wert ist eine Konvention und muss individuell bestimmt werden.",
+      "layerIndex": 7,
+      "tags": ["Definition", "Laktat", "Klausur-Dauerbrenner", "Sportphysiologie"]
+    },
+    {
+      "id": "sport-maximale-sauerstoffaufnahme-vo2max",
+      "fach": "Sport",
+      "titleDE": "Maximale Sauerstoffaufnahme (VO2max)",
+      "titleZH": "最大摄氧量：耐力天赋的黄金指标",
+      "summaryDE": "Die maximale Sauerstoffaufnahme ist die höchste Sauerstoffmenge, die der Körper pro Minute aufnehmen und verwerten kann; sie gilt als zentrale Größe der aeroben Leistungsfähigkeit.",
+      "summaryZH": "最大摄氧量是身体每分钟能摄取并利用的最高氧量，被视为有氧能力最核心的指标。",
+      "category": "Sportphysiologie",
+      "curriculumTier": "Q1",
+      "stage": "vertiefung",
+      "level": 2,
+      "xpReward": 135,
+      "estimatedMinutes": 22,
+      "prerequisites": [
+        "sport-aerobe-energiebereitstellung-fettoxidation",
+        "sport-atmung-sauerstoffaufnahme-grundlagen",
+        "sport-muskelkontraktion-fasertypen"
+      ],
+      "keyFormulaOrSentence": "VO2max wird relativ in ml * min^-1 * kg^-1 angegeben; Untrainierte liegen bei etwa 35-45, Ausdauertrainierte bei 60-80 ml * min^-1 * kg^-1.",
+      "commonFallacy": "VO2max mit der tatsächlichen Wettkampfleistung gleichsetzen - die Laufökonomie bestimmt mit, wie viel Geschwindigkeit aus derselben Sauerstoffaufnahme entsteht.",
+      "layerIndex": 8,
+      "tags": ["Formel", "Sportphysiologie", "Ausdauer", "Klausur-Dauerbrenner"]
+    },
+    {
+      "id": "sport-herz-kreislauf-adaptation-ausdauertraining",
+      "fach": "Sport",
+      "titleDE": "Herz-Kreislauf-Adaptation durch Ausdauertraining",
+      "titleZH": "耐力训练的心脏适应：更大的心容积与更低的静息脉",
+      "summaryDE": "Regelmäßiges Ausdauertraining vergrößert das Herzvolumen, erhöht das Schlagvolumen und senkt Ruhe- und Belastungspuls sowie den peripheren Widerstand.",
+      "summaryZH": "规律耐力训练增大心容积、提高每搏输出量，并降低静息心率、次最大负荷心率与外周阻力。",
+      "category": "Sportphysiologie",
+      "curriculumTier": "Q1",
+      "stage": "vertiefung",
+      "level": 2,
+      "xpReward": 140,
+      "estimatedMinutes": 22,
+      "prerequisites": [
+        "sport-herz-kreislauf-grundlagen",
+        "sport-maximale-sauerstoffaufnahme-vo2max"
+      ],
+      "keyFormulaOrSentence": "Bei gleichem Herzzeitvolumen gilt: Steigt das Schlagvolumen, kann die Herzfrequenz sinken - das trainierte Herz arbeitet ökonomischer.",
+      "commonFallacy": "Den niedrigen Ruhepuls von Ausdauertrainierten als Zeichen einer Herzschwäche deuten - er ist Ausdruck der Ökonomisierung (Sportherz).",
+      "layerIndex": 9,
+      "tags": ["Definition", "Sportphysiologie", "Ausdauer", "Modell"]
+    },
+    {
+      "id": "sport-energiestoffwechsel-wettkampfsteuerung",
+      "fach": "Sport",
+      "titleDE": "Energiestoffwechsel und Wettkampfsteuerung",
+      "titleZH": "比赛中枢：按供能系统分配体力的战术算账",
+      "summaryDE": "Aus der Zeitstruktur der Energiebereitstellung folgt die Wettkampftaktik: Ein zu schneller Start erschöpft die anaerobe Kapazität, gleichmäßiges Tempo nutzt die aerobe Basis.",
+      "summaryZH": "由供能系统的时间结构可推出比赛战术：起跑过快会提前耗尽无氧储备，匀速分配则充分利用有氧基础。",
+      "category": "Sportphysiologie",
+      "curriculumTier": "Q2",
+      "stage": "synthese",
+      "level": 3,
+      "xpReward": 170,
+      "estimatedMinutes": 26,
+      "prerequisites": [
+        "sport-laktatschwelle-anaerobe-schwelle",
+        "sport-maximale-sauerstoffaufnahme-vo2max",
+        "sport-herz-kreislauf-adaptation-ausdauertraining"
+      ],
+      "keyFormulaOrSentence": "Taktikregel: Je länger die Wettkampfdauer, desto größer muss der aerob absolvierte Anteil sein, weil die anaerobe Kapazität auf wenige Minuten begrenzt ist.",
+      "commonFallacy": "Das Endspurtvermögen für reine Willenssache halten - es ist an die verbliebene anaerobe Kapazität gebunden, die durch frühes Überziehen aufgebraucht wird.",
+      "layerIndex": 12,
+      "tags": ["Verfahren", "AFB-III", "Energiebereitstellung", "Klausur-Dauerbrenner"]
+    },
+    {
+      "id": "sport-leistungsphysiologische-schwellenmodelle",
+      "fach": "Sport",
+      "titleDE": "Leistungsphysiologische Schwellenmodelle",
+      "titleZH": "阈值模型之争：固定阈值、个体阈值与通气阈",
+      "summaryDE": "In der Leistungsphysiologie konkurrieren fixe Laktatschwellen, individuelle Schwellenkonzepte und ventilatorische Schwellenbestimmungen; sie liefern unterschiedliche Trainingsbereiche.",
+      "summaryZH": "运动生理学中固定乳酸阈、个体化阈值概念与通气阈判定并存，各自给出不同的训练强度区间。",
+      "category": "Sportphysiologie",
+      "curriculumTier": "Uni_Prep",
+      "stage": "vertiefung",
+      "level": 3,
+      "xpReward": 185,
+      "estimatedMinutes": 28,
+      "prerequisites": [
+        "sport-laktatschwelle-anaerobe-schwelle",
+        "sport-energiestoffwechsel-wettkampfsteuerung",
+        "sport-maximale-sauerstoffaufnahme-vo2max"
+      ],
+      "keyFormulaOrSentence": "Individuelle anaerobe Schwelle: Bestimmung ueber den ersten steilen Laktatanstieg (individuelle Schwelle) statt ueber den fixen 4-mmol-Wert.",
+      "commonFallacy": "Schwellenwerte verschiedener Testverfahren ungeprüft gleichsetzen - unterschiedliche Bestimmungsmethoden liefern systematisch abweichende Intensitäten.",
+      "layerIndex": 16,
+      "tags": ["Modell", "Uni-Prep", "Laktat", "AFB-III"]
+    },
+    {
+      "id": "sport-molekulare-adaptation-signalwege",
+      "fach": "Sport",
+      "titleDE": "Molekulare Adaptationsmechanismen",
+      "titleZH": "分子适应信号：AMPK、mTOR与肌蛋白代谢开关",
+      "summaryDE": "Ausdauer- und Kraftreize setzen unterschiedliche Signalwege in Gang: Energiemangel aktiviert AMPK und die Mitochondrienbiogenese, mechanische Spannung aktiviert mTOR und den Muskelproteinaufbau.",
+      "summaryZH": "耐力与力量刺激激活不同信号通路：能量不足激活AMPK与线粒体生成，机械张力激活mTOR与肌蛋白合成。",
+      "category": "Sportphysiologie",
+      "curriculumTier": "Uni_Prep",
+      "stage": "vertiefung",
+      "level": 3,
+      "xpReward": 190,
+      "estimatedMinutes": 28,
+      "prerequisites": [
+        "sport-leistungsphysiologische-schwellenmodelle",
+        "sport-herz-kreislauf-adaptation-ausdauertraining",
+        "sport-muskelkontraktion-fasertypen"
+      ],
+      "keyFormulaOrSentence": "Reizspezifitaet: AMPK-Signalweg -> Mitochondrienvermehrung und Kapillarisierung; mTOR-Signalweg -> Proteinsynthese und Querschnittszunahme.",
+      "commonFallacy": "Ausdauer- und Kraftreize beliebig kombinieren zu können - die Signalwege hemmen sich bei zeitlich enger Kopplung gegenseitig (Interferenz-Effekt).",
+      "layerIndex": 17,
+      "tags": ["Modell", "Uni-Prep", "Sportphysiologie", "AFB-III"]
+    },
+    {
+      "id": "sport-koordination-bewegungssteuerung-grundlagen",
+      "fach": "Sport",
+      "titleDE": "Grundlagen der Bewegungssteuerung und Koordination",
+      "titleZH": "动作控制与协调基础：从指令到执行的链条",
+      "summaryDE": "Bewegungen entstehen aus dem Zusammenspiel von Wahrnehmung, zentraler Programmierung und Rückmeldung; Koordination ist das Zusammenwirken von Sinnesorganen, Nervensystem und Muskulatur.",
+      "summaryZH": "动作源于感知、中枢编程与反馈三者的协同，协调即感觉器官、神经系统与肌肉的配合。",
+      "category": "Bewegungslehre-und-Biomechanik",
+      "curriculumTier": "Sek_I",
+      "stage": "einfuehrung",
+      "level": 1,
+      "xpReward": 60,
+      "estimatedMinutes": 8,
+      "prerequisites": [],
+      "keyFormulaOrSentence": "Regelkreis der Bewegung: Wahrnehmung -> zentrale Programmierung -> Ausführung -> Rückmeldung (Feedback) -> Korrektur.",
+      "commonFallacy": "Koordination als reine Muskelangelegenheit betrachten - sie entsteht erst im Zusammenspiel von Wahrnehmung, Nervensystem und Muskulatur.",
+      "layerIndex": 0,
+      "tags": ["Modell", "Basiswissen", "Koordination"]
+    },
+    {
+      "id": "sport-bewegungsgrundformen-laufen-springen-werfen",
+      "fach": "Sport",
+      "titleDE": "Bewegungsgrundformen: Laufen, Springen, Werfen",
+      "titleZH": "基本动作形式：跑、跳、投的共性结构",
+      "summaryDE": "Laufen, Springen und Werfen beruhen auf denselben Grundmustern aus Stütz-, Flug- und Ausholphasen; ihre Beherrschung ist Voraussetzung für alle sportartspezifischen Techniken.",
+      "summaryZH": "跑、跳、投共享支撑、腾空与预摆等基本时相结构，掌握它们是所有专项技术的前提。",
+      "category": "Bewegungslehre-und-Biomechanik",
+      "curriculumTier": "Sek_I",
+      "stage": "einfuehrung",
+      "level": 1,
+      "xpReward": 65,
+      "estimatedMinutes": 10,
+      "prerequisites": [],
+      "keyFormulaOrSentence": "Phasenstruktur des Sprungs: Anlauf -> Absprung -> Flug -> Landung; jede Phase hat eine eigene Hauptaufgabe und beeinflusst die folgende.",
+      "commonFallacy": "Techniktraining für nachrangig gegenüber der Kondition halten - eine falsche Phasenstruktur begrenzt die Leistung unabhängig von der Kondition.",
+      "layerIndex": 1,
+      "tags": ["Definition", "Basiswissen", "Biomechanik"]
+    },
+    {
+      "id": "sport-motorisches-lernen-lernphasen",
+      "fach": "Sport",
+      "titleDE": "Motorisches Lernen und Lernphasen",
+      "titleZH": "运动学习三阶段：从笨拙到自动化",
+      "summaryDE": "Motorisches Lernen verläuft in Phasen: In der Grobkoordination wird die Bewegung unsicher aufgebaut, in der Feinkoordination verfeinert und in der Stabilisierung automatisiert.",
+      "summaryZH": "运动学习分三阶段：粗略协调期动作生涩不稳，精细协调期逐步精确，稳定自动化期最终定型。",
+      "category": "Bewegungslehre-und-Biomechanik",
+      "curriculumTier": "EF",
+      "stage": "grundlagen",
+      "level": 2,
+      "xpReward": 100,
+      "estimatedMinutes": 18,
+      "prerequisites": [
+        "sport-koordination-bewegungssteuerung-grundlagen",
+        "sport-bewegungsgrundformen-laufen-springen-werfen"
+      ],
+      "keyFormulaOrSentence": "Phasenmodell: Grobkoordination (unsicher, viele Fehler) -> Feinkoordination (Bewegung stimmt in den Grundzügen) -> Stabilisierung und Automatisierung (Bewegung bleibt auch unter Druck stabil).",
+      "commonFallacy": "Die Lernphasen als starre Altersstufen verstehen - sie beschreiben den Lernfortschritt bei jeder neuen Bewegung, auch bei Erwachsenen.",
+      "layerIndex": 3,
+      "tags": ["Modell", "Motorisches-Lernen", "Klausur-Dauerbrenner", "Basiswissen"]
+    },
+    {
+      "id": "sport-koordinative-faehigkeiten",
+      "fach": "Sport",
+      "titleDE": "Koordinative Fähigkeiten und ihre Ausprägung",
+      "titleZH": "协调能力七要素：均衡、节奏、空间定向与反应",
+      "summaryDE": "Koordinative Fähigkeiten wie Gleichgewichtsfähigkeit, Reaktionsfähigkeit, Rhythmusfähigkeit und räumliche Orientierungsfähigkeit bestimmen, wie sicher und präzise Bewegungen ausgeführt werden.",
+      "summaryZH": "平衡、反应、节奏、空间定向等协调能力决定动作执行的安全性与精确度。",
+      "category": "Bewegungslehre-und-Biomechanik",
+      "curriculumTier": "EF",
+      "stage": "grundlagen",
+      "level": 2,
+      "xpReward": 105,
+      "estimatedMinutes": 18,
+      "prerequisites": [
+        "sport-koordination-bewegungssteuerung-grundlagen",
+        "sport-motorisches-lernen-lernphasen"
+      ],
+      "keyFormulaOrSentence": "Koordinative Fähigkeiten sind weitgehend unabhängig voneinander ausgebildet; sie werden vor allem in der Phase der Grob- und Feinkoordination durch variantenreiches Üben entwickelt.",
+      "commonFallacy": "Koordinative Fähigkeiten mit Kondition gleichsetzen - sie sind eigenständige Fähigkeiten, die durch variantenreiches Üben und nicht durch höhere Lasten wachsen.",
+      "layerIndex": 4,
+      "tags": ["Definition", "Koordination", "Motorisches-Lernen", "Basiswissen"]
+    },
+    {
+      "id": "sport-bewegungsanalyse-beobachtungskriterien",
+      "fach": "Sport",
+      "titleDE": "Bewegungsanalyse und Beobachtungskriterien",
+      "titleZH": "动作分析：用可观察指标把技术拆开",
+      "summaryDE": "Die Bewegungsanalyse zerlegt eine Bewegung in Phasen und bewertet sie anhand vorher festgelegter Beobachtungskriterien; sie liefert die Grundlage für gezielte Korrekturen.",
+      "summaryZH": "动作分析把动作拆成时相，并按事先确定的观察指标评价，从而为针对性纠正提供依据。",
+      "category": "Bewegungslehre-und-Biomechanik",
+      "curriculumTier": "EF",
+      "stage": "grundlagen",
+      "level": 2,
+      "xpReward": 110,
+      "estimatedMinutes": 20,
+      "prerequisites": [
+        "sport-bewegungsgrundformen-laufen-springen-werfen",
+        "sport-motorisches-lernen-lernphasen"
+      ],
+      "keyFormulaOrSentence": "Vorgehen: Bewegungsaufgabe und Phasenstruktur bestimmen -> Beobachtungskriterien festlegen -> Beobachtung durchführen -> Abweichung benennen -> Korrekturmassnahme ableiten.",
+      "commonFallacy": "Beobachtung ohne vorher festgelegte Kriterien durchführen - ohne Kriterienkatalog bleibt die Analyse beliebig und damit nicht bewertbar.",
+      "layerIndex": 5,
+      "tags": ["Verfahren", "Methodik", "Motorisches-Lernen", "Klausur-Dauerbrenner"]
+    },
+    {
+      "id": "sport-hebelgesetze-bewegungsapparat",
+      "fach": "Sport",
+      "titleDE": "Hebelgesetze am Bewegungsapparat",
+      "titleZH": "人体杠杆：肌肉、骨与关节的力学换算",
+      "summaryDE": "Gelenke, Knochen und Muskeln bilden Hebel; aus Kraftarm und Lastarm folgt, welche Muskelkraft für eine gegebene Last aufgebracht werden muss.",
+      "summaryZH": "关节、骨骼与肌肉构成杠杆，由力臂与阻力臂之比可推出克服特定负荷所需的肌力。",
+      "category": "Bewegungslehre-und-Biomechanik",
+      "curriculumTier": "Q1",
+      "stage": "vertiefung",
+      "level": 2,
+      "xpReward": 135,
+      "estimatedMinutes": 24,
+      "prerequisites": [
+        "sport-bewegungsgrundformen-laufen-springen-werfen",
+        "sport-bewegungsanalyse-beobachtungskriterien"
+      ],
+      "keyFormulaOrSentence": "Hebelgesetz: Kraft * Kraftarm = Last * Lastarm (F1 * l1 = F2 * l2); am menschlichen Körper ist der Kraftarm meist kurz, daher sind die wirkenden Muskelkräfte ein Vielfaches der Last.",
+      "commonFallacy": "Annehmen, ein langer Kraftarm sei immer von Vorteil - ein langer Kraftarm senkt die nötige Muskelkraft, verkürzt aber den Weg und damit die erreichbare Geschwindigkeit.",
+      "layerIndex": 7,
+      "tags": ["Formel", "Biomechanik", "Klausur-Dauerbrenner", "AFB-III"]
+    },
+    {
+      "id": "sport-kraftvektoren-drehmoment",
+      "fach": "Sport",
+      "titleDE": "Kraftvektoren und Drehmoment",
+      "titleZH": "力矢量与力矩：为什么角度决定效果",
+      "summaryDE": "Kräfte wirken am Körper als Vektoren mit Betrag und Richtung; nur die Komponente senkrecht zum Hebelarm erzeugt ein Drehmoment und damit eine Gelenkbewegung.",
+      "summaryZH": "力以有大小和方向的矢量作用于人体，只有垂直于力臂的分量才产生力矩、驱动关节转动。",
+      "category": "Bewegungslehre-und-Biomechanik",
+      "curriculumTier": "Q1",
+      "stage": "vertiefung",
+      "level": 2,
+      "xpReward": 135,
+      "estimatedMinutes": 22,
+      "prerequisites": [
+        "sport-hebelgesetze-bewegungsapparat",
+        "sport-muskelkontraktion-fasertypen",
+        "sport-bewegungsgrundformen-laufen-springen-werfen"
+      ],
+      "keyFormulaOrSentence": "Drehmoment M = F * l * sin(alpha); maximal wird es bei einem Wirkwinkel von 90 Grad zwischen Kraftrichtung und Hebelarm.",
+      "commonFallacy": "Die eingesetzte Muskelkraft mit dem wirksamen Drehmoment verwechseln - bei ungünstigem Gelenkwinkel geht ein großer Teil der Kraft als Gelenkdruck verloren.",
+      "layerIndex": 8,
+      "tags": ["Formel", "Biomechanik", "Kraft", "AFB-III"]
+    },
+    {
+      "id": "sport-bewegungsstruktur-funktionsanalyse",
+      "fach": "Sport",
+      "titleDE": "Struktur- und Funktionsanalyse sportlicher Bewegungen",
+      "titleZH": "动作结构与功能分析：把技术拆成目的性时相",
+      "summaryDE": "Die Strukturanalyse zerlegt eine Bewegung in Phasen und Teilbewegungen, die Funktionsanalyse ordnet jeder Phase ihre Aufgabe für das Gesamtziel zu.",
+      "summaryZH": "结构分析把动作拆成时相与分解动作，功能分析则为每一时相指定其对整体目标的任务。",
+      "category": "Bewegungslehre-und-Biomechanik",
+      "curriculumTier": "Q1",
+      "stage": "vertiefung",
+      "level": 3,
+      "xpReward": 145,
+      "estimatedMinutes": 26,
+      "prerequisites": [
+        "sport-bewegungsanalyse-beobachtungskriterien",
+        "sport-hebelgesetze-bewegungsapparat",
+        "sport-kraftvektoren-drehmoment"
+      ],
+      "keyFormulaOrSentence": "Strukturanalyse beschreibt das Wie der Bewegung, Funktionsanalyse das Wozu der einzelnen Phase im Hinblick auf das Bewegungsziel.",
+      "commonFallacy": "Beide Analysen für dasselbe halten - die Strukturanalyse beschreibt den Ablauf, die Funktionsanalyse begründet, warum eine Phase so aufgebaut sein muss.",
+      "layerIndex": 9,
+      "tags": ["Verfahren", "Biomechanik", "Klausur-Dauerbrenner", "AFB-III"]
+    },
+    {
+      "id": "sport-informationsaufnahme-verarbeitung",
+      "fach": "Sport",
+      "titleDE": "Informationsaufnahme und -verarbeitung im Sport",
+      "titleZH": "运动中的信息加工：感知、预判与决策速度",
+      "summaryDE": "Sportliche Handlungen beruhen auf der Aufnahme, Filterung und Verarbeitung von Informationen; Antizipation und peripheres Sehen entscheiden über die Reaktionsgeschwindigkeit.",
+      "summaryZH": "运动行为依赖信息的接收、筛选与加工，预判与周边视觉决定反应速度的高低。",
+      "category": "Bewegungslehre-und-Biomechanik",
+      "curriculumTier": "Q1",
+      "stage": "vertiefung",
+      "level": 2,
+      "xpReward": 140,
+      "estimatedMinutes": 22,
+      "prerequisites": [
+        "sport-motorisches-lernen-lernphasen",
+        "sport-koordinative-faehigkeiten",
+        "sport-koordination-bewegungssteuerung-grundlagen"
+      ],
+      "keyFormulaOrSentence": "Reaktionszeit = Zeit der Informationsaufnahme + Zeit der Entscheidung + Zeit der Programmwahl; durch Antizipation wird vor allem die Entscheidungszeit verkürzt.",
+      "commonFallacy": "Reaktionsschnelligkeit für rein angeboren halten - sie hängt stark von der Erfahrung ab, weil Erfahrung die Zahl der zu prüfenden Handlungsalternativen senkt.",
+      "layerIndex": 10,
+      "tags": ["Modell", "Motorisches-Lernen", "Koordination", "Klausur-Dauerbrenner"]
+    },
+    {
+      "id": "sport-biomechanische-technikoptimierung",
+      "fach": "Sport",
+      "titleDE": "Biomechanische Technikoptimierung",
+      "titleZH": "生物力学技术优化：让力顺着最省的路走",
+      "summaryDE": "Technikoptimierung zielt darauf, die für die Zielbewegung nutzbare Kraft zu maximieren und Verluste durch ungünstige Hebel, fehlende Streckung oder Abbremsung zu minimieren.",
+      "summaryZH": "技术优化旨在最大化可用于目标动作的力，并减少因杠杆不利、关节未伸展或提前减速造成的损失。",
+      "category": "Bewegungslehre-und-Biomechanik",
+      "curriculumTier": "Q2",
+      "stage": "synthese",
+      "level": 3,
+      "xpReward": 170,
+      "estimatedMinutes": 26,
+      "prerequisites": [
+        "sport-kraftvektoren-drehmoment",
+        "sport-bewegungsstruktur-funktionsanalyse",
+        "sport-informationsaufnahme-verarbeitung"
+      ],
+      "keyFormulaOrSentence": "Optimierungsprinzip: Die Summe der Teilimpulse muss in Zielrichtung zeigen; jede Teilbewegung, die nicht zur Zielrichtung beitraegt, ist ein Verlust an Wirkungsgrad.",
+      "commonFallacy": "Technik und Kondition getrennt trainieren - eine verbesserte Technik verändert die wirkenden Hebel und damit auch die wirksame Kraft.",
+      "layerIndex": 12,
+      "tags": ["Verfahren", "Biomechanik", "AFB-III", "Klausur-Dauerbrenner"]
+    },
+    {
+      "id": "sport-bewegungswissenschaft-modellbildung",
+      "fach": "Sport",
+      "titleDE": "Modellbildung in der Bewegungswissenschaft",
+      "titleZH": "运动科学的建模：把人体简化成可计算的模型",
+      "summaryDE": "Die Bewegungswissenschaft beschreibt den Körper als Mehrkörpermodell mit Segmenten, Gelenken und Drehmomenten und prüft Modelle an Messdaten aus Kinemetrie und Dynamometrie.",
+      "summaryZH": "运动科学把人体简化为由环节、关节与力矩构成的多刚体模型，并用运动学与动力学测量数据检验模型。",
+      "category": "Bewegungslehre-und-Biomechanik",
+      "curriculumTier": "Uni_Prep",
+      "stage": "vertiefung",
+      "level": 3,
+      "xpReward": 185,
+      "estimatedMinutes": 28,
+      "prerequisites": [
+        "sport-bewegungsstruktur-funktionsanalyse",
+        "sport-informationsaufnahme-verarbeitung",
+        "sport-biomechanische-technikoptimierung"
+      ],
+      "keyFormulaOrSentence": "Modellgüte: Ein Bewegungsmodell ist nur so gut wie die Vereinfachungen, die es bewusst trifft - Segmentmassen, Gelenkfreiheitsgrade und Reibung müssen offengelegt werden.",
+      "commonFallacy": "Modelle für Abbilder der Wirklichkeit halten - sie sind zweckgebundene Vereinfachungen, deren Gültigkeit auf den untersuchten Bereich begrenzt ist.",
+      "layerIndex": 16,
+      "tags": ["Modell", "Uni-Prep", "Biomechanik", "AFB-III"]
+    },
+    {
+      "id": "sport-motor-control-dynamische-systeme",
+      "fach": "Sport",
+      "titleDE": "Motor Control und dynamische Systemtheorie",
+      "titleZH": "运动控制与动力系统理论：自组织而非指令",
+      "summaryDE": "Die dynamische Systemtheorie erklärt Bewegungskoordination als Selbstorganisation des Systems aus Körper, Aufgabe und Umwelt; Attraktoren und Phasenübergänge ersetzen starre Programme.",
+      "summaryZH": "动力系统理论把动作协调解释为身体、任务与环境三者的自组织，吸引子与相变取代了僵硬的运动程序。",
+      "category": "Bewegungslehre-und-Biomechanik",
+      "curriculumTier": "Uni_Prep",
+      "stage": "vertiefung",
+      "level": 3,
+      "xpReward": 190,
+      "estimatedMinutes": 28,
+      "prerequisites": [
+        "sport-bewegungswissenschaft-modellbildung",
+        "sport-informationsaufnahme-verarbeitung",
+        "sport-motorisches-lernen-lernphasen"
+      ],
+      "keyFormulaOrSentence": "Koordination entsteht als Selbstorganisation eines nichtlinearen Systems unter den Randbedingungen von Körper, Aufgabe und Umwelt (Newell'sche Constraints).",
+      "commonFallacy": "Bewegungslernen als reines Abspeichern eines Programms verstehen - unter veränderten Randbedingungen organisiert sich die Koordination neu.",
+      "layerIndex": 17,
+      "tags": ["Modell", "Uni-Prep", "Motorisches-Lernen", "AFB-III"]
+    },
+    {
+      "id": "sport-sportmotivation-grundlagen-freude",
+      "fach": "Sport",
+      "titleDE": "Motivation und Freude an Bewegung",
+      "titleZH": "运动动机与乐趣：为什么人愿意动起来",
+      "summaryDE": "Motivation ist die Richtung, Intensität und Ausdauer des Handelns; Freude an der Bewegung und erlebte Kompetenz sind die stärksten Antriebe für dauerhafte Sportteilnahme.",
+      "summaryZH": "动机决定行为的方向、强度与持续性，运动中的乐趣与胜任体验是长期坚持锻炼最强的驱动力。",
+      "category": "Sportpsychologie",
+      "curriculumTier": "Sek_I",
+      "stage": "einfuehrung",
+      "level": 1,
+      "xpReward": 60,
+      "estimatedMinutes": 8,
+      "prerequisites": [],
+      "keyFormulaOrSentence": "Motivation = Richtung + Intensität + Ausdauer des Verhaltens; sie entsteht aus dem Zusammenspiel von Person und Situation.",
+      "commonFallacy": "Motivation für eine feste Charaktereigenschaft halten - sie entsteht immer aus dem Zusammenspiel von Person und Situation.",
+      "layerIndex": 0,
+      "tags": ["Definition", "Basiswissen", "Sportpsychologie"]
+    },
+    {
+      "id": "sport-motivation-intrinsisch-extrinsisch",
+      "fach": "Sport",
+      "titleDE": "Intrinsische und extrinsische Motivation",
+      "titleZH": "内在与外在动机：奖励何时反而削弱热情",
+      "summaryDE": "Intrinsische Motivation entspringt der Tätigkeit selbst, extrinsische aus äußeren Folgen; starke äußere Anreize können die intrinsische Motivation verdrängen.",
+      "summaryZH": "内在动机源自活动本身，外在动机来自外部结果；过强的外部奖励反而会挤出内在动机。",
+      "category": "Sportpsychologie",
+      "curriculumTier": "EF",
+      "stage": "grundlagen",
+      "level": 2,
+      "xpReward": 100,
+      "estimatedMinutes": 18,
+      "prerequisites": [
+        "sport-sportmotivation-grundlagen-freude"
+      ],
+      "keyFormulaOrSentence": "Korrumpierungseffekt: Wird eine intrinsisch motivierte Tätigkeit plötzlich belohnt, sinkt nach Wegfall der Belohnung die Bereitschaft unter das Ausgangsniveau.",
+      "commonFallacy": "Mehr Belohnung führe immer zu mehr Motivation - bei bereits intrinsisch motivierten Sportlern kann Belohnung die Motivation sogar senken.",
+      "layerIndex": 3,
+      "tags": ["Modell", "Sportpsychologie", "Basiswissen", "Klausur-Dauerbrenner"]
+    },
+    {
+      "id": "sport-angst-aktivierung-handlungssteuerung",
+      "fach": "Sport",
+      "titleDE": "Angst, Aktivierung und Handlungssteuerung",
+      "titleZH": "焦虑与激活：心理唤醒如何影响临场发挥",
+      "summaryDE": "Angst entsteht aus der Bewertung einer Situation als bedrohlich; das Ausmaß der Aktivierung wirkt sich je nach Aufgabe unterschiedlich auf die Handlungsfähigkeit aus.",
+      "summaryZH": "焦虑源于把情境评价为威胁，激活水平对行动能力的影响因任务类型而异。",
+      "category": "Sportpsychologie",
+      "curriculumTier": "EF",
+      "stage": "grundlagen",
+      "level": 2,
+      "xpReward": 105,
+      "estimatedMinutes": 18,
+      "prerequisites": [
+        "sport-sportmotivation-grundlagen-freude"
+      ],
+      "keyFormulaOrSentence": "Handlungssteuerung unter psychischen Einflüssen: Angst verengt die Wahrnehmung und verschiebt die Aufmerksamkeit von der Aufgabe auf die eigene Befindlichkeit.",
+      "commonFallacy": "Angst grundsätzlich als leistungsmindernd betrachten - ein mittleres Aktivierungsniveau kann die Leistung bei einfachen, kraftbetonten Aufgaben sogar steigern.",
+      "layerIndex": 4,
+      "tags": ["Modell", "Sportpsychologie", "Klausur-Dauerbrenner", "AFB-III"]
+    },
+    {
+      "id": "sport-mentales-training-vorstellung",
+      "fach": "Sport",
+      "titleDE": "Mentales Training und Bewegungsvorstellung",
+      "titleZH": "心理训练：在脑中先把动作跑一遍",
+      "summaryDE": "Mentales Training nutzt die Vorstellung einer Bewegung, um Bewegungsprogramme zu festigen; es ergänzt das praktische Üben, ersetzt es aber nicht.",
+      "summaryZH": "心理训练借助动作表象巩固运动程序，是实际练习的补充，但不能替代实际练习。",
+      "category": "Sportpsychologie",
+      "curriculumTier": "EF",
+      "stage": "grundlagen",
+      "level": 2,
+      "xpReward": 110,
+      "estimatedMinutes": 18,
+      "prerequisites": [
+        "sport-sportmotivation-grundlagen-freude",
+        "sport-motivation-intrinsisch-extrinsisch"
+      ],
+      "keyFormulaOrSentence": "Mentales Training wirkt am besten in der Phase der Feinkoordination und bei bereits bekannten Bewegungen; es ergänzt das praktische Üben, ersetzt es jedoch nicht.",
+      "commonFallacy": "Mentales Training für einen Ersatz des praktischen Übens halten - ohne reale Bewegungserfahrung fehlt dem Vorstellungsbild die sensorische Grundlage.",
+      "layerIndex": 5,
+      "tags": ["Verfahren", "Sportpsychologie", "Motorisches-Lernen", "Basiswissen"]
+    },
+    {
+      "id": "sport-persoenlichkeit-und-sport",
+      "fach": "Sport",
+      "titleDE": "Persönlichkeit und Sport",
+      "titleZH": "人格与运动：是性格选择运动，还是运动塑造性格",
+      "summaryDE": "Persönlichkeitsmerkmale beeinflussen die Sportwahl und das Verhalten im Wettkampf; umgekehrt kann Sport langfristig Eigenschaften wie Selbstkontrolle verändern.",
+      "summaryZH": "人格特质影响运动项目选择与比赛行为，反过来长期运动也可能改变自控力等特质。",
+      "category": "Sportpsychologie",
+      "curriculumTier": "Q1",
+      "stage": "vertiefung",
+      "level": 2,
+      "xpReward": 135,
+      "estimatedMinutes": 22,
+      "prerequisites": [
+        "sport-motivation-intrinsisch-extrinsisch",
+        "sport-angst-aktivierung-handlungssteuerung"
+      ],
+      "keyFormulaOrSentence": "Die Wirkrichtung ist nicht eindeutig: Persönlichkeit wirkt als Selektionsfaktor für die Sportart, Sport wirkt als Sozialisationsfaktor auf die Persönlichkeit.",
+      "commonFallacy": "Sportlern pauschal eine bestimmte Persönlichkeitsstruktur zuschreiben - die Befundlage zeigt nur schwache und sportartspezifische Zusammenhänge.",
+      "layerIndex": 7,
+      "tags": ["Modell", "Sportpsychologie", "AFB-III", "Klausur-Dauerbrenner"]
+    },
+    {
+      "id": "sport-flow-erleben-optimale-erfahrung",
+      "fach": "Sport",
+      "titleDE": "Flow-Erleben und optimale Erfahrung",
+      "titleZH": "心流体验：挑战与能力恰好匹配的那一刻",
+      "summaryDE": "Flow entsteht, wenn Anforderung und eigene Fähigkeit im Gleichgewicht stehen und die Tätigkeit klar strukturiertes, unmittelbares Feedback liefert.",
+      "summaryZH": "当挑战与自身能力平衡、且活动提供清晰即时的反馈时，心流便会产生。",
+      "category": "Sportpsychologie",
+      "curriculumTier": "Q1",
+      "stage": "vertiefung",
+      "level": 2,
+      "xpReward": 135,
+      "estimatedMinutes": 22,
+      "prerequisites": [
+        "sport-motivation-intrinsisch-extrinsisch",
+        "sport-angst-aktivierung-handlungssteuerung",
+        "sport-mentales-training-vorstellung"
+      ],
+      "keyFormulaOrSentence": "Flow-Kanal: Überforderung erzeugt Angst, Unterforderung Langeweile - Flow liegt im schmalen Band dazwischen.",
+      "commonFallacy": "Flow für reines Glücksgefühl halten - Flow setzt klare Ziele, unmittelbares Feedback und eine ernsthafte Tätigkeitsorientierung voraus.",
+      "layerIndex": 8,
+      "tags": ["Modell", "Sportpsychologie", "AFB-III", "Basiswissen"]
+    },
+    {
+      "id": "sport-selbstwirksamkeit-attribution",
+      "fach": "Sport",
+      "titleDE": "Selbstwirksamkeit und Attribution",
+      "titleZH": "自我效能与归因：把失败归到哪一边",
+      "summaryDE": "Selbstwirksamkeit ist die Überzeugung, eine Aufgabe bewältigen zu können; die Ursachenzuschreibung von Erfolg und Misserfolg prägt Motivation und Ausdauer.",
+      "summaryZH": "自我效能是相信自己能完成任务的信念，而对成败原因的归因方式深刻影响动机与坚持。",
+      "category": "Sportpsychologie",
+      "curriculumTier": "Q1",
+      "stage": "vertiefung",
+      "level": 2,
+      "xpReward": 140,
+      "estimatedMinutes": 22,
+      "prerequisites": [
+        "sport-motivation-intrinsisch-extrinsisch",
+        "sport-persoenlichkeit-und-sport"
+      ],
+      "keyFormulaOrSentence": "Günstige Attribution: Erfolge auf eigene, veränderbare Faktoren zurückführen (Anstrengung, Taktik), Misserfolge auf veränderbare und spezifische Ursachen.",
+      "commonFallacy": "Misserfolge auf stabile, globale und unkontrollierbare Ursachen zurückführen - das senkt die Selbstwirksamkeit und führt in erlernte Hilflosigkeit.",
+      "layerIndex": 9,
+      "tags": ["Modell", "Sportpsychologie", "Klausur-Dauerbrenner", "AFB-III"]
+    },
+    {
+      "id": "sport-stress-bewaeltigung-wettkampf",
+      "fach": "Sport",
+      "titleDE": "Stress und Bewältigungsstrategien im Wettkampf",
+      "titleZH": "赛前应激与应对：从威胁评价到可控状态",
+      "summaryDE": "Wettkampfstress entsteht aus der Bewertung von Anforderung und Ressourcen; problemorientierte, emotionsorientierte und kognitive Strategien greifen je nach Situation unterschiedlich.",
+      "summaryZH": "比赛应激源于对要求与资源的评价，问题导向、情绪导向与认知重评策略依情境各有所长。",
+      "category": "Sportpsychologie",
+      "curriculumTier": "Q1",
+      "stage": "vertiefung",
+      "level": 3,
+      "xpReward": 145,
+      "estimatedMinutes": 24,
+      "prerequisites": [
+        "sport-angst-aktivierung-handlungssteuerung",
+        "sport-flow-erleben-optimale-erfahrung",
+        "sport-selbstwirksamkeit-attribution"
+      ],
+      "keyFormulaOrSentence": "Transaktionales Stressmodell: Stress entsteht erst, wenn die Anforderung die wahrgenommenen Bewältigungsressourcen übersteigt (primäre und sekundäre Bewertung).",
+      "commonFallacy": "Stress allein aus der Situation ableiten - dieselbe Situation erzeugt je nach Bewertung der eigenen Ressourcen Stress oder Zuversicht.",
+      "layerIndex": 10,
+      "tags": ["Modell", "Sportpsychologie", "AFB-III", "Klausur-Dauerbrenner"]
+    },
+    {
+      "id": "sport-motivationsfoerderung-trainerhandeln",
+      "fach": "Sport",
+      "titleDE": "Motivationsförderung und Trainerhandeln",
+      "titleZH": "教练的动机经营：任务取向与自我取向的赛场",
+      "summaryDE": "Trainerhandeln beeinflusst Motivation über Zielstrukturen, Feedback und Autonomieunterstützung; ein Klima der Aufgabenorientierung fördert langfristige Bindung stärker als reine Ergebnisorientierung.",
+      "summaryZH": "教练通过目标结构、反馈与自主支持影响动机，任务取向的氛围比单纯的结果取向更能带来长期投入。",
+      "category": "Sportpsychologie",
+      "curriculumTier": "Q2",
+      "stage": "synthese",
+      "level": 3,
+      "xpReward": 170,
+      "estimatedMinutes": 24,
+      "prerequisites": [
+        "sport-motivation-intrinsisch-extrinsisch",
+        "sport-persoenlichkeit-und-sport",
+        "sport-selbstwirksamkeit-attribution"
+      ],
+      "keyFormulaOrSentence": "Motivationsklima: Aufgabenorientierung bewertet Fortschritt und Anstrengung, Ego-Orientierung vergleicht mit anderen - nur das Aufgabenklima stützt die intrinsische Motivation dauerhaft.",
+      "commonFallacy": "Motivation durch Druck und Sanktionen erzeugen zu wollen - äußerer Druck senkt die wahrgenommene Autonomie und damit die langfristige Motivation.",
+      "layerIndex": 12,
+      "tags": ["Verfahren", "Sportpsychologie", "AFB-III", "Klausur-Dauerbrenner"]
+    },
+    {
+      "id": "sport-psychische-belastung-leistungssport",
+      "fach": "Sport",
+      "titleDE": "Psychische Belastung im Leistungssport",
+      "titleZH": "竞技体育的心理负荷：从赛前紧张到耗竭",
+      "summaryDE": "Dauerhafter Leistungsdruck, hohe Trainingsumfänge und Abhängigkeit von Ergebnissen können zu Angststörungen, Essstörungen und Burnout führen; Prävention setzt bei Belastungssteuerung und Unterstützungssystemen an.",
+      "summaryZH": "长期成绩压力、大训练量与结果依赖可能引发焦虑障碍、进食障碍与耗竭，预防应从负荷调控与支持体系入手。",
+      "category": "Sportpsychologie",
+      "curriculumTier": "Q2",
+      "stage": "synthese",
+      "level": 3,
+      "xpReward": 175,
+      "estimatedMinutes": 26,
+      "prerequisites": [
+        "sport-stress-bewaeltigung-wettkampf",
+        "sport-motivationsfoerderung-trainerhandeln",
+        "sport-flow-erleben-optimale-erfahrung"
+      ],
+      "keyFormulaOrSentence": "Burnout im Leistungssport zeigt sich als emotionale Erschöpfung, reduzierte Leistungsfähigkeit und Distanzierung vom Sport - trotz weiterlaufenden Trainings.",
+      "commonFallacy": "Psychische Belastung im Leistungssport für ein Zeichen mangelnder Härte halten - sie ist eine Folge dauerhafter Überlastung ohne ausreichende Erholung.",
+      "layerIndex": 13,
+      "tags": ["Definition", "Sportpsychologie", "AFB-III", "Schwerpunkt-2026"]
+    },
+    {
+      "id": "sport-sportpsychologische-aktivierungstheorien",
+      "fach": "Sport",
+      "titleDE": "Sportpsychologische Aktivierungstheorien",
+      "titleZH": "唤醒理论三派：驱力、倒U与灾难模型",
+      "summaryDE": "Drive-Theorie, Inverted-U-Hypothese und Katastrophenmodell erklären den Zusammenhang von Aktivierung und Leistung unterschiedlich; die Vorhersagen unterscheiden sich vor allem im hohen Aktivierungsbereich.",
+      "summaryZH": "驱力理论、倒U假设与灾难模型对唤醒与成绩关系的解释不同，其分歧尤其体现在高唤醒区间。",
+      "category": "Sportpsychologie",
+      "curriculumTier": "Uni_Prep",
+      "stage": "vertiefung",
+      "level": 3,
+      "xpReward": 185,
+      "estimatedMinutes": 28,
+      "prerequisites": [
+        "sport-angst-aktivierung-handlungssteuerung",
+        "sport-flow-erleben-optimale-erfahrung",
+        "sport-stress-bewaeltigung-wettkampf"
+      ],
+      "keyFormulaOrSentence": "Inverted-U-Hypothese: Die Leistung ist bei mittlerer Aktivierung am höchsten; das Katastrophenmodell nimmt dagegen oberhalb des Optimums einen abrupten Leistungseinbruch an.",
+      "commonFallacy": "Die optimale Aktivierung als für alle Sportarten gleichen Wert annehmen - bei feinmotorischen Aufgaben liegt sie deutlich niedriger als bei Kraft- und Ausdaueraufgaben.",
+      "layerIndex": 16,
+      "tags": ["Modell", "Uni-Prep", "Sportpsychologie", "AFB-III"]
+    },
+    {
+      "id": "sport-psychologische-leistungsdiagnostik",
+      "fach": "Sport",
+      "titleDE": "Psychologische Diagnostik im Sport",
+      "titleZH": "运动心理诊断：量表、访谈与行为观察的三角",
+      "summaryDE": "Sportpsychologische Diagnostik erfasst Motivation, Angst, Konzentration und Teamklima über Fragebögen, Interviews und Verhaltensbeobachtung und muss testtheoretische Gütekriterien erfüllen.",
+      "summaryZH": "运动心理诊断通过问卷、访谈与行为观察测量动机、焦虑、专注与团队氛围，且必须满足测量学的质量指标。",
+      "category": "Sportpsychologie",
+      "curriculumTier": "Uni_Prep",
+      "stage": "vertiefung",
+      "level": 3,
+      "xpReward": 190,
+      "estimatedMinutes": 26,
+      "prerequisites": [
+        "sport-sportpsychologische-aktivierungstheorien",
+        "sport-psychische-belastung-leistungssport",
+        "sport-selbstwirksamkeit-attribution"
+      ],
+      "keyFormulaOrSentence": "Gütekriterien: Objektivität, Reliabilität und Validität müssen erfüllt sein, bevor ein sportpsychologisches Testverfahren zur Auswahl oder Beratung eingesetzt wird.",
+      "commonFallacy": "Einzeltestergebnisse ohne Normstichprobe interpretieren - ohne Bezugsnorm ist ein Messwert nicht bewertbar.",
+      "layerIndex": 17,
+      "tags": ["Verfahren", "Uni-Prep", "Sportpsychologie", "Methodik"]
+    },
+    {
+      "id": "sport-fairplay-regeln-grundlagen",
+      "fach": "Sport",
+      "titleDE": "Fairplay und Regelbewusstsein",
+      "titleZH": "公平竞赛与规则意识：体育的第一条底线",
+      "summaryDE": "Regeln sichern den Vergleich der Leistungen und den Schutz der Beteiligten; Fairplay bedeutet, sie nicht nur einzuhalten, sondern auch im Geist des Sports zu handeln.",
+      "summaryZH": "规则保障成绩比较与参与者安全，公平竞赛不仅要求守规，更要求在体育精神下行动。",
+      "category": "Sportsoziologie",
+      "curriculumTier": "Sek_I",
+      "stage": "einfuehrung",
+      "level": 1,
+      "xpReward": 60,
+      "estimatedMinutes": 8,
+      "prerequisites": [],
+      "keyFormulaOrSentence": "Fairplay umfasst mehr als Regelkonformität: Es verlangt auch die Haltung, einen Vorteil nicht zu nutzen, der durch einen Regelbruch entstanden ist.",
+      "commonFallacy": "Alles, was die Regel nicht verbietet, für fair halten - Fairplay verlangt zusätzlich die Orientierung am Sinn der Regel.",
+      "layerIndex": 0,
+      "tags": ["Definition", "Basiswissen", "Fairness"]
+    },
+    {
+      "id": "sport-fairness-norm-fairplay-handlung",
+      "fach": "Sport",
+      "titleDE": "Fairness als Norm und Fairplay als Handlung",
+      "titleZH": "公平作为规范与Fairplay作为行动",
+      "summaryDE": "Fairness ist die ethische Norm, an der sportliches Handeln gemessen wird; Fairplay ist die konkrete Handlung, in der diese Norm in einer Situation wirksam wird.",
+      "summaryZH": "Fairness是衡量体育行为的伦理规范，Fairplay是这一规范在具体情境中落地的实际行动。",
+      "category": "Sportsoziologie",
+      "curriculumTier": "EF",
+      "stage": "grundlagen",
+      "level": 2,
+      "xpReward": 100,
+      "estimatedMinutes": 18,
+      "prerequisites": [
+        "sport-fairplay-regeln-grundlagen"
+      ],
+      "keyFormulaOrSentence": "Fairness ist die Norm, Fairplay die Handlung: Die Norm beschreibt das Sollen, die Handlung zeigt, ob das Sollen im Wettkampf tatsächlich eingelöst wird.",
+      "commonFallacy": "Fairness und Fairplay gleichsetzen - die Norm kann bestehen, ohne dass die Handlung ihr folgt; genau diese Lücke ist der Analysegegenstand.",
+      "layerIndex": 3,
+      "tags": ["Definition", "Fairness", "Klausur-Dauerbrenner", "AFB-III"]
+    },
+    {
+      "id": "sport-spielgelegenheiten-gestaltung",
+      "fach": "Sport",
+      "titleDE": "Gestaltung von Spiel- und Sportgelegenheiten",
+      "titleZH": "营造比赛与运动机会：让所有人都能参与",
+      "summaryDE": "Spiel- und Sportgelegenheiten werden durch Regeln, Raum, Material und Gruppengröße so gestaltet, dass möglichst alle Beteiligten aktiv und erfolgreich teilnehmen können.",
+      "summaryZH": "通过规则、空间、器材与分组规模的调整，使尽可能多的参与者都能积极且成功地参与。",
+      "category": "Sportsoziologie",
+      "curriculumTier": "EF",
+      "stage": "grundlagen",
+      "level": 2,
+      "xpReward": 105,
+      "estimatedMinutes": 18,
+      "prerequisites": [
+        "sport-fairplay-regeln-grundlagen"
+      ],
+      "keyFormulaOrSentence": "Gestaltungsmittel: Regelvereinfachung, Feldgrößenanpassung, Materialvariation und Teamgröße steuern Beteiligung und Erfolgserleben der Spielenden.",
+      "commonFallacy": "Gestaltung für reine Organisation halten - Regel- und Raumänderungen verändern die Spielstruktur und damit das taktische Anforderungsprofil.",
+      "layerIndex": 4,
+      "tags": ["Verfahren", "Sportsoziologie", "Fairness", "Basiswissen"]
+    },
+    {
+      "id": "sport-kooperation-konkurrenz-teamsport",
+      "fach": "Sport",
+      "titleDE": "Kooperation und Konkurrenz im Teamsport",
+      "titleZH": "团队运动中的合作与竞争：同队同心、对手相争",
+      "summaryDE": "Im Teamsport sind Kooperation innerhalb der Mannschaft und Konkurrenz gegen den Gegner gleichzeitig wirksam; beide sind konstitutive Bedingungen des Spiels.",
+      "summaryZH": "团队运动中，队内合作与对抗对手的竞争同时起作用，二者都是比赛得以成立的条件。",
+      "category": "Sportsoziologie",
+      "curriculumTier": "EF",
+      "stage": "grundlagen",
+      "level": 2,
+      "xpReward": 110,
+      "estimatedMinutes": 18,
+      "prerequisites": [
+        "sport-fairplay-regeln-grundlagen",
+        "sport-fairness-norm-fairplay-handlung"
+      ],
+      "keyFormulaOrSentence": "Kooperation und Konkurrenz sind im Sport keine Gegensätze, sondern zwei Seiten derselben Regelstruktur: Ohne Konkurrenz gibt es keinen Vergleich, ohne Kooperation keine Mannschaftsleistung.",
+      "commonFallacy": "Kooperation und Konkurrenz als Gegensätze behandeln - sie bedingen einander, weil jede Konkurrenz gemeinsame Regeln voraussetzt.",
+      "layerIndex": 5,
+      "tags": ["Definition", "Sportsoziologie", "Fairness", "Basiswissen"]
+    },
+    {
+      "id": "sport-aggression-frustration",
+      "fach": "Sport",
+      "titleDE": "Aggression und Frustration im Sport",
+      "titleZH": "攻击性与挫折：从工具性冲撞到敌对性伤害",
+      "summaryDE": "Aggression im Sport ist teils instrumentell (Erfolg durch Regelverstoß), teils feindselig (Schädigungsabsicht); Frustration über verfehlte Ziele erhöht die Bereitschaft zu aggressivem Handeln.",
+      "summaryZH": "体育中的攻击性既有工具性的（借犯规取胜），也有敌对性的（意在伤害），目标受阻的挫折感会提升攻击行为倾向。",
+      "category": "Sportsoziologie",
+      "curriculumTier": "Q1",
+      "stage": "vertiefung",
+      "level": 2,
+      "xpReward": 135,
+      "estimatedMinutes": 22,
+      "prerequisites": [
+        "sport-fairness-norm-fairplay-handlung",
+        "sport-kooperation-konkurrenz-teamsport"
+      ],
+      "keyFormulaOrSentence": "Frustrations-Aggressions-Hypothese: Frustration erzeugt eine Aggressionsbereitschaft, die nur dann in Handlung umschlägt, wenn Situation und Norm es zulassen.",
+      "commonFallacy": "Jede aggressive Handlung im Sport auf einen aggressiven Charakter zurückführen - situative Auslöser wie Frustration, Hitze oder Publikumsdruck erklären einen großen Teil.",
+      "layerIndex": 7,
+      "tags": ["Modell", "Sportsoziologie", "Klausur-Dauerbrenner", "AFB-III"]
+    },
+    {
+      "id": "sport-gruppendynamik-teamrollen",
+      "fach": "Sport",
+      "titleDE": "Gruppendynamik und Teamrollen",
+      "titleZH": "团队动力与角色分配：从组建到协同",
+      "summaryDE": "Teams durchlaufen Phasen der Formierung, Konflikteskalation, Normbildung und Leistungserbringung; Rollenverteilung und Gruppenkohäsion bestimmen die Leistungsfähigkeit des Kollektivs.",
+      "summaryZH": "团队经历组建、冲突、规范形成与高效运作各阶段，角色分工与团队凝聚力决定集体表现。",
+      "category": "Sportsoziologie",
+      "curriculumTier": "Q1",
+      "stage": "vertiefung",
+      "level": 2,
+      "xpReward": 135,
+      "estimatedMinutes": 22,
+      "prerequisites": [
+        "sport-kooperation-konkurrenz-teamsport",
+        "sport-spielgelegenheiten-gestaltung"
+      ],
+      "keyFormulaOrSentence": "Phasenmodell der Gruppe: Forming -> Storming -> Norming -> Performing; Konflikte sind kein Betriebsunfall, sondern eine notwendige Durchgangsphase.",
+      "commonFallacy": "Konflikte in einer Mannschaft grundsätzlich für schädlich halten - sie sind Voraussetzung für Normbildung und stabile Rollen.",
+      "layerIndex": 8,
+      "tags": ["Modell", "Sportsoziologie", "Basiswissen", "AFB-III"]
+    },
+    {
+      "id": "sport-soziale-ungleichheit-sportzugang",
+      "fach": "Sport",
+      "titleDE": "Soziale Ungleichheit und Zugang zum Sport",
+      "titleZH": "社会不平等与运动参与：谁有条件上场",
+      "summaryDE": "Bildung, Einkommen, Migrationsgeschichte und Geschlecht beeinflussen Sportartwahl und Vereinsbindung; Sport kann Ungleichheit reproduzieren, aber auch abmildern.",
+      "summaryZH": "教育、收入、移民背景与性别影响项目选择与俱乐部参与，体育既能复制社会不平等，也能缓解它。",
+      "category": "Sportsoziologie",
+      "curriculumTier": "Q1",
+      "stage": "vertiefung",
+      "level": 2,
+      "xpReward": 140,
+      "estimatedMinutes": 22,
+      "prerequisites": [
+        "sport-spielgelegenheiten-gestaltung",
+        "sport-gruppendynamik-teamrollen"
+      ],
+      "keyFormulaOrSentence": "Soziale Selektivität des Sports: Mit steigendem sozialem Status steigt die Teilnahme, und die gewählten Sportarten unterscheiden sich systematisch nach Bildungsmilieu.",
+      "commonFallacy": "Sport für ein automatisch integratives Feld halten - ohne gestaltete Zugänge reproduziert er bestehende Ungleichheiten.",
+      "layerIndex": 9,
+      "tags": ["Definition", "Sportsoziologie", "Inklusion", "AFB-III"]
+    },
+    {
+      "id": "sport-doping-steuerung-manipulation",
+      "fach": "Sport",
+      "titleDE": "Doping, Steuerung und Manipulation",
+      "titleZH": "兴奋剂与操控：成绩的外部操纵形式",
+      "summaryDE": "Doping ist der Versuch, die Leistungsfähigkeit mit verbotenen Mitteln zu steigern; neben Substanzen zählen auch Manipulationen des Regelwerks, der Technik und der Ergebnisdarstellung zu den Steuerungsformen.",
+      "summaryZH": "兴奋剂是用违禁手段提升成绩的尝试，除物质外，规则、技术与结果呈现上的操纵同属外部操控形式。",
+      "category": "Sportsoziologie",
+      "curriculumTier": "Q2",
+      "stage": "synthese",
+      "level": 3,
+      "xpReward": 175,
+      "estimatedMinutes": 26,
+      "prerequisites": [
+        "sport-fairness-norm-fairplay-handlung",
+        "sport-aggression-frustration",
+        "sport-soziale-ungleichheit-sportzugang"
+      ],
+      "keyFormulaOrSentence": "Doping verletzt drei Prinzipien zugleich: die Gesundheit der Athleten, die Chancengleichheit des Wettkampfs und die Vorbildfunktion des Sports.",
+      "commonFallacy": "Doping auf einzelne 'schwarze Schafe' reduzieren - Doping ist ein strukturelles Problem aus Leistungsdruck, Kommerzialisierung und Kontrolllücken.",
+      "layerIndex": 12,
+      "tags": ["Definition", "Doping", "Klausur-Dauerbrenner", "Schwerpunkt-2026"]
+    },
+    {
+      "id": "sport-kommerzialisierung-medialisierung",
+      "fach": "Sport",
+      "titleDE": "Kommerzialisierung und Medialisierung des Sports",
+      "titleZH": "商业化与媒介化：当转播时间改写规则",
+      "summaryDE": "Kommerzialisierung richtet Sport an Vermarktungsinteressen aus, Medialisierung passt Wettkampfformate an Übertragungslogiken an; beides verändert Regeln, Termine und Werte des Sports.",
+      "summaryZH": "商业化让体育服从营销利益，媒介化让赛事格式适配转播逻辑，两者共同改变规则、赛程与体育的价值取向。",
+      "category": "Sportsoziologie",
+      "curriculumTier": "Q2",
+      "stage": "synthese",
+      "level": 3,
+      "xpReward": 170,
+      "estimatedMinutes": 24,
+      "prerequisites": [
+        "sport-soziale-ungleichheit-sportzugang",
+        "sport-gruppendynamik-teamrollen"
+      ],
+      "keyFormulaOrSentence": "Medialisierung: Wettkampfformate, Ausrüstung und Regeländerungen werden an Übertragungszeiten und Werbeinteressen angepasst - die Sportlogik folgt der Medienlogik.",
+      "commonFallacy": "Kommerzialisierung nur als Bedrohung sehen - sie finanziert Leistungs- und Breitensportinfrastruktur, verändert aber die Anreizstruktur.",
+      "layerIndex": 12,
+      "tags": ["Definition", "Kommerzialisierung", "AFB-III", "Klausur-Dauerbrenner"]
+    },
+    {
+      "id": "sport-integration-inklusion-durch-sport",
+      "fach": "Sport",
+      "titleDE": "Integration und Inklusion durch Sport",
+      "titleZH": "体育的融合与包容：从同化到共同参与",
+      "summaryDE": "Sport kann Menschen unterschiedlicher Herkunft, Behinderung und sozialer Lage zusammenbringen; ob er integriert oder ausgrenzt, entscheidet die Gestaltung von Regeln, Gruppen und Zugängen.",
+      "summaryZH": "体育能把不同出身、残障与社会处境的人聚到一起，但究竟促成融合还是造成排斥，取决于规则、分组与参与门槛的设计。",
+      "category": "Sportsoziologie",
+      "curriculumTier": "Q2",
+      "stage": "synthese",
+      "level": 3,
+      "xpReward": 175,
+      "estimatedMinutes": 24,
+      "prerequisites": [
+        "sport-soziale-ungleichheit-sportzugang",
+        "sport-kommerzialisierung-medialisierung",
+        "sport-kooperation-konkurrenz-teamsport"
+      ],
+      "keyFormulaOrSentence": "Integration zielt auf Eingliederung in bestehende Strukturen, Inklusion auf den Umbau dieser Strukturen, damit alle von Anfang an teilhaben können.",
+      "commonFallacy": "Integration und Inklusion synonym verwenden - Integration verlangt Anpassung an bestehende Strukturen, Inklusion verändert die Strukturen selbst.",
+      "layerIndex": 13,
+      "tags": ["Definition", "Inklusion", "AFB-III", "Klausur-Dauerbrenner"]
+    },
+    {
+      "id": "sport-spielvermittlungsmodelle-taktik",
+      "fach": "Sport",
+      "titleDE": "Spielvermittlungsmodelle",
+      "titleZH": "球类教学模型：技术先行还是战术先行",
+      "summaryDE": "Spielvermittlungsmodelle unterscheiden sich darin, ob zuerst Techniken geübt oder zuerst Spielsituationen eröffnet werden; das spielgemäße Vermitteln startet vom Spiel und entwickelt Techniken aus dem Spielproblem.",
+      "summaryZH": "球类教学模型的差异在于先练技术还是先进入比赛，从比赛出发的模型让技术从比赛问题中生长出来。",
+      "category": "Sportsoziologie",
+      "curriculumTier": "Q2",
+      "stage": "synthese",
+      "level": 2,
+      "xpReward": 165,
+      "estimatedMinutes": 24,
+      "prerequisites": [
+        "sport-spielgelegenheiten-gestaltung",
+        "sport-gruppendynamik-teamrollen",
+        "sport-kooperation-konkurrenz-teamsport"
+      ],
+      "keyFormulaOrSentence": "Spielgemäßes Vermitteln: Das Spiel wird vereinfacht, aber nicht zerlegt - Techniken werden erst eingeführt, wenn sie im Spiel als Lösungsproblem erfahrbar geworden sind.",
+      "commonFallacy": "Technikschulung und Spielvermittlung für beliebig kombinierbar halten - die Reihenfolge bestimmt, ob die Technik im Spiel überhaupt anwendbar wird.",
+      "layerIndex": 13,
+      "tags": ["Modell", "Sportsoziologie", "Methodik", "AFB-III"]
+    },
+    {
+      "id": "sport-sportsoziologische-theorien",
+      "fach": "Sport",
+      "titleDE": "Sportsoziologische Theorien",
+      "titleZH": "体育社会学理论：从型构到系统再到场域",
+      "summaryDE": "Sportsoziologische Theorien erklären Sport als soziales Phänomen: Figurationssoziologie über Verflechtungszusammenhänge, Systemtheorie über Funktionssysteme, Feldtheorie über Kapital und Distinktion.",
+      "summaryZH": "体育社会学理论把体育解释为社会现象：型构社会学看交织关系，系统理论看功能系统，场域理论看资本与区隔。",
+      "category": "Sportsoziologie",
+      "curriculumTier": "Uni_Prep",
+      "stage": "vertiefung",
+      "level": 3,
+      "xpReward": 185,
+      "estimatedMinutes": 28,
+      "prerequisites": [
+        "sport-doping-steuerung-manipulation",
+        "sport-kommerzialisierung-medialisierung",
+        "sport-integration-inklusion-durch-sport"
+      ],
+      "keyFormulaOrSentence": "Theorievergleich: Figurationssoziologie fragt nach Verflechtung und Zivilisationsprozess, Systemtheorie nach Funktion und Code, Feldtheorie nach Kapitalverteilung und Distinktion im Sport.",
+      "commonFallacy": "Sportsoziologische Theorien als konkurrierende Wahrheiten behandeln - sie sind Perspektiven, die unterschiedliche Fragen beantwortbar machen.",
+      "layerIndex": 16,
+      "tags": ["Modell", "Uni-Prep", "Sportsoziologie", "AFB-III"]
+    },
+    {
+      "id": "sport-koerperhaltung-rueckengesundheit",
+      "fach": "Sport",
+      "titleDE": "Körperhaltung und Rückengesundheit",
+      "titleZH": "身体姿态与背部健康：久坐时代的对抗训练",
+      "summaryDE": "Einseitige Sitzbelastung und eine schwache Rumpfmuskulatur begünstigen Haltungsschäden und Rückenschmerzen; Bewegung und Kräftigung der Rumpfmuskulatur wirken vorbeugend.",
+      "summaryZH": "单侧久坐与躯干肌无力易造成姿态损伤与腰痛，运动与躯干肌强化具有预防作用。",
+      "category": "Sportmedizin-Praevention",
+      "curriculumTier": "Sek_I",
+      "stage": "einfuehrung",
+      "level": 1,
+      "xpReward": 65,
+      "estimatedMinutes": 8,
+      "prerequisites": [],
+      "keyFormulaOrSentence": "Prävention: Regelmäßiger Wechsel zwischen Sitz- und Bewegungsphasen sowie Kräftigung der Rumpf- und Rückenmuskulatur halten das muskuläre Gleichgewicht aufrecht.",
+      "commonFallacy": "Rückenschmerzen grundsätzlich auf einen geschädigten Bandscheibenbefund zurückführen - meist fehlt die stützende Muskulatur, nicht die Struktur.",
+      "layerIndex": 1,
+      "tags": ["Definition", "Basiswissen", "Praevention", "Alltag"]
+    },
+    {
+      "id": "sport-sportverletzungen-erstversorgung",
+      "fach": "Sport",
+      "titleDE": "Sportverletzungen und Erste Versorgung",
+      "titleZH": "运动损伤与急救处置：PECH 原则与红旗征",
+      "summaryDE": "Sportverletzungen reichen von Prellung und Zerrung bis zum Bandriss; die Erstversorgung folgt dem PECH-Schema und entscheidet über Heilungsverlauf und Rückkehrzeitpunkt.",
+      "summaryZH": "运动损伤从挫伤、拉伤到韧带撕裂不等，急救遵循PECH原则，直接影响愈合进程与复出时间。",
+      "category": "Sportmedizin-Praevention",
+      "curriculumTier": "EF",
+      "stage": "grundlagen",
+      "level": 2,
+      "xpReward": 100,
+      "estimatedMinutes": 18,
+      "prerequisites": [
+        "sport-aufwaermen-vorbereitung",
+        "sport-koerperhaltung-rueckengesundheit"
+      ],
+      "keyFormulaOrSentence": "PECH-Schema: Pause, Eis (Kühlung), Compression, Hochlagerung; Kühlung in Intervallen von etwa 15 bis 20 Minuten mit Schutz der Haut.",
+      "commonFallacy": "Nach einer Verletzung sofort wieder belasten, solange 'es noch geht' - die fehlende Schmerzrückmeldung führt zu Folgeverletzungen und längerem Ausfall.",
+      "layerIndex": 3,
+      "tags": ["Verfahren", "Sportmedizin", "Praevention", "Basiswissen"]
+    },
+    {
+      "id": "sport-gesundheitlicher-nutzen-risiken",
+      "fach": "Sport",
+      "titleDE": "Gesundheitlicher Nutzen und Risiken des Sporttreibens",
+      "titleZH": "运动的健康收益与风险：剂量决定利弊",
+      "summaryDE": "Regelmäßige Bewegung senkt das Risiko für Herz-Kreislauf- und Stoffwechselerkrankungen; zugleich entstehen Risiken durch Überlastung, falsche Dosierung und fehlende Erholung.",
+      "summaryZH": "规律运动降低心血管与代谢疾病风险，但过度负荷、剂量错误与恢复不足同样带来健康风险。",
+      "category": "Sportmedizin-Praevention",
+      "curriculumTier": "EF",
+      "stage": "grundlagen",
+      "level": 2,
+      "xpReward": 105,
+      "estimatedMinutes": 18,
+      "prerequisites": [
+        "sport-koerperhaltung-rueckengesundheit",
+        "sport-ausdauer-grundlagen-alltag"
+      ],
+      "keyFormulaOrSentence": "Nutzen und Risiko folgen unterschiedlichen Dosis-Wirkungs-Kurven: Der Nutzen steigt mit der Dosis zunächst steil an, das Verletzungsrisiko wächst überwiegend im Hochlastbereich.",
+      "commonFallacy": "Mehr Sport sei immer gesünder - jenseits der individuellen Belastungsgrenze kehrt sich der gesundheitliche Nutzen um.",
+      "layerIndex": 4,
+      "tags": ["Definition", "Gesundheit", "Klausur-Dauerbrenner", "Sportmedizin"]
+    },
+    {
+      "id": "sport-ernaehrung-grundlagen-sport",
+      "fach": "Sport",
+      "titleDE": "Grundlagen der Sporternährung",
+      "titleZH": "运动营养基础：三大营养素的分工",
+      "summaryDE": "Kohlenhydrate liefern schnell verfügbare Energie, Fette langfristige Reserven, Proteine Bausteine für Aufbau und Reparatur; die Nährstoffverteilung folgt dem Trainingsziel.",
+      "summaryZH": "碳水化合物提供快速能量，脂肪构成长期储备，蛋白质负责构建与修复，营养配比取决于训练目标。",
+      "category": "Sportmedizin-Praevention",
+      "curriculumTier": "EF",
+      "stage": "grundlagen",
+      "level": 2,
+      "xpReward": 110,
+      "estimatedMinutes": 18,
+      "prerequisites": [
+        "sport-koerperhaltung-rueckengesundheit",
+        "sport-energiebereitstellung-atp"
+      ],
+      "keyFormulaOrSentence": "Energiedichte: Kohlenhydrate und Proteine liefern ca. 4 kcal/g, Fett ca. 9 kcal/g; die Ausdauerleistung hängt vor allem von den Kohlenhydratspeichern ab.",
+      "commonFallacy": "Eiweiß für die wichtigste Energiequelle im Ausdauersport halten - bei längerer Belastung limitieren die Glykogenspeicher, nicht das Proteinangebot.",
+      "layerIndex": 5,
+      "tags": ["Formel", "Ernaehrung", "Sportmedizin", "Basiswissen"]
+    },
+    {
+      "id": "sport-hydration-elektrolythaushalt",
+      "fach": "Sport",
+      "titleDE": "Hydration und Elektrolythaushalt",
+      "titleZH": "水合与电解质平衡：脱水如何拖垮成绩",
+      "summaryDE": "Flüssigkeitsverluste über zwei Prozent des Körpergewichts senken die Leistungsfähigkeit deutlich; mit dem Schweiß gehen Elektrolyte verloren, die ersetzt werden müssen.",
+      "summaryZH": "失水量超过体重百分之二即显著降低运动能力，随汗液流失的电解质也必须补充。",
+      "category": "Sportmedizin-Praevention",
+      "curriculumTier": "Q1",
+      "stage": "vertiefung",
+      "level": 2,
+      "xpReward": 135,
+      "estimatedMinutes": 20,
+      "prerequisites": [
+        "sport-ernaehrung-grundlagen-sport",
+        "sport-gesundheitlicher-nutzen-risiken"
+      ],
+      "keyFormulaOrSentence": "Faustregel: Ein Prozent Körpergewichtsverlust entspricht rund einem Liter Flüssigkeitsverlust; ab zwei Prozent sinkt die Ausdauerleistung messbar.",
+      "commonFallacy": "Durst als verlässlichen Indikator für den Flüssigkeitsbedarf nehmen - im Wettkampf setzt das Durstgefühl erst nach Beginn des Defizits ein.",
+      "layerIndex": 7,
+      "tags": ["Formel", "Ernaehrung", "Sportmedizin", "Klausur-Dauerbrenner"]
+    },
+    {
+      "id": "sport-fitness-gesundheit-leistungsfaehigkeit",
+      "fach": "Sport",
+      "titleDE": "Fitness als Basis für Gesundheit und Leistungsfähigkeit",
+      "titleZH": "体能作为健康与成绩的共同底座",
+      "summaryDE": "Fitness bündelt Ausdauer, Kraft, Beweglichkeit und Koordination; ein ausgewogenes Fitnessniveau senkt das Verletzungsrisiko und ist Voraussetzung für sportliche Leistungssteigerung.",
+      "summaryZH": "体能综合耐力、力量、柔韧与协调，均衡的体能水平既降低受伤风险，也是成绩提升的前提。",
+      "category": "Sportmedizin-Praevention",
+      "curriculumTier": "Q1",
+      "stage": "vertiefung",
+      "level": 2,
+      "xpReward": 140,
+      "estimatedMinutes": 20,
+      "prerequisites": [
+        "sport-gesundheitlicher-nutzen-risiken",
+        "sport-ausdauer-grundlagen-alltag",
+        "sport-kraft-grundlagen-koerpergewicht"
+      ],
+      "keyFormulaOrSentence": "Fitness als Basis: Erst ein Mindestniveau in allen Grundfähigkeiten erlaubt sportartspezifische Belastungen, ohne dass die Verletzungsgefahr überproportional steigt.",
+      "commonFallacy": "Fitness allein über Ausdauer definieren - einseitiges Ausdauertraining lässt Kraft, Beweglichkeit und Koordination zurückfallen.",
+      "layerIndex": 8,
+      "tags": ["Definition", "Gesundheit", "Sportmedizin", "Basiswissen"]
+    },
+    {
+      "id": "sport-gesundheitskonzepte-sportlichen-handelns",
+      "fach": "Sport",
+      "titleDE": "Gesundheitskonzepte im sportlichen Handeln",
+      "titleZH": "健康概念：从缺陷模型到资源取向",
+      "summaryDE": "Gesundheitskonzepte unterscheiden sich darin, ob sie Gesundheit als Abwesenheit von Krankheit oder als Ressource und Handlungsfähigkeit fassen; daraus folgen unterschiedliche Bewegungsprogramme.",
+      "summaryZH": "健康概念分为把健康视为无病与视为资源与行动能力两类，二者导出截然不同的运动方案。",
+      "category": "Sportmedizin-Praevention",
+      "curriculumTier": "Q2",
+      "stage": "synthese",
+      "level": 3,
+      "xpReward": 175,
+      "estimatedMinutes": 24,
+      "prerequisites": [
+        "sport-gesundheitlicher-nutzen-risiken",
+        "sport-fitness-gesundheit-leistungsfaehigkeit",
+        "sport-hydration-elektrolythaushalt"
+      ],
+      "keyFormulaOrSentence": "Salutogenetische Perspektive: Gesundheit wird als Kontinuum und als Ergebnis von Ressourcen und Bewältigungsfähigkeit verstanden, nicht als blosse Abwesenheit von Krankheit.",
+      "commonFallacy": "Gesundheitssport auf Krankengymnastik reduzieren - moderne Konzepte setzen bei Ressourcen und Selbstwirksamkeit an, nicht nur beim Defizit.",
+      "layerIndex": 12,
+      "tags": ["Modell", "Gesundheit", "AFB-III", "Klausur-Dauerbrenner"]
+    },
+    {
+      "id": "sport-unphysiologische-massnahmen-risiken",
+      "fach": "Sport",
+      "titleDE": "Unphysiologische Maßnahmen zur Leistungssteigerung",
+      "titleZH": "非生理性提高成绩手段：绕过适应的高昂代价",
+      "summaryDE": "Unphysiologische Maßnahmen wie Doping, Blutmanipulation oder extreme Gewichtsreduktion umgehen die natürliche Anpassung; sie gefährden die Gesundheit und heben die Trainingswirkung auf.",
+      "summaryZH": "兴奋剂、血液操纵或极端减重等非生理手段绕开自然适应过程，既危害健康又消解训练本身的意义。",
+      "category": "Sportmedizin-Praevention",
+      "curriculumTier": "Q2",
+      "stage": "synthese",
+      "level": 3,
+      "xpReward": 175,
+      "estimatedMinutes": 24,
+      "prerequisites": [
+        "sport-gesundheitlicher-nutzen-risiken",
+        "sport-ernaehrung-grundlagen-sport",
+        "sport-fitness-gesundheit-leistungsfaehigkeit"
+      ],
+      "keyFormulaOrSentence": "Unphysiologische Massnahmen erzeugen eine Leistungssteigerung ohne Anpassung des Organismus; damit fehlt die Belastbarkeit, die die höhere Leistung absichern würde.",
+      "commonFallacy": "Unphysiologische Maßnahmen allein als moralisches Problem behandeln - sie sind zuerst ein medizinisches Risiko, weil die Belastbarkeit nicht mitwächst.",
+      "layerIndex": 12,
+      "tags": ["Definition", "Doping", "Sportmedizin", "AFB-III"]
+    },
+    {
+      "id": "sport-praevention-verletzungen-propriozeption",
+      "fach": "Sport",
+      "titleDE": "Prävention von Sportverletzungen",
+      "titleZH": "运动损伤预防：本体感觉、热身与负荷管理",
+      "summaryDE": "Verletzungsprävention stützt sich auf Aufwärmen, propriozeptives Training, ausgewogene Belastungssteuerung und sportartspezifische Schutzmaßnahmen; sie wirkt vor allem bei typischen Verletzungsmustern.",
+      "summaryZH": "损伤预防依托热身、本体感觉训练、均衡负荷调控与专项防护，对典型损伤模式尤其有效。",
+      "category": "Sportmedizin-Praevention",
+      "curriculumTier": "Q2",
+      "stage": "synthese",
+      "level": 3,
+      "xpReward": 175,
+      "estimatedMinutes": 24,
+      "prerequisites": [
+        "sport-sportverletzungen-erstversorgung",
+        "sport-fitness-gesundheit-leistungsfaehigkeit",
+        "sport-koordinative-faehigkeiten"
+      ],
+      "keyFormulaOrSentence": "Propriozeptives Training verbessert die Gelenkstabilisation über eine verbesserte Stellungs- und Bewegungsrückmeldung und senkt insbesondere die Rate erneuter Bandverletzungen.",
+      "commonFallacy": "Dehnen vor dem Sport für die wirksamste Verletzungsprävention halten - statisches Dehnen vor Belastung schützt nicht, propriozeptives und kraftorientiertes Training dagegen schon.",
+      "layerIndex": 13,
+      "tags": ["Verfahren", "Praevention", "Sportmedizin", "Klausur-Dauerbrenner"]
+    },
+    {
+      "id": "sport-leistungsdiagnostik-verfahren",
+      "fach": "Sport",
+      "titleDE": "Verfahren der Leistungsdiagnostik",
+      "titleZH": "成绩诊断方法：把训练效果变成可读数据",
+      "summaryDE": "Leistungsdiagnostische Verfahren wie Stufentests, Laktatkurven, Spiroergometrie und Feldtests machen den Trainingszustand messbar und liefern die Grundlage für Trainingssteuerung.",
+      "summaryZH": "阶梯测试、乳酸曲线、运动心肺功能测试与场地测试使训练状态可测量，为训练调控提供依据。",
+      "category": "Sportmedizin-Praevention",
+      "curriculumTier": "Q2",
+      "stage": "synthese",
+      "level": 3,
+      "xpReward": 180,
+      "estimatedMinutes": 26,
+      "prerequisites": [
+        "sport-laktatschwelle-anaerobe-schwelle",
+        "sport-maximale-sauerstoffaufnahme-vo2max",
+        "sport-fitness-gesundheit-leistungsfaehigkeit"
+      ],
+      "keyFormulaOrSentence": "Stufentest: Aus der Beziehung zwischen Belastungsintensität und Laktatkonzentration werden Schwellen und Trainingsbereiche abgeleitet.",
+      "commonFallacy": "Einzeltestergebnisse für die Gesamtleistungsfähigkeit nehmen - Diagnostik erfasst nur die geprüfte Dimension und ist ohne Wiederholungsmessung nicht interpretierbar.",
+      "layerIndex": 13,
+      "tags": ["Verfahren", "Leistungsdiagnostik", "Sportmedizin", "Klausur-Dauerbrenner"]
+    },
+    {
+      "id": "sport-sportorthopaedie-belastungssteuerung",
+      "fach": "Sport",
+      "titleDE": "Sportorthopädische Belastungssteuerung",
+      "titleZH": "运动骨科的负荷调控：在康复与训练之间",
+      "summaryDE": "Sportorthopädische Belastungssteuerung dosiert Belastung nach Gewebeheilung, Schmerzverhalten und Belastbarkeit und verbindet Rehabilitation mit dem Wiederaufbau der sportartspezifischen Leistungsfähigkeit.",
+      "summaryZH": "运动骨科依据组织愈合、疼痛反应与负荷耐受度分配负荷，把康复与专项能力重建衔接起来。",
+      "category": "Sportmedizin-Praevention",
+      "curriculumTier": "Uni_Prep",
+      "stage": "vertiefung",
+      "level": 3,
+      "xpReward": 185,
+      "estimatedMinutes": 28,
+      "prerequisites": [
+        "sport-praevention-verletzungen-propriozeption",
+        "sport-fitness-gesundheit-leistungsfaehigkeit",
+        "sport-leistungsdiagnostik-verfahren"
+      ],
+      "keyFormulaOrSentence": "Return-to-Sport-Kriterien: Schmerzfreiheit, volle Beweglichkeit, wiederhergestellte Kraftrelation zur Gegenseite und bestandene sportartspezifische Belastungstests.",
+      "commonFallacy": "Heilung mit Schmerzfreiheit gleichsetzen - die Gewebebelastbarkeit ist erst danach wiederhergestellt, weshalb der Wiedereinstieg gestuft erfolgen muss.",
+      "layerIndex": 16,
+      "tags": ["Verfahren", "Uni-Prep", "Sportmedizin", "Praevention"]
+    },
+    {
+      "id": "sport-praeventionsmedizin-bewegungsprogramme",
+      "fach": "Sport",
+      "titleDE": "Evidenzbasierte Bewegungsprogramme",
+      "titleZH": "循证运动处方：把运动当药开",
+      "summaryDE": "Bewegungsprogramme in Prävention und Therapie werden nach Frequenz, Intensität, Zeit und Typ dosiert und an Zielgruppe, Vorerkrankungen und Adhärenz angepasst.",
+      "summaryZH": "预防与治疗性运动方案按频率、强度、时长与类型开方，并针对人群、基础疾病与依从性做调整。",
+      "category": "Sportmedizin-Praevention",
+      "curriculumTier": "Uni_Prep",
+      "stage": "vertiefung",
+      "level": 3,
+      "xpReward": 190,
+      "estimatedMinutes": 28,
+      "prerequisites": [
+        "sport-gesundheitskonzepte-sportlichen-handelns",
+        "sport-praevention-verletzungen-propriozeption",
+        "sport-sportorthopaedie-belastungssteuerung"
+      ],
+      "keyFormulaOrSentence": "Dosierungsraster: Frequenz, Intensität, Zeit und Typ (FITT) werden gemeinsam festgelegt; die Adhärenz entscheidet über den tatsächlichen Nutzen.",
+      "commonFallacy": "Die Wirksamkeit eines Programms allein an der Trainingsintensität messen - ohne Adhärenz und Alltagstauglichkeit bleibt selbst ein optimal dosiertes Programm wirkungslos.",
+      "layerIndex": 17,
+      "tags": ["Verfahren", "Uni-Prep", "Praevention", "Gesundheit"]
+    }
+  ],
+  "edges": [
+    {
+      "id": "e-sport-aufwaermen-vorbereitung-sport-trainingsprinzipien-belastungsnormative",
+      "from": "sport-aufwaermen-vorbereitung",
+      "to": "sport-trainingsprinzipien-belastungsnormative",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-ausdauer-grundlagen-alltag-sport-trainingsprinzipien-belastungsnormative",
+      "from": "sport-ausdauer-grundlagen-alltag",
+      "to": "sport-trainingsprinzipien-belastungsnormative",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-kraft-grundlagen-koerpergewicht-sport-trainingsprinzipien-belastungsnormative",
+      "from": "sport-kraft-grundlagen-koerpergewicht",
+      "to": "sport-trainingsprinzipien-belastungsnormative",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-trainingsprinzipien-belastungsnormative-sport-superkompensation-anpassungsphasen",
+      "from": "sport-trainingsprinzipien-belastungsnormative",
+      "to": "sport-superkompensation-anpassungsphasen",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-trainingsprinzipien-belastungsnormative-sport-trainingsmethoden-ausdauer",
+      "from": "sport-trainingsprinzipien-belastungsnormative",
+      "to": "sport-trainingsmethoden-ausdauer",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-ausdauer-grundlagen-alltag-sport-trainingsmethoden-ausdauer",
+      "from": "sport-ausdauer-grundlagen-alltag",
+      "to": "sport-trainingsmethoden-ausdauer",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-trainingsprinzipien-belastungsnormative-sport-trainingsmethoden-kraft",
+      "from": "sport-trainingsprinzipien-belastungsnormative",
+      "to": "sport-trainingsmethoden-kraft",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-kraft-grundlagen-koerpergewicht-sport-trainingsmethoden-kraft",
+      "from": "sport-kraft-grundlagen-koerpergewicht",
+      "to": "sport-trainingsmethoden-kraft",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-superkompensation-anpassungsphasen-sport-trainingsplanung-periodisierung",
+      "from": "sport-superkompensation-anpassungsphasen",
+      "to": "sport-trainingsplanung-periodisierung",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-trainingsmethoden-ausdauer-sport-trainingsplanung-periodisierung",
+      "from": "sport-trainingsmethoden-ausdauer",
+      "to": "sport-trainingsplanung-periodisierung",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-trainingsmethoden-kraft-sport-trainingsplanung-periodisierung",
+      "from": "sport-trainingsmethoden-kraft",
+      "to": "sport-trainingsplanung-periodisierung",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-superkompensation-anpassungsphasen-sport-belastungssteuerung-intensitaet",
+      "from": "sport-superkompensation-anpassungsphasen",
+      "to": "sport-belastungssteuerung-intensitaet",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-trainingsmethoden-ausdauer-sport-belastungssteuerung-intensitaet",
+      "from": "sport-trainingsmethoden-ausdauer",
+      "to": "sport-belastungssteuerung-intensitaet",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-trainingsplanung-periodisierung-sport-uebertraining-regeneration-monitoring",
+      "from": "sport-trainingsplanung-periodisierung",
+      "to": "sport-uebertraining-regeneration-monitoring",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-belastungssteuerung-intensitaet-sport-uebertraining-regeneration-monitoring",
+      "from": "sport-belastungssteuerung-intensitaet",
+      "to": "sport-uebertraining-regeneration-monitoring",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-superkompensation-anpassungsphasen-sport-uebertraining-regeneration-monitoring",
+      "from": "sport-superkompensation-anpassungsphasen",
+      "to": "sport-uebertraining-regeneration-monitoring",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-trainingsplanung-periodisierung-sport-klausur-synthese-abitur",
+      "from": "sport-trainingsplanung-periodisierung",
+      "to": "sport-klausur-synthese-abitur",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-belastungssteuerung-intensitaet-sport-klausur-synthese-abitur",
+      "from": "sport-belastungssteuerung-intensitaet",
+      "to": "sport-klausur-synthese-abitur",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-uebertraining-regeneration-monitoring-sport-klausur-synthese-abitur",
+      "from": "sport-uebertraining-regeneration-monitoring",
+      "to": "sport-klausur-synthese-abitur",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-laktatschwelle-anaerobe-schwelle-sport-klausur-synthese-abitur",
+      "from": "sport-laktatschwelle-anaerobe-schwelle",
+      "to": "sport-klausur-synthese-abitur",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-bewegungsstruktur-funktionsanalyse-sport-klausur-synthese-abitur",
+      "from": "sport-bewegungsstruktur-funktionsanalyse",
+      "to": "sport-klausur-synthese-abitur",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-doping-steuerung-manipulation-sport-klausur-synthese-abitur",
+      "from": "sport-doping-steuerung-manipulation",
+      "to": "sport-klausur-synthese-abitur",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-gesundheitskonzepte-sportlichen-handelns-sport-klausur-synthese-abitur",
+      "from": "sport-gesundheitskonzepte-sportlichen-handelns",
+      "to": "sport-klausur-synthese-abitur",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-trainingsplanung-periodisierung-sport-trainingswissenschaft-leistungsstruktur",
+      "from": "sport-trainingsplanung-periodisierung",
+      "to": "sport-trainingswissenschaft-leistungsstruktur",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-klausur-synthese-abitur-sport-trainingswissenschaft-leistungsstruktur",
+      "from": "sport-klausur-synthese-abitur",
+      "to": "sport-trainingswissenschaft-leistungsstruktur",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-laktatschwelle-anaerobe-schwelle-sport-trainingswissenschaft-leistungsstruktur",
+      "from": "sport-laktatschwelle-anaerobe-schwelle",
+      "to": "sport-trainingswissenschaft-leistungsstruktur",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-herz-kreislauf-grundlagen-sport-energiebereitstellung-atp",
+      "from": "sport-herz-kreislauf-grundlagen",
+      "to": "sport-energiebereitstellung-atp",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-atmung-sauerstoffaufnahme-grundlagen-sport-energiebereitstellung-atp",
+      "from": "sport-atmung-sauerstoffaufnahme-grundlagen",
+      "to": "sport-energiebereitstellung-atp",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-energiebereitstellung-atp-sport-anaerob-laktazid-glykolyse",
+      "from": "sport-energiebereitstellung-atp",
+      "to": "sport-anaerob-laktazid-glykolyse",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-energiebereitstellung-atp-sport-aerobe-energiebereitstellung-fettoxidation",
+      "from": "sport-energiebereitstellung-atp",
+      "to": "sport-aerobe-energiebereitstellung-fettoxidation",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-atmung-sauerstoffaufnahme-grundlagen-sport-aerobe-energiebereitstellung-fettoxidation",
+      "from": "sport-atmung-sauerstoffaufnahme-grundlagen",
+      "to": "sport-aerobe-energiebereitstellung-fettoxidation",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-herz-kreislauf-grundlagen-sport-muskelkontraktion-fasertypen",
+      "from": "sport-herz-kreislauf-grundlagen",
+      "to": "sport-muskelkontraktion-fasertypen",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-energiebereitstellung-atp-sport-muskelkontraktion-fasertypen",
+      "from": "sport-energiebereitstellung-atp",
+      "to": "sport-muskelkontraktion-fasertypen",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-anaerob-laktazid-glykolyse-sport-laktatschwelle-anaerobe-schwelle",
+      "from": "sport-anaerob-laktazid-glykolyse",
+      "to": "sport-laktatschwelle-anaerobe-schwelle",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-aerobe-energiebereitstellung-fettoxidation-sport-laktatschwelle-anaerobe-schwelle",
+      "from": "sport-aerobe-energiebereitstellung-fettoxidation",
+      "to": "sport-laktatschwelle-anaerobe-schwelle",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-muskelkontraktion-fasertypen-sport-laktatschwelle-anaerobe-schwelle",
+      "from": "sport-muskelkontraktion-fasertypen",
+      "to": "sport-laktatschwelle-anaerobe-schwelle",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-aerobe-energiebereitstellung-fettoxidation-sport-maximale-sauerstoffaufnahme-vo2max",
+      "from": "sport-aerobe-energiebereitstellung-fettoxidation",
+      "to": "sport-maximale-sauerstoffaufnahme-vo2max",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-atmung-sauerstoffaufnahme-grundlagen-sport-maximale-sauerstoffaufnahme-vo2max",
+      "from": "sport-atmung-sauerstoffaufnahme-grundlagen",
+      "to": "sport-maximale-sauerstoffaufnahme-vo2max",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-muskelkontraktion-fasertypen-sport-maximale-sauerstoffaufnahme-vo2max",
+      "from": "sport-muskelkontraktion-fasertypen",
+      "to": "sport-maximale-sauerstoffaufnahme-vo2max",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-herz-kreislauf-grundlagen-sport-herz-kreislauf-adaptation-ausdauertraining",
+      "from": "sport-herz-kreislauf-grundlagen",
+      "to": "sport-herz-kreislauf-adaptation-ausdauertraining",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-maximale-sauerstoffaufnahme-vo2max-sport-herz-kreislauf-adaptation-ausdauertraining",
+      "from": "sport-maximale-sauerstoffaufnahme-vo2max",
+      "to": "sport-herz-kreislauf-adaptation-ausdauertraining",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-laktatschwelle-anaerobe-schwelle-sport-energiestoffwechsel-wettkampfsteuerung",
+      "from": "sport-laktatschwelle-anaerobe-schwelle",
+      "to": "sport-energiestoffwechsel-wettkampfsteuerung",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-maximale-sauerstoffaufnahme-vo2max-sport-energiestoffwechsel-wettkampfsteuerung",
+      "from": "sport-maximale-sauerstoffaufnahme-vo2max",
+      "to": "sport-energiestoffwechsel-wettkampfsteuerung",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-herz-kreislauf-adaptation-ausdauertraining-sport-energiestoffwechsel-wettkampfsteuerung",
+      "from": "sport-herz-kreislauf-adaptation-ausdauertraining",
+      "to": "sport-energiestoffwechsel-wettkampfsteuerung",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-laktatschwelle-anaerobe-schwelle-sport-leistungsphysiologische-schwellenmodelle",
+      "from": "sport-laktatschwelle-anaerobe-schwelle",
+      "to": "sport-leistungsphysiologische-schwellenmodelle",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-energiestoffwechsel-wettkampfsteuerung-sport-leistungsphysiologische-schwellenmodelle",
+      "from": "sport-energiestoffwechsel-wettkampfsteuerung",
+      "to": "sport-leistungsphysiologische-schwellenmodelle",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-maximale-sauerstoffaufnahme-vo2max-sport-leistungsphysiologische-schwellenmodelle",
+      "from": "sport-maximale-sauerstoffaufnahme-vo2max",
+      "to": "sport-leistungsphysiologische-schwellenmodelle",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-leistungsphysiologische-schwellenmodelle-sport-molekulare-adaptation-signalwege",
+      "from": "sport-leistungsphysiologische-schwellenmodelle",
+      "to": "sport-molekulare-adaptation-signalwege",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-herz-kreislauf-adaptation-ausdauertraining-sport-molekulare-adaptation-signalwege",
+      "from": "sport-herz-kreislauf-adaptation-ausdauertraining",
+      "to": "sport-molekulare-adaptation-signalwege",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-muskelkontraktion-fasertypen-sport-molekulare-adaptation-signalwege",
+      "from": "sport-muskelkontraktion-fasertypen",
+      "to": "sport-molekulare-adaptation-signalwege",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-koordination-bewegungssteuerung-grundlagen-sport-motorisches-lernen-lernphasen",
+      "from": "sport-koordination-bewegungssteuerung-grundlagen",
+      "to": "sport-motorisches-lernen-lernphasen",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-bewegungsgrundformen-laufen-springen-werfen-sport-motorisches-lernen-lernphasen",
+      "from": "sport-bewegungsgrundformen-laufen-springen-werfen",
+      "to": "sport-motorisches-lernen-lernphasen",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-koordination-bewegungssteuerung-grundlagen-sport-koordinative-faehigkeiten",
+      "from": "sport-koordination-bewegungssteuerung-grundlagen",
+      "to": "sport-koordinative-faehigkeiten",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-motorisches-lernen-lernphasen-sport-koordinative-faehigkeiten",
+      "from": "sport-motorisches-lernen-lernphasen",
+      "to": "sport-koordinative-faehigkeiten",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-bewegungsgrundformen-laufen-springen-werfen-sport-bewegungsanalyse-beobachtungskriterien",
+      "from": "sport-bewegungsgrundformen-laufen-springen-werfen",
+      "to": "sport-bewegungsanalyse-beobachtungskriterien",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-motorisches-lernen-lernphasen-sport-bewegungsanalyse-beobachtungskriterien",
+      "from": "sport-motorisches-lernen-lernphasen",
+      "to": "sport-bewegungsanalyse-beobachtungskriterien",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-bewegungsgrundformen-laufen-springen-werfen-sport-hebelgesetze-bewegungsapparat",
+      "from": "sport-bewegungsgrundformen-laufen-springen-werfen",
+      "to": "sport-hebelgesetze-bewegungsapparat",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-bewegungsanalyse-beobachtungskriterien-sport-hebelgesetze-bewegungsapparat",
+      "from": "sport-bewegungsanalyse-beobachtungskriterien",
+      "to": "sport-hebelgesetze-bewegungsapparat",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-hebelgesetze-bewegungsapparat-sport-kraftvektoren-drehmoment",
+      "from": "sport-hebelgesetze-bewegungsapparat",
+      "to": "sport-kraftvektoren-drehmoment",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-muskelkontraktion-fasertypen-sport-kraftvektoren-drehmoment",
+      "from": "sport-muskelkontraktion-fasertypen",
+      "to": "sport-kraftvektoren-drehmoment",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-bewegungsgrundformen-laufen-springen-werfen-sport-kraftvektoren-drehmoment",
+      "from": "sport-bewegungsgrundformen-laufen-springen-werfen",
+      "to": "sport-kraftvektoren-drehmoment",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-bewegungsanalyse-beobachtungskriterien-sport-bewegungsstruktur-funktionsanalyse",
+      "from": "sport-bewegungsanalyse-beobachtungskriterien",
+      "to": "sport-bewegungsstruktur-funktionsanalyse",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-hebelgesetze-bewegungsapparat-sport-bewegungsstruktur-funktionsanalyse",
+      "from": "sport-hebelgesetze-bewegungsapparat",
+      "to": "sport-bewegungsstruktur-funktionsanalyse",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-kraftvektoren-drehmoment-sport-bewegungsstruktur-funktionsanalyse",
+      "from": "sport-kraftvektoren-drehmoment",
+      "to": "sport-bewegungsstruktur-funktionsanalyse",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-motorisches-lernen-lernphasen-sport-informationsaufnahme-verarbeitung",
+      "from": "sport-motorisches-lernen-lernphasen",
+      "to": "sport-informationsaufnahme-verarbeitung",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-koordinative-faehigkeiten-sport-informationsaufnahme-verarbeitung",
+      "from": "sport-koordinative-faehigkeiten",
+      "to": "sport-informationsaufnahme-verarbeitung",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-koordination-bewegungssteuerung-grundlagen-sport-informationsaufnahme-verarbeitung",
+      "from": "sport-koordination-bewegungssteuerung-grundlagen",
+      "to": "sport-informationsaufnahme-verarbeitung",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-kraftvektoren-drehmoment-sport-biomechanische-technikoptimierung",
+      "from": "sport-kraftvektoren-drehmoment",
+      "to": "sport-biomechanische-technikoptimierung",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-bewegungsstruktur-funktionsanalyse-sport-biomechanische-technikoptimierung",
+      "from": "sport-bewegungsstruktur-funktionsanalyse",
+      "to": "sport-biomechanische-technikoptimierung",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-informationsaufnahme-verarbeitung-sport-biomechanische-technikoptimierung",
+      "from": "sport-informationsaufnahme-verarbeitung",
+      "to": "sport-biomechanische-technikoptimierung",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-bewegungsstruktur-funktionsanalyse-sport-bewegungswissenschaft-modellbildung",
+      "from": "sport-bewegungsstruktur-funktionsanalyse",
+      "to": "sport-bewegungswissenschaft-modellbildung",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-informationsaufnahme-verarbeitung-sport-bewegungswissenschaft-modellbildung",
+      "from": "sport-informationsaufnahme-verarbeitung",
+      "to": "sport-bewegungswissenschaft-modellbildung",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-biomechanische-technikoptimierung-sport-bewegungswissenschaft-modellbildung",
+      "from": "sport-biomechanische-technikoptimierung",
+      "to": "sport-bewegungswissenschaft-modellbildung",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-bewegungswissenschaft-modellbildung-sport-motor-control-dynamische-systeme",
+      "from": "sport-bewegungswissenschaft-modellbildung",
+      "to": "sport-motor-control-dynamische-systeme",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-informationsaufnahme-verarbeitung-sport-motor-control-dynamische-systeme",
+      "from": "sport-informationsaufnahme-verarbeitung",
+      "to": "sport-motor-control-dynamische-systeme",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-motorisches-lernen-lernphasen-sport-motor-control-dynamische-systeme",
+      "from": "sport-motorisches-lernen-lernphasen",
+      "to": "sport-motor-control-dynamische-systeme",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-sportmotivation-grundlagen-freude-sport-motivation-intrinsisch-extrinsisch",
+      "from": "sport-sportmotivation-grundlagen-freude",
+      "to": "sport-motivation-intrinsisch-extrinsisch",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-sportmotivation-grundlagen-freude-sport-angst-aktivierung-handlungssteuerung",
+      "from": "sport-sportmotivation-grundlagen-freude",
+      "to": "sport-angst-aktivierung-handlungssteuerung",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-sportmotivation-grundlagen-freude-sport-mentales-training-vorstellung",
+      "from": "sport-sportmotivation-grundlagen-freude",
+      "to": "sport-mentales-training-vorstellung",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-motivation-intrinsisch-extrinsisch-sport-mentales-training-vorstellung",
+      "from": "sport-motivation-intrinsisch-extrinsisch",
+      "to": "sport-mentales-training-vorstellung",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-motivation-intrinsisch-extrinsisch-sport-persoenlichkeit-und-sport",
+      "from": "sport-motivation-intrinsisch-extrinsisch",
+      "to": "sport-persoenlichkeit-und-sport",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-angst-aktivierung-handlungssteuerung-sport-persoenlichkeit-und-sport",
+      "from": "sport-angst-aktivierung-handlungssteuerung",
+      "to": "sport-persoenlichkeit-und-sport",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-motivation-intrinsisch-extrinsisch-sport-flow-erleben-optimale-erfahrung",
+      "from": "sport-motivation-intrinsisch-extrinsisch",
+      "to": "sport-flow-erleben-optimale-erfahrung",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-angst-aktivierung-handlungssteuerung-sport-flow-erleben-optimale-erfahrung",
+      "from": "sport-angst-aktivierung-handlungssteuerung",
+      "to": "sport-flow-erleben-optimale-erfahrung",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-mentales-training-vorstellung-sport-flow-erleben-optimale-erfahrung",
+      "from": "sport-mentales-training-vorstellung",
+      "to": "sport-flow-erleben-optimale-erfahrung",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-motivation-intrinsisch-extrinsisch-sport-selbstwirksamkeit-attribution",
+      "from": "sport-motivation-intrinsisch-extrinsisch",
+      "to": "sport-selbstwirksamkeit-attribution",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-persoenlichkeit-und-sport-sport-selbstwirksamkeit-attribution",
+      "from": "sport-persoenlichkeit-und-sport",
+      "to": "sport-selbstwirksamkeit-attribution",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-angst-aktivierung-handlungssteuerung-sport-stress-bewaeltigung-wettkampf",
+      "from": "sport-angst-aktivierung-handlungssteuerung",
+      "to": "sport-stress-bewaeltigung-wettkampf",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-flow-erleben-optimale-erfahrung-sport-stress-bewaeltigung-wettkampf",
+      "from": "sport-flow-erleben-optimale-erfahrung",
+      "to": "sport-stress-bewaeltigung-wettkampf",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-selbstwirksamkeit-attribution-sport-stress-bewaeltigung-wettkampf",
+      "from": "sport-selbstwirksamkeit-attribution",
+      "to": "sport-stress-bewaeltigung-wettkampf",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-motivation-intrinsisch-extrinsisch-sport-motivationsfoerderung-trainerhandeln",
+      "from": "sport-motivation-intrinsisch-extrinsisch",
+      "to": "sport-motivationsfoerderung-trainerhandeln",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-persoenlichkeit-und-sport-sport-motivationsfoerderung-trainerhandeln",
+      "from": "sport-persoenlichkeit-und-sport",
+      "to": "sport-motivationsfoerderung-trainerhandeln",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-selbstwirksamkeit-attribution-sport-motivationsfoerderung-trainerhandeln",
+      "from": "sport-selbstwirksamkeit-attribution",
+      "to": "sport-motivationsfoerderung-trainerhandeln",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-stress-bewaeltigung-wettkampf-sport-psychische-belastung-leistungssport",
+      "from": "sport-stress-bewaeltigung-wettkampf",
+      "to": "sport-psychische-belastung-leistungssport",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-motivationsfoerderung-trainerhandeln-sport-psychische-belastung-leistungssport",
+      "from": "sport-motivationsfoerderung-trainerhandeln",
+      "to": "sport-psychische-belastung-leistungssport",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-flow-erleben-optimale-erfahrung-sport-psychische-belastung-leistungssport",
+      "from": "sport-flow-erleben-optimale-erfahrung",
+      "to": "sport-psychische-belastung-leistungssport",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-angst-aktivierung-handlungssteuerung-sport-sportpsychologische-aktivierungstheorien",
+      "from": "sport-angst-aktivierung-handlungssteuerung",
+      "to": "sport-sportpsychologische-aktivierungstheorien",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-flow-erleben-optimale-erfahrung-sport-sportpsychologische-aktivierungstheorien",
+      "from": "sport-flow-erleben-optimale-erfahrung",
+      "to": "sport-sportpsychologische-aktivierungstheorien",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-stress-bewaeltigung-wettkampf-sport-sportpsychologische-aktivierungstheorien",
+      "from": "sport-stress-bewaeltigung-wettkampf",
+      "to": "sport-sportpsychologische-aktivierungstheorien",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-sportpsychologische-aktivierungstheorien-sport-psychologische-leistungsdiagnostik",
+      "from": "sport-sportpsychologische-aktivierungstheorien",
+      "to": "sport-psychologische-leistungsdiagnostik",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-psychische-belastung-leistungssport-sport-psychologische-leistungsdiagnostik",
+      "from": "sport-psychische-belastung-leistungssport",
+      "to": "sport-psychologische-leistungsdiagnostik",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-selbstwirksamkeit-attribution-sport-psychologische-leistungsdiagnostik",
+      "from": "sport-selbstwirksamkeit-attribution",
+      "to": "sport-psychologische-leistungsdiagnostik",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-fairplay-regeln-grundlagen-sport-fairness-norm-fairplay-handlung",
+      "from": "sport-fairplay-regeln-grundlagen",
+      "to": "sport-fairness-norm-fairplay-handlung",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-fairplay-regeln-grundlagen-sport-spielgelegenheiten-gestaltung",
+      "from": "sport-fairplay-regeln-grundlagen",
+      "to": "sport-spielgelegenheiten-gestaltung",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-fairplay-regeln-grundlagen-sport-kooperation-konkurrenz-teamsport",
+      "from": "sport-fairplay-regeln-grundlagen",
+      "to": "sport-kooperation-konkurrenz-teamsport",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-fairness-norm-fairplay-handlung-sport-kooperation-konkurrenz-teamsport",
+      "from": "sport-fairness-norm-fairplay-handlung",
+      "to": "sport-kooperation-konkurrenz-teamsport",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-fairness-norm-fairplay-handlung-sport-aggression-frustration",
+      "from": "sport-fairness-norm-fairplay-handlung",
+      "to": "sport-aggression-frustration",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-kooperation-konkurrenz-teamsport-sport-aggression-frustration",
+      "from": "sport-kooperation-konkurrenz-teamsport",
+      "to": "sport-aggression-frustration",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-kooperation-konkurrenz-teamsport-sport-gruppendynamik-teamrollen",
+      "from": "sport-kooperation-konkurrenz-teamsport",
+      "to": "sport-gruppendynamik-teamrollen",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-spielgelegenheiten-gestaltung-sport-gruppendynamik-teamrollen",
+      "from": "sport-spielgelegenheiten-gestaltung",
+      "to": "sport-gruppendynamik-teamrollen",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-spielgelegenheiten-gestaltung-sport-soziale-ungleichheit-sportzugang",
+      "from": "sport-spielgelegenheiten-gestaltung",
+      "to": "sport-soziale-ungleichheit-sportzugang",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-gruppendynamik-teamrollen-sport-soziale-ungleichheit-sportzugang",
+      "from": "sport-gruppendynamik-teamrollen",
+      "to": "sport-soziale-ungleichheit-sportzugang",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-fairness-norm-fairplay-handlung-sport-doping-steuerung-manipulation",
+      "from": "sport-fairness-norm-fairplay-handlung",
+      "to": "sport-doping-steuerung-manipulation",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-aggression-frustration-sport-doping-steuerung-manipulation",
+      "from": "sport-aggression-frustration",
+      "to": "sport-doping-steuerung-manipulation",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-soziale-ungleichheit-sportzugang-sport-doping-steuerung-manipulation",
+      "from": "sport-soziale-ungleichheit-sportzugang",
+      "to": "sport-doping-steuerung-manipulation",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-soziale-ungleichheit-sportzugang-sport-kommerzialisierung-medialisierung",
+      "from": "sport-soziale-ungleichheit-sportzugang",
+      "to": "sport-kommerzialisierung-medialisierung",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-gruppendynamik-teamrollen-sport-kommerzialisierung-medialisierung",
+      "from": "sport-gruppendynamik-teamrollen",
+      "to": "sport-kommerzialisierung-medialisierung",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-soziale-ungleichheit-sportzugang-sport-integration-inklusion-durch-sport",
+      "from": "sport-soziale-ungleichheit-sportzugang",
+      "to": "sport-integration-inklusion-durch-sport",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-kommerzialisierung-medialisierung-sport-integration-inklusion-durch-sport",
+      "from": "sport-kommerzialisierung-medialisierung",
+      "to": "sport-integration-inklusion-durch-sport",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-kooperation-konkurrenz-teamsport-sport-integration-inklusion-durch-sport",
+      "from": "sport-kooperation-konkurrenz-teamsport",
+      "to": "sport-integration-inklusion-durch-sport",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-spielgelegenheiten-gestaltung-sport-spielvermittlungsmodelle-taktik",
+      "from": "sport-spielgelegenheiten-gestaltung",
+      "to": "sport-spielvermittlungsmodelle-taktik",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-gruppendynamik-teamrollen-sport-spielvermittlungsmodelle-taktik",
+      "from": "sport-gruppendynamik-teamrollen",
+      "to": "sport-spielvermittlungsmodelle-taktik",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-kooperation-konkurrenz-teamsport-sport-spielvermittlungsmodelle-taktik",
+      "from": "sport-kooperation-konkurrenz-teamsport",
+      "to": "sport-spielvermittlungsmodelle-taktik",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-doping-steuerung-manipulation-sport-sportsoziologische-theorien",
+      "from": "sport-doping-steuerung-manipulation",
+      "to": "sport-sportsoziologische-theorien",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-kommerzialisierung-medialisierung-sport-sportsoziologische-theorien",
+      "from": "sport-kommerzialisierung-medialisierung",
+      "to": "sport-sportsoziologische-theorien",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-integration-inklusion-durch-sport-sport-sportsoziologische-theorien",
+      "from": "sport-integration-inklusion-durch-sport",
+      "to": "sport-sportsoziologische-theorien",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-aufwaermen-vorbereitung-sport-sportverletzungen-erstversorgung",
+      "from": "sport-aufwaermen-vorbereitung",
+      "to": "sport-sportverletzungen-erstversorgung",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-koerperhaltung-rueckengesundheit-sport-sportverletzungen-erstversorgung",
+      "from": "sport-koerperhaltung-rueckengesundheit",
+      "to": "sport-sportverletzungen-erstversorgung",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-koerperhaltung-rueckengesundheit-sport-gesundheitlicher-nutzen-risiken",
+      "from": "sport-koerperhaltung-rueckengesundheit",
+      "to": "sport-gesundheitlicher-nutzen-risiken",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-ausdauer-grundlagen-alltag-sport-gesundheitlicher-nutzen-risiken",
+      "from": "sport-ausdauer-grundlagen-alltag",
+      "to": "sport-gesundheitlicher-nutzen-risiken",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-koerperhaltung-rueckengesundheit-sport-ernaehrung-grundlagen-sport",
+      "from": "sport-koerperhaltung-rueckengesundheit",
+      "to": "sport-ernaehrung-grundlagen-sport",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-energiebereitstellung-atp-sport-ernaehrung-grundlagen-sport",
+      "from": "sport-energiebereitstellung-atp",
+      "to": "sport-ernaehrung-grundlagen-sport",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-ernaehrung-grundlagen-sport-sport-hydration-elektrolythaushalt",
+      "from": "sport-ernaehrung-grundlagen-sport",
+      "to": "sport-hydration-elektrolythaushalt",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-gesundheitlicher-nutzen-risiken-sport-hydration-elektrolythaushalt",
+      "from": "sport-gesundheitlicher-nutzen-risiken",
+      "to": "sport-hydration-elektrolythaushalt",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-gesundheitlicher-nutzen-risiken-sport-fitness-gesundheit-leistungsfaehigkeit",
+      "from": "sport-gesundheitlicher-nutzen-risiken",
+      "to": "sport-fitness-gesundheit-leistungsfaehigkeit",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-ausdauer-grundlagen-alltag-sport-fitness-gesundheit-leistungsfaehigkeit",
+      "from": "sport-ausdauer-grundlagen-alltag",
+      "to": "sport-fitness-gesundheit-leistungsfaehigkeit",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-kraft-grundlagen-koerpergewicht-sport-fitness-gesundheit-leistungsfaehigkeit",
+      "from": "sport-kraft-grundlagen-koerpergewicht",
+      "to": "sport-fitness-gesundheit-leistungsfaehigkeit",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-gesundheitlicher-nutzen-risiken-sport-gesundheitskonzepte-sportlichen-handelns",
+      "from": "sport-gesundheitlicher-nutzen-risiken",
+      "to": "sport-gesundheitskonzepte-sportlichen-handelns",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-fitness-gesundheit-leistungsfaehigkeit-sport-gesundheitskonzepte-sportlichen-handelns",
+      "from": "sport-fitness-gesundheit-leistungsfaehigkeit",
+      "to": "sport-gesundheitskonzepte-sportlichen-handelns",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-hydration-elektrolythaushalt-sport-gesundheitskonzepte-sportlichen-handelns",
+      "from": "sport-hydration-elektrolythaushalt",
+      "to": "sport-gesundheitskonzepte-sportlichen-handelns",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-gesundheitlicher-nutzen-risiken-sport-unphysiologische-massnahmen-risiken",
+      "from": "sport-gesundheitlicher-nutzen-risiken",
+      "to": "sport-unphysiologische-massnahmen-risiken",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-ernaehrung-grundlagen-sport-sport-unphysiologische-massnahmen-risiken",
+      "from": "sport-ernaehrung-grundlagen-sport",
+      "to": "sport-unphysiologische-massnahmen-risiken",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-fitness-gesundheit-leistungsfaehigkeit-sport-unphysiologische-massnahmen-risiken",
+      "from": "sport-fitness-gesundheit-leistungsfaehigkeit",
+      "to": "sport-unphysiologische-massnahmen-risiken",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-sportverletzungen-erstversorgung-sport-praevention-verletzungen-propriozeption",
+      "from": "sport-sportverletzungen-erstversorgung",
+      "to": "sport-praevention-verletzungen-propriozeption",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-fitness-gesundheit-leistungsfaehigkeit-sport-praevention-verletzungen-propriozeption",
+      "from": "sport-fitness-gesundheit-leistungsfaehigkeit",
+      "to": "sport-praevention-verletzungen-propriozeption",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-koordinative-faehigkeiten-sport-praevention-verletzungen-propriozeption",
+      "from": "sport-koordinative-faehigkeiten",
+      "to": "sport-praevention-verletzungen-propriozeption",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-laktatschwelle-anaerobe-schwelle-sport-leistungsdiagnostik-verfahren",
+      "from": "sport-laktatschwelle-anaerobe-schwelle",
+      "to": "sport-leistungsdiagnostik-verfahren",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-maximale-sauerstoffaufnahme-vo2max-sport-leistungsdiagnostik-verfahren",
+      "from": "sport-maximale-sauerstoffaufnahme-vo2max",
+      "to": "sport-leistungsdiagnostik-verfahren",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-fitness-gesundheit-leistungsfaehigkeit-sport-leistungsdiagnostik-verfahren",
+      "from": "sport-fitness-gesundheit-leistungsfaehigkeit",
+      "to": "sport-leistungsdiagnostik-verfahren",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-praevention-verletzungen-propriozeption-sport-sportorthopaedie-belastungssteuerung",
+      "from": "sport-praevention-verletzungen-propriozeption",
+      "to": "sport-sportorthopaedie-belastungssteuerung",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-fitness-gesundheit-leistungsfaehigkeit-sport-sportorthopaedie-belastungssteuerung",
+      "from": "sport-fitness-gesundheit-leistungsfaehigkeit",
+      "to": "sport-sportorthopaedie-belastungssteuerung",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-leistungsdiagnostik-verfahren-sport-sportorthopaedie-belastungssteuerung",
+      "from": "sport-leistungsdiagnostik-verfahren",
+      "to": "sport-sportorthopaedie-belastungssteuerung",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-gesundheitskonzepte-sportlichen-handelns-sport-praeventionsmedizin-bewegungsprogramme",
+      "from": "sport-gesundheitskonzepte-sportlichen-handelns",
+      "to": "sport-praeventionsmedizin-bewegungsprogramme",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-praevention-verletzungen-propriozeption-sport-praeventionsmedizin-bewegungsprogramme",
+      "from": "sport-praevention-verletzungen-propriozeption",
+      "to": "sport-praeventionsmedizin-bewegungsprogramme",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-sport-sportorthopaedie-belastungssteuerung-sport-praeventionsmedizin-bewegungsprogramme",
+      "from": "sport-sportorthopaedie-belastungssteuerung",
+      "to": "sport-praeventionsmedizin-bewegungsprogramme",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-syn-1",
+      "from": "sport-superkompensation-anpassungsphasen",
+      "to": "sport-belastungssteuerung-intensitaet",
+      "type": "synergy",
+      "descriptionZH": "超量恢复窗口与心率强度区间是同一现象的时间面与强度面"
+    },
+    {
+      "id": "e-syn-2",
+      "from": "sport-trainingsmethoden-ausdauer",
+      "to": "sport-laktatschwelle-anaerobe-schwelle",
+      "type": "synergy",
+      "descriptionZH": "耐力方法的强度设定必须落在乳酸阈所划分的区间里才算靶向"
+    },
+    {
+      "id": "e-syn-3",
+      "from": "sport-energiebereitstellung-atp",
+      "to": "sport-muskelkontraktion-fasertypen",
+      "type": "synergy",
+      "descriptionZH": "供能通路与肌纤维类型一一对应：快肌走无氧，慢肌走有氧"
+    },
+    {
+      "id": "e-syn-4",
+      "from": "sport-hebelgesetze-bewegungsapparat",
+      "to": "sport-muskelkontraktion-fasertypen",
+      "type": "synergy",
+      "descriptionZH": "杠杆换算给出所需肌力，纤维类型决定这股力能否快速输出"
+    },
+    {
+      "id": "e-syn-5",
+      "from": "sport-bewegungsanalyse-beobachtungskriterien",
+      "to": "sport-motorisches-lernen-lernphasen",
+      "type": "synergy",
+      "descriptionZH": "观察指标必须按学习阶段选择，否则会把阶段性现象误判为技术缺陷"
+    },
+    {
+      "id": "e-syn-6",
+      "from": "sport-angst-aktivierung-handlungssteuerung",
+      "to": "sport-mentales-training-vorstellung",
+      "type": "synergy",
+      "descriptionZH": "降低焦虑与建立正确动作表象是同一心理技能的两面"
+    },
+    {
+      "id": "e-syn-7",
+      "from": "sport-flow-erleben-optimale-erfahrung",
+      "to": "sport-motivation-intrinsisch-extrinsisch",
+      "type": "synergy",
+      "descriptionZH": "心流是内在动机在任务情境中最直观的可见形态"
+    },
+    {
+      "id": "e-syn-8",
+      "from": "sport-fairness-norm-fairplay-handlung",
+      "to": "sport-aggression-frustration",
+      "type": "synergy",
+      "descriptionZH": "公平规范是判断攻击行为是否越界的准则来源"
+    },
+    {
+      "id": "e-syn-9",
+      "from": "sport-doping-steuerung-manipulation",
+      "to": "sport-unphysiologische-massnahmen-risiken",
+      "type": "synergy",
+      "descriptionZH": "兴奋剂的社会维度与医学维度指向同一个现象的两侧"
+    },
+    {
+      "id": "e-syn-10",
+      "from": "sport-gesundheitlicher-nutzen-risiken",
+      "to": "sport-ausdauer-grundlagen-alltag",
+      "type": "synergy",
+      "descriptionZH": "健康收益的剂量曲线来自耐力基础训练的长期累积效应"
+    },
+    {
+      "id": "e-cross-1",
+      "from": "sport-energiebereitstellung-atp",
+      "to": "sport-ernaehrung-grundlagen-sport",
+      "type": "cross_disciplinary",
+      "descriptionZH": "营养素的能量密度直接决定可供能底物的数量"
+    },
+    {
+      "id": "e-cross-2",
+      "from": "sport-koordinative-faehigkeiten",
+      "to": "sport-praevention-verletzungen-propriozeption",
+      "type": "cross_disciplinary",
+      "descriptionZH": "协调能力正是损伤预防中本体感觉训练所要提升的目标"
+    },
+    {
+      "id": "e-cross-3",
+      "from": "sport-soziale-ungleichheit-sportzugang",
+      "to": "sport-gesundheitlicher-nutzen-risiken",
+      "type": "cross_disciplinary",
+      "descriptionZH": "健康收益的社会分布取决于谁真正获得了运动机会"
+    },
+    {
+      "id": "e-cross-4",
+      "from": "sport-stress-bewaeltigung-wettkampf",
+      "to": "sport-uebertraining-regeneration-monitoring",
+      "type": "cross_disciplinary",
+      "descriptionZH": "心理应激与生理过载在监控指标上相互叠加，须合并判读"
+    },
+    {
+      "id": "e-cross-5",
+      "from": "sport-informationsaufnahme-verarbeitung",
+      "to": "sport-spielvermittlungsmodelle-taktik",
+      "type": "cross_disciplinary",
+      "descriptionZH": "球类教学模型的核心目标之一是提高比赛情境中的信息加工速度"
+    },
+    {
+      "id": "e-cross-6",
+      "from": "sport-trainingswissenschaft-leistungsstruktur",
+      "to": "sport-leistungsdiagnostik-verfahren",
+      "type": "cross_disciplinary",
+      "descriptionZH": "成绩结构模型决定诊断究竟该测哪些维度"
+    }
+  ]
+}
