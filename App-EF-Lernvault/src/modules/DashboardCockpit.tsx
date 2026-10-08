@@ -279,6 +279,97 @@ const DEMO_MISSIONS: MissionItem[] = [
   },
 ];
 
+interface SprintDay {
+  day: number;
+  labelDE: string;
+  labelZH: string;
+  focusDE: string;
+  focusZH: string;
+  actionTextDE: string;
+  actionTextZH: string;
+  targetTab: string;
+  tabContext?: { fach?: string; query?: string };
+}
+
+const SPRINT_DAYS: SprintDay[] = [
+  {
+    day: 1,
+    labelDE: "Tag 1: Begriffe",
+    labelZH: "第 1 天: 概念扫盲",
+    focusDE: "Definitionen der Operatoren & 15 Kerntermini verankern",
+    focusZH: "掌握题目设问动词定义与 15 个学科核心术语",
+    actionTextDE: "Lernkarten starten",
+    actionTextZH: "开始抽认卡攻坚",
+    targetTab: "flashcards",
+    tabContext: { fach: "SoWi" },
+  },
+  {
+    day: 2,
+    labelDE: "Tag 2: Modelle",
+    labelZH: "第 2 天: 理论模型",
+    focusDE: "Strukturmodelle (Wohlfahrtsstaat / Analysis) durchdringen",
+    focusZH: "理清福利国家模型与导数几何直观的内在因果链",
+    actionTextDE: "Wissensnotiz lesen",
+    actionTextZH: "研读考点精要",
+    targetTab: "library",
+    tabContext: { fach: "SoWi", query: "Soziale Ungleichheit" },
+  },
+  {
+    day: 3,
+    labelDE: "Tag 3: Material",
+    labelZH: "第 3 天: 材料精读",
+    focusDE: "TATTE-Basissatz & synthetische Zitiertechnik trainieren",
+    focusZH: "训练导语五要素与无缝行号引证规范",
+    actionTextDE: "Methode üben",
+    actionTextZH: "训练引证解题法",
+    targetTab: "library",
+    tabContext: { fach: "Deutsch", query: "Sachtextanalyse" },
+  },
+  {
+    day: 4,
+    labelDE: "Tag 4: Simulation",
+    labelZH: "第 4 天: 随堂模考",
+    focusDE: "45-Minuten Vollsimulation unter realistischen Bedingungen",
+    focusZH: "全真 45 分钟会考模拟，执行官方采分纪律",
+    actionTextDE: "Vollsimulation",
+    actionTextZH: "进入仿真模考",
+    targetTab: "klausursim",
+    tabContext: { fach: "SoWi" },
+  },
+  {
+    day: 5,
+    labelDE: "Tag 5: Fehlerlog",
+    labelZH: "第 5 天: 官方归因",
+    focusDE: "Amtliche EHZ-Indikatoren abgleichen & Defizite bereinigen",
+    focusZH: "对照官方评分细则，定位 D1-D5 与 MINT 失分根源",
+    actionTextDE: "Fehlerlog öffnen",
+    actionTextZH: "复盘错题日志",
+    targetTab: "klausursim",
+    tabContext: { fach: "SoWi" },
+  },
+  {
+    day: 6,
+    labelDE: "Tag 6: Stil",
+    labelZH: "第 6 天: 满分表达",
+    focusDE: "Nominalstil, hypotaktische Satzgefüge & Konnektoren sichern",
+    focusZH: "升级名词化高阶句式，构建让步与因果论证张力",
+    actionTextDE: "Satzbausteine",
+    actionTextZH: "巩固学术句型",
+    targetTab: "library",
+    tabContext: { fach: "Deutsch" },
+  },
+  {
+    day: 7,
+    labelDE: "Tag 7: Check",
+    labelZH: "第 7 天: 考前闭环",
+    focusDE: "Checkliste durchgehen & mentale Gelassenheit sichern",
+    focusZH: "逐条核对考前自查清单，确保零低级失误",
+    actionTextDE: "Checkliste",
+    actionTextZH: "自查闭环打卡",
+    targetTab: "planner",
+  },
+];
+
 interface FocusExercise {
   questionDE: string;
   questionZH: string;
@@ -791,6 +882,8 @@ export function DashboardCockpit({
   const [fachFilter, setFachFilter] = useState<string>("klausur");
   const [otherSubjectsExpanded, setOtherSubjectsExpanded] = useState<boolean>(false);
   const [activeFocusMission, setActiveFocusMission] = useState<MissionItem | null>(null);
+  const [activeSprintDay, setActiveSprintDay] = useState<number>(3);
+  const [sprintCollapsed, setSprintCollapsed] = useState<boolean>(false);
 
   const filteredMissions = useMemo(() => {
     if (fachFilter === "alle") return DEMO_MISSIONS;
@@ -1051,6 +1144,110 @@ export function DashboardCockpit({
             </button>
           </div>
         </div>
+      </section>
+
+      {/* 3. Klausur-Countdown & 7-Tage-Abitur-Sprint 战役冲刺路线 (借鉴 good-learning-skill) */}
+      <section className="card-elevation p-4 space-y-3">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-2.5 border-b border-slate-100">
+          <div className="flex items-center gap-2">
+            <span className="font-mono text-[10px] font-bold text-amber-900 bg-amber-50 border border-amber-300 px-2 py-0.5 rounded-full uppercase">
+              {de ? "Sprint-Phase" : "考期冲刺"}
+            </span>
+            <h2 className="font-serif text-sm font-bold text-slate-900 tracking-tight">
+              {de ? "Klausurphase 1 · 7-Tage-Abitur-Roadmap" : "会考第一轮 · 7 天步进攻坚路线"}
+            </h2>
+          </div>
+
+          <div className="flex items-center gap-3">
+            <div className="text-xs font-mono text-slate-700 font-semibold flex items-center gap-1.5">
+              <span className="w-2 h-2 rounded-full bg-amber-500 animate-pulse" />
+              <span>{de ? "Noch 12 Tage bis zur Klausurenwoche" : "距首轮大考周还有 12 天"}</span>
+            </div>
+            <button
+              type="button"
+              onClick={() => setSprintCollapsed((v) => !v)}
+              className="text-xs font-mono text-slate-500 hover:text-slate-800 border border-slate-200 px-2 py-0.5 rounded-lg cursor-pointer"
+            >
+              {sprintCollapsed ? (de ? "Öffnen" : "展开路线") : (de ? "Minimieren" : "收起")}
+            </button>
+          </div>
+        </div>
+
+        {!sprintCollapsed && (
+          <div className="space-y-3 pt-1">
+            {/* 7-Tage Schritt-Leiste */}
+            <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-7 gap-1.5">
+              {SPRINT_DAYS.map((sd) => {
+                const isActive = activeSprintDay === sd.day;
+                const isPast = sd.day < activeSprintDay;
+                return (
+                  <button
+                    key={sd.day}
+                    type="button"
+                    onClick={() => setActiveSprintDay(sd.day)}
+                    className={`p-2 rounded-xl border text-left transition-all cursor-pointer flex flex-col gap-0.5 ${
+                      isActive
+                        ? "bg-slate-900 text-white border-slate-900 shadow-none font-bold"
+                        : isPast
+                        ? "bg-slate-50 text-slate-700 border-slate-200 hover:border-slate-400"
+                        : "bg-white text-slate-600 border-slate-200 hover:border-slate-400"
+                    }`}
+                  >
+                    <div className="flex items-center justify-between text-[10px] font-mono">
+                      <span>Tag {sd.day}</span>
+                      {isPast && <span className="text-[9px] text-emerald-600 font-bold">[OK]</span>}
+                      {isActive && <span className="text-[9px] text-amber-400 font-bold">[AKTIV]</span>}
+                    </div>
+                    <div className="text-[11px] truncate font-medium">
+                      {de ? sd.labelDE.split(": ")[1] : sd.labelZH.split(": ")[1]}
+                    </div>
+                  </button>
+                );
+              })}
+            </div>
+
+            {/* 当前选中 Day 的攻坚卡 */}
+            {(() => {
+              const currentDay = SPRINT_DAYS.find((sd) => sd.day === activeSprintDay) || SPRINT_DAYS[2];
+              return (
+                <div className="p-3.5 rounded-xl border border-[var(--line)] bg-[var(--paper-subtle)] flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+                  <div className="space-y-1">
+                    <div className="flex items-center gap-2">
+                      <span className="font-mono text-xs font-bold text-slate-900">
+                        {de ? currentDay.labelDE : currentDay.labelZH}
+                      </span>
+                      <span className="text-slate-400">·</span>
+                      <span className="text-xs text-slate-700 font-medium leading-relaxed">
+                        {de ? currentDay.focusDE : currentDay.focusZH}
+                      </span>
+                    </div>
+                  </div>
+
+                  <div className="flex items-center gap-2 shrink-0">
+                    <button
+                      type="button"
+                      onClick={() => onNavigateToTab?.(currentDay.targetTab, currentDay.tabContext)}
+                      className="px-3 py-1.5 rounded-lg bg-slate-900 hover:bg-slate-800 text-white text-xs font-mono font-bold transition-all cursor-pointer flex items-center gap-1.5"
+                    >
+                      <span>{de ? `[${currentDay.actionTextDE} ->]` : `[${currentDay.actionTextZH} ->]`}</span>
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() => {
+                        const targetMission = filteredMissions[0] || DEMO_MISSIONS[0];
+                        setActiveFocusMission(targetMission);
+                      }}
+                      className="px-2.5 py-1.5 rounded-lg border border-[var(--line)] bg-[var(--surface)] hover:bg-[var(--paper)] text-slate-800 text-xs font-mono font-medium transition-all cursor-pointer"
+                      title={de ? "15-Minuten Fokusblock starten" : "开启 15 分钟专注学习"}
+                    >
+                      {de ? "15 Min Fokus" : "15分钟专注"}
+                    </button>
+                  </div>
+                </div>
+              );
+            })()}
+          </div>
+        )}
       </section>
 
       {/* 4. 二分屏：左侧 7/12 (任务处方 + 学科战力分布) vs 右侧 5/12 (几何雷达诊断) */}

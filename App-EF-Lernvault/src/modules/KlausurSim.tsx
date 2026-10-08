@@ -29,6 +29,7 @@ export interface KlausurSimProps {
   notes: VaultNote[];
   currentFach?: string;
   onSubjectChange?: (fach: string) => void;
+  onJumpToLibrary?: (targetQuery: string, targetFach?: string, targetNoteId?: string) => void;
 }
 
 const PRACTICE_MINUTES = 45;
@@ -151,6 +152,7 @@ export const KlausurSim: React.FC<KlausurSimProps> = ({
   notes,
   currentFach,
   onSubjectChange,
+  onJumpToLibrary,
 }) => {
   const availableSubjects = useMemo(
     () => orderSubjects(notes.map((note) => note.fach)),
@@ -729,11 +731,36 @@ export const KlausurSim: React.FC<KlausurSimProps> = ({
                 </div>
                 {sectionTasks.map((task) => {
                   const taskGrade = gradingResult?.taskGrades.find((item) => item.taskId === task.id);
+                  const matchedNote = notes.find((n) =>
+                    task.sourceNotePaths.some((p) =>
+                      (n.path && (p.includes(n.path) || n.path.includes(p))) ||
+                      (n.id && (p.includes(n.id) || n.id.includes(p))) ||
+                      (n.thema && p.toLowerCase().includes(n.thema.toLowerCase()))
+                    )
+                  );
                   return (
                     <article key={task.id} className="p-4 space-y-3" style={paperPanelStyle}>
                       <div className="flex flex-wrap items-center justify-between gap-2 text-xs">
                         <span className="font-mono font-semibold">{task.code} · {task.afb} · {task.points} Punkte</span>
-                        <span style={mutedStyle}>Quelle: {task.sourceNotePaths.join(", ")}</span>
+                        <div className="flex flex-wrap items-center gap-2">
+                          <span style={mutedStyle}>Quelle: {task.sourceNotePaths.join(", ")}</span>
+                          {onJumpToLibrary && (
+                            <button
+                              type="button"
+                              onClick={() => {
+                                if (matchedNote) {
+                                  onJumpToLibrary(matchedNote.thema, matchedNote.fach, matchedNote.id);
+                                } else {
+                                  onJumpToLibrary(task.sourceNotePaths[0] ?? "", subject);
+                                }
+                              }}
+                              className="text-[11px] font-mono text-[var(--accent)] hover:underline border border-[var(--line)] px-1.5 py-0.5 rounded-[var(--radius)] bg-[var(--surface)] cursor-pointer"
+                              title="Zur Wissensnotiz in der Bibliothek springen"
+                            >
+                              [Zur Wissensnotiz -&gt;]
+                            </button>
+                          )}
+                        </div>
                       </div>
                       <div>
                         <p className="font-serif text-base font-semibold">{task.promptDE}</p>
@@ -810,6 +837,24 @@ export const KlausurSim: React.FC<KlausurSimProps> = ({
                               <span className="font-semibold block text-[var(--accent)] mb-0.5">Akademische Veredelung (Alltagssprache -&gt; Fachsprache / Nominalstil):</span>
                               <span className="text-[var(--gray)]">Verwenden Sie präzise Substantivierungen und Verknüpfungen (z. B. „Infolge der Allokation...“, „Daraus lässt sich folgern...“) anstelle umgangssprachlicher Formulierungen.</span>
                             </div>
+                            {onJumpToLibrary && (taskGrade.missingCriteriaDE.length > 0 || taskGrade.points < taskGrade.maxPoints) && (
+                              <div className="mt-2 pt-2 border-t border-[var(--line)] flex flex-wrap items-center justify-between gap-2">
+                                <span className="text-[11px] text-[var(--gray)]">Lernlücke im Thema schließen:</span>
+                                <button
+                                  type="button"
+                                  onClick={() => {
+                                    if (matchedNote) {
+                                      onJumpToLibrary(matchedNote.thema, matchedNote.fach, matchedNote.id);
+                                    } else {
+                                      onJumpToLibrary(task.sourceNotePaths[0] ?? "", subject);
+                                    }
+                                  }}
+                                  className="text-xs font-mono text-[var(--accent)] hover:underline cursor-pointer"
+                                >
+                                  [Wissensnotiz nachschlagen -&gt;]
+                                </button>
+                              </div>
+                            )}
                           </div>
                         </div>
                       )}
@@ -1020,6 +1065,51 @@ export const KlausurSim: React.FC<KlausurSimProps> = ({
 
                   <div className="p-2 rounded bg-[var(--paper-subtle)] text-[var(--gray)] text-xs border border-[var(--line)]">
                     <strong className="text-[var(--accent)]">NRW-Korrekturpraxis:</strong> Fehlende Einheiten führen zu pauschalem Punktabzug (-1 BE pro Aufgabe); Rechenfehler mit Folgefehler-Regelung (Folge-BE bleiben erhalten).
+                  </div>
+                </div>
+              )}
+
+              {detectedDiagnosticIssues.length > 0 && (
+                <div className="p-3 rounded-[var(--radius)] border border-[var(--line)] bg-[var(--surface)] space-y-2">
+                  <div className="flex items-center justify-between text-xs font-semibold">
+                    <span className="text-[var(--ink)]">Erkannte Defizite & Lernlücken ({detectedDiagnosticIssues.length})</span>
+                    <span className="font-mono text-[10px] text-[var(--accent)] uppercase">Prüfungsfokus</span>
+                  </div>
+                  <div className="space-y-1.5">
+                    {detectedDiagnosticIssues.map((issue, idx) => {
+                      const issueNote = notes.find((n) =>
+                        n.fach === subject &&
+                        (n.thema.toLowerCase().includes(issue.definition.nameDE.toLowerCase()) ||
+                         n.blocks.some((b) => b.text.toLowerCase().includes(issue.definition.nameDE.toLowerCase())))
+                      ) ?? notes.find((n) => n.fach === subject);
+                      return (
+                        <div key={idx} className="flex flex-wrap items-center justify-between gap-2 p-2 rounded bg-[var(--paper-subtle)] text-xs border border-[var(--line)]">
+                          <div className="space-y-0.5">
+                            <div className="flex items-center gap-1.5">
+                              <span className="font-mono text-[10px] font-bold text-[var(--accent)]">[{issue.code}]</span>
+                              <strong className="text-[var(--ink)]">{issue.definition.nameDE}</strong>
+                              <span className="text-[var(--gray)] font-mono text-[10px]">({issue.actualScoreOrStatus} / Soll: {String(issue.expected)})</span>
+                            </div>
+                            <p className="text-[11px] text-[var(--gray)] leading-relaxed">{issue.definition.remedyDE}</p>
+                          </div>
+                          {onJumpToLibrary && (
+                            <button
+                              type="button"
+                              onClick={() => {
+                                if (issueNote) {
+                                  onJumpToLibrary(issueNote.thema, issueNote.fach, issueNote.id);
+                                } else {
+                                  onJumpToLibrary(issue.definition.nameDE, subject);
+                                }
+                              }}
+                              className="font-mono text-xs text-[var(--accent)] hover:underline border border-[var(--line)] px-2 py-0.5 rounded bg-[var(--surface)] cursor-pointer shrink-0"
+                            >
+                              [Notiz aufschlagen -&gt;]
+                            </button>
+                          )}
+                        </div>
+                      );
+                    })}
                   </div>
                 </div>
               )}

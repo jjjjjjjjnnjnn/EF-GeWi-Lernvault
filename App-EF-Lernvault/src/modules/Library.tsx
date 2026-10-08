@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState } from "react";
-import { notes as mockNotes, type Note as MockNote } from "../data";
+import { notes as mockNotes, cards as mockCards, type Note as MockNote } from "../data";
 import { PER_MODULE_KEYS, isTyping, matchesKey } from "../keys";
 import Blocks from "../components/Blocks";
 import type { Block, VaultNote } from "../vault/parser";
@@ -55,23 +55,39 @@ function fromVault(n: VaultNote): Shown {
   };
 }
 
+export interface LibraryLinkedCard {
+  id: string;
+  front: string;
+  back: string;
+  example?: string;
+  fach: string;
+  thema?: string;
+}
+
 interface LibraryProps {
   query: string;
   vault: VaultNote[] | null;
+  cards?: LibraryLinkedCard[] | null;
   selectedFach?: string;
   selectedNoteId?: string;
   onClearQuery?: () => void;
   onSubjectChange?: (fach: string) => void;
+  onNavigateToTab?: (
+    tab: "klausursim" | "flashcards" | "quiz",
+    opts?: { fach?: string; query?: string; noteId?: string }
+  ) => void;
   lang?: Lang;
 }
 
 export default function Library({
   query,
   vault,
+  cards,
   selectedFach,
   selectedNoteId,
   onClearQuery,
   onSubjectChange,
+  onNavigateToTab,
   lang = "zh",
 }: LibraryProps) {
   const shown: Shown[] = useMemo(
@@ -196,6 +212,68 @@ export default function Library({
     shown.find((n) => n.id === openId) ??
     paginatedList[0] ??
     list[0];
+
+  const [showPracticePanel, setShowPracticePanel] = useState<boolean>(true);
+  const [revealedCardId, setRevealedCardId] = useState<string | null>(null);
+
+  const linkedCards = useMemo(() => {
+    if (!open) return [];
+    const pool = cards && cards.length > 0 ? cards : mockCards;
+    const sameFach = pool.filter(
+      (c) => c.fach.toLowerCase() === open.fach.toLowerCase()
+    );
+    if (sameFach.length === 0) return [];
+
+    const keywords = [
+      ...open.thema.toLowerCase().split(/[\s,&/.-]+/).filter((t) => t.length >= 3),
+      ...open.tags.map((t) => t.toLowerCase()).filter((t) => t !== "ef" && t.length >= 2),
+    ];
+
+    const matched = sameFach.filter((c) => {
+      const themaStr = "thema" in c && typeof c.thema === "string" ? c.thema : "";
+      const text = `${c.front} ${c.back} ${c.example ?? ""} ${themaStr}`.toLowerCase();
+      return keywords.some((kw) => text.includes(kw));
+    });
+
+    return (matched.length > 0 ? matched : sameFach).slice(0, 3);
+  }, [cards, open]);
+
+  const operatorPhrases = useMemo(() => {
+    if (!open) return [];
+    const phrases: Array<{ op: string; phraseDE: string; hintZH: string }> = [];
+    const ops = open.operatoren.map((o) => o.toLowerCase());
+
+    if (ops.some((o) => o.includes("darstell") || o.includes("nenn") || o.includes("beschreib"))) {
+      phrases.push({
+        op: "Darstellen (AFB I)",
+        phraseDE: `Im Kern lässt sich ${open.thema} dahingehend definieren, dass die konstitutiven Merkmale...`,
+        hintZH: "客观定义与维度梳理，中立陈述",
+      });
+    }
+    if (ops.some((o) => o.includes("analys") || o.includes("erlaeut") || o.includes("vergleich"))) {
+      phrases.push({
+        op: "Analysieren (AFB II)",
+        phraseDE: `Am vorliegenden Material wird ersichtlich, dass [Ursache] unmittelbar zu [Wirkung] führt (vgl. Z. ...).`,
+        hintZH: "因果链条闭环与行号实证嵌套",
+      });
+    }
+    if (ops.some((o) => o.includes("beurteil") || o.includes("bewert") || o.includes("eroert"))) {
+      phrases.push({
+        op: "Beurteilen (AFB III)",
+        phraseDE: `Unter Abwägung der Kriterien Effizienz und Legitimität überwiegt der Befund, dass...`,
+        hintZH: "标准先行，再作权衡与独立价值裁决",
+      });
+    }
+
+    if (phrases.length === 0) {
+      phrases.push({
+        op: "Klausur-Basissatz",
+        phraseDE: `Im Rahmen der ${open.fach}-Klausur ist das Phänomen ${open.thema} theoriegeleitet zu verorten.`,
+        hintZH: "学术入题主旨句规范",
+      });
+    }
+    return phrases;
+  }, [open]);
 
   useEffect(() => {
     const qTrim = query.trim().toLowerCase();
@@ -648,7 +726,178 @@ export default function Library({
                 {open.sub}
               </p>
 
+              {/* Klausur-Fokus Action Toolbar */}
+              <div className="mb-6 p-3 rounded-[var(--radius)] border border-[var(--line)] bg-[var(--paper-subtle)] flex flex-wrap items-center justify-between gap-2.5">
+                <div className="flex items-center gap-2 text-xs">
+                  <span className="font-mono text-[10px] font-bold text-[var(--accent)] uppercase tracking-wider">
+                    {lang === "de" ? "Prüfungsfokus" : "考点穿透"}
+                  </span>
+                  <span className="text-[var(--gray)]">·</span>
+                  <span className="text-[var(--ink)] font-sans text-xs">
+                    {open.fach} · {getHighestAfb(open.operatoren)}
+                  </span>
+                  {linkedCards.length > 0 && (
+                    <span className="text-[var(--gray)] font-mono text-[11px]">
+                      ({linkedCards.length} {lang === "de" ? "Karten" : "关联卡片"})
+                    </span>
+                  )}
+                </div>
+
+                <div className="flex flex-wrap items-center gap-2">
+                  {onNavigateToTab && (
+                    <button
+                      type="button"
+                      onClick={() =>
+                        onNavigateToTab("klausursim", {
+                          fach: open.fach,
+                          query: open.thema,
+                          noteId: open.id,
+                        })
+                      }
+                      className="px-2.5 py-1 rounded-[var(--radius)] text-xs font-mono font-medium border border-[var(--accent)] text-[var(--accent)] hover:bg-[var(--accent)] hover:text-[var(--paper)] transition-all cursor-pointer flex items-center gap-1.5"
+                      title={lang === "de" ? "In Vollsimulation üben" : "在会考模拟中实战演练"}
+                    >
+                      <span>[In KlausurSim üben -&gt;]</span>
+                    </button>
+                  )}
+                  {onNavigateToTab && (
+                    <button
+                      type="button"
+                      onClick={() => onNavigateToTab("flashcards", { fach: open.fach })}
+                      className="px-2.5 py-1 rounded-[var(--radius)] text-xs font-mono border border-[var(--line)] bg-[var(--surface)] text-[var(--ink)] hover:border-[var(--ink)] transition-all cursor-pointer"
+                      title={lang === "de" ? "Im Vokabeltrainer drillen" : "在抽认卡中攻坚术语"}
+                    >
+                      <span>{lang === "de" ? "Karten drillen" : "抽认卡攻坚"}</span>
+                    </button>
+                  )}
+                  <button
+                    type="button"
+                    onClick={() => setShowPracticePanel((v) => !v)}
+                    className="px-2 py-1 rounded-[var(--radius)] text-xs font-mono border border-[var(--line)] bg-[var(--surface)] text-[var(--gray)] hover:text-[var(--ink)] transition-all cursor-pointer"
+                  >
+                    {showPracticePanel
+                      ? (lang === "de" ? "Werkzeuge verbergen" : "收起练习工具")
+                      : (lang === "de" ? "Werkzeuge anzeigen" : "展开配套练习")}
+                  </button>
+                </div>
+              </div>
+
               <Blocks blocks={open.blocks} pureGerman={readingMode === "de-native"} />
+
+              {/* Begleitende Klausurpraxis & Veredelung (Contextual Practice & Flashcard Consolidation) */}
+              {showPracticePanel && (
+                <section className="mt-8 pt-6 border-t border-[var(--line)] space-y-4">
+                  <div className="flex items-center justify-between">
+                    <div>
+                      <h2 className="font-serif text-base font-semibold text-[var(--ink)]">
+                        {lang === "de" ? "Begleitende Klausurpraxis & Veredelung" : "配套考点攻坚与学术句型"}
+                      </h2>
+                      <p className="text-xs text-[var(--gray)] mt-0.5">
+                        {lang === "de"
+                          ? "Verknüpfte Lernkarten und offizielle Abitur-Satzbausteine zu diesem Thema."
+                          : "针对本考点关联的德语核心卡片与 15 NP 学术表达模板。"}
+                      </p>
+                    </div>
+                    {onNavigateToTab && (
+                      <button
+                        type="button"
+                        onClick={() =>
+                          onNavigateToTab("klausursim", {
+                            fach: open.fach,
+                            query: open.thema,
+                            noteId: open.id,
+                          })
+                        }
+                        className="font-mono text-xs text-[var(--accent)] hover:underline cursor-pointer"
+                      >
+                        {lang === "de" ? "Zur Vollsimulation ->" : "直达全真模拟 ->"}
+                      </button>
+                    )}
+                  </div>
+
+                  {/* 1. Verknüpfte Lernkarten */}
+                  {linkedCards.length > 0 && (
+                    <div className="space-y-2">
+                      <div className="flex items-center justify-between text-xs font-mono font-medium text-[var(--ink)]">
+                        <span>{lang === "de" ? "Verknüpfte Begriffskarten (Klicken zum Aufdecken)" : "关联核心卡片 (点击翻转查看释义)"}</span>
+                        {onNavigateToTab && (
+                          <button
+                            type="button"
+                            onClick={() => onNavigateToTab("flashcards", { fach: open.fach })}
+                            className="text-[11px] text-[var(--gray)] hover:text-[var(--ink)] cursor-pointer"
+                          >
+                            {lang === "de" ? "Alle Fachkarten üben ->" : "查看全部学科卡片 ->"}
+                          </button>
+                        )}
+                      </div>
+                      <div className="grid grid-cols-1 md:grid-cols-3 gap-2.5">
+                        {linkedCards.map((cardItem) => {
+                          const isRevealed = revealedCardId === cardItem.id;
+                          return (
+                            <button
+                              key={cardItem.id}
+                              type="button"
+                              onClick={() => setRevealedCardId(isRevealed ? null : cardItem.id)}
+                              className="p-3 rounded-[var(--radius)] border border-[var(--line)] bg-[var(--paper-subtle)] text-left hover:border-[var(--ink)] transition-colors cursor-pointer space-y-1 block w-full"
+                            >
+                              <div className="flex items-center justify-between text-[10px] font-mono text-[var(--gray)]">
+                                <span>{cardItem.fach}</span>
+                                <span className="text-[var(--accent)] font-semibold">
+                                  {isRevealed ? "[Definition]" : "[Aufdecken]"}
+                                </span>
+                              </div>
+                              <div className="font-serif text-xs font-semibold text-[var(--ink)] leading-snug">
+                                {cardItem.front}
+                              </div>
+                              {isRevealed ? (
+                                <div className="text-xs font-sans text-[var(--ink)] pt-1 border-t border-[var(--line)] leading-relaxed">
+                                  {cardItem.back}
+                                </div>
+                              ) : (
+                                <div className="text-[11px] font-sans text-[var(--gray)] line-clamp-1">
+                                  {cardItem.example || "Klicken zum Einblenden"}
+                                </div>
+                              )}
+                            </button>
+                          );
+                        })}
+                      </div>
+                    </div>
+                  )}
+
+                  {/* 2. 15 NP Akademische Klausur-Satzbausteine */}
+                  <div className="p-3.5 rounded-[var(--radius)] border border-[var(--line)] bg-[var(--surface)] space-y-2">
+                    <div className="flex items-center justify-between text-xs font-semibold">
+                      <span className="text-[var(--ink)]">
+                        {lang === "de" ? "15-Notenpunkte Satzbausteine (EHZ-Muster)" : "15 NP 满分学术句型 (官方 EHZ 采分句式)"}
+                      </span>
+                      <span className="font-mono text-[10px] text-[var(--accent)] font-bold uppercase">
+                        {open.operatoren.join(" · ") || "Operatoren"}
+                      </span>
+                    </div>
+                    <div className="space-y-2">
+                      {operatorPhrases.map((phrase, idx) => (
+                        <div
+                          key={idx}
+                          className="p-2 rounded bg-[var(--paper-subtle)] border border-[var(--line)] space-y-1 text-xs"
+                        >
+                          <div className="flex items-center justify-between">
+                            <span className="font-mono font-semibold text-[11px] text-[var(--accent)]">
+                              {phrase.op}
+                            </span>
+                            <span className="text-[11px] text-[var(--gray)] font-sans">
+                              {phrase.hintZH}
+                            </span>
+                          </div>
+                          <p className="font-serif text-xs text-[var(--ink)] leading-relaxed selection:bg-[var(--accent)] selection:text-[var(--paper)]">
+                            „{phrase.phraseDE}“
+                          </p>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                </section>
+              )}
             </article>
           ) : (
             <div className="py-12 text-center text-sm font-sans text-[var(--gray)]">

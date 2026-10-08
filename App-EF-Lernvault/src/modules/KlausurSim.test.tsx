@@ -117,4 +117,22 @@ describe("KlausurSim Vollsimulation", () => {
     // Klick auf Patch kopieren löst Feedback aus
     expect(await screen.findByRole("button", { name: /Patch kopiert/ })).toBeInTheDocument();
   });
+
+  it("renders bidirectional link to knowledge note and triggers onJumpToLibrary callback", async () => {
+    const user = userEvent.setup();
+    const onJumpToLibrary = vi.fn();
+    render(
+      <KlausurSim
+        notes={notes}
+        currentFach="SoWi"
+        onJumpToLibrary={onJumpToLibrary}
+      />
+    );
+
+    const jumpButtons = screen.getAllByRole("button", { name: "[Zur Wissensnotiz ->]" });
+    expect(jumpButtons.length).toBeGreaterThan(0);
+
+    await user.click(jumpButtons[0]);
+    expect(onJumpToLibrary).toHaveBeenCalled();
+  });
 });

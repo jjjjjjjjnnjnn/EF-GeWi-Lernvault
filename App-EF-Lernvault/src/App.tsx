@@ -839,10 +839,17 @@ export default function App() {
             <Library
               query={query}
               vault={vault?.notes ?? null}
+              cards={vault?.cards ?? null}
               selectedFach={selectedFach}
               selectedNoteId={selectedNoteId}
               onClearQuery={() => setQuery("")}
               onSubjectChange={setSelectedFach}
+              onNavigateToTab={(targetTab, opts) => {
+                if (opts?.fach) setSelectedFach(opts.fach);
+                if (opts?.query) setQuery(opts.query);
+                if (opts?.noteId) setSelectedNoteId(opts.noteId);
+                switchTab(targetTab as Tab);
+              }}
               lang={lang}
             />
           )}
@@ -876,6 +883,7 @@ export default function App() {
               notes={vault?.notes ?? defaultVaultNotes}
               currentFach={selectedFach === "alle" ? undefined : selectedFach}
               onSubjectChange={setSelectedFach}
+              onJumpToLibrary={jumpToLibrary}
             />
           )}
           {tab === "tutor" && (

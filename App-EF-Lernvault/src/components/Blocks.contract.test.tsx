@@ -1,5 +1,5 @@
 import { render, screen, waitFor } from "@testing-library/react";
-import { describe, expect, it } from "vitest";
+import { describe, expect, it, vi } from "vitest";
 import type { Block, VaultNote } from "../vault/parser";
 import Library from "../modules/Library";
 
@@ -62,5 +62,39 @@ describe("Blocks bilingual reading contract", () => {
 
     await waitFor(() => expect(article.querySelector(".katex-display")).not.toBeNull(), { timeout: 3000 });
     expect(hasRawMath()).toBe(false);
+  });
+
+  it("renders contextual exam practice tools and triggers onNavigateToTab", () => {
+    const blocks: Block[] = [{ kind: "p", text: "Deutscher Text.", lang: "de" }];
+    const onNavigateToTab = vi.fn();
+    const testCard = {
+      id: "card-1",
+      front: "Chancengerechtigkeit",
+      back: "Faire Startchancen",
+      fach: "SoWi",
+      example: "Startchancen",
+    };
+
+    render(
+      <Library
+        query=""
+        vault={[note(blocks)]}
+        cards={[testCard]}
+        onNavigateToTab={onNavigateToTab}
+        lang="de"
+      />
+    );
+
+    expect(screen.getByText("Prüfungsfokus")).toBeInTheDocument();
+    const practiceBtn = screen.getByRole("button", { name: "[In KlausurSim üben ->]" });
+    expect(practiceBtn).toBeInTheDocument();
+
+    practiceBtn.click();
+    expect(onNavigateToTab).toHaveBeenCalledWith(
+      "klausursim",
+      expect.objectContaining({ fach: "SoWi" })
+    );
+
+    expect(screen.getByText("Chancengerechtigkeit")).toBeInTheDocument();
   });
 });
