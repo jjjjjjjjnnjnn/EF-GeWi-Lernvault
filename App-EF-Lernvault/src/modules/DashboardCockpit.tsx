@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import type { Lang } from "../i18n";
 import { MascotFox } from "../components/mascot/MascotFox";
 import { THEMES, getStoredTheme, setStoredTheme, type ThemeId } from "../engine/theme";
@@ -279,6 +279,190 @@ const DEMO_MISSIONS: MissionItem[] = [
   },
 ];
 
+interface FocusExercise {
+  questionDE: string;
+  questionZH: string;
+  optionsDE: string[];
+  optionsZH: string[];
+  correctIdx: number;
+  explanationDE: string;
+  explanationZH: string;
+}
+
+interface FocusLessonContent {
+  missionId: string;
+  fach: string;
+  titleDE: string;
+  titleZH: string;
+  coreConceptDE: string;
+  coreConceptZH: string;
+  guidelinesDE: string[];
+  guidelinesZH: string[];
+  exercises: FocusExercise[];
+  satzbausteinDE: string;
+  satzbausteinZH: string;
+}
+
+const DEMO_FOCUS_LESSONS: Record<string, FocusLessonContent> = {
+  m1: {
+    missionId: "m1",
+    fach: "Deutsch",
+    titleDE: "Deutsch: 12 Kerntermini & Nominalstil [D4]",
+    titleZH: "德语: 核心学科术语与名词化学术风格 [D4]",
+    coreConceptDE: "Die Darstellungsleistung D4 verlangt eine dichte Verwendung präziser Fachtermini statt Alltagssprache. Umgangssprachliche Verben ('zeigt', 'sagt') sind konsequent durch handlungsanalytische Funktionsverben und Nominalphrasen zu ersetzen.",
+    coreConceptZH: "德语会考官方采分 D4 维度强制要求高密度使用学科专业术语，严禁使用口语化表达（如 'zeigt', 'sagt'）。必须全面升级为分析型行为动词及名词化结构（Nominalstil）。",
+    guidelinesDE: [
+      "Funktionsverben nutzen: 'fungieren als', 'antizipieren', 'exemplifizieren', 'artikulieren'.",
+      "Hypotaktische Satzgefüge mit präzisen Konnektoren (indem, insofern als, wohingegen) strukturieren.",
+      "Umgangssprachliche Wertungen ('ich finde', 'das ist schön') vollständig eliminieren.",
+    ],
+    guidelinesZH: [
+      "使用高阶功能动词：'fungieren als' (充当), 'antizipieren' (预示), 'exemplifizieren' (例证)。",
+      "构建包含严密逻辑连接词的从句结构（indem, insofern als, wohingegen）。",
+      "彻底清除主观口语裁决词（如 'ich finde', 'das ist schön'）。",
+    ],
+    exercises: [
+      {
+        questionDE: "Welche Formulierung entspricht dem 15-Notenpunkte-Standard in einer Szenenanalyse?",
+        questionZH: "在戏剧场景分析中，哪种表达符合 15 NP（Sehr Gut 满分档）学术规范？",
+        optionsDE: [
+          "Faust zeigt hier sehr deutlich, dass er unzufrieden mit der Wissenschaft ist.",
+          "Das lyrische Ich artikuliert mittels antiklimaktischer Reihung eine existentielle Erkenntniskrise.",
+        ],
+        optionsZH: [
+          "Faust 在这里非常明显地表明了他对科学的不满。",
+          "抒情主人公通过降格排比手法，深刻表达了其存在主义的认知危机。",
+        ],
+        correctIdx: 1,
+        explanationDE: "Option B nutzt präzise Fachtermini ('artikuliert', 'antiklimaktische Reihung', 'Erkenntniskrise') und analysiert die sprachliche Funktion statt den Inhalt bloß nachzuerzählen.",
+        explanationZH: "选项 B 严格运用了修辞机制词与学术动词，解构语言机制而非单纯复述故事情节。",
+      },
+      {
+        questionDE: "Wie wird 'Der Autor macht dem Leser Angst' in die Fachsprache überführt?",
+        questionZH: "如何将日常口语 'Der Autor macht dem Leser Angst' 转换为严谨学术语言？",
+        optionsDE: [
+          "Der Text evozierte beim Rezipienten ein diffuses Bedrohungsgefühl durch dystopische Motivik.",
+          "Der Autor sorgt dafür, dass der Leser Angst vor der Zukunft bekommt.",
+        ],
+        optionsZH: [
+          "文本通过反乌托邦母题，在受众心中唤起了一种弥漫性的受威胁感。",
+          "作者使读者对未来产生了恐惧感。",
+        ],
+        correctIdx: 0,
+        explanationDE: "Die Substantivierung ('dystopische Motivik', 'Bedrohungsgefühl') und der Terminus 'Rezipient' entsprechen den Vorgaben der Standardsicherung.",
+        explanationZH: "使用名词化概念（反乌托邦母题、威胁感）与规范受众代词（Rezipient）符合州考大纲采分点。",
+      },
+    ],
+    satzbausteinDE: "Die syntaktische Disposition fungiert hierbei nicht als bloßes Stilornament, sondern evoziert beim Rezipienten eine kritische Reflexionsdistanz.",
+    satzbausteinZH: "此处的句法布局绝非单纯的修辞装点，而是在受众心中唤起了一种审慎的批判性反思距离。",
+  },
+  m2: {
+    missionId: "m2",
+    fach: "SoWi",
+    titleDE: "SoWi: Strikte Drei-Ebenen-Trennung [D2]",
+    titleZH: "社科: 三态严格分流与结构化论证 [D2]",
+    coreConceptDE: "D2 verbietet die Vermischung von Deskription (AFB I), ökonomischer/politischer Wirkungsanalyse (AFB II) und normativer Urteilsbildung (AFB III). Analysen müssen wertfrei anhand von Modellen erfolgen.",
+    coreConceptZH: "D2 评分宪法严禁将客观描述 (AFB I)、机制分析 (AFB II) 与规范性价值裁决 (AFB III) 混为一谈。分析必须基于客观经济模型与机制展开，禁止在第 1、2 问掺杂个人好恶。",
+    guidelinesDE: [
+      "In Teilaufgabe 1 & 2: Striktes Verbot von 'ungerecht', 'unsozial' oder 'meiner Meinung nach'.",
+      "Ökonomische Kausalitäten stets über Angebots- und Nachfrageeffekte bzw. Marktversagen herleiten.",
+      "Teilaufgabe 3 erst mit formalen Urteilskriterien (Effizienz vs. Legitimität/Gerechtigkeit) eröffnen.",
+    ],
+    guidelinesZH: [
+      "第 1 问与第 2 问：绝对禁止出现 'ungerecht' (不公), 'unsozial' 或 '我认为' 等主观论调。",
+      "经济因果链必须严格基于供求效应、价格机制或市场失灵展开推演。",
+      "第 3 问必须以形式化准则（配置效率 vs 正当性/公平性）分段进行权衡裁决。",
+    ],
+    exercises: [
+      {
+        questionDE: "In einer Klausuraufgabe (AFB II: Analysieren Sie die Marktwirkung) steht: 'Diese Maßnahme ist eine Schande für den Sozialstaat.' Welche Note droht bei D2?",
+        questionZH: "在第 2 问 (机制分析) 中写入 '此举是对福利国家的耻辱'，在 D2 评分中会产生什么后果？",
+        optionsDE: [
+          "Volle Punktzahl, da die eigene Haltung Engagement zeigt.",
+          "Massiver Punktabzug bei D2 wegen Vermischung von Analyse und normativem Werturteil.",
+        ],
+        optionsZH: [
+          "获得满分，因为展现了鲜明的个人见解与社会关怀。",
+          "D2 遭到严厉扣分，因为将客观机制分析与规范性价值判断严重混淆。",
+        ],
+        correctIdx: 1,
+        explanationDE: "Urteile gehören ausnahmslos in AFB III. Vorzeitige moralische Urteile in AFB II verletzen die Wissenschaftspropädeutik.",
+        explanationZH: "价值裁决绝无例外地属于第 3 问。在第 2 问夹带道德谴责严重违反学术中立要求。",
+      },
+      {
+        questionDE: "Welcher Aufbau sichert in AFB III die volle Punktzahl für ein differenziertes Urteil?",
+        questionZH: "在第 3 问评判中，哪种架构能够确保获得完整采分？",
+        optionsDE: [
+          "Kriteriengeleitete Abwägung (Effizienz vs. Verteilungsgerechtigkeit) mit anschließendem begründetem Fazit.",
+          "Ausschließliche Aufzählung von Contra-Argumenten, um einen klaren Standpunkt zu beweisen.",
+        ],
+        optionsZH: [
+          "基于双重准则（配置效率 vs 分配正义）的对立权衡，随后得出有据可查的结论。",
+          "仅单向罗列反对论点，以证明自己坚定的立场。",
+        ],
+        correctIdx: 0,
+        explanationDE: "Die Standardsicherung NRW verlangt zwingend die Gegenüberstellung von Sachurteil (Wirksamkeit) und Werturteil (Grundwerte).",
+        explanationZH: "北威州官方大纲硬性规定必须呈现事实裁决（有效性）与价值裁决（核心价值）的双向对称权衡。",
+      },
+    ],
+    satzbausteinDE: "Während die Maßnahme allokationspolitisch eine Wohlfahrtssteigerung bewirkt, erweist sie sich distributionspolitisch als regressiv und verschärft bestehende Disparitäten.",
+    satzbausteinZH: "尽管该举措在资源配置上实现了社会福利增长，但在分配政策上却具有累退性，进一步加剧了既有的社会差距。",
+  },
+  m3: {
+    missionId: "m3",
+    fach: "Mathe",
+    titleDE: "Mathe: MINT BE-Stufenfolge & Exaktheit",
+    titleZH: "数学: MINT BE 四阶采分步进与精度规范",
+    coreConceptDE: "Die Vergabe von Bewertungseinheiten (BE) folgt einem strengen Stufenmodell: Ansatz (25%) -> Einsetzen/Termumformung (25%) -> Exaktheit/Hinreichende Bedingung (25%) -> Antwortsatz im Sachkontext (25%).",
+    coreConceptZH: "德国高中数学采分单位 (BE) 严格遵循四阶递进模型：模型起步 (25%) $\\to$ 规范代入与代数化简 (25%) $\\to$ 精度控制与充分条件判别 (25%) $\\to$ 现实情境结论句 (25%)。",
+    guidelinesDE: [
+      "Stets die allgemeine Bedingung (z. B. f'(x)=0 für Extremstellen) vor konkreten Zahlen hinschreiben.",
+      "Zwischenergebnisse niemals vorzeitig runden; exakte Brüche oder Speicher (Ans) verwenden.",
+      "Der Antwortsatz muss immer Einheit, Bezugsgröße und Sachkontext vollständig enthalten.",
+    ],
+    guidelinesZH: [
+      "代入具体数值前，首行必须写出通用极值或导数条件 (如 f'(x) = 0)。",
+      "中间过程严禁提前四舍五入造成误差累积；必须使用精确分数或计算器存储器。",
+      "结论句必须完整包含物理量单位、主语及实际现实背景含义。",
+    ],
+    exercises: [
+      {
+        questionDE: "Ein Schüler bestimmt x=3 als Nullstelle von f'(x), verzichtet aber auf f''(3) < 0. Was passiert im Erwartungshorizont?",
+        questionZH: "学生求出导函数零点 x=3，但未验证 f''(3) < 0，在官方评分表中会产生什么结果？",
+        optionsDE: [
+          "Verlust der BE für die hinreichende Bedingung und den Nachweis der Art des Extremums.",
+          "Kein Abzug, da die notwendige Bedingung für ein Extremum bereits ausreicht.",
+        ],
+        optionsZH: [
+          "扣除充分条件验证与极值类型判别对应的全部采分点（通常 2~3 BE）。",
+          "不扣分，因为必要条件已经足够说明极值存在。",
+        ],
+        correctIdx: 0,
+        explanationDE: "Die notwendige Bedingung f'(x)=0 reicht mathematisch nicht aus; der Nachweis des Hoch-/Tiefpunkts erfordert zwingend f''(x) bzw. das VZW-Kriterium.",
+        explanationZH: "必要条件 f'(x)=0 无法排除拐点可能，必须通过二阶导数或穿针变号法则方能获得结论分。",
+      },
+      {
+        questionDE: "Wie lautet ein normgerechter Antwortsatz für eine Behälter-Füllaufgabe bei t=14,382 Minuten?",
+        questionZH: "针对蓄水池注水问题（算出 t=14.382 分钟），下列哪个符合规范结论句要求？",
+        optionsDE: [
+          "Nach ca. 14,4 Minuten ist das Becken vollständig mit Wasser gefüllt.",
+          "t = 14,4 min.",
+        ],
+        optionsZH: [
+          "约 14.4 分钟后，蓄水池将完全注满水。",
+          "t = 14,4 min.",
+        ],
+        correctIdx: 0,
+        explanationDE: "Der Erwartungshorizont verlangt einen ausformulierten Antwortsatz mit Subjekt, Prädikat, gerundeter Zahl und Sachbezug.",
+        explanationZH: "官方评分标准明确要求具备完整主谓语、合理修约数值及现实情境扣题。",
+      },
+    ],
+    satzbausteinDE: "Da f'(x₀) = 0 und f''(x₀) < 0 gilt, liegt an der Stelle x₀ ein lokales Maximum vor. Im Sachkontext entspricht dies der maximalen Konzentration von...",
+    satzbausteinZH: "由于 f'(x₀) = 0 且 f''(x₀) < 0，因此在 x₀ 处存在局部极大值。在实际背景中，这对应于最大浓度……",
+  },
+};
+
+
 interface SubjectMastery {
   fach: string;
   nameDE: string;
@@ -295,6 +479,264 @@ const DEMO_SUBJECT_MASTERY: SubjectMastery[] = [
   { fach: "Philosophie", nameDE: "Philosophie", nameZH: "哲学", pct: 75, np: 11, pillColor: "bg-indigo-50 text-indigo-800 border-indigo-200" },
   { fach: "Physik", nameDE: "Physik", nameZH: "物理", pct: 60, np: 10, pillColor: "bg-slate-100 text-slate-800 border-slate-200" },
 ];
+
+function FocusFlowModal({
+  lesson,
+  de,
+  onClose,
+  onComplete,
+}: {
+  lesson: FocusLessonContent;
+  de: boolean;
+  onClose: () => void;
+  onComplete: () => void;
+}) {
+  const [step, setStep] = useState<1 | 2 | 3>(1);
+  const [selectedAnswers, setSelectedAnswers] = useState<Record<number, number>>({});
+  const [showExplanations, setShowExplanations] = useState<Record<number, boolean>>({});
+
+  const handleSelectOption = (exerciseIdx: number, optionIdx: number) => {
+    setSelectedAnswers((prev) => ({ ...prev, [exerciseIdx]: optionIdx }));
+    setShowExplanations((prev) => ({ ...prev, [exerciseIdx]: true }));
+  };
+
+  return (
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-slate-900/40 backdrop-blur-[2px] p-4">
+      <div className="w-full max-w-2xl bg-[var(--surface)] border border-[var(--line)] rounded-2xl shadow-none p-6 space-y-5 text-slate-900 max-h-[90vh] overflow-y-auto">
+        {/* 头部标题与步骤指示器 */}
+        <div className="flex items-center justify-between pb-3 border-b border-slate-200/80">
+          <div className="flex items-center gap-2.5">
+            <span className="font-mono text-xs font-bold px-2 py-0.5 rounded-full border border-[var(--line)] bg-[var(--paper-subtle)] text-[var(--ink)]">
+              {lesson.fach}
+            </span>
+            <h3 className="font-serif text-base font-bold text-slate-900">
+              {de ? lesson.titleDE : lesson.titleZH}
+            </h3>
+          </div>
+          <button
+            type="button"
+            onClick={onClose}
+            className="text-slate-400 hover:text-slate-700 p-1 rounded-lg cursor-pointer transition-colors"
+            title={de ? "Schließen" : "关闭"}
+          >
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+              <path d="M3 3l10 10M13 3L3 13" />
+            </svg>
+          </button>
+        </div>
+
+        {/* 3 步步进器 (Stepper) */}
+        <div className="grid grid-cols-3 gap-2 text-center text-xs font-mono font-bold">
+          <button
+            type="button"
+            onClick={() => setStep(1)}
+            className={`py-1.5 px-2 rounded-lg border transition-all cursor-pointer ${
+              step === 1
+                ? "bg-slate-900 text-white border-slate-900"
+                : "bg-[var(--paper-subtle)] text-slate-600 border-[var(--line)]"
+            }`}
+          >
+            1. {de ? "Erfassen" : "精要理解"}
+          </button>
+          <button
+            type="button"
+            onClick={() => setStep(2)}
+            className={`py-1.5 px-2 rounded-lg border transition-all cursor-pointer ${
+              step === 2
+                ? "bg-slate-900 text-white border-slate-900"
+                : "bg-[var(--paper-subtle)] text-slate-600 border-[var(--line)]"
+            }`}
+          >
+            2. {de ? "Anwenden" : "随堂实战"}
+          </button>
+          <button
+            type="button"
+            onClick={() => setStep(3)}
+            className={`py-1.5 px-2 rounded-lg border transition-all cursor-pointer ${
+              step === 3
+                ? "bg-slate-900 text-white border-slate-900"
+                : "bg-[var(--paper-subtle)] text-slate-600 border-[var(--line)]"
+            }`}
+          >
+            3. {de ? "Sichern" : "满分固化"}
+          </button>
+        </div>
+
+        {/* 步骤 1: 概念理解 (Erfassen) */}
+        {step === 1 && (
+          <div className="space-y-4 pt-1">
+            <div className="p-4 rounded-xl border border-[var(--line)] bg-[var(--paper-subtle)] space-y-2">
+              <div className="text-xs font-mono font-bold uppercase tracking-wider text-slate-500">
+                {de ? "Kernkonzept & Prüfungsdisziplin" : "核心考纲规范与采分纪律"}
+              </div>
+              <p className="text-xs leading-relaxed text-slate-800 font-medium">
+                {de ? lesson.coreConceptDE : lesson.coreConceptZH}
+              </p>
+            </div>
+
+            <div className="space-y-2">
+              <div className="text-xs font-mono font-bold uppercase tracking-wider text-slate-500">
+                {de ? "3 Handlungsschritte im Abitur" : "会考 3 大实战解题准则"}
+              </div>
+              <ul className="space-y-2">
+                {(de ? lesson.guidelinesDE : lesson.guidelinesZH).map((g, idx) => (
+                  <li key={idx} className="flex items-start gap-2 text-xs text-slate-700 leading-relaxed font-medium">
+                    <span className="w-4 h-4 rounded-full bg-slate-200 text-slate-800 flex items-center justify-center font-mono font-bold text-[10px] shrink-0 mt-0.5">
+                      {idx + 1}
+                    </span>
+                    <span>{g}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <div className="pt-2 flex justify-end">
+              <button
+                type="button"
+                onClick={() => setStep(2)}
+                className="py-2 px-4 rounded-xl bg-slate-900 text-white hover:bg-slate-800 text-xs font-bold transition-all cursor-pointer flex items-center gap-1.5"
+              >
+                <span>{de ? "Weiter: Anwenden (2 Aufgaben) →" : "下一步: 随堂实战 (2题速测) →"}</span>
+              </button>
+            </div>
+          </div>
+        )}
+
+        {/* 步骤 2: 随堂实战 (Anwenden) */}
+        {step === 2 && (
+          <div className="space-y-4 pt-1">
+            {lesson.exercises.map((ex, exIdx) => {
+              const selected = selectedAnswers[exIdx];
+              const answered = selected !== undefined;
+              const isCorrect = selected === ex.correctIdx;
+
+              return (
+                <div key={exIdx} className="p-4 rounded-xl border border-[var(--line)] bg-[var(--paper-subtle)] space-y-3">
+                  <div className="flex items-start justify-between gap-2">
+                    <span className="font-mono text-[10px] font-bold px-1.5 py-0.5 rounded border border-slate-300 bg-white text-slate-700">
+                      Aufgabe {exIdx + 1}
+                    </span>
+                    {answered && (
+                      <span className={`text-[11px] font-mono font-bold px-2 py-0.5 rounded ${isCorrect ? "bg-emerald-100 text-emerald-800" : "bg-amber-100 text-amber-900"}`}>
+                        {isCorrect ? (de ? "[OK] Richtig (+15 NP)" : "[OK] 正确 (+15 NP 标准)") : (de ? "[Defizit] Erkannt" : "[易错点] 需强化规范")}
+                      </span>
+                    )}
+                  </div>
+
+                  <p className="text-xs font-bold text-slate-900 leading-relaxed">
+                    {de ? ex.questionDE : ex.questionZH}
+                  </p>
+
+                  <div className="space-y-1.5">
+                    {(de ? ex.optionsDE : ex.optionsZH).map((opt, optIdx) => {
+                      const isOptionSelected = selected === optIdx;
+                      const isOptionCorrect = optIdx === ex.correctIdx;
+
+                      return (
+                        <button
+                          key={optIdx}
+                          type="button"
+                          onClick={() => handleSelectOption(exIdx, optIdx)}
+                          className={`w-full p-2.5 rounded-lg border text-left text-xs transition-all cursor-pointer flex items-start gap-2.5 leading-relaxed font-medium ${
+                            answered
+                              ? isOptionCorrect
+                                ? "bg-emerald-50 border-emerald-300 text-emerald-950 font-bold"
+                                : isOptionSelected
+                                ? "bg-amber-50 border-amber-300 text-amber-950"
+                                : "bg-white border-slate-200 text-slate-500 opacity-60"
+                              : "bg-white border-slate-200 hover:border-slate-400 text-slate-800"
+                          }`}
+                        >
+                          <span className="font-mono font-bold shrink-0">{String.fromCharCode(65 + optIdx)}.</span>
+                          <span>{opt}</span>
+                        </button>
+                      );
+                    })}
+                  </div>
+
+                  {showExplanations[exIdx] && (
+                    <div className="p-2.5 rounded-lg bg-slate-100/90 border border-slate-200/80 text-[11px] text-slate-700 leading-relaxed">
+                      <span className="font-bold text-slate-900 font-mono mr-1">EHZ-Befund:</span>
+                      {de ? ex.explanationDE : ex.explanationZH}
+                    </div>
+                  )}
+                </div>
+              );
+            })}
+
+            <div className="pt-2 flex justify-between items-center">
+              <button
+                type="button"
+                onClick={() => setStep(1)}
+                className="py-2 px-3 rounded-xl border border-[var(--line)] bg-[var(--surface)] text-slate-700 text-xs font-bold hover:bg-[var(--paper-subtle)] transition-all cursor-pointer"
+              >
+                ← {de ? "Zurück" : "上一步"}
+              </button>
+              <button
+                type="button"
+                onClick={() => setStep(3)}
+                className="py-2 px-4 rounded-xl bg-slate-900 text-white hover:bg-slate-800 text-xs font-bold transition-all cursor-pointer flex items-center gap-1.5"
+              >
+                <span>{de ? "Weiter: Mustersatz sichern →" : "下一步: 满分句式固化 →"}</span>
+              </button>
+            </div>
+          </div>
+        )}
+
+        {/* 步骤 3: 满分句式固化 (Sichern) */}
+        {step === 3 && (
+          <div className="space-y-4 pt-1">
+            <div className="p-4 rounded-xl border border-amber-200/90 bg-amber-50/60 space-y-2">
+              <div className="flex items-center justify-between">
+                <span className="text-xs font-mono font-bold uppercase tracking-wider text-amber-900">
+                  {de ? "15-Notenpunkte-Musterformulierung (Satzbaustein)" : "15 NP 满分学术句型 (Satzbaustein)"}
+                </span>
+                <span className="text-[10px] font-mono font-bold bg-amber-100 text-amber-800 px-1.5 py-0.5 rounded">
+                  Abitur-Standard
+                </span>
+              </div>
+              <p className="text-xs leading-relaxed text-slate-900 font-serif font-bold">
+                "{lesson.satzbausteinDE}"
+              </p>
+              <p className="text-[11px] leading-relaxed text-slate-600 font-sans">
+                译文：{lesson.satzbausteinZH}
+              </p>
+            </div>
+
+            <div className="p-3 rounded-xl border border-[var(--line)] bg-[var(--paper-subtle)] flex items-center justify-between text-xs">
+              <span className="text-slate-600 font-medium">
+                {de ? "Tagesfokus für dieses Modul abgeschlossen" : "今日该考点针对性闭环已就绪"}
+              </span>
+              <span className="font-mono font-bold text-amber-800">
+                +{lesson.missionId === "m1" ? 40 : lesson.missionId === "m2" ? 80 : 100} XP
+              </span>
+            </div>
+
+            <div className="pt-2 flex justify-between items-center">
+              <button
+                type="button"
+                onClick={() => setStep(2)}
+                className="py-2 px-3 rounded-xl border border-[var(--line)] bg-[var(--surface)] text-slate-700 text-xs font-bold hover:bg-[var(--paper-subtle)] transition-all cursor-pointer"
+              >
+                ← {de ? "Zurück" : "上一步"}
+              </button>
+              <button
+                type="button"
+                onClick={onComplete}
+                className="py-2.5 px-5 rounded-xl bg-[#D96E3A] hover:bg-[#c25e2d] text-white text-xs font-extrabold transition-all cursor-pointer flex items-center gap-1.5 shadow-none"
+              >
+                <span>{de ? "Fokusblock abschließen & festhalten" : "完成今日专注并打卡 (+XP)"}</span>
+                <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                  <path d="M3.5 8.5l3 3 6-6" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        )}
+      </div>
+    </div>
+  );
+}
 
 export function DashboardCockpit({
   lang,
@@ -345,6 +787,34 @@ export function DashboardCockpit({
   const activeMetricList = radarTrack === "gewi" ? DEMO_D_RADAR : DEMO_BE_METRICS;
   const activeMetric =
     activeMetricList.find((m) => m.code === activeMetricCode) || activeMetricList[0];
+
+  const [fachFilter, setFachFilter] = useState<string>("klausur");
+  const [otherSubjectsExpanded, setOtherSubjectsExpanded] = useState<boolean>(false);
+  const [activeFocusMission, setActiveFocusMission] = useState<MissionItem | null>(null);
+
+  const filteredMissions = useMemo(() => {
+    if (fachFilter === "alle") return DEMO_MISSIONS;
+    if (fachFilter === "klausur") {
+      return DEMO_MISSIONS.filter((m) => ["Deutsch", "SoWi", "Mathe"].includes(m.fach));
+    }
+    return DEMO_MISSIONS.filter((m) => m.fach.toLowerCase() === fachFilter.toLowerCase());
+  }, [fachFilter]);
+
+  const primarySubjectMastery = useMemo(() => {
+    if (fachFilter === "alle") return DEMO_SUBJECT_MASTERY;
+    if (fachFilter === "klausur") {
+      return DEMO_SUBJECT_MASTERY.filter((s) => ["Deutsch", "SoWi", "Mathe"].includes(s.fach));
+    }
+    return DEMO_SUBJECT_MASTERY.filter((s) => s.fach.toLowerCase() === fachFilter.toLowerCase());
+  }, [fachFilter]);
+
+  const secondarySubjectMastery = useMemo(() => {
+    if (fachFilter === "alle") return [];
+    if (fachFilter === "klausur") {
+      return DEMO_SUBJECT_MASTERY.filter((s) => !["Deutsch", "SoWi", "Mathe"].includes(s.fach));
+    }
+    return DEMO_SUBJECT_MASTERY.filter((s) => s.fach.toLowerCase() !== fachFilter.toLowerCase());
+  }, [fachFilter]);
 
   return (
     <div className="mx-auto max-w-6xl space-y-6 pb-16 font-sans text-slate-900 transition-all duration-300">
@@ -568,7 +1038,10 @@ export function DashboardCockpit({
           <div className="relative z-10 pt-1">
             <button
               type="button"
-              onClick={() => onNavigateToTab?.("flashcards")}
+              onClick={() => {
+                const firstPending = filteredMissions.find((m) => !completedMissions[m.id]) || filteredMissions[0] || DEMO_MISSIONS[0];
+                setActiveFocusMission(firstPending);
+              }}
               className="w-full py-2.5 px-4 bg-[#D96E3A] hover:bg-[#c25e2d] active:scale-[0.99] text-white font-extrabold text-xs rounded-xl transition-all shadow-none flex items-center justify-center gap-2 cursor-pointer select-none tracking-tight"
             >
               <span>{de ? "Jetzt starten · 15 Min" : "开始今日 15 分钟专注学习"}</span>
@@ -587,10 +1060,10 @@ export function DashboardCockpit({
           {/* 上卡：今日弱项消除处方 */}
           <div className="card-elevation p-5 flex-1 flex flex-col justify-between space-y-3.5">
             <div>
-              <div className="flex items-center justify-between pb-2.5 border-b border-slate-100">
+              <div className="flex items-center justify-between pb-2 border-b border-slate-100">
                 <div className="flex items-center gap-2">
                   <h3 className="font-extrabold text-sm text-slate-900 tracking-tight">
-                    {de ? "Tagesaufgaben (3 offen)" : "今日推荐任务 (3 项待完成)"}
+                    {de ? `Tagesaufgaben (${filteredMissions.filter(m => !completedMissions[m.id]).length} offen)` : `今日推荐任务 (${filteredMissions.filter(m => !completedMissions[m.id]).length} 项待完成)`}
                   </h3>
                   {/* 保留单测契约锚点 */}
                   <span className="sr-only">
@@ -600,6 +1073,49 @@ export function DashboardCockpit({
                 <span className="text-xs text-slate-500 font-mono font-bold">
                   {completedCount} / {DEMO_MISSIONS.length} {de ? "erledigt" : "已完成"}
                 </span>
+              </div>
+
+              {/* 学科聚焦胶囊过滤器 (Fokus-Filter) */}
+              <div className="flex items-center gap-1.5 overflow-x-auto py-2 border-b border-slate-100 text-xs">
+                <span className="font-mono text-[10px] text-slate-500 font-bold uppercase tracking-wider shrink-0 mr-1">
+                  {de ? "Fokus:" : "学科聚焦:"}
+                </span>
+                <button
+                  type="button"
+                  onClick={() => setFachFilter("klausur")}
+                  className={`px-2.5 py-0.5 rounded-md border font-mono text-[11px] font-bold transition-all cursor-pointer ${
+                    fachFilter === "klausur"
+                      ? "bg-slate-900 text-white border-slate-900"
+                      : "bg-[var(--surface)] text-slate-600 border-[var(--line)] hover:text-slate-900"
+                  }`}
+                >
+                  {de ? "Klausurfächer (3 Kern)" : "会考主攻 (3科)"}
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setFachFilter("alle")}
+                  className={`px-2.5 py-0.5 rounded-md border font-mono text-[11px] font-bold transition-all cursor-pointer ${
+                    fachFilter === "alle"
+                      ? "bg-slate-900 text-white border-slate-900"
+                      : "bg-[var(--surface)] text-slate-600 border-[var(--line)] hover:text-slate-900"
+                  }`}
+                >
+                  {de ? "Alle Fächer" : "全部学科"}
+                </button>
+                {["Deutsch", "SoWi", "Mathe"].map((f) => (
+                  <button
+                    key={f}
+                    type="button"
+                    onClick={() => setFachFilter(f)}
+                    className={`px-2 py-0.5 rounded-md border font-mono text-[11px] font-bold transition-all cursor-pointer ${
+                      fachFilter === f
+                        ? "bg-slate-900 text-white border-slate-900"
+                        : "bg-[var(--surface)] text-slate-600 border-[var(--line)] hover:text-slate-900"
+                    }`}
+                  >
+                    {f}
+                  </button>
+                ))}
               </div>
 
               {isAllCompleted ? (
@@ -618,7 +1134,7 @@ export function DashboardCockpit({
                 </div>
               ) : (
                 <div className="divide-y divide-slate-100 mt-1">
-                  {DEMO_MISSIONS.map((m, idx) => {
+                  {filteredMissions.map((m, idx) => {
                     const done = completedMissions[m.id] || false;
                     const pillColor =
                       m.fach === "Deutsch"
@@ -651,7 +1167,7 @@ export function DashboardCockpit({
                           </div>
                         </div>
 
-                        {/* 右侧：状态标记与去执行主按钮 */}
+                        {/* 右侧：状态标记、专注实战与去执行主按钮 */}
                         <div className="flex items-center gap-2 shrink-0">
                           <button
                             type="button"
@@ -673,6 +1189,17 @@ export function DashboardCockpit({
                               />
                             </svg>
                           </button>
+
+                          {DEMO_FOCUS_LESSONS[m.id] && (
+                            <button
+                              type="button"
+                              onClick={() => setActiveFocusMission(m)}
+                              className="text-[11px] font-mono font-bold text-[#D96E3A] hover:bg-[#D96E3A]/10 px-2 py-1 rounded-md border border-[#D96E3A]/30 transition-all cursor-pointer shrink-0"
+                              title={de ? "15-Minuten-Fokusblock starten" : "进入 15 分钟专注闭环"}
+                            >
+                              {de ? "Fokus" : "专注"}
+                            </button>
+                          )}
 
                           <button
                             type="button"
@@ -789,7 +1316,7 @@ export function DashboardCockpit({
                   {de ? "Fachbeherrschung (Durchschnitt)" : "各学科考点掌握度"}
                 </div>
                 <div className="space-y-2 pt-0.5">
-                  {DEMO_SUBJECT_MASTERY.map((sub) => (
+                  {primarySubjectMastery.map((sub) => (
                     <div
                       key={sub.fach}
                       onClick={() => onNavigateToTab?.("reise", { fach: sub.fach })}
@@ -823,6 +1350,62 @@ export function DashboardCockpit({
                       </div>
                     </div>
                   ))}
+
+                  {secondarySubjectMastery.length > 0 && (
+                    <div className="pt-1.5 border-t border-slate-100">
+                      <button
+                        type="button"
+                        onClick={() => setOtherSubjectsExpanded(!otherSubjectsExpanded)}
+                        className="w-full py-1 px-2 rounded-lg text-left text-xs font-mono font-bold text-slate-500 hover:text-slate-800 flex items-center justify-between transition-colors cursor-pointer"
+                      >
+                        <span>
+                          {de ? `Weitere Fächer (${secondarySubjectMastery.length})` : `其他学科 (${secondarySubjectMastery.length} 门已折叠)`}
+                        </span>
+                        <span className="text-[10px]">
+                          {otherSubjectsExpanded ? "▲" : "▼"}
+                        </span>
+                      </button>
+
+                      {otherSubjectsExpanded && (
+                        <div className="space-y-1.5 pt-1">
+                          {secondarySubjectMastery.map((sub) => (
+                            <div
+                              key={sub.fach}
+                              onClick={() => onNavigateToTab?.("reise", { fach: sub.fach })}
+                              className="flex items-center justify-between gap-3 text-xs p-1.5 hover:bg-slate-50/80 rounded-lg transition-colors cursor-pointer group"
+                            >
+                              <div className="flex items-center gap-2 min-w-0 w-24">
+                                <span className={`text-[10px] font-mono font-bold px-1.5 py-0.2 rounded border ${sub.pillColor}`}>
+                                  {sub.fach}
+                                </span>
+                                <span className="font-sans font-medium text-slate-800 truncate">
+                                  {de ? sub.nameDE : sub.nameZH}
+                                </span>
+                              </div>
+
+                              <div className="flex-1 mx-2">
+                                <div className="w-full h-2 rounded-full bg-slate-100 overflow-hidden border border-slate-200/60">
+                                  <div
+                                    className="h-full bg-slate-800 rounded-full transition-all duration-500 group-hover:bg-[#D96E3A]"
+                                    style={{ width: `${sub.pct}%` }}
+                                  />
+                                </div>
+                              </div>
+
+                              <div className="flex items-center gap-2 text-right shrink-0">
+                                <span className="font-mono text-[11px] font-bold text-slate-900 tabular-nums">
+                                  {sub.pct}%
+                                </span>
+                                <span className="font-mono text-[10px] text-amber-800 font-semibold">
+                                  {sub.np} NP
+                                </span>
+                              </div>
+                            </div>
+                          ))}
+                        </div>
+                      )}
+                    </div>
+                  )}
                 </div>
               </div>
 
@@ -915,6 +1498,19 @@ export function DashboardCockpit({
           </div>
         </section>
       </div>
+
+      {/* 沉浸式 15 分钟专注流闭环弹窗 */}
+      {activeFocusMission && DEMO_FOCUS_LESSONS[activeFocusMission.id] && (
+        <FocusFlowModal
+          lesson={DEMO_FOCUS_LESSONS[activeFocusMission.id]}
+          de={de}
+          onClose={() => setActiveFocusMission(null)}
+          onComplete={() => {
+            toggleMission(activeFocusMission.id, activeFocusMission.xpReward);
+            setActiveFocusMission(null);
+          }}
+        />
+      )}
     </div>
   );
 }

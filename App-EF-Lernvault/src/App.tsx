@@ -243,8 +243,14 @@ export default function App() {
     return "einstellungen";
   };
 
+  const isAuxTab = (t: Tab) => ["reise", "labor", "designlab", "quiz", "tutor", "planner", "mindmap", "lernbaum", "werkzeuge"].includes(t);
+  const [toolsExpanded, setToolsExpanded] = useState<boolean>(() => isAuxTab(getInitialTab()));
+
   const switchTab = (id: Tab) => {
     setTab(id);
+    if (isAuxTab(id)) {
+      setToolsExpanded(true);
+    }
     if (typeof window !== "undefined") {
       const url = new URL(window.location.href);
       url.searchParams.set("tab", id);
@@ -262,33 +268,30 @@ export default function App() {
     shortcut: string;
   }
 
-  const lernenTabs: SubNavItem[] = useMemo(() => {
+  const coreTabs: NavItem[] = useMemo(() => [
+    { id: "home", label: tr.home, icon: icons.home },
+    { id: "library", label: tr.library, icon: icons.library },
+    { id: "flashcards", label: tr.flashcards, icon: icons.flashcards },
+    { id: "klausursim", label: tr.klausursim, icon: icons.klausursim },
+  ], [tr]);
+
+  const auxTabs: SubNavItem[] = useMemo(() => {
     const list: SubNavItem[] = [
       { id: "reise", label: lang === "de" ? "Lernreise" : "新知课程", shortcut: "Alt 9", icon: icons.reise },
       { id: "labor", label: lang === "de" ? "Labor" : "互动实验", shortcut: "Alt L", icon: icons.labor },
+      { id: "quiz", label: tr.quiz, shortcut: "Alt 4", icon: icons.quiz },
+      { id: "tutor", label: tr.tutor, shortcut: "Alt 6", icon: icons.tutor },
+      { id: "lernbaum", label: tr.lernbaum, shortcut: "Alt B", icon: icons.lernbaum },
+      { id: "mindmap", label: tr.mindmap, shortcut: "Alt 8", icon: icons.mindmap },
+      { id: "planner", label: tr.planner, shortcut: "Alt 7", icon: icons.planner },
+      { id: "werkzeuge", label: tr.werkzeuge, shortcut: "Alt W", icon: icons.werkzeuge },
     ];
     if (devMode) {
       list.push({ id: "designlab", label: lang === "de" ? "Design-Lab" : "设计展厅", shortcut: "Alt D", icon: icons.designlab });
     }
-    list.push(
-      { id: "library", label: tr.library, shortcut: "Alt 2", icon: icons.library },
-      { id: "lernbaum", label: tr.lernbaum, shortcut: "Alt B", icon: icons.lernbaum },
-      { id: "mindmap", label: tr.mindmap, shortcut: "Alt 8", icon: icons.mindmap },
-    );
     return list;
   }, [lang, devMode, tr]);
 
-  const wiederholenTabs: SubNavItem[] = [
-    { id: "flashcards", label: tr.flashcards, shortcut: "Alt 3", icon: icons.flashcards },
-    { id: "planner", label: tr.planner, shortcut: "Alt 7", icon: icons.planner },
-  ];
-
-  const uebenTabs: SubNavItem[] = [
-    { id: "klausursim", label: tr.klausursim, shortcut: "Alt 5", icon: icons.klausursim },
-    { id: "quiz", label: tr.quiz, shortcut: "Alt 4", icon: icons.quiz },
-    { id: "tutor", label: tr.tutor, shortcut: "Alt 6", icon: icons.tutor },
-    { id: "werkzeuge", label: tr.werkzeuge, shortcut: "Alt W", icon: icons.werkzeuge },
-  ];
 
   const allNavItems: NavItem[] = useMemo(
     () => {
@@ -592,123 +595,95 @@ export default function App() {
           </div>
         </div>
 
-        <nav className="flex flex-col space-y-2.5 overflow-y-auto flex-1">
-          {/* Home */}
-          <div>
+        <nav className="flex flex-col space-y-1.5 overflow-y-auto flex-1">
+          {/* Kernbereiche (4 Fokus-Module) */}
+          <div className="space-y-0.5">
+            <div className="hidden px-2 pb-1 font-mono text-[var(--text-meta)] uppercase tracking-wider text-[var(--gray)] xl:block">
+              {lang === "de" ? "Abitur-Fokus" : "会考核心 · Fokus"}
+            </div>
+            {coreTabs.map((item) => {
+              const isActive = tab === item.id;
+              return (
+                <button
+                  key={item.id}
+                  onClick={() => switchTab(item.id)}
+                  aria-current={isActive ? "page" : undefined}
+                  aria-label={item.label}
+                  title={item.label}
+                  className={`group flex h-8 w-full items-center justify-center rounded-[var(--radius)] px-2 text-left text-xs transition-colors cursor-pointer xl:justify-start xl:gap-2 ${
+                    isActive
+                      ? "bg-[var(--surface)] font-medium text-[var(--accent)] border border-[var(--line)] shadow-none"
+                      : "text-[var(--gray)] hover:bg-[var(--surface)] hover:text-[var(--ink)]"
+                  }`}
+                >
+                  <span className="flex h-4 w-4 shrink-0 items-center justify-center select-none text-current">
+                    {item.icon}
+                  </span>
+                  <span className="hidden truncate font-sans text-xs font-medium xl:inline">
+                    {item.label}
+                  </span>
+                </button>
+              );
+            })}
+          </div>
+
+          {/* Erweiterte Werkzeuge & Labore (Klappbereich) */}
+          <div className="pt-2 border-t border-[var(--line)] space-y-0.5">
             <button
-              onClick={() => switchTab("home")}
-              aria-current={tab === "home" ? "page" : undefined}
-              aria-label={tr.home}
-              title={tr.home}
-              className={`group flex h-8 w-full items-center justify-center rounded-[var(--radius)] px-2 text-left text-xs transition-colors cursor-pointer xl:justify-start xl:gap-2 ${
-                tab === "home"
-                  ? "bg-[var(--surface)] font-medium text-[var(--accent)] border border-[var(--line)] shadow-none"
-                  : "text-[var(--gray)] hover:bg-[var(--surface)] hover:text-[var(--ink)]"
-              }`}
+              type="button"
+              onClick={() => setToolsExpanded(!toolsExpanded)}
+              className="flex h-7 w-full items-center justify-between rounded-[var(--radius)] px-2 text-left text-xs text-[var(--gray)] hover:text-[var(--ink)] transition-colors cursor-pointer"
+              title={lang === "de" ? "Weitere Werkzeuge & Labore umschalten" : "展开/折叠更多工具与实验"}
             >
-              <span className="flex h-4 w-4 shrink-0 items-center justify-center select-none text-current">
-                {icons.home}
+              <span className="hidden truncate font-mono text-[var(--text-meta)] uppercase tracking-wider xl:inline">
+                {lang === "de" ? "Werkzeuge & Labore" : "工具与实验室"}
               </span>
-              <span className="hidden truncate font-sans text-xs font-medium xl:inline">
-                {tr.home}
+              <span className="flex h-4 w-4 items-center justify-center select-none text-current">
+                <svg
+                  width="12"
+                  height="12"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="1.6"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className={`transition-transform duration-200 ${toolsExpanded ? "rotate-180" : ""}`}
+                  aria-hidden="true"
+                >
+                  <path d="M4 6l4 4 4-4" />
+                </svg>
               </span>
             </button>
-          </div>
 
-          {/* Section 1: Lernen */}
-          <div className="space-y-0.5">
-            <div className="hidden px-2 pb-1 font-mono text-[var(--text-meta)] uppercase tracking-wider text-[var(--gray)] xl:block">
-              {lang === "de" ? "Lernen" : "学习 · Lernen"}
-            </div>
-            <div className="border-t border-[var(--line)] my-1 xl:hidden" />
-            {lernenTabs.map((sub) => {
-              const isActive = tab === sub.id;
-              return (
-                <button
-                  key={sub.id}
-                  onClick={() => switchTab(sub.id)}
-                  aria-current={isActive ? "page" : undefined}
-                  aria-label={sub.label}
-                  title={sub.label}
-                  className={`group flex h-8 w-full items-center justify-center rounded-[var(--radius)] px-2 text-left text-xs transition-colors cursor-pointer xl:justify-start xl:gap-2 ${
-                    isActive
-                      ? "bg-[var(--surface)] font-medium text-[var(--accent)] border border-[var(--line)] shadow-none"
-                      : "text-[var(--gray)] hover:bg-[var(--surface)] hover:text-[var(--ink)]"
-                  }`}
-                >
-                  <span className="flex h-4 w-4 shrink-0 items-center justify-center select-none text-current">
-                    {sub.icon}
-                  </span>
-                  <span className="hidden truncate font-sans text-xs font-medium xl:inline">
-                    {sub.label}
-                  </span>
-                </button>
-              );
-            })}
-          </div>
-
-          {/* Section 2: Wiederholen */}
-          <div className="space-y-0.5">
-            <div className="hidden px-2 pb-1 font-mono text-[var(--text-meta)] uppercase tracking-wider text-[var(--gray)] xl:block">
-              {lang === "de" ? "Wiederholen" : "复习 · Wiederholen"}
-            </div>
-            <div className="border-t border-[var(--line)] my-1 xl:hidden" />
-            {wiederholenTabs.map((sub) => {
-              const isActive = tab === sub.id;
-              return (
-                <button
-                  key={sub.id}
-                  onClick={() => switchTab(sub.id)}
-                  aria-current={isActive ? "page" : undefined}
-                  aria-label={sub.label}
-                  title={sub.label}
-                  className={`group flex h-8 w-full items-center justify-center rounded-[var(--radius)] px-2 text-left text-xs transition-colors cursor-pointer xl:justify-start xl:gap-2 ${
-                    isActive
-                      ? "bg-[var(--surface)] font-medium text-[var(--accent)] border border-[var(--line)] shadow-none"
-                      : "text-[var(--gray)] hover:bg-[var(--surface)] hover:text-[var(--ink)]"
-                  }`}
-                >
-                  <span className="flex h-4 w-4 shrink-0 items-center justify-center select-none text-current">
-                    {sub.icon}
-                  </span>
-                  <span className="hidden truncate font-sans text-xs font-medium xl:inline">
-                    {sub.label}
-                  </span>
-                </button>
-              );
-            })}
-          </div>
-
-          {/* Section 3: Ueben */}
-          <div className="space-y-0.5">
-            <div className="hidden px-2 pb-1 font-mono text-[var(--text-meta)] uppercase tracking-wider text-[var(--gray)] xl:block">
-              {lang === "de" ? "Üben" : "练习 · Üben"}
-            </div>
-            <div className="border-t border-[var(--line)] my-1 xl:hidden" />
-            {uebenTabs.map((sub) => {
-              const isActive = tab === sub.id;
-              return (
-                <button
-                  key={sub.id}
-                  onClick={() => switchTab(sub.id)}
-                  aria-current={isActive ? "page" : undefined}
-                  aria-label={sub.label}
-                  title={sub.label}
-                  className={`group flex h-8 w-full items-center justify-center rounded-[var(--radius)] px-2 text-left text-xs transition-colors cursor-pointer xl:justify-start xl:gap-2 ${
-                    isActive
-                      ? "bg-[var(--surface)] font-medium text-[var(--accent)] border border-[var(--line)] shadow-none"
-                      : "text-[var(--gray)] hover:bg-[var(--surface)] hover:text-[var(--ink)]"
-                  }`}
-                >
-                  <span className="flex h-4 w-4 shrink-0 items-center justify-center select-none text-current">
-                    {sub.icon}
-                  </span>
-                  <span className="hidden truncate font-sans text-xs font-medium xl:inline">
-                    {sub.label}
-                  </span>
-                </button>
-              );
-            })}
+            {toolsExpanded && (
+              <div className="space-y-0.5 pt-0.5">
+                {auxTabs.map((sub) => {
+                  const isActive = tab === sub.id;
+                  return (
+                    <button
+                      key={sub.id}
+                      onClick={() => switchTab(sub.id)}
+                      aria-current={isActive ? "page" : undefined}
+                      aria-label={sub.label}
+                      title={sub.label}
+                      className={`group flex h-8 w-full items-center justify-center rounded-[var(--radius)] px-2 text-left text-xs transition-colors cursor-pointer xl:justify-start xl:gap-2 ${
+                        isActive
+                          ? "bg-[var(--surface)] font-medium text-[var(--accent)] border border-[var(--line)] shadow-none"
+                          : "text-[var(--gray)] hover:bg-[var(--surface)] hover:text-[var(--ink)]"
+                      }`}
+                    >
+                      <span className="flex h-4 w-4 shrink-0 items-center justify-center select-none text-current">
+                        {sub.icon}
+                      </span>
+                      <span className="hidden truncate font-sans text-xs font-medium xl:inline">
+                        {sub.label}
+                      </span>
+                    </button>
+                  );
+                })}
+              </div>
+            )}
           </div>
         </nav>
 
