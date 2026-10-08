@@ -1,0 +1,2418 @@
+{
+  "schemaVersion": 1,
+  "fach": "Philosophie",
+  "nameDE": "Philosophie",
+  "nameZH": "哲学 (Philosophie)",
+  "descriptionDE": "Praktische und theoretische Philosophie der NRW-Oberstufe: Anthropologie, Erkenntnistheorie, Utilitarismus, Deontologie und angewandte Ethik bis zum Abitur (mit Uni-Prep-Vertiefung)",
+  "descriptionZH": "北威州高中哲学全景：人类学、认识论、功利论、义务论与应用伦理，贯通 Sek I 到 Abitur 并延伸至大学先修",
+  "isCustomSubject": false,
+  "categories": [
+    "Utilitarismus",
+    "Deontologie",
+    "Anthropologie",
+    "Angewandte-Ethik",
+    "Erkenntnistheorie"
+  ],
+  "availableTags": [
+    "AFB-III",
+    "Anthropologie",
+    "Argumentation",
+    "Basiswissen",
+    "Bentham",
+    "Definition",
+    "Dilemma",
+    "Erkenntnistheorie",
+    "Ethik",
+    "Formel",
+    "Kant",
+    "Klausur-Dauerbrenner",
+    "Metaphysik",
+    "Mill",
+    "Modell",
+    "Pflichtethik",
+    "Quelle",
+    "Uni-Prep",
+    "Utilitarismus",
+    "Verfahren"
+  ],
+  "nodes": [
+    {
+      "id": "philo-hedonismus-bentham",
+      "fach": "Philosophie",
+      "titleDE": "Klassischer Utilitarismus (Bentham)",
+      "titleZH": "边沁量化算盘与古典功利主义",
+      "summaryDE": "Das größte Glück der größten Zahl. Hedonistisches Kalkül bewertet Handlungsfolgen rein quantitativ.",
+      "summaryZH": "最大多数人的最大快乐；7维快乐算盘量化衡量行为后果，目的证成手段。",
+      "category": "Utilitarismus",
+      "curriculumTier": "EF",
+      "stage": "einfuehrung",
+      "level": 1,
+      "xpReward": 70,
+      "estimatedMinutes": 10,
+      "prerequisites": [],
+      "keyFormulaOrSentence": "Eine Handlung ist moralisch geboten, wenn sie die Bilanz von Lust über Unlust maximiert.",
+      "commonFallacy": "Den Nutzen allein am handelnden Subjekt messen statt an der Gesamtbilanz aller Betroffenen.",
+      "layerIndex": 0,
+      "tags": [
+        "Bentham",
+        "Ethik",
+        "Basiswissen"
+      ]
+    },
+    {
+      "id": "philo-utilitarismus-mill",
+      "fach": "Philosophie",
+      "titleDE": "Qualitativer Hedonismus (Mill)",
+      "titleZH": "密尔高阶快乐与质的功利主义",
+      "summaryDE": "Differenzierung zwischen geistig-moralischen und rein sinnlichen Lüsten (Besser Sokrates unzufrieden).",
+      "summaryZH": "区分精神快乐与感官快乐；胜任裁判官论证；宁做不满足的苏格拉底不做满足的蠢猪。",
+      "category": "Utilitarismus",
+      "curriculumTier": "Q1",
+      "stage": "grundlagen",
+      "level": 2,
+      "xpReward": 110,
+      "estimatedMinutes": 14,
+      "prerequisites": [
+        "philo-hedonismus-bentham"
+      ],
+      "keyFormulaOrSentence": "Geistige Freuden besitzen höhere Qualität und wiegen quantitative sinnliche Genüsse auf.",
+      "commonFallacy": "Mills qualitative Unterscheidung als bloße Geschmacksfrage abtun und den Unterschied zu Benthams rein quantitativem Kalkül verwischen.",
+      "layerIndex": 1,
+      "tags": [
+        "Mill",
+        "Utilitarismus",
+        "Klausur-Dauerbrenner"
+      ]
+    },
+    {
+      "id": "philo-epikur-hedonismus-seelenruhe",
+      "fach": "Philosophie",
+      "titleDE": "Hedonismus und Eudaimonie bei Epikur",
+      "titleZH": "伊壁鸠鲁的快乐主义与灵魂宁静",
+      "summaryDE": "Lust als Abwesenheit von Schmerz und Unruhe; vernünftige Selbstbegrenzung der Begierden.",
+      "summaryZH": "快乐即身体无痛、灵魂不扰；以理性节制欲望，区分自然必要与虚妄奢求。",
+      "category": "Utilitarismus",
+      "curriculumTier": "Sek_I",
+      "stage": "einfuehrung",
+      "level": 1,
+      "xpReward": 60,
+      "estimatedMinutes": 8,
+      "prerequisites": [],
+      "keyFormulaOrSentence": "Höchstes Gut ist die Lust, verstanden als dauerhafte Seelenruhe statt als momentane Sinnenreizung.",
+      "commonFallacy": "Epikurs Hedonismus mit rücksichtslosem Genussstreben verwechseln; er fordert gerade den Verzicht auf schädliche Lüste.",
+      "layerIndex": 0,
+      "tags": [
+        "Definition",
+        "Ethik",
+        "Basiswissen"
+      ]
+    },
+    {
+      "id": "philo-glueck-als-handlungsziel",
+      "fach": "Philosophie",
+      "titleDE": "Glück als letztes Ziel des Handelns",
+      "titleZH": "幸福作为行动的终极目的",
+      "summaryDE": "Alle Handlungen werden um eines obersten Gutes willen gewählt, das nicht wiederum um anderen willen erstrebt wird.",
+      "summaryZH": "一切行动皆为某个不再作为手段的终极目的而做；幸福的自我充足与不可交易。",
+      "category": "Utilitarismus",
+      "curriculumTier": "Sek_I",
+      "stage": "einfuehrung",
+      "level": 1,
+      "xpReward": 60,
+      "estimatedMinutes": 8,
+      "prerequisites": [],
+      "keyFormulaOrSentence": "Das Glück ist das einzige Ziel, das um seiner selbst willen erstrebt wird und keines weiteren Zweckes bedarf.",
+      "commonFallacy": "Glück mit augenblicklichem Erfolg oder Besitz verwechseln, statt es als vollendetes Gelingen des Lebens zu bestimmen.",
+      "layerIndex": 0,
+      "tags": [
+        "Definition",
+        "Ethik",
+        "Basiswissen"
+      ]
+    },
+    {
+      "id": "philo-konsequentialismus-teleologie",
+      "fach": "Philosophie",
+      "titleDE": "Konsequentialismus und teleologische Ethik",
+      "titleZH": "后果论与目的论伦理的判定结构",
+      "summaryDE": "Der moralische Wert liegt allein in den Folgen; die Handlung ist Mittel zu einem vorgegebenen Zweck.",
+      "summaryZH": "道德价值只落在行为后果上；行动被当作达成既定善目标的中介手段。",
+      "category": "Utilitarismus",
+      "curriculumTier": "EF",
+      "stage": "grundlagen",
+      "level": 1,
+      "xpReward": 75,
+      "estimatedMinutes": 9,
+      "prerequisites": [
+        "philo-hedonismus-bentham"
+      ],
+      "keyFormulaOrSentence": "Teleologische Ethiken beurteilen Handlungen ausschließlich nach ihren voraussehbaren Folgen für das Gelingen aller Betroffenen.",
+      "commonFallacy": "Teleologie mit Egoismus gleichsetzen; die Folgenabwägung gilt gerade unparteiisch für alle Betroffenen.",
+      "layerIndex": 1,
+      "tags": [
+        "Definition",
+        "Modell",
+        "Basiswissen"
+      ]
+    },
+    {
+      "id": "philo-utilitaristisches-kalkuel-messbarkeit",
+      "fach": "Philosophie",
+      "titleDE": "Das utilitaristische Kalkül und seine Messbarkeit",
+      "titleZH": "功利算盘的七维量化与可测量性难题",
+      "summaryDE": "Benthams Kriterien Intensität, Dauer, Gewissheit, Nähe, Fruchtbarkeit, Reinheit und Umfang sollen Lüste vergleichbar machen.",
+      "summaryZH": "以强度、持久、确实、远近、繁衍、纯度、广度七维折算快乐总量；量化前提遭根本质疑。",
+      "category": "Utilitarismus",
+      "curriculumTier": "EF",
+      "stage": "grundlagen",
+      "level": 1,
+      "xpReward": 80,
+      "estimatedMinutes": 10,
+      "prerequisites": [
+        "philo-hedonismus-bentham"
+      ],
+      "keyFormulaOrSentence": "Das Kalkül erfordert die kardinale Vergleichbarkeit heterogener Güter, die Bentham unterstellt und seine Kritiker bestreiten.",
+      "commonFallacy": "Die Ceteris-paribus-Klausel übersehen und die qualitative Verschiedenheit von Gütern als reines Mengenproblem ausgeben.",
+      "layerIndex": 1,
+      "tags": [
+        "Formel",
+        "Verfahren",
+        "Klausur-Dauerbrenner"
+      ]
+    },
+    {
+      "id": "philo-hedonismus-lust-vs-eudaimonie",
+      "fach": "Philosophie",
+      "titleDE": "Lust-Hedonismus und Eudämonismus",
+      "titleZH": "快乐主义与幸福论的分野",
+      "summaryDE": "Lust ist Empfindungszustand, eudämonistisches Gelingen umfasst die gesamte Form des Lebens.",
+      "summaryZH": "快乐是即时感受状态，幸福论指向整全的生命形态；由感受质量跃迁到生命形式。",
+      "category": "Utilitarismus",
+      "curriculumTier": "EF",
+      "stage": "grundlagen",
+      "level": 2,
+      "xpReward": 85,
+      "estimatedMinutes": 10,
+      "prerequisites": [
+        "philo-epikur-hedonismus-seelenruhe"
+      ],
+      "keyFormulaOrSentence": "Hedonistische Ethiken zielen auf angenehme Zustände, eudämonistische auf das gelingende Ganze eines selbstbestimmten Lebens.",
+      "commonFallacy": "Eudämonismus und Hedonismus für dasselbe halten; der Eudämonismus verlangt Tugend auch gegen kurzfristige Lust.",
+      "layerIndex": 1,
+      "tags": [
+        "Definition",
+        "Ethik",
+        "Klausur-Dauerbrenner"
+      ]
+    },
+    {
+      "id": "philo-utilitarismus-handlungs-vs-regel",
+      "fach": "Philosophie",
+      "titleDE": "Handlungs- und Regelutilitarismus",
+      "titleZH": "行为功利主义与规则功利主义的层级之争",
+      "summaryDE": "Der Handlungsutilitarismus bewertet jeden Einzelfall, der Regelutilitarismus die Folgen einer allgemein befolgten Regel.",
+      "summaryZH": "前者逐案核算后果，后者以普遍遵循某规则的后果总量为判据，缓解承诺与信任的稳定性问题。",
+      "category": "Utilitarismus",
+      "curriculumTier": "Q1",
+      "stage": "grundlagen",
+      "level": 2,
+      "xpReward": 115,
+      "estimatedMinutes": 14,
+      "prerequisites": [
+        "philo-utilitarismus-mill"
+      ],
+      "keyFormulaOrSentence": "Der Regelutilitarismus rechtfertigt eine Einzelhandlung über die Nützlichkeit der Regel, nicht über ihre unmittelbaren Folgen.",
+      "commonFallacy": "Den Regelutilitarismus als verkappte Pflichtethik verkennen; die Regel bleibt hier allein durch ihre Folgen begründet.",
+      "layerIndex": 2,
+      "tags": [
+        "Modell",
+        "Ethik",
+        "Klausur-Dauerbrenner"
+      ]
+    },
+    {
+      "id": "philo-utilitarismus-praeferenz-singer",
+      "fach": "Philosophie",
+      "titleDE": "Präferenzutilitarismus (Singer)",
+      "titleZH": "辛格的偏好功利主义与利益平等考量",
+      "summaryDE": "Nicht Lust, sondern die Erfüllung rationaler Interessen ist Maßstab, unabhängig davon, wer sie hat.",
+      "summaryZH": "以理性偏好与利益的满足为尺度，而非快乐量；道德考量延伸到一切有感受能力的生命。",
+      "category": "Utilitarismus",
+      "curriculumTier": "Q1",
+      "stage": "vertiefung",
+      "level": 2,
+      "xpReward": 120,
+      "estimatedMinutes": 14,
+      "prerequisites": [
+        "philo-utilitarismus-mill"
+      ],
+      "keyFormulaOrSentence": "Gleiche Interessen verdienen gleiche Berücksichtigung, unabhängig von der Spezies des Trägers.",
+      "commonFallacy": "Den Präferenzutilitarismus mit bloßer Nutzenaggregation verwechseln; entscheidend ist der unparteiische Standpunkt der Gleichheit der Interessen.",
+      "layerIndex": 2,
+      "tags": [
+        "Modell",
+        "AFB-III",
+        "Klausur-Dauerbrenner"
+      ]
+    },
+    {
+      "id": "philo-mill-freiheitsprinzip-schaden",
+      "fach": "Philosophie",
+      "titleDE": "Mills Freiheitsprinzip und Schadensgrenze",
+      "titleZH": "密尔的自由原则与伤害界限",
+      "summaryDE": "Eingriffe in die Freiheit sind nur zur Verhinderung von Schaden für Dritte legitim; Selbstschädigung rechtfertigt keinen Zwang.",
+      "summaryZH": "唯有危及他人时才可施加干涉；单纯自伤不足以证成家长式强制。",
+      "category": "Utilitarismus",
+      "curriculumTier": "Q1",
+      "stage": "vertiefung",
+      "level": 2,
+      "xpReward": 110,
+      "estimatedMinutes": 13,
+      "prerequisites": [
+        "philo-utilitarismus-mill"
+      ],
+      "keyFormulaOrSentence": "Das einzige Ziel, um dessentwillen Zwang über ein Gesellschaftsmitglied ausgeübt werden darf, ist die Verhütung von Schaden für andere.",
+      "commonFallacy": "Den Schadensbegriff beliebig ausweiten, sodass jede Kränkung als Schaden gilt und das Prinzip seine Grenze verliert.",
+      "layerIndex": 2,
+      "tags": [
+        "Quelle",
+        "Ethik",
+        "Klausur-Dauerbrenner"
+      ]
+    },
+    {
+      "id": "philo-utilitarismus-erwartungsnutzen",
+      "fach": "Philosophie",
+      "titleDE": "Erwartungsnutzen und ex-ante-Bewertung",
+      "titleZH": "期望效用与事前事后评价的分野",
+      "summaryDE": "Unter Unsicherheit wird der Erwartungswert der Folgen über Eintrittswahrscheinlichkeiten bewertet, nicht der faktische Ausgang.",
+      "summaryZH": "不确定下以概率加权的后果期望值评判，而非以既成结果倒推；为决策伦理提供可操作模型。",
+      "category": "Utilitarismus",
+      "curriculumTier": "Q2",
+      "stage": "vertiefung",
+      "level": 3,
+      "xpReward": 140,
+      "estimatedMinutes": 16,
+      "prerequisites": [
+        "philo-utilitaristisches-kalkuel-messbarkeit",
+        "philo-utilitarismus-handlungs-vs-regel"
+      ],
+      "keyFormulaOrSentence": "Moralisch zu bewerten ist die Handlung ex ante nach ihrem Erwartungsnutzen, nicht ex post nach dem eingetretenen Zufallsergebnis.",
+      "commonFallacy": "Die ex-post-Perspektive einnehmen und erfolgreiche Zufallstreffer als moralisch verdient begreifen (Ergebnisverzerrung).",
+      "layerIndex": 3,
+      "tags": [
+        "Formel",
+        "Modell",
+        "AFB-III"
+      ]
+    },
+    {
+      "id": "philo-utilitarismus-rechte-kritik",
+      "fach": "Philosophie",
+      "titleDE": "Kritik am Utilitarismus: Rechte und Personengrenzen",
+      "titleZH": "功利主义批判：个体权利与人格边界",
+      "summaryDE": "Wenn Nutzenaggregation alles aufrechnet, kann sie Folter oder Tötung Einzelner zum Wohl der Mehrheit rechtfertigen.",
+      "summaryZH": "若一切皆可折算为总量，则个体权利沦为社会最大化的代价，个人不可被随意跨越的边界被抹平。",
+      "category": "Utilitarismus",
+      "curriculumTier": "Q2",
+      "stage": "synthese",
+      "level": 3,
+      "xpReward": 145,
+      "estimatedMinutes": 16,
+      "prerequisites": [
+        "philo-utilitarismus-handlungs-vs-regel",
+        "philo-utilitarismus-praeferenz-singer"
+      ],
+      "keyFormulaOrSentence": "Die Aggregation von Nutzen kennt keine unübersteigbaren Rechte, weshalb sie den Einzelnen zum bloßen Mittel der Gesamtwohlfahrt machen kann.",
+      "commonFallacy": "Die Rechte-Kritik als reine Gefühlssache abweisen und übersehen, dass sie die Struktur der Nutzenaggregation selbst angreift.",
+      "layerIndex": 3,
+      "tags": [
+        "AFB-III",
+        "Ethik",
+        "Klausur-Dauerbrenner"
+      ]
+    },
+    {
+      "id": "philo-utilitarismus-negative-utilitaer",
+      "fach": "Philosophie",
+      "titleDE": "Negativer Utilitarismus",
+      "titleZH": "消极功利主义：减苦优先于增乐",
+      "summaryDE": "Verpflichtend ist vorrangig die Vermeidung von Leid; die Mehrung von Glück ist nachrangig und nicht einklagbar.",
+      "summaryZH": "道德要务首在消除痛苦，增益幸福为次；以此回应人口总量与苦乐不可通约的诘难。",
+      "category": "Utilitarismus",
+      "curriculumTier": "Uni_Prep",
+      "stage": "synthese",
+      "level": 3,
+      "xpReward": 155,
+      "estimatedMinutes": 18,
+      "prerequisites": [
+        "philo-utilitarismus-handlungs-vs-regel"
+      ],
+      "keyFormulaOrSentence": "Wenn Leidvermeidung Vorrang vor Glücksmehrung hat, schrumpft die Menge moralisch gebotener Handlungen auf die Unterlassung von Schaden.",
+      "commonFallacy": "Negativen Utilitarismus für identisch mit dem klassischen halten; der Vorrang der Leidvermeidung ändert die Aggregationsregel.",
+      "layerIndex": 3,
+      "tags": [
+        "Modell",
+        "Uni-Prep",
+        "AFB-III"
+      ]
+    },
+    {
+      "id": "philo-utilitarismus-sozialwahl-aggregation",
+      "fach": "Philosophie",
+      "titleDE": "Sozialwahl und Nutzenaggregation (Uni-Prep)",
+      "titleZH": "社会选择与偏好聚合的理论难题",
+      "summaryDE": "Wie lassen sich individuelle Präferenzen widerspruchsfrei zu einer kollektiven Rangordnung aggregieren, ohne Fairnessbedingungen zu verletzen?",
+      "summaryZH": "如何在满足无关项独立、帕累托与不独裁等公理的前提下，把个体偏好无矛盾地聚合为集体排序。",
+      "category": "Utilitarismus",
+      "curriculumTier": "Uni_Prep",
+      "stage": "synthese",
+      "level": 3,
+      "xpReward": 165,
+      "estimatedMinutes": 20,
+      "prerequisites": [
+        "philo-utilitarismus-erwartungsnutzen",
+        "philo-utilitarismus-rechte-kritik",
+        "philo-utilitarismus-praeferenz-singer"
+      ],
+      "keyFormulaOrSentence": "Jede Aggregationsregel, die mehrere Individuen zu einer kollektiven Ordnung verdichtet, verletzt mindestens eine plausible Fairnessbedingung.",
+      "commonFallacy": "Die Unmöglichkeit der perfekten Aggregation als Widerlegung jeder Ethik lesen statt als Präzisierung der Grenzen des Nutzenkalküls.",
+      "layerIndex": 4,
+      "tags": [
+        "Modell",
+        "Uni-Prep",
+        "AFB-III"
+      ]
+    },
+    {
+      "id": "philo-kant-kategorischer-imperativ",
+      "fach": "Philosophie",
+      "titleDE": "Kategorischer Imperativ (Kant)",
+      "titleZH": "康德定言命令与先验自律义务论",
+      "summaryDE": "Deontologische Ethik: Pflichtgemäßes Handeln aus Pflicht. Grundformel und Menschheits-Zweck-Formel.",
+      "summaryZH": "义务论断言：准则普遍化检验无思维或意志矛盾；人永远作为目的而非单纯工具。",
+      "category": "Deontologie",
+      "curriculumTier": "Q1",
+      "stage": "vertiefung",
+      "level": 2,
+      "xpReward": 130,
+      "estimatedMinutes": 15,
+      "prerequisites": [
+        "philo-utilitarismus-mill",
+        "philo-kant-guter-wille-aus-pflicht",
+        "philo-kant-autonomie-selbstgesetzgebung"
+      ],
+      "keyFormulaOrSentence": "Handle nur nach derjenigen Maxime, durch die du zugleich wollen kannst, dass sie ein allgemeines Gesetz werde.",
+      "commonFallacy": "Kategorischen Imperativ mit der Goldenen Regel (Was du nicht willst...) verwechseln.",
+      "layerIndex": 2,
+      "tags": [
+        "Kant",
+        "Pflichtethik",
+        "Klausur-Dauerbrenner"
+      ]
+    },
+    {
+      "id": "philo-deontologie-pflichtbegriff",
+      "fach": "Philosophie",
+      "titleDE": "Deontologie und der Begriff der Pflicht",
+      "titleZH": "义务论与「出于义务」的纯正性",
+      "summaryDE": "Moralischer Wert liegt im Bestimmungsgrund des Willens, nicht in den erwarteten Wirkungen der Handlung.",
+      "summaryZH": "道德价值系于意志的决定根据而非行为效果；义务是理性对感性偏好的无条件要求。",
+      "category": "Deontologie",
+      "curriculumTier": "Sek_I",
+      "stage": "einfuehrung",
+      "level": 1,
+      "xpReward": 60,
+      "estimatedMinutes": 8,
+      "prerequisites": [],
+      "keyFormulaOrSentence": "Pflicht ist die Notwendigkeit einer Handlung aus Achtung vor dem Gesetz, nicht aus Neigung zu ihren Folgen.",
+      "commonFallacy": "Pflicht und Zwang gleichsetzen; die moralische Pflicht entspringt bei Kant der eigenen Vernunft, nicht äußerem Druck.",
+      "layerIndex": 0,
+      "tags": [
+        "Definition",
+        "Kant",
+        "Basiswissen"
+      ]
+    },
+    {
+      "id": "philo-kant-guter-wille-aus-pflicht",
+      "fach": "Philosophie",
+      "titleDE": "Der gute Wille und das Handeln aus Pflicht",
+      "titleZH": "善良意志与「出于义务」而非「合乎义务」",
+      "summaryDE": "Allein der gute Wille ist unbedingt gut; ethisch zählt, ob aus Pflicht oder nur pflichtgemäß gehandelt wird.",
+      "summaryZH": "唯有善良意志无条件为善；合法度与道德度之分在于动机是否出于义务本身。",
+      "category": "Deontologie",
+      "curriculumTier": "EF",
+      "stage": "grundlagen",
+      "level": 1,
+      "xpReward": 80,
+      "estimatedMinutes": 10,
+      "prerequisites": [
+        "philo-deontologie-pflichtbegriff"
+      ],
+      "keyFormulaOrSentence": "Es ist überhaupt nichts in der Welt, ja außerhalb derselben, zu denken möglich, was ohne Einschränkung für gut könnte gehalten werden, als allein ein guter Wille.",
+      "commonFallacy": "Ein pflichtgemäßes Handeln schon für moralisch halten, obwohl das Motiv bloße Neigung oder Nutzenkalkül sein kann.",
+      "layerIndex": 1,
+      "tags": [
+        "Quelle",
+        "Kant",
+        "Klausur-Dauerbrenner"
+      ]
+    },
+    {
+      "id": "philo-kant-autonomie-selbstgesetzgebung",
+      "fach": "Philosophie",
+      "titleDE": "Autonomie als Selbstgesetzgebung der Vernunft",
+      "titleZH": "自律：理性为自身立法",
+      "summaryDE": "Der Wille gibt sich das Sittengesetz selbst; Heteronomie wäre Fremdbestimmung durch Neigungen oder äußere Autorität.",
+      "summaryZH": "意志自行立下道德法则；他律即受偏好或外在权威支配，故自律是人格尊严的根据。",
+      "category": "Deontologie",
+      "curriculumTier": "EF",
+      "stage": "grundlagen",
+      "level": 2,
+      "xpReward": 90,
+      "estimatedMinutes": 11,
+      "prerequisites": [
+        "philo-deontologie-pflichtbegriff"
+      ],
+      "keyFormulaOrSentence": "Autonomie des Willens ist die Beschaffenheit desselben, durch die er sich selbst als gesetzgebend anzusehen hat.",
+      "commonFallacy": "Autonomie als Beliebigkeit missverstehen; Kant versteht darunter die Bindung an das selbst gegebene allgemeine Gesetz.",
+      "layerIndex": 1,
+      "tags": [
+        "Kant",
+        "Definition",
+        "Klausur-Dauerbrenner"
+      ]
+    },
+    {
+      "id": "philo-maximenpruefung-universalisierung",
+      "fach": "Philosophie",
+      "titleDE": "Maximenprüfung und Universalisierung",
+      "titleZH": "准则普遍化的四步检验",
+      "summaryDE": "Die subjektive Maxime wird als allgemeines Naturgesetz gedacht; führt das zum Denk- oder Wollenswiderspruch, ist sie unzulässig.",
+      "summaryZH": "将主观准则设想为普遍自然法则；若产生设想矛盾或意愿矛盾则道德上不允许。",
+      "category": "Deontologie",
+      "curriculumTier": "Q1",
+      "stage": "grundlagen",
+      "level": 2,
+      "xpReward": 120,
+      "estimatedMinutes": 14,
+      "prerequisites": [
+        "philo-kant-kategorischer-imperativ"
+      ],
+      "keyFormulaOrSentence": "Eine Maxime ist sittlich zulässig, wenn ihre Universalisierung weder einen Denkwiderspruch noch einen Wollenswiderspruch erzeugt.",
+      "commonFallacy": "Nur auf äußere Folgen der allgemeinen Befolgung schauen und die beiden Widerspruchsarten nicht unterscheiden.",
+      "layerIndex": 3,
+      "tags": [
+        "Verfahren",
+        "Kant",
+        "Klausur-Dauerbrenner"
+      ]
+    },
+    {
+      "id": "philo-kant-menschheitszweck-formel",
+      "fach": "Philosophie",
+      "titleDE": "Die Menschheits-Zweck-Formel",
+      "titleZH": "人是目的公式：人性目的论表述",
+      "summaryDE": "Handlungen müssen die Menschheit in der eigenen und fremden Person jederzeit auch als Zweck, nie bloß als Mittel behandeln.",
+      "summaryZH": "无论对自己还是他人，人性都须同时被当作目的，绝不可仅仅当作手段。",
+      "category": "Deontologie",
+      "curriculumTier": "Q1",
+      "stage": "vertiefung",
+      "level": 2,
+      "xpReward": 125,
+      "estimatedMinutes": 14,
+      "prerequisites": [
+        "philo-kant-kategorischer-imperativ"
+      ],
+      "keyFormulaOrSentence": "Handle so, dass du die Menschheit sowohl in deiner Person als auch in der Person eines jeden anderen jederzeit zugleich als Zweck, niemals bloß als Mittel brauchst.",
+      "commonFallacy": "Das Wort «bloß» übersehen; Kant verbietet nicht jede Instrumentalisierung, sondern deren Ausschließlichkeit.",
+      "layerIndex": 3,
+      "tags": [
+        "Quelle",
+        "Kant",
+        "AFB-III"
+      ]
+    },
+    {
+      "id": "philo-kant-reich-der-zwecke",
+      "fach": "Philosophie",
+      "titleDE": "Das Reich der Zwecke",
+      "titleZH": "目的王国的共同体构想",
+      "summaryDE": "Systematische Verbindung vernünftiger Wesen durch gemeinsame Gesetze; die Autonomie eines jeden ist mit der Freiheit aller vereinbar.",
+      "summaryZH": "理性存在者通过共同法则结成系统统一体；个体自律与全体自由的相容机制。",
+      "category": "Deontologie",
+      "curriculumTier": "Q2",
+      "stage": "vertiefung",
+      "level": 3,
+      "xpReward": 140,
+      "estimatedMinutes": 15,
+      "prerequisites": [
+        "philo-kant-menschheitszweck-formel"
+      ],
+      "keyFormulaOrSentence": "Im Reich der Zwecke hat alles entweder einen Preis oder eine Würde; was einen Preis hat, kann durch ein Äquivalent ersetzt werden.",
+      "commonFallacy": "Würde und Preis unvermittelt nebeneinanderstellen statt den kategorialen Unterschied in der Ersetzbarkeit zu fassen.",
+      "layerIndex": 4,
+      "tags": [
+        "Kant",
+        "AFB-III",
+        "Klausur-Dauerbrenner"
+      ]
+    },
+    {
+      "id": "philo-kant-luegenverbot-rigorismus",
+      "fach": "Philosophie",
+      "titleDE": "Das rigorose Lügenverbot und seine Grenze",
+      "titleZH": "绝对禁止撒谎的严苛性与边界",
+      "summaryDE": "Auch die Notlüge zum Schutz Unschuldiger verletzt nach Kant die Pflicht gegen die Menschheit in der eigenen Person.",
+      "summaryZH": "即便为保护无辜而说谎，也违背对人性本身的目的义务；由此引出义务论严苛性的经典反驳。",
+      "category": "Deontologie",
+      "curriculumTier": "Q2",
+      "stage": "vertiefung",
+      "level": 3,
+      "xpReward": 140,
+      "estimatedMinutes": 15,
+      "prerequisites": [
+        "philo-kant-menschheitszweck-formel"
+      ],
+      "keyFormulaOrSentence": "Die Lüge verletzt die Menschheit in der eigenen Person, weil sie den Sprachgebrauch als Bedingung verlässlicher Verständigung zerstört.",
+      "commonFallacy": "Das Lügenverbot als bloß ornamentale Regel behandeln und den Konflikt mit der Rettung Unschuldiger nicht rekonstruieren.",
+      "layerIndex": 4,
+      "tags": [
+        "AFB-III",
+        "Kant",
+        "Klausur-Dauerbrenner"
+      ]
+    },
+    {
+      "id": "philo-pflichtenkollision-gueterabwaegung",
+      "fach": "Philosophie",
+      "titleDE": "Pflichtenkollision und Güterabwägung",
+      "titleZH": "义务冲突与价值权衡",
+      "summaryDE": "Wenn zwei Pflichten unvereinbar sind, muss geprüft werden, welche Forderung strikter und unbedingter gilt.",
+      "summaryZH": "当两项义务不可两全时，须区分完全义务与不完全义务，裁定何者更具无条件性。",
+      "category": "Deontologie",
+      "curriculumTier": "Q1",
+      "stage": "grundlagen",
+      "level": 2,
+      "xpReward": 115,
+      "estimatedMinutes": 13,
+      "prerequisites": [
+        "philo-maximenpruefung-universalisierung"
+      ],
+      "keyFormulaOrSentence": "In der Kollision überwiegt die vollkommene Pflicht gegenüber der unvollkommenen, weil jene keinen Spielraum der Ausübung lässt.",
+      "commonFallacy": "Eine Kollision durch Rechnen von Folgen lösen und dabei den deontologischen Geltungsanspruch beider Pflichten preisgeben.",
+      "layerIndex": 4,
+      "tags": [
+        "Verfahren",
+        "Kant",
+        "Klausur-Dauerbrenner"
+      ]
+    },
+    {
+      "id": "philo-kant-wuerde-statt-preis",
+      "fach": "Philosophie",
+      "titleDE": "Würde statt Preis: Unvergleichbarkeit der Person",
+      "titleZH": "尊严非价格：人格的不可替代性",
+      "summaryDE": "Was über jeden Preis erhaben ist, hat keine Äquivalentmenge; Menschenwürde bedeutet Unverrechenbarkeit der Person.",
+      "summaryZH": "超越一切价格的即无等价物；人格尊严意味着个体不可被任何功利量替代。",
+      "category": "Deontologie",
+      "curriculumTier": "Q1",
+      "stage": "vertiefung",
+      "level": 2,
+      "xpReward": 120,
+      "estimatedMinutes": 13,
+      "prerequisites": [
+        "philo-kant-menschheitszweck-formel"
+      ],
+      "keyFormulaOrSentence": "Das moralische Gesetz allein ist Gegenstand der Achtung und erhebt den Menschen über jeden Preis an Werten.",
+      "commonFallacy": "Würde als graduierbar auffassen und damit die Unverrechenbarkeit auflösen, die Abtreibungs- und Sterbehilfedebatten antreibt.",
+      "layerIndex": 4,
+      "tags": [
+        "Kant",
+        "AFB-III",
+        "Klausur-Dauerbrenner"
+      ]
+    },
+    {
+      "id": "philo-deontologie-kritik-folgenblindheit",
+      "fach": "Philosophie",
+      "titleDE": "Kritik der Deontologie: Folgenblindheit und Konfliktstarre",
+      "titleZH": "义务论批判：忽视后果与冲突僵局",
+      "summaryDE": "Absoluter Regelgehorsam kollidiert mit Verantwortung für die realen Folgen und kann zwischen Pflichten ratlos lassen.",
+      "summaryZH": "绝对化的规则服从与对现实后果的责任相冲突；在义务冲突中可能陷入无法裁决的僵局。",
+      "category": "Deontologie",
+      "curriculumTier": "Q2",
+      "stage": "synthese",
+      "level": 3,
+      "xpReward": 145,
+      "estimatedMinutes": 16,
+      "prerequisites": [
+        "philo-kant-reich-der-zwecke",
+        "philo-kant-luegenverbot-rigorismus"
+      ],
+      "keyFormulaOrSentence": "Wer allein die Gesinnung prüft und jede Folgenverantwortung abweist, riskiert, in der Pflichtenkollision ohne Entscheidungskriterium zu bleiben.",
+      "commonFallacy": "Die Kritik pauschal als Relativismus abtun und die von Max Weber benannte Spannung von Gesinnungs- und Verantwortungsethik übergehen.",
+      "layerIndex": 5,
+      "tags": [
+        "AFB-III",
+        "Ethik",
+        "Klausur-Dauerbrenner"
+      ]
+    },
+    {
+      "id": "philo-kant-friedensschrift-voelkerrecht",
+      "fach": "Philosophie",
+      "titleDE": "Kants Friedensschrift und Völkerrecht (Uni-Prep)",
+      "titleZH": "康德永久和平论与国际法秩序",
+      "summaryDE": "Republikanische Verfassung, Völkerbund und Weltbürgerrecht als Bedingungen einer dauerhaften Friedensordnung.",
+      "summaryZH": "共和制、自由国家联盟与世界公民权构成持久和平的三项条件；由道德义务延伸至国家间法权。",
+      "category": "Deontologie",
+      "curriculumTier": "Uni_Prep",
+      "stage": "synthese",
+      "level": 3,
+      "xpReward": 160,
+      "estimatedMinutes": 20,
+      "prerequisites": [
+        "philo-kant-reich-der-zwecke",
+        "philo-deontologie-kritik-folgenblindheit",
+        "philo-kant-wuerde-statt-preis"
+      ],
+      "keyFormulaOrSentence": "Der Friedenszustand unter Menschen ist nicht der Naturzustand, sondern muss gestiftet werden.",
+      "commonFallacy": "Die Friedensschrift für bloße Utopie halten statt sie als rechtsphilosophische Konsequenz der Autonomieforderung zu entfalten.",
+      "layerIndex": 6,
+      "tags": [
+        "Quelle",
+        "Uni-Prep",
+        "AFB-III"
+      ]
+    },
+    {
+      "id": "philo-pflichthandeln-vs-neigung",
+      "fach": "Philosophie",
+      "titleDE": "Pflicht und Neigung im Widerstreit",
+      "titleZH": "义务与偏好的动机争夺",
+      "summaryDE": "Ein Handeln aus Neigung kann äußerlich pflichtgemäß sein, hat aber keinen sittlichen Wert im strengen Sinn.",
+      "summaryZH": "出于偏好的行为可能外在合乎义务，却缺乏严格意义上的道德价值；动机纯正成为分水岭。",
+      "category": "Deontologie",
+      "curriculumTier": "EF",
+      "stage": "grundlagen",
+      "level": 1,
+      "xpReward": 80,
+      "estimatedMinutes": 10,
+      "prerequisites": [
+        "philo-deontologie-pflichtbegriff"
+      ],
+      "keyFormulaOrSentence": "Nur die Handlung aus Pflicht, nicht die bloß pflichtgemäße aus Neigung, hat ihren moralischen Wert in sich selbst.",
+      "commonFallacy": "Aus angenehmer Neigung ein Handeln schon für moralisch wertvoll erklären und die Unterscheidung von Legalität und Moralität verwischen.",
+      "layerIndex": 1,
+      "tags": [
+        "Kant",
+        "Definition",
+        "Klausur-Dauerbrenner"
+      ]
+    },
+    {
+      "id": "philo-menschenwuerde-unantastbarkeit",
+      "fach": "Philosophie",
+      "titleDE": "Die Unantastbarkeit der Menschenwürde",
+      "titleZH": "人的尊严的不可侵犯性",
+      "summaryDE": "Art. 1 GG übernimmt Kants Würdegedanken: die Person ist Trägerin unbedingter Ansprüche, die kein Mehrheitskalkül verrechnen darf.",
+      "summaryZH": "基本法第1条承继康德尊严思想：个体承载不可被多数算盘折算的无条件要求。",
+      "category": "Deontologie",
+      "curriculumTier": "Sek_I",
+      "stage": "einfuehrung",
+      "level": 1,
+      "xpReward": 60,
+      "estimatedMinutes": 8,
+      "prerequisites": [],
+      "keyFormulaOrSentence": "Die Würde des Menschen ist unantastbar; sie zu achten und zu schützen ist Verpflichtung aller staatlichen Gewalt.",
+      "commonFallacy": "Den Grundgesetz-Artikel für rein juristisch halten und die philosophische Wurzel in Kants Zweck-Formel nicht rekonstruieren.",
+      "layerIndex": 0,
+      "tags": [
+        "Quelle",
+        "Kant",
+        "Basiswissen"
+      ]
+    },
+    {
+      "id": "philo-mensch-als-natur-und-kulturwesen",
+      "fach": "Philosophie",
+      "titleDE": "Der Mensch als Natur- und Kulturwesen",
+      "titleZH": "人作为自然存在与文化存在的双重属性",
+      "summaryDE": "Der Mensch teilt biologische Merkmale mit Tieren und schafft zugleich kulturelle Ordnungen, die seine Natur überformen.",
+      "summaryZH": "人与动物共享生物学特征，又创造文化秩序以反塑自身自然；由此形成人类学的双重出发点。",
+      "category": "Anthropologie",
+      "curriculumTier": "Sek_I",
+      "stage": "einfuehrung",
+      "level": 1,
+      "xpReward": 60,
+      "estimatedMinutes": 8,
+      "prerequisites": [],
+      "keyFormulaOrSentence": "Der Mensch ist das einzige Lebewesen, das seine Natur durch Kultur überformt und daher ohne feste artspezifische Umwelt lebt.",
+      "commonFallacy": "Natur und Kultur als Gegensatz behandeln statt die wechselseitige Überformung beider Seiten zu erfassen.",
+      "layerIndex": 0,
+      "tags": [
+        "Definition",
+        "Anthropologie",
+        "Basiswissen"
+      ]
+    },
+    {
+      "id": "philo-philosophieren-grundfragen",
+      "fach": "Philosophie",
+      "titleDE": "Eigenart philosophischen Fragens",
+      "titleZH": "哲学提问的特性与根本问题",
+      "summaryDE": "Philosophieren fragt nach Voraussetzungen, die einzelne Wissenschaften nicht mehr thematisieren, und arbeitet begrifflich statt experimentell.",
+      "summaryZH": "哲学追问各专门科学不再反思的前提，以概念澄清和论证而非实验方式工作。",
+      "category": "Anthropologie",
+      "curriculumTier": "Sek_I",
+      "stage": "einfuehrung",
+      "level": 1,
+      "xpReward": 60,
+      "estimatedMinutes": 8,
+      "prerequisites": [],
+      "keyFormulaOrSentence": "Philosophisches Fragen richtet sich auf die Voraussetzungen und den Sinn von Aussagen, die andere Disziplinen als selbstverständlich gebrauchen.",
+      "commonFallacy": "Philosophie als bloße Meinungssammlung oder Vorstufe der Wissenschaften abtun statt ihre begriffliche Eigenständigkeit zu klären.",
+      "layerIndex": 0,
+      "tags": [
+        "Definition",
+        "Argumentation",
+        "Basiswissen"
+      ]
+    },
+    {
+      "id": "philo-platon-seele-dreiteilung",
+      "fach": "Philosophie",
+      "titleDE": "Platons Seelenmodell und die Vernunft",
+      "titleZH": "柏拉图的灵魂三分与理性统摄",
+      "summaryDE": "Vernunft, Mut und Begierde müssen in eine Rangordnung kommen, damit die Seele gerecht verfasst ist.",
+      "summaryZH": "理性、激情与欲望须按序统合，灵魂才称得上正义；人的秩序是内心各部分的层级和谐。",
+      "category": "Anthropologie",
+      "curriculumTier": "EF",
+      "stage": "grundlagen",
+      "level": 1,
+      "xpReward": 75,
+      "estimatedMinutes": 9,
+      "prerequisites": [
+        "philo-mensch-als-natur-und-kulturwesen"
+      ],
+      "keyFormulaOrSentence": "Gerecht ist der Mensch, wenn die Vernunft mit Einsicht die Begierden lenkt und der Mut ihr beisteht.",
+      "commonFallacy": "Platons Dreiteilung für eine psychologische Typenlehre halten statt als normative Ordnung der Seelenkräfte zu lesen.",
+      "layerIndex": 1,
+      "tags": [
+        "Modell",
+        "Anthropologie",
+        "Basiswissen"
+      ]
+    },
+    {
+      "id": "philo-aristoteles-zoon-politikon",
+      "fach": "Philosophie",
+      "titleDE": "Der Mensch als zoon politikon",
+      "titleZH": "人是政治动物：亚里士多德的目的论人论",
+      "summaryDE": "Der Mensch ist auf die Polis hin angelegt; Sprache und praktische Vernunft ermöglichen ein gemeinsames Gutes.",
+      "summaryZH": "人天生朝向城邦共同体；语言与实践理性使人能辨善恶、共谋善生活。",
+      "category": "Anthropologie",
+      "curriculumTier": "EF",
+      "stage": "grundlagen",
+      "level": 1,
+      "xpReward": 80,
+      "estimatedMinutes": 10,
+      "prerequisites": [
+        "philo-mensch-als-natur-und-kulturwesen"
+      ],
+      "keyFormulaOrSentence": "Der Mensch ist von Natur aus ein politisches Lebewesen, weil er über Sprache und praktische Vernunft verfügt.",
+      "commonFallacy": "Das zoon politikon als bloße Geselligkeit deuten und den teleologischen Anspruch auf ein gutes gemeinsames Leben übersehen.",
+      "layerIndex": 1,
+      "tags": [
+        "Quelle",
+        "Anthropologie",
+        "Basiswissen"
+      ]
+    },
+    {
+      "id": "philo-descartes-leib-seele-dualismus",
+      "fach": "Philosophie",
+      "titleDE": "Descartes' Leib-Seele-Dualismus",
+      "titleZH": "笛卡尔身心二元论与思维实体",
+      "summaryDE": "Bewusstsein und ausgedehnter Körper sind verschiedenartige Substanzen; das Ich ist im Denken gewiss.",
+      "summaryZH": "思维实体的本质是意识，广延实体的本质是占据空间；我思故我在成为不可怀疑的基点。",
+      "category": "Anthropologie",
+      "curriculumTier": "EF",
+      "stage": "grundlagen",
+      "level": 2,
+      "xpReward": 90,
+      "estimatedMinutes": 12,
+      "prerequisites": [
+        "philo-mensch-als-natur-und-kulturwesen"
+      ],
+      "keyFormulaOrSentence": "Ich erkenne, dass ich ein denkendes Wesen bin, dessen Wesen allein im Denken besteht und das keines Ortes bedarf.",
+      "commonFallacy": "Den Substanzendualismus mit dem Alltagsgefühl zweier «Dinge» verwechseln und das Interaktionsproblem überspringen.",
+      "layerIndex": 1,
+      "tags": [
+        "Modell",
+        "Anthropologie",
+        "Klausur-Dauerbrenner"
+      ]
+    },
+    {
+      "id": "philo-hobbes-menschenbild-wolfsnatur",
+      "fach": "Philosophie",
+      "titleDE": "Hobbes: Der Mensch als Wolfsnatur",
+      "titleZH": "霍布斯：人对人是狼的人性图景",
+      "summaryDE": "Gleiche Verletzbarkeit und konkurrierende Begierden erzeugen einen Naturzustand allgemeiner Furcht und Gewalt.",
+      "summaryZH": "相等的受伤能力与相互竞争的欲望导致人人自危的自然状态，故需强力主权者。",
+      "category": "Anthropologie",
+      "curriculumTier": "EF",
+      "stage": "grundlagen",
+      "level": 2,
+      "xpReward": 95,
+      "estimatedMinutes": 12,
+      "prerequisites": [
+        "philo-aristoteles-zoon-politikon"
+      ],
+      "keyFormulaOrSentence": "Der Mensch ist dem Menschen ein Wolf; im Naturzustand herrscht ein Krieg aller gegen alle.",
+      "commonFallacy": "Hobbes' Anthropologie als empirische Behauptung über reale Gewalt lesen statt als Gedankenmodell der Gefährdung von Ordnung.",
+      "layerIndex": 2,
+      "tags": [
+        "Quelle",
+        "Anthropologie",
+        "Klausur-Dauerbrenner"
+      ]
+    },
+    {
+      "id": "philo-rousseau-naturzustand-gutheit",
+      "fach": "Philosophie",
+      "titleDE": "Rousseau: Natürliche Güte und Vergesellschaftung",
+      "titleZH": "卢梭：自然善良与文明异化",
+      "summaryDE": "Der Mensch ist von Natur gut; erst Vergesellschaftung und Eigentum erzeugen Selbstsucht und Ungleichheit.",
+      "summaryZH": "人天性善良，社会化合与私有制才催生自爱与不平等；文明进步伴随道德退化。",
+      "category": "Anthropologie",
+      "curriculumTier": "EF",
+      "stage": "vertiefung",
+      "level": 2,
+      "xpReward": 95,
+      "estimatedMinutes": 12,
+      "prerequisites": [
+        "philo-hobbes-menschenbild-wolfsnatur"
+      ],
+      "keyFormulaOrSentence": "Der Mensch wird frei geboren, und überall liegt er in Ketten; die bürgerliche Ordnung muss die verlorene Freiheit legitimen Gesetzen überantworten.",
+      "commonFallacy": "Rousseaus Naturzustand für ein historisches Stadium halten statt für eine kritische Fiktion zur Beurteilung der Gegenwart.",
+      "layerIndex": 3,
+      "tags": [
+        "Quelle",
+        "Anthropologie",
+        "Klausur-Dauerbrenner"
+      ]
+    },
+    {
+      "id": "philo-sartre-existenz-vor-essenz",
+      "fach": "Philosophie",
+      "titleDE": "Sartre: Die Existenz geht der Essenz voraus",
+      "titleZH": "萨特：存在先于本质与自我塑造",
+      "summaryDE": "Der Mensch hat kein festgelegtes Wesen; er ist, wozu er sich durch seine freien Entscheidungen macht.",
+      "summaryZH": "人没有既定本质；他通过自由抉择把自己造成其所是，并被要求为全部人性负责。",
+      "category": "Anthropologie",
+      "curriculumTier": "EF",
+      "stage": "grundlagen",
+      "level": 2,
+      "xpReward": 90,
+      "estimatedMinutes": 12,
+      "prerequisites": [
+        "philo-descartes-leib-seele-dualismus"
+      ],
+      "keyFormulaOrSentence": "Die Existenz geht der Essenz voraus: der Mensch ist zuerst nichts und wird erst danach durch sein Handeln zu dem, was er ist.",
+      "commonFallacy": "Sartres Freiheit mit Beliebigkeit verwechseln und die Verantwortung übersehen, die jede Wahl für das Bild des Menschen übernimmt.",
+      "layerIndex": 2,
+      "tags": [
+        "Quelle",
+        "Anthropologie",
+        "AFB-III"
+      ]
+    },
+    {
+      "id": "philo-gehlen-mangelwesen-institutionen",
+      "fach": "Philosophie",
+      "titleDE": "Gehlen: Mängelwesen und Institutionen",
+      "titleZH": "盖伦：匮乏者与制度补偿",
+      "summaryDE": "Der Mensch ist biologisch unspezialisiert und muss sich durch Kultur, Technik und Institutionen entlasten.",
+      "summaryZH": "人在生物学上未特化，须借文化、技术与制度实现减负；制度成为替代本能的稳定装置。",
+      "category": "Anthropologie",
+      "curriculumTier": "Q1",
+      "stage": "vertiefung",
+      "level": 2,
+      "xpReward": 115,
+      "estimatedMinutes": 14,
+      "prerequisites": [
+        "philo-aristoteles-zoon-politikon"
+      ],
+      "keyFormulaOrSentence": "Der Mensch ist von Natur ein Kulturwesen, weil er die fehlende Instinktsicherheit durch Institutionen ersetzen muss.",
+      "commonFallacy": "Gehlens «Mängelwesen» als Wertung der Minderwertigkeit lesen statt als Beschreibung der Entlastungsbedürftigkeit.",
+      "layerIndex": 2,
+      "tags": [
+        "Modell",
+        "Anthropologie",
+        "Klausur-Dauerbrenner"
+      ]
+    },
+    {
+      "id": "philo-freud-es-ich-ueberich",
+      "fach": "Philosophie",
+      "titleDE": "Freud: Es, Ich und Über-Ich",
+      "titleZH": "弗洛伊德：本我、自我与超我的三方结构",
+      "summaryDE": "Triebhaftes Es, realitätsprüfendes Ich und internalisiertes Über-Ich bilden ein Spannungsfeld der Psyche.",
+      "summaryZH": "本能本我、现实检验的自我与内化的超我构成心灵张力场；道德源于权威内化。",
+      "category": "Anthropologie",
+      "curriculumTier": "Q2",
+      "stage": "vertiefung",
+      "level": 3,
+      "xpReward": 135,
+      "estimatedMinutes": 15,
+      "prerequisites": [
+        "philo-descartes-leib-seele-dualismus"
+      ],
+      "keyFormulaOrSentence": "Das Über-Ich ist die internalisierte Autorität der Eltern und Kultur; moralische Forderungen werden so unbewusst wirksam.",
+      "commonFallacy": "Freuds Modell für eine rein biologische Trieblehre halten und die kulturelle Herkunft des Über-Ich übersehen.",
+      "layerIndex": 2,
+      "tags": [
+        "Modell",
+        "Anthropologie",
+        "Klausur-Dauerbrenner"
+      ]
+    },
+    {
+      "id": "philo-freud-unbehagen-kultur-triebverzicht",
+      "fach": "Philosophie",
+      "titleDE": "Freud: Das Unbehagen in der Kultur",
+      "titleZH": "弗洛伊德：文明的不满与本能放弃",
+      "summaryDE": "Kultur fordert Triebverzicht; der dadurch erzeugte Schuldgefühlskonflikt lässt vollkommenes Glück unerreichbar erscheinen.",
+      "summaryZH": "文明要求放弃本能满足；由此产生的罪疚冲突使完满幸福成为不可能，成为对伦理要求的自然主义质疑。",
+      "category": "Anthropologie",
+      "curriculumTier": "Q2",
+      "stage": "synthese",
+      "level": 3,
+      "xpReward": 140,
+      "estimatedMinutes": 16,
+      "prerequisites": [
+        "philo-freud-es-ich-ueberich",
+        "philo-gehlen-mangelwesen-institutionen"
+      ],
+      "keyFormulaOrSentence": "Der kulturelle Triebverzicht erzeugt ein Schuldbewusstsein, das den Menschen dauerhaft zwischen Luststreben und Moralität zerreißt.",
+      "commonFallacy": "Freuds Diagnose als Rechtfertigung der Moralauflösung lesen statt als Frage nach den Kosten kultureller Ordnung.",
+      "layerIndex": 3,
+      "tags": [
+        "AFB-III",
+        "Anthropologie",
+        "Klausur-Dauerbrenner"
+      ]
+    },
+    {
+      "id": "philo-determination-vs-freiheit",
+      "fach": "Philosophie",
+      "titleDE": "Determination und Willensfreiheit",
+      "titleZH": "决定论与意志自由的正面冲突",
+      "summaryDE": "Wenn alles Natürliche kausal determiniert ist, scheint freie Selbstbestimmung unmöglich und moralische Zurechnung grundlos.",
+      "summaryZH": "若一切自然现象皆被因果决定，自由自我规定似不可能，道德归责也就失去根基。",
+      "category": "Anthropologie",
+      "curriculumTier": "Uni_Prep",
+      "stage": "synthese",
+      "level": 3,
+      "xpReward": 150,
+      "estimatedMinutes": 18,
+      "prerequisites": [
+        "philo-rousseau-naturzustand-gutheit",
+        "philo-freud-es-ich-ueberich",
+        "philo-sartre-existenz-vor-essenz"
+      ],
+      "keyFormulaOrSentence": "Entweder ist der Wille determiniert und damit unfrei, oder es bleibt ein unbedingter Rest, der sich naturwissenschaftlicher Erklärung entzieht.",
+      "commonFallacy": "Den Determinismus mit Fatalismus gleichsetzen und übersehen, dass Vorhersagbarkeit und Handlungsfreiheit verschiedene Fragen betreffen.",
+      "layerIndex": 4,
+      "tags": [
+        "Modell",
+        "Uni-Prep",
+        "AFB-III"
+      ]
+    },
+    {
+      "id": "philo-libet-experiment-willensfreiheit",
+      "fach": "Philosophie",
+      "titleDE": "Das Libet-Experiment und die Hirnforschung",
+      "titleZH": "利贝特实验与神经科学的自由质疑",
+      "summaryDE": "Messbare Hirnaktivität geht der bewussten Entscheidung voraus; daraus wird eine naturwissenschaftliche Infragestellung der Freiheit abgeleitet.",
+      "summaryZH": "可测的脑活动先于有意识的决定；由此推出对自由的神经科学挑战，成为还原论争辩焦点。",
+      "category": "Anthropologie",
+      "curriculumTier": "Uni_Prep",
+      "stage": "vertiefung",
+      "level": 3,
+      "xpReward": 155,
+      "estimatedMinutes": 18,
+      "prerequisites": [
+        "philo-determination-vs-freiheit",
+        "philo-freud-es-ich-ueberich"
+      ],
+      "keyFormulaOrSentence": "Aus dem zeitlichen Vorlauf neuronaler Aktivität folgt nicht zwingend die Illusion der Freiheit; der Schluss ist selbst deutungsbedürftig.",
+      "commonFallacy": "Vom Vorlaufpotenzial unmittelbar auf vollständige Determiniertheit des Handelns schließen (naturalistischer Fehlschluss).",
+      "layerIndex": 5,
+      "tags": [
+        "Quelle",
+        "Uni-Prep",
+        "AFB-III"
+      ]
+    },
+    {
+      "id": "philo-kompatibilismus-verantwortung",
+      "fach": "Philosophie",
+      "titleDE": "Kompatibilismus und Zurechenbarkeit",
+      "titleZH": "相容论与归责：自由与因果决定可共存",
+      "summaryDE": "Freiheit kann als Handeln nach eigenen, nicht fremd aufgezwungenen Gründen verstanden werden und bleibt so mit Determination vereinbar.",
+      "summaryZH": "自由可理解为按自身而非外在强迫的理由行动，因而与因果决定可共存；归责据此重建。",
+      "category": "Anthropologie",
+      "curriculumTier": "Uni_Prep",
+      "stage": "synthese",
+      "level": 3,
+      "xpReward": 160,
+      "estimatedMinutes": 20,
+      "prerequisites": [
+        "philo-determination-vs-freiheit",
+        "philo-libet-experiment-willensfreiheit",
+        "philo-sartre-existenz-vor-essenz"
+      ],
+      "keyFormulaOrSentence": "Frei ist eine Handlung, wenn sie aus den eigenen Überlegungen hervorgeht und nicht durch äußeren Zwang oder unwiderstehliche Triebe erzwungen ist.",
+      "commonFallacy": "Kompatibilismus als Kapitulation vor dem Determinismus abtun statt die Unterscheidung von Selbstbestimmung und Fremdbestimmung zu prüfen.",
+      "layerIndex": 6,
+      "tags": [
+        "Modell",
+        "Uni-Prep",
+        "AFB-III"
+      ]
+    },
+    {
+      "id": "philo-moralische-grundfragen-alltag",
+      "fach": "Philosophie",
+      "titleDE": "Moralische Grundfragen im Alltag",
+      "titleZH": "日常道德判断与理由追问",
+      "summaryDE": "Alltägliche Werturteile fordern Begründungen; Philosophie klärt die Maßstäbe, nach denen wir loben, tadeln und rechtfertigen.",
+      "summaryZH": "日常价值判断需要理由支撑；哲学澄清我们据以褒贬与辩护的标准从何而来。",
+      "category": "Angewandte-Ethik",
+      "curriculumTier": "Sek_I",
+      "stage": "einfuehrung",
+      "level": 1,
+      "xpReward": 60,
+      "estimatedMinutes": 8,
+      "prerequisites": [],
+      "keyFormulaOrSentence": "Moralische Urteile erheben den Anspruch auf allgemeine Geltung und müssen daher begründet werden können.",
+      "commonFallacy": "Moralische Urteile für bloße Privatmeinung halten und damit die Frage nach Begründbarkeit vorschnell abweisen.",
+      "layerIndex": 0,
+      "tags": [
+        "Definition",
+        "Ethik",
+        "Basiswissen"
+      ]
+    },
+    {
+      "id": "philo-ethik-grundbegriffe-moral",
+      "fach": "Philosophie",
+      "titleDE": "Moral, Ethos und Ethik",
+      "titleZH": "道德、伦常与伦理学的概念分层",
+      "summaryDE": "Moral bezeichnet gelebte Normen, Ethos die Sitte einer Gemeinschaft, Ethik die theoretische Reflexion über beides.",
+      "summaryZH": "道德指实然的规范实践，伦常指共同体的习俗，伦理学是对二者的理论反思；层次混用是最常见失分。",
+      "category": "Angewandte-Ethik",
+      "curriculumTier": "Sek_I",
+      "stage": "einfuehrung",
+      "level": 1,
+      "xpReward": 60,
+      "estimatedMinutes": 8,
+      "prerequisites": [],
+      "keyFormulaOrSentence": "Ethik ist die philosophische Theorie der Moral, nicht die Moral selbst; sie fragt nach der Begründung gelebter Normen.",
+      "commonFallacy": "Moral und Ethik synonym gebrauchen und dadurch die reflexive Ebene der Ethik verfehlen.",
+      "layerIndex": 0,
+      "tags": [
+        "Definition",
+        "Ethik",
+        "Basiswissen"
+      ]
+    },
+    {
+      "id": "philo-dilemma-diskurs",
+      "fach": "Philosophie",
+      "titleDE": "Ethische Dilemmata & Klausur-Urteil",
+      "titleZH": "道德两难案例与哲学评价 (AFB III)",
+      "summaryDE": "Konfrontation von Konsequentialismus und Deontologie bei Triage, Weichesteller und autonomem Fahren.",
+      "summaryZH": "电车难题、ICU医疗分配与自动驾驶伦理中功利论与义务论的正面对撞与权衡辩护。",
+      "category": "Angewandte-Ethik",
+      "curriculumTier": "Q2",
+      "stage": "klausur_praxis",
+      "level": 3,
+      "xpReward": 160,
+      "estimatedMinutes": 18,
+      "prerequisites": [
+        "philo-kant-kategorischer-imperativ"
+      ],
+      "keyFormulaOrSentence": "In AFB III müssen Kantische Menschenwürde und utilitaristische Schadensminimierung diskursiv gewürdigt werden.",
+      "commonFallacy": "Ohne eindeutige Begründungswahl zwischen beiden Positionen lavieren und Gegenargumente nicht gezielt entkräften.",
+      "klausurTip": "Kein fauler Kompromiss: Position klar wählen, mit Kriterium begründen, Gegenposition ernsthaft prüfen.",
+      "layerIndex": 3,
+      "tags": [
+        "Dilemma",
+        "AFB-III",
+        "Klausur-Dauerbrenner"
+      ]
+    },
+    {
+      "id": "philo-abtreibung-selbstbestimmung",
+      "fach": "Philosophie",
+      "titleDE": "Abtreibung: Selbstbestimmung und Lebensschutz",
+      "titleZH": "堕胎伦理：自我决定与生命保护之争",
+      "summaryDE": "Konflikt zwischen dem Selbstbestimmungsrecht der Frau und dem Schutz des werdenden Lebens nach §218 StGB.",
+      "summaryZH": "孕妇自我决定权与对潜在生命的保护义务相冲突；分歧核心在于人格地位从何时开始。",
+      "category": "Angewandte-Ethik",
+      "curriculumTier": "EF",
+      "stage": "grundlagen",
+      "level": 2,
+      "xpReward": 95,
+      "estimatedMinutes": 12,
+      "prerequisites": [
+        "philo-ethik-grundbegriffe-moral"
+      ],
+      "keyFormulaOrSentence": "Die ethische Streitfrage lautet nicht, ob Leben schützenswert ist, sondern ab wann dem Ungeborenen moralischer Status zukommt.",
+      "commonFallacy": "Die Debatte auf ein Für und Wider reduzieren, ohne die Voraussetzung über den Beginn der Schutzwürdigkeit zu klären.",
+      "layerIndex": 1,
+      "tags": [
+        "Dilemma",
+        "Ethik",
+        "Klausur-Dauerbrenner"
+      ]
+    },
+    {
+      "id": "philo-sterbehilfe-autonomie",
+      "fach": "Philosophie",
+      "titleDE": "Sterbehilfe: Autonomie am Lebensende",
+      "titleZH": "临终协助自杀：自主权与生命尊严的边界",
+      "summaryDE": "Das Selbstbestimmungsrecht am Lebensende kollidiert mit der staatlichen Schutzpflicht und der ärztlichen Verpflichtung auf Lebenserhaltung.",
+      "summaryZH": "临终自主权与国家保护义务、医生救治义务相冲突；Suizidhilfe 的合法性判定成为核心。",
+      "category": "Angewandte-Ethik",
+      "curriculumTier": "EF",
+      "stage": "grundlagen",
+      "level": 2,
+      "xpReward": 95,
+      "estimatedMinutes": 12,
+      "prerequisites": [
+        "philo-ethik-grundbegriffe-moral"
+      ],
+      "keyFormulaOrSentence": "Zwischen aktiver, passiver und indirekter Sterbehilfe sowie der Assistenz zum Suizid ist begrifflich strikt zu unterscheiden.",
+      "commonFallacy": "Aktive Sterbehilfe, Behandlungsabbruch und Suizidassistenz ohne Unterschied in einen Topf werfen.",
+      "layerIndex": 1,
+      "tags": [
+        "Dilemma",
+        "Ethik",
+        "Klausur-Dauerbrenner"
+      ]
+    },
+    {
+      "id": "philo-tierethik-singer-gleichheit",
+      "fach": "Philosophie",
+      "titleDE": "Tierethik: Die Gleichheit der Interessen",
+      "titleZH": "动物伦理：利益平等考量的论证",
+      "summaryDE": "Wenn Leidensfähigkeit der Grund moralischer Rücksicht ist, verlangt die Grenze zwischen Mensch und Tier eine neue Rechtfertigung.",
+      "summaryZH": "若感受痛苦的能力是道德考量的根据，则人与动物的界限须重新辩护；物种歧视与种族歧视同构。",
+      "category": "Angewandte-Ethik",
+      "curriculumTier": "EF",
+      "stage": "grundlagen",
+      "level": 2,
+      "xpReward": 95,
+      "estimatedMinutes": 12,
+      "prerequisites": [
+        "philo-ethik-grundbegriffe-moral"
+      ],
+      "keyFormulaOrSentence": "Leidensfähigkeit, nicht Vernunftfähigkeit, ist die Voraussetzung dafür, dass Interessen überhaupt moralisch zählen.",
+      "commonFallacy": "Tierethik als Gefühlsduselei abtun und übersehen, dass sie ein Argument für die Erweiterung des Moralprinzips liefert.",
+      "layerIndex": 1,
+      "tags": [
+        "Dilemma",
+        "Ethik",
+        "AFB-III"
+      ]
+    },
+    {
+      "id": "philo-umweltethik-generationengerechtigkeit",
+      "fach": "Philosophie",
+      "titleDE": "Umweltethik und Generationengerechtigkeit",
+      "titleZH": "环境伦理与代际正义",
+      "summaryDE": "Schäden an Ökosystemen treffen künftige Menschen, die sich nicht wehren können; daraus erwächst eine asymmetrische Verantwortung.",
+      "summaryZH": "生态损害落在无法自我辩护的后代身上，由此产生非对称的未来责任；Jonas 的责任原理提供论证基础。",
+      "category": "Angewandte-Ethik",
+      "curriculumTier": "EF",
+      "stage": "vertiefung",
+      "level": 2,
+      "xpReward": 95,
+      "estimatedMinutes": 12,
+      "prerequisites": [
+        "philo-abtreibung-selbstbestimmung"
+      ],
+      "keyFormulaOrSentence": "Handle so, dass die Wirkungen deiner Handlungen verträglich sind mit der Permanenz echten menschlichen Lebens auf Erden.",
+      "commonFallacy": "Umweltethik auf technische Lösbarkeit verkürzen und die Frage nach der Reichweite von Verantwortung gegenüber Nichtanwesenden auslassen.",
+      "layerIndex": 2,
+      "tags": [
+        "Quelle",
+        "Ethik",
+        "Klausur-Dauerbrenner"
+      ]
+    },
+    {
+      "id": "philo-technikethik-ki-verantwortung",
+      "fach": "Philosophie",
+      "titleDE": "Technikethik und Verantwortung für KI",
+      "titleZH": "技术伦理与人工智能的责任归属",
+      "summaryDE": "Autonome Systeme treffen Entscheidungen, deren Folgen niemand mehr eindeutig zurechnen kann; Verantwortungslücken entstehen.",
+      "summaryZH": "自主系统作出的决定其后果难以明确归责；由此产生责任缺口，须重构人类责任主体的分配。",
+      "category": "Angewandte-Ethik",
+      "curriculumTier": "Q1",
+      "stage": "vertiefung",
+      "level": 2,
+      "xpReward": 120,
+      "estimatedMinutes": 14,
+      "prerequisites": [
+        "philo-sterbehilfe-autonomie"
+      ],
+      "keyFormulaOrSentence": "Wo technische Systeme Handlungsfolgen erzeugen, muss menschliche Verantwortung im Entwurf, Betrieb und in der Aufsicht verankert bleiben.",
+      "commonFallacy": "Die Verantwortung auf die Maschine abschieben und damit die menschliche Urheberschaft hinter dem System verschwinden lassen.",
+      "layerIndex": 2,
+      "tags": [
+        "Modell",
+        "Ethik",
+        "AFB-III"
+      ]
+    },
+    {
+      "id": "philo-wirtschaftsethik-unternehmensverantwortung",
+      "fach": "Philosophie",
+      "titleDE": "Wirtschaftsethik und Unternehmensverantwortung",
+      "titleZH": "经济伦理与企业的道德责任",
+      "summaryDE": "Gewinnstreben und soziale Verantwortung stehen in Spannung; gefragt ist eine Ordnungsethik, welche die Spielregeln des Marktes selbst bewertet.",
+      "summaryZH": "逐利与社会责任相冲突；需以秩序伦理评判市场规则本身，而非仅作个案的道德说教。",
+      "category": "Angewandte-Ethik",
+      "curriculumTier": "Q1",
+      "stage": "vertiefung",
+      "level": 2,
+      "xpReward": 120,
+      "estimatedMinutes": 14,
+      "prerequisites": [
+        "philo-umweltethik-generationengerechtigkeit"
+      ],
+      "keyFormulaOrSentence": "Nicht nur das Verhalten einzelner Akteure, sondern die institutionelle Ordnung des Marktes selbst ist ethisch zu rechtfertigen.",
+      "commonFallacy": "Unternehmensethik als bloße PR-Aufgabe behandeln und die Struktur der Anreizordnung unangetastet lassen.",
+      "layerIndex": 3,
+      "tags": [
+        "Modell",
+        "Ethik",
+        "Klausur-Dauerbrenner"
+      ]
+    },
+    {
+      "id": "philo-paternalismus-freiheitsbeschraenkung",
+      "fach": "Philosophie",
+      "titleDE": "Paternalismus und staatliche Freiheitsbeschränkung",
+      "titleZH": "家长式干预与个人自由的界限",
+      "summaryDE": "Darf der Staat Menschen zu ihrem eigenen Wohl bevormunden? Mill bestreitet es, weiche Paternalismen halten Eingriffe für begründbar.",
+      "summaryZH": "国家可否为个人自身利益而干预？密尔否定之，软式家长主义则以自愿能力受损为前提保留干预空间。",
+      "category": "Angewandte-Ethik",
+      "curriculumTier": "Q1",
+      "stage": "vertiefung",
+      "level": 2,
+      "xpReward": 120,
+      "estimatedMinutes": 14,
+      "prerequisites": [
+        "philo-sterbehilfe-autonomie"
+      ],
+      "keyFormulaOrSentence": "Weicher Paternalismus ist nur legitim, wenn die Selbstbestimmung des Betroffenen nachweislich eingeschränkt ist.",
+      "commonFallacy": "Jede fürsorgliche Regelung als illegitimen Paternalismus brandmarken, ohne zwischen harter und weicher Bevormundung zu trennen.",
+      "layerIndex": 2,
+      "tags": [
+        "Dilemma",
+        "AFB-III",
+        "Klausur-Dauerbrenner"
+      ]
+    },
+    {
+      "id": "philo-triage-knappheit-medizin",
+      "fach": "Philosophie",
+      "titleDE": "Triage und Knappheit in der Medizin",
+      "titleZH": "医疗资源稀缺下的分诊抉择",
+      "summaryDE": "Bei unzureichenden Ressourcen müssen Ärzte entscheiden, wem geholfen wird; Kriterien wie Überlebenschance und Lebenserwartung treten hervor.",
+      "summaryZH": "资源不足时医生须裁定救治对象；存活概率与预期寿命等标准凸显，触及人的可计算性边界。",
+      "category": "Angewandte-Ethik",
+      "curriculumTier": "Q2",
+      "stage": "vertiefung",
+      "level": 3,
+      "xpReward": 140,
+      "estimatedMinutes": 16,
+      "prerequisites": [
+        "philo-umweltethik-generationengerechtigkeit",
+        "philo-sterbehilfe-autonomie"
+      ],
+      "keyFormulaOrSentence": "Triagekriterien müssen sich am Ziel der größten Rettungschance messen lassen, ohne die Gleichheit jedes Menschen als Pflicht zu verletzen.",
+      "commonFallacy": "Triage als reine Effizienzrechnung darstellen und die deontologische Schranke der Menschenwürde übergehen.",
+      "layerIndex": 3,
+      "tags": [
+        "Dilemma",
+        "AFB-III",
+        "Klausur-Dauerbrenner"
+      ]
+    },
+    {
+      "id": "philo-kulturrelativismus-vs-universalismus",
+      "fach": "Philosophie",
+      "titleDE": "Kulturrelativismus und Universalismus",
+      "titleZH": "文化相对主义与普遍主义的道德之争",
+      "summaryDE": "Sind moralische Normen an Kulturen gebunden oder beanspruchen sie universelle Geltung? Beide Positionen haben reflexive Kosten.",
+      "summaryZH": "道德规范是文化专属还是普遍有效？双方都有反思代价：相对主义难谴责暴行，普遍主义须证明自身不偏。",
+      "category": "Angewandte-Ethik",
+      "curriculumTier": "Q2",
+      "stage": "synthese",
+      "level": 3,
+      "xpReward": 145,
+      "estimatedMinutes": 16,
+      "prerequisites": [
+        "philo-tierethik-singer-gleichheit",
+        "philo-wirtschaftsethik-unternehmensverantwortung"
+      ],
+      "keyFormulaOrSentence": "Ein strenger Relativismus kann Menschenrechtsverletzungen nicht mehr kritisieren, ein naiver Universalismus nicht begründen, warum seine eigene Ordnung gelten soll.",
+      "commonFallacy": "Den Relativismus als Toleranz feiern und verkennen, dass er auch die Kritik an Intoleranz entwaffnet.",
+      "layerIndex": 4,
+      "tags": [
+        "AFB-III",
+        "Ethik",
+        "Klausur-Dauerbrenner"
+      ]
+    },
+    {
+      "id": "philo-friedensethik-gerechter-krieg",
+      "fach": "Philosophie",
+      "titleDE": "Friedensethik und gerechter Krieg (Uni-Prep)",
+      "titleZH": "和平伦理与正义战争理论",
+      "summaryDE": "Wann ist militärische Gewalt ethisch zu rechtfertigen? Ius ad bellum und ius in bello formulieren Kriterien, die Kants Friedensschrift radikalisiert.",
+      "summaryZH": "何时可正当使用军事暴力？开战正义与交战正义提出标准，而康德永久和平论对其作更激进限制。",
+      "category": "Angewandte-Ethik",
+      "curriculumTier": "Uni_Prep",
+      "stage": "synthese",
+      "level": 3,
+      "xpReward": 160,
+      "estimatedMinutes": 20,
+      "prerequisites": [
+        "philo-kulturrelativismus-vs-universalismus",
+        "philo-paternalismus-freiheitsbeschraenkung",
+        "philo-kant-friedensschrift-voelkerrecht"
+      ],
+      "keyFormulaOrSentence": "Ein gerechter Krieg setzt einen gerechten Grund, die richtige Absicht und die Verhältnismäßigkeit der Mittel voraus.",
+      "commonFallacy": "Den gerechten Krieg als Freibrief für Gewalt missverstehen statt ihn als enge Ausnahme mit begrenzender Kriterienliste zu lesen.",
+      "layerIndex": 7,
+      "tags": [
+        "Quelle",
+        "Uni-Prep",
+        "AFB-III"
+      ]
+    },
+    {
+      "id": "philo-klausur-synthese-abitur",
+      "fach": "Philosophie",
+      "titleDE": "Klausur-Synthese: Ethische Urteilsbildung (Abitur)",
+      "titleZH": "高考综合：伦理判断的完整建构与辩护",
+      "summaryDE": "Vollständige Klausurleistung: philosophische Positionen rekonstruieren, vergleichen, kriteriengeleitet beurteilen und begründet Stellung nehmen.",
+      "summaryZH": "考场完整能力：重构哲学立场、跨模型比较、依标准评判并给出有理据的自立见解。",
+      "category": "Angewandte-Ethik",
+      "curriculumTier": "Q2",
+      "stage": "klausur_praxis",
+      "level": 3,
+      "xpReward": 150,
+      "estimatedMinutes": 18,
+      "prerequisites": [
+        "philo-dilemma-diskurs",
+        "philo-triage-knappheit-medizin",
+        "philo-kulturrelativismus-vs-universalismus",
+        "philo-deontologie-kritik-folgenblindheit"
+      ],
+      "keyFormulaOrSentence": "Ein vollständiges Urteil rekonstruiert beide Positionen, wägt sie an einem expliziten Kriterium ab und begründet die eigene Entscheidung nachvollziehbar.",
+      "commonFallacy": "Positionen nur nacherzählen, ohne ein eigenes Kriterium zu benennen und ohne die Gegenposition ernsthaft zu prüfen.",
+      "klausurTip": "Dreischritt: Rekonstruktion -> Vergleich -> kriteriengeleitetes Urteil mit begründeter Stellungnahme.",
+      "layerIndex": 6,
+      "tags": [
+        "AFB-III",
+        "Klausur-Dauerbrenner",
+        "Uni-Prep"
+      ]
+    },
+    {
+      "id": "philo-wahrnehmung-und-erkenntnis",
+      "fach": "Philosophie",
+      "titleDE": "Wahrnehmung als Erkenntnisquelle",
+      "titleZH": "感知作为认识来源：从印象到判断",
+      "summaryDE": "Sinne liefern Eindrücke, doch erst deren Deutung durch den Verstand erzeugt Erkenntnis; Täuschungen zeigen die Deutungsabhängigkeit.",
+      "summaryZH": "感官提供印象，须经理性/知性解释才成认识；错觉揭示感知的解释依赖性与可错性。",
+      "category": "Erkenntnistheorie",
+      "curriculumTier": "Sek_I",
+      "stage": "einfuehrung",
+      "level": 1,
+      "xpReward": 60,
+      "estimatedMinutes": 8,
+      "prerequisites": [],
+      "keyFormulaOrSentence": "Wahrnehmung allein verbürgt noch keine Erkenntnis; erst die begriffliche Deutung der Sinneseindrücke macht Aussagen über die Welt möglich.",
+      "commonFallacy": "Sinnestäuschungen als Beweis für die Unzuverlässigkeit jeder Erkenntnis nehmen statt als Hinweis auf die Deutungsleistung des Verstandes.",
+      "layerIndex": 0,
+      "tags": [
+        "Definition",
+        "Erkenntnistheorie",
+        "Basiswissen"
+      ]
+    },
+    {
+      "id": "philo-wahrheit-und-meinung",
+      "fach": "Philosophie",
+      "titleDE": "Wissen und Meinung",
+      "titleZH": "真知与意见：知识的三元定义",
+      "summaryDE": "Wissen ist wahre, gerechtfertigte Meinung; bloße Meinung, die zufällig stimmt, gilt nicht schon als Erkenntnis.",
+      "summaryZH": "知识是被证成的真信念；偶然言中的意见还不算认识，理由与真之结合才是知识。",
+      "category": "Erkenntnistheorie",
+      "curriculumTier": "Sek_I",
+      "stage": "einfuehrung",
+      "level": 1,
+      "xpReward": 60,
+      "estimatedMinutes": 8,
+      "prerequisites": [],
+      "keyFormulaOrSentence": "Wissen verlangt drei Bedingungen: Wahrheit, Überzeugung und ausreichende Rechtfertigung der Überzeugung.",
+      "commonFallacy": "Wahre Meinung und Wissen gleichsetzen; die Rechtfertigungsbedingung ist konstitutiv, nicht bloß dekorativ.",
+      "layerIndex": 0,
+      "tags": [
+        "Definition",
+        "Erkenntnistheorie",
+        "Basiswissen"
+      ]
+    },
+    {
+      "id": "philo-rationalismus-descartes",
+      "fach": "Philosophie",
+      "titleDE": "Rationalismus: Descartes",
+      "titleZH": "唯理论：笛卡尔的清楚分明原则",
+      "summaryDE": "Erkenntnis gründet in der Vernunft; aus dem methodischen Zweifel bleibt das denkende Ich als unbezweifelbarer Ausgangspunkt.",
+      "summaryZH": "认识根基于理性；方法论怀疑后只余思维之我作为不可怀疑的出发基点。",
+      "category": "Erkenntnistheorie",
+      "curriculumTier": "EF",
+      "stage": "grundlagen",
+      "level": 2,
+      "xpReward": 90,
+      "estimatedMinutes": 12,
+      "prerequisites": [
+        "philo-wahrnehmung-und-erkenntnis"
+      ],
+      "keyFormulaOrSentence": "Alle Erkenntnis muss methodisch bezweifelt werden; unbezweifelbar ist allein, dass Ich denke, indem ich zweifle.",
+      "commonFallacy": "Das methodische Zweifeln für die These halten, die Sinne täuschten immer; Descartes zweifelt, um Begründung zu gewinnen, nicht um Erkenntnis zu verwerfen.",
+      "layerIndex": 1,
+      "tags": [
+        "Modell",
+        "Erkenntnistheorie",
+        "Klausur-Dauerbrenner"
+      ]
+    },
+    {
+      "id": "philo-empirismus-locke-hume",
+      "fach": "Philosophie",
+      "titleDE": "Empirismus: Locke und Hume",
+      "titleZH": "经验论：洛克与休谟的经验界限",
+      "summaryDE": "Nichts ist im Verstand, was nicht zuvor in den Sinnen war; Erkenntnis beruht auf einfachen Eindrücken und deren Verknüpfung.",
+      "summaryZH": "凡在理性中者无不在感官中先有；认识基于简单印象及其联结，因果性被回溯为经验习惯。",
+      "category": "Erkenntnistheorie",
+      "curriculumTier": "EF",
+      "stage": "grundlagen",
+      "level": 2,
+      "xpReward": 90,
+      "estimatedMinutes": 12,
+      "prerequisites": [
+        "philo-wahrnehmung-und-erkenntnis"
+      ],
+      "keyFormulaOrSentence": "Alle Vorstellungen lassen sich auf ursprüngliche Sinneserfahrungen zurückführen; darüber hinaus ist keine Erkenntnis begründet.",
+      "commonFallacy": "Humes Analyse der Kausalität als Leugnung jeder Regelmäßigkeit lesen statt als Rückführung auf Erfahrung und Gewohnheit.",
+      "layerIndex": 1,
+      "tags": [
+        "Modell",
+        "Erkenntnistheorie",
+        "Klausur-Dauerbrenner"
+      ]
+    },
+    {
+      "id": "philo-kant-transzendental-erkenntnis",
+      "fach": "Philosophie",
+      "titleDE": "Kants transzendentale Wende",
+      "titleZH": "康德的先验转折：知识如何可能",
+      "summaryDE": "Nicht allein die Gegenstände, sondern die Bedingungen ihrer möglichen Erfahrung strukturieren die Erkenntnis.",
+      "summaryZH": "不是仅仅对象塑造认识，而是经验可能性条件先天地结构了认识；范畴综合感性材料。",
+      "category": "Erkenntnistheorie",
+      "curriculumTier": "Q1",
+      "stage": "vertiefung",
+      "level": 2,
+      "xpReward": 125,
+      "estimatedMinutes": 14,
+      "prerequisites": [
+        "philo-rationalismus-descartes",
+        "philo-empirismus-locke-hume"
+      ],
+      "keyFormulaOrSentence": "Gedanken ohne Inhalt sind leer, Anschauungen ohne Begriffe sind blind; Erkenntnis entspringt der Verbindung beider.",
+      "commonFallacy": "Kant für einen Empiristen oder einen Rationalisten halten und übersehen, dass er beide Traditionen in einer Synthese überwindet.",
+      "layerIndex": 2,
+      "tags": [
+        "Modell",
+        "Erkenntnistheorie",
+        "Klausur-Dauerbrenner"
+      ]
+    },
+    {
+      "id": "philo-kant-ding-an-sich",
+      "fach": "Philosophie",
+      "titleDE": "Das Ding an sich und die Grenzen der Erkenntnis",
+      "titleZH": "物自体与认识的界限",
+      "summaryDE": "Erkannt wird nur, was durch die Formen unserer Anschauung und Kategorien erscheint; das Ansichsein bleibt unzugänglich.",
+      "summaryZH": "被认识的只是经我们直观形式与范畴过滤的现象；物自体本身始终不可通达。",
+      "category": "Erkenntnistheorie",
+      "curriculumTier": "Q1",
+      "stage": "vertiefung",
+      "level": 2,
+      "xpReward": 120,
+      "estimatedMinutes": 14,
+      "prerequisites": [
+        "philo-kant-transzendental-erkenntnis"
+      ],
+      "keyFormulaOrSentence": "Wir erkennen die Dinge nur, wie sie uns erscheinen, nicht wie sie an sich selbst beschaffen sein mögen.",
+      "commonFallacy": "Das Ding an sich für ein weiteres erreichbares Objekt halten statt als Grenzbegriff, der die Reichweite möglicher Erfahrung markiert.",
+      "layerIndex": 3,
+      "tags": [
+        "Kant",
+        "Erkenntnistheorie",
+        "Klausur-Dauerbrenner"
+      ]
+    },
+    {
+      "id": "philo-konstruktivismus-erkenntnis",
+      "fach": "Philosophie",
+      "titleDE": "Konstruktivismus: Erkennen als Konstruktion",
+      "titleZH": "建构主义：认识即建构",
+      "summaryDE": "Der Erkennende baut Wirklichkeit aus eigenen Unterscheidungen auf; es gibt keinen Zugang zu einer deutungsfreien Welt.",
+      "summaryZH": "认识者以自身区分操作建构实在；不存在通往无解释之世界的直接通道，观察具有操作依赖性。",
+      "category": "Erkenntnistheorie",
+      "curriculumTier": "Q1",
+      "stage": "vertiefung",
+      "level": 2,
+      "xpReward": 120,
+      "estimatedMinutes": 14,
+      "prerequisites": [
+        "philo-kant-transzendental-erkenntnis"
+      ],
+      "keyFormulaOrSentence": "Beobachtung ist immer schon eine Unterscheidung; was nicht unterschieden wird, kann auch nicht erkannt werden.",
+      "commonFallacy": "Den Konstruktivismus mit Beliebigkeit verwechseln; seine Pointe ist die Operationalität, nicht die Willkür von Deutungen.",
+      "layerIndex": 3,
+      "tags": [
+        "Modell",
+        "Erkenntnistheorie",
+        "AFB-III"
+      ]
+    },
+    {
+      "id": "philo-wahrheitstheorien-korrespondenz-kohaerenz",
+      "fach": "Philosophie",
+      "titleDE": "Wahrheitstheorien: Korrespondenz, Kohärenz, Konsens",
+      "titleZH": "真理论：符合论、融贯论与共识论",
+      "summaryDE": "Wahrheit kann als Übereinstimmung mit der Sache, als Stimmigkeit des Aussagensystems oder als gerechtfertigter Konsens bestimmt werden.",
+      "summaryZH": "真理或被定义为与事实符合、或作为陈述系统的融贯、或为经论证达成的共识；各有边界问题。",
+      "category": "Erkenntnistheorie",
+      "curriculumTier": "Q1",
+      "stage": "vertiefung",
+      "level": 2,
+      "xpReward": 120,
+      "estimatedMinutes": 14,
+      "prerequisites": [
+        "philo-wahrheit-und-meinung"
+      ],
+      "keyFormulaOrSentence": "Korrespondenztheoretisch ist eine Aussage wahr, wenn sie mit dem Sachverhalt übereinstimmt; koherentistisch, wenn sie sich widerspruchsfrei in das Gesamtsystem fügt.",
+      "commonFallacy": "Die drei Wahrheitstheorien für austauschbare Varianten desselben halten und ihre unterschiedlichen Bezugsprobleme übergehen.",
+      "layerIndex": 1,
+      "tags": [
+        "Modell",
+        "Erkenntnistheorie",
+        "AFB-III"
+      ]
+    },
+    {
+      "id": "philo-popper-falsifikation-abgrenzung",
+      "fach": "Philosophie",
+      "titleDE": "Popper: Falsifikation und Abgrenzung",
+      "titleZH": "波普尔：可证伪性与划界标准",
+      "summaryDE": "Wissenschaft zeichnet sich nicht durch Verifikation, sondern durch prinzipielle Widerlegbarkeit ihrer Aussagen aus.",
+      "summaryZH": "科学标志不在证实而在原则上可被否定；可否证性成为科学与伪科学的分界标准。",
+      "category": "Erkenntnistheorie",
+      "curriculumTier": "Q2",
+      "stage": "vertiefung",
+      "level": 3,
+      "xpReward": 135,
+      "estimatedMinutes": 15,
+      "prerequisites": [
+        "philo-empirismus-locke-hume"
+      ],
+      "keyFormulaOrSentence": "Ein Satz ist wissenschaftlich, wenn er an der Erfahrung scheitern kann; Unwiderlegbarkeit ist ein Mangel, kein Vorzug.",
+      "commonFallacy": "Falsifikation mit Verifikation verwechseln und übersehen, dass die Widerlegung prinzipiell möglich, nicht faktisch vollzogen sein muss.",
+      "layerIndex": 2,
+      "tags": [
+        "Modell",
+        "Erkenntnistheorie",
+        "Klausur-Dauerbrenner"
+      ]
+    },
+    {
+      "id": "philo-kuhn-paradigma-wissenschaft",
+      "fach": "Philosophie",
+      "titleDE": "Kuhn: Paradigma und Wissenschaftsrevolution",
+      "titleZH": "库恩：范式与科学革命",
+      "summaryDE": "Normale Wissenschaft arbeitet innerhalb eines Paradigmas; Anomalien führen in Krisen und schließlich zu einem Paradigmenwechsel.",
+      "summaryZH": "常规科学在范式内解题；反常积累引发危机，最终导致范式转移，科学史呈非连续性。",
+      "category": "Erkenntnistheorie",
+      "curriculumTier": "Q2",
+      "stage": "vertiefung",
+      "level": 3,
+      "xpReward": 140,
+      "estimatedMinutes": 15,
+      "prerequisites": [
+        "philo-popper-falsifikation-abgrenzung"
+      ],
+      "keyFormulaOrSentence": "Ein Paradigmenwechsel ist kein bloßes Anwachsen von Wissen, sondern eine Neustrukturierung der Fragestellungen und Standards.",
+      "commonFallacy": "Kuhn als irrationalen Relativisten lesen statt die Rolle von Anomalien und Gemeinschaftskonsens sachlich zu prüfen.",
+      "layerIndex": 3,
+      "tags": [
+        "Modell",
+        "Erkenntnistheorie",
+        "Klausur-Dauerbrenner"
+      ]
+    },
+    {
+      "id": "philo-metaphysische-probleme-gottesbeweise",
+      "fach": "Philosophie",
+      "titleDE": "Metaphysische Probleme als Vernunftherausforderung",
+      "titleZH": "形而上学问题作为理性的挑战",
+      "summaryDE": "Fragen nach Gott, Seele und Weltganzem überschreiten mögliche Erfahrung und fordern die Vernunft an ihren Grenzen heraus.",
+      "summaryZH": "上帝、灵魂与世界整体之问超出可能经验，把理性逼到自身界限，成为理论哲学的入门试金石。",
+      "category": "Erkenntnistheorie",
+      "curriculumTier": "EF",
+      "stage": "grundlagen",
+      "level": 2,
+      "xpReward": 95,
+      "estimatedMinutes": 12,
+      "prerequisites": [
+        "philo-wahrnehmung-und-erkenntnis"
+      ],
+      "keyFormulaOrSentence": "Metaphysische Aussagen beanspruchen Erkenntnis über das hinaus, was in möglicher Erfahrung gegeben ist, und müssen gerade deshalb auf ihre Begründbarkeit geprüft werden.",
+      "commonFallacy": "Metaphysische Fragen als sinnlos abtun und damit die Frage ihrer Begründbarkeit selbst vorschnell abschneiden.",
+      "layerIndex": 1,
+      "tags": [
+        "Definition",
+        "Metaphysik",
+        "Klausur-Dauerbrenner"
+      ]
+    },
+    {
+      "id": "philo-hermeneutik-verstehen-geisteswiss",
+      "fach": "Philosophie",
+      "titleDE": "Hermeneutik: Verstehen in den Geisteswissenschaften (Uni-Prep)",
+      "titleZH": "诠释学：精神科学中的理解",
+      "summaryDE": "Geisteswissenschaften erklären nicht nur, sie verstehen Sinn; der hermeneutische Zirkel verknüpft Teil und Ganzes wechselseitig.",
+      "summaryZH": "精神科学不只解释，更理解意义；诠释学循环使部分与整体相互规定，前理解成为条件。",
+      "category": "Erkenntnistheorie",
+      "curriculumTier": "Uni_Prep",
+      "stage": "vertiefung",
+      "level": 3,
+      "xpReward": 155,
+      "estimatedMinutes": 18,
+      "prerequisites": [
+        "philo-kuhn-paradigma-wissenschaft",
+        "philo-konstruktivismus-erkenntnis"
+      ],
+      "keyFormulaOrSentence": "Verstehen vollzieht sich im hermeneutischen Zirkel: das Einzelne wird aus dem Ganzen und das Ganze aus dem Einzelnen gedeutet.",
+      "commonFallacy": "Den hermeneutischen Zirkel für einen logischen Fehler halten statt für die Struktur sinnverstehender Erkenntnis.",
+      "layerIndex": 4,
+      "tags": [
+        "Definition",
+        "Uni-Prep",
+        "AFB-III"
+      ]
+    },
+    {
+      "id": "philo-erkenntnis-grenzen-skeptizismus",
+      "fach": "Philosophie",
+      "titleDE": "Grenzen der Erkenntnis und Skeptizismus",
+      "titleZH": "认识的界限与怀疑论挑战",
+      "summaryDE": "Zweifel, ob unsere Vorstellungen die Welt treffen, bleibt methodisch unhintergehbar; Grenzbegriffe markieren, was nicht gewusst werden kann.",
+      "summaryZH": "表象是否符合世界的怀疑在方法论上无法最终消除；界限概念标出知识所不能及之处。",
+      "category": "Erkenntnistheorie",
+      "curriculumTier": "Uni_Prep",
+      "stage": "synthese",
+      "level": 3,
+      "xpReward": 155,
+      "estimatedMinutes": 18,
+      "prerequisites": [
+        "philo-kant-ding-an-sich",
+        "philo-konstruktivismus-erkenntnis",
+        "philo-wahrheitstheorien-korrespondenz-kohaerenz"
+      ],
+      "keyFormulaOrSentence": "Wenn Erkenntnis an die Bedingungen möglicher Erfahrung gebunden ist, bleibt die Frage nach ihrer Realitätsentsprechung prinzipiell offen.",
+      "commonFallacy": "Den Skeptizismus für widerlegt halten, weil wir uns im Alltag sicher fühlen; die begriffliche Frage nach der Rechtfertigung bleibt damit unbeantwortet.",
+      "layerIndex": 4,
+      "tags": [
+        "AFB-III",
+        "Uni-Prep",
+        "Metaphysik"
+      ]
+    },
+    {
+      "id": "philo-bewusstsein-und-naturwissenschaft",
+      "fach": "Philosophie",
+      "titleDE": "Bewusstsein zwischen Naturwissenschaft und Philosophie (Uni-Prep)",
+      "titleZH": "意识：自然科学解释与哲学解释之间",
+      "summaryDE": "Naturalistische Erklärungen führen Bewusstsein auf neuronale Prozesse zurück; nicht-reduktionistische Ansätze halten die erste-Person-Perspektive für unersetzlich.",
+      "summaryZH": "自然主义解释把意识还原为神经过程；非还原论坚持第一人称视角不可被替代，构成解释鸿沟。",
+      "category": "Erkenntnistheorie",
+      "curriculumTier": "Uni_Prep",
+      "stage": "synthese",
+      "level": 3,
+      "xpReward": 165,
+      "estimatedMinutes": 20,
+      "prerequisites": [
+        "philo-erkenntnis-grenzen-skeptizismus",
+        "philo-konstruktivismus-erkenntnis",
+        "philo-hermeneutik-verstehen-geisteswiss"
+      ],
+      "keyFormulaOrSentence": "Die Erklärungslücke zwischen neuronalen Prozessen und bewusstem Erleben ist selbst dann ein philosophisches Problem, wenn alle Korrelate bekannt sind.",
+      "commonFallacy": "Die Koinzidenz von Hirnzustand und Erleben bereits für eine Erklärung des Erlebens halten (naturalistischer Fehlschluss).",
+      "layerIndex": 5,
+      "tags": [
+        "AFB-III",
+        "Uni-Prep",
+        "Metaphysik"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "id": "pe1",
+      "from": "philo-hedonismus-bentham",
+      "to": "philo-utilitarismus-mill",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-philo-hedonismus-bentham-philo-konsequentialismus-teleologie",
+      "from": "philo-hedonismus-bentham",
+      "to": "philo-konsequentialismus-teleologie",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-philo-hedonismus-bentham-philo-utilitaristisches-kalkuel-messbarkeit",
+      "from": "philo-hedonismus-bentham",
+      "to": "philo-utilitaristisches-kalkuel-messbarkeit",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-philo-epikur-hedonismus-seelenruhe-philo-hedonismus-lust-vs-eudaimonie",
+      "from": "philo-epikur-hedonismus-seelenruhe",
+      "to": "philo-hedonismus-lust-vs-eudaimonie",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-philo-utilitarismus-mill-philo-utilitarismus-handlungs-vs-regel",
+      "from": "philo-utilitarismus-mill",
+      "to": "philo-utilitarismus-handlungs-vs-regel",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-philo-utilitarismus-mill-philo-utilitarismus-praeferenz-singer",
+      "from": "philo-utilitarismus-mill",
+      "to": "philo-utilitarismus-praeferenz-singer",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-philo-utilitarismus-mill-philo-mill-freiheitsprinzip-schaden",
+      "from": "philo-utilitarismus-mill",
+      "to": "philo-mill-freiheitsprinzip-schaden",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-philo-utilitaristisches-kalkuel-messbarkeit-philo-utilitarismus-erwartungsnutzen",
+      "from": "philo-utilitaristisches-kalkuel-messbarkeit",
+      "to": "philo-utilitarismus-erwartungsnutzen",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-philo-utilitarismus-handlungs-vs-regel-philo-utilitarismus-erwartungsnutzen",
+      "from": "philo-utilitarismus-handlungs-vs-regel",
+      "to": "philo-utilitarismus-erwartungsnutzen",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-philo-utilitarismus-handlungs-vs-regel-philo-utilitarismus-rechte-kritik",
+      "from": "philo-utilitarismus-handlungs-vs-regel",
+      "to": "philo-utilitarismus-rechte-kritik",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-philo-utilitarismus-praeferenz-singer-philo-utilitarismus-rechte-kritik",
+      "from": "philo-utilitarismus-praeferenz-singer",
+      "to": "philo-utilitarismus-rechte-kritik",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-philo-utilitarismus-handlungs-vs-regel-philo-utilitarismus-negative-utilitaer",
+      "from": "philo-utilitarismus-handlungs-vs-regel",
+      "to": "philo-utilitarismus-negative-utilitaer",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-philo-utilitarismus-erwartungsnutzen-philo-utilitarismus-sozialwahl-aggregation",
+      "from": "philo-utilitarismus-erwartungsnutzen",
+      "to": "philo-utilitarismus-sozialwahl-aggregation",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-philo-utilitarismus-rechte-kritik-philo-utilitarismus-sozialwahl-aggregation",
+      "from": "philo-utilitarismus-rechte-kritik",
+      "to": "philo-utilitarismus-sozialwahl-aggregation",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-philo-utilitarismus-praeferenz-singer-philo-utilitarismus-sozialwahl-aggregation",
+      "from": "philo-utilitarismus-praeferenz-singer",
+      "to": "philo-utilitarismus-sozialwahl-aggregation",
+      "type": "prerequisite"
+    },
+    {
+      "id": "pe2",
+      "from": "philo-utilitarismus-mill",
+      "to": "philo-kant-kategorischer-imperativ",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-philo-kant-guter-wille-aus-pflicht-philo-kant-kategorischer-imperativ",
+      "from": "philo-kant-guter-wille-aus-pflicht",
+      "to": "philo-kant-kategorischer-imperativ",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-philo-kant-autonomie-selbstgesetzgebung-philo-kant-kategorischer-imperativ",
+      "from": "philo-kant-autonomie-selbstgesetzgebung",
+      "to": "philo-kant-kategorischer-imperativ",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-philo-deontologie-pflichtbegriff-philo-kant-guter-wille-aus-pflicht",
+      "from": "philo-deontologie-pflichtbegriff",
+      "to": "philo-kant-guter-wille-aus-pflicht",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-philo-deontologie-pflichtbegriff-philo-kant-autonomie-selbstgesetzgebung",
+      "from": "philo-deontologie-pflichtbegriff",
+      "to": "philo-kant-autonomie-selbstgesetzgebung",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-philo-deontologie-pflichtbegriff-philo-pflichthandeln-vs-neigung",
+      "from": "philo-deontologie-pflichtbegriff",
+      "to": "philo-pflichthandeln-vs-neigung",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-philo-kant-kategorischer-imperativ-philo-maximenpruefung-universalisierung",
+      "from": "philo-kant-kategorischer-imperativ",
+      "to": "philo-maximenpruefung-universalisierung",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-philo-kant-kategorischer-imperativ-philo-kant-menschheitszweck-formel",
+      "from": "philo-kant-kategorischer-imperativ",
+      "to": "philo-kant-menschheitszweck-formel",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-philo-kant-menschheitszweck-formel-philo-kant-reich-der-zwecke",
+      "from": "philo-kant-menschheitszweck-formel",
+      "to": "philo-kant-reich-der-zwecke",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-philo-kant-menschheitszweck-formel-philo-kant-luegenverbot-rigorismus",
+      "from": "philo-kant-menschheitszweck-formel",
+      "to": "philo-kant-luegenverbot-rigorismus",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-philo-kant-menschheitszweck-formel-philo-kant-wuerde-statt-preis",
+      "from": "philo-kant-menschheitszweck-formel",
+      "to": "philo-kant-wuerde-statt-preis",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-philo-maximenpruefung-universalisierung-philo-pflichtenkollision-gueterabwaegung",
+      "from": "philo-maximenpruefung-universalisierung",
+      "to": "philo-pflichtenkollision-gueterabwaegung",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-philo-kant-reich-der-zwecke-philo-deontologie-kritik-folgenblindheit",
+      "from": "philo-kant-reich-der-zwecke",
+      "to": "philo-deontologie-kritik-folgenblindheit",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-philo-kant-luegenverbot-rigorismus-philo-deontologie-kritik-folgenblindheit",
+      "from": "philo-kant-luegenverbot-rigorismus",
+      "to": "philo-deontologie-kritik-folgenblindheit",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-philo-kant-reich-der-zwecke-philo-kant-friedensschrift-voelkerrecht",
+      "from": "philo-kant-reich-der-zwecke",
+      "to": "philo-kant-friedensschrift-voelkerrecht",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-philo-deontologie-kritik-folgenblindheit-philo-kant-friedensschrift-voelkerrecht",
+      "from": "philo-deontologie-kritik-folgenblindheit",
+      "to": "philo-kant-friedensschrift-voelkerrecht",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-philo-kant-wuerde-statt-preis-philo-kant-friedensschrift-voelkerrecht",
+      "from": "philo-kant-wuerde-statt-preis",
+      "to": "philo-kant-friedensschrift-voelkerrecht",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-philo-mensch-als-natur-und-kulturwesen-philo-platon-seele-dreiteilung",
+      "from": "philo-mensch-als-natur-und-kulturwesen",
+      "to": "philo-platon-seele-dreiteilung",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-philo-mensch-als-natur-und-kulturwesen-philo-aristoteles-zoon-politikon",
+      "from": "philo-mensch-als-natur-und-kulturwesen",
+      "to": "philo-aristoteles-zoon-politikon",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-philo-mensch-als-natur-und-kulturwesen-philo-descartes-leib-seele-dualismus",
+      "from": "philo-mensch-als-natur-und-kulturwesen",
+      "to": "philo-descartes-leib-seele-dualismus",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-philo-aristoteles-zoon-politikon-philo-hobbes-menschenbild-wolfsnatur",
+      "from": "philo-aristoteles-zoon-politikon",
+      "to": "philo-hobbes-menschenbild-wolfsnatur",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-philo-hobbes-menschenbild-wolfsnatur-philo-rousseau-naturzustand-gutheit",
+      "from": "philo-hobbes-menschenbild-wolfsnatur",
+      "to": "philo-rousseau-naturzustand-gutheit",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-philo-descartes-leib-seele-dualismus-philo-sartre-existenz-vor-essenz",
+      "from": "philo-descartes-leib-seele-dualismus",
+      "to": "philo-sartre-existenz-vor-essenz",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-philo-aristoteles-zoon-politikon-philo-gehlen-mangelwesen-institutionen",
+      "from": "philo-aristoteles-zoon-politikon",
+      "to": "philo-gehlen-mangelwesen-institutionen",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-philo-descartes-leib-seele-dualismus-philo-freud-es-ich-ueberich",
+      "from": "philo-descartes-leib-seele-dualismus",
+      "to": "philo-freud-es-ich-ueberich",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-philo-freud-es-ich-ueberich-philo-freud-unbehagen-kultur-triebverzicht",
+      "from": "philo-freud-es-ich-ueberich",
+      "to": "philo-freud-unbehagen-kultur-triebverzicht",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-philo-gehlen-mangelwesen-institutionen-philo-freud-unbehagen-kultur-triebverzicht",
+      "from": "philo-gehlen-mangelwesen-institutionen",
+      "to": "philo-freud-unbehagen-kultur-triebverzicht",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-philo-rousseau-naturzustand-gutheit-philo-determination-vs-freiheit",
+      "from": "philo-rousseau-naturzustand-gutheit",
+      "to": "philo-determination-vs-freiheit",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-philo-freud-es-ich-ueberich-philo-determination-vs-freiheit",
+      "from": "philo-freud-es-ich-ueberich",
+      "to": "philo-determination-vs-freiheit",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-philo-sartre-existenz-vor-essenz-philo-determination-vs-freiheit",
+      "from": "philo-sartre-existenz-vor-essenz",
+      "to": "philo-determination-vs-freiheit",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-philo-determination-vs-freiheit-philo-libet-experiment-willensfreiheit",
+      "from": "philo-determination-vs-freiheit",
+      "to": "philo-libet-experiment-willensfreiheit",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-philo-freud-es-ich-ueberich-philo-libet-experiment-willensfreiheit",
+      "from": "philo-freud-es-ich-ueberich",
+      "to": "philo-libet-experiment-willensfreiheit",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-philo-determination-vs-freiheit-philo-kompatibilismus-verantwortung",
+      "from": "philo-determination-vs-freiheit",
+      "to": "philo-kompatibilismus-verantwortung",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-philo-libet-experiment-willensfreiheit-philo-kompatibilismus-verantwortung",
+      "from": "philo-libet-experiment-willensfreiheit",
+      "to": "philo-kompatibilismus-verantwortung",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-philo-sartre-existenz-vor-essenz-philo-kompatibilismus-verantwortung",
+      "from": "philo-sartre-existenz-vor-essenz",
+      "to": "philo-kompatibilismus-verantwortung",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-philo-ethik-grundbegriffe-moral-philo-abtreibung-selbstbestimmung",
+      "from": "philo-ethik-grundbegriffe-moral",
+      "to": "philo-abtreibung-selbstbestimmung",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-philo-ethik-grundbegriffe-moral-philo-sterbehilfe-autonomie",
+      "from": "philo-ethik-grundbegriffe-moral",
+      "to": "philo-sterbehilfe-autonomie",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-philo-ethik-grundbegriffe-moral-philo-tierethik-singer-gleichheit",
+      "from": "philo-ethik-grundbegriffe-moral",
+      "to": "philo-tierethik-singer-gleichheit",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-philo-abtreibung-selbstbestimmung-philo-umweltethik-generationengerechtigkeit",
+      "from": "philo-abtreibung-selbstbestimmung",
+      "to": "philo-umweltethik-generationengerechtigkeit",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-philo-sterbehilfe-autonomie-philo-technikethik-ki-verantwortung",
+      "from": "philo-sterbehilfe-autonomie",
+      "to": "philo-technikethik-ki-verantwortung",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-philo-umweltethik-generationengerechtigkeit-philo-wirtschaftsethik-unternehmensverantwortung",
+      "from": "philo-umweltethik-generationengerechtigkeit",
+      "to": "philo-wirtschaftsethik-unternehmensverantwortung",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-philo-sterbehilfe-autonomie-philo-paternalismus-freiheitsbeschraenkung",
+      "from": "philo-sterbehilfe-autonomie",
+      "to": "philo-paternalismus-freiheitsbeschraenkung",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-philo-umweltethik-generationengerechtigkeit-philo-triage-knappheit-medizin",
+      "from": "philo-umweltethik-generationengerechtigkeit",
+      "to": "philo-triage-knappheit-medizin",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-philo-sterbehilfe-autonomie-philo-triage-knappheit-medizin",
+      "from": "philo-sterbehilfe-autonomie",
+      "to": "philo-triage-knappheit-medizin",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-philo-tierethik-singer-gleichheit-philo-kulturrelativismus-vs-universalismus",
+      "from": "philo-tierethik-singer-gleichheit",
+      "to": "philo-kulturrelativismus-vs-universalismus",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-philo-wirtschaftsethik-unternehmensverantwortung-philo-kulturrelativismus-vs-universalismus",
+      "from": "philo-wirtschaftsethik-unternehmensverantwortung",
+      "to": "philo-kulturrelativismus-vs-universalismus",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-philo-kulturrelativismus-vs-universalismus-philo-friedensethik-gerechter-krieg",
+      "from": "philo-kulturrelativismus-vs-universalismus",
+      "to": "philo-friedensethik-gerechter-krieg",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-philo-paternalismus-freiheitsbeschraenkung-philo-friedensethik-gerechter-krieg",
+      "from": "philo-paternalismus-freiheitsbeschraenkung",
+      "to": "philo-friedensethik-gerechter-krieg",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-philo-kant-friedensschrift-voelkerrecht-philo-friedensethik-gerechter-krieg",
+      "from": "philo-kant-friedensschrift-voelkerrecht",
+      "to": "philo-friedensethik-gerechter-krieg",
+      "type": "prerequisite"
+    },
+    {
+      "id": "pe3",
+      "from": "philo-kant-kategorischer-imperativ",
+      "to": "philo-dilemma-diskurs",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-philo-dilemma-diskurs-philo-klausur-synthese-abitur",
+      "from": "philo-dilemma-diskurs",
+      "to": "philo-klausur-synthese-abitur",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-philo-triage-knappheit-medizin-philo-klausur-synthese-abitur",
+      "from": "philo-triage-knappheit-medizin",
+      "to": "philo-klausur-synthese-abitur",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-philo-kulturrelativismus-vs-universalismus-philo-klausur-synthese-abitur",
+      "from": "philo-kulturrelativismus-vs-universalismus",
+      "to": "philo-klausur-synthese-abitur",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-philo-deontologie-kritik-folgenblindheit-philo-klausur-synthese-abitur",
+      "from": "philo-deontologie-kritik-folgenblindheit",
+      "to": "philo-klausur-synthese-abitur",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-philo-wahrnehmung-und-erkenntnis-philo-rationalismus-descartes",
+      "from": "philo-wahrnehmung-und-erkenntnis",
+      "to": "philo-rationalismus-descartes",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-philo-wahrnehmung-und-erkenntnis-philo-empirismus-locke-hume",
+      "from": "philo-wahrnehmung-und-erkenntnis",
+      "to": "philo-empirismus-locke-hume",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-philo-wahrnehmung-und-erkenntnis-philo-metaphysische-probleme-gottesbeweise",
+      "from": "philo-wahrnehmung-und-erkenntnis",
+      "to": "philo-metaphysische-probleme-gottesbeweise",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-philo-rationalismus-descartes-philo-kant-transzendental-erkenntnis",
+      "from": "philo-rationalismus-descartes",
+      "to": "philo-kant-transzendental-erkenntnis",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-philo-empirismus-locke-hume-philo-kant-transzendental-erkenntnis",
+      "from": "philo-empirismus-locke-hume",
+      "to": "philo-kant-transzendental-erkenntnis",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-philo-kant-transzendental-erkenntnis-philo-kant-ding-an-sich",
+      "from": "philo-kant-transzendental-erkenntnis",
+      "to": "philo-kant-ding-an-sich",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-philo-kant-transzendental-erkenntnis-philo-konstruktivismus-erkenntnis",
+      "from": "philo-kant-transzendental-erkenntnis",
+      "to": "philo-konstruktivismus-erkenntnis",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-philo-wahrheit-und-meinung-philo-wahrheitstheorien-korrespondenz-kohaerenz",
+      "from": "philo-wahrheit-und-meinung",
+      "to": "philo-wahrheitstheorien-korrespondenz-kohaerenz",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-philo-empirismus-locke-hume-philo-popper-falsifikation-abgrenzung",
+      "from": "philo-empirismus-locke-hume",
+      "to": "philo-popper-falsifikation-abgrenzung",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-philo-popper-falsifikation-abgrenzung-philo-kuhn-paradigma-wissenschaft",
+      "from": "philo-popper-falsifikation-abgrenzung",
+      "to": "philo-kuhn-paradigma-wissenschaft",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-philo-kant-ding-an-sich-philo-erkenntnis-grenzen-skeptizismus",
+      "from": "philo-kant-ding-an-sich",
+      "to": "philo-erkenntnis-grenzen-skeptizismus",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-philo-konstruktivismus-erkenntnis-philo-erkenntnis-grenzen-skeptizismus",
+      "from": "philo-konstruktivismus-erkenntnis",
+      "to": "philo-erkenntnis-grenzen-skeptizismus",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-philo-wahrheitstheorien-korrespondenz-kohaerenz-philo-erkenntnis-grenzen-skeptizismus",
+      "from": "philo-wahrheitstheorien-korrespondenz-kohaerenz",
+      "to": "philo-erkenntnis-grenzen-skeptizismus",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-philo-kuhn-paradigma-wissenschaft-philo-hermeneutik-verstehen-geisteswiss",
+      "from": "philo-kuhn-paradigma-wissenschaft",
+      "to": "philo-hermeneutik-verstehen-geisteswiss",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-philo-konstruktivismus-erkenntnis-philo-hermeneutik-verstehen-geisteswiss",
+      "from": "philo-konstruktivismus-erkenntnis",
+      "to": "philo-hermeneutik-verstehen-geisteswiss",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-philo-erkenntnis-grenzen-skeptizismus-philo-bewusstsein-und-naturwissenschaft",
+      "from": "philo-erkenntnis-grenzen-skeptizismus",
+      "to": "philo-bewusstsein-und-naturwissenschaft",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-philo-konstruktivismus-erkenntnis-philo-bewusstsein-und-naturwissenschaft",
+      "from": "philo-konstruktivismus-erkenntnis",
+      "to": "philo-bewusstsein-und-naturwissenschaft",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-philo-hermeneutik-verstehen-geisteswiss-philo-bewusstsein-und-naturwissenschaft",
+      "from": "philo-hermeneutik-verstehen-geisteswiss",
+      "to": "philo-bewusstsein-und-naturwissenschaft",
+      "type": "prerequisite"
+    },
+    {
+      "id": "e-philo-hedonismus-bentham-philo-kant-kategorischer-imperativ",
+      "from": "philo-hedonismus-bentham",
+      "to": "philo-kant-kategorischer-imperativ",
+      "type": "synergy",
+      "descriptionDE": "Konsequentialistische und deontologische Lesart desselben Falls gegeneinander stellen.",
+      "descriptionZH": "同一案例的后果论与义务论解读正面并置。"
+    },
+    {
+      "id": "e-philo-utilitarismus-mill-philo-kant-kategorischer-imperativ",
+      "from": "philo-utilitarismus-mill",
+      "to": "philo-kant-kategorischer-imperativ",
+      "type": "synergy",
+      "descriptionDE": "Nützlichkeit und Pflicht als die zwei Grundprinzipien der Ethik vergleichen.",
+      "descriptionZH": "功利与义务作为伦理学两大基本原则的对照。"
+    },
+    {
+      "id": "e-philo-kant-menschheitszweck-formel-philo-utilitarismus-praeferenz-singer",
+      "from": "philo-kant-menschheitszweck-formel",
+      "to": "philo-utilitarismus-praeferenz-singer",
+      "type": "synergy",
+      "descriptionDE": "Menschheitszweck und gleiche Interessenberücksichtigung ineinander spiegeln.",
+      "descriptionZH": "人是目的公式与利益平等考量互为镜像。"
+    },
+    {
+      "id": "e-philo-utilitarismus-rechte-kritik-philo-kant-wuerde-statt-preis",
+      "from": "philo-utilitarismus-rechte-kritik",
+      "to": "philo-kant-wuerde-statt-preis",
+      "type": "synergy",
+      "descriptionDE": "Rechte-Kritik und Würdebegriff stützen dieselbe Grenze der Verrechenbarkeit.",
+      "descriptionZH": "权利批判与尊严概念共同支撑不可折算的边界。"
+    },
+    {
+      "id": "e-philo-wahrheitstheorien-korrespondenz-kohaerenz-philo-kant-luegenverbot-rigorismus",
+      "from": "philo-wahrheitstheorien-korrespondenz-kohaerenz",
+      "to": "philo-kant-luegenverbot-rigorismus",
+      "type": "synergy",
+      "descriptionDE": "Wahrheitsanspruch und absolutes Lügenverbot argumentativ verknüpfen.",
+      "descriptionZH": "真理主张与绝对禁止谎言在论证上相互勾连。"
+    },
+    {
+      "id": "e-philo-utilitarismus-erwartungsnutzen-philo-deontologie-kritik-folgenblindheit",
+      "from": "philo-utilitarismus-erwartungsnutzen",
+      "to": "philo-deontologie-kritik-folgenblindheit",
+      "type": "synergy",
+      "descriptionDE": "Folgenverantwortung gegen Gesinnungsethik abwägen.",
+      "descriptionZH": "后果责任与信念伦理的对峙权衡。"
+    },
+    {
+      "id": "e-philo-kulturrelativismus-vs-universalismus-philo-kant-friedensschrift-voelkerrecht",
+      "from": "philo-kulturrelativismus-vs-universalismus",
+      "to": "philo-kant-friedensschrift-voelkerrecht",
+      "type": "synergy",
+      "descriptionDE": "Kulturelle Vielfalt und universelles Völkerrecht vermitteln.",
+      "descriptionZH": "文化多样性与普世国际法之间的调解。"
+    },
+    {
+      "id": "e-philo-gehlen-mangelwesen-institutionen-philo-technikethik-ki-verantwortung",
+      "from": "philo-gehlen-mangelwesen-institutionen",
+      "to": "philo-technikethik-ki-verantwortung",
+      "type": "cross_disciplinary",
+      "descriptionDE": "Anthropologische Entlastung durch Technik trifft Technikethik und KI-Verantwortung.",
+      "descriptionZH": "人类学的技术减负命题接入技术伦理与AI责任。"
+    },
+    {
+      "id": "e-philo-freud-es-ich-ueberich-philo-bewusstsein-und-naturwissenschaft",
+      "from": "philo-freud-es-ich-ueberich",
+      "to": "philo-bewusstsein-und-naturwissenschaft",
+      "type": "cross_disciplinary",
+      "descriptionDE": "Psychoanalyse und Neurowissenschaft ringen um die Deutungshoheit über das Bewusstsein.",
+      "descriptionZH": "精神分析与神经科学争夺意识解释权。"
+    },
+    {
+      "id": "e-philo-konstruktivismus-erkenntnis-philo-kulturrelativismus-vs-universalismus",
+      "from": "philo-konstruktivismus-erkenntnis",
+      "to": "philo-kulturrelativismus-vs-universalismus",
+      "type": "cross_disciplinary",
+      "descriptionDE": "Erkenntnistheoretischer Konstruktivismus und kultureller Relativismus stützen einander.",
+      "descriptionZH": "认识论建构主义与文化相对主义相互支撑。"
+    },
+    {
+      "id": "e-philo-philosophieren-grundfragen-philo-metaphysische-probleme-gottesbeweise",
+      "from": "philo-philosophieren-grundfragen",
+      "to": "philo-metaphysische-probleme-gottesbeweise",
+      "type": "cross_disciplinary",
+      "descriptionDE": "Philosophisches Fragen zeigt sich exemplarisch an metaphysischen Grenzfragen.",
+      "descriptionZH": "哲学提问的特性在形而上学边界问题中最为典型。"
+    },
+    {
+      "id": "e-philo-menschenwuerde-unantastbarkeit-philo-moralische-grundfragen-alltag",
+      "from": "philo-menschenwuerde-unantastbarkeit",
+      "to": "philo-moralische-grundfragen-alltag",
+      "type": "cross_disciplinary",
+      "descriptionDE": "Verfassungsrechtliche Würdegarantie trifft alltägliche moralische Begründungspraxis.",
+      "descriptionZH": "宪法尊严保障与日常道德论证实践的交汇。"
+    }
+  ]
+}
