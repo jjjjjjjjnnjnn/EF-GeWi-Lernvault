@@ -83,4 +83,27 @@ describe("Blocks rich typography & formula formatting", () => {
     expect(container.querySelector("em, i")).toBeNull();
     expect(container.querySelector(".italic")).toBeNull();
   });
+
+  it("renders markdown table rows into semantic HTML table", () => {
+    const blocks: Block[] = [
+      { kind: "h2", text: "1. Prüfungsrahmen", lang: "de" },
+      { kind: "p", text: "| Merkmal | Angabe |", lang: "de" },
+      { kind: "p", text: "|---|---|", lang: "de" },
+      { kind: "p", text: "| Fach | SoWi / Sozialwissenschaften |", lang: "de" },
+      { kind: "p", text: "| Gesamt-BE | 100 BE |", lang: "de" },
+    ];
+    const { container } = render(<Blocks blocks={blocks} />);
+    const table = container.querySelector("table");
+    expect(table).not.toBeNull();
+    const ths = container.querySelectorAll("th");
+    expect(ths.length).toBe(2);
+    expect(ths[0].textContent).toContain("Merkmal");
+    expect(ths[1].textContent).toContain("Angabe");
+    const tds = container.querySelectorAll("td");
+    expect(tds.length).toBe(4);
+    expect(tds[0].textContent).toContain("Fach");
+    expect(tds[1].textContent).toContain("SoWi");
+    expect(tds[2].textContent).toContain("Gesamt-BE");
+    expect(tds[3].textContent).toContain("100 BE");
+  });
 });

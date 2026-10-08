@@ -412,25 +412,86 @@ function InteractiveQuestionCard({ text, lang }: { text: string; lang?: string }
   );
 }
 
-// Tufte: ZH (humanist sans, gray) vs DE (old-style serif, ink). KaTeX math & rich typography integrated.
-export default function Blocks({
-  blocks,
-  renderDiagram,
-  pureGerman = false,
-}: {
-  blocks: Block[];
-  /** Reise uebergibt LLM-figur; ohne -> statisches ascii-pre (offline-fallback). */
-  renderDiagram?: (spec: string, index: number) => ReactNode;
-  pureGerman?: boolean;
-}) {
-  const safeBlocks = Array.isArray(blocks) ? blocks : [];
-  const filtered = pureGerman ? filterBlocksForGermanNative(safeBlocks) : safeBlocks;
-  const displayBlocks = filtered.length > 0 ? filtered : safeBlocks;
+function isTableRow(text: string): boolean {
+  const trimmed = text.trim();
+  return trimmed.startsWith("|") && (trimmed.endsWith("|") || trimmed.includes("|", 1)) && trimmed.split("|").length >= 3;
+}
+
+function isTableDivider(text: string): boolean {
+  const trimmed = text.trim();
+  if (!isTableRow(trimmed)) return false;
+  const cells = trimmed.split("|").slice(1, -1);
+  return cells.length > 0 && cells.every((c) => /^:?-+:?$/.test(c.trim()));
+}
+
+function MarkdownTable({ lines }: { lines: string[] }) {
+  if (!lines || lines.length === 0) return null;
+  const parsedRows: string[][] = [];
+  let headerIndex = -1;
+
+  for (let idx = 0; idx < lines.length; idx++) {
+    const line = lines[idx].trim();
+    if (isTableDivider(line)) {
+      if (idx > 0 && headerIndex === -1) {
+        headerIndex = idx - 1;
+      }
+      continue;
+    }
+    const rawCells = line.split("|");
+    const cells = rawCells.slice(1, rawCells[rawCells.length - 1] === "" ? -1 : undefined).map((c) => c.trim());
+    if (cells.length > 0) {
+      parsedRows.push(cells);
+    }
+  }
+
+  if (parsedRows.length === 0) return null;
+
+  const headers = headerIndex >= 0 && headerIndex < parsedRows.length ? parsedRows[headerIndex] : parsedRows[0];
+  const bodyRows = headerIndex >= 0 ? parsedRows.filter((_, i) => i !== headerIndex) : parsedRows.slice(1);
 
   return (
-    <div>
-      {displayBlocks.map((b, i) => {
-        if (b.kind === "h2") {
+    <div className="my-4 overflow-x-auto rounded-[var(--radius)] border border-[var(--line)] bg-[var(--surface)] shadow-none">
+      <table className="w-full border-collapse font-sans text-xs">
+        {headers && headers.length > 0 && (
+          <thead>
+            <tr className="border-b border-[var(--line)] bg-[var(--paper-subtle)] text-left font-mono font-semibold text-[var(--ink)]">
+              {headers.map((th, thIdx) => (
+                <th
+                  key={thIdx}
+                  className="p-2.5 font-medium border-r border-[var(--line)] last:border-r-0"
+                >
+                  {renderFormattedText(th)}
+                </th>
+              ))}
+            </tr>
+          </thead>
+        )}
+        <tbody className="divide-y divide-[var(--line)]">
+          {bodyRows.map((row, rIdx) => (
+            <tr key={rIdx} className="hover:bg-[var(--paper-subtle)]/50 transition-colors">
+              {row.map((cell, cIdx) => (
+                <td
+                  key={cIdx}
+                  className="p-2.5 text-[var(--ink)] align-top leading-relaxed border-r border-[var(--line)] last:border-r-0"
+                >
+                  {renderFormattedText(cell)}
+                </td>
+              ))}
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  );
+}
+
+function renderSingleBlock(
+  b: Block,
+  i: number,
+  renderDiagram?: (spec: string, index: number) => ReactNode,
+  pureGerman?: boolean
+): ReactNode {
+  if (b.kind === "h2") {
           const isAnekdote = b.text.toLowerCase().includes("anekdote");
           return (
             <div
@@ -724,6 +785,60 @@ export default function Blocks({
             {renderFormattedText(b.text)}
           </div>
         );
+}
+
+type RenderItem =
+  | { type: "block"; block: Block; index: number }
+  | { type: "table"; lines: string[]; index: number };
+
+// Tufte: ZH (humanist sans, gray) vs DE (old-style serif, ink). KaTeX math & rich typography integrated.
+export default function Blocks({
+  blocks,
+  renderDiagram,
+  pureGerman = false,
+}: {
+  blocks: Block[];
+  /** Reise uebergibt LLM-figur; ohne -> statisches ascii-pre (offline-fallback). */
+  renderDiagram?: (spec: string, index: number) => ReactNode;
+  pureGerman?: boolean;
+}) {
+  const safeBlocks = Array.isArray(blocks) ? blocks : [];
+  const filtered = pureGerman ? filterBlocksForGermanNative(safeBlocks) : safeBlocks;
+  const displayBlocks = filtered.length > 0 ? filtered : safeBlocks;
+
+  const items: RenderItem[] = [];
+  let tableBuffer: string[] = [];
+  let tableStartIndex = 0;
+
+  const flushTable = () => {
+    if (tableBuffer.length > 0) {
+      items.push({ type: "table", lines: tableBuffer, index: tableStartIndex });
+      tableBuffer = [];
+    }
+  };
+
+  displayBlocks.forEach((b, i) => {
+    if ((b.kind === "p" || b.kind === "quote") && isTableRow(b.text)) {
+      if (tableBuffer.length === 0) tableStartIndex = i;
+      tableBuffer.push(b.text);
+    } else if (b.kind === "p" && b.text.includes("\n") && b.text.split("\n").some(isTableRow)) {
+      flushTable();
+      const lines = b.text.split("\n").map((l) => l.trim()).filter(Boolean);
+      items.push({ type: "table", lines, index: i });
+    } else {
+      flushTable();
+      items.push({ type: "block", block: b, index: i });
+    }
+  });
+  flushTable();
+
+  return (
+    <div>
+      {items.map((item) => {
+        if (item.type === "table") {
+          return <MarkdownTable key={`tbl-${item.index}`} lines={item.lines} />;
+        }
+        return renderSingleBlock(item.block, item.index, renderDiagram, pureGerman);
       })}
     </div>
   );
