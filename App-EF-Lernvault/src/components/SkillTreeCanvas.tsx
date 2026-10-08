@@ -99,6 +99,17 @@ export function SkillTreeCanvas({
   // 4. 选中知识点 (右侧研习抽屉展开)
   const [selectedNodeId, setSelectedNodeId] = useState<string | null>(null);
 
+  // 4.1 用户自定义移动节点坐标记录 (nodeId -> { x, y })
+  const [customNodePositions, setCustomNodePositions] = useState<Map<string, { x: number; y: number }>>(() => new Map());
+
+  // 4.2 学科顶栏分页状态与全景目录展开状态
+  const [subjectPage, setSubjectPage] = useState<number>(() => {
+    const allSubs = graphRegistry.listSubjects();
+    const sIndex = allSubs.findIndex((s) => s.fach.toLowerCase() === (initialFach || "sowi").toLowerCase());
+    return sIndex >= 0 ? Math.floor(sIndex / 5) : 0;
+  });
+  const [isCatalogOpen, setIsCatalogOpen] = useState<boolean>(false);
+
   // 5. 画布平移缩放视口
   const [zoom, setZoom] = useState<number>(0.95);
   const [pan, setPan] = useState<{ x: number; y: number }>({ x: 20, y: 10 });
@@ -150,6 +161,12 @@ export function SkillTreeCanvas({
       setSelectedNodeId(null);
       setSelectedCategory("ALL");
       setSelectedTag("ALL");
+      setCustomNodePositions(new Map());
+      const allSubs = graphRegistry.listSubjects();
+      const sIndex = allSubs.findIndex((s) => s.fach.toLowerCase() === fach.toLowerCase());
+      if (sIndex >= 0) {
+        setSubjectPage(Math.floor(sIndex / 5));
+      }
       const graph = graphRegistry.get(fach);
       if (graph) {
         setActiveGraph(graph);
@@ -227,11 +244,18 @@ export function SkillTreeCanvas({
   // 根据当前视图模式计算渲染节点
   const layoutedNodes = useMemo(() => {
     if (viewMode === "planetary") {
-      return planetaryGraph.nodes.map((n) => ({
+      const baseNodes = planetaryGraph.nodes.map((n) => ({
         ...n,
         x: n.coordinates?.x ?? PLANETARY_CENTER_X,
         y: n.coordinates?.y ?? PLANETARY_CENTER_Y,
       }));
+      return baseNodes.map((n) => {
+        const custom = customNodePositions.get(n.id);
+        if (custom) {
+          return { ...n, x: custom.x, y: custom.y };
+        }
+        return n;
+      });
     }
 
     // 阶梯树模式 (Tree View)
@@ -269,8 +293,14 @@ export function SkillTreeCanvas({
       });
     });
 
-    return result;
-  }, [viewMode, activeGraph, planetaryGraph]);
+    return result.map((n) => {
+      const custom = customNodePositions.get(n.id);
+      if (custom) {
+        return { ...n, x: custom.x, y: custom.y };
+      }
+      return n;
+    });
+  }, [viewMode, activeGraph, planetaryGraph, customNodePositions]);
 
   const nodeMap = useMemo(() => {
     return new Map(layoutedNodes.map((n) => [n.id, n]));
@@ -360,14 +390,140 @@ export function SkillTreeCanvas({
     }).filter(Boolean) as { id: string; pathData: string; isPathActive: boolean; type: string }[];
   }, [activeGraph.edges, nodeMap, masteredIds, unlockStates, viewMode]);
 
-  // 画布视口拖拽
+  // 节点拖拽引用
+  const draggingNodeRef = useRef<{
+    nodeId: string;
+    pointerId: number;
+    startX: number;
+    startY: number;
+    origX: number;
+    origY: number;
+    hasMoved: boolean;
+  } | null>(null);
+
+  // 记录最近一次是否为移动拖拽，避免拖拽抬起时误触发 onClick 展开抽屉
+  const justDraggedRef = useRef<boolean>(false);
+
+  const handleNodePointerDown = (
+    e: React.PointerEvent<SVGGElement>,
+    node: KnowledgeNode & { x: number; y: number }
+  ) => {
+    e.stopPropagation();
+    try {
+      e.currentTarget.setPointerCapture(e.pointerId);
+    } catch {
+      // 兼容不支持 setPointerCapture 的测试环境
+    }
+    draggingNodeRef.current = {
+      nodeId: node.id,
+      pointerId: e.pointerId,
+      startX: e.clientX,
+      startY: e.clientY,
+      origX: node.x,
+      origY: node.y,
+      hasMoved: false,
+    };
+  };
+
+  const handleNodePointerMove = (e: React.PointerEvent<SVGGElement>) => {
+    if (!draggingNodeRef.current) return;
+    const { nodeId, startX, startY, origX, origY, hasMoved } = draggingNodeRef.current;
+    const dx = (e.clientX - startX) / zoom;
+    const dy = (e.clientY - startY) / zoom;
+    if (!hasMoved && Math.hypot(dx, dy) > 3) {
+      draggingNodeRef.current.hasMoved = true;
+    }
+    if (draggingNodeRef.current.hasMoved) {
+      setCustomNodePositions((prev) => {
+        const next = new Map(prev);
+        next.set(nodeId, {
+          x: Math.round(origX + dx),
+          y: Math.round(origY + dy),
+        });
+        return next;
+      });
+    }
+  };
+
+  const handleNodePointerUp = (
+    e: React.PointerEvent<SVGGElement>,
+    nodeId: string
+  ) => {
+    if (!draggingNodeRef.current) return;
+    try {
+      e.currentTarget.releasePointerCapture(e.pointerId);
+    } catch {
+      // 忽略
+    }
+    const wasMoved = draggingNodeRef.current.hasMoved;
+    draggingNodeRef.current = null;
+    if (wasMoved) {
+      justDraggedRef.current = true;
+    } else {
+      justDraggedRef.current = false;
+      setSelectedNodeId(nodeId);
+    }
+  };
+
+  // 画布多指触摸点映射
+  const activeTouchPointsRef = useRef<Map<number, { x: number; y: number }>>(new Map());
+  const pinchStartRef = useRef<{ dist: number; zoom: number } | null>(null);
+
+  // 画布视口平移拖拽与多点触摸手势
   const handlePointerDown = (e: React.PointerEvent<SVGSVGElement>) => {
     if ((e.target as HTMLElement).closest("[data-clickable-node]")) return;
+    activeTouchPointsRef.current.set(e.pointerId, { x: e.clientX, y: e.clientY });
+
+    // 触控双指手势初始化
+    if (activeTouchPointsRef.current.size === 2) {
+      isDraggingRef.current = false;
+      const pts = Array.from(activeTouchPointsRef.current.values());
+      const dist = Math.hypot(pts[0].x - pts[1].x, pts[0].y - pts[1].y);
+      pinchStartRef.current = { dist, zoom };
+      return;
+    }
+
     isDraggingRef.current = true;
     dragStartRef.current = { x: e.clientX - pan.x, y: e.clientY - pan.y };
   };
 
   const handlePointerMove = (e: React.PointerEvent<SVGSVGElement>) => {
+    if (activeTouchPointsRef.current.has(e.pointerId)) {
+      activeTouchPointsRef.current.set(e.pointerId, { x: e.clientX, y: e.clientY });
+    }
+
+    // 双指手势缩放
+    if (activeTouchPointsRef.current.size === 2 && pinchStartRef.current) {
+      const pts = Array.from(activeTouchPointsRef.current.values());
+      const newDist = Math.hypot(pts[0].x - pts[1].x, pts[0].y - pts[1].y);
+      const scale = newDist / Math.max(1, pinchStartRef.current.dist);
+      const nextZoom = Math.max(0.25, Math.min(3.0, +(pinchStartRef.current.zoom * scale).toFixed(3)));
+      setZoom(nextZoom);
+      return;
+    }
+
+    // 如果正在拖拽知识节点，优先驱动节点移动（防止鼠标移出节点过快）
+    if (draggingNodeRef.current) {
+      const { nodeId, startX, startY, origX, origY, hasMoved } = draggingNodeRef.current;
+      const dx = (e.clientX - startX) / zoom;
+      const dy = (e.clientY - startY) / zoom;
+      if (!hasMoved && Math.hypot(dx, dy) > 3) {
+        draggingNodeRef.current.hasMoved = true;
+      }
+      if (draggingNodeRef.current.hasMoved) {
+        setCustomNodePositions((prev) => {
+          const next = new Map(prev);
+          next.set(nodeId, {
+            x: Math.round(origX + dx),
+            y: Math.round(origY + dy),
+          });
+          return next;
+        });
+      }
+      return;
+    }
+
+    // 底板平移
     if (!isDraggingRef.current) return;
     setPan({
       x: e.clientX - dragStartRef.current.x,
@@ -375,12 +531,43 @@ export function SkillTreeCanvas({
     });
   };
 
-  const handlePointerUp = () => {
+  const handlePointerUp = (e: React.PointerEvent<SVGSVGElement>) => {
+    activeTouchPointsRef.current.delete(e.pointerId);
+    if (activeTouchPointsRef.current.size < 2) {
+      pinchStartRef.current = null;
+    }
     isDraggingRef.current = false;
+    if (draggingNodeRef.current) {
+      if (draggingNodeRef.current.hasMoved) {
+        justDraggedRef.current = true;
+      }
+      draggingNodeRef.current = null;
+    }
   };
 
-  // 一键重新引力排布
+  // 鼠标滚轮平滑焦点缩放
+  const handleWheel = (e: React.WheelEvent<SVGSVGElement>) => {
+    e.preventDefault();
+    const rect = e.currentTarget.getBoundingClientRect();
+    const mouseX = e.clientX - rect.left;
+    const mouseY = e.clientY - rect.top;
+
+    const factor = e.deltaY < 0 ? 1.08 : 0.92;
+    const nextZoom = Math.max(0.25, Math.min(3.0, +(zoom * factor).toFixed(3)));
+
+    const worldX = (mouseX - pan.x) / zoom;
+    const worldY = (mouseY - pan.y) / zoom;
+
+    const newPanX = Math.round(mouseX - worldX * nextZoom);
+    const newPanY = Math.round(mouseY - worldY * nextZoom);
+
+    setZoom(nextZoom);
+    setPan({ x: newPanX, y: newPanY });
+  };
+
+  // 一键重新引力排布 (同时复位用户自定义位置)
   const handleAutoPlanetaryLayout = () => {
+    setCustomNodePositions(new Map());
     const updated = computePlanetaryRadialLayout(activeGraph, {
       center: { x: PLANETARY_CENTER_X, y: PLANETARY_CENTER_Y },
     });
@@ -514,13 +701,12 @@ export function SkillTreeCanvas({
   const handleAddSubjectSubmit = () => {
     if (!newSubjectId.trim() || !newSubjectNameZH.trim()) return;
     const cleanId = newSubjectId.trim();
-    const created = graphRegistry.createCustomSubject(
+    graphRegistry.createCustomSubject(
       cleanId,
       newSubjectNameDE.trim() || cleanId,
       newSubjectNameZH.trim()
     );
-    setSelectedFach(cleanId);
-    setActiveGraph(created);
+    handleSelectFach(cleanId);
     setIsAddSubjectOpen(false);
     setNewSubjectId("");
     setNewSubjectNameDE("");
@@ -581,37 +767,178 @@ export function SkillTreeCanvas({
       className={`relative flex flex-col w-full h-full bg-[var(--surface)] text-[var(--ink)] overflow-hidden ${className}`}
       data-testid="skill-tree-canvas-container"
     >
-      {/* 顶部主控制栏：学科选择、进度、模式切换与操作 */}
-      <div className="flex flex-wrap items-center justify-between border-b border-[var(--line)] px-4 py-2 bg-[var(--surface)] shrink-0 gap-2 z-10">
-        <div className="flex items-center gap-2">
-          <span className="font-mono text-xs text-[var(--gray)] font-medium">
+      {/* 顶部主控制栏：学科选择、翻页/总录展开、进度、模式切换与操作 */}
+      <div className="relative flex flex-wrap items-center justify-between border-b border-[var(--line)] px-4 py-2 bg-[var(--surface)] shrink-0 gap-2 z-30">
+        <div className="flex items-center gap-2 flex-wrap sm:flex-nowrap">
+          <span className="font-mono text-xs text-[var(--gray)] font-medium shrink-0">
             {de ? "Fach:" : "学科:"}
           </span>
-          <div className="flex items-center gap-1 overflow-x-auto max-w-[420px] no-scrollbar">
-            {graphRegistry.listSubjects().map((sub) => {
-              const isSelected = selectedFach.toLowerCase() === sub.fach.toLowerCase();
-              return (
-                <button
-                  key={sub.fach}
-                  type="button"
-                  onClick={() => handleSelectFach(sub.fach)}
-                  aria-pressed={isSelected}
-                  className={`px-2.5 py-1 rounded-[var(--radius)] text-xs font-mono transition-all cursor-pointer ${
-                    isSelected
-                      ? "bg-[var(--ink)] text-[var(--surface)] font-bold shadow-none"
-                      : "bg-[var(--surface)] border border-[var(--line)] text-[var(--ink)] hover:bg-[var(--paper-subtle)]"
-                  }`}
-                >
-                  {de ? sub.nameDE : sub.nameZH}
-                </button>
-              );
-            })}
+
+          {/* 翻页与当前页单行学科按钮 */}
+          <div className="flex items-center gap-1 shrink-0">
+            <button
+              type="button"
+              onClick={() => setSubjectPage((p) => Math.max(0, p - 1))}
+              disabled={subjectPage === 0}
+              className="w-6 h-7 flex items-center justify-center rounded-[var(--radius)] border border-[var(--line)] bg-[var(--surface)] text-xs font-mono text-[var(--ink)] disabled:opacity-30 disabled:cursor-not-allowed hover:bg-[var(--paper-subtle)] cursor-pointer"
+              title={de ? "Vorherige Fächer-Seite" : "上一页学科"}
+            >
+              ‹
+            </button>
+
+            <div className="flex items-center gap-1 flex-nowrap">
+              {graphRegistry.listSubjects().slice(subjectPage * 5, (subjectPage + 1) * 5).map((sub) => {
+                const isSelected = selectedFach.toLowerCase() === sub.fach.toLowerCase();
+                return (
+                  <button
+                    key={sub.fach}
+                    type="button"
+                    onClick={() => handleSelectFach(sub.fach)}
+                    aria-pressed={isSelected}
+                    className={`h-7 px-2.5 rounded-[var(--radius)] text-xs font-mono font-medium whitespace-nowrap shrink-0 transition-all cursor-pointer flex items-center ${
+                      isSelected
+                        ? "bg-[var(--ink)] text-[var(--surface)] font-bold shadow-none"
+                        : "bg-[var(--surface)] border border-[var(--line)] text-[var(--ink)] hover:bg-[var(--paper-subtle)]"
+                    }`}
+                  >
+                    {de ? sub.nameDE : sub.nameZH}
+                  </button>
+                );
+              })}
+            </div>
+
+            <button
+              type="button"
+              onClick={() => setSubjectPage((p) => Math.min(Math.ceil(graphRegistry.listSubjects().length / 5) - 1, p + 1))}
+              disabled={subjectPage >= Math.ceil(graphRegistry.listSubjects().length / 5) - 1}
+              className="w-6 h-7 flex items-center justify-center rounded-[var(--radius)] border border-[var(--line)] bg-[var(--surface)] text-xs font-mono text-[var(--ink)] disabled:opacity-30 disabled:cursor-not-allowed hover:bg-[var(--paper-subtle)] cursor-pointer"
+              title={de ? "Nächste Fächer-Seite" : "下一页学科"}
+            >
+              ›
+            </button>
+            <span className="font-mono text-[10px] text-[var(--gray)] tabular-nums shrink-0 ml-0.5">
+              {subjectPage + 1}/{Math.max(1, Math.ceil(graphRegistry.listSubjects().length / 5))}
+            </span>
+          </div>
+
+          {/* 全部学科展开总览下拉菜单 */}
+          <div className="relative">
+            <button
+              type="button"
+              onClick={() => setIsCatalogOpen((v) => !v)}
+              className="flex items-center gap-1 h-7 px-2.5 rounded-[var(--radius)] border border-[var(--line)] hover:border-[var(--ink)] bg-[var(--surface)] hover:bg-[var(--paper-subtle)] text-xs font-mono text-[var(--ink)] cursor-pointer whitespace-nowrap"
+              title={de ? "Alle Fächer anzeigen" : "展开全部学科全景目录"}
+            >
+              <span>{de ? `Fächer (${graphRegistry.listSubjects().length})` : `全部学科 (${graphRegistry.listSubjects().length})`}</span>
+              <svg width="10" height="10" viewBox="0 0 10 10" fill="none" stroke="currentColor" className={`transition-transform duration-200 ${isCatalogOpen ? "rotate-180" : ""}`}>
+                <path d="M2.5 3.5L5 6L7.5 3.5" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+            </button>
+
+            {/* 学科全景展开抽屉/下拉卡片 */}
+            {isCatalogOpen && (
+              <>
+                <div
+                  className="fixed inset-0 z-40"
+                  onClick={() => setIsCatalogOpen(false)}
+                />
+                <div className="absolute left-0 top-8 w-80 bg-[var(--surface)] border border-[var(--ink)] rounded-[var(--radius)] p-3 z-50 text-xs font-mono space-y-2.5">
+                  <div className="flex items-center justify-between border-b border-[var(--line)] pb-1.5">
+                    <span className="font-bold text-[var(--ink)] font-serif text-xs">
+                      {de ? "Fächer-Katalog (Gymnasium)" : "高中全科学科星系总录"}
+                    </span>
+                    <button
+                      type="button"
+                      onClick={() => setIsCatalogOpen(false)}
+                      className="text-[var(--gray)] hover:text-[var(--ink)] p-0.5 cursor-pointer flex items-center justify-center"
+                      title={de ? "Schließen" : "关闭"}
+                    >
+                      <svg width="10" height="10" viewBox="0 0 10 10" fill="none" stroke="currentColor">
+                        <path d="M1.5 1.5l7 7M8.5 1.5l-7 7" strokeWidth="1.3" strokeLinecap="round" />
+                      </svg>
+                    </button>
+                  </div>
+
+                  <div className="space-y-2.5 max-h-72 overflow-y-auto no-scrollbar">
+                    {[
+                      { titleZH: "AF I · 语言与艺术", titleDE: "AF I · Sprachen & Kunst", keys: ["Deutsch", "Englisch", "Musik"] },
+                      { titleZH: "AF II · 社会与政治", titleDE: "AF II · Gesellschaft", keys: ["SoWi", "Philo"] },
+                      { titleZH: "AF III · 数理自然科学", titleDE: "AF III · MINT", keys: ["Mathe", "Physik", "Chemie", "Bio"] },
+                      { titleZH: "体育运动", titleDE: "Sport", keys: ["Sport"] },
+                    ].map((group) => {
+                      const subs = graphRegistry.listSubjects().filter((s) => group.keys.some((k) => k.toLowerCase() === s.fach.toLowerCase()));
+                      if (subs.length === 0) return null;
+                      return (
+                        <div key={group.titleZH} className="space-y-1">
+                          <div className="text-[10px] text-[var(--gray)] font-semibold uppercase tracking-wider">
+                            {de ? group.titleDE : group.titleZH}
+                          </div>
+                          <div className="grid grid-cols-2 gap-1.5">
+                            {subs.map((sub) => {
+                              const isSelected = selectedFach.toLowerCase() === sub.fach.toLowerCase();
+                              return (
+                                <button
+                                  key={sub.fach}
+                                  type="button"
+                                  onClick={() => {
+                                    handleSelectFach(sub.fach);
+                                    setIsCatalogOpen(false);
+                                  }}
+                                  className={`p-1.5 rounded-[var(--radius)] border text-left text-xs transition-colors cursor-pointer flex flex-col ${
+                                    isSelected
+                                      ? "border-[var(--ink)] bg-[var(--ink)] text-[var(--surface)] font-bold"
+                                      : "border-[var(--line)] bg-[var(--surface)] text-[var(--ink)] hover:bg-[var(--paper-subtle)]"
+                                  }`}
+                                >
+                                  <span className="truncate">{de ? sub.nameDE : sub.nameZH}</span>
+                                </button>
+                              );
+                            })}
+                          </div>
+                        </div>
+                      );
+                    })}
+
+                    {/* 自定义扩展学科 */}
+                    {graphRegistry.listSubjects().filter((s) => s.isCustom).length > 0 && (
+                      <div className="space-y-1">
+                        <div className="text-[10px] text-[var(--gray)] font-semibold uppercase tracking-wider">
+                          {de ? "Eigene Fächer" : "自定义扩展学科"}
+                        </div>
+                        <div className="grid grid-cols-2 gap-1.5">
+                          {graphRegistry.listSubjects().filter((s) => s.isCustom).map((sub) => {
+                            const isSelected = selectedFach.toLowerCase() === sub.fach.toLowerCase();
+                            return (
+                              <button
+                                key={sub.fach}
+                                type="button"
+                                onClick={() => {
+                                  handleSelectFach(sub.fach);
+                                  setIsCatalogOpen(false);
+                                }}
+                                className={`p-1.5 rounded-[var(--radius)] border text-left text-xs transition-colors cursor-pointer flex flex-col ${
+                                  isSelected
+                                    ? "border-[var(--ink)] bg-[var(--ink)] text-[var(--surface)] font-bold"
+                                    : "border-[var(--line)] bg-[var(--surface)] text-[var(--ink)] hover:bg-[var(--paper-subtle)]"
+                                }`}
+                              >
+                                <span className="truncate">{de ? sub.nameDE : sub.nameZH}</span>
+                              </button>
+                            );
+                          })}
+                        </div>
+                      </div>
+                    )}
+                  </div>
+                </div>
+              </>
+            )}
           </div>
 
           <button
             type="button"
             onClick={() => setIsAddSubjectOpen(true)}
-            className="flex items-center gap-1 px-2 py-1 rounded-[var(--radius)] border border-[var(--line)] hover:border-[var(--ink)] text-xs font-mono text-[var(--gray)] hover:text-[var(--ink)] transition-colors cursor-pointer"
+            className="flex items-center gap-1 h-7 px-2 rounded-[var(--radius)] border border-[var(--line)] hover:border-[var(--ink)] text-xs font-mono text-[var(--gray)] hover:text-[var(--ink)] transition-colors cursor-pointer whitespace-nowrap"
             title={de ? "Neues Fach anlegen" : "新增学科板块"}
           >
             <svg {...iconProps}>
@@ -623,13 +950,28 @@ export function SkillTreeCanvas({
 
         {/* 右侧：模式切换、进度与操作动作 */}
         <div className="flex items-center gap-3 text-xs font-mono">
+          {/* 自定义拖拽复位按钮 (当有节点被移动时高亮呈现) */}
+          {customNodePositions.size > 0 && (
+            <button
+              type="button"
+              onClick={() => setCustomNodePositions(new Map())}
+              className="flex items-center gap-1 h-7 px-2.5 rounded-[var(--radius)] bg-[var(--ink)] text-[var(--surface)] text-xs font-mono font-bold hover:opacity-90 transition-all cursor-pointer shadow-none whitespace-nowrap"
+              title={de ? "Knotenpositionen auf Standard zurücksetzen" : "复位所有已移动节点到默认引力位置"}
+            >
+              <svg {...iconProps}>
+                <path d="M2.5 8a5.5 5.5 0 1 0 1.6-3.9L2 6.5M2 2.5v4h4" />
+              </svg>
+              <span>{de ? `Reset (${customNodePositions.size})` : `复位位置 (${customNodePositions.size})`}</span>
+            </button>
+          )}
+
           {/* 视图模式切换 */}
-          <div className="flex items-center border border-[var(--line)] rounded-[var(--radius)] overflow-hidden">
+          <div className="flex items-center border border-[var(--line)] rounded-[var(--radius)] overflow-hidden h-7">
             <button
               type="button"
               onClick={() => setViewMode("planetary")}
               aria-pressed={viewMode === "planetary"}
-              className={`px-2.5 py-1 text-xs cursor-pointer transition-colors ${
+              className={`px-2.5 h-full text-xs cursor-pointer transition-colors ${
                 viewMode === "planetary"
                   ? "bg-[var(--ink)] text-[var(--surface)] font-bold"
                   : "bg-[var(--surface)] text-[var(--gray)] hover:text-[var(--ink)]"
@@ -641,7 +983,7 @@ export function SkillTreeCanvas({
               type="button"
               onClick={() => setViewMode("tree")}
               aria-pressed={viewMode === "tree"}
-              className={`px-2.5 py-1 text-xs cursor-pointer transition-colors border-l border-[var(--line)] ${
+              className={`px-2.5 h-full text-xs cursor-pointer transition-colors border-l border-[var(--line)] ${
                 viewMode === "tree"
                   ? "bg-[var(--ink)] text-[var(--surface)] font-bold"
                   : "bg-[var(--surface)] text-[var(--gray)] hover:text-[var(--ink)]"
@@ -669,7 +1011,7 @@ export function SkillTreeCanvas({
             <button
               type="button"
               onClick={openAddNodeModal}
-              className="flex items-center gap-1 px-2.5 py-1 rounded-[var(--radius)] bg-[var(--ink)] text-[var(--surface)] text-xs font-mono hover:opacity-90 transition-opacity cursor-pointer"
+              className="flex items-center gap-1 h-7 px-2.5 rounded-[var(--radius)] bg-[var(--ink)] text-[var(--surface)] text-xs font-mono hover:opacity-90 transition-opacity cursor-pointer whitespace-nowrap"
             >
               <svg {...iconProps}>
                 <path d="M8 3.5v9M3.5 8h9" />
@@ -681,7 +1023,7 @@ export function SkillTreeCanvas({
               <button
                 type="button"
                 onClick={handleAutoPlanetaryLayout}
-                className="px-2 py-1 rounded-[var(--radius)] border border-[var(--line)] hover:border-[var(--ink)] text-xs text-[var(--ink)] hover:bg-[var(--paper-subtle)] cursor-pointer"
+                className="h-7 px-2 rounded-[var(--radius)] border border-[var(--line)] hover:border-[var(--ink)] text-xs text-[var(--ink)] hover:bg-[var(--paper-subtle)] cursor-pointer whitespace-nowrap"
                 title={de ? "Planeten automatisch anordnen" : "一键引力自动排布"}
               >
                 {de ? "Auto-Layout" : "一键引力排布"}
@@ -691,26 +1033,26 @@ export function SkillTreeCanvas({
             <button
               type="button"
               onClick={openJsonModal}
-              className="px-2 py-1 rounded-[var(--radius)] border border-[var(--line)] hover:border-[var(--ink)] text-xs text-[var(--ink)] hover:bg-[var(--paper-subtle)] cursor-pointer"
+              className="h-7 px-2 rounded-[var(--radius)] border border-[var(--line)] hover:border-[var(--ink)] text-xs text-[var(--ink)] hover:bg-[var(--paper-subtle)] cursor-pointer"
               title={de ? "JSON Import / Export" : "导入或导出 JSON"}
             >
               JSON
             </button>
 
             {/* 缩放控制器 */}
-            <div className="flex items-center border border-[var(--line)] rounded-[var(--radius)] overflow-hidden">
+            <div className="flex items-center border border-[var(--line)] rounded-[var(--radius)] overflow-hidden h-7">
               <button
                 type="button"
-                onClick={() => setZoom((z) => Math.min(2.0, +(z + 0.15).toFixed(2)))}
-                className="px-2 py-1 text-xs hover:bg-[var(--paper-subtle)] border-r border-[var(--line)] cursor-pointer"
+                onClick={() => setZoom((z) => Math.min(3.0, +(z + 0.15).toFixed(2)))}
+                className="px-2 h-full text-xs hover:bg-[var(--paper-subtle)] border-r border-[var(--line)] cursor-pointer"
                 title={de ? "Vergrößern" : "放大"}
               >
                 +
               </button>
               <button
                 type="button"
-                onClick={() => setZoom((z) => Math.max(0.5, +(z - 0.15).toFixed(2)))}
-                className="px-2 py-1 text-xs hover:bg-[var(--paper-subtle)] border-r border-[var(--line)] cursor-pointer"
+                onClick={() => setZoom((z) => Math.max(0.25, +(z - 0.15).toFixed(2)))}
+                className="px-2 h-full text-xs hover:bg-[var(--paper-subtle)] border-r border-[var(--line)] cursor-pointer"
                 title={de ? "Verkleinern" : "缩小"}
               >
                 -
@@ -721,7 +1063,7 @@ export function SkillTreeCanvas({
                   setZoom(viewMode === "planetary" ? 0.95 : 1.0);
                   setPan({ x: 20, y: 10 });
                 }}
-                className="px-2 py-1 text-[11px] hover:bg-[var(--paper-subtle)] cursor-pointer"
+                className="px-2 h-full text-[11px] hover:bg-[var(--paper-subtle)] cursor-pointer"
                 title={de ? "Zurücksetzen" : "重置"}
               >
                 1:1
@@ -731,20 +1073,20 @@ export function SkillTreeCanvas({
         </div>
       </div>
 
-      {/* 二级筛选栏：分类星区 Chips、多维标签 Filter 与全文快速检索 */}
-      <div className="flex flex-wrap items-center justify-between border-b border-[var(--line)] px-4 py-1.5 bg-[var(--paper-subtle)] text-xs font-mono gap-2 z-10 shrink-0">
+      {/* 二级筛选栏：分类星区 Chips、多维标签 Filter 与全文快速检索 (整行单行对齐无折叠) */}
+      <div className="flex flex-wrap sm:flex-nowrap items-center justify-between border-b border-[var(--line)] px-4 py-1.5 bg-[var(--paper-subtle)] text-xs font-mono gap-2 z-10 shrink-0 min-h-[40px]">
         {/* 分类星区筛选 Chips */}
-        <div className="flex items-center gap-1.5 overflow-x-auto max-w-[620px] no-scrollbar">
+        <div className="flex items-center gap-1.5 overflow-x-auto no-scrollbar flex-nowrap py-0.5">
           <span className="text-[var(--gray)] font-medium shrink-0">
             {de ? "Bereich:" : "星区分类:"}
           </span>
           <button
             type="button"
             onClick={() => setSelectedCategory("ALL")}
-            className={`px-2 py-0.5 rounded-[var(--radius)] text-[11px] cursor-pointer transition-colors ${
+            className={`h-7 px-2.5 rounded-[var(--radius)] text-xs font-mono whitespace-nowrap shrink-0 cursor-pointer transition-colors flex items-center ${
               selectedCategory === "ALL"
-                ? "bg-[var(--ink)] text-[var(--surface)] font-bold"
-                : "border border-[var(--line)] bg-[var(--surface)] hover:border-[var(--ink)]"
+                ? "bg-[var(--ink)] text-[var(--surface)] font-bold shadow-none"
+                : "border border-[var(--line)] bg-[var(--surface)] text-[var(--ink)] hover:border-[var(--ink)] hover:bg-[var(--paper-subtle)]"
             }`}
           >
             {de ? "Alle" : "全部分类"}
@@ -754,10 +1096,10 @@ export function SkillTreeCanvas({
               key={cat}
               type="button"
               onClick={() => setSelectedCategory(cat)}
-              className={`px-2 py-0.5 rounded-[var(--radius)] text-[11px] cursor-pointer transition-colors ${
+              className={`h-7 px-2.5 rounded-[var(--radius)] text-xs font-mono whitespace-nowrap shrink-0 cursor-pointer transition-colors flex items-center ${
                 selectedCategory === cat
-                  ? "bg-[var(--ink)] text-[var(--surface)] font-bold"
-                  : "border border-[var(--line)] bg-[var(--surface)] hover:border-[var(--ink)]"
+                  ? "bg-[var(--ink)] text-[var(--surface)] font-bold shadow-none"
+                  : "border border-[var(--line)] bg-[var(--surface)] text-[var(--ink)] hover:border-[var(--ink)] hover:bg-[var(--paper-subtle)]"
               }`}
             >
               {cat}
@@ -766,16 +1108,16 @@ export function SkillTreeCanvas({
         </div>
 
         {/* 标签过滤与搜索 */}
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-2 shrink-0 ml-auto">
           {tagsList.length > 0 && (
             <div className="flex items-center gap-1">
-              <span className="text-[var(--gray)] text-[11px] shrink-0">
+              <span className="text-[var(--gray)] text-xs shrink-0">
                 {de ? "Tag:" : "标签:"}
               </span>
               <select
                 value={selectedTag}
                 onChange={(e) => setSelectedTag(e.target.value)}
-                className="p-1 border border-[var(--line)] rounded-[var(--radius)] bg-[var(--surface)] text-[11px] text-[var(--ink)]"
+                className="h-7 px-2 border border-[var(--line)] rounded-[var(--radius)] bg-[var(--surface)] text-xs text-[var(--ink)] font-mono cursor-pointer"
               >
                 <option value="ALL">{de ? "Alle Tags" : "全部标签"}</option>
                 {tagsList.map((t) => (
@@ -787,21 +1129,24 @@ export function SkillTreeCanvas({
             </div>
           )}
 
-          <div className="relative">
+          <div className="relative flex items-center">
             <input
               type="text"
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               placeholder={de ? "Suchen (Titel, Formel...)" : "搜索知识点/公式/考点..."}
-              className="pl-2 pr-6 py-0.5 border border-[var(--line)] rounded-[var(--radius)] bg-[var(--surface)] text-[11px] text-[var(--ink)] focus:outline-none focus:border-[var(--ink)] w-40"
+              className="h-7 pl-2.5 pr-6 border border-[var(--line)] rounded-[var(--radius)] bg-[var(--surface)] text-xs font-mono text-[var(--ink)] focus:outline-none focus:border-[var(--ink)] w-48"
             />
             {searchQuery && (
               <button
                 type="button"
                 onClick={() => setSearchQuery("")}
-                className="absolute right-1.5 top-1/2 -translate-y-1/2 text-[10px] text-[var(--gray)] hover:text-[var(--ink)] cursor-pointer"
+                className="absolute right-1.5 top-1/2 -translate-y-1/2 text-[var(--gray)] hover:text-[var(--ink)] cursor-pointer flex items-center justify-center"
+                title={de ? "Löschen" : "清空"}
               >
-                x
+                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" stroke="currentColor">
+                  <path d="M2 2l6 6M8 2l-6 6" strokeWidth="1.2" strokeLinecap="round" />
+                </svg>
               </button>
             )}
           </div>
@@ -809,9 +1154,28 @@ export function SkillTreeCanvas({
       </div>
 
       {/* SVG 主画布 */}
-      <div className="relative flex-1 w-full h-full cursor-grab active:cursor-grabbing select-none overflow-hidden">
+      <div className="relative flex-1 w-full h-full cursor-grab active:cursor-grabbing select-none overflow-hidden touch-none">
+        {/* 自定义拖拽复位悬浮标牌 */}
+        {customNodePositions.size > 0 && (
+          <div className="absolute top-3 left-1/2 -translate-x-1/2 z-20 flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-[var(--surface)] border border-[var(--ink)] text-xs font-mono text-[var(--ink)] select-none animate-fade-in">
+            <span>
+              {de
+                ? `${customNodePositions.size} Knoten verschoben`
+                : `已自定义移动 ${customNodePositions.size} 个节点位置`}
+            </span>
+            <button
+              type="button"
+              onClick={() => setCustomNodePositions(new Map())}
+              className="px-2 py-0.5 rounded bg-[var(--ink)] text-[var(--surface)] text-[11px] font-bold hover:opacity-90 cursor-pointer"
+            >
+              {de ? "Zurücksetzen" : "复位默认"}
+            </button>
+          </div>
+        )}
+
         <svg
           className="w-full h-full"
+          onWheel={handleWheel}
           onPointerDown={handlePointerDown}
           onPointerMove={handlePointerMove}
           onPointerUp={handlePointerUp}
@@ -1228,11 +1592,18 @@ export function SkillTreeCanvas({
                     transform={`translate(${cx}, ${cy})`}
                     data-clickable-node="true"
                     data-testid={`skill-node-${node.id}`}
+                    onPointerDown={(e) => handleNodePointerDown(e, node)}
+                    onPointerMove={handleNodePointerMove}
+                    onPointerUp={(e) => handleNodePointerUp(e, node.id)}
                     onClick={(e) => {
                       e.stopPropagation();
+                      if (justDraggedRef.current) {
+                        justDraggedRef.current = false;
+                        return;
+                      }
                       setSelectedNodeId(node.id);
                     }}
-                    className="cursor-pointer group transition-opacity duration-200"
+                    className="cursor-move group transition-opacity duration-200"
                     style={{
                       transformOrigin: `${cx}px ${cy}px`,
                       transformBox: "view-box",
@@ -1452,11 +1823,18 @@ export function SkillTreeCanvas({
                   transform={`translate(${node.x}, ${node.y})`}
                   data-clickable-node="true"
                   data-testid={`skill-node-${node.id}`}
+                  onPointerDown={(e) => handleNodePointerDown(e, node)}
+                  onPointerMove={handleNodePointerMove}
+                  onPointerUp={(e) => handleNodePointerUp(e, node.id)}
                   onClick={(e) => {
                     e.stopPropagation();
+                    if (justDraggedRef.current) {
+                      justDraggedRef.current = false;
+                      return;
+                    }
                     setSelectedNodeId(node.id);
                   }}
-                  className="cursor-pointer group transition-opacity duration-200"
+                  className="cursor-move group transition-opacity duration-200"
                   style={{
                     transformOrigin: `${cx}px ${cy}px`,
                     transformBox: "view-box",

@@ -162,5 +162,69 @@ describe("SkillTreeCanvas Component (可插拔知识图谱与技能树画布测�
     expect(screen.getByText("知识图谱与技能树 JSON 导入与导出中心")).toBeInTheDocument();
     expect(screen.getByRole("button", { name: "校验并导入图谱" })).toBeInTheDocument();
   });
+
+  it("supports free node dragging, displays reset indicator, and resets back to default", () => {
+    render(<SkillTreeCanvas lang="zh" initialFach="SoWi" />);
+
+    const nodeEl = screen.getByTestId("skill-node-sowi-beduerfnis-knappheit");
+    expect(nodeEl).toBeInTheDocument();
+
+    // 模拟拖拽动作 (pointerdown -> pointermove -> pointerup)
+    fireEvent.pointerDown(nodeEl, { clientX: 100, clientY: 100, pointerId: 1 });
+    fireEvent.pointerMove(nodeEl, { clientX: 180, clientY: 220, pointerId: 1 });
+    fireEvent.pointerUp(nodeEl, { clientX: 180, clientY: 220, pointerId: 1 });
+
+    // 应该出现移动提示与复位按钮
+    expect(screen.getByText(/已自定义移动 1 个节点位置/)).toBeInTheDocument();
+    const resetBtn = screen.getByRole("button", { name: "复位默认" });
+    expect(resetBtn).toBeInTheDocument();
+
+    // 点击复位
+    fireEvent.click(resetBtn);
+    expect(screen.queryByText(/已自定义移动/)).not.toBeInTheDocument();
+  });
+
+  it("supports mouse wheel zooming on SVG canvas", () => {
+    render(<SkillTreeCanvas lang="zh" initialFach="SoWi" />);
+
+    const svg = screen.getByTestId("skill-tree-svg");
+    expect(svg).toBeInTheDocument();
+
+    // 滚轮缩小
+    fireEvent.wheel(svg, { deltaY: 100, clientX: 500, clientY: 400 });
+    // 滚轮放大
+    fireEvent.wheel(svg, { deltaY: -100, clientX: 500, clientY: 400 });
+
+    expect(svg).toBeInTheDocument();
+  });
+
+  it("supports subject pagination and full catalog popover navigation", () => {
+    render(<SkillTreeCanvas lang="zh" initialFach="SoWi" />);
+
+    // 默认在第 1 页高亮社会科学
+    expect(screen.getByRole("button", { name: "社会科学 (SoWi)", pressed: true })).toBeInTheDocument();
+
+    // 点击下一页
+    const nextBtn = screen.getByTitle("下一页学科");
+    fireEvent.click(nextBtn);
+
+    // 翻页后可见第 2 页学科
+    expect(screen.getByRole("button", { name: "德语 (Deutsch)" })).toBeInTheDocument();
+
+    // 打开全景学科总录
+    const catalogBtn = screen.getByTitle("展开全部学科全景目录");
+    fireEvent.click(catalogBtn);
+
+    expect(screen.getByText("高中全科学科星系总录")).toBeInTheDocument();
+    expect(screen.getByText("AF I · 语言与艺术")).toBeInTheDocument();
+    expect(screen.getByText("AF III · 数理自然科学")).toBeInTheDocument();
+
+    // 从全景目录直接点击选择数学
+    const matheCatalogBtn = screen.getAllByRole("button", { name: "数学 (Mathe)" })[0];
+    fireEvent.click(matheCatalogBtn);
+
+    // 目录关闭并成功切换
+    expect(screen.queryByText("高中全科学科星系总录")).not.toBeInTheDocument();
+  });
 });
 
