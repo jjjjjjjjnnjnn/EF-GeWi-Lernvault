@@ -43,7 +43,7 @@
 - **S8 笔记生产** — [施工宪法/波次台账](Lernbaum/00-Notenproduktion-Plan.md) · [**S8 新增笔记索引（224 篇，按学科）**](S8-Noten-Index.md) · 模板：[Wissensnotiz-Template](../Templates/Wissensnotiz-Template.md) · 官方源（本地 `_Downloads/`，不进 git）：[Download-Quellen](Download-Quellen.md)
 - **阻塞项** — [**Blocker-Register（统一台账，唯一真相源）**](Blocker-Register.md) · [**Lehrkraft-Anfragen（可直接转发的德语问询稿）**](Lehrkraft-Anfragen.md)
 - **四套 Abitur 任务包（P1–P4，共 22 份）** — [**Pruefungspakete-Uebersicht（总入口：80:20 BE 口径 + 15 分换算表 + 三轮打法）**](Pruefungspakete-Uebersicht.md)
-- **全新视觉/UI重构共创** — [**UI-Redesign-Exploration-and-External-AI-Brief（外部 AI 自由设计任务书与 5 大范式规范）**](UI-Redesign-Exploration-and-External-AI-Brief.md) · [**UI-Interactive-Game-Design-Plan（十科课程交互游戏化设计与外部 AI 任务分配总纲）**](UI-Interactive-Game-Design-Plan.md) · [**PROJECT-DESIGN-GUIDELINES（项目设计方案与架构策略全景指南，AI复刻与扩展必读）**](../PROJECT-DESIGN-GUIDELINES.md) · [**PHET-CONVERSION-BATCH-SOP（PhET 仿真器批量重构与外部 AI 自审核手册）**](PHET-CONVERSION-BATCH-SOP.md) · [**GEISTESWISSENSCHAFTEN-INTERACTIVE-PEDAGOGY-PLAN（文科交互教学调研与 GeWi-Labor 24款工坊总纲）**](GEISTESWISSENSCHAFTEN-INTERACTIVE-PEDAGOGY-PLAN.md) · [**Course-Zone-SkillTree-Roadmap（课程专区学科图谱与前置解锁技能树全景路线图）**](Course-Zone-SkillTree-Roadmap.md)
+- **全新视觉/UI重构共创** — [**UI-Redesign-Exploration-and-External-AI-Brief（外部 AI 自由设计任务书与 5 大范式规范）**](UI-Redesign-Exploration-and-External-AI-Brief.md) · [**UI-Interactive-Game-Design-Plan（十科课程交互游戏化设计与外部 AI 任务分配总纲）**](UI-Interactive-Game-Design-Plan.md) · [**PROJECT-DESIGN-GUIDELINES（项目设计方案与架构策略全景指南，AI复刻与扩展必读）**](../PROJECT-DESIGN-GUIDELINES.md) · [**PHET-CONVERSION-BATCH-SOP（PhET 仿真器批量重构与外部 AI 自审核手册）**](PHET-CONVERSION-BATCH-SOP.md) · [**GEISTESWISSENSCHAFTEN-INTERACTIVE-PEDAGOGY-PLAN（文科交互教学调研与 GeWi-Labor 24款工坊总纲）**](GEISTESWISSENSCHAFTEN-INTERACTIVE-PEDAGOGY-PLAN.md) · [**Course-Zone-SkillTree-Roadmap（课程专区学科图谱与前置解锁技能树全景路线图）**](Course-Zone-SkillTree-Roadmap.md) · [**Extensible-Knowledge-Graph-Architecture（学科知识图谱与可插拔技能树架构逻辑与扩展规约）**](Extensible-Knowledge-Graph-Architecture.md) · [**EXTERNAL-AI-KNOWLEDGE-GRAPH-EXPANSION-SOP（全学科知识图谱非线性批量扩充发卷SOP）**](EXTERNAL-AI-KNOWLEDGE-GRAPH-EXPANSION-SOP.md) · [**presets/README（十科行星图谱预设契约：星区·轨道配额·21个冻结ID·防死锁不变量）**](presets/README.md)
 
 ## 考试包 P1–P4（2026-09-26 入库，共 22 份）
 
@@ -276,7 +276,9 @@
 - [2026-10-07-home-dashboard-linear-duolingo-refactoring](Journal/2026-10-07-home-dashboard-linear-duolingo-refactoring.md) — **主页仪表盘德式极简成长探索总台重构**：二分屏动线+德国会考Notenpunkte分阶刻度+失分点雷达图与诊断抽屉
 - [2026-10-07-dashboard-mascot-rollback](Journal/2026-10-07-dashboard-mascot-rollback.md) — **吉祥物嵌入与总台重构回退记录**：依据用户实测审查，移除低多边形小狐狸及伴学桌宠，完全回退恢复至经典的德国学术功能主义黑白纸墨总台
 - [2026-10-08-wissensbasis-modularitaet](Journal/2026-10-08-wissensbasis-modularitaet.md) — **知识库框架模块化与导入导出总台落地**：解耦可扩展知识库仓储单例+对标BiliNote的FachRegistry插件体系+全格式导入导出+Tufte黑白纸墨管理总台+门禁全绿（454单测/build/vault-check PASS）
-- [2026-10-08-fach-bereich-workspace-demo](Journal/2026-10-08-fach-bereich-workspace-demo.md) — **学科专区一站式空间化工作台落成与架构重组验证**：通俗直观四大分类（知识笔记/抽认卡片/实验与教具/模拟真题）+10科药丸切换+行动推荐条+门禁全绿（459单测/build/vault-check PASS）
+- [2026-10-08-planetary-gravitational-graph-and-quality-gate](Journal/2026-10-08-planetary-gravitational-graph-and-quality-gate.md) — **行星引力发散式知识星系、多维分类标记与自动化质量门禁体系落地**：同心引力轨道+星区辐射+大学先修无上限扩充+JSON导入导出中心+Python自动化质量门禁
+- [2026-10-08-planetary-astrolabe-visual-redesign](Journal/2026-10-08-planetary-astrolabe-visual-redesign.md) — **行星引力图星盘测天仪 (Astrolabe Star Atlas) 视觉重塑与学术排版升级**：消除极坐标与方格冲突+真行星天体星核与吸积光环+外向辐射学术名牌+24齿星盘太阳核心与动态精通进度弧
+- [2026-10-08-planetary-graph-ten-subject-expansion](Journal/2026-10-08-planetary-graph-ten-subject-expansion.md) — **十科行星引力图谱批量扩张至 712 节点**：预设契约冻结+结构不变量自检器+编译期图谱接入+防漂移守卫测试；21 个既有节点 ID 逐字保留，进度零丢失
 - 约定：文件名 `YYYY-MM-DD-<thema>.md`，头部frontmatter（`fach`可空，`tags: [EF, Meta]`）。
 
 
