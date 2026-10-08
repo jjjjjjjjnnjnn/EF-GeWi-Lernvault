@@ -100,8 +100,6 @@ export const SubjectWorkspace: React.FC<SubjectWorkspaceProps> = ({
   const [flippedCardId, setFlippedCardId] = useState<string | null>(null);
   const [zoomedCard, setZoomedCard] = useState<KnowledgeCard | null>(null);
   const [isCatalogCollapsed, setIsCatalogCollapsed] = useState(false);
-  const [isFullWidthReading, setIsFullWidthReading] = useState(true);
-  const [fontSizeLevel, setFontSizeLevel] = useState<"sm" | "base" | "lg">("base");
 
   // 6. 当外部学科改变时，如当前选中笔记不属于该学科则自动同步
   useEffect(() => {
@@ -288,97 +286,33 @@ export const SubjectWorkspace: React.FC<SubjectWorkspaceProps> = ({
               </div>
             </aside>
 
-            {/* 右栏：长文档精读区 (独立滚动 + 工具栏 + 排版宽度/字号调节) */}
-            <section className="flex-1 min-w-0 flex flex-col h-full overflow-hidden bg-[var(--paper)]">
+            {/* 右栏：长文档精读区 (独立垂直滚动，无冗余工具栏) */}
+            <section className="relative flex-1 min-w-0 flex flex-col h-full overflow-hidden bg-[var(--paper)]">
+              {isCatalogCollapsed && (
+                <button
+                  type="button"
+                  onClick={() => setIsCatalogCollapsed(false)}
+                  title={de ? "Menü ausklappen" : "展开目录"}
+                  className="absolute top-3 left-3 z-10 rounded border border-[var(--line)] bg-[var(--surface)] p-1 text-[var(--gray)] hover:text-[var(--ink)] cursor-pointer"
+                >
+                  <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5">
+                    <path d="M5 3l6 5-6 5" />
+                  </svg>
+                </button>
+              )}
+
               {activeNote ? (
-                <>
-                  {/* 阅读器顶部控制条 */}
-                  <div className="flex items-center justify-between gap-3 border-b border-[var(--line)] bg-[var(--surface)] px-4 py-2 shrink-0">
-                    <div className="flex items-center gap-2 min-w-0">
-                      {isCatalogCollapsed && (
-                        <button
-                          type="button"
-                          onClick={() => setIsCatalogCollapsed(false)}
-                          title={de ? "Menü ausklappen" : "展开目录"}
-                          className="rounded border border-[var(--line)] p-1 text-[var(--gray)] hover:text-[var(--ink)] cursor-pointer shrink-0"
-                        >
-                          <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5">
-                            <path d="M5 3l6 5-6 5" />
-                          </svg>
-                        </button>
-                      )}
-                      <span className="font-mono text-[11px] text-[var(--gray)] truncate">
-                        {activeNote.path.toUpperCase()}
-                      </span>
-                    </div>
+                <div className="flex-1 min-h-0 overflow-y-auto px-6 py-6 sm:px-10 lg:px-14">
+                  <div className="space-y-4 max-w-none">
+                    <h2 className="font-serif text-2xl font-bold tracking-tight text-[var(--ink)]">
+                      {activeNote.thema}
+                    </h2>
 
-                    <div className="flex items-center gap-2 shrink-0">
-                      {/* 字号缩放 */}
-                      <div className="flex items-center border border-[var(--line)] rounded overflow-hidden">
-                        <button
-                          type="button"
-                          onClick={() => setFontSizeLevel("sm")}
-                          className={`px-1.5 py-0.5 text-[10px] font-mono cursor-pointer ${fontSizeLevel === "sm" ? "bg-[var(--ink)] text-[var(--paper)]" : "text-[var(--gray)] hover:text-[var(--ink)]"}`}
-                        >
-                          A-
-                        </button>
-                        <button
-                          type="button"
-                          onClick={() => setFontSizeLevel("base")}
-                          className={`px-1.5 py-0.5 text-[10px] font-mono cursor-pointer ${fontSizeLevel === "base" ? "bg-[var(--ink)] text-[var(--paper)]" : "text-[var(--gray)] hover:text-[var(--ink)]"}`}
-                        >
-                          A
-                        </button>
-                        <button
-                          type="button"
-                          onClick={() => setFontSizeLevel("lg")}
-                          className={`px-1.5 py-0.5 text-[10px] font-mono cursor-pointer ${fontSizeLevel === "lg" ? "bg-[var(--ink)] text-[var(--paper)]" : "text-[var(--gray)] hover:text-[var(--ink)]"}`}
-                        >
-                          A+
-                        </button>
-                      </div>
-
-                      {/* 宽度切换：居中 800px vs 100% 全宽 */}
-                      <button
-                        type="button"
-                        onClick={() => setIsFullWidthReading(!isFullWidthReading)}
-                        className="rounded border border-[var(--line)] px-2 py-0.5 font-mono text-[11px] text-[var(--gray)] hover:text-[var(--ink)] cursor-pointer"
-                        title={de ? "Breite umschalten" : "切换排版宽度"}
-                      >
-                        {isFullWidthReading ? (de ? "Breite: 100%" : "全宽排版") : (de ? "Breite: Standard" : "居中排版")}
-                      </button>
-
-                      {/* 在文库全屏阅读 */}
-                      <button
-                        type="button"
-                        onClick={() =>
-                          onNavigateToTab?.("library", {
-                            fach: activeNote.fach,
-                            noteId: activeNote.id,
-                          })
-                        }
-                        className="rounded border border-[var(--line)] px-2 py-0.5 font-mono text-[11px] text-[var(--ink)] hover:border-[var(--accent)] hover:text-[var(--accent)] cursor-pointer"
-                      >
-                        {de ? "Im Vollbild-Leser öffnen ->" : "在文库全屏阅读 ->"}
-                      </button>
+                    <div className="prose max-w-none space-y-3 text-sm leading-relaxed">
+                      <Blocks blocks={activeNote.blocks} pureGerman={de} />
                     </div>
                   </div>
-
-                  {/* 文章正文滚动主区 (独立垂直滚动) */}
-                  <div className="flex-1 min-h-0 overflow-y-auto px-6 py-6 sm:px-10 lg:px-14">
-                    <div className={`${isFullWidthReading ? "max-w-none" : "max-w-3xl mx-auto"} space-y-4`}>
-                      <h2 className="font-serif text-2xl font-bold tracking-tight text-[var(--ink)]">
-                        {activeNote.thema}
-                      </h2>
-
-                      <div className={`prose max-w-none space-y-3 ${
-                        fontSizeLevel === "lg" ? "text-base leading-relaxed" : fontSizeLevel === "sm" ? "text-xs leading-normal" : "text-sm leading-relaxed"
-                      }`}>
-                        <Blocks blocks={activeNote.blocks} pureGerman={de} />
-                      </div>
-                    </div>
-                  </div>
-                </>
+                </div>
               ) : (
                 <div className="flex h-full items-center justify-center p-8 text-center text-xs text-[var(--gray)] font-mono">
                   {de ? "Keine Notiz ausgewählt." : "请在左侧选择需要研读的考点笔记。"}

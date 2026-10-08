@@ -91,7 +91,7 @@ describe("SubjectWorkspace (学科专区/学科主页) 独立测试", () => {
     expect(screen.getByText("背面")).toBeInTheDocument();
   });
 
-  it("supports collapsing and expanding the note catalog panel and toggling width", () => {
+  it("supports collapsing and expanding the note catalog panel", () => {
     render(<SubjectWorkspace currentFach="SoWi" lang="zh" />);
 
     // 点击收起目录按钮
@@ -105,12 +105,6 @@ describe("SubjectWorkspace (学科专区/学科主页) 独立测试", () => {
     const expandBtn = screen.getByTitle("展开目录");
     fireEvent.click(expandBtn);
     expect(screen.getByTitle("收起目录")).toBeInTheDocument();
-
-    // 切换排版宽度
-    const widthBtn = screen.getByTitle("切换排版宽度");
-    expect(widthBtn.textContent).toContain("全宽排版");
-    fireEvent.click(widthBtn);
-    expect(widthBtn.textContent).toContain("居中排版");
   });
 
   it("supports opening zoomed modal for flashcards in Tab 2", () => {
