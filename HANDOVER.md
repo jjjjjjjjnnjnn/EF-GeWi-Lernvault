@@ -20,26 +20,35 @@
 - **文科交互教学与工坊总纲**：[`00_META/GEISTESWISSENSCHAFTEN-INTERACTIVE-PEDAGOGY-PLAN.md`](00_META/GEISTESWISSENSCHAFTEN-INTERACTIVE-PEDAGOGY-PLAN.md)（**文科可探索解释与 GeWi-Labor 24款工坊建设总纲：博弈系统、道德天平、论证树、漫画透镜、戏剧张力与音乐动机**）。
 - 目标：德国 NRW Gymnasium EF 十科笔试/口试提分，中德双语，**完全离线**。
 - **内容铁律**：所有题目材料只能来自用户自己的笔记原文 —— **超纲率 = 0**。
-- **当前规模**：笔记 **412** · Anki 卡片 **1942** · 互动课程 **356 篇**（`Lernreise/`，十科全覆盖，含 Lesson-v3 全量高阶微课与多学科学术解剖台）· 术语表 **946 行** · 十科 Abi-Baum 应试树 **403 节点** · 考纲体系（NRW 十科 + 中国理科四科 + 中德映射）· 本地真题池 **760 份 PDF (2024–2026 全科 Klausuren + Vorgaben)**。
+- **当前规模**：笔记 **415** · Anki 卡片 **1942** · 互动课程 **356 篇**（`Lernreise/`，十科全覆盖，含 Lesson-v3 全量高阶微课与多学科学术解剖台）· 术语表 **946 行** · 十科图谱 712+ 节点 · 考纲体系（NRW 十科 + 中国理科四科 + 中德映射）· 本地真题池 **760 份 PDF (2024–2026 全科 Klausuren + Vorgaben)**。
 
 ---
 
 ---
 
-## 当前状态（2026-10-08 最新里程碑与交接就绪）
+## 当前状态（2026-10-09 最新里程碑与交接就绪）
 
-- ✅ **Phase 2.7 课程流水线引擎与书本到趣味互动课程集生成工坊落地（2026-10-08 最新交付）**：
-  - **书籍大纲解构与战役世界观引擎（`coursePipeline.ts`）**：支持多级章节与列表大纲解析，自动生成宏大战役背景与高紧迫度危机情境 Hook，将枯燥教科书解构为好玩的 RPG 关卡；
-  - **16 款仿真教具精准装配与 8 步微课编译器**：自动为关卡匹配魔法四角沙盘、伦理辩证天平、切线逼近滑块等教具，产出符合 `Lesson-v3` 规范的微课 Markdown，100% 兼容原生 `parseReiseFile` 解析与关卡启动；
-  - **课程工坊交互界面（`CoursePipelineModal.tsx`）与顶栏入口**：Tufte 黑白纸墨双栏工作台，内置经典教材预设（SoWi/Philo/Mathe/Bio）、关卡战役地图（Quest Map）、Markdown 源码复制与研习室一键开课；顶栏增设「课程工坊」按钮，Palette 注册快捷动作 `P`；
-  - **阅读区工具栏极致精简**：根据真实视口反馈彻底移除 `SubjectWorkspace` 中冗余的长文阅读操作条，释放阅读视界；
-  - **工程门禁**：`coursePipeline.test.ts` 4/4、`CoursePipelineModal.test.tsx` 4/4 绿灯、`npx tsc -b` 0 报错、`npm run build` 打包通过、`python scripts/vault-check.py` PASS。
+- ✅ **Phase 3.0 十科可插拔知识图谱与技能树深度演进完成（2026-10-08 ~ 2026-10-09 最新全面交付）**：
+  - **十科图谱全量扩张至 712 节点**：涵盖 SoWi, Mathe, Philo, Bio, Chemie, Physik, Deutsch, Englisch, Musik, Sport，通过预设契约冻结与懒排布（`registerLazy`）机制，根除性能回归；
+  - **双模式图谱重构（行星引力星系 vs 多泳道科技树）**：
+    - 「行星引力星盘（Astrolabe）」：极坐标辐射排布、真天体星核与吸积光环、外向学术名牌、分类扇区动态甜甜圈网格微透空间底衬；
+    - 「横向多泳道科技树（Laned Tech Tree）」：横向按二级分类划定领域泳道，纵深分为 5 大递进阶段（SEK I ➔ EF ➔ Q1 ➔ Q2 ➔ Uni），贝塞尔有向曲线连接前置依赖；
+  - **因果拓扑距离衰减机制（Topological Distance Decay）**：
+    - 悬停或点击节点触发 DAG 双向 BFS 搜索，实时计算图距离 $d$；
+    - $d=0$ 核心焦点高亮；$d=1$ 紧邻前置/后继加粗连线并标记 `[ ← 前置 ]` / `[ → 直接解锁 ]`；$d \ge 2$ 梯度衰减弱化，根除蜘蛛网视线折返；
+    - 背景未激活节点保持 `0.30` 微弱对比度，保留宏观森林空间定位感；
+  - **右侧知识抽屉线性推进清单（Kausal-Lernpfad Progression Flow）**：
+    - 抽屉顶部将因果链展平为单向有序步骤（Step 1 前置基石 ➔ 当前焦点 ➔ 进阶解锁）；
+    - 支持交互式一键点击跳转与画布居中；
+  - **高对比三态正反馈与 Tufte 纯黑白规范**：已掌握（`--paper-subtle` 质感纸面底色 + 墨黑粗条 + 手绘矢量勾）、可攻坚（纯白双线框 + 墨瞳核点）、前置锁定（虚线框 + 纯矢量锁标），零 Emoji；
+  - **自由交互支持**：节点支持自由拖拽与一键复位、双指捏合与鼠标滚轮缩放、单行分类 Chip 平滑滚动、无遮挡纯净单行学科翻页器；
+  - **工程门禁全绿**：`SkillTreeCanvas.test.tsx` 12/12、`modules.test.tsx` 23/23、`npx tsc -b` 0 报错、`vault-check.py` 357 索引全绿。
 
-- 🎯 **Phase 3.0 规划中主线：课程专区与前置解锁技能树系统（2026-10-08 架构路线图已定稿）**：
-  - **开源生态调研与选型**：深度对标 Roadmap.sh、Boot.dev、Duolingo、SkillTreePlatform，确立轻量 DAG 有向无环图数据结构与零新增 npm 依赖的原生 SVG 图形学渲染；
-  - **前置依赖解锁状态机**：设计 `locked` $\to$ `available` $\to$ `in_progress` $\to$ `mastered` 四态流转算法与前置依赖判定门禁；
-  - **双模式图谱可视化**：规划「RPG 线性通关技能树」与「极坐标发散蜘蛛网/星云图谱」双模态；
-  - **全景方案文档落地**：产出 [`00_META/Course-Zone-SkillTree-Roadmap.md`](00_META/Course-Zone-SkillTree-Roadmap.md)，完成四步研发流程与四阶段实施路线图规划。
+- ✅ **Phase 2.7 课程流水线引擎与书本到趣味互动课程集生成工坊落地（2026-10-08 交付）**：
+  - **书籍大纲解构与战役世界观引擎（`coursePipeline.ts`）**：支持多级章节与列表大纲解析，自动生成宏大战役背景与高紧迫度危机情境 Hook，将教科书解构为好玩的 RPG 关卡；
+  - **16 款仿真教具精准装配与 8 步微课编译器**：自动为关卡匹配魔法四角沙盘、伦理辩证天平、切线逼近滑块等教具，产出符合 `Lesson-v3` 规范的微课 Markdown；
+  - **课程工坊交互界面（`CoursePipelineModal.tsx`）与顶栏入口**：Tufte 黑白纸墨双栏工作台，内置经典教材预设与一键开课；
+  - **工程门禁**：`coursePipeline.test.ts` 4/4、`CoursePipelineModal.test.tsx` 4/4 绿灯、`npx tsc -b` 0 报错、`python scripts/vault-check.py` PASS。
 
 - ✅ **Phase 2.5 面向 Gymnasium Oberstufe 严肃学习平台定位重构与视觉降噪收官（2026-10-07 交付）**：
   - **语言体系去页游化**：全面清除“领取首战增益 +50XP”、“靶向弱项消除处方”等劣质页游与医疗黑话，重构为主打高中生自主掌控的「今日 15 分钟专注块」、「开始今日 15 分钟专注」与「今日待办攻坚任务」，任务明晰标示预计耗时（~5 min / ~8 min / ~10 min）；
