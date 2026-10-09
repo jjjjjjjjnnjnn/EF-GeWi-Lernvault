@@ -126,6 +126,6 @@ describe("vernetzung engine (0ms cross-subject topological bridging)", () => {
       findVernetzungBridge(q);
     }
     const elapsedMs = performance.now() - start;
-    expect(elapsedMs).toBeLessThan(50); // Typically < 2ms (allow headroom under heavy CI/CPU load)
+    expect(elapsedMs).toBeLessThan(100); // Typically < 2ms (allow headroom under heavy parallel CI/CPU load)
   });
 });

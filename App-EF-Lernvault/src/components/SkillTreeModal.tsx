@@ -69,7 +69,8 @@ export function SkillTreeModal({
             type="button"
             onClick={onClose}
             className="flex items-center justify-center w-7 h-7 rounded-[var(--radius)] border border-[var(--line)] hover:border-[var(--ink)] hover:bg-[var(--paper-subtle)] transition-colors cursor-pointer"
-            aria-label={de ? "Schließen" : "关闭"}
+            aria-label={de ? "Modal schließen" : "关闭模态窗"}
+            data-testid="skill-tree-modal-close"
           >
             <svg
               width="14"

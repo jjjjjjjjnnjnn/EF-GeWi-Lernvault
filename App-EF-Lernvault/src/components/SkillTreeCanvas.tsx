@@ -2,6 +2,7 @@ import { useState, useMemo, useCallback, useRef, useEffect } from "react";
 import { resolveNodeLanguage, type Lang, type NodeLanguageMode } from "../i18n";
 import { AllSubjectsMacroView } from "./AllSubjectsMacroView";
 import { estimateVisualTextWidth, truncateTextToVisualWidth } from "../utils/svgTypography";
+import { fuzzyMatchNode } from "../utils/fuzzySearch";
 import {
   graphRegistry,
   computeGraphUnlockStates,
@@ -134,31 +135,11 @@ export function SkillTreeCanvas({
   // 4.1 用户自定义移动节点坐标记录 (nodeId -> { x, y })
   const [customNodePositions, setCustomNodePositions] = useState<Map<string, { x: number; y: number }>>(() => new Map());
 
-  // 4.2 学科顶栏分页状态
-  const [subjectPage, setSubjectPage] = useState<number>(() => {
-    const allSubs = graphRegistry.listSubjects();
-    const sIndex = allSubs.findIndex((s) => s.fach.toLowerCase() === (initialFach || "sowi").toLowerCase());
-    return sIndex >= 0 ? Math.floor(sIndex / 5) : 0;
-  });
-
-  // 4.3 鼠标悬停聚焦节点 ID (用于因果链聚焦与全局压暗降噪)
+  // 4.2 鼠标悬停聚焦节点 ID (用于因果链聚焦与全局压暗降噪)
   const [hoveredNodeId, setHoveredNodeId] = useState<string | null>(null);
 
-  // 4.4 节点语言展示模式 (de: 德语考纲优先 | bilingual: 双语对照 | zh: 中文理解优先)
-  const [nodeLangMode, setNodeLangMode] = useState<NodeLanguageMode>(() => {
-    if (typeof window !== "undefined") {
-      const saved = localStorage.getItem("skill-tree-node-lang-mode") as NodeLanguageMode;
-      if (saved === "de" || saved === "zh" || saved === "bilingual") return saved;
-    }
-    return (lang as string) === "de" ? "de" : "zh";
-  });
-
-  const handleSetNodeLangMode = useCallback((mode: NodeLanguageMode) => {
-    setNodeLangMode(mode);
-    if (typeof window !== "undefined") {
-      localStorage.setItem("skill-tree-node-lang-mode", mode);
-    }
-  }, []);
+  // 4.3 节点语言展示模式：统一由全局语言设置驱动 (德语模式下 100% 德语考纲规范，中文模式下中文理解优先)
+  const nodeLangMode: NodeLanguageMode = (lang as string) === "de" ? "de" : "zh";
 
   // 5. 画布平移缩放视口
   const [zoom, setZoom] = useState<number>(0.95);
@@ -216,11 +197,6 @@ export function SkillTreeCanvas({
       setCustomNodePositions(new Map());
       if (fach === "ALL") {
         return;
-      }
-      const allSubs = graphRegistry.listSubjects();
-      const sIndex = allSubs.findIndex((s) => s.fach.toLowerCase() === fach.toLowerCase());
-      if (sIndex >= 0) {
-        setSubjectPage(Math.floor(sIndex / 5));
       }
       const graph = graphRegistry.get(fach);
       if (graph) {
@@ -445,7 +421,7 @@ export function SkillTreeCanvas({
     return new Map(layoutedNodes.map((n) => [n.id, n]));
   }, [layoutedNodes]);
 
-  // 判定节点是否满足当前筛选高亮条件
+  // 判定节点是否满足当前筛选高亮条件 (支持星区分类、标签、全语言模糊检索)
   const isNodeMatchingFilter = useCallback(
     (node: KnowledgeNode): boolean => {
       if (selectedCategory !== "ALL" && node.category !== selectedCategory) {
@@ -455,15 +431,7 @@ export function SkillTreeCanvas({
         return false;
       }
       if (searchQuery.trim()) {
-        const q = searchQuery.trim().toLowerCase();
-        const inZh = node.titleZH.toLowerCase().includes(q);
-        const inDe = node.titleDE.toLowerCase().includes(q);
-        const inFormula = node.keyFormulaOrSentence?.toLowerCase().includes(q) ?? false;
-        const inFallacy = node.commonFallacy?.toLowerCase().includes(q) ?? false;
-        const inTags = node.tags?.some((t) => t.toLowerCase().includes(q)) ?? false;
-        if (!inZh && !inDe && !inFormula && !inFallacy && !inTags) {
-          return false;
-        }
+        return fuzzyMatchNode(node, searchQuery).matched;
       }
       return true;
     },
@@ -1172,276 +1140,6 @@ export function SkillTreeCanvas({
       className={`relative flex flex-col w-full h-full bg-[var(--surface)] text-[var(--ink)] overflow-hidden ${className}`}
       data-testid="skill-tree-canvas-container"
     >
-      {/* 顶部主控制栏：学科选择、翻页/总录展开、进度、模式切换与操作 (强制单行不折行紧凑微型 HUD) */}
-      <div className="relative flex items-center justify-between border-b border-[var(--line)] px-3 py-1.5 bg-[var(--surface)] shrink-0 gap-2.5 z-30 overflow-x-auto no-scrollbar flex-nowrap min-h-[38px]">
-        <div className="flex items-center gap-1.5 shrink-0 flex-nowrap">
-          <span className="font-mono text-xs text-[var(--gray)] font-medium shrink-0">
-            {de ? "Fach:" : "学科:"}
-          </span>
-
-          {/* “所有学科” 全科学业总台模式入口 */}
-          <button
-            type="button"
-            onClick={() => handleSelectFach("ALL")}
-            aria-pressed={selectedFach === "ALL"}
-            className={`h-7 px-3 rounded-[var(--radius)] text-xs font-mono font-bold whitespace-nowrap shrink-0 transition-all cursor-pointer flex items-center gap-1.5 ${
-              selectedFach === "ALL"
-                ? "bg-[var(--ink)] text-[var(--surface)] shadow-none"
-                : "border border-[var(--line)] bg-[var(--surface)] text-[var(--ink)] hover:bg-[var(--paper-subtle)]"
-            }`}
-            title={de ? "Alle Fächer (Gesamt-Kosmos)" : "所有学科 (全科学业宏观星图与跨学科总台)"}
-            data-testid="skill-tree-all-subjects-btn"
-          >
-            <svg width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.6">
-              <circle cx="8" cy="8" r="7" strokeDasharray="2 2" />
-              <circle cx="8" cy="8" r="3" fill="currentColor" />
-              <path d="M8 1v2M8 13v2M1 8h2M13 8h2" />
-            </svg>
-            <span>{de ? "Alle Fächer" : "所有学科"}</span>
-          </button>
-
-          {/* 翻页与当前页单行学科按钮 */}
-          <div className="flex items-center gap-1 shrink-0">
-            <button
-              type="button"
-              onClick={() => setSubjectPage((p) => Math.max(0, p - 1))}
-              disabled={subjectPage === 0}
-              className="w-6 h-7 flex items-center justify-center rounded-[var(--radius)] border border-[var(--line)] bg-[var(--surface)] text-xs font-mono text-[var(--ink)] disabled:opacity-30 disabled:cursor-not-allowed hover:bg-[var(--paper-subtle)] cursor-pointer"
-              title={de ? "Vorherige Fächer-Seite" : "上一页学科"}
-            >
-              ‹
-            </button>
-
-            <div className="flex items-center gap-1 flex-nowrap">
-              {graphRegistry.listSubjects().slice(subjectPage * 5, (subjectPage + 1) * 5).map((sub) => {
-                const isSelected = selectedFach.toLowerCase() === sub.fach.toLowerCase();
-                return (
-                  <button
-                    key={sub.fach}
-                    type="button"
-                    onClick={() => handleSelectFach(sub.fach)}
-                    aria-pressed={isSelected}
-                    className={`h-7 px-2.5 rounded-[var(--radius)] text-xs font-mono font-medium whitespace-nowrap shrink-0 transition-all cursor-pointer flex items-center ${
-                      isSelected
-                        ? "bg-[var(--ink)] text-[var(--surface)] font-bold shadow-none"
-                        : "bg-[var(--surface)] border border-[var(--line)] text-[var(--ink)] hover:bg-[var(--paper-subtle)]"
-                    }`}
-                  >
-                    {de ? sub.nameDE : sub.nameZH}
-                  </button>
-                );
-              })}
-            </div>
-
-            <button
-              type="button"
-              onClick={() => setSubjectPage((p) => Math.min(Math.ceil(graphRegistry.listSubjects().length / 5) - 1, p + 1))}
-              disabled={subjectPage >= Math.ceil(graphRegistry.listSubjects().length / 5) - 1}
-              className="w-6 h-7 flex items-center justify-center rounded-[var(--radius)] border border-[var(--line)] bg-[var(--surface)] text-xs font-mono text-[var(--ink)] disabled:opacity-30 disabled:cursor-not-allowed hover:bg-[var(--paper-subtle)] cursor-pointer"
-              title={de ? "Nächste Fächer-Seite" : "下一页学科"}
-            >
-              ›
-            </button>
-            <span className="font-mono text-[10px] text-[var(--gray)] tabular-nums shrink-0 ml-0.5">
-              {subjectPage + 1}/{Math.max(1, Math.ceil(graphRegistry.listSubjects().length / 5))}
-            </span>
-          </div>
-
-          <button
-            type="button"
-            onClick={() => setIsAddSubjectOpen(true)}
-            className="flex items-center gap-1 h-7 px-2 rounded-[var(--radius)] border border-[var(--line)] hover:border-[var(--ink)] text-xs font-mono text-[var(--gray)] hover:text-[var(--ink)] transition-colors cursor-pointer whitespace-nowrap"
-            title={de ? "Neues Fach anlegen" : "新增学科板块"}
-          >
-            <svg {...iconProps}>
-              <path d="M8 3.5v9M3.5 8h9" />
-            </svg>
-            <span>{de ? "+ Fach" : "+ 学科"}</span>
-          </button>
-        </div>
-
-        {/* 右侧：模式切换、进度与操作动作 (单行不折叠) */}
-        <div className="flex items-center gap-2.5 text-xs font-mono shrink-0 flex-nowrap ml-auto">
-          {/* 自定义拖拽复位按钮 (当有节点被移动时高亮呈现) */}
-          {customNodePositions.size > 0 && (
-            <button
-              type="button"
-              onClick={() => setCustomNodePositions(new Map())}
-              className="flex items-center gap-1 h-7 px-2 rounded-[var(--radius)] bg-[var(--ink)] text-[var(--surface)] text-xs font-mono font-bold hover:opacity-90 transition-all cursor-pointer shadow-none whitespace-nowrap shrink-0"
-              title={de ? `Positionen zurücksetzen (${customNodePositions.size})` : `复位所有已移动节点到默认位置 (${customNodePositions.size})`}
-            >
-              <svg {...iconProps} className="w-3.5 h-3.5">
-                <path d="M2.5 8a5.5 5.5 0 1 0 1.6-3.9L2 6.5M2 2.5v4h4" />
-              </svg>
-              <span>{de ? `Reset (${customNodePositions.size})` : `复位 (${customNodePositions.size})`}</span>
-            </button>
-          )}
-
-          {/* 视图模式切换：引力星系 vs 科技树网格 */}
-          <div className="flex items-center border border-[var(--line)] rounded-[var(--radius)] overflow-hidden h-7">
-            <button
-              type="button"
-              onClick={() => setViewMode("planetary")}
-              aria-pressed={viewMode === "planetary"}
-              className={`flex items-center gap-1.5 px-2.5 h-full text-xs cursor-pointer transition-colors ${
-                viewMode === "planetary"
-                  ? "bg-[var(--ink)] text-[var(--surface)] font-bold"
-                  : "bg-[var(--surface)] text-[var(--gray)] hover:text-[var(--ink)]"
-              }`}
-            >
-              <svg width="12" height="12" viewBox="0 0 14 14" fill="none" stroke="currentColor">
-                <circle cx="7" cy="7" r="5.5" strokeWidth="1.2" strokeDasharray="2 2" />
-                <circle cx="7" cy="7" r="2" fill="currentColor" />
-                <circle cx="11.5" cy="7" r="1.2" fill="currentColor" />
-              </svg>
-              <span>{de ? "Planeten-Orbit" : "行星引力星系"}</span>
-            </button>
-            <button
-              type="button"
-              onClick={() => setViewMode("tree")}
-              aria-pressed={viewMode === "tree"}
-              className={`flex items-center gap-1.5 px-2.5 h-full text-xs cursor-pointer transition-colors border-l border-[var(--line)] ${
-                viewMode === "tree"
-                  ? "bg-[var(--ink)] text-[var(--surface)] font-bold"
-                  : "bg-[var(--surface)] text-[var(--gray)] hover:text-[var(--ink)]"
-              }`}
-            >
-              <svg width="12" height="12" viewBox="0 0 14 14" fill="none" stroke="currentColor">
-                <path d="M2 3h4v8H2M6 7h6M12 4v6" strokeWidth="1.2" strokeLinecap="round" />
-                <circle cx="2" cy="7" r="1" fill="currentColor" />
-                <circle cx="12" cy="4" r="1" fill="currentColor" />
-              <circle cx="12" cy="10" r="1" fill="currentColor" />
-            </svg>
-            <span>{de ? "Stufenbaum" : "认知阶梯树"}</span>
-          </button>
-        </div>
-
-        {/* 节点多语言展示模式切换 (DE / Bilingual / ZH) */}
-        <div className="flex items-center border border-[var(--line)] rounded-[var(--radius)] overflow-hidden h-7 shrink-0" data-testid="skill-tree-lang-switcher">
-            <button
-              type="button"
-              onClick={() => handleSetNodeLangMode("de")}
-              aria-pressed={nodeLangMode === "de"}
-              className={`px-2 h-full font-mono text-[11px] cursor-pointer transition-colors ${
-                nodeLangMode === "de"
-                  ? "bg-[var(--ink)] text-[var(--surface)] font-bold"
-                  : "bg-[var(--surface)] text-[var(--gray)] hover:text-[var(--ink)]"
-              }`}
-              title={de ? "Deutsche Fachsprache (Prüfung)" : "德语考纲优先 (Prüfungssprache)"}
-            >
-              DE
-            </button>
-            <button
-              type="button"
-              onClick={() => handleSetNodeLangMode("bilingual")}
-              aria-pressed={nodeLangMode === "bilingual"}
-              className={`px-2 h-full font-mono text-[11px] cursor-pointer transition-colors border-x border-[var(--line)] ${
-                nodeLangMode === "bilingual"
-                  ? "bg-[var(--ink)] text-[var(--surface)] font-bold"
-                  : "bg-[var(--surface)] text-[var(--gray)] hover:text-[var(--ink)]"
-              }`}
-              title={de ? "Zweisprachig (DE · ZH)" : "双语对照 (DE · ZH)"}
-            >
-              DE·ZH
-            </button>
-            <button
-              type="button"
-              onClick={() => handleSetNodeLangMode("zh")}
-              aria-pressed={nodeLangMode === "zh"}
-              className={`px-2 h-full font-mono text-[11px] cursor-pointer transition-colors ${
-                nodeLangMode === "zh"
-                  ? "bg-[var(--ink)] text-[var(--surface)] font-bold"
-                  : "bg-[var(--surface)] text-[var(--gray)] hover:text-[var(--ink)]"
-              }`}
-              title={de ? "Chinesisch zum Verstehen" : "中文理解优先 (Verstehen)"}
-            >
-              ZH
-            </button>
-          </div>
-
-          {/* 宏观学习进度前置状态胶囊 */}
-          <div className="hidden sm:flex items-center gap-2 px-2.5 py-1 rounded-[var(--radius)] border border-[var(--line)] bg-[var(--paper-subtle)] text-xs font-mono">
-            <span className="font-bold tabular-nums text-[var(--ink)]">
-              {progressSummary.masteredNodes}/{progressSummary.totalNodes} ({progressSummary.progressPercent}%)
-            </span>
-            <span className="text-[var(--gray)] text-[10px]">
-              · {progressSummary.totalNodes - progressSummary.masteredNodes} {de ? "gesperrt" : "待攻坚"}
-            </span>
-            <div className="w-12 h-1.5 bg-[var(--line)] rounded-full overflow-hidden ml-0.5">
-              <div
-                className="h-full bg-[var(--ink)] transition-all duration-300"
-                style={{ width: `${progressSummary.progressPercent}%` }}
-              />
-            </div>
-          </div>
-
-          {/* 操作按钮组 */}
-          <div className="flex items-center gap-1.5 border-l border-[var(--line)] pl-3">
-            <button
-              type="button"
-              onClick={openAddNodeModal}
-              className="flex items-center gap-1 h-7 px-2.5 rounded-[var(--radius)] bg-[var(--ink)] text-[var(--surface)] text-xs font-mono hover:opacity-90 transition-opacity cursor-pointer whitespace-nowrap"
-            >
-              <svg {...iconProps}>
-                <path d="M8 3.5v9M3.5 8h9" />
-              </svg>
-              <span>{de ? "Knoten anfügen" : "拼插知识点"}</span>
-            </button>
-
-            {viewMode === "planetary" && (
-              <button
-                type="button"
-                onClick={handleAutoPlanetaryLayout}
-                className="h-7 px-2 rounded-[var(--radius)] border border-[var(--line)] hover:border-[var(--ink)] text-xs text-[var(--ink)] hover:bg-[var(--paper-subtle)] cursor-pointer whitespace-nowrap"
-                title={de ? "Planeten automatisch anordnen" : "一键引力自动排布"}
-              >
-                {de ? "Auto-Layout" : "一键引力排布"}
-              </button>
-            )}
-
-            <button
-              type="button"
-              onClick={openJsonModal}
-              className="h-7 px-2 rounded-[var(--radius)] border border-[var(--line)] hover:border-[var(--ink)] text-xs text-[var(--ink)] hover:bg-[var(--paper-subtle)] cursor-pointer"
-              title={de ? "JSON Import / Export" : "导入或导出 JSON"}
-            >
-              JSON
-            </button>
-
-            {/* 缩放控制器 */}
-            <div className="flex items-center border border-[var(--line)] rounded-[var(--radius)] overflow-hidden h-7">
-              <button
-                type="button"
-                onClick={() => setZoom((z) => Math.min(3.0, +(z + 0.15).toFixed(2)))}
-                className="px-2 h-full text-xs hover:bg-[var(--paper-subtle)] border-r border-[var(--line)] cursor-pointer"
-                title={de ? "Vergrößern" : "放大"}
-              >
-                +
-              </button>
-              <button
-                type="button"
-                onClick={() => setZoom((z) => Math.max(0.25, +(z - 0.15).toFixed(2)))}
-                className="px-2 h-full text-xs hover:bg-[var(--paper-subtle)] border-r border-[var(--line)] cursor-pointer"
-                title={de ? "Verkleinern" : "缩小"}
-              >
-                -
-              </button>
-              <button
-                type="button"
-                onClick={() => {
-                  setZoom(viewMode === "planetary" ? 0.95 : 1.0);
-                  setPan({ x: 20, y: 10 });
-                }}
-                className="px-2 h-full text-[11px] hover:bg-[var(--paper-subtle)] cursor-pointer"
-                title={de ? "Zurücksetzen" : "重置"}
-              >
-                1:1
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-
       {selectedFach === "ALL" ? (
         <AllSubjectsMacroView
           lang={lang}
@@ -1457,85 +1155,221 @@ export function SkillTreeCanvas({
         />
       ) : (
         <>
-          {/* 二级筛选栏：分类星区 Chips、多维标签 Filter 与全文快速检索 (整行单行对齐无折叠紧凑微型 HUD) */}
-          <div className="flex items-center justify-between border-b border-[var(--line)] px-3 py-1 bg-[var(--paper-subtle)] text-xs font-mono gap-2 z-10 shrink-0 min-h-[34px] overflow-x-auto no-scrollbar flex-nowrap">
-        {/* 分类星区筛选 Chips */}
-        <div className="flex items-center gap-1.5 overflow-x-auto no-scrollbar flex-nowrap py-0.5">
-          <span className="text-[var(--gray)] font-medium shrink-0">
-            {de ? "Bereich:" : "星区分类:"}
-          </span>
-          <button
-            type="button"
-            onClick={() => setSelectedCategory("ALL")}
-            className={`h-7 px-2.5 rounded-[var(--radius)] text-xs font-mono whitespace-nowrap shrink-0 cursor-pointer transition-colors flex items-center ${
-              selectedCategory === "ALL"
-                ? "bg-[var(--ink)] text-[var(--surface)] font-bold shadow-none"
-                : "border border-[var(--line)] bg-[var(--surface)] text-[var(--ink)] hover:border-[var(--ink)] hover:bg-[var(--paper-subtle)]"
-            }`}
-          >
-            {de ? "Alle" : "全部分类"}
-          </button>
-          {categoriesList.map((cat) => (
-            <button
-              key={cat}
-              type="button"
-              onClick={() => setSelectedCategory(cat)}
-              className={`h-7 px-2.5 rounded-[var(--radius)] text-xs font-mono whitespace-nowrap shrink-0 cursor-pointer transition-colors flex items-center ${
-                selectedCategory === cat
-                  ? "bg-[var(--ink)] text-[var(--surface)] font-bold shadow-none"
-                  : "border border-[var(--line)] bg-[var(--surface)] text-[var(--ink)] hover:border-[var(--ink)] hover:bg-[var(--paper-subtle)]"
-              }`}
-            >
-              {cat}
-            </button>
-          ))}
-        </div>
+          {/* 单科精炼 HUD 控制栏：星区分类 Chips (左) 与 搜索、标签、复位、视图模式、进度与动作 (右) */}
+          <div className="relative flex items-center justify-between border-b border-[var(--line)] px-3 py-1 bg-[var(--surface)] text-xs font-mono gap-2 z-20 shrink-0 min-h-[38px] overflow-x-auto no-scrollbar flex-nowrap">
+            {/* 左侧：筛选器组 (星区分类与标签，均为点击展开式下拉框，紧凑整洁) */}
+            <div className="flex items-center gap-2.5 shrink-0">
+              {/* 1. 星区分类展开下拉 */}
+              <div className="flex items-center gap-1.5">
+                <span className="text-[var(--gray)] text-xs shrink-0 font-medium">
+                  {de ? "Bereich:" : "星区:"}
+                </span>
+                <select
+                  value={selectedCategory}
+                  onChange={(e) => setSelectedCategory(e.target.value)}
+                  aria-label={de ? "Bereich auswählen" : "选择星区"}
+                  data-testid="filter-category-select"
+                  className="h-7 px-2 border border-[var(--line)] rounded-[var(--radius)] bg-[var(--surface)] text-xs text-[var(--ink)] font-mono cursor-pointer hover:border-[var(--ink)] transition-colors focus:outline-none"
+                >
+                  <option value="ALL">{de ? "Alle Bereiche" : "全部分类"}</option>
+                  {categoriesList.map((cat) => (
+                    <option key={cat} value={cat}>
+                      {cat}
+                    </option>
+                  ))}
+                </select>
+              </div>
 
-        {/* 标签过滤与搜索 */}
-        <div className="flex items-center gap-2 shrink-0 ml-auto">
-          {tagsList.length > 0 && (
-            <div className="flex items-center gap-1">
-              <span className="text-[var(--gray)] text-xs shrink-0">
-                {de ? "Tag:" : "标签:"}
-              </span>
-              <select
-                value={selectedTag}
-                onChange={(e) => setSelectedTag(e.target.value)}
-                className="h-7 px-2 border border-[var(--line)] rounded-[var(--radius)] bg-[var(--surface)] text-xs text-[var(--ink)] font-mono cursor-pointer"
-              >
-                <option value="ALL">{de ? "Alle Tags" : "全部标签"}</option>
-                {tagsList.map((t) => (
-                  <option key={t} value={t}>
-                    {t}
-                  </option>
-                ))}
-              </select>
+              {/* 2. 标签展开下拉 */}
+              {tagsList.length > 0 && (
+                <div className="flex items-center gap-1.5">
+                  <span className="text-[var(--gray)] text-xs shrink-0 font-medium">
+                    {de ? "Tag:" : "标签:"}
+                  </span>
+                  <select
+                    value={selectedTag}
+                    onChange={(e) => setSelectedTag(e.target.value)}
+                    aria-label={de ? "Tag auswählen" : "选择标签"}
+                    data-testid="filter-tag-select"
+                    className="h-7 px-2 border border-[var(--line)] rounded-[var(--radius)] bg-[var(--surface)] text-xs text-[var(--ink)] font-mono cursor-pointer hover:border-[var(--ink)] transition-colors focus:outline-none"
+                  >
+                    <option value="ALL">{de ? "Alle Tags" : "全部标签"}</option>
+                    {tagsList.map((t) => (
+                      <option key={t} value={t}>
+                        {t}
+                      </option>
+                    ))}
+                  </select>
+                </div>
+              )}
             </div>
-          )}
 
-          <div className="relative flex items-center">
-            <input
-              type="text"
-              value={searchQuery}
-              onChange={(e) => setSearchQuery(e.target.value)}
-              placeholder={de ? "Suchen (Titel, Formel...)" : "搜索知识点/公式/考点..."}
-              className="h-7 pl-2.5 pr-6 border border-[var(--line)] rounded-[var(--radius)] bg-[var(--surface)] text-xs font-mono text-[var(--ink)] focus:outline-none focus:border-[var(--ink)] w-48"
-            />
-            {searchQuery && (
-              <button
-                type="button"
-                onClick={() => setSearchQuery("")}
-                className="absolute right-1.5 top-1/2 -translate-y-1/2 text-[var(--gray)] hover:text-[var(--ink)] cursor-pointer flex items-center justify-center"
-                title={de ? "Löschen" : "清空"}
-              >
-                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" stroke="currentColor">
-                  <path d="M2 2l6 6M8 2l-6 6" strokeWidth="1.2" strokeLinecap="round" />
-                </svg>
-              </button>
-            )}
+            {/* 右侧：全语言模糊搜索、复位、视图模式、进度与操作动作 */}
+            <div className="flex items-center gap-2 text-xs font-mono shrink-0 flex-nowrap ml-auto">
+              {/* 搜索框 (支持任意语言/拼音/术语的模糊检索) */}
+              <div className="relative flex items-center">
+                <input
+                  type="text"
+                  value={searchQuery}
+                  onChange={(e) => setSearchQuery(e.target.value)}
+                  placeholder={de ? "Fuzzy-Suche (DE/ZH/Code)..." : "模糊检索 (中/德/公式/代码)..."}
+                  aria-label={de ? "Fuzzy-Suche" : "模糊检索"}
+                  className="h-7 pl-2.5 pr-6 border border-[var(--line)] rounded-[var(--radius)] bg-[var(--surface)] text-xs font-mono text-[var(--ink)] focus:outline-none focus:border-[var(--ink)] w-36 sm:w-48 transition-all placeholder:text-[var(--gray)]"
+                />
+                {searchQuery && (
+                  <button
+                    type="button"
+                    onClick={() => setSearchQuery("")}
+                    className="absolute right-1.5 top-1/2 -translate-y-1/2 text-[var(--gray)] hover:text-[var(--ink)] cursor-pointer flex items-center justify-center p-0.5"
+                    title={de ? "Löschen" : "清空"}
+                  >
+                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" stroke="currentColor">
+                      <path d="M2 2l6 6M8 2l-6 6" strokeWidth="1.2" strokeLinecap="round" />
+                    </svg>
+                  </button>
+                )}
+              </div>
+
+              {/* 自定义拖拽复位按钮 (当有节点被移动时高亮呈现) */}
+              {customNodePositions.size > 0 && (
+                <button
+                  type="button"
+                  onClick={() => setCustomNodePositions(new Map())}
+                  className="flex items-center gap-1 h-7 px-2 rounded-[var(--radius)] bg-[var(--ink)] text-[var(--surface)] text-xs font-mono font-bold hover:opacity-90 transition-all cursor-pointer shadow-none whitespace-nowrap shrink-0"
+                  title={de ? `Positionen zurücksetzen (${customNodePositions.size})` : `复位所有已移动节点到默认位置 (${customNodePositions.size})`}
+                >
+                  <svg {...iconProps} className="w-3.5 h-3.5">
+                    <path d="M2.5 8a5.5 5.5 0 1 0 1.6-3.9L2 6.5M2 2.5v4h4" />
+                  </svg>
+                  <span>{de ? `Reset (${customNodePositions.size})` : `复位 (${customNodePositions.size})`}</span>
+                </button>
+              )}
+
+              {/* 视图模式切换：引力星系 vs 科技树网格 */}
+              <div className="flex items-center border border-[var(--line)] rounded-[var(--radius)] overflow-hidden h-7">
+                <button
+                  type="button"
+                  onClick={() => setViewMode("planetary")}
+                  aria-pressed={viewMode === "planetary"}
+                  aria-label={de ? "Planeten-Orbit" : "行星引力星系"}
+                  className={`flex items-center gap-1.5 px-2.5 h-full text-xs cursor-pointer transition-colors ${
+                    viewMode === "planetary"
+                      ? "bg-[var(--ink)] text-[var(--surface)] font-bold"
+                      : "bg-[var(--surface)] text-[var(--gray)] hover:text-[var(--ink)]"
+                  }`}
+                  title={de ? "Planeten-Orbit" : "行星引力星系"}
+                >
+                  <svg width="12" height="12" viewBox="0 0 14 14" fill="none" stroke="currentColor">
+                    <circle cx="7" cy="7" r="5.5" strokeWidth="1.2" strokeDasharray="2 2" />
+                    <circle cx="7" cy="7" r="2" fill="currentColor" />
+                    <circle cx="11.5" cy="7" r="1.2" fill="currentColor" />
+                  </svg>
+                  <span className="hidden md:inline">{de ? "Planeten-Orbit" : "行星引力星系"}</span>
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setViewMode("tree")}
+                  aria-pressed={viewMode === "tree"}
+                  aria-label={de ? "Stufenbaum" : "认知阶梯树"}
+                  className={`flex items-center gap-1.5 px-2.5 h-full text-xs cursor-pointer transition-colors border-l border-[var(--line)] ${
+                    viewMode === "tree"
+                      ? "bg-[var(--ink)] text-[var(--surface)] font-bold"
+                      : "bg-[var(--surface)] text-[var(--gray)] hover:text-[var(--ink)]"
+                  }`}
+                  title={de ? "Stufenbaum" : "认知阶梯树"}
+                >
+                  <svg width="12" height="12" viewBox="0 0 14 14" fill="none" stroke="currentColor">
+                    <path d="M2 3h4v8H2M6 7h6M12 4v6" strokeWidth="1.2" strokeLinecap="round" />
+                    <circle cx="2" cy="7" r="1" fill="currentColor" />
+                    <circle cx="12" cy="4" r="1" fill="currentColor" />
+                    <circle cx="12" cy="10" r="1" fill="currentColor" />
+                  </svg>
+                  <span className="hidden md:inline">{de ? "Stufenbaum" : "认知阶梯树"}</span>
+                </button>
+              </div>
+
+              {/* 宏观学习进度前置状态胶囊 */}
+              <div className="hidden lg:flex items-center gap-2 px-2.5 py-1 rounded-[var(--radius)] border border-[var(--line)] bg-[var(--paper-subtle)] text-xs font-mono">
+                <span className="font-bold tabular-nums text-[var(--ink)]">
+                  {progressSummary.masteredNodes}/{progressSummary.totalNodes} ({progressSummary.progressPercent}%)
+                </span>
+                <span className="text-[var(--gray)] text-[10px]">
+                  · {progressSummary.totalNodes - progressSummary.masteredNodes} {de ? "gesperrt" : "待攻坚"}
+                </span>
+                <div className="w-12 h-1.5 bg-[var(--line)] rounded-full overflow-hidden ml-0.5">
+                  <div
+                    className="h-full bg-[var(--ink)] transition-all duration-300"
+                    style={{ width: `${progressSummary.progressPercent}%` }}
+                  />
+                </div>
+              </div>
+
+              {/* 操作按钮组 */}
+              <div className="flex items-center gap-1.5 border-l border-[var(--line)] pl-2">
+                <button
+                  type="button"
+                  onClick={openAddNodeModal}
+                  className="flex items-center gap-1 h-7 px-2.5 rounded-[var(--radius)] bg-[var(--ink)] text-[var(--surface)] text-xs font-mono hover:opacity-90 transition-opacity cursor-pointer whitespace-nowrap"
+                >
+                  <svg {...iconProps}>
+                    <path d="M8 3.5v9M3.5 8h9" />
+                  </svg>
+                  <span>{de ? "Knoten anfügen" : "拼插知识点"}</span>
+                </button>
+
+                {viewMode === "planetary" && (
+                  <button
+                    type="button"
+                    onClick={handleAutoPlanetaryLayout}
+                    className="h-7 px-2 rounded-[var(--radius)] border border-[var(--line)] hover:border-[var(--ink)] text-xs text-[var(--ink)] hover:bg-[var(--paper-subtle)] cursor-pointer whitespace-nowrap hidden sm:flex items-center"
+                    title={de ? "Planeten automatisch anordnen" : "一键引力自动排布"}
+                  >
+                    {de ? "Auto-Layout" : "一键排布"}
+                  </button>
+                )}
+
+                <button
+                  type="button"
+                  onClick={openJsonModal}
+                  className="h-7 px-2 rounded-[var(--radius)] border border-[var(--line)] hover:border-[var(--ink)] text-xs text-[var(--ink)] hover:bg-[var(--paper-subtle)] cursor-pointer"
+                  title={de ? "JSON Import / Export" : "导入或导出 JSON"}
+                >
+                  JSON
+                </button>
+
+                {/* 缩放控制器 */}
+                <div className="flex items-center border border-[var(--line)] rounded-[var(--radius)] overflow-hidden h-7">
+                  <button
+                    type="button"
+                    onClick={() => setZoom((z) => Math.min(3.0, +(z + 0.15).toFixed(2)))}
+                    className="px-2 h-full text-xs hover:bg-[var(--paper-subtle)] border-r border-[var(--line)] cursor-pointer"
+                    title={de ? "Vergrößern" : "放大"}
+                  >
+                    +
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => setZoom((z) => Math.max(0.25, +(z - 0.15).toFixed(2)))}
+                    className="px-2 h-full text-xs hover:bg-[var(--paper-subtle)] border-r border-[var(--line)] cursor-pointer"
+                    title={de ? "Verkleinern" : "缩小"}
+                  >
+                    -
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => {
+                      setZoom(viewMode === "planetary" ? 0.95 : 1.0);
+                      setPan({ x: 20, y: 10 });
+                    }}
+                    className="px-2 h-full text-[11px] hover:bg-[var(--paper-subtle)] cursor-pointer"
+                    title={de ? "Zurücksetzen" : "重置"}
+                  >
+                    1:1
+                  </button>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
 
       {/* SVG 主画布 */}
       <div className="relative flex-1 w-full h-full cursor-grab active:cursor-grabbing select-none overflow-hidden touch-none bg-[var(--paper)]">
@@ -1935,7 +1769,7 @@ export function SkillTreeCanvas({
                     fontWeight="bold"
                     fill="var(--ink)"
                   >
-                    {activeGraph.nameZH}
+                    {de ? activeGraph.nameDE : activeGraph.nameZH}
                   </text>
                   <text
                     y="18"
@@ -1944,7 +1778,7 @@ export function SkillTreeCanvas({
                     fontSize="8.5"
                     fill="var(--gray)"
                   >
-                    {`${progressSummary.masteredNodes}/${progressSummary.totalNodes} 精通`}
+                    {`${progressSummary.masteredNodes}/${progressSummary.totalNodes} ${de ? "gemeistert" : "精通"}`}
                   </text>
                 </g>
               </g>
@@ -2361,14 +2195,21 @@ export function SkillTreeCanvas({
                                   {minutesText}
                                 </text>
 
-                                {/* 考点主标题 */}
-                                <text x={cardX + 8} y={cardY + 33} fontFamily="serif" fontSize="11" fontWeight="bold" fill="var(--ink)" className="select-none">
-                                  {displayPrimaryTitle}
-                                </text>
-                                {/* 考点副标题 */}
-                                <text x={cardX + 8} y={cardY + 48} fontFamily="monospace" fontSize="8.5" fill="var(--gray)" className="select-none">
-                                  {displaySecondaryTitle}
-                                </text>
+                                {/* 考点标题 (纯单语模式下智能垂直居中，双语模式下主副双行对齐) */}
+                                {displaySecondaryTitle ? (
+                                  <>
+                                    <text x={cardX + 8} y={cardY + 33} fontFamily="serif" fontSize="11" fontWeight="bold" fill="var(--ink)" className="select-none">
+                                      {displayPrimaryTitle}
+                                    </text>
+                                    <text x={cardX + 8} y={cardY + 48} fontFamily="monospace" fontSize="8.5" fill="var(--gray)" className="select-none">
+                                      {displaySecondaryTitle}
+                                    </text>
+                                  </>
+                                ) : (
+                                  <text x={cardX + 8} y={cardY + 40} fontFamily="serif" fontSize="11.5" fontWeight="bold" fill="var(--ink)" className="select-none">
+                                    {displayPrimaryTitle}
+                                  </text>
+                                )}
                               </g>
                             </g>
                           </>
@@ -2751,28 +2592,43 @@ export function SkillTreeCanvas({
                   </defs>
 
                   <g clipPath={`url(#tree-clip-${node.id})`}>
-                    <text
-                      x="10"
-                      y="44"
-                      fontFamily="serif"
-                      fontSize="12"
-                      fontWeight="bold"
-                      fill="var(--ink)"
-                      className="select-none"
-                    >
-                      {treeDisplayPrimaryTitle}
-                    </text>
-
-                    <text
-                      x="10"
-                      y="63"
-                      fontFamily="monospace"
-                      fontSize="9"
-                      fill="var(--gray)"
-                      className="select-none"
-                    >
-                      {treeDisplaySecondaryTitle}
-                    </text>
+                    {treeDisplaySecondaryTitle ? (
+                      <>
+                        <text
+                          x="10"
+                          y="44"
+                          fontFamily="serif"
+                          fontSize="12"
+                          fontWeight="bold"
+                          fill="var(--ink)"
+                          className="select-none"
+                        >
+                          {treeDisplayPrimaryTitle}
+                        </text>
+                        <text
+                          x="10"
+                          y="63"
+                          fontFamily="monospace"
+                          fontSize="9"
+                          fill="var(--gray)"
+                          className="select-none"
+                        >
+                          {treeDisplaySecondaryTitle}
+                        </text>
+                      </>
+                    ) : (
+                      <text
+                        x="10"
+                        y="53"
+                        fontFamily="serif"
+                        fontSize="13"
+                        fontWeight="bold"
+                        fill="var(--ink)"
+                        className="select-none"
+                      >
+                        {treeDisplayPrimaryTitle}
+                      </text>
+                    )}
                   </g>
                   {/* 隐藏辅助文本：当卡片标题未完全展示全名时供检索 */}
                   {treeDisplayPrimaryTitle !== node.titleZH && treeDisplaySecondaryTitle !== node.titleZH && (
@@ -2799,8 +2655,8 @@ export function SkillTreeCanvas({
         <aside
           className={`absolute right-0 top-0 bottom-0 w-80 md:w-96 bg-[var(--surface)] border-l border-[var(--line)] p-4 flex flex-col gap-4 z-20 overflow-y-auto transition-transform duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] ${
             isDrawerOpen
-              ? "translate-x-0 shadow-2xl pointer-events-auto"
-              : "translate-x-full pointer-events-none shadow-none"
+              ? "translate-x-0 pointer-events-auto"
+              : "translate-x-full pointer-events-none"
           }`}
           data-state={isDrawerOpen ? "open" : "closed"}
           data-testid="skill-tree-node-drawer"
@@ -2829,11 +2685,14 @@ export function SkillTreeCanvas({
                       e.stopPropagation();
                       handleSelectFach(displayDrawerNode.fach);
                     }}
-                    className="font-mono text-[10px] font-bold px-1.5 py-0.5 border border-[var(--ink)] bg-[var(--paper-subtle)] hover:bg-[var(--ink)] text-[var(--ink)] hover:text-[var(--surface)] rounded-[var(--radius)] cursor-pointer transition-colors"
+                    className="font-mono text-[10px] font-bold px-1.5 py-0.5 border border-[var(--ink)] bg-[var(--paper-subtle)] hover:bg-[var(--ink)] text-[var(--ink)] hover:text-[var(--surface)] rounded-[var(--radius)] cursor-pointer transition-colors inline-flex items-center gap-1"
                     title={de ? `Zum Fach ${displayDrawerNode.fach} wechseln` : `进入 ${displayDrawerNode.fach} 单科图谱`}
                     data-testid="drawer-jump-to-fach"
                   >
-                    {displayDrawerNode.fach} ➔
+                    <span>{displayDrawerNode.fach}</span>
+                    <svg width="9" height="9" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                      <path d="M3 8h10M9 4l4 4-4 4" />
+                    </svg>
                   </button>
                 )}
                 <span
@@ -2853,7 +2712,7 @@ export function SkillTreeCanvas({
                 </span>
               </div>
               <h2 className="font-serif text-base font-bold mt-1 text-[var(--ink)]">
-                {drawerLoc?.primaryTitle || displayDrawerNode.titleZH}
+                {drawerLoc?.primaryTitle || (de ? displayDrawerNode.titleDE : displayDrawerNode.titleZH)}
               </h2>
               {drawerLoc?.secondaryTitle && (
                 <div className="font-mono text-xs text-[var(--gray)]">
@@ -2902,8 +2761,8 @@ export function SkillTreeCanvas({
                     const isStepMastered = stepStatus === "mastered";
                     const isStepAvailable = stepStatus === "available";
                     const stepLoc = step.node ? resolveNodeLanguage(step.node, nodeLangMode, lang) : null;
-                    const stepPrimaryTitle = stepLoc ? stepLoc.primaryTitle : (step.node?.titleZH || step.id);
-                    const stepSecondaryTitle = stepLoc ? stepLoc.secondaryTitle : (step.node?.titleDE || "");
+                    const stepPrimaryTitle = stepLoc ? stepLoc.primaryTitle : ((de ? step.node?.titleDE : step.node?.titleZH) || step.id);
+                    const stepSecondaryTitle = stepLoc ? stepLoc.secondaryTitle : "";
 
                     return (
                       <div
@@ -2954,7 +2813,7 @@ export function SkillTreeCanvas({
                                 className="font-mono text-[8.5px] text-[var(--gray)] truncate max-w-[200px]"
                                 title={stepSecondaryTitle}
                               >
-                                {`${nodeLangMode === "de" ? "ZH" : "DE"} · ${stepSecondaryTitle}`}
+                                {stepSecondaryTitle}
                               </div>
                             )}
                           </div>
@@ -2976,8 +2835,7 @@ export function SkillTreeCanvas({
                           ) : (
                             <span className="inline-flex items-center gap-0.5 px-1 py-0.5 rounded-[var(--radius)] font-mono text-[8px] border border-[var(--line)] text-[var(--gray)]">
                               <svg width="8" height="8" viewBox="0 0 10 10" fill="none">
-                                <rect x="2" y="4" width="6" height="5" rx="1" stroke="currentColor" strokeWidth="1.1" />
-                                <path d="M3.5 4V2.5a1.5 1.5 0 0 1 3 0V4" stroke="currentColor" strokeWidth="1.1" />
+                                <path d="M2 2l6 6M8 2l-6 6" strokeWidth="1.2" strokeLinecap="round" />
                               </svg>
                               <span>{de ? "Gesperrt" : "锁定"}</span>
                             </span>
@@ -2991,21 +2849,21 @@ export function SkillTreeCanvas({
             )}
 
             {/* 核心概念因果推演 */}
-            {(drawerLoc?.primarySummary || drawerLoc?.secondarySummary || displayDrawerNode.summaryZH || displayDrawerNode.summaryDE) && (
+            {(drawerLoc?.primarySummary || displayDrawerNode.summaryDE || displayDrawerNode.summaryZH) && (
               <div className="space-y-1">
                 <div className="font-mono text-[11px] uppercase tracking-wider text-[var(--gray)] font-semibold">
                   {de ? "Konzept & Kausalität" : "核心概念与因果推演"}
                 </div>
                 {drawerLoc?.primarySummary ? (
                   <p className="text-[var(--ink)]">{drawerLoc.primarySummary}</p>
-                ) : displayDrawerNode.summaryZH ? (
-                  <p className="text-[var(--ink)]">{displayDrawerNode.summaryZH}</p>
+                ) : (de ? displayDrawerNode.summaryDE || displayDrawerNode.summaryZH : displayDrawerNode.summaryZH || displayDrawerNode.summaryDE) ? (
+                  <p className="text-[var(--ink)]">
+                    {de ? displayDrawerNode.summaryDE || displayDrawerNode.summaryZH : displayDrawerNode.summaryZH || displayDrawerNode.summaryDE}
+                  </p>
                 ) : null}
-                {drawerLoc?.secondarySummary ? (
+                {drawerLoc?.secondarySummary && (
                   <p className="text-[var(--gray)] font-mono text-[11px]">{drawerLoc.secondarySummary}</p>
-                ) : displayDrawerNode.summaryDE ? (
-                  <p className="text-[var(--gray)] font-mono text-[11px]">{displayDrawerNode.summaryDE}</p>
-                ) : null}
+                )}
               </div>
             )}
 
@@ -3114,7 +2972,9 @@ export function SkillTreeCanvas({
                     data-testid="drawer-action-jump-to-fach"
                   >
                     <span>{de ? `Zum Fach ${displayDrawerNode.fach} wechseln` : `进入 ${displayDrawerNode.fach} 学科精细图谱`}</span>
-                    <span className="font-mono font-bold">➔</span>
+                    <svg width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                      <path d="M3 8h10M9 4l4 4-4 4" />
+                    </svg>
                   </button>
                 )}
 
@@ -3185,7 +3045,7 @@ export function SkillTreeCanvas({
         <button
           type="button"
           onClick={() => setSelectedNodeId(displayDrawerNode.id)}
-          className="absolute right-0 top-16 z-20 bg-[var(--surface)] border-l border-y border-[var(--line)] hover:border-[var(--ink)] py-2 px-1.5 rounded-l-[var(--radius)] shadow-sm hover:shadow text-[var(--ink)] flex items-center gap-1 font-mono text-[10px] cursor-pointer transition-all hover:bg-[var(--paper-subtle)]"
+          className="absolute right-0 top-16 z-20 bg-[var(--surface)] border-l border-y border-[var(--line)] hover:border-[var(--ink)] py-2 px-1.5 rounded-l-[var(--radius)] text-[var(--ink)] flex items-center gap-1 font-mono text-[10px] cursor-pointer transition-all hover:bg-[var(--paper-subtle)]"
           title={de ? "Wissenskarte aufklappen" : "展开知识卡片"}
           aria-label={de ? "Wissenskarte aufklappen" : "展开知识卡片"}
           data-testid="skill-tree-drawer-open-handle"
@@ -3524,16 +3384,28 @@ export function SkillTreeCanvas({
             )}
 
             <div className="flex items-center justify-between pt-2 border-t border-[var(--line)] shrink-0">
-              <button
-                type="button"
-                onClick={() => {
-                  navigator.clipboard.writeText(jsonText);
-                  setJsonFeedback({ type: "success", text: "已复制当前 JSON 到剪贴板！" });
-                }}
-                className="px-3 py-1.5 border border-[var(--line)] rounded-[var(--radius)] text-xs font-mono hover:bg-[var(--paper-subtle)] cursor-pointer"
-              >
-                {de ? "In Zwischenablage kopieren" : "复制当前 JSON"}
-              </button>
+              <div className="flex items-center gap-2">
+                <button
+                  type="button"
+                  onClick={() => {
+                    navigator.clipboard.writeText(jsonText);
+                    setJsonFeedback({ type: "success", text: "已复制当前 JSON 到剪贴板！" });
+                  }}
+                  className="px-3 py-1.5 border border-[var(--line)] rounded-[var(--radius)] text-xs font-mono hover:bg-[var(--paper-subtle)] cursor-pointer"
+                >
+                  {de ? "In Zwischenablage kopieren" : "复制当前 JSON"}
+                </button>
+                <button
+                  type="button"
+                  onClick={() => {
+                    setIsJsonModalOpen(false);
+                    setIsAddSubjectOpen(true);
+                  }}
+                  className="px-3 py-1.5 border border-[var(--line)] rounded-[var(--radius)] text-xs font-mono hover:bg-[var(--paper-subtle)] cursor-pointer"
+                >
+                  {de ? "+ Fach anlegen" : "+ 新增学科"}
+                </button>
+              </div>
 
               <div className="flex items-center gap-2">
                 <button

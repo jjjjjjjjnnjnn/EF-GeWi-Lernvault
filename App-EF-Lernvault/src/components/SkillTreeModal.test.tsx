@@ -15,7 +15,7 @@ describe("SkillTreeModal Component", () => {
     ).toBeInTheDocument();
 
     // 点击关闭按钮
-    const closeBtn = screen.getByRole("button", { name: "关闭" });
+    const closeBtn = screen.getByTestId("skill-tree-modal-close");
     fireEvent.click(closeBtn);
     expect(handleClose).toHaveBeenCalledTimes(1);
 

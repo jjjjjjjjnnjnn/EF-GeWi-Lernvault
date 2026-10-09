@@ -54,19 +54,19 @@ export function resolveNodeLanguage(
     case "de":
       return {
         primaryTitle: titleDE,
-        secondaryTitle: titleZH !== titleDE ? titleZH : "",
+        secondaryTitle: "",
         primarySummary: summaryDE || summaryZH,
-        secondarySummary: summaryDE && summaryZH ? summaryZH : undefined,
+        secondarySummary: undefined,
         isBilingual: false,
         pillText: titleDE,
       };
 
     case "bilingual":
       return {
-        primaryTitle: titleDE,
-        secondaryTitle: titleZH,
-        primarySummary: summaryDE || summaryZH,
-        secondarySummary: summaryZH && summaryZH !== summaryDE ? summaryZH : undefined,
+        primaryTitle: _appLang === "de" ? titleDE : titleZH,
+        secondaryTitle: _appLang === "de" ? titleZH : titleDE,
+        primarySummary: _appLang === "de" ? (summaryDE || summaryZH) : (summaryZH || summaryDE),
+        secondarySummary: _appLang === "de" ? summaryZH : summaryDE,
         isBilingual: true,
         pillText: titleDE === titleZH ? titleDE : `${titleDE} · ${titleZH}`,
       };
@@ -75,9 +75,9 @@ export function resolveNodeLanguage(
     default:
       return {
         primaryTitle: titleZH,
-        secondaryTitle: titleDE !== titleZH ? titleDE : "",
+        secondaryTitle: "",
         primarySummary: summaryZH || summaryDE,
-        secondarySummary: summaryDE && summaryDE !== summaryZH ? summaryDE : undefined,
+        secondarySummary: undefined,
         isBilingual: false,
         pillText: titleZH,
       };

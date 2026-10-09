@@ -21,7 +21,7 @@ describe("SkillTreeCanvas Component (可插拔知识图谱与技能树画布测�
 
   it("switches subject to Mathe and renders mathematical progression nodes", () => {
     const handleSubjectChange = vi.fn();
-    render(
+    const { rerender } = render(
       <SkillTreeCanvas
         lang="zh"
         initialFach="SoWi"
@@ -29,9 +29,14 @@ describe("SkillTreeCanvas Component (可插拔知识图谱与技能树画布测�
       />
     );
 
-    // 点击切换至数学
-    const matheButton = screen.getByRole("button", { name: "数学 (Mathe)" });
-    fireEvent.click(matheButton);
+    // 外部顶栏切换学科至数学 (Mathe)
+    rerender(
+      <SkillTreeCanvas
+        lang="zh"
+        initialFach="Mathe"
+        onSubjectChange={handleSubjectChange}
+      />
+    );
 
     expect(handleSubjectChange).toHaveBeenCalledWith("Mathe");
     expect(screen.getByTestId("skill-node-mathe-aenderungsrate-sekante")).toBeInTheDocument();
@@ -56,7 +61,7 @@ describe("SkillTreeCanvas Component (可插拔知识图谱与技能树画布测�
     // 抽屉展开
     const drawer = screen.getByTestId("skill-tree-node-drawer");
     expect(drawer).toBeInTheDocument();
-    expect(within(drawer).getByText("Preismechanismus & Marktgleichgewicht")).toBeInTheDocument();
+    expect(within(drawer).getByRole("heading", { name: "价格形成机制与市场均衡十字" })).toBeInTheDocument();
 
     // 验证得分核心句
     expect(
@@ -111,8 +116,10 @@ describe("SkillTreeCanvas Component (可插拔知识图谱与技能树画布测�
   it("creates and registers a new custom subject dynamically", () => {
     render(<SkillTreeCanvas lang="zh" initialFach="SoWi" />);
 
-    // 打开新增学科弹窗
-    const openSubBtn = screen.getByRole("button", { name: "+ 学科" });
+    // 通过 JSON 导入导出面板打开新增学科弹窗
+    const jsonBtn = screen.getByRole("button", { name: "JSON" });
+    fireEvent.click(jsonBtn);
+    const openSubBtn = screen.getByRole("button", { name: "+ 新增学科" });
     fireEvent.click(openSubBtn);
 
     expect(screen.getByText("开辟新学科板块 (Fach-Erweiterung)")).toBeInTheDocument();
@@ -130,8 +137,8 @@ describe("SkillTreeCanvas Component (可插拔知识图谱与技能树画布测�
     const createBtn = screen.getByRole("button", { name: "创建学科" });
     fireEvent.click(createBtn);
 
-    // 验证顶部已切换并高亮选中新学科
-    expect(screen.getByRole("button", { name: "计算机科学", pressed: true })).toBeInTheDocument();
+    // 验证新学科太阳核心已渲染
+    expect(screen.getByText("计算机科学")).toBeInTheDocument();
   });
 
   it("toggles between planetary orbit and progression tree view modes", () => {
@@ -148,12 +155,14 @@ describe("SkillTreeCanvas Component (可插拔知识图谱与技能树画布测�
     expect(planetaryBtn).toHaveAttribute("aria-pressed", "false");
   });
 
-  it("filters nodes by category chip and opens JSON export modal", () => {
+  it("filters nodes by expandable category and tag dropdowns and opens JSON export modal", () => {
     render(<SkillTreeCanvas lang="zh" initialFach="SoWi" />);
 
-    // 点击微观经济分类
-    const mikroChip = screen.getByRole("button", { name: "Mikrooekonomie" });
-    fireEvent.click(mikroChip);
+    // 通过点击展开式下拉框选择微观经济分类
+    const catSelect = screen.getByTestId("filter-category-select");
+    expect(catSelect).toBeInTheDocument();
+    fireEvent.change(catSelect, { target: { value: "Mikrooekonomie" } });
+    expect(catSelect).toHaveValue("Mikrooekonomie");
 
     // 打开 JSON 导入导出弹窗
     const jsonBtn = screen.getByRole("button", { name: "JSON" });
@@ -161,6 +170,26 @@ describe("SkillTreeCanvas Component (可插拔知识图谱与技能树画布测�
 
     expect(screen.getByText("知识图谱与技能树 JSON 导入与导出中心")).toBeInTheDocument();
     expect(screen.getByRole("button", { name: "校验并导入图谱" })).toBeInTheDocument();
+  });
+
+  it("supports multilingual fuzzy search with typo and cross-language tolerance", () => {
+    render(<SkillTreeCanvas lang="zh" initialFach="SoWi" />);
+
+    const searchInput = screen.getByPlaceholderText(/模糊检索/i);
+    expect(searchInput).toBeInTheDocument();
+
+    // 1. 输入德语模糊检索词 "preismech"
+    fireEvent.change(searchInput, { target: { value: "preismech" } });
+    expect(screen.getByTestId("skill-node-sowi-preismechanismus")).toBeInTheDocument();
+
+    // 2. 输入中文检索词
+    fireEvent.change(searchInput, { target: { value: "稀缺性" } });
+    expect(screen.getByTestId("skill-node-sowi-beduerfnis-knappheit")).toBeInTheDocument();
+
+    // 3. 清空检索
+    const clearBtn = screen.getByTitle("清空");
+    fireEvent.click(clearBtn);
+    expect(searchInput).toHaveValue("");
   });
 
   it("supports free node dragging, displays reset indicator, and resets back to default", () => {
@@ -198,28 +227,28 @@ describe("SkillTreeCanvas Component (可插拔知识图谱与技能树画布测�
     expect(svg).toBeInTheDocument();
   });
 
-  it("supports subject pagination navigation smoothly", () => {
-    render(<SkillTreeCanvas lang="zh" initialFach="SoWi" />);
+  it("supports subject navigation smoothly via initialFach", () => {
+    const handleSubjectChange = vi.fn();
+    const { rerender } = render(
+      <SkillTreeCanvas
+        lang="zh"
+        initialFach="SoWi"
+        onSubjectChange={handleSubjectChange}
+      />
+    );
 
-    // 默认在第 1 页高亮社会科学
-    expect(screen.getByRole("button", { name: "社会科学 (SoWi)", pressed: true })).toBeInTheDocument();
+    expect(screen.getByTestId("skill-node-sowi-beduerfnis-knappheit")).toBeInTheDocument();
 
-    // 点击下一页
-    const nextBtn = screen.getByTitle("下一页学科");
-    fireEvent.click(nextBtn);
-
-    // 翻页后可见第 2 页学科德语并能点击切换
-    const deutschBtn = screen.getByRole("button", { name: "德语 (Deutsch)" });
-    expect(deutschBtn).toBeInTheDocument();
-    fireEvent.click(deutschBtn);
-    expect(screen.getByRole("button", { name: "德语 (Deutsch)", pressed: true })).toBeInTheDocument();
-
-    // 点击上一页
-    const prevBtn = screen.getByTitle("上一页学科");
-    fireEvent.click(prevBtn);
-
-    // 返回第 1 页，可见第 1 页学科
-    expect(screen.getByRole("button", { name: "社会科学 (SoWi)" })).toBeInTheDocument();
+    // 外部顶栏切换到德语学科
+    rerender(
+      <SkillTreeCanvas
+        lang="zh"
+        initialFach="Deutsch"
+        onSubjectChange={handleSubjectChange}
+      />
+    );
+    expect(handleSubjectChange).toHaveBeenCalledWith("Deutsch");
+    expect(screen.getByTestId("skill-node-deutsch-sachtext-textsorten-bericht-inhaltsangabe")).toBeInTheDocument();
   });
 
   it("supports causal focus on hover and renders laned tech tree milestones", () => {
@@ -313,28 +342,19 @@ describe("SkillTreeCanvas Component (可插拔知识图谱与技能树画布测�
     expect(drawer).toHaveAttribute("data-state", "open");
   });
 
-  it("switches node language modes (DE / DE·ZH / ZH) and adapts canvas text dynamically", () => {
-    render(<SkillTreeCanvas lang="zh" initialFach="SoWi" />);
+  it("adapts canvas and drawer text dynamically based on unified global language", () => {
+    const { rerender } = render(<SkillTreeCanvas lang="zh" initialFach="SoWi" />);
 
-    const langSwitcher = screen.getByTestId("skill-tree-lang-switcher");
-    expect(langSwitcher).toBeInTheDocument();
+    // 中文模式下 Sun Nucleus 与考点胶囊展示中文
+    expect(screen.getByText("社会科学 (SoWi)")).toBeInTheDocument();
+    expect(screen.getAllByText("价格形成机制与市场均衡十字").length).toBeGreaterThan(0);
 
-    const deBtn = screen.getByRole("button", { name: "DE" });
-    const bilingualBtn = screen.getByRole("button", { name: "DE·ZH" });
-    const zhBtn = screen.getByRole("button", { name: "ZH" });
+    // 切换至纯德语模式
+    rerender(<SkillTreeCanvas lang="de" initialFach="SoWi" />);
 
-    // 默认是中文优先 (ZH)
-    expect(zhBtn).toHaveAttribute("aria-pressed", "true");
-
-    // 切换至德语优先 (DE)
-    fireEvent.click(deBtn);
-    expect(deBtn).toHaveAttribute("aria-pressed", "true");
-    expect(zhBtn).toHaveAttribute("aria-pressed", "false");
-
-    // 切换至双语对照 (DE·ZH)
-    fireEvent.click(bilingualBtn);
-    expect(bilingualBtn).toHaveAttribute("aria-pressed", "true");
-    expect(deBtn).toHaveAttribute("aria-pressed", "false");
+    // 纯德语模式下 Sun Nucleus 与考点完全以德语考纲规范术语呈现，零中文泄漏
+    expect(screen.getByText("Sozialwissenschaften")).toBeInTheDocument();
+    expect(screen.getAllByText("Preismechanismus & Marktgleichgewicht").length).toBeGreaterThan(0);
   });
 
   it("switches to '所有学科' (Alle Fächer) macro view and allows cross-subject drilldown", () => {
@@ -342,17 +362,11 @@ describe("SkillTreeCanvas Component (可插拔知识图谱与技能树画布测�
     render(
       <SkillTreeCanvas
         lang="zh"
-        initialFach="SoWi"
+        initialFach="ALL"
         onSubjectChange={handleSubjectChange}
       />
     );
 
-    // 1. 点击切换到 [ 所有学科 ] 胶囊
-    const allSubjectsBtn = screen.getByTestId("skill-tree-all-subjects-btn");
-    expect(allSubjectsBtn).toBeInTheDocument();
-    fireEvent.click(allSubjectsBtn);
-
-    expect(handleSubjectChange).toHaveBeenCalledWith("ALL");
     // 应当展示所有学科宏观星盘视图
     expect(screen.getByTestId("all-subjects-macro-view")).toBeInTheDocument();
     expect(screen.getByTestId("all-subjects-astrolabe")).toBeInTheDocument();
@@ -368,7 +382,7 @@ describe("SkillTreeCanvas Component (可插拔知识图谱与技能树画布测�
     // 3. 研习抽屉展开并显示该知识点信息，同时出现学科穿梭胶囊
     const drawer = screen.getByTestId("skill-tree-node-drawer");
     expect(drawer).toHaveAttribute("data-state", "open");
-    expect(screen.getByText("Preismechanismus & Marktgleichgewicht")).toBeInTheDocument();
+    expect(within(drawer).getByRole("heading", { name: "价格形成机制与市场均衡十字" })).toBeInTheDocument();
 
     // 4. 点击学科穿梭按钮，一键进入该学科单科精细图谱
     const jumpBtn = screen.getByTestId("drawer-jump-to-fach");
@@ -400,7 +414,7 @@ describe("SkillTreeCanvas Component (可插拔知识图谱与技能树画布测�
 
     // 抽屉和选中节点绝不能因为平移移动而误关闭！
     expect(drawer).toHaveAttribute("data-state", "open");
-    expect(within(drawer).getByText("Preismechanismus & Marktgleichgewicht")).toBeInTheDocument();
+    expect(within(drawer).getByRole("heading", { name: "价格形成机制与市场均衡十字" })).toBeInTheDocument();
 
     // 验证真正的静止空白点击依然可以正确关闭抽屉
     fireEvent.click(canvasBg);
@@ -427,13 +441,9 @@ describe("SkillTreeCanvas Component (可插拔知识图谱与技能树画布测�
   });
 
   it("retracts drawer when clicking empty canvas in '所有学科' macro view", () => {
-    render(<SkillTreeCanvas lang="zh" initialFach="SoWi" />);
+    render(<SkillTreeCanvas lang="zh" initialFach="ALL" />);
 
-    // 1. 切换到所有学科
-    const allSubjectsBtn = screen.getByTestId("skill-tree-all-subjects-btn");
-    fireEvent.click(allSubjectsBtn);
-
-    // 2. 搜索并选择考点展开抽屉
+    // 1. 搜索并选择考点展开抽屉
     const searchInput = screen.getByTestId("all-subjects-search-input");
     fireEvent.change(searchInput, { target: { value: "价格形成机制" } });
     const searchResultItem = screen.getByTestId("search-result-sowi-preismechanismus");
@@ -442,7 +452,7 @@ describe("SkillTreeCanvas Component (可插拔知识图谱与技能树画布测�
     const drawer = screen.getByTestId("skill-tree-node-drawer");
     expect(drawer).toHaveAttribute("data-state", "open");
 
-    // 3. 点击宏观星盘空白背景
+    // 2. 点击宏观星盘空白背景
     const astrolabeBg = screen.getByTestId("all-subjects-astrolabe-bg");
     fireEvent.click(astrolabeBg);
 
@@ -450,5 +460,6 @@ describe("SkillTreeCanvas Component (可插拔知识图谱与技能树画布测�
     expect(drawer).toHaveAttribute("data-state", "closed");
   });
 });
+
 
 

@@ -9,6 +9,7 @@ import type { SubjectKey } from "../engine/skillTree";
 import { Button } from "../components/ui/button";
 import { Badge } from "../components/ui/badge";
 import { Input } from "../components/ui/input";
+import { fuzzyMatchFields } from "../utils/fuzzySearch";
 
 export interface SubjectWorkspaceProps {
   currentFach?: string;
@@ -89,14 +90,17 @@ export const SubjectWorkspace: React.FC<SubjectWorkspaceProps> = ({
 
   const filteredNotes = useMemo(() => {
     if (!noteSearchQuery.trim()) return subjectNotes;
-    const q = noteSearchQuery.toLowerCase();
-    return subjectNotes.filter(
-      (n) =>
-        n.thema.toLowerCase().includes(q) ||
-        n.fach.toLowerCase().includes(q) ||
-        n.operatoren.some((op) => op.toLowerCase().includes(q)) ||
-        n.tags.some((t) => t.toLowerCase().includes(q))
-    );
+    return subjectNotes.filter((n) => {
+      const candidateFields = [
+        n.thema,
+        n.fach,
+        n.id,
+        n.operatoren.join(" "),
+        n.tags.join(" "),
+        n.blocks?.map((b) => b.text).join(" "),
+      ];
+      return fuzzyMatchFields(candidateFields, noteSearchQuery).matched;
+    });
   }, [subjectNotes, noteSearchQuery]);
 
   const activeNote = useMemo(() => {
@@ -209,7 +213,7 @@ export const SubjectWorkspace: React.FC<SubjectWorkspaceProps> = ({
           >
             <SkillTreeCanvas
               lang={lang}
-              initialFach={(activeFachInfo.id === "alle" ? "SoWi" : activeFachInfo.id) as SubjectKey}
+              initialFach={(activeFachInfo.id === "alle" ? "ALL" : activeFachInfo.id) as SubjectKey}
               onSubjectChange={(fachKey) => {
                 _onSubjectChange?.(fachKey);
               }}

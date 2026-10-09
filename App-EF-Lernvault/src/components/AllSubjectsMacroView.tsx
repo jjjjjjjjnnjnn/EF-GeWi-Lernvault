@@ -8,6 +8,7 @@ import {
 import type { Lang, NodeLanguageMode } from "../i18n/types";
 import { resolveNodeLanguage } from "../i18n/nodeLocalization";
 import { truncateTextToVisualWidth } from "../utils/svgTypography";
+import { fuzzyFilterAndRankNodes } from "../utils/fuzzySearch";
 
 export interface CrossSubjectSynergyTrack {
   readonly id: string;
@@ -191,20 +192,11 @@ export function AllSubjectsMacroView({
     };
   }, [allNodes, masteredIds]);
 
-  // 全科即时搜索过滤结果 (按中德术语、分类与标签实时匹配)
+  // 全科即时搜索过滤结果 (支持德/中/代码/公式的全语言多要素模糊检索与相关度排序)
   const searchResults = useMemo(() => {
-    const q = searchQuery.trim().toLowerCase();
+    const q = searchQuery.trim();
     if (!q) return [];
-    return allNodes
-      .filter((n) => {
-        return (
-          n.titleZH.toLowerCase().includes(q) ||
-          n.titleDE.toLowerCase().includes(q) ||
-          (n.category && n.category.toLowerCase().includes(q)) ||
-          (n.tags && n.tags.some((t) => t.toLowerCase().includes(q)))
-        );
-      })
-      .slice(0, 16);
+    return fuzzyFilterAndRankNodes(allNodes, q).slice(0, 20);
   }, [searchQuery, allNodes]);
 
   // 计算 10 门主修学科在星盘环周的极坐标布局 (Astrolabe Orbital Planetary Layout)
@@ -458,10 +450,19 @@ export function AllSubjectsMacroView({
 
           {/* 搜索结果即时浮层 */}
           {searchResults.length > 0 && (
-            <div className="absolute left-0 right-0 top-8 bg-[var(--surface)] border border-[var(--ink)] shadow-xl rounded-[var(--radius)] max-h-72 overflow-y-auto z-40 p-1 space-y-1">
-              <div className="px-2 py-1 text-[10px] text-[var(--gray)] border-b border-[var(--line)] flex justify-between">
+            <div className="absolute left-0 right-0 top-8 bg-[var(--surface)] border border-[var(--ink)] rounded-[var(--radius)] max-h-72 overflow-y-auto z-40 p-1 space-y-1">
+              <div className="px-2 py-1 text-[10px] text-[var(--gray)] border-b border-[var(--line)] flex justify-between items-center">
                 <span>{de ? "Gefundene Knoten" : "匹配考点清单"} ({searchResults.length})</span>
-                <span className="cursor-pointer hover:text-[var(--ink)]" onClick={() => setSearchQuery("")}>✕</span>
+                <button
+                  type="button"
+                  className="cursor-pointer text-[var(--gray)] hover:text-[var(--ink)] p-0.5"
+                  onClick={() => setSearchQuery("")}
+                  aria-label={de ? "Schließen" : "关闭"}
+                >
+                  <svg width="10" height="10" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" aria-hidden="true">
+                    <path d="M3 3l10 10M13 3L3 13" />
+                  </svg>
+                </button>
               </div>
               {searchResults.map((node) => {
                 const loc = resolveNodeLanguage(node, nodeLangMode, lang);
@@ -565,7 +566,7 @@ export function AllSubjectsMacroView({
 
       {/* 主体画布展示区 */}
       <div className="relative flex-1 w-full h-full overflow-hidden bg-[var(--surface)]">
-        {/* TAB 1: 🌌 全科学术引力星盘 (Astrolabe Multi-Cosmos) */}
+        {/* TAB 1: 全科学术引力星盘 (Astrolabe Multi-Cosmos) */}
         {activeTab === "astrolabe" && (
           <svg
             className="w-full h-full cursor-grab active:cursor-grabbing"
@@ -921,7 +922,7 @@ export function AllSubjectsMacroView({
           </svg>
         )}
 
-        {/* TAB 2: 🧭 跨学科融通战役 (Synergy Tracks Flow) */}
+        {/* TAB 2: 跨学科融通战役 (Synergy Tracks Flow) */}
         {activeTab === "synergies" && (
           <div
             className="w-full h-full overflow-y-auto p-4 md:p-6 space-y-6"
@@ -952,7 +953,7 @@ export function AllSubjectsMacroView({
                     onClick={() => setSelectedSynergyId(isSelected ? null : track.id)}
                     className={`p-4 rounded-[var(--radius)] border transition-all cursor-pointer flex flex-col justify-between gap-3 ${
                       isSelected
-                        ? "bg-[var(--surface)] border-[var(--ink)] shadow-md"
+                        ? "bg-[var(--surface)] border-[var(--ink)] ring-1 ring-[var(--ink)]"
                         : "bg-[var(--surface)] border-[var(--line)] hover:border-[var(--ink)] hover:bg-[var(--paper-subtle)]"
                     }`}
                   >
@@ -1017,7 +1018,7 @@ export function AllSubjectsMacroView({
           </div>
         )}
 
-        {/* TAB 3: 📊 十科学阶阵列矩阵 (Curriculum Matrix & Balance KPI) */}
+        {/* TAB 3: 十科学阶阵列矩阵 (Curriculum Matrix & Balance KPI) */}
         {activeTab === "matrix" && (
           <div
             className="w-full h-full overflow-y-auto p-4 md:p-6 space-y-6"
@@ -1084,8 +1085,12 @@ export function AllSubjectsMacroView({
                               <span className="truncate max-w-[180px] text-[var(--ink)]">
                                 · {loc.primaryTitle}
                               </span>
-                              <span className="font-mono text-[9px] text-[var(--gray)]">
-                                {isM ? "✓" : `AFB ${n.level}`}
+                              <span className="font-mono text-[9px] text-[var(--gray)] flex items-center gap-1">
+                                {isM ? (
+                                  <svg width="10" height="10" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                                    <polyline points="3.5 8.5 6.5 11.5 12.5 4.5" />
+                                  </svg>
+                                ) : `AFB ${n.level}`}
                               </span>
                             </div>
                           );
@@ -1100,7 +1105,9 @@ export function AllSubjectsMacroView({
                       data-testid={`jump-to-fach-${sub.fach}`}
                     >
                       <span>{de ? `In ${sub.nameDE} eintauchen` : `深入【${sub.nameZH}】精细图谱`}</span>
-                      <span>➔</span>
+                      <svg width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                        <path d="M3 8h10M9 4l4 4-4 4" />
+                      </svg>
                     </button>
                   </div>
                 );
