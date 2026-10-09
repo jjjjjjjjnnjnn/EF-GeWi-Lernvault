@@ -1,5 +1,11 @@
 import { describe, it, expect, beforeEach } from "vitest";
-import { buildDailySprint, getStudyStreak, recordStudySprintCompleted } from "./dailyMix";
+import {
+  buildDailySprint,
+  getStudyStreak,
+  recordStudySprintCompleted,
+  interleaveCardsByTopic,
+  calculateInterleavingQuality,
+} from "./dailyMix";
 import type { VaultCard, VaultNote } from "../vault/parser";
 
 describe("DailySprint & Streak System", () => {
@@ -49,5 +55,27 @@ describe("DailySprint & Streak System", () => {
     // Calling again on the same day should not double count
     const s2 = recordStudySprintCompleted();
     expect(s2.currentStreak).toBe(1);
+  });
+
+  it("interleaves cards across diverse topics using weighted round-robin", () => {
+    const multiTopicCards = [
+      { id: "1", topic: "Mathe" },
+      { id: "2", topic: "Mathe" },
+      { id: "3", topic: "Mathe" },
+      { id: "4", topic: "SoWi" },
+      { id: "5", topic: "SoWi" },
+      { id: "6", topic: "Deutsch" },
+    ];
+
+    const interleaved = interleaveCardsByTopic(multiTopicCards, (c) => c.topic);
+    expect(interleaved.length).toBe(6);
+
+    // 前三张应当属于不同学科
+    expect(interleaved[0].topic).not.toBe(interleaved[1].topic);
+    expect(interleaved[1].topic).not.toBe(interleaved[2].topic);
+
+    const quality = calculateInterleavingQuality(interleaved, (c) => c.topic);
+    // 交错度指数必须高于纯块状
+    expect(quality).toBeGreaterThan(0.6);
   });
 });

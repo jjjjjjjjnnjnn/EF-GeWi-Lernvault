@@ -3,6 +3,7 @@ import {
   computeGraphUnlockStates,
   detectGraphCycles,
   topologicalSort,
+  repairGraphTopology,
   getPrerequisiteChain,
   calculateSubjectProgress,
   insertKnowledgeNode,
@@ -577,6 +578,75 @@ describe("Skill Tree & Extensible Knowledge Graph Engine", () => {
 
       const registered = graphRegistry.get("BioInformatik");
       expect(registered).toBeDefined();
+    });
+  });
+
+  describe("11. 拓扑自愈修复管线 (Graph Topology Sanitizer & Auto-Repair Pipeline)", () => {
+    it("sanitizes invalid dangling edges, self-loops, and breaks deadlock cycles reliably", () => {
+      const corruptedGraph: SubjectKnowledgeGraph = {
+        schemaVersion: 1,
+        fach: "TestGraph",
+        nameDE: "Test Graph",
+        nameZH: "测试图谱",
+        nodes: [
+          {
+            id: "node-a",
+            fach: "TestGraph",
+            titleDE: "Node A",
+            titleZH: "节点 A",
+            stage: "einfuehrung",
+            level: 1,
+            xpReward: 50,
+            estimatedMinutes: 5,
+            prerequisites: ["node-c", "node-nonexistent", "node-a"], // 包含循环与死链
+          },
+          {
+            id: "node-b",
+            fach: "TestGraph",
+            titleDE: "Node B",
+            titleZH: "节点 B",
+            stage: "grundlagen",
+            level: 2,
+            xpReward: 60,
+            estimatedMinutes: 5,
+            prerequisites: ["node-a"],
+          },
+          {
+            id: "node-c",
+            fach: "TestGraph",
+            titleDE: "Node C",
+            titleZH: "节点 C",
+            stage: "vertiefung",
+            level: 2,
+            xpReward: 70,
+            estimatedMinutes: 5,
+            prerequisites: ["node-b"], // A -> B -> C -> A 闭环
+          },
+        ],
+        edges: [
+          { id: "e1", from: "node-a", to: "node-b", type: "prerequisite" },
+          { id: "e2", from: "node-b", to: "node-c", type: "prerequisite" },
+          { id: "e3", from: "node-c", to: "node-a", type: "prerequisite" }, // 环
+          { id: "e4", from: "node-a", to: "node-a", type: "prerequisite" }, // 自指
+          { id: "e5", from: "node-a", to: "ghost-node", type: "prerequisite" }, // 悬空边
+        ],
+      };
+
+      // 修复前应该包含环
+      expect(detectGraphCycles(corruptedGraph)).not.toBeNull();
+
+      // 执行自愈
+      const repaired = repairGraphTopology(corruptedGraph);
+
+      // 自愈后不应存在环，拓扑排序必须 100% 成功
+      expect(detectGraphCycles(repaired)).toBeNull();
+      const sortRes = topologicalSort(repaired);
+      expect(sortRes.success).toBe(true);
+      expect(sortRes.sortedNodeIds.length).toBe(3);
+
+      // 边已净化：无自指、无悬空边
+      expect(repaired.edges.some((e) => e.from === e.to)).toBe(false);
+      expect(repaired.edges.some((e) => e.to === "ghost-node")).toBe(false);
     });
   });
 });

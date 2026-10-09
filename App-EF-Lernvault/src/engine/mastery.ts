@@ -354,3 +354,80 @@ export class MasteryEngine {
     this.saveToStorage();
   }
 }
+
+/**
+ * 四维正交会考就绪度评分引擎 (Four-Dimensional Exam Readiness Engine)
+ * 借鉴 Harvard / quanta-fsrs-engine 四维正交就绪度体系：
+ * 
+ * 评分模型 (Score Architecture):
+ * 1. 考点掌握深度 (Topic Mastery, 35%): 基于 BKT 概率与难度的加权综合深度；
+ * 2. 会考日留存率 (Exam-Day Retention, 30%): 根据 FSRS 遗忘幂律，推演考点在会考当天预计的可回忆概率；
+ * 3. 模考衰减均分 (Simulation Score, 20%): 包含半衰期指数衰减 (λ = 0.08) 的近期模考表现；
+ * 4. 考纲有效覆盖度 (Effective Coverage, 15%): 实际有效编码并复习达标的考点比例。
+ * 
+ * 综合预测得分换算至德国 15 Notenpunkte (0 - 15 NP)。
+ */
+export interface ExamReadinessResult {
+  readinessScore: number;       // 0.0 - 1.0 (综合就绪度)
+  predictedNotenpunkte: number;  // 0 - 15 NP (官方会考预估分)
+  predictedGradeDE: string;      // 德国标准评级 (Sehr gut / Gut / Befriedigend / ...)
+  dimensions: {
+    topicMastery: number;        // 35%
+    examRetention: number;       // 30%
+    simulationScore: number;     // 20%
+    effectiveCoverage: number;   // 15%
+  };
+}
+
+export function computeExamReadiness(params: {
+  averageMastery: number;        // 0.0 - 1.0
+  expectedExamRetention: number; // 0.0 - 1.0
+  recentSimScore: number;        // 0.0 - 1.0
+  effectiveCoverageRate: number; // 0.0 - 1.0
+}): ExamReadinessResult {
+  const mastery = Math.max(0, Math.min(1, params.averageMastery));
+  const retention = Math.max(0, Math.min(1, params.expectedExamRetention));
+  const sim = Math.max(0, Math.min(1, params.recentSimScore));
+  const coverage = Math.max(0, Math.min(1, params.effectiveCoverageRate));
+
+  // 4 维正交加权求和
+  const score = 0.35 * mastery + 0.30 * retention + 0.20 * sim + 0.15 * coverage;
+
+  // 换算为德国高中 15 级 Notenpunkte (0 - 15)
+  let np = 0;
+  if (score >= 0.95) np = 15;
+  else if (score >= 0.90) np = 14;
+  else if (score >= 0.85) np = 13;
+  else if (score >= 0.80) np = 12;
+  else if (score >= 0.75) np = 11;
+  else if (score >= 0.70) np = 10;
+  else if (score >= 0.65) np = 9;
+  else if (score >= 0.60) np = 8;
+  else if (score >= 0.55) np = 7;
+  else if (score >= 0.50) np = 6;
+  else if (score >= 0.45) np = 5;
+  else if (score >= 0.40) np = 4;
+  else if (score >= 0.33) np = 3;
+  else if (score >= 0.27) np = 2;
+  else if (score >= 0.20) np = 1;
+  else np = 0;
+
+  let gradeDE = "Ungenügend (6)";
+  if (np >= 13) gradeDE = "Sehr gut (1)";
+  else if (np >= 10) gradeDE = "Gut (2)";
+  else if (np >= 7) gradeDE = "Befriedigend (3)";
+  else if (np >= 5) gradeDE = "Ausreichend (4)";
+  else if (np >= 1) gradeDE = "Mangelhaft (5)";
+
+  return {
+    readinessScore: Math.round(score * 1000) / 1000,
+    predictedNotenpunkte: np,
+    predictedGradeDE: gradeDE,
+    dimensions: {
+      topicMastery: Math.round(mastery * 1000) / 1000,
+      examRetention: Math.round(retention * 1000) / 1000,
+      simulationScore: Math.round(sim * 1000) / 1000,
+      effectiveCoverage: Math.round(coverage * 1000) / 1000,
+    },
+  };
+}

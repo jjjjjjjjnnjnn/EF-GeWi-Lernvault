@@ -330,6 +330,72 @@ export function topologicalSort(graph: SubjectKnowledgeGraph): {
 }
 
 /**
+ * 拓扑自愈修复管线 (Graph Topology Sanitizer & Auto-Repair)
+ * 借鉴 pathforge 拓扑自愈管线设计哲学：
+ * 1. 过滤自指 (Self-loops)、重复连线与悬空无主连线 (Dangling Edges)；
+ * 2. 自动破除死锁环 (Cycle Breaking)：当检测到有向环时，移除非必需返祖边，保证有向无环图 (DAG) 拓扑单向流动；
+ * 3. 稳健修复节点的 prerequisites，确保拓扑排序 100% 成功。
+ */
+export function repairGraphTopology(graph: SubjectKnowledgeGraph): SubjectKnowledgeGraph {
+  const nodeIds = new Set(graph.nodes.map((n) => n.id));
+
+  // 1. 清理无效/自指/重复边
+  const seenEdges = new Set<string>();
+  const sanitizedEdges: KnowledgeEdge[] = [];
+
+  for (const edge of graph.edges) {
+    if (!nodeIds.has(edge.from) || !nodeIds.has(edge.to) || edge.from === edge.to) {
+      continue;
+    }
+    const key = `${edge.from}->${edge.to}:${edge.type}`;
+    if (seenEdges.has(key)) continue;
+    seenEdges.add(key);
+    sanitizedEdges.push(edge);
+  }
+
+  // 2. 清理节点 prerequisites 中不存在的或自指的 ID
+  const sanitizedNodes = graph.nodes.map((node) => {
+    const validPrereqs = node.prerequisites.filter((p) => nodeIds.has(p) && p !== node.id);
+    return { ...node, prerequisites: validPrereqs };
+  });
+
+  let workingGraph: SubjectKnowledgeGraph = {
+    ...graph,
+    nodes: sanitizedNodes,
+    edges: sanitizedEdges,
+  };
+
+  // 3. 破除死锁环 (Cycle Breaking)
+  let cycle = detectGraphCycles(workingGraph);
+  let guard = 0;
+  while (cycle && cycle.length >= 2 && guard < 50) {
+    guard++;
+    // 取环上最后一条回溯边 (cycle[cycle.length - 2] -> cycle[cycle.length - 1])
+    const fromId = cycle[cycle.length - 2];
+    const toId = cycle[cycle.length - 1];
+
+    // 从 toId 的 prerequisites 中移除该回溯依赖，并从 edges 中清理该边
+    workingGraph = {
+      ...workingGraph,
+      nodes: workingGraph.nodes.map((n) => {
+        if (n.id === toId) {
+          return {
+            ...n,
+            prerequisites: n.prerequisites.filter((p) => p !== fromId),
+          };
+        }
+        return n;
+      }),
+      edges: workingGraph.edges.filter((e) => !(e.from === fromId && e.to === toId)),
+    };
+
+    cycle = detectGraphCycles(workingGraph);
+  }
+
+  return workingGraph;
+}
+
+/**
  * 获取指定目标知识点的完整前置溯源链路 (Prerequisite Dependency Chain)
  * 用于当学生想要学习某个高阶知识点时，一键倒推必须掌握的完整路径
  */

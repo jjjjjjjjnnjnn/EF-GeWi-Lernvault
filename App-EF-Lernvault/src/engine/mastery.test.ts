@@ -1,5 +1,5 @@
 import { describe, it, expect, beforeEach } from "vitest";
-import { MasteryEngine } from "./mastery";
+import { MasteryEngine, computeExamReadiness } from "./mastery";
 
 describe("MasteryEngine & BKT Model", () => {
   let engine: MasteryEngine;
@@ -84,5 +84,31 @@ describe("MasteryEngine & BKT Model", () => {
     // Turn off term mode
     engine.setTermModeEnabled(false);
     expect(engine.getEffectiveTerm()).toBe("ALL");
+  });
+
+  it("calculates 4-dimensional orthogonal exam readiness and predicts German Notenpunkte accurately", () => {
+    // 模拟优秀学生 (高掌握度、高留存、高模考、全覆盖)
+    const topReady = computeExamReadiness({
+      averageMastery: 0.92,
+      expectedExamRetention: 0.88,
+      recentSimScore: 0.90,
+      effectiveCoverageRate: 0.95,
+    });
+
+    expect(topReady.readinessScore).toBeGreaterThanOrEqual(0.85);
+    expect(topReady.predictedNotenpunkte).toBeGreaterThanOrEqual(13); // 13-15 NP (Sehr gut)
+    expect(topReady.predictedGradeDE).toContain("Sehr gut");
+    expect(topReady.dimensions.topicMastery).toBe(0.92);
+
+    // 模拟初学学生
+    const beginner = computeExamReadiness({
+      averageMastery: 0.30,
+      expectedExamRetention: 0.20,
+      recentSimScore: 0.25,
+      effectiveCoverageRate: 0.30,
+    });
+
+    expect(beginner.predictedNotenpunkte).toBeLessThan(5);
+    expect(beginner.predictedGradeDE).toMatch(/Mangelhaft|Ungenügend/);
   });
 });

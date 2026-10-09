@@ -1,4 +1,4 @@
-import { useState, useMemo, useCallback, useRef } from "react";
+import { useState, useMemo, useCallback, useRef, useEffect } from "react";
 import type { Lang } from "../i18n";
 import {
   graphRegistry,
@@ -209,6 +209,15 @@ export function SkillTreeCanvas({
     },
     [onSubjectChange]
   );
+
+  // 外部学科联动：仅当外部传入的 initialFach 自身发生变动时，才同步切换（避免覆盖用户内部手动切换）
+  const prevInitialFachRef = useRef(initialFach);
+  useEffect(() => {
+    if (initialFach && initialFach.toLowerCase() !== (prevInitialFachRef.current || "").toLowerCase()) {
+      prevInitialFachRef.current = initialFach;
+      handleSelectFach(initialFach);
+    }
+  }, [initialFach, handleSelectFach]);
 
   // 切换掌握状态
   const toggleMastered = useCallback(

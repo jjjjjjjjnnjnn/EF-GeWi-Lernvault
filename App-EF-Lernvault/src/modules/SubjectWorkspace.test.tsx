@@ -6,11 +6,15 @@ describe("SubjectWorkspace (学科专区/学科主页) 独立测试", () => {
   it("renders streamlined category navigation tabs with counts and quick action buttons", () => {
     render(<SubjectWorkspace currentFach="SoWi" lang="zh" />);
 
-    // 四大直观分类 Tab 存在且展示对应数量
+    // 五大直观分类 Tab 存在且展示对应名称
+    expect(screen.getByRole("button", { name: /0\. 知识图谱/i })).toBeInTheDocument();
     expect(screen.getByRole("button", { name: /1\. 知识笔记/i })).toBeInTheDocument();
     expect(screen.getByRole("button", { name: /2\. 抽认卡片/i })).toBeInTheDocument();
     expect(screen.getByRole("button", { name: /3\. 实验与教具/i })).toBeInTheDocument();
     expect(screen.getByRole("button", { name: /4\. 模拟真题/i })).toBeInTheDocument();
+
+    // 默认展示 Tab 0: 知识图谱与技能树画布
+    expect(screen.getByTestId("subject-skill-tree-tab")).toBeInTheDocument();
 
     // 快捷行动按钮存在
     expect(screen.getByRole("button", { name: /开启词卡背诵/i })).toBeInTheDocument();
@@ -18,19 +22,24 @@ describe("SubjectWorkspace (学科专区/学科主页) 独立测试", () => {
     expect(screen.getByRole("button", { name: /向AI助教请教/i })).toBeInTheDocument();
   });
 
-  it("automatically synchronizes selected note when currentFach prop changes", () => {
-    const { rerender } = render(<SubjectWorkspace currentFach="SoWi" lang="zh" />);
+  it("automatically synchronizes selected note when currentFach prop changes in notes tab", () => {
+    const { rerender } = render(<SubjectWorkspace currentFach="SoWi" initialSubTab="notes" lang="zh" />);
 
     expect(screen.getByPlaceholderText("搜索本学科考点...")).toBeInTheDocument();
 
-    rerender(<SubjectWorkspace currentFach="Mathe" lang="zh" />);
+    rerender(<SubjectWorkspace currentFach="Mathe" initialSubTab="notes" lang="zh" />);
     expect(screen.getByPlaceholderText("搜索本学科考点...")).toBeInTheDocument();
   });
 
-  it("switches smoothly between the 4 content tabs (notes, cards, sims, exam)", () => {
+  it("switches smoothly between the 5 content tabs (tree, notes, cards, sims, exam)", () => {
     render(<SubjectWorkspace currentFach="SoWi" lang="zh" />);
 
-    // 默认展示 Tab 1: 知识笔记
+    // 默认展示 Tab 0: 知识图谱
+    expect(screen.getByTestId("subject-skill-tree-tab")).toBeInTheDocument();
+
+    // 切换到 Tab 1: 知识笔记
+    const notesTab = screen.getByRole("button", { name: /1\. 知识笔记/i });
+    fireEvent.click(notesTab);
     expect(screen.getByPlaceholderText("搜索本学科考点...")).toBeInTheDocument();
 
     // 切换到 Tab 2: 抽认卡片
@@ -92,7 +101,7 @@ describe("SubjectWorkspace (学科专区/学科主页) 独立测试", () => {
   });
 
   it("supports collapsing and expanding the note catalog panel", () => {
-    render(<SubjectWorkspace currentFach="SoWi" lang="zh" />);
+    render(<SubjectWorkspace currentFach="SoWi" initialSubTab="notes" lang="zh" />);
 
     // 点击收起目录按钮
     const collapseBtn = screen.getByTitle("收起目录");
@@ -128,19 +137,19 @@ describe("SubjectWorkspace (学科专区/学科主页) 独立测试", () => {
   });
 
   it("defaults to '所有学科 (ALL)' when currentFach is omitted or 'alle'", () => {
-    render(<SubjectWorkspace lang="zh" />);
+    render(<SubjectWorkspace initialSubTab="notes" lang="zh" />);
 
     // 搜索框 placeholder 显示“搜索全库考点”
     expect(screen.getByPlaceholderText("搜索全库考点...")).toBeInTheDocument();
   });
 
   it("switches search and note scope when currentFach is updated", () => {
-    const { rerender } = render(<SubjectWorkspace currentFach="Mathe" lang="zh" />);
+    const { rerender } = render(<SubjectWorkspace currentFach="Mathe" initialSubTab="notes" lang="zh" />);
 
     // 搜索框 placeholder 显示“搜索本学科考点”
     expect(screen.getByPlaceholderText("搜索本学科考点...")).toBeInTheDocument();
 
-    rerender(<SubjectWorkspace currentFach="alle" lang="zh" />);
+    rerender(<SubjectWorkspace currentFach="alle" initialSubTab="notes" lang="zh" />);
     expect(screen.getByPlaceholderText("搜索全库考点...")).toBeInTheDocument();
   });
 });

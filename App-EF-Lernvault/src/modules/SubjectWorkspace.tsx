@@ -4,9 +4,12 @@ import { repository, type KnowledgeNote, type KnowledgeCard } from "../framework
 import { SIMULATION_REGISTRY, type SimEntry } from "./laborRegistry";
 import Blocks from "../components/Blocks";
 import type { Lang } from "../i18n";
+import { SkillTreeCanvas } from "../components/SkillTreeCanvas";
+import type { SubjectKey } from "../engine/skillTree";
 
 export interface SubjectWorkspaceProps {
   currentFach?: string;
+  initialSubTab?: WorkspaceSubTab;
   onSubjectChange?: (fach: string) => void;
   onNavigateToTab?: (
     tab: "library" | "flashcards" | "klausursim" | "quiz" | "labor" | "tutor" | "reise",
@@ -15,7 +18,7 @@ export interface SubjectWorkspaceProps {
   lang?: Lang;
 }
 
-type WorkspaceSubTab = "notes" | "cards" | "sims" | "exam";
+type WorkspaceSubTab = "tree" | "notes" | "cards" | "sims" | "exam";
 
 export interface DisplayFachInfo {
   id: string;
@@ -33,6 +36,7 @@ const ALL_FACH_INFO: DisplayFachInfo = {
 
 export const SubjectWorkspace: React.FC<SubjectWorkspaceProps> = ({
   currentFach = "alle",
+  initialSubTab,
   onSubjectChange: _onSubjectChange,
   onNavigateToTab,
   lang = "zh",
@@ -46,8 +50,8 @@ export const SubjectWorkspace: React.FC<SubjectWorkspaceProps> = ({
     return getFach(currentFach) || ALL_FACH_INFO;
   }, [currentFach, isAllFaecher]);
 
-  // 2. 当前子标签页
-  const [subTab, setSubTab] = useState<WorkspaceSubTab>("notes");
+  // 2. 当前子标签页 (默认进入 0. 知识图谱 & 技能树)
+  const [subTab, setSubTab] = useState<WorkspaceSubTab>(initialSubTab ?? "tree");
 
   // 3. 从统一知识库获取全量数据，并按学科过滤
   const allNotes: KnowledgeNote[] = useMemo(() => repository.getAllNotes(), []);
@@ -118,8 +122,19 @@ export const SubjectWorkspace: React.FC<SubjectWorkspaceProps> = ({
       {/* 顶部常驻工作台分类与快捷行动条 (精简单栏，消除与全局顶栏功能重复) */}
       <header className="shrink-0 border-b border-[var(--line)] bg-[var(--paper)] px-4 py-2 sm:px-6">
         <div className="flex flex-wrap items-center justify-between gap-2">
-          {/* 四大直观分类标签页切换 */}
+          {/* 五大直观分类标签页切换 (知识图谱 -> 笔记 -> 抽认卡 -> 实验 -> 真题) */}
           <div className="flex items-center gap-1">
+            <button
+              type="button"
+              onClick={() => setSubTab("tree")}
+              className={`rounded px-3 py-1 font-mono text-xs transition-colors cursor-pointer ${
+                subTab === "tree"
+                  ? "bg-[var(--ink)] text-[var(--paper)] font-semibold"
+                  : "border border-transparent text-[var(--gray)] hover:text-[var(--ink)] hover:bg-[var(--surface)]"
+              }`}
+            >
+              {de ? "0. Kompetenzbaum" : "0. 知识图谱"}
+            </button>
             <button
               type="button"
               onClick={() => setSubTab("notes")}
@@ -195,6 +210,37 @@ export const SubjectWorkspace: React.FC<SubjectWorkspaceProps> = ({
 
       {/* 主工作区 (占据剩余 100% 垂直空间) */}
       <main className="flex-1 min-h-0 min-w-0 flex overflow-hidden">
+        {/* Tab 0: 知识图谱 & 技能树 —— 全景行星引力星盘与多泳道科技树 */}
+        {subTab === "tree" && (
+          <div
+            className="flex-1 min-h-0 min-w-0 h-full w-full overflow-hidden bg-[var(--paper)]"
+            data-testid="subject-skill-tree-tab"
+          >
+            <SkillTreeCanvas
+              lang={lang}
+              initialFach={(activeFachInfo.id === "alle" ? "SoWi" : activeFachInfo.id) as SubjectKey}
+              onSubjectChange={(fachKey) => {
+                _onSubjectChange?.(fachKey);
+              }}
+              onOpenNote={(noteId) => {
+                setSelectedNoteId(noteId);
+                setSubTab("notes");
+              }}
+              onStartCourse={(courseId) => {
+                onNavigateToTab?.("reise", { query: courseId, fach: activeFachInfo.id });
+              }}
+              onOpenTool={(toolId) => {
+                const hasLocalSim = subjectSims.some((s) => s.id === toolId);
+                if (hasLocalSim) {
+                  setSubTab("sims");
+                } else {
+                  onNavigateToTab?.("labor", { fach: activeFachInfo.id });
+                }
+              }}
+            />
+          </div>
+        )}
+
         {/* Tab 1: 知识笔记 —— 现代化独立双栏分屏工作区 */}
         {subTab === "notes" && (
           <div className="flex h-full w-full min-h-0 min-w-0 overflow-hidden">
