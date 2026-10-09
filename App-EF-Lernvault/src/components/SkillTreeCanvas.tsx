@@ -414,7 +414,7 @@ export function SkillTreeCanvas({
 
   const focalNodeId = hoveredNodeId || selectedNodeId;
 
-  // 因果链拓扑分析：递归计算焦点节点的直接/间接前置、后续解锁节点与关联边
+  // 因果链拓扑分析：递归计算焦点节点的直接/间接前置、后续解锁节点、距离衰减梯度与关联边
   const causalAnalysis = useMemo(() => {
     if (!focalNodeId) return null;
     const directPrereqs = new Set<string>();
@@ -434,36 +434,56 @@ export function SkillTreeCanvas({
       outgoingEdges.get(edge.from)!.push({ to: edge.to, edgeId: edge.id });
     }
 
-    // 向上递归探索前置依赖 (Ancestors)
-    const upQueue = [focalNodeId];
+    const nodeDistances = new Map<string, number>();
+    const edgeDistances = new Map<string, number>();
+    nodeDistances.set(focalNodeId, 0);
+
+    // 向上递归探索前置依赖并记录拓扑距离 (Ancestors / Prerequisites)
+    const upQueue: Array<{ id: string; dist: number }> = [{ id: focalNodeId, dist: 0 }];
     while (upQueue.length > 0) {
-      const curr = upQueue.shift()!;
+      const { id: curr, dist } = upQueue.shift()!;
       const inEdges = incomingEdges.get(curr) || [];
       for (const e of inEdges) {
         causalEdgeIds.add(e.edgeId);
+        const prevEdgeDist = edgeDistances.get(e.edgeId);
+        if (prevEdgeDist === undefined || dist + 1 < prevEdgeDist) {
+          edgeDistances.set(e.edgeId, dist + 1);
+        }
         if (curr === focalNodeId) {
           directPrereqs.add(e.from);
         }
-        if (!allPrereqs.has(e.from) && e.from !== focalNodeId) {
+        if (e.from !== focalNodeId) {
           allPrereqs.add(e.from);
-          upQueue.push(e.from);
+          const existingDist = nodeDistances.get(e.from);
+          if (existingDist === undefined || dist + 1 < existingDist) {
+            nodeDistances.set(e.from, dist + 1);
+            upQueue.push({ id: e.from, dist: dist + 1 });
+          }
         }
       }
     }
 
-    // 向下递归探索后继解锁 (Successors / Dependents)
-    const downQueue = [focalNodeId];
+    // 向下递归探索后继解锁并记录拓扑距离 (Successors / Dependents)
+    const downQueue: Array<{ id: string; dist: number }> = [{ id: focalNodeId, dist: 0 }];
     while (downQueue.length > 0) {
-      const curr = downQueue.shift()!;
+      const { id: curr, dist } = downQueue.shift()!;
       const outEdges = outgoingEdges.get(curr) || [];
       for (const e of outEdges) {
         causalEdgeIds.add(e.edgeId);
+        const prevEdgeDist = edgeDistances.get(e.edgeId);
+        if (prevEdgeDist === undefined || dist + 1 < prevEdgeDist) {
+          edgeDistances.set(e.edgeId, dist + 1);
+        }
         if (curr === focalNodeId) {
           directSuccessors.add(e.to);
         }
-        if (!allSuccessors.has(e.to) && e.to !== focalNodeId) {
+        if (e.to !== focalNodeId) {
           allSuccessors.add(e.to);
-          downQueue.push(e.to);
+          const existingDist = nodeDistances.get(e.to);
+          if (existingDist === undefined || dist + 1 < existingDist) {
+            nodeDistances.set(e.to, dist + 1);
+            downQueue.push({ id: e.to, dist: dist + 1 });
+          }
         }
       }
     }
@@ -474,6 +494,31 @@ export function SkillTreeCanvas({
       ...allSuccessors,
     ]);
 
+    // 统计当前因果链跨越的星区分区 (用于扇区空间高亮与宏观定位)
+    const activeCategories = new Set<string>();
+    for (const id of allConnectedNodeIds) {
+      const n = nodeMap.get(id);
+      if (n?.category) activeCategories.add(n.category);
+    }
+
+    // 构建线性学习推进清单步骤流 (Causal Progression Sequence)
+    const prereqList = Array.from(allPrereqs)
+      .map((id) => ({ id, node: nodeMap.get(id), dist: nodeDistances.get(id) ?? 1, role: "prereq" as const }))
+      .sort((a, b) => b.dist - a.dist);
+
+    const focalEntry = {
+      id: focalNodeId,
+      node: nodeMap.get(focalNodeId),
+      dist: 0,
+      role: "focal" as const,
+    };
+
+    const successorList = Array.from(allSuccessors)
+      .map((id) => ({ id, node: nodeMap.get(id), dist: nodeDistances.get(id) ?? 1, role: "successor" as const }))
+      .sort((a, b) => a.dist - b.dist);
+
+    const progressionSteps = [...prereqList, focalEntry, ...successorList];
+
     return {
       focalNodeId,
       directPrereqs,
@@ -482,8 +527,12 @@ export function SkillTreeCanvas({
       allSuccessors,
       causalEdgeIds,
       allConnectedNodeIds,
+      nodeDistances,
+      edgeDistances,
+      activeCategories,
+      progressionSteps,
     };
-  }, [focalNodeId, activeGraph.edges]);
+  }, [focalNodeId, activeGraph.edges, nodeMap]);
 
   // 连线平滑路径计算 (行星模式 vs 树模式)
   const renderedEdges = useMemo(() => {
@@ -524,7 +573,7 @@ export function SkillTreeCanvas({
         pathData = `M ${x1} ${y1} C ${x1 + dx} ${y1}, ${x2 - dx} ${y2}, ${x2} ${y2}`;
       }
 
-      // 因果链悬停聚焦与降噪规则
+      // 因果链悬停聚焦与降噪规则 (距离越远颜色越淡渐变衰减)
       const isCausalFocus = causalAnalysis !== null;
       const isEdgeInCausalChain = isCausalFocus && causalAnalysis.causalEdgeIds.has(edge.id);
 
@@ -536,16 +585,25 @@ export function SkillTreeCanvas({
 
       if (isCausalFocus) {
         if (isEdgeInCausalChain) {
+          const dist = causalAnalysis.edgeDistances.get(edge.id) ?? 1;
           strokeColor = "var(--ink)";
-          strokeWidth = 2.4;
-          opacity = 1.0;
+          if (dist === 1) {
+            strokeWidth = 2.4;
+            opacity = 1.0;
+          } else if (dist === 2) {
+            strokeWidth = 1.6;
+            opacity = 0.72;
+          } else {
+            strokeWidth = 1.1;
+            opacity = 0.48;
+          }
           strokeDash = "none";
           markerEnd = "url(#grav-arrow-active)";
         } else {
-          // 非焦点链路深度压暗虚化
+          // 非焦点链路保留微弱发丝（0.05），避免完全隐形产生断层感
           strokeColor = "var(--line)";
           strokeWidth = 0.6;
-          opacity = 0.03;
+          opacity = 0.05;
           strokeDash = "none";
         }
       } else {
@@ -557,8 +615,8 @@ export function SkillTreeCanvas({
           markerEnd = "url(#grav-arrow-active)";
         } else {
           strokeColor = "var(--line)";
-          strokeWidth = 0.9;
-          opacity = 0.14;
+          strokeWidth = 0.8;
+          opacity = 0.12;
           strokeDash = edge.type === "synergy" ? "3 3" : "4 4";
           markerEnd = "url(#grav-arrow-muted)";
         }
@@ -1484,14 +1542,31 @@ export function SkillTreeCanvas({
                   </g>
                 ))}
 
-                {/* 1.5 分类星区分界射线与外缘星域标题 (Constellation Sectors) */}
+                {/* 1.5 分类星区微透空间底衬、分界射线与外缘星域标题 (Constellation Sectors) */}
                 {categoriesList.map((cat, idx) => {
                   const sectorSpan = 360 / Math.max(1, categoriesList.length);
                   const angleDeg = idx * sectorSpan;
                   const rad = (angleDeg * Math.PI) / 180;
                   const maxR = 730;
+                  const minR = 60;
                   const rayX = PLANETARY_CENTER_X + maxR * Math.cos(rad);
                   const rayY = PLANETARY_CENTER_Y + maxR * Math.sin(rad);
+
+                  // 扇形几何多边形/弧线底衬 (Sector Constellation Wedge Mesh)
+                  const startRad = (angleDeg * Math.PI) / 180;
+                  const endRad = ((angleDeg + sectorSpan) * Math.PI) / 180;
+                  const x1 = PLANETARY_CENTER_X + minR * Math.cos(startRad);
+                  const y1 = PLANETARY_CENTER_Y + minR * Math.sin(startRad);
+                  const x2 = PLANETARY_CENTER_X + maxR * Math.cos(startRad);
+                  const y2 = PLANETARY_CENTER_Y + maxR * Math.sin(startRad);
+                  const x3 = PLANETARY_CENTER_X + maxR * Math.cos(endRad);
+                  const y3 = PLANETARY_CENTER_Y + maxR * Math.sin(endRad);
+                  const x4 = PLANETARY_CENTER_X + minR * Math.cos(endRad);
+                  const y4 = PLANETARY_CENTER_Y + minR * Math.sin(endRad);
+                  const isLargeArc = sectorSpan > 180 ? 1 : 0;
+                  const sectorPath = `M ${x1} ${y1} L ${x2} ${y2} A ${maxR} ${maxR} 0 ${isLargeArc} 1 ${x3} ${y3} L ${x4} ${y4} A ${minR} ${minR} 0 ${isLargeArc} 0 ${x1} ${y1} Z`;
+
+                  const isSectorActive = causalAnalysis?.activeCategories.has(cat) ?? false;
 
                   // 扇区标题位置 (在扇形中央外缘)
                   const midAngleDeg = angleDeg + sectorSpan / 2;
@@ -1502,33 +1577,44 @@ export function SkillTreeCanvas({
 
                   return (
                     <g key={`sector-${cat}`}>
+                      {/* 扇区空间底衬几何层 (Sector Spatial Mesh: 激活高亮 vs 交替浅纸底) */}
+                      <path
+                        d={sectorPath}
+                        fill={isSectorActive ? "var(--paper-subtle)" : idx % 2 === 0 ? "var(--paper-subtle)" : "transparent"}
+                        opacity={isSectorActive ? 0.75 : 0.25}
+                        stroke={isSectorActive ? "var(--ink)" : "none"}
+                        strokeWidth={isSectorActive ? 0.8 : 0}
+                        strokeDasharray={isSectorActive ? "2 4" : "none"}
+                        className="transition-all duration-300 pointer-events-none"
+                      />
+
                       <line
                         x1={PLANETARY_CENTER_X}
                         y1={PLANETARY_CENTER_Y}
                         x2={rayX}
                         y2={rayY}
-                        stroke="var(--ink)"
-                        strokeWidth="0.9"
-                        strokeDasharray="4 4"
-                        opacity="0.6"
+                        stroke={isSectorActive ? "var(--ink)" : "var(--line)"}
+                        strokeWidth={isSectorActive ? 1.2 : 0.8}
+                        strokeDasharray={isSectorActive ? "none" : "4 4"}
+                        opacity={isSectorActive ? 0.8 : 0.45}
                       />
                       <g transform={`translate(${labelX}, ${labelY})`}>
                         <rect
-                          x={-64}
-                          y={-12}
-                          width={128}
-                          height={24}
-                          rx="12"
+                          x={-68}
+                          y={-13}
+                          width={136}
+                          height={26}
+                          rx="13"
                           fill="var(--surface)"
-                          stroke="var(--ink)"
-                          strokeWidth="1.2"
+                          stroke={isSectorActive ? "var(--ink)" : "var(--line)"}
+                          strokeWidth={isSectorActive ? 1.8 : 1.0}
                         />
                         <text
                           textAnchor="middle"
                           dominantBaseline="central"
                           fontFamily="serif"
                           fontSize="11"
-                          fontWeight="bold"
+                          fontWeight={isSectorActive ? "bold" : "normal"}
                           fill="var(--ink)"
                         >
                           {`[ ${cat} ]`}
@@ -1790,14 +1876,22 @@ export function SkillTreeCanvas({
               const isFocal = causalAnalysis?.focalNodeId === node.id;
               const isPrereq = causalAnalysis?.allPrereqs.has(node.id) ?? false;
               const isSuccessor = causalAnalysis?.allSuccessors.has(node.id) ?? false;
-              const isConnectedInChain = isFocal || isPrereq || isSuccessor;
+              const nodeDist = causalAnalysis?.nodeDistances.get(node.id);
 
-              // 智能透明度：聚焦时未关联节点深度降噪压暗至 0.12，高亮因果链路
+              // 拓扑距离衰减与宏观背景保留 (Topological Distance Decay & Macro Forest Context)
               let nodeOpacity = isMatched ? 1.0 : 0.22;
               if (causalAnalysis) {
-                nodeOpacity = isConnectedInChain ? 1.0 : 0.12;
+                if (isFocal) {
+                  nodeOpacity = 1.0;
+                } else if (nodeDist !== undefined) {
+                  // 距离核心节点越远，透明度梯度衰减：d=1 -> 0.95, d=2 -> 0.78, d>=3 -> 0.60
+                  nodeOpacity = nodeDist === 1 ? 0.95 : nodeDist === 2 ? 0.78 : 0.60;
+                } else {
+                  // 保留宏观森林定位感：未激活背景节点保持 0.30 (若匹配分类为 0.35)
+                  nodeOpacity = isMatched ? 0.30 : 0.16;
+                }
               } else if (isLocked) {
-                nodeOpacity = isMatched ? 0.42 : 0.18;
+                nodeOpacity = isMatched ? 0.45 : 0.20;
               }
 
               const tierText = node.curriculumTier === "Uni_Prep" ? "Uni" : (node.curriculumTier ?? "EF");
@@ -1962,7 +2056,7 @@ export function SkillTreeCanvas({
                         width={cardW}
                         height={cardH}
                         rx="4"
-                        fill="var(--surface)"
+                        fill={isMastered ? "var(--paper-subtle)" : "var(--surface)"}
                         stroke={
                           isFocal || isSelected
                             ? "var(--ink)"
@@ -1985,8 +2079,9 @@ export function SkillTreeCanvas({
                         height={cardH - 3}
                         rx="3"
                         fill="none"
-                        stroke={isAvailable ? "var(--line)" : "var(--paper-subtle)"}
+                        stroke={isAvailable ? "var(--ink)" : "var(--paper-subtle)"}
                         strokeWidth="0.8"
+                        strokeOpacity={isAvailable ? 0.3 : 1}
                         pointerEvents="none"
                       />
 
@@ -1998,7 +2093,7 @@ export function SkillTreeCanvas({
                         height={2.8}
                         rx="1.4"
                         fill="var(--ink)"
-                        opacity={isFocal || isSelected ? 1.0 : isMastered ? 0.9 : isAvailable ? 0.6 : 0.25}
+                        opacity={isFocal || isSelected ? 1.0 : isMastered ? 0.9 : isAvailable ? 0.6 : 0.2}
                       />
 
                       {/* 选中态星盘十字准星定位线 (Reticle Corner Brackets) */}
@@ -2045,7 +2140,29 @@ export function SkillTreeCanvas({
                       </text>
 
                       {/* 因果链指示角标 或 状态指示徽记 */}
-                      {isPrereq ? (
+                      {isFocal ? (
+                        <g>
+                          <rect
+                            x={cardX + cardW - 86}
+                            y={cardY + 6.5}
+                            width={46}
+                            height={12.5}
+                            rx="2"
+                            fill="var(--ink)"
+                          />
+                          <text
+                            x={cardX + cardW - 63}
+                            y={cardY + 15.5}
+                            textAnchor="middle"
+                            fontFamily="monospace"
+                            fontSize="8"
+                            fontWeight="bold"
+                            fill="var(--surface)"
+                          >
+                            {de ? "Fokus" : "核心焦点"}
+                          </text>
+                        </g>
+                      ) : isPrereq ? (
                         <g>
                           <rect
                             x={cardX + cardW - 86}
@@ -2055,7 +2172,7 @@ export function SkillTreeCanvas({
                             rx="2"
                             fill="var(--paper-subtle)"
                             stroke="var(--ink)"
-                            strokeWidth="0.9"
+                            strokeWidth={nodeDist === 1 ? 1.2 : 0.8}
                           />
                           <text
                             x={cardX + cardW - 63}
@@ -2066,7 +2183,9 @@ export function SkillTreeCanvas({
                             fontWeight="bold"
                             fill="var(--ink)"
                           >
-                            {de ? "← Voraus." : "← 前置"}
+                            {nodeDist && nodeDist > 1
+                              ? de ? `← Voraus.${nodeDist}` : "← 前置 (远)"
+                              : de ? "← Voraus." : "← 前置"}
                           </text>
                         </g>
                       ) : isSuccessor ? (
@@ -2079,7 +2198,7 @@ export function SkillTreeCanvas({
                             rx="2"
                             fill="var(--paper-subtle)"
                             stroke="var(--ink)"
-                            strokeWidth="0.9"
+                            strokeWidth={nodeDist === 1 ? 1.2 : 0.8}
                           />
                           <text
                             x={cardX + cardW - 63}
@@ -2090,7 +2209,9 @@ export function SkillTreeCanvas({
                             fontWeight="bold"
                             fill="var(--ink)"
                           >
-                            {de ? "→ Entsperrt" : "→ 解锁"}
+                            {nodeDist && nodeDist > 1
+                              ? de ? `→ Entsp.${nodeDist}` : "→ 进阶解锁"
+                              : de ? "→ Entsperrt" : "→ 直接解锁"}
                           </text>
                         </g>
                       ) : (
@@ -2138,7 +2259,7 @@ export function SkillTreeCanvas({
                                 fontWeight="bold"
                                 fill="var(--ink)"
                               >
-                                {de ? "Bereit" : "待学习"}
+                                {de ? "Bereit" : "可攻坚"}
                               </text>
                             </>
                           ) : (
@@ -2161,7 +2282,7 @@ export function SkillTreeCanvas({
                                 fontSize="8"
                                 fill="var(--gray)"
                               >
-                                {de ? "Gesperrt" : "未解锁"}
+                                {de ? "Gesperrt" : "前置锁定"}
                               </text>
                             </>
                           )}
@@ -2243,7 +2364,7 @@ export function SkillTreeCanvas({
                     width={TREE_BOX_WIDTH}
                     height={TREE_BOX_HEIGHT}
                     rx="4"
-                    fill="var(--surface)"
+                    fill={isMastered ? "var(--paper-subtle)" : "var(--surface)"}
                     stroke={
                       isFocal || isSelected
                         ? "var(--ink)"
@@ -2265,8 +2386,9 @@ export function SkillTreeCanvas({
                     height={TREE_BOX_HEIGHT - 3}
                     rx="3"
                     fill="none"
-                    stroke={isAvailable ? "var(--line)" : "var(--paper-subtle)"}
+                    stroke={isAvailable ? "var(--ink)" : "var(--paper-subtle)"}
                     strokeWidth="0.8"
+                    strokeOpacity={isAvailable ? 0.3 : 1}
                     pointerEvents="none"
                   />
                   {/* 顶部学术状态标饰条 */}
@@ -2277,7 +2399,7 @@ export function SkillTreeCanvas({
                     height="3"
                     rx="1.5"
                     fill="var(--ink)"
-                    opacity={isFocal || isSelected ? 1.0 : isMastered ? 0.9 : isAvailable ? 0.6 : 0.25}
+                    opacity={isFocal || isSelected ? 1.0 : isMastered ? 0.9 : isAvailable ? 0.6 : 0.2}
                   />
 
                   {/* 第一行：状态图标、学段与状态胶囊 */}
@@ -2314,7 +2436,27 @@ export function SkillTreeCanvas({
                     </text>
 
                     {/* 因果链指示角标 或 状态指示徽记 */}
-                    {isPrereq ? (
+                    {isFocal ? (
+                      <g transform="translate(86, -2)">
+                        <rect
+                          width="46"
+                          height="13"
+                          rx="2"
+                          fill="var(--ink)"
+                        />
+                        <text
+                          x="23"
+                          y="9.5"
+                          textAnchor="middle"
+                          fontFamily="monospace"
+                          fontSize="8"
+                          fontWeight="bold"
+                          fill="var(--surface)"
+                        >
+                          {de ? "Fokus" : "核心焦点"}
+                        </text>
+                      </g>
+                    ) : isPrereq ? (
                       <g transform="translate(86, -2)">
                         <rect
                           width="46"
@@ -2322,7 +2464,7 @@ export function SkillTreeCanvas({
                           rx="2"
                           fill="var(--paper-subtle)"
                           stroke="var(--ink)"
-                          strokeWidth="0.9"
+                          strokeWidth={nodeDist === 1 ? 1.2 : 0.8}
                         />
                         <text
                           x="23"
@@ -2333,7 +2475,9 @@ export function SkillTreeCanvas({
                           fontWeight="bold"
                           fill="var(--ink)"
                         >
-                          {de ? "← Voraus." : "← 前置"}
+                          {nodeDist && nodeDist > 1
+                            ? de ? `← Voraus.${nodeDist}` : "← 前置 (远)"
+                            : de ? "← Voraus." : "← 前置"}
                         </text>
                       </g>
                     ) : isSuccessor ? (
@@ -2344,7 +2488,7 @@ export function SkillTreeCanvas({
                           rx="2"
                           fill="var(--paper-subtle)"
                           stroke="var(--ink)"
-                          strokeWidth="0.9"
+                          strokeWidth={nodeDist === 1 ? 1.2 : 0.8}
                         />
                         <text
                           x="23"
@@ -2355,7 +2499,9 @@ export function SkillTreeCanvas({
                           fontWeight="bold"
                           fill="var(--ink)"
                         >
-                          {de ? "→ Entsperrt" : "→ 解锁"}
+                          {nodeDist && nodeDist > 1
+                            ? de ? `→ Entsp.${nodeDist}` : "→ 进阶解锁"
+                            : de ? "→ Entsperrt" : "→ 直接解锁"}
                         </text>
                       </g>
                     ) : (
@@ -2387,7 +2533,7 @@ export function SkillTreeCanvas({
                               fontWeight="bold"
                               fill="var(--ink)"
                             >
-                              {de ? "Bereit" : "待学习"}
+                              {de ? "Bereit" : "可攻坚"}
                             </text>
                           </>
                         ) : (
@@ -2401,7 +2547,7 @@ export function SkillTreeCanvas({
                               fontSize="8"
                               fill="var(--gray)"
                             >
-                              {de ? "Gesperrt" : "未解锁"}
+                              {de ? "Gesperrt" : "前置锁定"}
                             </text>
                           </>
                         )}
@@ -2510,6 +2656,115 @@ export function SkillTreeCanvas({
 
           {/* 核心内容区 */}
           <div className="space-y-3 text-xs leading-relaxed">
+            {/* 因果推进学习路径 (Causal Progression Chain / 线性步骤流) */}
+            {causalAnalysis && causalAnalysis.progressionSteps.length > 1 && (
+              <div className="space-y-2 p-2.5 bg-[var(--paper-subtle)] border border-[var(--line)] rounded-[var(--radius)]">
+                <div className="flex items-center justify-between">
+                  <div className="font-mono text-[10px] uppercase tracking-wider font-bold text-[var(--ink)] flex items-center gap-1.5">
+                    <svg width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.6">
+                      <circle cx="8" cy="8" r="6" />
+                      <path d="M8 4v4l3 2" />
+                    </svg>
+                    <span>{de ? "Kausal-Lernpfad (Linear)" : "因果推进学习清单 (全链路)"}</span>
+                  </div>
+                  <span className="font-mono text-[9px] text-[var(--gray)]">
+                    {`${causalAnalysis.progressionSteps.length} ${de ? "Schritte" : "步进节点"}`}
+                  </span>
+                </div>
+                <div className="space-y-1.5">
+                  {causalAnalysis.progressionSteps.map((step, idx) => {
+                    const isThisFocal = step.role === "focal";
+                    const stepStatus = unlockStates.get(step.id) ?? "locked";
+                    const isStepMastered = stepStatus === "mastered";
+                    const isStepAvailable = stepStatus === "available";
+                    const stepTitleZH = step.node?.titleZH || step.id;
+                    const stepTitleDE = step.node?.titleDE || "";
+
+                    return (
+                      <div
+                        key={step.id}
+                        onClick={() => setSelectedNodeId(step.id)}
+                        className={`p-2 rounded-[var(--radius)] border transition-all cursor-pointer flex items-center justify-between gap-2 ${
+                          isThisFocal
+                            ? "bg-[var(--surface)] border-[var(--ink)] shadow-none"
+                            : "bg-[var(--surface)] border-[var(--line)] hover:border-[var(--ink)] hover:bg-[var(--paper)]"
+                        }`}
+                      >
+                        <div className="flex items-center gap-2 min-w-0">
+                          {/* 步骤标号 */}
+                          <div
+                            className={`w-5 h-5 rounded-full flex items-center justify-center font-mono text-[10px] font-bold shrink-0 ${
+                              isThisFocal
+                                ? "bg-[var(--ink)] text-[var(--surface)]"
+                                : isStepMastered
+                                ? "bg-[var(--paper-subtle)] text-[var(--ink)] border border-[var(--ink)]"
+                                : "bg-[var(--paper-subtle)] text-[var(--gray)] border border-[var(--line)]"
+                            }`}
+                          >
+                            {idx + 1}
+                          </div>
+                          <div className="min-w-0">
+                            <div className="flex items-center gap-1.5">
+                              <span
+                                className={`font-mono text-[8.5px] px-1 py-0.5 rounded-[var(--radius)] font-bold ${
+                                  step.role === "focal"
+                                    ? "bg-[var(--ink)] text-[var(--surface)]"
+                                    : step.role === "prereq"
+                                    ? "bg-[var(--paper-subtle)] text-[var(--ink)] border border-[var(--line)]"
+                                    : "bg-[var(--surface)] text-[var(--gray)] border border-[var(--line)]"
+                                }`}
+                              >
+                                {step.role === "focal"
+                                  ? de ? "Fokus" : "当前攻坚"
+                                  : step.role === "prereq"
+                                  ? de ? `Voraus. (d=${step.dist})` : `前置基石 (d=${step.dist})`
+                                  : de ? `Folge (d=${step.dist})` : `解锁进阶 (d=${step.dist})`}
+                              </span>
+                              <span className="font-serif text-[11px] font-bold text-[var(--ink)] truncate max-w-[150px]">
+                                {stepTitleZH}
+                              </span>
+                            </div>
+                            {stepTitleDE && (
+                              <div
+                                className="font-mono text-[8.5px] text-[var(--gray)] truncate max-w-[200px]"
+                                title={stepTitleDE}
+                              >
+                                {`DE · ${stepTitleDE}`}
+                              </div>
+                            )}
+                          </div>
+                        </div>
+
+                        {/* 状态徽标 */}
+                        <div className="shrink-0 flex items-center">
+                          {isStepMastered ? (
+                            <span className="inline-flex items-center gap-0.5 px-1 py-0.5 rounded-[var(--radius)] font-mono text-[8px] bg-[var(--ink)] text-[var(--surface)]">
+                              <svg width="8" height="8" viewBox="0 0 10 10" fill="none">
+                                <path d="M2 5l2.5 2.5 4-5" stroke="currentColor" strokeWidth="1.4" />
+                              </svg>
+                              <span>{de ? "Gekonnt" : "已掌握"}</span>
+                            </span>
+                          ) : isStepAvailable ? (
+                            <span className="inline-flex items-center px-1 py-0.5 rounded-[var(--radius)] font-mono text-[8px] border border-[var(--ink)] text-[var(--ink)]">
+                              {de ? "Bereit" : "可学"}
+                            </span>
+                          ) : (
+                            <span className="inline-flex items-center gap-0.5 px-1 py-0.5 rounded-[var(--radius)] font-mono text-[8px] border border-[var(--line)] text-[var(--gray)]">
+                              <svg width="8" height="8" viewBox="0 0 10 10" fill="none">
+                                <rect x="2" y="4" width="6" height="5" rx="1" stroke="currentColor" strokeWidth="1.1" />
+                                <path d="M3.5 4V2.5a1.5 1.5 0 0 1 3 0V4" stroke="currentColor" strokeWidth="1.1" />
+                              </svg>
+                              <span>{de ? "Gesperrt" : "锁定"}</span>
+                            </span>
+                          )}
+                        </div>
+                      </div>
+                    );
+                  })}
+                </div>
+              </div>
+            )}
+
             {/* 核心概念因果推演 */}
             {(activeNode.summaryZH || activeNode.summaryDE) && (
               <div className="space-y-1">
