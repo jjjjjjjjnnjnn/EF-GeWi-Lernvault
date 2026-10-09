@@ -287,6 +287,8 @@
 - [2026-10-09-drawer-auto-popup-and-modular-i18n](Journal/2026-10-09-drawer-auto-popup-and-modular-i18n.md) — **知识图谱节点收起后自动弹出与拼插式多语言模块化体系**：节点收起态点击必弹+双重反选根因清除+拼插式多语言架构+HUD语言切换器与全景节点本地化（全绿）
 - [2026-10-09-all-subjects-macro-view](Journal/2026-10-09-all-subjects-macro-view.md) — **知识图谱全科学业宏观星图与跨学科聚合板块**：四步闭环研制AllSubjectsMacroView+全科学术引力星盘+十科学阶阵列矩阵+四大跨学科融通战役流水线+全科700+考点实时检索与穿梭入科（全绿）
 - [2026-10-09-canvas-pan-drag-vs-click-fix](Journal/2026-10-09-canvas-pan-drag-vs-click-fix.md) — **知识图谱画布平移拖拽与空白点击抽屉关闭防误触分离**：isCanvasPannedRef位移门禁+handleCanvasBgClick防误触拦截+底层背景装饰与连线pointerEvents穿透（全绿）
+- [2026-10-09-svg-typography-and-box-overflow-fix](Journal/2026-10-09-svg-typography-and-box-overflow-fix.md) — **知识图谱文字超出方框与卡片大面积重叠物理碰撞技术根治**：svgTypography视觉宽度引擎+clipPath安全围栏+智能动态胶囊+1阶紧邻展开远端保持胶囊（全绿）
+- [2026-10-09-skill-tree-pure-german-fuzzy-search-and-hud-refinement](Journal/2026-10-09-skill-tree-pure-german-fuzzy-search-and-hud-refinement.md) — **知识图谱德语纯净模式、全语言模糊检索引擎与极简HUD工作台交接**：德语模式零中文泄漏+语言控制收敛至顶栏+星区下拉化+独立多语言模糊检索算法（36单测/tsc/vault-check全绿）
 - 约定：文件名 `YYYY-MM-DD-<thema>.md`，头部frontmatter（`fach`可空，`tags: [EF, Meta]`）。
 
 
