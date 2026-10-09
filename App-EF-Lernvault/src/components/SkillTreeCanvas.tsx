@@ -35,6 +35,7 @@ export interface SkillTreeCanvasProps {
   readonly onOpenNote?: (noteId: string) => void;
   readonly onOpenTool?: (toolId: string) => void;
   readonly className?: string;
+  readonly masteredNodeIds?: Set<string> | readonly string[];
 }
 
 // 阶梯树/科技树模式常量 (Laned Tech Tree: 5 纵深阶段 x 领域分类横向泳道)
@@ -104,6 +105,7 @@ export function SkillTreeCanvas({
   onOpenNote,
   onOpenTool,
   className = "",
+  masteredNodeIds: masteredNodeIdsProp,
 }: SkillTreeCanvasProps) {
   const de = lang === "de";
 
@@ -121,7 +123,14 @@ export function SkillTreeCanvas({
 
   // 3. 掌握状态集合 (与全局技能树持久化联动)
   const [masteredIds, setMasteredIds] = useState<Set<string>>(() => {
-    return getStoredMasteredNodeIds(initialFach);
+    const fromStorage = getStoredMasteredNodeIds(initialFach);
+    if (masteredNodeIdsProp) {
+      const merged = new Set(fromStorage);
+      const propSet = masteredNodeIdsProp instanceof Set ? masteredNodeIdsProp : new Set(masteredNodeIdsProp);
+      propSet.forEach((id) => merged.add(id));
+      return merged;
+    }
+    return fromStorage;
   });
 
   // 4. 选中知识点 (右侧研习抽屉展开，默认高亮展示当前推荐攻关考点)
@@ -216,21 +225,49 @@ export function SkillTreeCanvas({
     }
   }, [initialFach, handleSelectFach]);
 
-  // 监听全域掌握状态变更事件 (例如来自 Reise 完成微课时触发)
+  // 属性变化与学科切换时同步掌握集合
+  useEffect(() => {
+    const stored = getStoredMasteredNodeIds(selectedFach);
+    if (masteredNodeIdsProp) {
+      const merged = new Set(stored);
+      const propSet = masteredNodeIdsProp instanceof Set ? masteredNodeIdsProp : new Set(masteredNodeIdsProp);
+      propSet.forEach((id) => merged.add(id));
+      setMasteredIds(merged);
+    } else {
+      setMasteredIds(stored);
+    }
+  }, [selectedFach, masteredNodeIdsProp]);
+
+  // 监听全域掌握状态变更事件 (例如来自 Reise 完成微课时触发) 及跨 Tab 存储事件
   useEffect(() => {
     const handleMasteredEvent = (e: Event) => {
       const customEvent = e as CustomEvent<{ fach: string; nodeId: string; isMastered: boolean }>;
-      if (customEvent.detail && customEvent.detail.fach.toLowerCase() === selectedFach.toLowerCase()) {
-        setMasteredIds(getStoredMasteredNodeIds(selectedFach));
+      if (
+        !customEvent.detail ||
+        !customEvent.detail.fach ||
+        customEvent.detail.fach.toLowerCase() === selectedFach.toLowerCase() ||
+        selectedFach === "ALL"
+      ) {
+        const stored = getStoredMasteredNodeIds(selectedFach);
+        if (masteredNodeIdsProp) {
+          const merged = new Set(stored);
+          const propSet = masteredNodeIdsProp instanceof Set ? masteredNodeIdsProp : new Set(masteredNodeIdsProp);
+          propSet.forEach((id) => merged.add(id));
+          setMasteredIds(merged);
+        } else {
+          setMasteredIds(stored);
+        }
       }
     };
     if (typeof window !== "undefined") {
       window.addEventListener(SKILL_TREE_MASTERED_EVENT, handleMasteredEvent);
+      window.addEventListener("storage", handleMasteredEvent);
       return () => {
         window.removeEventListener(SKILL_TREE_MASTERED_EVENT, handleMasteredEvent);
+        window.removeEventListener("storage", handleMasteredEvent);
       };
     }
-  }, [selectedFach]);
+  }, [selectedFach, masteredNodeIdsProp]);
 
   // 快捷键支持：按 ESC 退出节点详情抽屉
   useEffect(() => {
@@ -613,7 +650,10 @@ export function SkillTreeCanvas({
         if (isEdgeInCausalChain) {
           const dist = causalAnalysis.edgeDistances.get(edge.id) ?? 1;
           strokeColor = "var(--ink)";
-          if (dist === 1) {
+          if (fromMastered) {
+            strokeWidth = 2.4;
+            opacity = 1.0;
+          } else if (dist === 1) {
             strokeWidth = 2.4;
             opacity = 1.0;
           } else if (dist === 2) {
@@ -633,11 +673,18 @@ export function SkillTreeCanvas({
           strokeDash = "none";
         }
       } else {
-        // 默认状态：轻柔细微发丝线，杜绝蜘蛛网干扰
-        if (isPathActive) {
+        // 默认状态：源节点已掌握时连向后置节点的连线呈现墨色实线
+        if (fromMastered) {
+          strokeColor = "var(--ink)";
+          strokeWidth = 1.8;
+          opacity = 0.95;
+          strokeDash = "none";
+          markerEnd = "url(#grav-arrow-active)";
+        } else if (isPathActive) {
           strokeColor = "var(--ink)";
           strokeWidth = 1.3;
-          opacity = 0.28;
+          opacity = 0.35;
+          strokeDash = "none";
           markerEnd = "url(#grav-arrow-active)";
         } else {
           strokeColor = "var(--line)";
@@ -1109,6 +1156,14 @@ export function SkillTreeCanvas({
     const stored = getStoredMasteredNodeIds(displayDrawerNode.fach);
     return stored.has(displayDrawerNode.id) ? "mastered" : "available";
   }, [displayDrawerNode, unlockStates]);
+
+  // 计算当前选中知识点直接解锁的后置考点列表 (Direct Successor Nodes)
+  const directUnlockedSuccessors = useMemo(() => {
+    if (!displayDrawerNode) return [];
+    return activeGraph.nodes.filter((node) => {
+      return Boolean(node.prerequisites && node.prerequisites.includes(displayDrawerNode.id));
+    });
+  }, [displayDrawerNode, activeGraph.nodes]);
 
   const lastDrawerCausalAnalysisRef = useRef<typeof causalAnalysis>(null);
   if (causalAnalysis && isDrawerOpen) {
@@ -2031,6 +2086,20 @@ export function SkillTreeCanvas({
                           <>
                             {/* A. 知识点星体核心 (Planetary Body Orb) */}
                             <g className="planetary-orb">
+                              {/* 纯 SVG/CSS 墨色微波纹动效 */}
+                              {isMastered && (
+                                <circle
+                                  cx="0"
+                                  cy="0"
+                                  r="21"
+                                  fill="none"
+                                  stroke="var(--ink)"
+                                  strokeWidth="1.6"
+                                  className="ink-ripple-wave"
+                                  style={{ transformOrigin: "0px 0px" }}
+                                  data-testid={`ink-ripple-${node.id}`}
+                                />
+                              )}
                               {/* 大气层星晕光环 */}
                               <circle
                                 r="21"
@@ -2248,6 +2317,20 @@ export function SkillTreeCanvas({
                         <>
                           {/* A. 星体 Orb */}
                           <g className="planetary-orb">
+                            {/* 纯 SVG/CSS 墨色微波纹动效 */}
+                            {isMastered && (
+                              <circle
+                                cx="0"
+                                cy="0"
+                                r={isTargetActive ? 15 : 11}
+                                fill="none"
+                                stroke="var(--ink)"
+                                strokeWidth="1.4"
+                                className="ink-ripple-wave"
+                                style={{ transformOrigin: "0px 0px" }}
+                                data-testid={`ink-ripple-${node.id}`}
+                              />
+                            )}
                             <circle
                               r={isTargetActive ? 11 : 7.5}
                               fill={isMastered ? "var(--ink)" : isAvailable ? "var(--surface)" : "var(--paper-subtle)"}
@@ -2423,6 +2506,19 @@ export function SkillTreeCanvas({
 
                   {/* 第一行：状态图标、学段与状态胶囊 */}
                   <g transform="translate(10, 16)">
+                    {isMastered && (
+                      <circle
+                        cx="4.5"
+                        cy="4.5"
+                        r="8.5"
+                        fill="none"
+                        stroke="var(--ink)"
+                        strokeWidth="1.2"
+                        className="ink-ripple-wave"
+                        style={{ transformOrigin: "4.5px 4.5px" }}
+                        data-testid={`ink-ripple-${node.id}`}
+                      />
+                    )}
                     {isMastered && (
                       <path
                         d="M0 4 L3.5 7.5 L9 1"
@@ -2703,9 +2799,10 @@ export function SkillTreeCanvas({
                       ? "border border-[var(--ink)] text-[var(--ink)]"
                       : "border border-[var(--line)] text-[var(--gray)]"
                   }`}
+                  data-testid="drawer-node-status-badge"
                 >
                   {activeNodeStatus === "mastered"
-                    ? de ? "Gekonnt" : "已精通掌握"
+                    ? de ? "Gekonnt" : "已掌握 / Gekonnt (已精通掌握)"
                     : activeNodeStatus === "available"
                     ? de ? "Verfügbar" : "可立即攻坚"
                     : de ? "Gesperrt" : "前置未解锁"}
@@ -2739,6 +2836,95 @@ export function SkillTreeCanvas({
 
           {/* 核心内容区 */}
           <div className="space-y-3 text-xs leading-relaxed">
+            {/* 当节点已掌握时：清晰展示「已掌握 / Gekonnt」并列出该节点所直接解锁的后置考点列表 */}
+            {activeNodeStatus === "mastered" && (
+              <div
+                className="p-3 bg-[var(--paper-subtle)] border border-[var(--ink)] rounded-[var(--radius)] space-y-2.5"
+                data-testid="drawer-mastered-summary"
+              >
+                <div className="flex items-center justify-between">
+                  <div className="font-mono text-[10px] uppercase tracking-wider font-bold text-[var(--ink)] flex items-center gap-1.5">
+                    <svg width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                      <polyline points="3 8.5 6.5 12 13 4" />
+                    </svg>
+                    <span>{de ? "Knoten-Status: Gekonnt" : "考点研习状态：已掌握 / Gekonnt"}</span>
+                  </div>
+                  <span className="font-mono text-[9px] font-bold px-1.5 py-0.5 bg-[var(--ink)] text-[var(--paper)] rounded-[var(--radius)]">
+                    {de ? "Gekonnt" : "已掌握"}
+                  </span>
+                </div>
+
+                <div className="space-y-1.5 pt-1 border-t border-[var(--line)]">
+                  <div className="flex items-center justify-between">
+                    <span className="font-mono text-[10px] uppercase tracking-wider font-semibold text-[var(--gray)]">
+                      {de ? "Direkt freigeschaltete Folge-Knoten" : "直接解锁的后置考点列表"}
+                    </span>
+                    <span className="font-mono text-[9px] text-[var(--ink)] font-bold">
+                      {`${directUnlockedSuccessors.length} ${de ? "Knoten" : "个考点"}`}
+                    </span>
+                  </div>
+
+                  {directUnlockedSuccessors.length > 0 ? (
+                    <div className="space-y-1.5" data-testid="direct-unlocked-successors-list">
+                      {directUnlockedSuccessors.map((succ) => {
+                        const succStatus = unlockStates.get(succ.id) ?? "locked";
+                        const isSuccMastered = succStatus === "mastered";
+                        const isSuccAvailable = succStatus === "available";
+                        const succLoc = resolveNodeLanguage(succ, nodeLangMode, lang);
+                        const succTitle = succLoc?.primaryTitle || (de ? succ.titleDE : succ.titleZH);
+
+                        return (
+                          <div
+                            key={succ.id}
+                            onClick={() => setSelectedNodeId(succ.id)}
+                            className="p-2 bg-[var(--surface)] border border-[var(--line)] hover:border-[var(--ink)] rounded-[var(--radius)] cursor-pointer flex items-center justify-between gap-2 transition-all"
+                            data-testid={`unlocked-successor-${succ.id}`}
+                          >
+                            <div className="min-w-0">
+                              <div className="flex items-center gap-1.5">
+                                <span className="font-mono text-[8.5px] px-1 py-0.5 border border-[var(--line)] bg-[var(--paper-subtle)] text-[var(--ink)] rounded-[var(--radius)] font-bold">
+                                  {`AFB ${succ.level === 1 ? "I" : succ.level === 2 ? "II" : "III"}`}
+                                </span>
+                                <span className="font-serif text-[11px] font-bold text-[var(--ink)] truncate max-w-[160px]">
+                                  {succTitle}
+                                </span>
+                              </div>
+                              {succLoc?.secondaryTitle && (
+                                <div className="font-mono text-[8.5px] text-[var(--gray)] truncate max-w-[200px]">
+                                  {succLoc.secondaryTitle}
+                                </div>
+                              )}
+                            </div>
+
+                            <div className="shrink-0 flex items-center">
+                              {isSuccMastered ? (
+                                <span className="font-mono text-[8px] px-1 py-0.5 rounded-[var(--radius)] bg-[var(--ink)] text-[var(--paper)] font-bold">
+                                  {de ? "Gekonnt" : "已掌握"}
+                                </span>
+                              ) : isSuccAvailable ? (
+                                <span className="font-mono text-[8px] px-1 py-0.5 rounded-[var(--radius)] border border-[var(--ink)] text-[var(--ink)] font-bold">
+                                  {de ? "Bereit" : "可立即攻坚"}
+                                </span>
+                              ) : (
+                                <span className="font-mono text-[8px] px-1 py-0.5 rounded-[var(--radius)] border border-[var(--line)] text-[var(--gray)]">
+                                  {de ? "Gesperrt" : "待解锁"}
+                                </span>
+                              )}
+                            </div>
+                          </div>
+                        );
+                      })}
+                    </div>
+                  ) : (
+                    <div className="p-2 border border-dashed border-[var(--line)] rounded-[var(--radius)] text-[10px] font-mono text-[var(--gray)]">
+                      {de
+                        ? "Keine weiteren Folge-Knoten (Ziel-Synthese / Capstone erreicht)."
+                        : "当前考点为本模块会考综合终极考点，无后置依赖。"}
+                    </div>
+                  )}
+                </div>
+              </div>
+            )}
             {/* 因果推进学习路径 (Causal Progression Chain / 线性步骤流) */}
             {drawerCausalAnalysis && drawerCausalAnalysis.progressionSteps.length > 1 && (
               <div className="space-y-2 p-2.5 bg-[var(--paper-subtle)] border border-[var(--line)] rounded-[var(--radius)]">

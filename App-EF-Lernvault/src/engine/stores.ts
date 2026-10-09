@@ -38,7 +38,11 @@ function numRec(v: unknown): Record<string, number> {
   return out;
 }
 
-export const xpStore: VersionedStore<XpData> = defineStore<XpData>({
+export interface XpStore extends VersionedStore<XpData> {
+  markDone: (reiseId: string, steps?: number) => void;
+}
+
+const rawXpStore = defineStore<XpData>({
   key: XP_STORAGE_KEY,
   version: 1,
   defaults: () => ({ version: 1, xp: 0, streak: [], badges: {}, done: {} }),
@@ -60,6 +64,22 @@ export const xpStore: VersionedStore<XpData> = defineStore<XpData>({
     };
   },
 });
+
+export const xpStore: XpStore = {
+  ...rawXpStore,
+  markDone: (reiseId: string, steps = 8): void => {
+    const current = rawXpStore.load();
+    const prevDone = current.done[reiseId] ?? 0;
+    const newSteps = Math.max(prevDone, steps);
+    rawXpStore.save({
+      ...current,
+      done: {
+        ...current.done,
+        [reiseId]: newSteps,
+      },
+    });
+  },
+};
 
 // ---------- Vergleich naechste-zeiten ----------
 export interface VergleichData {

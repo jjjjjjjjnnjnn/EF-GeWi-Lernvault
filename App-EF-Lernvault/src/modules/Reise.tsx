@@ -1053,6 +1053,7 @@ export default function ReiseModule({
     } else {
       addXP(xpReward, stepIdx);
       if (activeCourse.id) {
+        xpStore.markDone(activeCourse.id);
         markNodeMasteredByCourseId(activeCourse.id, activeCourse.fach);
       }
       alert(
@@ -2048,6 +2049,10 @@ export default function ReiseModule({
               disabled={oralChecks.filter(Boolean).length === 0}
               onClick={() => {
                 addXP(30, idx);
+                if (activeCourse?.id) {
+                  xpStore.markDone(activeCourse.id);
+                  markNodeMasteredByCourseId(activeCourse.id, activeCourse.fach);
+                }
                 alert(lang === "de" ? "Mündliche Prüfung abgeschlossen! +30 XP" : "口试模拟完成！+30 XP");
                 setActiveCourse(null);
               }}
@@ -2513,6 +2518,10 @@ export default function ReiseModule({
                         type="button"
                         onClick={() => {
                           addXP(activeCourse.xp, activeCourse.schritte.length - 1);
+                          if (activeCourse.id) {
+                            xpStore.markDone(activeCourse.id);
+                            markNodeMasteredByCourseId(activeCourse.id, activeCourse.fach);
+                          }
                           alert(lang === "de" ? `Lektion abgeschlossen! +${activeCourse.xp} XP erhalten!` : `恭喜完成本课！获得 +${activeCourse.xp} XP！`);
                           setActiveCourse(null);
                         }}

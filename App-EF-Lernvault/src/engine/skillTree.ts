@@ -1667,28 +1667,88 @@ export const graphRegistry = new SubjectGraphRegistryImpl();
 // ---------------------------------------------------------------------------
 
 export const SKILL_TREE_MASTERED_EVENT = "skill-tree-node-mastered";
+export const EF_SKILLTREE_MASTERED_KEY = "ef_skilltree_mastered";
 
 export function getStoredMasteredNodeIds(fach: SubjectKey): Set<string> {
+  const result = new Set<string>();
   try {
     if (typeof window === "undefined" || !window.localStorage) {
-      return new Set<string>();
+      return result;
     }
-    const raw = window.localStorage.getItem(`skill_tree_mastered_${fach}`);
-    if (!raw) return new Set<string>();
-    const parsed = JSON.parse(raw);
-    return Array.isArray(parsed) ? new Set(parsed) : new Set<string>();
+    // 1. 读取专属学科 key
+    const rawFach = window.localStorage.getItem(`skill_tree_mastered_${fach}`);
+    if (rawFach) {
+      try {
+        const parsed = JSON.parse(rawFach);
+        if (Array.isArray(parsed)) parsed.forEach((id) => result.add(String(id)));
+      } catch {
+        // ignore
+      }
+    }
+
+    const rawEfFach = window.localStorage.getItem(`ef_skilltree_mastered_${fach}`);
+    if (rawEfFach) {
+      try {
+        const parsed = JSON.parse(rawEfFach);
+        if (Array.isArray(parsed)) parsed.forEach((id) => result.add(String(id)));
+      } catch {
+        // ignore
+      }
+    }
+
+    // 2. 读取全局共享状态 key (ef_skilltree_mastered)
+    const rawGlobal = window.localStorage.getItem(EF_SKILLTREE_MASTERED_KEY);
+    if (rawGlobal) {
+      try {
+        const parsed = JSON.parse(rawGlobal);
+        if (Array.isArray(parsed)) {
+          parsed.forEach((id) => result.add(String(id)));
+        } else if (parsed && typeof parsed === "object") {
+          const fachKey = String(fach).toLowerCase();
+          for (const [k, v] of Object.entries(parsed)) {
+            if (k.toLowerCase() === fachKey && Array.isArray(v)) {
+              v.forEach((id) => result.add(String(id)));
+            } else if (v === true) {
+              result.add(k);
+            }
+          }
+        }
+      } catch {
+        // ignore
+      }
+    }
   } catch {
-    return new Set<string>();
+    // ignore
   }
+  return result;
 }
 
 export function saveStoredMasteredNodeIds(fach: SubjectKey, nodeIds: Set<string>): void {
   try {
     if (typeof window === "undefined" || !window.localStorage) return;
-    window.localStorage.setItem(
-      `skill_tree_mastered_${fach}`,
-      JSON.stringify(Array.from(nodeIds))
-    );
+    const arrayData = Array.from(nodeIds);
+    const jsonStr = JSON.stringify(arrayData);
+    window.localStorage.setItem(`skill_tree_mastered_${fach}`, jsonStr);
+    window.localStorage.setItem(`ef_skilltree_mastered_${fach}`, jsonStr);
+
+    // 同步更新全局 ef_skilltree_mastered 集合
+    const globalRaw = window.localStorage.getItem(EF_SKILLTREE_MASTERED_KEY);
+    let allMastered = new Set<string>();
+    if (globalRaw) {
+      try {
+        const parsed = JSON.parse(globalRaw);
+        if (Array.isArray(parsed)) {
+          allMastered = new Set(parsed);
+        }
+      } catch {
+        // ignore
+      }
+    }
+    // 合并当前学科的节点
+    for (const id of nodeIds) {
+      allMastered.add(id);
+    }
+    window.localStorage.setItem(EF_SKILLTREE_MASTERED_KEY, JSON.stringify(Array.from(allMastered)));
   } catch {
     // 静默降级
   }
@@ -1702,6 +1762,23 @@ export function setNodeMastered(fach: SubjectKey, nodeId: string, isMastered = t
     current.delete(nodeId);
   }
   saveStoredMasteredNodeIds(fach, current);
+
+  // 如果是取消掌握，也要同步从全局 ef_skilltree_mastered 移除
+  if (!isMastered && typeof window !== "undefined" && window.localStorage) {
+    try {
+      const globalRaw = window.localStorage.getItem(EF_SKILLTREE_MASTERED_KEY);
+      if (globalRaw) {
+        const parsed = JSON.parse(globalRaw);
+        if (Array.isArray(parsed)) {
+          const next = parsed.filter((id) => id !== nodeId);
+          window.localStorage.setItem(EF_SKILLTREE_MASTERED_KEY, JSON.stringify(next));
+        }
+      }
+    } catch {
+      // ignore
+    }
+  }
+
   if (typeof window !== "undefined" && window.dispatchEvent) {
     window.dispatchEvent(
       new CustomEvent(SKILL_TREE_MASTERED_EVENT, {
@@ -1726,7 +1803,8 @@ export function markNodeMasteredByCourseId(
       (n) =>
         n.linkedReiseId?.toLowerCase() === courseId.toLowerCase() ||
         n.id.toLowerCase() === courseId.toLowerCase() ||
-        (courseId.toLowerCase().includes(n.id.toLowerCase()) && n.id.length > 5)
+        (courseId.toLowerCase().includes(n.id.toLowerCase()) && n.id.length > 5) ||
+        (n.id.toLowerCase().includes(courseId.toLowerCase()) && courseId.length > 5)
     );
     if (matchedNode) {
       setNodeMastered(graph.fach, matchedNode.id, true);
@@ -1734,5 +1812,8 @@ export function markNodeMasteredByCourseId(
     }
   }
 
-  return { success: false };
+  // 备用兼容：即便未在内置图谱显式声明 linkedReiseId，仍将其标记并穿透至全局存储
+  const targetFach = fachHint || "Allgemein";
+  setNodeMastered(targetFach, courseId, true);
+  return { success: true, nodeId: courseId, fach: targetFach };
 }

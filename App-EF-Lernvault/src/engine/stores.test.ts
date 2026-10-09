@@ -100,3 +100,19 @@ describe("allStoreKeys", () => {
     ]));
   });
 });
+
+describe("xpStore.markDone", () => {
+  it("marks reise completion and updates step progress monotonically", () => {
+    xpStore.markDone("kurs-1", 8);
+    expect(xpStore.load().done["kurs-1"]).toBe(8);
+
+    // Call again with smaller step: should not regress
+    xpStore.markDone("kurs-1", 4);
+    expect(xpStore.load().done["kurs-1"]).toBe(8);
+
+    // Default step is 8
+    xpStore.markDone("kurs-2");
+    expect(xpStore.load().done["kurs-2"]).toBe(8);
+  });
+});
+
