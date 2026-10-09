@@ -281,6 +281,8 @@
 - [2026-10-08-planetary-graph-ten-subject-expansion](Journal/2026-10-08-planetary-graph-ten-subject-expansion.md) — **十科行星引力图谱批量扩张至 712 节点**：预设契约冻结+结构不变量自检器+编译期图谱接入+防漂移守卫测试；21 个既有节点 ID 逐字保留，进度零丢失
 - [2026-10-08-planetary-interaction-and-navigation-redesign](Journal/2026-10-08-planetary-interaction-and-navigation-redesign.md) — **行星知识图谱交互革命**：自由节点拖拽与一键复位+双指捏合与鼠标滚轮平滑缩放+单行全部分类Chip防换行重构+学科分页器与高中全科学科星系总录展开导航（516单测/build/vault-check全绿）
 - [2026-10-09-causal-distance-decay-and-macro-flow](Journal/2026-10-09-causal-distance-decay-and-macro-flow.md) — **因果拓扑距离梯度衰减、宏观星盘扇区底衬与抽屉线性推进清单**：BFS拓扑分层衰减算法+星盘扇区微透甜甜圈网格+右侧知识抽屉有序步骤流+纯矢量三态高对比编码（全绿）
+- [2026-10-09-product-roadmap-and-core-module-standardization](Journal/2026-10-09-product-roadmap-and-core-module-standardization.md) — **产品化演进路线图与核心业务模块标准化**：学科专区与文库卡片标准化改造+Flashcards吸收Recall复习流SessionSummary看板（全绿）
+- [2026-10-09-skill-tree-declutter-and-drawer-dismiss](Journal/2026-10-09-skill-tree-declutter-and-drawer-dismiss.md) — **知识图谱降噪、抽屉四维关闭与导航消冗**：抽屉四维关闭闭环（同节点反选/点空白/点叉/ESC）+锁定节点纯净Orb轻量化+径向交错波浪算法根治卡片碰撞重叠+顶栏删减重复技能树+控制条高度压缩（535单测/build/vault-check全绿）
 - 约定：文件名 `YYYY-MM-DD-<thema>.md`，头部frontmatter（`fach`可空，`tags: [EF, Meta]`）。
 
 
