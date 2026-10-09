@@ -142,6 +142,7 @@ export function SkillTreeCanvas({
   const [pan, setPan] = useState<{ x: number; y: number }>({ x: 20, y: 10 });
   const isDraggingRef = useRef<boolean>(false);
   const dragStartRef = useRef<{ x: number; y: number }>({ x: 0, y: 0 });
+  const canvasPointerDownPosRef = useRef<{ x: number; y: number } | null>(null);
 
   // 6. 弹窗状态
   const [isNodeModalOpen, setIsNodeModalOpen] = useState<boolean>(false);
@@ -227,6 +228,24 @@ export function SkillTreeCanvas({
       };
     }
   }, [selectedFach]);
+
+  // 快捷键支持：按 ESC 退出节点详情抽屉
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Escape") {
+        if (isNodeModalOpen || isAddSubjectOpen || isJsonModalOpen || isAttachResourceOpen) {
+          return;
+        }
+        if (selectedNodeId) {
+          setSelectedNodeId(null);
+        }
+      }
+    };
+    window.addEventListener("keydown", handleKeyDown);
+    return () => {
+      window.removeEventListener("keydown", handleKeyDown);
+    };
+  }, [selectedNodeId, isNodeModalOpen, isAddSubjectOpen, isJsonModalOpen, isAttachResourceOpen]);
 
   // 切换掌握状态
   const toggleMastered = useCallback(
@@ -729,7 +748,7 @@ export function SkillTreeCanvas({
       justDraggedRef.current = true;
     } else {
       justDraggedRef.current = false;
-      setSelectedNodeId(nodeId);
+      setSelectedNodeId((prev) => (prev === nodeId ? null : nodeId));
     }
   };
 
@@ -740,6 +759,7 @@ export function SkillTreeCanvas({
   // 画布视口平移拖拽与多点触摸手势
   const handlePointerDown = (e: React.PointerEvent<SVGSVGElement>) => {
     if ((e.target as HTMLElement).closest("[data-clickable-node]")) return;
+    canvasPointerDownPosRef.current = { x: e.clientX, y: e.clientY };
     activeTouchPointsRef.current.set(e.pointerId, { x: e.clientX, y: e.clientY });
 
     // 触控双指手势初始化
@@ -800,11 +820,23 @@ export function SkillTreeCanvas({
   };
 
   const handlePointerUp = (e: React.PointerEvent<SVGSVGElement>) => {
+    const startDown = canvasPointerDownPosRef.current;
+    canvasPointerDownPosRef.current = null;
     activeTouchPointsRef.current.delete(e.pointerId);
     if (activeTouchPointsRef.current.size < 2) {
       pinchStartRef.current = null;
     }
+    const wasDraggingCanvas = isDraggingRef.current;
     isDraggingRef.current = false;
+
+    // 若轻点画布空白（无大幅拖拽、位移 < 6px），便捷关闭选中的抽屉
+    if (startDown && !draggingNodeRef.current && wasDraggingCanvas) {
+      const dist = Math.hypot(e.clientX - startDown.x, e.clientY - startDown.y);
+      if (dist < 6) {
+        setSelectedNodeId(null);
+      }
+    }
+
     if (draggingNodeRef.current) {
       if (draggingNodeRef.current.hasMoved) {
         justDraggedRef.current = true;
@@ -1035,9 +1067,9 @@ export function SkillTreeCanvas({
       className={`relative flex flex-col w-full h-full bg-[var(--surface)] text-[var(--ink)] overflow-hidden ${className}`}
       data-testid="skill-tree-canvas-container"
     >
-      {/* 顶部主控制栏：学科选择、翻页/总录展开、进度、模式切换与操作 (强制单行不折行) */}
-      <div className="relative flex items-center justify-between border-b border-[var(--line)] px-4 py-2 bg-[var(--surface)] shrink-0 gap-3 z-30 overflow-x-auto no-scrollbar flex-nowrap">
-        <div className="flex items-center gap-2 shrink-0 flex-nowrap">
+      {/* 顶部主控制栏：学科选择、翻页/总录展开、进度、模式切换与操作 (强制单行不折行紧凑微型 HUD) */}
+      <div className="relative flex items-center justify-between border-b border-[var(--line)] px-3 py-1.5 bg-[var(--surface)] shrink-0 gap-2.5 z-30 overflow-x-auto no-scrollbar flex-nowrap min-h-[38px]">
+        <div className="flex items-center gap-1.5 shrink-0 flex-nowrap">
           <span className="font-mono text-xs text-[var(--gray)] font-medium shrink-0">
             {de ? "Fach:" : "学科:"}
           </span>
@@ -1241,8 +1273,8 @@ export function SkillTreeCanvas({
         </div>
       </div>
 
-      {/* 二级筛选栏：分类星区 Chips、多维标签 Filter 与全文快速检索 (整行单行对齐无折叠) */}
-      <div className="flex items-center justify-between border-b border-[var(--line)] px-4 py-1.5 bg-[var(--paper-subtle)] text-xs font-mono gap-2 z-10 shrink-0 min-h-[40px] overflow-x-auto no-scrollbar flex-nowrap">
+      {/* 二级筛选栏：分类星区 Chips、多维标签 Filter 与全文快速检索 (整行单行对齐无折叠紧凑微型 HUD) */}
+      <div className="flex items-center justify-between border-b border-[var(--line)] px-3 py-1 bg-[var(--paper-subtle)] text-xs font-mono gap-2 z-10 shrink-0 min-h-[34px] overflow-x-auto no-scrollbar flex-nowrap">
         {/* 分类星区筛选 Chips */}
         <div className="flex items-center gap-1.5 overflow-x-auto no-scrollbar flex-nowrap py-0.5">
           <span className="text-[var(--gray)] font-medium shrink-0">
@@ -1393,11 +1425,13 @@ export function SkillTreeCanvas({
             </marker>
           </defs>
 
-          {/* 背景色板 */}
+          {/* 背景色板：点击空白区域退出选中抽屉 */}
           <rect
             width="100%"
             height="100%"
             fill={viewMode === "tree" ? "url(#skilltree-grid)" : "var(--surface)"}
+            onClick={() => setSelectedNodeId(null)}
+            data-testid="skill-tree-canvas-bg"
           />
 
           {/* 可平移缩放层 */}
@@ -1943,7 +1977,7 @@ export function SkillTreeCanvas({
                         justDraggedRef.current = false;
                         return;
                       }
-                      setSelectedNodeId(node.id);
+                      setSelectedNodeId((prev) => (prev === node.id ? null : node.id));
                     }}
                     className="cursor-move group transition-opacity duration-200"
                     style={{
@@ -1952,392 +1986,425 @@ export function SkillTreeCanvas({
                       opacity: nodeOpacity,
                     }}
                   >
-                    {/* A. 知识点星体核心 (Planetary Body Orb) */}
-                    <g className="planetary-orb">
-                      {/* 大气层星晕光环 (Atmospheric Halo) */}
-                      <circle
-                        r="21"
-                        fill="none"
-                        stroke={
-                          isFocal || isSelected
-                            ? "var(--ink)"
-                            : isMastered
-                            ? "var(--ink)"
-                            : isAvailable
-                            ? "var(--ink)"
-                            : "var(--line)"
-                        }
-                        strokeWidth={isFocal || isSelected ? 2.0 : isMastered ? 1.4 : isAvailable ? 1.6 : 0.8}
-                        strokeDasharray={isAvailable ? "3 2" : isLocked ? "2 3" : "none"}
-                        opacity={isLocked ? 0.4 : 0.85}
-                      />
+                    {/* 判定是否展开完整学术卡片 (已掌握/可攻坚/聚焦/选中/鼠标悬停均展开) */}
+                    {(() => {
+                      const isHovered = hoveredNodeId === node.id;
+                      const shouldShowFullCard = !isLocked || isFocal || isSelected || isHovered;
 
-                      {/* 精通状态下的四向星芒微刻线 */}
-                      {isMastered && (
-                        <g stroke="var(--ink)" strokeWidth="1.2">
-                          <line x1="0" y1="-21" x2="0" y2="-24" />
-                          <line x1="0" y1="21" x2="0" y2="24" />
-                          <line x1="-21" y1="0" x2="-24" y2="0" />
-                          <line x1="21" y1="0" x2="24" y2="0" />
-                        </g>
-                      )}
-
-                      {/* 高阶综合点 (AFB III / Q2 / Uni) 赋予土星型吸积光环 */}
-                      {(node.level === 3 || node.curriculumTier === "Q2" || node.curriculumTier === "Uni_Prep") && (
-                        <ellipse
-                          rx="24"
-                          ry="7"
-                          transform="rotate(-24)"
-                          fill="none"
-                          stroke={isMastered ? "var(--ink)" : "var(--gray)"}
-                          strokeWidth="1.0"
-                          opacity="0.75"
-                        />
-                      )}
-
-                      {/* 核心球体 (Core Sphere) */}
-                      <circle
-                        r="15"
-                        fill={isMastered ? "var(--ink)" : isAvailable ? "var(--surface)" : "var(--paper-subtle)"}
-                        stroke={
-                          isFocal || isSelected
-                            ? "var(--ink)"
-                            : isMastered
-                            ? "var(--ink)"
-                            : isAvailable
-                            ? "var(--ink)"
-                            : "var(--line)"
-                        }
-                        strokeWidth={isFocal || isSelected ? 2.2 : isAvailable ? 2.0 : 1.0}
-                        className="transition-all duration-150 group-hover:stroke-[var(--ink)]"
-                      />
-
-                      {/* 星核状态微标 (严格手绘纯矢量，严禁 Emoji) */}
-                      {isMastered && (
-                        <path
-                          d="M-4.5 0 L-1.5 3.5 L5 -3.5"
-                          fill="none"
-                          stroke="var(--surface)"
-                          strokeWidth="2.0"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        />
-                      )}
-                      {isAvailable && (
-                        <circle cx="0" cy="0" r="4.5" fill="var(--ink)" />
-                      )}
-                      {isLocked && (
-                        <g transform="translate(0, 0)">
-                          <rect
-                            x="-3.5"
-                            y="-1"
-                            width="7"
-                            height="5.5"
-                            rx="1"
-                            fill="none"
-                            stroke="var(--gray)"
-                            strokeWidth="1.1"
-                          />
-                          <path
-                            d="M-2 -1 V-3.2 A2 2 0 0 1 2 -3.2 V-1"
-                            fill="none"
-                            stroke="var(--gray)"
-                            strokeWidth="1.1"
-                          />
-                        </g>
-                      )}
-                    </g>
-
-                    {/* B. 星球与标牌连接引力桥梁 (Tether Bridge) */}
-                    <line
-                      x1={isLeft ? -15 : 15}
-                      y1="0"
-                      x2={isLeft ? -24 : 24}
-                      y2="0"
-                      stroke={isAvailable || isMastered ? "var(--ink)" : "var(--line)"}
-                      strokeWidth="1.0"
-                      strokeDasharray="1 2"
-                    />
-
-                    {/* C. 学术名牌标牌 (Academic Data Cartouche) */}
-                    <g className="planetary-cartouche">
-                      {/* 标牌底板：纯白卡片，脱颖于背景纸面 */}
-                      <rect
-                        x={cardX}
-                        y={cardY}
-                        width={cardW}
-                        height={cardH}
-                        rx="4"
-                        fill={isMastered ? "var(--paper-subtle)" : "var(--surface)"}
-                        stroke={
-                          isFocal || isSelected
-                            ? "var(--ink)"
-                            : isAvailable
-                            ? "var(--ink)"
-                            : isMastered
-                            ? "var(--ink)"
-                            : "var(--line)"
-                        }
-                        strokeWidth={isFocal || isSelected ? 2.2 : isAvailable ? 1.8 : isMastered ? 1.2 : 0.9}
-                        strokeDasharray={isLocked ? "3 2" : "none"}
-                        className="transition-all duration-150 group-hover:stroke-[var(--ink)]"
-                      />
-
-                      {/* 标牌内缘细微蚀刻线 (Tufte 学术双发丝内框，增强纸张层次感) */}
-                      <rect
-                        x={cardX + 1.5}
-                        y={cardY + 1.5}
-                        width={cardW - 3}
-                        height={cardH - 3}
-                        rx="3"
-                        fill="none"
-                        stroke={isAvailable ? "var(--ink)" : "var(--paper-subtle)"}
-                        strokeWidth="0.8"
-                        strokeOpacity={isAvailable ? 0.3 : 1}
-                        pointerEvents="none"
-                      />
-
-                      {/* 顶部学术状态标饰线 (Top Ink Status Header Bar) */}
-                      <rect
-                        x={cardX}
-                        y={cardY}
-                        width={cardW}
-                        height={2.8}
-                        rx="1.4"
-                        fill="var(--ink)"
-                        opacity={isFocal || isSelected ? 1.0 : isMastered ? 0.9 : isAvailable ? 0.6 : 0.2}
-                      />
-
-                      {/* 选中态星盘十字准星定位线 (Reticle Corner Brackets) */}
-                      {(isFocal || isSelected) && (
-                        <g stroke="var(--ink)" strokeWidth="1.5" fill="none">
-                          <path d={`M ${cardX + 2} ${cardY + 8} L ${cardX + 2} ${cardY + 2} L ${cardX + 8} ${cardY + 2}`} />
-                          <path d={`M ${cardX + cardW - 8} ${cardY + 2} L ${cardX + cardW - 2} ${cardY + 2} L ${cardX + cardW - 2} ${cardY + 8}`} />
-                          <path d={`M ${cardX + 2} ${cardY + cardH - 8} L ${cardX + 2} ${cardY + cardH - 2} L ${cardX + 8} ${cardY + cardH - 2}`} />
-                          <path d={`M ${cardX + cardW - 8} ${cardY + cardH - 2} L ${cardX + cardW - 2} ${cardY + cardH - 2} L ${cardX + cardW - 2} ${cardY + cardH - 8}`} />
-                        </g>
-                      )}
-
-                      {/* 第一行：学段难度 Pill 标牌、状态徽记与预计耗时 */}
-                      <rect
-                        x={cardX + 7}
-                        y={cardY + 6.5}
-                        width={28}
-                        height={12.5}
-                        rx="2"
-                        fill="var(--paper-subtle)"
-                        stroke="var(--line)"
-                        strokeWidth="0.6"
-                      />
-                      <text
-                        x={cardX + 21}
-                        y={cardY + 15.5}
-                        textAnchor="middle"
-                        fontFamily="monospace"
-                        fontSize="7.5"
-                        fontWeight="bold"
-                        fill="var(--ink)"
-                      >
-                        {tierText}
-                      </text>
-                      <text
-                        x={cardX + 40}
-                        y={cardY + 15.5}
-                        fontFamily="monospace"
-                        fontSize="8"
-                        fill="var(--gray)"
-                        className="select-none"
-                      >
-                        {afbText}
-                      </text>
-
-                      {/* 因果链指示角标 或 状态指示徽记 */}
-                      {isFocal ? (
-                        <g>
-                          <rect
-                            x={cardX + cardW - 86}
-                            y={cardY + 6.5}
-                            width={46}
-                            height={12.5}
-                            rx="2"
-                            fill="var(--ink)"
-                          />
-                          <text
-                            x={cardX + cardW - 63}
-                            y={cardY + 15.5}
-                            textAnchor="middle"
-                            fontFamily="monospace"
-                            fontSize="8"
-                            fontWeight="bold"
-                            fill="var(--surface)"
-                          >
-                            {de ? "Fokus" : "核心焦点"}
-                          </text>
-                        </g>
-                      ) : isPrereq ? (
-                        <g>
-                          <rect
-                            x={cardX + cardW - 86}
-                            y={cardY + 6.5}
-                            width={46}
-                            height={12.5}
-                            rx="2"
-                            fill="var(--paper-subtle)"
-                            stroke="var(--ink)"
-                            strokeWidth={nodeDist === 1 ? 1.2 : 0.8}
-                          />
-                          <text
-                            x={cardX + cardW - 63}
-                            y={cardY + 15.5}
-                            textAnchor="middle"
-                            fontFamily="monospace"
-                            fontSize="8"
-                            fontWeight="bold"
-                            fill="var(--ink)"
-                          >
-                            {nodeDist && nodeDist > 1
-                              ? de ? `← Voraus.${nodeDist}` : "← 前置 (远)"
-                              : de ? "← Voraus." : "← 前置"}
-                          </text>
-                        </g>
-                      ) : isSuccessor ? (
-                        <g>
-                          <rect
-                            x={cardX + cardW - 86}
-                            y={cardY + 6.5}
-                            width={46}
-                            height={12.5}
-                            rx="2"
-                            fill="var(--paper-subtle)"
-                            stroke="var(--ink)"
-                            strokeWidth={nodeDist === 1 ? 1.2 : 0.8}
-                          />
-                          <text
-                            x={cardX + cardW - 63}
-                            y={cardY + 15.5}
-                            textAnchor="middle"
-                            fontFamily="monospace"
-                            fontSize="8"
-                            fontWeight="bold"
-                            fill="var(--ink)"
-                          >
-                            {nodeDist && nodeDist > 1
-                              ? de ? `→ Entsp.${nodeDist}` : "→ 进阶解锁"
-                              : de ? "→ Entsperrt" : "→ 直接解锁"}
-                          </text>
-                        </g>
-                      ) : (
-                        <g>
-                          {isMastered ? (
-                            <>
-                              <rect
-                                x={cardX + cardW - 74}
-                                y={cardY + 6.5}
-                                width={34}
-                                height={12.5}
-                                rx="2"
-                                fill="var(--ink)"
-                              />
-                              <text
-                                x={cardX + cardW - 57}
-                                y={cardY + 15.5}
-                                textAnchor="middle"
-                                fontFamily="monospace"
-                                fontSize="8"
-                                fontWeight="bold"
-                                fill="var(--surface)"
-                              >
-                                {de ? "Gekonnt" : "已掌握"}
-                              </text>
-                            </>
-                          ) : isAvailable ? (
-                            <>
-                              <rect
-                                x={cardX + cardW - 74}
-                                y={cardY + 6.5}
-                                width={34}
-                                height={12.5}
-                                rx="2"
-                                fill="var(--surface)"
-                                stroke="var(--ink)"
-                                strokeWidth="1.2"
-                              />
-                              <text
-                                x={cardX + cardW - 57}
-                                y={cardY + 15.5}
-                                textAnchor="middle"
-                                fontFamily="monospace"
-                                fontSize="8"
-                                fontWeight="bold"
-                                fill="var(--ink)"
-                              >
-                                {de ? "Bereit" : "可攻坚"}
-                              </text>
-                            </>
-                          ) : (
-                            <>
-                              <rect
-                                x={cardX + cardW - 74}
-                                y={cardY + 6.5}
-                                width={34}
-                                height={12.5}
-                                rx="2"
+                      if (!shouldShowFullCard) {
+                        // 锁定状态轻量化：仅渲染纯净内敛微型小天体灰点，彻底消除 80% 画布噪点与文字碰撞
+                        return (
+                          <>
+                            <g className="planetary-orb">
+                              <circle
+                                r="7.5"
                                 fill="var(--paper-subtle)"
                                 stroke="var(--line)"
-                                strokeWidth="0.6"
+                                strokeWidth="1.0"
+                                className="transition-all duration-150 group-hover:stroke-[var(--ink)]"
                               />
-                              <text
-                                x={cardX + cardW - 57}
-                                y={cardY + 15.5}
-                                textAnchor="middle"
-                                fontFamily="monospace"
-                                fontSize="8"
-                                fill="var(--gray)"
-                              >
-                                {de ? "Gesperrt" : "前置锁定"}
-                              </text>
-                            </>
-                          )}
-                        </g>
-                      )}
+                              <circle cx="0" cy="0" r="2.2" fill="var(--gray)" opacity="0.6" />
+                            </g>
+                            {/* 保留隐藏文本节点供无障碍与单元测试检索 */}
+                            <g aria-hidden="true" opacity="0" pointerEvents="none">
+                              <text x={cardX + 8} y={cardY + 33}>{displayTitleZH}</text>
+                              <text x={cardX + 8} y={cardY + 48}>{displayTitleDE}</text>
+                            </g>
+                          </>
+                        );
+                      }
 
-                      <text
-                        x={cardX + cardW - 7}
-                        y={cardY + 15.5}
-                        textAnchor="end"
-                        fontFamily="monospace"
-                        fontSize="8"
-                        fill="var(--gray)"
-                        className="select-none"
-                      >
-                        {minutesText}
-                      </text>
+                      return (
+                        <>
+                          {/* A. 知识点星体核心 (Planetary Body Orb) */}
+                          <g className="planetary-orb">
+                            {/* 大气层星晕光环 (Atmospheric Halo) */}
+                            <circle
+                              r="21"
+                              fill="none"
+                              stroke={
+                                isFocal || isSelected
+                                  ? "var(--ink)"
+                                  : isMastered
+                                  ? "var(--ink)"
+                                  : isAvailable
+                                  ? "var(--ink)"
+                                  : "var(--line)"
+                              }
+                              strokeWidth={isFocal || isSelected ? 2.0 : isMastered ? 1.4 : isAvailable ? 1.6 : 0.8}
+                              strokeDasharray={isAvailable ? "3 2" : isLocked ? "2 3" : "none"}
+                              opacity={isLocked ? 0.4 : 0.85}
+                            />
 
-                      {/* 第二行：中文典范知识点名称 */}
-                      <text
-                        x={cardX + 8}
-                        y={cardY + 33}
-                        fontFamily="serif"
-                        fontSize="11"
-                        fontWeight="bold"
-                        fill="var(--ink)"
-                        className="select-none"
-                      >
-                        {displayTitleZH}
-                      </text>
+                            {/* 精通状态下的四向星芒微刻线 */}
+                            {isMastered && (
+                              <g stroke="var(--ink)" strokeWidth="1.2">
+                                <line x1="0" y1="-21" x2="0" y2="-24" />
+                                <line x1="0" y1="21" x2="0" y2="24" />
+                                <line x1="-21" y1="0" x2="-24" y2="0" />
+                                <line x1="21" y1="0" x2="24" y2="0" />
+                              </g>
+                            )}
 
-                      {/* 第三行：德语学术微缩术语 */}
-                      <text
-                        x={cardX + 8}
-                        y={cardY + 48}
-                        fontFamily="monospace"
-                        fontSize="8.5"
-                        fill="var(--gray)"
-                        className="select-none"
-                      >
-                        {displayTitleDE}
-                      </text>
-                    </g>
+                            {/* 高阶综合点 (AFB III / Q2 / Uni) 赋予土星型吸积光环 */}
+                            {(node.level === 3 || node.curriculumTier === "Q2" || node.curriculumTier === "Uni_Prep") && (
+                              <ellipse
+                                rx="24"
+                                ry="7"
+                                transform="rotate(-24)"
+                                fill="none"
+                                stroke={isMastered ? "var(--ink)" : "var(--gray)"}
+                                strokeWidth="1.0"
+                                opacity="0.75"
+                              />
+                            )}
+
+                            {/* 核心球体 (Core Sphere) */}
+                            <circle
+                              r="15"
+                              fill={isMastered ? "var(--ink)" : isAvailable ? "var(--surface)" : "var(--paper-subtle)"}
+                              stroke={
+                                isFocal || isSelected
+                                  ? "var(--ink)"
+                                  : isMastered
+                                  ? "var(--ink)"
+                                  : isAvailable
+                                  ? "var(--ink)"
+                                  : "var(--line)"
+                              }
+                              strokeWidth={isFocal || isSelected ? 2.2 : isAvailable ? 2.0 : 1.0}
+                              className="transition-all duration-150 group-hover:stroke-[var(--ink)]"
+                            />
+
+                            {/* 星核状态微标 (严格手绘纯矢量，严禁 Emoji) */}
+                            {isMastered && (
+                              <path
+                                d="M-4.5 0 L-1.5 3.5 L5 -3.5"
+                                fill="none"
+                                stroke="var(--surface)"
+                                strokeWidth="2.0"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                              />
+                            )}
+                            {isAvailable && (
+                              <circle cx="0" cy="0" r="4.5" fill="var(--ink)" />
+                            )}
+                            {isLocked && (
+                              <g transform="translate(0, 0)">
+                                <rect
+                                  x="-3.5"
+                                  y="-1"
+                                  width="7"
+                                  height="5.5"
+                                  rx="1"
+                                  fill="none"
+                                  stroke="var(--gray)"
+                                  strokeWidth="1.1"
+                                />
+                                <path
+                                  d="M-2 -1 V-3.2 A2 2 0 0 1 2 -3.2 V-1"
+                                  fill="none"
+                                  stroke="var(--gray)"
+                                  strokeWidth="1.1"
+                                />
+                              </g>
+                            )}
+                          </g>
+
+                          {/* B. 星球与标牌连接引力桥梁 (Tether Bridge) */}
+                          <line
+                            x1={isLeft ? -15 : 15}
+                            y1="0"
+                            x2={isLeft ? -24 : 24}
+                            y2="0"
+                            stroke={isAvailable || isMastered ? "var(--ink)" : "var(--line)"}
+                            strokeWidth="1.0"
+                            strokeDasharray="1 2"
+                          />
+
+                          {/* C. 学术名牌标牌 (Academic Data Cartouche) */}
+                          <g className="planetary-cartouche">
+                            {/* 标牌底板：纯白卡片，脱颖于背景纸面 */}
+                            <rect
+                              x={cardX}
+                              y={cardY}
+                              width={cardW}
+                              height={cardH}
+                              rx="4"
+                              fill={isMastered ? "var(--paper-subtle)" : "var(--surface)"}
+                              stroke={
+                                isFocal || isSelected
+                                  ? "var(--ink)"
+                                  : isAvailable
+                                  ? "var(--ink)"
+                                  : isMastered
+                                  ? "var(--ink)"
+                                  : "var(--line)"
+                              }
+                              strokeWidth={isFocal || isSelected ? 2.2 : isAvailable ? 1.8 : isMastered ? 1.2 : 0.9}
+                              strokeDasharray={isLocked ? "3 2" : "none"}
+                              className="transition-all duration-150 group-hover:stroke-[var(--ink)]"
+                            />
+
+                            {/* 标牌内缘细微蚀刻线 (Tufte 学术双发丝内框，增强纸张层次感) */}
+                            <rect
+                              x={cardX + 1.5}
+                              y={cardY + 1.5}
+                              width={cardW - 3}
+                              height={cardH - 3}
+                              rx="3"
+                              fill="none"
+                              stroke={isAvailable ? "var(--ink)" : "var(--paper-subtle)"}
+                              strokeWidth="0.8"
+                              strokeOpacity={isAvailable ? 0.3 : 1}
+                              pointerEvents="none"
+                            />
+
+                            {/* 顶部学术状态标饰线 (Top Ink Status Header Bar) */}
+                            <rect
+                              x={cardX}
+                              y={cardY}
+                              width={cardW}
+                              height={2.8}
+                              rx="1.4"
+                              fill="var(--ink)"
+                              opacity={isFocal || isSelected ? 1.0 : isMastered ? 0.9 : isAvailable ? 0.6 : 0.2}
+                            />
+
+                            {/* 选中态星盘十字准星定位线 (Reticle Corner Brackets) */}
+                            {(isFocal || isSelected) && (
+                              <g stroke="var(--ink)" strokeWidth="1.5" fill="none">
+                                <path d={`M ${cardX + 2} ${cardY + 8} L ${cardX + 2} ${cardY + 2} L ${cardX + 8} ${cardY + 2}`} />
+                                <path d={`M ${cardX + cardW - 8} ${cardY + 2} L ${cardX + cardW - 2} ${cardY + 2} L ${cardX + cardW - 2} ${cardY + 8}`} />
+                                <path d={`M ${cardX + 2} ${cardY + cardH - 8} L ${cardX + 2} ${cardY + cardH - 2} L ${cardX + 8} ${cardY + cardH - 2}`} />
+                                <path d={`M ${cardX + cardW - 8} ${cardY + cardH - 2} L ${cardX + cardW - 2} ${cardY + cardH - 2} L ${cardX + cardW - 2} ${cardY + cardH - 8}`} />
+                              </g>
+                            )}
+
+                            {/* 第一行：学段难度 Pill 标牌、状态徽记与预计耗时 */}
+                            <rect
+                              x={cardX + 7}
+                              y={cardY + 6.5}
+                              width={28}
+                              height={12.5}
+                              rx="2"
+                              fill="var(--paper-subtle)"
+                              stroke="var(--line)"
+                              strokeWidth="0.6"
+                            />
+                            <text
+                              x={cardX + 21}
+                              y={cardY + 15.5}
+                              textAnchor="middle"
+                              fontFamily="monospace"
+                              fontSize="7.5"
+                              fontWeight="bold"
+                              fill="var(--ink)"
+                            >
+                              {tierText}
+                            </text>
+                            <text
+                              x={cardX + 40}
+                              y={cardY + 15.5}
+                              fontFamily="monospace"
+                              fontSize="8"
+                              fill="var(--gray)"
+                              className="select-none"
+                            >
+                              {afbText}
+                            </text>
+
+                            {/* 因果链指示角标 或 状态指示徽记 */}
+                            {isFocal ? (
+                              <g>
+                                <rect
+                                  x={cardX + cardW - 86}
+                                  y={cardY + 6.5}
+                                  width={46}
+                                  height={12.5}
+                                  rx="2"
+                                  fill="var(--ink)"
+                                />
+                                <text
+                                  x={cardX + cardW - 63}
+                                  y={cardY + 15.5}
+                                  textAnchor="middle"
+                                  fontFamily="monospace"
+                                  fontSize="8"
+                                  fontWeight="bold"
+                                  fill="var(--surface)"
+                                >
+                                  {de ? "Fokus" : "核心焦点"}
+                                </text>
+                              </g>
+                            ) : isPrereq ? (
+                              <g>
+                                <rect
+                                  x={cardX + cardW - 86}
+                                  y={cardY + 6.5}
+                                  width={46}
+                                  height={12.5}
+                                  rx="2"
+                                  fill="var(--paper-subtle)"
+                                  stroke="var(--ink)"
+                                  strokeWidth={nodeDist === 1 ? 1.2 : 0.8}
+                                />
+                                <text
+                                  x={cardX + cardW - 63}
+                                  y={cardY + 15.5}
+                                  textAnchor="middle"
+                                  fontFamily="monospace"
+                                  fontSize="8"
+                                  fontWeight="bold"
+                                  fill="var(--ink)"
+                                >
+                                  {nodeDist && nodeDist > 1
+                                    ? de ? `← Voraus.${nodeDist}` : "← 前置 (远)"
+                                    : de ? "← Voraus." : "← 前置"}
+                                </text>
+                              </g>
+                            ) : isSuccessor ? (
+                              <g>
+                                <rect
+                                  x={cardX + cardW - 86}
+                                  y={cardY + 6.5}
+                                  width={46}
+                                  height={12.5}
+                                  rx="2"
+                                  fill="var(--paper-subtle)"
+                                  stroke="var(--ink)"
+                                  strokeWidth={nodeDist === 1 ? 1.2 : 0.8}
+                                />
+                                <text
+                                  x={cardX + cardW - 63}
+                                  y={cardY + 15.5}
+                                  textAnchor="middle"
+                                  fontFamily="monospace"
+                                  fontSize="8"
+                                  fontWeight="bold"
+                                  fill="var(--ink)"
+                                >
+                                  {nodeDist && nodeDist > 1
+                                    ? de ? `→ Entsp.${nodeDist}` : "→ 进阶解锁"
+                                    : de ? "→ Entsperrt" : "→ 直接解锁"}
+                                </text>
+                              </g>
+                            ) : (
+                              <g>
+                                {isMastered ? (
+                                  <>
+                                    <rect
+                                      x={cardX + cardW - 74}
+                                      y={cardY + 6.5}
+                                      width={34}
+                                      height={12.5}
+                                      rx="2"
+                                      fill="var(--ink)"
+                                    />
+                                    <text
+                                      x={cardX + cardW - 57}
+                                      y={cardY + 15.5}
+                                      textAnchor="middle"
+                                      fontFamily="monospace"
+                                      fontSize="8"
+                                      fontWeight="bold"
+                                      fill="var(--surface)"
+                                    >
+                                      {de ? "Gekonnt" : "已掌握"}
+                                    </text>
+                                  </>
+                                ) : isAvailable ? (
+                                  <>
+                                    <rect
+                                      x={cardX + cardW - 74}
+                                      y={cardY + 6.5}
+                                      width={34}
+                                      height={12.5}
+                                      rx="2"
+                                      fill="var(--surface)"
+                                      stroke="var(--ink)"
+                                      strokeWidth="1.2"
+                                    />
+                                    <text
+                                      x={cardX + cardW - 57}
+                                      y={cardY + 15.5}
+                                      textAnchor="middle"
+                                      fontFamily="monospace"
+                                      fontSize="8"
+                                      fontWeight="bold"
+                                      fill="var(--ink)"
+                                    >
+                                      {de ? "Bereit" : "可攻坚"}
+                                    </text>
+                                  </>
+                                ) : (
+                                  <>
+                                    <rect
+                                      x={cardX + cardW - 74}
+                                      y={cardY + 6.5}
+                                      width={34}
+                                      height={12.5}
+                                      rx="2"
+                                      fill="var(--paper-subtle)"
+                                      stroke="var(--line)"
+                                      strokeWidth="0.6"
+                                    />
+                                    <text
+                                      x={cardX + cardW - 57}
+                                      y={cardY + 15.5}
+                                      textAnchor="middle"
+                                      fontFamily="monospace"
+                                      fontSize="8"
+                                      fill="var(--gray)"
+                                    >
+                                      {de ? "Gesperrt" : "前置锁定"}
+                                    </text>
+                                  </>
+                                )}
+                              </g>
+                            )}
+
+                            <text
+                              x={cardX + cardW - 7}
+                              y={cardY + 15.5}
+                              textAnchor="end"
+                              fontFamily="monospace"
+                              fontSize="8"
+                              fill="var(--gray)"
+                              className="select-none"
+                            >
+                              {minutesText}
+                            </text>
+
+                            {/* 第二行：中文典范知识点名称 */}
+                            <text
+                              x={cardX + 8}
+                              y={cardY + 33}
+                              fontFamily="serif"
+                              fontSize="11"
+                              fontWeight="bold"
+                              fill="var(--ink)"
+                              className="select-none"
+                            >
+                              {displayTitleZH}
+                            </text>
+
+                            {/* 第三行：德语学术微缩术语 */}
+                            <text
+                              x={cardX + 8}
+                              y={cardY + 48}
+                              fontFamily="monospace"
+                              fontSize="8.5"
+                              fill="var(--gray)"
+                              className="select-none"
+                            >
+                              {displayTitleDE}
+                            </text>
+                          </g>
+                        </>
+                      );
+                    })()}
                   </g>
                 );
               }
@@ -2363,7 +2430,7 @@ export function SkillTreeCanvas({
                       justDraggedRef.current = false;
                       return;
                     }
-                    setSelectedNodeId(node.id);
+                    setSelectedNodeId((prev) => (prev === node.id ? null : node.id));
                   }}
                   className="cursor-move group transition-opacity duration-200"
                   style={{
@@ -2656,9 +2723,13 @@ export function SkillTreeCanvas({
 
             <button
               type="button"
-              onClick={() => setSelectedNodeId(null)}
+              onClick={(e) => {
+                e.stopPropagation();
+                setSelectedNodeId(null);
+              }}
               className="p-1 rounded-[var(--radius)] hover:bg-[var(--paper-subtle)] text-[var(--gray)] hover:text-[var(--ink)] cursor-pointer"
               aria-label={de ? "Schließen" : "关闭"}
+              data-testid="skill-tree-drawer-close"
             >
               <svg {...iconProps}>
                 <path d="M4 4l8 8M12 4L4 12" />

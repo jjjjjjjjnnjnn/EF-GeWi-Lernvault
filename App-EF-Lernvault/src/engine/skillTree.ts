@@ -742,8 +742,8 @@ export function computePlanetaryRadialLayout(
 ): SubjectKnowledgeGraph {
   const cx = options?.center?.x ?? 560;
   const cy = options?.center?.y ?? 500;
-  const startRadius = options?.startRadius ?? 180;
-  const orbitStep = options?.orbitStep ?? 130;
+  const startRadius = options?.startRadius ?? 210;
+  const orbitStep = options?.orbitStep ?? 160;
   const sectorPaddingDeg = options?.sectorPaddingDeg ?? 8;
 
   // 1. 抽取所有分类
@@ -791,16 +791,22 @@ export function computePlanetaryRadialLayout(
     bins.set(key, list);
   }
 
-  // 5. 在每个扇区及轨道上等角辐射排布
+  // 5. 在每个扇区及轨道上等角辐射排布，并注入同轨径向错位 (Radial Staggering)
   const updatedNodes = graph.nodes.map((node) => {
     const cat = node.category || "Allgemein";
     const orbit = getOrbitIndex(node);
     const sector = categorySectorMap.get(cat) || { startAngle: 0, span: 360 };
-    const radius = startRadius + (orbit - 1) * orbitStep;
 
     const binNodes = bins.get(`${cat}___${orbit}`) || [node];
     const indexInBin = binNodes.findIndex((n) => n.id === node.id);
     const countInBin = binNodes.length;
+
+    // 径向交错防碰撞错位：同桶多卡片时奇偶交错，彻底根除相邻文字卡片压边重叠
+    let radiusOffset = 0;
+    if (countInBin > 1) {
+      radiusOffset = indexInBin % 2 === 1 ? 36 : (indexInBin > 0 ? -26 : 0);
+    }
+    const radius = startRadius + (orbit - 1) * orbitStep + radiusOffset;
 
     // 计算角度
     const angleStep = sector.span / Math.max(1, countInBin);

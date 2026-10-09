@@ -18,7 +18,7 @@ export interface AppHeaderProps {
   onToggleLang?: () => void;
   onOpenKnowledgeManager: () => void;
   onOpenCoursePipeline: () => void;
-  onOpenSkillTree: () => void;
+  onOpenSkillTree?: () => void;
   onOpenDailySprint: () => void;
   onOpenHelp: () => void;
   vaultMsg?: string | null;
@@ -38,7 +38,7 @@ export function AppHeader({
   onToggleLang,
   onOpenKnowledgeManager,
   onOpenCoursePipeline,
-  onOpenSkillTree,
+  onOpenSkillTree: _onOpenSkillTree,
   onOpenDailySprint,
   onOpenHelp,
   vaultMsg,
@@ -138,22 +138,6 @@ export function AppHeader({
         </div>
 
         <Separator orientation="vertical" className="h-5 hidden sm:block" />
-
-        {/* 技能树主入口 */}
-        <Button
-          variant="outline"
-          size="sm"
-          onClick={onOpenSkillTree}
-          title={de ? "Kompetenzbaum (Skill-Tree) öffnen" : "打开知识图谱与技能树"}
-        >
-          <svg width="13" height="13" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-            <circle cx="8" cy="3.5" r="2" />
-            <circle cx="4" cy="12.5" r="2" />
-            <circle cx="12" cy="12.5" r="2" />
-            <path d="M8 5.5v3M8 8.5L4 10.5M8 8.5l4 2" />
-          </svg>
-          <span className="hidden sm:inline">{de ? "Skill-Tree" : "技能树"}</span>
-        </Button>
 
         {/* 课程工坊 */}
         <Button

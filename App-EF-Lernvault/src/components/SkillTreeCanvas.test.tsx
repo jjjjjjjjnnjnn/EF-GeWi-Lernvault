@@ -243,5 +243,39 @@ describe("SkillTreeCanvas Component (可插拔知识图谱与技能树画布测�
     expect(screen.getByText("EF · 核心奠基 (AFB II)")).toBeInTheDocument();
     expect(screen.getByText("Q1 · 进阶机制 (AFB II)")).toBeInTheDocument();
   });
+
+  it("supports closing drawer via same-node toggle, close button, Escape key, and empty canvas click", () => {
+    render(<SkillTreeCanvas lang="zh" initialFach="SoWi" />);
+
+    const preismechanismusNode = screen.getByTestId("skill-node-sowi-preismechanismus");
+
+    // 1. 点击节点，抽屉打开
+    fireEvent.click(preismechanismusNode);
+    expect(screen.getByTestId("skill-tree-node-drawer")).toBeInTheDocument();
+
+    // 2. 再次点击同一节点，抽屉反选关闭
+    fireEvent.click(preismechanismusNode);
+    expect(screen.queryByTestId("skill-tree-node-drawer")).not.toBeInTheDocument();
+
+    // 3. 点击节点再次打开，然后点击右上角小叉关闭
+    fireEvent.click(preismechanismusNode);
+    expect(screen.getByTestId("skill-tree-node-drawer")).toBeInTheDocument();
+    const closeBtn = screen.getByTestId("skill-tree-drawer-close");
+    fireEvent.click(closeBtn);
+    expect(screen.queryByTestId("skill-tree-node-drawer")).not.toBeInTheDocument();
+
+    // 4. 点击节点再次打开，按 ESC 键关闭
+    fireEvent.click(preismechanismusNode);
+    expect(screen.getByTestId("skill-tree-node-drawer")).toBeInTheDocument();
+    fireEvent.keyDown(window, { key: "Escape" });
+    expect(screen.queryByTestId("skill-tree-node-drawer")).not.toBeInTheDocument();
+
+    // 5. 点击节点再次打开，点击空白画布背景关闭
+    fireEvent.click(preismechanismusNode);
+    expect(screen.getByTestId("skill-tree-node-drawer")).toBeInTheDocument();
+    const canvasBg = screen.getByTestId("skill-tree-canvas-bg");
+    fireEvent.click(canvasBg);
+    expect(screen.queryByTestId("skill-tree-node-drawer")).not.toBeInTheDocument();
+  });
 });
 
