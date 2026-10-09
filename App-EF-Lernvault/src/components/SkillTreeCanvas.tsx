@@ -3,7 +3,6 @@ import type { Lang } from "../i18n";
 import {
   graphRegistry,
   computeGraphUnlockStates,
-  topologicalSort,
   calculateSubjectProgress,
   insertKnowledgeNode,
   removeKnowledgeNode,
@@ -32,11 +31,39 @@ export interface SkillTreeCanvasProps {
   readonly className?: string;
 }
 
-// 阶梯树模式常量
-const TREE_BOX_WIDTH = 194;
-const TREE_BOX_HEIGHT = 78;
-const TREE_LAYER_STEP_X = 250;
-const TREE_LAYER_STEP_Y = 130;
+// 阶梯树/科技树模式常量 (Laned Tech Tree: 5 纵深阶段 x 领域分类横向泳道)
+const TREE_BOX_WIDTH = 210;
+const TREE_BOX_HEIGHT = 80;
+const LANE_HEADER_WIDTH = 190;
+const TECH_COL_WIDTH = 270;
+const TIER_COLUMNS: readonly CurriculumTier[] = ["Sek_I", "EF", "Q1", "Q2", "Uni_Prep"];
+const TIER_LABELS: Record<CurriculumTier, { de: string; zh: string }> = {
+  Sek_I: { de: "SEK I · FUNDAMENT", zh: "SEK I · 基础认知 (AFB I)" },
+  EF: { de: "EF · KERNMODELLE", zh: "EF · 核心奠基 (AFB II)" },
+  Q1: { de: "Q1 · VERTIEFUNG", zh: "Q1 · 进阶机制 (AFB II)" },
+  Q2: { de: "Q2 · SYNTHESE", zh: "Q2 · 会考综合 (AFB III)" },
+  Uni_Prep: { de: "UNI · DISKURS", zh: "UNI · 先修拓展 (AFB III)" },
+};
+
+function getNodeTierIndex(node: KnowledgeNode): number {
+  const t = (node.curriculumTier || "").toLowerCase().replace(/[\s_-]/g, "");
+  if (t.includes("seki") || t.includes("sek1")) return 0;
+  if (t.includes("ef")) return 1;
+  if (t.includes("q1")) return 2;
+  if (t.includes("q2")) return 3;
+  if (t.includes("uni")) return 4;
+  switch (node.stage) {
+    case "einfuehrung": return 0;
+    case "grundlagen": return 1;
+    case "vertiefung": return 2;
+    case "synthese": return 3;
+    case "klausur_praxis": return 4;
+    default: {
+      const lvl = node.level ?? 2;
+      return Math.min(4, Math.max(0, lvl === 1 ? 0 : lvl === 2 ? 1 : 3));
+    }
+  }
+}
 
 // 行星引力图模式常量
 const PLANETARY_CENTER_X = 580;
@@ -102,13 +129,15 @@ export function SkillTreeCanvas({
   // 4.1 用户自定义移动节点坐标记录 (nodeId -> { x, y })
   const [customNodePositions, setCustomNodePositions] = useState<Map<string, { x: number; y: number }>>(() => new Map());
 
-  // 4.2 学科顶栏分页状态与全景目录展开状态
+  // 4.2 学科顶栏分页状态
   const [subjectPage, setSubjectPage] = useState<number>(() => {
     const allSubs = graphRegistry.listSubjects();
     const sIndex = allSubs.findIndex((s) => s.fach.toLowerCase() === (initialFach || "sowi").toLowerCase());
     return sIndex >= 0 ? Math.floor(sIndex / 5) : 0;
   });
-  const [isCatalogOpen, setIsCatalogOpen] = useState<boolean>(false);
+
+  // 4.3 鼠标悬停聚焦节点 ID (用于因果链聚焦与全局压暗降噪)
+  const [hoveredNodeId, setHoveredNodeId] = useState<string | null>(null);
 
   // 5. 画布平移缩放视口
   const [zoom, setZoom] = useState<number>(0.95);
@@ -258,40 +287,45 @@ export function SkillTreeCanvas({
       });
     }
 
-    // 阶梯树模式 (Tree View)
-    const topo = topologicalSort(activeGraph);
-    const orderMap = new Map<string, number>();
-    topo.sortedNodeIds.forEach((id, idx) => orderMap.set(id, idx));
-
-    const layerMap = new Map<string, number>();
-    for (const node of activeGraph.nodes) {
-      if (node.coordinates && !node.radialPosition) {
-        continue;
-      }
-      let maxPreLayer = -1;
-      for (const preId of node.prerequisites) {
-        const pLayer = layerMap.get(preId) ?? 0;
-        if (pLayer > maxPreLayer) maxPreLayer = pLayer;
-      }
-      layerMap.set(node.id, maxPreLayer + 1);
+    // 阶梯树/科技树网格模式 (Laned Tech Tree: 5 纵深阶段 x 领域分类横向泳道)
+    const lanes = categoriesList.length > 0 ? categoriesList : ["Allgemein"];
+    const laneNodeMap = new Map<string, KnowledgeNode[]>();
+    for (const lane of lanes) {
+      laneNodeMap.set(lane, []);
     }
-
-    const layerGroups = new Map<number, KnowledgeNode[]>();
     for (const node of activeGraph.nodes) {
-      const layer = node.layerIndex ?? layerMap.get(node.id) ?? 0;
-      const group = layerGroups.get(layer) ?? [];
-      group.push(node);
-      layerGroups.set(layer, group);
+      const cat = node.category && laneNodeMap.has(node.category) ? node.category : lanes[0];
+      laneNodeMap.get(cat)!.push(node);
     }
 
     const result: (KnowledgeNode & { x: number; y: number })[] = [];
-    layerGroups.forEach((nodesInLayer, layer) => {
-      nodesInLayer.forEach((node, idx) => {
-        const x = node.coordinates && !node.radialPosition ? node.coordinates.x : 80 + layer * TREE_LAYER_STEP_X;
-        const y = node.coordinates && !node.radialPosition ? node.coordinates.y : 80 + idx * TREE_LAYER_STEP_Y;
-        result.push({ ...node, x, y });
-      });
-    });
+    let currentLaneY = 80;
+
+    for (const lane of lanes) {
+      const nodesInLane = laneNodeMap.get(lane) || [];
+      const colBuckets: KnowledgeNode[][] = [[], [], [], [], []];
+      for (const node of nodesInLane) {
+        const colIdx = getNodeTierIndex(node);
+        colBuckets[colIdx].push(node);
+      }
+
+      for (let c = 0; c < 5; c++) {
+        colBuckets[c].sort((a, b) => a.level - b.level || a.id.localeCompare(b.id));
+      }
+
+      const maxInCol = Math.max(1, ...colBuckets.map((b) => b.length));
+      const laneH = maxInCol * 96 + 32;
+
+      for (let c = 0; c < 5; c++) {
+        colBuckets[c].forEach((node, subRow) => {
+          const x = LANE_HEADER_WIDTH + 24 + c * TECH_COL_WIDTH;
+          const y = currentLaneY + 20 + subRow * 96;
+          result.push({ ...node, x, y });
+        });
+      }
+
+      currentLaneY += laneH + 20;
+    }
 
     return result.map((n) => {
       const custom = customNodePositions.get(n.id);
@@ -300,7 +334,54 @@ export function SkillTreeCanvas({
       }
       return n;
     });
-  }, [viewMode, activeGraph, planetaryGraph, customNodePositions]);
+  }, [viewMode, activeGraph, planetaryGraph, customNodePositions, categoriesList]);
+
+  // 科技树模式横向泳道背景与标牌元数据
+  const lanesMeta = useMemo(() => {
+    if (viewMode !== "tree") return [];
+    const lanes = categoriesList.length > 0 ? categoriesList : ["Allgemein"];
+    const laneNodeMap = new Map<string, KnowledgeNode[]>();
+    for (const lane of lanes) {
+      laneNodeMap.set(lane, []);
+    }
+    for (const node of activeGraph.nodes) {
+      const cat = node.category && laneNodeMap.has(node.category) ? node.category : lanes[0];
+      laneNodeMap.get(cat)!.push(node);
+    }
+
+    let currentLaneY = 80;
+    const metaList: Array<{
+      name: string;
+      y: number;
+      height: number;
+      totalCount: number;
+      masteredCount: number;
+    }> = [];
+
+    for (const lane of lanes) {
+      const nodesInLane = laneNodeMap.get(lane) || [];
+      const colBuckets: KnowledgeNode[][] = [[], [], [], [], []];
+      for (const node of nodesInLane) {
+        const colIdx = getNodeTierIndex(node);
+        colBuckets[colIdx].push(node);
+      }
+      const maxInCol = Math.max(1, ...colBuckets.map((b) => b.length));
+      const laneH = maxInCol * 96 + 32;
+      const masteredCount = nodesInLane.filter((n) => masteredIds.has(n.id)).length;
+
+      metaList.push({
+        name: lane,
+        y: currentLaneY,
+        height: laneH,
+        totalCount: nodesInLane.length,
+        masteredCount,
+      });
+
+      currentLaneY += laneH + 20;
+    }
+
+    return metaList;
+  }, [viewMode, categoriesList, activeGraph.nodes, masteredIds]);
 
   const nodeMap = useMemo(() => {
     return new Map(layoutedNodes.map((n) => [n.id, n]));
@@ -331,6 +412,79 @@ export function SkillTreeCanvas({
     [selectedCategory, selectedTag, searchQuery]
   );
 
+  const focalNodeId = hoveredNodeId || selectedNodeId;
+
+  // 因果链拓扑分析：递归计算焦点节点的直接/间接前置、后续解锁节点与关联边
+  const causalAnalysis = useMemo(() => {
+    if (!focalNodeId) return null;
+    const directPrereqs = new Set<string>();
+    const allPrereqs = new Set<string>();
+    const directSuccessors = new Set<string>();
+    const allSuccessors = new Set<string>();
+    const causalEdgeIds = new Set<string>();
+
+    const incomingEdges = new Map<string, Array<{ from: string; edgeId: string }>>();
+    const outgoingEdges = new Map<string, Array<{ to: string; edgeId: string }>>();
+
+    for (const edge of activeGraph.edges) {
+      if (!incomingEdges.has(edge.to)) incomingEdges.set(edge.to, []);
+      incomingEdges.get(edge.to)!.push({ from: edge.from, edgeId: edge.id });
+
+      if (!outgoingEdges.has(edge.from)) outgoingEdges.set(edge.from, []);
+      outgoingEdges.get(edge.from)!.push({ to: edge.to, edgeId: edge.id });
+    }
+
+    // 向上递归探索前置依赖 (Ancestors)
+    const upQueue = [focalNodeId];
+    while (upQueue.length > 0) {
+      const curr = upQueue.shift()!;
+      const inEdges = incomingEdges.get(curr) || [];
+      for (const e of inEdges) {
+        causalEdgeIds.add(e.edgeId);
+        if (curr === focalNodeId) {
+          directPrereqs.add(e.from);
+        }
+        if (!allPrereqs.has(e.from) && e.from !== focalNodeId) {
+          allPrereqs.add(e.from);
+          upQueue.push(e.from);
+        }
+      }
+    }
+
+    // 向下递归探索后继解锁 (Successors / Dependents)
+    const downQueue = [focalNodeId];
+    while (downQueue.length > 0) {
+      const curr = downQueue.shift()!;
+      const outEdges = outgoingEdges.get(curr) || [];
+      for (const e of outEdges) {
+        causalEdgeIds.add(e.edgeId);
+        if (curr === focalNodeId) {
+          directSuccessors.add(e.to);
+        }
+        if (!allSuccessors.has(e.to) && e.to !== focalNodeId) {
+          allSuccessors.add(e.to);
+          downQueue.push(e.to);
+        }
+      }
+    }
+
+    const allConnectedNodeIds = new Set<string>([
+      focalNodeId,
+      ...allPrereqs,
+      ...allSuccessors,
+    ]);
+
+    return {
+      focalNodeId,
+      directPrereqs,
+      allPrereqs,
+      directSuccessors,
+      allSuccessors,
+      causalEdgeIds,
+      allConnectedNodeIds,
+    };
+  }, [focalNodeId, activeGraph.edges]);
+
   // 连线平滑路径计算 (行星模式 vs 树模式)
   const renderedEdges = useMemo(() => {
     return activeGraph.edges.map((edge) => {
@@ -342,6 +496,7 @@ export function SkillTreeCanvas({
       const toUnlocked = unlockStates.get(edge.to) !== "locked";
       const isPathActive = fromMastered && toUnlocked;
 
+      let pathData = "";
       if (viewMode === "planetary") {
         // 行星引力曲线：三次贝塞尔自中心向外平滑弧线
         const x1 = fromNode.x;
@@ -357,38 +512,81 @@ export function SkillTreeCanvas({
         const normalX = -dy * 0.15;
         const normalY = dx * 0.15;
 
-        const pathData = `M ${x1} ${y1} Q ${mx + normalX} ${my + normalY}, ${x2} ${y2}`;
+        pathData = `M ${x1} ${y1} Q ${mx + normalX} ${my + normalY}, ${x2} ${y2}`;
+      } else {
+        // 科技树模式：平滑横向贝塞尔曲线从左前置到右后继
+        const x1 = fromNode.x + TREE_BOX_WIDTH;
+        const y1 = fromNode.y + TREE_BOX_HEIGHT / 2;
+        const x2 = toNode.x;
+        const y2 = toNode.y + TREE_BOX_HEIGHT / 2;
 
-        return {
-          id: edge.id,
-          pathData,
-          isPathActive,
-          type: edge.type,
-        };
+        const dx = Math.max(32, Math.abs(x2 - x1) * 0.45);
+        pathData = `M ${x1} ${y1} C ${x1 + dx} ${y1}, ${x2 - dx} ${y2}, ${x2} ${y2}`;
       }
 
-      // 树形模式
-      const x1 = fromNode.x + TREE_BOX_WIDTH;
-      const y1 = fromNode.y + TREE_BOX_HEIGHT / 2;
-      const x2 = toNode.x;
-      const y2 = toNode.y + TREE_BOX_HEIGHT / 2;
+      // 因果链悬停聚焦与降噪规则
+      const isCausalFocus = causalAnalysis !== null;
+      const isEdgeInCausalChain = isCausalFocus && causalAnalysis.causalEdgeIds.has(edge.id);
 
-      const dx = Math.max(40, (x2 - x1) * 0.5);
-      const cx1 = x1 + dx;
-      const cy1 = y1;
-      const cx2 = x2 - dx;
-      const cy2 = y2;
+      let strokeColor = "var(--line)";
+      let strokeWidth = 1.0;
+      let opacity = 0.16;
+      let strokeDash = edge.type === "synergy" ? "3 3" : "none";
+      let markerEnd = undefined;
 
-      const pathData = `M ${x1} ${y1} C ${cx1} ${cy1}, ${cx2} ${cy2}, ${x2} ${y2}`;
+      if (isCausalFocus) {
+        if (isEdgeInCausalChain) {
+          strokeColor = "var(--ink)";
+          strokeWidth = 2.4;
+          opacity = 1.0;
+          strokeDash = "none";
+          markerEnd = "url(#grav-arrow-active)";
+        } else {
+          // 非焦点链路深度压暗虚化
+          strokeColor = "var(--line)";
+          strokeWidth = 0.6;
+          opacity = 0.03;
+          strokeDash = "none";
+        }
+      } else {
+        // 默认状态：轻柔细微发丝线，杜绝蜘蛛网干扰
+        if (isPathActive) {
+          strokeColor = "var(--ink)";
+          strokeWidth = 1.3;
+          opacity = 0.28;
+          markerEnd = "url(#grav-arrow-active)";
+        } else {
+          strokeColor = "var(--line)";
+          strokeWidth = 0.9;
+          opacity = 0.14;
+          strokeDash = edge.type === "synergy" ? "3 3" : "4 4";
+          markerEnd = "url(#grav-arrow-muted)";
+        }
+      }
 
       return {
         id: edge.id,
         pathData,
         isPathActive,
         type: edge.type,
+        strokeColor,
+        strokeWidth,
+        opacity,
+        strokeDash,
+        markerEnd,
       };
-    }).filter(Boolean) as { id: string; pathData: string; isPathActive: boolean; type: string }[];
-  }, [activeGraph.edges, nodeMap, masteredIds, unlockStates, viewMode]);
+    }).filter(Boolean) as {
+      id: string;
+      pathData: string;
+      isPathActive: boolean;
+      type: string;
+      strokeColor: string;
+      strokeWidth: number;
+      opacity: number;
+      strokeDash: string;
+      markerEnd?: string;
+    }[];
+  }, [activeGraph.edges, nodeMap, masteredIds, unlockStates, viewMode, causalAnalysis]);
 
   // 节点拖拽引用
   const draggingNodeRef = useRef<{
@@ -821,120 +1019,6 @@ export function SkillTreeCanvas({
             </span>
           </div>
 
-          {/* 全部学科展开总览下拉菜单 */}
-          <div className="relative">
-            <button
-              type="button"
-              onClick={() => setIsCatalogOpen((v) => !v)}
-              className="flex items-center gap-1 h-7 px-2.5 rounded-[var(--radius)] border border-[var(--line)] hover:border-[var(--ink)] bg-[var(--surface)] hover:bg-[var(--paper-subtle)] text-xs font-mono text-[var(--ink)] cursor-pointer whitespace-nowrap"
-              title={de ? "Alle Fächer anzeigen" : "展开全部学科全景目录"}
-            >
-              <span>{de ? `Fächer (${graphRegistry.listSubjects().length})` : `全部学科 (${graphRegistry.listSubjects().length})`}</span>
-              <svg width="10" height="10" viewBox="0 0 10 10" fill="none" stroke="currentColor" className={`transition-transform duration-200 ${isCatalogOpen ? "rotate-180" : ""}`}>
-                <path d="M2.5 3.5L5 6L7.5 3.5" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
-              </svg>
-            </button>
-
-            {/* 学科全景展开抽屉/下拉卡片 */}
-            {isCatalogOpen && (
-              <>
-                <div
-                  className="fixed inset-0 z-40"
-                  onClick={() => setIsCatalogOpen(false)}
-                />
-                <div className="absolute left-0 top-8 w-80 bg-[var(--surface)] border border-[var(--ink)] rounded-[var(--radius)] p-3 z-50 text-xs font-mono space-y-2.5">
-                  <div className="flex items-center justify-between border-b border-[var(--line)] pb-1.5">
-                    <span className="font-bold text-[var(--ink)] font-serif text-xs">
-                      {de ? "Fächer-Katalog (Gymnasium)" : "高中全科学科星系总录"}
-                    </span>
-                    <button
-                      type="button"
-                      onClick={() => setIsCatalogOpen(false)}
-                      className="text-[var(--gray)] hover:text-[var(--ink)] p-0.5 cursor-pointer flex items-center justify-center"
-                      title={de ? "Schließen" : "关闭"}
-                    >
-                      <svg width="10" height="10" viewBox="0 0 10 10" fill="none" stroke="currentColor">
-                        <path d="M1.5 1.5l7 7M8.5 1.5l-7 7" strokeWidth="1.3" strokeLinecap="round" />
-                      </svg>
-                    </button>
-                  </div>
-
-                  <div className="space-y-2.5 max-h-72 overflow-y-auto no-scrollbar">
-                    {[
-                      { titleZH: "AF I · 语言与艺术", titleDE: "AF I · Sprachen & Kunst", keys: ["Deutsch", "Englisch", "Musik"] },
-                      { titleZH: "AF II · 社会与政治", titleDE: "AF II · Gesellschaft", keys: ["SoWi", "Philo"] },
-                      { titleZH: "AF III · 数理自然科学", titleDE: "AF III · MINT", keys: ["Mathe", "Physik", "Chemie", "Bio"] },
-                      { titleZH: "体育运动", titleDE: "Sport", keys: ["Sport"] },
-                    ].map((group) => {
-                      const subs = graphRegistry.listSubjects().filter((s) => group.keys.some((k) => k.toLowerCase() === s.fach.toLowerCase()));
-                      if (subs.length === 0) return null;
-                      return (
-                        <div key={group.titleZH} className="space-y-1">
-                          <div className="text-[10px] text-[var(--gray)] font-semibold uppercase tracking-wider">
-                            {de ? group.titleDE : group.titleZH}
-                          </div>
-                          <div className="grid grid-cols-2 gap-1.5">
-                            {subs.map((sub) => {
-                              const isSelected = selectedFach.toLowerCase() === sub.fach.toLowerCase();
-                              return (
-                                <button
-                                  key={sub.fach}
-                                  type="button"
-                                  onClick={() => {
-                                    handleSelectFach(sub.fach);
-                                    setIsCatalogOpen(false);
-                                  }}
-                                  className={`p-1.5 rounded-[var(--radius)] border text-left text-xs transition-colors cursor-pointer flex flex-col ${
-                                    isSelected
-                                      ? "border-[var(--ink)] bg-[var(--ink)] text-[var(--surface)] font-bold"
-                                      : "border-[var(--line)] bg-[var(--surface)] text-[var(--ink)] hover:bg-[var(--paper-subtle)]"
-                                  }`}
-                                >
-                                  <span className="truncate">{de ? sub.nameDE : sub.nameZH}</span>
-                                </button>
-                              );
-                            })}
-                          </div>
-                        </div>
-                      );
-                    })}
-
-                    {/* 自定义扩展学科 */}
-                    {graphRegistry.listSubjects().filter((s) => s.isCustom).length > 0 && (
-                      <div className="space-y-1">
-                        <div className="text-[10px] text-[var(--gray)] font-semibold uppercase tracking-wider">
-                          {de ? "Eigene Fächer" : "自定义扩展学科"}
-                        </div>
-                        <div className="grid grid-cols-2 gap-1.5">
-                          {graphRegistry.listSubjects().filter((s) => s.isCustom).map((sub) => {
-                            const isSelected = selectedFach.toLowerCase() === sub.fach.toLowerCase();
-                            return (
-                              <button
-                                key={sub.fach}
-                                type="button"
-                                onClick={() => {
-                                  handleSelectFach(sub.fach);
-                                  setIsCatalogOpen(false);
-                                }}
-                                className={`p-1.5 rounded-[var(--radius)] border text-left text-xs transition-colors cursor-pointer flex flex-col ${
-                                  isSelected
-                                    ? "border-[var(--ink)] bg-[var(--ink)] text-[var(--surface)] font-bold"
-                                    : "border-[var(--line)] bg-[var(--surface)] text-[var(--ink)] hover:bg-[var(--paper-subtle)]"
-                                }`}
-                              >
-                                <span className="truncate">{de ? sub.nameDE : sub.nameZH}</span>
-                              </button>
-                            );
-                          })}
-                        </div>
-                      </div>
-                    )}
-                  </div>
-                </div>
-              </>
-            )}
-          </div>
-
           <button
             type="button"
             onClick={() => setIsAddSubjectOpen(true)}
@@ -956,7 +1040,7 @@ export function SkillTreeCanvas({
               type="button"
               onClick={() => setCustomNodePositions(new Map())}
               className="flex items-center gap-1 h-7 px-2 rounded-[var(--radius)] bg-[var(--ink)] text-[var(--surface)] text-xs font-mono font-bold hover:opacity-90 transition-all cursor-pointer shadow-none whitespace-nowrap shrink-0"
-              title={de ? `Positionen zurücksetzen (${customNodePositions.size})` : `复位所有已移动节点到默认引力位置 (${customNodePositions.size})`}
+              title={de ? `Positionen zurücksetzen (${customNodePositions.size})` : `复位所有已移动节点到默认位置 (${customNodePositions.size})`}
             >
               <svg {...iconProps} className="w-3.5 h-3.5">
                 <path d="M2.5 8a5.5 5.5 0 1 0 1.6-3.9L2 6.5M2 2.5v4h4" />
@@ -965,40 +1049,54 @@ export function SkillTreeCanvas({
             </button>
           )}
 
-          {/* 视图模式切换 */}
+          {/* 视图模式切换：引力星系 vs 科技树网格 */}
           <div className="flex items-center border border-[var(--line)] rounded-[var(--radius)] overflow-hidden h-7">
             <button
               type="button"
               onClick={() => setViewMode("planetary")}
               aria-pressed={viewMode === "planetary"}
-              className={`px-2.5 h-full text-xs cursor-pointer transition-colors ${
+              className={`flex items-center gap-1.5 px-2.5 h-full text-xs cursor-pointer transition-colors ${
                 viewMode === "planetary"
                   ? "bg-[var(--ink)] text-[var(--surface)] font-bold"
                   : "bg-[var(--surface)] text-[var(--gray)] hover:text-[var(--ink)]"
               }`}
             >
-              {de ? "Planeten-Orbit" : "行星引力星系"}
+              <svg width="12" height="12" viewBox="0 0 14 14" fill="none" stroke="currentColor">
+                <circle cx="7" cy="7" r="5.5" strokeWidth="1.2" strokeDasharray="2 2" />
+                <circle cx="7" cy="7" r="2" fill="currentColor" />
+                <circle cx="11.5" cy="7" r="1.2" fill="currentColor" />
+              </svg>
+              <span>{de ? "Planeten-Orbit" : "行星引力星系"}</span>
             </button>
             <button
               type="button"
               onClick={() => setViewMode("tree")}
               aria-pressed={viewMode === "tree"}
-              className={`px-2.5 h-full text-xs cursor-pointer transition-colors border-l border-[var(--line)] ${
+              className={`flex items-center gap-1.5 px-2.5 h-full text-xs cursor-pointer transition-colors border-l border-[var(--line)] ${
                 viewMode === "tree"
                   ? "bg-[var(--ink)] text-[var(--surface)] font-bold"
                   : "bg-[var(--surface)] text-[var(--gray)] hover:text-[var(--ink)]"
               }`}
             >
-              {de ? "Stufenbaum" : "认知阶梯树"}
+              <svg width="12" height="12" viewBox="0 0 14 14" fill="none" stroke="currentColor">
+                <path d="M2 3h4v8H2M6 7h6M12 4v6" strokeWidth="1.2" strokeLinecap="round" />
+                <circle cx="2" cy="7" r="1" fill="currentColor" />
+                <circle cx="12" cy="4" r="1" fill="currentColor" />
+                <circle cx="12" cy="10" r="1" fill="currentColor" />
+              </svg>
+              <span>{de ? "Stufenbaum" : "认知阶梯树"}</span>
             </button>
           </div>
 
-          {/* 学习进度 */}
-          <div className="hidden sm:flex items-center gap-2">
-            <span className="font-bold tabular-nums">
+          {/* 宏观学习进度前置状态胶囊 */}
+          <div className="hidden sm:flex items-center gap-2 px-2.5 py-1 rounded-[var(--radius)] border border-[var(--line)] bg-[var(--paper-subtle)] text-xs font-mono">
+            <span className="font-bold tabular-nums text-[var(--ink)]">
               {progressSummary.masteredNodes}/{progressSummary.totalNodes} ({progressSummary.progressPercent}%)
             </span>
-            <div className="w-14 h-1.5 bg-[var(--line)] rounded-full overflow-hidden">
+            <span className="text-[var(--gray)] text-[10px]">
+              · {progressSummary.totalNodes - progressSummary.masteredNodes} {de ? "gesperrt" : "待攻坚"}
+            </span>
+            <div className="w-12 h-1.5 bg-[var(--line)] rounded-full overflow-hidden ml-0.5">
               <div
                 className="h-full bg-[var(--ink)] transition-all duration-300"
                 style={{ width: `${progressSummary.progressPercent}%` }}
@@ -1535,33 +1633,152 @@ export function SkillTreeCanvas({
               </g>
             )}
 
-            {/* 2. 渲染引力与拓扑连线 (Edges) */}
+            {/* 1.1 若为认知科技树模式，渲染 5 纵深阶段里程碑标题卡与领域分类横向泳道 (Laned Tech Tree Layer) */}
+            {viewMode === "tree" && (
+              <g className="tech-tree-background-layer" aria-hidden="true">
+                {/* 顶部纵深阶段里程碑标题卡 (Tier Milestone Plaque Headers) */}
+                {TIER_COLUMNS.map((tierKey, colIdx) => {
+                  const colX = LANE_HEADER_WIDTH + 24 + colIdx * TECH_COL_WIDTH;
+                  const label = TIER_LABELS[tierKey][de ? "de" : "zh"];
+                  const hasNext = colIdx < 4;
+                  return (
+                    <g key={`tier-header-${tierKey}`}>
+                      <rect
+                        x={colX}
+                        y={20}
+                        width={TREE_BOX_WIDTH}
+                        height={32}
+                        rx="3"
+                        fill="var(--surface)"
+                        stroke="var(--ink)"
+                        strokeWidth="1.2"
+                      />
+                      <text
+                        x={colX + TREE_BOX_WIDTH / 2}
+                        y={36}
+                        textAnchor="middle"
+                        dominantBaseline="central"
+                        fontFamily="monospace"
+                        fontSize="9"
+                        fontWeight="bold"
+                        letterSpacing="0.05em"
+                        fill="var(--ink)"
+                      >
+                        {label}
+                      </text>
+
+                      {/* 阶段演进向右流向连接符 */}
+                      {hasNext && (
+                        <g stroke="var(--line)" strokeWidth="1.2" fill="none">
+                          <line
+                            x1={colX + TREE_BOX_WIDTH + 6}
+                            y1={36}
+                            x2={colX + TECH_COL_WIDTH - 6}
+                            y2={36}
+                            strokeDasharray="2 3"
+                          />
+                          <path
+                            d={`M ${colX + TECH_COL_WIDTH - 10} 33 L ${colX + TECH_COL_WIDTH - 6} 36 L ${colX + TECH_COL_WIDTH - 10} 39`}
+                            stroke="var(--ink)"
+                            strokeWidth="1.4"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          />
+                        </g>
+                      )}
+                    </g>
+                  );
+                })}
+
+                {/* 领域分类横向泳道 (Category Horizontal Lanes) */}
+                {lanesMeta.map((lane) => {
+                  const percent =
+                    lane.totalCount > 0 ? Math.round((lane.masteredCount / lane.totalCount) * 100) : 0;
+                  return (
+                    <g key={`lane-bg-${lane.name}`}>
+                      {/* 左侧泳道标题卡片 */}
+                      <rect
+                        x={16}
+                        y={lane.y}
+                        width={LANE_HEADER_WIDTH - 4}
+                        height={lane.height}
+                        rx="4"
+                        fill="var(--paper-subtle)"
+                        stroke="var(--line)"
+                        strokeWidth="0.9"
+                      />
+                      <g transform={`translate(26, ${lane.y + 24})`}>
+                        <text
+                          x="0"
+                          y="0"
+                          fontFamily="serif"
+                          fontSize="12.5"
+                          fontWeight="bold"
+                          fill="var(--ink)"
+                        >
+                          {lane.name}
+                        </text>
+                        <text
+                          x="0"
+                          y="17"
+                          fontFamily="monospace"
+                          fontSize="8.5"
+                          fill="var(--gray)"
+                        >
+                          {`${lane.masteredCount}/${lane.totalCount} ${de ? "gemeistert" : "已掌握"} (${percent}%)`}
+                        </text>
+                        {/* 泳道迷你进度条 */}
+                        <rect
+                          x="0"
+                          y="26"
+                          width={LANE_HEADER_WIDTH - 28}
+                          height="2.5"
+                          rx="1.2"
+                          fill="var(--line)"
+                        />
+                        <rect
+                          x="0"
+                          y="26"
+                          width={Math.round(((LANE_HEADER_WIDTH - 28) * percent) / 100)}
+                          height="2.5"
+                          rx="1.2"
+                          fill="var(--ink)"
+                        />
+                      </g>
+
+                      {/* 横向轨道虚线分隔线 */}
+                      <line
+                        x1={16}
+                        y1={lane.y + lane.height + 10}
+                        x2={LANE_HEADER_WIDTH + 24 + 5 * TECH_COL_WIDTH}
+                        y2={lane.y + lane.height + 10}
+                        stroke="var(--line)"
+                        strokeWidth="0.8"
+                        strokeDasharray="4 4"
+                        opacity="0.5"
+                      />
+                    </g>
+                  );
+                })}
+              </g>
+            )}
+
+            {/* 2. 渲染引力与拓扑连线 (Edges: 支持因果聚焦高亮与全局降噪) */}
             {renderedEdges.map((edge) => (
               <path
                 key={edge.id}
                 d={edge.pathData}
                 fill="none"
-                stroke={edge.isPathActive ? "var(--ink)" : "var(--line)"}
-                strokeWidth={edge.isPathActive ? 1.8 : 1.1}
-                strokeDasharray={
-                  edge.type === "synergy"
-                    ? "3,3"
-                    : edge.isPathActive
-                    ? "none"
-                    : "4,4"
-                }
-                markerEnd={
-                  viewMode === "planetary"
-                    ? edge.isPathActive
-                      ? "url(#grav-arrow-active)"
-                      : "url(#grav-arrow-muted)"
-                    : undefined
-                }
-                className="transition-colors duration-300"
+                stroke={edge.strokeColor}
+                strokeWidth={edge.strokeWidth}
+                opacity={edge.opacity}
+                strokeDasharray={edge.strokeDash}
+                markerEnd={edge.markerEnd}
+                className="transition-all duration-200"
               />
             ))}
 
-            {/* 3. 渲染知识点卡片/行星节点 */}
+            {/* 3. 渲染知识点卡片/行星节点 (高对比三态编码 + 因果链聚焦) */}
             {layoutedNodes.map((node) => {
               const status: SkillNodeStatus = unlockStates.get(node.id) ?? "locked";
               const isSelected = selectedNodeId === node.id;
@@ -1570,25 +1787,38 @@ export function SkillTreeCanvas({
               const isLocked = status === "locked";
               const isMatched = isNodeMatchingFilter(node);
 
+              const isFocal = causalAnalysis?.focalNodeId === node.id;
+              const isPrereq = causalAnalysis?.allPrereqs.has(node.id) ?? false;
+              const isSuccessor = causalAnalysis?.allSuccessors.has(node.id) ?? false;
+              const isConnectedInChain = isFocal || isPrereq || isSuccessor;
+
+              // 智能透明度：聚焦时未关联节点深度降噪压暗至 0.12，高亮因果链路
+              let nodeOpacity = isMatched ? 1.0 : 0.22;
+              if (causalAnalysis) {
+                nodeOpacity = isConnectedInChain ? 1.0 : 0.12;
+              } else if (isLocked) {
+                nodeOpacity = isMatched ? 0.42 : 0.18;
+              }
+
+              const tierText = node.curriculumTier === "Uni_Prep" ? "Uni" : (node.curriculumTier ?? "EF");
+              const afbText = `AFB ${node.level === 1 ? "I" : node.level === 2 ? "II" : "III"}`;
+              const minutesText = `~${node.estimatedMinutes || 15}m`;
+
+              const displayTitleZH =
+                node.titleZH.length > 15 ? `${node.titleZH.slice(0, 14)}…` : node.titleZH;
+              const displayTitleDE =
+                node.titleDE.length > 21 ? `${node.titleDE.slice(0, 20)}…` : node.titleDE;
+
               if (viewMode === "planetary") {
                 const cx = node.x;
                 const cy = node.y;
 
                 // 判定知识点位于星盘左侧或右侧（外向辐射排布）
                 const isLeft = cx < PLANETARY_CENTER_X - 10;
-                const cardW = 186;
-                const cardH = 54;
+                const cardW = 196;
+                const cardH = 58;
                 const cardX = isLeft ? -24 - cardW : 24;
                 const cardY = -cardH / 2;
-
-                const tierText = node.curriculumTier === "Uni_Prep" ? "Uni" : (node.curriculumTier ?? "EF");
-                const afbText = `AFB ${node.level === 1 ? "I" : node.level === 2 ? "II" : "III"}`;
-                const minutesText = `~${node.estimatedMinutes || 15}m`;
-
-                const displayTitleZH =
-                  node.titleZH.length > 15 ? `${node.titleZH.slice(0, 14)}…` : node.titleZH;
-                const displayTitleDE =
-                  node.titleDE.length > 21 ? `${node.titleDE.slice(0, 20)}…` : node.titleDE;
 
                 return (
                   <g
@@ -1596,6 +1826,8 @@ export function SkillTreeCanvas({
                     transform={`translate(${cx}, ${cy})`}
                     data-clickable-node="true"
                     data-testid={`skill-node-${node.id}`}
+                    onPointerEnter={() => setHoveredNodeId(node.id)}
+                    onPointerLeave={() => setHoveredNodeId(null)}
                     onPointerDown={(e) => handleNodePointerDown(e, node)}
                     onPointerMove={handleNodePointerMove}
                     onPointerUp={(e) => handleNodePointerUp(e, node.id)}
@@ -1611,7 +1843,7 @@ export function SkillTreeCanvas({
                     style={{
                       transformOrigin: `${cx}px ${cy}px`,
                       transformBox: "view-box",
-                      opacity: isMatched ? 1.0 : 0.22,
+                      opacity: nodeOpacity,
                     }}
                   >
                     {/* A. 知识点星体核心 (Planetary Body Orb) */}
@@ -1621,7 +1853,7 @@ export function SkillTreeCanvas({
                         r="21"
                         fill="none"
                         stroke={
-                          isSelected
+                          isFocal || isSelected
                             ? "var(--ink)"
                             : isMastered
                             ? "var(--ink)"
@@ -1629,9 +1861,9 @@ export function SkillTreeCanvas({
                             ? "var(--ink)"
                             : "var(--line)"
                         }
-                        strokeWidth={isSelected ? 1.5 : isMastered ? 1.2 : isAvailable ? 1.4 : 0.8}
+                        strokeWidth={isFocal || isSelected ? 2.0 : isMastered ? 1.4 : isAvailable ? 1.6 : 0.8}
                         strokeDasharray={isAvailable ? "3 2" : isLocked ? "2 3" : "none"}
-                        opacity={isLocked ? 0.5 : 0.85}
+                        opacity={isLocked ? 0.4 : 0.85}
                       />
 
                       {/* 精通状态下的四向星芒微刻线 */}
@@ -1662,7 +1894,7 @@ export function SkillTreeCanvas({
                         r="15"
                         fill={isMastered ? "var(--ink)" : isAvailable ? "var(--surface)" : "var(--paper-subtle)"}
                         stroke={
-                          isSelected
+                          isFocal || isSelected
                             ? "var(--ink)"
                             : isMastered
                             ? "var(--ink)"
@@ -1670,11 +1902,11 @@ export function SkillTreeCanvas({
                             ? "var(--ink)"
                             : "var(--line)"
                         }
-                        strokeWidth={isSelected ? 2.2 : isAvailable ? 1.8 : 1.0}
+                        strokeWidth={isFocal || isSelected ? 2.2 : isAvailable ? 2.0 : 1.0}
                         className="transition-all duration-150 group-hover:stroke-[var(--ink)]"
                       />
 
-                      {/* 星核状态微标 */}
+                      {/* 星核状态微标 (严格手绘纯矢量，严禁 Emoji) */}
                       {isMastered && (
                         <path
                           d="M-4.5 0 L-1.5 3.5 L5 -3.5"
@@ -1732,7 +1964,7 @@ export function SkillTreeCanvas({
                         rx="4"
                         fill="var(--surface)"
                         stroke={
-                          isSelected
+                          isFocal || isSelected
                             ? "var(--ink)"
                             : isAvailable
                             ? "var(--ink)"
@@ -1740,7 +1972,7 @@ export function SkillTreeCanvas({
                             ? "var(--ink)"
                             : "var(--line)"
                         }
-                        strokeWidth={isSelected ? 2.0 : isAvailable ? 1.3 : isMastered ? 1.2 : 0.9}
+                        strokeWidth={isFocal || isSelected ? 2.2 : isAvailable ? 1.8 : isMastered ? 1.2 : 0.9}
                         strokeDasharray={isLocked ? "3 2" : "none"}
                         className="transition-all duration-150 group-hover:stroke-[var(--ink)]"
                       />
@@ -1753,7 +1985,7 @@ export function SkillTreeCanvas({
                         height={cardH - 3}
                         rx="3"
                         fill="none"
-                        stroke="var(--paper-subtle)"
+                        stroke={isAvailable ? "var(--line)" : "var(--paper-subtle)"}
                         strokeWidth="0.8"
                         pointerEvents="none"
                       />
@@ -1763,22 +1995,14 @@ export function SkillTreeCanvas({
                         x={cardX}
                         y={cardY}
                         width={cardW}
-                        height={2.5}
-                        rx="1.2"
-                        fill={
-                          isSelected
-                            ? "var(--ink)"
-                            : isMastered
-                            ? "var(--ink)"
-                            : isAvailable
-                            ? "var(--ink)"
-                            : "var(--line)"
-                        }
-                        opacity={isSelected ? 1.0 : isMastered ? 0.85 : isAvailable ? 0.5 : 0.3}
+                        height={2.8}
+                        rx="1.4"
+                        fill="var(--ink)"
+                        opacity={isFocal || isSelected ? 1.0 : isMastered ? 0.9 : isAvailable ? 0.6 : 0.25}
                       />
 
                       {/* 选中态星盘十字准星定位线 (Reticle Corner Brackets) */}
-                      {isSelected && (
+                      {(isFocal || isSelected) && (
                         <g stroke="var(--ink)" strokeWidth="1.5" fill="none">
                           <path d={`M ${cardX + 2} ${cardY + 8} L ${cardX + 2} ${cardY + 2} L ${cardX + 8} ${cardY + 2}`} />
                           <path d={`M ${cardX + cardW - 8} ${cardY + 2} L ${cardX + cardW - 2} ${cardY + 2} L ${cardX + cardW - 2} ${cardY + 8}`} />
@@ -1787,9 +2011,9 @@ export function SkillTreeCanvas({
                         </g>
                       )}
 
-                      {/* 第一行：学段难度 Pill 标牌与预计耗时 (空间充裕，绝不溢出) */}
+                      {/* 第一行：学段难度 Pill 标牌、状态徽记与预计耗时 */}
                       <rect
-                        x={cardX + 8}
+                        x={cardX + 7}
                         y={cardY + 6.5}
                         width={28}
                         height={12.5}
@@ -1799,7 +2023,7 @@ export function SkillTreeCanvas({
                         strokeWidth="0.6"
                       />
                       <text
-                        x={cardX + 22}
+                        x={cardX + 21}
                         y={cardY + 15.5}
                         textAnchor="middle"
                         fontFamily="monospace"
@@ -1810,7 +2034,7 @@ export function SkillTreeCanvas({
                         {tierText}
                       </text>
                       <text
-                        x={cardX + 41}
+                        x={cardX + 40}
                         y={cardY + 15.5}
                         fontFamily="monospace"
                         fontSize="8"
@@ -1819,8 +2043,133 @@ export function SkillTreeCanvas({
                       >
                         {afbText}
                       </text>
+
+                      {/* 因果链指示角标 或 状态指示徽记 */}
+                      {isPrereq ? (
+                        <g>
+                          <rect
+                            x={cardX + cardW - 86}
+                            y={cardY + 6.5}
+                            width={46}
+                            height={12.5}
+                            rx="2"
+                            fill="var(--paper-subtle)"
+                            stroke="var(--ink)"
+                            strokeWidth="0.9"
+                          />
+                          <text
+                            x={cardX + cardW - 63}
+                            y={cardY + 15.5}
+                            textAnchor="middle"
+                            fontFamily="monospace"
+                            fontSize="8"
+                            fontWeight="bold"
+                            fill="var(--ink)"
+                          >
+                            {de ? "← Voraus." : "← 前置"}
+                          </text>
+                        </g>
+                      ) : isSuccessor ? (
+                        <g>
+                          <rect
+                            x={cardX + cardW - 86}
+                            y={cardY + 6.5}
+                            width={46}
+                            height={12.5}
+                            rx="2"
+                            fill="var(--paper-subtle)"
+                            stroke="var(--ink)"
+                            strokeWidth="0.9"
+                          />
+                          <text
+                            x={cardX + cardW - 63}
+                            y={cardY + 15.5}
+                            textAnchor="middle"
+                            fontFamily="monospace"
+                            fontSize="8"
+                            fontWeight="bold"
+                            fill="var(--ink)"
+                          >
+                            {de ? "→ Entsperrt" : "→ 解锁"}
+                          </text>
+                        </g>
+                      ) : (
+                        <g>
+                          {isMastered ? (
+                            <>
+                              <rect
+                                x={cardX + cardW - 74}
+                                y={cardY + 6.5}
+                                width={34}
+                                height={12.5}
+                                rx="2"
+                                fill="var(--ink)"
+                              />
+                              <text
+                                x={cardX + cardW - 57}
+                                y={cardY + 15.5}
+                                textAnchor="middle"
+                                fontFamily="monospace"
+                                fontSize="8"
+                                fontWeight="bold"
+                                fill="var(--surface)"
+                              >
+                                {de ? "Gekonnt" : "已掌握"}
+                              </text>
+                            </>
+                          ) : isAvailable ? (
+                            <>
+                              <rect
+                                x={cardX + cardW - 74}
+                                y={cardY + 6.5}
+                                width={34}
+                                height={12.5}
+                                rx="2"
+                                fill="var(--surface)"
+                                stroke="var(--ink)"
+                                strokeWidth="1.2"
+                              />
+                              <text
+                                x={cardX + cardW - 57}
+                                y={cardY + 15.5}
+                                textAnchor="middle"
+                                fontFamily="monospace"
+                                fontSize="8"
+                                fontWeight="bold"
+                                fill="var(--ink)"
+                              >
+                                {de ? "Bereit" : "待学习"}
+                              </text>
+                            </>
+                          ) : (
+                            <>
+                              <rect
+                                x={cardX + cardW - 74}
+                                y={cardY + 6.5}
+                                width={34}
+                                height={12.5}
+                                rx="2"
+                                fill="var(--paper-subtle)"
+                                stroke="var(--line)"
+                                strokeWidth="0.6"
+                              />
+                              <text
+                                x={cardX + cardW - 57}
+                                y={cardY + 15.5}
+                                textAnchor="middle"
+                                fontFamily="monospace"
+                                fontSize="8"
+                                fill="var(--gray)"
+                              >
+                                {de ? "Gesperrt" : "未解锁"}
+                              </text>
+                            </>
+                          )}
+                        </g>
+                      )}
+
                       <text
-                        x={cardX + cardW - 8}
+                        x={cardX + cardW - 7}
                         y={cardY + 15.5}
                         textAnchor="end"
                         fontFamily="monospace"
@@ -1834,7 +2183,7 @@ export function SkillTreeCanvas({
                       {/* 第二行：中文典范知识点名称 */}
                       <text
                         x={cardX + 8}
-                        y={cardY + 31.5}
+                        y={cardY + 33}
                         fontFamily="serif"
                         fontSize="11"
                         fontWeight="bold"
@@ -1847,7 +2196,7 @@ export function SkillTreeCanvas({
                       {/* 第三行：德语学术微缩术语 */}
                       <text
                         x={cardX + 8}
-                        y={cardY + 45}
+                        y={cardY + 48}
                         fontFamily="monospace"
                         fontSize="8.5"
                         fill="var(--gray)"
@@ -1860,7 +2209,7 @@ export function SkillTreeCanvas({
                 );
               }
 
-              // 树形模式卡片
+              // 认知科技树模式卡片 (Laned Tech Tree Node Card: 210x80)
               const cx = node.x + TREE_BOX_WIDTH / 2;
               const cy = node.y + TREE_BOX_HEIGHT / 2;
 
@@ -1870,6 +2219,8 @@ export function SkillTreeCanvas({
                   transform={`translate(${node.x}, ${node.y})`}
                   data-clickable-node="true"
                   data-testid={`skill-node-${node.id}`}
+                  onPointerEnter={() => setHoveredNodeId(node.id)}
+                  onPointerLeave={() => setHoveredNodeId(null)}
                   onPointerDown={(e) => handleNodePointerDown(e, node)}
                   onPointerMove={handleNodePointerMove}
                   onPointerUp={(e) => handleNodePointerUp(e, node.id)}
@@ -1885,7 +2236,7 @@ export function SkillTreeCanvas({
                   style={{
                     transformOrigin: `${cx}px ${cy}px`,
                     transformBox: "view-box",
-                    opacity: isMatched ? 1.0 : 0.25,
+                    opacity: nodeOpacity,
                   }}
                 >
                   <rect
@@ -1894,7 +2245,7 @@ export function SkillTreeCanvas({
                     rx="4"
                     fill="var(--surface)"
                     stroke={
-                      isSelected
+                      isFocal || isSelected
                         ? "var(--ink)"
                         : isAvailable
                         ? "var(--ink)"
@@ -1902,9 +2253,21 @@ export function SkillTreeCanvas({
                         ? "var(--ink)"
                         : "var(--line)"
                     }
-                    strokeWidth={isSelected ? 2.0 : isAvailable ? 1.4 : isMastered ? 1.2 : 0.9}
+                    strokeWidth={isFocal || isSelected ? 2.2 : isAvailable ? 1.8 : isMastered ? 1.2 : 0.9}
                     strokeDasharray={isLocked ? "3,3" : "none"}
                     className="transition-all duration-150 group-hover:stroke-[var(--ink)]"
+                  />
+                  {/* 双层发丝内线 */}
+                  <rect
+                    x="1.5"
+                    y="1.5"
+                    width={TREE_BOX_WIDTH - 3}
+                    height={TREE_BOX_HEIGHT - 3}
+                    rx="3"
+                    fill="none"
+                    stroke={isAvailable ? "var(--line)" : "var(--paper-subtle)"}
+                    strokeWidth="0.8"
+                    pointerEvents="none"
                   />
                   {/* 顶部学术状态标饰条 */}
                   <rect
@@ -1913,73 +2276,171 @@ export function SkillTreeCanvas({
                     width={TREE_BOX_WIDTH}
                     height="3"
                     rx="1.5"
-                    fill={isSelected ? "var(--ink)" : isMastered ? "var(--ink)" : isAvailable ? "var(--ink)" : "var(--line)"}
-                    opacity={isSelected ? 1.0 : isMastered ? 0.85 : isAvailable ? 0.5 : 0.25}
+                    fill="var(--ink)"
+                    opacity={isFocal || isSelected ? 1.0 : isMastered ? 0.9 : isAvailable ? 0.6 : 0.25}
                   />
 
+                  {/* 第一行：状态图标、学段与状态胶囊 */}
                   <g transform="translate(10, 16)">
                     {isMastered && (
                       <path
                         d="M0 4 L3.5 7.5 L9 1"
                         fill="none"
                         stroke="var(--ink)"
-                        strokeWidth="1.6"
+                        strokeWidth="1.8"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
                       />
                     )}
                     {isAvailable && (
-                      <circle cx="4" cy="4" r="3" fill="var(--ink)" />
+                      <circle cx="4.5" cy="4.5" r="3.5" fill="var(--ink)" />
                     )}
                     {isLocked && (
                       <g transform="translate(0, -1)">
-                        <rect x="1" y="4" width="7" height="5" rx="1" fill="none" stroke="var(--gray)" strokeWidth="1.2" />
-                        <path d="M2.5 4V2.5a2 2 0 0 1 4 0V4" fill="none" stroke="var(--gray)" strokeWidth="1.2" />
+                        <rect x="1" y="4" width="7" height="5" rx="1" fill="none" stroke="var(--gray)" strokeWidth="1.1" />
+                        <path d="M2.5 4V2.5a2 2 0 0 1 4 0V4" fill="none" stroke="var(--gray)" strokeWidth="1.1" />
                       </g>
                     )}
 
                     <text
-                      x="18"
-                      y="7"
+                      x="16"
+                      y="7.5"
                       fontFamily="monospace"
                       fontSize="8.5"
                       fill="var(--gray)"
                       fontWeight="bold"
                     >
-                      {`${node.curriculumTier === "Uni_Prep" ? "Uni" : (node.curriculumTier ?? "EF")} · AFB ${node.level === 1 ? "I" : node.level === 2 ? "II" : "III"}`}
+                      {`${tierText} · ${afbText}`}
                     </text>
+
+                    {/* 因果链指示角标 或 状态指示徽记 */}
+                    {isPrereq ? (
+                      <g transform="translate(86, -2)">
+                        <rect
+                          width="46"
+                          height="13"
+                          rx="2"
+                          fill="var(--paper-subtle)"
+                          stroke="var(--ink)"
+                          strokeWidth="0.9"
+                        />
+                        <text
+                          x="23"
+                          y="9.5"
+                          textAnchor="middle"
+                          fontFamily="monospace"
+                          fontSize="8"
+                          fontWeight="bold"
+                          fill="var(--ink)"
+                        >
+                          {de ? "← Voraus." : "← 前置"}
+                        </text>
+                      </g>
+                    ) : isSuccessor ? (
+                      <g transform="translate(86, -2)">
+                        <rect
+                          width="46"
+                          height="13"
+                          rx="2"
+                          fill="var(--paper-subtle)"
+                          stroke="var(--ink)"
+                          strokeWidth="0.9"
+                        />
+                        <text
+                          x="23"
+                          y="9.5"
+                          textAnchor="middle"
+                          fontFamily="monospace"
+                          fontSize="8"
+                          fontWeight="bold"
+                          fill="var(--ink)"
+                        >
+                          {de ? "→ Entsperrt" : "→ 解锁"}
+                        </text>
+                      </g>
+                    ) : (
+                      <g transform="translate(94, -2)">
+                        {isMastered ? (
+                          <>
+                            <rect width="36" height="13" rx="2" fill="var(--ink)" />
+                            <text
+                              x="18"
+                              y="9.5"
+                              textAnchor="middle"
+                              fontFamily="monospace"
+                              fontSize="8"
+                              fontWeight="bold"
+                              fill="var(--surface)"
+                            >
+                              {de ? "Gekonnt" : "已掌握"}
+                            </text>
+                          </>
+                        ) : isAvailable ? (
+                          <>
+                            <rect width="36" height="13" rx="2" fill="var(--surface)" stroke="var(--ink)" strokeWidth="1.2" />
+                            <text
+                              x="18"
+                              y="9.5"
+                              textAnchor="middle"
+                              fontFamily="monospace"
+                              fontSize="8"
+                              fontWeight="bold"
+                              fill="var(--ink)"
+                            >
+                              {de ? "Bereit" : "待学习"}
+                            </text>
+                          </>
+                        ) : (
+                          <>
+                            <rect width="36" height="13" rx="2" fill="var(--paper-subtle)" stroke="var(--line)" strokeWidth="0.6" />
+                            <text
+                              x="18"
+                              y="9.5"
+                              textAnchor="middle"
+                              fontFamily="monospace"
+                              fontSize="8"
+                              fill="var(--gray)"
+                            >
+                              {de ? "Gesperrt" : "未解锁"}
+                            </text>
+                          </>
+                        )}
+                      </g>
+                    )}
 
                     <text
                       x={TREE_BOX_WIDTH - 28}
-                      y="7"
+                      y="7.5"
                       textAnchor="end"
                       fontFamily="monospace"
                       fontSize="8.5"
                       fill="var(--gray)"
                     >
-                      {`~${node.estimatedMinutes}m`}
+                      {minutesText}
                     </text>
                   </g>
 
                   <text
                     x="10"
-                    y="42"
+                    y="44"
                     fontFamily="serif"
                     fontSize="12.5"
                     fontWeight="bold"
                     fill="var(--ink)"
                     className="select-none"
                   >
-                    {node.titleZH.length > 14 ? `${node.titleZH.slice(0, 13)}…` : node.titleZH}
+                    {displayTitleZH}
                   </text>
 
                   <text
                     x="10"
-                    y="60"
+                    y="63"
                     fontFamily="monospace"
                     fontSize="9"
                     fill="var(--gray)"
                     className="select-none"
                   >
-                    {node.titleDE.length > 21 ? `${node.titleDE.slice(0, 20)}…` : node.titleDE}
+                    {displayTitleDE}
                   </text>
                 </g>
               );

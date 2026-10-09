@@ -198,7 +198,7 @@ describe("SkillTreeCanvas Component (可插拔知识图谱与技能树画布测�
     expect(svg).toBeInTheDocument();
   });
 
-  it("supports subject pagination and full catalog popover navigation", () => {
+  it("supports subject pagination navigation smoothly", () => {
     render(<SkillTreeCanvas lang="zh" initialFach="SoWi" />);
 
     // 默认在第 1 页高亮社会科学
@@ -208,23 +208,40 @@ describe("SkillTreeCanvas Component (可插拔知识图谱与技能树画布测�
     const nextBtn = screen.getByTitle("下一页学科");
     fireEvent.click(nextBtn);
 
-    // 翻页后可见第 2 页学科
-    expect(screen.getByRole("button", { name: "德语 (Deutsch)" })).toBeInTheDocument();
+    // 翻页后可见第 2 页学科德语并能点击切换
+    const deutschBtn = screen.getByRole("button", { name: "德语 (Deutsch)" });
+    expect(deutschBtn).toBeInTheDocument();
+    fireEvent.click(deutschBtn);
+    expect(screen.getByRole("button", { name: "德语 (Deutsch)", pressed: true })).toBeInTheDocument();
 
-    // 打开全景学科总录
-    const catalogBtn = screen.getByTitle("展开全部学科全景目录");
-    fireEvent.click(catalogBtn);
+    // 点击上一页
+    const prevBtn = screen.getByTitle("上一页学科");
+    fireEvent.click(prevBtn);
 
-    expect(screen.getByText("高中全科学科星系总录")).toBeInTheDocument();
-    expect(screen.getByText("AF I · 语言与艺术")).toBeInTheDocument();
-    expect(screen.getByText("AF III · 数理自然科学")).toBeInTheDocument();
+    // 返回第 1 页，可见第 1 页学科
+    expect(screen.getByRole("button", { name: "社会科学 (SoWi)" })).toBeInTheDocument();
+  });
 
-    // 从全景目录直接点击选择数学
-    const matheCatalogBtn = screen.getAllByRole("button", { name: "数学 (Mathe)" })[0];
-    fireEvent.click(matheCatalogBtn);
+  it("supports causal focus on hover and renders laned tech tree milestones", () => {
+    render(<SkillTreeCanvas lang="zh" initialFach="SoWi" />);
 
-    // 目录关闭并成功切换
-    expect(screen.queryByText("高中全科学科星系总录")).not.toBeInTheDocument();
+    // 悬停在价格机制节点上触发因果链路聚焦
+    const preismechanismusNode = screen.getByTestId("skill-node-sowi-preismechanismus");
+    fireEvent.pointerEnter(preismechanismusNode);
+
+    // 验证因果链前置指示徽章出现 (上游前置链路全部高亮标记)
+    expect(screen.getAllByText("← 前置").length).toBeGreaterThan(0);
+
+    fireEvent.pointerLeave(preismechanismusNode);
+
+    // 切换到科技树网格模式
+    const treeBtn = screen.getByRole("button", { name: "认知阶梯树" });
+    fireEvent.click(treeBtn);
+
+    // 验证 5 纵深阶段里程碑标题卡正常渲染
+    expect(screen.getByText("SEK I · 基础认知 (AFB I)")).toBeInTheDocument();
+    expect(screen.getByText("EF · 核心奠基 (AFB II)")).toBeInTheDocument();
+    expect(screen.getByText("Q1 · 进阶机制 (AFB II)")).toBeInTheDocument();
   });
 });
 
