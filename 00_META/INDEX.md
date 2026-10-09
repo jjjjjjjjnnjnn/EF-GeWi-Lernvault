@@ -280,6 +280,7 @@
 - [2026-10-08-planetary-astrolabe-visual-redesign](Journal/2026-10-08-planetary-astrolabe-visual-redesign.md) — **行星引力图星盘测天仪 (Astrolabe Star Atlas) 视觉重塑与学术排版升级**：消除极坐标与方格冲突+真行星天体星核与吸积光环+外向辐射学术名牌+24齿星盘太阳核心与动态精通进度弧
 - [2026-10-08-planetary-graph-ten-subject-expansion](Journal/2026-10-08-planetary-graph-ten-subject-expansion.md) — **十科行星引力图谱批量扩张至 712 节点**：预设契约冻结+结构不变量自检器+编译期图谱接入+防漂移守卫测试；21 个既有节点 ID 逐字保留，进度零丢失
 - [2026-10-08-planetary-interaction-and-navigation-redesign](Journal/2026-10-08-planetary-interaction-and-navigation-redesign.md) — **行星知识图谱交互革命**：自由节点拖拽与一键复位+双指捏合与鼠标滚轮平滑缩放+单行全部分类Chip防换行重构+学科分页器与高中全科学科星系总录展开导航（516单测/build/vault-check全绿）
+- [2026-10-09-causal-distance-decay-and-macro-flow](Journal/2026-10-09-causal-distance-decay-and-macro-flow.md) — **因果拓扑距离梯度衰减、宏观星盘扇区底衬与抽屉线性推进清单**：BFS拓扑分层衰减算法+星盘扇区微透甜甜圈网格+右侧知识抽屉有序步骤流+纯矢量三态高对比编码（全绿）
 - 约定：文件名 `YYYY-MM-DD-<thema>.md`，头部frontmatter（`fach`可空，`tags: [EF, Meta]`）。
 
 
