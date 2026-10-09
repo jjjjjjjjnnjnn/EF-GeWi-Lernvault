@@ -1,5 +1,5 @@
 import { useState, useMemo, useCallback, useRef, useEffect } from "react";
-import type { Lang } from "../i18n";
+import { resolveNodeLanguage, type Lang, type NodeLanguageMode } from "../i18n";
 import {
   graphRegistry,
   computeGraphUnlockStates,
@@ -141,6 +141,22 @@ export function SkillTreeCanvas({
 
   // 4.3 鼠标悬停聚焦节点 ID (用于因果链聚焦与全局压暗降噪)
   const [hoveredNodeId, setHoveredNodeId] = useState<string | null>(null);
+
+  // 4.4 节点语言展示模式 (de: 德语考纲优先 | bilingual: 双语对照 | zh: 中文理解优先)
+  const [nodeLangMode, setNodeLangMode] = useState<NodeLanguageMode>(() => {
+    if (typeof window !== "undefined") {
+      const saved = localStorage.getItem("skill-tree-node-lang-mode") as NodeLanguageMode;
+      if (saved === "de" || saved === "zh" || saved === "bilingual") return saved;
+    }
+    return (lang as string) === "de" ? "de" : "zh";
+  });
+
+  const handleSetNodeLangMode = useCallback((mode: NodeLanguageMode) => {
+    setNodeLangMode(mode);
+    if (typeof window !== "undefined") {
+      localStorage.setItem("skill-tree-node-lang-mode", mode);
+    }
+  }, []);
 
   // 5. 画布平移缩放视口
   const [zoom, setZoom] = useState<number>(0.95);
@@ -739,7 +755,7 @@ export function SkillTreeCanvas({
 
   const handleNodePointerUp = (
     e: React.PointerEvent<SVGGElement>,
-    nodeId: string
+    _nodeId?: string
   ) => {
     if (!draggingNodeRef.current) return;
     try {
@@ -753,7 +769,6 @@ export function SkillTreeCanvas({
       justDraggedRef.current = true;
     } else {
       justDraggedRef.current = false;
-      setSelectedNodeId((prev) => (prev === nodeId ? null : nodeId));
     }
   };
 
@@ -1079,6 +1094,25 @@ export function SkillTreeCanvas({
   }
   const drawerCausalAnalysis = causalAnalysis || lastDrawerCausalAnalysisRef.current;
 
+  // 节点点击交互：如果抽屉收回，点击任何节点直接自动弹出；如果抽屉已展开，点击同节点收回，点击不同节点切换
+  const handleNodeClick = useCallback(
+    (nodeId: string) => {
+      if (!isDrawerOpen) {
+        setSelectedNodeId(nodeId);
+        return;
+      }
+      if (selectedNodeId === nodeId) {
+        setSelectedNodeId(null);
+      } else {
+        setSelectedNodeId(nodeId);
+      }
+    },
+    [isDrawerOpen, selectedNodeId]
+  );
+  const drawerLoc = displayDrawerNode
+    ? resolveNodeLanguage(displayDrawerNode, nodeLangMode, lang)
+    : null;
+
   return (
     <div
       className={`relative flex flex-col w-full h-full bg-[var(--surface)] text-[var(--ink)] overflow-hidden ${className}`}
@@ -1201,9 +1235,52 @@ export function SkillTreeCanvas({
                 <path d="M2 3h4v8H2M6 7h6M12 4v6" strokeWidth="1.2" strokeLinecap="round" />
                 <circle cx="2" cy="7" r="1" fill="currentColor" />
                 <circle cx="12" cy="4" r="1" fill="currentColor" />
-                <circle cx="12" cy="10" r="1" fill="currentColor" />
-              </svg>
-              <span>{de ? "Stufenbaum" : "认知阶梯树"}</span>
+              <circle cx="12" cy="10" r="1" fill="currentColor" />
+            </svg>
+            <span>{de ? "Stufenbaum" : "认知阶梯树"}</span>
+          </button>
+        </div>
+
+        {/* 节点多语言展示模式切换 (DE / Bilingual / ZH) */}
+        <div className="flex items-center border border-[var(--line)] rounded-[var(--radius)] overflow-hidden h-7 shrink-0" data-testid="skill-tree-lang-switcher">
+            <button
+              type="button"
+              onClick={() => handleSetNodeLangMode("de")}
+              aria-pressed={nodeLangMode === "de"}
+              className={`px-2 h-full font-mono text-[11px] cursor-pointer transition-colors ${
+                nodeLangMode === "de"
+                  ? "bg-[var(--ink)] text-[var(--surface)] font-bold"
+                  : "bg-[var(--surface)] text-[var(--gray)] hover:text-[var(--ink)]"
+              }`}
+              title={de ? "Deutsche Fachsprache (Prüfung)" : "德语考纲优先 (Prüfungssprache)"}
+            >
+              DE
+            </button>
+            <button
+              type="button"
+              onClick={() => handleSetNodeLangMode("bilingual")}
+              aria-pressed={nodeLangMode === "bilingual"}
+              className={`px-2 h-full font-mono text-[11px] cursor-pointer transition-colors border-x border-[var(--line)] ${
+                nodeLangMode === "bilingual"
+                  ? "bg-[var(--ink)] text-[var(--surface)] font-bold"
+                  : "bg-[var(--surface)] text-[var(--gray)] hover:text-[var(--ink)]"
+              }`}
+              title={de ? "Zweisprachig (DE · ZH)" : "双语对照 (DE · ZH)"}
+            >
+              DE·ZH
+            </button>
+            <button
+              type="button"
+              onClick={() => handleSetNodeLangMode("zh")}
+              aria-pressed={nodeLangMode === "zh"}
+              className={`px-2 h-full font-mono text-[11px] cursor-pointer transition-colors ${
+                nodeLangMode === "zh"
+                  ? "bg-[var(--ink)] text-[var(--surface)] font-bold"
+                  : "bg-[var(--surface)] text-[var(--gray)] hover:text-[var(--ink)]"
+              }`}
+              title={de ? "Chinesisch zum Verstehen" : "中文理解优先 (Verstehen)"}
+            >
+              ZH
             </button>
           </div>
 
@@ -1961,10 +2038,11 @@ export function SkillTreeCanvas({
               const afbText = `AFB ${node.level === 1 ? "I" : node.level === 2 ? "II" : "III"}`;
               const minutesText = `~${node.estimatedMinutes || 15}m`;
 
-              const displayTitleZH =
-                node.titleZH.length > 15 ? `${node.titleZH.slice(0, 14)}…` : node.titleZH;
-              const displayTitleDE =
-                node.titleDE.length > 21 ? `${node.titleDE.slice(0, 20)}…` : node.titleDE;
+              const loc = resolveNodeLanguage(node, nodeLangMode, lang);
+              const displayPrimaryTitle =
+                loc.primaryTitle.length > 22 ? `${loc.primaryTitle.slice(0, 21)}…` : loc.primaryTitle;
+              const displaySecondaryTitle =
+                loc.secondaryTitle.length > 24 ? `${loc.secondaryTitle.slice(0, 23)}…` : loc.secondaryTitle;
 
               if (viewMode === "planetary") {
                 const cx = node.x;
@@ -1994,7 +2072,7 @@ export function SkillTreeCanvas({
                         justDraggedRef.current = false;
                         return;
                       }
-                      setSelectedNodeId((prev) => (prev === node.id ? null : node.id));
+                      handleNodeClick(node.id);
                     }}
                     className="cursor-move group transition-opacity duration-200"
                     style={{
@@ -2162,24 +2240,25 @@ export function SkillTreeCanvas({
                               <text x={cardX + cardW - 7} y={cardY + 15.5} textAnchor="end" fontFamily="monospace" fontSize="8" fill="var(--gray)" className="select-none">
                                 {minutesText}
                               </text>
-                              {/* 考点中文大标题 */}
+                              {/* 考点主标题 */}
                               <text x={cardX + 8} y={cardY + 33} fontFamily="serif" fontSize="11" fontWeight="bold" fill="var(--ink)" className="select-none">
-                                {displayTitleZH}
+                                {displayPrimaryTitle}
                               </text>
-                              {/* 德语原版学术术语 */}
+                              {/* 考点副标题 */}
                               <text x={cardX + 8} y={cardY + 48} fontFamily="monospace" fontSize="8.5" fill="var(--gray)" className="select-none">
-                                {displayTitleDE}
+                                {displaySecondaryTitle}
                               </text>
                             </g>
                           </>
                         );
                       }
 
-                      // 2. 常规态：轻量单行胶囊 (所有考点名称清晰可见，绝不乱，重点分明！)
+                      // 2. 常规态：轻量单行胶囊 (支持 DE / 双语 / ZH，信息整洁分明！)
                       const isTargetActive = isAvailable || isMastered;
                       const pillH = isTargetActive ? 22 : 18;
-                      const charCount = displayTitleZH.length;
-                      const pillW = Math.max(isTargetActive ? 86 : 74, Math.min(148, charCount * (isTargetActive ? 11.5 : 10.5) + (isTargetActive ? 24 : 16)));
+                      const pillText = loc.pillText.length > 28 ? `${loc.pillText.slice(0, 27)}…` : loc.pillText;
+                      const charCount = pillText.length;
+                      const pillW = Math.max(isTargetActive ? 86 : 74, Math.min(205, charCount * (nodeLangMode === "zh" ? 10.5 : 7.2) + (isTargetActive ? 24 : 16)));
                       const tetherGap = isTargetActive ? 18 : 14;
                       const pillX = isLeft ? -tetherGap - pillW : tetherGap;
                       const pillY = -pillH / 2;
@@ -2242,23 +2321,30 @@ export function SkillTreeCanvas({
                             {isAvailable && (
                               <circle cx={pillX + 7} cy="0" r="2.2" fill="var(--ink)" />
                             )}
-                            {/* 考点中文名称：清晰可见，绝不断层 */}
+                            {/* 考点自适应语言名称 */}
                             <text
                               x={isAvailable ? pillX + 13 : pillX + pillW / 2}
                               y={pillY + (isTargetActive ? 14.5 : 12.5)}
                               textAnchor={isAvailable ? "start" : "middle"}
                               fontFamily="serif"
-                              fontSize={isTargetActive ? "10" : "9.5"}
+                              fontSize={isTargetActive ? "9.5" : "9"}
                               fontWeight={isTargetActive ? "bold" : "500"}
                               fill={isTargetActive ? "var(--ink)" : "var(--gray)"}
                               className="select-none"
                             >
-                              {displayTitleZH}
+                              {pillText}
                             </text>
-                            {/* 隐藏德语术语供 DOM 检索与单元测试匹配 */}
-                            <text x={pillX} y={pillY} opacity="0" fontSize="1" pointerEvents="none">
-                              {displayTitleDE}
-                            </text>
+                            {/* 隐藏辅助文本：当当前胶囊未完全展示全名时，供 DOM 检索与无障碍读取 */}
+                            {pillText !== node.titleZH && (
+                              <text x={pillX} y={pillY} opacity="0" fontSize="1" pointerEvents="none">
+                                {node.titleZH}
+                              </text>
+                            )}
+                            {pillText !== node.titleDE && (
+                              <text x={pillX} y={pillY} opacity="0" fontSize="1" pointerEvents="none">
+                                {node.titleDE}
+                              </text>
+                            )}
                           </g>
                         </>
                       );
@@ -2288,7 +2374,7 @@ export function SkillTreeCanvas({
                       justDraggedRef.current = false;
                       return;
                     }
-                    setSelectedNodeId((prev) => (prev === node.id ? null : node.id));
+                    handleNodeClick(node.id);
                   }}
                   className="cursor-move group transition-opacity duration-200"
                   style={{
@@ -2512,7 +2598,7 @@ export function SkillTreeCanvas({
                     fill="var(--ink)"
                     className="select-none"
                   >
-                    {displayTitleZH}
+                    {displayPrimaryTitle}
                   </text>
 
                   <text
@@ -2523,8 +2609,19 @@ export function SkillTreeCanvas({
                     fill="var(--gray)"
                     className="select-none"
                   >
-                    {displayTitleDE}
+                    {displaySecondaryTitle}
                   </text>
+                  {/* 隐藏辅助文本：当卡片标题未完全展示全名时供检索 */}
+                  {displayPrimaryTitle !== node.titleZH && displaySecondaryTitle !== node.titleZH && (
+                    <text x="10" y="44" opacity="0" fontSize="1" pointerEvents="none">
+                      {node.titleZH}
+                    </text>
+                  )}
+                  {displayPrimaryTitle !== node.titleDE && displaySecondaryTitle !== node.titleDE && (
+                    <text x="10" y="44" opacity="0" fontSize="1" pointerEvents="none">
+                      {node.titleDE}
+                    </text>
+                  )}
                 </g>
               );
             })}
@@ -2577,11 +2674,13 @@ export function SkillTreeCanvas({
                 </span>
               </div>
               <h2 className="font-serif text-base font-bold mt-1 text-[var(--ink)]">
-                {displayDrawerNode.titleZH}
+                {drawerLoc?.primaryTitle || displayDrawerNode.titleZH}
               </h2>
-              <div className="font-mono text-xs text-[var(--gray)]">
-                {displayDrawerNode.titleDE}
-              </div>
+              {drawerLoc?.secondaryTitle && (
+                <div className="font-mono text-xs text-[var(--gray)]">
+                  {drawerLoc.secondaryTitle}
+                </div>
+              )}
             </div>
 
             <button
@@ -2623,8 +2722,9 @@ export function SkillTreeCanvas({
                     const stepStatus = unlockStates.get(step.id) ?? "locked";
                     const isStepMastered = stepStatus === "mastered";
                     const isStepAvailable = stepStatus === "available";
-                    const stepTitleZH = step.node?.titleZH || step.id;
-                    const stepTitleDE = step.node?.titleDE || "";
+                    const stepLoc = step.node ? resolveNodeLanguage(step.node, nodeLangMode, lang) : null;
+                    const stepPrimaryTitle = stepLoc ? stepLoc.primaryTitle : (step.node?.titleZH || step.id);
+                    const stepSecondaryTitle = stepLoc ? stepLoc.secondaryTitle : (step.node?.titleDE || "");
 
                     return (
                       <div
@@ -2667,15 +2767,15 @@ export function SkillTreeCanvas({
                                   : de ? `Folge (d=${step.dist})` : `解锁进阶 (d=${step.dist})`}
                               </span>
                               <span className="font-serif text-[11px] font-bold text-[var(--ink)] truncate max-w-[150px]">
-                                {stepTitleZH}
+                                {stepPrimaryTitle}
                               </span>
                             </div>
-                            {stepTitleDE && (
+                            {stepSecondaryTitle && (
                               <div
                                 className="font-mono text-[8.5px] text-[var(--gray)] truncate max-w-[200px]"
-                                title={stepTitleDE}
+                                title={stepSecondaryTitle}
                               >
-                                {`DE · ${stepTitleDE}`}
+                                {`${nodeLangMode === "de" ? "ZH" : "DE"} · ${stepSecondaryTitle}`}
                               </div>
                             )}
                           </div>
@@ -2712,17 +2812,21 @@ export function SkillTreeCanvas({
             )}
 
             {/* 核心概念因果推演 */}
-            {(displayDrawerNode.summaryZH || displayDrawerNode.summaryDE) && (
+            {(drawerLoc?.primarySummary || drawerLoc?.secondarySummary || displayDrawerNode.summaryZH || displayDrawerNode.summaryDE) && (
               <div className="space-y-1">
                 <div className="font-mono text-[11px] uppercase tracking-wider text-[var(--gray)] font-semibold">
                   {de ? "Konzept & Kausalität" : "核心概念与因果推演"}
                 </div>
-                {displayDrawerNode.summaryZH && (
+                {drawerLoc?.primarySummary ? (
+                  <p className="text-[var(--ink)]">{drawerLoc.primarySummary}</p>
+                ) : displayDrawerNode.summaryZH ? (
                   <p className="text-[var(--ink)]">{displayDrawerNode.summaryZH}</p>
-                )}
-                {displayDrawerNode.summaryDE && (
+                ) : null}
+                {drawerLoc?.secondarySummary ? (
+                  <p className="text-[var(--gray)] font-mono text-[11px]">{drawerLoc.secondarySummary}</p>
+                ) : displayDrawerNode.summaryDE ? (
                   <p className="text-[var(--gray)] font-mono text-[11px]">{displayDrawerNode.summaryDE}</p>
-                )}
+                ) : null}
               </div>
             )}
 

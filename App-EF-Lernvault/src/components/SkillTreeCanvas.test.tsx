@@ -283,5 +283,58 @@ describe("SkillTreeCanvas Component (可插拔知识图谱与技能树画布测�
     fireEvent.click(canvasBg);
     expect(drawer).toHaveAttribute("data-state", "closed");
   });
+
+  it("automatically re-opens drawer when clicking any node from collapsed state", () => {
+    render(<SkillTreeCanvas lang="zh" initialFach="SoWi" />);
+
+    const preismechanismusNode = screen.getByTestId("skill-node-sowi-preismechanismus");
+    const knappheitNode = screen.getByTestId("skill-node-sowi-beduerfnis-knappheit");
+
+    // 1. 打开抽屉
+    fireEvent.click(preismechanismusNode);
+    const drawer = screen.getByTestId("skill-tree-node-drawer");
+    expect(drawer).toHaveAttribute("data-state", "open");
+
+    // 2. 点击关闭按钮收回抽屉
+    const closeBtn = screen.getByTestId("skill-tree-drawer-close");
+    fireEvent.click(closeBtn);
+    expect(drawer).toHaveAttribute("data-state", "closed");
+
+    // 3. 抽屉收回状态下，点击同一个节点，必须自动弹出 (不能因为同一节点而不触发或反选)
+    fireEvent.click(preismechanismusNode);
+    expect(drawer).toHaveAttribute("data-state", "open");
+
+    // 4. 再次按 ESC 收回
+    fireEvent.keyDown(window, { key: "Escape" });
+    expect(drawer).toHaveAttribute("data-state", "closed");
+
+    // 5. 抽屉收回状态下，点击另一个节点，也必须自动弹出
+    fireEvent.click(knappheitNode);
+    expect(drawer).toHaveAttribute("data-state", "open");
+  });
+
+  it("switches node language modes (DE / DE·ZH / ZH) and adapts canvas text dynamically", () => {
+    render(<SkillTreeCanvas lang="zh" initialFach="SoWi" />);
+
+    const langSwitcher = screen.getByTestId("skill-tree-lang-switcher");
+    expect(langSwitcher).toBeInTheDocument();
+
+    const deBtn = screen.getByRole("button", { name: "DE" });
+    const bilingualBtn = screen.getByRole("button", { name: "DE·ZH" });
+    const zhBtn = screen.getByRole("button", { name: "ZH" });
+
+    // 默认是中文优先 (ZH)
+    expect(zhBtn).toHaveAttribute("aria-pressed", "true");
+
+    // 切换至德语优先 (DE)
+    fireEvent.click(deBtn);
+    expect(deBtn).toHaveAttribute("aria-pressed", "true");
+    expect(zhBtn).toHaveAttribute("aria-pressed", "false");
+
+    // 切换至双语对照 (DE·ZH)
+    fireEvent.click(bilingualBtn);
+    expect(bilingualBtn).toHaveAttribute("aria-pressed", "true");
+    expect(deBtn).toHaveAttribute("aria-pressed", "false");
+  });
 });
 
