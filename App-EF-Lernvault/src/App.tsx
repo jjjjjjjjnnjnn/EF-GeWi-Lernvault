@@ -5,7 +5,7 @@ import { KnowledgeManagerModal } from "./components/KnowledgeManagerModal";
 import { CoursePipelineModal } from "./components/CoursePipelineModal";
 import { SkillTreeModal } from "./components/SkillTreeModal";
 import { GLOBAL_KEYS, MODULE_KEYS, isTyping, matchesKey } from "./keys";
-import { FAECHER, getFach } from "./fach";
+import { FAECHER } from "./fach";
 import Palette, { type PaletteItem } from "./components/Palette";
 import HelpOverlay from "./components/HelpOverlay";
 import { FeedbackFloat, setFeedbackContext } from "./components/FeedbackBox";
@@ -35,6 +35,7 @@ import { SubjectWorkspace } from "./modules/SubjectWorkspace";
 import Onboarding, { loadOnboarding, saveOnboarding, type OnboardingResult } from "./modules/Onboarding";
 import { initTheme } from "./engine/theme";
 import { SidebarPet } from "./components/mascot/SidebarPet";
+import { AppHeader } from "./components/AppHeader";
 
 type Tab = "home" | "fach" | "library" | "flashcards" | "quiz" | "klausursim" | "tutor" | "planner" | "mindmap" | "lernbaum" | "reise" | "labor" | "designlab" | "werkzeuge" | "einstellungen";
 
@@ -771,122 +772,26 @@ export default function App() {
 
       {/* Main Workspace */}
       <main className="flex min-w-0 flex-1 flex-col overflow-hidden bg-[var(--paper)]">
-        {/* Top bar with hairline divider */}
-        <header className="flex min-h-11 h-auto shrink-0 flex-wrap items-center justify-between gap-2.5 border-b border-[var(--line)] bg-[var(--paper)] px-4 py-1.5 sm:px-6">
-          <div className="flex items-center gap-2">
-            <span className="font-mono text-[var(--text-meta)] uppercase tracking-wider text-[var(--gray)]">
-              {currentWorkspace === "lernen"
-                ? (lang === "de" ? "Lernen" : "学习")
-                : currentWorkspace === "wiederholen"
-                ? (lang === "de" ? "Wiederholen" : "复习")
-                : currentWorkspace === "ueben"
-                ? (lang === "de" ? "Üben" : "练习")
-                : "Home"}
-            </span>
-            <span className="text-[var(--gray)] text-xs">/</span>
-            <span className="font-serif text-sm font-medium text-[var(--ink)]">
-              {allNavItems.find((n) => n.id === tab)?.label}
-              {tab === "fach" && selectedFach !== "alle" && (
-                <span className="ml-1.5 font-mono text-xs font-normal text-[var(--gray)]">
-                  · {lang === "de" ? getFach(selectedFach)?.nameDE : getFach(selectedFach)?.nameZH}
-                </span>
-              )}
-            </span>
-          </div>
-
-          <div className="flex min-w-48 flex-1 items-center max-w-sm">
-            <input
-              ref={searchRef}
-              title="/"
-              value={query}
-              onChange={(e) => setQuery(e.target.value)}
-              placeholder={tr.search}
-              className="w-full rounded-[var(--radius)] border border-[var(--line)] bg-[var(--surface)] px-2.5 py-1 font-sans text-xs text-[var(--ink)] placeholder:text-[var(--gray)] focus:border-[var(--accent)]"
-            />
-          </div>
-
-          <div className="flex flex-wrap items-center justify-end gap-2.5">
-            <div className="flex items-center gap-1.5 rounded-[var(--radius)] border border-[var(--line)] bg-[var(--surface)] px-2 py-0.5">
-              <label htmlFor="header-fach-select" className="font-mono text-[var(--text-meta)] text-[var(--gray)]">
-                Fach:
-              </label>
-              <select
-                id="header-fach-select"
-                value={selectedFach}
-                onChange={(e) => setSelectedFach(e.target.value)}
-                aria-label={lang === "de" ? "Fach auswählen" : "选择学科"}
-                className="border-none bg-transparent font-sans text-xs text-[var(--ink)] focus:outline-none cursor-pointer"
-              >
-                <option value="alle">{lang === "de" ? "Alle Fächer (10)" : "所有学科 (10)"}</option>
-                {FAECHER.map((f) => (
-                  <option key={f.id} value={f.id}>
-                    {f.kurz} · {lang === "de" ? f.nameDE : f.nameZH}
-                  </option>
-                ))}
-              </select>
-            </div>
-            <button
-              type="button"
-              onClick={() => setKnowledgeManagerOpen(true)}
-              className="flex items-center gap-1.5 rounded-[var(--radius)] border border-[var(--line)] bg-[var(--surface)] px-2.5 py-1 font-mono text-xs text-[var(--ink)] transition-colors hover:bg-[var(--paper-subtle)] cursor-pointer"
-              title={lang === "de" ? "Wissensbasis & Framework verwalten" : "知识库管理与模块化扩展"}
-            >
-              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" className="h-3.5 w-3.5">
-                <path d="M2.5 3.5h11M2.5 8h11M2.5 12.5h11" />
-                <circle cx="5" cy="3.5" r="1" fill="currentColor" />
-                <circle cx="10" cy="8" r="1" fill="currentColor" />
-                <circle cx="7" cy="12.5" r="1" fill="currentColor" />
-              </svg>
-              <span>{lang === "de" ? "Wissensbasis" : "知识库"}</span>
-            </button>
-            <button
-              type="button"
-              onClick={() => setCoursePipelineOpen(true)}
-              className="flex items-center gap-1.5 rounded-[var(--radius)] border border-[var(--line)] bg-[var(--surface)] px-2.5 py-1 font-mono text-xs text-[var(--ink)] transition-colors hover:bg-[var(--paper-subtle)] cursor-pointer"
-              title={lang === "de" ? "Kursserie aus Buch generieren (Pipeline)" : "书本 -> 趣味课程集生成流水线"}
-            >
-              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" className="h-3.5 w-3.5">
-                <path d="M2.5 3.5h5a2 2 0 0 1 2 2v7.5a1.5 1.5 0 0 0-1.5-1.5H2.5z" />
-                <path d="M13.5 3.5h-5a2 2 0 0 0-2 2v7.5a1.5 1.5 0 0 1 1.5-1.5h5.5z" />
-                <path d="M11.5 6.5l1.5 1.5-1.5 1.5" />
-              </svg>
-              <span>{lang === "de" ? "Kurs-Pipeline" : "课程工坊"}</span>
-            </button>
-            <button
-              type="button"
-              onClick={() => setSkillTreeOpen(true)}
-              className="flex items-center gap-1.5 rounded-[var(--radius)] border border-[var(--line)] bg-[var(--surface)] px-2.5 py-1 font-mono text-xs text-[var(--ink)] transition-colors hover:bg-[var(--paper-subtle)] cursor-pointer"
-              title={lang === "de" ? "Wissens- & Kompetenzbaum öffnen" : "打开学科知识图谱与前置解锁技能树"}
-            >
-              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" className="h-3.5 w-3.5">
-                <circle cx="8" cy="3.5" r="2" />
-                <circle cx="4" cy="12.5" r="2" />
-                <circle cx="12" cy="12.5" r="2" />
-                <path d="M8 5.5v3M8 8.5L4 10.5M8 8.5l4 2" />
-              </svg>
-              <span>{lang === "de" ? "Skill-Tree" : "技能树"}</span>
-            </button>
-            <button
-              type="button"
-              onClick={() => setSprintOpen(true)}
-              className="flex items-center gap-1.5 rounded-[var(--radius)] border border-[var(--line)] bg-[var(--surface)] px-2.5 py-1 font-mono text-xs text-[var(--ink)] transition-colors hover:bg-[var(--paper-subtle)] cursor-pointer"
-            >
-              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" className="h-3.5 w-3.5">
-                <path d="M8 2.5v3M8 10.5v3M2.5 8h3M10.5 8h3" />
-                <circle cx="8" cy="8" r="3.2" />
-              </svg>
-              <span>{tr.dailySprint}</span>
-              {getStudyStreak().currentStreak > 0 && (
-                <span className="ml-1 rounded-[var(--radius)] border border-[var(--success)] px-1 py-0.2 text-[var(--text-meta)] text-[var(--success)]">
-                  {getStudyStreak().currentStreak}d
-                </span>
-              )}
-            </button>
-            {vaultMsg && (
-              <span className="hidden font-mono text-[var(--text-meta)] text-[var(--gray)] lg:block">{vaultMsg}</span>
-            )}
-          </div>
-        </header>
+        {/* Modern shadcn-style Global App Header */}
+        <AppHeader
+          tab={tab}
+          currentWorkspace={currentWorkspace}
+          tabLabel={allNavItems.find((n) => n.id === tab)?.label}
+          selectedFach={selectedFach}
+          onSelectFach={setSelectedFach}
+          searchQuery={query}
+          onSearchChange={setQuery}
+          searchRef={searchRef}
+          lang={lang}
+          onToggleLang={toggleLang}
+          onOpenKnowledgeManager={() => setKnowledgeManagerOpen(true)}
+          onOpenCoursePipeline={() => setCoursePipelineOpen(true)}
+          onOpenSkillTree={() => setSkillTreeOpen(true)}
+          onOpenDailySprint={() => setSprintOpen(true)}
+          onOpenHelp={() => setHelpOpen(true)}
+          vaultMsg={vaultMsg}
+          currentStreak={getStudyStreak().currentStreak}
+        />
 
         {/* Content Viewport */}
         <div

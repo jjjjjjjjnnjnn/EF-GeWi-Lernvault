@@ -12,9 +12,25 @@
   --gray: #71717A;
   --line: #E4E4E7;
   --accent: #2563EB;
-  --focus: #2563EB;
   --success: #16A34A;
   --warning: #DC2626;
+
+  /* shadcn/ui 语义设计令牌兼容映射 (Semantic Design Tokens) */
+  --background: var(--paper);
+  --foreground: var(--ink);
+  --card: var(--surface);
+  --card-foreground: var(--ink);
+  --popover: var(--surface);
+  --popover-foreground: var(--ink);
+  --primary: var(--ink);
+  --primary-foreground: #FFFFFF;
+  --secondary: var(--paper-subtle);
+  --secondary-foreground: var(--ink);
+  --muted: var(--paper-subtle);
+  --muted-foreground: var(--gray);
+  --border: var(--line);
+  --input: var(--line);
+  --ring: var(--focus);
 
   /* 吉祥物赤狐体系 (Visual Guidelines: Fox Companion Tokens) */
   --fox-orange: #D96E3A;
