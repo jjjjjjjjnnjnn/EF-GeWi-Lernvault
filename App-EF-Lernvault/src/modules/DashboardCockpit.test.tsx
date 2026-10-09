@@ -58,4 +58,19 @@ describe("DashboardCockpit UI Demo", () => {
     await user.click(mintTabBtn);
     expect(screen.getAllByText(/BE-Genauigkeit/).length).toBeGreaterThan(0);
   });
+
+  it("supports inspecting 4D Abitur-Readiness audit panel driven by computeExamReadiness", async () => {
+    const user = userEvent.setup();
+    render(<DashboardCockpit lang="zh" />);
+
+    // Click to expand 4D readiness audit panel
+    const expandBtn = screen.getByText("展开模型");
+    await user.click(expandBtn);
+
+    // Verify 4 dimensions are rendered
+    expect(screen.getByText(/考点深度 \(BKT 35%\)/)).toBeInTheDocument();
+    expect(screen.getByText(/会考留存 \(FSRS 30%\)/)).toBeInTheDocument();
+    expect(screen.getByText(/模考均分 \(Sim 20%\)/)).toBeInTheDocument();
+    expect(screen.getByText(/考纲覆盖 \(15%\)/)).toBeInTheDocument();
+  });
 });

@@ -2,6 +2,8 @@ import { useEffect, useMemo, useState } from "react";
 import type { Lang } from "../i18n";
 import { MascotFox } from "../components/mascot/MascotFox";
 import { THEMES, getStoredTheme, setStoredTheme, type ThemeId } from "../engine/theme";
+import { computeExamReadiness, type ExamReadinessResult } from "../engine/mastery";
+import { graphRegistry, getStoredMasteredNodeIds } from "../engine/skillTree";
 
 export interface DashboardCockpitProps {
   lang: Lang;
@@ -554,22 +556,98 @@ const DEMO_FOCUS_LESSONS: Record<string, FocusLessonContent> = {
 };
 
 
-interface SubjectMastery {
+export interface SubjectMastery {
   fach: string;
   nameDE: string;
   nameZH: string;
   pct: number;
   np: number;
   pillColor: string;
+  readinessResult?: ExamReadinessResult;
 }
 
-const DEMO_SUBJECT_MASTERY: SubjectMastery[] = [
-  { fach: "Deutsch", nameDE: "Deutsch", nameZH: "德语", pct: 80, np: 12, pillColor: "bg-sky-50 text-sky-800 border-sky-200" },
-  { fach: "Mathe", nameDE: "Mathematik", nameZH: "数学", pct: 65, np: 13, pillColor: "bg-emerald-50 text-emerald-800 border-emerald-200" },
-  { fach: "SoWi", nameDE: "SoWi", nameZH: "社科", pct: 70, np: 10, pillColor: "bg-amber-50 text-amber-800 border-amber-200" },
-  { fach: "Philosophie", nameDE: "Philosophie", nameZH: "哲学", pct: 75, np: 11, pillColor: "bg-indigo-50 text-indigo-800 border-indigo-200" },
-  { fach: "Physik", nameDE: "Physik", nameZH: "物理", pct: 60, np: 10, pillColor: "bg-slate-100 text-slate-800 border-slate-200" },
+const BASE_READINESS_CONFIGS = [
+  {
+    fach: "Deutsch",
+    nameDE: "Deutsch",
+    nameZH: "德语",
+    pillColor: "bg-sky-50 text-sky-800 border-sky-200",
+    averageMastery: 0.82,
+    expectedExamRetention: 0.80,
+    recentSimScore: 0.78,
+    fallbackCoverage: 0.85,
+  },
+  {
+    fach: "Mathe",
+    nameDE: "Mathematik",
+    nameZH: "数学",
+    pillColor: "bg-emerald-50 text-emerald-800 border-emerald-200",
+    averageMastery: 0.88,
+    expectedExamRetention: 0.85,
+    recentSimScore: 0.86,
+    fallbackCoverage: 0.82,
+  },
+  {
+    fach: "SoWi",
+    nameDE: "SoWi",
+    nameZH: "社科",
+    pillColor: "bg-amber-50 text-amber-800 border-amber-200",
+    averageMastery: 0.72,
+    expectedExamRetention: 0.68,
+    recentSimScore: 0.70,
+    fallbackCoverage: 0.75,
+  },
+  {
+    fach: "Philosophie",
+    nameDE: "Philosophie",
+    nameZH: "哲学",
+    pillColor: "bg-indigo-50 text-indigo-800 border-indigo-200",
+    averageMastery: 0.76,
+    expectedExamRetention: 0.74,
+    recentSimScore: 0.75,
+    fallbackCoverage: 0.78,
+  },
+  {
+    fach: "Physik",
+    nameDE: "Physik",
+    nameZH: "物理",
+    pillColor: "bg-slate-100 text-slate-800 border-slate-200",
+    averageMastery: 0.70,
+    expectedExamRetention: 0.72,
+    recentSimScore: 0.68,
+    fallbackCoverage: 0.74,
+  },
 ];
+
+export function getCalculatedSubjectMasteries(): SubjectMastery[] {
+  return BASE_READINESS_CONFIGS.map((cfg) => {
+    let coverage = cfg.fallbackCoverage;
+    const graph = graphRegistry.get(cfg.fach);
+    if (graph && graph.nodes.length > 0) {
+      const mastered = getStoredMasteredNodeIds(cfg.fach);
+      if (mastered.size > 0) {
+        coverage = Math.min(1, Math.max(0.1, mastered.size / graph.nodes.length));
+      }
+    }
+    const readiness = computeExamReadiness({
+      averageMastery: cfg.averageMastery,
+      expectedExamRetention: cfg.expectedExamRetention,
+      recentSimScore: cfg.recentSimScore,
+      effectiveCoverageRate: coverage,
+    });
+    return {
+      fach: cfg.fach,
+      nameDE: cfg.nameDE,
+      nameZH: cfg.nameZH,
+      pct: Math.round(readiness.readinessScore * 100),
+      np: readiness.predictedNotenpunkte,
+      pillColor: cfg.pillColor,
+      readinessResult: readiness,
+    };
+  });
+}
+
+const DEMO_SUBJECT_MASTERY: SubjectMastery[] = getCalculatedSubjectMasteries();
 
 function FocusFlowModal({
   lesson,
@@ -884,6 +962,8 @@ export function DashboardCockpit({
   const [activeFocusMission, setActiveFocusMission] = useState<MissionItem | null>(null);
   const [activeSprintDay, setActiveSprintDay] = useState<number>(3);
   const [sprintCollapsed, setSprintCollapsed] = useState<boolean>(false);
+  const [selectedReadinessFach, setSelectedReadinessFach] = useState<string>("SoWi");
+  const [readinessAuditExpanded, setReadinessAuditExpanded] = useState<boolean>(false);
 
   const filteredMissions = useMemo(() => {
     if (fachFilter === "alle") return DEMO_MISSIONS;
@@ -1601,6 +1681,80 @@ export function DashboardCockpit({
                           ))}
                         </div>
                       )}
+                    </div>
+                  )}
+                </div>
+
+                {/* 4D Abitur-Readiness-Audit 四维就绪度诊断面板 */}
+                <div className="border border-[var(--line)] rounded-xl bg-[var(--paper-subtle)] p-2.5 text-xs space-y-2 mt-2">
+                  <div
+                    className="flex items-center justify-between cursor-pointer select-none"
+                    onClick={() => setReadinessAuditExpanded(!readinessAuditExpanded)}
+                  >
+                    <div className="flex items-center gap-1.5 font-mono text-[11px] font-bold text-slate-900">
+                      <span className="w-1.5 h-1.5 rounded-full bg-slate-800" />
+                      <span>{de ? "4D Abitur-Readiness (BKT/FSRS)" : "4D 会考就绪度四维审计 (BKT/FSRS)"}</span>
+                    </div>
+                    <span className="font-mono text-[10px] text-slate-500 font-semibold underline">
+                      {readinessAuditExpanded ? (de ? "Einklappen" : "收起") : (de ? "Details" : "展开模型")}
+                    </span>
+                  </div>
+
+                  {readinessAuditExpanded && (
+                    <div className="pt-2 border-t border-[var(--line)] space-y-2">
+                      <div className="flex items-center justify-between text-[11px]">
+                        <span className="font-medium text-slate-600">{de ? "Fach:" : "审计学科:"}</span>
+                        <div className="flex items-center gap-1 flex-wrap">
+                          {primarySubjectMastery.map((s) => (
+                            <button
+                              key={s.fach}
+                              type="button"
+                              onClick={() => setSelectedReadinessFach(s.fach)}
+                              className={`px-1.5 py-0.5 rounded text-[10px] font-mono font-bold transition-all cursor-pointer ${
+                                selectedReadinessFach === s.fach
+                                  ? "bg-slate-900 text-white"
+                                  : "bg-white border border-slate-200 text-slate-700 hover:border-slate-400"
+                              }`}
+                            >
+                              {s.fach}
+                            </button>
+                          ))}
+                        </div>
+                      </div>
+
+                      {(() => {
+                        const currentSub = primarySubjectMastery.find((s) => s.fach === selectedReadinessFach) || primarySubjectMastery[0];
+                        const dims = currentSub.readinessResult?.dimensions || {
+                          topicMastery: 0.72,
+                          examRetention: 0.68,
+                          simulationScore: 0.70,
+                          effectiveCoverage: 0.75,
+                        };
+                        const items = [
+                          { labelDE: "BKT-Mastery (35%)", labelZH: "考点深度 (BKT 35%)", val: dims.topicMastery },
+                          { labelDE: "FSRS-Retention (30%)", labelZH: "会考留存 (FSRS 30%)", val: dims.examRetention },
+                          { labelDE: "Sim-Score (20%)", labelZH: "模考均分 (Sim 20%)", val: dims.simulationScore },
+                          { labelDE: "Coverage (15%)", labelZH: "考纲覆盖 (15%)", val: dims.effectiveCoverage },
+                        ];
+                        return (
+                          <div className="grid grid-cols-2 gap-1.5 pt-1">
+                            {items.map((it, idx) => (
+                              <div key={idx} className="p-1.5 rounded-lg bg-white border border-slate-200 space-y-1">
+                                <div className="flex items-center justify-between text-[9px] font-mono text-slate-500 font-bold">
+                                  <span>{de ? it.labelDE : it.labelZH}</span>
+                                  <span className="text-slate-900">{Math.round(it.val * 100)}%</span>
+                                </div>
+                                <div className="w-full h-1 bg-slate-100 rounded-full overflow-hidden">
+                                  <div
+                                    className="h-full bg-slate-800 rounded-full"
+                                    style={{ width: `${Math.round(it.val * 100)}%` }}
+                                  />
+                                </div>
+                              </div>
+                            ))}
+                          </div>
+                        );
+                      })()}
                     </div>
                   )}
                 </div>

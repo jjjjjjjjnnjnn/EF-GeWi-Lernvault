@@ -1655,3 +1655,78 @@ export const BUILTIN_PHILO_GRAPH: SubjectKnowledgeGraph = {
 
 /** 全局单例学科图谱注册表 */
 export const graphRegistry = new SubjectGraphRegistryImpl();
+
+// ---------------------------------------------------------------------------
+// 4. 技能树掌握持久化与全局事件总线 (Mastery Persistence & Event Bus)
+// ---------------------------------------------------------------------------
+
+export const SKILL_TREE_MASTERED_EVENT = "skill-tree-node-mastered";
+
+export function getStoredMasteredNodeIds(fach: SubjectKey): Set<string> {
+  try {
+    if (typeof window === "undefined" || !window.localStorage) {
+      return new Set<string>();
+    }
+    const raw = window.localStorage.getItem(`skill_tree_mastered_${fach}`);
+    if (!raw) return new Set<string>();
+    const parsed = JSON.parse(raw);
+    return Array.isArray(parsed) ? new Set(parsed) : new Set<string>();
+  } catch {
+    return new Set<string>();
+  }
+}
+
+export function saveStoredMasteredNodeIds(fach: SubjectKey, nodeIds: Set<string>): void {
+  try {
+    if (typeof window === "undefined" || !window.localStorage) return;
+    window.localStorage.setItem(
+      `skill_tree_mastered_${fach}`,
+      JSON.stringify(Array.from(nodeIds))
+    );
+  } catch {
+    // 静默降级
+  }
+}
+
+export function setNodeMastered(fach: SubjectKey, nodeId: string, isMastered = true): void {
+  const current = getStoredMasteredNodeIds(fach);
+  if (isMastered) {
+    current.add(nodeId);
+  } else {
+    current.delete(nodeId);
+  }
+  saveStoredMasteredNodeIds(fach, current);
+  if (typeof window !== "undefined" && window.dispatchEvent) {
+    window.dispatchEvent(
+      new CustomEvent(SKILL_TREE_MASTERED_EVENT, {
+        detail: { fach, nodeId, isMastered },
+      })
+    );
+  }
+}
+
+export function markNodeMasteredByCourseId(
+  courseId: string,
+  fachHint?: string
+): { success: boolean; nodeId?: string; fach?: string } {
+  const allGraphs = graphRegistry.getAll();
+  const searchGraphs = fachHint
+    ? [graphRegistry.get(fachHint) || null, ...allGraphs].filter(Boolean) as SubjectKnowledgeGraph[]
+    : allGraphs;
+
+  for (const graph of searchGraphs) {
+    // 优先匹配 linkedReiseId，其次匹配 node.id 相互包含
+    const matchedNode = graph.nodes.find(
+      (n) =>
+        n.linkedReiseId?.toLowerCase() === courseId.toLowerCase() ||
+        n.id.toLowerCase() === courseId.toLowerCase() ||
+        (courseId.toLowerCase().includes(n.id.toLowerCase()) && n.id.length > 5)
+    );
+    if (matchedNode) {
+      setNodeMastered(graph.fach, matchedNode.id, true);
+      return { success: true, nodeId: matchedNode.id, fach: graph.fach };
+    }
+  }
+
+  return { success: false };
+}

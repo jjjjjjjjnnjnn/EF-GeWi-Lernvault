@@ -29,6 +29,7 @@ import {
 } from "../engine/reise-ki";
 import { setFeedbackContext } from "../components/FeedbackBox";
 import { xpStore, type XpData } from "../engine/stores";
+import { markNodeMasteredByCourseId } from "../engine/skillTree";
 import { PER_MODULE_KEYS, isTyping, matchesKey } from "../keys";
 import { restoreGermanUmlauts } from "../utils/germanOrthography";
 import type { Lang } from "../i18n";
@@ -1051,6 +1052,9 @@ export default function ReiseModule({
       setStepIdx(stepIdx + 1);
     } else {
       addXP(xpReward, stepIdx);
+      if (activeCourse.id) {
+        markNodeMasteredByCourseId(activeCourse.id, activeCourse.fach);
+      }
       alert(
         lang === "de"
           ? `Kurs abgeschlossen! +${xpReward} XP`

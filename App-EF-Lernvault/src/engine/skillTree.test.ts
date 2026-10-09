@@ -18,6 +18,11 @@ import {
   filterKnowledgeGraph,
   validateKnowledgeGraph,
   graphRegistry,
+  getStoredMasteredNodeIds,
+  saveStoredMasteredNodeIds,
+  setNodeMastered,
+  markNodeMasteredByCourseId,
+  SKILL_TREE_MASTERED_EVENT,
   BUILTIN_SOWI_GRAPH,
   BUILTIN_MATHE_GRAPH,
   type KnowledgeNode,
@@ -647,6 +652,47 @@ describe("Skill Tree & Extensible Knowledge Graph Engine", () => {
       // 边已净化：无自指、无悬空边
       expect(repaired.edges.some((e) => e.from === e.to)).toBe(false);
       expect(repaired.edges.some((e) => e.to === "ghost-node")).toBe(false);
+    });
+  });
+
+  describe("12. 技能树掌握持久化与全域事件总线 (Mastery Persistence & Event Bus)", () => {
+    it("persists mastered node IDs in localStorage and dispatches mastery events", () => {
+      const fach = "SoWi";
+      const testNode = "sowi-beduerfnis-knappheit";
+
+      // 初始读取与存储写入
+      saveStoredMasteredNodeIds(fach, new Set([testNode]));
+      const retrieved = getStoredMasteredNodeIds(fach);
+      expect(retrieved.has(testNode)).toBe(true);
+
+      // 事件触发测试
+      let receivedDetail: any = null;
+      const handler = (e: Event) => {
+        receivedDetail = (e as CustomEvent).detail;
+      };
+      window.addEventListener(SKILL_TREE_MASTERED_EVENT, handler);
+
+      setNodeMastered(fach, testNode, false);
+      expect(getStoredMasteredNodeIds(fach).has(testNode)).toBe(false);
+      expect(receivedDetail).toEqual({ fach, nodeId: testNode, isMastered: false });
+
+      setNodeMastered(fach, testNode, true);
+      expect(getStoredMasteredNodeIds(fach).has(testNode)).toBe(true);
+      expect(receivedDetail).toEqual({ fach, nodeId: testNode, isMastered: true });
+
+      window.removeEventListener(SKILL_TREE_MASTERED_EVENT, handler);
+    });
+
+    it("marks node mastered automatically when matching course ID", () => {
+      // 在 SoWi 图谱中具有 linkedReiseId: "SoWi-Wirtschaftskreislauf-L1"
+      const res = markNodeMasteredByCourseId("SoWi-Wirtschaftskreislauf-L1", "SoWi");
+      expect(res.success).toBe(true);
+      expect(res.nodeId).toBe("sowi-wirtschaftskreislauf");
+      expect(res.fach).toBe("SoWi");
+
+      // 验证已被持久化写入已掌握集合
+      const mastered = getStoredMasteredNodeIds("SoWi");
+      expect(mastered.has("sowi-wirtschaftskreislauf")).toBe(true);
     });
   });
 });

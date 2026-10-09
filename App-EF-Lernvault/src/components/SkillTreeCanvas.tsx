@@ -11,6 +11,9 @@ import {
   removeNodeTag,
   attachExternalResource,
   computePlanetaryRadialLayout,
+  getStoredMasteredNodeIds,
+  setNodeMastered,
+  SKILL_TREE_MASTERED_EVENT,
   type SubjectKey,
   type KnowledgeNode,
   type SubjectKnowledgeGraph,
@@ -113,14 +116,9 @@ export function SkillTreeCanvas({
   const [selectedTag, setSelectedTag] = useState<string>("ALL");
   const [searchQuery, setSearchQuery] = useState<string>("");
 
-  // 3. 掌握状态集合 (本地持久化演示)
+  // 3. 掌握状态集合 (与全局技能树持久化联动)
   const [masteredIds, setMasteredIds] = useState<Set<string>>(() => {
-    try {
-      const saved = localStorage.getItem(`skill_tree_mastered_${initialFach}`);
-      return saved ? new Set(JSON.parse(saved)) : new Set<string>();
-    } catch {
-      return new Set<string>();
-    }
+    return getStoredMasteredNodeIds(initialFach);
   });
 
   // 4. 选中知识点 (右侧研习抽屉展开)
@@ -200,12 +198,7 @@ export function SkillTreeCanvas({
       if (graph) {
         setActiveGraph(graph);
       }
-      try {
-        const saved = localStorage.getItem(`skill_tree_mastered_${fach}`);
-        setMasteredIds(saved ? new Set(JSON.parse(saved)) : new Set<string>());
-      } catch {
-        setMasteredIds(new Set<string>());
-      }
+      setMasteredIds(getStoredMasteredNodeIds(fach));
     },
     [onSubjectChange]
   );
@@ -219,23 +212,33 @@ export function SkillTreeCanvas({
     }
   }, [initialFach, handleSelectFach]);
 
+  // 监听全域掌握状态变更事件 (例如来自 Reise 完成微课时触发)
+  useEffect(() => {
+    const handleMasteredEvent = (e: Event) => {
+      const customEvent = e as CustomEvent<{ fach: string; nodeId: string; isMastered: boolean }>;
+      if (customEvent.detail && customEvent.detail.fach.toLowerCase() === selectedFach.toLowerCase()) {
+        setMasteredIds(getStoredMasteredNodeIds(selectedFach));
+      }
+    };
+    if (typeof window !== "undefined") {
+      window.addEventListener(SKILL_TREE_MASTERED_EVENT, handleMasteredEvent);
+      return () => {
+        window.removeEventListener(SKILL_TREE_MASTERED_EVENT, handleMasteredEvent);
+      };
+    }
+  }, [selectedFach]);
+
   // 切换掌握状态
   const toggleMastered = useCallback(
     (nodeId: string) => {
       setMasteredIds((prev) => {
+        const isMasteredNow = !prev.has(nodeId);
+        setNodeMastered(selectedFach, nodeId, isMasteredNow);
         const next = new Set(prev);
-        if (next.has(nodeId)) {
-          next.delete(nodeId);
-        } else {
+        if (isMasteredNow) {
           next.add(nodeId);
-        }
-        try {
-          localStorage.setItem(
-            `skill_tree_mastered_${selectedFach}`,
-            JSON.stringify(Array.from(next))
-          );
-        } catch {
-          // 忽略存储失败
+        } else {
+          next.delete(nodeId);
         }
         return next;
       });
