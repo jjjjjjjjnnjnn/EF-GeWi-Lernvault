@@ -283,6 +283,7 @@
 - [2026-10-09-causal-distance-decay-and-macro-flow](Journal/2026-10-09-causal-distance-decay-and-macro-flow.md) — **因果拓扑距离梯度衰减、宏观星盘扇区底衬与抽屉线性推进清单**：BFS拓扑分层衰减算法+星盘扇区微透甜甜圈网格+右侧知识抽屉有序步骤流+纯矢量三态高对比编码（全绿）
 - [2026-10-09-product-roadmap-and-core-module-standardization](Journal/2026-10-09-product-roadmap-and-core-module-standardization.md) — **产品化演进路线图与核心业务模块标准化**：学科专区与文库卡片标准化改造+Flashcards吸收Recall复习流SessionSummary看板（全绿）
 - [2026-10-09-skill-tree-declutter-and-drawer-dismiss](Journal/2026-10-09-skill-tree-declutter-and-drawer-dismiss.md) — **知识图谱降噪、抽屉四维关闭与导航消冗**：抽屉四维关闭闭环（同节点反选/点空白/点叉/ESC）+锁定节点纯净Orb轻量化+径向交错波浪算法根治卡片碰撞重叠+顶栏删减重复技能树+控制条高度压缩（535单测/build/vault-check全绿）
+- [2026-10-09-skill-tree-node-capsule-and-sliding-drawer](Journal/2026-10-09-skill-tree-node-capsule-and-sliding-drawer.md) — **知识图谱全量考点单行胶囊化与研习抽屉平滑抽拉动画**：单行胶囊化降噪+重点高对比突出+因果链焦点全展开+右侧研习抽屉开箱常驻+硬件加速平滑抽拉收回动画+右边缘呼出小把手（535单测/build/vault-check全绿）
 - 约定：文件名 `YYYY-MM-DD-<thema>.md`，头部frontmatter（`fach`可空，`tags: [EF, Meta]`）。
 
 
