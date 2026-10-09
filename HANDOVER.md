@@ -26,6 +26,26 @@
 
 ---
 
+- ✅ **Phase 3.2 知识图谱状态机闭环、全科宏观战役融合与德国大选议席分配沙盘交付（2026-10-09 夜交付）**：
+  - **方向一：知识图谱与微课通关双向状态机闭环**：
+    - `Reise.tsx` 完成步骤 8 及主结算通道时自动穿透调用 `markNodeMasteredByCourseId`，持久化至全局与学科共享状态；
+    - `SkillTreeCanvas.tsx` 即时响应 `SKILL_TREE_MASTERED_EVENT`，掌握节点源头依赖连线跃迁为高对比度墨色实线；
+    - 呈现纯 SVG 墨色微波纹动效（`ink-ripple-wave`），研习抽屉标示「已掌握 / Gekonnt」并列出直接解锁的后置考点列表；
+    - 配套独立测试 `SkillTreeProgression.test.tsx` 12/12 绿灯通过；
+  - **方向三：全科宏观星图四大跨学科战役深度融合**：
+    - 深度对齐 `vernetzung.ts` 四大考点簇（异化劳动、分配正义、变化率守恒、论辩修辞），结构化挂载考纲八段式研习笔记与 15 NP 评分话术；
+    - 星盘画布（Astrolabe）动态绘制跨学科核心星体之间的二次贝塞尔引力拓扑桥梁与双向交错光流微光；
+    - 战役选项卡提供 4 阶段因果链推进流（Schritt 1 ➔ 4）直达锚点与沉浸式 `afb3-simulation-modal` 答题演练沙盒；
+    - 配套测试 `AllSubjectsMacroView.test.tsx` 9/9 绿灯通过；
+  - **方向二：文科社科标志性工坊德国联邦议院选举与议席分配沙盘 (`WahlsystemSim.tsx`)**：
+    - 依据北威州 SoWi 考纲与《联邦选举法》（BWG 2023/2024 最新改革），建模双票制、5% 门槛与基本议席条款、圣拉古法（Sainte-Laguë）除数配额算法；
+    - 支持传统模式（598 席基准 + 悬峙平衡议席膨胀至 736 席）vs 2023 新选举法模式（630 席固定 + 未覆盖直选席位不予就任）两套机制一键动态对比；
+    - Tufte 纯黑白 Plenarsaal Hemicycle 半圆形全景席位散点图，标注总理法定过半线（Kanzlermehrheit 50%+1）；
+    - 内置 2021 实况、2025 模拟与悬峙两难情境预设，配备执政联盟测算器与 AFB III 考纲设问研习台；
+    - 注册入 `registry.ts`、`laborRegistry.ts` 与 `Labor.tsx`（别名：`wahlsystem`, `bundestagswahl`, `sitzverteilung` 等）；
+    - 配套独立测试 `WahlsystemSim.test.tsx` 13/13 绿灯通过；
+  - **工程门禁全绿**：全量 79 个测试套件、583 项测试 100% PASS，`modules.test.tsx` 零契约违规，`npx tsc -b` 0 报错，`python scripts/vault-check.py` PASS。
+
 - ✅ **Phase 3.1 知识图谱体验全面收敛、全语言模糊搜索体系与极致清爽 HUD 落地（2026-10-09 晚交付）**：
   - **纯德语模式零中文泄漏治理（Zero Chinese Leak in Pure German）**：
     - 重构 `nodeLocalization.ts`，德语模式下副标题彻底置空，研习抽屉、因果链步骤流、太阳星核全量自适应为纯正德语考纲规范术语，杜绝任何中文字符泄漏；

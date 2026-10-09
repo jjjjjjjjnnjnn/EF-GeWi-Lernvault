@@ -986,3 +986,8 @@ tags: [EF, Meta]
 | Bewertungseinheit | 采分点（BE） | Mathe | Eine Bewertungseinheit BE ist das kleinste atomare Bepunktungselement im offiziellen NRW-Erwartungshorizont. |
 | Folgefehler | 后续推导保留分（防连坐机制） | Mathe | Ein Folgefehler beschreibt das Prinzip, dass trotz vorangegangenem Rechenfehler alle formal korrekten Folgeschritte voll bepunktet werden. |
 | mathematischer Ansatz | 列式与模型声明 | Mathe | Der mathematische Ansatz deklariert die zu verwendende Grundgleichung oder Theorem vor dem rechnerischen Einsetzen. |
+| Sainte-Laguë-Verfahren | 圣拉古除数配额算法 | SoWi | Das Sainte-Laguë-Verfahren teilt die Zweitstimmen durch ungerade Zahlen (1, 3, 5...), um Parlamentssitze verzerrungsfrei zu verteilen. |
+| Überhangmandat | 悬峙议席（超额直选议席） | SoWi | Ein Überhangmandat entsteht, wenn eine Partei in einem Land mehr Direktmandate gewinnt, als ihr nach dem Zweitstimmenergebnis zustehen. |
+| Ausgleichsmandat | 平衡议席（比例矫正席位） | SoWi | Ausgleichsmandate werden anderen Parteien zugewiesen, um das durch Überhangmandate verzerrte proportionale Kräfteverhältnis wiederherzustellen. |
+| Zweitstimmendeckung | 第二票配额覆盖（新选举法规则） | SoWi | Die Zweitstimmendeckung besagt, dass Wahlkreisgewinner nur dann ins Parlament einziehen, wenn ihr Direktmandat durch die Zweitstimmen ihrer Partei gedeckt ist. |
+| Grundmandatsklausel | 基本议席豁免条款 | SoWi | Die Grundmandatsklausel ermöglichte Parteien unter 5% den Einzug in voller Fraktionsstärke, sofern sie mindestens drei Direktmandate errangen. |
