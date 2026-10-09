@@ -1204,6 +1204,7 @@ export function SkillTreeCanvas({
             setSelectedNodeId(node.id);
           }}
           onDeselectNode={() => setSelectedNodeId(null)}
+          onOpenNote={onOpenNote}
           selectedNodeId={selectedNodeId}
           masteredIds={masteredIds}
           onToggleMastered={(nodeId) => toggleMastered(nodeId)}
