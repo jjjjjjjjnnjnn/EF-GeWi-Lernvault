@@ -121,8 +121,13 @@ export function SkillTreeCanvas({
     return getStoredMasteredNodeIds(initialFach);
   });
 
-  // 4. 选中知识点 (右侧研习抽屉展开)
-  const [selectedNodeId, setSelectedNodeId] = useState<string | null>(null);
+  // 4. 选中知识点 (右侧研习抽屉展开，默认高亮展示当前推荐攻关考点)
+  const [selectedNodeId, setSelectedNodeId] = useState<string | null>(() => {
+    const graph = graphRegistry.get(initialFach) ?? graphRegistry.getAll()[0];
+    const storedMastered = getStoredMasteredNodeIds(initialFach);
+    const summary = calculateSubjectProgress(graph, storedMastered);
+    return summary.recommendedNextNodeId || graph?.nodes[0]?.id || null;
+  });
 
   // 4.1 用户自定义移动节点坐标记录 (nodeId -> { x, y })
   const [customNodePositions, setCustomNodePositions] = useState<Map<string, { x: number; y: number }>>(() => new Map());
@@ -1059,8 +1064,20 @@ export function SkillTreeCanvas({
     });
   };
 
+  const lastActiveNodeRef = useRef<KnowledgeNode | null>(null);
   const activeNode = selectedNodeId ? nodeMap.get(selectedNodeId) : null;
-  const activeNodeStatus = selectedNodeId ? unlockStates.get(selectedNodeId) : "locked";
+  if (activeNode) {
+    lastActiveNodeRef.current = activeNode;
+  }
+  const displayDrawerNode = activeNode || lastActiveNodeRef.current || (activeGraph.nodes.length > 0 ? activeGraph.nodes[0] : null);
+  const isDrawerOpen = Boolean(selectedNodeId && activeNode);
+  const activeNodeStatus = displayDrawerNode ? (unlockStates.get(displayDrawerNode.id) ?? "locked") : "locked";
+
+  const lastDrawerCausalAnalysisRef = useRef<typeof causalAnalysis>(null);
+  if (causalAnalysis && isDrawerOpen) {
+    lastDrawerCausalAnalysisRef.current = causalAnalysis;
+  }
+  const drawerCausalAnalysis = causalAnalysis || lastDrawerCausalAnalysisRef.current;
 
   return (
     <div
@@ -1986,419 +2003,260 @@ export function SkillTreeCanvas({
                       opacity: nodeOpacity,
                     }}
                   >
-                    {/* 判定是否展开完整学术卡片 (已掌握/可攻坚/聚焦/选中/鼠标悬停均展开) */}
+                    {/* 节点呈现：常规态为轻量单行胶囊(考点名全部清晰可见且不乱)；焦点/悬停/选中及因果链前后节点展开全景Tufte学术卡片 */}
                     {(() => {
                       const isHovered = hoveredNodeId === node.id;
-                      const shouldShowFullCard = !isLocked || isFocal || isSelected || isHovered;
+                      const isFocalOrSelected = isFocal || isSelected || isHovered || isPrereq || isSuccessor;
 
-                      if (!shouldShowFullCard) {
-                        // 锁定状态轻量化：仅渲染纯净内敛微型小天体灰点，彻底消除 80% 画布噪点与文字碰撞
+                      // 1. 焦点/选中/鼠标悬停展开态：展开全景 Tufte 学术卡片 (196x58)
+                      if (isFocalOrSelected) {
                         return (
                           <>
+                            {/* A. 知识点星体核心 (Planetary Body Orb) */}
                             <g className="planetary-orb">
+                              {/* 大气层星晕光环 */}
                               <circle
-                                r="7.5"
-                                fill="var(--paper-subtle)"
-                                stroke="var(--line)"
-                                strokeWidth="1.0"
-                                className="transition-all duration-150 group-hover:stroke-[var(--ink)]"
-                              />
-                              <circle cx="0" cy="0" r="2.2" fill="var(--gray)" opacity="0.6" />
-                            </g>
-                            {/* 保留隐藏文本节点供无障碍与单元测试检索 */}
-                            <g aria-hidden="true" opacity="0" pointerEvents="none">
-                              <text x={cardX + 8} y={cardY + 33}>{displayTitleZH}</text>
-                              <text x={cardX + 8} y={cardY + 48}>{displayTitleDE}</text>
-                            </g>
-                          </>
-                        );
-                      }
-
-                      return (
-                        <>
-                          {/* A. 知识点星体核心 (Planetary Body Orb) */}
-                          <g className="planetary-orb">
-                            {/* 大气层星晕光环 (Atmospheric Halo) */}
-                            <circle
-                              r="21"
-                              fill="none"
-                              stroke={
-                                isFocal || isSelected
-                                  ? "var(--ink)"
-                                  : isMastered
-                                  ? "var(--ink)"
-                                  : isAvailable
-                                  ? "var(--ink)"
-                                  : "var(--line)"
-                              }
-                              strokeWidth={isFocal || isSelected ? 2.0 : isMastered ? 1.4 : isAvailable ? 1.6 : 0.8}
-                              strokeDasharray={isAvailable ? "3 2" : isLocked ? "2 3" : "none"}
-                              opacity={isLocked ? 0.4 : 0.85}
-                            />
-
-                            {/* 精通状态下的四向星芒微刻线 */}
-                            {isMastered && (
-                              <g stroke="var(--ink)" strokeWidth="1.2">
-                                <line x1="0" y1="-21" x2="0" y2="-24" />
-                                <line x1="0" y1="21" x2="0" y2="24" />
-                                <line x1="-21" y1="0" x2="-24" y2="0" />
-                                <line x1="21" y1="0" x2="24" y2="0" />
-                              </g>
-                            )}
-
-                            {/* 高阶综合点 (AFB III / Q2 / Uni) 赋予土星型吸积光环 */}
-                            {(node.level === 3 || node.curriculumTier === "Q2" || node.curriculumTier === "Uni_Prep") && (
-                              <ellipse
-                                rx="24"
-                                ry="7"
-                                transform="rotate(-24)"
+                                r="21"
                                 fill="none"
-                                stroke={isMastered ? "var(--ink)" : "var(--gray)"}
-                                strokeWidth="1.0"
-                                opacity="0.75"
+                                stroke="var(--ink)"
+                                strokeWidth={2.0}
+                                opacity={0.9}
                               />
-                            )}
-
-                            {/* 核心球体 (Core Sphere) */}
-                            <circle
-                              r="15"
-                              fill={isMastered ? "var(--ink)" : isAvailable ? "var(--surface)" : "var(--paper-subtle)"}
-                              stroke={
-                                isFocal || isSelected
-                                  ? "var(--ink)"
-                                  : isMastered
-                                  ? "var(--ink)"
-                                  : isAvailable
-                                  ? "var(--ink)"
-                                  : "var(--line)"
-                              }
-                              strokeWidth={isFocal || isSelected ? 2.2 : isAvailable ? 2.0 : 1.0}
-                              className="transition-all duration-150 group-hover:stroke-[var(--ink)]"
-                            />
-
-                            {/* 星核状态微标 (严格手绘纯矢量，严禁 Emoji) */}
-                            {isMastered && (
-                              <path
-                                d="M-4.5 0 L-1.5 3.5 L5 -3.5"
-                                fill="none"
-                                stroke="var(--surface)"
-                                strokeWidth="2.0"
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                              />
-                            )}
-                            {isAvailable && (
-                              <circle cx="0" cy="0" r="4.5" fill="var(--ink)" />
-                            )}
-                            {isLocked && (
-                              <g transform="translate(0, 0)">
-                                <rect
-                                  x="-3.5"
-                                  y="-1"
-                                  width="7"
-                                  height="5.5"
-                                  rx="1"
+                              {/* 精通状态下的四向星芒 */}
+                              {isMastered && (
+                                <g stroke="var(--ink)" strokeWidth="1.2">
+                                  <line x1="0" y1="-21" x2="0" y2="-24" />
+                                  <line x1="0" y1="21" x2="0" y2="24" />
+                                  <line x1="-21" y1="0" x2="-24" y2="0" />
+                                  <line x1="21" y1="0" x2="24" y2="0" />
+                                </g>
+                              )}
+                              {/* 高阶综合点吸积光环 */}
+                              {(node.level === 3 || node.curriculumTier === "Q2" || node.curriculumTier === "Uni_Prep") && (
+                                <ellipse
+                                  rx="24"
+                                  ry="7"
+                                  transform="rotate(-24)"
                                   fill="none"
-                                  stroke="var(--gray)"
-                                  strokeWidth="1.1"
+                                  stroke={isMastered ? "var(--ink)" : "var(--gray)"}
+                                  strokeWidth="1.0"
+                                  opacity="0.75"
                                 />
+                              )}
+                              {/* 核心球体 */}
+                              <circle
+                                r="15"
+                                fill={isMastered ? "var(--ink)" : "var(--surface)"}
+                                stroke="var(--ink)"
+                                strokeWidth={2.2}
+                              />
+                              {isMastered && (
                                 <path
-                                  d="M-2 -1 V-3.2 A2 2 0 0 1 2 -3.2 V-1"
+                                  d="M-4.5 0 L-1.5 3.5 L5 -3.5"
                                   fill="none"
-                                  stroke="var(--gray)"
-                                  strokeWidth="1.1"
+                                  stroke="var(--surface)"
+                                  strokeWidth="2.0"
+                                  strokeLinecap="round"
+                                  strokeLinejoin="round"
                                 />
-                              </g>
-                            )}
-                          </g>
+                              )}
+                              {isAvailable && (
+                                <circle cx="0" cy="0" r="4.5" fill="var(--ink)" />
+                              )}
+                              {isLocked && (
+                                <g transform="translate(0, 0)">
+                                  <rect x="-3.5" y="-1" width="7" height="5.5" rx="1" fill="none" stroke="var(--gray)" strokeWidth="1.1" />
+                                  <path d="M-2 -1 V-3.2 A2 2 0 0 1 2 -3.2 V-1" fill="none" stroke="var(--gray)" strokeWidth="1.1" />
+                                </g>
+                              )}
+                            </g>
 
-                          {/* B. 星球与标牌连接引力桥梁 (Tether Bridge) */}
-                          <line
-                            x1={isLeft ? -15 : 15}
-                            y1="0"
-                            x2={isLeft ? -24 : 24}
-                            y2="0"
-                            stroke={isAvailable || isMastered ? "var(--ink)" : "var(--line)"}
-                            strokeWidth="1.0"
-                            strokeDasharray="1 2"
-                          />
-
-                          {/* C. 学术名牌标牌 (Academic Data Cartouche) */}
-                          <g className="planetary-cartouche">
-                            {/* 标牌底板：纯白卡片，脱颖于背景纸面 */}
-                            <rect
-                              x={cardX}
-                              y={cardY}
-                              width={cardW}
-                              height={cardH}
-                              rx="4"
-                              fill={isMastered ? "var(--paper-subtle)" : "var(--surface)"}
-                              stroke={
-                                isFocal || isSelected
-                                  ? "var(--ink)"
-                                  : isAvailable
-                                  ? "var(--ink)"
-                                  : isMastered
-                                  ? "var(--ink)"
-                                  : "var(--line)"
-                              }
-                              strokeWidth={isFocal || isSelected ? 2.2 : isAvailable ? 1.8 : isMastered ? 1.2 : 0.9}
-                              strokeDasharray={isLocked ? "3 2" : "none"}
-                              className="transition-all duration-150 group-hover:stroke-[var(--ink)]"
+                            {/* B. 引力连接桥梁 */}
+                            <line
+                              x1={isLeft ? -15 : 15}
+                              y1="0"
+                              x2={isLeft ? -24 : 24}
+                              y2="0"
+                              stroke="var(--ink)"
+                              strokeWidth="1.2"
+                              strokeDasharray="1 2"
                             />
 
-                            {/* 标牌内缘细微蚀刻线 (Tufte 学术双发丝内框，增强纸张层次感) */}
-                            <rect
-                              x={cardX + 1.5}
-                              y={cardY + 1.5}
-                              width={cardW - 3}
-                              height={cardH - 3}
-                              rx="3"
-                              fill="none"
-                              stroke={isAvailable ? "var(--ink)" : "var(--paper-subtle)"}
-                              strokeWidth="0.8"
-                              strokeOpacity={isAvailable ? 0.3 : 1}
-                              pointerEvents="none"
-                            />
-
-                            {/* 顶部学术状态标饰线 (Top Ink Status Header Bar) */}
-                            <rect
-                              x={cardX}
-                              y={cardY}
-                              width={cardW}
-                              height={2.8}
-                              rx="1.4"
-                              fill="var(--ink)"
-                              opacity={isFocal || isSelected ? 1.0 : isMastered ? 0.9 : isAvailable ? 0.6 : 0.2}
-                            />
-
-                            {/* 选中态星盘十字准星定位线 (Reticle Corner Brackets) */}
-                            {(isFocal || isSelected) && (
+                            {/* C. 学术名牌标牌 (Academic Data Cartouche) */}
+                            <g className="planetary-cartouche">
+                              <rect
+                                x={cardX}
+                                y={cardY}
+                                width={cardW}
+                                height={cardH}
+                                rx="4"
+                                fill="var(--surface)"
+                                stroke="var(--ink)"
+                                strokeWidth={2.2}
+                              />
+                              <rect
+                                x={cardX + 1.5}
+                                y={cardY + 1.5}
+                                width={cardW - 3}
+                                height={cardH - 3}
+                                rx="3"
+                                fill="none"
+                                stroke="var(--ink)"
+                                strokeWidth="0.8"
+                                strokeOpacity={0.25}
+                                pointerEvents="none"
+                              />
+                              <rect
+                                x={cardX}
+                                y={cardY}
+                                width={cardW}
+                                height={2.8}
+                                rx="1.4"
+                                fill="var(--ink)"
+                              />
+                              {/* 准星定位角标 */}
                               <g stroke="var(--ink)" strokeWidth="1.5" fill="none">
                                 <path d={`M ${cardX + 2} ${cardY + 8} L ${cardX + 2} ${cardY + 2} L ${cardX + 8} ${cardY + 2}`} />
                                 <path d={`M ${cardX + cardW - 8} ${cardY + 2} L ${cardX + cardW - 2} ${cardY + 2} L ${cardX + cardW - 2} ${cardY + 8}`} />
                                 <path d={`M ${cardX + 2} ${cardY + cardH - 8} L ${cardX + 2} ${cardY + cardH - 2} L ${cardX + 8} ${cardY + cardH - 2}`} />
                                 <path d={`M ${cardX + cardW - 8} ${cardY + cardH - 2} L ${cardX + cardW - 2} ${cardY + cardH - 2} L ${cardX + cardW - 2} ${cardY + cardH - 8}`} />
                               </g>
-                            )}
+                              {/* 学段 Pill 与 AFB */}
+                              <rect x={cardX + 7} y={cardY + 6.5} width={28} height={12.5} rx="2" fill="var(--paper-subtle)" stroke="var(--line)" strokeWidth="0.6" />
+                              <text x={cardX + 21} y={cardY + 15.5} textAnchor="middle" fontFamily="monospace" fontSize="7.5" fontWeight="bold" fill="var(--ink)">
+                                {tierText}
+                              </text>
+                              <text x={cardX + 40} y={cardY + 15.5} fontFamily="monospace" fontSize="8" fill="var(--gray)" className="select-none">
+                                {afbText}
+                              </text>
+                              {/* 因果链指示角标 或 状态指示徽记 */}
+                              {isFocal ? (
+                                <g>
+                                  <rect x={cardX + cardW - 86} y={cardY + 6.5} width={46} height={12.5} rx="2" fill="var(--ink)" />
+                                  <text x={cardX + cardW - 63} y={cardY + 15.5} textAnchor="middle" fontFamily="monospace" fontSize="8" fontWeight="bold" fill="var(--surface)">
+                                    {de ? "Fokus" : "核心焦点"}
+                                  </text>
+                                </g>
+                              ) : isPrereq ? (
+                                <g>
+                                  <rect x={cardX + cardW - 86} y={cardY + 6.5} width={46} height={12.5} rx="2" fill="var(--paper-subtle)" stroke="var(--ink)" strokeWidth={nodeDist === 1 ? 1.2 : 0.8} />
+                                  <text x={cardX + cardW - 63} y={cardY + 15.5} textAnchor="middle" fontFamily="monospace" fontSize="8" fontWeight="bold" fill="var(--ink)">
+                                    {nodeDist && nodeDist > 1 ? (de ? `← Voraus.${nodeDist}` : "← 前置 (远)") : (de ? "← Voraus." : "← 前置")}
+                                  </text>
+                                </g>
+                              ) : isSuccessor ? (
+                                <g>
+                                  <rect x={cardX + cardW - 86} y={cardY + 6.5} width={46} height={12.5} rx="2" fill="var(--paper-subtle)" stroke="var(--ink)" strokeWidth={nodeDist === 1 ? 1.2 : 0.8} />
+                                  <text x={cardX + cardW - 63} y={cardY + 15.5} textAnchor="middle" fontFamily="monospace" fontSize="8" fontWeight="bold" fill="var(--ink)">
+                                    {nodeDist && nodeDist > 1 ? (de ? `→ Entsp.${nodeDist}` : "→ 进阶解锁") : (de ? "→ Entsperrt" : "→ 直接解锁")}
+                                  </text>
+                                </g>
+                              ) : (
+                                <g>
+                                  <rect x={cardX + cardW - 74} y={cardY + 6.5} width={34} height={12.5} rx="2" fill={isMastered ? "var(--ink)" : "var(--surface)"} stroke={isAvailable ? "var(--ink)" : "var(--line)"} strokeWidth={isAvailable ? 1.2 : 0.6} />
+                                  <text x={cardX + cardW - 57} y={cardY + 15.5} textAnchor="middle" fontFamily="monospace" fontSize="8" fontWeight="bold" fill={isMastered ? "var(--surface)" : "var(--ink)"}>
+                                    {isMastered ? (de ? "Gekonnt" : "已掌握") : isAvailable ? (de ? "Bereit" : "可攻坚") : (de ? "Gesperrt" : "前置锁定")}
+                                  </text>
+                                </g>
+                              )}
+                              <text x={cardX + cardW - 7} y={cardY + 15.5} textAnchor="end" fontFamily="monospace" fontSize="8" fill="var(--gray)" className="select-none">
+                                {minutesText}
+                              </text>
+                              {/* 考点中文大标题 */}
+                              <text x={cardX + 8} y={cardY + 33} fontFamily="serif" fontSize="11" fontWeight="bold" fill="var(--ink)" className="select-none">
+                                {displayTitleZH}
+                              </text>
+                              {/* 德语原版学术术语 */}
+                              <text x={cardX + 8} y={cardY + 48} fontFamily="monospace" fontSize="8.5" fill="var(--gray)" className="select-none">
+                                {displayTitleDE}
+                              </text>
+                            </g>
+                          </>
+                        );
+                      }
 
-                            {/* 第一行：学段难度 Pill 标牌、状态徽记与预计耗时 */}
-                            <rect
-                              x={cardX + 7}
-                              y={cardY + 6.5}
-                              width={28}
-                              height={12.5}
-                              rx="2"
-                              fill="var(--paper-subtle)"
-                              stroke="var(--line)"
-                              strokeWidth="0.6"
+                      // 2. 常规态：轻量单行胶囊 (所有考点名称清晰可见，绝不乱，重点分明！)
+                      const isTargetActive = isAvailable || isMastered;
+                      const pillH = isTargetActive ? 22 : 18;
+                      const charCount = displayTitleZH.length;
+                      const pillW = Math.max(isTargetActive ? 86 : 74, Math.min(148, charCount * (isTargetActive ? 11.5 : 10.5) + (isTargetActive ? 24 : 16)));
+                      const tetherGap = isTargetActive ? 18 : 14;
+                      const pillX = isLeft ? -tetherGap - pillW : tetherGap;
+                      const pillY = -pillH / 2;
+
+                      return (
+                        <>
+                          {/* A. 星体 Orb */}
+                          <g className="planetary-orb">
+                            <circle
+                              r={isTargetActive ? 11 : 7.5}
+                              fill={isMastered ? "var(--ink)" : isAvailable ? "var(--surface)" : "var(--paper-subtle)"}
+                              stroke={isTargetActive ? "var(--ink)" : "var(--line)"}
+                              strokeWidth={isAvailable ? 1.8 : 0.9}
+                              className="transition-all duration-150 group-hover:stroke-[var(--ink)]"
                             />
-                            <text
-                              x={cardX + 21}
-                              y={cardY + 15.5}
-                              textAnchor="middle"
-                              fontFamily="monospace"
-                              fontSize="7.5"
-                              fontWeight="bold"
-                              fill="var(--ink)"
-                            >
-                              {tierText}
-                            </text>
-                            <text
-                              x={cardX + 40}
-                              y={cardY + 15.5}
-                              fontFamily="monospace"
-                              fontSize="8"
-                              fill="var(--gray)"
-                              className="select-none"
-                            >
-                              {afbText}
-                            </text>
-
-                            {/* 因果链指示角标 或 状态指示徽记 */}
-                            {isFocal ? (
-                              <g>
-                                <rect
-                                  x={cardX + cardW - 86}
-                                  y={cardY + 6.5}
-                                  width={46}
-                                  height={12.5}
-                                  rx="2"
-                                  fill="var(--ink)"
-                                />
-                                <text
-                                  x={cardX + cardW - 63}
-                                  y={cardY + 15.5}
-                                  textAnchor="middle"
-                                  fontFamily="monospace"
-                                  fontSize="8"
-                                  fontWeight="bold"
-                                  fill="var(--surface)"
-                                >
-                                  {de ? "Fokus" : "核心焦点"}
-                                </text>
-                              </g>
-                            ) : isPrereq ? (
-                              <g>
-                                <rect
-                                  x={cardX + cardW - 86}
-                                  y={cardY + 6.5}
-                                  width={46}
-                                  height={12.5}
-                                  rx="2"
-                                  fill="var(--paper-subtle)"
-                                  stroke="var(--ink)"
-                                  strokeWidth={nodeDist === 1 ? 1.2 : 0.8}
-                                />
-                                <text
-                                  x={cardX + cardW - 63}
-                                  y={cardY + 15.5}
-                                  textAnchor="middle"
-                                  fontFamily="monospace"
-                                  fontSize="8"
-                                  fontWeight="bold"
-                                  fill="var(--ink)"
-                                >
-                                  {nodeDist && nodeDist > 1
-                                    ? de ? `← Voraus.${nodeDist}` : "← 前置 (远)"
-                                    : de ? "← Voraus." : "← 前置"}
-                                </text>
-                              </g>
-                            ) : isSuccessor ? (
-                              <g>
-                                <rect
-                                  x={cardX + cardW - 86}
-                                  y={cardY + 6.5}
-                                  width={46}
-                                  height={12.5}
-                                  rx="2"
-                                  fill="var(--paper-subtle)"
-                                  stroke="var(--ink)"
-                                  strokeWidth={nodeDist === 1 ? 1.2 : 0.8}
-                                />
-                                <text
-                                  x={cardX + cardW - 63}
-                                  y={cardY + 15.5}
-                                  textAnchor="middle"
-                                  fontFamily="monospace"
-                                  fontSize="8"
-                                  fontWeight="bold"
-                                  fill="var(--ink)"
-                                >
-                                  {nodeDist && nodeDist > 1
-                                    ? de ? `→ Entsp.${nodeDist}` : "→ 进阶解锁"
-                                    : de ? "→ Entsperrt" : "→ 直接解锁"}
-                                </text>
-                              </g>
-                            ) : (
-                              <g>
-                                {isMastered ? (
-                                  <>
-                                    <rect
-                                      x={cardX + cardW - 74}
-                                      y={cardY + 6.5}
-                                      width={34}
-                                      height={12.5}
-                                      rx="2"
-                                      fill="var(--ink)"
-                                    />
-                                    <text
-                                      x={cardX + cardW - 57}
-                                      y={cardY + 15.5}
-                                      textAnchor="middle"
-                                      fontFamily="monospace"
-                                      fontSize="8"
-                                      fontWeight="bold"
-                                      fill="var(--surface)"
-                                    >
-                                      {de ? "Gekonnt" : "已掌握"}
-                                    </text>
-                                  </>
-                                ) : isAvailable ? (
-                                  <>
-                                    <rect
-                                      x={cardX + cardW - 74}
-                                      y={cardY + 6.5}
-                                      width={34}
-                                      height={12.5}
-                                      rx="2"
-                                      fill="var(--surface)"
-                                      stroke="var(--ink)"
-                                      strokeWidth="1.2"
-                                    />
-                                    <text
-                                      x={cardX + cardW - 57}
-                                      y={cardY + 15.5}
-                                      textAnchor="middle"
-                                      fontFamily="monospace"
-                                      fontSize="8"
-                                      fontWeight="bold"
-                                      fill="var(--ink)"
-                                    >
-                                      {de ? "Bereit" : "可攻坚"}
-                                    </text>
-                                  </>
-                                ) : (
-                                  <>
-                                    <rect
-                                      x={cardX + cardW - 74}
-                                      y={cardY + 6.5}
-                                      width={34}
-                                      height={12.5}
-                                      rx="2"
-                                      fill="var(--paper-subtle)"
-                                      stroke="var(--line)"
-                                      strokeWidth="0.6"
-                                    />
-                                    <text
-                                      x={cardX + cardW - 57}
-                                      y={cardY + 15.5}
-                                      textAnchor="middle"
-                                      fontFamily="monospace"
-                                      fontSize="8"
-                                      fill="var(--gray)"
-                                    >
-                                      {de ? "Gesperrt" : "前置锁定"}
-                                    </text>
-                                  </>
-                                )}
-                              </g>
+                            {isMastered && (
+                              <path
+                                d="M-3.5 0 L-1 2.5 L3.5 -2.5"
+                                fill="none"
+                                stroke="var(--surface)"
+                                strokeWidth="1.6"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                              />
                             )}
+                            {isAvailable && (
+                              <circle cx="0" cy="0" r="3.2" fill="var(--ink)" />
+                            )}
+                            {isLocked && (
+                              <circle cx="0" cy="0" r="1.8" fill="var(--gray)" opacity="0.6" />
+                            )}
+                          </g>
 
-                            <text
-                              x={cardX + cardW - 7}
-                              y={cardY + 15.5}
-                              textAnchor="end"
-                              fontFamily="monospace"
-                              fontSize="8"
-                              fill="var(--gray)"
-                              className="select-none"
-                            >
-                              {minutesText}
-                            </text>
+                          {/* B. 引力连接细线 */}
+                          <line
+                            x1={isLeft ? (isTargetActive ? -11 : -7.5) : (isTargetActive ? 11 : 7.5)}
+                            y1="0"
+                            x2={isLeft ? -tetherGap : tetherGap}
+                            y2="0"
+                            stroke={isTargetActive ? "var(--ink)" : "var(--line)"}
+                            strokeWidth={isTargetActive ? 1.0 : 0.7}
+                            strokeDasharray={isTargetActive ? "none" : "1 2"}
+                          />
 
-                            {/* 第二行：中文典范知识点名称 */}
+                          {/* C. 轻量考点药丸胶囊 (Mini-Capsule) */}
+                          <g className="planetary-capsule">
+                            <rect
+                              x={pillX}
+                              y={pillY}
+                              width={pillW}
+                              height={pillH}
+                              rx="3"
+                              fill={isMastered ? "var(--paper-subtle)" : "var(--surface)"}
+                              stroke={isAvailable ? "var(--ink)" : isMastered ? "var(--ink)" : "var(--line)"}
+                              strokeWidth={isAvailable ? 1.4 : isMastered ? 0.9 : 0.8}
+                              opacity={isLocked ? 0.92 : 1.0}
+                              className="transition-all duration-150 group-hover:stroke-[var(--ink)]"
+                            />
+                            {/* 可攻坚标记：左侧墨黑圆点指引 */}
+                            {isAvailable && (
+                              <circle cx={pillX + 7} cy="0" r="2.2" fill="var(--ink)" />
+                            )}
+                            {/* 考点中文名称：清晰可见，绝不断层 */}
                             <text
-                              x={cardX + 8}
-                              y={cardY + 33}
+                              x={isAvailable ? pillX + 13 : pillX + pillW / 2}
+                              y={pillY + (isTargetActive ? 14.5 : 12.5)}
+                              textAnchor={isAvailable ? "start" : "middle"}
                               fontFamily="serif"
-                              fontSize="11"
-                              fontWeight="bold"
-                              fill="var(--ink)"
+                              fontSize={isTargetActive ? "10" : "9.5"}
+                              fontWeight={isTargetActive ? "bold" : "500"}
+                              fill={isTargetActive ? "var(--ink)" : "var(--gray)"}
                               className="select-none"
                             >
                               {displayTitleZH}
                             </text>
-
-                            {/* 第三行：德语学术微缩术语 */}
-                            <text
-                              x={cardX + 8}
-                              y={cardY + 48}
-                              fontFamily="monospace"
-                              fontSize="8.5"
-                              fill="var(--gray)"
-                              className="select-none"
-                            >
+                            {/* 隐藏德语术语供 DOM 检索与单元测试匹配 */}
+                            <text x={pillX} y={pillY} opacity="0" fontSize="1" pointerEvents="none">
                               {displayTitleDE}
                             </text>
                           </g>
@@ -2674,10 +2532,15 @@ export function SkillTreeCanvas({
         </svg>
       </div>
 
-      {/* 右侧：知识点研习抽屉 (Drawer) */}
-      {activeNode && (
+      {/* 右侧：知识点研习抽屉 (Drawer) - 平滑抽拉动画 (用收回代替删除) */}
+      {displayDrawerNode && (
         <aside
-          className="absolute right-0 top-0 bottom-0 w-80 md:w-96 bg-[var(--surface)] border-l border-[var(--line)] p-4 flex flex-col gap-4 shadow-none z-20 overflow-y-auto"
+          className={`absolute right-0 top-0 bottom-0 w-80 md:w-96 bg-[var(--surface)] border-l border-[var(--line)] p-4 flex flex-col gap-4 z-20 overflow-y-auto transition-transform duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] ${
+            isDrawerOpen
+              ? "translate-x-0 shadow-2xl pointer-events-auto"
+              : "translate-x-full pointer-events-none shadow-none"
+          }`}
+          data-state={isDrawerOpen ? "open" : "closed"}
           data-testid="skill-tree-node-drawer"
         >
           {/* 抽屉顶栏 */}
@@ -2685,16 +2548,16 @@ export function SkillTreeCanvas({
             <div>
               <div className="flex items-center gap-1.5 flex-wrap">
                 <span className="font-mono text-[10px] uppercase font-bold tracking-wider px-1.5 py-0.5 border border-[var(--line)] bg-[var(--paper-subtle)] text-[var(--ink)] rounded-[var(--radius)]">
-                  {`AFB ${activeNode.level === 1 ? "I" : activeNode.level === 2 ? "II" : "III"}`}
+                  {`AFB ${displayDrawerNode.level === 1 ? "I" : displayDrawerNode.level === 2 ? "II" : "III"}`}
                 </span>
-                {activeNode.category && (
+                {displayDrawerNode.category && (
                   <span className="font-mono text-[10px] px-1.5 py-0.5 border border-[var(--line)] bg-[var(--surface)] text-[var(--gray)] rounded-[var(--radius)]">
-                    {activeNode.category}
+                    {displayDrawerNode.category}
                   </span>
                 )}
-                {activeNode.curriculumTier && (
+                {displayDrawerNode.curriculumTier && (
                   <span className="font-mono text-[10px] px-1.5 py-0.5 border border-[var(--line)] bg-[var(--surface)] text-[var(--gray)] rounded-[var(--radius)]">
-                    {activeNode.curriculumTier}
+                    {displayDrawerNode.curriculumTier}
                   </span>
                 )}
                 <span
@@ -2714,10 +2577,10 @@ export function SkillTreeCanvas({
                 </span>
               </div>
               <h2 className="font-serif text-base font-bold mt-1 text-[var(--ink)]">
-                {activeNode.titleZH}
+                {displayDrawerNode.titleZH}
               </h2>
               <div className="font-mono text-xs text-[var(--gray)]">
-                {activeNode.titleDE}
+                {displayDrawerNode.titleDE}
               </div>
             </div>
 
@@ -2740,7 +2603,7 @@ export function SkillTreeCanvas({
           {/* 核心内容区 */}
           <div className="space-y-3 text-xs leading-relaxed">
             {/* 因果推进学习路径 (Causal Progression Chain / 线性步骤流) */}
-            {causalAnalysis && causalAnalysis.progressionSteps.length > 1 && (
+            {drawerCausalAnalysis && drawerCausalAnalysis.progressionSteps.length > 1 && (
               <div className="space-y-2 p-2.5 bg-[var(--paper-subtle)] border border-[var(--line)] rounded-[var(--radius)]">
                 <div className="flex items-center justify-between">
                   <div className="font-mono text-[10px] uppercase tracking-wider font-bold text-[var(--ink)] flex items-center gap-1.5">
@@ -2751,11 +2614,11 @@ export function SkillTreeCanvas({
                     <span>{de ? "Kausal-Lernpfad (Linear)" : "因果推进学习清单 (全链路)"}</span>
                   </div>
                   <span className="font-mono text-[9px] text-[var(--gray)]">
-                    {`${causalAnalysis.progressionSteps.length} ${de ? "Schritte" : "步进节点"}`}
+                    {`${drawerCausalAnalysis.progressionSteps.length} ${de ? "Schritte" : "步进节点"}`}
                   </span>
                 </div>
                 <div className="space-y-1.5">
-                  {causalAnalysis.progressionSteps.map((step, idx) => {
+                  {drawerCausalAnalysis.progressionSteps.map((step, idx) => {
                     const isThisFocal = step.role === "focal";
                     const stepStatus = unlockStates.get(step.id) ?? "locked";
                     const isStepMastered = stepStatus === "mastered";
@@ -2849,40 +2712,40 @@ export function SkillTreeCanvas({
             )}
 
             {/* 核心概念因果推演 */}
-            {(activeNode.summaryZH || activeNode.summaryDE) && (
+            {(displayDrawerNode.summaryZH || displayDrawerNode.summaryDE) && (
               <div className="space-y-1">
                 <div className="font-mono text-[11px] uppercase tracking-wider text-[var(--gray)] font-semibold">
                   {de ? "Konzept & Kausalität" : "核心概念与因果推演"}
                 </div>
-                {activeNode.summaryZH && (
-                  <p className="text-[var(--ink)]">{activeNode.summaryZH}</p>
+                {displayDrawerNode.summaryZH && (
+                  <p className="text-[var(--ink)]">{displayDrawerNode.summaryZH}</p>
                 )}
-                {activeNode.summaryDE && (
-                  <p className="text-[var(--gray)] font-mono text-[11px]">{activeNode.summaryDE}</p>
+                {displayDrawerNode.summaryDE && (
+                  <p className="text-[var(--gray)] font-mono text-[11px]">{displayDrawerNode.summaryDE}</p>
                 )}
               </div>
             )}
 
             {/* 15 Notenpunkte 得分核心句 */}
-            {activeNode.keyFormulaOrSentence && (
+            {displayDrawerNode.keyFormulaOrSentence && (
               <div className="p-2.5 bg-[var(--paper-subtle)] border border-[var(--line)] rounded-[var(--radius)] space-y-1">
                 <div className="font-mono text-[10px] uppercase tracking-wider font-bold text-[var(--ink)]">
                   {de ? "15 NP Klausursatz / Formel" : "15 NP 会考得分核心句 / 公式"}
                 </div>
                 <div className="font-mono text-[11px] text-[var(--ink)] select-all">
-                  {activeNode.keyFormulaOrSentence}
+                  {displayDrawerNode.keyFormulaOrSentence}
                 </div>
               </div>
             )}
 
             {/* 典型易错误区 */}
-            {activeNode.commonFallacy && (
+            {displayDrawerNode.commonFallacy && (
               <div className="p-2.5 border border-dashed border-[var(--line)] rounded-[var(--radius)] space-y-1">
                 <div className="font-mono text-[10px] uppercase tracking-wider text-[var(--gray)] font-bold">
                   {de ? "Typische Fehlvorstellung" : "典型易错误区 (Fehlvorstellung)"}
                 </div>
                 <p className="text-[11px] text-[var(--gray)]">
-                  {activeNode.commonFallacy}
+                  {displayDrawerNode.commonFallacy}
                 </p>
               </div>
             )}
@@ -2893,8 +2756,8 @@ export function SkillTreeCanvas({
                 {de ? "Tags & Markierungen" : "多维标记与标签"}
               </div>
               <div className="flex flex-wrap items-center gap-1">
-                {activeNode.tags && activeNode.tags.length > 0 ? (
-                  activeNode.tags.map((t) => (
+                {displayDrawerNode.tags && displayDrawerNode.tags.length > 0 ? (
+                  displayDrawerNode.tags.map((t) => (
                     <span
                       key={t}
                       className="inline-flex items-center gap-1 px-1.5 py-0.5 border border-[var(--line)] bg-[var(--surface)] text-[10px] font-mono text-[var(--ink)] rounded-[var(--radius)]"
@@ -2948,7 +2811,7 @@ export function SkillTreeCanvas({
               <div className="grid grid-cols-1 gap-1.5">
                 <button
                   type="button"
-                  onClick={() => toggleMastered(activeNode.id)}
+                  onClick={() => toggleMastered(displayDrawerNode.id)}
                   className={`w-full py-1.5 px-3 rounded-[var(--radius)] font-mono text-xs font-bold transition-all cursor-pointer ${
                     activeNodeStatus === "mastered"
                       ? "border border-[var(--line)] bg-[var(--surface)] text-[var(--ink)] hover:bg-[var(--paper-subtle)]"
@@ -2960,41 +2823,41 @@ export function SkillTreeCanvas({
                     : de ? "Als 'Gekonnt' markieren" : "标记已掌握"}
                 </button>
 
-                {activeNode.linkedReiseId && (
+                {displayDrawerNode.linkedReiseId && (
                   <button
                     type="button"
-                    onClick={() => onStartCourse?.(activeNode.linkedReiseId!)}
-                    className="w-full py-1.5 px-3 rounded-[var(--radius)] border border-[var(--line)] hover:border-[var(--ink)] bg-[var(--surface)] text-[var(--ink)] font-mono text-xs flex items-center justify-between hover:bg-[var(--paper-subtle)] transition-colors cursor-pointer"
+                    onClick={() => onStartCourse?.(displayDrawerNode.linkedReiseId!)}
+                    className="w-full py-1.5 px-3 rounded-[var(--radius)] border border-[var(--line)] hover:border-[var(--ink)] bg-[var(--surface)] text-[var(--ink)] font-mono text-xs flex items-between hover:bg-[var(--paper-subtle)] transition-colors cursor-pointer justify-between"
                   >
                     <span>{de ? "Lernreise starten" : "启动探究式微课"}</span>
                     <span className="text-[var(--gray)] text-[10px] font-mono">
-                      {activeNode.linkedReiseId}
+                      {displayDrawerNode.linkedReiseId}
                     </span>
                   </button>
                 )}
 
-                {activeNode.linkedNoteId && (
+                {displayDrawerNode.linkedNoteId && (
                   <button
                     type="button"
-                    onClick={() => onOpenNote?.(activeNode.linkedNoteId!)}
+                    onClick={() => onOpenNote?.(displayDrawerNode.linkedNoteId!)}
                     className="w-full py-1.5 px-3 rounded-[var(--radius)] border border-[var(--line)] hover:border-[var(--ink)] bg-[var(--surface)] text-[var(--ink)] font-mono text-xs flex items-center justify-between hover:bg-[var(--paper-subtle)] transition-colors cursor-pointer"
                   >
                     <span>{de ? "Wissensnotiz öffnen" : "研读八段式笔记"}</span>
                     <span className="text-[var(--gray)] text-[10px] font-mono truncate max-w-[150px]">
-                      {activeNode.linkedNoteId.split("/").pop()}
+                      {displayDrawerNode.linkedNoteId.split("/").pop()}
                     </span>
                   </button>
                 )}
 
-                {activeNode.linkedToolId && (
+                {displayDrawerNode.linkedToolId && (
                   <button
                     type="button"
-                    onClick={() => onOpenTool?.(activeNode.linkedToolId!)}
+                    onClick={() => onOpenTool?.(displayDrawerNode.linkedToolId!)}
                     className="w-full py-1.5 px-3 rounded-[var(--radius)] border border-[var(--line)] hover:border-[var(--ink)] bg-[var(--surface)] text-[var(--ink)] font-mono text-xs flex items-center justify-between hover:bg-[var(--paper-subtle)] transition-colors cursor-pointer"
                   >
                     <span>{de ? "Laborwerkzeug öffnen" : "启动仿真实验室"}</span>
                     <span className="text-[var(--gray)] text-[10px] font-mono">
-                      {activeNode.linkedToolId}
+                      {displayDrawerNode.linkedToolId}
                     </span>
                   </button>
                 )}
@@ -3005,7 +2868,7 @@ export function SkillTreeCanvas({
             <div className="flex items-center justify-between pt-2 border-t border-[var(--line)] text-xs font-mono">
               <button
                 type="button"
-                onClick={() => openEditNodeModal(activeNode)}
+                onClick={() => openEditNodeModal(displayDrawerNode)}
                 className="text-[var(--gray)] hover:text-[var(--ink)] underline cursor-pointer"
               >
                 {de ? "Knoten bearbeiten" : "编辑此节点属性"}
@@ -3020,6 +2883,25 @@ export function SkillTreeCanvas({
             </div>
           </div>
         </aside>
+      )}
+
+      {/* 抽屉收回时的右边缘悬浮小拉手 (带平滑展开动作) */}
+      {!isDrawerOpen && displayDrawerNode && (
+        <button
+          type="button"
+          onClick={() => setSelectedNodeId(displayDrawerNode.id)}
+          className="absolute right-0 top-16 z-20 bg-[var(--surface)] border-l border-y border-[var(--line)] hover:border-[var(--ink)] py-2 px-1.5 rounded-l-[var(--radius)] shadow-sm hover:shadow text-[var(--ink)] flex items-center gap-1 font-mono text-[10px] cursor-pointer transition-all hover:bg-[var(--paper-subtle)]"
+          title={de ? "Wissenskarte aufklappen" : "展开知识卡片"}
+          aria-label={de ? "Wissenskarte aufklappen" : "展开知识卡片"}
+          data-testid="skill-tree-drawer-open-handle"
+        >
+          <svg width="10" height="10" viewBox="0 0 12 12" fill="none" stroke="currentColor" strokeWidth="1.5">
+            <path d="M8 2L4 6l4 4" />
+          </svg>
+          <span className="[writing-mode:vertical-rl] tracking-widest text-[9.5px] font-sans">
+            {de ? "Lernkarte" : "研习卡片"}
+          </span>
+        </button>
       )}
 
       {/* 弹窗：拼插 / 编辑知识点 Modal */}

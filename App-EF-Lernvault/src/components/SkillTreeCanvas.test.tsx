@@ -50,7 +50,7 @@ describe("SkillTreeCanvas Component (可插拔知识图谱与技能树画布测�
     );
 
     // 点击价格机制节点
-    const preismechanismusNode = screen.getByText("价格形成机制与市场均衡十字");
+    const preismechanismusNode = screen.getByTestId("skill-node-sowi-preismechanismus");
     fireEvent.click(preismechanismusNode);
 
     // 抽屉展开
@@ -244,38 +244,44 @@ describe("SkillTreeCanvas Component (可插拔知识图谱与技能树画布测�
     expect(screen.getByText("Q1 · 进阶机制 (AFB II)")).toBeInTheDocument();
   });
 
-  it("supports closing drawer via same-node toggle, close button, Escape key, and empty canvas click", () => {
+  it("supports closing and retracting drawer via same-node toggle, close button, Escape key, and empty canvas click", () => {
     render(<SkillTreeCanvas lang="zh" initialFach="SoWi" />);
 
     const preismechanismusNode = screen.getByTestId("skill-node-sowi-preismechanismus");
 
-    // 1. 点击节点，抽屉打开
+    // 1. 点击节点，抽屉抽拉展开 (open)
     fireEvent.click(preismechanismusNode);
-    expect(screen.getByTestId("skill-tree-node-drawer")).toBeInTheDocument();
+    const drawer = screen.getByTestId("skill-tree-node-drawer");
+    expect(drawer).toHaveAttribute("data-state", "open");
+    expect(drawer).toHaveClass("translate-x-0");
 
-    // 2. 再次点击同一节点，抽屉反选关闭
+    // 2. 再次点击同一节点，抽屉反选平滑收回 (closed)，右边缘悬浮小拉手出现
     fireEvent.click(preismechanismusNode);
-    expect(screen.queryByTestId("skill-tree-node-drawer")).not.toBeInTheDocument();
+    expect(drawer).toHaveAttribute("data-state", "closed");
+    expect(drawer).toHaveClass("translate-x-full");
+    expect(screen.getByTestId("skill-tree-drawer-open-handle")).toBeInTheDocument();
 
-    // 3. 点击节点再次打开，然后点击右上角小叉关闭
+    // 3. 点击节点再次展开，然后点击右上角小叉收回
     fireEvent.click(preismechanismusNode);
-    expect(screen.getByTestId("skill-tree-node-drawer")).toBeInTheDocument();
+    expect(drawer).toHaveAttribute("data-state", "open");
     const closeBtn = screen.getByTestId("skill-tree-drawer-close");
     fireEvent.click(closeBtn);
-    expect(screen.queryByTestId("skill-tree-node-drawer")).not.toBeInTheDocument();
+    expect(drawer).toHaveAttribute("data-state", "closed");
+    expect(screen.getByTestId("skill-tree-drawer-open-handle")).toBeInTheDocument();
 
-    // 4. 点击节点再次打开，按 ESC 键关闭
-    fireEvent.click(preismechanismusNode);
-    expect(screen.getByTestId("skill-tree-node-drawer")).toBeInTheDocument();
+    // 4. 点击小拉手重新抽拉展开，按 ESC 键收回
+    const openHandle = screen.getByTestId("skill-tree-drawer-open-handle");
+    fireEvent.click(openHandle);
+    expect(drawer).toHaveAttribute("data-state", "open");
     fireEvent.keyDown(window, { key: "Escape" });
-    expect(screen.queryByTestId("skill-tree-node-drawer")).not.toBeInTheDocument();
+    expect(drawer).toHaveAttribute("data-state", "closed");
 
-    // 5. 点击节点再次打开，点击空白画布背景关闭
+    // 5. 点击节点再次展开，点击空白画布背景收回
     fireEvent.click(preismechanismusNode);
-    expect(screen.getByTestId("skill-tree-node-drawer")).toBeInTheDocument();
+    expect(drawer).toHaveAttribute("data-state", "open");
     const canvasBg = screen.getByTestId("skill-tree-canvas-bg");
     fireEvent.click(canvasBg);
-    expect(screen.queryByTestId("skill-tree-node-drawer")).not.toBeInTheDocument();
+    expect(drawer).toHaveAttribute("data-state", "closed");
   });
 });
 
