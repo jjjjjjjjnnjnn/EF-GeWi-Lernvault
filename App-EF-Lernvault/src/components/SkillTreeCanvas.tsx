@@ -165,6 +165,7 @@ export function SkillTreeCanvas({
   const isDraggingRef = useRef<boolean>(false);
   const dragStartRef = useRef<{ x: number; y: number }>({ x: 0, y: 0 });
   const canvasPointerDownPosRef = useRef<{ x: number; y: number } | null>(null);
+  const isCanvasPannedRef = useRef<boolean>(false);
 
   // 6. 弹窗状态
   const [isNodeModalOpen, setIsNodeModalOpen] = useState<boolean>(false);
@@ -783,6 +784,11 @@ export function SkillTreeCanvas({
   // 画布视口平移拖拽与多点触摸手势
   const handlePointerDown = (e: React.PointerEvent<SVGSVGElement>) => {
     if ((e.target as HTMLElement).closest("[data-clickable-node]")) return;
+    try {
+      e.currentTarget.setPointerCapture(e.pointerId);
+    } catch {
+      // 兼容不支持 setPointerCapture 的测试环境
+    }
     canvasPointerDownPosRef.current = { x: e.clientX, y: e.clientY };
     activeTouchPointsRef.current.set(e.pointerId, { x: e.clientX, y: e.clientY });
 
@@ -796,6 +802,7 @@ export function SkillTreeCanvas({
     }
 
     isDraggingRef.current = true;
+    isCanvasPannedRef.current = false;
     dragStartRef.current = { x: e.clientX - pan.x, y: e.clientY - pan.y };
   };
 
@@ -837,6 +844,15 @@ export function SkillTreeCanvas({
 
     // 底板平移
     if (!isDraggingRef.current) return;
+    if (canvasPointerDownPosRef.current) {
+      const dist = Math.hypot(
+        e.clientX - canvasPointerDownPosRef.current.x,
+        e.clientY - canvasPointerDownPosRef.current.y
+      );
+      if (dist > 5) {
+        isCanvasPannedRef.current = true;
+      }
+    }
     setPan({
       x: e.clientX - dragStartRef.current.x,
       y: e.clientY - dragStartRef.current.y,
@@ -844,22 +860,19 @@ export function SkillTreeCanvas({
   };
 
   const handlePointerUp = (e: React.PointerEvent<SVGSVGElement>) => {
-    const startDown = canvasPointerDownPosRef.current;
+    try {
+      if (e.currentTarget.hasPointerCapture(e.pointerId)) {
+        e.currentTarget.releasePointerCapture(e.pointerId);
+      }
+    } catch {
+      // 兼容不支持 pointerCapture 的环境
+    }
     canvasPointerDownPosRef.current = null;
     activeTouchPointsRef.current.delete(e.pointerId);
     if (activeTouchPointsRef.current.size < 2) {
       pinchStartRef.current = null;
     }
-    const wasDraggingCanvas = isDraggingRef.current;
     isDraggingRef.current = false;
-
-    // 若轻点画布空白（无大幅拖拽、位移 < 6px），便捷关闭选中的抽屉
-    if (startDown && !draggingNodeRef.current && wasDraggingCanvas) {
-      const dist = Math.hypot(e.clientX - startDown.x, e.clientY - startDown.y);
-      if (dist < 6) {
-        setSelectedNodeId(null);
-      }
-    }
 
     if (draggingNodeRef.current) {
       if (draggingNodeRef.current.hasMoved) {
@@ -867,6 +880,16 @@ export function SkillTreeCanvas({
       }
       draggingNodeRef.current = null;
     }
+  };
+
+  // 空白底板点击交互：若为拖拽平移视口则拦截防止误关，若为纯单击则收起研习抽屉
+  const handleCanvasBgClick = (e: React.MouseEvent) => {
+    e.stopPropagation();
+    if (isCanvasPannedRef.current) {
+      isCanvasPannedRef.current = false;
+      return;
+    }
+    setSelectedNodeId(null);
   };
 
   // 鼠标滚轮平滑焦点缩放
@@ -1574,12 +1597,12 @@ export function SkillTreeCanvas({
             </marker>
           </defs>
 
-          {/* 背景色板：点击空白区域退出选中抽屉 */}
+          {/* 背景色板：点击空白区域退出选中抽屉 (拖拽平移则拦截) */}
           <rect
             width="100%"
             height="100%"
             fill={viewMode === "tree" ? "url(#skilltree-grid)" : "var(--surface)"}
-            onClick={() => setSelectedNodeId(null)}
+            onClick={handleCanvasBgClick}
             data-testid="skill-tree-canvas-bg"
           />
 
@@ -1587,7 +1610,7 @@ export function SkillTreeCanvas({
           <g transform={`translate(${pan.x}, ${pan.y}) scale(${zoom})`}>
             {/* 1. 若为行星模式，渲染文艺复兴星盘测天仪式背景 (Astrolabe Celestial Atlas Layer) */}
             {viewMode === "planetary" && (
-              <g className="planetary-background-layer" aria-hidden="true">
+              <g className="planetary-background-layer" aria-hidden="true" style={{ pointerEvents: "none" }}>
                 {/* 1.1 星盘外缘刻度环 (Astrolabe Limbus: r=746, 754) */}
                 <circle
                   cx={PLANETARY_CENTER_X}
@@ -1916,7 +1939,7 @@ export function SkillTreeCanvas({
 
             {/* 1.1 若为认知科技树模式，渲染 5 纵深阶段里程碑标题卡与领域分类横向泳道 (Laned Tech Tree Layer) */}
             {viewMode === "tree" && (
-              <g className="tech-tree-background-layer" aria-hidden="true">
+              <g className="tech-tree-background-layer" aria-hidden="true" style={{ pointerEvents: "none" }}>
                 {/* 顶部纵深阶段里程碑标题卡 (Tier Milestone Plaque Headers) */}
                 {TIER_COLUMNS.map((tierKey, colIdx) => {
                   const colX = LANE_HEADER_WIDTH + 24 + colIdx * TECH_COL_WIDTH;
@@ -2056,6 +2079,7 @@ export function SkillTreeCanvas({
                 strokeDasharray={edge.strokeDash}
                 markerEnd={edge.markerEnd}
                 className="transition-all duration-200"
+                style={{ pointerEvents: "none" }}
               />
             ))}
 

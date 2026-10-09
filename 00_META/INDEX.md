@@ -286,6 +286,7 @@
 - [2026-10-09-skill-tree-node-capsule-and-sliding-drawer](Journal/2026-10-09-skill-tree-node-capsule-and-sliding-drawer.md) — **知识图谱全量考点单行胶囊化与研习抽屉平滑抽拉动画**：单行胶囊化降噪+重点高对比突出+因果链焦点全展开+右侧研习抽屉开箱常驻+硬件加速平滑抽拉收回动画+右边缘呼出小把手（535单测/build/vault-check全绿）
 - [2026-10-09-drawer-auto-popup-and-modular-i18n](Journal/2026-10-09-drawer-auto-popup-and-modular-i18n.md) — **知识图谱节点收起后自动弹出与拼插式多语言模块化体系**：节点收起态点击必弹+双重反选根因清除+拼插式多语言架构+HUD语言切换器与全景节点本地化（全绿）
 - [2026-10-09-all-subjects-macro-view](Journal/2026-10-09-all-subjects-macro-view.md) — **知识图谱全科学业宏观星图与跨学科聚合板块**：四步闭环研制AllSubjectsMacroView+全科学术引力星盘+十科学阶阵列矩阵+四大跨学科融通战役流水线+全科700+考点实时检索与穿梭入科（全绿）
+- [2026-10-09-canvas-pan-drag-vs-click-fix](Journal/2026-10-09-canvas-pan-drag-vs-click-fix.md) — **知识图谱画布平移拖拽与空白点击抽屉关闭防误触分离**：isCanvasPannedRef位移门禁+handleCanvasBgClick防误触拦截+底层背景装饰与连线pointerEvents穿透（全绿）
 - 约定：文件名 `YYYY-MM-DD-<thema>.md`，头部frontmatter（`fach`可空，`tags: [EF, Meta]`）。
 
 

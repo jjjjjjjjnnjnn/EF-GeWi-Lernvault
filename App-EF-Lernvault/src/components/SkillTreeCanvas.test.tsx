@@ -379,6 +379,33 @@ describe("SkillTreeCanvas Component (可插拔知识图谱与技能树画布测�
     expect(handleSubjectChange).toHaveBeenCalledWith("SoWi");
     expect(screen.getByTestId("skill-node-sowi-preismechanismus")).toBeInTheDocument();
   });
+
+  it("does not close drawer when dragging or panning canvas with mouse move", () => {
+    render(<SkillTreeCanvas lang="zh" initialFach="SoWi" />);
+
+    const preismechanismusNode = screen.getByTestId("skill-node-sowi-preismechanismus");
+    fireEvent.click(preismechanismusNode);
+
+    const drawer = screen.getByTestId("skill-tree-node-drawer");
+    expect(drawer).toHaveAttribute("data-state", "open");
+
+    const svg = screen.getByTestId("skill-tree-svg");
+    const canvasBg = screen.getByTestId("skill-tree-canvas-bg");
+
+    // 模拟鼠标左键在画布空白区域按下并平移拖拽 (位移 50px)
+    fireEvent.pointerDown(svg, { clientX: 100, clientY: 100, pointerId: 1 });
+    fireEvent.pointerMove(svg, { clientX: 150, clientY: 150, pointerId: 1 });
+    fireEvent.pointerUp(svg, { clientX: 150, clientY: 150, pointerId: 1 });
+    fireEvent.click(canvasBg);
+
+    // 抽屉和选中节点绝不能因为平移移动而误关闭！
+    expect(drawer).toHaveAttribute("data-state", "open");
+    expect(screen.getByText("Preismechanismus & Marktgleichgewicht")).toBeInTheDocument();
+
+    // 验证真正的静止空白点击依然可以正确关闭抽屉
+    fireEvent.click(canvasBg);
+    expect(drawer).toHaveAttribute("data-state", "closed");
+  });
 });
 
 
