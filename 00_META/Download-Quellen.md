@@ -144,6 +144,11 @@ tags: [EF, Meta]
 - LEIFIphysik / LEIFIchemie：无批量下载，在线用 + 单页打印PDF自存。
 - Serlo：CC-BY-SA，在线用；导出走站内Export功能。
 
+## Github-Repos批量借鉴轮 2026-10-09（108仓/成功93/约1.9GB，gitignored）
+
+> 落盘 `_Downloads/Github-Repos/<分类>/`（A~H），每库配 `.quelle.txt`（URL+许可+日期+状态），清单CSV `scripts/github-repos-list.csv`，本地总索引 `_Downloads/Github-Repos/00_INDEX.md`（含Top借鉴顺序+失败15清单）。GPL/AGPL仓只读不抄，不进`App-EF-Lernvault/src`。
+> 分组：A-tauri-offline 13/14（242MB）/ B-srs-fsrs 13/14（128MB）/ C-quiz-tutor-rag 12/14（624MB）/ D-graph-skilltree 11/14（64MB）/ E-phet-sims 18/18（145MB）/ F-lesson-markdown 10/12（147MB）/ G-oer-content 6/10（499MB）/ H-edu-utils 10/12（96MB）。失败15：kiwix-js/flashcard-app/quivr/skill-tree/graph-theory/stepwise/content/javascript-libkiwix/bpb-daten（URL已死）；koboldcpp/oppia/frontend/pdf.js/plot（超时）；rex-web（Windows冒号文件名）；react-flow-example（xyflow/web不存在）。
+
 ## Obsidian附件说明
 
 - `Anlagen/`：只放自己画的图/截图标注（小文件，进git）。
