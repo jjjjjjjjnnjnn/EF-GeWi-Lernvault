@@ -1,6 +1,7 @@
 import { useState, useMemo, useCallback, useRef, useEffect } from "react";
 import { resolveNodeLanguage, type Lang, type NodeLanguageMode } from "../i18n";
 import { AllSubjectsMacroView } from "./AllSubjectsMacroView";
+import { estimateVisualTextWidth, truncateTextToVisualWidth } from "../utils/svgTypography";
 import {
   graphRegistry,
   computeGraphUnlockStates,
@@ -2107,6 +2108,8 @@ export function SkillTreeCanvas({
               const isFocal = causalAnalysis?.focalNodeId === node.id;
               const isPrereq = causalAnalysis?.allPrereqs.has(node.id) ?? false;
               const isSuccessor = causalAnalysis?.allSuccessors.has(node.id) ?? false;
+              const isDirectPrereq = causalAnalysis?.directPrereqs.has(node.id) ?? false;
+              const isDirectSuccessor = causalAnalysis?.directSuccessors.has(node.id) ?? false;
               const nodeDist = causalAnalysis?.nodeDistances.get(node.id);
 
               // 拓扑距离衰减与宏观背景保留 (Topological Distance Decay & Macro Forest Context)
@@ -2130,10 +2133,6 @@ export function SkillTreeCanvas({
               const minutesText = `~${node.estimatedMinutes || 15}m`;
 
               const loc = resolveNodeLanguage(node, nodeLangMode, lang);
-              const displayPrimaryTitle =
-                loc.primaryTitle.length > 22 ? `${loc.primaryTitle.slice(0, 21)}…` : loc.primaryTitle;
-              const displaySecondaryTitle =
-                loc.secondaryTitle.length > 24 ? `${loc.secondaryTitle.slice(0, 23)}…` : loc.secondaryTitle;
 
               if (viewMode === "planetary") {
                 const cx = node.x;
@@ -2141,10 +2140,13 @@ export function SkillTreeCanvas({
 
                 // 判定知识点位于星盘左侧或右侧（外向辐射排布）
                 const isLeft = cx < PLANETARY_CENTER_X - 10;
-                const cardW = 196;
-                const cardH = 58;
+                const cardW = 208; // 提升至 208px (原 196px)，更充裕的文本空间与防溢出余量
+                const cardH = 62;  // 提升至 62px (原 58px)，优雅的黄金行距
                 const cardX = isLeft ? -24 - cardW : 24;
                 const cardY = -cardH / 2;
+
+                const displayPrimaryTitle = truncateTextToVisualWidth(loc.primaryTitle, cardW - 18, 11, true);
+                const displaySecondaryTitle = truncateTextToVisualWidth(loc.secondaryTitle, cardW - 18, 8.5, false);
 
                 return (
                   <g
@@ -2172,13 +2174,25 @@ export function SkillTreeCanvas({
                       opacity: nodeOpacity,
                     }}
                   >
-                    {/* 节点呈现：常规态为轻量单行胶囊(考点名全部清晰可见且不乱)；焦点/悬停/选中及因果链前后节点展开全景Tufte学术卡片 */}
+                    {/* 节点呈现：常规态为轻量单行胶囊(考点名全部清晰可见且不乱)；焦点/悬停/选中及直接因果链前后节点展开全景Tufte学术卡片 */}
                     {(() => {
                       const isHovered = hoveredNodeId === node.id;
-                      const isFocalOrSelected = isFocal || isSelected || isHovered || isPrereq || isSuccessor;
+                      // 只有以下关键节点展开为完整学术卡片：
+                      // 1. 当前被选中的节点 (isSelected)
+                      // 2. 鼠标正悬停的节点 (isHovered)
+                      // 3. 核心焦点节点 (isFocal 且当前无其他特定选点)
+                      // 4. 与焦点/选中节点「直接相邻」的一阶前置与一阶后继 (isDirectPrereq || isDirectSuccessor)
+                      // 其余更远距离的前置/后继节点 (nodeDist >= 2) 保持精致紧凑的胶囊形态（带 ← / → 箭头标识），彻底杜绝全图25张大卡片同时展开导致的重叠挤压！
+                      // 用户若想查看任意远端胶囊，鼠标悬停时即可立即展开该卡片。
+                      const isCardExpanded =
+                        isSelected ||
+                        isHovered ||
+                        (isFocal && !selectedNodeId) ||
+                        isDirectPrereq ||
+                        isDirectSuccessor;
 
-                      // 1. 焦点/选中/鼠标悬停展开态：展开全景 Tufte 学术卡片 (196x58)
-                      if (isFocalOrSelected) {
+                      // 1. 焦点/选中/鼠标悬停展开态：展开全景 Tufte 学术卡片 (208x62)
+                      if (isCardExpanded) {
                         return (
                           <>
                             {/* A. 知识点星体核心 (Planetary Body Orb) */}
@@ -2253,6 +2267,17 @@ export function SkillTreeCanvas({
 
                             {/* C. 学术名牌标牌 (Academic Data Cartouche) */}
                             <g className="planetary-cartouche">
+                              <defs>
+                                <clipPath id={`cartouche-clip-${node.id}`}>
+                                  <rect
+                                    x={cardX + 2}
+                                    y={cardY + 2}
+                                    width={cardW - 4}
+                                    height={cardH - 4}
+                                    rx="3"
+                                  />
+                                </clipPath>
+                              </defs>
                               <rect
                                 x={cardX}
                                 y={cardY}
@@ -2290,66 +2315,90 @@ export function SkillTreeCanvas({
                                 <path d={`M ${cardX + 2} ${cardY + cardH - 8} L ${cardX + 2} ${cardY + cardH - 2} L ${cardX + 8} ${cardY + cardH - 2}`} />
                                 <path d={`M ${cardX + cardW - 8} ${cardY + cardH - 2} L ${cardX + cardW - 2} ${cardY + cardH - 2} L ${cardX + cardW - 2} ${cardY + cardH - 8}`} />
                               </g>
-                              {/* 学段 Pill 与 AFB */}
-                              <rect x={cardX + 7} y={cardY + 6.5} width={28} height={12.5} rx="2" fill="var(--paper-subtle)" stroke="var(--line)" strokeWidth="0.6" />
-                              <text x={cardX + 21} y={cardY + 15.5} textAnchor="middle" fontFamily="monospace" fontSize="7.5" fontWeight="bold" fill="var(--ink)">
-                                {tierText}
-                              </text>
-                              <text x={cardX + 40} y={cardY + 15.5} fontFamily="monospace" fontSize="8" fill="var(--gray)" className="select-none">
-                                {afbText}
-                              </text>
-                              {/* 因果链指示角标 或 状态指示徽记 */}
-                              {isFocal ? (
-                                <g>
-                                  <rect x={cardX + cardW - 86} y={cardY + 6.5} width={46} height={12.5} rx="2" fill="var(--ink)" />
-                                  <text x={cardX + cardW - 63} y={cardY + 15.5} textAnchor="middle" fontFamily="monospace" fontSize="8" fontWeight="bold" fill="var(--surface)">
-                                    {de ? "Fokus" : "核心焦点"}
-                                  </text>
-                                </g>
-                              ) : isPrereq ? (
-                                <g>
-                                  <rect x={cardX + cardW - 86} y={cardY + 6.5} width={46} height={12.5} rx="2" fill="var(--paper-subtle)" stroke="var(--ink)" strokeWidth={nodeDist === 1 ? 1.2 : 0.8} />
-                                  <text x={cardX + cardW - 63} y={cardY + 15.5} textAnchor="middle" fontFamily="monospace" fontSize="8" fontWeight="bold" fill="var(--ink)">
-                                    {nodeDist && nodeDist > 1 ? (de ? `← Voraus.${nodeDist}` : "← 前置 (远)") : (de ? "← Voraus." : "← 前置")}
-                                  </text>
-                                </g>
-                              ) : isSuccessor ? (
-                                <g>
-                                  <rect x={cardX + cardW - 86} y={cardY + 6.5} width={46} height={12.5} rx="2" fill="var(--paper-subtle)" stroke="var(--ink)" strokeWidth={nodeDist === 1 ? 1.2 : 0.8} />
-                                  <text x={cardX + cardW - 63} y={cardY + 15.5} textAnchor="middle" fontFamily="monospace" fontSize="8" fontWeight="bold" fill="var(--ink)">
-                                    {nodeDist && nodeDist > 1 ? (de ? `→ Entsp.${nodeDist}` : "→ 进阶解锁") : (de ? "→ Entsperrt" : "→ 直接解锁")}
-                                  </text>
-                                </g>
-                              ) : (
-                                <g>
-                                  <rect x={cardX + cardW - 74} y={cardY + 6.5} width={34} height={12.5} rx="2" fill={isMastered ? "var(--ink)" : "var(--surface)"} stroke={isAvailable ? "var(--ink)" : "var(--line)"} strokeWidth={isAvailable ? 1.2 : 0.6} />
-                                  <text x={cardX + cardW - 57} y={cardY + 15.5} textAnchor="middle" fontFamily="monospace" fontSize="8" fontWeight="bold" fill={isMastered ? "var(--surface)" : "var(--ink)"}>
-                                    {isMastered ? (de ? "Gekonnt" : "已掌握") : isAvailable ? (de ? "Bereit" : "可攻坚") : (de ? "Gesperrt" : "前置锁定")}
-                                  </text>
-                                </g>
-                              )}
-                              <text x={cardX + cardW - 7} y={cardY + 15.5} textAnchor="end" fontFamily="monospace" fontSize="8" fill="var(--gray)" className="select-none">
-                                {minutesText}
-                              </text>
-                              {/* 考点主标题 */}
-                              <text x={cardX + 8} y={cardY + 33} fontFamily="serif" fontSize="11" fontWeight="bold" fill="var(--ink)" className="select-none">
-                                {displayPrimaryTitle}
-                              </text>
-                              {/* 考点副标题 */}
-                              <text x={cardX + 8} y={cardY + 48} fontFamily="monospace" fontSize="8.5" fill="var(--gray)" className="select-none">
-                                {displaySecondaryTitle}
-                              </text>
+
+                              {/* clipPath 绝对裁切保护：严禁卡片内部文字或徽记越界 */}
+                              <g clipPath={`url(#cartouche-clip-${node.id})`}>
+                                {/* 学段 Pill 与 AFB */}
+                                <rect x={cardX + 7} y={cardY + 6.5} width={26} height={12.5} rx="2" fill="var(--paper-subtle)" stroke="var(--line)" strokeWidth="0.6" />
+                                <text x={cardX + 20} y={cardY + 15.5} textAnchor="middle" fontFamily="monospace" fontSize="7.5" fontWeight="bold" fill="var(--ink)">
+                                  {tierText}
+                                </text>
+                                <text x={cardX + 38} y={cardY + 15.5} fontFamily="monospace" fontSize="8" fill="var(--gray)" className="select-none">
+                                  {afbText}
+                                </text>
+
+                                {/* 因果链指示角标 或 状态指示徽记 */}
+                                {isFocal ? (
+                                  <g>
+                                    <rect x={cardX + cardW - 90} y={cardY + 6.5} width={48} height={12.5} rx="2" fill="var(--ink)" />
+                                    <text x={cardX + cardW - 66} y={cardY + 15.5} textAnchor="middle" fontFamily="monospace" fontSize="7.5" fontWeight="bold" fill="var(--surface)">
+                                      {de ? "Fokus" : "核心焦点"}
+                                    </text>
+                                  </g>
+                                ) : isPrereq ? (
+                                  <g>
+                                    <rect x={cardX + cardW - 90} y={cardY + 6.5} width={48} height={12.5} rx="2" fill="var(--paper-subtle)" stroke="var(--ink)" strokeWidth={nodeDist === 1 ? 1.2 : 0.8} />
+                                    <text x={cardX + cardW - 66} y={cardY + 15.5} textAnchor="middle" fontFamily="monospace" fontSize="7.5" fontWeight="bold" fill="var(--ink)">
+                                      {nodeDist && nodeDist > 1 ? (de ? `← Voraus.${nodeDist}` : "← 前置 (远)") : (de ? "← Voraus." : "← 前置")}
+                                    </text>
+                                  </g>
+                                ) : isSuccessor ? (
+                                  <g>
+                                    <rect x={cardX + cardW - 90} y={cardY + 6.5} width={48} height={12.5} rx="2" fill="var(--paper-subtle)" stroke="var(--ink)" strokeWidth={nodeDist === 1 ? 1.2 : 0.8} />
+                                    <text x={cardX + cardW - 66} y={cardY + 15.5} textAnchor="middle" fontFamily="monospace" fontSize="7.5" fontWeight="bold" fill="var(--ink)">
+                                      {nodeDist && nodeDist > 1 ? (de ? `→ Entsp.${nodeDist}` : "→ 进阶解锁") : (de ? "→ Entsperrt" : "→ 直接解锁")}
+                                    </text>
+                                  </g>
+                                ) : (
+                                  <g>
+                                    <rect x={cardX + cardW - 84} y={cardY + 6.5} width={42} height={12.5} rx="2" fill={isMastered ? "var(--ink)" : "var(--surface)"} stroke={isAvailable ? "var(--ink)" : "var(--line)"} strokeWidth={isAvailable ? 1.2 : 0.6} />
+                                    <text x={cardX + cardW - 63} y={cardY + 15.5} textAnchor="middle" fontFamily="monospace" fontSize="7.5" fontWeight="bold" fill={isMastered ? "var(--surface)" : "var(--ink)"}>
+                                      {isMastered ? (de ? "Gekonnt" : "已掌握") : isAvailable ? (de ? "Bereit" : "可攻坚") : (de ? "Gesperrt" : "前置锁定")}
+                                    </text>
+                                  </g>
+                                )}
+                                <text x={cardX + cardW - 7} y={cardY + 15.5} textAnchor="end" fontFamily="monospace" fontSize="8" fill="var(--gray)" className="select-none">
+                                  {minutesText}
+                                </text>
+
+                                {/* 考点主标题 */}
+                                <text x={cardX + 8} y={cardY + 33} fontFamily="serif" fontSize="11" fontWeight="bold" fill="var(--ink)" className="select-none">
+                                  {displayPrimaryTitle}
+                                </text>
+                                {/* 考点副标题 */}
+                                <text x={cardX + 8} y={cardY + 48} fontFamily="monospace" fontSize="8.5" fill="var(--gray)" className="select-none">
+                                  {displaySecondaryTitle}
+                                </text>
+                              </g>
                             </g>
                           </>
                         );
                       }
 
-                      // 2. 常规态：轻量单行胶囊 (支持 DE / 双语 / ZH，信息整洁分明！)
-                      const isTargetActive = isAvailable || isMastered;
+                      // 2. 常规态：轻量单行胶囊 (支持 DE / 双语 / ZH，信息整洁分明，严格防溢出)
+                      const isTargetActive = isAvailable || isMastered || isPrereq || isSuccessor;
                       const pillH = isTargetActive ? 22 : 18;
-                      const pillText = loc.pillText.length > 28 ? `${loc.pillText.slice(0, 27)}…` : loc.pillText;
-                      const charCount = pillText.length;
-                      const pillW = Math.max(isTargetActive ? 86 : 74, Math.min(205, charCount * (nodeLangMode === "zh" ? 10.5 : 7.2) + (isTargetActive ? 24 : 16)));
+                      const fontSize = isTargetActive ? 9.5 : 9;
+
+                      // 若是远端依赖节点，在胶囊标题中加上精致方向符号标识 (← / →)
+                      const causalPrefix =
+                        isPrereq && !isDirectPrereq
+                          ? "← "
+                          : isSuccessor && !isDirectSuccessor
+                          ? "→ "
+                          : "";
+                      const fullPillTitle = `${causalPrefix}${loc.pillText}`;
+
+                      // 胶囊最大文本视觉限制宽度为 145px
+                      const MAX_CAPSULE_TEXT_W = 145;
+                      const pillText = truncateTextToVisualWidth(fullPillTitle, MAX_CAPSULE_TEXT_W, fontSize, true);
+                      const textVisualW = estimateVisualTextWidth(pillText, fontSize);
+
+                      // 动态计算精准胶囊宽度，为图标和两端留足呼吸余量
+                      const leftPadding = isAvailable || causalPrefix ? 20 : 12;
+                      const rightPadding = 12;
+                      const pillW = Math.max(isTargetActive ? 76 : 66, Math.min(196, Math.round(textVisualW + leftPadding + rightPadding)));
+
                       const tetherGap = isTargetActive ? 18 : 14;
                       const pillX = isLeft ? -tetherGap - pillW : tetherGap;
                       const pillY = -pillH / 2;
@@ -2378,7 +2427,7 @@ export function SkillTreeCanvas({
                             {isAvailable && (
                               <circle cx="0" cy="0" r="3.2" fill="var(--ink)" />
                             )}
-                            {isLocked && (
+                            {isLocked && !isPrereq && !isSuccessor && (
                               <circle cx="0" cy="0" r="1.8" fill="var(--gray)" opacity="0.6" />
                             )}
                           </g>
@@ -2396,6 +2445,17 @@ export function SkillTreeCanvas({
 
                           {/* C. 轻量考点药丸胶囊 (Mini-Capsule) */}
                           <g className="planetary-capsule">
+                            <defs>
+                              <clipPath id={`capsule-clip-${node.id}`}>
+                                <rect
+                                  x={pillX + 1}
+                                  y={pillY + 1}
+                                  width={pillW - 2}
+                                  height={pillH - 2}
+                                  rx="2.5"
+                                />
+                              </clipPath>
+                            </defs>
                             <rect
                               x={pillX}
                               y={pillY}
@@ -2403,28 +2463,30 @@ export function SkillTreeCanvas({
                               height={pillH}
                               rx="3"
                               fill={isMastered ? "var(--paper-subtle)" : "var(--surface)"}
-                              stroke={isAvailable ? "var(--ink)" : isMastered ? "var(--ink)" : "var(--line)"}
-                              strokeWidth={isAvailable ? 1.4 : isMastered ? 0.9 : 0.8}
-                              opacity={isLocked ? 0.92 : 1.0}
+                              stroke={isAvailable ? "var(--ink)" : isMastered ? "var(--ink)" : isPrereq || isSuccessor ? "var(--ink)" : "var(--line)"}
+                              strokeWidth={isAvailable ? 1.4 : isMastered ? 0.9 : isPrereq || isSuccessor ? 1.1 : 0.8}
+                              opacity={isLocked && !isPrereq && !isSuccessor ? 0.92 : 1.0}
                               className="transition-all duration-150 group-hover:stroke-[var(--ink)]"
                             />
                             {/* 可攻坚标记：左侧墨黑圆点指引 */}
                             {isAvailable && (
                               <circle cx={pillX + 7} cy="0" r="2.2" fill="var(--ink)" />
                             )}
-                            {/* 考点自适应语言名称 */}
-                            <text
-                              x={isAvailable ? pillX + 13 : pillX + pillW / 2}
-                              y={pillY + (isTargetActive ? 14.5 : 12.5)}
-                              textAnchor={isAvailable ? "start" : "middle"}
-                              fontFamily="serif"
-                              fontSize={isTargetActive ? "9.5" : "9"}
-                              fontWeight={isTargetActive ? "bold" : "500"}
-                              fill={isTargetActive ? "var(--ink)" : "var(--gray)"}
-                              className="select-none"
-                            >
-                              {pillText}
-                            </text>
+                            {/* 考点自适应语言名称 (带 clipPath 绝对裁切，杜绝超框溢出) */}
+                            <g clipPath={`url(#capsule-clip-${node.id})`}>
+                              <text
+                                x={pillX + leftPadding}
+                                y={pillY + (isTargetActive ? 14.5 : 12.5)}
+                                textAnchor="start"
+                                fontFamily="serif"
+                                fontSize={fontSize}
+                                fontWeight={isTargetActive ? "bold" : "500"}
+                                fill={isTargetActive ? "var(--ink)" : "var(--gray)"}
+                                className="select-none"
+                              >
+                                {pillText}
+                              </text>
+                            </g>
                             {/* 隐藏辅助文本：当当前胶囊未完全展示全名时，供 DOM 检索与无障碍读取 */}
                             {pillText !== node.titleZH && (
                               <text x={pillX} y={pillY} opacity="0" fontSize="1" pointerEvents="none">
@@ -2447,6 +2509,8 @@ export function SkillTreeCanvas({
               // 认知科技树模式卡片 (Laned Tech Tree Node Card: 210x80)
               const cx = node.x + TREE_BOX_WIDTH / 2;
               const cy = node.y + TREE_BOX_HEIGHT / 2;
+              const treeDisplayPrimaryTitle = truncateTextToVisualWidth(loc.primaryTitle, TREE_BOX_WIDTH - 24, 12, true);
+              const treeDisplaySecondaryTitle = truncateTextToVisualWidth(loc.secondaryTitle, TREE_BOX_WIDTH - 24, 9, false);
 
               return (
                 <g
@@ -2680,35 +2744,43 @@ export function SkillTreeCanvas({
                     </text>
                   </g>
 
-                  <text
-                    x="10"
-                    y="44"
-                    fontFamily="serif"
-                    fontSize="12.5"
-                    fontWeight="bold"
-                    fill="var(--ink)"
-                    className="select-none"
-                  >
-                    {displayPrimaryTitle}
-                  </text>
+                  <defs>
+                    <clipPath id={`tree-clip-${node.id}`}>
+                      <rect x="2" y="2" width={TREE_BOX_WIDTH - 4} height={TREE_BOX_HEIGHT - 4} rx="3" />
+                    </clipPath>
+                  </defs>
 
-                  <text
-                    x="10"
-                    y="63"
-                    fontFamily="monospace"
-                    fontSize="9"
-                    fill="var(--gray)"
-                    className="select-none"
-                  >
-                    {displaySecondaryTitle}
-                  </text>
+                  <g clipPath={`url(#tree-clip-${node.id})`}>
+                    <text
+                      x="10"
+                      y="44"
+                      fontFamily="serif"
+                      fontSize="12"
+                      fontWeight="bold"
+                      fill="var(--ink)"
+                      className="select-none"
+                    >
+                      {treeDisplayPrimaryTitle}
+                    </text>
+
+                    <text
+                      x="10"
+                      y="63"
+                      fontFamily="monospace"
+                      fontSize="9"
+                      fill="var(--gray)"
+                      className="select-none"
+                    >
+                      {treeDisplaySecondaryTitle}
+                    </text>
+                  </g>
                   {/* 隐藏辅助文本：当卡片标题未完全展示全名时供检索 */}
-                  {displayPrimaryTitle !== node.titleZH && displaySecondaryTitle !== node.titleZH && (
+                  {treeDisplayPrimaryTitle !== node.titleZH && treeDisplaySecondaryTitle !== node.titleZH && (
                     <text x="10" y="44" opacity="0" fontSize="1" pointerEvents="none">
                       {node.titleZH}
                     </text>
                   )}
-                  {displayPrimaryTitle !== node.titleDE && displaySecondaryTitle !== node.titleDE && (
+                  {treeDisplayPrimaryTitle !== node.titleDE && treeDisplaySecondaryTitle !== node.titleDE && (
                     <text x="10" y="44" opacity="0" fontSize="1" pointerEvents="none">
                       {node.titleDE}
                     </text>

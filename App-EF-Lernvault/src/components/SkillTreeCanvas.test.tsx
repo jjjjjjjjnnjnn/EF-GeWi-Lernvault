@@ -1,5 +1,5 @@
 import { describe, it, expect, vi, beforeEach } from "vitest";
-import { render, screen, fireEvent } from "@testing-library/react";
+import { render, screen, fireEvent, within } from "@testing-library/react";
 import { SkillTreeCanvas } from "./SkillTreeCanvas";
 
 describe("SkillTreeCanvas Component (可插拔知识图谱与技能树画布测试)", () => {
@@ -56,7 +56,7 @@ describe("SkillTreeCanvas Component (可插拔知识图谱与技能树画布测�
     // 抽屉展开
     const drawer = screen.getByTestId("skill-tree-node-drawer");
     expect(drawer).toBeInTheDocument();
-    expect(screen.getByText("Preismechanismus & Marktgleichgewicht")).toBeInTheDocument();
+    expect(within(drawer).getByText("Preismechanismus & Marktgleichgewicht")).toBeInTheDocument();
 
     // 验证得分核心句
     expect(
@@ -400,7 +400,7 @@ describe("SkillTreeCanvas Component (可插拔知识图谱与技能树画布测�
 
     // 抽屉和选中节点绝不能因为平移移动而误关闭！
     expect(drawer).toHaveAttribute("data-state", "open");
-    expect(screen.getByText("Preismechanismus & Marktgleichgewicht")).toBeInTheDocument();
+    expect(within(drawer).getByText("Preismechanismus & Marktgleichgewicht")).toBeInTheDocument();
 
     // 验证真正的静止空白点击依然可以正确关闭抽屉
     fireEvent.click(canvasBg);

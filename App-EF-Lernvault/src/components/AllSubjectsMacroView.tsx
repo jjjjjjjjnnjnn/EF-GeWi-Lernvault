@@ -7,6 +7,7 @@ import {
 } from "../engine/skillTree";
 import type { Lang, NodeLanguageMode } from "../i18n/types";
 import { resolveNodeLanguage } from "../i18n/nodeLocalization";
+import { truncateTextToVisualWidth } from "../utils/svgTypography";
 
 export interface CrossSubjectSynergyTrack {
   readonly id: string;
@@ -643,6 +644,11 @@ export function AllSubjectsMacroView({
                       <g
                         transform={`translate(${(link.x1 + link.x2) / 2}, ${(link.y1 + link.y2) / 2})`}
                       >
+                        <defs>
+                          <clipPath id={`macro-link-clip-${link.id}`}>
+                            <rect x="-63" y="-9" width="126" height="18" rx="2.5" />
+                          </clipPath>
+                        </defs>
                         <rect
                           x="-65"
                           y="-10"
@@ -653,16 +659,18 @@ export function AllSubjectsMacroView({
                           stroke="var(--ink)"
                           strokeWidth="1.2"
                         />
-                        <text
-                          textAnchor="middle"
-                          dominantBaseline="central"
-                          fontFamily="serif"
-                          fontSize="9.5"
-                          fontWeight="bold"
-                          fill="var(--ink)"
-                        >
-                          {de ? link.titleDE : link.titleZH}
-                        </text>
+                        <g clipPath={`url(#macro-link-clip-${link.id})`}>
+                          <text
+                            textAnchor="middle"
+                            dominantBaseline="central"
+                            fontFamily="serif"
+                            fontSize="9"
+                            fontWeight="bold"
+                            fill="var(--ink)"
+                          >
+                            {truncateTextToVisualWidth(de ? link.titleDE : link.titleZH, 116, 9, true)}
+                          </text>
+                        </g>
                       </g>
                     )}
                   </g>
@@ -797,6 +805,11 @@ export function AllSubjectsMacroView({
                           {/* 悬停展示微型气泡名牌 */}
                           {(isNodeHovered || isNodeSelected) && (
                             <g transform="translate(0, -14)" className="pointer-events-none">
+                              <defs>
+                                <clipPath id={`macro-node-clip-${node.id}`}>
+                                  <rect x="-48" y="-9" width="96" height="18" rx="2.5" />
+                                </clipPath>
+                              </defs>
                               <rect
                                 x="-50"
                                 y="-10"
@@ -807,16 +820,18 @@ export function AllSubjectsMacroView({
                                 stroke="var(--ink)"
                                 strokeWidth="1.2"
                               />
-                              <text
-                                textAnchor="middle"
-                                dominantBaseline="central"
-                                fontFamily="serif"
-                                fontSize="8.5"
-                                fontWeight="bold"
-                                fill="var(--ink)"
-                              >
-                                {loc.primaryTitle.slice(0, 14)}
-                              </text>
+                              <g clipPath={`url(#macro-node-clip-${node.id})`}>
+                                <text
+                                  textAnchor="middle"
+                                  dominantBaseline="central"
+                                  fontFamily="serif"
+                                  fontSize="8.5"
+                                  fontWeight="bold"
+                                  fill="var(--ink)"
+                                >
+                                  {truncateTextToVisualWidth(loc.primaryTitle, 86, 8.5, true)}
+                                </text>
+                              </g>
                             </g>
                           )}
                         </g>
