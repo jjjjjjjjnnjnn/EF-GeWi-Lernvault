@@ -139,4 +139,41 @@ describe("AllSubjectsMacroView Component (所有学科宏观星图与跨学科�
     expect(screen.getByText("Fächer-Matrix")).toBeInTheDocument();
     expect(screen.getByText("Vernetzungs-Pfade")).toBeInTheDocument();
   });
+
+  it("calls onDeselectNode when clicking on blank astrolabe space, but not when panning", () => {
+    const handleSelectSubject = vi.fn();
+    const handleSelectNode = vi.fn();
+    const handleDeselectNode = vi.fn();
+
+    render(
+      <AllSubjectsMacroView
+        lang="zh"
+        nodeLangMode="zh"
+        onSelectSubject={handleSelectSubject}
+        onSelectNode={handleSelectNode}
+        onDeselectNode={handleDeselectNode}
+        masteredIds={new Set()}
+      />
+    );
+
+    const astrolabeSvg = screen.getByTestId("all-subjects-astrolabe");
+    const astrolabeBg = screen.getByTestId("all-subjects-astrolabe-bg");
+
+    // 1. 拖拽平移操作 (位移 50px) 绝不能触发取消选择！
+    fireEvent.pointerDown(astrolabeSvg, { clientX: 100, clientY: 100, pointerId: 1 });
+    fireEvent.pointerMove(astrolabeSvg, { clientX: 150, clientY: 150, pointerId: 1 });
+    fireEvent.pointerUp(astrolabeSvg, { clientX: 150, clientY: 150, pointerId: 1 });
+    fireEvent.click(astrolabeBg);
+
+    expect(handleDeselectNode).not.toHaveBeenCalled();
+
+    // 2. 纯单点空白背景 (位移 <= 8px) 必须精确触发取消选择！
+    fireEvent.pointerDown(astrolabeSvg, { clientX: 100, clientY: 100, pointerId: 1 });
+    fireEvent.pointerUp(astrolabeSvg, { clientX: 100, clientY: 100, pointerId: 1 });
+    expect(handleDeselectNode).toHaveBeenCalledTimes(1);
+
+    // 3. 点击背景 rect 也触发取消选择
+    fireEvent.click(astrolabeBg);
+    expect(handleDeselectNode).toHaveBeenCalledTimes(2);
+  });
 });

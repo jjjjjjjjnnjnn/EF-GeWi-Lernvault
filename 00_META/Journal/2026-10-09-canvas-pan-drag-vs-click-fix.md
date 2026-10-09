@@ -11,31 +11,35 @@ tags: [EF, Meta, App, UI, Bugfix, Interaction]
 
 ## 1. 缺陷现象与根因定位
 
-用户反馈在知识图谱画布中按住鼠标左键移动视口时，系统误判为点击了空白外部区域，自动关闭了侧边研习抽屉和当前选中的知识节点（“发现小bug我鼠标左键移动的时候，它判定我点击到外面区域了，自动关掉了侧栏和节点。但是我只是想移动，而不是关闭”）。
-
-**技术根因排查**：
-1. **浏览器 DOM/SVG 原生事件流穿透**：背景层 `<rect data-testid="skill-tree-canvas-bg">` 覆盖了整个 SVG 画布（100% 宽高）。原实现中直接在其上挂载了无条件的 `onClick={() => setSelectedNodeId(null)}`；
-2. **移动后抬起触发虚假 Click**：在浏览器原生事件模型中，只要 `pointerdown` 与 `pointerup` 的坐标落在同一个元素几何范围内，无论期间按住鼠标平移了多远距离（例如 50px、200px），抬起鼠标时浏览器均会按规范派发一个原生的 `click` 事件；
-3. **缺少拖拽位移隔离门禁**：即使 `handlePointerUp` 中曾经尝试通过位移阈值判断，由于 `<rect>` 元素上的 `onClick` 是无条件执行的，抬起鼠标瞬间触发的 `click` 事件立即绕过校验，强行执行了 `setSelectedNodeId(null)`，导致平移视口时研习抽屉被误关。
+1. **第一阶段缺陷**：用户反馈在知识图谱画布中按住鼠标左键移动视口时，系统误判为点击了空白外部区域，自动关闭了侧边研习抽屉和当前选中的知识节点；
+2. **第二阶段缺陷**：此前在修补平移拖拽时，由于把点击收回逻辑完全押在 `<rect>` 的 `onClick` 上，但在部分 WebView/Chromium 环境下，`<svg>` 在捕获指针或点击非 `<rect>` 背景要素时不会向 `<rect>` 派发 `click`，并且在「所有学科」宏观星盘视图（`AllSubjectsMacroView`）中彻底缺少对空白画布的取消选中处理，导致用户单点空白区域时无法收回抽屉与取消选择；
+3. **冒泡重复触发隐患**：在同时为 `<svg>` 与 `<rect>` 绑定 `handleCanvasBgClick` 时，若未调用 `e.stopPropagation()`，点击 `<rect>` 时事件冒泡至 `<svg>`，第一次调用重置了 `canvasHasMovedRef`，第二次冒泡调用直接触发了 `setSelectedNodeId(null)`，导致拖拽抬起时误关抽屉。
 
 ## 2. 解决方案与工程重构
 
-1. **引入拖拽位移门禁状态（`isCanvasPannedRef`）**：
-   - 在 `SkillTreeCanvas.tsx` 中定义 `isCanvasPannedRef = useRef<boolean>(false)`；
-   - 在 `handlePointerDown` 中初始化 `isCanvasPannedRef.current = false`，并调用 `setPointerCapture` 确保整个拖拽生命周期事件紧密锁定在画布上；
-   - 在 `handlePointerMove` 中检测指针相对于按下起点的欧式距离 `Math.hypot(dx, dy)`，一旦超过 5px 即判定为有效视口平移，将 `isCanvasPannedRef.current` 置为 `true`。
-2. **提炼专属空白点击收起处理器（`handleCanvasBgClick`）**：
-   - 提取 `<rect>` 的点击逻辑：若 `isCanvasPannedRef.current === true`，表明用户刚刚是在移动/漫游画布，拦截并消费该事件，将标志位复位为 `false`，**绝对不调用 `setSelectedNodeId(null)`**；
-   - 只有当 `isCanvasPannedRef.current === false` 时（即用户在空白画布上进行了静止单击/轻点，位移 <= 5px），才执行 `setSelectedNodeId(null)` 收回研习抽屉。
-3. **底层装饰元素指针事件穿透（`pointerEvents: "none"`）**：
-   - 将无交互行为的星盘背景刻度层（`planetary-background-layer`）、科技树里程碑泳道背景层（`tech-tree-background-layer`）以及所有贝塞尔连线（`renderedEdges`）均添加 `style={{ pointerEvents: "none" }}`；
-   - 确保所有空白区域与装饰线条上的拖拽和平移事件100%直接穿透到底层背景，彻底消除了中间装饰元素抢占指针事件或拦截拖拽的隐患。
-4. **测试与质量门禁验证**：
-   - 在 `SkillTreeCanvas.test.tsx` 中新增端到端测试用例：`does not close drawer when dragging or panning canvas with mouse move`，17 项测试全部通过；
-   - 确保 `cmd /c "npx tsc -b"`、`npm run build` 与 `python scripts/vault-check.py` 全绿。
+1. **双重保障判定机制（PointerUp 距离门禁 + Click 兜底）**：
+   - 在 `SkillTreeCanvas.tsx` 与 `AllSubjectsMacroView.tsx` 中建立统一的 `canvasPointerDownPosRef` 与 `canvasHasMovedRef`；
+   - `handlePointerDown`：记录初始触点坐标，将 `canvasHasMovedRef.current` 置为 `false`；
+   - `handlePointerMove`：计算移动欧式距离，当位移大于 8px（行业标准手势容差）时置 `canvasHasMovedRef.current = true`；
+   - `handlePointerUp`：计算抬起时总位移。若位移 `<= 8px` 且未发生有效拖拽移动，直接触发取消选择与抽屉收回（`setSelectedNodeId(null)` / `onDeselectNode?.()`），不依赖有延迟或受环境干扰的原生 click 派发；
+   - `handleCanvasBgClick`：保留作为合成点击与无障碍点击兜底，并在入口处显式调用 `e.stopPropagation()`，彻底切断 `<rect>` 向 `<svg>` 的二次冒泡穿透。
+2. **全科学业总台（`AllSubjectsMacroView`）全场景支持**：
+   - `AllSubjectsMacroViewProps` 新增 `onDeselectNode?: () => void` 回调，由 `SkillTreeCanvas` 接入 `onDeselectNode={() => setSelectedNodeId(null)}`；
+   - 在宏观星盘 SVG（`all-subjects-astrolabe`）与背景网格纸层（`all-subjects-astrolabe-bg`）上挂载相同的拖拽判定与空白点击取消选择逻辑；
+   - 在「跨学科战役」与「学阶矩阵」Tab 中，容器空白背景点击亦支持一键收回抽屉。
+3. **自动化测试与质量门禁验证**：
+   - 在 `SkillTreeCanvas.test.tsx` 新增：
+     - `retracts drawer when single-clicking empty canvas via pointer events without dragging`（纯指针单点收回抽屉）；
+     - `retracts drawer when clicking empty canvas in '所有学科' macro view`（所有学科宏观星图单点空白背景收回抽屉）；
+     - `does not close drawer when dragging or panning canvas with mouse move`（拖拽平移视口不误关抽屉回归验证）；
+   - 在 `AllSubjectsMacroView.test.tsx` 新增：
+     - `calls onDeselectNode when clicking on blank astrolabe space, but not when panning`（星盘单点触发取消选择、平移不触发）；
+   - 全部 25 项测试 100% PASS，`npm run build`（`tsc -b && vite build`）零报错，`vault-check.py` PASS。
 
 ## 3. 变更清单
 
-- [`App-EF-Lernvault/src/components/SkillTreeCanvas.tsx`](file:///C:/Users/rongj/Desktop/学习/App-EF-Lernvault/src/components/SkillTreeCanvas.tsx)：重构视口平移与空白背景点击事件，引入 `isCanvasPannedRef` 与 `handleCanvasBgClick`，装饰图层设置 `pointerEvents: "none"`；
-- [`App-EF-Lernvault/src/components/SkillTreeCanvas.test.tsx`](file:///C:/Users/rongj/Desktop/学习/App-EF-Lernvault/src/components/SkillTreeCanvas.test.tsx)：新增画布平移不关闭抽屉专项自动化测试用例；
-- [`00_META/Journal/2026-10-09-canvas-pan-drag-vs-click-fix.md`](file:///C:/Users/rongj/Desktop/学习/00_META/Journal/2026-10-09-canvas-pan-drag-vs-click-fix.md)：记录本次缺陷修复与交互机制。
+- [`App-EF-Lernvault/src/components/SkillTreeCanvas.tsx`](file:///C:/Users/rongj/Desktop/学习/App-EF-Lernvault/src/components/SkillTreeCanvas.tsx)：完善双重门禁逻辑、事件冒泡隔离与向 `AllSubjectsMacroView` 传递 `onDeselectNode`；
+- [`App-EF-Lernvault/src/components/AllSubjectsMacroView.tsx`](file:///C:/Users/rongj/Desktop/学习/App-EF-Lernvault/src/components/AllSubjectsMacroView.tsx)：支持 `onDeselectNode`、星盘空白单点与平移手势判定；
+- [`App-EF-Lernvault/src/components/SkillTreeCanvas.test.tsx`](file:///C:/Users/rongj/Desktop/学习/App-EF-Lernvault/src/components/SkillTreeCanvas.test.tsx)：补充单点收回与平移互斥测试；
+- [`App-EF-Lernvault/src/components/AllSubjectsMacroView.test.tsx`](file:///C:/Users/rongj/Desktop/学习/App-EF-Lernvault/src/components/AllSubjectsMacroView.test.tsx)：补充所有学科宏观星图空白单点取消选择与平移互斥测试；
+- [`00_META/Journal/2026-10-09-canvas-pan-drag-vs-click-fix.md`](file:///C:/Users/rongj/Desktop/学习/00_META/Journal/2026-10-09-canvas-pan-drag-vs-click-fix.md)：更新本次闭环修复记录。

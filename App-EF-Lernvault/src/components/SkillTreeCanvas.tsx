@@ -165,7 +165,7 @@ export function SkillTreeCanvas({
   const isDraggingRef = useRef<boolean>(false);
   const dragStartRef = useRef<{ x: number; y: number }>({ x: 0, y: 0 });
   const canvasPointerDownPosRef = useRef<{ x: number; y: number } | null>(null);
-  const isCanvasPannedRef = useRef<boolean>(false);
+  const canvasHasMovedRef = useRef<boolean>(false);
 
   // 6. 弹窗状态
   const [isNodeModalOpen, setIsNodeModalOpen] = useState<boolean>(false);
@@ -790,6 +790,7 @@ export function SkillTreeCanvas({
       // 兼容不支持 setPointerCapture 的测试环境
     }
     canvasPointerDownPosRef.current = { x: e.clientX, y: e.clientY };
+    canvasHasMovedRef.current = false;
     activeTouchPointsRef.current.set(e.pointerId, { x: e.clientX, y: e.clientY });
 
     // 触控双指手势初始化
@@ -802,7 +803,6 @@ export function SkillTreeCanvas({
     }
 
     isDraggingRef.current = true;
-    isCanvasPannedRef.current = false;
     dragStartRef.current = { x: e.clientX - pan.x, y: e.clientY - pan.y };
   };
 
@@ -849,8 +849,8 @@ export function SkillTreeCanvas({
         e.clientX - canvasPointerDownPosRef.current.x,
         e.clientY - canvasPointerDownPosRef.current.y
       );
-      if (dist > 5) {
-        isCanvasPannedRef.current = true;
+      if (dist > 8) {
+        canvasHasMovedRef.current = true;
       }
     }
     setPan({
@@ -867,6 +867,7 @@ export function SkillTreeCanvas({
     } catch {
       // 兼容不支持 pointerCapture 的环境
     }
+    const startPos = canvasPointerDownPosRef.current;
     canvasPointerDownPosRef.current = null;
     activeTouchPointsRef.current.delete(e.pointerId);
     if (activeTouchPointsRef.current.size < 2) {
@@ -879,14 +880,23 @@ export function SkillTreeCanvas({
         justDraggedRef.current = true;
       }
       draggingNodeRef.current = null;
+      return;
+    }
+
+    // 关键双重保险：若指针按下到抬起位移 <= 8px 且未被判定为平移拖拽，则判定为纯单击空白画布，收回抽屉并取消选择
+    const dist = startPos ? Math.hypot(e.clientX - startPos.x, e.clientY - startPos.y) : 999;
+    if (startPos && !canvasHasMovedRef.current && dist <= 8) {
+      setSelectedNodeId(null);
     }
   };
 
   // 空白底板点击交互：若为拖拽平移视口则拦截防止误关，若为纯单击则收起研习抽屉
   const handleCanvasBgClick = (e: React.MouseEvent) => {
     e.stopPropagation();
-    if (isCanvasPannedRef.current) {
-      isCanvasPannedRef.current = false;
+    if ((e.target as HTMLElement).closest("[data-clickable-node]")) return;
+    if ((e.target as HTMLElement).closest("[data-clickable='true']")) return;
+    if (canvasHasMovedRef.current) {
+      canvasHasMovedRef.current = false;
       return;
     }
     setSelectedNodeId(null);
@@ -1439,6 +1449,7 @@ export function SkillTreeCanvas({
           onSelectNode={(node) => {
             setSelectedNodeId(node.id);
           }}
+          onDeselectNode={() => setSelectedNodeId(null)}
           selectedNodeId={selectedNodeId}
           masteredIds={masteredIds}
           onToggleMastered={(nodeId) => toggleMastered(nodeId)}
@@ -1551,6 +1562,7 @@ export function SkillTreeCanvas({
           onPointerDown={handlePointerDown}
           onPointerMove={handlePointerMove}
           onPointerUp={handlePointerUp}
+          onClick={handleCanvasBgClick}
           data-testid="skill-tree-svg"
         >
           {/* 背景精细方格纸与引力流向定义 */}

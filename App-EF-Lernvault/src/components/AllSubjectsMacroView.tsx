@@ -86,6 +86,7 @@ export interface AllSubjectsMacroViewProps {
   readonly nodeLangMode: NodeLanguageMode;
   readonly onSelectSubject: (fach: SubjectKey) => void;
   readonly onSelectNode: (node: KnowledgeNode) => void;
+  readonly onDeselectNode?: () => void;
   readonly selectedNodeId?: string | null;
   readonly masteredIds: Set<string>;
   readonly onToggleMastered?: (nodeId: string, fach: string) => void;
@@ -99,6 +100,7 @@ export function AllSubjectsMacroView({
   nodeLangMode,
   onSelectSubject,
   onSelectNode,
+  onDeselectNode,
   selectedNodeId,
   masteredIds,
   className = "",
@@ -296,23 +298,66 @@ export function AllSubjectsMacroView({
     return links;
   }, [subjectPlacements, selectedSynergyId, hoveredSubject]);
 
-  // 画布鼠标拖拽平移支持
+  const canvasPointerDownPosRef = useRef<{ x: number; y: number } | null>(null);
+  const canvasHasMovedRef = useRef<boolean>(false);
+
+  // 画布鼠标拖拽平移与点击空白取消选中支持
   const handlePointerDown = (e: React.PointerEvent<SVGSVGElement>) => {
     if ((e.target as HTMLElement).closest("[data-clickable='true']")) return;
+    try {
+      e.currentTarget.setPointerCapture(e.pointerId);
+    } catch {
+      // 兼容不支持 setPointerCapture 的测试环境
+    }
+    canvasPointerDownPosRef.current = { x: e.clientX, y: e.clientY };
+    canvasHasMovedRef.current = false;
     isDraggingRef.current = true;
     dragStartRef.current = { x: e.clientX - pan.x, y: e.clientY - pan.y };
   };
 
   const handlePointerMove = (e: React.PointerEvent<SVGSVGElement>) => {
     if (!isDraggingRef.current) return;
+    if (canvasPointerDownPosRef.current) {
+      const dist = Math.hypot(
+        e.clientX - canvasPointerDownPosRef.current.x,
+        e.clientY - canvasPointerDownPosRef.current.y
+      );
+      if (dist > 8) {
+        canvasHasMovedRef.current = true;
+      }
+    }
     setPan({
       x: e.clientX - dragStartRef.current.x,
       y: e.clientY - dragStartRef.current.y,
     });
   };
 
-  const handlePointerUp = () => {
+  const handlePointerUp = (e: React.PointerEvent<SVGSVGElement>) => {
+    try {
+      if (e.currentTarget.hasPointerCapture(e.pointerId)) {
+        e.currentTarget.releasePointerCapture(e.pointerId);
+      }
+    } catch {
+      // 兼容不支持 pointerCapture 的环境
+    }
+    const startPos = canvasPointerDownPosRef.current;
+    canvasPointerDownPosRef.current = null;
     isDraggingRef.current = false;
+
+    const dist = startPos ? Math.hypot(e.clientX - startPos.x, e.clientY - startPos.y) : 999;
+    if (startPos && !canvasHasMovedRef.current && dist <= 8) {
+      onDeselectNode?.();
+    }
+  };
+
+  const handleCanvasBgClick = (e: React.MouseEvent) => {
+    e.stopPropagation();
+    if ((e.target as HTMLElement).closest("[data-clickable='true']")) return;
+    if (canvasHasMovedRef.current) {
+      canvasHasMovedRef.current = false;
+      return;
+    }
+    onDeselectNode?.();
   };
 
   const handleWheel = (e: React.WheelEvent<SVGSVGElement>) => {
@@ -526,6 +571,7 @@ export function AllSubjectsMacroView({
             onPointerDown={handlePointerDown}
             onPointerMove={handlePointerMove}
             onPointerUp={handlePointerUp}
+            onClick={handleCanvasBgClick}
             onWheel={handleWheel}
             data-testid="all-subjects-astrolabe"
           >
@@ -539,7 +585,13 @@ export function AllSubjectsMacroView({
                 <path d="M 140 0 L 0 0 0 140" fill="none" stroke="var(--line)" strokeWidth="0.9" opacity="0.75" />
               </pattern>
             </defs>
-            <rect width="100%" height="100%" fill="url(#macro-grid-major)" />
+            <rect
+              width="100%"
+              height="100%"
+              fill="url(#macro-grid-major)"
+              onClick={handleCanvasBgClick}
+              data-testid="all-subjects-astrolabe-bg"
+            />
 
             <g transform={`translate(${pan.x}, ${pan.y}) scale(${zoom})`}>
               {/* 1. 星盘同心天球轨道环层 (Concentric Celestial Latitude Rings) */}
@@ -856,7 +908,15 @@ export function AllSubjectsMacroView({
 
         {/* TAB 2: 🧭 跨学科融通战役 (Synergy Tracks Flow) */}
         {activeTab === "synergies" && (
-          <div className="w-full h-full overflow-y-auto p-4 md:p-6 space-y-6" data-testid="all-subjects-synergy-tracks">
+          <div
+            className="w-full h-full overflow-y-auto p-4 md:p-6 space-y-6"
+            data-testid="all-subjects-synergy-tracks"
+            onClick={(e) => {
+              if (e.target === e.currentTarget) {
+                onDeselectNode?.();
+              }
+            }}
+          >
             <div className="border-b border-[var(--line)] pb-3">
               <h2 className="font-serif text-lg font-bold text-[var(--ink)]">
                 {de ? "Interdisziplinäre Vernetzungspfade (Oberstufe)" : "跨学科融通专题战役 (高中全科核心因果链)"}
@@ -944,7 +1004,15 @@ export function AllSubjectsMacroView({
 
         {/* TAB 3: 📊 十科学阶阵列矩阵 (Curriculum Matrix & Balance KPI) */}
         {activeTab === "matrix" && (
-          <div className="w-full h-full overflow-y-auto p-4 md:p-6 space-y-6" data-testid="all-subjects-matrix">
+          <div
+            className="w-full h-full overflow-y-auto p-4 md:p-6 space-y-6"
+            data-testid="all-subjects-matrix"
+            onClick={(e) => {
+              if (e.target === e.currentTarget) {
+                onDeselectNode?.();
+              }
+            }}
+          >
             <div className="border-b border-[var(--line)] pb-3">
               <h2 className="font-serif text-lg font-bold text-[var(--ink)]">
                 {de ? "Fächer-Curriculum-Matrix & Fortschritts-Radar" : "全学科考阶阵列矩阵与备考总台"}

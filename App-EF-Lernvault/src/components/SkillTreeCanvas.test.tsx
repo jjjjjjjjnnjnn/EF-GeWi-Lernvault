@@ -406,6 +406,49 @@ describe("SkillTreeCanvas Component (可插拔知识图谱与技能树画布测�
     fireEvent.click(canvasBg);
     expect(drawer).toHaveAttribute("data-state", "closed");
   });
+
+  it("retracts drawer when single-clicking empty canvas via pointer events without dragging", () => {
+    render(<SkillTreeCanvas lang="zh" initialFach="SoWi" />);
+
+    const preismechanismusNode = screen.getByTestId("skill-node-sowi-preismechanismus");
+    fireEvent.click(preismechanismusNode);
+
+    const drawer = screen.getByTestId("skill-tree-node-drawer");
+    expect(drawer).toHaveAttribute("data-state", "open");
+
+    const svg = screen.getByTestId("skill-tree-svg");
+
+    // 纯单点指针事件 (位移 0px)
+    fireEvent.pointerDown(svg, { clientX: 200, clientY: 200, pointerId: 1 });
+    fireEvent.pointerUp(svg, { clientX: 200, clientY: 200, pointerId: 1 });
+
+    // 抽屉应当立即平滑收回！
+    expect(drawer).toHaveAttribute("data-state", "closed");
+  });
+
+  it("retracts drawer when clicking empty canvas in '所有学科' macro view", () => {
+    render(<SkillTreeCanvas lang="zh" initialFach="SoWi" />);
+
+    // 1. 切换到所有学科
+    const allSubjectsBtn = screen.getByTestId("skill-tree-all-subjects-btn");
+    fireEvent.click(allSubjectsBtn);
+
+    // 2. 搜索并选择考点展开抽屉
+    const searchInput = screen.getByTestId("all-subjects-search-input");
+    fireEvent.change(searchInput, { target: { value: "价格形成机制" } });
+    const searchResultItem = screen.getByTestId("search-result-sowi-preismechanismus");
+    fireEvent.click(searchResultItem);
+
+    const drawer = screen.getByTestId("skill-tree-node-drawer");
+    expect(drawer).toHaveAttribute("data-state", "open");
+
+    // 3. 点击宏观星盘空白背景
+    const astrolabeBg = screen.getByTestId("all-subjects-astrolabe-bg");
+    fireEvent.click(astrolabeBg);
+
+    // 抽屉应当被成功收回！
+    expect(drawer).toHaveAttribute("data-state", "closed");
+  });
 });
 
 
