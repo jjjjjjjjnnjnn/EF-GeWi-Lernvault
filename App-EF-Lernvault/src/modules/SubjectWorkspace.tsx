@@ -6,6 +6,9 @@ import Blocks from "../components/Blocks";
 import type { Lang } from "../i18n";
 import { SkillTreeCanvas } from "../components/SkillTreeCanvas";
 import type { SubjectKey } from "../engine/skillTree";
+import { Button } from "../components/ui/button";
+import { Badge } from "../components/ui/badge";
+import { Input } from "../components/ui/input";
 
 export interface SubjectWorkspaceProps {
   currentFach?: string;
@@ -124,86 +127,74 @@ export const SubjectWorkspace: React.FC<SubjectWorkspaceProps> = ({
         <div className="flex flex-wrap items-center justify-between gap-2">
           {/* 五大直观分类标签页切换 (知识图谱 -> 笔记 -> 抽认卡 -> 实验 -> 真题) */}
           <div className="flex items-center gap-1">
-            <button
-              type="button"
+            <Button
+              variant={subTab === "tree" ? "default" : "ghost"}
+              size="sm"
               onClick={() => setSubTab("tree")}
-              className={`rounded px-3 py-1 font-mono text-xs transition-colors cursor-pointer ${
-                subTab === "tree"
-                  ? "bg-[var(--ink)] text-[var(--paper)] font-semibold"
-                  : "border border-transparent text-[var(--gray)] hover:text-[var(--ink)] hover:bg-[var(--surface)]"
-              }`}
+              className="font-mono text-xs h-7 px-3"
             >
               {de ? "0. Kompetenzbaum" : "0. 知识图谱"}
-            </button>
-            <button
-              type="button"
+            </Button>
+            <Button
+              variant={subTab === "notes" ? "default" : "ghost"}
+              size="sm"
               onClick={() => setSubTab("notes")}
-              className={`rounded px-3 py-1 font-mono text-xs transition-colors cursor-pointer ${
-                subTab === "notes"
-                  ? "bg-[var(--ink)] text-[var(--paper)] font-semibold"
-                  : "border border-transparent text-[var(--gray)] hover:text-[var(--ink)] hover:bg-[var(--surface)]"
-              }`}
+              className="font-mono text-xs h-7 px-3"
             >
               {de ? `1. Wissensnotizen (${subjectNotes.length})` : `1. 知识笔记 (${subjectNotes.length})`}
-            </button>
-            <button
-              type="button"
+            </Button>
+            <Button
+              variant={subTab === "cards" ? "default" : "ghost"}
+              size="sm"
               onClick={() => setSubTab("cards")}
-              className={`rounded px-3 py-1 font-mono text-xs transition-colors cursor-pointer ${
-                subTab === "cards"
-                  ? "bg-[var(--ink)] text-[var(--paper)] font-semibold"
-                  : "border border-transparent text-[var(--gray)] hover:text-[var(--ink)] hover:bg-[var(--surface)]"
-              }`}
+              className="font-mono text-xs h-7 px-3"
             >
               {de ? `2. Karteikarten (${subjectCards.length})` : `2. 抽认卡片 (${subjectCards.length})`}
-            </button>
-            <button
-              type="button"
+            </Button>
+            <Button
+              variant={subTab === "sims" ? "default" : "ghost"}
+              size="sm"
               onClick={() => setSubTab("sims")}
-              className={`rounded px-3 py-1 font-mono text-xs transition-colors cursor-pointer ${
-                subTab === "sims"
-                  ? "bg-[var(--ink)] text-[var(--paper)] font-semibold"
-                  : "border border-transparent text-[var(--gray)] hover:text-[var(--ink)] hover:bg-[var(--surface)]"
-              }`}
+              className="font-mono text-xs h-7 px-3"
             >
               {de ? `3. Labore (${subjectSims.length})` : `3. 实验与教具 (${subjectSims.length})`}
-            </button>
-            <button
-              type="button"
+            </Button>
+            <Button
+              variant={subTab === "exam" ? "default" : "ghost"}
+              size="sm"
               onClick={() => setSubTab("exam")}
-              className={`rounded px-3 py-1 font-mono text-xs transition-colors cursor-pointer ${
-                subTab === "exam"
-                  ? "bg-[var(--ink)] text-[var(--paper)] font-semibold"
-                  : "border border-transparent text-[var(--gray)] hover:text-[var(--ink)] hover:bg-[var(--surface)]"
-              }`}
+              className="font-mono text-xs h-7 px-3"
             >
               {de ? "4. Klausur-Training" : "4. 模拟真题"}
-            </button>
+            </Button>
           </div>
 
           {/* 快捷行动条 */}
           <div className="flex flex-wrap items-center gap-2">
-            <button
-              type="button"
+            <Button
+              variant="outline"
+              size="sm"
               onClick={() => onNavigateToTab?.("flashcards", { fach: activeFachInfo.id })}
-              className="flex items-center gap-1 rounded border border-[var(--line)] bg-[var(--surface)] px-2 py-0.5 font-mono text-[11px] text-[var(--ink)] hover:border-[var(--accent)] hover:text-[var(--accent)] cursor-pointer"
+              className="font-mono text-[11px] h-7 px-2.5"
             >
               <span>{de ? "Karten drillen (Alt 3)" : "开启词卡背诵 (Alt 3)"}</span>
-            </button>
-            <button
-              type="button"
+            </Button>
+            <Button
+              variant="default"
+              size="sm"
               onClick={() => onNavigateToTab?.("klausursim", { fach: activeFachInfo.id })}
-              className="flex items-center gap-1 rounded border border-[var(--ink)] bg-[var(--ink)] px-2 py-0.5 font-mono text-[11px] text-[var(--paper)] hover:bg-[var(--accent)] hover:border-[var(--accent)] cursor-pointer"
+              className="font-mono text-[11px] h-7 px-2.5"
             >
               <span>{de ? "45 Min Klausur starten (Alt 5)" : "开始45分钟模考 (Alt 5)"}</span>
-            </button>
-            <button
-              type="button"
+            </Button>
+            <Button
+              variant="outline"
+              size="sm"
               onClick={() => onNavigateToTab?.("tutor", { fach: activeFachInfo.id })}
-              className="flex items-center gap-1 rounded border border-[var(--line)] bg-[var(--surface)] px-2 py-0.5 font-mono text-[11px] text-[var(--ink)] hover:border-[var(--accent)] hover:text-[var(--accent)] cursor-pointer"
+              className="font-mono text-[11px] h-7 px-2.5"
             >
               <span>{de ? "Fach-Tutor fragen (Alt 6)" : "向AI助教请教 (Alt 6)"}</span>
-            </button>
+            </Button>
           </div>
         </div>
       </header>
@@ -252,7 +243,7 @@ export const SubjectWorkspace: React.FC<SubjectWorkspaceProps> = ({
             >
               {/* 目录搜索头 */}
               <div className="p-3 border-b border-[var(--line)] shrink-0 flex items-center gap-2">
-                <input
+                <Input
                   type="text"
                   value={noteSearchQuery}
                   onChange={(e) => setNoteSearchQuery(e.target.value)}
@@ -265,18 +256,19 @@ export const SubjectWorkspace: React.FC<SubjectWorkspaceProps> = ({
                       ? "搜索全库考点..."
                       : "搜索本学科考点..."
                   }
-                  className="w-full rounded border border-[var(--line)] bg-[var(--paper)] px-2 py-1 font-sans text-xs text-[var(--ink)] placeholder:text-[var(--gray)] focus:border-[var(--accent)] focus:outline-none"
+                  className="h-8 text-xs bg-[var(--paper)]"
                 />
-                <button
-                  type="button"
+                <Button
+                  variant="ghost"
+                  size="icon"
                   onClick={() => setIsCatalogCollapsed(true)}
                   title={de ? "Menü einklappen" : "收起目录"}
-                  className="rounded border border-[var(--line)] p-1 text-[var(--gray)] hover:text-[var(--ink)] cursor-pointer shrink-0"
+                  className="h-8 w-8 text-[var(--gray)] hover:text-[var(--ink)] shrink-0"
                 >
                   <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5">
                     <path d="M11 3L5 8l6 5" />
                   </svg>
-                </button>
+                </Button>
               </div>
 
               {/* 考点独立滚动列表 */}
@@ -304,14 +296,14 @@ export const SubjectWorkspace: React.FC<SubjectWorkspaceProps> = ({
                           </div>
                           <div className="flex items-center gap-1 shrink-0">
                             {isAllFaecher && (
-                              <span className="rounded border border-[var(--line)] bg-[var(--surface)] px-1 py-0.2 font-mono text-[9px] text-[var(--ink)]">
+                              <Badge variant="outline" className="text-[9px] px-1 py-0 font-mono">
                                 {note.fach}
-                              </span>
+                              </Badge>
                             )}
                             {note.klausurrelevant && (
-                              <span className="rounded bg-[var(--ink)] px-1 py-0.2 font-mono text-[9px] text-[var(--paper)]">
+                              <Badge variant="default" className="text-[9px] px-1 py-0 font-mono">
                                 Klausur
-                              </span>
+                              </Badge>
                             )}
                           </div>
                         </div>

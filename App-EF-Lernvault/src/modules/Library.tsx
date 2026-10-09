@@ -9,6 +9,8 @@ import { FAECHER } from "../fach";
 import { Pagination } from "../components/Pagination";
 import type { Lang } from "../i18n";
 import { getHighestAfb, getOperatorInfo } from "../config/audience";
+import { Badge } from "../components/ui/badge";
+import { Card } from "../components/ui/card";
 
 interface Shown {
   id: string;
@@ -570,7 +572,7 @@ export default function Library({
 
       {/* Right Column: Centered Reading Column (~46rem) */}
       <div className="flex-1 min-w-0">
-        <div key={open?.id} className="tab-enter mx-auto max-w-[46rem] bg-[var(--surface)] border border-[var(--line)] rounded-[var(--radius)] p-5 sm:p-8">
+        <Card key={open?.id} className="tab-enter mx-auto max-w-[46rem] bg-[var(--surface)] p-5 sm:p-8">
           {open ? (
             <article>
               {/* Header Metadata with Next/Prev Switcher */}
@@ -578,12 +580,13 @@ export default function Library({
                 <div className="flex flex-wrap items-center gap-1.5">
                   <span className="font-medium text-[var(--ink)]">{open.fach}</span>
                   {open.operatoren && open.operatoren.length > 0 && (
-                    <span
-                      className="border border-[var(--accent)]/40 bg-[var(--accent)]/10 text-[var(--accent)] text-[10px] font-mono uppercase px-1.5 py-0.5 rounded-[var(--radius)] font-medium"
+                    <Badge
+                      variant="outline"
+                      className="border-[var(--accent)]/40 bg-[var(--accent)]/10 text-[var(--accent)] text-[10px] font-mono uppercase px-1.5 py-0.5 font-medium"
                       title="Anforderungsbereich nach NRW Kernlehrplan"
                     >
                       {getHighestAfb(open.operatoren)}
-                    </span>
+                    </Badge>
                   )}
                   <span>·</span>
                   <div className="flex flex-wrap gap-1.5">
@@ -621,9 +624,9 @@ export default function Library({
                   {open.klausurrelevant && (
                     <>
                       <span>·</span>
-                      <span className="border border-[var(--accent)] text-[var(--accent)] text-[10px] font-mono uppercase px-1.5 py-0.5 rounded-[var(--radius)]">
+                      <Badge variant="default" className="text-[10px] font-mono uppercase px-1.5 py-0.5">
                         Klausurrelevant
-                      </span>
+                      </Badge>
                     </>
                   )}
                 </div>
@@ -904,7 +907,7 @@ export default function Library({
               Keine Treffer / 无结果
             </div>
           )}
-        </div>
+        </Card>
       </div>
     </div>
   );

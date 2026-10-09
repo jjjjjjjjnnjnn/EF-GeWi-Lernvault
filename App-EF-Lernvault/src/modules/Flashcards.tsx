@@ -4,6 +4,7 @@ import { t, type Lang } from "../i18n";
 import { PER_MODULE_KEYS, isTyping, matchesKey } from "../keys";
 import type { VaultCard } from "../vault/parser";
 import { gradeCard, partitionQueue, type Rating } from "../scheduler";
+import { getStudyStreak } from "../engine/dailyMix";
 
 interface CardItem {
   id: string;
@@ -251,42 +252,96 @@ export default function Flashcards({
     );
   }
 
-  // 2. Completion state (Fertig für heute)
+  // 2. Completion state (Fertig für heute · Recall-style Session Summary)
   if (isFinished) {
+    const accuracy = sessionDone > 0 ? Math.round(((sessionDone - sessionAgain) / sessionDone) * 100) : 100;
+    const streak = getStudyStreak().currentStreak || 1;
+    const earnedXp = sessionDone * 10;
+
     return (
       <div className="mx-auto max-w-xl space-y-4 pt-4 text-center">
         {renderSubjectFilter()}
-        <div className="rounded-[var(--radius)] border border-[var(--line)] bg-[var(--surface)] p-8">
+        <div className="rounded-[var(--radius)] border border-[var(--line)] bg-[var(--surface)] p-6 sm:p-8">
+          <div className="mx-auto mb-3 flex h-10 w-10 items-center justify-center rounded-[var(--radius)] border border-[var(--line)] bg-[var(--paper-subtle)] text-[var(--ink)]">
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="1.6"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M2.5 8.5l3.5 3.5 7.5-8" />
+            </svg>
+          </div>
           <div className="font-serif text-2xl text-[var(--ink)] mb-1">
             {tr.doneToday}
           </div>
           <div className="font-sans text-xs text-[var(--gray)] mb-6">
-            {lang === "de" ? "Alle fälligen Karten wiederholt" : "今日需复习卡片已全部完成"}
+            {lang === "de"
+              ? "Alle fälligen Karten wiederholt · Wiederholungsfenster gesichert"
+              : "今日需复习卡片已全部完成 · 记忆曲线已锁定"}
           </div>
 
-          <div className="font-mono text-sm text-[var(--ink)] mb-2">
-            {lang === "de"
-              ? `${sessionDone} Karten gelernt · ${sessionAgain} Again`
-              : `已复习 ${sessionDone} 张卡片 · ${sessionAgain} 次需要强化`}
+          {/* Recall-style Data Grid */}
+          <div className="grid grid-cols-3 gap-2 py-3 border-y border-[var(--line)] mb-4">
+            <div className="p-2 rounded-[var(--radius)] bg-[var(--paper-subtle)]">
+              <div className="font-mono text-xl font-bold text-[var(--ink)]">{sessionDone}</div>
+              <div className="text-xs text-[var(--gray)] font-sans">{lang === "de" ? "Wiederholt" : "复习卡片"}</div>
+            </div>
+            <div className="p-2 rounded-[var(--radius)] bg-[var(--paper-subtle)]">
+              <div className="font-mono text-xl font-bold text-[var(--ink)]">{accuracy}%</div>
+              <div className="text-xs text-[var(--gray)] font-sans">{lang === "de" ? "Erfolgsrate" : "正确率"}</div>
+            </div>
+            <div className="p-2 rounded-[var(--radius)] bg-[var(--paper-subtle)]">
+              <div className="font-mono text-xl font-bold text-[var(--ink)]">+{earnedXp}</div>
+              <div className="text-xs text-[var(--gray)] font-sans">XP</div>
+            </div>
           </div>
+
+          <div className="flex items-center justify-center gap-2 mb-4">
+            <span className="rounded-[var(--radius)] border border-[var(--line)] bg-[var(--paper)] px-2 py-0.5 font-mono text-xs text-[var(--ink)]">
+              Streak: {streak}d
+            </span>
+            {sessionAgain > 0 && (
+              <span className="rounded-[var(--radius)] border border-[var(--line)] bg-[var(--paper-subtle)] px-2 py-0.5 font-mono text-xs text-[var(--gray)]">
+                {sessionAgain} {lang === "de" ? "Again reaktiviert" : "次强化标记"}
+              </span>
+            )}
+          </div>
+
           <div className="font-mono text-[var(--text-meta)] text-[var(--gray)] mb-6">
             {tr.ddRetrieval}
           </div>
 
-          <button
-            type="button"
-            onClick={() => {
-              setBrowseOnly(true);
-              setIdx(0);
-              setFlip(false);
-            }}
-            className="inline-flex items-center gap-1.5 rounded-[var(--radius)] border border-[var(--line)] bg-[var(--paper-subtle)] px-4 py-2 text-xs font-sans text-[var(--ink)] hover:border-[var(--accent)] hover:text-[var(--accent)] active:scale-95 transition-all"
-          >
-            {tr.browseAnyway}
-            <span className="font-mono text-[var(--text-meta)] text-[var(--gray)]">
-              {lang === "de" ? `(alle ${totalCards})` : `(共 ${totalCards} 张)`}
-            </span>
-          </button>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-2">
+            <button
+              type="button"
+              onClick={() => {
+                setBrowseOnly(true);
+                setIdx(0);
+                setFlip(false);
+              }}
+              className="w-full sm:w-auto inline-flex items-center justify-center gap-1.5 rounded-[var(--radius)] border border-[var(--ink)] bg-[var(--ink)] px-4 py-2 text-xs font-sans text-[var(--paper)] hover:bg-[var(--accent)] hover:border-[var(--accent)] active:scale-95 transition-all cursor-pointer"
+            >
+              {tr.browseAnyway}
+              <span className="font-mono text-[var(--text-meta)] text-[var(--paper)] opacity-80">
+                {lang === "de" ? `(alle ${totalCards})` : `(共 ${totalCards} 张)`}
+              </span>
+            </button>
+            {activeFach !== "alle" && (
+              <button
+                type="button"
+                onClick={() => onSubjectChange?.("alle")}
+                className="w-full sm:w-auto rounded-[var(--radius)] border border-[var(--line)] bg-[var(--paper-subtle)] px-4 py-2 text-xs font-sans text-[var(--ink)] hover:border-[var(--accent)] hover:text-[var(--accent)] transition-all cursor-pointer"
+              >
+                {lang === "de" ? "Alle Fächer anzeigen" : "切换至全学科卡包"}
+              </button>
+            )}
+          </div>
         </div>
 
         <p className="font-mono text-[var(--text-meta)] text-[var(--gray)]">
