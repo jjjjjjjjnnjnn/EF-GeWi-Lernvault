@@ -284,6 +284,7 @@
 - [2026-10-09-product-roadmap-and-core-module-standardization](Journal/2026-10-09-product-roadmap-and-core-module-standardization.md) — **产品化演进路线图与核心业务模块标准化**：学科专区与文库卡片标准化改造+Flashcards吸收Recall复习流SessionSummary看板（全绿）
 - [2026-10-09-skill-tree-declutter-and-drawer-dismiss](Journal/2026-10-09-skill-tree-declutter-and-drawer-dismiss.md) — **知识图谱降噪、抽屉四维关闭与导航消冗**：抽屉四维关闭闭环（同节点反选/点空白/点叉/ESC）+锁定节点纯净Orb轻量化+径向交错波浪算法根治卡片碰撞重叠+顶栏删减重复技能树+控制条高度压缩（535单测/build/vault-check全绿）
 - [2026-10-09-skill-tree-node-capsule-and-sliding-drawer](Journal/2026-10-09-skill-tree-node-capsule-and-sliding-drawer.md) — **知识图谱全量考点单行胶囊化与研习抽屉平滑抽拉动画**：单行胶囊化降噪+重点高对比突出+因果链焦点全展开+右侧研习抽屉开箱常驻+硬件加速平滑抽拉收回动画+右边缘呼出小把手（535单测/build/vault-check全绿）
+- [2026-10-09-drawer-auto-popup-and-modular-i18n](Journal/2026-10-09-drawer-auto-popup-and-modular-i18n.md) — **知识图谱节点收起后自动弹出与拼插式多语言模块化体系**：节点收起态点击必弹+双重反选根因清除+拼插式多语言架构+HUD语言切换器与全景节点本地化（全绿）
 - 约定：文件名 `YYYY-MM-DD-<thema>.md`，头部frontmatter（`fach`可空，`tags: [EF, Meta]`）。
 
 
