@@ -1,5 +1,6 @@
 import { useState, useMemo, useCallback, useRef, useEffect } from "react";
 import { resolveNodeLanguage, type Lang, type NodeLanguageMode } from "../i18n";
+import { AllSubjectsMacroView } from "./AllSubjectsMacroView";
 import {
   graphRegistry,
   computeGraphUnlockStates,
@@ -211,6 +212,9 @@ export function SkillTreeCanvas({
       setSelectedCategory("ALL");
       setSelectedTag("ALL");
       setCustomNodePositions(new Map());
+      if (fach === "ALL") {
+        return;
+      }
       const allSubs = graphRegistry.listSubjects();
       const sIndex = allSubs.findIndex((s) => s.fach.toLowerCase() === fach.toLowerCase());
       if (sIndex >= 0) {
@@ -1080,13 +1084,29 @@ export function SkillTreeCanvas({
   };
 
   const lastActiveNodeRef = useRef<KnowledgeNode | null>(null);
-  const activeNode = selectedNodeId ? nodeMap.get(selectedNodeId) : null;
+  const activeNode = useMemo(() => {
+    if (!selectedNodeId) return null;
+    const local = nodeMap.get(selectedNodeId);
+    if (local) return local;
+    for (const g of graphRegistry.getAll()) {
+      const found = g.nodes.find((n) => n.id === selectedNodeId);
+      if (found) return found;
+    }
+    return null;
+  }, [selectedNodeId, nodeMap]);
+
   if (activeNode) {
     lastActiveNodeRef.current = activeNode;
   }
   const displayDrawerNode = activeNode || lastActiveNodeRef.current || (activeGraph.nodes.length > 0 ? activeGraph.nodes[0] : null);
   const isDrawerOpen = Boolean(selectedNodeId && activeNode);
-  const activeNodeStatus = displayDrawerNode ? (unlockStates.get(displayDrawerNode.id) ?? "locked") : "locked";
+  const activeNodeStatus = useMemo(() => {
+    if (!displayDrawerNode) return "locked";
+    const local = unlockStates.get(displayDrawerNode.id);
+    if (local) return local;
+    const stored = getStoredMasteredNodeIds(displayDrawerNode.fach);
+    return stored.has(displayDrawerNode.id) ? "mastered" : "available";
+  }, [displayDrawerNode, unlockStates]);
 
   const lastDrawerCausalAnalysisRef = useRef<typeof causalAnalysis>(null);
   if (causalAnalysis && isDrawerOpen) {
@@ -1124,6 +1144,27 @@ export function SkillTreeCanvas({
           <span className="font-mono text-xs text-[var(--gray)] font-medium shrink-0">
             {de ? "Fach:" : "学科:"}
           </span>
+
+          {/* “所有学科” 全科学业总台模式入口 */}
+          <button
+            type="button"
+            onClick={() => handleSelectFach("ALL")}
+            aria-pressed={selectedFach === "ALL"}
+            className={`h-7 px-3 rounded-[var(--radius)] text-xs font-mono font-bold whitespace-nowrap shrink-0 transition-all cursor-pointer flex items-center gap-1.5 ${
+              selectedFach === "ALL"
+                ? "bg-[var(--ink)] text-[var(--surface)] shadow-none"
+                : "border border-[var(--line)] bg-[var(--surface)] text-[var(--ink)] hover:bg-[var(--paper-subtle)]"
+            }`}
+            title={de ? "Alle Fächer (Gesamt-Kosmos)" : "所有学科 (全科学业宏观星图与跨学科总台)"}
+            data-testid="skill-tree-all-subjects-btn"
+          >
+            <svg width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.6">
+              <circle cx="8" cy="8" r="7" strokeDasharray="2 2" />
+              <circle cx="8" cy="8" r="3" fill="currentColor" />
+              <path d="M8 1v2M8 13v2M1 8h2M13 8h2" />
+            </svg>
+            <span>{de ? "Alle Fächer" : "所有学科"}</span>
+          </button>
 
           {/* 翻页与当前页单行学科按钮 */}
           <div className="flex items-center gap-1 shrink-0">
@@ -1367,8 +1408,22 @@ export function SkillTreeCanvas({
         </div>
       </div>
 
-      {/* 二级筛选栏：分类星区 Chips、多维标签 Filter 与全文快速检索 (整行单行对齐无折叠紧凑微型 HUD) */}
-      <div className="flex items-center justify-between border-b border-[var(--line)] px-3 py-1 bg-[var(--paper-subtle)] text-xs font-mono gap-2 z-10 shrink-0 min-h-[34px] overflow-x-auto no-scrollbar flex-nowrap">
+      {selectedFach === "ALL" ? (
+        <AllSubjectsMacroView
+          lang={lang}
+          nodeLangMode={nodeLangMode}
+          onSelectSubject={(targetFach) => handleSelectFach(targetFach)}
+          onSelectNode={(node) => {
+            setSelectedNodeId(node.id);
+          }}
+          selectedNodeId={selectedNodeId}
+          masteredIds={masteredIds}
+          onToggleMastered={(nodeId) => toggleMastered(nodeId)}
+        />
+      ) : (
+        <>
+          {/* 二级筛选栏：分类星区 Chips、多维标签 Filter 与全文快速检索 (整行单行对齐无折叠紧凑微型 HUD) */}
+          <div className="flex items-center justify-between border-b border-[var(--line)] px-3 py-1 bg-[var(--paper-subtle)] text-xs font-mono gap-2 z-10 shrink-0 min-h-[34px] overflow-x-auto no-scrollbar flex-nowrap">
         {/* 分类星区筛选 Chips */}
         <div className="flex items-center gap-1.5 overflow-x-auto no-scrollbar flex-nowrap py-0.5">
           <span className="text-[var(--gray)] font-medium shrink-0">
@@ -2628,6 +2683,8 @@ export function SkillTreeCanvas({
           </g>
         </svg>
       </div>
+    </>
+  )}
 
       {/* 右侧：知识点研习抽屉 (Drawer) - 平滑抽拉动画 (用收回代替删除) */}
       {displayDrawerNode && (
@@ -2656,6 +2713,20 @@ export function SkillTreeCanvas({
                   <span className="font-mono text-[10px] px-1.5 py-0.5 border border-[var(--line)] bg-[var(--surface)] text-[var(--gray)] rounded-[var(--radius)]">
                     {displayDrawerNode.curriculumTier}
                   </span>
+                )}
+                {selectedFach === "ALL" && displayDrawerNode.fach && (
+                  <button
+                    type="button"
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      handleSelectFach(displayDrawerNode.fach);
+                    }}
+                    className="font-mono text-[10px] font-bold px-1.5 py-0.5 border border-[var(--ink)] bg-[var(--paper-subtle)] hover:bg-[var(--ink)] text-[var(--ink)] hover:text-[var(--surface)] rounded-[var(--radius)] cursor-pointer transition-colors"
+                    title={de ? `Zum Fach ${displayDrawerNode.fach} wechseln` : `进入 ${displayDrawerNode.fach} 单科图谱`}
+                    data-testid="drawer-jump-to-fach"
+                  >
+                    {displayDrawerNode.fach} ➔
+                  </button>
                 )}
                 <span
                   className={`font-mono text-[10px] font-bold px-1.5 py-0.5 rounded-[var(--radius)] ${
@@ -2926,6 +2997,18 @@ export function SkillTreeCanvas({
                     ? de ? "Status: Gekonnt (Zurücksetzen)" : "已掌握 (点击撤销)"
                     : de ? "Als 'Gekonnt' markieren" : "标记已掌握"}
                 </button>
+
+                {selectedFach === "ALL" && displayDrawerNode.fach && (
+                  <button
+                    type="button"
+                    onClick={() => handleSelectFach(displayDrawerNode.fach)}
+                    className="w-full py-1.5 px-3 rounded-[var(--radius)] border border-[var(--ink)] bg-[var(--paper-subtle)] hover:bg-[var(--ink)] text-[var(--ink)] hover:text-[var(--surface)] font-mono text-xs flex items-center justify-between transition-colors cursor-pointer"
+                    data-testid="drawer-action-jump-to-fach"
+                  >
+                    <span>{de ? `Zum Fach ${displayDrawerNode.fach} wechseln` : `进入 ${displayDrawerNode.fach} 学科精细图谱`}</span>
+                    <span className="font-mono font-bold">➔</span>
+                  </button>
+                )}
 
                 {displayDrawerNode.linkedReiseId && (
                   <button

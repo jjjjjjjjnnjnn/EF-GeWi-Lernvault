@@ -336,5 +336,49 @@ describe("SkillTreeCanvas Component (可插拔知识图谱与技能树画布测�
     expect(bilingualBtn).toHaveAttribute("aria-pressed", "true");
     expect(deBtn).toHaveAttribute("aria-pressed", "false");
   });
+
+  it("switches to '所有学科' (Alle Fächer) macro view and allows cross-subject drilldown", () => {
+    const handleSubjectChange = vi.fn();
+    render(
+      <SkillTreeCanvas
+        lang="zh"
+        initialFach="SoWi"
+        onSubjectChange={handleSubjectChange}
+      />
+    );
+
+    // 1. 点击切换到 [ 所有学科 ] 胶囊
+    const allSubjectsBtn = screen.getByTestId("skill-tree-all-subjects-btn");
+    expect(allSubjectsBtn).toBeInTheDocument();
+    fireEvent.click(allSubjectsBtn);
+
+    expect(handleSubjectChange).toHaveBeenCalledWith("ALL");
+    // 应当展示所有学科宏观星盘视图
+    expect(screen.getByTestId("all-subjects-macro-view")).toBeInTheDocument();
+    expect(screen.getByTestId("all-subjects-astrolabe")).toBeInTheDocument();
+
+    // 2. 在全科搜索框中检索考点并选择
+    const searchInput = screen.getByTestId("all-subjects-search-input");
+    fireEvent.change(searchInput, { target: { value: "价格形成机制" } });
+
+    const searchResultItem = screen.getByTestId("search-result-sowi-preismechanismus");
+    expect(searchResultItem).toBeInTheDocument();
+    fireEvent.click(searchResultItem);
+
+    // 3. 研习抽屉展开并显示该知识点信息，同时出现学科穿梭胶囊
+    const drawer = screen.getByTestId("skill-tree-node-drawer");
+    expect(drawer).toHaveAttribute("data-state", "open");
+    expect(screen.getByText("Preismechanismus & Marktgleichgewicht")).toBeInTheDocument();
+
+    // 4. 点击学科穿梭按钮，一键进入该学科单科精细图谱
+    const jumpBtn = screen.getByTestId("drawer-jump-to-fach");
+    expect(jumpBtn).toBeInTheDocument();
+    fireEvent.click(jumpBtn);
+
+    // 验证成功切入单科
+    expect(handleSubjectChange).toHaveBeenCalledWith("SoWi");
+    expect(screen.getByTestId("skill-node-sowi-preismechanismus")).toBeInTheDocument();
+  });
 });
+
 
