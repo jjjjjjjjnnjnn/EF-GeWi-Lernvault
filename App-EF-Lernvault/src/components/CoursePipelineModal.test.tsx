@@ -6,7 +6,7 @@ describe("CoursePipelineModal (书本-课程集生成流水线工坊测试)", ()
   it("renders modal with header and preset book selectors when open", () => {
     render(<CoursePipelineModal isOpen={true} onClose={vi.fn()} lang="zh" />);
 
-    expect(screen.getByText("书本 ➔ 趣味互动课程集生成流水线")).toBeInTheDocument();
+    expect(screen.getByText("书本 -> 趣味互动课程集生成流水线")).toBeInTheDocument();
     expect(screen.getByText("SoWi 经济政策与市场 (EF)")).toBeInTheDocument();
     expect(screen.getByText("Philosophie 实践理性与道德 (EF)")).toBeInTheDocument();
     expect(screen.getByText("Mathe 微积分与导数入门 (EF)")).toBeInTheDocument();

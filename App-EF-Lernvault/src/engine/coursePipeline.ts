@@ -480,7 +480,7 @@ export function generateEpisodeMarkdown(
       termDE: `Wirkungskette (${fach})`,
       termZH: `因果推演链条`,
       mechanismDE: `Verbindet Ursache, Zwischenschritt und finale Auswirkung ohne Lücken.`,
-      mechanismZH: `严格建立“前提 ➔ 传导机制 ➔ 终局效应”无缝闭环。`,
+      mechanismZH: `严格建立“前提 -> 传导机制 -> 终局效应”无缝闭环。`,
       klausurTipp: `Keine logischen Sprünge machen; jeden Teilschritt explizit benennen.`,
     },
     {

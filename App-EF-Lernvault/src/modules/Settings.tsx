@@ -224,7 +224,7 @@ export default function Settings({
               onClick={onOpenCoursePipeline}
               className="rounded-[var(--radius)] border border-[var(--line)] bg-[var(--surface)] px-3 py-1.5 font-sans text-xs text-[var(--ink)] hover:border-[var(--accent)] active:scale-95 transition-all duration-150"
             >
-              {lang === "de" ? "Kurs-Pipeline (Buch ➔ Kursserie)" : "课程工坊 (书本 ➔ 趣味课程集生成)"}
+              {lang === "de" ? "Kurs-Pipeline (Buch -> Kursserie)" : "课程工坊 (书本 -> 趣味课程集生成)"}
             </button>
           )}
           <button type="button" onClick={onOpenVault} className={btn}>

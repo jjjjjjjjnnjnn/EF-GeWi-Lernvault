@@ -168,7 +168,7 @@ export const CoursePipelineModal: React.FC<CoursePipelineModalProps> = ({
             </span>
             <span className="text-[var(--line)]">|</span>
             <h2 className="font-serif text-base font-bold text-[var(--ink)]">
-              {de ? "Kurs-Generator & Buch-Pipeline" : "书本 ➔ 趣味互动课程集生成流水线"}
+              {de ? "Kurs-Generator & Buch-Pipeline" : "书本 -> 趣味互动课程集生成流水线"}
             </h2>
           </div>
           <button
