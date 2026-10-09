@@ -82,7 +82,9 @@ export type LaborSimId =
   | "mathe-markov-ketten"
   | "mathe-hypothesentest"
   | "mathe-korrelation-regression"
-  // SoWi (7 neue Labore)
+  // SoWi (7 neue Labore + WahlsystemSim)
+  | "wahlsystem-sim"
+  | "sowi-wahlsystem"
   | "sowi-sinus-milieus"
   | "sowi-konjunktur-zyklus"
   | "sowi-ezb-geldpolitik"
@@ -1398,6 +1400,21 @@ export const SIMULATION_REGISTRY: SimEntry[] = [
     descZH: "硬性与软性区位因素加权记分模型：单位劳动成本、工业电价、企业实际所得税率与高技能人才供给对资本流向的决定。",
     formula: "\\text{Standortgüte} = \\sum_{i=1}^n w_i \\cdot K_i",
     tags: ["SoWi", "Wirtschaft", "Standort", "Wettbewerb", "Industrie", "Labor"],
+  },
+  {
+    id: "wahlsystem-sim",
+    fach: "SoWi",
+    kategorieDE: "Politisches System der BRD",
+    kategorieZH: "联邦德国政治体制与选举制度",
+    themenDE: "Wahlsystem, Bundeswahlgesetz & Sitzverteilung",
+    themenZH: "联邦大选双票制、2023新选举法改革与议席分配",
+    stufe: "EF",
+    titleDE: "Bundestagswahl & Sitzverteilung Simulator (Labor)",
+    titleZH: "联邦议院选举与议席分配沙盘",
+    descDE: "Mathematisch exakte Simulation des personalisierten Verhältniswahlrechts: Sainte-Laguë/Schepers, 5%-Sperrklausel, Grundmandatsklausel und Reformvergleich 2023.",
+    descZH: "圣拉古除数法、5%门槛、基本议席条款、悬峙平衡议席与2023第二票配额覆盖全景对比仿真。",
+    formula: "\\text{Sitze}_i = \\text{round}\\left(\\frac{V_i}{D}\\right) \\quad \\text{bzw.} \\quad \\text{Fix } 630 \\text{ Sitze}",
+    tags: ["SoWi", "Wahlsystem", "Bundestag", "Sainte-Lague", "Reform2023", "Labor"],
   },
 
   // ==========================================
