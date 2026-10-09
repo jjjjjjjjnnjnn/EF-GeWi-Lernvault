@@ -1,5 +1,5 @@
 ---
-fach: Meta
+fach: ""
 thema: "shadcn/ui 设计体系集成与产品级 Web 架构规范"
 operatoren: [darstellen, analysieren]
 klausurrelevant: false
