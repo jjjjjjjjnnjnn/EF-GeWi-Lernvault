@@ -94,6 +94,7 @@ describe("keyboard registry", () => {
       "labor",
       "designlab",
       "werkzeuge",
+      "studio",
       "einstellungen",
     ]);
     expect(MODULE_KEYS.map(({ altHint }) => altHint)).toEqual([
@@ -110,6 +111,7 @@ describe("keyboard registry", () => {
       "Alt L",
       "Alt D",
       "Alt W",
+      "Alt S",
       "Alt 0",
     ]);
   });

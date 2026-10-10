@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import { BookIngestWorkshopTab } from "./tabs/BookIngestWorkshopTab";
+import { QuestMapTab } from "./tabs/QuestMapTab";
+import { PlayableStudioTab } from "./tabs/PlayableStudioTab";
 import { MicroWorldGalleryTab } from "./tabs/MicroWorldGalleryTab";
-import type { ParsedBookStructure } from "./engine/bookIngestParser";
+import type { ParsedBookStructure, ParsedQuestNode } from "./engine/bookIngestParser";
 import type { PacingPlan } from "./engine/pacingPlanner";
 
 export type TeachingTabId = "workshop" | "map" | "studio" | "labor";
@@ -20,6 +22,7 @@ export const TeachingStudio: React.FC<TeachingStudioProps> = ({
   onNavigateToTab,
 }) => {
   const [activeTab, setActiveTab] = useState<TeachingTabId>("workshop");
+  const [selectedQuest, setSelectedQuest] = useState<ParsedQuestNode | null>(null);
   const [activePlan, setActivePlan] = useState<{
     book: ParsedBookStructure;
     plan: PacingPlan;
@@ -104,49 +107,32 @@ export const TeachingStudio: React.FC<TeachingStudioProps> = ({
         )}
 
         {activeTab === "map" && (
-          <div className="border border-[var(--line)] p-8 text-center flex flex-col items-center gap-3 bg-[var(--paper-subtle)]">
-            <h3 className="text-sm font-bold font-mono">
-              {lang === "de" ? "Quest-Landkarte (Phase 4.2)" : "关卡探索图谱 (Phase 4.2 接入)"}
-            </h3>
-            <p className="text-xs text-[var(--ink-muted)] max-w-md font-mono leading-relaxed">
-              {activePlan
-                ? lang === "de"
-                  ? `Aktiver Plan: »${activePlan.book.title}« mit ${activePlan.plan.targetDays} Tagen und ${activePlan.book.totalNodes} Quests bereit für die Visualisierung.`
-                  : `已锁定研习计划：《${activePlan.book.title}》，共 ${activePlan.plan.targetDays} 天日程与 ${activePlan.book.totalNodes} 个闯关节点。`
-                : lang === "de"
-                ? "Zerlege zuerst ein Buch in der Zerlegungswerkstatt, um den visualisierten DAG-Pfad zu generieren."
-                : "请先在【书籍拆解与无痛节奏】工坊中解析一本教材，以生成带前置依赖的有向无环图路径。"}
-            </p>
-            <button
-              type="button"
-              onClick={() => setActiveTab("workshop")}
-              className="mt-2 text-xs font-mono px-3 py-1.5 border border-[var(--line)] bg-[var(--paper)] hover:border-[var(--ink)] cursor-pointer"
-            >
-              {lang === "de" ? "<- Zur Zerlegungswerkstatt" : "<- 返回拆解工坊"}
-            </button>
-          </div>
+          <QuestMapTab
+            book={activePlan?.book}
+            plan={activePlan?.plan}
+            currentFach={currentFach}
+            lang={lang}
+            onGoToWorkshop={() => setActiveTab("workshop")}
+            onStartTodayQuest={() => {
+              if (activePlan?.book.chapters[0]?.nodes[0]) {
+                setSelectedQuest(activePlan.book.chapters[0].nodes[0]);
+              }
+              setActiveTab("studio");
+            }}
+            onSelectQuest={(node) => {
+              setSelectedQuest(node);
+              setActiveTab("studio");
+            }}
+          />
         )}
 
         {activeTab === "studio" && (
-          <div className="border border-[var(--line)] p-8 text-center flex flex-col items-center gap-3 bg-[var(--paper-subtle)]">
-            <h3 className="text-sm font-bold font-mono">
-              {lang === "de" ? "Interaktives Studio & Sokratischer Tutor (Phase 4.2)" : "微课交互演播厅与伴学导师 (Phase 4.2)"}
-            </h3>
-            <p className="text-xs text-[var(--ink-muted)] max-w-md font-mono leading-relaxed">
-              {lang === "de"
-                ? "9-Stufen-Leitfaden, Study-Mate-Begleitung (Hier hakt es / Zu einfach / Teste mich) und dynamische Werkzeugeinbindung."
-                : "九步进阶微课向导、自适应调频伴学（这里没懂/太简单了/考考我）与 24 款高性能仿真沙盘即时联动。"}
-            </p>
-            {onNavigateToTab && (
-              <button
-                type="button"
-                onClick={() => onNavigateToTab("reise")}
-                className="mt-2 text-xs font-mono px-3 py-1.5 border border-[var(--line)] bg-[var(--paper)] hover:border-[var(--ink)] cursor-pointer"
-              >
-                {lang === "de" ? "Bestehende Lernreisen öffnen ->" : "前往现有微课库 ->"}
-              </button>
-            )}
-          </div>
+          <PlayableStudioTab
+            questNode={selectedQuest || (activePlan?.book.chapters[0]?.nodes[0] ?? null)}
+            currentFach={currentFach}
+            lang={lang}
+            onBackToMap={() => setActiveTab("map")}
+          />
         )}
 
         {activeTab === "labor" && (

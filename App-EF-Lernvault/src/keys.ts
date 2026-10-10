@@ -12,6 +12,7 @@ export type ModuleId =
   | "labor"
   | "designlab"
   | "werkzeuge"
+  | "studio"
   | "einstellungen";
 
 export type LearnModuleId = Exclude<ModuleId, "einstellungen">;
@@ -195,6 +196,14 @@ export const MODULE_KEYS: readonly ModuleKeyBinding[] = [
     label: { de: "Fach-Werkzeuge", zh: "学科教具" },
   },
   {
+    id: "module-studio",
+    module: "studio",
+    match: { key: "s", code: "KeyS", alt: true },
+    keys: "Alt S",
+    altHint: "Alt S",
+    label: { de: "Teaching-Studio", zh: "研习工坊" },
+  },
+  {
     id: "module-einstellungen",
     module: "einstellungen",
     match: { key: "0", code: "Digit0", alt: true },
@@ -370,6 +379,7 @@ export const PER_MODULE_KEYS: Readonly<Record<LearnModuleId, readonly KeyBinding
   labor: [],
   designlab: [],
   werkzeuge: [],
+  studio: [],
 };
 
 export const ONBOARDING_KEYS: readonly KeyBinding[] = [
