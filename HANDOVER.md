@@ -26,6 +26,23 @@
 
 ---
 
+- ✅ **Phase 4.1 重难点提炼引擎与 4 大通用纯 SVG Tufte 交互微世界套件落地（2026-10-10 交付）**：
+  - **第一性原理重难点提炼引擎 (`conceptDistiller.ts`)**：
+    - 面向 GeWi 与 MINT 全学科核心概念，自动化提炼：生活直觉比喻（Mental Model）、考纲标准术语（KLP Termini）、高频失分陷阱（Fehlerquellen）与 15 NP 会考标答金句；
+    - 内置联邦大选、罗尔斯正义论、宏观四角沙盘、基尼系数、康德义务论、功利主义、图尔敏论证、微积分切线、机械能守恒等领域知识库与通用启发式后备；
+    - 独立单测 `conceptDistiller.test.ts` 12/12 绿灯；
+  - **4 大通用纯 SVG Tufte 交互微世界组件 (`GenericMicroWorlds/`)**：
+    - ① `VariableSliderBox.tsx`：2D 坐标曲线与参数驱动因果链推演，支持灵敏度调节与实时微商；
+    - ② `DilemmaBalanceScale.tsx`：机械杠杆物理力矩解算，支持伦理道德权重对决与失衡判定；
+    - ③ `LogicBlockBuilder.tsx`：形式三段论三阶槽位推导，谬误检测器与 15 NP 作答量规；
+    - ④ `ScenarioDecisionTree.tsx`：多阶分支拓扑、活跃路径高亮与次生负面外部性评估；
+    - 独立单测 `GenericMicroWorlds.test.tsx` 16/16 绿灯；
+  - **微世界总台与展陈工坊 (`MicroWorldGalleryTab.tsx`)**：
+    - 将 4 款通用微世界与 24 款原生专业教具无缝贯通，集成进 `TeachingStudio.tsx`；
+  - **工程门禁全绿**：
+    - 全量 84 个测试套件、641 项测试 100% PASS，`modules.test.tsx` 零契约违规（零 Emoji、零阴影、零 italic）；
+    - `npx tsc -b` 0 报错；`python scripts/vault-check.py` 417 笔记 1942 词 PASS。
+
 - ✅ **Phase 4.0 商业级教学专区第一性原理拆书与无痛自适应节奏规划引擎落地（2026-10-10 交付）**：
   - **核心拆书解构与 DAG 前置依赖引擎 (`bookIngestParser.ts`)**：
     - 支持 Markdown 标题（# / ## / ###）、多级数字编号（1. / 1.1 / 1.2 / Kapitel）、缩进列表与纯文本大纲等多源输入鲁棒解析；

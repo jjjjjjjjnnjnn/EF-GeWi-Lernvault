@@ -111,4 +111,29 @@ tags: [EF, Meta, App, Philo, SoWi, Rawls, Wahlsystem, MacroView, Fehlerlog]
   - `cmd /c "npx tsc -b"` 0 报错；
   - `python scripts/vault-check.py` 417 笔记 1942 词 PASS。
 
+---
+
+## 6. Phase 4.1 核心成果交付：重难点提炼器与 4 大通用纯 SVG Tufte 交互微世界套件
+
+- **并行子 Agent 协同开发机制**：
+  - 启动 3 个独立高优先级专业子 Agent，分别攻坚重难点提炼引擎、滑块与天平教具、逻辑积木与情境决策树；
+  - 主 Agent 统筹模块规范、Tufte 纸墨约束、容器装配与全量自动化回归验证。
+- **重难点第一性原理提炼引擎 (`conceptDistiller.ts`)**：
+  - 支持提取直觉生活比喻（Mental Model）、考纲标准术语（KLP Termini）、高频失分陷阱（Fehlerquellen）与 15 NP 会考踩分金句；
+  - 覆盖 SoWi、Philosophie、Deutsch、Mathe、Physik 等重点考点知识库与通用回退算法；
+  - 单测 `conceptDistiller.test.ts` 12/12 绿灯。
+- **4 大通用交互微世界套件 (`GenericMicroWorlds/`)**：
+  - `VariableSliderBox.tsx`：2D 坐标曲线与参数驱动因果链推演；
+  - `DilemmaBalanceScale.tsx`：机械杠杆物理力矩解算与道德权重权衡；
+  - `LogicBlockBuilder.tsx`：形式三段论三阶槽位推导与谬误检测器；
+  - `ScenarioDecisionTree.tsx`：多阶分支拓扑、活跃路径高亮与次生影响评估；
+  - 单测 `GenericMicroWorlds.test.tsx` 16/16 绿灯。
+- **微世界总台与工程门禁回归**：
+  - 研发并挂载 `MicroWorldGalleryTab.tsx` 到 `TeachingStudio.tsx`；
+  - UI 契约门禁 `src/modules.test.tsx` 23/23 绿灯（零 Emoji、零阴影、零 italic）；
+  - 全量 84 个测试套件、641 项测试 100% PASS；
+  - `cmd /c "npx tsc -b"` 0 报错；
+  - `python scripts/vault-check.py` 417 笔记 1942 词 PASS。
+
+
 
