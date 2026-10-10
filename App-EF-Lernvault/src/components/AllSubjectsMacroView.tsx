@@ -363,6 +363,14 @@ export function AllSubjectsMacroView({
   // 模拟 AFB III 综合大题弹窗工作台
   const [simulatingTrack, setSimulatingTrack] = useState<CrossSubjectSynergyTrack | null>(null);
   const [scenarioDraft, setScenarioDraft] = useState<string>("");
+  const [dScores, setDScores] = useState<{ d1: number; d2: number; d3: number; d4: number; d5: number }>({
+    d1: 3,
+    d2: 3,
+    d3: 3,
+    d4: 3,
+    d5: 3,
+  });
+  const [patchCopied, setPatchCopied] = useState<boolean>(false);
 
   // 星盘画布平移与缩放
   const [pan, setPan] = useState<{ x: number; y: number }>({ x: 0, y: 0 });
@@ -580,7 +588,57 @@ export function AllSubjectsMacroView({
   const handleStartSzenario = (track: CrossSubjectSynergyTrack) => {
     setSimulatingTrack(track);
     setScenarioDraft("");
+    setDScores({ d1: 3, d2: 3, d3: 3, d4: 3, d5: 3 });
+    setPatchCopied(false);
     onStartSzenario?.(track);
+  };
+
+  const generateFehlerlogPatch = () => {
+    if (!simulatingTrack) return "";
+    const defects: string[] = [];
+    const corrections: string[] = [];
+
+    if (dScores.d1 < 3) {
+      defects.push(`[D1] Aufgabenbezug unvollständig (Operator ${simulatingTrack.operator} nur oberflächlich erfasst)`);
+      corrections.push(`[D1] Kriterienkatalog explizit voranstellen`);
+    }
+    if (dScores.d2 < 3) {
+      defects.push(`[D2] Kausallogik lückenhaft (Begründungskette zwischen Theorien nicht geschlossen)`);
+      corrections.push(`[D2] Kausalkette Ursache-Wirkung lückenlos gliedern`);
+    }
+    if (dScores.d3 < 3) {
+      defects.push(`[D3] Vernetzung isoliert (Disziplinen ${simulatingTrack.subjectIds.join("/")} unzureichend synthetisiert)`);
+      corrections.push(`[D3] Methodische Brücke als Bindeglied explizit formulieren`);
+    }
+    if (dScores.d4 < 3) {
+      defects.push(`[D4] Fachsprache unpräzise (Alltagsbegriffe statt KLP-Terminologie)`);
+      corrections.push(`[D4] Kernbegriffe aus Fachglossar verbindlich einbetten`);
+    }
+    if (dScores.d5 < 3) {
+      defects.push(`[D5] Urteil ohne Kriterium (Sach- und Werturteil vermischt)`);
+      corrections.push(`[D5] Dialektisches Fazit mit explizitem Wertmaßstab schließen`);
+    }
+
+    const fehler = defects.length > 0 ? defects.join("; ") : "Keine Defizite (15 NP Volle Punktzahl)";
+    const korrektur = corrections.length > 0 ? corrections.join("; ") : "Muster-Synthese beibehalten";
+    const today = new Date().toISOString().slice(0, 10);
+    const rep = new Date();
+    rep.setDate(rep.getDate() + 7);
+    const repeatDate = rep.toISOString().slice(0, 10);
+
+    return `| ${today} | ${simulatingTrack.titleDE} (AFB III ${simulatingTrack.operator}) | ${fehler} | ${korrektur} | ${repeatDate} |`;
+  };
+
+  const handleCopyFehlerlogPatch = () => {
+    const patch = generateFehlerlogPatch();
+    if (!patch) return;
+    try {
+      navigator.clipboard.writeText(patch);
+      setPatchCopied(true);
+    } catch {
+      // Fallback
+      setPatchCopied(true);
+    }
   };
 
   const handleOpenNote = (notePath: string) => {
@@ -1763,15 +1821,124 @@ export function AllSubjectsMacroView({
               />
             </div>
 
+            {/* D1–D5 会考自查打分台与 Fehlerlog 补丁机 */}
+            <div className="space-y-3 border-t border-[var(--line)] pt-3 text-xs">
+              <div className="flex items-center justify-between">
+                <div className="font-mono text-[10px] text-[var(--gray)] font-bold uppercase tracking-wider">
+                  {de ? "D1–D5 Selbstbewertungs-Raster & Notenpunkte:" : "D1–D5 会考五维自查打分量表:"}
+                </div>
+                <div
+                  className="font-mono text-xs font-bold px-2 py-0.5 rounded border border-[var(--line)] bg-[var(--paper-subtle)] text-[var(--ink)]"
+                  data-testid="total-np-score"
+                >
+                  {dScores.d1 + dScores.d2 + dScores.d3 + dScores.d4 + dScores.d5} / 15 NP
+                </div>
+              </div>
+
+              {/* D1-D5 5条打分滑条/等级 */}
+              <div className="grid grid-cols-1 sm:grid-cols-5 gap-2">
+                {[
+                  { key: "d1", labelDE: "D1 Aufgabenbezug", labelZH: "D1 审题与Operator", descDE: "Kriterien angelegt", descZH: "标准导向审题" },
+                  { key: "d2", labelDE: "D2 Kausallogik", labelZH: "D2 理论因果链", descDE: "Ursache-Wirkung", descZH: "逻辑闭环" },
+                  { key: "d3", labelDE: "D3 Synthese", labelZH: "D3 跨学科融通", descDE: "Disziplinen vernetzt", descZH: "学科机理联通" },
+                  { key: "d4", labelDE: "D4 Fachsprache", labelZH: "D4 术语精确度", descDE: "KLP-Termini exakt", descZH: "精准专业用词" },
+                  { key: "d5", labelDE: "D5 Urteilskraft", labelZH: "D5 独立评价闭环", descDE: "Kriterien-Fazit", descZH: "价值尺度与Fazit" },
+                ].map((item) => {
+                  const score = dScores[item.key as keyof typeof dScores];
+                  return (
+                    <div
+                      key={item.key}
+                      className="p-2 border border-[var(--line)] rounded bg-[var(--paper-subtle)] flex flex-col justify-between"
+                    >
+                      <div className="mb-1">
+                        <span className="font-mono text-[10px] font-bold block text-[var(--ink)] truncate">
+                          {de ? item.labelDE : item.labelZH}
+                        </span>
+                        <span className="text-[9px] text-[var(--gray)] block truncate">
+                          {de ? item.descDE : item.descZH}
+                        </span>
+                      </div>
+                      <div className="flex items-center gap-1 mt-1">
+                        {[0, 1, 2, 3].map((pt) => (
+                          <button
+                            key={pt}
+                            type="button"
+                            onClick={() =>
+                              setDScores((prev) => ({
+                                ...prev,
+                                [item.key]: pt,
+                              }))
+                            }
+                            data-testid={`score-btn-${item.key}-${pt}`}
+                            className={`flex-1 py-0.5 text-[10px] font-mono rounded border transition-colors ${
+                              score === pt
+                                ? "bg-[var(--ink)] text-[var(--surface)] border-[var(--ink)] font-bold"
+                                : "bg-[var(--surface)] text-[var(--gray)] border-[var(--line)] hover:border-[var(--ink)]"
+                            }`}
+                          >
+                            {pt}
+                          </button>
+                        ))}
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+
+              {/* 补丁预览与一键复制 */}
+              <div className="p-2.5 border border-[var(--line)] rounded bg-[var(--surface)] flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2">
+                <div className="flex-1 min-w-0">
+                  <div className="font-mono text-[10px] text-[var(--gray)] mb-0.5">
+                    {de ? "Fehlerlog.md Tabellenzeilen-Patch:" : "Fehlerlog.md 错题表补丁预览:"}
+                  </div>
+                  <div
+                    className="font-mono text-[10px] text-[var(--ink)] truncate select-all"
+                    data-testid="fehlerlog-patch-preview"
+                  >
+                    {generateFehlerlogPatch()}
+                  </div>
+                </div>
+                <button
+                  type="button"
+                  onClick={handleCopyFehlerlogPatch}
+                  data-testid="copy-fehlerlog-patch-btn"
+                  className="shrink-0 px-3 py-1 font-mono text-[11px] font-bold border border-[var(--ink)] bg-[var(--surface)] hover:bg-[var(--paper-subtle)] text-[var(--ink)] rounded cursor-pointer transition-colors flex items-center gap-1.5"
+                >
+                  <svg width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.8" aria-hidden="true">
+                    <rect x="5" y="5" width="8" height="8" rx="1" />
+                    <path d="M3 11V3h8" strokeLinecap="round" />
+                  </svg>
+                  <span>{patchCopied ? (de ? "Kopiert" : "已复制") : (de ? "Patch kopieren" : "复制 Fehlerlog 补丁")}</span>
+                </button>
+              </div>
+
+              {patchCopied && (
+                <div
+                  className="text-[10px] font-mono text-[var(--ink)] bg-[var(--paper-subtle)] border border-[var(--line)] p-1.5 rounded flex items-center gap-1.5"
+                  data-testid="patch-copied-notification"
+                >
+                  <svg width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                    <polyline points="3.5 8.5 6.5 11.5 12.5 4.5" />
+                  </svg>
+                  <span>
+                    {de
+                      ? "Fehlerlog-Zeile erfolgreich kopiert! Öffnen Sie 00_META oder Ihr Fach-Fehlerlog.md und fügen Sie die Zeile ein."
+                      : "错题补丁已复制到剪贴板！可直接粘贴沉淀至对应学科的 Klausur-Training/Fehlerlog.md。"}
+                  </span>
+                </div>
+              )}
+            </div>
+
             {/* 底部按钮 */}
             <div className="flex items-center justify-between border-t border-[var(--line)] pt-3 flex-wrap gap-2">
               <button
                 type="button"
-                onClick={() =>
+                onClick={() => {
                   setScenarioDraft(
                     de ? simulatingTrack.klausurSynthese15NP_DE : simulatingTrack.klausurSynthese15NP_ZH
-                  )
-                }
+                  );
+                  setDScores({ d1: 3, d2: 3, d3: 3, d4: 3, d5: 3 });
+                }}
                 className="px-2.5 py-1 text-xs font-mono border border-[var(--line)] rounded hover:bg-[var(--paper-subtle)] text-[var(--gray)] hover:text-[var(--ink)] cursor-pointer"
               >
                 {de ? "Muster übernehmen" : "填入示范话术"}

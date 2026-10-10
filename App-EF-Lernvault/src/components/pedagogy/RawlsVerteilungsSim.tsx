@@ -557,11 +557,11 @@ export function RawlsVerteilungsSim({
                 <span className="font-bold text-[var(--ink)]">
                   {results.maximinSatisfied
                     ? isZh
-                      ? "✓ 达成 Maximin 正义底线"
-                      : "✓ Maximin-Kriterium erfuellt"
+                      ? "达成 Maximin 正义底线"
+                      : "Maximin-Kriterium erfuellt"
                     : isZh
-                    ? "✕ 弱势群体陷入赤贫"
-                    : "✕ Verelendung der Schwaechsten"}
+                    ? "弱势群体陷入赤贫"
+                    : "Verelendung der Schwaechsten"}
                 </span>
                 <span>{isZh ? "弱者尊严与保底 (Maximin / Existenzschutz)" : "Wohlfahrt der Schwächsten →"}</span>
               </div>
@@ -946,11 +946,11 @@ export function RawlsVerteilungsSim({
                     <span className="text-xs font-mono font-bold">
                       {userPersona.netIncome >= results.existenzMinimumThreshold
                         ? isZh
-                          ? "✓ 尊严有保障"
-                          : "✓ Gesichert"
+                          ? "尊严有保障"
+                          : "Gesichert"
                         : isZh
-                        ? "✕ 跌破贫困线"
-                        : "✕ Verarmt"}
+                        ? "跌破贫困线"
+                        : "Verarmt"}
                     </span>
                   </div>
                 </div>
@@ -1116,7 +1116,7 @@ export function RawlsVerteilungsSim({
         {/* 卡片 3: CN-Methode */}
         <div className="p-3 bg-[var(--paper-subtle)] border border-[var(--line)] rounded-sm text-xs font-serif">
           <div className="font-mono text-[10px] uppercase text-[var(--muted)] mb-1">
-            03 / 🇨🇳 CN-Methode
+            03 / CN-Methode
           </div>
           <div className="font-bold text-[var(--ink)] mb-1">
             {isZh ? "博弈智慧：切蛋糕者最后拿" : "Kuchen-Teilen-Paradigma"}

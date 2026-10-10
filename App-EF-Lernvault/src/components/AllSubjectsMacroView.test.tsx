@@ -332,4 +332,54 @@ describe("AllSubjectsMacroView Component (所有学科宏观星图与跨学科�
     fireEvent.click(astrolabeBg);
     expect(handleDeselectNode).toHaveBeenCalledTimes(2);
   });
+
+  it("renders D1-D5 scoring radar, updates Notenpunkte, and generates Fehlerlog patch in AFB III modal", () => {
+    const writeTextSpy = vi.fn().mockResolvedValue(undefined);
+    Object.assign(navigator, {
+      clipboard: {
+        writeText: writeTextSpy,
+      },
+    });
+
+    render(
+      <AllSubjectsMacroView
+        lang="zh"
+        nodeLangMode="zh"
+        onSelectSubject={vi.fn()}
+        onSelectNode={vi.fn()}
+        masteredIds={new Set()}
+      />
+    );
+
+    // 切换至跨学科战役 Tab
+    fireEvent.click(screen.getByRole("button", { name: /跨学科融通战役/i }));
+
+    // 点击启动第一个战役的综合大题演练
+    const startSzenarioBtn = screen.getByTestId("start-szenario-btn-cluster_alienation_labor");
+    fireEvent.click(startSzenarioBtn);
+
+    // 弹窗可见
+    expect(screen.getByTestId("afb3-simulation-modal")).toBeInTheDocument();
+
+    // D1-D5 评分雷达展示
+    const scoreDisplay = screen.getByTestId("total-np-score");
+    expect(scoreDisplay).toHaveTextContent("15 / 15 NP");
+
+    // 降低 D4 (术语精确度) 评分为 1
+    const d4Btn1 = screen.getByTestId("score-btn-d4-1");
+    fireEvent.click(d4Btn1);
+    expect(scoreDisplay).toHaveTextContent("13 / 15 NP");
+
+    // 检查 Fehlerlog 补丁预览中包含 D4 诊断信息
+    const patchPreview = screen.getByTestId("fehlerlog-patch-preview");
+    expect(patchPreview.textContent).toContain("[D4] Fachsprache unpräzise");
+
+    // 点击复制 Fehlerlog 补丁
+    const copyPatchBtn = screen.getByTestId("copy-fehlerlog-patch-btn");
+    fireEvent.click(copyPatchBtn);
+
+    expect(writeTextSpy).toHaveBeenCalled();
+    expect(writeTextSpy.mock.calls[0][0]).toContain("[D4] Fachsprache unpräzise");
+    expect(screen.getByTestId("patch-copied-notification")).toBeInTheDocument();
+  });
 });
