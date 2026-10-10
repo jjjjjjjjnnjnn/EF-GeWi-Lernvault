@@ -25,6 +25,14 @@
 
 ---
 
+- ✅ **全量十科 361 篇课程 v5 教学法重构与引擎 A1–A3 加固交付（2026-10-10 交付）**：
+  - **内容线（360/361 篇 v5 升级）**：11 个 agent 并行（1 引擎 + 10 学科），覆盖 SoWi (51), Philo (30), Deutsch (31), Mathe (43), Physik (38), Chemie (37), Bio (38), Englisch (34), Musik (27), Sport (28)；全库机检 0 emoji、0 unicode 箭头、KERNSATZ 361/361、ERWARTUNGSHORIZONT 361/361；唯一披露例外 SoWi Sinus-Milieus 保持 v3 对比表结构；
+  - **引擎线 A1–A3 升级 (`App-EF-Lernvault`)**：
+    - **A1 (`Reise.tsx`)**：`ausprobieren` 动手题标准解析（Musterlösung）支持折叠显影，离线模式下自主对照答案；
+    - **A2 (`InteractiveLessonRunner.tsx`)**：Step 1 直觉站队温和门控（未选 A/B 时推进按钮置灰并提示，选后立即解锁底层机制，不扣减 XP）；
+    - **A3 (`InteractiveLessonRunner.tsx`)**：将 `markt-sim`、`kinematik`、`magisches-viereck`、`formula` 精确映射至真实领域仿真组件，彻底消除空壳滑块；
+  - **全量门禁全绿**：`python scripts/vault-check.py` 419 笔记 1942 词 361 课 PASS；90 套件 692 项单测全绿；tsc 0 报错；按学科拆分为 11 个独立 commit 规范合入。
+
 - ✅ **第一波次 5 门 Enterprise-v4 课程交付与双版本兼容闭环（2026-10-10 交付）**：
   - **首批 5 门全量合入**：`SoWi-Mietendeckel-und-Preisinterventionen-L1.md`、`Physik-Gleichmaessig-beschleunigte-Bewegung-L1.md`、`Deutsch-Schiller-Die-Raeuber-Figurenkonflikt-L1.md`、`Mathe-Integralrechnung-als-Flaecheninhaltsrechnung-L1.md`、`Philosophie-Utilitarismus-Bentham-Mill-L1.md` 全部通过审查并按单科独立 commit；
   - **版本共存与解析加固 (`src/reise.ts` & `Reise.tsx`)**：
