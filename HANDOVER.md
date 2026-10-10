@@ -25,6 +25,20 @@
 
 ---
 
+- ✅ **Phase 5.3 课程教学架构性重塑与四大分科黄金教学模板总纲（2026-10-10 交付）**：
+  - **核心痛点解决**：直面“课程内容稀碎、极差、学不会”的严重教学法硬伤，彻底破除假大白话套话（Pseudo-Feynman）、模板同义反复、虚假RPG空洞剧情与削足适履单一模式；
+  - **大厂教学法融通与落地**：深度融通 Anthropic（Motivating Failure -> Mental Model -> Sandbox -> Anti-Patterns）、Brilliant.org（POE 挑战先行）、OpenAI/DeepLearning.AI 实操实验室、Study-Mate（边做边学与搭载考纲笔记）及北威州高中 KLP 考纲（AFB I-III 与双轨评价）；
+  - **四大分科黄金教学模板 (`Templates/Kurs-Didaktik-Template.md`)**：
+    - **模板 A (社科 / SoWi)**: 制度博弈与因果闭环模型 (Dilemma-Incentive-Kausalkette)
+    - **模板 B (哲学 / Philosophie)**: 伦理法庭与第一性原理思辨模型 (Ethical-Crucible-Dialectic)
+    - **模板 C (文学语言 / Deutsch & Englisch)**: 文本解剖与时代修辞透镜模型 (Text-Anatomy-Rhetoric)
+    - **模板 D (理科 / MINT)**: POE 仿真探究与极值定理实验室 (Predict-Observe-Derive)
+  - **外部 AI 工业级生产总纲 (`00_META/EXTERNAL-AI-COURSE-PRODUCTION-PROMPT.md`)**：
+    - 外部 AI 一键发卷提示词 (Copy-Paste Master Prompt)，可直接粘贴至 Claude 3.7 / GPT-4o 批量产出课件；
+    - 互联网/GitHub 检索 SOP（指导外部 AI 定向调研 Anthropic 课程库、Study-Mate 结构、PhET 仿真器等）；
+    - 40 门全科核心课表生产缺口矩阵与全自动化质检验收红线清单；
+  - **自动化质检通过**：`python scripts/vault-check.py` 419 笔记 1942 词 356 课程 PASS；89 套件 686 项单测全绿；tsc 0 报错。
+
 - ✅ **Phase 5.2 Study-Mate 趣味教学法与 Step 1 直觉站队重构落地（2026-10-10 交付）**：
   - **核心诉求落地**：响应用户对“有趣、易懂、像 Study-Mate、搭载笔记”的教学法要求，直面外部评审指出的“假大白话套话、内容同义反复、框中框堆叠地狱与伪多邻国流”硬伤，对课程第一阶段实施教学法与交互信息架构深度重塑；
   - **Step 1 Intuitions-Check (直觉站队) 重构 (`InteractiveLessonRunner.tsx` & `conceptDistiller.ts`)**：

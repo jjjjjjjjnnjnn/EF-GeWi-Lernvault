@@ -29,6 +29,7 @@
 - [Aussen-AI-Qualitaets-Audit-und-Anti-Monotonie-Handbuch](Aussen-AI-Qualitaets-Audit-und-Anti-Monotonie-Handbuch.md) — **课件实质质量审查报告与去重深耕重塑手册（针对外部 AI 敷衍套模的根治案）**
 - [Aussen-AI-Simulations-Review-und-Bug-Audit](Aussen-AI-Simulations-Review-und-Bug-Audit.md) — **学生端全链路模拟审查与隐蔽 Bug 排查任务包（Simulation Walkthrough + Scoring + Bug Hunting，269 课分批）**
 - [TeachingStudio-Spezifikation](TEACHING-STUDIO-SPECIFICATION.md) — **TeachingStudio 教学工坊与多邻国上课河流全景架构规范（商业级拆书排程、4大通用SVG微世界、5步交互上课流与通关奖赏闭环全景规范，外部 AI 对接与扩展必读）**
+- [EXTERNAL-AI-COURSE-PRODUCTION-PROMPT](EXTERNAL-AI-COURSE-PRODUCTION-PROMPT.md) — **外部 AI 课程生产总纲与四大教学模板（Enterprise-v4 破局标准：对标 Anthropic/Brilliant/OpenAI/Study-Mate，五步闭环，四大分科教学模板与40门核心课表生产矩阵，彻底根治假大白话与内容稀碎）** · 模板：[Kurs-Didaktik-Template](../Templates/Kurs-Didaktik-Template.md)
 - [Plan-接手执行](Plan-接手执行.md) — 接手执行计划（任务状态/铁约束/优先级分层/A–D待办清单）
 - **考纲体系（Curriculum）** — [设计总纲](Curriculum/00-Design.md) · [官方源清单](Curriculum/01-Quellen.md)
   - 德国 NRW Oberstufe（EF–Q2，10 科）：[Deutsch](Curriculum/Deutschland/Deutsch-Oberstufe.md) · [Englisch](Curriculum/Deutschland/Englisch-Oberstufe.md) · [Philosophie](Curriculum/Deutschland/Philosophie-Oberstufe.md) · [SoWi](Curriculum/Deutschland/SoWi-Oberstufe.md) · [Musik](Curriculum/Deutschland/Musik-Oberstufe.md) · [Sport](Curriculum/Deutschland/Sport-Oberstufe.md) · [Mathe](Curriculum/Deutschland/Mathe-Oberstufe.md) · [Physik](Curriculum/Deutschland/Physik-Oberstufe.md) · [Chemie](Curriculum/Deutschland/Chemie-Oberstufe.md) · [Bio](Curriculum/Deutschland/Bio-Oberstufe.md)
@@ -296,6 +297,7 @@
 - [2026-10-10-phase-5-teaching-studio-refinements-and-curriculum-presets](Journal/2026-10-10-phase-5-teaching-studio-refinements-and-curriculum-presets.md) — **Phase 5 全量交付：TeachingStudio 体验进化与全科考纲预设扩充**：轻量3步自适应微课流+Faust与微分全真大纲预设+智能复习欠账平滑衰减+微世界容错吸附与直达推导+一键.md错题下载与内嵌审阅抽屉+3px刻度进度条与会话断点恢复+89套件681测试全绿
 - [2026-10-10-phase-5-1-curriculum-and-experiment-first-quest-architecture](Journal/2026-10-10-phase-5-1-curriculum-and-experiment-first-quest-architecture.md) — **Phase 5.1 教学与实验前置重塑：新知课程与互动实验前置于考场闯关**：解决刷题死板与缺乏知识感痛点+两段式关卡架构（阶段一新知精讲与动手微世界先行、阶段二考场排雷与15NP金句闯关）+89套件682单测/tsc/vault-check全绿
 - [2026-10-10-study-mate-pedagogy-and-embedded-wissensnotiz](Journal/2026-10-10-study-mate-pedagogy-and-embedded-wissensnotiz.md) — **Study-Mate 趣味教学法与常驻搭载考纲知识笔记落地**：融合角色战役剧情(Story Hook)+费曼大白话+辩证双轨(两副眼镜)+趣味历史轶事+三维自适应调频探针([Einfacher]/[Vertiefung]/[Check])+常驻搭载知识笔记抽屉([Notiz]与一键小抄复制)+89套件684单测/tsc/vault-check全绿
+- [2026-10-10-curriculum-pedagogy-rework-and-archetype-templates](Journal/2026-10-10-curriculum-pedagogy-rework-and-archetype-templates.md) — **课程教学架构性重塑与四大分科教学模板总纲**：根治“内容稀碎/假大白话/学不会”硬伤+对标Anthropic/Brilliant/OpenAI/Study-Mate+制定社科/哲学/文学/理科四大分科黄金教学模板+发布外部AI生产总纲与40门核心课表矩阵+89套件686单测/tsc/vault-check全绿
 - 约定：文件名 `YYYY-MM-DD-<thema>.md`，头部frontmatter（`fach`可空，`tags: [EF, Meta]`）。
 
 
