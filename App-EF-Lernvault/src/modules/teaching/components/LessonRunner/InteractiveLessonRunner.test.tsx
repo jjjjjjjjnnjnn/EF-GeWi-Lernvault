@@ -21,7 +21,7 @@ describe("InteractiveLessonRunner Component", () => {
     xp: 100,
   };
 
-  it("renders first step and header HUD with progress bar and combo indicator", () => {
+  it("renders first step as Phase 1 theory lecture with progress bar and continue button", () => {
     render(
       <InteractiveLessonRunner
         questNode={sampleQuest}
@@ -35,10 +35,12 @@ describe("InteractiveLessonRunner Component", () => {
 
     expect(screen.getByText(/Schritt 1:/i)).toBeInTheDocument();
     expect(screen.getByText("1 / 5")).toBeInTheDocument();
-    expect(screen.getByRole("button", { name: "Überprüfen" })).toBeInTheDocument();
+    expect(
+      screen.getByRole("button", { name: /Weiter zum Experiment/i })
+    ).toBeInTheDocument();
   });
 
-  it("checks answers, awards XP, and advances to next step", () => {
+  it("advances through Phase 1 (Lecture -> MicroWorld) to Phase 2 (Challenge)", () => {
     render(
       <InteractiveLessonRunner
         questNode={sampleQuest}
@@ -50,8 +52,29 @@ describe("InteractiveLessonRunner Component", () => {
       />
     );
 
-    // 选择第一项 (正确答案)
-    const options = screen.getAllByRole("button").filter((b) => b.textContent?.includes("●") || b.textContent?.includes("○"));
+    // 1. 在第 1 步 (新知精讲微课)，阅读后点击进入实验
+    const toExperimentBtn = screen.getByRole("button", {
+      name: /Weiter zum Experiment/i,
+    });
+    fireEvent.click(toExperimentBtn);
+
+    // 2. 进入第 2 步 (动手探究实验微世界)
+    expect(screen.getByText(/Schritt 2:/i)).toBeInTheDocument();
+    expect(screen.getByText("2 / 5")).toBeInTheDocument();
+
+    const toChallengeBtn = screen.getByRole("button", {
+      name: /Jetzt zur Challenge/i,
+    });
+    fireEvent.click(toChallengeBtn);
+
+    // 3. 进入第 3 步 (考场挑战第一关：核心机制对决)
+    expect(screen.getByText(/Schritt 3:/i)).toBeInTheDocument();
+    expect(screen.getByText("3 / 5")).toBeInTheDocument();
+
+    // 选择第一项 (正确选项)
+    const options = screen
+      .getAllByRole("button")
+      .filter((b) => b.textContent?.includes("●") || b.textContent?.includes("○"));
     expect(options.length).toBeGreaterThanOrEqual(2);
     fireEvent.click(options[0]);
 
@@ -62,13 +85,12 @@ describe("InteractiveLessonRunner Component", () => {
     // 应该显示正确反馈
     expect(screen.getAllByText(/Richtig!/i).length).toBeGreaterThan(0);
 
-    // 点击 Weiter
+    // 点击 Weiter 进入第 4 步
     const nextBtn = screen.getByRole("button", { name: /Weiter/i });
     fireEvent.click(nextBtn);
 
-    // 进入 Schritt 2
-    expect(screen.getByText(/Schritt 2:/i)).toBeInTheDocument();
-    expect(screen.getByText("2 / 5")).toBeInTheDocument();
+    expect(screen.getByText(/Schritt 4:/i)).toBeInTheDocument();
+    expect(screen.getByText("4 / 5")).toBeInTheDocument();
   });
 
   it("supports cancelling lesson and prompts confirmation dialog", () => {
@@ -98,7 +120,12 @@ describe("InteractiveLessonRunner Component", () => {
   it("resumes session progress from localStorage when present", () => {
     localStorage.setItem(
       "lernvault_session_q-1-1",
-      JSON.stringify({ stepIndex: 1, accumulatedXp: 45, comboCount: 2, mistakes: [] })
+      JSON.stringify({
+        stepIndex: 1,
+        accumulatedXp: 45,
+        comboCount: 2,
+        mistakes: [],
+      })
     );
 
     render(

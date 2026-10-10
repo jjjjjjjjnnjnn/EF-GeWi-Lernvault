@@ -1148,6 +1148,26 @@ export const QuestMapTab: React.FC<QuestMapTabProps> = ({
               </div>
             )}
 
+            {/* 关卡研习架构：新知精讲 -> 动手实验 -> 考场冲刺 */}
+            <div className="border border-[var(--line)] bg-[var(--paper-subtle)] p-2.5 text-xs font-mono flex flex-col gap-1.5">
+              <div className="font-bold text-[10px] uppercase text-[var(--ink-muted)]">
+                [ {lang === "de" ? "Didaktischer Ablauf" : "关卡研习流程架构"} ]
+              </div>
+              <div className="flex items-center gap-1.5 text-[11px] text-[var(--ink)] flex-wrap">
+                <span className="px-1.5 py-0.5 border border-[var(--ink)] bg-[var(--paper)] font-bold">
+                  1. {lang === "de" ? "Theorie & Konzept" : "新知精讲微课"}
+                </span>
+                <span className="text-[var(--ink-muted)]" aria-hidden="true">-&gt;</span>
+                <span className="px-1.5 py-0.5 border border-[var(--ink)] bg-[var(--paper)] font-bold">
+                  2. {lang === "de" ? "Labor-Experiment" : "动手实验微世界"}
+                </span>
+                <span className="text-[var(--ink-muted)]" aria-hidden="true">-&gt;</span>
+                <span className="px-1.5 py-0.5 border border-[var(--ink)] bg-[var(--paper)] font-bold">
+                  3. {lang === "de" ? "Klausur-Challenge" : "考场通关挑战"}
+                </span>
+              </div>
+            </div>
+
             <div className="flex items-center justify-end gap-2 border-t border-[var(--line)] pt-3 mt-1">
               <button
                 type="button"

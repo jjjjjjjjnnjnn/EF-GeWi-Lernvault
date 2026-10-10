@@ -294,6 +294,7 @@
 - [2026-10-10-phase-4-teaching-studio-and-duolingo-lesson-runner](Journal/2026-10-10-phase-4-teaching-studio-and-duolingo-lesson-runner.md) — **Phase 4全量交付：TeachingStudio商业级教学工坊、多邻国式关卡河流与全屏交互上课奖赏闭环**：多源教材自动拆解+DAG拓扑排程+4大通用SVG微世界+垂直关卡河流与里程碑宝箱+5步交互上课流+墨水印章与Fehlerlog补丁机+89套件676单测全绿
 - [2026-10-10-external-ai-evaluation-and-phase-5-architecture-refinements](Journal/2026-10-10-external-ai-evaluation-and-phase-5-architecture-refinements.md) — **外部 AI 架构评审吸收与 Phase 5 体验进化技术路线**：用户习惯循环与低摩擦错题归档+微世界宽容度与吸附兜底+主轴探索与温故双轨分离+自适应3步流+高可见度进度条与实体骨架感+智能重排断点恢复
 - [2026-10-10-phase-5-teaching-studio-refinements-and-curriculum-presets](Journal/2026-10-10-phase-5-teaching-studio-refinements-and-curriculum-presets.md) — **Phase 5 全量交付：TeachingStudio 体验进化与全科考纲预设扩充**：轻量3步自适应微课流+Faust与微分全真大纲预设+智能复习欠账平滑衰减+微世界容错吸附与直达推导+一键.md错题下载与内嵌审阅抽屉+3px刻度进度条与会话断点恢复+89套件681测试全绿
+- [2026-10-10-phase-5-1-curriculum-and-experiment-first-quest-architecture](Journal/2026-10-10-phase-5-1-curriculum-and-experiment-first-quest-architecture.md) — **Phase 5.1 教学与实验前置重塑：新知课程与互动实验前置于考场闯关**：解决刷题死板与缺乏知识感痛点+两段式关卡架构（阶段一新知精讲与动手微世界先行、阶段二考场排雷与15NP金句闯关）+89套件682单测/tsc/vault-check全绿
 - 约定：文件名 `YYYY-MM-DD-<thema>.md`，头部frontmatter（`fach`可空，`tags: [EF, Meta]`）。
 
 

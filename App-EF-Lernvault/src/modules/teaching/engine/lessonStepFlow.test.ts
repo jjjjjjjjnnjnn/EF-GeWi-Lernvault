@@ -20,19 +20,38 @@ describe("Duolingo-style Lesson Step Flow Compiler", () => {
     xp: 100,
   };
 
-  it("compiles a quest into exactly 5 progressive Duolingo-style steps", () => {
+  it("compiles a quest into exactly 5 progressive steps with Phase 1 Lecture & Lab first", () => {
     const result = compileLessonSteps(sampleQuest, "SoWi");
     expect(result.steps.length).toBe(5);
 
     const types = result.steps.map((s) => s.type);
-    expect(types).toEqual(["intuition", "concept", "microworld", "trap", "quiz"]);
+    expect(types).toEqual(["lecture", "microworld", "concept", "trap", "quiz"]);
+
+    // 验证阶段架构：前两步为研习与实验，后三步为考场挑战
+    expect(result.steps[0].phase).toBe("learn");
+    expect(result.steps[1].phase).toBe("learn");
+    expect(result.steps[2].phase).toBe("challenge");
+    expect(result.steps[3].phase).toBe("challenge");
+    expect(result.steps[4].phase).toBe("challenge");
   });
 
-  it("provides options with exactly one correct answer for multiple-choice steps", () => {
+  it("embeds comprehensive lecture payload in step 1", () => {
     const result = compileLessonSteps(sampleQuest, "SoWi");
-    const choiceSteps = result.steps.filter((s) => s.type !== "microworld");
+    const lectureStep = result.steps[0];
 
-    for (const step of choiceSteps) {
+    expect(lectureStep.type).toBe("lecture");
+    expect(lectureStep.lecturePayload).toBeDefined();
+    expect(lectureStep.lecturePayload?.hookDE).toBeDefined();
+    expect(lectureStep.lecturePayload?.klpTermini.length).toBeGreaterThan(0);
+    expect(lectureStep.lecturePayload?.causalChainDE.length).toBe(4);
+    expect(lectureStep.lecturePayload?.socraticPromptDE).toBeDefined();
+  });
+
+  it("provides options with exactly one correct answer for challenge steps", () => {
+    const result = compileLessonSteps(sampleQuest, "SoWi");
+    const challengeSteps = result.steps.filter((s) => s.phase === "challenge");
+
+    for (const step of challengeSteps) {
       expect(step.options).toBeDefined();
       expect(step.options!.length).toBeGreaterThanOrEqual(2);
       const correctOpts = step.options!.filter((o) => o.isCorrect);
@@ -55,13 +74,15 @@ describe("Duolingo-style Lesson Step Flow Compiler", () => {
     expect(totalXp).toBeGreaterThanOrEqual(120);
   });
 
-  it("compiles into a lightweight 3-step flow when concept_light mode is active", () => {
+  it("compiles into a lightweight 3-step flow with lecture first in concept_light mode", () => {
     const lightResult = compileLessonSteps(sampleQuest, "SoWi", "concept_light");
     expect(lightResult.flowMode).toBe("concept_light");
     expect(lightResult.steps.length).toBe(3);
 
     const types = lightResult.steps.map((s) => s.type);
-    expect(types).toEqual(["intuition", "concept", "quiz"]);
+    expect(types).toEqual(["lecture", "concept", "quiz"]);
+    expect(lightResult.steps[0].type).toBe("lecture");
+    expect(lightResult.steps[0].phase).toBe("learn");
     expect(lightResult.steps[2].stepNumber).toBe(3);
     expect(lightResult.steps[2].xpReward).toBe(45);
   });

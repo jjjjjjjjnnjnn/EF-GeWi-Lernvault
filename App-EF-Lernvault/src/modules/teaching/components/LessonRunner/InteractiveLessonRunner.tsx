@@ -1,6 +1,10 @@
 import React, { useState, useMemo, useEffect } from "react";
 import type { ParsedQuestNode } from "../../engine/bookIngestParser";
-import { compileLessonSteps, type LessonStep, type LessonOption } from "../../engine/lessonStepFlow";
+import {
+  compileLessonSteps,
+  type LessonStep,
+  type LessonOption,
+} from "../../engine/lessonStepFlow";
 import { VictoryRewardScreen } from "./VictoryRewardScreen";
 import {
   VariableSliderBox,
@@ -32,7 +36,7 @@ export const InteractiveLessonRunner: React.FC<InteractiveLessonRunnerProps> = (
 }) => {
   const effectiveFach = currentFach || fach || "SoWi";
 
-  // 编译生成 5 个多邻国式课步
+  // 编译生成前置新知课+动手实验+后置考场挑战的递进课步
   const { distilled, steps } = useMemo(() => {
     return compileLessonSteps(questNode, effectiveFach);
   }, [questNode, effectiveFach]);
@@ -45,7 +49,10 @@ export const InteractiveLessonRunner: React.FC<InteractiveLessonRunnerProps> = (
         const raw = window.localStorage.getItem(sessionKey);
         if (raw) {
           const parsed = JSON.parse(raw);
-          if (typeof parsed.stepIndex === "number" && parsed.stepIndex < steps.length) {
+          if (
+            typeof parsed.stepIndex === "number" &&
+            parsed.stepIndex < steps.length
+          ) {
             return parsed.stepIndex;
           }
         }
@@ -118,7 +125,14 @@ export const InteractiveLessonRunner: React.FC<InteractiveLessonRunnerProps> = (
         // ignore
       }
     }
-  }, [currentStepIndex, comboCount, accumulatedXp, mistakes, isFinished, sessionKey]);
+  }, [
+    currentStepIndex,
+    comboCount,
+    accumulatedXp,
+    mistakes,
+    isFinished,
+    sessionKey,
+  ]);
 
   const currentStep: LessonStep = steps[currentStepIndex] || steps[0];
   const progressPercent = Math.round((currentStepIndex / steps.length) * 100);
@@ -129,22 +143,49 @@ export const InteractiveLessonRunner: React.FC<InteractiveLessonRunnerProps> = (
     setSelectedOptionId(option.id);
   };
 
-  const handleCheckAnswer = () => {
-    if (!selectedOptionId && currentStep.type !== "microworld") return;
+  // Phase 1 Step 1: 新知精讲微课学习完毕，推进到 Step 2 动手实验
+  const handleAdvanceLecture = () => {
+    setAccumulatedXp((prev) => prev + currentStep.xpReward);
+    if (currentStepIndex + 1 < steps.length) {
+      setCurrentStepIndex((prev) => prev + 1);
+      setSelectedOptionId(null);
+      setIsAnswerChecked(false);
+      setIsCorrect(false);
+      setActiveFeedback(null);
+    } else {
+      setIsFinished(true);
+      onComplete(questNode.id, accumulatedXp + currentStep.xpReward, mistakes);
+    }
+  };
 
-    if (currentStep.type === "microworld") {
-      // 微世界挑战：完成即判定为满分
-      setIsCorrect(true);
-      setIsAnswerChecked(true);
-      setComboCount((prev) => prev + 1);
-      setAccumulatedXp((prev) => prev + currentStep.xpReward);
-      setActiveFeedback(
-        lang === "de"
-          ? "Hervorragend experimentiert! Das Wirkungsprinzip wurde praktisch verinnerlicht."
-          : "非常棒的探索实践！你已在可动微世界中验证了底层机理。"
-      );
+  // Phase 1 Step 2: 动手探究实验完成，进入 Phase 2 考场挑战
+  const handleAdvanceMicroWorld = () => {
+    setComboCount((prev) => Math.max(1, prev + 1));
+    setAccumulatedXp((prev) => prev + currentStep.xpReward);
+    if (currentStepIndex + 1 < steps.length) {
+      setCurrentStepIndex((prev) => prev + 1);
+      setSelectedOptionId(null);
+      setIsAnswerChecked(false);
+      setIsCorrect(false);
+      setActiveFeedback(null);
+    } else {
+      setIsFinished(true);
+      onComplete(questNode.id, accumulatedXp + currentStep.xpReward, mistakes);
+    }
+  };
+
+  // Phase 2: 挑战答题核验
+  const handleCheckAnswer = () => {
+    if (currentStep.type === "lecture") {
+      handleAdvanceLecture();
       return;
     }
+    if (currentStep.type === "microworld") {
+      handleAdvanceMicroWorld();
+      return;
+    }
+
+    if (!selectedOptionId) return;
 
     const selectedOpt = currentStep.options?.find((o) => o.id === selectedOptionId);
     if (!selectedOpt) return;
@@ -154,11 +195,16 @@ export const InteractiveLessonRunner: React.FC<InteractiveLessonRunnerProps> = (
       setIsCorrect(true);
       setComboCount((prev) => prev + 1);
       setAccumulatedXp((prev) => prev + currentStep.xpReward);
-      setActiveFeedback(lang === "de" ? selectedOpt.explanationDE : selectedOpt.explanationZH);
+      setActiveFeedback(
+        lang === "de" ? selectedOpt.explanationDE : selectedOpt.explanationZH
+      );
     } else {
       setIsCorrect(false);
       setComboCount(0); // 连击中断
-      setMistakes((prev) => [...prev, `${currentStep.titleDE}: ${selectedOpt.textDE}`]);
+      setMistakes((prev) => [
+        ...prev,
+        `${currentStep.titleDE}: ${selectedOpt.textDE}`,
+      ]);
       // 苏格拉底降维点拨
       const hint =
         lang === "de"
@@ -251,14 +297,34 @@ export const InteractiveLessonRunner: React.FC<InteractiveLessonRunnerProps> = (
           className="p-1 border border-[var(--line)] hover:border-[var(--ink)] text-xs font-mono transition-colors cursor-pointer"
           title={lang === "de" ? "Lektion beenden" : "退出本次课程"}
         >
-          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true">
+          <svg
+            width="16"
+            height="16"
+            viewBox="0 0 16 16"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="1.5"
+            aria-hidden="true"
+            style={{ transformOrigin: "8px 8px", transformBox: "view-box" }}
+          >
             <path d="M4 4l8 8M12 4l-8 8" />
           </svg>
         </button>
 
-        {/* 增强型 3px 几何阶段刻度进度条 (Step Ticks) */}
+        {/* 增强型几何阶段刻度进度条 (Step Ticks) 与阶段徽章 */}
         <div className="flex-1 max-w-xl mx-auto flex flex-col gap-1">
           <div className="flex items-center gap-3">
+            {/* 阶段指示胶囊 */}
+            <span className="font-mono text-[9px] uppercase tracking-wider px-1.5 py-0.5 border border-[var(--ink)] bg-[var(--paper-subtle)] font-bold shrink-0">
+              {currentStep.phase === "learn"
+                ? lang === "de"
+                  ? "Phase 1: Wissen & Labor"
+                  : "第一阶段：新知与实验"
+                : lang === "de"
+                ? "Phase 2: Klausur-Challenge"
+                : "第二阶段：考场通关"}
+            </span>
+
             <div className="flex-1 h-2 bg-[var(--paper-subtle)] border border-[var(--line)] overflow-hidden relative">
               <div
                 className="h-full bg-[var(--ink)] transition-all duration-300 ease-out"
@@ -269,12 +335,14 @@ export const InteractiveLessonRunner: React.FC<InteractiveLessonRunnerProps> = (
               {currentStepIndex + 1} / {steps.length}
             </span>
           </div>
+
           {/* 阶段刻度断点微指示器 */}
           <div className="flex justify-between px-0.5">
-            {steps.map((_, sIdx) => (
+            {steps.map((s, sIdx) => (
               <span
                 key={sIdx}
-                className={`inline-block w-1.5 h-1 border transition-colors ${
+                title={`${s.phase}: ${s.titleDE}`}
+                className={`inline-block w-2 h-1 border transition-colors ${
                   sIdx <= currentStepIndex
                     ? "bg-[var(--ink)] border-[var(--ink)]"
                     : "bg-[var(--paper-subtle)] border-[var(--line)]"
@@ -287,7 +355,7 @@ export const InteractiveLessonRunner: React.FC<InteractiveLessonRunnerProps> = (
         {/* Combo 连击与即时 XP 计数 */}
         <div className="flex items-center gap-3 font-mono text-xs">
           {comboCount > 1 && (
-            <span className="px-2 py-0.5 border border-[var(--ink)] bg-[var(--paper-subtle)] text-[var(--ink)] font-bold animate-pulse">
+            <span className="px-2 py-0.5 border border-[var(--ink)] bg-[var(--paper-subtle)] text-[var(--ink)] font-bold">
               Combo x{comboCount}
             </span>
           )}
@@ -298,138 +366,355 @@ export const InteractiveLessonRunner: React.FC<InteractiveLessonRunnerProps> = (
       </header>
 
       {/* 中间核心交互卡片工作区 */}
-      <main className="flex-1 overflow-y-auto px-4 sm:px-8 py-6 max-w-2xl mx-auto w-full flex flex-col justify-center">
+      <main className="flex-1 overflow-y-auto px-4 sm:px-8 py-6 max-w-2xl mx-auto w-full flex flex-col justify-start">
         <div className="border border-[var(--line)] p-5 sm:p-7 bg-[var(--paper)]">
-          {/* 步骤类别徽章 */}
+          {/* 步骤类别徽章与阶段说明 */}
           <div className="flex items-center justify-between mb-3 border-b border-[var(--line)] pb-2">
-            <span className="font-mono text-xs uppercase tracking-wider text-[var(--ink-muted)] font-semibold">
-              {lang === "de" ? currentStep.titleDE : currentStep.titleZH}
-            </span>
+            <div className="flex items-center gap-2">
+              <span className="font-mono text-[10px] uppercase tracking-wider px-1.5 py-0.5 bg-[var(--ink)] text-[var(--paper)] font-bold">
+                {currentStep.phase === "learn"
+                  ? currentStep.type === "lecture"
+                    ? lang === "de"
+                      ? "Theorie-Vorlesung"
+                      : "新知精讲"
+                    : lang === "de"
+                    ? "Mikrowelt-Labor"
+                    : "动手实验"
+                  : lang === "de"
+                  ? "Klausur-Prüfung"
+                  : "考场实测"}
+              </span>
+              <span className="font-mono text-xs uppercase tracking-wider text-[var(--ink-muted)] font-semibold">
+                {lang === "de" ? currentStep.titleDE : currentStep.titleZH}
+              </span>
+            </div>
             <span className="font-mono text-xs border border-[var(--line)] px-1.5 py-0.5 bg-[var(--paper-subtle)]">
               +{currentStep.xpReward} XP
             </span>
           </div>
 
-          {/* 核心问题引导语 */}
+          {/* 核心标题引导语 */}
           <h3 className="text-base sm:text-lg font-bold mb-4 tracking-tight leading-snug">
             {lang === "de" ? currentStep.promptDE : currentStep.promptZH}
           </h3>
 
-          {/* 若为微世界动手挑战 */}
-          {currentStep.type === "microworld" ? (
-            <div className="flex flex-col gap-4">
-              <div className="p-3 border border-[var(--line)] bg-[var(--paper-subtle)] text-xs font-mono leading-relaxed">
+          {/* 1. 若为第一阶段：新知精讲微课 (Phase 1 Lecture) */}
+          {currentStep.type === "lecture" && currentStep.lecturePayload && (
+            <div className="flex flex-col gap-4 text-xs leading-relaxed">
+              {/* 生活心智模型与现象引言 (Alltagsphänomen & Hook) */}
+              <div className="border-l-2 border-[var(--ink)] bg-[var(--paper-subtle)] p-3.5">
+                <div className="font-mono text-[10px] uppercase font-bold text-[var(--ink-muted)] mb-1">
+                  [ {lang === "de" ? "Denkmodell & Phänomen" : "生活心智模型与现象直觉"} ]
+                </div>
+                <div className="font-bold text-sm mb-1 text-[var(--ink)]">
+                  {currentStep.lecturePayload.analogyTitle}
+                </div>
+                <p className="text-[var(--ink)]">
+                  {lang === "de"
+                    ? currentStep.lecturePayload.analogyExplanationDE
+                    : currentStep.lecturePayload.analogyExplanationZH}
+                </p>
+              </div>
+
+              {/* 考纲核心专业术语矩阵卡片 (KLP-Fachbegriffe) */}
+              <div className="border border-[var(--line)] p-3.5 bg-[var(--paper)]">
+                <div className="font-mono text-[10px] uppercase font-bold text-[var(--ink-muted)] mb-2">
+                  [ {lang === "de" ? "KLP-Fachbegriffe & Definitionen" : "考纲核心专业术语与规范定义"} ]
+                </div>
+                <div className="flex flex-col gap-2.5">
+                  {currentStep.lecturePayload.klpTermini.map((term, tIdx) => (
+                    <div
+                      key={tIdx}
+                      className="border border-[var(--line)] p-2.5 bg-[var(--paper-subtle)]"
+                    >
+                      <div className="flex items-center justify-between mb-1">
+                        <span className="font-bold text-xs">
+                          {term.termDE}
+                        </span>
+                        <span className="font-mono text-[10px] text-[var(--ink-muted)]">
+                          {term.termZH}
+                        </span>
+                      </div>
+                      <p className="text-[11px] text-[var(--ink)] leading-snug">
+                        {lang === "de" ? term.definitionDE : term.definitionZH}
+                      </p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* 底层因果运行链推演 (Kausalkette) */}
+              <div className="border border-[var(--line)] p-3.5 bg-[var(--paper)]">
+                <div className="font-mono text-[10px] uppercase font-bold text-[var(--ink-muted)] mb-2">
+                  [ {lang === "de" ? "Kausalkette & Mechanismus" : "底层因果运行机制推演链"} ]
+                </div>
+                <div className="flex flex-col gap-1.5 font-mono text-[11px]">
+                  {(lang === "de"
+                    ? currentStep.lecturePayload.causalChainDE
+                    : currentStep.lecturePayload.causalChainZH
+                  ).map((stepText, idx) => (
+                    <div key={idx} className="flex items-start gap-2">
+                      <span className="px-1 border border-[var(--line)] bg-[var(--paper-subtle)] text-[10px] font-bold shrink-0">
+                        {idx + 1}
+                      </span>
+                      <span className="flex-1 text-[var(--ink)]">
+                        {stepText}
+                      </span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* 苏格拉底导学引思 (Sokratischer Denkanstoß) */}
+              <div className="border border-dashed border-[var(--ink)] p-3 bg-[var(--paper-subtle)] font-mono text-xs">
                 <span className="font-bold">
-                  {lang === "de" ? "Interaktionsziel: " : "操作目标："}
+                  {lang === "de" ? "Sokratische Leitfrage: " : "实验探索思考指引："}
                 </span>
                 <span>
                   {lang === "de"
-                    ? currentStep.microWorldPayload?.missionPromptDE
-                    : currentStep.microWorldPayload?.missionPromptZH}
+                    ? currentStep.lecturePayload.socraticPromptDE
+                    : currentStep.lecturePayload.socraticPromptZH}
                 </span>
               </div>
+            </div>
+          )}
+
+          {/* 2. 若为第一阶段：动手探究实验微世界 (Phase 1 MicroWorld) */}
+          {currentStep.type === "microworld" && (
+            <div className="flex flex-col gap-4">
+              {/* 实验任务指南 */}
+              <div className="p-3 border border-[var(--line)] bg-[var(--paper-subtle)] text-xs font-mono leading-relaxed">
+                <div className="font-bold text-[var(--ink)] mb-0.5">
+                  [ {lang === "de" ? "Forschungsauftrag & Entdeckungsaufgabe" : "实验探究任务与操作指引"} ]
+                </div>
+                <div className="text-[var(--ink)]">
+                  {lang === "de"
+                    ? currentStep.microWorldPayload?.missionPromptDE
+                    : currentStep.microWorldPayload?.missionPromptZH}
+                </div>
+                <div className="text-[10px] text-[var(--ink-muted)] mt-1">
+                  {lang === "de" ? "Zielkriterium: " : "达成指标："}
+                  {lang === "de"
+                    ? currentStep.microWorldPayload?.targetCriteriaDE
+                    : currentStep.microWorldPayload?.targetCriteriaZH}
+                </div>
+              </div>
+
+              {/* 活体仿真教具画布 */}
               <div className="border border-[var(--line)] p-3 bg-[var(--paper)]">
                 {renderEmbeddedMicroWorld()}
               </div>
-            </div>
-          ) : (
-            /* 若为选择题 / 填空配对题 */
-            <div className="flex flex-col gap-2.5">
-              {currentStep.options?.map((opt) => {
-                const isSelected = selectedOptionId === opt.id;
-                let optionStyle = "border-[var(--line)] bg-[var(--paper)] hover:border-[var(--ink)]";
 
-                if (isAnswerChecked) {
-                  if (opt.isCorrect) {
-                    optionStyle = "border-[var(--ink)] bg-[var(--paper-subtle)] ring-1 ring-[var(--ink)] font-semibold";
-                  } else if (isSelected && !opt.isCorrect) {
-                    optionStyle = "border-dashed border-[var(--ink)] bg-[var(--paper-subtle)] opacity-70";
-                  }
-                } else if (isSelected) {
-                  optionStyle = "border-[var(--ink)] bg-[var(--paper-subtle)] ring-1 ring-[var(--ink)]";
-                }
-
-                return (
-                  <button
-                    key={opt.id}
-                    type="button"
-                    disabled={isAnswerChecked}
-                    onClick={() => handleSelectOption(opt)}
-                    className={`p-3.5 border text-left text-xs leading-relaxed transition-all cursor-pointer flex items-start gap-2.5 active:translate-y-[1px] ${optionStyle}`}
-                  >
-                    <span className="font-mono text-[10px] border border-[var(--line)] px-1.5 py-0.5 mt-0.5 shrink-0">
-                      {isSelected ? "●" : "○"}
-                    </span>
-                    <span className="flex-1">
-                      {lang === "de" ? opt.textDE : opt.textZH}
-                    </span>
-                  </button>
-                );
-              })}
+              {/* 实验规律备忘录 */}
+              {currentStep.microWorldPayload?.learningTakeawayDE && (
+                <div className="p-2.5 border border-[var(--line)] bg-[var(--paper-subtle)] text-[11px] font-mono leading-relaxed">
+                  <span className="font-bold">
+                    {lang === "de" ? "Labor-Notiz: " : "实验规律备忘："}
+                  </span>
+                  <span>
+                    {lang === "de"
+                      ? currentStep.microWorldPayload.learningTakeawayDE
+                      : currentStep.microWorldPayload.learningTakeawayZH}
+                  </span>
+                </div>
+              )}
             </div>
           )}
+
+          {/* 3. 若为第二阶段：考场闯关与达标实测 (Phase 2 Challenge Cards) */}
+          {currentStep.type !== "lecture" &&
+            currentStep.type !== "microworld" && (
+              <div className="flex flex-col gap-2.5">
+                {currentStep.options?.map((opt) => {
+                  const isSelected = selectedOptionId === opt.id;
+                  let optionStyle =
+                    "border-[var(--line)] bg-[var(--paper)] hover:border-[var(--ink)]";
+
+                  if (isAnswerChecked) {
+                    if (opt.isCorrect) {
+                      optionStyle =
+                        "border-[var(--ink)] bg-[var(--paper-subtle)] ring-1 ring-[var(--ink)] font-semibold";
+                    } else if (isSelected && !opt.isCorrect) {
+                      optionStyle =
+                        "border-dashed border-[var(--ink)] bg-[var(--paper-subtle)] opacity-70";
+                    }
+                  } else if (isSelected) {
+                    optionStyle =
+                      "border-[var(--ink)] bg-[var(--paper-subtle)] ring-1 ring-[var(--ink)]";
+                  }
+
+                  return (
+                    <button
+                      key={opt.id}
+                      type="button"
+                      disabled={isAnswerChecked}
+                      onClick={() => handleSelectOption(opt)}
+                      className={`p-3.5 border text-left text-xs leading-relaxed transition-all cursor-pointer flex items-start gap-2.5 active:translate-y-[1px] ${optionStyle}`}
+                    >
+                      <span className="font-mono text-[10px] border border-[var(--line)] px-1.5 py-0.5 mt-0.5 shrink-0">
+                        {isSelected ? "●" : "○"}
+                      </span>
+                      <span className="flex-1">
+                        {lang === "de" ? opt.textDE : opt.textZH}
+                      </span>
+                    </button>
+                  );
+                })}
+              </div>
+            )}
         </div>
       </main>
 
-      {/* 底部多邻国即时正向反馈栏 */}
+      {/* 底部即时操作与反馈栏 */}
       <footer className="border-t border-[var(--line)] p-4 sm:px-8 bg-[var(--paper)]">
         <div className="max-w-2xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-3">
           {/* 即时反馈文本 */}
           <div className="text-xs font-mono flex-1">
-            {isAnswerChecked && activeFeedback && (
-              <div className="flex items-start gap-2 animate-fadeIn">
-                <span className="font-bold shrink-0 flex items-center gap-1">
-                  {isCorrect ? (
-                    <>
-                      <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true" className="inline">
-                        <path d="M3.5 8.5l3 3 6-7" />
-                      </svg>
-                      <span>{lang === "de" ? "Richtig! " : "正确！"}</span>
-                    </>
-                  ) : (
-                    <>
-                      <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true" className="inline">
-                        <path d="M4 4l8 8M12 4l-8 8" />
-                      </svg>
-                      <span>{lang === "de" ? "Noch nicht ganz: " : "暂未命中: "}</span>
-                    </>
-                  )}
-                </span>
-                <span className="leading-relaxed text-[var(--ink)]">
-                  {activeFeedback}
-                </span>
-              </div>
-            )}
-            {!isAnswerChecked && (
+            {/* 新知精讲微课底部提示 */}
+            {currentStep.type === "lecture" && (
               <span className="text-[var(--ink-muted)]">
-                {currentStep.type === "microworld"
-                  ? lang === "de" ? "Bediene die Parameter oben und klicke auf Überprüfen." : "动手操作上方教具，完成后点击核验。"
-                  : lang === "de" ? "Wähle eine Option aus und klicke auf Überprüfen." : "选择一个选项，点击核验答案。"}
+                {lang === "de"
+                  ? "Lies das Konzept aufmerksam durch und gehe zum interaktiven Experiment."
+                  : "掌握上述考纲新知与因果机理，准备进入下一步动手实验。"}
               </span>
             )}
+
+            {/* 动手实验底部提示 */}
+            {currentStep.type === "microworld" && (
+              <span className="text-[var(--ink-muted)]">
+                {lang === "de"
+                  ? "Bediene die Parameter oben, um die Systemeffekte praktisch zu erfahren."
+                  : "在上方教具中动手操作，观察因果反应，随后进入考场挑战。"}
+              </span>
+            )}
+
+            {/* 答题阶段即时反馈 */}
+            {currentStep.type !== "lecture" &&
+              currentStep.type !== "microworld" && (
+                <>
+                  {isAnswerChecked && activeFeedback && (
+                    <div className="flex items-start gap-2">
+                      <span className="font-bold shrink-0 flex items-center gap-1">
+                        {isCorrect ? (
+                          <>
+                            <svg
+                              width="14"
+                              height="14"
+                              viewBox="0 0 16 16"
+                              fill="none"
+                              stroke="currentColor"
+                              strokeWidth="2"
+                              aria-hidden="true"
+                              className="inline"
+                              style={{
+                                transformOrigin: "8px 8px",
+                                transformBox: "view-box",
+                              }}
+                            >
+                              <path d="M3.5 8.5l3 3 6-7" />
+                            </svg>
+                            <span>{lang === "de" ? "Richtig! " : "正确！"}</span>
+                          </>
+                        ) : (
+                          <>
+                            <svg
+                              width="14"
+                              height="14"
+                              viewBox="0 0 16 16"
+                              fill="none"
+                              stroke="currentColor"
+                              strokeWidth="2"
+                              aria-hidden="true"
+                              className="inline"
+                              style={{
+                                transformOrigin: "8px 8px",
+                                transformBox: "view-box",
+                              }}
+                            >
+                              <path d="M4 4l8 8M12 4l-8 8" />
+                            </svg>
+                            <span>
+                              {lang === "de" ? "Noch nicht ganz: " : "暂未命中: "}
+                            </span>
+                          </>
+                        )}
+                      </span>
+                      <span className="leading-relaxed text-[var(--ink)]">
+                        {activeFeedback}
+                      </span>
+                    </div>
+                  )}
+                  {!isAnswerChecked && (
+                    <span className="text-[var(--ink-muted)]">
+                      {lang === "de"
+                        ? "Wähle eine Option aus und klicke auf Überprüfen."
+                        : "选择一个选项，点击核验答案。"}
+                    </span>
+                  )}
+                </>
+              )}
           </div>
 
           {/* 主动作按钮 */}
           <div className="flex items-center gap-2 shrink-0 w-full sm:w-auto">
-            {!isAnswerChecked ? (
+            {/* Step 1 Lecture 操作按钮 */}
+            {currentStep.type === "lecture" ? (
+              <button
+                type="button"
+                onClick={handleAdvanceLecture}
+                className="w-full sm:w-auto px-6 py-2 bg-[var(--ink)] text-[var(--paper)] text-xs font-bold border-2 border-[var(--ink)] hover:bg-[var(--paper)] hover:text-[var(--ink)] active:translate-y-[1px] transition-all cursor-pointer flex items-center justify-center gap-2"
+              >
+                <span>
+                  {lang === "de"
+                    ? "Konzept verstanden -> Weiter zum Experiment"
+                    : "我已理解核心机理 -> 进入互动实验探索"}
+                </span>
+                <span aria-hidden="true">-&gt;</span>
+              </button>
+            ) : currentStep.type === "microworld" ? (
+              /* Step 2 MicroWorld 操作按钮 */
+              <button
+                type="button"
+                onClick={handleAdvanceMicroWorld}
+                className="w-full sm:w-auto px-6 py-2 bg-[var(--ink)] text-[var(--paper)] text-xs font-bold border-2 border-[var(--ink)] hover:bg-[var(--paper)] hover:text-[var(--ink)] active:translate-y-[1px] transition-all cursor-pointer flex items-center justify-center gap-2"
+              >
+                <span>
+                  {lang === "de"
+                    ? "Experiment abgeschlossen -> Jetzt zur Challenge"
+                    : "动手实验探究完毕 -> 前往考场通关挑战"}
+                </span>
+                <span aria-hidden="true">-&gt;</span>
+              </button>
+            ) : !isAnswerChecked ? (
+              /* Phase 2 Challenge 未核验 */
               <button
                 type="button"
                 onClick={handleCheckAnswer}
-                disabled={!selectedOptionId && currentStep.type !== "microworld"}
+                disabled={!selectedOptionId}
                 className="w-full sm:w-auto px-6 py-2 bg-[var(--ink)] text-[var(--paper)] text-xs font-bold border border-[var(--ink)] hover:bg-[var(--paper)] hover:text-[var(--ink)] active:translate-y-[1px] disabled:opacity-30 disabled:cursor-not-allowed transition-all cursor-pointer"
               >
                 {lang === "de" ? "Überprüfen" : "核验答案"}
               </button>
             ) : isCorrect ? (
+              /* Phase 2 Challenge 核验正确 */
               <button
                 type="button"
                 onClick={handleNextStep}
                 className="w-full sm:w-auto px-6 py-2 bg-[var(--ink)] text-[var(--paper)] text-xs font-bold border-2 border-[var(--ink)] hover:bg-[var(--paper)] hover:text-[var(--ink)] active:translate-y-[1px] transition-all cursor-pointer flex items-center justify-center gap-2"
               >
-                <span>{currentStepIndex + 1 < steps.length ? (lang === "de" ? "Weiter" : "继续下一步") : (lang === "de" ? "Zur Belohnung" : "查看通关战果")}</span>
+                <span>
+                  {currentStepIndex + 1 < steps.length
+                    ? lang === "de"
+                      ? "Weiter"
+                      : "继续下一步"
+                    : lang === "de"
+                    ? "Zur Belohnung"
+                    : "查看通关战果"}
+                </span>
                 <span aria-hidden="true">-&gt;</span>
               </button>
             ) : (
+              /* Phase 2 Challenge 核验错误，重试 */
               <button
                 type="button"
                 onClick={handleRetryStep}
@@ -447,7 +732,9 @@ export const InteractiveLessonRunner: React.FC<InteractiveLessonRunnerProps> = (
         <div className="fixed inset-0 z-50 bg-black/40 flex items-center justify-center p-4">
           <div className="border-2 border-[var(--ink)] bg-[var(--paper)] p-5 max-w-sm w-full text-center">
             <h4 className="font-bold text-sm mb-2">
-              {lang === "de" ? "Lektion wirklich abbrechen?" : "确定中途退出当前微课？"}
+              {lang === "de"
+                ? "Lektion wirklich abbrechen?"
+                : "确定中途退出当前微课？"}
             </h4>
             <p className="text-xs text-[var(--ink-muted)] font-mono mb-4 leading-relaxed">
               {lang === "de"

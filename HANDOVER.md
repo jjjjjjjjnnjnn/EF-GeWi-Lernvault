@@ -25,6 +25,19 @@
 
 ---
 
+- ✅ **Phase 5.1 教学与实验前置重塑：新知课程与互动实验前置于考场闯关（2026-10-10 交付）**：
+  - **核心痛点解决**：彻底消除进关卡直接被单选题拷问的死板与挫败感，全面落实“先学新知、先玩实验，再闯关答题”的第一性原理教学法；
+  - **两段式关卡架构升级 (`lessonStepFlow.ts` & `InteractiveLessonRunner.tsx`)**：
+    - **阶段一：新知研习与实验探索 (Lern-Phase: Wissen & Experiment)**：
+      - **Step 1: 新知精讲微课 (`lecture`)**：生活直觉唤醒 + 考纲学术术语卡片 (KLP-Fachbegriffe) + 底层因果运行链 (Kausalkette 4段推演) + 苏格拉底导学启发，沉浸式阅读吸收无答题压力，提供 `[Ich habe das Konzept verstanden -> Weiter zum Experiment]` 主动推进按钮与 +25 XP；
+      - **Step 2: 动手探究实验微世界 (`microworld`)**：明确实验任务清单 (Forschungsauftrag) + 嵌入式活体教具（滑块/天平/连线/决策树）先动手玩、调节参数 + 实验规律备忘录 (Labor-Notiz)，点击 `[Experiment abgeschlossen -> Jetzt zur Challenge]` 达成 +35 XP 与 Combo 加成；
+    - **阶段二：考场闯关与达标实测 (Challenge-Phase: Klausur-Challenge)**：
+      - **Step 3: 核心机制对决 (`concept`)**：基于新知与实验现象的精准对决；
+      - **Step 4: 考场失分雷区排雷 (`trap`)**：常见错误陷阱防范；
+      - **Step 5: 15 NP 会考金句与终局达标考核 (`quiz`)**：满分踩分句与通关结算屏；
+  - **关卡抽屉流程架构引导 (`QuestMapTab.tsx`)**：在关卡详情抽屉中直观展示 `1. 新知精讲微课 -> 2. 动手实验微世界 -> 3. 考场通关挑战` 架构条，消除用户应试焦虑；
+  - **工程门禁全绿**：全量 89 个测试套件、682 项测试 100% PASS，`modules.test.tsx` 零契约违规（零 Emoji、零阴影、零 italic）；`cmd /c "npx tsc -b"` 0 报错；`python scripts/vault-check.py` 418 笔记 1942 词 PASS。
+
 - ✅ **Phase 5 TeachingStudio 体验进化与全科考纲预设扩充落地（2026-10-10 交付）**：
   - **轻量 3 步课型自适应编译器 (`lessonStepFlow.ts`)**：支持 `concept_light`（生活直觉 -> 核心机制 -> 15 NP 小测）与 `interactive_deep`（5 步微世界完整流），避免纯文学/事实性概念陷入过度交互；
   - **真实北威州教材大纲预设扩充 (`bookIngestParser.ts`)**：新增 Goethe《Faust I》（戏剧分析/赌约/浮士德悲剧）、Mathe《Differentialrechnung》（割线斜率/导数/极值讨论）等完整章节大纲预设；
