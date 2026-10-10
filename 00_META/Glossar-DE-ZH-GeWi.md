@@ -991,3 +991,8 @@ tags: [EF, Meta]
 | Ausgleichsmandat | 平衡议席（比例矫正席位） | SoWi | Ausgleichsmandate werden anderen Parteien zugewiesen, um das durch Überhangmandate verzerrte proportionale Kräfteverhältnis wiederherzustellen. |
 | Zweitstimmendeckung | 第二票配额覆盖（新选举法规则） | SoWi | Die Zweitstimmendeckung besagt, dass Wahlkreisgewinner nur dann ins Parlament einziehen, wenn ihr Direktmandat durch die Zweitstimmen ihrer Partei gedeckt ist. |
 | Grundmandatsklausel | 基本议席豁免条款 | SoWi | Die Grundmandatsklausel ermöglichte Parteien unter 5% den Einzug in voller Fraktionsstärke, sofern sie mindestens drei Direktmandate errangen. |
+| Urzustand | 原初状态 | Philosophie | Der Urzustand ist ein hypothetisches Gedankenexperiment zur Grundlegung einer fairen und gerechten Gesellschaftsordnung. |
+| Schleier des Nichtwissens | 无知之幕 | Philosophie | Der Schleier des Nichtwissens verbirgt den Entscheidern ihre künftige soziale Klasse, Talente und körperlichen Eigenschaften. |
+| Differenzprinzip | 差异原则 | Philosophie | Das Differenzprinzip legitimiert wirtschaftliche Ungleichheiten nur dann, wenn sie den am wenigsten Begünstigten den größtmöglichen Vorteil bringen. |
+| Maximin-Regel | 最大最小准则 | Philosophie | Die Maximin-Regel gebietet, unter Ungewissheit stets diejenige Handlungsalternative zu wählen, deren schlechtestmögliches Ergebnis am besten ist. |
+| lexikalischer Vorrang | 词典式优先次序 | Philosophie | Der lexikalische Vorrang ordnet gleiche Grundfreiheiten dem Differenzprinzip strikt übergeordnet zu; Freiheit darf nicht für Wohlstand geopfert werden. |
