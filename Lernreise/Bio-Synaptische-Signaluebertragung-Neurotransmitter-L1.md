@@ -8,7 +8,7 @@ operatoren: [beschreiben, vergleichen, analysieren]
 klausurrelevant: true
 datum: 2026-10-03
 tags: [EF, Bio, Neurobiologie, Synapse, Neurotransmitter, Acetylcholin, Neurotoxine]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Synaptische Signaluebertragung, Neurotransmitter und Neurotoxine (L1, Ziel Klausur)
@@ -29,7 +29,7 @@ Ein Amazonas-Jaeger schiesst mit einem unscheinbaren Holzblasrohr einen winzigen
 `Klausur-Satz: Die chemische Synapse uebertraegt elektrische Aktionspotenziale ueber neurotransmittervermittelte Ionenkanalsteuerungen und stellt den empfindlichsten Angriffspunkt fuer Neurotoxine und Psychopharmaka dar.`
 
 ## Schritt 2 — entdecken: Die molekularen Akteure der Synapse
-PRETRAINING术语盒（核心4词，先读三遍中德，合书自测中文→德语）：
+PRETRAINING术语盒（核心4词，先读三遍中德，合书自测中文->德语）：
 
 - 突触前膜与突触小泡 — Praesynaptische Membran & Vesikel: 神经末梢储存神经递质的膜泡结构，在动作电位去极化及钙离子内流后与前膜融合（胞吐作用）。 Membran des Endknoepfchens mit transmittergefuellten Vesikeln, die durch Ca2+-Einstrom exozytisch entleert werden.
 - 乙酰胆碱 — Acetylcholin (ACh): 神经肌肉接头处最重要的兴奋性神经递质，由胆碱与乙酰辅酶A合成。 Universeller Neurotransmitter an der neuromuskulaeren Endplatte sowie im vegetativen Nervensystem.
@@ -63,13 +63,24 @@ Molekularer Ablauf an der motorischen Endplatte:
 
 [Werkzeug: balance-board]
 
-AUFGABE (beschreiben & analysieren, AFB I/II):
-Vier Patienten werden mit akuten Vergiftungserscheinungen in die Notaufnahme eingeliefert:
-- Patient A: Zeigt vollstaendige schlaffe Muskellaehmung; Atemmuskulatur versagt. Die Untersuchung ergibt: Curare blockiert kompetitiv die Acetylcholin-Rezeptoren der Postsynapse, ohne die Na+-Kanaele zu oeffnen.
-- Patient B: Zeigt ebenfalls schlaffe Laehmung. Vergiftung mit Botulinumtoxin (Botox): Das Gift spaltet SNARE-Proteine im Endknoepfchen.
-- Patient C: Zeigt schwere krampfhafte Dauererregung (starre Muskellaehmung, Tetanus-aehnlich). Ursache: Alkylphosphat (E605 / Sarin), das die Acetylcholinesterase irreversibel hemmt.
-1. Analysiere auf molekularer Ebene, warum Patient B keine Transmitter mehr ausschuetten kann.
-2. Erklaere den Unterschied in den postsynaptischen Membranpotenzialen zwischen Patient A (Curare) und Patient C (AChE-Hemmer).
+AUFGABE (beschreiben & analysieren, [AFB I/II]): Beschreibe [AFB II]
+
+HILFE:
+- Messdimension: Pruefe Potenzial, Schwelle und Zeitverlauf mit Kurvenvergleich; notiere nur die Werte, deute die Phase noch nicht.
+- Kanaldimension: Pruefe Natrium-, Kalium- und Calciumkanal mit Blockertest; sammle nur die Zustaende, ohne das Urteil vorwegzunehmen.
+- Bilddimension: Pruefe Spalt, Vesikel und Antwort mit Bildvergleich; notiere Bild und Wirkung, ohne die Deutung zu setzen.
+
+COMPLETION (Lückentext):
+- Lies beide Saetze und ergaenze aus dem Gedaechtnis, ohne zurueckzublaettern:
+- ___ oeffnet Vesikel, Transmitter oeffnet Kanaele und Enzyme beenden das Signal.
+- Ordne Vesikel als ___ und pruefe die Richtung ohne Rueckblick.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Kurvenbefund mit Schwellenanker (Synaptische Signaluebertragung, Neurotransmi) | 5 NP | Skizze mit Achsenbeschriftung als Alternativweg
+Kanalblockertest mit Ionenbezug | 5 NP | Tabellenvergleich mit Messprotokoll als Alternativweg
+Urteil mit Leitungsbeleg | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
 
 MUSTERLOESUNG:
 1. Molekularer Wirkmechanismus von Botox (Patient B):
@@ -82,35 +93,55 @@ MUSTERLOESUNG:
 `Klausur-Satz: Bei Aufgaben zu Synaptische Signaluebertragung, Neurotransmitter und Neurotoxine muss die theoriegeleitete Begruendung stets durch exakte Fachtermini und empirische Belege abgesichert werden.`
 
 ## Schritt 5 — ausprobieren: Duell der Synapsentypen: Erregung vs. Hemmung
+VERGLEICH: Erregende Synapse (EPSP) vs. Hemmende Synapse (IPSP) (选概念) 选概念：先看 Signalwort 再选路。
 
-VERGLEICH: Erregende Synapse (EPSP) vs. Hemmende Synapse (IPSP) (选概念)
+Position A (Erregende Synapse / Acetylcholin / Glutamat): Neutralfassung fuer die Wahl.
+- [Weg A] Wenn du Weg A waehlst, arbeitest du in Schritt 7 vor allem mit Zahlen, Formeln und Einheiten.
+Position B (Hemmende Synapse / GABA / Glycin): Neutralfassung fuer die Wahl.
+- [Weg B] Wenn du Weg B waehlst, arbeitest du in Schritt 7 vor allem mit Bildern, Ketten und Deutung.
 
-- Position A (Erregende Synapse / Acetylcholin / Glutamat):
-  - Ionenstrom: Oeffnet ligandenabhaengige $Na^+$-Kanaele (Einstrom positiver Ladungen).
-  - Potenzialaenderung: Depolarisation des Ruhepotenzials (z. B. von -70 mV auf -55 mV).
-  - Funktion: Bringt das Membranpotenzial naeher an den Schwellenwert zur Ausloesung eines Aktionspotenzials am Axonhuegel.
-- Position B (Hemmende Synapse / GABA / Glycin):
-  - Ionenstrom: Oeffnet ligandenabhaengige $Cl^-$-Kanaele (Einstrom negativer Ladungen) oder $K^+$-Kanaele (Ausstrom positiver Ladungen).
-  - Potenzialaenderung: Hyperpolarisation des Ruhepotenzials (z. B. von -70 mV auf -85 mV).
-  - Funktion: Entfernt das Membranpotenzial weiter von der Schwelle und blockiert somit aktiv die Erregungsweiterleitung.
+AUFGABE A: Welche Pruefgroesse verlangt Zahlen und Rechnung? Begruende ohne Mechanismus.
+AUFGABE B: Welche Frage verlangt Kette und Deutung? Begruende ohne Mechanismus.
 
-Entscheidungsregel fuer die Klausur:
-Wird nach `Verrechnung an der Nervenzelle` gefragt, addiere stets die EPSPs und subtrahiere die IPSPs am Axonhuegel. Nur wenn die algebraische Summe den Schwellenwert (ca. -50 mV) ueberschreitet, feuert die Zelle ein Aktionspotenzial!
+HILFE: Pruefe dimensionsgeleitet, welcher Weg passt: Messdimension mit Rechenansatz spricht fuer Zahlen und Weg A; Strukturdimension mit Typ-Test spricht fuer Zuordnung und Weg B; Bilddimension mit Bildvergleich sichert beide Wege. Ordne selbst zu; die Zuordnung wird nicht vorweggenommen.
 
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg A oder Weg B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Ueberfuehrt aus VERGLEICH (Vorwahl-Fassung): Position A (Erregende Synapse / Acetylcholin / Glutamat): - Ionenstrom: Oeffnet ligandenabhaengige $Na^+$-Kanaele (Einstrom positiver Ladungen). - Potenzialaenderung: Depolarisation des Ruhepotenzials (z. B. von -70 mV auf -55 mV). - Funktion: Bringt das Membranpotenzial naeher an den Schwellenwert zur Ausloesung eines Aktionspotenzials am Axonhuegel. - | Position B (Hemmende Synapse / GABA / Glycin): - Ionenstrom: Oeffnet ligandenabhaengige $Cl^-$-Kanaele (Einstrom negativer Ladungen) oder $K^+$-Kanaele (Ausstrom positiver Ladungen). - Potenzialaenderung: Hyperpolarisation des Ruhepotenzials (z. B. von -70 mV auf -85 mV). - Funktion: Entfernt das Membranpotenzial weiter von der Schwelle und blockiert somit aktiv die Erregungsweiterleitung.
+- Ueberfuehrt aus Schritt-5-HILFE (Vorwahl-Fassung): Kein Spoiler in Vorwahl-HILFE bestaetigt, Vorwahl-Fassung enthielt keine HILFE mit Loesungszuordnung.
+- Mechanismus A: Position A (Erregende Synapse / Acetylcholin / Glutamat): - Ionenstrom: Oeffnet ligandenabhaengige $Na^+$-Kanaele (Einstrom positiver Ladungen). - Potenzialaenderung: Depolarisation des Ruhepotenzials (z. B. von -70 mV auf -55 mV). - Funktion: Bringt das Membranpotenzial naeher an den Schwellenwert zur Ausloesung eines Aktionspotenzials am Axonhuegel. -
+- Mechanismus B: Position B (Hemmende Synapse / GABA / Glycin): - Ionenstrom: Oeffnet ligandenabhaengige $Cl^-$-Kanaele (Einstrom negativer Ladungen) oder $K^+$-Kanaele (Ausstrom positiver Ladungen). - Potenzialaenderung: Hyperpolarisation des Ruhepotenzials (z. B. von -70 mV auf -85 mV). - Funktion: Entfernt das Membranpotenzial weiter von der Schwelle und blockiert somit aktiv die Erregungsweiterleitung.
+- Ein-Satz-Kern: Calcium oeffnet Vesikel, Transmitter oeffnet Kanaele und Enzyme beenden das Signal.
+
+`Klausur-Satz: Calcium oeffnet Vesikel, Transmitter oeffnet Kanaele und Enzyme beenden das Signal.`
 ## Schritt 6 — check: Klausur-Transfer Giftmorde und Gegenmittel
 
 PRUEFUNGSSZENARIO (KLP NRW Biologie LK Inhaltsfeld 2: Neurobiologie):
 
-### AFB I: Schemazeichnung
+AUFGABE (beschreiben, [AFB III]): Beschreibe in ca. 150 Woertern Einordnung, zwei Belege mit Mechanismus und Schlussurteil zu Synaptische Signaluebertragung, Neurotransmi.
+
+### [AFB I]: Schemazeichnung
 Skizziere eine chemische Synapse und beschrifte fuenf wesentliche Strukturkomponenten.
 
-### AFB II: Experimentelle Ableitung
+### [AFB II]: Experimentelle Ableitung
 Ein Forscherteam testet ein neuartiges Gegenmittel gegen Alkylphosphat-Vergiftungen (E605). Das Praeparat Atropin blockiert kompetitiv muskarinische Acetylcholinrezeptoren.
 Erlaeutere, warum Atropin als lebensrettendes Antidot gegen die krampfhafte Dauererregung eingesetzt werden kann, aber bei einer Ueberdosierung selbst toedlich wirkt.
 
-### AFB III: Neuroethische Reflexion
+### [AFB III]: Neuroethische Reflexion
 Bewerte den zunehmenden Einsatz von Neuro-Enhancern (z. B. Methylphenidat / Ritalin, welches Dopamin-Wiederaufnahme-Transporter blockiert) bei gesunden Schuelern und Studenten zur Leistungssteigerung vor Klausuren unter gesundheitlichen und chancengerechtigkeitspolitischen Gesichtspunkten.
 
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Giftbefund mit Kanalanker | 5 NP | Enger Beleg mit Zeile als Alternativweg
+Phasenanalyse mit Refraktaerbezug | 5 NP | Skizze mit Messwerten als Alternativweg
+Leitungsurteil mit Frequenzbeleg | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
+
+KERNSATZ (auswendig):
+- Kernsatz: `Calcium oeffnet Vesikel, Transmitter oeffnet Kanaele und Enzyme beenden das Signal.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = Aktionspotenzial mit Calcium als Subjekt | Mechanismus = Vesikelfusion plus Rezeptorantwort als Mechanismus | Urteil = Urteil auf Erregung mit Giftbeleg
+- Selbsttest: Calcium oeffnet Vesikel, ___ oeffnet Kanaele und Enzyme beenden das Signal.
 ## Schritt 7 — check: Format-Check & Scoring
 
 30 XP Schnelltest zur Verstaendigungssicherung:

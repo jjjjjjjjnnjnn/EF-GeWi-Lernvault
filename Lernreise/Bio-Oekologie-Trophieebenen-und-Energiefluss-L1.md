@@ -8,7 +8,7 @@ operatoren: [beschreiben, berechnen, beurteilen]
 klausurrelevant: true
 datum: 2026-10-03
 tags: [EF, Bio, Oekologie, Trophieebenen, Energiefluss, Biomasse, Oekologische-Pyramide]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Oekologie: Trophieebenen, 10-Prozent-Regel und Energiefluss (L1, Ziel Klausur)
@@ -29,7 +29,7 @@ Wenn du durch die afrikanische Savanne faehrst, siehst du Myriaden von Grashalme
 `Klausur-Satz: Waehrend chemische Elemente das Oekosystem in geschlossenen biogeochemischen Stoffkreislaeufen durchwandern, fliesst die Energie als Einbahnstrasse hindurch und geht auf jeder Trophieebene zu rund 90 Prozent als Waerme verloren.`
 
 ## Schritt 2 — entdecken: Die biologischen Grundbegriffe des Stoff- und Energietransfers
-PRETRAINING术语盒（核心4词，先读三遍中德，合书自测中文→德语）：
+PRETRAINING术语盒（核心4词，先读三遍中德，合书自测中文->德语）：
 
 - 营养级 — Trophieebene: 生物在食物链或食物网中所处的位置等级（自养初级生产者、初级植食者、次级肉食者等）。 Die Einordnung von Lebewesen in der Nahrungskette gemaess ihrer Ernahrungsweise (Produzenten, Konsumenten, Destruenten).
 - 能量流动百分之十定律 — 10-Prozent-Regel (nach Lindeman): 平均只有约10%的摄入化学能量转化为下一营养级的净生物量，其余约90%通过细胞呼吸消耗为热量或作为不可吸收物质排出。 Nur etwa zehn Prozent der gebundenen Energie einer Trophieebene werden in Biomasse der naechsthoeheren Ebene ueberfuehrt; rund 90 % dissipieren als Dissipationswaerme oder unverdaulicher Kot.
@@ -63,13 +63,24 @@ Trophiepyramide und Energieentwertung:
 
 [Werkzeug: balance-board]
 
-AUFGABE (berechnen & erklaeren, AFB I/II):
-Ein Hektar landwirtschaftliche Flaeche liefert pro Jahr eine pflanzliche Biomasse mit einem Nettoenergiegehalt von $100.000\,\text{Megajoule (MJ)}$.
-Vergleiche zwei Ernaehrungsszenarien fuer eine Siedlung:
-- Szenario A (Pflanzliche Ernaehrung): Die Feldfruechte werden direkt von Menschen verzehrt (Mensch als Primaerkonsument).
-- Szenario B (Fleischbasierte Ernaehrung): Das Getreide wird zunaechst an Rinder verfuettert (Primaerkonsument). Anschliessend verzehren die Menschen das Rindfleisch (Mensch als Sekundaerkonsument).
-1. Berechne die jeweils fuer den Menschen verfuegbare Nahrungsenergie nach der 10-Prozent-Regel.
-2. Erklaere, wie viele Menschen in Szenario A im Vergleich zu Szenario B ernaehrt werden koennen, wenn der jaehrliche Energiebedarf eines Erwachsenen etwa $3.600\,\text{MJ}$ betraegt.
+AUFGABE (berechnen & erklaeren, [AFB I/II]): Beschreibe [AFB II]
+
+HILFE:
+- Messdimension: Pruefe Eintrag, Sauerstoff und Biomasse mit Bilanzansatz; notiere nur die Groessen, deute die Folge noch nicht.
+- Netzdimension: Pruefe Nahrungsnetz, Kette und K-Wert mit Netzanalyse; sammle nur die Maschen, ohne das Urteil vorwegzunehmen.
+- Bilddimension: Pruefe Truebung, Bluete und Fischzeichen mit Bildvergleich; notiere Bild und Wirkung, ohne die Deutung zu setzen.
+
+COMPLETION (Lückentext):
+- Lies beide Saetze und ergaenze aus dem Gedaechtnis, ohne zurueckzublaettern:
+- ___ fliesst einbahnig und schrumpft je Stufe auf zehn Prozent Biomasse.
+- Ordne Prozent als ___ und pruefe die Richtung ohne Rueckblick.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Stufenbefund mit Biomasseanker (Oekologie: Trophieebenen, 10-Prozent-Regel u) | 5 NP | Skizze mit Achsenbeschriftung als Alternativweg
+Flussanalyse mit Zehnprozent-Bezug | 5 NP | Tabellenvergleich mit Messprotokoll als Alternativweg
+Urteil mit Pyramidenbeleg | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
 
 MUSTERLOESUNG:
 1. Berechnung der verfuegbaren Nahrungsenergie:
@@ -87,35 +98,55 @@ MUSTERLOESUNG:
 `Klausur-Satz: Bei Aufgaben zu Oekologie: Trophieebenen, 10-Prozent-Regel und Energiefluss muss die theoriegeleitete Begruendung stets durch exakte Fachtermini und empirische Belege abgesichert werden.`
 
 ## Schritt 5 — ausprobieren: Duell der Prozesse: Kreislauf vs. Einbahnstrasse
+VERGLEICH: Geschlossener Stoffkreislauf vs. Offener Energiefluss (选概念) 选概念：先看 Signalwort 再选路。
 
-VERGLEICH: Geschlossener Stoffkreislauf vs. Offener Energiefluss (选概念)
+Position A (Biogeochemischer Stoffkreislauf): Neutralfassung fuer die Wahl.
+- [Weg A] Wenn du Weg A waehlst, arbeitest du in Schritt 7 vor allem mit Zahlen, Formeln und Einheiten.
+Position B (Thermodynamischer Energiefluss): Neutralfassung fuer die Wahl.
+- [Weg B] Wenn du Weg B waehlst, arbeitest du in Schritt 7 vor allem mit Bildern, Ketten und Deutung.
 
-- Position A (Biogeochemischer Stoffkreislauf):
-  - Traeger: Chemische Elemente (Kohlenstoff, Stickstoff, Phosphor, Wasser).
-  - Dynamik: Geschlossener Kreis; Destruenten (Bakterien, Pilze) remineralisieren Kadaver und Kot vollstaendig zurueck zu anorganischen Naehrsalzen ($CO_2, NO_3^-, PO_4^{3-}$).
-  - Bilanz: Es geht kein einziges Atom verloren (Erhaltung der Materie).
-- Position B (Thermodynamischer Energiefluss):
-  - Traeger: Chemische Bindungsenergie in Molekuelen (ATP, Glukose).
-  - Dynamik: Offene Einbahnstrasse; Sonnenenergie wird eingestrahlt, stufenweise entwertet und verlaesst die Erde unumkehrbar als diffuse Infrarot-Waermestrahlung in den Weltraum.
-  - Bilanz: Energie kann nicht rezykliert werden; das Oekosystem stirbt sofort ohne permanente solare Zufuhr.
+AUFGABE A: Welche Pruefgroesse verlangt Zahlen und Rechnung? Begruende ohne Mechanismus.
+AUFGABE B: Welche Frage verlangt Kette und Deutung? Begruende ohne Mechanismus.
 
-Entscheidungsregel fuer die Klausur:
-Wird nach `Stoff vs. Energie im Oekosystem` gefragt, schreibe niemals von einem "Energiekreislauf"! Es gibt ausschliesslich Stoffkreislaeufe und Einbahn-Energiefluesse!
+HILFE: Pruefe dimensionsgeleitet, welcher Weg passt: Messdimension mit Rechenansatz spricht fuer Zahlen und Weg A; Strukturdimension mit Typ-Test spricht fuer Zuordnung und Weg B; Bilddimension mit Bildvergleich sichert beide Wege. Ordne selbst zu; die Zuordnung wird nicht vorweggenommen.
 
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg A oder Weg B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Ueberfuehrt aus VERGLEICH (Vorwahl-Fassung): Position A (Biogeochemischer Stoffkreislauf): - Traeger: Chemische Elemente (Kohlenstoff, Stickstoff, Phosphor, Wasser). - Dynamik: Geschlossener Kreis; Destruenten (Bakterien, Pilze) remineralisieren Kadaver und Kot vollstaendig zurueck zu anorganischen Naehrsalzen ($CO_2, NO_3^-, PO_4^{3-}$). - Bilanz: Es geht kein einziges Atom verloren (Erhaltung der Materie). - | Position B (Thermodynamischer Energiefluss): - Traeger: Chemische Bindungsenergie in Molekuelen (ATP, Glukose). - Dynamik: Offene Einbahnstrasse; Sonnenenergie wird eingestrahlt, stufenweise entwertet und verlaesst die Erde unumkehrbar als diffuse Infrarot-Waermestrahlung in den Weltraum. - Bilanz: Energie kann nicht rezykliert werden; das Oekosystem stirbt sofort ohne permanente solare Zufuhr.
+- Ueberfuehrt aus Schritt-5-HILFE (Vorwahl-Fassung): Kein Spoiler in Vorwahl-HILFE bestaetigt, Vorwahl-Fassung enthielt keine HILFE mit Loesungszuordnung.
+- Mechanismus A: Position A (Biogeochemischer Stoffkreislauf): - Traeger: Chemische Elemente (Kohlenstoff, Stickstoff, Phosphor, Wasser). - Dynamik: Geschlossener Kreis; Destruenten (Bakterien, Pilze) remineralisieren Kadaver und Kot vollstaendig zurueck zu anorganischen Naehrsalzen ($CO_2, NO_3^-, PO_4^{3-}$). - Bilanz: Es geht kein einziges Atom verloren (Erhaltung der Materie). -
+- Mechanismus B: Position B (Thermodynamischer Energiefluss): - Traeger: Chemische Bindungsenergie in Molekuelen (ATP, Glukose). - Dynamik: Offene Einbahnstrasse; Sonnenenergie wird eingestrahlt, stufenweise entwertet und verlaesst die Erde unumkehrbar als diffuse Infrarot-Waermestrahlung in den Weltraum. - Bilanz: Energie kann nicht rezykliert werden; das Oekosystem stirbt sofort ohne permanente solare Zufuhr.
+- Ein-Satz-Kern: Energie fliesst einbahnig und schrumpft je Stufe auf zehn Prozent Biomasse.
+
+`Klausur-Satz: Energie fliesst einbahnig und schrumpft je Stufe auf zehn Prozent Biomasse.`
 ## Schritt 6 — check: Klausur-Transfer Schadstoffanreicherung (Biomagnifikation)
 
 PRUEFUNGSSZENARIO (KLP NRW Biologie LK Inhaltsfeld 4: Oekologie):
 
-### AFB I: Pyramidenformen
+AUFGABE (beschreiben, [AFB III]): Beschreibe in ca. 150 Woertern Einordnung, zwei Belege mit Mechanismus und Schlussurteil zu Oekologie: Trophieebenen, 10-Prozent-Regel u.
+
+### [AFB I]: Pyramidenformen
 Erläutere den Unterschied zwischen einer Zahlenpyramide, einer Biomassepyramide und einer echten Energiefluss-Produktionspyramide.
 
-### AFB II: Analyse von Schadstoffanreicherungen
+### [AFB II]: Analyse von Schadstoffanreicherungen
 Fettloesliche Umweltgifte wie DDT oder Quecksilber werden von Lebewesen kaum abgebaut oder ausgeschieden.
 Analysiere unter Verknuepfung mit der 10-Prozent-Regel, warum die Giftkonzentration im Gewebe von Spitzenraeubern (Wanderfalke, Orca) millionenfach hoeher liegt als im umgebenden Meerwasser (Biomagnifikation).
 
-### AFB III: Oekologisches Gesamturteil
+### [AFB III]: Oekologisches Gesamturteil
 Bewerte den Vorschlag zur Reduktion globaler Weideflaechen zugunsten von Wiederaufforstungsflaechen unter Einbezug von Flaecheneffizienz, Methanausstoss und Ernaehrungssicherheit fuer acht Milliarden Menschen.
 
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Pyramidenbefund mit Stufenanker | 5 NP | Enger Beleg mit Zeile als Alternativweg
+Flussanalyse mit Verlustbezug | 5 NP | Skizze mit Messwerten als Alternativweg
+Schutzurteil mit Entnahmebeleg | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
+
+KERNSATZ (auswendig):
+- Kernsatz: `Energie fliesst einbahnig und schrumpft je Stufe auf zehn Prozent Biomasse.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = Produzent mit Einstrahlung als Subjekt | Mechanismus = Trophiekaskade mit Zehnprozent-Regel als Mechanismus | Urteil = Urteil auf Pyramide mit Kapazitaet
+- Selbsttest: Energie fliesst einbahnig und schrumpft je Stufe auf zehn Prozent ___
 ## Schritt 7 — check: Format-Check & Scoring
 
 30 XP Schnelltest zur Verstaendigungssicherung:

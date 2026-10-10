@@ -8,7 +8,7 @@ operatoren: [darstellen, erklaeren, auswerten]
 klausurrelevant: true
 datum: 2026-09-26
 tags: [EF, Bio, Genetik]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: DNA-Replikation und Meselson-Stahl — Episode B11: Nachtschicht im Zellkern
@@ -46,7 +46,7 @@ PRETRAINING术语盒（5大装备，中文在上、德语在下）：
 
 ENTDECKEN因果传导机制（中文拆解在上，德语链条在下）：
 
-中文：因果链：解旋酶开链→引物酶打引物→聚合酶5到3合成→连接酶封口；前导链连续，后随链分冈崎片段。检验环节看密度带：半保留复制一轮恰为一条中间带，全保留应为重加轻，分散应两轮皆无分离。
+中文：因果链：解旋酶开链->引物酶打引物->聚合酶5到3合成->连接酶封口；前导链连续，后随链分冈崎片段。检验环节看密度带：半保留复制一轮恰为一条中间带，全保留应为重加轻，分散应两轮皆无分离。
 
 德语：Die Kausalkette: **Helikase** oeffnet, Primase setzt Primer, **Polymerase** baut 5-nach-3, Ligase schliesst Luecken. Der Leitstrang laeuft durch, der Folgestrang entsteht in **Okazaki-Stuecken**. Meselson-Stahl prueft das Ergebnis: Nach einer Runde in 14N zeigt semikonservativ genau ein mittleres Band. Konservativ zeigte schwer plus leicht, dispersiv zeigte nur Mittelmaessiges ohne Trennung in Runde zwei.
 
@@ -78,38 +78,53 @@ $$^{15}N \to ^{14}N: \; \text{Runde 1} = 1 \times \text{Mittelband} \Rightarrow 
 
 [Werkzeug: formula]
 
-AUFGABE目标挑战：已知全15N标记后转14N培养两轮：预测三种模型的条带并算密度占比，判定真实测量支持谁。 德语原题：Gegeben: Start voll 15N-markiert, dann zwei Runden in 14N. Sage fuer konservativ, semikonservativ und dispersiv die Banden beider Runden voraus und rechne die Dichteanteile pro Bande aus. Entscheide, welches Modell die echte Messung (Runde 1: ein Mittelband, Runde 2: mittel plus leicht) bestaetigt.
+AUFGABE: Stelle dar 目标挑战：已知全15N标记后转14N培养两轮：预测三种模型的条带并算密度占比，判定真实测量支持谁。 德语原题：Gegeben: Start voll 15N-markiert, dann zwei Runden in 14N. Sage fuer konservativ, semikonservativ und dispersiv die Banden beider Runden voraus und rechne die Dichteanteile pro Bande aus. Entscheide, welches Modell die echte Messung (Runde 1: ein Mittelband, Runde 2: mittel plus leicht) bestaetigt. [AFB II]
 
 HILFE:
-1. Modelle sauber trennen: konservativ, semikonservativ, dispersiv.
-2. Banden pro Runde vorhersagen: schwer, mittel, leicht.
-3. Messung dagegenhalten: Runde eins entscheidet fast alles.
+- Messdimension: Pruefe Dichtebanden, Generation und Zentrifugationsbild mit Bandenvergleich; notiere nur die Lagen, deute das Modell noch nicht.
+- Verfahrensdimension: Pruefe parentale gegen neue Straenge mit Markierungstest; sammle nur die Signale, ohne das Urteil vorwegzunehmen.
+- Bilddimension: Pruefe Zwischenbande und Endbanden mit Verlaufsvergleich; notiere Bild und Wirkung, ohne die Deutung zu setzen.
+
+COMPLETION (Lückentext):
+- Lies beide Saetze und ergaenze aus dem Gedaechtnis, ohne zurueckzublaettern:
+- ___ beweist semikonservative Replikation durch Dichtebanden nach Zentrifugation.
+- Ordne Replikation als ___ und pruefe die Richtung ohne Rueckblick.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Bandenbefund mit Generationsanker (DNA-Replikation und Meselson-Stahl) | 5 NP | Skizze mit Achsenbeschriftung als Alternativweg
+Modelltest mit Zwischenbanden | 5 NP | Tabellenvergleich mit Messprotokoll als Alternativweg
+Urteil mit Semikonservativ-Beleg | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
 
 MUSTERLOESUNG：中文：全保留一轮应重加轻不符，分散二轮应全中不符，半保留两轮恰为一中带、中加轻带，锁定真凶。 / 德语：Konservativ: Runde eins schwer plus leicht — falsch. Dispersiv: Runde eins mittel, Runde zwei nur mittel — falsch. Semikonservativ: Runde eins ein Mittelband, Runde zwei mittel plus leicht — exakt die Messung.
 
 `Klausur-Satz: Drei Modelle, eine Zentrifuge: Nur semikonservativ ueberlebt beide Runden.`
 
 ## Schritt 5 — ausprobieren: Duell der Wege: Bandenzaehlung gegen Modellvergleich
-
 VERGLEICH: Waehle erst den Beweisweg, dann loesen: (i) Bandenzaehl-Rechenweg oder (ii) Modellvergleichs-Deuteweg — dann loesen.选程序：先看信号词再选路。
 
-
-Weg A (Bandenzaehl-Rechenweg): Banden pro Runde zaehlen und Dichteanteile quantitativ ausrechnen. Dieser Weg liefert harte Zahlen und haelt der Protokollpruefung stand.
-
-Weg B (Modellvergleichs-Deuteweg): Die drei Modelle qualitativ gegeneinander halten und am Schaubild ausscheiden. Dieser Weg ist schnell und anschaulich, bleibt aber ohne Zahlen angreifbar.
-
+Weg A (Bandenzaehl-Rechenweg): Neutralfassung fuer die Wahl.
+- [Weg A] Wenn du Weg A waehlst, arbeitest du in Schritt 7 vor allem mit Zahlen, Formeln und Einheiten.
+Weg B (Modellvergleichs-Deuteweg): Neutralfassung fuer die Wahl.
+- [Weg B] Wenn du Weg B waehlst, arbeitest du in Schritt 7 vor allem mit Bildern, Ketten und Deutung.
 
 AUFGABE A: Dichteanteile der Mittelbande in Runde zwei gesucht. Welcher Weg? 【选程序：先看信号词再选路】
-
 AUFGABE B: Warum scheidet dispersiv erst in Runde zwei aus? Welcher Weg? 【选程序：先看信号词再选路】
 
+HILFE: Pruefe dimensionsgeleitet, welcher Weg passt: Messdimension mit Rechenansatz spricht fuer Zahlen und Weg A; Strukturdimension mit Typ-Test spricht fuer Zuordnung und Weg B; Bilddimension mit Bildvergleich sichert beide Wege. Ordne selbst zu; die Zuordnung wird nicht vorweggenommen.
 
-HILFE：A nennt Anteile — Weg A mit Rechnung. B nennt Warum mit Schaubild — Weg B mit Vergleich.
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg A oder Weg B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Ueberfuehrt aus VERGLEICH (Vorwahl-Fassung): Weg A (Bandenzaehl-Rechenweg): Banden pro Runde zaehlen und Dichteanteile quantitativ ausrechnen. Dieser Weg liefert harte Zahlen und haelt der Protokollpruefung stand. | Weg B (Modellvergleichs-Deuteweg): Die drei Modelle qualitativ gegeneinander halten und am Schaubild ausscheiden. Dieser Weg ist schnell und anschaulich, bleibt aber ohne Zahlen angreifbar.
+- Ueberfuehrt aus Schritt-5-HILFE (Vorwahl-Fassung): A nennt Anteile — Weg A mit Rechnung. B nennt Warum mit Schaubild — Weg B mit Vergleich.
+- Mechanismus A: ANTWORT：中文：A走计数路算出中轻带各半；B走比较路指出分散永不分离。 / 德语：A folgt Weg A mit 50-zu-50-Rechnung der Mittel- und Leichtbande; B folgt Weg B mit dem Argument, dass dispersiv nie trennt.
+- Mechanismus B: Weg B (Modellvergleichs-Deuteweg): Die drei Modelle qualitativ gegeneinander halten und am Schaubild ausscheiden. Dieser Weg ist schnell und anschaulich, bleibt aber ohne Zahlen angreifbar.
+- Ein-Satz-Kern: Banden zaehlen beweist, Modelle vergleichen erklaert — die Klausur braucht beides.
 
 ANTWORT：中文：A走计数路算出中轻带各半；B走比较路指出分散永不分离。 / 德语：A folgt Weg A mit 50-zu-50-Rechnung der Mittel- und Leichtbande; B folgt Weg B mit dem Argument, dass dispersiv nie trennt.
 
 `Klausur-Satz: Banden zaehlen beweist, Modelle vergleichen erklaert — die Klausur braucht beides.`
-
 ## Schritt 6 — check: Selbsttest zu DNA-Replikation und Meselson-Stahl
 
 - FRAGE: 复制的方向是什么？（In welcher Richtung baut die Polymerase） | ANTWORT: 仅能5’3，需要引物。 / Nur in 5-nach-3-Richtung und nur mit Primer.
@@ -135,11 +150,25 @@ ANTWORT：中文：A走计数路算出中轻带各半；B走比较路指出分�
 
 ROLLE：中文：你是遗传实验室鉴定员。 / 德语：Du bist Gutachterin im Genetik-Labor.
 SITUATION：有实习生称一条中间带即证明一切：请写约150词鉴定书，用两轮数据检验三种模型并下结论。 / 德语：Ein Praktikant behauptet, ein einziges Mittelband beweise alles. Schreibe in ca. 150 Woertern ein Gutachten, das alle drei Modelle ueber zwei Runden prueft und das Urteil begruendet.
+
+AUFGABE (darstellen, [AFB III]): Stelle dar in ca. 150 Woertern Einordnung, zwei Belege mit Mechanismus und Schlussurteil zu DNA-Replikation und Meselson-Stahl.
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Versuchsbefund mit Isotopenanker | 5 NP | Enger Beleg mit Zeile als Alternativweg
+Bandenanalyse mit Modellbezug | 5 NP | Skizze mit Messwerten als Alternativweg
+Urteil mit Falsifikationsbeleg | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
+
 RUBRIC (30 XP)：Modellkenntnis (8 XP) | Rundenlogik (8 XP) | Bandendeutung (8 XP) | Urteil (6 XP).
 
 
 `Klausur-Satz: Achtung Falle: Dispersiv zeigt auch Mittelbaender, scheidet aber erst in Runde zwei aus.`
 
+KERNSATZ (auswendig):
+- Kernsatz: `Meselson-Stahl beweist semikonservative Replikation durch Dichtebanden nach Zentrifugation.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = DNA mit Isotopenmarkierung als Subjekt | Mechanismus = Dichtegradient mit Tochterbanden als Mechanismus | Urteil = Urteil auf semikonservativ mit Zwischenbande
+- Selbsttest: ___ beweist semikonservative Replikation durch Dichtebanden nach Zentrifugation.
 ## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY核心总结：

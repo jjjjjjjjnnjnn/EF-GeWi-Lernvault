@@ -8,7 +8,7 @@ operatoren: [beschreiben, erklaeren, analysieren]
 klausurrelevant: true
 datum: 2026-10-03
 tags: [EF, Bio, Immunbiologie, Antikoerper, Klonale-Selektion, B-Lymphozyten, Plasmazellen]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Immunbiologie: Antikoerper-Struktur und Klonale Selektionstheorie (L1, Ziel Klausur)
@@ -19,7 +19,7 @@ version: Lesson-v3
 ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
 1. 中文：能详尽解析免疫球蛋白G（IgG-Antikoerper）的Y型四聚体空间结构：两条重链（schwere Ketten）与两条轻链（leichte Ketten）、恒定区（konstante Region, Fc）与结合抗原表位的高变可变区（variable Region, Fab/Paratop）。
-2. 中文：能依据伯内特克隆选择学说（Klonale Selektionstheorie nach Burnet）严密阐述体液免疫应答全流程：抗原识别→特异性克隆增殖（klonale Proliferation）→分化为效应浆细胞（Plasmazellen）与长寿记忆细胞（B-Gedaechtniszellen）。
+2. 中文：能依据伯内特克隆选择学说（Klonale Selektionstheorie nach Burnet）严密阐述体液免疫应答全流程：抗原识别->特异性克隆增殖（klonale Proliferation）->分化为效应浆细胞（Plasmazellen）与长寿记忆细胞（B-Gedaechtniszellen）。
 3. 中文：能在高考生物分析题（AFB I/II/III）中准确对比初次免疫应答（Primaerantwort: 延迟、滴度低、以IgM为主）与再次免疫应答（Sekundaerantwort: 迅速、滴度高、以IgG为主）的免疫学动力学机理。
 
 ### Hook / Phaenomen
@@ -29,7 +29,7 @@ Stell dir vor, du wirst im tiefen tropischen Regenwald von einer vollkommen unbe
 `Klausur-Satz: gemaess der klonalen Selektionstheorie bindet ein spezifisches Antigen selektiv an den komplementaeren B-Zell-Rezeptor eines naiven B-Lymphozyten und induziert dessen klonale Expansion sowie Differenzierung in Antikoerper sezernierende Plasmazellen und langlebige Gedaechtniszellen.`
 
 ## Schritt 2 — entdecken: Das immunologische Fachvokabular
-PRETRAINING术语盒（核心4词，先读三遍中德，合书自测中文→德语）：
+PRETRAINING术语盒（核心4词，先读三遍中德，合书自测中文->德语）：
 
 - 免疫球蛋白（抗体） — Antikoerper (Immunglobuline): Von differenzierten B-Lymphozyten (Plasmazellen) sezernierte Y-foermige Proteinkomplexe aus zwei identischen schweren und zwei leichten Polypeptidketten zur spezifischen Bindung von Antigenen.
 - 抗原与表位 — Antigen & Epitop: Als fremd erkannte Makromolekuele oder Oberflaechenstrukturen, deren spezifische molekulare Bindungsregion (Epitop) praezise vom Paratop des Antikoerpers nach dem Schluessel-Schloss-Prinzip gebunden wird.
@@ -66,37 +66,76 @@ Ablauf der Klonalen Selektion:
 
 ## Schritt 4 — ausprobieren: Das Kinetik-Labor der primaeren und sekundaeren Immunantwort
 [Werkzeug: balance-board]
-Simuliere auf dem immunologischen Balance-Board die quantitative Verschiebung der Antikoerper-Titerwerte und Reaktionszeiten zwischen Erstinfektion und Reinfektion.
 
-| Phase des Immuntests | Zeitfenster (Tage) | Vorherrschende Immunglobulinklasse | Titeranstieg ($Ak$-Konzentration) | Reaktionsmechanismus |
-| :--- | :--- | :--- | :--- | :--- |
-| **A: Primaerkontakt** | Tag 0–7 (Lag-Phase) | Noch keine freien Antikoerper messbar | Baseline (0 relative Einheiten) | Antigenprozessierung, T-Helfer-Aktivierung, klonale Selektion |
-| **B: Primaerantwort Peak** | Tag 7–14 | Vorwiegend $IgM$, spaeter Umschalten auf $IgG$ | Moderat (10–50 Einheiten) | Erste Plasmazellen sezernieren, IgM-Pentamere agglutinieren Erreger |
-| **C: Latenzphase** | Tag 15–60 | Geringe Rest-Titer von $IgG$ im Serum | Abfallend auf Basalwert (5 Einheiten) | Apoptose der meisten Plasmazellen, langlebige Gedaechtniszellen ruhen |
-| **D: Sekundaerkontakt** | Tag 60–63 (nur 1–3 Tage!) | Sofort massiver Ausstoss von hochaffin-spezifischem $IgG$ | Explosiv (1.000–5.000 Einheiten) | Direkte Reaktivierung der B-Gedaechtniszellen ohne Verzoegerung |
+AUFGABE (beschreiben, [AFB II]): Beschreibe den Befund mit Beleg und Einheit und deute ihn mit Immunbiologie: Antikoerper-Struktur und Klon.
 
-*Erkenntnis*: Durch den Pool langlebiger Gedaechtniszellen faellt die Verzoegerungsphase (Lag-Phase) beim Zweitkontakt quasi komplett weg; die Affinitaet und Titerhoehe uebertreffen die Erstinfektion um mindestens das Zehn- bis Hundertfache.
+HILFE:
+- Messdimension: Pruefe Titer, Zeitfenster und Immunglobulinklasse mit Kurvenvergleich; notiere nur die Werte, deute die Antwort noch nicht.
+- Strukturdimension: Pruefe variable gegen konstante Region mit Strukturanalyse; sammle nur die Merkmale, ohne das Urteil vorwegzunehmen.
+- Verfahrensdimension: Pruefe Erst- gegen Zweitkontakt mit Gedaechtnis-Test; ordne nur die Phasen, loese die Zuordnung noch nicht.
+
+COMPLETION (Lückentext):
+- Lies beide Saetze und ergaenze aus dem Gedaechtnis, ohne zurueckzublaettern:
+- ___ Selektion waehlt passende B-Zellen und formt Plasma- plus Gedaechtniszellen.
+- Ordne Selektion als ___ und pruefe die Richtung ohne Rueckblick.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Titerbefund mit Zeit- und Klassenanker (Immunbiologie: Antikoerper-Struktur und Klon) | 5 NP | Skizze mit Achsenbeschriftung als Alternativweg
+Strukturanalyse mit Fab-Fc-Bezug | 5 NP | Tabellenvergleich mit Messprotokoll als Alternativweg
+Urteil mit Gedaechtnisdeutung | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
 
 `Klausur-Satz: Bei Aufgaben zu Immunbiologie: Antikoerper-Struktur und Klonale Selektionstheorie muss die theoriegeleitete Begruendung stets durch exakte Fachtermini und empirische Belege abgesichert werden.`
 
 ## Schritt 5 — check: Das Konzeptduell
-VERGLEICH: Klonale Selektionstheorie (Burnet) versus Historische Instruktionstheorie (Pauling)
+VERGLEICH: Klonale Selektionstheorie (Burnet) versus Historische Instruktionstheorie (Pauling) 选程序：先看信号词再选路。
 
-- **Instruktionstheorie (Historischer Irrtum)**: Pauling postulierte, ein Polypeptid sei anfangs formlos flexibel und falte sich erst durch den direkten physischen Kontakt mit dem fremden Antigen wie weiches Wachs zu einer passenden Negativform um das Epitop herum.
-- **Klonale Selektionstheorie (Wissenschaftliche Realitaet)**: Die enorme Vielfalt von ueber $10^{11}$ verschiedenen Antigenrezeptoren entsteht bereits voellig unbeeinflusst von Aussenreizen waehrend der Lymphozyten-Reifung im Knochenmark durch genetische somatische Rekombination (V(D)J-Rekombination). Das Antigen waehlt lediglich aus dem bereits existierenden riesigen genetischen Katalog die passende Zelle aus!
+Weg A: Neutralfassung fuer die Wahl.
+- [Weg A] Wenn du Weg A waehlst, arbeitest du in Schritt 7 vor allem mit Zahlen, Formeln und Einheiten.
+Weg B: Neutralfassung fuer die Wahl.
+- [Weg B] Wenn du Weg B waehlst, arbeitest du in Schritt 7 vor allem mit Bildern, Ketten und Deutung.
 
+AUFGABE A: Welche Pruefgroesse verlangt Zahlen und Rechnung? Begruende ohne Mechanismus.
+AUFGABE B: Welche Frage verlangt Kette und Deutung? Begruende ohne Mechanismus.
+
+HILFE: Pruefe dimensionsgeleitet, welcher Weg passt: Messdimension mit Rechenansatz spricht fuer Zahlen und Weg A; Strukturdimension mit Typ-Test spricht fuer Zuordnung und Weg B; Bilddimension mit Bildvergleich sichert beide Wege. Ordne selbst zu; die Zuordnung wird nicht vorweggenommen.
+
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg A oder Weg B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Ueberfuehrt aus VERGLEICH (Vorwahl-Fassung): VERGLEICH: Klonale Selektionstheorie (Burnet) versus Historische Instruktionstheorie (Pauling) - **Instruktionstheorie (Historischer Irrtum)**: Pauling postulierte, ein Polypeptid sei anfangs formlos flexibel und falte sich erst durch den direkten physischen Kontakt mit dem fremden Antigen wie weiches Wachs zu einer passenden Negativform um das Epitop herum. - **Klonale Selektionstheorie (Wissenschaftliche Realitaet)**: Die enorme Vielfalt von ueber $10^{11}$ verschiedenen Antigenrezeptoren entsteht bereits voellig unbeeinflusst von Aussenreizen waehrend der Lymphozyten-Reifung im Knochenmark durch genetische somatische Rekombination (V(D)J-Rekombination). Das Antigen waehlt lediglich aus dem bereits existierenden riesigen genetischen Katalog die passende Zelle aus!
+- Ueberfuehrt aus Schritt-5-HILFE (Vorwahl-Fassung): Kein Spoiler in Vorwahl-HILFE bestaetigt, Vorwahl-Fassung enthielt keine HILFE mit Loesungszuordnung.
+- Mechanismus A: VERGLEICH: Klonale Selektionstheorie (Burnet) versus Historische Instruktionstheorie (Pauling) - **Instruktionstheorie (Historischer Irrtum)**: Pauling postulierte, ein Polypeptid sei anfangs formlos flexibel und falte sich erst durch den direkten physischen Kontakt mit dem fremden Antigen wie weiches Wachs zu einer passenden Negativform um das Epitop herum. - **Klonale Selektionstheorie (Wissensc
+- Mechanismus B: Siehe Vergleichs-Exzerpt, zweite Position ab Trennzeichen | im Exzerpt.
+- Ein-Satz-Kern: Klonale Selektion waehlt passende B-Zellen und formt Plasma- plus Gedaechtniszellen.
+
+`Klausur-Satz: Klonale Selektion waehlt passende B-Zellen und formt Plasma- plus Gedaechtniszellen.`
 ## Schritt 6 — szenario: Die Klausuraufgabe
+AUFGABE (beschreiben, [AFB III]): Beschreibe in ca. 150 Woertern Einordnung, zwei Belege mit Mechanismus und Schlussurteil zu Immunbiologie: Antikoerper-Struktur und Klon.
+
 Ein Patient erhaelt eine intramuskulaere Schutzimpfung gegen Tetanus-Toxoid. Vier Jahre spaeter verletzt er sich an einem rostigen Nagel im Garten.
 
-1. **AFB I**: Skizziere den grundlegenden Aufbau eines IgG-Molekuels mit variablen und konstanten Domaenen sowie Disulfidbruecken und benenne die Bindungsstelle fuer Makrophagen.
-2. **AFB II**: Erklaere anhand des Modells der klonalen Selektion, warum nach dem Zweitkontakt mit Tetanus-Bakterien im Garten innerhalb kuerzester Zeit schwere Krankheitssymptome verhindert werden.
-3. **AFB III**: Beurteile, warum eine passive Immunisierung (Injektion von fertigem Antiserum) im akuten Notfall zwar lebensrettend ist, jedoch keinen dauerhaften immunologischen Schutz vor kuenftigen Verletzungen bietet.
+1. [AFB I]: Skizziere den grundlegenden Aufbau eines IgG-Molekuels mit variablen und konstanten Domaenen sowie Disulfidbruecken und benenne die Bindungsstelle fuer Makrophagen.
+2. [AFB II]: Erklaere anhand des Modells der klonalen Selektion, warum nach dem Zweitkontakt mit Tetanus-Bakterien im Garten innerhalb kuerzester Zeit schwere Krankheitssymptome verhindert werden.
+3. [AFB III]: Beurteile, warum eine passive Immunisierung (Injektion von fertigem Antiserum) im akuten Notfall zwar lebensrettend ist, jedoch keinen dauerhaften immunologischen Schutz vor kuenftigen Verletzungen bietet.
 
-`Musterloesungshinweis`:
-- AFB I: Zwei schwere (H) und zwei leichte (L) Ketten, ueber Disulfidbruecken kovalent verknuepft. Y-Schenkel tragen variable N-terminale Domaenen (Fab, Paratop). Stamm besteht aus konstanten C-terminalen Regionen (Fc-Fragment), an das Phagozyten ueber Fc-Rezeptoren binden (Opsonierung).
-- AFB II: Beim Erstkontakt entstanden B-Gedaechtniszellen. Beim erneuten Eindringen erkennen diese das Tetanus-Epitop unmittelbar, durchlaufen ohne Zeitverzug klonale Expansion und differenzieren binnen 24–48 Stunden zu IgG-produzierenden Plasmazellen. Das Toxin wird neutralisiert, bevor es Synapsen laehmen kann.
-- AFB III: Passive Immunisierung fuehrt sofortige Antikoerper zu (schneller Titeranstieg), stimuliert jedoch weder antigenspezifische T-Helferzellen noch die B-Zell-Proliferation oder Gedaechtniszellbildung. Die verabreichten Fremd-Antikoerper besitzen eine Halbwertszeit von ca. 3 Wochen und werden proteolytisch abgebaut; das eigene Immunsystem bleibt naiv.
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Impfbefund mit Titeranker | 5 NP | Enger Beleg mit Zeile als Alternativweg
+Selektionsanalyse mit Klonbezug | 5 NP | Skizze mit Messwerten als Alternativweg
+Schutzurteil mit Passiv-Aktiv-Abgrenzung | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
 
+Musterloesungshinweis:
+- [AFB I]: Zwei schwere (H) und zwei leichte (L) Ketten, ueber Disulfidbruecken kovalent verknuepft. Y-Schenkel tragen variable N-terminale Domaenen (Fab, Paratop). Stamm besteht aus konstanten C-terminalen Regionen (Fc-Fragment), an das Phagozyten ueber Fc-Rezeptoren binden (Opsonierung).
+- [AFB II]: Beim Erstkontakt entstanden B-Gedaechtniszellen. Beim erneuten Eindringen erkennen diese das Tetanus-Epitop unmittelbar, durchlaufen ohne Zeitverzug klonale Expansion und differenzieren binnen 24–48 Stunden zu IgG-produzierenden Plasmazellen. Das Toxin wird neutralisiert, bevor es Synapsen laehmen kann.
+- [AFB III]: Passive Immunisierung fuehrt sofortige Antikoerper zu (schneller Titeranstieg), stimuliert jedoch weder antigenspezifische T-Helferzellen noch die B-Zell-Proliferation oder Gedaechtniszellbildung. Die verabreichten Fremd-Antikoerper besitzen eine Halbwertszeit von ca. 3 Wochen und werden proteolytisch abgebaut; das eigene Immunsystem bleibt naiv.
+
+KERNSATZ (auswendig):
+- Kernsatz: `Klonale Selektion waehlt passende B-Zellen und formt Plasma- plus Gedaechtniszellen.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = Antigen mit Epitop als Subjekt | Mechanismus = Rezeptorwahl plus Expansion mit Differenzierung als Mechanismus | Urteil = Urteil auf Sekundaerantwort mit IgG-Titer
+- Selbsttest: Klonale Selektion waehlt passende B-Zellen und formt Plasma- plus ___
 ## Schritt 7 — muendlich: Die muendliche Blitzpruefung
 Simuliere ein muendliches Abiturszenario:
 

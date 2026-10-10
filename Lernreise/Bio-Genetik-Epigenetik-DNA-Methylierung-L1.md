@@ -8,7 +8,7 @@ operatoren: [beschreiben, vergleichen, erklaeren]
 klausurrelevant: true
 datum: 2026-10-03
 tags: [EF, Bio, Genetik, Epigenetik, DNA-Methylierung, Histonacetylierung, Zwillingsforschung]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Genetik & Epigenetik: DNA-Methylierung und Histonmodifikation (L1, Ziel Klausur)
@@ -29,7 +29,7 @@ Zwei Zwillingsschwestern werden in Hamburg geboren. Sie sind eineiig: Aus einer 
 `Klausur-Satz: Epigenetische Modifikationen veraendern nicht die Basensequenz der DNA, sondern steuern die zellulaere Zugaenglichkeit des Chromatins fuer Transkriptionsfaktoren durch kovalente chemische Markierungen an DNA und Histonproteinen.`
 
 ## Schritt 2 — entdecken: Das molekulare Vokabular der Epigenetik
-PRETRAINING术语盒（核心4词，先读三遍中德，合书自测中文→德语）：
+PRETRAINING术语盒（核心4词，先读三遍中德，合书自测中文->德语）：
 
 - 表观遗传学 — Epigenetik: 研究在不改变DNA序列的情况下，基因表达发生的可遗传改变以及引起这些改变的分子机制学科。 Die Erforschung mitotisch oder meiotisch vererbbarer Veraenderungen der Genfunktion, die nicht auf einer Aenderung der DNA-Sequenz beruhen.
 - DNA甲基化 — DNA-Methylierung: 甲基化转移酶将甲基（$-CH_3$）共价结合到CpG岛胞嘧啶（Cytosin）5位碳原子上，从而阻止转录因子结合并导致基因静默。 Die enzymatische Anheftung von Methylgruppen an Cytosin-Basen (meist in CpG-Dinukleotiden), was zur dauerhaften Blockade der Transkription fuehrt.
@@ -65,11 +65,24 @@ Zustand B: GEN ABGESCHALTET (Heterochromatin / Transkription blockiert):
 
 [Werkzeug: balance-board]
 
-AUFGABE (beschreiben & erklaeren, AFB I/II):
-Im beruehmten Niederlaendischen Hungerwinter (Winter 1944/45) hungerte die Bevoelkerung unter deutscher Besatzung bei taeglich weniger als 800 Kilokalorien.
-Kinder von Muettern, die waehrend des ersten Trimesters dieser Hungerperiode schwanger waren, kamen oft mit normalem Geburtsgewicht zur Welt, litten jedoch fuenfzig Jahre spaeter signifikant haeufiger an Fettleibigkeit (Adipositas), Diabetes mellitus Typ 2 und Herz-Kreislauf-Erkrankungen.
-1. Erklaere anhand des IGF2-Gens (Insulin-like Growth Factor 2), wie fetale Naehrstoffknappheit zu stabilen epigenetischen Veraenderungen fuehrt (Thrifty-Phenotype-Hypothese).
-2. Erklaere, warum diese epigenetische Anpassung im Mutterleib waehrend des Nachkriegs-Wirtschaftswunders ploetzlich zur toedlichen Falle fuer die Gesundheit der Betroffenen wurde.
+AUFGABE (beschreiben & erklaeren, [AFB I/II]): Beschreibe [AFB II]
+
+HILFE:
+- Formdimension: Pruefe Promotor, Methylierung und Chromatinzustand mit Strukturanalyse; benenne nur die Form, deute die Aktivitaet noch nicht.
+- Verfahrensdimension: Pruefe Umwelt gegen Anlage mit Zwillings- oder Mutantenvergleich; sammle nur die Faelle, ohne das Urteil vorwegzunehmen.
+- Regeldimension: Pruefe An- gegen Ab-Schaltung mit Schaltplan; notiere nur die Zustaende, ohne die Deutung zu setzen.
+
+COMPLETION (Lückentext):
+- Lies beide Saetze und ergaenze aus dem Gedaechtnis, ohne zurueckzublaettern:
+- ___ schliesst Gene, Acetylierung oeffnet Chromatin ohne Sequenzaenderung.
+- Ordne Acetylierung als ___ und pruefe die Richtung ohne Rueckblick.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Strukturbefund mit Methylierungsanker (Genetik & Epigenetik: DNA-Methylierung und H) | 5 NP | Skizze mit Achsenbeschriftung als Alternativweg
+Umwelt-Anlage-Test mit Zwillingsbeleg | 5 NP | Tabellenvergleich mit Messprotokoll als Alternativweg
+Urteil mit Praegungsdeutung | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
 
 MUSTERLOESUNG:
 1. Epigenetische Praegung des IGF2-Gens:
@@ -84,36 +97,56 @@ MUSTERLOESUNG:
 `Klausur-Satz: Bei Aufgaben zu Genetik & Epigenetik: DNA-Methylierung und Histonmodifikation muss die theoriegeleitete Begruendung stets durch exakte Fachtermini und empirische Belege abgesichert werden.`
 
 ## Schritt 5 — ausprobieren: Duell der molekularen Schalter: Anheften vs. Abspalten
+VERGLEICH: DNA-Methylierung (Gen-Silencing) vs. Histon-Acetylierung (Gen-Aktivierung) (选概念) 选概念：先看 Signalwort 再选路。
 
-VERGLEICH: DNA-Methylierung (Gen-Silencing) vs. Histon-Acetylierung (Gen-Aktivierung) (选概念)
+Position A (DNA-Methylierung): Neutralfassung fuer die Wahl.
+- [Weg A] Wenn du Weg A waehlst, arbeitest du in Schritt 7 vor allem mit Zahlen, Formeln und Einheiten.
+Position B (Histon-Acetylierung): Neutralfassung fuer die Wahl.
+- [Weg B] Wenn du Weg B waehlst, arbeitest du in Schritt 7 vor allem mit Bildern, Ketten und Deutung.
 
-- Position A (DNA-Methylierung):
-  - Angriffspunkt: Direkt an den Cytosin-Basen der DNA (CpG-Inseln).
-  - Enzym: DNA-Methyltransferasen (DNMT).
-  - Wirkung: Zieht Methyl-Bindeproteine an, blockiert sterisch Transkriptionsfaktoren; fuehrt zu extrem stabiler, langfristiger Gen-Stilllegung.
-- Position B (Histon-Acetylierung):
-  - Angriffspunkt: An den basischen Aminosaeuren der Histonproteine (Chromatin-Ebene).
-  - Enzym: Histon-Acetyltransferasen (HAT) vs. Histon-Deacetylasen (HDAC).
-  - Wirkung: Lockert die Ladungsbindung zwischen Histon (+) und DNA (-); schafft temporaeren Raum fuer RNA-Polymerasen (dynamischer Schalter).
+AUFGABE A: Welche Pruefgroesse verlangt Zahlen und Rechnung? Begruende ohne Mechanismus.
+AUFGABE B: Welche Frage verlangt Kette und Deutung? Begruende ohne Mechanismus.
 
-Entscheidungsregel fuer die Klausur:
-Wird nach `Krebsentstehung durch Epigenetik` gefragt, nenne immer das typische Doppelphaenomen in Tumorzellen: Hypermethylierung schaltet schuetzende Tumorsuppressorgene (wie p53) ab, waehrend globale Hypomethylierung gefaehrliche Onkogene aktiviert und Chromosomen instabil macht!
+HILFE: Pruefe dimensionsgeleitet, welcher Weg passt: Messdimension mit Rechenansatz spricht fuer Zahlen und Weg A; Strukturdimension mit Typ-Test spricht fuer Zuordnung und Weg B; Bilddimension mit Bildvergleich sichert beide Wege. Ordne selbst zu; die Zuordnung wird nicht vorweggenommen.
 
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg A oder Weg B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Ueberfuehrt aus VERGLEICH (Vorwahl-Fassung): Position A (DNA-Methylierung): - Angriffspunkt: Direkt an den Cytosin-Basen der DNA (CpG-Inseln). - Enzym: DNA-Methyltransferasen (DNMT). - Wirkung: Zieht Methyl-Bindeproteine an, blockiert sterisch Transkriptionsfaktoren; fuehrt zu extrem stabiler, langfristiger Gen-Stilllegung. - | Position B (Histon-Acetylierung): - Angriffspunkt: An den basischen Aminosaeuren der Histonproteine (Chromatin-Ebene). - Enzym: Histon-Acetyltransferasen (HAT) vs. Histon-Deacetylasen (HDAC). - Wirkung: Lockert die Ladungsbindung zwischen Histon (+) und DNA (-); schafft temporaeren Raum fuer RNA-Polymerasen (dynamischer Schalter).
+- Ueberfuehrt aus Schritt-5-HILFE (Vorwahl-Fassung): Kein Spoiler in Vorwahl-HILFE bestaetigt, Vorwahl-Fassung enthielt keine HILFE mit Loesungszuordnung.
+- Mechanismus A: Position A (DNA-Methylierung): - Angriffspunkt: Direkt an den Cytosin-Basen der DNA (CpG-Inseln). - Enzym: DNA-Methyltransferasen (DNMT). - Wirkung: Zieht Methyl-Bindeproteine an, blockiert sterisch Transkriptionsfaktoren; fuehrt zu extrem stabiler, langfristiger Gen-Stilllegung. -
+- Mechanismus B: Position B (Histon-Acetylierung): - Angriffspunkt: An den basischen Aminosaeuren der Histonproteine (Chromatin-Ebene). - Enzym: Histon-Acetyltransferasen (HAT) vs. Histon-Deacetylasen (HDAC). - Wirkung: Lockert die Ladungsbindung zwischen Histon (+) und DNA (-); schafft temporaeren Raum fuer RNA-Polymerasen (dynamischer Schalter).
+- Ein-Satz-Kern: Methylierung schliesst Gene, Acetylierung oeffnet Chromatin ohne Sequenzaenderung.
+
+`Klausur-Satz: Methylierung schliesst Gene, Acetylierung oeffnet Chromatin ohne Sequenzaenderung.`
 ## Schritt 6 — check: Klausur-Transfer Epigenetische Krebstherapie
 
 PRUEFUNGSSZENARIO (KLP NRW Biologie LK Inhaltsfeld 3: Genetik):
 
-### AFB I: Basiskonzepte
+AUFGABE (beschreiben, [AFB III]): Beschreibe in ca. 150 Woertern Einordnung, zwei Belege mit Mechanismus und Schlussurteil zu Genetik & Epigenetik: DNA-Methylierung und H.
+
+### [AFB I]: Basiskonzepte
 Definiere die Begriffe CpG-Insel, Nukleosom und Epigenetisches Gedaechtnis.
 
-### AFB II: Molekularer Therapieansatz
+### [AFB II]: Molekularer Therapieansatz
 In der modernen Krebstherapie werden HDAC-Inhibitoren (Hemmstoffe der Histon-Deacetylasen) eingesetzt.
 Erklaere auf molekularer Ebene, wie HDAC-Inhibitoren das Ablesen von Tumorsuppressorgenen in Krebszellen reaktivieren und dadurch den programmierten Zelltod (Apoptose) des Tumors ausloesen koennen.
 
-### AFB III: Ethische Reflexion der Transgenerationalen Epigenetik
+### [AFB III]: Ethische Reflexion der Transgenerationalen Epigenetik
 Experimente an Maeusen belegen, dass traumatischer Geruchsstress noch bei den Enkeln zu Angststoerungen fuehrt, obwohl diese niemals mit dem Geruch in Kontakt kamen.
 Diskutiere die ethischen und gesellschaftlichen Konsequenzen, wenn sich bestaetigt, dass individuelles Rauchverhalten oder psychische Traumata epigenetisch ueber Keimzellen an nachfolgende Generationen weitervererbt werden.
 
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Hungerwinter-Befund mit IGF2-Anker | 5 NP | Enger Beleg mit Zeile als Alternativweg
+Methylierungstest mit Schalterbezug | 5 NP | Skizze mit Messwerten als Alternativweg
+Therapieurteil mit HDAC-Beleg | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
+
+KERNSATZ (auswendig):
+- Kernsatz: `Methylierung schliesst Gene, Acetylierung oeffnet Chromatin ohne Sequenzaenderung.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = CpG-Insel mit Methylgruppe als Subjekt | Mechanismus = Chromatin-Umbau mit Transkriptionssperre als Mechanismus | Urteil = Urteil auf Praegung mit Hungerwinter-Beleg
+- Selbsttest: Methylierung schliesst Gene, Acetylierung oeffnet Chromatin ohne ___
 ## Schritt 7 — check: Format-Check & Scoring
 
 30 XP Schnelltest zur Verstaendigungssicherung:

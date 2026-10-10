@@ -8,7 +8,7 @@ operatoren: [beschreiben, vergleichen, analysieren]
 klausurrelevant: true
 datum: 2026-10-03
 tags: [EF, Bio, Genetik, Molekularbiologie, Operon, Lac-Operon, Genregulation]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Genregulation bei Prokaryoten: Das Operon-Modell (L1, Ziel Klausur)
@@ -29,7 +29,7 @@ Ein winziges Bakterium der Spezies Escherichia coli in deinem Darm besitzt kein 
 `Klausur-Satz: Das Operon-Modell nach Jacob und Monod reguliert die Transkription prokaryotischer Strukturgene durch reversible Bindung eines allosterischen Repressors an die Operator-DNA.`
 
 ## Schritt 2 — entdecken: Die Bausteine des bakteriellen Schaltkreises
-PRETRAINING术语盒（核心4词，先读三遍中德，合书自测中文→德语）：
+PRETRAINING术语盒（核心4词，先读三遍中德，合书自测中文->德语）：
 
 - 操纵子 — Operon: 原核生物中由启动子、操纵基因及一组功能相关的结构基因组成的协同转录功能单位。 Funktionseinheit aus Promotor, Operator und funktionell verknuepften Strukturgenen.
 - 调节基因 — Regulatorgen: 编码阻遏蛋白或激活蛋白的基因，通常位于操纵子外部并自主转录。 Gen, das die Information fuer das allosterische Repressorprotein traegt.
@@ -61,13 +61,24 @@ Operator wird FREI -> RNA-Polymerase transkribiert Strukturgen-Batterie!
 
 [Werkzeug: balance-board]
 
-AUFGABE (beschreiben & analysieren, AFB I/II):
-In einem molekularbiologischen Experiment werden drei verschiedene Mutantenstamme von Escherichia coli auf einem Naehrmedium untersucht, das ausschliesslich Laktose enthaelt:
-- Stamm A: Deletionsmutation im Operator ($O^-$), sodass der Repressor nicht mehr binden kann.
-- Stamm B: Nonsense-Mutation im Regulatorgen ($I^-$), sodass kein funktionsfaehiges Repressorprotein gebildet wird.
-- Stamm C: Punktmutation im Regulatorgen ($I^s$, Super-Repressor), bei der die Allolaktose-Bindestelle zerstoert ist, die DNA-Bindedomäne aber intakt bleibt.
-1. Beschreibe fuer alle drei Staemme, ob die Strukturgene (lacZ, lacY, lacA) in Anwesenheit bzw. Abwesenheit von Laktose synthetisiert werden.
-2. Analysiere, welcher der drei Staemme auf dem reinen Laktose-Naehrmedium sterben wird.
+AUFGABE (beschreiben & analysieren, [AFB I/II]): Beschreibe [AFB II]
+
+HILFE:
+- Formdimension: Pruefe Promotor, Methylierung und Chromatinzustand mit Strukturanalyse; benenne nur die Form, deute die Aktivitaet noch nicht.
+- Verfahrensdimension: Pruefe Umwelt gegen Anlage mit Zwillings- oder Mutantenvergleich; sammle nur die Faelle, ohne das Urteil vorwegzunehmen.
+- Regeldimension: Pruefe An- gegen Ab-Schaltung mit Schaltplan; notiere nur die Zustaende, ohne die Deutung zu setzen.
+
+COMPLETION (Lückentext):
+- Lies beide Saetze und ergaenze aus dem Gedaechtnis, ohne zurueckzublaettern:
+- ___ schaltet bei Lactose an, Trp-Operon schaltet bei Tryptophan ab.
+- Ordne Lactose als ___ und pruefe die Richtung ohne Rueckblick.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Schaltbefund mit Operatoranker (Genregulation bei Prokaryoten: Das Operon-Mo) | 5 NP | Skizze mit Achsenbeschriftung als Alternativweg
+Effektortest mit Transkriptionsbezug | 5 NP | Tabellenvergleich mit Messprotokoll als Alternativweg
+Urteil mit Anpassungsdeutung | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
 
 MUSTERLOESUNG:
 1. Syntheseverhalten:
@@ -80,36 +91,56 @@ MUSTERLOESUNG:
 `Klausur-Satz: Bei Aufgaben zu Genregulation bei Prokaryoten: Das Operon-Modell muss die theoriegeleitete Begruendung stets durch exakte Fachtermini und empirische Belege abgesichert werden.`
 
 ## Schritt 5 — ausprobieren: Duell der Regulationsmodelle: Abbau vs. Aufbau
+VERGLEICH: Substrat-Induktion (Lac-Operon) vs. Endprodukt-Repression (Trp-Operon) (选概念) 选概念：先看 Signalwort 再选路。
 
-VERGLEICH: Substrat-Induktion (Lac-Operon) vs. Endprodukt-Repression (Trp-Operon) (选概念)
+Position A (Substrat-Induktion / Katabolismus): Neutralfassung fuer die Wahl.
+- [Weg A] Wenn du Weg A waehlst, arbeitest du in Schritt 7 vor allem mit Zahlen, Formeln und Einheiten.
+Position B (Endprodukt-Repression / Anabolismus): Neutralfassung fuer die Wahl.
+- [Weg B] Wenn du Weg B waehlst, arbeitest du in Schritt 7 vor allem mit Bildern, Ketten und Deutung.
 
-- Position A (Substrat-Induktion / Katabolismus):
-  - Repressor von Natur aus: AKTIV (Schranke standardmaessig geschlossen).
-  - Signalmolekuels: Substrat (Laktose) bindet an Repressor -> inaktiviert ihn -> schaltet Gen AN.
-  - Ziel: Spart Energie, indem Enzyme nur bei vorhandener Nahrung produziert werden.
-- Position B (Endprodukt-Repression / Anabolismus):
-  - Repressor von Natur aus: INAKTIV (Schranke standardmaessig offen).
-  - Signalmolekuel: Endprodukt (Tryptophan) fungiert als Co-Repressor -> aktiviert Repressor -> schaltet Gen AUS.
-  - Ziel: Verhindert Ueberproduktion und Vergiftung durch Stoffwechselendprodukte.
+AUFGABE A: Welche Pruefgroesse verlangt Zahlen und Rechnung? Begruende ohne Mechanismus.
+AUFGABE B: Welche Frage verlangt Kette und Deutung? Begruende ohne Mechanismus.
 
-Entscheidungsregel fuer die Klausur:
-Geht es um einen `abbauenden Stoffwechselweg` (zuckerverwertend), handelt es sich um Substrat-Induktion. Geht es um die `Synthese lebenswichtiger Aminosaeuren`, handelt es sich um Endprodukt-Repression!
+HILFE: Pruefe dimensionsgeleitet, welcher Weg passt: Messdimension mit Rechenansatz spricht fuer Zahlen und Weg A; Strukturdimension mit Typ-Test spricht fuer Zuordnung und Weg B; Bilddimension mit Bildvergleich sichert beide Wege. Ordne selbst zu; die Zuordnung wird nicht vorweggenommen.
 
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg A oder Weg B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Ueberfuehrt aus VERGLEICH (Vorwahl-Fassung): Position A (Substrat-Induktion / Katabolismus): - Repressor von Natur aus: AKTIV (Schranke standardmaessig geschlossen). - Signalmolekuels: Substrat (Laktose) bindet an Repressor -> inaktiviert ihn -> schaltet Gen AN. - Ziel: Spart Energie, indem Enzyme nur bei vorhandener Nahrung produziert werden. - | Position B (Endprodukt-Repression / Anabolismus): - Repressor von Natur aus: INAKTIV (Schranke standardmaessig offen). - Signalmolekuel: Endprodukt (Tryptophan) fungiert als Co-Repressor -> aktiviert Repressor -> schaltet Gen AUS. - Ziel: Verhindert Ueberproduktion und Vergiftung durch Stoffwechselendprodukte.
+- Ueberfuehrt aus Schritt-5-HILFE (Vorwahl-Fassung): Kein Spoiler in Vorwahl-HILFE bestaetigt, Vorwahl-Fassung enthielt keine HILFE mit Loesungszuordnung.
+- Mechanismus A: Position A (Substrat-Induktion / Katabolismus): - Repressor von Natur aus: AKTIV (Schranke standardmaessig geschlossen). - Signalmolekuels: Substrat (Laktose) bindet an Repressor -> inaktiviert ihn -> schaltet Gen AN. - Ziel: Spart Energie, indem Enzyme nur bei vorhandener Nahrung produziert werden. -
+- Mechanismus B: Position B (Endprodukt-Repression / Anabolismus): - Repressor von Natur aus: INAKTIV (Schranke standardmaessig offen). - Signalmolekuel: Endprodukt (Tryptophan) fungiert als Co-Repressor -> aktiviert Repressor -> schaltet Gen AUS. - Ziel: Verhindert Ueberproduktion und Vergiftung durch Stoffwechselendprodukte.
+- Ein-Satz-Kern: Lac-Operon schaltet bei Lactose an, Trp-Operon schaltet bei Tryptophan ab.
+
+`Klausur-Satz: Lac-Operon schaltet bei Lactose an, Trp-Operon schaltet bei Tryptophan ab.`
 ## Schritt 6 — check: Klausur-Transfer Diauxie-Kurve und Katabolit-Repression
 
 PRUEFUNGSSZENARIO (KLP NRW Biologie LK Inhaltsfeld 3: Genetik):
 
-### AFB I: Basiskonzept
+AUFGABE (beschreiben, [AFB III]): Beschreibe in ca. 150 Woertern Einordnung, zwei Belege mit Mechanismus und Schlussurteil zu Genregulation bei Prokaryoten: Das Operon-Mo.
+
+### [AFB I]: Basiskonzept
 Definiere die Begriffe Polyzystronische mRNA, Promotor und Allosterisches Protein.
 
-### AFB II: Analyse einer Wachstumskurve
+### [AFB II]: Analyse einer Wachstumskurve
 Wird E. coli in einer Naehrmedienmischung aus Glukose und Laktose kultiviert, beobachtet man ein typisches zwei-phasiges Wachstum (Diauxie-Kurve) mit einer Zwischenpause (Lag-Phase).
 Erklaere dieses Phaenomen auf molekularer Ebene unter Einbezug von cAMP und dem Katabolit-Aktivator-Protein (CAP).
 
-### AFB III: Evolutionaere Bewertung
+### [AFB III]: Evolutionaere Bewertung
 Bakterien organisieren funktionell gekoppelte Enzyme in gemeinsamen Operons auf einem einzigen Transkript, waehrend menschliche Zellen fast ausnahmslos monozystronische Gene mit komplexen Intron-Exon-Strukturen und Enhancern aufweisen.
 Beurteile die evolutionaeren Vor- und Nachteile dieses prokaryotischen Prinzips hinsichtlich Teilungsrate und Genomkompaktheit.
 
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Wachstumsbefund mit Zuckeranker | 5 NP | Enger Beleg mit Zeile als Alternativweg
+Schaltanalyse mit Repressorbezug | 5 NP | Skizze mit Messwerten als Alternativweg
+Anpassungsurteil mit Mutantenbeleg | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
+
+KERNSATZ (auswendig):
+- Kernsatz: `Lac-Operon schaltet bei Lactose an, Trp-Operon schaltet bei Tryptophan ab.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = Operator mit Repressor als Subjekt | Mechanismus = Effektorbindung mit Transkriptionsschalter als Mechanismus | Urteil = Urteil auf Anpassung mit Sparlogik
+- Selbsttest: ___ schaltet bei Lactose an, Trp-Operon schaltet bei Tryptophan ab.
 ## Schritt 7 — check: Format-Check & Scoring
 
 30 XP Schnelltest zur Verstaendigungssicherung:

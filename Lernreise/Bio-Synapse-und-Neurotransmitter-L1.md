@@ -8,7 +8,7 @@ operatoren: [beschreiben, erklaeren, analysieren]
 klausurrelevant: true
 datum: 2026-10-03
 tags: [EF, Bio, Neurobiologie, Synapse, Neurotransmitter, Acetylcholin, Synapsengifte]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Die chemische Synapse: Neurotransmitter und synaptische Gifte (L1, Ziel Klausur)
@@ -31,7 +31,7 @@ Hook / Phaenomen: Stell dir vor, du faehrst mit einem ICE auf einer Hochgeschwin
 `Klausur-Satz: Die chemische Synapse ermoeglicht eine unidirektionale Signaltransmission sowie die hemmende oder erregende Modulation neuronaler Schaltkreise durch quantale Transmitter-Exozytose.`
 
 ## Schritt 2 — entdecken: Ausruestungskiste der Synapsen-Unit
-PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
+PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文->德语，Evidenz：pretraining降认知负荷）：
 
 中文在上，德语在下：
 
@@ -102,7 +102,7 @@ BEISPIEL（正确例题示范，含教具操作与解答）：
 
 [Werkzeug: balance-board]
 
-AUFGABE (beschreiben & analysieren, AFB I/II)：
+AUFGABE (beschreiben & analysieren, [AFB I/II])： Beschreibe [AFB II]
 Im Rahmen einer physiologischen Versuchsreihe werden zwei isolierte Nerv-Muskel-Praeparate mit unterschiedlichen Reagenzien behandelt und anschliessend elektrisch gereizt:
 - Praeparat A wird mit dem suedamerikanischen Pfeilgift **Curare** versetzt. Bei Reizung der Nervenfaser entsteht im Neuron ein normales Aktionspotenzial, an der motorischen Endplatte der Muskelzelle ist jedoch keinerlei Kontraktion messbar. Eine Gabe zusaetzlicher Acetylcholin-Molekuele aendert nichts.
 - Praeparat B wird mit dem Insektizid **E605 (Parathion)** behandelt. Bei einem einzelnen kurzen Reiz zeigt der Muskel eine minutenlange, ununterbrochene krampfartige Dauerkontraktion.
@@ -110,9 +110,21 @@ Im Rahmen einer physiologischen Versuchsreihe werden zwei isolierte Nerv-Muskel-
 2. Analysieren Sie die Ursachen fuer die gegensaetzlichen klinischen Symptome (schlaffe Laehmung bei Curare vs. spastische Verkrampfung bei E605). (20 BE)
 
 HILFE:
-1. Schritt 1: Curare identifizieren: Kompetitiver Antagonist an den nikotinischen Acetylcholin-Rezeptoren der postsynaptischen Membran. Es blockiert die Bindungsstelle, oeffnet den Ionenkanal aber nicht.
-2. Schritt 2: E605 identifizieren: Irreversibler Hemmstoff der Acetylcholinesterase im synaptischen Spalt.
-3. Schritt 3: Symptome ableiten: Curare = kein $Na^+$-Einstrom $\to$ kein EPSP $\to$ Muskel bleibt schlaff. E605 = ACh wird nicht abgebaut $\to$ verharrt im Spalt $\to$ permanente Rezeptoraktivierung $\to$ Dauerdepolarisation $\to$ Krampf.
+- Messdimension: Pruefe Potenzial, Schwelle und Zeitverlauf mit Kurvenvergleich; notiere nur die Werte, deute die Phase noch nicht.
+- Kanaldimension: Pruefe Natrium-, Kalium- und Calciumkanal mit Blockertest; sammle nur die Zustaende, ohne das Urteil vorwegzunehmen.
+- Bilddimension: Pruefe Spalt, Vesikel und Antwort mit Bildvergleich; notiere Bild und Wirkung, ohne die Deutung zu setzen.
+
+COMPLETION (Lückentext):
+- Lies beide Saetze und ergaenze aus dem Gedaechtnis, ohne zurueckzublaettern:
+- ___ oeffnet Vesikel, Transmitter oeffnet Kanaele und Enzyme beenden das Signal.
+- Ordne Vesikel als ___ und pruefe die Richtung ohne Rueckblick.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Kurvenbefund mit Schwellenanker (Die chemische Synapse: Neurotransmitter und) | 5 NP | Skizze mit Achsenbeschriftung als Alternativweg
+Kanalblockertest mit Ionenbezug | 5 NP | Tabellenvergleich mit Messprotokoll als Alternativweg
+Urteil mit Leitungsbeleg | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
 
 MUSTERLÖSUNG:
 1. Molekulare Angriffsorte und Wirkmechanismen:
@@ -125,23 +137,27 @@ MUSTERLÖSUNG:
 `Klausur-Satz: Waehrend Rezeptorblocker wie Curare die Entstehung postsynaptischer Potenziale verhindern, fuehren Esterase-Hemmer wie E605 ueber Akkumulation des Transmitters zu einer exzitatorischen Dauerdepolarisation.`
 
 ## Schritt 5 — ausprobieren: Duell der Synapsen: Erregend vs. Hemmend
+VERGLEICH: Exzitatorische Synapse (EPSP) vs. Inhibitorische Synapse (IPSP) 选程序：先看信号词再选路。
 
-VERGLEICH: Exzitatorische Synapse (EPSP) vs. Inhibitorische Synapse (IPSP)
+Position A (Exzitatorische Synapse / Beschleuniger): Neutralfassung fuer die Wahl.
+- [Weg A] Wenn du Weg A waehlst, arbeitest du in Schritt 7 vor allem mit Zahlen, Formeln und Einheiten.
+Position B (Inhibitorische Synapse / Bremse): Neutralfassung fuer die Wahl.
+- [Weg B] Wenn du Weg B waehlst, arbeitest du in Schritt 7 vor allem mit Bildern, Ketten und Deutung.
 
-- Position A (Exzitatorische Synapse / Beschleuniger):
-  - Neurotransmitter: Acetylcholin, Glutamat.
-  - Ionenstrom: Oeffnung von ligandengesteuerten Kationenkanälen $\implies$ massiver Einstrom von Natrium-Ionen ($Na^+$) in die postsynaptische Zelle.
-  - Membranwirkung: Lokale Depolarisation (Membranpotenzial steigt von -70 mV z.B. auf -60 mV an).
-  - Funktion: Treibt das Membranpotenzial näher an den Schwellenwert (-50 mV) heran; foerdert das Feuern eines neuen APs.
-- Position B (Inhibitorische Synapse / Bremse):
-  - Neurotransmitter: GABA ($\gamma$-Aminobuttersaeure), Glycin.
-  - Ionenstrom: Oeffnung von Anionenkanälen $\implies$ Einstrom von Chlorid-Ionen ($Cl^-$) bzw. Ausstrom von Kalium-Ionen ($K^+$).
-  - Membranwirkung: Lokale Hyperpolarisation (Membranpotenzial sinkt von -70 mV auf z.B. -80 mV ab).
-  - Funktion: Entfernt das Potenzial noch weiter vom Schwellenwert; verhindert gezielt die Weiterleitung unnoetiger oder stoerender Signale.
+AUFGABE A: Welche Pruefgroesse verlangt Zahlen und Rechnung? Begruende ohne Mechanismus.
+AUFGABE B: Welche Frage verlangt Kette und Deutung? Begruende ohne Mechanismus.
 
-Entscheidungsregel fuer die Klausur:
-Wird nach `der Verrechnung am Neuron` gefragt: Immer betonen, dass EPSPs und IPSPs am Zellkoerper elektrotonisch wandern und am **Axonhuegel** mathematisch addiert werden — erst wenn die Netto-Summe dort $-50\text{ mV}$ ueberschreitet, entsteht ein Aktionspotenzial!
+HILFE: Pruefe dimensionsgeleitet, welcher Weg passt: Messdimension mit Rechenansatz spricht fuer Zahlen und Weg A; Strukturdimension mit Typ-Test spricht fuer Zuordnung und Weg B; Bilddimension mit Bildvergleich sichert beide Wege. Ordne selbst zu; die Zuordnung wird nicht vorweggenommen.
 
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg A oder Weg B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Ueberfuehrt aus VERGLEICH (Vorwahl-Fassung): Position A (Exzitatorische Synapse / Beschleuniger): - Neurotransmitter: Acetylcholin, Glutamat. - Ionenstrom: Oeffnung von ligandengesteuerten Kationenkanälen $\implies$ massiver Einstrom von Natrium-Ionen ($Na^+$) in die postsynaptische Zelle. - Membranwirkung: Lokale Depolarisation (Membranpotenzial steigt von -70 mV z.B. auf -60 mV an). - Funktion: Treibt das Membranpotenzial näher an den Schwellenwert (-50 mV) heran; foerdert das Feuern eines neuen APs. - | Position B (Inhibitorische Synapse / Bremse): - Neurotransmitter: GABA ($\gamma$-Aminobuttersaeure), Glycin. - Ionenstrom: Oeffnung von Anionenkanälen $\implies$ Einstrom von Chlorid-Ionen ($Cl^-$) bzw. Ausstrom von Kalium-Ionen ($K^+$). - Membranwirkung: Lokale Hyperpolarisation (Membranpotenzial sinkt von -70 mV auf z.B. -80 mV ab). - Funktion: Entfernt das Potenzial noch weiter vom Schwellenwert; verhindert gezielt die Weiterleitung unnoetiger oder stoerender Signale.
+- Ueberfuehrt aus Schritt-5-HILFE (Vorwahl-Fassung): Kein Spoiler in Vorwahl-HILFE bestaetigt, Vorwahl-Fassung enthielt keine HILFE mit Loesungszuordnung.
+- Mechanismus A: Position A (Exzitatorische Synapse / Beschleuniger): - Neurotransmitter: Acetylcholin, Glutamat. - Ionenstrom: Oeffnung von ligandengesteuerten Kationenkanälen $\implies$ massiver Einstrom von Natrium-Ionen ($Na^+$) in die postsynaptische Zelle. - Membranwirkung: Lokale Depolarisation (Membranpotenzial steigt von -70 mV z.B. auf -60 mV an). - Funktion: Treibt das Membranpotenzial näher an den Schwellenwert (-50 mV) heran; foerdert das Feuern eines neuen APs. -
+- Mechanismus B: Position B (Inhibitorische Synapse / Bremse): - Neurotransmitter: GABA ($\gamma$-Aminobuttersaeure), Glycin. - Ionenstrom: Oeffnung von Anionenkanälen $\implies$ Einstrom von Chlorid-Ionen ($Cl^-$) bzw. Ausstrom von Kalium-Ionen ($K^+$). - Membranwirkung: Lokale Hyperpolarisation (Membranpotenzial sinkt von -70 mV auf z.B. -80 mV ab). - Funktion: Entfernt das Potenzial noch weiter vom Schwellenwert; verhindert gezielt die Weiterleitung unnoetiger oder stoerender Signale.
+- Ein-Satz-Kern: Calcium oeffnet Vesikel, Transmitter oeffnet Kanaele und Enzyme beenden das Signal.
+
+`Klausur-Satz: Calcium oeffnet Vesikel, Transmitter oeffnet Kanaele und Enzyme beenden das Signal.`
 ## Schritt 6 — check: Klausur-Transfer Tetanus-Toxin & Renshaw-Zellen
 PRÜFUNGSSZENARIO (KLP NRW Biologie Q1 Inhaltsfeld 5: Neurobiologie / Krankheitsmodelle):
 
@@ -157,6 +173,8 @@ ERWARTUNGSHORIZONT:
 - AFB III: Unter normalen Bedingungen schuetzt das Glycin der Renshaw-Zellen durch Ausloesung von IPSPs die Motoneurone vor Ueberlastung (rekurrente Hemmung). Durch den Ausfall dieser hemmenden Bremse entfallen saemtliche inhibitorischen Signale. Die Motoneurone feuern nun ununterbrochen hochfrequente Salven von Aktionspotenzialen an saemtliche Skelettmuskeln. Da Agonisten und Antagonisten gleichzeitig maximal kontrahieren, gewinnen die staerkeren Muskelgruppen: Die mimische Gesichtsmuskulatur verzieht sich zur fratzenhaften Grimasse ("Teufelsgrinsen"), und die maechtige autochthone Rueckenmuskulatur ueberstreckt den gesamten Koerper zu einem bogenfoermigen Krampf (Opisthotonus). Der Patient erleidet qualvolle Muskelrisse und stirbt an einer Laehmung der Atemmuskulatur im Krampfzustand.
 
 ## Schritt 7 — check: Format-Check & Scoring
+AUFGABE (beschreiben, [AFB III]): Beschreibe in ca. 150 Woertern Einordnung, zwei Belege mit Mechanismus und Schlussurteil zu Die chemische Synapse: Neurotransmitter und.
+
 30 XP Schnelltest zur Verstaendigungssicherung:
 
 FRAGE: Welche Ionen loesen nach Ankunft des Aktionspotenzials im Endknoepfchen durch ihren Einstrom die Verschmelzung der Transmittervesikel mit der praesynaptischen Membran aus?
@@ -168,6 +186,18 @@ ANTWORT: Acetylcholinesterase (AChE).
 FRAGE: Welche Art von postsynaptischem Potenzial (EPSP oder IPSP) entsteht typischerweise durch den Einstrom von Chlorid-Ionen ($Cl^-$) in die postsynaptische Zelle?
 ANTWORT: Ein inhibitorisches postsynaptisches Potenzial (IPSP / Hyperpolarisation).
 
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Giftbefund mit Kanalanker | 5 NP | Enger Beleg mit Zeile als Alternativweg
+Phasenanalyse mit Refraktaerbezug | 5 NP | Skizze mit Messwerten als Alternativweg
+Leitungsurteil mit Frequenzbeleg | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
+
+KERNSATZ (auswendig):
+- Kernsatz: `Calcium oeffnet Vesikel, Transmitter oeffnet Kanaele und Enzyme beenden das Signal.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = Aktionspotenzial mit Calcium als Subjekt | Mechanismus = Vesikelfusion plus Rezeptorantwort als Mechanismus | Urteil = Urteil auf Erregung mit Giftbeleg
+- Selbsttest: Calcium oeffnet Vesikel, ___ oeffnet Kanaele und Enzyme beenden das Signal.
 ## Schritt 8 — reflexion: Meisterschaft & Naechste Mission
 REFLEXION:
 Du beherrschst nun die komplexeste molekulare Schaltstelle der gesamten Neurobiologie. Du kannst synaptische Prozesse bis ins atomare Detail erklaeren, Summationseffekte am Axonhuegel berechnen und die Wirkungsweise weltberuehmter Gifte und Medikamente im Abitur analysieren.

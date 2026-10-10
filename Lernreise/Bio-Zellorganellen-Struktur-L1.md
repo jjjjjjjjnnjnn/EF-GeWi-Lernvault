@@ -8,7 +8,7 @@ operatoren: [beschreiben, erklaeren, beurteilen]
 klausurrelevant: true
 datum: 2026-09-25
 tags: [EF, Bio, Zellbiologie]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Zellorganellen und Endosymbiontentheorie — Episode B29: Phage Vex klopft an
@@ -78,38 +78,53 @@ $$\text{Vergr.} = \frac{\text{Bildgroesse}}{\text{Realgroesse}}$$
 
 [Werkzeug: formula]
 
-AUFGABE目标挑战：已知电镜图尺寸与倍数：算线粒体与叶绿体真值，配对五细胞器并追踪胰岛素出厂路。 德语原题：Gegeben: Mitochondrium im Bild 5 cm bei Vergroesserung 20.000-fach; Chloroplast 10 cm Bild bei 20.000-fach. Berechne beide Realgroessen, ordne fuenf Organellen ihren Aufgaben zu und verfolge den Insulinweg bis zum Export.
+AUFGABE: Beschreibe 目标挑战：已知电镜图尺寸与倍数：算线粒体与叶绿体真值，配对五细胞器并追踪胰岛素出厂路。 德语原题：Gegeben: Mitochondrium im Bild 5 cm bei Vergroesserung 20.000-fach; Chloroplast 10 cm Bild bei 20.000-fach. Berechne beide Realgroessen, ordne fuenf Organellen ihren Aufgaben zu und verfolge den Insulinweg bis zum Export. [AFB II]
 
 HILFE:
-1. Einheiten angleichen: cm in Mikrometer umrechnen.
-2. Realgroesse aus Bild durch Vergrösserung teilen.
-3. Sekretionsweg ER-Golgi-Vesikel aufzaehlen.
+- Formdimension: Pruefe Groesse, Membran und Innenstruktur mit Bildanalyse; benenne nur die Form, deute die Funktion noch nicht.
+- Verfahrensdimension: Pruefe Fraktionierung gegen Mikroskopie mit Methodentest; sammle nur die Befunde, ohne das Urteil vorwegzunehmen.
+- Netzdimension: Pruefe Weg, Vesikel und Zielort mit Flussanalyse; notiere nur die Stationen, ohne die Deutung zu setzen.
+
+COMPLETION (Lückentext):
+- Lies beide Saetze und ergaenze aus dem Gedaechtnis, ohne zurueckzublaettern:
+- ___ teilen Arbeit: Kern steuert, Mitochondrien liefern ATP, Chloroplasten fixieren.
+- Ordne Mitochondrien als ___ und pruefe die Richtung ohne Rueckblick.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Bildbefund mit Strukturanker (Zellorganellen und Endosymbiontentheorie) | 5 NP | Skizze mit Achsenbeschriftung als Alternativweg
+Methodentest mit Fraktionsbezug | 5 NP | Tabellenvergleich mit Messprotokoll als Alternativweg
+Urteil mit Funktionsbeleg | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
 
 MUSTERLOESUNG：中文：线粒体真值2.5微米、叶绿体5微米，胰岛素走内质网—高尔基—囊泡出厂。 / 德语：Mitochondrium 50 mm Bild (5 cm) durch 20.000 ergibt 2,5 Mikrometer; Chloroplast 100 mm Bild (10 cm) durch 20.000 ergibt 5 Mikrometer; Insulin laeuft ER-Golgi-Vesikel-Export.
 
 `Klausur-Satz: Mit Vergroesserung aus Bild durch Realgroesse vermisst der Sandkasten statt zu raten.`
 
 ## Schritt 5 — ausprobieren: Duell der Wege: Groessenrechnung gegen Funktionsdeutung
-
 VERGLEICH: Waehle erst den Mikroskop-Weg, dann loesen: (i) Groessen-Rechenweg oder (ii) Funktions-Deuteweg — dann loesen.选程序：先看信号词再选路。
 
-
-Weg A (Groessen-Rechenweg): Groessen quantitativ aus Massstab berechnen und Strukturen identifizieren. Dieser Weg liefert Mikrometer-Zahlen und ist beweisfest.
-
-Weg B (Funktions-Deuteweg): Bauformen qualitativ deuten und Aufgaben zuordnen. Dieser Weg ist schnell, bleibt aber ohne Zahl weich.
-
+Weg A (Groessen-Rechenweg): Neutralfassung fuer die Wahl.
+- [Weg A] Wenn du Weg A waehlst, arbeitest du in Schritt 7 vor allem mit Zahlen, Formeln und Einheiten.
+Weg B (Funktions-Deuteweg): Neutralfassung fuer die Wahl.
+- [Weg B] Wenn du Weg B waehlst, arbeitest du in Schritt 7 vor allem mit Bildern, Ketten und Deutung.
 
 AUFGABE A: Realgroesse aus Bild und Vergrösserung gesucht. Welcher Weg? 【选程序：先看信号词再选路】
-
 AUFGABE B: Warum verraten Cristae den Energiehunger? Welcher Weg? 【选程序：先看信号词再选路】
 
+HILFE: Pruefe dimensionsgeleitet, welcher Weg passt: Messdimension mit Rechenansatz spricht fuer Zahlen und Weg A; Strukturdimension mit Typ-Test spricht fuer Zuordnung und Weg B; Bilddimension mit Bildvergleich sichert beide Wege. Ordne selbst zu; die Zuordnung wird nicht vorweggenommen.
 
-HILFE：A nennt Bild und Zahl — Weg A mit Formel. B nennt Warum mit Form — Weg B mit Deutung.
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg A oder Weg B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Ueberfuehrt aus VERGLEICH (Vorwahl-Fassung): Weg A (Groessen-Rechenweg): Groessen quantitativ aus Massstab berechnen und Strukturen identifizieren. Dieser Weg liefert Mikrometer-Zahlen und ist beweisfest. | Weg B (Funktions-Deuteweg): Bauformen qualitativ deuten und Aufgaben zuordnen. Dieser Weg ist schnell, bleibt aber ohne Zahl weich.
+- Ueberfuehrt aus Schritt-5-HILFE (Vorwahl-Fassung): A nennt Bild und Zahl — Weg A mit Formel. B nennt Warum mit Form — Weg B mit Deutung.
+- Mechanismus A: ANTWORT：中文：A走测量路图除倍数；B走功能路以膜面积作答。 / 德语：A folgt Weg A mit Bild-durch-Vergr-Rechnung; B folgt Weg B mit Flaeche-fuer-Kette-Argument.
+- Mechanismus B: Weg B (Funktions-Deuteweg): Bauformen qualitativ deuten und Aufgaben zuordnen. Dieser Weg ist schnell, bleibt aber ohne Zahl weich.
+- Ein-Satz-Kern: Groessen rechnen lokalisiert, Funktionen deuten erklaeren — die Klausur braucht beides.
 
 ANTWORT：中文：A走测量路图除倍数；B走功能路以膜面积作答。 / 德语：A folgt Weg A mit Bild-durch-Vergr-Rechnung; B folgt Weg B mit Flaeche-fuer-Kette-Argument.
 
 `Klausur-Satz: Groessen rechnen lokalisiert, Funktionen deuten erklaeren — die Klausur braucht beides.`
-
 ## Schritt 6 — check: Selbsttest zu Zellorganellen
 
 - FRAGE: 核的职责是什么？（Was steuert der Kern） | ANTWORT: 珍护DNA并指挥全局。 / DNA hueten und alles steuern.
@@ -135,11 +150,25 @@ ANTWORT：中文：A走测量路图除倍数；B走功能路以膜面积作答�
 
 ROLLE：中文：你是细胞工厂审计员。 / 德语：Du bist Auditorin der Zellfabrik.
 SITUATION：出口停滞：请用核、内质网、高尔基与能量排查断点并开维修单（约150词）。 / 德语：Der Export stockt. Pruefe in ca. 150 Woertern mit Kern, ER, Golgi und Energie, wo die Kette reisst, und empfehle die Reparatur.
+
+AUFGABE (beschreiben, [AFB III]): Beschreibe in ca. 150 Woertern Einordnung, zwei Belege mit Mechanismus und Schlussurteil zu Zellorganellen und Endosymbiontentheorie.
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Ausfallbefund mit Organellanker | 5 NP | Enger Beleg mit Zeile als Alternativweg
+Flussanalyse mit Vesikelbezug | 5 NP | Skizze mit Messwerten als Alternativweg
+Energieurteil mit Krankheitsbeleg | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
+
 RUBRIC (30 XP)：Organellenzuordnung (8 XP) | Logistikkette (8 XP) | Fehlerort (8 XP) | Reparatur (6 XP).
 
 
 `Klausur-Satz: Achtung Falle: Vakuole beim Tier klein und zahlreich, bei der Pflanze zentral und riesig.`
 
+KERNSATZ (auswendig):
+- Kernsatz: `Kompartimente teilen Arbeit: Kern steuert, Mitochondrien liefern ATP, Chloroplasten fixieren.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = Zelle mit Membransystem als Subjekt | Mechanismus = Kompartimentierung mit Oberflaechenprinzip als Mechanismus | Urteil = Urteil auf Struktur mit Funktionsbeleg
+- Selbsttest: ___ teilen Arbeit: Kern steuert, Mitochondrien liefern ATP, Chloroplasten fixieren.
 ## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY核心总结：

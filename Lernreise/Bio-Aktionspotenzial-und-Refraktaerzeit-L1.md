@@ -8,7 +8,7 @@ operatoren: [beschreiben, erklaeren, analysieren]
 klausurrelevant: true
 datum: 2026-10-03
 tags: [EF, Bio, Neurobiologie, Aktionspotenzial, Ionenkanäle, Refraktaerzeit]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Das neuronale Aktionspotenzial: Ionenstroeme und Refraktaerzeit (L1, Ziel Klausur)
@@ -31,7 +31,7 @@ Hook / Phaenomen: Dein Koerper besteht zu 70% aus salzigem Wasser — dem denkba
 `Klausur-Satz: Das Aktionspotenzial repraesentiert eine transiente, stereotype Depolarisation der axonalen Membran gemaess dem Alles-oder-Nichts-Gesetz, angetrieben durch spannungsabhaengige Na+- und K+-Kanalzustaende.`
 
 ## Schritt 2 — entdecken: Ausruestungskiste der Neurobiologie-Unit
-PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
+PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文->德语，Evidenz：pretraining降认知负荷）：
 
 中文在上，德语在下：
 
@@ -96,16 +96,28 @@ BEISPIEL（正确例题示范，含教具操作与解答）：
 
 [Werkzeug: balance-board]
 
-AUFGABE (beschreiben & analysieren, AFB I/II)：
+AUFGABE (beschreiben & analysieren, [AFB I/II])： Beschreibe [AFB II]
 Das Nervengift Tetrodotoxin (TTX) des Kugelfischs blockiert hochspezifisch die Poren der spannungsgesteuerten Natriumkanäle von aussen.
 In einem elektrophysiologischen Experiment wird ein isoliertes Axon mit einer Elektrode gereizt (Reizstaerke ueber dem Schwellenwert). Nach Zugabe einer mikromolaren Dosis TTX in die Naehrloesung wird erneut derselbe Reiz appliziert.
 1. Beschreiben Sie die Veraenderung des Membranpotenzial-Verlaufs nach Zugabe von TTX. (10 BE)
 2. Analysieren Sie die physiologischen Konsequenzen fuer die Reizweiterleitung und die Atemmuskulatur des Opfers bei einer Kugelfisch-Vergiftung. (20 BE)
 
 HILFE:
-1. Schritt 1: Wirkort TTX: Blockade der spannungsgesteuerten $Na^+$-Kanaele.
-2. Schritt 2: Auswirkung auf AP: Kein Einstrom von $Na^+$-Ionen moeglich $\implies$ Schwellenwert wird zwar durch den Reizstrom passiv erreicht, aber es kann keine explosive Depolarisation stattfinden. Das AP bleibt vollstaendig aus!
-3. Schritt 3: Konsequenz: Ausfall der Erregungsleitung $\to$ Laehmung motorischer Endplatten $\to$ Atemstillstand bei vollem Bewusstsein.
+- Messdimension: Pruefe Potenzial, Schwelle und Zeitverlauf mit Kurvenvergleich; notiere nur die Werte, deute die Phase noch nicht.
+- Kanaldimension: Pruefe Natrium-, Kalium- und Calciumkanal mit Blockertest; sammle nur die Zustaende, ohne das Urteil vorwegzunehmen.
+- Bilddimension: Pruefe Spalt, Vesikel und Antwort mit Bildvergleich; notiere Bild und Wirkung, ohne die Deutung zu setzen.
+
+COMPLETION (Lückentext):
+- Lies beide Saetze und ergaenze aus dem Gedaechtnis, ohne zurueckzublaettern:
+- ___ oeffnet Depolarisation, Kalium schliesst Repolarisation und Refraktaerzeit sperrt Ruecklauf.
+- Ordne Depolarisation als ___ und pruefe die Richtung ohne Rueckblick.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Potenzialbefund mit Schwellenanker (Das neuronale Aktionspotenzial: Ionenstroeme) | 5 NP | Skizze mit Achsenbeschriftung als Alternativweg
+Kanalanalyse mit Inaktivierungsbezug | 5 NP | Tabellenvergleich mit Messprotokoll als Alternativweg
+Urteil mit Frequenzbeleg | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
 
 MUSTERLÖSUNG:
 1. Beschreibung der Auswirkung auf das Aktionspotenzial:
@@ -120,23 +132,27 @@ MUSTERLÖSUNG:
 `Klausur-Satz: Durch die spezifische Blockade spannungsabhaengiger Natriumkanäle verhindert Tetrodotoxin die Entstehung von Aktionspotenzialen und unterbindet die motorische Signaltransmission vollstaendig.`
 
 ## Schritt 5 — ausprobieren: Duell der Erregungsleitungen: Kontinuierlich vs. Saltatorisch
+VERGLEICH: Kontinuierliche Erregungsleitung vs. Saltatorische Erregungsleitung 选程序：先看信号词再选路。
 
-VERGLEICH: Kontinuierliche Erregungsleitung vs. Saltatorische Erregungsleitung
+Position A (Kontinuierliche Leitung / Marklose Nervenfasern): Neutralfassung fuer die Wahl.
+- [Weg A] Wenn du Weg A waehlst, arbeitest du in Schritt 7 vor allem mit Zahlen, Formeln und Einheiten.
+Position B (Saltatorische Leitung / Markhaltige Nervenfasern der Wirbeltiere): Neutralfassung fuer die Wahl.
+- [Weg B] Wenn du Weg B waehlst, arbeitest du in Schritt 7 vor allem mit Bildern, Ketten und Deutung.
 
-- Position A (Kontinuierliche Leitung / Marklose Nervenfasern):
-  - Anatomie: Nacktes Axon ohne Myelinscheide (z.B. Eingeweidenerven, Tintenfisch-Riesenaxon).
-  - Mechanismus: Jeder mikroskopische Membranabschnitt muss durch lokale Kreisstroeme lueckenlos depolarisiert werden und ein eigenes AP feuern.
-  - Leitungsgeschwindigkeit: Sehr langsam (ca. 1–25 m/s); Geschwindigkeit waechst nur mit Vergroesserung des Axondurchmessers ($\sim \sqrt{d}$).
-  - Energieverbrauch: Extrem hoch (millionenfacher ATP-Verbrauch der Ionenpumpen entlang der gesamten Membranlaenge).
-- Position B (Saltatorische Leitung / Markhaltige Nervenfasern der Wirbeltiere):
-  - Anatomie: Dicke Myelinscheiden aus Schwannschen Zellen bzw. Oligodendrozyten, unterbrochen von Schnuerringen (Ranviersche Schnuerringe).
-  - Mechanismus: Die isolierende Lipidschicht verhindert Ionenaustritt. Das elektrische Feld springt blitzschnell von Schnuerring zu Schnuerring; nur an den nackten Schnuerringen feuern $Na^+$-Kanaele APs.
-  - Leitungsgeschwindigkeit: Extrem schnell (bis zu 120 m/s); spart Platz im Koerper.
-  - Energieverbrauch: Minimal (Ionenpumpen muessen nur an den winzigen Schnuerringen arbeiten).
+AUFGABE A: Welche Pruefgroesse verlangt Zahlen und Rechnung? Begruende ohne Mechanismus.
+AUFGABE B: Welche Frage verlangt Kette und Deutung? Begruende ohne Mechanismus.
 
-Entscheidungsregel fuer die Klausur:
-Wird nach den `Vorteilen der saltatorischen Erregungsleitung` gefragt, immer die Trias nennen: 1. Drastisch erhoehte Leitungsgeschwindigkeit, 2. Enorme Energieersparnis (weniger ATP fuer Ionenpumpen), 3. Geringer Platzbedarf (dünne Nervenbuendel)!
+HILFE: Pruefe dimensionsgeleitet, welcher Weg passt: Messdimension mit Rechenansatz spricht fuer Zahlen und Weg A; Strukturdimension mit Typ-Test spricht fuer Zuordnung und Weg B; Bilddimension mit Bildvergleich sichert beide Wege. Ordne selbst zu; die Zuordnung wird nicht vorweggenommen.
 
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg A oder Weg B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Ueberfuehrt aus VERGLEICH (Vorwahl-Fassung): Position A (Kontinuierliche Leitung / Marklose Nervenfasern): - Anatomie: Nacktes Axon ohne Myelinscheide (z.B. Eingeweidenerven, Tintenfisch-Riesenaxon). - Mechanismus: Jeder mikroskopische Membranabschnitt muss durch lokale Kreisstroeme lueckenlos depolarisiert werden und ein eigenes AP feuern. - Leitungsgeschwindigkeit: Sehr langsam (ca. 1–25 m/s); Geschwindigkeit waechst nur mit Vergroesserung des Axondurchmessers ($\sim \sqrt{d}$). - Energieverbrauch: Extrem hoch (millionenfacher ATP-Verbrauch der Ionenpumpen entlang der gesamten Membranlaenge). - | Position B (Saltatorische Leitung / Markhaltige Nervenfasern der Wirbeltiere): - Anatomie: Dicke Myelinscheiden aus Schwannschen Zellen bzw. Oligodendrozyten, unterbrochen von Schnuerringen (Ranviersche Schnuerringe). - Mechanismus: Die isolierende Lipidschicht verhindert Ionenaustritt. Das elektrische Feld springt blitzschnell von Schnuerring zu Schnuerring; nur an den nackten Schnuerringen feuern $Na^+$-Kanaele APs. - Leitungsgeschwindigkeit: Extrem schnell (bis zu 120 m/s); spart Platz im Koerper. - Energieverbrauch: Minimal (Ionenpumpen muessen nur an den winzigen Schnuerringen arbeiten).
+- Ueberfuehrt aus Schritt-5-HILFE (Vorwahl-Fassung): Kein Spoiler in Vorwahl-HILFE bestaetigt, Vorwahl-Fassung enthielt keine HILFE mit Loesungszuordnung.
+- Mechanismus A: Position A (Kontinuierliche Leitung / Marklose Nervenfasern): - Anatomie: Nacktes Axon ohne Myelinscheide (z.B. Eingeweidenerven, Tintenfisch-Riesenaxon). - Mechanismus: Jeder mikroskopische Membranabschnitt muss durch lokale Kreisstroeme lueckenlos depolarisiert werden und ein eigenes AP feuern. - Leitungsgeschwindigkeit: Sehr langsam (ca. 1–25 m/s); Geschwindigkeit waechst nur mit Vergroesserung des Axondurchmessers ($\sim \sqrt{d}$). - Energieverbrauch: Extrem hoch (millionenfacher ATP-Verbrauch der Ionenpumpen entlang der gesamten Membranlaenge). -
+- Mechanismus B: Position B (Saltatorische Leitung / Markhaltige Nervenfasern der Wirbeltiere): - Anatomie: Dicke Myelinscheiden aus Schwannschen Zellen bzw. Oligodendrozyten, unterbrochen von Schnuerringen (Ranviersche Schnuerringe). - Mechanismus: Die isolierende Lipidschicht verhindert Ionenaustritt. Das elektrische Feld springt blitzschnell von Schnuerring zu Schnuerring; nur an den nackten Schnuerringen feuern $Na^+$-Kanaele APs. - Leitungsgeschwindigkeit: Extrem schnell (bis zu 120 m/s); spart Platz im Koerper. - Energieverbrauch: Minimal (Ionenpumpen muessen nur an den winzigen Schnuerringen arbeiten).
+- Ein-Satz-Kern: Natrium oeffnet Depolarisation, Kalium schliesst Repolarisation und Refraktaerzeit sperrt Ruecklauf.
+
+`Klausur-Satz: Natrium oeffnet Depolarisation, Kalium schliesst Repolarisation und Refraktaerzeit sperrt Ruecklauf.`
 ## Schritt 6 — check: Klausur-Transfer Lokalanästhetika & Frequenzcodierung
 PRÜFUNGSSZENARIO (KLP NRW Biologie Q1 Inhaltsfeld 5: Neurobiologie):
 
@@ -152,6 +168,8 @@ ERWARTUNGSHORIZONT:
 - AFB III: Unterschiedliche Nervenfasertypen besitzen unterschiedliche Empfindlichkeiten gegenueber Lokalanästhetika: Die duennen, unmyelinisierten C-Fasern (die dumpfen, brennenden Schmerz leiten) und duennen A$\delta$-Fasern (stechender Schmerz) werden aufgrund ihres geringen Durchmessers und der hohen Kanaldichte sehr schnell und vollstaendig von Lidocain infiltriert. Dicke, stark myelinisierte A$\beta$-Fasern (die Beruehrungs- und Druckreize leiten) werden jedoch durch Lokalanästhetika deutlich verzoegert und erst bei hoeheren Konzentrationen blockiert. Folglich erreichen Druck- und Tastinformationen weiterhin das sensorische Kortexareal, waehrend der Schmerzkanal vollstaendig stummgeschaltet ist.
 
 ## Schritt 7 — check: Format-Check & Scoring
+AUFGABE (beschreiben, [AFB III]): Beschreibe in ca. 150 Woertern Einordnung, zwei Belege mit Mechanismus und Schlussurteil zu Das neuronale Aktionspotenzial: Ionenstroeme.
+
 30 XP Schnelltest zur Verstaendigungssicherung:
 
 FRAGE: Welche Ionen stroemen waehrend der Depolarisationsphase schlagartig in das Axoninnere ein?
@@ -163,6 +181,18 @@ ANTWORT: Wegen der Refraktaerzeit (die Natriumkanäle des soeben erregten Membra
 FRAGE: Wie wird die Staerke eines Reizes (z.B. leichter Druck vs. schmerzhafter Hammerschlag) in einem gesunden Axon codiert?
 ANTWORT: Ueber die Frequenz der Aktionspotenziale (Anzahl der Aktionspotenziale pro Zeiteinheit, Frequenzcodierung).
 
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Reizbefund mit Schwellenanker | 5 NP | Enger Beleg mit Zeile als Alternativweg
+Kanalanalyse mit TTX-Bezug | 5 NP | Skizze mit Messwerten als Alternativweg
+Frequenzurteil mit Leitungsbeleg | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
+
+KERNSATZ (auswendig):
+- Kernsatz: `Natrium oeffnet Depolarisation, Kalium schliesst Repolarisation und Refraktaerzeit sperrt Ruecklauf.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = Natrium-Einstrom als Subjekt | Mechanismus = Kanalabfolge mit Inaktivierungstor als Mechanismus | Urteil = Urteil auf Einbahnleitung mit Frequenzcode
+- Selbsttest: Natrium oeffnet ___ Kalium schliesst Repolarisation und Refraktaerzeit sperrt Ruecklauf.
 ## Schritt 8 — reflexion: Meisterschaft & Naechste Mission
 REFLEXION:
 Du hast das fundamentale Kommunikationsprinzip unseres Nervensystems gemeistert. Du kannst Membranpotenziale berechnen, Channel-Kinetiken erklaeren und verstehst, wie Gifte und Lokalanästhetika das menschliche Gehirn manipulieren.

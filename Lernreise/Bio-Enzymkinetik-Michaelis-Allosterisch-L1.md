@@ -8,7 +8,7 @@ operatoren: [beschreiben, erklaeren, deuten]
 klausurrelevant: true
 datum: 2026-09-26
 tags: [EF, Bio, Stoffwechsel]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Enzymkinetik nach Michaelis sowie allosterische Regulation — Episode B18: Der verklebte Foerderband-Code
@@ -79,38 +79,53 @@ $$v = \frac{v_{\max} \cdot [S]}{K_M + [S]}$$
 
 [Werkzeug: formula]
 
-AUFGABE目标挑战：已知有无抑制剂X的速率系列：定双Km与vmax，判抑制类型并论证加底物能否当解药。 德语原题：Gegeben: v-Werte bei S = 1/2/5/10/20 mM ohne und mit Hemmstoff X. Bestimme Km und vmax beider Kurven, entscheide kompetitiv oder nicht-kompetitiv und begruende, ob Substraterhoehung als Gegengift taugt.
+AUFGABE: Beschreibe 目标挑战：已知有无抑制剂X的速率系列：定双Km与vmax，判抑制类型并论证加底物能否当解药。 德语原题：Gegeben: v-Werte bei S = 1/2/5/10/20 mM ohne und mit Hemmstoff X. Bestimme Km und vmax beider Kurven, entscheide kompetitiv oder nicht-kompetitiv und begruende, ob Substraterhoehung als Gegengift taugt. [AFB II]
 
 HILFE:
-1. Beide Kurven zeichnen und Plateaus vergleichen.
-2. Km als Halbmax-Punkt je Kurve ablesen.
-3. Hemmtyp aus Verschiebung oder Senkung ableiten.
+- Messdimension: Pruefe Rate, Optimum und Saettigung mit Kurvenvergleich; notiere nur die Werte, deute die Ursache noch nicht.
+- Strukturdimension: Pruefe Zentrum, Ladung und Effektor mit Hemm-Test; sammle nur die Signale, ohne das Urteil vorwegzunehmen.
+- Verfahrensdimension: Pruefe Temperatur-, pH- und Substratvariation mit Versuchsplan; ordne nur die Ansatze, loese die Zuordnung noch nicht.
+
+COMPLETION (Lückentext):
+- Lies beide Saetze und ergaenze aus dem Gedaechtnis, ohne zurueckzublaettern:
+- ___ misst Saettigung, allosterische Hemmung schaltet Enzyme reversibel um.
+- Ordne Saettigung als ___ und pruefe die Richtung ohne Rueckblick.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Km-Befund mit Saettigungskurve (Enzymkinetik nach Michaelis sowie allosteris) | 5 NP | Skizze mit Achsenbeschriftung als Alternativweg
+Hemmtyp-Test mit Effektorbezug | 5 NP | Tabellenvergleich mit Messprotokoll als Alternativweg
+Urteil mit vmax-Deutung | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
 
 MUSTERLOESUNG：中文：无X：Km2、vmax100；有X：Km右移vmax不变即竞争性，加底物可解。 / 德语：Ohne X: Km 2 mM, vmax 100; mit X: Km 6 mM, vmax 100: kompetitiv, denn vmax bleibt. Substraterhoehung verdraengt X und taugt als Gegengift.
 
 `Klausur-Satz: Mit Km als Halbmax-Punkt und zwei Kurven entlarvt die Messung jeden Hemmtyp.`
 
 ## Schritt 5 — ausprobieren: Duell der Wege: Km-Rechnung gegen Hemmbild-Deutung
-
 VERGLEICH: Waehle erst den Beweisweg, dann loesen: (i) Km-Rechenweg oder (ii) Hemmbild-Deuteweg — dann loesen.选程序：先看信号词再选路。
 
-
-Weg A (Km-Rechenweg): Km und vmax aus Messwerten quantitativ bestimmen und Kurven berechnen. Dieser Weg liefert Zahlen und ist gerichtsfest.
-
-Weg B (Hemmbild-Deuteweg): Kurvenbilder qualitativ vergleichen und Hemmtypen am Verlauf erkennen. Dieser Weg ist schnell, bleibt aber ohne Zahl duenn.
-
+Weg A (Km-Rechenweg): Neutralfassung fuer die Wahl.
+- [Weg A] Wenn du Weg A waehlst, arbeitest du in Schritt 7 vor allem mit Zahlen, Formeln und Einheiten.
+Weg B (Hemmbild-Deuteweg): Neutralfassung fuer die Wahl.
+- [Weg B] Wenn du Weg B waehlst, arbeitest du in Schritt 7 vor allem mit Bildern, Ketten und Deutung.
 
 AUFGABE A: Km-Vergleich zweier Kurven mit Zahlen gesucht. Welcher Weg? 【选程序：先看信号词再选路】
-
 AUFGABE B: Warum hilft Substrat nur bei einem Hemmtyp? Welcher Weg? 【选程序：先看信号词再选路】
 
+HILFE: Pruefe dimensionsgeleitet, welcher Weg passt: Messdimension mit Rechenansatz spricht fuer Zahlen und Weg A; Strukturdimension mit Typ-Test spricht fuer Zuordnung und Weg B; Bilddimension mit Bildvergleich sichert beide Wege. Ordne selbst zu; die Zuordnung wird nicht vorweggenommen.
 
-HILFE：A nennt Zahlen — Weg A mit Rechnung. B nennt Warum mit Bild — Weg B mit Deutung.
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg A oder Weg B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Ueberfuehrt aus VERGLEICH (Vorwahl-Fassung): Weg A (Km-Rechenweg): Km und vmax aus Messwerten quantitativ bestimmen und Kurven berechnen. Dieser Weg liefert Zahlen und ist gerichtsfest. | Weg B (Hemmbild-Deuteweg): Kurvenbilder qualitativ vergleichen und Hemmtypen am Verlauf erkennen. Dieser Weg ist schnell, bleibt aber ohne Zahl duenn.
+- Ueberfuehrt aus Schritt-5-HILFE (Vorwahl-Fassung): A nennt Zahlen — Weg A mit Rechnung. B nennt Warum mit Bild — Weg B mit Deutung.
+- Mechanismus A: ANTWORT：中文：A走计算路读半速点；B走图像路以中心变形作答。 / 德语：A folgt Weg A mit Halbmax-Ablesung; B folgt Weg B mit Zentrum-verformt-Argument.
+- Mechanismus B: Weg B (Hemmbild-Deuteweg): Kurvenbilder qualitativ vergleichen und Hemmtypen am Verlauf erkennen. Dieser Weg ist schnell, bleibt aber ohne Zahl duenn.
+- Ein-Satz-Kern: Km rechnen lokalisiert, Hemmbilder deuten identifizieren — die Klausur braucht beides.
 
 ANTWORT：中文：A走计算路读半速点；B走图像路以中心变形作答。 / 德语：A folgt Weg A mit Halbmax-Ablesung; B folgt Weg B mit Zentrum-verformt-Argument.
 
 `Klausur-Satz: Km rechnen lokalisiert, Hemmbilder deuten identifizieren — die Klausur braucht beides.`
-
 ## Schritt 6 — check: Selbsttest zu Enzymkinetik und Regulation
 
 - FRAGE: 小Km代表什么？（Was bedeutet kleines Km） | ANTWORT: 亲和力高。 / Hohe Affinitaet.
@@ -136,11 +151,25 @@ ANTWORT：中文：A走计算路读半速点；B走图像路以中心变形作�
 
 ROLLE：中文：你是药物研发组药理学家。 / 德语：Du bist Pharmakologin im Wirkstoff-Team.
 SITUATION：某候选药抑制酶E：请用Km、vmax与曲线逻辑判定抑制类型、可否调剂量及对健康细胞风险（约150词）。 / 德语：Ein Kandidat hemmt Enzym E. Entscheide in ca. 150 Woertern mit Km-, vmax- und Kurvenlogik ueber Hemmtyp, Dosierbarkeit und das Risiko fuer gesunde Zellen.
+
+AUFGABE (beschreiben, [AFB III]): Beschreibe in ca. 150 Woertern Einordnung, zwei Belege mit Mechanismus und Schlussurteil zu Enzymkinetik nach Michaelis sowie allosteris.
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Kurvenbefund mit Km-Anker | 5 NP | Enger Beleg mit Zeile als Alternativweg
+Hemmtest mit Reversibilitaetsbezug | 5 NP | Skizze mit Messwerten als Alternativweg
+Therapieurteil mit Dosisbeleg | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
+
 RUBRIC (30 XP)：Kurvenlogik (8 XP) | Hemmtyp (8 XP) | Dosisurteil (8 XP) | Risikoabwaegung (6 XP).
 
 
 `Klausur-Satz: Achtung Falle: Mehr Substrat rettet nur kompetitiv Gehemmte, nie allosterisch Verformte.`
 
+KERNSATZ (auswendig):
+- Kernsatz: `Michaelis-Menten misst Saettigung, allosterische Hemmung schaltet Enzyme reversibel um.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = Substrat mit Km-Wert als Subjekt | Mechanismus = Saettigungskurve plus Effektor-Test als Mechanismus | Urteil = Urteil auf Hemmtyp mit vmax-Deutung
+- Selbsttest: ___ misst Saettigung, allosterische Hemmung schaltet Enzyme reversibel um.
 ## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY核心总结：

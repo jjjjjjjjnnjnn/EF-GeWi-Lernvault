@@ -8,7 +8,7 @@ operatoren: [erlaeutern, vergleichen]
 klausurrelevant: true
 datum: 2026-09-26
 tags: [EF, Bio, Pflanzenphysiologie]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Photosynthese Licht- und Dunkelreaktion — Episode B22: Stau auf der Membran-Autobahn
@@ -78,38 +78,53 @@ $$6\,CO_2 + 6\,H_2O \xrightarrow{\text{Licht}} C_6H_{12}O_6 + 6\,O_2$$
 
 [Werkzeug: formula]
 
-AUFGABE目标挑战：已知光梯度速率与CO2跃升数据：定光饱和点与限制切换，并算132克CO2产糖量。 德语原题：Gegeben: Lichtreihe 200/500/800/1200 Lux mit Raten 2/5/8/8; CO2-Sprung bei 800 Lux hebt auf 12. Bestimme Lichtsaettigung und Engpassfolge und berechne die Glukose-Ausbeute aus 132 g CO2.
+AUFGABE: Erlaeutere 目标挑战：已知光梯度速率与CO2跃升数据：定光饱和点与限制切换，并算132克CO2产糖量。 德语原题：Gegeben: Lichtreihe 200/500/800/1200 Lux mit Raten 2/5/8/8; CO2-Sprung bei 800 Lux hebt auf 12. Bestimme Lichtsaettigung und Engpassfolge und berechne die Glukose-Ausbeute aus 132 g CO2. [AFB II]
 
 HILFE:
-1. Saettigung als Plateau ablesen: 800 Lux.
-2. CO2-Sprung als Engpasswechsel deuten.
-3. Stoechiometrie 6-zu-1 mit Mol rechnen.
+- Messdimension: Pruefe Licht, Sauerstoff und Zuckernachweis mit Messreihe; notiere nur die Werte, deute den Weg noch nicht.
+- Strukturdimension: Pruefe Thylakoid gegen Stroma mit Kompartiment-Test; sammle nur die Orte, ohne das Urteil vorwegzunehmen.
+- Bilddimension: Pruefe Farbumschlag und Blasenbildung mit Bildvergleich; notiere Bild und Wirkung, ohne die Deutung zu setzen.
+
+COMPLETION (Lückentext):
+- Lies beide Saetze und ergaenze aus dem Gedaechtnis, ohne zurueckzublaettern:
+- ___ spaltet Wasser und liefert ATP, Calvin fixiert CO2 zu Zucker im Stroma.
+- Ordne Wasser als ___ und pruefe die Richtung ohne Rueckblick.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Messbefund mit Licht- und Gaswerten (Photosynthese Licht- und Dunkelreaktion) | 5 NP | Skizze mit Achsenbeschriftung als Alternativweg
+Ortsanalyse mit Kompartimentbezug | 5 NP | Tabellenvergleich mit Messprotokoll als Alternativweg
+Ertragsurteil mit Kontrollexperiment | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
 
 MUSTERLOESUNG：中文：800勒克斯饱和后转CO2限制，132克CO2产糖90克。 / 德语：Saettigung bei 800 Lux, danach CO2-Engpass; 132 g CO2 sind 3 mol und liefern 0,5 mol Glukose, also 90 g.
 
 `Klausur-Satz: Mit Lichtsaettigung bei 800 Lux und CO2-Sprung danach misst der Sandkasten statt zu raten.`
 
 ## Schritt 5 — ausprobieren: Duell der Wege: Gaswechsel-Messung gegen Pigment-Deutung
-
 VERGLEICH: Waehle erst den Messweg, dann loesen: (i) Gaswechsel-Rechenweg oder (ii) Pigment-Deuteweg — dann loesen.选程序：先看信号词再选路。
 
-
-Weg A (Gaswechsel-Rechenweg): O2- oder CO2-Umsatz quantitativ messen und Ausbeuten berechnen. Dieser Weg liefert Zahlen und ist klausurfest.
-
-Weg B (Pigment-Deuteweg): Pigmente und Blattbau qualitativ deuten und Standorte erklaeren. Dieser Weg liefert Verstaendnis, bleibt aber ohne Zahl weich.
-
+Weg A (Gaswechsel-Rechenweg): Neutralfassung fuer die Wahl.
+- [Weg A] Wenn du Weg A waehlst, arbeitest du in Schritt 7 vor allem mit Zahlen, Formeln und Einheiten.
+Weg B (Pigment-Deuteweg): Neutralfassung fuer die Wahl.
+- [Weg B] Wenn du Weg B waehlst, arbeitest du in Schritt 7 vor allem mit Bildern, Ketten und Deutung.
 
 AUFGABE A: Glukose-Ausbeute aus CO2-Masse gesucht. Welcher Weg? 【选程序：先看信号词再选路】
-
 AUFGABE B: Warum sind Blaetter gruen? Welcher Weg? 【选程序：先看信号词再选路】
 
+HILFE: Pruefe dimensionsgeleitet, welcher Weg passt: Messdimension mit Rechenansatz spricht fuer Zahlen und Weg A; Strukturdimension mit Typ-Test spricht fuer Zuordnung und Weg B; Bilddimension mit Bildvergleich sichert beide Wege. Ordne selbst zu; die Zuordnung wird nicht vorweggenommen.
 
-HILFE：A nennt Masse — Weg A mit Stoechiometrie. B nennt Warum mit Farbe — Weg B mit Pigment.
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg A oder Weg B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Ueberfuehrt aus VERGLEICH (Vorwahl-Fassung): Weg A (Gaswechsel-Rechenweg): O2- oder CO2-Umsatz quantitativ messen und Ausbeuten berechnen. Dieser Weg liefert Zahlen und ist klausurfest. | Weg B (Pigment-Deuteweg): Pigmente und Blattbau qualitativ deuten und Standorte erklaeren. Dieser Weg liefert Verstaendnis, bleibt aber ohne Zahl weich.
+- Ueberfuehrt aus Schritt-5-HILFE (Vorwahl-Fassung): A nennt Masse — Weg A mit Stoechiometrie. B nennt Warum mit Farbe — Weg B mit Pigment.
+- Mechanismus A: ANTWORT：中文：A走测量路按6比1算；B走色素路以绿光反射作答。 / 德语：A folgt Weg A mit 6-zu-1-Rechnung; B folgt Weg B mit Absorptionsluecke Gruen.
+- Mechanismus B: Weg B (Pigment-Deuteweg): Pigmente und Blattbau qualitativ deuten und Standorte erklaeren. Dieser Weg liefert Verstaendnis, bleibt aber ohne Zahl weich.
+- Ein-Satz-Kern: Gaswechsel zaehlt, Pigmente erklaeren — die Klausur braucht beides.
 
 ANTWORT：中文：A走测量路按6比1算；B走色素路以绿光反射作答。 / 德语：A folgt Weg A mit 6-zu-1-Rechnung; B folgt Weg B mit Absorptionsluecke Gruen.
 
 `Klausur-Satz: Gaswechsel zaehlt, Pigmente erklaeren — die Klausur braucht beides.`
-
 ## Schritt 6 — check: Selbsttest zu Fotosynthese
 
 - FRAGE: 光反应在哪？（Wo läuft die Lichtreaktion） | ANTWORT: 类囊体膜。 / Thylakoidmembran.
@@ -135,11 +150,25 @@ ANTWORT：中文：A走测量路按6比1算；B走色素路以绿光反射作答
 
 ROLLE：中文：你是温室生物技术员。 / 德语：Du bist Gewaechshaus-Biologin.
 SITUATION：老板要加气不降温：请用最小律与光暗反应评价并设计对照实验（约150词）。 / 德语：Der Chef will CO2 duengen statt kuehlen. Bewerte in ca. 150 Woertern mit Minimumgesetz, Licht- und Dunkelreaktion und entwirf den Gegenversuch.
+
+AUFGABE (erlaeutern, [AFB III]): Erlaeutere in ca. 150 Woertern Einordnung, zwei Belege mit Mechanismus und Schlussurteil zu Photosynthese Licht- und Dunkelreaktion.
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Lichtbefund mit Gasanker | 5 NP | Enger Beleg mit Zeile als Alternativweg
+Dunkelanalyse mit Fixierungsbezug | 5 NP | Skizze mit Messwerten als Alternativweg
+Ertragsurteil mit Gewaechshausbeleg | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
+
 RUBRIC (30 XP)：Minimumslogik (8 XP) | Reaktionsorte (8 XP) | Gegenversuch (8 XP) | Abwaegung (6 XP).
 
 
 `Klausur-Satz: Achtung Falle: Sauerstoff stammt aus Wasser, nicht aus CO2 — Isotopen beweisen es.`
 
+KERNSATZ (auswendig):
+- Kernsatz: `Licht spaltet Wasser und liefert ATP, Calvin fixiert CO2 zu Zucker im Stroma.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = Thylakoid mit Licht als Subjekt | Mechanismus = Elektronentransport plus Calvin-Fixierung als Mechanismus | Urteil = Urteil auf Ertrag mit Sauerstoffbeleg
+- Selbsttest: Licht spaltet ___ und liefert ATP, Calvin fixiert CO2 zu Zucker im Stroma.
 ## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY核心总结：

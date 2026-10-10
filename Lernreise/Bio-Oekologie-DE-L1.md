@@ -8,7 +8,7 @@ operatoren: [beschreiben, erklaeren, beurteilen]
 klausurrelevant: true
 datum: 2026-09-25
 tags: [EF, Bio, Oekologie]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Oekologie: Nische, Population, Energiefluss — Episode B19: Blackout im ATP-Keller
@@ -77,38 +77,53 @@ Nahe K bremst der Term die Rate auf null; Fang muss unter dem Zuwachs bleiben.
 
 [Werkzeug: balance-board]
 
-AUFGABE (Target Challenge): Waage zwei Plaene: Plan Duengung plus 30 Prozent Ertrag gegen Plan Pufferzone mit 10 Prozent Minderertrag. Lege Phosphat-Bilanz und Sauerstoffprognose auf beide Schalen und entscheide mit Kapazitaets-Argument.
+AUFGABE (beurteilen, [AFB II]): Beurteile zwei Plaene: Plan Duengung plus 30 Prozent Ertrag gegen Plan Pufferzone mit 10 Prozent Minderertrag. Lege Phosphat-Bilanz und Sauerstoffprognose auf beide Schalen und entscheide mit Kapazitaets-Argument. [AFB II]
 
 HILFE:
-1. Phosphat-Eintrag beider Plaene bilanzieren.
-2. Sauerstofffolge ueber die Kippkette abschaetzen.
-3. Mit K und Nachhaltigkeit das Urteil faellen.
+- Messdimension: Pruefe Eintrag, Sauerstoff und Biomasse mit Bilanzansatz; notiere nur die Groessen, deute die Folge noch nicht.
+- Netzdimension: Pruefe Nahrungsnetz, Kette und K-Wert mit Netzanalyse; sammle nur die Maschen, ohne das Urteil vorwegzunehmen.
+- Bilddimension: Pruefe Truebung, Bluete und Fischzeichen mit Bildvergleich; notiere Bild und Wirkung, ohne die Deutung zu setzen.
+
+COMPLETION (Lückentext):
+- Lies beide Saetze und ergaenze aus dem Gedaechtnis, ohne zurueckzublaettern:
+- ___ treibt Algenbluete, Bakterien zehren Sauerstoff bis Fischsterben folgt.
+- Ordne Algenbluete als ___ und pruefe die Richtung ohne Rueckblick.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Bilanzbefund mit Eintragsanker (Oekologie: Nische, Population, Energiefluss) | 5 NP | Skizze mit Achsenbeschriftung als Alternativweg
+Netzanalyse mit Kippkettenbezug | 5 NP | Tabellenvergleich mit Messprotokoll als Alternativweg
+Urteil mit Nachhaltigkeitsbeleg | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
 
 MUSTERLOESUNG: Duengung treibt Phosphat ueber die Kippschwelle und Sauerstoff gegen null; Pufferzone haelt unter K und sichert Ertrag plus Bestand. Urteil: Pufferzone.
 
 `Klausur-Satz: Mit Phosphat-Bilanz und Sauerstoffkurve wiegt die Waage statt zu raten.`
 
 ## Schritt 5 — ausprobieren: Duell der Wege: Bilanzrechnung gegen Nahrungsnetz-Deutung
+VERGLEICH: Waehle erst den Ranger-Weg, dann loesen: (i) Bilanz-Rechenweg oder (ii) Netzdeute-Weg — dann loesen. 选程序：先看信号词再选路。
 
-VERGLEICH: Waehle erst den Ranger-Weg, dann loesen: (i) Bilanz-Rechenweg oder (ii) Netzdeute-Weg — dann loesen.
-
-
-Weg A (Bilanz-Rechenweg): Eintraege und Entnaehmen quantitativ bilanzieren und K-Ueberschreitung berechnen. Dieser Weg liefert Zahlen und ist behoerdenfest.
-
-Weg B (Netzdeute-Weg): Nahrungsnetz qualitativ lesen und Kippfolgen frueh warnen. Dieser Weg ist schnell und ganzheitlich, bleibt aber ohne Zahl weich.
-
+Weg A (Bilanz-Rechenweg): Neutralfassung fuer die Wahl.
+- [Weg A] Wenn du Weg A waehlst, arbeitest du in Schritt 7 vor allem mit Zahlen, Formeln und Einheiten.
+Weg B (Netzdeute-Weg): Neutralfassung fuer die Wahl.
+- [Weg B] Wenn du Weg B waehlst, arbeitest du in Schritt 7 vor allem mit Bildern, Ketten und Deutung.
 
 AUFGABE A: Phosphatfracht gegen Schwelle mit Zahlen gesucht. Welcher Weg?
-
 AUFGABE B: Warum folgt dem Algenfruehling das Fischsterben? Welcher Weg?
 
+HILFE: Pruefe dimensionsgeleitet, welcher Weg passt: Messdimension mit Rechenansatz spricht fuer Zahlen und Weg A; Strukturdimension mit Typ-Test spricht fuer Zuordnung und Weg B; Bilddimension mit Bildvergleich sichert beide Wege. Ordne selbst zu; die Zuordnung wird nicht vorweggenommen.
 
-HILFE: A nennt Fracht und Schwelle — Weg A mit Bilanz. B nennt Warum mit Netz — Weg B mit Kette.
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg A oder Weg B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Ueberfuehrt aus VERGLEICH (Vorwahl-Fassung): Weg A (Bilanz-Rechenweg): Eintraege und Entnaehmen quantitativ bilanzieren und K-Ueberschreitung berechnen. Dieser Weg liefert Zahlen und ist behoerdenfest. | Weg B (Netzdeute-Weg): Nahrungsnetz qualitativ lesen und Kippfolgen frueh warnen. Dieser Weg ist schnell und ganzheitlich, bleibt aber ohne Zahl weich.
+- Ueberfuehrt aus Schritt-5-HILFE (Vorwahl-Fassung): A nennt Fracht und Schwelle — Weg A mit Bilanz. B nennt Warum mit Netz — Weg B mit Kette.
+- Mechanismus A: ANTWORT: A folgt Weg A mit Eintrag-minus-Austrag-Rechnung; B folgt Weg B mit Eutrophierungs-Kausalkette.
+- Mechanismus B: Weg B (Netzdeute-Weg): Nahrungsnetz qualitativ lesen und Kippfolgen frueh warnen. Dieser Weg ist schnell und ganzheitlich, bleibt aber ohne Zahl weich.
+- Ein-Satz-Kern: Bilanzen rechnen stellt, Netze deuten warnen — der Ranger braucht beides.
 
 ANTWORT: A folgt Weg A mit Eintrag-minus-Austrag-Rechnung; B folgt Weg B mit Eutrophierungs-Kausalkette.
 
 `Klausur-Satz: Bilanzen rechnen stellt, Netze deuten warnen — der Ranger braucht beides.`
-
 ## Schritt 6 — check: Selbsttest zu Oekologie und Umwelt
 
 - FRAGE: Nenne den Eutrophierungs-Dreiklang? | ANTWORT: Naehrstoff, Bluete, Sauerstoffzehrung.
@@ -132,11 +147,25 @@ ANTWORT: A folgt Weg A mit Eintrag-minus-Austrag-Rechnung; B folgt Weg B mit Eut
 
 ROLLE: Du bist Rangerin am Kippsee.
 SITUATION: Der Hof will 30 Prozent mehr duengen. Schreibe in ca. 150 Woertern ein Gutachten mit Kippkette, Kapazitaet und Nachhaltigkeit und empfehle eine Auflage.
+
+AUFGABE (beschreiben, [AFB III]): Beschreibe in ca. 150 Woertern Einordnung, zwei Belege mit Mechanismus und Schlussurteil zu Oekologie: Nische, Population, Energiefluss.
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Kippkettenbefund mit Phosphatanker | 5 NP | Enger Beleg mit Zeile als Alternativweg
+Kapazitaetsanalyse mit K-Bezug | 5 NP | Skizze mit Messwerten als Alternativweg
+Auflagenurteil mit Nachhaltigkeitsbeleg | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
+
 RUBRIC (30 XP): Kippkette (8 XP) | Kapazitaet (8 XP) | Nachhaltigkeit (8 XP) | Auflage (6 XP).
 
 
 `Klausur-Satz: Achtung Falle: Klares Wasser ist nicht gesundes Wasser; Phosphate sind unsichtbar.`
 
+KERNSATZ (auswendig):
+- Kernsatz: `Naehrstoff treibt Algenbluete, Bakterien zehren Sauerstoff bis Fischsterben folgt.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = See mit Phosphat als Subjekt | Mechanismus = Kippkette mit Zehrungskurve als Mechanismus | Urteil = Urteil auf Pufferzone mit Kapazitaet
+- Selbsttest: Naehrstoff treibt Algenbluete, Bakterien zehren Sauerstoff bis ___ folgt.
 ## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY:

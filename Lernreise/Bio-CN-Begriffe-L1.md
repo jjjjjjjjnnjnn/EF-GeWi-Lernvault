@@ -8,7 +8,7 @@ operatoren: [nennen, darstellen, erklaeren]
 klausurrelevant: true
 datum: 2026-09-25
 tags: [EF, Bio, CN]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: CN-Begriffe: dreisprachige Terminologie DE-CN-EN — Episode B6: Blackout im ATP-Keller
@@ -46,7 +46,7 @@ PRETRAINING术语盒（5大装备，中文在上、德语在下）：
 
 ENTDECKEN因果传导机制（中文拆解在上，德语链条在下）：
 
-中文：机制是一条翻译链：题干信号词→术语盒→解题程序。见梯度加ATP开运输盒，见水势数值开计算盒，单词就变成了决策树。
+中文：机制是一条翻译链：题干信号词->术语盒->解题程序。见梯度加ATP开运输盒，见水势数值开计算盒，单词就变成了决策树。
 
 德语：Der Mechanismus ist eine Uebersetzungskette: **Signalwort** im Text erkennen, Begriff der passenden Kiste zuordnen, Verfahren aus der Kiste ableiten. Steht Gefaelle plus ATP im Text, oeffnet sich die Transport-Kiste. Steht eine Psi-Zahl im Text, oeffnet sich die Rechen-Kiste. So wird aus Vokabeln ein Entscheidungsbaum, der in jeder Klausur in Sekunden laeuft.
 
@@ -78,38 +78,53 @@ $$\Psi_{\text{innen}} > \Psi_{\text{aussen}} \Rightarrow \text{Ausstrom (Plasmol
 
 [Werkzeug: balance-board]
 
-AUFGABE目标挑战：天平上称八个案例：把五个术语加梯度、ATP、水势三个信号词分入计算盒或运输盒，4分钟8中8才通关。 德语原题：Waage acht Faelle: Ordne Osmose, Diffusion, Plasmolyse, Enzym und Replikation plus die Signalwoerter Gefaelle, ATP und Psi-Zahl der Rechen- oder Transport-Kiste zu. Ziel: 8 von 8 Treffern in unter 4 Minuten, jede Fehlzuordnung kostet einen Punkt.
+AUFGABE: Nenne 目标挑战：天平上称八个案例：把五个术语加梯度、ATP、水势三个信号词分入计算盒或运输盒，4分钟8中8才通关。 德语原题：Waage acht Faelle: Ordne Osmose, Diffusion, Plasmolyse, Enzym und Replikation plus die Signalwoerter Gefaelle, ATP und Psi-Zahl der Rechen- oder Transport-Kiste zu. Ziel: 8 von 8 Treffern in unter 4 Minuten, jede Fehlzuordnung kostet einen Punkt. [AFB II]
 
 HILFE:
-1. Erst Signalwort unterstreichen, dann Begriff zuordnen.
-2. Psi-Zahl zieht immer in die Rechen-Kiste.
-3. ATP plus gegen das Gefaelle zieht immer in die Transport-Kiste.
+- Formdimension: Pruefe Signalwoerter, Kistenname und AFB-Stufe mit Textmarkierung; benenne nur die Form, deute die Wahl noch nicht.
+- Verfahrensdimension: Pruefe Rechen- gegen Deutungsanteil mit Anforderungsanalyse; sammle nur die Anteile, ohne das Urteil vorwegzunehmen.
+- Pruefdimension: Pruefe Horizont-Stichpunkte mit Checkliste; zaehle nur die Treffer, ohne die Deutung zu setzen.
+
+COMPLETION (Lückentext):
+- Lies beide Saetze und ergaenze aus dem Gedaechtnis, ohne zurueckzublaettern:
+- ___ oeffnen Kisten: Psi-Zahl fordert Rechnung, ATP gegen Gefaelle fordert Transport.
+- Ordne Psi-Zahl als ___ und pruefe die Richtung ohne Rueckblick.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Signalwort-Befund mit Kistenanker (CN-Begriffe: dreisprachige Terminologie DE-C) | 5 NP | Skizze mit Achsenbeschriftung als Alternativweg
+Kistenwahl mit Verfahrensprobe | 5 NP | Tabellenvergleich mit Messprotokoll als Alternativweg
+Urteil mit Zuordnungsbeleg | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
 
 MUSTERLOESUNG：中文：渗透、半透膜、水势进计算盒；ATP、逆梯度进运输盒，分干净解题快一半。 / 德语：Osmose, semipermeabel und Psi-Zahl oeffnen die Rechen-Kiste; ATP und gegen das Gefaelle oeffnen die Transport-Kiste. Saubere Zuordnung halbiert die Loesungszeit.
 
 `Klausur-Satz: Acht saubere Zuordnungen in vier Minuten schlagen jedes Pauken im Kontext.`
 
 ## Schritt 5 — ausprobieren: Duell der Lernwege: Rechenkarte gegen Kontextkarte
-
 VERGLEICH: Waehle erst den Lernweg, dann loesen: (i) Rechenkarten-Weg oder (ii) Kontextkarten-Weg — dann loesen.选程序：先看信号词再选路。
 
-
-Weg A (Rechenkarten-Weg): Begriff pauken, Definition hersagen, dann Rechenaufgabe mit Zahlen loesen. Dieser Weg haertet das Gedächtnis und liefert MPa-Belege.
-
-Weg B (Kontextkarten-Weg): Im Fliesstext Signalwoerter wägen, Kiste waehlen, Verfahren ableiten. Dieser Weg trainiert Textarbeit und ist klausurnah, bleibt aber ohne Drill lueckig.
-
+Weg A (Rechenkarten-Weg): Neutralfassung fuer die Wahl.
+- [Weg A] Wenn du Weg A waehlst, arbeitest du in Schritt 7 vor allem mit Zahlen, Formeln und Einheiten.
+Weg B (Kontextkarten-Weg): Neutralfassung fuer die Wahl.
+- [Weg B] Wenn du Weg B waehlst, arbeitest du in Schritt 7 vor allem mit Bildern, Ketten und Deutung.
 
 AUFGABE A: Fuenf Begriffe in drei Sprachen in sechzig Sekunden abrufen. Welcher Weg? 【选程序：先看信号词再选路】
-
 AUFGABE B: Im 220-Woerter-Fliesstext die Verfahrenswahl zwischen Rechnung und Transport treffen. Welcher Weg? 【选程序：先看信号词再选路】
 
+HILFE: Pruefe dimensionsgeleitet, welcher Weg passt: Messdimension mit Rechenansatz spricht fuer Zahlen und Weg A; Strukturdimension mit Typ-Test spricht fuer Zuordnung und Weg B; Bilddimension mit Bildvergleich sichert beide Wege. Ordne selbst zu; die Zuordnung wird nicht vorweggenommen.
 
-HILFE：A verlangt Abruf unter Zeit — Weg A mit Karten. B verlangt Textarbeit mit Waage — Weg B mit Kontext.
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg A oder Weg B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Ueberfuehrt aus VERGLEICH (Vorwahl-Fassung): Weg A (Rechenkarten-Weg): Begriff pauken, Definition hersagen, dann Rechenaufgabe mit Zahlen loesen. Dieser Weg haertet das Gedächtnis und liefert MPa-Belege. | Weg B (Kontextkarten-Weg): Im Fliesstext Signalwoerter wägen, Kiste waehlen, Verfahren ableiten. Dieser Weg trainiert Textarbeit und ist klausurnah, bleibt aber ohne Drill lueckig.
+- Ueberfuehrt aus Schritt-5-HILFE (Vorwahl-Fassung): A verlangt Abruf unter Zeit — Weg A mit Karten. B verlangt Textarbeit mit Waage — Weg B mit Kontext.
+- Mechanismus A: ANTWORT：中文：A走卡片路自测背诵；B走语境路称重分盒。 / 德语：A folgt Weg A ueber Karteikarten mit Selbstabfrage; B folgt Weg B ueber Waegen und Kistenwahl im Kontext.
+- Mechanismus B: Weg B (Kontextkarten-Weg): Im Fliesstext Signalwoerter wägen, Kiste waehlen, Verfahren ableiten. Dieser Weg trainiert Textarbeit und ist klausurnah, bleibt aber ohne Drill lueckig.
+- Ein-Satz-Kern: Karteikarte paukt den Begriff, Kontextkarte waehlt das Verfahren.
 
 ANTWORT：中文：A走卡片路自测背诵；B走语境路称重分盒。 / 德语：A folgt Weg A ueber Karteikarten mit Selbstabfrage; B folgt Weg B ueber Waegen und Kistenwahl im Kontext.
 
 `Klausur-Satz: Karteikarte paukt den Begriff, Kontextkarte waehlt das Verfahren.`
-
 ## Schritt 6 — check: Selbsttest zu CN-Begriffe
 
 - FRAGE: 术语卡要哪三语？（Nenne drei Sprachen einer Begriffskarte） | ANTWORT: 德中英加例句。 / Deutsch, Chinesisch, Englisch plus Beispielsatz.
@@ -135,11 +150,25 @@ ANTWORT：中文：A走卡片路自测背诵；B走语境路称重分盒。 / �
 
 ROLLE：中文：你是词汇急救站辅导员。 / 德语：Du bist Tutorin im Vokabel-Notdienst.
 SITUATION：有同学混淆渗透与扩散：请用三语各举一例并给口诀解释两者（约120词）。 / 德语：Eine Schuelerin verwechselt Osmose und Diffusion. Erklaere beide dreisprachig in ca. 120 Woertern mit je einem Beispiel und einer Merkregel.
+
+AUFGABE (nennen, [AFB III]): Nenne in ca. 150 Woertern Einordnung, zwei Belege mit Mechanismus und Schlussurteil zu CN-Begriffe: dreisprachige Terminologie DE-C.
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Definitionsbefund mit Dreisprachigkeit | 5 NP | Enger Beleg mit Zeile als Alternativweg
+Beispielanalyse mit Merkregel | 5 NP | Skizze mit Messwerten als Alternativweg
+Urteil mit Abgrenzungsbeleg | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
+
 RUBRIC (30 XP)：Korrekte Definitionen (10 XP) | Dreisprachigkeit (8 XP) | Beispiele (8 XP) | Merkregel (4 XP).
 
 
 `Klausur-Satz: Achtung Falle: Osmose ohne Membran gibt es nicht; Diffusion ohne Membran schon.`
 
+KERNSATZ (auswendig):
+- Kernsatz: `Signalwoerter oeffnen Kisten: Psi-Zahl fordert Rechnung, ATP gegen Gefaelle fordert Transport.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = Signalwort im Text als Subjekt | Mechanismus = Kistenwahl mit Rechen- oder Transport-Test als Mechanismus | Urteil = Urteil auf Verfahren mit Zuordnungsbeleg
+- Selbsttest: ___ oeffnen Kisten: Psi-Zahl fordert Rechnung, ATP gegen Gefaelle fordert Transport.
 ## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY核心总结：

@@ -8,7 +8,7 @@ operatoren: [auswerten, erklaeren, beurteilen]
 klausurrelevant: true
 datum: 2026-09-25
 tags: [EF, Bio, CN]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: CN-Methodentraining mit Zeitlimit und EHZ — Episode B7: Der blasse Garten
@@ -77,38 +77,53 @@ Wer einen Anteil ueberzieht, frisst die Reserve; die Uhr entscheidet ueber Volls
 
 [Werkzeug: formula]
 
-AUFGABE (Target Challenge): Gegeben: 90 Minuten, drei Aufgaben (darstellen 10 XP, erklaeren mit Rechnung 30 XP, beurteilen 30 XP). Verplane das Budget, loese die Rechenaufgabe mit Ansatz und Einheit und pruefe deine Antwort an drei Horizont-Stichpunkten.
+AUFGABE (beschreiben, [AFB II]): Werte aus Gegeben: 90 Minuten, drei Aufgaben (darstellen 10 XP, erklaeren mit Rechnung 30 XP, beurteilen 30 XP). Verplane das Budget, loese die Rechenaufgabe mit Ansatz und Einheit und pruefe deine Antwort an drei Horizont-Stichpunkten. [AFB II]
 
 HILFE:
-1. Zeit budgetieren: 30 rechnen, 40 deuten, 20 Reserve.
-2. Rechnung mit Gegeben, Formel, Einheit aufschreiben.
-3. Antwort gegen Horizont-Stichpunkte abhaken.
+- Formdimension: Pruefe Signalwoerter, Kistenname und AFB-Stufe mit Textmarkierung; benenne nur die Form, deute die Wahl noch nicht.
+- Verfahrensdimension: Pruefe Rechen- gegen Deutungsanteil mit Anforderungsanalyse; sammle nur die Anteile, ohne das Urteil vorwegzunehmen.
+- Pruefdimension: Pruefe Horizont-Stichpunkte mit Checkliste; zaehle nur die Treffer, ohne die Deutung zu setzen.
+
+COMPLETION (Lückentext):
+- Lies beide Saetze und ergaenze aus dem Gedaechtnis, ohne zurueckzublaettern:
+- ___ mit Horizont verwandelt Wissen in Punkte durch Zerlegen, Rechnen und Pruefen.
+- Ordne Horizont als ___ und pruefe die Richtung ohne Rueckblick.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Zeitbudget mit Anforderungsbezug (CN-Methodentraining mit Zeitlimit und EHZ) | 5 NP | Skizze mit Achsenbeschriftung als Alternativweg
+Rechenanteil mit Ansatz und Einheit | 5 NP | Tabellenvergleich mit Messprotokoll als Alternativweg
+Deutungsurteil mit Horizont-Check | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
 
 MUSTERLOESUNG: Budget 30-40-20 eingehalten; Rechnung mit Ansatz und MPa-Einheit vollstaendig; Horizont zeigt drei Treffer, ein Deutungssatz ergaenzt.
 
 `Klausur-Satz: Neunzig Minuten, drei Stapel, null Ausreden: Die Uhr ist der ehrlichste Trainer.`
 
 ## Schritt 5 — ausprobieren: Duell der Trainingswege: Drill gegen Simulation
+VERGLEICH: Waehle erst den Trainingsweg, dann loesen: (i) Drill-Weg oder (ii) Simulations-Weg — dann loesen. 选程序：先看信号词再选路。
 
-VERGLEICH: Waehle erst den Trainingsweg, dann loesen: (i) Drill-Weg oder (ii) Simulations-Weg — dann loesen.
-
-
-Weg A (Drill-Weg): Isolierte Operator-Saetze pauken und Rechenansaetze unter Stoppuhr wiederholen. Dieser Weg baut Tempo und Automatik und macht die Hand schnell.
-
-Weg B (Simulations-Weg): Komplette Klausur unter Ernstfallbedingungen schreiben und am Horizont auswerten. Dieser Weg baut Nerven und Vollstaendigkeit, kostet aber viel Zeit.
-
+Weg A (Drill-Weg): Neutralfassung fuer die Wahl.
+- [Weg A] Wenn du Weg A waehlst, arbeitest du in Schritt 7 vor allem mit Zahlen, Formeln und Einheiten.
+Weg B (Simulations-Weg): Neutralfassung fuer die Wahl.
+- [Weg B] Wenn du Weg B waehlst, arbeitest du in Schritt 7 vor allem mit Bildern, Ketten und Deutung.
 
 AUFGABE A: AFB-III-Saetze mit weil in unter zwei Minuten bauen. Welcher Weg?
-
 AUFGABE B: Neunzig Minuten durchhalten ohne Einbruch bei Aufgabe drei. Welcher Weg?
 
+HILFE: Pruefe dimensionsgeleitet, welcher Weg passt: Messdimension mit Rechenansatz spricht fuer Zahlen und Weg A; Strukturdimension mit Typ-Test spricht fuer Zuordnung und Weg B; Bilddimension mit Bildvergleich sichert beide Wege. Ordne selbst zu; die Zuordnung wird nicht vorweggenommen.
 
-HILFE: A verlangt Satzbau-Automatik — Weg A mit Drill. B verlangt Durchhaltevermoegen — Weg B mit Simulation.
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg A oder Weg B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Ueberfuehrt aus VERGLEICH (Vorwahl-Fassung): Weg A (Drill-Weg): Isolierte Operator-Saetze pauken und Rechenansaetze unter Stoppuhr wiederholen. Dieser Weg baut Tempo und Automatik und macht die Hand schnell. | Weg B (Simulations-Weg): Komplette Klausur unter Ernstfallbedingungen schreiben und am Horizont auswerten. Dieser Weg baut Nerven und Vollstaendigkeit, kostet aber viel Zeit.
+- Ueberfuehrt aus Schritt-5-HILFE (Vorwahl-Fassung): A verlangt Satzbau-Automatik — Weg A mit Drill. B verlangt Durchhaltevermoegen — Weg B mit Simulation.
+- Mechanismus A: ANTWORT: A folgt Weg A mit Satzbau-Lego unter Zeit; B folgt Weg B mit kompletter Probeklausur und Horizont-Check.
+- Mechanismus B: Weg B (Simulations-Weg): Komplette Klausur unter Ernstfallbedingungen schreiben und am Horizont auswerten. Dieser Weg baut Nerven und Vollstaendigkeit, kostet aber viel Zeit.
+- Ein-Satz-Kern: Drill haertet das Tempo, Simulation haertet die Nerven — die Klausur braucht beides.
 
 ANTWORT: A folgt Weg A mit Satzbau-Lego unter Zeit; B folgt Weg B mit kompletter Probeklausur und Horizont-Check.
 
 `Klausur-Satz: Drill haertet das Tempo, Simulation haertet die Nerven — die Klausur braucht beides.`
-
 ## Schritt 6 — check: Selbsttest zu CN-Training
 
 - FRAGE: Was verrät der Operator? | ANTWORT: Denkleistung und AFB-Stufe der Aufgabe.
@@ -132,11 +147,25 @@ ANTWORT: A folgt Weg A mit Satzbau-Lego unter Zeit; B folgt Weg B mit kompletter
 
 ROLLE: Du bist Coach des Trainingslagers T-7.
 SITUATION: Entwirf in ca. 150 Woertern einen 90-Minuten-Plan fuer eine Bio-Klausur mit Rechen-, Deutungs- und Urteilsteil und begruende jede Zeitentscheidung.
+
+AUFGABE (auswerten, [AFB III]): Werte aus in ca. 150 Woertern Einordnung, zwei Belege mit Mechanismus und Schlussurteil zu CN-Methodentraining mit Zeitlimit und EHZ.
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Zeitbudget mit Verfahrenswahl | 5 NP | Enger Beleg mit Zeile als Alternativweg
+Horizont-Check mit Stichproben | 5 NP | Skizze mit Messwerten als Alternativweg
+Reserveurteil mit Vollstaendigkeitsbeleg | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
+
 RUBRIC (30 XP): Zeitbudget (8 XP) | Verfahrenswahl (8 XP) | Horizont-Check (8 XP) | Reserve-Logik (6 XP).
 
 
 `Klausur-Satz: Achtung Falle: Schoene Antwort ohne Operatorbezug verschenkt die Haelfte der Punkte.`
 
+KERNSATZ (auswendig):
+- Kernsatz: `Zeitplan mit Horizont verwandelt Wissen in Punkte durch Zerlegen, Rechnen und Pruefen.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = Klausurzeit mit Operator als Subjekt | Mechanismus = Budgetteilung plus Horizont-Check als Mechanismus | Urteil = Urteil auf Vollstaendigkeit mit Reserve-Logik
+- Selbsttest: ___ mit Horizont verwandelt Wissen in Punkte durch Zerlegen, Rechnen und Pruefen.
 ## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY:

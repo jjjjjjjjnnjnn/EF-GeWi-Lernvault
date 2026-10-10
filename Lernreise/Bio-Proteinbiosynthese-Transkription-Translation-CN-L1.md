@@ -8,7 +8,7 @@ operatoren: [darstellen, erklaeren, anwenden]
 klausurrelevant: true
 datum: 2026-09-26
 tags: [EF, Bio, Genetik]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Proteinbiosynthese Transkription Translation — Episode B23: Der saure Regen
@@ -78,38 +78,53 @@ $$DNA \xrightarrow{\text{Transkription}} mRNA \xrightarrow{\text{Translation}} \
 
 [Werkzeug: formula]
 
-AUFGABE目标挑战：已知DNA链：写mRNA与肽链，算900碱基层出链长，并判第二位点突变类型。 德语原题：Gegeben: DNA 3-TAC AAA ATT-5. Schreibe mRNA und Peptid, berechne die Kettenlaenge aus 900 Basen und bewerte eine Punktmutation an Position zwei als stumm, missense oder nonsense.
+AUFGABE: Stelle dar 目标挑战：已知DNA链：写mRNA与肽链，算900碱基层出链长，并判第二位点突变类型。 德语原题：Gegeben: DNA 3-TAC AAA ATT-5. Schreibe mRNA und Peptid, berechne die Kettenlaenge aus 900 Basen und bewerte eine Punktmutation an Position zwei als stumm, missense oder nonsense. [AFB II]
 
 HILFE:
-1. mRNA komplementaer zu DNA bauen: A-U, T-A, G-C.
-2. Codons in Leserichtung mit Code-Tabelle uebersetzen.
-3. Mutationstyp aus Proteineffekt bestimmen.
+- Formdimension: Pruefe Promotor, Codon und Ribosomenort mit Sequenzanalyse; benenne nur die Form, deute die Kette noch nicht.
+- Verfahrensdimension: Pruefe Transkription gegen Translation mit Stufentest; sammle nur die Schritte, ohne das Urteil vorwegzunehmen.
+- Bilddimension: Pruefe Banden, Kettenlaenge und Stoppsignal mit Bildvergleich; notiere Bild und Wirkung, ohne die Deutung zu setzen.
+
+COMPLETION (Lückentext):
+- Lies beide Saetze und ergaenze aus dem Gedaechtnis, ohne zurueckzublaettern:
+- ___ kopiert DNA zu mRNA, Translation baut Proteine am Ribosom.
+- Ordne Translation als ___ und pruefe die Richtung ohne Rueckblick.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Sequenzbefund mit Codonanker (Proteinbiosynthese Transkription Translation) | 5 NP | Skizze mit Achsenbeschriftung als Alternativweg
+Stufentest mit Transkriptionsbezug | 5 NP | Tabellenvergleich mit Messprotokoll als Alternativweg
+Urteil mit Funktionsbeleg | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
 
 MUSTERLOESUNG：中文：mRNA为AUG-UUU-UAA得二肽，900碱基出约299肽，突变按表判 missense 或沉默。 / 德语：mRNA 5-AUG UUU UAA-3 ergibt Met-Phe-Stopp; 900 Basen liefern 300 Codons minus Stopp; Austausch an zwei aendert Phe je nach Base zu Leu oder bricht nichts.
 
 `Klausur-Satz: Mit AUG als Start und UAA als Stopp liest der Sandkasten jedes Gen.`
 
 ## Schritt 5 — ausprobieren: Duell der Wege: Code-Rechnung gegen Mutations-Deutung
-
 VERGLEICH: Waehle erst den Code-Weg, dann loesen: (i) Code-Rechenweg oder (ii) Mutations-Deuteweg — dann loesen.选程序：先看信号词再选路。
 
-
-Weg A (Code-Rechenweg): Sequenzen quantitativ uebersetzen und Kettenlaengen berechnen. Dieser Weg liefert exakte Peptide und ist klausurfest.
-
-Weg B (Mutations-Deuteweg): Mutationsfolgen qualitativ abschaetzen und Krankheitsbilder deuten. Dieser Weg liefert Verstaendnis, bleibt aber ohne Zahl weich.
-
+Weg A (Code-Rechenweg): Neutralfassung fuer die Wahl.
+- [Weg A] Wenn du Weg A waehlst, arbeitest du in Schritt 7 vor allem mit Zahlen, Formeln und Einheiten.
+Weg B (Mutations-Deuteweg): Neutralfassung fuer die Wahl.
+- [Weg B] Wenn du Weg B waehlst, arbeitest du in Schritt 7 vor allem mit Bildern, Ketten und Deutung.
 
 AUFGABE A: Peptid aus DNA-Sequenz exakt gesucht. Welcher Weg? 【选程序：先看信号词再选路】
-
 AUFGABE B: Warum toetet Rasterschub, waehrend stumm schont? Welcher Weg? 【选程序：先看信号词再选路】
 
+HILFE: Pruefe dimensionsgeleitet, welcher Weg passt: Messdimension mit Rechenansatz spricht fuer Zahlen und Weg A; Strukturdimension mit Typ-Test spricht fuer Zuordnung und Weg B; Bilddimension mit Bildvergleich sichert beide Wege. Ordne selbst zu; die Zuordnung wird nicht vorweggenommen.
 
-HILFE：A nennt Sequenz — Weg A mit Tabelle. B nennt Warum mit Effekt — Weg B mit Typologie.
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg A oder Weg B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Ueberfuehrt aus VERGLEICH (Vorwahl-Fassung): Weg A (Code-Rechenweg): Sequenzen quantitativ uebersetzen und Kettenlaengen berechnen. Dieser Weg liefert exakte Peptide und ist klausurfest. | Weg B (Mutations-Deuteweg): Mutationsfolgen qualitativ abschaetzen und Krankheitsbilder deuten. Dieser Weg liefert Verstaendnis, bleibt aber ohne Zahl weich.
+- Ueberfuehrt aus Schritt-5-HILFE (Vorwahl-Fassung): A nennt Sequenz — Weg A mit Tabelle. B nennt Warum mit Effekt — Weg B mit Typologie.
+- Mechanismus A: ANTWORT：中文：A走查表路逐个翻译；B走分型路以移码皆毁作答。 / 德语：A folgt Weg A mit Codon-fuer-Codon-Uebersetzung; B folgt Weg B mit alles-dahinter-verschoben-Argument.
+- Mechanismus B: Weg B (Mutations-Deuteweg): Mutationsfolgen qualitativ abschaetzen und Krankheitsbilder deuten. Dieser Weg liefert Verstaendnis, bleibt aber ohne Zahl weich.
+- Ein-Satz-Kern: Codes rechnen uebersetzt, Mutationen deuten warnen — die Klausur braucht beides.
 
 ANTWORT：中文：A走查表路逐个翻译；B走分型路以移码皆毁作答。 / 德语：A folgt Weg A mit Codon-fuer-Codon-Uebersetzung; B folgt Weg B mit alles-dahinter-verschoben-Argument.
 
 `Klausur-Satz: Codes rechnen uebersetzt, Mutationen deuten warnen — die Klausur braucht beides.`
-
 ## Schritt 6 — check: Selbsttest zu Proteinbiosynthese
 
 - FRAGE: 转录在哪？产物是什么？（Wo läuft Transkription, was entsteht） | ANTWORT: 核内产mRNA。 / Im Kern entsteht mRNA.
@@ -135,11 +150,25 @@ ANTWORT：中文：A走查表路逐个翻译；B走分型路以移码皆毁作�
 
 ROLLE：中文：你是耐药组临床医生。 / 德语：Du bist Klinikerin im Resistenz-Team.
 SITUATION：某抗生素卡细菌核糖体：请用转录翻译与密码通用性论证疗效与对病人的风险（约150词）。 / 德语：Ein Antibiotikum blockiert bakterielle Ribosomen. Begruende in ca. 150 Woertern mit Transkription, Translation und Code-Universalitaet, warum es wirkt und wo die Gefahr fuer den Patienten liegt.
+
+AUFGABE (darstellen, [AFB III]): Stelle dar in ca. 150 Woertern Einordnung, zwei Belege mit Mechanismus und Schlussurteil zu Proteinbiosynthese Transkription Translation.
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Mutationsbefund mit Codonanker | 5 NP | Enger Beleg mit Zeile als Alternativweg
+Expressionsanalyse mit Stufenbezug | 5 NP | Skizze mit Messwerten als Alternativweg
+Funktionsurteil mit Krankheitsbeleg | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
+
 RUBRIC (30 XP)：Wirklogik (8 XP) | Universalitaet (8 XP) | Risiko (8 XP) | Empfehlung (6 XP).
 
 
 `Klausur-Satz: Achtung Falle: Stumme Mutation aendert die DNA, aber nie das Protein.`
 
+KERNSATZ (auswendig):
+- Kernsatz: `Transkription kopiert DNA zu mRNA, Translation baut Proteine am Ribosom.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = Gen mit Promotor als Subjekt | Mechanismus = Basenpaarung plus Codon-Lesung als Mechanismus | Urteil = Urteil auf Protein mit Mutationsdeutung
+- Selbsttest: ___ kopiert DNA zu mRNA, Translation baut Proteine am Ribosom.
 ## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY核心总结：

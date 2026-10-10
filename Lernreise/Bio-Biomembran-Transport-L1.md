@@ -8,7 +8,7 @@ operatoren: [beschreiben, vergleichen, erklaeren]
 klausurrelevant: true
 datum: 2026-09-25
 tags: [EF, Bio, Zellbiologie]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Biomembran und Transportmechanismen — Episode B4: Fieber im Reaktorbecken
@@ -46,7 +46,7 @@ PRETRAINING术语盒（5大装备，中文在上、德语在下）：
 
 ENTDECKEN因果传导机制（中文拆解在上，德语链条在下）：
 
-中文：因果链：水总从高水势流向低水势。外界高渗→失水→液泡缩小→原生质体脱壁→膨压归零，即质壁分离；外界低渗→吸水→膨压上升→壁压平衡，即去质壁分离，无壁动物细胞则破裂。运输分叉：顺梯度无ATP为被动，逆梯度耗ATP为主动。
+中文：因果链：水总从高水势流向低水势。外界高渗->失水->液泡缩小->原生质体脱壁->膨压归零，即质壁分离；外界低渗->吸水->膨压上升->壁压平衡，即去质壁分离，无壁动物细胞则破裂。运输分叉：顺梯度无ATP为被动，逆梯度耗ATP为主动。
 
 德语：Wasser folgt stets dem **Wasserpotenzial** vom hoeheren zum niedrigeren Wert. Ist das Aussenmedium hypertonisch, verlaesst Wasser die Zelle: Die Vakuole schrumpft, der Protoplast loest sich von der Wand, der **Turgor** faellt auf null. Ist das Medium hypotonisch, stroemt Wasser ein, bis der Wandgegendruck den Einstrom stoppt. Tierische Zellen ohne Wand platzen dabei (**Haemolyse**). Parallel gilt die Transport-Weiche: Mit Gefaelle ohne ATP ist es passiv, gegen Gefaelle mit ATP ist es aktiv.
 
@@ -79,38 +79,53 @@ $$\Psi = \Psi_{\pi} + \Psi_{p} \quad \text{und} \quad \Delta\Psi = \Psi_{\text{a
 
 [Werkzeug: osmose-lab]
 
-AUFGABE目标挑战：把外液设为0.60 mol/L、胞内0.20 mol/L：预测水流方向，并翻转介质让质壁分离的细胞5分钟内复原、膨压回升超0.2 MPa。 德语原题：Stelle C_aussen = 0,60 mol/L und C_innen = 0,20 mol/L ein. Eine Pflanzenzelle mit Psi_innen = minus 0,4 MPa liegt in einer Loesung mit Psi_aussen = minus 1,1 MPa. Sage die Stromrichtung voraus und kippe das Medium so, dass die plasmolysierte Zelle in unter 5 Simulationsminuten deplasmolysiert und der Turgor wieder ueber 0,2 MPa steigt.
+AUFGABE: Beschreibe 目标挑战：把外液设为0.60 mol/L、胞内0.20 mol/L：预测水流方向，并翻转介质让质壁分离的细胞5分钟内复原、膨压回升超0.2 MPa。 德语原题：Stelle C_aussen = 0,60 mol/L und C_innen = 0,20 mol/L ein. Eine Pflanzenzelle mit Psi_innen = minus 0,4 MPa liegt in einer Loesung mit Psi_aussen = minus 1,1 MPa. Sage die Stromrichtung voraus und kippe das Medium so, dass die plasmolysierte Zelle in unter 5 Simulationsminuten deplasmolysiert und der Turgor wieder ueber 0,2 MPa steigt. [AFB II]
 
 HILFE:
-1. Psi-Differenz bilden: Delta gleich Psi_aussen minus Psi_innen.
-2. Vorzeichen deuten: negativ heisst Ausstrom, positiv heisst Einstrom.
-3. Turgor verfolgen: faellt bei Ausstrom, steigt bei Einstrom bis zum Wandgleichgewicht.
+- Messdimension: Pruefe Psi-Werte aussen und innen mit Differenz-Ansatz; notiere nur die Zahlen, deute die Richtung noch nicht.
+- Strukturdimension: Pruefe Membran, Kanal und ATP-Signal mit Typ-Test; sammle nur die Signale, ohne das Urteil vorwegzunehmen.
+- Bilddimension: Pruefe Volumen, Vakuole und Turgorzeichen mit Bildvergleich; notiere Bild und Wirkung, ohne die Deutung zu setzen.
+
+COMPLETION (Lückentext):
+- Lies beide Saetze und ergaenze aus dem Gedaechtnis, ohne zurueckzublaettern:
+- ___ Membranen trennen passiven Fluss mit Gefaelle von aktivem Pumpen mit ATP.
+- Ordne Membranen als ___ und pruefe die Richtung ohne Rueckblick.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Psi-Befund mit Differenz und Einheit (Biomembran und Transportmechanismen) | 5 NP | Skizze mit Achsenbeschriftung als Alternativweg
+Transporttyp mit Gefaelle-ATP-Test | 5 NP | Tabellenvergleich mit Messprotokoll als Alternativweg
+Turgorurteil mit Plasmolysebeleg | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
 
 MUSTERLOESUNG：中文：差值为-0.7 MPa故外流、膨压归零发生质壁分离；换纯水则逆转内流直至壁压平衡。 / 德语：Delta = minus 1,1 minus (minus 0,4) = minus 0,7 MPa, also negativ: Wasser stroemt aus, Turgor sinkt gegen null, Plasmolyse. In Reinwasser kehrt sich das Gefaelle um: Einstrom bis Turgor den Ausgleich herstellt.
 
 `Klausur-Satz: Mit Delta-Psi von minus 0,7 MPa stroemt Wasser aus, bis Turgor null die Plasmolyse markiert.`
 
 ## Schritt 5 — ausprobieren: Duell der Wege: Rechenweg gegen Transporttypweg
-
 VERGLEICH: Waehle erst das Verfahren, dann loesen: (i) Delta-Psi-Rechenweg oder (ii) Transporttyp-Testweg — dann loesen.选程序：先看信号词再选路。
 
-
-Weg A (Delta-Psi-Rechenweg): Psi-Werte ablesen, Delta berechnen, Richtung und Turgorverlauf quantitativ vorhersagen. Dieser Weg liefert Zahlen mit Einheit MPa und haelt der Klausurkontrolle stand.
-
-Weg B (Transporttyp-Testweg): Transporttyp anhand Gefaelle plus ATP-Test bestimmen: Anreicherung gegen das Gefaelle mit Cyanid-Stopp beweist primaer aktiven Transport. Dieser Weg deutet qualitativ und ist schnell, bleibt aber ohne Zahlen angreifbar.
-
+Weg A (Delta-Psi-Rechenweg): Neutralfassung fuer die Wahl.
+- [Weg A] Wenn du Weg A waehlst, arbeitest du in Schritt 7 vor allem mit Zahlen, Formeln und Einheiten.
+Weg B (Transporttyp-Testweg): Neutralfassung fuer die Wahl.
+- [Weg B] Wenn du Weg B waehlst, arbeitest du in Schritt 7 vor allem mit Bildern, Ketten und Deutung.
 
 AUFGABE A: Wurzelhaare nehmen nach Regen Wasser auf, der ATP-Spiegel bleibt unveraendert. Welcher Weg loest das sauber? 【选程序：先看信号词再选路】
-
 AUFGABE B: Eine Nervenzelle pumpt K+ gegen das Gefaelle; nach Cyanid stoppt alles. Welcher Weg entlarvt den Transporttyp? 【选程序：先看信号词再选路】
 
+HILFE: Pruefe dimensionsgeleitet, welcher Weg passt: Messdimension mit Rechenansatz spricht fuer Zahlen und Weg A; Strukturdimension mit Typ-Test spricht fuer Zuordnung und Weg B; Bilddimension mit Bildvergleich sichert beide Wege. Ordne selbst zu; die Zuordnung wird nicht vorweggenommen.
 
-HILFE：A nennt Einstrom ohne ATP und ohne Zahlen — Weg A mit Delta-Psi, qualitativ per Vorzeichen statt MPa-Rechnung. B nennt Anreicherung gegen das Gefaelle plus Gift — Weg B mit ATP-Test.
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg A oder Weg B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Ueberfuehrt aus VERGLEICH (Vorwahl-Fassung): Weg A (Delta-Psi-Rechenweg): Psi-Werte ablesen, Delta berechnen, Richtung und Turgorverlauf quantitativ vorhersagen. Dieser Weg liefert Zahlen mit Einheit MPa und haelt der Klausurkontrolle stand. | Weg B (Transporttyp-Testweg): Transporttyp anhand Gefaelle plus ATP-Test bestimmen: Anreicherung gegen das Gefaelle mit Cyanid-Stopp beweist primaer aktiven Transport. Dieser Weg deutet qualitativ und ist schnell, bleibt aber ohne Zahlen angreifbar.
+- Ueberfuehrt aus Schritt-5-HILFE (Vorwahl-Fassung): A nennt Einstrom ohne ATP und ohne Zahlen — Weg A mit Delta-Psi, qualitativ per Vorzeichen statt MPa-Rechnung. B nennt Anreicherung gegen das Gefaelle plus Gift — Weg B mit ATP-Test.
+- Mechanismus A: ANTWORT：中文：A走计算路：经水通道的渗透；B走类型路：Na+/K+泵的主动运输，断ATP即停。 / 德语：A folgt Weg A als Osmose ueber Aquaporine mit negativem Delta-Psi; B folgt Weg B als primaer aktiver Transport ueber die Na+/K+-ATPase, der bei ATP-Stopp zusammenbricht.
+- Mechanismus B: Weg B (Transporttyp-Testweg): Transporttyp anhand Gefaelle plus ATP-Test bestimmen: Anreicherung gegen das Gefaelle mit Cyanid-Stopp beweist primaer aktiven Transport. Dieser Weg deutet qualitativ und ist schnell, bleibt aber ohne Zahlen angreifbar.
+- Ein-Satz-Kern: Psi-Zahlen verlangen den Rechenweg mit Delta-Psi, Pumpen mit ATP verlangen den Typweg des Transports.
 
 ANTWORT：中文：A走计算路：经水通道的渗透；B走类型路：Na+/K+泵的主动运输，断ATP即停。 / 德语：A folgt Weg A als Osmose ueber Aquaporine mit negativem Delta-Psi; B folgt Weg B als primaer aktiver Transport ueber die Na+/K+-ATPase, der bei ATP-Stopp zusammenbricht.
 
 `Klausur-Satz: Psi-Zahlen verlangen den Rechenweg mit Delta-Psi, Pumpen mit ATP verlangen den Typweg des Transports.`
-
 ## Schritt 6 — check: Selbsttest zu Biomembran und Transport
 
 - FRAGE: 水质自由通过的是什么？（Welche Teilchen passieren die Doppelschicht frei） | ANTWORT: 小的非极性分子如O2和CO2，离子必须走蛋白。 / Kleine unpolare wie O2 und CO2; Ionen brauchen Proteine.
@@ -136,11 +151,25 @@ ANTWORT：中文：A走计算路：经水通道的渗透；B走类型路：Na+/K
 
 ROLLE：中文：你是夜班农业生物技术员。 / 德语：Du bist Agrarbiologin im Nachtdienst.
 SITUATION：施肥过量后番茄萎蔫而土壤仍湿：请用紧张度、水势、质壁分离与膨压解释细胞层面发生了什么并给出急救措施（约150词）。 / 德语：Gewaechaustomaten welken trotz nasser Erde nach Ueberduengung. Erklaere mit Tonizitaet, Wasserpotenzial, Plasmolyse und Turgor in ca. 150 Woertern, was auf Zellebene geschah, und nenne die Sofortmassnahme.
+
+AUFGABE (beschreiben, [AFB III]): Beschreibe in ca. 150 Woertern Einordnung, zwei Belege mit Mechanismus und Schlussurteil zu Biomembran und Transportmechanismen.
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Hyperton-Diagnose mit Psi-Anker | 5 NP | Enger Beleg mit Zeile als Alternativweg
+Wasserentzug mit Gefaelle-Deutung | 5 NP | Skizze mit Messwerten als Alternativweg
+Turgorurteil mit Auswasch-Beleg | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
+
 RUBRIC (30 XP)：Hyperton-Diagnose (8 XP) | Wasserentzug trotz Naesse (8 XP) | Turgorverlust mit Plasmolyse (8 XP) | Auswaschen mit Reinwasser (6 XP).
 
 
 `Klausur-Satz: Achtung Falle: Hyperton entzieht Wasser trotz nasser Erde; nur Auswaschen mit Reinwasser stellt den Turgor wieder her.`
 
+KERNSATZ (auswendig):
+- Kernsatz: `Selektive Membranen trennen passiven Fluss mit Gefaelle von aktivem Pumpen mit ATP.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = Membran mit Aquaporinen als Subjekt | Mechanismus = Gefaelle-Test plus ATP-Stopp als Mechanismus | Urteil = Urteil auf Transporttyp mit Turgorfolge
+- Selbsttest: ___ Membranen trennen passiven Fluss mit Gefaelle von aktivem Pumpen mit ATP.
 ## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY核心总结：

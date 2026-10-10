@@ -8,7 +8,7 @@ operatoren: [beschreiben, erklaeren, analysieren]
 klausurrelevant: true
 datum: 2026-10-03
 tags: [EF, Bio, Stoffwechsel, Fotosynthese, Lichtreaktion, Calvin-Zyklus, Chloroplasten]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Fotosynthese: Die Lichtreaktion und der Calvin-Benson-Zyklus (L1, Ziel Klausur)
@@ -31,7 +31,7 @@ Hook / Phaenomen: Nimm einen tiefen Atemzug: Der lebensrettende Sauerstoff in de
 `Klausur-Satz: Die Fotosynthese koppelt die lichtabhaengige Erzeugung von Reduktionsaequivalenten (NADPH+H+) und ATP ueber eine Elektronentransportkette an die enzymatische Fixierung von CO2 im Calvin-Zyklus.`
 
 ## Schritt 2 — entdecken: Ausruestungskiste der Fotosynthese-Unit
-PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
+PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文->德语，Evidenz：pretraining降认知负荷）：
 
 中文在上，德语在下：
 
@@ -93,7 +93,7 @@ BEISPIEL（正确例题示范，含教具操作与解答）：
 
 [Werkzeug: balance-board]
 
-AUFGABE (beschreiben & analysieren, AFB I/II)：
+AUFGABE (beschreiben & analysieren, [AFB I/II])： Beschreibe [AFB II]
 Das Herbizid DCMU (Diuron) blockiert spezifisch die Bindungsstelle fuer Plastochinon (PQ) am Fotosystem II.
 In einem pflanzenphysiologischen Experiment wird eine isolierte Chloroplastensuspension belichtet. Nach Zugabe von DCMU werden folgende Parameter gemessen:
 1. Sauerstofffreisetzung ($O_2$-Produktion)
@@ -103,10 +103,21 @@ In einem pflanzenphysiologischen Experiment wird eine isolierte Chloroplastensus
 2. Analysieren Sie die molekularen Ursachen fuer das Verhalten der Parameter und erklaeren Sie, warum die $O_2$-Produktion zum Erliegen kommt, obwohl DCMU nicht direkt an der Fotolyse ansetzt. (20 BE)
 
 HILFE:
-1. Schritt 1: Angriffsort DCMU: Blockade des Elektronentransfers von PS II auf Plastochinon (PQ).
-2. Schritt 2: Sauerstoffproduktion: Elektronen koennen P680 nicht mehr verlassen $\implies$ P680 bleibt reduziert bzw. kann keine neuen Elektronen aufnehmen $\implies$ Fotolyse des Wassers stoppt!
-3. Schritt 3: NADPH-Bildung: Kein Elektronennachschub von PS II zu PS I $\implies$ azyklischer Fluss unterbrochen $\implies$ NADPH-Produktion faellt auf Null.
-4. Schritt 4: ATP-Bildung: Zwar bricht die azyklische Photophosphorylierung zusammen, aber PS I kann noch einen **zyklischen Elektronentransport** ueber Ferredoxin zurueck zu Cytochrom-$b_6f$ durchfuehren $\implies$ Rest-ATP-Bildung bleibt moeglich!
+- Messdimension: Pruefe Licht, Sauerstoff und Zuckernachweis mit Messreihe; notiere nur die Werte, deute den Weg noch nicht.
+- Strukturdimension: Pruefe Thylakoid gegen Stroma mit Kompartiment-Test; sammle nur die Orte, ohne das Urteil vorwegzunehmen.
+- Bilddimension: Pruefe Farbumschlag und Blasenbildung mit Bildvergleich; notiere Bild und Wirkung, ohne die Deutung zu setzen.
+
+COMPLETION (Lückentext):
+- Lies beide Saetze und ergaenze aus dem Gedaechtnis, ohne zurueckzublaettern:
+- ___ spaltet Wasser und liefert ATP, Calvin fixiert CO2 zu Zucker im Stroma.
+- Ordne Wasser als ___ und pruefe die Richtung ohne Rueckblick.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Messbefund mit Licht- und Gaswerten (Fotosynthese: Die Lichtreaktion und der Calv) | 5 NP | Skizze mit Achsenbeschriftung als Alternativweg
+Ortsanalyse mit Kompartimentbezug | 5 NP | Tabellenvergleich mit Messprotokoll als Alternativweg
+Ertragsurteil mit Kontrollexperiment | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
 
 MUSTERLÖSUNG:
 1. Beschreibung der Messparameter nach DCMU-Gabe:
@@ -121,25 +132,27 @@ MUSTERLÖSUNG:
 `Klausur-Satz: Durch Blockade des Plastochinons unterbricht DCMU den azyklischen Elektronentransport und stoppt die Sauerstoffproduktion rueckkoppelnd ueber den Rueckstau von Elektronen am Fotosystem II.`
 
 ## Schritt 5 — ausprobieren: Duell der Reaktionen: Lichtreaktion vs. Calvin-Zyklus
+VERGLEICH: Lichtabhaengige Reaktion (Thylakoid) vs. Lichtunabhaengige Reaktion (Stroma) 选程序：先看信号词再选路。
 
-VERGLEICH: Lichtabhaengige Reaktion (Thylakoid) vs. Lichtunabhaengige Reaktion (Stroma)
+Weg A: Neutralfassung fuer die Wahl.
+- [Weg A] Wenn du Weg A waehlst, arbeitest du in Schritt 7 vor allem mit Zahlen, Formeln und Einheiten.
+Weg B: Neutralfassung fuer die Wahl.
+- [Weg B] Wenn du Weg B waehlst, arbeitest du in Schritt 7 vor allem mit Bildern, Ketten und Deutung.
 
-- Kriterium 1: Reaktionsort im Chloroplasten:
-  - Lichtreaktion: Thylakoidmembran und Thylakoidlumen (strikte Kompartimentierung fuer Protonengradient).
-  - Calvin-Zyklus: Stroma (fluessige Matrix voller loeslicher Enzyme wie RuBisCO).
-- Kriterium 2: Ausgangsstoffe (Edukte):
-  - Lichtreaktion: Wasser ($H_2O$), Lichtquanten, $ADP + P_i$, $NADP^+$.
-  - Calvin-Zyklus: Kohlendioxid ($CO_2$), ATP, $NADPH + H^+$.
-- Kriterium 3: Endprodukte:
-  - Lichtreaktion: Sauerstoff ($O_2$), ATP, $NADPH + H^+$.
-  - Calvin-Zyklus: Phosphatierte Triosen (Glycerinaldehyd-3-phosphat / Glukose), $ADP + P_i$, $NADP^+$.
-- Kriterium 4: Lichtabhaengigkeit:
-  - Lichtreaktion: Direkt lichtgetrieben ueber Pigmente.
-  - Calvin-Zyklus: Zwar thermodynamisch lichtunabhaengig ("Dunkelreaktion"), laeuft im Dunkeln jedoch rasch aus, da die Vorraete an ATP und NADPH versiegen und Licht ueber Ferredoxin-Thioredoxin die Calvin-Enzyme allosterisch aktiviert!
+AUFGABE A: Welche Pruefgroesse verlangt Zahlen und Rechnung? Begruende ohne Mechanismus.
+AUFGABE B: Welche Frage verlangt Kette und Deutung? Begruende ohne Mechanismus.
 
-Entscheidungsregel fuer die Klausur:
-Bezeichne den Calvin-Zyklus niemals unbedacht als "Dunkelreaktion", ohne klarzustellen: Bei Nacht stoppt auch der Calvin-Zyklus nach wenigen Sekunden, weil ihm ATP und NADPH aus der Lichtreaktion fehlen!
+HILFE: Pruefe dimensionsgeleitet, welcher Weg passt: Messdimension mit Rechenansatz spricht fuer Zahlen und Weg A; Strukturdimension mit Typ-Test spricht fuer Zuordnung und Weg B; Bilddimension mit Bildvergleich sichert beide Wege. Ordne selbst zu; die Zuordnung wird nicht vorweggenommen.
 
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg A oder Weg B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Ueberfuehrt aus VERGLEICH (Vorwahl-Fassung): VERGLEICH: Lichtabhaengige Reaktion (Thylakoid) vs. Lichtunabhaengige Reaktion (Stroma) - Kriterium 1: Reaktionsort im Chloroplasten: - Lichtreaktion: Thylakoidmembran und Thylakoidlumen (strikte Kompartimentierung fuer Protonengradient). - Calvin-Zyklus: Stroma (fluessige Matrix voller loeslicher Enzyme wie RuBisCO). - Kriterium 2: Ausgangsstoffe (Edukte): - Lichtreaktion: Wasser ($H_2O$), Lichtquanten, $ADP + P_i$, $NADP^+$. - Calvin-Zyklus: Kohlendioxid ($CO_2$), ATP, $NADPH + H^+$. - Kriterium 3: Endprodukte: - Lichtreaktion: Sauerstoff ($O_2$), ATP, $NADPH + H^+$. - Calvin-Zyklus: Phosphatierte Triosen (Glycerinaldehyd-3-phosphat / Glukose), $ADP + P_i$, $NADP^+$. - Kriterium 4: Lichtabhaengigkeit: - Lichtreaktion: Direkt lichtgetrieben ueber Pigmente. - Calvin-Zyklus: Zwar thermodynamisch lichtunabhaengig ("Dunkelreaktion"), laeuft im Dunkeln jedoch rasch aus, da die Vorraete an AT
+- Ueberfuehrt aus Schritt-5-HILFE (Vorwahl-Fassung): Kein Spoiler in Vorwahl-HILFE bestaetigt, Vorwahl-Fassung enthielt keine HILFE mit Loesungszuordnung.
+- Mechanismus A: VERGLEICH: Lichtabhaengige Reaktion (Thylakoid) vs. Lichtunabhaengige Reaktion (Stroma) - Kriterium 1: Reaktionsort im Chloroplasten: - Lichtreaktion: Thylakoidmembran und Thylakoidlumen (strikte Kompartimentierung fuer Protonengradient). - Calvin-Zyklus: Stroma (fluessige Matrix voller loeslicher Enzyme wie RuBisCO). - Kriterium 2: Ausgangsstoffe (Edukte): - Lichtreaktion: Wasser ($H_2O$), Lichtq
+- Mechanismus B: Siehe Vergleichs-Exzerpt, zweite Position ab Trennzeichen | im Exzerpt.
+- Ein-Satz-Kern: Licht spaltet Wasser und liefert ATP, Calvin fixiert CO2 zu Zucker im Stroma.
+
+`Klausur-Satz: Licht spaltet Wasser und liefert ATP, Calvin fixiert CO2 zu Zucker im Stroma.`
 ## Schritt 6 — check: Klausur-Transfer CO2-Kompensationspunkt & Lichtkurve
 PRÜFUNGSSZENARIO (KLP NRW Biologie EF/Q1 Inhaltsfeld 3: Stoffwechsel / Oekophysiologie):
 
@@ -160,6 +173,8 @@ ERWARTUNGSHORIZONT:
   - *Sonnenblatt (Anpassung an Starklicht an der Kronenaussenseite)*: Sonnenblaetter sind dick und ledrig, besitzen ein mehrschichtiges, langgestrecktes Palisadengewebe mit gigantischen Mengen an Chloroplasten und Enzymen (RuBisCO). Wegen der dicken lebenden Zellschichten ist ihre Dunkelatmung hoch (hoher Grundumsatz), weshalb sie erst bei 2.000 Lux den Kompensationspunkt erreichen.dafuer koennen sie enorme Lichtmengen ohne Fotoinhibition verwerten und gigantische Zuckermengen fuer das Gesamtwachstum des Baumes synthetisieren.
 
 ## Schritt 7 — check: Format-Check & Scoring
+AUFGABE (beschreiben, [AFB III]): Beschreibe in ca. 150 Woertern Einordnung, zwei Belege mit Mechanismus und Schlussurteil zu Fotosynthese: Die Lichtreaktion und der Calv.
+
 30 XP Schnelltest zur Verstaendigungssicherung:
 
 FRAGE: Woher stammt der bei der Fotosynthese freigesetzte Sauerstoff molekularbiologisch: aus dem Wasser oder aus dem Kohlendioxid?
@@ -171,6 +186,18 @@ ANTWORT: RuBisCO (Ribulose-1,5-bisphosphat-Carboxylase/Oxygenase).
 FRAGE: Wie viele Molekuele ATP und NADPH muessen im Calvin-Zyklus aufgewendet werden, um ein einziges Molekuel Glukose ($C_6H_{12}O_6$) netto zu synthetisieren?
 ANTWORT: 18 ATP und 12 NADPH (fuer die Fixierung von 6 $CO_2$).
 
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Lichtbefund mit Gasanker | 5 NP | Enger Beleg mit Zeile als Alternativweg
+Dunkelanalyse mit Fixierungsbezug | 5 NP | Skizze mit Messwerten als Alternativweg
+Ertragsurteil mit Gewaechshausbeleg | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
+
+KERNSATZ (auswendig):
+- Kernsatz: `Licht spaltet Wasser und liefert ATP, Calvin fixiert CO2 zu Zucker im Stroma.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = Thylakoid mit Licht als Subjekt | Mechanismus = Elektronentransport plus Calvin-Fixierung als Mechanismus | Urteil = Urteil auf Ertrag mit Sauerstoffbeleg
+- Selbsttest: Licht spaltet ___ und liefert ATP, Calvin fixiert CO2 zu Zucker im Stroma.
 ## Schritt 8 — reflexion: Meisterschaft & Naechste Mission
 REFLEXION:
 Du hast das biochemische Herzstueck der gesamten Biosphaere durchdrungen. Du kannst das Z-Schema zeichnen, Fotolyse und Chemiosmose thermodynamisch begruenden und die Phasen des Calvin-Zyklus im Abitur fehlerfrei analysieren.

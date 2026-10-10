@@ -8,7 +8,7 @@ operatoren: [beschreiben, auswerten, erklaeren]
 klausurrelevant: true
 datum: 2026-09-25
 tags: [EF, Bio, Zellbiologie]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Enzymaktivitaet und Einflussfaktoren — Episode B14: Das Leck in Halle 7
@@ -77,38 +77,53 @@ Jede Rate braucht Zeit im Nenner; Kurven werden als Steigung gelesen.
 
 [Werkzeug: formula]
 
-AUFGABE (Target Challenge): Gegeben: Raten bei 20/30/37/45/60 Grad: 0,2/0,5/0,9/0,4/0,0 mol/(L s); dazu pH-Reihe 5/7/9. Bestimme beide Optima, berechne die Rate bei 30 Grad aus c-Verlauf und begruende den Absturz bei 60 Grad molekular.
+AUFGABE (beschreiben, [AFB II]): Beschreibe Gegeben: Raten bei 20/30/37/45/60 Grad: 0,2/0,5/0,9/0,4/0,0 mol/(L s); dazu pH-Reihe 5/7/9. Bestimme beide Optima, berechne die Rate bei 30 Grad aus c-Verlauf und begruende den Absturz bei 60 Grad molekular. [AFB II]
 
 HILFE:
-1. Optima als Gipfel ablesen: Temperatur und pH getrennt.
-2. Rate aus Delta-c durch Delta-t mit Einheit berechnen.
-3. Absturz mit Denaturierung der Tertiaerstruktur begruenden.
+- Messdimension: Pruefe Rate, Optimum und Saettigung mit Kurvenvergleich; notiere nur die Werte, deute die Ursache noch nicht.
+- Strukturdimension: Pruefe Zentrum, Ladung und Effektor mit Hemm-Test; sammle nur die Signale, ohne das Urteil vorwegzunehmen.
+- Verfahrensdimension: Pruefe Temperatur-, pH- und Substratvariation mit Versuchsplan; ordne nur die Ansatze, loese die Zuordnung noch nicht.
+
+COMPLETION (Lückentext):
+- Lies beide Saetze und ergaenze aus dem Gedaechtnis, ohne zurueckzublaettern:
+- ___, pH und Substrat steuern Enzymaktivitaet ueber Struktur, Ladung und Saettigung.
+- Ordne Substrat als ___ und pruefe die Richtung ohne Rueckblick.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Kurvenbefund mit Optimum und Einheit (Enzymaktivitaet und Einflussfaktoren) | 5 NP | Skizze mit Achsenbeschriftung als Alternativweg
+Faktoranalyse mit Strukturbezug | 5 NP | Tabellenvergleich mit Messprotokoll als Alternativweg
+Urteil mit Denaturierungsbeleg | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
 
 MUSTERLOESUNG: Optimum 37 Grad und pH 7; v bei 30 Grad aus Steigung 0,5 mol/(L s); bei 60 Grad bricht die Rate auf null ein, weil die Tertiaerstruktur irreversibel zerfaellt.
 
 `Klausur-Satz: Mit Optimum bei 37 Grad und Einbruch jenseits 45 Grad rechnet die Kurve statt zu raten.`
 
 ## Schritt 5 — ausprobieren: Duell der Wege: Kurvenmessung gegen Strukturdeutung
+VERGLEICH: Waehle erst den Beweisweg, dann loesen: (i) Kurvenmess-Rechenweg oder (ii) Strukturdeute-Weg — dann loesen. 选程序：先看信号词再选路。
 
-VERGLEICH: Waehle erst den Beweisweg, dann loesen: (i) Kurvenmess-Rechenweg oder (ii) Strukturdeute-Weg — dann loesen.
-
-
-Weg A (Kurvenmess-Rechenweg): Raten messen, Optima ablesen, Steigungen quantitativ berechnen. Dieser Weg liefert Zahlen mit Einheit und ist pruefungssicher.
-
-Weg B (Strukturdeute-Weg): Taschenform und Ladungen am Modell deuten und Denaturierung qualitativ erklaeren. Dieser Weg liefert Verstaendnis, bleibt aber ohne Zahl duenn.
-
+Weg A (Kurvenmess-Rechenweg): Neutralfassung fuer die Wahl.
+- [Weg A] Wenn du Weg A waehlst, arbeitest du in Schritt 7 vor allem mit Zahlen, Formeln und Einheiten.
+Weg B (Strukturdeute-Weg): Neutralfassung fuer die Wahl.
+- [Weg B] Wenn du Weg B waehlst, arbeitest du in Schritt 7 vor allem mit Bildern, Ketten und Deutung.
 
 AUFGABE A: v aus Zeitverlauf mit Einheit gesucht. Welcher Weg?
-
 AUFGABE B: Warum hilft mehr Substrat jenseits der Saettigung nichts? Welcher Weg?
 
+HILFE: Pruefe dimensionsgeleitet, welcher Weg passt: Messdimension mit Rechenansatz spricht fuer Zahlen und Weg A; Strukturdimension mit Typ-Test spricht fuer Zuordnung und Weg B; Bilddimension mit Bildvergleich sichert beide Wege. Ordne selbst zu; die Zuordnung wird nicht vorweggenommen.
 
-HILFE: A nennt Verlauf und Einheit — Weg A mit Rechnung. B nennt Warum mit Struktur — Weg B mit Deutung.
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg A oder Weg B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Ueberfuehrt aus VERGLEICH (Vorwahl-Fassung): Weg A (Kurvenmess-Rechenweg): Raten messen, Optima ablesen, Steigungen quantitativ berechnen. Dieser Weg liefert Zahlen mit Einheit und ist pruefungssicher. | Weg B (Strukturdeute-Weg): Taschenform und Ladungen am Modell deuten und Denaturierung qualitativ erklaeren. Dieser Weg liefert Verstaendnis, bleibt aber ohne Zahl duenn.
+- Ueberfuehrt aus Schritt-5-HILFE (Vorwahl-Fassung): A nennt Verlauf und Einheit — Weg A mit Rechnung. B nennt Warum mit Struktur — Weg B mit Deutung.
+- Mechanismus A: ANTWORT: A folgt Weg A mit Steigungsrechnung; B folgt Weg B mit alle Zentren besetzt als Strukturargument.
+- Mechanismus B: Weg B (Strukturdeute-Weg): Taschenform und Ladungen am Modell deuten und Denaturierung qualitativ erklaeren. Dieser Weg liefert Verstaendnis, bleibt aber ohne Zahl duenn.
+- Ein-Satz-Kern: Raten messen zaehlt, Strukturen deuten erklaert — die Klausur braucht beides.
 
 ANTWORT: A folgt Weg A mit Steigungsrechnung; B folgt Weg B mit alle Zentren besetzt als Strukturargument.
 
 `Klausur-Satz: Raten messen zaehlt, Strukturen deuten erklaert — die Klausur braucht beides.`
-
 ## Schritt 6 — check: Selbsttest zu Enzymaktivitaet und Faktoren
 
 - FRAGE: Wo liegt das Temperaturoptimum? | ANTWORT: Etwa 37 Grad beim Menschen.
@@ -132,11 +147,25 @@ ANTWORT: A folgt Weg A mit Steigungsrechnung; B folgt Weg B mit alle Zentren bes
 
 ROLLE: Du bist Laborprueferin fuer Waschenzyme.
 SITUATION: Ein Hersteller wirbt mit Kaltwasch-Enzym bei 20 Grad. Bewerte in ca. 150 Woertern mit Optimum, Rate und Denaturierung, ob das Versprechen haelt, und entwirf den Gegenversuch.
+
+AUFGABE (beschreiben, [AFB III]): Beschreibe in ca. 150 Woertern Einordnung, zwei Belege mit Mechanismus und Schlussurteil zu Enzymaktivitaet und Einflussfaktoren.
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Optimumbefund mit Kurvenanker | 5 NP | Enger Beleg mit Zeile als Alternativweg
+Strukturanalyse mit Denaturierungsbezug | 5 NP | Skizze mit Messwerten als Alternativweg
+Anwendungsurteil mit Kuehlkettenbeleg | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
+
 RUBRIC (30 XP): Optimumslogik (8 XP) | Ratendeutung (8 XP) | Gegenversuch (8 XP) | Abwaegung (6 XP).
 
 
 `Klausur-Satz: Achtung Falle: Denaturierung ist irreversibel, Hemmung oft reversibel — wer tauscht, verliert.`
 
+KERNSATZ (auswendig):
+- Kernsatz: `Temperatur, pH und Substrat steuern Enzymaktivitaet ueber Struktur, Ladung und Saettigung.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = Enzym mit aktivem Zentrum als Subjekt | Mechanismus = Faktorvariation mit Optimumkurve als Mechanismus | Urteil = Urteil auf Denaturierung mit RGT-Regel
+- Selbsttest: Temperatur, pH und Substrat steuern ___ ueber Struktur, Ladung und Saettigung.
 ## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY:

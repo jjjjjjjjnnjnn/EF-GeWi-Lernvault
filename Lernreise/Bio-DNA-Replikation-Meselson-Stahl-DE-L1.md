@@ -8,7 +8,7 @@ operatoren: [beschreiben, erklaeren, vergleichen]
 klausurrelevant: true
 datum: 2026-09-26
 tags: [EF, Bio, Genetik]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: DNA-Replikation und Meselson-Stahl — Episode B12: Der cholesterin-klemmende Fahrstuhl
@@ -77,38 +77,53 @@ Konservativ wuerde schwer plus leicht zeigen; nur semikonservativ liefert exakt 
 
 [Werkzeug: formula]
 
-AUFGABE (Target Challenge): Gegeben: Start voll 15N-markiert, dann zwei Runden in 14N. Sage fuer konservativ, semikonservativ und dispersiv die Banden beider Runden voraus und rechne die Dichteanteile pro Bande aus. Entscheide, welches Modell die echte Messung (Runde 1: ein Mittelband, Runde 2: mittel plus leicht) bestaetigt.
+AUFGABE (beschreiben, [AFB II]): Beschreibe Gegeben: Start voll 15N-markiert, dann zwei Runden in 14N. Sage fuer konservativ, semikonservativ und dispersiv die Banden beider Runden voraus und rechne die Dichteanteile pro Bande aus. Entscheide, welches Modell die echte Messung (Runde 1: ein Mittelband, Runde 2: mittel plus leicht) bestaetigt. [AFB II]
 
 HILFE:
-1. Modelle sauber trennen: konservativ, semikonservativ, dispersiv.
-2. Banden pro Runde vorhersagen: schwer, mittel, leicht.
-3. Messung dagegenhalten: Runde eins entscheidet fast alles.
+- Messdimension: Pruefe Dichtebanden, Generation und Zentrifugationsbild mit Bandenvergleich; notiere nur die Lagen, deute das Modell noch nicht.
+- Verfahrensdimension: Pruefe parentale gegen neue Straenge mit Markierungstest; sammle nur die Signale, ohne das Urteil vorwegzunehmen.
+- Bilddimension: Pruefe Zwischenbande und Endbanden mit Verlaufsvergleich; notiere Bild und Wirkung, ohne die Deutung zu setzen.
+
+COMPLETION (Lückentext):
+- Lies beide Saetze und ergaenze aus dem Gedaechtnis, ohne zurueckzublaettern:
+- ___ beweist semikonservative Replikation durch Dichtebanden nach Zentrifugation.
+- Ordne Replikation als ___ und pruefe die Richtung ohne Rueckblick.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Bandenbefund mit Generationsanker (DNA-Replikation und Meselson-Stahl) | 5 NP | Skizze mit Achsenbeschriftung als Alternativweg
+Modelltest mit Zwischenbanden | 5 NP | Tabellenvergleich mit Messprotokoll als Alternativweg
+Urteil mit Semikonservativ-Beleg | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
 
 MUSTERLOESUNG: Konservativ: Runde eins schwer plus leicht — falsch. Dispersiv: Runde eins mittel, Runde zwei nur mittel — falsch. Semikonservativ: Runde eins ein Mittelband, Runde zwei mittel plus leicht — exakt die Messung.
 
 `Klausur-Satz: Drei Modelle, eine Zentrifuge: Nur semikonservativ ueberlebt beide Runden.`
 
 ## Schritt 5 — ausprobieren: Duell der Wege: Bandenzaehlung gegen Modellvergleich
+VERGLEICH: Waehle erst den Beweisweg, dann loesen: (i) Bandenzaehl-Rechenweg oder (ii) Modellvergleichs-Deuteweg — dann loesen. 选程序：先看信号词再选路。
 
-VERGLEICH: Waehle erst den Beweisweg, dann loesen: (i) Bandenzaehl-Rechenweg oder (ii) Modellvergleichs-Deuteweg — dann loesen.
-
-
-Weg A (Bandenzaehl-Rechenweg): Banden pro Runde zaehlen und Dichteanteile quantitativ ausrechnen. Dieser Weg liefert harte Zahlen und haelt der Protokollpruefung stand.
-
-Weg B (Modellvergleichs-Deuteweg): Die drei Modelle qualitativ gegeneinander halten und am Schaubild ausscheiden. Dieser Weg ist schnell und anschaulich, bleibt aber ohne Zahlen angreifbar.
-
+Weg A (Bandenzaehl-Rechenweg): Neutralfassung fuer die Wahl.
+- [Weg A] Wenn du Weg A waehlst, arbeitest du in Schritt 7 vor allem mit Zahlen, Formeln und Einheiten.
+Weg B (Modellvergleichs-Deuteweg): Neutralfassung fuer die Wahl.
+- [Weg B] Wenn du Weg B waehlst, arbeitest du in Schritt 7 vor allem mit Bildern, Ketten und Deutung.
 
 AUFGABE A: Dichteanteile der Mittelbande in Runde zwei gesucht. Welcher Weg?
-
 AUFGABE B: Warum scheidet dispersiv erst in Runde zwei aus? Welcher Weg?
 
+HILFE: Pruefe dimensionsgeleitet, welcher Weg passt: Messdimension mit Rechenansatz spricht fuer Zahlen und Weg A; Strukturdimension mit Typ-Test spricht fuer Zuordnung und Weg B; Bilddimension mit Bildvergleich sichert beide Wege. Ordne selbst zu; die Zuordnung wird nicht vorweggenommen.
 
-HILFE: A nennt Anteile — Weg A mit Rechnung. B nennt Warum mit Schaubild — Weg B mit Vergleich.
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg A oder Weg B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Ueberfuehrt aus VERGLEICH (Vorwahl-Fassung): Weg A (Bandenzaehl-Rechenweg): Banden pro Runde zaehlen und Dichteanteile quantitativ ausrechnen. Dieser Weg liefert harte Zahlen und haelt der Protokollpruefung stand. | Weg B (Modellvergleichs-Deuteweg): Die drei Modelle qualitativ gegeneinander halten und am Schaubild ausscheiden. Dieser Weg ist schnell und anschaulich, bleibt aber ohne Zahlen angreifbar.
+- Ueberfuehrt aus Schritt-5-HILFE (Vorwahl-Fassung): A nennt Anteile — Weg A mit Rechnung. B nennt Warum mit Schaubild — Weg B mit Vergleich.
+- Mechanismus A: ANTWORT: A folgt Weg A mit 50-zu-50-Rechnung der Mittel- und Leichtbande; B folgt Weg B mit dem Argument, dass dispersiv nie trennt.
+- Mechanismus B: Weg B (Modellvergleichs-Deuteweg): Die drei Modelle qualitativ gegeneinander halten und am Schaubild ausscheiden. Dieser Weg ist schnell und anschaulich, bleibt aber ohne Zahlen angreifbar.
+- Ein-Satz-Kern: Banden zaehlen beweist, Modelle vergleichen erklaert — die Klausur braucht beides.
 
 ANTWORT: A folgt Weg A mit 50-zu-50-Rechnung der Mittel- und Leichtbande; B folgt Weg B mit dem Argument, dass dispersiv nie trennt.
 
 `Klausur-Satz: Banden zaehlen beweist, Modelle vergleichen erklaert — die Klausur braucht beides.`
-
 ## Schritt 6 — check: Selbsttest zu DNA-Replikation und Meselson-Stahl
 
 - FRAGE: In welcher Richtung baut die Polymerase? | ANTWORT: Nur in 5-nach-3-Richtung und nur mit Primer.
@@ -132,11 +147,25 @@ ANTWORT: A folgt Weg A mit 50-zu-50-Rechnung der Mittel- und Leichtbande; B folg
 
 ROLLE: Du bist Gutachterin im Genetik-Labor.
 SITUATION: Ein Praktikant behauptet, ein einziges Mittelband beweise alles. Schreibe in ca. 150 Woertern ein Gutachten, das alle drei Modelle ueber zwei Runden prueft und das Urteil begruendet.
+
+AUFGABE (beschreiben, [AFB III]): Beschreibe in ca. 150 Woertern Einordnung, zwei Belege mit Mechanismus und Schlussurteil zu DNA-Replikation und Meselson-Stahl.
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Versuchsbefund mit Isotopenanker | 5 NP | Enger Beleg mit Zeile als Alternativweg
+Bandenanalyse mit Modellbezug | 5 NP | Skizze mit Messwerten als Alternativweg
+Urteil mit Falsifikationsbeleg | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
+
 RUBRIC (30 XP): Modellkenntnis (8 XP) | Rundenlogik (8 XP) | Bandendeutung (8 XP) | Urteil (6 XP).
 
 
 `Klausur-Satz: Achtung Falle: Dispersiv zeigt auch Mittelbaender, scheidet aber erst in Runde zwei aus.`
 
+KERNSATZ (auswendig):
+- Kernsatz: `Meselson-Stahl beweist semikonservative Replikation durch Dichtebanden nach Zentrifugation.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = DNA mit Isotopenmarkierung als Subjekt | Mechanismus = Dichtegradient mit Tochterbanden als Mechanismus | Urteil = Urteil auf semikonservativ mit Zwischenbande
+- Selbsttest: ___ beweist semikonservative Replikation durch Dichtebanden nach Zentrifugation.
 ## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY:

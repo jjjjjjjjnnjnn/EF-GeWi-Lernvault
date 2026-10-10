@@ -8,7 +8,7 @@ operatoren: [anwenden, darstellen, beurteilen]
 klausurrelevant: true
 datum: 2026-09-25
 tags: [EF, Bio, CN]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: CN-Methoden fuer die Bio-Klausur — Episode B10: Der saure Regen
@@ -48,7 +48,7 @@ PRETRAINING术语盒（6大装备，中文在上、德语在下）：
 
 ENTDECKEN因果传导机制（中文拆解在上，德语链条在下）：
 
-中文：链条：读题→抽卡→代入。问量抽公式卡，问向抽梯度卡，问因为抽调节曲线卡，每卡必附数字或曲线作证。
+中文：链条：读题->抽卡->代入。问量抽公式卡，问向抽梯度卡，问因为抽调节曲线卡，每卡必附数字或曲线作证。
 
 德语：Die Kette heisst: Frage lesen, Karte ziehen, einsetzen. Wieviel-Fragen ziehen Messkarten mit Formeln, Wohin-Fragen ziehen **Richtungskarten** mit Gefaellen, Warum-Fragen ziehen **Regulationskarten** mit Kurven. Jede Karte endet mit einem Beleg: einer Zahl mit Einheit oder einer Kurve mit Optimum. Ohne Beleg bleibt die Antwort Behauptung.
 
@@ -81,38 +81,53 @@ $$v = \frac{\Delta c}{\Delta t} \quad \text{mit Einheit } \frac{\text{mol}}{\tex
 
 [Werkzeug: formula]
 
-AUFGABE目标挑战：六个迷你案例（水势差、最适温度、Aa×Aa杂交、种群平衡、ATP结算、光合速率）：配卡并规范算出两例。 德语原题：Sechs Mini-Faelle liegen bereit: Psi-Differenz, Temperaturoptimum, Kreuzung Aa mal Aa, Populationsbilanz, ATP-Bilanz und Fotosynthese-Rate. Ordne jede der sechs Karten zu und rechne zwei Faelle mit Ansatz und Einheit durch.
+AUFGABE: Wende an 目标挑战：六个迷你案例（水势差、最适温度、Aa×Aa杂交、种群平衡、ATP结算、光合速率）：配卡并规范算出两例。 德语原题：Sechs Mini-Faelle liegen bereit: Psi-Differenz, Temperaturoptimum, Kreuzung Aa mal Aa, Populationsbilanz, ATP-Bilanz und Fotosynthese-Rate. Ordne jede der sechs Karten zu und rechne zwei Faelle mit Ansatz und Einheit durch. [AFB II]
 
 HILFE:
-1. Frageart bestimmen: Wieviel, Wohin oder Warum.
-2. Passende Karte ziehen und Verfahren nennen.
-3. Zwei Faelle mit Formel und Einheit durchrechnen.
+- Formdimension: Pruefe Signalwoerter, Kistenname und AFB-Stufe mit Textmarkierung; benenne nur die Form, deute die Wahl noch nicht.
+- Verfahrensdimension: Pruefe Rechen- gegen Deutungsanteil mit Anforderungsanalyse; sammle nur die Anteile, ohne das Urteil vorwegzunehmen.
+- Pruefdimension: Pruefe Horizont-Stichpunkte mit Checkliste; zaehle nur die Treffer, ohne die Deutung zu setzen.
+
+COMPLETION (Lückentext):
+- Lies beide Saetze und ergaenze aus dem Gedaechtnis, ohne zurueckzublaettern:
+- Sechs Karten haerten Tempo, ___ haertet Nerven und Horizont sichert Punkte.
+- Ordne Horizont als ___ und pruefe die Richtung ohne Rueckblick.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Kartensatz mit Abrufbeleg (CN-Methoden fuer die Bio-Klausur) | 5 NP | Skizze mit Achsenbeschriftung als Alternativweg
+Verfahrenswahl mit Zeitprotokoll | 5 NP | Tabellenvergleich mit Messprotokoll als Alternativweg
+Urteil mit Horizont-Abgleich | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
 
 MUSTERLOESUNG：中文：水势配渗透卡算差，杂交配遗传卡画3:1棋盘，六配六中、两算带单位。 / 德语：Psi zieht Osmose mit Delta-Rechnung, Aa mal Aa zieht Genetik mit 3-zu-1-Quadrat; alle sechs Zuordnungen sitzen, zwei Rechnungen tragen Einheiten.
 
 `Klausur-Satz: Sechs Minuten, sechs Karten, sechs Treffer: Abruf schlaegt Besitz.`
 
 ## Schritt 5 — ausprobieren: Duell der Stapel: Mengen gegen Regulation
-
 VERGLEICH: Waehle erst den Stapel, dann loesen: (i) Mengen-Stapel oder (ii) Regulations-Stapel — dann loesen.选程序：先看信号词再选路。
 
-
-Weg A (Mengen-Stapel): Zaehlen, wiegen, rechnen: Mol, Bilanzen und Raten mit Formeln loesen. Dieser Weg liefert harte Zahlen und ist pruefungssicher.
-
-Weg B (Regulations-Stapel): Kurven lesen, Optima deuten, Regulation erklaeren. Dieser Weg liefert Verstaendnis und Bloom-Punkte, bleibt aber ohne Zahl duenn.
-
+Weg A (Mengen-Stapel): Neutralfassung fuer die Wahl.
+- [Weg A] Wenn du Weg A waehlst, arbeitest du in Schritt 7 vor allem mit Zahlen, Formeln und Einheiten.
+Weg B (Regulations-Stapel): Neutralfassung fuer die Wahl.
+- [Weg B] Wenn du Weg B waehlst, arbeitest du in Schritt 7 vor allem mit Bildern, Ketten und Deutung.
 
 AUFGABE A: Gramm-Angabe aus Reaktionsgleichung gesucht. Welcher Stapel? 【选程序：先看信号词再选路】
-
 AUFGABE B: Warum bricht die Rate jenseits von 40 Grad ein? Welcher Stapel? 【选程序：先看信号词再选路】
 
+HILFE: Pruefe dimensionsgeleitet, welcher Weg passt: Messdimension mit Rechenansatz spricht fuer Zahlen und Weg A; Strukturdimension mit Typ-Test spricht fuer Zuordnung und Weg B; Bilddimension mit Bildvergleich sichert beide Wege. Ordne selbst zu; die Zuordnung wird nicht vorweggenommen.
 
-HILFE：A fragt Gramm — Weg A mit Mol. B fragt Einbruch mit Warum — Weg B mit Kurve.
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg A oder Weg B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Ueberfuehrt aus VERGLEICH (Vorwahl-Fassung): Weg A (Mengen-Stapel): Zaehlen, wiegen, rechnen: Mol, Bilanzen und Raten mit Formeln loesen. Dieser Weg liefert harte Zahlen und ist pruefungssicher. | Weg B (Regulations-Stapel): Kurven lesen, Optima deuten, Regulation erklaeren. Dieser Weg liefert Verstaendnis und Bloom-Punkte, bleibt aber ohne Zahl duenn.
+- Ueberfuehrt aus Schritt-5-HILFE (Vorwahl-Fassung): A fragt Gramm — Weg A mit Mol. B fragt Einbruch mit Warum — Weg B mit Kurve.
+- Mechanismus A: ANTWORT：中文：A走数量堆用摩尔桥；B走调节堆用最适曲线加变性解释。 / 德语：A folgt Weg A mit Mol-Bruecke und Einheit Gramm; B folgt Weg B mit Optimumkurve und Denaturierung.
+- Mechanismus B: Weg B (Regulations-Stapel): Kurven lesen, Optima deuten, Regulation erklaeren. Dieser Weg liefert Verstaendnis und Bloom-Punkte, bleibt aber ohne Zahl duenn.
+- Ein-Satz-Kern: Mengen fragen die Mol-Brücke, Regulation fragt die Kurve.
 
 ANTWORT：中文：A走数量堆用摩尔桥；B走调节堆用最适曲线加变性解释。 / 德语：A folgt Weg A mit Mol-Bruecke und Einheit Gramm; B folgt Weg B mit Optimumkurve und Denaturierung.
 
 `Klausur-Satz: Mengen fragen die Mol-Brücke, Regulation fragt die Kurve.`
-
 ## Schritt 6 — check: Selbsttest zu CN-Tricks
 
 - FRAGE: 几张卡？多少秒？（Wie viele Karten in wie vielen Sekunden） | ANTWORT: 六卡六十秒。 / Sechs Karten in sechzig Sekunden.
@@ -138,11 +153,25 @@ ANTWORT：中文：A走数量堆用摩尔桥；B走调节堆用最适曲线加�
 
 ROLLE：中文：你是手册审查员。 / 德语：Du bist Handbuch-Prueferin.
 SITUATION：六问待配卡：请配对并规范算出两例（约120词）。 / 德语：Sechs Fragen liegen bereit. Ordne in ca. 120 Woertern jede Frage einer Karte zu und rechne zwei Beispiele mit Einheit.
+
+AUFGABE (anwenden, [AFB III]): Wende an in ca. 150 Woertern Einordnung, zwei Belege mit Mechanismus und Schlussurteil zu CN-Methoden fuer die Bio-Klausur.
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Kartendrill mit Zeitbeleg | 5 NP | Enger Beleg mit Zeile als Alternativweg
+Simulationslauf mit Horizontbezug | 5 NP | Skizze mit Messwerten als Alternativweg
+Urteil mit Automatikbeleg | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
+
 RUBRIC (30 XP)：Zuordnung (12 XP) | Rechnungen (12 XP) | Sprache (6 XP).
 
 
 `Klausur-Satz: Achtung Falle: Die schoenste Karte am falschen Stapel gibt null Punkte.`
 
+KERNSATZ (auswendig):
+- Kernsatz: `Sechs Karten haerten Tempo, Simulation haertet Nerven und Horizont sichert Punkte.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = Karteikarte mit Stoppuhr als Subjekt | Mechanismus = Drill plus Simulation mit Horizont als Mechanismus | Urteil = Urteil auf Tempo mit Vollstaendigkeit
+- Selbsttest: Sechs Karten haerten Tempo, ___ haertet Nerven und Horizont sichert Punkte.
 ## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY核心总结：

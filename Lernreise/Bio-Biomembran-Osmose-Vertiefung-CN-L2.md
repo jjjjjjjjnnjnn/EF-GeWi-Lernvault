@@ -8,7 +8,7 @@ operatoren: [darstellen, erklaeren, begruenden]
 klausurrelevant: true
 datum: 2026-09-26
 tags: [EF, Bio, CN]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Biomembran und Osmose in der Vertiefung — Episode B1: Das Leck in Halle 7
@@ -78,38 +78,53 @@ $$\pi = i \cdot c \cdot R \cdot T$$
 
 [Werkzeug: osmose-lab]
 
-AUFGABE目标挑战：模拟中血液侧0.30 mol/L对透析液0.15 mol/L：算两侧渗透压、预测水移，并调出净水流为零但尿素照排的配方。 德语原题：Stelle im Simulator Blutseite c = 0,30 mol/L gegen Dialysat c = 0,15 mol/L. Berechne beide pi-Werte bei 310 K, sage die Wasserwanderung voraus und justiere das Dialysat so, dass netto null Wasser wandert, aber Harnstoff weiter abfliesst.
+AUFGABE: Stelle dar 目标挑战：模拟中血液侧0.30 mol/L对透析液0.15 mol/L：算两侧渗透压、预测水移，并调出净水流为零但尿素照排的配方。 德语原题：Stelle im Simulator Blutseite c = 0,30 mol/L gegen Dialysat c = 0,15 mol/L. Berechne beide pi-Werte bei 310 K, sage die Wasserwanderung voraus und justiere das Dialysat so, dass netto null Wasser wandert, aber Harnstoff weiter abfliesst. [AFB II]
 
 HILFE:
-1. pi beider Seiten mit i mal c mal R mal T berechnen.
-2. Differenz bilden: Wasser folgt der hoeheren Seite.
-3. Dialysat angleichen, bis Delta-pi null ist und Diffusion des Gifts bleibt.
+- Messdimension: Pruefe Konzentration, pi-Werte und Temperatur mit van-t-Hoff-Ansatz; notiere nur die Groessen, deute die Richtung noch nicht.
+- Strukturdimension: Pruefe Membran, Aquaporine und Abloesequote mit Bildvergleich; sammle nur die Zeichen, ohne das Urteil vorwegzunehmen.
+- Verfahrensdimension: Pruefe Gefaelle plus Mediumwechsel mit Umkehr-Test; ordne nur die Signale, loese die Zuordnung noch nicht.
+
+COMPLETION (Lückentext):
+- Lies beide Saetze und ergaenze aus dem Gedaechtnis, ohne zurueckzublaettern:
+- Wasser folgt ___ bis Turgor-Gegendruck Ausgleich schafft und Grenzplasmolyse misst.
+- Ordne Turgor-Gegendruck als ___ und pruefe die Richtung ohne Rueckblick.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+pi-Befund mit Einheit und Ansatz (Biomembran und Osmose in der Vertiefung) | 5 NP | Skizze mit Achsenbeschriftung als Alternativweg
+Stromrichtung mit Delta-Deutung | 5 NP | Tabellenvergleich mit Messprotokoll als Alternativweg
+Turgorurteil mit Umkehrbeleg | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
 
 MUSTERLOESUNG：中文：血侧约0.77 MPa对0.39 MPa，水欲涌入血液；调成等渗后水停尿素照排。 / 德语：pi_Blut ca. 0,77 MPa, pi_Dialysat ca. 0,39 MPa: Wasser droht ins Blut zu stroemen. Angleichen auf isoosmotisch stoppt den Wasserstrom, Harnstoff diffundiert weiter mit seinem Gefaelle.
 
 `Klausur-Satz: Mit pi von 0,77 MPa gegen 0,39 MPa wandert Wasser berechenbar zur staerkeren Loesung.`
 
 ## Schritt 5 — ausprobieren: Duell der Wege: Van-t-Hoff-Rechnung gegen Gewebeprobe
-
 VERGLEICH: Waehle erst das Verfahren, dann loesen: (i) Van-t-Hoff-Rechenweg oder (ii) Gewebeproben-Deuteweg — dann loesen.选程序：先看信号词再选路。
 
-
-Weg A (Van-t-Hoff-Rechenweg): Konzentrationen einsetzen, pi berechnen, Richtung und Dialysat-Rezeptur quantitativ festlegen. Dieser Weg liefert MPa-Zahlen und haelt der Protokollpruefung stand.
-
-Weg B (Gewebeproben-Deuteweg): Zwiegelepidermis in Reihen einlegen und Abloesequoten am Bild auszaehlen. Dieser Weg ist anschaulich und geraetefrei, bleibt aber schaetzungsbehaftet.
-
+Weg A (Van-t-Hoff-Rechenweg): Neutralfassung fuer die Wahl.
+- [Weg A] Wenn du Weg A waehlst, arbeitest du in Schritt 7 vor allem mit Zahlen, Formeln und Einheiten.
+Weg B (Gewebeproben-Deuteweg): Neutralfassung fuer die Wahl.
+- [Weg B] Wenn du Weg B waehlst, arbeitest du in Schritt 7 vor allem mit Bildern, Ketten und Deutung.
 
 AUFGABE A: Dialysat-Rezeptur fuer null Nettowasser bei 310 K gesucht. Welcher Weg? 【选程序：先看信号词再选路】
-
 AUFGABE B: Zellsaftpotenzial einer unbekannten Zwiebel ohne ein Messgeraet gesucht. Welcher Weg? 【选程序：先看信号词再选路】
 
+HILFE: Pruefe dimensionsgeleitet, welcher Weg passt: Messdimension mit Rechenansatz spricht fuer Zahlen und Weg A; Strukturdimension mit Typ-Test spricht fuer Zuordnung und Weg B; Bilddimension mit Bildvergleich sichert beide Wege. Ordne selbst zu; die Zuordnung wird nicht vorweggenommen.
 
-HILFE：A nennt Kelvin, Mol und Rezeptur — Weg A mit van t Hoff. B nennt Bild und Quote ohne Zahlen — Weg B mit Grenzplasmolyse.
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg A oder Weg B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Ueberfuehrt aus VERGLEICH (Vorwahl-Fassung): Weg A (Van-t-Hoff-Rechenweg): Konzentrationen einsetzen, pi berechnen, Richtung und Dialysat-Rezeptur quantitativ festlegen. Dieser Weg liefert MPa-Zahlen und haelt der Protokollpruefung stand. | Weg B (Gewebeproben-Deuteweg): Zwiegelepidermis in Reihen einlegen und Abloesequoten am Bild auszaehlen. Dieser Weg ist anschaulich und geraetefrei, bleibt aber schaetzungsbehaftet.
+- Ueberfuehrt aus Schritt-5-HILFE (Vorwahl-Fassung): A nennt Kelvin, Mol und Rezeptur — Weg A mit van t Hoff. B nennt Bild und Quote ohne Zahlen — Weg B mit Grenzplasmolyse.
+- Mechanismus A: ANTWORT：中文：A走计算路配出等渗液；B走图像路在50%处读水势。 / 德语：A folgt Weg A und rechnet isoosmotisch nach; B folgt Weg B und liest Psi an der 50-Prozent-Stufe ab.
+- Mechanismus B: Weg B (Gewebeproben-Deuteweg): Zwiegelepidermis in Reihen einlegen und Abloesequoten am Bild auszaehlen. Dieser Weg ist anschaulich und geraetefrei, bleibt aber schaetzungsbehaftet.
+- Ein-Satz-Kern: Zahlen mit Einheit MPa verlangen van t Hoff, Bilder mit Zipfeln verlangen die Formdeutung.
 
 ANTWORT：中文：A走计算路配出等渗液；B走图像路在50%处读水势。 / 德语：A folgt Weg A und rechnet isoosmotisch nach; B folgt Weg B und liest Psi an der 50-Prozent-Stufe ab.
 
 `Klausur-Satz: Zahlen mit Einheit MPa verlangen van t Hoff, Bilder mit Zipfeln verlangen die Formdeutung.`
-
 ## Schritt 6 — check: Selbsttest zu Osmose-Vertiefung
 
 - FRAGE: 渗透压公式是什么？（Wie lautet van t Hoff） | ANTWORT: π=i·c·R·T，T用开尔温。 / π = i mal c mal R mal T mit T in Kelvin.
@@ -135,11 +150,25 @@ ANTWORT：中文：A走计算路配出等渗液；B走图像路在50%处读水�
 
 ROLLE：中文：你是透析室生物医学值班员。 / 德语：Du bist Biomediziner im Dialysedienst.
 SITUATION：病人水分流失进透析液、尿素却降不下：请用渗透压、水势差与扩散解释误调并开纠正处方（约150词）。 / 德语：Ein Patient verliert Wasser ans Dialysat, gleichzeitig steigt sein Harnstoff kaum. Erklaere mit pi, Delta-Psi und Diffusion in ca. 150 Woertern die Fehlsteuerung und entwirf die Korrektur.
+
+AUFGABE (darstellen, [AFB III]): Stelle dar in ca. 150 Woertern Einordnung, zwei Belege mit Mechanismus und Schlussurteil zu Biomembran und Osmose in der Vertiefung.
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Dialyse- oder Wurzelbefund mit pi-Anker | 5 NP | Enger Beleg mit Zeile als Alternativweg
+Wasserfehlstrom mit Delta-Psi-Deutung | 5 NP | Skizze mit Messwerten als Alternativweg
+Korrektururteil mit Isoosmotik-Beleg | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
+
 RUBRIC (30 XP)：pi-Diagnose (8 XP) | Wasserfehlstrom (8 XP) | Giftstau-Deutung (8 XP) | Isoosmotische Korrektur (6 XP).
 
 
 `Klausur-Satz: Achtung Falle: Tote Zellen deplasmolysieren nie; Umkehrbarkeit beweist Leben, nicht nur Physik.`
 
+KERNSATZ (auswendig):
+- Kernsatz: `Wasser folgt Psi-Gefaelle bis Turgor-Gegendruck Ausgleich schafft und Grenzplasmolyse misst.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = Wasser mit Psi-Differenz als Subjekt | Mechanismus = van-t-Hoff-Druck plus Wandgegendruck als Mechanismus | Urteil = Urteil auf Stromrichtung mit Deplasmolyse-Beweis
+- Selbsttest: Wasser folgt Psi-Gefaelle bis ___ Ausgleich schafft und Grenzplasmolyse misst.
 ## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY核心总结：
