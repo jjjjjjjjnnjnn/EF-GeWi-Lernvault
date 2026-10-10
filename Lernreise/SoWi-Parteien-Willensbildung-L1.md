@@ -108,11 +108,11 @@ Klausur-Satz: `Die Verluste von CDU und SPD belegen die Erosion der Volksparteie
 
 **Bezug zum Konzept**: Der Rückgang der großen Parteien belegt die Erosion der Volksparteien und die wachsende Bedeutung von Wechselwählern.
 
-## Schritt 4 — ausprobieren: Sandkasten-Einsatz [balance-board]: Rette die Stadt mit Zahlen
+## Schritt 4 — ausprobieren: Sandkasten-Einsatz [wahlsystem-sim]: Bundestagswahl & 5%-Sperrklausel
 
 BEISPIEL（正确例题示范，含教具操作与解答）：
 
-[Werkzeug: balance-board]
+[Werkzeug: wahlsystem-sim]
 
 TARGET: Bringt auf dem Verhandlungsbrett beide Waagschalen in die Balance — Bedingung: Zustimmung beider Baenke, Loesung mit Kompromisslinie, Ergebnisprotokoll mit zwei Begruendungen je Seite.
 
