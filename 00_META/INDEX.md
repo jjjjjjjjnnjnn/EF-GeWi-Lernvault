@@ -289,6 +289,8 @@
 - [2026-10-09-canvas-pan-drag-vs-click-fix](Journal/2026-10-09-canvas-pan-drag-vs-click-fix.md) — **知识图谱画布平移拖拽与空白点击抽屉关闭防误触分离**：isCanvasPannedRef位移门禁+handleCanvasBgClick防误触拦截+底层背景装饰与连线pointerEvents穿透（全绿）
 - [2026-10-09-svg-typography-and-box-overflow-fix](Journal/2026-10-09-svg-typography-and-box-overflow-fix.md) — **知识图谱文字超出方框与卡片大面积重叠物理碰撞技术根治**：svgTypography视觉宽度引擎+clipPath安全围栏+智能动态胶囊+1阶紧邻展开远端保持胶囊（全绿）
 - [2026-10-09-skill-tree-pure-german-fuzzy-search-and-hud-refinement](Journal/2026-10-09-skill-tree-pure-german-fuzzy-search-and-hud-refinement.md) — **知识图谱德语纯净模式、全语言模糊检索引擎与极简HUD工作台交接**：德语模式零中文泄漏+语言控制收敛至顶栏+星区下拉化+独立多语言模糊检索算法（36单测/tsc/vault-check全绿）
+- [2026-10-10-phase-3-4-and-3-5-completion](Journal/2026-10-10-phase-3-4-and-3-5-completion.md) — **Phase 3.3~3.5交付：罗尔斯正义论分配沙盘、双教具微课挂载与全科星图打分补丁机**
+- [2026-10-10-phase-4-teaching-studio-and-duolingo-lesson-runner](Journal/2026-10-10-phase-4-teaching-studio-and-duolingo-lesson-runner.md) — **Phase 4全量交付：TeachingStudio商业级教学工坊、多邻国式关卡河流与全屏交互上课奖赏闭环**：多源教材自动拆解+DAG拓扑排程+4大通用SVG微世界+垂直关卡河流与里程碑宝箱+5步交互上课流+墨水印章与Fehlerlog补丁机+89套件676单测全绿
 - 约定：文件名 `YYYY-MM-DD-<thema>.md`，头部frontmatter（`fach`可空，`tags: [EF, Meta]`）。
 
 

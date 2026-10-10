@@ -24,7 +24,25 @@
 
 ---
 
----
+- ✅ **Phase 4.3 多邻国式沉浸上课流、关卡河流与正向奖赏闭环落地（2026-10-10 交付）**：
+  - **Duolingo-style 关卡探索河流 (`QuestMapTab.tsx`)**：
+    - 零摩擦开箱即学：顶部学术 HUD 整合学科切换、Streak 连续天数徽章、总 XP 徽章、今日 12 分钟专注进度药丸，右上角配备 `+ Neues Buch zerlegen` 快捷入口；
+    - 垂直关卡河流：单元横幅区分各章节，各节点展现掌握（实心墨点+对勾）、当前解锁（双墨线边框+呼吸微光）与未解锁（虚线锁）；
+    - 单元结业里程碑宝箱（Milestone Capstone Exam Chest）：单元关卡全通后点亮 +50 XP 单元大奖章与阶段会考；
+  - **多邻国式全屏交互上课运行器 (`InteractiveLessonRunner.tsx`)**：
+    - 极细发丝进度条与实时 Combo 连击倍率涟漪计数（Combo x2, Combo x3）；
+    - 一屏一题/一交互：5 步递进（生活直觉站队 ➔ 概念机制配对 ➔ 微世界目标挑战 ➔ 考场陷阱排雷 ➔ 15 NP 标答冲刺）；
+    - 底部即时正向反馈抽屉：答对高对比度墨字即时肯定加分；答错展示苏格拉底生活类比引导，并自动记录错题；
+  - **Tufte 学术仪式感通关奖赏屏 (`VictoryRewardScreen.tsx`)**：
+    - 墨水印章仪式印记（`MEISTERHAFT ABGESCHLOSSEN · 15 NP`）；
+    - 动态 XP 累加滚动与 Streak 连续打卡点亮；
+    - Obsidian `Fehlerlog.md` 错题补丁一键复制机（遵守只读 Vault 铁律）；
+  - **持久化状态机与全局技能树穿透联动 (`teachingStore.ts`)**：
+    - 通关自动触发 `teachingStore.markQuestCompleted`，更新本地连续天数、累加 XP；
+    - 自动分发 `SKILL_TREE_MASTERED_EVENT`，穿透联动 712 节点主技能树连线点亮；
+  - **工程门禁全绿**：
+    - 全量 89 个测试套件、676 项测试 100% PASS，`modules.test.tsx` 零契约违规（零 Emoji、零阴影、零 italic）；
+    - `cmd /c "npx tsc -b"` 0 报错；`python scripts/vault-check.py` 417 笔记 1942 词 PASS。
 
 - ✅ **Phase 4.2 关卡探索图谱、沉浸式演播厅、苏格拉底伴学抽屉与主工程全量挂载落地（2026-10-10 交付）**：
   - **Duolingo 风格极简关卡探索图谱 (`QuestMapTab.tsx`)**：
