@@ -8,7 +8,7 @@ operatoren: [beschreiben, erklaeren, beurteilen]
 klausurrelevant: true
 datum: 2026-10-03
 tags: [EF, Chemie, Komplexchemie, Koordinationsverbindungen, Ligandenfeld, Farbigkeit]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Komplexchemie: Ligandenaustausch, Chelateffekt und Ligandenfeldaufspaltung (L1, Ziel Klausur)
@@ -29,7 +29,7 @@ Du loest ein schneeweisses Pulver aus wasserfreiem Kupfersulfat in einem Becherg
 `Klausur-Satz: Der Ligandenaustausch in der Koordinationssphaere des Zentralions modifiziert die energetische Ligandenfeldaufspaltung Delta der d-Orbitale und verschiebt dadurch das Absorptionsmaximum des sichtbaren Lichts zur Komplementaerfarbe.`
 
 ## Schritt 2 — entdecken: Das Vokabular der Koordinationschemie
-PRETRAINING术语盒（核心4词，先读三遍中德，合书自测中文→德语）：
+PRETRAINING术语盒（核心4词，先读三遍中德，合书自测中文->德语）：
 
 - 中心阳离子 — Zentralteilchen: 具有空轨道并能作为路易斯酸（Elektronenpaarakzeptor）接受孤对电子的过渡金属阳离子（如 $Cu^{2+}$, $Fe^{3+}$）。 Ein positiv geladenes Metallion, das als Lewis-Saeure fungiert und freie Elektronenpaare von Liganden anlagert.
 - 配体 — Ligand: 拥有至少一对孤对电子并能作为路易斯碱与中心离子形成配位键（koordinative Bindung）的分子或阴离子。 Neutrale Molekuele ($H_2O, NH_3$) oder Anionen ($Cl^-, CN^-$), die freie Elektronenpaare zur Koordinationsbindung bereitstellen.
@@ -60,12 +60,29 @@ E ^
 
 [Werkzeug: lego]
 
-AUFGABE (herleiten & erklaeren, AFB I/II):
+AUFGABE: Beschreibe den Chelateffekt der EDTA-Bleibehandlung und erklaere Farbigkeit und Magnetismus aus der Aufspaltung. [AFB II]
 Ein Patient leidet an einer akuten Blei-Vergiftung ($Pb^{2+}$ im Blutkreislauf). Dem Patienten wird das Dinatriumsalz von EDTA (Ethylendiamintetraacetat, ein sechszaehniger Chelatligand) infundiert.
 Die Austauschreaktion des Hexaaqua-Blei-Komplexes mit EDTA lautet:
 $[Pb(H_2O)_6]^{2+} + \text{EDTA}^{4-} \rightleftharpoons [Pb(\text{EDTA})]^{2-} + 6\,H_2O$
 1. Leite thermodynamisch anhand der Gibbs-Helmholtz-Gleichung ($\Delta G = \Delta H - T \cdot \Delta S$) her, warum das Gleichgewicht dieser Reaktion extrem weit auf der rechten Seite liegt (Chelateffekt).
 2. Erklaere, warum der Chelatkomplex ungiftig ueber die Nieren ausgeschieden werden kann, waehrend freies $Pb^{2+}$ lebensgefaehrlich ist.
+
+HILFE:
+- Fachdimension: Nutze Spektrochemische Reihe und Ligandenfeld-Aufspaltung; klaere zuerst Ligandenstaerke (schwach/stark) und Aufspaltung Delta vor der Farbdeutung, ohne das Ergebnis vorwegzunehmen.
+- Rechenweg: Lege die Reihenfolge von Ausgangsgroesse zu Zielgroesse fest; schreibe nur die Abfolge auf, setze keine Zahlen ein.
+- Pruefdimension: Plane die Kontrolle ueber Einheit und Groessenordnung, ohne das Resultat zu nennen.
+
+COMPLETION (Lückentext):
+- Lies die Aufgabe und ergaenze aus dem Gedaechtnis, ohne zurueckzublaettern:
+- Fuer ___ gilt die Aufspaltung $\Delta_O$ mit $t_{2g}$ gegen $e_g$.
+- Zuerst bestimme ich ___, dann folgt ___ aus Lage von $\Delta_O$ zur Lichtenergie.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Liganden nach Reihe einordnen | 5 NP | Chelat-Argument als Alternativweg
+Aufspaltung als Schema | 5 NP | Absorptions-Gegenfarbe als Alternativweg
+Farb- und Magnetismus-Urteil | 5 NP | Stabilitaetsblick als Alternativweg
+Gesamt: 15 NP
 
 MUSTERLOESUNG:
 1. Thermodynamische Herleitung des Chelateffekts:
@@ -81,24 +98,23 @@ MUSTERLOESUNG:
 ## Schritt 5 — ausprobieren: Duell der Liganden: Wasser vs. Ammoniak
 
 VERGLEICH: Aquakomplex vs. Tetraamminkomplex (选概念)
+- [Position A] Wenn du Position A waehlst, arbeitest du im Transfer vor allem mit Reihen und Aufspaltungsschemata.
+- [Position B] Wenn du Position B waehlst, arbeitest du im Transfer vor allem mit Farb- und Stabilitaetsdeutung.
 
 - Position A (Hexaaquakupfer(II) $[Cu(H_2O)_6]^{2+}$):
-  - Ligand: Schwaches Ligandenfeld (Wasser steht weit links in der spektrochemischen Reihe).
-  - Aufspaltung $\Delta_o$: Relativ klein.
-  - Absorption: Rotes, langwelliges Licht mit geringer Energie ($h \cdot \nu$).
-  - Wahrgenommene Farbe: Schwaches, blasses Cyan / Hellblau.
 - Position B (Tetraammin-diaqua-kupfer(II) $[Cu(NH_3)_4(H_2O)_2]^{2+}$):
-  - Ligand: Staerkeres Ligandenfeld ($NH_3$ steht weiter rechts).
-  - Aufspaltung $\Delta_o$: Deutlich groesser!
-  - Absorption: Gelb-oranges Licht hoeherer Energie.
-  - Wahrgenommene Farbe: Tiefes, intensives Koenigsblau / Dunkelblau.
 
-Entscheidungsregel fuer die Klausur:
-Wird nach `Farbverschiebung bei Ligandenaustausch` gefragt, konsultiere die spektrochemische Reihe: Rueckt der neue Ligand weiter nach rechts ($I^- < Cl^- < H_2O < NH_3 < CN^-$), steigt $\Delta_o$, die absorbierte Wellenlaenge wird kuerzer und die transmittierte Komplementaerfarbe verschiebt sich ins Kalt-Violette!
+Wahlregel: Triff erst eine Wahl zwischen beiden Positionen; die Begruendung steht erst nach der Wahl in der AUFLOESUNG.
 
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Position A oder Position B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Ueberfuehrt aus VERGLEICH (Vorwahl-Fassung): - Ligand: Schwaches Ligandenfeld (Wasser steht weit links in der spektrochemischen Reihe). | - Aufspaltung $\Delta_o$: Relativ klein. | - Absorption: Rotes, langwelliges Licht mit geringer Energie ($h \cdot \nu$). | - Wahrgenommene Farbe: Schwaches, blasses Cyan / Hellblau. | - Ligand: Staerkeres Ligandenfeld ($NH_3$ steht weiter rechts). | - Aufspaltung $\Delta_o$: Deutlich groesser! | - Absorption: Gelb-oranges Licht hoeherer Energie. | - Wahrgenommene Farbe: Tiefes, intensives Koenigsblau / Dunkelblau.
+- Ueberfuehrt aus Entscheidungsregel (Vorwahl-Fassung): Entscheidungsregel fuer die Klausur: Wird nach `Farbverschiebung bei Ligandenaustausch` gefragt, konsultiere die spektrochemische Reihe: Rueckt der neue Ligand weiter nach rechts ($I^- < Cl^- < H_2O < NH_3 < CN^-$), steigt $\Delta_o$, die absorbierte Wellenlaenge wird kuerzer und die transmittierte Komplementaerfarbe verschiebt sich ins Kalt-Violette!
+- Ein-Satz-Kern: Liganden spalten die d-Orbitale auf, die Luecke entscheidet ueber Farbe und Magnetismus.
 ## Schritt 6 — check: Klausur-Transfer Haemoglobin und Kohlenmonoxid-Vergiftung
 
 PRUEFUNGSSZENARIO (KLP NRW Chemie LK Inhaltsfeld 4: Koordinationsverbindungen):
+AUFGABE: Beurteile die Transferlage in ca. 150 Woertern mit Einordnung, Beleg und Schlussurteil. [AFB III]
 
 ### AFB I: Begriffsklaerung
 Definiere die Begriffe Spektrochemische Reihe, Koordinationszahl und Lewis-Saeure-Base-Konzept im Kontext der Komplexchemie.
@@ -111,6 +127,18 @@ Erlaeutere anhand der spektrochemischen Reihe und der Komplexstabilitaet, warum 
 In Waschmitteln wurden frueher Phosphate als Wasserenthaerter eingesetzt, spaeter durch NTA und Zeolithe ersetzt.
 Bewerte den Einsatz biologisch schwer abbaubarer Chelatbildner (wie EDTA) in Industrieabwaessern im Hinblick auf die Remobilisierung toxischer Schwermetallsedimente in Gewaessern.
 
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Ligandenaustausch einordnen | 5 NP | Chelateffekt-Beleg als Alternativweg
+Feldstaerke-Analyse mit Reihe | 5 NP | Absorptionsbeleg als Alternativweg
+Urteil mit Massstab und Schluss | 5 NP | Offenes Urteil mit Rueckbindung als Alternativweg
+Gesamt: 15 NP
+
+KERNSATZ (auswendig):
+- Kernsatz: `Liganden spalten die d-Orbitale auf, die Luecke entscheidet ueber Farbe und Magnetismus.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = Komplex mit Liganden | Mechanismus = Feldstaerke und Aufspaltung Delta | Urteil = Farbe und Magnetismus als Urteil
+- Selbsttest: Liganden spalten die d-Orbitale auf, die Luecke entscheidet ueber ___ und Magnetismus.
 ## Schritt 7 — check: Format-Check & Scoring
 
 30 XP Schnelltest zur Verstaendigungssicherung:

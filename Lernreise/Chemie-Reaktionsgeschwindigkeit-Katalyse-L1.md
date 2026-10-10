@@ -8,7 +8,7 @@ operatoren: [beschreiben, analysieren]
 klausurrelevant: true
 datum: 2026-09-26
 tags: [EF, Chemie, Kinetik]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Reaktionsgeschwindigkeit und Katalyse — Episode C14: Abgas-Alarm im Tunnel
@@ -78,12 +78,25 @@ $$v = k \cdot [A]^m \cdot [B]^n$$
 
 [Werkzeug: formula]
 
-AUFGABE目标挑战：已知两温度与有无催化剂的褪色数据：定初速率、论证双效应并立速率方程。 德语原题：Gegeben: c-t-Werte einer Entfaerbung bei 20 und 40 Grad sowie mit/ohne Braunstein. Bestimme Anfangsraten, deute den Temperatur- und Katalysatoreffekt und stelle das Zeitgesetz auf.
+AUFGABE: Analysiere 已知两温度与有无催化剂的褪色数据：定初速率、论证双效应并立速率方程。 德语原题：Gegeben: c-t-Werte einer Entfaerbung bei 20 und 40 Grad sowie mit/ohne Braunstein. Bestimme Anfangsraten, deute den Temperatur- und Katalysatoreffekt und stelle das Zeitgesetz auf. [AFB II]
 
 HILFE:
-1. Anfangssteigungen als Tangenten legen.
-2. Faktoren getrennt variieren und vergleichen.
-3. Ordnungen aus Messreihen ablesen.
+- Fachdimension: Nutze Geschwindigkeitsgesetz und Katalysator-Satz; klaere zuerst Anfangsrate und Ordnung vor der Katalysatordeutung, ohne das Ergebnis vorwegzunehmen.
+- Rechenweg: Lege die Reihenfolge von Ausgangsgroesse zu Zielgroesse fest; schreibe nur die Abfolge auf, setze keine Zahlen ein.
+- Pruefdimension: Plane die Kontrolle ueber Einheit und Groessenordnung, ohne das Resultat zu nennen.
+
+
+COMPLETION (Lückentext):
+- Lies die Aufgabe und ergaenze aus dem Gedaechtnis, ohne zurueckzublaettern:
+- Fuer ___ gilt $v = k \cdot [A]^m [B]^n$.
+- Zuerst bestimme ich ___, dann folgt ___ aus $E_A$-Senkung ohne Lagewechsel.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Rate aus Reihen bestimmen | 5 NP | Steigungsprobe als Alternativweg
+Ordnung aus Anfangsraten | 5 NP | Halbwerts-Blick als Alternativweg
+Katalysatorwirkung begruenden | 5 NP | Diagramm-Beleg als Alternativweg
+Gesamt: 15 NP
 
 MUSTERLOESUNG：中文：40℃速率约四倍，催化剂减半时间且不耗，一级速率方程来自倍增实验。 / 德语：Rate bei 40 Grad etwa vierfach; Braunstein halbiert die Zeit ohne Verbrauch; Zeitgesetz erster Ordnung in Peroxid aus Verdopplungsreihe.
 
@@ -94,9 +107,11 @@ MUSTERLOESUNG：中文：40℃速率约四倍，催化剂减半时间且不耗�
 VERGLEICH: Waehle erst den Tempo-Weg, dann loesen: (i) Zeitgesetz-Rechenweg oder (ii) Diagramm-Deuteweg — dann loesen.选程序：先看信号词再选路。
 
 
-Weg A：Weg A (Zeitgesetz-Rechenweg): Raten und Ordnungen quantitativ aus Messreihen bestimmen. Dieser Weg liefert k und Exponenten.
+Weg A (Zeitgesetz-Rechenweg): Der Weg steht zur Wahl.
+- [Weg A] Wenn du Weg A waehlst, arbeitest du in Schritt 7 vor allem mit Raten und Ordnungen.
 
-Weg B：Weg B (Diagramm-Deuteweg): Energiediagramme qualitativ lesen und Katalysatorwege einzeichnen. Dieser Weg ist anschaulich, bleibt aber ohne Zahl weich.
+Weg B (Diagramm-Deuteweg): Der Weg steht zur Wahl.
+- [Weg B] Wenn du Weg B waehlst, arbeitest du in Schritt 7 vor allem mit Diagramm- und Alltagsdeutung.
 
 
 AUFGABE A: Ordnung und k aus Reihen exakt gesucht. Welcher Weg? 【选程序：先看信号词再选路】
@@ -104,9 +119,18 @@ AUFGABE A: Ordnung und k aus Reihen exakt gesucht. Welcher Weg? 【选程序：�
 AUFGABE B: Warum wirkt der Kat auch kalt nicht? Welcher Weg? 【选程序：先看信号词再选路】
 
 
-HILFE：A nennt Reihen — Weg A mit Rechnung. B nennt Warum mit Berg — Weg B mit Diagramm.
+HILFE: Pruefe dimensionsgeleitet, welcher Weg passt: Zahlen- und Signalwoerter sprechen fuer Weg A, Deutungs- und Bereichswoerter fuer Weg B. Ordne selbst zu; die Zuordnung wird nicht vorweggenommen.
 
 ANTWORT：中文：A走方程路用初速率法；B走图像路以山口仍高作答。 / 德语：A folgt Weg A mit Anfangsraten-Methode; B folgt Weg B mit Berg-noch-zu-hoch-Argument.
+
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg A oder Weg B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Ueberfuehrt aus VERGLEICH (Vorwahl-Fassung): Weg A (Zeitgesetz-Rechenweg): Raten und Ordnungen quantitativ aus Messreihen bestimmen. Dieser Weg liefert k und Exponenten. // Weg B (Diagramm-Deuteweg): Energiediagramme qualitativ lesen und Katalysatorwege einzeichnen. Dieser Weg ist anschaulich, bleibt aber ohne Zahl weich.
+- Ueberfuehrt aus Schritt-5-HILFE (Vorwahl-Fassung): HILFE：A nennt Reihen — Weg A mit Rechnung. B nennt Warum mit Berg — Weg B mit Diagramm.
+- Mechanismus A: ANTWORT：中文：A走方程路用初速率法；B走图像路以山口仍高作答。 / 德语：A folgt Weg A mit Anfangsraten-Methode; B folgt Weg B mit Berg-noch-zu-hoch-Argument.
+- Ein-Satz-Kern: Zeitgesetze rechnen exakt, Diagramme deuten anschaulich — die Klausur braucht beides.
+
+<!-- C1-Bestaetigung: Vorwahl neutral, Mechanismus in AUFLOESUNG. -->
 
 `Klausur-Satz: Zeitgesetze rechnen exakt, Diagramme deuten anschaulich — die Klausur braucht beides.`
 
@@ -135,12 +159,25 @@ ANTWORT：中文：A走方程路用初速率法；B走图像路以山口仍高�
 
 ROLLE：中文：你是车间化学师。 / 德语：Du bist Werkstatt-Chemikerin.
 SITUATION：老板要用便宜材料换催化器：请用速率、山口与位置评价是否可行（约150词）。 / 德语：Der Chef will den Kat gegen billigeres Material tauschen. Bewerte in ca. 150 Woertern mit Rate, Berg und Lage, ob der Tausch traegt.
+AUFGABE: Analysiere die Transferlage in ca. 150 Woertern mit Einordnung, Beleg und Schlussurteil. [AFB III]
 RUBRIC (30 XP)：Ratendeutung (8 XP) | Berglogik (8 XP) | Lageabgrenzung (8 XP) | Empfehlung (6 XP).
 ZEITREGEL: MAX 2 Minuten — 90秒读初速率与山口，30秒写换材裁决句，然后交卷；Timer stellen.
 
 
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Tempo-Einordnung mit Beleg | 5 NP | Raten-Beleg als Alternativweg
+Faktor-Analyse mit Diagramm | 5 NP | Energiebeleg als Alternativweg
+Urteil mit Massstab und Schluss | 5 NP | Alltagsbeleg als Alternativweg
+Gesamt: 15 NP
+
 `Klausur-Satz: Achtung Falle: Der Katalysator aendert Tempo, nie Lage und nie K.`
 
+KERNSATZ (auswendig):
+- Kernsatz: `Hoehere Temperatur und Katalysator beschleunigen die Reaktion, die Lage bleibt unberuehrt.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = Zeitgesetz | Mechanismus = Stossrate plus Katalysatorweg | Urteil = Tempowirkung als Urteil
+- Selbsttest: Hoehere Temperatur und Katalysator beschleunigen die Reaktion, die ___ bleibt unberuehrt.
 ## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY核心总结：

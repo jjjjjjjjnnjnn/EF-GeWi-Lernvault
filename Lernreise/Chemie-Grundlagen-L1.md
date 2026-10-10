@@ -8,7 +8,7 @@ operatoren: [nennen, begruenden, darstellen, berechnen]
 klausurrelevant: true
 datum: 2026-09-25
 tags: [EF, Chemie, Grundlagen]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Chemische Grundlagen: Atombau, Bindung, Gleichungen, Mol — Episode C12: Weisses Pulver am Werkstor
@@ -78,12 +78,25 @@ $$n = \frac{m}{M} \quad ; \quad N = n \cdot N_A$$
 
 [Werkzeug: formula]
 
-AUFGABE目标挑战：已知10克碳酸钙、高熔点白粉、未配平氢氧方程：判键型、配平并算产气量。 德语原题：Gegeben: 10 g CaCO3, unbekanntes weisses Pulver mit Schmelzpunkt 800 Grad, H2 + O2 ungeregelt. Bestimme Bindungstyp, gleiche die Knallgasgleichung aus und berechne das CO2-Volumen aus 10 g.
+AUFGABE: Berechne 已知10克碳酸钙、高熔点白粉、未配平氢氧方程：判键型、配平并算产气量。 德语原题：Gegeben: 10 g CaCO3, unbekanntes weisses Pulver mit Schmelzpunkt 800 Grad, H2 + O2 ungeregelt. Bestimme Bindungstyp, gleiche die Knallgasgleichung aus und berechne das CO2-Volumen aus 10 g. [AFB II]
 
 HILFE:
-1. Bindung aus Partner und Eigenschaft folgern.
-2. Gleichung mit Koeffizienten ausgleichen.
-3. Mol-Brücke mit Einheit anwenden.
+- Fachdimension: Nutze Mol-Bruecke und Ausgleichsregel (Metalle zuerst, H/O zuletzt); klaere zuerst Bindungstyp aus Partnern und Ausgleich vor der Mol-Rechnung, ohne das Ergebnis vorwegzunehmen.
+- Rechenweg: Lege die Reihenfolge von Ausgangsgroesse zu Zielgroesse fest; schreibe nur die Abfolge auf, setze keine Zahlen ein.
+- Pruefdimension: Plane die Kontrolle ueber Einheit und Groessenordnung, ohne das Resultat zu nennen.
+
+
+COMPLETION (Lückentext):
+- Lies die Aufgabe und ergaenze aus dem Gedaechtnis, ohne zurueckzublaettern:
+- Fuer ___ gilt $n = \frac{m}{M}$ mit $N = n \cdot N_A$.
+- Zuerst bestimme ich ___, dann folgt ___ nach dem Ausgleich.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Bindungstyp aus Eigenschaft | 5 NP | Gitter-Probe als Alternativweg
+Gleichung ausgleichen | 5 NP | Index-Kontrolle als Alternativweg
+Menge ueber Bruecke | 5 NP | Volumen-Probe als Alternativweg
+Gesamt: 15 NP
 
 MUSTERLOESUNG：中文：高熔点即离子键，氢氧配平2-1-2，10克碳酸钙产气2.24升。 / 德语：Pulver mit 800 Grad: Ionenbindung; 2 H2 + O2 -> 2 H2O; 10 g CaCO3 sind 0,1 mol und liefern 0,1 mol CO2, also 2,24 L.
 
@@ -94,9 +107,11 @@ MUSTERLOESUNG：中文：高熔点即离子键，氢氧配平2-1-2，10克碳酸
 VERGLEICH: Waehle erst den Azubi-Weg, dann loesen: (i) Zaehl-Rechenweg oder (ii) Eigenschafts-Deuteweg — dann loesen.选程序：先看信号词再选路。
 
 
-Weg A：Weg A (Zaehl-Rechenweg): Mengen quantitativ aus Gleichungen berechnen. Dieser Weg liefert Gramm und Liter und ist pruefungssicher.
+Weg A (Zaehl-Rechenweg): Der Weg steht zur Wahl.
+- [Weg A] Wenn du Weg A waehlst, arbeitest du in Schritt 7 vor allem mit Zaehlungen und Mol-Zahlen.
 
-Weg B：Weg B (Eigenschafts-Deuteweg): Bindungstypen qualitativ aus Eigenschaften folgern. Dieser Weg liefert Verstaendnis, bleibt aber ohne Zahl weich.
+Weg B (Eigenschafts-Deuteweg): Der Weg steht zur Wahl.
+- [Weg B] Wenn du Weg B waehlst, arbeitest du in Schritt 7 vor allem mit Eigenschaftsdeutung und Gitter.
 
 
 AUFGABE A: CO2-Volumen aus Gramm exakt gesucht. Welcher Weg? 【选程序：先看信号词再选路】
@@ -104,9 +119,18 @@ AUFGABE A: CO2-Volumen aus Gramm exakt gesucht. Welcher Weg? 【选程序：先�
 AUFGABE B: Ionen oder kovalent aus Schmelzpunkt gesucht. Welcher Weg? 【选程序：先看信号词再选路】
 
 
-HILFE：A nennt Volumen — Weg A mit Mol. B nennt Typ — Weg B mit Eigenschaft.
+HILFE: Pruefe dimensionsgeleitet, welcher Weg passt: Zahlen- und Signalwoerter sprechen fuer Weg A, Deutungs- und Bereichswoerter fuer Weg B. Ordne selbst zu; die Zuordnung wird nicht vorweggenommen.
 
 ANTWORT：中文：A走计算路用摩尔桥加22.4；B走性质路以晶格作答。 / 德语：A folgt Weg A mit Mol-Brücke und 22,4-L-Regel; B folgt Weg B mit Gitter-Argument.
+
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg A oder Weg B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Ueberfuehrt aus VERGLEICH (Vorwahl-Fassung): Weg A (Zaehl-Rechenweg): Mengen quantitativ aus Gleichungen berechnen. Dieser Weg liefert Gramm und Liter und ist pruefungssicher. // Weg B (Eigenschafts-Deuteweg): Bindungstypen qualitativ aus Eigenschaften folgern. Dieser Weg liefert Verstaendnis, bleibt aber ohne Zahl weich.
+- Ueberfuehrt aus Schritt-5-HILFE (Vorwahl-Fassung): HILFE：A nennt Volumen — Weg A mit Mol. B nennt Typ — Weg B mit Eigenschaft.
+- Mechanismus A: ANTWORT：中文：A走计算路用摩尔桥加22.4；B走性质路以晶格作答。 / 德语：A folgt Weg A mit Mol-Brücke und 22,4-L-Regel; B folgt Weg B mit Gitter-Argument.
+- Ein-Satz-Kern: Zaehlen bestimmt das Was, Wiegen bestimmt das Wieviel — die Pruefung braucht beides.
+
+<!-- C1-Bestaetigung: Vorwahl neutral, Mechanismus in AUFLOESUNG. -->
 
 `Klausur-Satz: Zaehlen bestimmt das Was, Wiegen bestimmt das Wieviel — die Pruefung braucht beides.`
 
@@ -135,12 +159,25 @@ ANTWORT：中文：A走计算路用摩尔桥加22.4；B走性质路以晶格作�
 
 ROLLE：中文：你是厂门口的学徒。 / 德语：Du bist Azubi am Werkstor.
 SITUATION：三包粉末待验：请用性质判键型、配一方程并算一量（约150词）。 / 德语：Drei Pulver warten. Identifiziere in ca. 150 Woertern Bindungstypen aus Eigenschaften, gleiche eine Gleichung aus und rechne eine Menge.
+AUFGABE: Begruende die Transferlage in ca. 150 Woertern mit Einordnung, Beleg und Schlussurteil. [AFB III]
 RUBRIC (30 XP)：Typologie (8 XP) | Ausgleich (8 XP) | Rechnung (8 XP) | Sprache (6 XP).
 ZEITREGEL: MAX 2 Minuten — 90秒判键型配方程，30秒算摩尔体积句，然后交卷；Timer stellen.
 
 
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Typ-Einordnung mit Beleg | 5 NP | Gitter-Beleg als Alternativweg
+Ausgleichs-Analyse | 5 NP | Koeffizienten-Beleg als Alternativweg
+Mengen-Urteil mit Schluss | 5 NP | Einheitenbeleg als Alternativweg
+Gesamt: 15 NP
+
 `Klausur-Satz: Achtung Falle: Index veraendert den Stoff, Koeffizient nur die Menge — wer tauscht, faellt durch.`
 
+KERNSATZ (auswendig):
+- Kernsatz: `Protonen bestimmen das Element, Elektronen die Bindung, das Mol macht Teilchen wiegbar.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = Pulver und Gleichung | Mechanismus = Typ plus Ausgleich plus Bruecke | Urteil = Mengenurteil mit Einheit
+- Selbsttest: Protonen bestimmen das Element, Elektronen die Bindung, das Mol macht Teilchen ___.
 ## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY核心总结：

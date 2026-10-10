@@ -8,7 +8,7 @@ operatoren: [beschreiben, vergleichen, analysieren]
 klausurrelevant: true
 datum: 2026-10-03
 tags: [EF, Chemie, Makromolekuele, Kunststoffe, Polymerisation, Polykondensation, Thermoplaste]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Makromolekulare Chemie: Polymerisation, Polykondensation und Kunststoffe (L1, Ziel Klausur)
@@ -29,7 +29,7 @@ Du haeltst eine federleichte, transparente Plastikflasche fuer Mineralwasser in 
 `Klausur-Satz: Bei der radikalischen Polymerisation werden die ungesaettigten C=C-Doppelbindungen von Monomeren durch Radikale kaskadenartig geoeffnet und zu kovalent verknuepften Makromolekuelketten verknuepft.`
 
 ## Schritt 2 — entdecken: Das chemische Vokabular der Makromolekuele
-PRETRAINING术语盒（核心4词，先读三遍中德，合书自测中文→德语）：
+PRETRAINING术语盒（核心4词，先读三遍中德，合书自测中文->德语）：
 
 - 单体与聚合物 — Monomer & Polymer: 具有反应活性的低分子原料分子（如乙烯、氯乙烯），通过化学键聚合形成的由数千个重复结构单元构成的高分子量物质。 Niedermolekulare Ausgangsstoffe, die sich ueber kovalente Bindungen zu Makromolekuelen mit sich wiederholenden Monomereinheiten vereinigen.
 - 自由基加聚 — Radikalische Kettenpolymerisation: 由自由基引发剂引发的链式聚合反应，分为链引发（Kettenstart）、链增长（Kettenfortpflanzung）和链终止（Kettenabbruch）三个阶段，无任何副产物分子析出。 Kettenreaktion unter Aufloesung von C=C-Doppelbindungen ohne Abspaltung von Nebenprodukten.
@@ -66,12 +66,29 @@ Die 3 grossen Kunststoffklassen im Strukturvergleich:
 
 [Werkzeug: lego]
 
-AUFGABE (beschreiben & analysieren, AFB I/II):
+AUFGABE: Beschreibe beide Synthesen und analysiere Polymerisationstyp und Eigenschaften der Produkte. [AFB II]
 Zwei Synthesen sollen im Labor durchgefuehrt werden:
 - Synthese 1: Ethen ($CH_2=CH_2$) wird unter Zugabe von Dibenzoylperoxid als Radikalstarter zu Polyethen (PE) umgesetzt.
 - Synthese 2: Hexandisaeure (Adipinsaeure, $HOOC-(CH_2)_4-COOH$) wird mit Hexan-1,6-diamin ($H_2N-(CH_2)_6-NH_2$) zu Nylon 6,6 (Polyamid) umgesetzt.
 1. Formuliere fuer Synthese 1 die drei mechanistischen Einzelschritte der radikalischen Polymerisation (Start, Wachstum, Abbruch).
 2. Erklaere den Unterschied zwischen Synthese 1 und Synthese 2 hinsichtlich der Atombilanz und der Notwendigkeit bifunktioneller Monomere.
+
+HILFE:
+- Fachdimension: Nutze Polymerisationstyp-Regel (Polymerisation, Polykondensation, Polyaddition); klaere zuerst Monomer-Funktion und Verknuepfungstyp vor der Eigenschaftsdeutung, ohne das Ergebnis vorwegzunehmen.
+- Rechenweg: Lege die Reihenfolge von Ausgangsgroesse zu Zielgroesse fest; schreibe nur die Abfolge auf, setze keine Zahlen ein.
+- Pruefdimension: Plane die Kontrolle ueber Einheit und Groessenordnung, ohne das Resultat zu nennen.
+
+COMPLETION (Lückentext):
+- Lies die Aufgabe und ergaenze aus dem Gedaechtnis, ohne zurueckzublaettern:
+- Fuer ___ gilt $n\,\mathrm{Monomer} \to \mathrm{Polymer}_{n}$.
+- Zuerst bestimme ich ___, dann folgt ___ aus Vernetzung und Kettenlaenge.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Polymerisationstyp bestimmen | 5 NP | Kondensat-Probe als Alternativweg
+Struktur aus Monomer ableiten | 5 NP | Vernetzungsblick als Alternativweg
+Eigenschaft mit Typ begruenden | 5 NP | Recycling-Argument als Alternativweg
+Gesamt: 15 NP
 
 MUSTERLOESUNG:
 1. Reaktionsmechanismus Synthese 1 (Radikalische Polymerisation):
@@ -90,22 +107,23 @@ MUSTERLOESUNG:
 ## Schritt 5 — ausprobieren: Duell der Werkstoffe: Thermoplast vs. Duroplast
 
 VERGLEICH: Thermoplast vs. Duroplast (选概念)
+- [Position A] Wenn du Position A waehlst, arbeitest du im Transfer vor allem mit Typen und Reaktionsschemata.
+- [Position B] Wenn du Position B waehlst, arbeitest du im Transfer vor allem mit Eigenschafts- und Umweltdeutung.
 
 - Position A (Thermoplaste wie Polyethylen / PET):
-  - Bindungstyp: Lineare Polymerketten, nur ueber zwischenmolekulare Kraefte zusammengehalten.
-  - Erwaermung: Die Waermeschwingung ueberwindet die schwachen Van-der-Waals-Kraefte; die Ketten gleiten aneinander vorbei und der Kunststoff schmilzt zu einer zaehen Fluessigkeit.
-  - Recycling: Hervorragend mechanisch recyclingfaehig (Umschmelzen zu neuen Flaschen).
 - Position B (Duroplaste wie Bakelit / Melaminharz):
-  - Bindungstyp: Dreidimensionales Raumgitter aus echten kovalenten Atombindungen.
-  - Erwaermung: Kann nicht schmelzen, weil die kovalenten Bindungen viel zu stark sind; bei extremer Hitze verkohlt und zersetzt sich das Material irreversibel.
-  - Recycling: Mechanisch unschmelzbar; kann nur feinst gemahlen als Fuellstoff oder chemisch verbrannt werden.
 
-Entscheidungsregel fuer die Klausur:
-Wird nach `Materialeignung fuer elektrische Steckdosen oder Pfannengriffe` gefragt, waehle IMMER Duroplaste, da sie bei Kurzschluessen oder Herdhitze nicht schmelzen und ihre Form starr bewahren!
+Wahlregel: Triff erst eine Wahl zwischen beiden Positionen; die Begruendung steht erst nach der Wahl in der AUFLOESUNG.
 
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Position A oder Position B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Ueberfuehrt aus VERGLEICH (Vorwahl-Fassung): - Bindungstyp: Lineare Polymerketten, nur ueber zwischenmolekulare Kraefte zusammengehalten. | - Erwaermung: Die Waermeschwingung ueberwindet die schwachen Van-der-Waals-Kraefte; die Ketten gleiten aneinander vorbei und der Kunststoff schmilzt zu einer zaehen Fluessigkeit. | - Recycling: Hervorragend mechanisch recyclingfaehig (Umschmelzen zu neuen Flaschen). | - Bindungstyp: Dreidimensionales Raumgitter aus echten kovalenten Atombindungen. | - Erwaermung: Kann nicht schmelzen, weil die kovalenten Bindungen viel zu stark sind; bei extremer Hitze verkohlt und zersetzt sich das Material irreversibel. | - Recycling: Mechanisch unschmelzbar; kann nur feinst gemahlen als Fuellstoff oder chemisch 
+- Ueberfuehrt aus Entscheidungsregel (Vorwahl-Fassung): Entscheidungsregel fuer die Klausur: Wird nach `Materialeignung fuer elektrische Steckdosen oder Pfannengriffe` gefragt, waehle IMMER Duroplaste, da sie bei Kurzschluessen oder Herdhitze nicht schmelzen und ihre Form starr bewahren!
+- Ein-Satz-Kern: Monomere verketten sich zu Polymeren, die Verknuepfung bestimmt Festigkeit und Schmelzverhalten.
 ## Schritt 6 — check: Klausur-Transfer Mikroplastik und chemisches Recycling
 
 PRUEFUNGSSZENARIO (KLP NRW Chemie LK Inhaltsfeld 4: Organische Werkstoffe):
+AUFGABE: Analysiere die Transferlage in ca. 150 Woertern mit Einordnung, Beleg und Schlussurteil. [AFB III]
 
 ### AFB I: Reaktionsgleichung
 Formuliere den Ausschnitt einer Polykondensation von Terephthalsaeure mit Ethan-1,2-diol (Glykol) zu Polyethylenterephthalat (PET) und markiere die Ester-Kopplungsgruppen.
@@ -116,6 +134,18 @@ Erklaere, wie gebrauchtes PET-Granulat durch saure oder basische Esterhydrolyse 
 ### AFB III: Kritisches Umweltgutachten
 Bewerte den Einsatz sogenannter "bio-basierter Kunststoffe" (z. B. PLA aus Maisstaerke) gegenueber konventionellem Erdoel-Plastik unter Beruecksichtigen von Flaechenkonkurrenz zur Nahrungsmittelproduktion, industriellen Kompostierungsbedingungen und Meeresverschmutzung.
 
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Typ-Einordnung mit Beleg | 5 NP | Monomer-Beleg als Alternativweg
+Struktur-Analyse mit Kette | 5 NP | Vernetzungsbeleg als Alternativweg
+Urteil mit Massstab und Schluss | 5 NP | Offenes Urteil mit Rueckbindung als Alternativweg
+Gesamt: 15 NP
+
+KERNSATZ (auswendig):
+- Kernsatz: `Monomere verketten sich zu Polymeren, die Verknuepfung bestimmt Festigkeit und Schmelzverhalten.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = Monomer und Kette | Mechanismus = Verknuepfungstyp und Vernetzung | Urteil = Werkstoffeigenschaft als Urteil
+- Selbsttest: Monomere verketten sich zu Polymeren, die Verknuepfung bestimmt ___ und Schmelzverhalten.
 ## Schritt 7 — check: Format-Check & Scoring
 
 30 XP Schnelltest zur Verstaendigungssicherung:

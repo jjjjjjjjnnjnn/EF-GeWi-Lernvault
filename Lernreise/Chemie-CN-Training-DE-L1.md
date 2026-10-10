@@ -8,7 +8,7 @@ operatoren: [darstellen, berechnen, bestimmen, auswerten]
 klausurrelevant: true
 datum: 2026-09-25
 tags: [EF, Chemie, CN]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: CN-Training: Zeitlimit und EHZ-Selbstbewertung — Episode C3: Bootcamp gegen die Uhr
@@ -77,12 +77,25 @@ Jede Konzentration braucht Volumen im Nenner; ohne L kein c.
 
 [Werkzeug: formula]
 
-AUFGABE (Target Challenge): Drei Stationen: 10 g CaCO3 zu CO2-Volumen, Q-Entscheid bei Haber-Werten, Urteil ueber Heizen bei exotherm. Loese alle mit Ansatz und Einheit in 30 Minuten und bewerte dich am Horizont.
+AUFGABE: Berechne drei Stationen: 10 g CaCO3 zu CO2-Volumen, Q-Entscheid bei Haber-Werten, Urteil ueber Heizen bei exotherm. Loese alle mit Ansatz und Einheit in 30 Minuten und bewerte dich am Horizont. [AFB II]
 
 HILFE:
-1. Typ bestimmen: Wieviel oder Wohin.
-2. Ansatz mit Gegeben, Formel, Einheit schreiben.
-3. Horizont anlegen und Luecken schliessen.
+- Fachdimension: Nutze Kartenwahl mit Zeitregel (Ansatz zuerst, Urteil danach); klaere zuerst Ansatzkarte und Zeitslot vor der Ausfuehrung, ohne das Ergebnis vorwegzunehmen.
+- Rechenweg: Lege die Reihenfolge von Ausgangsgroesse zu Zielgroesse fest; schreibe nur die Abfolge auf, setze keine Zahlen ein.
+- Pruefdimension: Plane die Kontrolle ueber Einheit und Groessenordnung, ohne das Resultat zu nennen.
+
+
+COMPLETION (Lückentext):
+- Lies die Aufgabe und ergaenze aus dem Gedaechtnis, ohne zurueckzublaettern:
+- Fuer ___ gilt der Takt $t_\mathrm{Plan} + t_\mathrm{Rechnung} + t_\mathrm{Urteil} = 90\,\mathrm{s}$.
+- Zuerst bestimme ich ___, dann folgt ___ aus dem Zeitslot.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Ansatzkarte ziehen | 5 NP | Zeit-Probe als Alternativweg
+Station mit Takt loesen | 5 NP | Uhren-Beleg als Alternativweg
+Selbstbewertung mit EHZ | 5 NP | Urteils-Beleg als Alternativweg
+Gesamt: 15 NP
 
 MUSTERLOESUNG: CO2: 0,1 mol, 2,24 L; Q kleiner K heisst rechts; Heizen bei exotherm schiebt links; alle mit Einheit, Horizont zeigt Volltreffer.
 
@@ -93,9 +106,11 @@ MUSTERLOESUNG: CO2: 0,1 mol, 2,24 L; Q kleiner K heisst rechts; Heizen bei exoth
 VERGLEICH: Waehle erst den Trainingsweg, dann loesen: (i) Ansatz-Drillweg oder (ii) Vollklausurweg — dann loesen.
 
 
-Weg A (Ansatz-Drillweg): Ansaetze unter Stoppuhr automatisieren und Typen sortieren. Dieser Weg baut Tempo und Sicherheit.
+Weg A (Ansatz-Drillweg): Der Weg steht zur Wahl.
+- [Weg A] Wenn du Weg A waehlst, arbeitest du in Schritt 7 vor allem mit Ansaetzen unter Zeit.
 
-Weg B (Vollklausurweg): Komplette Klausur unter Ernstfall schreiben und auswerten. Dieser Weg baut Nerven und Vollstaendigkeit.
+Weg B (Vollklausurweg): Der Weg steht zur Wahl.
+- [Weg B] Wenn du Weg B waehlst, arbeitest du in Schritt 7 vor allem mit Urteilen im Vollformat.
 
 
 AUFGABE A: Mol-Ansaetze in unter einer Minute bauen. Welcher Weg?
@@ -103,9 +118,18 @@ AUFGABE A: Mol-Ansaetze in unter einer Minute bauen. Welcher Weg?
 AUFGABE B: Neunzig Minuten ohne Einbruch durchhalten. Welcher Weg?
 
 
-HILFE: A verlangt Automatik — Weg A mit Drill. B verlangt Dauer — Weg B mit Simulation.
+HILFE: Pruefe dimensionsgeleitet, welcher Weg passt: Zahlen- und Signalwoerter sprechen fuer Weg A, Deutungs- und Bereichswoerter fuer Weg B. Ordne selbst zu; die Zuordnung wird nicht vorweggenommen.
 
 ANTWORT: A folgt Weg A mit Kartendrill; B folgt Weg B mit Probeklausur und Horizont.
+
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg A oder Weg B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Ueberfuehrt aus VERGLEICH (Vorwahl-Fassung): Weg A (Ansatz-Drillweg): Ansaetze unter Stoppuhr automatisieren und Typen sortieren. Dieser Weg baut Tempo und Sicherheit. // Weg B (Vollklausurweg): Komplette Klausur unter Ernstfall schreiben und auswerten. Dieser Weg baut Nerven und Vollstaendigkeit.
+- Ueberfuehrt aus Schritt-5-HILFE (Vorwahl-Fassung): HILFE: A verlangt Automatik — Weg A mit Drill. B verlangt Dauer — Weg B mit Simulation.
+- Mechanismus A: ANTWORT: A folgt Weg A mit Kartendrill; B folgt Weg B mit Probeklausur und Horizont.
+- Ein-Satz-Kern: Drill baut Tempo, Vollklausur baut Nerven — die Pruefung braucht beides.
+
+<!-- C1-Bestaetigung: Vorwahl neutral, Mechanismus in AUFLOESUNG. -->
 
 `Klausur-Satz: Drill baut Tempo, Vollklausur baut Nerven — die Pruefung braucht beides.`
 
@@ -132,12 +156,25 @@ ANTWORT: A folgt Weg A mit Kartendrill; B folgt Weg B mit Probeklausur und Horiz
 
 ROLLE: Du bist Bootcamp-Prueferin.
 SITUATION: Drei Aufgaben liegen bereit. Schreibe in ca. 120 Woertern Loesungen mit Ansatz und Einheit und lege den Horizont offen.
+AUFGABE: Werte die Transferlage in ca. 150 Woertern mit Einordnung, Beleg und Schlussurteil aus. [AFB III]
 RUBRIC (30 XP): Ansaetze (12 XP) | Rechnungen (12 XP) | Horizont (6 XP).
 ZEITREGEL: MAX 2 Minuten — 90 Sekunden Ansatz plus Typ sortieren, 30 Sekunden Horizont-Haken, dann abgeben; Timer stellen.
 
 
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Drill-Einordnung | 5 NP | Karten-Beleg als Alternativweg
+Zeit-Analyse mit Takt | 5 NP | Ansatzbeleg als Alternativweg
+Urteil mit Massstab und Schluss | 5 NP | EHZ-Beleg als Alternativweg
+Gesamt: 15 NP
+
 `Klausur-Satz: Achtung Falle: Schoener Rechenweg ohne Einheit verschenkt den halben Punkt.`
 
+KERNSATZ (auswendig):
+- Kernsatz: `Jede Frage zieht genau eine Karte, jede Karte endet mit Zahl oder Richtung als Beleg.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = Drei Stationen | Mechanismus = Drill mit Uhr und Karte | Urteil = Urteil unter Zeit als Beleg
+- Selbsttest: Jede Frage zieht genau eine Karte, jede Karte endet mit Zahl oder ___ als Beleg.
 ## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY:

@@ -8,7 +8,7 @@ operatoren: [formulieren, berechnen, beurteilen]
 klausurrelevant: true
 datum: 2026-10-03
 tags: [EF, Chemie, Chemisches-Gleichgewicht, Massenwirkungsgesetz, Gleichgewichtskonstante, Kinetik]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Chemisches Gleichgewicht: Massenwirkungsgesetz und Reaktionsquotient (L1, Ziel Klausur)
@@ -29,7 +29,7 @@ Du leitest in einem luftdicht verschlossenen Hochdruckbehaelter reines Stickstof
 `Klausur-Satz: Im dynamischen chemischen Gleichgewicht sind die Geschwindigkeiten von Hin- und Rueckreaktion exakt identisch, wodurch sich makroskopisch konstante Stoffkonzentrationen einstellen.`
 
 ## Schritt 2 — entdecken: Das chemische Handwerkszeug des Gleichgewichts
-PRETRAINING术语盒（核心4词，先读三遍中德，合书自测中文→德语）：
+PRETRAINING术语盒（核心4词，先读三遍中德，合书自测中文->德语）：
 
 - 动态平衡 — Dynamisches Gleichgewicht: 正逆反应速率严格相等的稳态。 Der Zustand einer reversiblen Reaktion, in dem die Bildungsgeschwindigkeit der Produkte exakt gleich der Rueckbildungsgeschwindigkeit der Edukte ist ($v_{\text{hin}} = v_{\text{rueck}}$).
 - 质量作用定律 — Massenwirkungsgesetz (MWG): 在恒温下，化学平衡时生成物平衡浓度幂之积与反应物平衡浓度幂之积的比值为一常数。 Die mathematische Gesetzmaessigkeit, dass der Quotient aus den molaren Gleichgewichtskonzentrationen der Produkte und Edukte (potenziert mit ihren stoechiometrischen Koeffizienten) bei konstanter Temperatur konstant ist.
@@ -64,7 +64,7 @@ $$K_c = \frac{c(C)^c \cdot c(D)^d}{c(A)^a \cdot c(B)^b}$$
 
 [Werkzeug: balance-board]
 
-AUFGABE (formulieren & berechnen, AFB I/II):
+AUFGABE: Formuliere das MWG der Esterbildung, berechne Qc aus den Momentanwerten und begruende die Richtung zum Gleichgewicht. [AFB II]
 Fuer die Esterbildung aus Essigsaeure ($CH_3COOH$) und Ethanol ($C_2H_5OH$) zu Essigsaeureethylester ($CH_3COOC_2H_5$) und Wasser gilt bei $25\,^\circ\text{C}$ der Gleichgewichtswert $K_c = 4{,}0$:
 $CH_3COOH + C_2H_5OH \rightleftharpoons CH_3COOC_2H_5 + H_2O$
 In einem Reaktionsgefaess werden folgende Momentankonzentrationen gemessen:
@@ -74,6 +74,23 @@ In einem Reaktionsgefaess werden folgende Momentankonzentrationen gemessen:
 - $c(\text{Wasser}) = 0{,}2\,\text{mol/l}$
 1. Berechne den aktuellen Reaktionsquotienten $Q_c$.
 2. Vergleiche $Q_c$ mit $K_c$ und begruende, in welche Richtung die Reaktion spontan weiterlaufen muss, um das chemische Gleichgewicht zu erreichen.
+
+HILFE:
+- Fachdimension: Nutze Massenwirkungsgesetz und Q-gegen-K-Vergleich; klaere zuerst Gleichgewichts- gegen Momentanwerte und Reaktionsrichtung als Folgefrage, ohne das Ergebnis vorwegzunehmen.
+- Rechenweg: Lege die Reihenfolge von Ausgangsgroesse zu Zielgroesse fest; schreibe nur die Abfolge auf, setze keine Zahlen ein.
+- Pruefdimension: Plane die Kontrolle ueber Einheit und Groessenordnung, ohne das Resultat zu nennen.
+
+COMPLETION (Lückentext):
+- Lies die Aufgabe und ergaenze aus dem Gedaechtnis, ohne zurueckzublaettern:
+- Fuer ___ gilt $K_c = \frac{c(C)^c \, c(D)^d}{c(A)^a \, c(B)^b}$.
+- Zuerst bestimme ich ___, dann folgt ___ aus $Q_c$ gegen $K_c$.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+MWG-Ausdruck formulieren | 5 NP | Exponentenkontrolle als Alternativweg
+Q aus Momentanwerten | 5 NP | Einheitenprobe als Alternativweg
+Richtung mit Vergleich begruenden | 5 NP | Temperaturblick als Alternativweg
+Gesamt: 15 NP
 
 MUSTERLOESUNG:
 1. Berechnung von $Q_c$:
@@ -89,20 +106,23 @@ MUSTERLOESUNG:
 ## Schritt 5 — ausprobieren: Duell der Zustaende: Dynamisch vs. Statisch
 
 VERGLEICH: Dynamisches Gleichgewicht vs. Statischer Stillstand (选概念)
+- [Position A] Wenn du Position A waehlst, arbeitest du im Transfer vor allem mit Ausdruecken und Quotienten.
+- [Position B] Wenn du Position B waehlst, arbeitest du im Transfer vor allem mit Dynamik- und Stoerungsdeutung.
 
 - Position A (Dynamisches Gleichgewicht / Chemie):
-  - Zustand: Reaktionen laufen mikroskopisch mit maximaler Vehemenz in beide Richtungen ununterbrochen weiter ($v_{\text{hin}} = v_{\text{rueck}} > 0$).
-  - Stoerung: Reagiert flexibel auf Temperatur-, Druck- und Konzentrationsaenderungen nach dem Prinzip von Le Chatelier.
 - Position B (Statischer Stillstand / Mechanik):
-  - Zustand: Alle Kraefte heben sich auf; keine Bewegung mehr vorhanden ($v = 0$, z. B. ein Buch auf dem Tisch).
-  - Stoerung: Keine mikroskopische Regenerationsfaehigkeit.
 
-Entscheidungsregel fuer die Klausur:
-Wird nach `Beweis fuer ein dynamisches Gleichgewicht` gefragt, fuehre immer das Experiment mit radioaktiven Isotopen an: Werden markierte Edukte zugegeben, tauchen diese zwingend in den Produkten auf, was einen statischen Stillstand experimentell widerlegt!
+Wahlregel: Triff erst eine Wahl zwischen beiden Positionen; die Begruendung steht erst nach der Wahl in der AUFLOESUNG.
 
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Position A oder Position B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Ueberfuehrt aus VERGLEICH (Vorwahl-Fassung): 
+- Ueberfuehrt aus Entscheidungsregel (Vorwahl-Fassung): Entscheidungsregel fuer die Klausur: Wird nach `Beweis fuer ein dynamisches Gleichgewicht` gefragt, fuehre immer das Experiment mit radioaktiven Isotopen an: Werden markierte Edukte zugegeben, tauchen diese zwingend in den Produkten auf, was einen statischen Stillstand experimentell widerlegt!
+- Ein-Satz-Kern: Im Gleichgewicht laufen Hin- und Rueckreaktion gleich schnell, die Lage folgt Q gegen K.
 ## Schritt 6 — check: Klausur-Transfer Ammoniaksynthese und Temperaturabhaengigkeit
 
 PRUEFUNGSSZENARIO (KLP NRW Chemie LK Inhaltsfeld 2: Chemische Gleichgewichte):
+AUFGABE: Beurteile die Transferlage in ca. 150 Woertern mit Einordnung, Beleg und Schlussurteil. [AFB III]
 
 ### AFB I: MWG-Formulierung
 Formuliere das Massenwirkungsgesetz fuer das Haber-Bosch-Gleichgewicht:
@@ -116,6 +136,18 @@ Erlaeutere diesen Befund unter Verknuepfung der exothermen Reaktionsenthalpie mi
 ### AFB III: Technologischer Kompromiss
 Erklaere den ingenieurtechnischen Zielkonflikt der industriellen Synthese: Warum waehlt man in der Praxis eine relativ hohe Temperatur von ca. $450\,^\circ\text{C}$, obwohl das thermodynamische Gleichgewicht bei Raumtemperatur viel mehr Ammoniak liefern wuerde?
 
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+MWG-Einordnung mit Beleg | 5 NP | Exponenten-Beleg als Alternativweg
+Q-Analyse mit Richtung | 5 NP | Isotopen-Beleg als Alternativweg
+Urteil mit Massstab und Schluss | 5 NP | Offenes Urteil mit Rueckbindung als Alternativweg
+Gesamt: 15 NP
+
+KERNSATZ (auswendig):
+- Kernsatz: `Im Gleichgewicht laufen Hin- und Rueckreaktion gleich schnell, die Lage folgt Q gegen K.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = Reversibles System | Mechanismus = Q-gegen-K-Vergleich am MWG | Urteil = Richtungsurteil zur Einstellung
+- Selbsttest: Im Gleichgewicht laufen Hin- und Rueckreaktion gleich schnell, die Lage folgt ___ gegen K.
 ## Schritt 7 — check: Format-Check & Scoring
 
 30 XP Schnelltest zur Verstaendigungssicherung:

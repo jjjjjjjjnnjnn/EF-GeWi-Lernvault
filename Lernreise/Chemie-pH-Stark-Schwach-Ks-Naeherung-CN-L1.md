@@ -8,7 +8,7 @@ operatoren: [aufstellen, berechnen, begruenden]
 klausurrelevant: true
 datum: 2026-09-26
 tags: [EF, Chemie, CN]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: pH starker und schwacher Saeuren mit Ks-Naeherung — Episode C27: Kippender Pool bei pH 3
@@ -78,12 +78,25 @@ $$pH = -\log c_0 \quad \text{(stark)} \quad ; \quad pH = \tfrac{1}{2}(pK_S - \lo
 
 [Werkzeug: formula]
 
-AUFGABE目标挑战：已知盐酸与醋酸浓度及Ks：算双pH、验近似并预测稀释十倍的变化。 德语原题：Gegeben: 0,01 mol/L HCl und 0,10 mol/L Essigsaeure mit Ks = 1,8 mal 10 hoch minus 5. Berechne beide pH-Werte, pruefe die Naeherung und sage die pH-Aenderung bei zehnfacher Verduennung voraus.
+AUFGABE: Berechne 已知盐酸与醋酸浓度及Ks：算双pH、验近似并预测稀释十倍的变化。 德语原题：Gegeben: 0,01 mol/L HCl und 0,10 mol/L Essigsaeure mit Ks = 1,8 mal 10 hoch minus 5. Berechne beide pH-Werte, pruefe die Naeherung und sage die pH-Aenderung bei zehnfacher Verduennung voraus. [AFB II]
 
 HILFE:
-1. Stark oder schwach an Ks entscheiden.
-2. Stark direkt, schwach mit Wurzel rechnen.
-3. 5-Prozent-Check plus Verduennungsregel anfuegen.
+- Fachdimension: Nutze Ks-Naeherung (stark direkt, schwach mit Wurzel); klaere zuerst Saeurentyp (stark/schwach) und Naeherungsbedingung vor der Rechnung, ohne das Ergebnis vorwegzunehmen.
+- Rechenweg: Lege die Reihenfolge von Ausgangsgroesse zu Zielgroesse fest; schreibe nur die Abfolge auf, setze keine Zahlen ein.
+- Pruefdimension: Plane die Kontrolle ueber Einheit und Groessenordnung, ohne das Resultat zu nennen.
+
+
+COMPLETION (Lückentext):
+- Lies die Aufgabe und ergaenze aus dem Gedaechtnis, ohne zurueckzublaettern:
+- Fuer ___ gilt $\mathrm{pH} = -\lg[H_3O^+]$ mit starker Dissoziation.
+- Zuerst bestimme ich ___, dann folgt ___ aus $[H_3O^+] = \sqrt{K_S \cdot c_0}$.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Saeurentyp klaeren | 5 NP | Leitfaehigkeitsblick als Alternativweg
+pH direkt oder mit Wurzel | 5 NP | Naeherungs-Check als Alternativweg
+Verdünnungseffekt begruenden | 5 NP | Quadratwurzel-Probe als Alternativweg
+Gesamt: 15 NP
 
 MUSTERLOESUNG：中文：盐酸pH2，醋酸约2.87且过检，稀释十倍强升1弱升0.5。 / 德语：HCl stark: pH 2; Essig: pH halb mal (4,74 plus 1) gleich 2,87, Check 1,3 Prozent gilt; Verduennung hebt stark um 1, schwach um 0,5.
 
@@ -94,9 +107,11 @@ MUSTERLOESUNG：中文：盐酸pH2，醋酸约2.87且过检，稀释十倍强升
 VERGLEICH: Waehle erst den Saeure-Weg, dann loesen: (i) Direkt-Rechenweg oder (ii) Ks-Naeherweg — dann loesen.选程序：先看信号词再选路。
 
 
-Weg A：Weg A (Direkt-Rechenweg): Starke Saeuren quantitativ direkt aus c0 berechnen. Dieser Weg ist exakt und schnell.
+Weg A (Direkt-Rechenweg): Der Weg steht zur Wahl.
+- [Weg A] Wenn du Weg A waehlst, arbeitest du in Schritt 7 vor allem mit Direktzahlen und Wurzeln.
 
-Weg B：Weg B (Ks-Naeherweg): Schwache Saeuren qualitativ einordnen und mit Wurzel plus Check naehern. Dieser Weg braucht den Check als Siegel.
+Weg B (Ks-Naeherweg): Der Weg steht zur Wahl.
+- [Weg B] Wenn du Weg B waehlst, arbeitest du in Schritt 7 vor allem mit Nachweis- und Staffeldeutung.
 
 
 AUFGABE A: pH aus 0,01 mol/L HCl exakt gesucht. Welcher Weg? 【选程序：先看信号词再选路】
@@ -104,9 +119,18 @@ AUFGABE A: pH aus 0,01 mol/L HCl exakt gesucht. Welcher Weg? 【选程序：先�
 AUFGABE B: Essig-pH mit Gueltigkeitsnachweis gesucht. Welcher Weg? 【选程序：先看信号词再选路】
 
 
-HILFE：A nennt stark — Weg A direkt. B nennt Nachweis — Weg B mit Check.
+HILFE: Pruefe dimensionsgeleitet, welcher Weg passt: Zahlen- und Signalwoerter sprechen fuer Weg A, Deutungs- und Bereichswoerter fuer Weg B. Ordne selbst zu; die Zuordnung wird nicht vorweggenommen.
 
 ANTWORT：中文：A走直算路取对数；B走近似路开方加验。 / 德语：A folgt Weg A mit minus-Log-Rechnung; B folgt Weg B mit Wurzel-plus-Check-Protokoll.
+
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg A oder Weg B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Ueberfuehrt aus VERGLEICH (Vorwahl-Fassung): ANTWORT：中文：A走直算路取对数；B走近似路开方加验。 / 德语：A folgt Weg A mit minus-Log-Rechnung; B folgt Weg B mit Wurzel-plus-Check-Protokoll. // Weg B (Ks-Naeherweg): Schwache Saeuren qualitativ einordnen und mit Wurzel plus Check naehern. Dieser Weg braucht den Check als Siegel.
+- Ueberfuehrt aus Schritt-5-HILFE (Vorwahl-Fassung): HILFE：A nennt stark — Weg A direkt. B nennt Nachweis — Weg B mit Check.
+- Mechanismus A: ANTWORT：中文：A走直算路取对数；B走近似路开方加验。 / 德语：A folgt Weg A mit minus-Log-Rechnung; B folgt Weg B mit Wurzel-plus-Check-Protokoll.
+- Ein-Satz-Kern: Direkt rechnen beweist, naehern mit Check sichert — die Klausur braucht beides.
+
+<!-- C1-Bestaetigung: Vorwahl neutral, Mechanismus in AUFLOESUNG. -->
 
 `Klausur-Satz: Direkt rechnen beweist, naehern mit Check sichert — die Klausur braucht beides.`
 
@@ -135,12 +159,25 @@ ANTWORT：中文：A走直算路取对数；B走近似路开方加验。 / 德�
 
 ROLLE：中文：你是手持药勺的救生员。 / 德语：Du bist Bademeister mit Kelle.
 SITUATION：泳池pH3.2：请用强弱酸与Ks解释事故并算出纠正剂量（约150词）。 / 德语：Der Pool zeigt pH 3,2. Erklaere in ca. 150 Woertern mit stark, schwach und Ks, was geschah, und berechne die Korrektur.
+AUFGABE: Begruende die Transferlage in ca. 150 Woertern mit Einordnung, Beleg und Schlussurteil. [AFB III]
 RUBRIC (30 XP)：Diagnose (8 XP) | Rechnung (8 XP) | Korrektur (8 XP) | Sicherheit (6 XP).
 ZEITREGEL: MAX 2 Minuten — 90秒看Ks定强弱，30秒写救生纠正句，然后交卷；Timer stellen.
 
 
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Typ-Einordnung mit Beleg | 5 NP | Ks-Beleg als Alternativweg
+pH-Analyse mit Naeherung | 5 NP | Prozent-Check als Alternativweg
+Urteil mit Massstab und Schluss | 5 NP | Offenes Urteil mit Rueckbindung als Alternativweg
+Gesamt: 15 NP
+
 `Klausur-Satz: Achtung Falle: Verduennen hebt pH starker Saeuren um eins pro Faktor zehn, schwacher nur um halb.`
 
+KERNSATZ (auswendig):
+- Kernsatz: `Starke Saeuren protolysieren vollstaendig, schwache nur teilweise nach ihrer Ks-Konstante.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = Saeurestaerke | Mechanismus = Dissoziationsgrad nach Ks | Urteil = pH-Staffel als Urteil
+- Selbsttest: Starke Saeuren protolysieren vollstaendig, schwache nur teilweise nach ihrer ___.
 ## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY核心总结：

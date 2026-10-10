@@ -8,7 +8,7 @@ operatoren: [aufstellen, berechnen, deuten, begruenden]
 klausurrelevant: true
 datum: 2026-09-25
 tags: [EF, Chemie, Gleichgewicht]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Chemisches Gleichgewicht und Le Chatelier — Episode C7: Hochdruck im Haber-Turm
@@ -90,12 +90,25 @@ Vier Teilchen links gegen zwei rechts: Darum hilft Hochdruck der Produktseite.
 
 [Werkzeug: le-chatelier-sim]
 
-AUFGABE (Target Challenge): Haber-Bosch, exotherm, T = 480 Grad C, p = 250 bar. Stelle im Simulator so, dass die Ausbeute ueber 15 Prozent steigt, und begruende, warum Heizen schadet und Druck hilft. Konkret: N2 + 3 H2 <-> 2 NH3, exotherm. Druck hoch, Temperatur hoch: Wohin laeuft es?
+AUFGABE: Berechne Haber-Bosch, exotherm, T = 480 Grad C, p = 250 bar. Stelle im Simulator so, dass die Ausbeute ueber 15 Prozent steigt, und begruende, warum Heizen schadet und Druck hilft. Konkret: N2 + 3 H2 <-> 2 NH3, exotherm. Druck hoch, Temperatur hoch: Wohin laeuft es? [AFB II]
 
 HILFE:
-1. Teilchen zaehlen: 4 gegen 2.
-2. Exotherm plus Heizen heisst links.
-3. Katalysator nur schneller, nie Lage.
+- Fachdimension: Nutze Massenwirkungsgesetz und Le-Chatelier-Richtungssatz; klaere zuerst Stoergroesse (p, T, c) und MWG-Quotient vor der Richtungsdeutung, ohne das Ergebnis vorwegzunehmen.
+- Rechenweg: Lege die Reihenfolge von Ausgangsgroesse zu Zielgroesse fest; schreibe nur die Abfolge auf, setze keine Zahlen ein.
+- Pruefdimension: Plane die Kontrolle ueber Einheit und Groessenordnung, ohne das Resultat zu nennen.
+
+
+COMPLETION (Lückentext):
+- Lies die Aufgabe und ergaenze aus dem Gedaechtnis, ohne zurueckzublaettern:
+- Fuer ___ gilt $K = \frac{\mathrm{Produkte}^\mathrm{Koeff}}{\mathrm{Edukte}^\mathrm{Koeff}}$.
+- Zuerst bestimme ich ___, dann folgt ___ aus $Q$ gegen $K$.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+MWG-Ansatz aufstellen | 5 NP | Koeffizientenprobe als Alternativweg
+Ausbeute-Richtung deuten | 5 NP | Q-Gegenprobe als Alternativweg
+Bedingung mit Zwang begruenden | 5 NP | Katalysator-Abgrenzung als Alternativweg
+Gesamt: 15 NP
 
 MUSTERLOESUNG: Mehr Druck schiebt rechts zu weniger Teilchen, Heizen schiebt links zur endothermen Seite; netto braucht der Turm Hochdruck, maessige Temperatur und Katalysator.
 
@@ -106,9 +119,11 @@ MUSTERLOESUNG: Mehr Druck schiebt rechts zu weniger Teilchen, Heizen schiebt lin
 VERGLEICH: Waehle erst das Auge, dann loesen: (i) MWG-Rechenauge oder (ii) Stoerungsauge — dann loesen.
 
 
-Weg A (MWG-Rechenauge): Konzentrationen einsetzen, K oder Q quantitativ berechnen und Richtung aus Zahlen ableiten. Dieser Weg liefert Belege mit Einheit mol/L und ist pruefungssicher.
+Weg A (MWG-Rechenauge): Der Weg steht zur Wahl.
+- [Weg A] Wenn du Weg A waehlst, arbeitest du in Schritt 7 vor allem mit MWG-Zahlen und Ausbeuten.
 
-Weg B (Stoerungsauge): Stoerung benennen und Richtung qualitativ mit Le Chatelier deuten. Dieser Weg ist schnell und anschaulich, bleibt aber ohne Zahl angreifbar.
+Weg B (Stoerungsauge): Der Weg steht zur Wahl.
+- [Weg B] Wenn du Weg B waehlst, arbeitest du in Schritt 7 vor allem mit Stoerungsdeutung und Blick.
 
 
 AUFGABE A: c-Werte gegeben, K berechnen. Welches Auge?
@@ -116,9 +131,18 @@ AUFGABE A: c-Werte gegeben, K berechnen. Welches Auge?
 AUFGABE B: Nur Erhitzen genannt, Richtung gesucht. Welches Auge?
 
 
-HILFE: A nennt Zahlen — Weg A mit MWG. B nennt Stoerung — Weg B mit Le Chatelier.
+HILFE: Pruefe dimensionsgeleitet, welcher Weg passt: Zahlen- und Signalwoerter sprechen fuer Weg A, Deutungs- und Bereichswoerter fuer Weg B. Ordne selbst zu; die Zuordnung wird nicht vorweggenommen.
 
 ANTWORT: A folgt Weg A mit MWG-Ausdruck und Dreisatztabelle; B folgt Weg B mit Le-Chatelier-Begruendung.
+
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg A oder Weg B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Ueberfuehrt aus VERGLEICH (Vorwahl-Fassung): Weg A (MWG-Rechenauge): Konzentrationen einsetzen, K oder Q quantitativ berechnen und Richtung aus Zahlen ableiten. Dieser Weg liefert Belege mit Einheit mol/L und ist pruefungssicher. // Weg B (Stoerungsauge): Stoerung benennen und Richtung qualitativ mit Le Chatelier deuten. Dieser Weg ist schnell und anschaulich, bleibt aber ohne Zahl angreifbar.
+- Ueberfuehrt aus Schritt-5-HILFE (Vorwahl-Fassung): HILFE: A nennt Zahlen — Weg A mit MWG. B nennt Stoerung — Weg B mit Le Chatelier.
+- Mechanismus A: ANTWORT: A folgt Weg A mit MWG-Ausdruck und Dreisatztabelle; B folgt Weg B mit Le-Chatelier-Begruendung.
+- Ein-Satz-Kern: Zahlen verlangen das MWG-Rechenauge, Stoerungen verlangen das Le-Chatelier-Stoerungsauge.
+
+<!-- C1-Bestaetigung: Vorwahl neutral, Mechanismus in AUFLOESUNG. -->
 
 `Klausur-Satz: Zahlen verlangen das MWG-Rechenauge, Stoerungen verlangen das Le-Chatelier-Stoerungsauge.`
 
@@ -145,12 +169,25 @@ ANTWORT: A folgt Weg A mit MWG-Ausdruck und Dreisatztabelle; B folgt Weg B mit L
 
 ROLLE: Du bist Verfahrenstechniker am Haber-Turm.
 SITUATION: Die Leitung will stark heizen und Druck senken. Beurteile in ca. 150 Woertern mit Le Chatelier, welche Bedingungen wirklich helfen, und warne vor der Berstgrenze.
+AUFGABE: Begruende die Transferlage in ca. 150 Woertern mit Einordnung, Beleg und Schlussurteil. [AFB III]
 RUBRIC (30 XP): Temperaturlogik (8 XP) | Drucklogik (8 XP) | Gegenentwurf (8 XP) | Abwaegung (6 XP).
 ZEITREGEL: MAX 2 Minuten — 90 Sekunden Druck-/Temperaturlogik entscheiden, 30 Sekunden Warnsatz zur Berstgrenze, dann abgeben; Timer stellen.
 
 
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Turm-Einordnung mit Beleg | 5 NP | MWG-Beleg als Alternativweg
+Stoerungs-Analyse mit Richtung | 5 NP | Energiebeleg als Alternativweg
+Schicht-Urteil mit Schluss | 5 NP | Sicherheitsblick als Alternativweg
+Gesamt: 15 NP
+
 `Klausur-Satz: Achtung Falle: Der Katalysator beschleunigt beide Wege gleich und aendert weder Lage noch K.`
 
+KERNSATZ (auswendig):
+- Kernsatz: `Im Gleichgewicht laufen Hin- und Rueckreaktion gleich schnell, die Lage folgt Q gegen K.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = Haber-Turm im Zwang | Mechanismus = Ausweichen nach Le Chatelier | Urteil = Schichturteil zu Druck und Hitze
+- Selbsttest: Im Gleichgewicht laufen Hin- und Rueckreaktion gleich schnell, die Lage folgt ___ gegen K.
 ## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY:

@@ -8,7 +8,7 @@ operatoren: [darstellen, begruenden, auswaehlen]
 klausurrelevant: true
 datum: 2026-09-26
 tags: [EF, Chemie, Saeure-Base]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Titrationskurven und Indikatoren — Episode C22: Pink bleibt aus am Titriertisch
@@ -78,12 +78,25 @@ $$c_S \cdot V_S = c_M \cdot V_M \quad \text{(Aequivalenzpunkt 1:1)}$$
 
 [Werkzeug: titration-lab]
 
-AUFGABE目标挑战：已知25毫升未知醋、0.1摩尔氢氧化钠：滴到粉红读数算浓度，再为弱碱对强酸选指示剂。 德语原题：Gegeben: 25 mL Essig unbekannt, 0,1 mol/L NaOH, Phenolphthalein. Titriere im Simulator bis Pink, lies das Volumen ab und berechne c; waehle dann den Indikator fuer schwache Base gegen starke Saeure.
+AUFGABE: Stelle dar 已知25毫升未知醋、0.1摩尔氢氧化钠：滴到粉红读数算浓度，再为弱碱对强酸选指示剂。 德语原题：Gegeben: 25 mL Essig unbekannt, 0,1 mol/L NaOH, Phenolphthalein. Titriere im Simulator bis Pink, lies das Volumen ab und berechne c; waehle dann den Indikator fuer schwache Base gegen starke Saeure. [AFB II]
 
 HILFE:
-1. Langsam zutropfen und Farbe beobachten.
-2. Volumen am Umschlag ablesen.
-3. c-mal-V-Gleichung nach Unbekannt loesen.
+- Fachdimension: Nutze Aequivalenz-Regel (c-mal-V) und Indikator-Umschlagsregel; klaere zuerst Aequivalenzvolumen und Sprunglage vor der Indikatorkwahl, ohne das Ergebnis vorwegzunehmen.
+- Rechenweg: Lege die Reihenfolge von Ausgangsgroesse zu Zielgroesse fest; schreibe nur die Abfolge auf, setze keine Zahlen ein.
+- Pruefdimension: Plane die Kontrolle ueber Einheit und Groessenordnung, ohne das Resultat zu nennen.
+
+
+COMPLETION (Lückentext):
+- Lies die Aufgabe und ergaenze aus dem Gedaechtnis, ohne zurueckzublaettern:
+- Fuer ___ gilt $c_1 V_1 = c_2 V_2$ am Aequivalenzpunkt.
+- Zuerst bestimme ich ___, dann folgt ___ aus Sprunglage und Umschlag.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Aequivalenz aus c-mal-V | 5 NP | Halbpunkt-Probe als Alternativweg
+Konzentration rueckrechnen | 5 NP | Einheitenprobe als Alternativweg
+Indikatorwahl begruenden | 5 NP | Sprunglagen-Blick als Alternativweg
+Gesamt: 15 NP
 
 MUSTERLOESUNG：中文：12.5毫升变色得醋0.05摩尔每升，弱碱对强酸突跃偏酸故选甲基橙。 / 德语：Umschlag bei 12,5 mL: c Essig gleich 0,05 mol/L; schwache Base gegen starke Saeure braucht Methylorange, weil der Sprung sauer liegt.
 
@@ -94,9 +107,11 @@ MUSTERLOESUNG：中文：12.5毫升变色得醋0.05摩尔每升，弱碱对强�
 VERGLEICH: Waehle erst den Analyse-Weg, dann loesen: (i) Bueretten-Rechenweg oder (ii) Kurven-Deuteweg — dann loesen.选程序：先看信号词再选路。
 
 
-Weg A：Weg A (Bueretten-Rechenweg): Volumina quantitativ ablesen und Konzentrationen ausrechnen. Dieser Weg liefert c-Zahlen und ist protokollfest.
+Weg A (Bueretten-Rechenweg): Der Weg steht zur Wahl.
+- [Weg A] Wenn du Weg A waehlst, arbeitest du in Schritt 7 vor allem mit Volumina und Kurvenzahlen.
 
-Weg B：Weg B (Kurven-Deuteweg): Kurvenformen qualitativ lesen und Indikatoren begruenden. Dieser Weg waehlt richtig, rechnet aber nichts.
+Weg B (Kurven-Deuteweg): Der Weg steht zur Wahl.
+- [Weg B] Wenn du Weg B waehlst, arbeitest du in Schritt 7 vor allem mit Kurven- und Farbumschlagdeutung.
 
 
 AUFGABE A: Essigkonzentration aus Volumen exakt gesucht. Welcher Weg? 【选程序：先看信号词再选路】
@@ -104,9 +119,18 @@ AUFGABE A: Essigkonzentration aus Volumen exakt gesucht. Welcher Weg? 【选程�
 AUFGABE B: Welcher Indikator bei saurem Sprung? Welcher Weg? 【选程序：先看信号词再选路】
 
 
-HILFE：A nennt Volumen — Weg A mit Gleichung. B nennt Sprung — Weg B mit Bereich.
+HILFE: Pruefe dimensionsgeleitet, welcher Weg passt: Zahlen- und Signalwoerter sprechen fuer Weg A, Deutungs- und Bereichswoerter fuer Weg B. Ordne selbst zu; die Zuordnung wird nicht vorweggenommen.
 
 ANTWORT：中文：A走滴定管路列式算；B走曲线路由域套跳选。 / 德语：A folgt Weg A mit c-mal-V-Rechnung; B folgt Weg B mit Bereich-trifft-Sprung-Argument.
+
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg A oder Weg B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Ueberfuehrt aus VERGLEICH (Vorwahl-Fassung): Weg A (Bueretten-Rechenweg): Volumina quantitativ ablesen und Konzentrationen ausrechnen. Dieser Weg liefert c-Zahlen und ist protokollfest. // Weg B (Kurven-Deuteweg): Kurvenformen qualitativ lesen und Indikatoren begruenden. Dieser Weg waehlt richtig, rechnet aber nichts.
+- Ueberfuehrt aus Schritt-5-HILFE (Vorwahl-Fassung): HILFE：A nennt Volumen — Weg A mit Gleichung. B nennt Sprung — Weg B mit Bereich.
+- Mechanismus A: ANTWORT：中文：A走滴定管路列式算；B走曲线路由域套跳选。 / 德语：A folgt Weg A mit c-mal-V-Rechnung; B folgt Weg B mit Bereich-trifft-Sprung-Argument.
+- Ein-Satz-Kern: Buerette rechnen beweist, Kurven deuten warnen — die Klausur braucht beides.
+
+<!-- C1-Bestaetigung: Vorwahl neutral, Mechanismus in AUFLOESUNG. -->
 
 `Klausur-Satz: Buerette rechnen beweist, Kurven deuten warnen — die Klausur braucht beides.`
 
@@ -135,12 +159,25 @@ ANTWORT：中文：A走滴定管路列式算；B走曲线路由域套跳选。 /
 
 ROLLE：中文：你是食品实验室分析员。 / 德语：Du bist Analystin im Lebensmittellabor.
 SITUATION：食醋样品偏离：请写约150词分析报告，含滴定、计算与指示剂选择。 / 德语：Die Essigprobe weicht ab. Schreibe in ca. 150 Woertern ein Protokoll mit Titration, Rechnung und Indikatorwahl.
+AUFGABE: Begruende die Transferlage in ca. 150 Woertern mit Einordnung, Beleg und Schlussurteil. [AFB III]
 RUBRIC (30 XP)：Durchfuehrung (8 XP) | Rechnung (8 XP) | Indikatorwahl (8 XP) | Urteil (6 XP).
 ZEITREGEL: MAX 2 Minuten — 90秒滴至粉红读数，30秒写甲基橙选择句，然后交卷；Timer stellen.
 
 
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Kurven-Einordnung mit Beleg | 5 NP | Volumen-Beleg als Alternativweg
+Aequivalenz-Analyse mit Sprung | 5 NP | Umschlag-Beleg als Alternativweg
+Wahl-Urteil mit Schluss | 5 NP | Fehlerblick als Alternativweg
+Gesamt: 15 NP
+
 `Klausur-Satz: Achtung Falle: Umschlag ungleich Aequivalenz — nah genug zaehlt, gleich ist selten.`
 
+KERNSATZ (auswendig):
+- Kernsatz: `Der Aequivalenzpunkt markiert Stoffmengengleichheit, der Indikator macht den Umschlag sichtbar.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = Titration mit Buerette | Mechanismus = Aequivalenz aus c-mal-V | Urteil = Indikatorwahl als Urteil
+- Selbsttest: Der Aequivalenzpunkt markiert Stoffmengengleichheit, der Indikator macht den ___ sichtbar.
 ## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY核心总结：

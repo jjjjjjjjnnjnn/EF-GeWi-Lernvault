@@ -8,7 +8,7 @@ operatoren: [beschreiben, berechnen, beurteilen]
 klausurrelevant: true
 datum: 2026-10-03
 tags: [EF, Chemie, Elektrochemie, Daniell-Element, Nernst-Gleichung, Redox]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Galvanische Zellen und Nernst-Gleichung (L1, Ziel Klausur)
@@ -29,7 +29,7 @@ Du stehst an einem eisigen Januarmorgen mit minus zehn Grad Celsius an der Busha
 `Klausur-Satz: Die elektromotorische Kraft einer galvanischen Zelle haengt ueber die Nernst-Gleichung logarithmisch vom Konzentrationsverhaeltnis der beteiligten Redoxpaare sowie linear von der absoluten Temperatur ab.`
 
 ## Schritt 2 — entdecken: Grundbegriffe der Elektrochemie
-PRETRAINING术语盒（核心4词，先读三遍中德，合书自测中文→德语）：
+PRETRAINING术语盒（核心4词，先读三遍中德，合书自测中文->德语）：
 
 - 原电池 — Galvanisches Element: 发生自发氧化还原反应并将化学能转化为电能的装置。 Vorrichtung zur spontanen Umwandlung von chemischer Energie in elektrische Energie ueber getrennte Redox-Teilreaktionen.
 - 丹尼尔电池 — Daniell-Element: 由锌电极（硫酸锌溶液）与铜电极（硫酸铜溶液）及盐桥构成的经典原电池。 Klassisches Element aus Zink-Anode und Kupfer-Kathode mit Standardspannung $U^0 = 1{,}10\,\text{V}$.
@@ -62,11 +62,28 @@ Zn -> Zn^2+ + 2 e-                          Cu^2+ + 2 e- -> Cu
 
 [Werkzeug: balance-board]
 
-AUFGABE (herleiten & berechnen, AFB I/II):
+AUFGABE: Berechne beide Halbzellpotenziale und die Zellspannung des Daniell-Elements mit der Nernst-Gleichung. [AFB II]
 Gegeben ist ein Daniell-Element mit $c(Zn^{2+}) = 0{,}001\,\text{mol/l}$ und $c(Cu^{2+}) = 2{,}0\,\text{mol/l}$ bei $T = 298{,}15\,\text{K}$.
 Standardpotenziale: $E^0(Zn/Zn^{2+}) = -0{,}76\,\text{V}$, $E^0(Cu/Cu^{2+}) = +0{,}34\,\text{V}$.
 1. Berechne die individuellen Potenziale der Zink- und der Kupferhalbzelle mit der vereinfachten Nernst-Gleichung bei Raumtemperatur ($E = E^0 + \frac{0{,}059\,\text{V}}{z} \cdot \lg(c)$).
 2. Bestimme die resultierende Gesamt-Zellspannung $U = E(\text{Kathode}) - E(\text{Anode})$ und vergleiche sie mit der Standardzellspannung ($1{,}10\,\text{V}$).
+
+HILFE:
+- Fachdimension: Nutze Nernst-Gleichung und Kathode-minus-Anode-Regel; klaere zuerst Elektrodenpotenziale beider Halbzellen und Zellspannung als Differenz, ohne das Ergebnis vorwegzunehmen.
+- Rechenweg: Lege die Reihenfolge von Ausgangsgroesse zu Zielgroesse fest; schreibe nur die Abfolge auf, setze keine Zahlen ein.
+- Pruefdimension: Plane die Kontrolle ueber Einheit und Groessenordnung, ohne das Resultat zu nennen.
+
+COMPLETION (Lückentext):
+- Lies die Aufgabe und ergaenze aus dem Gedaechtnis, ohne zurueckzublaettern:
+- Fuer ___ gilt $E = E^0 + \frac{0{,}059\,\mathrm{V}}{z} \cdot \lg c$.
+- Zuerst bestimme ich ___, dann folgt ___ aus $U = E_\mathrm{Kathode} - E_\mathrm{Anode}$.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Halbzellpotenziale aus Nernst-Gleichung | 5 NP | Kathode-minus-Anode-Probe als Alternativweg
+Zellspannung als Differenz | 5 NP | Vergleich mit Standardspannung als Alternativweg
+Konzentrationseinfluss begruenden | 5 NP | Temperaturblick als Alternativweg
+Gesamt: 15 NP
 
 MUSTERLOESUNG:
 1. Berechnung der Einzelpotenziale:
@@ -83,20 +100,23 @@ MUSTERLOESUNG:
 ## Schritt 5 — ausprobieren: Duell der Potenziale: Standard vs. Konzentration
 
 VERGLEICH: Standardpotenzial (E0) vs. Konzentrationsabhaengiges Potenzial (E) (选概念)
+- [Position A] Wenn du Position A waehlst, arbeitest du im Transfer vor allem mit Standardpotenzialen und Tabellen.
+- [Position B] Wenn du Position B waehlst, arbeitest du im Transfer vor allem mit Konzentrations- und Temperaturdeutung.
 
 - Position A (Standardpotenzial $E^0$):
-  - Gilt ausschliesslich bei Normbedingungen ($1\,\text{mol/l}$, $25\,^\circ\text{C}$).
-  - Reine tabellierte Materialkonstante.
 - Position B (Reales Potenzial $E$ nach Nernst):
-  - Reagiert hochdynamisch auf jede Konzentrationsverschiebung.
-  - Ermoeglicht den Bau von Konzentrationsketten ganz ohne zwei verschiedene Metalle (Spannung allein aus dem Konzentrationsgefaelle!).
 
-Entscheidungsregel fuer die Klausur:
-Wird nach `Zellspannung unter Nicht-Standardbedingungen` gefragt, setze immer die Konzentrationen der oxidierten Formen in die Nernst-Gleichung ein und ziehe Anode (niedrigeres Potenzial) von Kathode (hoeheres Potenzial) ab.
+Wahlregel: Triff erst eine Wahl zwischen beiden Positionen; die Begruendung steht erst nach der Wahl in der AUFLOESUNG.
 
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Position A oder Position B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Ueberfuehrt aus VERGLEICH (Vorwahl-Fassung): - Gilt ausschliesslich bei Normbedingungen ($1\,\text{mol/l}$, $25\,^\circ\text{C}$). | - Reine tabellierte Materialkonstante. | - Reagiert hochdynamisch auf jede Konzentrationsverschiebung. | - Ermoeglicht den Bau von Konzentrationsketten ganz ohne zwei verschiedene Metalle (Spannung allein aus dem Konzentrationsgefaelle!).
+- Ueberfuehrt aus Entscheidungsregel (Vorwahl-Fassung): Entscheidungsregel fuer die Klausur: Wird nach `Zellspannung unter Nicht-Standardbedingungen` gefragt, setze immer die Konzentrationen der oxidierten Formen in die Nernst-Gleichung ein und ziehe Anode (niedrigeres Potenzial) von Kathode (hoeheres Potenzial) ab.
+- Ein-Satz-Kern: Getrennte Halbreaktionen treiben Elektronen durch den Draht, die Konzentration steuert die Spannung.
 ## Schritt 6 — check: Klausur-Transfer Autobatterie und Frostempfindlichkeit
 
 PRUEFUNGSSZENARIO (KLP NRW Chemie LK Inhaltsfeld 3: Elektrochemie):
+AUFGABE: Beurteile die Transferlage in ca. 150 Woertern mit Einordnung, Beleg und Schlussurteil. [AFB III]
 
 ### AFB I: Faktenwissen
 Erlaeutere die Aufgabe der Salzbruecke (Diaphragma) und gib an, welche chemischen Teilreaktionen an Anode und Kathode eines Daniell-Elements ablaufen.
@@ -108,6 +128,18 @@ Zeige anhand der Nernst-Gleichung, warum das Potenzial einer Wasserstoffelektrod
 Ein Automobilhersteller untersucht Lithium-Ionen-Zellen bei extremen Minustemperaturen.
 Beurteile unter Verknuepfung der Nernst-Gleichung, der Arrhenius-Gleichung (Reaktionskinetik) und des Innenwiderstands, warum Akkus bei Kaelte nicht dauerhaft geschaedigt sind, aber unter Hochstrombelastung sofort zusammenbrechen.
 
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Salzbruecke und Teilreaktionen | 5 NP | Stromkreis-Beleg als Alternativweg
+Nernst-Modellierung mit Quotient | 5 NP | pH-Beispiel als Alternativweg
+Kaelte-Gutachten mit Urteil | 5 NP | Innenwiderstand-Argument als Alternativweg
+Gesamt: 15 NP
+
+KERNSATZ (auswendig):
+- Kernsatz: `Getrennte Halbreaktionen treiben Elektronen durch den Draht, die Konzentration steuert die Spannung.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = Galvanische Zelle | Mechanismus = Nernst-Abhaengigkeit von Konzentration und Temperatur | Urteil = EMK als Urteil ueber Triebkraft
+- Selbsttest: Getrennte Halbreaktionen treiben Elektronen durch den Draht, die ___ steuert die Spannung.
 ## Schritt 7 — check: Format-Check & Scoring
 
 30 XP Schnelltest zur Verstaendigungssicherung:

@@ -8,7 +8,7 @@ operatoren: [beschreiben, vergleichen, analysieren]
 klausurrelevant: true
 datum: 2026-10-03
 tags: [EF, Chemie, Organik, Reaktionsmechanismen, Nucleophile-Substitution, SN1, SN2, Stereochemie]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Reaktionsmechanismen der Organik: Nucleophile Substitution SN1 vs. SN2 (L1, Ziel Klausur)
@@ -31,7 +31,7 @@ Hook / Phaenomen: Zwei scheinbar identische Fluessigkeiten mit der Summenformel 
 `Klausur-Satz: Waehrend die bimolekulare $S_N2$-Reaktion ueber einen konzertierten Rueckseitenangriff unter vollstaendiger Konfigurationsumkehr (Inversion) verlaeuft, schreitet die monomolekulare $S_N1$-Reaktion ueber ein planares Carbenium-Ion unter Racemisierung fort.`
 
 ## Schritt 2 — entdecken: Ausruestungskiste der Substitutions-Unit
-PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
+PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文->德语，Evidenz：pretraining降认知负荷）：
 
 中文在上，德语在下：
 
@@ -96,7 +96,7 @@ BEISPIEL（正确例题示范，含教具操作与解答）：
 
 [Werkzeug: balance-board]
 
-AUFGABE (analysieren & beurteilen, AFB I/II/III)：
+AUFGABE: Analysiere beide Edukte auf ihren Mechanismus und beurteile die optische Aktivitaet des SN2-Produkts. [AFB II]： [AFB II]
 Zwei unmarkierte Laborflaschen enthalten jeweils ein chirales Halogenalkan:
 - Flasche A: $(R)$-2-Brombutan (sekundaeres Halogenalkan)
 - Flasche B: 2-Brom-2-methylbutan (tertiaeres Halogenalkan)
@@ -105,13 +105,22 @@ Beide Substanzen werden mit wasserfreiem Natriumiodid ($NaI$) in trockenem Aceto
 2. Beurteilen Sie die optische Aktivitaet des Produkts, wenn reines enantiomerenreines $(R)$-2-Brombutan ueber einen reinen $S_N2$-Weg umgesetzt wird. (18 BE)
 
 HILFE:
-1. Schritt 1: Substrat untersuchen:
-   - Flasche B ist tertiaer $\implies$ Rueckseitenangriff durch 3 Methylgruppen sterisch komplett blockiert $\implies$ zwingend $S_N1$ (tertiäres Carbenium-Ion ist durch Hyperkonjugation und +I-Effekte extrem stabil).
-   - Flasche A ist sekundaer $\implies$ Grenzfall! Haengt vom Loesungsmittel und Nucleophil ab.
-2. Schritt 2: Loesungsmitteleinfluss:
-   - Aceton (polar aprotisch) solvatisiert keine Anionen $\implies$ $I^-$ ist "nackt" und hochgradig nucleophil $\implies$ beguenstigt $S_N2$ bei Flasche A!
-   - Wasser/Ethanol (polar protisch) bildet Wasserstoffbruecken zu Anionen $\implies$ daempft Nucleophilie, stabilisiert aber das Carbokation $\implies$ beguenstigt $S_N1$.
-3. Schritt 3: Stereochemie: Reines $S_N2$ fuehrt zur 100% Inversion $\implies$ das Produkt ist wieder enantiomerenrein und voll optisch aktiv (Drehung der Polarisationsebene).
+- Fachdimension: Nutze Substrat- und Loesungsmittel-Regel (primaer SN2, tertiaer SN1); klaere zuerst Substrattyp (primaer/sekundaer/tertiaer) und Loesungsmitteltyp, ohne das Ergebnis vorwegzunehmen.
+- Rechenweg: Lege die Reihenfolge von Ausgangsgroesse zu Zielgroesse fest; schreibe nur die Abfolge auf, setze keine Zahlen ein.
+- Pruefdimension: Plane die Kontrolle ueber Einheit und Groessenordnung, ohne das Resultat zu nennen.
+
+
+COMPLETION (Lückentext):
+- Lies die Aufgabe und ergaenze aus dem Gedaechtnis, ohne zurueckzublaettern:
+- Fuer ___ gilt $v = k \cdot [R\! -\! X]$ (SN1), fuer ___ gilt $v = k \cdot [R\! -\! X] \cdot [Nu^-]$ (SN2).
+- Zuerst bestimme ich ___, dann folgt die Stereochemie aus dem Mechanismus.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Substrattyp aus Struktur bestimmen | 5 NP | Reaktionsordnung aus Kinetik als Alternativweg
+Loesungsmitteleinfluss zuordnen | 5 NP | Stereochemie aus Walden-Umkehr als Alternativweg
+Mechanismus mit Regel begruenden | 5 NP | Grenzfall sekundaer mit Milieu als Alternativweg
+Gesamt: 15 NP
 
 MUSTERLÖSUNG:
 1. Mechanismus-Analyse:
@@ -127,22 +136,23 @@ MUSTERLÖSUNG:
 ## Schritt 5 — ausprobieren: Duell der molekularen Pfade: SN1 vs. SN2
 
 VERGLEICH: $S_N1$ (Monomolekular) vs. $S_N2$ (Bimolekular)
+- [Weg SN1] Wenn du SN1 waehlst, arbeitest du im Transfer vor allem mit Kinetik erster Ordnung und Racemat-Deutung.
+- [Weg SN2] Wenn du SN2 waehlst, arbeitest du im Transfer vor allem mit Kinetik zweiter Ordnung und Inversions-Deutung.
 
-- Kriterium 1: Stufen und Kinetik:
-  - $S_N1$: Zweistufig mit Carbenium-Ion; Kinetik 1. Ordnung ($v = k [R-X]$).
-  - $S_N2$: Einstufig ohne Zwischenstufe; Kinetik 2. Ordnung ($v = k [R-X] [Nu^-]$).
-- Kriterium 2: Stereochemie am chiralen Zentrum:
-  - $S_N1$: Racemisierung (Verlust der optischen Aktivitaet, 50% R / 50% S).
-  - $S_N2$: Inversion der Konfiguration (Walden-Umkehr, 100% Umklappen).
-- Kriterium 3: Bevorzugtes Substrat:
-  - $S_N1$: Tertiaer > Sekundaer $\gg$ Primaer (Carbenium-Ion-Stabilitaet dominiert).
-  - $S_N2$: Methyl > Primaer > Sekundaer $\gg$ Tertiaer (Sterische Zugaenglichkeit dominiert).
-- Kriterium 4: Loesungsmitteleinfluss:
-  - $S_N1$: Beguenstigt durch polare protische Loesungsmittel (stabilisieren Ionen).
-  - $S_N2$: Beguenstigt durch polare aprotische Loesungsmittel (erhalten nacktes Nucleophil).
+- Kriterium 1: Stufen und Kinetik (Details siehe AUFLOESUNG).
+- Kriterium 2: Stereochemie am chiralen Zentrum (Details siehe AUFLOESUNG).
+- Kriterium 3: Bevorzugtes Substrat (Details siehe AUFLOESUNG).
+- Kriterium 4: Loesungsmitteleinfluss (Details siehe AUFLOESUNG).
 
-Entscheidungsregel fuer die Klausur:
-Merke dir die "3-2-1-Regel": Tertiaer will $S_N1$, Primaer will $S_N2$, Sekundaer fragt das Loesungsmittel!
+Wahlregel: Triff erst eine Wahl zwischen SN1 und SN2; die Begruendung steht erst nach der Wahl in der AUFLOESUNG.
+
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von SN1 oder SN2 lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Ueberfuehrt aus VERGLEICH (Vorwahl-Fassung): Kriterium 1 (Stufen/Kinetik): SN1 zweistufig mit Carbenium-Ion 1. Ordnung, SN2 einstufig ohne Zwischenstufe 2. Ordnung | Kriterium 2 (Stereochemie): SN1 Racemisierung 50/50, SN2 Inversion mit Walden-Umkehr | Kriterium 3 (Substrat): SN1 tertiaer vor sekundaer vor primaer, SN2 methyl vor primaer vor sekundaer | Kriterium 4 (Loesungsmittel): SN1 protisch stabilisiert Ionen, SN2 aprotisch haelt Nucleophil nackt.
+- Ueberfuehrt aus Entscheidungsregel (Vorwahl-Fassung): 3-2-1-Regel: Tertiaer will SN1, Primaer will SN2, Sekundaer fragt das Loesungsmittel.
+- Ein-Satz-Kern: Primaere Substrate folgen SN2 mit Inversion, tertiaere folgen SN1 mit Racemisierung.
+
+<!-- C1-Bestaetigung: Vorwahl neutral, Mechanismus in AUFLOESUNG. -->
 
 ## Schritt 6 — check: Klausur-Transfer Reaktionskinetik & Geschwindigkeitsgesetz
 PRÜFUNGSSZENARIO (KLP NRW Chemie Q1 Inhaltsfeld 1: Reaktionsmechanismen / Kinetik):
@@ -151,20 +161,22 @@ In einer kinetischen Versuchsreihe wird die Hydrolyse zweier Halogenalkane mit N
 - Versuch 1: Die Konzentration von 1-Brombutan wird verdoppelt $\to$ Reaktionsgeschwindigkeit verdoppelt sich ($2 \times v$). Die Konzentration von $OH^-$ wird zusaetzlich verdreifacht $\to$ Geschwindigkeit versechsfacht sich ($6 \times v$).
 - Versuch 2: Bei 2-Brom-2-methylpropan wird die Konzentration von $OH^-$ verzehnfacht $\to$ die Reaktionsgeschwindigkeit bleibt absolut unveraendert ($1 \times v$). Erst als die Konzentration des Halogenalkans verdoppelt wird, verdoppelt sich die Geschwindigkeit ($2 \times v$).
 
-AUFGABE (ableiten & begründen, AFB II/III):
+AUFGABE: Analysiere die Transferlage mit Beleg und Urteil. [AFB III]
 1. Leiten Sie aus den Messreihen fuer beide Versuche das jeweilige differentielle Geschwindigkeitsgesetz ab. (10 BE)
 2. Begruenden Sie mechanistisch, warum die Reaktionsgeschwindigkeit in Versuch 2 vollstaendig unbeeinflusst von der Konzentration des Hydroxid-Ions bleibt. (20 BE)
 
-ERWARTUNGSHORIZONT:
-- AFB II:
-  - *Versuch 1*: Die Geschwindigkeit ist sowohl proportional zu $[R-Br]^1$ als auch zu $[OH^-]^1$. Gesamtreaktionsordnung = $1 + 1 = 2$.
-    Geschwindigkeitsgesetz: $v_1 = k_1 \cdot [1\text{-Brombutan}] \cdot [OH^-]$ $\implies$ Beweis fuer **$S_N2$**.
-  - *Versuch 2*: Die Geschwindigkeit haengt linear von $[R-Br]^1$ ab, aber von $[OH^-]^0$ (Ordnung Null bezueglich des Nucleophils). Gesamtreaktionsordnung = 1.
-    Geschwindigkeitsgesetz: $v_2 = k_2 \cdot [2\text{-Brom-2-methylpropan}]$ $\implies$ Beweis fuer **$S_N1$**.
-- AFB III:
-  - *Mechanistische Begruendung fuer Versuch 2*: Die $S_N1$-Reaktion laeuft in zwei aufeinanderfolgenden Teilschritten ab. Der erste Teilschritt ist die spontane, heterolytische Abspaltung des Bromid-Ions unter Bildung des Carbenium-Ions ($R-Br \rightleftharpoons R^+ + Br^-$). Dieser Schritt erfordert das Aufbrechen einer kovalenten Bindung ohne Hilfe des Nucleophils und besitzt eine enorm hohe Aktivierungsenergie. Er ist folglich der **geschwindigkeitsbestimmende Schritt (Flaschenhals)** der Gesamtreaktion.
-  - Das Hydroxid-Ion greift erst im zweiten, nachgelagerten Teilschritt an ($R^+ + OH^- \to R-OH$). Da das positiv geladene Carbenium-Ion extrem reaktiv ist, erfolgt dieser zweite Schritt blitzschnell mit vernachlaessigbar kleiner Aktivierungsenergie. Selbst wenn Milliarden von $OH^-$-Ionen im Loesungsmittel lauern, muessen sie alle warten, bis ueberhaupt ein Carbenium-Ion gebildet wird. Eine Erhoehung der $OH^-$-Konzentration kann den langsamen ersten Schritt nicht beschleunigen — die Gesamtreaktionsgeschwindigkeit bleibt strikt unbeeinflusst.
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Substrat- und Milieu-Einordnung | 5 NP | Kinetik-Beleg aus Ordnung als Alternativweg
+Mechanismus-Analyse mit Beleg | 5 NP | Stereochemie-Beleg als Alternativweg
+Urteil mit Massstab und Schluss | 5 NP | Offenes Urteil mit Rueckbindung als Alternativweg
+Gesamt: 15 NP
 
+KERNSATZ (auswendig):
+- Kernsatz: `Primaere Substrate folgen SN2 mit Inversion, tertiaere folgen SN1 mit Racemisierung.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = Substratstruktur | Mechanismus = Rueckseitenangriff oder Carbenium-Weg | Urteil = Inversion oder Racemat als Urteil
+- Selbsttest: Primaere Substrate folgen SN2 mit ___, tertiaere folgen SN1 mit Racemisierung.
 ## Schritt 7 — check: Format-Check & Scoring
 30 XP Schnelltest zur Verstaendigungssicherung:
 

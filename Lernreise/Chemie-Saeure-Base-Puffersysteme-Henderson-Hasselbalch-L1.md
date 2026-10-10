@@ -8,7 +8,7 @@ operatoren: [beschreiben, berechnen, beurteilen]
 klausurrelevant: true
 datum: 2026-10-03
 tags: [EF, Chemie, Saeure-Base, Puffer, Henderson-Hasselbalch, Blutpuffer, Dissoziation]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Saeure-Base-Gleichgewichte: Pufferloesungen und Henderson-Hasselbalch-Gleichung (L1, Ziel Klausur)
@@ -29,7 +29,7 @@ Stell dir vor, du trinkst an einem heissen Sommertag ein grosses Glas eiskalte C
 `Klausur-Satz: Eine Pufferloesung minimiert pH-Wertaenderungen bei Zugabe von Oxonium- oder Hydroxid-Ionen durch das Vorhandensein eines konjugierten Saeure-Base-Paares in annaehernd aequimolaren Konzentrationen.`
 
 ## Schritt 2 — entdecken: Das chemische Vokabular der Pufferchemie
-PRETRAINING术语盒（核心4词，先读三遍中德，合书自测中文→德语）：
+PRETRAINING术语盒（核心4词，先读三遍中德，合书自测中文->德语）：
 
 - 缓冲溶液 — Pufferloesung: 含有相当数量的弱酸及其共轭碱（或弱碱及其共轭酸）的水溶液，在加入少量强酸或强碱时能抵抗 pH 显著变化。 Ein Stoffgemisch aus einer schwachen Saeure und ihrer korrespondierenden Base, das den pH-Wert bei Saeure- oder Basezugabe weitgehend stabil haelt.
 - 亨德森-哈塞尔巴尔赫方程 — Henderson-Hasselbalch-Gleichung (Puffergleichung): 计算缓冲体系 pH 值的核心数学方程：$\text{pH} = \text{pK}_s + \lg\left(\frac{c(\text{Base})}{c(\text{Saeure})}\right)$。 Die logarithmische Beziehung zur direkten Berechnung des pH-Wertes eines Puffergemisches aus dem pKs-Wert und dem Konzentrationsverhaeltnis.
@@ -60,11 +60,28 @@ Puffergleichgewicht eines Essigsaeure/Acetat-Puffers (HA / A-):
 
 [Werkzeug: balance-board]
 
-AUFGABE (berechnen & erklaeren, AFB I/II):
+AUFGABE: Berechne den Puffer-Ausgangs-pH und den pH nach Saeurezugabe und erklaere die Pufferwirkung gegen Wasser. [AFB II]
 Ein Acetatpuffer wird hergestellt aus $c(\text{Essigsaeure}) = 0{,}20\,\text{mol/l}$ und $c(\text{Natriumacetat}) = 0{,}10\,\text{mol/l}$.
 Der $\text{pK}_s$-Wert von Essigsaeure betraegt $4{,}75$.
 1. Berechne den Ausgangs-pH-Wert des Puffers mit der Henderson-Hasselbalch-Gleichung.
 2. Zu einem Liter dieses Puffers werden nun $0{,}02\,\text{mol}$ feste Salzsaeure ($HCl$, stark dissoziierend) hinzugegeben (Volumenaenderung vernachlaessigbar). Berechne den neuen pH-Wert und zeige die Pufferwirkung im Vergleich zu ungepuffertem Wasser.
+
+HILFE:
+- Fachdimension: Nutze Henderson-Hasselbalch-Gleichung und Pufferbereichs-Regel; klaere zuerst Verhaeltnis Base zu Saeure und pKs-Lage vor der pH-Aussage, ohne das Ergebnis vorwegzunehmen.
+- Rechenweg: Lege die Reihenfolge von Ausgangsgroesse zu Zielgroesse fest; schreibe nur die Abfolge auf, setze keine Zahlen ein.
+- Pruefdimension: Plane die Kontrolle ueber Einheit und Groessenordnung, ohne das Resultat zu nennen.
+
+COMPLETION (Lückentext):
+- Lies die Aufgabe und ergaenze aus dem Gedaechtnis, ohne zurueckzublaettern:
+- Fuer ___ gilt $\mathrm{pH} = \mathrm{p}K_S + \lg\frac{[A^-]}{[HA]}$.
+- Zuerst bestimme ich ___, dann folgt ___ aus dem Bereich $\mathrm{p}K_S \pm 1$.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Ausgangs-pH aus Verhaeltnis | 5 NP | Halbaequivalenz-Probe als Alternativweg
+Stoffbilanz nach Zugabe | 5 NP | Wasser-Vergleich als Alternativweg
+Pufferwirkung begruenden | 5 NP | Kapazitaetsblick als Alternativweg
+Gesamt: 15 NP
 
 MUSTERLOESUNG:
 1. Ausgangs-pH:
@@ -83,20 +100,23 @@ MUSTERLOESUNG:
 ## Schritt 5 — ausprobieren: Duell der Systeme: Ungepuffert vs. Dynamisch Gepuffert
 
 VERGLEICH: Starke Saeure (Vollstaendige Dissoziation) vs. Schwache Saeure im Puffer (Dynamisches Abfedern) (选概念)
+- [Position A] Wenn du Position A waehlst, arbeitest du im Transfer vor allem mit Verhaeltnissen und pH-Zahlen.
+- [Position B] Wenn du Position B waehlst, arbeitest du im Transfer vor allem mit System- und Kompensationsdeutung.
 
 - Position A (Ungepufferte Loesung / Starke Einzelsaeure):
-  - Verhalten: Dissoziiert zu fast 100 % in Wasser ($HCl \to H_3O^+ + Cl^-$).
-  - Pufferwirkung: Null. Jeder Tropfen Base fuehrt am Aequivalenzpunkt zu einem senkrechten pH-Sprung ueber viele Zehnerpotenzen.
 - Position B (Pufferloesung / Dynamisches Fliessgleichgewicht):
-  - Verhalten: Besteht aus einem Saeurerepertoire (faengt Basen ab) und einem Basenrepertoire (faengt Saeuren ab).
-  - Pufferwirkung: Maximale Stabilitaet im Bereich $\text{pH} = \text{pK}_s \pm 1$.
 
-Entscheidungsregel fuer die Klausur:
-Wird nach der `Wahl des richtigen Puffers` fuer ein biologisches Experiment gefragt, waehle immer eine Saeure, deren $\text{pK}_s$-Wert moeglichst nah am gewuenschten Arbeits-pH-Wert liegt (z. B. Phosphatpuffer mit $\text{pK}_s = 7{,}2$ fuer zellulaere Zytoplasma-Simulationen)!
+Wahlregel: Triff erst eine Wahl zwischen beiden Positionen; die Begruendung steht erst nach der Wahl in der AUFLOESUNG.
 
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Position A oder Position B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Ueberfuehrt aus VERGLEICH (Vorwahl-Fassung): - Verhalten: Dissoziiert zu fast 100 % in Wasser ($HCl \to H_3O^+ + Cl^-$). | - Pufferwirkung: Null. Jeder Tropfen Base fuehrt am Aequivalenzpunkt zu einem senkrechten pH-Sprung ueber viele Zehnerpotenzen. | - Verhalten: Besteht aus einem Saeurerepertoire (faengt Basen ab) und einem Basenrepertoire (faengt Saeuren ab). | - Pufferwirkung: Maximale Stabilitaet im Bereich $\text{pH} = \text{pK}_s \pm 1$.
+- Ueberfuehrt aus Entscheidungsregel (Vorwahl-Fassung): Entscheidungsregel fuer die Klausur: Wird nach der `Wahl des richtigen Puffers` fuer ein biologisches Experiment gefragt, waehle immer eine Saeure, deren $\text{pK}_s$-Wert moeglichst nah am gewuenschten Arbeits-pH-Wert liegt (z. B. Phosphatpuffer mit $\text{pK}_s = 7{,}2$ fuer zellulaere Zytoplasma-Simulationen)!
+- Ein-Satz-Kern: Ein Puffer aus schwacher Saeure und Base faengt Saeure und Lauge ueber das Gleichgewicht ab.
 ## Schritt 6 — check: Klausur-Transfer Hyperventilation und Hoehenkrankheit
 
 PRUEFUNGSSZENARIO (KLP NRW Chemie LK Inhaltsfeld 2: Saeure-Base-Gleichgewichte):
+AUFGABE: Beurteile die Transferlage in ca. 150 Woertern mit Einordnung, Beleg und Schlussurteil. [AFB III]
 
 ### AFB I: Reaktionskette
 Formuliere die gekoppelte Gleichgewichtskette des Blutpuffers:
@@ -110,6 +130,18 @@ Leite anhand des Prinzips von Le Chatelier her, wie sich dies auf das Blutpuffer
 ### AFB III: Medizinisches Urteil
 Bewerte die klassische Erste-Hilfe-Massnahme, eine hyperventilierende Person in eine Papiertuete ein- und ausatmen zu lassen, hinsichtlich chemischer Rueckkopplung und therapeutischer Wirksamkeit.
 
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Puffer-Einordnung mit Beleg | 5 NP | Verhaeltnis-Beleg als Alternativweg
+pH-Analyse mit Gleichung | 5 NP | Atmungs-Beleg als Alternativweg
+Urteil mit Massstab und Schluss | 5 NP | Kompensationsblick als Alternativweg
+Gesamt: 15 NP
+
+KERNSATZ (auswendig):
+- Kernsatz: `Ein Puffer aus schwacher Saeure und Base faengt Saeure und Lauge ueber das Gleichgewicht ab.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = Pufferlösung | Mechanismus = Abfangen ueber konjugiertes Paar | Urteil = pH-Stabilitaet als Urteil
+- Selbsttest: Ein Puffer aus schwacher Saeure und Base faengt Saeure und Lauge ueber das ___ ab.
 ## Schritt 7 — check: Format-Check & Scoring
 
 30 XP Schnelltest zur Verstaendigungssicherung:

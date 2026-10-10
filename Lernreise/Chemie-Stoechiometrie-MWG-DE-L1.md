@@ -8,7 +8,7 @@ operatoren: [berechnen, ueberpruefen]
 klausurrelevant: true
 datum: 2026-09-26
 tags: [EF, Chemie, Stoechiometrie]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Stoechiometrie und Massenwirkungsgesetz — Episode C20: Airbag in 30 Millisekunden
@@ -77,12 +77,25 @@ Jede Stöchiometrie laeuft ueber Mol: Gramm sind nur die Verpackung.
 
 [Werkzeug: formula]
 
-AUFGABE (Target Challenge): Gegeben: 2 NaN3 -> 2 Na + 3 N2; Ziel 60 L N2 bei Normbedingungen. Berechne die Azidmasse, bestimme den Begrenzer bei 200 g Azid plus Zuenderueberschuss und gib die Ausbeute bei real 55 L an.
+AUFGABE: Berechne gegeben: 2 NaN3 -> 2 Na + 3 N2; Ziel 60 L N2 bei Normbedingungen. Berechne die Azidmasse, bestimme den Begrenzer bei 200 g Azid plus Zuenderueberschuss und gib die Ausbeute bei real 55 L an. [AFB II]
 
 HILFE:
-1. Ziel-Liter in Mol uebersetzen: durch 22,4.
-2. Ueber Koeffizienten zum Azid zurueckrechnen.
-3. Begrenzer per Quotient, Ausbeute per Division.
+- Fachdimension: Nutze Mol-Bruecke (n gleich m durch M) und Koeffizienten-Verhaeltnis; klaere zuerst Mol aus Masse und Koeffizientenweg vor der Zielgroesse, ohne das Ergebnis vorwegzunehmen.
+- Rechenweg: Lege die Reihenfolge von Ausgangsgroesse zu Zielgroesse fest; schreibe nur die Abfolge auf, setze keine Zahlen ein.
+- Pruefdimension: Plane die Kontrolle ueber Einheit und Groessenordnung, ohne das Resultat zu nennen.
+
+
+COMPLETION (Lückentext):
+- Lies die Aufgabe und ergaenze aus dem Gedaechtnis, ohne zurueckzublaettern:
+- Fuer ___ gilt $n = \frac{m}{M}$ mit $c = \frac{n}{V}$.
+- Zuerst bestimme ich ___, dann folgt ___ aus $V_m = 22{,}4\,\mathrm{L/mol}$.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Gleichung ausgleichen | 5 NP | Atomprobe als Alternativweg
+Mol-Kette mit Einheit | 5 NP | Liter-Probe als Alternativweg
+Zielgroesse rueckrechnen | 5 NP | Ueberschuss-Blick als Alternativweg
+Gesamt: 15 NP
 
 MUSTERLOESUNG: 60 L sind 2,68 mol N2 und brauchen 1,79 mol Azid, also 117 g; Begrenzer Azid; Ausbeute 55 durch 60 gleich 92 Prozent.
 
@@ -93,9 +106,11 @@ MUSTERLOESUNG: 60 L sind 2,68 mol N2 und brauchen 1,79 mol Azid, also 117 g; Beg
 VERGLEICH: Waehle erst den Mengen-Weg, dann loesen: (i) Mol-Rechenweg oder (ii) Koeffizienten-Blickweg — dann loesen.
 
 
-Weg A (Mol-Rechenweg): Mengen quantitativ durchrechnen bis Gramm und Liter. Dieser Weg liefert exakte Zahlen.
+Weg A (Mol-Rechenweg): Der Weg steht zur Wahl.
+- [Weg A] Wenn du Weg A waehlst, arbeitest du in Schritt 7 vor allem mit Mol-Ketten und Zahlen.
 
-Weg B (Koeffizienten-Blickweg): Verhaeltnisse qualitativ lesen und Begrenzer schnell erkennen. Dieser Weg ist schnell, bleibt aber grob.
+Weg B (Koeffizienten-Blickweg): Der Weg steht zur Wahl.
+- [Weg B] Wenn du Weg B waehlst, arbeitest du in Schritt 7 vor allem mit Begrenzungs- und Blickdeutung.
 
 
 AUFGABE A: Azidmasse aus Litern exakt gesucht. Welcher Weg?
@@ -103,9 +118,18 @@ AUFGABE A: Azidmasse aus Litern exakt gesucht. Welcher Weg?
 AUFGABE B: Welcher Stoff begrenzt bei Überschuss? Welcher Weg?
 
 
-HILFE: A nennt exakt — Weg A mit Kette. B nennt Begrenzer — Weg B mit Quotient.
+HILFE: Pruefe dimensionsgeleitet, welcher Weg passt: Zahlen- und Signalwoerter sprechen fuer Weg A, Deutungs- und Bereichswoerter fuer Weg B. Ordne selbst zu; die Zuordnung wird nicht vorweggenommen.
 
 ANTWORT: A folgt Weg A mit Liter-Mol-Gramm-Kette; B folgt Weg B mit min-Quotienten.
+
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg A oder Weg B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Ueberfuehrt aus VERGLEICH (Vorwahl-Fassung): Weg A (Mol-Rechenweg): Mengen quantitativ durchrechnen bis Gramm und Liter. Dieser Weg liefert exakte Zahlen. // Weg B (Koeffizienten-Blickweg): Verhaeltnisse qualitativ lesen und Begrenzer schnell erkennen. Dieser Weg ist schnell, bleibt aber grob.
+- Ueberfuehrt aus Schritt-5-HILFE (Vorwahl-Fassung): HILFE: A nennt exakt — Weg A mit Kette. B nennt Begrenzer — Weg B mit Quotient.
+- Mechanismus A: ANTWORT: A folgt Weg A mit Liter-Mol-Gramm-Kette; B folgt Weg B mit min-Quotienten.
+- Ein-Satz-Kern: Mol rechnen beweist, Koeffizienten lesen lenkt — die Klausur braucht beides.
+
+<!-- C1-Bestaetigung: Vorwahl neutral, Mechanismus in AUFLOESUNG. -->
 
 `Klausur-Satz: Mol rechnen beweist, Koeffizienten lesen lenkt — die Klausur braucht beides.`
 
@@ -132,12 +156,25 @@ ANTWORT: A folgt Weg A mit Liter-Mol-Gramm-Kette; B folgt Weg B mit min-Quotient
 
 ROLLE: Du bist Sprengmeisterin im Crash-Labor.
 SITUATION: Der Generator liefert 55 statt 60 L. Erklaere in ca. 150 Woertern mit Mol, Begrenzer und Ausbeute die Luecke und gib die Charge frei oder nicht.
+AUFGABE: Ueberpruefe die Transferlage in ca. 150 Woertern mit Einordnung, Beleg und Schlussurteil. [AFB III]
 RUBRIC (30 XP): Mol-Kette (8 XP) | Begrenzer (8 XP) | Ausbeute (8 XP) | Urteil (6 XP).
 ZEITREGEL: MAX 2 Minuten — 90 Sekunden Mol-Kette plus Begrenzer-Quotient, 30 Sekunden Ausbeute-Urteil, dann abgeben; Timer stellen.
 
 
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Ansatz-Einordnung mit Beleg | 5 NP | Koeffizienten-Beleg als Alternativweg
+Mengen-Analyse mit Bruecke | 5 NP | Einheitenbeleg als Alternativweg
+Urteil mit Massstab und Schluss | 5 NP | Offenes Urteil mit Rueckbindung als Alternativweg
+Gesamt: 15 NP
+
 `Klausur-Satz: Achtung Falle: Ueberschuss reagiert nie vollstaendig — nur der Begrenzer zaehlt.`
 
+KERNSATZ (auswendig):
+- Kernsatz: `Erst die Gleichung ausgleichen, dann ueber die Mol-Bruecke in Gramm und Liter umrechnen.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = Reaktionsansatz | Mechanismus = Mol-Brücke mit Koeffizienten | Urteil = Mengenaussage als Urteil
+- Selbsttest: Erst die Gleichung ausgleichen, dann ueber die Mol-Bruecke in Gramm und ___ umrechnen.
 ## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY:

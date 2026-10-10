@@ -8,7 +8,7 @@ operatoren: [nennen, zuordnen, begruenden, berechnen]
 klausurrelevant: true
 datum: 2026-09-25
 tags: [EF, Chemie, CN]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: CN-Tricks: sechs Loesungsverfahren — Episode C6: Trickkiste von Katalysator-Karl
@@ -78,12 +78,25 @@ $$n = \frac{m}{M} \quad ; \quad c = \frac{n}{V}$$
 
 [Werkzeug: formula]
 
-AUFGABE目标挑战：六案待配卡：配齐并规范算出摩尔案与Q案。 德语原题：Sechs Faelle: Gramm aus Gleichung, Q-Richtung nach Druckstoss, pH aus 0,01 mol/L, Aequivalenz aus Buerette, Redox-Bilanz, Siede-Erklärung. Ordne alle sechs Karten zu und rechne Mol-Fall und Q-Fall mit Einheit durch.
+AUFGABE: Berechne 六案待配卡：配齐并规范算出摩尔案与Q案。 德语原题：Sechs Faelle: Gramm aus Gleichung, Q-Richtung nach Druckstoss, pH aus 0,01 mol/L, Aequivalenz aus Buerette, Redox-Bilanz, Siede-Erklärung. Ordne alle sechs Karten zu und rechne Mol-Fall und Q-Fall mit Einheit durch. [AFB II]
 
 HILFE:
-1. Frageart bestimmen: Wieviel, Wohin, Warum.
-2. Karte ziehen und Verfahren nennen.
-3. Zwei Faelle mit Formel und Einheit durchrechnen.
+- Fachdimension: Nutze Kartenwahl nach Signalwort (Wieviel, Wohin, Strom, Sieden); klaere zuerst Signalwort und Stapel (Mengen/Lage) vor der Kartenzuordnung, ohne das Ergebnis vorwegzunehmen.
+- Rechenweg: Lege die Reihenfolge von Ausgangsgroesse zu Zielgroesse fest; schreibe nur die Abfolge auf, setze keine Zahlen ein.
+- Pruefdimension: Plane die Kontrolle ueber Einheit und Groessenordnung, ohne das Resultat zu nennen.
+
+
+COMPLETION (Lückentext):
+- Lies die Aufgabe und ergaenze aus dem Gedaechtnis, ohne zurueckzublaettern:
+- Fuer ___ gilt $n = \frac{m}{M}$ aus dem Mengen-Stapel.
+- Zuerst bestimme ich ___, dann folgt ___ aus $Q$ gegen $K$.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Stapel aus Signalwort | 5 NP | Mengen-Probe als Alternativweg
+Karte zuordnen | 5 NP | Lage-Probe als Alternativweg
+Zwei Faelle mit Einheit | 5 NP | Pfeil-Beleg als Alternativweg
+Gesamt: 15 NP
 
 MUSTERLOESUNG：中文：克数配摩尔卡，压力扰动配Q卡判右行，双算带单位。 / 德语：Gramm zieht Mol-Karte mit n gleich m durch M; Druckstoss zieht Q-Karte mit rechts; alle Zuordnungen sitzen, beide Rechnungen tragen Einheiten.
 
@@ -94,9 +107,11 @@ MUSTERLOESUNG：中文：克数配摩尔卡，压力扰动配Q卡判右行，双
 VERGLEICH: Waehle erst den Stapel, dann loesen: (i) Mengen-Stapel oder (ii) Lage-Stapel — dann loesen.选程序：先看信号词再选路。
 
 
-Weg A：Weg A (Mengen-Stapel): Mol, MWG und pH quantitativ direkt berechnen. Dieser Weg liefert harte Zahlen und ist pruefungssicher.
+Weg A (Mengen-Stapel): Der Weg steht zur Wahl.
+- [Weg A] Wenn du Weg A waehlst, arbeitest du in Schritt 7 vor allem mit Mengen mit Zahlen.
 
-Weg B：Weg B (Lage-Stapel): Q, Le Chatelier, Haft und Redox qualitativ deuten und zuordnen. Dieser Weg liefert Verstaendnis, bleibt aber ohne Zahl duenn.
+Weg B (Lage-Stapel): Der Weg steht zur Wahl.
+- [Weg B] Wenn du Weg B waehlst, arbeitest du in Schritt 7 vor allem mit Lagen mit Deutung.
 
 
 AUFGABE A: Gramm aus Gleichung gesucht. Welcher Stapel? 【选程序：先看信号词再选路】
@@ -104,9 +119,18 @@ AUFGABE A: Gramm aus Gleichung gesucht. Welcher Stapel? 【选程序：先看信
 AUFGABE B: Richtung nach Druckstoss gesucht. Welcher Stapel? 【选程序：先看信号词再选路】
 
 
-HILFE：A fragt Gramm — Weg A mit Mol. B fragt Richtung — Weg B mit Q.
+HILFE: Pruefe dimensionsgeleitet, welcher Weg passt: Zahlen- und Signalwoerter sprechen fuer Weg A, Deutungs- und Bereichswoerter fuer Weg B. Ordne selbst zu; die Zuordnung wird nicht vorweggenommen.
 
 ANTWORT：中文：A走数量堆用摩尔桥；B走方向堆用Q比K。 / 德语：A folgt Weg A mit Mol-Bruecke und Gramm-Einheit; B folgt Weg B mit Q-gegen-K-Pfeil.
+
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg A oder Weg B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Ueberfuehrt aus VERGLEICH (Vorwahl-Fassung): Weg A (Mengen-Stapel): Mol, MWG und pH quantitativ direkt berechnen. Dieser Weg liefert harte Zahlen und ist pruefungssicher. // Weg B (Lage-Stapel): Q, Le Chatelier, Haft und Redox qualitativ deuten und zuordnen. Dieser Weg liefert Verstaendnis, bleibt aber ohne Zahl duenn.
+- Ueberfuehrt aus Schritt-5-HILFE (Vorwahl-Fassung): HILFE：A fragt Gramm — Weg A mit Mol. B fragt Richtung — Weg B mit Q.
+- Mechanismus A: ANTWORT：中文：A走数量堆用摩尔桥；B走方向堆用Q比K。 / 德语：A folgt Weg A mit Mol-Bruecke und Gramm-Einheit; B folgt Weg B mit Q-gegen-K-Pfeil.
+- Ein-Satz-Kern: Mengen stapeln wiegen, Lage stapeln deuten — jede Frage zieht genau eine Karte.
+
+<!-- C1-Bestaetigung: Vorwahl neutral, Mechanismus in AUFLOESUNG. -->
 
 `Klausur-Satz: Mengen stapeln wiegen, Lage stapeln deuten — jede Frage zieht genau eine Karte.`
 
@@ -135,12 +159,25 @@ ANTWORT：中文：A走数量堆用摩尔桥；B走方向堆用Q比K。 / 德语
 
 ROLLE：中文：你是手册审查员。 / 德语：Du bist Handbuch-Prueferin.
 SITUATION：六问待配卡：请配对并规范算出两例（约120词）。 / 德语：Sechs Fragen liegen bereit. Ordne in ca. 120 Woertern jede Frage einer Karte zu und rechne zwei Beispiele mit Einheit.
+AUFGABE: Begruende die Transferlage in ca. 150 Woertern mit Einordnung, Beleg und Schlussurteil. [AFB III]
 RUBRIC (30 XP)：Zuordnung (12 XP) | Rechnungen (12 XP) | Sprache (6 XP).
 ZEITREGEL: MAX 2 Minuten — 90秒读题抽卡，30秒写证据句，然后交卷；Timer stellen.
 
 
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Zuordnungs-Einordnung | 5 NP | Signal-Beleg als Alternativweg
+Rechnungs-Analyse mit Einheit | 5 NP | Stapelbeleg als Alternativweg
+Urteil mit Massstab und Schluss | 5 NP | Sprachbeleg als Alternativweg
+Gesamt: 15 NP
+
 `Klausur-Satz: Achtung Falle: Titrations-Karte braucht den Umschlagpunkt, nicht irgendeinen Farbumschlag.`
 
+KERNSATZ (auswendig):
+- Kernsatz: `Jede Frage zieht genau eine Karte, jede Karte endet mit Zahl oder Richtung als Beleg.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = Sechs Faelle | Mechanismus = Stapelwahl nach Signal | Urteil = Zuordnung mit Beleg
+- Selbsttest: Jede Frage zieht genau eine Karte, jede Karte endet mit Zahl oder ___ als Beleg.
 ## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY核心总结：

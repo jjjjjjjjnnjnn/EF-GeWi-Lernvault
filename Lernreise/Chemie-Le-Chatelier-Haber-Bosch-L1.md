@@ -8,7 +8,7 @@ operatoren: [beschreiben, erklaeren, beurteilen]
 klausurrelevant: true
 datum: 2026-10-03
 tags: [EF, Chemie, Chemisches-Gleichgewicht, Le-Chatelier, Haber-Bosch, Thermodynamik]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Das Prinzip von Le Chatelier am Haber-Bosch-Verfahren (L1, Ziel Klausur)
@@ -31,7 +31,7 @@ Hook / Phaenomen: Zu Beginn des 20. Jahrhunderts drohte der Menschheit die groes
 `Klausur-Satz: Das Haber-Bosch-Verfahren repraesentiert die meisterhafte technische Anwendung des Prinzips von Le Chatelier auf eine exotherme Gleichgewichtsreaktion unter Volumenabnahme.`
 
 ## Schritt 2 — entdecken: Ausruestungskiste der Gleichgewichts-Unit
-PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
+PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文->德语，Evidenz：pretraining降认知负荷）：
 
 中文在上，德语在下：
 
@@ -98,17 +98,29 @@ BEISPIEL（正确例题示范，含教具操作与解答）：
 
 [Werkzeug: balance-board]
 
-AUFGABE (erklaeren & berechnen, AFB I/II)：
+AUFGABE: Erklaere das Haber-Bosch-Gleichgewicht und berechne Kc aus den gegebenen c_eq-Werten. [AFB II]： [AFB II]
 In einem geschlossenen Labor-Reaktionsgefaess ($V = 10\text{ Liter}$) stellt sich bei einer Temperatur von $T_1 = 400\text{ ^\circ C}$ das Gleichgewicht der Ammoniaksynthese ein. Die Analyse ergibt folgende Gleichgewichtskonzentrationen:
 $[N_2] = 0,20\text{ mol/l}$, $[H_2] = 0,60\text{ mol/l}$, $[NH_3] = 0,18\text{ mol/l}$.
 1. Formulieren Sie das Massenwirkungsgesetz und berechnen Sie den Zahlenwert der Gleichgewichtskonstante $K_c$ bei $400\text{ ^\circ C}$ inklusive Einheit. (10 BE)
 2. Erklaeren Sie unter Anwendung des Prinzips von Le Chatelier, wie sich der Wert von $K_c$ und die Ammoniakausbeute veraendern, wenn man die Temperatur auf $500\text{ ^\circ C}$ erhoeht. (20 BE)
 
 HILFE:
-1. Schritt 1: MWG aufstellen: $K_c = \frac{[NH_3]^2}{[N_2] \cdot [H_2]^3}$.
-2. Schritt 2: Werte einsetzen: Zaehler = $(0,18)^2$, Nenner = $0,20 \cdot (0,60)^3$.
-3. Schritt 3: Einheit beachten: $\frac{(\text{mol/l})^2}{\text{mol/l} \cdot (\text{mol/l})^3} = \frac{1}{(\text{mol/l})^2} = \text{l}^2/\text{mol}^2$.
-4. Schritt 4: Temperaturerhoehung: Da $\Delta H < 0$ (exotherm), fuehrt Temperaturzufuhr gemaess Le Chatelier zur Beguenstigung der endothermen Rueckreaktion $\implies K_c$ sinkt!
+- Fachdimension: Nutze Prinzip von Le Chatelier (kleinster Zwang) und MWG-Temperaturregel; klaere zuerst Zwangsgroesse (T, p, c) und Enthalpievorzeichen vor der Richtungsaussage, ohne das Ergebnis vorwegzunehmen.
+- Rechenweg: Lege die Reihenfolge von Ausgangsgroesse zu Zielgroesse fest; schreibe nur die Abfolge auf, setze keine Zahlen ein.
+- Pruefdimension: Plane die Kontrolle ueber Einheit und Groessenordnung, ohne das Resultat zu nennen.
+
+
+COMPLETION (Lückentext):
+- Lies die Aufgabe und ergaenze aus dem Gedaechtnis, ohne zurueckzublaettern:
+- Fuer ___ gilt $K_c = \frac{[NH_3]^2}{[N_2]\,[H_2]^3}$.
+- Zuerst bestimme ich ___, dann folgt ___ aus $Q$ gegen $K_c$.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+MWG-Ansatz aufstellen | 5 NP | Einheitenprobe als Alternativweg
+Kc aus c_eq berechnen | 5 NP | Q-Gegenprobe als Alternativweg
+Temperaturfolge begruenden | 5 NP | Druckblick als Alternativweg
+Gesamt: 15 NP
 
 MUSTERLÖSUNG:
 1. Berechnung der Gleichgewichtskonstante $K_c$:
@@ -128,34 +140,40 @@ MUSTERLÖSUNG:
 ## Schritt 5 — ausprobieren: Duell der Perspektiven: Thermodynamik vs. Kinetik
 
 VERGLEICH: Thermodynamisches Gleichgewicht vs. Reaktionskinetik
+- [Position A] Wenn du Position A waehlst, arbeitest du im Transfer vor allem mit Zahlen aus MWG und Tabellen.
+- [Position B] Wenn du Position B waehlst, arbeitest du im Transfer vor allem mit Stoerungs- und Kompromissdeutung.
 
 - Position A (Thermodynamik / Das "Ob"):
-  - Fokus: Energetische Stabilitaet, Enthalpie, Entropie, Lage des Gleichgewichts ($K_c$).
-  - Forderung fuer Haber-Bosch: Moeglichst niedrige Temperatur (z.B. 25 °C), um das exotherme Gleichgewicht maximal auf die Ammoniakseite zu verschieben.
-  - Problem: Ignoriert die Zeit voellig — sagt nur, was im unendlichen Gleichgewicht passiert.
 - Position B (Reaktionskinetik / Das "Wie schnell"):
-  - Fokus: Reaktionsgeschwindigkeit ($v$), Stosstheorie, Ueberwindung der Aktivierungsenergie ($E_A$).
-  - Forderung fuer Haber-Bosch: Moeglichst hohe Temperatur (z.B. 1000 °C), damit genuegend Teilchen die gewaltige Aktivierungsenergie fuer die Dreifachbindungsspaltung aufbringen.
-  - Problem: Zerstoert bei hohen Temperaturen das Produkt thermodynamisch vollstaendig.
 
-Entscheidungsregel fuer die Klausur:
-In industriellen Bewertungsaufgaben (AFB III) den Begriff der **Kompromisstemperatur** als Synthese aus Kinetik (Reaktionsgeschwindigkeit) und Thermodynamik (Gleichgewichtslage) definieren!
+Wahlregel: Triff erst eine Wahl zwischen beiden Positionen; die Begruendung steht erst nach der Wahl in der AUFLOESUNG.
 
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Position A oder Position B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Ueberfuehrt aus VERGLEICH (Vorwahl-Fassung): - Fokus: Energetische Stabilitaet, Enthalpie, Entropie, Lage des Gleichgewichts ($K_c$). | - Forderung fuer Haber-Bosch: Moeglichst niedrige Temperatur (z.B. 25 °C), um das exotherme Gleichgewicht maximal auf die Ammoniakseite zu verschieben. | - Problem: Ignoriert die Zeit voellig — sagt nur, was im unendlichen Gleichgewicht passiert. | - Fokus: Reaktionsgeschwindigkeit ($v$), Stosstheorie, Ueberwindung der Aktivierungsenergie ($E_A$). | - Forderung fuer Haber-Bosch: Moeglichst hohe Temperatur (z.B. 1000 °C), damit genuegend Teilchen die gewaltige Aktivierungsenergie fuer die Dreifachbindungsspaltung aufbringen. | - Problem: Zerstoert bei hohen Temperaturen das Produkt thermodynamisch volls
+- Ueberfuehrt aus Entscheidungsregel (Vorwahl-Fassung): Entscheidungsregel fuer die Klausur: In industriellen Bewertungsaufgaben (AFB III) den Begriff der **Kompromisstemperatur** als Synthese aus Kinetik (Reaktionsgeschwindigkeit) und Thermodynamik (Gleichgewichtslage) definieren!
+- Ein-Satz-Kern: Im Gleichgewicht laufen Hin- und Rueckreaktion gleich schnell, die Lage folgt Q gegen K.
 ## Schritt 6 — check: Klausur-Transfer Katalysator & Druck-Optimierung
 PRÜFUNGSSZENARIO (KLP NRW Chemie EF/Q1 Inhaltsfeld 2: Chemisches Gleichgewicht):
 
 Ein Chemie-Ingenieur schlaegt vor, die Kosten fuer die teuren Hochdruckreaktoren (200 bar) einzusparen: "Wir koennen die Synthese doch einfach bei normalem Umgebungsdruck (1 bar) durchfuehren. Den Ausbeuteverlust gleichen wir aus, indem wir einfach die fuenffache Menge des Eisenkatalysators in den Reaktor fuellen!"
 
-AUFGABE (beurteilen & begruenden, AFB II/III):
+AUFGABE: Beurteile die Transferlage mit Beleg und Urteil. [AFB III]
 1. Beurteilen Sie den Vorschlag des Ingenieurs auf wissenschaftlicher Grundlage. (12 BE)
 2. Begruenden Sie aus Sicht der Reaktionskinetik und der chemischen Thermodynamik, warum dieser Plan zum Scheitern verurteilt ist. (18 BE)
 
-ERWARTUNGSHORIZONT:
-- AFB II: Der Vorschlag des Ingenieurs zeugt von einem fundamentalen Fehlverstaendnis der Funktion eines Katalysators. Der Plan ist voellig unbrauchbar und physikochemisch zum Scheitern verurteilt.
-- AFB III:
-  - *Thermodynamische Begruendung*: Gemaess Le Chatelier sinkt bei einer Drucksenkung von 200 bar auf 1 bar die Ausbeute an Ammoniak drastisch gegen Null (bei 1 bar liegt der Gleichgewichtsanteil von $NH_3$ bei 450 °C bei unter 0,1%), da das System dem Druckabfall durch Verschiebung zur Seite mit groesserer Gasstoffmenge (4 Mol Edukte vs. 2 Mol Produkte) ausweicht.
-  - *Katalysator-Fehlschluss*: Ein Katalysator senkt ausschliesslich die Aktivierungsenergie und beschleunigt die Gleichgewichtseinstellung, er kann jedoch die thermodynamische Gleichgewichtslage ($K_c$) zu keinem Zeitpunkt verschieben! Selbst mit einer unendlichen Menge Katalysator kann man bei 1 bar und 450 °C niemals mehr als die thermodynamisch vorgegebenen 0,1% Ammoniak gewinnen. Um nennenswerte Mengen zu produzieren, ist der hohe Druck von ca. 200 bar zwingend physikalisch unersetzlich.
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Zwang-Einordnung mit Beleg | 5 NP | MWG-Beleg als Alternativweg
+Richtungs-Analyse mit Q | 5 NP | Katalysator-Abgrenzung als Alternativweg
+Kompromiss-Urteil mit Schluss | 5 NP | Kreislauffuehrung als Alternativweg
+Gesamt: 15 NP
 
+KERNSATZ (auswendig):
+- Kernsatz: `Im Gleichgewicht laufen Hin- und Rueckreaktion gleich schnell, die Lage folgt Q gegen K.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = Haber-Gleichgewicht | Mechanismus = Zwangsausweichen nach Le Chatelier | Urteil = Ausbeute-Urteil mit Kompromiss
+- Selbsttest: Im Gleichgewicht laufen Hin- und Rueckreaktion gleich schnell, die Lage folgt ___ gegen K.
 ## Schritt 7 — check: Format-Check & Scoring
 30 XP Schnelltest zur Verstaendigungssicherung:
 

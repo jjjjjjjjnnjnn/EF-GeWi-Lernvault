@@ -8,7 +8,7 @@ operatoren: [beschreiben, vergleichen, erklaeren]
 klausurrelevant: true
 datum: 2026-09-25
 tags: [EF, Chemie, Bindungslehre]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Zwischenmolekulare Kraefte und Stoffeigenschaften — Episode C26: Haftleiter zum Siedepunkt
@@ -82,12 +82,25 @@ $$\Delta T = 78 - (-89) = 167\,\text{K} \quad \text{(Ethanol gegen Ethan)}$$
 
 [Werkzeug: formula]
 
-AUFGABE目标挑战：已知三沸点与油水混合：配力、解释跳变并预测丁醇溶解性。 德语原题：Gegeben: Ethan minus 89, Ethanol 78, Wasser 100 Grad; dazu Mischproben mit Oel. Ordne Kraefte zu, erklaere die Spruenge und sage Loeslichkeit von Butanol in Wasser voraus.
+AUFGABE: Vergleiche 已知三沸点与油水混合：配力、解释跳变并预测丁醇溶解性。 德语原题：Gegeben: Ethan minus 89, Ethanol 78, Wasser 100 Grad; dazu Mischproben mit Oel. Ordne Kraefte zu, erklaere die Spruenge und sage Loeslichkeit von Butanol in Wasser voraus. [AFB II]
 
 HILFE:
-1. Kraefte nach Struktur zuordnen.
-2. Siedespruenge mit Kraftdifferenz erklaeren.
-3. Loeslichkeit mit Brückenargument vorhersagen.
+- Fachdimension: Nutze Haftungsleiter (H-Brücken vor Dipol vor Dispersion); klaere zuerst Bindungstyp und Molekülpolaritaet vor der Siededeuutung, ohne das Ergebnis vorwegzunehmen.
+- Rechenweg: Lege die Reihenfolge von Ausgangsgroesse zu Zielgroesse fest; schreibe nur die Abfolge auf, setze keine Zahlen ein.
+- Pruefdimension: Plane die Kontrolle ueber Einheit und Groessenordnung, ohne das Resultat zu nennen.
+
+
+COMPLETION (Lückentext):
+- Lies die Aufgabe und ergaenze aus dem Gedaechtnis, ohne zurueckzublaettern:
+- Fuer ___ gilt $\delta^+ \cdots \delta^-$ als Dipolzeichen.
+- Zuerst bestimme ich ___, dann folgt ___ aus $\Delta T_\mathrm{Siede}$ als Folge.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Krafttyp zuordnen | 5 NP | Strukturformel-Probe als Alternativweg
+Siedestaffel deuten | 5 NP | Differenz-Beleg als Alternativweg
+Loeseverhalten begruenden | 5 NP | Polaritaetsblick als Alternativweg
+Gesamt: 15 NP
 
 MUSTERLOESUNG：中文：乙烷仅色散、乙醇加氢键故高167度，丁醇半溶因链与羟基拔河。 / 德语：Ethan nur London, Ethanol plus Brücke: plus 167 Grad; Wasser maximal vernetzt; Butanol halb loeslich, weil Kette gegen OH kaempft.
 
@@ -98,9 +111,11 @@ MUSTERLOESUNG：中文：乙烷仅色散、乙醇加氢键故高167度，丁醇�
 VERGLEICH: Waehle erst den Haft-Weg, dann loesen: (i) Siededaten-Rechenweg oder (ii) Struktur-Deuteweg — dann loesen.选程序：先看信号词再选路。
 
 
-Weg A：Weg A (Siededaten-Rechenweg): Siededifferenzen quantitativ vergleichen und Kraefte zuordnen. Dieser Weg liefert Grad-Zahlen und ist beweisfest.
+Weg A (Siededaten-Rechenweg): Der Weg steht zur Wahl.
+- [Weg A] Wenn du Weg A waehlst, arbeitest du in Schritt 7 vor allem mit Siededaten und Differenzen.
 
-Weg B：Weg B (Struktur-Deuteweg): Strukturen qualitativ lesen und Loeslichkeit vorhersagen. Dieser Weg ist anschaulich, bleibt aber ohne Zahl weich.
+Weg B (Struktur-Deuteweg): Der Weg steht zur Wahl.
+- [Weg B] Wenn du Weg B waehlst, arbeitest du in Schritt 7 vor allem mit Struktur- und Loesedeuutung.
 
 
 AUFGABE A: Kraft aus Siedesprung exakt gesucht. Welcher Weg? 【选程序：先看信号词再选路】
@@ -108,9 +123,18 @@ AUFGABE A: Kraft aus Siedesprung exakt gesucht. Welcher Weg? 【选程序：先�
 AUFGABE B: Loest sich Butanol in Wasser? Welcher Weg? 【选程序：先看信号词再选路】
 
 
-HILFE：A nennt Sprung — Weg A mit Differenz. B nennt Loeslichkeit — Weg B mit Brücke.
+HILFE: Pruefe dimensionsgeleitet, welcher Weg passt: Zahlen- und Signalwoerter sprechen fuer Weg A, Deutungs- und Bereichswoerter fuer Weg B. Ordne selbst zu; die Zuordnung wird nicht vorweggenommen.
 
 ANTWORT：中文：A走数据路算167度差；B走结构路以链羟拔河作答。 / 德语：A folgt Weg A mit 167-Grad-Differenz; B folgt Weg B mit Kette-gegen-OH-Argument.
+
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg A oder Weg B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Ueberfuehrt aus VERGLEICH (Vorwahl-Fassung): Weg A (Siededaten-Rechenweg): Siededifferenzen quantitativ vergleichen und Kraefte zuordnen. Dieser Weg liefert Grad-Zahlen und ist beweisfest. // Weg B (Struktur-Deuteweg): Strukturen qualitativ lesen und Loeslichkeit vorhersagen. Dieser Weg ist anschaulich, bleibt aber ohne Zahl weich.
+- Ueberfuehrt aus Schritt-5-HILFE (Vorwahl-Fassung): HILFE：A nennt Sprung — Weg A mit Differenz. B nennt Loeslichkeit — Weg B mit Brücke.
+- Mechanismus A: ANTWORT：中文：A走数据路算167度差；B走结构路以链羟拔河作答。 / 德语：A folgt Weg A mit 167-Grad-Differenz; B folgt Weg B mit Kette-gegen-OH-Argument.
+- Ein-Satz-Kern: Siededaten rechnen belegt, Strukturen deuten erklaert — die Klausur braucht beides.
+
+<!-- C1-Bestaetigung: Vorwahl neutral, Mechanismus in AUFLOESUNG. -->
 
 `Klausur-Satz: Siededaten rechnen belegt, Strukturen deuten erklaert — die Klausur braucht beides.`
 
@@ -139,12 +163,25 @@ ANTWORT：中文：A走数据路算167度差；B走结构路以链羟拔河作�
 
 ROLLE：中文：你是材料检测员。 / 德语：Du bist Materialprueferin.
 SITUATION：胶粘剂在潮钢上失效：请用黏附阶梯、水与表面解释原因并开预处理处方（约150词）。 / 德语：Der Kleber versagt an feuchtem Stahl. Erklaere in ca. 150 Woertern mit Haftleiter, Wasser und Oberflaeche die Ursache und empfehle die Vorbehandlung.
+AUFGABE: Erklaere die Transferlage in ca. 150 Woertern mit Einordnung, Beleg und Schlussurteil. [AFB III]
 RUBRIC (30 XP)：Haftleiter (8 XP) | Wasserrolle (8 XP) | Vorbehandlung (8 XP) | Empfehlung (6 XP).
 ZEITREGEL: MAX 2 Minuten — 90秒定黏附阶梯与水角色，30秒写预处理句，然后交卷；Timer stellen.
 
 
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Haft-Einordnung mit Beleg | 5 NP | Struktur-Beleg als Alternativweg
+Staffel-Analyse mit Leiter | 5 NP | Differenzbeleg als Alternativweg
+Urteil mit Massstab und Schluss | 5 NP | Alltagsbeleg als Alternativweg
+Gesamt: 15 NP
+
 `Klausur-Satz: Achtung Falle: Masse allein siedet nicht — Brücken schlagen Huellen um Laengen.`
 
+KERNSATZ (auswendig):
+- Kernsatz: `Wasserstoffbruecken sind staerker als Dipol- und Dispersionskraefte und heben Siedepunkte.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = Stoffpaar | Mechanismus = Haftung nach Leiter | Urteil = Siede- und Loeseurteil
+- Selbsttest: Wasserstoffbruecken sind staerker als Dipol- und Dispersionskraefte und heben ___.
 ## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY核心总结：

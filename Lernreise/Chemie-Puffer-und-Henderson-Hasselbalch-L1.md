@@ -8,7 +8,7 @@ operatoren: [berechnen, erklaeren, beurteilen]
 klausurrelevant: true
 datum: 2026-10-03
 tags: [EF, Chemie, Saeure-Base, Puffer, Henderson-Hasselbalch, pH-Wert, Blutpuffer]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Saeure-Base-Puffer und die Henderson-Hasselbalch-Gleichung (L1, Ziel Klausur)
@@ -31,7 +31,7 @@ Hook / Phaenomen: Menschliches Blut ist ein biologisches Hochpraezisionssystem: 
 `Klausur-Satz: Ein Saeure-Base-Puffersystem stabilisiert den pH-Wert einer Loesung bei Zugabe von Oxonium- oder Hydroxid-Ionen, indem es diese ueber ein konjugiertes Saeure-Base-Paar gemaess dem Massenwirkungsgesetz abfaengt.`
 
 ## Schritt 2 — entdecken: Ausruestungskiste der Puffer-Unit
-PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
+PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文->德语，Evidenz：pretraining降认知负荷）：
 
 中文在上，德语在下：
 
@@ -94,18 +94,28 @@ BEISPIEL（正确例题示范，含教具操作与解答）：
 
 [Werkzeug: balance-board]
 
-AUFGABE (berechnen & erklaeren, AFB I/II)：
+AUFGABE: Berechne den Acetatpuffer-pH und den pH nach Laugezugabe und erklaere die Pufferwirkung gegen Wasser. [AFB II]： [AFB II]
 Ein Schüler stellt im Labor einen Acetatpuffer her, indem er $0,20\text{ mol}$ Essigsaeure ($CH_3COOH$, $\text{p}K_S = 4,75$) und $0,10\text{ mol}$ Natriumacetat ($CH_3COONa$) in Wasser loest und auf $V = 1,0\text{ Liter}$ auffuellt.
 1. Berechnen Sie den pH-Wert dieser Pufferloesung mit der Henderson-Hasselbalch-Gleichung. (10 BE)
 2. Zu dieser Loesung werden $0,02\text{ mol}$ feste Natronlauge ($NaOH$) gegeben (Volumenaenderung vernachlaessigbar). Berechnen Sie den neuen pH-Wert nach Zugabe der Lauge und vergleichen Sie die Aenderung mit der Zugabe von $0,02\text{ mol}$ $NaOH$ zu 1 Liter reinem Wasser. (20 BE)
 
 HILFE:
-1. Schritt 1: Ausgangs-pH: $\text{pH}_0 = \text{p}K_S + \lg\left(\frac{[CH_3COO^-]}{[CH_3COOH]}\right) = 4,75 + \lg\left(\frac{0,10}{0,20}\right)$.
-2. Schritt 2: Reaktion mit $OH^-$: $CH_3COOH + OH^- \to CH_3COO^- + H_2O$.
-   - Neues $n(CH_3COOH) = 0,20 - 0,02 = 0,18\text{ mol}$.
-   - Neues $n(CH_3COO^-) = 0,10 + 0,02 = 0,12\text{ mol}$.
-3. Schritt 3: Neuer pH: $\text{pH}_1 = 4,75 + \lg\left(\frac{0,12}{0,18}\right)$.
-4. Schritt 4: Reines Wasser: $0,02\text{ mol } OH^-$ in 1 L Wasser ergibt $[OH^-] = 0,02\text{ mol/l} \implies \text{pOH} = -\lg(0,02) \approx 1,70 \implies \text{pH} = 12,30$!
+- Fachdimension: Nutze Henderson-Hasselbalch-Gleichung und Pufferbereichs-Regel; klaere zuerst Verhaeltnis Base zu Saeure und pKs-Lage vor der pH-Aussage, ohne das Ergebnis vorwegzunehmen.
+- Rechenweg: Lege die Reihenfolge von Ausgangsgroesse zu Zielgroesse fest; schreibe nur die Abfolge auf, setze keine Zahlen ein.
+- Pruefdimension: Plane die Kontrolle ueber Einheit und Groessenordnung, ohne das Resultat zu nennen.
+
+
+COMPLETION (Lückentext):
+- Lies die Aufgabe und ergaenze aus dem Gedaechtnis, ohne zurueckzublaettern:
+- Fuer ___ gilt $\mathrm{pH} = \mathrm{p}K_S + \lg\frac{[A^-]}{[HA]}$.
+- Zuerst bestimme ich ___, dann folgt ___ aus dem Bereich $\mathrm{p}K_S \pm 1$.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Ausgangs-pH aus Verhaeltnis | 5 NP | Halbaequivalenz-Probe als Alternativweg
+Stoffbilanz nach Zugabe | 5 NP | Wasser-Vergleich als Alternativweg
+Pufferwirkung begruenden | 5 NP | Kapazitaetsblick als Alternativweg
+Gesamt: 15 NP
 
 MUSTERLÖSUNG:
 1. Berechnung des Ausgangs-pH-Werts:
@@ -133,19 +143,19 @@ MUSTERLÖSUNG:
 ## Schritt 5 — ausprobieren: Duell der Systeme: Geschlossener vs. Offener Puffer
 
 VERGLEICH: Geschlossenes Puffersystem (Labor) vs. Offenes Bicarbonatsystem (Mensch)
+- [Position A] Wenn du Position A waehlst, arbeitest du im Transfer vor allem mit Verhaeltnissen und pH-Zahlen.
+- [Position B] Wenn du Position B waehlst, arbeitest du im Transfer vor allem mit System- und Kompensationsdeutung.
 
 - Position A (Geschlossener Puffer / Reagenzglas):
-  - Systemgrenze: Vollstaendig isoliert; Gesamtstoffmenge an Pufferkomponenten ($[HA] + [A^-] = c_{\text{gesamt}}$) ist strikt konstant.
-  - Limitierung: Wird eine zu grosse Menge Saeure zugegeben, ist die Pufferbase irgendwann vollstaendig verbraucht (**Erschoepfung der Pufferkapazitaet**), und der pH-Wert stuerzt ab.
-  - Beispiel: Phosphatpuffer im Urin, Acetatpuffer im Labor.
 - Position B (Offenes Puffersystem / Organismus mit Lunge und Niere):
-  - Systemgrenze: Offener Stoffaustausch mit der Umwelt; Pufferkomponenten werden kontinuierlich abtransportiert oder nachgebildet.
-  - Dynamik: Bei Protonenbelastung bildet sich Kohlensaeure ($H_2CO_3$), die sofort zu $H_2O$ und $CO_2$ zerfaellt. Das Gas $CO_2$ verbleibt nicht im Blut, sondern wird ueber die Lunge innerhalb von Sekunden abgeatmet!
-  - Vorteil: Nahezu unbegrenzte Pufferkapazitaet gegen Saeuren, solange die Atmung intakt ist.
 
-Entscheidungsregel fuer die Klausur:
-Wird nach `der Sonderstellung des Blutpuffers` gefragt, immer betonen: Obwohl der $\text{p}K_S$-Wert der Kohlensaeure mit ca. 6,1 suboptimal weit vom Blut-pH (7,4) entfernt liegt, ist der Bicarbonatpuffer wegen seiner offenen Koppelung an die Lunge das staerkste Puffersystem des Koerpers!
+Wahlregel: Triff erst eine Wahl zwischen beiden Positionen; die Begruendung steht erst nach der Wahl in der AUFLOESUNG.
 
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Position A oder Position B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Ueberfuehrt aus VERGLEICH (Vorwahl-Fassung): - Systemgrenze: Vollstaendig isoliert; Gesamtstoffmenge an Pufferkomponenten ($[HA] + [A^-] = c_{\text{gesamt}}$) ist strikt konstant. | - Limitierung: Wird eine zu grosse Menge Saeure zugegeben, ist die Pufferbase irgendwann vollstaendig verbraucht (**Erschoepfung der Pufferkapazitaet**), und der pH-Wert stuerzt ab. | - Beispiel: Phosphatpuffer im Urin, Acetatpuffer im Labor. | - Systemgrenze: Offener Stoffaustausch mit der Umwelt; Pufferkomponenten werden kontinuierlich abtransportiert oder nachgebildet. | - Dynamik: Bei Protonenbelastung bildet sich Kohlensaeure ($H_2CO_3$), die sofort zu $H_2O$ und $CO_2$ zerfaellt. Das Gas $CO_2$ verbleibt nicht im Blut, sondern wird ueber die Lunge inn
+- Ueberfuehrt aus Entscheidungsregel (Vorwahl-Fassung): Entscheidungsregel fuer die Klausur: Wird nach `der Sonderstellung des Blutpuffers` gefragt, immer betonen: Obwohl der $\text{p}K_S$-Wert der Kohlensaeure mit ca. 6,1 suboptimal weit vom Blut-pH (7,4) entfernt liegt, ist der Bicarbonatpuffer wegen seiner offenen Koppelung an die Lunge das staerkste Puffersystem des Koerpers!
+- Ein-Satz-Kern: Ein Puffer aus schwacher Saeure und Base faengt Saeure und Lauge ueber das Gleichgewicht ab.
 ## Schritt 6 — check: Klausur-Transfer Diabetische Ketoazidose
 PRÜFUNGSSZENARIO (KLP NRW Chemie Q1 Inhaltsfeld 2: Saeure-Base-Gleichgewichte / Medizinische Kontexte):
 
@@ -153,14 +163,22 @@ Ein Patient mit unentdecktem Diabetes mellitus Typ 1 geraet in eine schwere Stof
 Im Notarztwagen zeigt die Blutgasanalyse folgende Werte:
 Blut-pH = 7,12 (Normal: 7,35–7,45), aktueller Hydrogencarbonat-Spiegel $[HCO_3^-] = 8\text{ mmol/l}$ (Normal: 24 mmol/l). Der Patient atmet tief, schwer und extrem schnell ("Kussmaul-Atmung").
 
-AUFGABE (erklaeren & beurteilen, AFB II/III):
+AUFGABE: Beurteile die Transferlage mit Beleg und Urteil. [AFB III]
 1. Erklaeren Sie die biochemische Ursache fuer den Absturz des Blut-pH-Werts und den dramatischen Abfall der Hydrogencarbonat-Konzentration. (12 BE)
 2. Beurteilen Sie die Kussmaul-Atmung als physiologischen Rettungsversuch des Organismus gemaess dem Prinzip von Le Chatelier. (18 BE)
 
-ERWARTUNGSHORIZONT:
-- AFB II: Die massenhafte Freisetzung organischer Carbonsaeuren ueberschwemmt das Blut mit $H_3O^+$-Ionen. Das Kohlensaeure-Hydrogencarbonat-Puffersystem faengt diese Protonen ab: $HCO_3^- + H_3O^+ \longrightarrow H_2CO_3 + H_2O$. Da der Saeureeinstrom gigantisch ist, wird der Vorrat an basischem Hydrogencarbonat ($HCO_3^-$) von normalen 24 mmol/l auf kritische 8 mmol/l aufgezehrt. Das Verhaeltnis $\frac{[HCO_3^-]}{[CO_2]}$ sinkt drastisch ab; gemaess der Henderson-Hasselbalch-Gleichung fuehrt dies zum lebensbedrohlichen Absturz des pH-Wertes auf 7,12 (schwere metabolische Azidose).
-- AFB III: Die kuenstlich vertiefte und rasant beschleunigte Hyperventilation (**Kussmaul-Atmung**) ist die maximale respiratorische Kompensation des Koerpers: Durch die Hyperventilation treibt der Koerper den $CO_2$-Partialdruck im Blut massiv nach unten. Gemaess dem Prinzip von Le Chatelier erzwingt der Entzug von $CO_2$ die kontinuierliche Verschiebung des Gleichgewichts nach links ($H_3O^+ + HCO_3^- \to H_2CO_3 \to H_2O + CO_2\uparrow$). Die Lunge "blaest" gewissermassen die Protonen in Form von $CO_2$ aus dem Koerper heraus. Ohne diese Kussmaul-Atmung waere der Blut-pH des Patienten laengst unter 6,9 gestuerzt, was zum sofortigen toedlichen Kreislaufkollaps gefuehrt haette.
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Puffer-Einordnung mit Beleg | 5 NP | Verhaeltnis-Beleg als Alternativweg
+pH-Analyse mit Gleichung | 5 NP | Atmungs-Beleg als Alternativweg
+Urteil mit Massstab und Schluss | 5 NP | Kompensationsblick als Alternativweg
+Gesamt: 15 NP
 
+KERNSATZ (auswendig):
+- Kernsatz: `Ein Puffer aus schwacher Saeure und Base faengt Saeure und Lauge ueber das Gleichgewicht ab.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = Pufferlösung | Mechanismus = Abfangen ueber konjugiertes Paar | Urteil = pH-Stabilitaet als Urteil
+- Selbsttest: Ein Puffer aus schwacher Saeure und Base faengt Saeure und Lauge ueber das ___ ab.
 ## Schritt 7 — check: Format-Check & Scoring
 30 XP Schnelltest zur Verstaendigungssicherung:
 

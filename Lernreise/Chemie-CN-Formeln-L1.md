@@ -8,7 +8,7 @@ operatoren: [nennen, berechnen, auswerten]
 klausurrelevant: true
 datum: 2026-09-25
 tags: [EF, Chemie, CN]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: CN-Formelhandbuch: sechs Formelkarten — Episode C2: Sieben Schlüssel im Formeltresor
@@ -78,12 +78,25 @@ $$pH = -\log_{10}[H_3O^+]$$
 
 [Werkzeug: formula]
 
-AUFGABE目标挑战：七个迷你案：配公式并规范算出三例。 德语原题：Sieben Mini-Faelle: pH aus 0,01 mol/L HCl, Mol aus 10 g NaOH, K-Ansatz fuer Haber, Q-Entscheid, Aequivalenz aus Titration, Redox-Bilanz, Gasvolumen. Ordne zu und rechne drei mit Einheit.
+AUFGABE: Berechne 七个迷你案：配公式并规范算出三例。 德语原题：Sieben Mini-Faelle: pH aus 0,01 mol/L HCl, Mol aus 10 g NaOH, K-Ansatz fuer Haber, Q-Entscheid, Aequivalenz aus Titration, Redox-Bilanz, Gasvolumen. Ordne zu und rechne drei mit Einheit. [AFB II]
 
 HILFE:
-1. Symbol der Frage bestimmen.
-2. Bedingung pruefen: stark, Moment, Phase.
-3. Mit Einheit durchrechnen.
+- Fachdimension: Nutze Formelwahl nach Fragetyp (Mol, MWG, pH, c-mal-V); klaere zuerst Fragetyp (Wieviel/Wohin) und passende Karte vor der Rechnung, ohne das Ergebnis vorwegzunehmen.
+- Rechenweg: Lege die Reihenfolge von Ausgangsgroesse zu Zielgroesse fest; schreibe nur die Abfolge auf, setze keine Zahlen ein.
+- Pruefdimension: Plane die Kontrolle ueber Einheit und Groessenordnung, ohne das Resultat zu nennen.
+
+
+COMPLETION (Lückentext):
+- Lies die Aufgabe und ergaenze aus dem Gedaechtnis, ohne zurueckzublaettern:
+- Fuer ___ gilt $n = \frac{m}{M}$ mit $c = \frac{n}{V}$.
+- Zuerst bestimme ich ___, dann folgt ___ aus der Kartenwahl.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Kartenzuordnung treffen | 5 NP | Fragetyp-Probe als Alternativweg
+Rechnung mit Einheit | 5 NP | Bruecken-Probe als Alternativweg
+Beleg mit Zahl oder Pfeil | 5 NP | Einheitenbeleg als Alternativweg
+Gesamt: 15 NP
 
 MUSTERLOESUNG：中文：强酸pH2，10克氢氧化钠0.25摩尔，哈伯K带幂，皆有单位。 / 德语：HCl stark: pH 2; 10 g NaOH sind 0,25 mol; Haber-K mit Hochzahlen; alle mit Einheit belegt.
 
@@ -94,9 +107,11 @@ MUSTERLOESUNG：中文：强酸pH2，10克氢氧化钠0.25摩尔，哈伯K带幂
 VERGLEICH: Waehle erst den Pruefweg, dann loesen: (i) Formel-Rechenweg oder (ii) Einheiten-Blickweg — dann loesen.选程序：先看信号词再选路。
 
 
-Weg A：Weg A (Formel-Rechenweg): Formeln quantitativ anwenden und Ergebnisse berechnen. Dieser Weg liefert Zahlen und ist klausurfest.
+Weg A (Formel-Rechenweg): Der Weg steht zur Wahl.
+- [Weg A] Wenn du Weg A waehlst, arbeitest du in Schritt 7 vor allem mit Formeln und Einheiten.
 
-Weg B：Weg B (Einheiten-Blickweg): Einheiten qualitativ pruefen und Formelwahl absichern. Dieser Weg faengt Fehler, rechnet aber nichts.
+Weg B (Einheiten-Blickweg): Der Weg steht zur Wahl.
+- [Weg B] Wenn du Weg B waehlst, arbeitest du in Schritt 7 vor allem mit Warum-Blick und Deutung.
 
 
 AUFGABE A: pH aus Konzentration exakt gesucht. Welcher Weg? 【选程序：先看信号词再选路】
@@ -104,9 +119,18 @@ AUFGABE A: pH aus Konzentration exakt gesucht. Welcher Weg? 【选程序：先�
 AUFGABE B: Warum kann mol/L nie pH sein? Welcher Weg? 【选程序：先看信号词再选路】
 
 
-HILFE：A nennt exakt — Weg A mit Formel. B nennt Warum mit Einheit — Weg B mit Blick.
+HILFE: Pruefe dimensionsgeleitet, welcher Weg passt: Zahlen- und Signalwoerter sprechen fuer Weg A, Deutungs- und Bereichswoerter fuer Weg B. Ordne selbst zu; die Zuordnung wird nicht vorweggenommen.
 
 ANTWORT：中文：A走公式路取对数；B走单位路讲标尺。 / 德语：A folgt Weg A mit Log-Rechnung; B folgt Weg B mit Skalen-Argument.
+
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg A oder Weg B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Ueberfuehrt aus VERGLEICH (Vorwahl-Fassung): Weg A (Formel-Rechenweg): Formeln quantitativ anwenden und Ergebnisse berechnen. Dieser Weg liefert Zahlen und ist klausurfest. // Weg B (Einheiten-Blickweg): Einheiten qualitativ pruefen und Formelwahl absichern. Dieser Weg faengt Fehler, rechnet aber nichts.
+- Ueberfuehrt aus Schritt-5-HILFE (Vorwahl-Fassung): HILFE：A nennt exakt — Weg A mit Formel. B nennt Warum mit Einheit — Weg B mit Blick.
+- Mechanismus A: ANTWORT：中文：A走公式路取对数；B走单位路讲标尺。 / 德语：A folgt Weg A mit Log-Rechnung; B folgt Weg B mit Skalen-Argument.
+- Ein-Satz-Kern: Formeln rechnen exakt, Einheiten fangen Fehler — die Klausur braucht beides.
+
+<!-- C1-Bestaetigung: Vorwahl neutral, Mechanismus in AUFLOESUNG. -->
 
 `Klausur-Satz: Formeln rechnen exakt, Einheiten fangen Fehler — die Klausur braucht beides.`
 
@@ -135,12 +159,25 @@ ANTWORT：中文：A走公式路取对数；B走单位路讲标尺。 / 德语�
 
 ROLLE：中文：你是保险柜管理员。 / 德语：Du bist Tresor-Verwalter.
 SITUATION：七问待配式：请带条件配对并算出三例（约120词）。 / 德语：Sieben Fragen liegen bereit. Ordne in ca. 120 Woertern jede Frage einer Formel mit Bedingung zu und rechne drei Beispiele.
+AUFGABE: Werte die Transferlage in ca. 150 Woertern mit Einordnung, Beleg und Schlussurteil aus. [AFB III]
 RUBRIC (30 XP)：Zuordnung (12 XP) | Bedingungen (12 XP) | Rechnungen (6 XP).
 ZEITREGEL: MAX 2 Minuten — 90秒认符号查条件，30秒用单位验算句，然后交卷；Timer stellen.
 
 
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Zuordnungs-Einordnung | 5 NP | Typ-Beleg als Alternativweg
+Beispiel-Analyse mit Einheit | 5 NP | Kartenbeleg als Alternativweg
+Urteil mit Massstab und Schluss | 5 NP | Zeitbeleg als Alternativweg
+Gesamt: 15 NP
+
 `Klausur-Satz: Achtung Falle: pH-Formel gilt nur fuer verduennte Loesungen bei 25 Grad.`
 
+KERNSATZ (auswendig):
+- Kernsatz: `Jede Frage zieht genau eine Karte, jede Karte endet mit Zahl oder Richtung als Beleg.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = Sieben Faelle | Mechanismus = Kartenwahl nach Fragetyp | Urteil = Beleg aus Zahl oder Pfeil
+- Selbsttest: Jede Frage zieht genau eine Karte, jede Karte endet mit Zahl oder ___ als Beleg.
 ## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY核心总结：

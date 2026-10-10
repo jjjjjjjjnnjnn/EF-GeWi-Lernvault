@@ -8,7 +8,7 @@ operatoren: [aufstellen, berechnen, begruenden]
 klausurrelevant: true
 datum: 2026-09-26
 tags: [EF, Chemie, Gleichgewicht]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Gleichgewichtsvertiefung mit Q-Berechnung — Episode C10: Nachtschicht am Rührkessel
@@ -78,12 +78,25 @@ $$Q = \frac{[C]^c [D]^d}{[A]^a [B]^b} \quad ; \quad Q < K \Rightarrow \text{rech
 
 [Werkzeug: formula]
 
-AUFGABE目标挑战：已知K=4与瞬时浓度：算Q判方向并列三段表算到放行。 德语原题：Gegeben: A + B <-> C, K = 4,0; Momentanwerte cA = 0,50, cB = 0,50, cC = 0,50 mol/L. Berechne Q, entscheide die Richtung und stelle die Dreisatztabelle bis zur Freigabe auf.
+AUFGABE: Berechne 已知K=4与瞬时浓度：算Q判方向并列三段表算到放行。 德语原题：Gegeben: A + B <-> C, K = 4,0; Momentanwerte cA = 0,50, cB = 0,50, cC = 0,50 mol/L. Berechne Q, entscheide die Richtung und stelle die Dreisatztabelle bis zur Freigabe auf. [AFB II]
 
 HILFE:
-1. Q aus Momentanwerten berechnen.
-2. Q gegen K halten und Pfeil setzen.
-3. Tabelle mit x bis c_eq aufstellen.
+- Fachdimension: Nutze Massenwirkungsgesetz mit ICE-Tabelle und Q-gegen-K-Regel; klaere zuerst Startwerte, Umsatz x und Gleichgewichtswerte in Tabellenreihenfolge, ohne das Ergebnis vorwegzunehmen.
+- Rechenweg: Lege die Reihenfolge von Ausgangsgroesse zu Zielgroesse fest; schreibe nur die Abfolge auf, setze keine Zahlen ein.
+- Pruefdimension: Plane die Kontrolle ueber Einheit und Groessenordnung, ohne das Resultat zu nennen.
+
+
+COMPLETION (Lückentext):
+- Lies die Aufgabe und ergaenze aus dem Gedaechtnis, ohne zurueckzublaettern:
+- Fuer ___ gilt $Q = \frac{[C]^c [D]^d}{[A]^a [B]^b}$.
+- Zuerst bestimme ich ___, dann folgt ___ aus $Q < K \Rightarrow \mathrm{rechts}$.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Q aus Momentanwerten | 5 NP | Pfeilprobe als Alternativweg
+Richtung aus Vergleich | 5 NP | Teilchenzahl-Blick als Alternativweg
+Tabelle mit x aufstellen | 5 NP | Naeherungs-Check als Alternativweg
+Gesamt: 15 NP
 
 MUSTERLOESUNG：中文：Q=2小于K=4故右补，三段表解得x=0.11，Q=K时放行。 / 德语：Q = 2,0 kleiner K = 4,0: rechts nachfuellen; Tabelle liefert c_eq mit x = 0,11 mol/L; Freigabe bei Q gleich K.
 
@@ -94,9 +107,11 @@ MUSTERLOESUNG：中文：Q=2小于K=4故右补，三段表解得x=0.11，Q=K时�
 VERGLEICH: Waehle erst den Audit-Weg, dann loesen: (i) Tabellen-Rechenweg oder (ii) Stoerungsblick-Weg — dann loesen.选程序：先看信号词再选路。
 
 
-Weg A：Weg A (Tabellen-Rechenweg): Umsaetze quantitativ tabellieren und Gleichgewichte ausrechnen. Dieser Weg liefert c_eq-Zahlen und ist freigabefest.
+Weg A (Tabellen-Rechenweg): Der Weg steht zur Wahl.
+- [Weg A] Wenn du Weg A waehlst, arbeitest du in Schritt 7 vor allem mit Tabellen, x-Werten und Zahlen.
 
-Weg B：Weg B (Stoerungsblick-Weg): Stoerungen qualitativ deuten und Richtungen schnell abschaetzen. Dieser Weg ist schnell, bleibt aber ohne Zahl weich.
+Weg B (Stoerungsblick-Weg): Der Weg steht zur Wahl.
+- [Weg B] Wenn du Weg B waehlst, arbeitest du in Schritt 7 vor allem mit Stoerungsblick und Abschaetzung.
 
 
 AUFGABE A: c_eq aus K exakt gesucht. Welcher Weg? 【选程序：先看信号词再选路】
@@ -104,9 +119,18 @@ AUFGABE A: c_eq aus K exakt gesucht. Welcher Weg? 【选程序：先看信号词
 AUFGABE B: Wohin laeuft es nach plotsichem Druckstoss? Welcher Weg? 【选程序：先看信号词再选路】
 
 
-HILFE：A nennt exakt — Weg A mit Tabelle. B nennt Stoerung — Weg B mit Blick.
+HILFE: Pruefe dimensionsgeleitet, welcher Weg passt: Zahlen- und Signalwoerter sprechen fuer Weg A, Deutungs- und Bereichswoerter fuer Weg B. Ordne selbst zu; die Zuordnung wird nicht vorweggenommen.
 
 ANTWORT：中文：A走表格路解x；B走直觉路数粒子。 / 德语：A folgt Weg A mit ICE-Tabelle und x-Loesung; B folgt Weg B mit Teilchenzahl-Argument.
+
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg A oder Weg B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Ueberfuehrt aus VERGLEICH (Vorwahl-Fassung): Weg A (Tabellen-Rechenweg): Umsaetze quantitativ tabellieren und Gleichgewichte ausrechnen. Dieser Weg liefert c_eq-Zahlen und ist freigabefest. // Weg B (Stoerungsblick-Weg): Stoerungen qualitativ deuten und Richtungen schnell abschaetzen. Dieser Weg ist schnell, bleibt aber ohne Zahl weich.
+- Ueberfuehrt aus Schritt-5-HILFE (Vorwahl-Fassung): HILFE：A nennt exakt — Weg A mit Tabelle. B nennt Stoerung — Weg B mit Blick.
+- Mechanismus A: ANTWORT：中文：A走表格路解x；B走直觉路数粒子。 / 德语：A folgt Weg A mit ICE-Tabelle und x-Loesung; B folgt Weg B mit Teilchenzahl-Argument.
+- Ein-Satz-Kern: Tabellen rechnen beweist, Stoerungen deuten warnt — der Auditor braucht beides.
+
+<!-- C1-Bestaetigung: Vorwahl neutral, Mechanismus in AUFLOESUNG. -->
 
 `Klausur-Satz: Tabellen rechnen beweist, Stoerungen deuten warnt — der Auditor braucht beides.`
 
@@ -135,12 +159,25 @@ ANTWORT：中文：A走表格路解x；B走直觉路数粒子。 / 德语：A fo
 
 ROLLE：中文：你是夜班结算审计员。 / 德语：Du bist Bilanzauditor in der Nachtschicht.
 SITUATION：某批次偏离：请写约150词放行报告，含Q计算、三段表与温度核查。 / 德语：Eine Charge weicht ab. Schreibe in ca. 150 Woertern einen Freigabebericht mit Q-Rechnung, Tabelle und Temperaturpruefung.
+AUFGABE: Begruende die Transferlage in ca. 150 Woertern mit Einordnung, Beleg und Schlussurteil. [AFB III]
 RUBRIC (30 XP)：Q-Rechnung (8 XP) | Tabelle (8 XP) | Temperatur (8 XP) | Urteil (6 XP).
 ZEITREGEL: MAX 2 Minuten — 90秒算Q列三段表，30秒写放行裁决句，然后交卷；Timer stellen.
 
 
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Q-Einordnung mit Beleg | 5 NP | Pfeil-Beleg als Alternativweg
+Tabellen-Analyse mit x | 5 NP | Prozent-Check als Alternativweg
+Freigabe-Urteil mit Schluss | 5 NP | Temperaturnachweis als Alternativweg
+Gesamt: 15 NP
+
 `Klausur-Satz: Achtung Falle: Naeherung ohne 5-Prozent-Check ist in NRW null Punkte wert.`
 
+KERNSATZ (auswendig):
+- Kernsatz: `Im Gleichgewicht laufen Hin- und Rueckreaktion gleich schnell, die Lage folgt Q gegen K.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = Charge mit Q-Abweichung | Mechanismus = Tabelle plus Q-gegen-K-Entscheid | Urteil = Freigabe oder Sperrung als Urteil
+- Selbsttest: Im Gleichgewicht laufen Hin- und Rueckreaktion gleich schnell, die Lage folgt ___ gegen K.
 ## Schritt 8 — reflexion: Takeaway & Reflexion
 
 TAKEAWAY核心总结：
