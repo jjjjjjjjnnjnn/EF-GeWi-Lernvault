@@ -88,6 +88,27 @@ tags: [EF, Meta, App, Philo, SoWi, Rawls, Wahlsystem, MacroView, Fehlerlog]
 
 ### ③ 交付物与交接准备
 - 正式发布架构纲领文件：[`00_META/ROADMAP-BOOK-TO-COURSE-STUDIO.md`](ROADMAP-BOOK-TO-COURSE-STUDIO.md)；
-- 更新 [`00_META/INDEX.md`](INDEX.md) 索引与 [`HANDOVER.md`](../HANDOVER.md) 接手顺序；
-- 下一会话直接启动 **Phase 4.0：书籍智能解构与无痛学习节奏规划引擎原型 (`BookIngest & PacingPlanner`)**。
+- 更新 [`00_META/INDEX.md`](INDEX.md) 索引与 [`HANDOVER.md`](../HANDOVER.md) 接手顺序。
+
+---
+
+## 5. Phase 4.0 核心成果交付：拆书解构与无痛学习节奏规划引擎 (BookIngest & PacingPlanner)
+
+- **核心算法研发 (`bookIngestParser.ts` + `pacingPlanner.ts`)**：
+  - 研发鲁棒的任意文本/目录多级解析器，支持 Markdown 标题（# / ## / ###）、数字章节（1. / 1.1 / 1.2 / Kapitel）、缩进与纯文本；
+  - 自动推导 DAG 拓扑前置依赖连线并杜绝自依赖；
+  - 识别课型分类（`concept` / `practice` / `experiment`）并智能匹配 24 款高性能原生教具或 4 大通用交互微世界；
+  - 研发自适应拓扑排序排程算法，严控每日 10–15 分钟无痛微块负荷；
+  - 自动插桩艾宾浩斯复习插槽（D+1 Blitz / D+3 Tief），提供心流区间自适应适宜度评估（`optimal` / `dense` / `light`）。
+- **Tufte 纯黑白纸墨交互界面研发 (`BookIngestWorkshopTab.tsx` + `TeachingStudio.tsx`)**：
+  - 纯黑白学术纸墨风，零 Emoji、零 active shadows、零 italic，全手写内联 SVG；
+  - 左右分栏高效动线：左侧教材输入与预设典籍（SoWi / Deutsch / Philo / Physik），右侧指标看板、节奏控制器、日程卡片流与 DAG 折叠展开树；
+  - 提供完整多 Tab 容器 `TeachingStudio.tsx`，支持与全科导航协同。
+- **四步闭环与工程门禁回归**：
+  - 独立测试 `src/modules/teaching/BookIngest.test.tsx` 13/13 绿灯通过；
+  - UI 契约门禁 `src/modules.test.tsx` 23/23 绿灯零违规；
+  - 全量 82 个测试套件、613 项测试 100% PASS；
+  - `cmd /c "npx tsc -b"` 0 报错；
+  - `python scripts/vault-check.py` 417 笔记 1942 词 PASS。
+
 
