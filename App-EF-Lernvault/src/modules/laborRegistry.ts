@@ -97,6 +97,7 @@ export type LaborSimId =
   | "philo-hoehlengleichnis"
   | "philo-staatsvertrag"
   | "philo-rawls-schleier"
+  | "rawls-sim"
   | "philo-willensfreiheit"
   | "philo-popper-falsifikation"
   | "philo-arendt-banalitaet"

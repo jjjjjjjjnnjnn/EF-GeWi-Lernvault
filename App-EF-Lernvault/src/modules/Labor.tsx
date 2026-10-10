@@ -60,6 +60,7 @@ import { RotationskoerperSim } from "../components/pedagogy/RotationskoerperSim"
 import { EzbGeldpolitikSim } from "../components/pedagogy/EzbGeldpolitikSim";
 import { LibetExperimentSim } from "../components/pedagogy/LibetExperimentSim";
 import { WahlsystemSim } from "../components/pedagogy/WahlsystemSim";
+import { RawlsVerteilungsSim } from "../components/pedagogy/RawlsVerteilungsSim";
 import { UniversalInteractiveWorkbench } from "../components/pedagogy/UniversalInteractiveWorkbench";
 import { GewiInteractiveWorkbench } from "../components/pedagogy/GewiInteractiveWorkbench";
 import {
@@ -290,6 +291,9 @@ export function Labor({ lang, onDiscussInTutor }: LaborProps) {
       case "wahlsystem-sim":
       case "sowi-wahlsystem":
         return <WahlsystemSim lang={lang} studioMode={isStudioExpanded} onExportFinding={handleExportFinding} />;
+      case "philo-rawls-schleier":
+      case "rawls-sim":
+        return <RawlsVerteilungsSim lang={lang} studioMode={isStudioExpanded} onExportFinding={handleExportFinding} />;
       default:
         if (activeSim) {
           // 纯文科文学、哲学伦理与特定社科政策辩论使用专门直观工坊 (GewiInteractiveWorkbench)
@@ -299,7 +303,6 @@ export function Labor({ lang, onDiscussInTutor }: LaborProps) {
             "philo-utilitarismus-bentham",
             "philo-kant-kategorischer",
             "philo-arendt-banalitaet",
-            "philo-rawls-schleier",
             "philo-hoehlengleichnis",
             "philo-staatsvertrag",
             "philo-ethik-dilemma",

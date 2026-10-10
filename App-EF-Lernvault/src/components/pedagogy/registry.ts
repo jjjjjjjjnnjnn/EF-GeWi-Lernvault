@@ -18,6 +18,7 @@ import { GiniAllocatorSim } from "./GiniAllocatorSim";
 import { GeWiReadingLab } from "./GeWiReadingLab";
 import { TrilemmaSim } from "./TrilemmaSim";
 import { TrustGameSim } from "./TrustGameSim";
+import { RawlsVerteilungsSim } from "./RawlsVerteilungsSim";
 
 export interface PedagogyRegistryEntry {
   id: string;
@@ -32,6 +33,26 @@ export interface PedagogyRegistryEntry {
 }
 
 export const PEDAGOGY_REGISTRY: PedagogyRegistryEntry[] = [
+  {
+    id: "rawls-sim",
+    aliases: [
+      "RawlsVerteilungsSim",
+      "rawls",
+      "schleier-des-nichtwissens",
+      "philo-rawls-schleier",
+      "differenzprinzip",
+      "maximin",
+    ],
+    nameDE: "Rawls-Verteilungssimulator & Schleier des Nichtwissens",
+    nameZH: "罗尔斯正义论与无知之幕分配天平",
+    fach: "Philosophie",
+    kategorie: "Praktische Philosophie & Gerechtigkeit",
+    descriptionDE:
+      "Urzustand, Schleier des Nichtwissens, Differenzprinzip (Maximin), Gini-Koeffizient und Rollen-Zufallsziehung.",
+    descriptionZH:
+      "原初状态、无知之幕思想实验、最大最小准则（Maximin）、五阶层分配与社会身份抽取交互仿真。",
+    component: RawlsVerteilungsSim,
+  },
   {
     id: "wahlsystem-sim",
     aliases: [
