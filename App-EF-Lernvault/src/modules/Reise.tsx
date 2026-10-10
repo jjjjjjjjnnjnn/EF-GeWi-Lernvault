@@ -53,6 +53,8 @@ import { BentoMastery } from "../components/pedagogy/BentoMastery";
 import { SowiDepotLecture } from "../components/pedagogy/SowiDepotLecture";
 import { OrderbuchSimulator } from "../components/pedagogy/OrderbuchSimulator";
 import { CrossDisciplinarySandbox } from "../components/pedagogy/CrossDisciplinarySandbox";
+import { WahlsystemSim } from "../components/pedagogy/WahlsystemSim";
+import { RawlsVerteilungsSim } from "../components/pedagogy/RawlsVerteilungsSim";
 
 function DepotStepWidget({ lang }: { lang: Lang }) {
   const [showFullLecture, setShowFullLecture] = useState(false);
@@ -487,6 +489,34 @@ function renderEmbeddedTool(toolName: string, lang: Lang, fach: string, thema?: 
       return (
         <div className="my-3 p-3.5 border border-[var(--line)] bg-[var(--surface)] rounded-[var(--radius)]">
           <EthikWaageSim lang={lang} />
+        </div>
+      );
+    }
+    if (
+      t === "wahlsystem-sim" ||
+      t === "wahlsystem" ||
+      t === "bundestagswahl" ||
+      t === "sitzverteilung" ||
+      (f.includes("sowi") && (thema?.toLowerCase().includes("wahlsystem") || thema?.toLowerCase().includes("bundestagswahl")))
+    ) {
+      return (
+        <div className="my-3 p-3.5 border border-[var(--line)] bg-[var(--surface)] rounded-[var(--radius)]">
+          <WahlsystemSim lang={lang} />
+        </div>
+      );
+    }
+    if (
+      t === "rawls-sim" ||
+      t === "rawls" ||
+      t === "schleier" ||
+      t === "schleier-des-nichtwissens" ||
+      t === "differenzprinzip" ||
+      t === "maximin" ||
+      (f.includes("philo") && (thema?.toLowerCase().includes("rawls") || thema?.toLowerCase().includes("schleier")))
+    ) {
+      return (
+        <div className="my-3 p-3.5 border border-[var(--line)] bg-[var(--surface)] rounded-[var(--radius)]">
+          <RawlsVerteilungsSim lang={lang} />
         </div>
       );
     }
