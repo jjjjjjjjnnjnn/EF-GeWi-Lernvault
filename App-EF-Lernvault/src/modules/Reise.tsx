@@ -912,6 +912,8 @@ export default function ReiseModule({
   const [tryImageMap, setTryImageMap] = useState<Record<number, string | null>>({});
   const [tryFeedbackMap, setTryFeedbackMap] = useState<Record<number, string | null>>({});
   const [tryShowHelpMap, setTryShowHelpMap] = useState<Record<number, boolean>>({});
+  const [tryShowAntwort, setTryShowAntwort] = useState(false);
+  const [tryShowAntwortMap, setTryShowAntwortMap] = useState<Record<number, boolean>>({});
 
   const getTryInput = (idx: number) => tryInputMap[idx] ?? tryInput;
   const setTryInputFor = (idx: number, val: string) => {
@@ -932,6 +934,11 @@ export default function ReiseModule({
   const toggleTryShowHelpFor = (idx: number) => {
     setTryShowHelp((prev) => !prev);
     setTryShowHelpMap((prev) => ({ ...prev, [idx]: !prev[idx] }));
+  };
+  const getTryShowAntwort = (idx: number) => tryShowAntwortMap[idx] ?? tryShowAntwort;
+  const toggleTryShowAntwortFor = (idx: number) => {
+    setTryShowAntwort((prev) => !prev);
+    setTryShowAntwortMap((prev) => ({ ...prev, [idx]: !prev[idx] }));
   };
 
   // Step 3 (Check) state: checks per item
@@ -1386,6 +1393,7 @@ export default function ReiseModule({
       const curInput = isDoc ? getTryInput(s.stepNumber) : tryInput;
       const curImage = isDoc ? getTryImage(s.stepNumber) : tryImage;
       const curShowHelp = isDoc ? getTryShowHelp(s.stepNumber) : tryShowHelp;
+      const curShowAntwort = isDoc ? getTryShowAntwort(s.stepNumber) : tryShowAntwort;
       const curFeedback = isDoc ? getTryFeedback(s.stepNumber) : tryFeedback;
 
       return (
@@ -1464,6 +1472,23 @@ export default function ReiseModule({
               className="border border-[var(--accent)]/30 bg-[var(--paper-subtle)] p-3 text-xs font-mono text-[var(--ink)] rounded-[var(--radius)] whitespace-pre-wrap leading-relaxed"
             >
               {curFeedback}
+            </div>
+          )}
+
+          {stepAus.antwort && (
+            <div className="rounded-[var(--radius)] border border-[var(--line)] bg-[var(--paper-subtle)] p-3.5 space-y-2">
+              <button
+                type="button"
+                onClick={() => (isDoc ? toggleTryShowAntwortFor(s.stepNumber) : setTryShowAntwort((v) => !v))}
+                className="text-xs font-mono font-medium text-[var(--accent)] hover:underline flex items-center gap-1.5"
+              >
+                <span>{curShowAntwort ? (lang === "de" ? "Musterlösung verbergen" : "隐藏标准解析") : (lang === "de" ? "Musterlösung anzeigen" : "显示标准解析 / Musterlösung")}</span>
+              </button>
+              {curShowAntwort && (
+                <div className="mt-2 pt-2 border-t border-[var(--line)] text-xs font-sans text-[var(--ink)] leading-relaxed">
+                  {renderFormattedText(stepAus.antwort)}
+                </div>
+              )}
             </div>
           )}
 

@@ -12,6 +12,10 @@ import {
   LogicBlockBuilder,
   ScenarioDecisionTree,
 } from "../GenericMicroWorlds";
+import { MarktMechanismusSim } from "../../../../components/pedagogy/MarktMechanismusSim";
+import { KinematikSim } from "../../../../components/pedagogy/KinematikSim";
+import { MagischesViereckSim } from "../../../../components/pedagogy/MagischesViereckSim";
+import FormulaScaffold from "../../../../components/pedagogy/FormulaScaffold";
 
 export interface InteractiveLessonRunnerProps {
   questNode: ParsedQuestNode;
@@ -153,7 +157,9 @@ export const InteractiveLessonRunner: React.FC<InteractiveLessonRunnerProps> = (
   };
 
   // Phase 1 Step 1: 新知精讲微课学习完毕，推进到 Step 2 动手实验
+  // A2 Gentle gating: lecture 步未直觉站队时不推进、不扣 XP（仅门控 lecture，microworld/challenge 不动）
   const handleAdvanceLecture = () => {
+    if (currentStep.type === "lecture" && selectedIntuitionChoice === null) return;
     setActiveStudyMateProbe(null);
     setShowQuizAnswer(false);
     setSelectedIntuitionChoice(null);
@@ -271,9 +277,9 @@ export const InteractiveLessonRunner: React.FC<InteractiveLessonRunnerProps> = (
     setIsFinished(false);
   };
 
-  // 动态渲染微世界
+  // 动态渲染微世界（A3: 按 interactiveType 精确映射领域仿真；highlighter/tangent-slider/balance 保持现状）
   const renderEmbeddedMicroWorld = () => {
-    switch (questNode.interactiveType) {
+    switch (questNode.interactiveType as string) {
       case "dilemma_balance":
       case "ethik-waage":
         return <DilemmaBalanceScale title={questNode.title} lang={lang} />;
@@ -282,9 +288,22 @@ export const InteractiveLessonRunner: React.FC<InteractiveLessonRunnerProps> = (
       case "scenario_tree":
       case "dilemma-theatre":
         return <ScenarioDecisionTree title={questNode.title} lang={lang} />;
+      case "markt-sim":
+        return <MarktMechanismusSim lang={lang} />;
+      case "kinematik":
+        return <KinematikSim lang={lang} />;
+      case "magisches-viereck":
+        return <MagischesViereckSim lang={lang} />;
+      case "formula":
+        return (
+          <FormulaScaffold
+            lang={lang}
+            fach={effectiveFach}
+            thema={questNode.title}
+          />
+        );
       case "variable_slider":
       case "tangent-slider":
-      case "magisches-viereck":
       default:
         return <VariableSliderBox title={questNode.title} lang={lang} />;
     }
@@ -859,8 +878,8 @@ export const InteractiveLessonRunner: React.FC<InteractiveLessonRunnerProps> = (
                       ? `Option [ ${selectedIntuitionChoice} ] gewählt. Starte jetzt das interaktive Experiment.`
                       : `已选择立场 [ ${selectedIntuitionChoice} ]。理清机制后，点击进入实验探索。`)
                   : (lang === "de"
-                      ? "Wähle oben Option A oder B zur schnellen Intuitions-Prüfung."
-                      : "在上方选择 A 或 B 进行直觉站队，激活底层机制剖析。")}
+                      ? "Wähle zuerst A oder B - es gibt kein Richtig oder Falsch."
+                      : "先凭直觉选 A 或 B，没有对错，选后可见机制剖析。")}
               </span>
             )}
 
@@ -947,7 +966,8 @@ export const InteractiveLessonRunner: React.FC<InteractiveLessonRunnerProps> = (
               <button
                 type="button"
                 onClick={handleAdvanceLecture}
-                className="w-full sm:w-auto px-6 py-2 bg-[var(--ink)] text-[var(--paper)] text-xs font-bold border-2 border-[var(--ink)] hover:bg-[var(--paper)] hover:text-[var(--ink)] active:translate-y-[1px] transition-all cursor-pointer flex items-center justify-center gap-2"
+                disabled={selectedIntuitionChoice === null}
+                className="w-full sm:w-auto px-6 py-2 bg-[var(--ink)] text-[var(--paper)] text-xs font-bold border-2 border-[var(--ink)] hover:bg-[var(--paper)] hover:text-[var(--ink)] active:translate-y-[1px] disabled:opacity-30 disabled:cursor-not-allowed transition-all cursor-pointer flex items-center justify-center gap-2"
               >
                 <span>
                   {lang === "de"

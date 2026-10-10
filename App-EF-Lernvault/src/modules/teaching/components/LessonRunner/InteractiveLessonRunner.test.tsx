@@ -52,10 +52,14 @@ describe("InteractiveLessonRunner Component", () => {
       />
     );
 
-    // 1. 在第 1 步 (新知精讲微课)，阅读后点击进入实验
+    // 1. 在第 1 步 (新知精讲微课)：未站队时按钮置灰（温和门控），选择 A 后解锁
     const toExperimentBtn = screen.getByRole("button", {
       name: /Weiter zum Experiment/i,
     });
+    expect(toExperimentBtn).toBeDisabled();
+    const intuitionABtn = screen.getByRole("button", { name: /\[ A \]/i });
+    fireEvent.click(intuitionABtn);
+    expect(toExperimentBtn).not.toBeDisabled();
     fireEvent.click(toExperimentBtn);
 
     // 2. 进入第 2 步 (动手探究实验微世界)
