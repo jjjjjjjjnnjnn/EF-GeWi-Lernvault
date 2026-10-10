@@ -1,4 +1,10 @@
 import { parseFrontmatter, parseBody, type Block } from "./vault/parser";
+import {
+  parseErwartungshorizontFromText,
+  parseKernsatzFromText,
+  type ErwartungshorizontData,
+  type KernsatzData,
+} from "./components/v5";
 import exemplarCourseRaw from "../../Lernreise/Sowi-Soziale-Marktwirtschaft-L1.md?raw";
 import sowiDepotRaw from "../../Lernreise/SoWi-Wertpapierdepot-Orderarten-L1.md?raw";
 import sowiDepotDeRaw from "../../Lernreise/SoWi-Wertpapierdepot-Orderarten-DE-L1.md?raw";
@@ -48,6 +54,12 @@ export interface SchrittSzenario extends SchrittBase {
   situation: string;
   rubric: string;
   rubricPoints: string[];
+  rawText?: string;
+  blocks?: Block[];
+  aufgabe?: string;
+  erwartungshorizontData?: ErwartungshorizontData;
+  kernsatzData?: KernsatzData;
+  musterKlausursatz?: string;
 }
 
 export interface SchrittMuendlich extends SchrittBase {
@@ -218,6 +230,14 @@ export function parseReiseFile(path: string, raw: string): Reise | null {
       const situation = extractValue(content, "SITUATION");
       const rubric = extractValue(content, "RUBRIC");
       let rubricPoints = rubric ? rubric.split(/\s*\|\s*/).filter(Boolean) : [];
+
+      const erwartungshorizontData = parseErwartungshorizontFromText(content) || undefined;
+      const kernsatzData = parseKernsatzFromText(content) || undefined;
+
+      if (rubricPoints.length === 0 && erwartungshorizontData && erwartungshorizontData.rows.length >= 2) {
+        rubricPoints = erwartungshorizontData.rows.map((r) => `${r.teilleistung} (${r.punkte})`);
+      }
+
       if (rubricPoints.length === 0) {
         // Fallback for math / STEM / Dreischritt where rubric is in list/text form
         const extractedPoints = content.match(/[-*]\s*([^:\n]+:[^\n]+)/g);
@@ -231,6 +251,18 @@ export function parseReiseFile(path: string, raw: string): Reise | null {
           ];
         }
       }
+
+      const aufgabeMatch = content.match(/AUFGABE(?:\s*\([^)]*\))?(?:\s*\[[^\]]*\])?[:：]?\s*([\s\S]*?)(?=(?:\n(?:BEWERTUNGSRUBRIK|ERWARTUNGSHORIZONT|MUSTERLÖSUNG|MUSTERLOESUNG|MUSTER-KLAUSURSATZ|KERNSATZ)[:：]|$))/i);
+      const aufgabe = aufgabeMatch ? aufgabeMatch[1].trim() : undefined;
+
+      const musterMatch = /(?:15\s*NP\s*MUSTER-KLAUSURSATZ|>*\s*MUSTER-KLAUSURSATZ\s*\((?:15\s*NP)?\))[:：]?\s*(.*)$/im.exec(content);
+      let musterKlausursatz = musterMatch ? musterMatch[1].replace(/^[>`"']+|[`"']+$/g, "").trim() : undefined;
+      if (!musterKlausursatz && erwartungshorizontData?.musterKlausursatz) {
+        musterKlausursatz = erwartungshorizontData.musterKlausursatz;
+      }
+
+      let cachedBlocks: Block[] | null = null;
+
       schritte.push({
         typ: "szenario",
         stepNumber: cur.stepNum,
@@ -239,6 +271,20 @@ export function parseReiseFile(path: string, raw: string): Reise | null {
         situation: situation || content,
         rubric: rubric || rubricPoints.join(" | "),
         rubricPoints,
+        rawText: content,
+        get blocks(): Block[] {
+          if (!cachedBlocks) {
+            cachedBlocks = parseBody(content);
+          }
+          return cachedBlocks;
+        },
+        set blocks(val: Block[]) {
+          cachedBlocks = val;
+        },
+        aufgabe,
+        erwartungshorizontData,
+        kernsatzData,
+        musterKlausursatz,
       });
     } else if (cur.typ === "muendlich") {
       const ziehung = extractValue(content, "ZIEHUNG");

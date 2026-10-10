@@ -3,6 +3,20 @@ import type { Block } from "../vault/parser";
 import MathHtml from "./MathHtml";
 import { filterBlocksForGermanNative } from "../config/audience";
 import { restoreGermanUmlauts } from "../utils/germanOrthography";
+import {
+  isKernsatzHeader,
+  isAufloesungHeader,
+  isErwartungshorizontHeader,
+  parseKernsatzFromText,
+  parseAufloesungFromText,
+  parseErwartungshorizontFromText,
+  KernsatzCard,
+  ErwartungshorizontDrawer,
+  AufloesungCard,
+  type KernsatzData,
+  type ErwartungshorizontData,
+  type AufloesungData,
+} from "./v5";
 
 /**
  * Checks if an inline code snippet resembles a mathematical formula
@@ -664,6 +678,13 @@ function renderSingleBlock(
           return <MathHtml key={i} code={b.text} display cacheKey={`D:${b.text}`} />;
         }
 
+        if (/^(?:>?\s*)?KERNSATZ(?:\s*\([^)]*\))?[:：]/i.test(b.text)) {
+          const kData = parseKernsatzFromText(b.text);
+          if (kData) {
+            return <KernsatzCard key={i} data={kData} lang={pureGerman ? "de" : "zh"} />;
+          }
+        }
+
         const isExamMasterSentence = /^(?:Klausur-Satz|Korrektur-Satz|Takeaway-Satz)[:：]/.test(b.text);
         if (isExamMasterSentence) {
           return (
@@ -789,7 +810,10 @@ function renderSingleBlock(
 
 type RenderItem =
   | { type: "block"; block: Block; index: number }
-  | { type: "table"; lines: string[]; index: number };
+  | { type: "table"; lines: string[]; index: number }
+  | { type: "kernsatz"; data: KernsatzData; index: number }
+  | { type: "aufloesung"; data: AufloesungData; index: number }
+  | { type: "erwartungshorizont"; data: ErwartungshorizontData; index: number };
 
 // Tufte: ZH (humanist sans, gray) vs DE (old-style serif, ink). KaTeX math & rich typography integrated.
 export default function Blocks({
@@ -817,7 +841,92 @@ export default function Blocks({
     }
   };
 
-  displayBlocks.forEach((b, i) => {
+  let i = 0;
+  while (i < displayBlocks.length) {
+    const b = displayBlocks[i];
+
+    // 1. Check for Kernsatz cluster
+    if (isKernsatzHeader(b.text)) {
+      flushTable();
+      const clusterTexts: string[] = [b.text];
+      let nextI = i + 1;
+      while (nextI < displayBlocks.length) {
+        const nextB = displayBlocks[nextI];
+        if (
+          nextB.kind === "h2" ||
+          nextB.kind === "h3" ||
+          isAufloesungHeader(nextB.text) ||
+          isErwartungshorizontHeader(nextB.text)
+        ) {
+          break;
+        }
+        clusterTexts.push(nextB.text);
+        nextI++;
+      }
+      const combined = clusterTexts.join("\n");
+      const kernsatzData = parseKernsatzFromText(combined);
+      if (kernsatzData) {
+        items.push({ type: "kernsatz", data: kernsatzData, index: i });
+        i = nextI;
+        continue;
+      }
+    }
+
+    // 2. Check for Aufloesung cluster
+    if (isAufloesungHeader(b.text)) {
+      flushTable();
+      const clusterTexts: string[] = [b.text];
+      let nextI = i + 1;
+      while (nextI < displayBlocks.length) {
+        const nextB = displayBlocks[nextI];
+        if (
+          nextB.kind === "h2" ||
+          nextB.kind === "h3" ||
+          isKernsatzHeader(nextB.text) ||
+          isErwartungshorizontHeader(nextB.text)
+        ) {
+          break;
+        }
+        clusterTexts.push(nextB.text);
+        nextI++;
+      }
+      const combined = clusterTexts.join("\n");
+      const aufloesungData = parseAufloesungFromText(combined);
+      if (aufloesungData) {
+        items.push({ type: "aufloesung", data: aufloesungData, index: i });
+        i = nextI;
+        continue;
+      }
+    }
+
+    // 3. Check for Erwartungshorizont cluster
+    if (isErwartungshorizontHeader(b.text)) {
+      flushTable();
+      const clusterTexts: string[] = [b.text];
+      let nextI = i + 1;
+      while (nextI < displayBlocks.length) {
+        const nextB = displayBlocks[nextI];
+        if (
+          nextB.kind === "h2" ||
+          nextB.kind === "h3" ||
+          isKernsatzHeader(nextB.text) ||
+          isAufloesungHeader(nextB.text)
+        ) {
+          break;
+        }
+        clusterTexts.push(nextB.text);
+        nextI++;
+      }
+      const combined = clusterTexts.join("\n");
+      const erwartungshorizontData = parseErwartungshorizontFromText(combined);
+      if (erwartungshorizontData) {
+        items.push({ type: "erwartungshorizont", data: erwartungshorizontData, index: i });
+        i = nextI;
+        continue;
+      }
+    }
+
+    // 4. Standard markdown table rows
     if ((b.kind === "p" || b.kind === "quote") && isTableRow(b.text)) {
       if (tableBuffer.length === 0) tableStartIndex = i;
       tableBuffer.push(b.text);
@@ -829,7 +938,9 @@ export default function Blocks({
       flushTable();
       items.push({ type: "block", block: b, index: i });
     }
-  });
+
+    i++;
+  }
   flushTable();
 
   return (
@@ -837,6 +948,33 @@ export default function Blocks({
       {items.map((item) => {
         if (item.type === "table") {
           return <MarkdownTable key={`tbl-${item.index}`} lines={item.lines} />;
+        }
+        if (item.type === "kernsatz") {
+          return (
+            <KernsatzCard
+              key={`kern-${item.index}`}
+              data={item.data}
+              lang={pureGerman ? "de" : "zh"}
+            />
+          );
+        }
+        if (item.type === "aufloesung") {
+          return (
+            <AufloesungCard
+              key={`auf-${item.index}`}
+              data={item.data}
+              lang={pureGerman ? "de" : "zh"}
+            />
+          );
+        }
+        if (item.type === "erwartungshorizont") {
+          return (
+            <ErwartungshorizontDrawer
+              key={`erw-${item.index}`}
+              data={item.data}
+              lang={pureGerman ? "de" : "zh"}
+            />
+          );
         }
         return renderSingleBlock(item.block, item.index, renderDiagram, pureGerman);
       })}

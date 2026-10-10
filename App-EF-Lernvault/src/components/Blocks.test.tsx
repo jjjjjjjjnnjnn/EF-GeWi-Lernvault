@@ -106,4 +106,48 @@ describe("Blocks rich typography & formula formatting", () => {
     expect(tds[2].textContent).toContain("Gesamt-BE");
     expect(tds[3].textContent).toContain("100 BE");
   });
+
+  it("renders KernsatzCard when encountering KERNSATZ block cluster", () => {
+    const blocks: Block[] = [
+      { kind: "p", text: "KERNSATZ (auswendig):", lang: "de" },
+      { kind: "p", text: "`Ein staatlicher Hoechstpreis unterhalb des Gleichgewichts verhindert Marktraeumung.`", lang: "de" },
+      { kind: "li", text: "Zerlegung: Subjekt | Mechanismus | Urteil", lang: "de" },
+      { kind: "li", text: "Ein Hoechstpreis | blockiert Marktraeumung | erzeugt Wohlfahrtsverlust", lang: "de" },
+      { kind: "li", text: "Selbsttest: Ein staatlicher Hoechstpreis ___ die Marktraeumung.", lang: "de" },
+    ];
+    const { container } = render(<Blocks blocks={blocks} pureGerman />);
+    expect(container.textContent).toContain("KERNSATZ · KLAUSUR-AXIOM");
+    expect(container.textContent).toContain("Dreisatz-Zerlegung");
+    expect(container.textContent).toContain("Selbsttest");
+  });
+
+  it("renders AufloesungCard when encountering AUFLÖSUNG block cluster", () => {
+    const blocks: Block[] = [
+      { kind: "p", text: "AUFLÖSUNG (nach der Wahl lesen)", lang: "de" },
+      { kind: "p", text: "Mechanismus zu Option A: Der freie Markt räumt über den Preis.", lang: "de" },
+      { kind: "p", text: "Mechanismus zu Option B: Der Höchstpreis erzeugt Warteschlangen.", lang: "de" },
+      { kind: "p", text: "Kausale Essenz: Preisbindung verlagert Knappheit in die Verteilung.", lang: "de" },
+    ];
+    const { container } = render(<Blocks blocks={blocks} pureGerman />);
+    expect(container.textContent).toContain("AUFLÖSUNG · KAUSALMECHANISMUS");
+    expect(container.textContent).toContain("Option A");
+    expect(container.textContent).toContain("Option B");
+    expect(container.textContent).toContain("KAUSALE ESSENZ");
+  });
+
+  it("renders ErwartungshorizontDrawer when encountering ERWARTUNGSHORIZONT table", () => {
+    const blocks: Block[] = [
+      { kind: "p", text: "ERWARTUNGSHORIZONT (15 NP):", lang: "de" },
+      { kind: "p", text: "Teilleistung | Punkte | Alternativweg", lang: "de" },
+      { kind: "p", text: "Effizienz: Deckel blockiert Räumung | 6 NP | Dreiecksfläche anerkannt", lang: "de" },
+      { kind: "p", text: "Gerechtigkeit: Sozialstaatsgebot | 4 NP | Verfassungsbeleg anerkannt", lang: "de" },
+      { kind: "p", text: "Synthese: Direkttransfers | 5 NP | Alternative Transfers anerkannt", lang: "de" },
+    ];
+    const { container } = render(<Blocks blocks={blocks} />);
+    expect(container.textContent).toContain("ERWARTUNGSHORIZONT");
+    expect(container.textContent).toContain("15 NP");
+    expect(container.textContent).toContain("Effizienz");
+    expect(container.textContent).toContain("Gerechtigkeit");
+  });
 });
+

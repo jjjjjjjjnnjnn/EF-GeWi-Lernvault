@@ -55,6 +55,7 @@ import { OrderbuchSimulator } from "../components/pedagogy/OrderbuchSimulator";
 import { CrossDisciplinarySandbox } from "../components/pedagogy/CrossDisciplinarySandbox";
 import { WahlsystemSim } from "../components/pedagogy/WahlsystemSim";
 import { RawlsVerteilungsSim } from "../components/pedagogy/RawlsVerteilungsSim";
+import { ErwartungshorizontDrawer, KernsatzCard } from "../components/v5";
 
 function DepotStepWidget({ lang }: { lang: Lang }) {
   const [showFullLecture, setShowFullLecture] = useState(false);
@@ -1818,6 +1819,15 @@ export default function ReiseModule({
             </div>
           </div>
 
+          {stepSzen.aufgabe && (
+            <div className="border border-[var(--line)] bg-[var(--surface)] p-4 sm:p-5 rounded-[var(--radius)] font-serif text-base text-[var(--ink)] leading-relaxed shadow-none space-y-1.5">
+              <div className="font-mono text-xs font-bold uppercase tracking-wider text-[var(--accent)]">
+                {lang === "de" ? "Klausuraufgabe (AFB III)" : "会考考题 (AFB III · Transfer)"}
+              </div>
+              <div>{renderFormattedText(stepSzen.aufgabe)}</div>
+            </div>
+          )}
+
           {/* Timer row */}
           <div className="flex flex-wrap items-center justify-between gap-3 border border-[var(--line)] p-3 rounded-[var(--radius)] bg-[var(--surface)]">
             <div className="flex items-baseline gap-2">
@@ -1857,27 +1867,39 @@ export default function ReiseModule({
             />
           </div>
 
-          {/* Rubric Checklist */}
-          <div className="border border-[var(--line)] rounded-[var(--radius)] bg-[var(--paper-subtle)] p-4 space-y-2">
-            <div className="text-xs font-mono uppercase text-[var(--gray)] tracking-wider mb-1">
-              {lang === "de" ? "Kriterienkatalog (Rubric):" : "Rubric / 自评检查点（勾选核对）："}
+          {/* Erwartungshorizont Drawer or Rubric Checklist */}
+          {stepSzen.erwartungshorizontData ? (
+            <ErwartungshorizontDrawer
+              data={stepSzen.erwartungshorizontData}
+              lang={lang}
+              defaultOpen={true}
+              onScoreChange={(score) => {
+                const targetCount = Math.ceil(score / 4);
+                setRubricChecks((prev) => prev.map((_, i) => i < targetCount));
+              }}
+            />
+          ) : (
+            <div className="border border-[var(--line)] rounded-[var(--radius)] bg-[var(--paper-subtle)] p-4 space-y-2">
+              <div className="text-xs font-mono uppercase text-[var(--gray)] tracking-wider mb-1">
+                {lang === "de" ? "Kriterienkatalog (Rubric):" : "Rubric / 自评检查点（勾选核对）："}
+              </div>
+              {stepSzen.rubricPoints.map((p, i) => (
+                <label key={i} className="flex items-start gap-2.5 text-xs font-mono text-[var(--ink)] cursor-pointer">
+                  <input
+                    type="checkbox"
+                    checked={rubricChecks[i] ?? false}
+                    onChange={() =>
+                      setRubricChecks((prev) =>
+                        prev.map((v, j) => (j === i ? !v : v))
+                      )
+                    }
+                    className="mt-0.5 h-3.5 w-3.5 accent-[var(--accent)]"
+                  />
+                  <span>{renderFormattedText(p)}</span>
+                </label>
+              ))}
             </div>
-            {stepSzen.rubricPoints.map((p, i) => (
-              <label key={i} className="flex items-start gap-2.5 text-xs font-mono text-[var(--ink)] cursor-pointer">
-                <input
-                  type="checkbox"
-                  checked={rubricChecks[i] ?? false}
-                  onChange={() =>
-                    setRubricChecks((prev) =>
-                      prev.map((v, j) => (j === i ? !v : v))
-                    )
-                  }
-                  className="mt-0.5 h-3.5 w-3.5 accent-[var(--accent)]"
-                />
-                <span>{renderFormattedText(p)}</span>
-              </label>
-            ))}
-          </div>
+          )}
 
           {/* D3: KI-bewertung (FelloFish-stil) + ueberarbeiten-runden */}
           <div className="flex items-center gap-2">
@@ -1930,6 +1952,11 @@ export default function ReiseModule({
             <div role="status" aria-live="polite" aria-atomic="true" className="rounded-[var(--radius)] border border-[var(--accent)]/30 bg-[var(--paper-subtle)] p-4 font-sans text-sm leading-relaxed text-[var(--ink)] whitespace-pre-wrap">
               {szenarioScore.text}
             </div>
+          )}
+
+          {/* Kernsatz Card if present in Step 5 */}
+          {stepSzen.kernsatzData && (
+            <KernsatzCard data={stepSzen.kernsatzData} lang={lang} />
           )}
 
           <div className="flex flex-wrap items-center justify-between gap-3 border-t border-[var(--line)] pt-4">
