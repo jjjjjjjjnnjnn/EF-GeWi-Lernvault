@@ -88,24 +88,23 @@ function resolveStepTitle(stepNum: number, typ: SchrittTyp, customTitle?: string
   if (customTitle && customTitle.trim().length > 1) {
     return customTitle.trim();
   }
-  switch (stepNum) {
-    case 1: return "Ziele & Phänomen-Einstieg";
-    case 2: return "Fachbegriffe & Pre-Training";
-    case 3: return "Kernkonzept & Wirkungsmodell";
-    case 4: return "Interaktives Experiment & Praxis";
-    case 5: return "Verfahrensvergleich & Abgrenzung";
-    case 6: return "Selbsttest (Verständnisprüfung)";
-    case 7: return "Klausur-Transfer & Szenario";
-    case 8: return "Takeaway & Reflexion";
+  switch (typ) {
+    case "entdecken":
+      return stepNum === 1
+        ? "Ziele & Phänomen-Einstieg"
+        : (stepNum === 2 ? "Fachbegriffe & Pre-Training" : "Kernkonzept & Wirkungsmodell");
+    case "ausprobieren":
+      return stepNum === 5 ? "Verfahrensvergleich & Abgrenzung" : "Interaktives Experiment & Praxis";
+    case "check":
+      return "Selbsttest (Verständnisprüfung)";
+    case "szenario":
+      return "Klausur-Transfer & Szenario";
+    case "muendlich":
+      return "Mündliche Prüfung";
+    case "reflexion":
+      return "Takeaway & Reflexion";
     default:
-      switch (typ) {
-        case "entdecken": return "Erkundung & Konzept";
-        case "ausprobieren": return "Interaktive Praxis";
-        case "check": return "Verständnisprüfung";
-        case "szenario": return "Klausurtransfer";
-        case "muendlich": return "Mündliche Prüfung";
-        case "reflexion": return "Takeaway & Reflexion";
-      }
+      return "Lernabschnitt";
   }
 }
 
@@ -218,14 +217,27 @@ export function parseReiseFile(path: string, raw: string): Reise | null {
       const rolle = extractValue(content, "ROLLE");
       const situation = extractValue(content, "SITUATION");
       const rubric = extractValue(content, "RUBRIC");
-      const rubricPoints = rubric ? rubric.split(/\s*\|\s*/).filter(Boolean) : [];
+      let rubricPoints = rubric ? rubric.split(/\s*\|\s*/).filter(Boolean) : [];
+      if (rubricPoints.length === 0) {
+        // Fallback for math / STEM / Dreischritt where rubric is in list/text form
+        const extractedPoints = content.match(/[-*]\s*([^:\n]+:[^\n]+)/g);
+        if (extractedPoints && extractedPoints.length >= 2) {
+          rubricPoints = extractedPoints.map((p) => p.replace(/^[-*]\s*/, "").trim());
+        } else {
+          rubricPoints = [
+            "Fachlicher Ansatz & Problemstrukturierung (AFB I/II)",
+            "Kriteriengeleitete Durchführung / Rechnung / Argumentation",
+            "Synthese, Fazit & Reflexion im Sachkontext (AFB III)",
+          ];
+        }
+      }
       schritte.push({
         typ: "szenario",
         stepNumber: cur.stepNum,
         title: resolveStepTitle(cur.stepNum, "szenario", cur.customTitle),
         rolle,
-        situation,
-        rubric,
+        situation: situation || content,
+        rubric: rubric || rubricPoints.join(" | "),
         rubricPoints,
       });
     } else if (cur.typ === "muendlich") {

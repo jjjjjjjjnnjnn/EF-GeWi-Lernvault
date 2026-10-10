@@ -1783,9 +1783,11 @@ export default function ReiseModule({
       return (
         <div className="space-y-5">
           <div className="border border-[var(--line)] bg-[var(--paper-subtle)] p-4 rounded-[var(--radius)] space-y-2">
-            <div className="text-xs font-mono uppercase text-[var(--accent)]">
-              Rolle: {stepSzen.rolle}
-            </div>
+            {stepSzen.rolle ? (
+              <div className="text-xs font-mono uppercase text-[var(--accent)]">
+                Rolle: {stepSzen.rolle}
+              </div>
+            ) : null}
             <div className="font-serif text-base text-[var(--ink)] leading-relaxed">
               {renderFormattedText(stepSzen.situation)}
             </div>
@@ -1906,35 +1908,44 @@ export default function ReiseModule({
           )}
 
           <div className="flex flex-wrap items-center justify-between gap-3 border-t border-[var(--line)] pt-4">
-            <span className="text-xs font-mono text-[var(--gray)]">
-              {lang === "de" ? `Rubric: ${rubricPassed} Kriterien erfüllt` : `已核对 ${rubricPassed} 个评分点（需至少 2 点）`}
-            </span>
-            {!isDoc ? (
-              <button
-                type="button"
-                disabled={rubricPassed < 2}
-                onClick={() => goNextOrFinish(30)}
-                className={`px-5 py-2 font-mono text-xs uppercase tracking-wider rounded-[var(--radius)] transition-colors ${
-                  rubricPassed >= 2
-                    ? "bg-[var(--ink)] text-[var(--paper)] hover:bg-[var(--accent)]"
-                    : "bg-[var(--line)] text-[var(--gray)] cursor-not-allowed"
-                }`}
-              >
-                {isLastStep
-                  ? lang === "de"
-                    ? "Abschließen (+30 XP)"
-                    : "完成课程 (+30 XP)"
-                  : lang === "de"
-                  ? "Weiter (+30 XP) →"
-                  : "下一步 (+30 XP) →"}
-              </button>
-            ) : (
-              rubricPassed >= 2 && (
-                <span className="text-xs font-mono text-[var(--accent)] font-semibold flex items-center gap-1">
-                  <CheckMarkSvg /> {lang === "de" ? "Szenario gemeistert (+30 XP)" : "场景已掌握 (+30 XP)"}
-                </span>
-              )
-            )}
+            {(() => {
+              const minRubrics = stepSzen.rubricPoints.length > 0 ? Math.min(2, stepSzen.rubricPoints.length) : 0;
+              return (
+                <>
+                  <span className="text-xs font-mono text-[var(--gray)]">
+                    {lang === "de"
+                      ? `Rubric: ${rubricPassed} Kriterien erfüllt`
+                      : `已核对 ${rubricPassed} 个评分点（需至少 ${minRubrics} 点）`}
+                  </span>
+                  {!isDoc ? (
+                    <button
+                      type="button"
+                      disabled={rubricPassed < minRubrics}
+                      onClick={() => goNextOrFinish(30)}
+                      className={`px-5 py-2 font-mono text-xs uppercase tracking-wider rounded-[var(--radius)] transition-colors ${
+                        rubricPassed >= minRubrics
+                          ? "bg-[var(--ink)] text-[var(--paper)] hover:bg-[var(--accent)]"
+                          : "bg-[var(--line)] text-[var(--gray)] cursor-not-allowed"
+                      }`}
+                    >
+                      {isLastStep
+                        ? lang === "de"
+                          ? "Abschließen (+30 XP)"
+                          : "完成课程 (+30 XP)"
+                        : lang === "de"
+                        ? "Weiter (+30 XP) →"
+                        : "下一步 (+30 XP) →"}
+                    </button>
+                  ) : (
+                    rubricPassed >= minRubrics && (
+                      <span className="text-xs font-mono text-[var(--accent)] font-semibold flex items-center gap-1">
+                        <CheckMarkSvg /> {lang === "de" ? "Szenario gemeistert (+30 XP)" : "场景已掌握 (+30 XP)"}
+                      </span>
+                    )
+                  )}
+                </>
+              );
+            })()}
           </div>
         </div>
       );
