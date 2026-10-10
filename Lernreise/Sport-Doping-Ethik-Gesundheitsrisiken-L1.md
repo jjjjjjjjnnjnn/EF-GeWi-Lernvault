@@ -8,7 +8,7 @@ operatoren: [beschreiben, erklaeren, beurteilen]
 klausurrelevant: true
 datum: 2026-09-26
 tags: [EF, Sport, Doping]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 
@@ -39,7 +39,7 @@ Hook (DE): Planspiel, Spindkontrolle: Im Rucksack des Staffelstars liegt eine Am
 
 ## Schritt 2 — entdecken: 5术语装备盒
 
-PRETRAINING术语盒(核心5词,先读三遍中德,合书自测中文→德语):
+PRETRAINING术语盒(核心5词,先读三遍中德,合书自测中文->德语):
 
 中文在上,德语在下:
 
@@ -97,14 +97,26 @@ BEISPIEL(含教具操作与解答):
 
 [Werkzeug: oral-timer]
 
-AUFGABE (analysieren, AFB II):90-Sekunden-Plaedoyer gegen den Timer: Beurteile den Spind-Fall nach Ethik und Gesundheit und fordere eine Massnahme am Target.达标线:0 Toleranz im Kader, 100 Prozent Schulung, Hotline-Fallzahl 12, Sperre 4 Jahre。
+AUFGABE (analysieren, [AFB II]): Analysiere 90-Sekunden-Plaedoyer gegen den Timer: Beurteile den Spind-Fall nach Ethik und Gesundheit und fordere eine Massnahme am Target.达标线:0 Toleranz im Kader, 100 Prozent Schulung, Hotline-Fallzahl 12, Sperre 4 Jahre。
 
 Target数值目标:0 Toleranz im Kader, 100 Prozent Schulung, Hotline-Fallzahl 12, Sperre 4 Jahre。
 
 HILFE:
-1. 先点名持有即违规,说明严格责任下借口无效,并点出公平与健康双伤害。
-2. 再套NADA法规 Strict Liability 与四年禁赛,说明代价如何抬高到0容忍。
-3. 最后开保护处方:12起热线加密报加全员培训,说明预防如何在前断链。
+- Messdimension: Pruefe Eintrag, Wert und Target mit Bilanzansatz zum Thema Doping Ethik und Gesundheitsrisiken; notiere nur die Groessen, deute die Folge noch nicht.
+- Strukturdimension: Pruefe Aufbau, Phase und Zielgroesse mit Strukturanalyse zum Thema Doping Ethik und Gesundheitsrisiken; sammle nur die Merkmale, ohne das Urteil vorwegzunehmen.
+- Bilddimension: Pruefe Kurve, Bild und Zeichen mit Bildvergleich zum Thema Doping Ethik und Gesundheitsrisiken; notiere Bild und Wirkung, ohne die Deutung zu setzen.
+
+COMPLETION (Lückentext):
+- Lies beide Saetze und ergaenze aus dem Gedaechtnis, ohne zurueckzublaettern:
+- Klausur-Satz: Koeln zeigt den ___: Eine Ampulle, drei Schweigende, und Gold steht gegen Gesundheit.
+- Ergaenze den zweiten Schluesselbegriff ___ aus dem Gedaechtnis und pruefe die Richtung ohne Rueckblick.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Befund mit Themenanker (Doping Ethik und Gesundheitsrisiken) | 5 NP | Skizze mit Achsenbeschriftung als Alternativweg
+Analyse mit Mechanismusbezug (Doping Ethik und Gesundheitsrisiken) | 5 NP | Tabellenvergleich mit Messprotokoll als Alternativweg
+Urteil mit Targetbeleg (Doping Ethik und Gesundheitsrisiken) | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
 
 MUSTERLÖSUNG:Schon der Besitz verstoesst gegen den Code; Strict Liability macht Ausreden irrelevant. Das Target 0 Toleranz wird erreicht, weil 4 Jahre Sperre den Preis und Hotline mit 12 Faellen den Schutz heben. Gesundheitlich drohen Herz und Leber, ethisch faellt Gold. Praevention vorher schlaegt Kontrolle nachher, beide zusammen schliessen die Kette.
 
@@ -116,11 +128,20 @@ VERGLEICH辨别实验(双向辨析,先选程序再解题):【选程序】
 
 VERGLEICH:先选程序—— (i) Repression (Kontrollen, Sperren: Preis erhoehen) 还是 (ii) Praevention (Bildung, Schutzraeume: Druck senken) ——再解题。【选程序:问上限与结构选(i),问兑现与情境选(ii)。口述先说 Ich waehle Verfahren (i)/(ii), weil …】
 
+- [Weg A] Neutralfassung fuer die Wahl: Wenn du Weg A waehlst, arbeitest du im Transfer vor allem mit Kennwerten und Struktur.
+- [Weg B] Neutralfassung fuer die Wahl: Wenn du Weg B waehlst, arbeitest du im Transfer vor allem mit Bild, Kette und Deutung.
+
 AUFGABE A:Fall A (Profikader, Wiederholungstaeter): Welcher Weg?
 
 AUFGABE B:Fall B (Schulteam, Erstkontakt): Welcher Weg?
 
-HILFE:A braucht Abschreckung, also Repression. B braucht Schutz, also Praevention.
+HILFE: Pruefe dimensionsgeleitet, welcher Weg passt: Messdimension mit Kennwert spricht fuer Weg A; Strukturdimension mit Typ-Test spricht fuer Zuordnung und Weg B; Bilddimension mit Bildvergleich sichert beide Wege. Ordne selbst zu; die Zuordnung wird nicht vorweggenommen.
+
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg A oder Weg B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Ueberfuehrt aus VERGLEICH (Vorwahl-Fassung): VERGLEICH:先选程序—— (i) Repression (Kontrollen, Sperren: Preis erhoehen) 还是 (ii) Praevention (Bildung, Schutzraeume: Druck senken) ——再解题。【选程序:问上限与结构选(i),问兑现与情境选(ii)。口述先说 Ich waehle Verfahren (i)/(ii), weil …】
+- Ueberfuehrt aus Schritt-5-HILFE (Vorwahl-Fassung): HILFE:A braucht Abschreckung, also Repression. B braucht Schutz, also Praevention.
+- Ein-Satz-Kern: Repression fuer Profis, Praevention fuer Schule: Die Stufe waehlt den Weg.
 
 ANTWORT:A erfordert Weg A mit Zielkontrollen und 4 Jahren. B erfordert Weg B mit Arztstunde und Hotline. Ich waehle A/B, weil Taeterstufe es verlangt.
 
@@ -150,9 +171,23 @@ CHECK检索默写(自测3题,与答案配对):
 ## Schritt 7 — szenario: Klausurtransfer — NADA-Juniorbotschafter
 中文:你是NADA-Juniorbotschafter,在Koelner Sporthochschule, Anti-Doping-Hoersaal (NADA-Planspiel)中必须用德语连贯口述(约90秒)诊断、措施与数值目标(0 Toleranz im Kader, 100 Prozent Schulung, Hotline-Fallzahl 12, Sperre 4 Jahre),并以术语举证。
 ROLLE: Du bist NADA-Juniorbotschafter. SITUATION: In Koeln musst du 90 Sekunden lang Fall, Code und Target (0 Toleranz, 4 Jahre) vor dem Gremium verteidigen.
+AUFGABE (beschreiben, [AFB III]): Beschreibe in ca. 150 Woertern Einordnung, zwei Belege mit Mechanismus und Schlussurteil zu Doping Ethik und Gesundheitsrisiken.
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Befund mit Doping Ethik und Gesundheitsrisiken-Anker | 5 NP | Skizze mit Achsenbeschriftung als Alternativweg
+Analyse mit Mechanismusbezug (Doping Ethik und Gesundheitsrisiken) | 5 NP | Tabellenvergleich mit Messprotokoll als Alternativweg
+Urteil mit Targetbeleg (Doping Ethik und Gesundheitsrisiken) | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
+
 RUBRIC (30 XP):诊断术语8分 | 措施与目标举证7分 | 程序选择对比7分 | 德语表达5分。
 
 `Klausur-Satz: AFB-III-Mustersatz: Der Fall erfordert Sperre, weil Besitz plus Schweigen Fairness und Gesundheit verletzten; Hotline und Schulung wuerden Wiederholung verhindern.`
+
+KERNSATZ (auswendig):
+- Kernsatz: `Koeln zeigt den Kernkonflikt: Eine Ampulle, drei Schweigende, und Gold steht gegen Gesundheit.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = Ausgangslage mit Kennwert als Subjekt | Mechanismus = Weg mit Strukturbezug als Mechanismus | Urteil = Entscheidung mit Targetbeleg als Urteil
+- Selbsttest: Koeln zeigt den Kernkonflikt: Eine Ampulle, drei Schweigende, und Gold steht gegen ___.
 
 ## Schritt 8 — reflexion: Takeaway & Reflexion — 奖杯还是进站检修
 

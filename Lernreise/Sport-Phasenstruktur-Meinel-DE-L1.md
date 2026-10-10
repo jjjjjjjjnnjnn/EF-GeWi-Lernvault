@@ -8,7 +8,7 @@ operatoren: [beschreiben, analysieren, beurteilen]
 klausurrelevant: true
 datum: 2026-09-25
 tags: [EF, Sport, Bewegungsanalyse]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 
@@ -87,14 +87,26 @@ BEISPIEL (Musteraufgabe mit Loesungsweg):
 
 [Werkzeug: oral-timer]
 
-AUFGABE (analysieren, AFB II): 90-Sekunden-Ansage gegen den Timer: Analysiere das Video (Stemmen ueberrannt, Abwurf 22 m/s statt 24 m/s). Erreiche das Target mit Phasendiagnose von hinten nach vorn. Erreiche das Target: Anlauf 5 Schritte im Rhythmus, Abwurf 24 m/s bei 34 Grad, Weite 46,50 m, kein Uebertreten.
+AUFGABE (analysieren, [AFB II]): Analysiere 90-Sekunden-Ansage gegen den Timer: Analysiere das Video (Stemmen ueberrannt, Abwurf 22 m/s statt 24 m/s). Erreiche das Target mit Phasendiagnose von hinten nach vorn. Erreiche das Target: Anlauf 5 Schritte im Rhythmus, Abwurf 24 m/s bei 34 Grad, Weite 46,50 m, kein Uebertreten.
 
 TARGET: Anlauf 5 Schritte im Rhythmus, Abwurf 24 m/s bei 34 Grad, Weite 46,50 m, kein Uebertreten.
 
 HILFE:
-1. Schritt 1: Benenne zuerst das Abwurfbild der Hauptphase am Target.
-2. Schritt 2: Pruefe dann Stemmbein-Block und Ausholbogen der Vorbereitung.
-3. Schritt 3: Leite eine Korrektur ab: Rhythmus kuerzen, Block setzen, Abwurfhoeche halten.
+- Messdimension: Pruefe Eintrag, Wert und Target mit Bilanzansatz zum Thema Die Phasenstruktur der Bewegung und der Beobacht; notiere nur die Groessen, deute die Folge noch nicht.
+- Strukturdimension: Pruefe Aufbau, Phase und Zielgroesse mit Strukturanalyse zum Thema Die Phasenstruktur der Bewegung und der Beobacht; sammle nur die Merkmale, ohne das Urteil vorwegzunehmen.
+- Bilddimension: Pruefe Kurve, Bild und Zeichen mit Bildvergleich zum Thema Die Phasenstruktur der Bewegung und der Beobacht; notiere Bild und Wirkung, ohne die Deutung zu setzen.
+
+COMPLETION (Lückentext):
+- Lies beide Saetze und ergaenze aus dem Gedaechtnis, ohne zurueckzublaettern:
+- Die ___ der Bewegung und der Beobachtungsbogen
+- Ergaenze den zweiten Schluesselbegriff ___ aus dem Gedaechtnis und pruefe die Richtung ohne Rueckblick.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Befund mit Themenanker (Die Phasenstruktur der Bewegung und der Beobacht) | 5 NP | Skizze mit Achsenbeschriftung als Alternativweg
+Analyse mit Mechanismusbezug (Die Phasenstruktur der Bewegung und der Beobacht) | 5 NP | Tabellenvergleich mit Messprotokoll als Alternativweg
+Urteil mit Targetbeleg (Die Phasenstruktur der Bewegung und der Beobacht) | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
 
 MUSTERLOESUNG: Die Hauptphase liefert nur 22 statt 24 m/s, weil das Stemmbein ueberrannt und der Bogen nicht gespannt wurde; die Vorbereitung ruinierte die Kopplung. Das Target 24 m/s und 46,50 m wird erreicht, indem der Anlauf auf 5 rhythmische Schritte verkuerzt, das Stemmbein aktiv blockiert und der Abwurf bei 34 Grad freigegeben wird. Die Endphase mit Fangschritten sichert die Linie.
 
@@ -106,11 +118,20 @@ VERGLEICH (zwei Verfahren im Kontrast):
 
 VERGLEICH: Waehle zuerst das Verfahren: (i) Phasenanalyse von hinten nach vorn (Ergebnis rueckwaerts lesen) oder (ii) Phasenanalyse von vorn nach hinten (Aufbau vorwaerts planen), dann loesen. Die Wahl des Verfahrens entscheidet ueber die ganze Begruendung.
 
+- [Weg A] Neutralfassung fuer die Wahl: Wenn du Weg A waehlst, arbeitest du im Transfer vor allem mit Kennwerten und Struktur.
+- [Weg B] Neutralfassung fuer die Wahl: Wenn du Weg B waehlst, arbeitest du im Transfer vor allem mit Bild, Kette und Deutung.
+
 AUFGABE A: Fall A (Wettkampfvideo, Weite eingebrochen): Welcher Weg passt?
 
 AUFGABE B: Fall B (Trainingsplanung fuer einen Anfaenger): Welcher Weg passt?
 
-HILFE: A ist Diagnose unter Zeitdruck, also rueckwaerts von der Hauptphase. B ist methodischer Aufbau, also vorwaerts von der Vorbereitung.
+HILFE: Pruefe dimensionsgeleitet, welcher Weg passt: Messdimension mit Kennwert spricht fuer Weg A; Strukturdimension mit Typ-Test spricht fuer Zuordnung und Weg B; Bilddimension mit Bildvergleich sichert beide Wege. Ordne selbst zu; die Zuordnung wird nicht vorweggenommen.
+
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg A oder Weg B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Ueberfuehrt aus VERGLEICH (Vorwahl-Fassung): VERGLEICH: Waehle zuerst das Verfahren: (i) Phasenanalyse von hinten nach vorn (Ergebnis rueckwaerts lesen) oder (ii) Phasenanalyse von vorn nach hinten (Aufbau vorwaerts planen), dann loesen. Die Wahl des Verfahrens entscheidet ueber die ganze Begruendung.
+- Ueberfuehrt aus Schritt-5-HILFE (Vorwahl-Fassung): HILFE: A ist Diagnose unter Zeitdruck, also rueckwaerts von der Hauptphase. B ist methodischer Aufbau, also vorwaerts von der Vorbereitung.
+- Ein-Satz-Kern: Rueckwaertslesen diagnostiziert den Wettkampf, Vorwaertsplanen baut das Training; die Lage entscheidet ueber den Weg.
 
 ANTWORT: A erfordert Weg A, weil das Abwurfbild den Fehler verrät und die Ursache davor liegt. B erfordert Weg B, weil Anfaenger zuerst Rhythmus und Ausholen lernen muessen. Ich waehle A/B, weil Diagnose/Planung das verlangt.
 
@@ -140,9 +161,23 @@ CHECK (3 Fragen zur Selbstkontrolle mit Antworten):
 ## Schritt 7 — szenario: Klausurtransfer — Disziplintrainer Wurf
 ROLLE: Du bist Disziplintrainer Wurf und verteidigst deine Entscheidung vor der Pruefungskommission.
 SITUATION: In Goetzis musst du 90 Sekunden lang Wurf, Phasen und Target (24 m/s, 46,50 m) vor der Kommission verteidigen.
+AUFGABE (beschreiben, [AFB III]): Beschreibe in ca. 150 Woertern Einordnung, zwei Belege mit Mechanismus und Schlussurteil zu Die Phasenstruktur der Bewegung und der Beobacht.
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Befund mit Die Phasenstruktur der Bewegung und der Beobacht-Anker | 5 NP | Skizze mit Achsenbeschriftung als Alternativweg
+Analyse mit Mechanismusbezug (Die Phasenstruktur der Bewegung und der Beobacht) | 5 NP | Tabellenvergleich mit Messprotokoll als Alternativweg
+Urteil mit Targetbeleg (Die Phasenstruktur der Bewegung und der Beobacht) | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
+
 RUBRIC (30 XP): Diagnose mit Fachbegriffen (8 XP) | Massnahme mit Target-Beleg (10 XP) | Verfahrenswahl im Vergleich (7 XP) | Fachsprachlicher Vortrag (5 XP).
 
 `Klausur-Satz: AFB-III-Mustersatz: Die Weite brach ein, weil die ueberrannte Vorbereitung Bogen und Block zerstoerte; ein rhythmischer 5-Schritt-Anlauf wuerde 24 m/s und 46,50 m sichern.`
+
+KERNSATZ (auswendig):
+- Kernsatz: `Vorbereitung ermoeglicht, Hauptphase leistet, Endphase sichert: Diese drei Definitionen tragen jede Phasenanalyse.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = Ausgangslage mit Kennwert als Subjekt | Mechanismus = Weg mit Strukturbezug als Mechanismus | Urteil = Entscheidung mit Targetbeleg als Urteil
+- Selbsttest: Vorbereitung ermoeglicht, Hauptphase leistet, Endphase sichert: Diese drei Definitionen tragen jede ___.
 
 ## Schritt 8 — reflexion: Takeaway & Reflexion
 

@@ -8,7 +8,7 @@ operatoren: [beschreiben, analysieren, beurteilen]
 klausurrelevant: true
 datum: 2026-09-25
 tags: [EF, Sport, Leichtathletik]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 
@@ -36,7 +36,7 @@ Hook (DE): Flutlicht, volle Tribuene, ein einziger Versuch entscheidet ueber Gol
 
 ## Schritt 2 — entdecken: 5术语装备盒
 
-PRETRAINING术语盒(核心5词,先读三遍中德,合书自测中文→德语):
+PRETRAINING术语盒(核心5词,先读三遍中德,合书自测中文->德语):
 
 中文在上,德语在下:
 
@@ -94,14 +94,26 @@ BEISPIEL(含教具操作与解答):
 
 [Werkzeug: formula]
 
-AUFGABE (analysieren, AFB II):起跳角调节器:对比平(21度)与陡(30度),v_h=9,4 m/s,读出远度与重心抛物线,用抛物公式90秒论证。达标线:Absprungwinkel 19 Grad, Anlauf 9,4 m/s, Stuetzzeit 0,12 s, Zielweite 7,80 m。
+AUFGABE (analysieren, [AFB II]): Analysiere 起跳角调节器:对比平(21度)与陡(30度),v_h=9,4 m/s,读出远度与重心抛物线,用抛物公式90秒论证。达标线:Absprungwinkel 19 Grad, Anlauf 9,4 m/s, Stuetzzeit 0,12 s, Zielweite 7,80 m。
 
 Target数值目标:Absprungwinkel 19 Grad, Anlauf 9,4 m/s, Stuetzzeit 0,12 s, Zielweite 7,80 m。
 
 HILFE:
-1. 先定起跳相,对照19度与7,80 m目标,判定是起跳过陡吃水平速度还是腾空落地亏兑现。
-2. 再读9,4 m/s水平速度、0,12 s支撑与重心抛物线,用起跳角与重心术语解释远度差。
-3. 最后从快而平机制推出一条可操作纠正:缩短助跑保节奏、足下放板快蹬、前伸落地。
+- Messdimension: Pruefe Eintrag, Wert und Target mit Bilanzansatz zum Thema Biomechanische Optimierung des Weitsprungs; notiere nur die Groessen, deute die Folge noch nicht.
+- Strukturdimension: Pruefe Aufbau, Phase und Zielgroesse mit Strukturanalyse zum Thema Biomechanische Optimierung des Weitsprungs; sammle nur die Merkmale, ohne das Urteil vorwegzunehmen.
+- Bilddimension: Pruefe Kurve, Bild und Zeichen mit Bildvergleich zum Thema Biomechanische Optimierung des Weitsprungs; notiere Bild und Wirkung, ohne die Deutung zu setzen.
+
+COMPLETION (Lückentext):
+- Lies beide Saetze und ergaenze aus dem Gedaechtnis, ohne zurueckzublaettern:
+- Wer flach bei 19 Grad ___ und vorne landet, sichert 7,80 m.
+- Ergaenze den zweiten Schluesselbegriff ___ aus dem Gedaechtnis und pruefe die Richtung ohne Rueckblick.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Befund mit Themenanker (Biomechanische Optimierung des Weitsprungs) | 5 NP | Skizze mit Achsenbeschriftung als Alternativweg
+Analyse mit Mechanismusbezug (Biomechanische Optimierung des Weitsprungs) | 5 NP | Tabellenvergleich mit Messprotokoll als Alternativweg
+Urteil mit Targetbeleg (Biomechanische Optimierung des Weitsprungs) | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
 
 MUSTERLÖSUNG:对照目标(19度,9,4 m/s,7,80 m),陡起跳虽增加垂直分量却吃掉水平速度,远度从7,80掉到7,05 m。平起跳0,12秒蹬伸保住水平速度,合成矢量拉长抛物线,达标过关。
 
@@ -113,11 +125,20 @@ VERGLEICH辨别实验(双向辨析,先选程序再解题):【选程序】
 
 VERGLEICH:先选程序—— (i) Absprung-Optimierung (Grenze setzen: Anlauf, Stuetz, Winkel) 还是 (ii) Flug- und Landungs-Optimierung (Lage nutzen: Hitch-Kick, Vorturnen) ——再解题。【选程序:问上限与结构选(i),问兑现与情境选(ii)。口述先说 Ich waehle Verfahren (i)/(ii), weil …】
 
+- [Weg A] Neutralfassung fuer die Wahl: Wenn du Weg A waehlst, arbeitest du im Transfer vor allem mit Kennwerten und Struktur.
+- [Weg B] Neutralfassung fuer die Wahl: Wenn du Weg B waehlst, arbeitest du im Transfer vor allem mit Bild, Kette und Deutung.
+
 AUFGABE A:案例A(决赛第三跳蹬伸过陡仅7,30 m)选哪条路?
 
 AUFGABE B:案例B(已有8,00 m实力,落地坐臀亏40 cm)选哪条路?
 
-HILFE:A fragt nach der Weitenquelle und dem Winkel, also Weg A. B fragt nach Verlustverwaltung bei fixierter Parabel, also Weg B.
+HILFE: Pruefe dimensionsgeleitet, welcher Weg passt: Messdimension mit Kennwert spricht fuer Weg A; Strukturdimension mit Typ-Test spricht fuer Zuordnung und Weg B; Bilddimension mit Bildvergleich sichert beide Wege. Ordne selbst zu; die Zuordnung wird nicht vorweggenommen.
+
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg A oder Weg B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Ueberfuehrt aus VERGLEICH (Vorwahl-Fassung): VERGLEICH:先选程序—— (i) Absprung-Optimierung (Grenze setzen: Anlauf, Stuetz, Winkel) 还是 (ii) Flug- und Landungs-Optimierung (Lage nutzen: Hitch-Kick, Vorturnen) ——再解题。【选程序:问上限与结构选(i),问兑现与情境选(ii)。口述先说 Ich waehle Verfahren (i)/(ii), weil …】
+- Ueberfuehrt aus Schritt-5-HILFE (Vorwahl-Fassung): HILFE:A fragt nach der Weitenquelle und dem Winkel, also Weg A. B fragt nach Verlustverwaltung bei fixierter Parabel, also Weg B.
+- Ein-Satz-Kern: 起跳优化定上限,腾空优化管兑现;程序选择跟测量走,不跟感觉走。
 
 ANTWORT:A走程序(i)上限优化,以测量值与机制论证;B走程序(ii)兑现优化,以情境论证。
 
@@ -147,9 +168,23 @@ CHECK检索默写(自测3题,与答案配对):
 ## Schritt 7 — szenario: Klausurtransfer — Bundestrainer Weitsprung
 中文:你是Bundestrainer Weitsprung,在Berliner Olympiastadion, Weitsprung-Finale der Schulmeisterschaft中必须用德语连贯口述(约90秒)诊断、措施与数值目标(Absprungwinkel 19 Grad, Anlauf 9,4 m/s, Stuetzzeit 0,12 s, Zielweite 7,80 m),并以术语举证。
 ROLLE: Du bist Bundestrainer Weitsprung. SITUATION: 在决赛中用德语连贯口述90秒诊断、措施与数值目标(19度,9,4 m/s,7,80 m)。
+AUFGABE (beschreiben, [AFB III]): Beschreibe in ca. 150 Woertern Einordnung, zwei Belege mit Mechanismus und Schlussurteil zu Biomechanische Optimierung des Weitsprungs.
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Befund mit Biomechanische Optimierung des Weitsprungs-Anker | 5 NP | Skizze mit Achsenbeschriftung als Alternativweg
+Analyse mit Mechanismusbezug (Biomechanische Optimierung des Weitsprungs) | 5 NP | Tabellenvergleich mit Messprotokoll als Alternativweg
+Urteil mit Targetbeleg (Biomechanische Optimierung des Weitsprungs) | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
+
 RUBRIC (30 XP):诊断术语8分 | 措施与目标举证7分 | 程序选择对比7分 | 德语表达5分。
 
 `Klausur-Satz: 满分句:该选手浪费远度,因为过陡起跳消耗水平速度;21度快平起跳可拉长抛物线锁定7,80米。`
+
+KERNSATZ (auswendig):
+- Kernsatz: `Wer flach bei 19 Grad abdrueckt und vorne landet, sichert 7,80 m.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = Ausgangslage mit Kennwert als Subjekt | Mechanismus = Weg mit Strukturbezug als Mechanismus | Urteil = Entscheidung mit Targetbeleg als Urteil
+- Selbsttest: Wer flach bei 19 Grad abdrueckt und vorne landet, sichert 7,80 ___.
 
 ## Schritt 8 — reflexion: Takeaway & Reflexion — 奖杯还是进站检修
 

@@ -8,7 +8,7 @@ operatoren: [beschreiben, analysieren, beurteilen]
 klausurrelevant: true
 datum: 2026-09-25
 tags: [EF, Sport, Bewegungsanalyse]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 
@@ -36,7 +36,7 @@ Hook (DE): Siebenkampf, Speerwurf, dritter Versuch: Der Anlauf sieht kraftvoll a
 
 ## Schritt 2 — entdecken: 5术语装备盒
 
-PRETRAINING术语盒(核心5词,先读三遍中德,合书自测中文→德语):
+PRETRAINING术语盒(核心5词,先读三遍中德,合书自测中文->德语):
 
 中文在上,德语在下:
 
@@ -93,14 +93,26 @@ BEISPIEL(含教具操作与解答):
 
 [Werkzeug: oral-timer]
 
-AUFGABE (analysieren, AFB II):90秒口述:分析视频(冲过支撑腿,出手22而非24 m/s),从后往前三相诊断达标。达标线:Anlauf 5 Schritte, Abwurf 24 m/s bei 34 Grad, Weite 46,50 m, kein Uebertreten。
+AUFGABE (analysieren, [AFB II]): Analysiere 90秒口述:分析视频(冲过支撑腿,出手22而非24 m/s),从后往前三相诊断达标。达标线:Anlauf 5 Schritte, Abwurf 24 m/s bei 34 Grad, Weite 46,50 m, kein Uebertreten。
 
 Target数值目标:Anlauf 5 Schritte, Abwurf 24 m/s bei 34 Grad, Weite 46,50 m, kein Uebertreten。
 
 HILFE:
-1. 先定主相出手像,对照24 m/s与46,50 m目标,判定是准备相毁耦合还是主相无力。
-2. 再查准备相五步节奏、支撑块与引臂弓,对照34度出手角,定位死亡点。
-3. 最后推出一条节奏纠正:缩短助跑定五步节奏、设支撑块、保34度出手,结束相跟步保线。
+- Messdimension: Pruefe Eintrag, Wert und Target mit Bilanzansatz zum Thema Die Phasenstruktur der Bewegung und der Beobacht; notiere nur die Groessen, deute die Folge noch nicht.
+- Strukturdimension: Pruefe Aufbau, Phase und Zielgroesse mit Strukturanalyse zum Thema Die Phasenstruktur der Bewegung und der Beobacht; sammle nur die Merkmale, ohne das Urteil vorwegzunehmen.
+- Bilddimension: Pruefe Kurve, Bild und Zeichen mit Bildvergleich zum Thema Die Phasenstruktur der Bewegung und der Beobacht; notiere Bild und Wirkung, ohne die Deutung zu setzen.
+
+COMPLETION (Lückentext):
+- Lies beide Saetze und ergaenze aus dem Gedaechtnis, ohne zurueckzublaettern:
+- Die ___ der Bewegung und der Beobachtungsbogen
+- Ergaenze den zweiten Schluesselbegriff ___ aus dem Gedaechtnis und pruefe die Richtung ohne Rueckblick.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Befund mit Themenanker (Die Phasenstruktur der Bewegung und der Beobacht) | 5 NP | Skizze mit Achsenbeschriftung als Alternativweg
+Analyse mit Mechanismusbezug (Die Phasenstruktur der Bewegung und der Beobacht) | 5 NP | Tabellenvergleich mit Messprotokoll als Alternativweg
+Urteil mit Targetbeleg (Die Phasenstruktur der Bewegung und der Beobacht) | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
 
 MUSTERLÖSUNG:主相仅22而非24 m/s,因支撑被冲过、弓没拉满,准备相毁了耦合。对照目标(24 m/s,46,50 m),缩短助跑定五步节奏、设支撑块、34度出手,结束相跟步保线即达标。
 
@@ -112,11 +124,20 @@ VERGLEICH辨别实验(双向辨析,先选程序再解题):【选程序】
 
 VERGLEICH:先选程序—— (i) Phasenanalyse von hinten nach vorn (Ergebnis rueckwaerts lesen) 还是 (ii) Phasenanalyse von vorn nach hinten (Aufbau vorwaerts planen) ——再解题。【选程序:问上限与结构选(i),问兑现与情境选(ii)。口述先说 Ich waehle Verfahren (i)/(ii), weil …】
 
+- [Weg A] Neutralfassung fuer die Wahl: Wenn du Weg A waehlst, arbeitest du im Transfer vor allem mit Kennwerten und Struktur.
+- [Weg B] Neutralfassung fuer die Wahl: Wenn du Weg B waehlst, arbeitest du im Transfer vor allem mit Bild, Kette und Deutung.
+
 AUFGABE A:案例A(比赛录像远度崩)选哪条路?
 
 AUFGABE B:案例B(给新手编训练计划)选哪条路?
 
-HILFE:A ist Diagnose unter Zeitdruck, also rueckwaerts von der Hauptphase. B ist methodischer Aufbau, also vorwaerts von der Vorbereitung.
+HILFE: Pruefe dimensionsgeleitet, welcher Weg passt: Messdimension mit Kennwert spricht fuer Weg A; Strukturdimension mit Typ-Test spricht fuer Zuordnung und Weg B; Bilddimension mit Bildvergleich sichert beide Wege. Ordne selbst zu; die Zuordnung wird nicht vorweggenommen.
+
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg A oder Weg B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Ueberfuehrt aus VERGLEICH (Vorwahl-Fassung): VERGLEICH:先选程序—— (i) Phasenanalyse von hinten nach vorn (Ergebnis rueckwaerts lesen) 还是 (ii) Phasenanalyse von vorn nach hinten (Aufbau vorwaerts planen) ——再解题。【选程序:问上限与结构选(i),问兑现与情境选(ii)。口述先说 Ich waehle Verfahren (i)/(ii), weil …】
+- Ueberfuehrt aus Schritt-5-HILFE (Vorwahl-Fassung): HILFE:A ist Diagnose unter Zeitdruck, also rueckwaerts von der Hauptphase. B ist methodischer Aufbau, also vorwaerts von der Vorbereitung.
+- Ein-Satz-Kern: 比赛诊断倒查,训练搭建顺建,情境定程序。
 
 ANTWORT:A走回读程序,从主相倒查;B走顺建程序,从准备相正建。
 
@@ -146,9 +167,23 @@ CHECK检索默写(自测3题,与答案配对):
 ## Schritt 7 — szenario: Klausurtransfer — Disziplintrainer Wurf
 中文:你是Disziplintrainer Wurf,在Koelner Suedstadion, Schul-Speerwurf-Cup中必须用德语连贯口述(约90秒)诊断、措施与数值目标(Anlauf 5 Schritte, Abwurf 24 m/s bei 34 Grad, Weite 46,50 m, kein Uebertreten),并以术语举证。
 ROLLE: Du bist Disziplintrainer Wurf. SITUATION: 在科隆杯用德语90秒陈述诊断、措施与目标(24 m/s,46,50 m)。
+AUFGABE (beschreiben, [AFB III]): Beschreibe in ca. 150 Woertern Einordnung, zwei Belege mit Mechanismus und Schlussurteil zu Die Phasenstruktur der Bewegung und der Beobacht.
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Befund mit Die Phasenstruktur der Bewegung und der Beobacht-Anker | 5 NP | Skizze mit Achsenbeschriftung als Alternativweg
+Analyse mit Mechanismusbezug (Die Phasenstruktur der Bewegung und der Beobacht) | 5 NP | Tabellenvergleich mit Messprotokoll als Alternativweg
+Urteil mit Targetbeleg (Die Phasenstruktur der Bewegung und der Beobacht) | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
+
 RUBRIC (30 XP):诊断术语8分 | 措施与目标举证7分 | 程序选择对比7分 | 德语表达5分。
 
 `Klausur-Satz: 满分句:远度崩因准备相冲毁弓与块;五步节奏助跑可锁定24 m/s与46,50米。`
+
+KERNSATZ (auswendig):
+- Kernsatz: `Wer Rueckwaerts liest und Vorwaerts baut, trifft 46,50 m.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = Ausgangslage mit Kennwert als Subjekt | Mechanismus = Weg mit Strukturbezug als Mechanismus | Urteil = Entscheidung mit Targetbeleg als Urteil
+- Selbsttest: Wer Rueckwaerts liest und Vorwaerts baut, trifft 46,50 ___.
 
 ## Schritt 8 — reflexion: Takeaway & Reflexion — 奖杯还是进站检修
 

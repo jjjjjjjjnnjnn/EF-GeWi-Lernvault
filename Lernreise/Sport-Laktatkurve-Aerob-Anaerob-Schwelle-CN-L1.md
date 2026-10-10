@@ -8,7 +8,7 @@ operatoren: [erklaeren, deuten, begruenden]
 klausurrelevant: true
 datum: 2026-09-26
 tags: [EF, Sport, CN]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 
@@ -39,7 +39,7 @@ Hook (DE): Kilometer 34 im Marathon: Die Favoritin bricht auf der Zielgeraden ei
 
 ## Schritt 2 — entdecken: 5术语装备盒
 
-PRETRAINING术语盒(核心5词,先读三遍中德,合书自测中文→德语):
+PRETRAINING术语盒(核心5词,先读三遍中德,合书自测中文->德语):
 
 中文在上,德语在下:
 
@@ -97,14 +97,26 @@ BEISPIEL(含教具操作与解答):
 
 [Werkzeug: formula]
 
-AUFGABE (analysieren, AFB II):逐级调节器:3,0至5,0 m/s,读拐点、无氧阈与脉搏,90秒定两区间。达标线:IAS bei 4,2 m/s, Laktat 4,1 mmol/L, Puls 172/min, Grundlagentempo 3,6 m/s。
+AUFGABE (analysieren, [AFB II]): Analysiere 逐级调节器:3,0至5,0 m/s,读拐点、无氧阈与脉搏,90秒定两区间。达标线:IAS bei 4,2 m/s, Laktat 4,1 mmol/L, Puls 172/min, Grundlagentempo 3,6 m/s。
 
 Target数值目标:IAS bei 4,2 m/s, Laktat 4,1 mmol/L, Puls 172/min, Grundlagentempo 3,6 m/s。
 
 HILFE:
-1. 先标曲线拐点,在4,0处读出无氧阈,对照4,2 m/s与172脉搏目标定阈值。
-2. 再分三区:3,6 m/s以下打底子、4,0至4,2练阈值节奏、之上只配间歇,说明区间逻辑。
-3. 最后为每区开一处方配速与脉搏,说明配速从4,4降到4,2如何摆平曲线达标。
+- Messdimension: Pruefe Eintrag, Wert und Target mit Bilanzansatz zum Thema Laktatkurve mit aerober und anaerober Schwelle; notiere nur die Groessen, deute die Folge noch nicht.
+- Strukturdimension: Pruefe Aufbau, Phase und Zielgroesse mit Strukturanalyse zum Thema Laktatkurve mit aerober und anaerober Schwelle; sammle nur die Merkmale, ohne das Urteil vorwegzunehmen.
+- Bilddimension: Pruefe Kurve, Bild und Zeichen mit Bildvergleich zum Thema Laktatkurve mit aerober und anaerober Schwelle; notiere Bild und Wirkung, ohne die Deutung zu setzen.
+
+COMPLETION (Lückentext):
+- Lies beide Saetze und ergaenze aus dem Gedaechtnis, ohne zurueckzublaettern:
+- Wer Kurve liest und ___ haelt, trifft 4,2 m/s bei 172er Puls.
+- Ergaenze den zweiten Schluesselbegriff ___ aus dem Gedaechtnis und pruefe die Richtung ohne Rueckblick.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Befund mit Themenanker (Laktatkurve mit aerober und anaerober Schwelle) | 5 NP | Skizze mit Achsenbeschriftung als Alternativweg
+Analyse mit Mechanismusbezug (Laktatkurve mit aerober und anaerober Schwelle) | 5 NP | Tabellenvergleich mit Messprotokoll als Alternativweg
+Urteil mit Targetbeleg (Laktatkurve mit aerober und anaerober Schwelle) | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
 
 MUSTERLÖSUNG:拐点在4,2 m/s、172脉搏;3,6 m/s下乳酸2以内可跑60分钟打底。4,0至4,2练阈值节奏,之上只配间歇。配速从4,4降到4,2,曲线摆平即达标。
 
@@ -116,11 +128,20 @@ VERGLEICH辨别实验(双向辨析,先选程序再解题):【选程序】
 
 VERGLEICH:先选程序—— (i) Laktatgesteuerte Zonensteuerung (Kurve lesen, dann dosieren) 还是 (ii) Puls- und gefuehlsgesteuerte Dosierung (Pulsuhr plus RPE-Skala) ——再解题。【选程序:问上限与结构选(i),问兑现与情境选(ii)。口述先说 Ich waehle Verfahren (i)/(ii), weil …】
 
+- [Weg A] Neutralfassung fuer die Wahl: Wenn du Weg A waehlst, arbeitest du im Transfer vor allem mit Kennwerten und Struktur.
+- [Weg B] Neutralfassung fuer die Wahl: Wenn du Weg B waehlst, arbeitest du im Transfer vor allem mit Bild, Kette und Deutung.
+
 AUFGABE A:案例A(有实验室曲线,冬训打底)选哪条?
 
 AUFGABE B:案例B(野外只有心率表)选哪条?
 
-HILFE:A hat Kurvendaten, also Weg A mit Zonen. B hat nur Feldsignale, also Weg B mit Puls und Empfinden.
+HILFE: Pruefe dimensionsgeleitet, welcher Weg passt: Messdimension mit Kennwert spricht fuer Weg A; Strukturdimension mit Typ-Test spricht fuer Zuordnung und Weg B; Bilddimension mit Bildvergleich sichert beide Wege. Ordne selbst zu; die Zuordnung wird nicht vorweggenommen.
+
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg A oder Weg B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Ueberfuehrt aus VERGLEICH (Vorwahl-Fassung): VERGLEICH:先选程序—— (i) Laktatgesteuerte Zonensteuerung (Kurve lesen, dann dosieren) 还是 (ii) Puls- und gefuehlsgesteuerte Dosierung (Pulsuhr plus RPE-Skala) ——再解题。【选程序:问上限与结构选(i),问兑现与情境选(ii)。口述先说 Ich waehle Verfahren (i)/(ii), weil …】
+- Ueberfuehrt aus Schritt-5-HILFE (Vorwahl-Fassung): HILFE:A hat Kurvendaten, also Weg A mit Zonen. B hat nur Feldsignale, also Weg B mit Puls und Empfinden.
+- Ein-Satz-Kern: 实验室听曲线,野外听脉搏,条件选程序。
 
 ANTWORT:A走曲线定量程序;B走脉搏体感程序,条件定路线。
 
@@ -150,9 +171,23 @@ CHECK检索默写(自测3题,与答案配对):
 ## Schritt 7 — szenario: Klausurtransfer — Leistungsdiagnostiker
 中文:你是Leistungsdiagnostiker,在Leverkusener BayArena-Nebenplatz, 5000-m-Kaderlauf中必须用德语连贯口述(约90秒)诊断、措施与数值目标(IAS bei 4,2 m/s, Laktat 4,1 mmol/L, Puls 172/min, Grundlagentempo 3,6 m/s),并以术语举证。
 ROLLE: Du bist Leistungsdiagnostiker. SITUATION: 在勒沃库森用德语90秒陈述曲线、双阈与目标(4,2 m/s,172脉搏)。
+AUFGABE (erklaeren, [AFB III]): Erklaere in ca. 150 Woertern Einordnung, zwei Belege mit Mechanismus und Schlussurteil zu Laktatkurve mit aerober und anaerober Schwelle.
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Befund mit Laktatkurve mit aerober und anaerober Schwelle-Anker | 5 NP | Skizze mit Achsenbeschriftung als Alternativweg
+Analyse mit Mechanismusbezug (Laktatkurve mit aerober und anaerober Schwelle) | 5 NP | Tabellenvergleich mit Messprotokoll als Alternativweg
+Urteil mit Targetbeleg (Laktatkurve mit aerober und anaerober Schwelle) | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
+
 RUBRIC (30 XP):诊断术语8分 | 措施与目标举证7分 | 程序选择对比7分 | 德语表达5分。
 
 `Klausur-Satz: 满分句:选手崩因配速超无氧阈、微分转正;4,2 m/s配172脉搏可守住稳态。`
+
+KERNSATZ (auswendig):
+- Kernsatz: `Wer Kurve liest und Schwelle haelt, trifft 4,2 m/s bei 172er Puls.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = Ausgangslage mit Kennwert als Subjekt | Mechanismus = Weg mit Strukturbezug als Mechanismus | Urteil = Entscheidung mit Targetbeleg als Urteil
+- Selbsttest: Wer Kurve liest und Schwelle haelt, trifft 4,2 m/s bei 172er ___.
 
 ## Schritt 8 — reflexion: Takeaway & Reflexion — 奖杯还是进站检修
 

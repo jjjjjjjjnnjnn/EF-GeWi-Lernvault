@@ -8,7 +8,7 @@ operatoren: [beschreiben, erklaeren, beurteilen]
 klausurrelevant: true
 datum: 2026-09-26
 tags: [EF, Sport, Trainingslehre]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 
@@ -39,7 +39,7 @@ Hook (DE): Kniebeuge-Testtag: Zwei Schueler, gleiche Hantel, gleicher Schweiss. 
 
 ## Schritt 2 — entdecken: 5术语装备盒
 
-PRETRAINING术语盒(核心5词,先读三遍中德,合书自测中文→德语):
+PRETRAINING术语盒(核心5词,先读三遍中德,合书自测中文->德语):
 
 中文在上,德语在下:
 
@@ -97,14 +97,26 @@ BEISPIEL(含教具操作与解答):
 
 [Werkzeug: oral-timer]
 
-AUFGABE (analysieren, AFB II):90-Sekunden-Ansage gegen den Timer: Dose 5x5 Kniebeuge mit Prozent, Pause und Frequenz und begruende das Target.达标线:80 kg bei 85 Prozent, 5x5, Pause 3 min, 2 Einheiten/Woche, Ziel 80 kg。
+AUFGABE (analysieren, [AFB II]): Analysiere 90-Sekunden-Ansage gegen den Timer: Dose 5x5 Kniebeuge mit Prozent, Pause und Frequenz und begruende das Target.达标线:80 kg bei 85 Prozent, 5x5, Pause 3 min, 2 Einheiten/Woche, Ziel 80 kg。
 
 Target数值目标:80 kg bei 85 Prozent, 5x5, Pause 3 min, 2 Einheiten/Woche, Ziel 80 kg。
 
 HILFE:
-1. 先定85%强度与5×5的量,对照80公斤目标,说明它为何过阈又可恢复。
-2. 再定3分钟间歇与每周两次频率,说明密度与频率如何保住超量恢复浪。
-3. 最后点名刺激等级与踩浪时机,说明如何从60公斤叠到80公斤达标。
+- Messdimension: Pruefe Eintrag, Wert und Target mit Bilanzansatz zum Thema Belastungsreiz und Trainingsnormative; notiere nur die Groessen, deute die Folge noch nicht.
+- Strukturdimension: Pruefe Aufbau, Phase und Zielgroesse mit Strukturanalyse zum Thema Belastungsreiz und Trainingsnormative; sammle nur die Merkmale, ohne das Urteil vorwegzunehmen.
+- Bilddimension: Pruefe Kurve, Bild und Zeichen mit Bildvergleich zum Thema Belastungsreiz und Trainingsnormative; notiere Bild und Wirkung, ohne die Deutung zu setzen.
+
+COMPLETION (Lückentext):
+- Lies beide Saetze und ergaenze aus dem Gedaechtnis, ohne zurueckzublaettern:
+- Klausur-Satz: ___ zeigt den Kernkonflikt: Gleiches Eisen, andere Kurve, weil nur die Dosis entscheidet.
+- Ergaenze den zweiten Schluesselbegriff ___ aus dem Gedaechtnis und pruefe die Richtung ohne Rueckblick.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Befund mit Themenanker (Belastungsreiz und Trainingsnormative) | 5 NP | Skizze mit Achsenbeschriftung als Alternativweg
+Analyse mit Mechanismusbezug (Belastungsreiz und Trainingsnormative) | 5 NP | Tabellenvergleich mit Messprotokoll als Alternativweg
+Urteil mit Targetbeleg (Belastungsreiz und Trainingsnormative) | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
 
 MUSTERLÖSUNG:85 Prozent mal 5x5 bei 3 Minuten Pause zweimal woechentlich ist ueberschwellig und voll erholbar; die Welle summiert sich von 60 auf 80 Kilo. Das Target wird erreicht, weil Dichte und Frequenz Superkompensation zulassen. Taegliches Training wuerde die Kurve druecken.
 
@@ -116,11 +128,20 @@ VERGLEICH辨别实验(双向辨析,先选程序再解题):【选程序】
 
 VERGLEICH:先选程序—— (i) Intensitaetsbetonung (schwer, wenig, lang pausiert: Maximalkraft) 还是 (ii) Umfangsbetonung (leicht, viel, kurz pausiert: Kraftausdauer) ——再解题。【选程序:问上限与结构选(i),问兑现与情境选(ii)。口述先说 Ich waehle Verfahren (i)/(ii), weil …】
 
+- [Weg A] Neutralfassung fuer die Wahl: Wenn du Weg A waehlst, arbeitest du im Transfer vor allem mit Kennwerten und Struktur.
+- [Weg B] Neutralfassung fuer die Wahl: Wenn du Weg B waehlst, arbeitest du im Transfer vor allem mit Bild, Kette und Deutung.
+
 AUFGABE A:Fall A (Sprinter braucht Startkraft): Welcher Weg?
 
 AUFGABE B:Fall B (Ruderer braucht Durchhaltekraft): Welcher Weg?
 
-HILFE:A braucht neuronale Kraft, also schwer. B braucht Ermuedungswiderstand, also viel.
+HILFE: Pruefe dimensionsgeleitet, welcher Weg passt: Messdimension mit Kennwert spricht fuer Weg A; Strukturdimension mit Typ-Test spricht fuer Zuordnung und Weg B; Bilddimension mit Bildvergleich sichert beide Wege. Ordne selbst zu; die Zuordnung wird nicht vorweggenommen.
+
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg A oder Weg B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Ueberfuehrt aus VERGLEICH (Vorwahl-Fassung): VERGLEICH:先选程序—— (i) Intensitaetsbetonung (schwer, wenig, lang pausiert: Maximalkraft) 还是 (ii) Umfangsbetonung (leicht, viel, kurz pausiert: Kraftausdauer) ——再解题。【选程序:问上限与结构选(i),问兑现与情境选(ii)。口述先说 Ich waehle Verfahren (i)/(ii), weil …】
+- Ueberfuehrt aus Schritt-5-HILFE (Vorwahl-Fassung): HILFE:A braucht neuronale Kraft, also schwer. B braucht Ermuedungswiderstand, also viel.
+- Ein-Satz-Kern: Schwer und wenig oder leicht und viel: Die Zielqualitaet waehlt den Weg.
 
 ANTWORT:A erfordert Weg A mit 85 bis 95 Prozent und langen Pausen. B erfordert Weg B mit 60 Prozent und kurzen Pausen. Ich waehle A/B, weil Zielqualitaet es verlangt.
 
@@ -150,9 +171,23 @@ CHECK检索默写(自测3题,与答案配对):
 ## Schritt 7 — szenario: Klausurtransfer — Athletiktrainer Kraftraum
 中文:你是Athletiktrainer Kraftraum,在Dortmunder Kraftraum Nord, Hantel-Plateau (Kniebeuge-Testtag)中必须用德语连贯口述(约90秒)诊断、措施与数值目标(80 kg bei 85 Prozent, 5x5, Pause 3 min, 2 Einheiten/Woche, Ziel 80 kg),并以术语举证。
 ROLLE: Du bist Athletiktrainer Kraftraum. SITUATION: In Dortmund musst du 90 Sekunden lang Reiz, Normative und Target (80 kg, 5x5) verteidigen.
+AUFGABE (beschreiben, [AFB III]): Beschreibe in ca. 150 Woertern Einordnung, zwei Belege mit Mechanismus und Schlussurteil zu Belastungsreiz und Trainingsnormative.
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Befund mit Belastungsreiz und Trainingsnormative-Anker | 5 NP | Skizze mit Achsenbeschriftung als Alternativweg
+Analyse mit Mechanismusbezug (Belastungsreiz und Trainingsnormative) | 5 NP | Tabellenvergleich mit Messprotokoll als Alternativweg
+Urteil mit Targetbeleg (Belastungsreiz und Trainingsnormative) | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
+
 RUBRIC (30 XP):诊断术语8分 | 措施与目标举证7分 | 程序选择对比7分 | 德语表达5分。
 
 `Klausur-Satz: AFB-III-Mustersatz: Die Stagnation entstand, weil unterswellige Reize ohne Welle verpufften; 85 Prozent im 5x5-Rhythmus wuerden 80 kg sichern.`
+
+KERNSATZ (auswendig):
+- Kernsatz: `Dortmund zeigt den Kernkonflikt: Gleiches Eisen, andere Kurve, weil nur die Dosis entscheidet.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = Ausgangslage mit Kennwert als Subjekt | Mechanismus = Weg mit Strukturbezug als Mechanismus | Urteil = Entscheidung mit Targetbeleg als Urteil
+- Selbsttest: Dortmund zeigt den Kernkonflikt: Gleiches Eisen, andere Kurve, weil nur die Dosis ___.
 
 ## Schritt 8 — reflexion: Takeaway & Reflexion — 奖杯还是进站检修
 

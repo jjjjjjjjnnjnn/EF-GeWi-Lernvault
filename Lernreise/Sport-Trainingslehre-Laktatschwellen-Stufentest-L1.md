@@ -8,7 +8,7 @@ operatoren: [beschreiben, analysieren, interpretieren]
 klausurrelevant: true
 datum: 2026-10-03
 tags: [EF, Sport, Trainingslehre, Ausdauer, Laktatstufentest, Aerobe-Schwelle, Anaerobe-Schwelle, MLSS]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Trainingslehre: Laktatstufentest, Aerobe und Anaerobe Schwelle (L1, Ziel Klausur)
@@ -29,7 +29,7 @@ Du laeufst bei einem Zehn-Kilometer-Volkslauf mit. Die ersten vier Kilometer rol
 `Klausur-Satz: An der anaeroben Schwelle (maximales Laktat-Steady-State, MLSS) entsprechen Laktatbildung und Laktatabbau einander gerade noch; oberhalb dieser Belastungsintensitaet kumuliert die Milchsaeure exponentiell und fuehrt zur azidotischen Muskelerschoepfung.`
 
 ## Schritt 2 — entdecken: Das physiologische Vokabular der Leistungsdiagnostik
-PRETRAINING术语盒（核心4词，先读三遍中德，合书自测中文→德语）：
+PRETRAINING术语盒（核心4词，先读三遍中德，合书自测中文->德语）：
 
 - 乳酸 / 丙酮酸还原产物 — Laktat: 葡萄糖在无氧酵解代谢中由丙酮酸还原生成的高能中间代谢产物，非终末废物，可在心肌、慢肌纤维与肝脏中作为优质燃料再利用。 Das Salz der Milchsaeure, das bei unzureichender Sauerstoffversorgung im anaeroben Glukosestoffwechsel anfaellt.
 - 有氧阈值 — Aerobe Schwelle (ca. 2 mmol/l): 血液乳酸浓度首次显著高出安静水平（约 1.0–1.5 mmol/l）的运动强度临界点，在此之下能量完全由有氧脂类与糖类代谢供给。 Die Belastungsintensitaet, bei der der Laktatspiegel erstmals ueber den Ruhewert ansteigt.
@@ -62,13 +62,30 @@ Laktat (mmol/l)
 
 [Werkzeug: balance-board]
 
-AUFGABE (beschreiben & interpretieren, AFB I/II):
+AUFGABE (beschreiben & interpretieren, [AFB I/II]): Beschreibe die folgende Situation mit Kennwerten und Mechanismus.
 Zwei Laeufer (Laeufer 1 = untrainiert, Laeufer 2 = trainierter Marathonlaeufer) absolvieren einen Laufband-Stufentest (Stufen um $2\,\text{km/h}$ alle 3 Minuten).
 Messergebnisse:
 - Bei $12\,\text{km/h}$: Laeufer 1 hat $4{,}8\,\text{mmol/l}$ Laktat; Laeufer 2 hat $1{,}6\,\text{mmol/l}$ Laktat.
 - Bei $16\,\text{km/h}$: Laeufer 1 musste bei $13\,\text{km/h}$ abbrechen; Laeufer 2 erreicht genau $3{,}9\,\text{mmol/l}$ Laktat.
 1. Bestimme die anaerobe Schwelle fuer beide Laeufer.
 2. Interpretiere die physiologischen Ursachen fuer den markanten Unterschied bei $12\,\text{km/h}$ (Mitochondriendichte, Kapillarisierung, Enzymaktivitaet).
+
+HILFE:
+- Messdimension: Pruefe Eintrag, Wert und Target mit Bilanzansatz zum Thema Trainingslehre; notiere nur die Groessen, deute die Folge noch nicht.
+- Strukturdimension: Pruefe Aufbau, Phase und Zielgroesse mit Strukturanalyse zum Thema Trainingslehre; sammle nur die Merkmale, ohne das Urteil vorwegzunehmen.
+- Bilddimension: Pruefe Kurve, Bild und Zeichen mit Bildvergleich zum Thema Trainingslehre; notiere Bild und Wirkung, ohne die Deutung zu setzen.
+
+COMPLETION (Lückentext):
+- Lies beide Saetze und ergaenze aus dem Gedaechtnis, ohne zurueckzublaettern:
+- An der ___ Schwelle (maximales Laktat-Steady-State, MLSS) entsprechen Laktatbildung und Laktatabbau einander gerade noch; oberhalb dieser Belastungsintensitaet kumuliert die Milchsaeure exponentiell und fuehrt zur azidotischen Muskelerschoepfung.
+- Ergaenze den zweiten Schluesselbegriff ___ aus dem Gedaechtnis und pruefe die Richtung ohne Rueckblick.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Befund mit Themenanker (Trainingslehre) | 5 NP | Skizze mit Achsenbeschriftung als Alternativweg
+Analyse mit Mechanismusbezug (Trainingslehre) | 5 NP | Tabellenvergleich mit Messprotokoll als Alternativweg
+Urteil mit Targetbeleg (Trainingslehre) | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
 
 MUSTERLOESUNG:
 1. Bestimmung der Schwellen:
@@ -86,16 +103,20 @@ MUSTERLOESUNG:
 VERGLEICH: Aerobe Schwelle (2 mmol/l) vs. Anaerobe Schwelle (4 mmol/l / MLSS) (选概念)
 
 - Position A (Aerobe Schwelle / Grundlagenausdauer 1 - GA1):
-  - Laktatwert: Bis ca. $2\,\text{mmol/l}$.
-  - Energietraeger: Vorwiegend freie Fettsaeuren unter reichlich Sauerstoffverbrauch ($O_2$).
-  - Ermuedung: Extrem gering; tagelange Bewegung theoretisch moeglich (Fettverbrennungspuls).
+  - [Weg A] Neutralfassung fuer die Wahl: Wenn du Weg A waehlst, arbeitest du im Transfer vor allem mit diesem Fokus.
 - Position B (Anaerobe Schwelle / Schwellentraining - GA2 / WSA):
-  - Laktatwert: Bei ca. $4\,\text{mmol/l}$ (individuell variierend).
-  - Energietraeger: Fast ausschliesslich Glukose (aerob und anaerob gemischt).
-  - Ermuedung: Maximal 45 bis 60 Minuten durchhaltbar; Ueberschreitung fuehrt binnen Minuten zum Leistungseinbruch durch Azidose ($H^+$-Ionen hemmen Schluesselenzyme).
+  - [Weg B] Neutralfassung fuer die Wahl: Wenn du Weg B waehlst, arbeitest du im Transfer vor allem mit diesem Fokus.
 
 Entscheidungsregel fuer die Klausur:
 Wird nach `Trainingssteuerung fuer Marathon` gefragt, betone immer: Rund 80 % des Trainingsvolumens muessen unterhalb der aeroben Schwelle im GA1-Bereich stattfinden, um die aerobe Basis und den Fettstoffwechsel maximal auszubauen!
+
+HILFE: Pruefe dimensionsgeleitet, welcher Weg passt: Messdimension mit Kennwert spricht fuer Weg A; Strukturdimension mit Typ-Test spricht fuer Zuordnung und Weg B; Bilddimension mit Bildvergleich sichert beide Wege. Ordne selbst zu; die Zuordnung wird nicht vorweggenommen.
+
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg A oder Weg B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Ueberfuehrt aus VERGLEICH (Vorwahl-Fassung): - Position A (Aerobe Schwelle / Grundlagenausdauer 1 - GA1): | - Position B (Anaerobe Schwelle / Schwellentraining - GA2 / WSA): | Entscheidungsregel fuer die Klausur: | - Laktatwert: Bis ca. $2\,\text{mmol/l}$. | - Energietraeger: Vorwiegend freie Fettsaeuren unter reichlich Sauerstoffverbrauch ($O_2$). | - Ermuedung: Extrem gering; tagelange Bewegung theoretisch moeglich (Fettverbrennungspuls). | - Laktatwert: Bei ca. $4\,\text{mmol/l}$ (individuell variierend). | - Energietraeger: Fast ausschliesslich Glukose (aerob und anaerob gemischt). | - Ermuedung: Maximal 45 bis 60 Minuten durchhaltbar; Ueberschreitung fuehrt binnen Minuten zum Leistungseinbruch durch Azidose ($H^+$-Ionen hemmen Schluesselenzyme).
+- Ueberfuehrt aus Schritt-5-HILFE (Vorwahl-Fassung): (kein direktes Vorwahl-Urteil im Original; HILFE war bereits richtungsweisend - bestaetigt.)
+- Ein-Satz-Kern: Der passende Weg folgt dem Signalwort, nicht dem Gefuehl.
 
 ## Schritt 6 — check: Klausur-Transfer Trainingssteuerung im Schulsport
 
@@ -111,6 +132,20 @@ Erklaere die muskelphysiologischen Ursachen dieses Einbruchs anhand des pH-Werte
 ### AFB III: Trainingsplan-Kritik
 Ein Fitness-Influencer behauptet: "Wer schneller werden will, muss in jedem Training bis zum Erbrechen sprinten, damit der Muskel lernt, mit Laktat umzugehen."
 Beurteile diese Aussage sportwissenschaftlich und zeige Gefahren fuer die aerobe Kapazitaet auf.
+
+AUFGABE (beschreiben, [AFB III]): Beschreibe in ca. 150 Woertern Einordnung, zwei Belege mit Mechanismus und Schlussurteil zu Trainingslehre.
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Befund mit Trainingslehre-Anker | 5 NP | Skizze mit Achsenbeschriftung als Alternativweg
+Analyse mit Mechanismusbezug (Trainingslehre) | 5 NP | Tabellenvergleich mit Messprotokoll als Alternativweg
+Urteil mit Targetbeleg (Trainingslehre) | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
+
+KERNSATZ (auswendig):
+- Kernsatz: `Die differenzierte Reflexion erfordert eine stringente Verknuepfung von theoretischem Kriterienkatalog und konkretem Klausurmaterial.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = Ausgangslage mit Kennwert als Subjekt | Mechanismus = Weg mit Strukturbezug als Mechanismus | Urteil = Entscheidung mit Targetbeleg als Urteil
+- Selbsttest: Die differenzierte Reflexion erfordert eine stringente Verknuepfung von theoretischem Kriterienkatalog und konkretem ___.
 
 ## Schritt 7 — check: Format-Check & Scoring
 

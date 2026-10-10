@@ -8,7 +8,7 @@ operatoren: [beschreiben, erklaeren, beurteilen]
 klausurrelevant: true
 datum: 2026-09-26
 tags: [EF, Sport, Ausdauer]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 
@@ -39,7 +39,7 @@ Hook (DE): Kilometer 34 im Marathon: Die Favoritin bricht auf der Zielgeraden ei
 
 ## Schritt 2 — entdecken: 5术语装备盒
 
-PRETRAINING术语盒(核心5词,先读三遍中德,合书自测中文→德语):
+PRETRAINING术语盒(核心5词,先读三遍中德,合书自测中文->德语):
 
 中文在上,德语在下:
 
@@ -97,14 +97,26 @@ BEISPIEL(含教具操作与解答):
 
 [Werkzeug: formula]
 
-AUFGABE (analysieren, AFB II):Stufentest-Regler: Stufen 3,0 bis 5,0 m/s, lies Knick, IAS und Puls ab. Erreiche das Target und leite zwei Trainingszonen in 90 Sekunden ab.达标线:IAS bei 4,6 m/s, Laktat 4,0 mmol/L, Puls 168/min, Grundlagentempo 4,0 m/s。
+AUFGABE (analysieren, [AFB II]): Analysiere stufentest-Regler: Stufen 3,0 bis 5,0 m/s, lies Knick, IAS und Puls ab. Erreiche das Target und leite zwei Trainingszonen in 90 Sekunden ab.达标线:IAS bei 4,6 m/s, Laktat 4,0 mmol/L, Puls 168/min, Grundlagentempo 4,0 m/s。
 
 Target数值目标:IAS bei 4,6 m/s, Laktat 4,0 mmol/L, Puls 168/min, Grundlagentempo 4,0 m/s。
 
 HILFE:
-1. 先标曲线拐点,在4,0处读出无氧阈,对照4,6 m/s与168脉搏目标定阈值。
-2. 再分三区:4,0 m/s以下打底子、4,4至4,6练阈值节奏、之上只配4×1000间歇,说明区间逻辑。
-3. 最后把配速从4,8降到4,6使d[La]/dt归零,说明稳态守住即达标。
+- Messdimension: Pruefe Eintrag, Wert und Target mit Bilanzansatz zum Thema Laktatkurve und aerobe sowie anaerobe Schwelle; notiere nur die Groessen, deute die Folge noch nicht.
+- Strukturdimension: Pruefe Aufbau, Phase und Zielgroesse mit Strukturanalyse zum Thema Laktatkurve und aerobe sowie anaerobe Schwelle; sammle nur die Merkmale, ohne das Urteil vorwegzunehmen.
+- Bilddimension: Pruefe Kurve, Bild und Zeichen mit Bildvergleich zum Thema Laktatkurve und aerobe sowie anaerobe Schwelle; notiere Bild und Wirkung, ohne die Deutung zu setzen.
+
+COMPLETION (Lückentext):
+- Lies beide Saetze und ergaenze aus dem Gedaechtnis, ohne zurueckzublaettern:
+- ___ zeigt den Kernkonflikt: Zwischen tragbar und teuer liegt nur ein Atemzug, die Kurve zieht die Grenze.
+- Ergaenze den zweiten Schluesselbegriff ___ aus dem Gedaechtnis und pruefe die Richtung ohne Rueckblick.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Befund mit Themenanker (Laktatkurve und aerobe sowie anaerobe Schwelle) | 5 NP | Skizze mit Achsenbeschriftung als Alternativweg
+Analyse mit Mechanismusbezug (Laktatkurve und aerobe sowie anaerobe Schwelle) | 5 NP | Tabellenvergleich mit Messprotokoll als Alternativweg
+Urteil mit Targetbeleg (Laktatkurve und aerobe sowie anaerobe Schwelle) | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
 
 MUSTERLÖSUNG:Der Knick liegt bei 4,6 m/s und 168er Puls; darunter bei 4,0 m/s bleibt Laktat unter 2 mmol/L, also Grundlagenausdauer ueber 60 Minuten. Zwischen 4,4 und 4,6 m/s liegt das Tempotraining an der IAS, darueber nur 4-mal-1000-m-Intervalle. Wer das Renntempo von 4,8 auf 4,6 m/s zuruecknimmt, haelt d[La]/dt bei null und erreicht das Target.
 
@@ -116,11 +128,20 @@ VERGLEICH辨别实验(双向辨析,先选程序再解题):【选程序】
 
 VERGLEICH:先选程序—— (i) Laktatgesteuerte Zonensteuerung (Kurve lesen, dann dosieren) 还是 (ii) Puls- und gefuehlsgesteuerte Dosierung (Pulsuhr plus RPE-Skala) ——再解题。【选程序:问上限与结构选(i),问兑现与情境选(ii)。口述先说 Ich waehle Verfahren (i)/(ii), weil …】
 
+- [Weg A] Neutralfassung fuer die Wahl: Wenn du Weg A waehlst, arbeitest du im Transfer vor allem mit Kennwerten und Struktur.
+- [Weg B] Neutralfassung fuer die Wahl: Wenn du Weg B waehlst, arbeitest du im Transfer vor allem mit Bild, Kette und Deutung.
+
 AUFGABE A:Fall A (Laborwerte vorhanden, Winteraufbau): Welcher Weg passt?
 
 AUFGABE B:Fall B (Waldlauf ohne Labor, nur Pulsuhr): Welcher Weg passt?
 
-HILFE:A hat Kurvendaten, also Weg A mit Zonen. B hat nur Feldsignale, also Weg B mit Puls und Empfinden.
+HILFE: Pruefe dimensionsgeleitet, welcher Weg passt: Messdimension mit Kennwert spricht fuer Weg A; Strukturdimension mit Typ-Test spricht fuer Zuordnung und Weg B; Bilddimension mit Bildvergleich sichert beide Wege. Ordne selbst zu; die Zuordnung wird nicht vorweggenommen.
+
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg A oder Weg B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Ueberfuehrt aus VERGLEICH (Vorwahl-Fassung): VERGLEICH:先选程序—— (i) Laktatgesteuerte Zonensteuerung (Kurve lesen, dann dosieren) 还是 (ii) Puls- und gefuehlsgesteuerte Dosierung (Pulsuhr plus RPE-Skala) ——再解题。【选程序:问上限与结构选(i),问兑现与情境选(ii)。口述先说 Ich waehle Verfahren (i)/(ii), weil …】
+- Ueberfuehrt aus Schritt-5-HILFE (Vorwahl-Fassung): HILFE:A hat Kurvendaten, also Weg A mit Zonen. B hat nur Feldsignale, also Weg B mit Puls und Empfinden.
+- Ein-Satz-Kern: Kurve befiehlt dem Labor, Puls und Gefuehl dem Feld; die Datenlage waehlt das Verfahren.
 
 ANTWORT:A erfordert Weg A, weil Schwellen Tempi exakt vorgeben. B erfordert Weg B, weil ohne Labor nur Puls plus RPE steuern. Ich waehle A/B, weil die Datenlage es erzwingt.
 
@@ -150,9 +171,23 @@ CHECK检索默写(自测3题,与答案配对):
 ## Schritt 7 — szenario: Klausurtransfer — Leistungsdiagnostiker
 中文:你是Leistungsdiagnostiker,在Freiburger Leistungsdiagnostik-Labor, Laufband-Stufentest (Marathonkader)中必须用德语连贯口述(约90秒)诊断、措施与数值目标(IAS bei 4,6 m/s, Laktat 4,0 mmol/L, Puls 168/min, Grundlagentempo 4,0 m/s),并以术语举证。
 ROLLE: Du bist Leistungsdiagnostiker. SITUATION: In Freiburg musst du 90 Sekunden lang Kurve, Schwellen und Target (4,6 m/s, 168er Puls) vor dem Kader begruenden.
+AUFGABE (beschreiben, [AFB III]): Beschreibe in ca. 150 Woertern Einordnung, zwei Belege mit Mechanismus und Schlussurteil zu Laktatkurve und aerobe sowie anaerobe Schwelle.
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Befund mit Laktatkurve und aerobe sowie anaerobe Schwelle-Anker | 5 NP | Skizze mit Achsenbeschriftung als Alternativweg
+Analyse mit Mechanismusbezug (Laktatkurve und aerobe sowie anaerobe Schwelle) | 5 NP | Tabellenvergleich mit Messprotokoll als Alternativweg
+Urteil mit Targetbeleg (Laktatkurve und aerobe sowie anaerobe Schwelle) | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
+
 RUBRIC (30 XP):诊断术语8分 | 措施与目标举证7分 | 程序选择对比7分 | 德语表达5分。
 
 `Klausur-Satz: AFB-III-Mustersatz: Die Athletin brach ein, weil ihr Renntempo die IAS ueberschritt und d[La]/dt positiv wurde; 4,6 m/s bei 168er Puls wuerde das Steady State halten.`
+
+KERNSATZ (auswendig):
+- Kernsatz: `Freiburg zeigt den Kernkonflikt: Zwischen tragbar und teuer liegt nur ein Atemzug, die Kurve zieht die Grenze.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = Ausgangslage mit Kennwert als Subjekt | Mechanismus = Weg mit Strukturbezug als Mechanismus | Urteil = Entscheidung mit Targetbeleg als Urteil
+- Selbsttest: Freiburg zeigt den Kernkonflikt: Zwischen tragbar und teuer liegt nur ein Atemzug, die Kurve zieht die ___.
 
 ## Schritt 8 — reflexion: Takeaway & Reflexion — 奖杯还是进站检修
 

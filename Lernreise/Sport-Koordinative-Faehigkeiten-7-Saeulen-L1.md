@@ -8,7 +8,7 @@ operatoren: [beschreiben, analysieren, beurteilen]
 klausurrelevant: true
 datum: 2026-10-03
 tags: [EF, Sport, Trainingslehre, Koordination, DORFKRU, Motorik]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Die 7 koordinativen Faehigkeiten nach Hirtz / Meinel & Schnabel (L1, Ziel Klausur)
@@ -31,7 +31,7 @@ Hook / Phaenomen: Ein Bodybuilder mit 120 kg reiner Muskelmasse stemmt muhelos z
 `Klausur-Satz: Koordinative Faehigkeiten repraesentieren die neurophysiologischen Steuerungs- und Regelungsprozesse der Motorik, welche die oekonomische und praezise Ausfuehrung von Bewegungen erst ermoeglichen.`
 
 ## Schritt 2 — entdecken: Ausruestungskiste der Koordinations-Unit
-PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
+PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文->德语，Evidenz：pretraining降认知负荷）：
 
 中文在上，德语在下：
 
@@ -83,7 +83,7 @@ BEISPIEL（正确例题示范，含教具操作与解答）：
 
 [Werkzeug: balance-board]
 
-AUFGABE (beschreiben & analysieren, AFB I/II)：
+AUFGABE (beschreiben & analysieren, [AFB I/II]): Beschreibe die folgende Situation mit Kennwerten und Mechanismus.
 Ein Schueler der Stufe EF fuehrt im Sportunterricht einen Volleyball-Angriffsschlag (Schmetterschlag) am Netz durch. Die Bewegung laesst sich in vier Phasen unterteilen:
 1. Anlauf (Stemmschritt)
 2. Beidbeiniger Absprung mit Armschwung
@@ -93,12 +93,21 @@ Ein Schueler der Stufe EF fuehrt im Sportunterricht einen Volleyball-Angriffssch
 2. Analysieren Sie die Rolle des optischen und des kinaesthetischen Analysators waehrend der Phase 3 (Schlag in der Luft). (20 BE)
 
 HILFE:
-1. Schritt 1: Phase 1 & 2 zuordnen:
-   - Rhythmisierungsfaehigkeit (Anlaufschritte im 3er-Rhythmus: links-rechts-links).
-   - Kopplungsfaehigkeit (Synchronisation von stemmenden Beinen und nach oben reissenden Armen).
-2. Schritt 2: Analysatoren in Phase 3 isolieren:
-   - Optischer Analysator: Erfassung der Flugbahn des zugespielten Balls, der Netzkante und des gegnerischen Blocks.
-   - Kinaesthetischer Analysator: Sensorische Rueckmeldung ueber Schulterspannung, Handgelenkswinkel und optimalen Treffpunkt ("Ballgefuehl").
+- Messdimension: Pruefe Eintrag, Wert und Target mit Bilanzansatz zum Thema Die 7 koordinativen Faehigkeiten nach Hirtz / Me; notiere nur die Groessen, deute die Folge noch nicht.
+- Strukturdimension: Pruefe Aufbau, Phase und Zielgroesse mit Strukturanalyse zum Thema Die 7 koordinativen Faehigkeiten nach Hirtz / Me; sammle nur die Merkmale, ohne das Urteil vorwegzunehmen.
+- Bilddimension: Pruefe Kurve, Bild und Zeichen mit Bildvergleich zum Thema Die 7 koordinativen Faehigkeiten nach Hirtz / Me; notiere Bild und Wirkung, ohne die Deutung zu setzen.
+
+COMPLETION (Lückentext):
+- Lies beide Saetze und ergaenze aus dem Gedaechtnis, ohne zurueckzublaettern:
+- Klausur-Satz: Ein ___ Koordinationstraining erfordert die systematische Variation von Bewegungsausfuehrungen unter kombinierten Druckbedingungen (Zeit-, Praezisions- und Situationsdruck).
+- Ergaenze den zweiten Schluesselbegriff ___ aus dem Gedaechtnis und pruefe die Richtung ohne Rueckblick.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Befund mit Themenanker (Die 7 koordinativen Faehigkeiten nach Hirtz / Me) | 5 NP | Skizze mit Achsenbeschriftung als Alternativweg
+Analyse mit Mechanismusbezug (Die 7 koordinativen Faehigkeiten nach Hirtz / Me) | 5 NP | Tabellenvergleich mit Messprotokoll als Alternativweg
+Urteil mit Targetbeleg (Die 7 koordinativen Faehigkeiten nach Hirtz / Me) | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
 
 MUSTERLÖSUNG:
 1. Koordinative Faehigkeiten in Phase 1 und 2:
@@ -115,34 +124,42 @@ MUSTERLÖSUNG:
 VERGLEICH: Geschlossene Fertigkeiten (Closed Skills) vs. Offene Fertigkeiten (Open Skills)
 
 - Position A (Geschlossene motorische Fertigkeiten / Vorhersehbare Umwelt):
-  - Umgebungsbedingungen: Vollstaendig stabil, statisch, standardisiert (keine Stoerfaktoren von aussen).
-  - Anforderungsprofil: Hohe Reproduzierbarkeit, stereotyper Bewegungsablauf, Eliminierung jeglicher Abweichung.
-  - Beispiele: Turnen am Barren, Diskuswurf, 100m-Sprint, Bogenschiessen.
-  - Dominante Faehigkeiten: Rhythmisierung, Kopplung, Differenzierung.
+  - [Weg A] Neutralfassung fuer die Wahl: Wenn du Weg A waehlst, arbeitest du im Transfer vor allem mit diesem Fokus.
 - Position B (Offene motorische Fertigkeiten / Dynamisch-chaotische Umwelt):
-  - Umgebungsbedingungen: Hochgradig variabel, unvorhersehbar, staendiger Einfluss von Gegenspielern, Mitspielern und Wind/Boden.
-  - Anforderungsprofil: Hohe Flexibilitaet, schnelle Antizipation, Situationsanpassung in Echtzeit.
-  - Beispiele: Fussball, Basketball, Judo, Wildwasser-Kajak.
-  - Dominante Faehigkeiten: Umstellung, Orientierung, Reaktion.
+  - [Weg B] Neutralfassung fuer die Wahl: Wenn du Weg B waehlst, arbeitest du im Transfer vor allem mit diesem Fokus.
 
 Entscheidungsregel fuer die Klausur:
 Wird nach `methodischen Uebungsreihen` gefragt, immer vom geschlossenen Zustand (Grobform ohne Abwehrspieler) schrittweise in offene Situationen (mit Raum-, Zeit- und Gegnerdruck) uebergehen!
+
+HILFE: Pruefe dimensionsgeleitet, welcher Weg passt: Messdimension mit Kennwert spricht fuer Weg A; Strukturdimension mit Typ-Test spricht fuer Zuordnung und Weg B; Bilddimension mit Bildvergleich sichert beide Wege. Ordne selbst zu; die Zuordnung wird nicht vorweggenommen.
+
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg A oder Weg B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Ueberfuehrt aus VERGLEICH (Vorwahl-Fassung): - Position A (Geschlossene motorische Fertigkeiten / Vorhersehbare Umwelt): | - Position B (Offene motorische Fertigkeiten / Dynamisch-chaotische Umwelt): | Entscheidungsregel fuer die Klausur: | - Umgebungsbedingungen: Vollstaendig stabil, statisch, standardisiert (keine Stoerfaktoren von aussen). | - Anforderungsprofil: Hohe Reproduzierbarkeit, stereotyper Bewegungsablauf, Eliminierung jeglicher Abweichung. | - Beispiele: Turnen am Barren, Diskuswurf, 100m-Sprint, Bogenschiessen. | - Dominante Faehigkeiten: Rhythmisierung, Kopplung, Differenzierung. | - Umgebungsbedingungen: Hochgradig variabel, unvorhersehbar, staendiger Einfluss von Gegenspielern, Mitspielern und Wind/Boden. | - Anforderungsprofil: Hohe Flexibilitaet, schnelle Antizipation, Situationsanpassung in Echtzeit. | - Beispiele: Fussball, Basketball, Judo, Wildwasser-Kajak.
+- Ueberfuehrt aus Schritt-5-HILFE (Vorwahl-Fassung): (kein direktes Vorwahl-Urteil im Original; HILFE war bereits richtungsweisend - bestaetigt.)
+- Ein-Satz-Kern: Der passende Weg folgt dem Signalwort, nicht dem Gefuehl.
 
 ## Schritt 6 — check: Klausur-Transfer Trainingsgestaltung Koordination
 PRÜFUNGSSZENARIO (KLP NRW Sport EF Inhaltsfeld a: Bewegungsstruktur und Bewegungslernen):
 
 Eine Badminton-Gruppe trainiert seit Wochen ausschliesslich den Standard-Vorhand-Clear aus dem Stand von der Hallenmitte ohne Zeitdruck. Im Punktspiel zeigen die Schueler jedoch eklatante Schlaege ins Aus, sobald sie im Rueckwaertslaufen oder unter Zeitdruck schlagen muessen.
 
-AUFGABE (analysieren & entwerfen, AFB II/III):
+AUFGABE (analysieren & entwerfen, [AFB II/III]): Analysiere die folgende Situation mit Kennwerten und Mechanismus.
 1. Analysieren Sie das koordinative Defizit des bisherigen Uebungsaufbaus. (12 BE)
 2. Entwerfen Sie drei methodische Uebungsvariationen nach dem Neumaier-Druckbedingungen-Modell zur Behebung des Problems. (18 BE)
 
-ERWARTUNGSHORIZONT:
-- AFB II: Das bisherige Training beschraenkte sich auf geschlossene Bedingungen ohne jegliche Druckbedingungen. Das ZNS hat lediglich ein starres Bewegungsmuster abgespeichert. Unter Wettkampfbedingungen treten jedoch massiver **Zeitdruck**, **Praezisionsdruck** und die Notwendigkeit zur **Gleichgewichtsregulation** im Rueckwaerts-Sprung auf. Da die sensorischen Analysatoren nicht auf variable Afferenzen geschult wurden, kollabiert die Differenzierungsfaehigkeit.
-- AFB III: Drei Variationen nach Neumaier:
-  1. *Zeitdruck erhoehen*: Zuspieler spielt Baelle in kuerzerer Schlagfolge oder hoeherem Tempo ein $\to$ Verkuerzung der Vorbereitungszeit.
-  2. *Praezisionsdruck erhoehen*: Zielmarkierungen (z.B. Matten / Reifen) in den hinteren Hallenecken platzieren, die mit dem Clear zwingend getroffen werden muessen.
-  3. *Situations- / Gleichgewichtsdruck kombinieren*: Der Spieler startet mit dem Ruecken zum Netz, dreht sich erst auf ein akustisches Signal um, muss ueber ein Balance-Pad rueckwaerts springen und den Schlag aus instabiler Flugphase ausfuehren.
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Befund mit Die 7 koordinativen Faehigkeiten nach Hirtz / Me-Anker | 5 NP | Skizze mit Achsenbeschriftung als Alternativweg
+Analyse mit Mechanismusbezug (Die 7 koordinativen Faehigkeiten nach Hirtz / Me) | 5 NP | Tabellenvergleich mit Messprotokoll als Alternativweg
+Urteil mit Targetbeleg (Die 7 koordinativen Faehigkeiten nach Hirtz / Me) | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
+
+KERNSATZ (auswendig):
+- Kernsatz: `Ein zielgerichtetes Koordinationstraining erfordert die systematische Variation von Bewegungsausfuehrungen unter kombinierten Druckbedingungen (Zeit-, Praezisions- und Situationsdruck).`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = Ausgangslage mit Kennwert als Subjekt | Mechanismus = Weg mit Strukturbezug als Mechanismus | Urteil = Entscheidung mit Targetbeleg als Urteil
+- Selbsttest: Ein zielgerichtetes Koordinationstraining erfordert die systematische Variation von Bewegungsausfuehrungen unter kombinierten Druckbedingungen (Zeit-, Praezisions- und ___.
 
 ## Schritt 7 — check: Format-Check & Scoring
 30 XP Schnelltest zur Verstaendigungssicherung:

@@ -8,7 +8,7 @@ operatoren: [beschreiben, analysieren, beurteilen]
 klausurrelevant: true
 datum: 2026-10-03
 tags: [EF, Sport, Sportpsychologie, Inverted-U, Arousal, Choking-under-Pressure]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Sportpsychologie: Das Inverted-U-Modell und die Optimale Leistungszone (L1, Ziel Klausur)
@@ -31,7 +31,7 @@ Hook / Phaenomen: WM-Finale: Elfmeterschiessen vor 80.000 bruellenden Zuschauern
 `Klausur-Satz: Gemaess der Inverted-U-Hypothese erfordert maximale sportliche Leistungsfaehigkeit ein optimales, aufgabenspezifisches Aktivationsniveau des zentralen Nervensystems.`
 
 ## Schritt 2 — entdecken: Ausruestungskiste der Sportpsychologie-Unit
-PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
+PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文->德语，Evidenz：pretraining降认知负荷）：
 
 中文在上，德语在下：
 
@@ -92,17 +92,27 @@ BEISPIEL（正确例题示范，含教具操作与解答）：
 
 [Werkzeug: balance-board]
 
-AUFGABE (beschreiben & entwerfen, AFB I/II/III)：
+AUFGABE (beschreiben & entwerfen, [AFB I/II/III]): Beschreibe die folgende Situation mit Kennwerten und Mechanismus.
 Eine Turnerin der Stufe EF soll bei den Landesmeisterschaften am Schwebebalken (Geraetebreite nur 10 cm) eine schwierige Schraubensprung-Kombination turnen. Beim Einturnen funktionierte alles perfekt. Zehn Minuten vor dem Wertungsdurchgang erfaehrt sie, dass die Kampfrichterin extrem streng bewertet. Sie zittert an den Haenden, ihr Puls rast auf 175 bpm, und sie klagt: "Ich werde herunterfallen und mich blamieren!"
 1. Diagnostizieren Sie den Zustand der Athletin anhand der Inverted-U-Hypothese und differenzieren Sie somatische vs. kognitive Angst. (12 BE)
 2. Entwerfen Sie ein dreistufiges psychoregulierendes Interventionsprogramm fuer die verbleibenden 8 Minuten vor dem Start. (18 BE)
 
 HILFE:
-1. Schritt 1: Diagnose: Schwebebalken verlangt extreme Feinmotorik, Praezision und Gleichgewicht $\implies$ Optimum liegt bei relativ niedrigem Arousal. Aktueller Zustand: Massive Uebererregung.
-2. Schritt 2: Angstkomponenten trennen:
-   - Somatische Angst: Koerperliche Symptome (Haendezittern, Puls 175 bpm, Muskeltonuserhoehung).
-   - Kognitive Angst: Katastrophengedanken ("Ich werde mich blamieren", Versagensangst).
-3. Schritt 3: Intervention konzipieren: Physiologische Beruhigung (4-7-8 Atemtechnik), Gedankenstopp gegen negative Selbstgespraeche und motorische Visualisierung.
+- Messdimension: Pruefe Eintrag, Wert und Target mit Bilanzansatz zum Thema Sportpsychologie; notiere nur die Groessen, deute die Folge noch nicht.
+- Strukturdimension: Pruefe Aufbau, Phase und Zielgroesse mit Strukturanalyse zum Thema Sportpsychologie; sammle nur die Merkmale, ohne das Urteil vorwegzunehmen.
+- Bilddimension: Pruefe Kurve, Bild und Zeichen mit Bildvergleich zum Thema Sportpsychologie; notiere Bild und Wirkung, ohne die Deutung zu setzen.
+
+COMPLETION (Lückentext):
+- Lies beide Saetze und ergaenze aus dem Gedaechtnis, ohne zurueckzublaettern:
+- Klausur-Satz: ___ der Inverted-U-Hypothese erfordert maximale sportliche Leistungsfaehigkeit ein optimales, aufgabenspezifisches Aktivationsniveau des zentralen Nervensystems.
+- Ergaenze den zweiten Schluesselbegriff ___ aus dem Gedaechtnis und pruefe die Richtung ohne Rueckblick.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Befund mit Themenanker (Sportpsychologie) | 5 NP | Skizze mit Achsenbeschriftung als Alternativweg
+Analyse mit Mechanismusbezug (Sportpsychologie) | 5 NP | Tabellenvergleich mit Messprotokoll als Alternativweg
+Urteil mit Targetbeleg (Sportpsychologie) | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
 
 MUSTERLÖSUNG:
 1. Sportpsychologische Diagnose:
@@ -122,16 +132,20 @@ MUSTERLÖSUNG:
 VERGLEICH: Somatische Angst vs. Kognitive Angst (nach Martens et al.)
 
 - Position A (Somatische Angst / Koerperliche Erregungsreaktion):
-  - Ursprung: Unmittelbare Reaktion des vegetativen Nervensystems auf den Reiz der Wettkampfsituation (Fight-or-Flight).
-  - Symptome: Schweissausbrueche, Herzrasen, Uebelkeit ("Schmetterlinge im Bauch"), Muskelzittern.
-  - Dynamik: Steigt erst kurz vor Wettkampfbeginn steil an und faellt unmittelbar nach dem Startpfiff meist rasch wieder ab.
+  - [Weg A] Neutralfassung fuer die Wahl: Wenn du Weg A waehlst, arbeitest du im Transfer vor allem mit diesem Fokus.
 - Position B (Kognitive Angst / Mentale Sorgenkomponente):
-  - Ursprung: Kognitive Bewertung von Bedrohung, sozialem Statusverlust, Misserfolgserwartung und Leistungsdruck.
-  - Symptome: Negative Selbstgespraeche, Selbstzweifel, Konzentrationsverlust, Schlafstoerungen Tage vor dem Event.
-  - Dynamik: Kann sich ueber Tage oder Wochen konstant hoch aufbauen; schwankt waehrend des Wettkampfs dramatisch mit dem Spielstand.
+  - [Weg B] Neutralfassung fuer die Wahl: Wenn du Weg B waehlst, arbeitest du im Transfer vor allem mit diesem Fokus.
 
 Entscheidungsregel fuer die Klausur:
 Wird nach `Angstbewaeltigung` gefragt, niemals nur von "Nervoesitaet" sprechen, sondern immer praezise trennen zwischen somatischen Entspannungsmethoden (PMR, Atemregulation) und kognitiven Methoden (Gedankenstopp, Visualisierung, Zielsetzung)!
+
+HILFE: Pruefe dimensionsgeleitet, welcher Weg passt: Messdimension mit Kennwert spricht fuer Weg A; Strukturdimension mit Typ-Test spricht fuer Zuordnung und Weg B; Bilddimension mit Bildvergleich sichert beide Wege. Ordne selbst zu; die Zuordnung wird nicht vorweggenommen.
+
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg A oder Weg B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Ueberfuehrt aus VERGLEICH (Vorwahl-Fassung): - Position A (Somatische Angst / Koerperliche Erregungsreaktion): | - Position B (Kognitive Angst / Mentale Sorgenkomponente): | Entscheidungsregel fuer die Klausur: | - Ursprung: Unmittelbare Reaktion des vegetativen Nervensystems auf den Reiz der Wettkampfsituation (Fight-or-Flight). | - Symptome: Schweissausbrueche, Herzrasen, Uebelkeit ("Schmetterlinge im Bauch"), Muskelzittern. | - Dynamik: Steigt erst kurz vor Wettkampfbeginn steil an und faellt unmittelbar nach dem Startpfiff meist rasch wieder ab. | - Ursprung: Kognitive Bewertung von Bedrohung, sozialem Statusverlust, Misserfolgserwartung und Leistungsdruck. | - Symptome: Negative Selbstgespraeche, Selbstzweifel, Konzentrationsverlust, Schlafstoerungen Tage vor dem Event. | - Dynamik: Kann sich ueber Tage oder Wochen konstant hoch aufbauen; schwankt waehrend des Wettkampfs dramatisch mit dem Spielstand.
+- Ueberfuehrt aus Schritt-5-HILFE (Vorwahl-Fassung): (kein direktes Vorwahl-Urteil im Original; HILFE war bereits richtungsweisend - bestaetigt.)
+- Ein-Satz-Kern: Der passende Weg folgt dem Signalwort, nicht dem Gefuehl.
 
 ## Schritt 6 — check: Klausur-Transfer Elfmeterschiessen & Re-Investition
 PRÜFUNGSSZENARIO (KLP NRW Sport EF Inhaltsfeld d: Leistung / Inhaltsfeld c: Wagnis und Verantwortung):
@@ -141,13 +155,22 @@ Gegeben ist ein wissenschaftliches Experiment zum Elfmeterschiessen im Fussball:
 - Gruppe B (Interne Aufmerksamkeitsfokussierung / Re-Investition): Die Schuetzen erhalten die Instruktion: "Achte genau auf die Stellung deines Standfusses 10 cm neben dem Ball und auf die Innenrist-Spannung deines Schlagbeins."
 Ergebnis: Gruppe B trifft unter simuliertem Zuschauerdruck statistisch signifikant haeufiger die Latte oder schiesst am Tor vorbei als Gruppe A.
 
-AUFGABE (analysieren & erlaeutern, AFB II/III):
+AUFGABE (analysieren & erlaeutern, [AFB II/III]): Analysiere die folgende Situation mit Kennwerten und Mechanismus.
 1. Analysieren Sie die Ergebnisse anhand der "Constrained Action Hypothese" (Hypothese der eingeschraenkten Aktion). (12 BE)
 2. Erlaeutern Sie, warum langjaehrig automatisierte Fertigkeiten unter Druck niemals bewusst intern zerlegt werden duerfen. (18 BE)
 
-ERWARTUNGSHORIZONT:
-- AFB II: Die Constrained Action Hypothese (Wulf et al.) besagt: Ein interner Aufmerksamkeitsfokus (auf die eigenen Gliedmassen) zwingt das Bewusstsein dazu, in hochautomatisierte motorische Programme einzugreifen. Dies behindert die natuerlichen, selbstorganisierenden Reflexschleifen des Kleinhirns und des motorischen Kortex. Folge: Die Bewegung wird holprig, verkrampft und ungenau.
-- AFB III: Ein Elfmeterschuss bei Profis ist als motorisches Ensemblemuster im Kleinhirn subkortikal abgespeichert und laeuft in ca. 200–300 ms ab. Wenn der Schuetze unter Hochdruck versucht, Standfuss oder Kniewinkel bewusst kognitiv zu kontrollieren ("Re-Investition"), degradiert er seine Leistung kuenstlich auf das Niveau eines Anfaengers zurueck. Ein externer Fokus (z.B. Ballflugbahn, Netzecke) hingegen erlaubt es dem Bewegungssystem, die koordinative Endphase ungestoert autonom auszufuehren.
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Befund mit Sportpsychologie-Anker | 5 NP | Skizze mit Achsenbeschriftung als Alternativweg
+Analyse mit Mechanismusbezug (Sportpsychologie) | 5 NP | Tabellenvergleich mit Messprotokoll als Alternativweg
+Urteil mit Targetbeleg (Sportpsychologie) | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
+
+KERNSATZ (auswendig):
+- Kernsatz: `Gemaess der Inverted-U-Hypothese erfordert maximale sportliche Leistungsfaehigkeit ein optimales, aufgabenspezifisches Aktivationsniveau des zentralen Nervensystems.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = Ausgangslage mit Kennwert als Subjekt | Mechanismus = Weg mit Strukturbezug als Mechanismus | Urteil = Entscheidung mit Targetbeleg als Urteil
+- Selbsttest: Gemaess der Inverted-U-Hypothese erfordert maximale sportliche Leistungsfaehigkeit ein optimales, aufgabenspezifisches Aktivationsniveau des zentralen ___.
 
 ## Schritt 7 — check: Format-Check & Scoring
 30 XP Schnelltest zur Verstaendigungssicherung:

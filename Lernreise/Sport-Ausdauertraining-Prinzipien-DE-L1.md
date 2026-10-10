@@ -8,7 +8,7 @@ operatoren: [beschreiben, erklaeren, beurteilen]
 klausurrelevant: true
 datum: 2026-09-25
 tags: [EF, Sport, Trainingslehre]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 
@@ -77,14 +77,26 @@ BEISPIEL (Musteraufgabe mit Loesungsweg):
 
 [Werkzeug: oral-timer]
 
-AUFGABE (analysieren, AFB II): 90-Sekunden-Ansage gegen den Timer: Verteile 5 Wochenstunden auf Zonen mit Puls 153/175 und begruende am Target. Erreiche das Target: Wochenumfang 45 km, 80/20-Mix, 10-km-Ziel 42:30 min, Grundpuls unter 153.
+AUFGABE (analysieren, [AFB II]): Analysiere 90-Sekunden-Ansage gegen den Timer: Verteile 5 Wochenstunden auf Zonen mit Puls 153/175 und begruende am Target. Erreiche das Target: Wochenumfang 45 km, 80/20-Mix, 10-km-Ziel 42:30 min, Grundpuls unter 153.
 
 TARGET: Wochenumfang 45 km, 80/20-Mix, 10-km-Ziel 42:30 min, Grundpuls unter 153.
 
 HILFE:
-1. Schritt 1: Berechne HFmax und die zwei Zonengrenzen.
-2. Schritt 2: Verteile Stunden auf ruhig versus scharf im 80/20-Schluessel.
-3. Schritt 3: Benenne je eine Einheit mit Tempo und Puls.
+- Messdimension: Pruefe Eintrag, Wert und Target mit Bilanzansatz zum Thema Superkompensation und die Prinzipien des Ausdaue; notiere nur die Groessen, deute die Folge noch nicht.
+- Strukturdimension: Pruefe Aufbau, Phase und Zielgroesse mit Strukturanalyse zum Thema Superkompensation und die Prinzipien des Ausdaue; sammle nur die Merkmale, ohne das Urteil vorwegzunehmen.
+- Bilddimension: Pruefe Kurve, Bild und Zeichen mit Bildvergleich zum Thema Superkompensation und die Prinzipien des Ausdaue; notiere Bild und Wirkung, ohne die Deutung zu setzen.
+
+COMPLETION (Lückentext):
+- Lies beide Saetze und ergaenze aus dem Gedaechtnis, ohne zurueckzublaettern:
+- ___ zeigt den Kernkonflikt: Gleiche Kilometer, andere Zeiten, weil nur Kontrast anpasst.
+- Ergaenze den zweiten Schluesselbegriff ___ aus dem Gedaechtnis und pruefe die Richtung ohne Rueckblick.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Befund mit Themenanker (Superkompensation und die Prinzipien des Ausdaue) | 5 NP | Skizze mit Achsenbeschriftung als Alternativweg
+Analyse mit Mechanismusbezug (Superkompensation und die Prinzipien des Ausdaue) | 5 NP | Tabellenvergleich mit Messprotokoll als Alternativweg
+Urteil mit Targetbeleg (Superkompensation und die Prinzipien des Ausdaue) | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
 
 MUSTERLOESUNG: Bei HFmax 204 liegen 4 Stunden unter 153er Puls (lockere Dauerlaeufe 6:00/km) und 1 Stunde ueber 175 (4x4 Minuten). Das Target 42:30 min wird erreicht, weil Umfang die Oekonomie und Intervalle die VO2max heben, waehrend die mittlere Zone leer bleibt. Gruppe A scheiterte exakt an 5 Stunden Mitteltempo.
 
@@ -96,11 +108,20 @@ VERGLEICH (zwei Verfahren im Kontrast):
 
 VERGLEICH: Waehle zuerst das Verfahren: (i) Umfangsbetonung (mehr Kilometer, Oekonomie zuerst) oder (ii) Intensitaetsbetonung (mehr Intervalle, VO2max zuerst), dann loesen. Die Wahl des Verfahrens entscheidet ueber die ganze Begruendung.
 
+- [Weg A] Neutralfassung fuer die Wahl: Wenn du Weg A waehlst, arbeitest du im Transfer vor allem mit Kennwerten und Struktur.
+- [Weg B] Neutralfassung fuer die Wahl: Wenn du Weg B waehlst, arbeitest du im Transfer vor allem mit Bild, Kette und Deutung.
+
 AUFGABE A: Fall A (Anfaenger, 10 km in 55 min): Welcher Weg?
 
 AUFGABE B: Fall B (erfahren, 44 min, stagniert): Welcher Weg?
 
-HILFE: A braucht Basis, also Umfang. B hat Basis, also Spitzenreiz.
+HILFE: Pruefe dimensionsgeleitet, welcher Weg passt: Messdimension mit Kennwert spricht fuer Weg A; Strukturdimension mit Typ-Test spricht fuer Zuordnung und Weg B; Bilddimension mit Bildvergleich sichert beide Wege. Ordne selbst zu; die Zuordnung wird nicht vorweggenommen.
+
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg A oder Weg B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Ueberfuehrt aus VERGLEICH (Vorwahl-Fassung): VERGLEICH: Waehle zuerst das Verfahren: (i) Umfangsbetonung (mehr Kilometer, Oekonomie zuerst) oder (ii) Intensitaetsbetonung (mehr Intervalle, VO2max zuerst), dann loesen. Die Wahl des Verfahrens entscheidet ueber die ganze Begruendung.
+- Ueberfuehrt aus Schritt-5-HILFE (Vorwahl-Fassung): HILFE: A braucht Basis, also Umfang. B hat Basis, also Spitzenreiz.
+- Ein-Satz-Kern: Umfang zuerst oder Spitze zuerst: Das Trainingsalter waehlt den Weg.
 
 ANTWORT: A erfordert Weg A mit ruhigen Kilometern und Technik. B erfordert Weg B mit 4x4 und Tempolaeufen. Ich waehle A/B, weil Trainingsalter es vorgibt.
 
@@ -130,9 +151,23 @@ CHECK (3 Fragen zur Selbstkontrolle mit Antworten):
 ## Schritt 7 — szenario: Klausurtransfer — Ausdauertrainer Lauf
 ROLLE: Du bist Ausdauertrainer Lauf und verteidigst deine Entscheidung vor der Pruefungskommission.
 SITUATION: In Freiburg musst du 90 Sekunden lang Mix, Zonen und Target (45 km, 42:30 min) verteidigen.
+AUFGABE (beschreiben, [AFB III]): Beschreibe in ca. 150 Woertern Einordnung, zwei Belege mit Mechanismus und Schlussurteil zu Superkompensation und die Prinzipien des Ausdaue.
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Befund mit Superkompensation und die Prinzipien des Ausdaue-Anker | 5 NP | Skizze mit Achsenbeschriftung als Alternativweg
+Analyse mit Mechanismusbezug (Superkompensation und die Prinzipien des Ausdaue) | 5 NP | Tabellenvergleich mit Messprotokoll als Alternativweg
+Urteil mit Targetbeleg (Superkompensation und die Prinzipien des Ausdaue) | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
+
 RUBRIC (30 XP): Diagnose mit Fachbegriffen (8 XP) | Massnahme mit Target-Beleg (10 XP) | Verfahrenswahl im Vergleich (7 XP) | Fachsprachlicher Vortrag (5 XP).
 
 `Klausur-Satz: AFB-III-Mustersatz: Die Stagnation entstand, weil 5 Stunden Mitteltempo weder Basis noch VO2max reizten; 80/20 wuerde 42:30 min sichern.`
+
+KERNSATZ (auswendig):
+- Kernsatz: `Freiburg zeigt den Kernkonflikt: Gleiche Kilometer, andere Zeiten, weil nur Kontrast anpasst.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = Ausgangslage mit Kennwert als Subjekt | Mechanismus = Weg mit Strukturbezug als Mechanismus | Urteil = Entscheidung mit Targetbeleg als Urteil
+- Selbsttest: Freiburg zeigt den Kernkonflikt: Gleiche Kilometer, andere Zeiten, weil nur Kontrast ___.
 
 ## Schritt 8 — reflexion: Takeaway & Reflexion
 

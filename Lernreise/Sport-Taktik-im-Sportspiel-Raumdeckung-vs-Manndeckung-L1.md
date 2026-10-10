@@ -8,7 +8,7 @@ operatoren: [beschreiben, vergleichen, beurteilen]
 klausurrelevant: true
 datum: 2026-10-03
 tags: [EF, Sport, Sportspiele, Fussball, Taktik, Raumdeckung, Manndeckung]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Taktik im Sportspiel: Raumdeckung vs. Manndeckung im Systemvergleich (L1, Ziel Klausur)
@@ -31,7 +31,7 @@ Hook / Phaenomen: WM-Finale 1974: Berti Vogts klammert sich 90 Minuten lang wie 
 `Klausur-Satz: Der Paradigmenwechsel von der personengebundenen Manndeckung zur ballorientierten Raumdeckung basiert auf der permanenten Herstellung lokaler Ueberzahlraeume bei gleichzeitiger Wahrung der kollektiven Kompaktheit.`
 
 ## Schritt 2 — entdecken: Ausruestungskiste der Taktik-Unit
-PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
+PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文->德语，Evidenz：pretraining降认知负荷）：
 
 中文在上，德语在下：
 
@@ -89,7 +89,7 @@ BEISPIEL（正确例题示范，含教具操作与解答）：
 
 [Werkzeug: balance-board]
 
-AUFGABE (beschreiben & analysieren, AFB I/II)：
+AUFGABE (beschreiben & analysieren, [AFB I/II]): Beschreibe die folgende Situation mit Kennwerten und Mechanismus.
 In einem Meisterschaftsspiel der Stufe EF kassiert Team Blau ein Gegentor. Die Videoanalyse zeigt folgende Situation vor dem Treffer:
 - Der gegnerische Mittelstuermer laeuft aus dem Sturmzentrum schraeg nach aussen zur linken Eckfahne.
 - Der Innenverteidiger (IV 1) von Team Blau laeuft dem Stuermer hinterher bis an die Außenlinie.
@@ -99,9 +99,21 @@ In einem Meisterschaftsspiel der Stufe EF kassiert Team Blau ein Gegentor. Die V
 2. Beschreiben Sie, wie sich IV 1 und die Kette stattdessen haetten verhalten muessen (Uebergabe-Prinzip). (20 BE)
 
 HILFE:
-1. Schritt 1: Fehler identifizieren: IV 1 hat das Prinzip der Raumdeckung verletzt und ist in veraltete Manndeckung zurueckgefallen ("Gegenspieler hinterhergelaufen").
-2. Schritt 2: Konsequenz: Aufgabe der Zentrumsverteidigung, Aufreissen einer toedlichen Schnittstelle.
-3. Schritt 3: Korrektur: In der Raumdeckung uebergibt man den ausweichenden Gegenspieler an den zustaendigen Aussenverteidiger; der Innenverteidiger bleibt im strategischen Kernraum vor dem Tor stehen.
+- Messdimension: Pruefe Eintrag, Wert und Target mit Bilanzansatz zum Thema Taktik im Sportspiel; notiere nur die Groessen, deute die Folge noch nicht.
+- Strukturdimension: Pruefe Aufbau, Phase und Zielgroesse mit Strukturanalyse zum Thema Taktik im Sportspiel; sammle nur die Merkmale, ohne das Urteil vorwegzunehmen.
+- Bilddimension: Pruefe Kurve, Bild und Zeichen mit Bildvergleich zum Thema Taktik im Sportspiel; notiere Bild und Wirkung, ohne die Deutung zu setzen.
+
+COMPLETION (Lückentext):
+- Lies beide Saetze und ergaenze aus dem Gedaechtnis, ohne zurueckzublaettern:
+- Klausur-Satz: Die ___ in der Raumdeckung ermoeglicht eine flexible Tiefenstaffelung und das gezielte Stellen der Abseitsfalle durch synchrones Vorruecken.
+- Ergaenze den zweiten Schluesselbegriff ___ aus dem Gedaechtnis und pruefe die Richtung ohne Rueckblick.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Befund mit Themenanker (Taktik im Sportspiel) | 5 NP | Skizze mit Achsenbeschriftung als Alternativweg
+Analyse mit Mechanismusbezug (Taktik im Sportspiel) | 5 NP | Tabellenvergleich mit Messprotokoll als Alternativweg
+Urteil mit Targetbeleg (Taktik im Sportspiel) | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
 
 MUSTERLÖSUNG:
 1. Analyse des taktischen Fehlverhaltens:
@@ -119,31 +131,42 @@ MUSTERLÖSUNG:
 VERGLEICH: Strikte Manndeckung vs. Ballorientierte Raumdeckung
 
 - Position A (Klassische Manndeckung / 1:1-Zweikampfduell):
-  - Ausrichtung: Der Blick des Verteidigers haftet am Koerper des Gegners; der Ball ist sekundaer.
-  - Schwachstelle: Der angreifende Gegner bestimmt, wo der Verteidiger steht. Schnelle Taeuschungslaeufe reissen gewaltige Raeume auf; verliert ein Spieler seinen Zweikampf, brennt es lichterloh.
-  - Vorteil: Taktisch extrem simpel zu coachen; klare Schuldzuweisung nach Gegentoren.
+  - [Weg A] Neutralfassung fuer die Wahl: Wenn du Weg A waehlst, arbeitest du im Transfer vor allem mit diesem Fokus.
 - Position B (Ballorientierte Raumdeckung / Kollektives Netz):
-  - Ausrichtung: Alle Feldspieler agieren als elastisches Band, orientiert am Ball, den Mitspielern und den Raeumen.
-  - Staerke: Permanente Ueberzahl um den Ball (2:1-Situationen); Absicherung bei individuellem Zweikampfverlust; gezielte Nutzung des Abseits.
-  - Anforderung: Verlangt hoechste Spielintelligenz, staendige verbale Kommunikation, hohes Laufpensum und blindes Verschieben.
+  - [Weg B] Neutralfassung fuer die Wahl: Wenn du Weg B waehlst, arbeitest du im Transfer vor allem mit diesem Fokus.
 
 Entscheidungsregel fuer die Klausur:
 Wird nach den `Gruenden fuer den Niedergang des Liberos` gefragt, anfuehren: Der Libero hebt hinter der Abwehrkette staendig das Abseits auf und bindet einen zusaetzlichen Defensivspieler, der im modernen Mittelfeldpressing fehlt!
+
+HILFE: Pruefe dimensionsgeleitet, welcher Weg passt: Messdimension mit Kennwert spricht fuer Weg A; Strukturdimension mit Typ-Test spricht fuer Zuordnung und Weg B; Bilddimension mit Bildvergleich sichert beide Wege. Ordne selbst zu; die Zuordnung wird nicht vorweggenommen.
+
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg A oder Weg B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Ueberfuehrt aus VERGLEICH (Vorwahl-Fassung): - Position A (Klassische Manndeckung / 1:1-Zweikampfduell): | - Ausrichtung: Der Blick des Verteidigers haftet am Koerper des Gegners; der Ball ist sekundaer. | - Schwachstelle: Der angreifende Gegner bestimmt, wo der Verteidiger steht. Schnelle Taeuschungslaeufe reissen gewaltige Raeume auf; verliert ein Spieler seinen Zweikampf, brennt es lichterloh. | - Vorteil: Taktisch extrem simpel zu coachen; klare Schuldzuweisung nach Gegentoren. | - Position B (Ballorientierte Raumdeckung / Kollektives Netz): | - Ausrichtung: Alle Feldspieler agieren als elastisches Band, orientiert am Ball, den Mitspielern und den Raeumen. | - Staerke: Permanente Ueberzahl um den Ball (2:1-Situationen); Absicherung bei individuellem Zweikampfverlust; gezielte Nutzung des Abseits. | - Anforderung: Verlangt hoechste Spielintelligenz, staendige verbale Kommunikation, hohes Laufpensum und blindes Verschieben. | Entscheidungsregel fuer die Klausur:
+- Ueberfuehrt aus Schritt-5-HILFE (Vorwahl-Fassung): (kein direktes Vorwahl-Urteil im Original; HILFE war bereits richtungsweisend - bestaetigt.)
+- Ein-Satz-Kern: Der passende Weg folgt dem Signalwort, nicht dem Gefuehl.
 
 ## Schritt 6 — check: Klausur-Transfer Abseitsfalle & Timing
 PRÜFUNGSSZENARIO (KLP NRW Sport EF Inhaltsfeld e: Kooperation und Konkurrenz):
 
 Eine Abwehrreihe versucht die "Abseitsfalle": Bei einem langen Pass des gegnerischen Spielmachers ruecken die vier Verteidiger ploetzlich im Sprint zwei Meter nach vorne. Ein Verteidiger verschlaeft den Sprint um eine halbe Sekunde und bleibt stehen.
 
-AUFGABE (analysieren & beurteilen, AFB II/III):
+AUFGABE (analysieren & beurteilen, [AFB II/III]): Analysiere die folgende Situation mit Kennwerten und Mechanismus.
 1. Analysieren Sie die Konsequenzen der Asynchronitaet fuer die Gueltigkeit der Abseitsregel. (12 BE)
 2. Beurteilen Sie das Risiko-Nutzen-Verhaeltnis der Abseitsfalle als taktisches Stilmittel im Schulsport vs. Profibereich. (18 BE)
 
-ERWARTUNGSHORIZONT:
-- AFB II: Die Abseitsregel (§ 11) besagt, dass ein Angreifer im Moment der Ballabgabe nicht der gegnerischen Torlinie naeher sein darf als der Ball und der vorletzte Abwehrspieler. Wenn drei Verteidiger vorschieben, aber ein einziger Spieler stehen bleibt, hebt dieser als vorletzter Abwehrspieler das Abseits fuer alle gegnerischen Angreifer auf! Die gegnerischen Stuermer haben freien Lauf allein auf das Tor.
-- AFB III:
-  - *Im Profibereich*: Ein hochwirksames Mittel zur Raeumeverknappung, da Linienrichter und VAR zentimetergenaue Linien ziehen und Profis taeglich das synchrone Vorschieben trainieren.
-  - *Im Schulsport / Amateurbereich*: Ein enormes Sicherheitsrisiko! Da weder VAR noch erfahrene Schiedsrichterassistenten an den Seitenlinien stehen und die koordinative Abstimmung von Schuelern unter Druck oft asynchron ist, fuehrt die Abseitsfalle hier haeufiger zu katastrophalen Gegentoren als zu Ballgewinnen. Empfehlung fuer den Schulsport: Eher auf Tiefenabsicherung und Absinken setzen als auf riskantes Aufruecken.
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Befund mit Taktik im Sportspiel-Anker | 5 NP | Skizze mit Achsenbeschriftung als Alternativweg
+Analyse mit Mechanismusbezug (Taktik im Sportspiel) | 5 NP | Tabellenvergleich mit Messprotokoll als Alternativweg
+Urteil mit Targetbeleg (Taktik im Sportspiel) | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
+
+KERNSATZ (auswendig):
+- Kernsatz: `Die Viererkette in der Raumdeckung ermoeglicht eine flexible Tiefenstaffelung und das gezielte Stellen der Abseitsfalle durch synchrones Vorruecken.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = Ausgangslage mit Kennwert als Subjekt | Mechanismus = Weg mit Strukturbezug als Mechanismus | Urteil = Entscheidung mit Targetbeleg als Urteil
+- Selbsttest: Die Viererkette in der Raumdeckung ermoeglicht eine flexible Tiefenstaffelung und das gezielte Stellen der Abseitsfalle durch synchrones ___.
 
 ## Schritt 7 — check: Format-Check & Scoring
 30 XP Schnelltest zur Verstaendigungssicherung:

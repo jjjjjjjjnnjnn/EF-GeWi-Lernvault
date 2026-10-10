@@ -8,7 +8,7 @@ operatoren: [erklaeren, vergleichen]
 klausurrelevant: true
 datum: 2026-09-26
 tags: [EF, Sport, Trainingslehre]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 
@@ -87,14 +87,26 @@ BEISPIEL (Musteraufgabe mit Loesungsweg):
 
 [Werkzeug: formula]
 
-AUFGABE (analysieren, AFB II): Energieregler: Verteile 46,8 s auf drei Systeme und berechne mit E = P mal t den laktaziden Anteil. Erreiche das Target mit Zonenbegruendung. Erreiche das Target: PCr-Anteil 8 s maximal, Glykolyse 55 Prozent, Zielzeit 46,8 s, Laktat 14 mmol/L.
+AUFGABE (analysieren, [AFB II]): Analysiere energieregler: Verteile 46,8 s auf drei Systeme und berechne mit E = P mal t den laktaziden Anteil. Erreiche das Target mit Zonenbegruendung. Erreiche das Target: PCr-Anteil 8 s maximal, Glykolyse 55 Prozent, Zielzeit 46,8 s, Laktat 14 mmol/L.
 
 TARGET: PCr-Anteil 8 s maximal, Glykolyse 55 Prozent, Zielzeit 46,8 s, Laktat 14 mmol/L.
 
 HILFE:
-1. Schritt 1: Teile das Rennen in drei Zeitfenster und ordne je ein System zu.
-2. Schritt 2: Berechne den laktaziden Anteil mit E = P mal t.
-3. Schritt 3: Leite ab: Welche Einheit trainiert welchen Speicher?
+- Messdimension: Pruefe Eintrag, Wert und Target mit Bilanzansatz zum Thema Energiebereitstellung im Muskel; notiere nur die Groessen, deute die Folge noch nicht.
+- Strukturdimension: Pruefe Aufbau, Phase und Zielgroesse mit Strukturanalyse zum Thema Energiebereitstellung im Muskel; sammle nur die Merkmale, ohne das Urteil vorwegzunehmen.
+- Bilddimension: Pruefe Kurve, Bild und Zeichen mit Bildvergleich zum Thema Energiebereitstellung im Muskel; notiere Bild und Wirkung, ohne die Deutung zu setzen.
+
+COMPLETION (Lückentext):
+- Lies beide Saetze und ergaenze aus dem Gedaechtnis, ohne zurueckzublaettern:
+- Klausur-Satz: ATP ist die ___ Waehrung mit 2-Sekunden-Vorrat, PCr der 8-Sekunden-Puffer: Diese Definitionen tragen jede Bilanz.
+- Ergaenze den zweiten Schluesselbegriff ___ aus dem Gedaechtnis und pruefe die Richtung ohne Rueckblick.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Befund mit Themenanker (Energiebereitstellung im Muskel) | 5 NP | Skizze mit Achsenbeschriftung als Alternativweg
+Analyse mit Mechanismusbezug (Energiebereitstellung im Muskel) | 5 NP | Tabellenvergleich mit Messprotokoll als Alternativweg
+Urteil mit Targetbeleg (Energiebereitstellung im Muskel) | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
 
 MUSTERLOESUNG: Von 46,8 s deckt PCr die ersten 8 s, die Glykolyse traegt 55 Prozent der Energie und erzeugt 14 mmol/L Laktat, der Rest ist oxidativ. Das Target wird erreicht, weil 6-mal-200-m-Intervalle exakt die Glykolysekapazitaet treffen, waehrend Dauerlaeufe die Oxidation heben. Wer die ersten 200 m in 22,5 statt 21,5 s laeuft, haelt d[La]/dt kontrollierbar.
 
@@ -106,11 +118,20 @@ VERGLEICH (zwei Verfahren im Kontrast):
 
 VERGLEICH: Waehle zuerst das Verfahren: (i) Speicherkapazitaet vergroessern (mehr Tank: PCr, Glykogen, Mitochondrien) oder (ii) Leistungstoleranz erhoehen (mehr Azidosetoleranz und Oekonomie), dann loesen. Die Wahl des Verfahrens entscheidet ueber die ganze Begruendung.
 
+- [Weg A] Neutralfassung fuer die Wahl: Wenn du Weg A waehlst, arbeitest du im Transfer vor allem mit Kennwerten und Struktur.
+- [Weg B] Neutralfassung fuer die Wahl: Wenn du Weg B waehlst, arbeitest du im Transfer vor allem mit Bild, Kette und Deutung.
+
 AUFGABE A: Fall A (400-m-Talent, bricht bei 300 m ein): Welcher Weg?
 
 AUFGABE B: Fall B (erfahren, aber Endzeit stagniert bei 47 s): Welcher Weg?
 
-HILFE: A hat Kapazitaetsloch, also Tank vergroessern. B hat Tank, aber nutzt ihn schlecht, also Toleranz und Oekonomie.
+HILFE: Pruefe dimensionsgeleitet, welcher Weg passt: Messdimension mit Kennwert spricht fuer Weg A; Strukturdimension mit Typ-Test spricht fuer Zuordnung und Weg B; Bilddimension mit Bildvergleich sichert beide Wege. Ordne selbst zu; die Zuordnung wird nicht vorweggenommen.
+
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg A oder Weg B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Ueberfuehrt aus VERGLEICH (Vorwahl-Fassung): VERGLEICH: Waehle zuerst das Verfahren: (i) Speicherkapazitaet vergroessern (mehr Tank: PCr, Glykogen, Mitochondrien) oder (ii) Leistungstoleranz erhoehen (mehr Azidosetoleranz und Oekonomie), dann loesen. Die Wahl des Verfahrens entscheidet ueber die ganze Begruendung.
+- Ueberfuehrt aus Schritt-5-HILFE (Vorwahl-Fassung): HILFE: A hat Kapazitaetsloch, also Tank vergroessern. B hat Tank, aber nutzt ihn schlecht, also Toleranz und Oekonomie.
+- Ein-Satz-Kern: Tank vergroessern oder Toleranz heben: Der limitierende Speicher waehlt den Weg.
 
 ANTWORT: A erfordert Weg A mit Glykolyse-Intervallen und Kraft. B erfordert Weg B mit Tempolaeufen an der IAS und Technik. Ich waehle A/B, weil Speicher/Nutzung limitiert.
 
@@ -140,9 +161,23 @@ CHECK (3 Fragen zur Selbstkontrolle mit Antworten):
 ## Schritt 7 — szenario: Klausurtransfer — Sprinttrainer 400 m
 ROLLE: Du bist Sprinttrainer 400 m und verteidigst deine Entscheidung vor der Pruefungskommission.
 SITUATION: In Leverkusen musst du 90 Sekunden lang Speicher, Mischung und Target (46,8 s, 14 mmol/L) verteidigen.
+AUFGABE (erklaeren, [AFB III]): Erklaere in ca. 150 Woertern Einordnung, zwei Belege mit Mechanismus und Schlussurteil zu Energiebereitstellung im Muskel.
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Befund mit Energiebereitstellung im Muskel-Anker | 5 NP | Skizze mit Achsenbeschriftung als Alternativweg
+Analyse mit Mechanismusbezug (Energiebereitstellung im Muskel) | 5 NP | Tabellenvergleich mit Messprotokoll als Alternativweg
+Urteil mit Targetbeleg (Energiebereitstellung im Muskel) | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
+
 RUBRIC (30 XP): Diagnose mit Fachbegriffen (8 XP) | Massnahme mit Target-Beleg (10 XP) | Verfahrenswahl im Vergleich (7 XP) | Fachsprachlicher Vortrag (5 XP).
 
 `Klausur-Satz: AFB-III-Mustersatz: Der Einbruch bei 320 m entstand, weil entleertes PCr und Azidose die Resynthese drosselten; kontrollierte 22,5 s auf 200 m wuerden 46,8 s sichern.`
+
+KERNSATZ (auswendig):
+- Kernsatz: `ATP ist die einzige Waehrung mit 2-Sekunden-Vorrat, PCr der 8-Sekunden-Puffer: Diese Definitionen tragen jede Bilanz.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = Ausgangslage mit Kennwert als Subjekt | Mechanismus = Weg mit Strukturbezug als Mechanismus | Urteil = Entscheidung mit Targetbeleg als Urteil
+- Selbsttest: ATP ist die einzige Waehrung mit 2-Sekunden-Vorrat, PCr der 8-Sekunden-Puffer: Diese Definitionen tragen jede ___.
 
 ## Schritt 8 — reflexion: Takeaway & Reflexion
 

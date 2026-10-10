@@ -8,7 +8,7 @@ operatoren: [beschreiben, analysieren, beurteilen]
 klausurrelevant: true
 datum: 2026-09-25
 tags: [EF, Sport, Leichtathletik]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 
@@ -87,14 +87,26 @@ BEISPIEL (Musteraufgabe mit Loesungsweg):
 
 [Werkzeug: formula]
 
-AUFGABE (analysieren, AFB II): Absprungwinkel-Regler: Vergleiche flach (21 Grad) gegen steil (30 Grad) bei v_h = 9,6 m/s. Lies Weite und KSP-Parabel ab und begruende in 90 Sekunden mit der Wurfformel. Erreiche das Target: Stuetzzeit 0,12 s, Absprungwinkel 21 Grad, Anlauf 9,6 m/s, Zielweite 8,10 m.
+AUFGABE (analysieren, [AFB II]): Analysiere absprungwinkel-Regler: Vergleiche flach (21 Grad) gegen steil (30 Grad) bei v_h = 9,6 m/s. Lies Weite und KSP-Parabel ab und begruende in 90 Sekunden mit der Wurfformel. Erreiche das Target: Stuetzzeit 0,12 s, Absprungwinkel 21 Grad, Anlauf 9,6 m/s, Zielweite 8,10 m.
 
 TARGET: Stuetzzeit 0,12 s, Absprungwinkel 21 Grad, Anlauf 9,6 m/s, Zielweite 8,10 m.
 
 HILFE:
-1. Schritt 1: Benenne Phase (Absprung) und Fehlerbild (Stemmen, zu steil) am Target.
-2. Schritt 2: Lies v_h-Verlust und Winkel ab und deute ihn mit Absprungwinkel und KSP.
-3. Schritt 3: Leite die Korrektur ab: kuerzerer Stuetz, flacherer Abdruck, Schwungbein aktiv.
+- Messdimension: Pruefe Eintrag, Wert und Target mit Bilanzansatz zum Thema Biomechanische Optimierung des Weitsprungs; notiere nur die Groessen, deute die Folge noch nicht.
+- Strukturdimension: Pruefe Aufbau, Phase und Zielgroesse mit Strukturanalyse zum Thema Biomechanische Optimierung des Weitsprungs; sammle nur die Merkmale, ohne das Urteil vorwegzunehmen.
+- Bilddimension: Pruefe Kurve, Bild und Zeichen mit Bildvergleich zum Thema Biomechanische Optimierung des Weitsprungs; notiere Bild und Wirkung, ohne die Deutung zu setzen.
+
+COMPLETION (Lückentext):
+- Lies beide Saetze und ergaenze aus dem Gedaechtnis, ohne zurueckzublaettern:
+- ___ und KSP entscheiden die Klausur: 19 bis 22 Grad plus beim Brettverlassen fixierte Parabel sind die zwei Pflichtdefinitionen.
+- Ergaenze den zweiten Schluesselbegriff ___ aus dem Gedaechtnis und pruefe die Richtung ohne Rueckblick.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Befund mit Themenanker (Biomechanische Optimierung des Weitsprungs) | 5 NP | Skizze mit Achsenbeschriftung als Alternativweg
+Analyse mit Mechanismusbezug (Biomechanische Optimierung des Weitsprungs) | 5 NP | Tabellenvergleich mit Messprotokoll als Alternativweg
+Urteil mit Targetbeleg (Biomechanische Optimierung des Weitsprungs) | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
 
 MUSTERLOESUNG: Der steile 30-Grad-Absprung erzeugt zwar mehr v_v, vernichtet aber v_h von 9,6 auf 8,1 m/s, sodass W nach der Formel trotz laengerer Flugzeit von 8,10 auf 7,35 m faellt. Der flache 21-Grad-Abdruck bei 0,12 s Stuetz haelt v_h bei 9,2 m/s und erreicht das Target 8,10 m, weil die Resultierende die Parabel optimal streckt. Korrektur: Anlaufrhythmus halten, Fuss flach unter dem KSP setzen, Schwungbein blockartig stoppen.
 
@@ -106,11 +118,20 @@ VERGLEICH (zwei Verfahren im Kontrast):
 
 VERGLEICH: Waehle zuerst das Verfahren: (i) Absprung-Optimierung (Grenze setzen: Anlauf, Stuetz, Winkel) oder (ii) Flug- und Landungs-Optimierung (Lage nutzen: Hitch-Kick, Vorturnen), dann loesen. Die Wahl des Verfahrens entscheidet ueber die ganze Begruendung.
 
+- [Weg A] Neutralfassung fuer die Wahl: Wenn du Weg A waehlst, arbeitest du im Transfer vor allem mit Kennwerten und Struktur.
+- [Weg B] Neutralfassung fuer die Wahl: Wenn du Weg B waehlst, arbeitest du im Transfer vor allem mit Bild, Kette und Deutung.
+
 AUFGABE A: Fall A (Tokio-Finale, dritter Versuch gestemmt, 7,40 m): Welcher Weg passt und welche Massnahme folgt?
 
 AUFGABE B: Fall B (souveraene 8,05 m, aber Landung mit Sitzfallen und 40 cm Verschenken): Welcher Weg passt?
 
-HILFE: A fragt nach der Weitenquelle und dem Winkel, also Weg A. B fragt nach Verlustverwaltung bei fixierter Parabel, also Weg B.
+HILFE: Pruefe dimensionsgeleitet, welcher Weg passt: Messdimension mit Kennwert spricht fuer Weg A; Strukturdimension mit Typ-Test spricht fuer Zuordnung und Weg B; Bilddimension mit Bildvergleich sichert beide Wege. Ordne selbst zu; die Zuordnung wird nicht vorweggenommen.
+
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg A oder Weg B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Ueberfuehrt aus VERGLEICH (Vorwahl-Fassung): VERGLEICH: Waehle zuerst das Verfahren: (i) Absprung-Optimierung (Grenze setzen: Anlauf, Stuetz, Winkel) oder (ii) Flug- und Landungs-Optimierung (Lage nutzen: Hitch-Kick, Vorturnen), dann loesen. Die Wahl des Verfahrens entscheidet ueber die ganze Begruendung.
+- Ueberfuehrt aus Schritt-5-HILFE (Vorwahl-Fassung): HILFE: A fragt nach der Weitenquelle und dem Winkel, also Weg A. B fragt nach Verlustverwaltung bei fixierter Parabel, also Weg B.
+- Ein-Satz-Kern: Absprung-Optimierung setzt die Weitengrenze, Flug-Optimierung verwaltet Verluste; die Verfahrenswahl folgt der Messlage, nicht dem Gefuehl.
 
 ANTWORT: A erfordert Weg A, weil Stemmen und 28 Grad die Resultierende zerstoeren; Massnahme: Anlauf um 4 Schritte kuerzen, Stuetz unter 0,13 s, Winkel auf 21 Grad. B erfordert Weg B, weil die Parabel bereits 8,45 m hergibt; Massnahme: Hitch-Kick stabilisieren, Beine aktiv vorturnen. Muendlich: Ich waehle Verfahren A/B, weil die Messlage Grenze/Lage zeigt.
 
@@ -140,9 +161,23 @@ CHECK (3 Fragen zur Selbstkontrolle mit Antworten):
 ## Schritt 7 — szenario: Klausurtransfer — Bundestrainer Weitsprung
 ROLLE: Du bist Bundestrainer Weitsprung und verteidigst deine Entscheidung vor der Pruefungskommission.
 SITUATION: Im WM-Finale Tokio 1991 musst du in 90 Sekunden Diagnose, Massnahme und Target (0,12 s, 21 Grad, 8,10 m) mit Fachsprache verteidigen.
+AUFGABE (beschreiben, [AFB III]): Beschreibe in ca. 150 Woertern Einordnung, zwei Belege mit Mechanismus und Schlussurteil zu Biomechanische Optimierung des Weitsprungs.
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Befund mit Biomechanische Optimierung des Weitsprungs-Anker | 5 NP | Skizze mit Achsenbeschriftung als Alternativweg
+Analyse mit Mechanismusbezug (Biomechanische Optimierung des Weitsprungs) | 5 NP | Tabellenvergleich mit Messprotokoll als Alternativweg
+Urteil mit Targetbeleg (Biomechanische Optimierung des Weitsprungs) | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
+
 RUBRIC (30 XP): Diagnose mit Fachbegriffen (8 XP) | Massnahme mit Target-Beleg (10 XP) | Verfahrenswahl im Vergleich (7 XP) | Fachsprachlicher Vortrag (5 XP).
 
 `Klausur-Satz: AFB-III-Mustersatz: Der Athlet verschenkt Weite, weil sein zu steiler Absprung Horizontalgeschwindigkeit verbraucht; ein flacher schneller Abdruck bei 21 Grad wuerde die KSP-Parabel strecken und 8,10 m sichern.`
+
+KERNSATZ (auswendig):
+- Kernsatz: `Absprungwinkel und KSP entscheiden die Klausur: 19 bis 22 Grad plus beim Brettverlassen fixierte Parabel sind die zwei Pflichtdefinitionen.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = Ausgangslage mit Kennwert als Subjekt | Mechanismus = Weg mit Strukturbezug als Mechanismus | Urteil = Entscheidung mit Targetbeleg als Urteil
+- Selbsttest: Absprungwinkel und KSP entscheiden die Klausur: 19 bis 22 Grad plus beim Brettverlassen fixierte Parabel sind die zwei ___.
 
 ## Schritt 8 — reflexion: Takeaway & Reflexion
 

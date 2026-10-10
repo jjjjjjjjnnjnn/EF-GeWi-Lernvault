@@ -8,7 +8,7 @@ operatoren: [erklaeren, vergleichen, begruenden]
 klausurrelevant: true
 datum: 2026-09-26
 tags: [EF, Sport, CN]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 
@@ -39,7 +39,7 @@ Hook (DE): Balken-Parcours, dritte Station: Die schnellste Sprinterin der Klasse
 
 ## Schritt 2 — entdecken: 5术语装备盒
 
-PRETRAINING术语盒(核心5词,先读三遍中德,合书自测中文→德语):
+PRETRAINING术语盒(核心5词,先读三遍中德,合书自测中文->德语):
 
 中文在上,德语在下:
 
@@ -97,14 +97,28 @@ BEISPIEL(含教具操作与解答):
 
 [Werkzeug: oral-timer]
 
-AUFGABE (analysieren, AFB II):90秒口述:用两项能力诊断晃动,开 parcours 处方达标。达标线:Balken 8 m ohne Absteiger, Reaktionszeit unter 240 ms, 2 Parcoursrunden。
+AUFGABE (analysieren, [AFB II]): Analysiere 90秒口述:用两项能力诊断晃动,开 parcours 处方达标。达标线:Balken 8 m ohne Absteiger, Reaktionszeit unter 240 ms, 2 Parcoursrunden。
 
 Target数值目标:Balken 8 m ohne Absteiger, Reaktionszeit unter 240 ms, 2 Parcoursrunden。
 
 HILFE:
-1. 先用平衡与耦合两项能力点名晃动错误像,对照8米不掉木与240毫秒目标,判定是环路慢还是分节散。
-2. 再为每项能力开一练习加剂量:单腿抛接球练平衡、节拍走木练耦合,每周两次说明适应机制。
-3. 最后用目标定过关线:8米无掉下加反应240毫秒内,说明环路压短即达标。
+- Messdimension: Pruefe Eintrag, Wert und Target mit Bilanzansatz zum Thema Koordinative Faehigkeiten nach Hirtz; notiere nur die Groessen, deute die Folge noch nicht.
+- Strukturdimension: Pruefe Aufbau, Phase und Zielgroesse mit Strukturanalyse zum Thema Koordinative Faehigkeiten nach Hirtz; sammle nur die Merkmale, ohne das Urteil vorwegzunehmen.
+- Bilddimension: Pruefe Kurve, Bild und Zeichen mit Bildvergleich zum Thema Koordinative Faehigkeiten nach Hirtz; notiere Bild und Wirkung, ohne die Deutung zu setzen.
+
+COMPLETION (Lückentext):
+- Lies beide Saetze und ergaenze aus dem Gedaechtnis, ohne zurueckzublaettern:
+- ___
+Signal [Wackeln] -> Entscheidung [90 ms] -> Korrektur [Arm, Fuss] -> Stand [ruhig]
+Regel: Schleife unter 240 ms druecken | Takt halten auf 8 m ohne Absteiger
+- Ergaenze den zweiten Schluesselbegriff ___ aus dem Gedaechtnis und pruefe die Richtung ohne Rueckblick.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Befund mit Themenanker (Koordinative Faehigkeiten nach Hirtz) | 5 NP | Skizze mit Achsenbeschriftung als Alternativweg
+Analyse mit Mechanismusbezug (Koordinative Faehigkeiten nach Hirtz) | 5 NP | Tabellenvergleich mit Messprotokoll als Alternativweg
+Urteil mit Targetbeleg (Koordinative Faehigkeiten nach Hirtz) | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
 
 MUSTERLÖSUNG:晃动缺平衡加耦合:手划髋折。目标8米不掉,靠单腿抛接球加节拍走木每周两次,把环压到240毫秒内。
 
@@ -116,11 +130,20 @@ VERGLEICH辨别实验(双向辨析,先选程序再解题):【选程序】
 
 VERGLEICH:先选程序—— (i) Geschlossene Automatisierung (Balken stabil, Wiederholung: Praezision) 还是 (ii) Offene Variation (Balken wackelt, Spiel: Anpassung) ——再解题。【选程序:问上限与结构选(i),问兑现与情境选(ii)。口述先说 Ich waehle Verfahren (i)/(ii), weil …】
 
+- [Weg A] Neutralfassung fuer die Wahl: Wenn du Weg A waehlst, arbeitest du im Transfer vor allem mit Kennwerten und Struktur.
+- [Weg B] Neutralfassung fuer die Wahl: Wenn du Weg B waehlst, arbeitest du im Transfer vor allem mit Bild, Kette und Deutung.
+
 AUFGABE A:案例A(临考求稳)选哪条?
 
 AUFGABE B:案例B(苗子求广)选哪条?
 
-HILFE:A braucht Sicherheit, also geschlossen. B braucht Breite, also offen.
+HILFE: Pruefe dimensionsgeleitet, welcher Weg passt: Messdimension mit Kennwert spricht fuer Weg A; Strukturdimension mit Typ-Test spricht fuer Zuordnung und Weg B; Bilddimension mit Bildvergleich sichert beide Wege. Ordne selbst zu; die Zuordnung wird nicht vorweggenommen.
+
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg A oder Weg B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Ueberfuehrt aus VERGLEICH (Vorwahl-Fassung): VERGLEICH:先选程序—— (i) Geschlossene Automatisierung (Balken stabil, Wiederholung: Praezision) 还是 (ii) Offene Variation (Balken wackelt, Spiel: Anpassung) ——再解题。【选程序:问上限与结构选(i),问兑现与情境选(ii)。口述先说 Ich waehle Verfahren (i)/(ii), weil …】
+- Ueberfuehrt aus Schritt-5-HILFE (Vorwahl-Fassung): HILFE:A braucht Sicherheit, also geschlossen. B braucht Breite, also offen.
+- Ein-Satz-Kern: 闭式保考开式育苗,情境定路线。
 
 ANTWORT:A走闭式自动化求稳;B走开式变异求广。
 
@@ -150,9 +173,23 @@ CHECK检索默写(自测3题,与答案配对):
 ## Schritt 7 — szenario: Klausurtransfer — Koordinationstrainer
 中文:你是Koordinationstrainer,在Stuttgarter Schulsporthalle, Balken-Parcours中必须用德语连贯口述(约90秒)诊断、措施与数值目标(Balken 8 m ohne Absteiger, Reaktionszeit unter 240 ms, 2 Parcoursrunden),并以术语举证。
 ROLLE: Du bist Koordinationstrainer. SITUATION: 在斯图加特用德语90秒陈述能力、parcours 与目标(8米,240毫秒)。
+AUFGABE (erklaeren, [AFB III]): Erklaere in ca. 150 Woertern Einordnung, zwei Belege mit Mechanismus und Schlussurteil zu Koordinative Faehigkeiten nach Hirtz.
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Befund mit Koordinative Faehigkeiten nach Hirtz-Anker | 5 NP | Skizze mit Achsenbeschriftung als Alternativweg
+Analyse mit Mechanismusbezug (Koordinative Faehigkeiten nach Hirtz) | 5 NP | Tabellenvergleich mit Messprotokoll als Alternativweg
+Urteil mit Targetbeleg (Koordinative Faehigkeiten nach Hirtz) | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
+
 RUBRIC (30 XP):诊断术语8分 | 措施与目标举证7分 | 程序选择对比7分 | 德语表达5分。
 
 `Klausur-Satz: 满分句:掉木因320毫秒环误纠正;节拍走木可锁定8米与240毫秒。`
+
+KERNSATZ (auswendig):
+- Kernsatz: `Kraft ersetzt keine Schleife; Gleichgewicht braucht eigene Reize.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = Ausgangslage mit Kennwert als Subjekt | Mechanismus = Weg mit Strukturbezug als Mechanismus | Urteil = Entscheidung mit Targetbeleg als Urteil
+- Selbsttest: Kraft ersetzt keine Schleife; Gleichgewicht braucht eigene ___.
 
 ## Schritt 8 — reflexion: Takeaway & Reflexion — 奖杯还是进站检修
 

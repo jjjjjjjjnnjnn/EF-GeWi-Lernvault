@@ -8,7 +8,7 @@ operatoren: [darstellen, eroertern, beurteilen]
 klausurrelevant: true
 datum: 2026-09-26
 tags: [EF, Sport, Ethik]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 
@@ -39,7 +39,7 @@ Hook (DE): Planspiel, Spindkontrolle: Im Rucksack des Staffelstars liegt eine Am
 
 ## Schritt 2 — entdecken: 5术语装备盒
 
-PRETRAINING术语盒(核心5词,先读三遍中德,合书自测中文→德语):
+PRETRAINING术语盒(核心5词,先读三遍中德,合书自测中文->德语):
 
 中文在上,德语在下:
 
@@ -97,14 +97,28 @@ BEISPIEL(含教具操作与解答):
 
 [Werkzeug: oral-timer]
 
-AUFGABE (analysieren, AFB II):90秒控辩:按伦理与健康判柜门案,开一处方达标。达标线:0 Toleranz in der Schule, 100 Prozent Schulung, 2 Vertrauenslehrer, Hilfe statt Strafe。
+AUFGABE (analysieren, [AFB II]): Analysiere 90秒控辩:按伦理与健康判柜门案,开一处方达标。达标线:0 Toleranz in der Schule, 100 Prozent Schulung, 2 Vertrauenslehrer, Hilfe statt Strafe。
 
 Target数值目标:0 Toleranz in der Schule, 100 Prozent Schulung, 2 Vertrauenslehrer, Hilfe statt Strafe。
 
 HILFE:
-1. 先点名持有即违规,说明严格责任下借口无效,并点出公平与健康双伤害。
-2. 再套NADA法规:行踪申报、飞行检查与最高四年禁赛,说明代价如何抬高。
-3. 最后开保护处方:两名信任老师加密报热线加全员培训,说明预防如何在前断链。
+- Messdimension: Pruefe Eintrag, Wert und Target mit Bilanzansatz zum Thema Doping Ethik und Gesundheitsrisiken; notiere nur die Groessen, deute die Folge noch nicht.
+- Strukturdimension: Pruefe Aufbau, Phase und Zielgroesse mit Strukturanalyse zum Thema Doping Ethik und Gesundheitsrisiken; sammle nur die Merkmale, ohne das Urteil vorwegzunehmen.
+- Bilddimension: Pruefe Kurve, Bild und Zeichen mit Bildvergleich zum Thema Doping Ethik und Gesundheitsrisiken; notiere Bild und Wirkung, ohne die Deutung zu setzen.
+
+COMPLETION (Lückentext):
+- Lies beide Saetze und ergaenze aus dem Gedaechtnis, ohne zurueckzublaettern:
+- ___
+Druck [Gold, Kader] -> Tat [Ampulle] -> Schaden [Herz, Leber] | Schutz [Hotline, Kontrolle]
+Regel: Besitz bereits Verstoss mit Strict Liability | Hotline plus Schulung schliessen die Kette
+- Ergaenze den zweiten Schluesselbegriff ___ aus dem Gedaechtnis und pruefe die Richtung ohne Rueckblick.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Befund mit Themenanker (Doping Ethik und Gesundheitsrisiken) | 5 NP | Skizze mit Achsenbeschriftung als Alternativweg
+Analyse mit Mechanismusbezug (Doping Ethik und Gesundheitsrisiken) | 5 NP | Tabellenvergleich mit Messprotokoll als Alternativweg
+Urteil mit Targetbeleg (Doping Ethik und Gesundheitsrisiken) | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
 
 MUSTERLÖSUNG:持有即违规,严格责任下借口无效。目标零容忍靠四年禁赛抬代价、两名信任老师给出口。健康伤心伤肝,伦理丢金,预防加检查双断链。
 
@@ -116,11 +130,20 @@ VERGLEICH辨别实验(双向辨析,先选程序再解题):【选程序】
 
 VERGLEICH:先选程序—— (i) Repression (Kontrollen, Sperren: Preis erhoehen) 还是 (ii) Praevention (Bildung, Schutzraeume: Druck senken) ——再解题。【选程序:问上限与结构选(i),问兑现与情境选(ii)。口述先说 Ich waehle Verfahren (i)/(ii), weil …】
 
+- [Weg A] Neutralfassung fuer die Wahl: Wenn du Weg A waehlst, arbeitest du im Transfer vor allem mit Kennwerten und Struktur.
+- [Weg B] Neutralfassung fuer die Wahl: Wenn du Weg B waehlst, arbeitest du im Transfer vor allem mit Bild, Kette und Deutung.
+
 AUFGABE A:案例A(职业队再犯)选哪条?
 
 AUFGABE B:案例B(校队初触)选哪条?
 
-HILFE:A braucht Abschreckung, also Repression. B braucht Schutz, also Praevention.
+HILFE: Pruefe dimensionsgeleitet, welcher Weg passt: Messdimension mit Kennwert spricht fuer Weg A; Strukturdimension mit Typ-Test spricht fuer Zuordnung und Weg B; Bilddimension mit Bildvergleich sichert beide Wege. Ordne selbst zu; die Zuordnung wird nicht vorweggenommen.
+
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg A oder Weg B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Ueberfuehrt aus VERGLEICH (Vorwahl-Fassung): VERGLEICH:先选程序—— (i) Repression (Kontrollen, Sperren: Preis erhoehen) 还是 (ii) Praevention (Bildung, Schutzraeume: Druck senken) ——再解题。【选程序:问上限与结构选(i),问兑现与情境选(ii)。口述先说 Ich waehle Verfahren (i)/(ii), weil …】
+- Ueberfuehrt aus Schritt-5-HILFE (Vorwahl-Fassung): HILFE:A braucht Abschreckung, also Repression. B braucht Schutz, also Praevention.
+- Ein-Satz-Kern: 职业重罚校队预防,对象定路线。
 
 ANTWORT:A走重罚抬代价;B走预防降压力,对象定路线。
 
@@ -150,9 +173,23 @@ CHECK检索默写(自测3题,与答案配对):
 ## Schritt 7 — szenario: Klausurtransfer — NADA-Juniorbotschafter
 中文:你是NADA-Juniorbotschafter,在Frankfurter Festhalle, Schul-Anti-Doping-Forum中必须用德语连贯口述(约90秒)诊断、措施与数值目标(0 Toleranz in der Schule, 100 Prozent Schulung, 2 Vertrauenslehrer, Hilfe statt Strafe),并以术语举证。
 ROLLE: Du bist NADA-Juniorbotschafter. SITUATION: 在法兰克福用德语90秒陈述案情、法规与目标(零容忍,信任老师)。
+AUFGABE (darstellen, [AFB III]): Stelle dar in ca. 150 Woertern Einordnung, zwei Belege mit Mechanismus und Schlussurteil zu Doping Ethik und Gesundheitsrisiken.
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Befund mit Doping Ethik und Gesundheitsrisiken-Anker | 5 NP | Skizze mit Achsenbeschriftung als Alternativweg
+Analyse mit Mechanismusbezug (Doping Ethik und Gesundheitsrisiken) | 5 NP | Tabellenvergleich mit Messprotokoll als Alternativweg
+Urteil mit Targetbeleg (Doping Ethik und Gesundheitsrisiken) | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
+
 RUBRIC (30 XP):诊断术语8分 | 措施与目标举证7分 | 程序选择对比7分 | 德语表达5分。
 
 `Klausur-Satz: 满分句:本案须禁赛,因持有加沉默双伤公平健康;热线加培训可防再犯。`
+
+KERNSATZ (auswendig):
+- Kernsatz: `Wer meldet statt schweigt, schuetzt Gold und Gesundheit in Frankfurt.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = Ausgangslage mit Kennwert als Subjekt | Mechanismus = Weg mit Strukturbezug als Mechanismus | Urteil = Entscheidung mit Targetbeleg als Urteil
+- Selbsttest: Wer meldet statt schweigt, schuetzt Gold und Gesundheit in ___.
 
 ## Schritt 8 — reflexion: Takeaway & Reflexion — 奖杯还是进站检修
 

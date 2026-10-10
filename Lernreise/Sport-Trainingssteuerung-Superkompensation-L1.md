@@ -8,7 +8,7 @@ operatoren: [darstellen, analysieren, beurteilen, erstellen]
 klausurrelevant: true
 datum: 2026-10-03
 tags: [EF, Sport, Trainingslehre, Biologie]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Trainingssteuerung und Superkompensation (L1, Ziel Klausur)
@@ -31,7 +31,7 @@ Hook / Phaenomen: Max will in 8 Wochen seine 5000-Meter-Zeit fuer das Sport-Abit
 `Klausur-Satz: Das biologische Prinzip der Superkompensation besagt, dass der Organismus nach einer trainingsbedingten Ermuedung nicht nur das urspruengliche Leistungsniveau wiederherstellt, sondern dieses in der Erholungsphase ueberkompensiert.`
 
 ## Schritt 2 — entdecken: Ausruestungskiste der Trainingslehre
-PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
+PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文->德语，Evidenz：pretraining降认知负荷）：
 
 中文在上，德语在下：
 
@@ -87,14 +87,26 @@ BEISPIEL（正确例题示范，含教具操作与解答）：
 
 [Werkzeug: balance-board]
 
-AUFGABE (erstellen & beurteilen, AFB II/III)：Ein Schueler der Stufe EF trainiert dreimal pro Woche (Montag, Mittwoch, Freitag) auf der 100-Meter-Sprintdistanz jeweils mit maximaler Intensitaet (100% Sprintvermoegen, 10 Laeufe). Nach drei Wochen klagt er ueber verhaertete Oberschenkel und schlechtere Zeiten.
+AUFGABE (erstellen & beurteilen, [AFB II/III]): Beurteile ein Schueler der Stufe EF trainiert dreimal pro Woche (Montag, Mittwoch, Freitag) auf der 100-Meter-Sprintdistanz jeweils mit maximaler Intensitaet (100% Sprintvermoegen, 10 Laeufe). Nach drei Wochen klagt er ueber verhaertete Oberschenkel und schlechtere Zeiten.
 1. Beurteilen Sie diesen Trainingsplan anhand der Prinzipien der Superkompensation und des Reizschwellengesetzes. (12 BE)
 2. Erstellen Sie einen modifizierten Wochen-Trainingsplan zur Behebung des Leistungsabfalls. (18 BE)
 
 HILFE:
-1. Schritt 1: Diagnose: Schnelligkeitstraining beansprucht das zentrale Nervensystem (ZNS) und die anaerob-alaktaziden Speicher extrem; die Erholungszeit nach Maximalkraft/Schnelligkeit betraegt 48–72 Stunden.
-2. Schritt 2: Fehler im Plan: 10 maximale Sprints an drei eng aufeinanderfolgenden Tagen fuehren zur Akkumulation von Mikrotraumata und zentralnervoeser Ermuedung $\implies$ Reizung in der Ermuedungsphase.
-3. Schritt 3: Modifikation: Reduzierung der maximalen Sprintfrequenz, Einbau lockerer Grundlagenausdauer (Regeneration) und ausreichende Intervallpausen.
+- Messdimension: Pruefe Eintrag, Wert und Target mit Bilanzansatz zum Thema Trainingssteuerung und Superkompensation; notiere nur die Groessen, deute die Folge noch nicht.
+- Strukturdimension: Pruefe Aufbau, Phase und Zielgroesse mit Strukturanalyse zum Thema Trainingssteuerung und Superkompensation; sammle nur die Merkmale, ohne das Urteil vorwegzunehmen.
+- Bilddimension: Pruefe Kurve, Bild und Zeichen mit Bildvergleich zum Thema Trainingssteuerung und Superkompensation; notiere Bild und Wirkung, ohne die Deutung zu setzen.
+
+COMPLETION (Lückentext):
+- Lies beide Saetze und ergaenze aus dem Gedaechtnis, ohne zurueckzublaettern:
+- Klausur-Satz: Ein ___ Leistungszuwachs gelingt ausschliesslich dann, wenn der nachfolgende Trainingsreiz exakt auf dem Hoehepunkt der Superkompensationsphase gesetzt wird.
+- Ergaenze den zweiten Schluesselbegriff ___ aus dem Gedaechtnis und pruefe die Richtung ohne Rueckblick.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Befund mit Themenanker (Trainingssteuerung und Superkompensation) | 5 NP | Skizze mit Achsenbeschriftung als Alternativweg
+Analyse mit Mechanismusbezug (Trainingssteuerung und Superkompensation) | 5 NP | Tabellenvergleich mit Messprotokoll als Alternativweg
+Urteil mit Targetbeleg (Trainingssteuerung und Superkompensation) | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
 
 MUSTERLÖSUNG:
 1. Beurteilung des bisherigen Plans: Das bisherige Trainingsregime missachtet die physiologischen Regenerationszeiten fundamental. Maximale Schnelligkeits- und Sprintbelastungen belasten vor allem das zentrale Nervensystem (ZNS) sowie die schnell zuckenden Typ-II-Muskelfasern. Die wissenschaftlich gesicherte Erholungsdauer fuer maximale ZNS-Sprints liegt bei mindestens 48 bis 72 Stunden. Da der Schueler am Montag, Mittwoch und Freitag jeweils mit 100% Intensitaet und einem zu hohen Umfang (10 Vollgas-Laeufe) trainiert, erfolgt der neue Reiz regelmaessig mitten in Phase 2/3 (der unvollstaendigen Regeneration). Folge: Das Leistungsniveau wird von Einheit zu Einheit weiter nach unten gedrueckt (Uebertraining / chronische Muskeluebermuedung).
@@ -112,6 +124,9 @@ MUSTERLÖSUNG:
 
 VERGLEICH: Die drei Schicksale des Sportlers
 
+- [Weg A] Neutralfassung fuer die Wahl: Wenn du Weg A waehlst, arbeitest du im Transfer vor allem mit Kennwerten und Struktur.
+- [Weg B] Neutralfassung fuer die Wahl: Wenn du Weg B waehlst, arbeitest du im Transfer vor allem mit Bild, Kette und Deutung.
+
 - Fall 1: Optimaler Reizabstand (Superkompensation):
   - Timing: Reiz 2 erfolgt exakt auf dem Hoehepunkt von Phase 4 (z.B. nach 48 Stunden bei GA1, 72 Stunden bei Maximalkraft).
   - Ergebnis: Stufenfoermiger, kontinuierlicher Leistungszuwachs (Aufwaertstreppe).
@@ -125,6 +140,14 @@ VERGLEICH: Die drei Schicksale des Sportlers
 Entscheidungsregel fuer die Klausur:
 Immer betonen, dass unterschiedliche biologische Systeme (Herz-Kreislauf, Glykogenspeicher, Sehnen/Baender) Voellig unterschiedliche Regenerationszeiten besitzen (Sehnen benoetigen bis zu Wochen, Muskelglykogen 24–48 Stunden)!
 
+HILFE: Pruefe dimensionsgeleitet, welcher Weg passt: Messdimension mit Kennwert spricht fuer Weg A; Strukturdimension mit Typ-Test spricht fuer Zuordnung und Weg B; Bilddimension mit Bildvergleich sichert beide Wege. Ordne selbst zu; die Zuordnung wird nicht vorweggenommen.
+
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg A oder Weg B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Ueberfuehrt aus VERGLEICH (Vorwahl-Fassung): - Timing: Reiz 2 erfolgt exakt auf dem Hoehepunkt von Phase 4 (z.B. nach 48 Stunden bei GA1, 72 Stunden bei Maximalkraft). | - Ergebnis: Stufenfoermiger, kontinuierlicher Leistungszuwachs (Aufwaertstreppe). | - Timing: Reiz 2 erfolgt bereits in Phase 2 oder frueher Phase 3 (Ermuedungsstadium). | - Ergebnis: Abwaertsspirale; Leistung sinkt, Verletzungsanfaelligkeit explodiert. | - Timing: Reiz 2 erfolgt erst nach 7 bis 10 Tagen, wenn Phase 5 bereits das Ausgangsniveau wiederhergestellt hat. | - Ergebnis: Der Sportler behaelt sein Niveau, stagniert jedoch voellig ("Wochenendsportler").
+- Ueberfuehrt aus Schritt-5-HILFE (Vorwahl-Fassung): (kein direktes Vorwahl-Urteil im Original; HILFE war bereits richtungsweisend - bestaetigt.)
+- Ein-Satz-Kern: Der passende Weg folgt dem Signalwort, nicht dem Gefuehl.
+
 ## Schritt 6 — check: Klausur-Transfer Trainingswissenschaft
 PRÜFUNGSSZENARIO (KLP NRW Sport EF / Abitur Inhaltsfeld d: Leistung):
 
@@ -132,13 +155,22 @@ Zwei Abiturienten bereiten sich auf den 3000-m-Lauf vor.
 - Schueler A absolviert drei Einheiten woechentlich: Dienstags Intervalltraining (Extensiv), Donnerstags Fahrtspiel, Samstags langen Dauerlauf (GA1).
 - Schueler B laeuft jeden Tag dieselbe 5-km-Strecke mit maximaler Geschwindigkeit, bis er nicht mehr kann.
 
-AUFGABE (vergleichen & bewerten, AFB II/III):
+AUFGABE (vergleichen & bewerten, [AFB II/III]): Vergleiche die folgende Situation mit Kennwerten und Mechanismus.
 1. Vergleichen Sie die beiden Vorbereitungsstrategien anhand der Belastungssteuerung und Trainingsprinzipien. (14 BE)
 2. Bewerten Sie, welcher Schueler am Tag der Pruefung die hoehere Ausdauerleistung erbringen wird. (16 BE)
 
-ERWARTUNGSHORIZONT:
-- AFB II: Schueler A variiert die Belastungsgroessen gezielt (extensives Intervall fuer aerobe Kapazitaet, Dauerlauf fuer Fettstoffwechsel und kardiovaskulaere Basis). Die Pausentage gewaehrleisten vollstaendige Superkompensation der Glykogenspeicher. Schueler B verletzt das Prinzip der progressiven Belastungssteigerung und der optimalen Relation von Belastung und Erholung; durch taegliche Monotonie auf Anschlag droht Glykogenverarmung und Leistungsabfall.
-- AFB III: Schueler A wird eine signifikant bessere Leistung erzielen. Sein heterogenes Belastungsgefuege erzeugt spezifische physiologische Anpassungen (Herzinnenvolumenvergroesserung, Mitochondrienneubildung), waehrend Schueler B mit hoher Wahrscheinlichkeit im Zustand des chronischen Uebertrainings antritt.
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Befund mit Trainingssteuerung und Superkompensation-Anker | 5 NP | Skizze mit Achsenbeschriftung als Alternativweg
+Analyse mit Mechanismusbezug (Trainingssteuerung und Superkompensation) | 5 NP | Tabellenvergleich mit Messprotokoll als Alternativweg
+Urteil mit Targetbeleg (Trainingssteuerung und Superkompensation) | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
+
+KERNSATZ (auswendig):
+- Kernsatz: `Ein optimaler Leistungszuwachs gelingt ausschliesslich dann, wenn der nachfolgende Trainingsreiz exakt auf dem Hoehepunkt der Superkompensationsphase gesetzt wird.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = Ausgangslage mit Kennwert als Subjekt | Mechanismus = Weg mit Strukturbezug als Mechanismus | Urteil = Entscheidung mit Targetbeleg als Urteil
+- Selbsttest: Ein optimaler Leistungszuwachs gelingt ausschliesslich dann, wenn der nachfolgende Trainingsreiz exakt auf dem Hoehepunkt der Superkompensationsphase gesetzt ___.
 
 ## Schritt 7 — check: Format-Check & Scoring
 30 XP Schnelltest zur Verstaendigungssicherung:

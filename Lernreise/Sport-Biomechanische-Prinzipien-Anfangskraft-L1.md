@@ -8,7 +8,7 @@ operatoren: [erlaeutern, anwenden]
 klausurrelevant: true
 datum: 2026-09-26
 tags: [EF, Sport, Biomechanik]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 
@@ -39,7 +39,7 @@ Hook (DE): 2er-Bob, Selektion: Zwei Teams, gleiche Sprinter, doch Team Rot liegt
 
 ## Schritt 2 — entdecken: 5术语装备盒
 
-PRETRAINING术语盒(核心5词,先读三遍中德,合书自测中文→德语):
+PRETRAINING术语盒(核心5词,先读三遍中德,合书自测中文->德语):
 
 中文在上,德语在下:
 
@@ -97,14 +97,28 @@ BEISPIEL(含教具操作与解答):
 
 [Werkzeug: formula]
 
-AUFGABE (analysieren, AFB II):曲线调节器:对比红蓝队算冲量面积与速度增量,90秒达标。达标线:Anschub 5,8 s auf 30 m, Kraftflanke 0,18 s, Impuls 280 Ns。
+AUFGABE (analysieren, [AFB II]): Analysiere 曲线调节器:对比红蓝队算冲量面积与速度增量,90秒达标。达标线:Anschub 5,8 s auf 30 m, Kraftflanke 0,18 s, Impuls 280 Ns。
 
 Target数值目标:Anschub 5,8 s auf 30 m, Kraftflanke 0,18 s, Impuls 280 Ns。
 
 HILFE:
-1. 先读红蓝两曲线陡边与面积,对照0,18 s flank与280 Ns目标,判定是起峰慢还是断推早。
-2. 再用J=m·Δv把面积换成速度增量,算出0,2秒差距对应的冲量缺口。
-3. 最后反推训练顺序:先练起推快磨陡边,再加重填面积,保30 m跑进5,8秒。
+- Messdimension: Pruefe Eintrag, Wert und Target mit Bilanzansatz zum Thema Biomechanische Prinzipien Anfangskraft; notiere nur die Groessen, deute die Folge noch nicht.
+- Strukturdimension: Pruefe Aufbau, Phase und Zielgroesse mit Strukturanalyse zum Thema Biomechanische Prinzipien Anfangskraft; sammle nur die Merkmale, ohne das Urteil vorwegzunehmen.
+- Bilddimension: Pruefe Kurve, Bild und Zeichen mit Bildvergleich zum Thema Biomechanische Prinzipien Anfangskraft; notiere Bild und Wirkung, ohne die Deutung zu setzen.
+
+COMPLETION (Lückentext):
+- Lies beide Saetze und ergaenze aus dem Gedaechtnis, ohne zurueckzublaettern:
+- ___
+Kurve Rot [steil, Flaeche gross] -> Impuls [m mal v] -> Start [2 Zehntel vorn]
+Regel: Flanke steil in 0,18 s setzen | Schub halten fuer 280 Ns auf 30 m
+- Ergaenze den zweiten Schluesselbegriff ___ aus dem Gedaechtnis und pruefe die Richtung ohne Rueckblick.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Befund mit Themenanker (Biomechanische Prinzipien Anfangskraft) | 5 NP | Skizze mit Achsenbeschriftung als Alternativweg
+Analyse mit Mechanismusbezug (Biomechanische Prinzipien Anfangskraft) | 5 NP | Tabellenvergleich mit Messprotokoll als Alternativweg
+Urteil mit Targetbeleg (Biomechanische Prinzipien Anfangskraft) | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
 
 MUSTERLÖSUNG:红队0,18秒上900牛顶0,3秒,J=280牛秒,30米5,8秒达标。蓝队峰高面小落0,2秒,输在持续。
 
@@ -116,11 +130,20 @@ VERGLEICH辨别实验(双向辨析,先选程序再解题):【选程序】
 
 VERGLEICH:先选程序—— (i) Maximalkraftweg (schwer, langsam: mehr Spitze) 还是 (ii) Schnellkraftweg (leicht, schnell: steilere Flanke) ——再解题。【选程序:问上限与结构选(i),问兑现与情境选(ii)。口述先说 Ich waehle Verfahren (i)/(ii), weil …】
 
+- [Weg A] Neutralfassung fuer die Wahl: Wenn du Weg A waehlst, arbeitest du im Transfer vor allem mit Kennwerten und Struktur.
+- [Weg B] Neutralfassung fuer die Wahl: Wenn du Weg B waehlst, arbeitest du im Transfer vor allem mit Bild, Kette und Deutung.
+
 AUFGABE A:案例A(又弱又慢)选哪条?
 
 AUFGABE B:案例B(有力起动慢)选哪条?
 
-HILFE:A braucht Basis, also schwer. B hat Basis, also schnell.
+HILFE: Pruefe dimensionsgeleitet, welcher Weg passt: Messdimension mit Kennwert spricht fuer Weg A; Strukturdimension mit Typ-Test spricht fuer Zuordnung und Weg B; Bilddimension mit Bildvergleich sichert beide Wege. Ordne selbst zu; die Zuordnung wird nicht vorweggenommen.
+
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg A oder Weg B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Ueberfuehrt aus VERGLEICH (Vorwahl-Fassung): VERGLEICH:先选程序—— (i) Maximalkraftweg (schwer, langsam: mehr Spitze) 还是 (ii) Schnellkraftweg (leicht, schnell: steilere Flanke) ——再解题。【选程序:问上限与结构选(i),问兑现与情境选(ii)。口述先说 Ich waehle Verfahren (i)/(ii), weil …】
+- Ueberfuehrt aus Schritt-5-HILFE (Vorwahl-Fassung): HILFE:A braucht Basis, also schwer. B hat Basis, also schnell.
+- Ein-Satz-Kern: 先加重还是先加快,短板说了算。
 
 ANTWORT:A走最大力量补底;B走速度力量磨陡边。
 
@@ -150,9 +173,23 @@ CHECK检索默写(自测3题,与答案配对):
 ## Schritt 7 — szenario: Klausurtransfer — Bob-Starttrainer
 中文:你是Bob-Starttrainer,在Oberhofer Rennschlittenbahn, Schul-Bob-Camp中必须用德语连贯口述(约90秒)诊断、措施与数值目标(Anschub 5,8 s auf 30 m, Kraftflanke 0,18 s, Impuls 280 Ns),并以术语举证。
 ROLLE: Du bist Bob-Starttrainer. SITUATION: 在奥伯霍夫用德语90秒陈述曲线、冲量与目标(5,8秒,280牛秒)。
+AUFGABE (beschreiben, [AFB III]): Beschreibe in ca. 150 Woertern Einordnung, zwei Belege mit Mechanismus und Schlussurteil zu Biomechanische Prinzipien Anfangskraft.
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Befund mit Biomechanische Prinzipien Anfangskraft-Anker | 5 NP | Skizze mit Achsenbeschriftung als Alternativweg
+Analyse mit Mechanismusbezug (Biomechanische Prinzipien Anfangskraft) | 5 NP | Tabellenvergleich mit Messprotokoll als Alternativweg
+Urteil mit Targetbeleg (Biomechanische Prinzipien Anfangskraft) | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
+
 RUBRIC (30 XP):诊断术语8分 | 措施与目标举证7分 | 程序选择对比7分 | 德语表达5分。
 
 `Klausur-Satz: 满分句:落后因0,2秒断推、冲量太小;陡边加0,35秒推可锁定5,8秒与280牛秒。`
+
+KERNSATZ (auswendig):
+- Kernsatz: `Kraft wird erst durch schnelle Ansteuerung zu Schnelligkeit; Flanke trainieren.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = Ausgangslage mit Kennwert als Subjekt | Mechanismus = Weg mit Strukturbezug als Mechanismus | Urteil = Entscheidung mit Targetbeleg als Urteil
+- Selbsttest: Kraft wird erst durch schnelle Ansteuerung zu Schnelligkeit; Flanke ___.
 
 ## Schritt 8 — reflexion: Takeaway & Reflexion — 奖杯还是进站检修
 

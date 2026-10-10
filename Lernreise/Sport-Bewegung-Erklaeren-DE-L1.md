@@ -8,7 +8,7 @@ operatoren: [beschreiben, erklaeren, beurteilen]
 klausurrelevant: true
 datum: 2026-09-25
 tags: [EF, Sport, Bewegungsanalyse]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 
@@ -87,14 +87,26 @@ BEISPIEL (Musteraufgabe mit Loesungsweg):
 
 [Werkzeug: oral-timer]
 
-AUFGABE (analysieren, AFB II): 90-Sekunden-Ansage gegen den Timer: Erklaere Handstand mit Demo, drei Worten und einem Impuls am Target. Erreiche das Target: Demo 20 s, 3 Schluesselworte, 5 Versuche, Zielbild Huefte hoch.
+AUFGABE (analysieren, [AFB II]): Analysiere 90-Sekunden-Ansage gegen den Timer: Erklaere Handstand mit Demo, drei Worten und einem Impuls am Target. Erreiche das Target: Demo 20 s, 3 Schluesselworte, 5 Versuche, Zielbild Huefte hoch.
 
 TARGET: Demo 20 s, 3 Schluesselworte, 5 Versuche, Zielbild Huefte hoch.
 
 HILFE:
-1. Schritt 1: Zeige erst Echtzeit, dann Zeitlupe mit einem Wort je Knoten.
-2. Schritt 2: Gib drei Schluesselworte und fordere den ersten Versuch.
-3. Schritt 3: Korrigiere genau einen Fehler mit Impuls plus Lob.
+- Messdimension: Pruefe Eintrag, Wert und Target mit Bilanzansatz zum Thema Bewegung erklären; notiere nur die Groessen, deute die Folge noch nicht.
+- Strukturdimension: Pruefe Aufbau, Phase und Zielgroesse mit Strukturanalyse zum Thema Bewegung erklären; sammle nur die Merkmale, ohne das Urteil vorwegzunehmen.
+- Bilddimension: Pruefe Kurve, Bild und Zeichen mit Bildvergleich zum Thema Bewegung erklären; notiere Bild und Wirkung, ohne die Deutung zu setzen.
+
+COMPLETION (Lückentext):
+- Lies beide Saetze und ergaenze aus dem Gedaechtnis, ohne zurueckzublaettern:
+- Klausur-Satz: ___ liefert das Bild, Schluesselworte den Fokus: Diese Definitionen tragen jede Lehrprobe.
+- Ergaenze den zweiten Schluesselbegriff ___ aus dem Gedaechtnis und pruefe die Richtung ohne Rueckblick.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Befund mit Themenanker (Bewegung erklären) | 5 NP | Skizze mit Achsenbeschriftung als Alternativweg
+Analyse mit Mechanismusbezug (Bewegung erklären) | 5 NP | Tabellenvergleich mit Messprotokoll als Alternativweg
+Urteil mit Targetbeleg (Bewegung erklären) | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
 
 MUSTERLOESUNG: Demo in Echtzeit plus Zeitlupe liefert das Bild, Huefte hoch, Schultern weg, Finger spreizen fokussieren es. Das Target wird erreicht, weil fuenf Versuche mit je einem Impuls die Huefte strecken. Vier Minuten Rede ohne Bild wuerde die Fehlerquote verdoppeln.
 
@@ -106,11 +118,20 @@ VERGLEICH (zwei Verfahren im Kontrast):
 
 VERGLEICH: Waehle zuerst das Verfahren: (i) Ganzheitsmethode (gleich frei, Bild zuerst, Mut zuerst) oder (ii) Teillernmethode (Reihe Bank-Wand-frei, Sicherheit zuerst), dann loesen. Die Wahl des Verfahrens entscheidet ueber die ganze Begruendung.
 
+- [Weg A] Neutralfassung fuer die Wahl: Wenn du Weg A waehlst, arbeitest du im Transfer vor allem mit Kennwerten und Struktur.
+- [Weg B] Neutralfassung fuer die Wahl: Wenn du Weg B waehlst, arbeitest du im Transfer vor allem mit Bild, Kette und Deutung.
+
 AUFGABE A: Fall A (mutige Klasse, wenig Zeit): Welcher Weg?
 
 AUFGABE B: Fall B (aengstliche Klasse, viel Zeit): Welcher Weg?
 
-HILFE: A braucht Tempo, also ganz. B braucht Sicherheit, also Teile.
+HILFE: Pruefe dimensionsgeleitet, welcher Weg passt: Messdimension mit Kennwert spricht fuer Weg A; Strukturdimension mit Typ-Test spricht fuer Zuordnung und Weg B; Bilddimension mit Bildvergleich sichert beide Wege. Ordne selbst zu; die Zuordnung wird nicht vorweggenommen.
+
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg A oder Weg B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Ueberfuehrt aus VERGLEICH (Vorwahl-Fassung): VERGLEICH: Waehle zuerst das Verfahren: (i) Ganzheitsmethode (gleich frei, Bild zuerst, Mut zuerst) oder (ii) Teillernmethode (Reihe Bank-Wand-frei, Sicherheit zuerst), dann loesen. Die Wahl des Verfahrens entscheidet ueber die ganze Begruendung.
+- Ueberfuehrt aus Schritt-5-HILFE (Vorwahl-Fassung): HILFE: A braucht Tempo, also ganz. B braucht Sicherheit, also Teile.
+- Ein-Satz-Kern: Ganz oder teilig: Klasse und Zeit waehlen den Weg.
 
 ANTWORT: A erfordert Weg A mit Demo plus Versuch. B erfordert Weg B mit Bank und Wand. Ich waehle A/B, weil Klasse und Zeit es verlangen.
 
@@ -140,9 +161,23 @@ CHECK (3 Fragen zur Selbstkontrolle mit Antworten):
 ## Schritt 7 — szenario: Klausurtransfer — Sportlehrer Lehrprobe
 ROLLE: Du bist Sportlehrer Lehrprobe und verteidigst deine Entscheidung vor der Pruefungskommission.
 SITUATION: In Muenster musst du 90 Sekunden lang Demo, Worte und Target (Huefte hoch) vor dem Pruefer verteidigen.
+AUFGABE (beschreiben, [AFB III]): Beschreibe in ca. 150 Woertern Einordnung, zwei Belege mit Mechanismus und Schlussurteil zu Bewegung erklären.
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Befund mit Bewegung erklären-Anker | 5 NP | Skizze mit Achsenbeschriftung als Alternativweg
+Analyse mit Mechanismusbezug (Bewegung erklären) | 5 NP | Tabellenvergleich mit Messprotokoll als Alternativweg
+Urteil mit Targetbeleg (Bewegung erklären) | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
+
 RUBRIC (30 XP): Diagnose mit Fachbegriffen (8 XP) | Massnahme mit Target-Beleg (10 XP) | Verfahrenswahl im Vergleich (7 XP) | Fachsprachlicher Vortrag (5 XP).
 
 `Klausur-Satz: AFB-III-Mustersatz: Die Fehlerquote entstand, weil vier Minuten ohne Bild die Vorstellung leerten; Demo plus Huefte hoch wuerde den Stand sichern.`
+
+KERNSATZ (auswendig):
+- Kernsatz: `Demonstrieren liefert das Bild, Schluesselworte den Fokus: Diese Definitionen tragen jede Lehrprobe.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = Ausgangslage mit Kennwert als Subjekt | Mechanismus = Weg mit Strukturbezug als Mechanismus | Urteil = Entscheidung mit Targetbeleg als Urteil
+- Selbsttest: Demonstrieren liefert das Bild, Schluesselworte den Fokus: Diese Definitionen tragen jede ___.
 
 ## Schritt 8 — reflexion: Takeaway & Reflexion
 

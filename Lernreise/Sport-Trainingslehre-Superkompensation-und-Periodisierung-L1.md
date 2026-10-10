@@ -8,7 +8,7 @@ operatoren: [beschreiben, analysieren, planen]
 klausurrelevant: true
 datum: 2026-10-03
 tags: [EF, Sport, Trainingslehre, Superkompensation, Periodisierung, Uebertraining, Belastung]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Trainingslehre: Modell der Superkompensation und sportliche Periodisierung (L1, Ziel Klausur)
@@ -29,7 +29,7 @@ Zwei ambitionierte Leichtathleten wollen sich in zwoelf Wochen fuer die Landesme
 `Klausur-Satz: Ein Trainingsreiz zerstoert zunaechst die biologische Homoestase; die eigentliche Leistungssteigerung entsteht erst in der Erholungsphase durch die ueberschiessende Wiederherstellung von Energiespeichern und Proteinstrukturen.`
 
 ## Schritt 2 — entdecken: Das biologische Vokabular der Leistungsanpassung
-PRETRAINING术语盒（核心4词，先读三遍中德，合书自测中文→德语）：
+PRETRAINING术语盒（核心4词，先读三遍中德，合书自测中文->德语）：
 
 - 内稳态平衡 — Homoestase: 机体内环境（血糖、肌糖原、pH值、核心温度）维持在相对恒定动态平衡的状态。 Das physiologische Fliessgleichgewicht des inneren Milieus, welches durch einen trainingswirksamen Reiz gezielt gestoert wird.
 - 超量恢复 — Superkompensation: 负荷后恢复期内，机体不仅恢复到原有能量与结构基线，更暂时超越原有水平以抵御未来更大负荷的生物学过度代偿现象。 Ueberschiessende Wiederherstellung ueber das Ausgangsniveau hinaus waehrend der Regenerationsphase.
@@ -60,13 +60,30 @@ Leistungsniveau
 
 [Werkzeug: balance-board]
 
-AUFGABE (beschreiben & planen, AFB I/II):
+AUFGABE (beschreiben & planen, [AFB I/II]): Beschreibe die folgende Situation mit Kennwerten und Mechanismus.
 Ein Zehntklaessler moechte seine Maximalkraft beim Bankdruecken steigern. Aktuell schafft er einmalig $60\,\text{kg}$.
 Er erwaegt zwei Trainingsplaene:
 - Plan 1: Taeglich $5 \times 5$ Wiederholungen mit $55\,\text{kg}$ ohne Pause.
 - Plan 2: Montag und Donnerstag jeweils Hypertrophietraining ($3 \times 10$ Wiederholungen bei $45\,\text{kg}$), Dienstag und Freitag lockeres Grundlagenausdauertraining / Mobilisation, Mittwoch und Wochenende vollstaendige Regeneration.
 1. Beschreibe anhand der biochemischen Glykogen- und Proteinsyntheseraten, was bei Plan 1 nach zwei Wochen eintreten wird.
 2. Begruende sportwissenschaftlich, warum Plan 2 den optimalen Reiz-Wiederherstellungs-Rhythmus trifft.
+
+HILFE:
+- Messdimension: Pruefe Eintrag, Wert und Target mit Bilanzansatz zum Thema Trainingslehre; notiere nur die Groessen, deute die Folge noch nicht.
+- Strukturdimension: Pruefe Aufbau, Phase und Zielgroesse mit Strukturanalyse zum Thema Trainingslehre; sammle nur die Merkmale, ohne das Urteil vorwegzunehmen.
+- Bilddimension: Pruefe Kurve, Bild und Zeichen mit Bildvergleich zum Thema Trainingslehre; notiere Bild und Wirkung, ohne die Deutung zu setzen.
+
+COMPLETION (Lückentext):
+- Lies beide Saetze und ergaenze aus dem Gedaechtnis, ohne zurueckzublaettern:
+- Ein ___ zerstoert zunaechst die biologische Homoestase; die eigentliche Leistungssteigerung entsteht erst in der Erholungsphase durch die ueberschiessende Wiederherstellung von Energiespeichern und Proteinstrukturen.
+- Ergaenze den zweiten Schluesselbegriff ___ aus dem Gedaechtnis und pruefe die Richtung ohne Rueckblick.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Befund mit Themenanker (Trainingslehre) | 5 NP | Skizze mit Achsenbeschriftung als Alternativweg
+Analyse mit Mechanismusbezug (Trainingslehre) | 5 NP | Tabellenvergleich mit Messprotokoll als Alternativweg
+Urteil mit Targetbeleg (Trainingslehre) | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
 
 MUSTERLOESUNG:
 1. Analyse von Plan 1:
@@ -85,15 +102,20 @@ MUSTERLOESUNG:
 VERGLEICH: Optimales Erholungsfenster vs. Uebertraining / Fehlende Anpassung (选概念)
 
 - Position A (Optimal getaktete Reizdichte):
-  - Timing: Neuer Reiz erfolgt im Gipfelbereich der Superkompensation.
-  - Dynamik: Stetiger, treppenfoermiger Leistungsanstieg.
-  - Zustand: Hohe Motivation, stabiler Ruhepuls, optimiertes Immunsystem.
+  - [Weg A] Neutralfassung fuer die Wahl: Wenn du Weg A waehlst, arbeitest du im Transfer vor allem mit diesem Fokus.
 - Position B (Zu geringe vs. zu hohe Reizdichte):
-  - Zu lange Pause (> 7 Tage): Superkompensation verpufft, Leistung bleibt unverweilt auf Ausgangsniveau.
-  - Zu kurze Pause (< 24 Std. bei Maximalkraft): Katabole Prozesse ueberwiegen anabole Reparatur; tiefer Sturz in chronische Erschoepfung.
+  - [Weg B] Neutralfassung fuer die Wahl: Wenn du Weg B waehlst, arbeitest du im Transfer vor allem mit diesem Fokus.
 
 Entscheidungsregel fuer die Klausur:
 Wird nach `Trainingsprinzipien` gefragt, benenne immer das "Prinzip der optimalen Relation von Belastung und Erholung" sowie das "Prinzip der progressiven Belastungssteigerung" als unzertrennliches Doppel!
+
+HILFE: Pruefe dimensionsgeleitet, welcher Weg passt: Messdimension mit Kennwert spricht fuer Weg A; Strukturdimension mit Typ-Test spricht fuer Zuordnung und Weg B; Bilddimension mit Bildvergleich sichert beide Wege. Ordne selbst zu; die Zuordnung wird nicht vorweggenommen.
+
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg A oder Weg B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Ueberfuehrt aus VERGLEICH (Vorwahl-Fassung): - Position A (Optimal getaktete Reizdichte): | - Timing: Neuer Reiz erfolgt im Gipfelbereich der Superkompensation. | - Position B (Zu geringe vs. zu hohe Reizdichte): | Entscheidungsregel fuer die Klausur: | - Dynamik: Stetiger, treppenfoermiger Leistungsanstieg. | - Zustand: Hohe Motivation, stabiler Ruhepuls, optimiertes Immunsystem. | - Zu lange Pause (> 7 Tage): Superkompensation verpufft, Leistung bleibt unverweilt auf Ausgangsniveau. | - Zu kurze Pause (< 24 Std. bei Maximalkraft): Katabole Prozesse ueberwiegen anabole Reparatur; tiefer Sturz in chronische Erschoepfung.
+- Ueberfuehrt aus Schritt-5-HILFE (Vorwahl-Fassung): (kein direktes Vorwahl-Urteil im Original; HILFE war bereits richtungsweisend - bestaetigt.)
+- Ein-Satz-Kern: Der passende Weg folgt dem Signalwort, nicht dem Gefuehl.
 
 ## Schritt 6 — check: Klausur-Transfer Tapering vor dem Saisonhoehepunkt
 
@@ -107,6 +129,20 @@ Differenziere zwischen dem sympathikotonen Uebertraining (erhoehter Ruhepuls, Sc
 
 ### AFB III: Tapering-Planung
 Entwirf ein zweiwoechiges "Tapering"-Konzept fuer eine Marathonlaeuferin unmittelbar vor dem Wettkampf: Wie muessen Umfang und Intensitaet veraendert werden, um am Starttag mit gefuellten Speichern und maximaler neuronaler Frische aufzutreten?
+
+AUFGABE (beschreiben, [AFB III]): Beschreibe in ca. 150 Woertern Einordnung, zwei Belege mit Mechanismus und Schlussurteil zu Trainingslehre.
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Befund mit Trainingslehre-Anker | 5 NP | Skizze mit Achsenbeschriftung als Alternativweg
+Analyse mit Mechanismusbezug (Trainingslehre) | 5 NP | Tabellenvergleich mit Messprotokoll als Alternativweg
+Urteil mit Targetbeleg (Trainingslehre) | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
+
+KERNSATZ (auswendig):
+- Kernsatz: `Ein Trainingsreiz zerstoert zunaechst die biologische Homoestase; die eigentliche Leistungssteigerung entsteht erst in der Erholungsphase durch die ueberschiessende Wiederherstellung von Energiespeichern und Proteinstrukturen.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = Ausgangslage mit Kennwert als Subjekt | Mechanismus = Weg mit Strukturbezug als Mechanismus | Urteil = Entscheidung mit Targetbeleg als Urteil
+- Selbsttest: Ein Trainingsreiz zerstoert zunaechst die biologische Homoestase; die eigentliche Leistungssteigerung entsteht erst in der Erholungsphase durch die ueberschiessende Wiederherstellung von Energiespeichern und ___.
 
 ## Schritt 7 — check: Format-Check & Scoring
 

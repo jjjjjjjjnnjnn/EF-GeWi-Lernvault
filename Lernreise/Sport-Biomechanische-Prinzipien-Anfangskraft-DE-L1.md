@@ -8,7 +8,7 @@ operatoren: [erlaeutern, anwenden]
 klausurrelevant: true
 datum: 2026-09-26
 tags: [EF, Sport, Biomechanik]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 
@@ -87,14 +87,26 @@ BEISPIEL (Musteraufgabe mit Loesungsweg):
 
 [Werkzeug: formula]
 
-AUFGABE (analysieren, AFB II): Kurvenregler: Vergleiche Rot gegen Blau mit Flaeche J und rechne Delta-v; erreiche das Target in 90 Sekunden. Erreiche das Target: Anschub 5,2 s auf 50 m, Kraftflanke 0,15 s, Impuls 320 Ns.
+AUFGABE (analysieren, [AFB II]): Analysiere kurvenregler: Vergleiche Rot gegen Blau mit Flaeche J und rechne Delta-v; erreiche das Target in 90 Sekunden. Erreiche das Target: Anschub 5,2 s auf 50 m, Kraftflanke 0,15 s, Impuls 320 Ns.
 
 TARGET: Anschub 5,2 s auf 50 m, Kraftflanke 0,15 s, Impuls 320 Ns.
 
 HILFE:
-1. Schritt 1: Lies Flankensteilheit und Flaeche beider Kurven ab.
-2. Schritt 2: Rechne J zu Delta-v mit m mal v um.
-3. Schritt 3: Leite Starttraining (Schnelligkeit vor Last) ab.
+- Messdimension: Pruefe Eintrag, Wert und Target mit Bilanzansatz zum Thema Biomechanische Prinzipien Anfangskraft; notiere nur die Groessen, deute die Folge noch nicht.
+- Strukturdimension: Pruefe Aufbau, Phase und Zielgroesse mit Strukturanalyse zum Thema Biomechanische Prinzipien Anfangskraft; sammle nur die Merkmale, ohne das Urteil vorwegzunehmen.
+- Bilddimension: Pruefe Kurve, Bild und Zeichen mit Bildvergleich zum Thema Biomechanische Prinzipien Anfangskraft; notiere Bild und Wirkung, ohne die Deutung zu setzen.
+
+COMPLETION (Lückentext):
+- Lies beide Saetze und ergaenze aus dem Gedaechtnis, ohne zurueckzublaettern:
+- Klausur-Satz: ___ heisst schnell hoch, Impuls Flaeche unter Kurve: Diese Definitionen tragen jede Deutung.
+- Ergaenze den zweiten Schluesselbegriff ___ aus dem Gedaechtnis und pruefe die Richtung ohne Rueckblick.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Befund mit Themenanker (Biomechanische Prinzipien Anfangskraft) | 5 NP | Skizze mit Achsenbeschriftung als Alternativweg
+Analyse mit Mechanismusbezug (Biomechanische Prinzipien Anfangskraft) | 5 NP | Tabellenvergleich mit Messprotokoll als Alternativweg
+Urteil mit Targetbeleg (Biomechanische Prinzipien Anfangskraft) | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
 
 MUSTERLOESUNG: Rot steigt in 0,15 s auf 900 N und haelt 0,35 s, also J = 320 Ns und Delta-v nach m mal v exakt im Target. Das Target 5,2 s wird erreicht, weil Flaeche statt Spitze trainiert wurde. Blau mit 950 N Spitze, aber nur 0,2 s Schub, bleibt zwei Zehntel zurueck.
 
@@ -106,11 +118,20 @@ VERGLEICH (zwei Verfahren im Kontrast):
 
 VERGLEICH: Waehle zuerst das Verfahren: (i) Maximalkraftweg (schwer, langsam: mehr Spitze) oder (ii) Schnellkraftweg (leicht, schnell: steilere Flanke), dann loesen. Die Wahl des Verfahrens entscheidet ueber die ganze Begruendung.
 
+- [Weg A] Neutralfassung fuer die Wahl: Wenn du Weg A waehlst, arbeitest du im Transfer vor allem mit Kennwerten und Struktur.
+- [Weg B] Neutralfassung fuer die Wahl: Wenn du Weg B waehlst, arbeitest du im Transfer vor allem mit Bild, Kette und Deutung.
+
 AUFGABE A: Fall A (schwacher, langsamer Anschieber): Welcher Weg?
 
 AUFGABE B: Fall B (starker, aber langsamer Starter): Welcher Weg?
 
-HILFE: A braucht Basis, also schwer. B hat Basis, also schnell.
+HILFE: Pruefe dimensionsgeleitet, welcher Weg passt: Messdimension mit Kennwert spricht fuer Weg A; Strukturdimension mit Typ-Test spricht fuer Zuordnung und Weg B; Bilddimension mit Bildvergleich sichert beide Wege. Ordne selbst zu; die Zuordnung wird nicht vorweggenommen.
+
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg A oder Weg B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Ueberfuehrt aus VERGLEICH (Vorwahl-Fassung): VERGLEICH: Waehle zuerst das Verfahren: (i) Maximalkraftweg (schwer, langsam: mehr Spitze) oder (ii) Schnellkraftweg (leicht, schnell: steilere Flanke), dann loesen. Die Wahl des Verfahrens entscheidet ueber die ganze Begruendung.
+- Ueberfuehrt aus Schritt-5-HILFE (Vorwahl-Fassung): HILFE: A braucht Basis, also schwer. B hat Basis, also schnell.
+- Ein-Satz-Kern: Schwer oder schnell: Das Defizit waehlt den Weg.
 
 ANTWORT: A erfordert Weg A mit Kniebeuge. B erfordert Weg B mit Schlitten-Sprints und Spruengen. Ich waehle A/B, weil Defizit es zeigt.
 
@@ -140,9 +161,23 @@ CHECK (3 Fragen zur Selbstkontrolle mit Antworten):
 ## Schritt 7 — szenario: Klausurtransfer — Bob-Starttrainer
 ROLLE: Du bist Bob-Starttrainer und verteidigst deine Entscheidung vor der Pruefungskommission.
 SITUATION: In Berlin musst du 90 Sekunden lang Kurve, Impuls und Target (5,2 s, 320 Ns) verteidigen.
+AUFGABE (beschreiben, [AFB III]): Beschreibe in ca. 150 Woertern Einordnung, zwei Belege mit Mechanismus und Schlussurteil zu Biomechanische Prinzipien Anfangskraft.
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Befund mit Biomechanische Prinzipien Anfangskraft-Anker | 5 NP | Skizze mit Achsenbeschriftung als Alternativweg
+Analyse mit Mechanismusbezug (Biomechanische Prinzipien Anfangskraft) | 5 NP | Tabellenvergleich mit Messprotokoll als Alternativweg
+Urteil mit Targetbeleg (Biomechanische Prinzipien Anfangskraft) | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
+
 RUBRIC (30 XP): Diagnose mit Fachbegriffen (8 XP) | Massnahme mit Target-Beleg (10 XP) | Verfahrenswahl im Vergleich (7 XP) | Fachsprachlicher Vortrag (5 XP).
 
 `Klausur-Satz: AFB-III-Mustersatz: Der Rueckstand entstand, weil der Schub nach 0,2 s einbrach und J zu klein blieb; steile Flanke plus 0,35 s Schub wuerden 5,2 s sichern.`
+
+KERNSATZ (auswendig):
+- Kernsatz: `Anfangskraft heisst schnell hoch, Impuls Flaeche unter Kurve: Diese Definitionen tragen jede Deutung.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = Ausgangslage mit Kennwert als Subjekt | Mechanismus = Weg mit Strukturbezug als Mechanismus | Urteil = Entscheidung mit Targetbeleg als Urteil
+- Selbsttest: Anfangskraft heisst schnell hoch, Impuls Flaeche unter Kurve: Diese Definitionen tragen jede ___.
 
 ## Schritt 8 — reflexion: Takeaway & Reflexion
 

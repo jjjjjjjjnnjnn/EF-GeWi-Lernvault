@@ -8,7 +8,7 @@ operatoren: [beschreiben, analysieren, erstellen]
 klausurrelevant: true
 datum: 2026-10-03
 tags: [EF, Sport, Gesundheitssport, Kraftausdauer, Haltung, Janda, Praevention]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Gesundheitssport: Haltungskompensation und Kraftausdauer fuer Schueler (L1, Ziel Klausur)
@@ -31,7 +31,7 @@ Hook / Phaenomen: "Sitzen ist das neue Rauchen" — ein drastischer Satz der Spo
 `Klausur-Satz: Chronische Sitzhaltungen induzieren muskulaere Dysbalancen gemaess dem Janda-Modell, gekennzeichnet durch die tonische Verkuerzung der Hueftbeuger und die phasische Schwaechung der Rumpf- und Glutealmuskulatur.`
 
 ## Schritt 2 — entdecken: Ausruestungskiste der Praeventions-Unit
-PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
+PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文->德语，Evidenz：pretraining降认知负荷）：
 
 中文在上，德语在下：
 
@@ -98,17 +98,27 @@ BEISPIEL（正确例题示范，含教具操作与解答）：
 
 [Werkzeug: balance-board]
 
-AUFGABE (beschreiben & erstellen, AFB I/II/III)：
+AUFGABE (beschreiben & erstellen, [AFB I/II/III]): Beschreibe die folgende Situation mit Kennwerten und Mechanismus.
 Ein 16-jaehriger Schueler klagt ueber zunehmende Rueckenschmerzen im Lendenwirbelbereich nach langen Schultagen. Die sportaerztliche Begutachtung stellt ein ausgepraegtes Hohlkreuz (Hyperlordose), nach vorn gezogene Schultern und eine Verkuerzung des M. iliopsoas fest.
 1. Analysieren Sie die beteiligten Muskelpaare anhand von Jandas Kreuzsyndrom. (10 BE)
 2. Erstellen Sie einen kompensatorischen Trainingsplan (4 Uebungen) zur Schmerzlinderung gemaess den Trainingsprinzipien der Kraftausdauer und des Dehnens. (20 BE)
 
 HILFE:
-1. Schritt 1: Muskelstatus ermitteln:
-   - Verkuerzt: M. iliopsoas (Hueftbeuger), M. trapezius pars descendens (Nacken), M. pectoralis major (Brust).
-   - Abgeschwaecht: M. gluteus maximus (Gesaess), M. transversus abdominis (Bauch), M. rhomboideus (Schulterblattfixierer).
-2. Schritt 2: Trainingsaufbau strukturieren: Erst detonisieren/dehnen (Iliopsoas, Brust), dann gezielt kraeftigen (Gluteus, Core, Rhomboideen).
-3. Schritt 3: Belastungsnormative: Kraftausdauer (3 Saetze, 20–25 Wiederholungen bzw. 45s Haltezeit, 60s Pause).
+- Messdimension: Pruefe Eintrag, Wert und Target mit Bilanzansatz zum Thema Gesundheitssport; notiere nur die Groessen, deute die Folge noch nicht.
+- Strukturdimension: Pruefe Aufbau, Phase und Zielgroesse mit Strukturanalyse zum Thema Gesundheitssport; sammle nur die Merkmale, ohne das Urteil vorwegzunehmen.
+- Bilddimension: Pruefe Kurve, Bild und Zeichen mit Bildvergleich zum Thema Gesundheitssport; notiere Bild und Wirkung, ohne die Deutung zu setzen.
+
+COMPLETION (Lückentext):
+- Lies beide Saetze und ergaenze aus dem Gedaechtnis, ohne zurueckzublaettern:
+- Klausur-Satz: ___ Sitzhaltungen induzieren muskulaere Dysbalancen gemaess dem Janda-Modell, gekennzeichnet durch die tonische Verkuerzung der Hueftbeuger und die phasische Schwaechung der Rumpf- und Glutealmuskulatur.
+- Ergaenze den zweiten Schluesselbegriff ___ aus dem Gedaechtnis und pruefe die Richtung ohne Rueckblick.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Befund mit Themenanker (Gesundheitssport) | 5 NP | Skizze mit Achsenbeschriftung als Alternativweg
+Analyse mit Mechanismusbezug (Gesundheitssport) | 5 NP | Tabellenvergleich mit Messprotokoll als Alternativweg
+Urteil mit Targetbeleg (Gesundheitssport) | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
 
 MUSTERLÖSUNG:
 1. Muskulaere Analyse:
@@ -136,29 +146,42 @@ MUSTERLÖSUNG:
 VERGLEICH: Statisches Dehnen (Stretching) vs. Dynamisches Dehnen (Mobilisation)
 
 - Position A (Statisches Dehnen / Halteform):
-  - Methode: Langsames Einnehmen der Dehnposition bis zum leichten Dehnreiz und Halten fuer 30 bis 60 Sekunden ohne Wippen.
-  - Wirkung: Senkt den Muskeltonus ueber den Golgi-Sehnen-Apparat; ideal zur Wiederherstellung der Ruhelaenge tonischer Muskeln nach der Belastung.
-  - Fehler im Wettkampf: Vor Explosivkraft oder Sprints absolut kontraindiziert, da es die Muskelspannung (Tension) laehmt und Sprungkraft reduziert!
+  - [Weg A] Neutralfassung fuer die Wahl: Wenn du Weg A waehlst, arbeitest du im Transfer vor allem mit diesem Fokus.
 - Position B (Dynamisches Dehnen / Funktionelle Mobilisation):
-  - Methode: Kontrolliert federnde, rhythmische Bewegungen im vollen Bewegungsumfang (ROM) ohne ruckartige Gewalteinwirkung.
-  - Wirkung: Erhoeht die Gewebetemperatur, schmiert die Gelenke mit Synovialfluessigkeit und erhaelt bzw. steigert den Muskeltonus.
-  - Einsatzbereich: Perfekt geeignet fuer das Aufwaermprogramm vor Sprint- und Spielsportarten.
+  - [Weg B] Neutralfassung fuer die Wahl: Wenn du Weg B waehlst, arbeitest du im Transfer vor allem mit diesem Fokus.
 
 Entscheidungsregel fuer die Klausur:
 Wird nach `Dehnen im Sport` gefragt, stets unterscheiden: VOR dem Wettkampf nur dynamisch mobilisieren; NACH dem Training oder an Regenerationstagen zur Beseitigung tonischer Verkuerzungen statisch dehnen!
+
+HILFE: Pruefe dimensionsgeleitet, welcher Weg passt: Messdimension mit Kennwert spricht fuer Weg A; Strukturdimension mit Typ-Test spricht fuer Zuordnung und Weg B; Bilddimension mit Bildvergleich sichert beide Wege. Ordne selbst zu; die Zuordnung wird nicht vorweggenommen.
+
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg A oder Weg B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Ueberfuehrt aus VERGLEICH (Vorwahl-Fassung): - Position A (Statisches Dehnen / Halteform): | - Position B (Dynamisches Dehnen / Funktionelle Mobilisation): | Entscheidungsregel fuer die Klausur: | - Methode: Langsames Einnehmen der Dehnposition bis zum leichten Dehnreiz und Halten fuer 30 bis 60 Sekunden ohne Wippen. | - Wirkung: Senkt den Muskeltonus ueber den Golgi-Sehnen-Apparat; ideal zur Wiederherstellung der Ruhelaenge tonischer Muskeln nach der Belastung. | - Fehler im Wettkampf: Vor Explosivkraft oder Sprints absolut kontraindiziert, da es die Muskelspannung (Tension) laehmt und Sprungkraft reduziert! | - Methode: Kontrolliert federnde, rhythmische Bewegungen im vollen Bewegungsumfang (ROM) ohne ruckartige Gewalteinwirkung. | - Wirkung: Erhoeht die Gewebetemperatur, schmiert die Gelenke mit Synovialfluessigkeit und erhaelt bzw. steigert den Muskeltonus. | - Einsatzbereich: Perfekt geeignet fuer das Aufwaermprogramm vor Sprint- und Spielsportarten.
+- Ueberfuehrt aus Schritt-5-HILFE (Vorwahl-Fassung): (kein direktes Vorwahl-Urteil im Original; HILFE war bereits richtungsweisend - bestaetigt.)
+- Ein-Satz-Kern: Der passende Weg folgt dem Signalwort, nicht dem Gefuehl.
 
 ## Schritt 6 — check: Klausur-Transfer Kraftausdauer & Reizschwellengesetz
 PRÜFUNGSSZENARIO (KLP NRW Sport EF Inhaltsfeld f: Gesundheit):
 
 Ein Fitnesstrainer raet einem Schueler mit Haltungsschwaeche: "Nimm fuer dein Bauch- und Rueckentraining die schwerste Hantel, die du finden kannst, und mach 3 Wiederholungen bis zum Muskelversagen. Je groesser der Muskelberg, desto besser steht deine Wirbelsaeule!"
 
-AUFGABE (analysieren & beurteilen, AFB II/III):
+AUFGABE (analysieren & beurteilen, [AFB II/III]): Analysiere die folgende Situation mit Kennwerten und Mechanismus.
 1. Analysieren Sie diese Trainingsempfehlung vor dem Hintergrund des Reizschwellengesetzes nach Roux. (12 BE)
 2. Beurteilen Sie, warum fuer die Haltungsstabilitaet der Wirbelsaeule Kraftausdauer dem Maximalkrafttraining biologisch ueberlegen ist. (18 BE)
 
-ERWARTUNGSHORIZONT:
-- AFB II: Das Reizschwellengesetz besagt, dass ein Reiz eine biologische Mindestintensitaet und spezifische Qualitaet haben muss, um Anpassungen hervorzurufen. Ein Maximalkrafttraining mit $3 \times \text{Wdh.}$ bei 95% 1RM setzt einen Reiz zur myofibrillaeren Hypertrophie der oberflaechlichen Typ-II-Fasern. Dies fuehrt jedoch bei bestehender Muskeldisbalance zu biomechanischer Ueberlastung der Bandscheiben und verschaerft die muskulare Verkrampfung.
-- AFB III: Die Haltemuskulatur der menschlichen Wirbelsaeule (M. transversus abdominis, M. multifidus) besteht ueberwiegend aus ermuedungsresistenten, langsam zuckenden Typ-I-Fasern (Slow Twitch). Der Schueler muss nicht 200 kg fuer 2 Sekunden heben, sondern die Wirbelsaeule ueber 8 bis 10 Stunden Schultag kontinuierlich gegen die Schwerkraft aufrecht stabilisieren! Dafuer benoetigt der Organismus eine hohe aerobe Kapillarisierung, intermuskulaere Dauerspannungsfaehigkeit und metabolische Ermuedungsresistenz — also klassische **Kraftausdauer** (40–60% 1RM, viele Wiederholungen). Maximalkrafttraining an Grossgeraeten geht an den physiologischen Beduerfnissen des Stuetzapparates voellig vorbei.
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Befund mit Gesundheitssport-Anker | 5 NP | Skizze mit Achsenbeschriftung als Alternativweg
+Analyse mit Mechanismusbezug (Gesundheitssport) | 5 NP | Tabellenvergleich mit Messprotokoll als Alternativweg
+Urteil mit Targetbeleg (Gesundheitssport) | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
+
+KERNSATZ (auswendig):
+- Kernsatz: `Chronische Sitzhaltungen induzieren muskulaere Dysbalancen gemaess dem Janda-Modell, gekennzeichnet durch die tonische Verkuerzung der Hueftbeuger und die phasische Schwaechung der Rumpf- und Glutealmuskulatur.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = Ausgangslage mit Kennwert als Subjekt | Mechanismus = Weg mit Strukturbezug als Mechanismus | Urteil = Entscheidung mit Targetbeleg als Urteil
+- Selbsttest: Chronische Sitzhaltungen induzieren muskulaere Dysbalancen gemaess dem Janda-Modell, gekennzeichnet durch die tonische Verkuerzung der Hueftbeuger und die phasische Schwaechung der Rumpf- und ___.
 
 ## Schritt 7 — check: Format-Check & Scoring
 30 XP Schnelltest zur Verstaendigungssicherung:

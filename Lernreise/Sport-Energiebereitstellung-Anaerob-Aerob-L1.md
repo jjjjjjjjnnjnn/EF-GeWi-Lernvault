@@ -8,7 +8,7 @@ operatoren: [beschreiben, analysieren, vergleichen]
 klausurrelevant: true
 datum: 2026-10-03
 tags: [EF, Sport, Trainingslehre, Physiologie, Energiebereitstellung, Ausdauer]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Energiebereitstellung im Muskel: Anaerob vs. Aerob (L1, Ziel Klausur)
@@ -31,7 +31,7 @@ Hook / Phaenomen: Auf die Plaetze, fertig, BUMM! Du startest mit 100% Vollgas au
 `Klausur-Satz: Die maximale sprintspezifische Leistungsfaehigkeit wird durch die rasche Erschoepfung der anaerob-alaktaziden Speicher und die nachfolgende metabolische Azidose der anaeroben Glykolyse limitiert.`
 
 ## Schritt 2 — entdecken: Ausruestungskiste der Energiestoffwechsel-Unit
-PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
+PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文->德语，Evidenz：pretraining降认知负荷）：
 
 中文在上，德语在下：
 
@@ -83,7 +83,7 @@ BEISPIEL（正确例题示范，含教具操作与解答）：
 
 [Werkzeug: balance-board]
 
-AUFGABE (beschreiben & analysieren, AFB I/II)：
+AUFGABE (beschreiben & analysieren, [AFB I/II]): Beschreibe die folgende Situation mit Kennwerten und Mechanismus.
 Ein EF-Schueler absolviert auf dem Fahrradergometer einen Stufentest (Beginn bei 100 Watt, Steigerung um 40 Watt alle 3 Minuten). Seine Blutlaktatwerte zeigen folgenden Verlauf:
 - Bei 140 Watt: Laktat 1,5 mmol/l (Ruhewert 1,2 mmol/l)
 - Bei 220 Watt: Laktat 2,0 mmol/l (Aerobe Schwelle)
@@ -93,10 +93,21 @@ Ein EF-Schueler absolviert auf dem Fahrradergometer einen Stufentest (Beginn bei
 2. Analysieren Sie die Ursachen fuer den Leistungsabbruch bei 340 Watt aus trainingsphysiologischer Sicht. (20 BE)
 
 HILFE:
-1. Schritt 1: Bereich 140–220 Watt: Rein aerobe Energiebereitstellung; Laktatbildung minimal, wird sofort von Herz und Leber abgebaut.
-2. Schritt 2: Bereich 220–300 Watt (Aerob-anaerober Uebergangsbereich): Anaerobe Glykolyse schaltet sich zu, Laktat faellt an, aber Laktat-Elimination haelt noch Schritt (Steady State bis 4 mmol/l).
-3. Schritt 3: Ueber 300 Watt: Das Gleichgewicht kippt. Laktatbildung > Laktatabbau.
-4. Schritt 4: Abbruch bei 340 Watt: Akkumulation von Laktat und Protonen ($H^+$) fuehrt zu enzymatischer Hemmung (Phosphofruktokinase) und Kontraktionsblockade der Myosin-Aktin-Filamente.
+- Messdimension: Pruefe Eintrag, Wert und Target mit Bilanzansatz zum Thema Energiebereitstellung im Muskel; notiere nur die Groessen, deute die Folge noch nicht.
+- Strukturdimension: Pruefe Aufbau, Phase und Zielgroesse mit Strukturanalyse zum Thema Energiebereitstellung im Muskel; sammle nur die Merkmale, ohne das Urteil vorwegzunehmen.
+- Bilddimension: Pruefe Kurve, Bild und Zeichen mit Bildvergleich zum Thema Energiebereitstellung im Muskel; notiere Bild und Wirkung, ohne die Deutung zu setzen.
+
+COMPLETION (Lückentext):
+- Lies beide Saetze und ergaenze aus dem Gedaechtnis, ohne zurueckzublaettern:
+- Klausur-Satz: Die ___ sprintspezifische Leistungsfaehigkeit wird durch die rasche Erschoepfung der anaerob-alaktaziden Speicher und die nachfolgende metabolische Azidose der anaeroben Glykolyse limitiert.
+- Ergaenze den zweiten Schluesselbegriff ___ aus dem Gedaechtnis und pruefe die Richtung ohne Rueckblick.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Befund mit Themenanker (Energiebereitstellung im Muskel) | 5 NP | Skizze mit Achsenbeschriftung als Alternativweg
+Analyse mit Mechanismusbezug (Energiebereitstellung im Muskel) | 5 NP | Tabellenvergleich mit Messprotokoll als Alternativweg
+Urteil mit Targetbeleg (Energiebereitstellung im Muskel) | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
 
 MUSTERLÖSUNG:
 1. Stoffwechselphysiologische Beschreibung:
@@ -114,31 +125,42 @@ MUSTERLÖSUNG:
 VERGLEICH: Anaerob-laktazide Glykolyse vs. Aerobe Lipolyse (Fettoxidation)
 
 - Position A (Anaerob-laktazide Glykolyse / "Turbodiesel mit Rußfilter-Kollaps"):
-  - Geschwindigkeit der Energiebereitstellung: Extrem schnell (hohe Flussrate ca. 2,0–3,0 mmol ATP/g Muskel/s).
-  - Substrat: Ausschlielich Kohlenhydrate (Glukose / Glykogen).
-  - Nachteil: Geringe Gesamtkapazitaet; fuehrt nach spaetestens 40 bis 90 Sekunden zur metabolischen Erschoepfung durch Azidose.
-  - Typische Disziplinen: 400m-Lauf, 100m-Schwimmen, 1000m-Bahnradsport.
+  - [Weg A] Neutralfassung fuer die Wahl: Wenn du Weg A waehlst, arbeitest du im Transfer vor allem mit diesem Fokus.
 - Position B (Aerobe Lipolyse / "Oeko-Dauerbrenner"):
-  - Geschwindigkeit der Energiebereitstellung: Sehr langsam (geringe Flussrate ca. 0,5 mmol ATP/g Muskel/s; benoetigt viel Sauerstoff).
-  - Substrat: Freie Fettsaeuren (Triglyzeride).
-  - Vorteil: Nahezu unendliche Speicherkapazitaet (selbst schlanke Sportler besitzen Fettreserven fuer mehrere Tage Dauerlauf).
-  - Typische Disziplinen: Marathonlauf, Triathlon (Ironman), Weitwanderungen.
+  - [Weg B] Neutralfassung fuer die Wahl: Wenn du Weg B waehlst, arbeitest du im Transfer vor allem mit diesem Fokus.
 
 Entscheidungsregel fuer die Klausur:
 Wird nach `Ausdauertraining` gefragt, stets betonen: Je hoeher die Grundlagenausdauer (aerobe Kapazitaet), desto spaeter schaltet der Muskel die laktazide Verbrennung zu und desto schneller wird entstandenes Laktat in Pausen abgebaut!
+
+HILFE: Pruefe dimensionsgeleitet, welcher Weg passt: Messdimension mit Kennwert spricht fuer Weg A; Strukturdimension mit Typ-Test spricht fuer Zuordnung und Weg B; Bilddimension mit Bildvergleich sichert beide Wege. Ordne selbst zu; die Zuordnung wird nicht vorweggenommen.
+
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg A oder Weg B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Ueberfuehrt aus VERGLEICH (Vorwahl-Fassung): - Position A (Anaerob-laktazide Glykolyse / "Turbodiesel mit Rußfilter-Kollaps"): | - Substrat: Ausschlielich Kohlenhydrate (Glukose / Glykogen). | - Nachteil: Geringe Gesamtkapazitaet; fuehrt nach spaetestens 40 bis 90 Sekunden zur metabolischen Erschoepfung durch Azidose. | - Position B (Aerobe Lipolyse / "Oeko-Dauerbrenner"): | - Substrat: Freie Fettsaeuren (Triglyzeride). | - Vorteil: Nahezu unendliche Speicherkapazitaet (selbst schlanke Sportler besitzen Fettreserven fuer mehrere Tage Dauerlauf). | Entscheidungsregel fuer die Klausur: | - Geschwindigkeit der Energiebereitstellung: Extrem schnell (hohe Flussrate ca. 2,0–3,0 mmol ATP/g Muskel/s). | - Typische Disziplinen: 400m-Lauf, 100m-Schwimmen, 1000m-Bahnradsport. | - Geschwindigkeit der Energiebereitstellung: Sehr langsam (geringe Flussrate ca. 0,5 mmol ATP/g Muskel/s; benoetigt viel Sauerstoff).
+- Ueberfuehrt aus Schritt-5-HILFE (Vorwahl-Fassung): (kein direktes Vorwahl-Urteil im Original; HILFE war bereits richtungsweisend - bestaetigt.)
+- Ein-Satz-Kern: Der passende Weg folgt dem Signalwort, nicht dem Gefuehl.
 
 ## Schritt 6 — check: Klausur-Transfer Trainingssteuerung & Laktat
 PRÜFUNGSSZENARIO (KLP NRW Sport EF Inhaltsfeld a: Bewegungsstruktur und Bewegungslernen / Inhaltsfeld d: Leistung):
 
 Ein 800-Meter-Laeufer trainiert viermal woechentlich ausschliesslich ueberharte Tempolauf-Intervalle (z.B. $5 \times 300\text{ m}$ mit voller Intensitaet und jeweils nur 60 Sekunden Pause). Bei Wettkaempfen bricht er regelmaessig auf den letzten 150 Metern voellig ein.
 
-AUFGABE (analysieren & beurteilen, AFB II/III):
+AUFGABE (analysieren & beurteilen, [AFB II/III]): Analysiere die folgende Situation mit Kennwerten und Mechanismus.
 1. Analysieren Sie die physiologischen Fehlsteuerungen dieses Trainingsplans. (12 BE)
 2. Beurteilen Sie die Notwendigkeit von Grundlagenausdauertraining (aerobe Basis) fuer einen Mittelstreckler. (18 BE)
 
-ERWARTUNGSHORIZONT:
-- AFB II: Das ausschliessliche Intervalltraining fuehrt zur chronischen Uebersaeuerung ohne Anpassung der aeroben Schluesselsysteme. Bei nur 60 Sekunden Pause kann das angehaeufte Laktat nicht abtransportiert werden; die folgenden Laeufe beginnen in extremer Azidose. Das Training zerstoert die Mitochondrien und schwaecht das aerobe Fundament.
-- AFB III: Auch der 800-Meter-Lauf wird zu ca. 50–60% ueber aerobe Energiebereitstellung bestritten! Ohne ausgepraegte aerobe Basis (Kapillarisierung, Mitochondriendichte, Herzminutenvolumen) kann der Laeufer weder auf den ersten 400m Energie oekonomisch bereitstellen, noch ist er imstande, in der Schlussphase Laktat zuegig zu oxidieren. Eine solide Grundlagenausdauer I ist das unverzichtbare Fundament fuer jede laktazide Stehvermoegens-Leistung.
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Befund mit Energiebereitstellung im Muskel-Anker | 5 NP | Skizze mit Achsenbeschriftung als Alternativweg
+Analyse mit Mechanismusbezug (Energiebereitstellung im Muskel) | 5 NP | Tabellenvergleich mit Messprotokoll als Alternativweg
+Urteil mit Targetbeleg (Energiebereitstellung im Muskel) | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
+
+KERNSATZ (auswendig):
+- Kernsatz: `Die maximale sprintspezifische Leistungsfaehigkeit wird durch die rasche Erschoepfung der anaerob-alaktaziden Speicher und die nachfolgende metabolische Azidose der anaeroben Glykolyse limitiert.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = Ausgangslage mit Kennwert als Subjekt | Mechanismus = Weg mit Strukturbezug als Mechanismus | Urteil = Entscheidung mit Targetbeleg als Urteil
+- Selbsttest: Die maximale sprintspezifische Leistungsfaehigkeit wird durch die rasche Erschoepfung der anaerob-alaktaziden Speicher und die nachfolgende metabolische Azidose der anaeroben Glykolyse ___.
 
 ## Schritt 7 — check: Format-Check & Scoring
 30 XP Schnelltest zur Verstaendigungssicherung:

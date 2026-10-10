@@ -8,7 +8,7 @@ operatoren: [beschreiben, erklaeren, beurteilen]
 klausurrelevant: true
 datum: 2026-09-25
 tags: [EF, Sport, Bewegungsanalyse]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 
@@ -39,7 +39,7 @@ Hook (DE): Lehrprobe, Handstand: Zwanzig Schueler, eine Matte, ein Pruefer mit K
 
 ## Schritt 2 — entdecken: 5术语装备盒
 
-PRETRAINING术语盒(核心5词,先读三遍中德,合书自测中文→德语):
+PRETRAINING术语盒(核心5词,先读三遍中德,合书自测中文->德语):
 
 中文在上,德语在下:
 
@@ -97,14 +97,28 @@ BEISPIEL(含教具操作与解答):
 
 [Werkzeug: oral-timer]
 
-AUFGABE (analysieren, AFB II):90秒口述:讲倒立,演示加三词加一条纠正,达标。达标线:Demo 20 s, 3 Schluesselworte, 4 Versuche, Zielbild Schulter weg。
+AUFGABE (analysieren, [AFB II]): Analysiere 90秒口述:讲倒立,演示加三词加一条纠正,达标。达标线:Demo 20 s, 3 Schluesselworte, 4 Versuche, Zielbild Schulter weg。
 
 Target数值目标:Demo 20 s, 3 Schluesselworte, 4 Versuche, Zielbild Schulter weg。
 
 HILFE:
-1. 先常速后慢放演示20秒,一节点配一词,对照肩推开目标图像,建倒立表象。
-2. 再给髋高手远三个关键词,要第一次尝试,钉住注意力防信息过载。
-3. 最后只纠一条可立刻照做的错误,先扬后纠,四次尝试每次一纠正即达标。
+- Messdimension: Pruefe Eintrag, Wert und Target mit Bilanzansatz zum Thema Bewegung erklären; notiere nur die Groessen, deute die Folge noch nicht.
+- Strukturdimension: Pruefe Aufbau, Phase und Zielgroesse mit Strukturanalyse zum Thema Bewegung erklären; sammle nur die Merkmale, ohne das Urteil vorwegzunehmen.
+- Bilddimension: Pruefe Kurve, Bild und Zeichen mit Bildvergleich zum Thema Bewegung erklären; notiere Bild und Wirkung, ohne die Deutung zu setzen.
+
+COMPLETION (Lückentext):
+- Lies beide Saetze und ergaenze aus dem Gedaechtnis, ohne zurueckzublaettern:
+- ___
+Demonstrieren [Bild] -> Beschreiben [3 Worte] -> Ueben [Versuch] -> Korrigieren [1 Impuls]
+Regel: Bild in 20 s zuerst sichern | ein Impuls je Versuch bei 4 Versuchen
+- Ergaenze den zweiten Schluesselbegriff ___ aus dem Gedaechtnis und pruefe die Richtung ohne Rueckblick.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Befund mit Themenanker (Bewegung erklären) | 5 NP | Skizze mit Achsenbeschriftung als Alternativweg
+Analyse mit Mechanismusbezug (Bewegung erklären) | 5 NP | Tabellenvergleich mit Messprotokoll als Alternativweg
+Urteil mit Targetbeleg (Bewegung erklären) | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
 
 MUSTERLÖSUNG:常速加慢放给图,髋高手远指撑三词钉点,四次尝试每次一纠正即达标。
 
@@ -116,11 +130,20 @@ VERGLEICH辨别实验(双向辨析,先选程序再解题):【选程序】
 
 VERGLEICH:先选程序—— (i) Ganzheitsmethode (gleich frei, Bild zuerst, Mut zuerst) 还是 (ii) Teillernmethode (Reihe Bank-Wand-frei, Sicherheit zuerst) ——再解题。【选程序:问上限与结构选(i),问兑现与情境选(ii)。口述先说 Ich waehle Verfahren (i)/(ii), weil …】
 
+- [Weg A] Neutralfassung fuer die Wahl: Wenn du Weg A waehlst, arbeitest du im Transfer vor allem mit Kennwerten und Struktur.
+- [Weg B] Neutralfassung fuer die Wahl: Wenn du Weg B waehlst, arbeitest du im Transfer vor allem mit Bild, Kette und Deutung.
+
 AUFGABE A:案例A(胆大时间紧)选哪条?
 
 AUFGABE B:案例B(胆小时间多)选哪条?
 
-HILFE:A braucht Tempo, also ganz. B braucht Sicherheit, also Teile.
+HILFE: Pruefe dimensionsgeleitet, welcher Weg passt: Messdimension mit Kennwert spricht fuer Weg A; Strukturdimension mit Typ-Test spricht fuer Zuordnung und Weg B; Bilddimension mit Bildvergleich sichert beide Wege. Ordne selbst zu; die Zuordnung wird nicht vorweggenommen.
+
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg A oder Weg B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Ueberfuehrt aus VERGLEICH (Vorwahl-Fassung): VERGLEICH:先选程序—— (i) Ganzheitsmethode (gleich frei, Bild zuerst, Mut zuerst) 还是 (ii) Teillernmethode (Reihe Bank-Wand-frei, Sicherheit zuerst) ——再解题。【选程序:问上限与结构选(i),问兑现与情境选(ii)。口述先说 Ich waehle Verfahren (i)/(ii), weil …】
+- Ueberfuehrt aus Schritt-5-HILFE (Vorwahl-Fassung): HILFE:A braucht Tempo, also ganz. B braucht Sicherheit, also Teile.
+- Ein-Satz-Kern: 整体还是分解,班情与时间说了算。
 
 ANTWORT:A走整体法;B走分解序列,班情定路线。
 
@@ -150,9 +173,23 @@ CHECK检索默写(自测3题,与答案配对):
 ## Schritt 7 — szenario: Klausurtransfer — Sportlehrer Lehrprobe
 中文:你是Sportlehrer Lehrprobe,在Bielefelder Schul-Sporthalle, Handstand-Lehrprobe中必须用德语连贯口述(约90秒)诊断、措施与数值目标(Demo 20 s, 3 Schluesselworte, 4 Versuche, Zielbild Schulter weg),并以术语举证。
 ROLLE: Du bist Sportlehrer Lehrprobe. SITUATION: 在比勒费尔德用德语90秒陈述演示、关键词与目标(肩推开)。
+AUFGABE (beschreiben, [AFB III]): Beschreibe in ca. 150 Woertern Einordnung, zwei Belege mit Mechanismus und Schlussurteil zu Bewegung erklären.
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Befund mit Bewegung erklären-Anker | 5 NP | Skizze mit Achsenbeschriftung als Alternativweg
+Analyse mit Mechanismusbezug (Bewegung erklären) | 5 NP | Tabellenvergleich mit Messprotokoll als Alternativweg
+Urteil mit Targetbeleg (Bewegung erklären) | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
+
 RUBRIC (30 XP):诊断术语8分 | 措施与目标举证7分 | 程序选择对比7分 | 德语表达5分。
 
 `Klausur-Satz: 满分句:错因四分钟无图掏空表象;演示加髋高手远可锁定站立。`
+
+KERNSATZ (auswendig):
+- Kernsatz: `Vorstellung plus Wiederholung ergibt Koennen; Erklaerung allein bleibt Tribüne.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = Ausgangslage mit Kennwert als Subjekt | Mechanismus = Weg mit Strukturbezug als Mechanismus | Urteil = Entscheidung mit Targetbeleg als Urteil
+- Selbsttest: Vorstellung plus Wiederholung ergibt Koennen; Erklaerung allein bleibt ___.
 
 ## Schritt 8 — reflexion: Takeaway & Reflexion — 奖杯还是进站检修
 

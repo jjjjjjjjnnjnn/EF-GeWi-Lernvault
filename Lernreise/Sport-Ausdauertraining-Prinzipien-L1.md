@@ -8,7 +8,7 @@ operatoren: [beschreiben, erklaeren, beurteilen]
 klausurrelevant: true
 datum: 2026-09-25
 tags: [EF, Sport, Trainingslehre]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 
@@ -36,7 +36,7 @@ Hook (DE): Oktober, Waldlaufserie: Zwei Trainingsgruppen, gleiche Kilometer, voe
 
 ## Schritt 2 — entdecken: 5术语装备盒
 
-PRETRAINING术语盒(核心5词,先读三遍中德,合书自测中文→德语):
+PRETRAINING术语盒(核心5词,先读三遍中德,合书自测中文->德语):
 
 中文在上,德语在下:
 
@@ -85,14 +85,26 @@ BEISPIEL(含教具操作与解答):
 
 [Werkzeug: oral-timer]
 
-AUFGABE (analysieren, AFB II):90秒口述:把5小时周计划分到区间,用155/178脉搏论证达标。达标线:Wochenumfang 32 km, 80/20-Mix, 10-km-Ziel 48:00 min, Grundpuls unter 155。
+AUFGABE (analysieren, [AFB II]): Analysiere 90秒口述:把5小时周计划分到区间,用155/178脉搏论证达标。达标线:Wochenumfang 32 km, 80/20-Mix, 10-km-Ziel 48:00 min, Grundpuls unter 155。
 
 Target数值目标:Wochenumfang 32 km, 80/20-Mix, 10-km-Ziel 48:00 min, Grundpuls unter 155。
 
 HILFE:
-1. 先算出最大心率,再定出155以下的慢跑线与178以上的间歇线。
-2. 再按80/20把5小时切成4小时慢跑加1小时强度,保持中间放空。
-3. 最后给每区开出一节课,写清配速与脉搏,并点名它如何兑现32公里与48分目标。
+- Messdimension: Pruefe Eintrag, Wert und Target mit Bilanzansatz zum Thema Superkompensation und die Prinzipien des Ausdaue; notiere nur die Groessen, deute die Folge noch nicht.
+- Strukturdimension: Pruefe Aufbau, Phase und Zielgroesse mit Strukturanalyse zum Thema Superkompensation und die Prinzipien des Ausdaue; sammle nur die Merkmale, ohne das Urteil vorwegzunehmen.
+- Bilddimension: Pruefe Kurve, Bild und Zeichen mit Bildvergleich zum Thema Superkompensation und die Prinzipien des Ausdaue; notiere Bild und Wirkung, ohne die Deutung zu setzen.
+
+COMPLETION (Lückentext):
+- Lies beide Saetze und ergaenze aus dem Gedaechtnis, ohne zurueckzublaettern:
+- ___ heisst plaudern koennen; Haerte gehoert in 20 Prozent Spitze.
+- Ergaenze den zweiten Schluesselbegriff ___ aus dem Gedaechtnis und pruefe die Richtung ohne Rueckblick.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Befund mit Themenanker (Superkompensation und die Prinzipien des Ausdaue) | 5 NP | Skizze mit Achsenbeschriftung als Alternativweg
+Analyse mit Mechanismusbezug (Superkompensation und die Prinzipien des Ausdaue) | 5 NP | Tabellenvergleich mit Messprotokoll als Alternativweg
+Urteil mit Targetbeleg (Superkompensation und die Prinzipien des Ausdaue) | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
 
 MUSTERLÖSUNG:最大心率205下,4小时配155以下慢跑,1小时配178以上4×4间歇。目标48分靠底子降耗加间歇抬上限,中间放空即达标。
 
@@ -104,11 +116,20 @@ VERGLEICH辨别实验(双向辨析,先选程序再解题):【选程序】
 
 VERGLEICH:先选程序—— (i) Umfangsbetonung (mehr Kilometer, Oekonomie zuerst) 还是 (ii) Intensitaetsbetonung (mehr Intervalle, VO2max zuerst) ——再解题。【选程序:问上限与结构选(i),问兑现与情境选(ii)。口述先说 Ich waehle Verfahren (i)/(ii), weil …】
 
+- [Weg A] Neutralfassung fuer die Wahl: Wenn du Weg A waehlst, arbeitest du im Transfer vor allem mit Kennwerten und Struktur.
+- [Weg B] Neutralfassung fuer die Wahl: Wenn du Weg B waehlst, arbeitest du im Transfer vor allem mit Bild, Kette und Deutung.
+
 AUFGABE A:案例A(新手55分)选哪条?
 
 AUFGABE B:案例B(老手卡44分)选哪条?
 
-HILFE:A braucht Basis, also Umfang. B hat Basis, also Spitzenreiz.
+HILFE: Pruefe dimensionsgeleitet, welcher Weg passt: Messdimension mit Kennwert spricht fuer Weg A; Strukturdimension mit Typ-Test spricht fuer Zuordnung und Weg B; Bilddimension mit Bildvergleich sichert beide Wege. Ordne selbst zu; die Zuordnung wird nicht vorweggenommen.
+
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg A oder Weg B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Ueberfuehrt aus VERGLEICH (Vorwahl-Fassung): VERGLEICH:先选程序—— (i) Umfangsbetonung (mehr Kilometer, Oekonomie zuerst) 还是 (ii) Intensitaetsbetonung (mehr Intervalle, VO2max zuerst) ——再解题。【选程序:问上限与结构选(i),问兑现与情境选(ii)。口述先说 Ich waehle Verfahren (i)/(ii), weil …】
+- Ueberfuehrt aus Schritt-5-HILFE (Vorwahl-Fassung): HILFE:A braucht Basis, also Umfang. B hat Basis, also Spitzenreiz.
+- Ein-Satz-Kern: 先堆量还是先上强度,训龄说了算。
 
 ANTWORT:A走量先行;B走强度先行,训龄定路线。
 
@@ -138,9 +159,23 @@ CHECK检索默写(自测3题,与答案配对):
 ## Schritt 7 — szenario: Klausurtransfer — Ausdauertrainer Lauf
 中文:你是Ausdauertrainer Lauf,在Muensteraner Aaseelauf, Schul-10-km-Cup中必须用德语连贯口述(约90秒)诊断、措施与数值目标(Wochenumfang 32 km, 80/20-Mix, 10-km-Ziel 48:00 min, Grundpuls unter 155),并以术语举证。
 ROLLE: Du bist Ausdauertrainer Lauf. SITUATION: 在明斯特用德语90秒陈述配比、区间与目标(32 km,48:00)。
+AUFGABE (beschreiben, [AFB III]): Beschreibe in ca. 150 Woertern Einordnung, zwei Belege mit Mechanismus und Schlussurteil zu Superkompensation und die Prinzipien des Ausdaue.
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Befund mit Superkompensation und die Prinzipien des Ausdaue-Anker | 5 NP | Skizze mit Achsenbeschriftung als Alternativweg
+Analyse mit Mechanismusbezug (Superkompensation und die Prinzipien des Ausdaue) | 5 NP | Tabellenvergleich mit Messprotokoll als Alternativweg
+Urteil mit Targetbeleg (Superkompensation und die Prinzipien des Ausdaue) | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
+
 RUBRIC (30 XP):诊断术语8分 | 措施与目标举证7分 | 程序选择对比7分 | 德语表达5分。
 
 `Klausur-Satz: 满分句:停滞因5小时中速上下够不着;80/20可锁定48分整。`
+
+KERNSATZ (auswendig):
+- Kernsatz: `Grundlage heisst plaudern koennen; Haerte gehoert in 20 Prozent Spitze.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = Ausgangslage mit Kennwert als Subjekt | Mechanismus = Weg mit Strukturbezug als Mechanismus | Urteil = Entscheidung mit Targetbeleg als Urteil
+- Selbsttest: Grundlage heisst plaudern koennen; Haerte gehoert in 20 Prozent ___.
 
 ## Schritt 8 — reflexion: Takeaway & Reflexion — 奖杯还是进站检修
 
