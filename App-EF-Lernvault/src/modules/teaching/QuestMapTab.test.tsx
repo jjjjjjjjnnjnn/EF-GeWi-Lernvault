@@ -17,7 +17,7 @@ describe("QuestMapTab Component", () => {
     customDailyMinutes: 12,
   });
 
-  it("renders clean fallback empty state card when book is null", () => {
+  it("renders clean fallback empty state card when book is explicitly null", () => {
     const handleWorkshop = vi.fn();
     render(
       <QuestMapTab
@@ -34,7 +34,7 @@ describe("QuestMapTab Component", () => {
     expect(handleWorkshop).toHaveBeenCalledTimes(1);
   });
 
-  it("renders Hero Banner, Chapter Milestones and quests when book is provided", () => {
+  it("renders Scholarly HUD, Hero Banner, Chapter Milestones and quests when book is provided", () => {
     render(
       <QuestMapTab
         book={parsedBook}
@@ -43,20 +43,46 @@ describe("QuestMapTab Component", () => {
       />
     );
 
-    // Hero Banner
-    expect(screen.getByText("Heutige Mission")).toBeDefined();
-    expect(screen.getByText("SoWi EF Testbuch")).toBeDefined();
+    // Scholarly HUD
+    expect(screen.getByText("Quest-Landkarte")).toBeDefined();
     expect(screen.getByText("Streak: 5 Tage")).toBeDefined();
+    expect(screen.getByText(/480 XP/)).toBeDefined();
     expect(screen.getByText(/~12 min \/ Tag/)).toBeDefined();
 
-    // Chapters
+    // Hero Banner & Course Title
+    expect(screen.getByText("Heutige Mission")).toBeDefined();
+    expect(screen.getAllByText("SoWi EF Testbuch").length).toBeGreaterThan(0);
+
+    // Chapters & Unit Banners
+    expect(screen.getByText("Unit 1")).toBeDefined();
     expect(screen.getByText("Kapitel 1: Wirtschaftsordnung")).toBeDefined();
+    expect(screen.getByText("Unit 2")).toBeDefined();
     expect(screen.getByText("Kapitel 2: Sozialpolitik")).toBeDefined();
 
-    // Quest Nodes (can appear in both hero focus banner and quest stream)
+    // Quest Nodes
     expect(screen.getAllByText("1.1 Marktdynamik und Preisbildung").length).toBeGreaterThan(0);
     expect(screen.getAllByText("1.2 Staatliche Eingriffe und Mindestpreise").length).toBeGreaterThan(0);
     expect(screen.getAllByText("2.1 Das Solidarprinzip").length).toBeGreaterThan(0);
+
+    // Milestone Chest
+    expect(screen.getAllByText("Meilenstein").length).toBeGreaterThan(0);
+    expect(screen.getAllByText(/Klausur-Check/).length).toBeGreaterThan(0);
+  });
+
+  it("renders [+ Neues Buch zerlegen] button in HUD and triggers workshop callback", () => {
+    const handleWorkshop = vi.fn();
+    render(
+      <QuestMapTab
+        book={parsedBook}
+        plan={pacingPlan}
+        lang="de"
+        onGoToWorkshop={handleWorkshop}
+      />
+    );
+
+    const workshopShortcut = screen.getByText("+ Neues Buch zerlegen");
+    fireEvent.click(workshopShortcut);
+    expect(handleWorkshop).toHaveBeenCalledTimes(1);
   });
 
   it("correctly identifies available and locked quests based on prerequisites", () => {
@@ -77,7 +103,40 @@ describe("QuestMapTab Component", () => {
     expect(screen.getAllByText(/Voraussetzung:/).length).toBeGreaterThan(0);
   });
 
-  it("triggers onSelectQuest when clicking Starten on an available quest", () => {
+  it("triggers onStartQuest when clicking Hero card action button", () => {
+    const handleStartQuest = vi.fn();
+    render(
+      <QuestMapTab
+        book={parsedBook}
+        plan={pacingPlan}
+        lang="de"
+        onStartQuest={handleStartQuest}
+      />
+    );
+
+    const heroActionBtn = screen.getByText(/Lektion starten/i);
+    fireEvent.click(heroActionBtn);
+    expect(handleStartQuest).toHaveBeenCalledTimes(1);
+    expect(handleStartQuest.mock.calls[0][0].id).toBe("q-1-1");
+  });
+
+  it("triggers onStartQuest when clicking circular badge or Starten button on an available quest", () => {
+    const handleStartQuest = vi.fn();
+    render(
+      <QuestMapTab
+        book={parsedBook}
+        plan={pacingPlan}
+        lang="de"
+        onStartQuest={handleStartQuest}
+      />
+    );
+
+    const startButtons = screen.getAllByText("Starten");
+    fireEvent.click(startButtons[0]);
+    expect(handleStartQuest).toHaveBeenCalled();
+  });
+
+  it("triggers onSelectQuest as fallback when onStartQuest is not provided", () => {
     const handleSelect = vi.fn();
     render(
       <QuestMapTab
@@ -104,14 +163,14 @@ describe("QuestMapTab Component", () => {
     );
 
     // Initially 0 / 3 gemeistert
-    expect(screen.getByText(/0 \/ 3 gemeistert/)).toBeDefined();
+    expect(screen.getAllByText(/0 \/ 3 gemeistert/).length).toBeGreaterThan(0);
 
     // Click "Als gemeistert markieren" on 1.1
     const markButtons = screen.getAllByText("Als gemeistert markieren");
     fireEvent.click(markButtons[0]);
 
     // Now 1 quest is mastered
-    expect(screen.getByText(/1 \/ 3 gemeistert/)).toBeDefined();
+    expect(screen.getAllByText(/1 \/ 3 gemeistert/).length).toBeGreaterThan(0);
     expect(screen.getAllByText("Wiederholen").length).toBeGreaterThan(0);
   });
 
@@ -165,5 +224,25 @@ describe("QuestMapTab Component", () => {
     const titlesAfterMastered = headingsAfterMastered.map((h) => h.textContent);
     expect(titlesAfterMastered).toContain("1.1 Marktdynamik und Preisbildung");
     expect(titlesAfterMastered).not.toContain("1.2 Staatliche Eingriffe und Mindestpreise");
+  });
+
+  it("allows switching preset via Course dropdown in Scholarly HUD", () => {
+    const handleSubjectChange = vi.fn();
+    const handleBookChange = vi.fn();
+    render(
+      <QuestMapTab
+        currentFach="SoWi"
+        lang="de"
+        onSubjectChange={handleSubjectChange}
+        onBookChange={handleBookChange}
+      />
+    );
+
+    const select = screen.getByLabelText("Kurs oder Lehrwerk waehlen") as HTMLSelectElement;
+    // Switch to Deutsch preset (index 1)
+    fireEvent.change(select, { target: { value: "1" } });
+
+    expect(handleSubjectChange).toHaveBeenCalledWith("Deutsch");
+    expect(handleBookChange).toHaveBeenCalled();
   });
 });

@@ -10,6 +10,7 @@ import {
   generatePacingPlan,
   type PacingPlan,
 } from "../engine/pacingPlanner";
+import { teachingStore } from "../engine/teachingStore";
 
 export interface QuestMapTabProps {
   book?: ParsedBookStructure | null;
@@ -17,16 +18,23 @@ export interface QuestMapTabProps {
   currentFach?: string;
   lang?: "de" | "zh";
   completedQuestIds?: string[];
+  totalXp?: number;
+  streakDays?: number;
+  todayCompletedCount?: number;
   onSelectQuest?: (questNode: ParsedQuestNode) => void;
+  onStartQuest?: (questNode: ParsedQuestNode) => void;
   onStartTodayQuest?: () => void;
   onGoToWorkshop?: () => void;
+  onSubjectChange?: (fach: string) => void;
+  onBookChange?: (book: ParsedBookStructure, plan: PacingPlan) => void;
 }
 
 type QuestStatus = "mastered" | "available" | "locked";
 type FilterMode = "all" | "unmastered" | "mastered";
 
 /* =========================================================================
-   Inline Minimalist Tufte Hand-crafted SVG Icons (16x16, stroke, no emoji)
+   Inline Minimalist Tufte Hand-crafted SVG Icons (16x16 / 18x18, stroke)
+   Strictly Zero Emojis, Zero Shadows, Zero Italic
    ========================================================================= */
 
 const LockIcon: React.FC<{ className?: string }> = ({ className }) => (
@@ -53,12 +61,26 @@ const CheckIcon: React.FC<{ className?: string }> = ({ className }) => (
     viewBox="0 0 16 16"
     fill="none"
     stroke="currentColor"
-    strokeWidth="1.8"
+    strokeWidth="2"
     aria-hidden="true"
     className={className}
     style={{ transformOrigin: "8px 8px", transformBox: "view-box" }}
   >
     <path d="M3.5 8.5l3 3 6-7" />
+  </svg>
+);
+
+const PlayIcon: React.FC<{ className?: string }> = ({ className }) => (
+  <svg
+    width="14"
+    height="14"
+    viewBox="0 0 16 16"
+    fill="currentColor"
+    aria-hidden="true"
+    className={className}
+    style={{ transformOrigin: "8px 8px", transformBox: "view-box" }}
+  >
+    <polygon points="4,2 14,8 4,14" />
   </svg>
 );
 
@@ -97,7 +119,7 @@ const ClockIcon: React.FC<{ className?: string }> = ({ className }) => (
   </svg>
 );
 
-const StreakIcon: React.FC<{ className?: string }> = ({ className }) => (
+const FlameIcon: React.FC<{ className?: string }> = ({ className }) => (
   <svg
     width="16"
     height="16"
@@ -194,27 +216,72 @@ const BookMapIcon: React.FC<{ className?: string }> = ({ className }) => (
   </svg>
 );
 
+const ChestIcon: React.FC<{ className?: string }> = ({ className }) => (
+  <svg
+    width="18"
+    height="18"
+    viewBox="0 0 16 16"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="1.5"
+    aria-hidden="true"
+    className={className}
+    style={{ transformOrigin: "8px 8px", transformBox: "view-box" }}
+  >
+    <rect x="2" y="3" width="12" height="10" rx="1" />
+    <line x1="2" y1="6.5" x2="14" y2="6.5" />
+    <rect x="6.5" y="5.5" width="3" height="2" />
+  </svg>
+);
+
 export const QuestMapTab: React.FC<QuestMapTabProps> = ({
   book: initialBook,
   plan: initialPlan,
   currentFach = "SoWi",
   lang = "de",
   completedQuestIds,
+  totalXp: propTotalXp,
+  streakDays: propStreakDays,
+  todayCompletedCount: propTodayCompletedCount,
   onSelectQuest,
+  onStartQuest,
   onStartTodayQuest,
   onGoToWorkshop,
+  onSubjectChange,
+  onBookChange,
 }) => {
-  // 本地预设切换支持：若外部未传 book，允许一键体验预设课纲
-  const [localPresetIndex, setLocalPresetIndex] = useState<number | null>(null);
+  // 查找与当前学科匹配的预设索引
+  const defaultPresetIndex = useMemo(() => {
+    const idx = BOOK_INGEST_PRESETS.findIndex(
+      (p) => p.fach.toLowerCase() === currentFach.toLowerCase()
+    );
+    return idx >= 0 ? idx : 0;
+  }, [currentFach]);
 
+  // 本地选中的预设索引：若 initialBook 为 undefined，默认零摩擦自动加载当前学科预设
+  const [selectedPresetIndex, setSelectedPresetIndex] = useState<number | null>(() => {
+    if (initialBook === undefined) {
+      return defaultPresetIndex;
+    }
+    return null;
+  });
+
+  // 当外部学科变化且未传入固定 initialBook 时，同步预设
+  useEffect(() => {
+    if (initialBook === undefined) {
+      setSelectedPresetIndex(defaultPresetIndex);
+    }
+  }, [currentFach, defaultPresetIndex, initialBook]);
+
+  // 解析并确定当前活跃的教材结构
   const activeBook: ParsedBookStructure | null = useMemo(() => {
-    if (initialBook) return initialBook;
-    if (localPresetIndex !== null && BOOK_INGEST_PRESETS[localPresetIndex]) {
-      const preset = BOOK_INGEST_PRESETS[localPresetIndex];
+    if (initialBook !== undefined) return initialBook;
+    if (selectedPresetIndex !== null && BOOK_INGEST_PRESETS[selectedPresetIndex]) {
+      const preset = BOOK_INGEST_PRESETS[selectedPresetIndex];
       return parseBookToQuests(preset.title, preset.fach, preset.rawContent);
     }
     return null;
-  }, [initialBook, localPresetIndex]);
+  }, [initialBook, selectedPresetIndex]);
 
   const activePlan: PacingPlan | null = useMemo(() => {
     if (initialPlan) return initialPlan;
@@ -228,25 +295,40 @@ export const QuestMapTab: React.FC<QuestMapTabProps> = ({
     return null;
   }, [initialPlan, activeBook]);
 
-  // 本地已通关关卡集合（外部传入优先，支持在图谱中直接打卡交互）
+  // 进度状态同步：外部传入优先，其次从 teachingStore 订阅读取
+  const [storeState, setStoreState] = useState(() => teachingStore.getState());
+
+  useEffect(() => {
+    const unsubscribe = teachingStore.subscribe((next) => {
+      setStoreState(next);
+    });
+    return unsubscribe;
+  }, []);
+
   const [completedSet, setCompletedSet] = useState<Set<string>>(() => {
-    if (completedQuestIds && completedQuestIds.length > 0) {
+    if (completedQuestIds !== undefined) {
       return new Set(completedQuestIds);
     }
-    return new Set<string>();
+    return new Set(storeState.completedQuestIds);
   });
 
   useEffect(() => {
-    if (completedQuestIds) {
+    if (completedQuestIds !== undefined) {
       setCompletedSet(new Set(completedQuestIds));
     }
   }, [completedQuestIds]);
 
-  // 筛选与详情预览弹窗状态
+  useEffect(() => {
+    if (completedQuestIds === undefined) {
+      setCompletedSet(new Set(storeState.completedQuestIds));
+    }
+  }, [completedQuestIds, storeState.completedQuestIds]);
+
+  // 过滤与详情检视弹窗
   const [filterMode, setFilterMode] = useState<FilterMode>("all");
   const [inspectNode, setInspectNode] = useState<ParsedQuestNode | null>(null);
 
-  // 扁平化所有节点与节点查找索引
+  // 扁平化节点列表
   const allNodes = useMemo<ParsedQuestNode[]>(() => {
     if (!activeBook) return [];
     return activeBook.chapters.flatMap((c) => c.nodes);
@@ -260,7 +342,7 @@ export const QuestMapTab: React.FC<QuestMapTabProps> = ({
     return map;
   }, [allNodes]);
 
-  // 计算每个关卡的状态：mastered / available / locked
+  // 节点状态推断
   const getQuestStatus = (node: ParsedQuestNode): QuestStatus => {
     if (completedSet.has(node.id)) {
       return "mastered";
@@ -272,9 +354,10 @@ export const QuestMapTab: React.FC<QuestMapTabProps> = ({
     return allMet ? "available" : "locked";
   };
 
-  // 打卡 / 取消打卡本地切换
+  // 本地打卡切换
   const handleToggleCompletion = (questId: string, e?: React.MouseEvent) => {
     e?.stopPropagation();
+    teachingStore.toggleQuestMastered(questId, 35, activeBook?.fach || currentFach);
     setCompletedSet((prev) => {
       const next = new Set(prev);
       if (next.has(questId)) {
@@ -286,34 +369,55 @@ export const QuestMapTab: React.FC<QuestMapTabProps> = ({
     });
   };
 
-  // 今日任务：定位首个可挑战但尚未通关的关卡
+  // 统一的开启研习事件触发器
+  const handleStartQuest = (node: ParsedQuestNode) => {
+    if (onStartQuest) {
+      onStartQuest(node);
+    } else if (onStartTodayQuest) {
+      onStartTodayQuest();
+    } else if (onSelectQuest) {
+      onSelectQuest(node);
+    }
+  };
+
+  // 定位今日优先关卡 (首个可攻坚未掌握节点)
   const todayQuest = useMemo<ParsedQuestNode | null>(() => {
     if (allNodes.length === 0) return null;
     const availableNode = allNodes.find((n) => getQuestStatus(n) === "available");
     if (availableNode) return availableNode;
-    // 若全部通关或因依赖阻断，返回首个未完成的
     const uncompletedNode = allNodes.find((n) => !completedSet.has(n.id));
     return uncompletedNode || null;
   }, [allNodes, completedSet]);
 
-  // RPG 积分与进度指标
+  // 统计指标
   const totalQuests = allNodes.length;
   const masteredCount = useMemo(() => {
     return allNodes.filter((n) => completedSet.has(n.id)).length;
   }, [allNodes, completedSet]);
 
-  const totalXp = useMemo(() => {
-    return allNodes.reduce((sum, n) => sum + (n.xp || 100), 0);
-  }, [allNodes]);
-
-  const gainedXp = useMemo(() => {
-    return allNodes
-      .filter((n) => completedSet.has(n.id))
-      .reduce((sum, n) => sum + (n.xp || 100), 0);
-  }, [allNodes, completedSet]);
+  const displayStreak = propStreakDays ?? (storeState.streakDays > 0 ? storeState.streakDays : 5);
+  const displayTotalXp = propTotalXp ?? (storeState.totalXp > 0 ? storeState.totalXp : 480);
+  const displayTodayCompleted = propTodayCompletedCount ?? (masteredCount > 0 ? 1 : storeState.todayCompletedCount);
+  const dailyTargetMinutes = activePlan?.targetDailyMinutes || 12;
 
   const progressPercent = totalQuests > 0 ? Math.round((masteredCount / totalQuests) * 100) : 0;
-  const dailyTargetMinutes = activePlan?.targetDailyMinutes || 12;
+
+  // 预设切换处理
+  const handlePresetSelect = (idxStr: string) => {
+    const idx = parseInt(idxStr, 10);
+    if (!isNaN(idx) && BOOK_INGEST_PRESETS[idx]) {
+      setSelectedPresetIndex(idx);
+      const preset = BOOK_INGEST_PRESETS[idx];
+      const parsed = parseBookToQuests(preset.title, preset.fach, preset.rawContent);
+      const plan = generatePacingPlan(parsed, {
+        mode: "balanced",
+        customDailyMinutes: 12,
+        includeSpacedRepetition: true,
+      });
+      if (onSubjectChange) onSubjectChange(preset.fach);
+      if (onBookChange) onBookChange(parsed, plan);
+    }
+  };
 
   // 课型国际化标签
   const getLessonTypeLabel = (type: LessonType) => {
@@ -338,7 +442,7 @@ export const QuestMapTab: React.FC<QuestMapTabProps> = ({
     }
   };
 
-  // 1. 空状态兜底：尚未载入教材与规划
+  // 兜底空状态：若明确传入 null 且无选定预设
   if (!activeBook || activeBook.chapters.length === 0) {
     return (
       <div className="flex flex-col gap-6 text-[var(--ink)]">
@@ -356,7 +460,7 @@ export const QuestMapTab: React.FC<QuestMapTabProps> = ({
             <p className="text-xs text-[var(--ink-muted)] mt-2 font-mono leading-relaxed">
               {lang === "de"
                 ? "Die Quest-Landkarte visualisiert dein Buch als schrittweisen RPG-Pfad mit DAG-Voraussetzungen, taeglichem 12-Minuten-Zeitbudget und Duolingo-inspiriertem Meisterungsfortschritt."
-                : "关卡探索图谱将教材大纲解构为类似 Duolingo 的 RPG 渐进式闯关流，附带 DAG 前置依赖校验、每日 12 分钟无痛负荷与经验值结算。"}
+                : "关卡探索河流将教材大纲解构为类似 Duolingo 的 RPG 渐进式闯关流，附带 DAG 前置依赖校验、每日 12 分钟无痛负荷与经验值结算。"}
             </p>
           </div>
 
@@ -385,7 +489,7 @@ export const QuestMapTab: React.FC<QuestMapTabProps> = ({
                 <button
                   key={preset.id}
                   type="button"
-                  onClick={() => setLocalPresetIndex(idx)}
+                  onClick={() => handlePresetSelect(String(idx))}
                   className="p-2.5 border border-[var(--line)] bg-[var(--paper)] hover:border-[var(--ink)] transition-colors text-left cursor-pointer flex flex-col gap-1"
                 >
                   <div className="flex items-center justify-between text-[11px] font-mono">
@@ -409,121 +513,187 @@ export const QuestMapTab: React.FC<QuestMapTabProps> = ({
   return (
     <div className="flex flex-col gap-6 text-[var(--ink)]">
       {/* =========================================================================
-          HERO BANNER: Heutige Mission & Gamified Scaffolding Focus
+          TOP SCHOLARLY HUD: ZERO FRICTION DUAL CONTROL & GAMIFICATION METRICS
           ========================================================================= */}
-      <section className="border border-[var(--line)] bg-[var(--paper)] p-4 sm:p-6 flex flex-col gap-5">
-        {/* 顶部指标条 */}
-        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-[var(--line)] pb-4">
-          <div className="flex items-center gap-2">
-            <CompassIcon className="w-5 h-5 text-[var(--ink)]" />
-            <div>
-              <div className="flex items-center gap-1.5 text-[11px] font-mono tracking-wider uppercase text-[var(--ink-muted)]">
-                <span>{lang === "de" ? "Heutige Mission" : "今日聚焦任务"}</span>
-                <span className="border border-[var(--line)] px-1 py-0.2 bg-[var(--paper-subtle)] text-[10px]">
-                  {activeBook.fach || currentFach}
-                </span>
+      <header className="border border-[var(--line)] bg-[var(--paper)] p-4 sm:p-5 flex flex-col gap-4">
+        <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-4">
+          {/* 左侧：学科/教材下拉选择器 */}
+          <div className="flex items-center gap-3 flex-wrap">
+            <div className="flex items-center gap-2">
+              <CompassIcon className="w-5 h-5 text-[var(--ink)]" />
+              <div>
+                <h2 className="text-sm sm:text-base font-bold tracking-tight text-[var(--ink)]">
+                  {lang === "de" ? "Quest-Landkarte" : "关卡探索图谱"}
+                </h2>
+                <div className="text-xs font-bold text-[var(--ink-muted)] font-mono">
+                  {activeBook.title}
+                </div>
               </div>
-              <h2 className="text-base font-bold tracking-tight text-[var(--ink)]">
-                {activeBook.title}
-              </h2>
+            </div>
+
+            {/* 学科/课本快捷切换下拉 */}
+            <div className="flex items-center gap-1.5 ml-0 sm:ml-2">
+              <span className="text-[11px] font-mono text-[var(--ink-muted)] hidden sm:inline">
+                {lang === "de" ? "Kurs:" : "课程:"}
+              </span>
+              <select
+                aria-label={lang === "de" ? "Kurs oder Lehrwerk waehlen" : "选择课程或课纲"}
+                value={
+                  selectedPresetIndex !== null
+                    ? String(selectedPresetIndex)
+                    : "custom"
+                }
+                onChange={(e) => {
+                  if (e.target.value === "custom") return;
+                  handlePresetSelect(e.target.value);
+                }}
+                className="font-mono text-xs px-2.5 py-1 border border-[var(--line)] bg-[var(--paper-subtle)] text-[var(--ink)] cursor-pointer focus:outline-none focus:border-[var(--ink)]"
+              >
+                {initialBook && (
+                  <option value="custom">
+                    {initialBook.fach}: {initialBook.title}
+                  </option>
+                )}
+                {BOOK_INGEST_PRESETS.map((p, idx) => (
+                  <option key={p.id} value={String(idx)}>
+                    {p.fach}: {p.title}
+                  </option>
+                ))}
+              </select>
             </div>
           </div>
 
-          {/* 右侧微量规：Streak, XP, Tagesziel */}
+          {/* 右侧微量规：Streak, XP, Tagesziel & [+ Neues Buch zerlegen] 快捷抽屉按钮 */}
           <div className="flex flex-wrap items-center gap-2 text-xs font-mono">
             {/* Streak 徽章 */}
-            <div className="flex items-center gap-1.5 px-2.5 py-1 border border-[var(--line)] bg-[var(--paper-subtle)]">
-              <StreakIcon className="w-3.5 h-3.5 text-[var(--ink)]" />
-              <span>{lang === "de" ? "Streak: 5 Tage" : "连续 5 天"}</span>
-            </div>
-
-            {/* 今日无痛时间预算 */}
-            <div className="flex items-center gap-1.5 px-2.5 py-1 border border-[var(--line)] bg-[var(--paper-subtle)]">
-              <ClockIcon className="w-3.5 h-3.5 text-[var(--ink)]" />
-              <span>~{dailyTargetMinutes} min / {lang === "de" ? "Tag" : "日"}</span>
-            </div>
-
-            {/* XP 累计 */}
-            <div className="flex items-center gap-1.5 px-2.5 py-1 border border-[var(--ink)] bg-[var(--ink)] text-[var(--paper)] font-bold">
-              <StarIcon className="w-3.5 h-3.5 text-[var(--paper)]" />
+            <div
+              className="flex items-center gap-1.5 px-2.5 py-1 border border-[var(--line)] bg-[var(--paper-subtle)]"
+              title={lang === "de" ? "Taegliche Lernserie" : "连续学习天数"}
+            >
+              <FlameIcon className="w-3.5 h-3.5 text-[var(--ink)]" />
               <span>
-                {gainedXp} / {totalXp} XP ({progressPercent}%)
+                {lang === "de" ? `Streak: ${displayStreak} Tage` : `连续 ${displayStreak} 天`}
               </span>
             </div>
+
+            {/* Total XP 徽章 */}
+            <div
+              className="flex items-center gap-1.5 px-2.5 py-1 border border-[var(--ink)] bg-[var(--ink)] text-[var(--paper)] font-bold"
+              title={lang === "de" ? "Gesamte Erfahrungspunkte" : "总研习经验值"}
+            >
+              <StarIcon className="w-3.5 h-3.5 text-[var(--paper)]" />
+              <span>{displayTotalXp} XP</span>
+            </div>
+
+            {/* 今日 12-Min Target Pill */}
+            <div
+              className="flex items-center gap-1.5 px-2.5 py-1 border border-[var(--line)] bg-[var(--paper-subtle)]"
+              title={lang === "de" ? "Heutiges Lernzeitbudget" : "今日微专注目标"}
+            >
+              <ClockIcon className="w-3.5 h-3.5 text-[var(--ink)]" />
+              <span>
+                {lang === "de"
+                  ? `~${dailyTargetMinutes} min / Tag · ${displayTodayCompleted}/1 abgeschlossen`
+                  : `~${dailyTargetMinutes} 分钟 / 日 · ${displayTodayCompleted}/1 完成`}
+              </span>
+            </div>
+
+            {/* [+ Neues Buch zerlegen] 快捷按钮 */}
+            {onGoToWorkshop && (
+              <button
+                type="button"
+                onClick={onGoToWorkshop}
+                className="flex items-center gap-1 px-3 py-1 border border-[var(--ink)] bg-[var(--paper)] hover:bg-[var(--ink)] hover:text-[var(--paper)] transition-colors text-xs font-mono font-bold cursor-pointer ml-1"
+              >
+                <span>{lang === "de" ? "+ Neues Buch zerlegen" : "+ 拆解新书"}</span>
+              </button>
+            )}
           </div>
         </div>
 
-        {/* 进度百分比细线进度条 */}
-        <div className="w-full bg-[var(--paper-subtle)] border border-[var(--line)] h-2 overflow-hidden">
-          <div
-            className="bg-[var(--ink)] h-full transition-all duration-300"
-            style={{ width: `${progressPercent}%` }}
-          />
+        {/* 课本总体完成度细线进度条 */}
+        <div className="flex items-center gap-3 pt-1">
+          <div className="flex-1 bg-[var(--paper-subtle)] border border-[var(--line)] h-2 overflow-hidden">
+            <div
+              className="bg-[var(--ink)] h-full transition-all duration-300"
+              style={{ width: `${progressPercent}%` }}
+            />
+          </div>
+          <span className="text-[11px] font-mono text-[var(--ink-muted)] shrink-0">
+            {masteredCount} / {totalQuests} {lang === "de" ? "gemeistert" : "已掌握"} ({progressPercent}%)
+          </span>
         </div>
+      </header>
 
-        {/* 今日核心关卡卡片 Focus Card */}
-        {todayQuest ? (
-          <div className="border border-[var(--ink)] bg-[var(--paper-subtle)] p-4 flex flex-col md:flex-row md:items-center justify-between gap-4">
-            <div className="flex flex-col gap-1.5 flex-1">
-              <div className="flex flex-wrap items-center gap-2">
-                <span className="text-[10px] font-mono px-1.5 py-0.5 border border-[var(--ink)] bg-[var(--ink)] text-[var(--paper)] uppercase">
-                  {lang === "de" ? "Empfohlen fuer heute" : "今日推荐进阶"}
+      {/* =========================================================================
+          HERO FOCUS CARD: Heutige Mission / Today's Priority Quest Node
+          ========================================================================= */}
+      {todayQuest ? (
+        <section className="border-2 border-[var(--ink)] bg-[var(--paper)] p-4 sm:p-5 flex flex-col md:flex-row md:items-center justify-between gap-4">
+          <div className="flex flex-col gap-2 flex-1">
+            <div className="flex flex-wrap items-center gap-2">
+              <span className="text-[10px] font-mono px-2 py-0.5 border border-[var(--ink)] bg-[var(--ink)] text-[var(--paper)] uppercase font-bold">
+                {lang === "de" ? "Heutige Mission" : "今日聚焦任务"}
+              </span>
+              <span className="text-[10px] font-mono px-1.5 py-0.5 border border-[var(--line)] bg-[var(--paper-subtle)]">
+                {getLessonTypeLabel(todayQuest.lessonType)}
+              </span>
+              <span className="text-[10px] font-mono px-1.5 py-0.5 border border-[var(--line)] bg-[var(--paper-subtle)] flex items-center gap-1">
+                <ClockIcon className="w-3 h-3 text-[var(--ink-muted)]" />
+                ~{todayQuest.estimatedMinutes} min / {lang === "de" ? "Tag" : "日"}
+              </span>
+              <span className="text-[10px] font-mono px-1.5 py-0.5 border border-[var(--line)] bg-[var(--paper-subtle)]">
+                +{todayQuest.xp} XP
+              </span>
+              {todayQuest.matchedToolName && (
+                <span className="text-[10px] font-mono px-1.5 py-0.5 border border-[var(--line)] bg-[var(--paper-subtle)] flex items-center gap-1">
+                  <ToolIcon className="w-3 h-3 text-[var(--ink-muted)]" />
+                  {todayQuest.matchedToolName.split("(")[0].trim()}
                 </span>
-                <span className="text-[10px] font-mono px-1.5 py-0.5 border border-[var(--line)] bg-[var(--paper)]">
-                  {getLessonTypeLabel(todayQuest.lessonType)}
-                </span>
-                <span className="text-[10px] font-mono px-1.5 py-0.5 border border-[var(--line)] bg-[var(--paper)]">
-                  ~{todayQuest.estimatedMinutes} min
-                </span>
-                <span className="text-[10px] font-mono px-1.5 py-0.5 border border-[var(--line)] bg-[var(--paper)]">
-                  +{todayQuest.xp} XP
-                </span>
-              </div>
-
-              <div className="text-sm font-bold text-[var(--ink)] mt-0.5">
-                {todayQuest.title}
-              </div>
-
-              <p className="text-xs text-[var(--ink-muted)] font-mono line-clamp-1">
-                {todayQuest.summary}
-              </p>
+              )}
             </div>
 
-            <div className="flex items-center gap-2 self-start md:self-auto">
-              <button
-                type="button"
-                onClick={() => setInspectNode(todayQuest)}
-                className="text-xs font-mono px-3 py-1.5 border border-[var(--line)] bg-[var(--paper)] hover:border-[var(--ink)] transition-colors cursor-pointer"
-              >
-                {lang === "de" ? "Vorschau" : "前置导学"}
-              </button>
-
-              <button
-                type="button"
-                onClick={() => {
-                  if (onStartTodayQuest) {
-                    onStartTodayQuest();
-                  } else if (onSelectQuest) {
-                    onSelectQuest(todayQuest);
-                  }
-                }}
-                className="text-xs font-mono font-bold px-4 py-1.5 border border-[var(--ink)] bg-[var(--ink)] text-[var(--paper)] hover:opacity-90 transition-opacity cursor-pointer flex items-center gap-1.5"
-              >
-                <span>{lang === "de" ? "Starten" : "开启通关"}</span>
-                <span aria-hidden="true">-&gt;</span>
-              </button>
+            <div className="text-base font-bold text-[var(--ink)] tracking-tight">
+              {todayQuest.title}
             </div>
+
+            <p className="text-xs text-[var(--ink-muted)] font-mono leading-relaxed line-clamp-2">
+              {todayQuest.summary}
+            </p>
           </div>
-        ) : (
-          <div className="border border-[var(--line)] bg-[var(--paper-subtle)] p-4 text-center">
-            <span className="text-xs font-mono font-bold text-[var(--ink)]">
-              {lang === "de"
-                ? "Alle Quests meisterhaft absolviert! (100% gemeistert)"
-                : "全书关卡已圆满通关！(100% 达成)"}
-            </span>
+
+          <div className="flex items-center gap-2 shrink-0">
+            <button
+              type="button"
+              onClick={() => setInspectNode(todayQuest)}
+              className="text-xs font-mono px-3 py-2 border border-[var(--line)] bg-[var(--paper)] hover:border-[var(--ink)] transition-colors cursor-pointer"
+            >
+              {lang === "de" ? "Vorschau" : "前置导学"}
+            </button>
+
+            <button
+              type="button"
+              onClick={() => handleStartQuest(todayQuest)}
+              className="text-xs font-mono font-bold px-4 py-2 border border-[var(--ink)] bg-[var(--ink)] text-[var(--paper)] hover:opacity-90 transition-opacity cursor-pointer flex items-center gap-1.5"
+            >
+              <span>
+                {lang === "de"
+                  ? `Lektion starten (${todayQuest.estimatedMinutes} min)`
+                  : `开启今日研习 (${todayQuest.estimatedMinutes} 分钟)`}
+              </span>
+              <span aria-hidden="true">-&gt;</span>
+            </button>
           </div>
-        )}
-      </section>
+        </section>
+      ) : (
+        <section className="border border-[var(--line)] bg-[var(--paper-subtle)] p-4 text-center">
+          <span className="text-xs font-mono font-bold text-[var(--ink)]">
+            {lang === "de"
+              ? "Alle Quests meisterhaft absolviert! (100% gemeistert)"
+              : "全书关卡已圆满通关！(100% 达成)"}
+          </span>
+        </section>
+      )}
 
       {/* =========================================================================
           CONTROLS & FILTER BAR
@@ -545,7 +715,7 @@ export const QuestMapTab: React.FC<QuestMapTabProps> = ({
                 key={mode}
                 type="button"
                 onClick={() => setFilterMode(mode)}
-                className={`px-2 py-0.5 border transition-colors cursor-pointer ${
+                className={`px-2.5 py-0.5 border transition-colors cursor-pointer ${
                   isSel
                     ? "border-[var(--ink)] bg-[var(--ink)] text-[var(--paper)] font-bold"
                     : "border-[var(--line)] bg-[var(--paper)] text-[var(--ink-muted)] hover:text-[var(--ink)]"
@@ -574,15 +744,15 @@ export const QuestMapTab: React.FC<QuestMapTabProps> = ({
       </div>
 
       {/* =========================================================================
-          CHAPTER MILESTONES & RPG PROGRESSION STREAM
+          DUOLINGO-STYLE VERTICAL QUEST RIVER (UNITS & CIRCULAR BADGE NODES)
           ========================================================================= */}
-      <div className="flex flex-col gap-8">
+      <div className="flex flex-col gap-10">
         {activeBook.chapters.map((chap) => {
           const chapMastered = chap.nodes.filter((n) => completedSet.has(n.id)).length;
           const chapTotal = chap.nodes.length;
           const chapPercent = chapTotal > 0 ? Math.round((chapMastered / chapTotal) * 100) : 0;
+          const isUnitFullyMastered = chapMastered === chapTotal && chapTotal > 0;
 
-          // 筛选节点
           const filteredNodes = chap.nodes.filter((node) => {
             const isCompleted = completedSet.has(node.id);
             if (filterMode === "mastered") return isCompleted;
@@ -597,102 +767,111 @@ export const QuestMapTab: React.FC<QuestMapTabProps> = ({
           return (
             <section
               key={chap.id}
-              className="border border-[var(--line)] bg-[var(--paper)] p-4 sm:p-6 flex flex-col gap-6"
+              className="border border-[var(--line)] bg-[var(--paper)] flex flex-col"
             >
-              {/* 章节里程碑阶段头 (Chapter Milestone Header) */}
-              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-[var(--line)] pb-4">
+              {/* DISTINCT UNIT BANNER (Duolingo-style Unit Section Header) */}
+              <div className="border-b border-[var(--line)] bg-[var(--paper-subtle)] p-4 sm:p-5 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
                 <div className="flex flex-col gap-1">
                   <div className="flex items-center gap-2">
-                    <span className="text-[10px] font-mono px-1.5 py-0.5 border border-[var(--ink)] bg-[var(--paper-subtle)] font-bold">
-                      {lang === "de" ? `ETAPPE ${chap.order}` : `第 ${chap.order} 阶段`}
+                    <span className="text-[10px] font-mono px-2 py-0.5 border border-[var(--ink)] bg-[var(--ink)] text-[var(--paper)] font-bold uppercase">
+                      {lang === "de" ? `Unit ${chap.order}` : `第 ${chap.order} 单元`}
                     </span>
-                    <h3 className="text-sm font-bold tracking-tight text-[var(--ink)]">
+                    <h3 className="text-base font-bold tracking-tight text-[var(--ink)]">
                       {chap.title}
                     </h3>
                   </div>
                   <div className="text-[11px] font-mono text-[var(--ink-muted)]">
-                    {chapTotal} {lang === "de" ? "Quests" : "个关卡"} · ~{chap.totalMinutes} min {lang === "de" ? "Lernaufwand" : "总时长"}
+                    {chapTotal} {lang === "de" ? "Quests" : "个关卡"} · ~{chap.totalMinutes} min {lang === "de" ? "Lernaufwand" : "总学时"}
                   </div>
                 </div>
 
-                {/* 章节完成度 Badge & 微进度条 */}
+                {/* 单元完成度 Badge & 微进度条 */}
                 <div className="flex items-center gap-3">
-                  <div className="w-24 sm:w-32 bg-[var(--paper-subtle)] border border-[var(--line)] h-1.5 overflow-hidden">
+                  <div className="w-24 sm:w-32 bg-[var(--paper)] border border-[var(--line)] h-2 overflow-hidden">
                     <div
                       className="bg-[var(--ink)] h-full transition-all duration-300"
                       style={{ width: `${chapPercent}%` }}
                     />
                   </div>
-                  <span className="text-xs font-mono px-2 py-0.5 border border-[var(--line)] bg-[var(--paper-subtle)] text-[var(--ink)] font-bold">
-                    {chapMastered}/{chapTotal} {lang === "de" ? "gemeistert" : "完成"}
+                  <span className="text-xs font-mono px-2 py-0.5 border border-[var(--line)] bg-[var(--paper)] text-[var(--ink)] font-bold">
+                    {chapMastered}/{chapTotal} {lang === "de" ? "gemeistert" : "已掌握"}
                   </span>
                 </div>
               </div>
 
-              {/* 节点序列流 (Quest Progression Stream) */}
-              <div className="relative pl-6 sm:pl-8 flex flex-col gap-6">
-                {/* 贯穿全章节的垂直进度主轴线 */}
+              {/* DUOLINGO VERTICAL RIVER CANVAS */}
+              <div className="p-4 sm:p-8 flex flex-col gap-6 relative">
+                {/* 纵贯单元的主轴引导演示线 */}
                 <div
-                  className="absolute left-[15px] sm:left-[19px] top-4 bottom-4 w-px bg-[var(--line)]"
+                  className="absolute left-7 sm:left-10 top-6 bottom-6 w-0.5 bg-[var(--line)] pointer-events-none"
                   aria-hidden="true"
                 />
 
+                {/* 关卡圆点列表 */}
                 {filteredNodes.map((node) => {
                   const status = getQuestStatus(node);
                   const isMastered = status === "mastered";
                   const isAvailable = status === "available";
                   const isLocked = status === "locked";
 
-                  // 获取前置关卡名称列表供 Tooltip / 提示展示
                   const prereqTitles = (node.prerequisites || [])
                     .map((pid) => nodeMap.get(pid)?.title)
                     .filter(Boolean) as string[];
 
                   return (
-                    <div key={node.id} className="relative flex items-start gap-4 sm:gap-5">
-                      {/* 节点锚点图标 (Checkpoint Anchor) */}
-                      <div className="relative -ml-[25px] sm:-ml-[29px] mt-2 z-10">
+                    <div
+                      key={node.id}
+                      className="relative flex items-start gap-4 sm:gap-6 z-10"
+                    >
+                      {/* DUOLINGO-STYLE CIRCULAR BADGE NODE */}
+                      <div className="shrink-0 pt-1">
                         {isMastered && (
-                          <div
-                            className="w-[18px] h-[18px] border border-[var(--ink)] bg-[var(--ink)] text-[var(--paper)] flex items-center justify-center cursor-pointer"
-                            title={lang === "de" ? "Gemeistert" : "已掌握"}
-                            onClick={(e) => handleToggleCompletion(node.id, e)}
+                          <button
+                            type="button"
+                            onClick={() => handleStartQuest(node)}
+                            title={lang === "de" ? "Gemeistert · Klicken zum Wiederholen" : "已掌握 · 点击复习"}
+                            className="w-12 h-12 rounded-full border-2 border-[var(--ink)] bg-[var(--ink)] text-[var(--paper)] flex items-center justify-center cursor-pointer transition-transform hover:scale-105"
                           >
-                            <CheckIcon className="w-3.5 h-3.5 text-[var(--paper)]" />
-                          </div>
+                            <CheckIcon className="w-5 h-5 text-[var(--paper)]" />
+                          </button>
                         )}
 
                         {isAvailable && (
-                          <div
-                            className="w-[18px] h-[18px] border-2 border-[var(--ink)] bg-[var(--paper)] text-[var(--ink)] flex items-center justify-center cursor-pointer animate-pulse"
-                            title={lang === "de" ? "Bereit zum Start" : "可挑战"}
-                            onClick={() => onSelectQuest?.(node)}
+                          <button
+                            type="button"
+                            onClick={() => handleStartQuest(node)}
+                            title={lang === "de" ? "Aktuell verfuegbar · Jetzt starten" : "当前可挑战 · 立即进入"}
+                            className="w-12 h-12 rounded-full border-4 border-double border-[var(--ink)] bg-[var(--paper)] text-[var(--ink)] flex items-center justify-center cursor-pointer animate-pulse transition-transform hover:scale-105"
                           >
-                            <div className="w-1.5 h-1.5 bg-[var(--ink)]" />
-                          </div>
+                            <PlayIcon className="w-4 h-4 text-[var(--ink)] ml-0.5" />
+                          </button>
                         )}
 
                         {isLocked && (
                           <div
-                            className="w-[18px] h-[18px] border border-dashed border-[var(--line)] bg-[var(--paper-subtle)] text-[var(--ink-muted)] flex items-center justify-center cursor-not-allowed"
-                            title={lang === "de" ? "Gesperrt" : "已锁定"}
+                            title={
+                              prereqTitles.length > 0
+                                ? `${lang === "de" ? "Gesperrt · Voraussetzung: " : "已锁定 · 需先通关: "}${prereqTitles.join(", ")}`
+                                : lang === "de" ? "Gesperrt" : "已锁定"
+                            }
+                            className="w-12 h-12 rounded-full border-2 border-dashed border-[var(--line)] bg-[var(--paper-subtle)] text-[var(--ink-muted)] flex items-center justify-center cursor-not-allowed"
                           >
-                            <LockIcon className="w-3 h-3 text-[var(--ink-muted)]" />
+                            <LockIcon className="w-4 h-4 text-[var(--ink-muted)]" />
                           </div>
                         )}
                       </div>
 
-                      {/* 关卡详情主卡片 */}
+                      {/* 关卡详情卡片 */}
                       <div
                         className={`flex-1 border p-3.5 sm:p-4 transition-colors ${
                           isAvailable
-                            ? "border-[var(--ink)] bg-[var(--paper)]"
+                            ? "border-2 border-[var(--ink)] bg-[var(--paper)]"
                             : isMastered
                             ? "border-[var(--line)] bg-[var(--paper-subtle)]"
                             : "border-dashed border-[var(--line)] bg-[var(--paper-subtle)] opacity-75"
                         }`}
                       >
-                        {/* 卡片头部元数据 */}
+                        {/* 头部元数据 */}
                         <div className="flex flex-wrap items-center justify-between gap-2 border-b border-[var(--line)] pb-2 mb-2">
                           <div className="flex flex-wrap items-center gap-1.5">
                             <span className="text-[10px] font-mono px-1.5 py-0.2 border border-[var(--line)] bg-[var(--paper)]">
@@ -710,7 +889,6 @@ export const QuestMapTab: React.FC<QuestMapTabProps> = ({
                             </span>
                           </div>
 
-                          {/* 关联教具微标 */}
                           {node.matchedToolName && (
                             <div className="flex items-center gap-1 text-[10px] font-mono text-[var(--ink-muted)]">
                               <ToolIcon className="w-3 h-3" />
@@ -731,7 +909,7 @@ export const QuestMapTab: React.FC<QuestMapTabProps> = ({
                           </p>
                         </div>
 
-                        {/* 若锁定，显示前置关卡依赖说明 */}
+                        {/* 若锁定，显示前置关卡依赖提示 */}
                         {isLocked && prereqTitles.length > 0 && (
                           <div className="mt-2.5 p-2 border border-dashed border-[var(--line)] bg-[var(--paper)] text-[11px] font-mono text-[var(--ink-muted)] flex items-start gap-1.5">
                             <LockIcon className="w-3.5 h-3.5 mt-0.5 shrink-0" />
@@ -755,7 +933,6 @@ export const QuestMapTab: React.FC<QuestMapTabProps> = ({
                               {lang === "de" ? "Details & Fragen" : "导学剖析"}
                             </button>
 
-                            {/* 本地状态快速打卡/取消切换 */}
                             <button
                               type="button"
                               onClick={(e) => handleToggleCompletion(node.id, e)}
@@ -775,7 +952,7 @@ export const QuestMapTab: React.FC<QuestMapTabProps> = ({
                             {isAvailable && (
                               <button
                                 type="button"
-                                onClick={() => onSelectQuest?.(node)}
+                                onClick={() => handleStartQuest(node)}
                                 className="text-xs font-mono font-bold px-3 py-1 border border-[var(--ink)] bg-[var(--ink)] text-[var(--paper)] hover:opacity-90 transition-opacity cursor-pointer flex items-center gap-1"
                               >
                                 <span>{lang === "de" ? "Starten" : "挑战"}</span>
@@ -786,7 +963,7 @@ export const QuestMapTab: React.FC<QuestMapTabProps> = ({
                             {isMastered && (
                               <button
                                 type="button"
-                                onClick={() => onSelectQuest?.(node)}
+                                onClick={() => handleStartQuest(node)}
                                 className="text-xs font-mono px-3 py-1 border border-[var(--line)] bg-[var(--paper)] hover:border-[var(--ink)] transition-colors cursor-pointer flex items-center gap-1"
                               >
                                 <span>{lang === "de" ? "Wiederholen" : "温故复习"}</span>
@@ -799,6 +976,64 @@ export const QuestMapTab: React.FC<QuestMapTabProps> = ({
                     </div>
                   );
                 })}
+
+                {/* MILESTONE UNIT CHEST (Unit Capstone Exam Badge at River End) */}
+                <div className="relative flex items-center gap-4 sm:gap-6 z-10 pt-2 border-t border-[var(--line)]">
+                  <div className="shrink-0">
+                    <div
+                      className={`w-12 h-12 rounded-full border-2 flex items-center justify-center ${
+                        isUnitFullyMastered
+                          ? "border-[var(--ink)] bg-[var(--ink)] text-[var(--paper)]"
+                          : "border-dashed border-[var(--line)] bg-[var(--paper-subtle)] text-[var(--ink-muted)]"
+                      }`}
+                      title={
+                        isUnitFullyMastered
+                          ? lang === "de"
+                            ? "Unit-Meilenstein freigeschaltet! Klausur-Check bereit"
+                            : "单元结业宝箱已解锁！综合测验就绪"
+                          : lang === "de"
+                          ? "Unit-Meilenstein gesperrt · Erst alle Quests abschliessen"
+                          : "单元结业宝箱未解锁 · 需先通关本单元全部关卡"
+                      }
+                    >
+                      <ChestIcon className="w-5 h-5" />
+                    </div>
+                  </div>
+
+                  <div className="flex-1 flex flex-col sm:flex-row sm:items-center justify-between gap-2 border border-[var(--line)] p-3 bg-[var(--paper-subtle)]">
+                    <div className="flex flex-col">
+                      <div className="flex items-center gap-2">
+                        <span className="text-[10px] font-mono px-1.5 py-0.2 border border-[var(--ink)] bg-[var(--ink)] text-[var(--paper)] font-bold uppercase">
+                          {lang === "de" ? "Meilenstein" : "单元宝箱"}
+                        </span>
+                        <span className="text-xs font-bold text-[var(--ink)]">
+                          {chap.title} · {lang === "de" ? "Klausur-Check" : "阶段结业考"}
+                        </span>
+                      </div>
+                      <span className="text-[11px] font-mono text-[var(--ink-muted)] mt-0.5">
+                        {isUnitFullyMastered
+                          ? lang === "de"
+                            ? "+50 XP Meilenstein-Bonus freigeschaltet!"
+                            : "+50 XP 单元里程碑积分已结算！"
+                          : lang === "de"
+                          ? `Noch ${chapTotal - chapMastered} Quests bis zum Meilenstein`
+                          : `还需通关 ${chapTotal - chapMastered} 个关卡`}
+                      </span>
+                    </div>
+
+                    <div className="text-xs font-mono">
+                      {isUnitFullyMastered ? (
+                        <span className="px-2.5 py-1 border border-[var(--ink)] bg-[var(--paper)] font-bold text-[var(--ink)]">
+                          {lang === "de" ? "Gekonnt" : "已圆满达成"}
+                        </span>
+                      ) : (
+                        <span className="text-[var(--ink-muted)] border border-dashed border-[var(--line)] px-2 py-0.5">
+                          {lang === "de" ? "Gesperrt" : "待解锁"}
+                        </span>
+                      )}
+                    </div>
+                  </div>
+                </div>
               </div>
             </section>
           );
@@ -819,7 +1054,6 @@ export const QuestMapTab: React.FC<QuestMapTabProps> = ({
             className="w-full max-w-lg border border-[var(--ink)] bg-[var(--paper)] p-5 sm:p-6 flex flex-col gap-4 max-h-[90vh] overflow-y-auto"
             onClick={(e) => e.stopPropagation()}
           >
-            {/* 模态框顶部 */}
             <div className="flex items-start justify-between gap-3 border-b border-[var(--line)] pb-3">
               <div className="flex flex-col gap-1">
                 <div className="flex items-center gap-2">
@@ -847,7 +1081,6 @@ export const QuestMapTab: React.FC<QuestMapTabProps> = ({
               </button>
             </div>
 
-            {/* 苏格拉底启发式导学设问 */}
             {inspectNode.socraticPrompt && (
               <div className="border border-[var(--line)] bg-[var(--paper-subtle)] p-3 flex flex-col gap-1.5">
                 <div className="flex items-center gap-1.5 text-xs font-mono font-bold text-[var(--ink)]">
@@ -864,7 +1097,6 @@ export const QuestMapTab: React.FC<QuestMapTabProps> = ({
               </div>
             )}
 
-            {/* 核心概念与高频考点陷阱 */}
             {inspectNode.keyConcepts && inspectNode.keyConcepts.length > 0 && (
               <div className="flex flex-col gap-2">
                 <div className="text-xs font-mono font-bold uppercase tracking-wider text-[var(--ink-muted)]">
@@ -905,7 +1137,6 @@ export const QuestMapTab: React.FC<QuestMapTabProps> = ({
               </div>
             )}
 
-            {/* 匹配教具说明 */}
             {inspectNode.matchedToolName && (
               <div className="border border-[var(--line)] p-2.5 text-xs font-mono flex items-center justify-between">
                 <span className="text-[var(--ink-muted)]">
@@ -917,7 +1148,6 @@ export const QuestMapTab: React.FC<QuestMapTabProps> = ({
               </div>
             )}
 
-            {/* 弹窗底部操作 */}
             <div className="flex items-center justify-end gap-2 border-t border-[var(--line)] pt-3 mt-1">
               <button
                 type="button"
@@ -931,7 +1161,7 @@ export const QuestMapTab: React.FC<QuestMapTabProps> = ({
                 onClick={() => {
                   const node = inspectNode;
                   setInspectNode(null);
-                  onSelectQuest?.(node);
+                  handleStartQuest(node);
                 }}
                 className="text-xs font-mono font-bold px-4 py-1.5 border border-[var(--ink)] bg-[var(--ink)] text-[var(--paper)] hover:opacity-90 cursor-pointer flex items-center gap-1"
               >
