@@ -8,7 +8,7 @@ operatoren: [outline, discuss, evaluate]
 klausurrelevant: true
 datum: 2026-09-25
 tags: [EF, Englisch, Landeskunde]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 # Lernreise: Abitur-Themenfelder: UK, USA, Nigeria, Identitaet, Medien (L1, Ziel Klausur)
 
@@ -73,6 +73,9 @@ Bezug zum Konzept: `传导句——Anchor plus contrast equals verdict: one fiel
 
 [Werkzeug: lego]
 
+AUFGABE (write, [AFB II]):
+Write the blocks below (details in Zhongwen task / English TASK): select for the reader, compress with logic, paraphrase in register, add needed notes and flag gaps.
+
 中文任务：Ordne einen unseen text zwei Feldern zu und formuliere These plus zwei Anker-Belege.
 English TASK: Ordne einen unseen text zwei Feldern zu und formuliere These plus zwei Anker-Belege.
 TARGET: Three blocks, each with evidence and judgement in four sentences.
@@ -95,10 +98,22 @@ PRIMAERTEXT（Study text: Five Fields Evening in Leeds, study version, 150词uns
 > Price, she firmly added, is always the second heavy anchor. (Z. 14)
 > We filed that long evening under five separate exam fields. (Z. 15)
 
-HILFE（中文在前）：
-1. 中文：两句交代背景。English: Place the case in two sentences.
-2. 中文：锁两个证据。English: Secure two blocks of evidence.
-3. 中文：效果加判断。English: Add effect and judgement.
+HILFE (direction only, no verdict yet - Zhongwen first):
+- Context dimension: Check speaker, addressee and occasion with context mapping; name them, judge nothing yet.
+- Text dimension: Secure two quotations on field anchors (place, voice, figures) with line numbers (Z.); collect evidence, do not fix the effect yet.
+- Judgement dimension: List weighing criteria for lead-field anchor plus contrast; collect measures, do not close the verdict yet.
+
+COMPLETION (Lueckentext):
+- Read the PRIMAERTEXT once without notes, then fill from memory:
+- The lead field anchors the text with ___ (Z. 1-3).
+- The contrast field corrects it with ___ (Z. 5/11).
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Kontext und These (Leitfeld-Anker plus Kontrastfeld) | 5 NP | Enger Beleg mit Zeile als Alternativweg
+Zwei Belege mit Zeile (flags Z. 1, devolution Z. 3; loans Z. 5, missing stamps Z. 11) | 5 NP | Strukturierte Kette mit Zeile als Alternativweg
+Wirkung und Urteil (Leitfeld-Anker plus Kontrastfeld) | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
 
 MUSTERLOESUNG: 中文示范：背景一句，证据加效果两句，判断一句。
 English MODEL: Case 51 shows the method in three moves with evidence, effect and judgement.
@@ -109,17 +124,24 @@ Klausur-Satz: `规律句——The field rule: the stranger the text, the firmer 
 
 ## Schritt 5 — ausprobieren: Das doppelte Spiel Weg A gegen Weg B
 
-VERGLEICH（中文先行）：Weg A 微观做细节，Weg B 宏观定策略。
+VERGLEICH（中文先行）：Weg A 微观做细节，Weg B 宏观定策略。 (选概念: waehle zuerst Nahlektuere oder Kontextrahmen)
 English: Choose the path first (close Way A or distant Way B), then write.
 
-TASK A（中文：哪条线索走近路？）: Which trace needs Way A?
-TASK B（中文：哪个整体问题走远路？）: Which whole-case question needs Way B?
+AUFGABE A (analyse, [AFB II])（中文：哪条线索走近路？）: Which trace needs Way A?
+AUFGABE B (evaluate, [AFB III])（中文：哪个整体问题走远路？）: Which whole-case question needs Way B?
 
-HILFE：细节问选近路Way A，整体问选远路Way B。
+- [Wahl A] Wenn du Weg A waehlst, sammelst du in Schritt 7 Belege der Textnaehe.
+- [Wahl B] Wenn du Weg B waehlst, sammelst du in Schritt 7 Belege der Kontexteinordnung.
 
-中文答案：A近路靠证据，B远路靠背景。
-English ANSWER A: Way A reads closely: anchors, switches and figures line by line.
-English ANSWER B: Way B frames widely: history, institutions and exam rubric decide weight and outlook.
+Entscheidungsregel fuer die Klausur:
+Lesehinweis: Die ausformulierte Regel steht in der AUFLOESUNG weiter unten; waehle zuerst intuitiv A oder B.
+
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg A oder Weg B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Ueberfuehrt aus Entscheidungsregel: Ordne den Text zuerst einem Leitfeld zu, hole genau ein Kontrastfeld dazu, und urteile nur mit Anker plus Beleg. (Quelle: Studienparaphrase (study version, 15 lines); Originale: UK/USA/Nigeria-Abiturthemen (KLP NRW Englisch))
+- Mechanismus A: Way A reads closely: anchors, switches and figures line by line (Z. 1-11). (Quelle: wie oben). Dreischritt: Beleg = flags Z. 1, devolution Z. 3 | Mittel = Nahlektuere mit Zitatkette | Funktion = sichert das Wie am Text
+- Mechanismus B: Way B frames widely: history, institutions and exam rubric decide weight and outlook (Z. 12-15). (Quelle: wie oben). Dreischritt: Beleg = loans Z. 5, missing stamps Z. 11 | Mittel = Kontextrahmen mit Hintergrund | Funktion = erklaert das Warum aus dem Kontext
+- Ein-Satz-Kern: One field leads, one sharpens; belonging against price decides.
 
 Klausur-Satz: `对决句——Close work secures how, wide framing why; both pass the paper.`
 
@@ -146,11 +168,28 @@ Klausur-Satz: `易错句——Often confused: summary is no verdict; anchor plus
 ROLLE（中文）：你是Exam coach for the finals，负责审稿。
 English ROLE: You are Exam coach for the finals.
 SITUATION: Case 51 waits on your desk.
+AUFGABE (evaluate, [AFB III]):
+Evaluate Fall 51 in about 150 words: place the context, secure two anchors with line numbers (Z.), explain effects, and weigh a judgement with outlook.
 TASK（中文）：150词左右，含背景、证据、权衡判断。
 RUBRIC (30 XP): Context (6 XP) | Evidence (10 XP) | Effect plus judgement (10 XP) | Register (4 XP).
 Zeitbox: 2-Minuten-Countdown fuer Gliederung (Leitfeld plus Kontrastfeld), dann schreiben. 中文：先用2分钟定提纲再写。
 
+Die RUBRIC steuert das Schreiben (30 XP); der ERWARTUNGSHORIZONT steuert die Klausur-Bewertung (15 NP).
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Einordnung und These (Leitfeld-Anker plus Kontrastfeld) | 5 NP | Enger Beleg mit Zeile als Alternativweg
+Zwei Anker-Belege mit Zeile (flags Z. 1, devolution Z. 3; loans Z. 5, missing stamps Z. 11) | 5 NP | Strukturierte Kette mit Zeile als Alternativweg
+Gewichtetes Urteil mit Ausblick | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
+
+
 Klausur-Satz: `满分句——AFB-III model: While the text leads with field A (anchor, line), field B corrects it; hence weighted verdict with outlook.`
+
+KERNSATZ (auswendig):
+- Kernsatz: `Lead field anchors the unseen text; contrast sharpens it; belonging weighed against price crowns the verdict.`
+- Zerlegung: Beleg | Mittel | Funktion
+- Aufschluesselung: Beleg = unseen text with lead-field anchor (Z.) | Mittel = contrast field as corrective | Funktion = weighed belonging verdict with outlook
+- Selbsttest: Lead field anchors the unseen text; contrast sharpens it; ___ weighed against price crowns the verdict.
 
 ## Schritt 8 — reflexion: Takeaway und Rueckblick aus Fall 51
 

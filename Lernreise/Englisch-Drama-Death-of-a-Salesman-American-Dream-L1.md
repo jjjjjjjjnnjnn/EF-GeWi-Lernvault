@@ -8,7 +8,7 @@ operatoren: [analyze, characterize, evaluate]
 klausurrelevant: true
 datum: 2026-10-03
 tags: [EF, Englisch, Drama, Arthur-Miller, Death-of-a-Salesman, American-Dream, Willy-Loman]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Arthur Miller: Death of a Salesman – The Fallacy of the American Dream (L1, Ziel Klausur)
@@ -29,7 +29,7 @@ Late at night in a cramped, fragile frame house in Brooklyn, New York. Outside, 
 `Klausur-Satz: Arthur Miller deconstructs the capitalist perversion of the American Dream by demonstrating how Willy Loman internalizes an illusion of personality and material success that inevitably culminates in total self-alienation and suicidal sacrifice.`
 
 ## Schritt 2 — entdecken: The Critical Dramaturgical Glossary
-PRETRAINING术语盒（核心4词，先读三遍中英，合书自测中文→英语）：
+PRETRAINING术语盒（核心4词，先读三遍中英，合书自测中文->英语）：
 
 - 蜕变的美国梦 — The Corrupted American Dream: 原本追求自由、平等与个人潜能自我实现的清教徒崇高理想，退化为追求金钱、浮华外表与被他人盲目崇拜的消费主义神话。 The degradation of the original Jeffersonian ideal of freedom and spiritual fulfilment into a cut-throat pursuit of wealth, consumer goods, and social status.
 - 威利·洛曼的姓氏象征 — The Name "Loman" (Low-man): 剧作家阿瑟·米勒精妙的文字游戏，暗示主角既是一个挣扎在社会最底层的小人物，又代表了每一个被体制碾碎的普通人。 The symbolic wordplay designating Willy as an ordinary "low man" crushed by an indifferent economic hierarchy.
@@ -67,12 +67,29 @@ The Reality of Failure:                 The Hallucinations of Escape:
 
 [Werkzeug: text-analyse]
 
-AUFGABE (analyze & characterize, AFB I/II):
+AUFGABE (analyze and characterize, [AFB I/II]):
 Examine the dramatic confrontation between Willy Loman and his young employer Howard Wagner (Act 2):
 Willy cries out desperately:
 "You can't eat the orange and throw the peel away — a man is not a piece of fruit! Now pay attention to me, Howard! I've been with this firm thirty-four years, and now I can't pay my insurance! [...] You can't just drop me!"
 1. Analyze the metaphor of the "orange and peel" and explain what it reveals about the relationship between employer and employee in industrial capitalism.
 2. Characterize Howard Wagner's behaviour (listening to his new wire recorder, ignoring Willy, calling him "kid") and evaluate the cynicism of the modern corporate world.
+
+HILFE (direction only, no verdict yet):
+- Context dimension: Check firm, speaker and situation with context mapping (Howard, office, Act 2); name them, judge nothing yet.
+- Text dimension: Secure the orange-peel metaphor and two Howard behaviours with line proof; collect evidence, do not fix the effect yet.
+- Judgement dimension: List criteria for instrumentalisation (loyalty years, severance, tone); collect measures, do not close the verdict yet.
+
+COMPLETION (Lueckentext):
+- Read the Act-2 confrontation once without notes, then fill from memory:
+- The orange gives ___; the peel is ___.
+- Howard calls the 63-year-old Willy ___ while playing his ___.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Orange metaphor with Act-2 line | 5 NP | Enger Beleg mit Zeile als Alternativweg
+Howard characterization with two behaviour proofs | 5 NP | Strukturierte Kette mit Zeile als Alternativweg
+Verdict on capitalist instrumentalisation | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
 
 MUSTERLOESUNG:
 1. Analysis of the Orange Metaphor:
@@ -95,22 +112,46 @@ VERGLEICH: Biff's Epiphany vs. Happy's Stubbornness (选概念)
   - Stubbornness at the grave: "Willy Loman did not die in vain. He had a good dream. It's the only dream you can have — to come out number-one man. He fought it out here, and this is where I'm gonna win it for him."
   - Tragedy: Happy learns nothing; he internalizes his father's toxic competitive myth and is doomed to repeat Willy's hollow cycle of adultery, loneliness, and failure.
 
+- [Wahl A] Wenn du Position A waehlst, sammelst du im Transfer Belege der Naehe zum Text.
+- [Wahl B] Wenn du Position B waehlst, sammelst du im Transfer Belege der Einordnung in den Kontext.
+
 Entscheidungsregel fuer die Klausur:
-When discussing the ending in the "Requiem", contrast Linda's final words ("We're free... We're free and clear") with Willy's death: The house is paid off on the very day there is nobody left to live in it – the supreme irony of the bourgeois dream!
+Lesehinweis: Die ausformulierte Regel steht in der AUFLOESUNG weiter unten; waehle zuerst intuitiv A oder B.
+
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Position A oder B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Ueberfuehrt aus Entscheidungsregel: When discussing the Requiem, contrast Linda's "We're free and clear" with Willy's death: the house is paid off on the very day nobody is left to live in it (Quelle: Studienparaphrase (Lerneinheit); Original: A. Miller, Death of a Salesman (1949), Requiem)
+- Mechanismus A: Biff's epiphany breaks the delusion ("dime a dozen") and chooses honest work in the West. Dreischritt: Beleg = Biff's truth-speech (Requiem contrast) | Mittel = Nahlektuere mit Zitatkette | Funktion = sichert das Wie am Text
+- Mechanismus B: Happy's stubbornness at the grave ("did not die in vain") repeats the number-one-man myth. Dreischritt: Beleg = Happy's grave vow (Requiem contrast) | Mittel = Kontextrahmen mit Hintergrund | Funktion = erklaert das Warum aus dem Kontext
+- Ein-Satz-Kern: One son wakes, one repeats: delusion inherits itself.
+
 
 ## Schritt 6 — check: Klausur-Transfer Modern Gig-Economy and Identity
 
 PRUEFUNGSSZENARIO (KLP NRW Englisch LK Modern Drama):
 
-### AFB I: Dramatic Function of the Flute
+### [AFB I]: Dramatic Function of the Flute
 Explain the symbolic meaning of the flute melody that opens and closes the play, connecting it to Willy's pioneer father who made and sold flutes on the American frontier.
 
-### AFB II: Contrast of American Dreams
+### [AFB II]: Contrast of American Dreams
 Contrast Willy Loman's obsession with superficial charm ("being well-liked") with the work ethic of his neighbour Charley and Charley's successful lawyer son Bernard.
 Explain why Bernard succeeds where Biff fails.
 
-### AFB III: Critical Essay
+### [AFB III]: Critical Essay
 Evaluate whether the anxieties depicted in "Death of a Salesman" (precarious employment, debt traps, loss of self-worth through job loss) have become more virulent in today's gig economy and hyper-competitive digital workplaces.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Flute motif with pioneer-father origin | 5 NP | Enger Beleg mit Zeile als Alternativweg
+Willy-Charley-Bernard contrast with proof | 5 NP | Strukturierte Kette mit Zeile als Alternativweg
+Gig-economy evaluation with outlook | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
+
+KERNSATZ (auswendig):
+- Kernsatz: `Willy internalizes the personality myth; worth more dead than alive, the insurance payout prices alienation.`
+- Zerlegung: Beleg | Mittel | Funktion
+- Aufschluesselung: Beleg = orange-peel metaphor (Act 2) | Mittel = Howard contrast as technocratic coldness | Funktion = verdict on capitalist instrumentalisation
+- Selbsttest: Willy internalizes the personality myth; worth more dead than alive, the insurance payout prices ___.
 
 ## Schritt 7 — check: Format-Check & Scoring
 

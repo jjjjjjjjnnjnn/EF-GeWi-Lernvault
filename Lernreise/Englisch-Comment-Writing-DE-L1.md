@@ -8,7 +8,7 @@ operatoren: [comment, assess, discuss]
 klausurrelevant: true
 datum: 2026-09-25
 tags: [EF, Englisch, Schreiben]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 # Lernreise: Comment Writing: P.E.E. und Register (L1, Ziel Klausur)
 
@@ -65,7 +65,7 @@ Bezug zum Konzept: `Strong foe plus fair weight equals trust: steelman, then jud
 
 [Werkzeug: lego]
 
-AUFGABE: Baue zu einem Thema Thesis, zwei PEE-Ketten und eine Countervoice mit Concession.
+AUFGABE (analysieren, [AFB II]): Baue zu einem Thema Thesis, zwei PEE-Ketten und eine Countervoice mit Concession.
 TARGET: Drei Bausteine mit Beleg, je mit Funktion und einer Deutung in vier Saetzen.
 
 PRIMAERTEXT (Study text: Uniform Comment variant B, study version, 15 lines, 100-200 words):
@@ -86,10 +86,22 @@ PRIMAERTEXT (Study text: Uniform Comment variant B, study version, 15 lines, 100
 > Funds should cover spare sets for low incomes. (Z. 14)
 > Loose frames unite; tested rules keep them fair. (Z. 15)
 
-HILFE:
-1. Schritt 1: Ordne den Fall in zwei Saetzen ein.
-2. Schritt 2: Sichere zwei Bausteine mit Beleg.
-3. Schritt 3: Deute Baustein und Funktion im Fallganzen.
+HILFE (nur Richtung, keine Deutung vorweg):
+- Kontextdimension: Pruefe Anlass und Adressat mit Kontextanalyse; benenne nur Situation und Empfaenger, deute die Funktion noch nicht.
+- Textdimension: Pruefe PEE-Ketten und Gegenstimme mit Beleganalyse; sichere zwei Zitate mit Zeile (Z.), ohne die Wirkung festzulegen.
+- Urteilsdimension: Pruefe den Massstab (These plus PEE plus Gegenstimme) mit Kriterienanalyse; sammle Kriterien, ohne das Urteil vorwegzunehmen.
+
+COMPLETION (Lueckentext):
+- Lies den PRIMAERTEXT einmal ohne Notizen, dann ergaenze aus dem Gedaechtnis:
+- Die PEE-Kette heisst Point (Z. 2) plus Evidence (Z. 3) plus ___ (Z. 4).
+- Die Konzession gibt ___ zu und haelt den Kern (Z. 10-11).
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Kontext und These (These plus PEE plus Gegenstimme) | 5 NP | Enger Beleg mit Zeile als Alternativweg
+Zwei Belege mit Zeile (Point plus Evidence Z. 2-4; Countervoice Z. 8-9, Verdict Z. 12) | 5 NP | Strukturierte Kette mit Zeile als Alternativweg
+Wirkung und Urteil (These plus PEE plus Gegenstimme) | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
 
 MUSTERLOESUNG: Der Fall 46 zeigt das Verfahren in drei Schritten. Erstens sichert ein Beleg den Kern. Zweitens traegt die Funktion die Wirkung. Drittens schliesst die Deutung das Urteil.
 
@@ -100,15 +112,23 @@ Klausur-Satz: `The comment rule: the nearer the verdict, the stronger the foe.`
 
 ## Schritt 5 — ausprobieren: Das doppelte Spiel Weg A gegen Weg B
 
-VERGLEICH: Weg A arbeitet mikroskopisch (Detail, Beleg, Form), Weg B plant makroskopisch (Strategie, Kontext, Gewicht).
+VERGLEICH: Weg A arbeitet mikroskopisch (Detail, Beleg, Form), Weg B plant makroskopisch (Strategie, Kontext, Gewicht). (选概念: waehle zuerst Nahlektuere oder Kontextrahmen)
 
-AUFGABE A: Welche Spur verlangt Weg A? Begruende mit Beleg.
-AUFGABE B: Welche Frage verlangt Weg B? Begruende mit Kontext.
+AUFGABE A (analysieren, [AFB II]): Welche Spur verlangt Weg A? Begruende mit Beleg.
+AUFGABE B (beurteilen, [AFB III]): Welche Frage verlangt Weg B? Begruende mit Kontext.
 
-HILFE: A fragt nach Form und Naehe, also Weg A. B fragt nach Rolle und Ganzem, also Weg B.
+- [Wahl A] Wenn du Weg A waehlst, sammelst du in Schritt 7 Belege der Textnaehe.
+- [Wahl B] Wenn du Weg B waehlst, sammelst du in Schritt 7 Belege der Kontexteinordnung.
 
-ANTWORT A: Way A crafts closely: diction, linkers and evidence density sentence by sentence.
-ANTWORT B: Way B plans widely: audience, register ladder and strongest foe decide weight and close.
+Entscheidungsregel fuer die Klausur:
+Lesehinweis: Die ausformulierte Regel steht in der AUFLOESUNG weiter unten; waehle zuerst intuitiv A oder B.
+
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg A oder Weg B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Ueberfuehrt aus Entscheidungsregel: Baue zuerst zwei PEE-Ketten, staerke dann den Gegner fair, urteile erst danach. (Quelle: Studienparaphrase (study version, 15 lines; Schuluniform); Original: Comment-Aufsatz (KLP NRW Englisch))
+- Mechanismus A: Way A crafts closely: diction, linkers and evidence density sentence by sentence. (Quelle: wie oben). Dreischritt: Beleg = Point plus Evidence Z. 2-4 | Mittel = Nahlektuere mit Zitatkette | Funktion = sichert das Wie am Text
+- Mechanismus B: Way B plans widely: audience, register ladder and strongest foe decide weight and close. (Quelle: wie oben). Dreischritt: Beleg = Countervoice Z. 8-9, Verdict Z. 12 | Mittel = Kontextrahmen mit Hintergrund | Funktion = erklaert das Warum aus dem Kontext
+- Ein-Satz-Kern: Starker Gegner plus faires Gewicht ergibt Vertrauen.
 
 Klausur-Satz: `Close craft secures how, wide plan why; both persuade.`
 
@@ -133,11 +153,26 @@ Klausur-Satz: `Often confused: opinion needs no evidence; every point needs quot
 
 ROLLE: Du bist Opinion page editor in der Pruefung.
 SITUATION: Ein Fall liegt unbearbeitet auf dem Tisch und verlangt Einordnung, Belege und Urteil.
-AUFGABE: Verfasse circa 150 Woerter mit Einordnung, zwei Belegen, Funktion, Deutung und Schlussurteil.
+AUFGABE (beurteilen, [AFB III]): Verfasse circa 150 Woerter mit Einordnung, zwei Belegen, Funktion, Deutung und Schlussurteil.
 RUBRIC (30 XP): Einordnung korrekt (6 XP) | Zwei Belege (10 XP) | Funktion plus Deutung (10 XP) | Fachsprache und Schluss (4 XP).
 Zeitbox: 2-Minuten-Countdown fuer These plus Gegenstimme, dann schreiben.
 
+Die RUBRIC steuert das Schreiben (30 XP); der ERWARTUNGSHORIZONT steuert die Klausur-Bewertung (15 NP).
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Einordnung und These (These plus PEE plus Gegenstimme) | 5 NP | Enger Beleg mit Zeile als Alternativweg
+Zwei Anker-Belege mit Zeile (Point plus Evidence Z. 2-4; Countervoice Z. 8-9, Verdict Z. 12) | 5 NP | Strukturierte Kette mit Zeile als Alternativweg
+Gewichtetes Urteil mit Ausblick | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
+
+
 Klausur-Satz: `AFB-III model: Although the foe proves X (evidence), Y weighs heavier by measure M; hence verdict with outlook.`
+
+KERNSATZ (auswendig):
+- Kernsatz: `Starkes Gegenargument fair gewuerdigt, Kleines zugestanden, Kern behalten: so ueberzeugt das Urteil.`
+- Zerlegung: Beleg | Mittel | Funktion
+- Aufschluesselung: Beleg = These plus zwei PEE-Ketten (Z.) | Mittel = starke Gegenstimme fair plus kleine Konzession | Funktion = abgewogenes Urteil mit Ausblick
+- Selbsttest: Starkes Gegenargument fair gewuerdigt, Kleines zugestanden, Kern behalten: so ueberzeugt das ___.
 
 ## Schritt 8 — reflexion: Takeaway und Rueckblick aus Fall 46
 

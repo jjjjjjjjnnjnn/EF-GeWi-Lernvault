@@ -8,7 +8,7 @@ operatoren: [compare, assess]
 klausurrelevant: true
 datum: 2026-09-26
 tags: [EF, Englisch, Dystopia]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 # Lernreise: Dystopian Fiction 1984 Brave New World (L1, Ziel Klausur)
 
@@ -66,6 +66,9 @@ Bezug zum Konzept: `CN: 安抚加删除等于去异议。EN: Comfort plus deleti
 
 [Werkzeug: text-analyse]
 
+AUFGABE (analyse, [AFB II]):
+Analyze the PRIMAERTEXT below (details in Zhongwen task / English TASK): secure two quotations with line numbers (Z.), explain each effect, and weigh a judgement.
+
 PRIMAERTEXT（Study text: Hatchery of Smiles (15 lines)，study version，100-200词）：
 
 > The hatchery played music in pastel colours. (Z. 1)
@@ -88,12 +91,24 @@ PRIMAERTEXT（Study text: Hatchery of Smiles (15 lines)，study version，100-20
 English TASK: Examine the primary text line by line with quotation and line number.
 TARGET: Three quotations, each with effect and judgement in four sentences.
 
-HILFE（中文在前）：
-1. 中文：两句交代背景。English: Place the case in two sentences.
-2. 中文：锁两个证据。English: Secure two quotations.
-3. 中文：效果加判断。English: Add effect and judgement.
+HILFE (direction only, no verdict yet - Zhongwen first):
+- Context dimension: Check speaker, addressee and occasion with context mapping; name them, judge nothing yet.
+- Text dimension: Secure two quotations on dose diction and word-cut with line numbers (Z.); collect evidence, do not fix the effect yet.
+- Judgement dimension: List weighing criteria for comfort versus fear plus deletion; collect measures, do not close the verdict yet.
 
 MARKIERAUFTRAG（双色标注）：CN: 黄色[GELB]标安抚装置（music, soma, feelies），蓝色[BLAU]标删除与抵抗（crossed out, kept, chose）。EN: GELB for comfort devices, BLAU for deletion and resistance.
+
+COMPLETION (Lueckentext):
+- Read the PRIMAERTEXT once without notes, then fill from memory:
+- The comfort device smiles in ___ (Z. 2: SOMA).
+- Resistance hides in the ___ (Z. 9: paper Shakespeare).
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Kontext und These (comfort versus fear plus deletion) | 5 NP | Enger Beleg mit Zeile als Alternativweg
+Zwei Belege mit Zeile (soma Z. 2-3; crossed-out Z. 4, kept book Z. 9) | 5 NP | Strukturierte Kette mit Zeile als Alternativweg
+Wirkung und Urteil (comfort versus fear plus deletion) | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
 
 MUSTERLOESUNG: 中文示范：背景一句，证据加效果两句，判断一句。
 English MODEL: Case 43 shows the method in three moves with quotation, effect and judgement; the cover is blown.
@@ -102,17 +117,24 @@ Klausur-Satz: `CN: 规律是剂量越大，问题越少。EN: The higher the dos
 
 ## Schritt 5 — ausprobieren: Das doppelte Spiel Weg A gegen Weg B
 
-VERGLEICH（中文先行）：Weg A 微观细读（文本风格细节），Weg B 宏观语境（历史秩序背景）。
+VERGLEICH（中文先行）：Weg A 微观细读（文本风格细节），Weg B 宏观语境（历史秩序背景）。 (选概念: waehle zuerst Nahlektuere oder Kontextrahmen)
 English: Choose the path first (close Way A or distant Way B), then write.
 
-TASK A（中文：哪条线索走近路？）: Which trace needs Way A?
-TASK B（中文：哪个整体问题走远路？）: Which whole-case question needs Way B?
+AUFGABE A (analyse, [AFB II])（中文：哪条线索走近路？）: Which trace needs Way A?
+AUFGABE B (evaluate, [AFB III])（中文：哪个整体问题走远路？）: Which whole-case question needs Way B?
 
-HILFE：细节问选近路Way A，整体问选远路Way B。
+- [Wahl A] Wenn du Weg A waehlst, sammelst du in Schritt 7 Belege der Textnaehe.
+- [Wahl B] Wenn du Weg B waehlst, sammelst du in Schritt 7 Belege der Kontexteinordnung.
 
-中文答案：A近路靠引文，B远路靠背景。
-English ANSWER A: CN: 微观读删词与剂量语言。EN: Way A tracks crossed-out words and dose diction.
-English ANSWER B: CN: 宏观比 Orwell 与 Huxley。EN: Way B compares threat versus comfort systems.
+Entscheidungsregel fuer die Klausur:
+Lesehinweis: Die ausformulierte Regel steht in der AUFLOESUNG weiter unten; waehle zuerst intuitiv A oder B.
+
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg A oder Weg B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Ueberfuehrt aus Entscheidungsregel: Trenne zuerst Angst- und Trosttechnik, weise dann die Tilgung mit Zeile nach, wiege erst danach. (Quelle: Studienparaphrase (study version, 15 lines; Hatchery of Smiles); Originale: G. Orwell, 1984 / A. Huxley, Brave New World)
+- Mechanismus A: Way A tracks crossed-out words and dose diction line by line (Z. 1-8). (Quelle: wie oben). Dreischritt: Beleg = soma Z. 2-3 | Mittel = Nahlektuere mit Zitatkette | Funktion = sichert das Wie am Text
+- Mechanismus B: Way B compares threat versus comfort systems: Orwell against Huxley. (Quelle: wie oben). Dreischritt: Beleg = crossed-out Z. 4, kept book Z. 9 | Mittel = Kontextrahmen mit Hintergrund | Funktion = erklaert das Warum aus dem Kontext
+- Ein-Satz-Kern: Soft cages cage too.
 
 Klausur-Satz: `CN: 微观看药片，宏观看制度。EN: Pills show how, systems show why.`
 
@@ -139,11 +161,28 @@ Klausur-Satz: `CN: 易错是把微笑当自由。EN: Smiles can be sanctions.`
 ROLLE（中文）：你是Essay coach for the final exam，负责审稿。
 English ROLE: You are Essay coach for the final exam.
 SITUATION: Case 43 waits on your desk.
+AUFGABE (evaluate, [AFB III]):
+Evaluate Fall 43 in about 150 words: place the context, secure two anchors with line numbers (Z.), explain effects, and weigh a judgement with outlook.
 TASK（中文）：150词左右，含背景、证据、权衡判断。
 RUBRIC (30 XP): Context (6 XP) | Quotations (10 XP) | Effect plus judgement (10 XP) | Register (4 XP).
 Zeitbox: 2-Minuten-Countdown fuer Dosis-Plan (soma Z. 2-3, crossed Z. 4, kept Z. 9), dann schreiben. 中文：先用2分钟定剂量与删词再写。
 
+Die RUBRIC steuert das Schreiben (30 XP); der ERWARTUNGSHORIZONT steuert die Klausur-Bewertung (15 NP).
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Einordnung und These (comfort versus fear plus deletion) | 5 NP | Enger Beleg mit Zeile als Alternativweg
+Zwei Anker-Belege mit Zeile (soma Z. 2-3; crossed-out Z. 4, kept book Z. 9) | 5 NP | Strukturierte Kette mit Zeile als Alternativweg
+Gewichtetes Urteil mit Ausblick | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
+
+
 Klausur-Satz: `CN: 满分句须含安抚引文、删词证据与代价权衡。EN: AFB-III sentence needs comfort quotation, deletion proof and cost weighing.`
+
+KERNSATZ (auswendig):
+- Kernsatz: `Comfort plus deletion equals silence; the kept book prices hope against the dose.`
+- Zerlegung: Beleg | Mittel | Funktion
+- Aufschluesselung: Beleg = comfort quotation (Z. 2-3) | Mittel = deletion proof (Z. 4) | Funktion = cost weighing: hope versus dose
+- Selbsttest: Comfort plus deletion equals silence; the kept book prices ___ against the dose.
 
 ## Schritt 8 — reflexion: Takeaway und Rueckblick aus Fall 43
 

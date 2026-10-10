@@ -8,7 +8,7 @@ operatoren: [compare, assess]
 klausurrelevant: true
 datum: 2026-09-26
 tags: [EF, Englisch, Dystopia]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 # Lernreise: Dystopian Fiction 1984 Brave New World (L1, Ziel Klausur)
 
@@ -83,15 +83,27 @@ PRIMAERTEXT (Study text: Canteen at Thirteen (15 lines), study version, 100-200 
 > War is peace, read the wall behind him. (Z. 14)
 > He mouthed the words and kept the spoon. (Z. 15)
 
-AUFGABE: Untersuche den Primaertext Zeile fuer Zeile und belege jede Aussage mit Zitat und Zeile.
+AUFGABE (analysieren, [AFB II]): Untersuche den Primaertext Zeile fuer Zeile und belege jede Aussage mit Zitat und Zeile.
 TARGET: Three quotations, each with effect and judgement in four sentences.
 
-HILFE:
-1. Schritt 1: Ordne den Fall in zwei Saetzen ein.
-2. Schritt 2: Sichere zwei Befunde mit Zeile.
-3. Schritt 3: Deute Befund und Funktion im Fallganzen.
+HILFE (nur Richtung, keine Deutung vorweg):
+- Kontextdimension: Pruefe Anlass und Adressat mit Kontextanalyse; benenne nur Situation und Empfaenger, deute die Funktion noch nicht.
+- Textdimension: Pruefe Worttilgung und Sloganpaare mit Beleganalyse; sichere zwei Zitate mit Zeile (Z.), ohne die Wirkung festzulegen.
+- Urteilsdimension: Pruefe den Massstab (Angst vs. Trost plus Tilgung) mit Kriterienanalyse; sammle Kriterien, ohne das Urteil vorwegzunehmen.
 
 MARKIERAUFTRAG: Markiere mit GELB alle **Ueberwachungszeichen** (SEES, crossed out, whispered, wall). Markiere mit BLAU die **Trost- und Widerstandszeichen** (cheering, spoon, sugar, kept).
+
+COMPLETION (Lueckentext):
+- Lies den PRIMAERTEXT einmal ohne Notizen, dann ergaenze aus dem Gedaechtnis:
+- Newspeak zeigt sich an ___ (Z. 4: tasty).
+- Widerstand misst ___ gegen Strafe (Z. 11-13: spoon).
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Kontext und These (Angst vs. Trost plus Tilgung) | 5 NP | Enger Beleg mit Zeile als Alternativweg
+Zwei Belege mit Zeile (sufficient Z. 4-5; Loeffel Z. 11-13, War is peace Z. 14) | 5 NP | Strukturierte Kette mit Zeile als Alternativweg
+Wirkung und Urteil (Angst vs. Trost plus Tilgung) | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
 
 MUSTERLOESUNG: Der Fall 44 zeigt das Verfahren in drei Schritten. Erstens sichert ein Zitat mit Zeile den Befund. Zweitens benennt die Funktion die Wirkung. Drittens schliesst die Deutung das Urteil.
 
@@ -99,15 +111,23 @@ Klausur-Satz: `Die Regel der Dystopie: Je kleiner die Ration, desto groesser der
 
 ## Schritt 5 — ausprobieren: Das doppelte Spiel Weg A gegen Weg B
 
-VERGLEICH: Weg A liest mikroskopisch (Text, Stil, Detail), Weg B deutet makroskopisch (Kontext, Geschichte, Ordnung).
+VERGLEICH: Weg A liest mikroskopisch (Text, Stil, Detail), Weg B deutet makroskopisch (Kontext, Geschichte, Ordnung). (选概念: waehle zuerst Nahlektuere oder Kontextrahmen)
 
-AUFGABE A: Welche Spur verlangt Weg A? Begruende mit Zitat und Zeile.
-AUFGABE B: Welche Frage verlangt Weg B? Begruende mit Kontext.
+AUFGABE A (analysieren, [AFB II]): Welche Spur verlangt Weg A? Begruende mit Zitat und Zeile.
+AUFGABE B (beurteilen, [AFB III]): Welche Frage verlangt Weg B? Begruende mit Kontext.
 
-HILFE: A fragt nach Form und Naehe, also Weg A. B fragt nach Rolle und Ganzem, also Weg B.
+- [Wahl A] Wenn du Weg A waehlst, sammelst du in Schritt 7 Belege der Textnaehe.
+- [Wahl B] Wenn du Weg B waehlst, sammelst du in Schritt 7 Belege der Kontexteinordnung.
 
-ANTWORT A: Weg A seziert mikroskopisch Worttilgung und Sloganpaare: sufficient gegen tasty, cut als victory.
-ANTWORT B: Weg B vergleicht makroskopisch Orwell gegen Huxley: Drohung hier, Betaeubung dort; beide tilgen Widerspruch.
+Entscheidungsregel fuer die Klausur:
+Lesehinweis: Die ausformulierte Regel steht in der AUFLOESUNG weiter unten; waehle zuerst intuitiv A oder B.
+
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg A oder Weg B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Ueberfuehrt aus Entscheidungsregel: Trenne zuerst Angst- und Trosttechnik, weise dann die Tilgung mit Zeile nach, wiege erst danach. (Quelle: Studienparaphrase (study version, 15 lines; Suppenkantine); Originale: G. Orwell, 1984 / A. Huxley, Brave New World)
+- Mechanismus A: Weg A seziert mikroskopisch Worttilgung und Sloganpaare: sufficient gegen tasty, cut als victory (Z. 1-8). (Quelle: wie oben). Dreischritt: Beleg = sufficient Z. 4-5 | Mittel = Nahlektuere mit Zitatkette | Funktion = sichert das Wie am Text
+- Mechanismus B: Weg B vergleicht makroskopisch Orwell gegen Huxley: Drohung hier, Betaeubung dort; beide tilgen Widerspruch. (Quelle: wie oben). Dreischritt: Beleg = Loeffel Z. 11-13, War is peace Z. 14 | Mittel = Kontextrahmen mit Hintergrund | Funktion = erklaert das Warum aus dem Kontext
+- Ein-Satz-Kern: Weich und hart regieren gleich: Widerspruch stirbt.
 
 Klausur-Satz: `Feinlese misst das Wie der Technik, Epochenwissen das Warum der Systeme; beide vergleichen voll.`
 
@@ -132,11 +152,26 @@ Klausur-Satz: `Haeufig verwechselt: Inhalt melde Macht; erst Technik plus Preis 
 
 ROLLE: Du bist Essay coach for the final exam in der Pruefung.
 SITUATION: Ein Fall liegt unbearbeitet auf dem Tisch und verlangt Einordnung, Belege und Urteil.
-AUFGABE: Verfasse circa 150 Woerter mit Einordnung, zwei Belegen mit Z., Funktion, Deutung und Schlussurteil.
+AUFGABE (beurteilen, [AFB III]): Verfasse circa 150 Woerter mit Einordnung, zwei Belegen mit Z., Funktion, Deutung und Schlussurteil.
 RUBRIC (30 XP): Einordnung korrekt (6 XP) | Zwei Belege mit Z. (10 XP) | Funktion plus Deutung (10 XP) | Fachsprache und Schluss (4 XP).
 Zeitbox: 2-Minuten-Countdown fuer Technik-Plan (Tilgen Z. 4-5, Paar Z. 14, Loeffel Z. 11-13), dann schreiben.
 
+Die RUBRIC steuert das Schreiben (30 XP); der ERWARTUNGSHORIZONT steuert die Klausur-Bewertung (15 NP).
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Einordnung und These (Angst vs. Trost plus Tilgung) | 5 NP | Enger Beleg mit Zeile als Alternativweg
+Zwei Anker-Belege mit Zeile (sufficient Z. 4-5; Loeffel Z. 11-13, War is peace Z. 14) | 5 NP | Strukturierte Kette mit Zeile als Alternativweg
+Gewichtetes Urteil mit Ausblick | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
+
+
 Klausur-Satz: `AFB-III-Mustersatz: Worttilgung (Z. 4-5) mit Sloganpaar (Z. 14) und Loeffel-Widerstand (Z. 11-13) belegen Orwell-Technik, weil Sprache schrumpft und Erinnerung kostet.`
+
+KERNSATZ (auswendig):
+- Kernsatz: `Angstueberwachung und Trostkonditionierung tilgen Widerspruch; Widerstand misst Preis gegen Hoffnung.`
+- Zerlegung: Beleg | Mittel | Funktion
+- Aufschluesselung: Beleg = getilgtes Wort plus Slogan (Z.) | Mittel = Technikvergleich Angst gegen Trost | Funktion = Urteil ueber Widerspruchs-Tilgung
+- Selbsttest: Angstueberwachung und Trostkonditionierung tilgen Widerspruch; Widerstand misst ___ gegen Hoffnung.
 
 ## Schritt 8 — reflexion: Takeaway und Rueckblick aus Fall 44
 

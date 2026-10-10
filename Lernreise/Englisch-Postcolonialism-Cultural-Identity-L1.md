@@ -8,7 +8,7 @@ operatoren: [examine, discuss]
 klausurrelevant: true
 datum: 2026-09-26
 tags: [EF, Englisch, Postcolonialism]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 # Lernreise: Postcolonialism and Cultural Identity (L1, Ziel Klausur)
 
@@ -66,6 +66,9 @@ Bezug zum Konzept: `CN: 旧名加粉笔等于新归属。EN: Old name plus chalk
 
 [Werkzeug: highlighter]
 
+AUFGABE (analyse, [AFB II]):
+Analyze the PRIMAERTEXT below (details in Zhongwen task / English TASK): secure two quotations with line numbers (Z.), explain each effect, and weigh a judgement.
+
 PRIMAERTEXT（Study text: Platform Names in Chalk (15 lines)，study version，100-200词）：
 
 > The departure board listed VICTORIA terminus in faded imperial letters. (Z. 1)
@@ -88,12 +91,24 @@ PRIMAERTEXT（Study text: Platform Names in Chalk (15 lines)，study version，1
 English TASK: Examine the primary text line by line with quotation and line number.
 TARGET: Three quotations, each with effect and judgement in four sentences.
 
-HILFE（中文在前）：
-1. 中文：两句交代背景。English: Place the case in two sentences.
-2. 中文：锁两个证据。English: Secure two quotations.
-3. 中文：效果加判断。English: Add effect and judgement.
+HILFE (direction only, no verdict yet - Zhongwen first):
+- Context dimension: Check speaker, addressee and occasion with context mapping; name them, judge nothing yet.
+- Text dimension: Secure two quotations on double inscription layers with line numbers (Z.); collect evidence, do not fix the effect yet.
+- Judgement dimension: List weighing criteria for double names plus rewrite; collect measures, do not close the verdict yet.
 
 MARKIERAUFTRAG（双色标注）：CN: 黄色[GELB]标旧站名（VICTORIA, confusing, terminus），蓝色[BLAU]标收复动作（added, repeated, stamped, rewrote）。EN: GELB for old names, BLAU for reclaiming acts.
+
+COMPLETION (Lueckentext):
+- Read the PRIMAERTEXT once without notes, then fill from memory:
+- The board lists ___ (Z. 1: VICTORIA).
+- The chalk adds ___ (Z. 2: EKO).
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Kontext und These (double names plus rewrite) | 5 NP | Enger Beleg mit Zeile als Alternativweg
+Zwei Belege mit Zeile (VICTORIA Z. 1; EKO Z. 2, stamp Z. 8) | 5 NP | Strukturierte Kette mit Zeile als Alternativweg
+Wirkung und Urteil (double names plus rewrite) | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
 
 MUSTERLOESUNG: 中文示范：背景一句，证据加效果两句，判断一句。
 English MODEL: Case 29 shows the method in three moves with quotation, effect and judgement; the cover is blown.
@@ -102,17 +117,24 @@ Klausur-Satz: `CN: 规律是每重写一次，归属深一分。EN: Each rewrite
 
 ## Schritt 5 — ausprobieren: Das doppelte Spiel Weg A gegen Weg B
 
-VERGLEICH（中文先行）：Weg A 微观细读（文本风格细节），Weg B 宏观语境（历史秩序背景）。
+VERGLEICH（中文先行）：Weg A 微观细读（文本风格细节），Weg B 宏观语境（历史秩序背景）。 (选概念: waehle zuerst Nahlektuere oder Kontextrahmen)
 English: Choose the path first (close Way A or distant Way B), then write.
 
-TASK A（中文：哪条线索走近路？）: Which trace needs Way A?
-TASK B（中文：哪个整体问题走远路？）: Which whole-case question needs Way B?
+AUFGABE A (analyse, [AFB II])（中文：哪条线索走近路？）: Which trace needs Way A?
+AUFGABE B (evaluate, [AFB III])（中文：哪个整体问题走远路？）: Which whole-case question needs Way B?
 
-HILFE：细节问选近路Way A，整体问选远路Way B。
+- [Wahl A] Wenn du Weg A waehlst, sammelst du in Schritt 7 Belege der Textnaehe.
+- [Wahl B] Wenn du Weg B waehlst, sammelst du in Schritt 7 Belege der Kontexteinordnung.
 
-中文答案：A近路靠引文，B远路靠背景。
-English ANSWER A: CN: 微观读站牌双层书写。EN: Way A reads double inscription layers.
-English ANSWER B: CN: 宏观读交通史与命名政治。EN: Way B frames railway history and naming politics.
+Entscheidungsregel fuer die Klausur:
+Lesehinweis: Die ausformulierte Regel steht in der AUFLOESUNG weiter unten; waehle zuerst intuitiv A oder B.
+
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg A oder Weg B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Ueberfuehrt aus Entscheidungsregel: Lies zuerst Schicht fuer Schicht, pruefe dann Klang und Stempel, urteile erst danach. (Quelle: Studienparaphrase (study version, 15 lines; Bahnhofs-Schilder); Originale: Postkolonialismus-Debatte / Namenspolitik)
+- Mechanismus A: Way A reads double inscription layers line by line (Z. 1-12). (Quelle: wie oben). Dreischritt: Beleg = VICTORIA Z. 1 | Mittel = Nahlektuere mit Zitatkette | Funktion = sichert das Wie am Text
+- Mechanismus B: Way B frames railway history and naming politics as context (Z. 5/10-15). (Quelle: wie oben). Dreischritt: Beleg = EKO Z. 2, stamp Z. 8 | Mittel = Kontextrahmen mit Hintergrund | Funktion = erklaert das Warum aus dem Kontext
+- Ein-Satz-Kern: Hyphens speak.
 
 Klausur-Satz: `CN: 微观看书写，宏观看铁路史。EN: Writing shows how, railways show why.`
 
@@ -139,11 +161,28 @@ Klausur-Satz: `CN: 易错是把混乱当结论。EN: Confusion can be colonial c
 ROLLE（中文）：你是Culture columnist of the school paper，负责审稿。
 English ROLE: You are Culture columnist of the school paper.
 SITUATION: Case 29 waits on your desk.
+AUFGABE (evaluate, [AFB III]):
+Evaluate Fall 29 in about 150 words: place the context, secure two anchors with line numbers (Z.), explain effects, and weigh a judgement with outlook.
 TASK（中文）：150词左右，含背景、证据、权衡判断。
 RUBRIC (30 XP): Context (6 XP) | Quotations (10 XP) | Effect plus judgement (10 XP) | Register (4 XP).
 Zeitbox: 2-Minuten-Countdown fuer Doppelname-Plan (VICTORIA Z. 1, EKO Z. 2, stamp Z. 8), dann schreiben. 中文：先用2分钟定双站名与盖章再写。
 
+Die RUBRIC steuert das Schreiben (30 XP); der ERWARTUNGSHORIZONT steuert die Klausur-Bewertung (15 NP).
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Einordnung und These (double names plus rewrite) | 5 NP | Enger Beleg mit Zeile als Alternativweg
+Zwei Anker-Belege mit Zeile (VICTORIA Z. 1; EKO Z. 2, stamp Z. 8) | 5 NP | Strukturierte Kette mit Zeile als Alternativweg
+Gewichtetes Urteil mit Ausblick | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
+
+
 Klausur-Satz: `CN: 满分句须含双站名引文、盖章证据与重写收束。EN: AFB-III sentence needs double-name quotation, stamp proof and rewrite close.`
+
+KERNSATZ (auswendig):
+- Kernsatz: `Double names travel further: stamp both, test sounds, rewrite before the last train.`
+- Zerlegung: Beleg | Mittel | Funktion
+- Aufschluesselung: Beleg = imperial board name (Z. 1) | Mittel = chalk EKO layer plus stamp (Z. 2/8) | Funktion = hybrid belonging verdict
+- Selbsttest: Double names travel further: stamp both, test sounds, rewrite before the last ___.
 
 ## Schritt 8 — reflexion: Takeaway und Rueckblick aus Fall 29
 

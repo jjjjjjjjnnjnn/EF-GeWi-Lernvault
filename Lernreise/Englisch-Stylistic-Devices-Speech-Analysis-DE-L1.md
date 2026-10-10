@@ -8,7 +8,7 @@ operatoren: [analyze, evaluate]
 klausurrelevant: true
 datum: 2026-09-26
 tags: [EF, Englisch, Speech-Analysis]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 # Lernreise: Stylistic Devices and Speech Analysis (L1, Ziel Klausur)
 
@@ -83,15 +83,27 @@ PRIMAERTEXT (Study text: Assembly Speech on Pausenhalle (15 lines), study versio
 > Tabs can wait; friendship refreshes no page. (Z. 14)
 > Choose! The yard watches, the bell will judge. (Z. 15)
 
-AUFGABE: Untersuche den Primaertext Zeile fuer Zeile und belege jede Aussage mit Zitat und Zeile.
+AUFGABE (analysieren, [AFB II]): Untersuche den Primaertext Zeile fuer Zeile und belege jede Aussage mit Zitat und Zeile.
 TARGET: Three quotations, each with effect and judgement in four sentences.
 
-HILFE:
-1. Schritt 1: Ordne den Fall in zwei Saetzen ein.
-2. Schritt 2: Sichere zwei Befunde mit Zeile.
-3. Schritt 3: Deute Befund und Funktion im Fallganzen.
+HILFE (nur Richtung, keine Deutung vorweg):
+- Kontextdimension: Pruefe Anlass und Adressat mit Kontextanalyse; benenne nur Situation und Empfaenger, deute die Funktion noch nicht.
+- Textdimension: Pruefe Takt, Schnitt und Klimax mit Beleganalyse; sichere zwei Zitate mit Zeile (Z.), ohne die Wirkung festzulegen.
+- Urteilsdimension: Pruefe den Massstab (Kette, Frage, Klimax) mit Kriterienanalyse; sammle Kriterien, ohne das Urteil vorwegzunehmen.
 
 MARKIERAUFTRAG: Markiere mit GELB alle **Gemeinschaftsbilder** (lungs, teams, faces, yard). Markiere mit BLAU die **Taktfiguren** (Anaphern, Fragen, Dreischritte).
+
+COMPLETION (Lueckentext):
+- Lies den PRIMAERTEXT einmal ohne Notizen, dann ergaenze aus dem Gedaechtnis:
+- Die Kette haemmert ___ (Z. 1: we came).
+- Die Klimax kroent ___ (Z. 8: small/large/huge).
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Kontext und These (Kette, Frage, Klimax) | 5 NP | Enger Beleg mit Zeile als Alternativweg
+Zwei Belege mit Zeile (Ketten Z. 1/11; Fragen Z. 2/6, Klimax Z. 8) | 5 NP | Strukturierte Kette mit Zeile als Alternativweg
+Wirkung und Urteil (Kette, Frage, Klimax) | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
 
 MUSTERLOESUNG: Der Fall 26 zeigt das Verfahren in drei Schritten. Erstens sichert ein Zitat mit Zeile den Befund. Zweitens benennt die Funktion die Wirkung. Drittens schliesst die Deutung das Urteil.
 
@@ -99,15 +111,23 @@ Klausur-Satz: `Die Regel der Rede: Je naeher der Appell, desto dichter die Figur
 
 ## Schritt 5 — ausprobieren: Das doppelte Spiel Weg A gegen Weg B
 
-VERGLEICH: Weg A liest mikroskopisch (Text, Stil, Detail), Weg B deutet makroskopisch (Kontext, Geschichte, Ordnung).
+VERGLEICH: Weg A liest mikroskopisch (Text, Stil, Detail), Weg B deutet makroskopisch (Kontext, Geschichte, Ordnung). (选概念: waehle zuerst Nahlektuere oder Kontextrahmen)
 
-AUFGABE A: Welche Spur verlangt Weg A? Begruende mit Zitat und Zeile.
-AUFGABE B: Welche Frage verlangt Weg B? Begruende mit Kontext.
+AUFGABE A (analysieren, [AFB II]): Welche Spur verlangt Weg A? Begruende mit Zitat und Zeile.
+AUFGABE B (beurteilen, [AFB III]): Welche Frage verlangt Weg B? Begruende mit Kontext.
 
-HILFE: A fragt nach Form und Naehe, also Weg A. B fragt nach Rolle und Ganzem, also Weg B.
+- [Wahl A] Wenn du Weg A waehlst, sammelst du in Schritt 7 Belege der Textnaehe.
+- [Wahl B] Wenn du Weg B waehlst, sammelst du in Schritt 7 Belege der Kontexteinordnung.
 
-ANTWORT A: Weg A seziert mikroskopisch Takt und Schnitt: Ketten (l. 1, l. 11), Fragen (l. 2, l. 6) und Klimax (Z. 8).
-ANTWORT B: Weg B fragt makroskopisch nach Lage: Vollversammlung, Altersstufe und Handy-Ziel erklaeren Dichte und Ton.
+Entscheidungsregel fuer die Klausur:
+Lesehinweis: Die ausformulierte Regel steht in der AUFLOESUNG weiter unten; waehle zuerst intuitiv A oder B.
+
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg A oder Weg B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Ueberfuehrt aus Entscheidungsregel: Seziere zuerst Takt und Schnitt mit Zeile, ordne dann Lage und Ziel, urteile erst danach. (Quelle: Studienparaphrase (study version, 15 lines; Pausenhof-Rede); Original: Stilmittel-Rede (KLP NRW Englisch))
+- Mechanismus A: Weg A seziert mikroskopisch Takt und Schnitt: Ketten (Z. 1/11), Fragen (Z. 2/6) und Klimax (Z. 8). (Quelle: wie oben). Dreischritt: Beleg = Ketten Z. 1/11 | Mittel = Nahlektuere mit Zitatkette | Funktion = sichert das Wie am Text
+- Mechanismus B: Weg B fragt makroskopisch nach Lage: Vollversammlung, Altersstufe und Handy-Ziel erklaeren Dichte und Ton. (Quelle: wie oben). Dreischritt: Beleg = Fragen Z. 2/6, Klimax Z. 8 | Mittel = Kontextrahmen mit Hintergrund | Funktion = erklaert das Warum aus dem Kontext
+- Ein-Satz-Kern: Takt traegt Appell.
 
 Klausur-Satz: `Feinlese sichert das Wie der Wirkung, Lagewissen das Warum des Tons; beide tragen das Urteil.`
 
@@ -132,11 +152,26 @@ Klausur-Satz: `Haeufig verwechselt: Benennen ist nicht Deuten; erst Funktion plu
 
 ROLLE: Du bist Speech coach of the student council in der Pruefung.
 SITUATION: Ein Fall liegt unbearbeitet auf dem Tisch und verlangt Einordnung, Belege und Urteil.
-AUFGABE: Verfasse circa 150 Woerter mit Einordnung, zwei Belegen mit Zeile, Funktion, Deutung und Schlussurteil.
+AUFGABE (beurteilen, [AFB III]): Verfasse circa 150 Woerter mit Einordnung, zwei Belegen mit Zeile, Funktion, Deutung und Schlussurteil.
 RUBRIC (30 XP): Einordnung korrekt (6 XP) | Zwei Belege mit Z. (10 XP) | Funktion plus Deutung (10 XP) | Fachsprache und Schluss (4 XP).
 Zeitbox: 2-Minuten-Countdown fuer Takt-Plan (Anapher Z. 1, Frage Z. 2, Klimax Z. 8), dann schreiben.
 
+Die RUBRIC steuert das Schreiben (30 XP); der ERWARTUNGSHORIZONT steuert die Klausur-Bewertung (15 NP).
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Einordnung und These (Kette, Frage, Klimax) | 5 NP | Enger Beleg mit Zeile als Alternativweg
+Zwei Anker-Belege mit Zeile (Ketten Z. 1/11; Fragen Z. 2/6, Klimax Z. 8) | 5 NP | Strukturierte Kette mit Zeile als Alternativweg
+Gewichtetes Urteil mit Ausblick | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
+
+
 Klausur-Satz: `AFB-III-Mustersatz: Anaphern (Z. 1, Z. 11) mit Klimax (Z. 8) belegen Mobilisierung, weil Takt plus Steigerung Beifall in Handlung uebersetzt.`
+
+KERNSATZ (auswendig):
+- Kernsatz: `Kette, Frage, Klimax mit Zeile: Takt bindet, Schnitt bewegt, Pointe entscheidet.`
+- Zerlegung: Beleg | Mittel | Funktion
+- Aufschluesselung: Beleg = Kette/Frage mit Zeile | Mittel = Tricolon-Klimax als Steigerung | Funktion = Appell-Urteil im Aufruf
+- Selbsttest: Kette, Frage, Klimax mit Zeile: Takt bindet, Schnitt bewegt, Pointe ___.
 
 ## Schritt 8 — reflexion: Takeaway und Rueckblick aus Fall 26
 

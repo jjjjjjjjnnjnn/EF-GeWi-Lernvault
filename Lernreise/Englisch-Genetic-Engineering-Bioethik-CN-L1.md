@@ -8,7 +8,7 @@ operatoren: [analyse, discuss, evaluate]
 klausurrelevant: true
 datum: 2026-09-26
 tags: [EF, Englisch, CN]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 # Lernreise: Genetic engineering and bioethics debate (L1, Ziel Klausur)
 
@@ -66,6 +66,9 @@ Bezug zum Konzept: `CN: 目的加可逆性等于判决。EN: Purpose plus revers
 
 [Werkzeug: highlighter]
 
+AUFGABE (analyse, [AFB II]):
+Analyze the PRIMAERTEXT below (details in Zhongwen task / English TASK): secure two quotations with line numbers (Z.), explain each effect, and weigh a judgement.
+
 PRIMAERTEXT（Study text: Hearing on the Clinic (15 lines)，study version，100-200词）：
 
 > The doctor promised to delete the faulty gene. (Z. 1)
@@ -88,12 +91,24 @@ PRIMAERTEXT（Study text: Hearing on the Clinic (15 lines)，study version，100
 English TASK: Examine the primary text line by line with quotation and line number.
 TARGET: Three quotations, each with effect and judgement in four sentences.
 
-HILFE（中文在前）：
-1. 中文：两句交代背景。English: Place the case in two sentences.
-2. 中文：锁两个证据。English: Secure two quotations.
-3. 中文：效果加判断。English: Add effect and judgement.
+HILFE (direction only, no verdict yet - Zhongwen first):
+- Context dimension: Check speaker, addressee and occasion with context mapping; name them, judge nothing yet.
+- Text dimension: Secure two quotations on same-tool-different-aim diction with line numbers (Z.); collect evidence, do not fix the effect yet.
+- Judgement dimension: List weighing criteria for tool versus purpose plus consent; collect measures, do not close the verdict yet.
 
 MARKIERAUFTRAG（双色标注）：CN: 黄色[GELB]标治愈承诺（cure, delete, donor），蓝色[BLAU]标界限与代价（price, patent, off-target, generations）。EN: GELB for cure promise, BLAU for limits and costs.
+
+COMPLETION (Lueckentext):
+- Read the PRIMAERTEXT once without notes, then fill from memory:
+- The tool promise cures in ___ (Z. 1-2).
+- The same tool designs in ___ (Z. 3-4).
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Kontext und These (Werkzeug vs. Zweck plus Zustimmung) | 5 NP | Enger Beleg mit Zeile als Alternativweg
+Zwei Belege mit Zeile (cure Z. 1-2; eye colour Z. 3-4, three percent Z. 10) | 5 NP | Strukturierte Kette mit Zeile als Alternativweg
+Wirkung und Urteil (Werkzeug vs. Zweck plus Zustimmung) | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
 
 MUSTERLOESUNG: 中文示范：背景一句，证据加效果两句，判断一句。
 English MODEL: Case 42 shows the method in three moves with quotation, effect and judgement; the cover is blown.
@@ -102,17 +117,24 @@ Klausur-Satz: `CN: 规律是工具越同，越要分目的。EN: The samer the t
 
 ## Schritt 5 — ausprobieren: Das doppelte Spiel Weg A gegen Weg B
 
-VERGLEICH（中文先行）：Weg A 微观细读（文本风格细节），Weg B 宏观语境（历史秩序背景）。
+VERGLEICH（中文先行）：Weg A 微观细读（文本风格细节），Weg B 宏观语境（历史秩序背景）。 (选概念: waehle zuerst Nahlektuere oder Kontextrahmen)
 English: Choose the path first (close Way A or distant Way B), then write.
 
-TASK A（中文：哪条线索走近路？）: Which trace needs Way A?
-TASK B（中文：哪个整体问题走远路？）: Which whole-case question needs Way B?
+AUFGABE A (analyse, [AFB II])（中文：哪条线索走近路？）: Which trace needs Way A?
+AUFGABE B (evaluate, [AFB III])（中文：哪个整体问题走远路？）: Which whole-case question needs Way B?
 
-HILFE：细节问选近路Way A，整体问选远路Way B。
+- [Wahl A] Wenn du Weg A waehlst, sammelst du in Schritt 7 Belege der Textnaehe.
+- [Wahl B] Wenn du Weg B waehlst, sammelst du in Schritt 7 Belege der Kontexteinordnung.
 
-中文答案：A近路靠引文，B远路靠背景。
-English ANSWER A: CN: 微观读同一工具的两种目的。EN: Way A dissects same-tool-different-aim diction.
-English ANSWER B: CN: 宏观读公正、同意与风险三轴。EN: Way B weighs justice, consent and risk axes.
+Entscheidungsregel fuer die Klausur:
+Lesehinweis: Die ausformulierte Regel steht in der AUFLOESUNG weiter unten; waehle zuerst intuitiv A oder B.
+
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg A oder Weg B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Ueberfuehrt aus Entscheidungsregel: Trenne zuerst Werkzeug und Zweck, pruefe dann Zustimmung und Generationenrisiko, urteile erst danach. (Quelle: Studienparaphrase (study version, 15 lines; Gen-Klinik); Originale: Bioethik-Debatte (KLP NRW Englisch))
+- Mechanismus A: Way A dissects same-tool-different-aim diction line by line (Z. 1-4). (Quelle: wie oben). Dreischritt: Beleg = cure Z. 1-2 | Mittel = Nahlektuere mit Zitatkette | Funktion = sichert das Wie am Text
+- Mechanismus B: Way B weighs justice, consent and risk axes as context (Z. 5-13). (Quelle: wie oben). Dreischritt: Beleg = eye colour Z. 3-4, three percent Z. 10 | Mittel = Kontextrahmen mit Hintergrund | Funktion = erklaert das Warum aus dem Kontext
+- Ein-Satz-Kern: Purpose and reversibility divide, not the tool.
 
 Klausur-Satz: `CN: 微观辨措辞，宏观称代价。EN: Diction dissects, context prices.`
 
@@ -139,11 +161,28 @@ Klausur-Satz: `CN: 易错是把治愈滑向定制。EN: Cure does not license ca
 ROLLE（中文）：你是Debate coach for the ethics panel，负责审稿。
 English ROLE: You are Debate coach for the ethics panel.
 SITUATION: Case 42 waits on your desk.
+AUFGABE (evaluate, [AFB III]):
+Evaluate Fall 42 in about 150 words: place the context, secure two anchors with line numbers (Z.), explain effects, and weigh a judgement with outlook.
 TASK（中文）：150词左右，含背景、证据、权衡判断。
 RUBRIC (30 XP): Context (6 XP) | Quotations (10 XP) | Effect plus judgement (10 XP) | Register (4 XP).
 Zeitbox: 2-Minuten-Countdown fuer Zweck-Plan (cure Z. 2, price Z. 8, three percent Z. 10), dann schreiben. 中文：先用2分钟定目的与风险再写。
 
+Die RUBRIC steuert das Schreiben (30 XP); der ERWARTUNGSHORIZONT steuert die Klausur-Bewertung (15 NP).
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Einordnung und These (Werkzeug vs. Zweck plus Zustimmung) | 5 NP | Enger Beleg mit Zeile als Alternativweg
+Zwei Anker-Belege mit Zeile (cure Z. 1-2; eye colour Z. 3-4, three percent Z. 10) | 5 NP | Strukturierte Kette mit Zeile als Alternativweg
+Gewichtetes Urteil mit Ausblick | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
+
+
 Klausur-Satz: `CN: 满分句须含治疗引文、风险数字与界限句。EN: AFB-III sentence needs cure quotation, risk figure and line sentence.`
+
+KERNSATZ (auswendig):
+- Kernsatz: `Same tool, different aims: therapy heals, design selects; consent and generations decide.`
+- Zerlegung: Beleg | Mittel | Funktion
+- Aufschluesselung: Beleg = tool promise (Z. 1-2) | Mittel = aim split therapy versus design (Z. 3-13) | Funktion = verdict on consent and generations
+- Selbsttest: Same tool, different aims: therapy heals, design selects; ___ and generations decide.
 
 ## Schritt 8 — reflexion: Takeaway und Rueckblick aus Fall 42
 

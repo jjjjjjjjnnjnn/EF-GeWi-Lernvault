@@ -8,7 +8,7 @@ operatoren: [describe, analyse, evaluate]
 klausurrelevant: true
 datum: 2026-09-26
 tags: [EF, Englisch, AmericanDream]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 # Lernreise: American Dream Myth and Reality (L1, Ziel Klausur)
 
@@ -66,6 +66,9 @@ Bezug zum Konzept: `CN: 意象加账单等于修正判断。EN: Image plus bill 
 
 [Werkzeug: highlighter]
 
+AUFGABE (analyse, [AFB II]):
+Analyze the PRIMAERTEXT below (details in Zhongwen task / English TASK): secure two quotations with line numbers (Z.), explain each effect, and weigh a judgement.
+
 PRIMAERTEXT（Study text: Route 66 Postcard, second version (15 lines)，study version，100-200词）：
 
 > Route 66 shines on the postcard I kept. (Z. 1)
@@ -88,12 +91,24 @@ PRIMAERTEXT（Study text: Route 66 Postcard, second version (15 lines)，study v
 English TASK: Examine the primary text line by line with quotation and line number.
 TARGET: Three quotations, each with effect and judgement in four sentences.
 
-HILFE（中文在前）：
-1. 中文：两句交代背景。English: Place the case in two sentences.
-2. 中文：锁两个证据。English: Secure two quotations.
-3. 中文：效果加判断。English: Add effect and judgement.
+HILFE (direction only, no verdict yet - Zhongwen first):
+- Context dimension: Check speaker, addressee and occasion with context mapping; name them, judge nothing yet.
+- Text dimension: Secure two quotations on neon versus bill diction with line numbers (Z.); collect evidence, do not fix the effect yet.
+- Judgement dimension: List weighing criteria for neon promise against bills; collect measures, do not close the verdict yet.
 
 MARKIERAUFTRAG（双色标注）：CN: 黄色[GELB]标公路承诺（shine, fresh start, widen），蓝色[BLAU]标费用现实（cost, tolls, tips, bill）。EN: GELB for highway promise, BLAU for cost reality.
+
+COMPLETION (Lueckentext):
+- Read the PRIMAERTEXT once without notes, then fill from memory:
+- The neon promise shines in ___ (Z. 1-2).
+- The bill diction answers in ___ (Z. 5/15).
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Kontext und These (Neon-Versprechen gegen Rechnung) | 5 NP | Enger Beleg mit Zeile als Alternativweg
+Zwei Belege mit Zeile (postcard Z. 1-2; motel register Z. 4-5, fuel bill Z. 15) | 5 NP | Strukturierte Kette mit Zeile als Alternativweg
+Wirkung und Urteil (Neon-Versprechen gegen Rechnung) | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
 
 MUSTERLOESUNG: 中文示范：背景一句，证据加效果两句，判断一句。
 English MODEL: Case 49 shows the method in three moves with quotation, effect and judgement; the cover is blown.
@@ -102,17 +117,24 @@ Klausur-Satz: `CN: 规律是霓虹越亮，越要看工资。EN: The brighter th
 
 ## Schritt 5 — ausprobieren: Das doppelte Spiel Weg A gegen Weg B
 
-VERGLEICH（中文先行）：Weg A 微观细读（文本风格细节），Weg B 宏观语境（历史秩序背景）。
+VERGLEICH（中文先行）：Weg A 微观细读（文本风格细节），Weg B 宏观语境（历史秩序背景）。 (选概念: waehle zuerst Nahlektuere oder Kontextrahmen)
 English: Choose the path first (close Way A or distant Way B), then write.
 
-TASK A（中文：哪条线索走近路？）: Which trace needs Way A?
-TASK B（中文：哪个整体问题走远路？）: Which whole-case question needs Way B?
+AUFGABE A (analyse, [AFB II])（中文：哪条线索走近路？）: Which trace needs Way A?
+AUFGABE B (evaluate, [AFB III])（中文：哪个整体问题走远路？）: Which whole-case question needs Way B?
 
-HILFE：细节问选近路Way A，整体问选远路Way B。
+- [Wahl A] Wenn du Weg A waehlst, sammelst du in Schritt 7 Belege der Textnaehe.
+- [Wahl B] Wenn du Weg B waehlst, sammelst du in Schritt 7 Belege der Kontexteinordnung.
 
-中文答案：A近路靠引文，B远路靠背景。
-English ANSWER A: CN: 微观读霓虹与账单的对照。EN: Way A contrasts neon diction against bill diction.
-English ANSWER B: CN: 宏观读公路史与汽车社会分层。EN: Way B frames highway history and car-class divides.
+Entscheidungsregel fuer die Klausur:
+Lesehinweis: Die ausformulierte Regel steht in der AUFLOESUNG weiter unten; waehle zuerst intuitiv A oder B.
+
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg A oder Weg B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Ueberfuehrt aus Entscheidungsregel: Sichere zuerst das Neon-Zitat, lege dann die Rechnung daneben, und waege erst danach. (Quelle: Studienparaphrase (study version, 15 lines; Route 66); Originale: American-Dream-Debatte (KLP NRW Englisch))
+- Mechanismus A: Way A contrasts neon diction against bill diction line by line (Z. 1-15). (Quelle: wie oben). Dreischritt: Beleg = postcard Z. 1-2 | Mittel = Nahlektuere mit Zitatkette | Funktion = sichert das Wie am Text
+- Mechanismus B: Way B frames highway history and car-class divides as context (Z. 8/12-14). (Quelle: wie oben). Dreischritt: Beleg = motel register Z. 4-5, fuel bill Z. 15 | Mittel = Kontextrahmen mit Hintergrund | Funktion = erklaert das Warum aus dem Kontext
+- Ein-Satz-Kern: Bright stories need harder checks for the missing.
 
 Klausur-Satz: `CN: 细节管对照，历史管分层。EN: Detail contrasts, history stratifies.`
 
@@ -139,11 +161,28 @@ Klausur-Satz: `CN: 易错是把旅途浪漫化。EN: Romance of the road is no e
 ROLLE（中文）：你是Opinion page editor，负责审稿。
 English ROLE: You are Opinion page editor.
 SITUATION: Case 49 waits on your desk.
+AUFGABE (evaluate, [AFB III]):
+Evaluate Fall 49 in about 150 words: place the context, secure two anchors with line numbers (Z.), explain effects, and weigh a judgement with outlook.
 TASK（中文）：150词左右，含背景、证据、权衡判断。
 RUBRIC (30 XP): Context (6 XP) | Quotations (10 XP) | Effect plus judgement (10 XP) | Register (4 XP).
 Zeitbox: 2-Minuten-Countdown fuer Maut-Plan (shine Z. 1, toll Z. 12-13, bill Z. 15), dann schreiben. 中文：先用2分钟定承诺与账单再写。
 
+Die RUBRIC steuert das Schreiben (30 XP); der ERWARTUNGSHORIZONT steuert die Klausur-Bewertung (15 NP).
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Einordnung und These (Neon-Versprechen gegen Rechnung) | 5 NP | Enger Beleg mit Zeile als Alternativweg
+Zwei Anker-Belege mit Zeile (postcard Z. 1-2; motel register Z. 4-5, fuel bill Z. 15) | 5 NP | Strukturierte Kette mit Zeile als Alternativweg
+Gewichtetes Urteil mit Ausblick | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
+
+
 Klausur-Satz: `CN: 满分句须含公路引文、费用数字与尊严收束。EN: AFB-III sentence needs highway quotation, cost figure and dignity close.`
+
+KERNSATZ (auswendig):
+- Kernsatz: `Neon promise diction measured against bill diction proves cost; the revised dream closes with dignity.`
+- Zerlegung: Beleg | Mittel | Funktion
+- Aufschluesselung: Beleg = neon promise (Z. 1-3) | Mittel = cost proof from bills (Z. 4-7) | Funktion = revised dream: dignity and access
+- Selbsttest: Neon promise diction measured against bill diction proves cost; the revised dream closes with ___.
 
 ## Schritt 8 — reflexion: Takeaway und Rueckblick aus Fall 49
 

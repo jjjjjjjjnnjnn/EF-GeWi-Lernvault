@@ -8,7 +8,7 @@ operatoren: [analyse, discuss, evaluate]
 klausurrelevant: true
 datum: 2026-09-26
 tags: [EF, Englisch, Science]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 # Lernreise: Genetic Engineering and Bioethics (L1, Ziel Klausur)
 
@@ -66,6 +66,9 @@ Bezug zum Konzept: `CN: 试验加开放等于不确定。EN: Trial plus open fie
 
 [Werkzeug: highlighter]
 
+AUFGABE (analyse, [AFB II]):
+Analyze the PRIMAERTEXT below (details in Zhongwen task / English TASK): secure two quotations with line numbers (Z.), explain each effect, and weigh a judgement.
+
 PRIMAERTEXT（Study text: Wheat Lab Notes (15 lines)，study version，100-200词）：
 
 > The lab edited wheat against the dry summer. (Z. 1)
@@ -88,12 +91,24 @@ PRIMAERTEXT（Study text: Wheat Lab Notes (15 lines)，study version，100-200�
 English TASK: Examine the primary text line by line with quotation and line number.
 TARGET: Three quotations, each with effect and judgement in four sentences.
 
-HILFE（中文在前）：
-1. 中文：两句交代背景。English: Place the case in two sentences.
-2. 中文：锁两个证据。English: Secure two quotations.
-3. 中文：效果加判断。English: Add effect and judgement.
+HILFE (direction only, no verdict yet - Zhongwen first):
+- Context dimension: Check speaker, addressee and occasion with context mapping; name them, judge nothing yet.
+- Text dimension: Secure two quotations on trial-versus-release wordplay with line numbers (Z.); collect evidence, do not fix the effect yet.
+- Judgement dimension: List weighing criteria for trial versus release plus seed sovereignty; collect measures, do not close the verdict yet.
 
 MARKIERAUFTRAG（双色标注）：CN: 黄色[GELB]标产量承诺（yield, bread, trials），蓝色[BLAU]标开放风险（pollen, fence, licensed, release）。EN: GELB for yield promise, BLAU for open-field risk.
+
+COMPLETION (Lueckentext):
+- Read the PRIMAERTEXT once without notes, then fill from memory:
+- The trial promises ___ (Z. 1-2: yield).
+- The release relabels it as ___ (Z. 13).
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Kontext und These (trial versus release plus seed sovereignty) | 5 NP | Enger Beleg mit Zeile als Alternativweg
+Zwei Belege mit Zeile (yield Z. 2; pollen Z. 5-6, release Z. 13) | 5 NP | Strukturierte Kette mit Zeile als Alternativweg
+Wirkung und Urteil (trial versus release plus seed sovereignty) | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
 
 MUSTERLOESUNG: 中文示范：背景一句，证据加效果两句，判断一句。
 English MODEL: Case 41 shows the method in three moves with quotation, effect and judgement; the cover is blown.
@@ -102,17 +117,24 @@ Klausur-Satz: `CN: 规律是花粉不认篱笆。EN: Pollen ignores fences; line
 
 ## Schritt 5 — ausprobieren: Das doppelte Spiel Weg A gegen Weg B
 
-VERGLEICH（中文先行）：Weg A 微观细读（文本风格细节），Weg B 宏观语境（历史秩序背景）。
+VERGLEICH（中文先行）：Weg A 微观细读（文本风格细节），Weg B 宏观语境（历史秩序背景）。 (选概念: waehle zuerst Nahlektuere oder Kontextrahmen)
 English: Choose the path first (close Way A or distant Way B), then write.
 
-TASK A（中文：哪条线索走近路？）: Which trace needs Way A?
-TASK B（中文：哪个整体问题走远路？）: Which whole-case question needs Way B?
+AUFGABE A (analyse, [AFB II])（中文：哪条线索走近路？）: Which trace needs Way A?
+AUFGABE B (evaluate, [AFB III])（中文：哪个整体问题走远路？）: Which whole-case question needs Way B?
 
-HILFE：细节问选近路Way A，整体问选远路Way B。
+- [Wahl A] Wenn du Weg A waehlst, sammelst du in Schritt 7 Belege der Textnaehe.
+- [Wahl B] Wenn du Weg B waehlst, sammelst du in Schritt 7 Belege der Kontexteinordnung.
 
-中文答案：A近路靠引文，B远路靠背景。
-English ANSWER A: CN: 微观读 trial 与 release 的偷换。EN: Way A exposes trial-versus-release wordplay.
-English ANSWER B: CN: 宏观读种子主权与生态时间。EN: Way B frames seed sovereignty and ecological time.
+Entscheidungsregel fuer die Klausur:
+Lesehinweis: Die ausformulierte Regel steht in der AUFLOESUNG weiter unten; waehle zuerst intuitiv A oder B.
+
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg A oder Weg B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Ueberfuehrt aus Entscheidungsregel: Entlarve zuerst das Wortspiel, folge dann der Spur ohne Unterschrift, urteile erst danach. (Quelle: Studienparaphrase (study version, 15 lines; Weizenfeld); Originale: Bioethik-Debatte (KLP NRW Englisch))
+- Mechanismus A: Way A exposes trial-versus-release wordplay line by line (Z. 1/12-13). (Quelle: wie oben). Dreischritt: Beleg = yield Z. 2 | Mittel = Nahlektuere mit Zitatkette | Funktion = sichert das Wie am Text
+- Mechanismus B: Way B frames seed sovereignty and ecological time as context (Z. 5-11). (Quelle: wie oben). Dreischritt: Beleg = pollen Z. 5-6, release Z. 13 | Mittel = Kontextrahmen mit Hintergrund | Funktion = erklaert das Warum aus dem Kontext
+- Ein-Satz-Kern: Bread yes, but with inspected conditions.
 
 Klausur-Satz: `CN: 微观抓偷换，宏观看主权。EN: Wordplay shows how, sovereignty shows why.`
 
@@ -139,11 +161,28 @@ Klausur-Satz: `CN: 易错是把大试验当释放。EN: Large trial is not relea
 ROLLE（中文）：你是Debate coach for the ethics panel，负责审稿。
 English ROLE: You are Debate coach for the ethics panel.
 SITUATION: Case 41 waits on your desk.
+AUFGABE (evaluate, [AFB III]):
+Evaluate Fall 41 in about 150 words: place the context, secure two anchors with line numbers (Z.), explain effects, and weigh a judgement with outlook.
 TASK（中文）：150词左右，含背景、证据、权衡判断。
 RUBRIC (30 XP): Context (6 XP) | Quotations (10 XP) | Effect plus judgement (10 XP) | Register (4 XP).
 Zeitbox: 2-Minuten-Countdown fuer Linien-Plan (yield Z. 2, pollen Z. 5, release Z. 12-13), dann schreiben. 中文：先用2分钟定产量与漂流再写。
 
+Die RUBRIC steuert das Schreiben (30 XP); der ERWARTUNGSHORIZONT steuert die Klausur-Bewertung (15 NP).
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Einordnung und These (trial versus release plus seed sovereignty) | 5 NP | Enger Beleg mit Zeile als Alternativweg
+Zwei Anker-Belege mit Zeile (yield Z. 2; pollen Z. 5-6, release Z. 13) | 5 NP | Strukturierte Kette mit Zeile als Alternativweg
+Gewichtetes Urteil mit Ausblick | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
+
+
 Klausur-Satz: `CN: 满分句须含产量数字、漂流证据与条件句。EN: AFB-III sentence needs yield figure, flow proof and condition.`
+
+KERNSATZ (auswendig):
+- Kernsatz: `Trial relabelled as release deceives; unsigned harvests prove drift; conditions need inspectors.`
+- Zerlegung: Beleg | Mittel | Funktion
+- Aufschluesselung: Beleg = trial promise (Z. 1-2) | Mittel = release relabelling exposed (Z. 12-13) | Funktion = verdict: bread yes, with inspected conditions
+- Selbsttest: Trial relabelled as release deceives; unsigned harvests prove drift; ___ need inspectors.
 
 ## Schritt 8 — reflexion: Takeaway und Rueckblick aus Fall 41
 

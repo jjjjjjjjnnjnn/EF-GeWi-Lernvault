@@ -8,7 +8,7 @@ operatoren: [analyse, discuss, evaluate]
 klausurrelevant: true
 datum: 2026-09-26
 tags: [EF, Englisch, CN]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 # Lernreise: Nigeria and Adichie postcolonial voices (L1, Ziel Klausur)
 
@@ -66,6 +66,9 @@ Bezug zum Konzept: `CN: 口音加场合等于准入。EN: Accent plus occasion e
 
 [Werkzeug: highlighter]
 
+AUFGABE (analyse, [AFB II]):
+Analyze the PRIMAERTEXT below (details in Zhongwen task / English TASK): secure two quotations with line numbers (Z.), explain each effect, and weigh a judgement.
+
 PRIMAERTEXT（Study text: Market Bargain in Three Englishes (15 lines)，study version，100-200词）：
 
 > Mama Nkechi greeted the officer in polished Queen's English. (Z. 1)
@@ -88,12 +91,24 @@ PRIMAERTEXT（Study text: Market Bargain in Three Englishes (15 lines)，study v
 English TASK: Examine the primary text line by line with quotation and line number.
 TARGET: Three quotations, each with effect and judgement in four sentences.
 
-HILFE（中文在前）：
-1. 中文：两句交代背景。English: Place the case in two sentences.
-2. 中文：锁两个证据。English: Secure two quotations.
-3. 中文：效果加判断。English: Add effect and judgement.
+HILFE (direction only, no verdict yet - Zhongwen first):
+- Context dimension: Check speaker, addressee and occasion with context mapping; name them, judge nothing yet.
+- Text dimension: Secure two quotations on code-switches with situations with line numbers (Z.); collect evidence, do not fix the effect yet.
+- Judgement dimension: List weighing criteria for code-switch plus situation; collect measures, do not close the verdict yet.
 
 MARKIERAUFTRAG（双色标注）：CN: 黄色[GELB]标切换点（polished, slang, Igbo, TV），蓝色[BLAU]标准入结果（stamped, dropped, muted, counted）。EN: GELB for switches, BLAU for access outcomes.
+
+COMPLETION (Lueckentext):
+- Read the PRIMAERTEXT once without notes, then fill from memory:
+- The stamp switch speaks ___ (Z. 1-2).
+- The bargain switch winks in ___ (Z. 4-5).
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Kontext und These (Kodewechsel plus Lage) | 5 NP | Enger Beleg mit Zeile als Alternativweg
+Zwei Belege mit Zeile (Queen's English Z. 1-2; street slang Z. 4-5, proverb Z. 10-11) | 5 NP | Strukturierte Kette mit Zeile als Alternativweg
+Wirkung und Urteil (Kodewechsel plus Lage) | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
 
 MUSTERLOESUNG: 中文示范：背景一句，证据加效果两句，判断一句。
 English MODEL: Case 32 shows the method in three moves with quotation, effect and judgement; the cover is blown.
@@ -102,17 +117,24 @@ Klausur-Satz: `CN: 规律是越正式越盖章，越俚越砍价。EN: Formal st
 
 ## Schritt 5 — ausprobieren: Das doppelte Spiel Weg A gegen Weg B
 
-VERGLEICH（中文先行）：Weg A 微观细读（文本风格细节），Weg B 宏观语境（历史秩序背景）。
+VERGLEICH（中文先行）：Weg A 微观细读（文本风格细节），Weg B 宏观语境（历史秩序背景）。 (选概念: waehle zuerst Nahlektuere oder Kontextrahmen)
 English: Choose the path first (close Way A or distant Way B), then write.
 
-TASK A（中文：哪条线索走近路？）: Which trace needs Way A?
-TASK B（中文：哪个整体问题走远路？）: Which whole-case question needs Way B?
+AUFGABE A (analyse, [AFB II])（中文：哪条线索走近路？）: Which trace needs Way A?
+AUFGABE B (evaluate, [AFB III])（中文：哪个整体问题走远路？）: Which whole-case question needs Way B?
 
-HILFE：细节问选近路Way A，整体问选远路Way B。
+- [Wahl A] Wenn du Weg A waehlst, sammelst du in Schritt 7 Belege der Textnaehe.
+- [Wahl B] Wenn du Weg B waehlst, sammelst du in Schritt 7 Belege der Kontexteinordnung.
 
-中文答案：A近路靠引文，B远路靠背景。
-English ANSWER A: CN: 微观跟切换：女王腔盖章，街头腔砍价，Igbo 祈祷。EN: Way A tracks each switch with situation.
-English ANSWER B: CN: 宏观读殖民语言等级与性别空间。EN: Way B frames colonial language hierarchy and gendered space.
+Entscheidungsregel fuer die Klausur:
+Lesehinweis: Die ausformulierte Regel steht in der AUFLOESUNG weiter unten; waehle zuerst intuitiv A oder B.
+
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg A oder Weg B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Ueberfuehrt aus Entscheidungsregel: Folge zuerst jedem Wechsel mit Lage, ordne dann die Hierarchie, wuerdige erst danach. (Quelle: Studienparaphrase (study version, 15 lines; Mama Nkechi); Original: C. Adichie, The Danger of a Single Story (Rede/Essay))
+- Mechanismus A: Way A tracks each switch with its situation line by line (Z. 1-11). (Quelle: wie oben). Dreischritt: Beleg = Queen's English Z. 1-2 | Mittel = Nahlektuere mit Zitatkette | Funktion = sichert das Wie am Text
+- Mechanismus B: Way B frames colonial language hierarchy and gendered space as context (Z. 12-14). (Quelle: wie oben). Dreischritt: Beleg = street slang Z. 4-5, proverb Z. 10-11 | Mittel = Kontextrahmen mit Hintergrund | Funktion = erklaert das Warum aus dem Kontext
+- Ein-Satz-Kern: Many tongues, one table.
 
 Klausur-Satz: `CN: 微观听切换，宏观看等级。EN: Switches show how, hierarchies show why.`
 
@@ -139,11 +161,28 @@ Klausur-Satz: `CN: 易错是把女王腔当唯一正确。EN: Queen's is one too
 ROLLE（中文）：你是Culture columnist of the school paper，负责审稿。
 English ROLE: You are Culture columnist of the school paper.
 SITUATION: Case 32 waits on your desk.
+AUFGABE (evaluate, [AFB III]):
+Evaluate Fall 32 in about 150 words: place the context, secure two anchors with line numbers (Z.), explain effects, and weigh a judgement with outlook.
 TASK（中文）：150词左右，含背景、证据、权衡判断。
 RUBRIC (30 XP): Context (6 XP) | Quotations (10 XP) | Effect plus judgement (10 XP) | Register (4 XP).
 Zeitbox: 2-Minuten-Countdown fuer Switch-Plan (Queen Z. 1, street Z. 4, Igbo Z. 7), dann schreiben. 中文：先用2分钟定三切换场合再写。
 
+Die RUBRIC steuert das Schreiben (30 XP); der ERWARTUNGSHORIZONT steuert die Klausur-Bewertung (15 NP).
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Einordnung und These (Kodewechsel plus Lage) | 5 NP | Enger Beleg mit Zeile als Alternativweg
+Zwei Anker-Belege mit Zeile (Queen's English Z. 1-2; street slang Z. 4-5, proverb Z. 10-11) | 5 NP | Strukturierte Kette mit Zeile als Alternativweg
+Gewichtetes Urteil mit Ausblick | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
+
+
 Klausur-Satz: `CN: 满分句须含三切换引文、场合与准入结果。EN: AFB-III sentence needs three switches with situations and outcomes.`
+
+KERNSATZ (auswendig):
+- Kernsatz: `Each code-switch serves its situation; proverbs passport roots against the single story.`
+- Zerlegung: Beleg | Mittel | Funktion
+- Aufschluesselung: Beleg = switch quotation with situation (Z.) | Mittel = hierarchy reading: stamp, bargain, prayer | Funktion = agency verdict against the single story
+- Selbsttest: Each code-switch serves its situation; proverbs passport roots against the single ___.
 
 ## Schritt 8 — reflexion: Takeaway und Rueckblick aus Fall 32
 

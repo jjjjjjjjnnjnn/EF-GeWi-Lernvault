@@ -8,7 +8,7 @@ operatoren: [explain, compare, write]
 klausurrelevant: true
 datum: 2026-09-25
 tags: [EF, Englisch, Sprachmittlung]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 # Lernreise: Mediation-Strategien: Register und Kulturtransfer (L1, Ziel Klausur)
 
@@ -65,7 +65,7 @@ Bezug zum Konzept: `Plain plus system plus check equals usable contract.`
 
 [Werkzeug: lego]
 
-AUFGABE: Baue zu drei Klauseln Plain-Twins, Systemnotiz und Ueberschrift mit Toncheck.
+AUFGABE (analysieren, [AFB II]): Baue zu drei Klauseln Plain-Twins, Systemnotiz und Ueberschrift mit Toncheck.
 TARGET: Drei Bausteine mit Beleg, je mit Funktion und einer Deutung in vier Saetzen.
 
 PRIMAERTEXT (Study text: Harbour View Tenancy, study version, Mietvertrag ca. 130 Woerter, 12 lines):
@@ -83,10 +83,22 @@ PRIMAERTEXT (Study text: Harbour View Tenancy, study version, Mietvertrag ca. 13
 > Fee totals twenty pounds plus bank charges. (Z. 11)
 > We value quiet nights and quick replies. (Z. 12)
 
-HILFE:
-1. Schritt 1: Ordne den Fall in zwei Saetzen ein.
-2. Schritt 2: Sichere zwei Bausteine mit Beleg.
-3. Schritt 3: Deute Baustein und Funktion im Fallganzen.
+HILFE (nur Richtung, keine Deutung vorweg):
+- Kontextdimension: Pruefe Anlass und Adressat mit Kontextanalyse; benenne nur Situation und Empfaenger, deute die Funktion noch nicht.
+- Textdimension: Pruefe Fachwoerter, Modals und Zahlen mit Beleganalyse; sichere zwei Zitate mit Zeile (Z.), ohne die Wirkung festzulegen.
+- Urteilsdimension: Pruefe den Massstab (Zwillingswort plus Systemnotiz) mit Kriterienanalyse; sammle Kriterien, ohne das Urteil vorwegzunehmen.
+
+COMPLETION (Lueckentext):
+- Lies den PRIMAERTEXT einmal ohne Notizen, dann ergaenze aus dem Gedaechtnis:
+- Der Zwilling erklaert ___ bei Erstgebrauch (Z. 2-3).
+- Die Systemnotiz klaert ___ (Z. 4/6).
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Kontext und These (Zwillingswort plus Systemnotiz) | 5 NP | Enger Beleg mit Zeile als Alternativweg
+Zwei Belege mit Zeile (six hundred pounds Z. 2; two months notice Z. 4, fee Z. 10-11) | 5 NP | Strukturierte Kette mit Zeile als Alternativweg
+Wirkung und Urteil (Zwillingswort plus Systemnotiz) | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
 
 MUSTERLOESUNG: Der Fall 34 zeigt das Verfahren in drei Schritten. Erstens sichert ein Beleg den Kern. Zweitens traegt die Funktion die Wirkung. Drittens schliesst die Deutung das Urteil.
 
@@ -96,15 +108,23 @@ Klausur-Satz: `The strategy rule: the harder the clause, the plainer the twin.`
 
 ## Schritt 5 — ausprobieren: Das doppelte Spiel Weg A gegen Weg B
 
-VERGLEICH: Weg A arbeitet mikroskopisch (Detail, Beleg, Form), Weg B plant makroskopisch (Strategie, Kontext, Gewicht).
+VERGLEICH: Weg A arbeitet mikroskopisch (Detail, Beleg, Form), Weg B plant makroskopisch (Strategie, Kontext, Gewicht). (选概念: waehle zuerst Nahlektuere oder Kontextrahmen)
 
-AUFGABE A: Welche Spur verlangt Weg A? Begruende mit Beleg.
-AUFGABE B: Welche Frage verlangt Weg B? Begruende mit Kontext.
+AUFGABE A (analysieren, [AFB II]): Welche Spur verlangt Weg A? Begruende mit Beleg.
+AUFGABE B (beurteilen, [AFB III]): Welche Frage verlangt Weg B? Begruende mit Kontext.
 
-HILFE: A fragt nach Form und Naehe, also Weg A. B fragt nach Rolle und Ganzem, also Weg B.
+- [Wahl A] Wenn du Weg A waehlst, sammelst du in Schritt 7 Belege der Textnaehe.
+- [Wahl B] Wenn du Weg B waehlst, sammelst du in Schritt 7 Belege der Kontexteinordnung.
 
-ANTWORT A: Way A twins closely: terms, modals and numbers clause by clause.
-ANTWORT B: Way B transfers widely: systems, readers and risks decide notes and structure.
+Entscheidungsregel fuer die Klausur:
+Lesehinweis: Die ausformulierte Regel steht in der AUFLOESUNG weiter unten; waehle zuerst intuitiv A oder B.
+
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg A oder Weg B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Ueberfuehrt aus Entscheidungsregel: Verzwillinge zuerst jedes Fachwort, notiere dann Systemdifferenz, checke Zahlen rueckwaerts. (Quelle: Studienparaphrase (study version, 12 lines; Harbour View Studio); Textsorte: Mietklauseln (Mediation DE-EN))
+- Mechanismus A: Way A twins closely: terms, modals and numbers clause by clause. (Quelle: wie oben). Dreischritt: Beleg = six hundred pounds Z. 2 | Mittel = Nahlektuere mit Zitatkette | Funktion = sichert das Wie am Text
+- Mechanismus B: Way B transfers widely: systems, readers and risks decide notes and structure. (Quelle: wie oben). Dreischritt: Beleg = two months notice Z. 4, fee Z. 10-11 | Mittel = Kontextrahmen mit Hintergrund | Funktion = erklaert das Warum aus dem Kontext
+- Ein-Satz-Kern: Zwillingswort traegt Sinn.
 
 Klausur-Satz: `Close twinning secures how, wide transfer why; both help.`
 
@@ -129,11 +149,26 @@ Klausur-Satz: `Often confused: friendly is not vague; must stays must.`
 
 ROLLE: Du bist Relocation guide editor in der Pruefung.
 SITUATION: Ein Fall liegt unbearbeitet auf dem Tisch und verlangt Einordnung, Belege und Urteil.
-AUFGABE: Verfasse circa 150 Woerter mit Einordnung, zwei Belegen, Funktion, Deutung und Schlussurteil.
+AUFGABE (beurteilen, [AFB III]): Verfasse circa 150 Woerter mit Einordnung, zwei Belegen, Funktion, Deutung und Schlussurteil.
 RUBRIC (30 XP): Einordnung korrekt (6 XP) | Zwei Belege (10 XP) | Funktion plus Deutung (10 XP) | Fachsprache und Schluss (4 XP).
 Zeitbox: 2-Minuten-Countdown fuer Klausel-Twins plus Systemnotiz (Rent, Termination, Pets), dann schreiben.
 
+Die RUBRIC steuert das Schreiben (30 XP); der ERWARTUNGSHORIZONT steuert die Klausur-Bewertung (15 NP).
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Einordnung und These (Zwillingswort plus Systemnotiz) | 5 NP | Enger Beleg mit Zeile als Alternativweg
+Zwei Anker-Belege mit Zeile (six hundred pounds Z. 2; two months notice Z. 4, fee Z. 10-11) | 5 NP | Strukturierte Kette mit Zeile als Alternativweg
+Gewichtetes Urteil mit Ausblick | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
+
+
 Klausur-Satz: `AFB-III model: Clauses C1-C3 twinned plainly with system notes S and verified figures yield newcomer-ready text.`
+
+KERNSATZ (auswendig):
+- Kernsatz: `Fachwort plus Zwilling, Systemnotiz bei Differenz, Rueckcheck der Zahlen: so traegt Mittlung.`
+- Zerlegung: Beleg | Mittel | Funktion
+- Aufschluesselung: Beleg = Klausel mit Zahl (Z.) | Mittel = Plain-Twin plus Systemnotiz | Funktion = gepruefter Zieltext mit Ton
+- Selbsttest: Fachwort plus Zwilling, Systemnotiz bei Differenz, Rueckcheck der Zahlen: so traegt ___.
 
 ## Schritt 8 — reflexion: Takeaway und Rueckblick aus Fall 34
 

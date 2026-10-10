@@ -8,7 +8,7 @@ operatoren: [describe, analyse, evaluate]
 klausurrelevant: true
 datum: 2026-09-26
 tags: [EF, Englisch, Media]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 # Lernreise: Media Manipulation and Fake News (L1, Ziel Klausur)
 
@@ -66,6 +66,9 @@ Bezug zum Konzept: `CN: 框架加时间等于可疑度。EN: Framing plus timing
 
 [Werkzeug: highlighter]
 
+AUFGABE (analyse, [AFB II]):
+Analyze the PRIMAERTEXT below (details in Zhongwen task / English TASK): secure two quotations with line numbers (Z.), explain each effect, and weigh a judgement.
+
 PRIMAERTEXT（Study text: Midnight Confession Audio (15 lines)，study version，100-200词）：
 
 > The audio confessed ballot deals at midnight. (Z. 1)
@@ -88,12 +91,24 @@ PRIMAERTEXT（Study text: Midnight Confession Audio (15 lines)，study version�
 English TASK: Examine the primary text line by line with quotation and line number.
 TARGET: Three quotations, each with effect and judgement in four sentences.
 
-HILFE（中文在前）：
-1. 中文：两句交代背景。English: Place the case in two sentences.
-2. 中文：锁两个证据。English: Secure two quotations.
-3. 中文：效果加判断。English: Add effect and judgement.
+HILFE (direction only, no verdict yet - Zhongwen first):
+- Context dimension: Check speaker, addressee and occasion with context mapping; name them, judge nothing yet.
+- Text dimension: Secure two quotations on cut and room-tone signals with line numbers (Z.); collect evidence, do not fix the effect yet.
+- Judgement dimension: List weighing criteria for forensic signal plus gatekeeping; collect measures, do not close the verdict yet.
 
 MARKIERAUFTRAG（双色标注）：CN: 黄色[GELB]标泄密框架（LEAKED, midnight, trembled），蓝色[BLAU]标取证点（cuts, tone, timetable, report）。EN: GELB for leak framing, BLAU for forensic points.
+
+COMPLETION (Lueckentext):
+- Read the PRIMAERTEXT once without notes, then fill from memory:
+- The fake signal hides in ___ (Z. 4-5: cuts).
+- The alibi stands on ___ (Z. 6-7: timetable).
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Kontext und These (forensic signal plus gatekeeping) | 5 NP | Enger Beleg mit Zeile als Alternativweg
+Zwei Belege mit Zeile (headline Z. 2, cuts Z. 4; room tone Z. 5, timetable Z. 6-7) | 5 NP | Strukturierte Kette mit Zeile als Alternativweg
+Wirkung und Urteil (forensic signal plus gatekeeping) | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
 
 MUSTERLOESUNG: 中文示范：背景一句，证据加效果两句，判断一句。
 English MODEL: Case 37 shows the method in three moves with quotation, effect and judgement; the cover is blown.
@@ -102,17 +117,24 @@ Klausur-Satz: `CN: 规律是越红越要等报告。EN: The redder the headline,
 
 ## Schritt 5 — ausprobieren: Das doppelte Spiel Weg A gegen Weg B
 
-VERGLEICH（中文先行）：Weg A 微观细读（文本风格细节），Weg B 宏观语境（历史秩序背景）。
+VERGLEICH（中文先行）：Weg A 微观细读（文本风格细节），Weg B 宏观语境（历史秩序背景）。 (选概念: waehle zuerst Nahlektuere oder Kontextrahmen)
 English: Choose the path first (close Way A or distant Way B), then write.
 
-TASK A（中文：哪条线索走近路？）: Which trace needs Way A?
-TASK B（中文：哪个整体问题走远路？）: Which whole-case question needs Way B?
+AUFGABE A (analyse, [AFB II])（中文：哪条线索走近路？）: Which trace needs Way A?
+AUFGABE B (evaluate, [AFB III])（中文：哪个整体问题走远路？）: Which whole-case question needs Way B?
 
-HILFE：细节问选近路Way A，整体问选远路Way B。
+- [Wahl A] Wenn du Weg A waehlst, sammelst du in Schritt 7 Belege der Textnaehe.
+- [Wahl B] Wenn du Weg B waehlst, sammelst du in Schritt 7 Belege der Kontexteinordnung.
 
-中文答案：A近路靠引文，B远路靠背景。
-English ANSWER A: CN: 微观听波形与混响断裂。EN: Way A hears cuts and missing room tone.
-English ANSWER B: CN: 宏观看选举时间与 rival 媒体把关。EN: Way B frames election timing and gatekeeping.
+Entscheidungsregel fuer die Klausur:
+Lesehinweis: Die ausformulierte Regel steht in der AUFLOESUNG weiter unten; waehle zuerst intuitiv A oder B.
+
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg A oder Weg B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Ueberfuehrt aus Entscheidungsregel: Hoere zuerst Schnitt und Raumton, pruefe dann Alibi und Zweitmedium, entscheide erst danach. (Quelle: Studienparaphrase (study version, 15 lines; Audio-Leak); Originale: Medienkritik / Fake-News-Analyse (KLP NRW Englisch))
+- Mechanismus A: Way A hears cuts and missing room tone line by line (Z. 1-5). (Quelle: wie oben). Dreischritt: Beleg = headline Z. 2, cuts Z. 4 | Mittel = Nahlektuere mit Zitatkette | Funktion = sichert das Wie am Text
+- Mechanismus B: Way B frames election timing and rival gatekeeping as context (Z. 6-12). (Quelle: wie oben). Dreischritt: Beleg = room tone Z. 5, timetable Z. 6-7 | Mittel = Kontextrahmen mit Hintergrund | Funktion = erklaert das Warum aus dem Kontext
+- Ein-Satz-Kern: Listening beats sharing.
 
 Klausur-Satz: `CN: 微观听接缝，宏观看动机。EN: Seams show how, motives show why.`
 
@@ -139,11 +161,28 @@ Klausur-Satz: `CN: 易错是把颤抖当真诚。EN: Tremble can be edited.`
 ROLLE（中文）：你是Fact-check editor of the school paper，负责审稿。
 English ROLE: You are Fact-check editor of the school paper.
 SITUATION: Case 37 waits on your desk.
+AUFGABE (evaluate, [AFB III]):
+Evaluate Fall 37 in about 150 words: place the context, secure two anchors with line numbers (Z.), explain effects, and weigh a judgement with outlook.
 TASK（中文）：150词左右，含背景、证据、权衡判断。
 RUBRIC (30 XP): Context (6 XP) | Quotations (10 XP) | Effect plus judgement (10 XP) | Register (4 XP).
 Zeitbox: 2-Minuten-Countdown fuer Forensik-Plan (cuts Z. 4, tone Z. 5, timetable Z. 7), dann schreiben. 中文：先用2分钟定剪辑与不在场再写。
 
+Die RUBRIC steuert das Schreiben (30 XP); der ERWARTUNGSHORIZONT steuert die Klausur-Bewertung (15 NP).
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Einordnung und These (forensic signal plus gatekeeping) | 5 NP | Enger Beleg mit Zeile als Alternativweg
+Zwei Anker-Belege mit Zeile (headline Z. 2, cuts Z. 4; room tone Z. 5, timetable Z. 6-7) | 5 NP | Strukturierte Kette mit Zeile als Alternativweg
+Gewichtetes Urteil mit Ausblick | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
+
+
 Klausur-Satz: `CN: 满分句须含三处剪辑、舞台时间表与取证结论。EN: AFB-III sentence needs cuts, alibi timetable and forensic verdict.`
+
+KERNSATZ (auswendig):
+- Kernsatz: `Clean cuts and missing room tone betray assembly; forensic reading beats sharing.`
+- Zerlegung: Beleg | Mittel | Funktion
+- Aufschluesselung: Beleg = leak signal (Z. 1-3) | Mittel = forensic check: cuts and room tone (Z. 4-5) | Funktion = gatekeeping verdict with alibi
+- Selbsttest: Clean cuts and missing room tone betray assembly; forensic reading beats ___.
 
 ## Schritt 8 — reflexion: Takeaway und Rueckblick aus Fall 37
 

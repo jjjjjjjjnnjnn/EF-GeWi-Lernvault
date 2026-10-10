@@ -8,7 +8,7 @@ operatoren: [analyze, interpret, evaluate]
 klausurrelevant: true
 datum: 2026-10-03
 tags: [EF, Englisch, Shakespeare, Hamlet, Tragedy, Soliloquy, Tragic-Flaw, Blank-Verse]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Shakespearean Tragedy: Hamlet's Soliloquy and the Tragic Flaw (L1, Ziel Klausur)
@@ -29,7 +29,7 @@ Midnight on the battlements of Kronborg Castle in Elsinore. A bitter, biting win
 `Klausur-Satz: Hamlet personifies the modern existential anti-hero whose acute self-reflection and philosophical scruples paralyze his capacity for decisive moral action.`
 
 ## Schritt 2 — entdecken: The Shakespearean Dramatic Toolbox
-PRETRAINING术语盒（核心4词，先读三遍中英，合书自测中文→英语）：
+PRETRAINING术语盒（核心4词，先读三遍中英，合书自测中文->英语）：
 
 - 悲剧性缺陷 — Tragic Flaw (Hamartia): 亚里士多德与文艺复兴悲剧理论中导致高尚主角不可避免走向毁灭的核心性格缺陷或判断失误（哈姆雷特的缺陷即为过度思虑而行动瘫痪）。 The fatal character flaw or moral weakness that leads inevitably to the downfall of an otherwise noble tragic protagonist.
 - 独白 — Soliloquy: 剧中角色在舞台上独处时直接向观众大声倾诉内心深层矛盾、真实动机与哲学思考的戏剧表达手法。 A dramatic device whereby a character speaks their innermost thoughts and anxieties aloud while alone on stage, revealing psychological authenticity.
@@ -69,11 +69,28 @@ THE TRAGIC CONCLUSION
 
 [Werkzeug: highlighter]
 
-AUFGABE (analyze & interpret, AFB I/II):
+AUFGABE (analyze and interpret, [AFB I/II]):
 Examine the following lines from Act III, Scene 1:
 "Whether 'tis nobler in the mind to suffer / The slings and arrows of outrageous fortune, / Or to take arms against a sea of troubles, / And by opposing end them."
 1. Identify the central metaphors used to represent human existence and suffering.
 2. Analyze the syntactical paradox in the phrase "to take arms against a sea of troubles".
+
+HILFE (direction only, no verdict yet):
+- Image dimension: Check fortune-as-army and sleep-as-death images with image analysis; secure two quotations, do not fix the effect yet.
+- Syntax dimension: Check the arms-against-sea paradox with paradox analysis; describe the clash, do not resolve it yet.
+- Delay dimension: List criteria for revenge-code versus conscience (foil, faith, fear); collect measures, do not diagnose yet.
+
+COMPLETION (Lueckentext):
+- Read the III.1 lines once without notes, then fill from memory:
+- Fortune rains ___ and ___ on the passive mind.
+- Arms against a ___ cannot win; conscience makes ___.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Two metaphors with quotation (III.1) | 5 NP | Enger Beleg mit Zeile als Alternativweg
+Sea-of-troubles paradox explained | 5 NP | Strukturierte Kette mit Zeile als Alternativweg
+Delay thesis with foil reference | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
 
 MUSTERLOESUNG:
 1. Metaphorical Analysis:
@@ -98,22 +115,46 @@ VERGLEICH: Heroic Action vs. Intellectual Paralysis (选概念)
   - Slogan: "Conscience does make cowards of us all."
   - Tragic fate: Prolonged delay (procrastination) that corrupts the entire Danish court and results in eight deaths instead of one.
 
+- [Wahl A] Wenn du Position A waehlst, sammelst du im Transfer Belege der Naehe zum Text.
+- [Wahl B] Wenn du Position B waehlst, sammelst du im Transfer Belege der Einordnung in den Kontext.
+
 Entscheidungsregel fuer die Klausur:
-When analyzing Hamlet's delay in an exam, do not reduce him to a mere coward; explain how Shakespeare intentionally juxtaposes Hamlet with the foil characters Laertes (rash revenger) and Fortinbras (military conqueror) to highlight Hamlet's intellectual tragedy!
+Lesehinweis: Die ausformulierte Regel steht in der AUFLOESUNG weiter unten; waehle zuerst intuitiv A oder B.
+
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Position A oder B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Ueberfuehrt aus Entscheidungsregel: Never reduce Hamlet to a coward; juxtapose him with the foils Laertes and Fortinbras to highlight the intellectual tragedy (Quelle: Studienparaphrase (Lerneinheit); Original: W. Shakespeare, Hamlet (III.1, V.2))
+- Mechanismus A: Laertes and Fortinbras act on honour codes and perish in swift mutual destruction. Dreischritt: Beleg = foil code: blood vengeance (Laertes) | Mittel = Nahlektuere mit Zitatkette | Funktion = sichert das Wie am Text
+- Mechanismus B: Hamlet interrogates truth and damnation; his delay corrupts the whole court (eight deaths). Dreischritt: Beleg = conscience line: cowards of us all (III.1) | Mittel = Kontextrahmen mit Hintergrund | Funktion = erklaert das Warum aus dem Kontext
+- Ein-Satz-Kern: Foils act, Hamlet thinks; thinking kills eight.
+
 
 ## Schritt 6 — check: Klausur-Transfer Madness and Gender Politics
 
 PRUEFUNGSSZENARIO (KLP NRW Englisch LK Drama):
 
-### AFB I: Dramatic Context
+### [AFB I]: Dramatic Context
 Describe the dramatic situation of Act 3, Scene 1 and explain why King Claudius and Polonius are eavesdropping on Hamlet from behind the tapestry (Arras).
 
-### AFB II: Characterization and Imagery
+### [AFB II]: Characterization and Imagery
 Analyze how Hamlet treats Ophelia immediately following his soliloquy ("Get thee to a nunnery").
 Interpret the ambiguity of the word "nunnery" in Elizabethan slang (convent vs. brothel) and what this reveals about Hamlet's view of female virtue.
 
-### AFB III: Critical Modern Reinterpretation
+### [AFB III]: Critical Modern Reinterpretation
 Evaluate whether Hamlet's tragic hesitation should be diagnosed in modern psychiatric terms (clinical depression / melancholy) or understood as a legitimate philosophical critique of corrupt political power structures.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Arras eavesdropping situation (AFB I) | 5 NP | Enger Beleg mit Zeile als Alternativweg
+Nunnery ambiguity analysis (AFB II) | 5 NP | Strukturierte Kette mit Zeile als Alternativweg
+Depression-versus-critique evaluation (AFB III) | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
+
+KERNSATZ (auswendig):
+- Kernsatz: `Thought sicklies resolution: conscience makes cowards; delay corrupts the whole court.`
+- Zerlegung: Beleg | Mittel | Funktion
+- Aufschluesselung: Beleg = slings-and-arrows metaphor (III.1) | Mittel = sea-of-troubles paradox | Funktion = paralysis verdict
+- Selbsttest: Thought sicklies resolution: conscience makes cowards; delay corrupts the whole ___.
 
 ## Schritt 7 — check: Format-Check & Scoring
 

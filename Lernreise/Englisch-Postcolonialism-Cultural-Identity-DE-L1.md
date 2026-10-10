@@ -8,7 +8,7 @@ operatoren: [examine, discuss]
 klausurrelevant: true
 datum: 2026-09-26
 tags: [EF, Englisch, Postcolonialism]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 # Lernreise: Postcolonialism and Cultural Identity (L1, Ziel Klausur)
 
@@ -83,15 +83,27 @@ PRIMAERTEXT (Study text: Harbour Plaque Dispute (15 lines), study version, 100-2
 > History, said Amara, is a harbour with tides. (Z. 14)
 > We left both plaques facing the water. (Z. 15)
 
-AUFGABE: Untersuche den Primaertext Zeile fuer Zeile und belege jede Aussage mit Zitat und Zeile.
+AUFGABE (analysieren, [AFB II]): Untersuche den Primaertext Zeile fuer Zeile und belege jede Aussage mit Zitat und Zeile.
 TARGET: Three quotations, each with effect and judgement in four sentences.
 
-HILFE:
-1. Schritt 1: Ordne den Fall in zwei Saetzen ein.
-2. Schritt 2: Sichere zwei Befunde mit Zeile.
-3. Schritt 3: Deute Befund und Funktion im Fallganzen.
+HILFE (nur Richtung, keine Deutung vorweg):
+- Kontextdimension: Pruefe Anlass und Adressat mit Kontextanalyse; benenne nur Situation und Empfaenger, deute die Funktion noch nicht.
+- Textdimension: Pruefe Inschriften und Gegentafel mit Beleganalyse; sichere zwei Zitate mit Zeile (Z.), ohne die Wirkung festzulegen.
+- Urteilsdimension: Pruefe den Massstab (Bronze plus Gegentafel) mit Kriterienanalyse; sammle Kriterien, ohne das Urteil vorwegzunehmen.
 
 MARKIERAUFTRAG: Markiere mit GELB alle **Denkmalwoerter** (BENEFACTOR, sugar, charity). Markiere mit BLAU die **Gegenstimmen** (cost, chained, TRADER, tides).
+
+COMPLETION (Lueckentext):
+- Lies den PRIMAERTEXT einmal ohne Notizen, dann ergaenze aus dem Gedaechtnis:
+- Die Bronze lobt ___ (Z. 2: BENEFACTOR).
+- Die Gegentafel antwortet ___ (Z. 8: TRADER).
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Kontext und These (Bronze plus Gegentafel) | 5 NP | Enger Beleg mit Zeile als Alternativweg
+Zwei Belege mit Zeile (BENEFACTOR Z. 2; TRADER Z. 8, Yoruba Z. 11) | 5 NP | Strukturierte Kette mit Zeile als Alternativweg
+Wirkung und Urteil (Bronze plus Gegentafel) | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
 
 MUSTERLOESUNG: Der Fall 30 zeigt das Verfahren in drei Schritten. Erstens sichert ein Zitat mit Zeile den Befund. Zweitens benennt die Funktion die Wirkung. Drittens schliesst die Deutung das Urteil.
 
@@ -99,15 +111,23 @@ Klausur-Satz: `Die Regel der Erinnerung: Je groesser die Buchstaben, desto genau
 
 ## Schritt 5 — ausprobieren: Das doppelte Spiel Weg A gegen Weg B
 
-VERGLEICH: Weg A liest mikroskopisch (Text, Stil, Detail), Weg B deutet makroskopisch (Kontext, Geschichte, Ordnung).
+VERGLEICH: Weg A liest mikroskopisch (Text, Stil, Detail), Weg B deutet makroskopisch (Kontext, Geschichte, Ordnung). (选概念: waehle zuerst Nahlektuere oder Kontextrahmen)
 
-AUFGABE A: Welche Spur verlangt Weg A? Begruende mit Zitat und Zeile.
-AUFGABE B: Welche Frage verlangt Weg B? Begruende mit Kontext.
+AUFGABE A (analysieren, [AFB II]): Welche Spur verlangt Weg A? Begruende mit Zitat und Zeile.
+AUFGABE B (beurteilen, [AFB III]): Welche Frage verlangt Weg B? Begruende mit Kontext.
 
-HILFE: A fragt nach Form und Naehe, also Weg A. B fragt nach Rolle und Ganzem, also Weg B.
+- [Wahl A] Wenn du Weg A waehlst, sammelst du in Schritt 7 Belege der Textnaehe.
+- [Wahl B] Wenn du Weg B waehlst, sammelst du in Schritt 7 Belege der Kontexteinordnung.
 
-ANTWORT A: Weg A vergleicht mikroskopisch Inschriften Wort fuer Wort: BENEFACTOR gegen TRADER, sugar gegen chained.
-ANTWORT B: Weg B deutet makroskopisch: Hafenstadt, Sklavenhandel und Erinnerungspolitik seit 2020 als Rahmen.
+Entscheidungsregel fuer die Klausur:
+Lesehinweis: Die ausformulierte Regel steht in der AUFLOESUNG weiter unten; waehle zuerst intuitiv A oder B.
+
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg A oder Weg B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Ueberfuehrt aus Entscheidungsregel: Vergleiche zuerst Inschrift Wort fuer Wort, ergaenze dann die Passage, urteile erst danach. (Quelle: Studienparaphrase (study version, 15 lines; Hafenstatue); Originale: Postkolonialismus-Debatte / Erinnerungskultur)
+- Mechanismus A: Weg A vergleicht mikroskopisch Inschriften Wort fuer Wort: BENEFACTOR gegen TRADER, sugar gegen chained (Z. 1-9). (Quelle: wie oben). Dreischritt: Beleg = BENEFACTOR Z. 2 | Mittel = Nahlektuere mit Zitatkette | Funktion = sichert das Wie am Text
+- Mechanismus B: Weg B deutet makroskopisch: Hafenstadt, Sklavenhandel und Erinnerungspolitik seit 2020 als Rahmen. (Quelle: wie oben). Dreischritt: Beleg = TRADER Z. 8, Yoruba Z. 11 | Mittel = Kontextrahmen mit Hintergrund | Funktion = erklaert das Warum aus dem Kontext
+- Ein-Satz-Kern: Hafen mit Gezeiten: Geschichte fliesst.
 
 Klausur-Satz: `Feinlese misst das Wie der Inschrift, Stadtwissen das Warum des Hafens; beide urteilen voll.`
 
@@ -132,11 +152,26 @@ Klausur-Satz: `Haeufig verwechselt: Denkmal ist kein Fakt; erst Inschrift plus R
 
 ROLLE: Du bist Culture columnist of the school paper in der Pruefung.
 SITUATION: Ein Fall liegt unbearbeitet auf dem Tisch und verlangt Einordnung, Belege und Urteil.
-AUFGABE: Verfasse circa 150 Woerter mit Einordnung, zwei Belegen mit Z., Funktion, Deutung und Schlussurteil.
+AUFGABE (beurteilen, [AFB III]): Verfasse circa 150 Woerter mit Einordnung, zwei Belegen mit Z., Funktion, Deutung und Schlussurteil.
 RUBRIC (30 XP): Einordnung korrekt (6 XP) | Zwei Belege mit Z. (10 XP) | Funktion plus Deutung (10 XP) | Fachsprache und Schluss (4 XP).
 Zeitbox: 2-Minuten-Countdown fuer Tafel-Plan (BENEFACTOR Z. 2, TRADER Z. 8, Switch Z. 11), dann schreiben.
 
+Die RUBRIC steuert das Schreiben (30 XP); der ERWARTUNGSHORIZONT steuert die Klausur-Bewertung (15 NP).
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Einordnung und These (Bronze plus Gegentafel) | 5 NP | Enger Beleg mit Zeile als Alternativweg
+Zwei Anker-Belege mit Zeile (BENEFACTOR Z. 2; TRADER Z. 8, Yoruba Z. 11) | 5 NP | Strukturierte Kette mit Zeile als Alternativweg
+Gewichtetes Urteil mit Ausblick | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
+
+
 Klausur-Satz: `AFB-III-Mustersatz: BENEFACTOR (Z. 2) gegen TRADER (Z. 8) mit Switch (Z. 11) belegt umkaempfte Erinnerung, weil Gegentafel plus Mehrsprachigkeit Deutungsmonopol bricht.`
+
+KERNSATZ (auswendig):
+- Kernsatz: `Bronze gegen Gegentafel gelesen, Passage ergaenzt, Yoruba gehoert: Erinnerung wird verhandelt.`
+- Zerlegung: Beleg | Mittel | Funktion
+- Aufschluesselung: Beleg = Bronze-Inschrift (Z. 2) | Mittel = Gegentafel plus Passage (Z. 6-8) | Funktion = verhandeltes Erinnerungs-Urteil
+- Selbsttest: Bronze gegen Gegentafel gelesen, Passage ergaenzt, Yoruba gehoert: Erinnerung wird ___.
 
 ## Schritt 8 — reflexion: Takeaway und Rueckblick aus Fall 30
 

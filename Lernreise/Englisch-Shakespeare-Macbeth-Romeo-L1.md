@@ -8,7 +8,7 @@ operatoren: [analyze, interpret]
 klausurrelevant: true
 datum: 2026-09-26
 tags: [EF, Englisch, Shakespeare]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 # Lernreise: Shakespearean Drama Macbeth Romeo (L1, Ziel Klausur)
 
@@ -66,6 +66,9 @@ Bezug zum Konzept: `CN: 世仇加誓言等于悲剧。EN: Feud plus vow equals t
 
 [Werkzeug: highlighter]
 
+AUFGABE (analyse, [AFB II]):
+Analyze the PRIMAERTEXT below (details in Zhongwen task / English TASK): secure two quotations with line numbers (Z.), explain each effect, and weigh a judgement.
+
 PRIMAERTEXT（Study text: Balcony study version after Romeo (15 lines)，study version，100-200词）：
 
 > He jests at scars that never felt a wound. (Z. 1)
@@ -88,12 +91,24 @@ PRIMAERTEXT（Study text: Balcony study version after Romeo (15 lines)，study v
 English TASK: Examine the primary text line by line with quotation and line number.
 TARGET: Three quotations, each with effect and judgement in four sentences.
 
-HILFE（中文在前）：
-1. 中文：两句交代背景。English: Place the case in two sentences.
-2. 中文：锁两个证据。English: Secure two quotations.
-3. 中文：效果加判断。English: Add effect and judgement.
+HILFE (direction only, no verdict yet - Zhongwen first):
+- Context dimension: Check speaker, addressee and occasion with context mapping; name them, judge nothing yet.
+- Text dimension: Secure two quotations on rename lines, climb and night chain with line numbers (Z.); collect evidence, do not fix the effect yet.
+- Judgement dimension: List weighing criteria for names versus vows plus night proof; collect measures, do not close the verdict yet.
 
 MARKIERAUFTRAG（双色标注）：CN: 黄色[GELB]标命运记号（name, Montague, moon, lark），蓝色[BLAU]标抉择与夜证（deny, climbed, vow, burning）。EN: GELB for fate signs, BLAU for choice and night proof.
+
+COMPLETION (Lueckentext):
+- Read the PRIMAERTEXT once without notes, then fill from memory:
+- The rename asks in ___ (Z. 3-4: deny).
+- The night judges with ___ (Z. 13: lark).
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Kontext und These (names versus vows plus night) | 5 NP | Enger Beleg mit Zeile als Alternativweg
+Zwei Belege mit Zeile (rename Z. 3-4; climb Z. 7, lark-knife Z. 13) | 5 NP | Strukturierte Kette mit Zeile als Alternativweg
+Wirkung und Urteil (names versus vows plus night) | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
 
 MUSTERLOESUNG: 中文示范：背景一句，证据加效果两句，判断一句。
 English MODEL: Case 27 shows the method in three moves with quotation, effect and judgement; the cover is blown.
@@ -102,17 +117,24 @@ Klausur-Satz: `CN: 规律是夜越深，誓越真。EN: The deeper the night, th
 
 ## Schritt 5 — ausprobieren: Das doppelte Spiel Weg A gegen Weg B
 
-VERGLEICH（中文先行）：Weg A 微观细读（文本风格细节），Weg B 宏观语境（历史秩序背景）。
+VERGLEICH（中文先行）：Weg A 微观细读（文本风格细节），Weg B 宏观语境（历史秩序背景）。 (选概念: waehle zuerst Nahlektuere oder Kontextrahmen)
 English: Choose the path first (close Way A or distant Way B), then write.
 
-TASK A（中文：哪条线索走近路？）: Which trace needs Way A?
-TASK B（中文：哪个整体问题走远路？）: Which whole-case question needs Way B?
+AUFGABE A (analyse, [AFB II])（中文：哪条线索走近路？）: Which trace needs Way A?
+AUFGABE B (evaluate, [AFB III])（中文：哪个整体问题走远路？）: Which whole-case question needs Way B?
 
-HILFE：细节问选近路Way A，整体问选远路Way B。
+- [Wahl A] Wenn du Weg A waehlst, sammelst du in Schritt 7 Belege der Textnaehe.
+- [Wahl B] Wenn du Weg B waehlst, sammelst du in Schritt 7 Belege der Kontexteinordnung.
 
-中文答案：A近路靠引文，B远路靠背景。
-English ANSWER A: CN: 微观读改名句、攀墙与夜莺/云雀。EN: Way A tracks rename lines, climb and lark.
-English ANSWER B: CN: 宏观读世仇、婚制与夜会传统。EN: Way B frames feud, marriage market and night-meeting code.
+Entscheidungsregel fuer die Klausur:
+Lesehinweis: Die ausformulierte Regel steht in der AUFLOESUNG weiter unten; waehle zuerst intuitiv A oder B.
+
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg A oder Weg B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Ueberfuehrt aus Entscheidungsregel: Teile zuerst Schicksal und Wahl, kette dann drei Nachtbilder, wiege erst danach den Schwur. (Quelle: Studienparaphrase (study version, 15 lines; Balcony Verona); Original: W. Shakespeare, Romeo and Juliet)
+- Mechanismus A: Way A tracks rename lines, climb and lark line by line (Z. 1-13). (Quelle: wie oben). Dreischritt: Beleg = rename Z. 3-4 | Mittel = Nahlektuere mit Zitatkette | Funktion = sichert das Wie am Text
+- Mechanismus B: Way B frames feud, marriage market and night-meeting code as context (Z. 10/14-15). (Quelle: wie oben). Dreischritt: Beleg = climb Z. 7, lark-knife Z. 13 | Mittel = Kontextrahmen mit Hintergrund | Funktion = erklaert das Warum aus dem Kontext
+- Ein-Satz-Kern: Love explains, not excuses.
 
 Klausur-Satz: `CN: 微观听诗，宏观看仇。EN: Verse shows how, feud shows why.`
 
@@ -139,11 +161,28 @@ Klausur-Satz: `CN: 易错是把爱情当免罪。EN: Love explains, not excuses.
 ROLLE（中文）：你是Drama critic for the festival paper，负责审稿。
 English ROLE: You are Drama critic for the festival paper.
 SITUATION: Case 27 waits on your desk.
+AUFGABE (evaluate, [AFB III]):
+Evaluate Fall 27 in about 150 words: place the context, secure two anchors with line numbers (Z.), explain effects, and weigh a judgement with outlook.
 TASK（中文）：150词左右，含背景、证据、权衡判断。
 RUBRIC (30 XP): Context (6 XP) | Quotations (10 XP) | Effect plus judgement (10 XP) | Register (4 XP).
 Zeitbox: 2-Minuten-Countdown fuer Spruch-plus-Griff-Plan (rename Z. 3-4, climb Z. 7, night chain), dann schreiben. 中文：先用2分钟定改名与夜意象链再写。
 
+Die RUBRIC steuert das Schreiben (30 XP); der ERWARTUNGSHORIZONT steuert die Klausur-Bewertung (15 NP).
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Einordnung und These (names versus vows plus night) | 5 NP | Enger Beleg mit Zeile als Alternativweg
+Zwei Anker-Belege mit Zeile (rename Z. 3-4; climb Z. 7, lark-knife Z. 13) | 5 NP | Strukturierte Kette mit Zeile als Alternativweg
+Gewichtetes Urteil mit Ausblick | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
+
+
 Klausur-Satz: `CN: 满分句须含改名引文、攀墙动作与夜意象链。EN: AFB-III sentence needs rename quotation, climb act and night chain.`
+
+KERNSATZ (auswendig):
+- Kernsatz: `Names wall, vows ladder, night judges: rename lines plus climb weighed as choice.`
+- Zerlegung: Beleg | Mittel | Funktion
+- Aufschluesselung: Beleg = rename lines (Z. 3-4) | Mittel = night-image chain (Z. 5-6/13) | Funktion = fate-versus-choice verdict
+- Selbsttest: Names wall, vows ladder, night judges: rename lines plus climb weighed as ___.
 
 ## Schritt 8 — reflexion: Takeaway und Rueckblick aus Fall 27
 

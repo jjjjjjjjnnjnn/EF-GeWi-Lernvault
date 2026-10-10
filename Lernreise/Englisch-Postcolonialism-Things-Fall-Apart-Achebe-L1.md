@@ -8,7 +8,7 @@ operatoren: [analyze, explain, evaluate]
 klausurrelevant: true
 datum: 2026-10-03
 tags: [EF, Englisch, Postcolonialism, Chinua-Achebe, Things-Fall-Apart, Cultural-Clash, Imperialism]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Postcolonial Literature: Chinua Achebe's Things Fall Apart – Cultural Collision and Identity (L1, Ziel Klausur)
@@ -29,7 +29,7 @@ For more than a century, European literature portrayed the African continent alm
 `Klausur-Satz: Chinua Achebe deconstructs Eurocentric colonial myths by presenting the pre-colonial Igbo community as a structurally intact, linguistically sophisticated society whose tragic disintegration stems from internal rigidity and external imperial violence.`
 
 ## Schritt 2 — entdecken: The Postcolonial Theoretical Glossary
-PRETRAINING术语盒（核心4词，先读三遍中英，合书自测中文→英语）：
+PRETRAINING术语盒（核心4词，先读三遍中英，合书自测中文->英语）：
 
 - 欧洲中心主义 — Eurocentrism: 将欧洲历史、价值观与文明形式预设为全世界衡量进步与真理的唯一普遍标准的意识形态偏见。 The worldview and intellectual practice of interpreting non-European cultures exclusively through the lens of European standards, values, and experiences.
 - 文化碰撞 — Cultural Collision: 当两种具有完全不同宇宙观、宗教信仰与权力结构的文明发生剧烈接触甚至霸权征服时产生的破坏性震荡。 The violent shock and destabilization that occurs when two divergent social, religious, and legal systems clash during imperial conquest.
@@ -69,11 +69,28 @@ epic life to a single, trivial paragraph in his racist book!
 
 [Werkzeug: highlighter]
 
-AUFGABE (analyze & explain, AFB I/II):
+AUFGABE (analyze and explain, [AFB I/II]):
 Examine the final paragraph of "Things Fall Apart":
 "The Commissioner went away, taking three or four of the soldiers with him. In the many years he had toiled to bring civilization to different parts of Africa he had learnt a number of things. [...] He had already chosen the title of the book, after much thought: The Pacification of the Primitive Tribes of the Lower Niger."
 1. Analyze the ironical contrast between the Commissioner's book title and the complex reality of Igbo life depicted by Achebe in the preceding twenty-four chapters.
 2. Explain how Achebe uses the English language (African proverbs, syntax, rhythmic oral storytelling) to appropriate the language of the colonizer ("The Empire writes back").
+
+HILFE (direction only, no verdict yet):
+- Title dimension: Check pacification and primitive word choice with irony analysis; quote the title, do not judge it yet.
+- Language dimension: Check proverbs and Igbo lexis with appropriation analysis; secure two proofs, do not conclude yet.
+- Balance dimension: List criteria for realist double view (strength and rigidity); collect measures, do not close yet.
+
+COMPLETION (Lueckentext):
+- Read the final paragraph once without notes, then fill from memory:
+- Pacification means ___; primitive means ___.
+- Proverbs are the ___ with which words are ___.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Title-versus-reality irony with quotation | 5 NP | Enger Beleg mit Zeile als Alternativweg
+Africanized English proof (proverb, lexis) | 5 NP | Strukturierte Kette mit Zeile als Alternativweg
+Double-perspective verdict | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
 
 MUSTERLOESUNG:
 1. Ironical contrast of the book title:
@@ -99,22 +116,46 @@ VERGLEICH: Traditional Communal Balance vs. Colonial Imposition (选概念)
   - Values: Monotheistic Christian salvation, British statutory law, bureaucratic governance.
   - Fatal Flaw: Cultural chauvinism; treats thousands of years of indigenous social harmony as non-existent barbarism.
 
+- [Wahl A] Wenn du Position A waehlst, sammelst du im Transfer Belege der Naehe zum Text.
+- [Wahl B] Wenn du Position B waehlst, sammelst du im Transfer Belege der Einordnung in den Kontext.
+
 Entscheidungsregel fuer die Klausur:
-When analyzing postcolonial texts in an English exam, never present the pre-colonial culture as a flawless utopia; show that Achebe is a truthful realist who depicts both the noble strength AND the fatal rigidities of the Igbo society!
+Lesehinweis: Die ausformulierte Regel steht in der AUFLOESUNG weiter unten; waehle zuerst intuitiv A oder B.
+
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Position A oder B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Ueberfuehrt aus Entscheidungsregel: Never paint pre-colonial culture as utopia; show Achebe as realist depicting both Igbo strength AND fatal rigidity (Quelle: Studienparaphrase (Lerneinheit); Original: C. Achebe, Things Fall Apart (1958), Schlussabsatz)
+- Mechanismus A: Okonkwo's hyper-traditionalism mistakes empathy for cowardice and ends in an abominable suicide. Dreischritt: Beleg = Okonkwo's rigidity (Parts 1-3) | Mittel = Nahlektuere mit Zitatkette | Funktion = sichert das Wie am Text
+- Mechanismus B: The Commissioner's "Pacification of the Primitive Tribes" shrinks a tragedy to a racist footnote. Dreischritt: Beleg = Commissioner book title (final paragraph) | Mittel = Kontextrahmen mit Hintergrund | Funktion = erklaert das Warum aus dem Kontext
+- Ein-Satz-Kern: Neither utopia nor savagery: realism judges both.
+
 
 ## Schritt 6 — check: Klausur-Transfer The Legacy of Colonialism in Contemporary Africa
 
 PRUEFUNGSSZENARIO (KLP NRW Englisch LK Postcolonial Voices):
 
-### AFB I: Character Analysis
+### [AFB I]: Character Analysis
 Analyze the character of Obierika (Okonkwo's closest friend) as a philosophical foil to Okonkwo's rash militarism.
 
-### AFB II: Thematic Contrast
+### [AFB II]: Thematic Contrast
 Contrast the differing missionary approaches of Mr. Brown (respectful dialogue, listening) and Reverend Smith (fanatical fundamentalism, cultural destruction).
 Explain why Reverend Smith's arrival marks the point of no return for Umuofia.
 
-### AFB III: Critical Evaluation of Contemporary Discourse
+### [AFB III]: Critical Evaluation of Contemporary Discourse
 Evaluate whether modern postcolonial debates (such as the restitution of the Benin Bronzes from European museums to Nigeria) represent a necessary completion of the decolonization process described by Chinua Achebe.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Obierika foil analysis (AFB I) | 5 NP | Enger Beleg mit Zeile als Alternativweg
+Brown-versus-Smith missionary contrast (AFB II) | 5 NP | Strukturierte Kette mit Zeile als Alternativweg
+Benin-Bronzes restitution evaluation (AFB III) | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
+
+KERNSATZ (auswendig):
+- Kernsatz: `Achebe writes back: Igbo integrity shattered by rigidity within and violence without.`
+- Zerlegung: Beleg | Mittel | Funktion
+- Aufschluesselung: Beleg = Pacification title (final paragraph) | Mittel = proverb English as write-back | Funktion = anti-eurocentric verdict
+- Selbsttest: Achebe writes back: Igbo integrity shattered by rigidity within and violence ___.
 
 ## Schritt 7 — check: Format-Check & Scoring
 

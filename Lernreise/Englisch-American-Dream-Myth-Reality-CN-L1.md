@@ -8,7 +8,7 @@ operatoren: [analyse, discuss, evaluate]
 klausurrelevant: true
 datum: 2026-09-26
 tags: [EF, Englisch, USA]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 # Lernreise: American Dream myth and reality (L1, Ziel Klausur)
 
@@ -66,6 +66,9 @@ Bezug zum Konzept: `CN: 神话加数据等于权衡判断。EN: Myth plus measur
 
 [Werkzeug: highlighter]
 
+AUFGABE (analyse, [AFB II]):
+Analyze the PRIMAERTEXT below (details in Zhongwen task / English TASK): secure two quotations with line numbers (Z.), explain each effect, and weigh a judgement.
+
 PRIMAERTEXT（Study text: Garage Speech, part one (15 lines)，study version，100-200词）：
 
 > They told me this garage would make me somebody. (Z. 1)
@@ -88,12 +91,24 @@ PRIMAERTEXT（Study text: Garage Speech, part one (15 lines)，study version，1
 English TASK: Examine the primary text line by line with quotation and line number.
 TARGET: Three quotations, each with effect and judgement in four sentences.
 
-HILFE（中文在前）：
-1. 中文：两句交代背景。English: Place the case in two sentences.
-2. 中文：锁两个证据。English: Secure two quotations.
-3. 中文：效果加判断。English: Add effect and judgement.
+HILFE (direction only, no verdict yet - Zhongwen first):
+- Context dimension: Check speaker, addressee and occasion with context mapping; name them, judge nothing yet.
+- Text dimension: Secure two quotations on promise and crack signals with line numbers (Z.); collect evidence, do not fix the effect yet.
+- Judgement dimension: List weighing criteria for promise against cracks; collect measures, do not close the verdict yet.
 
 MARKIERAUFTRAG（双色标注）：CN: 黄色[GELB]标承诺隐喻（garage, street, shine），蓝色[BLAU]标裂缝信号（rent, rates, bills, handshake）。EN: Mark GELB for promise images, BLAU for crack signals.
+
+COMPLETION (Lueckentext):
+- Read the PRIMAERTEXT once without notes, then fill from memory:
+- Das Versprechen steht in Z. 1-2 als ___ (garage).
+- Der Riss kommt als ___ in Z. 5-7 (rent, rates).
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Kontext und These (Versprechen gegen Risse) | 5 NP | Enger Beleg mit Zeile als Alternativweg
+Zwei Belege mit Zeile (garage Z. 1-2; bank letter Z. 6, bills Z. 10) | 5 NP | Strukturierte Kette mit Zeile als Alternativweg
+Wirkung und Urteil (Versprechen gegen Risse) | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
 
 MUSTERLOESUNG: 中文示范：背景一句，证据加效果两句，判断一句。
 English MODEL: Case 50 shows the method in three moves with quotation, effect and judgement; the cover is blown.
@@ -102,17 +117,24 @@ Klausur-Satz: `CN: 规律是故事越亮，越要查缺席者。EN: The brighter
 
 ## Schritt 5 — ausprobieren: Das doppelte Spiel Weg A gegen Weg B
 
-VERGLEICH（中文先行）：Weg A 微观细读（文本风格细节），Weg B 宏观语境（历史秩序背景）。
+VERGLEICH（中文先行）：Weg A 微观细读（文本风格细节），Weg B 宏观语境（历史秩序背景）。 (选概念: waehle zuerst Nahlektuere oder Kontextrahmen)
 English: Choose the path first (close Way A or distant Way B), then write.
 
-TASK A（中文：哪条线索走近路？）: Which trace needs Way A?
-TASK B（中文：哪个整体问题走远路？）: Which whole-case question needs Way B?
+AUFGABE A (analyse, [AFB II])（中文：哪条线索走近路？）: Which trace needs Way A?
+AUFGABE B (evaluate, [AFB III])（中文：哪个整体问题走远路？）: Which whole-case question needs Way B?
 
-HILFE：细节问选近路Way A，整体问选远路Way B。
+- [Wahl A] Wenn du Weg A waehlst, sammelst du in Schritt 7 Belege der Textnaehe.
+- [Wahl B] Wenn du Weg B waehlst, sammelst du in Schritt 7 Belege der Kontexteinordnung.
 
-中文答案：A近路靠引文，B远路靠背景。
-English ANSWER A: CN: 微观读隐喻与对照：garage 对 key，shine 对 bills。EN: Way A traces images and contrasts line by line.
-English ANSWER B: CN: 宏观读历史：边疆、郊区化与信贷社会。EN: Way B frames suburbia, credit and class history.
+Entscheidungsregel fuer die Klausur:
+Lesehinweis: Die ausformulierte Regel steht in der AUFLOESUNG weiter unten; waehle zuerst intuitiv A oder B.
+
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg A oder Weg B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Ueberfuehrt aus Entscheidungsregel: Sichere zuerst das Versprechens-Zitat, teste es dann mit genau einem Riss-Beleg, und waege erst danach. (Quelle: Studienparaphrase (study version, 15 lines; Garage Speech); Originale: American-Dream-Debatte (KLP NRW Englisch))
+- Mechanismus A: Way A traces images and contrasts line by line: garage against key, shine against bills (Z. 1-15). (Quelle: wie oben). Dreischritt: Beleg = garage Z. 1-2 | Mittel = Nahlektuere mit Zitatkette | Funktion = sichert das Wie am Text
+- Mechanismus B: Way B frames suburbia, credit and class history as context (Z. 12-14). (Quelle: wie oben). Dreischritt: Beleg = bank letter Z. 6, bills Z. 10 | Mittel = Kontextrahmen mit Hintergrund | Funktion = erklaert das Warum aus dem Kontext
+- Ein-Satz-Kern: Mythos plus Mass ergibt Urteil: Wuerde statt Dollar.
 
 Klausur-Satz: `CN: 微观管意象，宏观管历史。EN: Close reading shows how, context shows why.`
 
@@ -139,11 +161,28 @@ Klausur-Satz: `CN: 易错是把个例当证明。EN: One garage proves nothing; 
 ROLLE（中文）：你是Opinion page editor，负责审稿。
 English ROLE: You are Opinion page editor.
 SITUATION: Case 50 waits on your desk.
+AUFGABE (evaluate, [AFB III]):
+Evaluate Fall 50 in about 150 words: place the context, secure two anchors with line numbers (Z.), explain effects, and weigh a judgement with outlook.
 TASK（中文）：150词左右，含背景、证据、权衡判断。
 RUBRIC (30 XP): Context (6 XP) | Quotations (10 XP) | Effect plus judgement (10 XP) | Register (4 XP).
 Zeitbox: 2-Minuten-Countdown fuer Werkstatt-Plan (garage Z. 1, rates Z. 7, bills Z. 10), dann schreiben. 中文：先用2分钟定车库与账单再写。
 
+Die RUBRIC steuert das Schreiben (30 XP); der ERWARTUNGSHORIZONT steuert die Klausur-Bewertung (15 NP).
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Einordnung und These (Versprechen gegen Risse) | 5 NP | Enger Beleg mit Zeile als Alternativweg
+Zwei Anker-Belege mit Zeile (garage Z. 1-2; bank letter Z. 6, bills Z. 10) | 5 NP | Strukturierte Kette mit Zeile als Alternativweg
+Gewichtetes Urteil mit Ausblick | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
+
+
 Klausur-Satz: `CN: 满分句须含承诺引文、裂缝数据与修订展望。EN: AFB-III sentence needs promise quotation, crack figure and revised outlook.`
+
+KERNSATZ (auswendig):
+- Kernsatz: `Promise quotation tested by crack figures yields a weighed verdict: dignity and access beyond wealth.`
+- Zerlegung: Beleg | Mittel | Funktion
+- Aufschluesselung: Beleg = promise quotation (Z. 1-2) | Mittel = crack proof with figure and voice (Z. 5-10) | Funktion = revised verdict: dignity and access
+- Selbsttest: Promise quotation tested by crack figures yields a weighed verdict: ___ and access beyond wealth.
 
 ## Schritt 8 — reflexion: Takeaway und Rueckblick aus Fall 50
 

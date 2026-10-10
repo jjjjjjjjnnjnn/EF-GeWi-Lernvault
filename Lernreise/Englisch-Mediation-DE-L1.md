@@ -8,7 +8,7 @@ operatoren: [outline, explain, write]
 klausurrelevant: true
 datum: 2026-09-25
 tags: [EF, Englisch, Sprachmittlung]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 # Lernreise: Mediation DE-EN: Ablauf und Textformate (L1, Ziel Klausur)
 
@@ -65,7 +65,7 @@ Bezug zum Konzept: `Sense plus register plus flag equals trust across languages.
 
 [Werkzeug: lego]
 
-AUFGABE: Mittels zwei Briefabsaetze mit Bausteinen: Auswahl, Komprimat, Paraphrase plus Bruecken-Fussnote und Lueckensignal.
+AUFGABE (analysieren, [AFB II]): Mittels zwei Briefabsaetze mit Bausteinen: Auswahl, Komprimat, Paraphrase plus Bruecken-Fussnote und Lueckensignal.
 TARGET: Drei Bausteine mit Beleg, je mit Funktion und einer Deutung in vier Saetzen.
 
 PRIMAERTEXT (Study text: Jugendherberge Hamburg Brief, study version, deutscher Hostel-Brief ca. 120 Woerter, 12 lines):
@@ -83,10 +83,22 @@ PRIMAERTEXT (Study text: Jugendherberge Hamburg Brief, study version, deutscher 
 > Fahrradausleihe kostet pro Tag ... (unleserlich) Euro am Hafen. (Z. 11)
 > Wir wuenschen dir ruhige Naechte bei uns! (Z. 12)
 
-HILFE:
-1. Schritt 1: Ordne den Fall in zwei Saetzen ein.
-2. Schritt 2: Sichere zwei Bausteine mit Beleg.
-3. Schritt 3: Deute Baustein und Funktion im Fallganzen.
+HILFE (nur Richtung, keine Deutung vorweg):
+- Kontextdimension: Pruefe Anlass und Adressat mit Kontextanalyse; benenne nur Situation und Empfaenger, deute die Funktion noch nicht.
+- Textdimension: Pruefe Fakten, Kulturbruecken und Luecken mit Beleganalyse; sichere zwei Zitate mit Zeile (Z.), ohne die Wirkung festzulegen.
+- Urteilsdimension: Pruefe den Massstab (Leser, Sinn, Luecke) mit Kriterienanalyse; sammle Kriterien, ohne das Urteil vorwegzunehmen.
+
+COMPLETION (Lueckentext):
+- Lies den PRIMAERTEXT einmal ohne Notizen, dann ergaenze aus dem Gedaechtnis:
+- Die Auswahl fragt zuerst: ___ braucht was?
+- Die Luecke in Z. 11 heisst ___ (Preis).
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Kontext und These (Leser, Sinn, Luecke) | 5 NP | Enger Beleg mit Zeile als Alternativweg
+Zwei Belege mit Zeile (Ruhe Z. 2, Fruehstueck Z. 5; Schluessel Z. 4, unleserlich Z. 11) | 5 NP | Strukturierte Kette mit Zeile als Alternativweg
+Wirkung und Urteil (Leser, Sinn, Luecke) | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
 
 MUSTERLOESUNG: Der Fall 36 zeigt das Verfahren in drei Schritten. Erstens sichert ein Beleg den Kern. Zweitens traegt die Funktion die Wirkung. Drittens schliesst die Deutung das Urteil.
 
@@ -96,15 +108,23 @@ Klausur-Satz: `The bridge rule: the odder the rule, the longer the footnote.`
 
 ## Schritt 5 — ausprobieren: Das doppelte Spiel Weg A gegen Weg B
 
-VERGLEICH: Weg A arbeitet mikroskopisch (Detail, Beleg, Form), Weg B plant makroskopisch (Strategie, Kontext, Gewicht).
+VERGLEICH: Weg A arbeitet mikroskopisch (Detail, Beleg, Form), Weg B plant makroskopisch (Strategie, Kontext, Gewicht). (选概念: waehle zuerst Nahlektuere oder Kontextrahmen)
 
-AUFGABE A: Welche Spur verlangt Weg A? Begruende mit Beleg.
-AUFGABE B: Welche Frage verlangt Weg B? Begruende mit Kontext.
+AUFGABE A (analysieren, [AFB II]): Welche Spur verlangt Weg A? Begruende mit Beleg.
+AUFGABE B (beurteilen, [AFB III]): Welche Frage verlangt Weg B? Begruende mit Kontext.
 
-HILFE: A fragt nach Form und Naehe, also Weg A. B fragt nach Rolle und Ganzem, also Weg B.
+- [Wahl A] Wenn du Weg A waehlst, sammelst du in Schritt 7 Belege der Textnaehe.
+- [Wahl B] Wenn du Weg B waehlst, sammelst du in Schritt 7 Belege der Kontexteinordnung.
 
-ANTWORT A: Way A renders closely: sense, logic words and register sentence by sentence.
-ANTWORT B: Way B serves widely: reader, purpose and text type decide selection and footnotes.
+Entscheidungsregel fuer die Klausur:
+Lesehinweis: Die ausformulierte Regel steht in der AUFLOESUNG weiter unten; waehle zuerst intuitiv A oder B.
+
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg A oder Weg B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Ueberfuehrt aus Entscheidungsregel: Bestimme zuerst den Leser, waehle dann Fakten, paraphrasiere und signalisiere Luecken. (Quelle: Studienparaphrase (study version, 12 lines; Jugendherberge Hamburg); Textsorte: Hausordnung/Brief (Mediation DE-EN))
+- Mechanismus A: Way A renders closely: sense, logic words and register sentence by sentence. (Quelle: wie oben). Dreischritt: Beleg = Ruhe Z. 2, Fruehstueck Z. 5 | Mittel = Nahlektuere mit Zitatkette | Funktion = sichert das Wie am Text
+- Mechanismus B: Way B serves widely: reader, purpose and text type decide selection and footnotes. (Quelle: wie oben). Dreischritt: Beleg = Schluessel Z. 4, unleserlich Z. 11 | Mittel = Kontextrahmen mit Hintergrund | Funktion = erklaert das Warum aus dem Kontext
+- Ein-Satz-Kern: Leser zuerst, dann Sinn.
 
 Klausur-Satz: `Close rendering secures how, wide service why; both mediate.`
 
@@ -129,11 +149,26 @@ Klausur-Satz: `Often confused: translation copies; mediation selects and explain
 
 ROLLE: Du bist Mediation coach for the exchange in der Pruefung.
 SITUATION: Ein Fall liegt unbearbeitet auf dem Tisch und verlangt Einordnung, Belege und Urteil.
-AUFGABE: Verfasse circa 150 Woerter mit Einordnung, zwei Belegen, Funktion, Deutung und Schlussurteil.
+AUFGABE (beurteilen, [AFB III]): Verfasse circa 150 Woerter mit Einordnung, zwei Belegen, Funktion, Deutung und Schlussurteil.
 RUBRIC (30 XP): Einordnung korrekt (6 XP) | Zwei Belege (10 XP) | Funktion plus Deutung (10 XP) | Fachsprache und Schluss (4 XP).
 Zeitbox: 2-Minuten-Countdown fuer Leserauswahl plus Lueckenliste (Z. 11 markieren), dann schreiben.
 
+Die RUBRIC steuert das Schreiben (30 XP); der ERWARTUNGSHORIZONT steuert die Klausur-Bewertung (15 NP).
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Einordnung und These (Leser, Sinn, Luecke) | 5 NP | Enger Beleg mit Zeile als Alternativweg
+Zwei Anker-Belege mit Zeile (Ruhe Z. 2, Fruehstueck Z. 5; Schluessel Z. 4, unleserlich Z. 11) | 5 NP | Strukturierte Kette mit Zeile als Alternativweg
+Gewichtetes Urteil mit Ausblick | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
+
+
 Klausur-Satz: `AFB-III model: For reader R, facts F1-F2 (paraphrased) with habit note H and flagged gap G yield usable target text.`
+
+KERNSATZ (auswendig):
+- Kernsatz: `Sinn traegt, Saetze nicht: Leser zuerst, Fakten knapp, Luecke ehrlich signalisiert.`
+- Zerlegung: Beleg | Mittel | Funktion
+- Aufschluesselung: Beleg = leserrelevante Fakten (Z.) | Mittel = Paraphrase plus Kultur-Fussnote | Funktion = nutzbarer Zieltext mit Lueckensignal
+- Selbsttest: Sinn traegt, Saetze nicht: Leser zuerst, Fakten knapp, Luecke ehrlich ___.
 
 ## Schritt 8 — reflexion: Takeaway und Rueckblick aus Fall 36
 

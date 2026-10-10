@@ -8,7 +8,7 @@ operatoren: [outline, explain, write]
 klausurrelevant: true
 datum: 2026-09-25
 tags: [EF, Englisch, Sprachmittlung]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 # Lernreise: Mediation DE-EN: Ablauf und Textformate (L1, Ziel Klausur)
 
@@ -73,6 +73,9 @@ Bezug zum Konzept: `传导句——Sense plus register plus flag equals trust ac
 
 [Werkzeug: lego]
 
+AUFGABE (write, [AFB II]):
+Write the blocks below (details in Zhongwen task / English TASK): select for the reader, compress with logic, paraphrase in register, add needed notes and flag gaps.
+
 中文任务：Mittels zwei Briefabsaetze mit Bausteinen: Auswahl, Komprimat, Paraphrase plus Bruecken-Fussnote und Lueckensignal.
 English TASK: Mittels zwei Briefabsaetze mit Bausteinen: Auswahl, Komprimat, Paraphrase plus Bruecken-Fussnote und Lueckensignal.
 TARGET: Three blocks, each with evidence and judgement in four sentences.
@@ -92,10 +95,22 @@ PRIMAERTEXT（Study text: Hafen-Hostel Kiel Brief, study version, 德语hostel�
 > Waesche kostet pro Maschine ... (unleserlich) Euro im Keller. (Z. 11)
 > Wir freuen uns auf ruhige Tage mit dir! (Z. 12)
 
-HILFE（中文在前）：
-1. 中文：两句交代背景。English: Place the case in two sentences.
-2. 中文：锁两个证据。English: Secure two blocks of evidence.
-3. 中文：效果加判断。English: Add effect and judgement.
+HILFE (direction only, no verdict yet - Zhongwen first):
+- Context dimension: Check speaker, addressee and occasion with context mapping; name them, judge nothing yet.
+- Text dimension: Secure two quotations on facts, bridges and gaps with line numbers (Z.); collect evidence, do not fix the effect yet.
+- Judgement dimension: List weighing criteria for reader, sense and gap flags; collect measures, do not close the verdict yet.
+
+COMPLETION (Lueckentext):
+- Read the PRIMAERTEXT once without notes, then fill from memory:
+- Selection asks first: who needs ___?
+- The gap in Z. 11 needs a ___ (price).
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Kontext und These (reader, sense, gap) | 5 NP | Enger Beleg mit Zeile als Alternativweg
+Zwei Belege mit Zeile (Ruhe Z. 2, Duschen Z. 3; Handys Z. 6, unleserlich Z. 11) | 5 NP | Strukturierte Kette mit Zeile als Alternativweg
+Wirkung und Urteil (reader, sense, gap) | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
 
 MUSTERLOESUNG: 中文示范：背景一句，证据加效果两句，判断一句。
 English MODEL: Case 35 shows the method in three moves with evidence, effect and judgement.
@@ -106,17 +121,24 @@ Klausur-Satz: `规律句——The bridge rule: the odder the rule, the longer th
 
 ## Schritt 5 — ausprobieren: Das doppelte Spiel Weg A gegen Weg B
 
-VERGLEICH（中文先行）：Weg A 微观做细节，Weg B 宏观定策略。
+VERGLEICH（中文先行）：Weg A 微观做细节，Weg B 宏观定策略。 (选概念: waehle zuerst Nahlektuere oder Kontextrahmen)
 English: Choose the path first (close Way A or distant Way B), then write.
 
-TASK A（中文：哪条线索走近路？）: Which trace needs Way A?
-TASK B（中文：哪个整体问题走远路？）: Which whole-case question needs Way B?
+AUFGABE A (analyse, [AFB II])（中文：哪条线索走近路？）: Which trace needs Way A?
+AUFGABE B (evaluate, [AFB III])（中文：哪个整体问题走远路？）: Which whole-case question needs Way B?
 
-HILFE：细节问选近路Way A，整体问选远路Way B。
+- [Wahl A] Wenn du Weg A waehlst, sammelst du in Schritt 7 Belege der Textnaehe.
+- [Wahl B] Wenn du Weg B waehlst, sammelst du in Schritt 7 Belege der Kontexteinordnung.
 
-中文答案：A近路靠证据，B远路靠背景。
-English ANSWER A: Way A renders closely: sense, logic words and register sentence by sentence.
-English ANSWER B: Way B serves widely: reader, purpose and text type decide selection and footnotes.
+Entscheidungsregel fuer die Klausur:
+Lesehinweis: Die ausformulierte Regel steht in der AUFLOESUNG weiter unten; waehle zuerst intuitiv A oder B.
+
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg A oder Weg B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Ueberfuehrt aus Entscheidungsregel: Bestimme zuerst den Leser, waehle dann Fakten, paraphrasiere und signalisiere Luecken. (Quelle: Studienparaphrase (study version, 12 lines; Hafen-Hostel Kiel); Textsorte: hostel letter (mediation DE-EN))
+- Mechanismus A: Way A renders closely: sense, logic words and register sentence by sentence. (Quelle: wie oben). Dreischritt: Beleg = Ruhe Z. 2, Duschen Z. 3 | Mittel = Nahlektuere mit Zitatkette | Funktion = sichert das Wie am Text
+- Mechanismus B: Way B serves widely: reader, purpose and text type decide selection and footnotes. (Quelle: wie oben). Dreischritt: Beleg = Handys Z. 6, unleserlich Z. 11 | Mittel = Kontextrahmen mit Hintergrund | Funktion = erklaert das Warum aus dem Kontext
+- Ein-Satz-Kern: Sense across shores.
 
 Klausur-Satz: `对决句——Close rendering secures how, wide service why; both mediate.`
 
@@ -143,11 +165,28 @@ Klausur-Satz: `易错句——Often confused: translation copies; mediation sele
 ROLLE（中文）：你是Mediation coach for the exchange，负责审稿。
 English ROLE: You are Mediation coach for the exchange.
 SITUATION: Case 35 waits on your desk.
+AUFGABE (evaluate, [AFB III]):
+Evaluate Fall 35 in about 150 words: place the context, secure two anchors with line numbers (Z.), explain effects, and weigh a judgement with outlook.
 TASK（中文）：150词左右，含背景、证据、权衡判断。
 RUBRIC (30 XP): Context (6 XP) | Evidence (10 XP) | Effect plus judgement (10 XP) | Register (4 XP).
 Zeitbox: 2-Minuten-Countdown fuer Leserauswahl plus Lueckenliste (wer braucht was, Z. 11 markieren), dann schreiben. 中文：先用2分钟定读者与缺口清单再写。
 
+Die RUBRIC steuert das Schreiben (30 XP); der ERWARTUNGSHORIZONT steuert die Klausur-Bewertung (15 NP).
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Einordnung und These (reader, sense, gap) | 5 NP | Enger Beleg mit Zeile als Alternativweg
+Zwei Anker-Belege mit Zeile (Ruhe Z. 2, Duschen Z. 3; Handys Z. 6, unleserlich Z. 11) | 5 NP | Strukturierte Kette mit Zeile als Alternativweg
+Gewichtetes Urteil mit Ausblick | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
+
+
 Klausur-Satz: `满分句——AFB-III model: For reader R, facts F1-F2 (paraphrased) with habit note H and flagged gap G yield usable target text.`
+
+KERNSATZ (auswendig):
+- Kernsatz: `Reader first, facts paraphrased, habits bridged, gaps flagged: mediation carries sense.`
+- Zerlegung: Beleg | Mittel | Funktion
+- Aufschluesselung: Beleg = reader-relevant facts (Z.) | Mittel = paraphrase plus habit footnote | Funktion = usable target text with gap signal
+- Selbsttest: Reader first, facts paraphrased, habits bridged, gaps flagged: mediation carries ___.
 
 ## Schritt 8 — reflexion: Takeaway und Rueckblick aus Fall 35
 

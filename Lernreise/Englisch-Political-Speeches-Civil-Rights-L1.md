@@ -8,7 +8,7 @@ operatoren: [analyze, explain, evaluate]
 klausurrelevant: true
 datum: 2026-10-03
 tags: [EF, Englisch, Speeches, Rhetoric, Civil-Rights, MLK, Analysis]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Political Speeches and Rhetoric in the Civil Rights Movement (L1, Ziel Klausur)
@@ -29,7 +29,7 @@ On August 28, 1963, more than 250,000 people gathered peacefully under the scorc
 `Klausur-Satz: Martin Luther King Jr. masterfully employs a triadic synthesis of ethos, pathos, and biblical imagery to elevate the African American civil rights struggle into a universal imperative of democratic renewal.`
 
 ## Schritt 2 — entdecken: The Rhetorical Arsenal of Great Orators
-PRETRAINING术语盒（核心4词，先读三遍中英，合书自测中文→英语）：
+PRETRAINING术语盒（核心4词，先读三遍中英，合书自测中文->英语）：
 
 - 首语重复 / 首字排比 — Anaphora: 连续句子或分句开头重复相同词语以强化节奏与情感感染力的修辞手法。 The deliberate repetition of a word or phrase at the beginning of successive clauses to build emotional intensity and rhythmic resonance.
 - 拓展隐喻 — Extended Metaphor: 在整段文本或整篇演说中持续展开的系统性隐喻。 A metaphor that unfolds across multiple sentences or paragraphs to construct a coherent symbolic framework (e.g. comparing racial injustice to a "promissory note" that has defaulted).
@@ -64,11 +64,28 @@ The Clarion Call ("Let Freedom Ring from every hill and molehill")
 
 [Werkzeug: text-analyse]
 
-AUFGABE (analyze & explain, AFB I/II):
+AUFGABE (analyze and explain, [AFB I/II]):
 Examine the following excerpt from Dr. King's address:
 "Five score years ago, a great American, in whose symbolic shadow we stand today, signed the Emancipation Proclamation. This momentous decree came as a great beacon light of hope to millions of Negro slaves who had been seared in the flames of withering injustice. [...] But 100 years later, the Negro still is not free."
 1. Identify two distinct stylistic devices in this passage and explain their immediate functional effect on the listeners.
 2. Analyze how Dr. King establishes his Ethos in the opening lines of the speech.
+
+HILFE (direction only, no verdict yet):
+- Device dimension: Check archaic phrasing and light-versus-fire imagery with device analysis; secure two quotations, do not fix the effect yet.
+- Ethos dimension: Check Lincoln anchor and constitutional promise with source analysis; name the ground, do not judge the strategy yet.
+- Function dimension: List criteria for mobilising effect (rhythm, image, call); collect measures, do not close the verdict yet.
+
+COMPLETION (Lueckentext):
+- Read the excerpt once without notes, then fill from memory:
+- The beacon promises ___; the flames show ___.
+- King stands in Lincoln's ___ shadow, not as a rebel but as ___.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Two devices with quotation | 5 NP | Enger Beleg mit Zeile als Alternativweg
+Effect on the listeners | 5 NP | Strukturierte Kette mit Zeile als Alternativweg
+Ethos establishment from history | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
 
 MUSTERLOESUNG:
 1. Stylistic devices and function:
@@ -92,21 +109,45 @@ VERGLEICH: Logos (Rational Argumentation) vs. Pathos (Emotional Appeal) (选概�
   - Example in speech: The repeated refrain "I have a dream that one day..."
   - Effect: Inspires collective empathy, unites diverse listeners, and motivates active civic courage.
 
+- [Wahl A] Wenn du Position A waehlst, sammelst du im Transfer Belege der Naehe zum Text.
+- [Wahl B] Wenn du Position B waehlst, sammelst du im Transfer Belege der Einordnung in den Kontext.
+
 Entscheidungsregel fuer die Klausur:
-When analyzing a political speech in an Abitur exam, never simply list stylistic devices; always explain how the orator strategically balances Logos (justifying the demand) with Pathos (mobilizing the audience) to achieve the communicative goal!
+Lesehinweis: Die ausformulierte Regel steht in der AUFLOESUNG weiter unten; waehle zuerst intuitiv A oder B.
+
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Position A oder B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Ueberfuehrt aus Entscheidungsregel: Never list devices only; always explain how the orator balances Logos (justifying the demand) with Pathos (mobilizing the audience) (Quelle: Studienparaphrase (Lerneinheit); Original: M. L. King Jr., I Have a Dream (1963), Redeauszug)
+- Mechanismus A: Logos: the promissory-note metaphor proves discrimination is a breach of contract. Dreischritt: Beleg = promissory-note metaphor (opening) | Mittel = Nahlektuere mit Zitatkette | Funktion = sichert das Wie am Text
+- Mechanismus B: Pathos: the dream anaphora ("I have a dream") builds empathy and civic courage. Dreischritt: Beleg = dream anaphora chain (climax) | Mittel = Kontextrahmen mit Hintergrund | Funktion = erklaert das Warum aus dem Kontext
+- Ein-Satz-Kern: Justify with logos, mobilize with pathos.
+
 
 ## Schritt 6 — check: Klausur-Transfer Rhetoric in the Digital Age
 
 PRUEFUNGSSZENARIO (KLP NRW Englisch GK/LK Sachtextanalyse):
 
-### AFB I: Comprehension and Summary
+### [AFB I]: Comprehension and Summary
 Summarize the main demands articulated in Dr. King's speech regarding police brutality, voting rights, and social dignity in your own words.
 
-### AFB II: In-Depth Rhetorical Analysis
+### [AFB II]: In-Depth Rhetorical Analysis
 Analyze the climactic passage ("Let freedom ring from Stone Mountain of Georgia...") with regard to acoustic devices (alliteration, rhythm), geographic symbolism, and its mobilizing effect on the audience.
 
-### AFB III: Critical Evaluation
+### [AFB III]: Critical Evaluation
 Evaluate whether the classical oratorical devices of the Civil Rights era remain effective in modern political discourse shaped by 15-second social media soundbites and algorithmic polarization.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Demands summary in own words (AFB I) | 5 NP | Enger Beleg mit Zeile als Alternativweg
+Let-freedom-ring analysis with acoustic devices (AFB II) | 5 NP | Strukturierte Kette mit Zeile als Alternativweg
+Soundbite-era effectiveness evaluation (AFB III) | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
+
+KERNSATZ (auswendig):
+- Kernsatz: `King balances promissory-note logos with dream anaphora pathos to mobilize a nation.`
+- Zerlegung: Beleg | Mittel | Funktion
+- Aufschluesselung: Beleg = bounced-check metaphor (opening) | Mittel = anaphora chain I-have-a-dream (climax) | Funktion = mobilising verdict of democratic renewal
+- Selbsttest: King balances promissory-note logos with dream anaphora pathos to mobilize a ___.
 
 ## Schritt 7 — check: Format-Check & Scoring
 

@@ -8,7 +8,7 @@ operatoren: [examine, analyze, evaluate]
 klausurrelevant: true
 datum: 2026-10-03
 tags: [EF, Englisch, Shakespeare, Drama, Blank-Verse, Monologue, Macbeth]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Analyzing Shakespearean Monologues: Blank Verse, Rhetoric and Imagery (L1, Ziel Klausur)
@@ -31,7 +31,7 @@ Hook / Phaenomen: Imagine standing in the crowded pit of the Globe Theatre in 16
 `Klausur-Satz: Shakespeare's monologues employ unrhymed iambic pentameter (blank verse) as a rhythmic baseline, whereby metric disruptions and symbolic imagery externalize the protagonist's profound inner turmoil.`
 
 ## Schritt 2 — entdecken: Ausruestungskiste der Shakespeare-Unit
-PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
+PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文->德语，Evidenz：pretraining降认知负荷）：
 
 中文在上，德语在下：
 
@@ -86,19 +86,30 @@ BEISPIEL（正确例题示范，含教具操作与解答）：
 
 [Werkzeug: text-analyse]
 
-AUFGABE (examine & analyze, AFB I/II)：
+AUFGABE (examine and analyze, [AFB I/II]):
 Given is the following excerpt from Macbeth's soliloquy in Act 5, Scene 5:
 > "Out, out, brief candle! / Life's but a walking shadow, a poor player / That struts and frets his hour upon the stage / And then is heard no more. It is a tale / Told by an idiot, full of sound and fury, / Signifying nothing." (lines 18–23)
 1. Examine the central metaphors Shakespeare uses to define human existence in these six lines. (10 BE)
 2. Analyze how these metaphors reflect Macbeth's complete psychological and philosophical disillusionment at this stage of the tragedy. (20 BE)
 
-HILFE:
-1. Step 1: Identify key metaphors:
-   - "brief candle": Life as a fragile, flickering flame that can be snuffed out in an instant.
-   - "walking shadow": Life as an insubstantial, hollow projection without physical reality.
-   - "poor player": Life as a mediocre, anxious actor who performs insignificantly and vanishes.
-   - "tale told by an idiot": The entire universe as nonsensical, chaotic babble without purpose ("signifying nothing").
-2. Step 2: Contextualize with Macbeth's arc: From noble warrior to ambitious regicide, now realizing that murdering King Duncan brought no glory, only total emptiness.
+HILFE (direction only, no verdict yet):
+- Image dimension: Check candle, shadow, player and tale images with image analysis; secure four quotations with line numbers, do not fix the meaning yet.
+- Arc dimension: Check warrior-to-regicide stations with arc analysis; order the stations, do not judge the emptiness yet.
+- Voice dimension: List criteria for nihilism reading (density, sequence, paradox); collect measures, do not close the verdict yet.
+
+COMPLETION (Lueckentext):
+- Read the six lines once without notes, then fill from memory:
+- Life is a brief ___ snuffed into ___.
+- The player struts his ___ and is heard ___.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Four metaphors with line proof | 5 NP | Enger Beleg mit Zeile als Alternativweg
+Sequence reading towards nihilism | 5 NP | Strukturierte Kette mit Zeile als Alternativweg
+Ambition-to-void arc verdict | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
+
+
 
 MUSTERLÖSUNG:
 1. Examination of central metaphors:
@@ -129,8 +140,19 @@ VERGLEICH: Blank Verse (Poetic Meter) vs. Prose (Everyday Speech) in Shakespeare
     - *Madness and breakdown*: High-born characters switch from blank verse to prose when their sanity disintegrates!
     - *Example*: Lady Macbeth speaks flawless blank verse in Acts 1–3, but in Act 5 (sleepwalking scene "Out, damned spot!") she collapses into fragmented, erratic **prose**!
 
+- [Wahl A] Wenn du Position A waehlst, sammelst du im Transfer Belege der Naehe zum Text.
+- [Wahl B] Wenn du Position B waehlst, sammelst du im Transfer Belege der Einordnung in den Kontext.
+
 Entscheidungsregel fuer die Klausur:
-When analyzing a Shakespearean scene, ALWAYS check if a noble character abruptly abandons blank verse for prose! This metric shift is the ultimate stylistic proof of impending madness, deception, or psychological decay!
+Lesehinweis: Die ausformulierte Regel steht in der AUFLOESUNG weiter unten; waehle zuerst intuitiv A oder B.
+
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Position A oder B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Ueberfuehrt aus Entscheidungsregel: Always check whether a noble character abandons blank verse for prose; read the metric shift as proof of madness, deception or decay (Quelle: Studienparaphrase (Lerneinheit); Original: W. Shakespeare, Macbeth (V.1, V.5))
+- Mechanismus A: Blank verse (ten syllables, iambic dignity) carries order: kings and lovers speak it in control. Dreischritt: Beleg = regular iambs (Macbeth V.5) | Mittel = Nahlektuere mit Zitatkette | Funktion = sichert das Wie am Text
+- Mechanismus B: Prose carries jest or fracture: clowns speak it, and Lady Macbeth collapses into it sleepwalking (Act 5). Dreischritt: Beleg = sleepwalking prose (Lady Macbeth V.1) | Mittel = Kontextrahmen mit Hintergrund | Funktion = erklaert das Warum aus dem Kontext
+- Ein-Satz-Kern: Who leaves the meter leaves their mind.
+
 
 ## Schritt 6 — check: Klausur-Transfer Dramatic Irony & Character Evaluation
 PRÜFUNGSSZENARIO (KLP NRW Englisch Q1 Inhaltsfeld: Shakespearean Drama / Ambition and Guilt):
@@ -139,7 +161,7 @@ In Act 1, Scene 4 of *Macbeth*, King Duncan remarks upon the previous Thane of C
 > "There's no art / To find the mind's construction in the face: / He was a gentleman on whom I built / An absolute trust." (lines 11–14)
 At that precise moment, Macbeth enters the hall, having already contemplated murdering Duncan in secret.
 
-AUFGABE (examine & evaluate, AFB II/III):
+AUFGABE (examine and evaluate, [AFB II/III]):
 1. Examine the dramatic technique deployed in this scene and explain how it creates tension for the audience. (12 BE)
 2. Evaluate Duncan's tragic gullibility in relation to Macbeth's hypocrisy and the central theme "Fair is foul, and foul is fair". (18 BE)
 
@@ -151,6 +173,20 @@ ERWARTUNGSHORIZONT:
   - Duncan personifies the benevolent, saintly king whose fatal weakness is naive trust and inability to decipher deception. His statement that "there is no art to find the mind's construction in the face" functions as an unwitting prophecy of his own murder.
   - Macbeth exploits this trust through profound hypocrisy: He bows before Duncan with grand declarations of loyalty, wearing a false face to hide his false heart.
   - This dichotomy perfectly embodies the witches' opening paradox: **"Fair is foul, and foul is fair"**. Appearance and reality are inverted: The seemingly honorable hero is a traitorous butcher, while the rightful king walks blindly into his grave.
+
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Dramatic irony with entrance timing (AFB II) | 5 NP | Enger Beleg mit Zeile als Alternativweg
+Duncan gullibility versus Macbeth hypocrisy | 5 NP | Strukturierte Kette mit Zeile als Alternativweg
+Fair-is-foul appearance-reality evaluation (AFB III) | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
+
+KERNSATZ (auswendig):
+- Kernsatz: `Broken verse mirrors broken minds: candle, shadow, player prove Macbeth's nihilism.`
+- Zerlegung: Beleg | Mittel | Funktion
+- Aufschluesselung: Beleg = absolute-trust entrance (I.4) | Mittel = irony timing as suspense | Funktion = appearance-reality verdict
+- Selbsttest: Broken verse mirrors broken minds: candle, shadow, player prove Macbeth's ___.
 
 ## Schritt 7 — check: Format-Check & Scoring
 30 XP Schnelltest zur Verstaendigungssicherung:

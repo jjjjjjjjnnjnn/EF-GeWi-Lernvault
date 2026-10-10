@@ -8,7 +8,7 @@ operatoren: [comment, assess, discuss]
 klausurrelevant: true
 datum: 2026-09-25
 tags: [EF, Englisch, Schreiben]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 # Lernreise: Comment Writing: P.E.E. und Register (L1, Ziel Klausur)
 
@@ -73,6 +73,9 @@ Bezug zum Konzept: `传导句——Strong foe plus fair weight equals trust: ste
 
 [Werkzeug: lego]
 
+AUFGABE (write, [AFB II]):
+Write the blocks below (details in Zhongwen task / English TASK): select for the reader, compress with logic, paraphrase in register, add needed notes and flag gaps.
+
 中文任务：Baue zu einem Thema Thesis, zwei PEE-Ketten und eine Countervoice mit Concession.
 English TASK: Baue zu einem Thema Thesis, zwei PEE-Ketten und eine Countervoice mit Concession.
 TARGET: Three blocks, each with evidence and judgement in four sentences.
@@ -95,10 +98,22 @@ PRIMAERTEXT（Study text: Uniform Comment, study version, 校服立场短文, 15
 > Schools should vote yearly on colours and suppliers. (Z. 14)
 > Fair uniforms unite; fair rules keep them honest. (Z. 15)
 
-HILFE（中文在前）：
-1. 中文：两句交代背景。English: Place the case in two sentences.
-2. 中文：锁两个证据。English: Secure two blocks of evidence.
-3. 中文：效果加判断。English: Add effect and judgement.
+HILFE (direction only, no verdict yet - Zhongwen first):
+- Context dimension: Check speaker, addressee and occasion with context mapping; name them, judge nothing yet.
+- Text dimension: Secure two quotations on PEE chains and countervoice with line numbers (Z.); collect evidence, do not fix the effect yet.
+- Judgement dimension: List weighing criteria for thesis plus PEE plus countervoice; collect measures, do not close the verdict yet.
+
+COMPLETION (Lueckentext):
+- Read the PRIMAERTEXT once without notes, then fill from memory:
+- The PEE chain links Point (Z. 2) plus Evidence (Z. 3) plus ___ (Z. 4).
+- The concession grants ___ but keeps the core (Z. 10-11).
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Kontext und These (thesis plus PEE plus countervoice) | 5 NP | Enger Beleg mit Zeile als Alternativweg
+Zwei Belege mit Zeile (Point plus Evidence Z. 2-4; Countervoice Z. 8-9, Verdict Z. 12) | 5 NP | Strukturierte Kette mit Zeile als Alternativweg
+Wirkung und Urteil (thesis plus PEE plus countervoice) | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
 
 MUSTERLOESUNG: 中文示范：背景一句，证据加效果两句，判断一句。
 English MODEL: Case 45 shows the method in three moves with evidence, effect and judgement.
@@ -110,17 +125,24 @@ Klausur-Satz: `规律句——The comment rule: the nearer the verdict, the stro
 
 ## Schritt 5 — ausprobieren: Das doppelte Spiel Weg A gegen Weg B
 
-VERGLEICH（中文先行）：Weg A 微观做细节，Weg B 宏观定策略。
+VERGLEICH（中文先行）：Weg A 微观做细节，Weg B 宏观定策略。 (选概念: waehle zuerst Nahlektuere oder Kontextrahmen)
 English: Choose the path first (close Way A or distant Way B), then write.
 
-TASK A（中文：哪条线索走近路？）: Which trace needs Way A?
-TASK B（中文：哪个整体问题走远路？）: Which whole-case question needs Way B?
+AUFGABE A (analyse, [AFB II])（中文：哪条线索走近路？）: Which trace needs Way A?
+AUFGABE B (evaluate, [AFB III])（中文：哪个整体问题走远路？）: Which whole-case question needs Way B?
 
-HILFE：细节问选近路Way A，整体问选远路Way B。
+- [Wahl A] Wenn du Weg A waehlst, sammelst du in Schritt 7 Belege der Textnaehe.
+- [Wahl B] Wenn du Weg B waehlst, sammelst du in Schritt 7 Belege der Kontexteinordnung.
 
-中文答案：A近路靠证据，B远路靠背景。
-English ANSWER A: Way A crafts closely: diction, linkers and evidence density sentence by sentence.
-English ANSWER B: Way B plans widely: audience, register ladder and strongest foe decide weight and close.
+Entscheidungsregel fuer die Klausur:
+Lesehinweis: Die ausformulierte Regel steht in der AUFLOESUNG weiter unten; waehle zuerst intuitiv A oder B.
+
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg A oder Weg B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Ueberfuehrt aus Entscheidungsregel: Baue zuerst zwei PEE-Ketten, staerke dann den Gegner fair, urteile erst danach. (Quelle: Studienparaphrase (study version, 15 lines; school uniforms); Original: Comment-Aufsatz (KLP NRW Englisch))
+- Mechanismus A: Way A crafts closely: diction, linkers and evidence density sentence by sentence. (Quelle: wie oben). Dreischritt: Beleg = Point plus Evidence Z. 2-4 | Mittel = Nahlektuere mit Zitatkette | Funktion = sichert das Wie am Text
+- Mechanismus B: Way B plans widely: audience, register ladder and strongest foe decide weight and close. (Quelle: wie oben). Dreischritt: Beleg = Countervoice Z. 8-9, Verdict Z. 12 | Mittel = Kontextrahmen mit Hintergrund | Funktion = erklaert das Warum aus dem Kontext
+- Ein-Satz-Kern: Strong foe plus fair weight equals trust.
 
 Klausur-Satz: `对决句——Close craft secures how, wide plan why; both persuade.`
 
@@ -147,11 +169,28 @@ Klausur-Satz: `易错句——Often confused: opinion needs no evidence; every p
 ROLLE（中文）：你是Opinion page editor，负责审稿。
 English ROLE: You are Opinion page editor.
 SITUATION: Case 45 waits on your desk.
+AUFGABE (evaluate, [AFB III]):
+Evaluate Fall 45 in about 150 words: place the context, secure two anchors with line numbers (Z.), explain effects, and weigh a judgement with outlook.
 TASK（中文）：150词左右，含背景、证据、权衡判断。
 RUBRIC (30 XP): Context (6 XP) | Evidence (10 XP) | Effect plus judgement (10 XP) | Register (4 XP).
 Zeitbox: 2-Minuten-Countdown fuer These plus Gegenstimme, dann schreiben. 中文：2分钟定立场与最强反方再写。
 
+Die RUBRIC steuert das Schreiben (30 XP); der ERWARTUNGSHORIZONT steuert die Klausur-Bewertung (15 NP).
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Einordnung und These (thesis plus PEE plus countervoice) | 5 NP | Enger Beleg mit Zeile als Alternativweg
+Zwei Anker-Belege mit Zeile (Point plus Evidence Z. 2-4; Countervoice Z. 8-9, Verdict Z. 12) | 5 NP | Strukturierte Kette mit Zeile als Alternativweg
+Gewichtetes Urteil mit Ausblick | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
+
+
 Klausur-Satz: `满分句——AFB-III model: Although the foe proves X (evidence), Y weighs heavier by measure M; hence verdict with outlook.`
+
+KERNSATZ (auswendig):
+- Kernsatz: `Steelman the strongest foe, concede small, keep the core: fair weight crowns the verdict.`
+- Zerlegung: Beleg | Mittel | Funktion
+- Aufschluesselung: Beleg = thesis plus two PEE chains (Z.) | Mittel = strongest foe fairly stated plus small concession | Funktion = weighed verdict with outlook
+- Selbsttest: Steelman the strongest foe, concede small, keep the core: fair weight crowns the ___.
 
 ## Schritt 8 — reflexion: Takeaway und Rueckblick aus Fall 45
 

@@ -8,7 +8,7 @@ operatoren: [outline, discuss, evaluate]
 klausurrelevant: true
 datum: 2026-09-25
 tags: [EF, Englisch, Landeskunde]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 # Lernreise: Abitur-Themenfelder: UK, USA, Nigeria, Identitaet, Medien (L1, Ziel Klausur)
 
@@ -65,7 +65,7 @@ Bezug zum Konzept: `Anchor plus contrast equals verdict: one field leads, one sh
 
 [Werkzeug: lego]
 
-AUFGABE: Ordne einen unseen text zwei Feldern zu und formuliere These plus zwei Anker-Belege.
+AUFGABE (analysieren, [AFB II]): Ordne einen unseen text zwei Feldern zu und formuliere These plus zwei Anker-Belege.
 TARGET: Drei Bausteine mit Beleg, je mit Funktion und einer Deutung in vier Saetzen.
 
 PRIMAERTEXT (Study text: Five Fields Morning in Bristol, study version, 150 words unseen, 15 lines):
@@ -86,10 +86,22 @@ PRIMAERTEXT (Study text: Five Fields Morning in Bristol, study version, 150 word
 > Trust, she added, needs source, rival outlet and correction. (Z. 14)
 > We closed the morning with anchored verdicts and open outlooks. (Z. 15)
 
-HILFE:
-1. Schritt 1: Ordne den Fall in zwei Saetzen ein.
-2. Schritt 2: Sichere zwei Bausteine mit Beleg.
-3. Schritt 3: Deute Baustein und Funktion im Fallganzen.
+HILFE (nur Richtung, keine Deutung vorweg):
+- Kontextdimension: Pruefe Anlass und Adressat mit Kontextanalyse; benenne nur Situation und Empfaenger, deute die Funktion noch nicht.
+- Textdimension: Pruefe Feldanker (Ort, Stimme, Zahlen) mit Beleganalyse; sichere zwei Zitate mit Zeile (Z.), ohne die Wirkung festzulegen.
+- Urteilsdimension: Pruefe den Massstab (Leitfeld-Anker plus Kontrastfeld) mit Kriterienanalyse; sammle Kriterien, ohne das Urteil vorwegzunehmen.
+
+COMPLETION (Lueckentext):
+- Lies den PRIMAERTEXT einmal ohne Notizen, dann ergaenze aus dem Gedaechtnis:
+- Das Leitfeld verankert den Text mit ___ (Z. 1-3).
+- Das Kontrastfeld korrigiert mit ___ (Z. 5/11).
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Kontext und These (Leitfeld-Anker plus Kontrastfeld) | 5 NP | Enger Beleg mit Zeile als Alternativweg
+Zwei Belege mit Zeile (five doors Z. 1, valleys Z. 2; debts Z. 5, midnight upload Z. 10-11) | 5 NP | Strukturierte Kette mit Zeile als Alternativweg
+Wirkung und Urteil (Leitfeld-Anker plus Kontrastfeld) | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
 
 MUSTERLOESUNG: Der Fall 52 zeigt das Verfahren in drei Schritten. Erstens sichert ein Beleg den Kern. Zweitens traegt die Funktion die Wirkung. Drittens schliesst die Deutung das Urteil.
 
@@ -99,15 +111,23 @@ Klausur-Satz: `The field rule: the stranger the text, the firmer the anchor.`
 
 ## Schritt 5 — ausprobieren: Das doppelte Spiel Weg A gegen Weg B
 
-VERGLEICH: Weg A arbeitet mikroskopisch (Detail, Beleg, Form), Weg B plant makroskopisch (Strategie, Kontext, Gewicht).
+VERGLEICH: Weg A arbeitet mikroskopisch (Detail, Beleg, Form), Weg B plant makroskopisch (Strategie, Kontext, Gewicht). (选概念: waehle zuerst Nahlektuere oder Kontextrahmen)
 
-AUFGABE A: Welche Spur verlangt Weg A? Begruende mit Beleg.
-AUFGABE B: Welche Frage verlangt Weg B? Begruende mit Kontext.
+AUFGABE A (analysieren, [AFB II]): Welche Spur verlangt Weg A? Begruende mit Beleg.
+AUFGABE B (beurteilen, [AFB III]): Welche Frage verlangt Weg B? Begruende mit Kontext.
 
-HILFE: A fragt nach Form und Naehe, also Weg A. B fragt nach Rolle und Ganzem, also Weg B.
+- [Wahl A] Wenn du Weg A waehlst, sammelst du in Schritt 7 Belege der Textnaehe.
+- [Wahl B] Wenn du Weg B waehlst, sammelst du in Schritt 7 Belege der Kontexteinordnung.
 
-ANTWORT A: Way A reads closely: anchors, switches and figures line by line.
-ANTWORT B: Way B frames widely: history, institutions and exam rubric decide weight and outlook.
+Entscheidungsregel fuer die Klausur:
+Lesehinweis: Die ausformulierte Regel steht in der AUFLOESUNG weiter unten; waehle zuerst intuitiv A oder B.
+
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg A oder Weg B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Ueberfuehrt aus Entscheidungsregel: Ordne den Text zuerst einem Leitfeld zu, hole genau ein Kontrastfeld dazu und urteile nur mit Anker plus Beleg. (Quelle: Studienparaphrase (study version, 15 lines); Originale: UK/USA/Nigeria-Abiturthemen (KLP NRW Englisch))
+- Mechanismus A: Way A reads closely: anchors, switches and figures line by line (Z. 1-11). (Quelle: wie oben). Dreischritt: Beleg = five doors Z. 1, valleys Z. 2 | Mittel = Nahlektuere mit Zitatkette | Funktion = sichert das Wie am Text
+- Mechanismus B: Way B frames widely: history, institutions and exam rubric decide weight and outlook (Z. 12-15). (Quelle: wie oben). Dreischritt: Beleg = debts Z. 5, midnight upload Z. 10-11 | Mittel = Kontextrahmen mit Hintergrund | Funktion = erklaert das Warum aus dem Kontext
+- Ein-Satz-Kern: Ein Feld fuehrt, eines schaerft; Zugehoerigkeit gegen Preis entscheidet.
 
 Klausur-Satz: `Close work secures how, wide framing why; both pass the paper.`
 
@@ -132,11 +152,26 @@ Klausur-Satz: `Often confused: summary is no verdict; anchor plus measure counts
 
 ROLLE: Du bist Exam coach for the finals in der Pruefung.
 SITUATION: Ein Fall liegt unbearbeitet auf dem Tisch und verlangt Einordnung, Belege und Urteil.
-AUFGABE: Verfasse circa 150 Woerter mit Einordnung, zwei Belegen, Funktion, Deutung und Schlussurteil.
+AUFGABE (beurteilen, [AFB III]): Verfasse circa 150 Woerter mit Einordnung, zwei Belegen, Funktion, Deutung und Schlussurteil.
 RUBRIC (30 XP): Einordnung korrekt (6 XP) | Zwei Belege (10 XP) | Funktion plus Deutung (10 XP) | Fachsprache und Schluss (4 XP).
 Zeitbox: 2-Minuten-Countdown fuer Gliederung (Leitfeld plus Kontrastfeld), dann schreiben.
 
+Die RUBRIC steuert das Schreiben (30 XP); der ERWARTUNGSHORIZONT steuert die Klausur-Bewertung (15 NP).
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Einordnung und These (Leitfeld-Anker plus Kontrastfeld) | 5 NP | Enger Beleg mit Zeile als Alternativweg
+Zwei Anker-Belege mit Zeile (five doors Z. 1, valleys Z. 2; debts Z. 5, midnight upload Z. 10-11) | 5 NP | Strukturierte Kette mit Zeile als Alternativweg
+Gewichtetes Urteil mit Ausblick | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
+
+
 Klausur-Satz: `AFB-III model: While the text leads with field A (anchor, line), field B corrects it; hence weighted verdict with outlook.`
+
+KERNSATZ (auswendig):
+- Kernsatz: `Leitfeld verankert den unseen Text, Kontrastfeld schaerft ihn; Zugehoerigkeit gegen Preis abgewogen ergibt das Urteil.`
+- Zerlegung: Beleg | Mittel | Funktion
+- Aufschluesselung: Beleg = unseen Text mit Leitfeld-Anker (Z.) | Mittel = Kontrastfeld als Schaerfung | Funktion = Urteil Zugehoerigkeit gegen Preis mit Ausblick
+- Selbsttest: Leitfeld verankert den unseen Text, Kontrastfeld schaerft ihn; ___ gegen Preis abgewogen ergibt das Urteil.
 
 ## Schritt 8 — reflexion: Takeaway und Rueckblick aus Fall 52
 

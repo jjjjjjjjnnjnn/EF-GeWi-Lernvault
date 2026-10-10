@@ -8,7 +8,7 @@ operatoren: [describe, analyse, interpret]
 klausurrelevant: true
 datum: 2026-09-25
 tags: [EF, Englisch, Textanalyse]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 # Lernreise: Characterisation: Direct and Indirect Techniques (L1, Ziel Klausur)
 
@@ -83,15 +83,27 @@ PRIMAERTEXT (Study text: Tea in Leeds, part one (15 lines), study version, 100-2
 > Practical, she repeats, as if to convince herself. (Z. 14)
 > The clock ticks; the biscuits run out first. (Z. 15)
 
-AUFGABE: Untersuche den Primaertext Zeile fuer Zeile und belege jede Aussage mit Zitat und Zeile.
+AUFGABE (analysieren, [AFB II]): Untersuche den Primaertext Zeile fuer Zeile und belege jede Aussage mit Zitat und Zeile.
 TARGET: Three quotations, each with effect and judgement in four sentences.
 
-HILFE:
-1. Schritt 1: Ordne den Fall in zwei Saetzen ein.
-2. Schritt 2: Sichere zwei Befunde mit Zeile.
-3. Schritt 3: Deute Befund und Funktion im Fallganzen.
+HILFE (nur Richtung, keine Deutung vorweg):
+- Kontextdimension: Pruefe Anlass und Adressat mit Kontextanalyse; benenne nur Situation und Empfaenger, deute die Funktion noch nicht.
+- Textdimension: Pruefe Rede-, Gesten- und Blick-Zeichen mit Beleganalyse; sichere zwei Zitate mit Zeile (Z.), ohne die Wirkung festzulegen.
+- Urteilsdimension: Pruefe den Massstab (Etikett plus Zeichen) mit Kriterienanalyse; sammle Kriterien, ohne das Urteil vorwegzunehmen.
 
 MARKIERAUFTRAG: Markiere mit GELB alle **direkten Etiketten** (plain, practical, parish clock). Markiere mit BLAU die **indirekten Zeichen** (pours, counts, brisk, folds).
+
+COMPLETION (Lueckentext):
+- Lies den PRIMAERTEXT einmal ohne Notizen, dann ergaenze aus dem Gedaechtnis:
+- Das Etikett steht in Z. 1 als ___ (plain, practical).
+- Der Foil Pike schaerft durch ___ (Z. 10-13).
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Kontext und These (Etikett plus Zeichen) | 5 NP | Enger Beleg mit Zeile als Alternativweg
+Zwei Belege mit Zeile (Dreierfragen Z. 3, Kekse-Zaehlen Z. 7; Pike-Uhr Z. 10-13) | 5 NP | Strukturierte Kette mit Zeile als Alternativweg
+Wirkung und Urteil (Etikett plus Zeichen) | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
 
 MUSTERLOESUNG: Der Fall 48 zeigt das Verfahren in drei Schritten. Erstens sichert ein Zitat mit Zeile den Befund. Zweitens benennt die Funktion die Wirkung. Drittens schliesst die Deutung das Urteil.
 
@@ -99,15 +111,23 @@ Klausur-Satz: `Die Regel der Figur: Je öfter das Etikett, desto genauer die Geg
 
 ## Schritt 5 — ausprobieren: Das doppelte Spiel Weg A gegen Weg B
 
-VERGLEICH: Weg A liest mikroskopisch (Text, Stil, Detail), Weg B deutet makroskopisch (Kontext, Geschichte, Ordnung).
+VERGLEICH: Weg A liest mikroskopisch (Text, Stil, Detail), Weg B deutet makroskopisch (Kontext, Geschichte, Ordnung). (选概念: waehle zuerst Nahlektuere oder Kontextrahmen)
 
-AUFGABE A: Welche Spur verlangt Weg A? Begruende mit Zitat und Zeile.
-AUFGABE B: Welche Frage verlangt Weg B? Begruende mit Kontext.
+AUFGABE A (analysieren, [AFB II]): Welche Spur verlangt Weg A? Begruende mit Zitat und Zeile.
+AUFGABE B (beurteilen, [AFB III]): Welche Frage verlangt Weg B? Begruende mit Kontext.
 
-HILFE: A fragt nach Form und Naehe, also Weg A. B fragt nach Rolle und Ganzem, also Weg B.
+- [Wahl A] Wenn du Weg A waehlst, sammelst du in Schritt 7 Belege der Textnaehe.
+- [Wahl B] Wenn du Weg B waehlst, sammelst du in Schritt 7 Belege der Kontexteinordnung.
 
-ANTWORT A: Weg A liest mikroskopisch Rede und Geste: Dreierfragen, Blick auf Kekse und Uhr als Zeichenkette.
-ANTWORT B: Weg B deutet makroskopisch: Gastfamilie, Klassenkode und Foil-Funktion (Pike) als Kontrastfolie.
+Entscheidungsregel fuer die Klausur:
+Lesehinweis: Die ausformulierte Regel steht in der AUFLOESUNG weiter unten; waehle zuerst intuitiv A oder B.
+
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg A oder Weg B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Ueberfuehrt aus Entscheidungsregel: Trenne zuerst Etikett und Zeichen, pruefe dann den Foil in geteilter Szene, entscheide erst am Szenenvergleich. (Quelle: Studienparaphrase (study version, 15 lines; Mrs Hale / Mr Pike); Original: Characterisation-Grundlagen (KLP NRW Englisch))
+- Mechanismus A: Weg A liest mikroskopisch Rede und Geste: Dreierfragen, Blick auf Kekse und Uhr als Zeichenkette (Z. 1-13). (Quelle: wie oben). Dreischritt: Beleg = Dreierfragen Z. 3, Kekse-Zaehlen Z. 7 | Mittel = Nahlektuere mit Zitatkette | Funktion = sichert das Wie am Text
+- Mechanismus B: Weg B deutet makroskopisch: Gastfamilie, Klassenkode und Foil-Funktion (Pike) als Kontrastfolie. (Quelle: wie oben). Dreischritt: Beleg = Pike-Uhr Z. 10-13 | Mittel = Kontextrahmen mit Hintergrund | Funktion = erklaert das Warum aus dem Kontext
+- Ein-Satz-Kern: Etikett plus drei Zeichen ergibt Figur.
 
 Klausur-Satz: `Feinlese sichert das Wie der Zeichen, Kontextwissen das Warum der Rolle; beide schliessen das Urteil.`
 
@@ -132,11 +152,26 @@ Klausur-Satz: `Haeufig verwechselt: Erzaehlurteil ist kein Beweis; erst Szene mi
 
 ROLLE: Du bist Book reviewer for the school magazine in der Pruefung.
 SITUATION: Ein Fall liegt unbearbeitet auf dem Tisch und verlangt Einordnung, Belege und Urteil.
-AUFGABE: Verfasse circa 150 Woerter mit Einordnung, zwei Belegen mit Z., Funktion, Deutung und Schlussurteil.
+AUFGABE (beurteilen, [AFB III]): Verfasse circa 150 Woerter mit Einordnung, zwei Belegen mit Z., Funktion, Deutung und Schlussurteil.
 RUBRIC (30 XP): Einordnung korrekt (6 XP) | Zwei Belege mit Z. (10 XP) | Funktion plus Deutung (10 XP) | Fachsprache und Schluss (4 XP).
 Zeitbox: 2-Minuten-Countdown fuer Etikett-Probe (practical Z. 1, Fuersorge Z. 2, Haerte Z. 8-9), dann schreiben.
 
+Die RUBRIC steuert das Schreiben (30 XP); der ERWARTUNGSHORIZONT steuert die Klausur-Bewertung (15 NP).
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Einordnung und These (Etikett plus Zeichen) | 5 NP | Enger Beleg mit Zeile als Alternativweg
+Zwei Anker-Belege mit Zeile (Dreierfragen Z. 3, Kekse-Zaehlen Z. 7; Pike-Uhr Z. 10-13) | 5 NP | Strukturierte Kette mit Zeile als Alternativweg
+Gewichtetes Urteil mit Ausblick | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
+
+
 Klausur-Satz: `AFB-III-Mustersatz: Das Etikett practical (Z. 1, Z. 14) bestaetigt sich in Fuersorge (Z. 2, Z. 5), bricht aber in Haerte (Z. 8-9); Foil Pike (Z. 10-12) schaerft die Ambivalenz.`
+
+KERNSATZ (auswendig):
+- Kernsatz: `Direktes Etikett plus drei indirekte Zeichen entscheiden: bestaetigt, gebrochen oder entlarvt.`
+- Zerlegung: Beleg | Mittel | Funktion
+- Aufschluesselung: Beleg = direktes Etikett (Z. 1) | Mittel = drei indirekte Zeichen (Rede, Geste, Gewohnheit) | Funktion = Bestaetigung, Bruch oder Entlarvung
+- Selbsttest: Direktes Etikett plus drei indirekte Zeichen entscheiden: bestaetigt, gebrochen oder ___.
 
 ## Schritt 8 — reflexion: Takeaway und Rueckblick aus Fall 48
 

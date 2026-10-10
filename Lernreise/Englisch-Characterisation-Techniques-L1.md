@@ -8,7 +8,7 @@ operatoren: [describe, analyse, interpret]
 klausurrelevant: true
 datum: 2026-09-25
 tags: [EF, Englisch, Textanalyse]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 # Lernreise: Characterisation: Direct and Indirect Techniques (L1, Ziel Klausur)
 
@@ -66,6 +66,9 @@ Bezug zum Konzept: `CN: 标签加三证据等于判断。EN: Label plus three si
 
 [Werkzeug: highlighter]
 
+AUFGABE (analyse, [AFB II]):
+Analyze the PRIMAERTEXT below (details in Zhongwen task / English TASK): secure two quotations with line numbers (Z.), explain each effect, and weigh a judgement.
+
 PRIMAERTEXT（Study text: Platform Two (15 lines)，study version，100-200词）：
 
 > The announcer calls him old Tom, the reliable. (Z. 1)
@@ -88,12 +91,24 @@ PRIMAERTEXT（Study text: Platform Two (15 lines)，study version，100-200词�
 English TASK: Examine the primary text line by line with quotation and line number.
 TARGET: Three quotations, each with effect and judgement in four sentences.
 
-HILFE（中文在前）：
-1. 中文：两句交代背景。English: Place the case in two sentences.
-2. 中文：锁两个证据。English: Secure two quotations.
-3. 中文：效果加判断。English: Add effect and judgement.
+HILFE (direction only, no verdict yet - Zhongwen first):
+- Context dimension: Check speaker, addressee and occasion with context mapping; name them, judge nothing yet.
+- Text dimension: Secure two quotations on speech, act and habit signs with line numbers (Z.); collect evidence, do not fix the effect yet.
+- Judgement dimension: List weighing criteria for label plus three signs; collect measures, do not close the verdict yet.
 
 MARKIERAUFTRAG（双色标注）：CN: 黄色[GELB]标直接标签（reliable, old Tom），蓝色[BLAU]标间接证据（touches, sorry, lifts, offers）。EN: GELB for labels, BLAU for indirect signs.
+
+COMPLETION (Lueckentext):
+- Read the PRIMAERTEXT once without notes, then fill from memory:
+- The label sounds in ___ (Z. 1).
+- The foil Max sharpens by ___ (Z. 6/13).
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Kontext und These (Label plus signs) | 5 NP | Enger Beleg mit Zeile als Alternativweg
+Zwei Belege mit Zeile (cap Z. 2, sorry-pattern Z. 3; whistle code Z. 4, Max foil Z. 6/13) | 5 NP | Strukturierte Kette mit Zeile als Alternativweg
+Wirkung und Urteil (Label plus signs) | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
 
 MUSTERLOESUNG: 中文示范：背景一句，证据加效果两句，判断一句。
 English MODEL: Case 47 shows the method in three moves with quotation, effect and judgement; the cover is blown.
@@ -102,17 +117,24 @@ Klausur-Satz: `CN: 规律是标签越响，越要看代价。EN: The louder the 
 
 ## Schritt 5 — ausprobieren: Das doppelte Spiel Weg A gegen Weg B
 
-VERGLEICH（中文先行）：Weg A 微观细读（文本风格细节），Weg B 宏观语境（历史秩序背景）。
+VERGLEICH（中文先行）：Weg A 微观细读（文本风格细节），Weg B 宏观语境（历史秩序背景）。 (选概念: waehle zuerst Nahlektuere oder Kontextrahmen)
 English: Choose the path first (close Way A or distant Way B), then write.
 
-TASK A（中文：哪条线索走近路？）: Which trace needs Way A?
-TASK B（中文：哪个整体问题走远路？）: Which whole-case question needs Way B?
+AUFGABE A (analyse, [AFB II])（中文：哪条线索走近路？）: Which trace needs Way A?
+AUFGABE B (evaluate, [AFB III])（中文：哪个整体问题走远路？）: Which whole-case question needs Way B?
 
-HILFE：细节问选近路Way A，整体问选远路Way B。
+- [Wahl A] Wenn du Weg A waehlst, sammelst du in Schritt 7 Belege der Textnaehe.
+- [Wahl B] Wenn du Weg B waehlst, sammelst du in Schritt 7 Belege der Kontexteinordnung.
 
-中文答案：A近路靠引文，B远路靠背景。
-English ANSWER A: CN: 微观读称呼、道歉与哨声的模式。EN: Way A tracks cap, sorry-pattern and whistle code.
-English ANSWER B: CN: 宏观读车站阶层与陪衬 Max。EN: Way B frames station hierarchy and foil Max.
+Entscheidungsregel fuer die Klausur:
+Lesehinweis: Die ausformulierte Regel steht in der AUFLOESUNG weiter unten; waehle zuerst intuitiv A oder B.
+
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg A oder Weg B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Ueberfuehrt aus Entscheidungsregel: Trenne zuerst Etikett und Zeichen, pruefe dann den Foil, entscheide erst am Szenenvergleich. (Quelle: Studienparaphrase (study version, 15 lines; old Tom / Max); Original: Characterisation-Grundlagen (KLP NRW Englisch))
+- Mechanismus A: Way A tracks cap, sorry-pattern and whistle code line by line (Z. 1-12). (Quelle: wie oben). Dreischritt: Beleg = cap Z. 2, sorry-pattern Z. 3 | Mittel = Nahlektuere mit Zitatkette | Funktion = sichert das Wie am Text
+- Mechanismus B: Way B frames station hierarchy and foil Max as context (Z. 6/13-15). (Quelle: wie oben). Dreischritt: Beleg = whistle code Z. 4, Max foil Z. 6/13 | Mittel = Kontextrahmen mit Hintergrund | Funktion = erklaert das Warum aus dem Kontext
+- Ein-Satz-Kern: Label plus signs equals figure.
 
 Klausur-Satz: `CN: 微观攒证据，宏观看阶层。EN: Signs accumulate, context ranks them.`
 
@@ -139,11 +161,28 @@ Klausur-Satz: `CN: 易错是把称呼当证明。EN: A nickname proves nothing a
 ROLLE（中文）：你是Book reviewer for the school magazine，负责审稿。
 English ROLE: You are Book reviewer for the school magazine.
 SITUATION: Case 47 waits on your desk.
+AUFGABE (evaluate, [AFB III]):
+Evaluate Fall 47 in about 150 words: place the context, secure two anchors with line numbers (Z.), explain effects, and weigh a judgement with outlook.
 TASK（中文）：150词左右，含背景、证据、权衡判断。
 RUBRIC (30 XP): Context (6 XP) | Quotations (10 XP) | Effect plus judgement (10 XP) | Register (4 XP).
 Zeitbox: 2-Minuten-Countdown fuer Etikett-Plan (reliable Z. 1, sorry Z. 3, towel Z. 10), dann schreiben. 中文：先用2分钟定标签与三证据再写。
 
+Die RUBRIC steuert das Schreiben (30 XP); der ERWARTUNGSHORIZONT steuert die Klausur-Bewertung (15 NP).
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Einordnung und These (Label plus signs) | 5 NP | Enger Beleg mit Zeile als Alternativweg
+Zwei Anker-Belege mit Zeile (cap Z. 2, sorry-pattern Z. 3; whistle code Z. 4, Max foil Z. 6/13) | 5 NP | Strukturierte Kette mit Zeile als Alternativweg
+Gewichtetes Urteil mit Ausblick | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
+
+
 Klausur-Satz: `CN: 满分句须含标签、三证据与陪衬。EN: AFB-III sentence needs label, three signs and foil.`
+
+KERNSATZ (auswendig):
+- Kernsatz: `Label plus three tracked signs decides: confirmed, broken or exposed by the final scene.`
+- Zerlegung: Beleg | Mittel | Funktion
+- Aufschluesselung: Beleg = label (Z. 1) | Mittel = three signs: speech, act, habit | Funktion = confirmed, broken or exposed
+- Selbsttest: Label plus three tracked signs decides: confirmed, broken or ___ by the final scene.
 
 ## Schritt 8 — reflexion: Takeaway und Rueckblick aus Fall 47
 

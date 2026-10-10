@@ -8,7 +8,7 @@ operatoren: [explain, compare, write]
 klausurrelevant: true
 datum: 2026-09-25
 tags: [EF, Englisch, Sprachmittlung]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 # Lernreise: Mediation-Strategien: Register und Kulturtransfer (L1, Ziel Klausur)
 
@@ -73,6 +73,9 @@ Bezug zum Konzept: `传导句——Plain plus system plus check equals usable co
 
 [Werkzeug: lego]
 
+AUFGABE (write, [AFB II]):
+Write the blocks below (details in Zhongwen task / English TASK): select for the reader, compress with logic, paraphrase in register, add needed notes and flag gaps.
+
 中文任务：Baue zu drei Klauseln Plain-Twins, Systemnotiz und Ueberschrift mit Toncheck.
 English TASK: Baue zu drei Klauseln Plain-Twins, Systemnotiz und Ueberschrift mit Toncheck.
 TARGET: Three blocks, each with evidence and judgement in four sentences.
@@ -92,10 +95,22 @@ PRIMAERTEXT（Study text: Riverside Flat Contract, study version, 租房合同�
 > Arrears above one rent trigger a warning letter. (Z. 11)
 > We welcome quiet living and prompt messages. (Z. 12)
 
-HILFE（中文在前）：
-1. 中文：两句交代背景。English: Place the case in two sentences.
-2. 中文：锁两个证据。English: Secure two blocks of evidence.
-3. 中文：效果加判断。English: Add effect and judgement.
+HILFE (direction only, no verdict yet - Zhongwen first):
+- Context dimension: Check speaker, addressee and occasion with context mapping; name them, judge nothing yet.
+- Text dimension: Secure two quotations on terms, modals and numbers with line numbers (Z.); collect evidence, do not fix the effect yet.
+- Judgement dimension: List weighing criteria for plain twins plus system notes; collect measures, do not close the verdict yet.
+
+COMPLETION (Lueckentext):
+- Read the PRIMAERTEXT once without notes, then fill from memory:
+- The twin explains ___ on first use (Z. 2-3).
+- The system note clarifies ___ (Z. 4/8).
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Kontext und These (twins plus system notes) | 5 NP | Enger Beleg mit Zeile als Alternativweg
+Zwei Belege mit Zeile (deposit Z. 2-3; notice Z. 4-5, arrears Z. 11) | 5 NP | Strukturierte Kette mit Zeile als Alternativweg
+Wirkung und Urteil (twins plus system notes) | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
 
 MUSTERLOESUNG: 中文示范：背景一句，证据加效果两句，判断一句。
 English MODEL: Case 33 shows the method in three moves with evidence, effect and judgement.
@@ -106,17 +121,24 @@ Klausur-Satz: `规律句——The strategy rule: the harder the clause, the plai
 
 ## Schritt 5 — ausprobieren: Das doppelte Spiel Weg A gegen Weg B
 
-VERGLEICH（中文先行）：Weg A 微观做细节，Weg B 宏观定策略。
+VERGLEICH（中文先行）：Weg A 微观做细节，Weg B 宏观定策略。 (选概念: waehle zuerst Nahlektuere oder Kontextrahmen)
 English: Choose the path first (close Way A or distant Way B), then write.
 
-TASK A（中文：哪条线索走近路？）: Which trace needs Way A?
-TASK B（中文：哪个整体问题走远路？）: Which whole-case question needs Way B?
+AUFGABE A (analyse, [AFB II])（中文：哪条线索走近路？）: Which trace needs Way A?
+AUFGABE B (evaluate, [AFB III])（中文：哪个整体问题走远路？）: Which whole-case question needs Way B?
 
-HILFE：细节问选近路Way A，整体问选远路Way B。
+- [Wahl A] Wenn du Weg A waehlst, sammelst du in Schritt 7 Belege der Textnaehe.
+- [Wahl B] Wenn du Weg B waehlst, sammelst du in Schritt 7 Belege der Kontexteinordnung.
 
-中文答案：A近路靠证据，B远路靠背景。
-English ANSWER A: Way A twins closely: terms, modals and numbers clause by clause.
-English ANSWER B: Way B transfers widely: systems, readers and risks decide notes and structure.
+Entscheidungsregel fuer die Klausur:
+Lesehinweis: Die ausformulierte Regel steht in der AUFLOESUNG weiter unten; waehle zuerst intuitiv A oder B.
+
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg A oder Weg B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Ueberfuehrt aus Entscheidungsregel: Verzwillinge zuerst jedes Fachwort, notiere dann Systemdifferenz, checke Zahlen rueckwaerts. (Quelle: Studienparaphrase (study version, 12 lines; Riverside Flat); Textsorte: tenancy clauses (mediation DE-EN))
+- Mechanismus A: Way A twins closely: terms, modals and numbers clause by clause. (Quelle: wie oben). Dreischritt: Beleg = deposit Z. 2-3 | Mittel = Nahlektuere mit Zitatkette | Funktion = sichert das Wie am Text
+- Mechanismus B: Way B transfers widely: systems, readers and risks decide notes and structure. (Quelle: wie oben). Dreischritt: Beleg = notice Z. 4-5, arrears Z. 11 | Mittel = Kontextrahmen mit Hintergrund | Funktion = erklaert das Warum aus dem Kontext
+- Ein-Satz-Kern: Twins carry terms.
 
 Klausur-Satz: `对决句——Close twinning secures how, wide transfer why; both help.`
 
@@ -143,11 +165,28 @@ Klausur-Satz: `易错句——Often confused: friendly is not vague; must stays 
 ROLLE（中文）：你是Relocation guide editor，负责审稿。
 English ROLE: You are Relocation guide editor.
 SITUATION: Case 33 waits on your desk.
+AUFGABE (evaluate, [AFB III]):
+Evaluate Fall 33 in about 150 words: place the context, secure two anchors with line numbers (Z.), explain effects, and weigh a judgement with outlook.
 TASK（中文）：150词左右，含背景、证据、权衡判断。
 RUBRIC (30 XP): Context (6 XP) | Evidence (10 XP) | Effect plus judgement (10 XP) | Register (4 XP).
 Zeitbox: 2-Minuten-Countdown fuer Klausel-Twins plus Systemnotiz (Deposit, Notice, Consent), dann schreiben. 中文：先用2分钟定三条款 twins 再写。
 
+Die RUBRIC steuert das Schreiben (30 XP); der ERWARTUNGSHORIZONT steuert die Klausur-Bewertung (15 NP).
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Einordnung und These (twins plus system notes) | 5 NP | Enger Beleg mit Zeile als Alternativweg
+Zwei Anker-Belege mit Zeile (deposit Z. 2-3; notice Z. 4-5, arrears Z. 11) | 5 NP | Strukturierte Kette mit Zeile als Alternativweg
+Gewichtetes Urteil mit Ausblick | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
+
+
 Klausur-Satz: `满分句——AFB-III model: Clauses C1-C3 twinned plainly with system notes S and verified figures yield newcomer-ready text.`
+
+KERNSATZ (auswendig):
+- Kernsatz: `Twin each term plainly, note system gaps, back-check numbers: transfer earns trust.`
+- Zerlegung: Beleg | Mittel | Funktion
+- Aufschluesselung: Beleg = clause with figure (Z.) | Mittel = plain twin plus system note | Funktion = verified target text with tone
+- Selbsttest: Twin each term plainly, note system gaps, back-check numbers: transfer earns ___.
 
 ## Schritt 8 — reflexion: Takeaway und Rueckblick aus Fall 33
 
