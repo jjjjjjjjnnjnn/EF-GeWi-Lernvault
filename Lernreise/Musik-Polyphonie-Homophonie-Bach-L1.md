@@ -8,7 +8,7 @@ operatoren: [beschreiben, analysieren, einordnen]
 klausurrelevant: true
 datum: 2026-09-26
 tags: [EF, Musik, Bach]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 
@@ -36,7 +36,7 @@ Hook (DE): Thomaskirche, Fugenbeginn: Eine Stimme singt allein, dann faellt die 
 
 ## Schritt 2 — entdecken: 5术语装备盒
 
-PRETRAINING术语盒(核心5词,先读三遍中德,合书自测中文→德语):
+PRETRAINING术语盒(核心5词,先读三遍中德,合书自测中文->德语):
 
 中文在上,德语在下:
 
@@ -83,32 +83,52 @@ BEISPIEL(含教具操作与解答):
 
 [Werkzeug: oral-timer]
 
-AUFGABE (analysieren, AFB II):90-Sekunden-Probe gegen den Timer: Zaehle 4 Einsaetze, weise Quinte 1,498 und Engfuehrung am Target nach.达标线:4 Stimmen, Quinte 1,498, Engfuehrung Takt 24, 90 s Rede。
+AUFGABE (analysieren, [AFB II]): Analysiere [AFB II] die Target-Probe in 90 Sekunden; belege jede Aussage mit Zahl und Takt. 90-Sekunden-Probe gegen den Timer: Zaehle 4 Einsaetze, weise Quinte 1,498 und Engfuehrung am Target nach.达标线:4 Stimmen, Quinte 1,498, Engfuehrung Takt 24, 90 s Rede。
 
 Target数值目标:4 Stimmen, Quinte 1,498, Engfuehrung Takt 24, 90 s Rede。
 
 HILFE:
-1. Zaehle Einsaetze mit Takt.
-2. Rechne Quinte mit 1,498.
-3. Benenne Engfuehrung oder Orgelpunkt.
+- Einsatzdimension: Pruefe Einsaetze mit Takttest; notiere nur Zahl und Takt, deute die Stufe noch nicht.
+- Quintdimension: Pruefe Intervall mit Faktorrechnung; sammle nur 1,498, ohne das Urteil vorwegzunehmen.
+- Verdichtungsdimension: Pruefe Engfuehrung mit Taktvergleich; halte nur die Stelle fest, ohne die Deutung zu setzen.
+
+COMPLETION (Lückentext):
+- Lies beide Saetze und ergaenze aus dem Gedaechtnis, ohne zurueckzublaettern:
+- Vier Einsaetze mit Quinte ___ weisen Fuge nach, Engfuehrung draengt.
+- Ordne die Textur als ___ ein und pruefe die Linien ohne Musterloesung.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Einsatzbefund mit Zahlanker | 5 NP | Einsatztabelle als Alternativweg
+Quintanalyse mit Faktorbezug | 5 NP | Intervallrechnung als Alternativweg
+Verdichtungsurteil mit Stellenbeleg | 5 NP | Offenes Urteil mit Formbezug als Alternativweg
+Gesamt: 15 NP
 
 MUSTERLÖSUNG:Einsaetze Takt 1-3-5-7 bauen 4 Stimmen, Antwort auf Quinte 1,498 belegt Fuge, Engfuehrung ab Takt 24 verdichtet. Das Target wird erreicht, weil Zahlen plus Benennung Polyphonie beweisen. Homophonie haette eine Melodie plus Akkorde gezeigt.
 
 `Klausur-Satz: Das Target 4 Stimmen plus 1,498 beweist: Zahl schlaegt Laerm.`
 
-## Schritt 5 — ausprobieren: VERGLEICH技术对抗 Stimmenzaehlen (horizontal: wer setzt wann ein?) vs Klanghoeren (vertikal: voll oder Melodie plus Rest?)
+## Schritt 5 — ausprobieren: VERGLEICH技术对抗 Stimmenzaehlen vs Klanghoeren
 
 VERGLEICH辨别实验(双向辨析,先选程序再解题):【选程序】
 
-VERGLEICH:先选程序—— (i) Stimmenzaehlen (horizontal: wer setzt wann ein?) 还是 (ii) Klanghoeren (vertikal: voll oder Melodie plus Rest?) ——再解题。【选程序:问上限与结构选(i),问兑现与情境选(ii)。口述先说 Ich waehle Verfahren (i)/(ii), weil …】
+VERGLEICH:先选程序—— (i) Stimmenzaehlen 还是 (ii) Klanghoeren ——再解题。
 
-AUFGABE A:Fall A (Fugenbeginn, Exposition): Welcher Weg?
+AUFGABE A:Fall A (Fugenbeginn, Exposition): Welcher Weg? Begruende ohne Mechanismus.
 
-AUFGABE B:Fall B (Liedsatz, Begleitung): Welcher Weg?
+AUFGABE B:Fall B (Liedsatz, Begleitung): Welcher Weg? Begruende ohne Mechanismus.
 
-HILFE:A braucht Einsaetze, also horizontal. B braucht Schichtung, also vertikal.
+HILFE: Pruefe dimensionsgeleitet, welcher Weg passt: Einsatzfrage mit Zaehlansatz spricht fuer Weg (i); Texturfrage mit Hoeransatz spricht fuer Weg (ii). Ordne selbst zu; die Zuordnung wird nicht vorweggenommen.
 
-ANTWORT:A erfordert Weg A mit Taktliste. B erfordert Weg B mit Melodie/Begleitung. Ich waehle A/B, weil Satz es verlangt.
+ANTWORT: Die Zuordnung steht in der AUFLÖSUNG (nach der Wahl lesen); begruende erst selbst ohne Mechanismus.
+
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg (i) oder Weg (ii) lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Ueberfuehrt aus VERGLEICH (Vorwahl-Fassung): VERGLEICH:先选程序—— (i) Stimmenzaehlen (horizontal: wer setzt wann ein?) 还是 (ii) Klanghoeren (vertikal: voll oder Melodie plus Rest?) ——再解题。【选程序:问上限与结构选(i),问兑现与情境选(ii)。口述先说 Ich waehle Verfahren (i)/(ii), weil …】 / Vorwahl-Titel: ## Schritt 5 — ausprobieren: VERGLEICH技术对抗 Stimmenzaehlen (horizontal: wer setzt wann ein?) vs Klanghoeren (vertikal: voll oder Melodie plus Rest?)
+- Ueberfuehrt aus Schritt-5-HILFE (Vorwahl-Fassung): HILFE:A braucht Einsaetze, also horizontal. B braucht Schichtung, also vertikal. / ANTWORT:A erfordert Weg A mit Taktliste. B erfordert Weg B mit Melodie/Begleitung. Ich waehle A/B, weil Satz es verlangt.
+- Mechanismus (i): Stimmenzaehlen folgt Einsatz horizontal mit Takt.
+- Mechanismus (ii): Klanghoeren prueft Schichtung vertikal.
+- Ein-Satz-Kern: Einsaetze zaehlen verraet Fuehrung, Zahl schlaegt Laerm.
 
 `Klausur-Satz: Horizontal oder vertikal: Satz waehlt den Weg.`
 
@@ -136,7 +156,22 @@ CHECK检索默写(自测3题,与答案配对):
 ## Schritt 7 — szenario: Klausurtransfer — Kantor Thomaskirche
 中文:你是Kantor Thomaskirche,在Leipziger Thomaskirche, Wachet-auf-Fuge (4 Stimmen, 72 BPM)中必须用德语连贯口述(约90秒)诊断、措施与数值目标(4 Stimmen, Quinte 1,498, Engfuehrung Takt 24, 90 s Rede),并以术语举证。
 ROLLE: Du bist Kantor Thomaskirche. SITUATION: In Leipzig musst du 90 Sekunden lang Einsaetze, Quinte und Target (4 Stimmen) verteidigen.
+AUFGABE (darstellen & beurteilen, [AFB II/III]): Stelle [AFB II] Diagnose und Massnahme mit Target-Beleg dar und beurteile [AFB III] die Verfahrenswahl.
+
 RUBRIC (30 XP):诊断术语8分 | 措施与目标举证10分 | 程序选择对比7分 | 德语表达5分。
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Diagnose mit Stimmbegriffen und Targetanker | 5 NP | Begriffsvergleich als Alternativweg
+Massnahme mit 1,498-Beleg | 5 NP | Faktorrechnung als Alternativweg
+Verfahrenswahl mit Richtungsbeleg | 5 NP | Horizontal-Vertikal-Vergleich als Alternativweg
+Gesamt: 15 NP
+
+KERNSATZ (auswendig):
+- Kernsatz: `Einsaetze zaehlen verraet Fuehrung, Zahl schlaegt Laerm.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = Stimmeinsatz als Subjekt | Mechanismus = Quintantwort mit Verdichtung als Mechanismus | Urteil = Urteil auf Satzform
+- Selbsttest: Einsaetze zaehlen verraet Fuehrung, Zahl schlaegt ___.
 
 `Klausur-Satz: AFB-III-Mustersatz: Die Fugenwirkung entsteht, weil vier Subjekteinsaetze mit Quintantwort 1,498 und Engfuehrung verdichten; Taktliste sichert volle Punktzahl.`
 

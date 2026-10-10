@@ -8,7 +8,7 @@ operatoren: [analysieren, erlaeutern, vergleichen]
 klausurrelevant: true
 datum: 2026-10-03
 tags: [EF, Musik, Jazz, Blues, Harmonielehre, Improvisation]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Jazz-Harmonik und das zwoelftaktige Blues-Schema (L1, Ziel Klausur)
@@ -31,7 +31,7 @@ Hook / Phaenomen: Egal ob Jimi Hendrix, The Rolling Stones, Chuck Berry oder Daf
 `Klausur-Satz: Das zwoelftaktige Blues-Schema bildet die harmonische und formale Matrix des Blues und des Jazz, charakterisiert durch die Stufenfolge I-IV-V und die Integration expressiver Blue Notes.`
 
 ## Schritt 2 — entdecken: Ausruestungskiste der Jazz-Unit
-PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
+PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文->德语，Evidenz：pretraining降认知负荷）：
 
 中文在上，德语在下：
 
@@ -83,7 +83,7 @@ BEISPIEL（正确例题示范，含教具操作与解答）：
 
 [Werkzeug: lego]
 
-AUFGABE (analysieren & erlaeutern, AFB I/II)：
+AUFGABE (analysieren & erlaeutern, [AFB I/II])：Analysiere [AFB I/II] den Befund und erlaeutere [AFB I/II] die Wirkung anhand der unten angegebenen Takte und Parameter. 
 Im modernen Bebop-Jazz (z.B. Charlie Parker, "Blues for Alice") wird das schlichte Blues-Schema durch Jazz-Harmonik drastisch angereichert (Bird Blues).
 In F-Dur lauten die Takte 9 bis 12 wie folgt:
 - Takt 9: $G\text{m}^7$ (Gm7)
@@ -94,10 +94,21 @@ In F-Dur lauten die Takte 9 bis 12 wie folgt:
 2. Erlaeutern Sie die Funktion des letzten Taktes (Takt 12) fuer die Endlosschleife einer Jazz-Improvisation. (20 BE)
 
 HILFE:
-1. Schritt 1: Tonart F-Dur: Stufe I = F, II = Gm, V = C.
-2. Schritt 2: Takt 9 ($G\text{m}^7$) und Takt 10 ($C^7$) bilden eine klassische II-V-Kadenz in Bezug auf das Ziel in Takt 11 ($F^{\text{maj}7}$).
-3. Schritt 3: In Takt 11 wird $D^7$ als Zwischendominante (V von Gm) eingefuegt, um Takt 12 vorzubereiten.
-4. Schritt 4: Takt 12 bildet den "Turnaround" (II-V), der die Rueckkehr zur Tonika in Takt 1 (Chorus 2) erzwingt.
+- Stufendimension: Pruefe Akkorde mit Stufentest; notiere nur die Stufen, deute die Funktion noch nicht.
+- Blue-Note-Dimension: Pruefe Reibung mit Skalenvergleich; sammle nur gesenkte Stufen, ohne das Urteil vorwegzunehmen.
+- Turnarounddimension: Pruefe Schlusswendung mit Taktvergleich; halte nur die Takte fest, ohne die Deutung zu setzen.
+
+COMPLETION (Lückentext):
+- Lies beide Saetze und ergaenze aus dem Gedaechtnis, ohne zurueckzublaettern:
+- Takt 9 und 10 bilden ___ Kadenz zum Ziel in Takt 11.
+- Ordne D7 als ___ ein und pruefe Takt 12 ohne Musterloesung.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Stufenbefund mit F-Dur-Anker | 5 NP | Stufentabelle als Alternativweg
+Kadenzenanalyse mit II-V-Bezug | 5 NP | Akkordvergleich als Alternativweg
+Chorusurteil mit Rueckkehrbeleg | 5 NP | Offenes Urteil mit Formbezug als Alternativweg
+Gesamt: 15 NP
 
 MUSTERLÖSUNG:
 1. Harmonische Analyse der Takte 9–12:
@@ -111,13 +122,29 @@ MUSTERLÖSUNG:
 ## Schritt 5 — ausprobieren: Duell der Tonsysteme: Klassik vs. Jazz
 
 VERGLEICH: Europaeeische Klassische Funktionsharmonik vs. Afroamerikanische Jazz-Harmonik
+- Position A (Klassische Funktionsharmonik / Reine Intervalle): Neutralfassung fuer die Wahl.
+- [Weg A] Wenn du Weg A waehlst, arbeitest du in Schritt 7 vor allem mit Befund, Zahl und Zuordnung.
+- Position B (Jazz-Harmonik / Tension & modal colours): Neutralfassung fuer die Wahl.
+- [Weg B] Wenn du Weg B waehlst, arbeitest du in Schritt 7 vor allem mit Kette, Deutung und Urteil.
 
+AUFGABE A: Welche Pruefgroesse verlangt Befund und Rechnung? Begruende ohne Mechanismus.
+AUFGABE B: Welche Frage verlangt Kette und Deutung? Begruende ohne Mechanismus.
+
+HILFE: Pruefe dimensionsgeleitet, welcher Weg passt: Formfrage mit Stufenschema spricht fuer Befund und Weg A; Ausdrucksfrage mit Reibungsvergleich spricht fuer Kette und Weg B. Ordne selbst zu; die Zuordnung wird nicht vorweggenommen.
+
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg A oder Weg B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Ueberfuehrt aus VERGLEICH (Vorwahl-Fassung):
 - Position A (Klassische Funktionsharmonik / Reine Intervalle):
   - Prinzip: Strikte Trennung von Konsonanz (Ruhe) und Dissonanz (Spannung). Septimen und Dissonanzen sind Leittoene, die streng nach unten oder oben in den naechsten Konsonanzton aufgeloest werden muessen.
   - Form: Geschlossene architektonische Formen (Sonatensatz, Rondo), Partiturtreue, Werkbegriff steht ueber dem Interpreten.
 - Position B (Jazz-Harmonik / Tension & modal colours):
   - Prinzip: Dissonanzen (Septimen, Nonen, Undezimen, Tredezimen) gehoeren konstitutiv zum Grundklang. Dreiklaenge gelten als langweilig und unvollstaendig; jeder Akkord hat Farbtone ("Colour Tones").
   - Form: Zyklisches Wiederholen des Schemas (Chorus-Prinzip), der Interpret und die Spontanitaet im Moment der Improvisation stehen ueber dem Notentext.
+- Ueberfuehrt aus Schritt-5-HILFE (Vorwahl-Fassung): Kein Spoiler in Vorwahl-HILFE bestaetigt, Vorwahl-Fassung enthielt keine HILFE mit Loesungszuordnung.
+- Mechanismus A: Klassik nutzt reine Intervalle mit Kadenz.
+- Mechanismus B: Jazz reibt Blue Notes mit Tension und Farbe.
+- Ein-Satz-Kern: Blue Notes reiben Moll gegen Dur ueber I-IV-V-Schema.
 
 Entscheidungsregel fuer die Klausur:
 Wird nach `Improvisationsprinzipien` gefragt, immer die Unterscheidung zwischen themengebundener Paraphrase-Improvisation (Melodie veraendern) und freier Chorus-Improvisation ueber Changes (Skalen & Akkordtoene) treffen!
@@ -127,15 +154,22 @@ PRÜFUNGSSZENARIO (KLP NRW Musik EF Inhaltsfeld 2: Entwicklungen von Musik / Kul
 
 Gegeben ist der Songtext und das Lead-Sheet von Billie Holidays "Strange Fruit" (1939) sowie ein historischer Bericht ueber die Lynchjustiz in den US-Suedstaaten der 1930er Jahre.
 
-AUFGABE (analysieren & interpretieren, AFB II/III):
-1. Analysieren Sie die Verwendung von harmonischer Trübung und Moll-Tonalitaet in "Strange Fruit". (12 BE)
-2. Interpretieren Sie den Song vor dem Hintergrund der Buergerrechtskaempfe als politisches Manifest gegen Rassismus. (18 BE)
+AUFGABE (analysieren & interpretieren, [AFB II/III]): Analysiere [AFB II/III] den Befund und interpretiere [AFB II/III] die Wirkung anhand der unten angegebenen Takte und Parameter. 
+1. Analysieren Sie die Verwendung von harmonischer Trübung und Moll-Tonalitaet in "Strange Fruit". [AFB II] (12 BE)
+2. Interpretieren Sie den Song vor dem Hintergrund der Buergerrechtskaempfe als politisches Manifest gegen Rassismus. [AFB III] (18 BE)
 
 ERWARTUNGSHORIZONT:
-- AFB II: "Strange Fruit" verzichtet bewusst auf das beschwingte Swing-Tempo. Die Harmonik ist gepraegt von schmerzhaften Dissonanzen, elegischem Moll und gedehnten Pausen. Die Blue Notes wirken nicht melancholisch-gemuetlich, sondern klaegend und zerschneidend. Die Gesangslinie verharrt in tiefer Lage, bevor sie in verzweifelte Ausbrueche muendet.
-- AFB III: Der Song ist einer der fruehesten und radikalsten musikalischen Proteste gegen die rassistische Gewalt gegen Schwarze im Sueden ("Southern trees bear a strange fruit, blood on the leaves and blood at the root"). Holiday entreisst den Jazz der reinen Tanz- und Unterhaltungsfunktion fuer weisse Clubbesucher und macht ihn zur schonungslosen Waffe der Anklage und historischen Zeugenschaft.
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Truebungsbefund mit Mollanker | 5 NP | Stimmungsvergleich als Alternativweg
+Kontextanalyse mit Buergerrechtsbezug | 5 NP | Quellenvergleich als Alternativweg
+Manifesturteil mit Wirkungsbeleg | 5 NP | Offenes Urteil mit Epochenbezug als Alternativweg
+Gesamt: 15 NP
+- [AFB II]: "Strange Fruit" verzichtet bewusst auf das beschwingte Swing-Tempo. Die Harmonik ist gepraegt von schmerzhaften Dissonanzen, elegischem Moll und gedehnten Pausen. Die Blue Notes wirken nicht melancholisch-gemuetlich, sondern klaegend und zerschneidend. Die Gesangslinie verharrt in tiefer Lage, bevor sie in verzweifelte Ausbrueche muendet.
+- [AFB III]: Der Song ist einer der fruehesten und radikalsten musikalischen Proteste gegen die rassistische Gewalt gegen Schwarze im Sueden ("Southern trees bear a strange fruit, blood on the leaves and blood at the root"). Holiday entreisst den Jazz der reinen Tanz- und Unterhaltungsfunktion fuer weisse Clubbesucher und macht ihn zur schonungslosen Waffe der Anklage und historischen Zeugenschaft.
 
 ## Schritt 7 — check: Format-Check & Scoring
+AUFGABE (benennen & erklaeren, [AFB I]): Benenne [AFB I] die drei Kernbegriffe und erklaere [AFB I] jeden in einem Satz; nutze die FRAGE-Antwort-Paare unten als Beleg.
 30 XP Schnelltest zur Verstaendigungssicherung:
 
 FRAGE: Welche drei harmonischen Hauptstufen bilden das Rueckgrat des zwoelftaktigen Blues-Schemas?
@@ -146,6 +180,19 @@ ANTWORT: Die 3. Stufe (Terz), die 5. Stufe (Quinte) und die 7. Stufe (Septime).
 
 FRAGE: Wie nennt man die archetypische Jazz-Kadenzenfolge aus drei Akkorden, die auf Quintfaellen basiert?
 ANTWORT: II-V-I-Verbindung.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Schemabefund mit I-IV-V-Test | 5 NP | Schematabelle als Alternativweg
+Blue-Note-Analyse mit Senkungsbezug | 5 NP | Skalenvergleich als Alternativweg
+Kadenzurteil mit Turnaroundbeleg | 5 NP | Offenes Urteil mit Chorusbezug als Alternativweg
+Gesamt: 15 NP
+
+KERNSATZ (auswendig):
+- Kernsatz: `Blue Notes reiben Moll gegen Dur ueber I-IV-V-Schema.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = Blue Note als Subjekt | Mechanismus = Mollreibung ueber I-IV-V als Mechanismus | Urteil = Urteil auf Bluesform
+- Selbsttest: Blue Notes reiben Moll gegen Dur ueber ___.
 
 ## Schritt 8 — reflexion: Meisterschaft & Naechste Mission
 REFLEXION:

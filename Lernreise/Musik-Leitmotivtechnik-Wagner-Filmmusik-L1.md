@@ -8,7 +8,7 @@ operatoren: [beschreiben, erklaeren, beurteilen]
 klausurrelevant: true
 datum: 2026-09-26
 tags: [EF, Musik, Analyse]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 
@@ -36,7 +36,7 @@ Hook (DE): Walkuerenritt ertönt, und jeder weiss: Jetzt wird geflogen, nicht ge
 
 ## Schritt 2 — entdecken: 5术语装备盒
 
-PRETRAINING术语盒(核心5词,先读三遍中德,合书自测中文→德语):
+PRETRAINING术语盒(核心5词,先读三遍中德,合书自测中文->德语):
 
 中文在上,德语在下:
 
@@ -83,32 +83,52 @@ BEISPIEL(含教具操作与解答):
 
 [Werkzeug: oral-timer]
 
-AUFGABE (analysieren, AFB II):90-Sekunden-Probe gegen den Timer: Verfolge Horn durch Dur und Moll mit Halbton-Rechnung am Target.达标线:Walkuere E-Dur, Trauer e-Moll, Halbton-Nachweis, 90 s Rede。
+AUFGABE (analysieren, [AFB II]): Analysiere [AFB II] die Target-Probe in 90 Sekunden; belege jede Aussage mit Zahl und Takt. 90-Sekunden-Probe gegen den Timer: Verfolge Horn durch Dur und Moll mit Halbton-Rechnung am Target.达标线:Walkuere E-Dur, Trauer e-Moll, Halbton-Nachweis, 90 s Rede。
 
 Target数值目标:Walkuere E-Dur, Trauer e-Moll, Halbton-Nachweis, 90 s Rede。
 
 HILFE:
-1. Benenne Traeger plus Gestalt.
-2. Weise Transformation mit Halbton nach.
-3. Deute Kombination als Beziehung.
+- Traegerdimension: Pruefe Gestalt mit Motivtest; notiere nur Traeger und Gestalt, deute den Wandel noch nicht.
+- Transformationsdimension: Pruefe Wandel mit Halbtonnachweis; sammle nur die Halptoene, ohne das Urteil vorwegzunehmen.
+- Kombinationsdimension: Pruefe Ueberlagerung mit Besetzungsvergleich; halte nur die Schichtung fest, ohne die Deutung zu setzen.
+
+COMPLETION (Lückentext):
+- Lies beide Saetze und ergaenze aus dem Gedaechtnis, ohne zurueckzublaettern:
+- Horn durch Walkuere E-Dur und Trauer e-Moll traegt ___, Halbton weist nach.
+- Ordne die Schichtung als ___ ein und pruefe die Tonart ohne Musterloesung.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Traegerbefund mit Gestaltanker | 5 NP | Motivtabelle als Alternativweg
+Transformationsanalyse mit Halbtonbezug | 5 NP | Intervallnachweis als Alternativweg
+Beziehungsurteil mit Schichtungsbeleg | 5 NP | Offenes Urteil mit Szenenbezug als Alternativweg
+Gesamt: 15 NP
 
 MUSTERLÖSUNG:Horn in E-Dur tauft Walkuere, in e-Moll mit Terz minus Halbton trauert sie; Kombination mit Ring-Motiv deutet Fall. Das Target wird erreicht, weil Traeger plus Rechnung plus Deutung klingen. Ohne Transformation waere es Zitat, nicht Kommentar.
 
 `Klausur-Satz: Das Target E/e mit Halbton beweist: Physik wird Schicksal.`
 
-## Schritt 5 — ausprobieren: VERGLEICH技术对抗 Werkhoeren (Wagner: System im Ring) vs Filmhoeren (Williams: Funktion im Bild)
+## Schritt 5 — ausprobieren: VERGLEICH技术对抗 Werkhoeren vs Filmhoeren
 
 VERGLEICH辨别实验(双向辨析,先选程序再解题):【选程序】
 
-VERGLEICH:先选程序—— (i) Werkhoeren (Wagner: System im Ring) 还是 (ii) Filmhoeren (Williams: Funktion im Bild) ——再解题。【选程序:问上限与结构选(i),问兑现与情境选(ii)。口述先说 Ich waehle Verfahren (i)/(ii), weil …】
+VERGLEICH:先选程序—— (i) Werkhoeren 还是 (ii) Filmhoeren ——再解题。
 
-AUFGABE A:Fall A (Ring-Szene ohne Bild): Welcher Weg?
+AUFGABE A:Fall A (Ring-Szene ohne Bild): Welcher Weg? Begruende ohne Mechanismus.
 
-AUFGABE B:Fall B (Filmszene mit Bild): Welcher Weg?
+AUFGABE B:Fall B (Filmszene mit Bild): Welcher Weg? Begruende ohne Mechanismus.
 
-HILFE:A braucht Netz, also Werk. B braucht Bildbezug, also Funktion.
+HILFE: Pruefe dimensionsgeleitet, welcher Weg passt: Systemfrage mit Werkansatz spricht fuer Weg (i); Bildfrage mit Funktionsansatz spricht fuer Weg (ii). Ordne selbst zu; die Zuordnung wird nicht vorweggenommen.
 
-ANTWORT:A erfordert Weg A mit Motivnetz. B erfordert Weg B mit paraphrasieren/polarisieren. Ich waehle A/B, weil Medium es verlangt.
+ANTWORT: Die Zuordnung steht in der AUFLÖSUNG (nach der Wahl lesen); begruende erst selbst ohne Mechanismus.
+
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg (i) oder Weg (ii) lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Ueberfuehrt aus VERGLEICH (Vorwahl-Fassung): VERGLEICH:先选程序—— (i) Werkhoeren (Wagner: System im Ring) 还是 (ii) Filmhoeren (Williams: Funktion im Bild) ——再解题。【选程序:问上限与结构选(i),问兑现与情境选(ii)。口述先说 Ich waehle Verfahren (i)/(ii), weil …】 / Vorwahl-Titel: ## Schritt 5 — ausprobieren: VERGLEICH技术对抗 Werkhoeren (Wagner: System im Ring) vs Filmhoeren (Williams: Funktion im Bild)
+- Ueberfuehrt aus Schritt-5-HILFE (Vorwahl-Fassung): HILFE:A braucht Netz, also Werk. B braucht Bildbezug, also Funktion. / ANTWORT:A erfordert Weg A mit Motivnetz. B erfordert Weg B mit paraphrasieren/polarisieren. Ich waehle A/B, weil Medium es verlangt.
+- Mechanismus (i): Werkhoeren ordnet System im Ring ohne Bild.
+- Mechanismus (ii): Filmhoeren deutet Funktion im Bild.
+- Ein-Satz-Kern: Motiv tauft Traeger, Wandel deutet Halbton.
 
 `Klausur-Satz: Werk oder Film: Medium waehlt den Weg.`
 
@@ -136,7 +156,22 @@ CHECK检索默写(自测3题,与答案配对):
 ## Schritt 7 — szenario: Klausurtransfer — Dramaturg Bayreuth
 中文:你是Dramaturg Bayreuth,在Bayreuther Festspielhaus, Walkuerenritt (E-Dur-Signalfanfare)中必须用德语连贯口述(约90秒)诊断、措施与数值目标(Walkuere E-Dur, Trauer e-Moll, Halbton-Nachweis, 90 s Rede),并以术语举证。
 ROLLE: Du bist Dramaturg Bayreuth. SITUATION: In Bayreuth musst du 90 Sekunden lang Traeger, Halbton und Target (E/e) verteidigen.
+AUFGABE (darstellen & beurteilen, [AFB II/III]): Stelle [AFB II] Diagnose und Massnahme mit Target-Beleg dar und beurteile [AFB III] die Verfahrenswahl.
+
 RUBRIC (30 XP):诊断术语8分 | 措施与目标举证10分 | 程序选择对比7分 | 德语表达5分。
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Diagnose mit Motivbegriffen und Targetanker | 5 NP | Begriffsvergleich als Alternativweg
+Massnahme mit Halbtonnachweis | 5 NP | Intervallrechnung als Alternativweg
+Verfahrenswahl mit Medienbeleg | 5 NP | Werk-Film-Vergleich als Alternativweg
+Gesamt: 15 NP
+
+KERNSATZ (auswendig):
+- Kernsatz: `Motiv tauft Traeger, Wandel deutet Halbton.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = Hornmotiv als Subjekt | Mechanismus = Halbtonwandel und Schichtung als Mechanismus | Urteil = Urteil auf Handlungsdeutung
+- Selbsttest: Motiv tauft Traeger, Wandel deutet ___.
 
 `Klausur-Satz: AFB-III-Mustersatz: Die Trauerwirkung entsteht, weil Horn-DNA mit Terz minus Halbton nach e-Moll kippt und Ring-Kombination Fall deutet; Traeger plus Rechnung sichern volle Punktzahl.`
 

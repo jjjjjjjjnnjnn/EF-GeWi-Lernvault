@@ -8,7 +8,7 @@ operatoren: [beschreiben, analysieren, deuten]
 klausurrelevant: true
 datum: 2026-10-03
 tags: [EF, Musik, Programmmusik, Barock]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Programmmusik und Tonmalerei bei Vivaldi (L1, Ziel Klausur)
@@ -31,7 +31,7 @@ Hook / Phaenomen: Kann eine Streichergruppe das Bellen eines Hofhundes imitieren
 `Klausur-Satz: Programmmusik ist Instrumentalmusik mit einem aussermusikalischen Inhalt (Text, Bild, Naturphaenomen), der dem Hoerer durch Tonmalerei und musikalische Rhetorik vermittelt wird.`
 
 ## Schritt 2 — entdecken: Ausruestungskiste der Hoeranalyse
-PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
+PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文->德语，Evidenz：pretraining降认知负荷）：
 
 中文在上，德语在下：
 
@@ -90,14 +90,26 @@ BEISPIEL（正确例题示范，含教具操作与解答）：
 
 [Werkzeug: lego]
 
-AUFGABE (analysieren & deuten, AFB I/II)：Gegeben ist das Notenbeispiel aus Vivaldis "L'Estate" (Der Sommer), 3. Satz (Presto). Die Streicher spielen ununterbrochen absteigende Sechzehntelnoten im Tutti bei gleichzeitig extrem schnellen Tonrepetitionen im Kontrabass im ff.
+AUFGABE (analysieren & deuten, [AFB I/II])：Analysiere [AFB I/II] den Befund und deute [AFB I/II] die Wirkung anhand der unten angegebenen Takte und Parameter. Gegeben ist das Notenbeispiel aus Vivaldis "L'Estate" (Der Sommer), 3. Satz (Presto). Die Streicher spielen ununterbrochen absteigende Sechzehntelnoten im Tutti bei gleichzeitig extrem schnellen Tonrepetitionen im Kontrabass im ff.
 1. Beschreiben Sie die verwendeten musikalischen Parameter (Rhythmik, Dynamik, Artikulation). (10 BE)
 2. Deuten Sie die tonmalerische Absicht im Kontext des Programms "Sommergewitter". (20 BE)
 
 HILFE:
-1. Schritt 1: Parameter isolieren: Tempo Presto, Takt 3/4, Dynamik ff, Artikulation Staccato/Tremolo.
-2. Schritt 2: Verknuepfung zur Vorlage: Das Sonett spricht von herabstuerzenden Hagelkoernern, die das reife Getreide vernichten.
-3. Schritt 3: Deutungssatz formulieren: "Die unerbittlichen Sechzehntel-Kaskaden repraesentieren..."
+- Parameterdimension: Pruefe Tempo und Dynamik mit Partiturtest; notiere nur die Werte, deute das Bild noch nicht.
+- Sonettdimension: Pruefe Vorlage mit Textvergleich; sammle nur Hagelstellen, ohne das Urteil vorwegzunehmen.
+- Deutungsdimension: Pruefe Abbildung mit Motivvergleich; halte nur die Figuren fest, ohne die Deutung zu setzen.
+
+COMPLETION (Lückentext):
+- Lies beide Saetze und ergaenze aus dem Gedaechtnis, ohne zurueckzublaettern:
+- Sechzehntel-Kaskaden im ___ malen Hagelsturm.
+- Ordne das Tremolo als ___ ein und pruefe die Streicher ohne Musterloesung.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Parameterbefund mit Tempotest | 5 NP | Parametertabelle als Alternativweg
+Vorlagenanalyse mit Sonettbezug | 5 NP | Textvergleich als Alternativweg
+Bildurteil mit Kaskadenbeleg | 5 NP | Offenes Urteil mit Satzbezug als Alternativweg
+Gesamt: 15 NP
 
 MUSTERLÖSUNG:
 1. Musikalische Parameter: Das Tempo ist ein rasendes Presto im Dreivierteltakt. Rhythmisch dominiert ein pausenloser, perkussiver Fluss gleichfoermiger Sechzehntelnoten in allen Streicherstimmen, unterlegt mit haehmernden Tonrepetitionen des Basso Continuo. Die Dynamik steht im schroffen Fortissimo (ff) ohne jedes Nachlassen. Die Artikulation ist spitz, martellato (gehaemmert) und virtuos abwaerts gerichtet.
@@ -108,13 +120,29 @@ MUSTERLÖSUNG:
 ## Schritt 5 — ausprobieren: Duell der Kunstauffassungen
 
 VERGLEICH: Programmmusik vs. Absolute Musik
+- Position A (Weg A): Neutralfassung fuer die Wahl.
+- [Weg A] Wenn du Weg A waehlst, arbeitest du in Schritt 7 vor allem mit Befund, Zahl und Zuordnung.
+- Position B (Weg B): Neutralfassung fuer die Wahl.
+- [Weg B] Wenn du Weg B waehlst, arbeitest du in Schritt 7 vor allem mit Kette, Deutung und Urteil.
 
+AUFGABE A: Welche Pruefgroesse verlangt Befund und Rechnung? Begruende ohne Mechanismus.
+AUFGABE B: Welche Frage verlangt Kette und Deutung? Begruende ohne Mechanismus.
+
+HILFE: Pruefe dimensionsgeleitet, welcher Weg passt: Inhaltsfrage mit Bildvergleich spricht fuer Befund und Weg A; Formfrage mit Proportionsvergleich spricht fuer Kette und Weg B. Ordne selbst zu; die Zuordnung wird nicht vorweggenommen.
+
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg A oder Weg B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Ueberfuehrt aus VERGLEICH (Vorwahl-Fassung):
 - Position A: Programmmusik (Berlioz, Liszt, Richard Strauss, Vivaldi):
   - Philosophie: Musik ist die ausdrucksstaerkste aller Kuenste und kann poetische Ideen, Bilder und seelische Dramen praeziser darstellen als Worte.
   - Formprinzip: Die Form folgt dem Inhalt ("form follows function"); traditionelle Schemata werden zugunsten des narrativen Flusses aufgebrochen.
 - Position B: Absolute Musik (Hanslick, Brahms, Strawinsky):
   - Philosophie: Musik bedeutet nichts ausser sich selbst. Ihr Wesen besteht in "toenend bewegten Formen", nicht in Geschichten ueber Hirten oder Gewitter.
   - Formprinzip: Strenge architektonische Logik (Sonatenhauptsatzform, Fuge, Variation); Programmmusik wird als "unreine" Literatur-Illustration abgewertet.
+- Ueberfuehrt aus Schritt-5-HILFE (Vorwahl-Fassung): Kein Spoiler in Vorwahl-HILFE bestaetigt, Vorwahl-Fassung enthielt keine HILFE mit Loesungszuordnung.
+- Mechanismus A: Programmmusik erzaehlt aussermusikalischen Inhalt.
+- Mechanismus B: Absolute Musik formt nur Toene.
+- Ein-Satz-Kern: Sechzehntel-Kaskaden im Fortissimo malen Hagelsturm.
 
 Entscheidungsregel fuer die Klausur:
 Wird nach `Deuten` gefragt, immer die dialektische Spannung erwaehnen: Vivaldi war so genial, weil seine Werke auch ohne Kenntnis des Sonetts als perfekte Instrumentalmusik funktionieren!
@@ -125,15 +153,22 @@ PRÜFUNGSSZENARIO (KLP NRW Musik EF Inhaltsfeld 1: Bedeutungen von Musik):
 Auszug aus einem Rezensionsbericht der Musikgeschichte:
 > "Vivaldis Jahreszeiten sind keine Musik mehr, sondern Schaustellerei auf dem Jahrmarkt. Ein Orchester soll Harmonie stiften und die Goettlichkeit der Proportionen spiegeln, statt wie ein Bauernhof zu gackern und zu bellen."
 
-AUFGABE (eroertern & beurteilen, AFB II/III):
-1. Arbeiten Sie die Vorwuerfe gegen Vivaldis tonmalerischen Stil heraus. (12 BE)
-2. Nehmen Sie Stellung: Handelt es sich bei Vivaldis Programmmusik um billige Nachahmung oder um eine Hoechstleistung musikalischer Semantik? (18 BE)
+AUFGABE (eroertern & beurteilen, [AFB II/III]): Eroertere [AFB II/III] den Befund und beurteile [AFB II/III] die Wirkung anhand der unten angegebenen Takte und Parameter. 
+1. Arbeiten Sie die Vorwuerfe gegen Vivaldis tonmalerischen Stil heraus. [AFB II] (12 BE)
+2. Nehmen Sie Stellung: Handelt es sich bei Vivaldis Programmmusik um billige Nachahmung oder um eine Hoechstleistung musikalischer Semantik? [AFB III] (18 BE)
 
 ERWARTUNGSHORIZONT:
-- AFB II: Der Kritiker vertritt das klassisch-rationalistische Musikideal (Pythagoraeisch/Affektenlehre), wonach Musik abstrakte goettliche Harmonie und seelische Grundstimmungen spiegeln soll. Vivaldi wird vorgeworfen, die Musik durch oberflaechliche Onomatopoesie (Lautmalerei) zur Zirkusnummer zu degradieren.
-- AFB III: Stellungnahme / Synthese: Der Vorwurf greift zu kurz. Vivaldi opfert die Form niemals der Lautmalerei: Die Konzerte gehorchen makellos der Ritornellform mit logischer Kadenzharmonik. Die Tonmalerei ist kein Selbstzweck, sondern erweitert das Vokabular der Instrumentalmusik revolutionaer (Vorlaeufer von Beethoven op. 68 Pastorale und der romantischen Symphonischen Dichtung).
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Vorwurfsbefund mit Zitatanker | 5 NP | Thesenvergleich als Alternativweg
+Stellungsanalyse mit Semantikbezug | 5 NP | Werkvergleich als Alternativweg
+Werturteil mit Epochenbeleg | 5 NP | Offenes Urteil mit Aesthetikbezug als Alternativweg
+Gesamt: 15 NP
+- [AFB II]: Der Kritiker vertritt das klassisch-rationalistische Musikideal (Pythagoraeisch/Affektenlehre), wonach Musik abstrakte goettliche Harmonie und seelische Grundstimmungen spiegeln soll. Vivaldi wird vorgeworfen, die Musik durch oberflaechliche Onomatopoesie (Lautmalerei) zur Zirkusnummer zu degradieren.
+- [AFB III]: Stellungnahme / Synthese: Der Vorwurf greift zu kurz. Vivaldi opfert die Form niemals der Lautmalerei: Die Konzerte gehorchen makellos der Ritornellform mit logischer Kadenzharmonik. Die Tonmalerei ist kein Selbstzweck, sondern erweitert das Vokabular der Instrumentalmusik revolutionaer (Vorlaeufer von Beethoven op. 68 Pastorale und der romantischen Symphonischen Dichtung).
 
 ## Schritt 7 — check: Format-Check & Scoring
+AUFGABE (benennen & erklaeren, [AFB I]): Benenne [AFB I] die drei Kernbegriffe und erklaere [AFB I] jeden in einem Satz; nutze die FRAGE-Antwort-Paare unten als Beleg.
 30 XP Schnelltest zur Verstaendigungssicherung:
 
 FRAGE: Welche barocke Großform bildet das architektonische Fundament von Vivaldis Solokonzerten?
@@ -144,6 +179,19 @@ ANTWORT: Mit einem schnellen Tremolo (oft im Fortissimo des Basso Continuo).
 
 FRAGE: Wie lautet der musikphilosophische Gegenbegriff zu Programmmusik, der reine Form ohne aussermusikalischen Inhalt bezeichnet?
 ANTWORT: Absolute Musik.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Formbefund mit Ritornelltest | 5 NP | Formtabelle als Alternativweg
+Technikanalyse mit Tremolobezug | 5 NP | Spieltechnikvergleich als Alternativweg
+Epochenurteil mit Konzertbeleg | 5 NP | Offenes Urteil mit Gattungsbezug als Alternativweg
+Gesamt: 15 NP
+
+KERNSATZ (auswendig):
+- Kernsatz: `Sechzehntel-Kaskaden im Fortissimo malen Hagelsturm.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = Streicherfigur als Subjekt | Mechanismus = Tonmalerei nach Sonett als Mechanismus | Urteil = Urteil auf Bildwirkung
+- Selbsttest: Sechzehntel-Kaskaden im ___ malen Hagelsturm.
 
 ## Schritt 8 — reflexion: Meisterschaft & Naechste Mission
 REFLEXION:

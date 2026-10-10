@@ -8,7 +8,7 @@ operatoren: [beschreiben, analysieren, beurteilen]
 klausurrelevant: true
 datum: 2026-09-25
 tags: [EF, Musik, Motivarbeit]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 
@@ -77,32 +77,52 @@ BEISPIEL (Musteraufgabe mit Loesungsweg):
 
 [Werkzeug: oral-timer]
 
-AUFGABE (analysieren, AFB II): 90-Sekunden-Probe gegen den Timer: Benenne 2 Verfahren plus Tonarten mit Faktor 1,122 am Target. Erreiche das Target: 2 Verfahren, 3 Tonarten, Faktor 1,122, 90 s Rede.
+AUFGABE (analysieren, [AFB II]): Analysiere [AFB II] die Target-Probe in 90 Sekunden; belege jede Aussage mit Zahl und Takt. 90-Sekunden-Probe gegen den Timer: Benenne 2 Verfahren plus Tonarten mit Faktor 1,122 am Target. Erreiche das Target: 2 Verfahren, 3 Tonarten, Faktor 1,122, 90 s Rede.
 
 TARGET: 2 Verfahren, 3 Tonarten, Faktor 1,122, 90 s Rede.
 
 HILFE:
-1. Schritt 1: Zitiere Motiv mit Toenen und Rhythmus.
-2. Schritt 2: Benenne Verfahren plus Tonart je Takt.
-3. Schritt 3: Deute Wirkung: treiben/tarnen/hetzen.
+- Zitatdimension: Pruefe Motiv mit Ton- und Rhythmustest; notiere nur Toene und Rhythmus, deute die Wirkung noch nicht.
+- Verfahrensdimension: Pruefe Veraenderung mit Taktvergleich; sammle nur Verfahren und Tonart, ohne das Urteil vorwegzunehmen.
+- Wirkungsdimension: Pruefe Steigerung mit Formtest; halte nur treiben oder tarnen fest, ohne die Deutung zu setzen.
+
+COMPLETION (Lückentext):
+- Lies beide Saetze und ergaenze aus dem Gedaechtnis, ohne zurueckzublaettern:
+- Zwei Verfahren mit 1,122 durch drei ___ treiben zur Reprise.
+- Ordne Umkehrung als ___ ein und pruefe die Tonart ohne Musterloesung.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Zitatbefund mit Motivanker | 5 NP | Notenvergleich als Alternativweg
+Verfahrensanalyse mit Tonartbezug | 5 NP | Verfahrenstabelle als Alternativweg
+Wirkungsurteil mit Steigerungsbeleg | 5 NP | Offenes Urteil mit Formbezug als Alternativweg
+Gesamt: 15 NP
 
 MUSTERLOESUNG: Sequenz c-f-g mit 1,122 treibt, Umkehrung tarnt in Moll, Verkleinerung hetzt zur Reprise. Das Target wird erreicht, weil zwei Verfahren plus drei Tonarten mit Zahl belegt sind. Variation allein gaebe null Punkte.
 
 `Klausur-Satz: Das Target 1,122 plus 3 Tonarten beweist: Zahl schlaegt Variation.`
 
-## Schritt 5 — ausprobieren: Verfahrensduell Verfahrenshoeren (wie veraendert? Sequenz/Umkehrung) gegen Tonartenhoeren (wohin moduliert? c-f-g?)
+## Schritt 5 — ausprobieren: Verfahrensduell Verfahrenshoeren gegen Tonartenhoeren
 
 VERGLEICH (zwei Verfahren im Kontrast):
 
-VERGLEICH: Waehle zuerst das Verfahren: (i) Verfahrenshoeren (wie veraendert? Sequenz/Umkehrung) oder (ii) Tonartenhoeren (wohin moduliert? c-f-g?), dann loesen. Die Wahl des Verfahrens entscheidet ueber die ganze Begruendung.
+VERGLEICH: Waehle zuerst das Verfahren: (i) Verfahrenshoeren oder (ii) Tonartenhoeren, dann loesen. Die Wahl des Verfahrens entscheidet ueber die ganze Begruendung.
 
-AUFGABE A: Fall A (Durchfuehrung, Technik gefragt): Welcher Weg?
+AUFGABE A: Fall A (Durchfuehrung, Technik gefragt): Welcher Weg? Begruende ohne Mechanismus.
 
-AUFGABE B: Fall B (Form, Rueckkehr erwartet): Welcher Weg?
+AUFGABE B: Fall B (Form, Rueckkehr erwartet): Welcher Weg? Begruende ohne Mechanismus.
 
-HILFE: A braucht Technik, also Verfahren. B braucht Ort, also Tonarten.
+HILFE: Pruefe dimensionsgeleitet, welcher Weg passt: Technikfrage mit Verfahrensansatz spricht fuer Weg (i); Formfrage mit Ortsansatz spricht fuer Weg (ii). Ordne selbst zu; die Zuordnung wird nicht vorweggenommen.
 
-ANTWORT: A erfordert Weg A mit zwei Verfahren. B erfordert Weg B mit Tonartenkette. Ich waehle A/B, weil Frage es verlangt.
+ANTWORT: Die Zuordnung steht in der AUFLÖSUNG (nach der Wahl lesen); begruende erst selbst ohne Mechanismus.
+
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg (i) oder Weg (ii) lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Ueberfuehrt aus VERGLEICH (Vorwahl-Fassung): VERGLEICH: Waehle zuerst das Verfahren: (i) Verfahrenshoeren (wie veraendert? Sequenz/Umkehrung) oder (ii) Tonartenhoeren (wohin moduliert? c-f-g?), dann loesen. Die Wahl des Verfahrens entscheidet ueber die ganze Begruendung.
+- Ueberfuehrt aus Schritt-5-HILFE (Vorwahl-Fassung): HILFE: A braucht Technik, also Verfahren. B braucht Ort, also Tonarten. / ANTWORT: A erfordert Weg A mit zwei Verfahren. B erfordert Weg B mit Tonartenkette. Ich waehle A/B, weil Frage es verlangt.
+- Mechanismus (i): Verfahrenshoeren benennt Sequenz und Umkehrung.
+- Mechanismus (ii): Tonartenhoeren verfolgt Modulation c-f-g.
+- Ein-Satz-Kern: Sequenz treibt durch Tonarten, Zahl schlaegt Variation.
 
 `Klausur-Satz: Wie oder Wohin: Frage waehlt den Weg.`
 
@@ -130,7 +150,22 @@ CHECK (3 Fragen zur Selbstkontrolle mit Antworten):
 ## Schritt 7 — szenario: Klausurtransfer — Dozent Musikverein
 ROLLE: Du bist Dozent Musikverein und verteidigst deine Entscheidung vor der Pruefungskommission.
 SITUATION: In Wien musst du 90 Sekunden lang Verfahren, Tonarten und Target (2 plus 3) verteidigen.
+AUFGABE (darstellen & beurteilen, [AFB II/III]): Stelle [AFB II] Diagnose und Massnahme mit Target-Beleg dar und beurteile [AFB III] die Verfahrenswahl.
+
 RUBRIC (30 XP): Diagnose mit Fachbegriffen (8 XP) | Massnahme mit Target-Beleg (10 XP) | Verfahrenswahl im Vergleich (7 XP) | Fachsprachlicher Vortrag (5 XP).
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Diagnose mit Verfahrensbegriffen und Faktoranker | 5 NP | Begriffsvergleich als Alternativweg
+Massnahme mit 1,122-Beleg | 5 NP | Faktorrechnung als Alternativweg
+Verfahrenswahl mit Fragenbeleg | 5 NP | Situationsvergleich als Alternativweg
+Gesamt: 15 NP
+
+KERNSATZ (auswendig):
+- Kernsatz: `Sequenz treibt durch Tonarten, Zahl schlaegt Variation.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = Viertonmotiv als Subjekt | Mechanismus = Sequenz durch Tonarten als Mechanismus | Urteil = Urteil auf Steigerung
+- Selbsttest: Sequenz treibt durch Tonarten, Zahl schlaegt ___.
 
 `Klausur-Satz: AFB-III-Mustersatz: Die Steigerung entsteht, weil Sequenzen mit 1,122 durch c-f-g treiben und Verkleinerung hetzt; Verfahren plus Tonarten sichern volle Punktzahl.`
 

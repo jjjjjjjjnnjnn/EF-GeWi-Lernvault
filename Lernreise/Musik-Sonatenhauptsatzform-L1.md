@@ -8,7 +8,7 @@ operatoren: [beschreiben, analysieren, beurteilen]
 klausurrelevant: true
 datum: 2026-09-25
 tags: [EF, Musik, Formanalyse]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 
@@ -36,7 +36,7 @@ Hook (DE): Mondschein, Triolen-Fluss: Ein Thema wiegt in cis-Moll, die Durchfueh
 
 ## Schritt 2 — entdecken: 5术语装备盒
 
-PRETRAINING术语盒(核心5词,先读三遍中德,合书自测中文→德语):
+PRETRAINING术语盒(核心5词,先读三遍中德,合书自测中文->德语):
 
 中文在上,德语在下:
 
@@ -83,32 +83,52 @@ BEISPIEL(含教具操作与解答):
 
 [Werkzeug: oral-timer]
 
-AUFGABE (analysieren, AFB II):90秒口述:指认呈示、远调与再现义务,达标。达标线:Mondschein cis-Moll, Expo i, Durchf 2 Quinten, Coda 8 Takte。
+AUFGABE (analysieren, [AFB II]): Analysiere [AFB II] die Target-Probe in 90 Sekunden; belege jede Aussage mit Zahl und Takt. 90秒口述:指认呈示、远调与再现义务,达标。达标线:Mondschein cis-Moll, Expo i, Durchf 2 Quinten, Coda 8 Takte。
 
 Target数值目标:Mondschein cis-Moll, Expo i, Durchf 2 Quinten, Coda 8 Takte。
 
 HILFE:
-1. 点名主题加调。
-2. 量远调五度数。
-3. 验再现义务加尾声。
+- Themendimension: Pruefe Themen mit Tonartentest; notiere nur Themen und Tonarten, deute die Form noch nicht.
+- Ferndimension: Pruefe Abstand mit Quintenzaehlung; sammle nur die Quinten, ohne das Urteil vorwegzunehmen.
+- Reprisendimension: Pruefe Heimkehr mit Pflichtvergleich; halte nur Reprise und Coda fest, ohne die Deutung zu setzen.
+
+COMPLETION (Lückentext):
+- Lies beide Saetze und ergaenze aus dem Gedaechtnis, ohne zurueckzublaettern:
+- Expo mit Ferne von zwei ___ verlangt Heimkehr, Coda schliesst.
+- Ordne die Reprise als ___ ein und pruefe die Tonart ohne Musterloesung.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Themenbefund mit Expoanker | 5 NP | Thementabelle als Alternativweg
+Fernanalyse mit Quintenbezug | 5 NP | Quintenzaehlung als Alternativweg
+Heimkehrurteil mit Codabeleg | 5 NP | Offenes Urteil mit Formbezug als Alternativweg
+Gesamt: 15 NP
 
 MUSTERLÖSUNG:呈示升c小调,展开跑两五度,再现回家加八小节尾声即达标。
 
 `Klausur-Satz: 目标两五度证明:数逼回家。`
 
-## Schritt 5 — ausprobieren: VERGLEICH技术对抗 Tonartenlesen (Uhr: wohin moduliert?) vs Themenhoeren (Charakter: wer streitet?)
+## Schritt 5 — ausprobieren: VERGLEICH技术对抗 Tonartenlesen vs Themenhoeren
 
 VERGLEICH辨别实验(双向辨析,先选程序再解题):【选程序】
 
-VERGLEICH:先选程序—— (i) Tonartenlesen (Uhr: wohin moduliert?) 还是 (ii) Themenhoeren (Charakter: wer streitet?) ——再解题。【选程序:问上限与结构选(i),问兑现与情境选(ii)。口述先说 Ich waehle Verfahren (i)/(ii), weil …】
+VERGLEICH:先选程序—— (i) Tonartenlesen 还是 (ii) Themenhoeren ——再解题。
 
-AUFGABE A:案例A(看谱找调)选哪条?
+AUFGABE A:案例A(看谱找调)选哪条? Begruende ohne Mechanismus.
 
-AUFGABE B:案例B(听戏剧)选哪条?
+AUFGABE B:案例B(听戏剧)选哪条? Begruende ohne Mechanismus.
 
-HILFE:A braucht Zahlen, also Uhr. B braucht Figuren, also Charakter.
+HILFE: Pruefe dimensionsgeleitet, welcher Weg passt: Partiturfrage mit Uhransatz spricht fuer Weg (i); Konzertfrage mit Charakteransatz spricht fuer Weg (ii). Ordne selbst zu; die Zuordnung wird nicht vorweggenommen.
 
-ANTWORT:A走调性钟;B走人物戏。
+ANTWORT: Die Zuordnung steht in der AUFLÖSUNG (nach der Wahl lesen); begruende erst selbst ohne Mechanismus.
+
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg (i) oder Weg (ii) lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Ueberfuehrt aus VERGLEICH (Vorwahl-Fassung): VERGLEICH:先选程序—— (i) Tonartenlesen (Uhr: wohin moduliert?) 还是 (ii) Themenhoeren (Charakter: wer streitet?) ——再解题。【选程序:问上限与结构选(i),问兑现与情境选(ii)。口述先说 Ich waehle Verfahren (i)/(ii), weil …】
+- Ueberfuehrt aus Schritt-5-HILFE (Vorwahl-Fassung): HILFE:A braucht Zahlen, also Uhr. B braucht Figuren, also Charakter. / ANTWORT:A走调性钟;B走人物戏。
+- Mechanismus (i): Tonartenlesen misst Modulation auf der Quintuhr.
+- Mechanismus (ii): Themenhoeren deutet Charakter und Dualismus.
+- Ein-Satz-Kern: Seitensatz kehrt heim in Tonika, Zahl zwingt Versoehnung.
 
 `Klausur-Satz: 钟还是戏,材料定路线。`
 
@@ -136,7 +156,22 @@ CHECK检索默写(自测3题,与答案配对):
 ## Schritt 7 — szenario: Klausurtransfer — Kurator Beethovenhaus
 中文:你是Kurator Beethovenhaus,在Weimarer Stadtschloss, Mondschein 1. Satz (cis-Moll, 54 BPM)中必须用德语连贯口述(约90秒)诊断、措施与数值目标(Mondschein cis-Moll, Expo i, Durchf 2 Quinten, Coda 8 Takte),并以术语举证。
 ROLLE: Du bist Kurator Beethovenhaus. SITUATION: 在魏玛用德语90秒陈述呈示、远调与目标(升c,两五度)。
+AUFGABE (darstellen & beurteilen, [AFB II/III]): Stelle [AFB II] Diagnose und Massnahme mit Target-Beleg dar und beurteile [AFB III] die Verfahrenswahl.
+
 RUBRIC (30 XP):诊断术语8分 | 措施与目标举证10分 | 程序选择对比7分 | 德语表达5分。
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Diagnose mit Formbegriffen und Targetanker | 5 NP | Begriffsvergleich als Alternativweg
+Massnahme mit Quintenbeleg | 5 NP | Quintenzaehlung als Alternativweg
+Verfahrenswahl mit Quellenbeleg | 5 NP | Partitur-Konzert-Vergleich als Alternativweg
+Gesamt: 15 NP
+
+KERNSATZ (auswendig):
+- Kernsatz: `Seitensatz kehrt heim in Tonika, Zahl zwingt Versoehnung.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = Seitensatz als Subjekt | Mechanismus = Quintferne mit Heimkehrpflicht als Mechanismus | Urteil = Urteil auf Versoehnung
+- Selbsttest: Seitensatz kehrt heim in Tonika, Zahl zwingt ___.
 
 `Klausur-Satz: 满分句:和解因副部移调回家、两五度远方回归;链条锁定满分。`
 

@@ -8,7 +8,7 @@ operatoren: [analysieren, erlaeutern, beurteilen]
 klausurrelevant: true
 datum: 2026-10-03
 tags: [EF, Musik, Moderne, Zwoelftontechnik, Dodekaphonie]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Zwoelftontechnik und Dodekaphonie nach Arnold Schoenberg (L1, Ziel Klausur)
@@ -31,7 +31,7 @@ Hook / Phaenomen: Stelle dir eine Gesellschaft vor, in der jahrhundertelang ein 
 `Klausur-Satz: Schoenbergs Zwoelftontechnik ueberwindet das tonale Zentrum durch eine serielle Vorstrukturierung aller zwoelf Halptoene der chromatischen Skala.`
 
 ## Schritt 2 — entdecken: Ausruestungskiste der Dodekaphonie
-PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
+PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文->德语，Evidenz：pretraining降认知负荷）：
 
 中文在上，德语在下：
 
@@ -86,19 +86,28 @@ BEISPIEL（正确例题示范，含教具操作与解答）：
 
 [Werkzeug: lego]
 
-AUFGABE (analysieren & erlaeutern, AFB I/II)：
+AUFGABE (analysieren & erlaeutern, [AFB I/II])：Analysiere [AFB I/II] den Befund und erlaeutere [AFB I/II] die Wirkung anhand der unten angegebenen Takte und Parameter. 
 Gegeben ist die Grundreihe der "Suite fuer Klavier op. 25" von Arnold Schoenberg:
 Reihe R: $E - F - G - Des - Ges - Es - As - D - H - C - A - B$
 1. Ueberpruefen Sie, ob es sich um eine vollstaendige Zwoelftonreihe handelt, und identifizieren Sie das beruehmte musikalische Monogramm an den letzten vier Toenen. (10 BE)
 2. Bilden Sie die Umkehrung (U) der ersten vier Toene, ausgehend vom Ton $E$. (20 BE)
 
 HILFE:
-1. Schritt 1: Vollstaendigkeit pruefen: Enthaelt die Reihe alle 12 Toene des chromatischen Raumes ($C, Cis, D, Dis/Es, E, F, Fis/Ges, G, Gis/As, A, B, H$)? Keine Doppelungen?
-2. Schritt 2: Monogramm entschluesseln: Betrachte die Toene 9 bis 12: $H - C - A - B$. Im Krebs (rueckwaerts gelesen) ergibt das $B - A - C - H$!
-3. Schritt 3: Umkehrung konstruieren:
-   - Schritt 1: $E \to F$ ist eine kleine Sekunde aufwaerts (+1). Umkehrung = kleine Sekunde abwaerts (-1) von $E \implies Es$.
-   - Schritt 2: $F \to G$ ist eine grosse Sekunde aufwaerts (+2). Umkehrung von $Es$ um 2 Halptoene abwaerts (-2) $\implies Des$.
-   - Schritt 3: $G \to Des$ ist ein Tritonus (+6). Tritonus abwaerts (-6) von $Des \implies G$.
+- Vollstaendigkeitsdimension: Pruefe Tonvorrat mit Zaehltest; notiere nur die Toene, deute die Reihe noch nicht.
+- Monogrammdimension: Pruefe Tonfolge mit Krebstest; sammle nur die Stellen, ohne das Urteil vorwegzunehmen.
+- Umkehrungsdimension: Pruefe Intervalle mit Spiegeltest; halte nur die Schritte fest, ohne die Deutung zu setzen.
+
+COMPLETION (Lückentext):
+- Lies beide Saetze und ergaenze aus dem Gedaechtnis, ohne zurueckzublaettern:
+- Die Reihe enthaelt ___ Toene ohne Doppelung, B-A-C-H steckt im Krebs.
+- Ordne die Umkehrung als ___ ein und pruefe die Schritte ohne Musterloesung.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Vollstaendigkeitsbefund mit Zaehlanker | 5 NP | Tonvorratstabelle als Alternativweg
+Monogrammanalyse mit Krebsbezug | 5 NP | Richtungsvergleich als Alternativweg
+Reihenurteil mit Spiegelbeleg | 5 NP | Offenes Urteil mit Satzbezug als Alternativweg
+Gesamt: 15 NP
 
 MUSTERLÖSUNG:
 1. Vollstaendigkeit & B-A-C-H-Monogramm:
@@ -116,7 +125,19 @@ MUSTERLÖSUNG:
 ## Schritt 5 — ausprobieren: Duell der Tonsysteme: Monarchie vs. Anarchie
 
 VERGLEICH: Dur-Moll-Tonalitaet vs. Schoenbergs Dodekaphonie
+- Position A (Traditionelle Dur-Moll-Tonalitaet / Kadenzharmonik): Neutralfassung fuer die Wahl.
+- [Weg A] Wenn du Weg A waehlst, arbeitest du in Schritt 7 vor allem mit Befund, Zahl und Zuordnung.
+- Position B (Dodekaphonie / Freie Atonalitaet): Neutralfassung fuer die Wahl.
+- [Weg B] Wenn du Weg B waehlst, arbeitest du in Schritt 7 vor allem mit Kette, Deutung und Urteil.
 
+AUFGABE A: Welche Pruefgroesse verlangt Befund und Rechnung? Begruende ohne Mechanismus.
+AUFGABE B: Welche Frage verlangt Kette und Deutung? Begruende ohne Mechanismus.
+
+HILFE: Pruefe dimensionsgeleitet, welcher Weg passt: Kadenzfrage mit Zentrumsvergleich spricht fuer Befund und Weg A; Reihenfrage mit Permutationstest spricht fuer Kette und Weg B. Ordne selbst zu; die Zuordnung wird nicht vorweggenommen.
+
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg A oder Weg B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Ueberfuehrt aus VERGLEICH (Vorwahl-Fassung):
 - Position A (Traditionelle Dur-Moll-Tonalitaet / Kadenzharmonik):
   - Ordnungsprinzip: Hierarchische Zentrierung um eine feste Tonika (Ruhepol). Dominanten erzeugen Leittonspannungen, die zwingend nach Erloesung verlangen.
   - Haltung zum Dissonanz: Dissonanzen sind temporaere Reizzustaende, die der Vorbereitung und Aufloesung in Konsonanzen dienen.
@@ -125,6 +146,10 @@ VERGLEICH: Dur-Moll-Tonalitaet vs. Schoenbergs Dodekaphonie
   - Ordnungsprinzip: Vollkommene Gleichverteilung aller zwoelf Toene; Verbot von Tonikawirkungen, Dreiklangsbrechungen und Tonwiederholungen vor Reihenabschluss.
   - Haltung zur Dissonanz: "Emanzipation der Dissonanz" — Dissonanzen besitzen autonomen Expressivitaetswert.
   - Rezeption: Intellektuell faszinierend, hochgradig konstruiert, fordert den Hoerer radikal heraus; bricht mit konventioneller Sentimentalitaet.
+- Ueberfuehrt aus Schritt-5-HILFE (Vorwahl-Fassung): Kein Spoiler in Vorwahl-HILFE bestaetigt, Vorwahl-Fassung enthielt keine HILFE mit Loesungszuordnung.
+- Mechanismus A: Dur-Moll bindet Hoeren an Kadenz.
+- Mechanismus B: Dodekaphonie reiht zwoelf Toene seriell.
+- Ein-Satz-Kern: Reihe ordnet zwoelf Toene und erzeugt achtundvierzig Formen.
 
 Entscheidungsregel fuer die Klausur:
 Wird nach `historischem Kontext` gefragt, die Dodekaphonie immer als kuenstlerische Reaktion auf die Erschuetterungen des Ersten Weltkriegs und den Zusammenbruch der buergerlichen Ordnung interpretieren!
@@ -135,15 +160,22 @@ PRÜFUNGSSZENARIO (KLP NRW Musik EF Inhaltsfeld 2: Entwicklungen von Musik / Umb
 Gegeben ist ein Textauszug aus Theodor W. Adornos "Philosophie der neuen Musik" (1949):
 > "Die Zwoelftontechnik ist das Schicksal der Musik. Sie befreit das Material, indem sie es einer totalen Rationalitaet unterwirft. In ihr gibt es keine freien Noten mehr, jedes Atom ist Konstruktion."
 
-AUFGABE (analysieren & beurteilen, AFB II/III):
-1. Analysieren Sie Adornos These zum Verhaeltnis von "Befreiung des Materials" und "totaler Rationalitaet". (12 BE)
-2. Beurteilen Sie kritisch, ob Schoenbergs Zwoelftontechnik dem Hoerer emotionale Ausdrucksmoeglichkeiten verwehrt oder eine neue Dimension des Ausdrucks erschliesst. (18 BE)
+AUFGABE (analysieren & beurteilen, [AFB II/III]): Analysiere [AFB II/III] den Befund und beurteile [AFB II/III] die Wirkung anhand der unten angegebenen Takte und Parameter. 
+1. Analysieren Sie Adornos These zum Verhaeltnis von "Befreiung des Materials" und "totaler Rationalitaet". [AFB II] (12 BE)
+2. Beurteilen Sie kritisch, ob Schoenbergs Zwoelftontechnik dem Hoerer emotionale Ausdrucksmoeglichkeiten verwehrt oder eine neue Dimension des Ausdrucks erschliesst. [AFB III] (18 BE)
 
 ERWARTUNGSHORIZONT:
-- AFB II: Adorno deckt die dialektische Paradoxie der Dodekaphonie auf: Die Befreiung von den engen Fesseln der Tonalitaet fuehrt nicht in die Regellosigkeit, sondern in ein noch viel strengeres Regelwerk, in dem jeder einzelne Ton durch die Reihe determiniert ist. Die Befreiung schlaegt in absolute Konstruktion um.
-- AFB III: Einseitige Kritik greift zu kurz: Werke wie Schoenbergs "Ein Ueberlebender aus Warschau" op. 46 beweisen, dass die Zwoelftontechnik gerade durch ihre Zerklueftung, Schaerfe und das Fehlen behaglicher Kadenzen imstande ist, das Grauen des Holocausts mit beispielloser emotionaler Wucht und Wahrhaftigkeit darzustellen, wo traditionelle Harmonik sentimental und unaufrichtig wirken wuerde.
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Thesenbefund mit Zitatanker | 5 NP | Thesenvergleich als Alternativweg
+Rationalitaetsanalyse mit Befreiungsbezug | 5 NP | Begriffsvergleich als Alternativweg
+Hoerurteil mit Emotionsbeleg | 5 NP | Offenes Urteil mit Rezeptionsbezug als Alternativweg
+Gesamt: 15 NP
+- [AFB II]: Adorno deckt die dialektische Paradoxie der Dodekaphonie auf: Die Befreiung von den engen Fesseln der Tonalitaet fuehrt nicht in die Regellosigkeit, sondern in ein noch viel strengeres Regelwerk, in dem jeder einzelne Ton durch die Reihe determiniert ist. Die Befreiung schlaegt in absolute Konstruktion um.
+- [AFB III]: Einseitige Kritik greift zu kurz: Werke wie Schoenbergs "Ein Ueberlebender aus Warschau" op. 46 beweisen, dass die Zwoelftontechnik gerade durch ihre Zerklueftung, Schaerfe und das Fehlen behaglicher Kadenzen imstande ist, das Grauen des Holocausts mit beispielloser emotionaler Wucht und Wahrhaftigkeit darzustellen, wo traditionelle Harmonik sentimental und unaufrichtig wirken wuerde.
 
 ## Schritt 7 — check: Format-Check & Scoring
+AUFGABE (benennen & erklaeren, [AFB I]): Benenne [AFB I] die drei Kernbegriffe und erklaere [AFB I] jeden in einem Satz; nutze die FRAGE-Antwort-Paare unten als Beleg.
 30 XP Schnelltest zur Verstaendigungssicherung:
 
 FRAGE: Was versteht man unter dem Begriff "Krebs" (K) in der Zwoelftontechnik?
@@ -154,6 +186,19 @@ ANTWORT: 48 Reihenformen (4 Modi: Grundgestalt, Umkehrung, Krebs, Krebsumkehrung
 
 FRAGE: Welcher Schueler Schoenbergs verband die Zwoelftontechnik genial mit spätromantischer Expressivitaet (z.B. in seinem Violinkonzert "Dem Andenken eines Engels")?
 ANTWORT: Alban Berg.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Krebsbefund mit Richtungstest | 5 NP | Richtungstabelle als Alternativweg
+Formenanalyse mit 48er-Bezug | 5 NP | Permutationsvergleich als Alternativweg
+Schuelerurteil mit Reihenbeleg | 5 NP | Offenes Urteil mit Werkbezug als Alternativweg
+Gesamt: 15 NP
+
+KERNSATZ (auswendig):
+- Kernsatz: `Reihe ordnet zwoelf Toene und erzeugt achtundvierzig Formen.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = Grundreihe als Subjekt | Mechanismus = Krebs und Umkehrung als Mechanismus | Urteil = Urteil auf Reiheneinheit
+- Selbsttest: Reihe ordnet zwoelf Toene und erzeugt ___ Formen.
 
 ## Schritt 8 — reflexion: Meisterschaft & Naechste Mission
 REFLEXION:

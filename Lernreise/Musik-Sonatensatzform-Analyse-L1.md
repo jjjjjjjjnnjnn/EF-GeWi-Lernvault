@@ -8,7 +8,7 @@ operatoren: [beschreiben, analysieren, beurteilen]
 klausurrelevant: true
 datum: 2026-09-25
 tags: [EF, Musik, Formanalyse]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 
@@ -36,7 +36,7 @@ Hook (DE): Klausur, Takt 1: Notenbild, 90 Minuten, ein Doppelstrich grinst. Wo s
 
 ## Schritt 2 — entdecken: 5术语装备盒
 
-PRETRAINING术语盒(核心5词,先读三遍中德,合书自测中文→德语):
+PRETRAINING术语盒(核心5词,先读三遍中德,合书自测中文->德语):
 
 中文在上,德语在下:
 
@@ -83,32 +83,52 @@ BEISPIEL(含教具操作与解答):
 
 [Werkzeug: formula]
 
-AUFGABE (analysieren, AFB II):笔录调节器:25分钟16证据,Score 0,8,达标。达标线:Mozart G-Dur, 16 Belege, Score 0,8, These in 25 min。
+AUFGABE (analysieren, [AFB II]): Analysiere [AFB II] die Target-Probe in 90 Sekunden; belege jede Aussage mit Zahl und Takt. 笔录调节器:25分钟16证据,Score 0,8,达标。达标线:Mozart G-Dur, 16 Belege, Score 0,8, These in 25 min。
 
 Target数值目标:Mozart G-Dur, 16 Belege, Score 0,8, These in 25 min。
 
 HILFE:
-1. 切反复带小节。
-2. 列表调加主题。
-3. 算Score写论点。
+- Schnittdimension: Pruefe Doppelstrich mit Takttest; notiere nur Schnitt und Takt, deute die These noch nicht.
+- Ordnungsdimension: Pruefe Tonarten mit Listentest; sammle nur Tonarten und Themen, ohne das Urteil vorwegzunehmen.
+- Belegdimension: Pruefe Score mit Zaehltest; halte nur Zahl und These fest, ohne die Deutung zu setzen.
+
+COMPLETION (Lückentext):
+- Lies beide Saetze und ergaenze aus dem Gedaechtnis, ohne zurueckzublaettern:
+- Doppelstrich zuerst mit Takt schneidet ___, sechzehn Belege tragen.
+- Ordne den Score als ___ ein und pruefe die Zahl ohne Musterloesung.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Schnittbefund mit Taktanker | 5 NP | Schnitttabelle als Alternativweg
+Ordnungsanalyse mit Listenbezug | 5 NP | Tonartentabelle als Alternativweg
+Thesenurteil mit Scorebeleg | 5 NP | Offenes Urteil mit Zeitbezug als Alternativweg
+Gesamt: 15 NP
 
 MUSTERLÖSUNG:反复32小节,呈示D-A,再现D-D,16证据25分钟Score 0,8即达标。
 
 `Klausur-Satz: 目标Score 0,8证明:数赢文。`
 
-## Schritt 5 — ausprobieren: VERGLEICH技术对抗 Schnittmethode (Form zuerst: Doppelstrich, Tonarten) vs Klangmethode (Hoeren zuerst: Themen, Charakter)
+## Schritt 5 — ausprobieren: VERGLEICH技术对抗 Schnittmethode vs Klangmethode
 
 VERGLEICH辨别实验(双向辨析,先选程序再解题):【选程序】
 
-VERGLEICH:先选程序—— (i) Schnittmethode (Form zuerst: Doppelstrich, Tonarten) 还是 (ii) Klangmethode (Hoeren zuerst: Themen, Charakter) ——再解题。【选程序:问上限与结构选(i),问兑现与情境选(ii)。口述先说 Ich waehle Verfahren (i)/(ii), weil …】
+VERGLEICH:先选程序—— (i) Schnittmethode 还是 (ii) Klangmethode ——再解题。
 
-AUFGABE A:案例A(看谱笔试)选哪条?
+AUFGABE A:案例A(看谱笔试)选哪条? Begruende ohne Mechanismus.
 
-AUFGABE B:案例B(听辨考试)选哪条?
+AUFGABE B:案例B(听辨考试)选哪条? Begruende ohne Mechanismus.
 
-HILFE:A braucht Schnitt, also Form. B braucht Ohr, also Klang.
+HILFE: Pruefe dimensionsgeleitet, welcher Weg passt: Klausurfrage mit Formansatz spricht fuer Weg (i); Hoerfrage mit Klangansatz spricht fuer Weg (ii). Ordne selbst zu; die Zuordnung wird nicht vorweggenommen.
 
-ANTWORT:A走切分程序;B走听觉程序。
+ANTWORT: Die Zuordnung steht in der AUFLÖSUNG (nach der Wahl lesen); begruende erst selbst ohne Mechanismus.
+
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg (i) oder Weg (ii) lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Ueberfuehrt aus VERGLEICH (Vorwahl-Fassung): VERGLEICH:先选程序—— (i) Schnittmethode (Form zuerst: Doppelstrich, Tonarten) 还是 (ii) Klangmethode (Hoeren zuerst: Themen, Charakter) ——再解题。【选程序:问上限与结构选(i),问兑现与情境选(ii)。口述先说 Ich waehle Verfahren (i)/(ii), weil …】
+- Ueberfuehrt aus Schritt-5-HILFE (Vorwahl-Fassung): HILFE:A braucht Schnitt, also Form. B braucht Ohr, also Klang. / ANTWORT:A走切分程序;B走听觉程序。
+- Mechanismus (i): Schnittmethode ordnet Doppelstrich und Tonarten zuerst.
+- Mechanismus (ii): Klangmethode hoert Themen und Charakter zuerst.
+- Ein-Satz-Kern: Doppelstrich schneidet Form, Protokoll traegt These.
 
 `Klausur-Satz: 切还是听,考试定路线。`
 
@@ -136,7 +156,22 @@ CHECK检索默写(自测3题,与答案配对):
 ## Schritt 7 — szenario: Klausurtransfer — Klausurcoach Philharmonie
 中文:你是Klausurcoach Philharmonie,在Koelner Musikhochschule, Klausurwerkstatt (Mozart KV 283, G-Dur)中必须用德语连贯口述(约90秒)诊断、措施与数值目标(Mozart G-Dur, 16 Belege, Score 0,8, These in 25 min),并以术语举证。
 ROLLE: Du bist Klausurcoach Philharmonie. SITUATION: 在科隆高用德语90秒陈述切分、Score与目标(16,0,8)。
+AUFGABE (darstellen & beurteilen, [AFB II/III]): Stelle [AFB II] Diagnose und Massnahme mit Target-Beleg dar und beurteile [AFB III] die Verfahrenswahl.
+
 RUBRIC (30 XP):诊断术语8分 | 措施与目标举证10分 | 程序选择对比7分 | 德语表达5分。
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Diagnose mit Schnittbegriffen und Targetanker | 5 NP | Begriffsvergleich als Alternativweg
+Massnahme mit Scorebeleg | 5 NP | Belegzaehlung als Alternativweg
+Verfahrenswahl mit Pruefungsbeleg | 5 NP | Schnitt-Klang-Vergleich als Alternativweg
+Gesamt: 15 NP
+
+KERNSATZ (auswendig):
+- Kernsatz: `Doppelstrich schneidet Form, Protokoll traegt These.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = Doppelstrich als Subjekt | Mechanismus = Protokoll mit Score als Mechanismus | Urteil = Urteil auf These
+- Selbsttest: Doppelstrich schneidet Form, ___ traegt These.
 
 `Klausur-Satz: 满分句:曲式成立因反复32小节加16证据Score 0,8;笔录锁定满分。`
 

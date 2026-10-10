@@ -8,7 +8,7 @@ operatoren: [beschreiben, analysieren, beurteilen]
 klausurrelevant: true
 datum: 2026-09-25
 tags: [EF, Musik, Formanalyse]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 
@@ -77,32 +77,52 @@ BEISPIEL (Musteraufgabe mit Loesungsweg):
 
 [Werkzeug: formula]
 
-AUFGABE (analysieren, AFB II): Protokoll-Regler: Erstelle 20 Belege in 20 Minuten mit Score 1,0 am Target. Erreiche das Target: Haydn D-Dur, 20 Belege, Score 1,0, These in 20 min.
+AUFGABE (analysieren, [AFB II]): Analysiere [AFB II] die Target-Probe in 90 Sekunden; belege jede Aussage mit Zahl und Takt. Protokoll-Regler: Erstelle 20 Belege in 20 Minuten mit Score 1,0 am Target. Erreiche das Target: Haydn D-Dur, 20 Belege, Score 1,0, These in 20 min.
 
 TARGET: Haydn D-Dur, 20 Belege, Score 1,0, These in 20 min.
 
 HILFE:
-1. Schritt 1: Schneide Doppelstrich mit Takt.
-2. Schritt 2: Liste Tonarten plus Themen.
-3. Schritt 3: Zaehle Score und formuliere These.
+- Schnittdimension: Pruefe Doppelstrich mit Takttest; notiere nur Schnitt und Takt, deute die These noch nicht.
+- Ordnungsdimension: Pruefe Tonarten mit Listentest; sammle nur Tonarten und Themen, ohne das Urteil vorwegzunehmen.
+- Belegdimension: Pruefe Score mit Zaehltest; halte nur Zahl und These fest, ohne die Deutung zu setzen.
+
+COMPLETION (Lückentext):
+- Lies beide Saetze und ergaenze aus dem Gedaechtnis, ohne zurueckzublaettern:
+- Doppelstrich zuerst mit Takt schneidet ___, zwanzig Belege tragen.
+- Ordne den Score als ___ ein und pruefe die Zahl ohne Musterloesung.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Schnittbefund mit Taktanker | 5 NP | Schnitttabelle als Alternativweg
+Ordnungsanalyse mit Listenbezug | 5 NP | Tonartentabelle als Alternativweg
+Thesenurteil mit Scorebeleg | 5 NP | Offenes Urteil mit Zeitbezug als Alternativweg
+Gesamt: 15 NP
 
 MUSTERLOESUNG: Doppelstrich Takt 32, Expo D-A, Durchf mit 2 Quinten, Reprise D-D: 20 Belege in 20 Minuten, Score 1,0. Das Target wird erreicht, weil Protokoll plus Kadenzprobe These tragen. Raetseln haette 0,25 geliefert.
 
 `Klausur-Satz: Das Target Score 1,0 beweist: Zahl schlaegt Stil.`
 
-## Schritt 5 — ausprobieren: Verfahrensduell Schnittmethode (Form zuerst: Doppelstrich, Tonarten) gegen Klangmethode (Hoeren zuerst: Themen, Charakter)
+## Schritt 5 — ausprobieren: Verfahrensduell Schnittmethode gegen Klangmethode
 
 VERGLEICH (zwei Verfahren im Kontrast):
 
-VERGLEICH: Waehle zuerst das Verfahren: (i) Schnittmethode (Form zuerst: Doppelstrich, Tonarten) oder (ii) Klangmethode (Hoeren zuerst: Themen, Charakter), dann loesen. Die Wahl des Verfahrens entscheidet ueber die ganze Begruendung.
+VERGLEICH: Waehle zuerst das Verfahren: (i) Schnittmethode oder (ii) Klangmethode, dann loesen. Die Wahl des Verfahrens entscheidet ueber die ganze Begruendung.
 
-AUFGABE A: Fall A (Partitur-Klausur): Welcher Weg?
+AUFGABE A: Fall A (Partitur-Klausur): Welcher Weg? Begruende ohne Mechanismus.
 
-AUFGABE B: Fall B (Hoerklausur): Welcher Weg?
+AUFGABE B: Fall B (Hoerklausur): Welcher Weg? Begruende ohne Mechanismus.
 
-HILFE: A braucht Schnitt, also Form. B braucht Ohr, also Klang.
+HILFE: Pruefe dimensionsgeleitet, welcher Weg passt: Klausurfrage mit Formansatz spricht fuer Weg (i); Hoerfrage mit Klangansatz spricht fuer Weg (ii). Ordne selbst zu; die Zuordnung wird nicht vorweggenommen.
 
-ANTWORT: A erfordert Weg A mit Protokoll. B erfordert Weg B mit Parametern. Ich waehle A/B, weil Pruefung es verlangt.
+ANTWORT: Die Zuordnung steht in der AUFLÖSUNG (nach der Wahl lesen); begruende erst selbst ohne Mechanismus.
+
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg (i) oder Weg (ii) lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Ueberfuehrt aus VERGLEICH (Vorwahl-Fassung): VERGLEICH: Waehle zuerst das Verfahren: (i) Schnittmethode (Form zuerst: Doppelstrich, Tonarten) oder (ii) Klangmethode (Hoeren zuerst: Themen, Charakter), dann loesen. Die Wahl des Verfahrens entscheidet ueber die ganze Begruendung.
+- Ueberfuehrt aus Schritt-5-HILFE (Vorwahl-Fassung): HILFE: A braucht Schnitt, also Form. B braucht Ohr, also Klang. / ANTWORT: A erfordert Weg A mit Protokoll. B erfordert Weg B mit Parametern. Ich waehle A/B, weil Pruefung es verlangt.
+- Mechanismus (i): Schnittmethode ordnet Doppelstrich und Tonarten zuerst.
+- Mechanismus (ii): Klangmethode hoert Themen und Charakter zuerst.
+- Ein-Satz-Kern: Doppelstrich schneidet Form, Protokoll traegt These.
 
 `Klausur-Satz: Schnitt oder Klang: Pruefung waehlt den Weg.`
 
@@ -130,7 +150,22 @@ CHECK (3 Fragen zur Selbstkontrolle mit Antworten):
 ## Schritt 7 — szenario: Klausurtransfer — Klausurcoach Philharmonie
 ROLLE: Du bist Klausurcoach Philharmonie und verteidigst deine Entscheidung vor der Pruefungskommission.
 SITUATION: In Essen musst du 90 Sekunden lang Schnitt, Score und Target (20, 1,0) verteidigen.
+AUFGABE (darstellen & beurteilen, [AFB II/III]): Stelle [AFB II] Diagnose und Massnahme mit Target-Beleg dar und beurteile [AFB III] die Verfahrenswahl.
+
 RUBRIC (30 XP): Diagnose mit Fachbegriffen (8 XP) | Massnahme mit Target-Beleg (10 XP) | Verfahrenswahl im Vergleich (7 XP) | Fachsprachlicher Vortrag (5 XP).
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Diagnose mit Schnittbegriffen und Targetanker | 5 NP | Begriffsvergleich als Alternativweg
+Massnahme mit Scorebeleg | 5 NP | Belegzaehlung als Alternativweg
+Verfahrenswahl mit Pruefungsbeleg | 5 NP | Schnitt-Klang-Vergleich als Alternativweg
+Gesamt: 15 NP
+
+KERNSATZ (auswendig):
+- Kernsatz: `Doppelstrich schneidet Form, Protokoll traegt These.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = Doppelstrich als Subjekt | Mechanismus = Protokoll mit Score als Mechanismus | Urteil = Urteil auf These
+- Selbsttest: Doppelstrich schneidet Form, ___ traegt These.
 
 `Klausur-Satz: AFB-III-Mustersatz: Die Form steht, weil Doppelstrich Takt 32 und 20 Belege Score 1,0 These tragen; Protokoll sichert volle Punktzahl.`
 

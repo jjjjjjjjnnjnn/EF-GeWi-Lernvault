@@ -8,7 +8,7 @@ operatoren: [bestimmen, aufstellen]
 klausurrelevant: true
 datum: 2026-09-26
 tags: [EF, Musik, Harmonielehre]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 
@@ -77,32 +77,52 @@ BEISPIEL (Musteraufgabe mit Loesungsweg):
 
 [Werkzeug: formula]
 
-AUFGABE (analysieren, AFB II): Kadenz-Regler: Bestimme Stufen I-IV-V-I bei KV 545, rechne Quintfrequenz und weise Trugschluss am Target nach. Erreiche das Target: KV 545, 4 Stufen korrekt, Quinte 1,498, Schluss T-S-D-T.
+AUFGABE (analysieren, [AFB II]): Analysiere [AFB II] die Target-Probe in 90 Sekunden; belege jede Aussage mit Zahl und Takt. Kadenz-Regler: Bestimme Stufen I-IV-V-I bei KV 545, rechne Quintfrequenz und weise Trugschluss am Target nach. Erreiche das Target: KV 545, 4 Stufen korrekt, Quinte 1,498, Schluss T-S-D-T.
 
 TARGET: KV 545, 4 Stufen korrekt, Quinte 1,498, Schluss T-S-D-T.
 
 HILFE:
-1. Schritt 1: Beziffere Akkorde roemisch plus Bass.
-2. Schritt 2: Berechne Quint mit 2 hoch 7/12.
-3. Schritt 3: Benenne Schluss: authentisch oder Trug.
+- Stufendimension: Beziffere Akkorde mit Stufentest; notiere nur Ziffern und Bass, deute den Schluss noch nicht.
+- Quintdimension: Pruefe Intervall mit Potenzrechnung; sammle nur den Faktor, ohne das Urteil vorwegzunehmen.
+- Schlussdimension: Pruefe Schlusswirkung mit Kadenzvergleich; halte nur die Wirkung fest, ohne die Deutung zu setzen.
+
+COMPLETION (Lückentext):
+- Lies beide Saetze und ergaenze aus dem Gedaechtnis, ohne zurueckzublaettern:
+- KV 545 schliesst ___, die Quinte misst 1,498.
+- Ordne V-VI als ___ ein und pruefe den Bass ohne Musterloesung.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Stufenbefund mit Ziffernanker | 5 NP | Bezifferungstabelle als Alternativweg
+Quintanalyse mit Potenzbezug | 5 NP | Intervallrechnung als Alternativweg
+Schlussurteil mit Heimkehrbeleg | 5 NP | Offenes Urteil mit Trugschlussvergleich als Alternativweg
+Gesamt: 15 NP
 
 MUSTERLOESUNG: KV 545 schliesst C-F-G-C, also I-IV-V-I mit Quint 1,498 und Leitton h-c. Das Target wird erreicht, weil vier Stufen plus Rechnung plus Schlusswirkung Heimkehr belegen. Der Trugschluss G-a wuerde verlaengern.
 
 `Klausur-Satz: Das Target I-IV-V-I plus Quinte 1,498 beweist: Physik wird Gefuehl.`
 
-## Schritt 5 — ausprobieren: Verfahrensduell Stufentheorie (Zahlen: transponierbar, vergleichbar) gegen Funktionshoeren (Klang: Spannung fuehlen, Heimkehr spueren)
+## Schritt 5 — ausprobieren: Verfahrensduell Stufentheorie gegen Funktionshoeren
 
 VERGLEICH (zwei Verfahren im Kontrast):
 
-VERGLEICH: Waehle zuerst das Verfahren: (i) Stufentheorie (Zahlen: transponierbar, vergleichbar) oder (ii) Funktionshoeren (Klang: Spannung fuehlen, Heimkehr spueren), dann loesen. Die Wahl des Verfahrens entscheidet ueber die ganze Begruendung.
+VERGLEICH: Waehle zuerst das Verfahren: (i) Stufentheorie oder (ii) Funktionshoeren, dann loesen. Die Wahl des Verfahrens entscheidet ueber die ganze Begruendung.
 
-AUFGABE A: Fall A (Klausur transponiert nach G-Dur): Welcher Weg?
+AUFGABE A: Fall A (Klausur transponiert nach G-Dur): Welcher Weg? Begruende ohne Mechanismus.
 
-AUFGABE B: Fall B (Konzert, Wirkung beschreiben): Welcher Weg?
+AUFGABE B: Fall B (Konzert, Wirkung beschreiben): Welcher Weg? Begruende ohne Mechanismus.
 
-HILFE: A braucht Zahlen, also Stufen. B braucht Klang, also Funktion.
+HILFE: Pruefe dimensionsgeleitet, welcher Weg passt: Transpositionsfrage mit Zahlenansatz spricht fuer Weg (i); Wirkungsfrage mit Klangansatz spricht fuer Weg (ii). Ordne selbst zu; die Zuordnung wird nicht vorweggenommen.
 
-ANTWORT: A erfordert Weg A mit I-IV-V-I in G. B erfordert Weg B mit Spannung/Heimkehr. Ich waehle A/B, weil Aufgabe es verlangt.
+ANTWORT: Die Zuordnung steht in der AUFLÖSUNG (nach der Wahl lesen); begruende erst selbst ohne Mechanismus.
+
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg (i) oder Weg (ii) lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Ueberfuehrt aus VERGLEICH (Vorwahl-Fassung): VERGLEICH: Waehle zuerst das Verfahren: (i) Stufentheorie (Zahlen: transponierbar, vergleichbar) oder (ii) Funktionshoeren (Klang: Spannung fuehlen, Heimkehr spueren), dann loesen. Die Wahl des Verfahrens entscheidet ueber die ganze Begruendung.
+- Ueberfuehrt aus Schritt-5-HILFE (Vorwahl-Fassung): HILFE: A braucht Zahlen, also Stufen. B braucht Klang, also Funktion. / ANTWORT: A erfordert Weg A mit I-IV-V-I in G. B erfordert Weg B mit Spannung/Heimkehr. Ich waehle A/B, weil Aufgabe es verlangt.
+- Mechanismus (i): Stufentheorie transponiert I-IV-V-I mit Zahlenbeleg.
+- Mechanismus (ii): Funktionshoeren spuert Spannung und Heimkehr im Klang.
+- Ein-Satz-Kern: V-I mit Leitton schliesst Heimkehr, V-VI taeuscht Trug.
 
 `Klausur-Satz: Stufen oder Klang: Aufgabe waehlt den Weg.`
 
@@ -130,7 +150,22 @@ CHECK (3 Fragen zur Selbstkontrolle mit Antworten):
 ## Schritt 7 — szenario: Klausurtransfer — Korrepetitor Herkulessaal
 ROLLE: Du bist Korrepetitor Herkulessaal und verteidigst deine Entscheidung vor der Pruefungskommission.
 SITUATION: In Muenchen musst du 90 Sekunden lang Stufen, Quinte und Target (I-IV-V-I) verteidigen.
+AUFGABE (darstellen & beurteilen, [AFB II/III]): Stelle [AFB II] Diagnose und Massnahme mit Target-Beleg dar und beurteile [AFB III] die Verfahrenswahl.
+
 RUBRIC (30 XP): Diagnose mit Fachbegriffen (8 XP) | Massnahme mit Target-Beleg (10 XP) | Verfahrenswahl im Vergleich (7 XP) | Fachsprachlicher Vortrag (5 XP).
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Diagnose mit Stufenbegriffen und Targetanker | 5 NP | Glossarvergleich als Alternativweg
+Massnahme mit Quintbeleg 1,498 | 5 NP | Intervallrechnung als Alternativweg
+Verfahrenswahl mit Transpositionsbeleg | 5 NP | Klangvergleich als Alternativweg
+Gesamt: 15 NP
+
+KERNSATZ (auswendig):
+- Kernsatz: `V-I mit Leitton schliesst Heimkehr, V-VI taeuscht Trug.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = Kadenzstufe als Subjekt | Mechanismus = Leittonspannung mit Quintmass als Mechanismus | Urteil = Urteil auf Schlusswirkung
+- Selbsttest: V-I mit Leitton schliesst Heimkehr, ___ taeuscht Trug.
 
 `Klausur-Satz: AFB-III-Mustersatz: Der Heimkehr-Effekt entsteht, weil Leitton-Halbton und Quintfall V-I aufzwingen; Stufen plus 1,498 sichern volle Punktzahl.`
 

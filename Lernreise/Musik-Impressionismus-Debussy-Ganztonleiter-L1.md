@@ -8,7 +8,7 @@ operatoren: [beschreiben, analysieren, deuten]
 klausurrelevant: true
 datum: 2026-10-03
 tags: [EF, Musik, Impressionismus, Debussy, Ganztonleiter, Pentatonik, Harmonik]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Impressionismus in der Musik: Debussy und die Aufloesung der Dur-Moll-Tonalitaet (L1, Ziel Klausur)
@@ -29,7 +29,7 @@ Paris im Jahr 1894. Im festlichen Konzertsaal der Societe Nationale de Musique h
 `Klausur-Satz: Debussy ersetzt die teleologische Zielgerichtetheit der traditionellen Funktionsharmonik durch statische Klangfarbenflaechen, Ganztonskalen und pentatonische Schwebeklaenge.`
 
 ## Schritt 2 — entdecken: Das Vokabular der impressionistischen Klangwelt
-PRETRAINING术语盒（核心4词，先读三遍中德，合书自测中文→德语）：
+PRETRAINING术语盒（核心4词，先读三遍中德，合书自测中文->德语）：
 
 - 全音阶 — Ganztonleiter: 仅由大二度全音（如 C-D-E-Fis-Gis-Ais-C）构成的六声音阶，彻底去除了小二度导音（Leitton），从而消解了所有调性重力与中心感。 Eine Skala aus sechs Toenen mit ausschliesslich Ganztonschritten, die mangels Halbtonschritten und Leittoenen voellige Zentrenlosigkeit erzeugt.
 - 五声音阶 — Pentatonik: 缺乏半音程的三全音五声音阶（如黑键构成的音阶），散发东方冥想式的空灵与古朴色彩。 Eine fuenftoenige Skala ohne Halbtonschritte, die schwebende, obertonreiche Klangwirkungen hervorruft.
@@ -62,11 +62,28 @@ Impressionismus (Debussy):
 
 [Werkzeug: balance-board]
 
-AUFGABE (beschreiben & deuten, AFB I/II):
+AUFGABE (beschreiben & deuten, [AFB I/II]): Beschreibe [AFB I/II] den Befund und deute [AFB I/II] die Wirkung anhand der unten angegebenen Takte und Parameter. 
 Betrachte den Beginn des Floetenthemas aus Debussys "Prelude a l'apres-midi d'un faune":
 Das Solo beginnt auf dem Ton cis'', sinkt chromatisch in kleinen Wellenbewegungen bis zum g' hinab (Intervall des Tritonus / "Diabolus in musica") und steigt danach wieder zum cis'' empor, waehrend die Harfe sanfte Septimenklaenge tupft.
 1. Beschreibe die rhythmische und metrische Organisation des Themas (Triolen, Duolen, Taktwechsel).
 2. Deute die harmonische und dramaturgische Wirkung des Tritonus-Abstiegs im Vergleich zu einer klassischen Kadenz.
+
+HILFE:
+- Themendimension: Pruefe Tritonusachse mit Notenvergleich; notiere nur die Ecktoene, deute die Wirkung noch nicht.
+- Metrikdimension: Pruefe Puls mit Taktvergleich; sammle nur Triolen und Duolen, ohne das Urteil vorwegzunehmen.
+- Skalendimension: Pruefe Tonvorrat mit Leittontest; halte nur die Skala fest, ohne die Deutung zu setzen.
+
+COMPLETION (Lückentext):
+- Lies beide Saetze und ergaenze aus dem Gedaechtnis, ohne zurueckzublaettern:
+- Das Thema pendelt um den Tritonus ___ ohne dominante Aufloesung.
+- Ordne die Skala als ___ ein und pruefe den Vorrat ohne Musterloesung.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Themenbefund mit Tritonusanker | 5 NP | Achsenskizze als Alternativweg
+Metrikanalyse mit Verschleierungsbezug | 5 NP | Rhythmusvergleich als Alternativweg
+Skalenurteil mit Farbebeleg | 5 NP | Offenes Urteil mit Faunbezug als Alternativweg
+Gesamt: 15 NP
 
 MUSTERLOESUNG:
 1. Rhythmik und Metrik:
@@ -81,7 +98,19 @@ MUSTERLOESUNG:
 ## Schritt 5 — ausprobieren: Duell der Tonsysteme: Kadenz vs. Farbflaeche
 
 VERGLEICH: Funktionale Kadenzharmonik vs. Impressionistische Klangfarbenflaechen (选概念)
+- Position A (Funktionsharmonik bei Beethoven / Wagner): Neutralfassung fuer die Wahl.
+- [Weg A] Wenn du Weg A waehlst, arbeitest du in Schritt 7 vor allem mit Befund, Zahl und Zuordnung.
+- Position B (Impressionistische Klangarchitektur bei Debussy / Ravel): Neutralfassung fuer die Wahl.
+- [Weg B] Wenn du Weg B waehlst, arbeitest du in Schritt 7 vor allem mit Kette, Deutung und Urteil.
 
+AUFGABE A: Welche Pruefgroesse verlangt Befund und Rechnung? Begruende ohne Mechanismus.
+AUFGABE B: Welche Frage verlangt Kette und Deutung? Begruende ohne Mechanismus.
+
+HILFE: Pruefe dimensionsgeleitet, welcher Weg passt: Kadenzfrage mit Stufentest spricht fuer Befund und Weg A; Farbfrage mit Skalenvergleich spricht fuer Kette und Weg B. Ordne selbst zu; die Zuordnung wird nicht vorweggenommen.
+
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg A oder Weg B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Ueberfuehrt aus VERGLEICH (Vorwahl-Fassung):
 - Position A (Funktionsharmonik bei Beethoven / Wagner):
   - Prinzip: Ursache-Wirkung-Kette, harmonische Teleologie (Streben nach Ziel und Aufloesung).
   - Akkordbeziehung: Spannungsgeladene Kadenzen (Tonika - Subdominante - Dominante - Tonika).
@@ -90,6 +119,10 @@ VERGLEICH: Funktionale Kadenzharmonik vs. Impressionistische Klangfarbenflaechen
   - Prinzip: Statischer Moment, Meditation ueber Schwingung, Kontemplation.
   - Akkordbeziehung: Nebeneinandergestellte Akkordinseln, Mixturparallelen, Quartenschichtungen.
   - Hörerfahrung: Assoziatives Sehen von Farben, Lichtreflexen, Wasserbewegungen und Atmosphaeren.
+- Ueberfuehrt aus Schritt-5-HILFE (Vorwahl-Fassung): Kein Spoiler in Vorwahl-HILFE bestaetigt, Vorwahl-Fassung enthielt keine HILFE mit Loesungszuordnung.
+- Mechanismus A: Funktionsharmonik strebt teleologisch zur Kadenz.
+- Mechanismus B: Klangflaeche lagert Akkordinseln statisch.
+- Ein-Satz-Kern: Ganztonleiter loescht Leitton und traegt schwebende Farbflaeche.
 
 Entscheidungsregel fuer die Klausur:
 Wird nach `Harmonischer Analyse bei Debussy` gefragt, suche niemals krampfhaft nach klassischen Stufen oder Riemannschen Kadenzen; beschreibe stattdessen Tonleitermodelle (Pentatonik, Ganztonleiter) und Akkordschichtungen als eigenstaendige Farbwerte!
@@ -98,17 +131,27 @@ Wird nach `Harmonischer Analyse bei Debussy` gefragt, suche niemals krampfhaft n
 
 PRUEFUNGSSZENARIO (KLP NRW Musik GK/LK Inhaltsfeld 1: Bedeutungen von Musik):
 
-### AFB I: Notentext-Analyse
+AUFGABE (erlaeutern, vergleichen & beurteilen, [AFB I/II/III]): Erlaeutere [AFB I] die Einordnung, vergleiche [AFB II] die Strukturen und beurteile [AFB III] die These.
+
+### [AFB I]: Notentext-Analyse
 Identifiziere in den Takten 1 bis 15 des Klavierstuecks "Voiles" (Preludes I) das verwendete Tonleitermodell und weise die Abwesenheit von Leittoenen nach.
 
-### AFB II: Epochen- und Kunstvergleich
+### [AFB II]: Epochen- und Kunstvergleich
 Vergleiche die musikalische Vorgehensweise Debussys mit den Gemaelden Claude Monets (z. B. "Impression, Sonnenaufgang" oder die "Seerosen"-Bilder).
 Erläutere Parallelen bezueglich Licht/Klangfarbe, Aufloesung harter Konturen und subjektiver Wahrnehmung.
 
-### AFB III: Musikgeschichtliches Urteil
+### [AFB III]: Musikgeschichtliches Urteil
 Beurteile die These: "Debussy hat die Tonalitaet nicht zerstoert wie spaeter Arnold Schoenberg mit der Zwoelftontechnik, sondern er hat sie wie Parfum in der Luft zerzaeubt."
 
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Skalenbefund mit Leittonnachweis | 5 NP | Tonvorratstabelle als Alternativweg
+Bildvergleich mit Lichtbezug | 5 NP | Gemaeldevergleich als Alternativweg
+Epochenurteil mit Bruchbeleg | 5 NP | Offenes Urteil mit Thesenbezug als Alternativweg
+Gesamt: 15 NP
+
 ## Schritt 7 — check: Format-Check & Scoring
+AUFGABE (benennen & erklaeren, [AFB I]): Benenne [AFB I] die drei Kernbegriffe und erklaere [AFB I] jeden in einem Satz; nutze die FRAGE-Antwort-Paare unten als Beleg.
 
 30 XP Schnelltest zur Verstaendigungssicherung:
 
@@ -119,6 +162,19 @@ FRAGE: Was verstand Debussy unter dem Vorwurf des "Wagnerismus", von dem er sich
 ANTWORT: Die ueberladene, philosophisch ueberfrachtete deutsche Monumentaldramatik mit ihren ewigen Leitton-Seufzern und schwerfaelligen Riesenorchestern, der er franzoesische Klarheit, Leichtigkeit und Sinnlichkeit entgegensetzte.
 
 `Klausur-Satz: Die differenzierte Reflexion erfordert eine stringente Verknuepfung von theoretischem Kriterienkatalog und konkretem Klausurmaterial.`
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Ganztonbefund mit Sechsertest | 5 NP | Skalentabelle als Alternativweg
+Abgrenzungsanalyse mit Wagnerbezug | 5 NP | Epochenvergleich als Alternativweg
+Reflexionsurteil mit Kriterienbeleg | 5 NP | Offenes Urteil mit Materialbezug als Alternativweg
+Gesamt: 15 NP
+
+KERNSATZ (auswendig):
+- Kernsatz: `Ganztonleiter loescht Leitton und traegt schwebende Farbflaeche.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = Ganztonvorrat als Subjekt | Mechanismus = Leittonloeschung als Mechanismus | Urteil = Urteil auf Farbflaeche
+- Selbsttest: Ganztonleiter loescht ___ und traegt schwebende Farbflaeche.
 
 ## Schritt 8 — reflexion: Meisterschaft & Naechste Mission
 

@@ -8,7 +8,7 @@ operatoren: [beschreiben, analysieren, interpretieren]
 klausurrelevant: true
 datum: 2026-10-03
 tags: [EF, Musik, Filmmusik, Leitmotivtechnik, Wagner, John-Williams]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Leitmotivtechnik in der Filmmusik von Wagner bis John Williams (L1, Ziel Klausur)
@@ -31,7 +31,7 @@ Hook / Phaenomen: Du sitzt im Kino: Die Leinwand zeigt einen friedlichen Sommert
 `Klausur-Satz: Das Leitmotiv fungiert in der Filmmusik als semantischer Bedeutungstraeger, der Personen, Ideen oder Gefahren unabhaengig vom sichtbaren Bildgeschehen ankündigt und emotional codiert.`
 
 ## Schritt 2 — entdecken: Ausruestungskiste der Filmmusik-Unit
-PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
+PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文->德语，Evidenz：pretraining降认知负荷）：
 
 中文在上，德语在下：
 
@@ -87,7 +87,7 @@ BEISPIEL（正确例题示范，含教具操作与解答）：
 
 [Werkzeug: highlighter]
 
-AUFGABE (beschreiben & interpretieren, AFB I/II)：
+AUFGABE (beschreiben & interpretieren, [AFB I/II])：Beschreibe [AFB I/II] den Befund und interpretiere [AFB I/II] die Wirkung anhand der unten angegebenen Takte und Parameter. 
 Gegeben ist eine Filmszene aus "Herr der Ringe" (Komponist: Howard Shore):
 Die Hauptfigur Frodo starrt auf den Einen Ring.
 - Akustische Ebene 1: Man hoert das leise, metallische Vibrieren des Rings und Frodos schweren Atem.
@@ -97,9 +97,21 @@ Die Hauptfigur Frodo starrt auf den Einen Ring.
 2. Interpretieren Sie den abrupten Musikwechsel im Sinne der psychologischen Figurenführung. (20 BE)
 
 HILFE:
-1. Schritt 1: Klassifikation: Frodos Atem und das Summen des Rings sind diegetisch (in der Filmwelt hoerbar). Das Ring-Thema der Violine ist nicht-diegetisch (Score).
-2. Schritt 2: Semantische Codierung: Das Ring-Motiv nutzt orientalische Skalen / Halbtonreibungen, was dem Ring Fremdartigkeit, Sucht und Gefahr verleiht.
-3. Schritt 3: Schnitt / Umschwung: Der Wechsel zum Auenland-Thema (D-Dur, warme Floeten) repraesentiert Heimat, Freundschaft und das Aufwachen aus der Trance.
+- Ebenendimension: Pruefe Herkunft mit Quelltest; notiere nur die Quelle, deute die Funktion noch nicht.
+- Motivdimension: Pruefe Skalenfaerbung mit Intervallvergleich; sammle nur Halbtonschritte, ohne das Urteil vorwegzunehmen.
+- Wechseldimension: Pruefe Themenkontrast mit Besetzungsvergleich; halte nur Instrumente fest, ohne die Deutung zu setzen.
+
+COMPLETION (Lückentext):
+- Lies beide Saetze und ergaenze aus dem Gedaechtnis, ohne zurueckzublaettern:
+- Atem und Metall klingen ___, das Ringmotiv nur fuer Zuschauer.
+- Ordne den Abbruch als ___ ein und pruefe die Rettung ohne Musterloesung.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Ebenenbefund mit Quellanker | 5 NP | Quelltabelle als Alternativweg
+Codierungsanalyse mit Skalenbezug | 5 NP | Intervallvergleich als Alternativweg
+Figurenurteil mit Kontrastbeleg | 5 NP | Offenes Urteil mit Szenenbezug als Alternativweg
+Gesamt: 15 NP
 
 MUSTERLÖSUNG:
 1. Akustische Ebenen und Diegese:
@@ -114,7 +126,19 @@ MUSTERLÖSUNG:
 ## Schritt 5 — ausprobieren: Duell der Filmmusik-Konzepte: Mickey-Mousing vs. Underscoring
 
 VERGLEICH: Mickey-Mousing vs. Symphonisches Underscoring
+- Position A (Mickey-Mousing / Physische Pantomime): Neutralfassung fuer die Wahl.
+- [Weg A] Wenn du Weg A waehlst, arbeitest du in Schritt 7 vor allem mit Befund, Zahl und Zuordnung.
+- Position B (Symphonisches Underscoring / Psychologische Tiefe): Neutralfassung fuer die Wahl.
+- [Weg B] Wenn du Weg B waehlst, arbeitest du in Schritt 7 vor allem mit Kette, Deutung und Urteil.
 
+AUFGABE A: Welche Pruefgroesse verlangt Befund und Rechnung? Begruende ohne Mechanismus.
+AUFGABE B: Welche Frage verlangt Kette und Deutung? Begruende ohne Mechanismus.
+
+HILFE: Pruefe dimensionsgeleitet, welcher Weg passt: Bewegungsfrage mit Synchronvergleich spricht fuer Befund und Weg A; Gefuehlsfrage mit Tiefendeutung spricht fuer Kette und Weg B. Ordne selbst zu; die Zuordnung wird nicht vorweggenommen.
+
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg A oder Weg B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Ueberfuehrt aus VERGLEICH (Vorwahl-Fassung):
 - Position A (Mickey-Mousing / Physische Pantomime):
   - Methode: Jeder Schritt, jeder Blick und jeder Fall wird exakt parallelvertont (hohe Floetentriller fuer Augenblinzeln, Glissandi fuer Ausrutschen).
   - Wirkung: Humoristisch, distanzierend, karikaturhaft; nimmt der Szene oft die dramatische Ernsthaftigkeit.
@@ -123,6 +147,10 @@ VERGLEICH: Mickey-Mousing vs. Symphonisches Underscoring
   - Methode: Die Musik ignoriert die kleinteiligen Bewegungen und vertont die unausgesprochenen inneren Konflikte, Hoffnungen und Tragik der Akteure.
   - Wirkung: Identifikationsstiftend, emotional fesselnd, immersiv; verleiht zweidimensionalen Bildern emotionale Dreidimensionalitaet.
   - Typisches Genre: Grosses Drama, Science-Fiction, Fantasy-Epos (z.B. Star Wars, Gladiator).
+- Ueberfuehrt aus Schritt-5-HILFE (Vorwahl-Fassung): Kein Spoiler in Vorwahl-HILFE bestaetigt, Vorwahl-Fassung enthielt keine HILFE mit Loesungszuordnung.
+- Mechanismus A: Mickey-Mousing verdoppelt Bewegung bildsynchron.
+- Mechanismus B: Underscoring traegt innere Konflikte subtil.
+- Ein-Satz-Kern: Leitmotiv-Transformation spiegelt Figurenwandel durch Klangwechsel.
 
 Entscheidungsregel fuer die Klausur:
 Wird nach der `Funktion der Filmmusik` gefragt, immer die 3 Funktionen nach Claudia Bullerjahn anwenden: Syntaktische Funktion (Gliederung von Szenen), Expressive Funktion (Gefuehlsverstaerkung) und Semantische Funktion (Erklaerung von Handlung und Sinn)!
@@ -132,15 +160,22 @@ PRÜFUNGSSZENARIO (KLP NRW Musik EF Inhaltsfeld 1: Bedeutungen von Musik / Musik
 
 Gegeben ist die Eroeffnungssequenz aus Stanley Kubricks "2001: Odyssee im Weltraum". Zu den Bildern einer kosmischen Konstellation von Mond, Erde und aufgehender Sonne erklingt der Beginn von Richard Strauss' symphonischer Dichtung "Also sprach Zarathustra" (C-G-c Pauken-Signal, gefolgt vom vollen Tutti-Akkord in C-Dur).
 
-AUFGABE (analysieren & deuten, AFB II/III):
-1. Analysieren Sie die musikalische Struktur des Strauss-Zitats (Intervallik, Dynamik, Besetzung). (12 BE)
-2. Deuten Sie das Verhaeltnis von Musik und Bild hinsichtlich der intendierten Aussage ueber die menschliche Evolution. (18 BE)
+AUFGABE (analysieren & deuten, [AFB II/III]): Analysiere [AFB II/III] den Befund und deute [AFB II/III] die Wirkung anhand der unten angegebenen Takte und Parameter. 
+1. Analysieren Sie die musikalische Struktur des Strauss-Zitats (Intervallik, Dynamik, Besetzung). [AFB II] (12 BE)
+2. Deuten Sie das Verhaeltnis von Musik und Bild hinsichtlich der intendierten Aussage ueber die menschliche Evolution. [AFB III] (18 BE)
 
 ERWARTUNGSHORIZONT:
-- AFB II: Die Fanfare basiert auf den Ur-Intervallen der Naturtonreihe (Grundton $C$, reine Quinte $G$, Oktave $c$). Auf das Pianissimo-Grollen der Kontrabaesse und der Basstrommel folgt ein monumentales Crescendo der Blechblaeser, gekroent vom colossalen Tutti-Einsatz mit Orgel. Die formale Symmetrie und harmonische Klarheit (Wechsel von C-Moll nach strahlendem C-Dur) repraesentieren kosmische Erhabenheit.
-- AFB III: Kubrick nutzt die Musik nicht als simples "Weltraum-Gedudel", sondern als philosophisches Statement im Sinne Friedrich Nietzsches: Der Sonnenaufgang steht fuer das Erwachen des menschlichen Bewusstseins und den evolutionaeren Sprung vom Tier zum "Uebermenschen". Die universale Naturton-Symbolik verleiht dem kosmischen Bild eine ueberzeitliche, quasi-religioese Monumentalitaet.
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Intervallbefund mit Naturtonanker | 5 NP | Fanfarenskizze als Alternativweg
+Besetzungsanalyse mit Steigerungsbezug | 5 NP | Dynamikvergleich als Alternativweg
+Bildurteil mit Evolutionsbeleg | 5 NP | Offenes Urteil mit Nietzschesbezug als Alternativweg
+Gesamt: 15 NP
+- [AFB II]: Die Fanfare basiert auf den Ur-Intervallen der Naturtonreihe (Grundton $C$, reine Quinte $G$, Oktave $c$). Auf das Pianissimo-Grollen der Kontrabaesse und der Basstrommel folgt ein monumentales Crescendo der Blechblaeser, gekroent vom colossalen Tutti-Einsatz mit Orgel. Die formale Symmetrie und harmonische Klarheit (Wechsel von C-Moll nach strahlendem C-Dur) repraesentieren kosmische Erhabenheit.
+- [AFB III]: Kubrick nutzt die Musik nicht als simples "Weltraum-Gedudel", sondern als philosophisches Statement im Sinne Friedrich Nietzsches: Der Sonnenaufgang steht fuer das Erwachen des menschlichen Bewusstseins und den evolutionaeren Sprung vom Tier zum "Uebermenschen". Die universale Naturton-Symbolik verleiht dem kosmischen Bild eine ueberzeitliche, quasi-religioese Monumentalitaet.
 
 ## Schritt 7 — check: Format-Check & Scoring
+AUFGABE (benennen & erklaeren, [AFB I]): Benenne [AFB I] die drei Kernbegriffe und erklaere [AFB I] jeden in einem Satz; nutze die FRAGE-Antwort-Paare unten als Beleg.
 30 XP Schnelltest zur Verstaendigungssicherung:
 
 FRAGE: Was unterscheidet diegetische Musik (Source Music) fundamental von nicht-diegetischer Musik (Score)?
@@ -151,6 +186,19 @@ ANTWORT: Richard Wagner (insbesondere im vierteiligen Opernzyklus "Der Ring des 
 
 FRAGE: Wie nennt man die Technik, wenn ein Leitmotiv durch Tempowechsel, Moll-Harmonisierung oder Instrumentenwechsel an eine neue dramatische Situation angepasst wird?
 ANTWORT: Motivische Transformation (bzw. Leitmotiv-Variation).
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Diegesebefund mit Quelltest | 5 NP | Ebenentabelle als Alternativweg
+Ahnenanalyse mit Wagnerbezug | 5 NP | Werkvergleich als Alternativweg
+Variationsurteil mit Transformationsbeleg | 5 NP | Offenes Urteil mit Parameterbezug als Alternativweg
+Gesamt: 15 NP
+
+KERNSATZ (auswendig):
+- Kernsatz: `Leitmotiv-Transformation spiegelt Figurenwandel durch Klangwechsel.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = Leitmotiv als Subjekt | Mechanismus = Transformation im Bild als Mechanismus | Urteil = Urteil auf Figurenfuehrung
+- Selbsttest: Leitmotiv-Transformation spiegelt Figurenwandel durch ___.
 
 ## Schritt 8 — reflexion: Meisterschaft & Naechste Mission
 REFLEXION:

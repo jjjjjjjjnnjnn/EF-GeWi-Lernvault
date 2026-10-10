@@ -8,7 +8,7 @@ operatoren: [beschreiben, analysieren, beurteilen]
 klausurrelevant: true
 datum: 2026-09-25
 tags: [EF, Musik, Hoeranalyse]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 
@@ -77,32 +77,52 @@ BEISPIEL (Musteraufgabe mit Loesungsweg):
 
 [Werkzeug: oral-timer]
 
-AUFGABE (analysieren, AFB II): 90-Sekunden-Probe gegen den Timer: 30 s Hoeren (108 BPM), 2 Parameter mit T = 60/BPM belegen, dann Rede am Target. Erreiche das Target: 30 s Hoerbeispiel, 90 s Rede, 3 Parameter, Formel T = 60/108.
+AUFGABE (analysieren, [AFB II]): Analysiere [AFB II] die Target-Probe in 90 Sekunden; belege jede Aussage mit Zahl und Takt. 90-Sekunden-Probe gegen den Timer: 30 s Hoeren (108 BPM), 2 Parameter mit T = 60/BPM belegen, dann Rede am Target. Erreiche das Target: 30 s Hoerbeispiel, 90 s Rede, 3 Parameter, Formel T = 60/108.
 
 TARGET: 30 s Hoerbeispiel, 90 s Rede, 3 Parameter, Formel T = 60/108.
 
 HILFE:
-1. Schritt 1: Notiere 3 Parameter mit Takt und Instrument.
-2. Schritt 2: Deute jeden mit Fachbegriff plus weil.
-3. Schritt 3: Schliesse mit Urteil in einem Satz.
+- Parameterdimension: Pruefe Klang mit Takt- und Instrumenttest; notiere nur drei Parameter, deute die Wirkung noch nicht.
+- Verknuepfungsdimension: Pruefe Deutung mit Fachbegriffstest; sammle nur weil-Saetze, ohne das Urteil vorwegzunehmen.
+- Urteilsdimension: Pruefe Schluss mit Thesentest; halte nur einen Satz fest, ohne die Deutung zu setzen.
+
+COMPLETION (Lückentext):
+- Lies beide Saetze und ergaenze aus dem Gedaechtnis, ohne zurueckzublaettern:
+- Motiv mit 108 BPM und ___ traegt Rede, Gefuehl allein null.
+- Ordne den weil-Satz als ___ ein und pruefe die Zahl ohne Musterloesung.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Parameterbefund mit Taktanker | 5 NP | Parametertabelle als Alternativweg
+Deutungsanalyse mit weil-Bezug | 5 NP | Begriffsvergleich als Alternativweg
+Redeurteil mit Zeitbeleg | 5 NP | Offenes Urteil mit Timerbezug als Alternativweg
+Gesamt: 15 NP
 
 MUSTERLOESUNG: Das Motiv (g-g-g-es, 108 BPM, T = 0,56 s) ist rhythmisch gepraegt und dynamisch ff; die Klangfarbe Streicher-Tutti plus Terzfall deuten Drohung. Das Target wird erreicht, weil drei Parameter mit Zahl, Fachbegriff und Urteil in 90 Sekunden klingen. Gefuehl allein haette null Punkte gegeben.
 
 `Klausur-Satz: Das Target 108 BPM plus T = 0,56 s beweist: Zahlen schlagen Raunen.`
 
-## Schritt 5 — ausprobieren: Verfahrensduell Parameterbeschreibung (sichern: was klingt?) gegen Wirkungsdeutung (deuten: was wirkt wie?)
+## Schritt 5 — ausprobieren: Verfahrensduell Parameterbeschreibung gegen Wirkungsdeutung
 
 VERGLEICH (zwei Verfahren im Kontrast):
 
-VERGLEICH: Waehle zuerst das Verfahren: (i) Parameterbeschreibung (sichern: was klingt?) oder (ii) Wirkungsdeutung (deuten: was wirkt wie?), dann loesen. Die Wahl des Verfahrens entscheidet ueber die ganze Begruendung.
+VERGLEICH: Waehle zuerst das Verfahren: (i) Parameterbeschreibung oder (ii) Wirkungsdeutung, dann loesen. Die Wahl des Verfahrens entscheidet ueber die ganze Begruendung.
 
-AUFGABE A: Fall A (unbekanntes Stueck, erste 30 s): Welcher Weg?
+AUFGABE A: Fall A (unbekanntes Stueck, erste 30 s): Welcher Weg? Begruende ohne Mechanismus.
 
-AUFGABE B: Fall B (bekanntes Motiv, Wirkung gefragt): Welcher Weg?
+AUFGABE B: Fall B (bekanntes Motiv, Wirkung gefragt): Welcher Weg? Begruende ohne Mechanismus.
 
-HILFE: A braucht Belege, also Beschreibung. B fragt Wirkung, also Deutung auf Belegen.
+HILFE: Pruefe dimensionsgeleitet, welcher Weg passt: Neulandfrage mit Sicherungsansatz spricht fuer Weg (i); Wirkungsfrage mit Deutungsansatz spricht fuer Weg (ii). Ordne selbst zu; die Zuordnung wird nicht vorweggenommen.
 
-ANTWORT: A erfordert Weg A mit drei Parametern. B erfordert Weg B mit weil-Saetzen auf Belegen. Ich waehle A/B, weil Fragestellung es verlangt.
+ANTWORT: Die Zuordnung steht in der AUFLÖSUNG (nach der Wahl lesen); begruende erst selbst ohne Mechanismus.
+
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg (i) oder Weg (ii) lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Ueberfuehrt aus VERGLEICH (Vorwahl-Fassung): VERGLEICH: Waehle zuerst das Verfahren: (i) Parameterbeschreibung (sichern: was klingt?) oder (ii) Wirkungsdeutung (deuten: was wirkt wie?), dann loesen. Die Wahl des Verfahrens entscheidet ueber die ganze Begruendung.
+- Ueberfuehrt aus Schritt-5-HILFE (Vorwahl-Fassung): HILFE: A braucht Belege, also Beschreibung. B fragt Wirkung, also Deutung auf Belegen. / ANTWORT: A erfordert Weg A mit drei Parametern. B erfordert Weg B mit weil-Saetzen auf Belegen. Ich waehle A/B, weil Fragestellung es verlangt.
+- Mechanismus (i): Parameterbeschreibung sichert drei Belege mit Zahl.
+- Mechanismus (ii): Wirkungsdeutung verknuepft Beleg mit weil.
+- Ein-Satz-Kern: Parameter mit Zahl tragen Urteil, Gefuehl allein null.
 
 `Klausur-Satz: Beschreiben oder Deuten: Die Fragestellung waehlt den Weg.`
 
@@ -130,7 +150,22 @@ CHECK (3 Fragen zur Selbstkontrolle mit Antworten):
 ## Schritt 7 — szenario: Klausurtransfer — Chefdirigent im Konzerthaus
 ROLLE: Du bist Chefdirigent im Konzerthaus und verteidigst deine Entscheidung vor der Pruefungskommission.
 SITUATION: In Berlin musst du 90 Sekunden lang Parameter, Deutung und Target (108 BPM, 3 Parameter) verteidigen.
+AUFGABE (darstellen & beurteilen, [AFB II/III]): Stelle [AFB II] Diagnose und Massnahme mit Target-Beleg dar und beurteile [AFB III] die Verfahrenswahl.
+
 RUBRIC (30 XP): Diagnose mit Fachbegriffen (8 XP) | Massnahme mit Target-Beleg (10 XP) | Verfahrenswahl im Vergleich (7 XP) | Fachsprachlicher Vortrag (5 XP).
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Diagnose mit Parameterbegriffen und BPM-Anker | 5 NP | Begriffsvergleich als Alternativweg
+Massnahme mit T-Rechnung | 5 NP | Zeitrechnung als Alternativweg
+Verfahrenswahl mit Fragestellungsbeleg | 5 NP | Situationsvergleich als Alternativweg
+Gesamt: 15 NP
+
+KERNSATZ (auswendig):
+- Kernsatz: `Parameter mit Zahl tragen Urteil, Gefuehl allein null.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = Parameter als Subjekt | Mechanismus = Zahl mit weil-Verknuepfung als Mechanismus | Urteil = Urteil auf Redeerfolg
+- Selbsttest: Parameter mit Zahl tragen Urteil, ___ allein null.
 
 `Klausur-Satz: AFB-III-Mustersatz: Die Drohwirkung entsteht, weil rhythmisches Viertonmotiv in ff mit Streicher-Tutti bei 108 BPM erklingt; erst Parameter, dann Urteil sichern volle Punktzahl.`
 

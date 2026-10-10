@@ -8,7 +8,7 @@ operatoren: [beschreiben, analysieren, erlaeutern]
 klausurrelevant: true
 datum: 2026-10-03
 tags: [EF, Musik, Barock, Fuge, Kontrapunkt, Bach, Formenlehre]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Formenlehre: Die barocke Fuge und der polyphone Kontrapunkt (L1, Ziel Klausur)
@@ -31,7 +31,7 @@ Hook / Phaenomen: Vier Menschen reden gleichzeitig durcheinander — im Alltag f
 `Klausur-Satz: Die barocke Fuge repraesentiert den Hoehepunkt der kontrapunktischen Polyphonie, in der ein einziges Thema nacheinander durch alle Stimmen wandert und nach strengen Gesetzmaessigkeiten verarbeitet wird.`
 
 ## Schritt 2 — entdecken: Ausruestungskiste der Fugen-Unit
-PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
+PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文->德语，Evidenz：pretraining降认知负荷）：
 
 中文在上，德语在下：
 
@@ -80,7 +80,7 @@ BEISPIEL（正确例题示范，含教具操作与解答）：
 
 [Werkzeug: lego]
 
-AUFGABE (beschreiben & analysieren, AFB I/II)：
+AUFGABE (beschreiben & analysieren, [AFB I/II])：Beschreibe [AFB I/II] den Befund und analysiere [AFB I/II] die Wirkung anhand der unten angegebenen Takte und Parameter. 
 Gegeben ist die Exposition der Fuge C-Dur aus Johann Sebastian Bachs "Wohltemperiertem Klavier I" (BWV 846, 4 Stimmen):
 - Takt 1–2: Der Alt beginnt allein mit dem Thema im Umfang von 14 Noten in C-Dur.
 - Takt 3: Der Sopran setzt mit dem Thema auf dem Ton $g'$ ein, waehrend der Alt eine Achtel-Gegenstimme weiterfuehrt.
@@ -90,12 +90,21 @@ Gegeben ist die Exposition der Fuge C-Dur aus Johann Sebastian Bachs "Wohltemper
 2. Analysieren Sie die satztechnische Funktion des Zwischenspiels zwischen Takt 4 und 5. (20 BE)
 
 HILFE:
-1. Schritt 1: Tonstufen zuordnen:
-   - Alt auf $c'$ = Dux (Grundtonart C-Dur, Stufe I).
-   - Sopran auf $g'$ = Comes (Oberquinte / Dominante G-Dur, Stufe V).
-   - Tenor auf $c$ = Dux (Grundtonart C-Dur, Stufe I).
-   - Bass auf $G$ = Comes (Unterquarte / Dominante G-Dur, Stufe V).
-2. Schritt 2: Funktion des Zwischenspiels (Bicinium / Divertimento): Modulation von G-Dur zurueck nach C-Dur und Vorbereitung des 3. Themeneinsatzes.
+- Einsatzdimension: Pruefe Stimme und Takt mit Diagrammtest; notiere nur die Einsaetze, deute die Stufe noch nicht.
+- Stufendimension: Pruefe Tonhoehe mit Quintnachweis; sammle nur I oder V, ohne das Urteil vorwegzunehmen.
+- Zwischenspieldimension: Pruefe Modulation mit Taktvergleich; halte nur die Takte fest, ohne die Deutung zu setzen.
+
+COMPLETION (Lückentext):
+- Lies beide Saetze und ergaenze aus dem Gedaechtnis, ohne zurueckzublaettern:
+- Alt auf c traegt ___, Sopran auf g antwortet dominantisch.
+- Ordne das Zwischenspiel als ___ ein und pruefe die Takte ohne Musterloesung.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Einsatzbefund mit Taktanker | 5 NP | Einsatzdiagramm als Alternativweg
+Stufenanalyse mit Quintbezug | 5 NP | Stufentabelle als Alternativweg
+Expositionsurteil mit Diagrammbeleg | 5 NP | Offenes Urteil mit Stimmenbezug als Alternativweg
+Gesamt: 15 NP
 
 MUSTERLÖSUNG:
 1. Analyse der Stimmeinsaetze in der Exposition (Takt 1–7):
@@ -112,7 +121,19 @@ MUSTERLÖSUNG:
 ## Schritt 5 — ausprobieren: Duell der Texturen: Polyphonie vs. Homophonie
 
 VERGLEICH: Polyphonie (Kontrapunkt) vs. Homophonie (Akkordsatz)
+- Position A (Polyphonie / Gleichberechtigte Kontrapunktik): Neutralfassung fuer die Wahl.
+- [Weg A] Wenn du Weg A waehlst, arbeitest du in Schritt 7 vor allem mit Befund, Zahl und Zuordnung.
+- Position B (Homophonie / Melodie mit Akkordbegleitung): Neutralfassung fuer die Wahl.
+- [Weg B] Wenn du Weg B waehlst, arbeitest du in Schritt 7 vor allem mit Kette, Deutung und Urteil.
 
+AUFGABE A: Welche Pruefgroesse verlangt Befund und Rechnung? Begruende ohne Mechanismus.
+AUFGABE B: Welche Frage verlangt Kette und Deutung? Begruende ohne Mechanismus.
+
+HILFE: Pruefe dimensionsgeleitet, welcher Weg passt: Stimmenfrage mit Einsatzdiagramm spricht fuer Befund und Weg A; Klangfrage mit Akkordvergleich spricht fuer Kette und Weg B. Ordne selbst zu; die Zuordnung wird nicht vorweggenommen.
+
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg A oder Weg B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Ueberfuehrt aus VERGLEICH (Vorwahl-Fassung):
 - Position A (Polyphonie / Gleichberechtigte Kontrapunktik):
   - Textur: Jede Stimme (Sopran, Alt, Tenor, Bass) ist eine eigenstaendige Melodie mit eigenem Rhythmus. Es gibt keine "Begleitung" im herkoemmlichen Sinne.
   - Wahrnehmung: Hoechste Konzentration erforderlich; das Ohr wandert bestaendig zwischen den Stimmen hin und her. Vertikale Harmonien entstehen als Resultat horizontaler Linien.
@@ -121,6 +142,10 @@ VERGLEICH: Polyphonie (Kontrapunkt) vs. Homophonie (Akkordsatz)
   - Textur: Eine einzige Oberstimme traegt die Hauptmelodie; alle anderen Stimmen dienen als untergeordnete klangliche Fuellung (Akkorde, Alberti-Baesse).
   - Wahrnehmung: Sofort zugaenglich, liedhaft, hierarchisch geordnet; der Hoerer kann sich muehelos auf eine Melodielinie fokussieren.
   - Hoehepunkt: Fruehklassik, Wiener Klassik, moderne Popmusik.
+- Ueberfuehrt aus Schritt-5-HILFE (Vorwahl-Fassung): Kein Spoiler in Vorwahl-HILFE bestaetigt, Vorwahl-Fassung enthielt keine HILFE mit Loesungszuordnung.
+- Mechanismus A: Polyphonie fuehrt gleiche Linien kontrapunktisch.
+- Mechanismus B: Homophonie ordnet Melodie ueber Akkordbegleitung.
+- Ein-Satz-Kern: Dux und Comes wechseln Tonika und Dominante mit Kontrasubjekt.
 
 Entscheidungsregel fuer die Klausur:
 Wird nach `Satztechnik` gefragt, stets pruefen: Haben alle Stimmen unterschiedliche Rhythmen und eigenstaendige Themenfragmente (Polyphonie) oder bewegen sich die Begleitstimmen im selben Rhythmus wie die Melodie / als reine Akkordbrechung (Homophonie)?
@@ -130,18 +155,25 @@ PRÜFUNGSSZENARIO (KLP NRW Musik EF Inhaltsfeld 1: Bedeutungen von Musik / Forme
 
 Gegeben ist ein Ausschnitt aus der Fuge d-Moll aus Bachs "Kunst der Fuge" (BWV 1080, Contrapunctus VII). Bach laesst das Grundthema in einer Stimme im doppelten Notenwert (Augmentation: halbe Noten statt Viertel) erklingen, waehrend eine zweite Stimme dasselbe Thema zeitgleich in halbierten Notenwerten (Diminution: Achtelnoten) vortraegt und eine dritte Stimme das Thema in der Umkehrung (Spiegelung) darueberlegt.
 
-AUFGABE (analysieren & erlaeutern, AFB II/III):
-1. Definieren Sie die verwendeten Verarbeitungstechniken (Augmentation, Diminution, Umkehrung). (12 BE)
-2. Erlaeutern Sie, warum Bachs "Kunst der Fuge" als intellektuelles Denkmal der Kontrapunktik ohne feste Instrumentationsangabe ueberliefert wurde. (18 BE)
+AUFGABE (analysieren & erlaeutern, [AFB II/III]): Analysiere [AFB II/III] den Befund und erlaeutere [AFB II/III] die Wirkung anhand der unten angegebenen Takte und Parameter. 
+1. Definieren Sie die verwendeten Verarbeitungstechniken (Augmentation, Diminution, Umkehrung). [AFB II] (12 BE)
+2. Erlaeutern Sie, warum Bachs "Kunst der Fuge" als intellektuelles Denkmal der Kontrapunktik ohne feste Instrumentationsangabe ueberliefert wurde. [AFB III] (18 BE)
 
 ERWARTUNGSHORIZONT:
-- AFB II:
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Technikbefund mit Augmentationsanker | 5 NP | Notenvergleich als Alternativweg
+Verfahrensanalyse mit Spieglungsbezug | 5 NP | Tabellenvergleich als Alternativweg
+Formurteil mit Verdichtungsbeleg | 5 NP | Offenes Urteil mit Satzbezug als Alternativweg
+Gesamt: 15 NP
+- [AFB II]:
   - Augmentation: Verlaengerung aller Notenwerte des Themas (z.B. Verdopplung), wodurch das Thema majestatisch gedehnt wirkt.
   - Diminution: Verkuerzung aller Notenwerte (z.B. Halbierung), wodurch das Thema hastig und virtuos beschleunigt wird.
   - Umkehrung: Spiegelung der Tonhoehen an einer horizontalen Achse (aufsteigende Intervalle werden absteigend gespielt).
-- AFB III: "Die Kunst der Fuge" ist eine rein als Partitur in Partiturschreibweise ohne Angabe von Instrumenten notierte Werkreihe. Dies beweist Bachs platonisches Musikverstaendnis: Wahre musikalische Architektur existiert als reine mathematisch-geistige Ordnung, unabhaengig vom konkreten sinnlichen Klang eines bestimmten Instruments (Orgel, Cembalo oder Streichquartett).
+- [AFB III]: "Die Kunst der Fuge" ist eine rein als Partitur in Partiturschreibweise ohne Angabe von Instrumenten notierte Werkreihe. Dies beweist Bachs platonisches Musikverstaendnis: Wahre musikalische Architektur existiert als reine mathematisch-geistige Ordnung, unabhaengig vom konkreten sinnlichen Klang eines bestimmten Instruments (Orgel, Cembalo oder Streichquartett).
 
 ## Schritt 7 — check: Format-Check & Scoring
+AUFGABE (benennen & erklaeren, [AFB I]): Benenne [AFB I] die drei Kernbegriffe und erklaere [AFB I] jeden in einem Satz; nutze die FRAGE-Antwort-Paare unten als Beleg.
 30 XP Schnelltest zur Verstaendigungssicherung:
 
 FRAGE: Wie heisst die erste unbegleitete Themendarstellung einer Fuge in der Grundtonart (auf Latein)?
@@ -152,6 +184,19 @@ ANTWORT: Auf der 5. Stufe (Quinte / Dominante).
 
 FRAGE: Wie nennt man das dicht gedraengte Einsetzen des Themas in einer neuen Stimme, bevor die vorherige Stimme geendet hat?
 ANTWORT: Engfuehrung (Stretto).
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Duxbefund mit Lateintest | 5 NP | Begriffstabelle als Alternativweg
+Comesanalyse mit Stufenbezug | 5 NP | Quintvergleich als Alternativweg
+Engfuehrungsurteil mit Taktbeleg | 5 NP | Offenes Urteil mit Schlussbezug als Alternativweg
+Gesamt: 15 NP
+
+KERNSATZ (auswendig):
+- Kernsatz: `Dux und Comes wechseln Tonika und Dominante mit Kontrasubjekt.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = Dux-Einsatz als Subjekt | Mechanismus = I/V-Wechsel mit Kontrasubjekt als Mechanismus | Urteil = Urteil auf Fugenform
+- Selbsttest: Dux und Comes wechseln ___ und Dominante mit Kontrasubjekt.
 
 ## Schritt 8 — reflexion: Meisterschaft & Naechste Mission
 REFLEXION:

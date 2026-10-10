@@ -8,7 +8,7 @@ operatoren: [beschreiben, analysieren, erlaeutern]
 klausurrelevant: true
 datum: 2026-09-26
 tags: [EF, Musik, CN]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 
@@ -36,7 +36,7 @@ Hook (DE): All Blues laeuft im 6/8-Feeling, das Publikum klatscht auf eins mit u
 
 ## Schritt 2 — entdecken: 5术语装备盒
 
-PRETRAINING术语盒(核心5词,先读三遍中德,合书自测中文→德语):
+PRETRAINING术语盒(核心5词,先读三遍中德,合书自测中文->德语):
 
 中文在上,德语在下:
 
@@ -83,32 +83,52 @@ BEISPIEL(含教具操作与解答):
 
 [Werkzeug: formula]
 
-AUFGABE (analysieren, AFB II):律动调节器:量138 BPM下Delta,拍反拍,指认All Blues三连感,达标。达标线:138 BPM, Delta 0,22 s, 6/8-Feeling, 8 Takte klatschsicher。
+AUFGABE (analysieren, [AFB II]): Analysiere [AFB II] die Target-Probe in 90 Sekunden; belege jede Aussage mit Zahl und Takt. 律动调节器:量138 BPM下Delta,拍反拍,指认All Blues三连感,达标。达标线:138 BPM, Delta 0,22 s, 6/8-Feeling, 8 Takte klatschsicher。
 
 Target数值目标:138 BPM, Delta 0,22 s, 6/8-Feeling, 8 Takte klatschsicher。
 
 HILFE:
-1. 用30/BPM算Delta。
-2. 在6/8网格上标切分。
-3. 拍反拍说 groove 效果。
+- Rasterdimension: Pruefe Delta mit BPM-Rechnung; notiere nur den Wert, deute den Groove noch nicht.
+- Synkopendimension: Pruefe Versatz mit Rastervergleich; sammle nur die Stellen, ohne das Urteil vorwegzunehmen.
+- Groovedimension: Pruefe Wirkung mit Klatschtest; halte nur Backbeat fest, ohne die Deutung zu setzen.
+
+COMPLETION (Lückentext):
+- Lies beide Saetze und ergaenze aus dem Gedaechtnis, ohne zurueckzublaettern:
+- 138 BPM mit Delta 0,22 zieht ___ Groove, Backbeat traegt.
+- Ordne die Synkope als ___ ein und pruefe das Raster ohne Musterloesung.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Rasterbefund mit BPM-Anker | 5 NP | Rastertabelle als Alternativweg
+Synkopenanalyse mit Versatzbezug | 5 NP | Stellenvergleich als Alternativweg
+Grooveurteil mit Klatschbeleg | 5 NP | Offenes Urteil mit Buehnenbezug als Alternativweg
+Gesamt: 15 NP
 
 MUSTERLÖSUNG:138 BPM下Delta 0,22秒,钢琴riff全坐弱拍,8小节反拍加计算即达标。
 
 `Klausur-Satz: 目标138 BPM配0,22秒证明:微小拽全场。`
 
-## Schritt 5 — ausprobieren: VERGLEICH技术对抗 Zaehlen und Messen (Delta rechnen, Raster zeichnen) vs Fuehlen und Bewegen (klatschen, steppen: Groove spueren)
+## Schritt 5 — ausprobieren: VERGLEICH技术对抗 Zaehlen und Messen vs Fuehlen und Bewegen
 
 VERGLEICH辨别实验(双向辨析,先选程序再解题):【选程序】
 
-VERGLEICH:先选程序—— (i) Zaehlen und Messen (Delta rechnen, Raster zeichnen) 还是 (ii) Fuehlen und Bewegen (klatschen, steppen: Groove spueren) ——再解题。【选程序:问上限与结构选(i),问兑现与情境选(ii)。口述先说 Ich waehle Verfahren (i)/(ii), weil …】
+VERGLEICH:先选程序—— (i) Zaehlen und Messen 还是 (ii) Fuehlen und Bewegen ——再解题。
 
-AUFGABE A:案例A(笔试看谱)选哪条?
+AUFGABE A:案例A(笔试看谱)选哪条? Begruende ohne Mechanismus.
 
-AUFGABE B:案例B(排练不 groove)选哪条?
+AUFGABE B:案例B(排练不 groove)选哪条? Begruende ohne Mechanismus.
 
-HILFE:A braucht Beleg, also Zahl. B braucht Sog, also Koerper.
+HILFE: Pruefe dimensionsgeleitet, welcher Weg passt: Papierfrage mit Rechenansatz spricht fuer Weg (i); Buehnenfrage mit Bewegungsansatz spricht fuer Weg (ii). Ordne selbst zu; die Zuordnung wird nicht vorweggenommen.
 
-ANTWORT:A走数理程序;B走身体程序。
+ANTWORT: Die Zuordnung steht in der AUFLÖSUNG (nach der Wahl lesen); begruende erst selbst ohne Mechanismus.
+
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg (i) oder Weg (ii) lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Ueberfuehrt aus VERGLEICH (Vorwahl-Fassung): VERGLEICH:先选程序—— (i) Zaehlen und Messen (Delta rechnen, Raster zeichnen) 还是 (ii) Fuehlen und Bewegen (klatschen, steppen: Groove spueren) ——再解题。【选程序:问上限与结构选(i),问兑现与情境选(ii)。口述先说 Ich waehle Verfahren (i)/(ii), weil …】 / Vorwahl-Titel: ## Schritt 5 — ausprobieren: VERGLEICH技术对抗 Zaehlen und Messen (Delta rechnen, Raster zeichnen) vs Fuehlen und Bewegen (klatschen, steppen: Groove spueren)
+- Ueberfuehrt aus Schritt-5-HILFE (Vorwahl-Fassung): HILFE:A braucht Beleg, also Zahl. B braucht Sog, also Koerper. / ANTWORT:A走数理程序;B走身体程序。
+- Mechanismus (i): Zaehlen rechnet Delta und zeichnet Raster.
+- Mechanismus (ii): Bewegen klatscht Backbeat und spuert Groove.
+- Ein-Satz-Kern: Synkope reibt Raster, Delta misst Groove.
 
 `Klausur-Satz: 数还是动,考场舞台说了算。`
 
@@ -136,7 +156,22 @@ CHECK检索默写(自测3题,与答案配对):
 ## Schritt 7 — szenario: Klausurtransfer — Bandleader Jazz-Night
 中文:你是Bandleader Jazz-Night,在Berliner A-Trane Club, All Blues (138 BPM, 6/8-Feeling)中必须用德语连贯口述(约90秒)诊断、措施与数值目标(138 BPM, Delta 0,22 s, 6/8-Feeling, 8 Takte klatschsicher),并以术语举证。
 ROLLE: Du bist Bandleader Jazz-Night. SITUATION: 在A-Trane用德语90秒陈述网格、Delta与目标(138 BPM,0,22秒)。
+AUFGABE (darstellen & beurteilen, [AFB II/III]): Stelle [AFB II] Diagnose und Massnahme mit Target-Beleg dar und beurteile [AFB III] die Verfahrenswahl.
+
 RUBRIC (30 XP):诊断术语8分 | 措施与目标举证10分 | 程序选择对比7分 | 德语表达5分。
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Diagnose mit Rasterbegriffen und Deltaanker | 5 NP | Begriffsvergleich als Alternativweg
+Massnahme mit 0,22-Beleg | 5 NP | Deltarechnung als Alternativweg
+Verfahrenswahl mit Buehnenbeleg | 5 NP | Papier-Buehne-Vergleich als Alternativweg
+Gesamt: 15 NP
+
+KERNSATZ (auswendig):
+- Kernsatz: `Synkope reibt Raster, Delta misst Groove.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = Synkope als Subjekt | Mechanismus = Deltareibung im Raster als Mechanismus | Urteil = Urteil auf Groove
+- Selbsttest: Synkope reibt Raster, ___ misst Groove.
 
 `Klausur-Satz: 满分句:groove 因弱拍riff以0,22秒摩擦6/8、反拍兜底;网格加拍手锁定满分。`
 

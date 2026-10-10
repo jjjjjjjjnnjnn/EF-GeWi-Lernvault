@@ -8,7 +8,7 @@ operatoren: [beschreiben, analysieren, beurteilen]
 klausurrelevant: true
 datum: 2026-09-25
 tags: [EF, Musik, Formanalyse]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 
@@ -77,32 +77,52 @@ BEISPIEL (Musteraufgabe mit Loesungsweg):
 
 [Werkzeug: oral-timer]
 
-AUFGABE (analysieren, AFB II): 90-Sekunden-Probe gegen den Timer: Weise Expo, Ferne (3 Quinten) und Reprise-Pflicht am Target nach. Erreiche das Target: Pathétique c-Moll, Expo i-III, Ferne 3 Quinten, Reprise i-i.
+AUFGABE (analysieren, [AFB II]): Analysiere [AFB II] die Target-Probe in 90 Sekunden; belege jede Aussage mit Zahl und Takt. 90-Sekunden-Probe gegen den Timer: Weise Expo, Ferne (3 Quinten) und Reprise-Pflicht am Target nach. Erreiche das Target: Pathétique c-Moll, Expo i-III, Ferne 3 Quinten, Reprise i-i.
 
 TARGET: Pathétique c-Moll, Expo i-III, Ferne 3 Quinten, Reprise i-i.
 
 HILFE:
-1. Schritt 1: Benenne Themen plus Tonarten.
-2. Schritt 2: Miss Ferne in Quinten.
-3. Schritt 3: Pruefe Reprise-Pflicht plus Coda.
+- Themendimension: Pruefe Themen mit Tonartentest; notiere nur Themen und Tonarten, deute die Form noch nicht.
+- Ferndimension: Pruefe Abstand mit Quintenzaehlung; sammle nur die Quinten, ohne das Urteil vorwegzunehmen.
+- Reprisendimension: Pruefe Heimkehr mit Pflichtvergleich; halte nur Reprise und Coda fest, ohne die Deutung zu setzen.
+
+COMPLETION (Lückentext):
+- Lies beide Saetze und ergaenze aus dem Gedaechtnis, ohne zurueckzublaettern:
+- Expo i-III mit Ferne von drei ___ verlangt Heimkehr nach i.
+- Ordne die Reprise als ___ ein und pruefe die Tonart ohne Musterloesung.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Themenbefund mit Expoanker | 5 NP | Thementabelle als Alternativweg
+Fernanalyse mit Quintenbezug | 5 NP | Quintenzaehlung als Alternativweg
+Heimkehrurteil mit Codabeleg | 5 NP | Offenes Urteil mit Formbezug als Alternativweg
+Gesamt: 15 NP
 
 MUSTERLOESUNG: Expo c-Es, Durchf bis H (3 Quinten), Reprise c-c mit Coda. Das Target wird erreicht, weil Kette plus Zahl Versoehnung beweisen. Ohne Heimkehr waere es Rondo, nicht Sonate.
 
 `Klausur-Satz: Das Target 3 Quinten beweist: Zahl zwingt Heimkehr.`
 
-## Schritt 5 — ausprobieren: Verfahrensduell Tonartenlesen (Uhr: wohin moduliert?) gegen Themenhoeren (Charakter: wer streitet?)
+## Schritt 5 — ausprobieren: Verfahrensduell Tonartenlesen gegen Themenhoeren
 
 VERGLEICH (zwei Verfahren im Kontrast):
 
-VERGLEICH: Waehle zuerst das Verfahren: (i) Tonartenlesen (Uhr: wohin moduliert?) oder (ii) Themenhoeren (Charakter: wer streitet?), dann loesen. Die Wahl des Verfahrens entscheidet ueber die ganze Begruendung.
+VERGLEICH: Waehle zuerst das Verfahren: (i) Tonartenlesen oder (ii) Themenhoeren, dann loesen. Die Wahl des Verfahrens entscheidet ueber die ganze Begruendung.
 
-AUFGABE A: Fall A (Partitur, Modulation): Welcher Weg?
+AUFGABE A: Fall A (Partitur, Modulation): Welcher Weg? Begruende ohne Mechanismus.
 
-AUFGABE B: Fall B (Konzert, Drama): Welcher Weg?
+AUFGABE B: Fall B (Konzert, Drama): Welcher Weg? Begruende ohne Mechanismus.
 
-HILFE: A braucht Zahlen, also Uhr. B braucht Figuren, also Charakter.
+HILFE: Pruefe dimensionsgeleitet, welcher Weg passt: Partiturfrage mit Uhransatz spricht fuer Weg (i); Konzertfrage mit Charakteransatz spricht fuer Weg (ii). Ordne selbst zu; die Zuordnung wird nicht vorweggenommen.
 
-ANTWORT: A erfordert Weg A mit Quinten. B erfordert Weg B mit Dualismus. Ich waehle A/B, weil Quelle es verlangt.
+ANTWORT: Die Zuordnung steht in der AUFLÖSUNG (nach der Wahl lesen); begruende erst selbst ohne Mechanismus.
+
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg (i) oder Weg (ii) lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Ueberfuehrt aus VERGLEICH (Vorwahl-Fassung): VERGLEICH: Waehle zuerst das Verfahren: (i) Tonartenlesen (Uhr: wohin moduliert?) oder (ii) Themenhoeren (Charakter: wer streitet?), dann loesen. Die Wahl des Verfahrens entscheidet ueber die ganze Begruendung.
+- Ueberfuehrt aus Schritt-5-HILFE (Vorwahl-Fassung): HILFE: A braucht Zahlen, also Uhr. B braucht Figuren, also Charakter. / ANTWORT: A erfordert Weg A mit Quinten. B erfordert Weg B mit Dualismus. Ich waehle A/B, weil Quelle es verlangt.
+- Mechanismus (i): Tonartenlesen misst Modulation auf der Quintuhr.
+- Mechanismus (ii): Themenhoeren deutet Charakter und Dualismus.
+- Ein-Satz-Kern: Seitensatz kehrt heim in Tonika, Zahl zwingt Versoehnung.
 
 `Klausur-Satz: Uhr oder Charakter: Quelle waehlt den Weg.`
 
@@ -130,7 +150,22 @@ CHECK (3 Fragen zur Selbstkontrolle mit Antworten):
 ## Schritt 7 — szenario: Klausurtransfer — Kurator Beethovenhaus
 ROLLE: Du bist Kurator Beethovenhaus und verteidigst deine Entscheidung vor der Pruefungskommission.
 SITUATION: In Bonn musst du 90 Sekunden lang Expo, Ferne und Target (i-III, 3 Quinten) verteidigen.
+AUFGABE (darstellen & beurteilen, [AFB II/III]): Stelle [AFB II] Diagnose und Massnahme mit Target-Beleg dar und beurteile [AFB III] die Verfahrenswahl.
+
 RUBRIC (30 XP): Diagnose mit Fachbegriffen (8 XP) | Massnahme mit Target-Beleg (10 XP) | Verfahrenswahl im Vergleich (7 XP) | Fachsprachlicher Vortrag (5 XP).
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Diagnose mit Formbegriffen und Targetanker | 5 NP | Begriffsvergleich als Alternativweg
+Massnahme mit Quintenbeleg | 5 NP | Quintenzaehlung als Alternativweg
+Verfahrenswahl mit Quellenbeleg | 5 NP | Partitur-Konzert-Vergleich als Alternativweg
+Gesamt: 15 NP
+
+KERNSATZ (auswendig):
+- Kernsatz: `Seitensatz kehrt heim in Tonika, Zahl zwingt Versoehnung.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = Seitensatz als Subjekt | Mechanismus = Quintferne mit Heimkehrpflicht als Mechanismus | Urteil = Urteil auf Versoehnung
+- Selbsttest: Seitensatz kehrt heim in Tonika, Zahl zwingt ___.
 
 `Klausur-Satz: AFB-III-Mustersatz: Die Versoehnung wirkt, weil Seitensatz von III nach i transponiert und 3-Quinten-Ferne zurueckkehrt; Kette sichert volle Punktzahl.`
 

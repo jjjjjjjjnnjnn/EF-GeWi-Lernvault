@@ -8,7 +8,7 @@ operatoren: [bestimmen, aufstellen]
 klausurrelevant: true
 datum: 2026-09-26
 tags: [EF, Musik, Harmonielehre]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 
@@ -36,7 +36,7 @@ Hook (DE): Pachelbel Kanon D-Dur, acht Takte: Vier Akkorde, und der Saal wiegt m
 
 ## Schritt 2 — entdecken: 5术语装备盒
 
-PRETRAINING术语盒(核心5词,先读三遍中德,合书自测中文→德语):
+PRETRAINING术语盒(核心5词,先读三遍中德,合书自测中文->德语):
 
 中文在上,德语在下:
 
@@ -83,32 +83,52 @@ BEISPIEL(含教具操作与解答):
 
 [Werkzeug: formula]
 
-AUFGABE (analysieren, AFB II):终止调节器:定Pachelbel卡农D大调级数,算五度频率,指认阻碍,达标。达标线:Kanon D-Dur, 8 Takte, 4 Stufen korrekt, Trugschluss V-VI。
+AUFGABE (analysieren, [AFB II]): Analysiere [AFB II] die Target-Probe in 90 Sekunden; belege jede Aussage mit Zahl und Takt. 终止调节器:定Pachelbel卡农D大调级数,算五度频率,指认阻碍,达标。达标线:Kanon D-Dur, 8 Takte, 4 Stufen korrekt, Trugschluss V-VI。
 
 Target数值目标:Kanon D-Dur, 8 Takte, 4 Stufen korrekt, Trugschluss V-VI。
 
 HILFE:
-1. 罗马数字加低音标和弦。
-2. 用2的7/12算五度。
-3. 判真终止还是阻碍。
+- Stufendimension: Beziffere Akkorde mit Stufentest; notiere nur Ziffern und Bass, deute den Schluss noch nicht.
+- Quintdimension: Pruefe Intervall mit Potenzrechnung; sammle nur den Faktor, ohne das Urteil vorwegzunehmen.
+- Schlussdimension: Pruefe Schlusswirkung mit Kadenzvergleich; halte nur die Wirkung fest, ohne die Deutung zu setzen.
+
+COMPLETION (Lückentext):
+- Lies beide Saetze und ergaenze aus dem Gedaechtnis, ohne zurueckzublaettern:
+- Kanon schliesst ___, die Quinte misst 1,498.
+- Ordne V-VI als ___ ein und pruefe den Bass ohne Musterloesung.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Stufenbefund mit Ziffernanker | 5 NP | Bezifferungstabelle als Alternativweg
+Quintanalyse mit Potenzbezug | 5 NP | Intervallrechnung als Alternativweg
+Schlussurteil mit Heimkehrbeleg | 5 NP | Offenes Urteil mit Trugschlussvergleich als Alternativweg
+Gesamt: 15 NP
 
 MUSTERLÖSUNG:卡农D-G-A-D即I-IV-V-I,五度1,498,四级数加计算加效果即达标;V-VI阻碍则延长。
 
 `Klausur-Satz: 目标I-IV-V-I加1,498证明:物理变感受。`
 
-## Schritt 5 — ausprobieren: VERGLEICH技术对抗 Stufentheorie (Zahlen: transponierbar, vergleichbar) vs Funktionshoeren (Klang: Spannung fuehlen, Heimkehr spueren)
+## Schritt 5 — ausprobieren: VERGLEICH技术对抗 Stufentheorie vs Funktionshoeren
 
 VERGLEICH辨别实验(双向辨析,先选程序再解题):【选程序】
 
-VERGLEICH:先选程序—— (i) Stufentheorie (Zahlen: transponierbar, vergleichbar) 还是 (ii) Funktionshoeren (Klang: Spannung fuehlen, Heimkehr spueren) ——再解题。【选程序:问上限与结构选(i),问兑现与情境选(ii)。口述先说 Ich waehle Verfahren (i)/(ii), weil …】
+VERGLEICH:先选程序—— (i) Stufentheorie 还是 (ii) Funktionshoeren ——再解题。
 
-AUFGABE A:案例A(笔试卷调到G大调)选哪条?
+AUFGABE A:案例A(笔试卷调到G大调)选哪条? Begruende ohne Mechanismus.
 
-AUFGABE B:案例B(音乐会谈效果)选哪条?
+AUFGABE B:案例B(音乐会谈效果)选哪条? Begruende ohne Mechanismus.
 
-HILFE:A braucht Zahlen, also Stufen. B braucht Klang, also Funktion.
+HILFE: Pruefe dimensionsgeleitet, welcher Weg passt: Transpositionsfrage mit Zahlenansatz spricht fuer Weg (i); Wirkungsfrage mit Klangansatz spricht fuer Weg (ii). Ordne selbst zu; die Zuordnung wird nicht vorweggenommen.
 
-ANTWORT:A走级数可移调;B走功能听效果。
+ANTWORT: Die Zuordnung steht in der AUFLÖSUNG (nach der Wahl lesen); begruende erst selbst ohne Mechanismus.
+
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg (i) oder Weg (ii) lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Ueberfuehrt aus VERGLEICH (Vorwahl-Fassung): VERGLEICH:先选程序—— (i) Stufentheorie (Zahlen: transponierbar, vergleichbar) 还是 (ii) Funktionshoeren (Klang: Spannung fuehlen, Heimkehr spueren) ——再解题。【选程序:问上限与结构选(i),问兑现与情境选(ii)。口述先说 Ich waehle Verfahren (i)/(ii), weil …】
+- Ueberfuehrt aus Schritt-5-HILFE (Vorwahl-Fassung): HILFE:A braucht Zahlen, also Stufen. B braucht Klang, also Funktion. / ANTWORT:A走级数可移调;B走功能听效果。
+- Mechanismus (i): Stufentheorie transponiert I-IV-V-I mit Zahlenbeleg.
+- Mechanismus (ii): Funktionshoeren spuert Spannung und Heimkehr im Klang.
+- Ein-Satz-Kern: V-I mit Leitton schliesst Heimkehr, V-VI taeuscht Trug.
 
 `Klausur-Satz: 级数还是音响,题定路线。`
 
@@ -136,7 +156,22 @@ CHECK检索默写(自测3题,与答案配对):
 ## Schritt 7 — szenario: Klausurtransfer — Korrepetitor Herkulessaal
 中文:你是Korrepetitor Herkulessaal,在Dresdner Frauenkirche, Pachelbel Kanon D-Dur (Achttakt-Kadenz)中必须用德语连贯口述(约90秒)诊断、措施与数值目标(Kanon D-Dur, 8 Takte, 4 Stufen korrekt, Trugschluss V-VI),并以术语举证。
 ROLLE: Du bist Korrepetitor Herkulessaal. SITUATION: 在德累斯顿用德语90秒陈述级数、五度与目标(卡农八小节)。
+AUFGABE (darstellen & beurteilen, [AFB II/III]): Stelle [AFB II] Diagnose und Massnahme mit Target-Beleg dar und beurteile [AFB III] die Verfahrenswahl.
+
 RUBRIC (30 XP):诊断术语8分 | 措施与目标举证10分 | 程序选择对比7分 | 德语表达5分。
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Diagnose mit Stufenbegriffen und Targetanker | 5 NP | Glossarvergleich als Alternativweg
+Massnahme mit Quintbeleg 1,498 | 5 NP | Intervallrechnung als Alternativweg
+Verfahrenswahl mit Transpositionsbeleg | 5 NP | Klangvergleich als Alternativweg
+Gesamt: 15 NP
+
+KERNSATZ (auswendig):
+- Kernsatz: `V-I mit Leitton schliesst Heimkehr, V-VI taeuscht Trug.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = Kadenzstufe als Subjekt | Mechanismus = Leittonspannung mit Quintmass als Mechanismus | Urteil = Urteil auf Schlusswirkung
+- Selbsttest: V-I mit Leitton schliesst Heimkehr, ___ taeuscht Trug.
 
 `Klausur-Satz: 满分句:回家感因导音半音加五度下行锁死五到一;级数加1,498锁定满分。`
 

@@ -8,7 +8,7 @@ operatoren: [beschreiben, analysieren, einordnen]
 klausurrelevant: true
 datum: 2026-09-26
 tags: [EF, Musik, Zwolfton]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 
@@ -36,7 +36,7 @@ Hook (DE): Suite op. 25, erster Takt: Kein Dur, kein Moll, kein Zuhause. Zwoelf 
 
 ## Schritt 2 — entdecken: 5术语装备盒
 
-PRETRAINING术语盒(核心5词,先读三遍中德,合书自测中文→德语):
+PRETRAINING术语盒(核心5词,先读三遍中德,合书自测中文->德语):
 
 中文在上,德语在下:
 
@@ -83,32 +83,52 @@ BEISPIEL(含教具操作与解答):
 
 [Werkzeug: formula]
 
-AUFGABE (analysieren, AFB II):Reihen-Regler: Notiere Reihe, bilde 4 Formen und zaehle 48 mit 12! am Target.达标线:op. 25, Reihe 12 Toene, 4 Formen, 48 gesamt。
+AUFGABE (analysieren, [AFB II]): Analysiere [AFB II] die Target-Probe in 90 Sekunden; belege jede Aussage mit Zahl und Takt. Reihen-Regler: Notiere Reihe, bilde 4 Formen und zaehle 48 mit 12! am Target.达标线:op. 25, Reihe 12 Toene, 4 Formen, 48 gesamt。
 
 Target数值目标:op. 25, Reihe 12 Toene, 4 Formen, 48 gesamt。
 
 HILFE:
-1. Schreibe Reihe ohne Wiederholung.
-2. Bilde I/R/RI mit Kuerzel.
-3. Zaehle 48 mit Transposition.
+- Reihendimension: Pruefe Tonfolge mit Vollstaendigkeitstest; notiere nur die Reihe, deute die Form noch nicht.
+- Formendimension: Pruefe Ableitung mit Kuerzeltest; sammle nur I/R/RI, ohne das Urteil vorwegzunehmen.
+- Zaehldimension: Pruefe Menge mit Transpositionstest; halte nur 48 fest, ohne die Deutung zu setzen.
+
+COMPLETION (Lückentext):
+- Lies beide Saetze und ergaenze aus dem Gedaechtnis, ohne zurueckzublaettern:
+- Reihe mit zwoelf Toenen ohne ___ traegt vier Formen mit 48.
+- Ordne Krebs als ___ ein und pruefe die Richtung ohne Musterloesung.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Reihenbefund mit Vollstaendigkeitsanker | 5 NP | Reihentabelle als Alternativweg
+Formenanalyse mit Kuerzelbezug | 5 NP | Ableitungsvergleich als Alternativweg
+Zaehurteil mit Transpositionsbeleg | 5 NP | Offenes Urteil mit Permutationsbezug als Alternativweg
+Gesamt: 15 NP
 
 MUSTERLÖSUNG:Reihe E-F-G-As-B-C plus Rest ohne Wiederholung, I/R/RI korrekt, 48 mit 12 Transpositionen. Das Target wird erreicht, weil Notation plus Zahl System beweisen. Tonika-Suche gaebe null Punkte.
 
 `Klausur-Satz: Das Target 48 plus 12! beweist: Zahl schlaegt Chaos.`
 
-## Schritt 5 — ausprobieren: VERGLEICH技术对抗 Rechnen (Permutation: 12!, 48 notieren) vs Hoeren (Schweben: keine Tonika, Gleichheit spueren)
+## Schritt 5 — ausprobieren: VERGLEICH技术对抗 Rechnen vs Hoeren
 
 VERGLEICH辨别实验(双向辨析,先选程序再解题):【选程序】
 
-VERGLEICH:先选程序—— (i) Rechnen (Permutation: 12!, 48 notieren) 还是 (ii) Hoeren (Schweben: keine Tonika, Gleichheit spueren) ——再解题。【选程序:问上限与结构选(i),问兑现与情境选(ii)。口述先说 Ich waehle Verfahren (i)/(ii), weil …】
+VERGLEICH:先选程序—— (i) Rechnen 还是 (ii) Hoeren ——再解题。
 
-AUFGABE A:Fall A (Partitur-Analyse): Welcher Weg?
+AUFGABE A:Fall A (Partitur-Analyse): Welcher Weg? Begruende ohne Mechanismus.
 
-AUFGABE B:Fall B (Konzert, Wirkung): Welcher Weg?
+AUFGABE B:Fall B (Konzert, Wirkung): Welcher Weg? Begruende ohne Mechanismus.
 
-HILFE:A braucht Notation, also Zahl. B braucht Affekt, also Ohr.
+HILFE: Pruefe dimensionsgeleitet, welcher Weg passt: Partiturfrage mit Rechenansatz spricht fuer Weg (i); Konzertfrage mit Hoeransatz spricht fuer Weg (ii). Ordne selbst zu; die Zuordnung wird nicht vorweggenommen.
 
-ANTWORT:A erfordert Weg A mit 48. B erfordert Weg B mit Schweben. Ich waehle A/B, weil Quelle es verlangt.
+ANTWORT: Die Zuordnung steht in der AUFLÖSUNG (nach der Wahl lesen); begruende erst selbst ohne Mechanismus.
+
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg (i) oder Weg (ii) lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Ueberfuehrt aus VERGLEICH (Vorwahl-Fassung): VERGLEICH:先选程序—— (i) Rechnen (Permutation: 12!, 48 notieren) 还是 (ii) Hoeren (Schweben: keine Tonika, Gleichheit spueren) ——再解题。【选程序:问上限与结构选(i),问兑现与情境选(ii)。口述先说 Ich waehle Verfahren (i)/(ii), weil …】
+- Ueberfuehrt aus Schritt-5-HILFE (Vorwahl-Fassung): HILFE:A braucht Notation, also Zahl. B braucht Affekt, also Ohr. / ANTWORT:A erfordert Weg A mit 48. B erfordert Weg B mit Schweben. Ich waehle A/B, weil Quelle es verlangt.
+- Mechanismus (i): Rechnen notiert 48 Formen aus zwoelf Reihen.
+- Mechanismus (ii): Hoeren spuert Schweben ohne Tonika.
+- Ein-Satz-Kern: Reihe ohne Wiederholung erzeugt Schweben durch Formen.
 
 `Klausur-Satz: Rechnen oder Hoeren: Quelle waehlt den Weg.`
 
@@ -136,7 +156,22 @@ CHECK检索默写(自测3题,与答案配对):
 ## Schritt 7 — szenario: Klausurtransfer — Reihen-Detektiv Alte Oper
 中文:你是Reihen-Detektiv Alte Oper,在Frankfurter Alte Oper, Suite op. 25 (Reihe E-F-G-As-B-C)中必须用德语连贯口述(约90秒)诊断、措施与数值目标(op. 25, Reihe 12 Toene, 4 Formen, 48 gesamt),并以术语举证。
 ROLLE: Du bist Reihen-Detektiv Alte Oper. SITUATION: In Frankfurt musst du 90 Sekunden lang Reihe, Formen und Target (12, 48) verteidigen.
+AUFGABE (darstellen & beurteilen, [AFB II/III]): Stelle [AFB II] Diagnose und Massnahme mit Target-Beleg dar und beurteile [AFB III] die Verfahrenswahl.
+
 RUBRIC (30 XP):诊断术语8分 | 措施与目标举证10分 | 程序选择对比7分 | 德语表达5分。
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Diagnose mit Reihenbegriffen und Targetanker | 5 NP | Begriffsvergleich als Alternativweg
+Massnahme mit 48er-Beleg | 5 NP | Formenzaehlung als Alternativweg
+Verfahrenswahl mit Quellenbeleg | 5 NP | Rechnen-Hoeren-Vergleich als Alternativweg
+Gesamt: 15 NP
+
+KERNSATZ (auswendig):
+- Kernsatz: `Reihe ohne Wiederholung erzeugt Schweben durch Formen.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = Zwoelftonreihe als Subjekt | Mechanismus = Formenvervielfachung als Mechanismus | Urteil = Urteil auf Schweben
+- Selbsttest: Reihe ohne Wiederholung erzeugt Schweben durch ___.
 
 `Klausur-Satz: AFB-III-Mustersatz: Die Schwebenwirkung entsteht, weil Reihe ohne Wiederholung in 4 Formen mit 48 Transpositionen kreist; Notation plus Zahl sichern volle Punktzahl.`
 

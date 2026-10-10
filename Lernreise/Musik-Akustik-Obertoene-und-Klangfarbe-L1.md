@@ -8,7 +8,7 @@ operatoren: [beschreiben, analysieren, vergleichen]
 klausurrelevant: true
 datum: 2026-10-03
 tags: [EF, Musik, Akustik, Klangfarbe, Formenlehre]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Akustik, Obertoene und Klangfarbe (L1, Ziel Klausur)
@@ -31,7 +31,7 @@ Hook / Phaenomen: Schliesse die Augen: Ein Floetist und ein Trompeter spielen be
 `Klausur-Satz: Die klangliche Differenzierung gleich hoch gestimmter Instrumente basiert auf dem individuellen Obertonspektrum, das durch Resonanzkoerper und Klangerzeugungsmethode gepraegt wird.`
 
 ## Schritt 2 — entdecken: Ausruestungskiste der Akustik-Unit
-PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
+PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文->德语，Evidenz：pretraining降认知负荷）：
 
 中文在上，德语在下：
 
@@ -87,7 +87,7 @@ BEISPIEL（正确例题示范，含教具操作与解答）：
 
 [Werkzeug: lego]
 
-AUFGABE (analysieren & vergleichen, AFB II)：
+AUFGABE (analysieren & vergleichen, [AFB II])：Analysiere [AFB II] den Befund und vergleiche [AFB II] die Wirkung anhand der unten angegebenen Takte und Parameter. 
 Im Akustik-Labor wird das Frequenzspektrum zweier Holzblasinstrumente beim gleichen Ton $a^1$ (440 Hz) aufgenommen:
 - Instrument A zeigt nur Peaks bei ungeradzahligen Vielfachen ($f_1, 3f_1, 5f_1, 7f_1 \dots$), waehrend geradzahlige Tealtoene fast voellig fehlen. Der Klang wird als hohl, nasal und dunkel empfunden.
 - Instrument B zeigt ein kontinuierliches Abfallen aller Tealtoene ($1f_1, 2f_1, 3f_1, 4f_1 \dots$). Der Klang wird als hell, warm und offen wahrgenommen.
@@ -95,9 +95,21 @@ Im Akustik-Labor wird das Frequenzspektrum zweier Holzblasinstrumente beim gleic
 2. Analysieren Sie die Auswirkung der Obertonverteilung auf den musikalischen Charakter in einer Orchesterpartitur. (20 BE)
 
 HILFE:
-1. Schritt 1: Physikalisches Gesetz anwenden: Eine zylindrische Roehre, die an einem Ende geschlossen ist (Gedecktpfeife / Klarinette mit einfachem Rohrblatt), bildet nur ungeradzahlige Obertoene ($1, 3, 5, 7 \dots$).
-2. Schritt 2: Eine beidseitig offene Roehre (Querfloete) bzw. konische Roehre (Oboe) erzeugt saemtliche harmonische Obertoene ($1, 2, 3, 4 \dots$).
-3. Schritt 3: Schlussfolgerung: Instrument A = Klarinette; Instrument B = Oboe/Floete.
+- Spektraldimension: Pruefe Teiltonpeaks mit Spektralvergleich; notiere nur die Peakzahlen, deute die Zuordnung noch nicht.
+- Bauformdimension: Pruefe Rohrform mit Modelltest; sammle nur gedeckt oder offen, ohne das Urteil vorwegzunehmen.
+- Wirkungsdimension: Pruefe Orchesterwirkung mit Partiturvergleich; halte nur Register und Mischung fest, ohne die Deutung zu setzen.
+
+COMPLETION (Lückentext):
+- Lies beide Saetze und ergaenze aus dem Gedaechtnis, ohne zurueckzublaettern:
+- Gedeckte Roehren erzeugen nur ___ Tealtoene, offene Roehren erzeugen alle Tealtoene.
+- Ordne das hohle Instrument als ___ ein und pruefe das Spektrum ohne Musterloesung.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Spektralbefund mit Peakanker | 5 NP | Skizze mit Achsenbeschriftung als Alternativweg
+Bauformanalyse mit Knotenbezug | 5 NP | Tabellenvergleich gedeckt/offen als Alternativweg
+Orchesterurteil mit Registerbeleg | 5 NP | Offenes Urteil mit Partiturrueckbindung als Alternativweg
+Gesamt: 15 NP
 
 MUSTERLÖSUNG:
 1. Akustische Zuordnung: Instrument A ist eindeutig die Klarinette. Als zylindrisch gebohrtes Holzblasinstrument mit einfachem Rohrblatt verhaelt sich die Klarinette physikalisch wie eine einseitig geschlossene Luftsaeule (gedeckte Pfeife). Dies bedingt, dass sich am geschlossenen Mundstueck stets ein Schwingungsknoten und am offenen Becher ein Schwingungsbauch befindet. Folglich schwingen ausschliesslich die ungeradzahligen Tealtoene ($f_1, 3f_1, 5f_1 \dots$) mit. Instrument B entspricht der Querfloete bzw. Oboe: Da die Floete an beiden Enden akustisch offen ist (bzw. die Oboe konisch verlaeuft), koennen sich alle ganzzahligen Moden ($n = 1, 2, 3, 4 \dots$) ungehindert entfalten, was zu einem lueckenlosen harmonischen Spektrum fuehrt.
@@ -108,7 +120,19 @@ MUSTERLÖSUNG:
 ## Schritt 5 — ausprobieren: Duell der Klangerzeugung: Labor vs. Orchester
 
 VERGLEICH: Reiner Sinuston (Synthesizer) vs. Akustisches Naturinstrument (z.B. Streichinstrument)
+- Position A (Reiner Sinuston / Technische Monofrequenz): Neutralfassung fuer die Wahl.
+- [Weg A] Wenn du Weg A waehlst, arbeitest du in Schritt 7 vor allem mit Befund, Zahl und Zuordnung.
+- Position B (Komplexes Naturinstrument / Z.B. Violine): Neutralfassung fuer die Wahl.
+- [Weg B] Wenn du Weg B waehlst, arbeitest du in Schritt 7 vor allem mit Kette, Deutung und Urteil.
 
+AUFGABE A: Welche Pruefgroesse verlangt Befund und Rechnung? Begruende ohne Mechanismus.
+AUFGABE B: Welche Frage verlangt Kette und Deutung? Begruende ohne Mechanismus.
+
+HILFE: Pruefe dimensionsgeleitet, welcher Weg passt: Spektralfrage mit Peakvergleich spricht fuer Befund und Weg A; Wirkungsfrage mit Partiturdeutung spricht fuer Kette und Weg B. Ordne selbst zu; die Zuordnung wird nicht vorweggenommen.
+
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg A oder Weg B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Ueberfuehrt aus VERGLEICH (Vorwahl-Fassung):
 - Position A (Reiner Sinuston / Technische Monofrequenz):
   - Physik: Exakt eine einzige Schwingungsfrequenz ohne jegliche Obertoene ($n=1$).
   - Hoereindruck: Steril, leblos, statisch, ohne Tiefe oder Raeumlichkeit; wirkt bei laengerem Hoeren ermuedend und unnatuerlich.
@@ -117,6 +141,10 @@ VERGLEICH: Reiner Sinuston (Synthesizer) vs. Akustisches Naturinstrument (z.B. S
   - Physik: Extrem dichtes Obertonspektrum bis weit ueber 10.000 Hz, staendige mikroskopische Frequenz- und Amplitudenschwankungen (Vibrato, Bogenstrich-Rauschen, Resonanzen des Fichtenholz-Bodens).
   - Hoereindruck: Lebendig, warm, expressiv, emotional beruehrend und multidimensional.
   - Verwendung: Solistisches und orchestrales Musizieren mit maximaler Ausdrucksfaehigkeit.
+- Ueberfuehrt aus Schritt-5-HILFE (Vorwahl-Fassung): Kein Spoiler in Vorwahl-HILFE bestaetigt, Vorwahl-Fassung enthielt keine HILFE mit Loesungszuordnung.
+- Mechanismus A: Sinuston bleibt monofrequent ohne Obertoene und wirkt steril.
+- Mechanismus B: Naturinstrument saettigt Spektrum mit Vibrato und Resonanz.
+- Ein-Satz-Kern: Geschlossene Roehren loeschen geradzahlige Tealtoene und formen hohlen Klarinettenklang.
 
 Entscheidungsregel fuer die Klausur:
 Wird nach `Klangfarbenanalyse` gefragt, immer zuerst nach drei Faktoren strukturieren: 1. Klangerreger (Anblas-/Streichtechnik), 2. Resonanzkoerper (Holz/Blech), 3. Obertonanteil (sinusnah vs. obertongesaettigt)!
@@ -126,15 +154,22 @@ PRÜFUNGSSZENARIO (KLP NRW Musik EF Inhaltsfeld 1: Bedeutungen von Musik / Klang
 
 Gegeben ist ein Ausschnitt aus Maurice Ravels "Boléro". Ravel laesst das Thema zunaechst von einer Solofloete (hohe Lage) spielen, spaeter kombiniert er Piccolo-Floeten, Horn und Celesta in einer bemerkenswerten Tonarten-Schichtung: Waehrend das Horn das Thema in C-Dur spielt, spielen zwei Piccolo-Floeten dasselbe Thema in E-Dur und G-Dur!
 
-AUFGABE (analysieren & deuten, AFB II/III):
-1. Erklaeren Sie die akustische Absicht dieser scheinbaren "Polytonalitaet" anhand der Naturtonreihe. (12 BE)
-2. Beurteilen Sie Ravels Instrumentationstechnik als Vorlaeufer der modernen Spektralmusik. (18 BE)
+AUFGABE (analysieren & deuten, [AFB II/III]): Analysiere [AFB II/III] den Befund und deute [AFB II/III] die Wirkung anhand der unten angegebenen Takte und Parameter. 
+1. Erklaeren Sie die akustische Absicht dieser scheinbaren "Polytonalitaet" anhand der Naturtonreihe. [AFB II] (12 BE)
+2. Beurteilen Sie Ravels Instrumentationstechnik als Vorlaeufer der modernen Spektralmusik. [AFB III] (18 BE)
 
 ERWARTUNGSHORIZONT:
-- AFB II: Ravel beabsichtigt keine Dissonanz oder tonale Zersetzung, sondern imitiert das Obertonspektrum eines einzelnen Tons (additive Synthese)! Die Toene des E-Dur-Dreiklangs und G-Dur entsprechen exakt dem 5. Teilton ($e''$, grosse Terz) und 6. Teilton ($g''$, Quinte) des Grundtons $C$. Durch diese Instrumentenkombination entsteht kein Mehrklang, sondern eine radikal neuartige, metallisch funkelnde synthetische Klangfarbe eines fiktiven Rieseninstruments.
-- AFB III: Ravel antizipiert die spaetere spektrale Kompositionstechnik (z.B. Gérard Grisey). Er beweist, dass Klangfarbe nicht nur Dekoration einer Melodie ist, sondern dass Melodie und Harmonik selbst aus dem inneren physikalischen Wesen des Klangs (dem Obertonspektrum) heraus konstruiert werden koennen.
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Naturtonbefund mit Teiltonanker | 5 NP | Skizze der E/G-Schichtung als Alternativweg
+Syntheseargument mit Additionsbezug | 5 NP | Stimmenvergleich Horn/Piccolo als Alternativweg
+Spektralurteil mit Epochenbeleg | 5 NP | Offenes Urteil mit Griseybezug als Alternativweg
+Gesamt: 15 NP
+- [AFB II]: Ravel beabsichtigt keine Dissonanz oder tonale Zersetzung, sondern imitiert das Obertonspektrum eines einzelnen Tons (additive Synthese)! Die Toene des E-Dur-Dreiklangs und G-Dur entsprechen exakt dem 5. Teilton ($e''$, grosse Terz) und 6. Teilton ($g''$, Quinte) des Grundtons $C$. Durch diese Instrumentenkombination entsteht kein Mehrklang, sondern eine radikal neuartige, metallisch funkelnde synthetische Klangfarbe eines fiktiven Rieseninstruments.
+- [AFB III]: Ravel antizipiert die spaetere spektrale Kompositionstechnik (z.B. Gérard Grisey). Er beweist, dass Klangfarbe nicht nur Dekoration einer Melodie ist, sondern dass Melodie und Harmonik selbst aus dem inneren physikalischen Wesen des Klangs (dem Obertonspektrum) heraus konstruiert werden koennen.
 
 ## Schritt 7 — check: Format-Check & Scoring
+AUFGABE (benennen & erklaeren, [AFB I]): Benenne [AFB I] die drei Kernbegriffe und erklaere [AFB I] jeden in einem Satz; nutze die FRAGE-Antwort-Paare unten als Beleg.
 30 XP Schnelltest zur Verstaendigungssicherung:
 
 FRAGE: Welches Tonintervall liegt exakt zwischen dem 2. und 3. Teilton der Naturtonreihe?
@@ -145,6 +180,19 @@ ANTWORT: Die geradzahligen Obertoene (2, 4, 6, 8...); es schwingen fast ausschli
 
 FRAGE: Wie nennt man die mathematische Zerlegung eines Klangs in seine reinen Sinus-Teiltoene?
 ANTWORT: Fourier-Analyse (harmonische Analyse).
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Teiltonbefund mit Quintentest | 5 NP | Intervalltabelle als Alternativweg
+Roehrenanalyse mit Paritaetsbezug | 5 NP | Modellskizze als Alternativweg
+Fourierurteil mit Zerlegungsbeleg | 5 NP | Offenes Urteil mit Synthesebezug als Alternativweg
+Gesamt: 15 NP
+
+KERNSATZ (auswendig):
+- Kernsatz: `Geschlossene Roehren loeschen geradzahlige Tealtoene und formen hohlen Klarinettenklang.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = Rohrform als Subjekt | Mechanismus = Obertonfilterung als Mechanismus | Urteil = Urteil auf Klangcharakter
+- Selbsttest: Geschlossene Roehren loeschen ___ Tealtoene und formen hohlen Klarinettenklang.
 
 ## Schritt 8 — reflexion: Meisterschaft & Naechste Mission
 REFLEXION:

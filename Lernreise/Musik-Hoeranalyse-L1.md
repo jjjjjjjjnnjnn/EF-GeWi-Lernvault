@@ -8,7 +8,7 @@ operatoren: [beschreiben, analysieren, beurteilen]
 klausurrelevant: true
 datum: 2026-09-25
 tags: [EF, Musik, Hoeranalyse]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 
@@ -36,7 +36,7 @@ Hook (DE): Die Prueferin drueckt auf Play, dreissig Sekunden Musik, dann Stille,
 
 ## Schritt 2 — entdecken: 5术语装备盒
 
-PRETRAINING术语盒(核心5词,先读三遍中德,合书自测中文→德语):
+PRETRAINING术语盒(核心5词,先读三遍中德,合书自测中文->德语):
 
 中文在上,德语在下:
 
@@ -83,32 +83,52 @@ BEISPIEL(含教具操作与解答):
 
 [Werkzeug: oral-timer]
 
-AUFGABE (analysieren, AFB II):90秒口述:听30秒(92 BPM),两参数用T=60/BPM举证,达标。达标线:30 s Hoerbeispiel, 90 s Rede, 3 Parameter, Formel T = 60/92。
+AUFGABE (analysieren, [AFB II]): Analysiere [AFB II] die Target-Probe in 90 Sekunden; belege jede Aussage mit Zahl und Takt. 90秒口述:听30秒(92 BPM),两参数用T=60/BPM举证,达标。达标线:30 s Hoerbeispiel, 90 s Rede, 3 Parameter, Formel T = 60/92。
 
 Target数值目标:30 s Hoerbeispiel, 90 s Rede, 3 Parameter, Formel T = 60/92。
 
 HILFE:
-1. 记三参数带小节与乐器。
-2. 一参数一术语一 weil。
-3. 一句判断收。
+- Parameterdimension: Pruefe Klang mit Takt- und Instrumenttest; notiere nur drei Parameter, deute die Wirkung noch nicht.
+- Verknuepfungsdimension: Pruefe Deutung mit Fachbegriffstest; sammle nur weil-Saetze, ohne das Urteil vorwegzunehmen.
+- Urteilsdimension: Pruefe Schluss mit Thesentest; halte nur einen Satz fest, ohne die Deutung zu setzen.
+
+COMPLETION (Lückentext):
+- Lies beide Saetze und ergaenze aus dem Gedaechtnis, ohne zurueckzublaettern:
+- Motiv mit 92 BPM und ___ traegt Rede, Gefuehl allein null.
+- Ordne den weil-Satz als ___ ein und pruefe die Zahl ohne Musterloesung.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Parameterbefund mit Taktanker | 5 NP | Parametertabelle als Alternativweg
+Deutungsanalyse mit weil-Bezug | 5 NP | Begriffsvergleich als Alternativweg
+Redeurteil mit Zeitbeleg | 5 NP | Offenes Urteil mit Timerbezug als Alternativweg
+Gesamt: 15 NP
 
 MUSTERLÖSUNG:动机三短一长92 BPM、T=0,65秒,铜管ff,三参数加术语加判断90秒陈述即达标。
 
 `Klausur-Satz: 目标92 BPM配T=0,65秒证明:数字赢过耳语。`
 
-## Schritt 5 — ausprobieren: VERGLEICH技术对抗 Parameterbeschreibung (sichern: was klingt?) vs Wirkungsdeutung (deuten: was wirkt wie?)
+## Schritt 5 — ausprobieren: VERGLEICH技术对抗 Parameterbeschreibung vs Wirkungsdeutung
 
 VERGLEICH辨别实验(双向辨析,先选程序再解题):【选程序】
 
-VERGLEICH:先选程序—— (i) Parameterbeschreibung (sichern: was klingt?) 还是 (ii) Wirkungsdeutung (deuten: was wirkt wie?) ——再解题。【选程序:问上限与结构选(i),问兑现与情境选(ii)。口述先说 Ich waehle Verfahren (i)/(ii), weil …】
+VERGLEICH:先选程序—— (i) Parameterbeschreibung 还是 (ii) Wirkungsdeutung ——再解题。
 
-AUFGABE A:案例A(陌生曲先30秒)选哪条?
+AUFGABE A:案例A(陌生曲先30秒)选哪条? Begruende ohne Mechanismus.
 
-AUFGABE B:案例B(熟动机问效果)选哪条?
+AUFGABE B:案例B(熟动机问效果)选哪条? Begruende ohne Mechanismus.
 
-HILFE:A braucht Belege, also Beschreibung. B fragt Wirkung, also Deutung auf Belegen.
+HILFE: Pruefe dimensionsgeleitet, welcher Weg passt: Neulandfrage mit Sicherungsansatz spricht fuer Weg (i); Wirkungsfrage mit Deutungsansatz spricht fuer Weg (ii). Ordne selbst zu; die Zuordnung wird nicht vorweggenommen.
 
-ANTWORT:A走描述保证据;B走解读连效果。
+ANTWORT: Die Zuordnung steht in der AUFLÖSUNG (nach der Wahl lesen); begruende erst selbst ohne Mechanismus.
+
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg (i) oder Weg (ii) lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Ueberfuehrt aus VERGLEICH (Vorwahl-Fassung): VERGLEICH:先选程序—— (i) Parameterbeschreibung (sichern: was klingt?) 还是 (ii) Wirkungsdeutung (deuten: was wirkt wie?) ——再解题。【选程序:问上限与结构选(i),问兑现与情境选(ii)。口述先说 Ich waehle Verfahren (i)/(ii), weil …】
+- Ueberfuehrt aus Schritt-5-HILFE (Vorwahl-Fassung): HILFE:A braucht Belege, also Beschreibung. B fragt Wirkung, also Deutung auf Belegen. / ANTWORT:A走描述保证据;B走解读连效果。
+- Mechanismus (i): Parameterbeschreibung sichert drei Belege mit Zahl.
+- Mechanismus (ii): Wirkungsdeutung verknuepft Beleg mit weil.
+- Ein-Satz-Kern: Parameter mit Zahl tragen Urteil, Gefuehl allein null.
 
 `Klausur-Satz: 描述还是解读,题问说了算。`
 
@@ -136,7 +156,22 @@ CHECK检索默写(自测3题,与答案配对):
 ## Schritt 7 — szenario: Klausurtransfer — Chefdirigent im Konzerthaus
 中文:你是Chefdirigent im Konzerthaus,在Konzerthaus Berlin, Dvorak 9. Sinfonie (Aus der Neuen Welt, 92 BPM)中必须用德语连贯口述(约90秒)诊断、措施与数值目标(30 s Hoerbeispiel, 90 s Rede, 3 Parameter, Formel T = 60/92),并以术语举证。
 ROLLE: Du bist Chefdirigent im Konzerthaus. SITUATION: 在柏林用德语90秒陈述参数、解读与目标(92 BPM,三参数)。
+AUFGABE (darstellen & beurteilen, [AFB II/III]): Stelle [AFB II] Diagnose und Massnahme mit Target-Beleg dar und beurteile [AFB III] die Verfahrenswahl.
+
 RUBRIC (30 XP):诊断术语8分 | 措施与目标举证10分 | 程序选择对比7分 | 德语表达5分。
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Diagnose mit Parameterbegriffen und BPM-Anker | 5 NP | Begriffsvergleich als Alternativweg
+Massnahme mit T-Rechnung | 5 NP | Zeitrechnung als Alternativweg
+Verfahrenswahl mit Fragestellungsbeleg | 5 NP | Situationsvergleich als Alternativweg
+Gesamt: 15 NP
+
+KERNSATZ (auswendig):
+- Kernsatz: `Parameter mit Zahl tragen Urteil, Gefuehl allein null.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = Parameter als Subjekt | Mechanismus = Zahl mit weil-Verknuepfung als Mechanismus | Urteil = Urteil auf Redeerfolg
+- Selbsttest: Parameter mit Zahl tragen Urteil, ___ allein null.
 
 `Klausur-Satz: 满分句:威慑因四音动机ff铜管92 BPM齐奏;先参数后判断锁定满分。`
 

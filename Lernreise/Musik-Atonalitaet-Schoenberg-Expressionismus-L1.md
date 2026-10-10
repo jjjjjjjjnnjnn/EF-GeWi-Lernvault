@@ -8,7 +8,7 @@ operatoren: [beschreiben, analysieren, interpretieren]
 klausurrelevant: true
 datum: 2026-10-03
 tags: [EF, Musik, Expressionismus, Schoenberg, Atonalitaet, Dissonanz, Zweite-Wiener-Schule]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Expressionismus in der Musik: Arnold Schoenberg und die freie Atonalitaet (L1, Ziel Klausur)
@@ -29,7 +29,7 @@ Wien im Dezember 1908. Im ehrwuerdigen Boesendorfer-Saal versammelt sich das bue
 `Klausur-Satz: Schoenbergs Emanzipation der Dissonanz entbindet das musikalische Material von der Pflicht zur tonikalen Aufloesung und erklaert saemtliche zwoelf Halbtoene der chromatischen Tonleiter fuer gleichberechtigt.`
 
 ## Schritt 2 — entdecken: Das Begriffsinventar der Wiener Avantgarde
-PRETRAINING术语盒（核心4词，先读三遍中德，合书自测中文→德语）：
+PRETRAINING术语盒（核心4词，先读三遍中德，合书自测中文->德语）：
 
 - 自由无调性 — Freie Atonalitaet: 彻底摒弃传统调性中心、音阶阶级与大小调主和弦对立，但尚未建立十二音序列严格规则的音乐过渡阶段（1908–1921）。 Ein Zustand der Tonsprache, in dem auf ein tonales Zentrum (Grundton, Tonika) voellig verzichtet wird, ohne dass bereits ein neues Zwölfton-Regelwerk existiert.
 - 不协和音的解放 — Emanzipation der Dissonanz: 消除协和音（Konsonanz）与不协和音（Dissonanz）在价值和地位上的优劣区分，使不协和音无需再向协和音“解决”。 Die Gleichstellung von Dissonanzen mit Konsonanzen: Dissonanzen gelten als autonome, ausdrucksintensive Eigenwerte und muessen nicht mehr aufgeloest werden.
@@ -62,12 +62,29 @@ sondern rein ueber Dynamik, Dichte und Artikulation erzeugt!
 
 [Werkzeug: balance-board]
 
-AUFGABE (beschreiben & analysieren, AFB I/II):
+AUFGABE (beschreiben & analysieren, [AFB I/II]): Beschreibe [AFB I/II] den Befund und analysiere [AFB I/II] die Wirkung anhand der unten angegebenen Takte und Parameter. 
 Betrachte den Satz Nr. 8 "Nacht" (Passacaglia) aus Arnold Schoenbergs Melodram "Pierrot lunaire" op. 21 (1912).
 Besetzung: Sprechstimme, Bassklarinette, Cello, Klavier.
 Textauszug: "Finstre, schwarze Riesenfalter / Toeteten der Sonne Glanz. / Ein geschlossnes Zauberbuch, / Ruht der Horizont — verschwiegen."
 1. Beschreibe die musikalische Motivik der Takte 1 bis 3 im tiefen Klavierregister (Intervallfolge: kleine Terz aufwaerts, grosse Terz abwaerts).
 2. Analysiere, wie Schoenberg die klaustrophobische Atmosphaere des Textes durch Kontrapunkt und Sprechstimme klanglich realisiert.
+
+HILFE:
+- Motivdimension: Pruefe Intervallfolge mit Notenvergleich; notiere nur die Intervalle, deute die Wirkung noch nicht.
+- Registerdimension: Pruefe Lage und Dichte mit Partiturtest; sammle nur tiefe Register, ohne das Urteil vorwegzunehmen.
+- Stimmdimension: Pruefe Sprechgesang mit Textvergleich; halte nur Artikulation fest, ohne die Deutung zu setzen.
+
+COMPLETION (Lückentext):
+- Lies beide Saetze und ergaenze aus dem Gedaechtnis, ohne zurueckzublaettern:
+- Das Dreitonmotiv kehrt als Umkehrung und ___ wieder, ohne tonale Aufloesung.
+- Ordne Sprechstimme als ___ ein und pruefe die Textwirkung ohne Musterloesung.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Motivbefund mit Terzanker | 5 NP | Intervallskizze als Alternativweg
+Variationsanalyse mit Krebsbezug | 5 NP | Tabellenvergleich der Verfahren als Alternativweg
+Texturteil mit Angstbeleg | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
 
 MUSTERLOESUNG:
 1. Motivische Struktur:
@@ -83,7 +100,19 @@ MUSTERLOESUNG:
 ## Schritt 5 — ausprobieren: Duell der Tonsysteme: Ordnung vs. Befreiung
 
 VERGLEICH: Dur-Moll-Tonalitaet (Harmonische Ordnung) vs. Freie Atonalitaet (Emanzipation der Dissonanz) (选概念)
+- Position A (Traditionelle Tonalitaet): Neutralfassung fuer die Wahl.
+- [Weg A] Wenn du Weg A waehlst, arbeitest du in Schritt 7 vor allem mit Befund, Zahl und Zuordnung.
+- Position B (Freie Atonalitaet): Neutralfassung fuer die Wahl.
+- [Weg B] Wenn du Weg B waehlst, arbeitest du in Schritt 7 vor allem mit Kette, Deutung und Urteil.
 
+AUFGABE A: Welche Pruefgroesse verlangt Befund und Rechnung? Begruende ohne Mechanismus.
+AUFGABE B: Welche Frage verlangt Kette und Deutung? Begruende ohne Mechanismus.
+
+HILFE: Pruefe dimensionsgeleitet, welcher Weg passt: Ordnungsfrage mit Kadenztest spricht fuer Befund und Weg A; Ausdrucksfrage mit Dichtevergleich spricht fuer Kette und Weg B. Ordne selbst zu; die Zuordnung wird nicht vorweggenommen.
+
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg A oder Weg B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Ueberfuehrt aus VERGLEICH (Vorwahl-Fassung):
 - Position A (Traditionelle Tonalitaet):
   - Prinzip: Feste Hierarchie um ein tonales Gravitationszentrum (Grundton).
   - Hoererlebnis: Vertrautheit, Verlaesslichkeit, erloesender Spannungsabbau bei der Kadenz.
@@ -92,6 +121,10 @@ VERGLEICH: Dur-Moll-Tonalitaet (Harmonische Ordnung) vs. Freie Atonalitaet (Eman
   - Prinzip: Voellige Gleichwertigkeit aller Zwoelftonintervalle ohne Grundtonbezug.
   - Hoererlebnis: Schockierende Intensitaet, permanente Wachheit, existenzieller Ernst.
   - Philosophie: Radikale Authentizitaet des zerrissenen modernen Subjekts nach dem Zerfall alter Ideale.
+- Ueberfuehrt aus Schritt-5-HILFE (Vorwahl-Fassung): Kein Spoiler in Vorwahl-HILFE bestaetigt, Vorwahl-Fassung enthielt keine HILFE mit Loesungszuordnung.
+- Mechanismus A: Tonalitaet bindet Dissonanz an tonikale Aufloesung.
+- Mechanismus B: Atonalitaet stellt zwoelf Toene gleichberechtigt.
+- Ein-Satz-Kern: Emanzipierte Dissonanz ersetzt Kadenz durch Dichte, Dynamik und Registersprung.
 
 Entscheidungsregel fuer die Klausur:
 Wird nach `Bedeutung der Atonalitaet` gefragt, bezeichne sie niemals als "chaotisch" oder "falsch", sondern hebe hervor: Schoenberg verstand die Atonalitaet als historische Zwangslaufigkeit, um die von Wagner und Mahler bereits bis zum Zerbersten gedehnte Chromatik ehrlich zu vollenden!
@@ -100,17 +133,27 @@ Wird nach `Bedeutung der Atonalitaet` gefragt, bezeichne sie niemals als "chaoti
 
 PRUEFUNGSSZENARIO (KLP NRW Musik GK/LK Inhaltsfeld 1: Musik und andere Kuenste):
 
-### AFB I: Historische Einordnung
+AUFGABE (erlaeutern, vergleichen & beurteilen, [AFB I/II/III]): Erlaeutere [AFB I] die Einordnung, vergleiche [AFB II] die Strukturen und beurteile [AFB III] die These.
+
+### [AFB I]: Historische Einordnung
 Erläutere die enge kuenstlerische Freundschaft zwischen Arnold Schoenberg und dem Maler Wassily Kandinsky ("Der Blaue Reiter") um das Jahr 1911.
 
-### AFB II: Komparative Strukturanalyse
+### [AFB II]: Komparative Strukturanalyse
 Vergleiche Kandinskys Schritt zur voelligen Abstraktion in der Malerei (Verzicht auf gegenstaendliche Gegenstaende wie Haeuser oder Baeume) mit Schoenbergs Schritt zur Atonalitaet (Verzicht auf Tonarten und Kadenzen).
 Zeige mindestens zwei strukturelle Parallelen auf.
 
-### AFB III: Kritisches Gesamturteil
+### [AFB III]: Kritisches Gesamturteil
 Beurteile die These: "Die freie Atonalitaet war eine Sackgasse, weil dem menschlichen Gehirn ohne tonale Anker die Moeglichkeit fehlt, laengere grossformatige Instrumentalformen wie Sonaten oder Sinfonien ohne Textunterlage zu konstruieren."
 
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Einordnungsbefund mit Jahresanker | 5 NP | Zeitstrahl als Alternativweg
+Strukturvergleich mit Abstraktionsbezug | 5 NP | Bildvergleich als Alternativweg
+Epochenurteil mit Formbeleg | 5 NP | Offenes Urteil mit Thesenbezug als Alternativweg
+Gesamt: 15 NP
+
 ## Schritt 7 — check: Format-Check & Scoring
+AUFGABE (benennen & erklaeren, [AFB I]): Benenne [AFB I] die drei Kernbegriffe und erklaere [AFB I] jeden in einem Satz; nutze die FRAGE-Antwort-Paare unten als Beleg.
 
 30 XP Schnelltest zur Verstaendigungssicherung:
 
@@ -121,6 +164,19 @@ FRAGE: Was ist die genaue Ausfuehrungsvorschrift fuer die sogenannte "Sprechstim
 ANTWORT: Der Interpret muss den notierten Rhythmus absolut exakt einhalten und die Tonhoehe beruehren, darf aber nicht im Gesangston verharren, sondern muss den Ton sofort nach dem Anstimmen durch Fallenlassen oder Heben verlassen.
 
 `Klausur-Satz: Die differenzierte Reflexion erfordert eine stringente Verknuepfung von theoretischem Kriterienkatalog und konkretem Klausurmaterial.`
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Abgrenzungsbefund frei gegen Reihe | 5 NP | Verfahrenstabelle als Alternativweg
+Sprechstimmanalyse mit Regelbezug | 5 NP | Partiturvergleich als Alternativweg
+Reflexionsurteil mit Kriterienbeleg | 5 NP | Offenes Urteil mit Materialbezug als Alternativweg
+Gesamt: 15 NP
+
+KERNSATZ (auswendig):
+- Kernsatz: `Emanzipierte Dissonanz ersetzt Kadenz durch Dichte, Dynamik und Registersprung.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = Dissonanz als Subjekt | Mechanismus = Emanzipation ohne Kadenz als Mechanismus | Urteil = Urteil auf Ausdruckswahrheit
+- Selbsttest: Emanzipierte Dissonanz ersetzt Kadenz durch Dichte, Dynamik und ___.
 
 ## Schritt 8 — reflexion: Meisterschaft & Naechste Mission
 

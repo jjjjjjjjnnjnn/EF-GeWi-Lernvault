@@ -8,7 +8,7 @@ operatoren: [beschreiben, vergleichen, interpretieren]
 klausurrelevant: true
 datum: 2026-10-03
 tags: [EF, Musik, Wiener-Klassik, Romantik, Epochen, Formenlehre]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Vom Mass zur Leidenschaft: Klassik vs. Romantik im Epochenvergleich (L1, Ziel Klausur)
@@ -31,7 +31,7 @@ Hook / Phaenomen: 1788 im Wiener Salon: Mozart komponiert eine Klaviersonate nac
 `Klausur-Satz: Waehrend die Wiener Klassik nach architektonischer Ausgewogenheit und rationaler Periodensymmetrie strebte, erhob die Romantik das subjektive Seelenleben, die Sehnsucht und das Grenzenlose zum absoluten Kriterium der Kunst.`
 
 ## Schritt 2 — entdecken: Ausruestungskiste der Epochen-Unit
-PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
+PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文->德语，Evidenz：pretraining降认知负荷）：
 
 中文在上，德语在下：
 
@@ -80,7 +80,7 @@ BEISPIEL（正确例题示范，含教具操作与解答）：
 
 [Werkzeug: highlighter]
 
-AUFGABE (beschreiben & vergleichen, AFB I/II)：
+AUFGABE (beschreiben & vergleichen, [AFB I/II])：Beschreibe [AFB I/II] den Befund und vergleiche [AFB I/II] die Wirkung anhand der unten angegebenen Takte und Parameter. 
 Gegeben sind zwei kurze Klavierextrakte:
 - Extrakt A (W. A. Mozart, Sonate C-Dur KV 545, Takt 1–8): Klare Melodiefuehrung in der rechten Hand im $4+4$-Periodenbau. Die linke Hand spielt gleichmaessige, harmlos wiegende Alberti-Baesse ($c-g-e-g$). Klare C-Dur-Diatonik, Takt 4 Halbschluss auf $G$, Takt 8 Ganzschluss auf $c$.
 - Extrakt B (Frédéric Chopin, Nocturne c-Moll op. 48 Nr. 1, Takt 1–8): Dunkle, schwere Basstoene im tiefen Register, unterbrochen von Pausen. Die rechte Hand spielt eine weit geschwungene, melancholische Melodie mit vielen Seufzer-Motiven, Vorhalten und verminderten Septakkorden; das Tempo ist mit "Lento - espressivo e rubato" ueberschrieben.
@@ -88,9 +88,21 @@ Gegeben sind zwei kurze Klavierextrakte:
 2. Vergleichen Sie die intendierte Wirkung beider Werke auf den Hoerer anhand der jeweiligen Epochenideale. (20 BE)
 
 HILFE:
-1. Schritt 1: Textur & Begleitung vergleichen: Mozarts Alberti-Baesse erzeugen Transparenz und Gleichmass; Chopins weit gegriffene Akkorde schaffen orchestrale Klangfuelle und emotionale Schwere.
-2. Schritt 2: Periodik & Melodie: Mozarts Thema ist streng achttaktig und symmetrisch; Chopins Melodie wirkt wie eine endlose, seufzende Vokallinie (Belcanto).
-3. Schritt 3: Harmonik: Mozart = reine Diatonik und Kadenzen; Chopin = getruebtes Moll, verminderte Akkorde, emotionale Zerrissenheit.
+- Texturdimension: Pruefe Begleitung mit Satzvergleich; notiere nur die Muster, deute die Epoche noch nicht.
+- Periodikdimension: Pruefe Phrasenbau mit Taktvergleich; sammle nur Vordersatz und Nachsatz, ohne das Urteil vorwegzunehmen.
+- Harmonikdimension: Pruefe Faerbung mit Akkordtest; halte nur Diatonik oder Chromatik fest, ohne die Deutung zu setzen.
+
+COMPLETION (Lückentext):
+- Lies beide Saetze und ergaenze aus dem Gedaechtnis, ohne zurueckzublaettern:
+- Mozart baut ___ Perioden mit Alberti-Baessen, Chopin dehnt Vokallinie.
+- Ordne getruebtes Moll als ___ ein und pruefe die Akkorde ohne Musterloesung.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Texturbefund mit Begleitanker | 5 NP | Satzvergleich als Alternativweg
+Periodikanalyse mit Schlussbezug | 5 NP | Phrasentabelle als Alternativweg
+Epochenurteil mit Charakterbeleg | 5 NP | Offenes Urteil mit Werkbezug als Alternativweg
+Gesamt: 15 NP
 
 MUSTERLÖSUNG:
 1. Satztechnische Analyse:
@@ -105,13 +117,29 @@ MUSTERLÖSUNG:
 ## Schritt 5 — ausprobieren: Duell der Aesthetiken: Regel vs. Genie
 
 VERGLEICH: Klassischer Regelkanon vs. Romantischer Geniebegriff
+- Position A (Klassizismus / Regelaesthetik): Neutralfassung fuer die Wahl.
+- [Weg A] Wenn du Weg A waehlst, arbeitest du in Schritt 7 vor allem mit Befund, Zahl und Zuordnung.
+- Position B (Romantik / Geniekult): Neutralfassung fuer die Wahl.
+- [Weg B] Wenn du Weg B waehlst, arbeitest du in Schritt 7 vor allem mit Kette, Deutung und Urteil.
 
+AUFGABE A: Welche Pruefgroesse verlangt Befund und Rechnung? Begruende ohne Mechanismus.
+AUFGABE B: Welche Frage verlangt Kette und Deutung? Begruende ohne Mechanismus.
+
+HILFE: Pruefe dimensionsgeleitet, welcher Weg passt: Regelfrage mit Periodentest spricht fuer Befund und Weg A; Gefuehlsfrage mit Ausdrucksvergleich spricht fuer Kette und Weg B. Ordne selbst zu; die Zuordnung wird nicht vorweggenommen.
+
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg A oder Weg B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Ueberfuehrt aus VERGLEICH (Vorwahl-Fassung):
 - Position A (Klassizismus / Regelaesthetik):
   - Kuenstlerische Maxime: Perfektion liegt in der Beherrschung der ueberlieferten Proportionen. Gute Kunst bildet die Natur nach und vermittelt moralische Erbauung.
   - Fehlerbegriff: Formbrueche, asymmetrische Taktzahlen oder unaufgeloeste Dissonanzen gelten als handwerkliche Schlamperei oder Geschmacksverfehlung.
 - Position B (Romantik / Geniekult):
   - Kuenstlerische Maxime: Das Kuenstlergenie steht ueber allen von Menschen gemachten Gesetzen. Das Originale, Nie-Dagewesene und Unerklaerliche ist das einzig Wahre.
   - Fehlerbegriff: Konvention und Regelbefolgung gelten als spiessige Erstarrung; erst das Brechen der Form beweist echte kuenstlerische Freiheit.
+- Ueberfuehrt aus Schritt-5-HILFE (Vorwahl-Fassung): Kein Spoiler in Vorwahl-HILFE bestaetigt, Vorwahl-Fassung enthielt keine HILFE mit Loesungszuordnung.
+- Mechanismus A: Klassik baut symmetrische Periode mit Regel.
+- Mechanismus B: Romantik dehnt Phrase mit Chromatik.
+- Ein-Satz-Kern: Alberti-Transparenz weicht romantischer Akkordschwere und Chromatik.
 
 Entscheidungsregel fuer die Klausur:
 Wird nach `Beethovens Sonderstellung` gefragt, ihn stets als Scharnier und Ueberwinder der Klassik charakterisieren, der mit seiner Eroica (3. Sinfonie) und 9. Sinfonie das Tor zur Romantik aufstiess!
@@ -121,15 +149,22 @@ PRÜFUNGSSZENARIO (KLP NRW Musik EF Inhaltsfeld 1: Bedeutungen von Musik / Ausdr
 
 Gegeben sind die ersten vier Takte des Vorspiels zu Richard Wagners Oper "Tristan und Isolde" (1859). Im zweiten Takt erklingt der beruechtigte "Tristan-Akkord" ($F - H - Dis - Gis$), der sich nicht in die Tonika a-Moll aufloest, sondern ueber eine chromatische Stimmfuehrung in einen Dominantseptakkord ($E^7$) muendet — welcher seinerseits wiederum unaufgeloest in einer Generalpause verharrt!
 
-AUFGABE (analysieren & deuten, AFB II/III):
-1. Analysieren Sie den Aufbau und die unvollstaendige Aufloesung des Tristan-Akkords. (12 BE)
-2. Deuten Sie diese harmonische Konstruktion als Beginn der Moderne und als vollendeten Ausdruck romantischer Sehnsucht. (18 BE)
+AUFGABE (analysieren & deuten, [AFB II/III]): Analysiere [AFB II/III] den Befund und deute [AFB II/III] die Wirkung anhand der unten angegebenen Takte und Parameter. 
+1. Analysieren Sie den Aufbau und die unvollstaendige Aufloesung des Tristan-Akkords. [AFB II] (12 BE)
+2. Deuten Sie diese harmonische Konstruktion als Beginn der Moderne und als vollendeten Ausdruck romantischer Sehnsucht. [AFB III] (18 BE)
 
 ERWARTUNGSHORIZONT:
-- AFB II: Der Tristan-Akkord ist ein doppelt alterierter Akkord (halbverminderter Septakkord mit Hochalteration). Wagner fuehrt den Leitton nicht zur Tonika, sondern in die Dominante $E^7$, verweigert aber auch dieser den erwarteten Ganzschluss nach a-Moll. Die Musik bleibt in der Luft haengen; die Spannung wird nicht abgebaut, sondern ins Unendliche potenziert.
-- AFB III: Diese Takte markieren das Ende der klassischen Funktionsharmonik. Die "unendliche Melodie" und die permanente Verweigerung der Grundton-Befriedigung spiegeln das Grundthema des Werkes: die unstillbare, erst im Liebestod (in der Aufloesung des Ichs) erloesbare Sehnsucht. Harmonisch beginnt hier die Linie, die spaeter direkt in die Atonalitaet Schoenbergs fuehrt.
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Akkordbefund mit Intervallanker | 5 NP | Akkordskizze als Alternativweg
+Aufloesungsanalyse mit Stimmfuehrungsbezug | 5 NP | Stimmenvergleich als Alternativweg
+Bruchurteil mit Sehnsuchtsbeleg | 5 NP | Offenes Urteil mit Epochenbezug als Alternativweg
+Gesamt: 15 NP
+- [AFB II]: Der Tristan-Akkord ist ein doppelt alterierter Akkord (halbverminderter Septakkord mit Hochalteration). Wagner fuehrt den Leitton nicht zur Tonika, sondern in die Dominante $E^7$, verweigert aber auch dieser den erwarteten Ganzschluss nach a-Moll. Die Musik bleibt in der Luft haengen; die Spannung wird nicht abgebaut, sondern ins Unendliche potenziert.
+- [AFB III]: Diese Takte markieren das Ende der klassischen Funktionsharmonik. Die "unendliche Melodie" und die permanente Verweigerung der Grundton-Befriedigung spiegeln das Grundthema des Werkes: die unstillbare, erst im Liebestod (in der Aufloesung des Ichs) erloesbare Sehnsucht. Harmonisch beginnt hier die Linie, die spaeter direkt in die Atonalitaet Schoenbergs fuehrt.
 
 ## Schritt 7 — check: Format-Check & Scoring
+AUFGABE (benennen & erklaeren, [AFB I]): Benenne [AFB I] die drei Kernbegriffe und erklaere [AFB I] jeden in einem Satz; nutze die FRAGE-Antwort-Paare unten als Beleg.
 30 XP Schnelltest zur Verstaendigungssicherung:
 
 FRAGE: Wie viele Takte umfasst der idealtypische klassische Periodenbau, und wie teilt er sich auf?
@@ -140,6 +175,19 @@ ANTWORT: Der Alberti-Bass.
 
 FRAGE: Welcher Begriff bezeichnet das absichtliche, expressive Schwanken des Tempos in der romantischen Musik?
 ANTWORT: Rubato (Tempo rubato) bzw. Agogik.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Periodenbefund mit Achttakttest | 5 NP | Phrasentabelle als Alternativweg
+Begleitanalyse mit Albertibezug | 5 NP | Satzvergleich als Alternativweg
+Epochenurteil mit Formbeleg | 5 NP | Offenes Urteil mit Stilbezug als Alternativweg
+Gesamt: 15 NP
+
+KERNSATZ (auswendig):
+- Kernsatz: `Alberti-Transparenz weicht romantischer Akkordschwere und Chromatik.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = Alberti-Satz als Subjekt | Mechanismus = Periodensymmetrie oder Dehnung als Mechanismus | Urteil = Urteil auf Epochenbruch
+- Selbsttest: Alberti-Transparenz weicht romantischer ___ und Chromatik.
 
 ## Schritt 8 — reflexion: Meisterschaft & Naechste Mission
 REFLEXION:
