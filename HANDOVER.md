@@ -21,7 +21,7 @@
 - **TeachingStudio 教学工坊与多邻国上课河流全景规范**：[`00_META/TEACHING-STUDIO-SPECIFICATION.md`](00_META/TEACHING-STUDIO-SPECIFICATION.md)（**商业级教学板块设计、拆书排程、4大通用SVG微世界、5步交互上课流与通关奖赏闭环全景规范，外部 AI 对接与扩展必读**）。
 - 目标：德国 NRW Gymnasium EF 十科笔试/口试提分，中德双语，**完全离线**。
 - **内容铁律**：所有题目材料只能来自用户自己的笔记原文 —— **超纲率 = 0**。
-- **当前规模**：笔记 **418** · Anki 卡片 **1942** · 互动课程 **356 篇**（`Lernreise/`，十科全覆盖，含 Lesson-v3 全量高阶微课与多学科学术解剖台）· 术语表 **946 行** · 索引链接 **370 条** · 十科图谱 712+ 节点 · 89 套件 676 项全量测试 100% 绿灯 · 考纲体系（NRW 十科 + 中国理科四科 + 中德映射）· 本地真题池 **760 份 PDF (2024–2026 全科 Klausuren + Vorgaben)**。
+- **当前规模**：笔记 **418** · Anki 卡片 **1942** · 互动课程 **356 篇**（`Lernreise/`，十科全覆盖，含 Lesson-v3 全量高阶微课与多学科学术解剖台）· 术语表 **946 行** · 索引链接 **371 条** · 十科图谱 712+ 节点 · 89 套件 676 项全量测试 100% 绿灯 · 考纲体系（NRW 十科 + 中国理科四科 + 中德映射）· 本地真题池 **760 份 PDF (2024–2026 全科 Klausuren + Vorgaben)**。
 
 ---
 
@@ -114,7 +114,7 @@
 ### 1. 先跑门禁建基线（3 条命令，确认「全绿」不是文档声明）
 
 ```bash
-python scripts/vault-check.py                      # 期望 PASS(notes=418, csv_rows=1942, reisen=356, index_links=370)
+python scripts/vault-check.py                      # 期望 PASS(notes=418, csv_rows=1942, reisen=356, index_links=371)
 cd App-EF-Lernvault && npx vitest run              # 期望全部测试 100% PASS (89套件 676单测全绿)
 cd App-EF-Lernvault && npm run build               # 期望 ✓ built (0 错误)
 ```
@@ -124,15 +124,15 @@ cd App-EF-Lernvault && npm run build               # 期望 ✓ built (0 错误)
 - **技术规约与全景规范**：[`00_META/TEACHING-STUDIO-SPECIFICATION.md`](00_META/TEACHING-STUDIO-SPECIFICATION.md)；
 - **业务目标与深化定位**：
   - 基于 Phase 4 已交付的拆书引擎、4 大通用微世界沙盒、5 步交互微课上课流（`InteractiveLessonRunner`）与通关奖赏河流（`QuestMapTab`），持续深化商业级教学体验；
+  - 吸收外部 AI 架构评估（见 [`00_META/TEACHING-STUDIO-SPECIFICATION.md §8`](00_META/TEACHING-STUDIO-SPECIFICATION.md#8-外部架构评审建议与体验进化路线图-phase-5-refinements)）：解决错题归档摩擦、微世界卡关容错、复习插桩视觉双轨分离、课型自适应 3 步轻量流、触觉实体骨架与进度条锚点、智能重排与断点持久化；
   - 扩充北威州 Gymnasium EF 真实各学科经典教材预设与考纲大纲（Deutsch, Philosophie, Physik, Mathe, SoWi 等）；
-  - 扩展多样化交互题卡类型（因果链积木卡槽排序、正反辩论连线配对、易错陷阱排雷卡）；
-  - 完善自适应错题强化流（Fehler-Booster）与 12 分钟沉浸微专注倒计时；
   - 界面严格遵循 Tufte 纯黑白极简纸墨风（零 Emoji、零 Tailwind 动态阴影、零 italic、1px 发丝线、纯手绘矢量 SVG）。
 - **下一会话施工核心任务清单**：
-  - **任务 A（真实教材大纲与考纲预设扩充）**：在 `bookPresets.ts` 与 `bookIngestParser.ts` 中丰富 Deutsch（歌德《浮士德》/戏剧分析）、Philosophie（康德/边沁/国家哲学）、Physik（牛顿力学/功能关系）、Mathe（导数/切线）的高质量真实教材预设与启发式设问；
-  - **任务 B（微课交互题卡多样化）**：在 `InteractiveLessonRunner.tsx` 中新增因果链积木卡槽排序卡（Kausalkette Drag & Drop）、正反论点连线配对卡（Pro/Contra Matching）；
-  - **任务 C（自适应错题强化关卡流）**：结合 `teachingStore` 记录的各关卡错题，在关卡河流中智能插入“错题强化专区 (Fehler-Booster)”，支持一键导出整套错误记录 Markdown 补丁供 Obsidian 消费；
-  - **任务 D（沉浸专注体验）**：在演播厅内引入 12 分钟番茄钟微专注倒计时与无干扰极简纯黑白全屏阅读卷轴。
+  - **任务 A（真实教材大纲扩充与自适应轻量 3 步流）**：在 `bookPresets.ts` 与 `bookIngestParser.ts` 中丰富 Deutsch（歌德《浮士德》/戏剧分析）、Philosophie（康德/边沁/国家哲学）、Physik（牛顿力学/功能关系）、Mathe（导数/切线）预设；对纯记忆/文献主题支持 `concept_light` 轻量 3 步流（直觉 -> 概念 -> 小测），教具槽位优雅回退；
+  - **任务 B（微课交互题卡多样化与实体触觉骨架）**：在 `InteractiveLessonRunner.tsx` 中新增因果链积木卡槽排序卡（Kausalkette Drag & Drop）、正反论点连线配对卡（Pro/Contra Matching）；卡片与按钮加入 2px 实体粗墨边框与轻微物理按压位移（`active:translate-y-[1px]`），发丝进度条升级为 3-4px 几何阶段刻度轨；
+  - **任务 C（微世界沙盒宽容度与兜底通道）**：在 `VariableSliderBox` 与 `DilemmaBalanceScale` 中引入 +-5% 容错判定带与平衡点磁性吸附（Magnetic Snapping）；引入 20 秒超时苏格拉底脚手架提示与“跳过直接看推导”按钮，杜绝卡关；
+  - **任务 D（主辅双轨关卡河流与智能重排）**：纵向河流专注核心前向探索主轴，艾宾浩斯复习插槽（D+1 Blitz / D+3 Tief）分流至今日使命前置热身栏与浮动温故卫星徽标；规划器引入欠账平滑衰减重排（Smart Reschedule）；
+  - **任务 E（错题沉淀降阻与断点会话恢复）**：在通关结算与微课演播厅内提供一键导出 `.md` 补丁与内嵌迷你审阅抽屉（Inline Review Drawer）；在 `localStorage` 缓存未提交题卡 session，防刷新丢失。
 
 ### 3. 把德语问询稿发给老师 ← **唯一能解锁剩余阻塞的动作**
 

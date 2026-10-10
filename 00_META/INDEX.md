@@ -292,6 +292,7 @@
 - [2026-10-09-skill-tree-pure-german-fuzzy-search-and-hud-refinement](Journal/2026-10-09-skill-tree-pure-german-fuzzy-search-and-hud-refinement.md) — **知识图谱德语纯净模式、全语言模糊检索引擎与极简HUD工作台交接**：德语模式零中文泄漏+语言控制收敛至顶栏+星区下拉化+独立多语言模糊检索算法（36单测/tsc/vault-check全绿）
 - [2026-10-10-phase-3-4-and-3-5-completion](Journal/2026-10-10-phase-3-4-and-3-5-completion.md) — **Phase 3.3~3.5交付：罗尔斯正义论分配沙盘、双教具微课挂载与全科星图打分补丁机**
 - [2026-10-10-phase-4-teaching-studio-and-duolingo-lesson-runner](Journal/2026-10-10-phase-4-teaching-studio-and-duolingo-lesson-runner.md) — **Phase 4全量交付：TeachingStudio商业级教学工坊、多邻国式关卡河流与全屏交互上课奖赏闭环**：多源教材自动拆解+DAG拓扑排程+4大通用SVG微世界+垂直关卡河流与里程碑宝箱+5步交互上课流+墨水印章与Fehlerlog补丁机+89套件676单测全绿
+- [2026-10-10-external-ai-evaluation-and-phase-5-architecture-refinements](Journal/2026-10-10-external-ai-evaluation-and-phase-5-architecture-refinements.md) — **外部 AI 架构评审吸收与 Phase 5 体验进化技术路线**：用户习惯循环与低摩擦错题归档+微世界宽容度与吸附兜底+主轴探索与温故双轨分离+自适应3步流+高可见度进度条与实体骨架感+智能重排断点恢复
 - 约定：文件名 `YYYY-MM-DD-<thema>.md`，头部frontmatter（`fach`可空，`tags: [EF, Meta]`）。
 
 

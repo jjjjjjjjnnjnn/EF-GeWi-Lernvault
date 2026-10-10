@@ -319,3 +319,51 @@ tags: [EF, Meta, App, TeachingStudio, Duolingo, Pacing, MicroWorld, Architecture
 - **5 步课步编译器**：[`engine/lessonStepFlow.ts`](file:///C:/Users/rongj/Desktop/学习/App-EF-Lernvault/src/modules/teaching/engine/lessonStepFlow.ts)
 - **全局状态机**：[`engine/teachingStore.ts`](file:///C:/Users/rongj/Desktop/学习/App-EF-Lernvault/src/modules/teaching/engine/teachingStore.ts)
 - **通用微世界套件**：[`components/GenericMicroWorlds/`](file:///C:/Users/rongj/Desktop/学习/App-EF-Lernvault/src/modules/teaching/components/GenericMicroWorlds/)
+
+---
+
+## 8. 外部架构评审建议与体验进化路线图 (Phase 5 Refinements)
+
+针对外部 AI 架构评估（针对用户习惯循环、认知负荷、操作便利性与视觉骨架）提出的 6 项关键见解，确立以下深化改进规范与技术落地路线：
+
+### 8.1 错题沉淀降阻与低摩擦归档方案 (Frictionless Error Harvesting)
+- **痛点分析**：坚守 Read-Only Vault 铁律使得错题无法静默覆写 Obsidian 库，若要求学生在备考高压下每次通关后切出应用定位粘贴，容易产生操作断裂；
+- **优化方案**：
+  1. **多级导出与暂存机制**：在 `VictoryRewardScreen` 与 `PlayableStudioTab` 提供：
+     - `[In Fehlerlog kopieren]`：带清晰成功状态 Toast 的一键剪贴板复制；
+     - `[Fehlerlog als .md herunterladen]`：一键导出标准 Markdown 错题补丁文本文件；
+  2. **内嵌迷你审阅抽屉 (Inline Review Drawer)**：在应用内直接查看当前学科所有未归档错题诊断，允许学生在会话结束前一次性批量确认并复制，杜绝高频切出。
+
+### 8.2 微世界动手挑战的容错机制与双通道保障 (MicroWorld Forgiveness & Fallbacks)
+- **痛点分析**：文科学生面对物理力矩天平或坐标曲线时，若判定区间过紧（无容错），易因微操体验差产生严重卡关挫败感；
+- **优化方案**：
+  1. **宽容阈值与磁性吸附 (Magnetic Snapping)**：滑块与天平引入 +-5% 的合理目标判定宽容带，并在接近平衡点时提供平滑磁性吸附辅助；
+  2. **苏格拉底脚手架提示 (Socratic Hint)**：若学生在微世界内操作超过 20 秒仍未达成目标，自动展开引导气泡；
+  3. **跳过直接看推导通道 (Skip & Reveal Derivation)**：对于非核心操作步骤，提供“跳过直接看推导”按钮，确保心流顺畅推进。
+
+### 8.3 关卡河流与艾宾浩斯复习插桩双轨分离 (Dual-Stream Quest River)
+- **痛点分析**：艾宾浩斯复习插槽（D+1 Blitz / D+3 Tief）若直接横插在垂直河流主轴中，会破坏线向前进的里程碑成就感，让学生误以为进度停滞；
+- **优化方案**：
+  1. **主轴专注意识**：纵向主河流水系仅渲染前向探索关卡（Core Progression Nodes），单元结业里程碑宝箱保持清晰线性递进；
+  2. **温故双轨分流**：
+     - 复习关卡优先置顶于顶部「今日使命 (Heutige Mission)」Hero 卡片的前置准备栏；
+     - 在已通关关卡旁以侧边“浮动温故卫星徽标 (Satellite Review Badge)”呈现，不打乱主干脉络。
+
+### 8.4 课型自适应与轻量 3 步微课流 (Adaptive Lesson Sizing)
+- **痛点分析**：强制所有关卡套用“直觉 -> 概念 -> 微世界 -> 陷阱 -> 标答”5 步，会导致纯记忆或纯文献辨析类主题产生“为了交互而交互”的冗余负荷；
+- **优化方案**：
+  1. **双课型编译器支持**：
+     - `interactive_deep`（默认 5 步完整流）：适用于机制推演、制度博弈、函数极值与力学等需要动手验证的核心主题；
+     - `concept_light`（轻量 3 步流）：适用于纯概念辨析、文学修辞与事实性记忆主题，流程为“生活直觉 -> 核心概念辨析 -> 15 NP 会考小测”；
+  2. **教具槽位自适应回退**：若未匹配到专属教具，自动回退为纯文字认知隐喻对比卡，杜绝空壳或强行嵌入。
+
+### 8.5 触觉反馈骨架与进度条锚点增强 (Tactile Skeleton & Progress Visibility)
+- **痛点分析**：在纯黑白 Tufte 风格下，缺乏立体投影的控件易退化为单薄冷淡的表单；1.5px 发丝进度条在 2K/4K 屏上可见度低；
+- **优化方案**：
+  1. **实体机械按压动效**：卡片与按钮加入 2px 实体粗墨边框与轻微物理按压位移（`active:translate-y-[1px]`），结合双墨线印章式轮廓（Double-Border Stamp），营造坚实的纸墨实体感；
+  2. **高可见度进度条**：进度条高度提升至 3px-4px，端点与小步之间嵌入几何刻度断点（Step Ticks），清晰提供“即将达成”的心理预期。
+
+### 8.6 智能重排与断点持久化 (Smart Reschedule & Session Resume)
+- **优化方案**：
+  1. **欠账滚雪球平滑衰减 (Smart Reschedule)**：若学生因断档积压复习任务，规划器自动将复习槽平滑分摊至未来 3-5 天，杜绝“债务雪崩”挫败感；
+  2. **未结算会话断点恢复 (Session Resume)**：在 `localStorage` 缓存当前未提交关卡的题卡进度，意外刷新或中断时支持一键恢复。
