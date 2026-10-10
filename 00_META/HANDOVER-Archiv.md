@@ -16,7 +16,36 @@ tags: [EF, Meta]
 
 ## 一、历史状态记录（倒序，最新在上）
 
-> 覆盖项目从骨架搭建到 2026-09-24 的全部里程碑。当前状态只保留最近 3 条在 `HANDOVER.md`。
+> 覆盖项目历史各阶段里程碑。当前活跃状态只保留最近阶段在 `HANDOVER.md`。
+
+### 2026-10-10 归档：Phase 3.0 ~ 3.5 全学科知识图谱、微课教具网格与宏观星图里程碑
+
+- ✅ **Phase 3.3 ~ 3.5 哲学正义论无知之幕分配天平、双工坊微课挂载与全科宏观星图 AFB III 打分补丁机交付（2026-10-10 交付）**：
+  - **选项 A：哲学标志性工坊《罗尔斯正义论与无知之幕分配天平》(`RawlsVerteilungsSim.tsx`)**：5 阶层再分配与 Laffer 激励曲线建模，双臂道德天平纯 SVG 动态倾角平衡，5 阶层税前/税后收入柱状图，洛伦兹曲线与 Gini 系数实时解算，无知之幕身份抽取与 15 NP 会考评分卡；单测 10/10 绿灯通过；
+  - **选项 B：微课内嵌教具调度网格打通与真实课程挂载**：`Reise.tsx` `renderEmbeddedTool` 支持 `wahlsystem-sim` 与 `rawls-sim` 动态解析与沙盒挂载；课程文件 `Philo-Gerechtigkeit-Rawls-Schleier-des-Nichtwissens-L1.md` 与 `SoWi-Parteien-Willensbildung-L1.md` 正式挂载对应教具；
+  - **选项 C：AFB III 跨学科战役 D1–D5 五维自查评分台与 Fehlerlog 补丁机**：`AllSubjectsMacroView.tsx` 战役模态框集成 D1–D5 0–15 NP 打分量表，错题实时诊断与一键生成复制标准 Markdown 表格补丁；测试 10/10 绿灯；
+  - **工程门禁全绿**：全量 81 个测试套件、600 项测试 100% PASS，`modules.test.tsx` 零契约违规，`npx tsc -b` 0 报错，`python scripts/vault-check.py` PASS。
+
+- ✅ **Phase 3.2 知识图谱状态机闭环、全科宏观战役融合与德国大选议席分配沙盘交付（2026-10-09 夜交付）**：
+  - **方向一：知识图谱与微课通关双向状态机闭环**：`Reise.tsx` 步骤 8 完成自动穿透调用 `markNodeMasteredByCourseId`；`SkillTreeCanvas.tsx` 即时响应 `SKILL_TREE_MASTERED_EVENT`，源头依赖连线跃迁为高对比度墨色实线；单测 12/12 绿灯；
+  - **方向三：全科宏观星图四大跨学科战役深度融合**：对齐四大考点簇，二次贝塞尔引力拓扑桥梁与双向光流，战役演练沙盒单测 9/9 绿灯；
+  - **方向二：社科标志性工坊德国大选与议席分配沙盘 (`WahlsystemSim.tsx`)**：建模双票制、5% 门槛、圣拉古除数配额算法、新旧选举法动态对比，Tufte 半圆形 Plenarsaal 散点图与联盟测算器，单测 13/13 绿灯；
+  - **工程门禁全绿**：全量 79 个测试套件、583 项测试 100% PASS。
+
+- ✅ **Phase 3.1 知识图谱体验全面收敛、全语言模糊搜索体系与极致清爽 HUD 落地（2026-10-09 晚交付）**：
+  - 纯德语模式零中文泄漏治理；语言控制权全局收敛至顶栏；展开式原生下拉选择器（`Bereich:` `<select>`）；
+  - 全语言全要素模糊检索引擎（`fuzzySearch.ts`，变音符号等价映射与 Levenshtein 容错）；
+  - 研习抽屉交互防误触（画布平移不误关、收回状态点节点必弹、点空白收回）；
+  - 多语言文本折行与方框防溢出（`svgTypography.ts`）；
+  - 单测 36/36 全部通过。
+
+- ✅ **Phase 3.0 十科可插拔知识图谱与技能树深度演进完成（2026-10-08 ~ 2026-10-09 全面交付）**：
+  - 十科图谱扩张至 712 节点，预设契约冻结与懒排布机制；
+  - 单行轻量胶囊与抗碰撞排布（径向波浪交错 ±26~36px 彻底杜绝重叠）；
+  - 研习抽屉 GPU 加速平滑抽拉动画（收回代替删除，右边缘竖排把手随时呼出）；
+  - 双模式图谱（行星引力星盘 Astrolabe vs 多泳道科技树 Laned Tech Tree）。
+
+### 2026-09-25 以前历史里程碑
 
 - ✅ 第七轮全项目维护与交接（`[Meta]`+本交接）：全库在库文件零 > 1MB、禁区路径（`data/`, `_Downloads/`, `.apkg` 等）零命中、敏感密钥/PII零泄漏；纠正德语变音符号路径（`2026-09-24-curriculum-deepening-batch2-and-fach-lernbaeume.md` 规范化），消除跨平台转义问题；全库 Frontmatter 校验 100% 格式合规（total bad = 0）；`INDEX.md` 补全 4 篇 `Lernreise` 课程文件直链与近三篇 Journal 记录；**57 单测套件 379/379 测试 100% 全绿** / `npm run build` 4.64s 零警告 / **vault-check PASS(102/534/234)** / 本地研习服务端口 1420 稳定在线（Journal 2026-09-24-wartung-7）。
 - ✅ 全学科课程大纲深度化第二批与全10门学科独立学习树系统上线（`[Deutsch]`+`[Englisch]`+`[Philo]`+`[App]`+`[Meta]`+本交接）：①**语文学科（文史哲）原创深度攻坚笔记**：德语实用文本分析修辞三步走与读者导向剖析 (`01_Deutsch/Sachtextanalyse-Leserlenkung-und-Rhetorik.md`)、英语跨文化中继翻译与受众适应策略 (`02_Englisch/Mediation-und-Kommunikative-Strategien.md`)、哲学康德定言命令四步检测法与目的自身公式 (`07_Philosophie/Kant-Kategorischer-Imperativ-und-Maximenpruefung.md`) ②**考纲词卡全面扩增至 534 张**：德语、英语、哲学各增补 4 张精准高考/会考题眼级双语抽认卡，Glossar 同步增补 12 条高阶术语释义，INDEX 全面收录 ③**全10门学科专属学习地图与学习树系统 (`curriculumTree.ts` & `Mindmap.tsx`)**：依照北威州 KLP 官方 Inhaltsfelder（IF 1/2/3...）为全 10 门高中 EF 学科（SoWi、Philosophie、Deutsch、Englisch、Mathe、Physik、Chemie、Bio、Musik、Sport）定制独立学习树，构建「基础定理 ➔ 核心分析/实验 ➔ 综合会考与批判」三阶里程碑拓扑，支持思维导图内随时折叠展开或一键下钻到特定学科，点击阶段直接连入双语核心精讲库 ④**前端应用与抽认卡全量同步 (`src/data.ts`)**：`mockNotes` 增补 3 篇文史哲双语精解，`cards` 增补 `c28`~`c31` ⑤**工程门禁全绿**：**57 套件 379 测试 100% 全绿** / `npm run build` 4.64s 零错误 / `vault-check PASS(102/534/227)` / 本地服务端口 1420 持续健康在线（Journal 2026-09-24-curriculum-deepening-batch2-and-fach-lernbaeume）。
