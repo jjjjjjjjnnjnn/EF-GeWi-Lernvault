@@ -48,6 +48,36 @@ describe("Concept Distillation Engine: conceptDistiller", () => {
       expect(p.questionZH).toBeTruthy();
       expect(p.counterPerspectiveDE).toBeTruthy();
     }
+
+    // Study-Mate Enriched Pedagogical Fields
+    expect(res.storyHook).toBeDefined();
+    expect(res.storyHook?.roleDE).toBeTruthy();
+    expect(res.storyHook?.scenarioDE).toBeTruthy();
+
+    expect(res.feynmanExplanation).toBeDefined();
+    expect(res.feynmanExplanation?.summaryZH).toBeTruthy();
+    expect(res.feynmanExplanation?.summaryDE).toBeTruthy();
+
+    expect(res.twoBrillen).toBeDefined();
+    expect(res.twoBrillen?.perspectiveA.titleDE).toBeTruthy();
+    expect(res.twoBrillen?.perspectiveB.titleDE).toBeTruthy();
+    expect(res.twoBrillen?.synthesisDE).toBeTruthy();
+
+    expect(res.funFact).toBeDefined();
+    expect(res.funFact?.titleDE).toBeTruthy();
+    expect(res.funFact?.factDE).toBeTruthy();
+
+    expect(res.studyMateProbes).toBeDefined();
+    expect(res.studyMateProbes?.simplerHintDE).toBeTruthy();
+    expect(res.studyMateProbes?.deeperChallengeDE).toBeTruthy();
+    expect(res.studyMateProbes?.quizQuestionDE).toBeTruthy();
+
+    expect(res.attachedNote).toBeDefined();
+    expect(res.attachedNote?.title).toBeTruthy();
+    expect(res.attachedNote?.fach).toBeTruthy();
+    expect(res.attachedNote?.feynmanSummaryZH).toBeTruthy();
+    expect(res.attachedNote?.methodSnippetZH).toBeTruthy();
+    expect(res.attachedNote?.klausurSatzbausteinDE).toBeTruthy();
   }
 
   it("lists supported preloaded canonical topics", () => {

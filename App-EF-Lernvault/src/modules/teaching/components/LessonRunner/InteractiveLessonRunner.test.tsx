@@ -143,4 +143,90 @@ describe("InteractiveLessonRunner Component", () => {
     expect(screen.getByText("+45 XP")).toBeInTheDocument();
     localStorage.removeItem("lernvault_session_q-1-1");
   });
+
+  it("renders Study-Mate elements and supports toggling adaptive probes", () => {
+    render(
+      <InteractiveLessonRunner
+        questNode={sampleQuest}
+        fach="SoWi"
+        lang="de"
+        currentStreak={5}
+        onComplete={vi.fn()}
+        onClose={vi.fn()}
+      />
+    );
+
+    // Verify Story Hook & Feynman presence
+    expect(screen.getByText(/Story-Szenario & Rolle/i)).toBeInTheDocument();
+    expect(screen.getByText(/Feynman-Klartext/i)).toBeInTheDocument();
+    expect(screen.getByText(/Zwei Brillen/i)).toBeInTheDocument();
+
+    // Verify Study-Mate 3 adaptive probes are rendered
+    const simplerBtn = screen.getByRole("button", { name: /Einfacher \/ Klartext/i });
+    const deeperBtn = screen.getByRole("button", { name: /Vertiefung \/ Edge Case/i });
+    const quizBtn = screen.getByRole("button", { name: /Check \/ Schnelltest/i });
+
+    expect(simplerBtn).toBeInTheDocument();
+    expect(deeperBtn).toBeInTheDocument();
+    expect(quizBtn).toBeInTheDocument();
+
+    // 1. Click "Einfacher" -> expands simpler probe
+    fireEvent.click(simplerBtn);
+    expect(screen.getByText(/Feynman-Abstraktion senken/i)).toBeInTheDocument();
+
+    // 2. Click "Vertiefung" -> switches to deeper probe
+    fireEvent.click(deeperBtn);
+    expect(screen.getByText(/Kritischer Grenzfall & Paradoxon/i)).toBeInTheDocument();
+
+    // 3. Click "Check" -> switches to quick quiz probe
+    fireEvent.click(quizBtn);
+    expect(screen.getByText(/Sofortige Verständniskontrolle/i)).toBeInTheDocument();
+
+    // Reveal quick quiz answer
+    const revealAnswerBtn = screen.getByRole("button", { name: /Antwort einblenden/i });
+    fireEvent.click(revealAnswerBtn);
+    expect(screen.getByText(/Musterantwort:/i)).toBeInTheDocument();
+  });
+
+  it("opens, displays and closes attached knowledge note drawer", () => {
+    const writeTextMock = vi.fn();
+    Object.assign(navigator, {
+      clipboard: {
+        writeText: writeTextMock,
+      },
+    });
+
+    render(
+      <InteractiveLessonRunner
+        questNode={sampleQuest}
+        fach="SoWi"
+        lang="de"
+        currentStreak={5}
+        onComplete={vi.fn()}
+        onClose={vi.fn()}
+      />
+    );
+
+    // Click [Notiz] button in header
+    const openNoteBtn = screen.getByTitle("Wissensnotiz öffnen");
+    fireEvent.click(openNoteBtn);
+
+    // Note drawer should be visible with 5 sections
+    expect(screen.getByText(/1\. Feynman-Essenz/i)).toBeInTheDocument();
+    expect(screen.getByText(/2\. Zwei Brillen & Kontroverse/i)).toBeInTheDocument();
+    expect(screen.getByText(/3\. Klausur-Lösungsansatz/i)).toBeInTheDocument();
+    expect(screen.getByText(/4\. 15 NP Klausur-Formulierungen/i)).toBeInTheDocument();
+    expect(screen.getByText(/5\. Typische Klausur-Fallen/i)).toBeInTheDocument();
+
+    // Test clipboard copy
+    const copyBtn = screen.getByRole("button", { name: /\[Kopieren\]/i });
+    fireEvent.click(copyBtn);
+    expect(writeTextMock).toHaveBeenCalled();
+    expect(screen.getByText(/\[Kopiert!\]/i)).toBeInTheDocument();
+
+    // Close note drawer
+    const closeBtn = screen.getByTitle("Schließen");
+    fireEvent.click(closeBtn);
+    expect(screen.queryByText(/1\. Feynman-Essenz/i)).not.toBeInTheDocument();
+  });
 });

@@ -3,7 +3,16 @@
 // Strictly complies with Tufte clean rules: NO EMOJIS, ASCII arrows only (->).
 
 import type { ParsedQuestNode } from "./bookIngestParser";
-import { distillConcept, type DistilledConcept } from "./conceptDistiller";
+import {
+  distillConcept,
+  type DistilledConcept,
+  type StoryHookData,
+  type FeynmanExplanationData,
+  type TwoBrillenData,
+  type FunFactData,
+  type StudyMateProbesData,
+  type AttachedNoteData,
+} from "./conceptDistiller";
 
 export type LessonStepType =
   | "lecture"     // 1. 新知精讲微课 (Phase 1: Vorlesung & Kausalkette - 沉浸阅读吸收)
@@ -44,6 +53,12 @@ export interface LectureContentPayload {
   socraticPromptZH: string;
   learningTakeawayDE: string;
   learningTakeawayZH: string;
+  storyHook?: StoryHookData;
+  feynmanExplanation?: FeynmanExplanationData;
+  twoBrillen?: TwoBrillenData;
+  funFact?: FunFactData;
+  studyMateProbes?: StudyMateProbesData;
+  attachedNote?: AttachedNoteData;
 }
 
 export interface MicroWorldChallengePayload {
@@ -154,6 +169,12 @@ export function compileLessonSteps(
         "Verinnerliche die Kausalkette, bevor du das interaktive Experiment bedienst.",
       learningTakeawayZH:
         "掌握上述因果逻辑链条，为接下来的动手实验打下坚实理论基础。",
+      storyHook: distilled.storyHook,
+      feynmanExplanation: distilled.feynmanExplanation,
+      twoBrillen: distilled.twoBrillen,
+      funFact: distilled.funFact,
+      studyMateProbes: distilled.studyMateProbes,
+      attachedNote: distilled.attachedNote,
     },
     xpReward: 25,
   };

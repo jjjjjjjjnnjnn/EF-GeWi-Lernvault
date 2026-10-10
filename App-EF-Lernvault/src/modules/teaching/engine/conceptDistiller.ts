@@ -2,6 +2,60 @@
 // Deterministic first-principles knowledge distiller for topics and chapter texts
 // Strictly complies with Tufte clean rules: NO EMOJIS, ASCII arrows only (->).
 
+export interface StoryHookData {
+  roleDE: string;
+  roleZH: string;
+  scenarioDE: string;
+  scenarioZH: string;
+}
+
+export interface FeynmanExplanationData {
+  summaryZH: string;
+  summaryDE: string;
+}
+
+export interface TwoBrillenPerspective {
+  titleDE: string;
+  titleZH: string;
+  corePointDE: string;
+  corePointZH: string;
+}
+
+export interface TwoBrillenData {
+  perspectiveA: TwoBrillenPerspective;
+  perspectiveB: TwoBrillenPerspective;
+  synthesisDE: string;
+  synthesisZH: string;
+}
+
+export interface FunFactData {
+  titleDE: string;
+  titleZH: string;
+  factDE: string;
+  factZH: string;
+}
+
+export interface StudyMateProbesData {
+  simplerHintDE: string;
+  simplerHintZH: string;
+  deeperChallengeDE: string;
+  deeperChallengeZH: string;
+  quizQuestionDE: string;
+  quizQuestionZH: string;
+  quizAnswerDE: string;
+  quizAnswerZH: string;
+}
+
+export interface AttachedNoteData {
+  title: string;
+  fach: string;
+  feynmanSummaryZH: string;
+  methodSnippetZH: string;
+  klausurSatzbausteinDE: string;
+  operatoren: string[];
+  tags: string[];
+}
+
 export interface DistilledConcept {
   topicTitle: string;
   fach: string;
@@ -33,6 +87,13 @@ export interface DistilledConcept {
     questionZH: string;
     counterPerspectiveDE: string;
   }>;
+  // Study-Mate 趣味、易懂与搭载笔记字段
+  storyHook?: StoryHookData;
+  feynmanExplanation?: FeynmanExplanationData;
+  twoBrillen?: TwoBrillenData;
+  funFact?: FunFactData;
+  studyMateProbes?: StudyMateProbesData;
+  attachedNote?: AttachedNoteData;
 }
 
 interface DomainKnowledgeEntry {
@@ -1337,11 +1398,14 @@ export function distillConcept(title: string, fach: string, rawText?: string): D
 
     if (hit) {
       // Return a refined clone adapting to requested subject if reasonable
-      return {
-        ...entry.data,
-        topicTitle: cleanedTitle || entry.data.topicTitle,
-        fach: resolvedFach,
-      };
+      return enrichConceptWithStudyMateAndNotes(
+        {
+          ...entry.data,
+          topicTitle: cleanedTitle || entry.data.topicTitle,
+          fach: resolvedFach,
+        },
+        resolvedFach
+      );
     }
   }
 
@@ -1379,18 +1443,205 @@ export function distillConcept(title: string, fach: string, rawText?: string): D
   const musterSatz = archetype.musterSatzTemplate(topicName);
   const probes = archetype.socraticQuestions(topicName);
 
-  return {
-    topicTitle: topicName,
-    fach: resolvedFach,
-    mentalModelAnalogy: {
-      analogyTitle: archetype.defaultAnalogyTitle,
-      explanationDE: archetype.analogyTemplateDE(topicName),
-      explanationZH: archetype.analogyTemplateZH(topicName),
+  return enrichConceptWithStudyMateAndNotes(
+    {
+      topicTitle: topicName,
+      fach: resolvedFach,
+      mentalModelAnalogy: {
+        analogyTitle: archetype.defaultAnalogyTitle,
+        explanationDE: archetype.analogyTemplateDE(topicName),
+        explanationZH: archetype.analogyTemplateZH(topicName),
+      },
+      klpTermini: termini,
+      fehlerquellen: traps,
+      klausurSatz15NP: musterSatz,
+      socraticProbes: probes,
     },
-    klpTermini: termini,
-    fehlerquellen: traps,
-    klausurSatz15NP: musterSatz,
-    socraticProbes: probes,
+    resolvedFach
+  );
+}
+
+/**
+ * 赋予任意学科概念生动有趣的 Study-Mate 故事化剧情、费曼人话白话、两副眼镜辩证双轨、趣味历史轶事与搭载考纲笔记
+ */
+export function enrichConceptWithStudyMateAndNotes(
+  concept: DistilledConcept,
+  fach: string
+): DistilledConcept {
+  const normFach = fach.trim() || "SoWi";
+  const title = concept.topicTitle;
+
+  // 1. 剧情角色与战役情景 (Story Hook & Drama)
+  let storyHook: StoryHookData;
+  if (normFach.toLowerCase().includes("sowi")) {
+    storyHook = {
+      roleDE: "Wirtschaftsberater im Krisenrat",
+      roleZH: "市长直属经济改革规划委员",
+      scenarioDE: `Krise im Stadtrat: Vor der entscheidenden Freitagsabstimmung streiten Parteien und Interessengruppen ueber »${title}«. Finde die Balance zwischen Wettbewerb und sozialem Schutz!`,
+      scenarioZH: `虚拟城邦告急：市议会周五就 »${title}« 展开激辩，利益各方僵持不下。需要你厘清底层因果与制度传导机理，提出兼顾市场效率与社会兜底的破局方案！`,
+    };
+  } else if (normFach.toLowerCase().includes("philo")) {
+    storyHook = {
+      roleDE: "Chef-Justiziar im Ethischen Tribunal",
+      roleZH: "首席道德裁决官与思辨法官",
+      scenarioDE: `Ein moralisches Dilemma erschuettert das Gericht: Nutzenkalkuel prallt unversoehnlich auf Pflichtenethik rund um »${title}«. Faelle ein unanfechtbares Sach- und Werturteil!`,
+      scenarioZH: `伦理法庭上的激辩：当功利主义的快乐算盘遇上绝对尊严防线，围绕 »${title}« 的两难抉择亟待你以严密的第一性原理给出事实与价值评价！`,
+    };
+  } else if (normFach.toLowerCase().includes("deutsch")) {
+    storyHook = {
+      roleDE: "Dramaturgie-Analyst am Hoftheater",
+      roleZH: "魏玛戏剧解剖顾问与文学侦探",
+      scenarioDE: `Tragoedien-Premiere: Goethes Faust und Mephisto tragen den Widerstreit von Vernunft und Trieb aus. Seziere die rhetorische Dynamik von »${title}«!`,
+      scenarioZH: `浮士德走出书斋，悲剧与赌约序幕拉开：理智与深渊在 »${title}« 处碰撞。需要你化身文学侦探，解剖台词背后的狂飙突进精神与心智暗涌！`,
+    };
+  } else if (normFach.toLowerCase().includes("mathe")) {
+    storyHook = {
+      roleDE: "Flugbahn- und Tangenten-Ingenieur",
+      roleZH: "航天轨道与变率计算工程师",
+      scenarioDE: `Raketen-Telemetry meldet Kursabweichung: Durchschnittliche Differenzenquotienten genuegen nicht mehr. Bestimme die exakte lokale Aenderungsrate von »${title}«!`,
+      scenarioZH: `航天轨道遥测告急：平均变化率割线已无法应对瞬时加速度漂移！必须利用导数切线与极限工具求出 »${title}« 的精确瞬时变化率与极值！`,
+    };
+  } else {
+    storyHook = {
+      roleDE: "KLP-Chefanalyst der Fachkommission",
+      roleZH: "考纲学科核心研习领航员",
+      scenarioDE: `Forschungsauftrag: Entschluessle die Gesetzmaessigkeiten und Kausalstrukturen von »${title}« fuer die anstehende Klausurbewertung!`,
+      scenarioZH: `学术探究使命：深入解剖 »${title}« 的底层运行规律与因果网络，锁定北威州考场 15 NP 踩分关键！`,
+    };
+  }
+
+  // 2. 费曼大白话 (Feynman-Prinzip)
+  const feynmanSummaryZH = `【费曼大白话】不要被德语学术大词吓住：»${title}« 本质就是一句话——${concept.mentalModelAnalogy.explanationZH.slice(0, 100)}。`;
+  const feynmanSummaryDE = `In einfacher Sprache: »${title}« beschreibt im Kern: ${concept.mentalModelAnalogy.explanationDE.slice(0, 120)}.`;
+
+  // 3. 两副眼镜 / 辩证双轨对抗 (Zwei Brillen / Pro vs Contra)
+  let twoBrillen: TwoBrillenData;
+  if (normFach.toLowerCase().includes("sowi")) {
+    twoBrillen = {
+      perspectiveA: {
+        titleDE: "Markt-Brille (Effizienz & Preissignal)",
+        titleZH: "眼镜 A：市场派眼镜（效率与价格信号）",
+        corePointDE: "Vertrauen auf Wettbewerb und Preismechanismus. Preissignale lenken knappe Ressourcen zum hoechsten Nutzen.",
+        corePointZH: "信任竞争与价格机制。价格信号指示稀缺，激励创新与资源最优配置，国家当裁判不当球员。",
+      },
+      perspectiveB: {
+        titleDE: "Sozial-Brille (Schutz & Umverteilung)",
+        titleZH: "眼镜 B：社会派眼镜（兜底与公正再分配）",
+        corePointDE: "Sozialprinzip und Tarifautonomie. Der Staat muss Maerkte einhegen und Existenzrisiken sozial absichern.",
+        corePointZH: "坚持社会原则与劳资自治。防范马太效应与市场失灵，通过社保与二次分配织就生存安全网。",
+      },
+      synthesisDE: "Synthese nach KLP NRW: Soziale Marktwirtschaft verbindet Markt-Effizienz mit sozialem Ausgleich.",
+      synthesisZH: "北威州考纲综合评析：市场管效率，社会管兜底；自由是基石，干预须合宪且过比例原则审查。",
+    };
+  } else if (normFach.toLowerCase().includes("philo")) {
+    twoBrillen = {
+      perspectiveA: {
+        titleDE: "Utilitarismus (Nutzenkalkuel)",
+        titleZH: "眼镜 A：功利主义（快乐算盘与最大多数幸福）",
+        corePointDE: "Handlungen werden ausschliesslich nach ihren quantifizierbaren Folgen (Konsequenzenprinzip) bewertet.",
+        corePointZH: "只看行为的最终后果（目的论）：追求『最大多数人的最大幸福』，注重总体效用最大化。",
+      },
+      perspectiveB: {
+        titleDE: "Deontologie (Kants Kategorischer Imperativ)",
+        titleZH: "眼镜 B：康德定言命令（绝对义务与尊严防线）",
+        corePointDE: "Menschen sind niemals reines Mittel zum Zweck, sondern Zweck an sich. Das moralische Gesetz gilt bedingungslos.",
+        corePointZH: "人是目的而非手段（义务论）：道德律令具有绝对性，绝不能为了多数人的利益践踏个体的基本权利与尊严。",
+      },
+      synthesisDE: "Synthese nach KLP NRW: Fundierte Abwaegung zwischen Folgenverantwortung und unantastbarer Menschenwuerde.",
+      synthesisZH: "北威州考纲综合评析：严谨权衡后果责任与不可剥夺的人的尊严（GG Art. 1 I）。",
+    };
+  } else {
+    twoBrillen = {
+      perspectiveA: {
+        titleDE: "Funktional-mechanische Brille",
+        titleZH: "眼镜 A：内在机制与自发调节视角",
+        corePointDE: "Untersucht die direkten Kausalzusammenhaenge und internen Gesetzmaessigkeiten des Systems.",
+        corePointZH: "立足系统内在第一性原理，考察直接因果律与动态自发平衡。",
+      },
+      perspectiveB: {
+        titleDE: "Normativ-kritische Brille",
+        titleZH: "眼镜 B：外部约束与批判反思视角",
+        corePointDE: "Hinterfragt Randbedingungen, ethische Folgekosten und moegliche Systemfehler.",
+        corePointZH: "审视外部边界条件、社会伦理负外部性与潜在机制失效风险。",
+      },
+      synthesisDE: "Synthese nach KLP NRW: Verbindung von Sachurteil (wie es funktioniert) und Werturteil (wie es legitimiert wird).",
+      synthesisZH: "北威州考纲综合评析：将事实评价（运作机理）与价值评价（正当性论证）深度融合。",
+    };
+  }
+
+  // 4. 趣味历史轶事 / 冷知识 (Fun Fact & Anekdote)
+  let funFact: FunFactData;
+  if (normFach.toLowerCase().includes("sowi")) {
+    funFact = {
+      titleDE: "Erhard und die Schaufenster ueber Nacht (1948)",
+      titleZH: "1948 年艾哈德货币改革夜的橱窗奇迹",
+      factDE: "Bei der Waehrungsreform hob Ludwig Erhard eigenmaechtig fast alle Preisbindungen auf. Ueber Nacht waren die vorher leeren Geschaefte voll! Auf Vorwuerfe der Alliierten antwortete er trocken: 'Ich habe die Vorschriften nicht aufgehoben, ich habe sie nur nicht wieder eingefuehrt!'",
+      factZH: "1948 年货币改革时，艾哈德取消了几乎所有价格管制。此前空空如也的橱窗一夜摆满商品！面对盟军军官的质问，他幽默回应：『我没有取消配给管制，我只是没有重新引入它！』",
+    };
+  } else if (normFach.toLowerCase().includes("philo")) {
+    funFact = {
+      titleDE: "Kants praeziser Spaziergang in Koenigsberg",
+      titleZH: "康德的散步与卢梭《爱弥儿》之约",
+      factDE: "Immanuel Kant lebte so pünktlich, dass die Koenigsberger ihre Uhren nach seinem taeglichen Nachmittagsspaziergang stellten. Ein einziges Mal kam er zu spaet: Er hatte sich in Jean-Jacques Rousseaus Roman 'Emile' vertieft!",
+      factZH: "康德生活作息极其严苛精准，以至于柯尼斯堡市民都以他下午散步的时间来校准家里的钟表。他一生唯一一次散步迟到，是因为读卢梭的《爱弥儿》入了迷！",
+    };
+  } else if (normFach.toLowerCase().includes("deutsch")) {
+    funFact = {
+      titleDE: "60 Jahre Lebenswerk an einem Drama",
+      titleZH: "一部写了整整 60 年的宇宙级长卷",
+      factDE: "Goethe begann die Arbeit an Faust mit 24 Jahren (Urfaust) und versiegelte das Manuskript von Faust II erst mit 82 Jahren kurz vor seinem Tod im Jahr 1832!",
+      factZH: "歌德从 24 岁的年轻狂飙青年（写下《少年维特之烦恼》与《浮士德初稿》），一直写到 82 岁临终前几个月才封箱《浮士德第二部》，倾注了整整 60 年的人生顿悟！",
+    };
+  } else if (normFach.toLowerCase().includes("mathe")) {
+    funFact = {
+      titleDE: "Der Prioritaetsstreit um das Integral- und Differenzialzeichen",
+      titleZH: "微积分记号的世纪之争",
+      factDE: "Newton erfand die Infinitesimalrechnung mit Punkten ueber Variablen, doch Leibniz schuf die intuitiven Symbole dx und das Integralzeichen (ein langgezogenes S fuer Summa), die wir heute weltweit nutzen!",
+      factZH: "牛顿和莱布尼茨各自独立发明了微积分。但莱布尼茨创造的 dy/dx 导数记号与拉长版 S（拉丁语求和 Summa）积分号 ∫，因为太优雅直观而成为了今天全世界通用的数学语言！",
+    };
+  } else {
+    funFact = {
+      titleDE: "Anekdote aus der Wissenschaftsgeschichte",
+      titleZH: "学术史上的顿悟时刻",
+      factDE: "Grosse Theorien entstanden selten am Schreibtisch, sondern oft durch scheinbar banale Alltagsbeobachtungen, die etablierte Dogmen infrage stellten.",
+      factZH: "在科学与思想史上，颠覆性理论往往不是诞生在刻板的教条中，而是源于对日常反常现象的不懈追问与第一性原理思辨。",
+    };
+  }
+
+  // 5. Study-Mate 三维自适应调频探针 (Probes)
+  const studyMateProbes: StudyMateProbesData = {
+    simplerHintZH: `[这里没懂·费曼降维生活比喻]：不要害怕学术长难句！把它想象成现实生活：${concept.mentalModelAnalogy.analogyTitle}。${concept.mentalModelAnalogy.explanationZH.slice(0, 150)}`,
+    simplerHintDE: `[Erklär's einfacher]: Denk an das Bild »${concept.mentalModelAnalogy.analogyTitle}«: ${concept.mentalModelAnalogy.explanationDE.slice(0, 160)}`,
+    deeperChallengeZH: `[太简单了·极客反例与边界质问]：如果系统受到不可逆极端冲击，原有的核心假设失效，系统会如何产生副作用？试用德语提炼一条包含限制条件（unter der Bedingung, dass...）的批判性论据！`,
+    deeperChallengeDE: `[Mehr Tiefe · Extremfall & Kritik]: Was passiert bei extremen asymmetrischen Schocks? Welche unerwuenschten Folgekosten entstehen, und wie lautet deine kriterienorientierte Kritik?`,
+    quizQuestionZH: `[考考我·现场高频考点快问]：在论述 »${title}« 时，阅卷老师最常扣分的陷阱（Fehlerfalle）是什么？`,
+    quizQuestionDE: `[Prüf mich · Schnell-Check]: Was ist der typische Fehler in Oberstufen-Klausuren zu »${title}«?`,
+    quizAnswerZH: `[答案揭秘]：${concept.fehlerquellen[0]?.trapDescriptionZH || "混淆因果机制与表面相关，未加论证就妄下结论。"} 防范策略：${concept.fehlerquellen[0]?.howToAvoidDE || "严格区分前提、传导链与系统效应！"}`,
+    quizAnswerDE: `[Musterloesung]: ${concept.fehlerquellen[0]?.howToAvoidDE || "Stets Kausalkette und konkrete Kriterien nennen."}`,
+  };
+
+  // 6. 搭载专属考纲知识笔记 (Attached Note)
+  const attachedNote: AttachedNoteData = {
+    title,
+    fach: normFach,
+    feynmanSummaryZH: `【费曼白话】${concept.mentalModelAnalogy.explanationZH.slice(0, 130)}`,
+    methodSnippetZH: `【会考三步法】1. 定性并界定考纲核心术语（AFB I）-> 2. 严密还原因果传导机制（AFB II）-> 3. 权衡事实与价值并给出明确结论（AFB III）。`,
+    klausurSatzbausteinDE: concept.klausurSatz15NP.musterSatzDE,
+    operatoren: [concept.klausurSatz15NP.operator || "analysieren", "beurteilen", "darstellen"],
+    tags: ["EF", normFach, "KLP-NRW", "Wissensnotiz"],
+  };
+
+  return {
+    ...concept,
+    storyHook: concept.storyHook || storyHook,
+    feynmanExplanation: concept.feynmanExplanation || {
+      summaryZH: feynmanSummaryZH,
+      summaryDE: feynmanSummaryDE,
+    },
+    twoBrillen: concept.twoBrillen || twoBrillen,
+    funFact: concept.funFact || funFact,
+    studyMateProbes: concept.studyMateProbes || studyMateProbes,
+    attachedNote: concept.attachedNote || attachedNote,
   };
 }
 
