@@ -1,0 +1,172 @@
+import { describe, it, expect } from "vitest";
+import {
+  distillConcept,
+  listSupportedPreloadedTopics,
+  type DistilledConcept,
+} from "./conceptDistiller";
+
+describe("Concept Distillation Engine: conceptDistiller", () => {
+  const allowedOperators = ["analysieren", "darstellen", "beurteilen", "eroertern"] as const;
+
+  function validateDistilledConcept(res: DistilledConcept) {
+    expect(res.topicTitle).toBeTruthy();
+    expect(res.fach).toBeTruthy();
+
+    // Analogy
+    expect(res.mentalModelAnalogy.analogyTitle).toBeTruthy();
+    expect(res.mentalModelAnalogy.explanationDE).toBeTruthy();
+    expect(res.mentalModelAnalogy.explanationZH).toBeTruthy();
+
+    // KLP Termini
+    expect(res.klpTermini.length).toBeGreaterThanOrEqual(2);
+    for (const t of res.klpTermini) {
+      expect(t.termDE).toBeTruthy();
+      expect(t.definitionDE).toBeTruthy();
+      expect(t.termZH).toBeTruthy();
+      expect(t.definitionZH).toBeTruthy();
+    }
+
+    // Fehlerquellen
+    expect(res.fehlerquellen.length).toBeGreaterThanOrEqual(2);
+    for (const f of res.fehlerquellen) {
+      expect(f.trapTitleDE).toBeTruthy();
+      expect(f.trapDescriptionDE).toBeTruthy();
+      expect(f.trapDescriptionZH).toBeTruthy();
+      expect(f.howToAvoidDE).toBeTruthy();
+    }
+
+    // 15NP Klausursatz
+    expect(res.klausurSatz15NP.musterSatzDE).toBeTruthy();
+    expect(allowedOperators).toContain(res.klausurSatz15NP.operator);
+    expect(res.klausurSatz15NP.scoringKeywords.length).toBeGreaterThanOrEqual(3);
+    expect(res.klausurSatz15NP.explanationZH).toBeTruthy();
+
+    // Socratic Probes
+    expect(res.socraticProbes.length).toBeGreaterThanOrEqual(2);
+    for (const p of res.socraticProbes) {
+      expect(p.questionDE).toBeTruthy();
+      expect(p.questionZH).toBeTruthy();
+      expect(p.counterPerspectiveDE).toBeTruthy();
+    }
+  }
+
+  it("lists supported preloaded canonical topics", () => {
+    const list = listSupportedPreloadedTopics();
+    expect(list.length).toBeGreaterThanOrEqual(9);
+  });
+
+  it("distills Wahlsystem / Bundestag (SoWi) from key words", () => {
+    const res = distillConcept("Kapitel 2: Bundestagswahl und Erststimme vs Zweitstimme", "SoWi");
+    validateDistilledConcept(res);
+    expect(res.fach).toBe("SoWi");
+    expect(res.mentalModelAnalogy.analogyTitle).toContain("Saalbestuhlung");
+    expect(res.klpTermini.some((k) => k.termDE.includes("Personalisierte Verhaeltniswahl"))).toBe(true);
+    expect(res.fehlerquellen.some((f) => f.trapTitleDE.includes("Erststimme"))).toBe(true);
+  });
+
+  it("distills Rawls / Schleier des Nichtwissens (Philosophie)", () => {
+    const res = distillConcept("Rawls Gerechtigkeitstheorie: Der Urzustand und der Schleier des Nichtwissens", "Philosophie");
+    validateDistilledConcept(res);
+    expect(res.mentalModelAnalogy.analogyTitle).toContain("Kuchenschneiden");
+    expect(res.klausurSatz15NP.operator).toBe("beurteilen");
+    expect(res.klpTermini.some((k) => k.termDE.includes("Differenzprinzip"))).toBe(true);
+  });
+
+  it("distills Magisches Viereck / StabG (SoWi)", () => {
+    const res = distillConcept("Wirtschaftspolitische Ziele: Das Magische Viereck", "SoWi");
+    validateDistilledConcept(res);
+    expect(res.mentalModelAnalogy.analogyTitle).toContain("Trampolin");
+    expect(res.klausurSatz15NP.operator).toBe("eroertern");
+    expect(res.klausurSatz15NP.scoringKeywords).toContain("Phillips-Kurve");
+  });
+
+  it("distills Gini-Koeffizient & Lorenz-Kurve (SoWi)", () => {
+    const res = distillConcept("Einkommens- und Vermoegensverteilung: Gini-Koeffizient und Lorenz-Kurve", "SoWi");
+    validateDistilledConcept(res);
+    expect(res.mentalModelAnalogy.analogyTitle).toContain("Bananen-Bauch");
+    expect(res.klpTermini.some((k) => k.termDE.includes("Lorenz-Kurve"))).toBe(true);
+  });
+
+  it("distills Immanuel Kant: Kategorischer Imperativ (Philosophie)", () => {
+    const res = distillConcept("Kants Pflichtethik: Der Kategorische Imperativ", "Philosophie");
+    validateDistilledConcept(res);
+    expect(res.mentalModelAnalogy.analogyTitle).toContain("Gesetzes-Stresstest");
+    expect(res.klausurSatz15NP.operator).toBe("darstellen");
+    expect(res.fehlerquellen.some((f) => f.trapTitleDE.includes("Goldenen Regel"))).toBe(true);
+  });
+
+  it("distills Utilitarismus: Bentham & Mill (Philosophie)", () => {
+    const res = distillConcept("Klassischer Utilitarismus: Bentham und das hedonistische Kalkuel", "Philosophie");
+    validateDistilledConcept(res);
+    expect(res.mentalModelAnalogy.analogyTitle).toContain("Gluecks-Buchhaltung");
+    expect(res.klausurSatz15NP.operator).toBe("beurteilen");
+  });
+
+  it("distills Sachtextanalyse & Toulmin-Modell (Deutsch)", () => {
+    const res = distillConcept("Sachtextanalyse und Argumentationsstruktur nach Toulmin", "Deutsch");
+    validateDistilledConcept(res);
+    expect(res.mentalModelAnalogy.analogyTitle).toContain("Statik eines Textes");
+    expect(res.klausurSatz15NP.operator).toBe("analysieren");
+  });
+
+  it("distills Differentialrechnung: Tangente & Ableitung (Mathe)", () => {
+    const res = distillConcept("Einfuehrung der Ableitung: Differenzenquotient und Tangentensteigung", "Mathe");
+    validateDistilledConcept(res);
+    expect(res.mentalModelAnalogy.analogyTitle).toContain("Tachometer");
+    expect(res.klausurSatz15NP.operator).toBe("darstellen");
+  });
+
+  it("distills Energieerhaltungssatz & Dissipation (Physik)", () => {
+    const res = distillConcept("Mechanische Energie und der Energieerhaltungssatz", "Physik");
+    validateDistilledConcept(res);
+    expect(res.mentalModelAnalogy.analogyTitle).toContain("Universums-Bankkonto");
+    expect(res.klausurSatz15NP.operator).toBe("analysieren");
+  });
+
+  it("handles arbitrary topics gracefully via heuristic subject archetypes", () => {
+    const arbitrarySoWi = distillConcept("Europaeische Zentralbank und Leitzinssenkung", "SoWi");
+    validateDistilledConcept(arbitrarySoWi);
+    expect(arbitrarySoWi.fach).toBe("SoWi");
+    expect(arbitrarySoWi.topicTitle).toBe("Europaeische Zentralbank und Leitzinssenkung");
+
+    const arbitraryPhilo = distillConcept("Das Leib-Seele-Problem und der Dualismus", "Philosophie");
+    validateDistilledConcept(arbitraryPhilo);
+    expect(arbitraryPhilo.fach).toBe("Philosophie");
+    expect(arbitraryPhilo.klausurSatz15NP.operator).toBe("beurteilen");
+
+    const arbitraryDeutsch = distillConcept("Gedichtanalyse Expressionismus Grossstadtlyrik", "Deutsch");
+    validateDistilledConcept(arbitraryDeutsch);
+    expect(arbitraryDeutsch.fach).toBe("Deutsch");
+
+    const arbitraryMathe = distillConcept("Lineare Gleichungssysteme und Gau-Verfahren", "Mathe");
+    validateDistilledConcept(arbitraryMathe);
+    expect(arbitraryMathe.fach).toBe("Mathe");
+
+    const arbitraryPhysik = distillConcept("Optische Brechung am Prisma und Dispersion", "Physik");
+    validateDistilledConcept(arbitraryPhysik);
+    expect(arbitraryPhysik.fach).toBe("Physik");
+  });
+
+  it("verifies clean text rules (no emojis or forbidden unicode arrows)", () => {
+    const topicsToTest = [
+      "Bundestagswahl",
+      "Rawls",
+      "Magisches Viereck",
+      "Gini-Koeffizient",
+      "Kategorischer Imperativ",
+      "Utilitarismus",
+      "Toulmin",
+      "Tangente",
+      "Energieerhaltung",
+      "Unbekanntes Thema X",
+    ];
+
+    const forbiddenCharRegex = /[\uD800-\uDFFF\u2190-\u2199\u27A1\u2794\u279C\u279D\u279E\u279F\u2B05-\u2B07\u2B95]/;
+
+    for (const t of topicsToTest) {
+      const res = distillConcept(t, "SoWi");
+      const serialized = JSON.stringify(res);
+      expect(forbiddenCharRegex.test(serialized)).toBe(false);
+    }
+  });
+});

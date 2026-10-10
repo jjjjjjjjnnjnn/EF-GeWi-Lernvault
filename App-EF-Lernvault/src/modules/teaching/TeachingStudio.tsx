@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { BookIngestWorkshopTab } from "./tabs/BookIngestWorkshopTab";
+import { MicroWorldGalleryTab } from "./tabs/MicroWorldGalleryTab";
 import type { ParsedBookStructure } from "./engine/bookIngestParser";
 import type { PacingPlan } from "./engine/pacingPlanner";
 
@@ -149,25 +150,10 @@ export const TeachingStudio: React.FC<TeachingStudioProps> = ({
         )}
 
         {activeTab === "labor" && (
-          <div className="border border-[var(--line)] p-8 text-center flex flex-col items-center gap-3 bg-[var(--paper-subtle)]">
-            <h3 className="text-sm font-bold font-mono">
-              {lang === "de" ? "Mikrowelten-Laboratorium (Phase 4.1)" : "微世界与仿真教具总台 (Phase 4.1)"}
-            </h3>
-            <p className="text-xs text-[var(--ink-muted)] max-w-md font-mono leading-relaxed">
-              {lang === "de"
-                ? "24 native interaktive SVG-Werkzeuge sowie 4 generische Baukästen (Schieberegler, Waage, Logikbausteine, Entscheidungsbaum)."
-                : "24 款纯 SVG 高性能原生教具与 4 款通用可动微世界模板（因果滑块、价值天平、逻辑积木、决策树）。"}
-            </p>
-            {onNavigateToTab && (
-              <button
-                type="button"
-                onClick={() => onNavigateToTab("labor")}
-                className="mt-2 text-xs font-mono px-3 py-1.5 border border-[var(--line)] bg-[var(--paper)] hover:border-[var(--ink)] cursor-pointer"
-              >
-                {lang === "de" ? "Zum Labor-Modul ->" : "前往现存仿真实验室 ->"}
-              </button>
-            )}
-          </div>
+          <MicroWorldGalleryTab
+            lang={lang}
+            onNavigateToTab={onNavigateToTab}
+          />
         )}
       </div>
     </div>
