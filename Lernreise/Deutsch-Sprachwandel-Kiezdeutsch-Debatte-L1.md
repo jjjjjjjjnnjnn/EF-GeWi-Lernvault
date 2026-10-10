@@ -8,11 +8,12 @@ operatoren: [analysieren, interpretieren, erortern]
 klausurrelevant: true
 datum: 2026-09-26
 tags: [EF, Deutsch, Sprachwandel]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 # Lernreise: Sprachwandel und Kiezdeutsch-Debatte (L1, Ziel Klausur)
 
 <!-- Campaign: Detektive Fal 24 -->
+
 ## Schritt 1 — entdecken: Der versiegelte Umschlag zur Sache
 
 ZIELE (3 Ziele, nach 15 Minuten erreichbar):
@@ -26,6 +27,9 @@ HOOK:
 Auf dem Schulhof urteilen zwei Lager ueber einen Satz. Die Linguistik misst statt zu moralisieren. **System** gegen **Gefuehl** eroeffnet die Debatte. Ein Aufnahmegerät entscheidet, was Regel und was Vorurteil ist.
 
 Variante B verlegt die Debatte in die Klassengruppe mit Sprachnachrichten und vergleicht Ton gegen Transkript.
+
+- [Station A] Wenn du zuerst die Form misst (Wegfall, Partikel), verfolge in Schritt 4/5 die Nahspur.
+- [Station B] Wenn du zuerst die Debatte wiegst (Norm, Teilhabe), verfolge in Schritt 4/5 die Fernspur.
 
 Klausur-Satz: `Regel schlaegt Fehler; Zugehoerigkeit ist Funktion.`
 
@@ -67,13 +71,25 @@ Bezug zum Konzept: `Beleg plus Massstab ergibt Urteil.`
 
 [Werkzeug: oral-timer]
 
-AUFGABE: Sammle drei Hof-Belege, pruefe sie auf Regel und bilde je einen Pro- und Contra-Satz.
+AUFGABE: Untersuche drei Hof-Belege auf Regelmaessigkeit und bilde je einen Pro- und Contra-Satz. [AFB II]
 TARGET: Drei Hof-Belege mit Regelpruefung, je mit Thesen-Test und Massstabsbezug in vier Saetzen.
 
 HILFE:
-1. Schritt 1: Ordne den Fall in zwei Saetzen ein.
-2. Schritt 2: Sichere zwei Bausteine mit Beleg.
-3. Schritt 3: Deute Baustein und Funktion im Fallganzen.
+- Formdimension: Pruefe Form- und Prosodie-Signale mit Regelanalyse; benenne nur die Form, deute ihre Funktion noch nicht.
+- Pragmatische Dimension: Pruefe Sprechergruppe und Situation mit Situationsanalyse; sammle Sprecher, Adressat und Ziel, ohne das Urteil vorwegzunehmen.
+- Bilddimension: Pruefe Normwoerter und Zugehoerigkeitsmarker mit Normwortanalyse; notiere Bildspender und Wirkung, ohne die Deutung zu setzen.
+
+COMPLETION (Lückentext):
+- Lies beide Saetze und ergaenze aus dem Gedaechtnis, ohne zurueckzublaettern:
+- Kiezdeutsch ist ___ statt Fehler.
+- Das Debattenurteil misst ___ statt Moral.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Hof-Belege mit Kontext | 5 NP | Enger Beleg mit Zeile als Alternativweg
+Systempruefung und Thesen-Test | 5 NP | Beleg-Tabelle als Alternativweg
+Massstabsurteil mit Massnahme | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
 
 MUSTERLOESUNG: Der Fall 24 zeigt das Verfahren in drei Schritten. Erstens sichert ein Beleg den Kern. Zweitens traegt die Funktion die Wirkung. Drittens schliesst die Deutung das Urteil.
 
@@ -81,12 +97,22 @@ Klausur-Satz: `Je moralischer der Ton, desto genauer die Stichprobe.`
 
 ## Schritt 5 — ausprobieren: Das doppelte Spiel Weg A gegen Weg B
 
-VERGLEICH: Weg A arbeitet mikroskopisch (Detail, Beleg, Form), Weg B plant makroskopisch (Strategie, Kontext, Gewicht).
+VERGLEICH: Weg A (Nahspur: Form, Beleg, Regel) vs Weg B (Fernspur: Normgeschichte, Medienlogik, Teilhabe).
+- [Weg A] Wenn du Weg A waehlst, arbeitest du in Schritt 7 vor allem mit Nahbelegen und Zeilen.
+- [Weg B] Wenn du Weg B waehlst, arbeitest du in Schritt 7 vor allem mit Fernkontext und Ordnung.
 
 AUFGABE A: Welche Spur verlangt Weg A? Begruende mit Beleg.
 AUFGABE B: Welche Frage verlangt Weg B? Begruende mit Kontext.
 
-HILFE: A fragt nach Form und Naehe, also Weg A. B fragt nach Rolle und Ganzem, also Weg B.
+HILFE: Pruefe dimensionsgeleitet, welcher Weg passt: Formdimension (Regelanalyse) spricht fuer Naehe und Weg A; Kontextdimension (Situationsanalyse) spricht fuer Ordnung und Weg B; Bilddimension (Normwortanalyse) sichert beide Wege. Ordne selbst zu; die Zuordnung wird nicht vorweggenommen.
+
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg A oder Weg B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Ueberfuehrt aus VERGLEICH (Vorwahl-Fassung): VERGLEICH: Weg A arbeitet mikroskopisch (Detail, Beleg, Form), Weg B plant makroskopisch (Strategie, Kontext, Gewicht).
+- Ueberfuehrt aus Schritt-5-HILFE (Vorwahl-Fassung): HILFE: A fragt nach Form und Naehe, also Weg A. B fragt nach Rolle und Ganzem, also Weg B.
+- Mechanismus A: ANTWORT A: Weg A analysiert mikroskopisch Formen: Artikel-Wegfall, Partikeln und Prosodie mit Beleg. Dreischritt: Beleg = Einordnung der Debattenlage | Mittel = Regel- und Thesenpruefung | Funktion = Urteil mit Teilhabefolge
+- Mechanismus B: ANTWORT B: Weg B deutet makroskopisch Debatte: Medienlogik, Normgeschichte und Teilhabefolgen als Rahmen. Dreischritt: Beleg = Einordnung der Debattenlage | Mittel = Regel- und Thesenpruefung | Funktion = Urteil mit Teilhabefolge
+- Ein-Satz-Kern: Regelbeleg plus Massstab schlaegt jede Empoerung.
 
 ANTWORT A: Weg A analysiert mikroskopisch Formen: Artikel-Wegfall, Partikeln und Prosodie mit Beleg.
 ANTWORT B: Weg B deutet makroskopisch Debatte: Medienlogik, Normgeschichte und Teilhabefolgen als Rahmen.
@@ -114,11 +140,24 @@ Klausur-Satz: `Register misst Zugehoerigkeit, nicht Klugheit.`
 
 ROLLE: Du bist Debattenleiter der Podiumsdiskussion in der Pruefung.
 SITUATION: Ein Fall liegt unbearbeitet auf dem Tisch und verlangt Einordnung, Belege und Urteil.
-AUFGABE: Verfasse circa 150 Woerter mit Einordnung, zwei Belegen, Funktion, Deutung und Schlussurteil.
+AUFGABE: Gestalte einen Klausurtext (circa 150 Woerter, [AFB III]) mit Einordnung, zwei Belegen, Funktion, Deutung und Schlussurteil.
 ZEIT: 25 Minuten (5 Sammeln, 12 Regel-Schreiben, 8 Massstab-Pruefung).
 RUBRIC (30 XP): Einordnung korrekt (6 XP) | Zwei Belege (10 XP) | Funktion plus Deutung (10 XP) | Fachsprache und Schluss (4 XP).
 
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Einordnung der Debattenlage | 5 NP | Enger Beleg mit Zeile als Alternativweg
+Regel- und Thesenpruefung | 5 NP | Massstabsliste als Alternativweg
+Urteil mit Teilhabefolge | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
+
 Klausur-Satz: `AFB-III-Satz braucht Regelbeleg, staerksten Einwand und Massstabsurteil.`
+
+KERNSATZ (auswendig):
+- Kernsatz: `Beleg plus Massstab ergibt Urteil.`
+- Zerlegung: Beleg | Mittel | Funktion
+- Aufschluesselung: Beleg = Hof-Beleg mit Kontext | Mittel = Systempruefung mit Thesen-Test | Funktion = Massstabsurteil mit Teilhabefolge
+- Selbsttest: Beleg plus ___ ergibt Urteil.
 
 ## Schritt 8 — reflexion: Takeaway und Rueckblick aus Fall 24
 

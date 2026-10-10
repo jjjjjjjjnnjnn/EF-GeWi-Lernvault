@@ -8,7 +8,7 @@ operatoren: [darstellen, analysieren, deuten]
 klausurrelevant: true
 datum: 2026-10-03
 tags: [EF, Deutsch, Drama, Dramenanalyse]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Dramenanalyse: Freytags Pyramide und Spannungsaufbau (L1, Ziel Klausur)
@@ -18,7 +18,7 @@ version: Lesson-v3
 ## Schritt 1 — entdecken: Die Anatomie des dramatischen Nervenkitzels
 ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
-1. 中文：能清晰画出并说出弗赖塔格五幕戏剧金字塔（Freytags Pyramide）的五个核心结构段落及三大催化节点（Erregendes Moment $\to$ Peripetie $\to$ Retardierendes Moment）。
+1. 中文：能清晰画出并说出弗赖塔格五幕戏剧金字塔（Freytags Pyramide）的五个核心结构段落及三大催化节点（Erregendes Moment -> Peripetie -> Retardierendes Moment）。
 2. 中文：能精准区分亚里士多德封闭式古典戏剧（Geschlossenes Drama，三一律）与现代开放式戏剧（Offenes Drama，如 Büchner《Woyzeck》）的张力建构逻辑。
 3. 中文：能在戏剧场景分析（Szenenanalyse）中准确定位某一段对话在全剧张力网中的功能，并运用高分句式写出 AFB II/III 德语分析（AFB II）。
 
@@ -28,10 +28,13 @@ ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
 Hook / Phaenomen: Egal ob in Goethes "Faust", Schillers "Kabale und Liebe" oder in modernen Netflix-Serien wie "Breaking Bad": Die Handlung folgt einer fast schon unheimlich praezisen Mechanik der emotionalen Achterbahn. 1863 dekodierte der Literaturwissenschaftler Gustav Freytag diese Blaupause als das beruehmteste Dreieck der Theatergeschichte: **Freytags Pyramide**. Wer ihre Schluesselmomente versteht, kann jede Dramenszene in der Klausur in Sekundenschnelle formal und funktional einordnen!
 
+- [Station A] Wenn dich die Pyramide ordnet (Akt, Wende), verortest du in Schritt 6 geschlossen.
+- [Station B] Wenn dich der Bruch reizt (Buechner, Stationen), deutest du in Schritt 6 gegen die Pyramide.
+
 `Klausur-Satz: Freytags Pyramide modelliert den idealtypischen fuenfaktigen Spannungsverlauf des geschlossenen klassischen Dramas von der Exposition ueber den Hoehepunkt bis zur unausweichlichen Katastrophe.`
 
 ## Schritt 2 — entdecken: Ausruestungskiste der Dramaturgie
-PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
+PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文->德语，Evidenz：pretraining降认知负荷）：
 
 中文在上，德语在下：
 
@@ -71,7 +74,7 @@ Spannung ^
          +-------------------------------------------------------------> Zeit t
 ```
 
-$$\text{Dramatische Kurve: } \text{Ruhe} \to \text{Erregung} \to \text{Peak (Klimax)} \to \text{Verzoegerung} \to \text{Loesung}$$
+$$\text{Dramatische Kurve: } \text{Ruhe} -> \text{Erregung} -> \text{Peak (Klimax)} -> \text{Verzoegerung} -> \text{Loesung}$$
 `Klausur-Satz: Die Symmetrie von Freytags Pyramide gewaehrleistet eine kontinuierliche Spannungssteigerung und anschliessende dramaturgische Fokussierung auf das tragische Scheitern.`
 
 ## Anekdote & Fun-Fact
@@ -89,14 +92,26 @@ BEISPIEL（正确例题示范，含教具操作与解答）：
 
 [Werkzeug: text-analyse]
 
-AUFGABE (analysieren & deuten, AFB II)：In einer Klausur erhalten Sie eine Szene aus Schillers Trauerspiel "Kabale und Liebe": Ferdinand und Luise sprechen im Zimmer des Musikers Miller ueber ihre Liebe. Ferdinand schlaegt die gemeinsame Flucht vor, doch Luise zoegert wegen ihrer familiaeren und religioesen Pflichten (Akt III, Szene 4).
+AUFGABE (analysieren, [AFB II])：Analysiere die Szene aus Schillers Trauerspiel Kabale und Liebe (Akt III, Szene 4) und ordne sie in Freytags Pyramide ein. Gegeben ist eine Szene aus Schillers Trauerspiel "Kabale und Liebe": Ferdinand und Luise sprechen im Zimmer des Musikers Miller ueber ihre Liebe. Ferdinand schlaegt die gemeinsame Flucht vor, doch Luise zoegert wegen ihrer familiaeren und religioesen Pflichten (Akt III, Szene 4).
 1. Ordnen Sie die Szene in den Handlungsverlauf nach Freytags Pyramide ein. (10 BE)
 2. Analysieren Sie die dramaturgische Funktion der Szene fuer die Beschleunigung der Tragik. (20 BE)
 
 HILFE:
-1. Schritt 1: Lokalisierung im Akt: Akt III ist der Gipfelakt; nach Wurms Erpressungsplan (Akt III, Szene 1) spitzt sich der Konflikt zwischen Ferdinands absolutem Liebesanspruch und Luises Pflichtbewusstsein zu.
-2. Schritt 2: Peripetie identifizieren: Luises Weigerung zu fliehen laesst Ferdinands Eifersucht kippen $\implies$ Umschlag von Hoffnung in toedliches Misstrauen.
-3. Schritt 3: Funktionsbestimmung fuer den weiteren Fortgang formulieren.
+- Formdimension: Pruefe Akt-, Wende- und Temposignale mit Aktanalyse; benenne nur die Form, deute ihre Funktion noch nicht.
+- Pragmatische Dimension: Pruefe Figurenwissen und Publikumsinformation mit Wissensgefälle-Analyse; sammle Sprecher, Adressat und Ziel, ohne das Urteil vorwegzunehmen.
+- Bilddimension: Pruefe Fallhoehen- und Hoffnungsmotive mit Spannungsbildanalyse; notiere Bildspender und Wirkung, ohne die Deutung zu setzen.
+
+COMPLETION (Lückentext):
+- Lies beide Saetze und ergaenze aus dem Gedaechtnis, ohne zurueckzublaettern:
+- Der III. Akt traegt ___ des Schicksals.
+- Der IV. Akt taeuscht Hoffnung durch ___ vor.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Szene mit Akt-Verortung | 5 NP | Enger Beleg mit Zeile als Alternativweg
+Beschleunigung der Tragik | 5 NP | Pyramiden-Skizze als Alternativweg
+Peripetie-Nachweis | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
 
 MUSTERLÖSUNG:
 1. Verortung in Freytags Pyramide: Die Szene befindet sich im III. Akt und bildet den unmittelbaren Uebergang zum dramatischen Hoehepunkt (Klimax) und Schicksalsumschlag (Peripetie). Waehrend der I. und II. Akt die staendische Kluft (Exposition) und Wurms Intrigenplan (erregendes Moment und steigende Handlung) etablierten, kollidieren hier im Zentrum des Werkes die beiden Liebenden direkt.
@@ -119,20 +134,38 @@ VERGLEICH: Geschlossenes Drama (Klassik) vs. Offenes Drama (Moderne)
   - Sprache: Alltags- und Vulgarsprache, Gestammel, Sprachlosigkeit, Dialekt.
   - Figuren: Unterschicht, Determiniertheit durch soziale und biologische Zwaenge.
 
+- [Wahl A] Wenn du Form A (geschlossenes Drama) waehlst, verortest du in Schritt 6 mit der Pyramide.
+- [Wahl B] Wenn du Form B (offenes Drama) waehlst, deutest du in Schritt 6 gegen die Pyramide.
+
 Entscheidungsregel fuer die Klausur:
 Wird ein Text von Georg Büchner ("Woyzeck") analysiert, Freytags Pyramide niemals unkritisch ueberstuelpen, sondern explizit als Gegenfolie nutzen, um den Bruch mit der klassischen Form herauszuarbeiten!
+
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Position A oder B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Mechanismus A: Geschlossenes Drama: Pyramide, Einheiten und Blankvers als Ordnung (Quelle: Schiller und Lessing, Schritt-5-Bestand). Dreischritt: Beleg = Inhaltsdarstellung mit Einordnung | Mittel = Sprach- und Machtanalyse mit Freytag-Bezug | Funktion = Urteil zur Pakt-Funktion
+- Mechanismus B: Offenes Drama: Stationen, Dialekt und Formbruch als Gegenmodell (Quelle: Buechner, Woyzeck, Studienparaphrase). Dreischritt: Beleg = Inhaltsdarstellung mit Einordnung | Mittel = Sprach- und Machtanalyse mit Freytag-Bezug | Funktion = Urteil zur Pakt-Funktion
+- Ein-Satz-Kern: Hoffnung im IV. Akt erhoeht den Fall in den V. Akt.
 
 ## Schritt 6 — check: Klausur-Transfer Szenenanalyse
 PRÜFUNGSSZENARIO (KLP NRW Deutsch EF Inhaltsfeld 2: Texte):
 
-AUFGABENSTELLUNG ZUR KLAUSUR (Szenenanalyse im Drama):
+AUFGABENSTELLUNG ZUR KLAUSUR (Szenenanalyse im Drama) [AFB I/II]:
 "Analysieren Sie den Dialog zwischen Faust und Mephisto im Studierzimmer (Goethe, Faust I, V. 1692–1711: Der Pakt).
 1. Stellen Sie den Inhalt der Szene knapp dar und ordnen Sie sie in den dramatischen Handlungsverlauf ein. (12 BE)
 2. Analysieren Sie die sprachliche Gestaltung und die Machtverteilung im Dialog unter Beruecksichtigung von Freytags Modell. (18 BE)"
 
-ERWARTUNGSHORIZONT:
-- AFB I/II (Einordnung): Szene gehoert zum I. Akt (Gelehrtentragoedie) und fungiert als erweitertes **erregendes Moment** der Gelehrtentragoedie, das den Umschlag von Fausts lebensmueder Depression in die aktive Welterkundung einleitet.
-- AFB II (Sprach- und Machtanalyse): Faust dominiert zunaechst durch schroffe Ablehnung bürgerlicher Freuden; Mephisto kontert mit psychologischer Verfuehrung. Der eigentliche Pakt ("Werd ich zum Augenblicke sagen: Verweile doch! du bist so schoen!") verkehrt die traditionelle Teufelsverschreibung in eine Wette. Dramaturgisch setzt dieser Vertragsschluss die gesamte nachfolgende Gretchentragoedie (steigende Handlung ab Auerbachs Keller / Hexenkueche) ueberhaupt erst in Gang.
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Inhaltsdarstellung mit Einordnung | 5 NP | Enger Beleg mit Zeile als Alternativweg
+Sprach- und Machtanalyse mit Freytag-Bezug | 5 NP | Machtkurve als Alternativweg
+Urteil zur Pakt-Funktion | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
+
+KERNSATZ (auswendig):
+- Kernsatz: `Das retardierende Moment im vierten Akt verzoegert den Niedergang scheinbar, um die dramatische Fallhoehe vor der finalen Katastrophe maximal zu verstaerken.`
+- Zerlegung: Beleg | Mittel | Funktion
+- Aufschluesselung: Beleg = fallende Handlung im IV. Akt | Mittel = Retardierung als Hoffnungstaeuschung | Funktion = maximale Fallhoehe vor Katastrophe
+- Selbsttest: Das ___ im vierten Akt verzoegert den Niedergang scheinbar, um die dramatische Fallhoehe vor der finalen Katastrophe maximal zu verstaerken.
 
 ## Schritt 7 — check: Format-Check & Scoring
 30 XP Schnelltest zur Verstaendigungssicherung:

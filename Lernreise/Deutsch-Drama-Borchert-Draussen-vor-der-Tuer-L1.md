@@ -8,7 +8,7 @@ operatoren: [analysieren, deuten, erlaeutern]
 klausurrelevant: true
 datum: 2026-10-03
 tags: [EF, Deutsch, Drama, Borchert, Draussen-vor-der-Tuer, Truemmerliteratur, Heimkehrer, Nachkriegszeit]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Dramenanalyse: Wolfgang Borchert — Draussen vor der Tuer (Truemmerliteratur und Heimkehrer-Trauma) (L1, Ziel Klausur)
@@ -26,10 +26,13 @@ ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
 Stell dir vor, du warst drei endlose Jahre an der blutigen Ostfront in Stalingrad. Du hast Hunger, Kaelte, den Tod deiner engsten Kameraden und die totale Entmenschlichung ueberlebt. Endlich kehrst du in deine geliebte Heimatstadt Hamburg zurueck. Du sehnst dich nach einer warmen Umarmung, einem Teller Suppe und einem Menschen, der dir zuhoert. Doch als du an die Tuer deiner Wohnung klopfst, oeffnet ein fremder Mann: Deine Frau hat dich laengst fuer tot erklaert und einen neuen Geliebten. Du laeufst zu deinen Eltern: Die Wohnung ist von Fremden belegt, deine Eltern haben sich nach der Entnazifizierung vergast. Du gehst zu deinem ehemaligen Oberst, um ihm die erdrukkende Verantwortung fuer zwanzig gefallene Soldaten zurueckzugeben: Er lacht dich aus und empfiehlt dir, als Komiker im Variete aufzutreten! Du stehst im eiskalten Regen, mit einer haesslichen Gasmaskenbrille im Gesicht, und jede Tuer schlaegt dir mit erbarmungsloser Kaelte vor der Nase zu: Du bist draussen vor der Tuer. Wie kann ein Dichter diesen markerschuetternden Schrei einer ganzen verratenen Generation auf die Buehne bringen?
 
+- [Station A] Wenn dich Beckmanns Anklage staerker packt, sammelst du in Schritt 6 Belege der Verdraengung.
+- [Station B] Wenn dich die Formfrage staerker packt, sammelst du in Schritt 6 Belege der Stationsdramaturgie.
+
 `Klausur-Satz: In seinem Stationsdrama 'Draussen vor der Tuer' gestaltet Wolfgang Borchert das Schicksal des kriegstraumatisierten Unteroffiziers Beckmann als exemplarische Anklage der Truemmerliteratur gegen die verdraengende Nachkriegsgesellschaft, die jede moralische Mitverantwortung fuer die Kriegskatastrophe feige von sich weist.`
 
 ## Schritt 2 — entdecken: Das literarische Vokabular der Nachkriegszeit
-PRETRAINING术语盒（核心4词，先读三遍中德，合书自测中文→德语）：
+PRETRAINING术语盒（核心4词，先读三遍中德，合书自测中文->德语）：
 
 - 废墟与砍伐文学 — Truemmer- & Kahlschlagliteratur: Literarische Stroemung der unmittelbaren Nachkriegszeit (1945–1950), die mit schonungslos realistischer, unpathetischer Sprache ("Kahlschlag") die physischen und moralischen Truemmerfelder der Kriegsgeneration ungeschminkt abbildet.
 - 车站式戏剧 — Stationsdrama: Eine nicht-aristotelische Dramenform, in der die Einheiten von Ort und Zeit aufgeloest sind und der isolierte Protagonist nacheinander verschiedene exemplarische Stationen eines Leidensweges durchlaeuft.
@@ -77,6 +80,27 @@ Untersuche mit dem textanalytischen Highlighter einen Auszug aus Beckmanns Monol
 | *"Die Gasmaskenbrille sitzt auf der Nase wie eine Schnauze. Durch diese Brille sieht die Welt ganz anders aus."* | **Leitmotivische Metapher** | Die Brille zwingt Beckmann, die Nachkriegswelt ohne die rosarote Brille des Wirtschaftswunder-Verdraengens zu sehen. |
 | *"Der Oberst lacht. Ein volles, rundes, sattes Lachen. Warum lachen Sie denn? Das ist doch kein Witz!"* | **Akustischer Kontrast** | Zynische Harmlosmachung des Kriegsleids durch die elitaere Offizierskaste, die sich sofort wieder im Buertum einrichtet. |
 
+AUFGABE (analysieren, [AFB II]): Analysiere einen Beckmann-Monolog mit dem Highlighter und ordne jedes Stilmittel seiner Funktion im Stationsdrama zu.
+
+HILFE:
+- Formdimension: Pruefe Kurzsaetze, Ellipsen und Kontraste mit Syntaxanalyse; benenne nur die Form, deute ihre Funktion noch nicht.
+- Pragmatische Dimension: Pruefe Figur, Adressat und Anklageziel mit Anklagezielanalyse; sammle Sprecher, Adressat und Ziel, ohne das Urteil vorwegzunehmen.
+- Bilddimension: Pruefe Leitmotive (Brille, Elbe, Tuer) mit Leitmotivanalyse; notiere Bildspender und Wirkung, ohne die Deutung zu setzen.
+
+COMPLETION (Lückentext):
+- Lies beide Saetze und ergaenze aus dem Gedaechtnis, ohne zurueckzublaettern:
+- Beckmanns ___ steht fuer den unbestechlichen Blick auf die Nachkriegsrealitaet.
+- Die Elbe bleibt ___ zwischen todbringender Erloesung und Verweigerung des Sterbens.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Monolog-Auszug mit Stilmitteln | 5 NP | Enger Beleg mit Zeile als Alternativweg
+Funktion im Stationsdrama | 5 NP | Symbol-Tabelle als Alternativweg
+Deutung als Kahlschlag-Anklage | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
+
+MUSTERLOESUNG: Beckmanns Kurzsaetze sichern den Befund der Kahlschlag-Direktheit; die Hyperbel macht den Flashback koerperlich; Brille und Lachen deuten die Welt als Verdraengung. (Textgrundlage: Borchert, Draussen vor der Tuer, Studienauszug; Paraphrase, kein Vollzitat.)
+
 `Klausur-Satz: Bei Aufgaben zu Dramenanalyse: Wolfgang Borchert — Draussen vor der Tuer (Truemmerliteratur und Heimkehrer-Trauma) muss die theoriegeleitete Begruendung stets durch exakte Fachtermini und empirische Belege abgesichert werden.`
 
 ## Schritt 5 — check: Das Konzeptduell
@@ -85,17 +109,41 @@ VERGLEICH: Expressionismus (Aufbruch) versus Truemmerliteratur (Zusammenbruch)
 - **Fruehexpressionismus (1910–1920)**: Feierte vor dem Ersten Weltkrieg pathetisch das Ende der verkrusteten buergerlichen Ordnung, suchte prophetisch nach dem 'Neuen Menschen' und bediente sich metaphorisch ueberladener, ekstatischer Sprachgewalten.
 - **Truemmerliteratur (1945–1950)**: Jeglicher Glaube an prophetische Utopien oder erloesende Neuanfaenge ist zerschmettert. Die Sprache ist radikal nuechtern, entzaubert ("Kahlschlag"), frei von lyrischem Zierrat und dokumentiert das pure physische und seelische Ueberleben im Niemandsland zwischen Schuld und Verdraengung.
 
+- [Wahl A] Wenn du Position A (Fruehexpressionismus) waehlst, sammelst du in Schritt 6 Belege des Aufbruchs.
+- [Wahl B] Wenn du Position B (Truemmerliteratur) waehlst, sammelst du in Schritt 6 Belege des Zusammenbruchs.
+
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Position A oder B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Mechanismus A: Fruehexpressionismus: Pathos, Utopie und Metapherngewalt als Aufbruch (Quelle: Schritt-5-Bestand, Lesson-v3). Dreischritt: Beleg = Dialogeinordnung mit Gespraechsanteilen | Mittel = Dialogfuehrung mit Alltagsfloskel-Kontrast | Funktion = Urteil zur Verdraengungsmentalitaet
+- Mechanismus B: Truemmerliteratur: Kahlschlag-Nuechternheit ohne Trost als Zusammenbruch (Quelle: Borchert, Draussen vor der Tuer, Studienparaphrase). Dreischritt: Beleg = Dialogeinordnung mit Gespraechsanteilen | Mittel = Dialogfuehrung mit Alltagsfloskel-Kontrast | Funktion = Urteil zur Verdraengungsmentalitaet
+- Ein-Satz-Kern: Jede Tuer weist ab, darum klagt jede Station die Verdraengung an.
+
 ## Schritt 6 — szenario: Die Klausuraufgabe
 In einer Klausur der Q-Phase analysierst du die Szene zwischen Beckmann und Frau Kramer (Besuch der elterlichen Wohnung).
 
-1. **AFB I**: Fasse den Inhalt des Dialogs zusammen und bestimme die Gespraechsanteile sowie die Haltung von Frau Kramer gegenueber den verstorbenen Eltern Beckmanns.
-2. **AFB II**: Analysiere Borcherts Dialogfuehrung, insbesondere die Verwendung von Alltagsfloskeln bei Frau Kramer im Kontrast zu Beckmanns verzweifelter Syntax.
-3. **AFB III**: Beurteile, inwiefern die Figur der Frau Kramer stellvertretend fuer die kollektive Verdraengungs- und Entlastungsmentalitaet der deutschen Nachkriegsgesellschaft steht.
+1. **[AFB I]**: Fasse den Inhalt des Dialogs zusammen und bestimme die Gespraechsanteile sowie die Haltung von Frau Kramer gegenueber den verstorbenen Eltern Beckmanns.
+2. **[AFB II]**: Analysiere Borcherts Dialogfuehrung, insbesondere die Verwendung von Alltagsfloskeln bei Frau Kramer im Kontrast zu Beckmanns verzweifelter Syntax.
+3. **[AFB III]**: Beurteile, inwiefern die Figur der Frau Kramer stellvertretend fuer die kollektive Verdraengungs- und Entlastungsmentalitaet der deutschen Nachkriegsgesellschaft steht.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Dialogeinordnung mit Gespraechsanteilen | 5 NP | Enger Beleg mit Zeile als Alternativweg
+Dialogfuehrung mit Alltagsfloskel-Kontrast | 5 NP | Figurenprotokoll als Alternativweg
+Urteil zur Verdraengungsmentalitaet | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
 
 `Musterloesungshinweis`:
 - AFB I: Beckmann kehrt in sein Elternhaus zurueck und trifft auf die neue Mieterin Frau Kramer. Diese eroeffnet ihm beilaeufig und ohne jedes Mitgefuehl, dass seine Eltern sich kurz nach Kriegsende wegen ihrer NSDAP-Mitgliedschaft mit Gas das Leben genommen haben ("Sie haben sich entnazifiziert"). Beckmann bleibt sprachlos zurueck.
 - AFB II: Frau Kramer bedient sich banaler buergerlicher Phraseologie ("So ist das Leben", "Saubere Sache"). Ihre Sprache verharmlost den Tod zur administrativen Formalie. Demgegenueber steht Beckmanns stockende, von Gedankenstrichen und Fragezeichen zerrissene Sprechweise, die seine existentielle Fassungslosigkeit und Entwurzelung veranschaulicht.
 - AFB III: Frau Kramer repraesentiert die gesellschaftliche Mehrheit der Nachkriegsjahre: Schnelle Rueckkehr zur Normalitaet, pragmatischer Egoismus, keine Trauerarbeit, sondern zynische Schuldabwehr. Borchert entlarvt durch diese Figur die Luege vom moralischen Neuanfang und zeigt, dass die Tueren fuer die wahren Opfer der Verfuehrung fest verschlossen bleiben.
+
+Klausur-Satz: `Beckmanns Tuerlosigkeit entlarvt die Verdraengung der Nachkriegsgesellschaft als kollektive Schuldabwehr.`
+
+KERNSATZ (auswendig):
+- Kernsatz: `Beckmanns Tuerlosigkeit entlarvt die Verdraengung der Nachkriegsgesellschaft als kollektive Schuldabwehr.`
+- Zerlegung: Beleg | Mittel | Funktion
+- Aufschluesselung: Beleg = Beckmanns Abweisung an jeder Tuer (Stationen) | Mittel = Stationsdeutung mit Leitmotiven | Funktion = Nachweis kollektiver Schuldabwehr
+- Selbsttest: Beckmanns ___ entlarvt die Verdraengung der Nachkriegsgesellschaft als kollektive Schuldabwehr.
 
 ## Schritt 7 — muendlich: Die muendliche Blitzpruefung
 Simuliere ein muendliches Abiturszenario:

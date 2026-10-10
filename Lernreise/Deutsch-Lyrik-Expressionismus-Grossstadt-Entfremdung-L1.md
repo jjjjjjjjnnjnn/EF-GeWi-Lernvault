@@ -8,7 +8,7 @@ operatoren: [analysieren, deuten, beurteilen]
 klausurrelevant: true
 datum: 2026-10-03
 tags: [EF, Deutsch, Lyrik, Expressionismus, Grossstadtlyrik, Georg-Heym, Reizueberflutung]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Lyrikanalyse des Expressionismus: Grossstadt, Reizueberflutung und Entfremdung (L1, Ziel Klausur)
@@ -26,10 +26,13 @@ ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
 Berlin um das Jahr 1911. Unter ohrenbetaeubendem Gekreische bremsen elektrische Strassenbahnen auf nassen Schienen; der giftige Schwefelqualm Tausender Fabrikschlote huellt die Strassenschluchten in ein duestres, schmutziges Halbdunkel. Menschenmassen stroemen wie seelenlose Ameisen ueber den Asphalt, waehrend grelle Gaslaternen und blinkende Reklamelichter die Netzhaut ueberfluten. Ein junger Dichter namens Georg Heym blickt von einem Fabrikdach herab auf dieses wogende Meer aus Stein und Schornsteinen. Er sieht darin kein Bluetenmeer der Fruehromantik und keine goettliche Harmonie der Klassik. Er sieht ein riesiges, fleischfressendes Ungeheuer – einen grausamen goetzenhaften Daemon namens Baal, der auf den Haeuserbloecken hockt, Winde um seine Stirn toben laesst und zynisch darauf wartet, dass die von ihm versklavten Massen im unausweichlichen Weltenbrand versinken. Mit dieser apokalyptischen Vision zertruemmerten die Expressionisten die buergerliche Idylle der Jahrhundertwende.
 
+- [Station A] Wenn dich zuerst das Bild fesselt (Ferne, Stadt, Stern), verfolge in Schritt 4/5 die Nahspur.
+- [Station B] Wenn dich zuerst die Epoche ruft (um 1770, um 1912), verfolge in Schritt 4/5 die Fernspur.
+
 `Klausur-Satz: Der expressionistische Reihungsstil zerlegt die Grossstadtrealitaet in zusammenhanglose, simultan wahrgenommene Schockbilder und visualisiert so die existentielle Entfremdung des modernen Individuums.`
 
 ## Schritt 2 — entdecken: Das poetische Waffenarsenal der Fruehexpressionisten
-PRETRAINING术语盒（核心4词，先读三遍中德，合书自测中文→德语）：
+PRETRAINING术语盒（核心4词，先读三遍中德，合书自测中文->德语）：
 
 - 并置风格 — Reihungsstil: 将互无逻辑、因果关联的意象与场景单句直接紧邻拼贴在一起的诗歌排列技法（如利希滕施泰因的《黄昏》）。 Ein lyrisches Gestaltungsprinzip, bei dem isolierte Einzelbeobachtungen syntaktisch parataktisch aneinandergereiht werden, um Simultaneitaet und Orientierungslosigkeit abzubilden.
 - 物化与拟人倒错 — Verdinglichung und Personifizierung: 人被降格为冰冷机械零件或腐肉，而无生命的城市、电车与烟囱却被赋予暴烈嗜血的生命体特征。 Die Entmenschlichung des Individuums bei gleichzeitiger Daemonisierung der toten urbanen Architektur.
@@ -69,11 +72,28 @@ v                                                 v
 
 [Werkzeug: highlighter]
 
-AUFGABE (analysieren & deuten, AFB I/II):
-Betrachte die ersten beiden Strophen aus Georg Heyms Sonett "Der Gott der Stadt" (1910):
+AUFGABE (analysieren, [AFB II]):
+Analysiere die ersten beiden Strophen aus Georg Heyms Sonett "Der Gott der Stadt" (1910):
 "Auf einem Haeuserblocke sitzt er breit. / Die Winde lagern schwarz um seine Stirn. / Er schaut voll Wut, wo fern in Einsamkeit / Die letzten Haeuser in das Land verirrn. // Vom Abend glaenzt der rote Bauch dem Baal, / Die grossen Staedte knien um ihn her. / Der Kirchenglocken ungeheure Zahl / Wogt auf zu ihm aus schwarzem Tuerme-Meer."
 1. Analysiere das Versmass, das Reimschema und die Form des Gedichts.
 2. Deute die Metapher des "Baal" und zeige anhand von mindestens zwei Beispielen die Sakralisierung des Negativen.
+
+HILFE:
+- Formdimension: Pruefe Bild-, Reihungs- und Anrede-Signale mit Reihungsanalyse; benenne nur die Form, deute ihre Funktion noch nicht.
+- Pragmatische Dimension: Pruefe Sprecher, Angeredete und Sehnsuchtsziel mit Adressenanalyse; sammle Sprecher, Adressat und Ziel, ohne das Urteil vorwegzunehmen.
+- Bilddimension: Pruefe Fern-, Stadt- und Naturmetaphern mit Bildfeldanalyse; notiere Bildspender und Wirkung, ohne die Deutung zu setzen.
+
+COMPLETION (Lückentext):
+- Lies beide Saetze und ergaenze aus dem Gedaechtnis, ohne zurueckzublaettern:
+- Reihung ohne ___ erzeugt Tempo und Schock.
+- Die Chiffre braucht ___ zur Aufloesung.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Bildbeleg mit Zitat und Zeile | 5 NP | Enger Beleg mit Zeile als Alternativweg
+Verfahrensbestimmung (Reihung, Anrede) | 5 NP | Bildreihen-Tabelle als Alternativweg
+Hypothesenpruefung an der Schlussstrophe | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
 
 MUSTERLOESUNG:
 1. Formale Analyse:
@@ -101,21 +121,44 @@ VERGLEICH: Romantische Naturstimmung vs. Expressionistischer Grossstadtschock (�
   - Subjekt: Entfremdet, deformiert, zermalmt vom Kollektivgetriebe.
   - Sprache: Hart, parataktisch, voll schockierender Metaphern, Dissonanzen und Assoziationssprung.
 
+- [Wahl A] Wenn du Position A (Romantik) waehlst, sammelst du in Schritt 6 Belege der Naturstimmung.
+- [Wahl B] Wenn du Position B (Expressionismus) waehlst, sammelst du in Schritt 6 Belege des Grossstadtschocks.
+
 Entscheidungsregel fuer die Klausur:
-Wird nach `Epochenspezifik expressionistischer Lyrik` gefragt, weise immer auf das dialektische Verhaeltnis hin: Der Expressionismus verachtet die buergerlich-romantische Harmoniesucht und waehlt bewusst haessliche, kranke und groteske Bildbereiche (Aesthetik des Haesslichen)!
+Lesehinweis: Die ausformulierte Regel steht in der AUFLOESUNG weiter unten; waehle zuerst intuitiv A oder B.
+
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Position A oder B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Ueberfuehrt aus Entscheidungsregel: Wird nach `Epochenspezifik expressionistischer Lyrik` gefragt, weise immer auf das dialektische Verhaeltnis hin: Der Expressionismus verachtet die buergerlich-romantische Harmoniesucht und waehlt bewusst haessliche, kranke und groteske Bildbereiche (Aesthetik des Haesslichen)!
+- Mechanismus A: Romantik: Wald, Mond und Sangbarkeit als Resonanz (Quelle: Eichendorff, Mondnacht-Tradition, Studienparaphrase). Dreischritt: Beleg = Hypothese mit Epochenanker | Mittel = Bild- und Verfahrensanalyse | Funktion = Urteil zur Selbstwerdung oder Entfremdung
+- Mechanismus B: Expressionismus: Asphalt, Reihung und Haesslichkeit als Schock (Quelle: Heym, Der Gott der Stadt, Studienparaphrase). Dreischritt: Beleg = Hypothese mit Epochenanker | Mittel = Bild- und Verfahrensanalyse | Funktion = Urteil zur Selbstwerdung oder Entfremdung
+- Ein-Satz-Kern: Idylle flieht die Stadt, Schock bezeugt sie.
 
 ## Schritt 6 — check: Klausur-Transfer Weltkriegsangst und Sprachkrise
 
 PRUEFUNGSSZENARIO (KLP NRW Deutsch LK Inhaltsfeld 1: Lyrik):
 
-### AFB I: Gedichtanalyse strukturiert
+### [AFB I]: Gedichtanalyse strukturiert
 Ermittle in Alfred Lichtensteins Gedicht "Die Daemmerung" saemtliche Saetze des Reihungsstils und beschreibe die grammatikalische Satzstruktur (Parataxe).
 
-### AFB II: Motivanalyse
+### [AFB II]: Motivanalyse
 Untersuche das Motiv der "Reizueberflutung" und erklaere, wie simultane optische und akustische Schockfragmente im Leser das Gefuehl von Schwindel und Sinnverlust hervorrufen.
 
-### AFB III: Historisch-Philosophische Einordnung
+### [AFB III]: Historisch-Philosophische Einordnung
 Diskutiere, inwieweit die expressionistische Vorkriegslyrik zwischen 1910 und 1914 die Schrecken der industriellen Materialschlachten des Ersten Weltkriegs seismographisch vorweggenommen hat.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Hypothese mit Epochenanker | 5 NP | Enger Beleg mit Zeile als Alternativweg
+Bild- und Verfahrensanalyse | 5 NP | Strophenprotokoll als Alternativweg
+Urteil zur Selbstwerdung oder Entfremdung | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
+
+KERNSATZ (auswendig):
+- Kernsatz: `Der expressionistische Reihungsstil zerlegt die Grossstadtrealitaet in zusammenhanglose, simultan wahrgenommene Schockbilder und visualisiert so die existentielle Entfremdung des modernen Individuums.`
+- Zerlegung: Beleg | Mittel | Funktion
+- Aufschluesselung: Beleg = Grossstadtrealitaet (Licht, Laerm, Masse) | Mittel = Reihungsstil als Zerlegung in Schockbilder | Funktion = Nachweis existenzieller Entfremdung
+- Selbsttest: Der expressionistische Reihungsstil zerlegt die Grossstadtrealitaet in zusammenhanglose, simultan wahrgenommene Schockbilder und visualisiert so ___.
 
 ## Schritt 7 — check: Format-Check & Scoring
 

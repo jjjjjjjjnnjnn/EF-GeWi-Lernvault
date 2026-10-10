@@ -8,11 +8,12 @@ operatoren: [eroertern, darstellen]
 klausurrelevant: true
 datum: 2026-09-26
 tags: [EF, Deutsch, Eroerterung]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 # Lernreise: Dialektische Eroerterung Sanduhr-Prinzip (L1, Ziel Klausur)
 
 <!-- Campaign: Detektive Fal 07 -->
+
 ## Schritt 1 — entdecken: Der versiegelte Umschlag zur Sache
 
 ZIELE (3 Ziele, nach 15 Minuten erreichbar):
@@ -26,6 +27,9 @@ HOOK:
 Soll die Schule Handys verbieten? Die Klasse ist gespalten, die Debatte laeuft heiss. Wer nur eine Seite hoert, verliert die Haelfte der Punkte. Du erhaeltst die Sanduhr: breit einsteigen, eng abwaegen, spitz urteilen. Jede **These** braucht einen **Gegenspieler**.
 
 Variante B dreht dieselbe Sanduhr an einer zweiten Streitfrage mit vertauschten Lagern.
+
+- [Station A] Wenn du intuitiv die Pro-Seite staerker findest, verfolge in Schritt 4/5 die Pro-Spur.
+- [Station B] Wenn du intuitiv den staerksten Einwand wichtiger findest, verfolge in Schritt 4/5 die Contra-Spur.
 
 Klausur-Satz: `Die Streitfrage braucht Gegner: Ohne starke Antithese bleibt jedes Urteil duenn.`
 
@@ -67,13 +71,25 @@ Bezug zum Konzept: `Kette gegen Kette plus Massstab ergibt Urteil: Gewicht schla
 
 [Werkzeug: lego]
 
-AUFGABE: Baue zu einer Streitfrage je zwei Pro- und Contra-Bausteine mit Beleg und ordne sie nach Gewicht.
+AUFGABE: Analysiere die Streitfrage und baue je zwei Pro- und Contra-Bausteine mit Beleg, Massstab und Rangfolge. [AFB II]
 TARGET: Je zwei Pro- und Contra-Bausteine zum Handyverbot mit Beleg, je mit Massstab und Rangfolge in vier Saetzen.
 
 HILFE:
-1. Schritt 1: Ordne den Fall in zwei Saetzen ein.
-2. Schritt 2: Sichere zwei Bausteine mit Beleg.
-3. Schritt 3: Deute Baustein und Funktion im Fallganzen.
+- Formdimension: Pruefe Thesen- und Weil-Satz-Bau mit Bausteinanalyse; benenne nur die Form, deute ihre Funktion noch nicht.
+- Pragmatische Dimension: Pruefe Adressat und Streitfrage mit Adressatenanalyse; sammle Sprecher, Adressat und Ziel, ohne das Urteil vorwegzunehmen.
+- Bilddimension: Pruefe Schluesselbegriffe der Lager mit Begriffsfeldanalyse; notiere Bildspender und Wirkung, ohne die Deutung zu setzen.
+
+COMPLETION (Lückentext):
+- Lies beide Saetze und ergaenze aus dem Gedaechtnis, ohne zurueckzublaettern:
+- Die staerkste Gegenposition heisst ___ und wird fair dargestellt.
+- Das Urteil braucht ___ statt blosser Zahl.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Pro-/Contra-Bausteine mit Beleg | 5 NP | Enger Beleg mit Zeile als Alternativweg
+Abwaegung mit Massstab | 5 NP | Tabellarische Gewichtsliste als Alternativweg
+Urteil mit Position und Folge | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
 
 MUSTERLOESUNG: Der Fall 07 zeigt das Verfahren in drei Schritten. Erstens sichert ein Beleg den Kern. Zweitens traegt die Funktion die Wirkung. Drittens schliesst die Deutung das Urteil.
 
@@ -81,12 +97,22 @@ Klausur-Satz: `Die Sanduhr-Regel: Je breiter der Einstieg, desto spitzer das Urt
 
 ## Schritt 5 — ausprobieren: Das doppelte Spiel Weg A gegen Weg B
 
-VERGLEICH: Weg A baut Pro-dominant (eigene Kette zuerst, Gegner danach entkraeften), Weg B baut Contra-dominant (staerksten Gegner zuerst, eigene Kette als Klimax zum Urteil).
+VERGLEICH: Weg A (Pro-dominant: eigene Kette zuerst) vs Weg B (Contra-dominant: Einwand zuerst, Klimax zuletzt).
+- [Weg A] Wenn du Weg A waehlst, arbeitest du in Schritt 7 vor allem mit Nahbelegen und Zeilen.
+- [Weg B] Wenn du Weg B waehlst, arbeitest du in Schritt 7 vor allem mit Fernkontext und Ordnung.
 
 AUFGABE A: Baue die Pro-Strecke zum Handyverbot (Konzentration, Fairness) mit Entkraeftung des Kosten-Einwands. Begruende mit Beleg.
 AUFGABE B: Baue die Contra-Strecke (Erreichbarkeit, Selbststeuerung) und widerlege sie mit der staerksten Pro-Kette. Begruende mit Massstab.
 
-HILFE: A stellt die These voran und nutzt den Gegner als Kontrast. B staerkt den Gegner zuerst und setzt die eigene Kette als Schlusspunkt.
+HILFE: Pruefe dimensionsgeleitet, welcher Weg passt: Formdimension (Bausteinanalyse) spricht fuer Naehe und Weg A; Kontextdimension (Adressatenanalyse) spricht fuer Ordnung und Weg B; Bilddimension (Begriffsfeldanalyse) sichert beide Wege. Ordne selbst zu; die Zuordnung wird nicht vorweggenommen.
+
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg A oder Weg B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Ueberfuehrt aus VERGLEICH (Vorwahl-Fassung): VERGLEICH: Weg A baut Pro-dominant (eigene Kette zuerst, Gegner danach entkraeften), Weg B baut Contra-dominant (staerksten Gegner zuerst, eigene Kette als Klimax zum Urteil).
+- Ueberfuehrt aus Schritt-5-HILFE (Vorwahl-Fassung): HILFE: A stellt die These voran und nutzt den Gegner als Kontrast. B staerkt den Gegner zuerst und setzt die eigene Kette als Schlusspunkt.
+- Mechanismus A: ANTWORT A: Weg A baut Pro-dominant Baustein fuer Baustein: These, Weil-Satz und Beleg Absatz fuer Absatz, Gegner danach knapp entkraeftet. Dreischritt: Beleg = Einordnung der Streitfrage | Mittel = Ketten mit Entkraeftung oder Zugestaendnis | Funktion = Position mit Massstab und Ausblick
+- Mechanismus B: ANTWORT B: Weg B waehlt Contra-dominant als Strategie: staerksten Einwand fair darstellen, dann mit Massstab Lernschutz die eigene Kette als Klimax schliessen. Dreischritt: Beleg = Einordnung der Streitfrage | Mittel = Ketten mit Entkraeftung oder Zugestaendnis | Funktion = Position mit Massstab und Ausblick
+- Ein-Satz-Kern: Staerkster Gegner plus Massstab ergibt das einzige zaehlende Urteil.
 
 ANTWORT A: Weg A baut Pro-dominant Baustein fuer Baustein: These, Weil-Satz und Beleg Absatz fuer Absatz, Gegner danach knapp entkraeftet.
 ANTWORT B: Weg B waehlt Contra-dominant als Strategie: staerksten Einwand fair darstellen, dann mit Massstab Lernschutz die eigene Kette als Klimax schliessen.
@@ -114,11 +140,24 @@ Klausur-Satz: `Haeufig verwechselt: Aufzaehlen ist nicht Abwaegen; erst Massstab
 
 ROLLE: Du bist Debattenleiter der Schuelervertretung in der Pruefung.
 SITUATION: Ein Fall liegt unbearbeitet auf dem Tisch und verlangt Einordnung, Belege und Urteil.
-AUFGABE: Verfasse circa 150 Woerter mit Einordnung, zwei Belegen, Funktion, Deutung und Schlussurteil.
+AUFGABE: Gestalte einen Klausurtext (circa 150 Woerter, [AFB III]) mit Einordnung, zwei Belegen, Funktion, Deutung und Schlussurteil.
 ZEIT: 25 Minuten (5 Sammeln, 12 Sanduhr-Schreiben, 8 Massstab-Pruefung).
 RUBRIC (30 XP): Einordnung korrekt (6 XP) | Zwei Belege (10 XP) | Funktion plus Deutung (10 XP) | Fachsprache und Schluss (4 XP).
 
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Einordnung der Streitfrage | 5 NP | Enger Beleg mit Zeile als Alternativweg
+Ketten mit Entkraeftung oder Zugestaendnis | 5 NP | Sanduhr-Skizze als Alternativweg
+Position mit Massstab und Ausblick | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
+
 Klausur-Satz: `AFB-III-Mustersatz: Obwohl X stark belegt ist, wiegt Y schwerer, weil der Massstab Z gilt; daher Position mit Folge.`
+
+KERNSATZ (auswendig):
+- Kernsatz: `These, Antithese und Massstab definieren jede dialektische Eroerterung.`
+- Zerlegung: Beleg | Mittel | Funktion
+- Aufschluesselung: Beleg = Streitfrage mit Pro-/Contra-Ketten | Mittel = Sanduhr mit Massstab und Rangfolge | Funktion = gewichtetes Urteil statt Sowohl-als-auch
+- Selbsttest: These, ___ und Massstab definieren jede dialektische Eroerterung.
 
 ## Schritt 8 — reflexion: Takeaway und Rueckblick aus Fall 07
 

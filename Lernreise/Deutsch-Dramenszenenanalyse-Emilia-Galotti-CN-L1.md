@@ -8,11 +8,12 @@ operatoren: [analysieren, deuten, erlaeutern]
 klausurrelevant: true
 datum: 2026-09-26
 tags: [EF, Deutsch, CN]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 # Lernreise: Dramenszenenanalyse am Beispiel Emilia Galotti (L1, Ziel Klausur)
 
 <!-- Campaign: Detektive Fal 10 -->
+
 ## Schritt 1 — entdecken: Der versiegelte Umschlag zur Sache
 
 ZIELE（3条，15分钟可达成，先读中文，再记德语）：
@@ -29,6 +30,9 @@ HOOK：
 CN: 宫廷里最危险的不是刀，而是把话说一半的人。王子只暗示，Marinelli 把暗示补成计划。本课拆开这条委托链。
 
 DE: Guastalla zeigt die leiseste Gewalt: Der Prinz bricht Saetze ab, Marinelli vollendet sie. Wer **Andeutung** und **Vollzug** trennt, sieht die **Intrige**.
+
+- [Station A] Wenn dich zuerst die Naehe des Textes lockt (Zitat, Zeile), verfolge in Schritt 4/5 die Nahspur.
+- [Station B] Wenn dich zuerst die Ordnung dahinter lockt (Epoche, System), verfolge in Schritt 4/5 die Fernspur.
 
 Klausur-Satz: `CN: 核心矛盾是宫廷欲望撞上市民荣誉，中间只有阴谋能过。DE: Hofbegierde gegen Buergerhre; dazwischen passt nur Intrige.`
 
@@ -48,7 +52,7 @@ Klausur-Satz: `CN: 定义得分靠三词：等级、阴谋、语言调度。DE: 
 
 中文深层解构：先读中文抓链条，再用德语写判断。
 
-德语：CN: 深层链条是暗示→计划→伪装成意外的暴力→荣誉回应。先锁引文行号，再说功能，最后下判断。
+德语：CN: 深层链条是暗示->计划->伪装成意外的暴力->荣誉回应。先锁引文行号，再说功能，最后下判断。
 
 DE: Die Kette lautet Andeutung, Plan, Zufallsgewalt und Tugedantwort. Der **Befund** zitiert, die **Funktion** klaert Delegation, die **Deutung** urteilt ueber Schuld.
 
@@ -57,13 +61,13 @@ Andeutung (Prinz) -> Plan (Marinelli) -> Zufallstat -> Dolch (Odoardo)
 Formel: Bruch + Vollendung = delegierte Willkuer
 ```
 
-Klausur-Satz: `CN: 传导链是暗示→计划→意外→匕首。DE: Andeutung wird Plan, Plan wird Zufall, Zufall ruft den Dolch.`
+Klausur-Satz: `CN: 传导链是暗示->计划->意外->匕首。DE: Andeutung wird Plan, Plan wird Zufall, Zufall ruft den Dolch.`
 
 ## Anekdote
 
 CN: Lessing 故意让首演布景极简，只剩语言当武器。DE: Lessing hielt die Buhne karg, damit die Sprache als Waffe sichtbar blieb.
 
-Bezug zum Konzept: `CN: 传导链是暗示→计划→意外→匕首。DE: Andeutung wird Plan, Plan wird Zufall, Zufall ruft den Dolch.`
+Bezug zum Konzept: `CN: 传导链是暗示->计划->意外->匕首。DE: Andeutung wird Plan, Plan wird Zufall, Zufall ruft den Dolch.`
 
 ## Schritt 4 — ausprobieren: Die Sandkasten-Pruefung mit Textlupe
 
@@ -88,15 +92,27 @@ PRIMAERTEXT（Studienfassung nach Lessing: Odoardo und Emilia vor der Abreise (A
 > ODOARDO (dunkel): Fremde Zungen schneidet man nicht; man schweigt sie tot. (Z. 15)
 
 中文任务：逐行分析选段，每条论断配引文行号。
-德语 AUFGABE: Untersuche den Primaertext Zeile fuer Zeile mit Zitat und Zeile.
+德语 AUFGABE: Untersuche den Primaertext Zeile fuer Zeile mit Zitat und Zeile. [AFB II]
 TARGET（目标）：三个带行号证据，各配功能与判断，共四句。
 
-HILFE（中文在前）：
-1. 中文：两句交代背景。德语：Ordne den Fall in zwei Saetzen ein.
-2. 中文：锁两个证据加行号。德语：Sichere zwei Befunde mit Zeile.
-3. 中文：功能加判断收尾。德语：Deute Funktion im Fallganzen.
+HILFE（中文在前）:
+- CN: 从形式维度用Replik- und Modalitypsanalyse查Replik-, Modus- und Tempo-Signale，只记形式不定功能。DE: Formdimension: Pruefe Replik-, Modus- und Tempo-Signale mit Replik- und Modalitypsanalyse; benenne nur die Form.
+- CN: 从语用维度用Sprechaktanalyse查Sprecher, Adressat und Sprechhandlung，不定结论。DE: Pragmatische Dimension: Pruefe Sprecher, Adressat und Sprechhandlung mit Sprechaktanalyse; nimm das Urteil nicht vorweg.
+- CN: 从意象维度用Raum- und Bildfeldanalyse查Machtmetaphern und Raumzeichen，不定阐释。DE: Bilddimension: Pruefe Machtmetaphern und Raumzeichen mit Raum- und Bildfeldanalyse; setze die Deutung nicht.
 
 MARKIERAUFTRAG（双色标注）：CN: 黄色[GELB]标 Odoardo 的荣誉隐喻（Honig、Flecken、Ferne），蓝色[BLAU]标 Emilia 的言语行为（gestehen、bitten、warnen）。DE: Markiere mit GELB Odoardos **Tugendmetaphern**, mit BLAU Emilias **Sprechakte**.
+
+COMPLETION (Lückentext):
+- Lies beide Saetze und ergaenze aus dem Gedaechtnis, ohne zurueckzublaettern:
+- Der Umschlagpunkt liegt meist in ___ .
+- Jede Deutung braucht Zitat mit Zeile plus ___ .
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Befund mit Zitat und Zeile | 5 NP | Enger Beleg mit Zeile als Alternativweg
+Funktion im Machtgefuege | 5 NP | Konstellationsskizze als Alternativweg
+Deutung der Machtverschiebung | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
 
 MUSTERLOESUNG: 中文示范思路：先背景一句，再证据加功能两句，最后判断一句收束。
 德语 MUSTERLOESUNG: Fall 10 zeigt das Verfahren in drei Schritten mit Beleg, Funktion und Deutung; die zweite Schicht ist entlarvt.
@@ -105,15 +121,25 @@ Klausur-Satz: `CN: 沙盘规律是话越碎、刀越近。DE: Je kuerzer der Hof
 
 ## Schritt 5 — ausprobieren: Das doppelte Spiel Weg A gegen Weg B
 
-VERGLEICH（中文先行）：Weg A 微观细读（文本修辞细节），Weg B 宏观语境（时代历史秩序）。
-德语：Weg A liest mikroskopisch, Weg B deutet makroskopisch.
+VERGLEICH（中文先行）: CN: 近路看文本细节，远路看整体秩序，各跟一条路。
+德语：Weg A liest nah am Text, Weg B deutet fern im Kontext.
+- [Weg A] Wenn du Weg A waehlst, arbeitest du in Schritt 7 vor allem mit Nahbelegen und Zeilen.
+- [Weg B] Wenn du Weg B waehlst, arbeitest du in Schritt 7 vor allem mit Fernkontext und Ordnung.
+- CN: 选A走近路（引文行号），选B走远路（背景结构）。
 
 AUFGABE A（中文：哪条线索走近路？配引文）：Welche Spur verlangt Weg A?
 AUFGABE B（中文：哪个整体问题走远路？配背景）：Welche Frage verlangt Weg B?
 
-HILFE：A问形式细节选近路Weg A；B问整体结构选远路Weg B。
+HILFE: CN: 从三维度自查哪条路合适：形式近路A，语境远路B，意象两路通用，自己判定。DE: Pruefe dimensionsgeleitet mit Replik- und Modalitypsanalyse, Sprechaktanalyse und Raum- und Bildfeldanalyse; ordne selbst zu, ohne Vorwegnahme.
 
-中文答案：A走近路靠引文细节，B走远路靠背景结构。
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg A oder Weg B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Ueberfuehrt aus VERGLEICH (Vorwahl-Fassung): VERGLEICH（中文先行）：Weg A 微观细读（文本修辞细节），Weg B 宏观语境（时代历史秩序）。 / 德语：Weg A liest mikroskopisch, Weg B deutet makroskopisch.
+- Ueberfuehrt aus Schritt-5-HILFE (Vorwahl-Fassung): HILFE：A问形式细节选近路Weg A；B问整体结构选远路Weg B。 /  / 中文答案：A走近路靠引文细节，B走远路靠背景结构。
+- Mechanismus A: 德语 ANTWORT A: CN: 微观读断句与意象：Honig/Wermut、Flecken/Wasser 构成价值对立。DE: Weg A misst mikroskopisch Metaphern und Bruueche Zeile fuer Zeile. Dreischritt: Beleg = Szeneneinordnung mit Zeilenanker | Mittel = Formanalyse mit Anweisung | Funktion = Urteil zur Verschiebung
+- Mechanismus B: 德语 ANTWORT B: CN: 宏观读启蒙语境：市民贞洁观与宫廷猎艳制的冲突。DE: Weg B deutet makroskopisch Staendeordnung und Aufklaerungsmoral. Dreischritt: Beleg = Szeneneinordnung mit Zeilenanker | Mittel = Formanalyse mit Anweisung | Funktion = Urteil zur Verschiebung
+- Ein-Satz-Kern: Zitat mit Zeile plus Funktion ergibt die einzige zaehlende Deutung.
+
 德语 ANTWORT A: CN: 微观读断句与意象：Honig/Wermut、Flecken/Wasser 构成价值对立。DE: Weg A misst mikroskopisch Metaphern und Bruueche Zeile fuer Zeile.
 德语 ANTWORT B: CN: 宏观读启蒙语境：市民贞洁观与宫廷猎艳制的冲突。DE: Weg B deutet makroskopisch Staendeordnung und Aufklaerungsmoral.
 
@@ -143,10 +169,24 @@ ROLLE（中文）：你是Theaterkritiker der Stadtpost，负责审稿。
 德语 ROLLE: Du bist Theaterkritiker der Stadtpost.
 SITUATION: Fall 10 liegt unbearbeitet vor dir.
 AUFGABE（中文）：150词左右，含背景、两个证据、功能判断。
+DE AUFGABE: Gestalte einen Klausurtext (circa 150 Woerter, [AFB III]) mit Einordnung, zwei Belegen, Funktion, Deutung und Schlussurteil.
 ZEIT: 25 Minuten (5 Einordnung, 12 Intrigen-Schreiben, 8 Zeilen-Pruefung).
 RUBRIC (30 XP): Einordnung (6 XP) | Belege mit Zeile (10 XP) | Funktion plus Deutung (10 XP) | Fachsprache (4 XP).
 
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Szeneneinordnung mit Zeilenanker | 5 NP | Enger Beleg mit Zeile als Alternativweg
+Formanalyse mit Anweisung | 5 NP | Umschlagpunkt-Skizze als Alternativweg
+Urteil zur Verschiebung | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
+
 Klausur-Satz: `CN: 满分句须含断句、补全与意外伪装。DE: AFB-III-Satz braucht Bruch, Vollendung und Zufallstarnung mit Zeile.`
+
+KERNSATZ (auswendig):
+- Kernsatz: `CN: 核心矛盾是宫廷欲望撞上市民荣誉，中间只有阴谋能过。DE: Hofbegierde gegen Buergerhre; dazwischen passt nur Intrige.`
+- Zerlegung: Beleg | Mittel | Funktion
+- Aufschluesselung: Beleg = Odoardo-Emilia-Szene mit Zeile | Mittel = Bruch plus Vollendung als Paar | Funktion = Willkuer-Nachweis im Trauerspiel
+- Selbsttest: CN: 核心矛盾是宫廷欲望撞上市民荣誉，中间只有阴谋能过。DE: Hofbegierde gegen Buergerhre; dazwischen passt nur ___.
 
 ## Schritt 8 — reflexion: Takeaway und Rueckblick aus Fall 10
 

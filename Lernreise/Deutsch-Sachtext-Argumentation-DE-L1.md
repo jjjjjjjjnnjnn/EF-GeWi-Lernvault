@@ -8,11 +8,12 @@ operatoren: [darstellen, analysieren, erörtern]
 klausurrelevant: true
 datum: 2026-09-25
 tags: [EF, Deutsch, Sachtext]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 # Lernreise: Argumentationsstruktur im Sachtext (L1, Ziel Klausur)
 
 <!-- Campaign: Detektive Fal 20 -->
+
 ## Schritt 1 — entdecken: Der versiegelte Umschlag zur Sache
 
 ZIELE (3 Ziele, nach 15 Minuten erreichbar):
@@ -26,6 +27,9 @@ HOOK:
 Der Stadtrat streitet ueber die Skatepark-Erweiterung: Freiraum gegen Kosten, Jugendlaerm gegen Teilhabe. Ein Kommentar stapelt Stimmen ohne Ordnung. Du erhaeltst die Argumentationskarte mit Bausteinen. Jede **Forderung** braucht einen **Massstab**.
 
 Variante B prueft dieselbe Karte an einem zweiten Kommentar zum Skatepark-Laermschutz mit vertauschten Lagern (Anwohner gegen Jugendbeirat).
+
+- [Station A] Wenn dich zuerst die Zahl lockt (Prozent, Grafik), verfolge in Schritt 4/5 die Nahspur.
+- [Station B] Wenn dich zuerst der Rahmen fragt (Titel, Bild, Auftraggeber), verfolge in Schritt 4/5 die Fernspur.
 
 Klausur-Satz: `Der Skatepark-Kommentar braucht Gewicht: Ein starker Beleg schlaegt drei Phrasen.`
 
@@ -67,13 +71,25 @@ Bezug zum Konzept: `Grund plus Beleg plus Gewicht ergibt Fazit: Ordnung ueberzeu
 
 [Werkzeug: lego]
 
-AUFGABE: Baue zum Skatepark drei Bausteine mit Belegtyp und ordne sie als Klimax oder Antiklimax.
+AUFGABE: Analysiere den Skatepark-Fall und baue drei Bausteine mit Belegtyp als Klimax oder Antiklimax. [AFB II]
 TARGET: Drei Skatepark-Bausteine mit Belegtyp als Klimax oder Antiklimax, je mit Adressat und Fazitbezug in vier Saetzen.
 
 HILFE:
-1. Schritt 1: Ordne den Fall in zwei Saetzen ein.
-2. Schritt 2: Sichere zwei Bausteine mit Beleg.
-3. Schritt 3: Deute Baustein und Funktion im Fallganzen.
+- Formdimension: Pruefe Thesen-, Zahlen- und Passiv-Signale mit Belegpruefung; benenne nur die Form, deute ihre Funktion noch nicht.
+- Pragmatische Dimension: Pruefe Autor, Adressat und Nutzenversprechen mit Adressatenanalyse; sammle Sprecher, Adressat und Ziel, ohne das Urteil vorwegzunehmen.
+- Bilddimension: Pruefe Wertungswoerter und Rahmenbilder mit Wortfeldanalyse; notiere Bildspender und Wirkung, ohne die Deutung zu setzen.
+
+COMPLETION (Lückentext):
+- Lies beide Saetze und ergaenze aus dem Gedaechtnis, ohne zurueckzublaettern:
+- Jede Prozentzahl braucht ___ .
+- Das Passiv tilgt ___ und kostuemiert Wertung als Neutralitaet.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Befund mit Zitat und Zeile | 5 NP | Enger Beleg mit Zeile als Alternativweg
+Beleg- und Lenkungspruefung | 5 NP | Belegluecken-Liste als Alternativweg
+Bilanz mit Verliererfrage | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
 
 MUSTERLOESUNG: Der Fall 20 zeigt das Verfahren in drei Schritten. Erstens sichert ein Beleg den Kern. Zweitens traegt die Funktion die Wirkung. Drittens schliesst die Deutung das Urteil.
 
@@ -81,12 +97,22 @@ Klausur-Satz: `Die Baustein-Regel: Je naeher das Fazit, desto staerker der Baust
 
 ## Schritt 5 — ausprobieren: Das doppelte Spiel Weg A gegen Weg B
 
-VERGLEICH: Weg A ordnet als Klimax zum Skatepark (Anwohnernutzen zuerst, Jugendteilhabe als Schlusspunkt), Weg B ordnet als Antiklimax (staerkste Zaehldaten zuerst zur Sicherung gegen Laerm-Einwand).
+VERGLEICH: Weg A (Nahspur: These, Beleg, Zeile) vs Weg B (Fernspur: Markt, Interesse, Adressat).
+- [Weg A] Wenn du Weg A waehlst, arbeitest du in Schritt 7 vor allem mit Nahbelegen und Zeilen.
+- [Weg B] Wenn du Weg B waehlst, arbeitest du in Schritt 7 vor allem mit Fernkontext und Ordnung.
 
 AUFGABE A: Baue die Skatepark-Kette als Klimax (Kosten, Laermschutz, Teilhabe) mit Belegtyp pro Baustein. Begruende mit Gewicht.
 AUFGABE B: Baue dieselbe Kette als Antiklimax (Teilhabe zuerst, Kosten zuletzt) fuer kritische Anwohner. Begruende mit Adressat.
 
-HILFE: A stellt die Forderung voran und steigert zum Fazit. B sichert mit dem Staerksten zuerst und entkraeftet Laerm danach.
+HILFE: Pruefe dimensionsgeleitet, welcher Weg passt: Formdimension (Belegpruefung) spricht fuer Naehe und Weg A; Kontextdimension (Adressatenanalyse) spricht fuer Ordnung und Weg B; Bilddimension (Wortfeldanalyse) sichert beide Wege. Ordne selbst zu; die Zuordnung wird nicht vorweggenommen.
+
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg A oder Weg B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Ueberfuehrt aus VERGLEICH (Vorwahl-Fassung): VERGLEICH: Weg A ordnet als Klimax zum Skatepark (Anwohnernutzen zuerst, Jugendteilhabe als Schlusspunkt), Weg B ordnet als Antiklimax (staerkste Zaehldaten zuerst zur Sicherung gegen Laerm-Einwand).
+- Ueberfuehrt aus Schritt-5-HILFE (Vorwahl-Fassung): HILFE: A stellt die Forderung voran und steigert zum Fazit. B sichert mit dem Staerksten zuerst und entkraeftet Laerm danach.
+- Mechanismus A: ANTWORT A: Weg A baut Klimax Baustein fuer Baustein: Weil-Saetze pruefen, Skate-Belegtypen benennen, Teilhabe als Pointe ans Fazit stellen. Dreischritt: Beleg = Thesensicherung mit Aufbau | Mittel = Rahmen- und Beleganalyse | Funktion = Urteil informiert vs gelenkt
+- Mechanismus B: ANTWORT B: Weg B plant Antiklimax als Strategie: Teilhabe-Beleg zuerst, Laerm-Entkraeftung und Kosten-Baustein danach als Absicherung. Dreischritt: Beleg = Thesensicherung mit Aufbau | Mittel = Rahmen- und Beleganalyse | Funktion = Urteil informiert vs gelenkt
+- Ein-Satz-Kern: Quelle mit Vergleichsgruppe plus Rahmenblick ergibt die einzige ehrliche Bilanz.
 
 ANTWORT A: Weg A baut Klimax Baustein fuer Baustein: Weil-Saetze pruefen, Skate-Belegtypen benennen, Teilhabe als Pointe ans Fazit stellen.
 ANTWORT B: Weg B plant Antiklimax als Strategie: Teilhabe-Beleg zuerst, Laerm-Entkraeftung und Kosten-Baustein danach als Absicherung.
@@ -114,11 +140,24 @@ Klausur-Satz: `Haeufig verwechselt: Beispiel ist kein Beweis; Typ und Grenze nen
 
 ROLLE: Du bist Kommentarredakteur der Schulzeitung in der Pruefung.
 SITUATION: Ein Fall liegt unbearbeitet auf dem Tisch und verlangt Einordnung, Belege und Urteil.
-AUFGABE: Verfasse circa 150 Woerter mit Einordnung, zwei Belegen, Funktion, Deutung und Schlussurteil.
+AUFGABE: Gestalte einen Klausurtext (circa 150 Woerter, [AFB III]) mit Einordnung, zwei Belegen, Funktion, Deutung und Schlussurteil.
 ZEIT: 25 Minuten (5 Sammeln, 12 Klimax-Schreiben, 8 Adressat-Pruefung).
 RUBRIC (30 XP): Einordnung korrekt (6 XP) | Zwei Belege (10 XP) | Funktion plus Deutung (10 XP) | Fachsprache und Schluss (4 XP).
 
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Thesensicherung mit Aufbau | 5 NP | Enger Beleg mit Zeile als Alternativweg
+Rahmen- und Beleganalyse | 5 NP | Quellen-Checkliste als Alternativweg
+Urteil informiert vs gelenkt | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
+
 Klausur-Satz: `AFB-III-Mustersatz: Obwohl der Kosten-Einwand belegt ist, wiegt Teilhabe schwerer, weil der Massstab Zugang gilt.`
+
+KERNSATZ (auswendig):
+- Kernsatz: `Baustein, Belegtyp und Gang definieren jede Argumentation.`
+- Zerlegung: Beleg | Mittel | Funktion
+- Aufschluesselung: Beleg = Skatepark-Kommentar mit Bausteinen | Mittel = Klimax oder Antiklimax mit Adressat | Funktion = Fazit mit Position und Folge
+- Selbsttest: Baustein, ___ und Gang definieren jede Argumentation.
 
 ## Schritt 8 — reflexion: Takeaway und Rueckblick aus Fall 20
 

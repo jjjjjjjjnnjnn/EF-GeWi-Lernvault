@@ -8,7 +8,7 @@ operatoren: [analysieren, erlaeutern, beurteilen]
 klausurrelevant: true
 datum: 2026-10-03
 tags: [EF, Deutsch, Sachtextanalyse, Argumentation, Rhetorik, Pruefungsvorbereitung]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Sachtextanalyse: Argumentationsstruktur und rhetorische Mittel (L1, Ziel Klausur)
@@ -20,7 +20,7 @@ ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
 1. 中文：能彻底掌握德语实用文分析（Sachtextanalyse）的标准三段结构与解题范式（Einleitung mit Basissatz, Hauptteil, Schluss / Bewertung）。
 2. 中文：能敏锐辨识六大经典论证类型（Argumenttypen: Fakten-, Normatives-, Autoritaets-, Analogisierendes-, Plausibilitaets- und Scheinargument）及其说服效力。
-3. 中文：能在现代修辞分析题（AFB I/II/III）中运用“功能结合三步法”（Benennen $\to$ Belegen $\to$ Deuten / Funktion im Kontext）严谨拆解作者的言外意图（Wirkungsabsicht & Intention）。
+3. 中文：能在现代修辞分析题（AFB I/II/III）中运用“功能结合三步法”（Benennen -> Belegen -> Deuten / Funktion im Kontext）严谨拆解作者的言外意图（Wirkungsabsicht & Intention）。
 
 ### Hook / Phaenomen
 
@@ -28,17 +28,20 @@ ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
 Hook / Phaenomen: Du liest einen preisgekroenten Leitartikel ueber Kuenstliche Intelligenz in der FAZ. Die Saetze klingen majestetisch, schlagfertig und absolut ueberzeugend. Beim ersten Lesen nickst du andauernd zustimmend mit dem Kopf. Doch ziehst du die intellektuelle **Roentgenbrille** der Sachtextanalyse auf und sezierst den Text chirurgisch in seine Argumentationsbausteine, erlebst du oft eine boese Ueberraschung: Unter der glaenzenden Oberflaeche verbergen sich oft Scheinargumente, zirkulaere Begruendungen und emotionale Scheinkorrelationen! Wer die Mechanismen der rhetorischen Beeinflussung nicht beherrscht, wird in den Medien manipuliert. Die Sachtextanalyse ist das schaerfste Werkzeug des muendigen Buergers im Abitur.
 
+- [Station A] Wenn dich die Zahl beruhigt (PISA, Prozent), pruefst du in Schritt 6 zuerst die Fakten-Spur.
+- [Station B] Wenn dich der Ton misstrauisch macht (Schande, Roboter), pruefst du in Schritt 6 zuerst die Lenkungs-Spur.
+
 `Klausur-Satz: Die Sachtextanalyse dekonstruiert die strategische Verzahnung von argumentativer Begruendungsstruktur, rhetorischen Stilmitteln und persuasiver Intention des Autors.`
 
 ## Schritt 2 — entdecken: Ausruestungskiste der Analyse-Unit
-PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
+PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文->德语，Evidenz：pretraining降认知负荷）：
 
 中文在上，德语在下：
 
 - 事实论据 — Faktenargument: 引用经过实证检验的客观统计数据、科学研究成果或无可辩驳的历史事实作为支撑论点的依据。 Eine unstrittige, empirisch nachpruefbare Tatsachenaussage (Statistiken, Studien, Messwerte). Mechanismus: Hohe rationale Ueberzeugungskraft; schwer widerlegbar. Klausur-Tipp: Auf Aktualitaet und Repraesentativitaet der Quelle achten!
 - 规范论据与权威论据 — Normatives & Autoritaetsargument: 诉诸普遍公认的社会道德伦理准则（Normen），或引用相关领域公认泰斗、宪法法院裁决等权威学者的意见。 Normativ: Beruft sich auf gesellschaftlich geteilte Werte (Menschenwuerde, Gerechtigkeit). Autoritaet: Zitiert anerkannte Fachexperten. Klausur-Tipp: Bei Autoritaetsargumenten stets pruefen, ob der Experte fuer genau dieses Fachgebiet zustaendig ist!
 - 类比论据与假论据 — Analogisierendes Argument & Scheinargument: 通过将当前议题与另一个结构相似但更熟悉的领域进行平行类比（Analogisierend），或利用人身攻击、偷换概念等逻辑谬误（Scheinargument）。 Analogisierend: Zieht Parallelen zu einem anderen Lebensbereich. Scheinargument (Ad-hominem, Strohmann-Argument): Greift die Person an statt die Sache. Klausur-Tipp: Scheinargumente im AFB III gnadenlos entlarven!
-- 话语分析三步法 — Funktionale Einbettung (Dreischritt): 在试卷中绝不仅罗列修辞手法名称，必须严格落实：命名（Benennen）$\to$ 摘引行号证据（Belegen）$\to$ 阐发语境功能（Funktion / Wirkung deuten）。 Das obligatorische Analyseraster: Stilmittel benennen (z.B. Antithese) $\to$ Textstelle zitieren (Z. 14f.) $\to$ argumentative Wirkabsicht im Kontext analysieren. Klausur-Tipp: Reine "Stilmittel-Jagd" ohne Funktionsdeutung gibt null Zusatzpunkte!
+- 话语分析三步法 — Funktionale Einbettung (Dreischritt): 在试卷中绝不仅罗列修辞手法名称，必须严格落实：命名（Benennen）-> 摘引行号证据（Belegen）-> 阐发语境功能（Funktion / Wirkung deuten）。 Das obligatorische Analyseraster: Stilmittel benennen (z.B. Antithese) -> Textstelle zitieren (Z. 14f.) -> argumentative Wirkabsicht im Kontext analysieren. Klausur-Tipp: Reine "Stilmittel-Jagd" ohne Funktionsdeutung gibt null Zusatzpunkte!
 - 劝说性文本意图 — Persuasive Intention: 作者通过论证结构、词汇选择与修辞手法，试图引导读者接纳其特定立场的核心写作意图。 Die zielgerichtete Beeinflussungsabsicht des Autors (informieren, ueberzeugen, appellieren, manipulieren, aufruetteln). Mechanismus: Lenkung der Lesererwartung ueber emotionale und rationale Sprachregister. Klausur-Tipp: Im Schlussteil stets bewerten, ob die Intention erreicht wird!
 
 `Klausur-Satz: Rhetorische Stilmittel wie Antithese, Klimax oder rhetorische Fragen duerfen niemals isoliert aufgezaehlt werden, sondern muessen in ihrer funktionalen Dienstbarkeit fuer die argumentative Leitlinie nachgewiesen werden.`
@@ -92,16 +95,28 @@ BEISPIEL（正确例题示范，含教具操作与解答）：
 
 [Werkzeug: highlighter]
 
-AUFGABE (analysieren & erlaeutern, AFB I/II)：
-Gegeben ist ein Ausschnitt aus einem Debattenbeitrag zur Kuenstlichen Intelligenz:
+AUFGABE (analysieren, [AFB II])：
+Analysiere Argumenttypen und Stilmittel der Passage (Z. 1-7) und erlaeutere die Wirkungsabsicht. Gegeben ist ein Ausschnitt aus einem Debattenbeitrag zur Kuenstlichen Intelligenz:
 > "Sollten wir unseren Schulen wirklich erlauben, vor den Algorithmen der Tech-Giganten zu kapitulieren? Wollen wir lebendige Lehrer durch seelenlose Silizium-Roboter ersetzen? Eine aktuelle PISA-Sondererhebung von 2025 belegt eindeutig: Schueler, die taeglich KI-Bots fuer Hausaufgaben nutzen, verlieren innerhalb eines Jahres 15 Prozent ihrer eigenstaendigen Textanalysefaehigkeit. Es ist eine Schande fuer unsere Kulturnation!" (Zeilen 1–7)
 1. Bestimmen Sie die verwendeten Argumenttypen und rhetorischen Stilmittel in den Zeilen 1–7. (10 BE)
-2. Erlaeutern Sie im Dreischritt (Benennen $\to$ Belegen $\to$ Deuten), mit welcher Wirkungsabsicht der Autor argumentiert. (20 BE)
+2. Erlaeutern Sie im Dreischritt (Benennen -> Belegen -> Deuten), mit welcher Wirkungsabsicht der Autor argumentiert. (20 BE)
 
 HILFE:
-1. Schritt 1: Stilmittel isolieren: Zeile 1–3: Zwei aufeinanderfolgende rhetorische Fragen; Zeile 2: Alliteration ("seelenlose Silizium-Roboter") und abwertende Metapher; Zeile 7: Emphatischer Ausruf ("Schande fuer unsere Kulturnation").
-2. Schritt 2: Argumenttypen bestimmen: Zeile 3–6: Faktenargument mit Quellenbezug (PISA-Sondererhebung 2025); Zeile 6–7: Normatives Werturteil.
-3. Schritt 3: Wirkungsabsicht formulieren: Dramatisierung, Wecken von Zukunftsangst, Appell an das Bildungsethos.
+- Formdimension: Pruefe Frage-, Ausruf- und Alliterationssignale mit Stilmittelanalyse; benenne nur die Form, deute ihre Funktion noch nicht.
+- Pragmatische Dimension: Pruefe Autor, Leser und Empörungsziel mit Wirkabsichtsanalyse; sammle Sprecher, Adressat und Ziel, ohne das Urteil vorwegzunehmen.
+- Bilddimension: Pruefe Dystopie- und Kulturerbe-Motive mit Dystopiemotiv-Analyse; notiere Bildspender und Wirkung, ohne die Deutung zu setzen.
+
+COMPLETION (Lückentext):
+- Lies beide Saetze und ergaenze aus dem Gedaechtnis, ohne zurueckzublaettern:
+- Der Dreischritt lautet Benennen -> ___ -> Deuten.
+- Das Scheinargument greift ___ statt Sache an.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+KI-Passage mit Zeilenanker | 5 NP | Enger Beleg mit Zeile als Alternativweg
+Wirkungsabsicht mit Dreischritt | 5 NP | Argumenttypen-Tabelle als Alternativweg
+Suggestivstrategie-Nachweis | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
 
 MUSTERLÖSUNG:
 1. Analyse der Argumenttypen und Stilmittel:
@@ -129,8 +144,18 @@ VERGLEICH: Politischer Zeitungskommentar vs. Literarisch-philosophischer Essay
   - Argumentationsstruktur: Maandrierend, assoziativ, gedankliche Spaziergaenge; zwingt den Leser zu eigenstaendigen Schlussfolgerungen.
   - Sprache: Subtil, ironisch, voller Paradoxien, intellektuell distanziert.
 
+- [Wahl A] Wenn du Position A (Kommentar) waehlst, sammelst du in Schritt 6 Belege der Persuasion.
+- [Wahl B] Wenn du Position B (Essay) waehlst, sammelst du in Schritt 6 Belege des Gedankenspiels.
+
 Entscheidungsregel fuer die Klausur:
-Wird nach der `Textsortenbestimmung` gefragt: Identifiziere sofort den Grad der Eindeutigkeit! Schlagende Thesen mit klarem Appell = Kommentar; zweifelndes Abwaegen im Plauderton = Essay!
+Lesehinweis: Die ausformulierte Regel steht in der AUFLOESUNG weiter unten; waehle zuerst intuitiv A oder B.
+
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Position A oder B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Ueberfuehrt aus Entscheidungsregel: Wird nach der `Textsortenbestimmung` gefragt: Identifiziere sofort den Grad der Eindeutigkeit! Schlagende Thesen mit klarem Appell = Kommentar; zweifelndes Abwaegen im Plauderton = Essay!
+- Mechanismus A: Kommentar: These, Steigerung und Appell als Persuasion (Quelle: Leitartikel, Studienfassung). Dreischritt: Beleg = Scheinargument-Benennung | Mittel = Diskursethik-Massstab | Funktion = Toxizitaets-Urteil mit Begruendung
+- Mechanismus B: Essay: Zweifel, Assoziation und Ironie als Gedankenspiel (Quelle: Essay-Tradition, Studienparaphrase). Dreischritt: Beleg = Scheinargument-Benennung | Mittel = Diskursethik-Massstab | Funktion = Toxizitaets-Urteil mit Begruendung
+- Ein-Satz-Kern: Zahl ohne Kontrolle plus Pathos ohne Beleg ergibt Lenkung.
 
 ## Schritt 6 — check: Klausur-Transfer Scheinargumente & Medienkompetenz
 PRÜFUNGSSZENARIO (KLP NRW Deutsch EF/Q1 Inhaltsfeld 1: Texte / Sachtexte):
@@ -138,15 +163,22 @@ PRÜFUNGSSZENARIO (KLP NRW Deutsch EF/Q1 Inhaltsfeld 1: Texte / Sachtexte):
 In einer Debatte um Tempolimits auf Autobahnen schreibt ein Automobil-Blogger:
 > "Wer fuer ein Tempolimit von 130 km/h plaediert, hasst in Wahrheit den individuellen Freiheitsdrang der Buerger und moechte Deutschland in eine graue DDR-Planwirtschaft zurueckverwandeln. Ausserdem faehrt der Bundesvorsitzende der Umwelt-Initiative privat selbst einen alten Diesel, womit sich jede weitere Diskussion ueber seine Glaubwuerdigkeit eruebrigt."
 
-AUFGABE (analysieren & beurteilen, AFB II/III):
+AUFGABE (analysieren, [AFB II/III]):
 1. Identifizieren und benennen Sie die beiden in dieser Passage verwendeten Scheinargumente (Fehlschluesse). (12 BE)
 2. Beurteilen Sie die Qualitaet dieser Argumentation fuer einen sachlichen oeffentlichen Diskurs. (18 BE)
 
-ERWARTUNGSHORIZONT:
-- AFB II:
-  - *Fehlschluss 1 (Strohmann-Argument / Dammbruch-Argument)*: Dem politischen Gegner wird eine absurde Extremposition unterstellt, die dieser nie geaeussert hat ("hasst die Freiheit", "DDR-Planwirtschaft"). Anstatt sich mit dem sachlichen Vorschlag (130 km/h) auseinanderzusetzen, wird ein fiktiver, laecherlicher "Strohmann" aufgebaut und attackiert.
-  - *Fehlschluss 2 (Argumentum ad hominem / Tu-quoque-Vorwurf)*: Es wird die Person des Umwelt-Vorsitzenden und dessen privates Fahrverhalten angegriffen, anstatt ueber die CO2-Einsparung oder Unfallstatistiken eines Tempolimits auf Sachebene zu debattieren.
-- AFB III: Die Argumentation ist aus Sicht der Diskursethik (nach Juergen Habermas) voellig unzulaenglich und toxisch. Sie dient nicht der gemeinsamen Wahrheitsfindung oder dem rationalen Konsens, sondern der gezielten Polarisierung, Diskreditierung und Brunnenvergiftung des Debattenraumes. Durch die Vergiftung mit ideologischen Kampfbegriffen ("DDR-Planwirtschaft") und persoenlichen Vorwuerfen wird ein sachorientierter Kompromiss vorsaetzlich sabotiert.
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Scheinargument-Benennung | 5 NP | Enger Beleg mit Zeile als Alternativweg
+Diskursethik-Massstab | 5 NP | Fehlschluss-Steckbrief als Alternativweg
+Toxizitaets-Urteil mit Begruendung | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
+
+KERNSATZ (auswendig):
+- Kernsatz: `Die Sachtextanalyse dekonstruiert die strategische Verzahnung von argumentativer Begruendungsstruktur, rhetorischen Stilmitteln und persuasiver Intention des Autors.`
+- Zerlegung: Beleg | Mittel | Funktion
+- Aufschluesselung: Beleg = Leitartikel mit Argumenttypen und Stilmitteln | Mittel = Dreischritt Benennen -> Belegen -> Deuten | Funktion = Entlarvung der Wirkungsabsicht
+- Selbsttest: Die Sachtextanalyse dekonstruiert die strategische Verzahnung von argumentativer Begruendungsstruktur, rhetorischen Stilmitteln und ___ .
 
 ## Schritt 7 — check: Format-Check & Scoring
 30 XP Schnelltest zur Verstaendigungssicherung:

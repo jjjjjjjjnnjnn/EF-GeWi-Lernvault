@@ -8,11 +8,12 @@ operatoren: [analysieren, deuten, erlaeutern]
 klausurrelevant: true
 datum: 2026-09-26
 tags: [EF, Deutsch, CN]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 # Lernreise: Gedichtanalyse zum expressionistischen Grossstadtgedicht (L1, Ziel Klausur)
 
 <!-- Campaign: Detektive Fal 06 -->
+
 ## Schritt 1 — entdecken: Der versiegelte Umschlag zur Sache
 
 ZIELE（3条，15分钟可达成，先读中文，再记德语）：
@@ -29,6 +30,9 @@ HOOK：
 CN: 1912 年的柏林午夜，电车、烟囱、霓虹一起尖叫。诗人把语法砸碎，因为完整的句子装不下碎裂的城市。
 
 DE: Das Gedicht zerreisst Syntax, damit Wahrheit passt. Suche **Bild**, **Reihung** und **Anrede** mit Zeile.
+
+- [Station A] Wenn dich zuerst das Bild fesselt (Ferne, Stadt, Stern), verfolge in Schritt 4/5 die Nahspur.
+- [Station B] Wenn dich zuerst die Epoche ruft (um 1770, um 1912), verfolge in Schritt 4/5 die Fernspur.
 
 Klausur-Satz: `CN: 意象洪流淹没自我，形式碎裂即灵魂碎裂。DE: Reizflut gegen Ich; Formbruch spiegelt Seelenbruch.`
 
@@ -88,15 +92,27 @@ PRIMAERTEXT（Studienfassung: Bahnhofsnaechte (Ausschnitt, 15 Zeilen)，Studienf
 > Bahnhof, halte uns! Wir kennen kein Zuhause. (Z. 15)
 
 中文任务：逐行分析选段，每条论断配引文行号。
-德语 AUFGABE: Untersuche den Primaertext Zeile fuer Zeile mit Zitat und Zeile.
+德语 AUFGABE: Untersuche den Primaertext Zeile fuer Zeile mit Zitat und Zeile. [AFB II]
 TARGET（目标）：三个带行号证据，各配功能与判断，共四句。
 
-HILFE（中文在前）：
-1. 中文：两句交代背景。德语：Ordne den Fall in zwei Saetzen ein.
-2. 中文：锁两个证据加行号。德语：Sichere zwei Befunde mit Zeile.
-3. 中文：功能加判断收尾。德语：Deute Funktion im Fallganzen.
+HILFE（中文在前）:
+- CN: 从形式维度用Reihungsanalyse查Bild-, Reihungs- und Anrede-Signale，只记形式不定功能。DE: Formdimension: Pruefe Bild-, Reihungs- und Anrede-Signale mit Reihungsanalyse; benenne nur die Form.
+- CN: 从语用维度用Adressenanalyse查Sprecher, Angeredete und Sehnsuchtsziel，不定结论。DE: Pragmatische Dimension: Pruefe Sprecher, Angeredete und Sehnsuchtsziel mit Adressenanalyse; nimm das Urteil nicht vorweg.
+- CN: 从意象维度用Bildfeldanalyse查Fern-, Stadt- und Naturmetaphern，不定阐释。DE: Bilddimension: Pruefe Fern-, Stadt- und Naturmetaphern mit Bildfeldanalyse; setze die Deutung nicht.
 
 MARKIERAUFTRAG（双色标注）：CN: 黄色[GELB]标城市隐喻（Tier、Netze、Taschen），蓝色[BLAU]标并置与呼告。DE: Markiere mit GELB **Stadtmetaphern**, mit BLAU **Reihungen und Apostrophen**.
+
+COMPLETION (Lückentext):
+- Lies beide Saetze und ergaenze aus dem Gedaechtnis, ohne zurueckzublaettern:
+- Reihung ohne ___ erzeugt Tempo und Schock.
+- Die Chiffre braucht ___ zur Aufloesung.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Bildbeleg mit Zitat und Zeile | 5 NP | Enger Beleg mit Zeile als Alternativweg
+Verfahrensbestimmung (Reihung, Anrede) | 5 NP | Bildreihen-Tabelle als Alternativweg
+Hypothesenpruefung an der Schlussstrophe | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
 
 MUSTERLOESUNG: 中文示范思路：先背景一句，再证据加功能两句，最后判断一句收束。
 德语 MUSTERLOESUNG: Fall 06 zeigt das Verfahren in drei Schritten mit Beleg, Funktion und Deutung; die zweite Schicht ist entlarvt.
@@ -105,15 +121,25 @@ Klausur-Satz: `CN: 规律是堆叠越密，迷失越深。DE: Je dichter die Rei
 
 ## Schritt 5 — ausprobieren: Das doppelte Spiel Weg A gegen Weg B
 
-VERGLEICH（中文先行）：Weg A 微观细读（文本修辞细节），Weg B 宏观语境（时代历史秩序）。
-德语：Weg A liest mikroskopisch, Weg B deutet makroskopisch.
+VERGLEICH（中文先行）: CN: 近路看文本细节，远路看整体秩序，各跟一条路。
+德语：Weg A liest nah am Text, Weg B deutet fern im Kontext.
+- [Weg A] Wenn du Weg A waehlst, arbeitest du in Schritt 7 vor allem mit Nahbelegen und Zeilen.
+- [Weg B] Wenn du Weg B waehlst, arbeitest du in Schritt 7 vor allem mit Fernkontext und Ordnung.
+- CN: 选A走近路（引文行号），选B走远路（背景结构）。
 
 AUFGABE A（中文：哪条线索走近路？配引文）：Welche Spur verlangt Weg A?
 AUFGABE B（中文：哪个整体问题走远路？配背景）：Welche Frage verlangt Weg B?
 
-HILFE：A问形式细节选近路Weg A；B问整体结构选远路Weg B。
+HILFE: CN: 从三维度自查哪条路合适：形式近路A，语境远路B，意象两路通用，自己判定。DE: Pruefe dimensionsgeleitet mit Reihungsanalyse, Adressenanalyse und Bildfeldanalyse; ordne selbst zu, ohne Vorwegnahme.
 
-中文答案：A走近路靠引文细节，B走远路靠背景结构。
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg A oder Weg B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Ueberfuehrt aus VERGLEICH (Vorwahl-Fassung): VERGLEICH（中文先行）：Weg A 微观细读（文本修辞细节），Weg B 宏观语境（时代历史秩序）。 / 德语：Weg A liest mikroskopisch, Weg B deutet makroskopisch.
+- Ueberfuehrt aus Schritt-5-HILFE (Vorwahl-Fassung): HILFE：A问形式细节选近路Weg A；B问整体结构选远路Weg B。 /  / 中文答案：A走近路靠引文细节，B走远路靠背景结构。
+- Mechanismus A: 德语 ANTWORT A: CN: 微观数并置与呼告：Z. 5 的四连击与 Z. 3 的呼告定调。DE: Weg A misst mikroskopisch Reihung und Anrede. Dreischritt: Beleg = Hypothese mit Epochenanker | Mittel = Bild- und Verfahrensanalyse | Funktion = Urteil zur Selbstwerdung oder Entfremdung
+- Mechanismus B: 德语 ANTWORT B: CN: 宏观读工业化与异化：1912 年的人口、噪音与上帝远离。DE: Weg B deutet Industrialisierung und Gottferne als Epochenrahmen. Dreischritt: Beleg = Hypothese mit Epochenanker | Mittel = Bild- und Verfahrensanalyse | Funktion = Urteil zur Selbstwerdung oder Entfremdung
+- Ein-Satz-Kern: Bild mit Zeile plus Verfahren ergibt die einzige zaehlende Deutung.
+
 德语 ANTWORT A: CN: 微观数并置与呼告：Z. 5 的四连击与 Z. 3 的呼告定调。DE: Weg A misst mikroskopisch Reihung und Anrede.
 德语 ANTWORT B: CN: 宏观读工业化与异化：1912 年的人口、噪音与上帝远离。DE: Weg B deutet Industrialisierung und Gottferne als Epochenrahmen.
 
@@ -143,10 +169,24 @@ ROLLE（中文）：你是Feuilletonkritiker der Stadtpost，负责审稿。
 德语 ROLLE: Du bist Feuilletonkritiker der Stadtpost.
 SITUATION: Fall 06 liegt unbearbeitet vor dir.
 AUFGABE（中文）：150词左右，含背景、两个证据、功能判断。
+DE AUFGABE: Gestalte einen Klausurtext (circa 150 Woerter, [AFB III]) mit Einordnung, zwei Belegen, Funktion, Deutung und Schlussurteil.
 ZEIT: 25 Minuten (5 Hypothese, 12 Bild-Schreiben, 8 Epochen-Pruefung).
 RUBRIC (30 XP): Einordnung (6 XP) | Belege mit Zeile (10 XP) | Funktion plus Deutung (10 XP) | Fachsprache (4 XP).
 
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Hypothese mit Epochenanker | 5 NP | Enger Beleg mit Zeile als Alternativweg
+Bild- und Verfahrensanalyse | 5 NP | Strophenprotokoll als Alternativweg
+Urteil zur Selbstwerdung oder Entfremdung | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
+
 Klausur-Satz: `CN: 满分句须含并置、呼告与假设回扣。DE: AFB-III-Satz braucht Reihung, Apostrophe und Hypothesenbeleg.`
+
+KERNSATZ (auswendig):
+- Kernsatz: `CN: 规律是堆叠越密，迷失越深。DE: Je dichter die Reihung, desto tiefer die Verlorenheit.`
+- Zerlegung: Beleg | Mittel | Funktion
+- Aufschluesselung: Beleg = Bahnhofsbild mit Zeile | Mittel = Reihung plus Apostrophe | Funktion = Hypothese der entseelten Stadt
+- Selbsttest: CN: 规律是堆叠越密，迷失越深。DE: Je dichter die Reihung, desto tiefer die ___.
 
 ## Schritt 8 — reflexion: Takeaway und Rueckblick aus Fall 06
 

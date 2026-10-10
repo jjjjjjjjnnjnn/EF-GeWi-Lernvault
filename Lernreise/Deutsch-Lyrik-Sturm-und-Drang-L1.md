@@ -8,11 +8,12 @@ operatoren: [analysieren, deuten, interpretieren]
 klausurrelevant: true
 datum: 2026-09-25
 tags: [EF, Deutsch, Lyrik]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 # Lernreise: Sturm und Drang: Bildlichkeit und Deutungshypothese (L1, Ziel Klausur)
 
 <!-- Campaign: Detektive Fal 16 -->
+
 ## Schritt 1 — entdecken: Der versiegelte Umschlag zur Sache
 
 ZIELE (3 Ziele, nach 15 Minuten erreichbar):
@@ -26,6 +27,9 @@ HOOK:
 Ein anderer Nachlass, ein anderes Feuer: Eine Nachtigall schreit gegen Mauern aus Paragraphen. Der Dichter schreibt mit Gänsekiel, als waere es ein Schwert.
 
 Du vergleichst die zweite Hymne mit der ersten. Das **Sehnsuchtsbild** von Ferne und Stern traegt leiser, aber tiefer. Finde den zweiten Ton des Aufbruchs.
+
+- [Station A] Wenn dich zuerst das Bild fesselt (Ferne, Stadt, Stern), verfolge in Schritt 4/5 die Nahspur.
+- [Station B] Wenn dich zuerst die Epoche ruft (um 1770, um 1912), verfolge in Schritt 4/5 die Fernspur.
 
 Klausur-Satz: `Die zweite Hymne stellt Enge gegen Ferne: Sehnsucht oeffnet, was Pflicht verschliesst.`
 
@@ -85,15 +89,27 @@ PRIMAERTEXT (Studienfassung: Sternensehnsucht (Ausschnitt, 15 Zeilen), Studienfa
 
 [Werkzeug: gewi-reading]
 
-AUFGABE: Untersuche den Primaertext Zeile fuer Zeile und belege jede Aussage mit Zitat und Zeile.
+AUFGABE: Untersuche den Primaertext Zeile fuer Zeile und belege jede Aussage mit Zitat und Zeile. [AFB II]
 TARGET: Drei Belege mit Zeile, je mit Funktion und einer Deutung in vier Saetzen.
 
 HILFE:
-1. Schritt 1: Ordne den Fall in zwei Saetzen ein.
-2. Schritt 2: Sichere zwei Befunde mit Zeile.
-3. Schritt 3: Deute Befund und Funktion im Fallganzen.
+- Formdimension: Pruefe Bild-, Reihungs- und Anrede-Signale mit Reihungsanalyse; benenne nur die Form, deute ihre Funktion noch nicht.
+- Pragmatische Dimension: Pruefe Sprecher, Angeredete und Sehnsuchtsziel mit Adressenanalyse; sammle Sprecher, Adressat und Ziel, ohne das Urteil vorwegzunehmen.
+- Bilddimension: Pruefe Fern-, Stadt- und Naturmetaphern mit Bildfeldanalyse; notiere Bildspender und Wirkung, ohne die Deutung zu setzen.
 
 MARKIERAUFTRAG: Markiere mit GELB alle **Fern- und Sternbilder** (Ferne, Sterne, Strom, Gestaden). Markiere mit BLAU die **Sehnsuchtsappelle** (Sende, Trag, Oeffnet, Anreden).
+
+COMPLETION (Lückentext):
+- Lies beide Saetze und ergaenze aus dem Gedaechtnis, ohne zurueckzublaettern:
+- Reihung ohne ___ erzeugt Tempo und Schock.
+- Die Chiffre braucht ___ zur Aufloesung.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Bildbeleg mit Zitat und Zeile | 5 NP | Enger Beleg mit Zeile als Alternativweg
+Verfahrensbestimmung (Reihung, Anrede) | 5 NP | Bildreihen-Tabelle als Alternativweg
+Hypothesenpruefung an der Schlussstrophe | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
 
 MUSTERLOESUNG: Der Fall 16 zeigt das Kernverfahren in drei Schritten. Erstens sichert ein Zitat mit Zeile den Befund. Zweitens benennt die Funktion die Wirkung im Gefuege. Drittens schliesst die Deutung das Urteil. Damit ist die zweite Schicht entlarvt.
 
@@ -101,12 +117,22 @@ Klausur-Satz: `Die Regel der Sehnsucht: Je weiter das Bild, desto enger erschein
 
 ## Schritt 5 — ausprobieren: Das doppelte Spiel Weg A gegen Weg B
 
-VERGLEICH: Weg A liest mikroskopisch (Text, Rhetorik, Detail), Weg B deutet makroskopisch (Epoche, Kontext, Ordnung).
+VERGLEICH: Weg A (Nahspur: Bild, Reihung, Anrede mit Zeile) vs Weg B (Fernspur: Epoche, Kontext, Ordnung).
+- [Weg A] Wenn du Weg A waehlst, arbeitest du in Schritt 7 vor allem mit Nahbelegen und Zeilen.
+- [Weg B] Wenn du Weg B waehlst, arbeitest du in Schritt 7 vor allem mit Fernkontext und Ordnung.
 
 AUFGABE A: Welche Spur verlangt Weg A? Begruende mit Zitat und Zeile.
 AUFGABE B: Welche Frage verlangt Weg B? Begruende mit Kontext.
 
-HILFE: A fragt nach Form und Naehe, also Weg A. B fragt nach Rolle und Ganzem, also Weg B.
+HILFE: Pruefe dimensionsgeleitet, welcher Weg passt: Formdimension (Reihungsanalyse) spricht fuer Naehe und Weg A; Kontextdimension (Adressenanalyse) spricht fuer Ordnung und Weg B; Bilddimension (Bildfeldanalyse) sichert beide Wege. Ordne selbst zu; die Zuordnung wird nicht vorweggenommen.
+
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg A oder Weg B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Ueberfuehrt aus VERGLEICH (Vorwahl-Fassung): VERGLEICH: Weg A liest mikroskopisch (Text, Rhetorik, Detail), Weg B deutet makroskopisch (Epoche, Kontext, Ordnung).
+- Ueberfuehrt aus Schritt-5-HILFE (Vorwahl-Fassung): HILFE: A fragt nach Form und Naehe, also Weg A. B fragt nach Rolle und Ganzem, also Weg B.
+- Mechanismus A: ANTWORT A: Weg A folgt mikroskopisch der Bildreihe Gitter-gegen-Sterne und den Imperativen Z. 5, Z. 11 und Z. 13. Dreischritt: Beleg = Hypothese mit Epochenanker | Mittel = Bild- und Verfahrensanalyse | Funktion = Urteil zur Selbstwerdung oder Entfremdung
+- Mechanismus B: ANTWORT B: Weg B liest makroskopisch: Pietismus-Erbe, Wanderlust und Herzensreligion um 1770 tragen die leise Befreiung. Dreischritt: Beleg = Hypothese mit Epochenanker | Mittel = Bild- und Verfahrensanalyse | Funktion = Urteil zur Selbstwerdung oder Entfremdung
+- Ein-Satz-Kern: Bild mit Zeile plus Verfahren ergibt die einzige zaehlende Deutung.
 
 ANTWORT A: Weg A folgt mikroskopisch der Bildreihe Gitter-gegen-Sterne und den Imperativen Z. 5, Z. 11 und Z. 13.
 ANTWORT B: Weg B liest makroskopisch: Pietismus-Erbe, Wanderlust und Herzensreligion um 1770 tragen die leise Befreiung.
@@ -134,11 +160,24 @@ Klausur-Satz: `Haeufig verwechselt: Sanft heisst nicht schwach; Wiederholung ist
 
 ROLLE: Du bist Literaturkritiker der Stadtpost in der Pruefung.
 SITUATION: Ein Fall liegt unbearbeitet auf dem Tisch und verlangt Einordnung, Belege und Urteil.
-AUFGABE: Verfasse circa 150 Woerter mit Einordnung, zwei Belegen mit Zeile, Funktion, Deutung und Schlussurteil.
+AUFGABE: Gestalte einen Klausurtext (circa 150 Woerter, [AFB III]) mit Einordnung, zwei Belegen mit Zeile, Funktion, Deutung und Schlussurteil.
 ZEIT: 25 Minuten (5 These, 12 Fernbild-Schreiben, 8 Schluss-Pruefung).
 RUBRIC (30 XP): Einordnung korrekt (6 XP) | Zwei Belege mit Zeile (10 XP) | Funktion plus Deutung (10 XP) | Fachsprache und Schluss (4 XP).
 
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Hypothese mit Epochenanker | 5 NP | Enger Beleg mit Zeile als Alternativweg
+Bild- und Verfahrensanalyse | 5 NP | Strophenprotokoll als Alternativweg
+Urteil zur Selbstwerdung oder Entfremdung | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
+
 Klausur-Satz: `AFB-III-Mustersatz: Fernbilder (Z. 3-4) mit Sendungsappellen (Z. 5, Z. 11) belegen Selbstwerdung durch Ferne, weil Enge erst am Gegenbild sichtbar wird.`
+
+KERNSATZ (auswendig):
+- Kernsatz: `Die zweite Hymne stellt Enge gegen Ferne: Sehnsucht oeffnet, was Pflicht verschliesst.`
+- Zerlegung: Beleg | Mittel | Funktion
+- Aufschluesselung: Beleg = Enge (Gitter, Akten) gegen Ferne (Strom, Sterne) | Mittel = Sehnsuchtsappelle mit Wiederholung | Funktion = Oeffnung zur Selbstwerdung
+- Selbsttest: Die zweite Hymne stellt Enge gegen Ferne: ___ oeffnet, was Pflicht verschliesst.
 
 ## Schritt 8 — reflexion: Takeaway und Rueckblick aus Fall 16
 

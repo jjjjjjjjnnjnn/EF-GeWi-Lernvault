@@ -8,11 +8,12 @@ operatoren: [analysieren, beurteilen]
 klausurrelevant: true
 datum: 2026-09-26
 tags: [EF, Deutsch, Rhetorik]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 # Lernreise: Rhetorische Mittel und Funktionsanalyse (L1, Ziel Klausur)
 
 <!-- Campaign: Detektive Fal 13 -->
+
 ## Schritt 1 — entdecken: Der versiegelte Umschlag zur Sache
 
 ZIELE (3 Ziele, nach 15 Minuten erreichbar):
@@ -26,6 +27,9 @@ HOOK:
 Ein anderer Anlass, ein ernsterer Ton: Die Gedenkfeier verlangt Wuerde statt Tempo. Die Rednerin spricht leise, doch jede Pause sitzt. Der Saal haelt den Atem an.
 
 Du vergleichst das zweite Manuskript mit dem ersten. **Litotes** und **Euphemismus** daempfen, **Parallelismus** traegt. Miss Zurueckhaltung als Staerke.
+
+- [Station A] Wenn dich zuerst der Rhythmus packt (Wiederholung, Klang), verfolge in Schritt 4/5 die Nahspur.
+- [Station B] Wenn dich zuerst der Anlass fragt (Publikum, Ziel), verfolge in Schritt 4/5 die Fernspur.
 
 Klausur-Satz: `Die Gedenkrede zeigt Wuerde gegen Zerfall: Ordnung haelt, was Trauer aufreisst.`
 
@@ -83,15 +87,27 @@ PRIMAERTEXT (Studienfassung: Gedenkrede im Buergerhaus (Ausschnitt, 15 Zeilen), 
 > Vorleben werden wir - nicht morgen, nicht spaeter, heute. (Z. 14)
 > Heute neigen wir das Haupt; morgen heben wir das Werk. (Z. 15)
 
-AUFGABE: Untersuche den Primaertext Zeile fuer Zeile und belege jede Aussage mit Zitat und Zeile.
+AUFGABE: Untersuche den Primaertext Zeile fuer Zeile und belege jede Aussage mit Zitat und Zeile. [AFB II]
 TARGET: Drei Belege mit Zeile, je mit Funktion und einer Deutung in vier Saetzen.
 
 HILFE:
-1. Schritt 1: Ordne den Fall in zwei Saetzen ein.
-2. Schritt 2: Sichere zwei Befunde mit Zeile.
-3. Schritt 3: Deute Befund und Funktion im Fallganzen.
+- Formdimension: Pruefe Figuren- und Wiederholungsmuster mit Figurenanalyse; benenne nur die Form, deute ihre Funktion noch nicht.
+- Pragmatische Dimension: Pruefe Redner, Publikum und Appellziel mit Appellzielanalyse; sammle Sprecher, Adressat und Ziel, ohne das Urteil vorwegzunehmen.
+- Bilddimension: Pruefe Gemeinschafts- und Wuerdemetaphern mit Metaphernfeldanalyse; notiere Bildspender und Wirkung, ohne die Deutung zu setzen.
 
 MARKIERAUFTRAG: Markiere mit GELB alle **Wuerdemetaphern** (Wohnzimmer, Garten, Weg, Werk). Markiere mit BLAU die **Daempfungs- und Ordnungsfiguren** (Litotes, Parallelismus, Klimax).
+
+COMPLETION (Lückentext):
+- Lies beide Saetze und ergaenze aus dem Gedaechtnis, ohne zurueckzublaettern:
+- Die Anapher bindet durch ___ .
+- Die Klimax entscheidet mit ___ im dritten Glied.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Mittelbeleg mit Zitat und Zeile | 5 NP | Enger Beleg mit Zeile als Alternativweg
+Funktionsbestimmung im Appell | 5 NP | Figurenliste mit Zeilen als Alternativweg
+Steigerungsdeutung zur Pointe | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
 
 MUSTERLOESUNG: Der Fall 13 zeigt das Kernverfahren in drei Schritten. Erstens sichert ein Zitat mit Zeile den Befund. Zweitens benennt die Funktion die Wirkung im Gefuege. Drittens schliesst die Deutung das Urteil. Damit ist die zweite Schicht entlarvt.
 
@@ -99,12 +115,22 @@ Klausur-Satz: `Die Regel des Gedenkens: Je heikler der Anlass, desto strenger da
 
 ## Schritt 5 — ausprobieren: Das doppelte Spiel Weg A gegen Weg B
 
-VERGLEICH: Weg A liest mikroskopisch (Text, Rhetorik, Detail), Weg B deutet makroskopisch (Epoche, Kontext, Ordnung).
+VERGLEICH: Weg A (Nahspur: Figuren, Rhythmus, Zeile) vs Weg B (Fernspur: Anlass, Publikum, Appellziel).
+- [Weg A] Wenn du Weg A waehlst, arbeitest du in Schritt 7 vor allem mit Nahbelegen und Zeilen.
+- [Weg B] Wenn du Weg B waehlst, arbeitest du in Schritt 7 vor allem mit Fernkontext und Ordnung.
 
 AUFGABE A: Welche Spur verlangt Weg A? Begruende mit Zitat und Zeile.
 AUFGABE B: Welche Frage verlangt Weg B? Begruende mit Kontext.
 
-HILFE: A fragt nach Form und Naehe, also Weg A. B fragt nach Rolle und Ganzem, also Weg B.
+HILFE: Pruefe dimensionsgeleitet, welcher Weg passt: Formdimension (Figurenanalyse) spricht fuer Naehe und Weg A; Kontextdimension (Appellzielanalyse) spricht fuer Ordnung und Weg B; Bilddimension (Metaphernfeldanalyse) sichert beide Wege. Ordne selbst zu; die Zuordnung wird nicht vorweggenommen.
+
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg A oder Weg B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Ueberfuehrt aus VERGLEICH (Vorwahl-Fassung): VERGLEICH: Weg A liest mikroskopisch (Text, Rhetorik, Detail), Weg B deutet makroskopisch (Epoche, Kontext, Ordnung).
+- Ueberfuehrt aus Schritt-5-HILFE (Vorwahl-Fassung): HILFE: A fragt nach Form und Naehe, also Weg A. B fragt nach Rolle und Ganzem, also Weg B.
+- Mechanismus A: ANTWORT A: Weg A misst mikroskopisch Geruest und Daempfung: Parallelismen Z. 8-9, Litotes Z. 3, Klimax Z. 10-11. Dreischritt: Beleg = Einordnung von Anlass und Rede | Mittel = Figurenanalyse mit Steigerung | Funktion = Urteil zu Trost oder Mobilisierung
+- Mechanismus B: ANTWORT B: Weg B bedenkt makroskopisch Anlass und Publikum: Gedenkfeier verlangt Trostfaehigkeit statt Mobilisierung. Dreischritt: Beleg = Einordnung von Anlass und Rede | Mittel = Figurenanalyse mit Steigerung | Funktion = Urteil zu Trost oder Mobilisierung
+- Ein-Satz-Kern: Figur mit Zeile plus Steigerung ergibt die einzige zaehlende Wirkung.
 
 ANTWORT A: Weg A misst mikroskopisch Geruest und Daempfung: Parallelismen Z. 8-9, Litotes Z. 3, Klimax Z. 10-11.
 ANTWORT B: Weg B bedenkt makroskopisch Anlass und Publikum: Gedenkfeier verlangt Trostfaehigkeit statt Mobilisierung.
@@ -132,11 +158,24 @@ Klausur-Satz: `Haeufig verwechselt: Milde ist kein Ausweichen; erst Grenze gegen
 
 ROLLE: Du bist Redenschreiber der Stadtverwaltung in der Pruefung.
 SITUATION: Ein Fall liegt unbearbeitet auf dem Tisch und verlangt Einordnung, Belege und Urteil.
-AUFGABE: Verfasse circa 150 Woerter mit Einordnung, zwei Belegen mit Zeile, Funktion, Deutung und Schlussurteil.
+AUFGABE: Gestalte einen Klausurtext (circa 150 Woerter, [AFB III]) mit Einordnung, zwei Belegen mit Zeile, Funktion, Deutung und Schlussurteil.
 ZEIT: 25 Minuten (5 Figur, 12 Mass-Schreiben, 8 Appell-Pruefung).
 RUBRIC (30 XP): Einordnung korrekt (6 XP) | Zwei Belege mit Zeile (10 XP) | Funktion plus Deutung (10 XP) | Fachsprache und Schluss (4 XP).
 
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Einordnung von Anlass und Rede | 5 NP | Enger Beleg mit Zeile als Alternativweg
+Figurenanalyse mit Steigerung | 5 NP | Appellkurve als Alternativweg
+Urteil zu Trost oder Mobilisierung | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
+
 Klausur-Satz: `AFB-III-Mustersatz: Litotes (Z. 3) mit Klimax (Z. 10-11) belegt wuerdevollen Trost, weil Daempfung Trauer sagbar und Steigerung Auftrag faehig macht.`
+
+KERNSATZ (auswendig):
+- Kernsatz: `Parallelismus, Litotes und Klimax definieren die leise Rhetorik.`
+- Zerlegung: Beleg | Mittel | Funktion
+- Aufschluesselung: Beleg = Gedenkrede mit Zeile (Z. 3, Z. 8-9) | Mittel = Daempfung mit Mass und Ordnung | Funktion = wuerdevoller Trost mit Auftrag
+- Selbsttest: Parallelismus, Litotes und ___ definieren die leise Rhetorik.
 
 ## Schritt 8 — reflexion: Takeaway und Rueckblick aus Fall 13
 

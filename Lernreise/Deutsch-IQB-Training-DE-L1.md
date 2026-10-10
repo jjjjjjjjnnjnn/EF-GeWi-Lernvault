@@ -8,11 +8,12 @@ operatoren: [analysieren, erörtern, beurteilen]
 klausurrelevant: true
 datum: 2026-09-25
 tags: [EF, Deutsch, Klausur-Training]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 # Lernreise: IQB-Training: Analyse und Eroerterung (L1, Ziel Klausur)
 
 <!-- Campaign: Detektive Fal 03 -->
+
 ## Schritt 1 — entdecken: Der versiegelte Umschlag zur Sache
 
 ZIELE (3 Ziele, nach 15 Minuten erreichbar):
@@ -26,6 +27,9 @@ HOOK:
 Der IQB-Pool schickt zwei Sachtexte zum digitalen Lernen: Kommentar gegen Kommentar, ein Doppeloperator, sechzig Minuten. Wer das Raster zuerst legt, bleibt ruhig. Du erhaeltst das IQB-Trainingsbrett mit Zeitplan. Jeder **Vergleich** braucht ein **Kriterium**.
 
 Variante B trainiert denselben Pool an einem zweiten Textpaar zum Schulkiosk mit engerem Zeitplan und vertauschten Operatoren (darstellen gegen beurteilen).
+
+- [Station A] Wenn du zuerst das Raster legst (Kriterien, Paare), verfolge in Schritt 4/5 die Raster-Spur.
+- [Station B] Wenn du zuerst die Uhr stellst (Bloecke, Puffer), verfolge in Schritt 4/5 die Zeit-Spur.
 
 Klausur-Satz: `Der Pool belohnt Raster: Wer Kriterien zuerst legt, vergleicht das Lerntext-Paar sauber.`
 
@@ -67,13 +71,25 @@ Bezug zum Konzept: `Raster plus Uhr ergibt Leistung: Paar-Belege tragen, Puffer 
 
 [Werkzeug: lego]
 
-AUFGABE: Erstelle zum Lerntext-Paar Kriterienraster, Sechzig-Minuten-Plan und je zwei Paar-Belege.
+AUFGABE: Analysiere das Lerntext-Paar und erstelle Kriterienraster, Sechzig-Minuten-Plan und Paar-Belege. [AFB II]
 TARGET: Kriterienraster mit drei Kriterien, Sechzig-Minuten-Plan mit Puffer und je zwei Paar-Belege zum Lerntext-Paar in vier Saetzen.
 
 HILFE:
-1. Schritt 1: Ordne den Fall in zwei Saetzen ein.
-2. Schritt 2: Sichere zwei Bausteine mit Beleg.
-3. Schritt 3: Deute Baustein und Funktion im Fallganzen.
+- Formdimension: Pruefe Kriterien- und Paar-Beleg-Signale mit Kriterienanalyse; benenne nur die Form, deute ihre Funktion noch nicht.
+- Pragmatische Dimension: Pruefe Aufgabenstellung und Doppeloperator mit Operatorzerlegung; sammle Sprecher, Adressat und Ziel, ohne das Urteil vorwegzunehmen.
+- Bilddimension: Pruefe Vergleichswoerter und Funktionsmarker mit Vergleichswortanalyse; notiere Bildspender und Wirkung, ohne die Deutung zu setzen.
+
+COMPLETION (Lückentext):
+- Lies beide Saetze und ergaenze aus dem Gedaechtnis, ohne zurueckzublaettern:
+- Vor dem Lesen steht ___ mit drei Kriterien.
+- Der Schluss braucht eigene Minuten plus ___ .
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Kriterienraster mit drei Kriterien | 5 NP | Enger Beleg mit Zeile als Alternativweg
+Paar-Belege mit Zeilen | 5 NP | Mindmap-Raster als Alternativweg
+Urteil mit Massstab und Puffer | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
 
 MUSTERLOESUNG: Der Fall 03 zeigt das Verfahren in drei Schritten. Erstens sichert ein Beleg den Kern. Zweitens traegt die Funktion die Wirkung. Drittens schliesst die Deutung das Urteil.
 
@@ -81,12 +97,22 @@ Klausur-Satz: `Die Pool-Regel: Je fremder der Text, desto fester das Raster.`
 
 ## Schritt 5 — ausprobieren: Das doppelte Spiel Weg A gegen Weg B
 
-VERGLEICH: Weg A legt das Kriterienraster zum Lerntext-Paar zuerst (These, Beleg, Lenkung) und vergleicht Kommentar gegen Kommentar Zeile fuer Zeile, Weg B steuert die Sechzig-Minuten-Uhr zuerst und sichert Belegdichte pro Kriterium.
+VERGLEICH: Weg A (Raster zuerst: Kriterien, Paar-Belege) vs Weg B (Uhr zuerst: Bloecke, Dichte, Puffer).
+- [Weg A] Wenn du Weg A waehlst, arbeitest du in Schritt 7 vor allem mit Nahbelegen und Zeilen.
+- [Weg B] Wenn du Weg B waehlst, arbeitest du in Schritt 7 vor allem mit Fernkontext und Ordnung.
 
 AUFGABE A: Lege zum Lerntext-Paar drei Kriterien fest und sichere je zwei Paar-Belege mit Zeile. Begruende mit Raster.
 AUFGABE B: Verteile sechzig Minuten auf Raster, Dichte und Puffer und begruende die Schlussredaktion zum Kiosk-Paar. Begruende mit Zeit.
 
-HILFE: A fragt nach Vergleich und Naehe, also Raster zuerst. B fragt nach Steuerung und Ganzem, also Uhr zuerst.
+HILFE: Pruefe dimensionsgeleitet, welcher Weg passt: Formdimension (Kriterienanalyse) spricht fuer Naehe und Weg A; Kontextdimension (Operatorzerlegung) spricht fuer Ordnung und Weg B; Bilddimension (Vergleichswortanalyse) sichert beide Wege. Ordne selbst zu; die Zuordnung wird nicht vorweggenommen.
+
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg A oder Weg B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Ueberfuehrt aus VERGLEICH (Vorwahl-Fassung): VERGLEICH: Weg A legt das Kriterienraster zum Lerntext-Paar zuerst (These, Beleg, Lenkung) und vergleicht Kommentar gegen Kommentar Zeile fuer Zeile, Weg B steuert die Sechzig-Minuten-Uhr zuerst und sichert Belegdichte pro Kriterium.
+- Ueberfuehrt aus Schritt-5-HILFE (Vorwahl-Fassung): HILFE: A fragt nach Vergleich und Naehe, also Raster zuerst. B fragt nach Steuerung und Ganzem, also Uhr zuerst.
+- Mechanismus A: ANTWORT A: Weg A arbeitet mit Raster am Lerntext-Paar: Kriterien, Paar-Belege und Funktionswoerter Zeile fuer Zeile. Dreischritt: Beleg = Einordnung von Pool und Operator | Mittel = Vergleich mit Paar-Belegen | Funktion = Urteil mit Massstab
+- Mechanismus B: ANTWORT B: Weg B steuert mit Uhr die Pruefung: Zeitbloecke, Punktraster und Schlusskontrolle sichern die Form. Dreischritt: Beleg = Einordnung von Pool und Operator | Mittel = Vergleich mit Paar-Belegen | Funktion = Urteil mit Massstab
+- Ein-Satz-Kern: Raster mit Paar-Belegen plus Puffer besteht jeden Pool.
 
 ANTWORT A: Weg A arbeitet mit Raster am Lerntext-Paar: Kriterien, Paar-Belege und Funktionswoerter Zeile fuer Zeile.
 ANTWORT B: Weg B steuert mit Uhr die Pruefung: Zeitbloecke, Punktraster und Schlusskontrolle sichern die Form.
@@ -114,11 +140,24 @@ Klausur-Satz: `Haeufig verwechselt: Viel schreiben ist nicht viel belegen; erst 
 
 ROLLE: Du bist IQB-Coach der Stufe in der Pruefung.
 SITUATION: Ein Fall liegt unbearbeitet auf dem Tisch und verlangt Einordnung, Belege und Urteil.
-AUFGABE: Verfasse circa 150 Woerter mit Einordnung, zwei Belegen, Funktion, Deutung und Schlussurteil.
+AUFGABE: Gestalte einen Klausurtext (circa 150 Woerter, [AFB III]) mit Einordnung, zwei Belegen, Funktion, Deutung und Schlussurteil.
 ZEIT: 25 Minuten (5 Raster, 12 Dichte-Schreiben, 8 Puffer-Pruefung).
 RUBRIC (30 XP): Einordnung korrekt (6 XP) | Zwei Belege (10 XP) | Funktion plus Deutung (10 XP) | Fachsprache und Schluss (4 XP).
 
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Einordnung von Pool und Operator | 5 NP | Enger Beleg mit Zeile als Alternativweg
+Vergleich mit Paar-Belegen | 5 NP | Kriterien-Tabelle als Alternativweg
+Urteil mit Massstab | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
+
 Klausur-Satz: `AFB-III-Mustersatz: Im Vergleich beider Texte (Kriterien A, B) belegt das Paar Z. X gegen Z. Y das Urteil mit Massstab M.`
+
+KERNSATZ (auswendig):
+- Kernsatz: `Operator, Kriterien und Belegdichte definieren jedes IQB-Training.`
+- Zerlegung: Beleg | Mittel | Funktion
+- Aufschluesselung: Beleg = fremdes Textpaar im Pool | Mittel = Kriterienraster mit Paar-Belegen und Zeitplan | Funktion = vergleichbare Leistung unter Zeitdruck
+- Selbsttest: Operator, Kriterien und ___ definieren jedes IQB-Training.
 
 ## Schritt 8 — reflexion: Takeaway und Rueckblick aus Fall 03
 

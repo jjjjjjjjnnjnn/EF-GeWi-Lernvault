@@ -8,11 +8,12 @@ operatoren: [analysieren, deuten, charakterisieren]
 klausurrelevant: true
 datum: 2026-09-25
 tags: [EF, Deutsch, Drama]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 # Lernreise: Szenenanalyse im Drama (L1, Ziel Klausur)
 
 <!-- Campaign: Detektive Fal 02 -->
+
 ## Schritt 1 — entdecken: Der versiegelte Umschlag zur Sache
 
 ZIELE (3 Ziele, nach 15 Minuten erreichbar):
@@ -26,6 +27,9 @@ HOOK:
 Das Archiv meldet ein verschollenes Verhoerprotokoll vom Stadttor. Zwei Stimmen streiten um einen einzigen Passierschein. Die Wache sagt, sie folge nur Befehlen.
 
 Du hoerst das Tonband der Nacht ab. Jede **Pause** ist laenger als der Satz davor. Miss, wer das Schweigen setzt.
+
+- [Station A] Wenn dich zuerst die Naehe des Textes lockt (Zitat, Zeile), verfolge in Schritt 4/5 die Nahspur.
+- [Station B] Wenn dich zuerst die Ordnung dahinter lockt (Epoche, System), verfolge in Schritt 4/5 die Fernspur.
 
 Klausur-Satz: `Am Tor prallt Ruf gegen Schrift: Die Nacht bevorzugt den lauteren, der Schein den leiseren.`
 
@@ -86,15 +90,27 @@ PRIMAERTEXT (Studienfassung: Verhoer am Stadttor (Ausschnitt, 15 Zeilen), Studie
 
 [Werkzeug: gewi-reading]
 
-AUFGABE: Untersuche den Primaertext Zeile fuer Zeile und belege jede Aussage mit Zitat und Zeile.
+AUFGABE: Untersuche den Primaertext Zeile fuer Zeile und belege jede Aussage mit Zitat und Zeile. [AFB II]
 TARGET: Drei Belege mit Zeile, je mit Funktion und einer Deutung in vier Saetzen.
 
 HILFE:
-1. Schritt 1: Ordne den Fall in zwei Saetzen ein.
-2. Schritt 2: Sichere zwei Befunde mit Zeile.
-3. Schritt 3: Deute Befund und Funktion im Fallganzen.
+- Formdimension: Pruefe Replik-, Modus- und Tempo-Signale mit Replik- und Modalitypsanalyse; benenne nur die Form, deute ihre Funktion noch nicht.
+- Pragmatische Dimension: Pruefe Sprecher, Adressat und Sprechhandlung mit Sprechaktanalyse; sammle Sprecher, Adressat und Ziel, ohne das Urteil vorwegzunehmen.
+- Bilddimension: Pruefe Machtmetaphern und Raumzeichen mit Raum- und Bildfeldanalyse; notiere Bildspender und Wirkung, ohne die Deutung zu setzen.
 
 MARKIERAUFTRAG: Markiere mit GELB alle **Ordnungsmetaphern** (Schein, Siegel, Ruf, Laterne). Markiere mit BLAU die **Machtwechsel-Signale** (leiser werden, Lanze senken, beiseitetreten).
+
+COMPLETION (Lückentext):
+- Lies beide Saetze und ergaenze aus dem Gedaechtnis, ohne zurueckzublaettern:
+- Der Umschlagpunkt liegt meist in ___ .
+- Jede Deutung braucht Zitat mit Zeile plus ___ .
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Befund mit Zitat und Zeile | 5 NP | Enger Beleg mit Zeile als Alternativweg
+Funktion im Machtgefuege | 5 NP | Konstellationsskizze als Alternativweg
+Deutung der Machtverschiebung | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
 
 MUSTERLOESUNG: Der Fall 02 zeigt das Kernverfahren in drei Schritten. Erstens sichert ein Zitat mit Zeile den Befund. Zweitens benennt die Funktion die Wirkung im Gefuege. Drittens schliesst die Deutung das Urteil. Damit ist die zweite Schicht entlarvt.
 
@@ -102,12 +118,22 @@ Klausur-Satz: `Die Regel der Szene: Wer zuerst fragt, hat die Lanze schon gesenk
 
 ## Schritt 5 — ausprobieren: Das doppelte Spiel Weg A gegen Weg B
 
-VERGLEICH: Weg A liest mikroskopisch (Text, Rhetorik, Detail), Weg B deutet makroskopisch (Epoche, Kontext, Ordnung).
+VERGLEICH: Weg A (Nahspur: Replik, Anweisung, Tempo mit Zeile) vs Weg B (Fernspur: Ordnung, Epoche, Kontext).
+- [Weg A] Wenn du Weg A waehlst, arbeitest du in Schritt 7 vor allem mit Nahbelegen und Zeilen.
+- [Weg B] Wenn du Weg B waehlst, arbeitest du in Schritt 7 vor allem mit Fernkontext und Ordnung.
 
 AUFGABE A: Welche Spur verlangt Weg A? Begruende mit Zitat und Zeile.
 AUFGABE B: Welche Frage verlangt Weg B? Begruende mit Kontext.
 
-HILFE: A fragt nach Form und Naehe, also Weg A. B fragt nach Rolle und Ganzem, also Weg B.
+HILFE: Pruefe dimensionsgeleitet, welcher Weg passt: Formdimension (Replik- und Modalitypsanalyse) spricht fuer Naehe und Weg A; Kontextdimension (Sprechaktanalyse) spricht fuer Ordnung und Weg B; Bilddimension (Raum- und Bildfeldanalyse) sichert beide Wege. Ordne selbst zu; die Zuordnung wird nicht vorweggenommen.
+
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg A oder Weg B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Ueberfuehrt aus VERGLEICH (Vorwahl-Fassung): VERGLEICH: Weg A liest mikroskopisch (Text, Rhetorik, Detail), Weg B deutet makroskopisch (Epoche, Kontext, Ordnung).
+- Ueberfuehrt aus Schritt-5-HILFE (Vorwahl-Fassung): HILFE: A fragt nach Form und Naehe, also Weg A. B fragt nach Rolle und Ganzem, also Weg B.
+- Mechanismus A: ANTWORT A: Weg A vermisst mikroskopisch Satzmodus und Zeilenlaenge: Die Wache wechselt ab Z. 9 von Befehl zu Frage. Dreischritt: Beleg = Szeneneinordnung mit Zeilenanker | Mittel = Formanalyse mit Anweisung | Funktion = Urteil zur Verschiebung
+- Mechanismus B: ANTWORT B: Weg B ordnet makroskopisch ein: Torrecht, naechtliche Sperre und Schriftvorrang erklaeren den Sieg des Scheins. Dreischritt: Beleg = Szeneneinordnung mit Zeilenanker | Mittel = Formanalyse mit Anweisung | Funktion = Urteil zur Verschiebung
+- Ein-Satz-Kern: Zitat mit Zeile plus Funktion ergibt die einzige zaehlende Deutung.
 
 ANTWORT A: Weg A vermisst mikroskopisch Satzmodus und Zeilenlaenge: Die Wache wechselt ab Z. 9 von Befehl zu Frage.
 ANTWORT B: Weg B ordnet makroskopisch ein: Torrecht, naechtliche Sperre und Schriftvorrang erklaeren den Sieg des Scheins.
@@ -135,11 +161,24 @@ Klausur-Satz: `Haeufig verwechselt: Lautstaerke ist keine Macht; erst Zeile, Mod
 
 ROLLE: Du bist Theaterkritiker der Stadtpost in der Pruefung.
 SITUATION: Ein Fall liegt unbearbeitet auf dem Tisch und verlangt Einordnung, Belege und Urteil.
-AUFGABE: Verfasse circa 150 Woerter mit Einordnung, zwei Belegen mit Zeile, Funktion, Deutung und Schlussurteil.
+AUFGABE: Gestalte einen Klausurtext (circa 150 Woerter, [AFB III]) mit Einordnung, zwei Belegen mit Zeile, Funktion, Deutung und Schlussurteil.
 ZEIT: 25 Minuten (5 Einordnung, 12 Szenen-Schreiben, 8 Zeilen-Pruefung).
 RUBRIC (30 XP): Einordnung korrekt (6 XP) | Zwei Belege mit Zeile (10 XP) | Funktion plus Deutung (10 XP) | Fachsprache und Schluss (4 XP).
 
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Szeneneinordnung mit Zeilenanker | 5 NP | Enger Beleg mit Zeile als Alternativweg
+Formanalyse mit Anweisung | 5 NP | Umschlagpunkt-Skizze als Alternativweg
+Urteil zur Verschiebung | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
+
 Klausur-Satz: `AFB-III-Mustersatz: Die Wache verliert ab Z. 9 die Initiative (Frage statt Befehl, Lanze sinkt), sodass der Schein als Schriftrecht den Ruf besiegt.`
+
+KERNSATZ (auswendig):
+- Kernsatz: `Replik, Anweisung und Tempo bilden den Dreifachbeleg jeder Szenendeutung.`
+- Zerlegung: Beleg | Mittel | Funktion
+- Aufschluesselung: Beleg = Replik mit Zeile und Regieanweisung | Mittel = Dreifachbeleg aus Replik, Anweisung und Tempo | Funktion = Sicherung der Szenendeutung
+- Selbsttest: Replik, Anweisung und ___ bilden den Dreifachbeleg jeder Szenendeutung.
 
 ## Schritt 8 — reflexion: Takeaway und Rueckblick aus Fall 02
 

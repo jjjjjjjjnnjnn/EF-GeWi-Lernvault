@@ -8,7 +8,7 @@ operatoren: [analysieren, deuten, beurteilen]
 klausurrelevant: true
 datum: 2026-10-03
 tags: [EF, Deutsch, Epik, Kafka, Die-Verwandlung, Entfremdung, Parabel, Moderne]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Franz Kafka: Die Verwandlung – Entfremdung, Vater-Sohn-Konflikt und Existenzkrise (L1, Ziel Klausur)
@@ -26,10 +26,13 @@ ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
 "Als Gregor Samsa eines Morgens aus unruhigen Traeumen erwachte, fand er sich in seinem Bett zu einem ungeheuren Ungeziefer verwandelt." Mit diesem weltberuehmten ersten Satz eroeffnet Franz Kafka eines der ergreifendsten und verstoeckendsten Meisterwerke der Weltliteratur. Doch das wahrhaft Grauenhafte an dieser Szene ist nicht die physische Verwandlung: Gregor tastet nicht entsetzt nach einem Arzt, er schreit nicht um Hilfe und verfaellt nicht in Panik. Stattdessen blickt er nuechtern auf seinen gewoelbten, braunen Panzerbauch, mustert seine vielen klaeglich zappelnden Beinchen – und seine allererste, panische Sorge gilt der Wanduhr! Er denkt verzweifelt: "Du lieber Gott, es ist schon halb sieben! Ich habe den Zug um fuenf Uhr verpasst! Was wird der Herr Prokurist sagen? Mein Chef wird toben, meine Eltern werden verzweifeln!" Ein Mensch verwandelt sich in ein abstossendes Rieseninsekt – und das Einzige, was ihn quaelt, ist die Angst vor der Zurechtweisung seines Vorgesetzten. Praegnanter und bitterer hat niemals ein Dichter die totale Selbstentfremdung des modernen Arbeitsmenschen auf den Punkt gebracht.
 
+- [Station A] Wenn dich Gregors Sehnsucht ruehrt (Musik, Naehe), sammelst du in Schritt 6 Belege der Menschlichkeit.
+- [Station B] Wenn dich die Familienlogik empoert (Nutzen, Last), sammelst du in Schritt 6 Belege der Verrohung.
+
 `Klausur-Satz: Kafkas Verwandlung ist die buchstaebliche Verkoerperung der existentiellen Entfremdung eines Menschen, der im kapitalistischen Leistungsgetriebe auf seine reine oekonomische Nuetzlichkeit reduziert wurde.`
 
 ## Schritt 2 — entdecken: Das Begriffsinventar des Kafkaesken
-PRETRAINING术语盒（核心4词，先读三遍中德，合书自测中文→德语）：
+PRETRAINING术语盒（核心4词，先读三遍中德，合书自测中文->德语）：
 
 - 卡夫卡式 / 荒诞困境 — Kafkaesk: 描述一种虽然细节极其写实精确、整体逻辑却如同梦魇般荒诞、个体面对冷酷官僚与无形权威陷入绝望无助的状态。 Ein unheimlicher Zustand absurder Bedrohung und existenzieller Ausweglosigkeit gegenueber unbegreiflichen Machtapparaten.
 - 身体与劳动异化 — Entfremdung: 人作为有情感的主体丧失对自身肉体、生活意义与劳动成果的掌控，蜕化为单纯维持家庭生计的工具。 Der Verlust der Selbstbestimmung des Subjekts in einem rein oekonomischen Nutzendenken.
@@ -64,11 +67,28 @@ Drei Phasen des Abstiegs und der Verwandlung:
 
 [Werkzeug: text-analyse]
 
-AUFGABE (analysieren & deuten, AFB I/II):
-Betrachte folgende Schluesselszene aus dem 3. Kapitel, als Gregor dem Geigenspiel seiner Schwester im Wohnzimmer lauscht:
+AUFGABE (deuten, [AFB II]):
+Deute folgende Schluesselszene aus dem 3. Kapitel, als Gregor dem Geigenspiel seiner Schwester im Wohnzimmer lauscht:
 "War er ein Tier, da ihn Musik so ergriff? Ihm war, als zeige sich ihm der Weg zu der ersehnten unbekannten Nahrung."
 1. Analysiere das rhetorische Mittel der paradoxen Frage ("War er ein Tier...?").
 2. Deute die Metapher der "ersehnten unbekannten Nahrung" im Kontrast zu den verfaulten Essensresten, die ihm Grete ins Zimmer wirft.
+
+HILFE:
+- Formdimension: Pruefe Frage-, Blick- und Schweigesignale mit Frageanalyse; benenne nur die Form, deute ihre Funktion noch nicht.
+- Pragmatische Dimension: Pruefe Erzaehlernaehe und Familien-Adressaten mit Familienlogik-Analyse; sammle Sprecher, Adressat und Ziel, ohne das Urteil vorwegzunehmen.
+- Bilddimension: Pruefe Tier-, Nahrungs- und Wohnungsmotive mit Nahrungs- und Raumbildanalyse; notiere Bildspender und Wirkung, ohne die Deutung zu setzen.
+
+COMPLETION (Lückentext):
+- Lies beide Saetze und ergaenze aus dem Gedaechtnis, ohne zurueckzublaettern:
+- Die Musikszene beweist Gregors ___ im entstellten Moment.
+- Die unbekannte Nahrung meint ___ statt faulender Reste.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Musikszene mit paradoxer Frage | 5 NP | Enger Beleg mit Zeile als Alternativweg
+Menschlichkeitsnachweis im Tierleib | 5 NP | Kapitelkurve als Alternativweg
+Nahrungsmetapher als Seelenhunger | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
 
 MUSTERLOESUNG:
 1. Analyse der paradoxen Frage:
@@ -92,21 +112,44 @@ VERGLEICH: Existenzielle Selbstentfremdung (Gregor) vs. Buergerliche Funktionslo
   - Haltung: Der Mensch zaehlt nur, solange er Geld nach Hause bringt; Kranke und Nutzlose werden zur unertraeglichen Last.
   - Schlusspunkt: Nach Gregors Tod atmet die Familie auf, stellt fest, dass alle drei Arbeit haben, und plant heiter die Verheiratung der bluehenden Tochter.
 
+- [Wahl A] Wenn du Position A (Gregors Sehnsucht) waehlst, sammelst du in Schritt 6 Belege der Menschlichkeit.
+- [Wahl B] Wenn du Position B (Familienlogik) waehlst, sammelst du in Schritt 6 Belege der Verrohung.
+
 Entscheidungsregel fuer die Klausur:
-Wird nach `Deutungsansaetzen bei Kafka` gefragt, fuehre immer mindestens zwei Dimensionen an: die sozial-oekonomische Deutung (Kritik an entfremdeter Lohnarbeit) UND die biographisch-psychoanalytische Deutung (Kafkas eigener uebermaechtiger Vater Hermann Kafka und der "Brief an den Vater")!
+Lesehinweis: Die ausformulierte Regel steht in der AUFLOESUNG weiter unten; waehle zuerst intuitiv A oder B.
+
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Position A oder B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Ueberfuehrt aus Entscheidungsregel: Wird nach `Deutungsansaetzen bei Kafka` gefragt, fuehre immer mindestens zwei Dimensionen an: die sozial-oekonomische Deutung (Kritik an entfremdeter Lohnarbeit) UND die biographisch-psychoanalytische Deutung (Kafkas eigener uebermaechtiger Vater Hermann Kafka und der "Brief an den Vater")!
+- Mechanismus A: Gregors Sehnsucht: Musik und Naehe als Menschlichkeitsrest (Quelle: Kafka, Die Verwandlung, Kap. 3, Studienparaphrase). Dreischritt: Beleg = Grete-Wandel mit Kapitelbeleg | Mittel = Symboldeutung des Pelzbildes | Funktion = Aktualitaetsurteil mit Massstab
+- Mechanismus B: Familienlogik: Nutzenkalkuel und Verleugnung als Verrohung (Quelle: Kafka, Die Verwandlung, Kap. 3, Studienparaphrase). Dreischritt: Beleg = Grete-Wandel mit Kapitelbeleg | Mittel = Symboldeutung des Pelzbildes | Funktion = Aktualitaetsurteil mit Massstab
+- Ein-Satz-Kern: Nutzen frisst Menschlichkeit, Musik beweist sie.
 
 ## Schritt 6 — check: Klausur-Transfer Dehumanisierung und Moderne
 
 PRUEFUNGSSZENARIO (KLP NRW Deutsch LK Inhaltsfeld 1: Epik):
 
-### AFB I: Textstruktur
-Arbeite heraus, wie sich Gretes Verhalten gegenueber Gregor vom 1. bis zum 3. Kapitel veraendert (von mitfuehlender Fuersorge ueber Routine bis zur radikalen Verleugnung: "Es muss weg").
+### [AFB I]: Textstruktur
+Stelle dar, wie sich Gretes Verhalten gegenueber Gregor vom 1. bis zum 3. Kapitel veraendert (von mitfuehlender Fuersorge ueber Routine bis zur radikalen Verleugnung: "Es muss weg").
 
-### AFB II: Symbolanalyse
+### [AFB II]: Symbolanalyse
 Interpretiere die Symbolik des Bildes der "Dame im Pelz", das Gregor an der Zimmerwand mit seinem eigenen Koerper verzweifelt gegen das Ausraeumen verteidigt.
 
-### AFB III: Aktualitaetsurteil
+### [AFB III]: Aktualitaetsurteil
 Beurteile die These des Literaturwissenschaftlers Guenter Anders, dass "Kafkas Verwandlung die praeziseste Diagnose des modernen Burnout-Syndroms und der Dehumanisierung in der Leistungsgesellschaft darstellt".
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Grete-Wandel mit Kapitelbeleg | 5 NP | Enger Beleg mit Zeile als Alternativweg
+Symboldeutung des Pelzbildes | 5 NP | Deutungsdoppel (sozial plus biographisch) als Alternativweg
+Aktualitaetsurteil mit Massstab | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
+
+KERNSATZ (auswendig):
+- Kernsatz: `Kafkas Verwandlung ist die buchstaebliche Verkoerperung der existentiellen Entfremdung eines Menschen, der im kapitalistischen Leistungsgetriebe auf seine reine oekonomische Nuetzlichkeit reduziert wurde.`
+- Zerlegung: Beleg | Mittel | Funktion
+- Aufschluesselung: Beleg = Verwandlung zum Ungeziefer (Kap. 1) | Mittel = personale Erzaehlhaltung als Verkoerperung | Funktion = Diagnose oekonomischer Entfremdung
+- Selbsttest: Kafkas Verwandlung ist die buchstaebliche Verkoerperung der existentiellen Entfremdung eines Menschen, der im ___ auf seine reine oekonomische Nuetzlichkeit reduziert wurde.
 
 ## Schritt 7 — check: Format-Check & Scoring
 

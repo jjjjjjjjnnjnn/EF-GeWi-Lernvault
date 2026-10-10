@@ -8,7 +8,7 @@ operatoren: [einordnen, analysieren, beurteilen]
 klausurrelevant: true
 datum: 2026-10-03
 tags: [EF, Deutsch, Drama, Goethe, Faust, Gretchenfrage, Klassik]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Goethes Faust I – Die Gretchenfrage und der Gelehrtenkonflikt (L1, Ziel Klausur)
@@ -26,10 +26,13 @@ ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
 Ein warmer Sommernachmittag in Marthes Garten. Gretchen und Faust spazieren Arm in Arm zwischen den Blumenbeeten. Faust fuehlt sich ueberlegen: Er ist der gefeierte Universalgelehrte, der saemtliche Fakultaeten von Philosophie bis Theologie durchforstet hat und durch den Pakt mit Mephistopheles die Gesetze von Raum und Zeit sprengt. Gretchen hingegen ist ein einfaches buergerliches Maedchen aus kleinem Hause, das weder Latein beherrscht noch Buecher studiert hat. Doch ploetzlich bleibt Gretchen stehen, blickt Faust unverwandt in die Augen und stellt eine einzige, schlichte Frage: "Nun sag, wie hast du's mit der Religion? Du bist ein herzlich guter Mann, allein ich glaub, du haeltst nicht viel davon." Mit diesem einen Satz bringt die scheinbar naive Jugendliche das gigantische intellektuelle Gedankengebaeude des Faust augenblicklich zum Einsturz. Faust geraet ins Stottern, weicht aus, fluechtet in rhetorische Vernebelungen – und offenbart die unueberbrueckbare Kluft zwischen zwei Welten.
 
+- [Station A] Wenn du Fausts Ausweichen als Notluege liest, sammelst du in Schritt 6 Belege der Ueberforderung.
+- [Station B] Wenn du es als Hybris liest, sammelst du in Schritt 6 Belege der Verantwortungslosigkeit.
+
 `Klausur-Satz: Gretchens Religionsfrage zwingt Faust zur Offenlegung seines pantheistischen Weltbildes und entlarvt den unueberbrueckbaren Wertekonflikt zwischen buergerlicher Froemmigkeit und faustischer Hybris.`
 
 ## Schritt 2 — entdecken: Grundbegriffe der Faust-Dramenanalyse
-PRETRAINING术语盒（核心4词，先读三遍中德，合书自测中文→德语）：
+PRETRAINING术语盒（核心4词，先读三遍中德，合书自测中文->德语）：
 
 - 格蕾琴之问 — Gretchenfrage: 直击灵魂、逼迫被问者在关键道德或信仰议题上明确表态的核心试金石提问。 Eine scheinbar einfache, aber existenzielle Gewissensfrage, die vom Befragten ein ehrliches und unmissverstaendliches Bekenntnis fordert.
 - 泛神论 — Pantheismus: 认为神与整个自然宇宙等同并渗透于万物之中的哲学世界观。 Die weltanschauliche Auffassung, dass Gott und das Universum eins sind ("Gefuehl ist alles; Name ist Schall und Rauch").
@@ -61,11 +64,28 @@ Gretchen (Buergerliche Welt):            Faust (Renaissance-/Sturm-und-Drang-Men
 
 [Werkzeug: text-analyse]
 
-AUFGABE (einordnen & analysieren, AFB I/II):
-Betrachte Fausts beruehmte Replik in Marthes Garten (Verse 3432–3458):
+AUFGABE (analysieren, [AFB II]):
+Analysiere Fausts beruehmte Replik in Marthes Garten (Verse 3432–3458):
 "Misshoer mich nicht, du holdes Angesicht! Wer darf ihn nennen? Und wer bekennen: Ich glaub ihn? [...] Gefuehl ist alles; Name ist Schall und Rauch, Umnebelnd Himmelsglut."
 1. Ordne die Szene in den dramatischen Handlungsverlauf der Gretchen-Tragoedie ein.
 2. Analysiere Fausts rhetorische Strategie (rhetorische Fragen, Antithese, Klimax) und erklaere, warum Gretchen am Ende trotzdem urteilt: "Du hast kein Christentum".
+
+HILFE:
+- Formdimension: Pruefe Fragekaskaden, Antithesen und Klimax-Signale mit Frageanalyse; benenne nur die Form, deute ihre Funktion noch nicht.
+- Pragmatische Dimension: Pruefe Fragerin, Antwortender und Ausweichziel mit Ausweichzielanalyse; sammle Sprecher, Adressat und Ziel, ohne das Urteil vorwegzunehmen.
+- Bilddimension: Pruefe Gefuehls- und Naturmetaphern mit Naturbildanalyse; notiere Bildspender und Wirkung, ohne die Deutung zu setzen.
+
+COMPLETION (Lückentext):
+- Lies beide Saetze und ergaenze aus dem Gedaechtnis, ohne zurueckzublaettern:
+- Fausts Ausweichtaktik heisst Kaskade ___ .
+- Gretchen erkennt daran das fehlende ___ als sittliche Bindung.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Replik mit Versanker (Marthes Garten) | 5 NP | Enger Beleg mit Zeile als Alternativweg
+Ausweichtaktik mit rhetorischen Fragen | 5 NP | Frageprotokoll als Alternativweg
+Urteil Du hast kein Christentum | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
 
 MUSTERLOESUNG:
 1. Dramatische Einordnung:
@@ -88,22 +108,45 @@ VERGLEICH: Kirchliches Dogma vs. Pantheistische Gefuehlsreligion (选概念)
   - Goettlichkeit als allgegenwaertige Naturkraft ("Allumfasser, Allerhalter").
   - Absolute moralische Autonomie des Individuums – mit dem toedlichen Risiko der Selbstueberschaetzung.
 
+- [Wahl A] Wenn du Position A (Gretchens Glaube) waehlst, sammelst du in Schritt 6 Belege der buergerlichen Ordnung.
+- [Wahl B] Wenn du Position B (Fausts Pantheismus) waehlst, sammelst du in Schritt 6 Belege der Gefuehlsreligion.
+
 Entscheidungsregel fuer die Klausur:
-Wird nach `Fausts Religionsauffassung` gefragt, bezeichne sie niemals schlicht als Atheismus, sondern praezise als pantheistische Gefuehlsreligion im Sinne von Baruch de Spinoza und Johann Wolfgang von Goethe!
+Lesehinweis: Die ausformulierte Regel steht in der AUFLOESUNG weiter unten; waehle zuerst intuitiv A oder B.
+
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Position A oder B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Ueberfuehrt aus Entscheidungsregel: Wird nach `Fausts Religionsauffassung` gefragt, bezeichne sie niemals schlicht als Atheismus, sondern praezise als pantheistische Gefuehlsreligion im Sinne von Baruch de Spinoza und Johann Wolfgang von Goethe!
+- Mechanismus A: Gretchens Glaube: Ritual, Beichte und Sittenordnung als Halt (Quelle: Goethe, Faust I, Marthes Garten, Studienparaphrase). Dreischritt: Beleg = Urteil Gretchens ueber Mephisto | Mittel = Antagonisten-Analyse mit Instinktbeleg | Funktion = Gesamturteil zu Rettung und Hybris
+- Mechanismus B: Fausts Pantheismus: Gefuehl statt Dogma als Autonomie mit Hybris-Risiko (Quelle: Goethe, Faust I, V. 3432-3458, Studienparaphrase). Dreischritt: Beleg = Urteil Gretchens ueber Mephisto | Mittel = Antagonisten-Analyse mit Instinktbeleg | Funktion = Gesamturteil zu Rettung und Hybris
+- Ein-Satz-Kern: Gefuehl ohne Bindung wird Schuld.
 
 ## Schritt 6 — check: Klausur-Transfer Mephisto und Gretchens Rettung
 
 PRUEFUNGSSZENARIO (KLP NRW Deutsch GK/LK Inhaltsfeld 1: Texte):
 
-### AFB I: Textwiedergabe
+### [AFB I]: Textwiedergabe
 Fasse Gretchens Urteil ueber Mephistopheles ("Es steht ihm an der Stirn geschrieben...") in eigenen Worten zusammen.
 
-### AFB II: Figurencharakteristik
+### [AFB II]: Figurencharakteristik
 Analysiere die Antagonisten-Rolle Mephistos in Marthes Garten und zeige, warum seine bloesse Anwesenheit Gretchens moralische Instinkte alarmiert.
 
-### AFB III: Kritisches Gesamturteil
+### [AFB III]: Kritisches Gesamturteil
 Am Ende des Dramas im Kerker ertönt die Stimme von oben: "Ist gerettet!".
 Beurteile, ob Gretchens Erloesung eine direkte Konsequenz ihrer Standhaftigkeit bei der Gretchenfrage ist, waehrend Fausts Hybris ihn zunaechst verdammt haette, wenn er sich nicht weiterentwickelt.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Urteil Gretchens ueber Mephisto | 5 NP | Enger Beleg mit Zeile als Alternativweg
+Antagonisten-Analyse mit Instinktbeleg | 5 NP | Weltbild-Tabelle als Alternativweg
+Gesamturteil zu Rettung und Hybris | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
+
+KERNSATZ (auswendig):
+- Kernsatz: `Gretchens Religionsfrage zwingt Faust zur Offenlegung seines pantheistischen Weltbildes und entlarvt den unueberbrueckbaren Wertekonflikt zwischen buergerlicher Froemmigkeit und faustischer Hybris.`
+- Zerlegung: Beleg | Mittel | Funktion
+- Aufschluesselung: Beleg = Gretchens Religionsfrage (Marthes Garten) | Mittel = Zwang zum pantheistischen Bekenntnis | Funktion = Entlarvung des Wertekonflikts
+- Selbsttest: Gretchens Religionsfrage zwingt Faust zur Offenlegung seines pantheistischen Weltbildes und entlarvt ___ .
 
 ## Schritt 7 — check: Format-Check & Scoring
 

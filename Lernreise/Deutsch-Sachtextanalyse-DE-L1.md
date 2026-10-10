@@ -8,11 +8,12 @@ operatoren: [analysieren, untersuchen, deuten]
 klausurrelevant: true
 datum: 2026-09-25
 tags: [EF, Deutsch, Rhetorik]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 # Lernreise: Leserlenkung und Rhetorik im Sachtext (L1, Ziel Klausur)
 
 <!-- Campaign: Detektive Fal 19 -->
+
 ## Schritt 1 — entdecken: Der versiegelte Umschlag zur Sache
 
 ZIELE (3 Ziele, nach 15 Minuten erreichbar):
@@ -26,6 +27,9 @@ HOOK:
 Der Schulkiosk verkauft neuerdings Lern-Apps statt Broetchen. Ein Kommentar behauptet: Wer digital lernt, lernt automatisch besser. Die Schulleitung nickt, die Fachschaft zweifelt.
 
 Du erhaeltst den Kommentar mit allen Tricks. Jede **Statistik** blinkt, jedes **Beispiel** laechelt. Pruefe These, Beleg und Lenkung mit Zeile.
+
+- [Station A] Wenn dich zuerst die Zahl lockt (Prozent, Grafik), verfolge in Schritt 4/5 die Nahspur.
+- [Station B] Wenn dich zuerst der Rahmen fragt (Titel, Bild, Auftraggeber), verfolge in Schritt 4/5 die Fernspur.
 
 Klausur-Satz: `Der Kommentar verkauft Markt als Fortschritt: Zahlen blenden, wo Kontrolle fehlt.`
 
@@ -83,15 +87,27 @@ PRIMAERTEXT (Studienfassung: Kommentar Digitales Lernen (Ausschnitt, 15 Zeilen),
 > Messbar heisst: Klicks, Minuten, Sterne im System. (Z. 14)
 > Wer zweifelt, bremst die Zukunft unserer Kinder. (Z. 15)
 
-AUFGABE: Untersuche den Primaertext Zeile fuer Zeile und belege jede Aussage mit Zitat und Zeile.
+AUFGABE: Untersuche den Primaertext Zeile fuer Zeile und belege jede Aussage mit Zitat und Zeile. [AFB II]
 TARGET: Drei Belege mit Zeile, je mit Funktion und einer Deutung in vier Saetzen.
 
 HILFE:
-1. Schritt 1: Ordne den Fall in zwei Saetzen ein.
-2. Schritt 2: Sichere zwei Befunde mit Zeile.
-3. Schritt 3: Deute Befund und Funktion im Fallganzen.
+- Formdimension: Pruefe Thesen-, Zahlen- und Passiv-Signale mit Belegpruefung; benenne nur die Form, deute ihre Funktion noch nicht.
+- Pragmatische Dimension: Pruefe Autor, Adressat und Nutzenversprechen mit Adressatenanalyse; sammle Sprecher, Adressat und Ziel, ohne das Urteil vorwegzunehmen.
+- Bilddimension: Pruefe Wertungswoerter und Rahmenbilder mit Wortfeldanalyse; notiere Bildspender und Wirkung, ohne die Deutung zu setzen.
 
 MARKIERAUFTRAG: Markiere mit GELB alle **Wertungswoerter** (verdoppelt, grau, gestrig, ueberfordert). Markiere mit BLAU die **Belegsignale** (87 Prozent, Experten, Passiv in Z. 13).
+
+COMPLETION (Lückentext):
+- Lies beide Saetze und ergaenze aus dem Gedaechtnis, ohne zurueckzublaettern:
+- Jede Prozentzahl braucht ___ .
+- Das Passiv tilgt ___ und kostuemiert Wertung als Neutralitaet.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Befund mit Zitat und Zeile | 5 NP | Enger Beleg mit Zeile als Alternativweg
+Beleg- und Lenkungspruefung | 5 NP | Belegluecken-Liste als Alternativweg
+Bilanz mit Verliererfrage | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
 
 MUSTERLOESUNG: Der Fall 19 zeigt das Kernverfahren in drei Schritten. Erstens sichert ein Zitat mit Zeile den Befund. Zweitens benennt die Funktion die Wirkung im Gefuege. Drittens schliesst die Deutung das Urteil. Damit ist die zweite Schicht entlarvt.
 
@@ -99,12 +115,22 @@ Klausur-Satz: `Die Regel des Kommentars: Je hoeher die Prozentzahl, desto genaue
 
 ## Schritt 5 — ausprobieren: Das doppelte Spiel Weg A gegen Weg B
 
-VERGLEICH: Weg A liest mikroskopisch (Text, Rhetorik, Detail), Weg B deutet makroskopisch (Epoche, Kontext, Ordnung).
+VERGLEICH: Weg A (Nahspur: These, Beleg, Zeile) vs Weg B (Fernspur: Markt, Interesse, Adressat).
+- [Weg A] Wenn du Weg A waehlst, arbeitest du in Schritt 7 vor allem mit Nahbelegen und Zeilen.
+- [Weg B] Wenn du Weg B waehlst, arbeitest du in Schritt 7 vor allem mit Fernkontext und Ordnung.
 
 AUFGABE A: Welche Spur verlangt Weg A? Begruende mit Zitat und Zeile.
 AUFGABE B: Welche Frage verlangt Weg B? Begruende mit Kontext.
 
-HILFE: A fragt nach Form und Naehe, also Weg A. B fragt nach Rolle und Ganzem, also Weg B.
+HILFE: Pruefe dimensionsgeleitet, welcher Weg passt: Formdimension (Belegpruefung) spricht fuer Naehe und Weg A; Kontextdimension (Adressatenanalyse) spricht fuer Ordnung und Weg B; Bilddimension (Wortfeldanalyse) sichert beide Wege. Ordne selbst zu; die Zuordnung wird nicht vorweggenommen.
+
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg A oder Weg B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Ueberfuehrt aus VERGLEICH (Vorwahl-Fassung): VERGLEICH: Weg A liest mikroskopisch (Text, Rhetorik, Detail), Weg B deutet makroskopisch (Epoche, Kontext, Ordnung).
+- Ueberfuehrt aus Schritt-5-HILFE (Vorwahl-Fassung): HILFE: A fragt nach Form und Naehe, also Weg A. B fragt nach Rolle und Ganzem, also Weg B.
+- Mechanismus A: ANTWORT A: Weg A prueft mikroskopisch Beleg und Sprache: Stichprobe Z. 6 ohne Kontrolle Z. 7, Passiv Z. 13 ohne Akteur. Dreischritt: Beleg = Thesensicherung mit Aufbau | Mittel = Rahmen- und Beleganalyse | Funktion = Urteil informiert vs gelenkt
+- Mechanismus B: ANTWORT B: Weg B fragt makroskopisch nach Kontext: Bildungsmarkt, Kommunalfinanzen und Elternsorgen erklaeren Adressat und Richtung. Dreischritt: Beleg = Thesensicherung mit Aufbau | Mittel = Rahmen- und Beleganalyse | Funktion = Urteil informiert vs gelenkt
+- Ein-Satz-Kern: Quelle mit Vergleichsgruppe plus Rahmenblick ergibt die einzige ehrliche Bilanz.
 
 ANTWORT A: Weg A prueft mikroskopisch Beleg und Sprache: Stichprobe Z. 6 ohne Kontrolle Z. 7, Passiv Z. 13 ohne Akteur.
 ANTWORT B: Weg B fragt makroskopisch nach Kontext: Bildungsmarkt, Kommunalfinanzen und Elternsorgen erklaeren Adressat und Richtung.
@@ -132,11 +158,24 @@ Klausur-Satz: `Haeufig verwechselt: Beispiel ist kein Beweis; erst Kette aus Que
 
 ROLLE: Du bist Faktencheck-Redakteur in der Pruefung.
 SITUATION: Ein Fall liegt unbearbeitet auf dem Tisch und verlangt Einordnung, Belege und Urteil.
-AUFGABE: Verfasse circa 150 Woerter mit Einordnung, zwei Belegen mit Zeile, Funktion, Deutung und Schlussurteil.
+AUFGABE: Gestalte einen Klausurtext (circa 150 Woerter, [AFB III]) mit Einordnung, zwei Belegen mit Zeile, Funktion, Deutung und Schlussurteil.
 ZEIT: 25 Minuten (5 These, 12 Lenkungs-Schreiben, 8 Quellen-Pruefung).
 RUBRIC (30 XP): Einordnung korrekt (6 XP) | Zwei Belege mit Zeile (10 XP) | Funktion plus Deutung (10 XP) | Fachsprache und Schluss (4 XP).
 
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Thesensicherung mit Aufbau | 5 NP | Enger Beleg mit Zeile als Alternativweg
+Rahmen- und Beleganalyse | 5 NP | Quellen-Checkliste als Alternativweg
+Urteil informiert vs gelenkt | 5 NP | Offenes Urteil mit Textrueckbindung als Alternativweg
+Gesamt: 15 NP
+
 Klausur-Satz: `AFB-III-Mustersatz: Die 87 Prozent (Z. 2) ohne Vergleichsgruppe (Z. 7) mit Abwertung (Z. 5, Z. 11) belegen Lenkung, weil Belegluecke plus Wortfeld Zustimmung erzwingt.`
+
+KERNSATZ (auswendig):
+- Kernsatz: `These, Belegfuehrung und Lenkung definieren jede Sachtextanalyse.`
+- Zerlegung: Beleg | Mittel | Funktion
+- Aufschluesselung: Beleg = Kommentar mit Prozentzahl ohne Kontrolle | Mittel = Quellen- und Lenkungspruefung | Funktion = Trennung von Information und Lenkung
+- Selbsttest: These, Belegfuehrung und ___ definieren jede Sachtextanalyse.
 
 ## Schritt 8 — reflexion: Takeaway und Rueckblick aus Fall 19
 

@@ -8,7 +8,7 @@ operatoren: [darstellen, analysieren, interpretieren]
 klausurrelevant: true
 datum: 2026-10-10
 tags: [EF, Deutsch, Drama]
-version: Enterprise-v4
+version: Enterprise-v5
 ---
 
 # Lernreise: Schillers Die Raeuber: Figurenkonflikt (L1, Ziel: Klausur)
@@ -32,11 +32,17 @@ version: Enterprise-v4
 中文判断先行：Karl被一封假信推向森林，他说自己反抗的是腐烂的等级社会。但他随后抢劫杀人，又让无辜者流血。他的悲剧到底是时代压出来的，还是自己一步步选出来的？
 
 - [Option A] 崇高反暴政英雄
-  - 中文机制（Mechanismus）：Franz代表冷算计的封建继承理性，靠伪造书信垄断父爱与继承权。Karl用“强盗共和国”报复腐败的等级秩序，他的暴力被解读为被侮辱者的正义反抗，符合狂飙突进的天才反抗逻辑。
-  - Deutscher Mechanismus: Karl antwortet auf Franzens Briefintrige mit einem Ausbruch in die Waldfreiheit; seine Raeuberbande erscheint als Gegenstaat gegen eine als korrupt erlebte Staendeordnung.
+  - 若选A，你在Step 2-3重点检验Karl反抗一侧的文本证据。
 - [Option B] 僭越法权的自我毁灭
-  - 中文机制（Mechanismus）：无人授权Karl以杀戮执行正义。他以“崇高动机”为名，践踏了启蒙法权最基本的生命与财产底线。他越是自称自由，越是陷入以暴制暴的罪责循环，最终连自我审判都无法逃脱。
-  - Deutscher Mechanismus: Karl usurpiert Recht und Gewalt des Staates; seine moralisch begruendete Gewalt verletzt aufklaererisches Rechtsprinzip und treibt ihn in Schuld und Selbstzerstoerung.
+  - 若选B，你在Step 2-3重点检验Karl罪责一侧的文本证据。
+
+AUFLÖSUNG (nach der Wahl lesen)
+
+以下解析在选择后阅读，含原两项机制分析全文：
+- 中文机制A（Mechanismus）：Franz代表冷算计的封建继承理性，靠伪造书信垄断父爱与继承权。Karl用“强盗共和国”报复腐败的等级秩序，他的暴力被解读为被侮辱者的正义反抗，符合狂飙突进的天才反抗逻辑。
+- Deutscher Mechanismus A: Karl antwortet auf Franzens Briefintrige mit einem Ausbruch in die Waldfreiheit; seine Raeuberbande erscheint als Gegenstaat gegen eine als korrupt erlebte Staendeordnung.
+- 中文机制B（Mechanismus）：无人授权Karl以杀戮执行正义。他以“崇高动机”为名，践踏了启蒙法权最基本的生命与财产底线。他越是自称自由，越是陷入以暴制暴的罪责循环，最终连自我审判都无法逃脱。
+- Deutscher Mechanismus B: Karl usurpiert Recht und Gewalt des Staates; seine moralisch begruendete Gewalt verletzt aufklaererisches Rechtsprinzip und treibt ihn in Schuld und Selbstzerstoerung.
 
 > 一句话本质：Karl的悲剧在于，他用反抗不自由的方式，亲手毁掉了自由的法权基础。
 > Ein-Satz-Kern: Karls Tragoedie liegt darin, dass er im Kampf gegen Unfreiheit die Rechtsgrundlage der Freiheit selbst zerstoert.
@@ -57,9 +63,13 @@ AUFGABE (analysieren, AFB II):
 3. Bestimme fuer jedes Mittel die Funktion: Wie dient die Form dem Figurenmotiv (Taeuschung bei Franz, Selbstheroisierung bei Karl)?
 
 HILFE:
-- 中文提示：找重复句式看排比，如“我要...我要...”；找明知故问的问句看反问；找把抽象变野兽、深渊、锁链的词看隐喻。
-- Deutscher Hinweis: Pruefe Satzanfang-Wiederholung fuer Parallelismus, unbeantwortete Anklagefrage fuer rhetorische Frage, Bildspender aus Natur und Kerker fuer Metapher.
-- Funktionsfrage: Wer spricht zu wem mit welchem Ziel: Will Franz Mitleid erpressen, will Karl Schuld in Groesse umdeuten?
+- 中文提示：从句式形式维度切入，用重复结构识别法处理排比；从语用功能维度切入，用交际目的分析法处理反问；从意象映射维度切入，用喻体溯源法处理隐喻。
+- Deutscher Hinweis: Arbeite dimensionsgeleitet mit Formanalyse fuer Parallelismus, mit pragmatischer Zielanalyse fuer rhetorische Frage und mit Bildfeldanalyse fuer Metapher.
+- Funktionsfrage: Klaere dimensionsgeleitet Sprecher, Adressat und Zweck, ohne die Funktionsdeutung vorwegzunehmen.
+
+COMPLETION (Lückentext):
+- 中文说明：根据MUSTERLÖSUNG补全两个关键判断，不回看上文。
+- Ergaenze: Franzens Parallelismus erzeugt Evidenz durch ___; Karls Metaphorik stilisiert den Rechtsbruch als ___.
 
 MUSTERLÖSUNG:
 - 中文示范：Franz的排比把Karl的“罪”越说越多，用数量压垮父亲的判断力；他的反问“这样不肖之子还配叫摩尔吗”根本不要回答，只要父亲点头断绝关系。Karl的隐喻把世纪说成“墨水牢笼”，把森林说成“自由子宫”，用意象把抢劫美化为重生。形式不是装饰，是人物动机的武器。
@@ -123,6 +133,18 @@ BEWERTUNGSRUBRIK (15 NP):
 2. 时代语境（Epochenkontext）：能否将Franz的算计与Karl的冲动分别归入启蒙法权理性与狂飙突进天才论，并与Faust的情感宗教做对照。
 3. 人物悲剧效应（Tragoedienwirkung）：能否论证Karl的自我审判与Franz的自我崩塌都是僭越秩序的代价，而非单纯善恶报应。
 
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Textbelege mit Akt/Szene-Anker und Beleg -> Mittel -> Funktion | 5 NP | Vergleich mit Faust-Gretchen als alternativer Belegweg
+Epochenzuordnung Aufklaerung vs Sturm und Drang | 5 NP | Alleinige Raeuber-Deutung mit Epochenbegriffen als Alternativweg
+Tragoedienurteil zur Selbstzerstoerung beider Brueder | 5 NP | Offenes Werturteil mit Textrueckbindung als Alternativweg
+
 15 NP MUSTER-KLAUSURSATZ:
 
 > "Waerend Franz das vaeterliche Recht durch die Briefintrige usurpiert und Karl die staatliche Rechtsordnung durch Raeuberjustiz bricht, scheitern beide an demselben Massstab aufklaererischer Legalitaet, den der Sturm und Drang zwar gefuehlsmaechtig attackiert, aber nicht ersetzen kann; darin liegt, vergleichbar mit Fausts Schuld gegenueber Gretchen, die epochentypische Tragoedie des genialen Subjekts zwischen Emanzipation und Selbstzerstoerung."
+
+KERNSATZ (auswendig):
+- Kernsatz: `Erst die Verknuepfung von Beleg -> Mittel -> Funktion ueberfuehrt die blosse Intrigennachricht in eine Analyse von Machtsprache und Figurenmotivation.`
+- Zerlegung: Beleg | Mittel | Funktion
+- Aufschluesselung: Beleg = blosse Intrigennachricht | Mittel = Verknuepfung von Beleg -> Mittel -> Funktion | Funktion = Analyse von Machtsprache und Figurenmotivation
+- Selbsttest: Erst die ___ von Beleg -> Mittel -> Funktion ueberfuehrt die blosse Intrigennachricht in eine Analyse von Machtsprache und Figurenmotivation.
