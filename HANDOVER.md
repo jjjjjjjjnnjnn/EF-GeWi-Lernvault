@@ -18,6 +18,7 @@
 - **设计与架构宪法**：[`PROJECT-DESIGN-GUIDELINES.md`](PROJECT-DESIGN-GUIDELINES.md)（**项目设计方案与架构策略全景指南，AI复刻、扩展与 PhET 规范必读**）。
 - **PhET 批量重构与自审核 SOP**：[`00_META/PHET-CONVERSION-BATCH-SOP.md`](00_META/PHET-CONVERSION-BATCH-SOP.md)（**外部 AI 批量执行与自审核手册：版权红线、Tufte 美学、60FPS rAF 解耦、动态 DPR 防拉伸、6 大批次全景规划与三级质检**）。
 - **文科交互教学与工坊总纲**：[`00_META/GEISTESWISSENSCHAFTEN-INTERACTIVE-PEDAGOGY-PLAN.md`](00_META/GEISTESWISSENSCHAFTEN-INTERACTIVE-PEDAGOGY-PLAN.md)（**文科可探索解释与 GeWi-Labor 24款工坊建设总纲：博弈系统、道德天平、论证树、漫画透镜、戏剧张力与音乐动机**）。
+- **TeachingStudio 教学工坊与多邻国上课河流全景规范**：[`00_META/TEACHING-STUDIO-SPECIFICATION.md`](00_META/TEACHING-STUDIO-SPECIFICATION.md)（**商业级教学板块设计、拆书排程、4大通用SVG微世界、5步交互上课流与通关奖赏闭环全景规范，外部 AI 对接与扩展必读**）。
 - 目标：德国 NRW Gymnasium EF 十科笔试/口试提分，中德双语，**完全离线**。
 - **内容铁律**：所有题目材料只能来自用户自己的笔记原文 —— **超纲率 = 0**。
 - **当前规模**：笔记 **416** · Anki 卡片 **1942** · 互动课程 **356 篇**（`Lernreise/`，十科全覆盖，含 Lesson-v3 全量高阶微课与多学科学术解剖台）· 术语表 **946 行** · 索引链接 **364 条** · 十科图谱 712+ 节点 · 考纲体系（NRW 十科 + 中国理科四科 + 中德映射）· 本地真题池 **760 份 PDF (2024–2026 全科 Klausuren + Vorgaben)**。
