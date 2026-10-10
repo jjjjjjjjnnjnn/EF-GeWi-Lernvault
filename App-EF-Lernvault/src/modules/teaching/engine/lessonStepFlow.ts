@@ -6,6 +6,7 @@ import type { ParsedQuestNode } from "./bookIngestParser";
 import {
   distillConcept,
   type DistilledConcept,
+  type IntuitionDilemmaData,
   type StoryHookData,
   type FeynmanExplanationData,
   type TwoBrillenData,
@@ -53,6 +54,7 @@ export interface LectureContentPayload {
   socraticPromptZH: string;
   learningTakeawayDE: string;
   learningTakeawayZH: string;
+  intuitionDilemma?: IntuitionDilemmaData;
   storyHook?: StoryHookData;
   feynmanExplanation?: FeynmanExplanationData;
   twoBrillen?: TwoBrillenData;
@@ -169,6 +171,7 @@ export function compileLessonSteps(
         "Verinnerliche die Kausalkette, bevor du das interaktive Experiment bedienst.",
       learningTakeawayZH:
         "掌握上述因果逻辑链条，为接下来的动手实验打下坚实理论基础。",
+      intuitionDilemma: distilled.intuitionDilemma,
       storyHook: distilled.storyHook,
       feynmanExplanation: distilled.feynmanExplanation,
       twoBrillen: distilled.twoBrillen,

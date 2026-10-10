@@ -21,19 +21,24 @@
 - **TeachingStudio 教学工坊与多邻国上课河流全景规范**：[`00_META/TEACHING-STUDIO-SPECIFICATION.md`](00_META/TEACHING-STUDIO-SPECIFICATION.md)（**商业级教学板块设计、拆书排程、4大通用SVG微世界、5步交互上课流与通关奖赏闭环全景规范，外部 AI 对接与扩展必读**）。
 - 目标：德国 NRW Gymnasium EF 十科笔试/口试提分，中德双语，**完全离线**。
 - **内容铁律**：所有题目材料只能来自用户自己的笔记原文 —— **超纲率 = 0**。
-- **当前规模**：笔记 **418** · Anki 卡片 **1942** · 互动课程 **356 篇**（`Lernreise/`，十科全覆盖，含 Lesson-v3 全量高阶微课与多学科学术解剖台）· 术语表 **946 行** · 索引链接 **373 条** · 十科图谱 712+ 节点 · 89 套件 684 项全量测试 100% 绿灯 · 考纲体系（NRW 十科 + 中国理科四科 + 中德映射）· 本地真题池 **760 份 PDF (2024–2026 全科 Klausuren + Vorgaben)**。
+- **当前规模**：笔记 **418** · Anki 卡片 **1942** · 互动课程 **356 篇**（`Lernreise/`，十科全覆盖，含 Lesson-v3 全量高阶微课与多学科学术解剖台）· 术语表 **946 行** · 索引链接 **373 条** · 十科图谱 712+ 节点 · 89 套件 686 项全量测试 100% 绿灯 · 考纲体系（NRW 十科 + 中国理科四科 + 中德映射）· 本地真题池 **760 份 PDF (2024–2026 全科 Klausuren + Vorgaben)**。
 
 ---
 
-- ✅ **Phase 5.2 Study-Mate 趣味教学法与常驻搭载考纲知识笔记落地（2026-10-10 交付）**：
-  - **核心诉求落地**：响应用户对“有趣、易懂、像 Study-Mate、搭载笔记”的教学法要求，彻底消除刻板应试味，让学习者在生动剧情、费曼白话、辩证双轨与动手探索中高效吸收新知；
-  - **四大趣味与考纲功能体系 (`conceptDistiller.ts` & `lessonStepFlow.ts` & `InteractiveLessonRunner.tsx`)**：
-    - **1. 角色代入与战役情境 (Story Hook & Drama)**：根据学科动态注入鲜活角色（虚拟城邦经济改革顾问、首席道德法官、魏玛戏剧文学侦探、航天变率工程师等）与危机两难决策；
-    - **2. 费曼大白话与双轨辩证 (Feynman-Klartext & Zwei Brillen)**：用一句话通俗人话撕开学术大词包装点破本质机理；两副眼镜（Zwei Brillen）展开正反两重视角（如效率派 vs 兜底派、功利主义快乐算盘 vs 康德定言命令绝对尊严），并提炼考纲合题（Synthese）；
-    - **3. 真实趣味历史轶事与冷知识 (Anekdote & Fun-Fact)**：艾哈德 1948 货币改革夜橱窗奇迹、康德一生唯一一次散步迟到之谜、歌德 60 年磨浮士德、莱布尼茨优雅微积分符号世纪之争等引人入胜的冷知识；
-    - **4. Study-Mate 三维自适应调频探针 (Adaptive Probes)**：`[Einfacher / Klartext]`（这里没懂·费曼降维类比）、`[Vertiefung / Edge Case]`（太简单了·极客反例与边界质问）、`[Check / Schnelltest]`（考考我·现场高频考点快测与参考答案一键查看）；
-    - **5. 常驻搭载考纲知识笔记抽屉 (Wissensnotiz-Schublade)**：顶部 HUD 常驻 `[Notiz / 搭载笔记]` 按钮，随时呼出 5 大考纲解题模块（费曼核心白话、两副眼镜争议、会考解题三步法、15 NP 极品答题句式库、常见失分雷区），并配备一键复制（`[Notiz kopieren]`）完整 Markdown 小抄；
-  - **工程门禁全绿**：全量 89 个测试套件、684 项单测 100% PASS；`src/modules.test.tsx` 严格零契约违规（零 Emoji、零 shadow 阴影、零 italic）；`cmd /c "npx tsc -b"` 0 报错；`python scripts/vault-check.py` 418 笔记 1942 词 PASS。
+- ✅ **Phase 5.2 Study-Mate 趣味教学法与 Step 1 直觉站队重构落地（2026-10-10 交付）**：
+  - **核心诉求落地**：响应用户对“有趣、易懂、像 Study-Mate、搭载笔记”的教学法要求，直面外部评审指出的“假大白话套话、内容同义反复、框中框堆叠地狱与伪多邻国流”硬伤，对课程第一阶段实施教学法与交互信息架构深度重塑；
+  - **Step 1 Intuitions-Check (直觉站队) 重构 (`InteractiveLessonRunner.tsx` & `conceptDistiller.ts`)**：
+    - **废除死板长文堆叠**：将 Step 1 改为“10 秒直觉站队”现实场景两难博弈（如完全竞争市场的暴风雪取暖器短缺），提供 [A] 自由价格出清 vs [B] 政府限价排队 两大鲜明选项；
+    - **即时浮出真实机制**：点击选项后瞬间展开针对立场的因果剖析、核心机制（Knappheitssignal / Allokationseffizienz / Markträumung）与社会市场经济兜底逻辑；
+    - **彻底清理抽象空话**：清除所有“齿轮调节系统”空洞套话，严禁字句同义反复，解耦费曼白话与生活心智模型；
+    - **消除框中框地狱**：改用扁平单轴 Tufte 纯黑白纸墨布局，互动探针原地展开；
+  - **趣味与考纲功能体系 (`conceptDistiller.ts` & `lessonStepFlow.ts`)**：
+    - **1. 角色代入与战役情境 (Story Hook & Drama)**：根据学科动态注入鲜活角色与危机决策；
+    - **2. 费曼大白话与双轨辩证 (Feynman-Klartext & Zwei Brillen)**：一句话点破本质机理，两副眼镜（Zwei Brillen）展开正反两重视角并提炼考纲合题；
+    - **3. 真实趣味历史轶事与冷知识 (Anekdote & Fun-Fact)**：艾哈德货币改革、康德散步读卢梭、歌德 60 年磨浮士德、莱布尼茨符号争端等；
+    - **4. Study-Mate 三维自适应调频探针 (Adaptive Probes)**：`[Einfacher]`、`[Vertiefung]`、`[Check]` 原地按需展开；
+    - **5. 常驻搭载考纲知识笔记抽屉 (Wissensnotiz-Schublade)**：顶部 HUD 常驻 `[Notiz]` 按钮，随时呼出 5 大考纲解题模块，支持一键复制完整 Markdown 小抄；
+  - **工程门禁全绿**：全量 89 个测试套件、686 项单测 100% PASS；`src/modules.test.tsx` 严格零契约违规（零 Emoji、零 shadow 阴影、零 italic）；`cmd /c "npx tsc -b"` 0 报错；`python scripts/vault-check.py` 418 笔记 1942 词 356 课程 PASS。
 
 - ✅ **Phase 5.1 教学与实验前置重塑：新知课程与互动实验前置于考场闯关（2026-10-10 交付）**：
   - **核心痛点解决**：彻底消除进关卡直接被单选题拷问的死板与挫败感，全面落实“先学新知、先玩实验，再闯关答题”的第一性原理教学法；

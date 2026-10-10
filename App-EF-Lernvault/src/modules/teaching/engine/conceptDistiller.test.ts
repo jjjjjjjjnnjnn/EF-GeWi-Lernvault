@@ -49,6 +49,17 @@ describe("Concept Distillation Engine: conceptDistiller", () => {
       expect(p.counterPerspectiveDE).toBeTruthy();
     }
 
+    // Intuitions-Check Dilemma (Schritt 1)
+    expect(res.intuitionDilemma).toBeDefined();
+    expect(res.intuitionDilemma?.scenarioZH).toBeTruthy();
+    expect(res.intuitionDilemma?.questionZH).toBeTruthy();
+    expect(res.intuitionDilemma?.choiceA.textZH).toBeTruthy();
+    expect(res.intuitionDilemma?.choiceA.reactionZH).toBeTruthy();
+    expect(res.intuitionDilemma?.choiceB.textZH).toBeTruthy();
+    expect(res.intuitionDilemma?.choiceB.reactionZH).toBeTruthy();
+    expect(res.intuitionDilemma?.mechanismTakeawayZH).toBeTruthy();
+    expect(res.intuitionDilemma?.klpCoreLogicZH).toBeTruthy();
+
     // Study-Mate Enriched Pedagogical Fields
     expect(res.storyHook).toBeDefined();
     expect(res.storyHook?.roleDE).toBeTruthy();
@@ -82,7 +93,19 @@ describe("Concept Distillation Engine: conceptDistiller", () => {
 
   it("lists supported preloaded canonical topics", () => {
     const list = listSupportedPreloadedTopics();
-    expect(list.length).toBeGreaterThanOrEqual(9);
+    expect(list.length).toBeGreaterThanOrEqual(10);
+  });
+
+  it("distills Modell des vollkommenen Marktes (Angebot & Nachfrage) with authentic blizzard dilemma", () => {
+    const res = distillConcept("Modell des vollkommenen Marktes (Angebot & Nachfrage)", "SoWi");
+    validateDistilledConcept(res);
+    expect(res.fach).toBe("SoWi");
+    expect(res.intuitionDilemma?.scenarioZH).toContain("暴风雪导致全城取暖煤气供应中断");
+    expect(res.intuitionDilemma?.choiceA.textZH).toContain("商家疯狂涨价");
+    expect(res.intuitionDilemma?.choiceB.textZH).toContain("政府限价 50 欧");
+    expect(res.intuitionDilemma?.choiceA.reactionZH).toContain("稀缺信号（Knappheitssignal）");
+    expect(res.intuitionDilemma?.choiceB.reactionZH).toContain("超额需求（Nachfrageüberhang）");
+    expect(res.klausurSatz15NP.scoringKeywords).toContain("Allokationsfunktion");
   });
 
   it("distills Wahlsystem / Bundestag (SoWi) from key words", () => {

@@ -56,6 +56,31 @@ export interface AttachedNoteData {
   tags: string[];
 }
 
+export interface IntuitionDilemmaData {
+  scenarioDE: string;
+  scenarioZH: string;
+  questionDE: string;
+  questionZH: string;
+  choiceA: {
+    id: "A";
+    textDE: string;
+    textZH: string;
+    reactionDE: string;
+    reactionZH: string;
+  };
+  choiceB: {
+    id: "B";
+    textDE: string;
+    textZH: string;
+    reactionDE: string;
+    reactionZH: string;
+  };
+  mechanismTakeawayDE: string;
+  mechanismTakeawayZH: string;
+  klpCoreLogicDE: string;
+  klpCoreLogicZH: string;
+}
+
 export interface DistilledConcept {
   topicTitle: string;
   fach: string;
@@ -88,6 +113,7 @@ export interface DistilledConcept {
     counterPerspectiveDE: string;
   }>;
   // Study-Mate 趣味、易懂与搭载笔记字段
+  intuitionDilemma?: IntuitionDilemmaData;
   storyHook?: StoryHookData;
   feynmanExplanation?: FeynmanExplanationData;
   twoBrillen?: TwoBrillenData;
@@ -109,6 +135,158 @@ interface DomainKnowledgeEntry {
 // ---------------------------------------------------------------------------
 
 const DOMAIN_KNOWLEDGE_ENTRIES: DomainKnowledgeEntry[] = [
+  // 0. Modell des vollkommenen Marktes / Angebot & Nachfrage / Preismechanismus (SoWi)
+  {
+    id: "vollkommener-markt-angebot-nachfrage",
+    canonicalTitle: "Modell des vollkommenen Marktes (Angebot & Nachfrage)",
+    fach: "SoWi",
+    matchKeywords: [
+      "markt",
+      "vollkommener markt",
+      "vollkommenen marktes",
+      "angebot",
+      "nachfrage",
+      "angebot & nachfrage",
+      "angebot und nachfrage",
+      "preismechanismus",
+      "gleichgewichtspreis",
+      "marktgleichgewicht",
+      "preisfunktionen",
+      "allokation",
+      "allokationseffizienz",
+      "marktraeumung",
+      "konsumentenrente",
+      "produzentenrente",
+    ],
+    data: {
+      topicTitle: "Modell des vollkommenen Marktes (Angebot & Nachfrage)",
+      fach: "SoWi",
+      intuitionDilemma: {
+        scenarioDE:
+          "Ein Jahrhundert-Schneesturm legt die städtische Energieversorgung lahm. Im einzigen Baumarkt gibt es nur noch 100 Gas-Heizstrahler bei 5.000 frierenden Haushalten.",
+        scenarioZH:
+          "暴风雪导致全城取暖煤气供应中断，市面上仅剩最后一批（100 台）取暖器，却有 5000 户居民急需取暖。",
+        questionDE:
+          "Wenn man die Verteilung vollständig dem 'freien Markt' überlässt, was passiert?",
+        questionZH:
+          "如果完全交给‘自由市场（Markt）’，会发生什么？",
+        choiceA: {
+          id: "A",
+          textDE:
+            "A) Händler verlangen 2.000 €: Nur wer zahlen kann, kauft. Das Gut ist sofort geräumt, aber Arme frieren.",
+          textZH:
+            "A) 商家疯狂涨价至 2000 欧：谁出钱多谁买走。穷人冻死，但商品绝不滞销（市场出清）。",
+          reactionDE:
+            "Das ist der unbarmherzige, effiziente Kern des Marktes! Der Preis fungiert als 'Knappheitssignal' (Signalfunktion) und lenkt Güter dorthin, wo die Zahlungsbereitschaft am höchsten ist (Allokationsfunktion). Das Gut ist geräumt (Räumungsfunktion), ignoriert aber Verteilungsgerechtigkeit.",
+          reactionZH:
+            "这就是完全竞争市场冷酷而高效的本质！价格不是用来做慈善的，而是作为‘稀缺信号（Knappheitssignal）’指示紧缺，并把商品配置给支付意愿最高的人（Allokationsfunktion）。商品流向出价最高者实现市场出清（Räumungsfunktion），但完全不考虑社会公正。",
+        },
+        choiceB: {
+          id: "B",
+          textDE:
+            "B) Staatlicher Preisdeckel auf 50 €: Die ersten 100 in der Schlange kaufen, die restlichen 4.900 gehen leer aus.",
+          textZH:
+            "B) 政府限价 50 欧：人人排长队，前 100 个人买走，剩下的人有钱也买不到，滋生黑市与黄牛。",
+          reactionDE:
+            "Staatliche Höchstpreise verhindern Wucher, erzeugen aber einen massiven Nachfrageüberhang! Weil der Preis nicht steigen darf, verliert er seine Signalfunktion. Es entstehen endlose Warteschlangen, Mangel und Schwarzmärkte.",
+          reactionZH:
+            "政府限价虽然维持了平价，却直接引发严重的‘超额需求（Nachfrageüberhang）’！因为价格被锁死，丧失了配给与出清功能，导致排长队、商品短缺与黄牛黑市蔓延。",
+        },
+        mechanismTakeawayDE:
+          "Der Preismechanismus koordiniert Angebot und Nachfrage über den Gleichgewichtspreis. Er garantiert ökonomische Effizienz (Markträumung), ignoriert aber Verteilungsgerechtigkeit – daher greift die Soziale Marktwirtschaft ordnungspolitisch ein.",
+        mechanismTakeawayZH:
+          "价格机制通过供需曲线相交的均衡价格自发协调供求。它能实现资源配置的高效率（市场出清），但完全不顾社会公平——这正是德国必须通过‘社会市场经济’实行国家秩序政策兜底的原因。",
+        klpCoreLogicDE:
+          "Preisfunktionen: Signal-, Allokations-, Räumungs- und Selektionsfunktion; Marktversagen bei Verteilungsungerechtigkeit.",
+        klpCoreLogicZH:
+          "价格四大功能：信号功能（指示稀缺）、配置功能（引导资源）、出清功能（出清供求）、筛选功能；完全市场在分配正义上存在局限。",
+      },
+      mentalModelAnalogy: {
+        analogyTitle: "Der Schneesturm-Stresstest: Der Preis als Knappheitsthermometer",
+        explanationDE:
+          "Der Marktpreis ist kein Wohltätigkeitsgeschenk, sondern ein Thermometer für Knappheit: Wenn 5.000 Menschen 100 Geräte wollen, steigt der Preis exakt so weit, bis 4.900 Personen freiwillig verzichten.",
+        explanationZH:
+          "市场价格不是慈善救济金，而是指示稀缺程度的灵敏温度计：当 5000 个人抢 100 台取暖器时，价格会持续上涨，直到刚好有 4900 个人因觉得太贵而主动放弃。",
+      },
+      klpTermini: [
+        {
+          termDE: "Preismechanismus & Gleichgewichtspreis",
+          definitionDE:
+            "Der Mechanismus, durch den sich Angebot und Nachfrage über flexible Preise angleichen. Der Gleichgewichtspreis räumt den Markt ohne Überschuss oder Mangel.",
+          termZH: "价格机制与均衡价格",
+          definitionZH: "供给与需求通过弹性价格自发调节的机制。均衡价格使市场完全出清，既无滞销亦无短缺。",
+        },
+        {
+          termDE: "Vier Funktionen des Preises",
+          definitionDE:
+            "Signalfunktion (Knappheit), Allokationsfunktion (Ressourcenlenkung), Räumungsfunktion (Marktausgleich) und Selektionsfunktion (Effizienzdruck).",
+          termZH: "价格四大职能",
+          definitionZH: "信号职能（指示稀缺）、配置职能（引导资源）、出清职能（平衡供求）、筛选淘汰职能（激励效率）。",
+        },
+        {
+          termDE: "Praemissen des vollkommenen Marktes",
+          definitionDE:
+            "Modellannahmen: Homogene Güter, vollkommene Markttransparenz, keine Präferenzen, unendlich schnelle Reaktionsgeschwindigkeit.",
+          termZH: "完全市场四大假定前提",
+          definitionZH: "理想模型前提：商品同质、信息完全透明、无偏好差异、无限快速的市场反应速度。",
+        },
+      ],
+      fehlerquellen: [
+        {
+          trapTitleDE: "Gleichsetzung von Modell und Marktrealitaet",
+          trapDescriptionDE:
+            "Schüler nehmen irrtümlich an, reale Supermärkte oder der Wohnungsmarkt entsprächen dem Modell des vollkommenen Marktes.",
+          trapDescriptionZH:
+            "把完全竞争市场这一理论分析模型当成了真实日常生活中的市场，忽视了信息不对称、品牌偏好与垄断壁垒。",
+          howToAvoidDE:
+            "In Klausuren stets betonen: Der vollkommene Markt ist ein reines Analysemodell; reale Märkte sind unvollkommen.",
+        },
+        {
+          trapTitleDE: "Ausblenden der Gerechtigkeitsdimension in AFB III",
+          trapDescriptionDE:
+            "Ausschließliche Bewertung nach Allokationseffizienz ohne Reflexion sozialer Härten und Verteilungsungleichheit.",
+          trapDescriptionZH:
+            "在会考评价题（AFB III）中只讲效率最优，却完全忽略考纲要求的社会公正、人道底线与国家干预必要性。",
+          howToAvoidDE:
+            "Stets das Spannungsfeld zwischen ökonomischer Effizienz und sozialstaatlicher Umverteilung aufspannen.",
+        },
+      ],
+      klausurSatz15NP: {
+        musterSatzDE:
+          "Während der Preismechanismus im theoretischen Modell des vollkommenen Marktes über die Allokations- und Räumungsfunktion zu einem pareto-effizienten Marktgleichgewicht führt, erfordert das Sozialstaatsgebot der Bundesrepublik bei existentiellen Gütern ordnungspolitische Interventionen zur Vermeidung distributiver Marktversagensfolgen.",
+        operator: "beurteilen",
+        scoringKeywords: [
+          "Preismechanismus",
+          "Allokationsfunktion",
+          "Raeumungsfunktion",
+          "Marktgleichgewicht",
+          "Sozialstaatsgebot",
+          "Marktversagen",
+        ],
+        explanationZH:
+          "满分 15 NP 评价大题金句：既精确剖析完全市场价格机制在资源配置上的帕累托效率，又立足德国基本法社会国家原则论证秩序政策兜底的不可或缺性。",
+      },
+      socraticProbes: [
+        {
+          questionDE:
+            "Darf der Staat Höchstpreise für Mieten festlegen, obwohl dies das Angebot an Neubauwohnungen verringert?",
+          questionZH:
+            "国家是否应当对房租设定最高限价，哪怕限价会在长期内打击新房建设意愿并加剧房源短缺？",
+          counterPerspectiveDE:
+            "Mietpreisbremsen schützen einkommensschwache Mieter kurzfristig, verringern aber das langfristige Wohnungsangebot.",
+        },
+        {
+          questionDE:
+            "Sollte der Staat lebenswichtige Notfallgüter vollständig dem freien Markt überlassen?",
+          questionZH:
+            "国家是否应将救命物资完全交给自由市场竞价，还是必须实行价格管制与救济配给？",
+          counterPerspectiveDE:
+            "Freie Preise verhindern Verschwendung, verletzen aber bei existenziellen Notlagen das Grundrecht auf körperliche Unversehrtheit.",
+        },
+      ],
+    },
+  },
+
   // 1. Wahlsystem / Bundestag / Erst- und Zweitstimme (SoWi)
   {
     id: "wahlsystem-bundestag",
@@ -1143,11 +1321,11 @@ interface SubjectFallbackArchetype {
 
 const SUBJECT_ARCHETYPES: Record<string, SubjectFallbackArchetype> = {
   SoWi: {
-    defaultAnalogyTitle: "Systemisches Rueckkopplungs-Getriebe gesellschaftlicher Institutionen",
+    defaultAnalogyTitle: "Knappheit und Alltagsentscheidung: Wer bekommt das rare Gut?",
     analogyTemplateDE: (t) =>
-      `Das Konzept »${t}« funktioniert wie ein sensibles Zahnradgetriebe in einer vernetzten Markt- und Gesellschaftsordnung: Dreht eine politische oder oekonomische Institution an diesem Stellhebel, loest dies unvermeidlich Rueckkopplungseffekte bei Buergern, Maerkten und Verteilungsgerechtigkeit aus.`,
+      `Das Konzept »${t}« beschreibt im Kern ein reales Verteilungsdilemma: Wenn begehrte Ressourcen knapp sind, entscheiden institutionelle Regeln darüber, wer den Zuschlag erhält, wer leer ausgeht und wer die Kosten trägt.`,
     analogyTemplateZH: (t) =>
-      `»${t}« 在社会政治经济体系中如同联动的调节齿轮系统：制度对该维度的调控必然在市场效率、公民权利与再分配平衡之间触发链式反馈效应。`,
+      `»${t}« 解决的其实是最现实的生活博弈：当优质资源必然稀缺时，制度规则决定了谁能拿到名额、谁会排队落空，以及由谁来承担隐性代价。`,
     defaultOperator: "analysieren",
     standardTraps: (t) => [
       {
@@ -1184,11 +1362,11 @@ const SUBJECT_ARCHETYPES: Record<string, SubjectFallbackArchetype> = {
   },
 
   Philosophie: {
-    defaultAnalogyTitle: "Der normative Pruefstein praktischer Vernunft",
+    defaultAnalogyTitle: "Der ethische Notfall-Pruefstein im Alltag",
     analogyTemplateDE: (t) =>
-      `Das philosophische Problem »${t}« gleicht einem fundamentalen Pruefstein des menschlichen Selbstverstaendnisses: Es hinterfragt die unhinterfragten Praemissen unseres Denkens und trennt logisch tragfaehige Prinzipien von bloer Konvention oder biologischem Affekt.`,
+      `Das ethische Problem »${t}« ist wie ein Notfall-Test fuer moralische Prinzipien: Es hinterfragt selbstverstaendliche Gewohnheiten und zwingt zur Klaerung, ob Grundwerte auch im extremen Konfliktfall Bestand haben.`,
     analogyTemplateZH: (t) =>
-      `»${t}« 构成了人类实践理性的试金石：剥离日常习惯与感性经验的掩饰，从第一性原理直击行为动机与道德规范的先验逻辑根基。`,
+      `»${t}« 就像是一场道德极限测试：剥离日常习惯的温情面纱，逼问你在重大利益与原则冲突的关键时刻，究竟依照何种正当性做出决断。`,
     defaultOperator: "beurteilen",
     standardTraps: (t) => [
       {
@@ -1225,11 +1403,11 @@ const SUBJECT_ARCHETYPES: Record<string, SubjectFallbackArchetype> = {
   },
 
   Deutsch: {
-    defaultAnalogyTitle: "Das semantisch-rhetorische Gewebe der Textarchitektur",
+    defaultAnalogyTitle: "Die literarische Regieanweisung im Text",
     analogyTemplateDE: (t) =>
-      `»${t}« wirkt wie ein feinmaschiges Geflecht aus Sprache, Form und Intention: Einzelne lexikalische und syntaktische Faeden verbinden sich zu einem dichten Bedeutungsteppich, der den Leser auf subtile Weise kognitiv und emotional lenkt.`,
+      `»${t}« funktioniert wie eine unsichtbare Regieanweisung des Autors: Jedes sprachliche Mittel und jeder Satzbau lenkt die Wahrnehmung des Lesers gezielt auf den zugrundeliegenden Wertkonflikt.`,
     analogyTemplateZH: (t) =>
-      `»${t}« 构成了文本深层意义的网状编织结构：辞格、句法与论述脉络相互咬合，共同服务于作者隐蔽而精准的修辞说服意向。`,
+      `»${t}« 就像作者在文本中埋下的隐形舞台调度：每一个修辞选择与句式编排，都在不动声色地引导读者看清背后的核心价值冲突。`,
     defaultOperator: "analysieren",
     standardTraps: (t) => [
       {
@@ -1462,6 +1640,122 @@ export function distillConcept(title: string, fach: string, rawText?: string): D
 }
 
 /**
+ * 为任意未在预设库中的主题生成真实的直觉博弈两难困境 (Schritt 1: Intuitions-Check)
+ */
+function createFallbackIntuitionDilemma(
+  _topicTitle: string,
+  fach: string
+): IntuitionDilemmaData {
+  const normFach = fach.trim().toLowerCase();
+  if (normFach.includes("sowi")) {
+    return {
+      scenarioDE: `Unerwarteter Mangel bei einem lebenswichtigen Gut (z.B. Energie oder Wohnraum): Die Nachfrage übersteigt das Angebot drastisch. Wie soll die Zuteilung geregelt werden?`,
+      scenarioZH: `突发危机导致关键生活资源（如冬季取暖能源或紧急房源）发生严重短缺，需求量远远超出存量。社会究竟该如何分配？`,
+      questionDE: `Welches Prinzip wählst du zur Bewältigung der Knappheit?`,
+      questionZH: `面对这一现实稀缺困境，你会选择哪种分配机制？`,
+      choiceA: {
+        id: "A",
+        textDE: `A) Freier Preiswettbewerb: Wer am meisten zahlt, kauft. Das Gut wird effizient geräumt, aber Einkommensschwache frieren.`,
+        textZH: `A) 自由价格出清：出价高者得。价格随行就市，商品绝不滞销，但低收入者直接面临被淘汰与生存困境。`,
+        reactionDE: `Du wählst die Allokationseffizienz des Marktes: Der Preis fungiert als Knappheitssignal und führt zur Markträumung. Allerdings ignoriert dieser Mechanismus soziale Gerechtigkeit.`,
+        reactionZH: `你选择了市场配置效率：价格充当灵敏的稀缺信号（Signalfunktion），迅速实现市场出清（Räumungsfunktion）。但完全市场机制完全不具备社会公正兜底。`,
+      },
+      choiceB: {
+        id: "B",
+        textDE: `B) Staatlicher Preisdeckel: Fester niedriger Preis für alle. Jeder kann zahlen, aber es entstehen lange Warteschlangen und Schwarzmärkte.`,
+        textZH: `B) 政府限价配给：强制将价格压至平价。人人买得起，但商家缺乏供应动力导致排长队、商品断供与倒卖黑市。`,
+        reactionDE: `Du wählst den Schutz des Sozialstaates: Niedrige Preise schützen Bürger, zerstören aber das Preissignal. Es entstehen Nachfrageüberhänge und Mangelwirtschaft.`,
+        reactionZH: `你选择了社会国家兜底：优先保护弱势群体免遭剥夺。但锁死价格抹杀了稀缺信号，直接引发严重的超额需求、排长队与资源错配。`,
+      },
+      mechanismTakeawayDE: `Das Spannungsfeld zwischen ökonomischer Effizienz (Preismechanismus) und Verteilungsgerechtigkeit (Sozialstaat) ist das Kernproblem der Wirtschaftspolitik.`,
+      mechanismTakeawayZH: `价格机制保证了资源配置的高效率，但无法兼顾社会正义——这正是德国必须通过‘社会市场经济’实行国家秩序政策兜底的根本逻辑。`,
+      klpCoreLogicDE: `Preisfunktionen (Signal, Allokation, Räumung); Marktversagen und Sozialstaatsgebot nach KLP NRW.`,
+      klpCoreLogicZH: `价格四大职能（信号、配置、出清、筛选）；效率最优与社会公平的辩证张力。`,
+    };
+  }
+
+  if (normFach.includes("philo")) {
+    return {
+      scenarioDE: `Extremes ethisches Dilemma: Eine unausweichliche Entscheidung zwingt zur Abwägung zwischen dem messbaren Gesamtnutzen vieler Menschen und den unantastbaren Rechten eines Einzelnen.`,
+      scenarioZH: `极端伦理两难抉择：必须在绝大多数人的集体福祉与某个具体个体的不可剥夺尊严之间做出决断。`,
+      questionDE: `Nach welchem ethischen Grundsatz entscheidest du?`,
+      questionZH: `面对这一经典困局，你的第一决断原则是什么？`,
+      choiceA: {
+        id: "A",
+        textDE: `A) Utilitaristisch: Das größte Glück der größten Zahl maximieren, auch wenn ein Einzelner geopfert werden muss.`,
+        textZH: `A) 功利主义方案：追求最大多数人的最大幸福，哪怕个别人不得不承受代价。`,
+        reactionDE: `Du folgst dem Nutzen- und Konsequenzenprinzip: Nur das Gesamtergebnis zählt. Schwachstelle: Individuelle Grundrechte können instrumentalisiert werden.`,
+        reactionZH: `你采纳了功利主义后果论：以最终总体效用最大化为标准。但这容易突破个体的尊严底线，将人降格为实现多数人利益的纯粹手段。`,
+      },
+      choiceB: {
+        id: "B",
+        textDE: `B) Deontologisch: Die Menschenwürde und moralische Pflichten gelten absolut, egal wie hoch die Folgekosten sind.`,
+        textZH: `B) 康德义务论方案：人的尊严绝对不可侵犯（定言命令），坚决不把任何人当作工具。`,
+        reactionDE: `Du folgst Kants Kategorischem Imperativ: Menschen sind niemals reines Mittel zum Zweck. Preis: Im Extremfall müssen schwere Konsequenzen ertragen werden.`,
+        reactionZH: `你坚守了康德义务论：人是目的而非手段。但恪守绝对原则的代价是，在极端情况下可能不得不承受集体更大实质损害的现实后果。`,
+      },
+      mechanismTakeawayDE: `Philosophische Urteilskraft verlangt die kriterienorientierte Abwägung zwischen teleologischer Folgenverantwortung und deontologischer Prinzipientreue.`,
+      mechanismTakeawayZH: `哲学考场 AFB III 的核心能力在于：严格辨析目的论后果权衡与义务论原则坚守的逻辑边界，做出有据可依的价值评价。`,
+      klpCoreLogicDE: `Utilitarismus vs. Deontologie; Kategorischer Imperativ vs. Hedonistisches Kalkül; GG Art. 1 I.`,
+      klpCoreLogicZH: `功利主义效用核算 vs 康德定言命令；宪法第一条人的尊严不可侵犯。`,
+    };
+  }
+
+  if (normFach.includes("deutsch")) {
+    return {
+      scenarioDE: `Konflikt in einem dramatischen Werk: Eine Figur steht zwischen gesellschaftlicher Pflicht zur Konformität und dem unbändigen Drang nach individueller Selbstverwirklichung.`,
+      scenarioZH: `文学戏剧的核心冲突：主人公面临两难撕裂——是顺应既定的社会规范与礼教义务，还是追随内心炽热的个性解放与自由渴望？`,
+      questionDE: `Welche Grundhaltung treibt den dramatischen Konflikt voran?`,
+      questionZH: `哪一种内在动因构成了推动戏剧矛盾激化的主轴？`,
+      choiceA: {
+        id: "A",
+        textDE: `A) Aufklärerische Vernunft: Beherrschung der Triebe zur Wahrung von Ordnung, Pflicht und sittlicher Gemeinschaft.`,
+        textZH: `A) 启蒙理性与责任：克制狂热冲动，维护秩序、理性与社会道德规范。`,
+        reactionDE: `Du betonst den Vernunftdiskurs der Aufklärung: Ordnung stabilisiert die Gemeinschaft, unterdrückt aber individuelle Vitalität.`,
+        reactionZH: `你突出了启蒙时期的理智与社会秩序：虽然保障了伦理稳定，但往往压抑了鲜活的个体生命力，产生深刻的内在异化。`,
+      },
+      choiceB: {
+        id: "B",
+        textDE: `B) Sturm-und-Drang-Rebellion: Radikales Ausleben der Gefühle und Widerstand des Genies gegen jede starre Konvention.`,
+        textZH: `B) 狂飙突进反叛：打破陈腐世俗规训，追随直觉、激情与天才的绝对自由。`,
+        reactionDE: `Du fokussierst das Genieideal des Sturm und Drang: Befreiung des Subjekts, die jedoch oft in existenzieller Isolation und Tragik endet.`,
+        reactionZH: `你抓住了狂飙突进时期的天才反叛冲动：情感与自我张扬极具力量，但脱离现实束缚的狂热往往不可避免地走向毁灭与悲剧命运。`,
+      },
+      mechanismTakeawayDE: `Literarische Textanalysen entschlüsseln, wie Figuren und Sprachgestus epochentypische Leitkonflikte performativ austragen.`,
+      mechanismTakeawayZH: `文学文本分析的精髓在于：透过语言形式与人物对话，透视不同历史时期的深层思想碰撞与时代价值对抗。`,
+      klpCoreLogicDE: `Epochenspezifische Wertediskurse (Aufklärung vs. Sturm und Drang / Klassik); Textimmanente Analyse.`,
+      klpCoreLogicZH: `启蒙理性 vs 狂飙突进思潮转变；理智与激情的辩证张力。`,
+    };
+  }
+
+  // Mathe / Physik / MINT
+  return {
+    scenarioDE: `Ein dynamischer Prozess beschleunigt ungleichmäßig. Wie erfassen wir die Veränderung in einem ganz bestimmten, infinitesimalen Augenblick?`,
+    scenarioZH: `动态变化过程是不均匀的。如何在某个具体的瞬时点上，精准求出它的即时变化趋势与变化率？`,
+    questionDE: `Welcher mathematische Ansatz führt zur exakten Lösung?`,
+    questionZH: `哪种数学思维构成了攻克这一问题的关键钥匙？`,
+    choiceA: {
+      id: "A",
+      textDE: `A) Sekante über ein festes Zeitfenster: Den durchschnittlichen Differenzenquotienten berechnen.`,
+      textZH: `A) 割线与有限差商：选取一段固定时间区间计算平均变化率（平均速度）。`,
+      reactionDE: `Das ist die mittlere Änderungsrate: Einfach zu ermitteln, aber blind für dramatische Steigungen im konkreten Augenblick.`,
+      reactionZH: `这是初等的平均变化率（割线斜率）：计算简便，但完全无法捕捉特定微小瞬间发生的剧烈波动与加速度。`,
+    },
+    choiceB: {
+      id: "B",
+      textDE: `B) Grenzwertprozess (Limes h -> 0): Das Zeitfenster gegen Null schrumpfen lassen und die Tangentensteigung ermitteln.`,
+      textZH: `B) 极限逼近（h -> 0）：让时间区间无限缩小，求解切线斜率与瞬时导数。`,
+      reactionDE: `Das ist das Fundament der Differentialrechnung: Der Limes des Differenzenquotienten liefert die exakte lokale Änderungsrate f'(x).`,
+      reactionZH: `这是微积分的核心基石：割线极限逼近切线，差商在极限状态下蜕变为瞬时导数 f'(x)，洞察瞬间演化规律。`,
+    },
+    mechanismTakeawayDE: `Der Übergang vom Differenzenquotienten (Sekante) zum Differentialquotienten (Tangente / Limes) ist das Basiskonzept der Analysis.`,
+    mechanismTakeawayZH: `从宏观的平均变化率跨越到极限状态下的瞬时导数，是整个高中微积分与现代分析学的核心思想。`,
+    klpCoreLogicDE: `Lokale vs. mittlere Änderungsrate; Grenzwertbegriff (Limes); Tangentensteigung f'(x).`,
+    klpCoreLogicZH: `差商 vs 微商（导数）；极限思想；切线斜率与瞬时变化率。`,
+  };
+}
+
+/**
  * 赋予任意学科概念生动有趣的 Study-Mate 故事化剧情、费曼人话白话、两副眼镜辩证双轨、趣味历史轶事与搭载考纲笔记
  */
 export function enrichConceptWithStudyMateAndNotes(
@@ -1471,7 +1765,11 @@ export function enrichConceptWithStudyMateAndNotes(
   const normFach = fach.trim() || "SoWi";
   const title = concept.topicTitle;
 
-  // 1. 剧情角色与战役情景 (Story Hook & Drama)
+  // 1. 直觉站队两难困境 (Intuitions-Check Dilemma)
+  const intuitionDilemma: IntuitionDilemmaData =
+    concept.intuitionDilemma || createFallbackIntuitionDilemma(title, normFach);
+
+  // 2. 剧情角色与战役情景 (Story Hook & Drama)
   let storyHook: StoryHookData;
   if (normFach.toLowerCase().includes("sowi")) {
     storyHook = {
@@ -1510,11 +1808,11 @@ export function enrichConceptWithStudyMateAndNotes(
     };
   }
 
-  // 2. 费曼大白话 (Feynman-Prinzip)
-  const feynmanSummaryZH = `【费曼大白话】不要被德语学术大词吓住：»${title}« 本质就是一句话——${concept.mentalModelAnalogy.explanationZH.slice(0, 100)}。`;
-  const feynmanSummaryDE = `In einfacher Sprache: »${title}« beschreibt im Kern: ${concept.mentalModelAnalogy.explanationDE.slice(0, 120)}.`;
+  // 3. 费曼大白话 (Feynman-Prinzip - 拒绝套话，直击行为与规则本质)
+  const feynmanSummaryZH = `【费曼核心】»${title}« 的本质规则：厘清谁来做决策、谁承担后果，以及规则如何影响普通人的选择。`;
+  const feynmanSummaryDE = `Kernaussage zu »${title}«: Wer trifft die Entscheidung, wer trägt die Konsequenzen, und wie steuern die Spielregeln das Verhalten?`;
 
-  // 3. 两副眼镜 / 辩证双轨对抗 (Zwei Brillen / Pro vs Contra)
+  // 4. 两副眼镜 / 辩证双轨对抗 (Zwei Brillen / Pro vs Contra)
   let twoBrillen: TwoBrillenData;
   if (normFach.toLowerCase().includes("sowi")) {
     twoBrillen = {
@@ -1569,7 +1867,7 @@ export function enrichConceptWithStudyMateAndNotes(
     };
   }
 
-  // 4. 趣味历史轶事 / 冷知识 (Fun Fact & Anekdote)
+  // 5. 趣味历史轶事 / 冷知识 (Fun Fact & Anekdote)
   let funFact: FunFactData;
   if (normFach.toLowerCase().includes("sowi")) {
     funFact = {
@@ -1608,9 +1906,9 @@ export function enrichConceptWithStudyMateAndNotes(
     };
   }
 
-  // 5. Study-Mate 三维自适应调频探针 (Probes)
+  // 6. Study-Mate 三维自适应调频探针 (Probes)
   const studyMateProbes: StudyMateProbesData = {
-    simplerHintZH: `[这里没懂·费曼降维生活比喻]：不要害怕学术长难句！把它想象成现实生活：${concept.mentalModelAnalogy.analogyTitle}。${concept.mentalModelAnalogy.explanationZH.slice(0, 150)}`,
+    simplerHintZH: `[这里没懂·生活比喻]：不要害怕学术大词！把 »${title}« 想象成现实生活规则：${concept.mentalModelAnalogy.analogyTitle}。${concept.mentalModelAnalogy.explanationZH.slice(0, 150)}`,
     simplerHintDE: `[Erklär's einfacher]: Denk an das Bild »${concept.mentalModelAnalogy.analogyTitle}«: ${concept.mentalModelAnalogy.explanationDE.slice(0, 160)}`,
     deeperChallengeZH: `[太简单了·极客反例与边界质问]：如果系统受到不可逆极端冲击，原有的核心假设失效，系统会如何产生副作用？试用德语提炼一条包含限制条件（unter der Bedingung, dass...）的批判性论据！`,
     deeperChallengeDE: `[Mehr Tiefe · Extremfall & Kritik]: Was passiert bei extremen asymmetrischen Schocks? Welche unerwuenschten Folgekosten entstehen, und wie lautet deine kriterienorientierte Kritik?`,
@@ -1620,11 +1918,11 @@ export function enrichConceptWithStudyMateAndNotes(
     quizAnswerDE: `[Musterloesung]: ${concept.fehlerquellen[0]?.howToAvoidDE || "Stets Kausalkette und konkrete Kriterien nennen."}`,
   };
 
-  // 6. 搭载专属考纲知识笔记 (Attached Note)
+  // 7. 搭载专属考纲知识笔记 (Attached Note)
   const attachedNote: AttachedNoteData = {
     title,
     fach: normFach,
-    feynmanSummaryZH: `【费曼白话】${concept.mentalModelAnalogy.explanationZH.slice(0, 130)}`,
+    feynmanSummaryZH: `【核心本质】把握考纲因果链：从制度规则出发，透视利益相关方的博弈与系统均衡。`,
     methodSnippetZH: `【会考三步法】1. 定性并界定考纲核心术语（AFB I）-> 2. 严密还原因果传导机制（AFB II）-> 3. 权衡事实与价值并给出明确结论（AFB III）。`,
     klausurSatzbausteinDE: concept.klausurSatz15NP.musterSatzDE,
     operatoren: [concept.klausurSatz15NP.operator || "analysieren", "beurteilen", "darstellen"],
@@ -1633,6 +1931,7 @@ export function enrichConceptWithStudyMateAndNotes(
 
   return {
     ...concept,
+    intuitionDilemma,
     storyHook: concept.storyHook || storyHook,
     feynmanExplanation: concept.feynmanExplanation || {
       summaryZH: feynmanSummaryZH,

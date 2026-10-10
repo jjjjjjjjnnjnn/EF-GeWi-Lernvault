@@ -156,8 +156,13 @@ describe("InteractiveLessonRunner Component", () => {
       />
     );
 
-    // Verify Story Hook & Feynman presence
+    // Verify Story Hook & Intuitions-Check presence
     expect(screen.getByText(/Story-Szenario & Rolle/i)).toBeInTheDocument();
+    expect(screen.getByText(/Intuitions-Check/i)).toBeInTheDocument();
+
+    // Select Option A to reveal Feynman-Klartext mechanism breakdown
+    const optionABtn = screen.getByRole("button", { name: /\[ A \]/i });
+    fireEvent.click(optionABtn);
     expect(screen.getByText(/Feynman-Klartext/i)).toBeInTheDocument();
     expect(screen.getByText(/Zwei Brillen/i)).toBeInTheDocument();
 
@@ -228,5 +233,61 @@ describe("InteractiveLessonRunner Component", () => {
     const closeBtn = screen.getByTitle("Schließen");
     fireEvent.click(closeBtn);
     expect(screen.queryByText(/1\. Feynman-Essenz/i)).not.toBeInTheDocument();
+  });
+
+  it("interactively runs Intuitions-Check: choosing Option A or B reveals authentic KLP mechanism feedback", () => {
+    const marketQuest: ParsedQuestNode = {
+      id: "q-market-1",
+      chapterId: "chap-market",
+      order: 1,
+      title: "Das Modell des vollkommenen Marktes (Angebot & Nachfrage)",
+      lessonType: "concept",
+      estimatedMinutes: 10,
+      prerequisites: [],
+      matchedToolId: "magisches-viereck",
+      matchedToolName: "Markt-Labor",
+      interactiveType: "variable_slider",
+      summary: "Einführung in Angebot, Nachfrage, Marktgleichgewicht und Preismechanismus.",
+      socraticPrompt: "Warum räumt der freie Preis den Markt, ignoriert aber soziale Gerechtigkeit?",
+      keyConcepts: [],
+      xp: 100,
+    };
+
+    render(
+      <InteractiveLessonRunner
+        questNode={marketQuest}
+        fach="SoWi"
+        lang="zh"
+        currentStreak={3}
+        onComplete={vi.fn()}
+        onClose={vi.fn()}
+      />
+    );
+
+    // Verify Blizzard scenario is rendered in Step 1
+    expect(screen.getByText(/暴风雪导致全城取暖煤气供应中断/i)).toBeInTheDocument();
+    expect(screen.getByText(/如果完全交给‘自由市场（Markt）’，会发生什么？/i)).toBeInTheDocument();
+
+    // Click Choice A
+    const choiceABtn = screen.getByRole("button", { name: /商家疯狂涨价/i });
+    fireEvent.click(choiceABtn);
+
+    // Verify instant mechanism card appears with authentic KLP termini
+    expect(screen.getByText(/这就是完全竞争市场冷酷而高效的本质！/i)).toBeInTheDocument();
+    expect(screen.getByText(/稀缺信号（Knappheitssignal）/i)).toBeInTheDocument();
+    expect(screen.getByText(/Allokationsfunktion/i)).toBeInTheDocument();
+
+    // Switch to Choice B
+    const choiceBBtn = screen.getByRole("button", { name: /政府限价 50 欧/i });
+    fireEvent.click(choiceBBtn);
+
+    // Verify reaction updates to Choice B
+    expect(screen.getByText(/政府限价虽然维持了平价，却直接引发严重的‘超额需求/i)).toBeInTheDocument();
+
+    // Advance to next step
+    const advanceBtn = screen.getByRole("button", { name: /进入互动实验探索/i });
+    fireEvent.click(advanceBtn);
+
+    expect(screen.getByText(/第 2 步/i)).toBeInTheDocument();
   });
 });

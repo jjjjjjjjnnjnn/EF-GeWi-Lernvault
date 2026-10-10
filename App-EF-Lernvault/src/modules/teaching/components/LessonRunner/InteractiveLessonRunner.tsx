@@ -110,6 +110,9 @@ export const InteractiveLessonRunner: React.FC<InteractiveLessonRunnerProps> = (
     "simpler" | "deeper" | "quiz" | null
   >(null);
   const [showQuizAnswer, setShowQuizAnswer] = useState(false);
+  const [selectedIntuitionChoice, setSelectedIntuitionChoice] = useState<
+    "A" | "B" | null
+  >(null);
 
   useEffect(() => {
     if (typeof window !== "undefined" && window.localStorage) {
@@ -153,6 +156,7 @@ export const InteractiveLessonRunner: React.FC<InteractiveLessonRunnerProps> = (
   const handleAdvanceLecture = () => {
     setActiveStudyMateProbe(null);
     setShowQuizAnswer(false);
+    setSelectedIntuitionChoice(null);
     setAccumulatedXp((prev) => prev + currentStep.xpReward);
     if (currentStepIndex + 1 < steps.length) {
       setCurrentStepIndex((prev) => prev + 1);
@@ -170,6 +174,7 @@ export const InteractiveLessonRunner: React.FC<InteractiveLessonRunnerProps> = (
   const handleAdvanceMicroWorld = () => {
     setActiveStudyMateProbe(null);
     setShowQuizAnswer(false);
+    setSelectedIntuitionChoice(null);
     setComboCount((prev) => Math.max(1, prev + 1));
     setAccumulatedXp((prev) => prev + currentStep.xpReward);
     if (currentStepIndex + 1 < steps.length) {
@@ -228,6 +233,7 @@ export const InteractiveLessonRunner: React.FC<InteractiveLessonRunnerProps> = (
   const handleNextStep = () => {
     setActiveStudyMateProbe(null);
     setShowQuizAnswer(false);
+    setSelectedIntuitionChoice(null);
     if (currentStepIndex + 1 < steps.length) {
       setCurrentStepIndex((prev) => prev + 1);
       setSelectedOptionId(null);
@@ -252,6 +258,7 @@ export const InteractiveLessonRunner: React.FC<InteractiveLessonRunnerProps> = (
   const handleReviewQuest = () => {
     setCurrentStepIndex(0);
     setSelectedOptionId(null);
+    setSelectedIntuitionChoice(null);
     setIsAnswerChecked(false);
     setIsCorrect(false);
     setActiveFeedback(null);
@@ -441,14 +448,15 @@ export const InteractiveLessonRunner: React.FC<InteractiveLessonRunnerProps> = (
             {lang === "de" ? currentStep.promptDE : currentStep.promptZH}
           </h3>
 
-          {/* 1. 若为第一阶段：新知精讲微课 (Phase 1 Lecture) */}
-          {currentStep.type === "lecture" && currentStep.lecturePayload && (
-            <div className="flex flex-col gap-4 text-xs leading-relaxed">
-              {/* A. 战役情景剧情与角色代入 (Story Hook & Drama) */}
-              {currentStep.lecturePayload.storyHook && (
-                <div className="border border-[var(--ink)] bg-[var(--paper-subtle)] p-3.5">
-                  <div className="flex items-center justify-between mb-2">
-                    <span className="font-mono text-[10px] uppercase font-bold px-1.5 py-0.5 bg-[var(--ink)] text-[var(--paper)]">
+          {/* 1. 若为第一阶段：新知精讲与直觉站队微课 (Phase 1 Intuitions-Check) */}
+          {currentStep.type === "lecture" && currentStep.lecturePayload && (() => {
+            const dilemma = currentStep.lecturePayload.intuitionDilemma;
+            return (
+              <div className="flex flex-col gap-4 text-xs leading-relaxed">
+                {/* A. 战役情境与角色身份标签 (Story Hook Context) */}
+                {currentStep.lecturePayload.storyHook && (
+                  <div className="flex items-center justify-between pb-2 border-b border-[var(--line)]">
+                    <span className="font-mono text-[10px] uppercase font-bold px-2 py-0.5 bg-[var(--ink)] text-[var(--paper)]">
                       [ {lang === "de" ? "Story-Szenario & Rolle" : "战役情境与角色代入"} ]
                     </span>
                     <span className="font-mono text-[10px] font-bold text-[var(--ink)] border border-[var(--line)] px-2 py-0.5 bg-[var(--paper)]">
@@ -457,305 +465,300 @@ export const InteractiveLessonRunner: React.FC<InteractiveLessonRunnerProps> = (
                         : currentStep.lecturePayload.storyHook.roleZH}
                     </span>
                   </div>
-                  <p className="text-[11px] text-[var(--ink)] leading-snug font-serif border-l-2 border-[var(--ink)] pl-2 my-1.5 bg-[var(--paper)] py-1">
-                    {lang === "de"
-                      ? currentStep.lecturePayload.storyHook.scenarioDE
-                      : currentStep.lecturePayload.storyHook.scenarioZH}
-                  </p>
-                </div>
-              )}
+                )}
 
-              {/* B. 费曼大白话 · 一句话本质 (Feynman-Klartext) */}
-              {currentStep.lecturePayload.feynmanExplanation && (
-                <div className="border-l-2 border-[var(--ink)] bg-[var(--paper-subtle)] p-3.5">
-                  <div className="font-mono text-[10px] uppercase font-bold text-[var(--ink-muted)] mb-1">
-                    [ {lang === "de" ? "Feynman-Klartext · Die Essenz" : "费曼大白话 · 一句话本质"} ]
-                  </div>
-                  <div className="font-bold text-xs sm:text-sm text-[var(--ink)] mb-1 leading-snug">
-                    {lang === "de"
-                      ? currentStep.lecturePayload.feynmanExplanation.summaryDE
-                      : currentStep.lecturePayload.feynmanExplanation.summaryZH}
-                  </div>
-                </div>
-              )}
-
-              {/* C. 生活心智模型与现象引言 (Alltagsphänomen & Hook) */}
-              <div className="border border-[var(--line)] bg-[var(--paper)] p-3.5">
-                <div className="font-mono text-[10px] uppercase font-bold text-[var(--ink-muted)] mb-1">
-                  [ {lang === "de" ? "Denkmodell & Phänomen" : "生活心智模型与现象直觉"} ]
-                </div>
-                <div className="font-bold text-xs mb-1 text-[var(--ink)]">
-                  {currentStep.lecturePayload.analogyTitle}
-                </div>
-                <p className="text-[11px] text-[var(--ink)]">
-                  {lang === "de"
-                    ? currentStep.lecturePayload.analogyExplanationDE
-                    : currentStep.lecturePayload.analogyExplanationZH}
-                </p>
-              </div>
-
-              {/* D. 辩证双轨 · 两副眼镜对照 (Zwei Brillen / Kontroverse) */}
-              {currentStep.lecturePayload.twoBrillen && (
-                <div className="border border-[var(--line)] p-3.5 bg-[var(--paper)]">
-                  <div className="font-mono text-[10px] uppercase font-bold text-[var(--ink-muted)] mb-2.5 flex items-center justify-between">
+                {/* B. 直觉站队场景与两难抉择 (Schritt 1: Intuitions-Check) */}
+                <div className="p-4 border-l-4 border-[var(--ink)] bg-[var(--paper-subtle)]">
+                  <div className="font-mono text-[10px] uppercase font-bold text-[var(--ink-muted)] mb-1.5 flex items-center justify-between">
                     <span>
-                      [ {lang === "de" ? "Zwei Brillen · Dialektischer Kontrast" : "辩证双轨 · 两副眼镜视角"} ]
+                      [ {lang === "de" ? "Intuitions-Check · Reales Szenario" : "直觉站队 · 真实博弈情境"} ]
                     </span>
                     <span className="text-[10px] font-mono text-[var(--ink-muted)]">
-                      {lang === "de" ? "Perspektivenwechsel" : "正反辩证"}
+                      {lang === "de" ? "Entscheidung treffen" : "10 秒直觉站队"}
                     </span>
                   </div>
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-2.5">
-                    {/* Brille A */}
-                    <div className="border border-[var(--line)] p-2.5 bg-[var(--paper-subtle)] flex flex-col justify-between">
+                  <p className="text-xs sm:text-sm font-serif text-[var(--ink)] leading-relaxed mb-3">
+                    {dilemma
+                      ? (lang === "de" ? dilemma.scenarioDE : dilemma.scenarioZH)
+                      : (currentStep.lecturePayload.storyHook
+                          ? (lang === "de" ? currentStep.lecturePayload.storyHook.scenarioDE : currentStep.lecturePayload.storyHook.scenarioZH)
+                          : (lang === "de" ? currentStep.promptDE : currentStep.promptZH))}
+                  </p>
+                  <div className="font-bold text-xs sm:text-sm text-[var(--ink)]">
+                    {dilemma
+                      ? (lang === "de" ? dilemma.questionDE : dilemma.questionZH)
+                      : (lang === "de" ? currentStep.promptDE : currentStep.promptZH)}
+                  </div>
+                </div>
+
+                {/* C. 两个极简直觉选项 (Option A vs Option B) */}
+                <div className="grid grid-cols-1 gap-2.5">
+                  <button
+                    type="button"
+                    onClick={() => setSelectedIntuitionChoice("A")}
+                    className={`text-left p-3.5 border transition-all cursor-pointer ${
+                      selectedIntuitionChoice === "A"
+                        ? "border-2 border-[var(--ink)] bg-[var(--paper)] font-medium"
+                        : "border-[var(--line)] bg-[var(--paper-subtle)] hover:border-[var(--ink)] text-[var(--ink)]"
+                    }`}
+                  >
+                    <div className="flex items-start gap-2.5">
+                      <span
+                        className={`font-mono text-xs font-bold px-2 py-0.5 border shrink-0 ${
+                          selectedIntuitionChoice === "A"
+                            ? "bg-[var(--ink)] text-[var(--paper)] border-[var(--ink)]"
+                            : "bg-[var(--paper)] text-[var(--ink)] border-[var(--line)]"
+                        }`}
+                      >
+                        [ A ]
+                      </span>
+                      <span className="text-xs sm:text-sm leading-relaxed text-[var(--ink)]">
+                        {dilemma
+                          ? (lang === "de" ? dilemma.choiceA.textDE : dilemma.choiceA.textZH)
+                          : "Option A"}
+                      </span>
+                    </div>
+                  </button>
+
+                  <button
+                    type="button"
+                    onClick={() => setSelectedIntuitionChoice("B")}
+                    className={`text-left p-3.5 border transition-all cursor-pointer ${
+                      selectedIntuitionChoice === "B"
+                        ? "border-2 border-[var(--ink)] bg-[var(--paper)] font-medium"
+                        : "border-[var(--line)] bg-[var(--paper-subtle)] hover:border-[var(--ink)] text-[var(--ink)]"
+                    }`}
+                  >
+                    <div className="flex items-start gap-2.5">
+                      <span
+                        className={`font-mono text-xs font-bold px-2 py-0.5 border shrink-0 ${
+                          selectedIntuitionChoice === "B"
+                            ? "bg-[var(--ink)] text-[var(--paper)] border-[var(--ink)]"
+                            : "bg-[var(--paper)] text-[var(--ink)] border-[var(--line)]"
+                        }`}
+                      >
+                        [ B ]
+                      </span>
+                      <span className="text-xs sm:text-sm leading-relaxed text-[var(--ink)]">
+                        {dilemma
+                          ? (lang === "de" ? dilemma.choiceB.textDE : dilemma.choiceB.textZH)
+                          : "Option B"}
+                      </span>
+                    </div>
+                  </button>
+                </div>
+
+                {/* D. 选完即时浮出解析卡片 (Instant Mechanism Revelation Card) */}
+                {selectedIntuitionChoice && dilemma && (
+                  <div className="p-4 border-2 border-[var(--ink)] bg-[var(--paper)] animate-fadeIn">
+                    <div className="flex items-center justify-between mb-2">
+                      <span className="font-mono text-[10px] uppercase font-bold px-1.5 py-0.5 bg-[var(--ink)] text-[var(--paper)]">
+                        [ {lang === "de" ? "Wirkungsmechanismus & KLP-Erkenntnis" : "真实机制剖析 · 考纲因果洞察"} ]
+                      </span>
+                      <span className="font-mono text-[10px] text-[var(--ink-muted)]">
+                        {lang === "de"
+                          ? `Standpunkt [ ${selectedIntuitionChoice} ] gewählt`
+                          : `已选择立场 [ ${selectedIntuitionChoice} ]`}
+                      </span>
+                    </div>
+
+                    {/* 针对立场的即时因果反馈 */}
+                    <div className="text-xs leading-relaxed text-[var(--ink)] font-semibold mb-3 pb-2.5 border-b border-[var(--line)]">
+                      {selectedIntuitionChoice === "A"
+                        ? (lang === "de" ? dilemma.choiceA.reactionDE : dilemma.choiceA.reactionZH)
+                        : (lang === "de" ? dilemma.choiceB.reactionDE : dilemma.choiceB.reactionZH)}
+                    </div>
+
+                    {/* 费曼本质因果与考纲核心逻辑 */}
+                    <div className="flex flex-col gap-2.5 text-xs">
                       <div>
-                        <div className="font-bold text-xs mb-1 text-[var(--ink)]">
+                        <span className="font-mono text-[10px] uppercase font-bold text-[var(--ink-muted)] block mb-0.5">
+                          [ {lang === "de" ? "Feynman-Klartext · Die Essenz" : "费曼大白话 · 一句话本质"} ]:
+                        </span>
+                        <p className="text-[11px] sm:text-xs text-[var(--ink)] leading-relaxed font-serif">
+                          {lang === "de" ? dilemma.mechanismTakeawayDE : dilemma.mechanismTakeawayZH}
+                        </p>
+                      </div>
+
+                      <div>
+                        <span className="font-mono text-[10px] uppercase font-bold text-[var(--ink-muted)] block mb-0.5">
+                          [ {lang === "de" ? "KLP-Kernbegriffe & Prüfungskompetenz" : "考纲硬核 · 踩分关键词"} ]:
+                        </span>
+                        <p className="font-mono text-[11px] text-[var(--ink)]">
+                          {lang === "de" ? dilemma.klpCoreLogicDE : dilemma.klpCoreLogicZH}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                )}
+
+                {/* E. 辩证双轨对照 (Zwei Brillen / Pro vs Contra) */}
+                {currentStep.lecturePayload.twoBrillen && (
+                  <div className="border border-[var(--line)] p-3 bg-[var(--paper-subtle)]">
+                    <div className="font-mono text-[10px] uppercase font-bold text-[var(--ink-muted)] mb-2 flex items-center justify-between">
+                      <span>
+                        [ {lang === "de" ? "Zwei Brillen · Dialektischer Kontrast" : "辩证双轨 · 两副眼镜视角"} ]
+                      </span>
+                      <span className="text-[10px] font-mono text-[var(--ink-muted)]">
+                        {lang === "de" ? "Perspektivenwechsel" : "正反辩证"}
+                      </span>
+                    </div>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-[11px]">
+                      <div className="p-2 border border-[var(--line)] bg-[var(--paper)]">
+                        <div className="font-bold mb-0.5">
                           {lang === "de"
                             ? currentStep.lecturePayload.twoBrillen.perspectiveA.titleDE
                             : currentStep.lecturePayload.twoBrillen.perspectiveA.titleZH}
                         </div>
-                        <p className="text-[11px] text-[var(--ink)] leading-snug">
+                        <div className="leading-snug">
                           {lang === "de"
                             ? currentStep.lecturePayload.twoBrillen.perspectiveA.corePointDE
                             : currentStep.lecturePayload.twoBrillen.perspectiveA.corePointZH}
-                        </p>
+                        </div>
                       </div>
-                    </div>
-                    {/* Brille B */}
-                    <div className="border border-[var(--line)] p-2.5 bg-[var(--paper-subtle)] flex flex-col justify-between">
-                      <div>
-                        <div className="font-bold text-xs mb-1 text-[var(--ink)]">
+                      <div className="p-2 border border-[var(--line)] bg-[var(--paper)]">
+                        <div className="font-bold mb-0.5">
                           {lang === "de"
                             ? currentStep.lecturePayload.twoBrillen.perspectiveB.titleDE
                             : currentStep.lecturePayload.twoBrillen.perspectiveB.titleZH}
                         </div>
-                        <p className="text-[11px] text-[var(--ink)] leading-snug">
+                        <div className="leading-snug">
                           {lang === "de"
                             ? currentStep.lecturePayload.twoBrillen.perspectiveB.corePointDE
                             : currentStep.lecturePayload.twoBrillen.perspectiveB.corePointZH}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                )}
+
+                {/* F. Study-Mate 互动调频探针 (Adaptive Probes: [Einfacher] [Vertiefung] [Check]) */}
+                {currentStep.lecturePayload.studyMateProbes && (
+                  <div className="border border-[var(--line)] p-3 bg-[var(--paper)]">
+                    <div className="font-mono text-[10px] uppercase font-bold text-[var(--ink)] mb-2 flex items-center justify-between">
+                      <span>
+                        [ Study-Mate {lang === "de" ? "Interaktive Sonden" : "互动调频探针"} ]
+                      </span>
+                      <span className="text-[10px] font-mono text-[var(--ink-muted)]">
+                        {lang === "de" ? "Wähle deine Ebene" : "按需点击探究"}
+                      </span>
+                    </div>
+                    <div className="flex flex-wrap items-center gap-2 mb-2">
+                      <button
+                        type="button"
+                        onClick={() => {
+                          setActiveStudyMateProbe(
+                            activeStudyMateProbe === "simpler" ? null : "simpler"
+                          );
+                        }}
+                        className={`px-2.5 py-1 text-xs font-mono border transition-all cursor-pointer ${
+                          activeStudyMateProbe === "simpler"
+                            ? "bg-[var(--ink)] text-[var(--paper)] border-[var(--ink)] font-bold"
+                            : "bg-[var(--paper-subtle)] border-[var(--line)] hover:border-[var(--ink)] text-[var(--ink)]"
+                        }`}
+                      >
+                        [ {lang === "de" ? "Einfacher / Klartext" : "这里没懂 · 费曼白话"} ]
+                      </button>
+                      <button
+                        type="button"
+                        onClick={() => {
+                          setActiveStudyMateProbe(
+                            activeStudyMateProbe === "deeper" ? null : "deeper"
+                          );
+                        }}
+                        className={`px-2.5 py-1 text-xs font-mono border transition-all cursor-pointer ${
+                          activeStudyMateProbe === "deeper"
+                            ? "bg-[var(--ink)] text-[var(--paper)] border-[var(--ink)] font-bold"
+                            : "bg-[var(--paper-subtle)] border-[var(--line)] hover:border-[var(--ink)] text-[var(--ink)]"
+                        }`}
+                      >
+                        [ {lang === "de" ? "Vertiefung / Edge Case" : "太简单了 · 极客反例"} ]
+                      </button>
+                      <button
+                        type="button"
+                        onClick={() => {
+                          if (activeStudyMateProbe === "quiz") {
+                            setActiveStudyMateProbe(null);
+                            setShowQuizAnswer(false);
+                          } else {
+                            setActiveStudyMateProbe("quiz");
+                            setShowQuizAnswer(false);
+                          }
+                        }}
+                        className={`px-2.5 py-1 text-xs font-mono border transition-all cursor-pointer ${
+                          activeStudyMateProbe === "quiz"
+                            ? "bg-[var(--ink)] text-[var(--paper)] border-[var(--ink)] font-bold"
+                            : "bg-[var(--paper-subtle)] border-[var(--line)] hover:border-[var(--ink)] text-[var(--ink)]"
+                        }`}
+                      >
+                        [ {lang === "de" ? "Check / Schnelltest" : "考考我 · 现场快测"} ]
+                      </button>
+                    </div>
+
+                    {/* 探针展开卡片 */}
+                    {activeStudyMateProbe === "simpler" && (
+                      <div className="p-3 border border-[var(--line)] bg-[var(--paper-subtle)] text-xs leading-relaxed animate-fadeIn">
+                        <div className="font-bold font-mono text-[10px] text-[var(--ink-muted)] mb-1">
+                          [ {lang === "de" ? "Feynman-Abstraktion senken" : "通俗生活类比与大白话"} ]
+                        </div>
+                        <p className="text-[11px] text-[var(--ink)] font-medium leading-relaxed">
+                          {lang === "de"
+                            ? currentStep.lecturePayload.studyMateProbes.simplerHintDE
+                            : currentStep.lecturePayload.studyMateProbes.simplerHintZH}
                         </p>
                       </div>
-                    </div>
-                  </div>
-                  {/* 合题综述 */}
-                  <div className="p-2 border border-dashed border-[var(--line)] bg-[var(--paper-subtle)] text-[11px] text-[var(--ink)]">
-                    <span className="font-bold font-mono text-[10px]">
-                      [ {lang === "de" ? "Synthese / Abwägung" : "合题辩证"} ]:
-                    </span>{" "}
-                    {lang === "de"
-                      ? currentStep.lecturePayload.twoBrillen.synthesisDE
-                      : currentStep.lecturePayload.twoBrillen.synthesisZH}
-                  </div>
-                </div>
-              )}
+                    )}
 
-              {/* E. 考纲核心专业术语矩阵卡片 (KLP-Fachbegriffe) */}
-              <div className="border border-[var(--line)] p-3.5 bg-[var(--paper)]">
-                <div className="font-mono text-[10px] uppercase font-bold text-[var(--ink-muted)] mb-2">
-                  [ {lang === "de" ? "KLP-Fachbegriffe & Definitionen" : "考纲核心专业术语与规范定义"} ]
-                </div>
-                <div className="flex flex-col gap-2.5">
-                  {currentStep.lecturePayload.klpTermini.map((term, tIdx) => (
-                    <div
-                      key={tIdx}
-                      className="border border-[var(--line)] p-2.5 bg-[var(--paper-subtle)]"
-                    >
-                      <div className="flex items-center justify-between mb-1">
-                        <span className="font-bold text-xs">
-                          {term.termDE}
-                        </span>
-                        <span className="font-mono text-[10px] text-[var(--ink-muted)]">
-                          {term.termZH}
-                        </span>
-                      </div>
-                      <p className="text-[11px] text-[var(--ink)] leading-snug">
-                        {lang === "de" ? term.definitionDE : term.definitionZH}
-                      </p>
-                    </div>
-                  ))}
-                </div>
-              </div>
-
-              {/* F. 底层因果运行链推演 (Kausalkette) */}
-              <div className="border border-[var(--line)] p-3.5 bg-[var(--paper)]">
-                <div className="font-mono text-[10px] uppercase font-bold text-[var(--ink-muted)] mb-2">
-                  [ {lang === "de" ? "Kausalkette & Mechanismus" : "底层因果运行机制推演链"} ]
-                </div>
-                <div className="flex flex-col gap-1.5 font-mono text-[11px]">
-                  {(lang === "de"
-                    ? currentStep.lecturePayload.causalChainDE
-                    : currentStep.lecturePayload.causalChainZH
-                  ).map((stepText, idx) => (
-                    <div key={idx} className="flex items-start gap-2">
-                      <span className="px-1 border border-[var(--line)] bg-[var(--paper-subtle)] text-[10px] font-bold shrink-0">
-                        {idx + 1}
-                      </span>
-                      <span className="flex-1 text-[var(--ink)]">
-                        {stepText}
-                      </span>
-                    </div>
-                  ))}
-                </div>
-              </div>
-
-              {/* G. 趣味历史轶事与真实冷知识 (Fun-Fact & Anekdote) */}
-              {currentStep.lecturePayload.funFact && (
-                <div className="border border-[var(--line)] p-3.5 bg-[var(--paper-subtle)]">
-                  <div className="font-mono text-[10px] uppercase font-bold text-[var(--ink-muted)] mb-1">
-                    [ {lang === "de" ? "Anekdote & Fun-Fact" : "趣味历史轶事 & 冷知识"} ]
-                  </div>
-                  <div className="font-bold text-xs mb-1 text-[var(--ink)]">
-                    {lang === "de"
-                      ? currentStep.lecturePayload.funFact.titleDE
-                      : currentStep.lecturePayload.funFact.titleZH}
-                  </div>
-                  <p className="text-[11px] text-[var(--ink)] leading-relaxed">
-                    {lang === "de"
-                      ? currentStep.lecturePayload.funFact.factDE
-                      : currentStep.lecturePayload.funFact.factZH}
-                  </p>
-                </div>
-              )}
-
-              {/* H. Study-Mate 三维自适应调频探针 (Adaptive Probes: [Einfacher] [Vertiefung] [Check]) */}
-              {currentStep.lecturePayload.studyMateProbes && (
-                <div className="border border-[var(--ink)] p-3.5 bg-[var(--paper)]">
-                  <div className="font-mono text-[10px] uppercase font-bold text-[var(--ink)] mb-2 flex items-center justify-between">
-                    <span>
-                      [ Study-Mate {lang === "de" ? "Interaktive Sonden" : "互动调频探针"} ]
-                    </span>
-                    <span className="text-[10px] font-mono text-[var(--ink-muted)]">
-                      {lang === "de" ? "Wähle deine Ebene" : "按需点击探究"}
-                    </span>
-                  </div>
-                  {/* 三个探针按钮 */}
-                  <div className="flex flex-wrap items-center gap-2 mb-3">
-                    <button
-                      type="button"
-                      onClick={() => {
-                        setActiveStudyMateProbe(
-                          activeStudyMateProbe === "simpler" ? null : "simpler"
-                        );
-                      }}
-                      className={`px-2.5 py-1 text-xs font-mono border transition-all cursor-pointer ${
-                        activeStudyMateProbe === "simpler"
-                          ? "bg-[var(--ink)] text-[var(--paper)] border-[var(--ink)] font-bold"
-                          : "bg-[var(--paper-subtle)] border-[var(--line)] hover:border-[var(--ink)] text-[var(--ink)]"
-                      }`}
-                    >
-                      [ {lang === "de" ? "Einfacher / Klartext" : "这里没懂 · 费曼白话"} ]
-                    </button>
-                    <button
-                      type="button"
-                      onClick={() => {
-                        setActiveStudyMateProbe(
-                          activeStudyMateProbe === "deeper" ? null : "deeper"
-                        );
-                      }}
-                      className={`px-2.5 py-1 text-xs font-mono border transition-all cursor-pointer ${
-                        activeStudyMateProbe === "deeper"
-                          ? "bg-[var(--ink)] text-[var(--paper)] border-[var(--ink)] font-bold"
-                          : "bg-[var(--paper-subtle)] border-[var(--line)] hover:border-[var(--ink)] text-[var(--ink)]"
-                      }`}
-                    >
-                      [ {lang === "de" ? "Vertiefung / Edge Case" : "太简单了 · 极客反例"} ]
-                    </button>
-                    <button
-                      type="button"
-                      onClick={() => {
-                        if (activeStudyMateProbe === "quiz") {
-                          setActiveStudyMateProbe(null);
-                          setShowQuizAnswer(false);
-                        } else {
-                          setActiveStudyMateProbe("quiz");
-                          setShowQuizAnswer(false);
-                        }
-                      }}
-                      className={`px-2.5 py-1 text-xs font-mono border transition-all cursor-pointer ${
-                        activeStudyMateProbe === "quiz"
-                          ? "bg-[var(--ink)] text-[var(--paper)] border-[var(--ink)] font-bold"
-                          : "bg-[var(--paper-subtle)] border-[var(--line)] hover:border-[var(--ink)] text-[var(--ink)]"
-                      }`}
-                    >
-                      [ {lang === "de" ? "Check / Schnelltest" : "考考我 · 现场快测"} ]
-                    </button>
-                  </div>
-
-                  {/* 探针展开卡片 */}
-                  {activeStudyMateProbe === "simpler" && (
-                    <div className="p-3 border border-[var(--line)] bg-[var(--paper-subtle)] text-xs leading-relaxed animate-fadeIn">
-                      <div className="font-bold font-mono text-[10px] text-[var(--ink-muted)] mb-1">
-                        [ {lang === "de" ? "Feynman-Abstraktion senken" : "通俗生活类比与大白话"} ]
-                      </div>
-                      <p className="text-[11px] text-[var(--ink)] font-medium leading-relaxed">
-                        {lang === "de"
-                          ? currentStep.lecturePayload.studyMateProbes.simplerHintDE
-                          : currentStep.lecturePayload.studyMateProbes.simplerHintZH}
-                      </p>
-                    </div>
-                  )}
-
-                  {activeStudyMateProbe === "deeper" && (
-                    <div className="p-3 border border-[var(--line)] bg-[var(--paper-subtle)] text-xs leading-relaxed animate-fadeIn">
-                      <div className="font-bold font-mono text-[10px] text-[var(--ink-muted)] mb-1">
-                        [ {lang === "de" ? "Kritischer Grenzfall & Paradoxon" : "现实极端反例与批判质问"} ]
-                      </div>
-                      <p className="text-[11px] text-[var(--ink)] font-medium leading-relaxed">
-                        {lang === "de"
-                          ? currentStep.lecturePayload.studyMateProbes.deeperChallengeDE
-                          : currentStep.lecturePayload.studyMateProbes.deeperChallengeZH}
-                      </p>
-                    </div>
-                  )}
-
-                  {activeStudyMateProbe === "quiz" && (
-                    <div className="p-3 border border-[var(--line)] bg-[var(--paper-subtle)] text-xs leading-relaxed animate-fadeIn">
-                      <div className="font-bold font-mono text-[10px] text-[var(--ink-muted)] mb-1">
-                        [ {lang === "de" ? "Sofortige Verständniskontrolle" : "核心得分点现场快测"} ]
-                      </div>
-                      <p className="mb-2 text-[var(--ink)] font-semibold">
-                        {lang === "de"
-                          ? currentStep.lecturePayload.studyMateProbes.quizQuestionDE
-                          : currentStep.lecturePayload.studyMateProbes.quizQuestionZH}
-                      </p>
-                      {!showQuizAnswer ? (
-                        <button
-                          type="button"
-                          onClick={() => setShowQuizAnswer(true)}
-                          className="px-2.5 py-1 text-[11px] font-mono border border-[var(--ink)] bg-[var(--paper)] hover:bg-[var(--ink)] hover:text-[var(--paper)] cursor-pointer transition-colors"
-                        >
-                          [ {lang === "de" ? "Antwort einblenden" : "查看参考答案与关键采分点"} ]
-                        </button>
-                      ) : (
-                        <div className="border-t border-[var(--line)] pt-2 text-[11px] text-[var(--ink)]">
-                          <span className="font-bold font-mono text-[10px]">
-                            [ {lang === "de" ? "Musterantwort: " : "标准答法: "} ]
-                          </span>
-                          <p className="mt-1">
-                            {lang === "de"
-                              ? currentStep.lecturePayload.studyMateProbes.quizAnswerDE
-                              : currentStep.lecturePayload.studyMateProbes.quizAnswerZH}
-                          </p>
+                    {activeStudyMateProbe === "deeper" && (
+                      <div className="p-3 border border-[var(--line)] bg-[var(--paper-subtle)] text-xs leading-relaxed animate-fadeIn">
+                        <div className="font-bold font-mono text-[10px] text-[var(--ink-muted)] mb-1">
+                          [ {lang === "de" ? "Kritischer Grenzfall & Paradoxon" : "现实极端反例与批判质问"} ]
                         </div>
-                      )}
-                    </div>
-                  )}
-                </div>
-              )}
+                        <p className="text-[11px] text-[var(--ink)] font-medium leading-relaxed">
+                          {lang === "de"
+                            ? currentStep.lecturePayload.studyMateProbes.deeperChallengeDE
+                            : currentStep.lecturePayload.studyMateProbes.deeperChallengeZH}
+                        </p>
+                      </div>
+                    )}
 
-              {/* I. 苏格拉底导学引思 (Sokratischer Denkanstoß) */}
-              <div className="border border-dashed border-[var(--ink)] p-3 bg-[var(--paper-subtle)] font-mono text-xs">
-                <span className="font-bold">
-                  {lang === "de" ? "Sokratische Leitfrage: " : "实验探索思考指引："}
-                </span>
-                <span>
-                  {lang === "de"
-                    ? currentStep.lecturePayload.socraticPromptDE
-                    : currentStep.lecturePayload.socraticPromptZH}
-                </span>
+                    {activeStudyMateProbe === "quiz" && (
+                      <div className="p-3 border border-[var(--line)] bg-[var(--paper-subtle)] text-xs leading-relaxed animate-fadeIn">
+                        <div className="font-bold font-mono text-[10px] text-[var(--ink-muted)] mb-1">
+                          [ {lang === "de" ? "Sofortige Verständniskontrolle" : "核心得分点现场快测"} ]
+                        </div>
+                        <p className="mb-2 text-[var(--ink)] font-semibold">
+                          {lang === "de"
+                            ? currentStep.lecturePayload.studyMateProbes.quizQuestionDE
+                            : currentStep.lecturePayload.studyMateProbes.quizQuestionZH}
+                        </p>
+                        {!showQuizAnswer ? (
+                          <button
+                            type="button"
+                            onClick={() => setShowQuizAnswer(true)}
+                            className="px-2.5 py-1 text-[11px] font-mono border border-[var(--ink)] bg-[var(--paper)] hover:bg-[var(--ink)] hover:text-[var(--paper)] cursor-pointer transition-colors"
+                          >
+                            [ {lang === "de" ? "Antwort einblenden" : "查看参考答案与关键采分点"} ]
+                          </button>
+                        ) : (
+                          <div className="border-t border-[var(--line)] pt-2 text-[11px] text-[var(--ink)]">
+                            <span className="font-bold font-mono text-[10px]">
+                              [ {lang === "de" ? "Musterantwort: " : "标准答法: "} ]
+                            </span>
+                            <p className="mt-1">
+                              {lang === "de"
+                                ? currentStep.lecturePayload.studyMateProbes.quizAnswerDE
+                                : currentStep.lecturePayload.studyMateProbes.quizAnswerZH}
+                            </p>
+                          </div>
+                        )}
+                      </div>
+                    )}
+                  </div>
+                )}
               </div>
-            </div>
-          )}
+            );
+          })()}
 
           {/* 2. 若为第一阶段：动手探究实验微世界 (Phase 1 MicroWorld) */}
           {currentStep.type === "microworld" && (
@@ -851,9 +854,13 @@ export const InteractiveLessonRunner: React.FC<InteractiveLessonRunnerProps> = (
             {/* 新知精讲微课底部提示 */}
             {currentStep.type === "lecture" && (
               <span className="text-[var(--ink-muted)]">
-                {lang === "de"
-                  ? "Lies das Konzept aufmerksam durch und gehe zum interaktiven Experiment."
-                  : "掌握上述考纲新知与因果机理，准备进入下一步动手实验。"}
+                {selectedIntuitionChoice
+                  ? (lang === "de"
+                      ? `Option [ ${selectedIntuitionChoice} ] gewählt. Starte jetzt das interaktive Experiment.`
+                      : `已选择立场 [ ${selectedIntuitionChoice} ]。理清机制后，点击进入实验探索。`)
+                  : (lang === "de"
+                      ? "Wähle oben Option A oder B zur schnellen Intuitions-Prüfung."
+                      : "在上方选择 A 或 B 进行直觉站队，激活底层机制剖析。")}
               </span>
             )}
 
@@ -944,8 +951,8 @@ export const InteractiveLessonRunner: React.FC<InteractiveLessonRunnerProps> = (
               >
                 <span>
                   {lang === "de"
-                    ? "Konzept verstanden -> Weiter zum Experiment"
-                    : "我已理解核心机理 -> 进入互动实验探索"}
+                    ? "Weiter zum Experiment"
+                    : "进入互动实验探索"}
                 </span>
                 <span aria-hidden="true">-&gt;</span>
               </button>
