@@ -271,15 +271,20 @@ cd App-EF-Lernvault && npx vitest run              # 期望全部测试 100% PAS
 cd App-EF-Lernvault && npm run build               # 期望 ✓ built (0 错误)
 ```
 
-### 2. 核心主线：推进 Phase 3.0【课程专区】学科图谱与前置解锁技能树系统研发（核心动作）
+### 2. 核心主线：推进 Phase 4.0【商业级教学专区与任意书籍拆解交互研习工坊】研发（下一会话开工核心）
 
-- **技术规约与方案路线图**：[`00_META/Course-Zone-SkillTree-Roadmap.md`](00_META/Course-Zone-SkillTree-Roadmap.md)；
-- **业务目标**：为学生提供学科/课程/知识图谱（思维导图、蜘蛛网放射发散与 RPG 技能树），且后续高阶微课/考点必须在学完并通过前置课程后才可点亮解锁；
-- **四步闭环研发动线**：
-  - **① 独立制作**：在 `App-EF-Lernvault/src/engine/skillTree.ts` 构建轻量 DAG 依赖图与解锁状态机算法（`locked` $\to$ `available` $\to$ `in_progress` $\to$ `mastered`），在 `src/components/SkillTreeCanvas.tsx` 开发 Tufte 纯黑白 SVG 画布；
-  - **② 独立测试**：编写 `skillTree.test.ts` 跑通拓扑排序、多依赖解锁与防死锁检测；
-  - **③ 接入集成**：在工作区总线中注册课程专区入口，与 `Reise` 模块（微课通关即点亮后续节点）打通闭环；
-  - **④ 回归验证**：`npx tsc -b` 0 报错、`npm run build` 成功通过。
+- **技术规约与全景路线图**：[`00_META/ROADMAP-BOOK-TO-COURSE-STUDIO.md`](00_META/ROADMAP-BOOK-TO-COURSE-STUDIO.md)；
+- **业务目标与商业级产品定位**：
+  - 给产品输入任意一本书或教学大纲内容，自动完成结构化拆分、前置依赖 DAG 梳理；
+  - 自动规划每日 10–15 分钟无痛学习节奏，提炼核心概念、生活直觉比喻、高频陷阱与 15 NP 会考金句；
+  - 自动装配可动手交互微世界（24款原生教具 + 4套通用交互模板），提供类似 Study-Mate 的苏格拉底调频伴学；
+  - 界面遵循 Tufte 纯黑白极简纸墨风，渐进式披露，强视觉引导性（高对比度墨字、状态明确、动线聚焦、杜绝信息过载）；
+  - 全链路闭环：通关后点亮技能树并自动生成 `Fehlerlog.md` 错题补丁。
+- **下一会话开工第一步（Phase 4.0 任务清单）**：
+  - **① 独立制作**：在 `App-EF-Lernvault/src/modules/teaching/` 下构建 `engine/bookIngestParser.ts`（大纲拆解与 DAG 依赖）与 `engine/pacingPlanner.ts`（每日专注块与日程算法），搭建 `tabs/BookIngestWorkshopTab.tsx` 纯黑白交互界面；
+  - **② 独立测试**：编写 `BookIngest.test.tsx`，覆盖任意大纲解析、节点依赖拓扑与节奏排期生成；
+  - **③ 接入集成**：将拆书工坊接入主容器 `TeachingStudio.tsx`，支持即时预览生成的关卡清单；
+  - **④ 回归验证**：`cmd /c "npx tsc -b"` 0 报错、`npx vitest run` 100% 绿灯。
 
 ### 3. 把德语问询稿发给老师 ← **唯一能解锁剩余阻塞的动作**
 
