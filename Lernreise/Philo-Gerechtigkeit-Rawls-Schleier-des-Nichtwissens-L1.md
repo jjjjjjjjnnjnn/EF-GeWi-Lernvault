@@ -99,7 +99,7 @@ Kontinuitaet: Vorher Philo-Bioethik-Hans-Jonas-Verantwortung-L1.md | Nachher Phi
 
 BEISPIEL（正确例题示范，含教具操作与解答）：
 
-[Werkzeug: ethik-waage]
+[Werkzeug: rawls-sim]
 
 AUFGABE (analysieren & beurteilen, AFB II/III)：Drei Wirtschaftsmodelle stehen zur Abstimmung:
 - System A (Reiner Egalitarismus): Alle Buerger erhalten exakt dasselbe Einkommen von 2.000 € monatlich.
