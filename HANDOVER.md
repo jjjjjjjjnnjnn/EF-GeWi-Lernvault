@@ -26,6 +26,22 @@
 
 ---
 
+- ✅ **Phase 3.3 ~ 3.5 哲学正义论无知之幕分配天平、双工坊微课挂载与全科宏观星图 AFB III 打分补丁机交付（2026-10-10 交付）**：
+  - **选项 A：哲学标志性工坊《罗尔斯正义论与无知之幕分配天平》(`RawlsVerteilungsSim.tsx`)**：
+    - 5 阶层再分配与 Laffer 激励曲线建模，双臂道德天平纯 SVG 动态倾角平衡，5 阶层税前/税后收入柱状图；
+    - 洛伦兹曲线与 Gini 系数实时解算，无知之幕身份抽取与 15 NP 会考评分卡；
+    - 独立单测 `RawlsVerteilungsSim.test.tsx` 10/10 绿灯通过；注册入 `registry.ts`、`Labor.tsx`、`laborRegistry.ts`，同步至 `Glossar-DE-ZH-GeWi.md` 与 `INDEX.md`；
+  - **选项 B：微课内嵌教具调度网格打通与真实课程挂载**：
+    - `Reise.tsx` `renderEmbeddedTool` 支持 `wahlsystem-sim` 与 `rawls-sim` 动态解析与沙盒挂载；
+    - `Philo-Gerechtigkeit-Rawls-Schleier-des-Nichtwissens-L1.md` 正式挂载 `[Werkzeug: rawls-sim]`；
+    - `SoWi-Parteien-Willensbildung-L1.md` 正式挂载 `[Werkzeug: wahlsystem-sim]`；
+    - 配套集成测试 `Reise.toolsIntegration.test.tsx` 2/2 绿灯；
+  - **选项 C：AFB III 跨学科战役 D1–D5 五维自查评分台与 Fehlerlog 补丁机**：
+    - `AllSubjectsMacroView.tsx` 战役模态框集成 D1–D5（审题、因果链、跨学科融通、术语精确、独立评价）0–15 NP 打分量表；
+    - 错题实时诊断与一键生成复制标准 Markdown 表格补丁，遵循只读 Vault 契约供用户直接粘贴入 `Klausur-Training/Fehlerlog.md`；
+    - 配套测试 `AllSubjectsMacroView.test.tsx` 10/10 绿灯；
+  - **工程门禁全绿**：全量 81 个测试套件、600 项测试 100% PASS，`modules.test.tsx` 零契约违规，`npx tsc -b` 0 报错，`python scripts/vault-check.py` PASS。
+
 - ✅ **Phase 3.2 知识图谱状态机闭环、全科宏观战役融合与德国大选议席分配沙盘交付（2026-10-09 夜交付）**：
   - **方向一：知识图谱与微课通关双向状态机闭环**：
     - `Reise.tsx` 完成步骤 8 及主结算通道时自动穿透调用 `markNodeMasteredByCourseId`，持久化至全局与学科共享状态；
