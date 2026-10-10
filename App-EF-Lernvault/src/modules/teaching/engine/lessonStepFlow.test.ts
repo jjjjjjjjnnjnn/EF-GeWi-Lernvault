@@ -54,4 +54,15 @@ describe("Duolingo-style Lesson Step Flow Compiler", () => {
     const totalXp = result.steps.reduce((acc, s) => acc + s.xpReward, 0);
     expect(totalXp).toBeGreaterThanOrEqual(120);
   });
+
+  it("compiles into a lightweight 3-step flow when concept_light mode is active", () => {
+    const lightResult = compileLessonSteps(sampleQuest, "SoWi", "concept_light");
+    expect(lightResult.flowMode).toBe("concept_light");
+    expect(lightResult.steps.length).toBe(3);
+
+    const types = lightResult.steps.map((s) => s.type);
+    expect(types).toEqual(["intuition", "concept", "quiz"]);
+    expect(lightResult.steps[2].stepNumber).toBe(3);
+    expect(lightResult.steps[2].xpReward).toBe(45);
+  });
 });

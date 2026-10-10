@@ -11,6 +11,8 @@ export type LessonStepType =
   | "trap"        // 4. 考场失分陷阱排雷
   | "quiz";       // 5. 15 NP 会考标答冲刺
 
+export type FlowMode = "interactive_deep" | "concept_light";
+
 export interface LessonOption {
   id: string;
   textDE: string;
@@ -46,15 +48,24 @@ export interface LessonStep {
 }
 
 /**
- * 将任意关卡编译为 5 步多邻国递进上课流
+ * 将任意关卡编译为多邻国递进上课流
+ * 支持 interactive_deep (5 步深入流) 与 concept_light (3 步轻量流)
  */
 export function compileLessonSteps(
   questNode: ParsedQuestNode,
-  fach: string
+  fach: string,
+  mode?: FlowMode
 ): {
   distilled: DistilledConcept;
   steps: LessonStep[];
+  flowMode: FlowMode;
 } {
+  const effectiveMode: FlowMode =
+    mode ||
+    (questNode.lessonType === "concept" && (!questNode.matchedToolId || questNode.matchedToolId === "none")
+      ? "concept_light"
+      : "interactive_deep");
+
   const distilled = distillConcept(questNode.title, fach, questNode.summary);
 
   // 1. 直觉站队卡
@@ -212,8 +223,30 @@ export function compileLessonSteps(
     xpReward: 35,
   };
 
+  if (effectiveMode === "concept_light") {
+    // 3 步轻量流：① 生活直觉 -> ② 核心概念 -> ③ 15 NP 会考标答小测
+    const lightQuiz: LessonStep = {
+      ...stepQuiz,
+      id: `${questNode.id}-step-3`,
+      stepNumber: 3,
+      titleDE: "Schritt 3: 15-NP-Meistersatz & Abschluss-Check",
+      titleZH: "第 3 步：15 NP 会考金句与终局达标考核",
+      xpReward: 45,
+    };
+    return {
+      distilled,
+      steps: [
+        { ...stepIntuition, xpReward: 30 },
+        { ...stepConcept, xpReward: 35 },
+        lightQuiz,
+      ],
+      flowMode: "concept_light",
+    };
+  }
+
   return {
     distilled,
     steps: [stepIntuition, stepConcept, stepMicroWorld, stepTrap, stepQuiz],
+    flowMode: "interactive_deep",
   };
 }

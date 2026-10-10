@@ -8,7 +8,11 @@ export interface VariableSliderBoxProps {
   initialK?: number;
   formulaName?: string;
   lang?: "de" | "zh";
+  targetY?: number;
+  tolerancePercent?: number; // default 5%
+  enableMagneticSnap?: boolean; // default true
   onParameterChange?: (x: number, y: number) => void;
+  onTargetReached?: () => void;
 }
 
 type CurveModel = "linear" | "quadratic" | "diminishing" | "exponential";
@@ -129,7 +133,11 @@ export const VariableSliderBox: React.FC<VariableSliderBoxProps> = ({
   initialK = 1.5,
   formulaName,
   lang = "de",
+  targetY,
+  tolerancePercent = 5,
+  enableMagneticSnap = true,
   onParameterChange,
+  onTargetReached,
 }) => {
   const isZh = lang === "zh";
   const sliderXId = useId();
@@ -150,9 +158,62 @@ export const VariableSliderBox: React.FC<VariableSliderBoxProps> = ({
   const deltaX = xVal - baseX;
   const deltaY = currentY - baseY;
 
+  const isTargetActive = typeof targetY === "number";
+  const toleranceDelta = isTargetActive ? (targetY! * tolerancePercent) / 100 : 0;
+  const isWithinTolerance =
+    isTargetActive && Math.abs(currentY - targetY!) <= toleranceDelta;
+
+  const [hasSnapped, setHasSnapped] = useState(false);
+  const [showSocraticScaffold, setShowSocraticScaffold] = useState(false);
+  const [hasReachedTarget, setHasReachedTarget] = useState(false);
+
   useEffect(() => {
     onParameterChange?.(xVal, currentY);
   }, [xVal, currentY, onParameterChange]);
+
+  useEffect(() => {
+    if (isWithinTolerance && !hasReachedTarget) {
+      setHasReachedTarget(true);
+      onTargetReached?.();
+    }
+  }, [isWithinTolerance, hasReachedTarget, onTargetReached]);
+
+  useEffect(() => {
+    if (isTargetActive && !hasReachedTarget) {
+      const timer = setTimeout(() => {
+        setShowSocraticScaffold(true);
+      }, 20000);
+      return () => clearTimeout(timer);
+    }
+  }, [isTargetActive, hasReachedTarget]);
+
+  // 直接查看推导：自动求解最优 X
+  const handleDirectDerivation = () => {
+    if (!isTargetActive) return;
+    let bestX = xVal;
+    let minDiff = Infinity;
+    for (let testX = 0; testX <= 10; testX += 0.05) {
+      const testY = modelDef.calculateY(testX, kVal);
+      const diff = Math.abs(testY - targetY!);
+      if (diff < minDiff) {
+        minDiff = diff;
+        bestX = parseFloat(testX.toFixed(2));
+      }
+    }
+    setXVal(bestX);
+    setShowSocraticScaffold(true);
+  };
+
+  const handleSliderXChange = (newX: number) => {
+    if (enableMagneticSnap && isTargetActive) {
+      const candidateY = modelDef.calculateY(newX, kVal);
+      if (Math.abs(candidateY - targetY!) <= toleranceDelta * 0.4) {
+        setHasSnapped(true);
+        setTimeout(() => setHasSnapped(false), 1200);
+      }
+    }
+    setXVal(newX);
+  };
 
   // Coordinate Geometry: 520x280 viewBox
   const viewW = 520;
@@ -575,7 +636,7 @@ export const VariableSliderBox: React.FC<VariableSliderBoxProps> = ({
                 max="10"
                 step="0.1"
                 value={xVal}
-                onChange={(e) => setXVal(parseFloat(e.target.value))}
+                onChange={(e) => handleSliderXChange(parseFloat(e.target.value))}
                 className="w-full accent-[var(--ink)] cursor-pointer h-1.5 bg-[var(--line)]"
               />
               <div className="flex justify-between text-[9px] text-[var(--ink-muted)]">
@@ -583,14 +644,14 @@ export const VariableSliderBox: React.FC<VariableSliderBoxProps> = ({
                 <div className="flex gap-1">
                   <button
                     type="button"
-                    onClick={() => setXVal((v) => Math.max(0, parseFloat((v - 0.5).toFixed(1))))}
+                    onClick={() => handleSliderXChange(Math.max(0, parseFloat((xVal - 0.5).toFixed(1))))}
                     className="px-1 border border-[var(--line)] hover:bg-[var(--paper-subtle)] cursor-pointer"
                   >
                     -0.5
                   </button>
                   <button
                     type="button"
-                    onClick={() => setXVal((v) => Math.min(10, parseFloat((v + 0.5).toFixed(1))))}
+                    onClick={() => handleSliderXChange(Math.min(10, parseFloat((xVal + 0.5).toFixed(1))))}
                     className="px-1 border border-[var(--line)] hover:bg-[var(--paper-subtle)] cursor-pointer"
                   >
                     +0.5
@@ -599,6 +660,47 @@ export const VariableSliderBox: React.FC<VariableSliderBoxProps> = ({
                 <span>10.0 (Max)</span>
               </div>
             </div>
+
+            {/* 目标平衡容错带与推导直达控制 (Target Corridor & Snapping) */}
+            {isTargetActive && (
+              <div className="border border-[var(--line)] p-2 bg-[var(--paper)] space-y-1">
+                <div className="flex justify-between items-center text-[10px]">
+                  <span className="font-bold">
+                    {isZh ? "目标平衡指标:" : "Zielwert:"} Y={targetY!.toFixed(1)} (±{tolerancePercent}%)
+                  </span>
+                  <span
+                    className={`font-mono px-1 border text-[9px] ${
+                      isWithinTolerance
+                        ? "border-[var(--ink)] bg-[var(--paper-subtle)] font-bold"
+                        : "border-[var(--line)] text-[var(--ink-muted)]"
+                    }`}
+                  >
+                    {isWithinTolerance
+                      ? isZh ? "[OK] 已达成稳态" : "[OK] Ziel erreicht"
+                      : isZh ? "未入稳态带" : "Außerhalb Korridor"}
+                  </span>
+                </div>
+                {hasSnapped && (
+                  <div className="text-[9px] font-bold text-[var(--ink)]">
+                    {isZh ? "» 磁性吸附已对准目标平衡点" : "» Magnetischer Fang aktiv"}
+                  </div>
+                )}
+                {showSocraticScaffold && (
+                  <div className="pt-1 border-t border-[var(--line)] flex items-center justify-between gap-1 text-[9px]">
+                    <span className="text-[var(--ink-muted)]">
+                      {isZh ? "提示: 调整 X 可直接控制 Y 响应" : "Tipp: Nutze Grenzreagibilität"}
+                    </span>
+                    <button
+                      type="button"
+                      onClick={handleDirectDerivation}
+                      className="px-1.5 py-0.5 border border-[var(--ink)] bg-[var(--paper-subtle)] hover:bg-[var(--ink)] hover:text-[var(--paper)] text-[9px] font-bold cursor-pointer"
+                    >
+                      {isZh ? "直接推导" : "Zur Herleitung"}
+                    </button>
+                  </div>
+                )}
+              </div>
+            )}
 
             {/* 传导敏感度 K 滑块 */}
             <div className="space-y-1 border border-[var(--line)] p-2.5 bg-[var(--paper)]">

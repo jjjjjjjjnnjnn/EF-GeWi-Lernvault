@@ -13,7 +13,10 @@ export interface DilemmaBalanceScaleProps {
   initialLeftWeights?: Array<{ label: string; weight: number }>;
   initialRightWeights?: Array<{ label: string; weight: number }>;
   lang?: "de" | "zh";
+  toleranceDeg?: number; // default 2.5 degrees
+  enableMagneticSnap?: boolean; // default true
   onBalanceChange?: (angle: number, verdict: string) => void;
+  onTargetReached?: () => void;
 }
 
 interface ScalePreset {
@@ -89,7 +92,10 @@ export const DilemmaBalanceScale: React.FC<DilemmaBalanceScaleProps> = ({
   initialLeftWeights,
   initialRightWeights,
   lang = "de",
+  toleranceDeg = 2.5,
+  enableMagneticSnap = true,
   onBalanceChange,
+  onTargetReached,
 }) => {
   const isZh = lang === "zh";
 
@@ -136,7 +142,7 @@ export const DilemmaBalanceScale: React.FC<DilemmaBalanceScaleProps> = ({
   const netDiff = totalRight - totalLeft; // Positive = Right side is heavier
 
   // Smooth Angle mapping: Clamped to [-25, 25] degrees
-  const angle = useMemo(() => {
+  const rawAngle = useMemo(() => {
     const totalMass = totalLeft + totalRight;
     if (totalMass === 0) return 0;
     const baseScale = Math.max(totalLeft, totalRight, 8);
@@ -145,12 +151,58 @@ export const DilemmaBalanceScale: React.FC<DilemmaBalanceScaleProps> = ({
     return Math.max(-25, Math.min(25, parseFloat(computed.toFixed(2))));
   }, [totalLeft, totalRight, netDiff]);
 
+  // 磁性吸附：当处于微小平衡偏角时，自动吸附至绝对水平 0°
+  const angle = useMemo(() => {
+    if (enableMagneticSnap && Math.abs(rawAngle) <= toleranceDeg * 0.6) {
+      return 0;
+    }
+    return rawAngle;
+  }, [rawAngle, enableMagneticSnap, toleranceDeg]);
+
+  const isBalanced = Math.abs(angle) <= toleranceDeg;
+  const [showSocraticScaffold, setShowSocraticScaffold] = useState(false);
+  const [hasReachedTarget, setHasReachedTarget] = useState(false);
+
+  useEffect(() => {
+    if (isBalanced && !hasReachedTarget) {
+      setHasReachedTarget(true);
+      onTargetReached?.();
+    }
+  }, [isBalanced, hasReachedTarget, onTargetReached]);
+
+  useEffect(() => {
+    if (!hasReachedTarget) {
+      const timer = setTimeout(() => {
+        setShowSocraticScaffold(true);
+      }, 20000);
+      return () => clearTimeout(timer);
+    }
+  }, [hasReachedTarget]);
+
+  // 一键平衡与论证推导直达：自动补齐反思平衡砝码
+  const handleDirectBalanceDerivation = () => {
+    if (totalLeft > totalRight) {
+      const diff = totalLeft - totalRight;
+      setRightWeights((prev) => [
+        ...prev,
+        { id: `rw-derivation-${Date.now()}`, label: isZh ? "反思平衡调节项" : "Reflektives Ausgleichsargument", weight: diff },
+      ]);
+    } else if (totalRight > totalLeft) {
+      const diff = totalRight - totalLeft;
+      setLeftWeights((prev) => [
+        ...prev,
+        { id: `lw-derivation-${Date.now()}`, label: isZh ? "反思平衡调节项" : "Reflektives Ausgleichsargument", weight: diff },
+      ]);
+    }
+    setShowSocraticScaffold(true);
+  };
+
   // Dynamic Verdict Evaluation
   const verdict = useMemo(() => {
     const absAngle = Math.abs(angle);
-    if (absAngle < 1.2) {
+    if (absAngle <= toleranceDeg) {
       return isZh
-        ? "辩证均势 (Aporie / 僵局)：两造论据分值完全相当，处于反思平衡未决状态。"
+        ? "辩证均势 (Aporie / 反思平衡)：两造论据在容错带内达成平衡，处于理智审慎状态。"
         : "Im Gleichgewicht (Aporie / Patt): Keine Seite besitzt ein hinreichendes Übergewicht für eine eindeutige Deduktion.";
     }
     if (angle < 0) {
@@ -164,7 +216,7 @@ export const DilemmaBalanceScale: React.FC<DilemmaBalanceScaleProps> = ({
         ? `【${currentRightTitle}】占据显著主导（净胜分值 +${lead}，偏转 ${absAngle.toFixed(1)}°）。后果效用权衡压倒原则约束。`
         : `»${currentRightTitle}« überwiegt mit ΔW = +${lead} Pkt. (Neigung: ${absAngle.toFixed(1)}° rechts). Die teleologische Nutzenabwägung dominiert.`;
     }
-  }, [angle, totalLeft, totalRight, currentLeftTitle, currentRightTitle, isZh]);
+  }, [angle, totalLeft, totalRight, currentLeftTitle, currentRightTitle, toleranceDeg, isZh]);
 
   useEffect(() => {
     onBalanceChange?.(angle, verdict);
@@ -628,11 +680,30 @@ export const DilemmaBalanceScale: React.FC<DilemmaBalanceScaleProps> = ({
         </div>
 
         {/* 动态哲学与论证判决横幅 (Tufte Verdict Banner) */}
-        <div className="w-full mt-2 border border-[var(--line)] p-2.5 bg-[var(--paper-subtle)] text-[11px] leading-relaxed flex items-start gap-2">
-          <span className="font-bold px-1.5 py-0.5 bg-[var(--paper)] border border-[var(--line)] text-[10px] shrink-0">
-            {isZh ? "天平判决" : "WAAGEN-URTEIL"}
-          </span>
-          <span className="text-[var(--ink)]">{verdict}</span>
+        <div className="w-full mt-2 border border-[var(--line)] p-2.5 bg-[var(--paper-subtle)] text-[11px] leading-relaxed flex flex-col gap-1.5">
+          <div className="flex items-start gap-2">
+            <span className="font-bold px-1.5 py-0.5 bg-[var(--paper)] border border-[var(--line)] text-[10px] shrink-0">
+              {isZh ? "天平判决" : "WAAGEN-URTEIL"}
+            </span>
+            <span className="text-[var(--ink)] flex-1">{verdict}</span>
+          </div>
+          {/* 苏格拉底脚手架提示与直接推导平衡通道 */}
+          {(showSocraticScaffold || !isBalanced) && (
+            <div className="pt-1.5 border-t border-[var(--line)] flex items-center justify-between text-[10px] font-mono">
+              <span className="text-[var(--ink-muted)]">
+                {isZh
+                  ? `反思平衡容错带: ±${toleranceDeg}° (当前 ${Math.abs(angle).toFixed(1)}°)`
+                  : `Reflexiver Korridor: ±${toleranceDeg}° (Aktuell: ${Math.abs(angle).toFixed(1)}°)`}
+              </span>
+              <button
+                type="button"
+                onClick={handleDirectBalanceDerivation}
+                className="px-2 py-0.5 border border-[var(--ink)] bg-[var(--paper)] hover:bg-[var(--ink)] hover:text-[var(--paper)] text-[10px] font-bold cursor-pointer transition-colors"
+              >
+                {isZh ? "平衡推导直达" : "Balance herstellen (Deduktion)"}
+              </button>
+            </div>
+          )}
         </div>
       </div>
 

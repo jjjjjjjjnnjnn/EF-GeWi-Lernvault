@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from "react";
+import React, { useState, useMemo, useEffect } from "react";
 import type { ParsedQuestNode } from "../../engine/bookIngestParser";
 import { compileLessonSteps, type LessonStep, type LessonOption } from "../../engine/lessonStepFlow";
 import { VictoryRewardScreen } from "./VictoryRewardScreen";
@@ -37,18 +37,88 @@ export const InteractiveLessonRunner: React.FC<InteractiveLessonRunnerProps> = (
     return compileLessonSteps(questNode, effectiveFach);
   }, [questNode, effectiveFach]);
 
-  const [currentStepIndex, setCurrentStepIndex] = useState(0);
+  const sessionKey = `lernvault_session_${questNode.id}`;
+
+  const [currentStepIndex, setCurrentStepIndex] = useState<number>(() => {
+    if (typeof window !== "undefined" && window.localStorage) {
+      try {
+        const raw = window.localStorage.getItem(sessionKey);
+        if (raw) {
+          const parsed = JSON.parse(raw);
+          if (typeof parsed.stepIndex === "number" && parsed.stepIndex < steps.length) {
+            return parsed.stepIndex;
+          }
+        }
+      } catch {
+        // ignore
+      }
+    }
+    return 0;
+  });
+
   const [selectedOptionId, setSelectedOptionId] = useState<string | null>(null);
   const [isAnswerChecked, setIsAnswerChecked] = useState(false);
   const [isCorrect, setIsCorrect] = useState(false);
   const [activeFeedback, setActiveFeedback] = useState<string | null>(null);
 
   // 连击与奖赏状态
-  const [comboCount, setComboCount] = useState(0);
-  const [accumulatedXp, setAccumulatedXp] = useState(0);
-  const [mistakes, setMistakes] = useState<string[]>([]);
+  const [comboCount, setComboCount] = useState<number>(() => {
+    if (typeof window !== "undefined" && window.localStorage) {
+      try {
+        const raw = window.localStorage.getItem(sessionKey);
+        if (raw) return JSON.parse(raw).comboCount || 0;
+      } catch {
+        // ignore
+      }
+    }
+    return 0;
+  });
+  const [accumulatedXp, setAccumulatedXp] = useState<number>(() => {
+    if (typeof window !== "undefined" && window.localStorage) {
+      try {
+        const raw = window.localStorage.getItem(sessionKey);
+        if (raw) return JSON.parse(raw).accumulatedXp || 0;
+      } catch {
+        // ignore
+      }
+    }
+    return 0;
+  });
+  const [mistakes, setMistakes] = useState<string[]>(() => {
+    if (typeof window !== "undefined" && window.localStorage) {
+      try {
+        const raw = window.localStorage.getItem(sessionKey);
+        if (raw) return JSON.parse(raw).mistakes || [];
+      } catch {
+        // ignore
+      }
+    }
+    return [];
+  });
   const [isFinished, setIsFinished] = useState(false);
   const [showExitConfirm, setShowExitConfirm] = useState(false);
+
+  useEffect(() => {
+    if (typeof window !== "undefined" && window.localStorage) {
+      try {
+        if (!isFinished && currentStepIndex > 0) {
+          window.localStorage.setItem(
+            sessionKey,
+            JSON.stringify({
+              stepIndex: currentStepIndex,
+              comboCount,
+              accumulatedXp,
+              mistakes,
+            })
+          );
+        } else if (isFinished) {
+          window.localStorage.removeItem(sessionKey);
+        }
+      } catch {
+        // ignore
+      }
+    }
+  }, [currentStepIndex, comboCount, accumulatedXp, mistakes, isFinished, sessionKey]);
 
   const currentStep: LessonStep = steps[currentStepIndex] || steps[0];
   const progressPercent = Math.round((currentStepIndex / steps.length) * 100);
@@ -186,17 +256,32 @@ export const InteractiveLessonRunner: React.FC<InteractiveLessonRunnerProps> = (
           </svg>
         </button>
 
-        {/* 极细发丝进度条 */}
-        <div className="flex-1 max-w-xl mx-auto flex items-center gap-3">
-          <div className="flex-1 h-1.5 bg-[var(--paper-subtle)] border border-[var(--line)] overflow-hidden">
-            <div
-              className="h-full bg-[var(--ink)] transition-all duration-300 ease-out"
-              style={{ width: `${progressPercent}%` }}
-            />
+        {/* 增强型 3px 几何阶段刻度进度条 (Step Ticks) */}
+        <div className="flex-1 max-w-xl mx-auto flex flex-col gap-1">
+          <div className="flex items-center gap-3">
+            <div className="flex-1 h-2 bg-[var(--paper-subtle)] border border-[var(--line)] overflow-hidden relative">
+              <div
+                className="h-full bg-[var(--ink)] transition-all duration-300 ease-out"
+                style={{ width: `${Math.max(4, progressPercent)}%` }}
+              />
+            </div>
+            <span className="text-[10px] font-mono text-[var(--ink-muted)] shrink-0">
+              {currentStepIndex + 1} / {steps.length}
+            </span>
           </div>
-          <span className="text-[10px] font-mono text-[var(--ink-muted)]">
-            {currentStepIndex + 1} / {steps.length}
-          </span>
+          {/* 阶段刻度断点微指示器 */}
+          <div className="flex justify-between px-0.5">
+            {steps.map((_, sIdx) => (
+              <span
+                key={sIdx}
+                className={`inline-block w-1.5 h-1 border transition-colors ${
+                  sIdx <= currentStepIndex
+                    ? "bg-[var(--ink)] border-[var(--ink)]"
+                    : "bg-[var(--paper-subtle)] border-[var(--line)]"
+                }`}
+              />
+            ))}
+          </div>
         </div>
 
         {/* Combo 连击与即时 XP 计数 */}
@@ -270,7 +355,7 @@ export const InteractiveLessonRunner: React.FC<InteractiveLessonRunnerProps> = (
                     type="button"
                     disabled={isAnswerChecked}
                     onClick={() => handleSelectOption(opt)}
-                    className={`p-3.5 border text-left text-xs leading-relaxed transition-all cursor-pointer flex items-start gap-2.5 ${optionStyle}`}
+                    className={`p-3.5 border text-left text-xs leading-relaxed transition-all cursor-pointer flex items-start gap-2.5 active:translate-y-[1px] ${optionStyle}`}
                   >
                     <span className="font-mono text-[10px] border border-[var(--line)] px-1.5 py-0.5 mt-0.5 shrink-0">
                       {isSelected ? "●" : "○"}
@@ -331,7 +416,7 @@ export const InteractiveLessonRunner: React.FC<InteractiveLessonRunnerProps> = (
                 type="button"
                 onClick={handleCheckAnswer}
                 disabled={!selectedOptionId && currentStep.type !== "microworld"}
-                className="w-full sm:w-auto px-6 py-2 bg-[var(--ink)] text-[var(--paper)] text-xs font-bold border border-[var(--ink)] hover:bg-[var(--paper)] hover:text-[var(--ink)] disabled:opacity-30 disabled:cursor-not-allowed transition-colors cursor-pointer"
+                className="w-full sm:w-auto px-6 py-2 bg-[var(--ink)] text-[var(--paper)] text-xs font-bold border border-[var(--ink)] hover:bg-[var(--paper)] hover:text-[var(--ink)] active:translate-y-[1px] disabled:opacity-30 disabled:cursor-not-allowed transition-all cursor-pointer"
               >
                 {lang === "de" ? "Überprüfen" : "核验答案"}
               </button>
@@ -339,7 +424,7 @@ export const InteractiveLessonRunner: React.FC<InteractiveLessonRunnerProps> = (
               <button
                 type="button"
                 onClick={handleNextStep}
-                className="w-full sm:w-auto px-6 py-2 bg-[var(--ink)] text-[var(--paper)] text-xs font-bold border border-[var(--ink)] hover:bg-[var(--paper)] hover:text-[var(--ink)] transition-colors cursor-pointer flex items-center justify-center gap-2"
+                className="w-full sm:w-auto px-6 py-2 bg-[var(--ink)] text-[var(--paper)] text-xs font-bold border-2 border-[var(--ink)] hover:bg-[var(--paper)] hover:text-[var(--ink)] active:translate-y-[1px] transition-all cursor-pointer flex items-center justify-center gap-2"
               >
                 <span>{currentStepIndex + 1 < steps.length ? (lang === "de" ? "Weiter" : "继续下一步") : (lang === "de" ? "Zur Belohnung" : "查看通关战果")}</span>
                 <span aria-hidden="true">-&gt;</span>
@@ -348,7 +433,7 @@ export const InteractiveLessonRunner: React.FC<InteractiveLessonRunnerProps> = (
               <button
                 type="button"
                 onClick={handleRetryStep}
-                className="w-full sm:w-auto px-5 py-2 border border-[var(--line)] bg-[var(--paper-subtle)] text-xs font-mono hover:border-[var(--ink)] transition-colors cursor-pointer"
+                className="w-full sm:w-auto px-5 py-2 border border-[var(--line)] bg-[var(--paper-subtle)] text-xs font-mono hover:border-[var(--ink)] active:translate-y-[1px] transition-all cursor-pointer"
               >
                 {lang === "de" ? "Nochmals versuchen" : "重新尝试"}
               </button>
@@ -373,14 +458,19 @@ export const InteractiveLessonRunner: React.FC<InteractiveLessonRunnerProps> = (
               <button
                 type="button"
                 onClick={() => setShowExitConfirm(false)}
-                className="px-4 py-1.5 bg-[var(--ink)] text-[var(--paper)] text-xs font-bold border border-[var(--ink)] cursor-pointer"
+                className="px-4 py-1.5 bg-[var(--ink)] text-[var(--paper)] text-xs font-bold border border-[var(--ink)] active:translate-y-[1px] cursor-pointer"
               >
                 {lang === "de" ? "Weitermachen" : "继续学习"}
               </button>
               <button
                 type="button"
-                onClick={onClose}
-                className="px-4 py-1.5 border border-[var(--line)] text-xs font-mono hover:border-[var(--ink)] cursor-pointer"
+                onClick={() => {
+                  if (typeof window !== "undefined" && window.localStorage) {
+                    window.localStorage.removeItem(sessionKey);
+                  }
+                  onClose();
+                }}
+                className="px-4 py-1.5 border border-[var(--line)] text-xs font-mono hover:border-[var(--ink)] active:translate-y-[1px] cursor-pointer"
               >
                 {lang === "de" ? "Beenden" : "确认退出"}
               </button>

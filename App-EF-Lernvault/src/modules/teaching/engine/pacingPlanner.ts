@@ -267,3 +267,101 @@ export function generatePacingPlan(
     motivationalTip,
   };
 }
+
+/**
+ * 智能欠账平滑衰减重排：
+ * 当学生产生积压逾期的复习任务时，规划器将未完成的复习槽平滑分摊至未来 3-5 天中，
+ * 限制每日复习任务与总时长上限，防止复习债务“滚雪球雪崩”导致弃用。
+ */
+export function smartReschedulePlan(
+  plan: PacingPlan,
+  currentDayIndex: number,
+  uncompletedReviews: ReviewSlot[],
+  maxDailyMinutesCap: number = 20
+): PacingPlan {
+  const updatedSlots: DailyPacingSlot[] = plan.dailySlots.map((slot) => ({
+    ...slot,
+    newQuests: [...slot.newQuests],
+    reviewQuests: [...slot.reviewQuests],
+  }));
+
+  // 1. 去重积压复习项并降维为 3 分钟闪电温故
+  const uniqueOverdue: ReviewSlot[] = [];
+  const seenQuestIds = new Set<string>();
+
+  for (const slot of uncompletedReviews) {
+    if (!seenQuestIds.has(slot.questId)) {
+      seenQuestIds.add(slot.questId);
+      uniqueOverdue.push({
+        ...slot,
+        intervalTag: "D+1 Blitz",
+        reviewMinutes: 3,
+      });
+    }
+  }
+
+  // 2. 从 currentDayIndex 开始平滑向后分摊
+  let queueIndex = 0;
+  for (let i = currentDayIndex; i < updatedSlots.length && queueIndex < uniqueOverdue.length; i++) {
+    const slot = updatedSlots[i];
+    if (slot.totalMinutes + 3 <= maxDailyMinutesCap) {
+      const reviewItem = uniqueOverdue[queueIndex];
+      slot.reviewQuests.push(reviewItem);
+      slot.totalMinutes += reviewItem.reviewMinutes;
+      slot.targetXp += 30;
+      queueIndex++;
+    }
+  }
+
+  // 3. 若仍有剩余，平滑追加至新缓冲天
+  let extraDayCounter = updatedSlots.length + 1;
+  while (queueIndex < uniqueOverdue.length) {
+    const reviewItem = uniqueOverdue[queueIndex];
+    const newDay: DailyPacingSlot = {
+      dayIndex: extraDayCounter,
+      dayLabel: `Tag ${extraDayCounter}`,
+      newQuests: [],
+      reviewQuests: [reviewItem],
+      totalMinutes: reviewItem.reviewMinutes,
+      isRestOrBufferDay: false,
+      focusGoal: `Sanfter Nachhol-Sprint (${reviewItem.questTitle})`,
+      targetXp: 30,
+    };
+    updatedSlots.push(newDay);
+    extraDayCounter++;
+    queueIndex++;
+  }
+
+  // 4. 重新计算统计量
+  let totalReviewsCount = 0;
+  for (const s of updatedSlots) {
+    totalReviewsCount += s.reviewQuests.length;
+    if (s.newQuests.length === 0 && s.reviewQuests.length === 0) {
+      s.isRestOrBufferDay = true;
+      s.focusGoal = "Ruhetag / Puffer (休息与消化缓冲)";
+    } else if (s.newQuests.length === 0 && s.reviewQuests.length > 0) {
+      s.focusGoal = `Wiederholungs-Puffer (${s.reviewQuests.length} Stationen)`;
+    }
+  }
+
+  const avgMinutes = updatedSlots.reduce((a, b) => a + b.totalMinutes, 0) / updatedSlots.length;
+  const maxMinutes = Math.max(...updatedSlots.map((s) => s.totalMinutes), 0);
+  let feasibility: "optimal" | "dense" | "light" = "optimal";
+  if (maxMinutes > 25 || avgMinutes > 18) {
+    feasibility = "dense";
+  } else if (avgMinutes < 7) {
+    feasibility = "light";
+  }
+
+  return {
+    ...plan,
+    targetDays: updatedSlots.length,
+    dailySlots: updatedSlots,
+    totalReviewSlots: totalReviewsCount,
+    feasibility,
+    motivationalTip: {
+      de: "Intelligente Nachhol-Anpassung aktiv: Verpasste Stationen wurden sanft geglättet ohne Überlastung.",
+      zh: "智能复习欠账平滑已生效：积压复习已自动均摊至后续天数，杜绝压力堆积。",
+    },
+  };
+}

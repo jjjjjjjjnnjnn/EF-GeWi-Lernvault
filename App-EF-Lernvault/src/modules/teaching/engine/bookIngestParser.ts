@@ -525,4 +525,36 @@ export const BOOK_INGEST_PRESETS = [
 ## 2.3 Reibungsverluste und Dissipation
 ## 2.4 Labor-Experiment: Fadenpendel und Energieaustausch`,
   },
+  {
+    id: "deutsch-faust-drama",
+    title: "Goethe: Faust I & Klassische Dramenanalyse EF",
+    fach: "Deutsch",
+    rawContent: `# Kapitel 1: Vorspiele und Exposition
+## 1.1 Zueignung und Vorspiel auf dem Theater (Kunstbegriff)
+## 1.2 Prolog im Himmel: Der Herr vs. Mephisto (Die Wette)
+## 1.3 Nacht: Fausts Erkenntniskrise und der Erdgeist
+## 1.4 Studierzimmer: Teufelspakt vs. Wette und Entgrenzung
+
+# Kapitel 2: Die Gelehrtentragödie zur Gretchentragödie
+## 2.1 Auerbachs Keller & Hexenkueche (Verjuengung)
+## 2.2 Strasse und Spaziergang: Begegnung mit Gretchen
+## 2.3 Marthens Garten: Die Gretchenfrage und Religiositaet
+## 2.4 Kerker: Erlösung Gretchens und Fausts Schuld`,
+  },
+  {
+    id: "mathe-differentialrechnung",
+    title: "Differentialrechnung & Kurvendiskussion EF",
+    fach: "Mathe",
+    rawContent: `# Kapitel 1: Von der Sekante zur Tangente
+## 1.1 Mittlere Änderungsrate (Differenzenquotient)
+## 1.2 Lokale Änderungsrate und Ableitungsbegriff (h-Methode)
+## 1.3 Tangentengleichung und lineare Approximation
+## 1.4 Geometrische Interpretation des s-t und v-t Diagramms
+
+# Kapitel 2: Ableitungsregeln & Kurvenuntersuchung
+## 2.1 Potenzregel, Faktorregel und Summenregel
+## 2.2 Monotonieverhalten und erste Ableitung
+## 2.3 Notwendiges und hinreichendes Kriterium für Extremstellen
+## 2.4 Wendepunkte und Kruemmungsverhalten im Sachkontext`,
+  },
 ];

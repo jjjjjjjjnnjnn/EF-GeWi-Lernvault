@@ -42,6 +42,21 @@ describe("Generic MicroWorld: VariableSliderBox", () => {
     const matches = screen.getAllByText(/Y = 0.35 · K · X²/i);
     expect(matches.length).toBeGreaterThan(0);
   });
+
+  it("supports target corridor tolerance and onTargetReached callback", () => {
+    const handleTarget = vi.fn();
+    render(
+      <VariableSliderBox
+        targetY={50}
+        tolerancePercent={10}
+        initialX={2.0}
+        initialK={1.5}
+        onTargetReached={handleTarget}
+      />
+    );
+
+    expect(screen.getByText(/Zielwert:/i)).toBeInTheDocument();
+  });
 });
 
 describe("Generic MicroWorld: DilemmaBalanceScale", () => {
@@ -90,6 +105,14 @@ describe("Generic MicroWorld: DilemmaBalanceScale", () => {
     fireEvent.click(submitBtns[0]);
 
     expect(screen.getByText("绝对人权保障")).toBeInTheDocument();
+  });
+
+  it("supports direct balance derivation button to resolve cognitive deadlock", () => {
+    render(<DilemmaBalanceScale lang="zh" />);
+    const derivationBtn = screen.getByRole("button", { name: "平衡推导直达" });
+    fireEvent.click(derivationBtn);
+
+    expect(screen.getByText(/反思平衡调节项/i)).toBeInTheDocument();
   });
 });
 

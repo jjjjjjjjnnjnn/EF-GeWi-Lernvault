@@ -21,9 +21,17 @@
 - **TeachingStudio 教学工坊与多邻国上课河流全景规范**：[`00_META/TEACHING-STUDIO-SPECIFICATION.md`](00_META/TEACHING-STUDIO-SPECIFICATION.md)（**商业级教学板块设计、拆书排程、4大通用SVG微世界、5步交互上课流与通关奖赏闭环全景规范，外部 AI 对接与扩展必读**）。
 - 目标：德国 NRW Gymnasium EF 十科笔试/口试提分，中德双语，**完全离线**。
 - **内容铁律**：所有题目材料只能来自用户自己的笔记原文 —— **超纲率 = 0**。
-- **当前规模**：笔记 **418** · Anki 卡片 **1942** · 互动课程 **356 篇**（`Lernreise/`，十科全覆盖，含 Lesson-v3 全量高阶微课与多学科学术解剖台）· 术语表 **946 行** · 索引链接 **371 条** · 十科图谱 712+ 节点 · 89 套件 676 项全量测试 100% 绿灯 · 考纲体系（NRW 十科 + 中国理科四科 + 中德映射）· 本地真题池 **760 份 PDF (2024–2026 全科 Klausuren + Vorgaben)**。
+- **当前规模**：笔记 **418** · Anki 卡片 **1942** · 互动课程 **356 篇**（`Lernreise/`，十科全覆盖，含 Lesson-v3 全量高阶微课与多学科学术解剖台）· 术语表 **946 行** · 索引链接 **371 条** · 十科图谱 712+ 节点 · 89 套件 681 项全量测试 100% 绿灯 · 考纲体系（NRW 十科 + 中国理科四科 + 中德映射）· 本地真题池 **760 份 PDF (2024–2026 全科 Klausuren + Vorgaben)**。
 
 ---
+
+- ✅ **Phase 5 TeachingStudio 体验进化与全科考纲预设扩充落地（2026-10-10 交付）**：
+  - **轻量 3 步课型自适应编译器 (`lessonStepFlow.ts`)**：支持 `concept_light`（生活直觉 -> 核心机制 -> 15 NP 小测）与 `interactive_deep`（5 步微世界完整流），避免纯文学/事实性概念陷入过度交互；
+  - **真实北威州教材大纲预设扩充 (`bookIngestParser.ts`)**：新增 Goethe《Faust I》（戏剧分析/赌约/浮士德悲剧）、Mathe《Differentialrechnung》（割线斜率/导数/极值讨论）等完整章节大纲预设；
+  - **复习欠账平滑衰减规划 (`pacingPlanner.ts`)**：`smartReschedulePlan` 动态平滑均摊逾期复习槽至未来天数，阻断复习债务雪崩；
+  - **微世界容错带与磁性吸附 (`VariableSliderBox.tsx` & `DilemmaBalanceScale.tsx`)**：滑块与天平引入 ±5% 容错带、磁性吸附、20 秒苏格拉底脚手架启发与“平衡/推导直达”通道，杜绝卡关挫败；
+  - **错题沉淀降阻与触觉质感 (`VictoryRewardScreen.tsx` & `InteractiveLessonRunner.tsx`)**：新增 `.md` 补丁文件一键下载、会话错题内嵌审阅抽屉、3-4px 几何阶段刻度进度条、`active:translate-y-[1px]` 物理按压反馈与 `localStorage` 自动断点恢复；
+  - **工程门禁全绿**：全量 89 套件、681 项测试 100% PASS，`modules.test.tsx` 零契约违规（零 Emoji、零阴影、零 italic）；`cmd /c "npx tsc -b"` 0 报错；`python scripts/vault-check.py` 418 笔记 1942 词 PASS。
 
 - ✅ **Phase 4.3 多邻国式沉浸上课流、关卡河流与正向奖赏闭环落地（2026-10-10 交付）**：
   - **Duolingo-style 关卡探索河流 (`QuestMapTab.tsx`)**：

@@ -21,6 +21,8 @@ export const VictoryRewardScreen: React.FC<VictoryRewardScreenProps> = ({
   onReviewQuest,
 }) => {
   const [copiedPatch, setCopiedPatch] = useState(false);
+  const [downloadedPatch, setDownloadedPatch] = useState(false);
+  const [showReviewDrawer, setShowReviewDrawer] = useState(false);
 
   // 生成标准的 Obsidian Fehlerlog Markdown 表格补丁行
   const generateFehlerlogPatch = () => {
@@ -35,6 +37,23 @@ export const VictoryRewardScreen: React.FC<VictoryRewardScreenProps> = ({
       navigator.clipboard.writeText(patch);
       setCopiedPatch(true);
       setTimeout(() => setCopiedPatch(false), 2500);
+    }
+  };
+
+  const handleDownloadPatch = () => {
+    const patch = generateFehlerlogPatch();
+    if (typeof document !== "undefined") {
+      const blob = new Blob([patch + "\n"], { type: "text/markdown;charset=utf-8" });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = `Fehlerlog-${questNode.id}-${new Date().toISOString().split("T")[0]}.md`;
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+      setDownloadedPatch(true);
+      setTimeout(() => setDownloadedPatch(false), 2500);
     }
   };
 
@@ -99,19 +118,30 @@ export const VictoryRewardScreen: React.FC<VictoryRewardScreenProps> = ({
       {/* 错题回顾与 Obsidian Fehlerlog.md 一键补丁 (若有错题) */}
       {mistakes.length > 0 && (
         <div className="w-full border border-[var(--line)] p-3.5 bg-[var(--paper-subtle)] mb-8 text-left text-xs font-mono">
-          <div className="flex items-center justify-between mb-2">
+          <div className="flex flex-wrap items-center justify-between gap-2 mb-2">
             <span className="font-bold">
               {lang === "de" ? "Fehlerprotokoll-Patch bereit:" : "已自动生成错题本补丁 (Fehlerlog):"}
             </span>
-            <button
-              type="button"
-              onClick={handleCopyPatch}
-              className="px-2 py-0.5 border border-[var(--line)] bg-[var(--paper)] hover:border-[var(--ink)] transition-colors cursor-pointer text-[11px]"
-            >
-              {copiedPatch
-                ? lang === "de" ? "Kopiert!" : "已复制到剪贴板！"
-                : lang === "de" ? "Patch kopieren" : "复制 Markdown 行"}
-            </button>
+            <div className="flex items-center gap-1.5">
+              <button
+                type="button"
+                onClick={handleCopyPatch}
+                className="px-2 py-0.5 border border-[var(--line)] bg-[var(--paper)] hover:border-[var(--ink)] active:translate-y-[1px] transition-all cursor-pointer text-[11px]"
+              >
+                {copiedPatch
+                  ? lang === "de" ? "Kopiert!" : "已复制到剪贴板！"
+                  : lang === "de" ? "Patch kopieren" : "复制 Markdown 行"}
+              </button>
+              <button
+                type="button"
+                onClick={handleDownloadPatch}
+                className="px-2 py-0.5 border border-[var(--line)] bg-[var(--paper)] hover:border-[var(--ink)] active:translate-y-[1px] transition-all cursor-pointer text-[11px]"
+              >
+                {downloadedPatch
+                  ? lang === "de" ? "Heruntergeladen!" : "已下载！"
+                  : lang === "de" ? ".md Herunterladen" : "导出 .md 补丁"}
+              </button>
+            </div>
           </div>
           <div className="p-2 border border-[var(--line)] bg-[var(--paper)] text-[11px] overflow-x-auto whitespace-pre">
             {generateFehlerlogPatch()}
@@ -121,6 +151,32 @@ export const VictoryRewardScreen: React.FC<VictoryRewardScreenProps> = ({
               ? "Kopiere diese Zeile in dein Obsidian Vault -> Klausur-Training/Fehlerlog.md."
               : "点击上方按钮复制此行，可直接粘贴进 Obsidian 的 Klausur-Training/Fehlerlog.md 错题本。"}
           </p>
+
+          {/* 迷你内嵌错题审阅抽屉 (Inline Review Drawer) */}
+          <div className="mt-2.5 pt-2 border-t border-[var(--line)]">
+            <button
+              type="button"
+              onClick={() => setShowReviewDrawer((prev) => !prev)}
+              className="text-[10px] text-[var(--ink)] font-bold hover:underline flex items-center gap-1 cursor-pointer"
+            >
+              <span>{showReviewDrawer ? "[-]" : "[+]"}</span>
+              <span>
+                {lang === "de"
+                  ? `Fehlerdiagnose im Detail ansehen (${mistakes.length})`
+                  : `展开会话错题归因审阅 (${mistakes.length})`}
+              </span>
+            </button>
+            {showReviewDrawer && (
+              <div className="mt-2 space-y-1.5 pl-2 border-l-2 border-[var(--ink)] bg-[var(--paper)] p-2">
+                {mistakes.map((m, idx) => (
+                  <div key={idx} className="text-[11px] text-[var(--ink)]">
+                    <span className="font-bold text-[var(--ink-muted)]">#{idx + 1} </span>
+                    <span>{m}</span>
+                  </div>
+                ))}
+              </div>
+            )}
+          </div>
         </div>
       )}
 
@@ -129,14 +185,14 @@ export const VictoryRewardScreen: React.FC<VictoryRewardScreenProps> = ({
         <button
           type="button"
           onClick={onReviewQuest}
-          className="w-full sm:w-1/3 py-2.5 px-4 border border-[var(--line)] hover:border-[var(--ink)] text-xs font-mono transition-colors cursor-pointer"
+          className="w-full sm:w-1/3 py-2.5 px-4 border border-[var(--line)] hover:border-[var(--ink)] active:translate-y-[1px] text-xs font-mono transition-all cursor-pointer"
         >
           {lang === "de" ? "Lektion wiederholen" : "温故再练一次"}
         </button>
         <button
           type="button"
           onClick={onContinue}
-          className="w-full sm:w-2/3 py-2.5 px-6 bg-[var(--ink)] text-[var(--paper)] text-sm font-bold border border-[var(--ink)] hover:bg-[var(--paper)] hover:text-[var(--ink)] transition-colors cursor-pointer flex items-center justify-center gap-2"
+          className="w-full sm:w-2/3 py-2.5 px-6 bg-[var(--ink)] text-[var(--paper)] text-sm font-bold border-2 border-[var(--ink)] hover:bg-[var(--paper)] hover:text-[var(--ink)] active:translate-y-[1px] transition-all cursor-pointer flex items-center justify-center gap-2"
         >
           <span>{lang === "de" ? "Weiter zum nächsten Quest" : "继续攻坚下一关"}</span>
           <span aria-hidden="true">-&gt;</span>

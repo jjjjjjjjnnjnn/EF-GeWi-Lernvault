@@ -94,4 +94,26 @@ describe("InteractiveLessonRunner Component", () => {
 
     expect(handleClose).toHaveBeenCalledTimes(1);
   });
+
+  it("resumes session progress from localStorage when present", () => {
+    localStorage.setItem(
+      "lernvault_session_q-1-1",
+      JSON.stringify({ stepIndex: 1, accumulatedXp: 45, comboCount: 2, mistakes: [] })
+    );
+
+    render(
+      <InteractiveLessonRunner
+        questNode={sampleQuest}
+        fach="SoWi"
+        lang="de"
+        currentStreak={5}
+        onComplete={vi.fn()}
+        onClose={vi.fn()}
+      />
+    );
+
+    expect(screen.getByText("2 / 5")).toBeInTheDocument();
+    expect(screen.getByText("+45 XP")).toBeInTheDocument();
+    localStorage.removeItem("lernvault_session_q-1-1");
+  });
 });

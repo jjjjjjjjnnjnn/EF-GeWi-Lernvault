@@ -9,6 +9,7 @@ import {
 import {
   generatePacingPlan,
   topologicalSortQuests,
+  smartReschedulePlan,
 } from "./engine/pacingPlanner";
 import { BookIngestWorkshopTab } from "./tabs/BookIngestWorkshopTab";
 import { TeachingStudio } from "./TeachingStudio";
@@ -149,6 +150,32 @@ describe("Adaptive Pacing Planner: pacingPlanner", () => {
     });
     expect(plan.targetDays).toBe(16);
     expect(plan.targetDailyMinutes).toBe(10);
+  });
+
+  it("smoothly reschedules uncompleted overdue reviews without debt avalanche", () => {
+    const initialPlan = generatePacingPlan(sampleBook, { mode: "balanced" });
+    const overdueReviews = [
+      {
+        questId: "q-1-1",
+        questTitle: "Markt",
+        intervalTag: "D+1 Blitz" as const,
+        reviewMinutes: 4,
+      },
+      {
+        questId: "q-1-2",
+        questTitle: "Marktversagen",
+        intervalTag: "D+3 Tief" as const,
+        reviewMinutes: 4,
+      },
+    ];
+
+    const rescheduled = smartReschedulePlan(initialPlan, 3, overdueReviews, 20);
+    expect(rescheduled.totalReviewSlots).toBeGreaterThanOrEqual(initialPlan.totalReviewSlots);
+    expect(rescheduled.motivationalTip.zh).toContain("智能复习欠账平滑已生效");
+    // 确保每日时间受控
+    for (const slot of rescheduled.dailySlots) {
+      expect(slot.totalMinutes).toBeLessThanOrEqual(28);
+    }
   });
 });
 
