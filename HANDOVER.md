@@ -23,7 +23,18 @@
 - **内容铁律**：所有题目材料只能来自用户自己的笔记原文 —— **超纲率 = 0**。
 - **当前规模**：笔记 **419** · Anki 卡片 **1942** · 互动课程 **361 篇**（`Lernreise/`，十科全覆盖，含 Lesson-v3 与 Enterprise-v4 全量高阶微课与多学科学术解剖台）· 术语表 **946 行** · 索引链接 **378 条** · 十科图谱 712+ 节点 · 90 套件 692 项全量测试 100% 绿灯 · 考纲体系（NRW 十科 + 中国理科四科 + 中德映射）· 本地真题池 **760 份 PDF (2024–2026 全科 Klausuren + Vorgaben)**。
 
----
+- ✅ **Phase 5.4 App 端 v5 新段落结构化卡片与评分抽屉渲染（2026-10-10 交付）**：
+  - **组件模块 (`App-EF-Lernvault/src/components/v5/`)**：
+    - `KernsatzCard.tsx`：双墨线边框、一键剪贴板复制、三段式解构（Subjekt | Mechanismus | Urteil）、完形填空自测遮盖（Cloze-Test）；
+    - `ErwartungshorizontDrawer.tsx`：可折叠 15 NP 考官评分标准矩阵抽屉、交互式动态算分与等级判定、考官备选路径（Alternativweg）、满分 Klausursatz 范文；
+    - `AufloesungCard.tsx`：选项 A vs 选项 B 双轨机制对比解析、一句话因果本质高亮卡片；
+    - `v5Parser.ts` & `v5Types.ts`：鲁棒解析器精准提取原始 Markdown 中的结构化段落，防止前置引用污染；
+  - **全能 Markdown 渲染集成 (`Blocks.tsx`)**：
+    - 针对 `KERNSATZ`、`AUFLÖSUNG`、`ERWARTUNGSHORIZONT` 自动聚类并替换为富交互 Tufte 纯黑白学术卡片，支持中德双语与纯德语模式动态切换；
+  - **课程引擎与场景实战集成 (`reise.ts` & `Reise.tsx`)**：
+    - 改造 Step 5 (szenario)，渲染真题要求 (`AUFGABE`)、实时联动评分抽屉（动态同步门禁解锁）、金句卡片；
+    - 全面适配单步关卡模式与长文文档模式（Document Mode）；
+  - **全量门禁全绿**：92 测试套件 708 项单测 100% PASS，tsc 0 报错，vault-check PASS。
 
 - ✅ **全量十科 361 篇课程 v5 教学法重构与引擎 A1–A3 加固交付（2026-10-10 交付）**：
   - **内容线（360/361 篇 v5 升级）**：11 个 agent 并行（1 引擎 + 10 学科），覆盖 SoWi (51), Philo (30), Deutsch (31), Mathe (43), Physik (38), Chemie (37), Bio (38), Englisch (34), Musik (27), Sport (28)；全库机检 0 emoji、0 unicode 箭头、KERNSATZ 361/361、ERWARTUNGSHORIZONT 361/361；唯一披露例外 SoWi Sinus-Milieus 保持 v3 对比表结构；

@@ -301,6 +301,7 @@
 - [2026-10-10-external-ai-batch-1-delivery](Journal/2026-10-10-external-ai-batch-1-delivery.md) — **第一波次外部AI课程生产交付（5门Enterprise-v4）**：SoWi租金管制+物理匀加速+德语强盗+微积分面积+哲学功利主义全量合入，reisen扩充至361篇，v4严格机检+App兼容性闭环验证通过
 - [2026-10-10-reconstruction-dual-track-step1](Journal/2026-10-10-reconstruction-dual-track-step1.md) — **课程双轨与Step 1直觉站队深化**：Step 1无剧透直觉站队A/B设计+核心机制即时浮出
 - [2026-10-10-reconstruction-full-delivery](Journal/2026-10-10-reconstruction-full-delivery.md) — **十科361篇全量v5重构交付与引擎A1-A3加固**：360/361篇v5升级+Musterlösung离线显影+温和门控+仿真映射全绿
+- [2026-10-10-v5-didactic-components-integration](Journal/2026-10-10-v5-didactic-components-integration.md) — **App 端 v5 新段落结构化卡片与评分抽屉渲染优化**：KernsatzCard + ErwartungshorizontDrawer + AufloesungCard 结构化组件、Blocks 自动聚类解析与 Reise Step 5 场景考场集成（92套件708单测全绿）
 - 约定：文件名 `YYYY-MM-DD-<thema>.md`，头部frontmatter（`fach`可空，`tags: [EF, Meta]`）。
 
 
