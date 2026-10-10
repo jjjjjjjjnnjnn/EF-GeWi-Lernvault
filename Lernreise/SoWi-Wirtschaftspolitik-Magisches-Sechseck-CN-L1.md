@@ -8,7 +8,7 @@ operatoren: [darstellen, analysieren, beurteilen]
 klausurrelevant: true
 datum: 2026-09-26
 tags: [EF, SoWi, Wirtschaft]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Wirtschaftspolitik und magisches Sechseck (L1, Ziel Klausur)
@@ -45,7 +45,7 @@ Klausur-Satz: `Die sechs Ziele des magischen Sechsecks sind nicht gleichzeitig m
 
 ## Schritt 2 — entdecken: Werkzeugkoffer von Hafenkapitain a. D. Sturmius Blank: 5 Begriffe scharf stellen
 
-PRETRAINING术语盒（核心6词，六大宏观目标一一对应，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
+PRETRAINING术语盒（核心6词，六大宏观目标一一对应，先读三遍中德，合书自测中文->德语，Evidenz：pretraining降认知负荷）：
 
 中文在上，德语在下：
 
@@ -97,7 +97,7 @@ restriktiv: Preise+ | Jobs- Wachstum-
 ```
 Kausalkette: Geld ruft Nachfrage, Nachfrage ruft Jobs und Preise, Zinsen bremsen Investitionen und Jobs, Aussenwirtschaft, Verteilung und Umwelt schreiben mit. Kein kostenloses Eck: Jede Bewegung verteilt Lasten auf die anderen Ecken - mit Zeithorizont kurz gegen lang.
 
-因果链：撒钱→需求旺→就业升+物价涨→加息→投资熄+就业回→外贸分配环境再分化。六角无免费午餐：动一角，另五角记账；答题必须点名被牺牲的角和时间跨度（短期/长期）。
+因果链：撒钱->需求旺->就业升+物价涨->加息->投资熄+就业回->外贸分配环境再分化。六角无免费午餐：动一角，另五角记账；答题必须点名被牺牲的角和时间跨度（短期/长期）。
 
 Zielanker: $Y = C + I + G + (X - M)$ treibt Jobs; kurzfristig $\pi \uparrow \Rightarrow u \downarrow$ (Phillips), langfristig frisst $\pi$ das Vertrauen.
 
@@ -123,14 +123,14 @@ AUFGABE中文导读（沙盒谜题）：政府推基建刺激就业，请用六�
 
 AUFGABE (beurteilen, AFB II/III): Ein Infrastrukturprogramm soll Jobs schaffen. Bilancieren Sie Gewinne und Kosten im Sechseck.
 
-HILFE（中德双语步骤）：
+HILFE:
+- Richtung: Zuerst die einschlaegige Regel und die zu pruefenden Begriffe aus dem Werkzeugkoffer bestimmen, danach das Material diesen Begriffen zuordnen.
+- Richtung: Danach Mengen- bzw. Rollenreaktion auf beiden Seiten getrennt deuten und die Differenz als Ergebnisspannung mit Urteil-Ansatz festhalten.
 
-1. 中文：第1步列受益：就业与增长，关键词：Gewinn。
-   Schritt 1 (DE): Jobs und Wachstum als Gewinne.
-2. 中文：第2步列代价：价格与环境，关键词：Kosten。
-   Schritt 2 (DE): Preise und Umwelt als Kosten.
-3. 中文：第3步下判断：方向对、代价实，关键词：Urteil。
-   Schritt 3 (DE): Expansiv hilft Jobs, kostet Preise.
+
+COMPLETION (Lueckentext):
+- Der erste Pruefschritt lautet ___; ihm wird das einschlaegige Merkmal aus dem Material zugeordnet.
+- Das Ergebnis lautet ___; die Spannung wird mit Regel plus Urteil-Ansatz begruendet.
 
 MUSTERLOESUNG：中文：基建拉就业与增长是实利，推高物价与环境损耗是实价；就业优先时可干，但必须配物价与环保对冲，否则六边形记仇。
 
@@ -180,15 +180,27 @@ Klausur-Satz: `Kein Politikvorschlag erfuellt alle sechs Ziele gleichzeitig ohne
 ## Schritt 7 — szenario: Klausurtransfer: Anhoerung und Parlamentsrede zu Wirtschaftspolitik und magisches Sechseck
 ROLLE: Du bist Praktikantin im Wirtschaftsministerium und schreibst eine Kurzstellungnahme.
 SITUATION: Ein Abgeordneter fordert Steuersenkungen fuer mehr Wachstum und behauptet, das schade keinem anderen Ziel.
-AUFGABE: Beurteilen Sie in ca. 150 Woertern mit dem Sechseck, welche Ziele profitieren und welche leiden, plus Empfehlung.
+AUFGABE: Beurteilen Sie in ca. 150 Woertern mit dem Sechseck, welche Ziele profitieren und welche leiden, plus Empfehlung. [AFB III]:
 RUBRIC (30 XP): Zwei Profiteure korrekt mit Kette (10 XP) | Zwei Leidtragende korrekt mit Kette (10 XP) | Urteil mit Zielkonflikt-Begriff und Empfehlung (10 XP).
 
+ERWARTUNGSHORIZONT:
+Teilleistung | Punkte | Alternativweg
+Sachanalyse mit Fachbegriff und Wirkungskette aus dem Material | 6 NP | Andere korrekte Begriffs- und Kettenbelege akzeptieren
+Folgen- und Zielkonfliktanalyse mit Verlierern bzw. Trade-offs | 4 NP | Andere plausible Konflikt- und Folgenbelege akzeptieren
+Kriteriengeleitetes Urteil mit Abwaegung und Handlungsempfehlung | 5 NP | Alternative Urteile mit gleicher Abwaegungslogik akzeptieren
+
 Klausur-Satz: `Die Sechseckklausur benennt erst alle beruehrten Ecken mit Indikator und wuerdigt dann den Trade-off mit Zeithorizont.`
+
+KERNSATZ (auswendig):
+`Kein Politikvorschlag erfuellt alle sechs Ziele gleichzeitig ohne Abstriche.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Kein Politikvorschlag erfuellt | alle sechs Ziele | gleichzeitig ohne Abstriche.
+- Selbsttest: Kein Politikvorschlag ___ alle sechs Ziele gleichzeitig ohne Abstriche.
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Was der Krisenstab lernt
 
 TAKEAWAY 1盒（核心总结）：
 
-中文：六角记住"增长就业物价外贸分配环境"。分析套路：政策→需求→增长就业→物价环境，一条链走完。扩张保就业伤物价，紧缩保物价伤就业。结论永远是"有得有失的冲突"，不写单边叫好。
+中文：六角记住"增长就业物价外贸分配环境"。分析套路：政策->需求->增长就业->物价环境，一条链走完。扩张保就业伤物价，紧缩保物价伤就业。结论永远是"有得有失的冲突"，不写单边叫好。
 Takeaway-Satz: `Sechseck denken heisst Konflikte denken: Jede Massnahme rundet eine Ecke und dellt eine andere.`
 
 REFLEXION 2问：

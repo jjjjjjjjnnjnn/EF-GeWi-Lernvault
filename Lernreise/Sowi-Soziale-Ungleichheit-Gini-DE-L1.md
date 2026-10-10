@@ -8,7 +8,7 @@ operatoren: [darstellen, berechnen, beurteilen]
 klausurrelevant: true
 datum: 2026-09-26
 tags: [EF, SoWi, Ungleichheit]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Lorenzkurve und Gini-Koeffizient (L1, Ziel Klausur)
@@ -112,9 +112,13 @@ Ziehe im Tool die Einkommens-Regler der Quintile und beobachte live, wie sich di
 AUFGABE Spiel-Raetsel (AFB II): Stelle im Tool Region A ein. Verschiebe Einkommen von oben nach unten, bis der Wert sichtbar faellt und die Kurve sich hebt. Beschreibe in Worten, wo der Bogen flacher wird und warum erst Form plus Wert plus Kriterium ein Urteil erlauben.
 
 HILFE:
-1. Schritt 1: Trage kumulierte Anteile als Bogen unter der Diagonalen ab.
-2. Schritt 2: Verschiebe Anteile, lies Form und Wert am Werkzeug ab.
-3. Schritt 3: Deute an Skala von null gleich bis eins ungleich plus Kriterium und formuliere den Klausur-Satz.
+- Richtung: Zuerst die einschlaegige Regel und die zu pruefenden Begriffe aus dem Werkzeugkoffer bestimmen, danach das Material diesen Begriffen zuordnen.
+- Richtung: Danach Mengen- bzw. Rollenreaktion auf beiden Seiten getrennt deuten und die Differenz als Ergebnisspannung mit Urteil-Ansatz festhalten.
+
+
+COMPLETION (Lueckentext):
+- Der erste Pruefschritt lautet ___; ihm wird das einschlaegige Merkmal aus dem Material zugeordnet.
+- Das Ergebnis lautet ___; die Spannung wird mit Regel plus Urteil-Ansatz begruendet.
 
 MUSTERLOESUNG: Region A zeigt tiefen Bogen mit hoeherem Wert als mittlere Ungleichheit. Nach Verschiebung von oben nach unten hebt sich die Kurve und der Wert sinkt; erst Zahl plus Form plus Armutsschwelle begruenden ein Urteil zu Umverteilung am Kriterium.
 
@@ -164,10 +168,22 @@ Klausur-Satz: `Der Gini-Koeffizient verdichtet die gesamte Lorenzkurve zu einer 
 
 ROLLE: Du bist Mitarbeiterin einer statistischen Abteilung und sollst fuer einen Ausschuss die Einkommensverteilung zweier Regionen vergleichen.
 SITUATION: Fuer Region A nennt das Material breiter gestreute Quintilsanteile, fuer Region B enger gestaffelte Anteile. Der Ausschuss moechte wissen, in welcher Region die Ungleichheit groesser ist und ob eine Umverteilungspolitik zu rechtfertigen sei. Beurteile die Lage in einer zusammenhaengenden Stellungnahme mit etwa 150 Woertern, stuetze dich auf die Lorenz- und Gini-Logik und nenne ein Kriterium.
-AUFGABE (AFB III): Verfasse eine zusammenhaengende Darstellung von etwa 150 Woertern mit Kriterium, Anwendung und Urteil.
+AUFGABE (AFB III): Verfasse eine zusammenhaengende Darstellung von etwa 150 Woertern mit Kriterium, Anwendung und Urteil. [AFB III]:
 RUBRIC (30 XP): Aufstellen der kumulierten Anteile und der Lorenz-Idee (6 XP) | Vergleich der Boegen und Werte von A und B am Werkzeug (8 XP) | Benennung und Anwendung des Kriteriums Chancengerechtigkeit (10 XP) | Kriteriengeleitetes Urteil zur Umverteilung (6 XP)
 
+ERWARTUNGSHORIZONT:
+Teilleistung | Punkte | Alternativweg
+Sachanalyse mit Fachbegriff und Wirkungskette aus dem Material | 6 NP | Andere korrekte Begriffs- und Kettenbelege akzeptieren
+Folgen- und Zielkonfliktanalyse mit Verlierern bzw. Trade-offs | 4 NP | Andere plausible Konflikt- und Folgenbelege akzeptieren
+Kriteriengeleitetes Urteil mit Abwaegung und Handlungsempfehlung | 5 NP | Alternative Urteile mit gleicher Abwaegungslogik akzeptieren
+
 Klausur-Satz: `Die Ungleichheitsklausur belegt jede Aussage mit Quote oder Koeffizient und trennt Markt- von Netto-Verteilung, bevor sie wertet.`
+
+KERNSATZ (auswendig):
+`Die Ungleichheitsklausur belegt jede Aussage mit Quote oder Koeffizient und trennt Markt- von Netto-Verteilung, bevor sie wertet.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Die Ungleichheitsklausur belegt jede Aussage mit Quote oder Koeffizient und trennt Markt- von Netto-Verteilung | bevor | sie wertet.
+- Selbsttest: Die Ungleichheitsklausur ___ jede Aussage mit Quote oder Koeffizient und trennt Markt- von Netto-Verteilung, bevor sie wertet.
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Was der Krisenstab lernt
 
 TAKEAWAY (Kernbotschaft in einem Kasten):

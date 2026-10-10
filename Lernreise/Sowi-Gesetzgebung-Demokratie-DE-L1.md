@@ -8,7 +8,7 @@ operatoren: [darstellen, analysieren, beurteilen]
 klausurrelevant: true
 datum: 2026-09-26
 tags: [EF, SoWi, Politik]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Gesetzgebungsverfahren und Demokratie (L1, Ziel Klausur)
@@ -111,9 +111,13 @@ Lege im Tool Pro- und Contra-Argumente auf die Waage und gewichte jedes Argument
 AUFGABE Waage-Raetsel (AFB II): Entscheide auf [Werkzeug: balance-board], ob ein Gesetz mit Laenderkosten zustimmungspflichtig ist. Gewichte Beruehrung, Vermittlung und Ueberstimmung und begruende Kraft oder Blockade.
 
 HILFE:
-1. Schritt 1: Pruefe die Beruehrung der Laenderhaushalte.
-2. Schritt 2: Ordne das passende Verfahren zu.
-3. Schritt 3: Deute an Demokratie und Foederalismus und formuliere den Klausur-Satz.
+- Richtung: Zuerst die einschlaegige Regel und die zu pruefenden Begriffe aus dem Werkzeugkoffer bestimmen, danach das Material diesen Begriffen zuordnen.
+- Richtung: Danach Mengen- bzw. Rollenreaktion auf beiden Seiten getrennt deuten und die Differenz als Ergebnisspannung mit Urteil-Ansatz festhalten.
+
+
+COMPLETION (Lueckentext):
+- Der erste Pruefschritt lautet ___; ihm wird das einschlaegige Merkmal aus dem Material zugeordnet.
+- Das Ergebnis lautet ___; die Spannung wird mit Regel plus Urteil-Ansatz begruendet.
 
 MUSTERLOESUNG: Weil Laenderhaushalte beruehrt sind, gilt Zustimmung: Ohne Zustimmung keine Kraft. Ein Einspruch waere durch den Bundestag ueberstimmbar; hier hilft nur die Vermittlung zum Konsens.
 
@@ -165,10 +169,22 @@ Klausur-Satz: `Das freie Mandat nach Art. 38 GG stellt die Abgeordneten über Au
 
 ROLLE: Du bist Mitglied einer Enquete-Kommission bzw. Sachverstaendige oder Sachverstaendiger, die oder der dem Landtag die Bundesgesetzgebung am Beispiel eines Entwurfs erklaert.
 SITUATION: Ein Entwurf zur Entlastung der Kommunen wird im Bundestag beschlossen, im Bundesrat aber von einer Laendermehrheit abgelehnt; es kommt zum Vermittlungsausschuss. Ein Teil der Presse nennt den Bundesrat ein Blockadeinstrument, ein anderer verteidigt ihn als Stimme der Laender. Beurteilen Sie in einer zusammenhängenden Stellungnahme (ca. 150 Wörter), ob die Rolle des Bundesrates demokratisch zu rechtfertigen ist, und waehlen Sie dafuer eine demokratietheoretische Koordinate.
-AUFGABE (AFB III): Verfasse eine zusammenhaengende Darstellung von etwa 150 Woertern mit Kriterium, Anwendung und Urteil.
+AUFGABE (AFB III): Verfasse eine zusammenhaengende Darstellung von etwa 150 Woertern mit Kriterium, Anwendung und Urteil. [AFB III]:
 RUBRIC (30 XP): Darstellung des Weges bis zum Vermittlungsausschuss (6 XP) | Analyse der Blockade-Logik aus Foederalismus und Zustaendigkeit (8 XP) | Anwendung einer demokratietheoretischen Koordinate als Kriterium (10 XP) | Kriteriengeleitetes Urteil mit Abwaegung von Funktionsfaehigkeit und Repraesentation (6 XP).
 
+ERWARTUNGSHORIZONT:
+Teilleistung | Punkte | Alternativweg
+Sachanalyse mit Fachbegriff und Wirkungskette aus dem Material | 6 NP | Andere korrekte Begriffs- und Kettenbelege akzeptieren
+Folgen- und Zielkonfliktanalyse mit Verlierern bzw. Trade-offs | 4 NP | Andere plausible Konflikt- und Folgenbelege akzeptieren
+Kriteriengeleitetes Urteil mit Abwaegung und Handlungsempfehlung | 5 NP | Alternative Urteile mit gleicher Abwaegungslogik akzeptieren
+
 Klausur-Satz: `In der Klausur entscheidet zuerst die Einordnung als Zustimmungs- oder Einspruchsgesetz, dann erst die Wuerdigung des Kompromisses.`
+
+KERNSATZ (auswendig):
+`Vom Entwurf ueber drei Lesungen bis zu Bundesrat und Gericht: Gesetzgebung ist ein Hindernislauf mit mehreren Torhuetern.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Vom Entwurf ueber drei Lesungen | bis zu Bundesrat und Gericht: Gesetzgebung | ist ein Hindernislauf mit mehreren Torhuetern.
+- Selbsttest: Vom Entwurf ___ drei Lesungen bis zu Bundesrat und Gericht: Gesetzgebung ist ein Hindernislauf mit mehreren Torhuetern.
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Was der Krisenstab lernt
 
 TAKEAWAY (Kernbotschaft in einem Kasten):

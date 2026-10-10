@@ -8,7 +8,7 @@ operatoren: [darstellen, analysieren, beurteilen]
 klausurrelevant: true
 datum: 2026-10-03
 tags: [EF, SoWi, Europaeische-Union, Integration, Supranationalismus, Institutionen]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Europaeische Integration zwischen Supranationalismus und Intergouvernementalismus (L1, Ziel Klausur)
@@ -29,7 +29,7 @@ Es ist drei Uhr morgens in einem abgedunkelten Konferenzsaal des Bruesseler Rats
 `Klausur-Satz: Die Europaeische Union konstituiert sich als Staatenverbund sui generis, dessen institutionelles Gefuege permanent zwischen supranationaler Gemeinschaftslogik und intergouvernementaler Souveraenitaetswahrung austariert werden muss.`
 
 ## Schritt 2 — entdecken: Die Architektur der europaeischen Institutionen
-PRETRAINING术语盒（核心4词，先读三遍中德，合书自测中文→德语）：
+PRETRAINING术语盒（核心4词，先读三遍中德，合书自测中文->德语）：
 
 - 超国家主义 — Supranationalismus: 成员国将部分国家主权转让给超越国家之上的独立欧盟机构（如欧盟委员会、欧洲法院），其作出的决议对所有成员国具有强制约束力。 Prinzip, bei dem Mitgliedstaaten Hoheitsrechte auf uebergeordnete Gemeinschaftsorgane uebertragen, deren Beschluesse auch gegen den Willen einzelner Staaten unmittelbar bindendes Recht erzeugen.
 - 政府间主义 — Intergouvernementalismus: 保持各自主权的独立民族国家之间的政府级合作（如欧洲理事会），通常要求全体一致同意，各国拥有实质性否决权。 Form der Zusammenarbeit souveraener Nationalstaaten, bei der Beschluesse in der Regel einstimmig gefasst werden und das nationale Vetorecht erhalten bleibt.
@@ -71,6 +71,14 @@ AUFGABE (darstellen & analysieren, AFB I/II):
 Im Rat der Europaeischen Union soll eine verbindliche Richtlinie zur Einfuehrung eines europaweiten Mindeststandards fuer erneuerbare Energien verabschiedet werden. Die Beschlussfassung erfolgt mit "qualifizierter Mehrheit" (Art. 16 EUV).
 1. Stelle die beiden Kriterien der doppelten Mehrheit dar (Staatenquorum und Bevoelkerungsquorum).
 2. Analysiere folgendes Abstimmungsszenario: 20 von 27 Mitgliedstaaten stimmen dafuer; diese 20 Staaten repraesentieren jedoch nur 61 Prozent der gesamten EU-Bevoelkerung. Begruende rechnerisch, ob der Richtlinienentwurf angenommen oder abgelehnt wird.
+
+HILFE:
+- Richtung: Zuerst die einschlaegige Regel und die zu pruefenden Begriffe aus dem Werkzeugkoffer bestimmen, danach das Material diesen Begriffen zuordnen.
+- Richtung: Danach Mengen- bzw. Rollenreaktion auf beiden Seiten getrennt deuten und die Differenz als Ergebnisspannung mit Urteil-Ansatz festhalten.
+
+COMPLETION (Lueckentext):
+- Der erste Pruefschritt lautet ___; ihm wird das einschlaegige Merkmal aus dem Material zugeordnet.
+- Das Ergebnis lautet ___; die Spannung wird mit Regel plus Urteil-Ansatz begruendet.
 
 MUSTERLOESUNG:
 1. Kriterien der qualifizierten Mehrheit:
@@ -114,6 +122,20 @@ Analysiere die Gruende dafuer anhand historischer und sicherheitspolitischer Int
 ### AFB III: Kritisches Urteil
 Bewerte den Vorschlag des Bundeskanzlers, das Vetorecht in der europaeischen Aussen- und Steuerpolitik vollstaendig abzuschaffen und durch qualifizierte Mehrheitsentscheidungen zu ersetzen. Beruecksichtige dabei Effizienz, Akzeptanz bei kleineren Mitgliedstaaten sowie die Gefahr von Desintegrationstendenzen.
 
+AUFGABE (beurteilen) [AFB I]:
+Beurteilen Sie den Fall in einer zusammenhaengenden Stellungnahme (ca. 150 Woerter) mit Fachbegriff, Wirkungskette und kriteriengeleitetem Urteil.
+
+ERWARTUNGSHORIZONT:
+Teilleistung | Punkte | Alternativweg
+Sachanalyse mit Fachbegriff und Wirkungskette aus dem Material | 6 NP | Andere korrekte Begriffs- und Kettenbelege akzeptieren
+Folgen- und Zielkonfliktanalyse mit Verlierern bzw. Trade-offs | 4 NP | Andere plausible Konflikt- und Folgenbelege akzeptieren
+Kriteriengeleitetes Urteil mit Abwaegung und Handlungsempfehlung | 5 NP | Alternative Urteile mit gleicher Abwaegungslogik akzeptieren
+
+KERNSATZ (auswendig):
+`Demokratiedefizit und Handlungsfaehigkeit der EU`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Demokratiedefizit und | Handlungsfaehigkeit der | EU
+- Selbsttest: Demokratiedefizit und ___ der EU
 ## Schritt 7 — check: Format-Check & Scoring
 
 30 XP Schnelltest zur Verstaendigungssicherung:

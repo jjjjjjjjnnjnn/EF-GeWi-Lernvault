@@ -8,7 +8,7 @@ operatoren: [darstellen, analysieren, erörtern]
 klausurrelevant: true
 datum: 2026-09-26
 tags: [EF, SoWi, Politik]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Parteien und Willensbildung (L1, Ziel Klausur)
@@ -111,9 +111,13 @@ Lege im Tool Pro- und Contra-Argumente auf die Waage und gewichte jedes Argument
 AUFGABE Waage-Raetsel (AFB II): Vergleiche auf [Werkzeug: balance-board] zwei Wahlprogramme zum Klima. Lege Massnahme gegen Finanzierung, gewichte 1 bis 5 und erklaere die Erosion ueber den Stammverlust.
 
 HILFE:
-1. Schritt 1: Exzerpiere Massnahme und Finanzierung je Partei.
-2. Schritt 2: Gewichte beide Seiten auf der Waage.
-3. Schritt 3: Deute an Willensbildung und formuliere den Klausur-Satz.
+- Richtung: Zuerst die einschlaegige Regel und die zu pruefenden Begriffe aus dem Werkzeugkoffer bestimmen, danach das Material diesen Begriffen zuordnen.
+- Richtung: Danach Mengen- bzw. Rollenreaktion auf beiden Seiten getrennt deuten und die Differenz als Ergebnisspannung mit Urteil-Ansatz festhalten.
+
+
+COMPLETION (Lueckentext):
+- Der erste Pruefschritt lautet ___; ihm wird das einschlaegige Merkmal aus dem Material zugeordnet.
+- Das Ergebnis lautet ___; die Spannung wird mit Regel plus Urteil-Ansatz begruendet.
 
 MUSTERLOESUNG: Beide versprechen Schutz; der Unterschied liegt bei Massnahme und Finanzierung. Die Waage zeigt: Wer zahlt, trennt die Lager. Erosion belegt den Trend, der Wechsel entscheidet die Wahl.
 
@@ -165,10 +169,22 @@ Klausur-Satz: `Die 5-Prozent-Hürde stabilisiert das Parlament, schließt aber k
 
 ROLLE: Du bist Wahlkampfberaterin bzw. Wahlkampfberater einer Jugendorganisation.
 SITUATION: Deine Gruppe soll auf einem Podium ein Wahlprogramm zum Thema Bildung vorstellen. Ein Publikumsteil fragt, warum man ueberhaupt noch eine grosse Volkspartei waehlen soll, wenn kleine Parteien genauer zu den eigenen Interessen passen. Beurteile in einer zusammenhängenden Stellungnahme (ca. 150 Wörter), welche Vor- und Nachteile Volksparteien und kleine Parteien für die politische Willensbildung haben.
-AUFGABE (AFB III): Verfasse eine zusammenhaengende Darstellung von etwa 150 Woertern mit Kriterium, Anwendung und Urteil.
+AUFGABE (AFB III): Verfasse eine zusammenhaengende Darstellung von etwa 150 Woertern mit Kriterium, Anwendung und Urteil. [AFB III]:
 RUBRIC (30 XP): These mit Kriterium Repraesentation und Regierungsfaehigkeit (5 XP) | Darstellung von Volkspartei und kleiner Partei mit Art. 21 Bezug (10 XP) | Anwendung auf Bildung mit Abwaegung von Integration und Themennaehe (10 XP) | Fazit mit Fachbegriffen und Klausur-Satz (5 XP).
 
+ERWARTUNGSHORIZONT:
+Teilleistung | Punkte | Alternativweg
+Sachanalyse mit Fachbegriff und Wirkungskette aus dem Material | 6 NP | Andere korrekte Begriffs- und Kettenbelege akzeptieren
+Folgen- und Zielkonfliktanalyse mit Verlierern bzw. Trade-offs | 4 NP | Andere plausible Konflikt- und Folgenbelege akzeptieren
+Kriteriengeleitetes Urteil mit Abwaegung und Handlungsempfehlung | 5 NP | Alternative Urteile mit gleicher Abwaegungslogik akzeptieren
+
 Klausur-Satz: `Die Parteienstunde gelingt erst mit Zweistimmenlogik und Huerdenmechanik, dann mit abgewogener Wuerdigung von Stabilitaet und Vielfalt.`
+
+KERNSATZ (auswendig):
+`Die 5-Prozent-Hürde stabilisiert das Parlament, schließt aber kleine Parteien aus — Funktionsfähigkeit gegen Repräsentationsgerechtigkeit.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Die 5-Prozent-Hürde stabilisiert das Parlament | schließt aber kleine Parteien | aus — Funktionsfähigkeit gegen Repräsentationsgerechtigkeit.
+- Selbsttest: Die 5-Prozent-Hürde ___ das Parlament, schließt aber kleine Parteien aus — Funktionsfähigkeit gegen Repräsentationsgerechtigkeit.
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Was der Krisenstab lernt
 
 TAKEAWAY (Kernbotschaft in einem Kasten):

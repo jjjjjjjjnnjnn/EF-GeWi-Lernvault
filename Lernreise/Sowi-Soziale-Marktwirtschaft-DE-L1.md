@@ -8,7 +8,7 @@ operatoren: [darstellen, analysieren, beurteilen]
 klausurrelevant: true
 datum: 2026-09-26
 tags: [EF, SoWi]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Soziale Marktwirtschaft (L1, Ziel Klausur)
@@ -116,7 +116,13 @@ Ziehe im Tool den Mindestpreis-Regler vom Gleichgewicht nach oben und beobachte 
 AUFGABE Spiel-Raetsel (AFB II): Stelle im Tool Angebot und Nachfrage so ein, dass sich ein Gleichgewicht bildet. Hebe dann den Lohn auf Mindestlohn-Niveau. Beschreibe, was mit angebotener und nachgefragter Arbeit passiert, und entscheide per Regler, wie ein Transfer gestaltet sein muss, damit Schutz ohne grosse Beschaeftigungsluecke gelingt.
 
 HILFE:
-1. Schritt 1: Beschreibe das Gleichgewicht aus Angebot und Nachfrage in eigenen Worten. 2. Schritt 2: Stelle einen Mindestlohn oberhalb des Gleichgewichts ein, lies Angebot und Nachfrage ab. 3. Schritt 3: Erklaere Ueberangebot und Beschaeftigungsrisiko, wende das Kriterium Effizienz gegen Gerechtigkeit an und formuliere den Klausur-Satz.
+- Richtung: Zuerst die einschlaegige Regel und die zu pruefenden Begriffe aus dem Werkzeugkoffer bestimmen, danach das Material diesen Begriffen zuordnen.
+- Richtung: Danach Mengen- bzw. Rollenreaktion auf beiden Seiten getrennt deuten und die Differenz als Ergebnisspannung mit Urteil-Ansatz festhalten.
+
+
+COMPLETION (Lueckentext):
+- Der erste Pruefschritt lautet ___; ihm wird das einschlaegige Merkmal aus dem Material zugeordnet.
+- Das Ergebnis lautet ___; die Spannung wird mit Regel plus Urteil-Ansatz begruendet.
 
 MUSTERLOESUNG: Im Gleichgewicht gleichen sich Angebot und Nachfrage aus. Beim Mindestlohn oberhalb des Gleichgewichts uebersteigt das Arbeitsangebot die Nachfrage der Betriebe, es drohen weniger Einstellungen und hoehere Preise. Der Mindestlohn schuetzt vor Armut, greift aber in Preisbildung und Tarifautonomie ein — Wettbewerb plus sozialer Ausgleich als Urteil.
 
@@ -167,10 +173,22 @@ Klausur-Satz: `Der Preismechanismus gleicht Angebot und Nachfrage über den Prei
 
 ROLLE: Du bist Abgeordnete/r im Bundestag, Ausschuss für Arbeit und Soziales
 SITUATION: Debatte: Soll der Mindestlohn auf 15 Euro steigen Halte ein 2-Minuten-Plädoyer (dafür oder dagegen). Nutze die Ordnungspolitik-Brille aus Schritt 5 und die Beispiel-Sätze aus Schritt 4
-AUFGABE (AFB III): Verfasse eine zusammenhaengende Darstellung von etwa 150 Woertern mit Kriterium, Anwendung und Urteil.
+AUFGABE (AFB III): Verfasse eine zusammenhaengende Darstellung von etwa 150 Woertern mit Kriterium, Anwendung und Urteil. [AFB III]:
 RUBRIC (30 XP): These in Satz 1 mit 150-Wort-Vorgabe (darstellen) (8 XP) | zwei Fachbegriffe wie Tarifautonomie und Kaufkraft (8 XP) | ein Beleg mit Preis- und Mengendeutung (8 XP) | Urteil mit Kriterium Effizienz gegen Gerechtigkeit (beurteilen) (6 XP).
 
+ERWARTUNGSHORIZONT:
+Teilleistung | Punkte | Alternativweg
+Sachanalyse mit Fachbegriff und Wirkungskette aus dem Material | 6 NP | Andere korrekte Begriffs- und Kettenbelege akzeptieren
+Folgen- und Zielkonfliktanalyse mit Verlierern bzw. Trade-offs | 4 NP | Andere plausible Konflikt- und Folgenbelege akzeptieren
+Kriteriengeleitetes Urteil mit Abwaegung und Handlungsempfehlung | 5 NP | Alternative Urteile mit gleicher Abwaegungslogik akzeptieren
+
 Klausur-Satz: `Die Mindestlohnstellungnahme misst den Eingriff an Preislogik und Schutzziel und benennt mit der Tarifautonomie den institutionellen Preis des Schutzes.`
+
+KERNSATZ (auswendig):
+`Der Preismechanismus gleicht Angebot und Nachfrage über den Preis aus.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Der Preismechanismus gleicht | Angebot und Nachfrage | über den Preis aus.
+- Selbsttest: Der Preismechanismus ___ Angebot und Nachfrage über den Preis aus.
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Was der Krisenstab lernt
 
 TAKEAWAY (Kernbotschaft in einem Kasten):

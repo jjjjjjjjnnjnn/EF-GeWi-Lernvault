@@ -8,7 +8,7 @@ operatoren: [darstellen, analysieren, erörtern]
 klausurrelevant: true
 datum: 2026-09-25
 tags: [EF, SoWi, Politik]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Parteien und Willensbildung (L1, Ziel Klausur)
@@ -38,7 +38,7 @@ Klausur-Satz: `Art. 21 GG gibt den Parteien den Auftrag, an der politischen Will
 
 ## Schritt 2 — entdecken: Werkzeugkoffer von Stadtzeichner Emil Kroll: 5 Begriffe scharf stellen
 
-PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
+PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文->德语，Evidenz：pretraining降认知负荷）：
 
 中文在上，德语在下：
 
@@ -46,7 +46,7 @@ PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→�
 - **Fünfprozenthürde**：5%才进议会：保稳定、能组阁，代价是小党选票作废。 Nur wer fuenf Prozent der Zweitstimmen holt, zieht in Fraktionsstaerke ein. Die Huerde sichert regierungsfaehige Mehrheiten. Sie kostet kleine Parteien ihre Stimme im Parlament. Mechanismus: Sperrklausel filtert Splittergruppen heraus und buendelt Koalitionsdruck hinter grossen Lagern. Klausur-Tipp: Waegle Stabilitaet gegen Chancengleichheit mit Urteil.
 - **Wahlrecht**（选举制）：人性化比例制：第一票选人、第二票定权，超额有平衡，比例不跑偏。 Die personalisierte Verhaeltniswahl mischt Personen- und Parteilogik. Erststimme waehlt Koepfe, Zweitstimme entscheidet Macht. Ueberhang und Ausgleich sichern Proportionalitaet. Mechanismus: Zweitstimmenanteil bestimmt Sitzanteil; Direktmandate ohne Deckung werden ausgeglichen. Klausur-Tipp: Erklaere jede Verzerrung ueber Erst- gegen Zweitstimme.
 - **Parteiverbot**（政党禁止）：只有宪法法院能禁党，且须积极反宪法；2017年NPD案立了高门槛。 Nur das Bundesverfassungsgericht darf Parteien verbieten, und nur bei kaempferischer Verfassungsfeindschaft. Die NPD-Entscheidung 2017 zeigt die hohe Huerde. Verbot schuetzt und riskiert Demokratie zugleich. Mechanismus: Potenzialitaet plus Aktivitaet - erst bewaffnete Relevanz rechtfertigt das schärfste Mittel; das Schaerfste bleibt Ultima Ratio. Klausur-Tipp: Nenne Monopol des Gerichts plus hohe Huerde.
-- **Willensbildung**（意志形成）：民意变权力三站：输入（街谈社团）→转换（政党媒体）→输出（选举决策）。 Vom Stammtisch ueber Medien und Verbaende bis zur Fraktion wandert Meinung zu Macht. Parteien buendeln, Medien filtern, Verbaende lobbyieren. Wahlen entscheiden, wer bindet. Mechanismus: Input, Konversion, Output - wer die Stufen trennt, analysiert sauber. Klausur-Tipp: Lege jede Szene auf diese Dreistufen-Schablone.
+- **Willensbildung**（意志形成）：民意变权力三站：输入（街谈社团）->转换（政党媒体）->输出（选举决策）。 Vom Stammtisch ueber Medien und Verbaende bis zur Fraktion wandert Meinung zu Macht. Parteien buendeln, Medien filtern, Verbaende lobbyieren. Wahlen entscheiden, wer bindet. Mechanismus: Input, Konversion, Output - wer die Stufen trennt, analysiert sauber. Klausur-Tipp: Lege jede Szene auf diese Dreistufen-Schablone.
 
 
 
@@ -86,7 +86,7 @@ ENTDECKEN（1概念 + 1文字图解）：
 ```
 Kausalkette: Verstreute Interessen, Buendelung in Programmen, Machtentscheidung ueber die Zweitstimme, Filter durch die Huerde, Regierungsbildung, Daueraufsicht durch Opposition, Gerichte und Medien. Huerde und Verbot sind zwei Schleusen derselben Logik: Funktionsfaehigkeit gegen Stimmenverlust.
 
-因果链：社会利益分散→政党打包成纲领→选举按第二票定权→5%过滤碎片→议会组阁→反对派+法院+舆论持续监督。门槛和禁党是同一逻辑的两道闸：保系统能转，代价是部分声音出局。
+因果链：社会利益分散->政党打包成纲领->选举按第二票定权->5%过滤碎片->议会组阁->反对派+法院+舆论持续监督。门槛和禁党是同一逻辑的两道闸：保系统能转，代价是部分声音出局。
 
 
 Klausur-Satz: `Die Verluste von CDU und SPD belegen die Erosion der Volksparteien: Stammwähler schmelzen, Wechselwähler entscheiden.`
@@ -119,10 +119,13 @@ TARGET: Bringt auf dem Verhandlungsbrett beide Waagschalen in die Balance — Be
 AUFGABE (analysieren, AFB II, 10 BE)：Material 1 (Sachtext) enthält Auszüge aus zwei Wahlprogrammen zur Klimapolitik: Partei A will den Ausstieg aus fossilen Energien beschleunigen und nennt einen konkreten Finanzierungstopf; Partei B setzt auf marktbasierte Anreize und betont die technische Machbarkeit. Analysieren Sie beide Positionen mit den vier Kriterien der Programmanalyse und ordnen Sie sie je einer Leitidee zu.
 
 HILFE:
-1. Schritt 1: Vier Kriterien anlegen — Ziel, Maßnahme, Finanzierung, Verbindlichkeit.
-2. Schritt 2: Programm A durchgehen und die Leitidee bestimmen (Gleichheit/Nachhaltigkeit, starke Regulierung).
-3. Schritt 3: Programm B durchgehen und die Leitidee bestimmen (Freiheit/Markt).
-4. Schritt 4: In einem Vergleichssatz das Ergebnis bündeln.
+- Richtung: Zuerst die einschlaegige Regel und die zu pruefenden Begriffe aus dem Werkzeugkoffer bestimmen, danach das Material diesen Begriffen zuordnen.
+- Richtung: Danach Mengen- bzw. Rollenreaktion auf beiden Seiten getrennt deuten und die Differenz als Ergebnisspannung mit Urteil-Ansatz festhalten.
+
+
+COMPLETION (Lueckentext):
+- Der erste Pruefschritt lautet ___; ihm wird das einschlaegige Merkmal aus dem Material zugeordnet.
+- Das Ergebnis lautet ___; die Spannung wird mit Regel plus Urteil-Ansatz begruendet.
 
 MUSTERLÖSUNG: Nach dem Kriterium des Ziels strebt Partei A eine schnelle Abkehr von fossilen Energien an, Partei B dagegen eine schrittweise Umstellung. Bei der Maßnahme setzt A auf verbindliche Vorgaben und einen staatlichen Finanzierungstopf, B auf marktbasierte Anreize. Hinsichtlich der Finanzierung ist A konkret (benannter Topf), während B die Kosten über den Markt verteilt. Bei der Verbindlichkeit formuliert A klare Fristen, B bleibt flexibler. Der Leitidee nach steht A dem sozialistischen bzw. sozial-ökologischen Spektrum nahe (Umverteilung und Regulierung), B dem liberalen Spektrum (Freiheit und Markt).
 
@@ -142,7 +145,7 @@ AUFGABE A (AFB II, 8 BE)：Material 2 enthält zwei kurze Forderungen: Die eine 
 
 AUFGABE B (AFB II, 8 BE)：Eine Tabelle zeigt, dass der Stimmenanteil der beiden großen Parteien seit den 1970er-Jahren deutlich gesunken ist. Ordnen Sie den Befund mit dem Begriff der Volkspartei ein.
 
-HILFE: A fragt nach der programmatischen Grundhaltung → Verfahren (i). B fragt nach einem statistischen Befund und seiner Deutung → Verfahren (ii).【选程序：材料给的是"主张/纲领"= 纲领程序；材料给的是"数字/图表"= 统计程序。】
+HILFE: A fragt nach der programmatischen Grundhaltung -> Verfahren (i). B fragt nach einem statistischen Befund und seiner Deutung -> Verfahren (ii).【选程序：材料给的是"主张/纲领"= 纲领程序；材料给的是"数字/图表"= 统计程序。】
 
 ANTWORT: A erfordert Verfahren (i): Die Forderung nach höheren Steuern für Spitzenverdiener folgt der sozialistischen Leitidee (Umverteilung, Gleichheit), die Forderung nach Steuersenkung und Stärkung des Marktes der liberalen Leitidee (Freiheit, Eigenverantwortung). B erfordert Verfahren (ii): Der sinkende Stimmenanteil belegt die Erosion der Volksparteien, weil sie ihre Stammwähler über Schichten und Regionen hinweg verlieren; dies schwächt ihre Fähigkeit, breite gesellschaftliche Gruppen zu binden.
 
@@ -176,9 +179,24 @@ ROLLE: Du bist Wahlkampfberaterin bzw. Wahlkampfberater einer Jugendorganisation
 
 SITUATION: Deine Gruppe soll auf einem Podium ein Wahlprogramm zum Thema Bildung vorstellen. Ein Publikumsteil fragt, warum man überhaupt noch eine große Volkspartei wählen soll, wenn kleine Parteien genauer zu den eigenen Interessen passen. Beurteile in einer zusammenhängenden Stellungnahme (ca. 150 Wörter), welche Vor- und Nachteile Volksparteien und kleine Parteien für die politische Willensbildung haben.
 
+AUFGABE (erörtern) [AFB III]:
+Eroertern Sie den Fall in einer zusammenhaengenden Stellungnahme (ca. 150 Woerter) mit Fachbegriff, Wirkungskette und kriteriengeleitetem Urteil.
+
 RUBRIC (30 XP): Benennung der Funktion von Parteien nach Art. 21 GG (5 XP) | Analyse der Vor- und Nachteile der Volkspartei (10 XP) | Erörterung der Rolle der Sperrklausel für kleine Parteien (10 XP) | Kriteriengeleitetes Urteil (z. B. Kriterium Repräsentation oder Stabilität) (5 XP).
 
+ERWARTUNGSHORIZONT:
+Teilleistung | Punkte | Alternativweg
+Sachanalyse mit Fachbegriff und Wirkungskette aus dem Material | 6 NP | Andere korrekte Begriffs- und Kettenbelege akzeptieren
+Folgen- und Zielkonfliktanalyse mit Verlierern bzw. Trade-offs | 4 NP | Andere plausible Konflikt- und Folgenbelege akzeptieren
+Kriteriengeleitetes Urteil mit Abwaegung und Handlungsempfehlung | 5 NP | Alternative Urteile mit gleicher Abwaegungslogik akzeptieren
+
 Klausur-Satz: `Die Parteienstunde gelingt erst mit Zweistimmenlogik und Huerdenmechanik, dann mit abgewogener Wuerdigung von Stabilitaet und Vielfalt.`
+
+KERNSATZ (auswendig):
+`Die 5-Prozent-Hürde stabilisiert das Parlament, schließt aber kleine Parteien aus — Funktionsfähigkeit gegen Repräsentationsgerechtigkeit.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Die 5-Prozent-Hürde stabilisiert das Parlament | schließt aber kleine Parteien | aus — Funktionsfähigkeit gegen Repräsentationsgerechtigkeit.
+- Selbsttest: Die 5-Prozent-Hürde ___ das Parlament, schließt aber kleine Parteien aus — Funktionsfähigkeit gegen Repräsentationsgerechtigkeit.
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Was der Krisenstab lernt
 
 TAKEAWAY 1盒（核心总结）：

@@ -8,7 +8,7 @@ operatoren: [darstellen, analysieren, beurteilen]
 klausurrelevant: true
 datum: 2026-09-26
 tags: [EF, SoWi, CN]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Sozialstaat und Rentenkrise im demografischen Wandel (L1, Ziel Klausur)
@@ -47,7 +47,7 @@ Klausur-Satz: `Im Umlageverfahren zahlen die Erwerbstaetigen die Renten der Alte
 
 ## Schritt 2 — entdecken: Werkzeugkoffer von Kurierfahrerin Samira Haddad: 5 Begriffe scharf stellen
 
-PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
+PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文->德语，Evidenz：pretraining降认知负荷）：
 
 中文在上，德语在下：
 
@@ -98,7 +98,7 @@ Regler: Beitrag + / Niveau - / Alter + / Steuer +
 ```
 Kausalkette: Umlagebilanz im Heute, Geburtenknick plus Langlebigkeit, drei Schrauben plus Steuer, Verlierer je Schraube: Beitrag trifft Jobs und Junge, Niveau trifft Alte, Alter trifft Koerperarbeiter. Systemwechsel tauscht Demografierisiko gegen Marktrisiko plus Doppelbelastung.
 
-因果链：现收现付当期平衡→少子砍基数、长寿加人数拉时长→三旋钮（缴费/水平/年龄）+税补四选→谁疼：企业与年轻人疼缴费、老人疼水平、体力劳动者疼延退。换制度（资本覆盖）只是把人口风险换成市场风险+双重负担。
+因果链：现收现付当期平衡->少子砍基数、长寿加人数拉时长->三旋钮（缴费/水平/年龄）+税补四选->谁疼：企业与年轻人疼缴费、老人疼水平、体力劳动者疼延退。换制度（资本覆盖）只是把人口风险换成市场风险+双重负担。
 
 Bilanzanker: $b \cdot W \cdot Z = R \cdot N$ mit $b = 18{,}6\,\%$; Altenquotient $AQ = N / Z$ steigt; fairer Mix bewegt $b$, $R$ und Alter je ein Stueck.
 
@@ -124,14 +124,14 @@ AUFGABE中文导读（沙盒谜题）：生育率下行叠加预期寿命上行�
 
 AUFGABE (analysieren, AFB II): Erklaeren Sie mit dem Umlageprinzip, warum Geburtenrueckgang plus Langlebigkeit den Beitragssatz treibt, und skizzieren Sie einen fairen Mix.
 
-HILFE（中德双语步骤）：
+HILFE:
+- Richtung: Zuerst die einschlaegige Regel und die zu pruefenden Begriffe aus dem Werkzeugkoffer bestimmen, danach das Material diesen Begriffen zuordnen.
+- Richtung: Danach Mengen- bzw. Rollenreaktion auf beiden Seiten getrennt deuten und die Differenz als Ergebnisspannung mit Urteil-Ansatz festhalten.
 
-1. 中文：第1步摆收支方程：缴费乘工资基等于养老金乘人数，关键词：Gleichung。
-   Schritt 1 (DE): Einnahmen gleich Ausgaben schreiben.
-2. 中文：第2步两头记账：少子砍基数、长寿加人数与时长，关键词：Buchen。
-   Schritt 2 (DE): Beide Effekte je einer Seite zuordnen.
-3. 中文：第3步给组合：三旋钮各让一步并说清输家，关键词：Mix。
-   Schritt 3 (DE): Mix mit Verlierern und Massstab.
+
+COMPLETION (Lueckentext):
+- Der erste Pruefschritt lautet ___; ihm wird das einschlaegige Merkmal aus dem Material zugeordnet.
+- Das Ergebnis lautet ___; die Spannung wird mit Regel plus Urteil-Ansatz begruendet.
 
 MUSTERLOESUNG：中文：少子缩工资基、长寿增人数与时长，水平不变则缴费必涨；公平组合是三旋钮各动一点加税补，让企业、老人与年轻人共担，不把账全甩给一代人。
 
@@ -142,16 +142,16 @@ Klausur-Satz: `Weniger Zahler bei mehr und laengeren Renten erzwingen hoehere Be
 
 VERGLEICH辨别实验（双向辨析：开源节流 vs 制度转轨）：
 
-VERGLEICH: Waehle erst das Verfahren — 【选程序】先看改革性质：(i) 开源节流（Beitrag/Niveau/Alter/Steuer 四旋钮内调参，不换制度）oder (ii) 制度转轨（Umlage→Kapitaldeckung：换融资逻辑，讨论转型成本）—— dann loesen.
+VERGLEICH: Waehle erst das Verfahren — 【选程序】先看改革性质：(i) 开源节流（Beitrag/Niveau/Alter/Steuer 四旋钮内调参，不换制度）oder (ii) 制度转轨（Umlage->Kapitaldeckung：换融资逻辑，讨论转型成本）—— dann loesen.
 
-DUELL Weg A (Parametrisch: Beitrag/Niveau/Alter/Steuer) gegen Weg B (Systemisch: Umlage→Kapitaldeckung): Weg A repariert die Umlage ueber Beitrag, Niveau, Alter plus Steuer (solidarisch, aber mit Verlierern je Schraube); Weg B setzt auf Kapitaldeckung, Riester und Aktienrente (entkoppelt von Demografie, traegt aber Marktrisiko und Doppelbelastung). Entscheide am Kriterium: Generationengerechtigkeit und Nachhaltigkeit, nicht Wunschdenken.
+DUELL Weg A (Parametrisch: Beitrag/Niveau/Alter/Steuer) gegen Weg B (Systemisch: Umlage->Kapitaldeckung): Weg A repariert die Umlage ueber Beitrag, Niveau, Alter plus Steuer (solidarisch, aber mit Verlierern je Schraube); Weg B setzt auf Kapitaldeckung, Riester und Aktienrente (entkoppelt von Demografie, traegt aber Marktrisiko und Doppelbelastung). Entscheide am Kriterium: Generationengerechtigkeit und Nachhaltigkeit, nicht Wunschdenken.
 
 对决 Weg A（自由市场）vs Weg B（国家干预）：Weg A信市场自备：资本覆盖、基金养老，脱钩人口但吃市场风险+一代人双缴费。Weg B信修补现收现付：三旋钮加税补，团结但每拧都有人疼。判据：代际公平和可持续，不是许愿。
 
 AUFGABE A：Beurteilen Sie Rente mit 67 als Antwort auf den Wandel.
 AUFGABE B：Beurteilen Sie den Vorschlag, die Rente voll auf Kapitaldeckung umzustellen.
 
-HILFE: A 只动年龄旋钮 → Verfahren (i)。B 换融资原理 → Verfahren (ii)，需讲双重负担。【选程序：调参数讲代价；换制度讲成本。】
+HILFE: A 只动年龄旋钮 -> Verfahren (i)。B 换融资原理 -> Verfahren (ii)，需讲双重负担。【选程序：调参数讲代价；换制度讲成本。】
 
 ANTWORT: A erfordert Verfahren (i): Spaeterer Renteneintritt senkt Empfaengerzahl und Bezugsdauer, entlastet den Beitrag, belastet aber koerperlich Arbeitende und den Arbeitsmarkt — intergenerativ umstritten, aber systemimmanent. B erfordert Verfahren (ii): Kapitaldeckung entkoppelt von Demografie, erzeugt aber Uebergangskosten (eine Generation zahlt doppelt) plus Kapitalmarktrisiko; sie loest das Problem nicht, sondern tauscht Demografierisiko gegen Marktrisiko.
 
@@ -181,9 +181,24 @@ Klausur-Satz: `Beitrag, Niveau und Alter bilden das Reformdreieck der gesetzlich
 ## Schritt 7 — szenario: Klausurtransfer: Anhoerung und Parlamentsrede zu Sozialstaat und Rentenkrise im demografischen Wandel
 ROLLE: Du bist Jugenddelegierter in einer Rentenkommission.
 SITUATION: Die Kommission diskutiert Beitragserhoehung gegen Rentenniveausenkung. Nimm in einer zusammenhaengenden Stellungnahme (ca. 150 Woerter) aus Sicht der jungen Generation dazu Stellung und schlage einen fairen Mix vor.
+AUFGABE (beurteilen) [AFB III]:
+Beurteilen Sie den Fall in einer zusammenhaengenden Stellungnahme (ca. 150 Woerter) mit Fachbegriff, Wirkungskette und kriteriengeleitetem Urteil.
+
 RUBRIC (30 XP): Umlage-Mechanik und Demografiedruck (8 XP) | Abwaegung beider Optionen mit Verlierern (10 XP) | Begruendeter Mix mit Gerechtigkeitsmassstab (8 XP) | Adressatengerechte Stellungnahme (4 XP).
 
+ERWARTUNGSHORIZONT:
+Teilleistung | Punkte | Alternativweg
+Sachanalyse mit Fachbegriff und Wirkungskette aus dem Material | 6 NP | Andere korrekte Begriffs- und Kettenbelege akzeptieren
+Folgen- und Zielkonfliktanalyse mit Verlierern bzw. Trade-offs | 4 NP | Andere plausible Konflikt- und Folgenbelege akzeptieren
+Kriteriengeleitetes Urteil mit Abwaegung und Handlungsempfehlung | 5 NP | Alternative Urteile mit gleicher Abwaegungslogik akzeptieren
+
 Klausur-Satz: `Die Rentenstellungnahme rechnet erst die Umlagebilanz mit Demografiedruck und verteilt dann die Last begruendet auf Zahler, Rentner und Steuer.`
+
+KERNSATZ (auswendig):
+`Beitrag, Niveau und Alter bilden das Reformdreieck der gesetzlichen Rente.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Beitrag | Niveau und Alter bilden | das Reformdreieck der gesetzlichen Rente.
+- Selbsttest: Beitrag, Niveau ___ Alter bilden das Reformdreieck der gesetzlichen Rente.
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Was der Krisenstab lernt
 
 TAKEAWAY 1盒（核心总结）：

@@ -8,7 +8,7 @@ operatoren: [darstellen, berechnen, beurteilen]
 klausurrelevant: true
 datum: 2026-09-25
 tags: [EF, SoWi, Ungleichheit]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Lorenzkurve und Gini-Koeffizient (L1, Ziel Klausur)
@@ -34,7 +34,7 @@ Klausur-Satz: `Die Lorenzkurve veranschaulicht die Einkommensverteilung, und der
 
 ## Schritt 2 — entdecken: Werkzeugkoffer von Statistiknarr Karl Zins: 5 Begriffe scharf stellen
 
-PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
+PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文->德语，Evidenz：pretraining降认知负荷）：
 
 中文在上，德语在下：
 
@@ -86,7 +86,7 @@ ENTDECKEN（1概念 + 1文字图解）：
 ```
 Kausalkette: Markt entlohnt Grenzertraege, Zins und Erbschaft konzentrieren Bestaende, Bildungstrichter schliesst Startchancen, Progression plus Transfers druecken Gini und Quote. Zwei Differenzen tragen die Deutung: Markt- gegen Netto-Gini misst Umverteilung, Median gegen Armutslinie misst Teilhabetiefe.
 
-因果链：市场按边际报酬分蛋糕→资本复利+继承拉开存量→教育漏斗锁死起点→累进税+转移支付压回基尼→贫困风险率下行。传导看两差：市场基尼与净基尼之差=再分配力度；中位数与穷线之差=掉队深度。
+因果链：市场按边际报酬分蛋糕->资本复利+继承拉开存量->教育漏斗锁死起点->累进税+转移支付压回基尼->贫困风险率下行。传导看两差：市场基尼与净基尼之差=再分配力度；中位数与穷线之差=掉队深度。
 
 Zielkorridor: $0{,}28 \le G \le 0{,}32$ nach Umverteilung; unterstes Quintil $q_1 \ge 8\,\%$; Armutslinie $L = 0{,}6 \times$ Median.
 
@@ -112,9 +112,13 @@ TARGET: Justiert Steuer- und Transferregler so, dass der Gini-Indikator nach Umv
 AUFGABE (berechnen, AFB II, 12 BE)：M1 gibt die Einkommensanteile von fuenf gleich grossen Bevoelkerungsgruppen an: Q1 = 8 %, Q2 = 13 %, Q3 = 17 %, Q4 = 23 %, Q5 = 39 %. (a) Bestimmen Sie die kumulierten Anteile und skizzieren Sie die Lorenzkurve. (b) Berechnen Sie mit der Trapezmethode die Flaeche B unter der Kurve und daraus den Gini-Koeffizienten. (c) Interpretieren Sie Ihr Ergebnis kurz.
 
 HILFE:
-1. Schritt 1: Kumuliere die Anteile — 8 %, 21 %, 38 %, 61 %, 100 %; trage sie gegen 20 %, 40 %, 60 %, 80 %, 100 % auf.
-2. Schritt 2: Zerlege die Flaeche unter der Kurve in fuenf Trapeze der Breite 0,2 und summiere die mittleren Hoehen.
-3. Schritt 3: Setze B in Gini = 1 - 2B ein und deute den Wert mit der Skala 0 (gleich) bis 1 (ungleich).
+- Richtung: Zuerst die einschlaegige Regel und die zu pruefenden Begriffe aus dem Werkzeugkoffer bestimmen, danach das Material diesen Begriffen zuordnen.
+- Richtung: Danach Mengen- bzw. Rollenreaktion auf beiden Seiten getrennt deuten und die Differenz als Ergebnisspannung mit Urteil-Ansatz festhalten.
+
+
+COMPLETION (Lueckentext):
+- Der erste Pruefschritt lautet ___; ihm wird das einschlaegige Merkmal aus dem Material zugeordnet.
+- Das Ergebnis lautet ___; die Spannung wird mit Regel plus Urteil-Ansatz begruendet.
 
 MUSTERLÖSUNG: Die kumulierten Anteile lauten 8 %, 21 %, 38 %, 61 % und 100 %. Damit verbindet die Lorenzkurve die Punkte (0|0), (20|8), (40|21), (60|38), (80|61) und (100|100) — sie liegt durchgehend unter der Diagonalen. Fuer die Flaeche unter der Kurve summiert man fuenf Trapeze der Breite 0,2: B = 0,2 * [(0+8)/2 + (8+21)/2 + (21+38)/2 + (38+61)/2 + (61+100)/2] / 100. In Prozent ausgedrueckt ergibt das 0,2 * (0,04 + 0,145 + 0,295 + 0,495 + 0,805) = 0,2 * 1,78 = 0,356. Der Gini-Koeffizient ist damit Gini = 1 - 2 * 0,356 = 1 - 0,712 = 0,288, also rund 0,29. Dieser Wert entspricht etwa dem Niveau der verfuegbaren Einkommen in Deutschland und zeigt eine deutliche, aber nicht extreme Ungleichheit — deutlich unter dem Wert, den man fuer Markteinkommen vor Steuern und Transfers erhaelt.
 
@@ -134,7 +138,7 @@ AUFGABE A：M1 zeigt zwei Lorenzkurven fuer dieselbe Volkswirtschaft in den Jahr
 
 AUFGABE B：M2 nennt fuer drei Laender die Quintilsanteile und fragt nach einem Vergleich der Einkommensungleichheit mit Begruendung.
 
-HILFE: A verlangt nur eine Rangfolge aus der Kurvenform → Verfahren (i). B verlangt einen belastbaren Vergleich, also Indikatoren → Verfahren (ii).【选程序：只问"谁更弯" → 读曲线；要"比较并论证" → 算系数。】
+HILFE: A verlangt nur eine Rangfolge aus der Kurvenform -> Verfahren (i). B verlangt einen belastbaren Vergleich, also Indikatoren -> Verfahren (ii).【选程序：只问"谁更弯" -> 读曲线；要"比较并论证" -> 算系数。】
 
 ANTWORT: A erfordert Verfahren (i): Da die Kurve von 2024 sichtbar tiefer durchhaengt, liegt sie weiter von der Diagonalen entfernt; die Flaeche zwischen Diagonale und Kurve ist groesser, also war die Verteilung 2024 ungleicher. Es genuegt die qualitative Aussage, ein Zahlenwert ist nicht verlangt. B erfordert Verfahren (ii): Fuer einen belastbaren Vergleich muessen aus den Quintilsanteilen erst die kumulierten Anteile gebildet, dann mit der Trapezmethode die Flaeche B bestimmt und schliesslich der Gini-Koeffizient berechnet werden. Erst der Vergleich der Gini-Werte liefert ein begruendetes Urteil, welche Verteilung am ungleichsten ist.
 
@@ -159,16 +163,31 @@ Klausur-Satz: `Der Gini-Koeffizient verdichtet die gesamte Lorenzkurve zu einer 
    Korrektur-Satz: `Ein Gini-Koeffizient von 0 bedeutet vollkommene Gleichverteilung, ein Wert nahe 1 dagegen extreme Ungleichheit.`
 
 2. 误解"算 Gini 就直接把份额相加除以 5"。
-   中文纠偏：那是平均值，不是 Gini。正确流程是：先累积份额 → 用梯形法求曲线下面积 B → 再套 Gini = 1 - 2B。跳过曲线只做算术，必然算错。
+   中文纠偏：那是平均值，不是 Gini。正确流程是：先累积份额 -> 用梯形法求曲线下面积 B -> 再套 Gini = 1 - 2B。跳过曲线只做算术，必然算错。
    Korrektur-Satz: `Der Gini-Koeffizient verlangt die Flaeche unter der Lorenzkurve (Trapezmethode) und die Formel Gini = 1 - 2B, nicht einen einfachen Mittelwert der Anteile.`
 
 ## Schritt 7 — szenario: Klausurtransfer: Anhoerung und Parlamentsrede zu Lorenzkurve und Gini-Koeffizient
 
 ROLLE: Du bist Mitarbeiter/in einer statistischen Abteilung und sollst fuer einen Ausschuss die Einkommensverteilung zweier Regionen vergleichen.
 SITUATION: Fuer Region A nennt M1 die Quintilsanteile 8 / 13 / 17 / 23 / 39 %, fuer Region B die Anteile 11 / 15 / 19 / 24 / 31 %. Der Ausschuss moechte wissen, in welcher Region die Ungleichheit groesser ist und ob eine Umverteilungspolitik zu rechtfertigen sei. Beurteilen Sie die Situation in einer zusammenhängenden Stellungnahme (ca. 150 Wörter), stuetzen Sie sich auf die Lorenz-/Gini-Logik und nennen Sie ein Kriterium.
+AUFGABE (beurteilen) [AFB III]:
+Beurteilen Sie den Fall in einer zusammenhaengenden Stellungnahme (ca. 150 Woerter) mit Fachbegriff, Wirkungskette und kriteriengeleitetem Urteil.
+
 RUBRIC (30 XP): Aufstellen der kumulierten Anteile und der Lorenz-Idee (6 XP) | Berechnung bzw. plausibler Vergleich der Gini-Werte von A und B (8 XP) | Benennung und Anwendung des Kriteriums Chancengerechtigkeit (10 XP) | Kriteriengeleitetes Urteil zur Umverteilung (6 XP).
 
+ERWARTUNGSHORIZONT:
+Teilleistung | Punkte | Alternativweg
+Sachanalyse mit Fachbegriff und Wirkungskette aus dem Material | 6 NP | Andere korrekte Begriffs- und Kettenbelege akzeptieren
+Folgen- und Zielkonfliktanalyse mit Verlierern bzw. Trade-offs | 4 NP | Andere plausible Konflikt- und Folgenbelege akzeptieren
+Kriteriengeleitetes Urteil mit Abwaegung und Handlungsempfehlung | 5 NP | Alternative Urteile mit gleicher Abwaegungslogik akzeptieren
+
 Klausur-Satz: `Die Ungleichheitsklausur belegt jede Aussage mit Quote oder Koeffizient und trennt Markt- von Netto-Verteilung, bevor sie wertet.`
+
+KERNSATZ (auswendig):
+`Die Ungleichheitsklausur belegt jede Aussage mit Quote oder Koeffizient und trennt Markt- von Netto-Verteilung, bevor sie wertet.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Die Ungleichheitsklausur belegt jede Aussage mit Quote oder Koeffizient und trennt Markt- von Netto-Verteilung | bevor | sie wertet.
+- Selbsttest: Die Ungleichheitsklausur ___ jede Aussage mit Quote oder Koeffizient und trennt Markt- von Netto-Verteilung, bevor sie wertet.
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Was der Krisenstab lernt
 
 TAKEAWAY 1盒（核心总结）：

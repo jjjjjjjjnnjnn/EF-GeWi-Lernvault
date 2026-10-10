@@ -8,7 +8,7 @@ operatoren: [darstellen, erläutern, beurteilen]
 klausurrelevant: true
 datum: 2026-09-25
 tags: [EF, SoWi, Politik]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Wehrhafte Demokratie und Extremismus (L1, Ziel Klausur)
@@ -34,7 +34,7 @@ Klausur-Satz: `Extremismus richtet sich gegen die freiheitliche demokratische Gr
 
 ## Schritt 2 — entdecken: Werkzeugkoffer von Jugendparlamentarierin Lina Vogt: 5 Begriffe scharf stellen
 
-PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
+PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文->德语，Evidenz：pretraining降认知负荷）：
 
 中文在上，德语在下：
 
@@ -80,7 +80,7 @@ ENTDECKEN（1概念 + 1文字图解）：
 ```
 Kausalkette: Extremistische Signale, Beobachtung und Warnung, gesellschaftlicher Widerspruch zuerst, rechtlicher Griff zuletzt, gerichtliche Verhaeltnismaessigkeit ueber allem. Die Reihenfolge ist heilig: Wer zuerst verbietet und dann erklaert, verliert die innere Zustimmung.
 
-因果链：极端言行出现→保卫局观察预警→社会先顶（媒体、学校、公民）→法律后出手（社团禁、政党禁）→法院卡比例。出手顺序不能反：先禁后讲道理，民主就输了里子。
+因果链：极端言行出现->保卫局观察预警->社会先顶（媒体、学校、公民）->法律后出手（社团禁、政党禁）->法院卡比例。出手顺序不能反：先禁后讲道理，民主就输了里子。
 
 
 Klausur-Satz: `Wehrhafte Demokratie schützt sich durch Parteiverbot (Art. 21 II, nur BVerfG), Beobachtung durch den Verfassungsschutz und politische Bildung.`
@@ -104,9 +104,13 @@ TARGET: Bringt auf dem Verhandlungsbrett beide Waagschalen in die Balance — Be
 AUFGABE (analysieren, AFB II, 10 BE)：M1 ist ein Auszug aus einem Verfassungsschutzbericht. Er nennt für die Jahre 2021 bis 2023 deutlich gestiegene rechtsextremistisch motivierte Straftaten, stuft eine Partei als „gesichert extremistisch" ein und führt eine zweite nur als „Verdachtsfall". Analysieren Sie M1, indem Sie (a) Radikalismus und Extremismus gegeneinander abgrenzen, (b) begründen, warum eine Einstufung als Verdachtsfall noch kein Parteiverbot ist, und (c) die Schutzwirkung der Beobachtung einordnen.
 
 HILFE:
-1. Schritt 1: Begriffspaar trennen — Radikalismus = 目标激进但体制内合法；Extremismus = 反 fdGO 本身。
-2. Schritt 2: Zuständigkeiten prüfen — Beobachtung und Bericht liegen beim Verfassungsschutz; ein Verbot verhängt nur das BVerfG (Art. 21 II).
-3. Schritt 3: Kriterium benennen — Beobachtung wirkt präventiv, ist aber kein Urteil; „Verdachtsfall" ist nicht gleich „verfassungswidrig festgestellt".
+- Richtung: Zuerst die einschlaegige Regel und die zu pruefenden Begriffe aus dem Werkzeugkoffer bestimmen, danach das Material diesen Begriffen zuordnen.
+- Richtung: Danach Mengen- bzw. Rollenreaktion auf beiden Seiten getrennt deuten und die Differenz als Ergebnisspannung mit Urteil-Ansatz festhalten.
+
+
+COMPLETION (Lueckentext):
+- Der erste Pruefschritt lautet ___; ihm wird das einschlaegige Merkmal aus dem Material zugeordnet.
+- Das Ergebnis lautet ___; die Spannung wird mit Regel plus Urteil-Ansatz begruendet.
 
 MUSTERLÖSUNG: Radikalismus und Extremismus unterscheiden sich nicht im Ausmaß der Kritik, sondern in ihrem Bezug zur Verfassung: Radikale fordern tiefgreifende Veränderungen innerhalb der Ordnung und bleiben legal, Extremisten bekämpfen die fdGO selbst und verlieren damit deren Schutz. Die Einstufung als Verdachtsfall ist folglich keine Verbotsentscheidung, denn über ein Verbot entscheidet allein das Bundesverfassungsgericht nach Art. 21 II GG, und zwar erst dann, wenn die Partei verfassungswidrig ist und zusätzlich die Potentialität besitzt, ihre Ziele durchzusetzen. Die Beobachtung durch den Verfassungsschutz wirkt präventiv: Sie sammelt und veröffentlicht Informationen, greift aber nicht in Grundrechte wie die Versammlungs- oder Meinungsfreiheit ein. Der steigende Anteil rechtsextremistischer Straftaten in M1 belegt, dass diese Schutzfunktion gerade bei der stärksten Gefährdung von der Mitte der Gesellschaft aus nötig bleibt.
 
@@ -126,7 +130,7 @@ AUFGABE A：Ein Kommentar fordert, eine soeben als „Verdachtsfall" eingestufte
 
 AUFGABE B：Ein Bericht dokumentiert, dass eine Organisation seit Jahren demokratiefeindliche Positionen verbreitet, ohne dass je ein Verbotsantrag gestellt wurde. Welches Verfahren ist zu wählen, und wie lässt sich der Vorgang einordnen?
 
-HILFE: A fragt nach einem Verbot und nach der Zuständigkeit → Verfahren (ii). B fragt nach Beobachtung und Berichterstattung → Verfahren (i).【选程序：要禁 → 禁程序（只有 BVerfG + 双重门槛）；只观察/报告 → 观察程序。】
+HILFE: A fragt nach einem Verbot und nach der Zuständigkeit -> Verfahren (ii). B fragt nach Beobachtung und Berichterstattung -> Verfahren (i).【选程序：要禁 -> 禁程序（只有 BVerfG + 双重门槛）；只观察/报告 -> 观察程序。】
 
 ANTWORT: A erfordert Verfahren (ii): Ein Verbot kann nur das Bundesverfassungsgericht aussprechen, und zwar erst bei doppelter Hürde — Verfassungswidrigkeit plus Potentialität. Eine bloße Einstufung als Verdachtsfall genügt dafür nicht; die Forderung überspringt die Zuständigkeit und verkennt die Verhältnismäßigkeit. B erfordert Verfahren (i): Verfassungsschutz und Berichte dürfen eine Organisation beobachten und dokumentieren, ohne dass daraus automatisch ein Verbotsverfahren folgt. Beobachtung und Verbot sind zwei getrennte Stufen — die Beobachtung ist die präventive Vorstufe, das Verbot die letzte, seltene Eskalation.
 
@@ -147,7 +151,7 @@ Klausur-Satz: `Verfassungswidrigkeit allein genügt nicht; erst die fehlende Pot
 (非Schritt小节，Parser 自动识别，不计入步骤步数)
 
 1. 误解"只要一个政党反民主，就可以把它禁掉"。
-   中文纠偏：禁党只有联邦宪法法院能判（Art. 21 II），而且门槛是双重的——目标违宪 + 有实现可能。2017 NPD 案正是"违宪但无实现可能 → 驳回"，别把"驳回"写成"禁止"。
+   中文纠偏：禁党只有联邦宪法法院能判（Art. 21 II），而且门槛是双重的——目标违宪 + 有实现可能。2017 NPD 案正是"违宪但无实现可能 -> 驳回"，别把"驳回"写成"禁止"。
    Korrektur-Satz: `Ein Parteiverbot verlangt neben der Verfassungswidrigkeit die Potentialität; deshalb wurde die NPD 2017 nicht verboten.`
 
 2. 误解"Radikalismus 和 Extremismus 都是非法的"。
@@ -158,9 +162,24 @@ Klausur-Satz: `Verfassungswidrigkeit allein genügt nicht; erst die fehlende Pot
 
 ROLLE: Du bist Sachverständige/r in einer Anhörung des Innenausschusses zur Frage, ob gegen eine demokratiefeindliche Partei ein Verbotsverfahren eingeleitet werden soll.
 SITUATION: Die Partei erreicht in Umfragen fünf Prozent, verbreitet völkisch-nationalistische Positionen und stellt Wahlen sowie Minderheitenrechte infrage. Ein Teil der Öffentlichkeit fordert ein sofortiges Verbot, ein anderer warnt vor einem „Wahlkampfhelfer-Effekt" und vor einem Eingriff in die Opposition. Beurteilen Sie in einer zusammenhängenden Stellungnahme (ca. 150 Wörter), ob ein Verbotsverfahren eingeleitet werden sollte, und berücksichtigen Sie dabei die Verhältnismäßigkeit.
+AUFGABE (beurteilen) [AFB III]:
+Beurteilen Sie den Fall in einer zusammenhaengenden Stellungnahme (ca. 150 Woerter) mit Fachbegriff, Wirkungskette und kriteriengeleitetem Urteil.
+
 RUBRIC (30 XP): Benennung der Rechtslage — nur BVerfG, Art. 21 II, doppelte Hürde (6 XP) | Analyse der Gefahrenlage — Verstoß gegen die fdGO, Infragestellen von Wahlen und Minderheitenrechten (8 XP) | Abwägung mit Kriterien — Verhältnismäßigkeit, Funktionsfähigkeit der Opposition, Missbrauchsgefahr (10 XP) | Kriteriengeleitetes Urteil mit klarer Empfehlung (6 XP).
 
+ERWARTUNGSHORIZONT:
+Teilleistung | Punkte | Alternativweg
+Sachanalyse mit Fachbegriff und Wirkungskette aus dem Material | 6 NP | Andere korrekte Begriffs- und Kettenbelege akzeptieren
+Folgen- und Zielkonfliktanalyse mit Verlierern bzw. Trade-offs | 4 NP | Andere plausible Konflikt- und Folgenbelege akzeptieren
+Kriteriengeleitetes Urteil mit Abwaegung und Handlungsempfehlung | 5 NP | Alternative Urteile mit gleicher Abwaegungslogik akzeptieren
+
 Klausur-Satz: `Die Demokratieschutzklausur staffelt Beobachtung, Verbot und Verhaeltnismaessigkeit und ergaenzt jeden Staatsgriff um die gesellschaftliche Antwort.`
+
+KERNSATZ (auswendig):
+`Verfassungswidrigkeit allein genügt nicht; erst die fehlende Potentialität macht das NPD-Verbot von 2017 verständlich.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Verfassungswidrigkeit allein genügt nicht; | erst die fehlende Potentialität macht | das NPD-Verbot von 2017 verständlich.
+- Selbsttest: Verfassungswidrigkeit allein ___ nicht; erst die fehlende Potentialität macht das NPD-Verbot von 2017 verständlich.
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Was der Krisenstab lernt
 
 TAKEAWAY 1盒（核心总结）：

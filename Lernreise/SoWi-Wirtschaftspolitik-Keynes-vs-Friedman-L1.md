@@ -8,7 +8,7 @@ operatoren: [darstellen, vergleichen, beurteilen]
 klausurrelevant: true
 datum: 2026-10-03
 tags: [EF, SoWi, Wirtschaftspolitik, Keynesianismus, Angebotsorientierung, Monetarismus, Stabilitaetsgesetz]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Wirtschaftspolitik: Nachfrage- vs. Angebotsorientierung (Keynes vs. Friedman) (L1, Ziel Klausur)
@@ -29,7 +29,7 @@ Eine verheerende Wirtschaftskrise erfasst das Land. Fabriken schliessen ihre Tor
 `Klausur-Satz: Waehrend der Keynesianismus Marktversagen durch staatliche antizyklische Nachfragesteuerung ausgleichen will, vertraut die Angebotsorientierung auf die Selbstheilungskraefte des Marktes durch Deregulierung und investitionsfreundliche Rahmenbedingungen.`
 
 ## Schritt 2 — entdecken: Das theoretische Instrumentarium der Wirtschaftspolitik
-PRETRAINING术语盒（核心4词，先读三遍中德，合书自测中文→德语）：
+PRETRAINING术语盒（核心4词，先读三遍中德，合书自测中文->德语）：
 
 - 逆周期财政政策 — Antizyklische Finanzpolitik: 在衰退期扩大政府支出并借债（Deficit Spending），在繁荣期削减开支并偿还债务以平抑经济波动的宏观调控模式。 Staatliche Ausgabensteuerung zur Glaettung von Konjunkturschwankungen: Mehrausgaben in der Krise, Sparen im Boom.
 - 赤字财政 — Deficit Spending: 国家在经济萧条期主动承担财政赤字以拉动总需求、恢复就业的举债政策。 Die gezielte kreditfinanzierte Erhoehung staatlicher Nachfrage zur Ueberwindung einer konjunkturellen Rezession.
@@ -69,6 +69,14 @@ AUFGABE (darstellen & vergleichen, AFB I/II):
 Ein europaeisches Land geraet nach einem externen Energiepreisschock in eine schwere Stagflation (Wirtschaftsschrumpfung bei gleichzeitig 8 % Inflation).
 1. Stelle dar, welche Massnahmen ein keynesianischer Finanzminister vorschlagen wuerde, und erlaeutere das Problem der "Time-Lags" (zeitliche Wirkungsverzoegerung).
 2. Vergleiche dies mit den Empfehlungen eines angebotsorientierten Wirtschaftsberaters: Welche Massnahmen empfiehlt er bezueglich Geldpolitik (Zentralbank) und Unternehmenssteuern?
+
+HILFE:
+- Richtung: Zuerst die einschlaegige Regel und die zu pruefenden Begriffe aus dem Werkzeugkoffer bestimmen, danach das Material diesen Begriffen zuordnen.
+- Richtung: Danach Mengen- bzw. Rollenreaktion auf beiden Seiten getrennt deuten und die Differenz als Ergebnisspannung mit Urteil-Ansatz festhalten.
+
+COMPLETION (Lueckentext):
+- Der erste Pruefschritt lautet ___; ihm wird das einschlaegige Merkmal aus dem Material zugeordnet.
+- Das Ergebnis lautet ___; die Spannung wird mit Regel plus Urteil-Ansatz begruendet.
 
 MUSTERLOESUNG:
 1. Keynesianische Reaktion und Time-Lags:
@@ -112,6 +120,20 @@ Analysiere den Zielkonflikt zwischen "hohem Beschaeftigungsstand" und "Preisnive
 ### AFB III: Kritisches Gesamturteil
 Bewerte die im deutschen Grundgesetz verankerte "Schuldenbremse" (Art. 109, 115 GG) vor dem Hintergrund gigantischer Transformationskosten fuer Klimaneutralitaet und marode Verkehrsinfrastruktur aus keynesianischer und angebotsorientierter Sicht.
 
+AUFGABE (beurteilen) [AFB I]:
+Beurteilen Sie den Fall in einer zusammenhaengenden Stellungnahme (ca. 150 Woerter) mit Fachbegriff, Wirkungskette und kriteriengeleitetem Urteil.
+
+ERWARTUNGSHORIZONT:
+Teilleistung | Punkte | Alternativweg
+Sachanalyse mit Fachbegriff und Wirkungskette aus dem Material | 6 NP | Andere korrekte Begriffs- und Kettenbelege akzeptieren
+Folgen- und Zielkonfliktanalyse mit Verlierern bzw. Trade-offs | 4 NP | Andere plausible Konflikt- und Folgenbelege akzeptieren
+Kriteriengeleitetes Urteil mit Abwaegung und Handlungsempfehlung | 5 NP | Alternative Urteile mit gleicher Abwaegungslogik akzeptieren
+
+KERNSATZ (auswendig):
+`wirtschaftspolitischen Beurteilung im Abitur`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- wirtschaftspolitischen Beurteilung | im Abitur | Beurteilung im Abitur
+- Selbsttest: wirtschaftspolitischen Beurteilung im Abitur ___
 ## Schritt 7 — check: Format-Check & Scoring
 
 30 XP Schnelltest zur Verstaendigungssicherung:

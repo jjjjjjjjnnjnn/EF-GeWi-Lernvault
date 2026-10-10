@@ -8,7 +8,7 @@ operatoren: [darstellen, analysieren, beurteilen]
 klausurrelevant: true
 datum: 2026-09-25
 tags: [EF, SoWi, Abitur]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Abitur-Fokus IF4 und IF6 (L1, Ziel Klausur)
@@ -28,21 +28,21 @@ ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
 1. 中文：能说全 IF4 与 IF6 的必考大点，并点名两个聚焦小点（国债之争、自贸对保护）与一个聚焦（三模型）。
 2. 中文：能把每个高考点挂到 EF 的 Kap.1–11 具体章节，答题时调出对应概念与数据。
-3. 中文：能按 Q1→Q2 四个半年排出复习顺序，说清 GK 与 LK 的三处差别，并按 AFB III 给一个跨块挂靠的 beurteilen。
+3. 中文：能按 Q1->Q2 四个半年排出复习顺序，说清 GK 与 LK 的三处差别，并按 AFB III 给一个跨块挂靠的 beurteilen。
 
 Klausur-Satz: `Die Vorgaben fuer das Zentralabitur verlangen in IF4 unter anderem die Legitimation staatlichen Handelns, die Zielgroessen des Stabilitaetsgesetzes und die internationalen Wirtschaftsbeziehungen.`
 
 ## Schritt 2 — entdecken: Werkzeugkoffer von Kassenwart Omar Berger: 5 Begriffe scharf stellen
 
-PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
+PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文->德语，Evidenz：pretraining降认知负荷）：
 
 中文在上，德语在下：
 
 - **Abitur-Operatoren**（考卷动词指令）：考卷动词决定答法：darstellen是结构化复述，analysieren要挂材料做因果，beurteilen必须先报标准再权衡。动笔前先把动词翻成AFB等级。 Operatoren wie darstellen, analysieren und beurteilen steuern die Antwortform. Darstellen verlangt eine strukturierte Wiedergabe von Wissen. Analysieren und beurteilen verlangen zusaetzlich Materialbezug und ein Kriterium. Mechanismus: Der Operator bestimmt AFB-Stufe und Punkteverteilung; wer analysieren mit blossem Darstellen beantwortet, verliert die Deutungs- und Urteilspunkte. Klausur-Tipp: Unterstreiche den Operator und notiere daneben AFB-Stufe plus Kriterium, bevor du schreibst.
-- **Materialbezug**（材料挂靠）：高分链：报材料出处（M1第X行）→套术语→给解读，三步缺一就丢分。 Jede AFB-II- und AFB-III-Antwort braucht einen belegten Materialbezug. Ein Bezug ohne Zeilen- oder Quellenangabe zaehlt nicht als Beleg. Zwei sauber zitierte Belege schlagen fuenf Behauptungen. Mechanismus: Materialstelle nennen, Fachbegriff darueberlegen, Deutung folgern - diese Dreierkette traegt die Analyse. Klausur-Tipp: Formuliere grundsaetzlich M1 zeigt ... (Z. ...), was ... bedeutet.
+- **Materialbezug**（材料挂靠）：高分链：报材料出处（M1第X行）->套术语->给解读，三步缺一就丢分。 Jede AFB-II- und AFB-III-Antwort braucht einen belegten Materialbezug. Ein Bezug ohne Zeilen- oder Quellenangabe zaehlt nicht als Beleg. Zwei sauber zitierte Belege schlagen fuenf Behauptungen. Mechanismus: Materialstelle nennen, Fachbegriff darueberlegen, Deutung folgern - diese Dreierkette traegt die Analyse. Klausur-Tipp: Formuliere grundsaetzlich M1 zeigt ... (Z. ...), was ... bedeutet.
 - **Preismechanismus**（价格机制）：价格是信号：贵了少买多卖，便宜了多买少卖，自由浮动就回到均衡；被钉死就出过剩或短缺。 Der Preismechanismus stimmt Angebot und Nachfrage ueber Preissignale ab. Steigt der Preis, sinkt die Nachfrage und das Angebot waechst. Faellt der Preis, geschieht das Gegenteil, bis der Markt raeumt. Mechanismus: Stoerungen wandern ueber Mengenreaktionen zurueck zum Gleichgewicht, solange kein bindender Fixpreis die Anpassung blockiert. Klausur-Tipp: Nenne immer erst freie Raeumung, dann erst den Eingriff und seine Richtung.
 - **Sozialprinzip**（社会原则）：社会原则是干预的许可证，但许可证要过比例审查：目标正当、手段合适、选最轻的。 Das Sozialprinzip verpflichtet den Staat zum Schutz der Schwaecheren. Es rechtfertigt Umverteilung, Mindestlohn und Kuendigungsschutz. Es endet dort, wo Freiheit und Eigentum unverhaeltnismaessig beschnitten wuerden. Mechanismus: Jeder Eingriff wird an Verhaeltnismaessigkeit gemessen: Ziel nennen, Mittel pruefen, mildeste wirksame Loesung waehlen. Klausur-Tipp: Schutzbehauptungen ohne Verhaeltnismaessigkeitspruefung geben halbe Punkte.
-- **Kriteriengeleitetes Urteil**（标准导向判断）：AFB III模板：报标准→正反各一条→权衡→站队，缺报标准就是表态不是判断。 Ein Urteil braucht ein genanntes Kriterium wie Effizienz oder Gerechtigkeit. Pro- und Contra-Argumente werden an diesem Kriterium gemessen. Erst danach folgt die begruendete Entscheidung. Mechanismus: Kriterium nennen, beide Seiten je ein Argument, Abwaegung, Entscheidung - diese Reihenfolge ist die AFB-III-Schablone. Klausur-Tipp: Schreibe den Satz Mit dem Kriterium ... aus, sonst erkennt der Korrektor kein Urteil.
+- **Kriteriengeleitetes Urteil**（标准导向判断）：AFB III模板：报标准->正反各一条->权衡->站队，缺报标准就是表态不是判断。 Ein Urteil braucht ein genanntes Kriterium wie Effizienz oder Gerechtigkeit. Pro- und Contra-Argumente werden an diesem Kriterium gemessen. Erst danach folgt die begruendete Entscheidung. Mechanismus: Kriterium nennen, beide Seiten je ein Argument, Abwaegung, Entscheidung - diese Reihenfolge ist die AFB-III-Schablone. Klausur-Tipp: Schreibe den Satz Mit dem Kriterium ... aus, sonst erkennt der Korrektor kein Urteil.
 
 
 
@@ -87,7 +87,7 @@ ENTDECKEN（1概念 + 1文字图解）：
 ```
 Kausalkette: Phaenomen oeffnen, Brille waehlen, Fachbegriff anlegen, Kriterium pruefen, Urteil faellen. Der Hoechstpreis unter dem Gleichgewicht erzeugt Mangellage mit Schlange und Schattenmarkt. Der Mindestlohn ueber dem Gleichgewicht sichert Einkommen, riskiert aber Beschaeftigung.
 
-因果链：材料现象→选眼镜（市场眼看供求调节，社会眼看干预后果）→术语挂靠→标准权衡→判断。租金案里，价格上限在均衡之下造成需求过剩，短缺以排队和黑市回来；最低工资在均衡之上造成供给过剩，保护以岗位风险为代价。
+因果链：材料现象->选眼镜（市场眼看供求调节，社会眼看干预后果）->术语挂靠->标准权衡->判断。租金案里，价格上限在均衡之下造成需求过剩，短缺以排队和黑市回来；最低工资在均衡之上造成供给过剩，保护以岗位风险为代价。
 
 Rechenanker im Kopf: Gleichgewicht bei $p_N(q) = p_A(q)$ mit $p_G = 20$ Euro und $q_G = 10$; Hoechstpreis $p_{max} = 8 < p_G$ erzeugt $q_N - q_A > 0$ als Mangellage.
 
@@ -113,9 +113,13 @@ TARGET: Hebt die Klausurformel aufs Brett — Bedingung: Alle Bausteine in die d
 AUFGABE (analysieren, AFB II, 12 BE)：M1 nennt die Forderung, den gesetzlichen Mindestlohn deutlich anzuheben. Analysieren Sie diese Forderung, indem Sie sie (a) in IF4 als wirtschaftspolitischen Eingriff einordnen und mit einem Instrument verbinden, (b) in IF6 als Verteilungsfrage einordnen und mit einem Modell verbinden, und (c) benennen Sie je ein EF-Kapitel, das den Punkt stuetzt.
 
 HILFE:
-1. Schritt 1: Erst klassifizieren, nicht bewerten — Mindestlohn ist gleichzeitig Arbeitsmarkteingriff (IF4) und Verteilungsfrage (IF6).
-2. Schritt 2: Je Block ein Konzept — IF4: Tarifautonomie wird durch staatliche Lohnuntergrenze beruehrt; IF6: Aufstocker zeigen, dass Marktlohn nicht immer reicht.
-3. Schritt 3: EF-Anker nennen — Kap.11 (Mindestlohnkommission) fuer IF4, Ungleichheit-Notiz (Gini, Umverteilung) fuer IF6.
+- Richtung: Zuerst die einschlaegige Regel und die zu pruefenden Begriffe aus dem Werkzeugkoffer bestimmen, danach das Material diesen Begriffen zuordnen.
+- Richtung: Danach Mengen- bzw. Rollenreaktion auf beiden Seiten getrennt deuten und die Differenz als Ergebnisspannung mit Urteil-Ansatz festhalten.
+
+
+COMPLETION (Lueckentext):
+- Der erste Pruefschritt lautet ___; ihm wird das einschlaegige Merkmal aus dem Material zugeordnet.
+- Das Ergebnis lautet ___; die Spannung wird mit Regel plus Urteil-Ansatz begruendet.
 
 MUSTERLÖSUNG: Der Mindestlohn ist ein Doppelfall. In IF4 ordnet er sich als wirtschaftspolitischer Eingriff in den Arbeitsmarkt ein: Der Staat setzt eine Lohnuntergrenze und beruehrt damit die Tarifautonomie, die eigentlich den Sozialpartnern vorbehalten ist. Als Instrument gehoert er zur Beschaeftigungs- und Verteilungspolitik; das EF-Kapitel 11 (Krise) liefert mit der Mindestlohnkommission und dem Fall der Preisbremse die passenden Beispiele. In IF6 ordnet er sich als Verteilungsfrage ein: Ein zu niedriger Lohn erzeugt trotz Vollzeitbeschaeftigung Armut, wie das Phaenomen der Aufstocker zeigt. Als Modell passt das Schichtenmodell (Einkommen als kontinuierliche Dimension), weil es die Lage der Niedriglohngruppe beschreibt; das Ungleichheit-Kapitel liefert dazu die Armutsgefaehrdungsquote und den Gini-Koeffizienten. So verlangt dieselbe Forderung zwei verschiedene Fachbrillen: eine wirtschaftspolitische (IF4) und eine verteilungstheoretische (IF6).
 
@@ -135,7 +139,7 @@ AUFGABE A：Ein Text diskutiert, ob der Staat in der Rezession zusaetzliche Schu
 
 AUFGABE B：Ein Text beschreibt, dass Niedriglohnjobs sich auf bestimmte Regionen und Milieus konzentrieren. Welches Verfahren ist zu waehlen, und wie ist zu argumentieren?
 
-HILFE: A fragt nach Schulden und Konjunktur → Verfahren (i) IF4. B fragt nach der Verteilung von Beschaeftigung ueber Gruppen → Verfahren (ii) IF6.【选程序：问"借钱/工具" → IF4；问"分层/兜底" → IF6。】
+HILFE: A fragt nach Schulden und Konjunktur -> Verfahren (i) IF4. B fragt nach der Verteilung von Beschaeftigung ueber Gruppen -> Verfahren (ii) IF6.【选程序：问"借钱/工具" -> IF4；问"分层/兜底" -> IF6。】
 
 ANTWORT: A erfordert Verfahren (i): Zu argumentieren ist mit dem magischen Viereck und der Konzeption der Staatsverschuldung — der Staat kann in der Rezession ueber Deficit Spending investieren und so Beschaeftigung und Wachstum stuetzen, muss aber die Zielkonflikte (Preisstabilitaet, Tragbarkeit der Schulden) und die europaeischen Regeln beachten. Das EF-Kapitel 11 liefert die Beispiele. B erfordert Verfahren (ii): Zu argumentieren ist mit den drei Modellen — das Lagenmodell beschreibt die mehrdimensionale Benachteiligung der Niedriglohngruppe, das Milieumodell erklaert die Konzentration nach Lebensstilen und Regionen; als Antwort auf die Ungleichheit dienen sozialstaatliche Instrumente wie Mindestlohn, Wohngeld und progressive Steuern. Hier ist die Ungleichheit-Notiz der Anker.
 
@@ -167,9 +171,24 @@ Klausur-Satz: `Die Vorgaben geben Stabilitaet: Wer IF4 ueber Instrumente und IF6
 
 ROLLE: Du bist Tutor/in in der Oberstufe und leitest eine Wiederholungseinheit zu den Abitur-Fokussierungen.
 SITUATION: Eine Lerngruppe soll in 15 Minuten die drei Modelle der Ungleichheit (Schichten, Lagen, Milieus) jeweils mit Definition, einem Beispiel und einer Grenze aufschreiben und anschliessend begruenden, welches Modell sich fuer die Analyse einer Einkommensstatistik am besten eignet. Fuehren Sie die Uebung durch und beurteilen Sie am Ende, welches Modell die beste Passung hat.
+AUFGABE (beurteilen) [AFB III]:
+Beurteilen Sie den Fall in einer zusammenhaengenden Stellungnahme (ca. 150 Woerter) mit Fachbegriff, Wirkungskette und kriteriengeleitetem Urteil.
+
 RUBRIC (30 XP): Vollstaendige Definition der drei Modelle (Schichten/Lagen/Milieus) (9 XP) | Je ein treffendes Beispiel pro Modell (9 XP) | Benennung je einer Grenze pro Modell (6 XP) | Kriteriengeleitetes Urteil zur Modellwahl fuer die Einkommensstatistik (6 XP).
 
+ERWARTUNGSHORIZONT:
+Teilleistung | Punkte | Alternativweg
+Sachanalyse mit Fachbegriff und Wirkungskette aus dem Material | 6 NP | Andere korrekte Begriffs- und Kettenbelege akzeptieren
+Folgen- und Zielkonfliktanalyse mit Verlierern bzw. Trade-offs | 4 NP | Andere plausible Konflikt- und Folgenbelege akzeptieren
+Kriteriengeleitetes Urteil mit Abwaegung und Handlungsempfehlung | 5 NP | Alternative Urteile mit gleicher Abwaegungslogik akzeptieren
+
 Klausur-Satz: `Im Gesamtblick traegt erst die Trennung von freier Preislogik und sozialer Schutzlogik das Urteil, das beide Kriterien ehrlich abwaegt.`
+
+KERNSATZ (auswendig):
+`Die EF-Kapitel 9 und 11 tragen IF4, waehrend die EF-Materialien zu Ungleichheit (Gini, Bildungstrichter, Umverteilung) IF6 fuellen.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Die EF-Kapitel 9 und 11 tragen IF4 | waehrend die EF-Materialien zu Ungleichheit (Gini | Bildungstrichter, Umverteilung) IF6 fuellen.
+- Selbsttest: Die EF-Kapitel ___ und 11 tragen IF4, waehrend die EF-Materialien zu Ungleichheit (Gini, Bildungstrichter, Umverteilung) IF6 fuellen.
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Was der Krisenstab lernt
 
 TAKEAWAY 1盒（核心总结）：

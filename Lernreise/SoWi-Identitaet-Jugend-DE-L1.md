@@ -8,7 +8,7 @@ operatoren: [darstellen, analysieren, beurteilen]
 klausurrelevant: true
 datum: 2026-09-26
 tags: [EF, SoWi, Soziologie]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Identität und Jugend (L1, Ziel Klausur)
@@ -112,7 +112,13 @@ Lege im Tool Pro- und Contra-Argumente auf die Waage und gewichte jedes Argument
 AUFGABE Profil-Raetsel (AFB II): Stelle im Tool eine Star-Verteilung mit einem klaren Spitzenprofil oben gegen viele wenig beachtete Profile unten ein. Schiebe per Regler zu flacher Verteilung und belege mit Kurve und Deutung, ob Teilhabe ohne Druck gelingt.
 
 HILFE:
-1. Schritt 1: Notiere Startverteilung und Kurvenform. 2. Schritt 2: Verschiebe Anteile und lies die Veraenderung der Kurve. 3. Schritt 3: Deute ambivalent an Balance und formuliere den Klausur-Satz.
+- Richtung: Zuerst die einschlaegige Regel und die zu pruefenden Begriffe aus dem Werkzeugkoffer bestimmen, danach das Material diesen Begriffen zuordnen.
+- Richtung: Danach Mengen- bzw. Rollenreaktion auf beiden Seiten getrennt deuten und die Differenz als Ergebnisspannung mit Urteil-Ansatz festhalten.
+
+
+COMPLETION (Lueckentext):
+- Der erste Pruefschritt lautet ___; ihm wird das einschlaegige Merkmal aus dem Material zugeordnet.
+- Das Ergebnis lautet ___; die Spannung wird mit Regel plus Urteil-Ansatz begruendet.
 
 MUSTERLOESUNG: Start mit steiler Kurve zeigt Star-Luecke; nach Ausgleich hebt sich die Kurve sichtbar. Netz erweitert Ausdruck, doch erst bewusste Distanz senkt Vergleichsdruck — Kommunikation bleibt Identitaets-Ort.
 
@@ -164,10 +170,22 @@ Klausur-Satz: `Identitaet ist keine Eigenschaft, sondern eine Balanceleistung �
 
 ROLLE: Du bist Mitglied einer Schuelervertretung und haeltst auf einem Schulforum eine kurze Stellungnahme zur Wertewandel-Debatte.
 SITUATION: An deiner Schule wird ueber die Abschlussfeier diskutiert. Aeltere Lehrkraefte fordern traditionelle Formen, waehrend Mitschuelerinnen und Mitschueler die Feier staerker an Familie, Sicherheit und Nachhaltigkeit ausrichten wollen. Eine Jugendstudie zeigt, dass Familien- und Sicherheitswerte unter Jugendlichen gestiegen sind. Beurteile in einer zusammenhaengenden Stellungnahme (ca. 150 Woerter), ob dieser Wertewandel als Verlust oder als Gewinn fuer die Jugend zu bewerten ist.
-AUFGABE (AFB III): Verfasse eine zusammenhaengende Darstellung von etwa 150 Woertern mit Kriterium, Anwendung und Urteil.
+AUFGABE (AFB III): Verfasse eine zusammenhaengende Darstellung von etwa 150 Woertern mit Kriterium, Anwendung und Urteil. [AFB III]:
 RUBRIC (30 XP): These mit Kriterium Autonomie in Bindung (5 XP) | Darstellung beider Wege mit Fachbegriffen (10 XP) | Anwendung auf Feier-Streit mit Beleg aus der Studie (10 XP) | Fazit mit eigenem Urteil und Ausblick (5 XP).
 
+ERWARTUNGSHORIZONT:
+Teilleistung | Punkte | Alternativweg
+Sachanalyse mit Fachbegriff und Wirkungskette aus dem Material | 6 NP | Andere korrekte Begriffs- und Kettenbelege akzeptieren
+Folgen- und Zielkonfliktanalyse mit Verlierern bzw. Trade-offs | 4 NP | Andere plausible Konflikt- und Folgenbelege akzeptieren
+Kriteriengeleitetes Urteil mit Abwaegung und Handlungsempfehlung | 5 NP | Alternative Urteile mit gleicher Abwaegungslogik akzeptieren
+
 Klausur-Satz: `Die Klausurleistung zeigt sich an der Stufenzuordnung: Szene nennen, Mead- oder Erikson-Kategorie anlegen, Festlegungsgrad bestimmen.`
+
+KERNSATZ (auswendig):
+`Nach Hurrelmann verarbeiten Jugendliche innere und aeussere Realitaet produktiv, statt sich nur anzupassen.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Nach Hurrelmann verarbeiten Jugendliche innere und aeussere Realitaet produktiv | statt sich | nur anzupassen.
+- Selbsttest: Nach Hurrelmann ___ Jugendliche innere und aeussere Realitaet produktiv, statt sich nur anzupassen.
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Was der Krisenstab lernt
 
 TAKEAWAY (Kernbotschaft in einem Kasten):

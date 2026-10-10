@@ -8,7 +8,7 @@ operatoren: [darstellen, analysieren, erörtern]
 klausurrelevant: true
 datum: 2026-09-25
 tags: [EF, SoWi, Politik]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Verfassungsorgane (L1, Ziel Klausur)
@@ -27,14 +27,14 @@ HOOK 市长危机（先读剧情，再进 ZIELE）：【本集战役 EP38｜Akt 
 ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
 1. 中文：能画出五机关的完整分工图（Bundestag / Bundesrat / Bundesregierung / Bundespräsident / BVerfG），并说清各自的产生方式与核心职能。
-2. 中文：能按"Bundestag → Bundesrat（批准或反对）→ 调解委员会 → 总统签署"复述立法路径，并区分 Zustimmungsgesetz 与 Einspruchsgesetz。
+2. 中文：能按"Bundestag -> Bundesrat（批准或反对）-> 调解委员会 -> 总统签署"复述立法路径，并区分 Zustimmungsgesetz 与 Einspruchsgesetz。
 3. 中文：能按 AFB II 用 Politikzyklus 分析一个立法案例，并按 AFB III 就"党团纪律 vs. 自由委任"给出权衡。
 
 Klausur-Satz: `Der Gang der Gesetzgebung führt vom Bundestag über den Bundesrat (Zustimmung oder Einspruch) und ggf. den Vermittlungsausschuss bis zur Ausfertigung durch den Bundespräsidenten.`
 
 ## Schritt 2 — entdecken: Werkzeugkoffer von Justiziarin Dr. Ines Kraus: 5 Begriffe scharf stellen
 
-PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
+PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文->德语，Evidenz：pretraining降认知负荷）：
 
 中文在上，德语在下：
 
@@ -81,7 +81,7 @@ ENTDECKEN（1概念 + 1文字图解）：
 ```
 Kausalkette: Regierungsentwurf, drei Lesungen, Bundesratspruefung nach Gesetzesart, Vermittlungspaket, Ausfertigung, Nachkontrolle. Macht ist in fuenf Abschnitte geschnitten: Kein Abschnitt laeuft solo, jeder braucht Gegenzeichnung, jeder Fehler kann stoppen.
 
-因果链：政府提案→议院三读→参议院看性质（同意/抗议）→调解打包→总统形式审查→法院实质审查。权力被切成五段：没一段能 solo，全程互相签字，违宪在任一段都可能被拦下。
+因果链：政府提案->议院三读->参议院看性质（同意/抗议）->调解打包->总统形式审查->法院实质审查。权力被切成五段：没一段能 solo，全程互相签字，违宪在任一段都可能被拦下。
 
 
 Klausur-Satz: `Der Bundesrat vertritt die Länder, der Bundestag das Volk; beide zusammen sichern im Föderalismus die Mitwirkung der Länder an der Gesetzgebung.`
@@ -114,9 +114,13 @@ TARGET: Bringt auf dem Verhandlungsbrett beide Waagschalen in die Balance — Be
 AUFGABE (analysieren, AFB II, 10 BE)：Material 1 (Sachtext) beschreibt ein Gesetz zur Entlastung bei gestiegenen Heizkosten: Der Bundestag beschließt es im März, der Bundesrat stimmt im April ohne Anrufung des Vermittlungsausschusses zu, anschließend fertigt der Bundespräsident es aus. Analysieren Sie den Vorgang mithilfe des Politikzyklus und ordnen Sie die Rolle des Bundesrats ein.
 
 HILFE:
-1. Schritt 1: Politikzyklus anlegen — Problem, Agenda, Formulierung, Implementation, Evaluation.
-2. Schritt 2: Materialstationen zuordnen — hohe Energiepreise = Problem; Gesetzentwurf = Formulierung; Beschluss und Zustimmung = Implementation.
-3. Schritt 3: Rolle des Bundesrats bestimmen — handelte es sich um ein Zustimmungs- oder Einspruchsgesetz?
+- Richtung: Zuerst die einschlaegige Regel und die zu pruefenden Begriffe aus dem Werkzeugkoffer bestimmen, danach das Material diesen Begriffen zuordnen.
+- Richtung: Danach Mengen- bzw. Rollenreaktion auf beiden Seiten getrennt deuten und die Differenz als Ergebnisspannung mit Urteil-Ansatz festhalten.
+
+
+COMPLETION (Lueckentext):
+- Der erste Pruefschritt lautet ___; ihm wird das einschlaegige Merkmal aus dem Material zugeordnet.
+- Das Ergebnis lautet ___; die Spannung wird mit Regel plus Urteil-Ansatz begruendet.
 
 MUSTERLÖSUNG: Der Politikzyklus gliedert den Fall in Phasen: Auslöser (Problem) waren die stark gestiegenen Heizkosten; die politische Debatte setzte das Thema auf die Agenda; die Formulierung erfolgte im Gesetzentwurf, den der Bundestag im März beschloss. Die Implementation begann mit der Zustimmung des Bundesrats im April und der Ausfertigung durch den Bundespräsidenten. Da der Bundesrat unmittelbar zustimmte und der Vermittlungsausschuss nicht angerufen wurde, handelte es sich um ein Gesetz, das der Zustimmung des Bundesrats bedurfte (Zustimmungsgesetz); der Bundesrat wirkte hier also nicht als Blockade-, sondern als Zustimmungsinstanz. Die Evaluation der Maßnahme blieb zum Zeitpunkt des Beschlusses noch offen.
 
@@ -136,7 +140,7 @@ AUFGABE A (AFB II, 8 BE)：Material 2 (Sachtext) schildert, dass ein Gesetz, das
 
 AUFGABE B (AFB II, 8 BE)：Eine Karikatur zeigt Abgeordnete, die an unsichtbaren Fäden wie Marionetten in eine Richtung gezogen werden, während ein Schild „Art. 38" am Rand steht. Erläutern Sie die Aussage mit dem passenden Begriff.
 
-HILFE: A fragt nach dem Weg und der Rolle des Bundesrats → Verfahren (i). B fragt nach der Bindung des einzelnen Abgeordneten → Verfahren (ii).【选程序：材料问"走什么程序/谁点头"= 程序程序；材料问"议员听谁/能不能自由投票"= 委任程序。】
+HILFE: A fragt nach dem Weg und der Rolle des Bundesrats -> Verfahren (i). B fragt nach der Bindung des einzelnen Abgeordneten -> Verfahren (ii).【选程序：材料问"走什么程序/谁点头"= 程序程序；材料问"议员听谁/能不能自由投票"= 委任程序。】
 
 ANTWORT: A erfordert Verfahren (i): Da das Gesetz die Länderfinanzen berührt, liegt ein Zustimmungsgesetz vor, das ohne die Zustimmung des Bundesrats nicht zustande kommt; verweigert der Bundesrat die Zustimmung, kann der Vermittlungsausschuss angerufen werden, der einen Kompromiss suchen soll. B erfordert Verfahren (ii): Die Marionetten-Fäden stehen für die Fraktionsdisziplin, die Abgeordnete faktisch auf eine Linie verpflichtet; dem steht das freie Mandat des Art. 38 GG gegenüber, nach dem Abgeordnete nur ihrem Gewissen unterworfen sind — bei echten Gewissensfragen wird die Fraktionsdisziplin daher aufgehoben.
 
@@ -170,9 +174,24 @@ ROLLE: Du bist Abgeordnete bzw. Abgeordneter und hältst im Bundestag eine kurze
 
 SITUATION: Eine Reform soll den Bundestag dauerhaft verkleinern und die Zahl der Sitze deckeln; Kritiker warnen, dass dadurch gewählte Direktkandidaten ihren Sitz verlieren können, obwohl sie ihren Wahlkreis gewonnen haben. Beurteile in einer zusammenhängenden Stellungnahme (ca. 150 Wörter), ob die Reform zu befürworten ist, und nutze dabei Argumente zur Funktionsfähigkeit und zur Repräsentation.
 
+AUFGABE (erörtern) [AFB III]:
+Eroertern Sie den Fall in einer zusammenhaengenden Stellungnahme (ca. 150 Woerter) mit Fachbegriff, Wirkungskette und kriteriengeleitetem Urteil.
+
 RUBRIC (30 XP): Benennung des Problems (übermäßige Größe des Bundestags) und der Reformmaßnahme (5 XP) | Analyse des Zielkonflikts zwischen Funktionsfähigkeit und Repräsentation (10 XP) | Darlegung der Folgen für Direktmandate und kleine Parteien (10 XP) | Kriteriengeleitetes Urteil mit Abwägung (5 XP).
 
+ERWARTUNGSHORIZONT:
+Teilleistung | Punkte | Alternativweg
+Sachanalyse mit Fachbegriff und Wirkungskette aus dem Material | 6 NP | Andere korrekte Begriffs- und Kettenbelege akzeptieren
+Folgen- und Zielkonfliktanalyse mit Verlierern bzw. Trade-offs | 4 NP | Andere plausible Konflikt- und Folgenbelege akzeptieren
+Kriteriengeleitetes Urteil mit Abwaegung und Handlungsempfehlung | 5 NP | Alternative Urteile mit gleicher Abwaegungslogik akzeptieren
+
 Klausur-Satz: `Die Organklausur ordnet erst Zustaendigkeit und Verfahren und wuerdigt dann das Zusammenspiel an Handlungsfaehigkeit und Kontrolle.`
+
+KERNSATZ (auswendig):
+`Die Organklausur ordnet erst Zustaendigkeit und Verfahren und wuerdigt dann das Zusammenspiel an Handlungsfaehigkeit und Kontrolle.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Die Organklausur ordnet erst Zustaendigkeit | und Verfahren und wuerdigt dann | das Zusammenspiel an Handlungsfaehigkeit und Kontrolle.
+- Selbsttest: Die Organklausur ___ erst Zustaendigkeit und Verfahren und wuerdigt dann das Zusammenspiel an Handlungsfaehigkeit und Kontrolle.
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Was der Krisenstab lernt
 
 TAKEAWAY 1盒（核心总结）：

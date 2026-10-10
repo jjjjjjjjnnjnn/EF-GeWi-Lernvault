@@ -8,7 +8,7 @@ operatoren: [darstellen, analysieren, beurteilen]
 klausurrelevant: true
 datum: 2026-09-26
 tags: [EF, SoWi, Marktwirtschaft]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Preismechanismus und Marktformen (L1, Ziel Klausur)
@@ -114,9 +114,13 @@ Ziehe im Tool den Mindestpreis-Regler nach oben und beobachte live, wie das Uebe
 AUFGABE Spiel-Raetsel (AFB II): Finde im Tool durch Ziehen des Preis-Reglers den Punkt, an dem angebotene und nachgefragte Menge uebereinstimmen. Stelle danach einen hohen Mindestpreis ein, lies Angebot und Nachfrage ab und beschreibe das Ueberangebot in Worten. Stelle danach einen tiefen Hoechstpreis ein und beschreibe die Mangellage.
 
 HILFE:
-1. Schritt 1: Stelle den freien Preis ein und pruefe die Raeumung in Worten.
-2. Schritt 2: Erhoehe auf Mindestpreis, lies Angebot und Nachfrage ab.
-3. Schritt 3: Beschreibe Ueberangebot oder Mangellage, deute am Kriterium Allokationseffizienz und formuliere den Klausur-Satz.
+- Richtung: Zuerst die einschlaegige Regel und die zu pruefenden Begriffe aus dem Werkzeugkoffer bestimmen, danach das Material diesen Begriffen zuordnen.
+- Richtung: Danach Mengen- bzw. Rollenreaktion auf beiden Seiten getrennt deuten und die Differenz als Ergebnisspannung mit Urteil-Ansatz festhalten.
+
+
+COMPLETION (Lueckentext):
+- Der erste Pruefschritt lautet ___; ihm wird das einschlaegige Merkmal aus dem Material zugeordnet.
+- Das Ergebnis lautet ___; die Spannung wird mit Regel plus Urteil-Ansatz begruendet.
 
 MUSTERLOESUNG: Im freien Spiel raeumt der Gleichgewichtspreis den Markt. Beim Mindestpreis oberhalb des Gleichgewichts steigt das Angebot und die Nachfrage sinkt, sodass ein Ueberangebot entsteht. Der Mindestpreis belohnt Anbieter, schreckt Nachfrager ab und setzt die Raeumung ausser Kraft: Effizienz gegen Sozialziel.
 
@@ -166,10 +170,22 @@ Klausur-Satz: `Ein staatlicher Mindestpreis entfaltet nur dann ökonomische Wirk
 
 ROLLE: Du bist Referent in einer Verbraucherzentrale und sollst auf einer Podiumsdiskussion die geplante Mietpreisbremse der Stadt fachlich bewerten.
 SITUATION: Die Stadt will per Satzung die Miete auf hoechstens acht Euro pro Quadratmeter festsetzen; der aktuelle Marktmietpreis liegt bei elf Euro. Ein Teil des Publikums erwartet dadurch billigeren Wohnraum, ein anderer Teil warnt vor Wohnungsmangel. Beurteile die Massnahme in einer zusammenhaengenden Stellungnahme mit etwa 150 Woertern unter Rueckgriff auf Preismechanismus und Marktformen.
-AUFGABE (AFB III): Verfasse eine zusammenhaengende Darstellung von etwa 150 Woertern mit Kriterium, Anwendung und Urteil.
+AUFGABE (AFB III): Verfasse eine zusammenhaengende Darstellung von etwa 150 Woertern mit Kriterium, Anwendung und Urteil. [AFB III]:
 RUBRIC (30 XP): Benennung als Hoechstpreis unterhalb des Gleichgewichts (5 XP) | Analyse der Mengenwirkung mit steigender Nachfrage und sinkendem Angebot plus Mangellage (10 XP) | Darlegung der Folgen mit Fehlallokation, Schattenmarkt und sinkenden Neubauinvestitionen (10 XP) | Kriteriengeleitetes Urteil mit Abwaegung von Effizienz und sozialer Zielsetzung (5 XP)
 
+ERWARTUNGSHORIZONT:
+Teilleistung | Punkte | Alternativweg
+Sachanalyse mit Fachbegriff und Wirkungskette aus dem Material | 6 NP | Andere korrekte Begriffs- und Kettenbelege akzeptieren
+Folgen- und Zielkonfliktanalyse mit Verlierern bzw. Trade-offs | 4 NP | Andere plausible Konflikt- und Folgenbelege akzeptieren
+Kriteriengeleitetes Urteil mit Abwaegung und Handlungsempfehlung | 5 NP | Alternative Urteile mit gleicher Abwaegungslogik akzeptieren
+
 Klausur-Satz: `Die Miet preisbremse ist als bindender Hoechstpreis unter dem Gleichgewicht zu wuerdigen: Mangellage messen, Schattenmarkt und Neubaufolgen nennen, Effizienz gegen Schutz abwaegen.`
+
+KERNSATZ (auswendig):
+`Ein staatlicher Mindestpreis entfaltet nur dann ökonomische Wirkung, wenn er über dem Gleichgewichtspreis fixiert wird.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Ein staatlicher Mindestpreis entfaltet nur dann ökonomische Wirkung | wenn er über | dem Gleichgewichtspreis fixiert wird.
+- Selbsttest: Ein staatlicher ___ entfaltet nur dann ökonomische Wirkung, wenn er über dem Gleichgewichtspreis fixiert wird.
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Was der Krisenstab lernt
 
 TAKEAWAY (Kernbotschaft in einem Kasten):

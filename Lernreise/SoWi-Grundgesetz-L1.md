@@ -8,7 +8,7 @@ operatoren: [darstellen, beschreiben, erläutern]
 klausurrelevant: true
 datum: 2026-09-25
 tags: [EF, SoWi, Politik]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Grundgesetz und Verfassungsprinzipien (L1, Ziel Klausur)
@@ -32,13 +32,13 @@ ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
 1. 中文：能说清 1949 年基本法是"对纳粹教训的制度回答"，因此把人的尊严写在第 1 条并通过 Art. 1 Abs. 3 直接约束全部国家权力。
 2. 中文：能背出 Art. 20 的四项宪法原则（Demokratie / Rechtsstaat / Sozialstaat / Bundesstaat），并解释 Art. 79 Abs. 3 永恒条款只锁死 Art. 1 与 Art. 20。
-3. 中文：能按 Gutachtenstil（Obersatz → Untersatz → Subsumtion → Ergebnis）对一个基本权利冲突案例做涵摄，并按 AFB III 用实践调和给出权衡。
+3. 中文：能按 Gutachtenstil（Obersatz -> Untersatz -> Subsumtion -> Ergebnis）对一个基本权利冲突案例做涵摄，并按 AFB III 用实践调和给出权衡。
 
 Klausur-Satz: `Art. 1 GG erklärt die Menschenwürde für unantastbar; über Art. 1 Abs. 3 binden die Grundrechte alle Staatsgewalt unmittelbar.`
 
 ## Schritt 2 — entdecken: Werkzeugkoffer von Gewerkschaftssekretaer Tomasz Nowak: 5 Begriffe scharf stellen
 
-PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
+PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文->德语，Evidenz：pretraining降认知负荷）：
 
 中文在上，德语在下：
 
@@ -86,7 +86,7 @@ ENTDECKEN（1概念 + 1文字图解）：
 ```
 Kausalkette: Antwort auf die NS-Zeit, Wuerde in Art. 1, Bindung ueber Art. 1 Abs. 3, drei Grundrechtsfamilien, Kollision ueber praktische Konkordanz, Struktur ueber Art. 20, Sicherung ueber Art. 79 Abs. 3. Individualstreit und Strukturstreit laufen auf zwei getrennten Gleisen.
 
-因果链：1949制宪回答纳粹史→尊严第1条+第1条第3款锁死国家权力→权利分自由平等司法三类→撞车走实践调和→国家结构看第20条四原则→第79条第3款焊死第1+20条。权利冲突与结构之争是两条流水线，绝不能串线。
+因果链：1949制宪回答纳粹史->尊严第1条+第1条第3款锁死国家权力->权利分自由平等司法三类->撞车走实践调和->国家结构看第20条四原则->第79条第3款焊死第1+20条。权利冲突与结构之争是两条流水线，绝不能串线。
 
 
 Klausur-Satz: `Bei einer Grundrechtskollision verlangt die praktische Konkordanz, beide Rechte möglichst zu verwirklichen, ohne ihren Wesensgehalt anzutasten.`
@@ -94,7 +94,7 @@ Klausur-Satz: `Bei einer Grundrechtskollision verlangt die praktische Konkordanz
 中文四步解题法（宪法题通用）：
 1. 定争议：是个体基本权利受侵，还是国家结构原则之争？
 2. 找条文：权利问题引 Art. 1/3/4/5，结构问题引 Art. 20 与 Art. 79 Abs. 3。
-3. 走涵摄：Obersatz → Untersatz → Subsumtion → Ergebnis，一步不能省。
+3. 走涵摄：Obersatz -> Untersatz -> Subsumtion -> Ergebnis，一步不能省。
 4. 收尾：权利冲突必须落到实践调和，并点明谁的本质内容都不可被掏空。
 
 一句话记牢：先分"权利"还是"结构"，再决定引哪条。
@@ -119,10 +119,13 @@ TARGET: Bringt auf dem Verhandlungsbrett beide Waagschalen in die Balance — Be
 AUFGABE (erläutern, AFB II, 10 BE)：Material 1 (Sachtext) schildert den Fall einer Schülerin, die aus religiösen Gründen nicht am verpflichtenden Schwimmunterricht teilnehmen will, während die Schule auf der Erfüllung des Bildungsauftrags besteht. Erläutern Sie in Gutachtenstil, welche Grundrechte kollidieren und wie nach dem Grundgesetz zu verfahren ist.
 
 HILFE:
-1. Schritt 1 (Obersatz): Nenne die einschlägige Regel — bei Grundrechtskollisionen gilt die praktische Konkordanz.
-2. Schritt 2 (Untersatz): Bestimme die beiden betroffenen Rechte (Religionsfreiheit Art. 4 vs. staatlicher Bildungsauftrag).
-3. Schritt 3 (Subsumtion): Prüfe, ob beide möglichst verwirklicht werden können, ohne den Wesensgehalt zu verletzen.
-4. Schritt 4 (Ergebnis): Formuliere ein Ergebnis mit Abwägung.
+- Richtung: Zuerst die einschlaegige Regel und die zu pruefenden Begriffe aus dem Werkzeugkoffer bestimmen, danach das Material diesen Begriffen zuordnen.
+- Richtung: Danach Mengen- bzw. Rollenreaktion auf beiden Seiten getrennt deuten und die Differenz als Ergebnisspannung mit Urteil-Ansatz festhalten.
+
+
+COMPLETION (Lueckentext):
+- Der erste Pruefschritt lautet ___; ihm wird das einschlaegige Merkmal aus dem Material zugeordnet.
+- Das Ergebnis lautet ___; die Spannung wird mit Regel plus Urteil-Ansatz begruendet.
 
 MUSTERLÖSUNG: Obersatz: Kollidieren zwei Grundrechte bzw. Grundrecht und Staatsauftrag, so sind beide nach dem Grundsatz der praktischen Konkordanz möglichst schonend zum Ausgleich zu bringen. Untersatz: Hier stehen sich die Religionsfreiheit der Schülerin (Art. 4 GG) und der staatliche Bildungs- und Erziehungsauftrag gegenüber, der einen gemeinsamen Schwimmunterricht vorsieht. Subsumtion: Ein vollständiger Ausschluss der Schülerin würde die Religionsfreiheit einseitig verdrängen, eine vollständige Unterrichtspflicht würde sie umgekehrt verletzen; eine Lösung, die den Wesensgehalt keines Rechts antastet, kann in einer gleichwertigen Ersatzleistung oder einer differenzierten Befreiung liegen. Ergebnis: Der Konflikt ist nicht durch „entweder-oder", sondern durch praktische Konkordanz zu lösen, die beiden Positionen Bilanz trägt.
 
@@ -136,7 +139,7 @@ AUFGABE A (AFB II, 8 BE)：Material 2 (Sachtext) berichtet, dass ein Arbeitgeber
 
 AUFGABE B (AFB II, 8 BE)：Eine Karikatur zeigt eine Person, die versucht, einen Tresor mit der Aufschrift „Art. 1 / Art. 20" aufzubrechen, während ein Schild „Verfassungsänderung" daneben steht. Erläutern Sie die Aussage mit dem passenden Verfassungsartikel.
 
-HILFE: A fragt nach dem Schutz einer einzelnen Person gegen eine Benachteiligung (Gleichheitsrecht, Drittwirkung) → Verfahren (i). B fragt nach der Unabänderbarkeit zentraler Strukturprinzipien → Verfahren (ii).【选程序：材料问"某项权利受不受保护/怎么冲突"= 权利程序；材料问"能不能改宪法/国家结构"= 原则程序。】
+HILFE: A fragt nach dem Schutz einer einzelnen Person gegen eine Benachteiligung (Gleichheitsrecht, Drittwirkung) -> Verfahren (i). B fragt nach der Unabänderbarkeit zentraler Strukturprinzipien -> Verfahren (ii).【选程序：材料问"某项权利受不受保护/怎么冲突"= 权利程序；材料问"能不能改宪法/国家结构"= 原则程序。】
 
 ANTWORT: A erfordert Verfahren (i): Betroffen ist der Gleichheitssatz (Art. 3 Abs. 3 GG, Benachteiligungsverbot wegen Herkunft). Grundrechte wirken zwar primär gegen den Staat, entfalten über die Drittwirkung aber mittelbare Wirkung auch zwischen Privaten, sodass die Benachteiligung rechtlich relevant wird. B erfordert Verfahren (ii): Die Karikatur spielt auf die Ewigkeitsklausel (Art. 79 Abs. 3 GG) an — Art. 1 und Art. 20 sind selbst durch eine Verfassungsänderung nicht angreifbar; der Tresor steht für den unantastbaren Kern, der auch demokratische Mehrheiten bindet.
 
@@ -170,9 +173,24 @@ ROLLE: Du bist Anwältin bzw. Anwalt und formulierst eine kurze Verfassungsbesch
 
 SITUATION: Eine Gemeinde will einer Gruppe ein öffentliches Platzverbot erteilen, weil deren politische Versammlung den Verkehr stört. Die Betroffenen berufen sich auf ihre Versammlungs- und Meinungsfreiheit, die Gemeinde auf das Interesse der Allgemeinheit an ungestörtem Verkehr. Beurteile in einer zusammenhängenden Stellungnahme (ca. 150 Wörter), wie nach dem Grundgesetz zwischen den Positionen zu vermitteln ist.
 
+AUFGABE (erläutern) [AFB II]:
+Erläutern Sie den Fall in einer zusammenhaengenden Stellungnahme (ca. 150 Woerter) mit Fachbegriff, Wirkungskette und kriteriengeleitetem Urteil.
+
 RUBRIC (30 XP): Benennung der kollidierenden Grundrechte bzw. Rechtsgüter (5 XP) | Erläuterung der praktischen Konkordanz als Lösungsregel (10 XP) | Analyse der Folgen einer einseitigen Lösung (z. B. Wesensgehalt, Verhältnismäßigkeit) (10 XP) | Kriteriengeleitetes Urteil mit Abwägung (5 XP).
 
+ERWARTUNGSHORIZONT:
+Teilleistung | Punkte | Alternativweg
+Sachanalyse mit Fachbegriff und Wirkungskette aus dem Material | 6 NP | Andere korrekte Begriffs- und Kettenbelege akzeptieren
+Folgen- und Zielkonfliktanalyse mit Verlierern bzw. Trade-offs | 4 NP | Andere plausible Konflikt- und Folgenbelege akzeptieren
+Kriteriengeleitetes Urteil mit Abwaegung und Handlungsempfehlung | 5 NP | Alternative Urteile mit gleicher Abwaegungslogik akzeptieren
+
 Klausur-Satz: `Die verfassungsrechtliche Stellungnahme erkennt zuerst die Kollisionslage mit Artikelnummern und loest sie dann ueber schonenden Ausgleich statt Entweder-oder.`
+
+KERNSATZ (auswendig):
+`Art. 20 GG nennt vier Verfassungsprinzipien: Demokratie, Rechtsstaat, Sozialstaat und Bundesstaat.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Art. 20 GG nennt vier Verfassungsprinzipien: Demokratie | Rechtsstaat | Sozialstaat und Bundesstaat.
+- Selbsttest: Art. 20 GG ___ vier Verfassungsprinzipien: Demokratie, Rechtsstaat, Sozialstaat und Bundesstaat.
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Was der Krisenstab lernt
 
 TAKEAWAY 1盒（核心总结）：

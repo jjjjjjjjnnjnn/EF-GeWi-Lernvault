@@ -8,7 +8,7 @@ operatoren: [analysieren, beurteilen]
 klausurrelevant: true
 datum: 2026-09-26
 tags: [EF, SoWi, Wirtschaft]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Wirtschaftskreislauf und BIP-Kritik (L1, Ziel Klausur)
@@ -112,9 +112,13 @@ Baue im Tool den erweiterten Kreislauf mit fuenf Sektoren. Markiere Geldstrom un
 AUFGABE Spiel-Raetsel (AFB II): Notiere im Tool, wie Marktleistung auf hoehere Staatsausgaben reagiert. Erklaere danach in Worten, warum die Marktleistung steigen kann, waehrend die Wohlfahrt durch zerstoerte Parks und erschoepfte Helfer sinkt.
 
 HILFE:
-1. Schritt 1: Markiere Geldstrom und Gueterstrom mit Staat, Banken, Ausland.
-2. Schritt 2: Veraendere Staatsausgaben und lies Marktleistung ab.
-3. Schritt 3: Beziehe Umwelt und unbezahlte Arbeit ein, deute am Kriterium Wohlfahrt und formuliere den Klausur-Satz.
+- Richtung: Zuerst die einschlaegige Regel und die zu pruefenden Begriffe aus dem Werkzeugkoffer bestimmen, danach das Material diesen Begriffen zuordnen.
+- Richtung: Danach Mengen- bzw. Rollenreaktion auf beiden Seiten getrennt deuten und die Differenz als Ergebnisspannung mit Urteil-Ansatz festhalten.
+
+
+COMPLETION (Lueckentext):
+- Der erste Pruefschritt lautet ___; ihm wird das einschlaegige Merkmal aus dem Material zugeordnet.
+- Das Ergebnis lautet ___; die Spannung wird mit Regel plus Urteil-Ansatz begruendet.
 
 MUSTERLOESUNG: Geld fliesst im Uhrzeigersinn, Gueter entgegengesetzt; Staat ueber Steuern und Transfers, Banken ueber Sparen und Investieren, Ausland ueber Ausfuhr und Einfuhr. Die Marktleistung misst nur bezahlten Umsatz; unbezahlte Arbeit, Umweltschaeden und Verteilung bleiben aussen vor, daher folgt aus Umsatzplus kein Wohlfahrtsplus.
 
@@ -164,10 +168,22 @@ Klausur-Satz: `Das BIP misst Marktwerte eines Jahres, nicht Nachhaltigkeit oder 
 
 ROLLE: Du bist Schuelerin in der EF und schreibst einen Leserbrief an die Lokalzeitung.
 SITUATION: Die Stadt feiert ein gestiegenes regionales BIP nach einem Sturmjahr mit viel Wiederaufbau, waehrend Parks zerstoert und viele ehrenamtliche Helfer erschoepft sind. Beurteile die Lage in einer zusammenhaengenden Darstellung mit etwa 150 Woertern mit dem erweiterten Kreislauf, der BIP-Kritik in vier Punkten und NWI und HDI.
-AUFGABE (AFB III): Verfasse eine zusammenhaengende Darstellung von etwa 150 Woertern mit Kriterium, Anwendung und Urteil.
+AUFGABE (AFB III): Verfasse eine zusammenhaengende Darstellung von etwa 150 Woertern mit Kriterium, Anwendung und Urteil. [AFB III]:
 RUBRIC (30 XP): Kreislauf mit Sektorbezug korrekt (5 XP) | Drei Blickwinkel oder Verwendung aus Konsum plus Investition plus Staat plus Aussenbeitrag genannt (5 XP) | Vier Kritikpunkte vollstaendig (10 XP) | NWI und HDI plus begruendetes Urteil zu Wachstum gegen Wohlfahrt (10 XP)
 
+ERWARTUNGSHORIZONT:
+Teilleistung | Punkte | Alternativweg
+Sachanalyse mit Fachbegriff und Wirkungskette aus dem Material | 6 NP | Andere korrekte Begriffs- und Kettenbelege akzeptieren
+Folgen- und Zielkonfliktanalyse mit Verlierern bzw. Trade-offs | 4 NP | Andere plausible Konflikt- und Folgenbelege akzeptieren
+Kriteriengeleitetes Urteil mit Abwaegung und Handlungsempfehlung | 5 NP | Alternative Urteile mit gleicher Abwaegungslogik akzeptieren
+
 Klausur-Satz: `Die Kreislaufklausur rechnet erst die Verwendung sauber und begrenzt dann das Ergebnis mit drei blinden Flecken.`
+
+KERNSATZ (auswendig):
+`Das BIP misst Marktwerte eines Jahres, nicht Nachhaltigkeit oder Gerechtigkeit.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Das BIP misst Marktwerte eines Jahres | nicht Nachhaltigkeit | oder Gerechtigkeit.
+- Selbsttest: Das BIP ___ Marktwerte eines Jahres, nicht Nachhaltigkeit oder Gerechtigkeit.
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Was der Krisenstab lernt
 
 TAKEAWAY (Kernbotschaft in einem Kasten):

@@ -8,7 +8,7 @@ operatoren: [darstellen, analysieren, beurteilen]
 klausurrelevant: true
 datum: 2026-09-25
 tags: [EF, SoWi, Politik]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Gesetzgebungsverfahren und Demokratie (L1, Ziel Klausur)
@@ -26,7 +26,7 @@ HOOK 市长危机（先读剧情，再进 ZIELE）：【本集战役 EP06｜Akt 
 
 ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
-1. 中文：能按顺序说出法律草案的三读流程（1. Lesung → Ausschüsse → 2. Lesung → 3. Lesung），以及之后 Bundesrat、Vermittlungsausschuss、Bundespräsident 各站的作用。
+1. 中文：能按顺序说出法律草案的三读流程（1. Lesung -> Ausschüsse -> 2. Lesung -> 3. Lesung），以及之后 Bundesrat、Vermittlungsausschuss、Bundespräsident 各站的作用。
 2. 中文：能区分 Zustimmungsgesetz 与 Einspruchsgesetz，并说清为什么后者可以被 Bundestag 推翻、前者不能。
 3. 中文：能用民主理论三坐标（liberal / republikanisch / prozedural）评价立法程序中"参与"与"代表"的取舍，按 AFB III 给出一个 beurteilen。
 
@@ -34,7 +34,7 @@ Klausur-Satz: `Der Gang der Gesetzgebung fuehrt vom Bundestag ueber den Bundesra
 
 ## Schritt 2 — entdecken: Werkzeugkoffer von Vermieter Carlo Brenner: 5 Begriffe scharf stellen
 
-PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
+PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文->德语，Evidenz：pretraining降认知负荷）：
 
 中文在上，德语在下：
 
@@ -92,7 +92,7 @@ ENTDECKEN（1概念 + 1文字图解）：
 ```
 Kausalkette: Entwurf in den Bundestag, Feinschliff in Ausschuessen und drei Lesungen, Bundesrat prueft die Zustimmungsfrage, Vermittlungsausschuss baut Pakete, Ausfertigung und Nachkontrolle. Der Foederalismus-Konflikt zwischen Einheit und Laendervielfalt wird in Verfahren zerlegt statt in einer Abstimmung entschieden.
 
-因果链：草案进议院→委员会细磨三读→参议院看 Consent 性质（需同意则能卡）→调解委员会打包妥协→总统签字→法院还能事后审查。联邦制下统一与州权的矛盾，被程序分流消化，而不是一次投票解决。
+因果链：草案进议院->委员会细磨三读->参议院看 Consent 性质（需同意则能卡）->调解委员会打包妥协->总统签字->法院还能事后审查。联邦制下统一与州权的矛盾，被程序分流消化，而不是一次投票解决。
 
 
 Klausur-Satz: `Beim Zustimmungsgesetz ist die Zustimmung des Bundesrates zwingend, waehrend der Einspruch gegen ein Einspruchsgesetz vom Bundestag ueberstimmt werden kann.`
@@ -116,9 +116,13 @@ TARGET: Bringt auf dem Verhandlungsbrett beide Waagschalen in die Balance — Be
 AUFGABE (darstellen, AFB I/II, 10 BE)：M1 ist ein Zeitstrahl zu einem fiktiven Gesetz, das die Laender bei der Unterbringung von Gefluechteten finanziell entlasten soll. Der Entwurf wird im Bundestag in erster Lesung beraten, im Innenausschuss geaendert und in dritter Lesung beschlossen; der Bundesrat stimmt zu, der Bundespräsident fertigt aus. Stellen Sie den Gang der Gesetzgebung an diesem Beispiel dar und begruenden Sie, warum hier eine zwingende Zustimmung des Bundesrates noetig war.
 
 HILFE:
-1. Schritt 1: Reihenfolge festhalten — 1. Lesung, Ausschuss, 2. Lesung, 3. Lesung, Bundesrat, Ausfertigung.
-2. Schritt 2: Gesetzestyp bestimmen — Kosten fuer die Laender betreffen deren Haushalt → Zustimmungsgesetz.
-3. Schritt 3: Konsequenz nennen — fehlende Zustimmung = endgueltiges Scheitern, kein Ueberstimmen moeglich.
+- Richtung: Zuerst die einschlaegige Regel und die zu pruefenden Begriffe aus dem Werkzeugkoffer bestimmen, danach das Material diesen Begriffen zuordnen.
+- Richtung: Danach Mengen- bzw. Rollenreaktion auf beiden Seiten getrennt deuten und die Differenz als Ergebnisspannung mit Urteil-Ansatz festhalten.
+
+
+COMPLETION (Lueckentext):
+- Der erste Pruefschritt lautet ___; ihm wird das einschlaegige Merkmal aus dem Material zugeordnet.
+- Das Ergebnis lautet ___; die Spannung wird mit Regel plus Urteil-Ansatz begruendet.
 
 MUSTERLÖSUNG: Der Weg des Gesetzes beginnt mit der Einbringung und der ersten Lesung im Bundestag, in der nur grundsaetzlich debattiert und an den zustaendigen Innenausschuss ueberwiesen wird. Im Ausschuss wird der Entwurf fachlich geprueft und geaendert; die Beschlussempfehlung geht zurueck ins Plenum. In der zweiten Lesung werden die Aenderungen beraten, in der dritten Lesung erfolgt die Schlussabstimmung. Danach befasst sich der Bundesrat mit dem Gesetz. Da die Vorlage die Laender finanziell belastet bzw. entlastet, greift sie in deren Haushalts- und Verwaltungszustaendigkeit ein; deshalb handelt es sich um ein Zustimmungsgesetz. Ohne die Zustimmung des Bundesrates waere das Gesetz gescheitert, denn der Bundestag kann diese Zustimmung — anders als einen Einspruch bei einem Einspruchsgesetz — nicht ueberstimmen. Erst nach der Ausfertigung durch den Bundespraesidenten und der Verkuendung im Bundesgesetzblatt tritt das Gesetz in Kraft.
 
@@ -138,7 +142,7 @@ AUFGABE A：M1 beschreibt den Weg eines Gesetzes von der Einbringung bis zur Ver
 
 AUFGABE B：M2 behauptet, das Gesetzgebungsverfahren sei zu langsam und entmachte die Buerger, weil nur Fraktionen und Ausschuesse entscheiden. Welches Verfahren ist zu waehlen?
 
-HILFE: A fragt nach der Route und den Stationen → Verfahren (i). B fragt nach einer Bewertung von Tempo und Buergerbeteiligung → Verfahren (ii).【选程序：问"怎么走" → 程序路线；问"好不好/民主不民主" → 理论坐标。】
+HILFE: A fragt nach der Route und den Stationen -> Verfahren (i). B fragt nach einer Bewertung von Tempo und Buergerbeteiligung -> Verfahren (ii).【选程序：问"怎么走" -> 程序路线；问"好不好/民主不民主" -> 理论坐标。】
 
 ANTWORT: A erfordert Verfahren (i): Zu beschreiben ist die Stationenfolge — 1. Lesung, Ausschuss, 2. Lesung, 3. Lesung, dann Bundesrat mit der Unterscheidung von Zustimmungs- und Einspruchsgesetz, ggf. Vermittlungsausschuss und schliesslich die Ausfertigung durch den Bundespraesidenten. Der Bundesrat greift also nach der Schlussabstimmung ein. B erfordert Verfahren (ii): Die Behauptung muss mit einer demokratietheoretischen Koordinate geprueft werden. Aus republikanischer Sicht waere eine schmale Beteiligung tatsaechlich ein Problem, weil sie die Selbstregierung der Buerger schwaercht. Aus prozeduraler Sicht (Dahl) entscheidend ist dagegen, ob freie Wahlen, Wettbewerb und Beteiligungsrechte gewahrt bleiben — die Arbeit von Fraktionen und Ausschuessen ist Teil dieser Verfahren, kein Widerspruch zur Demokratie.
 
@@ -170,9 +174,24 @@ Klausur-Satz: `Das freie Mandat nach Art. 38 GG stellt die Abgeordneten ueber Au
 
 ROLLE: Du bist Mitglied einer Enquete-Kommission bzw. Sachverstaendige/r, die/der dem Landtag die Bundesgesetzgebung am Beispiel eines Entwurfs erklaeren soll.
 SITUATION: Ein Entwurf zur Entlastung der Kommunen wird im Bundestag beschlossen, im Bundesrat aber von einer Laendermehrheit abgelehnt; es kommt zum Vermittlungsausschuss. Ein Teil der Presse nennt den Bundesrat ein „Blockadeinstrument", ein anderer verteidigt ihn als „Stimme der Laender". Beurteilen Sie in einer zusammenhängenden Stellungnahme (ca. 150 Wörter), ob die Rolle des Bundesrates demokratisch zu rechtfertigen ist, und waehlen Sie dafuer eine demokratietheoretische Koordinate.
+AUFGABE (beurteilen) [AFB III]:
+Beurteilen Sie den Fall in einer zusammenhaengenden Stellungnahme (ca. 150 Woerter) mit Fachbegriff, Wirkungskette und kriteriengeleitetem Urteil.
+
 RUBRIC (30 XP): Darstellung des Verfahrenswegs bis zum Vermittlungsausschuss (6 XP) | Analyse der Blockade-Logik — Foederalismus, Zustimmungsbeduerftigkeit, Politikverflechtung (8 XP) | Anwendung einer demokratietheoretischen Koordinate (liberal / republikanisch / prozedural) als Kriterium (10 XP) | Kriteriengeleitetes Urteil mit Abwaegung von Funktionsfaehigkeit und Repraesentation (6 XP).
 
+ERWARTUNGSHORIZONT:
+Teilleistung | Punkte | Alternativweg
+Sachanalyse mit Fachbegriff und Wirkungskette aus dem Material | 6 NP | Andere korrekte Begriffs- und Kettenbelege akzeptieren
+Folgen- und Zielkonfliktanalyse mit Verlierern bzw. Trade-offs | 4 NP | Andere plausible Konflikt- und Folgenbelege akzeptieren
+Kriteriengeleitetes Urteil mit Abwaegung und Handlungsempfehlung | 5 NP | Alternative Urteile mit gleicher Abwaegungslogik akzeptieren
+
 Klausur-Satz: `In der Klausur entscheidet zuerst die Einordnung als Zustimmungs- oder Einspruchsgesetz, dann erst die Wuerdigung des Kompromisses.`
+
+KERNSATZ (auswendig):
+`In der Klausur entscheidet zuerst die Einordnung als Zustimmungs- oder Einspruchsgesetz, dann erst die Wuerdigung des Kompromisses.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- In der Klausur entscheidet zuerst die Einordnung als Zustimmungs- oder Einspruchsgesetz | dann erst die | Wuerdigung des Kompromisses.
+- Selbsttest: In der ___ entscheidet zuerst die Einordnung als Zustimmungs- oder Einspruchsgesetz, dann erst die Wuerdigung des Kompromisses.
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Was der Krisenstab lernt
 
 TAKEAWAY 1盒（核心总结）：

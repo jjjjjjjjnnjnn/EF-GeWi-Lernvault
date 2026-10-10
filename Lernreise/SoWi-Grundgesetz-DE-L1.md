@@ -8,7 +8,7 @@ operatoren: [darstellen, beschreiben, erläutern]
 klausurrelevant: true
 datum: 2026-09-26
 tags: [EF, SoWi, Politik]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Grundgesetz und Verfassungsprinzipien (L1, Ziel Klausur)
@@ -115,9 +115,13 @@ Lege im Tool Pro- und Contra-Argumente auf die Waage und gewichte jedes Argument
 AUFGABE Waage-Raetsel (AFB II): Lege Versammlung gegen Verkehr auf [Werkzeug: balance-board]. Gewichte Verbot, Verlegung und Auflage je 1 bis 5 und finde die mildeste Loesung, die beide Rechte schuetzt.
 
 HILFE:
-1. Schritt 1: Benenne beide Grundrechte mit Artikel.
-2. Schritt 2: Pruefe Geeignetheit, Erforderlichkeit und Angemessenheit.
-3. Schritt 3: Optimiere Zeit, Ort und Mittel und formuliere den Klausur-Satz.
+- Richtung: Zuerst die einschlaegige Regel und die zu pruefenden Begriffe aus dem Werkzeugkoffer bestimmen, danach das Material diesen Begriffen zuordnen.
+- Richtung: Danach Mengen- bzw. Rollenreaktion auf beiden Seiten getrennt deuten und die Differenz als Ergebnisspannung mit Urteil-Ansatz festhalten.
+
+
+COMPLETION (Lueckentext):
+- Der erste Pruefschritt lautet ___; ihm wird das einschlaegige Merkmal aus dem Material zugeordnet.
+- Das Ergebnis lautet ___; die Spannung wird mit Regel plus Urteil-Ansatz begruendet.
 
 MUSTERLOESUNG: Ein pauschales Verbot scheitert an der Erforderlichkeit; eine Verlegung mit Auflagen zu Zeit und Route ist milder und erhaelt beide Positionen. Konkordanz heisst hier: erlauben plus verlegen. Die Versammlung fliesst, der Verkehr stockt nur kurz.
 
@@ -161,10 +165,22 @@ Klausur-Satz: `Die Ewigkeitsklausel entzieht Art. 1 und Art. 20 GG jeder Verfass
 
 ROLLE: Du bist Anwaeltin bzw. Anwalt und formulierst eine kurze Verfassungsbeschwerde.
 SITUATION: Eine Gemeinde will einer Gruppe ein oeffentliches Platzverbot erteilen, weil deren politische Versammlung den Verkehr stoert. Die Betroffenen berufen sich auf ihre Versammlungs- und Meinungsfreiheit, die Gemeinde auf das Interesse der Allgemeinheit an ungestörtem Verkehr. Beurteile in einer zusammenhängenden Stellungnahme (ca. 150 Wörter), wie nach dem Grundgesetz zwischen den Positionen zu vermitteln ist.
-AUFGABE (AFB III): Verfasse eine zusammenhaengende Darstellung von etwa 150 Woertern mit Kriterium, Anwendung und Urteil.
+AUFGABE (AFB III): Verfasse eine zusammenhaengende Darstellung von etwa 150 Woertern mit Kriterium, Anwendung und Urteil. [AFB III]:
 RUBRIC (30 XP): These mit Kriterium Minderheitenschutz und Wesensgehalt (5 XP) | Darstellung beider Grundrechtspositionen mit Artikelbezug (10 XP) | Anwendung der Verhaeltnismaessigkeit mit Zeit, Ort und Mittel (10 XP) | Fazit mit Fachbegriffen und Klausur-Satz (5 XP).
 
+ERWARTUNGSHORIZONT:
+Teilleistung | Punkte | Alternativweg
+Sachanalyse mit Fachbegriff und Wirkungskette aus dem Material | 6 NP | Andere korrekte Begriffs- und Kettenbelege akzeptieren
+Folgen- und Zielkonfliktanalyse mit Verlierern bzw. Trade-offs | 4 NP | Andere plausible Konflikt- und Folgenbelege akzeptieren
+Kriteriengeleitetes Urteil mit Abwaegung und Handlungsempfehlung | 5 NP | Alternative Urteile mit gleicher Abwaegungslogik akzeptieren
+
 Klausur-Satz: `Die verfassungsrechtliche Stellungnahme erkennt zuerst die Kollisionslage mit Artikelnummern und loest sie dann ueber schonenden Ausgleich statt Entweder-oder.`
+
+KERNSATZ (auswendig):
+`Art. 20 GG nennt vier Verfassungsprinzipien: Demokratie, Rechtsstaat, Sozialstaat und Bundesstaat.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Art. 20 GG nennt vier Verfassungsprinzipien: Demokratie | Rechtsstaat | Sozialstaat und Bundesstaat.
+- Selbsttest: Art. 20 GG ___ vier Verfassungsprinzipien: Demokratie, Rechtsstaat, Sozialstaat und Bundesstaat.
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Was der Krisenstab lernt
 
 TAKEAWAY (Kernbotschaft in einem Kasten):

@@ -8,7 +8,7 @@ operatoren: [darstellen, analysieren, erläutern]
 klausurrelevant: true
 datum: 2026-09-25
 tags: [EF, SoWi, Soziologie]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Sozialisation und Rolle (L1, Ziel Klausur)
@@ -34,7 +34,7 @@ Klausur-Satz: `Sozialisation bezeichnet den lebenslangen Prozess, in dem das Ind
 
 ## Schritt 2 — entdecken: Werkzeugkoffer von Zechen-Urgestein Willi Poth: 5 Begriffe scharf stellen
 
-PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
+PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文->德语，Evidenz：pretraining降认知负荷）：
 
 中文在上，德语在下：
 
@@ -86,7 +86,7 @@ ENTDECKEN（1概念 + 1文字图解）：
 ```
 Kausalkette: Erwartungsinput aus Familie, Schule und Peers, Verinnerlichung im Me, Antwort des I zwischen Anpassung und Eigensinn, Feedback ueber Sanktionen, Verfestigung oder Neuverhandlung. Konflikte sind Treibstoff, kein Defekt: Prioritaeten, Deals und Buehnenwechsel vollenden Sozialisation.
 
-因果链：期待输入（家庭学校同龄）→内化成客我→主我回应（顺从/创新/反叛）→奖惩反馈→角色定型或重谈。冲突是燃料不是故障：排优先级、谈条件、换舞台，社会化在解决冲突中完成。
+因果链：期待输入（家庭学校同龄）->内化成客我->主我回应（顺从/创新/反叛）->奖惩反馈->角色定型或重谈。冲突是燃料不是故障：排优先级、谈条件、换舞台，社会化在解决冲突中完成。
 
 
 Klausur-Satz: `Rollen machen das Verhalten berechenbar, doch erst die Rollendistanz sichert dem Einzelnen Freiheit innerhalb der Rolle.`
@@ -119,10 +119,13 @@ TARGET: Bringt auf dem Verhandlungsbrett beide Waagschalen in die Balance — Be
 AUFGABE (analysieren, AFB II, 10 BE)：Material 1 (Sachtext) beschreibt eine Schülerin, die nachmittags im Supermarkt an der Kasse arbeitet und deshalb ihre Hausaufgaben nicht schafft; zusätzlich fühlt sie sich von der Chefin unter Druck gesetzt, obwohl sie sich als hilfsbereite Person versteht. Analysieren Sie, welche Rollenkonflikte hier vorliegen, und erläutern Sie einen Ausweg.
 
 HILFE:
-1. Schritt 1: Rollen benennen — Schülerin und Aushilfe (Nebenjob).
-2. Schritt 2: Konflikttyp bestimmen — zeitgleiche Erwartungen zweier Positionen = Inter-Rollenkonflikt.
-3. Schritt 3: Zweite Ebene prüfen — der Widerspruch zwischen eigenem Selbstbild und Rollenerwartung = Person-Rolle-Konflikt.
-4. Schritt 4: Ausweg mit Rollendistanz benennen.
+- Richtung: Zuerst die einschlaegige Regel und die zu pruefenden Begriffe aus dem Werkzeugkoffer bestimmen, danach das Material diesen Begriffen zuordnen.
+- Richtung: Danach Mengen- bzw. Rollenreaktion auf beiden Seiten getrennt deuten und die Differenz als Ergebnisspannung mit Urteil-Ansatz festhalten.
+
+
+COMPLETION (Lueckentext):
+- Der erste Pruefschritt lautet ___; ihm wird das einschlaegige Merkmal aus dem Material zugeordnet.
+- Das Ergebnis lautet ___; die Spannung wird mit Regel plus Urteil-Ansatz begruendet.
 
 MUSTERLÖSUNG: Zunächst liegt ein Inter-Rollenkonflikt vor: Die Erwartungen der Position „Schülerin" (Hausaufgaben, Unterrichtsvorbereitung) und der Position „Aushilfe" (Arbeitsbereitschaft an der Kasse) sollen zeitgleich erfüllt werden, was zeitlich nicht möglich ist. Zugleich deutet sich ein Person-Rolle-Konflikt an, weil die Schülerin sich als hilfsbereite Person versteht, die Rollenerwartung der Chefin aber Druck und Unterordnung verlangt — hier gerät die Rolle in Widerspruch zum eigenen Gewissen. Als Ausweg bietet sich Rollendistanz an: Die Schülerin kann die Rolle als Aushilfe bewusst „auf Zeit" übernehmen, Grenzen aushandeln und ihre persönliche Identität von der Rolle unterscheiden, statt sich mit ihr gleichzusetzen.
 
@@ -142,7 +145,7 @@ AUFGABE A (AFB II, 8 BE)：Material 2 (Sachtext) berichtet, dass ein Kind durch 
 
 AUFGABE B (AFB II, 8 BE)：Eine Karikatur zeigt eine Lehrerin, die von ihren Schülerinnen und Schülern gleichzeitig Strenge und Verständnis erwartet und daran scheitert. Ordnen Sie den Konflikt ein und nennen Sie eine Lösungsstrategie.
 
-HILFE: A fragt nach dem Erwerb von Normen und dem Lernweg (Verstärkung, primäre Phase) → Verfahren (i). B fragt nach widersprüchlichen Erwartungen innerhalb einer einzigen Rolle → Verfahren (ii).【选程序：材料问"怎么学会的"= 社会化程序；材料问"期待打架/怎么处理"= 角色程序。】
+HILFE: A fragt nach dem Erwerb von Normen und dem Lernweg (Verstärkung, primäre Phase) -> Verfahren (i). B fragt nach widersprüchlichen Erwartungen innerhalb einer einzigen Rolle -> Verfahren (ii).【选程序：材料问"怎么学会的"= 社会化程序；材料问"期待打架/怎么处理"= 角色程序。】
 
 ANTWORT: A erfordert Verfahren (i): Das Lob der Eltern wirkt als positive Sanktion bzw. Verstärkung; das Kind verinnerlicht die Norm der Rücksichtnahme, und da dies in der Familie geschieht, gehört der Vorgang zur primären Sozialisation. B erfordert Verfahren (ii): Hier liegt ein Intra-Rollenkonflikt vor, weil sich die beiden Erwartungen „Strenge" und „Verständnis" auf dieselbe Rolle (Lehrkraft) beziehen und nicht gleichzeitig erfüllbar sind; als Ausweg kann die Lehrkraft durch Rollendistanz eine klare, aber nachvollziehbare Haltung aushandeln und die Erwartungen transparent machen.
 
@@ -176,9 +179,24 @@ ROLLE: Du bist Klassensprecherin bzw. Klassensprecher und moderierst eine Sitzun
 
 SITUATION: In deiner Klasse sollen neue Regeln für die Handynutzung beschlossen werden. Ein Teil der Klasse fordert ein striktes Verbot, ein anderer Teil will völlige Freiheit. Zwei Mitschülerinnen geraten in Streit, weil eine sich an die neue Regel halten will, die andere aber findet, die Regel widerspreche ihrem Gerechtigkeitsgefühl. Erkläre in einer zusammenhängenden Stellungnahme (ca. 150 Wörter), wie Regeln über Rollen und Sanktionen wirken und wie Rollendistanz helfen kann, den Streit zu entschärfen.
 
+AUFGABE (analysieren) [AFB II]:
+Analysieren Sie den Fall in einer zusammenhaengenden Stellungnahme (ca. 150 Woerter) mit Fachbegriff, Wirkungskette und kriteriengeleitetem Urteil.
+
 RUBRIC (30 XP): Benennung der Rolle und der zugehörigen Erwartungen (5 XP) | Erklärung der Wirkung von Normen und positiven wie negativen Sanktionen (10 XP) | Übertragung des Konfliktbegriffs (Intra-/Inter-/Person-Rolle) auf den Fall (10 XP) | Kriteriengeleitetes Urteil mit Lösungsvorschlag über Rollendistanz (5 XP).
 
+ERWARTUNGSHORIZONT:
+Teilleistung | Punkte | Alternativweg
+Sachanalyse mit Fachbegriff und Wirkungskette aus dem Material | 6 NP | Andere korrekte Begriffs- und Kettenbelege akzeptieren
+Folgen- und Zielkonfliktanalyse mit Verlierern bzw. Trade-offs | 4 NP | Andere plausible Konflikt- und Folgenbelege akzeptieren
+Kriteriengeleitetes Urteil mit Abwaegung und Handlungsempfehlung | 5 NP | Alternative Urteile mit gleicher Abwaegungslogik akzeptieren
+
 Klausur-Satz: `Die Rollenanalyse benennt erst Position, Erwartungsrang und Konflikttyp und loest dann ueber Prioritaet oder Kompromiss.`
+
+KERNSATZ (auswendig):
+`Ein Inter-Rollenkonflikt entsteht, wenn die Erwartungen zweier Positionen zeitgleich erfüllt werden sollen.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Ein Inter-Rollenkonflikt entsteht | wenn die Erwartungen zweier | Positionen zeitgleich erfüllt werden sollen.
+- Selbsttest: Ein Inter-Rollenkonflikt ___ wenn die Erwartungen zweier Positionen zeitgleich erfüllt werden sollen.
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Was der Krisenstab lernt
 
 TAKEAWAY 1盒（核心总结）：

@@ -8,7 +8,7 @@ operatoren: [darstellen, analysieren, beurteilen]
 klausurrelevant: true
 datum: 2026-10-03
 tags: [EF, SoWi, Wirtschaftspolitik, Konjunktur]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Konjunkturzyklus und Wirtschaftswachstum (L1, Ziel Klausur)
@@ -31,7 +31,7 @@ Hook / Phaenomen: Im Jahr 2021 explodierten die Auftragsbuecher der deutschen In
 `Klausur-Satz: Der Konjunkturzyklus beschreibt die wellenfoermigen Schwankungen der gesamtwirtschaftlichen Aktivitaet (gemessen am realen BIP) um den langfristigen Wachstumstrend.`
 
 ## Schritt 2 — entdecken: Ausruestungskiste der Volkswirtschaft
-PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
+PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文->德语，Evidenz：pretraining降认知负荷）：
 
 中文在上，德语在下：
 
@@ -91,9 +91,13 @@ BEISPIEL（正确例题示范，含教具操作与解答）：
 AUFGABE (analysieren & beurteilen, AFB II/III)：Die Wirtschaft befindet sich in einem steilen Abschwung: Das ifo Geschaeftsklima faellt den sechsten Monat in Folge, die Arbeitslosenquote steigt auf 7,8% und das reale BIP sinkt um 0,5%. Der Wirtschaftsminister plant ein kreditfinanziertes Konjunkturpaket ueber 40 Milliarden Euro. Beurteilen Sie diesen Vorschlag anhand des Magischen Vierecks.
 
 HILFE:
-1. Schritt 1: Diagnose der Phase: Fruehindikator (ifo) und Spätindikator (Arbeitslosigkeit) bestaetigen eine Rezession.
-2. Schritt 2: Wirkungskette des Pakets: Staatsausgaben G erhoehen Gesamtnachfrage $Y = C + I + G + (X - M)$; Multiplikatoreffekt kurbelt Produktion und Beschaeftigung an.
-3. Schritt 3: Zielkonflikte im Magischen Viereck: Hohe Neuverschuldung, Inflationsgefahr bei Fehldosierung und Zeiteffekte (Time-Lags).
+- Richtung: Zuerst die einschlaegige Regel und die zu pruefenden Begriffe aus dem Werkzeugkoffer bestimmen, danach das Material diesen Begriffen zuordnen.
+- Richtung: Danach Mengen- bzw. Rollenreaktion auf beiden Seiten getrennt deuten und die Differenz als Ergebnisspannung mit Urteil-Ansatz festhalten.
+
+
+COMPLETION (Lueckentext):
+- Der erste Pruefschritt lautet ___; ihm wird das einschlaegige Merkmal aus dem Material zugeordnet.
+- Das Ergebnis lautet ___; die Spannung wird mit Regel plus Urteil-Ansatz begruendet.
 
 MUSTERLÖSUNG: Der Vorschlag des Wirtschaftsministers ist konjunkturtheoretisch nach dem Konzept der antizyklischen Fiskalpolitik (Keynesianismus) fundiert. In der diagnostizierten Rezession herrscht eine gesamtwirtschaftliche Nachfrageluecke. Durch das kreditfinanzierte Massnahmenpaket (Deficit Spending) tritt der Staat als Ersatznachfrager auf, wodurch Bauprojekte, energetische Sanierungen und Konsumanreize unmittelbar investiert werden. Ueber den Beschaeftigungsmultiplikator sinkt die Arbeitslosenquote (Ziel groesstmoeglicher Beschaeftigungsstand gemaess StabG § 1), und das Wirtschaftswachstum stabilisiert sich im positiven Bereich.
 Gleichzeitig muessen jedoch kritische Zielkonflikte und Risiken bedacht werden: Erstens erzeugt die Kreditaufnahme hohe Schulden, die in kommenden Aufschwungphasen wieder abgebaut werden muessten (was in der politischen Praxis haeufig unterbleibt, Schuldenbremse Art. 109 GG). Zweitens besteht das Risiko von Time-Lags: Wenn parlamentarische Beratungen und Genehmigungsverfahren zu lange dauern, fliessen die 40 Milliarden Moeglicherweise erst dann in den Markt, wenn sich die Wirtschaft bereits von selbst wieder im Aufschwung befindet — was zu einer prozyklischen Ueberhitzung und Preissteigerungen fuehrt (Zielkonflikt mit Preisniveaustabilitaet). Ein zielgenaues, schnell wirksames Paket ist daher zu befuervorten, bedarf jedoch klarer Befristung.
@@ -124,14 +128,21 @@ Tabelle zur Konjunkturentwicklung der Bundesrepublik Deutschland (Auszug Jahresw
 - Jahr 2: Reales BIP-Wachstum +0,4%, Inflationsrate 4,9%, Arbeitslosenquote 5,6%, ifo-Geschaeftsklima 91 Pkt.
 - Jahr 3: Reales BIP-Wachstum -1,2%, Inflationsrate 6,1%, Arbeitslosenquote 7,4%, ifo-Geschaeftsklima 84 Pkt.
 
-AUFGABE (analysieren & beurteilen, AFB II/III):
+AUFGABE (analysieren) [AFB II/III]:
 1. Analysieren Sie die tabellarischen Daten im Hinblick auf den Konjunkturverlauf und identifizieren Sie die vorliegende Krisenform. (12 BE)
 2. Beurteilen Sie, warum die Europaeische Zentralbank (EZB) in dieser Situation in ein geldpolitisches Dilemma geraet. (18 BE)
 
 ERWARTUNGSHORIZONT:
-- AFB II: Von Jahr 1 (Boom/Auslastung) bricht das Wachstum ueber Jahr 2 dramatisch ein und muendet in Jahr 3 in eine schwere Rezession (-1,2%). Auffaellig ist die gleichzeitig rasant steigende Inflation (von 1,5% auf 6,1%). Es handelt sich um eine klassische **Stagflation** (Stagnation + Inflation), haeufig ausgeloest durch exogene Angebotsschocks (wie z.B. 1973/1979 Oelkrisen oder 2022 Energiekrise).
-- AFB III: Geldpolitisches Dilemma der EZB: Erhoeht die EZB die Leitzinsen zur Bekaempfung der hohen Inflation (6,1%), verteuert sie Kredite fuer Unternehmen und Buerger und wuergt damit die ohnehin schrumpfende Wirtschaft (-1,2%) noch tiefer in die Massenarbeitslosigkeit ab. Senkt sie hingegen die Zinsen zur Konjunkturbelebung, heizt sie die Geldentwertung und Inflation weiter an (Verletzung des primaeren Mandats der Preisstabilitaet Art. 127 AEUV).
+Teilleistung | Punkte | Alternativweg
+Sachanalyse mit Fachbegriff und Wirkungskette aus dem Material | 6 NP | Andere korrekte Begriffs- und Kettenbelege akzeptieren
+Folgen- und Zielkonfliktanalyse mit Verlierern bzw. Trade-offs | 4 NP | Andere plausible Konflikt- und Folgenbelege akzeptieren
+Kriteriengeleitetes Urteil mit Abwaegung und Handlungsempfehlung | 5 NP | Alternative Urteile mit gleicher Abwaegungslogik akzeptieren
 
+KERNSATZ (auswendig):
+`Beurteilen`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Beurteilen |  | Beurteilen
+- Selbsttest: Beurteilen ___
 ## Schritt 7 — check: Format-Check & Scoring
 30 XP Schnelltest zur Verstaendigungssicherung:
 

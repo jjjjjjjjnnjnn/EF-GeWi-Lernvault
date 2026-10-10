@@ -8,7 +8,7 @@ operatoren: [darstellen, analysieren, erörtern]
 klausurrelevant: true
 datum: 2026-09-26
 tags: [EF, SoWi, Politik]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Verfassungsorgane (L1, Ziel Klausur)
@@ -111,9 +111,13 @@ Lege im Tool Pro- und Contra-Argumente auf die Waage und gewichte jedes Argument
 AUFGABE Waage-Raetsel (AFB II): Pruefe auf [Werkzeug: balance-board], ob ein Gesetz mit Laenderkosten zustimmungspflichtig ist. Lege Einspruch gegen Zustimmung, gewichte das Blockaderisiko und bestimme den Weg durch die Vermittlung.
 
 HILFE:
-1. Schritt 1: Pruefe die Beruehrung der Laenderhaushalte.
-2. Schritt 2: Ordne Zustimmung oder Einspruch zu.
-3. Schritt 3: Deute an Foederalismus und formulieren den Klausur-Satz.
+- Richtung: Zuerst die einschlaegige Regel und die zu pruefenden Begriffe aus dem Werkzeugkoffer bestimmen, danach das Material diesen Begriffen zuordnen.
+- Richtung: Danach Mengen- bzw. Rollenreaktion auf beiden Seiten getrennt deuten und die Differenz als Ergebnisspannung mit Urteil-Ansatz festhalten.
+
+
+COMPLETION (Lueckentext):
+- Der erste Pruefschritt lautet ___; ihm wird das einschlaegige Merkmal aus dem Material zugeordnet.
+- Das Ergebnis lautet ___; die Spannung wird mit Regel plus Urteil-Ansatz begruendet.
 
 MUSTERLOESUNG: Weil die Haushalte der Laender beruehrt sind, gilt Zustimmungspflicht: Ohne Zustimmung kein Inkrafttreten. Ein Einspruch waere ueberstimmbar; hier heilt nur die Vermittlung die Waage zwischen Volk und Laendern.
 
@@ -165,10 +169,22 @@ Klausur-Satz: `Die Bundesversammlung besteht zur Hälfte aus Bundestagsmitgliede
 
 ROLLE: Du bist Sachverstaendige bzw. Sachverstaendiger in einer Bundestagsanhoerung zur Parlamentsreform.
 SITUATION: Eine Reform soll den Bundestag dauerhaft verkleinern und die Zahl der Sitze deckeln; Kritiker warnen, dass dadurch gewaehlte Direktkandidaten ihren Sitz verlieren können, obwohl sie ihren Wahlkreis gewonnen haben. Beurteile in einer zusammenhängenden Stellungnahme (ca. 150 Wörter), ob die Reform zu befürworten ist, und nutze dabei Argumente zur Funktionsfähigkeit und zur Repräsentation.
-AUFGABE (AFB III): Verfasse eine zusammenhaengende Darstellung von etwa 150 Woertern mit Kriterium, Anwendung und Urteil.
+AUFGABE (AFB III): Verfasse eine zusammenhaengende Darstellung von etwa 150 Woertern mit Kriterium, Anwendung und Urteil. [AFB III]:
 RUBRIC (30 XP): These mit Kriterium Handlungsfaehigkeit und Repraesentation (5 XP) | Darstellung der Organe und ihres Zusammenwirkens (10 XP) | Anwendung auf Direktmandat und Deckelung mit Abwaegung (10 XP) | Fazit mit Fachbegriffen und Klausur-Satz (5 XP).
 
+ERWARTUNGSHORIZONT:
+Teilleistung | Punkte | Alternativweg
+Sachanalyse mit Fachbegriff und Wirkungskette aus dem Material | 6 NP | Andere korrekte Begriffs- und Kettenbelege akzeptieren
+Folgen- und Zielkonfliktanalyse mit Verlierern bzw. Trade-offs | 4 NP | Andere plausible Konflikt- und Folgenbelege akzeptieren
+Kriteriengeleitetes Urteil mit Abwaegung und Handlungsempfehlung | 5 NP | Alternative Urteile mit gleicher Abwaegungslogik akzeptieren
+
 Klausur-Satz: `Die Organklausur ordnet erst Zustaendigkeit und Verfahren und wuerdigt dann das Zusammenspiel an Handlungsfaehigkeit und Kontrolle.`
+
+KERNSATZ (auswendig):
+`Fuenf Organe teilen sich einen Schluesselbund: Beschluss, Bremse, Vollzug, Ausfertigung und Kontrolle - keines regiert allein.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Fuenf Organe teilen sich einen Schluesselbund: Beschluss | Bremse | Vollzug, Ausfertigung und Kontrolle - keines regiert allein.
+- Selbsttest: Fuenf Organe ___ sich einen Schluesselbund: Beschluss, Bremse, Vollzug, Ausfertigung und Kontrolle - keines regiert allein.
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Was der Krisenstab lernt
 
 TAKEAWAY (Kernbotschaft in einem Kasten):

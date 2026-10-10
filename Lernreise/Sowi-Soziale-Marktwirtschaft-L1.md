@@ -8,7 +8,7 @@ operatoren: [darstellen, analysieren, beurteilen]
 klausurrelevant: true
 datum: 2026-09-22
 tags: [EF, SoWi]
-version: Lesson-v3-pilot
+version: Enterprise-v5
 ---
 
 # Lernreise: Soziale Marktwirtschaft (L1 Pilot, Lesson v3, Ziel Klausur)
@@ -34,7 +34,7 @@ Klausur-Satz: `Die Soziale Marktwirtschaft legitimiert sich durch zwei Versprech
 
 ## Schritt 2 — entdecken: Werkzeugkoffer von Bundesratsbote Henrik Maas: 5 Begriffe scharf stellen
 
-PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
+PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文->德语，Evidenz：pretraining降认知负荷）：
 
 中文在上，德语在下：
 
@@ -76,7 +76,7 @@ ENTDECKEN（1概念 + 1文字图解，双支柱）：
 ```
 Kausalkette: Wettbewerb plus Preissignal schafft Effizienz, Konzentration und Risiken entstehen mit, Sozialsaeule faengt auf, Staat setzt Rahmen statt Preise, Ausnahmen bestehen nur mit Verhaeltnismaessigkeit. Ein Bein allein kippt: reiner Markt spaltet, reine Fuersorge erstickt.
 
-因果链：竞争+价格信号跑效率→赢家通吃风险出现→社会支柱（社保、再分配、劳资自治）接住掉队→国家只定框不定价→例外干预须过比例审查。两条腿缺一不可：纯市场分化，纯兜底窒息。
+因果链：竞争+价格信号跑效率->赢家通吃风险出现->社会支柱（社保、再分配、劳资自治）接住掉队->国家只定框不定价->例外干预须过比例审查。两条腿缺一不可：纯市场分化，纯兜底窒息。
 
 Lohnanker: Gleichgewichtslohn $w_G = 12$ Euro, Mindestlohn $w_{min} = 15 > w_G$ erzeugt Angebotsueberhang am Arbeitsmarkt; Schutz $s$ gegen Effizienz $e$ abwaegen.
 
@@ -95,12 +95,16 @@ Klausur-Satz: `Wettbewerb schafft Wohlstand, der Sozialstaat fängt die Schwäch
 
 BEISPIEL（正确例题示范，AB II analysieren，先遮住Musterlösung自己写3句，再对照）：
 
-AUFGABE (analysieren, 原文自写)：Analysieren Sie, wie eine Mindestlohnerhöhung von 12 auf 15 Euro den Preismechanismus einschränkt und zugleich den sozialen Ausgleich stärkt. Nennen Sie dabei die betroffene Rolle der Tarifautonomie.
+AUFGABE (analysieren) [AFB II]: Analysieren Sie, wie eine Mindestlohnerhöhung von 12 auf 15 Euro den Preismechanismus einschränkt und zugleich den sozialen Ausgleich stärkt. Nennen Sie dabei die betroffene Rolle der Tarifautonomie.
 
-HILFE（三步）：
-1. Wirkung 1 (Preis)：写 Mindestlohn 15 Euro 高于 Gleichgewicht 12 Euro， Angebot 高于 Nachfrage。
-2. Wirkung 2 (sozial)：写谁被保护（Armut trotz Arbeit）+ 用哪个词（sozialer Ausgleich）。
-3. Einordnung (Tarifautonomie)：写干预代价 + Urteil-Ansatz（Effizienz vs Gerechtigkeit）。
+HILFE:
+- Richtung: Zuerst die einschlaegige Regel und die zu pruefenden Begriffe aus dem Werkzeugkoffer bestimmen, danach das Material diesen Begriffen zuordnen.
+- Richtung: Danach Mengen- bzw. Rollenreaktion auf beiden Seiten getrennt deuten und die Differenz als Ergebnisspannung mit Urteil-Ansatz festhalten.
+
+
+COMPLETION (Lueckentext):
+- Der erste Pruefschritt lautet ___; ihm wird das einschlaegige Merkmal aus dem Material zugeordnet.
+- Das Ergebnis lautet ___; die Spannung wird mit Regel plus Urteil-Ansatz begruendet.
 
 MUSTERLÖSUNG (selbst geschrieben, 只转述不复制)：Der höhere Mindestlohn setzt ein Lohnminimum über dem Marktpreis und bremst so den Preismechanismus. Gleichzeitig sichert er Einkommen trotz Arbeit und stärkt den sozialen Ausgleich. Er greift damit in die Tarifautonomie ein: Schutz gegen Marktfreiheit.
 
@@ -126,7 +130,7 @@ AUFGABE B (Sozial-Brille)：Eine alleinerziehende Mutter arbeitet Vollzeit, blei
 
 HILFE: A只准用Preis/Menge/Anreiz词；B只准用Schutz/Bedarf/Ausgleich词。写前先写"Ich wähle Verfahren (i)/(ii), weil …"。
 
-ANTWORT: A = Verfahren (i); Punkte: knappes Angebot → höherer Preis → weniger Nachfrage + Anreiz für mehr Angebot. B = Verfahren (ii); Punkte: Marktlohn deckt Bedarf nicht → sozialer Ausgleich (Sozialversicherung/Umverteilung) legitimiert Eingriff; Tarifautonomie-Grenze nennen genügt.
+ANTWORT: A = Verfahren (i); Punkte: knappes Angebot -> höherer Preis -> weniger Nachfrage + Anreiz für mehr Angebot. B = Verfahren (ii); Punkte: Marktlohn deckt Bedarf nicht -> sozialer Ausgleich (Sozialversicherung/Umverteilung) legitimiert Eingriff; Tarifautonomie-Grenze nennen genügt.
 
 Klausur-Satz: `Der Preismechanismus gleicht Angebot und Nachfrage über den Preis aus.`
 
@@ -156,7 +160,8 @@ Klausur-Satz: `Ordoliberalismus will Regeln statt direkter Eingriffe: Ordnung se
 
 ## Schritt 7 — szenario: Klausurtransfer: Anhoerung und Parlamentsrede zu Soziale Marktwirtschaft
 
-(原szenario结构保留：ROLLE/SITUATION/RUBRIC；Gating：check未过此步置灰；完成后+30 XP)
+AUFGABE (beurteilen) [AFB III]:
+Beurteilen Sie den Fall in einer zusammenhaengenden Stellungnahme (ca. 150 Woerter) mit Fachbegriff, Wirkungskette und kriteriengeleitetem Urteil.
 
 ROLLE: Du bist Abgeordnete/r im Bundestag, Ausschuss für Arbeit und Soziales.
 
@@ -164,7 +169,19 @@ SITUATION: Debatte: Soll der Mindestlohn auf 15 Euro steigen? Halte ein 2-Minute
 
 RUBRIC: These in Satz 1 (darstellen) | zwei Fachbegriffe (z. B. Tarifautonomie, Kaufkraft, Wettbewerbsfähigkeit) | ein Beleg/Beispiel | Urteil mit Kriterium (beurteilen).
 
+ERWARTUNGSHORIZONT:
+Teilleistung | Punkte | Alternativweg
+Sachanalyse mit Fachbegriff und Wirkungskette aus dem Material | 6 NP | Andere korrekte Begriffs- und Kettenbelege akzeptieren
+Folgen- und Zielkonfliktanalyse mit Verlierern bzw. Trade-offs | 4 NP | Andere plausible Konflikt- und Folgenbelege akzeptieren
+Kriteriengeleitetes Urteil mit Abwaegung und Handlungsempfehlung | 5 NP | Alternative Urteile mit gleicher Abwaegungslogik akzeptieren
+
 Klausur-Satz: `Die Mindestlohnstellungnahme misst den Eingriff an Preislogik und Schutzziel und benennt mit der Tarifautonomie den institutionellen Preis des Schutzes.`
+
+KERNSATZ (auswendig):
+`Der Preismechanismus gleicht Angebot und Nachfrage über den Preis aus.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Der Preismechanismus gleicht | Angebot und Nachfrage | über den Preis aus.
+- Selbsttest: Der Preismechanismus ___ Angebot und Nachfrage über den Preis aus.
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Was der Krisenstab lernt
 
 TAKEAWAY 1盒（合书能背才算过）：

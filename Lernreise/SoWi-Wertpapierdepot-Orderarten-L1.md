@@ -8,7 +8,7 @@ operatoren: [darstellen, analysieren, beurteilen]
 klausurrelevant: true
 datum: 2026-09-28
 tags: [EF, SoWi, Geldanlage, Wirtschaftspolitik]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Wertpapierdepot und Orderarten (L1, Ziel Klausur)
@@ -33,7 +33,7 @@ Klausur-Satz: `Ein Wertpapierdepot verwahrt Aktien als Sondervermögen nach § 9
 
 ## Schritt 2 — entdecken: Werkzeugkoffer von Vermögensberaterin Dr. Elena Weber: 5 Begriffe scharf stellen
 
-PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
+PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文->德语，Evidenz：pretraining降认知负荷）：
 
 中文在上，德语在下：
 
@@ -84,9 +84,13 @@ a) Berechnen Sie den realen Kaufkraftverlust nach 5 Jahren Naeherungsweise (Fish
 b) Beurteilen Sie die Empfehlung, das gesamte Kapital sofort per unlimitierter Market-Order („Billigst“) in eine einzelne spekulative Aktie zu investieren.
 
 HILFE:
-1. Schritt 1: Realzins = 0,5 % - 3,0 % = -2,5 % pro Jahr. Nach 5 Jahren entspricht das ca. 1.100 € Kaufkraftverlust.
-2. Schritt 2: Tagesgeld bietet hohe Sicherheit (Einlagensicherung) und hohe Liquiditaet (taeglich verfuegbar), opfert aber die Rentabilitaet.
-3. Schritt 3: Bei einer Einzelaktie droht Klumpenrisiko (keine Diversifikation) und Slippage bei Market-Orders.
+- Richtung: Zuerst die einschlaegige Regel und die zu pruefenden Begriffe aus dem Werkzeugkoffer bestimmen, danach das Material diesen Begriffen zuordnen.
+- Richtung: Danach Mengen- bzw. Rollenreaktion auf beiden Seiten getrennt deuten und die Differenz als Ergebnisspannung mit Urteil-Ansatz festhalten.
+
+
+COMPLETION (Lueckentext):
+- Der erste Pruefschritt lautet ___; ihm wird das einschlaegige Merkmal aus dem Material zugeordnet.
+- Das Ergebnis lautet ___; die Spannung wird mit Regel plus Urteil-Ansatz begruendet.
 
 MUSTERLÖSUNG:
 a) Gemaess der Fisher-Gleichung betraegt der Realzins r ≈ i - π = 0,5 % - 3,0 % = -2,5 % p.a. Bei Zinseszinswirkung sinkt die reale Kaufkraft von 10.000 € nach 5 Jahren auf ca. 8.810 €, was einem realen Verlust von knapp 1.190 € entspricht. Im Magischen Dreieck punktet das Tagesgeld bei Sicherheit (gesetzliche Einlagensicherung bis 100.000 € nach § 4 EinSiG) und Liquiditaet (taeglich verfuegbar), versagt jedoch bei der Rentabilitaet (reale Negativrendite).
@@ -108,7 +112,7 @@ AUFGABE A：Ein Sparer benoetigt in 3 Monaten Geld fuer den Kauf eines Gebraucht
 
 AUFGABE B：Eine 17-jaehrige Auszubildende moechte fuer ihre Altersvorsorge in 40 Jahren monatlich 50 Euro sparen. Welches Verfahren ist zu waehlen?
 
-HILFE: A benoetigt kurzfristige Liquiditaet und absolute Kurssicherheit → Verfahren (i). B hat einen 40-jaehrigen Anlagehorizont und muss die Inflation schlagen → Verfahren (ii).
+HILFE: A benoetigt kurzfristige Liquiditaet und absolute Kurssicherheit -> Verfahren (i). B hat einen 40-jaehrigen Anlagehorizont und muss die Inflation schlagen -> Verfahren (ii).
 
 ANTWORT: Fuer A ist Verfahren (i) (Tagesgeld) optimal: Bei einem Horizont von 3 Monaten duerfen keine Kursrisiken eingegangen werden; die Inflation ist kurzfristig vernachlaessigbar. Fuer B ist Verfahren (ii) (Wertpapierdepot mit Sparplan auf Welt-ETF) zwingend: Ueber 40 Jahre wuerde die Inflation Sparguthaben zerstoeren; Kursschwankungen gleichen sich langfristig aus, und der Zinseszinseffekt entfaltet maximale Wirkung.
 
@@ -140,10 +144,24 @@ Klausur-Satz: `Das Sondervermögen schützt Wertpapiere gesetzlich vor Gläubige
 
 ROLLE: Du bist Wirtschaftsberater bei der Verbraucherzentrale NRW und verfasst eine schriftliche Stellungnahme fuer eine junge Familie.
 SITUATION: Die Familie hat 20.000 Euro geerbt. Die Hausbank raet, alles auf dem Girokonto zu belassen, da Aktien „reine Zockerei“ seien. Ein Neobroker-Werbespot raet, alles ueber eine Market-Order in Tech-Aktien zu stecken. Verfasse eine fundierte Empfehlung (ca. 150 Woerter), die die gesetzlichen Schutzmechanismen (Einlagensicherung vs. Sondervermoegen), das Realzinsrisiko und das Magische Dreieck differenziert abwaegt.
+AUFGABE (beurteilen) [AFB III]:
+Beurteilen Sie den Fall in einer zusammenhaengenden Stellungnahme (ca. 150 Woerter) mit Fachbegriff, Wirkungskette und kriteriengeleitetem Urteil.
+
 RUBRIC (30 XP): Analyse der Realzinsfalle auf dem Girokonto (5 XP) | Erklaerung von Einlagensicherung vs. Sondervermoegen (§ 92 KAGB) (10 XP) | Kritik an der unlimitierten Einzelaktien-Spekulation (Slippage, Klumpenrisiko) (5 XP) | Kriteriengeleitete Portfolio-Empfehlung (Notgroschen auf Tagesgeld + breit gestreuter Welt-ETF) im Magischen Dreieck (10 XP).
+
+ERWARTUNGSHORIZONT:
+Teilleistung | Punkte | Alternativweg
+Sachanalyse mit Fachbegriff und Wirkungskette aus dem Material | 6 NP | Andere korrekte Begriffs- und Kettenbelege akzeptieren
+Folgen- und Zielkonfliktanalyse mit Verlierern bzw. Trade-offs | 4 NP | Andere plausible Konflikt- und Folgenbelege akzeptieren
+Kriteriengeleitetes Urteil mit Abwaegung und Handlungsempfehlung | 5 NP | Alternative Urteile mit gleicher Abwaegungslogik akzeptieren
 
 Klausur-Satz: `Eine rationale Anlagestrategie teilt Vermögen in liquide Sicherheitsbausteine (Tagesgeld) und diversifizierte Sondervermögen (Welt-ETFs) auf, um das Magische Dreieck auszubalancieren.`
 
+KERNSATZ (auswendig):
+`Das Sondervermögen schützt Wertpapiere gesetzlich vor Gläubigerzugriffen bei Bankenpleiten.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Das Sondervermögen schützt | Wertpapiere gesetzlich vor | Gläubigerzugriffen bei Bankenpleiten.
+- Selbsttest: Das Sondervermögen ___ Wertpapiere gesetzlich vor Gläubigerzugriffen bei Bankenpleiten.
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Was der Krisenstab lernt
 
 TAKEAWAY 1盒（核心总结）：

@@ -8,7 +8,7 @@ operatoren: [darstellen, analysieren, beurteilen]
 klausurrelevant: true
 datum: 2026-09-26
 tags: [EF, SoWi, CN]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Tarifautonomie und Gewerkschaften im Arbeitskampf (L1, Ziel Klausur)
@@ -47,7 +47,7 @@ Klausur-Satz: `Tarifautonomie heisst: Loehne werden frei verhandelt, Arbeitskamp
 
 ## Schritt 2 — entdecken: Werkzeugkoffer von Hafenlogistikerin Ruth Adler: 5 Begriffe scharf stellen
 
-PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
+PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文->德语，Evidenz：pretraining降认知负荷）：
 
 中文在上，德语在下：
 
@@ -98,7 +98,7 @@ Urteil: rechtmaessig (Regeln) + sinnvoll (Kosten/Druck)
 ```
 Kausalkette: Organisationsgrad bestimmt Macht, Flaechentarif setzt Boeden, Kampfmittel bleiben Ultima Ratio, Staat greift nur ausnahmsweise ein, Erosion zwingt zur Wahl: Reorganisation oder Staatsersatz. Autonomie heisst nicht staatenlos, sondern Staat auf Abstand.
 
-因果链：组织率定议价力→行业协议定底线→罢工/闭厂当最后语言→国家只在例外（底薪）出手→覆盖率 erosion 倒逼：要么重振组织，要么国家补位。自治不是没国家，而是有距离的国家。
+因果链：组织率定议价力->行业协议定底线->罢工/闭厂当最后语言->国家只在例外（底薪）出手->覆盖率 erosion 倒逼：要么重振组织，要么国家补位。自治不是没国家，而是有距离的国家。
 
 Lohnanker: Boden $w_{min} = 12$ Euro gegenueber Gleichgewicht $w_G$; Deckungsquote $d$ als Erosionsmass sinkt Jahr fuer Jahr.
 
@@ -124,14 +124,14 @@ AUFGABE中文导读（判定谜题）：调解耗尽后工会为加薪发起警�
 
 AUFGABE (pruefen, AFB II/III): Nach erschoepfter Schlichtung streikt die Gewerkschaft fuer Lohn. Pruefen Sie Rechtmaessigkeit und Sinn.
 
-HILFE（中德双语步骤）：
+HILFE:
+- Richtung: Zuerst die einschlaegige Regel und die zu pruefenden Begriffe aus dem Werkzeugkoffer bestimmen, danach das Material diesen Begriffen zuordnen.
+- Richtung: Danach Mengen- bzw. Rollenreaktion auf beiden Seiten getrennt deuten und die Differenz als Ergebnisspannung mit Urteil-Ansatz festhalten.
 
-1. 中文：第1步验目标：为工资即关税目标通过，关键词：Ziel。
-   Schritt 1 (DE): Tarifziel bejahen.
-2. 中文：第2步验步骤：调解耗尽即最后手段通过，关键词：Stufen。
-   Schritt 2 (DE): ultima ratio nach Schlichtung bejahen.
-3. 中文：第3步评明智：算代价与压力效果，关键词：Kosten。
-   Schritt 3 (DE): Kosten gegen Druck abwaegen.
+
+COMPLETION (Lueckentext):
+- Der erste Pruefschritt lautet ___; ihm wird das einschlaegige Merkmal aus dem Material zugeordnet.
+- Das Ergebnis lautet ___; die Spannung wird mit Regel plus Urteil-Ansatz begruendet.
 
 MUSTERLOESUNG：中文：目标是工资、步骤走完调解，合法性两关全过；明智与否看罢工基金能撑多久、舆论与订单压力能否换来加价，合法不等于划算。
 
@@ -151,7 +151,7 @@ DUELL Weg A (freier Markt) gegen Weg B (Staat greift ein): Weg A setzt auf freie
 AUFGABE A：Ist der Streik rechtmaessig? Pruefen Sie.
 AUFGABE B：War der Streik sinnvoll? Beurteilen Sie seine Wirksamkeit.
 
-HILFE: A 问 rechtmaessig → Verfahren (i) 走四要件。B 问 sinnvoll → Verfahren (ii) 讲筹码与代价。【选程序：问合法查要件；问值否算得失。】
+HILFE: A 问 rechtmaessig -> Verfahren (i) 走四要件。B 问 sinnvoll -> Verfahren (ii) 讲筹码与代价。【选程序：问合法查要件；问值否算得失。】
 
 ANTWORT: A erfordert Verfahren (i): Nur die Viererpruefung (Traeger, Tarifziel, ultima ratio, Verhaeltnismaessigkeit) entscheidet; Ergebnis und Sympathie sind irrelevant. B erfordert Verfahren (ii): Hoher Organisationsgrad plus schwer ersetzbare Arbeit erhoeht Druck, lange Dauer und Fremdschaeden (Pendler, Kliniken) senken Legitimation; ein kurzer Warnstreik vor neuer Runde ist oft wirksamer als ein Erzwingungsstreik. Rechtmaessig heisst nicht automatisch sinnvoll — und umgekehrt.
 
@@ -181,9 +181,24 @@ Klausur-Satz: `Der Warnstreik signalisiert kurz und verhaeltnismaessig nach Schl
 ## Schritt 7 — szenario: Klausurtransfer: Anhoerung und Parlamentsrede zu Tarifautonomie und Gewerkschaften im Arbeitskampf
 ROLLE: Du bist Schuelervertreter in einer Podiumsdiskussion zum OePNV-Streik.
 SITUATION: Pendler klagen ueber Ausfaelle, die Gewerkschaft verweist auf gescheiterte Schlichtung. Nimm in einer zusammenhaengenden Stellungnahme (ca. 150 Woerter) dazu Stellung: War der Streik rechtmaessig und war er sinnvoll?
+AUFGABE (beurteilen) [AFB III]:
+Beurteilen Sie den Fall in einer zusammenhaengenden Stellungnahme (ca. 150 Woerter) mit Fachbegriff, Wirkungskette und kriteriengeleitetem Urteil.
+
 RUBRIC (30 XP): Rechtmaessigkeitspruefung in vier Punkten (12 XP) | Wirksamkeitsabwaegung mit Kosten (10 XP) | Eigenes kriteriengeleitetes Urteil (4 XP) | Adressatengerechte Stellungnahme (4 XP).
 
+ERWARTUNGSHORIZONT:
+Teilleistung | Punkte | Alternativweg
+Sachanalyse mit Fachbegriff und Wirkungskette aus dem Material | 6 NP | Andere korrekte Begriffs- und Kettenbelege akzeptieren
+Folgen- und Zielkonfliktanalyse mit Verlierern bzw. Trade-offs | 4 NP | Andere plausible Konflikt- und Folgenbelege akzeptieren
+Kriteriengeleitetes Urteil mit Abwaegung und Handlungsempfehlung | 5 NP | Alternative Urteile mit gleicher Abwaegungslogik akzeptieren
+
 Klausur-Satz: `Die Tarifklausur prueft erst Zustaendigkeit und Kampfmittelrangfolge und wuerdigt dann Erosion gegen Schutz am Massstab der Machtbalance.`
+
+KERNSATZ (auswendig):
+`Rechtmaessigkeit folgt den Kampfregeln, Sinnhaftigkeit den Kosten und dem Druck.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Rechtmaessigkeit folgt den Kampfregeln | Sinnhaftigkeit den Kosten | und dem Druck.
+- Selbsttest: Rechtmaessigkeit folgt ___ Kampfregeln, Sinnhaftigkeit den Kosten und dem Druck.
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Was der Krisenstab lernt
 
 TAKEAWAY 1盒（核心总结）：

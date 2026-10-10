@@ -29,7 +29,7 @@ Zwei vierzigjaehrige Buerger leben Tuer an Tuer im selben Mehrfamilienhaus in Ko
 `Klausur-Satz: Waehrend traditionelle Schichtmodelle soziale Ungleichheit primaer ueber vertikale Kriterien wie Einkommen und Berufsstatus definieren, erfassen die Sinus-Milieus die gesellschaftliche Wirklichkeit ganzheitlich durch die Verknuepfung von sozialer Lage mit alltagsweltlichen Grundorientierungen und Wertewelten.`
 
 ## Schritt 2 — entdecken: Das soziologische Fachvokabular
-PRETRAINING术语盒（核心4词，先读三遍中德，合书自测中文→德语）：
+PRETRAINING术语盒（核心4词，先读三遍中德，合书自测中文->德语）：
 
 - 纵向与横向不平等 — Vertikale & Horizontale Ungleichheit: Vertikale Kriterien (Einkommen, Vermoegen, formale Bildung, Macht) begruenden hierarchische Besser- bzw. Schlechterstellungen; horizontale Kriterien (Alter, Geschlecht, ethnische Herkunft, Region) differenzieren Lebensrisiken unabhaengig vom Status.
 - 西诺斯社会环境 — Sinus-Milieus: Ein soziologisches Zielgruppenmodell, das Menschen anhand ihrer Wertehaltungen, Lebensstile, Konsumpraeferenzen und Zukunftserwartungen in relationale soziale Milieus clusterartig zusammenfasst.
@@ -89,6 +89,20 @@ In einer Klausur der Q-Phase analysierst du den Wandel von Wahlergebnissen und P
 - AFB II: Frueher waren Parteien fest in Grossmilieus verankert (SPD im katholisch-proletarischen Arbeitermilieu; CDU im laendlichen, buergerlich-konservativen Milieu). Durch Individualisierung, Tertiarisierung und Wertewandel haben sich diese geschlossenen Milieus aufgeloest. Waehler entscheiden sich heute flexibel, milieuuebergreifend und situativ nach konkreten Sachthemen.
 - AFB III: Befuerworter betonen die exzellente Erklaerungskraft fuer Konsum- und Wahlverhalten jenseits des reinen Gehaltszettels. Kritiker wenden jedoch ein, dass das Modell von Marketingagenturen stammt und verschleiert, dass ein Mensch im prekaeren Milieu seine Lebenssituation nicht frei waehlen kann. Die dramatische Vermoegenskonzentration (Gini-Koeffizient des Nettovermoegens von fast 0,78 in Deutschland) bleibt ein hartes vertikales Machtverhaeltnis, das sich nicht in bunte Lifestyles aufloesen laesst.
 
+AUFGABE (analysieren) [AFB I]:
+Analysieren Sie den Fall in einer zusammenhaengenden Stellungnahme (ca. 150 Woerter) mit Fachbegriff, Wirkungskette und kriteriengeleitetem Urteil.
+
+ERWARTUNGSHORIZONT:
+Teilleistung | Punkte | Alternativweg
+Sachanalyse mit Fachbegriff und Wirkungskette aus dem Material | 6 NP | Andere korrekte Begriffs- und Kettenbelege akzeptieren
+Folgen- und Zielkonfliktanalyse mit Verlierern bzw. Trade-offs | 4 NP | Andere plausible Konflikt- und Folgenbelege akzeptieren
+Kriteriengeleitetes Urteil mit Abwaegung und Handlungsempfehlung | 5 NP | Alternative Urteile mit gleicher Abwaegungslogik akzeptieren
+
+KERNSATZ (auswendig):
+`Musterloesungshinweis`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Musterloesungshinweis |  | Musterloesungshinweis
+- Selbsttest: Musterloesungshinweis ___
 ## Schritt 7 — muendlich: Die muendliche Blitzpruefung
 Simuliere ein muendliches Abiturszenario:
 

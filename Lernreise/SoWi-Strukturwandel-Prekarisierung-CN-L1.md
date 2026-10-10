@@ -8,7 +8,7 @@ operatoren: [darstellen, analysieren, beurteilen]
 klausurrelevant: true
 datum: 2026-09-26
 tags: [EF, SoWi, CN]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Strukturwandel und Prekarisierung der Arbeit (L1, Ziel Klausur)
@@ -47,7 +47,7 @@ Klausur-Satz: `Der Strukturwandel verlagert Beschaeftigung in Dienstleistungen; 
 
 ## Schritt 2 — entdecken: Werkzeugkoffer von Redecoach Anton Berger: 5 Begriffe scharf stellen
 
-PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
+PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文->德语，Evidenz：pretraining降认知负荷）：
 
 中文在上，德语在下：
 
@@ -98,7 +98,7 @@ Minijob: x x x x = prekaer
 ```
 Kausalkette: Technik plus Globalisierung veraendern Nachfrage, alte Skills entwerten, neue praemiieren, Betriebe waelzen Schwankungen auf Leiharbeit und Plattformen ab, Risiken individualisieren sich, Politik antwortet dreifach: Lohnboden, Qualifizierung, Regulierung. Zwei Schnitte tragen die Analyse: Branchen und Betroffene.
 
-因果链：技术+全球化改需求→旧技能贬值新技能溢价→企业用派遣平台转嫁波动→个人风险化→政策三接（底薪托底、培训转岗、监管防滥用）。传导看两切：行业切（谁生谁死）与人群切（谁疼谁赚）。
+因果链：技术+全球化改需求->旧技能贬值新技能溢价->企业用派遣平台转嫁波动->个人风险化->政策三接（底薪托底、培训转岗、监管防滥用）。传导看两切：行业切（谁生谁死）与人群切（谁疼谁赚）。
 
 Kennzahlanker: Befristungsquote $q \approx 12\,\%$ bei Jungen deutlich hoeher; Gini-Ziel $0{,}28 \le G \le 0{,}32$ als Schutzmass.
 
@@ -124,14 +124,14 @@ AUFGABE中文导读（检验谜题）：一份迷你工作收入低、无社保�
 
 AUFGABE (pruefen, AFB II): Pruefen Sie einen Minijob an den vier Kriterien und ordnen Sie ihn dem Strukturwandel zu.
 
-HILFE（中德双语步骤）：
+HILFE:
+- Richtung: Zuerst die einschlaegige Regel und die zu pruefenden Begriffe aus dem Werkzeugkoffer bestimmen, danach das Material diesen Begriffen zuordnen.
+- Richtung: Danach Mengen- bzw. Rollenreaktion auf beiden Seiten getrennt deuten und die Differenz als Ergebnisspannung mit Urteil-Ansatz festhalten.
 
-1. 中文：第1步逐项打分：四项逐一过，关键词：Kriterien。
-   Schritt 1 (DE): Einkommen, Schutz, Dauer, Planbarkeit pruefen.
-2. 中文：第2步下判定：四项皆缺即不稳定，关键词：Urteil。
-   Schritt 2 (DE): Vier Defizite heisst prekaer.
-3. 中文：第3步归因结构而非个人，关键词：Struktur。
-   Schritt 3 (DE): Dienstleistungswandel, nicht Einzelschicksal.
+
+COMPLETION (Lueckentext):
+- Der erste Pruefschritt lautet ___; ihm wird das einschlaegige Merkmal aus dem Material zugeordnet.
+- Das Ergebnis lautet ___; die Spannung wird mit Regel plus Urteil-Ansatz begruendet.
 
 MUSTERLOESUNG：中文：四项全缺即判定为不稳定就业；它是服务业零工化的典型，不是个人不努力，结构解释位置、个人只解释落点。
 
@@ -151,7 +151,7 @@ DUELL Weg A (Strukturwandel) gegen Weg B (Individualdeutung): Weg A erklaert Lag
 AUFGABE A：Warum waechst Prekaritaet trotz sinkender Arbeitslosigkeit? Erklaeren Sie strukturell.
 AUFGABE B：Ein Ratgeber behauptet, jeder Minijobber solle sich nur mehr anstrengen. Beurteilen Sie.
 
-HILFE: A 问 trotz sinkender Zahl → Verfahren (i)。B 是个体论断 → Verfahren (ii) 反驳。【选程序：问总量结构讲转型；问个人努力辨归因。】
+HILFE: A 问 trotz sinkender Zahl -> Verfahren (i)。B 是个体论断 -> Verfahren (ii) 反驳。【选程序：问总量结构讲转型；问个人努力辨归因。】
 
 ANTWORT: A erfordert Verfahren (i): Die Arbeitslosenzahl sinkt, weil Normalarbeitsverhaeltnisse in mehrere Kleinstjobs zerlegt werden; Beschaeftigungsstatistik steigt, Schutzstatistik sinkt — Tertiarisierung erklaert das Paradox. B erfordert Verfahren (ii) als Kritik: Fleiss aendert nichts an Tarifbindung, Befristungsrecht und Plattformmacht; individuelle Anstrengung kann Einkommen erhoehen, ersetzt aber keine strukturelle Sicherung. Beide Ebenen gelten zugleich, duerfen aber nicht verwechselt werden.
 
@@ -181,9 +181,24 @@ Klausur-Satz: `Prekaritaet misst man an vier Defiziten, nicht an einem Klischee.
 ## Schritt 7 — szenario: Klausurtransfer: Anhoerung und Parlamentsrede zu Strukturwandel und Prekarisierung der Arbeit
 ROLLE: Du bist Praktikant in der Kommunalverwaltung einer Ruhrgebietsstadt.
 SITUATION: Der Stadtrat debattiert, ob neue Logistikhufe als Erfolg gelten. Nimm in einer zusammenhaengenden Stellungnahme (ca. 150 Woerter) mit Strukturwandel und Prekaritaetskriterien dazu Stellung und empfehle zwei kommunale Massnahmen.
+AUFGABE (beurteilen) [AFB III]:
+Beurteilen Sie den Fall in einer zusammenhaengenden Stellungnahme (ca. 150 Woerter) mit Fachbegriff, Wirkungskette und kriteriengeleitetem Urteil.
+
 RUBRIC (30 XP): Strukturwandel-Deutung der Logistikjobs (8 XP) | Vier-Kriterien-Pruefung (10 XP) | Zwei begruendete Massnahmen, z. B. Vergabe mit Tarifbindung, Weiterbildung (8 XP) | Adressatengerechte Stellungnahme (4 XP).
 
+ERWARTUNGSHORIZONT:
+Teilleistung | Punkte | Alternativweg
+Sachanalyse mit Fachbegriff und Wirkungskette aus dem Material | 6 NP | Andere korrekte Begriffs- und Kettenbelege akzeptieren
+Folgen- und Zielkonfliktanalyse mit Verlierern bzw. Trade-offs | 4 NP | Andere plausible Konflikt- und Folgenbelege akzeptieren
+Kriteriengeleitetes Urteil mit Abwaegung und Handlungsempfehlung | 5 NP | Alternative Urteile mit gleicher Abwaegungslogik akzeptieren
+
 Klausur-Satz: `Die Wandelklausur schneidet erst Branche gegen Betroffene und misst dann jede Antwort an Schutz, Aufstieg und Preis.`
+
+KERNSATZ (auswendig):
+`Prekaritaet misst man an vier Defiziten, nicht an einem Klischee.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Prekaritaet misst man an vier Defiziten | nicht an | einem Klischee.
+- Selbsttest: Prekaritaet ___ man an vier Defiziten, nicht an einem Klischee.
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Was der Krisenstab lernt
 
 TAKEAWAY 1盒（核心总结）：

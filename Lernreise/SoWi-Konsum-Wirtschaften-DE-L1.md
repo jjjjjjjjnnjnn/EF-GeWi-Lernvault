@@ -8,7 +8,7 @@ operatoren: [darstellen, analysieren, einordnen]
 klausurrelevant: true
 datum: 2026-09-26
 tags: [EF, SoWi, Wirtschaft]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Konsum und Wirtschaften (L1, Ziel Klausur)
@@ -112,9 +112,13 @@ Lege im Tool zwei Koerbe an: konventionell billig ohne Label und nachhaltig teur
 AUFGABE Spiel-Raetsel (AFB II): Vergleiche im Tool den Influencer-Korb mit dem Label-Korb. Notiere Preis, Label und soziales Signal je Korb. Pruefe, welche Information die Nachfragekurve zurueck zur abgewogenen Wahl verschiebt und welche Rolle bezahlbare Alternativen spielen.
 
 HILFE:
-1. Schritt 1: Notiere Preis, Label und soziales Signal je Korb.
-2. Schritt 2: Veraendere Preis und Info, lies Nachfrage und Angebot ab.
-3. Schritt 3: Deute am Kriterium Souveraenitaet und formuliere den Klausur-Satz.
+- Richtung: Zuerst die einschlaegige Regel und die zu pruefenden Begriffe aus dem Werkzeugkoffer bestimmen, danach das Material diesen Begriffen zuordnen.
+- Richtung: Danach Mengen- bzw. Rollenreaktion auf beiden Seiten getrennt deuten und die Differenz als Ergebnisspannung mit Urteil-Ansatz festhalten.
+
+
+COMPLETION (Lueckentext):
+- Der erste Pruefschritt lautet ___; ihm wird das einschlaegige Merkmal aus dem Material zugeordnet.
+- Das Ergebnis lautet ___; die Spannung wird mit Regel plus Urteil-Ansatz begruendet.
 
 MUSTERLOESUNG: Der Influencer-Korb folgt Signalen statt Abwaegung: hohe Nachfrage ohne Pruefung. Mit Label und Bildung kehrt die Wahl zurueck zur Nutzenpruefung; erst bezahlbare Alternativen plus ehrliche Info machen gute Wahl bei geraeumtem Markt moeglich.
 
@@ -164,10 +168,22 @@ Klausur-Satz: `Nachhaltigkeit ruht auf drei Säulen, die nicht gegeneinander aus
 
 ROLLE: Du bist Mitglied einer Verbraucherinitiative und sprichst auf einer oeffentlichen Veranstaltung.
 SITUATION: Eine Diskussion dreht sich um die Frage, ob Werbung fuer ungesunde oder nicht nachhaltige Produkte staerker begrenzt werden soll. Ein Teil des Publikums fordert ein Werbeverbot, ein anderer Teil setzt auf Information und freiwillige Selbstverpflichtung der Unternehmen. Beurteile in einer zusammenhaengenden Stellungnahme mit etwa 150 Woertern, welches Mittel du befuerwortest, und begruende dein Urteil mit Blick auf Konsumentensouveraenitaet und Nachhaltigkeit.
-AUFGABE (AFB III): Verfasse eine zusammenhaengende Darstellung von etwa 150 Woertern mit Kriterium, Anwendung und Urteil.
+AUFGABE (AFB III): Verfasse eine zusammenhaengende Darstellung von etwa 150 Woertern mit Kriterium, Anwendung und Urteil. [AFB III]:
 RUBRIC (30 XP): These mit Kriterium Souveraenitaet und Nachhaltigkeit (5 XP) | Darstellung von Werbung als Signal und Label als Info (10 XP) | Abwaegung von Verbot gegen mildes Mittel mit Fussabdruck und Nebenkosten (10 XP) | Fazit mit Fachbegriffen und konkreter Empfehlung (5 XP)
 
+ERWARTUNGSHORIZONT:
+Teilleistung | Punkte | Alternativweg
+Sachanalyse mit Fachbegriff und Wirkungskette aus dem Material | 6 NP | Andere korrekte Begriffs- und Kettenbelege akzeptieren
+Folgen- und Zielkonfliktanalyse mit Verlierern bzw. Trade-offs | 4 NP | Andere plausible Konflikt- und Folgenbelege akzeptieren
+Kriteriengeleitetes Urteil mit Abwaegung und Handlungsempfehlung | 5 NP | Alternative Urteile mit gleicher Abwaegungslogik akzeptieren
+
 Klausur-Satz: `Die Stellungnahme zum Konsum trennt private Kosten von externen Kosten und misst jede Massnahme an Lenkung plus sozialer Abfederung.`
+
+KERNSATZ (auswendig):
+`Nachhaltigkeit ruht auf drei Säulen, die nicht gegeneinander ausgespielt werden dürfen.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Nachhaltigkeit ruht auf drei Säulen | die nicht gegeneinander | ausgespielt werden dürfen.
+- Selbsttest: Nachhaltigkeit ruht ___ drei Säulen, die nicht gegeneinander ausgespielt werden dürfen.
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Was der Krisenstab lernt
 
 TAKEAWAY (Kernbotschaft in einem Kasten):

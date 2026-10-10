@@ -8,7 +8,7 @@ operatoren: [darstellen, analysieren, gestalten]
 klausurrelevant: true
 datum: 2026-09-26
 tags: [EF, SoWi, Methode]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Gestaltungsaufgabe: Redebeitrag und Handlungsempfehlung (L1, Ziel Klausur)
@@ -112,7 +112,13 @@ Ziehe im Tool Satzbausteine aus These und Beleg und Urteil in die richtige Reihe
 AUFGABE Waage-Raetsel (AFB II): Entwirf auf [Werkzeug: formula] einen Redebeitrag mit zwei Massnahmen. Gewichte Wirkung und Nebenfolge je 1 bis 5, benenne Materialgrenzen und empfehle begruendet.
 
 HILFE:
-1. Schritt 1: Werte Quelle, Bereich und Frage aus. 2. Schritt 2: Baue Ketten mit Nebenfolgen. 3. Schritt 3: Deute an Verantwortung und formuliere den Klausur-Satz.
+- Richtung: Zuerst die einschlaegige Regel und die zu pruefenden Begriffe aus dem Werkzeugkoffer bestimmen, danach das Material diesen Begriffen zuordnen.
+- Richtung: Danach Mengen- bzw. Rollenreaktion auf beiden Seiten getrennt deuten und die Differenz als Ergebnisspannung mit Urteil-Ansatz festhalten.
+
+
+COMPLETION (Lueckentext):
+- Der erste Pruefschritt lautet ___; ihm wird das einschlaegige Merkmal aus dem Material zugeordnet.
+- Das Ergebnis lautet ___; die Spannung wird mit Regel plus Urteil-Ansatz begruendet.
 
 MUSTERLOESUNG: Massnahme A wirkt schnell mit Nebenlast fuer Dritte; B wirkt langsamer ohne Nebenfolge. Waage kippt zu B nach Abwaegung der Ketten: Erst Grenzen benennen, dann behutsam empfehlen.
 
@@ -164,10 +170,22 @@ Klausur-Satz: `Ohne konkrete Massnahme, ohne Folge und ohne Kompetenzbezug bleib
 
 ROLLE: Du bist Teilnehmerin bzw. Teilnehmer eines Klausur-Simulationsdurchgangs und bearbeitest Aufgabe 3 in Echtzeit unter Zeitdruck.
 SITUATION: Die Klausur umfasst drei Aufgaben. Aufgabe 1 mit Darstellen und Aufgabe 2 mit Analysieren sind bearbeitet; es bleiben 30 Minuten fuer Aufgabe 3. Gegeben ist ein Materialpaket zu einem Vorschlag, die Ausgaben fuer Schulessen sozial zu staffeln. Entscheide zunaechst, welches Format die Aufgabe verlangt, und entwickle anschliessend die Gestaltung in 30 Minuten; notiere am Rand deine Minutenaufteilung.
-AUFGABE (AFB III): Verfasse eine zusammenhaengende Darstellung von etwa 150 Woertern mit Kriterium, Anwendung und Urteil.
+AUFGABE (AFB III): Verfasse eine zusammenhaengende Darstellung von etwa 150 Woertern mit Kriterium, Anwendung und Urteil. [AFB III]:
 RUBRIC (30 XP): Erkennen und Begruenden des Formats anhand des Rollenwortes (5 XP) | Vollstaendigkeit der vier bzw. fuenf Bausteine (10 XP) | Zwei konkrete Massnahmen mit je einer Wirkungskette und Nebenfolge (10 XP) | Adressatenkompetenz und widerspruchsfreier Schluss (5 XP).
 
+ERWARTUNGSHORIZONT:
+Teilleistung | Punkte | Alternativweg
+Sachanalyse mit Fachbegriff und Wirkungskette aus dem Material | 6 NP | Andere korrekte Begriffs- und Kettenbelege akzeptieren
+Folgen- und Zielkonfliktanalyse mit Verlierern bzw. Trade-offs | 4 NP | Andere plausible Konflikt- und Folgenbelege akzeptieren
+Kriteriengeleitetes Urteil mit Abwaegung und Handlungsempfehlung | 5 NP | Alternative Urteile mit gleicher Abwaegungslogik akzeptieren
+
 Klausur-Satz: `Die reife Stellungnahme ordnet erst das Werkzeug, dann die Anreizreaktion und misst beides an Kennzahlen statt an Absichten.`
+
+KERNSATZ (auswendig):
+`Ohne konkrete Massnahme, ohne Folge und ohne Kompetenzbezug bleibt die Gestaltung eine Meinung ohne Handlung.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Ohne konkrete Massnahme | ohne Folge und | ohne Kompetenzbezug bleibt die Gestaltung eine Meinung ohne Handlung.
+- Selbsttest: Ohne konkrete Massnahme, ohne Folge und ohne Kompetenzbezug ___ die Gestaltung eine Meinung ohne Handlung.
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Was der Krisenstab lernt
 
 TAKEAWAY (Kernbotschaft in einem Kasten):

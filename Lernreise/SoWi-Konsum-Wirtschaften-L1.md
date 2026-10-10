@@ -8,7 +8,7 @@ operatoren: [darstellen, analysieren, einordnen]
 klausurrelevant: true
 datum: 2026-09-25
 tags: [EF, SoWi, Wirtschaft]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Konsum und Wirtschaften (L1, Ziel Klausur)
@@ -26,7 +26,7 @@ HOOK 市长危机（先读剧情，再进 ZIELE）：【本集战役 EP16｜Akt 
 
 ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
-1. 中文：能完整背出概念链 Bedürfnisse → Bedarf → Nachfrage，并说清 Knappheit 为什么是一切经济学的起点。
+1. 中文：能完整背出概念链 Bedürfnisse -> Bedarf -> Nachfrage，并说清 Knappheit 为什么是一切经济学的起点。
 2. 中文：能用材料批判 homo oeconomicus 假设——指出真人是被文化、习惯与情绪驱动的，理性只是模型假设。
 3. 中文：能按 AFB II 分析广告与网红如何影响购买决策，并按 AFB III 用"生态—社会—经济"三支柱评价可持续消费。
 
@@ -34,7 +34,7 @@ Klausur-Satz: `Bedürfnisse sind unbegrenzt, Güter knapp — aus dieser Spannun
 
 ## Schritt 2 — entdecken: Werkzeugkoffer von Campusmentorin Dr. Ada Mensah: 5 Begriffe scharf stellen
 
-PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
+PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文->德语，Evidenz：pretraining降认知负荷）：
 
 中文在上，德语在下：
 
@@ -82,7 +82,7 @@ ENTDECKEN（1概念 + 1文字图解）：
 ```
 Kausalkette: Private Preisbildung, fehlende Klimarechnung, Ueberkonsum, Internalisierung ueber Steuer, Wanderung zu Alternativen, Rueckverteilung als Klimageld. Entscheidend bleibt die Trennung von Bewegung auf der Kurve und Verschiebung der Kurve.
 
-因果链：私人价格 formation→外部成本漏报→过量消费→碳税把外部性内化（价格上移）→行为转向绿色替代→再分配（气候钱）缓冲击。关键区分：沿线移动 vs 整线平移，短期贵 vs 长期省。
+因果链：私人价格 formation->外部成本漏报->过量消费->碳税把外部性内化（价格上移）->行为转向绿色替代->再分配（气候钱）缓冲击。关键区分：沿线移动 vs 整线平移，短期贵 vs 长期省。
 
 Preisanker: Marktpreis $p = 12$ Euro, internalisierter Preis $P = p + t_{CO2}$ mit $t_{CO2} = 5$ Euro ergibt $P = 17$ Euro; die Menge faellt von $q_0$ auf $q_1 < q_0$.
 
@@ -91,7 +91,7 @@ Klausur-Satz: `Konsumentensouveränität ist kein Zustand, sondern ein Auftrag a
 
 中文四步解题法（消费题通用）：
 1. 辨主体：材料讲的是消费者行为，还是国家干预？
-2. 走链条：Bedürfnis → Bedarf → Nachfrage 不跳级；主权 vs 他决要分清。
+2. 走链条：Bedürfnis -> Bedarf -> Nachfrage 不跳级；主权 vs 他决要分清。
 3. 说机制：指出广告、网红或政策如何影响购买决策。
 4. 落评价：用三支柱或干预强度作标准给出判断。
 
@@ -117,10 +117,13 @@ TARGET: Stellt im Sandkasten Angebot und Nachfrage so ein, dass der Gleichgewich
 AUFGABE (analysieren, AFB II, 10 BE)：Material 1 besteht aus einem Sachtext über das Kaufverhalten Jugendlicher und einer Statistik, die zeigt, dass soziale Medien die Kaufentscheidungen stark beeinflussen. Analysieren Sie mit dem Modell des homo oeconomicus, warum das beobachtete Verhalten diesem Modell widerspricht.
 
 HILFE:
-1. Schritt 1: Modellannahmen benennen — vollständige Information, Nutzenmaximierung, Rationalität.
-2. Schritt 2: Beobachtung dagegenstellen — Kauf folgt sozialen Signalen und Influencern.
-3. Schritt 3: Fachbegriff zuordnen — Fremdbestimmung statt Souveränität.
-4. Schritt 4: Ergebnis als Modellkritik formulieren.
+- Richtung: Zuerst die einschlaegige Regel und die zu pruefenden Begriffe aus dem Werkzeugkoffer bestimmen, danach das Material diesen Begriffen zuordnen.
+- Richtung: Danach Mengen- bzw. Rollenreaktion auf beiden Seiten getrennt deuten und die Differenz als Ergebnisspannung mit Urteil-Ansatz festhalten.
+
+
+COMPLETION (Lueckentext):
+- Der erste Pruefschritt lautet ___; ihm wird das einschlaegige Merkmal aus dem Material zugeordnet.
+- Das Ergebnis lautet ___; die Spannung wird mit Regel plus Urteil-Ansatz begruendet.
 
 MUSTERLÖSUNG: Das Modell des homo oeconomicus unterstellt, dass Verbraucher vollständig informiert sind und ihren Nutzen rational maximieren. Die Statistik zeigt jedoch, dass Kaufentscheidungen Jugendlicher stark von sozialen Medien und Influencern beeinflusst werden. Damit folgt der Kauf nicht einem eigenen Nutzenkalkül, sondern sozialen Signalen — es liegt Fremdbestimmung statt Konsumentensouveränität vor. Das Beispiel widerlegt das Modell nicht, zeigt aber, dass es eine Annahme und keine Beschreibung der Wirklichkeit ist.
 
@@ -140,7 +143,7 @@ AUFGABE A (AFB II, 8 BE)：Material 2 (Sachtext) beschreibt, dass ein Jugendlich
 
 AUFGABE B (AFB II, 8 BE)：Eine Karikatur zeigt eine Ampel, an der ein Verbotsschild für Werbung leuchtet, während daneben ein Schild „freiwillige Selbstverpflichtung" steht. Ordnen Sie die beiden Maßnahmen in das Spektrum staatlicher Verbraucherpolitik ein.
 
-HILFE: A fragt nach dem Kaufverhalten selbst → Verfahren (i). B fragt nach staatlichen Instrumenten und ihrer Eingriffsintensität → Verfahren (ii).【选程序：材料讲"这个人怎么买"= 消费程序；材料讲"国家怎么管"= 政策程序。】
+HILFE: A fragt nach dem Kaufverhalten selbst -> Verfahren (i). B fragt nach staatlichen Instrumenten und ihrer Eingriffsintensität -> Verfahren (ii).【选程序：材料讲"这个人怎么买"= 消费程序；材料讲"国家怎么管"= 政策程序。】
 
 ANTWORT: A erfordert Verfahren (i): Der Kauf des Statussymbols zeigt Fremdbestimmung, weil die Kaufentscheidung dem sozialen Druck und dem Wunsch nach Anerkennung folgt, nicht einem eigenen Nutzenkalkül. Zugleich wird aus dem Bedürfnis nach Zugehörigkeit erst durch die vorhandene Kaufkraft ein Bedarf, der sich in Nachfrage am Markt umsetzt. B erfordert Verfahren (ii): Das Werbeverbot ist ein hartes, eingriffsintensives Instrument, weil es die Kommunikation der Anbieter staatlich begrenzt; die freiwillige Selbstverpflichtung dagegen ist ein mildes Instrument, das auf Einsicht und Eigenverantwortung setzt. Beide gehören in dasselbe Spektrum, unterscheiden sich aber in der Eingriffstiefe.
 
@@ -150,7 +153,7 @@ Klausur-Satz: `Ein Werbeverbot ist ein starkes staatliches Instrument, während 
 
 CHECK检索默写（自测 3 题，与答案配对）：
 
-- FRAGE: Wie lautet die Konzeptkette vom Bedürfnis zur Nachfrage? | ANTWORT: Bedürfnis (unbegrenzt) → Bedarf (mit Kaufkraft) → Nachfrage (am Markt wirksam).
+- FRAGE: Wie lautet die Konzeptkette vom Bedürfnis zur Nachfrage? | ANTWORT: Bedürfnis (unbegrenzt) -> Bedarf (mit Kaufkraft) -> Nachfrage (am Markt wirksam).
 - FRAGE: Warum ist der homo oeconomicus keine Beschreibung realer Menschen? | ANTWORT: Weil er vollständige Information und reine Nutzenmaximierung unterstellt, während reale Menschen von Kultur, Gewohnheit und Emotionen geleitet werden.
 - FRAGE: Auf welchen drei Säulen ruht Nachhaltigkeit? | ANTWORT: Auf der ökologischen, der sozialen und der ökonomischen Säule.
 
@@ -174,9 +177,24 @@ ROLLE: Du bist Mitglied einer Verbraucherinitiative und sprichst auf einer öffe
 
 SITUATION: Eine Diskussion dreht sich um die Frage, ob Werbung für ungesunde oder nicht nachhaltige Produkte stärker reguliert werden soll. Ein Teil des Publikums fordert ein Werbeverbot, ein anderer Teil setzt auf Information und freiwillige Selbstverpflichtung der Unternehmen. Beurteile in einer zusammenhängenden Stellungnahme (ca. 150 Wörter), welches Instrument du befürwortest, und begründe dein Urteil mit Blick auf Konsumentensouveränität und Nachhaltigkeit.
 
+AUFGABE (analysieren) [AFB II]:
+Analysieren Sie den Fall in einer zusammenhaengenden Stellungnahme (ca. 150 Woerter) mit Fachbegriff, Wirkungskette und kriteriengeleitetem Urteil.
+
 RUBRIC (30 XP): Benennung und Einordnung der Instrumente (Verbot, Anreiz, Label) (5 XP) | Analyse der Wirkung auf die Kaufentscheidung und die Souveränität (10 XP) | Abwägung von Eingriffstiefe und Wirksamkeit (10 XP) | Kriteriengeleitetes Urteil (z. B. Kriterium Wirksamkeit oder Freiheit) (5 XP).
 
+ERWARTUNGSHORIZONT:
+Teilleistung | Punkte | Alternativweg
+Sachanalyse mit Fachbegriff und Wirkungskette aus dem Material | 6 NP | Andere korrekte Begriffs- und Kettenbelege akzeptieren
+Folgen- und Zielkonfliktanalyse mit Verlierern bzw. Trade-offs | 4 NP | Andere plausible Konflikt- und Folgenbelege akzeptieren
+Kriteriengeleitetes Urteil mit Abwaegung und Handlungsempfehlung | 5 NP | Alternative Urteile mit gleicher Abwaegungslogik akzeptieren
+
 Klausur-Satz: `Die Stellungnahme zum Konsum trennt private Kosten von externen Kosten und misst jede Massnahme an Lenkung plus sozialer Abfederung.`
+
+KERNSATZ (auswendig):
+`Nachhaltigkeit ruht auf drei Säulen, die nicht gegeneinander ausgespielt werden dürfen.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Nachhaltigkeit ruht auf drei Säulen | die nicht gegeneinander | ausgespielt werden dürfen.
+- Selbsttest: Nachhaltigkeit ruht ___ drei Säulen, die nicht gegeneinander ausgespielt werden dürfen.
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Was der Krisenstab lernt
 
 TAKEAWAY 1盒（核心总结）：

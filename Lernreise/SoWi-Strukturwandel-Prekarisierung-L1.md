@@ -8,7 +8,7 @@ operatoren: [darstellen, analysieren, beurteilen]
 klausurrelevant: true
 datum: 2026-09-26
 tags: [EF, SoWi, Gesellschaft]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Strukturwandel und Prekarisierung (L1, Ziel Klausur)
@@ -72,7 +72,7 @@ Prekaritaetstest (alle 4 pruefen):
 ```
 Kausalkette: Technik plus Globalisierung veraendern Nachfrage, alte Skills entwerten, neue praemiieren, Betriebe waelzen Schwankungen auf Leiharbeit und Plattformen ab, Risiken individualisieren sich, Politik antwortet dreifach: Lohnboden, Qualifizierung, Regulierung. Zwei Schnitte tragen die Analyse: Branchen und Betroffene.
 
-因果链：技术+全球化改需求→旧技能贬值新技能溢价→企业用派遣平台转嫁波动→个人风险化→政策三接（底薪托底、培训转岗、监管防滥用）。传导看两切：行业切（谁生谁死）与人群切（谁疼谁赚）。
+因果链：技术+全球化改需求->旧技能贬值新技能溢价->企业用派遣平台转嫁波动->个人风险化->政策三接（底薪托底、培训转岗、监管防滥用）。传导看两切：行业切（谁生谁死）与人群切（谁疼谁赚）。
 
 Kennzahlanker: Befristungsquote $q \approx 12\,\%$ bei Jungen deutlich hoeher; Gini-Ziel $0{,}28 \le G \le 0{,}32$ als Schutzmass.
 
@@ -96,9 +96,13 @@ TARGET: Prueft einen Job auf dem Balance-Board an vier Kriterien (Einkommen, Sic
 AUFGABE (analysieren, AFB II): Analysieren Sie, ob eine befristete Teilzeitstelle im Versandhandel mit $12 \, \mathrm{Euro}$ Stundenlohn, ohne Uebernahmeperspektive und mit wechselnden Schichten, als prekaer einzustufen ist.
 
 HILFE:
-1. Schritt 1: Vier Kriterien einzeln pruefen.
-2. Schritt 2: Kumulation bewerten.
-3. Schritt 3: Urteil mit Schwelle formulieren.
+- Richtung: Zuerst die einschlaegige Regel und die zu pruefenden Begriffe aus dem Werkzeugkoffer bestimmen, danach das Material diesen Begriffen zuordnen.
+- Richtung: Danach Mengen- bzw. Rollenreaktion auf beiden Seiten getrennt deuten und die Differenz als Ergebnisspannung mit Urteil-Ansatz festhalten.
+
+
+COMPLETION (Lueckentext):
+- Der erste Pruefschritt lautet ___; ihm wird das einschlaegige Merkmal aus dem Material zugeordnet.
+- Das Ergebnis lautet ___; die Spannung wird mit Regel plus Urteil-Ansatz begruendet.
 
 MUSTERLOESUNG: Das Einkommen liegt nahe der Untergrenze und reicht bei Teilzeit nicht zur eigenstaendigen Existenzsicherung. Die Befristung ohne Perspektive verletzt die Sicherheit, wechselnde Schichten die Planbarkeit, und der Schutz ist durch fehlende Mitbestimmung schwach. Da drei von vier Kriterien verletzt sind, liegt Prekarisierung vor. Entscheidend ist nicht die Teilzeit allein, sondern ihre Kumulation mit Befristung, Niedriglohn und Unplanbarkeit.
 
@@ -146,9 +150,24 @@ Klausur-Satz: `Ein einzelnes atypisches Merkmal begruendet noch keine Prekarisie
 
 ROLLE: Du bist Berichterstatterin fuer den Stadtrat.
 SITUATION: Die Stadt feiert sinkende Arbeitslosigkeit, doch die Beratungsstelle meldet mehr befristete Aufstock-Jobs. Nimm in circa 150 Woertern Stellung, ob der Strukturwandel gelungen ist, indem du Branchenverschiebung und Prekaritaet getrennt pruefst.
+AUFGABE (beurteilen) [AFB III]:
+Beurteilen Sie den Fall in einer zusammenhaengenden Stellungnahme (ca. 150 Woerter) mit Fachbegriff, Wirkungskette und kriteriengeleitetem Urteil.
+
 RUBRIC (30 XP): Darstellung des Strukturwandels (8 XP) | Vier-Kriterien-Analyse (10 XP) | Kriteriengeleitetes Urteil (8 XP) | Fachsprachliche Darstellung (4 XP).
 
+ERWARTUNGSHORIZONT:
+Teilleistung | Punkte | Alternativweg
+Sachanalyse mit Fachbegriff und Wirkungskette aus dem Material | 6 NP | Andere korrekte Begriffs- und Kettenbelege akzeptieren
+Folgen- und Zielkonfliktanalyse mit Verlierern bzw. Trade-offs | 4 NP | Andere plausible Konflikt- und Folgenbelege akzeptieren
+Kriteriengeleitetes Urteil mit Abwaegung und Handlungsempfehlung | 5 NP | Alternative Urteile mit gleicher Abwaegungslogik akzeptieren
+
 Klausur-Satz: `Die Wandelklausur schneidet erst Branche gegen Betroffene und misst dann jede Antwort an Schutz, Aufstieg und Preis.`
+
+KERNSATZ (auswendig):
+`Branchenwandel verlangt das Strukturverfahren, Einzelfaelle den Vier-Kriterien-Test.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Branchenwandel verlangt das Strukturverfahren | Einzelfaelle | den Vier-Kriterien-Test.
+- Selbsttest: Branchenwandel ___ das Strukturverfahren, Einzelfaelle den Vier-Kriterien-Test.
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Was der Krisenstab lernt
 
 TAKEAWAY:

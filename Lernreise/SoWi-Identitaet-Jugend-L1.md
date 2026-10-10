@@ -8,7 +8,7 @@ operatoren: [darstellen, analysieren, beurteilen]
 klausurrelevant: true
 datum: 2026-09-25
 tags: [EF, SoWi, Soziologie]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Identität und Jugend (L1, Ziel Klausur)
@@ -28,13 +28,13 @@ ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
 1. 中文：能一句话说清身份不是天生标签，而是"别人眼中的我"与"我认同的我"不断对账得出的平衡成果。
 2. 中文：能区分六位理论家各自抓住的那一点（Mead 交往 / Erikson 终身 / Krappmann 平衡 / Riesman 他导 / Parsons 角色多 / Goffman 扮演），读材料时能对号入座。
-3. 中文：能按 AFB II 从 Shell 表格里读出 2002→2019 的价值变迁，并按 AFB III 对"社交媒体是否助力青年身份"给出带标准的评价。
+3. 中文：能按 AFB II 从 Shell 表格里读出 2002->2019 的价值变迁，并按 AFB III 对"社交媒体是否助力青年身份"给出带标准的评价。
 
 Klausur-Satz: `Identität entsteht nicht als feste Eigenschaft, sondern als lebenslange Balanceleistung zwischen gesellschaftlichen Erwartungen und eigenen Überzeugungen.`
 
 ## Schritt 2 — entdecken: Werkzeugkoffer von Aufsichtsratschef Dr. Konrad Reuss: 5 Begriffe scharf stellen
 
-PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
+PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文->德语，Evidenz：pretraining降认知负荷）：
 
 中文在上，德语在下：
 
@@ -79,7 +79,7 @@ ENTDECKEN（1概念 + 1文字图解）：
 ```
 Kausalkette: Erwartungsflut aus Familie, Peers und Netz, Ueberlastung des Me, Antwort des I zwischen Rebellion und Rueckzug, Erprobung im Moratorium, Festlegung oder Diffusion. Anerkennung ist der Treibstoff: Nahe Beziehungen liefern stabil, Netze liefern volatil.
 
-因果链：多重期待涌入（家庭要乖、同龄人要酷、网络要赞）→客我超载→主我反弹或躺平→试错期（延缓偿付）→承诺定型或弥散。承认是燃料：近关系给的稳，远网络给的飘，燃料结构决定认同稳不稳。
+因果链：多重期待涌入（家庭要乖、同龄人要酷、网络要赞）->客我超载->主我反弹或躺平->试错期（延缓偿付）->承诺定型或弥散。承认是燃料：近关系给的稳，远网络给的飘，燃料结构决定认同稳不稳。
 
 
 Klausur-Satz: `Mead zufolge wird sich das Individuum seiner selbst bewusst, indem es sich mit den Augen der Anderen betrachtet; Identität entsteht also in Kommunikation.`
@@ -113,9 +113,13 @@ TARGET: Bringt auf dem Verhandlungsbrett beide Waagschalen in die Balance — Be
 AUFGABE (analysieren, AFB II, 10 BE)：Material 1 (Sachtext) schildert eine 17-Jährige, die täglich ihren Alltag auf Instagram inszeniert und abends unter dem Vergleich mit anderen leidet. Analysieren Sie mit zwei Modellen, wie in diesem Fall Identität ausgehandelt wird.
 
 HILFE:
-1. Schritt 1: Modelle wählen — Goffman (Vorder- und Hinterbühne) für die Inszenierung, Riesman (außengeleitet) für den Vergleichsdruck.
-2. Schritt 2: Fachbegriff und Wirkung verknüpfen — was macht die ständige Inszenierung mit dem Selbstbild?
-3. Schritt 3: Mit Krappmann abrunden — gelingt die Balance oder kippt sie?
+- Richtung: Zuerst die einschlaegige Regel und die zu pruefenden Begriffe aus dem Werkzeugkoffer bestimmen, danach das Material diesen Begriffen zuordnen.
+- Richtung: Danach Mengen- bzw. Rollenreaktion auf beiden Seiten getrennt deuten und die Differenz als Ergebnisspannung mit Urteil-Ansatz festhalten.
+
+
+COMPLETION (Lueckentext):
+- Der erste Pruefschritt lautet ___; ihm wird das einschlaegige Merkmal aus dem Material zugeordnet.
+- Das Ergebnis lautet ___; die Spannung wird mit Regel plus Urteil-Ansatz begruendet.
 
 MUSTERLÖSUNG: Zunächst lässt sich das Verhalten mit Goffman deuten: Auf der Vorderbühne zeigt die Jugendliche ein optimiertes Selbst, während die Vergleichserfahrung zur Hinterbühne gehört. Nach Riesman verstärkt dieser ständige Vergleich eine außengeleitete Orientierung, weil das Selbstbild am Urteil der Anderen ausgerichtet wird. Krappmann zufolge müsste die Jugendliche eine Balance zwischen Anerkennung und eigener Überzeugung herstellen; da die Inszenierung jedoch den Vergleichsdruck erhöht, droht diese Balance zu scheitern. Identität zeigt sich hier also nicht als fertige Eigenschaft, sondern als gefährdete Balanceleistung.
 
@@ -135,7 +139,7 @@ AUFGABE A (AFB II, 8 BE)：Material 2 (Karikatur) zeigt einen Jugendlichen, der 
 
 AUFGABE B (AFB II, 8 BE)：Eine Tabelle dokumentiert, dass Familien- und Sicherheitswerte unter Jugendlichen zwischen 2002 und 2019 an Bedeutung gewonnen haben. Ordnen Sie diesen Befund mithilfe des Wertewandels ein.
 
-HILFE: A fragt nach dem Werden des Selbst in der Kommunikation (Mead/Goffman) → Verfahren (i). B fragt nach einer gesellschaftlichen Verschiebung, die auf das Individuum einwirkt → Verfahren (ii).【选程序：材料问"交往中怎么形成"= 交往程序；材料给的是社会/媒体/时代数据 = 结构程序。】
+HILFE: A fragt nach dem Werden des Selbst in der Kommunikation (Mead/Goffman) -> Verfahren (i). B fragt nach einer gesellschaftlichen Verschiebung, die auf das Individuum einwirkt -> Verfahren (ii).【选程序：材料问"交往中怎么形成"= 交往程序；材料给的是社会/媒体/时代数据 = 结构程序。】
 
 ANTWORT: A erfordert Verfahren (i): Nach Mead wird sich das Individuum seiner selbst erst bewusst, indem es sich mit den Augen der Anderen sieht; die vielen Spiegelbilder versinnbildlichen, dass das Selbst aus den Reaktionen der Anderen aufgebaut wird, wobei Goffmans Vorder-/Hinterbühne die Inszenierung erklärt. B erfordert Verfahren (ii): Der Befund belegt einen Wertewandel — Familie und Sicherheit gewinnen gegenüber früheren Prioritäten an Gewicht; dieser gesellschaftliche Wandel wirkt als Rahmen, innerhalb dessen Jugendliche ihre eigenen Werte aushandeln (Riesman: Gefahr der Außenleitung).
 
@@ -169,9 +173,24 @@ ROLLE: Du bist Mitglied einer Schülervertretung und hältst auf einem Schulforu
 
 SITUATION: An deiner Schule wird über die Abschlussfeier diskutiert. Ältere Lehrkräfte fordern traditionelle Formen, während Mitschülerinnen und Mitschüler die Feier stärker an Familie, Sicherheit und Nachhaltigkeit ausrichten wollen. Eine Shell-Statistik (2002–2019) zeigt, dass Familien- und Sicherheitswerte unter Jugendlichen gestiegen sind. Beurteile in einer zusammenhängenden Stellungnahme (ca. 150 Wörter), ob dieser Wertewandel als Verlust oder als Gewinn für die Jugend zu bewerten ist.
 
+AUFGABE (beurteilen) [AFB III]:
+Beurteilen Sie den Fall in einer zusammenhaengenden Stellungnahme (ca. 150 Woerter) mit Fachbegriff, Wirkungskette und kriteriengeleitetem Urteil.
+
 RUBRIC (30 XP): Benennung des Wertewandels anhand der Statistik (5 XP) | Fachliche Deutung mit mindestens zwei Identitätsmodellen (10 XP) | Analyse der ambivalenten Folgen für die Identitätsentwicklung (10 XP) | Kriteriengeleitetes Urteil (z. B. Kriterium Autonomie) (5 XP).
 
+ERWARTUNGSHORIZONT:
+Teilleistung | Punkte | Alternativweg
+Sachanalyse mit Fachbegriff und Wirkungskette aus dem Material | 6 NP | Andere korrekte Begriffs- und Kettenbelege akzeptieren
+Folgen- und Zielkonfliktanalyse mit Verlierern bzw. Trade-offs | 4 NP | Andere plausible Konflikt- und Folgenbelege akzeptieren
+Kriteriengeleitetes Urteil mit Abwaegung und Handlungsempfehlung | 5 NP | Alternative Urteile mit gleicher Abwaegungslogik akzeptieren
+
 Klausur-Satz: `Die Klausurleistung zeigt sich an der Stufenzuordnung: Szene nennen, Mead- oder Erikson-Kategorie anlegen, Festlegungsgrad bestimmen.`
+
+KERNSATZ (auswendig):
+`Wertewandel bezeichnet die Verschiebung gesellschaftlicher Wertprioritäten, die den Rahmen der individuellen Identitätsarbeit verändert.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Wertewandel bezeichnet die Verschiebung gesellschaftlicher Wertprioritäten | die den Rahmen | der individuellen Identitätsarbeit verändert.
+- Selbsttest: Wertewandel bezeichnet ___ Verschiebung gesellschaftlicher Wertprioritäten, die den Rahmen der individuellen Identitätsarbeit verändert.
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Was der Krisenstab lernt
 
 TAKEAWAY 1盒（核心总结）：

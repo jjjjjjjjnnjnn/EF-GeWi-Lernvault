@@ -8,7 +8,7 @@ operatoren: [darstellen, analysieren, begründen]
 klausurrelevant: true
 datum: 2026-09-26
 tags: [EF, SoWi, Politik]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Partizipation (L1, Ziel Klausur)
@@ -111,9 +111,13 @@ Lege im Tool Pro- und Contra-Argumente auf die Waage und gewichte jedes Argument
 AUFGABE Waage-Raetsel (AFB II): Lege auf [Werkzeug: balance-board] Wahlbeteiligung nach Alter gegen E-Kampagne. Gewichte Kosten, Wirkung und Dauer und pruefe, ob die Senkung der Kosten allein Bindung schafft.
 
 HILFE:
-1. Schritt 1: Notiere Beteiligungsquoten nach Alter.
-2. Schritt 2: Gewichte die drei Formen von 1 bis 5.
-3. Schritt 3: Deute an Teilhabe und formuliere den Klausur-Satz.
+- Richtung: Zuerst die einschlaegige Regel und die zu pruefenden Begriffe aus dem Werkzeugkoffer bestimmen, danach das Material diesen Begriffen zuordnen.
+- Richtung: Danach Mengen- bzw. Rollenreaktion auf beiden Seiten getrennt deuten und die Differenz als Ergebnisspannung mit Urteil-Ansatz festhalten.
+
+
+COMPLETION (Lueckentext):
+- Der erste Pruefschritt lautet ___; ihm wird das einschlaegige Merkmal aus dem Material zugeordnet.
+- Das Ergebnis lautet ___; die Spannung wird mit Regel plus Urteil-Ansatz begruendet.
 
 MUSTERLOESUNG: Die Waage zeigt: Digitale Senkung hebt den Klick, nicht die Bindung. Die Jugend partizipiert anders: Nichtwahl heisst nicht Desinteresse, doch ohne Organisation verpufft die Wirkung.
 
@@ -165,10 +169,22 @@ Klausur-Satz: `Direkte Demokratie kann die repräsentative Demokratie ergänzen,
 
 ROLLE: Du bist Teilnehmerin bzw. Teilnehmer an einer simulierten Buergerversammlung zum Klimaschutz.
 SITUATION: Die Stadt will einen Buergerrat zum Thema Verkehr einrichten. Ein Teil der Anwesenden haelt das fuer echte Teilhabe, ein anderer Teil nennt es eine Alibi-Veranstaltung, weil die Empfehlungen nicht bindend sind. Beurteile in einer zusammenhängenden Stellungnahme (ca. 150 Wörter), ob ein Bürgerrat die politische Beteiligung stärkt, und begründe dein Urteil mit mindestens zwei Argumenten.
-AUFGABE (AFB III): Verfasse eine zusammenhaengende Darstellung von etwa 150 Woertern mit Kriterium, Anwendung und Urteil.
+AUFGABE (AFB III): Verfasse eine zusammenhaengende Darstellung von etwa 150 Woertern mit Kriterium, Anwendung und Urteil. [AFB III]:
 RUBRIC (30 XP): These mit Kriterium Teilhabe und Minderheitenschutz (5 XP) | Darstellung von konventioneller und unkonventioneller Form (10 XP) | Anwendung auf Buergerat mit Verbindlichkeit und Repraesentation (10 XP) | Fazit mit Fachbegriffen und Klausur-Satz (5 XP).
 
+ERWARTUNGSHORIZONT:
+Teilleistung | Punkte | Alternativweg
+Sachanalyse mit Fachbegriff und Wirkungskette aus dem Material | 6 NP | Andere korrekte Begriffs- und Kettenbelege akzeptieren
+Folgen- und Zielkonfliktanalyse mit Verlierern bzw. Trade-offs | 4 NP | Andere plausible Konflikt- und Folgenbelege akzeptieren
+Kriteriengeleitetes Urteil mit Abwaegung und Handlungsempfehlung | 5 NP | Alternative Urteile mit gleicher Abwaegungslogik akzeptieren
+
 Klausur-Satz: `Die Partizipationsklausur trennt erst Form, Legalitaet und soziale Traegerschaft, bevor sie Krise oder Wandel diagnostiziert.`
+
+KERNSATZ (auswendig):
+`E-Partizipation senkt die Kosten der Beteiligung, ersetzt aber keine dauerhafte politische Organisation.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- E-Partizipation senkt die Kosten der Beteiligung | ersetzt aber keine | dauerhafte politische Organisation.
+- Selbsttest: E-Partizipation ___ die Kosten der Beteiligung, ersetzt aber keine dauerhafte politische Organisation.
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Was der Krisenstab lernt
 
 TAKEAWAY (Kernbotschaft in einem Kasten):

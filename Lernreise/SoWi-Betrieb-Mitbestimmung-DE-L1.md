@@ -8,7 +8,7 @@ operatoren: [darstellen, analysieren, beurteilen]
 klausurrelevant: true
 datum: 2026-09-26
 tags: [EF, SoWi, Wirtschaft]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Betrieb und Mitbestimmung (L1, Ziel Klausur)
@@ -112,9 +112,13 @@ Lege im Tool Pro- und Contra-Argumente auf die Waage und gewichte jedes Argument
 AUFGABE Waage-Raetsel (AFB II): Spiele auf [Werkzeug: balance-board] eine Tarifrunde: Fordere plus sieben Prozent Lohn. Gewichte Pro-Betrieb gegen Pro-Team, ziehe die Streik-Karte nur als letztes Mittel und begruende das Ergebnis mit Tarifautonomie und Betriebsfrieden.
 
 HILFE:
-1. Schritt 1: Lege Forderungen und Angebote auf.
-2. Schritt 2: Gewichte eins bis fuenf, simuliere Runden.
-3. Schritt 3: Deute an Sozialpartnerschaft und formuliere den Klausur-Satz.
+- Richtung: Zuerst die einschlaegige Regel und die zu pruefenden Begriffe aus dem Werkzeugkoffer bestimmen, danach das Material diesen Begriffen zuordnen.
+- Richtung: Danach Mengen- bzw. Rollenreaktion auf beiden Seiten getrennt deuten und die Differenz als Ergebnisspannung mit Urteil-Ansatz festhalten.
+
+
+COMPLETION (Lueckentext):
+- Der erste Pruefschritt lautet ___; ihm wird das einschlaegige Merkmal aus dem Material zugeordnet.
+- Das Ergebnis lautet ___; die Spannung wird mit Regel plus Urteil-Ansatz begruendet.
 
 MUSTERLOESUNG: Nach zwei Runden ohne Einigung droht Arbeitskampf als Druck. Eine Einigung bei plus vier Prozent plus Mitsprache wahrt Tarifautonomie: Arbeitskampf nur nach Scheitern als legitim, Mitbestimmung sichert Akzeptanz gegen Tempoverlust.
 
@@ -164,10 +168,22 @@ Klausur-Satz: `Die paritätische Mitbestimmung verhindert Konflikteskalation, ve
 
 ROLLE: Du bist Mitglied des Betriebsrats und verhandelst mit der Geschaeftsleitung ueber die Einfuehrung von Kurzarbeit.
 SITUATION: Wegen Auftragsueckgangs will die Geschaeftsleitung Personal entlassen. Der Betriebsrat schlaegt stattdessen Kurzarbeit vor, um die Stellen zu sichern. Ein Teil der Belegschaft haelt Kurzarbeit fuer ein schwaches Mittel, ein anderer Teil fuerchtet die Entlassungen. Beurteile in einer zusammenhaengenden Stellungnahme mit etwa 150 Woertern, ob Kurzarbeit hier das geeignete Mittel ist, und begruende dein Urteil mit den Mitspracherechten und dem Stakeholder-Ansatz.
-AUFGABE (AFB III): Verfasse eine zusammenhaengende Darstellung von etwa 150 Woertern mit Kriterium, Anwendung und Urteil.
+AUFGABE (AFB III): Verfasse eine zusammenhaengende Darstellung von etwa 150 Woertern mit Kriterium, Anwendung und Urteil. [AFB III]:
 RUBRIC (30 XP): These mit Kriterium SozialerFrieden (5 XP) | Darstellung von Informations- und Mitspracherechten plus Kurzarbeit (10 XP) | Abwaegung von Weg A gegen Weg B mit Tempo und Akzeptanz (10 XP) | Fazit mit Fachbegriffen und Empfehlung (5 XP)
 
+ERWARTUNGSHORIZONT:
+Teilleistung | Punkte | Alternativweg
+Sachanalyse mit Fachbegriff und Wirkungskette aus dem Material | 6 NP | Andere korrekte Begriffs- und Kettenbelege akzeptieren
+Folgen- und Zielkonfliktanalyse mit Verlierern bzw. Trade-offs | 4 NP | Andere plausible Konflikt- und Folgenbelege akzeptieren
+Kriteriengeleitetes Urteil mit Abwaegung und Handlungsempfehlung | 5 NP | Alternative Urteile mit gleicher Abwaegungslogik akzeptieren
+
 Klausur-Satz: `In der Fallloesung zaehlt erst die Ebenenunterscheidung - Betrieb, Unternehmen, Branche - dann die Abwaegung von Beschaeftigung gegen Schutz.`
+
+KERNSATZ (auswendig):
+`Die paritätische Mitbestimmung verhindert Konflikteskalation, verlangsamt aber Entscheidungen.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Die paritätische Mitbestimmung verhindert Konflikteskalation | verlangsamt | aber Entscheidungen.
+- Selbsttest: Die paritätische Mitbestimmung ___ Konflikteskalation, verlangsamt aber Entscheidungen.
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Was der Krisenstab lernt
 
 TAKEAWAY (Kernbotschaft in einem Kasten):

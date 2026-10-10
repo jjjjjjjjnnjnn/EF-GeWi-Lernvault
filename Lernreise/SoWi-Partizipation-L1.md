@@ -8,7 +8,7 @@ operatoren: [darstellen, analysieren, begründen]
 klausurrelevant: true
 datum: 2026-09-25
 tags: [EF, SoWi, Politik]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Partizipation (L1, Ziel Klausur)
@@ -38,7 +38,7 @@ Klausur-Satz: `Jugendliche engagieren sich stark sozial und politisch (NGOs, Fri
 
 ## Schritt 2 — entdecken: Werkzeugkoffer von Buergerbegehren-Aktivist Piet Janssen: 5 Begriffe scharf stellen
 
-PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
+PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文->德语，Evidenz：pretraining降认知负荷）：
 
 中文在上，德语在下：
 
@@ -62,7 +62,7 @@ Klausur-Satz: `Der Weg zum Volksentscheid führt über Initiative, Begehren (Unt
 
 ENTDECKEN（1概念 + 1文字图解）：
 
-中文：参与不等于投票。青年一代的特征是"Soziales Engagement ja, Partei nein"——他们在 NGO、倡议团体、气候罢课里很活跃，却在政党里缺席。给参与分类要用两条轴：一条是体制内还是体制边缘（konventionell / unkonventionell），另一条是合法还是非法；暴力形式无论动机如何都出局。直接民主是猛药：它能纠正代表的偏离、把议题倒逼进议程，但复杂议题容易被情绪化，而且多数决可能压掉少数人的权利——这正是基本权利存在的理由。德国的程序是三级台阶：公民动议 → 公民动议集签名（门槛约 0.5%）→ 公民公决（同意门槛 10–20%，过线才算）。新宠是 Bürgerrat：随机抽公民、专家听证、给出建议，优点是去极化，缺点是建议常常没有约束力。
+中文：参与不等于投票。青年一代的特征是"Soziales Engagement ja, Partei nein"——他们在 NGO、倡议团体、气候罢课里很活跃，却在政党里缺席。给参与分类要用两条轴：一条是体制内还是体制边缘（konventionell / unkonventionell），另一条是合法还是非法；暴力形式无论动机如何都出局。直接民主是猛药：它能纠正代表的偏离、把议题倒逼进议程，但复杂议题容易被情绪化，而且多数决可能压掉少数人的权利——这正是基本权利存在的理由。德国的程序是三级台阶：公民动议 -> 公民动议集签名（门槛约 0.5%）-> 公民公决（同意门槛 10–20%，过线才算）。新宠是 Bürgerrat：随机抽公民、专家听证、给出建议，优点是去极化，缺点是建议常常没有约束力。
 
 文字图解（ASCII 结构图，App支持解析渲染）：
 
@@ -89,7 +89,7 @@ ENTDECKEN（1概念 + 1文字图解）：
 ```
 Kausalkette: Filter aus Ressourcen, Motiven und Gelegenheiten, Spaltung in drinnen und draussen, Wanderung bei Vertrauensverlust, Wirkung erst ueber Organisation, Medien und Parlament. Leere Urnen bedeuten nicht tote Demokratie, sondern oft umgezogene Beteiligung.
 
-因果链：资源动机机会三过滤→体制内（投票入党）vs 体制外（游行网络）分流→信任跌则参与搬家→效果看组织+媒体+议会接力。票箱空了不等于民主死了，可能是参与换了衣服。
+因果链：资源动机机会三过滤->体制内（投票入党）vs 体制外（游行网络）分流->信任跌则参与搬家->效果看组织+媒体+议会接力。票箱空了不等于民主死了，可能是参与换了衣服。
 
 
 Klausur-Satz: `Die Wahlbeteiligung nach Alter zeigt, dass junge Menschen seltener wählen — Nichtwahl ist jedoch nicht gleich Desinteresse.`
@@ -122,10 +122,13 @@ TARGET: Bringt auf dem Verhandlungsbrett beide Waagschalen in die Balance — Be
 AUFGABE (analysieren, AFB II, 10 BE)：Material 1 besteht aus einem Sachtext über eine Online-Petition an den Petitionsausschuss sowie einer Statistik, die zeigt, dass die Wahlbeteiligung der 18- bis 24-Jährigen dauerhaft unter dem Durchschnitt liegt. Analysieren Sie, welche Formen der Partizipation hier sichtbar werden und warum niedrige Wahlbeteiligung nicht mit politischem Desinteresse gleichgesetzt werden darf.
 
 HILFE:
-1. Schritt 1: Formen benennen — E-Partizipation (Online-Petition) ist konventionell, aber niedrigschwellig.
-2. Schritt 2: Daten lesen — Wahlbeteiligung nach Alter im Vergleich zum Durchschnitt.
-3. Schritt 3: Gegenbeleg anführen — Engagement in NGOs oder Protestbewegungen.
-4. Schritt 4: Schlussfolgerung mit Fachbegriff formulieren.
+- Richtung: Zuerst die einschlaegige Regel und die zu pruefenden Begriffe aus dem Werkzeugkoffer bestimmen, danach das Material diesen Begriffen zuordnen.
+- Richtung: Danach Mengen- bzw. Rollenreaktion auf beiden Seiten getrennt deuten und die Differenz als Ergebnisspannung mit Urteil-Ansatz festhalten.
+
+
+COMPLETION (Lueckentext):
+- Der erste Pruefschritt lautet ___; ihm wird das einschlaegige Merkmal aus dem Material zugeordnet.
+- Das Ergebnis lautet ___; die Spannung wird mit Regel plus Urteil-Ansatz begruendet.
 
 MUSTERLÖSUNG: Sichtbar wird zunächst die E-Partizipation: Die Online-Petition an den Petitionsausschuss ist eine konventionelle, aber kostengünstige Beteiligungsform, weil sie ohne großen Aufwand organisiert werden kann. Die Statistik zeigt, dass die Wahlbeteiligung der 18- bis 24-Jährigen unter dem Durchschnitt liegt. Daraus folgt jedoch kein Desinteresse, denn dieselbe Altersgruppe engagiert sich überdurchschnittlich in NGOs und Protestbewegungen; die Beteiligung verschiebt sich also von der Wahlurne zu anderen Formen. Nichtwahl bedeutet daher oft eine Abwendung von Parteien, nicht von Politik.
 
@@ -135,7 +138,7 @@ Klausur-Satz: `E-Partizipation senkt die Kosten der Beteiligung, ersetzt aber ke
 
 VERGLEICH辨别实验（双向辨析：程序眼 vs. 抽选眼）：
 
-VERGLEICH: Wähle erst das Verfahren —【选程序】先判断材料问的是 (i) Verfahrens-Partizipation（一条参与程序怎么走：Volksinitiative → Begehren → Entscheid、门槛、合法性）还是 (ii) Deliberations-Partizipation（参与的质量与合法性：Bürgerrat、Repräsentation、Minderheitenschutz）—— dann lösen.
+VERGLEICH: Wähle erst das Verfahren —【选程序】先判断材料问的是 (i) Verfahrens-Partizipation（一条参与程序怎么走：Volksinitiative -> Begehren -> Entscheid、门槛、合法性）还是 (ii) Deliberations-Partizipation（参与的质量与合法性：Bürgerrat、Repräsentation、Minderheitenschutz）—— dann lösen.
 
 DUELL Weg A (Verfahrens-Partizipation) gegen Weg B (Deliberations-Partizipation): Weg A prueft Verfahrensweg, Quoren und Rechtskonformitaet von Initiative bis Entscheid; Weg B prueft Qualitaet, Repraesentation und Verbindlichkeit von Buergerrat und Teilhabe. Entscheide am Kriterium: Verfahrenssicherheit spricht fuer A, Gleichheit der Stimme und Teilhabe sprechen fuer B.
 
@@ -145,7 +148,7 @@ AUFGABE A (AFB II, 8 BE)：Material 2 schildert, dass eine Initiative gegen ein 
 
 AUFGABE B (AFB II, 8 BE)：Eine Karikatur zeigt einen ausgelosten Bürger, der ein Schild „Empfehlung ohne Wirkung" trägt, während Parlamentarier daneben weiterbeschließen. Erläutern Sie die Aussage mit dem Begriff Bürgerrat.
 
-HILFE: A fragt nach dem Ablauf und den Hürden → Verfahren (i). B fragt nach der Legitimation und Wirkung eines Beteiligungsgremiums → Verfahren (ii).【选程序：材料问"怎么走流程/门槛多少"= 程序程序；材料问"有没有用/有没有授权"= 抽选程序。】
+HILFE: A fragt nach dem Ablauf und den Hürden -> Verfahren (i). B fragt nach der Legitimation und Wirkung eines Beteiligungsgremiums -> Verfahren (ii).【选程序：材料问"怎么走流程/门槛多少"= 程序程序；材料问"有没有用/有没有授权"= 抽选程序。】
 
 ANTWORT: A erfordert Verfahren (i): Nach erfolgreichem Volksbegehren folgt der Volksentscheid, bei dem neben der Mehrheit auch ein Zustimmungsquorum (etwa 10 bis 20 Prozent) erreicht werden muss; zuvor galt für das Begehren ein Unterschriftenquorum von rund 0,5 Prozent. Beide Hürden wirken als Filter. B erfordert Verfahren (ii): Der Bürgerrat besteht aus per Los ausgewählten Bürgern, die nach Expertenanhörungen Empfehlungen abgeben. Die Karikatur kritisiert, dass diesen Empfehlungen die Verbindlichkeit fehlt, weil der Bürgerrat keine demokratische Legitimation durch Wahl besitzt und das Parlament letztlich entscheidet.
 
@@ -179,9 +182,24 @@ ROLLE: Du bist Teilnehmerin bzw. Teilnehmer an einer simulierten Bürgerversamml
 
 SITUATION: Die Stadt will einen Bürgerrat zum Thema Verkehr einrichten. Ein Teil der Anwesenden hält das für echte Teilhabe, ein anderer Teil nennt es eine Alibi-Veranstaltung, weil die Empfehlungen nicht bindend sind. Beurteile in einer zusammenhängenden Stellungnahme (ca. 150 Wörter), ob ein Bürgerrat die politische Beteiligung stärkt, und begründe dein Urteil mit mindestens zwei Argumenten.
 
+AUFGABE (analysieren) [AFB II]:
+Analysieren Sie den Fall in einer zusammenhaengenden Stellungnahme (ca. 150 Woerter) mit Fachbegriff, Wirkungskette und kriteriengeleitetem Urteil.
+
 RUBRIC (30 XP): Benennung von Begriff und Verfahren des Bürgerrats (5 XP) | Analyse der Vorteile — Entpolarisierung, Alltagsperspektive (10 XP) | Analyse der Nachteile — fehlende Legitimation, fehlende Verbindlichkeit (10 XP) | Kriteriengeleitetes Urteil (z. B. Kriterium Verbindlichkeit) (5 XP).
 
+ERWARTUNGSHORIZONT:
+Teilleistung | Punkte | Alternativweg
+Sachanalyse mit Fachbegriff und Wirkungskette aus dem Material | 6 NP | Andere korrekte Begriffs- und Kettenbelege akzeptieren
+Folgen- und Zielkonfliktanalyse mit Verlierern bzw. Trade-offs | 4 NP | Andere plausible Konflikt- und Folgenbelege akzeptieren
+Kriteriengeleitetes Urteil mit Abwaegung und Handlungsempfehlung | 5 NP | Alternative Urteile mit gleicher Abwaegungslogik akzeptieren
+
 Klausur-Satz: `Die Partizipationsklausur trennt erst Form, Legalitaet und soziale Traegerschaft, bevor sie Krise oder Wandel diagnostiziert.`
+
+KERNSATZ (auswendig):
+`E-Partizipation senkt die Kosten der Beteiligung, ersetzt aber keine dauerhafte politische Organisation.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- E-Partizipation senkt die Kosten der Beteiligung | ersetzt aber keine | dauerhafte politische Organisation.
+- Selbsttest: E-Partizipation ___ die Kosten der Beteiligung, ersetzt aber keine dauerhafte politische Organisation.
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Was der Krisenstab lernt
 
 TAKEAWAY 1盒（核心总结）：

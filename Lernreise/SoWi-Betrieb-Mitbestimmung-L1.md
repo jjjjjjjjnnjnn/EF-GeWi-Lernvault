@@ -8,7 +8,7 @@ operatoren: [darstellen, analysieren, beurteilen]
 klausurrelevant: true
 datum: 2026-09-25
 tags: [EF, SoWi, Wirtschaft]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Betrieb und Mitbestimmung (L1, Ziel Klausur)
@@ -34,7 +34,7 @@ Klausur-Satz: `Der Betriebsrat vertritt die Belegschaft nach dem Betriebsverfass
 
 ## Schritt 2 — entdecken: Werkzeugkoffer von Marktaufseherin Greta Wolf: 5 Begriffe scharf stellen
 
-PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
+PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文->德语，Evidenz：pretraining降认知负荷）：
 
 中文在上，德语在下：
 
@@ -83,7 +83,7 @@ ENTDECKEN（1概念 + 1文字图解）：
 ```
 Kausalkette: Machtgefälle zwischen Kapital und Arbeit, Ausgleich durch Mitbestimmung auf drei Ebenen, Kostenteilung in der Krise. Der Betriebsrat regelt den Alltag, der Aufsichtsrat die Strategie, die Tarifautonomie die Branche. Konflikte verschwinden nie, sie werden institutionalisiert: Streik und Aussperrung bleiben Ultima Ratio.
 
-因果链：劳资力量不对等→法定共决补权力（企业内职工委员会管日常，监事会管战略，行业层面靠劳资自治）→危机时短工制分担成本。冲突从不消失，只被制度化：罢工与闭厂是最后手段，平时靠谈判桌消化。
+因果链：劳资力量不对等->法定共决补权力（企业内职工委员会管日常，监事会管战略，行业层面靠劳资自治）->危机时短工制分担成本。冲突从不消失，只被制度化：罢工与闭厂是最后手段，平时靠谈判桌消化。
 
 
 Klausur-Satz: `Mitbestimmung kauft sozialen Frieden mit Tempo — ob der Preis in der Transformation 4.0 noch tragbar ist, entscheidet über ihre Zukunft.`
@@ -116,10 +116,13 @@ TARGET: Bringt auf dem Verhandlungsbrett beide Waagschalen in die Balance — Be
 AUFGABE (analysieren, AFB II, 10 BE)：Material 1 (Sachtext) beschreibt, dass eine Gewerkschaft nach gescheiterten Tarifverhandlungen im Personenverkehr zu einem Warnstreik aufruft und der Verkehr stark beeinträchtigt wird. Analysieren Sie den Vorgang mit den Begriffen Tarifautonomie und Arbeitskampf und ordnen Sie die Rolle des Betriebsrats ab.
 
 HILFE:
-1. Schritt 1: Tarifautonomie erklären — wer verhandelt, und warum ohne Staat.
-2. Schritt 2: Streik einordnen — letztes Mittel nach gescheiterten Verhandlungen.
-3. Schritt 3: Betriebsrat abgrenzen — warum er hier nicht streikt.
-4. Schritt 4: Ergebnis mit dem Begriff Sozialpartnerschaft bündeln.
+- Richtung: Zuerst die einschlaegige Regel und die zu pruefenden Begriffe aus dem Werkzeugkoffer bestimmen, danach das Material diesen Begriffen zuordnen.
+- Richtung: Danach Mengen- bzw. Rollenreaktion auf beiden Seiten getrennt deuten und die Differenz als Ergebnisspannung mit Urteil-Ansatz festhalten.
+
+
+COMPLETION (Lueckentext):
+- Der erste Pruefschritt lautet ___; ihm wird das einschlaegige Merkmal aus dem Material zugeordnet.
+- Das Ergebnis lautet ___; die Spannung wird mit Regel plus Urteil-Ansatz begruendet.
 
 MUSTERLÖSUNG: Nach dem Prinzip der Tarifautonomie handeln Gewerkschaften und Arbeitgeberverbände Löhne und Arbeitsbedingungen selbst aus, ohne dass der Staat direkt eingreift. Scheitern die Verhandlungen, gilt der Streik als letztes Mittel des Arbeitskampfes, mit dem die Gewerkschaft Druck aufbaut. Der Betriebsrat ist hier nicht der Akteur, weil er nach dem Betriebsverfassungsgesetz nur Informations-, Beratungs- und Mitbestimmungsrechte besitzt und der Friedenspflicht unterliegt — streiken darf nur die Gewerkschaft. Der Vorgang zeigt damit die Tarifautonomie in Aktion und zugleich die Grenze zwischen betrieblicher Mitbestimmung und Tarifpolitik.
 
@@ -139,7 +142,7 @@ AUFGABE A (AFB II, 8 BE)：Material 2 (Sachtext) berichtet von einem Unternehmen
 
 AUFGABE B (AFB II, 8 BE)：Eine Karikatur zeigt einen Betriebsrat, der mit einem Megafon dasteht, während daneben ein Schild „Friedenspflicht" hängt. Erläutern Sie, welche Rechte der Betriebsrat hat und was ihm fehlt.
 
-HILFE: A fragt nach dem Leitbild des Unternehmens → Verfahren (i). B fragt nach den Rechten und Grenzen der betrieblichen Mitbestimmung → Verfahren (ii).【选程序：材料问"为谁负责"= 模式程序；材料问"怎么参与/有什么权"= 共决程序。】
+HILFE: A fragt nach dem Leitbild des Unternehmens -> Verfahren (i). B fragt nach den Rechten und Grenzen der betrieblichen Mitbestimmung -> Verfahren (ii).【选程序：材料问"为谁负责"= 模式程序；材料问"怎么参与/有什么权"= 共决程序。】
 
 ANTWORT: A erfordert Verfahren (i): Das Handeln folgt dem Stakeholder-Ansatz, weil das Unternehmen nicht nur die Rendite der Anteilseigner, sondern auch Mitarbeiter, Lieferanten und weitere Betroffene berücksichtigt; Investitionen in Weiterbildung und faire Preise dienen dem langfristigen Bestand des Unternehmens. B erfordert Verfahren (ii): Der Betriebsrat hat Informations-, Beratungs- und Mitbestimmungsrechte, etwa bei Kündigungen und Arbeitszeiten; das Megafon steht jedoch für das Streikrecht, das ihm gerade fehlt, weil er der Friedenspflicht unterliegt. Streiken kann nur die Gewerkschaft im Rahmen der Tarifpolitik.
 
@@ -173,9 +176,24 @@ ROLLE: Du bist Mitglied des Betriebsrats und verhandelst mit der Geschäftsleitu
 
 SITUATION: Wegen Auftragsrückgangs will die Geschäftsleitung Personal entlassen. Der Betriebsrat schlägt stattdessen Kurzarbeit vor, um die Stellen zu sichern. Ein Teil der Belegschaft hält Kurzarbeit für ein schwaches Mittel, ein anderer Teil fürchtet die Entlassungen. Beurteile in einer zusammenhängenden Stellungnahme (ca. 150 Wörter), ob Kurzarbeit hier das geeignete Instrument ist, und begründe dein Urteil mit den Mitbestimmungsrechten und dem Stakeholder-Ansatz.
 
+AUFGABE (beurteilen) [AFB III]:
+Beurteilen Sie den Fall in einer zusammenhaengenden Stellungnahme (ca. 150 Woerter) mit Fachbegriff, Wirkungskette und kriteriengeleitetem Urteil.
+
 RUBRIC (30 XP): Benennung der Instrumente (Kurzarbeit vs. Entlassung) und der Rolle des Betriebsrats (5 XP) | Analyse der Mitbestimmungsrechte und der Interessen der Belegschaft (10 XP) | Abwägung der Folgen für Beschäftigte und Unternehmen (10 XP) | Kriteriengeleitetes Urteil (z. B. Kriterium soziale Sicherheit) (5 XP).
 
+ERWARTUNGSHORIZONT:
+Teilleistung | Punkte | Alternativweg
+Sachanalyse mit Fachbegriff und Wirkungskette aus dem Material | 6 NP | Andere korrekte Begriffs- und Kettenbelege akzeptieren
+Folgen- und Zielkonfliktanalyse mit Verlierern bzw. Trade-offs | 4 NP | Andere plausible Konflikt- und Folgenbelege akzeptieren
+Kriteriengeleitetes Urteil mit Abwaegung und Handlungsempfehlung | 5 NP | Alternative Urteile mit gleicher Abwaegungslogik akzeptieren
+
 Klausur-Satz: `In der Fallloesung zaehlt erst die Ebenenunterscheidung - Betrieb, Unternehmen, Branche - dann die Abwaegung von Beschaeftigung gegen Schutz.`
+
+KERNSATZ (auswendig):
+`Die paritätische Mitbestimmung verhindert Konflikteskalation, verlangsamt aber Entscheidungen.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Die paritätische Mitbestimmung verhindert Konflikteskalation | verlangsamt | aber Entscheidungen.
+- Selbsttest: Die paritätische Mitbestimmung ___ Konflikteskalation, verlangsamt aber Entscheidungen.
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Was der Krisenstab lernt
 
 TAKEAWAY 1盒（核心总结）：

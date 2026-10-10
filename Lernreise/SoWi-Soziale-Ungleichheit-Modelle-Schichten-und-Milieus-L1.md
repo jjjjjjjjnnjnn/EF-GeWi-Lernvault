@@ -8,7 +8,7 @@ operatoren: [darstellen, vergleichen, beurteilen]
 klausurrelevant: true
 datum: 2026-10-03
 tags: [EF, SoWi, Gesellschaftsstruktur, Soziale-Ungleichheit, Sinus-Milieus, Schichtmodelle, Bourdieu]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Soziale Ungleichheit: Vom Schichtmodell zum Sinus-Milieu (L1, Ziel Klausur)
@@ -31,7 +31,7 @@ Hook / Phaenomen: Zwei Nachbarn in derselben Berliner Strasse: Der eine ist IT-E
 `Klausur-Satz: Waehrend klassische Schichtmodelle Ungleichheit rein ueber vertikale Parameter (Einkommen, Beruf, Bildung) erfassen, integrieren moderne Sinus-Milieus die horizontale Werteorientierung zur ganzheitlichen Lebensweltanalyse.`
 
 ## Schritt 2 — entdecken: Ausruestungskiste der Soziologie-Unit
-PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
+PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文->德语，Evidenz：pretraining降认知负荷）：
 
 中文在上，德语在下：
 
@@ -97,9 +97,13 @@ In Deutschland besuchen Kinder aus Akademikerfamilien zu ca. 79% eine Universita
 2. Beurteilen Sie vor diesem Hintergrund das Versprechen der "Chancengleichheit und Leistungsgerechtigkeit" in der bundesdeutschen Gesellschaft. (18 BE)
 
 HILFE:
-1. Schritt 1: Vertikales Schichtmodell anwenden: Erklaert das Phaenomen rein oekonomisch: Fehlendes Geld fuer Studiengebuehren/Lebensunterhalt, Risikoaversion bei BAföG.
-2. Schritt 2: Bourdieu-Theorie anwenden: Kulturelles Kapital (Buecher, Wortschatz, akademischer Habitus), soziales Kapital (Netzwerke, Praktikumsvermittlung), symbolische Gewalt (Kinder fuehlen sich an der Uni "fremd").
-3. Schritt 3: Leistungsgesellschaft beurteilen: Illusion der Chancengleichheit $\to$ Herkunft dominiert ueber reine Leistung ("soziale Vererbung").
+- Richtung: Zuerst die einschlaegige Regel und die zu pruefenden Begriffe aus dem Werkzeugkoffer bestimmen, danach das Material diesen Begriffen zuordnen.
+- Richtung: Danach Mengen- bzw. Rollenreaktion auf beiden Seiten getrennt deuten und die Differenz als Ergebnisspannung mit Urteil-Ansatz festhalten.
+
+
+COMPLETION (Lueckentext):
+- Der erste Pruefschritt lautet ___; ihm wird das einschlaegige Merkmal aus dem Material zugeordnet.
+- Das Ergebnis lautet ___; die Spannung wird mit Regel plus Urteil-Ansatz begruendet.
 
 MUSTERLÖSUNG:
 1. Vergleich der Erklaerungskraft:
@@ -137,20 +141,21 @@ PRÜFUNGSSZENARIO (KLP NRW SoWi EF/Q1 Inhaltsfeld 2: Gesellschaftsstruktur und s
 In einer Analyse zur Bundestagswahl stellt ein Politikwissenschaftler fest:
 > "Die traditionellen Volksparteien (SPD und CDU) verlieren ihre einstige Bindungskraft, weil ihre klassischen Stamm-Milieus (das traditionelle Arbeitermilieu fuer die SPD und das buergerlich-konservative katholische Milieu fuer die CDU) demografisch schrumpfen. Gleichzeitig gelingt es Parteien wie den Gruenen oder der AfD, hochgradig spezifische Milieus (das postmaterielle, urbane Milieu einerseits bzw. das nostalgisch-prekaere Milieu andererseits) passgenau anzusprechen."
 
-AUFGABE (darstellen & analysieren, AFB II/III):
+AUFGABE (darstellen) [AFB II/III]:
 1. Stellen Sie die Ursachen fuer den Niedergang traditioneller Milieus anhand des Individualisierungstheorems nach Ulrich Beck dar. (10 BE)
 2. Analysieren Sie, wie Parteien ihre Kommunikation an das Sinus-Milieu-Modell anpassen muessen, um wieder mehrheitsfaehige Volksparteien zu werden. (20 BE)
 
 ERWARTUNGSHORIZONT:
-- AFB II: Ulrich Becks **Individualisierungstheorem** beschreibt drei Dimensionen des Wandels:
-  1. *Freisetzungsdimension*: Die Menschen werden aus traditionellen Klassen-, Dorf-, Familien- und Kirchenbindungen herausgeloest (sozialer Fahrstuhleffekt).
-  2. *Entzauberungsdimension*: Althergebrachte Gewissheiten und kollektive Identitaeten ("Ich bin Arbeiter, also waehle ich SPD") verlieren ihren Glauben und Sinn.
-  3. *Reintegrations- und Kontrolldimension*: Das Individuum wird selbst zum Planungsbuero seiner Biographie; Lebensstile pluralisieren sich massiv.
-  Folglich loesen sich die homogenen Grossmilieus auf, und das Waehlerverhalten wird hochgradig volatil und instabil.
-- AFB III: Um im 21. Jahrhundert als Volkspartei mehrheitsfaehig zu sein, darf eine Partei nicht mehr versuchen, die Gesellschaft ueber eine einzige Klassenidentitaet anzusprechen. Sie muss eine **milieubrueckende Koalition** schmieden:
-  - Sie muss beispielsweise die wirtschaftliche Aufstiegszuversicht der *adaptiven Mitte* mit den oekologischen Zukunftsfragen der *Postmateriellen* und dem Schutzbeduerfnis der *prekaeren Milieus* in einer gemeinsamen Erzaehlung verbinden.
-  - Gelingt ihr dieser Spagat nicht, spaltet sich die Gesellschaft in getrennte Milieu-Lager auf, die sich gegenseitig mit moralischer Verachtung begegnen (Kulturkampf statt politischer Kompromiss).
+Teilleistung | Punkte | Alternativweg
+Sachanalyse mit Fachbegriff und Wirkungskette aus dem Material | 6 NP | Andere korrekte Begriffs- und Kettenbelege akzeptieren
+Folgen- und Zielkonfliktanalyse mit Verlierern bzw. Trade-offs | 4 NP | Andere plausible Konflikt- und Folgenbelege akzeptieren
+Kriteriengeleitetes Urteil mit Abwaegung und Handlungsempfehlung | 5 NP | Alternative Urteile mit gleicher Abwaegungslogik akzeptieren
 
+KERNSATZ (auswendig):
+`materielle Armut und Vermoegensverteilung`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- materielle Armut | und Vermoegensverteilung | Armut und Vermoegensverteilung
+- Selbsttest: materielle Armut und Vermoegensverteilung ___
 ## Schritt 7 — check: Format-Check & Scoring
 30 XP Schnelltest zur Verstaendigungssicherung:
 

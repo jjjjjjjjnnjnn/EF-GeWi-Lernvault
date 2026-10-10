@@ -8,7 +8,7 @@ operatoren: [darstellen, analysieren, gestalten]
 klausurrelevant: true
 datum: 2026-09-25
 tags: [EF, SoWi, Methode]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Gestaltungsaufgabe — Redebeitrag und Handlungsempfehlung (L1, Ziel Klausur)
@@ -27,14 +27,14 @@ HOOK 市长危机（先读剧情，再进 ZIELE）：【本集战役 EP08｜Akt 
 ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
 1. 中文：能说清设计型任务两种格式的骨架——Redebeitrag（场合+回应两点+自己一招+喊话）与 Handlungsempfehlung（数据帽+三限+两条措施+效果链+权限）。
-2. 中文：能按 AFB I→II→III 判断采分点，知道 Gestaltung 属 AFB III，动词是 gestalten / entwickeln。
+2. 中文：能按 AFB I->II->III 判断采分点，知道 Gestaltung 属 AFB III，动词是 gestalten / entwickeln。
 3. 中文：能在 30 分钟计时内搭好骨架、写出两条具体措施并自评，并按 AFB III 给出一个带后果论证的 gestalten。
 
 Klausur-Satz: `Die Aufgabenarten C und D enden jeweils mit einer Gestaltungsaufgabe (AFB III); die Operatoren lauten gestalten Sie oder entwickeln Sie.`
 
 ## Schritt 2 — entdecken: Werkzeugkoffer von Wohnungsamtsleiterin Ingrid Sommer: 5 Begriffe scharf stellen
 
-PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
+PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文->德语，Evidenz：pretraining降认知负荷）：
 
 中文在上，德语在下：
 
@@ -58,7 +58,7 @@ Klausur-Satz: `Der Redebeitrag verlangt Anlassbezug, die Auseinandersetzung mit 
 
 ENTDECKEN（1概念 + 1文字图解）：
 
-中文：设计型任务是第三题，也是最容易"看着自由、其实有格子"的题。它有两种格式，题干里的身份词就是开关。若是"作为嘉宾回应前一位发言"——写 Redebeitrag：开头点场合与听众，接住前文两点（同意哪句、反驳哪句，具体到行），自己补一条新建议，结尾喊话。若是"作为鉴定人给出建议"——写 Handlungsempfehlung：先戴数据帽（谁发布、什么图、哪几年），再讲三限（能说什么、缺了什么、哪项过期），然后给两条措施，每条配一条效果链（措施→受益者→后果→代价），最后点名收件人的权限。计时是命门：EF 试卷 90 分钟，材料分析两题占前段，Gestaltung 大约留 30 分钟——10 分钟搭骨架、15 分钟写正文、5 分钟查权限与副作用。记住：Gestaltung 不给"文采分"，给的是骨架分——四块齐不齐、两条实不实、权限越不越。
+中文：设计型任务是第三题，也是最容易"看着自由、其实有格子"的题。它有两种格式，题干里的身份词就是开关。若是"作为嘉宾回应前一位发言"——写 Redebeitrag：开头点场合与听众，接住前文两点（同意哪句、反驳哪句，具体到行），自己补一条新建议，结尾喊话。若是"作为鉴定人给出建议"——写 Handlungsempfehlung：先戴数据帽（谁发布、什么图、哪几年），再讲三限（能说什么、缺了什么、哪项过期），然后给两条措施，每条配一条效果链（措施->受益者->后果->代价），最后点名收件人的权限。计时是命门：EF 试卷 90 分钟，材料分析两题占前段，Gestaltung 大约留 30 分钟——10 分钟搭骨架、15 分钟写正文、5 分钟查权限与副作用。记住：Gestaltung 不给"文采分"，给的是骨架分——四块齐不齐、两条实不实、权限越不越。
 
 文字图解（ASCII 结构图，App支持解析渲染）：
 
@@ -84,7 +84,7 @@ ENTDECKEN（1概念 + 1文字图解）：
 ```
 Kausalkette: Ziel setzen, Werkzeug waehlen, Anreizreaktion abwarten, Kennzahlen lesen, nachsteuern. Subventionen kosten Geld ohne Signalverzerrung. Deckel kosten wenig und vertreiben Angebot. Bauland wirkt langsam und an der Wurzel.
 
-因果链：定目标（保住户 vs 保供给）→选工具（补贴/限价/供地）→行为人按新激励反应→看指标（租金、空置、新开工）→回炉调整。补贴贵但不扭曲信号，限价便宜但赶走供给，供地慢但治本。
+因果链：定目标（保住户 vs 保供给）->选工具（补贴/限价/供地）->行为人按新激励反应->看指标（租金、空置、新开工）->回炉调整。补贴贵但不扭曲信号，限价便宜但赶走供给，供地慢但治本。
 
  Wirkungsanker: Hoechstpreis $p_{max} = 8 < p_G = 11$ Euro erzeugt $q_N - q_A > 0$ als Warteschlange; Foerderung $s$ pro Einheit verschiebt das Angebot ohne Fixpreis.
 
@@ -110,9 +110,13 @@ TARGET: Hebt die Klausurformel aufs Brett — Bedingung: Dreischritt 30-40-30 ei
 AUFGABE (gestalten, AFB III, 30 BE)：M1 ist eine fiktive Tabelle: In der Stadt B stieg die Jugendarbeitslosigkeit von 2021 bis 2025 von 6,4 % auf 9,1 %; die Ausbildungsplaetze blieben zu 18 % unbesetzt. M2 enthaelt zwei Kurzstimmen: Stimme A (Arbeitgeberverband) warnt, hohe Lohnforderungen kosteten Jobs; Stimme B (Gewerkschaft) fordert, dass Vollzeitarbeit ohne Aufstockung reichen muss. Entwickeln Sie in der Gutachterrolle eine Handlungsempfehlung mit zwei Massnahmen an den Stadtrat, die die Jugendarbeitslosigkeit senken sollen; beruecksichtigen Sie je eine Nebenfolge.
 
 HILFE:
-1. Schritt 1: Datenkappe — Quelle (fiktive Stadtstatistik), Aussagebereich (Jugendarbeitslosigkeit, Ausbildungsplaetze), Grenzen (keine Lohnstruktur, keine Branchenaufteilung).
-2. Schritt 2: Zwei Massnahmen waehlen — z. B. kommunale Ausbildungsfoerderung + Bewerbungscoaching; darauf achten, dass es zwei verschiedene Hebel sind.
-3. Schritt 3: Je eine Wirkungskette mit Nebenfolge — Massnahme → Zielgruppe → Effekt → Kosten/Nebenfolge; am Ende Adressatenkompetenz pruefen (Stadtrat kann keine Lohnpolitik machen).
+- Richtung: Zuerst die einschlaegige Regel und die zu pruefenden Begriffe aus dem Werkzeugkoffer bestimmen, danach das Material diesen Begriffen zuordnen.
+- Richtung: Danach Mengen- bzw. Rollenreaktion auf beiden Seiten getrennt deuten und die Differenz als Ergebnisspannung mit Urteil-Ansatz festhalten.
+
+
+COMPLETION (Lueckentext):
+- Der erste Pruefschritt lautet ___; ihm wird das einschlaegige Merkmal aus dem Material zugeordnet.
+- Das Ergebnis lautet ___; die Spannung wird mit Regel plus Urteil-Ansatz begruendet.
 
 MUSTERLÖSUNG: Zunaechst grenzt die Datenkappe das Material ein: M1 stammt aus einer kommunalen Statistik, beschreibt nur die Jugendarbeitslosigkeit und die Ausbildungsplatzluecke der Stadt B und laesst Lohnstruktur sowie Branchen offen; die Aussage gilt daher nur lokal und kurzfristig. Auf dieser Grundlage empfehle ich dem Stadtrat zwei Massnahmen. Erstens eine kommunale Ausbildungsfoerderung, die Betrieben einen Zuschuss fuer jeden zusaetzlich besetzten Ausbildungsplatz zahlt: Sie senkt die Ausbildungskosten, mehr Jugendliche erhalten einen Platz, die Jugendarbeitslosigkeit sinkt — als Nebenfolge steigt die kommunale Ausgabenlast, und es besteht die Gefahr, dass Betriebe ohnehin geplante Plaetze nur umetikettieren. Zweitens ein Bewerbungscoaching fuer Jugendliche ohne Abschluss: Es verbessert Passung und Selbstvertrauen, die Vermittlung gelingt haeufiger, langfristig sinken Sozialausgaben — Nebenfolge ist der hohe Personalaufwand und die begrenzte Reichweite. Beide Massnahmen liegen in der Kompetenz des Stadtrats; Lohn- und Tariffragen darf er nicht entscheiden und laesst sie daher bewusst offen.
 
@@ -132,7 +136,7 @@ AUFGABE A：„Sie nehmen als Vertreter der Gewerkschaft an einer Podiumsdiskuss
 
 AUFGABE B：„In der Rolle eines Gutachters sollen Sie dem Bundestag zwei Massnahmen zur Bekaempfung von Altersarmut empfehlen." Welches Format ist zu waehlen, und wie ist der Aufbau?
 
-HILFE: A nennt eine Person im Saal und verlangt Reaktion auf einen Vorredner → Format (i) Redebeitrag. B nennt eine Gutachterrolle und verlangt Massnahmen → Format (ii) Handlungsempfehlung.【选程序：题干给"人/回应" → 发言稿；给"数据/两条措施" → 建议书。】
+HILFE: A nennt eine Person im Saal und verlangt Reaktion auf einen Vorredner -> Format (i) Redebeitrag. B nennt eine Gutachterrolle und verlangt Massnahmen -> Format (ii) Handlungsempfehlung.【选程序：题干给"人/回应" -> 发言稿；给"数据/两条措施" -> 建议书。】
 
 ANTWORT: A erfordert Format (i): Der Aufbau folgt der Redebeitrag-Logik — Anlass und Adressat nennen, dann auf die These des Vorredners konkret reagieren (hier: widersprechen und mit dem Argument der Aufstocker begruenden), danach einen eigenen Vorschlag ergaenzen und mit einem Appell an das Publikum schliessen. Der Ton ist rhetorisch, bleibt aber widerspruchsfrei. B erfordert Format (ii): Der Aufbau folgt der Handlungsempfehlung — zuerst eine Datenkappe, falls Material vorliegt, dann zwei konkrete Massnahmen mit je einer Wirkungskette und Nebenfolge, und am Ende die Pruefung der Adressatenkompetenz: Der Bundestag kann Steuern und Transferleistungen gestalten, aber nicht einfach Renten von der Europaeischen Zentralbank verlangen.
 
@@ -164,9 +168,24 @@ Klausur-Satz: `Ohne konkrete Massnahme, ohne Folge und ohne Kompetenzbezug bleib
 
 ROLLE: Du bist Teilnehmer/in eines Klausur-Simulationsdurchgangs und bearbeitest Aufgabe 3 in Echtzeit unter Zeitdruck.
 SITUATION: Die Klausur umfasst drei Aufgaben. Aufgabe 1 (darstellen, AFB I, 24 BE) und Aufgabe 2 (analysieren, AFB II, 46 BE) sind bearbeitet; es bleiben 30 Minuten fuer Aufgabe 3. Gegeben ist ein Materialpaket zu einem fiktiven Vorschlag, die Mehrwertsteuer auf Lebensmittel zu senken. Entscheiden Sie zunaechst, welches Format die Aufgabe verlangt, und entwickeln Sie anschliessend die Gestaltung in 30 Minuten; notieren Sie am Rand Ihre Minutenaufteilung.
+AUFGABE (analysieren) [AFB I]:
+Analysieren Sie den Fall in einer zusammenhaengenden Stellungnahme (ca. 150 Woerter) mit Fachbegriff, Wirkungskette und kriteriengeleitetem Urteil.
+
 RUBRIC (30 XP): Erkennen und Begruenden des Formats anhand des Rollenwortes (5 XP) | Vollstaendigkeit der vier bzw. fuenf Bausteine (10 XP) | Zwei konkrete Massnahmen mit je einer Wirkungskette und Nebenfolge (10 XP) | Adressatenkompetenz und widerspruchsfreier Schluss (5 XP).
 
+ERWARTUNGSHORIZONT:
+Teilleistung | Punkte | Alternativweg
+Sachanalyse mit Fachbegriff und Wirkungskette aus dem Material | 6 NP | Andere korrekte Begriffs- und Kettenbelege akzeptieren
+Folgen- und Zielkonfliktanalyse mit Verlierern bzw. Trade-offs | 4 NP | Andere plausible Konflikt- und Folgenbelege akzeptieren
+Kriteriengeleitetes Urteil mit Abwaegung und Handlungsempfehlung | 5 NP | Alternative Urteile mit gleicher Abwaegungslogik akzeptieren
+
 Klausur-Satz: `Die reife Stellungnahme ordnet erst das Werkzeug, dann die Anreizreaktion und misst beides an Kennzahlen statt an Absichten.`
+
+KERNSATZ (auswendig):
+`Ohne konkrete Massnahme, ohne Folge und ohne Kompetenzbezug bleibt die Gestaltung eine Meinung ohne Handlung.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Ohne konkrete Massnahme | ohne Folge und | ohne Kompetenzbezug bleibt die Gestaltung eine Meinung ohne Handlung.
+- Selbsttest: Ohne konkrete Massnahme, ohne Folge und ohne Kompetenzbezug ___ die Gestaltung eine Meinung ohne Handlung.
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Was der Krisenstab lernt
 
 TAKEAWAY 1盒（核心总结）：

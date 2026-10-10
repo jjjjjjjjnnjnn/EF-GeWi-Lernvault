@@ -8,7 +8,7 @@ operatoren: [darstellen, analysieren, erläutern]
 klausurrelevant: true
 datum: 2026-09-26
 tags: [EF, SoWi, Soziologie]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Sozialisation und Rolle (L1, Ziel Klausur)
@@ -112,7 +112,13 @@ Lege im Tool Pro- und Contra-Argumente auf die Waage und gewichte jedes Argument
 AUFGABE Rollen-Raetsel (AFB II): Verteile im Tool 100 Punkte auf drei Rollen, bis eine Rolle klar dominiert und die Kurve tief haengt. Identifiziere den Inter-Rollenkonflikt, loese ihn per Distanz-Regler und belege die neue Balance mit der veraenderten Kurve.
 
 HILFE:
-1. Schritt 1: Verteile Punkte, lies Kurve und Dominanz. 2. Schritt 2: Benenne Konflikt mit Zeit-Beleg. 3. Schritt 3: Stelle Distanz her, deute an Autonomie und formuliere den Klausur-Satz.
+- Richtung: Zuerst die einschlaegige Regel und die zu pruefenden Begriffe aus dem Werkzeugkoffer bestimmen, danach das Material diesen Begriffen zuordnen.
+- Richtung: Danach Mengen- bzw. Rollenreaktion auf beiden Seiten getrennt deuten und die Differenz als Ergebnisspannung mit Urteil-Ansatz festhalten.
+
+
+COMPLETION (Lueckentext):
+- Der erste Pruefschritt lautet ___; ihm wird das einschlaegige Merkmal aus dem Material zugeordnet.
+- Das Ergebnis lautet ___; die Spannung wird mit Regel plus Urteil-Ansatz begruendet.
 
 MUSTERLOESUNG: Bei stark ungleicher Verteilung haengt die Kurve tief — Zeitmangel belegt den Konflikt zwischen zwei Positionen. Mit Distanz flacht die Kurve ab; Rollen bleiben berechenbar, Freiheit bleibt gewahrt.
 
@@ -164,10 +170,22 @@ Klausur-Satz: `Rollendistanz bedeutet, eine Rolle bewusst zu spielen, ohne die e
 
 ROLLE: Du bist Klassensprecherin bzw. Klassensprecher und moderierst eine Sitzung des Klassenrats.
 SITUATION: In deiner Klasse sollen neue Regeln fuer die Handynutzung beschlossen werden. Ein Teil der Klasse fordert ein striktes Verbot, ein anderer Teil will voellige Freiheit. Zwei Mitschuelerinnen geraten in Streit, weil eine sich an die neue Regel halten will, die andere aber findet, die Regel widerspreche ihrem Gerechtigkeitsgefuehl. Erklaere in einer zusammenhaengenden Stellungnahme (ca. 150 Woerter), wie Regeln ueber Rollen und Sanktionen wirken und wie Rollendistanz helfen kann, den Streit zu entschaerfen.
-AUFGABE (AFB III): Verfasse eine zusammenhaengende Darstellung von etwa 150 Woertern mit Kriterium, Anwendung und Urteil.
+AUFGABE (AFB III): Verfasse eine zusammenhaengende Darstellung von etwa 150 Woertern mit Kriterium, Anwendung und Urteil. [AFB III]:
 RUBRIC (30 XP): These mit Kriterium Berechenbarkeit und Freiheit (5 XP) | Darstellung beider Wege mit Fachbegriffen (10 XP) | Anwendung auf Handy-Streit mit Rollenkonflikt und Distanz (10 XP) | Fazit mit Kompromiss und Ausblick (5 XP).
 
+ERWARTUNGSHORIZONT:
+Teilleistung | Punkte | Alternativweg
+Sachanalyse mit Fachbegriff und Wirkungskette aus dem Material | 6 NP | Andere korrekte Begriffs- und Kettenbelege akzeptieren
+Folgen- und Zielkonfliktanalyse mit Verlierern bzw. Trade-offs | 4 NP | Andere plausible Konflikt- und Folgenbelege akzeptieren
+Kriteriengeleitetes Urteil mit Abwaegung und Handlungsempfehlung | 5 NP | Alternative Urteile mit gleicher Abwaegungslogik akzeptieren
+
 Klausur-Satz: `Die Rollenanalyse benennt erst Position, Erwartungsrang und Konflikttyp und loest dann ueber Prioritaet oder Kompromiss.`
+
+KERNSATZ (auswendig):
+`Ein Inter-Rollenkonflikt entsteht, wenn die Erwartungen zweier Positionen zeitgleich erfuellt werden sollen.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Ein Inter-Rollenkonflikt entsteht | wenn die Erwartungen zweier | Positionen zeitgleich erfuellt werden sollen.
+- Selbsttest: Ein Inter-Rollenkonflikt ___ wenn die Erwartungen zweier Positionen zeitgleich erfuellt werden sollen.
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Was der Krisenstab lernt
 
 TAKEAWAY (Kernbotschaft in einem Kasten):

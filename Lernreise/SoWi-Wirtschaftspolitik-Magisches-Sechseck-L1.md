@@ -8,7 +8,7 @@ operatoren: [darstellen, analysieren, beurteilen]
 klausurrelevant: true
 datum: 2026-09-26
 tags: [EF, SoWi, Wirtschaftspolitik]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Wirtschaftspolitik und Magisches Sechseck (L1, Ziel Klausur)
@@ -73,7 +73,7 @@ Das Stabilitaetsgesetz von 1967 nannte vier Ziele, Umwelt und Verteilung kamen s
 ```
 Kausalkette: Geld ruft Nachfrage, Nachfrage ruft Jobs und Preise, Zinsen bremsen Investitionen und Jobs, Aussenwirtschaft, Verteilung und Umwelt schreiben mit. Kein kostenloses Eck: Jede Bewegung verteilt Lasten auf die anderen Ecken - mit Zeithorizont kurz gegen lang.
 
-因果链：撒钱→需求旺→就业升+物价涨→加息→投资熄+就业回→外贸分配环境再分化。六角无免费午餐：动一角，另五角记账；答题必须点名被牺牲的角和时间跨度（短期/长期）。
+因果链：撒钱->需求旺->就业升+物价涨->加息->投资熄+就业回->外贸分配环境再分化。六角无免费午餐：动一角，另五角记账；答题必须点名被牺牲的角和时间跨度（短期/长期）。
 
 Zielanker: $Y = C + I + G + (X - M)$ treibt Jobs; kurzfristig $\pi \uparrow \Rightarrow u \downarrow$ (Phillips), langfristig frisst $\pi$ das Vertrauen.
 
@@ -91,9 +91,13 @@ TARGET: Zeichnet im Sechseck-Modul alle sechs Ecken mit Plus und Minus; vergleic
 AUFGABE (analysieren, AFB II): Analysieren Sie eine Zinssenkung $i \downarrow$ mit dem Sechseck und $BIP = C + I + G + (Ex - Im)$.
 
 HILFE:
-1. Schritt 1: Liste alle sechs Ziele als Pruefraster auf.
-2. Schritt 2: Verfolge $i \downarrow \to I \uparrow \to Y \uparrow \to u \downarrow$.
-3. Schritt 3: Pruefe Nebenwirkung $\pi \uparrow$ und $Aussen$-$Kurs$.
+- Richtung: Zuerst die einschlaegige Regel und die zu pruefenden Begriffe aus dem Werkzeugkoffer bestimmen, danach das Material diesen Begriffen zuordnen.
+- Richtung: Danach Mengen- bzw. Rollenreaktion auf beiden Seiten getrennt deuten und die Differenz als Ergebnisspannung mit Urteil-Ansatz festhalten.
+
+
+COMPLETION (Lueckentext):
+- Der erste Pruefschritt lautet ___; ihm wird das einschlaegige Merkmal aus dem Material zugeordnet.
+- Das Ergebnis lautet ___; die Spannung wird mit Regel plus Urteil-Ansatz begruendet.
 
 MUSTERLOESUNG: Die Zinssenkung verbilligt Kredite, also steigt $I$ und damit $Y = C + I + G + (Ex - Im)$. Wachstum und Beschaeftigung verbessern sich, weil $u$ faellt. Gleichzeitig droht $\pi > 2\,\%$, weil ausgelastete Kapazitaeten Preise heben; der Aussenwert kann sinken und Verteilung sowie Umwelt leiden, wenn Gewinne staerker steigen als Loehne und Produktion $CO_2$ treibt. Urteil: Kurzfristig expansiv sinnvoll, langfristig inflationsriskant.
 
@@ -143,10 +147,22 @@ Klausur-Satz: `Kein Ziel ist gratis, jede Wirkung hat Nebenwirkung.`
 
 ROLLE: Du bist Praktikant im Wirtschaftsministerium.
 SITUATION: Bei $\pi = 4{,}5\,\%$ und $u = 6\,\%$ fordert die Opposition sofort $G \uparrow$ und $i \downarrow$.
-AUFGABE (beurteilen, AFB III): Beurteilen Sie die Forderung in einer zusammenhaengenden Darstellung (ca. 150 Woerter) mit allen sechs Zielen, $Phillips$-Konflikt und Alternativvorschlag.
+AUFGABE (beurteilen): Beurteilen Sie die Forderung in einer zusammenhaengenden Darstellung (ca. 150 Woerter) mit allen sechs Zielen, $Phillips$-Konflikt und Alternativvorschlag. [AFB III]:
 RUBRIC (30 XP): Alle sechs Ziele genannt (10 XP) | Doppel-Expansionsrisiko $\pi$ begruendet (10 XP) | Alternative mit Zielabwaegung (5 XP) | Geschlossene Darstellung (5 XP).
 
+ERWARTUNGSHORIZONT:
+Teilleistung | Punkte | Alternativweg
+Sachanalyse mit Fachbegriff und Wirkungskette aus dem Material | 6 NP | Andere korrekte Begriffs- und Kettenbelege akzeptieren
+Folgen- und Zielkonfliktanalyse mit Verlierern bzw. Trade-offs | 4 NP | Andere plausible Konflikt- und Folgenbelege akzeptieren
+Kriteriengeleitetes Urteil mit Abwaegung und Handlungsempfehlung | 5 NP | Alternative Urteile mit gleicher Abwaegungslogik akzeptieren
+
 Klausur-Satz: `Die Sechseckklausur benennt erst alle beruehrten Ecken mit Indikator und wuerdigt dann den Trade-off mit Zeithorizont.`
+
+KERNSATZ (auswendig):
+`Sechs Ziele konkurrieren um dieselben Instrumente.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Sechs Ziele | konkurrieren um | dieselben Instrumente.
+- Selbsttest: Sechs Ziele ___ um dieselben Instrumente.
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Was der Krisenstab lernt
 
 TAKEAWAY: Merke Sechs, Zwei, Eins: Sechs Ziele pruefen, zwei Instrumente $G$ und $i$ unterscheiden, ein Urteil mit $Y = C + I + G + (Ex - Im)$ faellen. Expansiv hilft $u$, restriktiv hilft $\pi$.

@@ -8,7 +8,7 @@ operatoren: [darstellen, analysieren, beurteilen]
 klausurrelevant: true
 datum: 2026-09-26
 tags: [EF, SoWi, Wirtschaft]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Tarifautonomie und Gewerkschaften (L1, Ziel Klausur)
@@ -71,7 +71,7 @@ Machtfrage: Organisationsgrad bestimmt Durchsetzungskraft
 ```
 Kausalkette: Organisationsgrad bestimmt Macht, Flaechentarif setzt Boeden, Kampfmittel bleiben Ultima Ratio, Staat greift nur ausnahmsweise ein, Erosion zwingt zur Wahl: Reorganisation oder Staatsersatz. Autonomie heisst nicht staatenlos, sondern Staat auf Abstand.
 
-因果链：组织率定议价力→行业协议定底线→罢工/闭厂当最后语言→国家只在例外（底薪）出手→覆盖率 erosion 倒逼：要么重振组织，要么国家补位。自治不是没国家，而是有距离的国家。
+因果链：组织率定议价力->行业协议定底线->罢工/闭厂当最后语言->国家只在例外（底薪）出手->覆盖率 erosion 倒逼：要么重振组织，要么国家补位。自治不是没国家，而是有距离的国家。
 
 Lohnanker: Boden $w_{min} = 12$ Euro gegenueber Gleichgewicht $w_G$; Deckungsquote $d$ als Erosionsmass sinkt Jahr fuer Jahr.
 
@@ -95,9 +95,13 @@ TARGET: Bringt auf dem Verhandlungsbrett beide Waagschalen in die Balance — Be
 AUFGABE (analysieren, AFB II): Analysieren Sie, warum ein sinkender Organisationsgrad die Tarifbindung schwaecht.
 
 HILFE:
-1. Schritt 1: Funktion von Gewerkschaft und Verband benennen.
-2. Schritt 2: Wirkung auf Verhandlung und Abdeckung zeigen.
-3. Schritt 3: Folge fuer Aussenseiter und Staat ableiten.
+- Richtung: Zuerst die einschlaegige Regel und die zu pruefenden Begriffe aus dem Werkzeugkoffer bestimmen, danach das Material diesen Begriffen zuordnen.
+- Richtung: Danach Mengen- bzw. Rollenreaktion auf beiden Seiten getrennt deuten und die Differenz als Ergebnisspannung mit Urteil-Ansatz festhalten.
+
+
+COMPLETION (Lueckentext):
+- Der erste Pruefschritt lautet ___; ihm wird das einschlaegige Merkmal aus dem Material zugeordnet.
+- Das Ergebnis lautet ___; die Spannung wird mit Regel plus Urteil-Ansatz begruendet.
 
 MUSTERLOESUNG: Tarifverträge gelten zunaechst nur fuer Mitglieder beider Seiten und wirken über Flächentarife faktisch weiter. Sinkt der Organisationsgrad, verlieren Gewerkschaften Drohpotenzial und Arbeitgeber das Interesse an Bindung; mehr Betriebe fliehen in Haustarife oder Tariflosigkeit. Die Abdeckung sinkt, Loehne spreizen sich, und Rufe nach Mindestlohn oder Allgemeinverbindlichkeit wachsen. Der Staat muss dann eingreifen, weil die autonome Ordnung an Reichweite verliert.
 
@@ -145,9 +149,24 @@ Klausur-Satz: `Ohne Friedenspflicht gaebe es keinen verlaesslichen Tarif, ohne S
 
 ROLLE: Du bist Redakteurin der Schuelerzeitung.
 SITUATION: Die Busfahrer kuendigen Warnstreiks an; Eltern fordern ein Verbot. Beurteile in circa 150 Woertern, ob ein Verbot mit Artikel 9 Absatz 3 vereinbar waere, und ordne Warnstreiks in die Eskalationskette ein.
+AUFGABE (beurteilen) [AFB III]:
+Beurteilen Sie den Fall in einer zusammenhaengenden Stellungnahme (ca. 150 Woerter) mit Fachbegriff, Wirkungskette und kriteriengeleitetem Urteil.
+
 RUBRIC (30 XP): Grundrechtsbezug korrekt (8 XP) | Eskalationskette eingeordnet (10 XP) | Abwaegung mit Gemeinwohl (8 XP) | Fachsprachliche Darstellung (4 XP).
 
+ERWARTUNGSHORIZONT:
+Teilleistung | Punkte | Alternativweg
+Sachanalyse mit Fachbegriff und Wirkungskette aus dem Material | 6 NP | Andere korrekte Begriffs- und Kettenbelege akzeptieren
+Folgen- und Zielkonfliktanalyse mit Verlierern bzw. Trade-offs | 4 NP | Andere plausible Konflikt- und Folgenbelege akzeptieren
+Kriteriengeleitetes Urteil mit Abwaegung und Handlungsempfehlung | 5 NP | Alternative Urteile mit gleicher Abwaegungslogik akzeptieren
+
 Klausur-Satz: `Die Tarifklausur prueft erst Zustaendigkeit und Kampfmittelrangfolge und wuerdigt dann Erosion gegen Schutz am Massstab der Machtbalance.`
+
+KERNSATZ (auswendig):
+`Der Organisationsgrad entscheidet ueber die Durchsetzungsfaehigkeit beider Koalitionen.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Der Organisationsgrad | entscheidet ueber die | Durchsetzungsfaehigkeit beider Koalitionen.
+- Selbsttest: Der Organisationsgrad ___ ueber die Durchsetzungsfaehigkeit beider Koalitionen.
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Was der Krisenstab lernt
 
 TAKEAWAY:

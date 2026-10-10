@@ -8,7 +8,7 @@ operatoren: [darstellen, analysieren, beurteilen]
 klausurrelevant: true
 datum: 2026-09-26
 tags: [EF, SoWi, Sozialpolitik]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Sozialstaat und Rentenkrise (L1, Ziel Klausur)
@@ -72,7 +72,7 @@ Kriterium: Wer traegt die Last? Jung / Alt / Steuerzahler
 ```
 Kausalkette: Umlagebilanz im Heute, Geburtenknick plus Langlebigkeit, drei Schrauben plus Steuer, Verlierer je Schraube: Beitrag trifft Jobs und Junge, Niveau trifft Alte, Alter trifft Koerperarbeiter. Systemwechsel tauscht Demografierisiko gegen Marktrisiko plus Doppelbelastung.
 
-因果链：现收现付当期平衡→少子砍基数、长寿加人数拉时长→三旋钮（缴费/水平/年龄）+税补四选→谁疼：企业与年轻人疼缴费、老人疼水平、体力劳动者疼延退。换制度（资本覆盖）只是把人口风险换成市场风险+双重负担。
+因果链：现收现付当期平衡->少子砍基数、长寿加人数拉时长->三旋钮（缴费/水平/年龄）+税补四选->谁疼：企业与年轻人疼缴费、老人疼水平、体力劳动者疼延退。换制度（资本覆盖）只是把人口风险换成市场风险+双重负担。
 
 Bilanzanker: $b \cdot W \cdot Z = R \cdot N$ mit $b = 18{,}6\,\%$; Altenquotient $AQ = N / Z$ steigt; fairer Mix bewegt $b$, $R$ und Alter je ein Stueck.
 
@@ -96,9 +96,13 @@ TARGET: Rechnet mit der Formel b·W·Z=R·N (b=18,6%): Stellt Beitrag, Niveau un
 AUFGABE (analysieren, AFB II): Analysieren Sie, warum ein steigender Altenquotient im Umlageverfahren zu Finanzierungsproblemen fuehrt.
 
 HILFE:
-1. Schritt 1: Umlagegleichung notieren.
-2. Schritt 2: Zaehler und Nenner demografisch veraendern.
-3. Schritt 3: Drei Anpassungen nennen.
+- Richtung: Zuerst die einschlaegige Regel und die zu pruefenden Begriffe aus dem Werkzeugkoffer bestimmen, danach das Material diesen Begriffen zuordnen.
+- Richtung: Danach Mengen- bzw. Rollenreaktion auf beiden Seiten getrennt deuten und die Differenz als Ergebnisspannung mit Urteil-Ansatz festhalten.
+
+
+COMPLETION (Lueckentext):
+- Der erste Pruefschritt lautet ___; ihm wird das einschlaegige Merkmal aus dem Material zugeordnet.
+- Das Ergebnis lautet ___; die Spannung wird mit Regel plus Urteil-Ansatz begruendet.
 
 MUSTERLOESUNG: Im Umlageverfahren finanzieren die laufenden Beitraege die laufenden Renten. Steigt der Altenquotient, entfallen auf jeden Zahler mehr Empfaenger. Bei konstantem Beitragssatz sinkt das finanzierbare Niveau, bei konstantem Niveau muss der Satz steigen. Alternativ laesst sich die Bezugsdauer durch spaeteren Eintritt kuerzen oder die Luecke durch Steuern schliessen. Ohne Anpassung entsteht ein Defizit, weil die Gleichung $Beitrag \times Zahler = Rente \times Empfaenger$ sonst verletzt ist.
 
@@ -146,9 +150,24 @@ Klausur-Satz: `Ohne eine der vier Stellschrauben bleibt die Umlagegleichung bei 
 
 ROLLE: Du bist Sachbearbeiterin im Sozialausschuss.
 SITUATION: Vorgeschlagen wird, Beitragssatz und Rentenniveau gesetzlich gleichzeitig einzufrieren. Beurteile in circa 150 Woertern mit der Umlagegleichung, warum dieser Vorschlag bei alternder Bevoelkerung scheitert, und empfehle eine tragfaehige Kombination.
+AUFGABE (beurteilen) [AFB III]:
+Beurteilen Sie den Fall in einer zusammenhaengenden Stellungnahme (ca. 150 Woerter) mit Fachbegriff, Wirkungskette und kriteriengeleitetem Urteil.
+
 RUBRIC (30 XP): Umlagegleichung korrekt (8 XP) | Demografiewirkung analysiert (10 XP) | Bewertung des Vorschlags (6 XP) | Begruendete Alternative (6 XP).
 
+ERWARTUNGSHORIZONT:
+Teilleistung | Punkte | Alternativweg
+Sachanalyse mit Fachbegriff und Wirkungskette aus dem Material | 6 NP | Andere korrekte Begriffs- und Kettenbelege akzeptieren
+Folgen- und Zielkonfliktanalyse mit Verlierern bzw. Trade-offs | 4 NP | Andere plausible Konflikt- und Folgenbelege akzeptieren
+Kriteriengeleitetes Urteil mit Abwaegung und Handlungsempfehlung | 5 NP | Alternative Urteile mit gleicher Abwaegungslogik akzeptieren
+
 Klausur-Satz: `Die Rentenstellungnahme rechnet erst die Umlagebilanz mit Demografiedruck und verteilt dann die Last begruendet auf Zahler, Rentner und Steuer.`
+
+KERNSATZ (auswendig):
+`Im Umlageverfahren uebersetzt Demografie direkt in Beitrags- oder Leistungsdruck.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Im Umlageverfahren uebersetzt | Demografie direkt in | Beitrags- oder Leistungsdruck.
+- Selbsttest: Im Umlageverfahren ueber___ Demografie direkt in Beitrags- oder Leistungsdruck.
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Was der Krisenstab lernt
 
 TAKEAWAY:

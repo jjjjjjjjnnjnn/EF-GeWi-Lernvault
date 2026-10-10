@@ -8,7 +8,7 @@ operatoren: [darstellen, analysieren, beurteilen]
 klausurrelevant: true
 datum: 2026-09-26
 tags: [EF, SoWi, Ungleichheit]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Soziale Ungleichheit im Ueberblick (L1, Ziel Klausur)
@@ -112,9 +112,13 @@ Ziehe im Tool die Einkommens-Regler der Quintile und beobachte live, wie sich di
 AUFGABE Spiel-Raetsel (AFB II): Stelle im Tool zwei Kohorten ein: oben hoher Anteil, unten niedriger Anteil. Verschiebe drei Punkte von oben nach unten, bis der Trichter sichtbar enger wird. Belege mit Werkzeug-Wert und Sechzig-Prozent-Schwelle, ob Chancengleichheit naeher rueckt.
 
 HILFE:
-1. Schritt 1: Notiere Trichterwerte und Quintile.
-2. Schritt 2: Verschiebe Anteile, lies Werkzeug-Wert ab.
-3. Schritt 3: Deute an Meritokratie und formuliere den Klausur-Satz.
+- Richtung: Zuerst die einschlaegige Regel und die zu pruefenden Begriffe aus dem Werkzeugkoffer bestimmen, danach das Material diesen Begriffen zuordnen.
+- Richtung: Danach Mengen- bzw. Rollenreaktion auf beiden Seiten getrennt deuten und die Differenz als Ergebnisspannung mit Urteil-Ansatz festhalten.
+
+
+COMPLETION (Lueckentext):
+- Der erste Pruefschritt lautet ___; ihm wird das einschlaegige Merkmal aus dem Material zugeordnet.
+- Das Ergebnis lautet ___; die Spannung wird mit Regel plus Urteil-Ansatz begruendet.
 
 MUSTERLOESUNG: Der Trichter belegt Herkunftseffekt; nach Verschiebung sinkt der Wert und die Kurve hebt sich. Erst Form plus Wert plus Schwelle begruenden ein meritokratisches Urteil zu Umverteilung mit Blick auf Geld, Bildung und Netz.
 
@@ -164,10 +168,22 @@ Klausur-Satz: `Die Armutsgefaehrdungsquote misst Armut relativ zum Median-Einkom
 
 ROLLE: Du bist Referentin bei einer Jugendorganisation und sollst auf einer Podiumsdiskussion die Forderung nach mehr Chancengleichheit im Bildungssystem begruenden.
 SITUATION: In deiner Region erreichen Arbeiterkinder nur halb so oft das Abitur wie Akademikerkinder. Ein Teil des Publikums haelt das fuer ein Ergebnis individueller Entscheidungen, ein anderer verlangt staatliche Gegenmassnahmen wie kostenlose Ganztagsbetreuung und ein elternunabhaengiges BAfoeG. Beurteile die Forderung nach mehr Chancengleichheit in einer zusammenhaengenden Stellungnahme mit etwa 150 Woertern.
-AUFGABE (AFB III): Verfasse eine zusammenhaengende Darstellung von etwa 150 Woertern mit Kriterium, Anwendung und Urteil.
+AUFGABE (AFB III): Verfasse eine zusammenhaengende Darstellung von etwa 150 Woertern mit Kriterium, Anwendung und Urteil. [AFB III]:
 RUBRIC (30 XP): Darstellung der Ungleichheit mit den drei Dimensionen und Kapitalarten (6 XP) | Analyse des Bildungstrichters mit Herkunft staerker als Leistung (8 XP) | Abwaegung mit Kriterium Chancengerechtigkeit zu Pro und Contra staatlicher Massnahmen (10 XP) | Kriteriengeleitetes Urteil mit konkreter Forderung (6 XP)
 
+ERWARTUNGSHORIZONT:
+Teilleistung | Punkte | Alternativweg
+Sachanalyse mit Fachbegriff und Wirkungskette aus dem Material | 6 NP | Andere korrekte Begriffs- und Kettenbelege akzeptieren
+Folgen- und Zielkonfliktanalyse mit Verlierern bzw. Trade-offs | 4 NP | Andere plausible Konflikt- und Folgenbelege akzeptieren
+Kriteriengeleitetes Urteil mit Abwaegung und Handlungsempfehlung | 5 NP | Alternative Urteile mit gleicher Abwaegungslogik akzeptieren
+
 Klausur-Satz: `Die Stellungnahme sortiert erst Dimensionen und Mechanik, belegt dann mit Trichter und Quote und urteilt ueber Chancen statt ueber Neid.`
+
+KERNSATZ (auswendig):
+`Ungleichheit wird vererbt, nicht verdient: Wer die Mechanik benennt, streitet ueber Wege statt ueber Wuerde.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Ungleichheit wird vererbt | nicht verdient: Wer die Mechanik benennt | streitet ueber Wege statt ueber Wuerde.
+- Selbsttest: Ungleichheit wird vererbt, nicht verdient: Wer die Mechanik be___, streitet ueber Wege statt ueber Wuerde.
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Was der Krisenstab lernt
 
 TAKEAWAY (Kernbotschaft in einem Kasten):

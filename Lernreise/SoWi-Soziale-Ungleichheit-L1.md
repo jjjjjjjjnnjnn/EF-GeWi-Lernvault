@@ -8,7 +8,7 @@ operatoren: [darstellen, analysieren, beurteilen]
 klausurrelevant: true
 datum: 2026-09-25
 tags: [EF, SoWi, Ungleichheit]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Soziale Ungleichheit im Ueberblick (L1, Ziel Klausur)
@@ -34,7 +34,7 @@ Klausur-Satz: `Soziale Ungleichheit bezeichnet die ungleiche Verteilung von Ress
 
 ## Schritt 2 — entdecken: Werkzeugkoffer von Schuldnerberaterin Maria Bongartz: 5 Begriffe scharf stellen
 
-PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
+PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文->德语，Evidenz：pretraining降认知负荷）：
 
 中文在上，德语在下：
 
@@ -86,7 +86,7 @@ ENTDECKEN（1概念 + 1文字图解）：
 ```
 Kausalkette: Elternressourcen, Wohnviertel und Foerderung, Code-Passung in der Schule, Weichen und Empfehlungen, Abschluss und Ersteinstieg, Einkommen und Vermoegen, Start der naechsten Generation. Bruchstellen heissen Fruehfoerderung, Stipendien und zweite Wege - dort wirkt Politik am billigsten.
 
-因果链：父母资源→居住学区+课外+关系→学校代码匹配度→分流与推荐→学历与首份工作→收入与财富→下一代起点。断链点：早教投入、奖助学金、第二路径；政策在断链处发力最划算。
+因果链：父母资源->居住学区+课外+关系->学校代码匹配度->分流与推荐->学历与首份工作->收入与财富->下一代起点。断链点：早教投入、奖助学金、第二路径；政策在断链处发力最划算。
 
 Bilanzanker: Armutsrisiko $Q \approx 15\,\%$; unterstes Quintil $q_1 \ge 8\,\%$ als Sandkasten-Ziel; Bildungstrichter etwa $70\,\%$ gegen $30\,\%$.
 
@@ -112,9 +112,13 @@ TARGET: Justiert Steuer- und Transferregler so, dass der Gini-Indikator nach Umv
 AUFGABE (analysieren, AFB II, 12 BE)：M1 ist eine Grafik zum Bildungstrichter: Von 100 Kindern aus Akademikerfamilien erreichen etwa 74 ein Studium, von 100 Arbeiterkindern nur etwa 17. Analysieren Sie M1, indem Sie (a) die Aussage der Grafik mit dem Begriff Chancengleichheit verbinden, (b) die Zahlen mit Bourdieus Kapitalarten erklaeren und (c) eine Folge fuer die Demokratie benennen.
 
 HILFE:
-1. Schritt 1: Trend lesen — 顶端比例差说明出身对升学影响大，先写"差距方向"，不写数字堆砌。
-2. Schritt 2: 机制解释 — kulturelles Kapital（家长学历、语言习惯）+ ökonomisches Kapital（补习、学区）+ soziales Kapital（人脉）。
-3. Schritt 3: 后果挂靠 — 机会不平等 → 政治信任下降 → Politikverdrossenheit（书 Kap. 3.4 Vertrauensverlust）。
+- Richtung: Zuerst die einschlaegige Regel und die zu pruefenden Begriffe aus dem Werkzeugkoffer bestimmen, danach das Material diesen Begriffen zuordnen.
+- Richtung: Danach Mengen- bzw. Rollenreaktion auf beiden Seiten getrennt deuten und die Differenz als Ergebnisspannung mit Urteil-Ansatz festhalten.
+
+
+COMPLETION (Lueckentext):
+- Der erste Pruefschritt lautet ___; ihm wird das einschlaegige Merkmal aus dem Material zugeordnet.
+- Das Ergebnis lautet ___; die Spannung wird mit Regel plus Urteil-Ansatz begruendet.
 
 MUSTERLÖSUNG: Die Grafik zeigt eine klare Schere: Akademikerkinder erreichen fast fuenfmal so haeufig ein Studium wie Arbeiterkinder. Damit verletzt die reale Verteilung das Versprechen der Chancengleichheit, denn gleiche Startbedingungen bestehen offensichtlich nicht — der Bildungserfolg haengt staerker von der Herkunft als von der Leistung ab. Mit Bourdieu laesst sich das erklaeren: Akademikerfamilien verfuegen gleichzeitig ueber kulturelles Kapital (Bildung, Sprachstil, Vertrautheit mit der Institution Schule), oekonomisches Kapital (Nachhilfe, guenstige Wohnlage) und soziales Kapital (Netzwerke, die informieren und ermutigen). Arbeiterkinder starten ohne diesen Ruecken und werden im Bildungssystem frueh aussortiert. Die Folge reicht ueber das Individuum hinaus: Wenn Aufstieg als unmoeglich erlebt wird, sinkt das Vertrauen in die Demokratie, weil das meritokratische Versprechen enttäuscht wird.
 
@@ -134,7 +138,7 @@ AUFGABE A：Ein Sachtext argumentiert, hohe Einkommen fuer anspruchsvolle Berufe
 
 AUFGABE B：Ein Sachtext zeigt, dass Kinder aus armen Familien haeufiger krank sind, mehr Unterricht verpassen und spaeter selbst arm bleiben. Welche Lesart ist zu waehlen, und wie ist der Text einzuordnen?
 
-HILFE: A betont Anreiz und Leistung → Lesart (i) Funktionalismus. B zeigt einen Teufelskreis und fehlende Startchancen → Lesart (ii) Konflikttheorie.【选概念：说"激励/合理" → 功能派；说"固化/不公" → 冲突派。】
+HILFE: A betont Anreiz und Leistung -> Lesart (i) Funktionalismus. B zeigt einen Teufelskreis und fehlende Startchancen -> Lesart (ii) Konflikttheorie.【选概念：说"激励/合理" -> 功能派；说"固化/不公" -> 冲突派。】
 
 ANTWORT: A erfordert Lesart (i): Der Text argumentiert funktionalistisch im Sinne der Davis-Moore-These — hohe Einkommen werden als notwendiger Anreiz gedeutet, damit sich Qualifikation und Verantwortung lohnen. Ungleichheit erscheint hier als funktional, nicht als ungerecht. B erfordert Lesart (ii): Der Text argumentiert konflikttheoretisch — die Verkettung von Armut, Gesundheit und Bildung zeigt, dass Lebenschancen vererbt werden und die Startbedingungen ungleich sind. Hier wird Ungleichheit als strukturell und korrekturbeduerftig gedeutet, etwa durch Umverteilung (BAfoeG, progressive Steuern).
 
@@ -166,9 +170,24 @@ Klausur-Satz: `Die Armutsgefaehrdungsquote misst Armut relativ zum Median-Einkom
 
 ROLLE: Du bist Referent/in bei einer Jugendorganisation und sollst auf einer Podiumsdiskussion die Forderung nach mehr Chancengleichheit im Bildungssystem begruenden.
 SITUATION: In deiner Region erreichen Arbeiterkinder nur halb so oft das Abitur wie Akademikerkinder. Ein Teil des Publikums haelt das fuer ein Ergebnis individueller Entscheidungen, ein anderer verlangt staatliche Gegenmassnahmen wie kostenlose Ganztagsbetreuung und ein elternunabhaengiges BAfoeG. Beurteilen Sie in einer zusammenhängenden Stellungnahme (ca. 150 Wörter) die Forderung nach mehr Chancengleichheit.
+AUFGABE (beurteilen) [AFB III]:
+Beurteilen Sie den Fall in einer zusammenhaengenden Stellungnahme (ca. 150 Woerter) mit Fachbegriff, Wirkungskette und kriteriengeleitetem Urteil.
+
 RUBRIC (30 XP): Darstellung der Ungleichheit mit den drei Dimensionen bzw. Kapitalarten (6 XP) | Analyse des Bildungstrichters — Herkunft wirkt staerker als Leistung (8 XP) | Abwaegung mit Kriterium Chancengerechtigkeit — Pro/Contra staatlicher Gegenmassnahmen (10 XP) | Kriteriengeleitetes Urteil mit konkreter Forderung (6 XP).
 
+ERWARTUNGSHORIZONT:
+Teilleistung | Punkte | Alternativweg
+Sachanalyse mit Fachbegriff und Wirkungskette aus dem Material | 6 NP | Andere korrekte Begriffs- und Kettenbelege akzeptieren
+Folgen- und Zielkonfliktanalyse mit Verlierern bzw. Trade-offs | 4 NP | Andere plausible Konflikt- und Folgenbelege akzeptieren
+Kriteriengeleitetes Urteil mit Abwaegung und Handlungsempfehlung | 5 NP | Alternative Urteile mit gleicher Abwaegungslogik akzeptieren
+
 Klausur-Satz: `Die Stellungnahme sortiert erst Dimensionen und Mechanik, belegt dann mit Trichter und Quote und urteilt ueber Chancen statt ueber Neid.`
+
+KERNSATZ (auswendig):
+`Ungleichheit wird vererbt, nicht verdient: Wer die Mechanik benennt, streitet ueber Wege statt ueber Wuerde.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Ungleichheit wird vererbt | nicht verdient: Wer die Mechanik benennt | streitet ueber Wege statt ueber Wuerde.
+- Selbsttest: Ungleichheit wird vererbt, nicht verdient: Wer die Mechanik be___, streitet ueber Wege statt ueber Wuerde.
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Was der Krisenstab lernt
 
 TAKEAWAY 1盒（核心总结）：

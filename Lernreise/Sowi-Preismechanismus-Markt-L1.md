@@ -8,7 +8,7 @@ operatoren: [darstellen, analysieren, beurteilen]
 klausurrelevant: true
 datum: 2026-09-25
 tags: [EF, SoWi, Marktwirtschaft]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Preismechanismus und Marktformen (L1, Ziel Klausur)
@@ -34,7 +34,7 @@ Klausur-Satz: `Der Preismechanismus koordiniert Angebot und Nachfrage über den 
 
 ## Schritt 2 — entdecken: Werkzeugkoffer von Verfassungsanwaeltin Dr. Nora Feld: 5 Begriffe scharf stellen
 
-PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
+PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文->德语，Evidenz：pretraining降认知负荷）：
 
 中文在上，德语在下：
 
@@ -79,7 +79,7 @@ ENTDECKEN（1概念 + 1文字图解）：
 ```
 Kausalkette: Steigendes Angebot, fallende Nachfrage, Schnittpunkt als Gleichgewicht, Korrektur ueber Ueberhaenge, Blockade durch Fixpreis. Der Deckel bei acht Euro unter elf Euro Gleichgewicht heizt Nachfrage an und kuehlt Angebot ab - die Luecke waechst von beiden Seiten.
 
-因果链：供给右上、需求右下→交叉定均衡→偏高则积压压价回落→偏低则抢购抬价回升→国家限价钉死偏离点→回推机制断→短缺或过剩。租金案：8欧上限在11欧均衡之下，需求升供给降，缺口两边长大。
+因果链：供给右上、需求右下->交叉定均衡->偏高则积压压价回落->偏低则抢购抬价回升->国家限价钉死偏离点->回推机制断->短缺或过剩。租金案：8欧上限在11欧均衡之下，需求升供给降，缺口两边长大。
 
 Rechenbeleg: $p_N(q) = 40 - 2q$, $p_A(q) = 10 + q$; Gleichgewicht aus $40 - 2q = 10 + q$ ergibt $q_G = 10$, $p_G = 20$ Euro. Mindestpreis $p_{min} = 25 > p_G$ liefert $q_A = 15$, $q_N = 7{,}5$, also Angebotsueberhang $q_A - q_N = 7{,}5$.
 
@@ -105,9 +105,13 @@ TARGET: Stellt im Sandkasten Angebot und Nachfrage so ein, dass der Gleichgewich
 AUFGABE (berechnen, AFB II)：Auf einem Markt gelten die Nachfragefunktion p_N(q) = 40 - 2q und die Angebotsfunktion p_A(q) = 10 + q (p in Euro, q in Mengeneinheiten). Bestimmen Sie den Gleichgewichtspreis und die Gleichgewichtsmenge. Prüfen Sie anschließend, welche Mengen angeboten und nachgefragt werden, wenn der Staat einen Mindestpreis von 25 Euro festsetzt.
 
 HILFE:
-1. Schritt 1: Im Gleichgewicht gilt p_N(q) = p_A(q). Setze 40 - 2q = 10 + q.
-2. Schritt 2: Löse nach q auf und setze q in eine der beiden Funktionen ein, um p zu erhalten.
-3. Schritt 3: Setze p = 25 in beide Funktionen ein und vergleiche q_A und q_N.
+- Richtung: Zuerst die einschlaegige Regel und die zu pruefenden Begriffe aus dem Werkzeugkoffer bestimmen, danach das Material diesen Begriffen zuordnen.
+- Richtung: Danach Mengen- bzw. Rollenreaktion auf beiden Seiten getrennt deuten und die Differenz als Ergebnisspannung mit Urteil-Ansatz festhalten.
+
+
+COMPLETION (Lueckentext):
+- Der erste Pruefschritt lautet ___; ihm wird das einschlaegige Merkmal aus dem Material zugeordnet.
+- Das Ergebnis lautet ___; die Spannung wird mit Regel plus Urteil-Ansatz begruendet.
 
 MUSTERLÖSUNG: Aus 40 - 2q = 10 + q folgt 30 = 3q, also q_G = 10. Eingesetzt in p_A ergibt sich p_G = 10 + 10 = 20. Der Gleichgewichtspreis beträgt somit 20 Euro bei einer Gleichgewichtsmenge von 10 Einheiten. Bei einem Mindestpreis von 25 Euro liegt der Preis über dem Gleichgewicht: Die Anbieter sind nun zu q_A = 25 - 10 = 15 Einheiten bereit, die Nachfrager verlangen jedoch nur q_N = (40 - 25) / 2 = 7,5 Einheiten. Es entsteht ein Angebotsüberhang von 7,5 Einheiten; der Mindestpreis hat den Markt nicht geräumt, sondern die Räumungsfunktion des Preises außer Kraft gesetzt.
 
@@ -127,7 +131,7 @@ AUFGABE A：Ein Sachtext beschreibt, dass eine Missernte die Weizenernte halbier
 
 AUFGABE B：Ein Sachtext beschreibt, dass die Regierung eine Mietpreisbremse einführt, woraufhin Wohnungen knapp werden und Schattenmärkte entstehen. Welches Verfahren ist zu wählen, und wie lässt sich der Vorgang erklären?
 
-HILFE: A fragt nach dem Selbstausgleich über Preise ohne staatliche Preisgrenze → Verfahren (i). B fragt nach einer staatlich fixierten Preisgrenze und ihren Folgen → Verfahren (ii).【选程序：无价格上限/下限 = 市场程序；有价格上限/下限 = 干预程序。】
+HILFE: A fragt nach dem Selbstausgleich über Preise ohne staatliche Preisgrenze -> Verfahren (i). B fragt nach einer staatlich fixierten Preisgrenze und ihren Folgen -> Verfahren (ii).【选程序：无价格上限/下限 = 市场程序；有价格上限/下限 = 干预程序。】
 
 ANTWORT: A erfordert Verfahren (i): Die Missernte verschiebt die Angebotskurve nach links; da die Nachfrage unverändert bleibt, steigt der Preis bis zum neuen Gleichgewicht und rationiert so die knappe Ware über die Zahlungsbereitschaft — der Preis erfüllt seine Signalfunktion. B erfordert Verfahren (ii): Die Mietpreisbremse wirkt als Höchstpreis unterhalb des Gleichgewichts; bei niedrigerem Preis steigt die Nachfrage, während die Vermieter weniger Wohnraum anbieten, sodass ein Nachfrageüberhang entsteht, der sich in Wartelisten, Fehlallokation und Schattenmärkten äußert.
 
@@ -159,9 +163,24 @@ Klausur-Satz: `Ein staatlicher Mindestpreis entfaltet nur dann ökonomische Wirk
 
 ROLLE: Du bist Referent in einer Verbraucherzentrale und sollst auf einer Podiumsdiskussion die geplante Mietpreisbremse der Stadt fachlich bewerten.
 SITUATION: Die Stadt will per Satzung die Miete auf höchstens 8 Euro pro Quadratmeter festsetzen; der aktuelle Marktmietpreis liegt bei 11 Euro. Ein Teil des Publikums erwartet dadurch billigeren Wohnraum, ein anderer Teil warnt vor Wohnungsmangel. Beurteile die Maßnahme in einer zusammenhängenden Stellungnahme (ca. 150 Wörter) unter Rückgriff auf Preismechanismus und Marktformen.
+AUFGABE (beurteilen) [AFB III]:
+Beurteilen Sie den Fall in einer zusammenhaengenden Stellungnahme (ca. 150 Woerter) mit Fachbegriff, Wirkungskette und kriteriengeleitetem Urteil.
+
 RUBRIC (30 XP): Benennung der Maßnahme als Höchstpreis unterhalb des Gleichgewichts (5 XP) | Analyse der Mengenwirkung — Nachfrage steigt, Angebot sinkt, Nachfrageüberhang (10 XP) | Darlegung der Folgeeffekte — Fehlallokation, Schattenmarkt, sinkende Investitionen in Neubauten (10 XP) | Kriteriengeleitetes Urteil mit Abwägung von Effizienz und sozialer Zielsetzung (5 XP).
 
+ERWARTUNGSHORIZONT:
+Teilleistung | Punkte | Alternativweg
+Sachanalyse mit Fachbegriff und Wirkungskette aus dem Material | 6 NP | Andere korrekte Begriffs- und Kettenbelege akzeptieren
+Folgen- und Zielkonfliktanalyse mit Verlierern bzw. Trade-offs | 4 NP | Andere plausible Konflikt- und Folgenbelege akzeptieren
+Kriteriengeleitetes Urteil mit Abwaegung und Handlungsempfehlung | 5 NP | Alternative Urteile mit gleicher Abwaegungslogik akzeptieren
+
 Klausur-Satz: `Die Miet preisbremse ist als bindender Hoechstpreis unter dem Gleichgewicht zu wuerdigen: Mangellage messen, Schattenmarkt und Neubaufolgen nennen, Effizienz gegen Schutz abwaegen.`
+
+KERNSATZ (auswendig):
+`Ein staatlicher Mindestpreis entfaltet nur dann ökonomische Wirkung, wenn er über dem Gleichgewichtspreis fixiert wird.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Ein staatlicher Mindestpreis entfaltet nur dann ökonomische Wirkung | wenn er über | dem Gleichgewichtspreis fixiert wird.
+- Selbsttest: Ein staatlicher ___ entfaltet nur dann ökonomische Wirkung, wenn er über dem Gleichgewichtspreis fixiert wird.
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Was der Krisenstab lernt
 
 TAKEAWAY 1盒（核心总结）：

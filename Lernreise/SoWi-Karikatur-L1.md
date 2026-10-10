@@ -8,7 +8,7 @@ operatoren: [beschreiben, analysieren, beurteilen]
 klausurrelevant: true
 datum: 2026-09-25
 tags: [EF, SoWi, Methode]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Karikaturanalyse in drei Schritten (L1, Ziel Klausur)
@@ -34,7 +34,7 @@ Klausur-Satz: `Die Karikaturanalyse erfolgt in drei Schritten: beschreiben, anal
 
 ## Schritt 2 — entdecken: Werkzeugkoffer von Tarifschlichter Eugen Brandt: 5 Begriffe scharf stellen
 
-PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
+PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文->德语，Evidenz：pretraining降认知负荷）：
 
 中文在上，德语在下：
 
@@ -85,7 +85,7 @@ ENTDECKEN（1概念 + 1文字图解）：
 ```
 Kausalkette: Beschreiben in hoechstens fuenf Saetzen ohne Deutung, analysieren ueber Symbol, Kontext und Intention, beurteilen ueber Kriterium, Pro, Contra und Urteil. Zeitregel 30, 40, 30. Die Karikatur liefert die These, Daten und Institutionen liefern den Beleg.
 
-因果链：描述（5句只讲画面不解释）→分析（象征翻现实+挂EF章节+点漫画家靶子）→评价（报标准摆正反给判断）。时间30/40/30。漫画只给观点不给数据，论证必须回扣数字与制度，否则把段子当证据。
+因果链：描述（5句只讲画面不解释）->分析（象征翻现实+挂EF章节+点漫画家靶子）->评价（报标准摆正反给判断）。时间30/40/30。漫画只给观点不给数据，论证必须回扣数字与制度，否则把段子当证据。
 
 
 Klausur-Satz: `Der Karikaturist kritisiert ein Phaenomen, indem er es ueberzeichnet; jedes Symbol braucht eine Deutung mit konkretem Realbezug.`
@@ -109,9 +109,13 @@ TARGET: Hebt die Klausurformel aufs Brett — Bedingung: Dreischritt 30-40-30 ei
 AUFGABE (beschreiben + analysieren, AFB I/II, 14 BE)：M1 ist eine selbst erstellte Karikatur: In der Mitte steht eine grosse Waage. Links klettert eine aermlich gekleidete Figur mit schwerem Gepaeck eine Leiter hinauf, rechts faehrt eine elegant gekleidete Figur mit Geldsaecken in einem Aufzug nach oben; unten steht sinngemaess „Chancen fuer alle?". (a) Beschreiben Sie die Karikatur in hoechstens fuenf Saetzen. (b) Analysieren Sie die zentralen Symbole und benennen Sie die Intention.
 
 HILFE:
-1. Schritt 1: Nur beschreiben — Figuren, Kleidung, Objekte (Waage, Leiter, Aufzug, Geldsaecke), Unterschrift. Keine Deutung.
-2. Schritt 2: Symbole uebersetzen — Waage → Verteilungsfrage; Leiter vs. Aufzug → ungleiche Startchancen; Geldsaecke → Kapital.
-3. Schritt 3: Kontext und Intention — EF-Thema soziale Ungleichheit; die Unterschrift ironisiert das Meritokratieversprechen.
+- Richtung: Zuerst die einschlaegige Regel und die zu pruefenden Begriffe aus dem Werkzeugkoffer bestimmen, danach das Material diesen Begriffen zuordnen.
+- Richtung: Danach Mengen- bzw. Rollenreaktion auf beiden Seiten getrennt deuten und die Differenz als Ergebnisspannung mit Urteil-Ansatz festhalten.
+
+
+COMPLETION (Lueckentext):
+- Der erste Pruefschritt lautet ___; ihm wird das einschlaegige Merkmal aus dem Material zugeordnet.
+- Das Ergebnis lautet ___; die Spannung wird mit Regel plus Urteil-Ansatz begruendet.
 
 MUSTERLÖSUNG: (a) Die Karikatur zeigt in der Mitte eine grosse Waage. Links klettert eine aermlich gekleidete Figur mit schwerem Gepaeck eine Leiter hinauf, waehrend rechts eine elegant gekleidete Figur mit Geldsaecken in einem Aufzug nach oben faehrt. Unten steht sinngemaess die Frage „Chancen fuer alle?". Weitere Details wie die unterschiedliche Kleidung und die Geldsaecke stuetzen den ersten Eindruck. Eine Deutung nimmt diese Beschreibung noch nicht vor. (b) Die Waage steht fuer die Verteilungsfrage, Leiter gegen Aufzug fuer ungleiche Startchancen trotz gleichen Versprechens, die Geldsaecke fuer oekonomisches und kulturelles Kapital. Der Kontext ist die soziale Ungleichheit der EF: Der Bildungstrichter belegt, dass die Herkunft den Bildungserfolg staerker praegt als die Leistung. Die Intention des Karikaturisten ist, das Meritokratieversprechen „Chancen fuer alle" als blosse Fassade zu entlarven.
 
@@ -131,7 +135,7 @@ AUFGABE A：Eine Karikatur zeigt eine Person mit Aktentasche und eine mit einem 
 
 AUFGABE B：Eine Karikatur zeigt eine Waage, auf deren einer Seite ein voller Geldsack, auf der anderen ein leerer Teller liegt; daneben steht eine Familie in abgetragener Kleidung. Welches Verfahren ist zu waehlen, und wie ist die Karikatur zu deuten?
 
-HILFE: A stellt zwei gute Ziele gegenueber → Verfahren (ii) Zielkonflikt. B stellt Frage nach Verteilung → Verfahren (i) Verteilungskonflikt.【选程序：分蛋糕 → 分配冲突；两个好目标打架 → 目标冲突。】
+HILFE: A stellt zwei gute Ziele gegenueber -> Verfahren (ii) Zielkonflikt. B stellt Frage nach Verteilung -> Verfahren (i) Verteilungskonflikt.【选程序：分蛋糕 -> 分配冲突；两个好目标打架 -> 目标冲突。】
 
 ANTWORT: A erfordert Verfahren (ii): Der Baum steht fuer die oekologische Lebensgrundlage, Saege und Schornstein fuer Wachstums- und Beschaeftigungsinteressen; es handelt sich um einen Zielkonflikt, nicht um Verteilung. Gedeutet wird er ueber die Externalitaet: Der CO2-Ausstoss wird im Preis nicht abgebildet, es liegt Marktversagen vor, und der Karikaturist kritisiert, dass kurzfristiges Wachstum die langfristige Lebensgrundlage verbraucht. B erfordert Verfahren (i): Die Waage symbolisiert die Verteilungsfrage, der volle Geldsack gegen den leeren Teller die ungleiche Verteilung von Einkommen und Vermoegen; die Familie in abgetragener Kleidung verweist auf relative Armut. Gedeutet wird ueber die Armutsgefaehrdungsquote und die Umverteilung; der Karikaturist kritisiert, dass die Verteilung nicht dem Gerechtigkeitsempfinden entspricht.
 
@@ -163,9 +167,24 @@ Klausur-Satz: `Ohne einen genannten Beurteilungsmassstab bleibt jede Stellungnah
 
 ROLLE: Du bist Klausurteilnehmer/in und bearbeitest eine Karikatur-Aufgabe unter Zeitdruck.
 SITUATION: In der Klausur liegt eine selbst erstellte Karikatur vor: Eine Wahlurne ist als Muelltonne gezeichnet; ein junger Mensch sitzt mit dem Smartphone auf dem Sofa, waehrend draussen Gleichaltrige mit Plakaten demonstrieren. Die Unterschrift lautet sinngemaess „Waehlen? Kein Bock. — Demo? Bin dabei!". Bearbeiten Sie die Aufgabe in 15 Minuten: Beschreiben Sie die Karikatur in hoechstens fuenf Saetzen (AFB I, 6 BE), analysieren Sie die Symbole im Kontext des Partizipationswandels (AFB II, 10 BE) und beurteilen Sie ihre Aussage nach dem Kriterium der Teilhabe (AFB III, 8 BE).
+AUFGABE (beurteilen) [AFB I]:
+Beurteilen Sie den Fall in einer zusammenhaengenden Stellungnahme (ca. 150 Woerter) mit Fachbegriff, Wirkungskette und kriteriengeleitetem Urteil.
+
 RUBRIC (30 XP): Beschreibung ohne Deutung mit Figuren, Objekten und Text (6 XP) | Symboldeutung mit Realbezug und Kontext (Partizipationswandel) (8 XP) | Benennung der Intention des Karikaturisten (4 XP) | Kriterium der Teilhabe, Pro/Contra und begruendetes Urteil (8 XP) | Zeitdisziplin und klare Dreiteilung (4 XP).
 
+ERWARTUNGSHORIZONT:
+Teilleistung | Punkte | Alternativweg
+Sachanalyse mit Fachbegriff und Wirkungskette aus dem Material | 6 NP | Andere korrekte Begriffs- und Kettenbelege akzeptieren
+Folgen- und Zielkonfliktanalyse mit Verlierern bzw. Trade-offs | 4 NP | Andere plausible Konflikt- und Folgenbelege akzeptieren
+Kriteriengeleitetes Urteil mit Abwaegung und Handlungsempfehlung | 5 NP | Alternative Urteile mit gleicher Abwaegungslogik akzeptieren
+
 Klausur-Satz: `Die Transferleistung unterscheidet Verteilungs- von Zielkonflikt und belegt jede Deutung mit Symbol, Realbezug und EF-Kontext.`
+
+KERNSATZ (auswendig):
+`Ohne einen genannten Beurteilungsmassstab bleibt jede Stellungnahme zur Karikatur eine blosse Meinung.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Ohne einen genannten Beurteilungsmassstab | bleibt jede Stellungnahme zur | Karikatur eine blosse Meinung.
+- Selbsttest: Ohne einen genannten Beurteilungsmassstab ___ jede Stellungnahme zur Karikatur eine blosse Meinung.
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Was der Krisenstab lernt
 
 TAKEAWAY 1盒（核心总结）：

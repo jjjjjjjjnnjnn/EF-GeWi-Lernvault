@@ -8,7 +8,7 @@ operatoren: [beschreiben, analysieren, beurteilen]
 klausurrelevant: true
 datum: 2026-09-26
 tags: [EF, SoWi, Methode]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Karikaturanalyse in drei Schritten (L1, Ziel Klausur)
@@ -112,7 +112,13 @@ Ziehe im Tool Satzbausteine aus These und Beleg und Urteil in die richtige Reihe
 AUFGABE Waage-Raetsel (AFB II): Analysiere auf [Werkzeug: formula] eine Verteilungs-Karikatur in drei Schritten. Gewichte Symbole, ordne Realbezug zu und benenne die Kritik des Zeichners.
 
 HILFE:
-1. Schritt 1: Beschreibe neutral ohne Deutung. 2. Schritt 2: Deute je Symbol mit Beleg. 3. Schritt 3: Urteile zur Absicht und formuliere den Klausur-Satz.
+- Richtung: Zuerst die einschlaegige Regel und die zu pruefenden Begriffe aus dem Werkzeugkoffer bestimmen, danach das Material diesen Begriffen zuordnen.
+- Richtung: Danach Mengen- bzw. Rollenreaktion auf beiden Seiten getrennt deuten und die Differenz als Ergebnisspannung mit Urteil-Ansatz festhalten.
+
+
+COMPLETION (Lueckentext):
+- Der erste Pruefschritt lautet ___; ihm wird das einschlaegige Merkmal aus dem Material zugeordnet.
+- Das Ergebnis lautet ___; die Spannung wird mit Regel plus Urteil-Ansatz begruendet.
 
 MUSTERLOESUNG: Waage steht fuer Verteilung, Leiter gegen Aufzug fuer ungleiche Starts. Waage kippt zu Kritik aus Symbol plus Deutung plus Beleg: Gleiches Versprechen bei ungleichen Chancen — Ueberzeichnung mit Realbeleg als Anklage.
 
@@ -164,10 +170,22 @@ Klausur-Satz: `Ohne einen genannten Beurteilungsmassstab bleibt jede Stellungnah
 
 ROLLE: Du bist Klausurteilnehmerin bzw. Klausurteilnehmer und bearbeitest eine Karikatur-Aufgabe unter Zeitdruck.
 SITUATION: In der Klausur liegt eine selbst erstellte Karikatur vor: Eine Wahlurne ist als Muelltonne gezeichnet; ein junger Mensch sitzt mit dem Smartphone auf dem Sofa, waehrend draussen Gleichaltrige mit Plakaten demonstrieren. Die Unterschrift lautet sinngemaess Waehlen Kein Bock, Demo Bin dabei. Bearbeite die Aufgabe in 15 Minuten: Beschreibe die Karikatur in hoechstens fuenf Saetzen, analysiere die Symbole im Kontext des Partizipationswandels und beurteile ihre Aussage nach dem Kriterium der Teilhabe.
-AUFGABE (AFB III): Verfasse eine zusammenhaengende Darstellung von etwa 150 Woertern mit Kriterium, Anwendung und Urteil.
+AUFGABE (AFB III): Verfasse eine zusammenhaengende Darstellung von etwa 150 Woertern mit Kriterium, Anwendung und Urteil. [AFB III]:
 RUBRIC (30 XP): Beschreibung ohne Deutung mit Figuren, Objekten und Text (6 XP) | Symboldeutung mit Realbezug und Kontext Partizipationswandel (8 XP) | Benennung der Intention des Karikaturisten (4 XP) | Kriterium der Teilhabe mit Pro und Contra und begruendetem Urteil (8 XP) | Zeitdisziplin und klare Dreiteilung (4 XP).
 
+ERWARTUNGSHORIZONT:
+Teilleistung | Punkte | Alternativweg
+Sachanalyse mit Fachbegriff und Wirkungskette aus dem Material | 6 NP | Andere korrekte Begriffs- und Kettenbelege akzeptieren
+Folgen- und Zielkonfliktanalyse mit Verlierern bzw. Trade-offs | 4 NP | Andere plausible Konflikt- und Folgenbelege akzeptieren
+Kriteriengeleitetes Urteil mit Abwaegung und Handlungsempfehlung | 5 NP | Alternative Urteile mit gleicher Abwaegungslogik akzeptieren
+
 Klausur-Satz: `Die Transferleistung unterscheidet Verteilungs- von Zielkonflikt und belegt jede Deutung mit Symbol, Realbezug und EF-Kontext.`
+
+KERNSATZ (auswendig):
+`Die Karikaturanalyse erfolgt in drei Schritten: beschreiben, analysieren und beurteilen.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Die Karikaturanalyse erfolgt in drei Schritten: beschreiben | analysieren | und beurteilen.
+- Selbsttest: Die Karikaturanalyse ___ in drei Schritten: beschreiben, analysieren und beurteilen.
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Was der Krisenstab lernt
 
 TAKEAWAY (Kernbotschaft in einem Kasten):

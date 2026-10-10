@@ -8,7 +8,7 @@ operatoren: [analysieren, beurteilen]
 klausurrelevant: true
 datum: 2026-09-26
 tags: [EF, SoWi, Wirtschaft]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Wirtschaftskreislauf und BIP-Kritik (L1, Ziel Klausur)
@@ -34,7 +34,7 @@ Klausur-Satz: `Der erweiterte Wirtschaftskreislauf zeigt die Geld- und Gueterstr
 
 ## Schritt 2 — entdecken: Werkzeugkoffer von Radiomoderatorin Kim Neuhaus: 5 Begriffe scharf stellen
 
-PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语）：
+PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文->德语）：
 
 中文在上，德语在下：
 
@@ -80,7 +80,7 @@ ENTDECKEN（1概念 + 1文字图解）：
 ```
 Kausalkette: Geld gegen Gueter zwischen Haushalt und Firma, Staat glaettet ueber Steuern und Transfers, Aussenhandel oeffnet den Kreis, BIP summiert Endnachfrage, Kritik misst die blinden Flecken. Zwei Schritte in der Klausur: erst Kreis zeichnen und rechnen, dann Grenzen des Thermometers benennen.
 
-因果链：家庭企业钱货对流→国家征税转移平滑→外贸连通世界→BIP加总终端需求→批判三刀（免费不计、污染不扣、分配不问）。做题两步：先画圈算账，再拿批判量体温表的边界。
+因果链：家庭企业钱货对流->国家征税转移平滑->外贸连通世界->BIP加总终端需求->批判三刀（免费不计、污染不扣、分配不问）。做题两步：先画圈算账，再拿批判量体温表的边界。
 
 Verwendungsformel: $Y = C + I + G + (X - M)$ mit $Y$ als BIP; Kritik: unbezahlte Pflege $H$ und Schaeden $D$ fehlen, $Y$ steigt sogar mit $D$.
 
@@ -106,9 +106,13 @@ TARGET: Baut im Kreislauf-Modul fuenf Sektoren mit Geldstrom und Gueterstrom; er
 AUFGABE (analysieren, AFB II)：Analysieren Sie den erweiterten Wirtschaftskreislauf mit seinen fuenf Sektoren und erklaeren Sie in einem Satz die drei Berechnungsarten des BIP.
 
 HILFE:
-1. Schritt 1: Fuenf Sektoren auflisten: Haushalte, Unternehmen, Staat, Banken (Kapitalmarkt), Ausland.
-2. Schritt 2: Zwei Stroeme mit Richtung zeichnen: Geldstrom im Uhrzeigersinn, Gueterstrom dagegen; Staat ueber Steuern/Transfers, Banken ueber Sparen/Investieren, Ausland ueber Ex/Im anbinden.
-3. Schritt 3: BIP-Satz bauen: Entstehungsrechnung summiert Wertschoepfung, Verwendungsrechnung summiert Ausgaben, Verteilungsrechnung summiert Einkommen.
+- Richtung: Zuerst die einschlaegige Regel und die zu pruefenden Begriffe aus dem Werkzeugkoffer bestimmen, danach das Material diesen Begriffen zuordnen.
+- Richtung: Danach Mengen- bzw. Rollenreaktion auf beiden Seiten getrennt deuten und die Differenz als Ergebnisspannung mit Urteil-Ansatz festhalten.
+
+
+COMPLETION (Lueckentext):
+- Der erste Pruefschritt lautet ___; ihm wird das einschlaegige Merkmal aus dem Material zugeordnet.
+- Das Ergebnis lautet ___; die Spannung wird mit Regel plus Urteil-Ansatz begruendet.
 
 MUSTERLÖSUNG: Der erweiterte Kreislauf verbindet Haushalte und Unternehmen im Kerntausch Arbeit gegen Lohn sowie Konsumausgaben gegen Gueter. Der Staat schaltet sich ueber Steuern, Transfers und oeffentliche Gueter ein, die Banken sammeln Ersparnisse und finanzieren Investitionen, das Ausland ist ueber Exporte und Importe verbunden. Geldstroeme fliessen dabei entgegengesetzt zu Gueterstroemen. Das BIP laesst sich dreifach bestimmen: Die Entstehungsrechnung addiert die Wertschoepfung aller Produzenten, die Verwendungsrechnung addiert Konsum plus Investitionen plus Staatsausgaben plus Aussenbeitrag, die Verteilungsrechnung addiert Loehne plus Gewinne plus Nettoabgaben; alle drei messen denselben Kreislauf aus drei Blickwinkeln.
 
@@ -159,9 +163,24 @@ Klausur-Satz: `Das BIP misst Marktwerte eines Jahres, nicht Nachhaltigkeit oder 
 
 ROLLE: Du bist EF-Schuelerin und schreibst einen Leserbrief an die Lokalzeitung.
 SITUATION: Die Stadt feiert ein gestiegenes regionales BIP nach einem Sturmjahr mit viel Wiederaufbau, waehrend Parks zerstoert und viele ehrenamtliche Helfer erschoepft sind. Beurteilen Sie in einer zusammenhaengenden Darstellung (ca. 150 Woerter) die Lage mit dem erweiterten Kreislauf, der BIP-Kritik in vier Punkten und NWI/HDI.
+AUFGABE (beurteilen) [AFB III]:
+Beurteilen Sie den Fall in einer zusammenhaengenden Stellungnahme (ca. 150 Woerter) mit Fachbegriff, Wirkungskette und kriteriengeleitetem Urteil.
+
 RUBRIC (30 XP): Kreislauf mit Sektorbezug korrekt (5 XP) | Drei Berechnungsarten oder Formel C + I + G + (Ex - Im) genannt (5 XP) | Vier Kritikpunkte vollstaendig (10 XP) | NWI/HDI plus begruendetes Urteil Wachstum vs. Wohlfahrt (10 XP).
 
+ERWARTUNGSHORIZONT:
+Teilleistung | Punkte | Alternativweg
+Sachanalyse mit Fachbegriff und Wirkungskette aus dem Material | 6 NP | Andere korrekte Begriffs- und Kettenbelege akzeptieren
+Folgen- und Zielkonfliktanalyse mit Verlierern bzw. Trade-offs | 4 NP | Andere plausible Konflikt- und Folgenbelege akzeptieren
+Kriteriengeleitetes Urteil mit Abwaegung und Handlungsempfehlung | 5 NP | Alternative Urteile mit gleicher Abwaegungslogik akzeptieren
+
 Klausur-Satz: `Die Kreislaufklausur rechnet erst die Verwendung sauber und begrenzt dann das Ergebnis mit drei blinden Flecken.`
+
+KERNSATZ (auswendig):
+`Das BIP misst Marktwerte eines Jahres, nicht Nachhaltigkeit oder Gerechtigkeit.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Das BIP misst Marktwerte eines Jahres | nicht Nachhaltigkeit | oder Gerechtigkeit.
+- Selbsttest: Das BIP ___ Marktwerte eines Jahres, nicht Nachhaltigkeit oder Gerechtigkeit.
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Was der Krisenstab lernt
 
 TAKEAWAY 1盒（核心总结）：

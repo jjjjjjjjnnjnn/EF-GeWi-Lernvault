@@ -8,7 +8,7 @@ operatoren: [darstellen, erläutern, beurteilen]
 klausurrelevant: true
 datum: 2026-09-26
 tags: [EF, SoWi, Politik]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Wehrhafte Demokratie und Extremismus (L1, Ziel Klausur)
@@ -111,9 +111,13 @@ Lege im Tool Pro- und Contra-Argumente auf die Waage und gewichte jedes Argument
 AUFGABE Waage-Raetsel (AFB II): Lege Extremismus-Verdacht auf [Werkzeug: balance-board]. Gewichte Bildung, Beobachtung und Verbot und entscheide, wann praeventive Begleitung genuegt und wann ein Verbot durch das Gericht noetig ist.
 
 HILFE:
-1. Schritt 1: Sammle Belege fuer die Gefahr gegen die Grundordnung.
-2. Schritt 2: Gewichte die drei Stufen von 1 bis 5.
-3. Schritt 3: Deute an Wehrhaftigkeit und formuliere den Klausur-Satz.
+- Richtung: Zuerst die einschlaegige Regel und die zu pruefenden Begriffe aus dem Werkzeugkoffer bestimmen, danach das Material diesen Begriffen zuordnen.
+- Richtung: Danach Mengen- bzw. Rollenreaktion auf beiden Seiten getrennt deuten und die Differenz als Ergebnisspannung mit Urteil-Ansatz festhalten.
+
+
+COMPLETION (Lueckentext):
+- Der erste Pruefschritt lautet ___; ihm wird das einschlaegige Merkmal aus dem Material zugeordnet.
+- Das Ergebnis lautet ___; die Spannung wird mit Regel plus Urteil-Ansatz begruendet.
 
 MUSTERLOESUNG: Beobachtung ist praeventiv ohne Verbotsfolge; ein Verbot verhaengt allein das Gericht nach Art. 21 Abs. 2. Die Waage kippt zum Verbot erst bei aktivem Kampf gegen die Ordnung mit realer Chance: Sonst genuegen Bildung plus Beobachtung.
 
@@ -165,10 +169,22 @@ Klausur-Satz: `Verfassungswidrigkeit allein genügt nicht; erst die fehlende Pot
 
 ROLLE: Du bist Sachverstaendige oder Sachverstaendiger in einer Anhoerung des Innenausschusses zur Frage, ob gegen eine demokratiefeindliche Partei ein Verbotsverfahren eingeleitet werden soll.
 SITUATION: Die Partei erreicht in Umfragen fünf Prozent, verbreitet völkisch-nationalistische Positionen und stellt Wahlen sowie Minderheitenrechte infrage. Ein Teil der Öffentlichkeit fordert ein sofortiges Verbot, ein anderer warnt vor einem Wahlkampfhelfer-Effekt und vor einem Eingriff in die Opposition. Beurteilen Sie in einer zusammenhängenden Stellungnahme (ca. 150 Wörter), ob ein Verbotsverfahren eingeleitet werden sollte, und berücksichtigen Sie dabei die Verhältnismäßigkeit.
-AUFGABE (AFB III): Verfasse eine zusammenhaengende Darstellung von etwa 150 Woertern mit Kriterium, Anwendung und Urteil.
+AUFGABE (AFB III): Verfasse eine zusammenhaengende Darstellung von etwa 150 Woertern mit Kriterium, Anwendung und Urteil. [AFB III]:
 RUBRIC (30 XP): Benennung der Rechtslage mit Gericht und doppelter Huerde (6 XP) | Analyse der Gefahrenlage aus Programm und Agitation (8 XP) | Abwaegung mit Verhaeltnismaessigkeit und Oppositionsschutz (10 XP) | Kriteriengeleitetes Urteil mit klarer Empfehlung (6 XP).
 
+ERWARTUNGSHORIZONT:
+Teilleistung | Punkte | Alternativweg
+Sachanalyse mit Fachbegriff und Wirkungskette aus dem Material | 6 NP | Andere korrekte Begriffs- und Kettenbelege akzeptieren
+Folgen- und Zielkonfliktanalyse mit Verlierern bzw. Trade-offs | 4 NP | Andere plausible Konflikt- und Folgenbelege akzeptieren
+Kriteriengeleitetes Urteil mit Abwaegung und Handlungsempfehlung | 5 NP | Alternative Urteile mit gleicher Abwaegungslogik akzeptieren
+
 Klausur-Satz: `Die Demokratieschutzklausur staffelt Beobachtung, Verbot und Verhaeltnismaessigkeit und ergaenzt jeden Staatsgriff um die gesellschaftliche Antwort.`
+
+KERNSATZ (auswendig):
+`Verfassungswidrigkeit allein genügt nicht; erst die fehlende Potentialität macht das NPD-Verbot von 2017 verständlich.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Verfassungswidrigkeit allein genügt nicht; | erst die fehlende Potentialität macht | das NPD-Verbot von 2017 verständlich.
+- Selbsttest: Verfassungswidrigkeit allein ___ nicht; erst die fehlende Potentialität macht das NPD-Verbot von 2017 verständlich.
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Was der Krisenstab lernt
 
 TAKEAWAY (Kernbotschaft in einem Kasten):

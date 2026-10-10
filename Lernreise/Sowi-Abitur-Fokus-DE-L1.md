@@ -8,7 +8,7 @@ operatoren: [darstellen, analysieren, beurteilen]
 klausurrelevant: true
 datum: 2026-09-26
 tags: [EF, SoWi, Abitur]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Abitur-Fokus IF4 und IF6 (L1, Ziel Klausur)
@@ -112,7 +112,13 @@ Ziehe im Tool Satzbausteine aus These und Beleg und Urteil in die richtige Reihe
 AUFGABE Waage-Raetsel (AFB II): Lege die Mindestlohn-Forderung auf [Werkzeug: formula]. Stelle erst den Markt-Blick mit Eingriff in Tarifautonomie ein, stelle danach den Verteilungs-Blick mit Entlastung unten ein und entscheide per Operator, welche Brille IF4 oder IF6 verlangt.
 
 HILFE:
-1. Schritt 1: Lies Operator und Ziel. 2. Schritt 2: Waehle Markt-Blick oder Verteilungs-Blick. 3. Schritt 3: Deute am Aufgabenbezug und formuliere den Klausur-Satz.
+- Richtung: Zuerst die einschlaegige Regel und die zu pruefenden Begriffe aus dem Werkzeugkoffer bestimmen, danach das Material diesen Begriffen zuordnen.
+- Richtung: Danach Mengen- bzw. Rollenreaktion auf beiden Seiten getrennt deuten und die Differenz als Ergebnisspannung mit Urteil-Ansatz festhalten.
+
+
+COMPLETION (Lueckentext):
+- Der erste Pruefschritt lautet ___; ihm wird das einschlaegige Merkmal aus dem Material zugeordnet.
+- Das Ergebnis lautet ___; die Spannung wird mit Regel plus Urteil-Ansatz begruendet.
 
 MUSTERLOESUNG: In IF4 ist Lohn Eingriff in Tarifautonomie mit Beschaeftigungsrisiko; in IF6 ist Lohn Verteilungsfrage mit Entlastung unten. Waage kippt nach Ziel: Erst Brille waehlen, dann belegen, dann urteilen.
 
@@ -164,10 +170,22 @@ Klausur-Satz: `Die Vorgaben geben Stabilitaet: Wer IF4 ueber Instrumente und IF6
 
 ROLLE: Du bist Tutorin bzw. Tutor in der Oberstufe und leitest eine Wiederholungseinheit zu den Abitur-Fokussierungen.
 SITUATION: Eine Lerngruppe soll in 15 Minuten die drei Modelle der Ungleichheit (Schichten, Lagen, Milieus) jeweils mit Definition, einem Beispiel und einer Grenze aufschreiben und anschliessend begruenden, welches Modell sich fuer die Analyse einer Einkommensstatistik am besten eignet. Fuehre die Uebung durch und beurteile am Ende, welches Modell die beste Passung hat.
-AUFGABE (AFB III): Verfasse eine zusammenhaengende Darstellung von etwa 150 Woertern mit Kriterium, Anwendung und Urteil.
+AUFGABE (AFB III): Verfasse eine zusammenhaengende Darstellung von etwa 150 Woertern mit Kriterium, Anwendung und Urteil. [AFB III]:
 RUBRIC (30 XP): Vollstaendige Definition der drei Modelle Schichten, Lagen und Milieus (9 XP) | Je ein treffendes Beispiel pro Modell (9 XP) | Benennung je einer Grenze pro Modell (6 XP) | Kriteriengeleitetes Urteil zur Modellwahl fuer die Einkommensstatistik (6 XP).
 
+ERWARTUNGSHORIZONT:
+Teilleistung | Punkte | Alternativweg
+Sachanalyse mit Fachbegriff und Wirkungskette aus dem Material | 6 NP | Andere korrekte Begriffs- und Kettenbelege akzeptieren
+Folgen- und Zielkonfliktanalyse mit Verlierern bzw. Trade-offs | 4 NP | Andere plausible Konflikt- und Folgenbelege akzeptieren
+Kriteriengeleitetes Urteil mit Abwaegung und Handlungsempfehlung | 5 NP | Alternative Urteile mit gleicher Abwaegungslogik akzeptieren
+
 Klausur-Satz: `Im Gesamtblick traegt erst die Trennung von freier Preislogik und sozialer Schutzlogik das Urteil, das beide Kriterien ehrlich abwaegt.`
+
+KERNSATZ (auswendig):
+`Die EF-Kapitel 9 und 11 tragen IF4, waehrend die EF-Materialien zu Ungleichheit IF6 fuellen.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Die EF-Kapitel 9 und 11 tragen IF4 | waehrend die EF-Materialien | zu Ungleichheit IF6 fuellen.
+- Selbsttest: Die EF-Kapitel ___ und 11 tragen IF4, waehrend die EF-Materialien zu Ungleichheit IF6 fuellen.
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Was der Krisenstab lernt
 
 TAKEAWAY (Kernbotschaft in einem Kasten):

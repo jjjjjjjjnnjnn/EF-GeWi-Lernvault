@@ -8,7 +8,7 @@ operatoren: [darstellen, analysieren, beurteilen]
 klausurrelevant: true
 datum: 2026-09-28
 tags: [EF, SoWi, Geldanlage, Wirtschaftspolitik]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Wertpapierdepot und Orderarten (L1, Ziel Klausur)
@@ -78,9 +78,13 @@ a) Berechnen Sie den realen Kaufkraftverlust nach 5 Jahren näherungsweise und e
 b) Beurteilen Sie den Vorschlag, das Kapital per unlimitierter Market-Order („Billigst“) vollständig in eine einzelne spekulative Aktie anzulegen.
 
 HILFE:
-1. Realzins r ≈ 0,5 % - 3,0 % = -2,5 % p.a. Nach 5 Jahren entspricht dies ca. 1.190 € realem Verlust.
-2. Tagesgeld maximiert Sicherheit und Liquidität, verfehlt jedoch das Ziel der Rentabilität.
-3. Einzelaktien bergen Klumpenrisiken; unlimitierte Orders führen zu Slippage.
+- Richtung: Zuerst die einschlaegige Regel und die zu pruefenden Begriffe aus dem Werkzeugkoffer bestimmen, danach das Material diesen Begriffen zuordnen.
+- Richtung: Danach Mengen- bzw. Rollenreaktion auf beiden Seiten getrennt deuten und die Differenz als Ergebnisspannung mit Urteil-Ansatz festhalten.
+
+
+COMPLETION (Lueckentext):
+- Der erste Pruefschritt lautet ___; ihm wird das einschlaegige Merkmal aus dem Material zugeordnet.
+- Das Ergebnis lautet ___; die Spannung wird mit Regel plus Urteil-Ansatz begruendet.
 
 MUSTERLÖSUNG:
 a) Gemäß der Fisher-Gleichung beträgt der Realzins r ≈ i - π = 0,5 % - 3,0 % = -2,5 % p.a. Nach 5 Jahren sinkt die reale Güterkaufkraft von 10.000 € auf rund 8.810 € (Verlust von ca. 1.190 €). Im Magischen Dreieck gewährleistet Tagesgeld zwar hohe Sicherheit (§ 4 EinSiG) und tägliche Liquidität, verfehlt jedoch die Rentabilität grundlegend.
@@ -98,7 +102,7 @@ AUFGABE A: Ein Sparer plant in 3 Monaten den Erwerb eines Pkw für 8.000 Euro. W
 
 AUFGABE B: Eine Berufsanfängerin möchte für ihre private Altersvorsorge in 35 Jahren monatlich 100 Euro anlegen. Welches Verfahren ist zu wählen?
 
-HILFE: A benötigt unmittelbare Liquidität ohne jedes Kursrisiko → Verfahren (i). B verfügt über einen mehrdekadischen Anlagehorizont zur Überwindung der Inflation → Verfahren (ii).
+HILFE: A benötigt unmittelbare Liquidität ohne jedes Kursrisiko -> Verfahren (i). B verfügt über einen mehrdekadischen Anlagehorizont zur Überwindung der Inflation -> Verfahren (ii).
 
 ANTWORT: Für A ist Verfahren (i) (Tagesgeld) zwingend: Bei 3 Monaten Fristigkeit dürfen keine Marktschwankungen riskiert werden; der kurzfristige Kaufkraftverlust ist gering. Für B ist Verfahren (ii) (Wertpapierdepot mit breit gestreutem ETF) unverzichtbar: Über 35 Jahre zerstört die Inflation reine Geldguthaben; kurzfristige Kurseinbrüche glätten sich historisch verlässlich aus, während der Zinseszinseffekt voll greift.
 
@@ -128,10 +132,24 @@ Klausur-Satz: `Das Sondervermögen schützt Wertpapiere gesetzlich vor Gläubige
 
 ROLLE: Du bist Referent für Finanzbildung bei der Verbraucherzentrale NRW.
 SITUATION: Ein Berufseinsteiger hat 15.000 Euro geerbt. Seine Hausbank rät, den Betrag komplett auf dem Girokonto zu belassen. Ein Social-Media-Finanzberater empfiehlt dagegen, die Summe per Market-Order vollständig in eine Trend-Einzelaktie zu investieren. Verfasse eine gutachterliche Stellungnahme (ca. 150 Wörter), die die Risiken beider Extrempositionen analysiert und eine kriteriengeleitete Empfehlung auf Basis des Magischen Dreiecks formuliert.
+AUFGABE (beurteilen) [AFB III]:
+Beurteilen Sie den Fall in einer zusammenhaengenden Stellungnahme (ca. 150 Woerter) mit Fachbegriff, Wirkungskette und kriteriengeleitetem Urteil.
+
 RUBRIC (30 XP): Realzinsanalyse des Girokontos (5 XP) | Differenzierung Einlagensicherung vs. Sondervermögen nach § 92 KAGB (10 XP) | Kritik der unlimitierten Einzelaktien-Spekulation (Slippage, Klumpenrisiko) (5 XP) | Ausgewogene Portfoliostruktur (Notgroschen + breit gestreuter Welt-ETF) im Magischen Dreieck (10 XP).
+
+ERWARTUNGSHORIZONT:
+Teilleistung | Punkte | Alternativweg
+Sachanalyse mit Fachbegriff und Wirkungskette aus dem Material | 6 NP | Andere korrekte Begriffs- und Kettenbelege akzeptieren
+Folgen- und Zielkonfliktanalyse mit Verlierern bzw. Trade-offs | 4 NP | Andere plausible Konflikt- und Folgenbelege akzeptieren
+Kriteriengeleitetes Urteil mit Abwaegung und Handlungsempfehlung | 5 NP | Alternative Urteile mit gleicher Abwaegungslogik akzeptieren
 
 Klausur-Satz: `Eine rationale Anlagestrategie teilt Vermögen in liquide Sicherheitsbausteine (Tagesgeld) und diversifizierte Sondervermögen (Welt-ETFs) auf, um das Magische Dreieck auszubalancieren.`
 
+KERNSATZ (auswendig):
+`Das Sondervermögen schützt Wertpapiere gesetzlich vor Gläubigerzugriffen bei Bankenpleiten.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Das Sondervermögen schützt | Wertpapiere gesetzlich vor | Gläubigerzugriffen bei Bankenpleiten.
+- Selbsttest: Das Sondervermögen ___ Wertpapiere gesetzlich vor Gläubigerzugriffen bei Bankenpleiten.
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Was der Krisenstab lernt
 
 TAKEAWAY: Bankeinlagen sind Gläubigerforderungen und erleiden bei Inflation verlässliche Realverluste. Das Wertpapierdepot schützt Produktivkapital als insolvenzfestes Sondervermögen (§ 92 KAGB). Eine rationale Vermögensbildung trennt kurzfristige Liquidität (Tagesgeld mit Einlagensicherung) von langfristigem Vermögensaufbau über breit diversifizierte Welt-ETFs. Im Börsenhandel schützen Limit-Orders vor unkontrollierter Slippage.
