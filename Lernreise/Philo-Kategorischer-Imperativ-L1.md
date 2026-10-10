@@ -8,7 +8,7 @@ operatoren: [darstellen, rekonstruieren, beurteilen]
 klausurrelevant: true
 datum: 2026-09-25
 tags: [EF, Philosophie, Ethik]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Kants kategorischer Imperativ und die Maximenprüfung (L1, Ziel Klausur)
@@ -20,7 +20,7 @@ version: Lesson-v3
 ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
 1. 中文：能说清康德义务论与后果论的根本分界——行为的道德价值不来自后果，而来自准则与出于义务的善良意志。
-2. 中文：能背出定言命令的普遍化公式，并按四步检验法（表述准则 → 升格为普遍法则 → 逻辑矛盾检验 → 意愿矛盾检验）推演案例。
+2. 中文：能背出定言命令的普遍化公式，并按四步检验法（表述准则 -> 升格为普遍法则 -> 逻辑矛盾检验 -> 意愿矛盾检验）推演案例。
 3. 中文：能区分完全义务与不完全义务，并用目的公式指出"把人只当工具"这一失分点。
 
 Hook中文法庭悬念（Tribunal Fall 07：午夜信贷欺诈案）：
@@ -31,9 +31,21 @@ Phaenomen-Satz (DE): Nicht die Folgen stehen vor Gericht, sondern die Maxime hin
 
 Klausur-Satz: `In der Mitternachts-Kreditkammer steht nicht die Kontonummer vor Gericht, sondern ob die Maxime des falschen Versprechens als Gesetz gewollt werden kann.`
 
+[Option A] Erste Position
+- 若选A，你在Step 4-5重点检验A侧的分析工具。
+
+[Option B] Zweite Position
+- 若选B，你在Step 4-5重点检验B侧的分析工具。
+
+AUFLÖSUNG (nach der Wahl lesen)
+中文机制说明A：A侧用Kategorischer Imperativ检验是否成立，重点看该标准在本案是否被触发。
+Mechanismus A im Detail: Pruefung mit Kategorischer Imperativ als Massstab, ohne das Urteil vorwegzunehmen.
+中文机制说明B：B侧用Maxime做对照检验，重点看其边界何时止步。
+Mechanismus B im Detail: Gegenprobe mit Maxime als Schranke, getrennt vom ersten Gang.
+一句话本质：Erste Position prueft den Massstab, Zweite Position prueft die Schranke; erst beide Gaenge zusammen tragen das Urteil.
 ## Schritt 2 — entdecken: 五件法袍：命令 准则 普遍化 善意 尊严
 
-PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，三层结构）：
+PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文->德语，三层结构）：
 
 中文在上，德语在下：
 
@@ -105,9 +117,13 @@ AUFGABE (rekonstruieren, AFB II)：Prüfen Sie die Maxime Ich will mir Geld leih
 Target：左侧放 Maxime plus Vorteil，右侧放 Denkbarkeit plus Wollbarkeit plus Wuerde，每项权重 1 bis 5；当右侧以 Denkwiderspruch 胜出且能说出 vollkommene Pflicht 时通关。
 
 HILFE:
-1. Schritt 1: Formuliere die Maxime in der Form Wenn ich in Situation X bin, will ich Handlung Y tun, um Zweck Z zu erreichen, mit Z.2 bis Z.3.
-2. Schritt 2: Setze die Maxime als allgemeines Gesetz mit Z.4 bis Z.5 und stelle dir eine Welt vor, in der alle Menschen so handeln.
-3. Schritt 3: Prüfe Denkwiderspruch mit Z.6 bis Z.9 und Wollenswiderspruch mit Z.10 bis Z.12 und ordne die Pflichtart mit Z.13 bis Z.14 zu.
+- Erster Zugang: Ordne das Fallmaterial mit Kategorischer Imperativ aus Schritt 2, ohne schon zu werten.
+- Zweiter Zugang: Lege die Gegenprobe mit Maxime getrennt daneben, ohne die Seiten zu vermischen.
+- Schreibe beide Pruefgaenge getrennt auf und nenne noch kein Urteil und keine Zeilenloesung.
+
+COMPLETION (Lückentext):
+- 中文说明：根据MUSTERLÖSUNG补全关键判断，不回看上文。
+- Ergaenze: Die ___-Pruefung mit Kategorischer Imperativ scheidet Kategorischer Imperativ von Maxime, weil ___ das Urteil begrenzt.
 
 MUSTERLÖSUNG：中文：准则升格后承诺概念瓦解，无人再放贷，准则自毁基础，属逻辑矛盾，触犯完全义务，绝对禁止；同时把放贷人只当工具，违反目的公式。
 MUSTERLOESUNG (DE): Die Maxime nach Z.3 zerstoert universalisiert mit Z.6 bis Z.8 ihre eigene Grundlage als Denkwiderspruch gegen vollkommene Pflicht und degradiert den Verleiher nach Z.13 bis Z.14 zum blossen Mittel.
@@ -126,7 +142,7 @@ Weg B (Utilitarismus, Folgen und Gesamtwohl)：机制为受影响者、苦乐、
 AUFGABE A：Jemand will in Geldnot ein falsches Versprechen geben, um sich einen Vorteil zu verschaffen. Pruefen Sie mit Weg A Universalisierung und Selbstzweckformel und formulieren Sie ein Urteil.
 AUFGABE B：Jemand will das Festbudget spenden statt feiern, weil es mehr Leid lindert. Pruefen Sie mit Weg B Folgenbilanz und Gesamtwohl und formulieren Sie ein Urteil.
 
-HILFE: A 问承诺与尊严 → Weg A。B 问总体福利 → Weg B。【选程序：逻辑崩塌选完全义务；总体算账选功利。】
+HILFE: A 问承诺与尊严 -> Weg A。B 问总体福利 -> Weg B。【选程序：逻辑崩塌选完全义务；总体算账选功利。】
 
 ANTWORT: A erfordert Weg A: Universalisiert bricht die Institution des Versprechens nach Z.6 bis Z.8 zusammen als Denkwiderspruch gegen vollkommene Pflicht, strikt verboten. B erfordert Weg B: Der Verzicht mehrt das Gesamtwohl deutlich und mindert grosses Leid, daher geboten.
 
@@ -157,10 +173,27 @@ Klausur-Satz: `Kant prueft die Maxime auf Denk- und Wollenswiderspruch und schue
 
 ROLLE: Du bist Verteidiger im Schummel-Prozess vor dem Tribunal und Mitglied im Ethikrat deiner Schule zur Ehrlichkeit im Schulalltag.
 SITUATION: Ein Mitschüler schlägt vor, bei einer Klausur zu schummeln, weil der Druck zu groß sei und allen damit geholfen wäre. Beurteile in ca. 150 Wörtern die Maxime des Schummelns nach dem Vier-Schritte-Schema und urteile mit der Selbstzweckformel, und wäge kurz die utilitaristische Entlastungsbilanz ab.
+
+AUFGABE (darstellen, [AFB I/II/III]): Stelle den Fall mit den Begriffen aus Schritt 2 und begruende das Urteil mit der Gegenprobe aus Schritt 5.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Darstellung der Kernbegriffe (Kants kategorischer Imperativ und die Maximenpru) | 5 NP | Verkuerzte Darstellung mit einem Leitbegriff als Alternativweg
+Analyse mit Massstab und Gegenprobe aus Schritt 4-5 | 5 NP | Einseitige Probenfuehrung mit ergaenzter Schranke als Alternativweg
+Urteil mit Begruendung und Alternativregel | 5 NP | Offenes Abwaegen mit klarer Entscheidungsregel als Alternativweg
+
 RUBRIC (30 XP): Formulierung der Maxime des Schummelns (5 XP) | Durchführung der Universalisierung mit Denkwiderspruch und Textbeleg (10 XP) | Anwendung der Selbstzweckformel auf Mitschüler und Lehrkraft (10 XP) | Kriteriengeleitetes Urteil mit Begründung (5 XP).
 
 Klausur-Satz: `Im Transfer gilt: Erst Maxime mit Lage-Handlung-Zweck bilden, dann universalisieren und erst nach Widerspruch und Wuerde urteilen.`
 
+MUSTER-KLAUSURSATZ als 15 NP Referenz:
+> Die gepruefte Loesung verbindet Darstellung, Analyse und Urteil zu Kants kategorischer Imperativ und die Maximenpru, indem Massstab und Schranke getrennt gefuehrt und erst im Urteil zusammengeführt werden.
+
+KERNSATZ (auswendig):
+- Kernsatz: `Die Maximenpruefung verbietet das falsche Versprechen durch Denkwiderspruch und schuetzt Wuerde durch die Selbstzweckformel.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = Maxime des falschen Versprechens | Mechanismus = Universalisierung plus Selbstzweckformel | Urteil = Urteil als vollkommene Pflicht
+- Selbsttest: Die Maximenpruefung verbietet das falsche Versprechen durch Denkwiderspruch und schuetzt Wuerde durch die ___
 ## Schritt 8 — reflexion: Urteil ohne Rechner: Nur was verallgemeinerbar ist zaehlt
 
 TAKEAWAY 1盒（核心总结）：

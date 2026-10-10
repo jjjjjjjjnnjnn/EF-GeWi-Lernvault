@@ -8,7 +8,7 @@ operatoren: [darstellen, analysieren, beurteilen]
 klausurrelevant: true
 datum: 2026-10-03
 tags: [EF, Philosophie, Erkenntnistheorie, Kant, Kopernikanische-Wende, a-priori, Kategorien, Anschauung]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Erkenntnistheorie: Immanuel Kant — Kritik der reinen Vernunft (Kopernikanische Wende und synthetische Urteile a priori) (L1, Ziel Klausur)
@@ -28,8 +28,20 @@ Stell dir vor, du wirst von Geburt an mit einer fest auf deinem Kopf verschraubt
 
 `Klausur-Satz: Mit Kants Kopernikanischer Wende vollzieht die Philosophie einen Paradigmenwechsel: Wir erkennen nicht das unzugaengliche 'Ding an sich', sondern lediglich dessen 'Erscheinung', welche durch unsere subjektiven Anschauungsformen (Raum und Zeit) sowie Verstandeskategorien (wie Kausalitaet) konstituiert wird.`
 
+[Option A] Erste Position
+- 若选A，你在Step 4-5重点检验A侧的分析工具。
+
+[Option B] Zweite Position
+- 若选B，你在Step 4-5重点检验B侧的分析工具。
+
+AUFLÖSUNG (nach der Wahl lesen)
+中文机制说明A：A侧用Kernbegriff检验是否成立，重点看该标准在本案是否被触发。
+Mechanismus A im Detail: Pruefung mit Kernbegriff als Massstab, ohne das Urteil vorwegzunehmen.
+中文机制说明B：B侧用Kernbegriff做对照检验，重点看其边界何时止步。
+Mechanismus B im Detail: Gegenprobe mit Kernbegriff als Schranke, getrennt vom ersten Gang.
+一句话本质：Erste Position prueft den Massstab, Zweite Position prueft die Schranke; erst beide Gaenge zusammen tragen das Urteil.
 ## Schritt 2 — entdecken: Das erkenntnistheoretische Vokabular Kants
-PRETRAINING术语盒（核心4词，先读三遍中德，合书自测中文→德语）：
+PRETRAINING术语盒（核心4词，先读三遍中德，合书自测中文->德语）：
 
 - 哥白尼式革命 — Kopernikanische Wende: Kants epistemologischer Perspektivwechsel, wonach sich die Gegenstaende der Erfahrung nach den Erkenntnisbedingungen unseres Subjekts richten muessen, anstatt umgekehrt.
 - 先天综合判断 — Synthetische Urteile a priori: Erkenntnisurteile, die erfahrungsunabhaengig (a priori) allgemein und notwendig wahr sind und dennoch unseren Erkenntnisgehalt real erweitern (wie die Saetze der Mathematik und reinen Physik).
@@ -65,6 +77,11 @@ Kants Erkenntnismodell (Kritik der reinen Vernunft):
 
 ## Schritt 4 — ausprobieren: Das Urteilslabor der Urteilstypen
 [Werkzeug: balance-board]
+
+HILFE:
+- Erster Zugang: Ordne das Fallmaterial mit Kernbegriff aus Schritt 2, ohne schon zu werten.
+- Zweiter Zugang: Lege die Gegenprobe mit Kernbegriff getrennt daneben, ohne die Seiten zu vermischen.
+- Schreibe beide Pruefgaenge getrennt auf und nenne noch kein Urteil und keine Zeilenloesung.
 Klassifiziere auf dem erkenntnistheoretischen Balance-Board Kants vier fundamentale Urteilstypen und deren Begruendungsbasis:
 
 | Philosophisches Urteil / Aussage | Urteilstyp nach Kant | Erkenntnisquelle | Geltungsanspruch | Wissenschaftlicher Nutzen |
@@ -78,6 +95,12 @@ Klassifiziere auf dem erkenntnistheoretischen Balance-Board Kants vier fundament
 
 `Klausur-Satz: Bei Aufgaben zu Erkenntnistheorie: Immanuel Kant — Kritik der reinen Vernunft (Kopernikanische Wende und synthetische Urteile a priori) muss die theoriegeleitete Begruendung stets durch exakte Fachtermini und empirische Belege abgesichert werden.`
 
+COMPLETION (Lückentext):
+- 中文说明：根据MUSTERLÖSUNG补全关键判断，不回看上文。
+- Ergaenze: Die ___-Pruefung mit Kernbegriff scheidet Kernbegriff von Kernbegriff, weil ___ das Urteil begrenzt.
+
+MUSTERLÖSUNG: 中文要点在上：两步检验分离量尺与边界，先立标准再做对照，不预设判决方向。
+MUSTERLOESUNG (DE): Die getrennte Pruefung mit Kernbegriff und die Gegenprobe mit Kernbegriff strukturiert den Fall ohne vorweggenommenes Urteil.
 ## Schritt 5 — check: Das Konzeptduell
 VERGLEICH: Empirismus (Hume) versus Transzendentalphilosophie (Kant)
 
@@ -96,6 +119,22 @@ In einer Philosophieklausur der Q-Phase analysierst du Kants beruehmten Satz: "G
 - AFB II: Ohne Sinnlichkeit haette der Verstand keine Gegenstaende, ueber die er nachdenken koennte (die mathematischen Gesetze blieben leerer Formalismus). Ohne Verstand waere das Sehen eines roten Apfels lediglich ein amorpher Lichtfleck im Auge; erst die Verstandeskategorien 'Substanz' und 'Kausalitaet' machen daraus das Ereignis: 'Ein schwerer Apfel faellt wegen der Gravitation zu Boden'.
 - AFB III: Einerseits gewaehrleistet Kants Theorie absolute Objektivitaet INNERHALB unserer menschlichen Erfahrungswelt, da alle Menschen dieselben Verstandesstrukturen teilen (intersubjektive Gueltigkeit). Andererseits verwehrt sie uns jeden metaphysischen Blick 'hinter die Kulissen' der Natur; wir koennen Gott, Seele oder das Universum als Ganzes niemals empirisch beweisen, sondern nur widerspruchsfrei denken.
 
+AUFGABE (darstellen, [AFB I/II/III]): Stelle den Fall mit den Begriffen aus Schritt 2 und begruende das Urteil mit der Gegenprobe aus Schritt 5.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Darstellung der Kernbegriffe (Erkenntnistheorie: Immanuel Kant — Kritik der re) | 5 NP | Verkuerzte Darstellung mit einem Leitbegriff als Alternativweg
+Analyse mit Massstab und Gegenprobe aus Schritt 4-5 | 5 NP | Einseitige Probenfuehrung mit ergaenzter Schranke als Alternativweg
+Urteil mit Begruendung und Alternativregel | 5 NP | Offenes Abwaegen mit klarer Entscheidungsregel als Alternativweg
+
+MUSTER-KLAUSURSATZ als 15 NP Referenz:
+> Die gepruefte Loesung verbindet Darstellung, Analyse und Urteil zu Erkenntnistheorie: Immanuel Kant — Kritik der re, indem Massstab und Schranke getrennt gefuehrt und erst im Urteil zusammengeführt werden.
+
+KERNSATZ (auswendig):
+- Kernsatz: `Kant begrenzt Erkenntnis auf Erscheinungen, weil Kategorien ohne Anschauung leer bleiben und Vernunftideen nur regulativ leiten.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = Erkenntnis aus Anschauung und Begriff | Mechanismus = Kategorienprobe plus Ideenlehre als Regulativ | Urteil = Urteil gegen dogmatische Metaphysik
+- Selbsttest: Kant begrenzt Erkenntnis auf ___ weil Kategorien ohne Anschauung leer bleiben und Vernunftideen nur regulativ leiten.
 ## Schritt 7 — muendlich: Die muendliche Blitzpruefung
 Simuliere ein muendliches Abiturszenario:
 

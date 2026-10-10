@@ -8,7 +8,7 @@ operatoren: [darstellen, vergleichen, beurteilen]
 klausurrelevant: true
 datum: 2026-09-26
 tags: [EF, Philosophie, Ethik]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Epikureismus Stoa und Seelenruhe (L1, Ziel Klausur)
@@ -35,9 +35,21 @@ Mechanismus-Satz (DE): Epikur ordnet die Begierden, die Stoa ordnet die Urteile,
 
 Klausur-Satz: `In der Dopaminfalle suchen Garten und Halle dieselbe Freiheit, Epikur durch Enttaeuschung der Eitelkeit und die Stoa durch Entmachtung des Unkontrollierbaren.`
 
+[Option A] Erste Position
+- 若选A，你在Step 4-5重点检验A侧的分析工具。
+
+[Option B] Zweite Position
+- 若选B，你在Step 4-5重点检验B侧的分析工具。
+
+AUFLÖSUNG (nach der Wahl lesen)
+中文机制说明A：A侧用Epikureismus / Hedonismus检验是否成立，重点看该标准在本案是否被触发。
+Mechanismus A im Detail: Pruefung mit Epikureismus / Hedonismus als Massstab, ohne das Urteil vorwegzunehmen.
+中文机制说明B：B侧用Stoa做对照检验，重点看其边界何时止步。
+Mechanismus B im Detail: Gegenprobe mit Stoa als Schranke, getrennt vom ersten Gang.
+一句话本质：Erste Position prueft den Massstab, Zweite Position prueft die Schranke; erst beide Gaenge zusammen tragen das Urteil.
 ## Schritt 2 — entdecken: Fünf Instrumente der Seelenverteidigung: Lust gegen Schicksal
 
-PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，三层结构）：
+PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文->德语，三层结构）：
 
 中文在上，德语在下：
 
@@ -131,11 +143,20 @@ HILFE（中德双语步骤）：
 3. 中文：第3步 Stoa 正判断：排名不可控、备考可控，关键词：Urteil。
    Schritt 3 (DE): Stoa heilt durch staerkere Urteile mit Z.7 bis Z.12.
 
+
+COMPLETION (Lückentext):
+- 中文说明：根据MUSTERLÖSUNG补全关键判断，不回看上文。
+- Ergaenze: Die ___-Pruefung mit Epikureismus / Hedonismus scheidet Epikureismus / Hedonismus von Stoa, weil ___ das Urteil begrenzt.
+
 MUSTERLOESUNG：中文：球鞋属虚荣欲望，Epikur 处方是划掉它；排名属不可控，Stoa 处方是只管备考过程；欲望小了、评判准了，心即安静。
 
 MUSTERLOESUNG (DE): Epikur heilt durch kleinere Wuensche nach Z.4 bis Z.6, die Stoa durch staerkere Urteile nach Z.8 bis Z.11. Beide therapieren Angst, vereint zur Seelenruhe nach Z.14 bis Z.15.
 Klausur-Satz: `Am Primaertext zeigt sich: Z.1 bis Z.6 tragen die Garten-Therapie des Konsums, Z.7 bis Z.12 die Hallen-Therapie der Angst.`
 
+HILFE:
+- Erster Zugang: Ordne das Fallmaterial mit Epikureismus / Hedonismus aus Schritt 2, ohne schon zu werten.
+- Zweiter Zugang: Lege die Gegenprobe mit Stoa getrennt daneben, ohne die Seiten zu vermischen.
+- Schreibe beide Pruefgaenge getrennt auf und nenne noch kein Urteil und keine Zeilenloesung.
 ## Schritt 5 — ausprobieren: Gutachterduell im Jugendtribunal: Pflicht gegen Bilanz
 
 VERGLEICH辨别实验（双向辨析：康德眼 vs. 功利眼，投射到成瘾案件）：
@@ -148,7 +169,7 @@ Weg B (Utilitarismus, Folgen und Gesamtwohl)：机制为受影响者苦乐加总
 AUFGABE A：Eine Plattform optimiert Sucht, weil es allen Spass bringe. Pruefen Sie mit Weg A Maxime und Selbstzweckformel und formulieren Sie ein Urteil.
 AUFGABE B：Eine Klasse will Handy-Fasten einfuehren und Freizeit neu bilanzieren. Pruefen Sie mit Weg B Folgenbilanz und Gesamtwohl und formulieren Sie ein Urteil.
 
-HILFE: A 问工具化与尊严 → Weg A。B 问总体幸福 → Weg B。【选程序：见 als Mittel 选康德；见 Bilanz 选功利。】
+HILFE: A 问工具化与尊严 -> Weg A。B 问总体幸福 -> Weg B。【选程序：见 als Mittel 选康德；见 Bilanz 选功利。】
 
 ANTWORT: A erfordert Weg A: Die Sucht-Maxime degradiert Jugendliche zu blossen Mitteln der Klickbilanz und ist als Gesetz nicht wollbar, daher pflichtwidrig. B erfordert Weg B: Fasten mindert Schlaf- und Leistungsleid deutlich und mehrt Freundschaft und Ruhe, daher geboten.
 
@@ -178,11 +199,26 @@ Klausur-Satz: `Ohne Unterscheidung von Wunscharten und Kontrollzonen bleibt jede
 
 ROLLE: Du bist Verteidiger des suchtkranken Schuelers vor dem Tribunal und schreibst ein Plaedoyer als Ratgeber der Schulzeitung.
 SITUATION: Viele Leser klagen ueber Pruefungsangst und Konsumdruck zugleich. Gib in ca. 150 Woertern je einen epikureischen und stoischen Rat und urteile, welcher Ansatz wo staerker ist, und sichere dein Urteil mit Wuerde oder Bilanz ab.
-AUFGABE: Zusammenhaengende Stellungnahme ca. 150 Woerter mit beiden Schulen und Urteil.
+AUFGABE (beurteilen, [AFB III]): Beurteile in einer zusammenhaengenden Stellungnahme (ca. 150 Woerter) den Fall mit Epikur und Stoa und schliesse mit einem begruendeten Urteil.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Darstellung der Kernbegriffe (Epikureismus Stoa und Seelenruhe) | 5 NP | Verkuerzte Darstellung mit einem Leitbegriff als Alternativweg
+Analyse mit Massstab und Gegenprobe aus Schritt 4-5 | 5 NP | Einseitige Probenfuehrung mit ergaenzter Schranke als Alternativweg
+Urteil mit Begruendung und Alternativregel | 5 NP | Offenes Abwaegen mit klarer Entscheidungsregel als Alternativweg
+
 RUBRIC (30 XP): Epikur-Rat mit Begierdenklassifikation und Textbeleg (10 XP) | Stoa-Rat mit Kontroll-Dichotomie und Textbeleg (10 XP) | Vergleich plus eigenes Urteil mit Begruendung (10 XP).
 
 Klausur-Satz: `Im Ratgeber gilt: Erst beide Therapien mit Beleg rekonstruieren, dann am Fall abwaegen und mit Wuerde begrenzen.`
 
+MUSTER-KLAUSURSATZ als 15 NP Referenz:
+> Die gepruefte Loesung verbindet Darstellung, Analyse und Urteil zu Epikureismus Stoa und Seelenruhe, indem Massstab und Schranke getrennt gefuehrt und erst im Urteil zusammengeführt werden.
+
+KERNSATZ (auswendig):
+- Kernsatz: `Seelenruhe entsteht durch richtige Begierdenwahl, weil Epikur leere Wuensche entlarvt und die Stoa dem Schicksal zustimmt.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = Seelenruhe als Ziel | Mechanismus = Begierdenklassifikation plus stoische Zustimmung | Urteil = Urteil fuer genuegsame Autarkie
+- Selbsttest: Seelenruhe entsteht durch richtige ___ weil Epikur leere Wuensche entlarvt und die Stoa dem Schicksal zustimmt.
 ## Schritt 8 — reflexion: Zwei Siebe ein Freispruch: Wuensche schrumpfen Gelassenheit waechst
 
 TAKEAWAY 1盒（核心总结）：

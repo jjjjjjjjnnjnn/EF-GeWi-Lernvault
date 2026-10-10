@@ -8,7 +8,7 @@ operatoren: [darstellen, analysieren, erortern]
 klausurrelevant: true
 datum: 2026-09-26
 tags: [EF, Philo, Tierethik]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Tierethik und Verantwortungsprinzip (L1, Ziel Klausur)
@@ -31,6 +31,18 @@ Phaenomen-Satz (DE): Die Maus fuehlt Schmerz, der Mensch traegt Verantwortung, b
 
 Klausur-Satz: `Im Labor-Prozess prallt das Leid der Maeuse auf die Rettung der Patienten und die Verantwortung fuer die Zukunft.`
 
+[Option A] Erste Position
+- 若选A，你在Step 4-5重点检验A侧的分析工具。
+
+[Option B] Zweite Position
+- 若选B，你在Step 4-5重点检验B侧的分析工具。
+
+AUFLÖSUNG (nach der Wahl lesen)
+中文机制说明A：A侧用Leidensfaehigkeit / Sentienz检验是否成立，重点看该标准在本案是否被触发。
+Mechanismus A im Detail: Pruefung mit Leidensfaehigkeit / Sentienz als Massstab, ohne das Urteil vorwegzunehmen.
+中文机制说明B：B侧用Speziesismus做对照检验，重点看其边界何时止步。
+Mechanismus B im Detail: Gegenprobe mit Speziesismus als Schranke, getrennt vom ersten Gang.
+一句话本质：Erste Position prueft den Massstab, Zweite Position prueft die Schranke; erst beide Gaenge zusammen tragen das Urteil.
 ## Schritt 2 — entdecken: Drei Massstaebe der Anklage: Leid Subjekt Zukunft
 
 PRETRAINING术语盒（核心5词，中文在上、德语在下，三层结构）：
@@ -108,11 +120,20 @@ HILFE：
 3. 中文：第3步摆未来：力量越大责任越大，关键词：Vorsorge。
    Schritt 3 (DE): Zukunftssicherung mit Z.8 bis Z.12 sichern.
 
+
+COMPLETION (Lückentext):
+- 中文说明：根据MUSTERLÖSUNG补全关键判断，不回看上文。
+- Ergaenze: Die ___-Pruefung mit Leidensfaehigkeit / Sentienz scheidet Leidensfaehigkeit / Sentienz von Speziesismus, weil ___ das Urteil begrenzt.
+
 MUSTERLOESUNG：中文：辛格要求先查替代，不行再减量止痛；约纳斯要求再算长远生态与信任账；两关都过才能放行。
 MUSTERLOESUNG (DE): Singer verlangt Ersatzpruefung nach Z.5 und Minderung nach Z.6, Jonas verlangt Fernwirkungspruefung nach Z.12 und Zukunftssicherung nach Z.9. Beide begrenzen den Versuch statt ihn zu verrechnen.
 
 Klausur-Satz: `Am Primaertext zeigt sich: Z.1 bis Z.7 tragen Singers Leidminderung, Z.8 bis Z.12 tragen Jonas Vorsorge fuer die Zukunft.`
 
+HILFE:
+- Erster Zugang: Ordne das Fallmaterial mit Leidensfaehigkeit / Sentienz aus Schritt 2, ohne schon zu werten.
+- Zweiter Zugang: Lege die Gegenprobe mit Speziesismus getrennt daneben, ohne die Seiten zu vermischen.
+- Schreibe beide Pruefgaenge getrennt auf und nenne noch kein Urteil und keine Zeilenloesung.
 ## Schritt 5 — ausprobieren: Duell der Pruefwege: Kantische Wuerde gegen utilitaristische Rettung
 
 VERGLEICH辨别实验（尊严眼 vs 功利眼，直击本课）：
@@ -125,7 +146,7 @@ Weg B (Utilitarismus, Folgen und Gesamtwohl)：机制为受影响者苦乐加总
 AUFGABE A: Ein Labor will Kosmetik an Kaninchen testen, weil es billiger ist. Pruefen Sie mit Weg A Maxime und Selbstzweckformel und formulieren Sie ein Urteil.
 AUFGABE B: Ein Labor will einen Impfstoff per Tierversuch retten und per 3R mindern. Pruefen Sie mit Weg B Folgenbilanz und Gesamtwohl und formulieren Sie ein Urteil.
 
-HILFE: A 问化妆品工具化 → Weg A。B 问救命与减轻 → Weg B。【选程序：见 als Mittel 选康德；见 Bilanz 选功利。】
+HILFE: A 问化妆品工具化 -> Weg A。B 问救命与减轻 -> Weg B。【选程序：见 als Mittel 选康德；见 Bilanz 选功利。】
 
 ANTWORT: A erfordert Weg A: Die Kosmetik-Maxime degradiert empfindende Wesen zu blossen Mitteln der Schoenheit und ist als Gesetz nicht wollbar, daher pflichtwidrig. B erfordert Weg B plus 3R: Gepruefte Unersetzbarkeit plus Minderung plus grosses gerettetes Leid rechtfertigt den Versuch befristet, daher unter Auflagen geboten.
 
@@ -156,11 +177,26 @@ Klausur-Satz: `Wer Tierethik beherrscht, prueft erst Leid und 3R, dann Zukunft u
 
 ROLLE: Du bist Verteidiger der Versuchsmaeuse vor dem Tribunal und Vertreter des Schueler-Ethikrats zur Laborrichtlinie.
 SITUATION: Die Pharma-Lobby fordert freie Tierversuche fuer schnellere Heilung. Nimm in ca. 150 Woertern mit Singer und Jonas Stellung und beantworte, unter welchen Auflagen ein Versuch vertretbar waere, und sichere dein Urteil mit Wuerde oder Bilanz ab.
-AUFGABE (beurteilen, AFB III): Zusammenhaengende Darstellung ca. 150 Woerter mit beiden Denkern, Abwaegung und Urteil.
+AUFGABE (beurteilen, [AFB III]): Zusammenhaengende Darstellung ca. 150 Woerter mit beiden Denkern, Abwaegung und Urteil.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Darstellung der Kernbegriffe (Tierethik und Verantwortungsprinzip) | 5 NP | Verkuerzte Darstellung mit einem Leitbegriff als Alternativweg
+Analyse mit Massstab und Gegenprobe aus Schritt 4-5 | 5 NP | Einseitige Probenfuehrung mit ergaenzter Schranke als Alternativweg
+Urteil mit Begruendung und Alternativregel | 5 NP | Offenes Abwaegen mit klarer Entscheidungsregel als Alternativweg
+
 RUBRIC (30 XP): Singer mit Leid und 3R plus Textbeleg (10 XP) | Jonas mit Zukunft und Vorsorge plus Textbeleg (10 XP) | Vergleich plus begruendetes Urteil mit Wuerde oder Bilanz (5 XP) | Geschlossene Darstellung (5 XP).
 
 Klausur-Satz: `Im Plaedoyer gilt: Erst Leid und Zukunft mit Beleg rekonstruieren, dann 3R stufenweise pruefen und mit Wuerde begrenzen.`
 
+MUSTER-KLAUSURSATZ als 15 NP Referenz:
+> Die gepruefte Loesung verbindet Darstellung, Analyse und Urteil zu Tierethik und Verantwortungsprinzip, indem Massstab und Schranke getrennt gefuehrt und erst im Urteil zusammengeführt werden.
+
+KERNSATZ (auswendig):
+- Kernsatz: `Verantwortung endet nicht beim Menschen, weil Jonas Verwundbarkeit und Singer Leidensfaehigkeit als Pflichtgrund stark machen.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = Pflicht gegenueber Lebewesen | Mechanismus = Verwundbarkeitsprobe plus Leidensargument | Urteil = Urteil fuer schonenden Umgang
+- Selbsttest: Verantwortung endet nicht beim Menschen, weil Jonas Verwundbarkeit und Singer ___ als Pflichtgrund stark machen.
 ## Schritt 8 — reflexion: Freispruch mit Auflagen: Heilen ohne zu verbrauchen
 
 TAKEAWAY: Merke Maus und Morgen: Leid zaehlt heute, Zukunft zaehlt morgen. Singer fragt, ob du ersetzen kannst, Jonas fragt, ob Enkel noch leben koennen.

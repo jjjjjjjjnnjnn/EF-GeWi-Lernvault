@@ -8,7 +8,7 @@ operatoren: [rekonstruieren, vergleichen, beurteilen]
 klausurrelevant: true
 datum: 2026-10-03
 tags: [EF, Philo, Politische-Philosophie, Hannah-Arendt, Banalitaet-des-Boesen, Totalitarismus, Vita-activa]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Politische Philosophie: Hannah Arendt – Banalitaet des Boesen und Vita activa (L1, Ziel Klausur)
@@ -28,8 +28,20 @@ Jerusalem im Fruehjahr 1961. Im Gerichtssaal sitzt hinter einer schusssicheren G
 
 `Klausur-Satz: Arendts Begriff der Banalitaet des Boesen postuliert, dass gigantische Menschheitsverbrechen nicht zwingend aus diabolischer Bosheit entspringen, sondern aus einer voelligen Gedankenlosigkeit und dem Verzicht auf individuelle moralische Urteilskraft.`
 
+[Option A] Radikales Boeses nach Immanuel Kant
+- 若选A，你在Step 4-5重点检验A侧的分析工具。
+
+[Option B] Banalitaet des Boesen nach Hannah Arendt
+- 若选B，你在Step 4-5重点检验B侧的分析工具。
+
+AUFLÖSUNG (nach der Wahl lesen)
+中文机制说明A：A侧用Kernbegriff检验是否成立，重点看该标准在本案是否被触发。
+Mechanismus A im Detail: Pruefung mit Kernbegriff als Massstab, ohne das Urteil vorwegzunehmen.
+中文机制说明B：B侧用Kernbegriff做对照检验，重点看其边界何时止步。
+Mechanismus B im Detail: Gegenprobe mit Kernbegriff als Schranke, getrennt vom ersten Gang.
+一句话本质：Radikales Boeses nach Immanuel Kant prueft den Massstab, Banalitaet des Boesen nach Hannah Arendt prueft die Schranke; erst beide Gaenge zusammen tragen das Urteil.
 ## Schritt 2 — entdecken: Das politisch-philosophische Begriffsinventar
-PRETRAINING术语盒（核心4词，先读三遍中德，合书自测中文→德语）：
+PRETRAINING术语盒（核心4词，先读三遍中德，合书自测中文->德语）：
 
 - 恶的平庸性 — Banalitaet des Boesen: 犯罪者非病态狂魔，而是缺乏独立思考能力、盲目顺从官僚指令而犯下反人类罪行的现象。 Das Phaenomen, dass monstroese Verbrechen von ganz gewoehnlichen, buerokratisch funktionierenden Individuen ohne eigene Boesartigkeit aus reiner Gedankenlosigkeit begangen werden koennen.
 - 积极生活的三重境界 — Vita activa: 阿伦特将人类世俗活动划分为：维持生物肉体存活的“劳动”（Arbeiten）、创造人造物耐用品的“工作”（Herstellen）以及在公共空间中展现自由的“政治行动”（Handeln）。 Die Dreiteilung menschlicher Taetigkeit in biologische Selbsterhaltung (Arbeit), kulturelle Weltbildung (Herstellen) und freie politische Selbstverwirklichung (Handeln).
@@ -66,11 +78,21 @@ NIEDRIGSTE STUFE:
 
 [Werkzeug: text-analyse]
 
+HILFE:
+- Erster Zugang: Ordne das Fallmaterial mit Kernbegriff aus Schritt 2, ohne schon zu werten.
+- Zweiter Zugang: Lege die Gegenprobe mit Kernbegriff getrennt daneben, ohne die Seiten zu vermischen.
+- Schreibe beide Pruefgaenge getrennt auf und nenne noch kein Urteil und keine Zeilenloesung.
+
 AUFGABE (rekonstruieren & beurteilen, AFB I/II):
 Betrachte folgende Aussage von Adolf Eichmann vor dem Jerusalemer Gericht:
 "Ich war nur ein kleines Raedchen im Getriebe des Reichssicherheitshauptamtes. Haette ich mich geweigert, waere ein anderer an meine Stelle getreten. Ich habe mich streng an den kategorischen Imperativ Immanuel Kants gehalten: Ein Befehl des Fuehrers war Gesetz!"
 1. Rekonstruiere, wie Eichmann Kants ethischen "kategorischen Imperativ" voellig pervertiert hat.
 2. Analysiere anhand von Arendts Konzept des "inneren Dialogs" (Zwei-in-Einem), warum Gedankenlosigkeit die Faehigkeit zur moralischen Scham zerstoert.
+
+
+COMPLETION (Lückentext):
+- 中文说明：根据MUSTERLÖSUNG补全关键判断，不回看上文。
+- Ergaenze: Die ___-Pruefung mit Kernbegriff scheidet Kernbegriff von Kernbegriff, weil ___ das Urteil begrenzt.
 
 MUSTERLOESUNG:
 1. Pervertierung des kategorischen Imperativs:
@@ -111,6 +133,22 @@ Analysiere die Ergebnisse von Stanley Milgram im Lichte von Hannah Arendts Eichm
 ### AFB III: Kritisches Gesellschaftsurteil
 Diskutiere, inwieweit moderne automatisierte Drohnenangriffe und algorithmenbasierte Kriegsentscheidungen (KI-Militaer) die Gefahr einer neuartigen, technologischen "Banalitaet des Toetens" durch Distanzierung und Entmenschlichung erhoehen.
 
+AUFGABE (rekonstruieren, [AFB I/II/III]): Rekonstruiere den Fall mit den Begriffen aus Schritt 2 und begruende das Urteil mit der Gegenprobe aus Schritt 5.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Darstellung der Kernbegriffe (Politische Philosophie: Hannah Arendt – Banalita) | 5 NP | Verkuerzte Darstellung mit einem Leitbegriff als Alternativweg
+Analyse mit Massstab und Gegenprobe aus Schritt 4-5 | 5 NP | Einseitige Probenfuehrung mit ergaenzter Schranke als Alternativweg
+Urteil mit Begruendung und Alternativregel | 5 NP | Offenes Abwaegen mit klarer Entscheidungsregel als Alternativweg
+
+MUSTER-KLAUSURSATZ als 15 NP Referenz:
+> Die gepruefte Loesung verbindet Darstellung, Analyse und Urteil zu Politische Philosophie: Hannah Arendt – Banalita, indem Massstab und Schranke getrennt gefuehrt und erst im Urteil zusammengeführt werden.
+
+KERNSATZ (auswendig):
+- Kernsatz: `Das Boese wird banal durch gedankenloses Mitmachen, weil Arendt Urteilskraft und oeffendliches Handeln gegen blosse Pflichterfuellung stellt.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = Banalitaet durch Gedankenlosigkeit | Mechanismus = Urteilskraft plus Vita activa | Urteil = Urteil fuer persoenliche Verantwortung
+- Selbsttest: Das Boese wird banal durch gedankenloses Mitmachen, weil Arendt Urteilskraft und oeffendliches Handeln gegen blosse ___ stellt.
 ## Schritt 7 — check: Format-Check & Scoring
 
 30 XP Schnelltest zur Verstaendigungssicherung:

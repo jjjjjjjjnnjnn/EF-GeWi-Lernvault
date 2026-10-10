@@ -8,7 +8,7 @@ operatoren: [darstellen, rekonstruieren, beurteilen]
 klausurrelevant: true
 datum: 2026-09-26
 tags: [EF, Philosophie, CN]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Willensfreiheit mit Libet und Hirnforschung (L1, Ziel Klausur)
@@ -35,9 +35,21 @@ Mechanismus-Satz (DE): Kurve messen, Veto sichern und Stufe pruefen ergeben Zure
 
 Klausur-Satz: `Im Autopilot-Prozess prallt die Fruehkurve des Gehirns auf die spaete Reue des Ich und die Frage nach dem Fahrer.`
 
+[Option A] Erste Position
+- 若选A，你在Step 4-5重点检验A侧的分析工具。
+
+[Option B] Zweite Position
+- 若选B，你在Step 4-5重点检验B侧的分析工具。
+
+AUFLÖSUNG (nach der Wahl lesen)
+中文机制说明A：A侧用Determinismus检验是否成立，重点看该标准在本案是否被触发。
+Mechanismus A im Detail: Pruefung mit Determinismus als Massstab, ohne das Urteil vorwegzunehmen.
+中文机制说明B：B侧用Libertarismus做对照检验，重点看其边界何时止步。
+Mechanismus B im Detail: Gegenprobe mit Libertarismus als Schranke, getrennt vom ersten Gang.
+一句话本质：Erste Position prueft den Massstab, Zweite Position prueft die Schranke; erst beide Gaenge zusammen tragen das Urteil.
 ## Schritt 2 — entdecken: Fünf Tasten des Cockpits: Feuer Stopp Identitaet
 
-PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，三层结构）：
+PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文->德语，三层结构）：
 
 中文在上，德语在下：
 
@@ -131,11 +143,20 @@ HILFE（中德双语步骤）：
 3. 中文：第3步摆认同：恨即高层自我，关键词：Stufe。
    Schritt 3 (DE): Stufe mit Z.7 bis Z.13 pruefen und mit Z.14 bis Z.15 urteilen.
 
+
+COMPLETION (Lückentext):
+- 中文说明：根据MUSTERLÖSUNG补全关键判断，不回看上文。
+- Ergaenze: Die ___-Pruefung mit Determinismus scheidet Determinismus von Libertarismus, weil ___ das Urteil begrenzt.
+
 MUSTERLOESUNG：中文：曲线只证明冲动先行，否决窗证明能停，深夜之恨证明二阶自我仍在，三者叠加归责成立，处方是限时加辅导而非无罪释放。
 MUSTERLOESUNG (DE): Kurve nach Z.1 bis Z.2 erklaert den Impuls, Veto nach Z.4 bis Z.6 sichert Kontrolle und Hass nach Z.11 belegt die Person, daher Zurechenbarkeit nach Z.14 bis Z.15 trotz Gehirn.
 
 Klausur-Satz: `Am Autopilotfall zeigt sich: Z.1 bis Z.6 tragen Feuern und Stopp, Z.7 bis Z.13 tragen Hass und Stufe als Personbeweis.`
 
+HILFE:
+- Erster Zugang: Ordne das Fallmaterial mit Determinismus aus Schritt 2, ohne schon zu werten.
+- Zweiter Zugang: Lege die Gegenprobe mit Libertarismus getrennt daneben, ohne die Seiten zu vermischen.
+- Schreibe beide Pruefgaenge getrennt auf und nenne noch kein Urteil und keine Zeilenloesung.
 ## Schritt 5 — ausprobieren: Duell der Pruefwege: Kantische Schuld gegen utilitaristische Hilfe
 
 VERGLEICH辨别实验（双向辨析：追责眼 vs 防复发眼）：
@@ -148,7 +169,7 @@ Weg B (Utilitarismus, Folgen und Gesamtwohl)：机制为复发、学业、家庭
 AUFGABE A：Der Spieler bejaht sein Dauerspielen und will so bleiben. Pruefen Sie mit Weg A Maxime, Identifikation und Wuerde und formulieren Sie ein Urteil.
 AUFGABE B：Die Klasse will zwischen Handyverbot und Coaching waehlen. Pruefen Sie mit Weg B Rueckfall und Gesamtwohl und formulieren Sie ein Urteil.
 
-HILFE: A 问认同与追责 → Weg A。B 问复发与疗效 → Weg B。【选程序：见 Bejahung 选康德；见 Rueckfall 选功利。】
+HILFE: A 问认同与追责 -> Weg A。B 问复发与疗效 -> Weg B。【选程序：见 Bejahung 选康德；见 Rueckfall 选功利。】
 
 ANTWORT: A erfordert Weg A: Willentliche Bejahung plus Stoppfaehigkeit begruendet volle Zurechenbarkeit, daher Schuld mit fairer Sanktion und Wuerde. B erfordert Weg B: Coaching mit Limit senkt Rueckfall und Familienleid staerker als Verbot, daher Hilfe vor Rache.
 
@@ -178,11 +199,26 @@ Klausur-Satz: `Wer Freiheit prueft, misst Kurve, sichert Veto und befragt die St
 
 ROLLE: Du bist Gutachter im Autopilot-Prozess und Berater der Schule fuer die kuenftige Handy- und Coachingregel.
 SITUATION: Die Verbotslobby fordert Handyentzug plus Freispruch wegen Gehirn, die Hilfelobby fordert Limit plus Coaching mit Verantwortung. Nimm in ca. 150 Woertern mit Libet und Frankfurt Stellung und beantworte, ob Schuld besteht und welche Massnahme wirkt, und sichere dein Urteil mit Schuld oder Praevention ab.
-AUFGABE: Zusammenhaengende Stellungnahme ca. 150 Woerter mit Kriterium, Anwendung und Urteil.
+AUFGABE (beurteilen, [AFB III]): Beurteile in einer zusammenhaengenden Stellungnahme (ca. 150 Woerter) den Autopilot-Fall mit Libet und Frankfurt und schliesse mit einem begruendeten Urteil zur Zurechenbarkeit.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Darstellung der Kernbegriffe (Willensfreiheit mit Libet und Hirnforschung) | 5 NP | Verkuerzte Darstellung mit einem Leitbegriff als Alternativweg
+Analyse mit Massstab und Gegenprobe aus Schritt 4-5 | 5 NP | Einseitige Probenfuehrung mit ergaenzter Schranke als Alternativweg
+Urteil mit Begruendung und Alternativregel | 5 NP | Offenes Abwaegen mit klarer Entscheidungsregel als Alternativweg
+
 RUBRIC (30 XP): Libet mit Kurve und Veto plus Textbeleg (10 XP) | Frankfurt mit Stufe und Hass plus Textbeleg (10 XP) | Urteil mit Schuld oder Praevention und Wuerde (10 XP).
 
 Klausur-Satz: `Im Transfer gilt: Erst Kurve und Stufe mit Beleg rekonstruieren, dann Zurechenbarkeit messen und schliesslich Strafe mit Hilfe verbinden.`
 
+MUSTER-KLAUSURSATZ als 15 NP Referenz:
+> Die gepruefte Loesung verbindet Darstellung, Analyse und Urteil zu Willensfreiheit mit Libet und Hirnforschung, indem Massstab und Schranke getrennt gefuehrt und erst im Urteil zusammengeführt werden.
+
+KERNSATZ (auswendig):
+- Kernsatz: `Libets Bereitschaftspotenzial eilt dem Wollen voraus, weil das Veto-Fenster bewusste Kontrolle und Verantwortung offen haelt.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = RP vor W vor M | Mechanismus = Zeitprobe plus Veto-Recht | Urteil = Urteil gegen Reduktionismus
+- Selbsttest: Libets ___ eilt dem Wollen voraus, weil das Veto-Fenster bewusste Kontrolle und Verantwortung offen haelt.
 ## Schritt 8 — reflexion: Urteil im Cockpit: Kurve erklaert Reue steuert
 
 TAKEAWAY 1盒（核心总结）：

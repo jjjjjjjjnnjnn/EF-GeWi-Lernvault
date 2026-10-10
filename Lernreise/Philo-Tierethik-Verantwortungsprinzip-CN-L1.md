@@ -8,7 +8,7 @@ operatoren: [darstellen, eroertern, beurteilen]
 klausurrelevant: true
 datum: 2026-09-26
 tags: [EF, Philosophie, Ethik]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Tierethik und Verantwortungsprinzip (L1, Ziel Klausur)
@@ -35,9 +35,21 @@ Mechanismus-Satz (DE): Leid zaehlen, Subjekte achten und Zukunft sichern gehoere
 
 Klausur-Satz: `In der Schweinefabrik prallt billiges Fleisch auf empfindendes Leben und die Frage, welche Zukunft wir Enkeln schulden.`
 
+[Option A] Erste Position
+- 若选A，你在Step 4-5重点检验A侧的分析工具。
+
+[Option B] Zweite Position
+- 若选B，你在Step 4-5重点检验B侧的分析工具。
+
+AUFLÖSUNG (nach der Wahl lesen)
+中文机制说明A：A侧用Leidensfaehigkeit检验是否成立，重点看该标准在本案是否被触发。
+Mechanismus A im Detail: Pruefung mit Leidensfaehigkeit als Massstab, ohne das Urteil vorwegzunehmen.
+中文机制说明B：B侧用Speziesismus做对照检验，重点看其边界何时止步。
+Mechanismus B im Detail: Gegenprobe mit Speziesismus als Schranke, getrennt vom ersten Gang.
+一句话本质：Erste Position prueft den Massstab, Zweite Position prueft die Schranke; erst beide Gaenge zusammen tragen das Urteil.
 ## Schritt 2 — entdecken: Fünf Zeugen der Anklage: Schmerz Recht Zukunft
 
-PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，三层结构）：
+PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文->德语，三层结构）：
 
 中文在上，德语在下：
 
@@ -131,11 +143,20 @@ HILFE（中德双语步骤）：
 3. 中文：第3步摆未来：粪水与气候账，关键词：Vorsorge。
    Schritt 3 (DE): Zukunft mit Z.8 bis Z.12 bilanzieren.
 
+
+COMPLETION (Lückentext):
+- 中文说明：根据MUSTERLÖSUNG补全关键判断，不回看上文。
+- Ergaenze: Die ___-Pruefung mit Leidensfaehigkeit scheidet Leidensfaehigkeit von Speziesismus, weil ___ das Urteil begrenzt.
+
 MUSTERLOESUNG：中文：三元差价买的是每天数小时的痛苦减免与后代的河；辛格算痛，约纳斯算河，两账都指向换肉。
 MUSTERLOESUNG (DE): Kurzer Preisvorteil verliert gegen lange Leidzeit nach Z.2 bis Z.4 und tote Baeche nach Z.9, daher Umstellung mit Label und Minderung nach Z.7 geboten.
 
 Klausur-Satz: `Am Kantinenfall zeigt sich: Z.1 bis Z.7 tragen Leid und Subjekt, Z.8 bis Z.12 tragen Fluesse und Enkel gegen drei Euro.`
 
+HILFE:
+- Erster Zugang: Ordne das Fallmaterial mit Leidensfaehigkeit aus Schritt 2, ohne schon zu werten.
+- Zweiter Zugang: Lege die Gegenprobe mit Speziesismus getrennt daneben, ohne die Seiten zu vermischen.
+- Schreibe beide Pruefgaenge getrennt auf und nenne noch kein Urteil und keine Zeilenloesung.
 ## Schritt 5 — ausprobieren: Gutachterduell am Mittagstisch: Wuerde gegen Wohlgeschmack
 
 VERGLEICH辨别实验（双向辨析：尊严眼 vs. 美味账）：
@@ -148,7 +169,7 @@ Weg B (Utilitarismus, Folgen und Gesamtwohl)：机制为受影响者苦乐加总
 AUFGABE A：Eine Kette wirbt mit Qualfleisch zum Spottpreis als Glueck fuer alle. Pruefen Sie mit Weg A Maxime und Selbstzweckformel und formulieren Sie ein Urteil.
 AUFGABE B：Eine Kantine will auf Tierwohl umstellen und Mehrkosten sozial abfedern. Pruefen Sie mit Weg B Folgenbilanz und Gesamtwohl und formulieren Sie ein Urteil.
 
-HILFE: A 问工具化与尊严 → Weg A。B 问总账与穷人 → Weg B。【选程序：见 als Mittel 选康德；见 Bilanz 选功利。】
+HILFE: A 问工具化与尊严 -> Weg A。B 问总账与穷人 -> Weg B。【选程序：见 als Mittel 选康德；见 Bilanz 选功利。】
 
 ANTWORT: A erfordert Weg A plus Regan: Die Qual-Maxime degradiert Subjekte eines Lebens zu blossen Mitteln des Geschmacks und ist als Gesetz nicht wollbar, daher pflichtwidrig. B erfordert Weg B: Umstellung mindert langes Leid und Zukunftsschaden deutlich und bleibt mit Sozialausgleich fuer Arme tragbar, daher geboten.
 
@@ -178,11 +199,26 @@ Klausur-Satz: `Ohne 3R-Stufen und Zukunftsblick bleibt jede Fleischbilanz unvoll
 
 ROLLE: Du bist Anwalt der Schweine vor der Kantinenkommission und Vertreter des Schueler-Ethikrats zur Fleischrichtlinie.
 SITUATION: Die Catering-Lobby fordert billiges Qualfleisch fuer das Wohl aller, die Tier-AG fordert Tierwohl mit Sozialausgleich. Nimm in ca. 150 Woertern mit Singer, Regan und Jonas Stellung und beantworte, welche Regelung vertretbar waere, und sichere dein Urteil mit Wuerde oder Bilanz ab.
-AUFGABE: Zusammenhaengende Stellungnahme ca. 150 Woerter mit drei Denkern und Urteil.
+AUFGABE (beurteilen, [AFB III]): Beurteile in einer zusammenhaengenden Stellungnahme (ca. 150 Woerter) den Kantinen-Fall mit Singer und Jonas und schliesse mit einem begruendeten Urteil.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Darstellung der Kernbegriffe (Tierethik und Verantwortungsprinzip) | 5 NP | Verkuerzte Darstellung mit einem Leitbegriff als Alternativweg
+Analyse mit Massstab und Gegenprobe aus Schritt 4-5 | 5 NP | Einseitige Probenfuehrung mit ergaenzter Schranke als Alternativweg
+Urteil mit Begruendung und Alternativregel | 5 NP | Offenes Abwaegen mit klarer Entscheidungsregel als Alternativweg
+
 RUBRIC (30 XP): Singer mit Leid und Textbeleg (10 XP) | Regan oder Jonas mit Subjekt oder Zukunft und Textbeleg (10 XP) | Vergleich plus eigenes Urteil mit Begruendung (10 XP).
 
 Klausur-Satz: `Im Transfer gilt: Erst Leid, Subjekt und Zukunft mit Beleg rekonstruieren, dann 3R stufenweise pruefen und mit Wuerde begrenzen.`
 
+MUSTER-KLAUSURSATZ als 15 NP Referenz:
+> Die gepruefte Loesung verbindet Darstellung, Analyse und Urteil zu Tierethik und Verantwortungsprinzip, indem Massstab und Schranke getrennt gefuehrt und erst im Urteil zusammengeführt werden.
+
+KERNSATZ (auswendig):
+- Kernsatz: `Verantwortung endet nicht beim Menschen, weil Jonas Verwundbarkeit und Singer Leidensfaehigkeit als Pflichtgrund stark machen.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = Pflicht gegenueber Lebewesen | Mechanismus = Verwundbarkeitsprobe plus Leidensargument | Urteil = Urteil fuer schonenden Umgang
+- Selbsttest: Verantwortung endet nicht beim Menschen, weil Jonas Verwundbarkeit und Singer ___ als Pflichtgrund stark machen.
 ## Schritt 8 — reflexion: Zwei Teller ein Fluss: satt ohne Qual
 
 TAKEAWAY 1盒（核心总结）：

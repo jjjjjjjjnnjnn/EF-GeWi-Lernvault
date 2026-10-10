@@ -8,7 +8,7 @@ operatoren: [darstellen, analysieren, beurteilen]
 klausurrelevant: true
 datum: 2026-10-03
 tags: [EF, Philosophie, Ethik, Kant, Menschenwuerde]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Menschenwuerde vs. Preis: Kants Zweck-an-sich-Formel (L1, Ziel Klausur)
@@ -30,8 +30,20 @@ Hook / Phaenomen: Auf dem Markt hat alles ein Preisschild: Ein Smartphone kostet
 
 `Klausur-Satz: Was einen Preis hat, an dessen Stelle kann auch etwas anderes als Aequivalent gesetzt werden; was dagegen ueber allen Preis erhaben ist, das hat eine Wuerde.`
 
+[Option A] Erste Position
+- 若选A，你在Step 4-5重点检验A侧的分析工具。
+
+[Option B] Zweite Position
+- 若选B，你在Step 4-5重点检验B侧的分析工具。
+
+AUFLÖSUNG (nach der Wahl lesen)
+中文机制说明A：A侧用Kernbegriff检验是否成立，重点看该标准在本案是否被触发。
+Mechanismus A im Detail: Pruefung mit Kernbegriff als Massstab, ohne das Urteil vorwegzunehmen.
+中文机制说明B：B侧用Kernbegriff做对照检验，重点看其边界何时止步。
+Mechanismus B im Detail: Gegenprobe mit Kernbegriff als Schranke, getrennt vom ersten Gang.
+一句话本质：Erste Position prueft den Massstab, Zweite Position prueft die Schranke; erst beide Gaenge zusammen tragen das Urteil.
 ## Schritt 2 — entdecken: Ausruestungskiste der Deontologie
-PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
+PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文->德语，Evidenz：pretraining降认知负荷）：
 
 中文在上，德语在下：
 
@@ -100,9 +112,13 @@ BEISPIEL（正确例题示范，含教具操作与解答）：
 AUFGABE (analysieren & beurteilen, AFB II/III)：Ein Mediziner schlaegt vor: "In unserer Klinik liegen fuenf junge Patienten, die ohne sofortige Organtransplantation sterben werden (Herz, Leber, Lungen, Nieren). Im Wartezimmer sitzt ein gesunder, alter Patient zu einer Routineuntersuchung. Wenn wir ihn schmerzfrei toeten und seine Organe entnehmen, retten wir fuenf Leben und verlieren nur eines." Beurteilen Sie diesen Vorschlag aus der Perspektive des Utilitarismus und der kantischen Deontologie.
 
 HILFE:
-1. Schritt 1: Utilitarismus anwenden: Handlungsutilitarismus wuerde $5 - 1 = +4$ Leben rechnen (positive Nutzenbilanz); Regelutilitarismus wuerde das Vertrauen in Krankenhaeuser und die Gesamtsicherheit bedenken.
-2. Schritt 2: Kants Zweck-an-sich-Formel anwenden: Der gesunde Patient wird getoetet, um als reines Ersatzteillager fuer andere zu dienen $\implies$ Verletzung des Instrumentalisierungsverbots.
-3. Schritt 3: Synthese und Urteil im Lichte der Menschenwuerde.
+- Erster Zugang: Ordne das Fallmaterial mit Kernbegriff aus Schritt 2, ohne schon zu werten.
+- Zweiter Zugang: Lege die Gegenprobe mit Kernbegriff getrennt daneben, ohne die Seiten zu vermischen.
+- Schreibe beide Pruefgaenge getrennt auf und nenne noch kein Urteil und keine Zeilenloesung.
+
+COMPLETION (Lückentext):
+- 中文说明：根据MUSTERLÖSUNG补全关键判断，不回看上文。
+- Ergaenze: Die ___-Pruefung mit Kernbegriff scheidet Kernbegriff von Kernbegriff, weil ___ das Urteil begrenzt.
 
 MUSTERLÖSUNG: Aus Sicht des klassischen Handlungsutilitarismus (nach Jeremy Bentham) koennte der Vorschlag zunaechst rational erscheinen, da die toedliche Entnahme eines Organs fuenf Menschen das Leben rettet, was rein quantitativ das groessere Glueck der groesseren Zahl bewirkt ($5 > 1$). Ein differenzierter Regelutilitarismus muesste dem jedoch widersprechen, da das Wissen um solche Praktiken zu einer vollstaendigen Zerstoerung des gesellschaftlichen Vertrauens in Krankenhaeuser fuehrte, was unendliche Angst und gesamtgesellschaftliches Leid hervorriefe.
 Aus Sicht von Immanuel Kants Pflichtenethik (Deontologie) ist der Vorschlag des Mediziners ein absolutes, unverzeihliches Verbrechen gegen die Menschheit.
@@ -132,16 +148,24 @@ PRÜFUNGSSZENARIO (KLP NRW Philosophie EF Inhaltsfeld 2: Ethische Grundpositione
 Textauszug aus Immanuel Kant: "Grundlegung zur Metaphysik der Sitten" (1785, BA 77):
 > "Im Reiche der Zwecke hat alles entweder einen Preis, oder eine Wuerde. Was einen Preis hat, an dessen Stelle kann auch etwas anderes als Aequivalent gesetzt werden; was dagegen ueber allen Preis erhaben ist, mithin kein Aequivalent verstattet, das hat eine Wuerde [...] Die Autonomie ist also der Grund der Wuerde der menschlichen und jeder vernuenftigen Natur."
 
-AUFGABE (analysieren & beurteilen, AFB II/III):
+AUFGABE (analysieren & beurteilen, [AFB II/III]):
 1. Rekonstruieren Sie den logischen Zusammenhang zwischen "Autonomie" und "Menschenwuerde" bei Kant. (12 BE)
 2. Beurteilen Sie die ethische Zulaessigkeit von kommerzieller Leihmutterschaft vor dem Hintergrund dieses Textauszugs. (18 BE)
 
-ERWARTUNGSHORIZONT:
-- AFB II (Autonomie und Wuerde): Der Mensch erhaelt Wuerde nicht durch Geburt, Talent oder sozialen Nutzen, sondern durch seine Autonomie: die Faehigkeit zur moralischen Selbstgesetzgebung. Da der Mensch das einzige bekannte Wesen ist, das sich ueber biologische Naturtriebe erheben und rein aus Pflicht handeln kann, repraesentiert er den Ursprung moralischer Gesetze. Dies verleiht ihm einen unendlichen, unbezahlbaren Wert (Wuerde).
-- AFB III (Kommerzielle Leihmutterschaft): Bei der kommerziellen Leihmutterschaft bezahlt ein Paar eine Frau dafuer, ein Kind auszutragen und nach der Geburt dauerhaft abzutreten. Nach Kant liegt hier eine zweifache Instrumentalisierung vor:
-  1. Die Leihmutter wird fuer Geld zu einer biologischen Geburtsmaschine (blosses Mittel fuer den Kinderwunsch Fremder) degradiert $\implies$ ihr Koerper erhaelt einen Marktpreis.
-  2. Das Neugeborene wird zum vertraglichen Liefergegenstand einer bezahlten Transaktion $\implies$ ein Mensch wird wie eine Ware gehandelt. Daher widerspricht die Praxis Kants Ethik diametral.
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Darstellung der Kernbegriffe (Menschenwuerde vs. Preis: Kants Zweck-an-sich-Fo) | 5 NP | Verkuerzte Darstellung mit einem Leitbegriff als Alternativweg
+Analyse mit Massstab und Gegenprobe aus Schritt 4-5 | 5 NP | Einseitige Probenfuehrung mit ergaenzter Schranke als Alternativweg
+Urteil mit Begruendung und Alternativregel | 5 NP | Offenes Abwaegen mit klarer Entscheidungsregel als Alternativweg
 
+MUSTER-KLAUSURSATZ als 15 NP Referenz:
+> Die gepruefte Loesung verbindet Darstellung, Analyse und Urteil zu Menschenwuerde vs. Preis: Kants Zweck-an-sich-Fo, indem Massstab und Schranke getrennt gefuehrt und erst im Urteil zusammengeführt werden.
+
+KERNSATZ (auswendig):
+- Kernsatz: `Wuerde hat keinen Preis, weil der Mensch als Zweck an sich jede Verrechnung von Personen gegen Nutzen sperrt.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = Mensch als Zweck an sich | Mechanismus = Preisverbot plus Zweckformel | Urteil = Urteil gegen Instrumentalisierung
+- Selbsttest: Wuerde hat keinen Preis, weil der Mensch als Zweck an sich jede ___ von Personen gegen Nutzen sperrt.
 ## Schritt 7 — check: Format-Check & Scoring
 30 XP Schnelltest zur Verstaendigungssicherung:
 

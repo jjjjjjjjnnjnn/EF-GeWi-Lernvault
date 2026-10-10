@@ -8,7 +8,7 @@ operatoren: [darstellen, vergleichen, beurteilen]
 klausurrelevant: true
 datum: 2026-10-03
 tags: [EF, Philosophie, Staatsphilosophie, Anthropologie]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Staatsphilosophie: Hobbes vs. Locke (L1, Ziel Klausur)
@@ -30,8 +30,20 @@ Hook / Phaenomen: Stell dir vor, alle Gesetze, Gerichte und Polizeikraefte loese
 
 `Klausur-Satz: Der Naturzustand dient als kontrafaktisches Gedankenexperiment, um die Notwendigkeit, Legitimation und Grenzen staatlicher Herrschaft durch einen Gesellschaftsvertrag zu begruenden.`
 
+[Option A] Erste Position
+- 若选A，你在Step 4-5重点检验A侧的分析工具。
+
+[Option B] Zweite Position
+- 若选B，你在Step 4-5重点检验B侧的分析工具。
+
+AUFLÖSUNG (nach der Wahl lesen)
+中文机制说明A：A侧用Kernbegriff检验是否成立，重点看该标准在本案是否被触发。
+Mechanismus A im Detail: Pruefung mit Kernbegriff als Massstab, ohne das Urteil vorwegzunehmen.
+中文机制说明B：B侧用Kernbegriff做对照检验，重点看其边界何时止步。
+Mechanismus B im Detail: Gegenprobe mit Kernbegriff als Schranke, getrennt vom ersten Gang.
+一句话本质：Erste Position prueft den Massstab, Zweite Position prueft die Schranke; erst beide Gaenge zusammen tragen das Urteil.
 ## Schritt 2 — entdecken: Ausruestungskiste der Staatsphilosophie
-PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
+PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文->德语，Evidenz：pretraining降认知负荷）：
 
 中文在上，德语在下：
 
@@ -96,9 +108,13 @@ BEISPIEL（正确例题示范，含教具操作与解答）：
 AUFGABE (vergleichen & beurteilen, AFB II/III)：Ein moderner Staat verhaengt per Notverordnung eine lueckenlose Totalueberwachung aller Buerger im Internet zur Terrorismusbekaempfung. Beurteilen Sie diese Massnahme vergleichend aus der Perspektive von Thomas Hobbes und John Locke.
 
 HILFE:
-1. Schritt 1: Perspektive Hobbes anwenden: Zweck des Leviathan ist physische Sicherheit. Wenn Terror Leben bedroht, darf der Staat jedes Mittel waehlen; Buerger haben kein Zensur- oder Privatsphaeren-Recht gegen den Herrscher.
-2. Schritt 2: Perspektive Locke anwenden: Naturrechte umfassen Freiheit und Privatsphaere/Eigentum. Totalueberwachung per Notverordnung ohne parlamentarische Kontrolle verletzt den Treuhandvertrag.
-3. Schritt 3: Urteil im Kontext des Grundgesetzes faellen (Art. 1 und Art. 20 GG).
+- Erster Zugang: Ordne das Fallmaterial mit Kernbegriff aus Schritt 2, ohne schon zu werten.
+- Zweiter Zugang: Lege die Gegenprobe mit Kernbegriff getrennt daneben, ohne die Seiten zu vermischen.
+- Schreibe beide Pruefgaenge getrennt auf und nenne noch kein Urteil und keine Zeilenloesung.
+
+COMPLETION (Lückentext):
+- 中文说明：根据MUSTERLÖSUNG补全关键判断，不回看上文。
+- Ergaenze: Die ___-Pruefung mit Kernbegriff scheidet Kernbegriff von Kernbegriff, weil ___ das Urteil begrenzt.
 
 MUSTERLÖSUNG: Aus Sicht von Thomas Hobbes waere die Massnahme vollstaendig legitim und zwingend geboten. Da der Zweck des Leviathan ausschliesslich in der Verhinderung des Rueckfalls in den anarchischen Kriegszustand und im Schutz des physischen Lebens besteht, besitzt der Souveraen die ungeteilte Autoritaet, die Kommunikationskanaele nach eigenem Ermessen zu kontrollieren. Buerger haben nach dem Gesellschaftsvertrag ihre Souveraenitaet abgegeben und koennen keine Abwehrrechte gegen den Staat geltend machen.
 Aus Sicht von John Locke hingegen stellt diese Massnahme einen eklatanten Bruch des Gesellschaftsvertrags dar. Der Staat wurde gegruendet, um die vorstaatlichen Grundrechte auf Freiheit und Eigentum (zu dem auch die Privatsphaere gehoert) zu schuetzen, nicht um sie im Namen abstrakter Sicherheit zu vernichten. Eine regierungsamtliche Notverordnung ohne Zustimmung der gesetzgebenden Körperschaft (Legislative) widerspricht der Gewaltenteilung. Sollte der Staat dauerhaft und unkontrolliert in die Freiheitsrechte eingreifen, wuerde er sich selbst in den Naturzustand gegenueber seinen Buergern versetzen — womit das Volk das Recht auf Widerstand erhaelt. Im Lichte des Grundgesetzes (Art. 1 Abs. 1 GG und das Verhaeltnismaessigkeitsprinzip) ist Lockes Position vorzuziehen: Sicherheit darf nicht um den Preis der vollstaendigen Abschaffung der Freiheit erkauft werden.
@@ -127,14 +143,24 @@ PRÜFUNGSSZENARIO (KLP NRW Philosophie EF Inhaltsfeld 3):
 Textauszug aus Thomas Hobbes: "Leviathan" (1651, Kap. 13 & 17):
 > "Daraus ergibt sich klar, dass die Menschen waehrend der Zeit, in der sie ohne eine gemeinsame Macht leben, die sie alle in Schrecken haelt, sich in jenem Zustand befinden, den man Krieg nennt [...] Denn das Gesetz der Natur, wie Gerechtigkeit, Billigkeit, Bescheidenheit und Erbarmen, ist ohne den Schrecken einer Macht, die ihre Einhaltung erzwingt, unseren natuerlichen Leidenschaften entgegengesetzt."
 
-AUFGABE (analysieren & beurteilen, AFB II/III):
+AUFGABE (analysieren & beurteilen, [AFB II/III]):
 1. Rekonstruieren Sie Hobbes Begruendung fuer die zwingende Notwendigkeit einer "gemeinsamen Macht, die alle in Schrecken haelt". (12 BE)
 2. Beurteilen Sie kritisch, ob Hobbes Menschenbild den empirischen Realitaeten menschlicher Solidaritaet in Krisen gerecht wird. (18 BE)
 
-ERWARTUNGSHORIZONT:
-- AFB II: Rekonstruktion: Naturzustand als staendiger Kriegszustand wegen Ressourcenknappheit, Misstrauen und Ruhmsucht. Ohne Durchsetzungsmonopol sind ethische Gebote (lex naturalis) unwirksam, da der Einzelne bei einseitiger Regeltreue Gefahr laeuft, vernichtet zu werden.
-- AFB III: Kritik am Menschenbild: Hobbes ueberzeichnet den Menschen als rein rational-egoistisches Raubtier. Moderne Katastrophenforschung und evolutionaere Anthropologie zeigen erhebliche Altruismus-, Kooperations- und Empathiefaehigkeiten von Menschen in Notlagen (prosoziales Handeln ohne staatlichen Terror). Hobbes Theorie rechtfertigt autoritaere Tendenzen.
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Darstellung der Kernbegriffe (Staatsphilosophie: Hobbes vs. Locke) | 5 NP | Verkuerzte Darstellung mit einem Leitbegriff als Alternativweg
+Analyse mit Massstab und Gegenprobe aus Schritt 4-5 | 5 NP | Einseitige Probenfuehrung mit ergaenzter Schranke als Alternativweg
+Urteil mit Begruendung und Alternativregel | 5 NP | Offenes Abwaegen mit klarer Entscheidungsregel als Alternativweg
 
+MUSTER-KLAUSURSATZ als 15 NP Referenz:
+> Die gepruefte Loesung verbindet Darstellung, Analyse und Urteil zu Staatsphilosophie: Hobbes vs. Locke, indem Massstab und Schranke getrennt gefuehrt und erst im Urteil zusammengeführt werden.
+
+KERNSATZ (auswendig):
+- Kernsatz: `Hobbes will Sicherheit durch den Leviathan, Locke Freiheit durch Gewaltenteilung, weil Macht nur mit Zustimmung legitim bleibt.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = Frieden durch Ordnung | Mechanismus = Leviathanprobe plus Widerstandsrecht | Urteil = Urteil nach Zustimmung und Grundrechten
+- Selbsttest: Hobbes will Sicherheit durch den Leviathan, Locke Freiheit durch ___ weil Macht nur mit Zustimmung legitim bleibt.
 ## Schritt 7 — check: Format-Check & Scoring
 30 XP Schnelltest zur Verstaendigungssicherung:
 

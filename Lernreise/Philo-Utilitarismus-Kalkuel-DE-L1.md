@@ -8,7 +8,7 @@ operatoren: [darstellen, analysieren, beurteilen]
 klausurrelevant: true
 datum: 2026-09-26
 tags: [EF, Philosophie, Ethik]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Das utilitaristische Kalkuel und Mills Qualitaetsunterscheidung (L1, Ziel Klausur)
@@ -29,6 +29,18 @@ Stell dir den zwoelften Prozesstag im Tribunal der Menschheit vor. Draussen krei
 
 Klausur-Satz: `Im Drohnenlaerm-Prozess prallt Benthams Mengenbilanz auf Mills Frage, ob hoehere Freuden wie Bildung und Ruhe schwerer wiegen als blosse Bequemlichkeit.`
 
+[Option A] Erste Position
+- 若选A，你在Step 4-5重点检验A侧的分析工具。
+
+[Option B] Zweite Position
+- 若选B，你在Step 4-5重点检验B侧的分析工具。
+
+AUFLÖSUNG (nach der Wahl lesen)
+中文机制说明A：A侧用Nutzenprinzip检验是否成立，重点看该标准在本案是否被触发。
+Mechanismus A im Detail: Pruefung mit Nutzenprinzip als Massstab, ohne das Urteil vorwegzunehmen.
+中文机制说明B：B侧用Hedonistisches Kalkuel做对照检验，重点看其边界何时止步。
+Mechanismus B im Detail: Gegenprobe mit Hedonistisches Kalkuel als Schranke, getrennt vom ersten Gang.
+一句话本质：Erste Position prueft den Massstab, Zweite Position prueft die Schranke; erst beide Gaenge zusammen tragen das Urteil.
 ## Schritt 2 — entdecken: Sieben Gewichte ein Kenner-Test: Menge gegen Wuerde
 
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
@@ -111,9 +123,13 @@ Primaertext (vereinfachte deutsche Fassung nach Bentham und Mill, 100 bis 200 Wo
 AUFGABE Waage-Raetsel (AFB II): Lege das Drohnennetz gegen die Nachtruhe auf [Werkzeug: balance-board]. Markiere mit GELB alle Stellen zum Mengenmassstab (Z.1 bis Z.8) und mit BLAU alle Stellen zur Qualitaetskorrektur (Z.9 bis Z.15). Target: Sieben Kriterien je 1 bis 5 wichten, danach Mills Korrektur zuschalten und am Gesamtglueck urteilen.
 
 HILFE:
-1. Schritt 1: Bilanziere beide Optionen mit den sieben Kriterien aus Z.1 bis Z.8.
-2. Schritt 2: Wende den Kenner-Test aus Z.10 bis Z.12 auf Cellist und Anwohner an.
-3. Schritt 3: Deute an Gesamtglueck mit Minderheitenschutz aus Z.13 bis Z.15 und formuliere den Klausur-Satz.
+- Erster Zugang: Ordne das Fallmaterial mit Nutzenprinzip aus Schritt 2, ohne schon zu werten.
+- Zweiter Zugang: Lege die Gegenprobe mit Hedonistisches Kalkuel getrennt daneben, ohne die Seiten zu vermischen.
+- Schreibe beide Pruefgaenge getrennt auf und nenne noch kein Urteil und keine Zeilenloesung.
+
+COMPLETION (Lückentext):
+- 中文说明：根据MUSTERLÖSUNG补全关键判断，不回看上文。
+- Ergaenze: Die ___-Pruefung mit Nutzenprinzip scheidet Nutzenprinzip von Hedonistisches Kalkuel, weil ___ das Urteil begrenzt.
 
 MUSTERLOESUNG: Ohne Korrektur gewinnt das Drohnennetz durch Umfang und Naehe viele Minipunkte. Mit Korrektur kippt die Waage: Dauerhafter Schlafverlust plus Zerstoerung hoeherer Freude wie Ueben und Lernen wiegt schwerer als kurze Lieferbequemlichkeit (Z.5, Z.6, Z.12). Kenner ziehen Ruhe und Bildung vor, daher ist das Nachtflugverbot geboten.
 
@@ -161,11 +177,26 @@ Klausur-Satz: `Wer das Kalkuel beherrscht, bilanziert erst sieben Mengen und kor
 
 ROLLE: Du bist Gutachter der Stadt im Drohnenlaerm-Prozess und sollst dem Stadtrat eine Empfehlung zum Nachtflugverbot geben.
 SITUATION: Die Logistiklobby fordert freien Nachtflug fuer das Gesamtglueck, die Anwohnerinitiative fordert Ruhe und Bildungsschutz. Beurteile in etwa 150 Woertern beide Optionen mit Kalkuel und Qualitaetskorrektur und empfaehl eine Regelung.
-AUFGABE (AFB III): Verfasse eine zusammenhaengende Darstellung von etwa 150 Woertern mit Kriterium, Anwendung und Urteil.
+AUFGABE ([AFB III]): Verfasse eine zusammenhaengende Darstellung von etwa 150 Woertern mit Kriterium, Anwendung und Urteil.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Darstellung der Kernbegriffe (Das utilitaristische Kalkuel und Mills Qualitaet) | 5 NP | Verkuerzte Darstellung mit einem Leitbegriff als Alternativweg
+Analyse mit Massstab und Gegenprobe aus Schritt 4-5 | 5 NP | Einseitige Probenfuehrung mit ergaenzter Schranke als Alternativweg
+Urteil mit Begruendung und Alternativregel | 5 NP | Offenes Abwaegen mit klarer Entscheidungsregel als Alternativweg
+
 RUBRIC (30 XP): Bilanz beider Optionen mit Kriterien (10 XP) | Anwendung der Qualitaetskorrektur mit Kenner-Test (10 XP) | Umgang mit der Minderheitenfrage (6 XP) | Fachsprachliches Urteil (4 XP).
 
 Klausur-Satz: `Im Gutachten gilt: Erst Mengen bilanzieren, dann Qualitaet korrigieren und schliesslich die Minderheit vor der Mehrheit schuetzen.`
 
+MUSTER-KLAUSURSATZ als 15 NP Referenz:
+> Die gepruefte Loesung verbindet Darstellung, Analyse und Urteil zu Das utilitaristische Kalkuel und Mills Qualitaet, indem Massstab und Schranke getrennt gefuehrt und erst im Urteil zusammengeführt werden.
+
+KERNSATZ (auswendig):
+- Kernsatz: `Bentham misst Lust nach sieben Faktoren, weil nur die groesste Nettobilanz fuer die groesste Zahl als richtig zaehlt.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = Handlungsfolgen als Bilanz | Mechanismus = Sieben-Faktoren-Rechnung des Nettonutzens | Urteil = Urteil nach maximaler Summe
+- Selbsttest: Bentham misst Lust nach sieben Faktoren, weil nur die groesste ___ fuer die groesste Zahl als richtig zaehlt.
 ## Schritt 8 — reflexion: Urteil mit Kennerblick: Zaehlen plus Wagen
 
 TAKEAWAY (Kernbotschaft in einem Kasten):

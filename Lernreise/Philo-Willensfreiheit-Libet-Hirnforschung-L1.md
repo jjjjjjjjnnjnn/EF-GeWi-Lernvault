@@ -8,7 +8,7 @@ operatoren: [darstellen, analysieren, beurteilen]
 klausurrelevant: true
 datum: 2026-09-26
 tags: [EF, Philosophie, Anthropologie]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Willensfreiheit Libet und Hirnforschung (L1, Ziel Klausur)
@@ -29,6 +29,18 @@ Stell dir den sechzehnten Prozesstag im Tribunal der Menschheit vor. Ein Schuele
 
 Klausur-Satz: `Im Scan-Prozess prallt Libets Kurve des Gehirns auf Frankfurts Frage, mit welchem Wunsch sich das Ich identifiziert.`
 
+[Option A] Erste Position
+- 若选A，你在Step 4-5重点检验A侧的分析工具。
+
+[Option B] Zweite Position
+- 若选B，你在Step 4-5重点检验B侧的分析工具。
+
+AUFLÖSUNG (nach der Wahl lesen)
+中文机制说明A：A侧用Determinismus检验是否成立，重点看该标准在本案是否被触发。
+Mechanismus A im Detail: Pruefung mit Determinismus als Massstab, ohne das Urteil vorwegzunehmen.
+中文机制说明B：B侧用Libertarismus做对照检验，重点看其边界何时止步。
+Mechanismus B im Detail: Gegenprobe mit Libertarismus als Schranke, getrennt vom ersten Gang.
+一句话本质：Erste Position prueft den Massstab, Zweite Position prueft die Schranke; erst beide Gaenge zusammen tragen das Urteil.
 ## Schritt 2 — entdecken: Fuenf Signale des Scanners: Kurve Stufe Veto
 
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
@@ -111,9 +123,13 @@ Primaertext (vereinfachte deutsche Fassung nach Libet und Frankfurt, 100 bis 200
 AUFGABE Waage-Raetsel (AFB II): Lege Libet gegen Frankfurt auf [Werkzeug: balance-board]. Markiere mit GELB alle Stellen zur Kurve und zum Veto (Z.1 bis Z.6) und mit BLAU alle Stellen zur Hierarchie und Identifikation (Z.7 bis Z.14). Target: Kurve, Veto und Identifikation je 1 bis 5 wichten und per Zurechenbarkeit entscheiden.
 
 HILFE:
-1. Schritt 1: Stelle Libets Befund mit Z.1 bis Z.3 dar.
-2. Schritt 2: Pruefe das Veto-Fenster mit Z.4 bis Z.6.
-3. Schritt 3: Wende Frankfurts Hierarchie mit Z.7 bis Z.12 an und urteile mit Z.14 bis Z.15.
+- Erster Zugang: Ordne das Fallmaterial mit Determinismus aus Schritt 2, ohne schon zu werten.
+- Zweiter Zugang: Lege die Gegenprobe mit Libertarismus getrennt daneben, ohne die Seiten zu vermischen.
+- Schreibe beide Pruefgaenge getrennt auf und nenne noch kein Urteil und keine Zeilenloesung.
+
+COMPLETION (Lückentext):
+- 中文说明：根据MUSTERLÖSUNG补全关键判断，不回看上文。
+- Ergaenze: Die ___-Pruefung mit Determinismus scheidet Determinismus von Libertarismus, weil ___ das Urteil begrenzt.
 
 MUSTERLOESUNG: Libets Kurve belegt unbewusste Vorbereitung (Z.1 bis Z.2), doch das Veto-Fenster haelt Kontrolle offen (Z.4 bis Z.6). Frankfurt entscheidet personal: Der Schummler bejaht seinen Schummelwillen aus Angst und traegt ihn willentlich (Z.8, Z.12). Darum sichert Identifikation plus Stoppfaehigkeit die Zurechenbarkeit trotz Gehirn (Z.13 bis Z.15).
 
@@ -161,11 +177,26 @@ Klausur-Satz: `Wer Freiheit behauptet, muss Kurve, Veto und Identifikation getre
 
 ROLLE: Du bist Verteidiger des Schuelers im Scan-Prozess und Gutachter der Schule fuer die kuenftige Sanktionsregel.
 SITUATION: Der Anwalt fordert Freispruch wegen Gehirn, die Klasse fordert Härte wegen Gerechtigkeit. Beurteile in etwa 150 Woertern mit Libet und Frankfurt, ob Schuld besteht, und empfaehl Sanktion oder Coaching mit Schuld oder Praevention als Kriterium.
-AUFGABE (AFB III): Verfasse eine zusammenhaengende Darstellung von etwa 150 Woertern mit Kriterium, Anwendung und Urteil.
+AUFGABE ([AFB III]): Verfasse eine zusammenhaengende Darstellung von etwa 150 Woertern mit Kriterium, Anwendung und Urteil.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Darstellung der Kernbegriffe (Willensfreiheit Libet und Hirnforschung) | 5 NP | Verkuerzte Darstellung mit einem Leitbegriff als Alternativweg
+Analyse mit Massstab und Gegenprobe aus Schritt 4-5 | 5 NP | Einseitige Probenfuehrung mit ergaenzter Schranke als Alternativweg
+Urteil mit Begruendung und Alternativregel | 5 NP | Offenes Abwaegen mit klarer Entscheidungsregel als Alternativweg
+
 RUBRIC (30 XP): Libet mit Kurve und Veto plus Textbeleg (10 XP) | Frankfurt mit Hierarchie und Identifikation plus Textbeleg (10 XP) | Urteil mit Schuld oder Praevention und Wuerde (10 XP).
 
 Klausur-Satz: `Im Plaedoyer gilt: Erst Kurve und Stufe mit Beleg rekonstruieren, dann Zurechenbarkeit messen und schliesslich Schuld mit Hilfe verbinden.`
 
+MUSTER-KLAUSURSATZ als 15 NP Referenz:
+> Die gepruefte Loesung verbindet Darstellung, Analyse und Urteil zu Willensfreiheit Libet und Hirnforschung, indem Massstab und Schranke getrennt gefuehrt und erst im Urteil zusammengeführt werden.
+
+KERNSATZ (auswendig):
+- Kernsatz: `Libets Bereitschaftspotenzial eilt dem Wollen voraus, weil das Veto-Fenster bewusste Kontrolle und Verantwortung offen haelt.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = RP vor W vor M | Mechanismus = Zeitprobe plus Veto-Recht | Urteil = Urteil gegen Reduktionismus
+- Selbsttest: Libets ___ eilt dem Wollen voraus, weil das Veto-Fenster bewusste Kontrolle und Verantwortung offen haelt.
 ## Schritt 8 — reflexion: Urteil trotz Gehirn: Feuerung erklaert Person verantwortet
 
 TAKEAWAY (Kernbotschaft in einem Kasten):

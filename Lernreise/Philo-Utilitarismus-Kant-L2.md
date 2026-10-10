@@ -8,7 +8,7 @@ operatoren: [darstellen, vergleichen, beurteilen]
 klausurrelevant: true
 datum: 2026-09-22
 tags: [EF, Philosophie]
-version: Lesson-v3-pilot
+version: Enterprise-v5
 ---
 
 # Lernreise: Utilitarismus vs Kant (L2 Pilot, Lesson v3, Ziel Klausur)
@@ -29,6 +29,18 @@ Stell dir den fuenfzehnten Prozesstag im Tribunal der Menschheit vor, diesmal im
 
 Klausur-Satz: `Im Nachtzug-Prozess prallt die Rettungsmathematik fuenf gegen eins auf die Frage, ob Tun den Weichensteller zum Taeter an der Wuerde macht.`
 
+[Option A] Erste Position
+- 若选A，你在Step 4-5重点检验A侧的分析工具。
+
+[Option B] Zweite Position
+- 若选B，你在Step 4-5重点检验B侧的分析工具。
+
+AUFLÖSUNG (nach der Wahl lesen)
+中文机制说明A：A侧用Aktutilitarismus检验是否成立，重点看该标准在本案是否被触发。
+Mechanismus A im Detail: Pruefung mit Aktutilitarismus als Massstab, ohne das Urteil vorwegzunehmen.
+中文机制说明B：B侧用Regelutilitarismus做对照检验，重点看其边界何时止步。
+Mechanismus B im Detail: Gegenprobe mit Regelutilitarismus als Schranke, getrennt vom ersten Gang.
+一句话本质：Erste Position prueft den Massstab, Zweite Position prueft die Schranke; erst beide Gaenge zusammen tragen das Urteil.
 ## Schritt 2 — entdecken: Zwei Stellwerke fuenf Signale: Rechnen gegen Gebieten
 
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen, L2 vertieft):
@@ -111,9 +123,13 @@ Primaertext (vereinfachte deutsche Fassung nach Mill und Kant, L2, 100 bis 200 W
 AUFGABE Waage-Raetsel (AFB II, L2): Lege Stellen gegen Nichtstellen auf [Werkzeug: balance-board]. Markiere mit GELB alle Stellen zur Aktbilanz (Z.1 bis Z.3) und mit BLAU alle Stellen zu Regel und Wuerde (Z.4 bis Z.14). Target: Aktbilanz, Regelblick und Maximenprobe je 1 bis 5 wichten und per Verantwortung entscheiden.
 
 HILFE:
-1. Schritt 1: Bilanziere Stellen gegen Nichtstellen mit Z.1 bis Z.3.
-2. Schritt 2: Pruefe Regel und Vertrauen mit Z.4 bis Z.7.
-3. Schritt 3: Pruefe Maxime und Wuerde mit Z.8 bis Z.12 und urteile mit Verantwortung aus Z.14 bis Z.15.
+- Erster Zugang: Ordne das Fallmaterial mit Aktutilitarismus aus Schritt 2, ohne schon zu werten.
+- Zweiter Zugang: Lege die Gegenprobe mit Regelutilitarismus getrennt daneben, ohne die Seiten zu vermischen.
+- Schreibe beide Pruefgaenge getrennt auf und nenne noch kein Urteil und keine Zeilenloesung.
+
+COMPLETION (Lückentext):
+- 中文说明：根据MUSTERLÖSUNG补全关键判断，不回看上文。
+- Ergaenze: Die ___-Pruefung mit Aktutilitarismus scheidet Aktutilitarismus von Regelutilitarismus, weil ___ das Urteil begrenzt.
 
 MUSTERLOESUNG: Die Aktbilanz spricht fuers Stellen mit plus vier Leben (Z.1 bis Z.3). Der Regelblick warnt vor Dammbruch des Toetungsverbots und Vertrauensverlust (Z.5 bis Z.7). Kant prueft die Maxime: Den einen opfern benutzt ihn als blosses Mittel (Z.10, Z.12) und ist als Gesetz nicht wollbar (Z.11). Verantwortung erlaubt das Stellen nur mit enger Regelbegruendung, sonst wiegt Unterlassen mit reinen Haenden schwerer.
 
@@ -161,11 +177,26 @@ Klausur-Satz: `Auf L2 zaehlt nicht nur die Bilanz, sondern wessen Hand sie als R
 
 ROLLE: Du bist Weichensteller im Nachtzug-Prozess und Gutachter der Bahn fuer die kuenftige Stell-Regel.
 SITUATION: Die Betriebsleitung fordert freie Stellbefugnis nach Bilanz, die Ethikkommission fordert ein enges Toetungsverbot mit Wuerde. Lege in etwa 150 Woertern mit Akt, Regel und Maxime dar, wann Stellen verantwortbar waere, und empfaehl eine Regel.
-AUFGABE (AFB III): Verfasse eine zusammenhaengende Darstellung von etwa 150 Woertern mit Kriterium, Anwendung und Urteil.
+AUFGABE ([AFB III]): Verfasse eine zusammenhaengende Darstellung von etwa 150 Woertern mit Kriterium, Anwendung und Urteil.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Darstellung der Kernbegriffe (Utilitarismus vs Kant) | 5 NP | Verkuerzte Darstellung mit einem Leitbegriff als Alternativweg
+Analyse mit Massstab und Gegenprobe aus Schritt 4-5 | 5 NP | Einseitige Probenfuehrung mit ergaenzter Schranke als Alternativweg
+Urteil mit Begruendung und Alternativregel | 5 NP | Offenes Abwaegen mit klarer Entscheidungsregel als Alternativweg
+
 RUBRIC (30 XP): Akt- gegen Regelbilanz mit Textbeleg (10 XP) | Maximenprobe mit Wuerde und Tun-Zurechnung (10 XP) | Regelvorschlag mit Schranken und Verantwortung (10 XP).
 
 Klausur-Satz: `Im Gutachten gilt: Erst Akt und Regel getrennt bilanzieren, dann Maxime an Wuerde messen und schliesslich eng verantworten.`
 
+MUSTER-KLAUSURSATZ als 15 NP Referenz:
+> Die gepruefte Loesung verbindet Darstellung, Analyse und Urteil zu Utilitarismus vs Kant, indem Massstab und Schranke getrennt gefuehrt und erst im Urteil zusammengeführt werden.
+
+KERNSATZ (auswendig):
+- Kernsatz: `Der Nutzen rechnet Folgen, Kant prueft Maximen, weil Wuerde jede Verrechnung von Menschen gegen Glueckssummen stoppt.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = Bilanz gegen Pflicht | Mechanismus = Kalkuelprobe plus Zweckformel | Urteil = Urteil mit Wuerdeschranke
+- Selbsttest: Der Nutzen rechnet Folgen, Kant prueft Maximen, weil Wuerde jede Verrechnung von Menschen gegen ___ stoppt.
 ## Schritt 8 — reflexion: Urteil im Stellwerk: Hand plus Regel plus Wuerde
 
 TAKEAWAY (Kernbotschaft in einem Kasten):

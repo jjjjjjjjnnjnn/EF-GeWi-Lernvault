@@ -8,7 +8,7 @@ operatoren: [rekonstruieren, vergleichen, beurteilen]
 klausurrelevant: true
 datum: 2026-10-03
 tags: [EF, Philo, Sprachphilosophie, Wittgenstein, Tractatus, Sprachspiele, Lebensform]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Sprachphilosophie: Ludwig Wittgenstein – Von der Abbildtheorie zu den Sprachspielen (L1, Ziel Klausur)
@@ -28,8 +28,20 @@ Ein oesterreichischer Milliardaerssohn wirft sein gesamtes immenses Erbe weg, zi
 
 `Klausur-Satz: Waehrend der fruehe Wittgenstein die Sprache als logisches Abbild atomarer Tatsachen begreift, definiert der spaete Wittgenstein die Bedeutung eines Wortes durch seinen praktischen Gebrauch innerhalb eines sozialen Sprachspiels.`
 
+[Option A] Frueher Wittgenstein
+- 若选A，你在Step 4-5重点检验A侧的分析工具。
+
+[Option B] Spaeter Wittgenstein
+- 若选B，你在Step 4-5重点检验B侧的分析工具。
+
+AUFLÖSUNG (nach der Wahl lesen)
+中文机制说明A：A侧用Kernbegriff检验是否成立，重点看该标准在本案是否被触发。
+Mechanismus A im Detail: Pruefung mit Kernbegriff als Massstab, ohne das Urteil vorwegzunehmen.
+中文机制说明B：B侧用Kernbegriff做对照检验，重点看其边界何时止步。
+Mechanismus B im Detail: Gegenprobe mit Kernbegriff als Schranke, getrennt vom ersten Gang.
+一句话本质：Frueher Wittgenstein prueft den Massstab, Spaeter Wittgenstein prueft die Schranke; erst beide Gaenge zusammen tragen das Urteil.
 ## Schritt 2 — entdecken: Das sprachkritische Begriffsinventar
-PRETRAINING术语盒（核心4词，先读三遍中德，合书自测中文→德语）：
+PRETRAINING术语盒（核心4词，先读三遍中德，合书自测中文->德语）：
 
 - 语言图象论 — Abbildtheorie der Sprache: 早期维特根斯坦的观点，认为命题是事态的逻辑图象，命题中的名称与世界中的对象一一对应。 Die Auffassung des fruehen Wittgenstein, dass ein wahrer Satz die logische Struktur einer real existierenden Tatsache in der Welt 1:1 abbildet.
 - 语言游戏 — Sprachspiel: 晚期维特根斯坦的核心概念，强调语言是由语言表达与伴随的非语言人类实际行动交织而成的规则体系（如命令、下棋、开玩笑、祈祷）。 Ein dynamischer, regelgeleiteter Verwendungszusammenhang von Woertern und menschlichen Handlungen innerhalb einer Lebenspraxis.
@@ -65,12 +77,22 @@ Bauarbeiter        Wissenschaftler    Lyriker            Religionsglaeubiger
 
 [Werkzeug: balance-board]
 
+HILFE:
+- Erster Zugang: Ordne das Fallmaterial mit Kernbegriff aus Schritt 2, ohne schon zu werten.
+- Zweiter Zugang: Lege die Gegenprobe mit Kernbegriff getrennt daneben, ohne die Seiten zu vermischen.
+- Schreibe beide Pruefgaenge getrennt auf und nenne noch kein Urteil und keine Zeilenloesung.
+
 AUFGABE (rekonstruieren & vergleichen, AFB I/II):
 In Paragraf 2 der Philosophischen Untersuchungen beschreibt Wittgenstein ein primitives Sprachspiel:
 Zwei Bauarbeiter, A und B, errichten ein Bauwerk aus Wuerfeln, Saeulen, Platten und Balken.
 A ruft: "Platte!". B bringt daraufhin eine Platte herbei.
 1. Rekonstruiere, warum der Ausruf "Platte!" nach der Abbildtheorie unvollstaendig waere, im Sprachspiel jedoch eine vollstaendige, perfekte Mitteilung darstellt.
 2. Erklaere anhand des Beispiels des Begriffs "Spiel" (Schachspiel, Fussballspiel, Gluecksspiel, Ringelreihen), warum es unmoeglich ist, eine gemeinsame "Essenz" anzugeben, und wie das Konzept der Familienaehnlichkeit dieses Problem loest.
+
+
+COMPLETION (Lückentext):
+- 中文说明：根据MUSTERLÖSUNG补全关键判断，不回看上文。
+- Ergaenze: Die ___-Pruefung mit Kernbegriff scheidet Kernbegriff von Kernbegriff, weil ___ das Urteil begrenzt.
 
 MUSTERLOESUNG:
 1. Rekonstruktion Bauarbeiter-Sprache:
@@ -113,6 +135,22 @@ Analysiere aus der Sicht des spaeten Wittgenstein (Philosophische Untersuchungen
 ### AFB III: Kritisches Urteil
 Beurteile, ob Wittgensteins Konzept der Familienaehnlichkeit zu einem vollkommenen Begriffsrelativismus fuehrt, bei dem Definitionen beliebig und wissenschaftliche Praezision unmoeglich werden.
 
+AUFGABE (rekonstruieren, [AFB I/II/III]): Rekonstruiere den Fall mit den Begriffen aus Schritt 2 und begruende das Urteil mit der Gegenprobe aus Schritt 5.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Darstellung der Kernbegriffe (Sprachphilosophie: Ludwig Wittgenstein – Von der) | 5 NP | Verkuerzte Darstellung mit einem Leitbegriff als Alternativweg
+Analyse mit Massstab und Gegenprobe aus Schritt 4-5 | 5 NP | Einseitige Probenfuehrung mit ergaenzter Schranke als Alternativweg
+Urteil mit Begruendung und Alternativregel | 5 NP | Offenes Abwaegen mit klarer Entscheidungsregel als Alternativweg
+
+MUSTER-KLAUSURSATZ als 15 NP Referenz:
+> Die gepruefte Loesung verbindet Darstellung, Analyse und Urteil zu Sprachphilosophie: Ludwig Wittgenstein – Von der, indem Massstab und Schranke getrennt gefuehrt und erst im Urteil zusammengeführt werden.
+
+KERNSATZ (auswendig):
+- Kernsatz: `Bedeutung ist Gebrauch im Sprachspiel, weil Familienaehnlichkeit ohne Essenz die Verhexung durch falsche Analogien aufloest.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = Sprache als Werkzeugkasten | Mechanismus = Gebrauchsregel plus Familienaehnlichkeit | Urteil = Urteil gegen Abbilddogma
+- Selbsttest: Bedeutung ist Gebrauch im Sprachspiel, weil ___ ohne Essenz die Verhexung durch falsche Analogien aufloest.
 ## Schritt 7 — check: Format-Check & Scoring
 
 30 XP Schnelltest zur Verstaendigungssicherung:

@@ -8,7 +8,7 @@ operatoren: [darstellen, vergleichen, beurteilen]
 klausurrelevant: true
 datum: 2026-09-26
 tags: [EF, Philosophie, Staat]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Gesellschaftsvertrag bei Hobbes Locke und Rousseau (L1, Ziel Klausur)
@@ -27,6 +27,18 @@ Hook / Tribunal Fall 05 — Blackout-Prozess: Stell dir vor, das Licht des Geric
 
 Klausur-Satz: `Im Blackout-Prozess legitimiert der Vertrag Herrschaft durch Zustimmung, doch Hobbes, Locke und Rousseau ziehen daraus entgegengesetzte Grenzen der Macht.`
 
+[Option A] Erste Position
+- 若选A，你在Step 4-5重点检验A侧的分析工具。
+
+[Option B] Zweite Position
+- 若选B，你在Step 4-5重点检验B侧的分析工具。
+
+AUFLÖSUNG (nach der Wahl lesen)
+中文机制说明A：A侧用Naturzustand检验是否成立，重点看该标准在本案是否被触发。
+Mechanismus A im Detail: Pruefung mit Naturzustand als Massstab, ohne das Urteil vorwegzunehmen.
+中文机制说明B：B侧用Hobbes Leviathan做对照检验，重点看其边界何时止步。
+Mechanismus B im Detail: Gegenprobe mit Hobbes Leviathan als Schranke, getrennt vom ersten Gang.
+一句话本质：Erste Position prueft den Massstab, Zweite Position prueft die Schranke; erst beide Gaenge zusammen tragen das Urteil.
 ## Schritt 2 — entdecken: Drei Vertragsentwuerfe: Leviathan Treuhand Gemeinwille
 
 PRETRAINING (Kernbegriffe, fuenf Bausteine der Verteidigung):
@@ -95,9 +107,13 @@ AUFGABE (vergleichen, AFB II): Vergleichen Sie Hobbes und Locke anhand der Dimen
 Target: Links Leviathan mit Sicherheit plus Gehorsam plus Sperre, rechts Treuhand mit Eigentum plus Teilung plus Widerstand, je 1 bis 5 gewichten; beide Seiten mindestens 8 Punkte belegen und an Legitimation deuten, dann Urteil faellen.
 
 HILFE:
-1. Schritt 1: Beide Naturzustaende mit Z.1 bis Z.3 und Z.8 bis Z.9 nennen.
-2. Schritt 2: Vertragsleistung je Autor mit Z.4 bis Z.5 und Z.10 bis Z.11 nennen.
-3. Schritt 3: Begrenzung und Widerstand mit Z.6 bis Z.7 und Z.13 vergleichen und Waage deuten.
+- Erster Zugang: Ordne das Fallmaterial mit Naturzustand aus Schritt 2, ohne schon zu werten.
+- Zweiter Zugang: Lege die Gegenprobe mit Hobbes Leviathan getrennt daneben, ohne die Seiten zu vermischen.
+- Schreibe beide Pruefgaenge getrennt auf und nenne noch kein Urteil und keine Zeilenloesung.
+
+COMPLETION (Lückentext):
+- 中文说明：根据MUSTERLÖSUNG补全关键判断，不回看上文。
+- Ergaenze: Die ___-Pruefung mit Naturzustand scheidet Naturzustand von Hobbes Leviathan, weil ___ das Urteil begrenzt.
 
 MUSTERLOESUNG: Hobbes begruendet absolute Souveraenitaet: Der Leviathan beendet den Krieg aller gegen alle (Z.3), dafuer schulden ihm alle Gehorsam ohne Widerstandsrecht ausser bei unmittelbarer Lebensgefahr (Z.6 bis Z.7). Locke begrenzt Herrschaft: Die Regierung verwaltet treuhaenderisch Leben, Freiheit und Eigentum (Z.9 bis Z.10), Gewaltenteilung sichert Rechte (Z.11), bei Vertrauensbruch greift das Widerstandsrecht (Z.13). Der Unterschied liegt in der Vertragslogik: Unterwerfung zur Sicherheit versus Beauftragung zum Rechtsschutz.
 
@@ -143,11 +159,26 @@ Klausur-Satz: `Naturzustand plus Vertragsleistung bestimmen bei jedem Autor Souv
 
 ROLLE: Du bist Chefverteidiger der Schuelerschaft vor dem Tribunal und sollst die Legitimitaet einer Not-Handyregel verteidigen.
 SITUATION: Die Schulleitung will Anordnung wie ein Leviathan, die Schueler wollen Mitbestimmung wie ein Gemeinwille. Nimm in circa 150 Woertern mit Hobbes, Locke und Rousseau Stellung, welche Regelsetzung legitim waere, und sichere dein Urteil mit Recht oder Rettungsbilanz ab.
-AUFGABE (AFB III): Zusammenhaengende Darstellung circa 150 Woerter mit Kriterium, Anwendung und Urteil.
+AUFGABE ([AFB III]): Zusammenhaengende Darstellung circa 150 Woerter mit Kriterium, Anwendung und Urteil.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Darstellung der Kernbegriffe (Gesellschaftsvertrag bei Hobbes Locke und Rousse) | 5 NP | Verkuerzte Darstellung mit einem Leitbegriff als Alternativweg
+Analyse mit Massstab und Gegenprobe aus Schritt 4-5 | 5 NP | Einseitige Probenfuehrung mit ergaenzter Schranke als Alternativweg
+Urteil mit Begruendung und Alternativregel | 5 NP | Offenes Abwaegen mit klarer Entscheidungsregel als Alternativweg
+
 RUBRIC (30 XP): Locke korrekt mit Treuhandmodell und Textbeleg (10 XP) | Kontrast zu Hobbes und Rousseau (10 XP) | Widerlegung mit Kriterium Recht oder Bilanz (6 XP) | Fachsprachliche Darstellung (4 XP).
 
 Klausur-Satz: `Im Transfer gilt: Erst Modelle mit Beleg zuordnen, dann Legitimation an Zustimmung und Begrenzung messen und befristet urteilen.`
 
+MUSTER-KLAUSURSATZ als 15 NP Referenz:
+> Die gepruefte Loesung verbindet Darstellung, Analyse und Urteil zu Gesellschaftsvertrag bei Hobbes Locke und Rousse, indem Massstab und Schranke getrennt gefuehrt und erst im Urteil zusammengeführt werden.
+
+KERNSATZ (auswendig):
+- Kernsatz: `Der Vertrag tauscht natuerliche Freiheit gegen buergerliche Sicherheit, weil Hobbes Schutz, Locke Eigentum und Rousseau Gemeinwillen sichern.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = Legitimation durch Vertrag | Mechanismus = Tausch von Freiheit gegen Schutz und Eigentum | Urteil = Urteil nach Gemeinwohlbindung
+- Selbsttest: Der Vertrag tauscht natuerliche Freiheit gegen buergerliche Sicherheit, weil Hobbes Schutz, Locke Eigentum und Rousseau ___ sichern.
 ## Schritt 8 — reflexion: Urteil im Blackout: Sicherheit Eigentum Selbstgesetzgebung
 
 TAKEAWAY:

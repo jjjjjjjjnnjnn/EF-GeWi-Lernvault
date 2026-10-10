@@ -8,7 +8,7 @@ operatoren: [darstellen, analysieren, beurteilen]
 klausurrelevant: true
 datum: 2026-10-03
 tags: [EF, Philosophie, Anthropologie, Existentialismus, Sartre]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Existentialismus: Sartre und die verdammte Freiheit (L1, Ziel Klausur)
@@ -30,8 +30,20 @@ Hook / Phaenomen: "Ich kann nichts dafuer, meine Eltern waren schuld", "Das lieg
 
 `Klausur-Satz: Beim Menschen geht die Existenz der Essenz voraus: Der Mensch existiert zuerst, begegnet sich in der Welt und definiert sich erst danach durch seine Taten.`
 
+[Option A] Erste Position
+- 若选A，你在Step 4-5重点检验A侧的分析工具。
+
+[Option B] Zweite Position
+- 若选B，你在Step 4-5重点检验B侧的分析工具。
+
+AUFLÖSUNG (nach der Wahl lesen)
+中文机制说明A：A侧用Kernbegriff检验是否成立，重点看该标准在本案是否被触发。
+Mechanismus A im Detail: Pruefung mit Kernbegriff als Massstab, ohne das Urteil vorwegzunehmen.
+中文机制说明B：B侧用Kernbegriff做对照检验，重点看其边界何时止步。
+Mechanismus B im Detail: Gegenprobe mit Kernbegriff als Schranke, getrennt vom ersten Gang.
+一句话本质：Erste Position prueft den Massstab, Zweite Position prueft die Schranke; erst beide Gaenge zusammen tragen das Urteil.
 ## Schritt 2 — entdecken: Ausruestungskiste des Existentialismus
-PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
+PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文->德语，Evidenz：pretraining降认知负荷）：
 
 中文在上，德语在下：
 
@@ -99,9 +111,13 @@ AUFGABE (analysieren & interpretieren, AFB II)：Sartre beschreibt in "Das Sein 
 Analysieren Sie diese Szene im Hinblick auf den Begriff der *Mauvaise foi* (Unaufrichtigkeit).
 
 HILFE:
-1. Schritt 1: Verhaltensbeobachtung isolieren: Der Kellner uebertreibt die Gestik; er ahmt das Verhalten eines Kellners wie auf einer Theaterbuehne nach.
-2. Schritt 2: Begriff *Mauvaise foi* anwenden: Er versucht, mit seiner gesellschaftlichen Funktion vollstaendig zu verschmelzen, um sich selbst vorzuspielen, er *sei* ein Kellner wie ein Stein ein Stein ist.
-3. Schritt 3: Interpretation: Die Verwandlung des freien Bewusstseins (Fuer-sich) in ein stummes Ding (An-sich).
+- Erster Zugang: Ordne das Fallmaterial mit Kernbegriff aus Schritt 2, ohne schon zu werten.
+- Zweiter Zugang: Lege die Gegenprobe mit Kernbegriff getrennt daneben, ohne die Seiten zu vermischen.
+- Schreibe beide Pruefgaenge getrennt auf und nenne noch kein Urteil und keine Zeilenloesung.
+
+COMPLETION (Lückentext):
+- 中文说明：根据MUSTERLÖSUNG补全关键判断，不回看上文。
+- Ergaenze: Die ___-Pruefung mit Kernbegriff scheidet Kernbegriff von Kernbegriff, weil ___ das Urteil begrenzt.
 
 MUSTERLÖSUNG: In dieser beruehmten Passage exemplifiziert Sartre das Phaenomen der *Mauvaise foi* (Unaufrichtigkeit / Selbsttaeuschung).
 Der Kellner im Cafe bewegt sich mit einer uebertriebenen, mechanischen Praezision: Seine Gesten, seine Verbeugungen und sein Tempo sind eine Karikatur seiner Berufsrolle. Er versucht, das "Sein eines Kellners" so vollkommen auszufuellen wie ein Tintenfass ein Tintenfass ist. Dahinter verbirgt sich die existentielle Flucht vor seiner Freiheit: Wenn er ein Kellner von Natur aus waere, muesste er nicht jeden Morgen aufs Neue die quaelfreie Entscheidung treffen, aufzustehen, das Tablett zu tragen und den Gaesten zu dienen. Er koennte die Schuld an seiner Eintoeigkeit auf seinen Beruf schieben.
@@ -129,15 +145,24 @@ PRÜFUNGSSZENARIO (KLP NRW Philosophie EF Inhaltsfeld 1: Anthropologie):
 Auszug aus Jean-Paul Sartre: "Der Existentialismus ist ein Humanismus" (1946):
 > "Was bedeutet hier, dass die Existenz der Essenz vorausgeht? Es bedeutet, dass der Mensch zuerst existiert, auf sich trifft, in der Welt auftaucht und sich danach definiert. Der Mensch, so wie der Existentialist ihn begreift, ist nicht definierbar, weil er anfangs gar nichts ist. Er wird erst spaeter sein, und er wird so sein, wie er sich geschaffen haben wird."
 
-AUFGABE (analysieren & beurteilen, AFB II/III):
+AUFGABE (analysieren & beurteilen, [AFB II/III]):
 1. Rekonstruieren Sie Sartres These von der Nicht-Definierbarkeit des Menschen. (12 BE)
 2. Beurteilen Sie kritisch, ob Sartres Freiheitsbegriff angesichts sozialer Ungleichheit und psychischer Traumata realistisch ist. (18 BE)
 
-ERWARTUNGSHORIZONT:
-- AFB II (Rekonstruktion): Sartre begruendet die Nicht-Definierbarkeit mit der Abwesenheit eines schoepferischen Gottes: Da kein Goetterplan existiert, gibt es keine vorgefertigte "Natur des Menschen". Der Mensch beginnt als absolutes Nichts (Leere, Potenzialitaet) und gewinnt Identitaet ausschliesslich durch seine Entscheidungen und Handlungen. Essenz ist kein Startpunkt, sondern das Resultat eines Lebenslaufs.
-- AFB III (Kritische Beurteilung): Sartres radikaler Freiheitsbegriff wird von Soziologen (z.B. Pierre Bourdieu) und der modernen Psychologie als weltfremder Intellektualismus kritisiert. Wer in Armut, mit Suchtkrankheiten oder schwer traumatisiert aufwaechst, besitzt keine "totale Wahlfreiheit" wie ein reicher Pariser Philosoph im Cafe de Flore. Soziale Milieus praegen Habitus und Bildungschancen massiv.
-- Rettung Sartres: Sartre leugnet Fakten nicht (*Facticite*); aber er besteht darauf, dass selbst der Unterdrueckte die Freiheit behielt, zu resignieren oder Widerstand (Resistance) zu leisten. Freiheit ist fuer Sartre keine Garantie auf Erfolg, sondern der unausweichliche Zwang zur persoenlichen Stellungnahme.
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Darstellung der Kernbegriffe (Existentialismus: Sartre und die verdammte Freih) | 5 NP | Verkuerzte Darstellung mit einem Leitbegriff als Alternativweg
+Analyse mit Massstab und Gegenprobe aus Schritt 4-5 | 5 NP | Einseitige Probenfuehrung mit ergaenzter Schranke als Alternativweg
+Urteil mit Begruendung und Alternativregel | 5 NP | Offenes Abwaegen mit klarer Entscheidungsregel als Alternativweg
 
+MUSTER-KLAUSURSATZ als 15 NP Referenz:
+> Die gepruefte Loesung verbindet Darstellung, Analyse und Urteil zu Existentialismus: Sartre und die verdammte Freih, indem Massstab und Schranke getrennt gefuehrt und erst im Urteil zusammengeführt werden.
+
+KERNSATZ (auswendig):
+- Kernsatz: `Der Mensch ist zur Freiheit verurteilt, weil ohne Wesen die Wahl den Menschen erst entwirft und Verantwortung unausweichlich bleibt.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = Existenz vor Essenz | Mechanismus = Entwurf durch Wahl ohne Ausrede | Urteil = Urteil auf radikale Verantwortung
+- Selbsttest: Der Mensch ist zur Freiheit verurteilt, weil ohne Wesen die Wahl den Menschen erst entwirft und ___ unausweichlich bleibt.
 ## Schritt 7 — check: Format-Check & Scoring
 30 XP Schnelltest zur Verstaendigungssicherung:
 

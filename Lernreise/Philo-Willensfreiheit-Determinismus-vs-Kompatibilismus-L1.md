@@ -8,7 +8,7 @@ operatoren: [rekonstruieren, vergleichen, beurteilen]
 klausurrelevant: true
 datum: 2026-10-03
 tags: [EF, Philo, Anthropologie, Willensfreiheit, Determinismus, Libet-Experiment, Kompatibilismus]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Anthropologie: Determinismus, Libet-Experiment und Willensfreiheit (L1, Ziel Klausur)
@@ -28,8 +28,20 @@ Du sitzt ganz entspannt in einem bequemen Sessel, blickst auf eine rotierende Uh
 
 `Klausur-Satz: Das Libet-Experiment stellt die intuitive Annahme der Willensfreiheit infrage, indem es nachweist, dass unbewusste neuronale Prozesse der bewussten Handlungsintention zeitlich vorausgehen.`
 
+[Option A] Harter Determinismus
+- 若选A，你在Step 4-5重点检验A侧的分析工具。
+
+[Option B] Kompatibilismus
+- 若选B，你在Step 4-5重点检验B侧的分析工具。
+
+AUFLÖSUNG (nach der Wahl lesen)
+中文机制说明A：A侧用Kernbegriff检验是否成立，重点看该标准在本案是否被触发。
+Mechanismus A im Detail: Pruefung mit Kernbegriff als Massstab, ohne das Urteil vorwegzunehmen.
+中文机制说明B：B侧用Kernbegriff做对照检验，重点看其边界何时止步。
+Mechanismus B im Detail: Gegenprobe mit Kernbegriff als Schranke, getrennt vom ersten Gang.
+一句话本质：Harter Determinismus prueft den Massstab, Kompatibilismus prueft die Schranke; erst beide Gaenge zusammen tragen das Urteil.
 ## Schritt 2 — entdecken: Das begriffliche Spektrum der Freiheitsdebatte
-PRETRAINING术语盒（核心4词，先读三遍中德，合书自测中文→德语）：
+PRETRAINING术语盒（核心4词，先读三遍中德，合书自测中文->德语）：
 
 - 决定论 — Determinismus: 认为宇宙中的一切事件（包括人类的所有思维与决定）均完全由在先的自然因果法则与初始条件唯一决定的哲学立场。 Die Auffassung, dass alle Ereignisse durch vorangegangene Ursachen und Naturgesetze lueckenlos festgelegt sind.
 - 准备电位 — Bereitschaftspotenzial: 在自发运动发生前数百毫秒，脑电图在大脑运动皮层记录到的先期神经元电活动累积。 Eine messbare neuronale Spannungsveranderung im Gehirn, die vor dem subjektiven Entschluss zu einer Willkuerbewegung auftritt.
@@ -61,10 +73,20 @@ Zeitstrahl des Libet-Experiments (in Millisekunden vor der Muskelbewegung):
 
 [Werkzeug: balance-board]
 
+HILFE:
+- Erster Zugang: Ordne das Fallmaterial mit Kernbegriff aus Schritt 2, ohne schon zu werten.
+- Zweiter Zugang: Lege die Gegenprobe mit Kernbegriff getrennt daneben, ohne die Seiten zu vermischen.
+- Schreibe beide Pruefgaenge getrennt auf und nenne noch kein Urteil und keine Zeilenloesung.
+
 AUFGABE (rekonstruieren & beurteilen, AFB I/II):
 Ein Angeklagter steht wegen eines schweren Diebstahls vor Gericht. Sein Verteidiger plaediert auf Freispruch und zitiert neurowissenschaftliche Studien: "Herr Richter, mein Mandant besitzt keinen freien Willen. Seine Gene, seine unbewussten Hirnstroeme und seine fruehkindliche Praegung haben ihn mit biologischer Notwendigkeit zur Tat gezwungen. Er konnte gar nicht anders handeln; folglich trifft ihn keine moralische Schuld!"
 1. Rekonstruiere die Argumentationslinie des Verteidigers unter Verwendung des Begriffs "Inkompatibilismus" (Harter Determinismus).
 2. Entwickle eine Entgegnung aus der Perspektive des Kompatibilismus nach Peter Bieri oder Harry Frankfurt: Warum bleibt der Taeter dennoch fuer seine Handlung voll verantwortlich?
+
+
+COMPLETION (Lückentext):
+- 中文说明：根据MUSTERLÖSUNG补全关键判断，不回看上文。
+- Ergaenze: Die ___-Pruefung mit Kernbegriff scheidet Kernbegriff von Kernbegriff, weil ___ das Urteil begrenzt.
 
 MUSTERLOESUNG:
 1. Argumentation des Verteidigers (Harter Determinismus):
@@ -108,6 +130,22 @@ Formuliere zwei methodische und zwei begriffliche Einwaende gegen die Verallgeme
 Paragraf 20 des deutschen Strafgesetzbuches verlangt fuer die Schuldfaehigkeit, dass der Taeter "das Unrecht der Tat einzusehen oder nach dieser Einsicht zu handeln" vermag.
 Beurteile, ob Fortschritte der Neurowissenschaften das deutsche Schuldstrafrecht in den kommenden Jahrzehnten unhaltbar machen werden.
 
+AUFGABE (rekonstruieren, [AFB I/II/III]): Rekonstruiere den Fall mit den Begriffen aus Schritt 2 und begruende das Urteil mit der Gegenprobe aus Schritt 5.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Darstellung der Kernbegriffe (Anthropologie: Determinismus, Libet-Experiment u) | 5 NP | Verkuerzte Darstellung mit einem Leitbegriff als Alternativweg
+Analyse mit Massstab und Gegenprobe aus Schritt 4-5 | 5 NP | Einseitige Probenfuehrung mit ergaenzter Schranke als Alternativweg
+Urteil mit Begruendung und Alternativregel | 5 NP | Offenes Abwaegen mit klarer Entscheidungsregel als Alternativweg
+
+MUSTER-KLAUSURSATZ als 15 NP Referenz:
+> Die gepruefte Loesung verbindet Darstellung, Analyse und Urteil zu Anthropologie: Determinismus, Libet-Experiment u, indem Massstab und Schranke getrennt gefuehrt und erst im Urteil zusammengeführt werden.
+
+KERNSATZ (auswendig):
+- Kernsatz: `Determinismus behauptet lueckenlose Kausalketten, weil Kompatibilismus Freiheit als Handeln aus Gruenden ohne Zwang rettet.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = Streit um freie Wahl | Mechanismus = Kausalprobe plus Zwangsfreiheit | Urteil = Urteil fuer bedingte Zurechnung
+- Selbsttest: Determinismus behauptet lueckenlose Kausalketten, weil ___ Freiheit als Handeln aus Gruenden ohne Zwang rettet.
 ## Schritt 7 — check: Format-Check & Scoring
 
 30 XP Schnelltest zur Verstaendigungssicherung:

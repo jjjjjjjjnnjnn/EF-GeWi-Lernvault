@@ -8,7 +8,7 @@ operatoren: [darstellen, analysieren, beurteilen]
 klausurrelevant: true
 datum: 2026-10-03
 tags: [EF, Philosophie, Ethik, Bioethik, Hans Jonas]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Bioethik und das Prinzip Verantwortung (Hans Jonas) (L1, Ziel Klausur)
@@ -30,8 +30,20 @@ Hook / Phaenomen: Alle klassischen Ethiken der Menschheitsgeschichte hatten eine
 
 `Klausur-Satz: Hans Jonas transformiert Kants Nahbereichsethik in eine zukunftsorientierte Fernethik, die das Ueberleben kuenftiger Generationen als absolute moralische Pflicht postuliert.`
 
+[Option A] Das Prinzip Verantwortung nach Hans Jonas
+- 若选A，你在Step 4-5重点检验A侧的分析工具。
+
+[Option B] Klassischer Utilitarismus
+- 若选B，你在Step 4-5重点检验B侧的分析工具。
+
+AUFLÖSUNG (nach der Wahl lesen)
+中文机制说明A：A侧用Kernbegriff检验是否成立，重点看该标准在本案是否被触发。
+Mechanismus A im Detail: Pruefung mit Kernbegriff als Massstab, ohne das Urteil vorwegzunehmen.
+中文机制说明B：B侧用Kernbegriff做对照检验，重点看其边界何时止步。
+Mechanismus B im Detail: Gegenprobe mit Kernbegriff als Schranke, getrennt vom ersten Gang.
+一句话本质：Das Prinzip Verantwortung nach Hans Jonas prueft den Massstab, Klassischer Utilitarismus prueft die Schranke; erst beide Gaenge zusammen tragen das Urteil.
 ## Schritt 2 — entdecken: Ausruestungskiste der Zukunftsethik
-PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
+PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文->德语，Evidenz：pretraining降认知负荷）：
 
 中文在上，德语在下：
 
@@ -97,9 +109,13 @@ BEISPIEL（正确例题示范，含教具操作与解答）：
 AUFGABE (analysieren & beurteilen, AFB II/III)：Ein Biotechnologie-Konzern moechte CRISPR-Cas nutzen, um Gene in der menschlichen Keimbahn (Spermien/Eizellen) zu veraendern. Dadurch koennen schwere Erbkrankheiten eliminiert, aber auch Intelligenz und Physis kuenftiger Generationen kuenstlich "optimiert" werden. Beurteilen Sie diesen Keimbahneingriff nach den ethischen Maximen von Hans Jonas.
 
 HILFE:
-1. Schritt 1: Technologiecharakter analysieren: Keimbahneingriffe sind irreversibel und vererben sich an alle nachfolgenden Generationen weiter (Kumulativitaet).
-2. Schritt 2: Heuristik der Furcht anwenden: Was ist der Worst Case? Unvorhersehbare genetische Defekte, Spaltung der Menschheit in genetische Kasten, Verlust der menschlichen Natur.
-3. Schritt 3: Oekologischen Imperativ und Verbot des Vabanquespiels fuer ein Urteil heranziehen.
+- Erster Zugang: Ordne das Fallmaterial mit Kernbegriff aus Schritt 2, ohne schon zu werten.
+- Zweiter Zugang: Lege die Gegenprobe mit Kernbegriff getrennt daneben, ohne die Seiten zu vermischen.
+- Schreibe beide Pruefgaenge getrennt auf und nenne noch kein Urteil und keine Zeilenloesung.
+
+COMPLETION (Lückentext):
+- 中文说明：根据MUSTERLÖSUNG补全关键判断，不回看上文。
+- Ergaenze: Die ___-Pruefung mit Kernbegriff scheidet Kernbegriff von Kernbegriff, weil ___ das Urteil begrenzt.
 
 MUSTERLÖSUNG: Nach der Philosophie von Hans Jonas ist ein kuenstlicher Eingriff in die menschliche Keimbahn strikt abzulehnen und moralisch illegitim.
 Erstens besitzen Keimbahntherapien das Kriterium der Irreversibilitaet: Veraenderungen am Erbgut werden dauerhaft in den menschlichen Genpool eingeschrieben; kuenftige Generationen koennen diesen Eingriff weder rueckgaengig machen noch wurden sie um ihre Zustimmung gefragt (Verletzung der generationalen Asymmetrie).
@@ -130,14 +146,24 @@ PRÜFUNGSSZENARIO (KLP NRW Philosophie EF Inhaltsfeld 2: Ethische Positionen):
 Auszug aus Hans Jonas: "Das Prinzip Verantwortung" (1979, Kap. 1):
 > "Handle so, dass die Wirkungen deiner Handlung vertraeglich sind mit der Permanenz echten menschlichen Lebens auf Erden; oder negativ ausgedrueckt: Handle so, dass die Wirkungen deiner Handlung nicht zerstoererisch sind fuer die kuenftige Moeglichkeit eines solchen Lebens."
 
-AUFGABE (analysieren & eroertern, AFB II/III):
+AUFGABE (analysieren & eroertern, [AFB II/III]):
 1. Arbeiten Sie die Kernforderung des zitierten Imperativs heraus und grenzen Sie ihn von Kants kategorischem Imperativ ab. (12 BE)
 2. Eroertern Sie, ob Jonas' Heuristik der Furcht zu einem Innovationsstopp und technologischen Stillstand fuehrt. (18 BE)
 
-ERWARTUNGSHORIZONT:
-- AFB II (Herausarbeiten & Abgrenzen): Kants Imperativ ("Handle nur nach derjenigen Maxime...") testet die logische Verallgemeinerbarkeit im Hier und Jetzt (Widerspruchsfreiheit des Wollens). Jonas' Imperativ testet die physische Vertraeglichkeit der Handlungsfolgen mit dem langfristigen Ueberleben der Gattung. Kant adressiert den Willen des Einzelnen, Jonas die kollektive Technikmacht der Menschheit.
-- AFB III (Eroerterung): Einwand der Innovationsfeindlichkeit: Wenn immer die schlimmste Befuerchtung regiert, duerfte keine neue Medizin, keine erneuerbare Energie (Wasserstoff, Fusionsenergie) erforscht werden, da jede neue Technologie Risiken birgt. Jonas' Gegenargument: Er will nicht Forschung verbieten, sondern die Hybris der Allmacht bremsen. Es geht um Besonnenheit gegenueber irreversiblen Systemzusammenbruechen, nicht um Stillstand im Labor.
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Darstellung der Kernbegriffe (Bioethik und das Prinzip Verantwortung (Hans Jon) | 5 NP | Verkuerzte Darstellung mit einem Leitbegriff als Alternativweg
+Analyse mit Massstab und Gegenprobe aus Schritt 4-5 | 5 NP | Einseitige Probenfuehrung mit ergaenzter Schranke als Alternativweg
+Urteil mit Begruendung und Alternativregel | 5 NP | Offenes Abwaegen mit klarer Entscheidungsregel als Alternativweg
 
+MUSTER-KLAUSURSATZ als 15 NP Referenz:
+> Die gepruefte Loesung verbindet Darstellung, Analyse und Urteil zu Bioethik und das Prinzip Verantwortung (Hans Jon, indem Massstab und Schranke getrennt gefuehrt und erst im Urteil zusammengeführt werden.
+
+KERNSATZ (auswendig):
+- Kernsatz: `Jonas begrenzt Technik durch den oekologischen Imperativ, weil die Heuristik der Furcht das Ueberleben kuenftiger Generationen sichert.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = Technikfolgen nach Jonas | Mechanismus = Heuristik der Furcht plus oekologischer Imperativ | Urteil = Urteil zugunsten kuenftigen Lebens
+- Selbsttest: Jonas begrenzt Technik durch den oekologischen Imperativ, weil die Heuristik der Furcht das Ueberleben kuenftiger ___ sichert.
 ## Schritt 7 — check: Format-Check & Scoring
 30 XP Schnelltest zur Verstaendigungssicherung:
 

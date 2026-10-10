@@ -8,7 +8,7 @@ operatoren: [darstellen, analysieren, problematisieren]
 klausurrelevant: true
 datum: 2026-10-03
 tags: [EF, Philosophie, Anthropologie, Ethik]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Willensfreiheit und Determinismus (L1, Ziel Klausur)
@@ -30,8 +30,20 @@ Hook / Phaenomen: Du hebst jetzt spontan den Arm — ein scheinbar voellig freie
 
 `Klausur-Satz: Der Determinismus postuliert, dass jedes Ereignis durch lueckenlose Kausalketten unweigerlich vorbestimmt ist, was das traditionelle Konzept unbedingter Willensfreiheit radikal hinterfragt.`
 
+[Option A] Harter Determinismus
+- 若选A，你在Step 4-5重点检验A侧的分析工具。
+
+[Option B] Kompatibilismus
+- 若选B，你在Step 4-5重点检验B侧的分析工具。
+
+AUFLÖSUNG (nach der Wahl lesen)
+中文机制说明A：A侧用Kernbegriff检验是否成立，重点看该标准在本案是否被触发。
+Mechanismus A im Detail: Pruefung mit Kernbegriff als Massstab, ohne das Urteil vorwegzunehmen.
+中文机制说明B：B侧用Kernbegriff做对照检验，重点看其边界何时止步。
+Mechanismus B im Detail: Gegenprobe mit Kernbegriff als Schranke, getrennt vom ersten Gang.
+一句话本质：Harter Determinismus prueft den Massstab, Kompatibilismus prueft die Schranke; erst beide Gaenge zusammen tragen das Urteil.
 ## Schritt 2 — entdecken: Ausruestungskiste der Philosophie-Unit
-PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
+PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文->德语，Evidenz：pretraining降认知负荷）：
 
 中文在上，德语在下：
 
@@ -90,9 +102,13 @@ BEISPIEL（正确例题示范，含教具操作与解答）：
 AUFGABE (analysieren & problematisieren, AFB II/III)：Ein Neurowissenschaftler behauptet vor Gericht: "Mein Mandant konnte den Diebstahl nicht verhindern. Sein Gehirn hat 350 ms vor seinem Willensimpuls gefeuert. Daher traegt er keine moralische und rechtliche Schuld." Analysieren Sie diese Argumentation und nehmen Sie kritisch Stellung.
 
 HILFE:
-1. Schritt 1: Argumentation rekonstruieren: Prämisse 1 = neuronale Vorsteuerung bestimmt Handlung; Prämisse 2 = Schuld setzt unbedingte Willensfreiheit voraus; Konklusion = Schuldunfaehigkeit.
-2. Schritt 2: Libets Veto-Recht und die Unterscheidung von Handlungsfreiheit vs. Willensfreiheit anwenden.
-3. Schritt 3: Peter Bieris Konzept der bedingten Freiheit (Kompatibilismus) nutzen: Handeln aus Gruenden statt aus Zwang.
+- Erster Zugang: Ordne das Fallmaterial mit Kernbegriff aus Schritt 2, ohne schon zu werten.
+- Zweiter Zugang: Lege die Gegenprobe mit Kernbegriff getrennt daneben, ohne die Seiten zu vermischen.
+- Schreibe beide Pruefgaenge getrennt auf und nenne noch kein Urteil und keine Zeilenloesung.
+
+COMPLETION (Lückentext):
+- 中文说明：根据MUSTERLÖSUNG补全关键判断，不回看上文。
+- Ergaenze: Die ___-Pruefung mit Kernbegriff scheidet Kernbegriff von Kernbegriff, weil ___ das Urteil begrenzt.
 
 MUSTERLÖSUNG: Die neurowissenschaftliche Argumentation basiert auf einem inkompatibilistischen Fehlschluss. Erstens ignoriert sie das von Libet selbst nachgewiesene Veto-Recht: Selbst wenn unbewusste Impulse entstehen, verbleibt ein Zeitfenster von etwa 150–200 ms, um die Handlung bewusst zu unterbrechen oder abzubrechen (Free Won't statt Free Will). Zweitens verwechselt der Neurowissenschaftler Ursachen mit Gruenden: Ein Diebstahl ist keine isolierte Reflexbewegung wie ein Zucken des Zeigefingers im Laborexperiment, sondern eine komplexe, intentional geplante Handlung. Aus kompatibilistischer Sicht (nach Peter Bieri) ist ein Täter dann frei und verantwortlich, wenn er die Faehigkeit besass, ueber seine Wuensche rational nachzudenken und ihnen gemaess seiner Wertordnung zu folgen. Da der Mandant nicht unter akutem physischen oder psychotischen Zwang stand, bleibt seine moralische Zurechenbarkeit und juristische Schuld bestehen.
 
@@ -118,14 +134,24 @@ PRÜFUNGSSZENARIO (KLP NRW Philosophie EF Inhaltsfeld 2):
 Gegeben ist ein Auszug aus Peter Bieri: "Das Handwerk der Freiheit" (2001):
 > "Die Vorstellung einer vollkommen unbedingten Freiheit ist ein Albtraum. Wenn unser Wille durch gar nichts bedingt waere — weder durch unsere Erfahrungen noch durch unsere Werte —, dann waeren unsere Entscheidungen reiner Zufall. Ein solcher Wille waere nicht frei, sondern unberechenbar und fremd."
 
-AUFGABE (erlaeutern & beurteilen, AFB II/III):
+AUFGABE (erlaeutern & beurteilen, [AFB II/III]):
 1. Erlaeutern Sie Bieris Argumentation gegen den Begriff der unbedingten Willensfreiheit. (12 BE)
 2. Beurteilen Sie vor diesem Hintergrund die Konsequenzen fuer das deutsche Strafrecht (§ 20 StGB Schuldunfaehigkeit). (18 BE)
 
-ERWARTUNGSHORIZONT:
-- AFB II: Bieri zeigt das Paradoxon absoluter Unbedingtheit: Total determinismusfreie Willensakte waeren Zufallsprodukte ohne Bindung an Charakter oder Werte. Wahre Freiheit verlangt gerade eine kausale Verknuepfung zwischen Uberzeugung und Tat.
-- AFB III: Bezug zu § 20 StGB: Schuld setzt voraus, dass der Taeter das Unrecht der Tat einsehen und nach dieser Einsicht handeln konnte. Strafrecht verlangt keinen metaphysischen Zauber-Willen, sondern normative Ansprechbarkeit. Solange keine schwere neurologische/psychische Stoerung vorliegt, ist der Mensch verantwortlich.
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Darstellung der Kernbegriffe (Willensfreiheit und Determinismus) | 5 NP | Verkuerzte Darstellung mit einem Leitbegriff als Alternativweg
+Analyse mit Massstab und Gegenprobe aus Schritt 4-5 | 5 NP | Einseitige Probenfuehrung mit ergaenzter Schranke als Alternativweg
+Urteil mit Begruendung und Alternativregel | 5 NP | Offenes Abwaegen mit klarer Entscheidungsregel als Alternativweg
 
+MUSTER-KLAUSURSATZ als 15 NP Referenz:
+> Die gepruefte Loesung verbindet Darstellung, Analyse und Urteil zu Willensfreiheit und Determinismus, indem Massstab und Schranke getrennt gefuehrt und erst im Urteil zusammengeführt werden.
+
+KERNSATZ (auswendig):
+- Kernsatz: `Determinismus behauptet lueckenlose Kausalketten, weil Kompatibilismus Freiheit als Handeln aus Gruenden ohne Zwang rettet.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = Streit um freie Wahl | Mechanismus = Kausalprobe plus Zwangsfreiheit | Urteil = Urteil fuer bedingte Zurechnung
+- Selbsttest: Determinismus behauptet lueckenlose Kausalketten, weil ___ Freiheit als Handeln aus Gruenden ohne Zwang rettet.
 ## Schritt 7 — check: Format-Check & Scoring
 30 XP Schnelltest zur Verstaendigungssicherung:
 

@@ -8,7 +8,7 @@ operatoren: [darstellen, rekonstruieren, beurteilen]
 klausurrelevant: true
 datum: 2026-09-26
 tags: [EF, Philosophie, Ethik]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Kants kategorischer Imperativ und die Maximenpruefung (L1, Ziel Klausur)
@@ -29,6 +29,18 @@ Stell dir den achten Prozesstag im Tribunal der Menschheit vor. Dein bester Freu
 
 Klausur-Satz: `Im Spickzettel-Kartell steht nicht die Note vor Gericht, sondern die Frage, ob Schummeln als allgemeines Gesetz gewollt werden kann.`
 
+[Option A] Erste Position
+- 若选A，你在Step 4-5重点检验A侧的分析工具。
+
+[Option B] Zweite Position
+- 若选B，你在Step 4-5重点检验B侧的分析工具。
+
+AUFLÖSUNG (nach der Wahl lesen)
+中文机制说明A：A侧用Maxime检验是否成立，重点看该标准在本案是否被触发。
+Mechanismus A im Detail: Pruefung mit Maxime als Massstab, ohne das Urteil vorwegzunehmen.
+中文机制说明B：B侧用Hypothetischer Imperativ做对照检验，重点看其边界何时止步。
+Mechanismus B im Detail: Gegenprobe mit Hypothetischer Imperativ als Schranke, getrennt vom ersten Gang.
+一句话本质：Erste Position prueft den Massstab, Zweite Position prueft die Schranke; erst beide Gaenge zusammen tragen das Urteil.
 ## Schritt 2 — entdecken: Pruefgeraet der Maxime: Klugheit gegen Pflicht
 
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
@@ -111,9 +123,13 @@ Primaertext (vereinfachte deutsche Fassung nach Kant, Grundlegung, 100 bis 200 W
 AUFGABE Waage-Raetsel (AFB II): Pruefe auf [Werkzeug: balance-board] die Maxime des Schummelns aus Freundschaft im Spickzettel-Kartell. Markiere mit GELB alle Stellen zu Klugheit und Mittelwahl (Z.14) sowie zur Maximenbildung (Z.2 bis Z.3) und mit BLAU alle Stellen zu Universalisierung und Wuerde (Z.4 bis Z.13 und Z.15). Target: Denkbarkeit und Wollbarkeit je 1 bis 5 wichten, Denkwiderspruch nachweisen und Klausur-Satz formulieren.
 
 HILFE:
-1. Schritt 1: Formuliere die Maxime aus Lage, Handlung und Zweck mit Z.3.
-2. Schritt 2: Denke die Maxime als Gesetz fuer alle mit Z.4 bis Z.6 und pruefe Denkbarkeit und Wollbarkeit.
-3. Schritt 3: Ordne Denkwiderspruch oder Wollenswiderspruch zu, deute an Widerspruchsfreiheit und Wuerde mit Z.12 bis Z.13 und formuliere den Klausur-Satz.
+- Erster Zugang: Ordne das Fallmaterial mit Maxime aus Schritt 2, ohne schon zu werten.
+- Zweiter Zugang: Lege die Gegenprobe mit Hypothetischer Imperativ getrennt daneben, ohne die Seiten zu vermischen.
+- Schreibe beide Pruefgaenge getrennt auf und nenne noch kein Urteil und keine Zeilenloesung.
+
+COMPLETION (Lückentext):
+- 中文说明：根据MUSTERLÖSUNG补全关键判断，不回看上文。
+- Ergaenze: Die ___-Pruefung mit Maxime scheidet Maxime von Hypothetischer Imperativ, weil ___ das Urteil begrenzt.
 
 MUSTERLOESUNG: Verallgemeinert zerstoert die Maxime ihre eigene Voraussetzung: Wo jeder schummelt, kann keine Pruefung mehr Vertrauen schenken, und Leistung wird undenkbar wie in Z.7 bis Z.9, ein Denkwiderspruch. Daher gilt die vollkommene Pflicht, nicht zu taeuschen, bestaetigt durch die Selbstzweckformel aus Z.12 bis Z.13, weil Mitschueler und Lehrkraft zu blossen Mitteln herabgewuerdigt wuerden.
 
@@ -161,11 +177,26 @@ Klausur-Satz: `Kant prueft die Maxime auf Denk- und Wollenswiderspruch und schue
 
 ROLLE: Du bist Verteidiger im Spickzettel-Kartell und Mitglied im Ethikrat deiner Schule und sollst in einer Sitzung zum Thema Ehrlichkeit im Schulalltag Stellung nehmen.
 SITUATION: Ein Mitschueller schlaegt vor, bei einer anstehenden Klausur zu schummeln, weil der Druck sonst zu gross sei und allen damit geholfen waere. Beurteile diesen Vorschlag in einer zusammenhaengenden Stellungnahme von etwa 150 Woertern, indem du die Maxime des Schummelns sorgfaeltig pruefst und mit der Selbstzweckformel abschliessend urteilst.
-AUFGABE (AFB III): Verfasse eine zusammenhaengende Darstellung von etwa 150 Woertern mit Kriterium, Anwendung und Urteil.
+AUFGABE ([AFB III]): Verfasse eine zusammenhaengende Darstellung von etwa 150 Woertern mit Kriterium, Anwendung und Urteil.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Darstellung der Kernbegriffe (Kants kategorischer Imperativ und die Maximenpru) | 5 NP | Verkuerzte Darstellung mit einem Leitbegriff als Alternativweg
+Analyse mit Massstab und Gegenprobe aus Schritt 4-5 | 5 NP | Einseitige Probenfuehrung mit ergaenzter Schranke als Alternativweg
+Urteil mit Begruendung und Alternativregel | 5 NP | Offenes Abwaegen mit klarer Entscheidungsregel als Alternativweg
+
 RUBRIC (30 XP): Formulierung der Maxime des Schummelns (5 XP) | Durchfuehrung der Universalisierung mit Denkwiderspruch und Textbeleg (10 XP) | Anwendung der Selbstzweckformel auf Mitschueller und Lehrkraft (10 XP) | Kriteriengeleitetes Urteil mit Begruendung (5 XP).
 
 Klausur-Satz: `Im Transfer zaehlt die Reihenfolge: Maxime bilden, universalisieren, Widerspruch benennen und erst dann ueber Erlaubnis oder Verbot urteilen.`
 
+MUSTER-KLAUSURSATZ als 15 NP Referenz:
+> Die gepruefte Loesung verbindet Darstellung, Analyse und Urteil zu Kants kategorischer Imperativ und die Maximenpru, indem Massstab und Schranke getrennt gefuehrt und erst im Urteil zusammengeführt werden.
+
+KERNSATZ (auswendig):
+- Kernsatz: `Die Maximenpruefung verbietet das falsche Versprechen durch Denkwiderspruch und schuetzt Wuerde durch die Selbstzweckformel.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = Maxime des falschen Versprechens | Mechanismus = Universalisierung plus Selbstzweckformel | Urteil = Urteil als vollkommene Pflicht
+- Selbsttest: Die Maximenpruefung verbietet das falsche Versprechen durch Denkwiderspruch und schuetzt Wuerde durch die ___
 ## Schritt 8 — reflexion: Freispruch der Wuerde: Klugheit raet Moral gebietet
 
 TAKEAWAY (Kernbotschaft in einem Kasten):

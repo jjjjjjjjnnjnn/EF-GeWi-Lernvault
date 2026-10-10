@@ -8,7 +8,7 @@ operatoren: [darstellen, vergleichen, beurteilen]
 klausurrelevant: true
 datum: 2026-10-03
 tags: [EF, Philosophie, Erkenntnistheorie, Anthropologie]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Erkenntnistheorie: Rationalismus vs. Empirismus (L1, Ziel Klausur)
@@ -30,8 +30,20 @@ Hook / Phaenomen: Stecke einen geraden Bleistift in ein Glas Wasser: Deine Augen
 
 `Klausur-Satz: Der Rationalismus postuliert die Vernunft als primaere Quelle sicherer Erkenntnis (a priori), waehrend der Empirismus behauptet, dass alle Erkenntnis ausschliesslich aus der Sinneserfahrung stammt (a posteriori).`
 
+[Option A] Cartesianischer Rationalismus
+- 若选A，你在Step 4-5重点检验A侧的分析工具。
+
+[Option B] Humescher Empirismus
+- 若选B，你在Step 4-5重点检验B侧的分析工具。
+
+AUFLÖSUNG (nach der Wahl lesen)
+中文机制说明A：A侧用Kernbegriff检验是否成立，重点看该标准在本案是否被触发。
+Mechanismus A im Detail: Pruefung mit Kernbegriff als Massstab, ohne das Urteil vorwegzunehmen.
+中文机制说明B：B侧用Kernbegriff做对照检验，重点看其边界何时止步。
+Mechanismus B im Detail: Gegenprobe mit Kernbegriff als Schranke, getrennt vom ersten Gang.
+一句话本质：Cartesianischer Rationalismus prueft den Massstab, Humescher Empirismus prueft die Schranke; erst beide Gaenge zusammen tragen das Urteil.
 ## Schritt 2 — entdecken: Ausruestungskiste der Erkenntnistheorie
-PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
+PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文->德语，Evidenz：pretraining降认知负荷）：
 
 中文在上，德语在下：
 
@@ -99,9 +111,13 @@ BEISPIEL（正确例题示范，含教具操作与解答）：
 AUFGABE (analysieren & vergleichen, AFB II)：Ein Biologe argumentiert: "Wir haben 500.000 Schwaene in Europa untersucht — alle waren weiss. Daher ist das Naturgesetz wissenschaftlich gesichert: Alle Schwaene sind weiss." Rekonstruieren und beurteilen Sie diesen Schluss aus der Sicht von David Hume.
 
 HILFE:
-1. Schritt 1: Erkennen der Schlussweise: Induktionsschluss von begrenzten Einzelfaellen (500.000 Beobachtungen) auf die Allgemeinheit (Naturgesetz).
-2. Schritt 2: Humes Einwand: Kausalitaet und Gleichfoermigkeit der Natur sind keine Denknotwendigkeiten (Relations of Ideas), sondern blosse Gewohnheiten (Habit / Custom).
-3. Schritt 3: Historischer Beleg: Entdeckung von Trauerschwaenen (schwarzen Schwaenen) in Australien widerlegte die These schlagartig.
+- Erster Zugang: Ordne das Fallmaterial mit Kernbegriff aus Schritt 2, ohne schon zu werten.
+- Zweiter Zugang: Lege die Gegenprobe mit Kernbegriff getrennt daneben, ohne die Seiten zu vermischen.
+- Schreibe beide Pruefgaenge getrennt auf und nenne noch kein Urteil und keine Zeilenloesung.
+
+COMPLETION (Lückentext):
+- 中文说明：根据MUSTERLÖSUNG补全关键判断，不回看上文。
+- Ergaenze: Die ___-Pruefung mit Kernbegriff scheidet Kernbegriff von Kernbegriff, weil ___ das Urteil begrenzt.
 
 MUSTERLÖSUNG: Aus Sicht des radikalen Empirikers David Hume ist der Schluss des Biologen logisch unzulaessig. Der Biologe begeht das klassische Induktionsproblem: Er schliesst von einer noch so grossen Anzahl beobachteter Einzelfaelle ($n = 500.000$) auf eine universelle Allaussage. Hume argumentiert, dass die Annahme, die Zukunft werde stets der Vergangenheit gleichen (Gleichfoermigkeit der Natur), weder a priori beweisbar ist (denn ein schwarzer Schwan enthaelt keinen logischen Widerspruch) noch a posteriori begruendet werden kann (denn das waere ein fehlerhafter Zirkelschluss, der Induktion durch Induktion rechtfertigt).
 Fuer Hume ist das sogenannte Naturgesetz kein objektives Gesetz der Vernunft, sondern ein psychologisches Gewohnheitsurteil (Custom): Weil wir Schwaene immer nur weiss sahen, gewoehnt sich unser Geist an diese Assoziation. Dass dieser Glaube truegerisch war, bewies die empirische Entdeckung schwarzer Schwaene in Australien im 17. Jahrhundert. Wahre Gewissheit existiert laut Hume nur in der Mathematik; empirische Naturwissenschaften liefern ausschliesslich Wahrscheinlichkeiten, niemals absolute Wahrheiten.
@@ -130,14 +146,24 @@ PRÜFUNGSSZENARIO (KLP NRW Philosophie EF Inhaltsfeld 1/2):
 Textauszug aus Rene Descartes: "Meditationen ueber die Erste Philosophie" (1641, 1. & 2. Meditation):
 > "Ich nehme also an, dass alles, was ich sehe, falsch ist; ich glaube, dass nichts jemals existiert hat von dem, was mein truegerisches Gedaechtnis mir darstellt [...] Wenn aber ein allmaechtiger Taeuscher mich hintergeht — dann gibt es ohne Zweifel mich, wenn er mich taeuscht! Er taeusche mich, wie viel er kann, er wird doch niemals zuwege bringen, dass ich nichts sei, solange ich denke, dass ich etwas sei."
 
-AUFGABE (analysieren & erlaeutern, AFB I/II):
+AUFGABE (analysieren & erlaeutern, [AFB I/II]):
 1. Rekonstruieren Sie Descartes Weg vom "Genius malignus" (allmaechtigen Taeuscher) zum unbezweifelbaren Satz "Ich bin, ich existiere". (12 BE)
 2. Erlaeutern Sie, warum Descartes dieses Fundament nicht mit Sinneswahrnehmungen begruenden konnte. (18 BE)
 
-ERWARTUNGSHORIZONT:
-- AFB I/II (Rekonstruktion): Descartes nutzt das Gedankenexperiment des Genius malignus als staerkste Skepsis-Waffe. Selbst wenn dieser Daemon alle Sinneseindruecke und mathematischen Axiome fälscht, muss es ein Wesen geben, das getaeuscht wird. Der Akt des Zweifels und des Getaeuscht-Werdens setzt das Denken voraus. Denken setzt ein denkendes Subjekt voraus. Sobald ausgesprochen oder gedacht, ist "Ich bin, ich existiere" (Ego sum, ego existo) unausweichlich wahr.
-- AFB II (Ausschluss der Sinne): Sinne sind von vornherein unfaehig, als Letztbegruendung zu dienen, da sie bereits im Alltag Fehlwahrnehmungen erzeugen (Spiegelungen, perspektivische Verkuerzung) und im Traum voellig getrennt von realen Objekten intensive Erlebnisse vortaeuschen koennen. Wer einmal luegt, dem glaubt man nicht: Daher verlangt Descartes ein Fundament a priori, rein aus der logischen Selbstreflexion.
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Darstellung der Kernbegriffe (Erkenntnistheorie: Rationalismus vs. Empirismus) | 5 NP | Verkuerzte Darstellung mit einem Leitbegriff als Alternativweg
+Analyse mit Massstab und Gegenprobe aus Schritt 4-5 | 5 NP | Einseitige Probenfuehrung mit ergaenzter Schranke als Alternativweg
+Urteil mit Begruendung und Alternativregel | 5 NP | Offenes Abwaegen mit klarer Entscheidungsregel als Alternativweg
 
+MUSTER-KLAUSURSATZ als 15 NP Referenz:
+> Die gepruefte Loesung verbindet Darstellung, Analyse und Urteil zu Erkenntnistheorie: Rationalismus vs. Empirismus, indem Massstab und Schranke getrennt gefuehrt und erst im Urteil zusammengeführt werden.
+
+KERNSATZ (auswendig):
+- Kernsatz: `Rationalismus traut der Vernunft, Empirismus der Erfahrung, weil Kant beide Quellen in Anschauung plus Begriff verbindet.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = Streit von Vernunft und Erfahrung | Mechanismus = Quellentrennung plus Kantische Synthese | Urteil = Urteil fuer kritische Kooperation
+- Selbsttest: ___ traut der Vernunft, Empirismus der Erfahrung, weil Kant beide Quellen in Anschauung plus Begriff verbindet.
 ## Schritt 7 — check: Format-Check & Scoring
 30 XP Schnelltest zur Verstaendigungssicherung:
 

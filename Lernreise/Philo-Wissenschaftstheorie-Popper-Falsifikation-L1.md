@@ -8,7 +8,7 @@ operatoren: [darstellen, analysieren, beurteilen]
 klausurrelevant: true
 datum: 2026-10-03
 tags: [EF, Philosophie, Wissenschaftstheorie, Erkenntnistheorie, Karl Popper]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Wissenschaftstheorie: Karl Popper und die Falsifikation (L1, Ziel Klausur)
@@ -30,8 +30,20 @@ Hook / Phaenomen: "Unsere Theorie ist perfekt! Sie erklaert ausnahmslos alles un
 
 `Klausur-Satz: Ein empirisch-wissenschaftliches System muss an der Erfahrung scheitern koennen; Nicht die Verifizierbarkeit, sondern die Falsifizierbarkeit eines Systems ist als Abgrenzungskriterium zu nehmen.`
 
+[Option A] Erste Position
+- 若选A，你在Step 4-5重点检验A侧的分析工具。
+
+[Option B] Zweite Position
+- 若选B，你在Step 4-5重点检验B侧的分析工具。
+
+AUFLÖSUNG (nach der Wahl lesen)
+中文机制说明A：A侧用Kernbegriff检验是否成立，重点看该标准在本案是否被触发。
+Mechanismus A im Detail: Pruefung mit Kernbegriff als Massstab, ohne das Urteil vorwegzunehmen.
+中文机制说明B：B侧用Kernbegriff做对照检验，重点看其边界何时止步。
+Mechanismus B im Detail: Gegenprobe mit Kernbegriff als Schranke, getrennt vom ersten Gang.
+一句话本质：Erste Position prueft den Massstab, Zweite Position prueft die Schranke; erst beide Gaenge zusammen tragen das Urteil.
 ## Schritt 2 — entdecken: Ausruestungskiste der Wissenschaftstheorie
-PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
+PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文->德语，Evidenz：pretraining降认知负荷）：
 
 中文在上，德语在下：
 
@@ -99,9 +111,13 @@ BEISPIEL（正确例题示范，含教具操作与解答）：
 AUFGABE (analysieren & beurteilen, AFB II/III)：Ein Astrologe veroeffentlicht folgendes Horoskop: "Im Monat Oktober werden Menschen im Sternzeichen Skorpion vor einer unerwarteten Entscheidung stehen. Wenn Sie mutig sind, wird sich ein Vorteil ergeben, andernfalls muessen Sie mit Verzoegerungen rechnen." Analysieren Sie diese Aussage anhand von Karl Poppers Abgrenzungskriterium der Falsifizierbarkeit und beurteilen Sie ihren wissenschaftlichen Status.
 
 HILFE:
-1. Schritt 1: Pruefung auf Falsifizierbarkeit: Welches reale Ereignis koennte diese Aussage widerlegen?
-2. Schritt 2: Immunisierungsstrategie aufdecken: Die Aussage ist so vage formuliert, dass sie immer zutrifft (Tautologie / Barnum-Effekt). Trifft ein Vorteil ein, war der Kunde "mutig"; gibt es Verzoegerungen, war er "nicht mutig".
-3. Schritt 3: Urteil: Null Falsifizierbarkeit $\implies$ Null empirischer Gehalt $\implies$ Pseudowissenschaft.
+- Erster Zugang: Ordne das Fallmaterial mit Kernbegriff aus Schritt 2, ohne schon zu werten.
+- Zweiter Zugang: Lege die Gegenprobe mit Kernbegriff getrennt daneben, ohne die Seiten zu vermischen.
+- Schreibe beide Pruefgaenge getrennt auf und nenne noch kein Urteil und keine Zeilenloesung.
+
+COMPLETION (Lückentext):
+- 中文说明：根据MUSTERLÖSUNG补全关键判断，不回看上文。
+- Ergaenze: Die ___-Pruefung mit Kernbegriff scheidet Kernbegriff von Kernbegriff, weil ___ das Urteil begrenzt.
 
 MUSTERLÖSUNG: Nach Karl Poppers Wissenschaftstheorie besitzt das Horoskop des Astrologen keinerlei wissenschaftlichen Gehalt und ist eine reine Pseudowissenschaft.
 Poppers zentrales Abgrenzungskriterium verlangt, dass eine empirische Theorie prinzipiell an der Realitaet scheitern koennen muss. Eine Theorie hat umso mehr empirischen Gehalt, je mehr moegliche Sachverhalte sie verbietet (potenzielle Falsifikatoren).
@@ -132,17 +148,24 @@ PRÜFUNGSSZENARIO (KLP NRW Philosophie EF Inhaltsfeld 1: Erkenntnis und Wissensc
 Auszug aus Karl Popper: "Logik der Forschung" (1934, Kap. 1):
 > "Ein empirisch-wissenschaftliches System muss an der Erfahrung scheitern koennen. Nicht die Verifizierbarkeit, sondern die Falsifizierbarkeit eines Systems ist als Abgrenzungskriterium anzusehen [...] Nicht das Streben nach Gewissheit, sondern das staendige, unermuedliche Suchen nach Wahrheit durch das Aufdecken von Fehlern treibt die Forschung voran."
 
-AUFGABE (analysieren & beurteilen, AFB II/III):
+AUFGABE (analysieren & beurteilen, [AFB II/III]):
 1. Erlaeutern Sie Poppers Loesung fuer das Induktionsproblem. (12 BE)
 2. Beurteilen Sie, ob Poppers Modell den realen Bedingungen moderner Wissenschaftspraxis (z.B. Drittmitteldruck, Publikationsbias / Verffentlichungszwang) gerecht wird. (18 BE)
 
-ERWARTUNGSHORIZONT:
-- AFB II (Loesung des Induktionsproblems): Popper loest das Induktionsproblem, indem er auf Induktion voellig verzichtet. Statt von Einzelfaellen auf Gesetze zu schliessen (was unmoeglich ist), setzt er auf ein rein deduktives Pruefverfahren: Die Hypothese wird frei erfunden (kühner Einfall), daraus werden empirisch pruefbare Prognosen deduziert. Scheitert die Prognose, ist die Hypothese deduktiv widerlegt (Modus Tollens). Damit ersetzt er induktives Begruenden durch deduktives Kritisieren.
-- AFB III (Beurteilung Wissenschaftspraxis):
-  - Grenzen des Modells: In der Realitaet verwerfen Wissenschaftler eine Theorie fast nie wegen eines einzigen negativen Messergebnisses (Duhem-Quine-These: oft war nur das Messgeraet defekt oder eine Hilfshypothese falsch).
-  - Druck im System: Wissenschaftler suchen aus Karriere- und Foerdermittelgruenden haeufig nach Bestaetigung (Publication Bias: positive Resultate werden viel eher veroeffentlicht als gescheiterte Falsifikationsversuche).
-  - Fazit: Poppers Falsifikationismus ist weniger eine soziologische Beschreibung des Laboralltags, sondern ein normatives Ideal: Er formuliert die moralische Pflicht des Forschers zu intellektueller Redlichkeit und dogmenfreier Selbstkorrektur.
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Darstellung der Kernbegriffe (Wissenschaftstheorie: Karl Popper und die Falsif) | 5 NP | Verkuerzte Darstellung mit einem Leitbegriff als Alternativweg
+Analyse mit Massstab und Gegenprobe aus Schritt 4-5 | 5 NP | Einseitige Probenfuehrung mit ergaenzter Schranke als Alternativweg
+Urteil mit Begruendung und Alternativregel | 5 NP | Offenes Abwaegen mit klarer Entscheidungsregel als Alternativweg
 
+MUSTER-KLAUSURSATZ als 15 NP Referenz:
+> Die gepruefte Loesung verbindet Darstellung, Analyse und Urteil zu Wissenschaftstheorie: Karl Popper und die Falsif, indem Massstab und Schranke getrennt gefuehrt und erst im Urteil zusammengeführt werden.
+
+KERNSATZ (auswendig):
+- Kernsatz: `Wissenschaft waechst durch kuehne Vermutung und strenge Widerlegung, weil nur falsifizierbare Saetze empirischen Gehalt tragen.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = Fortschritt durch Irrtumskorrektur | Mechanismus = Falsifikationsprobe statt Verifikation | Urteil = Urteil gegen Immunisierung
+- Selbsttest: ___ waechst durch kuehne Vermutung und strenge Widerlegung, weil nur falsifizierbare Saetze empirischen Gehalt tragen.
 ## Schritt 7 — check: Format-Check & Scoring
 30 XP Schnelltest zur Verstaendigungssicherung:
 

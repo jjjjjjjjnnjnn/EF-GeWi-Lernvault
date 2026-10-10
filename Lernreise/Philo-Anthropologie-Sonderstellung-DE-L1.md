@@ -8,7 +8,7 @@ operatoren: [darstellen, vergleichen, beurteilen]
 klausurrelevant: true
 datum: 2026-09-26
 tags: [EF, Philosophie, Anthropologie]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Die Sonderstellung des Menschen bei Gehlen und Plessner (L1, Ziel Klausur)
@@ -29,6 +29,18 @@ Stell dir den zweiten Prozesstag im Tribunal der Menschheit vor. Drei ehemalige 
 
 Klausur-Satz: `Die philosophische Anthropologie fragt, ob der Mensch sich vom Tier nur graduell oder kategorial unterscheidet und woran sich eine Sonderstellung festmachen laesst.`
 
+[Option A] Erste Position
+- 若选A，你在Step 4-5重点检验A侧的分析工具。
+
+[Option B] Zweite Position
+- 若选B，你在Step 4-5重点检验B侧的分析工具。
+
+AUFLÖSUNG (nach der Wahl lesen)
+中文机制说明A：A侧用Maengelwesen检验是否成立，重点看该标准在本案是否被触发。
+Mechanismus A im Detail: Pruefung mit Maengelwesen als Massstab, ohne das Urteil vorwegzunehmen.
+中文机制说明B：B侧用Maengelwesen做对照检验，重点看其边界何时止步。
+Mechanismus B im Detail: Gegenprobe mit Maengelwesen als Schranke, getrennt vom ersten Gang.
+一句话本质：Erste Position prueft den Massstab, Zweite Position prueft die Schranke; erst beide Gaenge zusammen tragen das Urteil.
 ## Schritt 2 — entdecken: Fuenf Paragrafen der Verteidigung: Mangel und Distanz
 
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
@@ -111,9 +123,13 @@ Primaertext (vereinfachte deutsche Fassung nach Gehlen und Plessner, 100 bis 200
 AUFGABE Waage-Raetsel (AFB II): Lege Gehlen gegen Plessner auf [Werkzeug: balance-board]. Markiere mit GELB alle Textstellen zu Mangel und Ausgleich (Z.1 bis Z.9) und mit BLAU alle Stellen zu Selbstdistanz und Freiheit (Z.10 bis Z.15). Gewichte Mangel, Handeln und Institutionen gegen Selbstdistanz, Reflexion und Freiheit je 1 bis 5. Target: Beide Seiten mindestens mit Gewicht 8 belegen und an Erklaerungskraft deuten, dann Klausur-Satz formulieren.
 
 HILFE:
-1. Schritt 1: Stelle beide Positionen mit je zwei Textbelegen aus dem Primaertext dar.
-2. Schritt 2: Gewichte beide Seiten von 1 bis 5 auf der Waage.
-3. Schritt 3: Deute das Ergebnis an Erklaerungskraft und formuliere den Klausur-Satz.
+- Erster Zugang: Ordne das Fallmaterial mit Maengelwesen aus Schritt 2, ohne schon zu werten.
+- Zweiter Zugang: Lege die Gegenprobe mit Maengelwesen getrennt daneben, ohne die Seiten zu vermischen.
+- Schreibe beide Pruefgaenge getrennt auf und nenne noch kein Urteil und keine Zeilenloesung.
+
+COMPLETION (Lückentext):
+- 中文说明：根据MUSTERLÖSUNG补全关键判断，不回看上文。
+- Ergaenze: Die ___-Pruefung mit Maengelwesen scheidet Maengelwesen von Maengelwesen, weil ___ das Urteil begrenzt.
 
 MUSTERLOESUNG: Gehlen ueberzeugt bei der Entlastung durch Institutionen, weil ohne Sprache, Schule und Recht kein Aufwachsen gelingt (Z.6 bis Z.8). Plessner ueberzeugt bei Freiheit und Verantwortung, weil nur Selbstdistanz erklaert, warum Menschen ihre Gewohnheiten bedenken und aendern koennen (Z.11 bis Z.13). Die Waage kippt je nach Kriterium: Ausgleichskraft spricht fuer Gehlen, Freiheitsgewinn spricht fuer Plessner.
 
@@ -161,11 +177,26 @@ Klausur-Satz: `Wer die Sonderstellung behauptet, muss Mangel und Ausgleich sowie
 
 ROLLE: Du bist Chefverteidiger der Menschheit im Zirkusaffen-Prozess und sollst auf einer Tribunal-Anhoerung die Frage beantworten, ob der Mensch eine moralische Sonderstellung gegenueber Tieren hat.
 SITUATION: Der KI-Anklaeger beruft sich auf Lernfaehigkeit und Leidensfaehigkeit der Affen und bestreitet jede Sonderstellung. Beurteile in einer zusammenhaengenden Stellungnahme von etwa 150 Woertern, ob eine Sonderstellung haltbar ist, und beziehe Gehlen, Plessner und die tierethische Kritik ein.
-AUFGABE (AFB III): Verfasse eine zusammenhaengende Darstellung von etwa 150 Woertern mit Kriterium, Anwendung und Urteil.
+AUFGABE ([AFB III]): Verfasse eine zusammenhaengende Darstellung von etwa 150 Woertern mit Kriterium, Anwendung und Urteil.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Darstellung der Kernbegriffe (Die Sonderstellung des Menschen bei Gehlen und P) | 5 NP | Verkuerzte Darstellung mit einem Leitbegriff als Alternativweg
+Analyse mit Massstab und Gegenprobe aus Schritt 4-5 | 5 NP | Einseitige Probenfuehrung mit ergaenzter Schranke als Alternativweg
+Urteil mit Begruendung und Alternativregel | 5 NP | Offenes Abwaegen mit klarer Entscheidungsregel als Alternativweg
+
 RUBRIC (30 XP): These mit Kriterium Erklaerungskraft (5 XP) | Darstellung beider Denkwege mit je einem Textbeleg (10 XP) | Anwendung auf das Tierbeispiel mit Abgrenzung (10 XP) | Fazit mit Fachbegriffen (5 XP).
 
 Klausur-Satz: `Im Transfer gilt: Erst beide Positionen mit Beleg rekonstruieren, dann am Kriterium abwaegen und schliesslich das Urteil zur Sonderstellung mit Wuerde und Leidensfaehigkeit begrenzen.`
 
+MUSTER-KLAUSURSATZ als 15 NP Referenz:
+> Die gepruefte Loesung verbindet Darstellung, Analyse und Urteil zu Die Sonderstellung des Menschen bei Gehlen und P, indem Massstab und Schranke getrennt gefuehrt und erst im Urteil zusammengeführt werden.
+
+KERNSATZ (auswendig):
+- Kernsatz: `Die Sonderstellung zeigt sich in Weltoffenheit, weil der Mensch Antriebe durch Sprache und Institutionen hemmt und formt.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = Sonderstellung in Weltoffenheit | Mechanismus = Hemmung und Formung durch Sprache und Institutionen | Urteil = Urteil aus Entlastung und Normbindung
+- Selbsttest: Die ___ zeigt sich in Weltoffenheit, weil der Mensch Antriebe durch Sprache und Institutionen hemmt und formt.
 ## Schritt 8 — reflexion: Urteil mit doppelter Begruendung: Entlastung plus Freiheit
 
 TAKEAWAY (Kernbotschaft in einem Kasten):

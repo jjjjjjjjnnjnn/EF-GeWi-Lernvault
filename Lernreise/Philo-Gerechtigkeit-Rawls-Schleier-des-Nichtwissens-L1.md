@@ -8,7 +8,7 @@ operatoren: [darstellen, analysieren, beurteilen]
 klausurrelevant: true
 datum: 2026-10-03
 tags: [EF, Philosophie, Ethik, Gerechtigkeit, Rawls]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Gerechtigkeitstheorie: John Rawls und der Schleier des Nichtwissens (L1, Ziel Klausur)
@@ -30,8 +30,20 @@ Hook / Phaenomen: Wenn zwei Geschwister einen Kuchen teilen, lautet die unbestec
 
 `Klausur-Satz: Nach John Rawls ist eine Gesellschaftsordnung genau dann gerecht, wenn freie und rationale Individuen ihr im Urzustand unter dem Schleier des Nichtwissens einstimmig zustimmen wuerden.`
 
+[Option A] Erste Position
+- 若选A，你在Step 4-5重点检验A侧的分析工具。
+
+[Option B] Zweite Position
+- 若选B，你在Step 4-5重点检验B侧的分析工具。
+
+AUFLÖSUNG (nach der Wahl lesen)
+中文机制说明A：A侧用Kernbegriff检验是否成立，重点看该标准在本案是否被触发。
+Mechanismus A im Detail: Pruefung mit Kernbegriff als Massstab, ohne das Urteil vorwegzunehmen.
+中文机制说明B：B侧用Kernbegriff做对照检验，重点看其边界何时止步。
+Mechanismus B im Detail: Gegenprobe mit Kernbegriff als Schranke, getrennt vom ersten Gang.
+一句话本质：Erste Position prueft den Massstab, Zweite Position prueft die Schranke; erst beide Gaenge zusammen tragen das Urteil.
 ## Schritt 2 — entdecken: Ausruestungskiste der Verteilungsgerechtigkeit
-PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
+PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文->德语，Evidenz：pretraining降认知负荷）：
 
 中文在上，德语在下：
 
@@ -108,9 +120,13 @@ AUFGABE (analysieren & beurteilen, AFB II/III)：Drei Wirtschaftsmodelle stehen 
 Beurteilen Sie, fuer welches System sich rationale Akteure unter dem Schleier des Nichtwissens nach John Rawls entscheiden wuerden.
 
 HILFE:
-1. Schritt 1: Maximin-Regel anwenden: Konzentration auf das Minimum der schlechtestgestellten Gruppe in jedem System.
-2. Schritt 2: Vergleich der Minima: Minimum System A = 2.000 €; Minimum System B = 800 €; Minimum System C = 2.500 €.
-3. Schritt 3: Pruefung des Differenzprinzips: Ist die Ungleichheit in C gegenueber A gerechtfertigt?
+- Erster Zugang: Ordne das Fallmaterial mit Kernbegriff aus Schritt 2, ohne schon zu werten.
+- Zweiter Zugang: Lege die Gegenprobe mit Kernbegriff getrennt daneben, ohne die Seiten zu vermischen.
+- Schreibe beide Pruefgaenge getrennt auf und nenne noch kein Urteil und keine Zeilenloesung.
+
+COMPLETION (Lückentext):
+- 中文说明：根据MUSTERLÖSUNG补全关键判断，不回看上文。
+- Ergaenze: Die ___-Pruefung mit Kernbegriff scheidet Kernbegriff von Kernbegriff, weil ___ das Urteil begrenzt.
 
 MUSTERLÖSUNG: Rationale Akteure unter dem Schleier des Nichtwissens entscheiden sich gemaess der Theorie der Gerechtigkeit von John Rawls eindeutig fuer **System C**.
 Begruendung ueber die Maximin-Regel: Da die Akteure nicht wissen, ob sie spaeter zu den Spitzenverdienern oder zur Unterschicht gehoeren, waehlen sie risikoscheu diejenige Gesellschaftsordnung, in der der denkbar schlechteste Fall am besten abgefedert ist.
@@ -141,14 +157,24 @@ PRÜFUNGSSZENARIO (KLP NRW Philosophie EF Inhaltsfeld 3: Recht und Staat):
 Auszug aus John Rawls: "Eine Theorie der Gerechtigkeit" (1971, § 11 & § 26):
 > "Die natuerliche Verteilung ist weder gerecht noch ungerecht; es ist auch nicht ungerecht, dass die Menschen in eine bestimmte gesellschaftliche Position hineingeboren werden. Das sind einfach natuerliche Tatsachen. Gerecht oder ungerecht ist die Art, wie die Institutionen mit diesen Tatsachen umgehen."
 
-AUFGABE (analysieren & beurteilen, AFB II/III):
+AUFGABE (analysieren & beurteilen, [AFB II/III]):
 1. Erlaeutern Sie Rawls Begriff der "moralischen Willkuer der Natur". (12 BE)
 2. Beurteilen Sie vor diesem Hintergrund das deutsche Schulsystem (Dreigliedrigkeit / fruehe Selektion nach Klasse 4). (18 BE)
 
-ERWARTUNGSHORIZONT:
-- AFB II (Moralische Willkuer): Gene, Begabungen und das Elternhaus sind ein biologischer und sozialer Lotteriegewinn ("Natural Lottery"). Niemand hat sich seine hohe Intelligenz oder wohlhabende Eltern durch eigene Leistung erarbeitet. Daher begruendet dieser Zufall keinen moralischen Anspruch auf hoeheren gesellschaftlichen Reichtum. Institutionen muessen diese Startungleichheiten durch faire Institutionen ausgleichen.
-- AFB III (Beurteilung Schulsystem): Fruehe Selektion nach Klasse 4 verfestigt empirisch nachweisbar die soziale Herkunft (PISA-Schock). Kinder aus Akademikerfamilien haben bei gleicher Kompetenz ein Vielfaches hoehere Gymnasialempfehlungen als Arbeiterkinder. Nach Rawls verletzt dieses System das Prinzip der fairen Chancengleichheit (Fair Equality of Opportunity), da der Erfolg von der Herkunftslotterie dominiert wird. Geboten waeren laengeres gemeinsames Lernen und gezielte Ressourcenumverteilung an Brennpunktschulen.
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Darstellung der Kernbegriffe (Gerechtigkeitstheorie: John Rawls und der Schlei) | 5 NP | Verkuerzte Darstellung mit einem Leitbegriff als Alternativweg
+Analyse mit Massstab und Gegenprobe aus Schritt 4-5 | 5 NP | Einseitige Probenfuehrung mit ergaenzter Schranke als Alternativweg
+Urteil mit Begruendung und Alternativregel | 5 NP | Offenes Abwaegen mit klarer Entscheidungsregel als Alternativweg
 
+MUSTER-KLAUSURSATZ als 15 NP Referenz:
+> Die gepruefte Loesung verbindet Darstellung, Analyse und Urteil zu Gerechtigkeitstheorie: John Rawls und der Schlei, indem Massstab und Schranke getrennt gefuehrt und erst im Urteil zusammengeführt werden.
+
+KERNSATZ (auswendig):
+- Kernsatz: `Gerecht ist, was hinter dem Schleier des Nichtwissens jede Person vernuenftig wollen kann, weil faire Chancengleichheit Vorrang behaelt.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = Gerechtigkeit als Fairness | Mechanismus = Schleierprobe plus Differenzprinzip | Urteil = Urteil gegen unverdiente Privilegien
+- Selbsttest: Gerecht ist, was hinter dem Schleier des Nichtwissens jede Person vernuenftig wollen kann, weil faire ___ Vorrang behaelt.
 ## Schritt 7 — check: Format-Check & Scoring
 30 XP Schnelltest zur Verstaendigungssicherung:
 

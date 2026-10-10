@@ -8,7 +8,7 @@ operatoren: [darstellen, analysieren, beurteilen]
 klausurrelevant: true
 datum: 2026-09-25
 tags: [EF, Philosophie, Ethik]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Das utilitaristische Kalkül und Mills Qualitätsunterscheidung (L1, Ziel Klausur)
@@ -31,9 +31,21 @@ Phaenomen-Satz (DE): Drei Millionen Lacher gegen drei Tausend Traenen: Zaehlt Me
 
 Klausur-Satz: `Im Kulturprozess prallt Benthams Zuschauerbilanz auf Mills Frage, ob Kenner beider Freuden die Oper dem Dauerlacher vorziehen.`
 
+[Option A] Erste Position
+- 若选A，你在Step 4-5重点检验A侧的分析工具。
+
+[Option B] Zweite Position
+- 若选B，你在Step 4-5重点检验B侧的分析工具。
+
+AUFLÖSUNG (nach der Wahl lesen)
+中文机制说明A：A侧用Nutzenprinzip检验是否成立，重点看该标准在本案是否被触发。
+Mechanismus A im Detail: Pruefung mit Nutzenprinzip als Massstab, ohne das Urteil vorwegzunehmen.
+中文机制说明B：B侧用hedonistisches Kalkuel做对照检验，重点看其边界何时止步。
+Mechanismus B im Detail: Gegenprobe mit hedonistisches Kalkuel als Schranke, getrennt vom ersten Gang.
+一句话本质：Erste Position prueft den Massstab, Zweite Position prueft die Schranke; erst beide Gaenge zusammen tragen das Urteil.
 ## Schritt 2 — entdecken: Sieben Gewichte ein Kenner: Menge messen Wuerde wagen
 
-PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，三层结构）：
+PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文->德语，三层结构）：
 
 中文在上，德语在下：
 
@@ -113,11 +125,20 @@ HILFE（中德双语步骤）：
 3. 中文：第3步少数人收束：三千人能否对抗三百万人，关键词：Minderheit。
    Schritt 3 (DE): Minderheitenschutz aus Z.12 bis Z.14 sichern.
 
+
+COMPLETION (Lückentext):
+- 中文说明：根据MUSTERLÖSUNG补全关键判断，不回看上文。
+- Ergaenze: Die ___-Pruefung mit Nutzenprinzip scheidet Nutzenprinzip von hedonistisches Kalkuel, weil ___ das Urteil begrenzt.
+
 MUSTERLOESUNG：中文：纯量真人秀胜，加入质后歌剧翻盘：持久教化加行家首选压过短笑；建议保留深夜档并配导赏，把质的门槛降低。
 MUSTERLOESUNG (DE): Ohne Korrektur gewinnt TV durch Umfang und Naehe nach Z.6, mit Korrektur gewinnt Oper durch Dauer, Fruchtbarkeit und Kenner-Vorzug nach Z.8 bis Z.10, daher Sendeplatz mit Vermittlung erhalten.
 
 Klausur-Satz: `Am Kulturfall zeigt sich: Z.1 bis Z.6 tragen die Quote, Z.8 bis Z.12 tragen Bildung und Kenner gegen die blosse Menge.`
 
+HILFE:
+- Erster Zugang: Ordne das Fallmaterial mit Nutzenprinzip aus Schritt 2, ohne schon zu werten.
+- Zweiter Zugang: Lege die Gegenprobe mit hedonistisches Kalkuel getrennt daneben, ohne die Seiten zu vermischen.
+- Schreibe beide Pruefgaenge getrennt auf und nenne noch kein Urteil und keine Zeilenloesung.
 ## Schritt 5 — ausprobieren: Duell der Hoefe: Pflicht schuetzt Minderheit Folgen fuellen Quote
 
 VERGLEICH辨别实验（双向辨析：尊严眼 vs 收视账）：
@@ -130,7 +151,7 @@ Weg B (Utilitarismus, Folgen und Gesamtwohl)：机制为七维称量加质的修
 AUFGABE A：Der Sender will die Oper ersatzlos streichen, weil Quote alles sei. Pruefen Sie mit Weg A Maxime und Selbstzweckformel und formulieren Sie ein Urteil.
 AUFGABE B：Der Sender will Sendeplaetze per Bilanz plus Bildung neu schneiden. Pruefen Sie mit Weg B sieben Kriterien plus Qualitaet und formulieren Sie ein Urteil.
 
-HILFE: A 问少数人与工具化 → Weg A。B 问档期总账 → Weg B。【选程序：见 als Mittel 选康德；见 Bilanz 选功利。】
+HILFE: A 问少数人与工具化 -> Weg A。B 问档期总账 -> Weg B。【选程序：见 als Mittel 选康德；见 Bilanz 选功利。】
 
 ANTWORT: A erfordert Weg A: Die Streich-Maxime degradiert Kenner zu blossen Mitteln der Quote und ist als Gesetz nicht wollbar, daher ersatzlose Streichung pflichtwidrig. B erfordert Weg B: Geteilte Plaetze mit Vermittlung erhalten Bildung und sichern Quote, daher differenzierte Reform geboten.
 
@@ -160,11 +181,26 @@ Klausur-Satz: `Wer das Kalkuel beherrscht, rechnet erst sieben Mengen und laesst
 
 ROLLE: Du bist Gutachter des Senders im Kulturprozess und sollst dem Programmdirektor eine Empfehlung zur Mitternachtsoper geben.
 SITUATION: Die Quote-Lobby fordert Reality-TV rund um die Uhr, die Bildungsinitiative fordert Oper mit Vermittlung. Beurteile in ca. 150 Woertern beide Optionen mit Kalkuel und Kenner-Test und empfiehl eine Regelung, und sichere dein Urteil mit Wuerde oder Bilanz ab.
-AUFGABE: Zusammenhaengende Stellungnahme ca. 150 Woerter mit Kriterium, Anwendung und Urteil.
+AUFGABE (beurteilen, [AFB III]): Beurteile in einer zusammenhaengenden Stellungnahme (ca. 150 Woerter) den Sendeplatz-Fall mit sieben Kriterien und Mills Korrektur und schliesse mit einem begruendeten Urteil.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Darstellung der Kernbegriffe (Das utilitaristische Kalkuel und Mills Qualitaet) | 5 NP | Verkuerzte Darstellung mit einem Leitbegriff als Alternativweg
+Analyse mit Massstab und Gegenprobe aus Schritt 4-5 | 5 NP | Einseitige Probenfuehrung mit ergaenzter Schranke als Alternativweg
+Urteil mit Begruendung und Alternativregel | 5 NP | Offenes Abwaegen mit klarer Entscheidungsregel als Alternativweg
+
 RUBRIC (30 XP): Bilanz beider Optionen mit Kriterien und Textbeleg (10 XP) | Anwendung der Qualitaetskorrektur mit Kenner-Test (10 XP) | Umgang mit der Minderheitenfrage plus Wuerde (6 XP) | Fachsprachliches Urteil (4 XP).
 
 Klausur-Satz: `Im Gutachten gilt: Erst Mengen mit Beleg bilanzieren, dann Qualitaet korrigieren und schliesslich die Minderheit vor der Quote schuetzen.`
 
+MUSTER-KLAUSURSATZ als 15 NP Referenz:
+> Die gepruefte Loesung verbindet Darstellung, Analyse und Urteil zu Das utilitaristische Kalkuel und Mills Qualitaet, indem Massstab und Schranke getrennt gefuehrt und erst im Urteil zusammengeführt werden.
+
+KERNSATZ (auswendig):
+- Kernsatz: `Bentham misst Lust nach sieben Faktoren, weil nur die groesste Nettobilanz fuer die groesste Zahl als richtig zaehlt.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = Handlungsfolgen als Bilanz | Mechanismus = Sieben-Faktoren-Rechnung des Nettonutzens | Urteil = Urteil nach maximaler Summe
+- Selbsttest: Bentham misst Lust nach sieben Faktoren, weil nur die groesste ___ fuer die groesste Zahl als richtig zaehlt.
 ## Schritt 8 — reflexion: Urteil mit Kennerblick: Quote plus Bildung
 
 TAKEAWAY 1盒（核心总结）：

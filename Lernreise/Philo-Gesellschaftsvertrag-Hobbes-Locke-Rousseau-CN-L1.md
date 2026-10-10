@@ -8,7 +8,7 @@ operatoren: [darstellen, vergleichen, beurteilen]
 klausurrelevant: true
 datum: 2026-09-26
 tags: [EF, Philosophie, CN]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Gesellschaftsvertrag bei Hobbes Locke und Rousseau (L1, Ziel Klausur)
@@ -31,6 +31,18 @@ Phaenomen-Satz (DE): Wer befiehlt im Namen aller, wenn das Essen knapp wird.
 
 Klausur-Satz: `Im Kantinen-Prozess streiten drei Vertraege darum, ob Not Sicherheit, Eigentum oder Selbstbestimmung zuerst schuetzen muss.`
 
+[Option A] Erste Position
+- 若选A，你在Step 4-5重点检验A侧的分析工具。
+
+[Option B] Zweite Position
+- 若选B，你在Step 4-5重点检验B侧的分析工具。
+
+AUFLÖSUNG (nach der Wahl lesen)
+中文机制说明A：A侧用Naturzustand检验是否成立，重点看该标准在本案是否被触发。
+Mechanismus A im Detail: Pruefung mit Naturzustand als Massstab, ohne das Urteil vorwegzunehmen.
+中文机制说明B：B侧用Hobbes Leviathan做对照检验，重点看其边界何时止步。
+Mechanismus B im Detail: Gegenprobe mit Hobbes Leviathan als Schranke, getrennt vom ersten Gang.
+一句话本质：Erste Position prueft den Massstab, Zweite Position prueft die Schranke; erst beide Gaenge zusammen tragen das Urteil.
 ## Schritt 2 — entdecken: Drei Vertraege ein Tisch: Schwert Treuhand Gemeinwille
 
 PRETRAINING术语盒（核心5词，中文在上、德语在下，三层结构）：
@@ -111,11 +123,20 @@ HILFE（中德双语步骤）：
 3. 中文：第3步比限制与反抗权，关键词：Widerstand。
    Schritt 3 (DE): Begrenzung mit Z.6 bis Z.7 und Z.12 bis Z.13 vergleichen.
 
+
+COMPLETION (Lückentext):
+- 中文说明：根据MUSTERLÖSUNG补全关键判断，不回看上文。
+- Ergaenze: Die ___-Pruefung mit Naturzustand scheidet Naturzustand von Hobbes Leviathan, weil ___ das Urteil begrenzt.
+
 MUSTERLOESUNG：中文：霍布斯用绝对服从换配给安全，洛克用分权托管保财产；前者快而险，后者慢而正。
 MUSTERLOESUNG (DE): Hobbes beendet mit Z.4 bis Z.5 die Pluenderung durch Gehorsam, Locke sichert mit Z.10 bis Z.12 Eigentum durch Teilung und Ruecknahme nach Z.13.
 
 Klausur-Satz: `Am Kantinenfall zeigt sich: Z.1 bis Z.7 tragen die schnelle Sicherheit, Z.8 bis Z.15 die begrenzte Treuhand mit Ruecknahmerecht.`
 
+HILFE:
+- Erster Zugang: Ordne das Fallmaterial mit Naturzustand aus Schritt 2, ohne schon zu werten.
+- Zweiter Zugang: Lege die Gegenprobe mit Hobbes Leviathan getrennt daneben, ohne die Seiten zu vermischen.
+- Schreibe beide Pruefgaenge getrennt auf und nenne noch kein Urteil und keine Zeilenloesung.
 ## Schritt 5 — ausprobieren: Duell der Pruefwege: Kantisches Recht gegen utilitaristische Rettung
 
 VERGLEICH辨别实验（权利眼 vs 功利眼）：
@@ -128,7 +149,7 @@ Weg B (Utilitarismus, Folgen und Gesamtwohl)：机制为受影响者、饥饿、
 AUFGABE A：Der Stab will Vorraete ohne Beschluss einziehen. Pruefen Sie mit Weg A Rechtsprinzip und Wuerde und formulieren Sie ein Urteil.
 AUFGABE B：Der Stab will Sperre plus Rationierung per Rettungsbilanz rechtfertigen. Pruefen Sie mit Weg B Folgen und Gesamtwohl und formulieren Sie ein Urteil.
 
-HILFE: A 问没收与尊严 → Weg A。B 问饥饿与总账 → Weg B。【选程序：见 Gesetz / Mittel 选康德；见 Bilanz / Versorgung 选功利。】
+HILFE: A 问没收与尊严 -> Weg A。B 问饥饿与总账 -> Weg B。【选程序：见 Gesetz / Mittel 选康德；见 Bilanz / Versorgung 选功利。】
 
 ANTWORT: A erfordert Weg A: Einziehung ohne Gesetz degradiert Schueler zu Mitteln der Krise und ist als Gesetz nicht wollbar, daher nur mit Beschluss und Entschaedigung legitim. B erfordert Weg B: Befristete Rationierung mit Kontrolle verhindert Hungerleid vieler und mehrt das Gesamtwohl, daher befristet geboten.
 
@@ -159,11 +180,26 @@ Klausur-Satz: `Wer vergleicht, misst alle drei Modelle an Menschenbild, Leistung
 
 ROLLE: Du bist Chefverteidiger der Schuelerschaft vor dem Tribunal und sollst die Legitimitaet einer Not-Verteilregel verteidigen.
 SITUATION: Die Schulleitung will Anordnung wie ein Leviathan, die Schueler wollen Mitbestimmung wie ein Gemeinwille. Nimm in circa 150 Woertern mit Hobbes, Locke und Rousseau Stellung, welche Regelsetzung legitim waere, und sichere dein Urteil mit Recht oder Rettungsbilanz ab.
-AUFGABE (AFB III): Zusammenhaengende Darstellung circa 150 Woerter mit Kriterium, Anwendung und Urteil.
+AUFGABE ([AFB III]): Zusammenhaengende Darstellung circa 150 Woerter mit Kriterium, Anwendung und Urteil.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Darstellung der Kernbegriffe (Gesellschaftsvertrag bei Hobbes Locke und Rousse) | 5 NP | Verkuerzte Darstellung mit einem Leitbegriff als Alternativweg
+Analyse mit Massstab und Gegenprobe aus Schritt 4-5 | 5 NP | Einseitige Probenfuehrung mit ergaenzter Schranke als Alternativweg
+Urteil mit Begruendung und Alternativregel | 5 NP | Offenes Abwaegen mit klarer Entscheidungsregel als Alternativweg
+
 RUBRIC (30 XP): Locke korrekt mit Treuhandmodell und Textbeleg (10 XP) | Kontrast zu Hobbes und Rousseau (10 XP) | Widerlegung mit Kriterium Recht oder Bilanz (6 XP) | Fachsprachliche Darstellung (4 XP).
 
 Klausur-Satz: `Im Transfer gilt: Erst Modelle mit Beleg zuordnen, dann an Zustimmung und Begrenzung messen und befristet mit Recht oder Bilanz urteilen.`
 
+MUSTER-KLAUSURSATZ als 15 NP Referenz:
+> Die gepruefte Loesung verbindet Darstellung, Analyse und Urteil zu Gesellschaftsvertrag bei Hobbes Locke und Rousse, indem Massstab und Schranke getrennt gefuehrt und erst im Urteil zusammengeführt werden.
+
+KERNSATZ (auswendig):
+- Kernsatz: `Der Vertrag tauscht natuerliche Freiheit gegen buergerliche Sicherheit, weil Hobbes Schutz, Locke Eigentum und Rousseau Gemeinwillen sichern.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = Legitimation durch Vertrag | Mechanismus = Tausch von Freiheit gegen Schutz und Eigentum | Urteil = Urteil nach Gemeinwohlbindung
+- Selbsttest: Der Vertrag tauscht natuerliche Freiheit gegen buergerliche Sicherheit, weil Hobbes Schutz, Locke Eigentum und Rousseau ___ sichern.
 ## Schritt 8 — reflexion: Urteil in der Kantine: satt und frei zugleich
 
 TAKEAWAY 1盒（核心总结）：

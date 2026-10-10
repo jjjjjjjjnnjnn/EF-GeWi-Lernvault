@@ -8,7 +8,7 @@ operatoren: [rekonstruieren, vergleichen, beurteilen]
 klausurrelevant: true
 datum: 2026-10-03
 tags: [EF, Philo, Staatsphilosophie, Naturzustand, Hobbes, Locke, Gesellschaftsvertrag]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Staatsphilosophie: Naturzustand und Gesellschaftsvertrag bei Hobbes und Locke (L1, Ziel Klausur)
@@ -28,8 +28,20 @@ Stell dir vor, du wachst morgen frueh auf, und saemtliche Institutionen der mens
 
 `Klausur-Satz: Waehrend Hobbes die Legitimation des Staates aus der existentiellen Angst vor dem Krieg aller gegen alle im Naturzustand ableitet, begruendet Locke den Gesellschaftsvertrag als Treuhaender zur Sicherung angeborener Naturrechte.`
 
+[Option A] Hobbes
+- 若选A，你在Step 4-5重点检验A侧的分析工具。
+
+[Option B] Locke
+- 若选B，你在Step 4-5重点检验B侧的分析工具。
+
+AUFLÖSUNG (nach der Wahl lesen)
+中文机制说明A：A侧用Kernbegriff检验是否成立，重点看该标准在本案是否被触发。
+Mechanismus A im Detail: Pruefung mit Kernbegriff als Massstab, ohne das Urteil vorwegzunehmen.
+中文机制说明B：B侧用Kernbegriff做对照检验，重点看其边界何时止步。
+Mechanismus B im Detail: Gegenprobe mit Kernbegriff als Schranke, getrennt vom ersten Gang.
+一句话本质：Hobbes prueft den Massstab, Locke prueft die Schranke; erst beide Gaenge zusammen tragen das Urteil.
 ## Schritt 2 — entdecken: Das philosophische Instrumentarium der Vertragstheorie
-PRETRAINING术语盒（核心4词，先读三遍中德，合书自测中文→德语）：
+PRETRAINING术语盒（核心4词，先读三遍中德，合书自测中文->德语）：
 
 - 自然状态 — Naturzustand: 假想的人类在建立任何政治组织、法律体系或国家权力之前的原始生存状态。 Ein hypothetisches Gedankenexperiment zur Beschreibung des menschlichen Zusammenlebens vor der Etablierung staatlicher Herrschaftsstrukturen.
 - 万人对万人的战争 — Bellum omnium contra omnes: 霍布斯设想的在缺乏公共威慑力量时，由于欲望冲突、资源匮乏与相互猜疑而导致的全面敌对状态。 Der permanente Zustand latenter Gewalt und existentieller Unsicherheit infolge egoistischer Selbsterhaltungstriebe ohne uebergeordnete Ordnungsmacht.
@@ -61,11 +73,21 @@ Locke (Konstitutioneller Verfassungsstaat):
 
 [Werkzeug: balance-board]
 
+HILFE:
+- Erster Zugang: Ordne das Fallmaterial mit Kernbegriff aus Schritt 2, ohne schon zu werten.
+- Zweiter Zugang: Lege die Gegenprobe mit Kernbegriff getrennt daneben, ohne die Seiten zu vermischen.
+- Schreibe beide Pruefgaenge getrennt auf und nenne noch kein Urteil und keine Zeilenloesung.
+
 AUFGABE (rekonstruieren & beurteilen, AFB I/II):
 Betrachte folgende historische These von Thomas Hobbes (Leviathan, Kap. 13):
 "Daraus ergibt sich klar, dass die Menschen waehrend der Zeit, in der sie ohne eine gemeinsame Macht leben, die sie alle in Schrecken haelt, sich in jenem Zustand befinden, den man Krieg nennt, und zwar in einem Krieg eines jeden gegen jeden."
 1. Rekonstruiere die drei Ursachen, die nach Hobbes im Naturzustand unausweichlich zur Eskalation fuehren (Konkurrenz, Misstrauen, Ruhmsucht).
 2. Vergleiche Hobbes' Loesung mit John Lockes Konzept des Widerstandsrechts: Darf ein Buerger die Gefolgschaft verweigern, wenn der Herrscher Grundrechte verletzt?
+
+
+COMPLETION (Lückentext):
+- 中文说明：根据MUSTERLÖSUNG补全关键判断，不回看上文。
+- Ergaenze: Die ___-Pruefung mit Kernbegriff scheidet Kernbegriff von Kernbegriff, weil ___ das Urteil begrenzt.
 
 MUSTERLOESUNG:
 1. Rekonstruktion der drei Konfliktursachen nach Hobbes:
@@ -108,6 +130,22 @@ Analysiere diese Massnahmen aus der Perspektive von Thomas Hobbes (Prioritaet de
 ### AFB III: Ethisch-Politisches Gesamturteil
 Beurteile, ob der Begriff des "Gesellschaftsvertrags" heute noch taugt, um die Loyalitaet junger Generationen gegenueber dem Staat einzufordern, obwohl niemand von uns jemals real einen solchen Vertrag unterschrieben hat.
 
+AUFGABE (rekonstruieren, [AFB I/II/III]): Rekonstruiere den Fall mit den Begriffen aus Schritt 2 und begruende das Urteil mit der Gegenprobe aus Schritt 5.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Darstellung der Kernbegriffe (Staatsphilosophie: Naturzustand und Gesellschaft) | 5 NP | Verkuerzte Darstellung mit einem Leitbegriff als Alternativweg
+Analyse mit Massstab und Gegenprobe aus Schritt 4-5 | 5 NP | Einseitige Probenfuehrung mit ergaenzter Schranke als Alternativweg
+Urteil mit Begruendung und Alternativregel | 5 NP | Offenes Abwaegen mit klarer Entscheidungsregel als Alternativweg
+
+MUSTER-KLAUSURSATZ als 15 NP Referenz:
+> Die gepruefte Loesung verbindet Darstellung, Analyse und Urteil zu Staatsphilosophie: Naturzustand und Gesellschaft, indem Massstab und Schranke getrennt gefuehrt und erst im Urteil zusammengeführt werden.
+
+KERNSATZ (auswendig):
+- Kernsatz: `Hobbes will Sicherheit durch den Leviathan, Locke Freiheit durch Gewaltenteilung, weil Macht nur mit Zustimmung legitim bleibt.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = Frieden durch Ordnung | Mechanismus = Leviathanprobe plus Widerstandsrecht | Urteil = Urteil nach Zustimmung und Grundrechten
+- Selbsttest: Hobbes will Sicherheit durch den Leviathan, Locke Freiheit durch ___ weil Macht nur mit Zustimmung legitim bleibt.
 ## Schritt 7 — check: Format-Check & Scoring
 
 30 XP Schnelltest zur Verstaendigungssicherung:

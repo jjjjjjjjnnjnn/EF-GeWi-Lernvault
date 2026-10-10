@@ -8,7 +8,7 @@ operatoren: [darstellen, analysieren, beurteilen]
 klausurrelevant: true
 datum: 2026-09-26
 tags: [EF, Philo, Ethik]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Epikureismus und Stoa zur Seelenruhe (L1, Ziel Klausur)
@@ -31,6 +31,18 @@ Phaenomen-Satz (DE): Der eine zaehlt Freuden, der andere prueft Urteile, beide s
 
 Klausur-Satz: `Im Pflegerprozess suchen Garten und Halle dieselbe Seelenruhe, aber auf entgegengesetzten Wegen der Begierde und des Urteils.`
 
+[Option A] Erste Position
+- 若选A，你在Step 4-5重点检验A侧的分析工具。
+
+[Option B] Zweite Position
+- 若选B，你在Step 4-5重点检验B侧的分析工具。
+
+AUFLÖSUNG (nach der Wahl lesen)
+中文机制说明A：A侧用Epikureismus检验是否成立，重点看该标准在本案是否被触发。
+Mechanismus A im Detail: Pruefung mit Epikureismus als Massstab, ohne das Urteil vorwegzunehmen.
+中文机制说明B：B侧用Stoa做对照检验，重点看其边界何时止步。
+Mechanismus B im Detail: Gegenprobe mit Stoa als Schranke, getrennt vom ersten Gang.
+一句话本质：Erste Position prueft den Massstab, Zweite Position prueft die Schranke; erst beide Gaenge zusammen tragen das Urteil.
 ## Schritt 2 — entdecken: Zwei Arzneischraenke: Begierde sortieren Urteil korrigieren
 
 PRETRAINING术语盒（核心5词，中文在上、德语在下，三层结构）：
@@ -49,7 +61,7 @@ ENTDECKEN（1概念 + 1文字图解）：
 
 中文：伊壁鸠鲁治欲望，把欲望分三类，只取天然必要，划掉虚荣；斯多亚治判断，把世界分可控与不可控，只在可控处用力。花园靠正确选择得安宁，柱廊靠正确判断得安宁。前者缩小想要，后者管住评判，殊途同归于不动心。
 
-论证传导链（前提→结论）：
+论证传导链（前提->结论）：
 
 Praemisse 1 (DE): Unruhe stammt entweder aus falschen Wuenschen oder aus falschen Urteilen ueber das Gegebene. Praemisse 2 (DE): Epikur streicht eitle Wuensche und pflegt natuerliche, die Stoa korrigiert Urteile und zieht Zustimmung vom Unkontrollierbaren zurueck. Konklusion (DE): Also therapieren beide Angst an verschiedener Wurzel und vereinen sich in der Seelenruhe als gemeinsamem Ziel.
 
@@ -110,11 +122,20 @@ HILFE：
 3. 中文：第3步斯多亚正判断：备考可控、考题不可控，关键词：Urteil。
    Schritt 3 (DE): Stoa heilt durch staerkere Urteile mit Z.8 bis Z.12.
 
+
+COMPLETION (Lückentext):
+- 中文说明：根据MUSTERLÖSUNG补全关键判断，不回看上文。
+- Ergaenze: Die ___-Pruefung mit Epikureismus scheidet Epikureismus von Stoa, weil ___ das Urteil begrenzt.
+
 MUSTERLOESUNG：中文：球鞋与排名焦虑中，虚荣欲望用伊壁鸠鲁划掉，不可控用斯多亚接受；欲望小了、评判准了，心即安静。
 MUSTERLOESUNG (DE): Epikur heilt durch kleinere Wuensche nach Z.5 bis Z.7, die Stoa durch staerkere Urteile nach Z.11 bis Z.12. Beide therapieren Angst, vereint zur Seelenruhe nach Z.14 bis Z.15.
 
 Klausur-Satz: `Am Primaertext zeigt sich: Z.1 bis Z.7 tragen die epikureische Therapie der Wuensche, Z.8 bis Z.13 die stoische Therapie der Urteile.`
 
+HILFE:
+- Erster Zugang: Ordne das Fallmaterial mit Epikureismus aus Schritt 2, ohne schon zu werten.
+- Zweiter Zugang: Lege die Gegenprobe mit Stoa getrennt daneben, ohne die Seiten zu vermischen.
+- Schreibe beide Pruefgaenge getrennt auf und nenne noch kein Urteil und keine Zeilenloesung.
 ## Schritt 5 — ausprobieren: Duell der Pruefwege: Kantische Pflicht gegen utilitaristisches Glueck
 
 VERGLEICH辨别实验（义务眼 vs 功利眼，投射到过劳案件）：
@@ -127,7 +148,7 @@ Weg B (Utilitarismus, Folgen und Gesamtwohl)：机制为受影响者苦乐加总
 AUFGABE A: Die Klinik will die 36-Stunden-Schicht behalten, weil sie billiger ist. Pruefen Sie mit Weg A Maxime und Selbstzweckformel und formulieren Sie ein Urteil.
 AUFGABE B: Die Klinik will Schichtlaenge und Fehlerquote per Bilanz neu regeln. Pruefen Sie mit Weg B Folgenbilanz und Gesamtwohl und formulieren Sie ein Urteil.
 
-HILFE: A 问工具化与尊严 → Weg A。B 问总体苦乐 → Weg B。【选程序：见 als Mittel 选康德；见 Bilanz 选功利。】
+HILFE: A 问工具化与尊严 -> Weg A。B 问总体苦乐 -> Weg B。【选程序：见 als Mittel 选康德；见 Bilanz 选功利。】
 
 ANTWORT: A erfordert Weg A: Die Maxime der Erschopfung degradiert Pflegende zu blossen Mitteln der Kostenersparnis und ist als Gesetz nicht wollbar, daher pflichtwidrig. B erfordert Weg B: Kuerzere Schichten mindern Fehlerrisiko und Erholungsleid deutlich und mehren das Gesamtwohl, daher geboten.
 
@@ -158,11 +179,26 @@ Klausur-Satz: `Wer beide Schulen beherrscht, sortiert erst Wuensche und Welt und
 
 ROLLE: Du bist Verteidiger der Nachtschichtschwester vor dem Tribunal und plaedierst mit beiden antiken Schulen fuer ein gerechtes Urteil.
 SITUATION: Die Anklaeger fordern Berufsverbot wegen Fehlverhaltens aus Erschoepfung. Nimm in ca. 150 Woertern mit Epikur und Stoa Stellung und beantworte, welche Therapie wo staerker wirkt, und sichere dein Urteil zusaetzlich mit Wuerde und Bilanz ab.
-AUFGABE (beurteilen, AFB III): Zusammenhaengende Darstellung ca. 150 Woerter mit beiden Schulen, Abwaegung und Urteil.
+AUFGABE (beurteilen, [AFB III]): Zusammenhaengende Darstellung ca. 150 Woerter mit beiden Schulen, Abwaegung und Urteil.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Darstellung der Kernbegriffe (Epikureismus und Stoa zur Seelenruhe) | 5 NP | Verkuerzte Darstellung mit einem Leitbegriff als Alternativweg
+Analyse mit Massstab und Gegenprobe aus Schritt 4-5 | 5 NP | Einseitige Probenfuehrung mit ergaenzter Schranke als Alternativweg
+Urteil mit Begruendung und Alternativregel | 5 NP | Offenes Abwaegen mit klarer Entscheidungsregel als Alternativweg
+
 RUBRIC (30 XP): Epikur mit Lustklassifikation und Textbeleg (10 XP) | Stoa mit Dichotomie und Textbeleg (10 XP) | Vergleich plus begruendetes Urteil mit Wuerde oder Bilanz (5 XP) | Geschlossene Darstellung (5 XP).
 
 Klausur-Satz: `Im Plaedoyer gilt: Erst beide Therapien mit Beleg rekonstruieren, dann am Fall abwaegen und mit Wuerde begrenzen.`
 
+MUSTER-KLAUSURSATZ als 15 NP Referenz:
+> Die gepruefte Loesung verbindet Darstellung, Analyse und Urteil zu Epikureismus und Stoa zur Seelenruhe, indem Massstab und Schranke getrennt gefuehrt und erst im Urteil zusammengeführt werden.
+
+KERNSATZ (auswendig):
+- Kernsatz: `Seelenruhe entsteht durch richtige Begierdenwahl, weil Epikur leere Wuensche entlarvt und die Stoa dem Schicksal zustimmt.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = Seelenruhe als Ziel | Mechanismus = Begierdenklassifikation plus stoische Zustimmung | Urteil = Urteil fuer genuegsame Autarkie
+- Selbsttest: Seelenruhe entsteht durch richtige ___ weil Epikur leere Wuensche entlarvt und die Stoa dem Schicksal zustimmt.
 ## Schritt 8 — reflexion: Freispruch der Seele: Weniger wollen besser urteilen
 
 TAKEAWAY: Merke Garten und Halle: Ruhe entsteht aus richtiger Wahl plus richtigem Urteil. Epikur fragt, ob du es wirklich brauchst, die Stoa fragt, ob du dem zustimmen musst.

@@ -8,7 +8,7 @@ operatoren: [darstellen, vergleichen, beurteilen]
 klausurrelevant: true
 datum: 2026-09-26
 tags: [EF, Philosophie]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Utilitarismus vs Kant (L1, Ziel Klausur)
@@ -29,6 +29,18 @@ Stell dir den vierzehnten Prozesstag im Tribunal der Menschheit vor. Ein unschul
 
 Klausur-Satz: `Im Suendenbock-Prozess prallt die Rettungsbilanz fuer alle auf das Verbot, einen Unschuldigen als blosses Mittel zu benutzen.`
 
+[Option A] Erste Position
+- 若选A，你在Step 4-5重点检验A侧的分析工具。
+
+[Option B] Zweite Position
+- 若选B，你在Step 4-5重点检验B侧的分析工具。
+
+AUFLÖSUNG (nach der Wahl lesen)
+中文机制说明A：A侧用Nutzenprinzip检验是否成立，重点看该标准在本案是否被触发。
+Mechanismus A im Detail: Pruefung mit Nutzenprinzip als Massstab, ohne das Urteil vorwegzunehmen.
+中文机制说明B：B侧用Maximenpruefung做对照检验，重点看其边界何时止步。
+Mechanismus B im Detail: Gegenprobe mit Maximenpruefung als Schranke, getrennt vom ersten Gang.
+一句话本质：Erste Position prueft den Massstab, Zweite Position prueft die Schranke; erst beide Gaenge zusammen tragen das Urteil.
 ## Schritt 2 — entdecken: Zwei Pruefbrillen fuenf Glaeser: Bilanz gegen Achtung
 
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
@@ -111,9 +123,13 @@ Primaertext (vereinfachte deutsche Fassung nach Mill und Kant, 100 bis 200 Woert
 AUFGABE Waage-Raetsel (AFB II): Lege den Suendenbock-Fall auf [Werkzeug: balance-board]. Markiere mit GELB alle Stellen zur Folgenbilanz (Z.1 bis Z.4) und mit BLAU alle Stellen zu Maxime und Wuerde (Z.5 bis Z.15). Target: Folgenbilanz und Maximenprobe je 1 bis 5 wichten und per Wuerde entscheiden, ob Nutzen die Pflicht bricht.
 
 HILFE:
-1. Schritt 1: Bilanziere die Folgen beider Optionen fuer alle Betroffenen mit Z.1 bis Z.4.
-2. Schritt 2: Formuliere die Maxime und denke sie als allgemeines Gesetz mit Z.5 bis Z.10.
-3. Schritt 3: Deute an Wuerde mit Z.11 bis Z.15 und formuliere den Klausur-Satz.
+- Erster Zugang: Ordne das Fallmaterial mit Nutzenprinzip aus Schritt 2, ohne schon zu werten.
+- Zweiter Zugang: Lege die Gegenprobe mit Maximenpruefung getrennt daneben, ohne die Seiten zu vermischen.
+- Schreibe beide Pruefgaenge getrennt auf und nenne noch kein Urteil und keine Zeilenloesung.
+
+COMPLETION (Lückentext):
+- 中文说明：根据MUSTERLÖSUNG补全关键判断，不回看上文。
+- Ergaenze: Die ___-Pruefung mit Nutzenprinzip scheidet Nutzenprinzip von Maximenpruefung, weil ___ das Urteil begrenzt.
 
 MUSTERLOESUNG: Der Nutzen spricht fuer das Opfern des Einen, weil Klassenruhe gegen einen Bestraften steht (Z.2 bis Z.3). Kant prueft dagegen Maxime und Selbstzweckformel: Wer den einen opfert, benutzt ihn bloss als Mittel und verletzt seine Wuerde (Z.11 bis Z.12). Verallgemeinert zerstoert die Maxime das Rechtsvertrauen (Z.8 bis Z.9). Daher bleibt die Tat trotz groesseren Nutzens pflichtwidrig.
 
@@ -161,11 +177,26 @@ Klausur-Satz: `Aus kantischer Sicht ist die Bestrafung eines Unschuldigen pflich
 
 ROLLE: Du bist Verteidiger des unschuldigen Schuelers und Mitglied im Ethikrat der Schule in der Arbeitsgruppe Ehrlichkeit im Unterricht.
 SITUATION: Debatte: Soll ein Unschuldiger bestraft werden, wenn es allen Stress nimmt und die Klasse rettet? Halte ein zweiminuetiges Plaedoyer dagegen. Nutze die Folgenbrille aus Weg B fuer Pro und die Pflichtbrille aus Weg A fuer Contra, dann faelle dein eigenes Urteil.
-AUFGABE (AFB III): Verfasse eine zusammenhaengende Darstellung von etwa 150 Woertern mit Kriterium, Anwendung und Urteil.
+AUFGABE ([AFB III]): Verfasse eine zusammenhaengende Darstellung von etwa 150 Woertern mit Kriterium, Anwendung und Urteil.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Darstellung der Kernbegriffe (Utilitarismus vs Kant) | 5 NP | Verkuerzte Darstellung mit einem Leitbegriff als Alternativweg
+Analyse mit Massstab und Gegenprobe aus Schritt 4-5 | 5 NP | Einseitige Probenfuehrung mit ergaenzter Schranke als Alternativweg
+Urteil mit Begruendung und Alternativregel | 5 NP | Offenes Abwaegen mit klarer Entscheidungsregel als Alternativweg
+
 RUBRIC (30 XP): These in Satz 1 mit Darstellung beider Brillen und Textbeleg | zwei Fachbegriffe wie Maxime, Nutzenprinzip oder Menschenwuerde | ein Beleg aus Schritt 4 oder 5 | Urteil mit Kriterium Menschenwuerde.
 
 Klausur-Satz: `Im Plaedoyer gilt: Erst beide Brillen getrennt darstellen und belegen, dann an der Wuerde entscheiden und das Opfer verweigern.`
 
+MUSTER-KLAUSURSATZ als 15 NP Referenz:
+> Die gepruefte Loesung verbindet Darstellung, Analyse und Urteil zu Utilitarismus vs Kant, indem Massstab und Schranke getrennt gefuehrt und erst im Urteil zusammengeführt werden.
+
+KERNSATZ (auswendig):
+- Kernsatz: `Der Nutzen rechnet Folgen, Kant prueft Maximen, weil Wuerde jede Verrechnung von Menschen gegen Glueckssummen stoppt.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = Bilanz gegen Pflicht | Mechanismus = Kalkuelprobe plus Zweckformel | Urteil = Urteil mit Wuerdeschranke
+- Selbsttest: Der Nutzen rechnet Folgen, Kant prueft Maximen, weil Wuerde jede Verrechnung von Menschen gegen ___ stoppt.
 ## Schritt 8 — reflexion: Freispruch des Einzelnen: Zweck heiligt nicht jedes Mittel
 
 TAKEAWAY (Kernbotschaft in einem Kasten):

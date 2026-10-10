@@ -8,7 +8,7 @@ operatoren: [darstellen, analysieren, beurteilen]
 klausurrelevant: true
 datum: 2026-10-10
 tags: [EF, Philosophie, Ethik]
-version: Enterprise-v4
+version: Enterprise-v5
 ---
 # Lernreise: Utilitarismus bei Bentham und Mill (L1, Ziel: Klausur)
 
@@ -20,14 +20,20 @@ version: Enterprise-v4
 中文理解在上：一辆失控电车冲向5名工人，你站在扳道旁。拉杆，电车转向侧轨，撞死1名工人。不拉杆，5人死亡。这就是经典电车难题，5人对1人的扳道抉择。本课把它建成伦理法庭，让功利主义和康德义务论当庭对质，与§5.2 Kant课形成直接对读：Kant问行为准则能否普遍化，这里问后果账本是否最大化。
 
 [Option A] 功利最大化：拉杆
+- 若选A，你在Step 2-3重点检验后果总量一侧的分析工具。
 
-中文机制说明：Bentham只看后果总量。幸福就是快乐减痛苦，正确行为就是给最大多数人带来最大净幸福。为此他给出幸福算盘，7个可比较要素：强度，持续时间，确定性，临近性，多产性，纯粹性，广延性。把5条生命得救的快乐总和，与1条生命丧失的痛苦总和放在同一天平上计算，拉杆一方净收益为正，所以应当拉杆。数字压倒意图，动机不单独计分。
+[Option B] 康德式坚守：不杀人
+- 若选B，你在Step 2-3重点检验尊严边界一侧的分析工具。
+
+AUFLÖSUNG (nach der Wahl lesen)
+
+以下解析在选择后阅读，含原两项机制分析全文：
+
+中文机制说明A：Bentham只看后果总量。幸福就是快乐减痛苦，正确行为就是给最大多数人带来最大净幸福。为此他给出幸福算盘，7个可比较要素：强度，持续时间，确定性，临近性，多产性，纯粹性，广延性。把5条生命得救的快乐总和，与1条生命丧失的痛苦总和放在同一天平上计算，拉杆一方净收益为正，所以应当拉杆。数字压倒意图，动机不单独计分。
 
 Mechanismus A im Detail: hedonistisches Kalkuel mit Intensitaet, Dauer, Gewissheit, Naehe, Fruchtbarkeit, Reinheit, Ausdehnung. 5 gerettete Leben erzeugen eine groessere Lustbilanz als der Tod einer Person Unlust erzeugt, also ist Ziehen des Hebels die richtige Handlung nach quantitativem Nettonutzen.
 
-[Option B] 康德式坚守：不杀人
-
-中文机制说明：Mill不接受粗糙的数量相加。他区分快乐的质：高级快乐，源于理智，尊严，同情和自主，优先于低级快乐的数量堆积。同时他提出伤害原则，也称自由原则：只有为阻止对他人造成伤害，才能限制个人自由。主动把无辜一人当作工具推出去，即使救了5人，也侵犯了高级快乐中的尊严维度。这与Kant的对读点在于：Kant说人是目的，绝不能只是手段。Mill从功利内部给出边界：允许最大化，但不允许把1人的生命权和尊严当作纯粹计算单位消耗掉。
+中文机制说明B：Mill不接受粗糙的数量相加。他区分快乐的质：高级快乐，源于理智，尊严，同情和自主，优先于低级快乐的数量堆积。同时他提出伤害原则，也称自由原则：只有为阻止对他人造成伤害，才能限制个人自由。主动把无辜一人当作工具推出去，即使救了5人，也侵犯了高级快乐中的尊严维度。这与Kant的对读点在于：Kant说人是目的，绝不能只是手段。Mill从功利内部给出边界：允许最大化，但不允许把1人的生命权和尊严当作纯粹计算单位消耗掉。
 
 Mechanismus B im Detail: Mills qualitative Unterscheidung plus Schadensprinzip als Freiheitsprinzip. Hoehere Lust aus Wuerde und Autonomie wiegt schwerer als reine Zahlensumme. Eine Person als Mittel zu opfern verletzt die Schranke des Schadensprinzips und steht in Spannung zur kantischen Zweckformel.
 
@@ -43,7 +49,11 @@ Klausur-Satz: Der Utilitarismus beurteilt die Weichenstellung nach dem Nettonutz
 
 AUFGABE (analysieren, AFB II): Lege auf die linke Schale der ethik-waage das Ueberlebensinteresse von fuenf Personen und auf die rechte Schale Wuerde und Lebensrecht einer Person. Beschreibe erstens, in welche Richtung die utilitaristische Rechnung die Waage neigt und mit welchen Kalkuel-Faktoren du das begruendest. Pruefe zweitens, wo Mills Schadensprinzip diese Neigung stoppt und warum Quantitaet allein die qualitative Wuerdeverletzung nicht aufwiegt. Formuliere das Ergebnis in zwei klar getrennten Analyse-Schritten.
 
-HILFE: 第一步先用Bentham七要素逐项打分，重点用广延性和强度解释左盘下沉。第二步切换到Mill，先判断快乐的层次，再判断伤害原则：主动杀害是否属于对他人造成直接伤害，是否超出自由限制的正当范围。两步不要混写，分析题按步骤给分。
+HILFE: 第一步从后果总量维度切入，用七要素清单法组织左盘分析；第二步从质与法权边界维度切入，用层次区分加原则审查法组织右盘复核。两步分开写，不预设天平倾斜方向与伤害定性，不给出分析结论。
+
+COMPLETION (Lückentext):
+- 中文说明：根据MUSTERLÖSUNG补全两个关键判断，不回看上文。
+- Ergaenze: Die quantitative Neigung folgt aus ___; die Mill-Grenze greift, weil die aktive Opferung eine ___ ist.
 
 MUSTERLÖSUNG: 中文要点在上：左盘分析显示，5人得救在广延性，强度，持续时间上明显占优，天平向拉杆一侧倾斜，这是纯Bentham结果。右盘复核显示，1人被主动牺牲属于直接伤害，不是附带风险。Mill的伤害原则只允许为阻止伤害而限制自由，不允许为制造更大幸福而主动制造新的直接伤害。高级快乐中的尊严一旦被工具化，数量优势失去正当性。因此分析结论是双层的：计算上拉杆占优，正当性上存在Mill式阻断，需要进入第三步的原理重构。
 
@@ -105,7 +115,7 @@ ROLLE: 中文在上：你是市政伦理委员会成员，受委托为自动驾�
 
 SITUATION: 中文在上：某L4自动驾驶方案写入致命避险规则：当刹车无法避免碰撞时，车辆自动选择牺牲乘客一人，以保住前方5名行人。厂商称这是功利最优，批评者称这是用代码预先杀人。真实判例参照：德国联邦宪法法院2006年击落劫机法判决，BVerfG Luftsicherheitsgesetz 2006，明确禁止为救多数人而击落被劫持客机，理由是人的尊严不可量化，不可权衡。请在该判例约束下评估上述算法。德语在下：Situation ist ein autonomer Notfall-Algorithmus, der den Passagier opfert, um fuenf Passanten zu retten, zu pruefen unter GG Art.1 und BVerfG Luftsicherheitsgesetz 2006.
 
-AUFGABE (beurteilen, AFB III): 中文在上：请在800字内完成有判决的评估。第一，用Bentham七要素重建厂商的功利辩护。第二，用Mill的质的区分加伤害原则审查该辩护。第三，把功利结论与Kant目的公式和GG Art.1人的尊严不可侵犯对读，结合BVerfG Luftsicherheitsgesetz 2006判例给出明确取舍：是否允许预先编程的主动牺牲。若允许，写出严格条件。若禁止，写出替代规则，如随机化避险，最大制动加警告，不做人格间权衡。德语任务句在下：Beurteile den Algorithmus aus utilitaristischer und kantischer Sicht unter GG Art.1 und begruende mit BVerfG Luftsicherheitsgesetz 2006, ob eine Vorab-Opferung programmiert werden darf.
+AUFGABE (beurteilen, [AFB III]): Beurteile den Algorithmus aus utilitaristischer und kantischer Sicht unter GG Art.1 und begruende mit BVerfG Luftsicherheitsgesetz 2006, ob eine Vorab-Opferung programmiert werden darf. 中文说明：请在800字内完成有判决的评估。第一，用Bentham七要素重建厂商的功利辩护。第二，用Mill的质的区分加伤害原则审查该辩护。第三，把功利结论与Kant目的公式和GG Art.1对读并给出明确取舍：若允许写出严格条件，若禁止写出替代规则。
 
 BEWERTUNGSRUBRIK, 三点给分：
 
@@ -113,8 +123,20 @@ BEWERTUNGSRUBRIK, 三点给分：
 2. Analyse (35 Prozent): 中文：分离计算优势与正当性审查，说明数量倾斜为何在尊严面前止步，引用天平两步法。德语：Trennung von quantitativer Neigung und qualitativer Grenze mit ethik-waage.
 3. Beurteilung (35 Prozent): 中文：明确判决并衔接GG Art.1和BVerfG 2006，给出可执行替代规则，不回避两难。德语：Eigenes Urteil mit GG Art.1 und BVerfG 2006 plus umsetzbarer Alternativregel.
 
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Bentham-Rekonstruktion mit sieben Kalkuel-Faktoren | 5 NP | Verkuerzte Drei-Faktor-Rechnung mit Ausdehnung als Alternativweg
+Mill-Pruefung mit Qualitaet und Schadensprinzip | 5 NP | Reine Kant-Gegenprobe mit Zweckformel als Alternativweg
+Urteil mit GG Art.1 und BVerfG 2006 plus Alternativregel | 5 NP | Offene Abwaegung mit randomisierter Rettung als Alternativweg
+
 MUSTER-KLAUSURSATZ als 15 NP Referenz, 中文导读在上，德语满分句在引用块内：
 
 中文导读：下段为15分档范文句，可直接背诵改造。它同时完成功利重建，Mill限制，Kant对读和宪法落地，评卷人按四层给分。
 
 > Der Hersteller-Algorithmus maximiert zwar den Nettonutzen nach Bentham, indem Intensitaet, Dauer und Ausdehnung von fuenf geretteten Leben die Unlust des einen Opfers ueberwiegen, doch diese Rechnung scheitert an Mills Schadensprinzip und an Kants Zweckformel, weil die Vorab-Programmierung einer aktiven Toetung qualitative Wuerde in blosse Quantitaet verwandelt; im Licht von GG Art.1 und BVerfG Luftsicherheitsgesetz 2006, das die Abwaegung von Leben gegen Leben verbietet, ist daher keine gezielte Opferung zu programmieren, sondern maximale Bremsung mit Warnung ohne interpersonelle Verrechnung zu fordern.
+
+KERNSATZ (auswendig):
+- Kernsatz: `Aus ersten Prinzipien folgt die Kette von Handlungsalternativen zum Nettonutzen, wobei Bentham die Lust nach Quantitaet misst und Mill Qualitaet und Schadensprinzip als Korrektiv einbaut.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = Kette von Handlungsalternativen zum Nettonutzen | Mechanismus = Bentham-Messung nach Quantitaet plus Mill-Korrektiv durch Qualitaet und Schadensprinzip | Urteil = Bewertung aus ersten Prinzipien
+- Selbsttest: Aus ersten Prinzipien folgt die Kette von Handlungsalternativen zum Nettonutzen, wobei Bentham die Lust nach ___ misst und Mill Qualitaet und Schadensprinzip als Korrektiv einbaut.

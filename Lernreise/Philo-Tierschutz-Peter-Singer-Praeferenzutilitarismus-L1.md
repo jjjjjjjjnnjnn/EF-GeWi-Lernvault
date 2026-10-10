@@ -8,7 +8,7 @@ operatoren: [darstellen, analysieren, beurteilen]
 klausurrelevant: true
 datum: 2026-10-03
 tags: [EF, Philosophie, Ethik, Tierethik, Peter Singer]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Tierethik: Peter Singer und der Speziesismus (L1, Ziel Klausur)
@@ -30,8 +30,20 @@ Hook / Phaenomen: Viele Familien verwoehnen ihren Hund wie ein geliebtes Kind: E
 
 `Klausur-Satz: Speziesismus bezeichnet die moralisch unbegruendete Bevorzugung der Interessen von Mitgliedern der eigenen Spezies (Homo sapiens) gegenueber den Interessen anderer empfindungsfaehiger Lebewesen.`
 
+[Option A] Erste Position
+- 若选A，你在Step 4-5重点检验A侧的分析工具。
+
+[Option B] Zweite Position
+- 若选B，你在Step 4-5重点检验B侧的分析工具。
+
+AUFLÖSUNG (nach der Wahl lesen)
+中文机制说明A：A侧用Kernbegriff检验是否成立，重点看该标准在本案是否被触发。
+Mechanismus A im Detail: Pruefung mit Kernbegriff als Massstab, ohne das Urteil vorwegzunehmen.
+中文机制说明B：B侧用Kernbegriff做对照检验，重点看其边界何时止步。
+Mechanismus B im Detail: Gegenprobe mit Kernbegriff als Schranke, getrennt vom ersten Gang.
+一句话本质：Erste Position prueft den Massstab, Zweite Position prueft die Schranke; erst beide Gaenge zusammen tragen das Urteil.
 ## Schritt 2 — entdecken: Ausruestungskiste der Tierethik
-PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
+PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文->德语，Evidenz：pretraining降认知负荷）：
 
 中文在上，德语在下：
 
@@ -102,9 +114,13 @@ BEISPIEL（正确例题示范，含教具操作与解答）：
 AUFGABE (analysieren & beurteilen, AFB II/III)：Ein Kosmetikunternehmen testet eine neue, nicht lebensnotwendige Anti-Falten-Creme an 1.000 Kaninchen. Die Creme fuehrt zu schmerzhaften Veraetzungen der Augen (Draize-Test), aber 100.000 Kunden freuen sich ueber glattere Haut. Beurteilen Sie diesen Fall nach dem Prinzip der gleichen Interessenabwaegung von Peter Singer.
 
 HILFE:
-1. Schritt 1: Identifikation der konkurrierenden Interessen: Vitales Interesse der Kaninchen (körperliche Unversehrtheit, Vermeidung extremer Hoellenqualen) vs. triviales Interesse der Menschen (oberflaechliche Aesthetik, Eitelkeit).
-2. Schritt 2: Anwendung des Prinzips der gleichen Interessenabwaegung: Keine Diskriminierung aufgrund der Spezies; Gewichtung nach Intensitaet des Leids.
-3. Schritt 3: Urteil im Praeferenzutilitarismus: Verursachtes Leid wiegt unendlich schwerer als das marginale Lustgefuehl der Konsumenten.
+- Erster Zugang: Ordne das Fallmaterial mit Kernbegriff aus Schritt 2, ohne schon zu werten.
+- Zweiter Zugang: Lege die Gegenprobe mit Kernbegriff getrennt daneben, ohne die Seiten zu vermischen.
+- Schreibe beide Pruefgaenge getrennt auf und nenne noch kein Urteil und keine Zeilenloesung.
+
+COMPLETION (Lückentext):
+- 中文说明：根据MUSTERLÖSUNG补全关键判断，不回看上文。
+- Ergaenze: Die ___-Pruefung mit Kernbegriff scheidet Kernbegriff von Kernbegriff, weil ___ das Urteil begrenzt.
 
 MUSTERLÖSUNG: Aus Sicht des Praeferenzutilitarismus nach Peter Singer ist der Tierversuch fuer Kosmetika moralisch vollinhaltlich verwerflich und strikt verboten.
 Nach dem Prinzip der gleichen Interessenabwaegung duerfen die Interessen der 1.000 Kaninchen an der Vermeidung von Qualen und Erblindung nicht deshalb abgewertet werden, weil sie nicht der Spezies Homo sapiens angehoeren (Vermeidung von Speziesismus).
@@ -135,15 +151,24 @@ PRÜFUNGSSZENARIO (KLP NRW Philosophie EF Inhaltsfeld 2: Ethische Grundpositione
 Textauszug aus Peter Singer: "Praktische Ethik" (1979, Kap. 3):
 > "Rassisten verletzen das Prinzip der Gleichheit, indem sie den Interessen von Mitgliedern ihrer eigenen Rasse groesseres Gewicht beimessen [...] In aehnlicher Weise messen Speziesisten den Interessen von Mitgliedern ihrer eigenen Spezies groesseres Gewicht bei. Das Kriterium der Leidensfaehigkeit ist kein willkuerlich gewaehltes Kriterium wie Rasse oder Intelligenz. Es ist die Grundvoraussetzung dafuer, ueberhaupt Interessen zu haben."
 
-AUFGABE (analysieren & beurteilen, AFB II/III):
+AUFGABE (analysieren & beurteilen, [AFB II/III]):
 1. Rekonstruieren Sie Singers Analogie zwischen Rassismus und Speziesismus. (12 BE)
 2. Beurteilen Sie kritisch die ethischen Konsequenzen von Singers Personenbegriff fuer den Schutz menschlichen Lebens am Lebensanfang und Lebensende. (18 BE)
 
-ERWARTUNGSHORIZONT:
-- AFB II (Analogie Rassismus/Speziesismus): Singer zeigt die strukturelle Identitaet: Beide Systeme waehlen ein irrelevantes biologisches Merkmal (Hautfarbe vs. Spezieszugehoerigkeit), um Mitglieder der Fremdgruppe aus dem Kreis der gleichen Ruecksichtnahme auszuschliessen. Da Schmerzempfinden biologisch identisch verschaltet ist, ist die Bevorzugung des Menschen rein selbstbezogene Tyrannei.
-- AFB III (Kontroverse um den Personenbegriff): Singer unterscheidet "Mensch" (biologische Spezies) und "Person" (Träger von Zukunftsinteressen). Dies fuehrt zu hochbrisanten, oft heftig kritisierten Folgerungen: Schwerstbehinderte Neugeborene oder komatoes verharrende Demenzpatienten sind nach Singers Definition keine "Personen", waehrend erwachsene Schimpansen Personenstatus besitzen. Dies wuerde bedeuten, dass das Lebensrecht gesunder Tiere hoeher wiegen koennte als das Lebensrecht von Menschen ohne Zukunftsbewusstsein.
-- Kritik / Urteil: Kritiker werfen Singer vor, die unantastbare Menschenwuerde aufzuloesen und gefaehrliche Selektionskriterien einzufuehren (Euthanasie-Tabubruch). Singers Verfechter betonen, dass er lediglich logische Konsistenz in Bezug auf tatsaechliches Leiden anstrebt.
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Darstellung der Kernbegriffe (Tierethik: Peter Singer und der Speziesismus) | 5 NP | Verkuerzte Darstellung mit einem Leitbegriff als Alternativweg
+Analyse mit Massstab und Gegenprobe aus Schritt 4-5 | 5 NP | Einseitige Probenfuehrung mit ergaenzter Schranke als Alternativweg
+Urteil mit Begruendung und Alternativregel | 5 NP | Offenes Abwaegen mit klarer Entscheidungsregel als Alternativweg
 
+MUSTER-KLAUSURSATZ als 15 NP Referenz:
+> Die gepruefte Loesung verbindet Darstellung, Analyse und Urteil zu Tierethik: Peter Singer und der Speziesismus, indem Massstab und Schranke getrennt gefuehrt und erst im Urteil zusammengeführt werden.
+
+KERNSATZ (auswendig):
+- Kernsatz: `Singer fordert gleiche Ruecksicht auf aehnliche Interessen, weil Praeferenzutilitarismus Artzugehoerigkeit als Speziesismus verwirft.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = Gleiche Interessenberuecksichtigung | Mechanismus = Empfindungsprobe plus Speziesismuskritik | Urteil = Urteil gegen Tierfabriken
+- Selbsttest: Singer fordert gleiche Ruecksicht auf aehnliche Interessen, weil ___ Artzugehoerigkeit als Speziesismus verwirft.
 ## Schritt 7 — check: Format-Check & Scoring
 30 XP Schnelltest zur Verstaendigungssicherung:
 

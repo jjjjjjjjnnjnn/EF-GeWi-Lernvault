@@ -8,7 +8,7 @@ operatoren: [darstellen, vergleichen, beurteilen]
 klausurrelevant: true
 datum: 2026-09-25
 tags: [EF, Philosophie, Anthropologie]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Die Sonderstellung des Menschen bei Gehlen und Scheler (L1, Ziel Klausur)
@@ -20,8 +20,8 @@ version: Lesson-v3
 ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
 1. 中文：能说清哲学人类学的核心追问——人与动物的界限究竟是渐进差异（gradueller Unterschied）还是本质鸿沟（kategorialer Unterschied）。
-2. 中文：能重构格伦的"匮乏存在者"论证（器官非特化 → 本能贫乏 → 必须靠行动与文化制度补偿）。
-3. 中文：能重构舍勒的"世界开放性"论证（精神 → 对象化 → 超越环境束缚），并比较两人论证路径的根本异同。
+2. 中文：能重构格伦的"匮乏存在者"论证（器官非特化 -> 本能贫乏 -> 必须靠行动与文化制度补偿）。
+3. 中文：能重构舍勒的"世界开放性"论证（精神 -> 对象化 -> 超越环境束缚），并比较两人论证路径的根本异同。
 
 Hook中文法庭悬念（Tribunal Fall 01：被告智人文明）：
 
@@ -31,9 +31,21 @@ Phaenomen-Satz (DE): Der Anklaeger nennt den Menschen ein maengelbehaftetes Tier
 
 Klausur-Satz: `Die philosophische Anthropologie fragt, ob sich der Mensch vom Tier nur graduell oder kategorial unterscheidet und worin seine besondere Stellung begruendet liegt.`
 
+[Option A] Erste Position
+- 若选A，你在Step 4-5重点检验A侧的分析工具。
+
+[Option B] Zweite Position
+- 若选B，你在Step 4-5重点检验B侧的分析工具。
+
+AUFLÖSUNG (nach der Wahl lesen)
+中文机制说明A：A侧用Sonderstellung des Menschen检验是否成立，重点看该标准在本案是否被触发。
+Mechanismus A im Detail: Pruefung mit Sonderstellung des Menschen als Massstab, ohne das Urteil vorwegzunehmen.
+中文机制说明B：B侧用Maengelwesen做对照检验，重点看其边界何时止步。
+Mechanismus B im Detail: Gegenprobe mit Maengelwesen als Schranke, getrennt vom ersten Gang.
+一句话本质：Erste Position prueft den Massstab, Zweite Position prueft die Schranke; erst beide Gaenge zusammen tragen das Urteil.
 ## Schritt 2 — entdecken: Waffenarsenal in fünf Akten: Mangelwesen gegen Geist
 
-PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语）：
+PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文->德语）：
 
 中文在上，德语在下（三层：定义 + 机制 + 考场提示）：
 
@@ -51,7 +63,7 @@ ENTDECKEN（1概念 + 1文字图解）：
 
 中文：这个专题只有一问——人凭什么特殊？格伦走自然主义路线：人天生少装备，是匮乏存在者，正因为匮乏，人被迫行动、造工具、立制度，用文化补偿生物短板。舍勒走形而上学路线：人之所以特殊不在身体，而在精神——动物被锁死在特定环境里，人却能把事物对象化，从而拥有世界开放性，甚至能对本能说不。比较抓住主线：格伦是缺陷到文化由下而上，舍勒是精神到超越由上而下。
 
-论证传导链（无公式，用前提→结论链）：
+论证传导链（无公式，用前提->结论链）：
 
 Praemisse 1 (DE): Der Mensch ist organisch mittellos und ohne feste Instinkte in einer offenen Welt. Praemisse 2 (DE): Was ohne Programme ueberleben muss, braucht Kompensation durch Handeln oder Transzendenz durch Geist. Konklusion (DE): Also fuehrt Gehlen Mangel zu Kultur und Scheler Geist zu Weltoffenheit, beide begruenden die Sonderstellung, aber auf entgegengesetzten Wegen.
 
@@ -115,11 +127,20 @@ HILFE（中德双语步骤）：
 3. 中文：第3步收文化即第二自然，并以舍勒超越收尾，关键词：Kompensation.
    Schritt 3 (DE): Kultur als zweite Natur fassen und mit Z.8 bis Z.15 zur Weltoffenheit oeffnen.
 
+
+COMPLETION (Lückentext):
+- 中文说明：根据MUSTERLÖSUNG补全关键判断，不回看上文。
+- Ergaenze: Die ___-Pruefung mit Sonderstellung des Menschen scheidet Sonderstellung des Menschen von Maengelwesen, weil ___ das Urteil begrenzt.
+
 MUSTERLOESUNG：中文：格伦从生物学短板出发：人无利器、无厚皮、无可靠本能，本是自然中的弱者；但非特化恰恰逼人以有计划的行动求生，造工具、造语言、立制度，制度减负并稳定行为；文化不是点缀，而是补偿器官贫困的生存必需。
 MUSTERLOESUNG (DE): Gehlen geht vom Maengelwesen aus und zeigt mit Z.1 bis Z.7, dass Handeln Werkzeuge, Sprache und Institutionen schafft, die entlasten und stabilisieren. Scheler ergaenzt mit Z.8 bis Z.11, dass Geist die Triebbindung bricht und Weltoffenheit eroefnet.
 
 Klausur-Satz: `Am Primaertext zeigt sich: Z.1 bis Z.7 belegen die Kompensation durch Kultur, Z.8 bis Z.15 belegen die Transzendenz durch Geist.`
 
+HILFE:
+- Erster Zugang: Ordne das Fallmaterial mit Sonderstellung des Menschen aus Schritt 2, ohne schon zu werten.
+- Zweiter Zugang: Lege die Gegenprobe mit Maengelwesen getrennt daneben, ohne die Seiten zu vermischen.
+- Schreibe beide Pruefgaenge getrennt auf und nenne noch kein Urteil und keine Zeilenloesung.
 ## Schritt 5 — ausprobieren: Konfrontation der Pruefwege: Kantische Wuerde gegen utilitaristische Leidensbilanz
 
 VERGLEICH辨别实验（双向辨析：义务眼 vs. 功利眼，投射到人类学案件）：
@@ -132,7 +153,7 @@ Weg B (Utilitarismus, Leid und Gesamtwohl)：机制为受影响者、苦乐、�
 AUFGABE A：Ein Zirkus dressiert Affen mit Stromstoessen, weil das Publikum es lustig finde. Pruefen Sie mit Weg A Maxime und Selbstzweckformel und formulieren Sie ein Urteil.
 AUFGABE B：Eine Schule will ihr Tierlabor schliessen und das Geld in Pausenhofgestaltung stecken. Pruefen Sie mit Weg B Folgenbilanz und Gesamtwohl und formulieren Sie ein Urteil.
 
-HILFE: A 问工具化与尊严 → 程序 Weg A。B 问总体苦乐 → 程序 Weg B。【选程序：见 als Mittel / Wuerde 选康德；见 Leid / Gesamtwohl 选功利。】
+HILFE: A 问工具化与尊严 -> 程序 Weg A。B 问总体苦乐 -> 程序 Weg B。【选程序：见 als Mittel / Wuerde 选康德；见 Leid / Gesamtwohl 选功利。】
 
 ANTWORT: A erfordert Weg A: Die Dressur-Maxime degradiert Affen zu blossen Mitteln fremder Unterhaltung und ist als allgemeines Gesetz nicht wollbar, daher pflichtwidrig. B erfordert Weg B: Die Schliessung beendet Laborleid und mehrt Pausenfreude vieler, daher bei gleichem Forschungsnutzen geboten.
 
@@ -163,11 +184,26 @@ Klausur-Satz: `Beide Denker bejahen eine Sonderstellung des Menschen, begruenden
 
 ROLLE: Du bist Chefverteidiger der Homo-sapiens-Zivilisation vor dem Tribunal Mensch gegen Tier und sollst die Sonderstellung des Menschen verteidigen.
 SITUATION: Der KI-Anklaeger bestreitet jede Sonderstellung und verweist auf die Leidensfaehigkeit von Tieren und die biologische Unfertigkeit des Menschen. Beurteile in einer zusammenhaengenden Stellungnahme (ca. 150 Woerter), ob eine moralische Sonderstellung haltbar ist, und beziehe Gehlen, Scheler und die tierethische Kritik ein.
-AUFGABE (AFB III): Verfasse eine zusammenhaengende Darstellung von ca. 150 Woertern mit Kriterium, Anwendung und Urteil.
+AUFGABE ([AFB III]): Verfasse eine zusammenhaengende Darstellung von ca. 150 Woertern mit Kriterium, Anwendung und Urteil.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Darstellung der Kernbegriffe (Die Sonderstellung des Menschen bei Gehlen und S) | 5 NP | Verkuerzte Darstellung mit einem Leitbegriff als Alternativweg
+Analyse mit Massstab und Gegenprobe aus Schritt 4-5 | 5 NP | Einseitige Probenfuehrung mit ergaenzter Schranke als Alternativweg
+Urteil mit Begruendung und Alternativregel | 5 NP | Offenes Abwaegen mit klarer Entscheidungsregel als Alternativweg
+
 RUBRIC (30 XP): Rekonstruktion einer Position zur Sonderstellung (5 XP) | Vergleichende Gegenueberstellung Gehlen vs. Scheler mit klaren Dimensionen (10 XP) | Einbezug der tierethischen Kritik am Anthropozentrismus (10 XP) | Kriteriengeleitetes Urteil mit Abwaegung von Vernunft und Leidensfaehigkeit (5 XP).
 
 Klausur-Satz: `Im Transfer gilt: Erst Positionen mit Textbeleg rekonstruieren, dann an Erklaerungskraft vergleichen und schliesslich Wuerde gegen Leidensfaehigkeit abwaegen.`
 
+MUSTER-KLAUSURSATZ als 15 NP Referenz:
+> Die gepruefte Loesung verbindet Darstellung, Analyse und Urteil zu Die Sonderstellung des Menschen bei Gehlen und S, indem Massstab und Schranke getrennt gefuehrt und erst im Urteil zusammengeführt werden.
+
+KERNSATZ (auswendig):
+- Kernsatz: `Die Sonderstellung zeigt sich in Weltoffenheit, weil der Mensch Antriebe durch Sprache und Institutionen hemmt und formt.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = Sonderstellung in Weltoffenheit | Mechanismus = Hemmung und Formung durch Sprache und Institutionen | Urteil = Urteil aus Entlastung und Normbindung
+- Selbsttest: Die ___ zeigt sich in Weltoffenheit, weil der Mensch Antriebe durch Sprache und Institutionen hemmt und formt.
 ## Schritt 8 — reflexion: Freispruch mit Auflagen: Was die Verteidigung wirklich bewies
 
 TAKEAWAY 1盒（核心总结）：
