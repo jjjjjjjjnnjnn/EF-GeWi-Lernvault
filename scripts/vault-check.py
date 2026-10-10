@@ -121,6 +121,15 @@ def check_reise():
         for k in ("level", "ziel", "xp"):
             if k not in (meta or {}):
                 WARN.append(f"Lernreise/{p.name}: missing '{k}'")
+        if meta.get("version") == "Enterprise-v4":
+            if len(steps) != 5:
+                ERR.append(f"Lernreise/{p.name}: Enterprise-v4 must have exactly 5 Schritte (found {len(steps)})")
+            if re.search(r"[\U00010000-\U0010ffff]|[\u2600-\u27BF]", body):
+                ERR.append(f"Lernreise/{p.name}: Enterprise-v4 must contain 0 emoji")
+            if re.search(r"[\u2190-\u2199\u21D0-\u21D9]", body):
+                ERR.append(f"Lernreise/{p.name}: Enterprise-v4 must use ASCII '->' instead of unicode arrows")
+            if not re.search(r"\[Werkzeug:\s*[a-zA-Z0-9_\-]+\]", body):
+                ERR.append(f"Lernreise/{p.name}: Enterprise-v4 must contain [Werkzeug: <id>] tag")
         n += 1
     return n
 

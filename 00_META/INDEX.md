@@ -298,6 +298,7 @@
 - [2026-10-10-phase-5-1-curriculum-and-experiment-first-quest-architecture](Journal/2026-10-10-phase-5-1-curriculum-and-experiment-first-quest-architecture.md) — **Phase 5.1 教学与实验前置重塑：新知课程与互动实验前置于考场闯关**：解决刷题死板与缺乏知识感痛点+两段式关卡架构（阶段一新知精讲与动手微世界先行、阶段二考场排雷与15NP金句闯关）+89套件682单测/tsc/vault-check全绿
 - [2026-10-10-study-mate-pedagogy-and-embedded-wissensnotiz](Journal/2026-10-10-study-mate-pedagogy-and-embedded-wissensnotiz.md) — **Study-Mate 趣味教学法与常驻搭载考纲知识笔记落地**：融合角色战役剧情(Story Hook)+费曼大白话+辩证双轨(两副眼镜)+趣味历史轶事+三维自适应调频探针([Einfacher]/[Vertiefung]/[Check])+常驻搭载知识笔记抽屉([Notiz]与一键小抄复制)+89套件684单测/tsc/vault-check全绿
 - [2026-10-10-curriculum-pedagogy-rework-and-archetype-templates](Journal/2026-10-10-curriculum-pedagogy-rework-and-archetype-templates.md) — **课程教学架构性重塑与四大分科教学模板总纲**：根治“内容稀碎/假大白话/学不会”硬伤+对标Anthropic/Brilliant/OpenAI/Study-Mate+制定社科/哲学/文学/理科四大分科黄金教学模板+发布外部AI生产总纲与40门核心课表矩阵+89套件686单测/tsc/vault-check全绿
+- [2026-10-10-external-ai-batch-1-delivery](Journal/2026-10-10-external-ai-batch-1-delivery.md) — **第一波次外部AI课程生产交付（5门Enterprise-v4）**：SoWi租金管制+物理匀加速+德语强盗+微积分面积+哲学功利主义全量合入，reisen扩充至361篇，v4严格机检+App兼容性闭环验证通过
 - 约定：文件名 `YYYY-MM-DD-<thema>.md`，头部frontmatter（`fach`可空，`tags: [EF, Meta]`）。
 
 

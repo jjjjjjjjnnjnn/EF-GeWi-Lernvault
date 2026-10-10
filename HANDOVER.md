@@ -21,9 +21,20 @@
 - **TeachingStudio 教学工坊与多邻国上课河流全景规范**：[`00_META/TEACHING-STUDIO-SPECIFICATION.md`](00_META/TEACHING-STUDIO-SPECIFICATION.md)（**商业级教学板块设计、拆书排程、4大通用SVG微世界、5步交互上课流与通关奖赏闭环全景规范，外部 AI 对接与扩展必读**）。
 - 目标：德国 NRW Gymnasium EF 十科笔试/口试提分，中德双语，**完全离线**。
 - **内容铁律**：所有题目材料只能来自用户自己的笔记原文 —— **超纲率 = 0**。
-- **当前规模**：笔记 **418** · Anki 卡片 **1942** · 互动课程 **356 篇**（`Lernreise/`，十科全覆盖，含 Lesson-v3 全量高阶微课与多学科学术解剖台）· 术语表 **946 行** · 索引链接 **373 条** · 十科图谱 712+ 节点 · 89 套件 686 项全量测试 100% 绿灯 · 考纲体系（NRW 十科 + 中国理科四科 + 中德映射）· 本地真题池 **760 份 PDF (2024–2026 全科 Klausuren + Vorgaben)**。
+- **当前规模**：笔记 **419** · Anki 卡片 **1942** · 互动课程 **361 篇**（`Lernreise/`，十科全覆盖，含 Lesson-v3 与 Enterprise-v4 全量高阶微课与多学科学术解剖台）· 术语表 **946 行** · 索引链接 **378 条** · 十科图谱 712+ 节点 · 90 套件 692 项全量测试 100% 绿灯 · 考纲体系（NRW 十科 + 中国理科四科 + 中德映射）· 本地真题池 **760 份 PDF (2024–2026 全科 Klausuren + Vorgaben)**。
 
 ---
+
+- ✅ **第一波次 5 门 Enterprise-v4 课程交付与双版本兼容闭环（2026-10-10 交付）**：
+  - **首批 5 门全量合入**：`SoWi-Mietendeckel-und-Preisinterventionen-L1.md`、`Physik-Gleichmaessig-beschleunigte-Bewegung-L1.md`、`Deutsch-Schiller-Die-Raeuber-Figurenkonflikt-L1.md`、`Mathe-Integralrechnung-als-Flaecheninhaltsrechnung-L1.md`、`Philosophie-Utilitarismus-Bentham-Mill-L1.md` 全部通过审查并按单科独立 commit；
+  - **版本共存与解析加固 (`src/reise.ts` & `Reise.tsx`)**：
+    - `resolveStepTitle` 改为以 `typ` 优先，杜绝 5 步课 Step 2/4/5 被误命名为旧版标题；
+    - `parseReiseFile` 为理科/免除 ROLLE 场景提供智能三段式 Rubric 兜底，防止打分复选框锁死；
+    - `Reise.tsx` 支持动态 `minRubrics` 门禁与条件渲染 `Rolle`，消除空标签与无法通关死锁；
+    - 新增 `Reise.enterpriseV4.test.tsx` 6 项自动化测试，100% 验证 5 门新课与旧版 8 步课无缝共存；
+  - **vault-check 自动化红线强化 (`scripts/vault-check.py`)**：为 `Enterprise-v4` 注入自动机检（必须恰好 5 步、0 emoji、必须 ASCII `->` 箭头、必须有 `[Werkzeug: ...]` 标签）；
+  - **发卷规则与清单纠偏 (`EXTERNAL-AI-COURSE-PRODUCTION-PROMPT.md`)**：强制两行带方括号 `[Werkzeug: <id>]` 与 `[ Option A ]`，标明理科 Step 5 免除 ROLLE 走 15 NP Dreischritt；
+  - **全量门禁全绿**：`python scripts/vault-check.py` 419 笔记 1942 词 361 课 PASS；90 套件 692 项单测全绿；tsc 0 报错。
 
 - ✅ **Phase 5.3 课程教学架构性重塑与四大分科黄金教学模板总纲（2026-10-10 交付）**：
   - **核心痛点解决**：直面“课程内容稀碎、极差、学不会”的严重教学法硬伤，彻底破除假大白话套话（Pseudo-Feynman）、模板同义反复、虚假RPG空洞剧情与削足适履单一模式；

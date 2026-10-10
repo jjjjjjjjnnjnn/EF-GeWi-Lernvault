@@ -674,6 +674,10 @@ Klausur-Satz: `Beim Grenzübergang $h \to 0$ geht die Sekante durch $P(x_0 \mid 
    - ## Schritt 3 — entdecken (Kausalkette & KLP-Begriffsmatrix)
    - ## Schritt 4 — check (Fehlvorstellung & Anti-Patterns)
    - ## Schritt 5 — szenario (15 NP Klausur-Transfer, Urteilsbildung AFB III)
+7. **语法与标签格式强制约束（预防 Subagent 共性偏差）**：
+   - **教具标签**：必须逐字严格写作 `[Werkzeug: <id>]`（例如 `[Werkzeug: markt-sim]`），严禁漏掉方括号或写作 `Werkzeug ID: xxx`；
+   - **选项标号**：必须逐字严格写作 `- [ Option A ]` 与 `- [ Option B ]`（必须带方括号与空格），理科也必须用此标号，严禁写成 `预测 A`、`选项 A` 或无标号文本；
+   - **Step 5 角色与题解规范**：模板 A/B/C 强制要求 `ROLLE: ...` 与 `RUBRIC: ...`；模板 D（理科）免除 `ROLLE`，但必须严格包含 `MUSTERLÖSUNG (15 NP Dreischritt: Schritt 1: Ansatz -> Schritt 2: Rechnung -> Schritt 3: Interpretation)` 并给出三步推导要点。
 
 请严格参照《master specification》中对应模板的格式与范文，直接输出完整的 Markdown 内容，不要带有任何多余的寒暄或包装性文本。
 ```
@@ -687,8 +691,10 @@ Klausur-Satz: `Beim Grenzübergang $h \to 0$ geht die Sekante durch $P(x_0 \mid 
 - [ ] **路径合规**：保存在 `Lernreise/` 根目录下，文件名为 `<Fach>-<Thema-Kebab-Case>-L1.md`；
 - [ ] **无禁用字符**：纯英文 kebab-case，禁用空格，禁用变音符号（ä/ö/ü 必须写作 ae/oe/ue）；
 - [ ] **Frontmatter 完整**：包含 `fach`, `thema`, `level: 1`, `ziel: Klausur`, `xp: 100`, `operatoren`, `tags`, `version: Enterprise-v4`；
+- [ ] **标签格式严格**：头部与第 2 步必须逐字包含 `[Werkzeug: <id>]`（带方括号）；选项必须严格为 `[ Option A ]` / `[ Option B ]`；
 - [ ] **五步完整闭环**：包含 `## Schritt 1` 至 `## Schritt 5` 且小标题与教具标签格式完全符合模板；
+- [ ] **Step 5 角色/三步法**：模板 A/B/C 强制包含 `ROLLE` 与 `RUBRIC`；模板 D 免除 `ROLLE`，强制包含 `15 NP Dreischritt` 步骤；
 - [ ] **绝无假费曼空话**：没有出现“齿轮调节系统”、“宏大社会政治体系”等假大空抽象比喻；
-- [ ] **纯黑白纸墨风 (Tufte)**：全局 0 emoji，所有箭头一律使用 ASCII `->`；
+- [ ] **纯黑白纸墨风 (Tufte)**：全局 0 emoji，所有箭头一律使用 ASCII `->`（严禁出现 unicode 箭头如 →、⇒、←）；
 - [ ] **公式排版**：所有数学与物理表达式均被 `$ ... $` 或 `$$ ... $$` 严密包裹；
 - [ ] **仓库自动化校验通过**：运行 `python scripts/vault-check.py`，必须输出 `PASS`，0 badnames，0 badglossar。
