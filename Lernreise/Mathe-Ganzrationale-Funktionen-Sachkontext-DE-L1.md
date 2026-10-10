@@ -8,7 +8,7 @@ operatoren: [berechnen, eroertern]
 klausurrelevant: true
 datum: 2026-09-26
 tags: [EF, Mathe, Analysis]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Ganzrationale Funktionen im Sachkontext (L1, Ziel Klausur)
@@ -20,13 +20,25 @@ ZIELE (drei messbare Ziele dieser Lektion):
 
 1. Du kannst $E(x) = 12x$, $K(x) = 0{,}5x^3 - 6x^2 + 26x + 8$ und $G(x) = E(x) - K(x) = -0{,}5x^3 + 6x^2 - 14x - 8$ auf $D = [0, 12]$ mit $x$ in ME und Werten in GE aufstellen.
 2. Du kannst Break-even als $G(x) = 0$ zu $x = 4$ und $x \approx 8{,}49$, Maximalgewinn als Hochpunkt bei $x \approx 6{,}58$ mit $G \approx 17{,}24$ GE und staerksten Anstieg als Wendepunkt bei $x = 4$ bestimmen.
-3. Du kannst die Gewinnzone $4$ bis $8{,}49$ ME eroertern und jeden Wert mit $D$, ME und GE im Antwortsatz deuten (AFB II/III).
+3. Du kannst die Gewinnzone $4$ bis $8{,}49$ ME eroertern und jeden Wert mit $D$, ME und GE im Antwortsatz deuten ([AFB II/III]).
 
 ###
 
 ### Hook / Phaenomen
 
 Hook / Phaenomen: Die Kosten steigen kurvig, der Preis bleibt linear: Irgendwo dazwischen liegt die Gewinnzone. Die **Gewinnfunktion** zieht Kosten von Erloes ab, der **Break-even-Punkt** markiert die schwarze Null. Erst das **Gewinnmaximum** sagt, welche Menge wirklich optimal ist.
+
+预测 [Option A]：Der grobe Sachkontextwert aus wenigen Teilwerten genuegt bereits, weitere Verfeinerung aendert nichts。若选A，你在Step 2用工具检验该方向的变化。
+
+预测 [Option B]：Erst fortgesetzte Verfeinerung laesst den Sachkontextwert gegen den exakten Wert laufen。若选B，你在Step 2用工具检验该方向的变化。
+
+AUFLÖSUNG (nach der Wahl lesen)
+
+以下解析在选择后阅读，含原两项机制分析全文：
+- Mechanismus A：Hook / Phaenomen: Die Kosten steigen kurvig, der Preis bleibt linear: Irgendwo dazwischen liegt die Gewinnzone.
+- Mechanismus B：Die **Gewinnfunktion** zieht Kosten von Erloes ab, der **Break-even-Punkt** markiert die schwarze Null.
+
+本质一句话：Im Sachkontext wird jede Nullstelle oekonomisch gelesen: Break-even ist Kostendeckung, Maximum ist optimale Menge.
 
 `Klausur-Satz: Im Sachkontext wird jede Nullstelle oekonomisch gelesen: Break-even ist Kostendeckung, Maximum ist optimale Menge.`
 
@@ -93,12 +105,16 @@ BEISPIEL (Sandbox Level mit Werkzeug):
 
 [Werkzeug: box-optimizer]
 
-AUFGABE (Levelziel, AFB II): Knacke das Gewinn-Level: Ziehe im Sandbox-Slider die Menge $x$ von $0$ bis $12$ ME und beobachte, wie $G(x)$ erst negativ startet, dann die Nullachse zweimal schneidet und dazwischen einen Hochpunkt bildet. Lies Gewinnzone und Maximum ab, berechne dann exakt Break-even-Punkte und gewinnmaximale Menge und deute jeden Wert oekonomisch mit Einheit.
+AUFGABE (Levelziel, [AFB II]): Knacke das Gewinn-Level: Ziehe im Sandbox-Slider die Menge $x$ von $0$ bis $12$ ME und beobachte, wie $G(x)$ erst negativ startet, dann die Nullachse zweimal schneidet und dazwischen einen Hochpunkt bildet. Lies Gewinnzone und Maximum ab, berechne dann exakt Break-even-Punkte und gewinnmaximale Menge und deute jeden Wert oekonomisch mit Einheit.
 
-HILFE:
-1. Bilde $G(x) = E(x)-K(x)$ auf $D = [0,12]$ ME und lies im Sandbox-Slider Nullstellen und Hochpunkt ab.
-2. Loese $G(x) = 0$ fuer die Break-even-Punkte und $G'(x) = 0$ mit $G''<0$ fuer das Maximum.
-3. Deute jeden Wert in einem Satz mit ME oder GE und nenne die Gewinnzone als Intervall.
+HILFE：
+- 从结构维度切入，先明确本步先求什么量（Zielgroesse: Antwortsatz),再选工具：用Antwortsatz判定对象归属，用Ansatz组织步骤顺序。
+- 从定理维度切入，用Ansatz与Deutungssatz的适用条件选择公式：先写条件，再代入；berechnen-Aufgaben verlangen erst die Verfahrenswahl (berechnen oder Nachweis), dann die Rechnung.
+- 从验证维度切入，用定义域/单调性/量级做方向对照，判断结果是否合理。不给出具体分点、函数值、和值与归属结论。
+
+COMPLETION (Lückentext):
+- 中文说明：根据MUSTERLÖSUNG补全关键数值，不回看上文。
+- Ergaenze: $x = ___$ und $G(x) = ___$, und es gilt $Kontrolle = ___$.
 
 MUSTERLOESUNG: Sandbox zeigt die Gewinnzone zwischen $x = 4$ ME und $x = 8{,}49$ ME mit Maximum bei $x = 6{,}58$ ME. Rechnung $G(x) = 0$ liefert die Break-even-Punkte $4$ ME und $8{,}49$ ME, $G'(x) = 0$ mit $G''<0$ liefert die gewinnmaximale Menge $6{,}58$ ME. Oekonomisch bedeutet dies: Erst ab $4$ ME entsteht Gewinn, maximal bei $6{,}58$ ME, danach faellt der Gewinn bis $8{,}49$ ME wieder auf null.
 
@@ -142,11 +158,25 @@ CHECK (drei Fragen mit Antworten):
 ## Schritt 7 — szenario: Klausurtransfer: Ganzrationale Funktionen im Sachkontext: Steilste Rampe der Welt
 ROLLE: Du bist Junior-Controller in einem Startup.
 SITUATION: $E(x) = 15x$, $K(x) = 0{,}4x^3 - 5x^2 + 28x + 15$, $D = [0, 15]$ ME, Werte in GE. Die Chefin will wissen, ab wann sich Produktion lohnt, wo der Gewinn maximal ist und ob eine Ausweitung ueber $12$ ME hinaus sinnvoll bleibt. Schreibe eine Stellungnahme (circa 150 Woerter) mit Rechnung und oekonomischer Deutung.
-AUFGABE (eroertern, AFB III): Eroertere auf Basis von Break-even, Hochpunkt und Grenze von $D$, welche Mengenintervalle zu empfehlen sind.
+AUFGABE (berechnen, [AFB III]): Berechne Eroertere auf Basis von Break-even, Hochpunkt und Grenze von $D$, welche Mengenintervalle zu empfehlen sind.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Ansatz mit Antwortsatz und berechnen-Wahl (Ganzrationale Funktionen im Sachkontext) [AFB I] | 5 NP | Skizze mit beschrifteten Achsen als Alternativweg
+Rechnung mit Ansatz und Bedingungspruefung [AFB II] | 5 NP | Numerische Kontrolle mit Taschenrechner als Alternativweg
+Deutung mit Deutungssatz plus Einheit/Randkontrolle [AFB III] | 5 NP | Geometrische Deutung der Konvergenz als Alternativweg
+
 RUBRIC (30 XP): $G(x)$ plus $D$ mit Einheiten korrekt (5 XP) | Break-even korrekt berechnet (10 XP) | Hochpunkt plus Wende korrekt (10 XP) | Eroerterung mit Empfehlung fuer Intervalle (5 XP).
 
 `Klausur-Satz: Wer Gewinnfunktion aufstellt, Break-even berechnet, Maximum bestimmt und oekonomisch deutet, erhaelt die volle Punktzahl.`
 
+> MUSTER-KLAUSURSATZ (15 NP): Jede Aussage im Sachkontext braucht Definitionsmenge D plus Einheiten ME und GE.
+
+KERNSATZ (auswendig):
+- Kernsatz: `Jede Aussage im Sachkontext braucht Definitionsmenge D plus Einheiten ME und GE.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = Jede Aussage im Sachkontext | Mechanismus = braucht Definitionsmenge D plus Einheiten | Urteil = ME und GE.
+- Selbsttest: Jede Aussage im Sachkontext braucht ___ D plus Einheiten ME und GE.
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Steilste Rampe der Welt
 TAKEAWAY (Kernbotschaft in einem Kasten):
 

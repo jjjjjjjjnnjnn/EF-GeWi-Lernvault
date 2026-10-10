@@ -8,7 +8,7 @@ operatoren: [herleiten, berechnen, beurteilen]
 klausurrelevant: true
 datum: 2026-10-03
 tags: [EF, Mathe, Analysis, Integralrechnung, Rotationskoerper, Uneigentliche-Integrale]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Rotationsvolumen und Uneigentliche Integrale (L1, Ziel Klausur)
@@ -20,16 +20,28 @@ ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
 1. 中文：能推导并熟练运用绕x轴旋转体体积积分公式（$V = \pi \cdot \int_{a}^{b} [f(x)]^2 \, dx$）。
 2. 中文：能运用极限法精准判定并计算第一类反常积分（uneigentliche Integrale mit unendlichen Grenzen $\lim_{u \to \infty} \int_{a}^{u} f(x)\,dx$）的敛散性。
-3. 中文：能在高考与模拟考综合题（AFB I/II/III）中利用微元切片法解决工程几何容器造型（如喷管、花瓶、酒杯容积）与极限悖论分析。
+3. 中文：能在高考与模拟考综合题（[AFB I/II/III]）中利用微元切片法解决工程几何容器造型（如喷管、花瓶、酒杯容积）与极限悖论分析。
 
 ### Hook / Phaenomen
 
 Stell dir ein maerchenhaftes Horn vor, das durch die Rotation des Funktionsgraphen von $f(x) = \frac{1}{x}$ ueber dem Intervall von $x = 1$ bis ins Unendliche entsteht: Torricellis Trompete oder auch Gabriels Horn genannt. Wenn du das Volumen dieses unendlich langen Trichters mit der Integralrechnung berechnest, erhaeltst du eine vollkommen endliche, exakte Zahl: Das Horn fasst genau $\pi$ Raumvolumeneinheiten Fluessigkeit. Du koenntest also etwa drei Liter Farbe hineinggiessen und das Horn waere bis an den Rand gefuellt. Willst du jedoch die Innenwand desselben Horns mit einem Pinsel anstreichen, stellst du mit Entsetzen fest, dass die Flaeche unendlich gross ist – du braeuchtest unendlich viel Farbe, um sie zu bedecken! Wie kann ein Koerper mit endlichem Innenvolumen eine unendlich grosse Aussenflaeche besitzen? Hinter diesem faszinierenden mathematischen Paradoxon stecken zwei maechtige Werkzeuge der gymnasialen Analysis: das Rotationsintegral und das uneigentliche Integral.
 
+预测 [Option A]：Der grobe Volumenwert aus wenigen Teilwerten genuegt bereits, weitere Verfeinerung aendert nichts。若选A，你在Step 2用工具检验该方向的变化。
+
+预测 [Option B]：Erst fortgesetzte Verfeinerung laesst den Volumenwert gegen den exakten Wert laufen。若选B，你在Step 2用工具检验该方向的变化。
+
+AUFLÖSUNG (nach der Wahl lesen)
+
+以下解析在选择后阅读，含原两项机制分析全文：
+- Mechanismus A：Stell dir ein maerchenhaftes Horn vor, das durch die Rotation des Funktionsgraphen von $f(x) = \frac{1}{x}$ ueber dem Intervall von $x = 1$ bis ins Unendliche entsteht: Torricellis Trompete oder auch Gabriels Horn genannt.
+- Mechanismus B：Wenn du das Volumen dieses unendlich langen Trichters mit der Integralrechnung berechnest, erhaeltst du eine vollkommen endliche, exakte Zahl: Das Horn fasst genau $\pi$ Raumvolumeneinheiten Fluessigkeit.
+
+本质一句话：Das Volumen eines Rotationskoerpers entsteht durch Aufsummieren infinitesimal duenner Zylinderscheiben mit Kreisflaechen pi mal f(x) zum Quadrat.
+
 `Klausur-Satz: Das Volumen eines Rotationskoerpers entsteht durch Aufsummieren infinitesimal duenner Zylinderscheiben mit Kreisflaechen pi mal f(x) zum Quadrat.`
 
 ## Schritt 2 — entdecken: Mathematisches Rustzeug fuer rotierende Koerper
-PRETRAINING术语盒（核心4词，先读三遍中德，合书自测中文→德语）：
+PRETRAINING术语盒（核心4词，先读三遍中德，合书自测中文->德语）：
 
 - 旋转体 — Rotationskoerper: 某一平面图形绕同一平面内的某一条直线旋转一周所形成的立体几何形体。 Ein dreidimensionaler geometrischer Koerper, der durch Rotation einerFlaeche um eine Koordinatenachse entsteht.
 - 圆盘微元法 — Zylinderscheiben-Verfahren: 将旋转体沿轴向切割为无数个厚度为dx的微元圆柱体并积分求和的方法。 Zerlegung des Koerpers in duenne Kreiszylinder mit Volumen $dV = \pi \cdot [f(x)]^2 \cdot dx$.
@@ -61,10 +73,19 @@ y ^
 
 [Werkzeug: lego]
 
-AUFGABE (herleiten & berechnen, AFB I/II):
+AUFGABE (herleiten & berechnen, [AFB I/II]):
 Gegeben ist die Funktion $f(x) = \frac{1}{x^2}$ auf dem Intervall $[1; u]$ mit $u > 1$.
 1. Leite die Formel fuer das Volumen $V(u)$ des durch Rotation um die x-Achse entstehenden Koerpers her.
 2. Berechne das Grenzvolumen $V_{\infty} = \lim_{u \to \infty} V(u)$ und pruefe die Konvergenz.
+
+HILFE：
+- 从结构维度切入，先明确本步先求什么量（Zielgroesse: koenntest),再选工具：用koenntest判定对象归属，用braeuchtest组织步骤顺序。
+- 从定理维度切入，用braeuchtest与Rotationsintegral的适用条件选择公式：先写条件，再代入；herleiten-Aufgaben verlangen erst die Verfahrenswahl (herleiten oder Nachweis), dann die Rechnung.
+- 从验证维度切入，用定义域/单调性/量级做方向对照，判断结果是否合理。不给出具体分点、函数值、和值与归属结论。
+
+COMPLETION (Lückentext):
+- 中文说明：根据MUSTERLÖSUNG补全关键数值，不回看上文。
+- Ergaenze: $[f(x)]^2 = ___$ und $V(u) = ___$, und es gilt $Kontrolle = ___$.
 
 MUSTERLOESUNG:
 1. Herleitung:
@@ -96,20 +117,28 @@ Wird nach `Rotationsvolumen um die x-Achse` gefragt, quadriere ZUERST den Funkti
 
 PRUEFUNGSSZENARIO (KLP NRW Mathematik LK Inhaltsfeld 1: Analysis):
 
-### AFB I: Stammfunktionsbestimmung
+### [AFB I]: Stammfunktionsbestimmung
 Gegeben ist die Funktion $g(x) = e^{-0{,}5x}$ auf dem Intervall $[0; b]$.
 Bestimme die Stammfunktion des quadrierten Integranden $\pi \cdot [g(x)]^2$.
 
-### AFB II: Grenzwertberechnung
+### [AFB II]: Grenzwertberechnung
 Ermittle das Grenzvolumen fuer $b \to \infty$ und beweise, dass das unendlich langgestreckte Sektkelchrohr ein endliches Volumen von genau $\pi\,\text{VE}$ aufweist.
 
-### AFB III: Geometrische Modellierung
+### [AFB III]: Geometrische Modellierung
 Ein Designer entwirft eine Vase, deren Innenwand durch $h(x) = \sqrt{2x + 1}$ im Bereich $0 \le x \le 12$ modelliert wird ($x$ in Dezimetern).
 Berechne das Fassungsvermoegen der Vase in Litern ($1\,\text{dm}^3 = 1\,\text{l}$) und beurteile die geometrische Plausibilitaet des Ergebnisses.
 
 ## Schritt 7 — check: Format-Check & Scoring
 
 30 XP Schnelltest zur Verstaendigungssicherung:
+
+AUFGABE (herleiten, [AFB III]): Leite her erstens den Ansatz mit koenntest, zweitens die Rechnung mit braeuchtest und drittens die Deutung mit Rotationsintegral zum Fall: 30 XP Schnelltest zur Verstaendigungssicherung:. 中文说明：三问分别对应 Ansatz、Rechnung 与 Deutung。
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Ansatz mit koenntest und herleiten-Wahl (Rotationsvolumen und Uneigentliche Integ) [AFB I] | 5 NP | Skizze mit beschrifteten Achsen als Alternativweg
+Rechnung mit braeuchtest und Bedingungspruefung [AFB II] | 5 NP | Numerische Kontrolle mit Taschenrechner als Alternativweg
+Deutung mit Rotationsintegral plus Einheit/Randkontrolle [AFB III] | 5 NP | Geometrische Deutung der Konvergenz als Alternativweg
 
 FRAGE: Was ist der typische Schuelerfehler beim Berechnen von Rotationsvolumina?
 ANTWORT: Man vergisst entweder den Faktor pi vor dem Integral, oder man quadriert faelschlicherweise die Stammfunktion F(x) statt der Ausgangsfunktion f(x).
@@ -119,6 +148,13 @@ ANTWORT: Wenn der Grenzwert des endlichen Integrals fuer u gegen Unendlich nicht
 
 `Klausur-Satz: Die differenzierte Reflexion erfordert eine stringente Verknuepfung von theoretischem Kriterienkatalog und konkretem Klausurmaterial.`
 
+> MUSTER-KLAUSURSATZ (15 NP): Die differenzierte Reflexion erfordert eine stringente Verknuepfung von theoretischem Kriterienkatalog und konkretem Klausurmaterial.
+
+KERNSATZ (auswendig):
+- Kernsatz: `Die differenzierte Reflexion erfordert eine stringente Verknuepfung von theoretischem Kriterienkatalog und konkretem Klausurmaterial.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = Die differenzierte Reflexion erfordert | Mechanismus = eine stringente Verknuepfung von theoretischem Kriterienkatalog | Urteil = und konkretem Klausurmaterial.
+- Selbsttest: Die differenzierte Reflexion erfordert eine stringente Verknuepfung von theoretischem ___ und konkretem Klausurmaterial.
 ## Schritt 8 — reflexion: Meisterschaft & Naechste Mission
 
 REFLEXION:

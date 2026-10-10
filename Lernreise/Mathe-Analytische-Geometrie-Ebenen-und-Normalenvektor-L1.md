@@ -8,7 +8,7 @@ operatoren: [umformen, berechnen, pruefen]
 klausurrelevant: true
 datum: 2026-10-03
 tags: [EF, Mathe, Analytische-Geometrie, Vektoren, Ebenengleichung, Normalenvektor, Hessesche-Normalform]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Analytische Geometrie: Ebenenformen und Normalenvektor (L1, Ziel Klausur)
@@ -20,16 +20,28 @@ ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
 1. 中文：能熟练完成空间平面三大方程（参数式 Parameterform、法线式 Normalenform、一般坐标式 Koordinatenform）之间的双向无损互化。
 2. 中文：能运用向量叉乘（Vektorprodukt / Kreuzprodukt $\vec{n} = \vec{u} \times \vec{v}$）快速求解平面的垂直法向量（Normalenvektor $\vec{n} \perp E$）。
-3. 中文：能在空间立体几何高考大题（AFB I/II/III）中利用黑塞标准式（Hessesche Normalform, HNF）精准计算空间点到平面的垂直极值距离与交线交点。
+3. 中文：能在空间立体几何高考大题（[AFB I/II/III]）中利用黑塞标准式（Hessesche Normalform, HNF）精准计算空间点到平面的垂直极值距离与交线交点。
 
 ### Hook / Phaenomen
 
 Ein autonomer Rettungshubschrauber fliegt bei dichtestem Hochgebirgsnebel mit zweihundert Kilometern pro Stunde durch ein enges Alpentalsystem. Die Sichtweite der Piloten betraegt weniger als fuenf Meter. An Bord scannt ein hochpraezises Laser-LiDAR-System in jeder Millisekunde Millionen von Gelaendepunkten ab. Ploetzlich detektieren die Sensoren eine massive, geneigte Granit-Felswand direkt in der Flugbahn. Der Bordcomputer muss in Sekundenbruchteilen eine lebensrettende mathematische Entscheidung treffen: Bildet die Felswand eine geometrische Ebene im Raum? Welchen Neigungswinkel besitzt ihre Oberflaeche zur Horizontale? Und vor allem: Welchen exakten Mindestabstand haelt die momentane Flugkurve des Hubschraubers zur Wand ein? Hinter dieser Echtzeit-Navigation im dreidimensionalen Raum steckt die fundamentale Algebra der analytischen Geometrie: die Umrechnung zwischen Ebenengleichungen und die maechtige Hebelwirkung des Normalenvektors.
 
+预测 [Option A]：Der grobe Abstandswert aus wenigen Teilwerten genuegt bereits, weitere Verfeinerung aendert nichts。若选A，你在Step 2用工具检验该方向的变化。
+
+预测 [Option B]：Erst fortgesetzte Verfeinerung laesst den Abstandswert gegen den exakten Wert laufen。若选B，你在Step 2用工具检验该方向的变化。
+
+AUFLÖSUNG (nach der Wahl lesen)
+
+以下解析在选择后阅读，含原两项机制分析全文：
+- Mechanismus A：Ein autonomer Rettungshubschrauber fliegt bei dichtestem Hochgebirgsnebel mit zweihundert Kilometern pro Stunde durch ein enges Alpentalsystem.
+- Mechanismus B：Die Sichtweite der Piloten betraegt weniger als fuenf Meter.
+
+本质一句话：Ein Normalenvektor steht orthogonal auf zwei linear unabhaengigen Richtungsvektoren einer Ebene und ermoeglicht ueber das Skalarprodukt die unmittelbare Umwandlung in die rechenguestige Koordinatenform.
+
 `Klausur-Satz: Ein Normalenvektor steht orthogonal auf zwei linear unabhaengigen Richtungsvektoren einer Ebene und ermoeglicht ueber das Skalarprodukt die unmittelbare Umwandlung in die rechenguestige Koordinatenform.`
 
 ## Schritt 2 — entdecken: Die mathematischen Repraesentationen einer Ebene
-PRETRAINING术语盒（核心4词，先读三遍中德，合书自测中文→德语）：
+PRETRAINING术语盒（核心4词，先读三遍中德，合书自测中文->德语）：
 
 - 参数方程 — Parameterform ($E: \vec{x} = \vec{p} + r\vec{u} + s\vec{v}$): 通过一个空间支点与两个不共线的方向向量（Spannvektoren）张成平面的向量表示法。 Darstellung einer Ebene durch einen Stuetzvektor und zwei linear unabhaengige Richtungsvektoren.
 - 法向量 — Normalenvektor ($\vec{n}$): 垂直于平面内所有直线与向量的空间非零向量，可通过两方向向量的叉乘求得。 Ein Vektor, der orthogonal auf der Ebene steht ($\vec{n} \cdot \vec{u} = 0$ und $\vec{n} \cdot \vec{v} = 0$).
@@ -67,12 +79,21 @@ E: (a*x1 + b*x2 + c*x3 - d) / |n| = 0  --> Liefert direkt den Abstand d(P, E)!
 
 [Werkzeug: lego]
 
-AUFGABE (umformen & berechnen, AFB I/II):
+AUFGABE (umformen & berechnen, [AFB I/II]):
 Gegeben ist die Ebene $E$ in Parameterform:
 $$E: \vec{x} = \begin{pmatrix} 1 \\ 2 \\ 0 \end{pmatrix} + r \begin{pmatrix} 2 \\ 0 \\ 1 \end{pmatrix} + s \begin{pmatrix} -1 \\ 1 \\ 2 \end{pmatrix}$$
 1. Berechne einen Normalenvektor $\vec{n}$ ueber das Kreuzprodukt der beiden Richtungsvektoren.
 2. Bestimme die Koordinatenform der Ebene $E$.
+
+HILFE：
+- 从结构维度切入，先明确本步先求什么量（Zielgroesse: Normalenvektor),再选工具：用Normalenvektor判定对象归属，用Ebenengleichung组织步骤顺序。
+- 从定理维度切入，用Ebenengleichung与Hessesche-Normalform的适用条件选择公式：先写条件，再代入；umformen-Aufgaben verlangen erst die Verfahrenswahl (umformen oder Nachweis), dann die Rechnung.
+- 从验证维度切入，用定义域/单调性/量级做方向对照，判断结果是否合理。不给出具体分点、函数值、和值与归属结论。
 3. Berechne den Abstand des Punktes $P(4 | 6 | 9)$ von der Ebene $E$ mithilfe der Hesseschen Normalform.
+
+COMPLETION (Lückentext):
+- 中文说明：根据MUSTERLÖSUNG补全关键数值，不回看上文。
+- Ergaenze: $\vec{n} = ___$ und $\vec{n} = ___$, und es gilt $Kontrolle = ___$.
 
 MUSTERLOESUNG:
 1. Kreuzprodukt der Spannvektoren:
@@ -110,21 +131,29 @@ Sobald nach `Schnittpunkten, Schnittwinkeln oder Abstaenden` gefragt wird, wandl
 
 PRUEFUNGSSZENARIO (KLP NRW Mathematik LK Inhaltsfeld 2: Analytische Geometrie):
 
-### AFB I: Ebenengleichung aufstellen
+### [AFB I]: Ebenengleichung aufstellen
 Drei Befestigungspunkte einer Solaranlage auf einem Schiefdach sind gegeben: $A(0|0|4)$, $B(3|1|5)$ und $C(1|4|6)$.
 Stelle eine Koordinatengleichung der Dachebene auf.
 
-### AFB II: Schnittgerade zweier Dachteile
+### [AFB II]: Schnittgerade zweier Dachteile
 Ein zweites Dachteil wird durch die Ebene $F: 2x_1 - x_2 + 3x_3 = 12$ beschrieben.
 Bestimme die Gleichung der Dachfirst-Geraden $g$, entlang derer sich die beiden Dachflaechen schneiden.
 
-### AFB III: Sonnenstands-Modellierung
+### [AFB III]: Sonnenstands-Modellierung
 Parallel einfallendes Sonnenlicht faellt entlang des Richtungsvektors $\vec{v} = \begin{pmatrix} 2 \\ 3 \\ -5 \end{pmatrix}$ auf das Dach.
 Berechne den Einstrahlwinkel der Sonnenstrahlen auf die Solarebene $E$ und beurteile die energetische Effizienz der Dachausrichtung.
 
 ## Schritt 7 — check: Format-Check & Scoring
 
 30 XP Schnelltest zur Verstaendigungssicherung:
+
+AUFGABE (umformen, [AFB III]): Umformen erstens den Ansatz mit Normalenvektor, zweitens die Rechnung mit Ebenengleichung und drittens die Deutung mit Hessesche-Normalform zum Fall: 30 XP Schnelltest zur Verstaendigungssicherung:. 中文说明：三问分别对应 Ansatz、Rechnung 与 Deutung。
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Ansatz mit Normalenvektor und umformen-Wahl (Analytische Geometrie: Ebenenformen und ) [AFB I] | 5 NP | Skizze mit beschrifteten Achsen als Alternativweg
+Rechnung mit Ebenengleichung und Bedingungspruefung [AFB II] | 5 NP | Numerische Kontrolle mit Taschenrechner als Alternativweg
+Deutung mit Hessesche-Normalform plus Einheit/Randkontrolle [AFB III] | 5 NP | Geometrische Deutung der Konvergenz als Alternativweg
 
 FRAGE: Welche geometrische Bedeutung haben die Koeffizienten a, b und c in der Koordinatenform a*x1 + b*x2 + c*x3 = d?
 ANTWORT: Sie bilden exakt die Komponenten eines Normalenvektors n = (a, b, c), der orthogonal auf der Ebene steht.
@@ -134,6 +163,13 @@ ANTWORT: Man bildet das Skalarprodukt aus dem Richtungsvektor der Geraden und de
 
 `Klausur-Satz: Die differenzierte Reflexion erfordert eine stringente Verknuepfung von theoretischem Kriterienkatalog und konkretem Klausurmaterial.`
 
+> MUSTER-KLAUSURSATZ (15 NP): Die differenzierte Reflexion erfordert eine stringente Verknuepfung von theoretischem Kriterienkatalog und konkretem Klausurmaterial.
+
+KERNSATZ (auswendig):
+- Kernsatz: `Die differenzierte Reflexion erfordert eine stringente Verknuepfung von theoretischem Kriterienkatalog und konkretem Klausurmaterial.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = Die differenzierte Reflexion erfordert | Mechanismus = eine stringente Verknuepfung von theoretischem Kriterienkatalog | Urteil = und konkretem Klausurmaterial.
+- Selbsttest: Die differenzierte Reflexion erfordert eine stringente Verknuepfung von theoretischem ___ und konkretem Klausurmaterial.
 ## Schritt 8 — reflexion: Meisterschaft & Naechste Mission
 
 REFLEXION:

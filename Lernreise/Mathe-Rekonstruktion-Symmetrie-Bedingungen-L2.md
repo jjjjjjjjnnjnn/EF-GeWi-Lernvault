@@ -8,7 +8,7 @@ operatoren: [aufstellen, berechnen, begruenden]
 klausurrelevant: true
 datum: 2026-09-26
 tags: [EF, Mathe, Analysis]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Rekonstruktion mit Symmetriebedingungen (L2, Ziel Klausur)
@@ -31,6 +31,18 @@ VORGAENGER-VERWEIS UND ARBEITSTEILUNG (L2-Abgrenzung): Diese Lektion setzt `Math
 五个未知数看着吓人，但对称性先砍掉一半：偶对称只留偶次幂，奇对称只留奇次幂，剩下的条件一人一方程。
 
 Hook / Phaenomen: Fuenf Unbekannte, aber der Graph verraet Symmetrie: Bei **Achsensymmetrie** fallen alle ungeraden Potenzen weg, bei **Punktsymmetrie** alle geraden. Der **reduzierte Ansatz** halbiert die Arbeit, bevor die erste **Bedingungsgleichung** steht.
+
+预测 [Option A]：Der grobe Parameterwert aus wenigen Teilwerten genuegt bereits, weitere Verfeinerung aendert nichts。若选A，你在Step 2用工具检验该方向的变化。
+
+预测 [Option B]：Erst fortgesetzte Verfeinerung laesst den Parameterwert gegen den exakten Wert laufen。若选B，你在Step 2用工具检验该方向的变化。
+
+AUFLÖSUNG (nach der Wahl lesen)
+
+以下解析在选择后阅读，含原两项机制分析全文：
+- Mechanismus A：五个未知数看着吓人，但对称性先砍掉一半：偶对称只留偶次幂，奇对称只留奇次幂，剩下的条件一人一方程。 Hook / Phaenomen: Fuenf Unbekannte, aber der Graph verraet Symmetrie: Bei **Achsensymmetrie** fallen alle ungeraden Potenzen weg, bei **Punktsymmetrie** alle geraden.
+- Mechanismus B：Der **reduzierte Ansatz** halbiert die Arbeit, bevor die erste **Bedingungsgleichung** steht.
+
+本质一句话：Symmetrie ist Vorabinformation: Achsensymmetrie streicht ungerade, Punktsymmetrie gerade Potenzen vor jeder Rechnung.
 
 `Klausur-Satz: Symmetrie ist Vorabinformation: Achsensymmetrie streicht ungerade, Punktsymmetrie gerade Potenzen vor jeder Rechnung.`
 
@@ -76,12 +88,16 @@ BEISPIEL (vollstaendige Musterloesung):
 
 [Werkzeug: formula]
 
-AUFGABE (berechnen, AFB II): Der Graph einer ganzrationalen Funktion vierten Grades ist achsensymmetrisch zur y-Achse, verlaeuft durch $A(0 \mid 1)$ und $B(1 \mid 0)$ und besitzt an der Stelle $x = 1$ eine waagerechte Tangente. Bestimmen Sie die Funktionsgleichung.
+AUFGABE (berechnen, [AFB II]): Der Graph einer ganzrationalen Funktion vierten Grades ist achsensymmetrisch zur y-Achse, verlaeuft durch $A(0 \mid 1)$ und $B(1 \mid 0)$ und besitzt an der Stelle $x = 1$ eine waagerechte Tangente. Bestimmen Sie die Funktionsgleichung.
 
-HILFE:
-1. Schritt 1: Reduzierten Ansatz $f(x) = ax^4 + bx^2 + c$ mit $f'(x) = 4ax^3 + 2bx$ notieren.
-2. Schritt 2: Drei Bedingungen einsetzen: $f(0) = 1$, $f(1) = 0$, $f'(1) = 0$.
-3. Schritt 3: System loesen und Symmetrie kontrollieren.
+HILFE：
+- 从结构维度切入，先明确本步先求什么量（Zielgroesse: Ansatz),再选工具：用Ansatz判定对象归属，用Allgemeinverfahren组织步骤顺序。
+- 从定理维度切入，用Allgemeinverfahren与Standardverfahren的适用条件选择公式：先写条件，再代入；aufstellen-Aufgaben verlangen erst die Verfahrenswahl (aufstellen oder Nachweis), dann die Rechnung.
+- 从验证维度切入，用定义域/单调性/量级做方向对照，判断结果是否合理。不给出具体分点、函数值、和值与归属结论。
+
+COMPLETION (Lückentext):
+- 中文说明：根据MUSTERLÖSUNG补全关键数值，不回看上文。
+- Ergaenze: $f(0) = ___$ und $c = ___$, und es gilt $Kontrolle = ___$.
 
 MUSTERLOESUNG: Aus $f(0) = 1$ folgt $c = 1$. Weiter gilt $f(1) = a + b + 1 = 0$ und $f'(1) = 4a + 2b = 0$. Aus $4a + 2b = 0$ folgt $b = -2a$. Einsetzen liefert $a - 2a + 1 = 0$, also $a = 1$ und $b = -2$. Die Funktion lautet $f(x) = x^4 - 2x^2 + 1$. Kontrolle: Nur gerade Exponenten, $f(1) = 0$, $f'(1) = 0$, $f(0) = 1$.
 
@@ -126,10 +142,25 @@ CHECK (drei Fragen mit Antworten):
 ## Schritt 7 — szenario: Klausurtransfer: Rekonstruktion mit Symmetriebedingungen: Fahndung nach Koeffizienten
 ROLLE: Du bist Tutorin und korrigierst eine Rekonstruktion.
 SITUATION: Ein Mitschueler legt fuer eine achsensymmetrische Funktion vierten Grades den Ansatz $f(x) = ax^4 + bx^3 + cx^2 + dx + e$ vor und wundert sich ueber fehlende Gleichungen. Erklaere in circa 150 Woertern, wie der korrekte reduzierte Ansatz lautet, welche drei Bedingungen genuegen und wie die Kontrolle aussieht.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Ansatz mit Ansatz und aufstellen-Wahl (Rekonstruktion mit Symmetriebedingungen) [AFB I] | 5 NP | Skizze mit beschrifteten Achsen als Alternativweg
+Rechnung mit Allgemeinverfahren und Bedingungspruefung [AFB II] | 5 NP | Numerische Kontrolle mit Taschenrechner als Alternativweg
+Deutung mit Standardverfahren plus Einheit/Randkontrolle [AFB III] | 5 NP | Geometrische Deutung der Konvergenz als Alternativweg
+
 RUBRIC (30 XP): Korrekter reduzierter Ansatz (8 XP) | Drei Bedingungen sauber eingesetzt (10 XP) | Loesung mit Kontrolle der Symmetrie (8 XP) | Fachsprachliche Begruendung (4 XP).
 
+AUFGABE (aufstellen, [AFB III]): Aufstellen erstens den Ansatz mit Ansatz, zweitens die Rechnung mit Allgemeinverfahren und drittens die Deutung mit Standardverfahren zum Fall: RUBRIC (30 XP): Korrekter reduzierter Ansatz (8 XP) | Drei Bedingungen sauber eingesetzt (10 XP) | Loesung mit Kontrolle der Symmetrie (8 XP. 中文说明：三问分别对应 Ansatz、Rechnung 与 Deutung。
 `Klausur-Satz: Wer Ansatz reduziert, Bedingungen uebersetzt, System loest und Kontrolle zeigt, erhaelt die volle Punktzahl.`
 
+> MUSTER-KLAUSURSATZ (15 NP): Mit Symmetrieangabe traegt der reduzierte Ansatz, ohne Symmetrieangabe nur der Vollansatz.
+
+KERNSATZ (auswendig):
+- Kernsatz: `Mit Symmetrieangabe traegt der reduzierte Ansatz, ohne Symmetrieangabe nur der Vollansatz.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = Mit Symmetrieangabe traegt der | Mechanismus = reduzierte Ansatz, ohne Symmetrieangabe | Urteil = nur der Vollansatz.
+- Selbsttest: Mit Symmetrieangabe traegt der reduzierte ___, ohne Symmetrieangabe nur der Vollansatz.
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Fahndung nach Koeffizienten
 TAKEAWAY:
 

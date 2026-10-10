@@ -8,7 +8,7 @@ operatoren: [bestimmen, beurteilen]
 klausurrelevant: true
 datum: 2026-09-26
 tags: [EF, Mathe, Analysis]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Extremwertprobleme und Optimierung (L1, Ziel Klausur)
@@ -20,13 +20,25 @@ ZIELE (drei messbare Ziele dieser Lektion):
 
 1. Du kannst das Drei-Schritt-Verfahren aufsagen und anwenden: Zielfunktion $V(x)$ aufstellen, mit der Nebenbedingung auf eine Variable reduzieren, Definitionsmenge $D = [0, 6]$ notieren.
 2. Du kannst $V(x) = x(20-2x)(12-2x) = 4x^3 - 64x^2 + 240x$ ableiten, $V'(x) = 0$ loesen und mit $V''(x)$ sowie Randpruefung $V(0)$, $V(6)$ das globale Maximum sichern.
-3. Du kannst begruenden, warum $f' = 0$ nur notwendig ist, und den Antwortsatz mit $x \approx 2{,}43\,\mathrm{cm}$ und $V_{\max} \approx 262{,}7\,\mathrm{cm}^3$ formulieren (AFB II/III).
+3. Du kannst begruenden, warum $f' = 0$ nur notwendig ist, und den Antwortsatz mit $x \approx 2{,}43\,\mathrm{cm}$ und $V_{\max} \approx 262{,}7\,\mathrm{cm}^3$ formulieren ([AFB II/III]).
 
 ###
 
 ### Hook / Phaenomen
 
 Hook / Phaenomen: Aus einem Blech soll die groesste Schachtel werden: Jeder Schnitt veraendert Volumen und Flaeche zugleich. Die **Zielfunktion** misst den Gewinn, die **Nebenbedingung** frisst eine Variable. Wo die **Extremalbedingung** null wird, steht das **Optimum**.
+
+预测 [Option A]：Der grobe Zielfunktionswert aus wenigen Teilwerten genuegt bereits, weitere Verfeinerung aendert nichts。若选A，你在Step 2用工具检验该方向的变化。
+
+预测 [Option B]：Erst fortgesetzte Verfeinerung laesst den Zielfunktionswert gegen den exakten Wert laufen。若选B，你在Step 2用工具检验该方向的变化。
+
+AUFLÖSUNG (nach der Wahl lesen)
+
+以下解析在选择后阅读，含原两项机制分析全文：
+- Mechanismus A：Hook / Phaenomen: Aus einem Blech soll die groesste Schachtel werden: Jeder Schnitt veraendert Volumen und Flaeche zugleich.
+- Mechanismus B：Die **Zielfunktion** misst den Gewinn, die **Nebenbedingung** frisst eine Variable.
+
+本质一句话：Optimieren heisst einsperren: Zielfunktion plus Nebenbedingung erzeugen eine Variable mit Rand.
 
 `Klausur-Satz: Optimieren heisst einsperren: Zielfunktion plus Nebenbedingung erzeugen eine Variable mit Rand.`
 
@@ -94,12 +106,16 @@ BEISPIEL (Sandbox Level mit Werkzeug):
 
 [Werkzeug: box-optimizer]
 
-AUFGABE (Levelziel, AFB II): Knacke das Box-Level: Ziehe im Sandbox-Slider die Schnittkante $a$ von $0$ bis $B/2$ und beobachte, wie das Volumen $V(a)$ erst waechst und dann faellt. Lies das Maximum ab, bestimme dann exakt per $V'(a) = 0$ den Kandidaten und sichere ihn mit Randpruefung als globales Maximum. Erklaere in einem Satz, warum die Randpruefung noetig ist.
+AUFGABE (Levelziel, [AFB II]): Knacke das Box-Level: Ziehe im Sandbox-Slider die Schnittkante $a$ von $0$ bis $B/2$ und beobachte, wie das Volumen $V(a)$ erst waechst und dann faellt. Lies das Maximum ab, bestimme dann exakt per $V'(a) = 0$ den Kandidaten und sichere ihn mit Randpruefung als globales Maximum. Erklaere in einem Satz, warum die Randpruefung noetig ist.
 
-HILFE:
-1. Stelle $V(a) = (L-2a)(B-2a)a$ auf $D = (0, B/2)$ auf und lies im Sandbox-Slider Stelle und Wert des Maximums ab.
-2. Bilde $V'(a)$, loese $V'(a) = 0$ und pruefe $V''(a_1) < 0$ fuer den Kandidaten $a_1$.
-3. Vergleiche $V(a_1)$ mit den Randwerten $V \to 0$ und benenne $a_1$ als globale Maximalstelle.
+HILFE：
+- 从结构维度切入，先明确本步先求什么量（Zielgroesse: Drei-Schritt-Verfahren),再选工具：用Drei-Schritt-Verfahren判定对象归属，用Nebenbedingung组织步骤顺序。
+- 从定理维度切入，用Nebenbedingung与Antwortsatz的适用条件选择公式：先写条件，再代入；bestimmen-Aufgaben verlangen erst die Verfahrenswahl (bestimmen oder Nachweis), dann die Rechnung.
+- 从验证维度切入，用定义域/单调性/量级做方向对照，判断结果是否合理。不给出具体分点、函数值、和值与归属结论。
+
+COMPLETION (Lückentext):
+- 中文说明：根据MUSTERLÖSUNG补全关键数值，不回看上文。
+- Ergaenze: $a = ___$ und $V'(a_1) = ___$, und es gilt $Kontrolle = ___$.
 
 MUSTERLOESUNG: Sandbox zeigt das Maximum bei $a = a_1$ mit $V(a_1)$ als hoechstem Wert. Rechnung $V'(a_1) = 0$ mit $V''(a_1) < 0$ bestaetigt den inneren Hochpunkt. Randvergleich $V(a_1) > V(0)$ und $V(a_1) > V(B/2)$ sichert das globale Maximum auf $D$. Die Randpruefung ist noetig, weil das globale Maximum auch am Rand liegen koennte und $V'=0$ nur innere Kandidaten liefert.
 
@@ -143,11 +159,25 @@ CHECK (drei Fragen mit Antworten):
 ## Schritt 7 — szenario: Klausurtransfer: Extremwertprobleme und Optimierung: Containerschloss
 ROLLE: Du bist Praktikant in der Logistik-Abteilung eines Online-Haendlers.
 SITUATION: Aus einem Standard-Bogen $24\,\mathrm{cm}$ mal $18\,\mathrm{cm}$ sollen offene Versandkisten mit maximalem Volumen gebaut werden. Deine Chefin verlangt eine nachvollziehbare Rechnung mit Zielfunktion, Definitionsmenge, Ableitung und Randpruefung sowie eine klare Empfehlung fuer die Produktion (circa 150 Woerter, mit Einheiten $\mathrm{cm}$ und $\mathrm{cm}^3$).
-AUFGABE (beurteilen, AFB III): Entscheide, welche Schnittlaenge in die Produktion geht, und beurteile, wie sensibel das Maximum auf Abweichungen von $\pm 0{,}5\,\mathrm{cm}$ reagiert.
+AUFGABE (bestimmen, [AFB III]): Bestimme Entscheide, welche Schnittlaenge in die Produktion geht, und beurteile, wie sensibel das Maximum auf Abweichungen von $\pm 0{,}5\,\mathrm{cm}$ reagiert.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Ansatz mit Drei-Schritt-Verfahren und bestimmen-Wahl (Extremwertprobleme und Optimierung) [AFB I] | 5 NP | Skizze mit beschrifteten Achsen als Alternativweg
+Rechnung mit Nebenbedingung und Bedingungspruefung [AFB II] | 5 NP | Numerische Kontrolle mit Taschenrechner als Alternativweg
+Deutung mit Antwortsatz plus Einheit/Randkontrolle [AFB III] | 5 NP | Geometrische Deutung der Konvergenz als Alternativweg
+
 RUBRIC (30 XP): Zielfunktion plus Definitionsmenge korrekt (5 XP) | Kandidaten mit Ableitung korrekt berechnet (10 XP) | Randpruefung mit Einheiten vollstaendig (10 XP) | Produktionsempfehlung mit Beurteilung der Sensibilitaet (5 XP).
 
 `Klausur-Satz: Wer Zielfunktion, Nebenbedingung, Extremalbedingung und Randpruefung lueckenlos zeigt, erhaelt die volle Punktzahl.`
 
+> MUSTER-KLAUSURSATZ (15 NP): Jedes Optimum braucht drei Zeugen: Ableitung null, Vorzeichenwechsel und Randvergleich.
+
+KERNSATZ (auswendig):
+- Kernsatz: `Jedes Optimum braucht drei Zeugen: Ableitung null, Vorzeichenwechsel und Randvergleich.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = Jedes Optimum braucht drei Zeugen | Mechanismus = Ableitung null | Urteil = Vorzeichenwechsel und Randvergleich.
+- Selbsttest: Jedes Optimum braucht drei Zeugen: Ableitung null, ___ und Randvergleich.
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Containerschloss
 TAKEAWAY (Kernbotschaft in einem Kasten):
 

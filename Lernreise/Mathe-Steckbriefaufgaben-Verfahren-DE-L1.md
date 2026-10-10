@@ -8,7 +8,7 @@ operatoren: [bestimmen, aufstellen, loesen]
 klausurrelevant: true
 datum: 2026-09-26
 tags: [EF, Mathe, Analysis]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Steckbriefaufgaben: Bedingungen in Gleichungen (L1, Ziel Klausur)
@@ -20,13 +20,25 @@ ZIELE (drei messbare Ziele dieser Lektion):
 
 1. Du kannst aus vier Bedingungen den Ansatz $f(x) = ax^3+bx^2+cx+d$ und aus Symmetrie den Ansatz ohne ungerade Exponenten waehlen.
 2. Du kannst $P(0, 4)$ zu $f(0) = 4$, Steigung $-6$ zu $f'(0) = -6$, Wende bei $1$ zu $f''(1) = 0$ und Nullstelle bei $1$ zu $f(1) = 0$ uebersetzen.
-3. Du kannst das LGS zu $a = -1$, $b = 3$, $c = -6$, $d = 4$ loesen und die Probe gegen alle Bedingungen schreiben (AFB II).
+3. Du kannst das LGS zu $a = -1$, $b = 3$, $c = -6$, $d = 4$ loesen und die Probe gegen alle Bedingungen schreiben ([AFB II]).
 
 ###
 
 ### Hook / Phaenomen
 
 Hook / Phaenomen: Gesucht ist eine Funktion, gegeben sind Spuren: Punkte, Extrema, Wendepunkte. Der **allgemeine Ansatz** rahmt die Suche, jede **Bedingungsuebersetzung** liefert eine Gleichung. **Extrem-** und **Wendebedingung** sind dabei nur Sonderfaelle derselben Uebersetzungskunst.
+
+预测 [Option A]：Der grobe Parameterwert aus wenigen Teilwerten genuegt bereits, weitere Verfeinerung aendert nichts。若选A，你在Step 2用工具检验该方向的变化。
+
+预测 [Option B]：Erst fortgesetzte Verfeinerung laesst den Parameterwert gegen den exakten Wert laufen。若选B，你在Step 2用工具检验该方向的变化。
+
+AUFLÖSUNG (nach der Wahl lesen)
+
+以下解析在选择后阅读，含原两项机制分析全文：
+- Mechanismus A：Hook / Phaenomen: Gesucht ist eine Funktion, gegeben sind Spuren: Punkte, Extrema, Wendepunkte.
+- Mechanismus B：Der **allgemeine Ansatz** rahmt die Suche, jede **Bedingungsuebersetzung** liefert eine Gleichung.
+
+本质一句话：Steckbriefe werden uebersetzt, nicht geraten: Jede Eigenschaft liefert genau eine Gleichung ans System.
 
 `Klausur-Satz: Steckbriefe werden uebersetzt, nicht geraten: Jede Eigenschaft liefert genau eine Gleichung ans System.`
 
@@ -93,12 +105,16 @@ BEISPIEL (Sandbox Level mit Werkzeug):
 
 [Werkzeug: formula]
 
-AUFGABE (Levelziel, AFB II): Knacke das Steckbrief-Level: Stelle im Sandbox-Formelgeruest nacheinander die vier Bedingungen ein und beobachte, wie aus jeder Eigenschaft eine Gleichung und aus vier Gleichungen ein loesbares System wird. Lies jede erzeugte Gleichung ab, uebersetze Hochpunkt, Wendepunkt und Steigung, loese das System und fuehre die Probe durch. Benenne das Loesungsverfahren.
+AUFGABE (Levelziel, [AFB II]): Knacke das Steckbrief-Level: Stelle im Sandbox-Formelgeruest nacheinander die vier Bedingungen ein und beobachte, wie aus jeder Eigenschaft eine Gleichung und aus vier Gleichungen ein loesbares System wird. Lies jede erzeugte Gleichung ab, uebersetze Hochpunkt, Wendepunkt und Steigung, loese das System und fuehre die Probe durch. Benenne das Loesungsverfahren.
 
-HILFE:
-1. Waehle den Ansatz $f(x) = ax^3+bx^2+cx+d$ und trage jede Bedingung als eigene Zeile an $f$, $f'$ oder $f''$ ein.
-2. Ordne das System, eliminiere per Addition oder Einsetzung und loese zu $a = -1$, $b = 3$, $c = -6$, $d = 4$.
-3. Setze die Probe durch Einsetzen aller Bedingungen in $f(x) = -x^3+3x^2-6x+4$ durch und benenne das Verfahren.
+HILFE：
+- 从结构维度切入，先明确本步先求什么量（Zielgroesse: Ansatz),再选工具：用Ansatz判定对象归属，用Wendebedingung组织步骤顺序。
+- 从定理维度切入，用Wendebedingung与Extrembedingung的适用条件选择公式：先写条件，再代入；bestimmen-Aufgaben verlangen erst die Verfahrenswahl (bestimmen oder Nachweis), dann die Rechnung.
+- 从验证维度切入，用定义域/单调性/量级做方向对照，判断结果是否合理。不给出具体分点、函数值、和值与归属结论。
+
+COMPLETION (Lückentext):
+- 中文说明：根据MUSTERLÖSUNG补全关键数值，不回看上文。
+- Ergaenze: $a = ___$ und $b = ___$, und es gilt $Kontrolle = ___$.
 
 MUSTERLOESUNG: Formelgeruest aus vier Bedingungen liefert das System mit der eindeutigen Loesung $a = -1$, $b = 3$, $c = -6$, $d = 4$, also $f(x) = -x^3+3x^2-6x+4$. Verfahren per Einsetzung mit Rueckwaertseinsetzen, Probe durch Einsetzen aller vier Bedingungen bestaetigt den Term. Aus den vier Bedingungen folgt das System mit eindeutiger Loesung, jede Eigenschaft entspricht genau einer Gleichung.
 
@@ -142,11 +158,25 @@ CHECK (drei Fragen mit Antworten):
 ## Schritt 7 — szenario: Klausurtransfer: Steckbriefaufgaben: Bedingungen in Gleichungen: Ebenen ueber dem Hafen
 ROLLE: Du bist Mitarbeiter in einem Ingenieurbuero und sollst ein Brueckenprofil modellieren.
 SITUATION: Das Profil eines Brueckenbogens soll naeherungsweise durch eine ganzrationale Funktion dritten Grades beschrieben werden. Bekannt sind: Der Bogen beginnt im Ursprung mit waagerechter Tangente, erreicht an der Stelle $x = 4$ seinen hoechsten Punkt und hat dort eine Hoehe von $16$ Metern. Bestimme den Funktionsterm und erlaeutere in einer zusammenhaengenden Darstellung (circa 150 Woerter) dein Vorgehen.
-AUFGABE (aufstellen, AFB III): Verfasse eine zusammenhaengende Darstellung von etwa 150 Woertern mit Ansatz, Bedingungsuebersetzung, Loesung und Probe.
+AUFGABE (bestimmen, [AFB III]): Bestimme Verfasse eine zusammenhaengende Darstellung von etwa 150 Woertern mit Ansatz, Bedingungsuebersetzung, Loesung und Probe.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Ansatz mit Ansatz und bestimmen-Wahl (Steckbriefaufgaben: Bedingungen in Gleic) [AFB I] | 5 NP | Skizze mit beschrifteten Achsen als Alternativweg
+Rechnung mit Wendebedingung und Bedingungspruefung [AFB II] | 5 NP | Numerische Kontrolle mit Taschenrechner als Alternativweg
+Deutung mit Extrembedingung plus Einheit/Randkontrolle [AFB III] | 5 NP | Geometrische Deutung der Konvergenz als Alternativweg
+
 RUBRIC (30 XP): Korrekter Ansatz $f(x) = ax^3 + bx^2 + cx + d$ (5 XP) | Uebersetzung der Bedingungen ($f(0) = 0$, $f'(0) = 0$, $f(4) = 16$, $f'(4) = 0$) (10 XP) | Loesung des LGS mit Ergebnis (10 XP) | Probe und Antwortsatz im Sachzusammenhang (5 XP).
 
 `Klausur-Satz: Wer Ansatz, Uebersetzungen, Loesungsweg und Kontrolle zeigt, erhaelt die volle Punktzahl.`
 
+> MUSTER-KLAUSURSATZ (15 NP): Wer Ansatz, Uebersetzungen, Loesungsweg und Kontrolle zeigt, erhaelt die volle Punktzahl.
+
+KERNSATZ (auswendig):
+- Kernsatz: `Wer Ansatz, Uebersetzungen, Loesungsweg und Kontrolle zeigt, erhaelt die volle Punktzahl.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = Wer Ansatz, Uebersetzungen, Loesungsweg | Mechanismus = und Kontrolle zeigt, erhaelt | Urteil = die volle Punktzahl.
+- Selbsttest: Wer ___, Uebersetzungen, Loesungsweg und Kontrolle zeigt, erhaelt die volle Punktzahl.
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Ebenen ueber dem Hafen
 TAKEAWAY (Kernbotschaft in einem Kasten):
 

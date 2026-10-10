@@ -8,7 +8,7 @@ operatoren: [berechnen, interpretieren, beurteilen]
 klausurrelevant: true
 datum: 2026-10-03
 tags: [EF, Mathe, Stochastik, Hypothesentest, Signifikanzniveau, Fehler-1-Art, Fehler-2-Art, Binomialverteilung]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Stochastik: Einseitiger und zweiseitiger Hypothesentest sowie Fehler 1. und 2. Art (L1, Ziel Klausur)
@@ -20,16 +20,28 @@ ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
 1. 中文：能准确构建二项分布假设检验框架：设立零假设（Nullhypothese $H_0: p \le p_0$ 或 $p = p_0$）、备择假设（Gegenhypothese $H_1$）、明确样本容量 $n$ 与显著性水平（Signifikanzniveau $\alpha$）。
 2. 中文：能通过二项分布累积概率表或正态近似准确计算临界值（kritischer Wert $k$），划分接受域（Annahmebereich $A$）与拒绝域（Ablehnungsbereich / Verwerfungsbereich $\bar{A}$）。
-3. 中文：能在高考数学综合题（AFB I/II/III）中深刻辨析并量化计算第一类错误（Fehler 1. Art / $\alpha$-Fehler: 弃真）与第二类错误（Fehler 2. Art / $\beta$-Fehler: 存伪），并分析样本量 $n$ 对两类错误权衡的影响。
+3. 中文：能在高考数学综合题（[AFB I/II/III]）中深刻辨析并量化计算第一类错误（Fehler 1. Art / $\alpha$-Fehler: 弃真）与第二类错误（Fehler 2. Art / $\beta$-Fehler: 存伪），并分析样本量 $n$ 对两类错误权衡的影响。
 
 ### Hook / Phaenomen
 
 Ein Pharmaunternehmen behauptet stolz, ein neues Schmerzmittel lindere chronische Migraene bei mindestens $80\,\%$ aller Patienten. Ein unabhaengiges Verbraucherschutzinstitut vermutet jedoch, dass das Medikament in Wahrheit unwirksamer ist und die Erfolgsquote unter $80\,\%$ liegt. Nun testen Aerzte das Mittel an einer Stichprobe von $n = 100$ zufaellig ausgewaehlten Probanden. Angenommen, genau 74 Patienten berichten von einer Besserung. Reicht dieser Befund aus, um den Hersteller oeffentlich des Betrugs zu bezichtigen? Was, wenn das Mittel in Wirklichkeit hervorragend wirkt und die 26 Misserfolge rein zufaellig in dieser einen Stichprobe aufgetreten sind? Vor Gericht gilt: "In dubio pro reo" (im Zweifel fuer den Angeklagten). In der Stochastik uebersetzt sich dieses Prinzip in den Hypothesentest: Die Nullhypothese gilt so lange als wahr, bis die empirischen Daten so extrem unwahrscheinlich sind, dass ein reiner Zufall nahezu ausgeschlossen werden kann!
 
+预测 [Option A]：Der grobe Schaetzwert aus wenigen Teilwerten genuegt bereits, weitere Verfeinerung aendert nichts。若选A，你在Step 2用工具检验该方向的变化。
+
+预测 [Option B]：Erst fortgesetzte Verfeinerung laesst den Schaetzwert gegen den exakten Wert laufen。若选B，你在Step 2用工具检验该方向的变化。
+
+AUFLÖSUNG (nach der Wahl lesen)
+
+以下解析在选择后阅读，含原两项机制分析全文：
+- Mechanismus A：Ein Pharmaunternehmen behauptet stolz, ein neues Schmerzmittel lindere chronische Migraene bei mindestens $80\,\%$ aller Patienten.
+- Mechanismus B：Ein unabhaengiges Verbraucherschutzinstitut vermutet jedoch, dass das Medikament in Wahrheit unwirksamer ist und die Erfolgsquote unter $80\,\%$ liegt.
+
+本质一句话：Der Fehler 1. Art bezeichnet die Wahrscheinlichkeit, die Nullhypothese H0 irrtuemlich abzulehnen, obwohl sie in Wirklichkeit wahr ist; diese Irrtumswahrscheinlichkeit wird durch das vorgegebene Signifikanzniveau alpha nach oben begrenzt.
+
 `Klausur-Satz: Der Fehler 1. Art bezeichnet die Wahrscheinlichkeit, die Nullhypothese H0 irrtuemlich abzulehnen, obwohl sie in Wirklichkeit wahr ist; diese Irrtumswahrscheinlichkeit wird durch das vorgegebene Signifikanzniveau alpha nach oben begrenzt.`
 
 ## Schritt 2 — entdecken: Das mathematische Vokabular der Testtheorie
-PRETRAINING术语盒（核心4词，先读三遍中德，合书自测中文→德语）：
+PRETRAINING术语盒（核心4词，先读三遍中德，合书自测中文->德语）：
 
 - 零假设与备择假设 — Nullhypothese ($H_0$) & Gegenhypothese ($H_1$): Die zu pruefende Basisaussage (meist der Status quo oder die Behauptung des Herstellers), die nur verworfen wird, wenn die Stichprobe signifikant dagegen spricht.
 - 显著性水平 — Signifikanzniveau ($\alpha$): Die maximal zulaessige Obergrenze fuer die Wahrscheinlichkeit, die Nullhypothese faelschlicherweise abzulehnen (haeufig $\alpha = 0{,}05$ oder $\alpha = 0{,}01$).
@@ -75,6 +87,15 @@ Balanciere auf dem stochastischen Balance-Board das Verhaeltnis zwischen Signifi
 
 *Erkenntnis*: Je kleiner man $\alpha$ waehlt (Schutz vor Fehler 1. Art), desto groesser wird zwangslaeufig $\beta$ (Gefahr, eine echte Unwirksamkeit nicht zu bemerken). Die einzige Moeglichkeit, BEIDE Fehler gleichzeitig zu senken, ist die Erhoehung des Stichprobenumfangs $n$!
 
+HILFE：
+- 从结构维度切入，先明确本步先求什么量（Zielgroesse: Hypothesentest),再选工具：用Hypothesentest判定对象归属，用Binomialverteilung组织步骤顺序。
+- 从定理维度切入，用Binomialverteilung与Nullhypothese的适用条件选择公式：先写条件，再代入；berechnen-Aufgaben verlangen erst die Verfahrenswahl (berechnen oder Nachweis), dann die Rechnung.
+- 从验证维度切入，用定义域/单调性/量级做方向对照，判断结果是否合理。不给出具体分点、函数值、和值与归属结论。
+
+COMPLETION (Lückentext):
+- 中文说明：根据上表补全关键数值，不回看上文。
+- Ergaenze: $n = ___$ und $p_1 = ___$, und es gilt $Kontrolle = ___$.
+
 `Klausur-Satz: Bei Aufgaben zu Stochastik: Einseitiger und zweiseitiger Hypothesentest sowie Fehler 1. und 2. Art muss die theoriegeleitete Begruendung stets durch exakte Fachtermini und empirische Belege abgesichert werden.`
 
 ## Schritt 5 — check: Das Konzeptduell
@@ -86,15 +107,29 @@ VERGLEICH: Fehler 1. Art ($\alpha$-Fehler) versus Fehler 2. Art ($\beta$-Fehler)
 ## Schritt 6 — szenario: Die Klausuraufgabe
 Eine Gluecksspielbehoerde testet einen Wuerfel auf Fairness. Der Betreiber behauptet, die Sechs faellt mit $p = \frac{1}{6}$. Die Pruefer vermuten Falschspiel zugunsten der Sechs ($p > \frac{1}{6}$). Es werden $n = 600$ Wuerfe ausgefuehrt. Das Signifikanzniveau betraegt $\alpha = 0{,}05$.
 
-1. **AFB I**: Formuliere die Nullhypothese $H_0$ sowie die Gegenhypothese $H_1$ und bestimme den Erwartungswert $\mu$ und die Standardabweichung $\sigma$ unter der Annahme, dass $H_0$ wahr ist.
-2. **AFB II**: Ermittle mithilfe der Normalverteilungsnaeherung (mit Stetigkeitskorrektur) oder der kumulierten Binomialverteilung den kleinstmoeglichen kritischen Wert $k$, ab dem der Wuerfel beschlagnahmt wird.
-3. **AFB III**: Angenommen, der Wuerfel wurde tatsaechlich manipuliert und zeigt die Sechs mit einer Wahrscheinlichkeit von $p_1 = 0{,}25$. Berechne die Wahrscheinlichkeit eines Fehlers 2. Art und beurteile die Guete des Tests.
+AUFGABE (berechnen, [AFB III]): Berechne erstens den Ansatz mit Hypothesentest, zweitens die Rechnung mit Binomialverteilung und drittens die Deutung mit Nullhypothese zum Fall: Eine Gluecksspielbehoerde testet einen Wuerfel auf Fairness. 中文说明：三问分别对应 Ansatz、Rechnung 与 Deutung。
+1. **[AFB I]**: Formuliere die Nullhypothese $H_0$ sowie die Gegenhypothese $H_1$ und bestimme den Erwartungswert $\mu$ und die Standardabweichung $\sigma$ unter der Annahme, dass $H_0$ wahr ist.
+2. **[AFB II]**: Ermittle mithilfe der Normalverteilungsnaeherung (mit Stetigkeitskorrektur) oder der kumulierten Binomialverteilung den kleinstmoeglichen kritischen Wert $k$, ab dem der Wuerfel beschlagnahmt wird.
+3. **[AFB III]**: Angenommen, der Wuerfel wurde tatsaechlich manipuliert und zeigt die Sechs mit einer Wahrscheinlichkeit von $p_1 = 0{,}25$. Berechne die Wahrscheinlichkeit eines Fehlers 2. Art und beurteile die Guete des Tests.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Ansatz mit Hypothesentest und berechnen-Wahl (Stochastik: Einseitiger und zweiseitiger) [AFB I] | 5 NP | Skizze mit beschrifteten Achsen als Alternativweg
+Rechnung mit Binomialverteilung und Bedingungspruefung [AFB II] | 5 NP | Numerische Kontrolle mit Taschenrechner als Alternativweg
+Deutung mit Nullhypothese plus Einheit/Randkontrolle [AFB III] | 5 NP | Geometrische Deutung der Konvergenz als Alternativweg
 
 `Musterloesungshinweis`:
-- AFB I: $H_0: p \le \frac{1}{6}$ vs. $H_1: p > \frac{1}{6}$ (rechtsseitiger Test). $\mu = n \cdot p = 600 \cdot \frac{1}{6} = 100$. $\sigma = \sqrt{n \cdot p \cdot (1-p)} = \sqrt{600 \cdot \frac{1}{6} \cdot \frac{5}{6}} = \sqrt{83{,}33} \approx 9{,}13$. Da $\sigma > 3$, ist die Laplace-Bedingung erfuellt.
-- AFB II: Rechtsseitiger Ablehnungsbereich $\bar{A} = \{k; \dots; 600\}$. Gesucht ist $k$ mit $P_{p=1/6}(X \ge k) \le 0{,}05 \iff P(X \le k - 1) \ge 0{,}95$. Mit $z_{0{,}95} \approx 1{,}645$: $\frac{(k - 0{,}5) - 100}{9{,}13} \ge 1{,}645 \implies k - 0{,}5 \ge 115{,}02 \implies k \ge 115{,}52$, also $k = 116$. Ablehnungsbereich ist $[116; 600]$.
-- AFB III: Ein Fehler 2. Art liegt vor, wenn trotz gezinktem Wuerfel ($p_1 = 0{,}25$) nicht abgelehnt wird, also $X \in A = \{0; \dots; 115\}$. Unter $p_1 = 0{,}25$ ist $\mu_1 = 600 \cdot 0{,}25 = 150$, $\sigma_1 = \sqrt{600 \cdot 0{,}25 \cdot 0{,}75} = \sqrt{112{,}5} \approx 10{,}61$. $P_{p=0{,}25}(X \le 115) = \Phi\left(\frac{115{,}5 - 150}{10{,}61}\right) = \Phi(-3{,}25) \approx 0{,}0006 = 0{,}06\,\%$. Der Test entlarvt den gezinkten Wuerfel mit ueberwaeltigender Wahrscheinlichkeit von $99{,}94\,\%$ (hohe Teststaerke / Power).
+- [AFB I]: $H_0: p \le \frac{1}{6}$ vs. $H_1: p > \frac{1}{6}$ (rechtsseitiger Test). $\mu = n \cdot p = 600 \cdot \frac{1}{6} = 100$. $\sigma = \sqrt{n \cdot p \cdot (1-p)} = \sqrt{600 \cdot \frac{1}{6} \cdot \frac{5}{6}} = \sqrt{83{,}33} \approx 9{,}13$. Da $\sigma > 3$, ist die Laplace-Bedingung erfuellt.
+- [AFB II]: Rechtsseitiger Ablehnungsbereich $\bar{A} = \{k; \dots; 600\}$. Gesucht ist $k$ mit $P_{p=1/6}(X \ge k) \le 0{,}05 \iff P(X \le k - 1) \ge 0{,}95$. Mit $z_{0{,}95} \approx 1{,}645$: $\frac{(k - 0{,}5) - 100}{9{,}13} \ge 1{,}645 \implies k - 0{,}5 \ge 115{,}02 \implies k \ge 115{,}52$, also $k = 116$. Ablehnungsbereich ist $[116; 600]$.
+- [AFB III]: Ein Fehler 2. Art liegt vor, wenn trotz gezinktem Wuerfel ($p_1 = 0{,}25$) nicht abgelehnt wird, also $X \in A = \{0; \dots; 115\}$. Unter $p_1 = 0{,}25$ ist $\mu_1 = 600 \cdot 0{,}25 = 150$, $\sigma_1 = \sqrt{600 \cdot 0{,}25 \cdot 0{,}75} = \sqrt{112{,}5} \approx 10{,}61$. $P_{p=0{,}25}(X \le 115) = \Phi\left(\frac{115{,}5 - 150}{10{,}61}\right) = \Phi(-3{,}25) \approx 0{,}0006 = 0{,}06\,\%$. Der Test entlarvt den gezinkten Wuerfel mit ueberwaeltigender Wahrscheinlichkeit von $99{,}94\,\%$ (hohe Teststaerke / Power).
 
+> MUSTER-KLAUSURSATZ (15 NP): Bei Hypothesentests muss die theoriegeleitete Begruendung stets durch exakte Fachtermini und empirische Belege abgesichert werden.
+
+KERNSATZ (auswendig):
+- Kernsatz: `Bei Hypothesentests muss die theoriegeleitete Begruendung stets durch exakte Fachtermini und empirische Belege abgesichert werden.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = Bei Hypothesentests muss die | Mechanismus = theoriegeleitete Begruendung stets durch exakte Fachtermini und empirische | Urteil = Belege abgesichert werden.
+- Selbsttest: Bei ___ muss die theoriegeleitete Begruendung stets durch exakte Fachtermini und empirische Belege abgesichert werden.
 ## Schritt 7 — muendlich: Die muendliche Blitzpruefung
 Simuliere ein muendliches Abiturszenario:
 

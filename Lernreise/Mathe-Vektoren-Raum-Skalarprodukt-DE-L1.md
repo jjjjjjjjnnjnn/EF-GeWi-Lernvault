@@ -8,7 +8,7 @@ operatoren: [berechnen, begruenden, nachweisen]
 klausurrelevant: true
 datum: 2026-09-26
 tags: [EF, Mathe, Vektoren]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Vektoren im Raum und Skalarprodukt (L1, Ziel Klausur)
@@ -20,13 +20,25 @@ ZIELE (drei messbare Ziele dieser Lektion):
 
 1. Du kannst $\vec{a} = (1, 2, 3)$ und $\vec{b} = (4, 0, -1)$ addieren, mit $2$ skalieren und $|\vec{a}| = \sqrt{14}$ berechnen.
 2. Du kannst $\vec{a} \cdot \vec{b} = 1$ und $\cos(\phi) = \frac{1}{\sqrt{14}\sqrt{17}}$ zu $\phi \approx 86{,}3^\circ$ bestimmen.
-3. Du kannst mit $\vec{a} \cdot \vec{b} = 0$ Orthogonalitaet nachweisen und Gegenbeispiele mit $\ne 0$ einordnen (AFB II).
+3. Du kannst mit $\vec{a} \cdot \vec{b} = 0$ Orthogonalitaet nachweisen und Gegenbeispiele mit $\ne 0$ einordnen ([AFB II]).
 
 ###
 
 ### Hook / Phaenomen
 
 Hook / Phaenomen: Zwei Pfeile im Raum: Zeigen sie gemeinsam voran oder blockieren sie sich? Das **Skalarprodukt** misst die Zusammenarbeit in einer einzigen Zahl. Null bedeutet **Orthogonalitaet**, der **Betrag** normiert, die **Winkelformel** enthuellt den Rest.
+
+预测 [Option A]：Der grobe Winkelwert aus wenigen Teilwerten genuegt bereits, weitere Verfeinerung aendert nichts。若选A，你在Step 2用工具检验该方向的变化。
+
+预测 [Option B]：Erst fortgesetzte Verfeinerung laesst den Winkelwert gegen den exakten Wert laufen。若选B，你在Step 2用工具检验该方向的变化。
+
+AUFLÖSUNG (nach der Wahl lesen)
+
+以下解析在选择后阅读，含原两项机制分析全文：
+- Mechanismus A：Hook / Phaenomen: Zwei Pfeile im Raum: Zeigen sie gemeinsam voran oder blockieren sie sich?
+- Mechanismus B：Das **Skalarprodukt** misst die Zusammenarbeit in einer einzigen Zahl.
+
+本质一句话：Das Skalarprodukt entscheidet Zusammenarbeit: Positiv spitz, null orthogonal, negativ stumpf.
 
 `Klausur-Satz: Das Skalarprodukt entscheidet Zusammenarbeit: Positiv spitz, null orthogonal, negativ stumpf.`
 
@@ -92,12 +104,16 @@ BEISPIEL (Sandbox Level mit Werkzeug):
 
 [Werkzeug: formula]
 
-AUFGABE (Levelziel, AFB II): Knacke das Vektor-Level: Ziehe im Sandbox-Slider die Vektorspitze und beobachte, wie sich Skalarprodukt und Winkel live aendern und bei Orthogonalitaet das Produkt null wird. Stelle eine orthogonale Lage und eine spitze Lage ein, lies beide Werte ab und berechne dann exakt per Koordinaten Produkt, Betraege und Winkel. Vergleiche Sandbox und Rechnung.
+AUFGABE (Levelziel, [AFB II]): Knacke das Vektor-Level: Ziehe im Sandbox-Slider die Vektorspitze und beobachte, wie sich Skalarprodukt und Winkel live aendern und bei Orthogonalitaet das Produkt null wird. Stelle eine orthogonale Lage und eine spitze Lage ein, lies beide Werte ab und berechne dann exakt per Koordinaten Produkt, Betraege und Winkel. Vergleiche Sandbox und Rechnung.
 
-HILFE:
-1. Uebertrage beide Vektoren exakt als Koordinaten und lies im Sandbox-Slider Produkt und Winkel fuer zwei Lagen ab.
-2. Berechne $a \cdot b$ komponentenweise und pruefe zuerst das Nullkriterium fuer Orthogonalitaet.
-3. Berechne $|a|$ und $|b|$ und wende $\cos(\gamma) = (a \cdot b)/(|a||b|)$ fuer die spitze Lage an.
+HILFE：
+- 从结构维度切入，先明确本步先求什么量（Zielgroesse: Skalarprodukt),再选工具：用Skalarprodukt判定对象归属，用Winkelformel组织步骤顺序。
+- 从定理维度切入，用Winkelformel与Nullkriterium的适用条件选择公式：先写条件，再代入；berechnen-Aufgaben verlangen erst die Verfahrenswahl (berechnen oder Nachweis), dann die Rechnung.
+- 从验证维度切入，用定义域/单调性/量级做方向对照，判断结果是否合理。不给出具体分点、函数值、和值与归属结论。
+
+COMPLETION (Lückentext):
+- 中文说明：根据MUSTERLÖSUNG补全关键数值，不回看上文。
+- Ergaenze: $a \cdot b = ___$ und $\gamma = ___$, und es gilt $Kontrolle = ___$.
 
 MUSTERLOESUNG: Sandbox zeigt in orthogonaler Lage $a \cdot b = 0$ bei $\gamma = 90$ Grad und in spitzer Lage ein positives Produkt mit kleinem Winkel. Rechnung $a \cdot b = 0$ bestaetigt Orthogonalitaet in einer Zeile. Fuer die spitze Lage liefern Betraege und Winkelformel denselben Winkel wie die Sandbox. Koordinaten einsetzen, Betraege bilden und Winkelformel anwenden fuehrt in drei Schritten zum Ziel.
 
@@ -141,11 +157,25 @@ CHECK (drei Fragen mit Antworten):
 ## Schritt 7 — szenario: Klausurtransfer: Vektoren im Raum und Skalarprodukt: Reserve-Protokoll
 ROLLE: Du bist Tutor im Mathe-Foerderkurs der EF.
 SITUATION: Ein Mitschueler behauptet, die Vektoren $\vec{a} = (1, 1, 1)$ und $\vec{b} = (1, -1, 0)$ seien parallel, weil beide feste Laengen besitzen.
-AUFGABE (begruenden, AFB III): Widerlege die Behauptung in einer zusammenhaengenden Darstellung (circa 150 Woerter), berechne Skalarprodukt und Winkel und erklaere den Unterschied zwischen Betragsgleichheit und Parallelitaet.
+AUFGABE (berechnen, [AFB III]): Berechne Widerlege die Behauptung in einer zusammenhaengenden Darstellung (circa 150 Woerter), berechne Skalarprodukt und Winkel und erklaere den Unterschied zwischen Betragsgleichheit und Parallelitaet.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Ansatz mit Skalarprodukt und berechnen-Wahl (Vektoren im Raum und Skalarprodukt) [AFB I] | 5 NP | Skizze mit beschrifteten Achsen als Alternativweg
+Rechnung mit Winkelformel und Bedingungspruefung [AFB II] | 5 NP | Numerische Kontrolle mit Taschenrechner als Alternativweg
+Deutung mit Nullkriterium plus Einheit/Randkontrolle [AFB III] | 5 NP | Geometrische Deutung der Konvergenz als Alternativweg
+
 RUBRIC (30 XP): Korrektes Skalarprodukt $\vec{a} \cdot \vec{b} = 0$ (10 XP) | Winkel $\phi = 90^\circ$ mit Formel (10 XP) | Begruendung Betrag gegen Richtung (5 XP) | Sprachlich geschlossene Darstellung (5 XP).
 
 `Klausur-Satz: Wer Skalarprodukt berechnet, Winkel bestimmt und Orthogonalitaet begruendet, erhaelt die volle Punktzahl.`
 
+> MUSTER-KLAUSURSATZ (15 NP): Koordinaten einsetzen, Betraege bilden, Winkelformel anwenden.
+
+KERNSATZ (auswendig):
+- Kernsatz: `Koordinaten einsetzen, Betraege bilden, Winkelformel anwenden.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = Koordinaten einsetzen, | Mechanismus = Betraege bilden, | Urteil = Winkelformel anwenden.
+- Selbsttest: Koordinaten einsetzen, Betraege bilden, ___ anwenden.
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Reserve-Protokoll
 TAKEAWAY (Kernbotschaft in einem Kasten):
 

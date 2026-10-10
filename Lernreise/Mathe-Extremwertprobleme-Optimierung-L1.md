@@ -8,7 +8,7 @@ operatoren: [bestimmen, beurteilen]
 klausurrelevant: true
 datum: 2026-09-26
 tags: [EF, Mathe, Analysis]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Extremwertprobleme und Optimierung (L1, Ziel Klausur)
@@ -20,7 +20,7 @@ ZIELE (3条，本节20分钟学完能做到——先读中文，再记德语)：
 
 1. 中文：能说清极值问题的三件套流程——列目标函数 Zielfunktion，找约束条件 Nebenbedingung 代入化为一元函数，再求导找候选点并做边界检验 Randpruefung。
 2. 中文：能对一个纸箱体积问题独立列出 V(x)、确定 Definitionsmenge，并用 f'=0 加二阶导或单调表判断极大还是极小。
-3. 中文：能解释为什么 f'=0 只是必要条件，必须结合 Randwerte 与 globallyer Vergleich 才能下结论“最大”，并写出德语标准结论句（AFB II-III）。
+3. 中文：能解释为什么 f'=0 只是必要条件，必须结合 Randwerte 与 globallyer Vergleich 才能下结论“最大”，并写出德语标准结论句（[AFB II]-III）。
 
 ### Hook / Phaenomen
 
@@ -28,10 +28,22 @@ ZIELE (3条，本节20分钟学完能做到——先读中文，再记德语)：
 
 Hook / Phaenomen: Aus einem Blech soll die groesste Schachtel werden: Jeder Schnitt veraendert Volumen und Flaeche zugleich. Die **Zielfunktion** misst den Gewinn, die **Nebenbedingung** frisst eine Variable. Wo die **Extremalbedingung** null wird, steht das **Optimum**.
 
+预测 [Option A]：Der grobe Zielfunktionswert aus wenigen Teilwerten genuegt bereits, weitere Verfeinerung aendert nichts。若选A，你在Step 2用工具检验该方向的变化。
+
+预测 [Option B]：Erst fortgesetzte Verfeinerung laesst den Zielfunktionswert gegen den exakten Wert laufen。若选B，你在Step 2用工具检验该方向的变化。
+
+AUFLÖSUNG (nach der Wahl lesen)
+
+以下解析在选择后阅读，含原两项机制分析全文：
+- Mechanismus A：一张铁皮做体积最大的盒子：剪得多装得多也废料多，目标函数和约束条件联手，才能算出最优那一剪。 Hook / Phaenomen: Aus einem Blech soll die groesste Schachtel werden: Jeder Schnitt veraendert Volumen und Flaeche zugleich.
+- Mechanismus B：Die **Zielfunktion** misst den Gewinn, die **Nebenbedingung** frisst eine Variable.
+
+本质一句话：Optimieren heisst einsperren: Zielfunktion plus Nebenbedingung erzeugen eine Variable mit Rand.
+
 `Klausur-Satz: Optimieren heisst einsperren: Zielfunktion plus Nebenbedingung erzeugen eine Variable mit Rand.`
 
 ## Schritt 2 — entdecken: Ausruestungskiste der Algorithmus-Unit
-PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语）：
+PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文->德语）：
 
 中文在上，德语在下：
 
@@ -85,12 +97,16 @@ BEISPIEL（正确例题示范，含教具操作与解答）：
 
 [Werkzeug: box-optimizer]
 
-AUFGABE (bestimmen, AFB II)：Aus einer Pappe 20 cm x 12 cm wird durch Ausschneiden von Quadraten der Seite x eine offene Kiste gebaut. Bestimmen Sie die Schnittlaenge x, fuer die das Volumen maximal wird, und geben Sie das maximale Volumen an.
+AUFGABE (bestimmen, [AFB II])：Aus einer Pappe 20 cm x 12 cm wird durch Ausschneiden von Quadraten der Seite x eine offene Kiste gebaut. Bestimmen Sie die Schnittlaenge x, fuer die das Volumen maximal wird, und geben Sie das maximale Volumen an.
 
-HILFE:
-1. Schritt 1: Zielfunktion mit Nebenbedingung aufstellen und Definitionsmenge notieren: V(x) = x(20-2x)(12-2x), D = [0; 6].
-2. Schritt 2: Ableiten und Kandidaten suchen: V'(x) = 12x^2 - 128x + 240 = 0 loesen, unbrauchbare Loesung ausserhalb von D streichen.
-3. Schritt 3: Art der Kandidaten mit V''(x) klaeren und Randpruefung V(0), V(6) gegen V(x_Kandidat) vergleichen.
+HILFE：
+- 从结构维度切入，先明确本步先求什么量（Zielgroesse: Nebenbedingung),再选工具：用Nebenbedingung判定对象归属，用Extremalbedingung组织步骤顺序。
+- 从定理维度切入，用Extremalbedingung与Vorzeichen-Test的适用条件选择公式：先写条件，再代入；bestimmen-Aufgaben verlangen erst die Verfahrenswahl (bestimmen oder Nachweis), dann die Rechnung.
+- 从验证维度切入，用定义域/单调性/量级做方向对照，判断结果是否合理。不给出具体分点、函数值、和值与归属结论。
+
+COMPLETION (Lückentext):
+- 中文说明：根据MUSTERLÖSUNG补全关键数值，不回看上文。
+- Ergaenze: $Nebenbedingung = ___$ und $Extremalbedingung = ___$, und es gilt $Kontrolle = ___$.
 
 MUSTERLÖSUNG / MUSTERLOESUNG: Es gilt V(x) = x(20-2x)(12-2x) = 4x^3 - 64x^2 + 240x auf D = [0; 6]. Dann V'(x) = 12x^2 - 128x + 240 und V''(x) = 24x - 128. Aus V'(x) = 0 folgt 3x^2 - 32x + 60 = 0, also x = (32 +- sqrt(304)) / 6, somit x1 ~ 2.43 und x2 ~ 8.24. Nur x1 liegt in D. Wegen V''(2.43) ~ -69.7 < 0 liegt ein lokales Maximum vor. Randpruefung: V(0) = 0, V(6) = 0, V(2.43) ~ 262.7. Also ist x ~ 2.43 cm optimal und Vmax ~ 262.7 cm^3.
 
@@ -138,11 +154,25 @@ CHECK检索默写（自测 3 题，与答案配对）：
 ## Schritt 7 — szenario: Klausurtransfer: Extremwertprobleme und Optimierung: Sachkontext Frachthafen
 ROLLE: Du bist Praktikant in der Logistik-Abteilung eines Online-Haendlers.
 SITUATION: Aus einem Standard-Bogen 24 cm x 18 cm sollen offene Versandkisten mit maximalem Volumen gebaut werden. Deine Chefin verlangt eine nachvollziehbare Rechnung mit Zielfunktion, Definitionsmenge, Ableitung und Randpruefung sowie eine klare Empfehlung fuer die Produktion (ca. 150 Woerter, mit Einheiten cm und cm^3).
-AUFGABE (beurteilen, AFB III)：Entscheide, welche Schnittlaenge in die Produktion geht, und beurteile, wie sensibel das Maximum auf Abweichungen von +-0.5 cm reagiert.
+AUFGABE (bestimmen, [AFB III]): Bestimme Entscheide, welche Schnittlaenge in die Produktion geht, und beurteile, wie sensibel das Maximum auf Abweichungen von +-0.5 cm reagiert.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Ansatz mit Nebenbedingung und bestimmen-Wahl (Extremwertprobleme und Optimierung) [AFB I] | 5 NP | Skizze mit beschrifteten Achsen als Alternativweg
+Rechnung mit Extremalbedingung und Bedingungspruefung [AFB II] | 5 NP | Numerische Kontrolle mit Taschenrechner als Alternativweg
+Deutung mit Vorzeichen-Test plus Einheit/Randkontrolle [AFB III] | 5 NP | Geometrische Deutung der Konvergenz als Alternativweg
+
 RUBRIC (30 XP): Zielfunktion plus Definitionsmenge korrekt (5 XP) | Kandidaten mit Ableitung korrekt berechnet (10 XP) | Randpruefung mit Einheiten vollstaendig (10 XP) | Produktionsempfehlung mit Beurteilung der Sensibilitaet (5 XP).
 
 `Klausur-Satz: Wer Zielfunktion, Nebenbedingung, Extremalbedingung und Randpruefung lueckenlos zeigt, erhaelt die volle Punktzahl.`
 
+> MUSTER-KLAUSURSATZ (15 NP): Jedes Optimum braucht drei Zeugen: Ableitung null, Vorzeichenwechsel und Randvergleich.
+
+KERNSATZ (auswendig):
+- Kernsatz: `Jedes Optimum braucht drei Zeugen: Ableitung null, Vorzeichenwechsel und Randvergleich.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = Jedes Optimum braucht drei Zeugen | Mechanismus = Ableitung null | Urteil = Vorzeichenwechsel und Randvergleich.
+- Selbsttest: Jedes Optimum braucht drei Zeugen: Ableitung null, ___ und Randvergleich.
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Sachkontext Frachthafen
 TAKEAWAY 1盒（核心总结）：
 

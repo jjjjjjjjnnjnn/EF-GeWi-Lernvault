@@ -8,7 +8,7 @@ operatoren: [berechnen, eroertern]
 klausurrelevant: true
 datum: 2026-09-26
 tags: [EF, Mathe, Analysis]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Ganzrationale Funktionen im Sachkontext (L1, Ziel Klausur)
@@ -20,7 +20,7 @@ ZIELE (3条，本节20分钟学完能做到——先读中文，再记德语)：
 
 1. 中文：能把企业故事翻译成函数：收入 E(x)、成本 K(x)、利润 G(x)=E(x)-K(x)，x 为产量（ME），函数值为钱（GE），并写出 Definitionsmenge。
 2. 中文：能用 ganzrationale Funktionen 求盈亏平衡点（Nullstellen von G）、最高利润（Hochpunkt von G）与最快增长处（Wendepunkt）。
-3. 中文：能结合图像 eroertern 哪个产量区间值得生产，并写出带单位的德语标准结论句（AFB II-III）。
+3. 中文：能结合图像 eroertern 哪个产量区间值得生产，并写出带单位的德语标准结论句（[AFB II]-III）。
 
 ### Hook / Phaenomen
 
@@ -28,10 +28,22 @@ ZIELE (3条，本节20分钟学完能做到——先读中文，再记德语)：
 
 Hook / Phaenomen: Die Kosten steigen kurvig, der Preis bleibt linear: Irgendwo dazwischen liegt die Gewinnzone. Die **Gewinnfunktion** zieht Kosten von Erloes ab, der **Break-even-Punkt** markiert die schwarze Null. Erst das **Gewinnmaximum** sagt, welche Menge wirklich optimal ist.
 
+预测 [Option A]：Der grobe Sachkontextwert aus wenigen Teilwerten genuegt bereits, weitere Verfeinerung aendert nichts。若选A，你在Step 2用工具检验该方向的变化。
+
+预测 [Option B]：Erst fortgesetzte Verfeinerung laesst den Sachkontextwert gegen den exakten Wert laufen。若选B，你在Step 2用工具检验该方向的变化。
+
+AUFLÖSUNG (nach der Wahl lesen)
+
+以下解析在选择后阅读，含原两项机制分析全文：
+- Mechanismus A：成本是曲线，售价是直线：两线之间夹着利润区，盈亏平衡点只是起点，利润最大点才是终点。 Hook / Phaenomen: Die Kosten steigen kurvig, der Preis bleibt linear: Irgendwo dazwischen liegt die Gewinnzone.
+- Mechanismus B：Die **Gewinnfunktion** zieht Kosten von Erloes ab, der **Break-even-Punkt** markiert die schwarze Null.
+
+本质一句话：Im Sachkontext wird jede Nullstelle oekonomisch gelesen: Break-even ist Kostendeckung, Maximum ist optimale Menge.
+
 `Klausur-Satz: Im Sachkontext wird jede Nullstelle oekonomisch gelesen: Break-even ist Kostendeckung, Maximum ist optimale Menge.`
 
 ## Schritt 2 — entdecken: Ausruestungskiste der Algorithmus-Unit
-PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语）：
+PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文->德语）：
 
 中文在上，德语在下：
 
@@ -85,12 +97,16 @@ BEISPIEL（正确例题示范，含教具操作与解答）：
 
 [Werkzeug: formula]
 
-AUFGABE (berechnen, AFB II)：Gegeben sind E(x) = 12x und K(x) = 0.5x^3 - 6x^2 + 26x + 8 auf D = [0; 12] (x in ME, Werte in GE). Bestimmen Sie die Gewinnfunktion G(x), die Break-even-Punkte und die gewinnmaximale Menge.
+AUFGABE (berechnen, [AFB II])：Gegeben sind E(x) = 12x und K(x) = 0.5x^3 - 6x^2 + 26x + 8 auf D = [0; 12] (x in ME, Werte in GE). Bestimmen Sie die Gewinnfunktion G(x), die Break-even-Punkte und die gewinnmaximale Menge.
 
-HILFE:
-1. Schritt 1: Gewinnfunktion bilden: G(x) = E(x) - K(x) ausrechnen und Definitionsmenge mit Einheiten notieren.
-2. Schritt 2: Break-even als Nullstellen von G suchen: G(x) = 0 mit GTR oder Naeherung loesen.
-3. Schritt 3: Maximum als Hochpunkt von G suchen: G'(x) = 0 plus G''(x) und Randwerte auf D pruefen.
+HILFE：
+- 从结构维度切入，先明确本步先求什么量（Zielgroesse: S-Kurve),再选工具：用S-Kurve判定对象归属，用Umsatz组织步骤顺序。
+- 从定理维度切入，用Umsatz与Antwortsatz的适用条件选择公式：先写条件，再代入；berechnen-Aufgaben verlangen erst die Verfahrenswahl (berechnen oder Nachweis), dann die Rechnung.
+- 从验证维度切入，用定义域/单调性/量级做方向对照，判断结果是否合理。不给出具体分点、函数值、和值与归属结论。
+
+COMPLETION (Lückentext):
+- 中文说明：根据MUSTERLÖSUNG补全关键数值，不回看上文。
+- Ergaenze: $S-Kurve = ___$ und $Umsatz = ___$, und es gilt $Kontrolle = ___$.
 
 MUSTERLÖSUNG / MUSTERLOESUNG: Es gilt G(x) = 12x - (0.5x^3 - 6x^2 + 26x + 8) = -0.5x^3 + 6x^2 - 14x - 8 auf D = [0; 12] ME. Aus G(x) = 0 folgt mit GTR x_BE1 = 4 ME und x_BE2 ~ 8.49 ME; Probe: G(4) = -32 + 96 - 56 - 8 = 0. Weiter gilt G'(x) = -1.5x^2 + 12x - 14 = 0, also x^2 - 8x + 28/3 = 0, somit x ~ 1.42 oder x ~ 6.58. Mit G''(x) = -3x + 12 gilt G''(1.42) > 0 (Tiefpunkt) und G''(6.58) < 0 (Hochpunkt). Mit G(6.58) ~ 17.24 GE, G(0) = -8 GE und G(12) = -128 GE ist x ~ 6.58 ME die gewinnmaximale Menge, die Gewinnzone liegt zwischen 4 ME und 8.49 ME. Der Wendepunkt liegt bei x_W = 4 ME mit W(4 | 0).
 
@@ -140,11 +156,25 @@ und .. lohnt Produktion”。
 ## Schritt 7 — szenario: Klausurtransfer: Ganzrationale Funktionen im Sachkontext: Grenzwert am Limit
 ROLLE: Du bist Junior-Controller in einem Startup.
 SITUATION: E(x) = 15x, K(x) = 0.4x^3 - 5x^2 + 28x + 15, D = [0; 15] ME, Werte in GE. Die Chefin will wissen, ab wann sich Produktion lohnt, wo der Gewinn maximal ist und ob eine Ausweitung ueber 12 ME hinaus sinnvoll bleibt. Schreibe eine Stellungnahme (ca. 150 Woerter) mit Rechnung und oekonomischer Deutung.
-AUFGABE (eroertern, AFB III)：Eroertere auf Basis von Break-even, Hochpunkt und Grenze von D, welche Mengenintervalle zu empfehlen sind.
+AUFGABE (berechnen, [AFB III]): Berechne Eroertere auf Basis von Break-even, Hochpunkt und Grenze von D, welche Mengenintervalle zu empfehlen sind.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Ansatz mit S-Kurve und berechnen-Wahl (Ganzrationale Funktionen im Sachkontext) [AFB I] | 5 NP | Skizze mit beschrifteten Achsen als Alternativweg
+Rechnung mit Umsatz und Bedingungspruefung [AFB II] | 5 NP | Numerische Kontrolle mit Taschenrechner als Alternativweg
+Deutung mit Antwortsatz plus Einheit/Randkontrolle [AFB III] | 5 NP | Geometrische Deutung der Konvergenz als Alternativweg
+
 RUBRIC (30 XP): G(x) plus D mit Einheiten korrekt (5 XP) | Break-even korrekt berechnet (10 XP) | Hochpunkt plus Wende korrekt (10 XP) | Eroerterung mit Empfehlung fuer Intervalle (5 XP).
 
 `Klausur-Satz: Wer Gewinnfunktion aufstellt, Break-even berechnet, Maximum bestimmt und oekonomisch deutet, erhaelt die volle Punktzahl.`
 
+> MUSTER-KLAUSURSATZ (15 NP): Jede Aussage im Sachkontext braucht Definitionsmenge D plus Einheiten ME und GE.
+
+KERNSATZ (auswendig):
+- Kernsatz: `Jede Aussage im Sachkontext braucht Definitionsmenge D plus Einheiten ME und GE.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = Jede Aussage im Sachkontext | Mechanismus = braucht Definitionsmenge D plus Einheiten | Urteil = ME und GE.
+- Selbsttest: Jede Aussage im Sachkontext braucht ___ D plus Einheiten ME und GE.
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Grenzwert am Limit
 TAKEAWAY 1盒（核心总结）：
 

@@ -8,7 +8,7 @@ operatoren: [darstellen, berechnen, erlaeutern]
 klausurrelevant: true
 datum: 2026-09-25
 tags: [EF, Mathe, CN]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: CN-Formeln dreisprachig diktieren und rechnen (L1, Ziel Klausur)
@@ -20,7 +20,7 @@ ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
 1. 中文：能用中德英三语说出五组 EF 核心公式——求导三法则、韦达定理、均值不等式、向量三式、古典概型，并各补一句适用条件。
 2. 中文：能把中文口诀（如"幂降一次系数提前""和积反推验根"）翻译成德语 Klausur 论证句。
-3. 中文：能用这些公式免工具手算求导、验根、向量长度与简单概率小题（AFB I/II）。
+3. 中文：能用这些公式免工具手算求导、验根、向量长度与简单概率小题（[AFB I/II]）。
 
 ### Hook / Phaenomen
 
@@ -28,10 +28,22 @@ ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
 Hook / Phaenomen: Fuenf Formeln, fuenf Fallen: Ohne **Bedingung** ist jede Formel ein Blindflug. Die **Potenzregel** versagt an Wurzeln, **AM-GM** versagt an negativen Zahlen, **Vieta** versagt an kubischen Gleichungen. Teil A ohne Formelsammlung belohnt nur, wer Formel plus Bedingung diktieren kann.
 
+预测 [Option A]：Der grobe Schaetzwert aus wenigen Teilwerten genuegt bereits, weitere Verfeinerung aendert nichts。若选A，你在Step 2用工具检验该方向的变化。
+
+预测 [Option B]：Erst fortgesetzte Verfeinerung laesst den Schaetzwert gegen den exakten Wert laufen。若选B，你在Step 2用工具检验该方向的变化。
+
+AUFLÖSUNG (nach der Wahl lesen)
+
+以下解析在选择后阅读，含原两项机制分析全文：
+- Mechanismus A：公式会背不等于会用：幂法则、韦达、均值不等式各有各的准入条件，无条件套用就是把送分题做成送命题。 Hook / Phaenomen: Fuenf Formeln, fuenf Fallen: Ohne **Bedingung** ist jede Formel ein Blindflug.
+- Mechanismus B：Die **Potenzregel** versagt an Wurzeln, **AM-GM** versagt an negativen Zahlen, **Vieta** versagt an kubischen Gleichungen.
+
+本质一句话：Jede Formel gilt nur unter ihrer Bedingung; ohne Bedingungspruefung gibt es keine Punkte.
+
 `Klausur-Satz: Jede Formel gilt nur unter ihrer Bedingung; ohne Bedingungspruefung gibt es keine Punkte.`
 
 ## Schritt 2 — entdecken: Ausruestungskiste der Algorithmus-Unit
-PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
+PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文->德语，Evidenz：pretraining降认知负荷）：
 
 中文在上，德语在下：
 
@@ -80,12 +92,16 @@ BEISPIEL（正确例题示范，含教具操作与解答）：
 
 [Werkzeug: formula]
 
-AUFGABE (berechnen, AFB II)：Dreisprachiges Diktat mit Rechnung. Gegeben ist h(x) = 5x^3 - 2x^2 + x - 8. a) Bestimmen Sie h'(x) und h'(1). b) Pruefen Sie mit dem Satz von Vieta, ob 4 und 5 die Loesungen von x^2 - 9x + 20 = 0 sind.
+AUFGABE (berechnen, [AFB II])：Dreisprachiges Diktat mit Rechnung. Gegeben ist h(x) = 5x^3 - 2x^2 + x - 8. a) Bestimmen Sie h'(x) und h'(1). b) Pruefen Sie mit dem Satz von Vieta, ob 4 und 5 die Loesungen von x^2 - 9x + 20 = 0 sind.
 
-HILFE:
-1. Schritt 1: Bei a) jeden Summanden mit der Potenzregel ableiten und zusammenfassen.
-2. Schritt 2: x0 = 1 in h'(x) einsetzen.
-3. Schritt 3: Bei b) Summe und Produkt der vermuteten Loesungen mit -b/a und c/a vergleichen.
+HILFE：
+- 从结构维度切入，先明确本步先求什么量（Zielgroesse: Potenzregel),再选工具：用Potenzregel判定对象归属，用Potenzform组织步骤顺序。
+- 从定理维度切入，用Potenzform与AM-GM-Ungleichung的适用条件选择公式：先写条件，再代入；darstellen-Aufgaben verlangen erst die Verfahrenswahl (darstellen oder Nachweis), dann die Rechnung.
+- 从验证维度切入，用定义域/单调性/量级做方向对照，判断结果是否合理。不给出具体分点、函数值、和值与归属结论。
+
+COMPLETION (Lückentext):
+- 中文说明：根据MUSTERLÖSUNG补全关键数值，不回看上文。
+- Ergaenze: $Potenzregel = ___$ und $Potenzform = ___$, und es gilt $Kontrolle = ___$.
 
 MUSTERLÖSUNG: a) Gliedweise gilt 5x^3 -> 15x^2, -2x^2 -> -4x, x -> 1, -8 -> 0. Also h'(x) = 15x^2 - 4x + 1 und h'(1) = 15 - 4 + 1 = 12. b) Fuer x^2 - 9x + 20 = 0 gilt a = 1, b = -9, c = 20, also x1 + x2 = -b/a = 9 und x1 * x2 = c/a = 20. Die vermuteten Werte 4 und 5 erfuellen 4 + 5 = 9 und 4 * 5 = 20; beide Bedingungen stimmen, also sind 4 und 5 die Loesungen.
 
@@ -133,10 +149,25 @@ CHECK检索默写（自测 3 题，与答案配对）：
 ## Schritt 7 — szenario: Klausurtransfer: CN-Formeln dreisprachig diktieren und rechnen: Bruecke der Symbole
 ROLLE: Du bist Tutor fuer zweisprachige Mathe-Lernende und haeltst eine kurze Diktat-Runde.
 SITUATION: Ein Mitschueler kennt die chinesischen Merksprueche, kann sie aber nicht in deutsche Klausursaetze uebersetzen, und schreibt im Test nur Ergebnisse ohne Bedingung. Erklaere ihm in einer zusammenhaengenden Darstellung (ca. 150 Woerter) an zwei Beispielen (Potenzregel und AM-GM), wie man eine Formel dreisprachig mit Bedingungssatz klausurtugendlich aufschreibt.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Ansatz mit Potenzregel und darstellen-Wahl (CN-Formeln dreisprachig diktieren und re) [AFB I] | 5 NP | Skizze mit beschrifteten Achsen als Alternativweg
+Rechnung mit Potenzform und Bedingungspruefung [AFB II] | 5 NP | Numerische Kontrolle mit Taschenrechner als Alternativweg
+Deutung mit AM-GM-Ungleichung plus Einheit/Randkontrolle [AFB III] | 5 NP | Geometrische Deutung der Konvergenz als Alternativweg
+
 RUBRIC (30 XP): Erklaerung des Dreisprachen-Prinzips (CN-Heuristik, DE-Bedingung, DE-Anwendung) (5 XP) | Korrektes Beispiel zur Potenzregel mit Anwendungssatz (10 XP) | Korrektes Beispiel zu AM-GM mit Positivitaetsbedingung und Gleichheitsfall (10 XP) | Kriteriengeleitetes Fazit zum Verhaeltnis von Heuristik und Beweispflicht (5 XP).
 
+AUFGABE (darstellen, [AFB III]): Stelle dar erstens den Ansatz mit Potenzregel, zweitens die Rechnung mit Potenzform und drittens die Deutung mit AM-GM-Ungleichung zum Fall: RUBRIC (30 XP): Erklaerung des Dreisprachen-Prinzips (CN-Heuristik, DE-Bedingung, DE-Anwendung) (5 XP) | Korrektes Beispiel zur Potenzregel . 中文说明：三问分别对应 Ansatz、Rechnung 与 Deutung。
 `Klausur-Satz: Wer Merkregel, Bedingungssatz und Anwendung an Potenzregel und AM-GM zeigt, schreibt klausurtauglich und erhaelt die volle Punktzahl.`
 
+> MUSTER-KLAUSURSATZ (15 NP): Formeln sind Werkzeuge mit Zulassung: Erst die Bedingung pruefen, dann rechnen.
+
+KERNSATZ (auswendig):
+- Kernsatz: `Formeln sind Werkzeuge mit Zulassung: Erst die Bedingung pruefen, dann rechnen.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = Formeln sind Werkzeuge mit Zulassung | Mechanismus = Erst die Bedingung pruefen | Urteil = dann rechnen.
+- Selbsttest: Formeln sind ___ mit Zulassung: Erst die Bedingung pruefen, dann rechnen.
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Bruecke der Symbole
 TAKEAWAY 1盒（核心总结）：
 

@@ -8,7 +8,7 @@ operatoren: [darstellen, berechnen, interpretieren]
 klausurrelevant: true
 datum: 2026-09-26
 tags: [EF, Mathe, Vektoren]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Skalarprodukt im Raum (L1, Ziel Klausur)
@@ -20,7 +20,7 @@ ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
 1. 中文：能说清空间向量点积的双重含义——代数上是坐标分量对应相乘再相加，几何上是模长乘积再乘夹角余弦。
 2. 中文：能用坐标公式和几何公式双向计算点积，并由点积符号判断夹角是锐角、直角还是钝角。
-3. 中文：能用点积等于零判定两向量垂直，并写出德语标准结论句（AFB II）。
+3. 中文：能用点积等于零判定两向量垂直，并写出德语标准结论句（[AFB II]）。
 
 ### Hook / Phaenomen
 
@@ -28,10 +28,22 @@ ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
 Hook / Phaenomen: Zwei Pfeile im Raum: Zeigen sie gemeinsam voran oder blockieren sie sich? Das **Skalarprodukt** misst die Zusammenarbeit in einer einzigen Zahl. Null bedeutet **Orthogonalitaet**, der **Betrag** normiert, die **Winkelformel** enthuellt den Rest.
 
+预测 [Option A]：Der grobe Winkelwert aus wenigen Teilwerten genuegt bereits, weitere Verfeinerung aendert nichts。若选A，你在Step 2用工具检验该方向的变化。
+
+预测 [Option B]：Erst fortgesetzte Verfeinerung laesst den Winkelwert gegen den exakten Wert laufen。若选B，你在Step 2用工具检验该方向的变化。
+
+AUFLÖSUNG (nach der Wahl lesen)
+
+以下解析在选择后阅读，含原两项机制分析全文：
+- Mechanismus A：空间里两个箭头：是同向发力还是互相拆台？点积用一个数说清配合程度，为零就是垂直，模长归一化后夹角现形。 Hook / Phaenomen: Zwei Pfeile im Raum: Zeigen sie gemeinsam voran oder blockieren sie sich?
+- Mechanismus B：Das **Skalarprodukt** misst die Zusammenarbeit in einer einzigen Zahl.
+
+本质一句话：Das Skalarprodukt entscheidet Zusammenarbeit: Positiv spitz, null orthogonal, negativ stumpf.
+
 `Klausur-Satz: Das Skalarprodukt entscheidet Zusammenarbeit: Positiv spitz, null orthogonal, negativ stumpf.`
 
 ## Schritt 2 — entdecken: Ausruestungskiste der Algorithmus-Unit
-PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
+PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文->德语，Evidenz：pretraining降认知负荷）：
 
 中文在上，德语在下：
 
@@ -98,16 +110,16 @@ BEISPIEL（正确例题示范，含教具操作与解答，中文在上、德语
 
 AUFGABE中文导读（沙盒谜题）：给出两空间向量，先判是否垂直，再求其夹角并精确到度。
 
-AUFGABE (anwenden, AFB II): Pruefen Sie zwei Raumvektoren auf Orthogonalitaet und berechnen Sie den eingeschlossenen Winkel.
+AUFGABE (anwenden, [AFB II]): Pruefen Sie zwei Raumvektoren auf Orthogonalitaet und berechnen Sie den eingeschlossenen Winkel.
 
-HILFE（中德双语步骤）：
+HILFE：
+- 从结构维度切入，先明确本步先求什么量（Zielgroesse: Skalarprodukt),再选工具：用Skalarprodukt判定对象归属，用Winkelformel组织步骤顺序。
+- 从定理维度切入，用Winkelformel与Vektorprodukt的适用条件选择公式：先写条件，再代入；darstellen-Aufgaben verlangen erst die Verfahrenswahl (darstellen oder Nachweis), dann die Rechnung.
+- 从验证维度切入，用定义域/单调性/量级做方向对照，判断结果是否合理。不给出具体分点、函数值、和值与归属结论。
 
-1. 中文：第1步坐标式求点乘，是零即垂直，关键词：Koordinaten。
-   Schritt 1 (DE): $\vec{a}\cdot\vec{b}$ komponentenweise bilden.
-2. 中文：第2步求模长并代入夹角公式，关键词：Betrag。
-   Schritt 2 (DE): $\cos\varphi$ aus Skalar und Betraegen bilden.
-3. 中文：第3步反余弦得角并回判形状，关键词：Winkel。
-   Schritt 3 (DE): $\varphi = \arccos(\dots)$ deuten.
+COMPLETION (Lückentext):
+- 中文说明：根据MUSTERLÖSUNG补全关键数值，不回看上文。
+- Ergaenze: $\vec{a}\cdot\vec{b} = ___$ und $\varphi = ___$, und es gilt $Kontrolle = ___$.
 
 MUSTERLOESUNG：中文：点乘为零则垂直，无需再算；非零则继续求模、求余弦、反余弦得角，符号提前告诉你答案是锐还是钝。
 
@@ -156,11 +168,25 @@ CHECK检索默写（自测 3 题，与答案配对）：
 ## Schritt 7 — szenario: Klausurtransfer: Skalarprodukt im Raum: ZKE-Generalprobe II
 ROLLE: Du bist Tutorin in der EF und hilfst einer Mitschuelerin bei der Klausurvorbereitung Vektoren.
 SITUATION: Sie hat $\vec{a} = (2, 1, -2)$ und $\vec{b} = (1, -2, 0)$ gegeben und weiss nicht, ob sie senkrecht stehen und welchen Winkel sie einschliessen.
-AUFGABE: Erklaere in ca. 150 Woertern mit Rechnung, wie Skalarprodukt, Betraege und Winkelformel zusammenhaengen, und gib eine klare Ja-Nein-Antwort zur Orthogonalitaet.
+AUFGABE (darstellen, [AFB III]): Stelle dar Erklaere in ca. 150 Woertern mit Rechnung, wie Skalarprodukt, Betraege und Winkelformel zusammenhaengen, und gib eine klare Ja-Nein-Antwort zur Orthogonalitaet.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Ansatz mit Skalarprodukt und darstellen-Wahl (Skalarprodukt im Raum) [AFB I] | 5 NP | Skizze mit beschrifteten Achsen als Alternativweg
+Rechnung mit Winkelformel und Bedingungspruefung [AFB II] | 5 NP | Numerische Kontrolle mit Taschenrechner als Alternativweg
+Deutung mit Vektorprodukt plus Einheit/Randkontrolle [AFB III] | 5 NP | Geometrische Deutung der Konvergenz als Alternativweg
+
 RUBRIC (30 XP): Korrektes Skalarprodukt (10 XP) | Korrekte Betraege (10 XP) | Winkelberechnung plus Orthogonalitaetsurteil mit Fachbegriffen (10 XP).
 
 `Klausur-Satz: Wer Skalarprodukt berechnet, Winkel bestimmt und Orthogonalitaet begruendet, erhaelt die volle Punktzahl.`
 
+> MUSTER-KLAUSURSATZ (15 NP): Das Skalarprodukt entscheidet Zusammenarbeit: Positiv spitz, null orthogonal, negativ stumpf.
+
+KERNSATZ (auswendig):
+- Kernsatz: `Das Skalarprodukt entscheidet Zusammenarbeit: Positiv spitz, null orthogonal, negativ stumpf.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = Das Skalarprodukt entscheidet Zusammenarbeit | Mechanismus = Positiv spitz | Urteil = null orthogonal, negativ stumpf.
+- Selbsttest: Das ___ entscheidet Zusammenarbeit: Positiv spitz, null orthogonal, negativ stumpf.
 ## Schritt 8 — reflexion: Takeaway & Reflexion: ZKE-Generalprobe II
 TAKEAWAY 1盒（核心总结）：
 

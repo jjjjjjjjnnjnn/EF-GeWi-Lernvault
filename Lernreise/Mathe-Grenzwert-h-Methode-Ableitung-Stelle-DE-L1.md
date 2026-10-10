@@ -8,7 +8,7 @@ operatoren: [darstellen, berechnen, begruenden]
 klausurrelevant: true
 datum: 2026-09-26
 tags: [EF, Mathe, Analysis]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Grenzwert mit der h-Methode an einer Stelle (L1, Ziel Klausur)
@@ -20,11 +20,23 @@ ZIELE (drei messbare Ziele dieser Lektion):
 
 1. Du kannst $m(h) = \frac{f(x_0+h)-f(x_0)}{h}$ mit $h \ne 0$ an $x_0 = 1$ fuer $f(x) = x^2$ aufstellen und zu $m(h) = 2 + h$ vereinfachen.
 2. Du kannst $\lim_{h \to 0} m(h) = 2$ bilden und als $f'(1) = 2$ sowie als Tangentensteigung in $P(1, 1)$ deuten.
-3. Du kannst begruenden, warum vor dem Einsetzen von $0$ gekuerzt werden muss, und den Antwortsatz im Sachkontext schreiben (AFB II).
+3. Du kannst begruenden, warum vor dem Einsetzen von $0$ gekuerzt werden muss, und den Antwortsatz im Sachkontext schreiben ([AFB II]).
 
 ### Hook / Phaenomen
 
 Hook / Phaenomen: Die Sekante rutscht an die Kurve heran, h schrumpft gegen null: Was uebrig bleibt, ist die exakte **Tangentensteigung**. Der **Differenzenquotient** misst noch den Durchschnitt, der **Differentialquotient** misst den Moment. Dazwischen liegt ein einziger Rechenschritt: **Kuerzen vor Grenzwert**.
+
+预测 [Option A]：Der grobe Grenzwert aus wenigen Teilwerten genuegt bereits, weitere Verfeinerung aendert nichts。若选A，你在Step 2用工具检验该方向的变化。
+
+预测 [Option B]：Erst fortgesetzte Verfeinerung laesst den Grenzwert gegen den exakten Wert laufen。若选B，你在Step 2用工具检验该方向的变化。
+
+AUFLÖSUNG (nach der Wahl lesen)
+
+以下解析在选择后阅读，含原两项机制分析全文：
+- Mechanismus A：Hook / Phaenomen: Die Sekante rutscht an die Kurve heran, h schrumpft gegen null: Was uebrig bleibt, ist die exakte **Tangentensteigung**.
+- Mechanismus B：Der **Differenzenquotient** misst noch den Durchschnitt, der **Differentialquotient** misst den Moment.
+
+本质一句话：Die h-Methode verwandelt mittlere in lokale Aenderung: Differenzenquotient kuerzen, dann h gegen null schicken.
 
 `Klausur-Satz: Die h-Methode verwandelt mittlere in lokale Aenderung: Differenzenquotient kuerzen, dann h gegen null schicken.`
 
@@ -90,12 +102,16 @@ BEISPIEL (Sandbox Level mit Werkzeug):
 
 [Werkzeug: tangent-slider]
 
-AUFGABE (Levelziel, AFB II): Knacke das h-Methoden-Level: Stelle im Sandbox-Slider nacheinander $h = 1{,}0$, $h = 0{,}5$ und $h = 0{,}1$ an $x_0 = 1$ fuer $f(x) = x^2$ ein. Lies jedes Mal $m(h)$ ab, beobachte die Annaeherung an den Grenzwert, und fuehre dann die h-Methode von Hand vollständig durch. Vergleiche dein Sandbox-Ergebnis mit dem exakten Wert und benenne den verbotenen Schritt.
+AUFGABE (Levelziel, [AFB II]): Knacke das h-Methoden-Level: Stelle im Sandbox-Slider nacheinander $h = 1{,}0$, $h = 0{,}5$ und $h = 0{,}1$ an $x_0 = 1$ fuer $f(x) = x^2$ ein. Lies jedes Mal $m(h)$ ab, beobachte die Annaeherung an den Grenzwert, und fuehre dann die h-Methode von Hand vollständig durch. Vergleiche dein Sandbox-Ergebnis mit dem exakten Wert und benenne den verbotenen Schritt.
 
-HILFE:
-1. Stelle $m(h) = (f(1+h)-f(1))/h$ auf und lies die Sandbox-Werte fuer $h = 1{,}0$ zu $m = 3$ und $h = 0{,}1$ zu $m = 2{,}1$ ab.
-2. Rechne $(1+h)^2 = 1+2h+h^2$, kuerze zu $m(h) = 2+h$ und setze niemals $h = 0$ vor dem Kuerzen ein.
-3. Bilde $h \to 0$ zu $f'(1) = 2$ und deute den Wert als Tangentensteigung im Punkt P(1|1).
+HILFE：
+- 从结构维度切入，先明确本步先求什么量（Zielgroesse: h-Methode),再选工具：用h-Methode判定对象归属，用Antwortsatz组织步骤顺序。
+- 从定理维度切入，用Antwortsatz与Differenzenquotient的适用条件选择公式：先写条件，再代入；darstellen-Aufgaben verlangen erst die Verfahrenswahl (darstellen oder Nachweis), dann die Rechnung.
+- 从验证维度切入，用定义域/单调性/量级做方向对照，判断结果是否合理。不给出具体分点、函数值、和值与归属结论。
+
+COMPLETION (Lückentext):
+- 中文说明：根据MUSTERLÖSUNG补全关键数值，不回看上文。
+- Ergaenze: $h = ___$ und $m = ___$, und es gilt $Kontrolle = ___$.
 
 MUSTERLOESUNG: Sandbox $h = 1{,}0$ liefert $m = 3$, $h = 0{,}5$ liefert $m = 2{,}5$, $h = 0{,}1$ liefert $m = 2{,}1$, die Tendenz zeigt $2$. Rechnung $f(1+h)-f(1) = 2h+h^2 = h(2+h)$, also $m(h) = 2+h$ fuer $h \ne 0$, mit $h \to 0$ folgt $f'(1) = 2$. Der verbotene Schritt waere $h = 0$ vor dem Kuerzen mit Ergebnis $0/0$. Die Tangente in P(1|1) besitzt die Steigung 2.
 
@@ -104,7 +120,7 @@ MUSTERLOESUNG: Sandbox $h = 1{,}0$ liefert $m = 3$, $h = 0{,}5$ liefert $m = 2{,
 ## Schritt 5 — ausprobieren: Duell der Verfahren Ableitung um Mitternacht
 VERGLEICH (Wahl des Verfahrens, A gegen B):
 
-VERGLEICH: (Weg A quantitativ-rechnerisch gegen Weg B qualitativ-strukturell): Triff zuerst die Wahl des Verfahrens: (i) h-Methode an einer Stelle (AFB II mit Grenzwert; Vorgehen: Ansatz, Kuerzen, Limes) oder (ii) Ableitungsregel direkt (AFB I, nur Ergebnis nennen) > dann loesen.
+VERGLEICH: (Weg A quantitativ-rechnerisch gegen Weg B qualitativ-strukturell): Triff zuerst die Wahl des Verfahrens: (i) h-Methode an einer Stelle ([AFB II] mit Grenzwert; Vorgehen: Ansatz, Kuerzen, Limes) oder (ii) Ableitungsregel direkt ([AFB I], nur Ergebnis nennen) > dann loesen.
 
 Weg A: Erst Verfahren waehlen, dann rechnen.
 
@@ -139,11 +155,25 @@ CHECK (drei Fragen mit Antworten):
 ## Schritt 7 — szenario: Klausurtransfer: Grenzwert mit der h-Methode an einer Stelle: Ableitung um Mitternacht
 ROLLE: Du bist Tutorin in der EF und erklaerst einer Mitschuelerin die h-Methode.
 SITUATION: Deine Mitschuelerin hat fuer $f(x) = x^2$ an der Stelle $x_0 = 3$ den Wert $6$ geraten, kann den Weg aber nicht zeigen. Stelle in einer zusammenhaengenden Darstellung (circa 150 Woerter) die vollstaendige h-Methode dar und deute das Ergebnis als Tangentensteigung.
-AUFGABE (begruenden, AFB III): Verfasse eine zusammenhaengende Darstellung von etwa 150 Woertern mit Ansatz, Umformung, Grenzwert und Deutung.
+AUFGABE (darstellen, [AFB III]): Stelle dar Verfasse eine zusammenhaengende Darstellung von etwa 150 Woertern mit Ansatz, Umformung, Grenzwert und Deutung.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Ansatz mit h-Methode und darstellen-Wahl (Grenzwert mit der h-Methode an einer Ste) [AFB I] | 5 NP | Skizze mit beschrifteten Achsen als Alternativweg
+Rechnung mit Antwortsatz und Bedingungspruefung [AFB II] | 5 NP | Numerische Kontrolle mit Taschenrechner als Alternativweg
+Deutung mit Differenzenquotient plus Einheit/Randkontrolle [AFB III] | 5 NP | Geometrische Deutung der Konvergenz als Alternativweg
+
 RUBRIC (30 XP): Korrekter Ansatz mit $h$ (8 XP) | Vollstaendige Umformung mit Kuerzen (10 XP) | Grenzwert $f'(3) = 6$ (6 XP) | Geometrische Deutung als Tangentensteigung (6 XP).
 
 `Klausur-Satz: Wer Differenzenquotient aufstellt, kuerzt, Grenzuebergang vollzieht und als Tangentensteigung deutet, erhaelt die volle Punktzahl.`
 
+> MUSTER-KLAUSURSATZ (15 NP): Ableiten ist Grenzwertbildung: Erst algebraisch kuerzen, dann erst null einsetzen.
+
+KERNSATZ (auswendig):
+- Kernsatz: `Ableiten ist Grenzwertbildung: Erst algebraisch kuerzen, dann erst null einsetzen.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = Ableiten ist Grenzwertbildung | Mechanismus = Erst algebraisch kuerzen | Urteil = dann erst null einsetzen.
+- Selbsttest: Ableiten ist ___: Erst algebraisch kuerzen, dann erst null einsetzen.
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Ableitung um Mitternacht
 TAKEAWAY (Kernbotschaft in einem Kasten):
 

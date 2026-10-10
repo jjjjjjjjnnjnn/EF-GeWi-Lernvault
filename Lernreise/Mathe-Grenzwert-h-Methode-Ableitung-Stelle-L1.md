@@ -8,7 +8,7 @@ operatoren: [darstellen, berechnen, begruenden]
 klausurrelevant: true
 datum: 2026-09-26
 tags: [EF, Mathe, Analysis]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Grenzwert mit der h-Methode an einer Stelle (L1, Ziel Klausur)
@@ -20,7 +20,7 @@ ZIELE (3 Ziele, nach 15 Minuten erreichbar):
 
 1. Den Differenzenquotienten an einer festen Stelle $x_0$ aufstellen und algebraisch vereinfachen.
 2. Den Grenzwert fuer $h$ gegen $0$ bilden und als Ableitung $f'(x_0)$ deuten.
-3. Das Ergebnis als Tangentensteigung im Sachkontext begruenden (AFB II).
+3. Das Ergebnis als Tangentensteigung im Sachkontext begruenden ([AFB II]).
 
 VORAUSSETZUNG: Sicheres Umformen von Termen mit Klammern und Bruechen sowie Ablesen von Steigungen aus Graphen.
 
@@ -31,6 +31,18 @@ VORGAENGER-VERWEIS: Diese Lektion setzt `Mathe-Sekante-zu-Tangente-L1.md` voraus
 割线一点点滑向切线，h一点点压向0：平均变化率取极限，就变成了瞬时变化率，关键一步是先约分再取极限。
 
 Hook / Phaenomen: Die Sekante rutscht an die Kurve heran, h schrumpft gegen null: Was uebrig bleibt, ist die exakte **Tangentensteigung**. Der **Differenzenquotient** misst noch den Durchschnitt, der **Differentialquotient** misst den Moment. Dazwischen liegt ein einziger Rechenschritt: **Kuerzen vor Grenzwert**.
+
+预测 [Option A]：Der grobe Grenzwert aus wenigen Teilwerten genuegt bereits, weitere Verfeinerung aendert nichts。若选A，你在Step 2用工具检验该方向的变化。
+
+预测 [Option B]：Erst fortgesetzte Verfeinerung laesst den Grenzwert gegen den exakten Wert laufen。若选B，你在Step 2用工具检验该方向的变化。
+
+AUFLÖSUNG (nach der Wahl lesen)
+
+以下解析在选择后阅读，含原两项机制分析全文：
+- Mechanismus A：割线一点点滑向切线，h一点点压向0：平均变化率取极限，就变成了瞬时变化率，关键一步是先约分再取极限。 Hook / Phaenomen: Die Sekante rutscht an die Kurve heran, h schrumpft gegen null: Was uebrig bleibt, ist die exakte **Tangentensteigung**.
+- Mechanismus B：Der **Differenzenquotient** misst noch den Durchschnitt, der **Differentialquotient** misst den Moment.
+
+本质一句话：Die h-Methode verwandelt mittlere in lokale Aenderung: Differenzenquotient kuerzen, dann h gegen null schicken.
 
 `Klausur-Satz: Die h-Methode verwandelt mittlere in lokale Aenderung: Differenzenquotient kuerzen, dann h gegen null schicken.`
 
@@ -74,12 +86,16 @@ BEISPIEL (vollstaendige Musterloesung):
 
 [Werkzeug: tangent-slider]
 
-AUFGABE (berechnen, AFB II): Bestimmen Sie mit der h-Methode die Ableitung von $f(x) = 2x^2 - x$ an der Stelle $x_0 = 1$.
+AUFGABE (berechnen, [AFB II]): Bestimmen Sie mit der h-Methode die Ableitung von $f(x) = 2x^2 - x$ an der Stelle $x_0 = 1$.
 
-HILFE:
-1. Schritt 1: Ansatz $m(h) = (f(1+h) - f(1)) / h$ aufstellen.
-2. Schritt 2: Zaehler ausrechnen und $h$ ausklammern.
-3. Schritt 3: Kuerzen und $h \to 0$ betrachten.
+HILFE：
+- 从结构维度切入，先明确本步先求什么量（Zielgroesse: h-Methode),再选工具：用h-Methode判定对象归属，用Differenzenquotient组织步骤顺序。
+- 从定理维度切入，用Differenzenquotient与Differentialquotient的适用条件选择公式：先写条件，再代入；darstellen-Aufgaben verlangen erst die Verfahrenswahl (darstellen oder Nachweis), dann die Rechnung.
+- 从验证维度切入，用定义域/单调性/量级做方向对照，判断结果是否合理。不给出具体分点、函数值、和值与归属结论。
+
+COMPLETION (Lückentext):
+- 中文说明：根据MUSTERLÖSUNG补全关键数值，不回看上文。
+- Ergaenze: $f(1) = ___$ und $f(1+h) = ___$, und es gilt $Kontrolle = ___$.
 
 MUSTERLOESUNG: Es gilt $f(1) = 1$ und $f(1+h) = 2(1+h)^2 - (1+h) = 2 + 4h + 2h^2 - 1 - h = 1 + 3h + 2h^2$. Damit folgt $m(h) = (3h + 2h^2)/h = 3 + 2h$ fuer $h \ne 0$. Der Grenzwert ergibt $\lim_{h \to 0} (3 + 2h) = 3$, also $f'(1) = 3$. Die Tangente im Punkt $P(1 \mid 1)$ besitzt die Steigung $3$.
 
@@ -88,7 +104,7 @@ MUSTERLOESUNG: Es gilt $f(1) = 1$ und $f(1+h) = 2(1+h)^2 - (1+h) = 2 + 4h + 2h^2
 ## Schritt 5 — ausprobieren: Duell der Verfahren h-Methode am Punkt
 VERGLEICH (zwei Verfahren, erst Verfahren waehlen, dann rechnen):
 
-VERGLEICH: (Weg A quantitativ-rechnerisch gegen Weg B qualitativ-strukturell): Waehle erst das Verfahren — (i) h-Methode an einer Stelle (AFB II mit Grenzwert, Vorgehen: Ansatz, Kuerzen, Limes) oder (ii) Ableitungsregel direkt (AFB I, nur Ergebnis nennen) — dann loesen.
+VERGLEICH: (Weg A quantitativ-rechnerisch gegen Weg B qualitativ-strukturell): Waehle erst das Verfahren — (i) h-Methode an einer Stelle ([AFB II] mit Grenzwert, Vorgehen: Ansatz, Kuerzen, Limes) oder (ii) Ableitungsregel direkt ([AFB I], nur Ergebnis nennen) — dann loesen.
 
 Weg A: Erst Verfahren waehlen, dann rechnen.
 
@@ -124,10 +140,25 @@ CHECK (drei Fragen mit Antworten):
 ## Schritt 7 — szenario: Klausurtransfer: Grenzwert mit der h-Methode an einer Stelle: h-Methode am Punkt
 ROLLE: Du bist Tutorin in der EF und erklaerst einer Mitschuelerin die h-Methode.
 SITUATION: Deine Mitschuelerin hat fuer $f(x) = x^2$ an der Stelle $x_0 = 3$ den Wert $6$ geraten, kann den Weg aber nicht zeigen. Stelle in einer zusammenhaengenden Darstellung (circa 150 Woerter) die vollstaendige h-Methode dar und deute das Ergebnis als Tangentensteigung.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Ansatz mit h-Methode und darstellen-Wahl (Grenzwert mit der h-Methode an einer Ste) [AFB I] | 5 NP | Skizze mit beschrifteten Achsen als Alternativweg
+Rechnung mit Differenzenquotient und Bedingungspruefung [AFB II] | 5 NP | Numerische Kontrolle mit Taschenrechner als Alternativweg
+Deutung mit Differentialquotient plus Einheit/Randkontrolle [AFB III] | 5 NP | Geometrische Deutung der Konvergenz als Alternativweg
+
 RUBRIC (30 XP): Korrekter Ansatz mit $h$ (8 XP) | Vollstaendige Umformung mit Kuerzen (10 XP) | Grenzwert $f'(3) = 6$ (6 XP) | Geometrische Deutung als Tangentensteigung (6 XP).
 
+AUFGABE (darstellen, [AFB III]): Stelle dar erstens den Ansatz mit h-Methode, zweitens die Rechnung mit Differenzenquotient und drittens die Deutung mit Differentialquotient zum Fall: RUBRIC (30 XP): Korrekter Ansatz mit $h$ (8 XP) | Vollstaendige Umformung mit Kuerzen (10 XP) | Grenzwert $f'(3) = 6$ (6 XP) | Geometrische . 中文说明：三问分别对应 Ansatz、Rechnung 与 Deutung。
 `Klausur-Satz: Wer Differenzenquotient aufstellt, kuerzt, Grenzuebergang vollzieht und als Tangentensteigung deutet, erhaelt die volle Punktzahl.`
 
+> MUSTER-KLAUSURSATZ (15 NP): Ableiten ist Grenzwertbildung: Erst algebraisch kuerzen, dann erst null einsetzen.
+
+KERNSATZ (auswendig):
+- Kernsatz: `Ableiten ist Grenzwertbildung: Erst algebraisch kuerzen, dann erst null einsetzen.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = Ableiten ist Grenzwertbildung | Mechanismus = Erst algebraisch kuerzen | Urteil = dann erst null einsetzen.
+- Selbsttest: Ableiten ist ___: Erst algebraisch kuerzen, dann erst null einsetzen.
 ## Schritt 8 — reflexion: Takeaway & Reflexion: h-Methode am Punkt
 TAKEAWAY:
 

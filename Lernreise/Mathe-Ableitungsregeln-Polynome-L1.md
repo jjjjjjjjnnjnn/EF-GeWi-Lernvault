@@ -8,7 +8,7 @@ operatoren: [berechnen, begruenden, nachweisen]
 klausurrelevant: true
 datum: 2026-09-25
 tags: [EF, Mathe, Analysis]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Ableitungsregeln fuer Polynome (L1, Ziel Klausur)
@@ -20,7 +20,7 @@ ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
 1. 中文：能说出多项式求导的三件工具——幂法则（指数降一次、原指数变系数）、因子法则（常数照抄）、和法则（逐项求导），并说清各自适用条件。
 2. 中文：能把一个整式多项式按项拆开、逐项求导再合并，且不丢常数项、不丢符号。
-3. 中文：能区分"求导"与"证明"两种任务：`berechnen` 直接套法则，`nachweisen/zeigen` 必须走差商加极限（AFB II）。
+3. 中文：能区分"求导"与"证明"两种任务：`berechnen` 直接套法则，`nachweisen/zeigen` 必须走差商加极限（[AFB II]）。
 
 ### Hook / Phaenomen
 
@@ -28,10 +28,22 @@ ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
 Hook / Phaenomen: Ein Tacho springt, ein Blitzer rechnet: Ob zu schnell gefahren wurde, entscheidet die **Ableitung** als Momentangeschwindigkeit. Aus der **Sekantensteigung** ueber kurze Intervalle wird im Grenzfall die **Tangentensteigung**. Genau dieser Uebergang steckt in jeder **Polynomableitung** der Klausur.
 
+预测 [Option A]：Der grobe Ableitungswert aus wenigen Teilwerten genuegt bereits, weitere Verfeinerung aendert nichts。若选A，你在Step 2用工具检验该方向的变化。
+
+预测 [Option B]：Erst fortgesetzte Verfeinerung laesst den Ableitungswert gegen den exakten Wert laufen。若选B，你在Step 2用工具检验该方向的变化。
+
+AUFLÖSUNG (nach der Wahl lesen)
+
+以下解析在选择后阅读，含原两项机制分析全文：
+- Mechanismus A：测速仪只认瞬时速度：平均速度的区间越短，越接近那一刻的真相，多项式求导就是把这条路算到底。 Hook / Phaenomen: Ein Tacho springt, ein Blitzer rechnet: Ob zu schnell gefahren wurde, entscheidet die **Ableitung** als Momentangeschwindigkeit.
+- Mechanismus B：Aus der **Sekantensteigung** ueber kurze Intervalle wird im Grenzfall die **Tangentensteigung**.
+
+本质一句话：Die Ableitung misst die lokale Aenderungsrate: Sekantensteigung wird im Grenzfall zu Tangentensteigung.
+
 `Klausur-Satz: Die Ableitung misst die lokale Aenderungsrate: Sekantensteigung wird im Grenzfall zu Tangentensteigung.`
 
 ## Schritt 2 — entdecken: Ausruestungskiste der Algorithmus-Unit
-PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
+PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文->德语，Evidenz：pretraining降认知负荷）：
 
 中文在上，德语在下：
 
@@ -82,13 +94,17 @@ BEISPIEL（正确例题示范，含教具操作与解答）：
 
 [Werkzeug: tangent-slider]
 
-AUFGABE (berechnen, AFB II)：Gegeben ist die ganzrationale Funktion $f(x) = 4x^3 - 5x^2 + 7x - 2$. Bestimmen Sie $f'(x)$ sowie die lokale Aenderungsrate an der Stelle $x_0 = 2$.
+AUFGABE (berechnen, [AFB II])：Gegeben ist die ganzrationale Funktion $f(x) = 4x^3 - 5x^2 + 7x - 2$. Bestimmen Sie $f'(x)$ sowie die lokale Aenderungsrate an der Stelle $x_0 = 2$.
 (Tipp: Du kannst deine Rechnung direkt eintippen, das Werkzeug nutzen oder deinen handschriftlichen Rechenweg per Foto/Clipboard hochladen und automatisch transkribieren lassen.)
 
-HILFE:
-1. Schritt 1: Jeden Summanden einzeln nach der Potenzregel ableiten (Exponent nach vorne, Exponent minus eins).
-2. Schritt 2: Den konstanten Summanden $-2$ zu $0$ setzen und alle Ergebnisse mit der Summenregel addieren.
-3. Schritt 3: $x_0 = 2$ in $f'(x)$ einsetzen und den Wert als lokale Aenderungsrate deuten.
+HILFE：
+- 从结构维度切入，先明确本步先求什么量（Zielgroesse: Potenzregel),再选工具：用Potenzregel判定对象归属，用Faktorregel组织步骤顺序。
+- 从定理维度切入，用Faktorregel与Summenregel的适用条件选择公式：先写条件，再代入；berechnen-Aufgaben verlangen erst die Verfahrenswahl (berechnen oder Nachweis), dann die Rechnung.
+- 从验证维度切入，用定义域/单调性/量级做方向对照，判断结果是否合理。不给出具体分点、函数值、和值与归属结论。
+
+COMPLETION (Lückentext):
+- 中文说明：根据MUSTERLÖSUNG补全关键数值，不回看上文。
+- Ergaenze: $4x^3 \to 4 \cdot 3x^2 = ___$ und $-5x^2 \to -5 \cdot 2x = ___$, und es gilt $Kontrolle = ___$.
 
 MUSTERLÖSUNG: Gliedweise ergibt sich: $4x^3 \to 4 \cdot 3x^2 = 12x^2$; $-5x^2 \to -5 \cdot 2x = -10x$; $7x \to 7$; $-2 \to 0$. Mit der Summenregel folgt $f'(x) = 12x^2 - 10x + 7$. An der Stelle $x_0 = 2$ gilt $f'(2) = 12 \cdot 2^2 - 10 \cdot 2 + 7 = 48 - 20 + 7 = 35$. Die lokale Aenderungsrate betraegt also $35$; der Graph steigt an dieser Stelle steil an.
 
@@ -137,10 +153,25 @@ CHECK检索默写（自测 3 题，与答案配对）：
 ROLLE: Du bist Schueler-Tutor im Mathe-Foerderkurs der EF.
 SITUATION: Ein Mitschueler hat $f(x) = 4x^3 - 5x^2 + 7x - 2$ abgeleitet und als Ergebnis $12x^3 - 10x^2 + 7x$ herausbekommen. Erklaere ihm in einer zusammenhaengenden Darstellung (ca. 150 Woerter), welcher Regelverstoss vorliegt, fuehre die korrekte Ableitung vor und erlaeutere den Unterschied zwischen berechnen und nachweisen.
 (Tipp: Du kannst deine Erklärung handschriftlich auf Papier verfassen und als Foto oder Screenshot hochladen, um sie mit den Bewertungskriterien pruefen zu lassen.)
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Ansatz mit Potenzregel und berechnen-Wahl (Ableitungsregeln fuer Polynome) [AFB I] | 5 NP | Skizze mit beschrifteten Achsen als Alternativweg
+Rechnung mit Faktorregel und Bedingungspruefung [AFB II] | 5 NP | Numerische Kontrolle mit Taschenrechner als Alternativweg
+Deutung mit Summenregel plus Einheit/Randkontrolle [AFB III] | 5 NP | Geometrische Deutung der Konvergenz als Alternativweg
+
 RUBRIC (30 XP): Benennung des Fehlers — Exponent nicht verringert, Konstante nicht beachtet (5 XP) | Korrekte gliedweise Ableitung $f'(x) = 12x^2 - 10x + 7$ (10 XP) | Begruendung mit Potenz-, Faktor- und Summenregel (10 XP) | Abgrenzung berechnen gegen nachweisen (5 XP).
 
+AUFGABE (berechnen, [AFB III]): Berechne erstens den Ansatz mit Potenzregel, zweitens die Rechnung mit Faktorregel und drittens die Deutung mit Summenregel zum Fall: (Tipp: Du kannst deine Erklärung handschriftlich auf Papier verfassen und als Foto oder Screenshot hochladen, um sie mit den Bewertungskrite. 中文说明：三问分别对应 Ansatz、Rechnung 与 Deutung。
 `Klausur-Satz: Wer den Regelverstoss benennt, die gliedweise Rechnung mit Potenz-, Faktor- und Summenregel zeigt und berechnen von nachweisen trennt, erhaelt die volle Punktzahl.`
 
+> MUSTER-KLAUSURSATZ (15 NP): Die Ableitung misst die lokale Aenderungsrate: Sekantensteigung wird im Grenzfall zu Tangentensteigung.
+
+KERNSATZ (auswendig):
+- Kernsatz: `Die Ableitung misst die lokale Aenderungsrate: Sekantensteigung wird im Grenzfall zu Tangentensteigung.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = Die Ableitung misst die lokale Aenderungsrate | Mechanismus = Sekantensteigung wird im | Urteil = Grenzfall zu Tangentensteigung.
+- Selbsttest: Die Ableitung misst die lokale Aenderungsrate: Sekantensteigung wird im Grenzfall zu ___.
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Blitzer gegen Tacho
 TAKEAWAY 1盒（核心总结）：
 

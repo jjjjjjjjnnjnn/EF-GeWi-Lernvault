@@ -8,7 +8,7 @@ operatoren: [untersuchen, berechnen, begruenden]
 klausurrelevant: true
 datum: 2026-09-25
 tags: [EF, Mathe, Analysis]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Monotonie und Extrempunkte kompakt (L1, Ziel Klausur)
@@ -20,7 +20,7 @@ ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
 1. 中文：能说出单调性的判据——一阶导数在某区间内恒正则上升、恒负则下降，并据此画出符号表。
 2. 中文：能完整执行极值两步法：必要条件 `f'(x0) = 0` 找候选点，充分条件（二阶导符号或 f' 变号）定性，再回代求点坐标。
-3. 中文：能分清"局部极值"与"全局极值"，并在德语答题句里正确区分 Hochpunkt 与 globales Maximum（AFB II）。
+3. 中文：能分清"局部极值"与"全局极值"，并在德语答题句里正确区分 Hochpunkt 与 globales Maximum（[AFB II]）。
 
 ### Hook / Phaenomen
 
@@ -28,10 +28,22 @@ ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
 Hook / Phaenomen: Steigen, fallen, drehen: Der Graph erzaehlt seine Geschichte ueber die **Ableitungen**. Wo f Strich null wird, wartet ein **Extremum**; das **Vorzeichen** davor und danach verrraet Hoch oder Tief. Die **Monotonie** dazwischen folgt ohne eine einzige Wertetabelle.
 
+预测 [Option A]：Der grobe Vorzeichenwert aus wenigen Teilwerten genuegt bereits, weitere Verfeinerung aendert nichts。若选A，你在Step 2用工具检验该方向的变化。
+
+预测 [Option B]：Erst fortgesetzte Verfeinerung laesst den Vorzeichenwert gegen den exakten Wert laufen。若选B，你在Step 2用工具检验该方向的变化。
+
+AUFLÖSUNG (nach der Wahl lesen)
+
+以下解析在选择后阅读，含原两项机制分析全文：
+- Mechanismus A：增减转折全写在导数里：导数为零处藏着极值，前后符号决定是峰是谷，单调区间根本不用列表。 Hook / Phaenomen: Steigen, fallen, drehen: Der Graph erzaehlt seine Geschichte ueber die **Ableitungen**.
+- Mechanismus B：Wo f Strich null wird, wartet ein **Extremum**; das **Vorzeichen** davor und danach verrraet Hoch oder Tief.
+
+本质一句话：Die Kurvendiskussion liest den Graphen aus seinen Ableitungen: Nullstellen von f Strich plus Vorzeichenwechsel geben Hoch und Tief.
+
 `Klausur-Satz: Die Kurvendiskussion liest den Graphen aus seinen Ableitungen: Nullstellen von f Strich plus Vorzeichenwechsel geben Hoch und Tief.`
 
 ## Schritt 2 — entdecken: Ausruestungskiste der Algorithmus-Unit
-PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
+PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文->德语，Evidenz：pretraining降认知负荷）：
 
 中文在上，德语在下：
 
@@ -78,12 +90,16 @@ BEISPIEL（正确例题示范，含教具操作与解答）：
 
 [Werkzeug: formula]
 
-AUFGABE (untersuchen, AFB II)：Gegeben ist f(x) = x^3 - 6x^2 + 9x + 1. Untersuchen Sie f rechnerisch auf Monotonie sowie auf lokale Extrempunkte und geben Sie Art und Koordinaten an.
+AUFGABE (untersuchen, [AFB II])：Gegeben ist f(x) = x^3 - 6x^2 + 9x + 1. Untersuchen Sie f rechnerisch auf Monotonie sowie auf lokale Extrempunkte und geben Sie Art und Koordinaten an.
 
-HILFE:
-1. Schritt 1: f'(x) bilden und f'(x) = 0 setzen, um die Kandidaten zu erhalten.
-2. Schritt 2: f''(x) bilden und an den Kandidaten auswerten (negativ -> Hochpunkt, positiv -> Tiefpunkt).
-3. Schritt 3: Die Kandidaten in f einsetzen, um die y-Koordinaten zu erhalten; mit dem Vorzeichen von f' die Monotonieintervalle angeben.
+HILFE：
+- 从结构维度切入，先明确本步先求什么量（Zielgroesse: VZW-Kriterium),再选工具：用VZW-Kriterium判定对象归属，用Bedingungskette组织步骤顺序。
+- 从定理维度切入，用Bedingungskette与Kontrollkriterium的适用条件选择公式：先写条件，再代入；untersuchen-Aufgaben verlangen erst die Verfahrenswahl (untersuchen oder Nachweis), dann die Rechnung.
+- 从验证维度切入，用定义域/单调性/量级做方向对照，判断结果是否合理。不给出具体分点、函数值、和值与归属结论。
+
+COMPLETION (Lückentext):
+- 中文说明：根据MUSTERLÖSUNG补全关键数值，不回看上文。
+- Ergaenze: $VZW-Kriterium = ___$ und $Bedingungskette = ___$, und es gilt $Kontrolle = ___$.
 
 MUSTERLÖSUNG: Es gilt f'(x) = 3x^2 - 12x + 9 = 3(x^2 - 4x + 3) = 3(x - 1)(x - 3). Die notwendige Bedingung f'(x) = 0 liefert die Kandidaten x1 = 1 und x2 = 3. Mit f''(x) = 6x - 12 folgt f''(1) = -6 < 0, also ein lokales Maximum, und f''(3) = 6 > 0, also ein lokales Minimum. Die Funktionswerte sind f(1) = 1 - 6 + 9 + 1 = 5 und f(3) = 27 - 54 + 27 + 1 = 1. Damit gilt HP(1 | 5) und TP(3 | 1). Da f'(x) fuer x < 1 positiv, fuer 1 < x < 3 negativ und fuer x > 3 wieder positiv ist, steigt f auf ]-unendlich; 1[ und ]3; +unendlich[ und faellt auf ]1; 3[.
 
@@ -131,10 +147,25 @@ CHECK检索默写（自测 3 题，与答案配对）：
 ## Schritt 7 — szenario: Klausurtransfer: Monotonie und Extrempunkte kompakt: Stau am Wendepunkt
 ROLLE: Du bist Referent in einem Mathe-Crashkurs fuer die ZKE-Vorbereitung.
 SITUATION: Ein Kursteilnehmer behauptet, jede Stelle mit f'(x0) = 0 sei automatisch ein Hoch- oder Tiefpunkt, und will seine Behauptung an f(x) = x^3 (mit f'(0) = 0) belegen. Bewerte seine Aussage in einer zusammenhaengenden Darstellung (ca. 150 Woerter) unter Rueckgriff auf notwendige und hinreichende Bedingung.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Ansatz mit VZW-Kriterium und untersuchen-Wahl (Monotonie und Extrempunkte kompakt) [AFB I] | 5 NP | Skizze mit beschrifteten Achsen als Alternativweg
+Rechnung mit Bedingungskette und Bedingungspruefung [AFB II] | 5 NP | Numerische Kontrolle mit Taschenrechner als Alternativweg
+Deutung mit Kontrollkriterium plus Einheit/Randkontrolle [AFB III] | 5 NP | Geometrische Deutung der Konvergenz als Alternativweg
+
 RUBRIC (30 XP): Benennung der Behauptung als Verwechslung von notwendig und hinreichend (5 XP) | Gegenbeispiel f(x) = x^3 mit f'(0) = 0, aber keinem Extremum (10 XP) | Korrekte Vorgehensweise mit f''- oder VZW-Kriterium (10 XP) | Kriteriengeleitetes Fazit zum Stellenwert beider Bedingungen (5 XP).
 
+AUFGABE (untersuchen, [AFB III]): Untersuche erstens den Ansatz mit VZW-Kriterium, zweitens die Rechnung mit Bedingungskette und drittens die Deutung mit Kontrollkriterium zum Fall: RUBRIC (30 XP): Benennung der Behauptung als Verwechslung von notwendig und hinreichend (5 XP) | Gegenbeispiel f(x) = x^3 mit f'(0) = 0, abe. 中文说明：三问分别对应 Ansatz、Rechnung 与 Deutung。
 `Klausur-Satz: Wer Extrema, Wendepunkte, Monotonie und y-Werte mit Bedingungen zeigt und deutet, erhaelt die volle Punktzahl.`
 
+> MUSTER-KLAUSURSATZ (15 NP): Diskutieren heisst begruenden: Jede Behauptung braucht Ableitung plus Vorzeichen als Zeugen.
+
+KERNSATZ (auswendig):
+- Kernsatz: `Diskutieren heisst begruenden: Jede Behauptung braucht Ableitung plus Vorzeichen als Zeugen.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = Diskutieren heisst begruenden | Mechanismus = Jede Behauptung braucht Ableitung plus | Urteil = Vorzeichen als Zeugen.
+- Selbsttest: ___ heisst begruenden: Jede Behauptung braucht Ableitung plus Vorzeichen als Zeugen.
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Stau am Wendepunkt
 TAKEAWAY 1盒（核心总结）：
 

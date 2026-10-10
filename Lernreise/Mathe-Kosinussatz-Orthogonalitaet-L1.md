@@ -8,7 +8,7 @@ operatoren: [berechnen, begruenden, nachweisen]
 klausurrelevant: true
 datum: 2026-09-26
 tags: [EF, Mathe, Geometrie]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Kosinussatz und Orthogonalitaet (L1, Ziel Klausur)
@@ -20,7 +20,7 @@ ZIELE (3 Ziele, nach 15 Minuten erreichbar):
 
 1. Du kannst in beliebigen Dreiecken mit $c^2 = a^2 + b^2 - 2ab\cos(\gamma)$ fehlende Seiten und Winkel berechnen.
 2. Du kannst den Kosinussatz als Verallgemeinerung von $a^2 + b^2 = c^2$ erklaeren und den Fall $\gamma = 90^\circ$ einordnen.
-3. Du kannst mit $\cos(\gamma) = \frac{a^2 + b^2 - c^2}{2ab}$ nachweisen, ob ein Dreieck rechtwinklig ist (AFB II).
+3. Du kannst mit $\cos(\gamma) = \frac{a^2 + b^2 - c^2}{2ab}$ nachweisen, ob ein Dreieck rechtwinklig ist ([AFB II]).
 
 EINSTIEG: Beim Tunnelbau von zwei Seiten bohrten sich im Jahr 1871 die Arbeiter am Mont-Cenis fast vorbei, weil eine Winkelmessung kippte. Dreiecksrechnung aus zwei Seiten und eingeschlossenem Winkel entscheidet ueber Treffer oder Fehlbohrung. Der Kosinussatz sichert genau diese Lage.
 
@@ -29,6 +29,18 @@ EINSTIEG: Beim Tunnelbau von zwei Seiten bohrten sich im Jahr 1871 die Arbeiter 
 没有直角也要算出第三边：余弦定理就是带修正项的勾股定理，夹角越小对边越短，反过来还能检验垂直。
 
 Hook / Phaenomen: Kein rechter Winkel weit und breit, trotzdem soll die dritte Seite exakt bestimmbar sein. Der **Kosinussatz** repariert Pythagoras mit einem **Korrekturterm**: Je spitzer der **eingeschlossene Winkel**, desto kuerzer die Gegenseite. Umgekehrt verraet die Seitenprobe, ob **Orthogonalitaet** vorliegt.
+
+预测 [Option A]：Der grobe Winkelwert aus wenigen Teilwerten genuegt bereits, weitere Verfeinerung aendert nichts。若选A，你在Step 2用工具检验该方向的变化。
+
+预测 [Option B]：Erst fortgesetzte Verfeinerung laesst den Winkelwert gegen den exakten Wert laufen。若选B，你在Step 2用工具检验该方向的变化。
+
+AUFLÖSUNG (nach der Wahl lesen)
+
+以下解析在选择后阅读，含原两项机制分析全文：
+- Mechanismus A：没有直角也要算出第三边：余弦定理就是带修正项的勾股定理，夹角越小对边越短，反过来还能检验垂直。 Hook / Phaenomen: Kein rechter Winkel weit und breit, trotzdem soll die dritte Seite exakt bestimmbar sein.
+- Mechanismus B：Der **Kosinussatz** repariert Pythagoras mit einem **Korrekturterm**: Je spitzer der **eingeschlossene Winkel**, desto kuerzer die Gegenseite.
+
+本质一句话：Ohne rechten Winkel tritt der Korrekturterm hinzu: c Quadrat folgt aus a, b und eingeschlossenem Winkel.
 
 `Klausur-Satz: Ohne rechten Winkel tritt der Korrekturterm hinzu: c Quadrat folgt aus a, b und eingeschlossenem Winkel.`
 
@@ -71,12 +83,16 @@ BEISPIEL (Musteraufgabe mit Werkzeug):
 
 [Werkzeug: formula]
 
-AUFGABE (berechnen, AFB II): Gegeben ist ein Dreieck mit $a = 5$, $b = 7$ und $\gamma = 60^\circ$. Berechnen Sie die Seite $c$ und pruefen Sie, ob das Dreieck rechtwinklig ist.
+AUFGABE (berechnen, [AFB II]): Gegeben ist ein Dreieck mit $a = 5$, $b = 7$ und $\gamma = 60^\circ$. Berechnen Sie die Seite $c$ und pruefen Sie, ob das Dreieck rechtwinklig ist.
 
-HILFE:
-1. Schritt 1: Setze in $c^2 = a^2 + b^2 - 2ab\cos(\gamma)$ ein.
-2. Schritt 2: Nutze $\cos(60^\circ) = 0{,}5$ und berechne $c = \sqrt{c^2}$.
-3. Schritt 3: Pruefe $a^2 + b^2 = c^2$ fuer die Orthogonalitaetsfrage.
+HILFE：
+- 从结构维度切入，先明确本步先求什么量（Zielgroesse: Kosinussatz),再选工具：用Kosinussatz判定对象归属，用Kongruenzsatz组织步骤顺序。
+- 从定理维度切入，用Kongruenzsatz与Kosinussatz-Verfahren的适用条件选择公式：先写条件，再代入；berechnen-Aufgaben verlangen erst die Verfahrenswahl (berechnen oder Nachweis), dann die Rechnung.
+- 从验证维度切入，用定义域/单调性/量级做方向对照，判断结果是否合理。不给出具体分点、函数值、和值与归属结论。
+
+COMPLETION (Lückentext):
+- 中文说明：根据MUSTERLÖSUNG补全关键数值，不回看上文。
+- Ergaenze: $c^2 = ___$ und $a^2+b^2 = ___$, und es gilt $Kontrolle = ___$.
 
 MUSTERLOESUNG: Es gilt $c^2 = 25 + 49 - 2 \cdot 5 \cdot 7 \cdot 0{,}5 = 74 - 35 = 39$, also $c = \sqrt{39} \approx 6{,}24$. Zur Orthogonalitaetsprobe gelten drei Pythagoras-Vergleiche: $a^2+b^2 = 74 \ne 39 = c^2$, $a^2+c^2 = 64 \ne 49 = b^2$ und $b^2+c^2 = 88 \ne 25 = a^2$; in keiner Paarung liegt Gleichheit vor, zudem ist $\gamma = 60^\circ \ne 90^\circ$. Das Dreieck ist spitzwinklig am Winkel $\gamma$.
 
@@ -123,11 +139,25 @@ CHECK (Selbsttest, 3 Fragen):
 ## Schritt 7 — szenario: Klausurtransfer: Kosinussatz und Orthogonalitaet: Kurve im Windkanal
 ROLLE: Du bist Praktikant im Vermessungsbuero.
 SITUATION: Ein Grundstueck bildet ein Dreieck mit $a = 40\,\mathrm{m}$, $b = 55\,\mathrm{m}$ und eingeschlossenem Winkel $\gamma = 75^\circ$. Der Eigentuemer bezweifelt die Frontlaenge $c$.
-AUFGABE (nachweisen, AFB III): Berechnen Sie $c$ in einer zusammenhaengenden Darstellung (ca. 150 Woerter), pruefen Sie Orthogonalitaet und begruenden Sie jeden Rechenschritt mit Satzbenennung.
+AUFGABE (berechnen, [AFB III]):  Berechnen Sie $c$ in einer zusammenhaengenden Darstellung (ca. 150 Woerter), pruefen Sie Orthogonalitaet und begruenden Sie jeden Rechenschritt mit Satzbenennung.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Ansatz mit Kosinussatz und berechnen-Wahl (Kosinussatz und Orthogonalitaet) [AFB I] | 5 NP | Skizze mit beschrifteten Achsen als Alternativweg
+Rechnung mit Kongruenzsatz und Bedingungspruefung [AFB II] | 5 NP | Numerische Kontrolle mit Taschenrechner als Alternativweg
+Deutung mit Kosinussatz-Verfahren plus Einheit/Randkontrolle [AFB III] | 5 NP | Geometrische Deutung der Konvergenz als Alternativweg
+
 RUBRIC (30 XP): Ansatz $c^2 = a^2 + b^2 - 2ab\cos(\gamma)$ korrekt (10 XP) | Zahlwert $c \approx 60{,}9\,\mathrm{m}$ (10 XP) | Orthogonalitaetspruefung mit Pythagoras (5 XP) | Geschlossene Begruendung (5 XP).
 
 `Klausur-Satz: Wer Kosinussatz ansetzt, Winkel zuordnet, Seite berechnet und Orthogonalitaet per Gegenprobe beurteilt, erhaelt die volle Punktzahl.`
 
+> MUSTER-KLAUSURSATZ (15 NP): Einsetzen, Wurzel ziehen, Pythagoras-Probe anschliessen.
+
+KERNSATZ (auswendig):
+- Kernsatz: `Einsetzen, Wurzel ziehen, Pythagoras-Probe anschliessen.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = Einsetzen, Wurzel ziehen, Pythagoras-Probe anschliessen. | Mechanismus = Einsetzen, Wurzel ziehen, Pythagoras-Probe anschliessen. | Urteil = Einsetzen, Wurzel ziehen, Pythagoras-Probe anschliessen.
+- Selbsttest: Einsetzen, Wurzel ziehen, Pythagoras-Probe ___.
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Kurve im Windkanal
 TAKEAWAY: Zwei Seiten plus Winkel bedeuten Kosinussatz, drei Seiten bedeuten Winkelrueckfrage. Merke die Kette $c^2 = a^2 + b^2 - 2ab\cos(\gamma)$ bis $\cos(90^\circ) = 0$ bis $a^2 + b^2 = c^2$.
 

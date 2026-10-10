@@ -8,7 +8,7 @@ operatoren: [berechnen, untersuchen, begruenden]
 klausurrelevant: true
 datum: 2026-09-25
 tags: [EF, Mathe, Analysis]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: ZKE 2027 — Teil A und Teil B im Zeitmodus (L1, Ziel Klausur)
@@ -20,7 +20,7 @@ ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
 1. 中文：能说出 ZKE 的两段结构与时间规则——Teil A 免工具最多 25 分钟（无计算器、无公式表），Teil B 用 WTR 或 CAS 加官方公式表至少 75 分钟，合计 100 分钟。
 2. 中文：能免工具手算 Teil A 三件套——零点、导数、向量长度，并能在没有公式表的情况下默写幂法则与 pq 公式。
-3. 中文：能在 Teil B 写出"Ansatz + Rechnung + Antwortsatz"的完整论证链，因为评分的正是可追溯的解答过程（AFB II/III）。
+3. 中文：能在 Teil B 写出"Ansatz + Rechnung + Antwortsatz"的完整论证链，因为评分的正是可追溯的解答过程（[AFB II/III]）。
 
 ### Hook / Phaenomen
 
@@ -28,10 +28,22 @@ ZKE分两场：A卷裸考拼速度，B卷机考拼转化，幂法则求根公式
 
 Hook / Phaenomen: Teil A ohne Hilfsmittel, Teil B mit Rechner: Die ZKE prueft beides, Tempo und Tiefe. **Potenzregel**, **pq-Formel** und **Betragsformel** sind das hilfsmittelfreie Ueberlebenspaket. Wer sie ohne Zettel kann, kauft sich Zeit fuer die Transferaufgaben.
 
+预测 [Option A]：Der grobe Pruefpunktwert aus wenigen Teilwerten genuegt bereits, weitere Verfeinerung aendert nichts。若选A，你在Step 2用工具检验该方向的变化。
+
+预测 [Option B]：Erst fortgesetzte Verfeinerung laesst den Pruefpunktwert gegen den exakten Wert laufen。若选B，你在Step 2用工具检验该方向的变化。
+
+AUFLÖSUNG (nach der Wahl lesen)
+
+以下解析在选择后阅读，含原两项机制分析全文：
+- Mechanismus A：ZKE分两场：A卷裸考拼速度，B卷机考拼转化，幂法则求根公式向量模长必须徒手过关，省下的时间留给压轴迁移题。 Hook / Phaenomen: Teil A ohne Hilfsmittel, Teil B mit Rechner: Die ZKE prueft beides, Tempo und Tiefe.
+- Mechanismus B：**Potenzregel**, **pq-Formel** und **Betragsformel** sind das hilfsmittelfreie Ueberlebenspaket.
+
+本质一句话：Die ZKE trennt Tempo von Tiefe: Teil A verlangt Formelsicherheit ohne Hilfsmittel, Teil B Transfer mit Werkzeug.
+
 `Klausur-Satz: Die ZKE trennt Tempo von Tiefe: Teil A verlangt Formelsicherheit ohne Hilfsmittel, Teil B Transfer mit Werkzeug.`
 
 ## Schritt 2 — entdecken: Ausruestungskiste der Algorithmus-Unit
-PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
+PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文->德语，Evidenz：pretraining降认知负荷）：
 
 中文在上，德语在下：
 
@@ -82,12 +94,16 @@ BEISPIEL（正确例题示范，含教具操作与解答）：
 
 [Werkzeug: formula]
 
-AUFGABE (berechnen, AFB I/II)：Teil-A-Stil, hilfsmittelfrei. a) Berechnen Sie die Nullstellen von f(x) = x^3 - 4x. b) Bestimmen Sie f'(x). c) Gegeben sind P(1 | 2 | 0) und Q(4 | 6 | 0); berechnen Sie den Vektor PQ und seine Laenge.
+AUFGABE (berechnen, [AFB I/II])：Teil-A-Stil, hilfsmittelfrei. a) Berechnen Sie die Nullstellen von f(x) = x^3 - 4x. b) Bestimmen Sie f'(x). c) Gegeben sind P(1 | 2 | 0) und Q(4 | 6 | 0); berechnen Sie den Vektor PQ und seine Laenge.
 
-HILFE:
-1. Schritt 1: Bei a) x ausklammern, dann den quadratischen Faktor mit der pq-Formel loesen.
-2. Schritt 2: Bei b) jeden Summanden mit der Potenzregel ableiten.
-3. Schritt 3: Bei c) Vektor als Q - P bilden und die Laenge als Wurzel der Summe der Quadrate.
+HILFE：
+- 从结构维度切入，先明确本步先求什么量（Zielgroesse: Potenzregel),再选工具：用Potenzregel判定对象归属，用pq-Formel组织步骤顺序。
+- 从定理维度切入，用pq-Formel与Ansatz的适用条件选择公式：先写条件，再代入；berechnen-Aufgaben verlangen erst die Verfahrenswahl (berechnen oder Nachweis), dann die Rechnung.
+- 从验证维度切入，用定义域/单调性/量级做方向对照，判断结果是否合理。不给出具体分点、函数值、和值与归属结论。
+
+COMPLETION (Lückentext):
+- 中文说明：根据MUSTERLÖSUNG补全关键数值，不回看上文。
+- Ergaenze: $Potenzregel = ___$ und $pq-Formel = ___$, und es gilt $Kontrolle = ___$.
 
 MUSTERLÖSUNG: a) x^3 - 4x = x(x^2 - 4) = x(x - 2)(x + 2), also x1 = 0, x2 = 2, x3 = -2. b) Mit der Potenzregel gilt f'(x) = 3x^2 - 4. c) Der Vektor lautet PQ = Q - P = (4 - 1 | 6 - 2 | 0 - 0) = (3 | 4 | 0). Seine Laenge ist |PQ| = Wurzel(3^2 + 4^2 + 0^2) = Wurzel(25) = 5. Alle drei Teilaufgaben sind ohne Hilfsmittel loesbar; die pq-Formel und die Betragsformel muessen auswendig sitzen.
 
@@ -105,7 +121,7 @@ Weg B: Alternative Route mit Gegenrechnung.
 
 AUFGABE B：Untersuchen Sie g(x) = x^3 - 12x + 3 rechnerisch auf lokale Extrempunkte und erlaeutern Sie die Bedeutung der Ergebnisse im Sachzusammenhang.
 
-HILFE: A ist eine kurze Handrechnung ohne Kontext -> Teil A. B verlangt vollstaendigen Loesungsweg mit Argumentation und Deutung -> Teil B.【选程序：只要结果、无情境、可用心算 → Teil A；要求 Ansatz + Rechnung + Antwortsatz、含情境解释 → Teil B。】
+HILFE: A ist eine kurze Handrechnung ohne Kontext -> Teil A. B verlangt vollstaendigen Loesungsweg mit Argumentation und Deutung -> Teil B.【选程序：只要结果、无情境、可用心算 -> Teil A；要求 Ansatz + Rechnung + Antwortsatz、含情境解释 -> Teil B。】
 
 ANTWORT: A gehoert zu Teil A: f'(x) = 15x^2 - 4x + 1, also f'(1) = 15 - 4 + 1 = 12. B gehoert zu Teil B: g'(x) = 3x^2 - 12 = 0 ergibt x = 2 und x = -2; mit g''(x) = 6x folgt g''(-2) = -12 < 0 (Hochpunkt) und g''(2) = 12 > 0 (Tiefpunkt). Wegen g(-2) = 19 und g(2) = -13 gilt HP(-2 | 19) und TP(2 | -13); im Sachzusammenhang markieren diese Stellen die Wendepunkte eines zeitlichen Verlaufs mit maximalem bzw. minimalem Bestand.
 
@@ -135,10 +151,25 @@ CHECK检索默写（自测 3 题，与答案配对）：
 ## Schritt 7 — szenario: Klausurtransfer: ZKE 2027: Teil A und Teil B im Zeitmodus: Uebergabe an die Kommission
 ROLLE: Du bist Pruefungskoordinator und bereitest einen Jahrgang auf die ZKE vor.
 SITUATION: Du sollst vor der Pruefung eine kurze Strategie-Empfehlung (ca. 150 Woerter) formulieren, wie die 100 Minuten zwischen Teil A und Teil B aufgeteilt und wann die Hilfsmittel angefordert werden sollten. Begruende deine Empfehlung mit Blick auf Hilfsmittelregeln und Darstellungsleistung.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Ansatz mit Potenzregel und berechnen-Wahl (ZKE 2027: Teil A und Teil B im Zeitmodus) [AFB I] | 5 NP | Skizze mit beschrifteten Achsen als Alternativweg
+Rechnung mit pq-Formel und Bedingungspruefung [AFB II] | 5 NP | Numerische Kontrolle mit Taschenrechner als Alternativweg
+Deutung mit Ansatz plus Einheit/Randkontrolle [AFB III] | 5 NP | Geometrische Deutung der Konvergenz als Alternativweg
+
 RUBRIC (30 XP): Korrekte Wiedergabe der Zeit- und Hilfsmittelregeln (5 XP) | Begruendete Zeitaufteilung zwischen Teil A und Teil B (10 XP) | Hinweis auf die Bedeutung der Darstellungsleistung in Teil B (10 XP) | Kriteriengeleitetes Fazit zur Pruefungsstrategie (5 XP).
 
+AUFGABE (berechnen, [AFB III]): Berechne erstens den Ansatz mit Potenzregel, zweitens die Rechnung mit pq-Formel und drittens die Deutung mit Ansatz zum Fall: RUBRIC (30 XP): Korrekte Wiedergabe der Zeit- und Hilfsmittelregeln (5 XP) | Begruendete Zeitaufteilung zwischen Teil A und Teil B (10 XP) |. 中文说明：三问分别对应 Ansatz、Rechnung 与 Deutung。
 `Klausur-Satz: Wer Teil-A-Formeln fehlerfrei zeigt und Teil-B-Transfer mit Rechnerweg dokumentiert, erhaelt die volle Punktzahl.`
 
+> MUSTER-KLAUSURSATZ (15 NP): Pruefung ist Zeitspiel: Automatisierte Grundlagen kaufen Minuten fuer schwierige Transferstellen.
+
+KERNSATZ (auswendig):
+- Kernsatz: `Pruefung ist Zeitspiel: Automatisierte Grundlagen kaufen Minuten fuer schwierige Transferstellen.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = Pruefung ist Zeitspiel | Mechanismus = Automatisierte Grundlagen kaufen Minuten | Urteil = fuer schwierige Transferstellen.
+- Selbsttest: Pruefung ist Zeitspiel: Automatisierte Grundlagen kaufen Minuten fuer schwierige ___.
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Uebergabe an die Kommission
 TAKEAWAY 1盒（核心总结）：
 

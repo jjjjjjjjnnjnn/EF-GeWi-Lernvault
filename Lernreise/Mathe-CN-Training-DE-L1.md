@@ -8,7 +8,7 @@ operatoren: [berechnen, bestimmen, begruenden]
 klausurrelevant: true
 datum: 2026-09-26
 tags: [EF, Mathe, CN]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: CN-Training: vier Aufgaben unter Zeitdruck (L1, Ziel Klausur)
@@ -20,13 +20,25 @@ ZIELE (drei messbare Ziele dieser Lektion):
 
 1. Du kannst in $60$ Minuten vier Aufgaben takten: Tangente mit $t(x) = f(x_0)+f'(x_0)(x-x_0)$, Gerade mit $\vec{x} = \vec{a}+s\vec{u}$, Baum mit Pfadprodukt, Extremum mit AM-GM.
 2. Du kannst per EHZ bepunktet selbst korrigieren: $t(x) = x+1$ an $x_0 = 2$ aus $f(2) = 3$, $f'(2) = 1$ pruefen und Rechen- gegen Konzeptfehler trennen.
-3. Du kannst jeden Weg in Ansatz, Rechnung und Antwortsatz schreiben und so Darstellungspunkte sichern (AFB II/III).
+3. Du kannst jeden Weg in Ansatz, Rechnung und Antwortsatz schreiben und so Darstellungspunkte sichern ([AFB II/III]).
 
 ###
 
 ### Hook / Phaenomen
 
 Hook / Phaenomen: Vier Sprachen, ein Kurs: Die **Tangente** spricht Analysis, der **Richtungsvektor** spricht Geometrie, das **Baumdiagramm** spricht Stochastik. Wer alles mit einer Methode angeht, scheitert dreimal. Der **Erwartungshorizont** verraet, welche Sprache pro Aufgabe zaehlt.
+
+预测 [Option A]：Der grobe Schaetzwert aus wenigen Teilwerten genuegt bereits, weitere Verfeinerung aendert nichts。若选A，你在Step 2用工具检验该方向的变化。
+
+预测 [Option B]：Erst fortgesetzte Verfeinerung laesst den Schaetzwert gegen den exakten Wert laufen。若选B，你在Step 2用工具检验该方向的变化。
+
+AUFLÖSUNG (nach der Wahl lesen)
+
+以下解析在选择后阅读，含原两项机制分析全文：
+- Mechanismus A：Hook / Phaenomen: Vier Sprachen, ein Kurs: Die **Tangente** spricht Analysis, der **Richtungsvektor** spricht Geometrie, das **Baumdiagramm** spricht Stochastik.
+- Mechanismus B：Wer alles mit einer Methode angeht, scheitert dreimal.
+
+本质一句话：Die Aufgabe bestimmt die Sprache: Tangente, Gerade, Baum oder Extremum verlangen je eigenes Werkzeug.
 
 `Klausur-Satz: Die Aufgabe bestimmt die Sprache: Tangente, Gerade, Baum oder Extremum verlangen je eigenes Werkzeug.`
 
@@ -90,12 +102,16 @@ BEISPIEL (Sandbox Level mit Werkzeug):
 
 [Werkzeug: formula]
 
-AUFGABE (Levelziel, AFB II): Schaffe alle vier Stationen: Stelle in der Sandbox (tangent-slider) $x_0 = 2$ ein, ziehe den Slider h von 1,0 bis 0,1 und bestaetige $t(x) = x+1$ bei $x_0 = 2$, und berechne dann die Tangente aus $f(2) = 3$ und $f'(2) = 1$ schriftlich. Skizziere den Zeitplan fuer die anderen drei Stationen.
+AUFGABE (Levelziel, [AFB II]): Schaffe alle vier Stationen: Stelle in der Sandbox (tangent-slider) $x_0 = 2$ ein, ziehe den Slider h von 1,0 bis 0,1 und bestaetige $t(x) = x+1$ bei $x_0 = 2$, und berechne dann die Tangente aus $f(2) = 3$ und $f'(2) = 1$ schriftlich. Skizziere den Zeitplan fuer die anderen drei Stationen.
 
-HILFE:
-1. Lies in der Sandbox $f(2) = 3$ und $f'(2) = 1$ ab und notiere die Tangentenformel $t(x) = f(x_0)+f'(x_0)(x-x_0)$.
-2. Setze ein zu $t(x) = 3+1(x-2) = x+1$.
-3. Verteile $20$ Minuten auf vier Stationen mit je Ansatz plus Einheit plus Urteil.
+HILFE：
+- 从结构维度切入，先明确本步先求什么量（Zielgroesse: Richtungsvektor),再选工具：用Richtungsvektor判定对象归属，用Pfadprodukt组织步骤顺序。
+- 从定理维度切入，用Pfadprodukt与Konzeptfehler的适用条件选择公式：先写条件，再代入；berechnen-Aufgaben verlangen erst die Verfahrenswahl (berechnen oder Nachweis), dann die Rechnung.
+- 从验证维度切入，用定义域/单调性/量级做方向对照，判断结果是否合理。不给出具体分点、函数值、和值与归属结论。
+
+COMPLETION (Lückentext):
+- 中文说明：根据MUSTERLÖSUNG补全关键数值，不回看上文。
+- Ergaenze: $t(x) = ___$ und $t(x) = ___$, und es gilt $Kontrolle = ___$.
 
 MUSTERLOESUNG: Sandbox $t(x) = x+1$ bestaetigt. Rechnung $t(x) = f(2)+f'(2)(x-2) = 3+1(x-2) = x+1$ mit $f(2) = 3$ und $f'(2) = 1$. Zeitplan $5$ Minuten je Station Differenzieren, Vektorrechnung, Wahrscheinlichkeit und Extremwert mit derselben Ordnung Achsen plus Bedingung plus Ansatz plus Einheit plus Urteil. Alle vier Kernkompetenzen sind damit unter Zeitdruck abgedeckt.
 
@@ -140,11 +156,25 @@ CHECK (drei Fragen mit Antworten):
 ## Schritt 7 — szenario: Klausurtransfer: CN-Training: vier Aufgaben unter Zeitdruck: Nachtschicht im Rechenzentrum
 ROLLE: Du bist Lerncoach und wertest die Ergebnisse des 60-Minuten-Trainings aus.
 SITUATION: Ein Schueler hat alle vier Aufgaben bearbeitet, aber bei Aufgabe 2 nur den Vektor angegeben, bei Aufgabe 3 die zweite Wahrscheinlichkeit als $4/7$ geschrieben und bei Aufgabe 4 das Ergebnis ohne Gleichheitsbedingung gelassen. Beurteile seine Leistung in einer zusammenhaengenden Darstellung (circa 150 Woerter), ordne die Fehler nach EHZ-Punkten ein und unterscheide Rechenfehler von Konzeptfehlern.
-AUFGABE (begruenden, AFB III): Verfasse eine zusammenhaengende Darstellung von etwa 150 Woertern mit Fehlerzuordnung, Analyse und Lernempfehlung.
+AUFGABE (berechnen, [AFB III]): Berechne Verfasse eine zusammenhaengende Darstellung von etwa 150 Woertern mit Fehlerzuordnung, Analyse und Lernempfehlung.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Ansatz mit Richtungsvektor und berechnen-Wahl (CN-Training: vier Aufgaben unter Zeitdru) [AFB I] | 5 NP | Skizze mit beschrifteten Achsen als Alternativweg
+Rechnung mit Pfadprodukt und Bedingungspruefung [AFB II] | 5 NP | Numerische Kontrolle mit Taschenrechner als Alternativweg
+Deutung mit Konzeptfehler plus Einheit/Randkontrolle [AFB III] | 5 NP | Geometrische Deutung der Konvergenz als Alternativweg
+
 RUBRIC (30 XP): Zuordnung der Fehler zu den EHZ-Punkten (5 XP) | Analyse Aufgabe 2: fehlender Nachweis der Laenge und Punktprobe (10 XP) | Analyse Aufgabe 3 und 4: Konzeptfehler ohne Zuruecklegen beziehungsweise fehlende Gleichheitsbedingung (10 XP) | Fazit mit Lernempfehlung (5 XP).
 
 `Klausur-Satz: Wer Aufgabentyp, passendes Werkzeug und Erwartungshorizont je Teilschritt nennt und vorrechnet, sichert alle Teilpunkte.`
 
+> MUSTER-KLAUSURSATZ (15 NP): Training heisst Uebersetzen: Alltagssprache wird erst durch das richtige Verfahren zu Klausursprache.
+
+KERNSATZ (auswendig):
+- Kernsatz: `Training heisst Uebersetzen: Alltagssprache wird erst durch das richtige Verfahren zu Klausursprache.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = Training heisst Uebersetzen | Mechanismus = Alltagssprache wird erst durch das richtige | Urteil = Verfahren zu Klausursprache.
+- Selbsttest: Training heisst Uebersetzen: ___ wird erst durch das richtige Verfahren zu Klausursprache.
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Nachtschicht im Rechenzentrum
 TAKEAWAY (Kernbotschaft in einem Kasten):
 

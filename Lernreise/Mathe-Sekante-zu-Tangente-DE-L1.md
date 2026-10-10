@@ -8,7 +8,7 @@ operatoren: [darstellen, berechnen, interpretieren]
 klausurrelevant: true
 datum: 2026-09-26
 tags: [EF, Mathe, Analysis]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Von der Sekante zur Tangente (L1, Ziel Klausur)
@@ -20,13 +20,25 @@ ZIELE (drei messbare Ziele dieser Lektion):
 
 1. Du kannst Sekante als Gerade durch zwei Punkte und Tangente als Grenzlage fuer $h \to 0$ unterscheiden und je ein Bild skizzieren.
 2. Du kannst $m = \frac{f(x_0+h)-f(x_0)}{h}$ aufstellen und beschreiben, wie $Q$ gegen $P$ wandert und die Sekante in die Tangente rotiert.
-3. Du kannst $f'(3) = 6$ fuer $f(x) = x^2$ von Hand berechnen und gegen die Sekantensteigung $8$ ueber $[3, 5]$ abgrenzen (AFB II).
+3. Du kannst $f'(3) = 6$ fuer $f(x) = x^2$ von Hand berechnen und gegen die Sekantensteigung $8$ ueber $[3, 5]$ abgrenzen ([AFB II]).
 
 ###
 
 ### Hook / Phaenomen
 
 Hook / Phaenomen: Zwei Messpunkte geben eine **Sekante**, ein Messpunkt gibt ein Raetsel. Laesst man den zweiten Punkt auf den ersten zulaufen, wird aus mittlerer **Aenderungsrate** lokale. Der **Differenzenquotient** schrumpft dabei zur **Tangente** zusammen.
+
+预测 [Option A]：Der grobe Sekantenwert aus wenigen Teilwerten genuegt bereits, weitere Verfeinerung aendert nichts。若选A，你在Step 2用工具检验该方向的变化。
+
+预测 [Option B]：Erst fortgesetzte Verfeinerung laesst den Sekantenwert gegen den exakten Wert laufen。若选B，你在Step 2用工具检验该方向的变化。
+
+AUFLÖSUNG (nach der Wahl lesen)
+
+以下解析在选择后阅读，含原两项机制分析全文：
+- Mechanismus A：Hook / Phaenomen: Zwei Messpunkte geben eine **Sekante**, ein Messpunkt gibt ein Raetsel.
+- Mechanismus B：Laesst man den zweiten Punkt auf den ersten zulaufen, wird aus mittlerer **Aenderungsrate** lokale.
+
+本质一句话：Die Tangente ist der Grenzfall der Sekante: Laeuft h gegen null, wird mittlere zu lokaler Aenderung.
 
 `Klausur-Satz: Die Tangente ist der Grenzfall der Sekante: Laeuft h gegen null, wird mittlere zu lokaler Aenderung.`
 
@@ -93,12 +105,16 @@ BEISPIEL (Sandbox Level mit Werkzeug):
 
 [Werkzeug: tangent-slider]
 
-AUFGABE (Levelziel, AFB II): Knacke das Tangenten-Level: Stelle im Sandbox-Slider nacheinander $h = 2{,}0$, $h = 1{,}0$ und $h = 0{,}1$ an $x_0 = 3$ fuer $f(x) = x^2$ ein. Lies jedes Mal $m(h)$ ab, beobachte wie Punkt $Q$ auf $P$ zuwandert und wie die Sekante in die Tangente rotiert, und berechne dann exakt von Hand $f'(3)$. Vergleiche dein Sandbox-Ergebnis mit der Sekantensteigung ueber $[3, 5]$ und erklaere den Unterschied in einem Satz.
+AUFGABE (Levelziel, [AFB II]): Knacke das Tangenten-Level: Stelle im Sandbox-Slider nacheinander $h = 2{,}0$, $h = 1{,}0$ und $h = 0{,}1$ an $x_0 = 3$ fuer $f(x) = x^2$ ein. Lies jedes Mal $m(h)$ ab, beobachte wie Punkt $Q$ auf $P$ zuwandert und wie die Sekante in die Tangente rotiert, und berechne dann exakt von Hand $f'(3)$. Vergleiche dein Sandbox-Ergebnis mit der Sekantensteigung ueber $[3, 5]$ und erklaere den Unterschied in einem Satz.
 
-HILFE:
-1. Setze $m(h) = (f(3+h)-f(3))/h$ an und lies zuerst die Sandbox-Werte fuer $h = 2{,}0$ zu $m = 8$ und $h = 0{,}1$ zu $m = 6{,}1$ ab.
-2. Rechne von Hand $(3+h)^2 = 9+6h+h^2$, kuerze $h$ zu $m(h) = 6+h$ und bilde $h \to 0$ zu $f'(3) = 6$.
-3. Berechne zum Vergleich $(f(5)-f(3))/2 = 8$ und ordne Mittel gegen Moment zu.
+HILFE：
+- 从结构维度切入，先明确本步先求什么量（Zielgroesse: Differenzenquotient),再选工具：用Differenzenquotient判定对象归属，用Rechenform组织步骤顺序。
+- 从定理维度切入，用Rechenform与Differentialquotient的适用条件选择公式：先写条件，再代入；darstellen-Aufgaben verlangen erst die Verfahrenswahl (darstellen oder Nachweis), dann die Rechnung.
+- 从验证维度切入，用定义域/单调性/量级做方向对照，判断结果是否合理。不给出具体分点、函数值、和值与归属结论。
+
+COMPLETION (Lückentext):
+- 中文说明：根据MUSTERLÖSUNG补全关键数值，不回看上文。
+- Ergaenze: $h = ___$ und $m = ___$, und es gilt $Kontrolle = ___$.
 
 MUSTERLOESUNG: Sandbox $h = 2{,}0$ liefert $m = 8$, $h = 1{,}0$ liefert $m = 7$, $h = 0{,}1$ liefert $m = 6{,}1$, die Tendenz zeigt $6$. Rechnung $f(3+h) = 9+6h+h^2$, also $m(h) = 6+h$ fuer $h \ne 0$, mit $h \to 0$ folgt $f'(3) = 6$. Die Sekante ueber $[3, 5]$ ergibt $(25-9)/2 = 8$. Die $8$ mittelt ueber das Intervall, die $6$ misst den Moment, daher ist $8$ groesser, weil die Parabel rechts steiler wird.
 
@@ -142,11 +158,25 @@ CHECK (drei Fragen mit Antworten):
 ## Schritt 7 — szenario: Klausurtransfer: Von der Sekante zur Tangente: Sekante wird Tangente
 ROLLE: Du bist Tutorin in der EF und bereitest eine Mitschuelerin auf die ZKE vor.
 SITUATION: Deine Mitschuelerin hat mit dem GTR fuer $f(x) = x^3$ im Intervall $[-1, 1]$ eine Durchschnittssteigung von $1$ erhalten, ist aber verwirrt, weil die Tangente an der Stelle $x = 0$ waagerecht verlaeuft. Erklaere ihr in einer zusammenhaengenden Darstellung (circa 150 Woerter) den Unterschied zwischen Sekante und Tangente und ordne beide Ergebnisse ein.
-AUFGABE (interpretieren, AFB III): Verfasse eine zusammenhaengende Darstellung von etwa 150 Woertern mit These, Sekantenrechnung, Tangentenbegruendung und Fazit.
+AUFGABE (darstellen, [AFB III]): Stelle dar Verfasse eine zusammenhaengende Darstellung von etwa 150 Woertern mit These, Sekantenrechnung, Tangentenbegruendung und Fazit.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Ansatz mit Differenzenquotient und darstellen-Wahl (Von der Sekante zur Tangente) [AFB I] | 5 NP | Skizze mit beschrifteten Achsen als Alternativweg
+Rechnung mit Rechenform und Bedingungspruefung [AFB II] | 5 NP | Numerische Kontrolle mit Taschenrechner als Alternativweg
+Deutung mit Differentialquotient plus Einheit/Randkontrolle [AFB III] | 5 NP | Geometrische Deutung der Konvergenz als Alternativweg
+
 RUBRIC (30 XP): Klare These zum Unterschied Sekante und Tangente (5 XP) | Korrekte Sekantenrechnung $(f(1) - f(-1)) / 2 = 1$ (10 XP) | Begruendung der Tangentensteigung $f'(0) = 0$ (10 XP) | Abschlussfazit mit Fachbegriffen (5 XP).
 
 `Klausur-Satz: Wer Sekantensteigung berechnet, Grenzprozess zeigt und Tangentensteigung deutet, erhaelt die volle Punktzahl.`
 
+> MUSTER-KLAUSURSATZ (15 NP): Durchschnittsgeschwindigkeiten entsprechen Sekantensteigungen, Momentangeschwindigkeiten entsprechen Tangentensteigungen.
+
+KERNSATZ (auswendig):
+- Kernsatz: `Durchschnittsgeschwindigkeiten entsprechen Sekantensteigungen, Momentangeschwindigkeiten entsprechen Tangentensteigungen.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = Durchschnittsgeschwindigkeiten entsprechen | Mechanismus = Sekantensteigungen, Momentangeschwindigkeiten | Urteil = entsprechen Tangentensteigungen.
+- Selbsttest: ___ entsprechen Sekantensteigungen, Momentangeschwindigkeiten entsprechen Tangentensteigungen.
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Sekante wird Tangente
 TAKEAWAY (Kernbotschaft in einem Kasten):
 

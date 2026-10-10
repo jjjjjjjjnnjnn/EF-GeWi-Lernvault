@@ -8,7 +8,7 @@ operatoren: [darstellen, berechnen, interpretieren]
 klausurrelevant: true
 datum: 2026-09-25
 tags: [EF, Mathe, Analysis]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Von der Sekante zur Tangente (L1, Ziel Klausur)
@@ -20,7 +20,7 @@ ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
 1. 中文：能说清割线斜率（平均变化率）与切线斜率（瞬时变化率）的几何区别——一个是跨区间的两点连线，一个是停在一点上的极限位置。
 2. 中文：能写出差商 `m = (f(x0 + h) - f(x0)) / h`，并在图上指出 h 逼近 0 时割线绕定点旋转、最终定型为切线的全过程。
-3. 中文：能用差商加极限手算一个具体函数在某点的导数值，并写出德语标准结论句（AFB II）。
+3. 中文：能用差商加极限手算一个具体函数在某点的导数值，并写出德语标准结论句（[AFB II]）。
 
 ### Hook / Phaenomen
 
@@ -28,10 +28,22 @@ ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
 Hook / Phaenomen: Zwei Messpunkte geben eine **Sekante**, ein Messpunkt gibt ein Raetsel. Laesst man den zweiten Punkt auf den ersten zulaufen, wird aus mittlerer **Aenderungsrate** lokale. Der **Differenzenquotient** schrumpft dabei zur **Tangente** zusammen.
 
+预测 [Option A]：Der grobe Sekantenwert aus wenigen Teilwerten genuegt bereits, weitere Verfeinerung aendert nichts。若选A，你在Step 2用工具检验该方向的变化。
+
+预测 [Option B]：Erst fortgesetzte Verfeinerung laesst den Sekantenwert gegen den exakten Wert laufen。若选B，你在Step 2用工具检验该方向的变化。
+
+AUFLÖSUNG (nach der Wahl lesen)
+
+以下解析在选择后阅读，含原两项机制分析全文：
+- Mechanismus A：两点定割线，一点没法办：让第二点滑向第一点，平均变化率就变成了瞬时变化率，割线就变成了切线。 Hook / Phaenomen: Zwei Messpunkte geben eine **Sekante**, ein Messpunkt gibt ein Raetsel.
+- Mechanismus B：Laesst man den zweiten Punkt auf den ersten zulaufen, wird aus mittlerer **Aenderungsrate** lokale.
+
+本质一句话：Die Tangente ist der Grenzfall der Sekante: Laeuft h gegen null, wird mittlere zu lokaler Aenderung.
+
 `Klausur-Satz: Die Tangente ist der Grenzfall der Sekante: Laeuft h gegen null, wird mittlere zu lokaler Aenderung.`
 
 ## Schritt 2 — entdecken: Ausruestungskiste der Algorithmus-Unit
-PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
+PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文->德语，Evidenz：pretraining降认知负荷）：
 
 中文在上，德语在下：
 
@@ -86,12 +98,16 @@ BEISPIEL（正确例题示范，含教具操作与解答）：
 
 [Werkzeug: tangent-slider]
 
-AUFGABE (berechnen, AFB II)：Gegeben ist f(x) = x^2. Bestimmen Sie mit dem Differenzenquotienten die Ableitung an der Stelle x0 = 3 und vergleichen Sie das Ergebnis mit der Sekantensteigung im Intervall [3; 5].
+AUFGABE (berechnen, [AFB II])：Gegeben ist f(x) = x^2. Bestimmen Sie mit dem Differenzenquotienten die Ableitung an der Stelle x0 = 3 und vergleichen Sie das Ergebnis mit der Sekantensteigung im Intervall [3; 5].
 
-HILFE:
-1. Schritt 1: Differenzenquotient ansetzen: m_sek = (f(3 + h) - f(3)) / h.
-2. Schritt 2: Zaehler ausmultiplizieren und h ausklammern, damit sich h kuerzen laesst.
-3. Schritt 3: Nach dem Kuerzen h gegen 0 laufen lassen; danach zum Vergleich (f(5) - f(3)) / (5 - 3) berechnen.
+HILFE：
+- 从结构维度切入，先明确本步先求什么量（Zielgroesse: Differenzenquotient),再选工具：用Differenzenquotient判定对象归属，用Rechenform组织步骤顺序。
+- 从定理维度切入，用Rechenform与Differentialquotient的适用条件选择公式：先写条件，再代入；darstellen-Aufgaben verlangen erst die Verfahrenswahl (darstellen oder Nachweis), dann die Rechnung.
+- 从验证维度切入，用定义域/单调性/量级做方向对照，判断结果是否合理。不给出具体分点、函数值、和值与归属结论。
+
+COMPLETION (Lückentext):
+- 中文说明：根据MUSTERLÖSUNG补全关键数值，不回看上文。
+- Ergaenze: $Differenzenquotient = ___$ und $Rechenform = ___$, und es gilt $Kontrolle = ___$.
 
 MUSTERLÖSUNG: Es gilt f(3 + h) = (3 + h)^2 = 9 + 6h + h^2, also f(3 + h) - f(3) = 9 + 6h + h^2 - 9 = 6h + h^2 = h(6 + h). Der Differenzenquotient lautet daher h(6 + h) / h = 6 + h (fuer h ungleich 0). Der Grenzuebergang h gegen 0 liefert f'(3) = 6. Zum Vergleich: Die Sekantensteigung ueber [3; 5] betraegt (25 - 9) / (5 - 3) = 16 / 2 = 8. Die mittlere Aenderungsrate 8 ist groesser als die lokale Aenderungsrate 6, weil die Parabel rechts von x0 = 3 im Durchschnitt steiler ansteigt.
 
@@ -139,10 +155,25 @@ CHECK检索默写（自测 3 题，与答案配对）：
 ## Schritt 7 — szenario: Klausurtransfer: Von der Sekante zur Tangente: Sekante wird Tangente
 ROLLE: Du bist Tutorin in der EF und bereitest eine Mitschuelerin auf die ZKE vor.
 SITUATION: Deine Mitschuelerin hat mit dem GTR fuer f(x) = x^3 im Intervall [-1; 1] eine Durchschnittssteigung von 1 erhalten, ist aber verwirrt, weil die Tangente an der Stelle x = 0 waagerecht verlaeuft. Erklaere ihr in einer zusammenhaengenden Darstellung (ca. 150 Woerter) den Unterschied zwischen Sekante und Tangente und ordne beide Ergebnisse ein.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Ansatz mit Differenzenquotient und darstellen-Wahl (Von der Sekante zur Tangente) [AFB I] | 5 NP | Skizze mit beschrifteten Achsen als Alternativweg
+Rechnung mit Rechenform und Bedingungspruefung [AFB II] | 5 NP | Numerische Kontrolle mit Taschenrechner als Alternativweg
+Deutung mit Differentialquotient plus Einheit/Randkontrolle [AFB III] | 5 NP | Geometrische Deutung der Konvergenz als Alternativweg
+
 RUBRIC (30 XP): Klare These zum Unterschied Sekante/Tangente (5 XP) | Korrekte Sekantenrechnung (f(1) - f(-1)) / 2 = 1 (10 XP) | Begruendung der Tangentensteigung f'(0) = 0 (10 XP) | Abschlussfazit mit Fachbegriffen (5 XP).
 
+AUFGABE (darstellen, [AFB III]): Stelle dar erstens den Ansatz mit Differenzenquotient, zweitens die Rechnung mit Rechenform und drittens die Deutung mit Differentialquotient zum Fall: RUBRIC (30 XP): Klare These zum Unterschied Sekante/Tangente (5 XP) | Korrekte Sekantenrechnung (f(1) - f(-1)) / 2 = 1 (10 XP) | Begruendung. 中文说明：三问分别对应 Ansatz、Rechnung 与 Deutung。
 `Klausur-Satz: Wer Sekantensteigung berechnet, Grenzprozess zeigt und Tangentensteigung deutet, erhaelt die volle Punktzahl.`
 
+> MUSTER-KLAUSURSATZ (15 NP): Durchschnittsgeschwindigkeiten entsprechen Sekantensteigungen, Momentangeschwindigkeiten entsprechen Tangentensteigungen.
+
+KERNSATZ (auswendig):
+- Kernsatz: `Durchschnittsgeschwindigkeiten entsprechen Sekantensteigungen, Momentangeschwindigkeiten entsprechen Tangentensteigungen.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = Durchschnittsgeschwindigkeiten entsprechen | Mechanismus = Sekantensteigungen, Momentangeschwindigkeiten | Urteil = entsprechen Tangentensteigungen.
+- Selbsttest: ___ entsprechen Sekantensteigungen, Momentangeschwindigkeiten entsprechen Tangentensteigungen.
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Sekante wird Tangente
 TAKEAWAY 1盒（核心总结）：
 

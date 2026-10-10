@@ -8,7 +8,7 @@ operatoren: [modellieren, multiplizieren, bestimmen]
 klausurrelevant: true
 datum: 2026-10-03
 tags: [EF, Mathe, Stochastik, Lineare-Algebra, Markov-Kette, Uebergangsmatrix, Grenzverteilung, Fixvektor]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Stochastik & Lineare Algebra: Markov-Ketten und Uebergangsmatrizen (L1, Ziel Klausur)
@@ -20,16 +20,28 @@ ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
 1. 中文：能将现实世界中的离散随机迁移过程抽象为状态转移图（Zustandsdiagramm）并建立标准随机转移矩阵（stochastische Uebergangsmatrix $M$）。
 2. 中文：能熟练运用矩阵乘法计算经过 $n$ 个步长后的状态概率分布向量（$\vec{v}_n = M^n \cdot \vec{v}_0$）。
-3. 中文：能在高考随机过程综合大题（AFB I/II/III）中通过求解齐次线性方程组（$(M - E)\vec{v} = \vec{0}$ 结合归一化条件 $\sum v_i = 1$）精准求解系统长期演化的稳态平衡向量（stationaere Grenzverteilung / Fixvektor）。
+3. 中文：能在高考随机过程综合大题（[AFB I/II/III]）中通过求解齐次线性方程组（$(M - E)\vec{v} = \vec{0}$ 结合归一化条件 $\sum v_i = 1$）精准求解系统长期演化的稳态平衡向量（stationaere Grenzverteilung / Fixvektor）。
 
 ### Hook / Phaenomen
 
 Ein modernes Mobilitaetsunternehmen betreibt zehntausend knallgruene E-Scooter in den drei Stadtbezirken einer Metropole: Zentrum ($Z$), Wohnviertel ($W$) und Universitaetscampus ($U$). Jeden Tag mieten Zehntausende Buerger die Roller, fahren kreuz und quer durch die Stadt und stellen sie an ihrem Zielort wieder ab. Die Verkehrsanalysten messen stabile taegliche Uebergangswahrscheinlichkeiten: 60 Prozent der im Zentrum ausgeliehenen Roller verbleiben im Zentrum, 30 Prozent landen im Wohnviertel und 10 Prozent am Campus. Aehnliche feste Wanderungsraten gelten fuer die anderen beiden Stadtteile. Zu Beginn des Jahres startet das Unternehmen ein riskantes Experiment: Am 1. Januar werden alle zehntausend Roller ausschliesslich im Zentrum aufgestellt! Am naechsten Tag stehen schon Tausende im Wohnviertel. Nach zehn Tagen scheinen die Roller voellig wild verteilt. Doch als die Mathematiker die Verteilung nach hundert Tagen analysieren, erleben die Flottenmanager eine verblueffende Sensation: Egal, wo die Roller am Anfang standen – nach einigen Wochen stellt sich Tag fuer Tag exakt dieselbe prozentuale Verteilung zwischen den Bezirken ein! Ein unsichtbares mathematisches Gravitationsgesetz haelt das System in perfekter Balance: die stationaere Grenzverteilung einer Markov-Kette.
 
+预测 [Option A]：Der grobe Verteilungswert aus wenigen Teilwerten genuegt bereits, weitere Verfeinerung aendert nichts。若选A，你在Step 2用工具检验该方向的变化。
+
+预测 [Option B]：Erst fortgesetzte Verfeinerung laesst den Verteilungswert gegen den exakten Wert laufen。若选B，你在Step 2用工具检验该方向的变化。
+
+AUFLÖSUNG (nach der Wahl lesen)
+
+以下解析在选择后阅读，含原两项机制分析全文：
+- Mechanismus A：Ein modernes Mobilitaetsunternehmen betreibt zehntausend knallgruene E-Scooter in den drei Stadtbezirken einer Metropole: Zentrum ($Z$), Wohnviertel ($W$) und Universitaetscampus ($U$).
+- Mechanismus B：Jeden Tag mieten Zehntausende Buerger die Roller, fahren kreuz und quer durch die Stadt und stellen sie an ihrem Zielort wieder ab.
+
+本质一句话：Ein stochastischer Prozess heisst Markov-Kette mit Gedaechtnislosigkeit, wenn die Uebergangswahrscheinlichkeit in den Folgezustand ausschliesslich vom aktuellen Ist-Zustand und nicht von der vorangegangenen Vorgeschichte abhaengt.
+
 `Klausur-Satz: Ein stochastischer Prozess heisst Markov-Kette mit Gedaechtnislosigkeit, wenn die Uebergangswahrscheinlichkeit in den Folgezustand ausschliesslich vom aktuellen Ist-Zustand und nicht von der vorangegangenen Vorgeschichte abhaengt.`
 
 ## Schritt 2 — entdecken: Der Werkzeugkasten der stochastischen Prozesse
-PRETRAINING术语盒（核心4词，先读三遍中德，合书自测中文→德语）：
+PRETRAINING术语盒（核心4词，先读三遍中德，合书自测中文->德语）：
 
 - 随机转移矩阵 — Stochastische Uebergangsmatrix ($M$): 一种方阵，其中第 $j$ 列第 $i$ 行的元素 $m_{ij}$ 表示从状态 $j$ 转移到状态 $i$ 的条件概率，每列元素之和严格等于 1。 Eine quadratische Matrix, deren Spaltensummen jeweils exakt 1 ergeben und deren Eintraege Uebergangswahrscheinlichkeiten darstellen.
 - 状态向量 — Zustandsvektor ($\vec{v}_n$): 列出在时刻 $n$ 系统处于各个可能状态的绝对数量或相对概率分布的列向量。 Ein Spaltenvektor, der die prozentuale oder absolute Verteilung auf die Systemzustaende zum Zeitschritt $n$ abbildet.
@@ -65,13 +77,22 @@ $$M = \begin{pmatrix} P(S \to S) & P(R \to S) \\ P(S \to R) & P(R \to R) \end{pm
 
 [Werkzeug: lego]
 
-AUFGABE (multiplizieren & bestimmen, AFB I/II):
+AUFGABE (multiplizieren & bestimmen, [AFB I/II]):
 Gegeben ist die Uebergangsmatrix des Wettermodells:
 $$M = \begin{pmatrix} 0{,}8 & 0{,}4 \\ 0{,}2 & 0{,}6 \end{pmatrix}$$
 mit Zustand 1 = Sonne ($S$) und Zustand 2 = Regen ($R$).
 Am Montag (Tag 0) regnet es zu 100 Prozent: $\vec{v}_0 = \begin{pmatrix} 0 \\ 1 \end{pmatrix}$.
+
+HILFE：
+- 从结构维度切入，先明确本步先求什么量（Zielgroesse: Grenzverteilung),再选工具：用Grenzverteilung判定对象归属，用Fixvektor组织步骤顺序。
+- 从定理维度切入，用Fixvektor与Zustandsvektor的适用条件选择公式：先写条件，再代入；modellieren-Aufgaben verlangen erst die Verfahrenswahl (modellieren oder Nachweis), dann die Rechnung.
+- 从验证维度切入，用定义域/单调性/量级做方向对照，判断结果是否合理。不给出具体分点、函数值、和值与归属结论。
 1. Berechne die Wahrscheinlichkeitsverteilung fuer Dienstag (Tag 1) und Mittwoch (Tag 2).
 2. Bestimme die stationaere Grenzverteilung (den Fixvektor) $\vec{v}^* = \begin{pmatrix} x \\ y \end{pmatrix}$ mit der Normierungsbedingung $x + y = 1$.
+
+COMPLETION (Lückentext):
+- 中文说明：根据MUSTERLÖSUNG补全关键数值，不回看上文。
+- Ergaenze: $\vec{v}_1 = ___$ und $\vec{v}_2 = ___$, und es gilt $Kontrolle = ___$.
 
 MUSTERLOESUNG:
 1. Schrittweise Entwicklung:
@@ -112,20 +133,28 @@ Vergiss bei der Fixvektorberechnung niemals die Normierungszeile ($x + y + z = 1
 
 PRUEFUNGSSZENARIO (KLP NRW Mathematik LK Inhaltsfeld 3: Stochastik & Lineare Algebra):
 
-### AFB I: Matrix-Aufstellung
+### [AFB I]: Matrix-Aufstellung
 Drei Streaming-Dienste $A$, $B$ und $C$ konkurrieren um Abonnenten. 
 Stelle die $3 \times 3$-Uebergangsmatrix $M$ auf, wenn monatlich 10 % der Kunden von $A$ zu $B$ und 5 % zu $C$ wechseln, waehrend $B$ 80 % seiner Kunden haelt und 20 % an $A$ verliert, und $C$ stabil bei 90 % Kundenbindung bleibt (10 % wechseln zu $A$).
 
-### AFB II: Grenzverteilung berechnen
+### [AFB II]: Grenzverteilung berechnen
 Berechne die langfristigen Marktanteile der drei Konzerne durch Loesen des Gleichungssystems $(M - E)\vec{v} = \vec{0}$.
 
-### AFB III: PageRank-Algorithmus
+### [AFB III]: PageRank-Algorithmus
 Der beruehmte Google-PageRank-Algorithmus modelliert das weltweite Websurfen als riesige Markov-Kette ueber Milliarden von Webseiten.
 Diskutiere, warum Google einen "Zufaelligkeits-Dampfungsfaktor" (Damping Factor $d = 0{,}85$) einfuehrte, um zu verhindern, dass Web-Surfer in toten Schleifen (Dead Ends / Sackgassen ohne ausgehende Links) gefangen bleiben.
 
 ## Schritt 7 — check: Format-Check & Scoring
 
 30 XP Schnelltest zur Verstaendigungssicherung:
+
+AUFGABE (modellieren, [AFB III]): Modelliere erstens den Ansatz mit Grenzverteilung, zweitens die Rechnung mit Fixvektor und drittens die Deutung mit Zustandsvektor zum Fall: 30 XP Schnelltest zur Verstaendigungssicherung:. 中文说明：三问分别对应 Ansatz、Rechnung 与 Deutung。
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Ansatz mit Grenzverteilung und modellieren-Wahl (Stochastik & Lineare Algebra: Markov-Ket) [AFB I] | 5 NP | Skizze mit beschrifteten Achsen als Alternativweg
+Rechnung mit Fixvektor und Bedingungspruefung [AFB II] | 5 NP | Numerische Kontrolle mit Taschenrechner als Alternativweg
+Deutung mit Zustandsvektor plus Einheit/Randkontrolle [AFB III] | 5 NP | Geometrische Deutung der Konvergenz als Alternativweg
 
 FRAGE: Welche mathematische Eigenschaft muessen die Spalten einer stochastischen Uebergangsmatrix immer erfuellen?
 ANTWORT: Die Summe aller Elemente in jeder einzelnen Spalte muss exakt gleich 1 (100 %) sein, da sich die Gesamtwahrscheinlichkeit aller moeglichen Folgezustaende zu 1 addieren muss.
@@ -135,6 +164,13 @@ ANTWORT: Weil die Zeilen der Matrix (M - E) aufgrund der Spaltensummen-Eigenscha
 
 `Klausur-Satz: Die differenzierte Reflexion erfordert eine stringente Verknuepfung von theoretischem Kriterienkatalog und konkretem Klausurmaterial.`
 
+> MUSTER-KLAUSURSATZ (15 NP): Die differenzierte Reflexion erfordert eine stringente Verknuepfung von theoretischem Kriterienkatalog und konkretem Klausurmaterial.
+
+KERNSATZ (auswendig):
+- Kernsatz: `Die differenzierte Reflexion erfordert eine stringente Verknuepfung von theoretischem Kriterienkatalog und konkretem Klausurmaterial.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = Die differenzierte Reflexion erfordert | Mechanismus = eine stringente Verknuepfung von theoretischem Kriterienkatalog | Urteil = und konkretem Klausurmaterial.
+- Selbsttest: Die differenzierte Reflexion erfordert eine stringente Verknuepfung von theoretischem ___ und konkretem Klausurmaterial.
 ## Schritt 8 — reflexion: Meisterschaft & Naechste Mission
 
 REFLEXION:

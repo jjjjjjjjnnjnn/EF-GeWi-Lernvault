@@ -8,7 +8,7 @@ operatoren: [anwenden, begruenden, beurteilen]
 klausurrelevant: true
 datum: 2026-09-25
 tags: [EF, Mathe, CN]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: CN-Tricks — sechs Schnellverfahren (L1, Ziel Klausur)
@@ -20,7 +20,7 @@ ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
 1. 中文：能说出六种中国速解法的原理与适用条件——特殊值法、排除法、数形结合、韦达定理、均值不等式、分离参数。
 2. 中文：能为每种技法做一道自编小题，并把结果翻译成一句德语检验句（Pruefsatz）。
-3. 中文：能判断速解法何时失效，并果断切回德国通法——因为大题只认完整过程（AFB II/III）。
+3. 中文：能判断速解法何时失效，并果断切回德国通法——因为大题只认完整过程（[AFB II/III]）。
 
 ### Hook / Phaenomen
 
@@ -28,10 +28,22 @@ ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
 Hook / Phaenomen: Wer null oder eins einsetzt, trifft manchmal ins Schwarze und manchmal daneben. Der Unterschied zwischen Glueck und Methode heisst **Bedingung**. **Spezialwert**, **Ausschluss** und **Skizze** sind nur Abkuerzungen mit Gueltigkeitsbereich.
 
+预测 [Option A]：Der grobe Schaetzwert aus wenigen Teilwerten genuegt bereits, weitere Verfeinerung aendert nichts。若选A，你在Step 2用工具检验该方向的变化。
+
+预测 [Option B]：Erst fortgesetzte Verfeinerung laesst den Schaetzwert gegen den exakten Wert laufen。若选B，你在Step 2用工具检验该方向的变化。
+
+AUFLÖSUNG (nach der Wahl lesen)
+
+以下解析在选择后阅读，含原两项机制分析全文：
+- Mechanismus A：代入0或1有时一击即中，有时全盘皆错：运气和方法的差别就叫“条件”，任何速解都有适用边界。 Hook / Phaenomen: Wer null oder eins einsetzt, trifft manchmal ins Schwarze und manchmal daneben.
+- Mechanismus B：Der Unterschied zwischen Glueck und Methode heisst **Bedingung**.
+
+本质一句话：Jeder Trick braucht seine Bedingung: Ohne Gueltigkeitspruefung bleibt Heuristik Gluecksspiel.
+
 `Klausur-Satz: Jeder Trick braucht seine Bedingung: Ohne Gueltigkeitspruefung bleibt Heuristik Gluecksspiel.`
 
 ## Schritt 2 — entdecken: Ausruestungskiste der Algorithmus-Unit
-PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
+PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文->德语，Evidenz：pretraining降认知负荷）：
 
 中文在上，德语在下：
 
@@ -90,12 +102,16 @@ BEISPIEL（正确例题示范，含教具操作与解答）：
 
 [Werkzeug: formula]
 
-AUFGABE (anwenden, AFB II)：Vergleichen Sie die Zahlen a = 2^30 und b = 3^20 mit der Spezialwert-Idee (gleiche Exponenten suchen) und bestaetigen Sie das Ergebnis durch eine Abschaetzung.
+AUFGABE (anwenden, [AFB II])：Vergleichen Sie die Zahlen a = 2^30 und b = 3^20 mit der Spezialwert-Idee (gleiche Exponenten suchen) und bestaetigen Sie das Ergebnis durch eine Abschaetzung.
 
-HILFE:
-1. Schritt 1: Beide Zahlen als Potenz mit demselben Exponenten schreiben (Potenzgesetze).
-2. Schritt 2: Die Basen vergleichen und die Monotonie der Potenzfunktion nutzen.
-3. Schritt 3: Ergebnis als Pruefsatz formulieren.
+HILFE：
+- 从结构维度切入，先明确本步先求什么量（Zielgroesse: Schnellverfahren),再选工具：用Schnellverfahren判定对象归属，用Pruefsatz组织步骤顺序。
+- 从定理维度切入，用Pruefsatz与Spezialwert-Methode的适用条件选择公式：先写条件，再代入；anwenden-Aufgaben verlangen erst die Verfahrenswahl (anwenden oder Nachweis), dann die Rechnung.
+- 从验证维度切入，用定义域/单调性/量级做方向对照，判断结果是否合理。不给出具体分点、函数值、和值与归属结论。
+
+COMPLETION (Lückentext):
+- 中文说明：根据MUSTERLÖSUNG补全关键数值，不回看上文。
+- Ergaenze: $Schnellverfahren = ___$ und $Pruefsatz = ___$, und es gilt $Kontrolle = ___$.
 
 MUSTERLÖSUNG: Es gilt a = 2^30 = (2^3)^10 = 8^10 und b = 3^20 = (3^2)^10 = 9^10. Da die Funktion `x^10` fuer `x > 0` monoton waechst und `8 < 9` gilt, folgt `8^10 < 9^10`, also `a < b`. Das Schnellverfahren liefert hier direkt das Ergebnis, weil beide Zahlen auf denselben Exponenten 10 gebracht werden koennen; die Monotonie der Potenzfunktion begruendet den Schluss sauber.
 
@@ -143,10 +159,25 @@ CHECK检索默写（自测 3 题，与答案配对）：
 ## Schritt 7 — szenario: Klausurtransfer: CN-Tricks: sechs Schnellverfahren: Kiste fuer den Mars
 ROLLE: Du bist Tutor in einem bilingualen Mathe-Kurs und sollst eine Strategiekarte erstellen.
 SITUATION: Ein Mitschueler will in der Klausur nur mit chinesischen Schnellverfahren arbeiten und keine Standardwege schreiben. Beurteile seine Strategie in einer zusammenhaengenden Darstellung (ca. 150 Woerter) und erlaeutere an zwei Beispielen (Spezialwert und AM-GM), wann ein Schnellverfahren erlaubt ist und wann der Standardweg zwingend ist.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Ansatz mit Schnellverfahren und anwenden-Wahl (CN-Tricks: sechs Schnellverfahren) [AFB I] | 5 NP | Skizze mit beschrifteten Achsen als Alternativweg
+Rechnung mit Pruefsatz und Bedingungspruefung [AFB II] | 5 NP | Numerische Kontrolle mit Taschenrechner als Alternativweg
+Deutung mit Spezialwert-Methode plus Einheit/Randkontrolle [AFB III] | 5 NP | Geometrische Deutung der Konvergenz als Alternativweg
+
 RUBRIC (30 XP): Benennung des Grundproblems — Heuristik ersetzt keinen Beweis (5 XP) | Beispiel Spezialwert: Vermutung versus Beweis (10 XP) | Beispiel AM-GM: Positivitaet plus Gleichheitsbedingung (10 XP) | Kriteriengeleitetes Fazit zur Arbeitsteilung von Schmierpapier und Reinschrift (5 XP).
 
+AUFGABE (anwenden, [AFB III]): Wende an erstens den Ansatz mit Schnellverfahren, zweitens die Rechnung mit Pruefsatz und drittens die Deutung mit Spezialwert-Methode zum Fall: RUBRIC (30 XP): Benennung des Grundproblems — Heuristik ersetzt keinen Beweis (5 XP) | Beispiel Spezialwert: Vermutung versus Beweis (10 XP). 中文说明：三问分别对应 Ansatz、Rechnung 与 Deutung。
 `Klausur-Satz: Wer Trick, Bedingung und klassische Sicherung in einer Darstellung verbindet, erhaelt die volle Punktzahl.`
 
+> MUSTER-KLAUSURSATZ (15 NP): Jeder Trick braucht seine Bedingung: Ohne Gueltigkeitspruefung bleibt Heuristik Gluecksspiel.
+
+KERNSATZ (auswendig):
+- Kernsatz: `Jeder Trick braucht seine Bedingung: Ohne Gueltigkeitspruefung bleibt Heuristik Gluecksspiel.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = Jeder Trick braucht seine Bedingung | Mechanismus = Ohne Gueltigkeitspruefung bleibt Heuristik Gluecksspiel. | Urteil = Ohne Gueltigkeitspruefung bleibt Heuristik Gluecksspiel.
+- Selbsttest: Jeder Trick braucht seine Bedingung: Ohne ___ bleibt Heuristik Gluecksspiel.
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Kiste fuer den Mars
 TAKEAWAY 1盒（核心总结）：
 

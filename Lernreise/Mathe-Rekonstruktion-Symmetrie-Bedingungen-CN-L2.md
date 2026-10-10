@@ -8,7 +8,7 @@ operatoren: [aufstellen, berechnen, begruenden]
 klausurrelevant: true
 datum: 2026-09-26
 tags: [EF, Mathe, CN]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Rekonstruktion mit Symmetrie und passenden Bedingungen (L2, Ziel Klausur)
@@ -30,10 +30,22 @@ Voraussetzung（窄切口）：只做三次与四次多项式，已会求导法�
 
 Hook / Phaenomen: Fuenf Unbekannte, aber der Graph verraet Symmetrie: Bei **Achsensymmetrie** fallen alle ungeraden Potenzen weg, bei **Punktsymmetrie** alle geraden. Der **reduzierte Ansatz** halbiert die Arbeit, bevor die erste **Bedingungsgleichung** steht.
 
+预测 [Option A]：Der grobe Parameterwert aus wenigen Teilwerten genuegt bereits, weitere Verfeinerung aendert nichts。若选A，你在Step 2用工具检验该方向的变化。
+
+预测 [Option B]：Erst fortgesetzte Verfeinerung laesst den Parameterwert gegen den exakten Wert laufen。若选B，你在Step 2用工具检验该方向的变化。
+
+AUFLÖSUNG (nach der Wahl lesen)
+
+以下解析在选择后阅读，含原两项机制分析全文：
+- Mechanismus A：五个未知数看着吓人，但对称性先砍掉一半：偶对称只留偶次幂，奇对称只留奇次幂，剩下的条件一人一方程。 Hook / Phaenomen: Fuenf Unbekannte, aber der Graph verraet Symmetrie: Bei **Achsensymmetrie** fallen alle ungeraden Potenzen weg, bei **Punktsymmetrie** alle geraden.
+- Mechanismus B：Der **reduzierte Ansatz** halbiert die Arbeit, bevor die erste **Bedingungsgleichung** steht.
+
+本质一句话：Symmetrie ist Vorabinformation: Achsensymmetrie streicht ungerade, Punktsymmetrie gerade Potenzen vor jeder Rechnung.
+
 `Klausur-Satz: Symmetrie ist Vorabinformation: Achsensymmetrie streicht ungerade, Punktsymmetrie gerade Potenzen vor jeder Rechnung.`
 
 ## Schritt 2 — entdecken: Ausruestungskiste der Algorithmus-Unit
-PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
+PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文->德语，Evidenz：pretraining降认知负荷）：
 
 中文在上，德语在下：
 
@@ -79,12 +91,16 @@ BEISPIEL（正确例题示范，含教具操作与解答）：
 
 [Werkzeug: formula]
 
-AUFGABE (berechnen, AFB II)：Der Graph einer ganzrationalen Funktion 3. Grades ist punktsymmetrisch zum Ursprung, verlaeuft durch $P(1|2)$ und besitzt an der Stelle $x = 2$ einen Extrempunkt. Bestimmen Sie den Funktionsterm.
+AUFGABE (berechnen, [AFB II])：Der Graph einer ganzrationalen Funktion 3. Grades ist punktsymmetrisch zum Ursprung, verlaeuft durch $P(1|2)$ und besitzt an der Stelle $x = 2$ einen Extrempunkt. Bestimmen Sie den Funktionsterm.
 
-HILFE:
-1. Schritt 1: Symmetrieansatz $f(x) = ax^3+bx$ mit $f'(x) = 3ax^2+b$ waehlen.
-2. Schritt 2: Bedingungen uebersetzen: $f(1) = 2$ und $f'(2) = 0$.
-3. Schritt 3: Gleichungssystem loesen und Probe machen.
+HILFE：
+- 从结构维度切入，先明确本步先求什么量（Zielgroesse: Ansatz),再选工具：用Ansatz判定对象归属，用Achsensymmetrie组织步骤顺序。
+- 从定理维度切入，用Achsensymmetrie与Punktsymmetrie的适用条件选择公式：先写条件，再代入；aufstellen-Aufgaben verlangen erst die Verfahrenswahl (aufstellen oder Nachweis), dann die Rechnung.
+- 从验证维度切入，用定义域/单调性/量级做方向对照，判断结果是否合理。不给出具体分点、函数值、和值与归属结论。
+
+COMPLETION (Lückentext):
+- 中文说明：根据MUSTERLÖSUNG补全关键数值，不回看上文。
+- Ergaenze: $f(1) = ___$ und $f'(2) = ___$, und es gilt $Kontrolle = ___$.
 
 MUSTERLÖSUNG: Aus $f(1) = a+b = 2$ und $f'(2) = 12a+b = 0$ folgt durch Subtraktion $11a = -2$, also $a = -\frac{2}{11}$ und $b = 2-a = \frac{24}{11}$. Damit gilt $f(x) = -\frac{2}{11}x^3+\frac{24}{11}x$. Probe: $f(1) = \frac{22}{11} = 2$ und $f'(2) = 3 \cdot (-\frac{2}{11}) \cdot 4 + \frac{24}{11} = 0$; wegen $f''(2) = 6a \cdot 2 = -\frac{24}{11} \ne 0$ liegt dort tatsaechlich ein Extremum vor.
 
@@ -102,7 +118,7 @@ Weg B: Alternative Route mit Gegenrechnung.
 
 AUFGABE B：Funktion 3. Grades ohne Symmetrieangabe, mit vier Punktbedingungen. Ansatz?
 
-HILFE: A enthaelt achsensymmetrisch → Verfahren (i)，设 $ax^4+bx^2+c$。B 无对称 → Verfahren (ii)，设全项。【选程序：见对称用缺项；不见用全项。】
+HILFE: A enthaelt achsensymmetrisch -> Verfahren (i)，设 $ax^4+bx^2+c$。B 无对称 -> Verfahren (ii)，设全项。【选程序：见对称用缺项；不见用全项。】
 
 ANTWORT: A erfordert Verfahren (i): Ansatz $f(x) = ax^4+bx^2+c$ mit nur drei Unbekannten; die Bedingungen $f(0) = 1$, $f(1) = 0$ und $f'(1) = 0$ reichen aus. B erfordert Verfahren (ii): Ansatz $f(x) = ax^3+bx^2+cx+d$ mit vier Unbekannten; erst die vier Punktgleichungen liefern ein loesbares System. Wer in A den vollen Ansatz waehlt, erzeugt ueberfluessige Unbekannte und ein unterbestimmtes System.
 
@@ -132,10 +148,25 @@ CHECK检索默写（自测 3 题，与答案配对）：
 ## Schritt 7 — szenario: Klausurtransfer: Rekonstruktion mit Symmetrie und passenden Bedingungen: Steckbrief des Täters
 ROLLE: Du bist Tutor und hilfst einer Klausurgruppe bei Steckbriefaufgaben.
 SITUATION: Die Gruppe stellt immer den vollen Ansatz auf und scheitert am Gleichungssystem. Erklaere in einer zusammenhaengenden Darstellung (ca. 150 Woerter) an einem symmetrischen Beispiel, wie man aus der Symmetrie den verkuerzten Ansatz waehlt und jede Bedingung in genau eine Gleichung uebersetzt.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Ansatz mit Ansatz und aufstellen-Wahl (Rekonstruktion mit Symmetrie und passend) [AFB I] | 5 NP | Skizze mit beschrifteten Achsen als Alternativweg
+Rechnung mit Achsensymmetrie und Bedingungspruefung [AFB II] | 5 NP | Numerische Kontrolle mit Taschenrechner als Alternativweg
+Deutung mit Punktsymmetrie plus Einheit/Randkontrolle [AFB III] | 5 NP | Geometrische Deutung der Konvergenz als Alternativweg
+
 RUBRIC (30 XP): Wahl des symmetrischen Ansatzes mit Begruendung (10 XP) | Korrekte Uebersetzung von Punkt-, Extrem- und Wendebedingungen (10 XP) | Loesungsweg bis zum Funktionsterm mit Probe (6 XP) | Fachsprachliche Korrektheit (4 XP).
 
+AUFGABE (aufstellen, [AFB III]): Aufstellen erstens den Ansatz mit Ansatz, zweitens die Rechnung mit Achsensymmetrie und drittens die Deutung mit Punktsymmetrie zum Fall: RUBRIC (30 XP): Wahl des symmetrischen Ansatzes mit Begruendung (10 XP) | Korrekte Uebersetzung von Punkt-, Extrem- und Wendebedingungen (10. 中文说明：三问分别对应 Ansatz、Rechnung 与 Deutung。
 `Klausur-Satz: Wer Ansatz reduziert, Bedingungen uebersetzt, System loest und Kontrolle zeigt, erhaelt die volle Punktzahl.`
 
+> MUSTER-KLAUSURSATZ (15 NP): Symmetrie ist Vorabinformation: Achsensymmetrie streicht ungerade, Punktsymmetrie gerade Potenzen vor jeder Rechnung.
+
+KERNSATZ (auswendig):
+- Kernsatz: `Symmetrie ist Vorabinformation: Achsensymmetrie streicht ungerade, Punktsymmetrie gerade Potenzen vor jeder Rechnung.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = Symmetrie ist Vorabinformation | Mechanismus = Achsensymmetrie streicht ungerade | Urteil = Punktsymmetrie gerade Potenzen vor jeder Rechnung.
+- Selbsttest: Symmetrie ist Vorabinformation: ___ streicht ungerade, Punktsymmetrie gerade Potenzen vor jeder Rechnung.
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Steckbrief des Täters
 TAKEAWAY 1盒（核心总结）：
 

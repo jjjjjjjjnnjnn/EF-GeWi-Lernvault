@@ -8,7 +8,7 @@ operatoren: [herleiten, berechnen, begruenden]
 klausurrelevant: true
 datum: 2026-09-26
 tags: [EF, Mathe, Geometrie]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Kosinussatz und Orthogonalitaet (L1, Ziel Klausur)
@@ -20,7 +20,7 @@ ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
 1. 中文：能说清余弦定理是勾股定理的推广——多出的修正项 $-2bc\cos\alpha$ 正好补偿斜边对面的夹角偏离直角的程度。
 2. 中文：能用余弦定理在已知两边夹角时求第三边，或在已知三边时反解任意内角。
-3. 中文：能用余弦定理的推论判定三角形是锐角、直角还是钝角，并写出德语标准结论句（AFB II）。
+3. 中文：能用余弦定理的推论判定三角形是锐角、直角还是钝角，并写出德语标准结论句（[AFB II]）。
 
 ### Hook / Phaenomen
 
@@ -28,10 +28,22 @@ ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
 Hook / Phaenomen: Kein rechter Winkel weit und breit, trotzdem soll die dritte Seite exakt bestimmbar sein. Der **Kosinussatz** repariert Pythagoras mit einem **Korrekturterm**: Je spitzer der **eingeschlossene Winkel**, desto kuerzer die Gegenseite. Umgekehrt verraet die Seitenprobe, ob **Orthogonalitaet** vorliegt.
 
+预测 [Option A]：Der grobe Winkelwert aus wenigen Teilwerten genuegt bereits, weitere Verfeinerung aendert nichts。若选A，你在Step 2用工具检验该方向的变化。
+
+预测 [Option B]：Erst fortgesetzte Verfeinerung laesst den Winkelwert gegen den exakten Wert laufen。若选B，你在Step 2用工具检验该方向的变化。
+
+AUFLÖSUNG (nach der Wahl lesen)
+
+以下解析在选择后阅读，含原两项机制分析全文：
+- Mechanismus A：没有直角也要算出第三边：余弦定理就是带修正项的勾股定理，夹角越小对边越短，反过来还能检验垂直。 Hook / Phaenomen: Kein rechter Winkel weit und breit, trotzdem soll die dritte Seite exakt bestimmbar sein.
+- Mechanismus B：Der **Kosinussatz** repariert Pythagoras mit einem **Korrekturterm**: Je spitzer der **eingeschlossene Winkel**, desto kuerzer die Gegenseite.
+
+本质一句话：Ohne rechten Winkel tritt der Korrekturterm hinzu: c Quadrat folgt aus a, b und eingeschlossenem Winkel.
+
 `Klausur-Satz: Ohne rechten Winkel tritt der Korrekturterm hinzu: c Quadrat folgt aus a, b und eingeschlossenem Winkel.`
 
 ## Schritt 2 — entdecken: Ausruestungskiste der Algorithmus-Unit
-PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
+PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文->德语，Evidenz：pretraining降认知负荷）：
 
 中文在上，德语在下：
 
@@ -97,16 +109,16 @@ BEISPIEL（正确例题示范，含教具操作与解答，中文在上、德语
 
 AUFGABE中文导读（沙盒谜题）：已知两边及其夹角，求第三边；再反过来，已知三边求最大角并判形状。
 
-AUFGABE (anwenden, AFB II): Gegeben sind zwei Seiten mit eingeschlossenem Winkel; berechnen Sie die dritte Seite. Entscheiden Sie zusaetzlich aus drei Seiten ueber spitz, recht oder stumpf.
+AUFGABE (anwenden, [AFB II]): Gegeben sind zwei Seiten mit eingeschlossenem Winkel; berechnen Sie die dritte Seite. Entscheiden Sie zusaetzlich aus drei Seiten ueber spitz, recht oder stumpf.
 
-HILFE（中德双语步骤）：
+HILFE：
+- 从结构维度切入，先明确本步先求什么量（Zielgroesse: Kosinussatz),再选工具：用Kosinussatz判定对象归属，用Sinussatz组织步骤顺序。
+- 从定理维度切入，用Sinussatz与Kongruenzsatz的适用条件选择公式：先写条件，再代入；herleiten-Aufgaben verlangen erst die Verfahrenswahl (herleiten oder Nachweis), dann die Rechnung.
+- 从验证维度切入，用定义域/单调性/量级做方向对照，判断结果是否合理。不给出具体分点、函数值、和值与归属结论。
 
-1. 中文：第1步代入余弦定理开第三边，关键词：Einsetzen。
-   Schritt 1 (DE): $a^2 = b^2 + c^2 - 2bc\cos\alpha$.
-2. 中文：第2步三边反解最大角用反余弦，关键词：Arkuskosinus。
-   Schritt 2 (DE): Groessten Winkel per $\arccos$ bestimmen.
-3. 中文：第3步比较平方和判形状，关键词：Vergleich。
-   Schritt 3 (DE): $a^2$ gegen $b^2 + c^2$ vergleichen.
+COMPLETION (Lückentext):
+- 中文说明：根据MUSTERLÖSUNG补全关键数值，不回看上文。
+- Ergaenze: $Kosinussatz = ___$ und $Sinussatz = ___$, und es gilt $Kontrolle = ___$.
 
 MUSTERLOESUNG：中文：两边夹角代入公式直接得第三边；三边情形对最大边用反余弦求角，平方比较一眼定性，锐直钝一次分清。
 
@@ -155,11 +167,25 @@ CHECK检索默写（自测 3 题，与答案配对）：
 ## Schritt 7 — szenario: Klausurtransfer: Kosinussatz und Orthogonalitaet: Orthogonaler Kurs
 ROLLE: Du bist Tutor in der EF und erklaerst einer Lerngruppe die Dreiecksberechnung.
 SITUATION: Ein Dreieck hat die Seiten $3$, $4$, $6$. Die Gruppe streitet, ob es rechtwinklig ist.
-AUFGABE: Entscheide in ca. 150 Woertern mit Kosinussatz-Rechnung, welcher Winkeltyp vorliegt, und benenne den groessten Winkel.
+AUFGABE (herleiten, [AFB III]): Leite her Entscheide in ca. 150 Woertern mit Kosinussatz-Rechnung, welcher Winkeltyp vorliegt, und benenne den groessten Winkel.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Ansatz mit Kosinussatz und herleiten-Wahl (Kosinussatz und Orthogonalitaet) [AFB I] | 5 NP | Skizze mit beschrifteten Achsen als Alternativweg
+Rechnung mit Sinussatz und Bedingungspruefung [AFB II] | 5 NP | Numerische Kontrolle mit Taschenrechner als Alternativweg
+Deutung mit Kongruenzsatz plus Einheit/Randkontrolle [AFB III] | 5 NP | Geometrische Deutung der Konvergenz als Alternativweg
+
 RUBRIC (30 XP): Korrekter Seitenvergleich $36$ gegen $25$ (10 XP) | Winkeltyp stumpf begruendet (10 XP) | Groesster Winkel gegenueber laengster Seite plus Fachbegriffe (10 XP).
 
 `Klausur-Satz: Wer Kosinussatz ansetzt, Winkel zuordnet, Seite berechnet und Orthogonalitaet per Gegenprobe beurteilt, erhaelt die volle Punktzahl.`
 
+> MUSTER-KLAUSURSATZ (15 NP): Der Kosinussatz nutzt Seitenquadrate, der Sinussatz nutzt Verhaeltnisse von Seite zu Gegenwinkel.
+
+KERNSATZ (auswendig):
+- Kernsatz: `Der Kosinussatz nutzt Seitenquadrate, der Sinussatz nutzt Verhaeltnisse von Seite zu Gegenwinkel.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = Der Kosinussatz nutzt Seitenquadrate, | Mechanismus = der Sinussatz nutzt Verhaeltnisse von | Urteil = Seite zu Gegenwinkel.
+- Selbsttest: Der ___ nutzt Seitenquadrate, der Sinussatz nutzt Verhaeltnisse von Seite zu Gegenwinkel.
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Orthogonaler Kurs
 TAKEAWAY 1盒（核心总结）：
 

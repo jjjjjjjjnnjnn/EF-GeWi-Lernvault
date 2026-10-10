@@ -8,7 +8,7 @@ operatoren: [analysieren, interpretieren]
 klausurrelevant: true
 datum: 2026-09-26
 tags: [EF, Mathe, Analysis]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Kurvendiskussion und Wendepunkte (L1, Ziel Klausur)
@@ -20,13 +20,25 @@ ZIELE (drei messbare Ziele dieser Lektion):
 
 1. Du kannst Kruemmung links gegen rechts an $f'' > 0$ und $f'' < 0$ unterscheiden und am Bild benennen.
 2. Du kannst $f''(x) = 0$ loesen, den Vorzeichenwechsel pruefen und $W(x_W, f(x_W))$ mit Wendetangente $y = f'(x_W)(x-x_W)+f(x_W)$ angeben.
-3. Du kannst $g(x) = x^4$ an $x = 0$ als Gegenbeispiel einordnen: $g'' = 0$ ohne Wechsel, also kein Wendepunkt (AFB II).
+3. Du kannst $g(x) = x^4$ an $x = 0$ als Gegenbeispiel einordnen: $g'' = 0$ ohne Wechsel, also kein Wendepunkt ([AFB II]).
 
 ###
 
 ### Hook / Phaenomen
 
 Hook / Phaenomen: Erst links-, dann rechtsgekrümmt: Irgendwo dazwischen kippt die **Kruemmung**. Dieser Kippunkt heisst **Wendepunkt**, seine **Wendetangente** durchschneidet den Graphen. Die **dritte Ableitung** besiegelt, ob die Wende wirklich stattfindet.
+
+预测 [Option A]：Der grobe Vorzeichenwert aus wenigen Teilwerten genuegt bereits, weitere Verfeinerung aendert nichts。若选A，你在Step 2用工具检验该方向的变化。
+
+预测 [Option B]：Erst fortgesetzte Verfeinerung laesst den Vorzeichenwert gegen den exakten Wert laufen。若选B，你在Step 2用工具检验该方向的变化。
+
+AUFLÖSUNG (nach der Wahl lesen)
+
+以下解析在选择后阅读，含原两项机制分析全文：
+- Mechanismus A：Hook / Phaenomen: Erst links-, dann rechtsgekrümmt: Irgendwo dazwischen kippt die **Kruemmung**.
+- Mechanismus B：Dieser Kippunkt heisst **Wendepunkt**, seine **Wendetangente** durchschneidet den Graphen.
+
+本质一句话：Wendepunkte markieren den Kruemmungswechsel: f zwei Strich null plus Vorzeichenwechsel plus f drei Strich ungleich null.
 
 `Klausur-Satz: Wendepunkte markieren den Kruemmungswechsel: f zwei Strich null plus Vorzeichenwechsel plus f drei Strich ungleich null.`
 
@@ -92,12 +104,16 @@ BEISPIEL (Sandbox Level mit Werkzeug):
 
 [Werkzeug: formula]
 
-AUFGABE (Levelziel, AFB II): Knacke das Wende-Level: Ziehe im Sandbox-Slider die Stelle $x$ ueber den Graphen und beobachte, wie die Kruemmung von rechts nach links kippt und die Tangentensteigung dort minimal wird. Lies den Kandidaten ab, weise dann den Vorzeichenwechsel von $f''$ nach, berechne $W$ vollständig und stelle die Wendetangente auf.
+AUFGABE (Levelziel, [AFB II]): Knacke das Wende-Level: Ziehe im Sandbox-Slider die Stelle $x$ ueber den Graphen und beobachte, wie die Kruemmung von rechts nach links kippt und die Tangentensteigung dort minimal wird. Lies den Kandidaten ab, weise dann den Vorzeichenwechsel von $f''$ nach, berechne $W$ vollständig und stelle die Wendetangente auf.
 
-HILFE:
-1. Bilde $f''(x)$, loese $f''(x) = 0$ und lies im Sandbox-Slider Kandidat und Kruemmungskipp ab.
-2. Teste $f''$ links und rechts des Kandidaten und weise den Vorzeichenwechsel explizit nach.
-3. Berechne $y_W = f(x_W)$ und stelle mit $m = f'(x_W)$ die Tangentengleichung $y = mx+b$ auf.
+HILFE：
+- 从结构维度切入，先明确本步先求什么量（Zielgroesse: Punktsteigungsform),再选工具：用Punktsteigungsform判定对象归属，用Tangentengleichung组织步骤顺序。
+- 从定理维度切入，用Tangentengleichung与Kurztest的适用条件选择公式：先写条件，再代入；analysieren-Aufgaben verlangen erst die Verfahrenswahl (analysieren oder Nachweis), dann die Rechnung.
+- 从验证维度切入，用定义域/单调性/量级做方向对照，判断结果是否合理。不给出具体分点、函数值、和值与归属结论。
+
+COMPLETION (Lückentext):
+- 中文说明：根据MUSTERLÖSUNG补全关键数值，不回看上文。
+- Ergaenze: $x_W = ___$ und $f''(2) = ___$, und es gilt $Kontrolle = ___$.
 
 MUSTERLOESUNG: Sandbox zeigt den Kruemmungskipp bei $x_W = 2$ mit dort minimaler Tangentensteigung. Rechnung $f''(2) = 0$ mit Wechsel von plus nach minus sichert den Wendepunkt. Mit $y_W = 3$ folgt $W(2|3)$ und per $m = f'(2) = -3$ die Wendetangente $y = -3x+9$. Nullstelle plus Wechsel plus y-Wert ergeben den vollständigen Nachweis.
 
@@ -141,11 +157,25 @@ CHECK (drei Fragen mit Antworten):
 ## Schritt 7 — szenario: Klausurtransfer: Kurvendiskussion und Wendepunkte: Phantom der Symmetrie
 ROLLE: Du bist Daten-Assistent im Gesundheitsamt.
 SITUATION: Die kumulierten Meldungen folgen $k(t) = -0{,}05t^3 + 2{,}4t^2 + 100$ ($t$ in Tagen seit Ausbruch, $k$ in Faellen). Der Stab fragt, wann der Tageszuwachs am groessten war und ab wann die Massnahmen sichtbar wirken. Erstelle eine Analyse (circa 150 Woerter) mit Rechnung, Wendetangente und Deutung fuer die Presse.
-AUFGABE (interpretieren, AFB III): Bestimme den Wendepunkt, erklaere seine Bedeutung als Maximum des Zuwachses und beurteile Grenzen des Modells.
+AUFGABE (analysieren, [AFB III]): Analysieren Bestimme den Wendepunkt, erklaere seine Bedeutung als Maximum des Zuwachses und beurteile Grenzen des Modells.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Ansatz mit Punktsteigungsform und analysieren-Wahl (Kurvendiskussion und Wendepunkte) [AFB I] | 5 NP | Skizze mit beschrifteten Achsen als Alternativweg
+Rechnung mit Tangentengleichung und Bedingungspruefung [AFB II] | 5 NP | Numerische Kontrolle mit Taschenrechner als Alternativweg
+Deutung mit Kurztest plus Einheit/Randkontrolle [AFB III] | 5 NP | Geometrische Deutung der Konvergenz als Alternativweg
+
 RUBRIC (30 XP): Ableitungen plus $x_W$ korrekt (5 XP) | Nachweis per VZW oder $f'''$ plus $y$-Wert (10 XP) | Wendetangente korrekt (10 XP) | Deutung als Maximum plus Modellkritik (5 XP).
 
 `Klausur-Satz: Wer Wendekandidat, Vorzeichenwechsel, Punkt und Wendetangente zeigt, erhaelt die volle Punktzahl.`
 
+> MUSTER-KLAUSURSATZ (15 NP): Wer Wendekandidat, Vorzeichenwechsel, Punkt und Wendetangente zeigt, erhaelt die volle Punktzahl.
+
+KERNSATZ (auswendig):
+- Kernsatz: `Wer Wendekandidat, Vorzeichenwechsel, Punkt und Wendetangente zeigt, erhaelt die volle Punktzahl.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = Wer Wendekandidat, Vorzeichenwechsel, Punkt | Mechanismus = und Wendetangente zeigt, erhaelt | Urteil = die volle Punktzahl.
+- Selbsttest: Wer Wendekandidat, ___, Punkt und Wendetangente zeigt, erhaelt die volle Punktzahl.
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Phantom der Symmetrie
 TAKEAWAY (Kernbotschaft in einem Kasten):
 

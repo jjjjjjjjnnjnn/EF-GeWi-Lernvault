@@ -8,7 +8,7 @@ operatoren: [modellieren, ableiten, optimieren]
 klausurrelevant: true
 datum: 2026-10-03
 tags: [EF, Mathe, Analysis, Extremwertaufgaben, Optimierung, Zielfunktion, Nebenbedingung]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Analysis: Extremwertprobleme mit Nebenbedingungen (L1, Ziel Klausur)
@@ -20,16 +20,28 @@ ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
 1. 中文：能清晰拆解工程与经济极值问题的标准化“四步建模法”（Hauptbedingung / Zielfunktion 目标函数、Nebenbedingung 约束条件、Zielfunktion in einer Variablen 降维单变量目标函数、Randwertpruefung 边界检验）。
 2. 中文：能熟练运用导数一阶导为零（$f'(x) = 0$）与二阶导符号判定极大值与极小值。
-3. 中文：能在高考微积分应用大题（AFB I/II/III）中为圆柱体包装、几何图形内接矩形及成本最优化建立精准的数学函数模型并进行敏感度分析。
+3. 中文：能在高考微积分应用大题（[AFB I/II/III]）中为圆柱体包装、几何图形内接矩形及成本最优化建立精准的数学函数模型并进行敏感度分析。
 
 ### Hook / Phaenomen
 
 Stell dir vor, du bist Chef-Ingenieur bei einem der groessten Getraenkehersteller der Welt. Dein Konzern produziert pro Jahr mehr als vierzig Milliarden Getraenkedosen aus Aluminium. Jede einzelne Dose muss ein praezises Innenvolumen von exakt 330 Millilitern Fluessigkeit fassen. Dein Auftrag: Du sollst den Radius und die Hoehe des zylindrischen Koerpers so dimensionieren, dass die dafuer benoetigte Blechoberflaeche auf den Bruchteil eines Quadratmillimeters minimiert wird. Machst du die Dose zu duenn und extrem hoch, verbrauchst du viel zu viel Material fuer die Mantelflaeche. Machst du sie flach wie eine Untertasse, fressen Boden und Deckel riesige Blechmengen. Gelingt es dir jedoch, das mathematisch perfekte Verhaeltnis ueber die Differentialrechnung zu berechnen, spart dein Unternehmen pro Dose nur zwei Centimeter Blech – was sich weltweit auf Hunderte Millionen Euro Materialeinsparung und gigantische CO2-Reduktionen summiert.
 
+预测 [Option A]：Der grobe Zielfunktionswert aus wenigen Teilwerten genuegt bereits, weitere Verfeinerung aendert nichts。若选A，你在Step 2用工具检验该方向的变化。
+
+预测 [Option B]：Erst fortgesetzte Verfeinerung laesst den Zielfunktionswert gegen den exakten Wert laufen。若选B，你在Step 2用工具检验该方向的变化。
+
+AUFLÖSUNG (nach der Wahl lesen)
+
+以下解析在选择后阅读，含原两项机制分析全文：
+- Mechanismus A：Stell dir vor, du bist Chef-Ingenieur bei einem der groessten Getraenkehersteller der Welt.
+- Mechanismus B：Dein Konzern produziert pro Jahr mehr als vierzig Milliarden Getraenkedosen aus Aluminium.
+
+本质一句话：Ein Extremwertproblem mit Nebenbedingungen wird geloest, indem die Nebenbedingung nach einer Unbekannten aufgeloest und in die Hauptbedingung eingesetzt wird, sodass eine differenzierbare Zielfunktion in einer einzigen Variablen entsteht.
+
 `Klausur-Satz: Ein Extremwertproblem mit Nebenbedingungen wird geloest, indem die Nebenbedingung nach einer Unbekannten aufgeloest und in die Hauptbedingung eingesetzt wird, sodass eine differenzierbare Zielfunktion in einer einzigen Variablen entsteht.`
 
 ## Schritt 2 — entdecken: Der mathematische Baukasten fuer Optimierungen
-PRETRAINING术语盒（核心4词，先读三遍中德，合书自测中文→德语）：
+PRETRAINING术语盒（核心4词，先读三遍中德，合书自测中文->德语）：
 
 - 目标函数 / 主条件 — Hauptbedingung / Zielfunktion: 描述待优化物理量（如最大面积、最小表面积、最大利润）的数学表达式，起初往往含有多个自变量。 Die Funktion der zu maximierenden oder minimierenden Zielgroesse in Abhaengigkeit von mehreren Dimensionen.
 - 约束条件 / 副条件 — Nebenbedingung: 几何、物理或经济上必须严格满足的固定限制等式（如给定体积 $V = 330\,\text{ml}$ 或周长 $U = 100\,\text{m}$）。 Eine feste geometrische oder oekonomische Randbedingung, die die Variablen miteinander verknuepft.
@@ -63,12 +75,21 @@ Der 4-Schritte-Optimierungsalgorithmus:
 
 [Werkzeug: lego]
 
-AUFGABE (modellieren & optimieren, AFB I/II):
+AUFGABE (modellieren & optimieren, [AFB I/II]):
 Ein zylindrischer Behaelter soll das feste Volumen $V_0 = 1000\,\text{cm}^3$ (1 Liter) fassen.
 Ermittle den Radius $r$ und die Hoehe $h$ so, dass der gesamte Oberflaecheninhalt $A$ des Zylinders minimal wird.
 1. Stelle Hauptbedingung und Nebenbedingung auf.
 2. Leite die Zielfunktion $A(r)$ her und bestimme den optimalen Radius sowie die optimale Hoehe.
+
+HILFE：
+- 从结构维度切入，先明确本步先求什么量（Zielgroesse: Nebenbedingung),再选工具：用Nebenbedingung判定对象归属，用Hauptbedingung组织步骤顺序。
+- 从定理维度切入，用Hauptbedingung与Randbedingung的适用条件选择公式：先写条件，再代入；modellieren-Aufgaben verlangen erst die Verfahrenswahl (modellieren oder Nachweis), dann die Rechnung.
+- 从验证维度切入，用定义域/单调性/量级做方向对照，判断结果是否合理。不给出具体分点、函数值、和值与归属结论。
 3. Berechne das Verhaeltnis von Hoehe zu Durchmesser ($h / (2r)$).
+
+COMPLETION (Lückentext):
+- 中文说明：根据MUSTERLÖSUNG补全关键数值，不回看上文。
+- Ergaenze: $A(r, h) = ___$ und $V(r, h) = ___$, und es gilt $Kontrolle = ___$.
 
 MUSTERLOESUNG:
 1. Bedingungen:
@@ -111,21 +132,29 @@ Folge immer dem festen 4-Schritte-Schema: Hauptbedingung notieren -> Nebenbeding
 
 PRUEFUNGSSZENARIO (KLP NRW Mathematik GK/LK Inhaltsfeld 1: Analysis):
 
-### AFB I: Zielfunktionsbildung
+### [AFB I]: Zielfunktionsbildung
 Ein normiertes Rundbogenfenster besteht aus einem unteren Rechteck mit Breite $2r$ und Hoehe $h$, auf dem ein Halbkreis mit Radius $r$ aufsitzt.
 Der gesamte aeussere Rahmenumfang betraegt fest $U = 8\,\text{Meter}$.
 Stelle die Zielfunktion fuer die gesamte Glasflaeche $A(r)$ in Abhaengigkeit vom Radius $r$ auf.
 
-### AFB II: Extremwertbestimmung
+### [AFB II]: Extremwertbestimmung
 Berechne den Radius $r$ und die Hoehe $h$ so, dass die Flaeche fuer maximalen Lichteinfall optimiert wird. Weise die Art des Extremums rechnerisch nach.
 
-### AFB III: Oekonomische Beurteilung
+### [AFB III]: Oekonomische Beurteilung
 In der Realitaet weichen Getraenkedosen im Supermarkt haeufig vom theoretischen Idealverhaeltnis $h = 2r$ ab (sie sind schlanker und hoeher).
 Diskutiere marketingtechnische, ergonomische (Griffigkeit) und logistische Gruende fuer diese bewusste Abweichung vom mathematischen Optimum.
 
 ## Schritt 7 — check: Format-Check & Scoring
 
 30 XP Schnelltest zur Verstaendigungssicherung:
+
+AUFGABE (modellieren, [AFB III]): Modelliere erstens den Ansatz mit Nebenbedingung, zweitens die Rechnung mit Hauptbedingung und drittens die Deutung mit Randbedingung zum Fall: 30 XP Schnelltest zur Verstaendigungssicherung:. 中文说明：三问分别对应 Ansatz、Rechnung 与 Deutung。
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Ansatz mit Nebenbedingung und modellieren-Wahl (Analysis: Extremwertprobleme mit Nebenbe) [AFB I] | 5 NP | Skizze mit beschrifteten Achsen als Alternativweg
+Rechnung mit Hauptbedingung und Bedingungspruefung [AFB II] | 5 NP | Numerische Kontrolle mit Taschenrechner als Alternativweg
+Deutung mit Randbedingung plus Einheit/Randkontrolle [AFB III] | 5 NP | Geometrische Deutung der Konvergenz als Alternativweg
 
 FRAGE: Was muss man tun, wenn die erste Ableitung der Zielfunktion gleich null gesetzt wird und zwei Loesungen liefert?
 ANTWORT: Beide Werte muessen in die zweite Ableitung eingesetzt werden, um zu pruefen, welcher ein Maximum und welcher ein Minimum darstellt, und es muss geprueft werden, ob beide Werte im zulaessigen Definitionsbereich liegen.
@@ -135,6 +164,13 @@ ANTWORT: Weil der berechnete Hoch- oder Tiefpunkt nur ein lokales Extremum ist; 
 
 `Klausur-Satz: Die differenzierte Reflexion erfordert eine stringente Verknuepfung von theoretischem Kriterienkatalog und konkretem Klausurmaterial.`
 
+> MUSTER-KLAUSURSATZ (15 NP): Die differenzierte Reflexion erfordert eine stringente Verknuepfung von theoretischem Kriterienkatalog und konkretem Klausurmaterial.
+
+KERNSATZ (auswendig):
+- Kernsatz: `Die differenzierte Reflexion erfordert eine stringente Verknuepfung von theoretischem Kriterienkatalog und konkretem Klausurmaterial.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = Die differenzierte Reflexion erfordert | Mechanismus = eine stringente Verknuepfung von theoretischem Kriterienkatalog | Urteil = und konkretem Klausurmaterial.
+- Selbsttest: Die differenzierte Reflexion erfordert eine stringente Verknuepfung von theoretischem ___ und konkretem Klausurmaterial.
 ## Schritt 8 — reflexion: Meisterschaft & Naechste Mission
 
 REFLEXION:

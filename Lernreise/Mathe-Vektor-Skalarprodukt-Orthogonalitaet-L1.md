@@ -8,7 +8,7 @@ operatoren: [herleiten, berechnen, beweisen]
 klausurrelevant: true
 datum: 2026-10-03
 tags: [EF, Mathe, Analytische-Geometrie, Vektoren, Skalarprodukt, Orthogonalitaet]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Analytische Geometrie: Skalarprodukt und Orthogonalitaet im Raum (L1, Ziel Klausur)
@@ -20,7 +20,7 @@ ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
 1. 中文：能深刻理解点积/标量积（Skalarprodukt: $\vec{a} \cdot \vec{b} = a_1 b_1 + a_2 b_2 + a_3 b_3$）的代数定义与几何投影本质（$|\vec{a}| |\vec{b}| \cos\alpha$）。
 2. 中文：能运用正交判据（Orthogonalitaetskriterium: $\vec{a} \perp \vec{b} \iff \vec{a} \cdot \vec{b} = 0$）秒杀空间垂直、平面法向量（Normalenvektor）求取与直角三角形证明。
-3. 中文：能在空间解析几何综合应用题（AFB I/II/III）中结合余弦夹角公式（Winkelberechnung）求解航线交叉角、斜投影阴影并完成严谨数学论证。
+3. 中文：能在空间解析几何综合应用题（[AFB I/II/III]）中结合余弦夹角公式（Winkelberechnung）求解航线交叉角、斜投影阴影并完成严谨数学论证。
 
 ### Hook / Phaenomen
 
@@ -28,10 +28,22 @@ ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
 Hook / Phaenomen: Du bist Fluglotse im Kontrollturm: Im dreidimensionalen Luftraum kreuzen zwei Großraumflugzeuge. Ihre Flugbahnen sind als Vektoren im Raum gegeben: $\vec{u} = \begin{pmatrix} 2 \\ 3 \\ -1 \end{pmatrix}$ und $\vec{v} = \begin{pmatrix} -3 \\ 2 \\ 0 \end{pmatrix}$. Stehen diese beiden Flugkorridore exakt senkrecht (orthogonal) aufeinander? Mit einem Geodreieck kommt man im 3D-Koordinatensystem nicht weit — Perspektiven taeuschen das menschliche Auge massiv! Doch die Mathematik schenkt uns ein geniales Werkzeug: Multipliziert man die Komponenten zeilenweise und addiert die Produkte, liefert das **Skalarprodukt** blitzschnell die Antwort: $2 \cdot (-3) + 3 \cdot 2 + (-1) \cdot 0 = -6 + 6 + 0 = 0$. Das Ergebnis ist Null — die Bahnen sind exakt senkrecht!
 
+预测 [Option A]：Der grobe Abstandswert aus wenigen Teilwerten genuegt bereits, weitere Verfeinerung aendert nichts。若选A，你在Step 2用工具检验该方向的变化。
+
+预测 [Option B]：Erst fortgesetzte Verfeinerung laesst den Abstandswert gegen den exakten Wert laufen。若选B，你在Step 2用工具检验该方向的变化。
+
+AUFLÖSUNG (nach der Wahl lesen)
+
+以下解析在选择后阅读，含原两项机制分析全文：
+- Mechanismus A：你坐在法兰克福国际机场的塔台监控大屏幕前。雷达屏幕上，两架波音 777 正在云层深处的黑夜里飞行，各自顺着三维速度向量 $\vec{v}_1 = \begin{pmatrix} 120 \\ -80 \\ 15 \end{pmatrix}$ 和 $\vec{v}_2 = \begin{pmatrix} 40 \\ 60 \\ 0 \end{pmatrix}$ 呼啸穿梭。你无法飞到几千米高空去拿着一个巨大的量角器量它们的夹角，但你必须在两秒钟之内向机长发出指令：这两条航线在空间中是否相互垂直？在三维立体的无限空间里，数学家究竟发明了何种神奇的“点积乘法”，
+- Mechanismus B：Ihre Flugbahnen sind als Vektoren im Raum gegeben: $\vec{u} = \begin{pmatrix} 2 \\ 3 \\ -1 \end{pmatrix}$ und $\vec{v} = \begin{pmatrix} -3 \\ 2 \\ 0 \end{pmatrix}$.
+
+本质一句话：Zwei vom Nullvektor verschiedene Vektoren im dreidimensionalen Raum stehen genau dann orthogonal aufeinander, wenn ihr Skalarprodukt den Wert Null annimmt.
+
 `Klausur-Satz: Zwei vom Nullvektor verschiedene Vektoren im dreidimensionalen Raum stehen genau dann orthogonal aufeinander, wenn ihr Skalarprodukt den Wert Null annimmt.`
 
 ## Schritt 2 — entdecken: Ausruestungskiste der Vektorgeometrie-Unit
-PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
+PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文->德语，Evidenz：pretraining降认知负荷）：
 
 中文在上，德语在下：
 
@@ -88,19 +100,19 @@ BEISPIEL（正确例题示范，含教具操作与解答）：
 
 [Werkzeug: lego]
 
-AUFGABE (berechnen & beweisen, AFB I/II)：
+AUFGABE (berechnen & beweisen, [AFB I/II])：
 Gegeben sind die Punkte $A(1|2|0)$, $B(5|4|0)$, $C(3|8|0)$ und die Pyramidenspitze $S(3|5|6)$.
 1. Beweisen Sie mit Hilfe des Skalarprodukts, dass das Dreieck $\triangle ABC$ in der Grundflaeche rechtwinklig ist, und bestimmen Sie, an welchem Punkt sich der rechte Winkel befindet. (10 BE)
 2. Berechnen Sie den Schnittwinkel $\alpha$ zwischen der Kante $\vec{AS}$ und der Kante $\vec{AB}$. (20 BE)
 
-HILFE:
-1. Schritt 1: Verbindungsvektoren der Kanten aufstellen:
-   - $\vec{AB} = B - A = \begin{pmatrix} 4 \\ 2 \\ 0 \end{pmatrix}$
-   - $\vec{BC} = C - B = \begin{pmatrix} -2 \\ 4 \\ 0 \end{pmatrix}$
-   - $\vec{AC} = C - A = \begin{pmatrix} 2 \\ 6 \\ 0 \end{pmatrix}$
-2. Schritt 2: Skalarprodukt $\vec{AB} \cdot \vec{BC}$ testen: $4 \cdot (-2) + 2 \cdot 4 + 0 \cdot 0 = -8 + 8 + 0 = 0 \implies \vec{AB} \perp \vec{BC}$.
-3. Schritt 3: Winkel mit Kosinusformel: $\vec{AS} = S - A = \begin{pmatrix} 2 \\ 3 \\ 6 \end{pmatrix}$.
-   $\cos(\alpha) = \frac{\vec{AB} \cdot \vec{AS}}{|\vec{AB}| \cdot |\vec{AS}|}$.
+HILFE：
+- 从结构维度切入，先明确本步先求什么量（Zielgroesse: Skalarprodukt),再选工具：用Skalarprodukt判定对象归属，用Kosinusformel组织步骤顺序。
+- 从定理维度切入，用Kosinusformel与Normalenvektor的适用条件选择公式：先写条件，再代入；herleiten-Aufgaben verlangen erst die Verfahrenswahl (herleiten oder Nachweis), dann die Rechnung.
+- 从验证维度切入，用定义域/单调性/量级做方向对照，判断结果是否合理。不给出具体分点、函数值、和值与归属结论。
+
+COMPLETION (Lückentext):
+- 中文说明：根据MUSTERLÖSUNG补全关键数值，不回看上文。
+- Ergaenze: $\vec{AB} \cdot \vec{BC} = ___$ und $\vec{AS} = ___$, und es gilt $Kontrolle = ___$.
 
 MUSTERLÖSUNG:
 1. Rechtwinkligkeitsnachweis der Grundflaeche $\triangle ABC$:
@@ -148,12 +160,12 @@ PRÜFUNGSSZENARIO (KLP NRW Mathematik EF/Q1 Inhaltsfeld Geometrie: Analytische G
 Auf einem schraegen Pultdach mit Normalenvektor $\vec{n} = \begin{pmatrix} 1 \\ 2 \\ 5 \end{pmatrix}$ soll eine Photovoltaik-Anlage montiert werden.
 Zur Mittagszeit treffen die Sonnenstrahlen parallel zur Richtung $\vec{s} = \begin{pmatrix} -2 \\ -1 \\ -4 \end{pmatrix}$ auf das Dach.
 
-AUFGABE (berechnen & beurteilen, AFB II/III):
+AUFGABE (berechnen & beurteilen, [AFB II/III]):
 1. Berechnen Sie den Einstrahlwinkel $\beta$ der Sonnenstrahlen auf die Dachflaeche. (12 BE)
 2. Beurteilen Sie den Wirkungsgrad der Anlage (optimal bei senkrechtem Einfall $\beta = 90^\circ$). (18 BE)
 
 ERWARTUNGSHORIZONT:
-- AFB II:
+- [AFB II]:
   - Formel fuer den Schnittwinkel zwischen einer Geraden (Sonnenstrahl $\vec{s}$) und einer Ebene (Dachflaeche mit Normalenvektor $\vec{n}$):
     $$\sin(\beta) = \frac{|\vec{s} \cdot \vec{n}|}{|\vec{s}| \cdot |\vec{n}|}$$
     (Achtung: Zwischen Gerade und Ebene nutzt man den Sinus, weil der Normalenvektor bereits senkrecht auf der Ebene steht!)
@@ -165,12 +177,20 @@ ERWARTUNGSHORIZONT:
     $$\sin(\beta) = \frac{24}{\sqrt{21 \cdot 30}} = \frac{24}{\sqrt{630}} = \frac{24}{25,0998} \approx 0,9562$$
     $$\beta = \arcsin(0,9562) \approx 72,98^\circ$$
   - **Ergebnis**: Der Einstrahlwinkel betraegt rund $73,0^\circ$.
-- AFB III:
+- [AFB III]:
   - Da der Einfallswinkel bei knapp $73^\circ$ liegt, weicht er nur um ca. $17^\circ$ vom idealen $90^\circ$-Winkel ab.
   - Der relative Wirkungsgrad bezogen auf die Einstrahlungsdichte skaliert mit $\sin(\beta) \approx 0,956$, was hervorragenden $95,6\%$ der maximal moeglichen Spitzenleistung entspricht. Eine zusaetzliche mechanische Aufstaenderung des Daches ist oekonomisch unrentabel.
 
 ## Schritt 7 — check: Format-Check & Scoring
 30 XP Schnelltest zur Verstaendigungssicherung:
+
+AUFGABE (herleiten, [AFB III]): Leite her erstens den Ansatz mit Skalarprodukt, zweitens die Rechnung mit Kosinusformel und drittens die Deutung mit Normalenvektor zum Fall: 30 XP Schnelltest zur Verstaendigungssicherung:. 中文说明：三问分别对应 Ansatz、Rechnung 与 Deutung。
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Ansatz mit Skalarprodukt und herleiten-Wahl (Analytische Geometrie: Skalarprodukt und) [AFB I] | 5 NP | Skizze mit beschrifteten Achsen als Alternativweg
+Rechnung mit Kosinusformel und Bedingungspruefung [AFB II] | 5 NP | Numerische Kontrolle mit Taschenrechner als Alternativweg
+Deutung mit Normalenvektor plus Einheit/Randkontrolle [AFB III] | 5 NP | Geometrische Deutung der Konvergenz als Alternativweg
 
 FRAGE: Was ist das Ergebnis des Skalarprodukts zweier Vektoren: ein neuer Vektor oder eine Zahl?
 ANTWORT: Eine Zahl (ein Skalar).
@@ -181,6 +201,13 @@ ANTWORT: Genau Null ($0$).
 FRAGE: Mit welcher Winkelfunktion berechnet man den Schnittwinkel zwischen einer Geraden und einer Ebene unter Verwendung des Normalenvektors?
 ANTWORT: Mit dem Sinus ($\sin\beta = \frac{|\vec{u} \cdot \vec{n}|}{|\vec{u}| \cdot |\vec{n}|}$).
 
+> MUSTER-KLAUSURSATZ (15 NP): Der exakte Nachweis geometrischer Orthogonalitaet im Raum gelingt durch das Nullwerden des Skalarprodukts ohne Rueckgriff auf trigonometrische Naeherungsverfahren.
+
+KERNSATZ (auswendig):
+- Kernsatz: `Der exakte Nachweis geometrischer Orthogonalitaet im Raum gelingt durch das Nullwerden des Skalarprodukts ohne Rueckgriff auf trigonometrische Naeherungsverfahren.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = Der exakte Nachweis geometrischer | Mechanismus = Orthogonalitaet im Raum gelingt durch das Nullwerden des Skalarprodukts ohne Rueckgriff | Urteil = auf trigonometrische Naeherungsverfahren.
+- Selbsttest: Der exakte Nachweis geometrischer Orthogonalitaet im Raum gelingt durch das Nullwerden des ___ ohne Rueckgriff auf trigonometrische Naeherungsverfahren.
 ## Schritt 8 — reflexion: Meisterschaft & Naechste Mission
 REFLEXION:
 Du hast das maechtigste Instrument der Vektorrechnung gemeistert. Du kannst Winkel im dreidimensionalen Raum praezise berechnen, Ebenen im Raum ueber Normalenvektoren steuern und geometrische Saetze algebraisch beweisen.

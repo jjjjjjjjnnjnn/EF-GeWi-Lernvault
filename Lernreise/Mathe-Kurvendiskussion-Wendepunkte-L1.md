@@ -8,7 +8,7 @@ operatoren: [analysieren, interpretieren]
 klausurrelevant: true
 datum: 2026-09-26
 tags: [EF, Mathe, Analysis]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Kurvendiskussion und Wendepunkte (L1, Ziel Klausur)
@@ -20,7 +20,7 @@ ZIELE (3条，本节20分钟学完能做到——先读中文，再记德语)：
 
 1. 中文：能说清拐点的几何含义——曲线凹凸性改变的地方，流行病曲线上就是新增病例从加速变为减速的转折时刻。
 2. 中文：能执行标准检验链 f''(x)=0 加 Vorzeichenwechsel（或 f'''(x) 不为 0），并求出完整 Wendepunkt 坐标与 Wendetangente。
-3. 中文：能辨别反例 x^4 在 0 处二阶导为 0 却不是拐点，并写出德语标准结论句（AFB II）。
+3. 中文：能辨别反例 x^4 在 0 处二阶导为 0 却不是拐点，并写出德语标准结论句（[AFB II]）。
 
 ### Hook / Phaenomen
 
@@ -28,10 +28,22 @@ ZIELE (3条，本节20分钟学完能做到——先读中文，再记德语)：
 
 Hook / Phaenomen: Erst links-, dann rechtsgekrümmt: Irgendwo dazwischen kippt die **Kruemmung**. Dieser Kippunkt heisst **Wendepunkt**, seine **Wendetangente** durchschneidet den Graphen. Die **dritte Ableitung** besiegelt, ob die Wende wirklich stattfindet.
 
+预测 [Option A]：Der grobe Vorzeichenwert aus wenigen Teilwerten genuegt bereits, weitere Verfeinerung aendert nichts。若选A，你在Step 2用工具检验该方向的变化。
+
+预测 [Option B]：Erst fortgesetzte Verfeinerung laesst den Vorzeichenwert gegen den exakten Wert laufen。若选B，你在Step 2用工具检验该方向的变化。
+
+AUFLÖSUNG (nach der Wahl lesen)
+
+以下解析在选择后阅读，含原两项机制分析全文：
+- Mechanismus A：先左弯后右弯，中间必有一处“翻转”：拐点处的切线会穿过图像，三阶导数负责一锤定音。 Hook / Phaenomen: Erst links-, dann rechtsgekrümmt: Irgendwo dazwischen kippt die **Kruemmung**.
+- Mechanismus B：Dieser Kippunkt heisst **Wendepunkt**, seine **Wendetangente** durchschneidet den Graphen.
+
+本质一句话：Wendepunkte markieren den Kruemmungswechsel: f zwei Strich null plus Vorzeichenwechsel plus f drei Strich ungleich null.
+
 `Klausur-Satz: Wendepunkte markieren den Kruemmungswechsel: f zwei Strich null plus Vorzeichenwechsel plus f drei Strich ungleich null.`
 
 ## Schritt 2 — entdecken: Ausruestungskiste der Algorithmus-Unit
-PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语）：
+PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文->德语）：
 
 中文在上，德语在下：
 
@@ -86,12 +98,16 @@ BEISPIEL（正确例题示范，含教具操作与解答）：
 
 [Werkzeug: formula]
 
-AUFGABE (analysieren, AFB II)：Gegeben ist f(x) = x^3 - 6x^2 + 9x + 1. Bestimmen Sie alle Wendepunkte und die Gleichung der Wendetangente.
+AUFGABE (analysieren, [AFB II])：Gegeben ist f(x) = x^3 - 6x^2 + 9x + 1. Bestimmen Sie alle Wendepunkte und die Gleichung der Wendetangente.
 
-HILFE:
-1. Schritt 1: Zweimal ableiten und Kandidaten suchen: f''(x) = 0 loesen.
-2. Schritt 2: Art mit Vorzeichenwechsel oder f'''(x) sichern: Tabelle links und rechts von x_W oder f'''(x_W) ungleich 0.
-3. Schritt 3: y-Wert berechnen und Wendetangente mit y = f'(x_W)(x - x_W) + f(x_W) aufstellen.
+HILFE：
+- 从结构维度切入，先明确本步先求什么量（Zielgroesse: Tangentengleichung),再选工具：用Tangentengleichung判定对象归属，用Wende-Test组织步骤顺序。
+- 从定理维度切入，用Wende-Test与Nur-Stationaer-Test的适用条件选择公式：先写条件，再代入；analysieren-Aufgaben verlangen erst die Verfahrenswahl (analysieren oder Nachweis), dann die Rechnung.
+- 从验证维度切入，用定义域/单调性/量级做方向对照，判断结果是否合理。不给出具体分点、函数值、和值与归属结论。
+
+COMPLETION (Lückentext):
+- 中文说明：根据MUSTERLÖSUNG补全关键数值，不回看上文。
+- Ergaenze: $Tangentengleichung = ___$ und $Wende-Test = ___$, und es gilt $Kontrolle = ___$.
 
 MUSTERLÖSUNG / MUSTERLOESUNG: Es gilt f'(x) = 3x^2 - 12x + 9, f''(x) = 6x - 12, f'''(x) = 6. Aus f''(x) = 0 folgt 6x - 12 = 0, also x_W = 2. Wegen f'''(2) = 6 ungleich 0, alternativ VZW von minus nach plus, liegt ein Wendepunkt vor. Mit f(2) = 8 - 24 + 18 + 1 = 3 folgt W(2 | 3). Mit f'(2) = 12 - 24 + 9 = -3 lautet die Wendetangente y = -3(x - 2) + 3 = -3x + 9. Der Graph wechselt dort von rechtsgekruemmt zu linksgekruemmt.
 
@@ -139,11 +155,25 @@ CHECK检索默写（自测 3 题，与答案配对）：
 ## Schritt 7 — szenario: Klausurtransfer: Kurvendiskussion und Wendepunkte: Wendepunkt und Wendetangente
 ROLLE: Du bist Daten-Assistent im Gesundheitsamt.
 SITUATION: Die kumulierten Meldungen folgen k(t) = -0.05t^3 + 2.4t^2 + 100 (t in Tagen seit Ausbruch, k in Faellen). Der Stab fragt, wann der Tageszuwachs am groessten war und ab wann die Massnahmen sichtbar wirken. Erstelle eine Analyse (ca. 150 Woerter) mit Rechnung, Wendetangente und Deutung fuer die Presse.
-AUFGABE (interpretieren, AFB III)：Bestimme den Wendepunkt, erklaere seine Bedeutung als Peak des Zuwachses und beurteile Grenzen des Modells.
+AUFGABE (analysieren, [AFB III]): Analysieren Bestimme den Wendepunkt, erklaere seine Bedeutung als Peak des Zuwachses und beurteile Grenzen des Modells.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Ansatz mit Tangentengleichung und analysieren-Wahl (Kurvendiskussion und Wendepunkte) [AFB I] | 5 NP | Skizze mit beschrifteten Achsen als Alternativweg
+Rechnung mit Wende-Test und Bedingungspruefung [AFB II] | 5 NP | Numerische Kontrolle mit Taschenrechner als Alternativweg
+Deutung mit Nur-Stationaer-Test plus Einheit/Randkontrolle [AFB III] | 5 NP | Geometrische Deutung der Konvergenz als Alternativweg
+
 RUBRIC (30 XP): Ableitungen plus x_W korrekt (5 XP) | Nachweis per VZW oder f''' plus y-Wert (10 XP) | Wendetangente korrekt (10 XP) | Deutung als Peak plus Modellkritik (5 XP).
 
 `Klausur-Satz: Wer Wendekandidat, Vorzeichenwechsel, Punkt und Wendetangente zeigt, erhaelt die volle Punktzahl.`
 
+> MUSTER-KLAUSURSATZ (15 NP): Wer Wendekandidat, Vorzeichenwechsel, Punkt und Wendetangente zeigt, erhaelt die volle Punktzahl.
+
+KERNSATZ (auswendig):
+- Kernsatz: `Wer Wendekandidat, Vorzeichenwechsel, Punkt und Wendetangente zeigt, erhaelt die volle Punktzahl.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = Wer Wendekandidat, Vorzeichenwechsel, Punkt | Mechanismus = und Wendetangente zeigt, erhaelt | Urteil = die volle Punktzahl.
+- Selbsttest: Wer Wendekandidat, ___, Punkt und Wendetangente zeigt, erhaelt die volle Punktzahl.
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Wendepunkt und Wendetangente
 TAKEAWAY 1盒（核心总结）：
 

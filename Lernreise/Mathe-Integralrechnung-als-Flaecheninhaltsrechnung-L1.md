@@ -8,7 +8,7 @@ operatoren: [berechnen, darstellen, interpretieren]
 klausurrelevant: true
 datum: 2026-10-10
 tags: [EF, Mathe, Analysis]
-version: Enterprise-v4
+version: Enterprise-v5
 ---
 
 # Lernreise: Integralrechnung als Flaecheninhaltsrechnung (L1, Ziel: Klausur)
@@ -24,9 +24,15 @@ version: Enterprise-v4
 
 比喻：细分求和如用越来越细的砖块铺满不规则鱼塘，缝隙越来越小。
 
-预测 [Option A]：分块越多误差越大。Mechanismus：每一块矩形都有高估或低估，块数越多，误差项个数越多，累积误差因此变大，细分没有意义。
+预测 [Option A]：分块越多误差越大。若选A，你在Step 2用滑块检验误差随分块数变化的方向。
 
-预测 [Option B]：分块无穷细分逼近真值。Mechanismus：每块宽度随分块数增大而趋于零，高估与低估的缝隙被压扁，求和的极限挤掉全部缝隙，近似值收敛于不规则区域的真实面积。
+预测 [Option B]：分块无穷细分逼近真值。若选B，你在Step 2用滑块检验近似值随分块数变化的方向。
+
+AUFLÖSUNG (nach der Wahl lesen)
+
+以下解析在选择后阅读，含原两项机制分析全文：
+- Mechanismus A：每一块矩形都有高估或低估，块数越多，误差项个数越多，累积误差因此变大，细分没有意义。
+- Mechanismus B：每块宽度随分块数增大而趋于零，高估与低估的缝隙被压扁，求和的极限挤掉全部缝隙，近似值收敛于不规则区域的真实面积。
 
 本质一句话：黎曼和在分块数趋于无穷时的极限即定积分，它把不可直接计算的曲边面积转化为可计算的和式极限。
 
@@ -40,7 +46,11 @@ Klausur-Satz (Deutsch unten): Die Feinheit der Zerlegung entscheidet ueber die G
 
 AUFGABE (berechnen, AFB II)：设 $f(x)=x^2$，在区间 $[0;2]$ 上计算 $O_{4}$ 和 $U_{4}$，并用 $O_{4}$ 与 $U_{4}$ 的大小关系说明定积分的夹逼位置。全部计算过程保留分数或小数两步推导。
 
-HILFE：先算块宽 $\Delta x=\frac{2-0}{4}$，再列出分点 $x_{0}=0$、$x_{1}=0.5$、$x_{2}=1$、$x_{3}=1.5$、$x_{4}=2$，算出函数值 $f(x_{0})=0$、$f(x_{1})=0.25$、$f(x_{2})=1$、$f(x_{3})=2.25$、$f(x_{4})=4$。单调递增函数在每块上左端点给出最小值，右端点给出最大值，因此左和为下和，右和为上和。
+HILFE：从分割维度切入，用等分区间法确定块宽与分点类型；从单调性维度切入，用端点比较法判定上下和归属；从夹逼维度切入，用区间套方法定位积分值。不给出具体分点、函数值、和值与归属结论。
+
+COMPLETION (Lückentext):
+- 中文说明：根据MUSTERLÖSUNG补全两个关键数值，不回看上文。
+- Ergaenze: $U_{4}=___$ und $O_{4}=___$, und es gilt $U_{4} < \int_{0}^{2} x^2 \, dx < O_{4}$.
 
 MUSTERLÖSUNG：块宽为 $\Delta x=0.5$。下和取左端点：$U_{4}=\Delta x \cdot (f(x_{0})+f(x_{1})+f(x_{2})+f(x_{3}))=0.5 \cdot (0+0.25+1+2.25)=0.5 \cdot 3.5=1.75$。上和取右端点：$O_{4}=\Delta x \cdot (f(x_{1})+f(x_{2})+f(x_{3})+f(x_{4}))=0.5 \cdot (0.25+1+2.25+4)=0.5 \cdot 7.5=3.75$。精确值为 $\int_{0}^{2} x^2 \, dx=\left[\frac{1}{3}x^3\right]_{0}^{2}=\frac{8}{3} \approx 2.67$，满足 $U_{4} < \int_{0}^{2} x^2 \, dx < O_{4}$，即 $1.75 < 2.67 < 3.75$。当 $n=8$ -> $n=32$ 时，差 $O_{n}-U_{n}$ 持续缩小，验证了预测 B。
 
@@ -82,8 +92,20 @@ Klausur-Satz (Deutsch unten): Ohne $dx$ ist das Integral unvollstaendig, vertaus
 
 SITUATION 中文在上：一块太阳能板的下边缘为直线，上边缘为曲线，宽度方向为 $4$ 米，高度曲线可用 $f(x)=-0.25x^2+4$ 描述，定义域为 $[-4;4]$ 的子区间 $[0;4]$ 段待核算。工程师先用矩形块粗估曲边面积以备料，再用定积分给出精确值并解释两者误差，以满足审计要求。
 
-AUFGABE 中文在上：第一问用 $n=4$ 的 $O_{4}$ 与 $U_{4}$ 给出该曲边面积的估计区间。第二问用定积分计算在 $[0;4]$ 上的精确值。第三问解释为何矩形估计存在误差，以及 $n$ 增大时误差如何变化。
+AUFGABE (berechnen, [AFB III]): Berechne erstens mit $n=4$ die Schaetzung $O_{4}$ und $U_{4}$ der Kurvenflaeche. Berechne zweitens das bestimmte Integral auf $[0;4]$ als exakten Wert. Erklaere drittens die Rechteck-Luecke und die Fehleraenderung fuer $n$ -> unendlich. 中文说明：三问分别对应估计、精确积分与误差解释。
 
 MUSTERLÖSUNG Dreischritt 中文在上：Dreischritt 第一步为估计。取 $\Delta x=1$，分点为 $x_{0}=0$、$x_{1}=1$、$x_{2}=2$、$x_{3}=3$、$x_{4}=4$，对应 $f$ 值为 $4$、$3.75$、$3$、$1.75$、$0$。函数单调递减，故左和为上和，右和为下和，得 $O_{4}=1 \cdot (4+3.75+3+1.75)=12.5$，$U_{4}=1 \cdot (3.75+3+1.75+0)=8.5$。Dreischritt 第二步为精确积分：$\int_{0}^{4} (-0.25x^2+4) \, dx=\left[-\frac{1}{12}x^3+4x\right]_{0}^{4}=-\frac{64}{12}+16=\frac{32}{3} \approx 10.67$，落在 $8.5$ 与 $12.5$ 之间。Dreischritt 第三步为误差解释：矩形在曲边处产生三角形缝隙，$n=4$ 时缝隙大故区间宽，$n$ -> unendlich 时缝隙消失，$O_{n}-U_{n}$ 趋于零，估计值收敛于积分精确值。Deutsch unten siehe MUSTER-KLAUSURSATZ.
 
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Schaetzung $O_{4}=12.5$ und $U_{4}=8.5$ mit monotoner Endpunkt-Zuordnung | 5 NP | Grobere Zerlegung $n=2$ mit Intervalldeutung als Alternativweg
+Exaktes Integral $\int_{0}^{4} (-0.25x^2+4) \, dx=\frac{32}{3}$ mit Stammfunktion | 5 NP | Numerische Naeherung mit Taschenrechner als Alternativweg
+Fehlerdeutung der Rechteck-Luecke und Konvergenz fuer $n$ -> unendlich | 5 NP | Geometrische Skizze der schrumpfenden Luecke als Alternativweg
+
 > MUSTER-KLAUSURSATZ (15 NP): Die Zerlegung mit $n=4$ liefert $O_{4}=12.5$ und $U_{4}=8.5$, das bestimmte Integral $\int_{0}^{4} (-0.25x^2+4) \, dx=\frac{32}{3}$ liegt dazwischen, und fuer $n$ -> unendlich schliesst sich die Luecke zwischen Ober- und Untersumme, sodass die Riemann-Summe gegen den exakten Flaecheninhalt konvergiert.
+
+KERNSATZ (auswendig):
+- Kernsatz: `Das bestimmte Integral ist der Grenzwert der Riemann-Summe fuer $n$ -> unendlich und wird ueber Zerlegung -> Riemann-Summe -> Grenzwert dargestellt.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = das bestimmte Integral | Mechanismus = Grenzwert der Riemann-Summe fuer $n$ -> unendlich | Urteil = Darstellung ueber Zerlegung -> Riemann-Summe -> Grenzwert
+- Selbsttest: Das bestimmte Integral ist der ___ der Riemann-Summe fuer $n$ -> unendlich und wird ueber Zerlegung -> Riemann-Summe -> Grenzwert dargestellt.

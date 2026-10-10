@@ -8,7 +8,7 @@ operatoren: [berechnen, untersuchen, begruenden]
 klausurrelevant: true
 datum: 2026-09-26
 tags: [EF, Mathe, Analysis]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: ZKE 2027: Teil A und Teil B im Zeitmodus (L1, Ziel Klausur)
@@ -20,13 +20,25 @@ ZIELE (drei messbare Ziele dieser Lektion):
 
 1. Du kannst die ZKE-Struktur nennen: Teil A hilfsmittelfrei max. $25$ Minuten, Teil B mit WTR oder CAS plus Formelsammlung mind. $75$ Minuten, gesamt $100$ Minuten.
 2. Du kannst im Teil-A-Stil $f'(x) = 15x^2-4x+1$ zu $f'(1) = 12$ bilden und $x^2-9x+20 = 0$ per $pq$ zu $4$ und $5$ loesen.
-3. Du kannst in Teil B Ansatz, Rechnung und Antwortsatz mit $|\vec{a}|$ und Einheiten schreiben und die Zeit $25$ gegen $75$ einteilen (AFB II/III).
+3. Du kannst in Teil B Ansatz, Rechnung und Antwortsatz mit $|\vec{a}|$ und Einheiten schreiben und die Zeit $25$ gegen $75$ einteilen ([AFB II/III]).
 
 ###
 
 ### Hook / Phaenomen
 
 Hook / Phaenomen: Teil A ohne Hilfsmittel, Teil B mit Rechner: Die ZKE prueft beides, Tempo und Tiefe. **Potenzregel**, **pq-Formel** und **Betragsformel** sind das hilfsmittelfreie Ueberlebenspaket. Wer sie ohne Zettel kann, kauft sich Zeit fuer die Transferaufgaben.
+
+预测 [Option A]：Der grobe Pruefpunktwert aus wenigen Teilwerten genuegt bereits, weitere Verfeinerung aendert nichts。若选A，你在Step 2用工具检验该方向的变化。
+
+预测 [Option B]：Erst fortgesetzte Verfeinerung laesst den Pruefpunktwert gegen den exakten Wert laufen。若选B，你在Step 2用工具检验该方向的变化。
+
+AUFLÖSUNG (nach der Wahl lesen)
+
+以下解析在选择后阅读，含原两项机制分析全文：
+- Mechanismus A：Hook / Phaenomen: Teil A ohne Hilfsmittel, Teil B mit Rechner: Die ZKE prueft beides, Tempo und Tiefe.
+- Mechanismus B：**Potenzregel**, **pq-Formel** und **Betragsformel** sind das hilfsmittelfreie Ueberlebenspaket.
+
+本质一句话：Die ZKE trennt Tempo von Tiefe: Teil A verlangt Formelsicherheit ohne Hilfsmittel, Teil B Transfer mit Werkzeug.
 
 `Klausur-Satz: Die ZKE trennt Tempo von Tiefe: Teil A verlangt Formelsicherheit ohne Hilfsmittel, Teil B Transfer mit Werkzeug.`
 
@@ -92,12 +104,16 @@ BEISPIEL (Sandbox Level mit Werkzeug):
 
 [Werkzeug: formula]
 
-AUFGABE (Levelziel, AFB II): Knacke das ZKE-Level: Bearbeite im Sandbox-Formelgeruest zuerst drei Teil-A-Minutenaufgaben ohne Rechner zu Nullstellen, Ableitung und Vektorlaenge, stelle den Timer und stoppe die Zeit. Beobachte, an welcher Stelle du ohne Rechner ins Stocken geraetst. Vergleiche danach deine Wege mit der Musterdarstellung fuer Teil B zur selben Aufgabe und ergaenze die fehlende Deutung. Benenne je Aufgabe den noetigen Handwerksgriff.
+AUFGABE (Levelziel, [AFB II]): Knacke das ZKE-Level: Bearbeite im Sandbox-Formelgeruest zuerst drei Teil-A-Minutenaufgaben ohne Rechner zu Nullstellen, Ableitung und Vektorlaenge, stelle den Timer und stoppe die Zeit. Beobachte, an welcher Stelle du ohne Rechner ins Stocken geraetst. Vergleiche danach deine Wege mit der Musterdarstellung fuer Teil B zur selben Aufgabe und ergaenze die fehlende Deutung. Benenne je Aufgabe den noetigen Handwerksgriff.
 
-HILFE:
-1. Loese ohne Rechner per pq-Formel, Potenzregel und Betragsformel und notiere die reine Rechenzeit.
-2. Pruefe exakte Ergebnisse und markiere jeden Handwerksgriff mit Namen am Rand.
-3. Ergaenze fuer Teil B den vollständigen Weg mit Ansatz, Rechnung und Deutungssatz.
+HILFE：
+- 从结构维度切入，先明确本步先求什么量（Zielgroesse: Potenzregel),再选工具：用Potenzregel判定对象归属，用pq-Formel组织步骤顺序。
+- 从定理维度切入，用pq-Formel与Ansatz的适用条件选择公式：先写条件，再代入；berechnen-Aufgaben verlangen erst die Verfahrenswahl (berechnen oder Nachweis), dann die Rechnung.
+- 从验证维度切入，用定义域/单调性/量级做方向对照，判断结果是否合理。不给出具体分点、函数值、和值与归属结论。
+
+COMPLETION (Lückentext):
+- 中文说明：根据MUSTERLÖSUNG补全关键数值，不回看上文。
+- Ergaenze: $Potenzregel = ___$ und $pq-Formel = ___$, und es gilt $Kontrolle = ___$.
 
 MUSTERLOESUNG: Teil-A-Wege liefern Nullstellen, Ableitung und Vektorlaenge exakt per pq-Formel, Potenzregel und Betragsformel in wenigen Minuten. Teil-B-Darstellung ergaenzt Ansatz, Zwischenschritte und Deutung zum vollständigen Weg. Regel: In Teil A zaehlt das exakte Ergebnis ohne Hilfsmittel, in Teil B der vollständig dargestellte Loesungsweg mit Hilfsmitteln und Deutung.
 
@@ -141,11 +157,25 @@ CHECK (drei Fragen mit Antworten):
 ## Schritt 7 — szenario: Klausurtransfer: ZKE 2027: Teil A und Teil B im Zeitmodus: Endabnahme II
 ROLLE: Du bist Pruefungskoordinator und bereitest einen Jahrgang auf die ZKE vor.
 SITUATION: Du sollst vor der Pruefung eine kurze Strategie-Empfehlung (circa 150 Woerter) formulieren, wie die 100 Minuten zwischen Teil A und Teil B aufgeteilt und wann die Hilfsmittel angefordert werden sollten. Begruende deine Empfehlung mit Blick auf Hilfsmittelregeln und Darstellungsleistung.
-AUFGABE (begruenden, AFB III): Verfasse eine zusammenhaengende Darstellung von etwa 150 Woertern mit Regeln, Zeitaufteilung, Darstellungsleistung und Fazit.
+AUFGABE (berechnen, [AFB III]): Berechne Verfasse eine zusammenhaengende Darstellung von etwa 150 Woertern mit Regeln, Zeitaufteilung, Darstellungsleistung und Fazit.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Ansatz mit Potenzregel und berechnen-Wahl (ZKE 2027: Teil A und Teil B im Zeitmodus) [AFB I] | 5 NP | Skizze mit beschrifteten Achsen als Alternativweg
+Rechnung mit pq-Formel und Bedingungspruefung [AFB II] | 5 NP | Numerische Kontrolle mit Taschenrechner als Alternativweg
+Deutung mit Ansatz plus Einheit/Randkontrolle [AFB III] | 5 NP | Geometrische Deutung der Konvergenz als Alternativweg
+
 RUBRIC (30 XP): Korrekte Wiedergabe der Zeit- und Hilfsmittelregeln (5 XP) | Begruendete Zeitaufteilung zwischen Teil A und Teil B (10 XP) | Hinweis auf die Bedeutung der Darstellungsleistung in Teil B (10 XP) | Fazit zur Pruefungsstrategie (5 XP).
 
 `Klausur-Satz: Wer Teil-A-Formeln fehlerfrei zeigt und Teil-B-Transfer mit Rechnerweg dokumentiert, erhaelt die volle Punktzahl.`
 
+> MUSTER-KLAUSURSATZ (15 NP): Pruefung ist Zeitspiel: Automatisierte Grundlagen kaufen Minuten fuer schwierige Transferstellen.
+
+KERNSATZ (auswendig):
+- Kernsatz: `Pruefung ist Zeitspiel: Automatisierte Grundlagen kaufen Minuten fuer schwierige Transferstellen.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = Pruefung ist Zeitspiel | Mechanismus = Automatisierte Grundlagen kaufen Minuten | Urteil = fuer schwierige Transferstellen.
+- Selbsttest: Pruefung ist Zeitspiel: Automatisierte Grundlagen kaufen Minuten fuer schwierige ___.
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Endabnahme II
 TAKEAWAY (Kernbotschaft in einem Kasten):
 

@@ -8,7 +8,7 @@ operatoren: [anwenden, begruenden, beurteilen]
 klausurrelevant: true
 datum: 2026-09-26
 tags: [EF, Mathe, CN]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: CN-Tricks: sechs Schnellverfahren (L1, Ziel Klausur)
@@ -20,13 +20,25 @@ ZIELE (drei messbare Ziele dieser Lektion):
 
 1. Du kannst sechs Heuristiken nennen: Spezialwert, Ausschluss, Skizze, Vieta, AM-GM und Parametertrennung je mit Bedingung.
 2. Du kannst $2^{30}$ gegen $3^{20}$ per $8^{10}$ gegen $9^{10}$ zu $a < b$ entscheiden und per Potenzgesetzen belegen.
-3. Du kannst jede Vermutung per Standardweg sichern und bei verletzter Bedingung sofort wechseln, denn Reinschrift verlangt Beweis (AFB II/III).
+3. Du kannst jede Vermutung per Standardweg sichern und bei verletzter Bedingung sofort wechseln, denn Reinschrift verlangt Beweis ([AFB II/III]).
 
 ###
 
 ### Hook / Phaenomen
 
 Hook / Phaenomen: Wer null oder eins einsetzt, trifft manchmal ins Schwarze und manchmal daneben. Der Unterschied zwischen Glueck und Methode heisst **Bedingung**. **Spezialwert**, **Ausschluss** und **Skizze** sind nur Abkuerzungen mit Gueltigkeitsbereich.
+
+预测 [Option A]：Der grobe Schaetzwert aus wenigen Teilwerten genuegt bereits, weitere Verfeinerung aendert nichts。若选A，你在Step 2用工具检验该方向的变化。
+
+预测 [Option B]：Erst fortgesetzte Verfeinerung laesst den Schaetzwert gegen den exakten Wert laufen。若选B，你在Step 2用工具检验该方向的变化。
+
+AUFLÖSUNG (nach der Wahl lesen)
+
+以下解析在选择后阅读，含原两项机制分析全文：
+- Mechanismus A：Hook / Phaenomen: Wer null oder eins einsetzt, trifft manchmal ins Schwarze und manchmal daneben.
+- Mechanismus B：Der Unterschied zwischen Glueck und Methode heisst **Bedingung**.
+
+本质一句话：Jeder Trick braucht seine Bedingung: Ohne Gueltigkeitspruefung bleibt Heuristik Gluecksspiel.
 
 `Klausur-Satz: Jeder Trick braucht seine Bedingung: Ohne Gueltigkeitspruefung bleibt Heuristik Gluecksspiel.`
 
@@ -92,12 +104,16 @@ BEISPIEL (Sandbox Level mit Werkzeug):
 
 [Werkzeug: formula]
 
-AUFGABE (Levelziel, AFB II): Knacke den Vergleich: Stelle in der Sandbox (formula) die Basen 8 und 9 ein, ziehe den Slider Exponent von 1 bis 10 und bestaetige $8^{10}$ gegen $9^{10}$, und beweise dann ohne Rechner, dass $2^{30} < 3^{20}$ gilt. Ergaenze die Probe mit Logarithmus.
+AUFGABE (Levelziel, [AFB II]): Knacke den Vergleich: Stelle in der Sandbox (formula) die Basen 8 und 9 ein, ziehe den Slider Exponent von 1 bis 10 und bestaetige $8^{10}$ gegen $9^{10}$, und beweise dann ohne Rechner, dass $2^{30} < 3^{20}$ gilt. Ergaenze die Probe mit Logarithmus.
 
-HILFE:
-1. Forme mit $(a^m)^n = a^{mn}$ um zu $2^{30} = 8^{10}$ und $3^{20} = 9^{10}$.
-2. Vergleiche $8 < 9$ zu $8^{10} < 9^{10}$, also $a < b$.
-3. Bestaetige mit $30 \ln 2 \approx 20{,}79$ gegen $20 \ln 3 \approx 21{,}97$.
+HILFE：
+- 从结构维度切入，先明确本步先求什么量（Zielgroesse: Schnellverfahren),再选工具：用Schnellverfahren判定对象归属，用Spezialwert-Methode组织步骤顺序。
+- 从定理维度切入，用Spezialwert-Methode与Ausschlussverfahren的适用条件选择公式：先写条件，再代入；anwenden-Aufgaben verlangen erst die Verfahrenswahl (anwenden oder Nachweis), dann die Rechnung.
+- 从验证维度切入，用定义域/单调性/量级做方向对照，判断结果是否合理。不给出具体分点、函数值、和值与归属结论。
+
+COMPLETION (Lückentext):
+- 中文说明：根据MUSTERLÖSUNG补全关键数值，不回看上文。
+- Ergaenze: $8^{10} = ___$ und $9^{10} = ___$, und es gilt $Kontrolle = ___$.
 
 MUSTERLOESUNG: Sandbox $8^{10} = 1073741824$ gegen $9^{10} = 3486784401$ zeigt $a < b$. Rechnung $2^{30} = (2^3)^{10} = 8^{10}$ und $3^{20} = (3^2)^{10} = 9^{10}$. Wegen $8 < 9$ und Monotonie folgt $8^{10} < 9^{10}$, also $a < b$. Probe $30 \ln 2 \approx 20{,}79 < 21{,}97 \approx 20 \ln 3$ bestaetigt mit dem Standardweg, der Trick diente nur der Orientierung.
 
@@ -142,11 +158,25 @@ CHECK (drei Fragen mit Antworten):
 ## Schritt 7 — szenario: Klausurtransfer: CN-Tricks: sechs Schnellverfahren: Tricks im Serverraum
 ROLLE: Du bist Tutor in einem Mathe-Kurs und sollst eine Strategiekarte erstellen.
 SITUATION: Ein Mitschueler will in der Klausur nur mit heuristischen Schnellverfahren arbeiten und keine Standardwege schreiben. Beurteile seine Strategie in einer zusammenhaengenden Darstellung (circa 150 Woerter) und erlaeutere an zwei Beispielen (Spezialwert und AM-GM), wann ein Schnellverfahren erlaubt ist und wann der Standardweg zwingend ist.
-AUFGABE (beurteilen, AFB III): Verfasse eine zusammenhaengende Darstellung von etwa 150 Woertern mit Problemanalyse, zwei Beispielen und Fazit.
+AUFGABE (anwenden, [AFB III]): Wende an Verfasse eine zusammenhaengende Darstellung von etwa 150 Woertern mit Problemanalyse, zwei Beispielen und Fazit.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Ansatz mit Schnellverfahren und anwenden-Wahl (CN-Tricks: sechs Schnellverfahren) [AFB I] | 5 NP | Skizze mit beschrifteten Achsen als Alternativweg
+Rechnung mit Spezialwert-Methode und Bedingungspruefung [AFB II] | 5 NP | Numerische Kontrolle mit Taschenrechner als Alternativweg
+Deutung mit Ausschlussverfahren plus Einheit/Randkontrolle [AFB III] | 5 NP | Geometrische Deutung der Konvergenz als Alternativweg
+
 RUBRIC (30 XP): Benennung des Grundproblems (Heuristik ersetzt keinen Beweis) (5 XP) | Beispiel Spezialwert: Vermutung gegen Beweis (10 XP) | Beispiel AM-GM: Positivitaet plus Gleichheitsbedingung (10 XP) | Fazit zur Arbeitsteilung von Schmierpapier und Reinschrift (5 XP).
 
 `Klausur-Satz: Wer Trick, Bedingung und klassische Sicherung in einer Darstellung verbindet, erhaelt die volle Punktzahl.`
 
+> MUSTER-KLAUSURSATZ (15 NP): Jeder Trick braucht seine Bedingung: Ohne Gueltigkeitspruefung bleibt Heuristik Gluecksspiel.
+
+KERNSATZ (auswendig):
+- Kernsatz: `Jeder Trick braucht seine Bedingung: Ohne Gueltigkeitspruefung bleibt Heuristik Gluecksspiel.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = Jeder Trick braucht seine Bedingung | Mechanismus = Ohne Gueltigkeitspruefung bleibt Heuristik Gluecksspiel. | Urteil = Ohne Gueltigkeitspruefung bleibt Heuristik Gluecksspiel.
+- Selbsttest: Jeder Trick braucht seine Bedingung: Ohne ___ bleibt Heuristik Gluecksspiel.
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Tricks im Serverraum
 TAKEAWAY (Kernbotschaft in einem Kasten):
 

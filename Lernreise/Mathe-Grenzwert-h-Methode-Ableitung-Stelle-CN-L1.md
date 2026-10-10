@@ -8,7 +8,7 @@ operatoren: [berechnen, deuten, begruenden]
 klausurrelevant: true
 datum: 2026-09-26
 tags: [EF, Mathe, CN]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Grenzwert mit h-Methode und Ableitung an einer Stelle (L1, Ziel Klausur)
@@ -30,10 +30,22 @@ Voraussetzung（窄切口）：只需会多项式展开与约分，本节只做�
 
 Hook / Phaenomen: Die Sekante rutscht an die Kurve heran, h schrumpft gegen null: Was uebrig bleibt, ist die exakte **Tangentensteigung**. Der **Differenzenquotient** misst noch den Durchschnitt, der **Differentialquotient** misst den Moment. Dazwischen liegt ein einziger Rechenschritt: **Kuerzen vor Grenzwert**.
 
+预测 [Option A]：Der grobe Grenzwert aus wenigen Teilwerten genuegt bereits, weitere Verfeinerung aendert nichts。若选A，你在Step 2用工具检验该方向的变化。
+
+预测 [Option B]：Erst fortgesetzte Verfeinerung laesst den Grenzwert gegen den exakten Wert laufen。若选B，你在Step 2用工具检验该方向的变化。
+
+AUFLÖSUNG (nach der Wahl lesen)
+
+以下解析在选择后阅读，含原两项机制分析全文：
+- Mechanismus A：割线一点点滑向切线，h一点点压向0：平均变化率取极限，就变成了瞬时变化率，关键一步是先约分再取极限。 Hook / Phaenomen: Die Sekante rutscht an die Kurve heran, h schrumpft gegen null: Was uebrig bleibt, ist die exakte **Tangentensteigung**.
+- Mechanismus B：Der **Differenzenquotient** misst noch den Durchschnitt, der **Differentialquotient** misst den Moment.
+
+本质一句话：Die h-Methode verwandelt mittlere in lokale Aenderung: Differenzenquotient kuerzen, dann h gegen null schicken.
+
 `Klausur-Satz: Die h-Methode verwandelt mittlere in lokale Aenderung: Differenzenquotient kuerzen, dann h gegen null schicken.`
 
 ## Schritt 2 — entdecken: Ausruestungskiste der Algorithmus-Unit
-PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
+PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文->德语，Evidenz：pretraining降认知负荷）：
 
 中文在上，德语在下：
 
@@ -98,16 +110,16 @@ BEISPIEL（正确例题示范，含教具操作与解答，中文在上、德语
 
 AUFGABE中文导读（沙盒谜题）：函数在x为2处值为6，差商化简得m(h)等于5加h。请用h方法求该点导数并写出切线斜率。
 
-AUFGABE (anwenden, AFB II): Fuer $f$ mit $f(2) = 6$ liefert die $h$-Methode $m(h) = 5 + h$. Bestimmen Sie $f'(2)$ als Grenzwert und nennen Sie die Tangentensteigung in $(2|6)$.
+AUFGABE (anwenden, [AFB II]): Fuer $f$ mit $f(2) = 6$ liefert die $h$-Methode $m(h) = 5 + h$. Bestimmen Sie $f'(2)$ als Grenzwert und nennen Sie die Tangentensteigung in $(2|6)$.
 
-HILFE（中德双语步骤）：
+HILFE：
+- 从结构维度切入，先明确本步先求什么量（Zielgroesse: h-Methode),再选工具：用h-Methode判定对象归属，用Versatz组织步骤顺序。
+- 从定理维度切入，用Versatz与Differenzenquotient的适用条件选择公式：先写条件，再代入；berechnen-Aufgaben verlangen erst die Verfahrenswahl (berechnen oder Nachweis), dann die Rechnung.
+- 从验证维度切入，用定义域/单调性/量级做方向对照，判断结果是否合理。不给出具体分点、函数值、和值与归属结论。
 
-1. 中文：第1步写出差商并约掉h，关键词：kuerzen。
-   Schritt 1 (DE): Schreiben Sie $m(h) = 5 + h$ nach Kuerzen hin.
-2. 中文：第2步令h趋于0取极限得5，关键词：Grenzwert。
-   Schritt 2 (DE): $\lim_{h \to 0} m(h) = 5$.
-3. 中文：第3步点出切线斜率为5并落点，关键词：Tangente。
-   Schritt 3 (DE): $f'(2) = 5$ als Steigung in $(2|6)$.
+COMPLETION (Lückentext):
+- 中文说明：根据MUSTERLÖSUNG补全关键数值，不回看上文。
+- Ergaenze: $m(h) = ___$ und $f'(2) = ___$, und es gilt $Kontrolle = ___$.
 
 MUSTERLOESUNG：中文：差商已化简为5加h，h趋于0时极限为5，故该点导数为5，切线在点(2|6)处斜率为5，极限过程必须写全。
 
@@ -126,7 +138,7 @@ Weg B: Alternative Route mit Gegenrechnung.
 
 AUFGABE B：Bestimmen Sie $f'(1)$ fuer $f(x) = 3x^2$.
 
-HILFE: A enthaelt die Aufforderung mit der h-Methode → Verfahren (i)，必须写差商全过程。B 无此限定 → Verfahren (ii)，可直接 $f'(x) = 6x$。【选程序：见 h-方法写差商；不见直接求导。】
+HILFE: A enthaelt die Aufforderung mit der h-Methode -> Verfahren (i)，必须写差商全过程。B 无此限定 -> Verfahren (ii)，可直接 $f'(x) = 6x$。【选程序：见 h-方法写差商；不见直接求导。】
 
 ANTWORT: A erfordert Verfahren (i): $m(h) = \frac{3(1+h)^2-3}{h} = \frac{6h+3h^2}{h} = 6+3h \to 6$, also $f'(1) = 6$. B erfordert Verfahren (ii): Mit der Potenzregel gilt $f'(x) = 6x$, also $f'(1) = 6$. Beide Wege liefern $6$, doch nur Verfahren (i) zeigt den Grenzprozess und erhaelt dort die volle Punktzahl.
 
@@ -156,10 +168,25 @@ CHECK检索默写（自测 3 题，与答案配对）：
 ## Schritt 7 — szenario: Klausurtransfer: Grenzwert mit h-Methode und Ableitung an einer Stelle: h schrumpft
 ROLLE: Du bist Tutor und erklaerst einer Lerngruppe die h-Methode.
 SITUATION: Die Gruppe kann die Potenzregel, versteht aber nicht, woher die Ableitung kommt, und verwechselt Sekante mit Tangente. Erklaere in einer zusammenhaengenden Darstellung (ca. 150 Woerter) am Beispiel $f(x) = x^2$ an einer Stelle, wie man vom Differenzenquotienten ueber Kuerzen zum Grenzwert gelangt und was das Ergebnis geometrisch bedeutet.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Ansatz mit h-Methode und berechnen-Wahl (Grenzwert mit h-Methode und Ableitung an) [AFB I] | 5 NP | Skizze mit beschrifteten Achsen als Alternativweg
+Rechnung mit Versatz und Bedingungspruefung [AFB II] | 5 NP | Numerische Kontrolle mit Taschenrechner als Alternativweg
+Deutung mit Differenzenquotient plus Einheit/Randkontrolle [AFB III] | 5 NP | Geometrische Deutung der Konvergenz als Alternativweg
+
 RUBRIC (30 XP): Korrekter Dreischritt Aufstellen-Kuerzen-Grenzuebergang (12 XP) | Rechnung am Beispiel mit Ergebnis (8 XP) | Deutung als Tangentensteigung und Abgrenzung zur Sekante (6 XP) | Fachsprachlich korrekte Darstellung (4 XP).
 
+AUFGABE (berechnen, [AFB III]): Berechne erstens den Ansatz mit h-Methode, zweitens die Rechnung mit Versatz und drittens die Deutung mit Differenzenquotient zum Fall: RUBRIC (30 XP): Korrekter Dreischritt Aufstellen-Kuerzen-Grenzuebergang (12 XP) | Rechnung am Beispiel mit Ergebnis (8 XP) | Deutung als Tan. 中文说明：三问分别对应 Ansatz、Rechnung 与 Deutung。
 `Klausur-Satz: Wer Differenzenquotient aufstellt, kuerzt, Grenzuebergang vollzieht und als Tangentensteigung deutet, erhaelt die volle Punktzahl.`
 
+> MUSTER-KLAUSURSATZ (15 NP): Ableiten ist Grenzwertbildung: Erst algebraisch kuerzen, dann erst null einsetzen.
+
+KERNSATZ (auswendig):
+- Kernsatz: `Ableiten ist Grenzwertbildung: Erst algebraisch kuerzen, dann erst null einsetzen.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = Ableiten ist Grenzwertbildung | Mechanismus = Erst algebraisch kuerzen | Urteil = dann erst null einsetzen.
+- Selbsttest: Ableiten ist ___: Erst algebraisch kuerzen, dann erst null einsetzen.
 ## Schritt 8 — reflexion: Takeaway & Reflexion: h schrumpft
 TAKEAWAY 1盒（核心总结）：
 

@@ -8,7 +8,7 @@ operatoren: [untersuchen, ableiten, bestimmen]
 klausurrelevant: true
 datum: 2026-10-03
 tags: [EF, Mathe, Analysis, Funktionenscharen, Parameter, Ortskurve, Wendepunkte, Extrempunkte]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Analysis: Funktionenscharen und Bestimmung von Ortskurven (L1, Ziel Klausur)
@@ -20,16 +20,28 @@ ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
 1. 中文：能说清函数族（Funktionenschar $f_k(x)$）中自变量 $x$ 与形态参数（Formparameter $k$）的本质区别，以及对参数 $k$ 符号进行“分类讨论”（Fallunterscheidungen: $k > 0, k = 0, k < 0$）的判别标准。
 2. 中文：能熟练运用“参数消元两步法”（Parameterelimination: $x(k) \to k(x) \to y(k(x))$）精准推导极值点或拐点的轨道曲线方程（Gleichung der Ortskurve）。
-3. 中文：能在高中微积分高考大题（AFB I/II/III）中准确求解含参数多项式函数与指数衰减函数的共同交点（gemeinsame Punkte aller Scharkurven）及包络线性质。
+3. 中文：能在高中微积分高考大题（[AFB I/II/III]）中准确求解含参数多项式函数与指数衰减函数的共同交点（gemeinsame Punkte aller Scharkurven）及包络线性质。
 
 ### Hook / Phaenomen
 
 Stell dir vor, du stehst abends vor den beruehmten tanzenden Wasserfontaenen von Dubai oder dem Schloss Bellagio in Las Vegas. Aus Hunderten im Boden versenkten Duesen schiessen gigantische Wasserboegen synchron in den Nachthimmel. Die Flugbahn der Wassertropfen laesst sich durch eine mathematische Parabel $f_k(x)$ beschreiben. An einem Steuerpult dreht der Licht- und Wasser-Ingenieur an einem silbernen Drehregler: Er veraendert den Pumpendruck kontinuierlich ueber einen Parameter $k$. Mit jedem Millimeter Drehung veraendert sich die Wurfparabel: Sie wird steiler, flacher, breiter oder hoeher. Wenn du nun mit einer Kamera eine Langzeitbelichtung machst und ausschliesslich den hoechsten Punkt (den Scheitelpunkt) jedes einzelnen Wasserbogens markierst, stellst du mit Staunen fest: Die unendlich vielen Hochpunkte fliegen nicht chaotisch durch den Raum, sondern sie tanzen wie auf einer Perlenschnur aufgereiht entlang einer voellig eigenstaendigen, wunderschoenen neuen geometrischen Kurve – der sogenannten Ortskurve der Hochpunkte!
 
+预测 [Option A]：Der grobe Parameterwert aus wenigen Teilwerten genuegt bereits, weitere Verfeinerung aendert nichts。若选A，你在Step 2用工具检验该方向的变化。
+
+预测 [Option B]：Erst fortgesetzte Verfeinerung laesst den Parameterwert gegen den exakten Wert laufen。若选B，你在Step 2用工具检验该方向的变化。
+
+AUFLÖSUNG (nach der Wahl lesen)
+
+以下解析在选择后阅读，含原两项机制分析全文：
+- Mechanismus A：Stell dir vor, du stehst abends vor den beruehmten tanzenden Wasserfontaenen von Dubai oder dem Schloss Bellagio in Las Vegas.
+- Mechanismus B：Aus Hunderten im Boden versenkten Duesen schiessen gigantische Wasserboegen synchron in den Nachthimmel.
+
+本质一句话：Eine Ortskurve ist die Funktionskurve, auf der saemtliche charakteristischen Punkte (Hoch-, Tief- oder Wendepunkte) einer Funktionenschar fuer alle reellen Parameterwerte k liegen.
+
 `Klausur-Satz: Eine Ortskurve ist die Funktionskurve, auf der saemtliche charakteristischen Punkte (Hoch-, Tief- oder Wendepunkte) einer Funktionenschar fuer alle reellen Parameterwerte k liegen.`
 
 ## Schritt 2 — entdecken: Der Werkzeugkasten fuer Scharkurven
-PRETRAINING术语盒（核心4词，先读三遍中德，合书自测中文→德语）：
+PRETRAINING术语盒（核心4词，先读三遍中德，合书自测中文->德语）：
 
 - 函数族 / 曲线族 — Funktionenschar ($f_k(x)$): 包含一个或多个自由实数参数 $k$ 的函数表达式，每一个具体的参数数值对应坐标系中一条确定的单曲线。 Eine Familie unendlich vieler Funktionsgraphen, die durch einen gemeinsamen Funktionsterm mit variablem Formparameter $k$ definiert werden.
 - 形态参数 — Formparameter ($k \in \mathbb{R}$): 在求导运算中作为常数处理、但可自由取值的参数，决定了图象的拉伸、平移或开口方向。 Eine Groesse, die bei der Differentiation wie eine feste Zahl behandelt wird, aber die Gestalt der Kurve steuert.
@@ -62,11 +74,20 @@ Algorithmus zur Bestimmung einer Ortskurve:
 
 [Werkzeug: lego]
 
-AUFGABE (untersuchen & bestimmen, AFB I/II):
+AUFGABE (untersuchen & bestimmen, [AFB I/II]):
 Gegeben ist die Funktionenschar $f_k(x) = -\frac{1}{k} x^2 + 4x - k$ fuer $k > 0$.
 1. Untersuche die Schar auf lokale Extrempunkte in Abhaengigkeit von $k$ und weise deren Art nach.
 2. Bestimme die Gleichung der Ortskurve aller Hochpunkte.
 3. Berechne die gemeinsamen Punkte aller Kurven der Schar (falls vorhanden).
+
+HILFE：
+- 从结构维度切入，先明确本步先求什么量（Zielgroesse: Ortskurve),再选工具：用Ortskurve判定对象归属，用Funktionskurve组织步骤顺序。
+- 从定理维度切入，用Funktionskurve与Faktorregel的适用条件选择公式：先写条件，再代入；untersuchen-Aufgaben verlangen erst die Verfahrenswahl (untersuchen oder Nachweis), dann die Rechnung.
+- 从验证维度切入，用定义域/单调性/量级做方向对照，判断结果是否合理。不给出具体分点、函数值、和值与归属结论。
+
+COMPLETION (Lückentext):
+- 中文说明：根据MUSTERLÖSUNG补全关键数值，不回看上文。
+- Ergaenze: $f_k'(x) = ___$ und $f_k''(x) = ___$, und es gilt $Kontrolle = ___$.
 
 MUSTERLOESUNG:
 1. Ableitungen und Extrempunkte:
@@ -113,21 +134,29 @@ Lasse den Parameter $k$ bis zum Schluss als symbolische Variable stehen! Wenn du
 
 PRUEFUNGSSZENARIO (KLP NRW Mathematik LK Inhaltsfeld 1: Analysis):
 
-### AFB I: Ableitung mit Ketten- und Produktregel
+### [AFB I]: Ableitung mit Ketten- und Produktregel
 Gegeben ist die Schar $g_k(t) = 10 \cdot t \cdot e^{-k \cdot t}$ fuer $t \ge 0$ und $k > 0$ (Konzentration eines Wirkstoffs im Blut).
 Bestimme die erste Ableitung $g_k'(t)$ mithilfe der Produkt- und Kettenregel.
 
-### AFB II: Maximum und Ortskurve
+### [AFB II]: Maximum und Ortskurve
 Berechne den Zeitpunkt $t_{\text{max}}$ der maximalen Wirkstoffkonzentration sowie die maximale Konzentration in Abhaengigkeit von $k$.
 Ermittle die Gleichung der Ortskurve aller Maxima.
 
-### AFB III: Interpretation im pharmakologischen Kontext
+### [AFB III]: Interpretation im pharmakologischen Kontext
 Der Parameter $k$ beschreibt die individuelle Stoffwechselrate eines Patienten (schneller vs. langsamer Metabolisierer).
 Interpretiere die Gleichung der Ortskurve aus medizinischer Sicht: Wie haengen Spitzenkonzentration und Wirkungszeitpunkt zusammen?
 
 ## Schritt 7 — check: Format-Check & Scoring
 
 30 XP Schnelltest zur Verstaendigungssicherung:
+
+AUFGABE (untersuchen, [AFB III]): Untersuche erstens den Ansatz mit Ortskurve, zweitens die Rechnung mit Funktionskurve und drittens die Deutung mit Faktorregel zum Fall: 30 XP Schnelltest zur Verstaendigungssicherung:. 中文说明：三问分别对应 Ansatz、Rechnung 与 Deutung。
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Ansatz mit Ortskurve und untersuchen-Wahl (Analysis: Funktionenscharen und Bestimmu) [AFB I] | 5 NP | Skizze mit beschrifteten Achsen als Alternativweg
+Rechnung mit Funktionskurve und Bedingungspruefung [AFB II] | 5 NP | Numerische Kontrolle mit Taschenrechner als Alternativweg
+Deutung mit Faktorregel plus Einheit/Randkontrolle [AFB III] | 5 NP | Geometrische Deutung der Konvergenz als Alternativweg
 
 FRAGE: Was muss man bei der Bestimmung des Definitionsbereichs einer Ortskurve beachten?
 ANTWORT: Die Ortskurve ist nur fuer diejenigen x-Werte gueltig, die sich aus dem zulaessigen Wertebereich des Scharparameters k ergeben (z. B. wenn k > 0 gilt und x = 2k ist, gilt die Ortskurve nur fuer x > 0).
@@ -137,6 +166,13 @@ ANTWORT: Man setzt fk(x) = fm(x) fuer zwei verschiedene Parameter k ungleich m u
 
 `Klausur-Satz: Die differenzierte Reflexion erfordert eine stringente Verknuepfung von theoretischem Kriterienkatalog und konkretem Klausurmaterial.`
 
+> MUSTER-KLAUSURSATZ (15 NP): Die differenzierte Reflexion erfordert eine stringente Verknuepfung von theoretischem Kriterienkatalog und konkretem Klausurmaterial.
+
+KERNSATZ (auswendig):
+- Kernsatz: `Die differenzierte Reflexion erfordert eine stringente Verknuepfung von theoretischem Kriterienkatalog und konkretem Klausurmaterial.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = Die differenzierte Reflexion erfordert | Mechanismus = eine stringente Verknuepfung von theoretischem Kriterienkatalog | Urteil = und konkretem Klausurmaterial.
+- Selbsttest: Die differenzierte Reflexion erfordert eine stringente Verknuepfung von theoretischem ___ und konkretem Klausurmaterial.
 ## Schritt 8 — reflexion: Meisterschaft & Naechste Mission
 
 REFLEXION:

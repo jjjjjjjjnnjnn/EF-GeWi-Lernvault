@@ -8,7 +8,7 @@ operatoren: [darstellen, berechnen, erlaeutern]
 klausurrelevant: true
 datum: 2026-09-26
 tags: [EF, Mathe, CN]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: CN-Formeln dreisprachig diktieren und rechnen (L1, Ziel Klausur)
@@ -20,13 +20,25 @@ ZIELE (drei messbare Ziele dieser Lektion):
 
 1. Du kannst Potenzregel $(x^n)' = n x^{n-1}$, Vieta $x_1+x_2 = -b/a$, AM-GM fuer $a,b > 0$, $|\vec{a}|$ und Laplace $P =$ guenstig durch moeglich je mit Bedingung nennen.
 2. Du kannst jede Merkregel in Bedingungssatz plus Anwendungssatz uebersetzen und $h'(1) = 12$ sowie Vieta $4$ und $5$ vorrechnen.
-3. Du kannst ohne Hilfsmittel Ableitung, Nullstellenprobe, Betrag und $P(E)$ bestimmen und jede Formel nur unter ihrer Bedingung einsetzen (AFB I/II).
+3. Du kannst ohne Hilfsmittel Ableitung, Nullstellenprobe, Betrag und $P(E)$ bestimmen und jede Formel nur unter ihrer Bedingung einsetzen ([AFB I/II]).
 
 ###
 
 ### Hook / Phaenomen
 
 Hook / Phaenomen: Fuenf Formeln, fuenf Fallen: Ohne **Bedingung** ist jede Formel ein Blindflug. Die **Potenzregel** versagt an Wurzeln, **AM-GM** versagt an negativen Zahlen, **Vieta** versagt an kubischen Gleichungen. Teil A ohne Formelsammlung belohnt nur, wer Formel plus Bedingung diktieren kann.
+
+预测 [Option A]：Der grobe Schaetzwert aus wenigen Teilwerten genuegt bereits, weitere Verfeinerung aendert nichts。若选A，你在Step 2用工具检验该方向的变化。
+
+预测 [Option B]：Erst fortgesetzte Verfeinerung laesst den Schaetzwert gegen den exakten Wert laufen。若选B，你在Step 2用工具检验该方向的变化。
+
+AUFLÖSUNG (nach der Wahl lesen)
+
+以下解析在选择后阅读，含原两项机制分析全文：
+- Mechanismus A：Hook / Phaenomen: Fuenf Formeln, fuenf Fallen: Ohne **Bedingung** ist jede Formel ein Blindflug.
+- Mechanismus B：Die **Potenzregel** versagt an Wurzeln, **AM-GM** versagt an negativen Zahlen, **Vieta** versagt an kubischen Gleichungen.
+
+本质一句话：Jede Formel gilt nur unter ihrer Bedingung; ohne Bedingungspruefung gibt es keine Punkte.
 
 `Klausur-Satz: Jede Formel gilt nur unter ihrer Bedingung; ohne Bedingungspruefung gibt es keine Punkte.`
 
@@ -91,12 +103,16 @@ BEISPIEL (Sandbox Level mit Werkzeug):
 
 [Werkzeug: formula]
 
-Stelle in der Sandbox (formula) die Formel und das Tempo ein, ziehe den Slider Tempo von langsam bis Pruefungstempo und lies die Anzeige ab; AUFGABE (Levelziel, AFB II): Bestehe das Diktat Level: Diktiere in der Sandbox $h'(x)$ und die Vieta Probe in zwei Tempi und berechne dann $h'(1)$ sowie die Loesungen von $x^2-9x+20 = 0$ schriftlich.
+Stelle in der Sandbox (formula) die Formel und das Tempo ein, ziehe den Slider Tempo von langsam bis Pruefungstempo und lies die Anzeige ab; AUFGABE (Levelziel, [AFB II]): Bestehe das Diktat Level: Diktiere in der Sandbox $h'(x)$ und die Vieta Probe in zwei Tempi und berechne dann $h'(1)$ sowie die Loesungen von $x^2-9x+20 = 0$ schriftlich.
 
-HILFE:
-1. Wende die Potenzregel gliedweise auf $h(x) = 5x^3-2x^2+x$ an zu $h'(x) = 15x^2-4x+1$.
-2. Setze $x = 1$ ein zu $h'(1) = 15-4+1 = 12$.
-3. Pruefe $x^2-9x+20 = 0$ mit Summe $9$ und Produkt $20$ zu $4$ und $5$.
+HILFE：
+- 从结构维度切入，先明确本步先求什么量（Zielgroesse: Potenzregel),再选工具：用Potenzregel判定对象归属，用Merkregel组织步骤顺序。
+- 从定理维度切入，用Merkregel与Bedingungssatz的适用条件选择公式：先写条件，再代入；darstellen-Aufgaben verlangen erst die Verfahrenswahl (darstellen oder Nachweis), dann die Rechnung.
+- 从验证维度切入，用定义域/单调性/量级做方向对照，判断结果是否合理。不给出具体分点、函数值、和值与归属结论。
+
+COMPLETION (Lückentext):
+- 中文说明：根据MUSTERLÖSUNG补全关键数值，不回看上文。
+- Ergaenze: $h'(x) = ___$ und $h'(1) = ___$, und es gilt $Kontrolle = ___$.
 
 MUSTERLOESUNG: Sandbox Diktat in zwei Tempi fehlerfrei. Rechnung $h'(x) = 5 \cdot 3x^2-2 \cdot 2x+1 = 15x^2-4x+1$ und $h'(1) = 15-4+1 = 12$. Gleichung $x^2-9x+20 = 0$ mit Vieta Summe $4+5 = 9$ und Produkt $4 \cdot 5 = 20$ bestaetigt $x = 4$ und $x = 5$. Merkregel plus Bedingungssatz sichern die klausurtaugliche Anwendung.
 
@@ -141,11 +157,25 @@ CHECK (drei Fragen mit Antworten):
 ## Schritt 7 — szenario: Klausurtransfer: CN-Formeln dreisprachig diktieren und rechnen: Formelkeller des CAO
 ROLLE: Du bist Tutor und haeltst eine kurze Formeldiktat-Runde im EF-Kurs.
 SITUATION: Ein Mitschueler kennt die Merkregeln, kann sie aber nicht in deutsche Klausursaetze uebersetzen und schreibt im Test nur Ergebnisse ohne Bedingung. Erklaere ihm in einer zusammenhaengenden Darstellung (circa 150 Woerter) an zwei Beispielen (Potenzregel und AM-GM), wie man eine Formel mit Bedingungssatz klausurtauglich aufschreibt.
-AUFGABE (erlaeutern, AFB III): Verfasse eine zusammenhaengende Darstellung von etwa 150 Woertern mit Prinzip, zwei Beispielen und Fazit.
+AUFGABE (darstellen, [AFB III]): Stelle dar Verfasse eine zusammenhaengende Darstellung von etwa 150 Woertern mit Prinzip, zwei Beispielen und Fazit.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Ansatz mit Potenzregel und darstellen-Wahl (CN-Formeln dreisprachig diktieren und re) [AFB I] | 5 NP | Skizze mit beschrifteten Achsen als Alternativweg
+Rechnung mit Merkregel und Bedingungspruefung [AFB II] | 5 NP | Numerische Kontrolle mit Taschenrechner als Alternativweg
+Deutung mit Bedingungssatz plus Einheit/Randkontrolle [AFB III] | 5 NP | Geometrische Deutung der Konvergenz als Alternativweg
+
 RUBRIC (30 XP): Erklaerung des Drei-Bausteine-Prinzips (Merkregel, Bedingung, Anwendung) (5 XP) | Korrektes Beispiel zur Potenzregel mit Anwendungssatz (10 XP) | Korrektes Beispiel zu AM-GM mit Positivitaetsbedingung und Gleichheitsfall (10 XP) | Fazit zum Verhaeltnis von Heuristik und Beweispflicht (5 XP).
 
 `Klausur-Satz: Wer Merkregel, Bedingungssatz und Anwendung an Potenzregel und AM-GM zeigt, schreibt klausurtauglich und erhaelt die volle Punktzahl.`
 
+> MUSTER-KLAUSURSATZ (15 NP): Formeln sind Werkzeuge mit Zulassung: Erst die Bedingung pruefen, dann rechnen.
+
+KERNSATZ (auswendig):
+- Kernsatz: `Formeln sind Werkzeuge mit Zulassung: Erst die Bedingung pruefen, dann rechnen.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = Formeln sind Werkzeuge mit Zulassung | Mechanismus = Erst die Bedingung pruefen | Urteil = dann rechnen.
+- Selbsttest: Formeln sind ___ mit Zulassung: Erst die Bedingung pruefen, dann rechnen.
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Formelkeller des CAO
 TAKEAWAY (Kernbotschaft in einem Kasten):
 

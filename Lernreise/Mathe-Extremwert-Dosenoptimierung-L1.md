@@ -8,7 +8,7 @@ operatoren: [modellieren, berechnen, bestimmen, interpretieren]
 klausurrelevant: true
 datum: 2026-10-03
 tags: [EF, Mathe, Analysis, Extremwert]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Extremwertprobleme: Die optimale Dose (L1, Ziel Klausur)
@@ -20,7 +20,7 @@ ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
 1. 中文：能清晰熟练掌握最值应用题的标准四步法（Hauptbedingung 目标函数 $\to$ Nebenbedingung 约束条件 $\to$ Zielfunktion 单变量函数 $\to$ 导数极值判定与定义域端点检验）。
 2. 中文：能为固定容积 $V$ 的圆柱体饮料罐建立表面积函数 $A(r)$，并手算出材料最小化的惊人结论：高度必等于直径（$h = 2r$）。
-3. 中文：能用二阶导数符号判定（Hinreichende Bedingung）和实际现实考量解释理论最优值与市售商品外观的差异（AFB II/III）。
+3. 中文：能用二阶导数符号判定（Hinreichende Bedingung）和实际现实考量解释理论最优值与市售商品外观的差异（[AFB II/III]）。
 
 ### Hook / Phaenomen
 
@@ -28,10 +28,22 @@ ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
 Hook / Phaenomen: Coca-Cola, Red Bull und Co. verkaufen jaehrlich Milliarden Getraenkedosen. Wuerde man die Oberflaeche einer Standarddose um nur 2 Millimeter reduzieren, sparte die Industrie hunderte Tonnen Aluminium pro Jahr. Doch wie findet man die mathematisch sparsamste Form fuer genau 330 Milliliter Inhalt? Ein Extremwertproblem par excellence, das uns direkt in den Maschinenraum der Differentialrechnung fuehrt!
 
+预测 [Option A]：Der grobe Zielfunktionswert aus wenigen Teilwerten genuegt bereits, weitere Verfeinerung aendert nichts。若选A，你在Step 2用工具检验该方向的变化。
+
+预测 [Option B]：Erst fortgesetzte Verfeinerung laesst den Zielfunktionswert gegen den exakten Wert laufen。若选B，你在Step 2用工具检验该方向的变化。
+
+AUFLÖSUNG (nach der Wahl lesen)
+
+以下解析在选择后阅读，含原两项机制分析全文：
+- Mechanismus A：每年全球要消耗 3000 亿个铝制饮料罐。如果每个罐子所用的铝箔面积能减少哪怕 2%，就能少排放几百万吨二氧化碳！但什么样的圆柱体，才能在装满 330 毫升汽水的同时，用最少最薄的材料包住它？ Hook / Phaenomen: Coca-Cola, Red Bull und Co.
+- Mechanismus B：verkaufen jaehrlich Milliarden Getraenkedosen.
+
+本质一句话：Extremwertprobleme mit Nebenbedingungen werden geloest, indem die Nebenbedingung nach einer Variablen aufgeloest und in die Hauptbedingung zur Zielfunktion substituiert wird.
+
 `Klausur-Satz: Extremwertprobleme mit Nebenbedingungen werden geloest, indem die Nebenbedingung nach einer Variablen aufgeloest und in die Hauptbedingung zur Zielfunktion substituiert wird.`
 
 ## Schritt 2 — entdecken: Ausruestungskiste der Optimierung
-PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
+PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文->德语，Evidenz：pretraining降认知负荷）：
 
 中文在上，德语在下：
 
@@ -99,12 +111,16 @@ BEISPIEL（正确例题示范，含教具操作与解答）：
 
 [Werkzeug: box-optimizer]
 
-AUFGABE (modellieren & berechnen, AFB II)：Ein Getraenkehersteller moechte eine zylinderfoermige Dose mit einem Fassungsvermoegen von $V = 330\text{ cm}^3$ herstellen. Bestimmen Sie den Radius $r$ und die Hoehe $h$ so, dass der Blechverbrauch minimal wird. Berechnen Sie die minimale Oberflaeche.
+AUFGABE (modellieren & berechnen, [AFB II])：Ein Getraenkehersteller moechte eine zylinderfoermige Dose mit einem Fassungsvermoegen von $V = 330\text{ cm}^3$ herstellen. Bestimmen Sie den Radius $r$ und die Hoehe $h$ so, dass der Blechverbrauch minimal wird. Berechnen Sie die minimale Oberflaeche.
 
-HILFE:
-1. Schritt 1: Zielfunktion $A(r) = 2\pi r^2 + 660 / r$ mit $D = (0; \infty)$ aufstellen.
-2. Schritt 2: Ableitung $A'(r) = 4\pi r - 660 / r^2 = 0$ nach $r$ aufloesen.
-3. Schritt 3: Hinreichende Bedingung ueber $A''(r)$ pruefen und $h$ sowie $A_{\min}$ berechnen.
+HILFE：
+- 从结构维度切入，先明确本步先求什么量（Zielgroesse: Hauptbedingung),再选工具：用Hauptbedingung判定对象归属，用Nebenbedingung组织步骤顺序。
+- 从定理维度切入，用Nebenbedingung与Oberflaechenformel的适用条件选择公式：先写条件，再代入；modellieren-Aufgaben verlangen erst die Verfahrenswahl (modellieren oder Nachweis), dann die Rechnung.
+- 从验证维度切入，用定义域/单调性/量级做方向对照，判断结果是否合理。不给出具体分点、函数值、和值与归属结论。
+
+COMPLETION (Lückentext):
+- 中文说明：根据MUSTERLÖSUNG补全关键数值，不回看上文。
+- Ergaenze: $V = ___$ und $h = ___$, und es gilt $Kontrolle = ___$.
 
 MUSTERLÖSUNG:
 1. Zielfunktion: Aus $V = \pi r^2 h = 330$ folgt $h = 330 / (\pi r^2)$. Eingesetzt in die Oberflaechenformel:
@@ -140,24 +156,32 @@ Bei Potenzen wie $1/r$ immer Methode A (zweite Ableitung) waehlen, da $1/r^3$ fu
 PRÜFUNGSSZENARIO (KLP NRW Mathe EF / Abitur Analysis):
 
 Ein Quader mit quadratischer Grundflaeche (Seitenlaenge $x$) und Hoehe $y$ soll als oben offene Paket-Schachtel aus Pappe gefaltet werden. Das Volumen der Schachtel muss genau $V = 4000\text{ cm}^3$ betragen.
-AUFGABE (bestimmen & interpretieren, AFB II/III):
+AUFGABE (bestimmen & interpretieren, [AFB II/III]):
 1. Bestimmen Sie die Abmessungen $x$ und $y$, fuer die der Pappenverbrauch minimal wird. (16 BE)
 2. Vergleichen Sie das Verhaeltnis von Grundseite zu Hoehe ($x : y$) mit dem Ergebnis des geschlossenen Zylinders. (14 BE)
 
 ERWARTUNGSHORIZONT:
-- AFB II:
+- [AFB II]:
   - Hauptbedingung (oben offen!): $A(x, y) = x^2 + 4xy$.
   - Nebenbedingung: $V = x^2 \cdot y = 4000 \implies y = 4000 / x^2$.
   - Zielfunktion: $A(x) = x^2 + 4x(4000/x^2) = x^2 + 16000 / x$ mit $x > 0$.
   - Ableitungen: $A'(x) = 2x - 16000 / x^2 = 0 \implies 2x^3 = 16000 \implies x^3 = 8000 \implies x = 20\text{ cm}$.
   - Hinreichende Bedingung: $A''(x) = 2 + 32000 / x^3$; $A''(20) = 2 + 32000 / 8000 = 6 > 0 \implies$ Minimum.
   - Hoehe: $y = 4000 / 20^2 = 4000 / 400 = 10\text{ cm}$.
-- AFB III:
+- [AFB III]:
   - Verhaeltnis: $x = 2y$ bzw. $y = 0{,}5x$. Die Hoehe ist genau halb so gross wie die Grundseite.
   - Vergleich: Waehrend beim geschlossenen Zylinder $h = d$ gilt (Hoehe gleich Breite), fuehrt das Fehlen des Deckels dazu, dass der Boden ($x^2$) gegenueber den vier Seitenwaenden relativ teurer wird; die Schachtel wird flacher.
 
 ## Schritt 7 — check: Format-Check & Scoring
 30 XP Schnelltest zur Verstaendigungssicherung:
+
+AUFGABE (modellieren, [AFB III]): Modelliere erstens den Ansatz mit Hauptbedingung, zweitens die Rechnung mit Nebenbedingung und drittens die Deutung mit Oberflaechenformel zum Fall: 30 XP Schnelltest zur Verstaendigungssicherung:. 中文说明：三问分别对应 Ansatz、Rechnung 与 Deutung。
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Ansatz mit Hauptbedingung und modellieren-Wahl (Extremwertprobleme: Die optimale Dose) [AFB I] | 5 NP | Skizze mit beschrifteten Achsen als Alternativweg
+Rechnung mit Nebenbedingung und Bedingungspruefung [AFB II] | 5 NP | Numerische Kontrolle mit Taschenrechner als Alternativweg
+Deutung mit Oberflaechenformel plus Einheit/Randkontrolle [AFB III] | 5 NP | Geometrische Deutung der Konvergenz als Alternativweg
 
 FRAGE: Welches Verhaeltnis von Hoehe $h$ zu Radius $r$ minimiert die Oberflaeche einer geschlossenen zylindrischen Dose?
 ANTWORT: $h = 2r$ (die Hoehe muss genau gleich dem Durchmesser sein).
@@ -168,6 +192,13 @@ ANTWORT: Das Aufloesen der Nebenbedingung nach einer Variablen und Einsetzen in 
 FRAGE: Warum muss bei Extremwertaufgaben in der Klausur zwingend der Definitionsbereich (z.B. $r > 0$) angegeben und geprueft werden?
 ANTWORT: Um Randextrema (z.B. Verhalten fuer $r \to 0$ oder $r \to \infty$) auszuschliessen und die physikalische Sinnhaftigkeit sicherzustellen.
 
+> MUSTER-KLAUSURSATZ (15 NP): Extremwertprobleme mit Nebenbedingungen werden geloest, indem die Nebenbedingung nach einer Variablen aufgeloest und in die Hauptbedingung zur Zielfunktion substituiert wird.
+
+KERNSATZ (auswendig):
+- Kernsatz: `Extremwertprobleme mit Nebenbedingungen werden geloest, indem die Nebenbedingung nach einer Variablen aufgeloest und in die Hauptbedingung zur Zielfunktion substituiert wird.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = Extremwertprobleme mit Nebenbedingungen werden | Mechanismus = geloest, indem die Nebenbedingung nach einer Variablen aufgeloest und in die Hauptbedingung zur | Urteil = Zielfunktion substituiert wird.
+- Selbsttest: Extremwertprobleme mit Nebenbedingungen werden geloest, indem die Nebenbedingung nach einer Variablen aufgeloest und in die ___ zur Zielfunktion substituiert wird.
 ## Schritt 8 — reflexion: Meisterschaft & Naechste Mission
 REFLEXION:
 Du beherrschst nun das Kronjuwel der Analysis in der Einfuehrungsphase: Extremwertprobleme mit Nebenbedingungen. Du hast gelernt, abstrakte Geometrie und Differentialrechnung zu verbinden, um reale industrielle Optimierungsprobleme zu knacken.

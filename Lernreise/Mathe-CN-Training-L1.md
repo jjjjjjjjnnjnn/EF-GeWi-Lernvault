@@ -8,7 +8,7 @@ operatoren: [berechnen, bestimmen, begruenden]
 klausurrelevant: true
 datum: 2026-09-25
 tags: [EF, Mathe, CN]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: CN-Training — vier Aufgaben unter Zeitdruck (L1, Ziel Klausur)
@@ -20,7 +20,7 @@ ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
 1. 中文：能在 60 分钟内限时完成四道自编题——求导加切线、向量与直线、概率树形图、均值求极值。
 2. 中文：能按 EHZ 采分点给自己的解答逐项打分，区分"算错"与"概念错"。
-3. 中文：能为每题写出 Ansatz、Rechnung、Antwortsatz 三段式，确保拿到呈现分（AFB II/III）。
+3. 中文：能为每题写出 Ansatz、Rechnung、Antwortsatz 三段式，确保拿到呈现分（[AFB II/III]）。
 
 ### Hook / Phaenomen
 
@@ -28,10 +28,22 @@ ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
 Hook / Phaenomen: Vier Sprachen, ein Kurs: Die **Tangente** spricht Analysis, der **Richtungsvektor** spricht Geometrie, das **Baumdiagramm** spricht Stochastik. Wer alles mit einer Methode angeht, scheitert dreimal. Der **Erwartungshorizont** verraet, welche Sprache pro Aufgabe zaehlt.
 
+预测 [Option A]：Der grobe Schaetzwert aus wenigen Teilwerten genuegt bereits, weitere Verfeinerung aendert nichts。若选A，你在Step 2用工具检验该方向的变化。
+
+预测 [Option B]：Erst fortgesetzte Verfeinerung laesst den Schaetzwert gegen den exakten Wert laufen。若选B，你在Step 2用工具检验该方向的变化。
+
+AUFLÖSUNG (nach der Wahl lesen)
+
+以下解析在选择后阅读，含原两项机制分析全文：
+- Mechanismus A：切线、向量、树图、期望：四种题型四种语言，用一把钥匙开四把锁必错三道，先认语言再动手。 Hook / Phaenomen: Vier Sprachen, ein Kurs: Die **Tangente** spricht Analysis, der **Richtungsvektor** spricht Geometrie, das **Baumdiagramm** spricht Stochastik.
+- Mechanismus B：Wer alles mit einer Methode angeht, scheitert dreimal.
+
+本质一句话：Die Aufgabe bestimmt die Sprache: Tangente, Gerade, Baum oder Extremum verlangen je eigenes Werkzeug.
+
 `Klausur-Satz: Die Aufgabe bestimmt die Sprache: Tangente, Gerade, Baum oder Extremum verlangen je eigenes Werkzeug.`
 
 ## Schritt 2 — entdecken: Ausruestungskiste der Algorithmus-Unit
-PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
+PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文->德语，Evidenz：pretraining降认知负荷）：
 
 中文在上，德语在下：
 
@@ -78,12 +90,16 @@ BEISPIEL（正确例题示范，含教具操作与解答）：
 
 [Werkzeug: formula]
 
-AUFGABE (berechnen, AFB II)：Aufgabe 1 (6 BE). Gegeben ist f(x) = x^3 - 4x^2 + 5x + 1. a) Berechnen Sie f'(x). b) Bestimmen Sie die Tangente an f bei x0 = 2.
+AUFGABE (berechnen, [AFB II])：Aufgabe 1 (6 BE). Gegeben ist f(x) = x^3 - 4x^2 + 5x + 1. a) Berechnen Sie f'(x). b) Bestimmen Sie die Tangente an f bei x0 = 2.
 
-HILFE:
-1. Schritt 1: f'(x) gliedweise mit der Potenzregel bilden.
-2. Schritt 2: f(2) und f'(2) auswerten (Punkt und Steigung).
-3. Schritt 3: Beides in die Punkt-Steigungs-Form t(x) = f(x0) + f'(x0) * (x - x0) einsetzen.
+HILFE：
+- 从结构维度切入，先明确本步先求什么量（Zielgroesse: Richtungsvektor),再选工具：用Richtungsvektor判定对象归属，用Pfadprodukt组织步骤顺序。
+- 从定理维度切入，用Pfadprodukt与Ansatz的适用条件选择公式：先写条件，再代入；berechnen-Aufgaben verlangen erst die Verfahrenswahl (berechnen oder Nachweis), dann die Rechnung.
+- 从验证维度切入，用定义域/单调性/量级做方向对照，判断结果是否合理。不给出具体分点、函数值、和值与归属结论。
+
+COMPLETION (Lückentext):
+- 中文说明：根据MUSTERLÖSUNG补全关键数值，不回看上文。
+- Ergaenze: $Richtungsvektor = ___$ und $Pfadprodukt = ___$, und es gilt $Kontrolle = ___$.
 
 MUSTERLÖSUNG: a) Mit der Potenzregel gilt f'(x) = 3x^2 - 8x + 5. b) Es ist f(2) = 8 - 16 + 10 + 1 = 3 und f'(2) = 12 - 16 + 5 = 1. Damit lautet die Tangente t(x) = 3 + 1 * (x - 2) = x + 1. Die Tangente beruehrt den Graphen im Punkt (2 | 3) mit der Steigung 1.
 
@@ -155,10 +171,25 @@ CHECK检索默写（自测 3 题，与答案配对）：
 ## Schritt 7 — szenario: Klausurtransfer: CN-Training: vier Aufgaben unter Zeitdruck: Audit der Kennzahlen
 ROLLE: Du bist Lerncoach und wertest die Ergebnisse des 60-Minuten-Trainings aus.
 SITUATION: Ein Schueler hat alle vier Aufgaben bearbeitet, aber bei Aufgabe 2 nur den Vektor angegeben, bei Aufgabe 3 die zweite Wahrscheinlichkeit als 4/7 geschrieben und bei Aufgabe 4 das Ergebnis ohne Gleichheitsbedingung gelassen. Beurteile seine Leistung in einer zusammenhaengenden Darstellung (ca. 150 Woerter), ordne die Fehler nach EHZ-Punkten ein und unterscheide Rechenfehler von Konzeptfehlern.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Ansatz mit Richtungsvektor und berechnen-Wahl (CN-Training: vier Aufgaben unter Zeitdru) [AFB I] | 5 NP | Skizze mit beschrifteten Achsen als Alternativweg
+Rechnung mit Pfadprodukt und Bedingungspruefung [AFB II] | 5 NP | Numerische Kontrolle mit Taschenrechner als Alternativweg
+Deutung mit Ansatz plus Einheit/Randkontrolle [AFB III] | 5 NP | Geometrische Deutung der Konvergenz als Alternativweg
+
 RUBRIC (30 XP): Zuordnung der Fehler zu den EHZ-Punkten (5 XP) | Analyse Aufgabe 2: fehlender Nachweis der Laenge und Punktprobe (10 XP) | Analyse Aufgabe 3 und 4: Konzeptfehler ohne Zuruecklegen bzw. fehlende Gleichheitsbedingung (10 XP) | Kriteriengeleitetes Fazit mit Lernempfehlung (5 XP).
 
+AUFGABE (berechnen, [AFB III]): Berechne erstens den Ansatz mit Richtungsvektor, zweitens die Rechnung mit Pfadprodukt und drittens die Deutung mit Ansatz zum Fall: RUBRIC (30 XP): Zuordnung der Fehler zu den EHZ-Punkten (5 XP) | Analyse Aufgabe 2: fehlender Nachweis der Laenge und Punktprobe (10 XP) | A. 中文说明：三问分别对应 Ansatz、Rechnung 与 Deutung。
 `Klausur-Satz: Wer Aufgabentyp, passendes Werkzeug und Erwartungshorizont je Teilschritt nennt und vorrechnet, sichert alle Teilpunkte.`
 
+> MUSTER-KLAUSURSATZ (15 NP): Training heisst Uebersetzen: Alltagssprache wird erst durch das richtige Verfahren zu Klausursprache.
+
+KERNSATZ (auswendig):
+- Kernsatz: `Training heisst Uebersetzen: Alltagssprache wird erst durch das richtige Verfahren zu Klausursprache.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = Training heisst Uebersetzen | Mechanismus = Alltagssprache wird erst durch das richtige | Urteil = Verfahren zu Klausursprache.
+- Selbsttest: Training heisst Uebersetzen: ___ wird erst durch das richtige Verfahren zu Klausursprache.
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Audit der Kennzahlen
 TAKEAWAY 1盒（核心总结）：
 

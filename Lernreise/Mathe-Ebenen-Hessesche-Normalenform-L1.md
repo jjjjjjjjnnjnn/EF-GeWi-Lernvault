@@ -8,7 +8,7 @@ operatoren: [herleiten, berechnen, beurteilen]
 klausurrelevant: true
 datum: 2026-10-03
 tags: [EF, Mathe, Analytische-Geometrie, Ebenengleichung, Normalenform, Hessesche-Normalenform, Abstandsrechnung]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Analytische Geometrie: Ebenengleichungen und die Hessesche Normalenform (L1, Ziel Klausur)
@@ -20,7 +20,7 @@ ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
 1. 中文：能熟练实现平面方程的三大形态转换：参数式（Parameterform）、法线式（Normalenform）与笛卡尔坐标式（Koordinatenform: $n_1 x_1 + n_2 x_2 + n_3 x_3 = c$）。
 2. 中文：能完整推导黑塞标准式（Hessesche Normalenform, HNF: $\frac{(\vec{x} - \vec{p}) \cdot \vec{n}}{|\vec{n}|} = 0$）并通过单位法向量（$\vec{n}_0$）建立点到平面的极速测距算法。
-3. 中文：能在空间几何工程题（AFB I/II/III）中结合实际场景（隧道挖掘贯通、山体斜坡坍塌安全距离、太阳能帆板垂线投影）完成严谨的无误差距离与法向分析。
+3. 中文：能在空间几何工程题（[AFB I/II/III]）中结合实际场景（隧道挖掘贯通、山体斜坡坍塌安全距离、太阳能帆板垂线投影）完成严谨的无误差距离与法向分析。
 
 ### Hook / Phaenomen
 
@@ -28,10 +28,22 @@ ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
 Hook / Phaenomen: Ein Erkundungs-U-Boot taucht in der Tiefsee. Vor ihm ragt eine gewaltige, schraege Felswand auf. Das Sonar beschreibt die Wand als mathematische Ebene im Raum: $E: 2x_1 - x_2 + 2x_3 = 18$. Das U-Boot selbst befindet sich am Punkt $P(10 | 8 | 5)$. Wie nah ist das Boot dem toedlichen Aufprall? Im dreidimensionalen Raum versagt jedes Augenmass klaeglich — schraege Ebenen taeuschen das Gehirn radikal. Doch der Mathematiker Ludwig Otto Hesse fand 1865 ein geniales Werkzeug: Indem man den Normalenvektor der Ebene auf die Laenge 1 normiert, verwandelt sich die Ebenengleichung in ein mathematisches Praezisionslineal — die **Hessesche Normalenform (HNF)**. Einsetzen der Punktkoordinaten genuegt, und der exakte kuerzeste Abstand poppt in Sekundenschnelle auf!
 
+预测 [Option A]：Der grobe Abstandswert aus wenigen Teilwerten genuegt bereits, weitere Verfeinerung aendert nichts。若选A，你在Step 2用工具检验该方向的变化。
+
+预测 [Option B]：Erst fortgesetzte Verfeinerung laesst den Abstandswert gegen den exakten Wert laufen。若选B，你在Step 2用工具检验该方向的变化。
+
+AUFLÖSUNG (nach der Wahl lesen)
+
+以下解析在选择后阅读，含原两项机制分析全文：
+- Mechanismus A：一艘深海科研潜水艇在漆黑的大西洋深渊巡航。艇载高频声呐显示前方是一面巨大的倾斜海底断层岩壁，其空间平面方程被计算机算力标定为 $2x_1 - 3x_2 + 6x_3 = 84$；潜水艇当前坐标位于点 $P(12 | -4 | 2)$。在浑浊的海水中，潜艇驾驶员必须在 3 秒钟内判断：潜艇与这面巨大的斜向岩壁之间的“最近垂直致命距离”究竟是多少米？如果你用初中尺规作图，在三维立体的无限倾斜面面前根本无从下手。德国数学家路德维希·奥托·黑塞（Ludwig Otto Hesse）在 19 世纪发明了一种神级公式：只要把法向量的长度强行压缩为 1，任意一点坐标往
+- Mechanismus B：Vor ihm ragt eine gewaltige, schraege Felswand auf.
+
+本质一句话：Die Hessesche Normalenform normiert den Normalenvektor einer Ebene auf den Betrag 1, wodurch das Einsetzen eines beliebigen Raumpunktes unmittelbar dessen vorzeichenbehafteten Orthogonalabstand liefert.
+
 `Klausur-Satz: Die Hessesche Normalenform normiert den Normalenvektor einer Ebene auf den Betrag 1, wodurch das Einsetzen eines beliebigen Raumpunktes unmittelbar dessen vorzeichenbehafteten Orthogonalabstand liefert.`
 
 ## Schritt 2 — entdecken: Ausruestungskiste der Ebenen-Unit
-PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
+PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文->德语，Evidenz：pretraining降认知负荷）：
 
 中文在上，德语在下：
 
@@ -91,19 +103,21 @@ BEISPIEL（正确例题示范，含教具操作与解答）：
 
 [Werkzeug: lego]
 
-AUFGABE (herleiten & berechnen, AFB I/II)：
+AUFGABE (herleiten & berechnen, [AFB I/II])：
 Ein ziviles Forschungs-U-Boot befindet sich an der Position $P(14 | -6 | 8)$ (Einheit in Dekametern: $1\text{ Dm} = 10\text{ m}$).
 Das Sonar erfasst eine schraege Felswand, die durch die Ebene $E$ modelliert wird:
 $$E: 2x_1 + 3x_2 - 6x_3 = -20$$
 1. Stellen Sie die Hessesche Normalenform (HNF) der Ebene $E$ auf. (10 BE)
 2. Berechnen Sie den kuerzesten Abstand $d$ des U-Boots zur Felswand in Metern und pruefen Sie, ob der vorgeschriebene Sicherheitsabstand von $100\text{ m}$ ($10\text{ Dm}$) unterschritten wird. (20 BE)
 
-HILFE:
-1. Schritt 1: Normalenvektor ablesen: $\vec{n} = \begin{pmatrix} 2 \\ 3 \\ -6 \end{pmatrix}$.
-2. Schritt 2: Betrag des Normalenvektors berechnen: $|\vec{n}| = \sqrt{2^2 + 3^2 + (-6)^2} = \sqrt{4 + 9 + 36} = \sqrt{49} = 7$.
-3. Schritt 3: HNF aufstellen: $\frac{2x_1 + 3x_2 - 6x_3 + 20}{7} = 0$.
-4. Schritt 4: Punkt $P(14 | -6 | 8)$ in den Zaehler einsetzen, Betrag nehmen und durch 7 teilen.
-5. Schritt 5: Ergebnis mit 10 m multiplizieren und mit 100 m vergleichen.
+HILFE：
+- 从结构维度切入，先明确本步先求什么量（Zielgroesse: Normalenform),再选工具：用Normalenform判定对象归属，用Ebenengleichung组织步骤顺序。
+- 从定理维度切入，用Ebenengleichung与Hessesche-Normalenform的适用条件选择公式：先写条件，再代入；herleiten-Aufgaben verlangen erst die Verfahrenswahl (herleiten oder Nachweis), dann die Rechnung.
+- 从验证维度切入，用定义域/单调性/量级做方向对照，判断结果是否合理。不给出具体分点、函数值、和值与归属结论。
+
+COMPLETION (Lückentext):
+- 中文说明：根据MUSTERLÖSUNG补全关键数值，不回看上文。
+- Ergaenze: $2x_1 + 3x_2 - 6x_3 + 20 = ___$ und $\vec{n} = ___$, und es gilt $Kontrolle = ___$.
 
 MUSTERLÖSUNG:
 1. Aufstellen der Hesseschen Normalenform (HNF):
@@ -157,16 +171,16 @@ Oberhalb des Gebirges verlaeuft ein Berghang, der durch die Ebene $E$ beschriebe
 $$E: x_1 - 2x_2 + 2x_3 = 10$$
 (Alle Koordinatenangaben in 100 Metern).
 
-AUFGABE (berechnen & beurteilen, AFB II/III):
+AUFGABE (berechnen & beurteilen, [AFB II/III]):
 1. Pruefen Sie rechnerisch, ob die Bohrtrasse der Tunnelbohrmaschine parallel zum Berghang verlaeuft. (12 BE)
 2. Berechnen Sie den senkrechten Sicherheitsabstand des Tunnels zum Hang und beurteilen Sie, ob Einsturzgefahr droht (Mindestueberdeckung: 200 m). (18 BE)
 
 ERWARTUNGSHORIZONT:
-- AFB II:
+- [AFB II]:
   - Zur Pruefung auf Parallelitaet pruefen wir das Skalarprodukt aus dem Richtungsvektor der Bohrung $\vec{v} = \begin{pmatrix} 4 \\ 2 \\ 1 \end{pmatrix}$ und dem Normalenvektor der Hangebene $\vec{n} = \begin{pmatrix} 1 \\ -2 \\ 2 \end{pmatrix}$:
     $$\vec{v} \cdot \vec{n} = 4 \cdot 1 + 2 \cdot (-2) + 1 \cdot 2 = 4 - 4 + 2 = 2 \neq 0$$
   - **Ergebnis**: Da das Skalarprodukt nicht Null ist ($\vec{v} \cdot \vec{n} \neq 0$), steht der Richtungsvektor nicht orthogonal auf dem Normalenvektor. Folglich verlaeuft die Bohrtrasse **nicht parallel** zum Hang, sondern schneidet die Ebene des Berghangs in einem Punkt!
-- AFB III:
+- [AFB III]:
   - Bestimmung des Durchstossungspunktes (Schnittpunkt von Gerade und Ebene):
     $$(4t) - 2(2t) + 2(-5 + t) = 10$$
     $$4t - 4t - 10 + 2t = 10 \iff 2t - 10 = 10 \iff 2t = 20 \iff t = 10$$
@@ -175,6 +189,14 @@ ERWARTUNGSHORIZONT:
 
 ## Schritt 7 — check: Format-Check & Scoring
 30 XP Schnelltest zur Verstaendigungssicherung:
+
+AUFGABE (herleiten, [AFB III]): Leite her erstens den Ansatz mit Normalenform, zweitens die Rechnung mit Ebenengleichung und drittens die Deutung mit Hessesche-Normalenform zum Fall: 30 XP Schnelltest zur Verstaendigungssicherung:. 中文说明：三问分别对应 Ansatz、Rechnung 与 Deutung。
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Ansatz mit Normalenform und herleiten-Wahl (Analytische Geometrie: Ebenengleichungen) [AFB I] | 5 NP | Skizze mit beschrifteten Achsen als Alternativweg
+Rechnung mit Ebenengleichung und Bedingungspruefung [AFB II] | 5 NP | Numerische Kontrolle mit Taschenrechner als Alternativweg
+Deutung mit Hessesche-Normalenform plus Einheit/Randkontrolle [AFB III] | 5 NP | Geometrische Deutung der Konvergenz als Alternativweg
 
 FRAGE: Welche geometrische Laenge besitzt der Normalenvektor $\vec{n}_0$ in der Hesseschen Normalenform?
 ANTWORT: Exakt die Laenge Eins ($|\vec{n}_0| = 1$, Einheitsnormalenvektor).
@@ -185,6 +207,13 @@ ANTWORT: Man dividiert die gesamte Gleichung durch die euklidische Laenge des No
 FRAGE: Welches Rechenverfahren eignet sich besser, wenn man den exakten Schnittpunkt des Lots mit der Ebene (den Lotfusspunkt) benoetigt?
 ANTWORT: Das Lotgeraden-Verfahren (Aufstellen einer Geraden mit dem Normalenvektor als Richtungsvektor).
 
+> MUSTER-KLAUSURSATZ (15 NP): Das Skalarprodukt des Verbindungsvektors $\vec{PQ}$ mit dem Einheitsnormalenvektor $\vec{n}_0$ projiziert den Raumvektor exakt auf die Richtung des orthogonalen Lots.
+
+KERNSATZ (auswendig):
+- Kernsatz: `Das Skalarprodukt des Verbindungsvektors $\vec{PQ}$ mit dem Einheitsnormalenvektor $\vec{n}_0$ projiziert den Raumvektor exakt auf die Richtung des orthogonalen Lots.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = Das Skalarprodukt des Verbindungsvektors | Mechanismus = $\vec{PQ}$ mit dem Einheitsnormalenvektor $\vec{n}_0$ projiziert den Raumvektor exakt auf die Richtung | Urteil = des orthogonalen Lots.
+- Selbsttest: Das Skalarprodukt des Verbindungsvektors $\vec{PQ}$ mit dem ___ $\vec{n}_0$ projiziert den Raumvektor exakt auf die Richtung des orthogonalen Lots.
 ## Schritt 8 — reflexion: Meisterschaft & Naechste Mission
 REFLEXION:
 Du hast eines der praezisesten Werkzeuge der gesamten Vektorgeometrie gemeistert. Du kannst Abstaende im 3D-Raum in Sekundenschnelle berechnen, Normalenformen umwandeln und komplexe geometrische Praxisszenarien im Abitur souveraen loesen.

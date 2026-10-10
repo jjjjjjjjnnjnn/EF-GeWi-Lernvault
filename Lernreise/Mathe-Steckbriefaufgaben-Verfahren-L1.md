@@ -8,7 +8,7 @@ operatoren: [bestimmen, aufstellen, loesen]
 klausurrelevant: true
 datum: 2026-09-25
 tags: [EF, Mathe, Analysis]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Steckbriefaufgaben — Bedingungen in Gleichungen (L1, Ziel Klausur)
@@ -20,7 +20,7 @@ ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
 1. 中文：能根据几何条件数量，正确设出多项式的一般式——三次设 4 个系数、四次轴对称只设偶次项。
 2. 中文：能把"过某点、切线斜率、极值、拐点"等几何语言准确翻译成代数方程（`f(x0)=y0`、`f'(x0)=m`、`f''(x0)=0`）。
-3. 中文：能列出线性方程组、用消元法解出全部系数，并回代原条件做验算（AFB II）。
+3. 中文：能列出线性方程组、用消元法解出全部系数，并回代原条件做验算（[AFB II]）。
 
 ### Hook / Phaenomen
 
@@ -28,10 +28,22 @@ ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
 Hook / Phaenomen: Gesucht ist eine Funktion, gegeben sind Spuren: Punkte, Extrema, Wendepunkte. Der **allgemeine Ansatz** rahmt die Suche, jede **Bedingungsuebersetzung** liefert eine Gleichung. **Extrem-** und **Wendebedingung** sind dabei nur Sonderfaelle derselben Uebersetzungskunst.
 
+预测 [Option A]：Der grobe Parameterwert aus wenigen Teilwerten genuegt bereits, weitere Verfeinerung aendert nichts。若选A，你在Step 2用工具检验该方向的变化。
+
+预测 [Option B]：Erst fortgesetzte Verfeinerung laesst den Parameterwert gegen den exakten Wert laufen。若选B，你在Step 2用工具检验该方向的变化。
+
+AUFLÖSUNG (nach der Wahl lesen)
+
+以下解析在选择后阅读，含原两项机制分析全文：
+- Mechanismus A：求函数只给线索：点、极值、拐点各藏一方程，一般设式先框定范围，条件逐条译成方程组，解出来再验算。 Hook / Phaenomen: Gesucht ist eine Funktion, gegeben sind Spuren: Punkte, Extrema, Wendepunkte.
+- Mechanismus B：Der **allgemeine Ansatz** rahmt die Suche, jede **Bedingungsuebersetzung** liefert eine Gleichung.
+
+本质一句话：Steckbriefe werden uebersetzt, nicht geraten: Jede Eigenschaft liefert genau eine Gleichung ans System.
+
 `Klausur-Satz: Steckbriefe werden uebersetzt, nicht geraten: Jede Eigenschaft liefert genau eine Gleichung ans System.`
 
 ## Schritt 2 — entdecken: Ausruestungskiste der Algorithmus-Unit
-PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
+PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文->德语，Evidenz：pretraining降认知负荷）：
 
 中文在上，德语在下：
 
@@ -79,12 +91,16 @@ BEISPIEL（正确例题示范，含教具操作与解答）：
 
 [Werkzeug: formula]
 
-AUFGABE (bestimmen, AFB II)：Gesucht ist der Funktionsterm einer ganzrationalen Funktion dritten Grades, deren Graph die y-Achse bei y = 4 schneidet, an der Stelle x = 0 die Tangentensteigung -6 besitzt, an der Stelle x = 1 einen Wendepunkt hat und an der Stelle x = 1 eine Nullstelle besitzt.
+AUFGABE (bestimmen, [AFB II])：Gesucht ist der Funktionsterm einer ganzrationalen Funktion dritten Grades, deren Graph die y-Achse bei y = 4 schneidet, an der Stelle x = 0 die Tangentensteigung -6 besitzt, an der Stelle x = 1 einen Wendepunkt hat und an der Stelle x = 1 eine Nullstelle besitzt.
 
-HILFE:
-1. Schritt 1: Ansatz f(x) = ax^3 + bx^2 + cx + d aufstellen sowie f' und f'' berechnen.
-2. Schritt 2: Aus jeder der vier Eigenschaften eine Gleichung ableiten.
-3. Schritt 3: Das LGS loesen und den Funktionsterm mit einer Probe kontrollieren.
+HILFE：
+- 从结构维度切入，先明确本步先求什么量（Zielgroesse: Ansatz),再选工具：用Ansatz判定对象归属，用Wendebedingung组织步骤顺序。
+- 从定理维度切入，用Wendebedingung与Loesungsverfahren的适用条件选择公式：先写条件，再代入；bestimmen-Aufgaben verlangen erst die Verfahrenswahl (bestimmen oder Nachweis), dann die Rechnung.
+- 从验证维度切入，用定义域/单调性/量级做方向对照，判断结果是否合理。不给出具体分点、函数值、和值与归属结论。
+
+COMPLETION (Lückentext):
+- 中文说明：根据MUSTERLÖSUNG补全关键数值，不回看上文。
+- Ergaenze: $Ansatz = ___$ und $Wendebedingung = ___$, und es gilt $Kontrolle = ___$.
 
 MUSTERLÖSUNG: Ansatz: f(x) = ax^3 + bx^2 + cx + d, f'(x) = 3ax^2 + 2bx + c, f''(x) = 6ax + 2b. Bedingungen: (I) y-Achsenabschnitt f(0) = 4 ergibt d = 4. (II) Tangentensteigung f'(0) = -6 ergibt c = -6. (III) Wendepunkt f''(1) = 0 ergibt 6a + 2b = 0, also b = -3a. (IV) Nullstelle f(1) = 0 ergibt a + b + c + d = 0. Mit c = -6 und d = 4 folgt aus (IV) a + b - 2 = 0, also a + b = 2. Einsetzen von b = -3a liefert a - 3a = 2, also -2a = 2 und damit a = -1 sowie b = 3. Ergebnis: f(x) = -x^3 + 3x^2 - 6x + 4. Probe: f(0) = 4, f'(x) = -3x^2 + 6x - 6 mit f'(0) = -6, f''(x) = -6x + 6 mit f''(1) = 0 und f(1) = -1 + 3 - 6 + 4 = 0. Alle Bedingungen sind erfuellt.
 
@@ -132,10 +148,25 @@ CHECK检索默写（自测 3 题，与答案配对）：
 ## Schritt 7 — szenario: Klausurtransfer: Steckbriefaufgaben: Bedingungen in Gleichungen: ZKE-Generalprobe I
 ROLLE: Du bist Mitarbeiter in einem Ingenieurbuero und sollst ein Brueckenprofil modellieren.
 SITUATION: Das Profil eines Brueckenbogens soll naeherungsweise durch eine ganzrationale Funktion dritten Grades beschrieben werden. Bekannt sind: Der Bogen beginnt im Ursprung mit waagerechter Tangente, erreicht an der Stelle x = 4 seinen hoechsten Punkt und hat dort eine Hoehe von 16 Metern. Bestimme den Funktionsterm und erlaeutere in einer zusammenhaengenden Darstellung (ca. 150 Woerter) dein Vorgehen.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Ansatz mit Ansatz und bestimmen-Wahl (Steckbriefaufgaben: Bedingungen in Gleic) [AFB I] | 5 NP | Skizze mit beschrifteten Achsen als Alternativweg
+Rechnung mit Wendebedingung und Bedingungspruefung [AFB II] | 5 NP | Numerische Kontrolle mit Taschenrechner als Alternativweg
+Deutung mit Loesungsverfahren plus Einheit/Randkontrolle [AFB III] | 5 NP | Geometrische Deutung der Konvergenz als Alternativweg
+
 RUBRIC (30 XP): Korrekter Ansatz f(x) = ax^3 + bx^2 + cx + d (5 XP) | Uebersetzung der Bedingungen (f(0) = 0, f'(0) = 0, f(4) = 16, f'(4) = 0) (10 XP) | Loesung des LGS mit Ergebnis (10 XP) | Probe und Antwortsatz im Sachzusammenhang (5 XP).
 
+AUFGABE (bestimmen, [AFB III]): Bestimme erstens den Ansatz mit Ansatz, zweitens die Rechnung mit Wendebedingung und drittens die Deutung mit Loesungsverfahren zum Fall: RUBRIC (30 XP): Korrekter Ansatz f(x) = ax^3 + bx^2 + cx + d (5 XP) | Uebersetzung der Bedingungen (f(0) = 0, f'(0) = 0, f(4) = 16, f'(4) = . 中文说明：三问分别对应 Ansatz、Rechnung 与 Deutung。
 `Klausur-Satz: Wer Ansatz, Uebersetzungen, Loesungsweg und Kontrolle zeigt, erhaelt die volle Punktzahl.`
 
+> MUSTER-KLAUSURSATZ (15 NP): Wer Ansatz, Uebersetzungen, Loesungsweg und Kontrolle zeigt, erhaelt die volle Punktzahl.
+
+KERNSATZ (auswendig):
+- Kernsatz: `Wer Ansatz, Uebersetzungen, Loesungsweg und Kontrolle zeigt, erhaelt die volle Punktzahl.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = Wer Ansatz, Uebersetzungen, Loesungsweg | Mechanismus = und Kontrolle zeigt, erhaelt | Urteil = die volle Punktzahl.
+- Selbsttest: Wer ___, Uebersetzungen, Loesungsweg und Kontrolle zeigt, erhaelt die volle Punktzahl.
 ## Schritt 8 — reflexion: Takeaway & Reflexion: ZKE-Generalprobe I
 TAKEAWAY 1盒（核心总结）：
 

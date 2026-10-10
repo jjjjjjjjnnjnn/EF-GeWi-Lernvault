@@ -8,7 +8,7 @@ operatoren: [herleiten, berechnen, beurteilen]
 klausurrelevant: true
 datum: 2026-10-03
 tags: [EF, Mathe, Stochastik, Bernoulli-Kette, Binomialkoeffizient, Binomialverteilung, Wahrscheinlichkeitsrechnung]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Stochastik: Bernoulli-Ketten, Binomialkoeffizient und Binomialverteilung (L1, Ziel Klausur)
@@ -20,7 +20,7 @@ ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
 1. 中文：能说清伯努利试验（Bernoulli-Experiment）与伯努利链（Bernoulli-Kette）的严格数学定义（二元结果、概率独立不变）。
 2. 中文：能透彻推导二项式系数组合公式（Binomialkoeffizient: $\binom{n}{k} = \frac{n!}{k!(n-k)!}$）与伯努利概率分布公式（Formel von Bernoulli: $B(n,p,k) = \binom{n}{k} \cdot p^k \cdot (1-p)^{n-k}$）。
-3. 中文：能在离散型随机变量实考大题（AFB I/II/III）中秒杀期望值（$\mu = n \cdot p$）、方差（$\sigma^2$）与累积分布概率（kumulierte Wahrscheinlichkeiten: "mindestens", "hoechstens", "genau"）。
+3. 中文：能在离散型随机变量实考大题（[AFB I/II/III]）中秒杀期望值（$\mu = n \cdot p$）、方差（$\sigma^2$）与累积分布概率（kumulierte Wahrscheinlichkeiten: "mindestens", "hoechstens", "genau"）。
 
 ### Hook / Phaenomen
 
@@ -28,10 +28,22 @@ ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
 Hook / Phaenomen: Wirfst du eine Muenze 3 Mal, hat dein Baumdiagramm handliche 8 Pfade. Wirfst du sie jedoch 100 Mal, explodiert die Anzahl der Pfade auf unvorstellbare $2^{100} \approx 1,26 \times 10^{30}$ Aeste — mehr als alle Sandkoerner der Erde! Wolltest du die Wahrscheinlichkeit fuer "genau 50 Mal Kopf" durch blosses Baumzeichnen ermitteln, wuerde die Tinte deines Stiftes bis zum Ende des Universums nicht reichen! Der Basler Mathematiker Jakob Bernoulli fand 1713 einen genialen Ausweg: Statt jeden Ast einzeln abzugehen, erkannte er das symmetrische Prinzip der Kombinatorik: Der **Binomialkoeffizient $\binom{n}{k}$** zaehlt alle Pfade mit exakt $k$ Treffern in Bruchteilen einer Sekunde ab. Mit der **Formel von Bernoulli** wird die Stochastik von der unendlichen Fleissarbeit zur hoechsten mathematischen Eleganz.
 
+预测 [Option A]：Der grobe Trefferwert aus wenigen Teilwerten genuegt bereits, weitere Verfeinerung aendert nichts。若选A，你在Step 2用工具检验该方向的变化。
+
+预测 [Option B]：Erst fortgesetzte Verfeinerung laesst den Trefferwert gegen den exakten Wert laufen。若选B，你在Step 2用工具检验该方向的变化。
+
+AUFLÖSUNG (nach der Wahl lesen)
+
+以下解析在选择后阅读，含原两项机制分析全文：
+- Mechanismus A：你现在手中有一枚质地均匀的硬币，抛出正面的概率是准确的 $p = 0,5$。如果只抛 3 次，你可以轻松在草稿纸上画出一棵拥有 $2^3 = 8$ 条分叉的概率树状图，一眼就能数出“恰好出现 2 次正面”的概率是 $\frac{3}{8}$。但如果全班 30 名同学每人抛一次硬币，或者一家制药公司在临床试验中给 100 名重症患者测试治愈率为 $80\%$ 的新药呢？要想画出 100 次试验的完整树状图，树枝的总分叉数量将高达 $2^{100} \approx 1,26 \times 10^{30}$ 条——这比全宇宙所有沙滩上的沙子总数还要多出一万亿倍
+- Mechanismus B：Wirfst du sie jedoch 100 Mal, explodiert die Anzahl der Pfade auf unvorstellbare $2^{100} \approx 1,26 \times 10^{30}$ Aeste — mehr als alle Sandkoerner der Erde!
+
+本质一句话：Eine n-stufige Bernoulli-Kette modelliert ein Zufallsexperiment mit exakt zwei komplementaeren Ausgaengen unter konstanter Erfolgswahrscheinlichkeit p, wobei die Binomialverteilung $B(n,p,k)$ die Trefferwahrscheinlichkeit analytisch bestimmt.
+
 `Klausur-Satz: Eine n-stufige Bernoulli-Kette modelliert ein Zufallsexperiment mit exakt zwei komplementaeren Ausgaengen unter konstanter Erfolgswahrscheinlichkeit p, wobei die Binomialverteilung $B(n,p,k)$ die Trefferwahrscheinlichkeit analytisch bestimmt.`
 
 ## Schritt 2 — entdecken: Ausruestungskiste der Stochastik-Unit
-PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
+PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文->德语，Evidenz：pretraining降认知负荷）：
 
 中文在上，德语在下：
 
@@ -88,7 +100,7 @@ BEISPIEL（正确例题示范，含教具操作与解答）：
 
 [Werkzeug: lego]
 
-AUFGABE (berechnen & beurteilen, AFB I/II)：
+AUFGABE (berechnen & beurteilen, [AFB I/II])：
 Ein Smartphone-Hersteller produziert OLED-Displays. Erfahrungsgemaess weisen $5\%$ der produzierten Displays Pixelfehler auf ($p = 0,05$). Eine Qualitaetspruefung entnimmt einer Grossserie zufaellig $n = 50$ Displays (stichprobenartig, mit Zuruecklegen modellierbar).
 Die Zufallsgroesse $X$ beschreibt die Anzahl der defekten Displays.
 1. Begruenden Sie, warum $X$ als binomialverteilt modelliert werden kann, und berechnen Sie den Erwartungswert $\mu$ sowie die Standardabweichung $\sigma$. (10 BE)
@@ -97,12 +109,14 @@ Die Zufallsgroesse $X$ beschreibt die Anzahl der defekten Displays.
    - Ereignis B: "Hoechstens 3 Displays sind defekt."
    - Ereignis C: "Mindestens 2 Displays sind defekt." (20 BE)
 
-HILFE:
-1. Schritt 1: Modellierung begruenden: Nur zwei Ausgaenge (defekt / intakt), konstantes $p = 0,05$, unabhaengige Entnahmen.
-2. Schritt 2: Kennzahlen: $\mu = n \cdot p = 50 \cdot 0,05 = 2,5$. $\sigma = \sqrt{n \cdot p \cdot (1-p)} = \sqrt{50 \cdot 0,05 \cdot 0,95} = \sqrt{2,375} \approx 1,541$.
-3. Schritt 3: Ereignis A: $P(X = 2) = \binom{50}{2} \cdot 0,05^2 \cdot 0,95^{48}$.
-4. Schritt 4: Ereignis B: $P(X \le 3) = P(X=0) + P(X=1) + P(X=2) + P(X=3)$.
-5. Schritt 5: Ereignis C: $P(X \ge 2) = 1 - P(X \le 1) = 1 - (P(X=0) + P(X=1))$.
+HILFE：
+- 从结构维度切入，先明确本步先求什么量（Zielgroesse: Binomialverteilung),再选工具：用Binomialverteilung判定对象归属，用Wolltest组织步骤顺序。
+- 从定理维度切入，用Wolltest与Laplace-Bedingung的适用条件选择公式：先写条件，再代入；herleiten-Aufgaben verlangen erst die Verfahrenswahl (herleiten oder Nachweis), dann die Rechnung.
+- 从验证维度切入，用定义域/单调性/量级做方向对照，判断结果是否合理。不给出具体分点、函数值、和值与归属结论。
+
+COMPLETION (Lückentext):
+- 中文说明：根据MUSTERLÖSUNG补全关键数值，不回看上文。
+- Ergaenze: $p = ___$ und $q = ___$, und es gilt $Kontrolle = ___$.
 
 MUSTERLÖSUNG:
 1. Modellierung und Kenngroessen:
@@ -154,14 +168,14 @@ Der Hersteller behauptet stolz: "Unsere Fehlerquote liegt bei hoechstens 5% ($H_
 Eine Verbraucherzentrale vermutet jedoch Verbrauchertaeuschung und argwoehnt, dass die Fehlerquote in Wahrheit hoeher ist ($H_1: p > 0,05$). Sie testet $n = 100$ Displays bei einem Signifikanzniveau von $\alpha = 0,05$ (5%).
 Die Entscheidungsregel lautet: Wenn die Anzahl der defekten Displays im Ablehnungsbereich $K = \{k_{\text{krit}}, \dots, 100\}$ liegt, wird die Herstellerbehauptung verworfen.
 
-AUFGABE (erklaeren & ableiten, AFB II/III):
+AUFGABE (erklaeren & ableiten, [AFB II/III]):
 1. Definieren Sie den Fehler 1. Art ($\alpha$-Fehler) im Sachzusammenhang. (10 BE)
 2. Bestimmen Sie anhand der Bedingung $P_{p=0,05}(X \ge k_{\text{krit}}) \le 0,05$ den kritischen Wert $k_{\text{krit}}$, wenn tabelliert gegeben ist:
    $P(X \le 8) = 0,9369$, $P(X \le 9) = 0,9718$, $P(X \le 10) = 0,9885$. (20 BE)
 
 ERWARTUNGSHORIZONT:
-- AFB II: Der **Fehler 1. Art ($\alpha$-Fehler)** besteht darin, dass die Nullhypothese $H_0$ ($p \le 0,05$) faelschlicherweise verworfen wird, obwohl sie in Wahrheit wahr ist. Im Sachzusammenhang: Die Verbraucherzentrale bezichtigt den Hersteller oeffentlich der Taeuschung und behauptet, die Displays seien schlechter als versprochen, obwohl die Fehlerquote in Wirklichkeit hoechstens 5% betraegt (ungerechtfertigter Rufschaden fuer den Hersteller).
-- AFB III:
+- [AFB II]: Der **Fehler 1. Art ($\alpha$-Fehler)** besteht darin, dass die Nullhypothese $H_0$ ($p \le 0,05$) faelschlicherweise verworfen wird, obwohl sie in Wahrheit wahr ist. Im Sachzusammenhang: Die Verbraucherzentrale bezichtigt den Hersteller oeffentlich der Taeuschung und behauptet, die Displays seien schlechter als versprochen, obwohl die Fehlerquote in Wirklichkeit hoechstens 5% betraegt (ungerechtfertigter Rufschaden fuer den Hersteller).
+- [AFB III]:
   - Wir suchen den kleinsten ganzzahligen Wert $k_{\text{krit}}$, fuer den gilt:
     $$P_{p=0,05}(X \ge k_{\text{krit}}) \le 0,05$$
   - Umformung auf das Gegenereignis (kumulierte Verteilung):
@@ -177,6 +191,14 @@ ERWARTUNGSHORIZONT:
 ## Schritt 7 — check: Format-Check & Scoring
 30 XP Schnelltest zur Verstaendigungssicherung:
 
+AUFGABE (herleiten, [AFB III]): Leite her erstens den Ansatz mit Binomialverteilung, zweitens die Rechnung mit Wolltest und drittens die Deutung mit Laplace-Bedingung zum Fall: 30 XP Schnelltest zur Verstaendigungssicherung:. 中文说明：三问分别对应 Ansatz、Rechnung 与 Deutung。
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Ansatz mit Binomialverteilung und herleiten-Wahl (Stochastik: Bernoulli-Ketten, Binomialko) [AFB I] | 5 NP | Skizze mit beschrifteten Achsen als Alternativweg
+Rechnung mit Wolltest und Bedingungspruefung [AFB II] | 5 NP | Numerische Kontrolle mit Taschenrechner als Alternativweg
+Deutung mit Laplace-Bedingung plus Einheit/Randkontrolle [AFB III] | 5 NP | Geometrische Deutung der Konvergenz als Alternativweg
+
 FRAGE: Welche beiden Bedingungen muessen erfuellt sein, damit ein Zufallsversuch als Bernoulli-Kette bezeichnet werden darf?
 ANTWORT: 1. Es gibt auf jeder Stufe nur genau zwei Ausgaenge (Erfolg/Misserfolg), 2. Die Trefferwahrscheinlichkeit $p$ bleibt auf allen Stufen konstant (Unabhaengigkeit).
 
@@ -186,6 +208,13 @@ ANTWORT: $\mu = n \cdot p$ (Versuchsanzahl mal Trefferwahrscheinlichkeit).
 FRAGE: Welche Formel verwendet man, um "mindestens 1 Treffer" ($P(X \ge 1)$) bei $n$ Stufen blitzschnell zu berechnen?
 ANTWORT: $P(X \ge 1) = 1 - P(X = 0) = 1 - (1-p)^n$ (Eins minus Nietenwahrscheinlichkeit hoch $n$).
 
+> MUSTER-KLAUSURSATZ (15 NP): In der 1-Sigma-Umgebung $[\mu - \sigma; \mu + \sigma]$ einer Binomialverteilung liegen bei erfuellter Laplace-Bedingung ca. 68,3 Prozent der Gesamtwahrscheinlichkeit.
+
+KERNSATZ (auswendig):
+- Kernsatz: `In der 1-Sigma-Umgebung $[\mu - \sigma; \mu + \sigma]$ einer Binomialverteilung liegen bei erfuellter Laplace-Bedingung ca. 68,3 Prozent der Gesamtwahrscheinlichkeit.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = In der 1-Sigma-Umgebung $[\mu - \sigma | Mechanismus = \mu + \sigma]$ einer Binomialverteilung liegen bei erfuellter Laplace-Bedingung ca. 68 | Urteil = 3 Prozent der Gesamtwahrscheinlichkeit.
+- Selbsttest: In der 1-Sigma-Umgebung $[\mu - \sigma; \mu + \sigma]$ einer ___ liegen bei erfuellter Laplace-Bedingung ca. 68,3 Prozent der Gesamtwahrscheinlichkeit.
 ## Schritt 8 — reflexion: Meisterschaft & Naechste Mission
 REFLEXION:
 Du hast das wichtigste Wahrscheinlichkeitsmodell der gesamten Schulmathematik gemeistert. Du kannst Bernoulli-Formeln herleiten, Summenwahrscheinlichkeiten berechnen und Hypothesentests im Abitur fehlerfrei auswerten.

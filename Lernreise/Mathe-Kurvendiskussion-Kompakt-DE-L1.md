@@ -8,7 +8,7 @@ operatoren: [untersuchen, berechnen, begruenden]
 klausurrelevant: true
 datum: 2026-09-26
 tags: [EF, Mathe, Analysis]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Monotonie und Extrempunkte kompakt (L1, Ziel Klausur)
@@ -20,13 +20,25 @@ ZIELE (drei messbare Ziele dieser Lektion):
 
 1. Du kannst das Monotoniekriterium nennen und an $f(x) = x^3 - 3x^2 + 1$ die Vorzeichentabelle von $f'(x) = 3x^2 - 6x$ aufstellen.
 2. Du kannst Kandidaten aus $f'(x_0) = 0$ zu $x = 0$ und $x = 2$ bestimmen und mit $f''(x) = 6x - 6$ zu Hoch und Tief sortieren.
-3. Du kannst Hochpunkt gegen globales Maximum abgrenzen und den Antwortsatz mit Koordinaten formulieren (AFB II).
+3. Du kannst Hochpunkt gegen globales Maximum abgrenzen und den Antwortsatz mit Koordinaten formulieren ([AFB II]).
 
 ###
 
 ### Hook / Phaenomen
 
 Hook / Phaenomen: Steigen, fallen, drehen: Der Graph erzaehlt seine Geschichte ueber die **Ableitungen**. Wo f Strich null wird, wartet ein **Extremum**; das **Vorzeichen** davor und danach verrraet Hoch oder Tief. Die **Monotonie** dazwischen folgt ohne eine einzige Wertetabelle.
+
+预测 [Option A]：Der grobe Vorzeichenwert aus wenigen Teilwerten genuegt bereits, weitere Verfeinerung aendert nichts。若选A，你在Step 2用工具检验该方向的变化。
+
+预测 [Option B]：Erst fortgesetzte Verfeinerung laesst den Vorzeichenwert gegen den exakten Wert laufen。若选B，你在Step 2用工具检验该方向的变化。
+
+AUFLÖSUNG (nach der Wahl lesen)
+
+以下解析在选择后阅读，含原两项机制分析全文：
+- Mechanismus A：Hook / Phaenomen: Steigen, fallen, drehen: Der Graph erzaehlt seine Geschichte ueber die **Ableitungen**.
+- Mechanismus B：Wo f Strich null wird, wartet ein **Extremum**; das **Vorzeichen** davor und danach verrraet Hoch oder Tief.
+
+本质一句话：Die Kurvendiskussion liest den Graphen aus seinen Ableitungen: Nullstellen von f Strich plus Vorzeichenwechsel geben Hoch und Tief.
 
 `Klausur-Satz: Die Kurvendiskussion liest den Graphen aus seinen Ableitungen: Nullstellen von f Strich plus Vorzeichenwechsel geben Hoch und Tief.`
 
@@ -92,12 +104,16 @@ BEISPIEL (Sandbox Level mit Werkzeug):
 
 [Werkzeug: formula]
 
-AUFGABE (Levelziel, AFB II): Knacke das Kurven-Level: Ziehe im Sandbox-Slider die Stelle $x$ ueber den Graphen und beobachte, wie die Tangentensteigung an zwei Stellen null wird und dazwischen das Vorzeichen wechselt. Lies beide Kandidaten ab, fuehre dann die Rechnung mit $f'=0$, Vorzeichentabelle und $f''$ vollständig durch und gib HP und TP mit Koordinaten an.
+AUFGABE (Levelziel, [AFB II]): Knacke das Kurven-Level: Ziehe im Sandbox-Slider die Stelle $x$ ueber den Graphen und beobachte, wie die Tangentensteigung an zwei Stellen null wird und dazwischen das Vorzeichen wechselt. Lies beide Kandidaten ab, fuehre dann die Rechnung mit $f'=0$, Vorzeichentabelle und $f''$ vollständig durch und gib HP und TP mit Koordinaten an.
 
-HILFE:
-1. Bilde $f'(x)$, loese $f'(x) = 0$ und lies im Sandbox-Slider beide Kandidaten sowie den Vorzeichenwechsel ab.
-2. Lege eine Vorzeichentabelle an oder berechne $f''(x_1)$ und $f''(x_2)$ zur Artbestimmung.
-3. Berechne $f(x_1)$ und $f(x_2)$ und notiere HP und TP mit vollständigen Koordinaten.
+HILFE：
+- 从结构维度切入，先明确本步先求什么量（Zielgroesse: Monotoniekriterium),再选工具：用Monotoniekriterium判定对象归属，用Antwortsatz组织步骤顺序。
+- 从定理维度切入，用Antwortsatz与Extremalbedingung的适用条件选择公式：先写条件，再代入；untersuchen-Aufgaben verlangen erst die Verfahrenswahl (untersuchen oder Nachweis), dann die Rechnung.
+- 从验证维度切入，用定义域/单调性/量级做方向对照，判断结果是否合理。不给出具体分点、函数值、和值与归属结论。
+
+COMPLETION (Lückentext):
+- 中文说明：根据MUSTERLÖSUNG补全关键数值，不回看上文。
+- Ergaenze: $x = ___$ und $f'(1) = ___$, und es gilt $Kontrolle = ___$.
 
 MUSTERLOESUNG: Sandbox zeigt Kandidaten bei $x = 1$ mit Wechsel plus nach minus und bei $x = 3$ mit Wechsel minus nach plus. Rechnung $f'(1) = 0$ mit $f''(1) < 0$ liefert HP(1|5), $f'(3) = 0$ mit $f''(3) > 0$ liefert TP(3|1). Die Vorzeichentabelle bestaetigt Maximum bei $x = 1$ und Minimum bei $x = 3$, beide Punkte sind vollständig mit y-Werten angegeben.
 
@@ -141,11 +157,25 @@ CHECK (drei Fragen mit Antworten):
 ## Schritt 7 — szenario: Klausurtransfer: Monotonie und Extrempunkte kompakt: Monotonie und Extrema
 ROLLE: Du bist Referent in einem Mathe-Crashkurs fuer die ZKE-Vorbereitung.
 SITUATION: Ein Kursteilnehmer behauptet, jede Stelle mit $f'(x_0) = 0$ sei automatisch ein Hoch- oder Tiefpunkt, und will seine Behauptung an $f(x) = x^3$ (mit $f'(0) = 0$) belegen. Bewerte seine Aussage in einer zusammenhaengenden Darstellung (circa 150 Woerter) unter Rueckgriff auf notwendige und hinreichende Bedingung.
-AUFGABE (begruenden, AFB III): Verfasse eine zusammenhaengende Darstellung von etwa 150 Woertern mit Fehlerbenennung, Gegenbeispiel, Verfahren und Fazit.
+AUFGABE (untersuchen, [AFB III]): Untersuche Verfasse eine zusammenhaengende Darstellung von etwa 150 Woertern mit Fehlerbenennung, Gegenbeispiel, Verfahren und Fazit.
+
+ERWARTUNGSHORIZONT
+Teilleistung | Punkte | Alternativweg
+Ansatz mit Monotoniekriterium und untersuchen-Wahl (Monotonie und Extrempunkte kompakt) [AFB I] | 5 NP | Skizze mit beschrifteten Achsen als Alternativweg
+Rechnung mit Antwortsatz und Bedingungspruefung [AFB II] | 5 NP | Numerische Kontrolle mit Taschenrechner als Alternativweg
+Deutung mit Extremalbedingung plus Einheit/Randkontrolle [AFB III] | 5 NP | Geometrische Deutung der Konvergenz als Alternativweg
+
 RUBRIC (30 XP): Benennung der Behauptung als Verwechslung von notwendig und hinreichend (5 XP) | Gegenbeispiel $f(x) = x^3$ mit $f'(0) = 0$, aber keinem Extremum (10 XP) | Korrekte Vorgehensweise mit $f''$- oder VZW-Kriterium (10 XP) | Fazit zum Stellenwert beider Bedingungen (5 XP).
 
 `Klausur-Satz: Wer Extrema, Wendepunkte, Monotonie und y-Werte mit Bedingungen zeigt und deutet, erhaelt die volle Punktzahl.`
 
+> MUSTER-KLAUSURSATZ (15 NP): Diskutieren heisst begruenden: Jede Behauptung braucht Ableitung plus Vorzeichen als Zeugen.
+
+KERNSATZ (auswendig):
+- Kernsatz: `Diskutieren heisst begruenden: Jede Behauptung braucht Ableitung plus Vorzeichen als Zeugen.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Aufschluesselung: Subjekt = Diskutieren heisst begruenden | Mechanismus = Jede Behauptung braucht Ableitung plus | Urteil = Vorzeichen als Zeugen.
+- Selbsttest: ___ heisst begruenden: Jede Behauptung braucht Ableitung plus Vorzeichen als Zeugen.
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Monotonie und Extrema
 TAKEAWAY (Kernbotschaft in einem Kasten):
 
