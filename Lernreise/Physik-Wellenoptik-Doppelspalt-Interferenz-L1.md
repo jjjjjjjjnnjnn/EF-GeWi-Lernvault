@@ -8,7 +8,7 @@ operatoren: [beschreiben, herleiten, berechnen]
 klausurrelevant: true
 datum: 2026-10-03
 tags: [EF, Physik, Wellenoptik, Doppelspalt, Interferenz, Beugung, Kohaerenz]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Wellenoptik: Doppelspalt-Interferenz und Beugung des Lichts (L1, Ziel Klausur)
@@ -28,8 +28,14 @@ Du verdunkelst dein Zimmer vollstaendig. An der Wand steht ein weisser Schirm. N
 
 `Klausur-Satz: Am Doppelspalt ueberlagern sich zwei koharente Elementarwellen; konstruktive Interferenz entsteht fuer Gangunterschiede von ganzzahligen Vielfachen der Wellenlaenge, waehrend ungeradzahlige halbe Wellenlaengen zu destruktiver Ausloeschung fuehren.`
 
+
+AUFLÖSUNG (nach der Wahl lesen)
+
+C1-Pruefung: Dieser Schritt enthaelt keine vorweggenommene Mechanismus-Erklaerung unter Wahloptionen; Hook und Phaenomen bleiben rein beschreibend, die Deutung folgt erst in Schritt 3.
+
+> 一句话本质: 两束光程差是波长整数倍就变亮，缝越密或波长越长，条纹分得越开。
 ## Schritt 2 — entdecken: Die Vokabelkiste der Wellenoptik
-PRETRAINING术语盒（核心4词，先读三遍中德，合书自测中文→德语）：
+PRETRAINING术语盒（核心4词，先读三遍中德，合书自测中文->德语）：
 
 - 相干光 — Kohaerenz: 两束光波具有恒定的相位差和相同的频率，是产生稳定可见干涉图样的必要前提。 Die Eigenschaft von Wellenzuegen, eine feste Phasenbeziehung zueinander und identische Frequenz aufzuweisen.
 - 光程差 — Gangunterschied ($\Delta s$): 从两个相干波源出发到达空间某一点的两条光线之间的几何路程差。 Der Laengenunterschied der optischen Wege zweier Wellen vom Spalt bis zum Beobachtungspunkt auf dem Schirm ($\Delta s = d \cdot \sin\alpha$).
@@ -72,6 +78,17 @@ Auf dem Schirm wird der Abstand zwischen dem zentralen Maximum 0. Ordnung und de
 1. Leite die Berechnungsformel fuer die Wellenlaenge $\lambda$ her.
 2. Berechne die Wellenlaenge $\lambda$ des Laserlichts in Nanometern und bestimme die Spektralfarbe.
 
+
+HILFE:
+- Richtung: Zuerst Spaltabstand $d$, Schirmabstand $a$ und Ordnung $k$ festlegen und Kleinwinkel-Naeherung pruefen.
+- Richtung: Danach Gangunterschied $\Delta s$ mit $k\lambda$ gleichsetzen und nach der gesuchten Groesse aufloesen.
+- Richtung: Erst am Ende Zahlen mit Einheiten einsetzen und $a \gg d$ als Gueltigkeit pruefen.
+
+COMPLETION (Lückentext):
+- Die Wellenlaenge ist $\lambda =$ ___ $\text{nm}$.
+- Der Streifenabstand ist $s_k =$ ___ $\text{mm}$ aus $s_k = k\lambda a/d$.
+- Die Ordnung ist $k =$ ___ .
+
 MUSTERLOESUNG:
 1. Herleitung:
    - Fuer das Maximum 3. Ordnung ($k = 3$) gilt die Interferenzbedingung:
@@ -107,6 +124,9 @@ Wird nach `Interferenz phaenomenologisch begruenden` gefragt, argumentiere immer
 
 PRUEFUNGSSZENARIO (KLP NRW Physik LK Inhaltsfeld 3: Quantenphysik und Wellenoptik):
 
+**AUFGABE (berechnen und begruenden) [AFB II/III]**:
+Berechnen Sie $\lambda$ oder $s_k$ aus einem Interferenzmuster und begruenden Sie Farb- und Spaltfolgen.
+
 ### AFB I: Begriffsklaerung
 Definiere die Begriffe Kohaerenzlaenge und Beugungsgitter und erlaeutere den Vorteil eines optischen Gitters (mit 600 Spalten/mm) gegenueber einem einfachen Doppelspalt.
 
@@ -118,6 +138,17 @@ Erklaere, warum das zentrale Maximum (0. Ordnung) rein weiss erscheint, waehrend
 Auf einer DVD betraegt der Spurabstand $1{,}6\,\mu\text{m}$ (roter Laser $\lambda = 650\,\text{nm}$), auf einer Blu-ray Disc nur $0{,}32\,\mu\text{m}$ (blauer Laser $\lambda = 405\,\text{nm}$).
 Bewerte anhand der Beugungsgrenze nach Ernst Abbe, warum kuerzere Wellenlaengen eine hoehere Speicherdichte ermoeglichen und welche Grenzen die Quantennatur des Lichts setzt.
 
+
+ERWARTUNGSHORIZONT:
+Teilleistung | Punkte | Alternativweg
+Interferenzbedingung mit Geometrie nennen | 5 NP | Herleitung ueber $\Delta s$ akzeptieren
+$\lambda$ und $s_k$ berechnen | 6 NP | Zahlenweg ueber Kleinwinkel akzeptieren
+Farbabfolge und Aufloesung deuten | 4 NP | Urteil mit Kohärenzbedingung akzeptieren
+KERNSATZ (auswendig):
+`Am Doppelspalt gilt $d \cdot s_k/a = k \cdot \lambda$, daher waechst $s_k$ mit $\lambda$ und $a$.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Doppelspalt mit $d$ und $a$ | Gangunterschied mit $k\lambda$ abgleichen | Streifen aus Geometrie
+- Selbsttest: Am Doppelspalt gilt $d \cdot s_k/a = k \cdot$ ___ , daher waechst $s_k$ mit $\lambda$ und $a$.
 ## Schritt 7 — check: Format-Check & Scoring
 
 30 XP Schnelltest zur Verstaendigungssicherung:

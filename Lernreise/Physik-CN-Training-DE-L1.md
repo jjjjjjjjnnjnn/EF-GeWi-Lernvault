@@ -8,7 +8,7 @@ operatoren: [analysieren, berechnen, beurteilen]
 klausurrelevant: true
 datum: 2026-09-25
 tags: [EF, Physik, Klausurtraining]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: CN-Training: vier Klausuraufgaben unter Zeitdruck (L1, Ziel Klausur)
@@ -28,6 +28,12 @@ Hook / Phaenomen: Vier Aufgaben, ein **Erwartungshorizont**: Diagramm, Kraft, Kr
 
 `Klausur-Satz: Der Erwartungshorizont verteilt Punkte auf Wege: Jeder Schritt braucht Gesetz, Formel und Einheit.`
 
+
+AUFLÖSUNG (nach der Wahl lesen)
+
+C1-Pruefung: Dieser Schritt enthaelt keine vorweggenommene Mechanismus-Erklaerung unter Wahloptionen; Hook und Phaenomen bleiben rein beschreibend, die Deutung folgt erst in Schritt 3.
+
+> 一句话本质: 先按题型选程序再动手，算完用另一条路回代验算，时间花在刀刃上。
 ## Schritt 2 — entdecken: Ausruestungskiste der Mars-Crew
 PRETRAINING (Kernbegriffe, erst lesen, dann abdecken und aktiv wiedergeben):
 
@@ -93,9 +99,13 @@ BEISPIEL (Sandbox Level mit Werkzeug):
 AUFGABE (Levelziel, AFB II): Schaffe den Zeitlauf: Stelle in der Sandbox (formula) die Zeit ein, ziehe den Slider Zeit von 0 bis 36 s und bestaetige Weg $336$ $m$, und berechne dann Flaeche und $v_{mittel}$ schriftlich. Wende die Ordnung auf alle vier Typen an.
 
 HILFE:
-1. Zerlege die $v$ gegen $t$ Figur in Rechtecke und Dreiecke und lies die Sandbox Flaeche $336$ ab.
-2. Summiere zu $s_{ges} = 336$ in $m$.
-3. Bilde $v_{mittel} = 336/36 \approx 9{,}3$ in $m/s$ mit Urteil.
+- Richtung: Zuerst Aufgabentyp bestimmen und das passende Verfahren (Kraft, Energie, Impuls oder Feld) festlegen.
+- Richtung: Danach Buchstabenansatz vor Zahlen stellen und Zielgroesse symbolisch isolieren.
+- Richtung: Erst am Ende Zeit budgetieren, Einheiten pruefen und per Gegenrechnung sichern.
+COMPLETION (Lückentext):
+- Das Verfahren ist ___ , weil nach ___ gefragt ist.
+- Der Ansatz lautet $Ansatz =$ ___ mit Zielgroesse ___ .
+- Die Probe erfolgt ueber ___ mit Einheit ___ .
 
 MUSTERLOESUNG: Sandbox Flaeche $336$ in $m$ bestaetigt. Rechnung Summe der Teilflaechen $s_{ges} = 336$ in $m$ aus $s = \int v dt$. Damit $v_{mittel} = s_{ges}/t_{ges} = 336/36 \approx 9{,}3$ in $m/s$. Alle vier Typen folgen derselben Ordnung Achsen und Bedingung pruefen plus Ansatz plus Ergebnis mit Einheit plus Urteil, daher unter Zeitdruck sicher.
 
@@ -143,10 +153,24 @@ CHECK (Selbsttest, 3 Fragen mit Antworten):
 ## Schritt 7 — szenario: Klausurtransfer: CN-Training: vier Klausuraufgaben unter Zeitdruck: Brennender Himmel ueber Elysium
 ROLLE: Du bist Tutor und leitest eine 45-minuetige Klausursimulation fuer eine EF-Lerngruppe.
 SITUATION: Die Gruppe bearbeitet die vier Aufgaben aus Schritt 3 unter realen Bedingungen (ca. 47 Minuten) und korrigiert danach mit EHZ selbst. Beurteile in zusammenhaengender Stellungnahme (ca. 150 Woerter), wie die Zeit sinnvoll verteilt und worauf beim Selbstkorrigieren geachtet wird.
+**AUFGABE (planen und beurteilen) [AFB II/III]**:
+Planen Sie Vorgehen und Zeitbudget fuer vier Aufgaben und beurteilen Sie die eigene Loesungsstrategie.
+
 RUBRIC (30 XP): Zeitverteilung mit Begruendung (10 XP) | Typische Verluste wie Ansatz, Einheit, Bewertung (10 XP) | Vorgehen mit EHZ (5 XP) | Fachsprachlich korrekte Darstellung (5 XP).
 
 `Klausur-Satz: Wer Loesungsweg, Teilflaechen und Transfersatz mit Einheiten zeigt, erhaelt die volle Punktzahl.`
 
+
+ERWARTUNGSHORIZONT:
+Teilleistung | Punkte | Alternativweg
+Verfahrenswahl mit Fragetyp begruenden | 5 NP | Alternative ueber Nachbarverfahren akzeptieren
+Zeitplan und Ansatz skizzieren | 6 NP | Kurzloesung mit Probe akzeptieren
+Strategie selbstkritisch beurteilen | 4 NP | Urteil mit Fehlerlog akzeptieren
+KERNSATZ (auswendig):
+`Erst Verfahren nach Fragetyp waehlen, dann Buchstabenansatz loesen, daher sichert die Gegenprobe die Punkte.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Klausursatz mit Fragetyp | Verfahren passend zum Gesuchten waehlen | Punkte durch Probe sichern
+- Selbsttest: Erst Verfahren nach Fragetyp waehlen, dann ___ loesen, daher sichert die Gegenprobe die Punkte.
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Brennender Himmel ueber Elysium
 TAKEAWAY (Kernzusammenfassung):
 

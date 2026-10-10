@@ -8,7 +8,7 @@ operatoren: [herleiten, berechnen, begruenden]
 klausurrelevant: true
 datum: 2026-09-26
 tags: [EF, Physik, Gravitation]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Gravitation und Satellitenbahnen (L1, Ziel Klausur)
@@ -30,8 +30,14 @@ Hook / Phaenomen: Der Mond faellt staendig zur Erde und trifft sie nie: **Gravit
 
 `Klausur-Satz: Gravitation haelt Bahnen: G m M durch r Quadrat gleich Zentripetalkraft bestimmt Geschwindigkeit aus Bahnradius.`
 
+
+AUFLÖSUNG (nach der Wahl lesen)
+
+C1-Pruefung: Dieser Schritt enthaelt keine vorweggenommene Mechanismus-Erklaerung unter Wahloptionen; Hook und Phaenomen bleiben rein beschreibend, die Deutung folgt erst in Schritt 3.
+
+> 一句话本质: 卫星越靠近地球飞得越快，万有引力正好提供它转弯所需的向心力。
 ## Schritt 2 — entdecken: Ausruestungskiste der Mars-Crew
-PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
+PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文->德语，Evidenz：pretraining降认知负荷）：
 
 中文在上，德语在下：
 
@@ -109,6 +115,17 @@ HILFE（中德双语步骤）：
 3. 中文：第3步推同步轨道：周期须等于一天故半径更大更慢，关键词：Folgerung。
    Schritt 3 (DE): $T = 24\,\mathrm{h}$ verlangt groesseres $r$, kleineres $v$.
 
+
+HILFE:
+- Richtung: Zuerst Zentralmasse, Bahnradius und Umlaufgroessen trennen und $F_G$ als Zentralkraft erkennen.
+- Richtung: Danach Gravitationsgesetz mit der Kreisbahnbedingung $F_G = F_z$ verknuepfen und nach der gesuchten Groesse aufloesen.
+- Richtung: Erst am Ende Zahlen mit Einheiten einsetzen und Bahnhoehe von $r$ unterscheiden.
+
+COMPLETION (Lückentext):
+- Die Bahngeschwindigkeit ist $v =$ ___ $\text{m/s}$ aus $G \cdot M / r = v^2$.
+- Die Umlaufdauer ist $T =$ ___ $\text{s}$ aus $T = 2 \cdot \pi \cdot \sqrt{r^3 / (G \cdot M)}$.
+- Die Zentripetalbedingung lautet $F_G = F_z =$ ___ .
+
 MUSTERLOESUNG：中文：400千米轨道速度约7.7千米每秒、一圈约92分钟；同步轨道要求周期一天，半径必须更大，速度反而更小，高而慢是引力定律的必然。
 
 MUSTERLOESUNG (DE): In $400\,\mathrm{km}$ Hoehe betraegt $v$ etwa $7{,}7\,\mathrm{km/s}$ bei $92$ Minuten Umlaufzeit aus $T = 2\pi r / v$. Geostationaer verlangt $T = 24\,\mathrm{h}$, also groesseres $r$ und kleineres $v$.
@@ -156,11 +173,22 @@ CHECK检索默写（自测 3 题，与答案配对）：
 ## Schritt 7 — szenario: Klausurtransfer: Gravitation und Satellitenbahnen: Impuls beim Ankoppeln
 ROLLE: Du bist Tutor im Physikkurs und erklaerst Satellitenbahnen.
 SITUATION: Eine Mitschuelerin behauptet, ein TV-Satellit koenne in $400\,\mathrm{km}$ Hoehe fest ueber Berlin stehen.
-AUFGABE: Widerlegen Sie das in ca. 150 Woertern mit Umlaufzeit-Argument und Bahnradius-Rechnung und nennen Sie die korrekte Bahn.
+AUFGABE: Widerlegen Sie das in ca. 150 Woertern mit Umlaufzeit-Argument und Bahnradius-Rechnung und nennen Sie die korrekte Bahn. [AFB III]
 RUBRIC (30 XP): LEO-Periode ca. $90\,\mathrm{min}$ berechnet (10 XP) | Widerspruch zu feststehend erklaert (10 XP) | GEO-Bedingung $T = 24\,\mathrm{h}$ plus Aequatorlage genannt (10 XP).
 
 `Klausur-Satz: Wer Gleichgewicht ansetzt, Bahngroessen berechnet und Kepler zur Kontrolle nutzt, erhaelt die volle Punktzahl.`
 
+
+ERWARTUNGSHORIZONT:
+Teilleistung | Punkte | Alternativweg
+Gravitationsgesetz als Zentralkraft nennen | 5 NP | Herleitung ueber Kepler-Gesetz akzeptieren
+$v$ und $T$ mit Einheiten berechnen | 6 NP | Zahlenweg mit $g$-Abgleich akzeptieren
+Bahnhoehe als Kompromiss beurteilen | 4 NP | Urteil mit Weltraumschrott-Risiko akzeptieren
+KERNSATZ (auswendig):
+`Auf der Kreisbahn gilt $G \cdot M / r^2 = v^2 / r$, daher folgt $v = \sqrt{G \cdot M / r}$.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Satellit auf Kreisbahn mit Radius $r$ | $F_G = F_z$ gleichsetzen | Geschwindigkeit faellt mit $r$
+- Selbsttest: Auf der Kreisbahn gilt $G \cdot M / r^2 = v^2 /$ ___ , daher folgt $v = \sqrt{G \cdot M / r}$.
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Impuls beim Ankoppeln
 TAKEAWAY 1盒（核心总结）：
 

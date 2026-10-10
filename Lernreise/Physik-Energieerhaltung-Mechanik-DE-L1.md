@@ -8,7 +8,7 @@ operatoren: [berechnen, begruenden, interpretieren, beurteilen]
 klausurrelevant: true
 datum: 2026-09-25
 tags: [EF, Physik, Mechanik]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Mechanische Energieerhaltung (L1, Ziel Klausur)
@@ -28,6 +28,12 @@ Hook / Phaenomen: Oben schnell nichts, unten alles Tempo: Die **Lageenergie** ve
 
 `Klausur-Satz: Energie geht nicht verloren, sie wechselt nur das Konto: Lage plus Bewegung plus Spannung bleiben konstant.`
 
+
+AUFLÖSUNG (nach der Wahl lesen)
+
+C1-Pruefung: Dieser Schritt enthaelt keine vorweggenommene Mechanismus-Erklaerung unter Wahloptionen; Hook und Phaenomen bleiben rein beschreibend, die Deutung folgt erst in Schritt 3.
+
+> 一句话本质: 山顶静止的势能全部变成山脚的动能，无摩擦时能量账两边相等。
 ## Schritt 2 — entdecken: Ausruestungskiste der Mars-Crew
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
@@ -93,9 +99,13 @@ BEISPIEL (Sandbox Level mit Werkzeug):
 AUFGABE (Levelziel, AFB II): Knacke das Energie-Level: Ziehe im Sandbox-Labor Starthoehe $h$ und Federspannung $s$ durch je drei Stufen und beobachte, wie Lageenergie in Tempo und Federspannung umfliesst und die Summe konstant bleibt. Lies Tempo am Fuss und Spannung am Ende ab und berechne dann exakt per Bilanz. Vergleiche Labor mit Rechnung und benenne die Reibungsrolle.
 
 HILFE:
-1. Stelle $h$ und $s$ ein und lies Tempo sowie Federspannung im Labor ab.
-2. Setze $mgh = \frac12mv^2$ und loese nach $v$, dann $\frac12mv^2 = \frac12Ds^2$ nach $s$.
-3. Gleiche mit dem Labor ab und ziehe bei Reibung die dissipierte Energie ab.
+- Richtung: Zuerst System und Nullniveau festlegen und Anfangs- und Endzustand mit Lage-, Bewegungs- und Spannenergie benennen.
+- Richtung: Danach den Erhaltungssatz $E_{\text{vor}} = E_{\text{nach}}$ waehlen und die gesuchte Groesse symbolisch isolieren.
+- Richtung: Erst am Ende Zahlen mit Einheiten einsetzen und $v$ sowie $s$ per Groessenordnung pruefen.
+COMPLETION (Lückentext):
+- Am Fuss gilt $v =$ ___ $\text{m/s}$ aus $m \cdot g \cdot h = \frac{1}{2} \cdot m \cdot v^2$.
+- Die Stauchung ist $s =$ ___ $\text{m}$ aus $m \cdot g \cdot h = \frac{1}{2} \cdot D \cdot s^2$.
+- Mit Reibung gilt $E_{\text{vor}} = E_{\text{nach}} +$ ___ .
 
 MUSTERLOESUNG: Labor zeigt Tempo am Fuss $v = 4{,}0\,m/s$ und maximale Federspannung $s = 0{,}40\,m$ bei konstanter Summe. Rechnung $v=\sqrt{2gh}=4{,}0\,m/s$ und $s$ aus $\frac12mv^2=\frac12Ds^2$ bestaetigen das Labor. Reibung wuerde als fehlende Energie in der Bilanz erscheinen und Tempo sowie Spannung senken.
 
@@ -142,10 +152,24 @@ CHECK (Selbsttest, 3 Fragen mit Antworten):
 ## Schritt 7 — szenario: Klausurtransfer: Mechanische Energieerhaltung: Energiebilanz des Abstiegs
 ROLLE: Du bist Praktikumsbetreuerin im Physikpraktikum der EF und sollst eine Halfpipe-Analyse anleiten.
 SITUATION: Ein Skateboarder ($m = 60\,\mathrm{kg}$) startet aus der Ruhe am Rand einer reibungsfreien Halfpipe ($h = 1{,}8\,\mathrm{m}$ ueber Tiefpunkt) ohne weiteren Antrieb. Beurteile in einer zusammenhaengenden Stellungnahme (ca. 150 Woerter), welche Geschwindigkeit er unten erreicht und warum Energie hier sinnvoller ist als Kraft. Nutze $g = 10\,\mathrm{m/s^2}$.
+**AUFGABE (beurteilen) [AFB III]**:
+Beurteilen Sie, welche Geschwindigkeit ein Koerper aus der Hoehe $h$ erreicht und warum der Energieansatz hier dem Kraftansatz ueberlegen ist.
+
 RUBRIC (30 XP): Bilanz $m \cdot g \cdot h = 0{,}5 \cdot m \cdot v^2$ mit Nullhoehe (5 XP) | Rechnung $v = \sqrt{2 \cdot g \cdot h} = 6{,}0\,\mathrm{m/s}$ mit Einheit (10 XP) | Begruendung der Massenunabhaengigkeit (10 XP) | Urteil zum Vorzug von Energie bei veraenderlicher Richtung ohne Zeitfrage (5 XP).
 
 `Klausur-Satz: Wer Energiebilanz aufstellt, Nullniveau waehlt, umstellt und Reibungsverluste diskutiert, erhaelt die volle Punktzahl.`
 
+
+ERWARTUNGSHORIZONT:
+Teilleistung | Punkte | Alternativweg
+Energiebilanz mit Nullniveau und beiden Zustaenden aufstellen | 5 NP | Alternativweg ueber $E_{\text{spann}}$-Term akzeptieren
+$v$ und $s$ mit Einheiten berechnen | 6 NP | Probe ueber $E_{\text{kin}}$ akzeptieren
+Unabhaengigkeit von Masse und Winkel begruenden | 4 NP | Urteil mit Reibungsvorbehalt akzeptieren
+KERNSATZ (auswendig):
+`Ohne Reibung gilt $E_{\text{vor}} = E_{\text{nach}}$, daher folgt $v = \sqrt{2 \cdot g \cdot h}$.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Reibungsfreier Vorgang mit Hoehe $h$ | Bilanz $E_{\text{vor}} = E_{\text{nach}}$ aufstellen und kuerren | Geschwindigkeit ohne Masse und ohne Winkel
+- Selbsttest: Ohne Reibung gilt ___ $= E_{\text{nach}}$, daher folgt $v = \sqrt{2 \cdot g \cdot h}$.
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Energiebilanz des Abstiegs
 TAKEAWAY (Kernzusammenfassung):
 

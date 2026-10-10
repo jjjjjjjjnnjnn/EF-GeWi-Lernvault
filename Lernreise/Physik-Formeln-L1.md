@@ -8,7 +8,7 @@ operatoren: [darstellen, berechnen, beurteilen]
 klausurrelevant: true
 datum: 2026-09-25
 tags: [EF, Physik, Formeln]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Formelhandbuch Mechanik: dreisprachig und handgerechnet (L1, Ziel Klausur)
@@ -30,8 +30,14 @@ Hook / Phaenomen: Buchstaben statt Zahlen: Wer die **Formel** erst allgemein loe
 
 `Klausur-Satz: Erst Buchstaben, dann Zahlen: Allgemein loesen, Bedingung pruefen, Einheit kontrollieren.`
 
+
+AUFLÖSUNG (nach der Wahl lesen)
+
+C1-Pruefung: Dieser Schritt enthaelt keine vorweggenommene Mechanismus-Erklaerung unter Wahloptionen; Hook und Phaenomen bleiben rein beschreibend, die Deutung folgt erst in Schritt 3.
+
+> 一句话本质: 条件定公式：先写字母式再代数字，单位跟到底，量级要合常识。
 ## Schritt 2 — entdecken: Ausruestungskiste der Mars-Crew
-PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
+PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文->德语，Evidenz：pretraining降认知负荷）：
 
 中文在上，德语在下：
 
@@ -92,9 +98,13 @@ BEISPIEL（正确例题示范，含教具操作与解答）：
 AUFGABE (berechnen, AFB II)：Ein Pkw der Masse m = 1500 kg beschleunigt aus dem Stand gleichmäßig und erreicht nach t = 10 s die Geschwindigkeit v = 20 m/s. Berechnen Sie die Beschleunigung a, die beschleunigende Kraft F, den zurückgelegten Weg s und vergleichen Sie die verrichtete Arbeit W mit der kinetischen Energie E_kin. Prüfen Sie zum Schluss die Einheiten.
 
 HILFE:
-1. Schritt 1: Ansatz für die Beschleunigung: a = Δv/Δt = v/t (Start aus der Ruhe).
-2. Schritt 2: Ansatz für die Kraft: F = m*a; Ansatz für den Weg: s = 0.5*a*t^2.
-3. Schritt 3: Ansatz für die Arbeit W = F*s und für die Energie E_kin = 0.5*m*v^2, dann vergleichen und Einheiten prüfen.
+- Richtung: Zuerst Bedingung pruefen und danach die Formel (Kraft, Energie, Impuls oder Kreis) waehlen.
+- Richtung: Danach Buchstabenansatz aufstellen und nach der Zielgroesse umstellen, ohne Zahlen zu mischen.
+- Richtung: Erst am Ende konsistente SI-Einheiten einsetzen und Groessenordnung einschaetzen.
+COMPLETION (Lückentext):
+- Die Bedingung ist ___ , daher gilt $Formel =$ ___ .
+- Umgestellt lautet $Ziel =$ ___ .
+- Mit Einheiten folgt $Wert =$ ___ .
 
 MUSTERLÖSUNG: Zuerst die Beschleunigung: a = v/t = 20 m/s / 10 s = 2,0 m/s^2. Daraus folgt nach dem zweiten Newtonschen Gesetz die Kraft F = m*a = 1500 kg * 2,0 m/s^2 = 3000 N. Der Weg ergibt sich aus s = 0.5*a*t^2 = 0.5 * 2,0 m/s^2 * (10 s)^2 = 100 m. Die beschleunigende Arbeit ist W = F*s = 3000 N * 100 m = 300000 J = 300 kJ. Zur Kontrolle die kinetische Energie: E_kin = 0.5*m*v^2 = 0.5 * 1500 kg * (20 m/s)^2 = 300000 J = 300 kJ. Beide Werte stimmen überein, was nach dem Arbeit-Energie-Zusammenhang W = ΔE_kin zu erwarten war. Einheitenprüfung: [a] = m/s^2, [F] = kg*m/s^2 = N, [s] = m, [W] = N*m = J — alle Einheiten passen, und die Größenordnung (300 kJ für eine Pkw-Beschleunigung) ist plausibel.
 
@@ -103,7 +113,7 @@ MUSTERLÖSUNG: Zuerst die Beschleunigung: a = v/t = 20 m/s / 10 s = 2,0 m/s^2. D
 ## Schritt 5 — ausprobieren: Duell der Verfahren Reibung am Kraterrand
 VERGLEICH辨别实验（双向辨析：能量眼 vs. 动量眼）：
 
-VERGLEICH: (Weg A quantitativ-rechnerisch gegen Weg B qualitativ-strukturell): Wähle erst das Verfahren — 【选程序】先读题干里的关键词：(i) Energieverfahren（关键词"光滑、无摩擦、下滑、抛起"，一个物体在不同位置的能量转换，问速度或高度 → E_pot + E_kin = const）oder (ii) Impulsverfahren（关键词"碰撞、相撞、爆炸、反冲"，多个物体相互作用前后，问碰后速度 → p_vor = p_nach）—— dann lösen.
+VERGLEICH: (Weg A quantitativ-rechnerisch gegen Weg B qualitativ-strukturell): Wähle erst das Verfahren — 【选程序】先读题干里的关键词：(i) Energieverfahren（关键词"光滑、无摩擦、下滑、抛起"，一个物体在不同位置的能量转换，问速度或高度 -> E_pot + E_kin = const）oder (ii) Impulsverfahren（关键词"碰撞、相撞、爆炸、反冲"，多个物体相互作用前后，问碰后速度 -> p_vor = p_nach）—— dann lösen.
 
 Weg A: Erst Verfahren waehlen, dann rechnen.
 
@@ -113,7 +123,7 @@ Weg B: Alternative Route mit Gegenrechnung.
 
 AUFGABE B：Zwei Wagen stoßen auf einer horizontalen, reibungsfreien Bahn zusammen und bleiben nach dem Stoß zusammen; gefragt ist ihre gemeinsame Geschwindigkeit nach dem Stoß. Welches Verfahren ist zu wählen, und warum?
 
-HILFE: A: "reibungsfrei, hinunterrollen, Geschwindigkeit gefragt" → Verfahren (i), Energieerhaltung. B: "zusammenstoßen, gemeinsame Geschwindigkeit gefragt" → Verfahren (ii), Impulserhaltung.【选程序：一个物体的位置能量转换走能量程序；两个物体相互作用前后走动量程序。】
+HILFE: A: "reibungsfrei, hinunterrollen, Geschwindigkeit gefragt" -> Verfahren (i), Energieerhaltung. B: "zusammenstoßen, gemeinsame Geschwindigkeit gefragt" -> Verfahren (ii), Impulserhaltung.【选程序：一个物体的位置能量转换走能量程序；两个物体相互作用前后走动量程序。】
 
 ANTWORT: A erfordert Verfahren (i): Da keine Reibung wirkt und nur die Geschwindigkeit am Fuß der Rampe gesucht ist, gilt die Energieerhaltung m*g*h = 0.5*m*v^2, also v = sqrt(2*g*h); der Energieansatz verknüpft nur Anfangs- und Endzustand des einen Wagens. B erfordert Verfahren (ii): Beim Zusammenstoß wirken nur innere Kräfte, der Gesamtimpuls bleibt erhalten; mit p_vor = p_nach gilt m1*v1 + m2*v2 = (m1 + m2)*v', woraus sich die gemeinsame Geschwindigkeit v' ergibt.
 
@@ -143,10 +153,24 @@ CHECK检索默写（自测 3 题，与答案配对）：
 ## Schritt 7 — szenario: Klausurtransfer: Formelhandbuch Mechanik: dreisprachig und handgerechnet: Reibung am Kraterrand
 ROLLE: Du bist Lerncoach und bereitest eine Mitschülerin auf die Formelaufgaben der Physik-Klausur vor.
 SITUATION: Die Mitschülerin kennt viele Formeln, verwechselt aber ständig, wann sie welche einsetzen soll, und schreibt oft nur das Ergebnis ohne Ansatz. Erkläre ihr in einer zusammenhängenden Stellungnahme (ca. 150 Wörter), wie man mit einer Entscheidungshilfe die richtige Formel wählt und wie ein vollständiger Lösungsweg aussieht, damit sie die Schrittpunkte erhält.
+**AUFGABE (darstellen und beurteilen) [AFB II/III]**:
+Stellen Sie einen Buchstabenansatz mit Bedingung auf und beurteilen Sie Zahl und Einheit nach Groessenordnung.
+
 RUBRIC (30 XP): Darstellung der Entscheidungsregel (Bedingung waehlt Ansatz) mit mindestens zwei Beispielen (10 XP) | Erklaerung des dreischrittigen Loesungswegs Ansatz-Einsetzen-Ergebnis (10 XP) | Hinweis auf Einheiten und Groessenordnung als Kontrolle (5 XP) | Nachvollziehbare, adressatengerechte Sprache mit Fachbegriffen (5 XP).
 
 `Klausur-Satz: Wer Buchstabenansatz, Umstellung, Zahlenrechnung und Einheitenprobe zeigt, erhaelt die volle Punktzahl.`
 
+
+ERWARTUNGSHORIZONT:
+Teilleistung | Punkte | Alternativweg
+Bedingung mit Formel nennen | 5 NP | Alternative ueber Nachbarformel akzeptieren
+Buchstabenweg mit Einheit rechnen | 6 NP | Zahlenweg mit SI-Umrechnung akzeptieren
+Groessenordnung als Urteil geben | 4 NP | Urteil mit Alltagsvergleich akzeptieren
+KERNSATZ (auswendig):
+`Die Bedingung waehlt die Formel, der Buchstabe traegt die Physik, daher prueft die Einheit den Ansatz.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Formel mit Bedingung | Ansatz in Buchstaben loesen | Zahl erst mit Einheit
+- Selbsttest: Die Bedingung waehlt die Formel, der Buchstabe traegt die Physik, daher prueft ___ den Ansatz.
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Reibung am Kraterrand
 TAKEAWAY 1盒（核心总结）：
 

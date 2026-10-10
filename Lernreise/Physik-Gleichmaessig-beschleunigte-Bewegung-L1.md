@@ -8,7 +8,7 @@ operatoren: [darstellen, berechnen, interpretieren]
 klausurrelevant: true
 datum: 2026-10-10
 tags: [EF, Physik, Mechanik]
-version: Enterprise-v4
+version: Enterprise-v5
 ---
 
 # Lernreise: Gleichmaessig beschleunigte Bewegung (L1, Ziel: Klausur)
@@ -25,9 +25,15 @@ version: Enterprise-v4
 **设问 (Leitfrage)**: 初速变为两倍时, 纯制动距离如何变化.
 
 - [Option A]: 刹车距离与初速成正比: 初速翻倍, 距离翻倍。
-  - Mechanismus A: 该直觉把刹车看成匀速运动, 认为距离只由 $v_0$ 一次方决定。它忽略了速度本身在刹车过程中持续下降, 高速段单位时间内吞掉的路程更长, 因而低估了高速的代价。
+  - Folge: 高速刹车的代价与速度增长相同, 制动痕长度只翻一倍。
 - [Option B]: 刹车距离与初速平方成正比: 初速翻倍, 距离变为四倍。
-  - Mechanismus B: 刹车是匀减速过程, 速度从 $v_0$ 线性降到 $0\text{ m/s}$。平均速度为 $\frac{v_0}{2}$, 制动时间本身也与 $v_0$ 成正比, 两者相乘得到 $s$ 与 $v_0^2$ 成正比。好比高铁刹车: 时速翻倍, 刹车痕长变为四倍, 像叠了四层刹车垫。
+  - Folge: 高速刹车的代价快于速度增长, 制动痕长度变为四倍。
+
+AUFLÖSUNG (nach der Wahl lesen)
+
+Mechanismus zu Option A: 该直觉把刹车看成匀速运动, 认为距离只由 $v_0$ 一次方决定。它忽略了速度本身在刹车过程中持续下降, 高速段单位时间内吞掉的路程更长, 因而低估了高速的代价。
+
+Mechanismus zu Option B: 刹车是匀减速过程, 速度从 $v_0$ 线性降到 $0\text{ m/s}$。平均速度为 $\frac{v_0}{2}$, 制动时间本身也与 $v_0$ 成正比, 两者相乘得到 $s$ 与 $v_0^2$ 成正比。好比高铁刹车: 时速翻倍, 刹车痕长变为四倍, 像叠了四层刹车垫。
 
 > 一句话本质: 匀减速刹车中时间与平均速度都随初速增长, 两者相乘使制动距离服从平方律。
 
@@ -51,9 +57,13 @@ AUFGABE (berechnen, AFB II):
 Gegeben sind $a = -4\text{ m/s}^2$ und $v_0 = 33\text{ m/s}$. Ein Zug bremst bis zum Stillstand. Berechnen Sie die Bremszeit $t_B$ und den reinen Bremsweg $s_B$.
 
 HILFE:
-- Schritt A: Endbedingung nutzen: bei Stillstand gilt $v = 0\text{ m/s}$. Einsetzen in $$0 = v_0 + a \cdot t_B$$ und nach $t_B$ aufloesen: $$t_B = \frac{-v_0}{a}$$
-- Schritt B: Zeit in das Weg-Zeit-Gesetz einsetzen: $$s_B = v_0 \cdot t_B + \frac{1}{2} \cdot a \cdot t_B^2$$
-- Schritt C: Einheiten konsistent in $m$, $s$ und $\text{m/s}$ halten, Vorzeichen von $a$ beachten.
+- Richtung: Zuerst mit der Endbedingung des Stillstands und dem Geschwindigkeits-Zeit-Gesetz die Bremszeit bestimmen.
+- Richtung: Danach mit dem Weg-Zeit-Gesetz aus Anfangsgeschwindigkeit, Bremszeit und Beschleunigung den reinen Bremsweg berechnen.
+- Richtung: Auf konsistente Einheiten und das Vorzeichen der Verzoegerung achten, erst am Ende Zahlen einsetzen.
+
+COMPLETION (Lückentext):
+- Die Bremszeit betraegt $t_B =$ ___ $\text{s}$.
+- Der reine Bremsweg betraegt $s_B =$ ___ $\text{m}$; der Anhalteweg ist die Summe aus Reaktionsweg und $s_B$.
 
 MUSTERLÖSUNG:
 Bremszeit: $$t_B = \frac{-33\text{ m/s}}{-4\text{ m/s}^2} = 8{,}25\text{ s}$$
@@ -104,7 +114,7 @@ $$a = \frac{\Delta v}{\Delta t}$$ 得到 $$v = v_0 + a \cdot t$$
 
 中文理解: 本题是逆向取证, 已知制动距离反推初速。思路是消去时间, 用速度位移关系 $v^2 - v_0^2 = 2 \cdot a \cdot s$ 直接求 $v_0$, 再换算成 $km/h$ 与限速对比并做出是否超速的解释。
 
-**AUFGABE (berechnen & interpretieren, AFB II/III)**:
+**AUFGABE (berechnen & interpretieren) [AFB II/III]**:
 1. Leiten Sie aus $v = v_0 + a \cdot t$ und $s = v_0 \cdot t + \frac{1}{2} \cdot a \cdot t^2$ die zeitfreie Gleichung $v^2 - v_0^2 = 2 \cdot a \cdot s$ her oder wenden Sie sie an.
 2. Berechnen Sie mit $s = 12\text{ m}$, $a = -5\text{ m/s}^2$ und $v = 0\text{ m/s}$ die Anfangsgeschwindigkeit $v_0$ in $\text{m/s}$ und in $\text{km/h}$.
 3. Interpretieren Sie das Ergebnis im Hinblick auf die zulässige Höchstgeschwindigkeit von $25\text{ km/h}$.
@@ -114,5 +124,17 @@ $$a = \frac{\Delta v}{\Delta t}$$ 得到 $$v = v_0 + a \cdot t$$
 2. Rechnung: $$0 - v_0^2 = 2 \cdot (-5\text{ m/s}^2) \cdot 12\text{ m}$$ also $$v_0^2 = 120\text{ m}^2\text{/s}^2$$ und $$v_0 = \sqrt{120}\text{ m/s} = 10{,}95\text{ m/s}$$ Umrechnung: $$v_0 = 10{,}95\text{ m/s} \cdot 3{,}6 = 39{,}4\text{ km/h}$$
 3. Interpretation: Messwert $39{,}4\text{ km/h}$ liegt deutlich über $25\text{ km/h}$, daher ist von einer erheblichen Geschwindigkeitsüberschreitung auszugehen, Reaktionsweg nicht eingerechnet.
 
+ERWARTUNGSHORIZONT:
+Teilleistung | Punkte | Alternativweg
+Ansatz: zeitfreie Gleichung aus beiden Gesetzen herleiten oder anwenden, Endbedingung nennen | 5 NP | Elimination von $t$ aus beiden Gesetzen als Herleitung akzeptieren
+Rechnung: $v_0$ in $\text{m/s}$ berechnen und in $\text{km/h}$ umrechnen | 6 NP | Rueckwaertseinsetzen in beide Gesetze als Rechenweg akzeptieren
+Interpretation: Vergleich mit $25\text{ km/h}$ und Ueberschreitungs-Urteil ohne Reaktionsweg | 4 NP | Urteil mit Messunsicherheit oder Reaktionsweg-Zusatz akzeptieren
+
 **15 NP MUSTER-KLAUSURSATZ**:
 > "Aus $v^2 - v_0^2 = 2 \cdot a \cdot s$ folgt mit $s = 12\text{ m}$ und $a = -5\text{ m/s}^2$ eine Anfangsgeschwindigkeit von $v_0 = 10{,}95\text{ m/s}$ entsprechend $39{,}4\text{ km/h}$; da dieser Wert die zulaessige Hoechstgeschwindigkeit von $25\text{ km/h}$ signifikant ueberschreitet, ist der E-Scooter nachweislich zu schnell gefahren."
+
+KERNSATZ (auswendig):
+`Mit $v=0\text{m/s}$ folgt $t_B=\frac{-v_0}{a}$ und durch Einsetzen in $s=v_0\cdot t+\frac{1}{2}\cdot a\cdot t^2$ ergibt sich der reine Bremsweg.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Endbedingung $v=0\text{m/s}$ mit $v_0$ und $a$ | Einsetzen in beide Gesetze liefert $t_B$ und $s_B$ | Reiner Bremsweg ist berechenbar, Reaktionsweg kommt hinzu
+- Selbsttest: Mit $v=0\text{m/s}$ folgt $t_B=\frac{-v_0}{a}$ und durch ___ in $s=v_0\cdot t+\frac{1}{2}\cdot a\cdot t^2$ ergibt sich der reine Bremsweg.

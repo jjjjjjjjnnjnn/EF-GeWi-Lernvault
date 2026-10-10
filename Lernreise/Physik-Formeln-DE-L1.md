@@ -8,7 +8,7 @@ operatoren: [darstellen, berechnen, beurteilen]
 klausurrelevant: true
 datum: 2026-09-25
 tags: [EF, Physik, Formeln]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Formelhandbuch Mechanik: dreisprachig und handgerechnet (L1, Ziel Klausur)
@@ -28,6 +28,12 @@ Hook / Phaenomen: Buchstaben statt Zahlen: Wer die **Formel** erst allgemein loe
 
 `Klausur-Satz: Erst Buchstaben, dann Zahlen: Allgemein loesen, Bedingung pruefen, Einheit kontrollieren.`
 
+
+AUFLÖSUNG (nach der Wahl lesen)
+
+C1-Pruefung: Dieser Schritt enthaelt keine vorweggenommene Mechanismus-Erklaerung unter Wahloptionen; Hook und Phaenomen bleiben rein beschreibend, die Deutung folgt erst in Schritt 3.
+
+> 一句话本质: 条件定公式：先写字母式再代数字，单位跟到底，量级要合常识。
 ## Schritt 2 — entdecken: Ausruestungskiste der Mars-Crew
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
@@ -92,9 +98,13 @@ BEISPIEL (Sandbox Level mit Werkzeug):
 AUFGABE (Levelziel, AFB II): Knacke das Formel-Level: Waehle im Sandbox-Formelgeruest zu drei Fallsituationen je den Ansatz per Bedingung und beobachte, wie Energie, Kraft und Impuls je genau einen Fall loesen. Stelle den Buchstabenansatz auf, lies die Bedingungsanzeige ab, fuelle Einheiten ein und rechne Zahlen fuer $a = 2{,}0\,m/s^2$ mit $F = 3000\,N$. Begruende jede Ansatzwahl in einem Satz.
 
 HILFE:
-1. Scanne jeden Fall nach Zeit, Reibung und Koerperzahl und waehle Energie, Kraft oder Impuls.
-2. Schreibe den Buchstabenansatz und fuelle dann Einheiten ein.
-3. Rechne $s = 100\,m$ und $W = 300\,kJ$ und begruende jede Wahl per Bedingung.
+- Richtung: Zuerst Bedingung pruefen und danach die Formel (Kraft, Energie, Impuls oder Kreis) waehlen.
+- Richtung: Danach Buchstabenansatz aufstellen und nach der Zielgroesse umstellen, ohne Zahlen zu mischen.
+- Richtung: Erst am Ende konsistente SI-Einheiten einsetzen und Groessenordnung einschaetzen.
+COMPLETION (Lückentext):
+- Die Bedingung ist ___ , daher gilt $Formel =$ ___ .
+- Umgestellt lautet $Ziel =$ ___ .
+- Mit Einheiten folgt $Wert =$ ___ .
 
 MUSTERLOESUNG: Geruest waehlt Energie ohne Zeitfrage, Kraft mit Zeitfrage und Impuls bei mehreren Koerpern je per Bedingung. Mit $a=2{,}0\,m/s^2$ und $F=3000\,N$ folgt $s=100\,m$ und $W=300\,kJ$ als kinetische Energie. Jede Ansatzwahl folgt aus der Bedingung, jede Formel steht zuerst in Buchstaben, dann mit Einheiten, erst zuletzt als Zahl.
 
@@ -141,10 +151,24 @@ CHECK (Selbsttest, 3 Fragen mit Antworten):
 ## Schritt 7 — szenario: Klausurtransfer: Formelhandbuch Mechanik: dreisprachig und handgerechnet: Sturz durch duenne Luft
 ROLLE: Du bist Lerncoach und bereitest eine Mitschuelerin auf die Formelaufgaben der Physik-Klausur vor.
 SITUATION: Die Mitschuelerin kennt viele Formeln, verwechselt aber die Einsatzmomente und schreibt oft nur Ergebnisse ohne Ansatz. Erklaere in einer zusammenhaengenden Stellungnahme (ca. 150 Woerter), wie eine Entscheidungshilfe die Formel waehlt und wie ein vollstaendiger Loesungsweg die Schrittpunkte sichert.
+**AUFGABE (darstellen und beurteilen) [AFB II/III]**:
+Stellen Sie einen Buchstabenansatz mit Bedingung auf und beurteilen Sie Zahl und Einheit nach Groessenordnung.
+
 RUBRIC (30 XP): Entscheidungsregel Bedingung waehlt Ansatz mit zwei Beispielen (10 XP) | Dreischritt Ansatz-Einsetzen-Ergebnis (10 XP) | Einheiten und Groessenordnung als Kontrolle (5 XP) | Nachvollziehbare adressatengerechte Fachsprache (5 XP).
 
 `Klausur-Satz: Wer Buchstabenansatz, Umstellung, Zahlenrechnung und Einheitenprobe zeigt, erhaelt die volle Punktzahl.`
 
+
+ERWARTUNGSHORIZONT:
+Teilleistung | Punkte | Alternativweg
+Bedingung mit Formel nennen | 5 NP | Alternative ueber Nachbarformel akzeptieren
+Buchstabenweg mit Einheit rechnen | 6 NP | Zahlenweg mit SI-Umrechnung akzeptieren
+Groessenordnung als Urteil geben | 4 NP | Urteil mit Alltagsvergleich akzeptieren
+KERNSATZ (auswendig):
+`Die Bedingung waehlt die Formel, der Buchstabe traegt die Physik, daher prueft die Einheit den Ansatz.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Formel mit Bedingung | Ansatz in Buchstaben loesen | Zahl erst mit Einheit
+- Selbsttest: Die Bedingung waehlt die Formel, der Buchstabe traegt die Physik, daher prueft ___ den Ansatz.
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Sturz durch duenne Luft
 TAKEAWAY (Kernzusammenfassung):
 

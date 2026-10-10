@@ -8,7 +8,7 @@ operatoren: [beschreiben, berechnen, begruenden]
 klausurrelevant: true
 datum: 2026-09-26
 tags: [EF, Physik, CN]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Impulserhaltung und Stoesse (L1, Ziel Klausur)
@@ -32,8 +32,14 @@ Hook / Phaenomen: Billardkugeln klicken, Autos knirschen: Der **Impuls** wandert
 
 `Klausur-Satz: Impuls bleibt erhalten: Masse mal Geschwindigkeit summiert sich vor und nach dem Stoss zur gleichen Summe.`
 
+
+AUFLÖSUNG (nach der Wahl lesen)
+
+C1-Pruefung: Dieser Schritt enthaelt keine vorweggenommene Mechanismus-Erklaerung unter Wahloptionen; Hook und Phaenomen bleiben rein beschreibend, die Deutung folgt erst in Schritt 3.
+
+> 一句话本质: 碰撞前后的总动量不变，想求速度就把碰撞前后的动量账列相等。
 ## Schritt 2 — entdecken: Ausruestungskiste der Mars-Crew
-PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
+PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文->德语，Evidenz：pretraining降认知负荷）：
 
 中文在上，德语在下：
 
@@ -111,6 +117,17 @@ HILFE（中德双语步骤）：
 3. 中文：第3步总动量除以总质量得共速，关键词：Division。
    Schritt 3 (DE): $u = p_{vor}/(m_1+m_2)$.
 
+
+HILFE:
+- Richtung: Zuerst System abgrenzen und pruefen, ob aeussere Impulse vernachlaessigbar sind.
+- Richtung: Danach Gesamtimpuls vorher und nachher mit $p = m \cdot v$ bilanzieren und Stoßart (elastisch oder inelastisch) festlegen.
+- Richtung: Erst am Ende Zahlen mit Vorzeichen und Einheiten einsetzen und Richtungssinn pruefen.
+
+COMPLETION (Lückentext):
+- Der Gesamtimpuls vorher ist $p_{\text{vor}} =$ ___ $\text{kg m/s}$.
+- Die Endgeschwindigkeit ist $v' =$ ___ $\text{m/s}$ aus $p_{\text{vor}} = p_{\text{nach}}$.
+- Beim unelastischen Stoss gilt $v' = (m_1 v_1 + m_2 v_2) /$ ___ .
+
 MUSTERLOESUNG：中文：碰前总动量6.0带正号即沿正方向，非弹性碰后两车一体，6.0除以3.0得共速2.0米每秒，方向与原来总动量一致。
 
 MUSTERLOESUNG (DE): Aus $p_{vor} = 6{,}0\,\mathrm{kg\,m/s}$ und $3{,}0\,\mathrm{kg}$ folgt $u = 2{,}0\,\mathrm{m/s}$ in Fahrtrichtung: $p_{vor} = p_{nach}$ mit Zeichen.
@@ -128,7 +145,7 @@ Weg B: Alternative Route mit Gegenrechnung.
 
 AUFGABE B：Zwei Stahlkugeln stossen elastisch; gesucht beide Endgeschwindigkeiten.
 
-HILFE: A 含 zusammen → Verfahren (i)。B 含 elastisch → Verfahren (ii)。【选程序：见粘连除总质；见弹性列双式。】
+HILFE: A 含 zusammen -> Verfahren (i)。B 含 elastisch -> Verfahren (ii)。【选程序：见粘连除总质；见弹性列双式。】
 
 ANTWORT: A erfordert Verfahren (i): Eine Gleichung $m_1v_1+m_2v_2 = (m_1+m_2)u$ genuegt; $u$ folgt durch Division durch $m_1+m_2$. B erfordert Verfahren (ii): Zusaetzlich gilt $\frac{1}{2}m_1v_1^2+\frac{1}{2}m_2v_2^2 = \frac{1}{2}m_1u_1^2+\frac{1}{2}m_2u_2^2$; erst beide Gleichungen zusammen liefern $u_1$ und $u_2$. Wer in B nur den Impulssatz schreibt, hat eine Gleichung zu wenig.
 
@@ -158,10 +175,24 @@ CHECK检索默写（自测 3 题，与答案配对）：
 ## Schritt 7 — szenario: Klausurtransfer: Impulserhaltung und Stoesse: Startbahn der Messdaten
 ROLLE: Du bist Laborassistent und erklaerst zwei Stossversuche.
 SITUATION: Eine Gruppe verwechselt Knete mit Stahlkugeln und schreibt immer beide Saetze hin. Erklaere in einer zusammenhaengenden Darstellung (ca. 150 Woerter), wie man am Versuchsergebnis (zusammen vs. getrennt) den Stosstyp erkennt und welchen Gleichungssatz man jeweils ansetzt.
+**AUFGABE (berechnen und begruenden) [AFB II/III]**:
+Berechnen Sie die Endgeschwindigkeiten eines Stosses aus der Impulsbilanz und begruenden Sie die Wahl des Ansatzes.
+
 RUBRIC (30 XP): Erkennungsmerkmal des Stosstyps (8 XP) | Ansatz unelastisch mit Rechnung (8 XP) | Ansatz elastisch mit beiden Saetzen (8 XP) | Vorzeichenregel und Fachsprache (6 XP).
 
 `Klausur-Satz: Wer Impulsbilanz aufstellt, Stossart unterscheidet und Endgeschwindigkeiten berechnet, erhaelt die volle Punktzahl.`
 
+
+ERWARTUNGSHORIZONT:
+Teilleistung | Punkte | Alternativweg
+Impulsbilanz mit Stossart nennen | 5 NP | Zusatzweg ueber Energiesatz akzeptieren
+Endgeschwindigkeiten mit Vorzeichen berechnen | 6 NP | Rechenweg im Schwerpunktsystem akzeptieren
+Elastisch und inelastisch abgrenzen | 4 NP | Urteil mit Verformungsenergie akzeptieren
+KERNSATZ (auswendig):
+`Im abgeschlossenen System gilt $p_{\text{vor}} = p_{\text{nach}}$, daher folgt die Endgeschwindigkeit aus der Impulsbilanz.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Abgeschlossenes Stoss-System | Impulse vorher und nachher gleichsetzen | Endgeschwindigkeit aus Bilanz
+- Selbsttest: Im abgeschlossenen System gilt $p_{\text{vor}} =$ ___ , daher folgt die Endgeschwindigkeit aus der Impulsbilanz.
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Startbahn der Messdaten
 TAKEAWAY 1盒（核心总结）：
 

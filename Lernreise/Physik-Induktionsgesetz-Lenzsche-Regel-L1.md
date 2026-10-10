@@ -8,7 +8,7 @@ operatoren: [beschreiben, herleiten, beurteilen]
 klausurrelevant: true
 datum: 2026-10-03
 tags: [EF, Physik, Elektromagnetismus, Induktion, Lenzsche-Regel, Wirbelstrom]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Faradaysches Induktionsgesetz und Lenzsche Regel (L1, Ziel Klausur)
@@ -28,8 +28,14 @@ Du laesst eine massive Eisenkugel durch ein senkrechtes, zwei Meter langes Kunst
 
 `Klausur-Satz: Jede zeitliche Aenderung des magnetischen Flusses durch eine Leiterschleife induziert eine Spannung, deren resultierender Strom seiner Entstehungsursache stets entgegenwirkt.`
 
+
+AUFLÖSUNG (nach der Wahl lesen)
+
+C1-Pruefung: Dieser Schritt enthaelt keine vorweggenommene Mechanismus-Erklaerung unter Wahloptionen; Hook und Phaenomen bleiben rein beschreibend, die Deutung folgt erst in Schritt 3.
+
+> 一句话本质: 磁通变化越快感应电压越大，感应电流的效果总是反抗原来的变化。
 ## Schritt 2 — entdecken: Die Leitbegriffe der Elektrodynamik
-PRETRAINING术语盒（核心4词，先读三遍中德，合书自测中文→德语）：
+PRETRAINING术语盒（核心4词，先读三遍中德，合书自测中文->德语）：
 
 - 磁通量 — Magnetischer Fluss ($\Phi = \vec{B} \cdot \vec{A}$): 穿过某一封闭导线框面积的磁感线总数。 Das Mass fuer die Anzahl der magnetischen Feldlinien, die eine gegebene Leiterschleifenflaeche senkrecht durchsetzen. Mechanismus: $\Phi = B \cdot A \cdot \cos(\alpha)$.
 - 法拉第电磁感应定律 — Faradaysches Induktionsgesetz ($U_{\text{ind}} = -n \cdot \frac{d\Phi}{dt}$): 导体回路中感应电动势的大小与穿过回路的磁通量的变化率成正比。 Die induzierte Spannung ist direkt proportional zur zeitlichen Aenderungsrate des magnetischen Flusses.
@@ -68,6 +74,17 @@ Ein Fahrgasttraeger eines Freifallturms der Masse $m = 2000\,\text{kg}$ rast mit
 1. Leite her, warum die Bremskraft $F_{\text{brems}}$ direkt proportional zur aktuellen Momentangeschwindigkeit $v$ der Gondel ist ($F_{\text{brems}} = k \cdot v$).
 2. Berechne die Bremskonstante $k$, wenn die Gondel im ersten Augenblick mit einer maximal vertraeglichen Verzoegerung von $a = 3{,}5 \cdot g$ ($g \approx 9{,}81\,\text{m/s}^2$) abgebremst werden soll.
 
+
+HILFE:
+- Richtung: Zuerst pruefen, ob sich Flaeche $A(t)$ oder Flussdichte $B(t)$ aendert, und $\Phi = B \cdot A$ zuordnen.
+- Richtung: Danach Faraday-Gesetz $U_{\text{ind}} = -n \cdot d\Phi/dt$ fuer die Spannung und Lenz-Regel fuer die Richtung waehlen.
+- Richtung: Erst am Ende Zahlen mit Einheiten einsetzen und das Minuszeichen als Lenz-Aussage deuten.
+
+COMPLETION (Lückentext):
+- Die Flussanderung ist $d\Phi/dt =$ ___ $\text{V}$.
+- Die Induktionsspannung ist $U_{\text{ind}} =$ ___ $\text{V}$ aus $U_{\text{ind}} = -n \cdot d\Phi/dt$.
+- Die Richtung folgt aus ___ , nicht aus dem Betrag.
+
 MUSTERLOESUNG:
 1. Herleitung:
    - Die Geschwindigkeit $v$ bestimmt die zeitliche Aenderung der vom Magnetfeld ueberstrichenen Leiterschleifenflaeche: $\frac{dA}{dt} = L \cdot v$.
@@ -100,6 +117,9 @@ Wird nach `Induktionswirkung` gefragt, pruefe immer zuerst: "Aendert sich entwed
 
 PRUEFUNGSSZENARIO (KLP NRW Physik LK Inhaltsfeld 3: Elektrodynamik):
 
+**AUFGABE (herleiten und beurteilen) [AFB II/III]**:
+Leiten Sie die Bremskraft einer Wirbelstrombremse aus $U_{\text{ind}}$ her und beurteilen Sie einen Materialvorschlag.
+
 ### AFB I: Wissensabfrage
 Formuliere das Faradaysche Induktionsgesetz in mathematischer Form und erlaeutere die physikalische Bedeutung des negativen Vorzeichens.
 
@@ -110,6 +130,17 @@ Erklaere detailliert anhand der Lenzschen Regel, warum eine Wirbelstrombremse im
 Ein Ingenieur schlaegt vor, die Kupferplatten am Bremsfuss durch supraleitendes Material mit dem elektrischen Widerstand $R = 0$ zu ersetzen. 
 Beurteile diesen Vorschlag hinsichtlich theoretischer Machbarkeit, resultierender Beschleunigungskraefte und gesundheitlicher Risiken fuer Fahrgaeste.
 
+
+ERWARTUNGSHORIZONT:
+Teilleistung | Punkte | Alternativweg
+Faraday-Ansatz mit $\Phi$-Aenderung nennen | 5 NP | Herleitung ueber Leiterschaukel akzeptieren
+$U_{\text{ind}}$ und $F_{\text{brems}}$ berechnen | 6 NP | Zahlenweg ueber $F = B \cdot I \cdot L$ akzeptieren
+Lenz-Richtung und Vorschlag beurteilen | 4 NP | Urteil mit Energieerhaltung akzeptieren
+KERNSATZ (auswendig):
+`Jede Flussanderung $d\Phi/dt$ induziert $U_{\text{ind}} = -n \cdot d\Phi/dt$, deren Wirkung stets hemmt.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Leiterschleife mit Fluss $\Phi$ | Faraday-Gesetz mit Lenz-Richtung anwenden | Spannung aus Aenderungsrate
+- Selbsttest: Jede Flussanderung $d\Phi/dt$ induziert $U_{\text{ind}} =$ ___ , deren Wirkung stets hemmt.
 ## Schritt 7 — check: Format-Check & Scoring
 
 30 XP Schnelltest zur Verstaendigungssicherung:

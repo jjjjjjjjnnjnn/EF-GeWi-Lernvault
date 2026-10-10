@@ -8,7 +8,7 @@ operatoren: [analysieren, berechnen, beurteilen]
 klausurrelevant: true
 datum: 2026-09-25
 tags: [EF, Physik, Klausurtraining]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: CN-Training: vier Klausuraufgaben unter Zeitdruck (L1, Ziel Klausur)
@@ -18,7 +18,7 @@ version: Lesson-v3
 ## Schritt 1 — entdecken: Der Fallschirm zögert
 ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
-1. 中文：能在限时条件下把图表题按"轴→斜率或面积→单位"三步解出，不超时。
+1. 中文：能在限时条件下把图表题按"轴->斜率或面积->单位"三步解出，不超时。
 2. 中文：能对力能综合题先受力判断守恒条件，再完整列式并给出带单位的答案。
 3. 中文：能对照 EHZ（踩分点）给自己评分，并写出测量误差的评价句迁移到新情境。
 
@@ -30,8 +30,14 @@ Hook / Phaenomen: Vier Aufgaben, ein **Erwartungshorizont**: Diagramm, Kraft, Kr
 
 `Klausur-Satz: Der Erwartungshorizont verteilt Punkte auf Wege: Jeder Schritt braucht Gesetz, Formel und Einheit.`
 
+
+AUFLÖSUNG (nach der Wahl lesen)
+
+C1-Pruefung: Dieser Schritt enthaelt keine vorweggenommene Mechanismus-Erklaerung unter Wahloptionen; Hook und Phaenomen bleiben rein beschreibend, die Deutung folgt erst in Schritt 3.
+
+> 一句话本质: 先按题型选程序再动手，算完用另一条路回代验算，时间花在刀刃上。
 ## Schritt 2 — entdecken: Ausruestungskiste der Mars-Crew
-PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
+PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文->德语，Evidenz：pretraining降认知负荷）：
 
 中文在上，德语在下：
 
@@ -107,9 +113,13 @@ BEISPIEL（正确例题示范，含教具操作与解答）：
 AUFGABE (berechnen, AFB II)：Bearbeiten Sie Aufgabe 1 vollständig: Analysieren Sie das v-t-Diagramm der Zugfahrt und berechnen Sie den Gesamtweg sowie die Durchschnittsgeschwindigkeit.
 
 HILFE:
-1. Schritt 1: Zerlege die Fahrt in drei Abschnitte (Beschleunigen, konstante Fahrt, Abbremsen) und benenne jeden Abschnitt im v-t-Diagramm.
-2. Schritt 2: Berechne den Weg als Summe der Teilflächen: zwei Dreiecke und ein Rechteck.
-3. Schritt 3: Dividiere den Gesamtweg durch die Gesamtzeit für die Durchschnittsgeschwindigkeit.
+- Richtung: Zuerst Aufgabentyp bestimmen und das passende Verfahren (Kraft, Energie, Impuls oder Feld) festlegen.
+- Richtung: Danach Buchstabenansatz vor Zahlen stellen und Zielgroesse symbolisch isolieren.
+- Richtung: Erst am Ende Zeit budgetieren, Einheiten pruefen und per Gegenrechnung sichern.
+COMPLETION (Lückentext):
+- Das Verfahren ist ___ , weil nach ___ gefragt ist.
+- Der Ansatz lautet $Ansatz =$ ___ mit Zielgroesse ___ .
+- Die Probe erfolgt ueber ___ mit Einheit ___ .
 
 MUSTERLÖSUNG: Das v-t-Diagramm hat drei Abschnitte mit beschrifteten Achsen (v in m/s, t in s). Abschnitt 1 (0 s bis 8 s) ist ein Dreieck mit der Fläche 0,5 * 8 s * 12 m/s = 48 m. Abschnitt 2 (8 s bis 28 s) ist ein Rechteck mit der Fläche 20 s * 12 m/s = 240 m. Abschnitt 3 (28 s bis 36 s) ist wieder ein Dreieck mit 0,5 * 8 s * 12 m/s = 48 m. Der Gesamtweg ist die Summe der Teilflächen: s = 48 m + 240 m + 48 m = 336 m. Die Gesamtzeit beträgt 36 s, daher ist die Durchschnittsgeschwindigkeit v_mittel = s/t = 336 m / 36 s ≈ 9,3 m/s. Sie liegt erwartungsgemäß unter der Höchstgeschwindigkeit von 12 m/s, weil die Beschleunigungs- und Bremsphasen den Mittelwert senken.
 
@@ -118,7 +128,7 @@ MUSTERLÖSUNG: Das v-t-Diagramm hat drei Abschnitte mit beschrifteten Achsen (v 
 ## Schritt 5 — ausprobieren: Duell der Verfahren Der Fallschirm zögert
 VERGLEICH辨别实验（双向辨析：面积眼 vs. 斜率眼）：
 
-VERGLEICH: (Weg A quantitativ-rechnerisch gegen Weg B qualitativ-strukturell): Wähle erst das Verfahren — 【选程序】先看纵轴是哪个量：(i) v-t-Verfahren（纵轴是速度 v，问路程 → 读线下面积 s = Flaeche）oder (ii) s-t-Verfahren（纵轴是路程 s，问速度 → 读切线斜率 v = Δs/Δt）—— dann lösen.
+VERGLEICH: (Weg A quantitativ-rechnerisch gegen Weg B qualitativ-strukturell): Wähle erst das Verfahren — 【选程序】先看纵轴是哪个量：(i) v-t-Verfahren（纵轴是速度 v，问路程 -> 读线下面积 s = Flaeche）oder (ii) s-t-Verfahren（纵轴是路程 s，问速度 -> 读切线斜率 v = Δs/Δt）—— dann lösen.
 
 Weg A: Erst Verfahren waehlen, dann rechnen.
 
@@ -128,7 +138,7 @@ Weg B: Alternative Route mit Gegenrechnung.
 
 AUFGABE B：Ein Diagramm zeigt auf der senkrechten Achse den Weg s in m; gefragt ist die Geschwindigkeit bei t = 10 s. Welches Verfahren ist zu wählen?
 
-HILFE: A: senkrechte Achse ist v, gefragt ist s → Verfahren (i), Fläche lesen. B: senkrechte Achse ist s, gefragt ist v → Verfahren (ii), Steigung lesen.【选程序：纵轴是 v 就算面积，纵轴是 s 就读斜率，先看轴标签再动手。】
+HILFE: A: senkrechte Achse ist v, gefragt ist s -> Verfahren (i), Fläche lesen. B: senkrechte Achse ist s, gefragt ist v -> Verfahren (ii), Steigung lesen.【选程序：纵轴是 v 就算面积，纵轴是 s 就读斜率，先看轴标签再动手。】
 
 ANTWORT: A erfordert Verfahren (i): Da die senkrechte Achse die Geschwindigkeit trägt, ergibt die Fläche unter der Linie den Weg; bei einem Trapez mit v = 12 m/s und den Grundseiten 8 s und 36 s wäre s = 0,5 * (8 s + 36 s) * 12 m/s = 264 m. B erfordert Verfahren (ii): Da die senkrechte Achse den Weg trägt, liefert die Steigung der Tangente an der Stelle t = 10 s die Momentangeschwindigkeit, also v = Δs/Δt mit zwei eng benachbarten Punkten.
 
@@ -158,10 +168,24 @@ CHECK检索默写（自测 3 题，与答案配对）：
 ## Schritt 7 — szenario: Klausurtransfer: CN-Training: vier Klausuraufgaben unter Zeitdruck: Der Fallschirm zögert
 ROLLE: Du bist Tutor und leitest eine 45-minütige Klausursimulation für eine EF-Lerngruppe.
 SITUATION: Die Gruppe soll die vier Aufgaben aus Schritt 3 unter realen Bedingungen bearbeiten (insgesamt ca. 47 Minuten) und anschließend mit dem EHZ selbst korrigieren. Beurteile in einer zusammenhängenden Stellungnahme (ca. 150 Wörter), wie man die Bearbeitungszeit sinnvoll auf die vier Aufgabentypen verteilt und worauf man beim Selbstkorrigieren besonders achten sollte.
+**AUFGABE (planen und beurteilen) [AFB II/III]**:
+Planen Sie Vorgehen und Zeitbudget fuer vier Aufgaben und beurteilen Sie die eigene Loesungsstrategie.
+
 RUBRIC (30 XP): Sinnvolle Zeitverteilung auf die vier Aufgabentypen mit Begruendung (10 XP) | Hinweis auf die typischen Punktverluste (fehlender Ansatz, fehlende Einheit, fehlende Bewertung) (10 XP) | Vorgehen beim Selbstkorrigieren mit dem EHZ (5 XP) | Fachsprachlich korrekte und nachvollziehbare Darstellung (5 XP).
 
 `Klausur-Satz: Wer Loesungsweg, Teilflaechen und Transfersatz mit Einheiten zeigt, erhaelt die volle Punktzahl.`
 
+
+ERWARTUNGSHORIZONT:
+Teilleistung | Punkte | Alternativweg
+Verfahrenswahl mit Fragetyp begruenden | 5 NP | Alternative ueber Nachbarverfahren akzeptieren
+Zeitplan und Ansatz skizzieren | 6 NP | Kurzloesung mit Probe akzeptieren
+Strategie selbstkritisch beurteilen | 4 NP | Urteil mit Fehlerlog akzeptieren
+KERNSATZ (auswendig):
+`Erst Verfahren nach Fragetyp waehlen, dann Buchstabenansatz loesen, daher sichert die Gegenprobe die Punkte.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Klausursatz mit Fragetyp | Verfahren passend zum Gesuchten waehlen | Punkte durch Probe sichern
+- Selbsttest: Erst Verfahren nach Fragetyp waehlen, dann ___ loesen, daher sichert die Gegenprobe die Punkte.
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Der Fallschirm zögert
 TAKEAWAY 1盒（核心总结）：
 

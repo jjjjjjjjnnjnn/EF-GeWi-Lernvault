@@ -8,7 +8,7 @@ operatoren: [berechnen, begruenden, interpretieren, beurteilen]
 klausurrelevant: true
 datum: 2026-09-25
 tags: [EF, Physik, Mechanik]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Mechanische Energieerhaltung (L1, Ziel Klausur)
@@ -30,8 +30,14 @@ Hook / Phaenomen: Oben schnell nichts, unten alles Tempo: Die **Lageenergie** ve
 
 `Klausur-Satz: Energie geht nicht verloren, sie wechselt nur das Konto: Lage plus Bewegung plus Spannung bleiben konstant.`
 
+
+AUFLÖSUNG (nach der Wahl lesen)
+
+C1-Pruefung: Dieser Schritt enthaelt keine vorweggenommene Mechanismus-Erklaerung unter Wahloptionen; Hook und Phaenomen bleiben rein beschreibend, die Deutung folgt erst in Schritt 3.
+
+> 一句话本质: 山顶静止的势能全部变成山脚的动能，无摩擦时能量账两边相等。
 ## Schritt 2 — entdecken: Ausruestungskiste der Mars-Crew
-PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
+PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文->德语，Evidenz：pretraining降认知负荷）：
 
 中文在上，德语在下：
 
@@ -89,9 +95,13 @@ BEISPIEL（正确例题示范，含教具操作与解答）：
 AUFGABE (berechnen, AFB II)：Ein Wagen der Masse m = 1,0 kg startet aus der Ruhe und rollt eine reibungsfreie Rampe der Höhe h = 0,80 m hinunter. Am Fuß der Rampe trifft er auf eine horizontale Feder mit der Federkonstante D = 100 N/m und staucht sie zusammen. Es gilt g = 10 m/s^2. Bestimmen Sie die Geschwindigkeit des Wagens am Fuß der Rampe sowie die maximale Zusammendrückung s der Feder.
 
 HILFE:
-1. Schritt 1: Stelle die Energiebilanz für die Rampe auf: m*g*h = 0.5*m*v^2.
-2. Schritt 2: Löse nach v auf und setze die Zahlen ein.
-3. Schritt 3: Für die Feder gilt am Umkehrpunkt m*g*h = 0.5*D*s^2; löse nach s auf.
+- Richtung: Zuerst System und Nullniveau festlegen und Anfangs- und Endzustand mit Lage-, Bewegungs- und Spannenergie benennen.
+- Richtung: Danach den Erhaltungssatz $E_{\text{vor}} = E_{\text{nach}}$ waehlen und die gesuchte Groesse symbolisch isolieren.
+- Richtung: Erst am Ende Zahlen mit Einheiten einsetzen und $v$ sowie $s$ per Groessenordnung pruefen.
+COMPLETION (Lückentext):
+- Am Fuss gilt $v =$ ___ $\text{m/s}$ aus $m \cdot g \cdot h = \frac{1}{2} \cdot m \cdot v^2$.
+- Die Stauchung ist $s =$ ___ $\text{m}$ aus $m \cdot g \cdot h = \frac{1}{2} \cdot D \cdot s^2$.
+- Mit Reibung gilt $E_{\text{vor}} = E_{\text{nach}} +$ ___ .
 
 MUSTERLÖSUNG: Auf der reibungsfreien Rampe wird die Lageenergie vollständig in Bewegungsenergie umgewandelt: m*g*h = 0.5*m*v^2. Die Masse kürzt sich heraus, sodass v = sqrt(2*g*h) = sqrt(2 * 10 m/s^2 * 0,80 m) = sqrt(16 m^2/s^2) = 4,0 m/s. Am Fuß der Rampe hat der Wagen also die Geschwindigkeit 4,0 m/s. Beim Stauchen der Feder geht die kinetische Energie vollständig in Spannenergie über; am Punkt maximaler Zusammendrückung gilt m*g*h = 0.5*D*s^2 (die Gesamtenergie bleibt dieselbe wie oben). Einsetzen ergibt 0.5 * 100 N/m * s^2 = 1,0 kg * 10 m/s^2 * 0,80 m = 8,0 J, also s^2 = 16,0 J / 100 N/m = 0,16 m^2 und damit s = 0,40 m. Gegenprobe über die Geschwindigkeit: 0.5 * 1,0 kg * (4,0 m/s)^2 = 8,0 J, was der Anfangsenergie entspricht.
 
@@ -100,7 +110,7 @@ MUSTERLÖSUNG: Auf der reibungsfreien Rampe wird die Lageenergie vollständig in
 ## Schritt 5 — ausprobieren: Duell der Verfahren Federbeine im Test
 VERGLEICH辨别实验（双向辨析：能量眼 vs. 受力眼）：
 
-VERGLEICH: (Weg A quantitativ-rechnerisch gegen Weg B qualitativ-strukturell): Wähle erst das Verfahren — 【选程序】先读题干问的是什么、力是否恒定、过程有几段：(i) Energieansatz（只问速度/高度/形变量，力变化或过程多段 → 用 E_vor = E_nach，跳过中间细节）oder (ii) Kraftansatz（要加速度、时间、方向或某处的内力 → 用 F_res = m*a 逐步追踪）—— dann lösen.
+VERGLEICH: (Weg A quantitativ-rechnerisch gegen Weg B qualitativ-strukturell): Wähle erst das Verfahren — 【选程序】先读题干问的是什么、力是否恒定、过程有几段：(i) Energieansatz（只问速度/高度/形变量，力变化或过程多段 -> 用 E_vor = E_nach，跳过中间细节）oder (ii) Kraftansatz（要加速度、时间、方向或某处的内力 -> 用 F_res = m*a 逐步追踪）—— dann lösen.
 
 Weg A: Erst Verfahren waehlen, dann rechnen.
 
@@ -110,7 +120,7 @@ Weg B: Alternative Route mit Gegenrechnung.
 
 AUFGABE B：Derselbe Ball soll zu einem bestimmten Zeitpunkt nach dem Loslassen betrachtet werden; gesucht ist die Zeit, bis er den tiefsten Punkt erreicht. Welches Verfahren ist zu wählen, und warum?
 
-HILFE: A: Gefragt ist nur eine Geschwindigkeit, keine Zeit, kein Winkel nötig → Verfahren (i), Energiebilanz m*g*L = 0.5*m*v^2. B: Gefragt ist eine Zeit, die in der Energiegleichung gar nicht vorkommt → Verfahren (ii), Kraftansatz mit Beschleunigung und Kinematik.【选程序：问速度/高度走能量程序；问时间/加速度/内力走受力程序。】
+HILFE: A: Gefragt ist nur eine Geschwindigkeit, keine Zeit, kein Winkel nötig -> Verfahren (i), Energiebilanz m*g*L = 0.5*m*v^2. B: Gefragt ist eine Zeit, die in der Energiegleichung gar nicht vorkommt -> Verfahren (ii), Kraftansatz mit Beschleunigung und Kinematik.【选程序：问速度/高度走能量程序；问时间/加速度/内力走受力程序。】
 
 ANTWORT: A erfordert Verfahren (i): Da nur die Geschwindigkeit am tiefsten Punkt gesucht ist und keine Reibung auftritt, genügt die Energiebilanz m*g*L = 0.5*m*v^2, also v = sqrt(2*g*L) = sqrt(2 * 10 m/s^2 * 1,25 m) = 5,0 m/s; der Fadenwinkel und der genaue Bahnverlauf sind dabei irrelevant. B erfordert Verfahren (ii): Die Energiegleichung enthält die Zeit überhaupt nicht, deshalb muss man über die Beschleunigung (hier a = g*sin(beta) längs der Bahn) und die Kinematik gehen, um die gesuchte Zeit zu bestimmen.
 
@@ -140,10 +150,24 @@ CHECK检索默写（自测 3 题，与答案配对）：
 ## Schritt 7 — szenario: Klausurtransfer: Mechanische Energieerhaltung: Federbeine im Test
 ROLLE: Du bist Praktikumsbetreuerin im Physikpraktikum der EF und sollst eine Halfpipe-Analyse anleiten.
 SITUATION: Ein Skateboarder (m = 60 kg) startet aus der Ruhe am Rand einer reibungsfreien Halfpipe mit der Höhe h = 1,8 m über dem tiefsten Punkt. Er soll ohne weitere Kraftanstrengung durch die Bahn fahren. Beurteile in einer zusammenhängenden Stellungnahme (ca. 150 Wörter), welche Geschwindigkeit er am tiefsten Punkt erreicht und warum die Energiebetrachtung hier sinnvoller ist als eine Kraftbetrachtung. Nutze g = 10 m/s^2.
+**AUFGABE (beurteilen) [AFB III]**:
+Beurteilen Sie, welche Geschwindigkeit ein Koerper aus der Hoehe $h$ erreicht und warum der Energieansatz hier dem Kraftansatz ueberlegen ist.
+
 RUBRIC (30 XP): Aufstellen der Energiebilanz m*g*h = 0.5*m*v^2 mit gewaehlter Nullhoehe (5 XP) | Korrekte Berechnung v = sqrt(2*g*h) = 6,0 m/s mit Einheit (10 XP) | Begruendung der Unabhaengigkeit von der Masse (10 XP) | Kriteriengeleitetes Urteil zum Vorzug des Energieansatzes (veränderliche Kraftrichtung, keine Zeit gesucht) (5 XP).
 
 `Klausur-Satz: Wer Energiebilanz aufstellt, Nullniveau waehlt, umstellt und Reibungsverluste diskutiert, erhaelt die volle Punktzahl.`
 
+
+ERWARTUNGSHORIZONT:
+Teilleistung | Punkte | Alternativweg
+Energiebilanz mit Nullniveau und beiden Zustaenden aufstellen | 5 NP | Alternativweg ueber $E_{\text{spann}}$-Term akzeptieren
+$v$ und $s$ mit Einheiten berechnen | 6 NP | Probe ueber $E_{\text{kin}}$ akzeptieren
+Unabhaengigkeit von Masse und Winkel begruenden | 4 NP | Urteil mit Reibungsvorbehalt akzeptieren
+KERNSATZ (auswendig):
+`Ohne Reibung gilt $E_{\text{vor}} = E_{\text{nach}}$, daher folgt $v = \sqrt{2 \cdot g \cdot h}$.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Reibungsfreier Vorgang mit Hoehe $h$ | Bilanz $E_{\text{vor}} = E_{\text{nach}}$ aufstellen und kuerren | Geschwindigkeit ohne Masse und ohne Winkel
+- Selbsttest: Ohne Reibung gilt ___ $= E_{\text{nach}}$, daher folgt $v = \sqrt{2 \cdot g \cdot h}$.
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Federbeine im Test
 TAKEAWAY 1盒（核心总结）：
 

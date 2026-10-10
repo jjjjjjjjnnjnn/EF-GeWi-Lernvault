@@ -8,7 +8,7 @@ operatoren: [beschreiben, berechnen, begruenden]
 klausurrelevant: true
 datum: 2026-09-25
 tags: [EF, Physik, Methoden]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: CN-Tricks: sechs Verfahren fuer die Physik-Klausur (L1, Ziel Klausur)
@@ -28,6 +28,12 @@ Hook / Phaenomen: Zwei Wagen mit 15 Newton, doch innen zieht die Kupplung nur mi
 
 `Klausur-Satz: Erst das Bild, dann die Formel, dann die Zahl: Kein Ansatz ohne Kraeftediagramm und Systemwahl.`
 
+
+AUFLÖSUNG (nach der Wahl lesen)
+
+C1-Pruefung: Dieser Schritt enthaelt keine vorweggenommene Mechanismus-Erklaerung unter Wahloptionen; Hook und Phaenomen bleiben rein beschreibend, die Deutung folgt erst in Schritt 3.
+
+> 一句话本质: 好成绩靠程序：先画图再选系统，算完检查单位，结论只在条件下用。
 ## Schritt 2 — entdecken: Ausruestungskiste der Mars-Crew
 PRETRAINING (Kernbegriffe, erst lesen, dann abdecken und aktiv wiedergeben):
 
@@ -93,9 +99,13 @@ BEISPIEL (Sandbox Level mit Werkzeug):
 AUFGABE (Levelziel, AFB II): Sammle alle sechs Verfahren: Stelle in der Sandbox $F_{res} = 10$ $N$ ein, lies $a$ ab und berechne dann $a$ fuer $m = 5{,}0$ $kg$ schriftlich mit Dimensionsprobe.
 
 HILFE:
-1. Zeichne das vollstaendige Kraeftediagramm und lies $a = 2{,}0$ in der Sandbox ab.
-2. Rechne $a = F_{res}/m = 10/5 = 2{,}0$ in $m/s^2$.
-3. Pruefe $[F]/[m] = N/kg = m/s^2$ als Dimensionsprobe.
+- Richtung: Zuerst Kraeftediagramm und Systemwahl festlegen, bevor eine Formel gewaehlt wird.
+- Richtung: Danach Gesamt- und Teilsystem trennen und Ersatz-, Flaechen- oder Energieverfahren zuordnen.
+- Richtung: Erst am Ende Zahlen einsetzen und jede Stufe mit Dimensionsprobe sichern.
+COMPLETION (Lückentext):
+- Das System ist ___ mit Gesamtmasse $M =$ ___ $\text{kg}$.
+- Die Ersatzgroesse ist ___ aus $Formel =$ ___ .
+- Die Dimensionsprobe lautet $[___] =$ ___ .
 
 MUSTERLOESUNG: Sandbox $a = 2{,}0$ in $m/s^2$ bei $10$ $N$ und $5{,}0$ $kg$. Rechnung $F_{res} = m a$ zu $a = F_{res}/m = 10/5 = 2{,}0$ in $m/s^2$ aus dem vollstaendigen Kraeftediagramm. Dimensionsprobe $N = kg m/s^2$, also $N/kg = m/s^2$ bestaetigt den Ansatz. Alle sechs Verfahren sind erst mit Formel plus Einheit klausurfaehig.
 
@@ -143,10 +153,24 @@ CHECK (Selbsttest, 3 Fragen mit Antworten):
 ## Schritt 7 — szenario: Klausurtransfer: CN-Tricks: sechs Verfahren fuer die Physik-Klausur: Zuendung in letzter Sekunde
 ROLLE: Du bist Nachhilfelehrerin und bringst einer Schuelergruppe die sechs Verfahren als Lernstrategie fuer die Physik-Klausur naeher.
 SITUATION: Die Gruppe rechnet schnell, verliert aber Punkte durch fehlende Ansaetze und Luecken im Diagramm. Erklaere in zusammenhaengender Stellungnahme (ca. 150 Woerter), wie Tempo und Formkorrektheit ueber Ansatz, Einheit und Diagramm zusammenkommen.
+**AUFGABE (auswaehlen und begruenden) [AFB II/III]**:
+Waehlen Sie fuer einen Mehrkoerper-Fall Gesamt- oder Einzelsystem und begruenden Sie die Schnittfuehrung.
+
 RUBRIC (30 XP): Drei Verfahren deutschen Schritten zugeordnet (10 XP) | Warum Ansatz Punkte sichert (10 XP) | Beispiel Gesamt gegen Schnitt (5 XP) | Adressatengerechte Fachsprache (5 XP).
 
 `Klausur-Satz: Wer System schneidet, Kraefte bilanziert, Ersatzkraft nutzt und Einheiten prueft, erhaelt die volle Punktzahl.`
 
+
+ERWARTUNGSHORIZONT:
+Teilleistung | Punkte | Alternativweg
+Systemwahl mit Schnitt begruenden | 5 NP | Alternative ueber Nachbar-Trick akzeptieren
+Innere Kraft mit Einheit berechnen | 6 NP | Rechenweg ueber Ersatzkraft akzeptieren
+Bedingung der Kurzregel nennen | 4 NP | Urteil mit Dimensionsprobe akzeptieren
+KERNSATZ (auswendig):
+`Erst Bild und System, dann Formel und Zahl, daher traegt jede Stufe eine eigene Einheitenprobe.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Verfahren mit System und Bild | Trick passend zur Frage waehlen | Ergebnis durch Probe sichern
+- Selbsttest: Erst Bild und System, dann ___ , daher traegt jede Stufe eine eigene Einheitenprobe.
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Zuendung in letzter Sekunde
 TAKEAWAY (Kernzusammenfassung):
 

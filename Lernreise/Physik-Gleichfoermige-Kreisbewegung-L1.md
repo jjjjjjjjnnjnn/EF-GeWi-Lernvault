@@ -8,7 +8,7 @@ operatoren: [berechnen, erklaeren]
 klausurrelevant: true
 datum: 2026-09-26
 tags: [EF, Physik, Mechanik]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Gleichfoermige Kreisbewegung (L1, Ziel Klausur)
@@ -30,8 +30,14 @@ Hook / Phaenomen: Kettenkarussell in Voithausen: Die Kette zeigt schraeg nach au
 
 `Klausur-Satz: Kreisbewegung braucht Innenkraft: Zentripetalkraft m v Quadrat durch r haelt die Bahn, Richtung aendert sich staendig.`
 
+
+AUFLÖSUNG (nach der Wahl lesen)
+
+C1-Pruefung: Dieser Schritt enthaelt keine vorweggenommene Mechanismus-Erklaerung unter Wahloptionen; Hook und Phaenomen bleiben rein beschreibend, die Deutung folgt erst in Schritt 3.
+
+> 一句话本质: 绳子拉力提供向心力，转得越快或半径越大，需要的拉力越大。
 ## Schritt 2 — entdecken: Ausruestungskiste der Mars-Crew
-PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
+PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文->德语，Evidenz：pretraining降认知负荷）：
 
 中文在上，德语在下：
 
@@ -89,9 +95,13 @@ BEISPIEL（正确例题示范，含教具操作与解答）：
 AUFGABE (berechnen, AFB II)：Ein Auto der Masse m = 1000 kg durchfaehrt eine flache Kurve mit Radius r = 60 m mit v = 15 m/s (Karussell-Modell mit gleichem r). Bestimmen Sie Umlaufdauer T, Winkelgeschwindigkeit ω und die erforderliche Zentripetalkraft F_Z = m v^2/r und erklaeren Sie, was bei doppelter Geschwindigkeit geschieht.
 
 HILFE:
-1. Schritt 1: Umfang berechnen U = 2πr = 2π mal 60 m, dann T = U/v und ω = v/r einsetzen.
-2. Schritt 2: Frequenz f = 1/T bestimmen, Kontrolle ω = 2πf = v/r nutzen.
-3. Schritt 3: F_Z = m v^2/r einsetzen; danach v verdoppeln und zeigen, dass F_Z sich vervierfacht, weil v quadratisch eingeht.
+- Richtung: Zuerst Radius, Umlaufdauer und Bahngeschwindigkeit sauber trennen und $v = \omega \cdot r$ zuordnen.
+- Richtung: Danach die zum Zentrum zeigende resultierende Kraft als Zentripetalkraft $F_z$ identifizieren.
+- Richtung: Erst am Ende Zahlen mit Einheiten einsetzen und Richtung von $F_z$ pruefen.
+COMPLETION (Lückentext):
+- Die Bahngeschwindigkeit ist $v =$ ___ $\text{m/s}$ aus $v = 2 \cdot \pi \cdot r / T$.
+- Die Zentripetalkraft ist $F_z =$ ___ $\text{N}$ aus $F_z = m \cdot v^2 / r$.
+- Die Winkelgeschwindigkeit ist $\omega =$ ___ $\text{1/s}$.
 
 MUSTERLOESUNG: Es gilt U = 2πr = 2π mal 60 m = 377 m, also T = U/v = 377 m / 15 m/s = 25.1 s. Die Winkelgeschwindigkeit betraegt ω = v/r = 15/60 = 0.25 1/s, Kontrolle: f = 1/T = 0.0398 1/s, ω = 2πf = 0.25 1/s. Die Zentripetalkraft betraegt F_Z = m v^2/r = 1000 mal 225 / 60 = 3750 N. Bei doppelter Geschwindigkeit gilt F_Z neu = m (2v)^2/r = 4 m v^2/r = 15000 N, also das Vierfache. In der Kurve muss die Haftreibung diese Radialkraft liefern; reicht sie nicht, so folgt das Auto der Traegheit tangential nach aussen und rutscht.
 
@@ -139,11 +149,22 @@ CHECK检索默写（自测 3 题，与答案配对）：
 ## Schritt 7 — szenario: Klausurtransfer: Gleichfoermige Kreisbewegung: Satelliten-Fessel
 ROLLE: Du bist Tutor in der EF und erklaerst einer Mitschuelerin die Kurvenphysik.
 SITUATION: Nach einem Regen ist ein Auto in einer flachen Kurve mit Radius 60 m ins Rutschen geraten. Die Mitschuelerin sagt: Die Fliehkraft hat das Auto nach aussen gezogen. Nimm in einer zusammenhaengenden Darstellung (ca. 150 Woerter) Stellung, berechne exemplarisch mit v = 20 m/s und m = 1000 kg die noetige Zentripetalkraft und beurteile die Aussage.
-AUFGABE: Schreibe eine Klausur-Antwort mit Formeln, Rechnung, Kraftdeutung und Urteil ueber die Fliehkraft-Aussage.
+AUFGABE: Schreibe eine Klausur-Antwort mit Formeln, Rechnung, Kraftdeutung und Urteil ueber die Fliehkraft-Aussage. [AFB III]
 RUBRIC (30 XP): Korrekte Rechnung mit F_Z = m v^2/r (10 XP) | Deutung als Haftreibung als Lieferant der Radialkraft (10 XP) | Urteil: keine reale Kraft nach aussen, sondern Traegheit bei fehlender Zentripetalkraft (10 XP).
 
 `Klausur-Satz: Wer Bahn- und Kraftverfahren verbindet, Zentripetalkraft berechnet und Winkelgroessen deutet, erhaelt die volle Punktzahl.`
 
+
+ERWARTUNGSHORIZONT:
+Teilleistung | Punkte | Alternativweg
+Kinematik mit $v$ und $\omega$ aufstellen | 5 NP | Weg ueber Drehfrequenz akzeptieren
+$F_z$ mit Einheit berechnen | 6 NP | Kraftweg ueber $F_z = m \cdot \omega^2 \cdot r$ akzeptieren
+Reale Kraft als $F_z$-Traeger benennen | 4 NP | Urteil mit Fliehkraft-Abgrenzung akzeptieren
+KERNSATZ (auswendig):
+`Fuer die Kreisbahn gilt $F_z = m \cdot v^2 / r$, weil die resultierende Kraft zum Zentrum zeigt.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Gleichfoermiger Umlauf mit Radius $r$ | Resultierende als $F_z$ zum Zentrum deuten | Bahngeschwindigkeit aus $T$ und $r$
+- Selbsttest: Fuer die Kreisbahn gilt $F_z = m \cdot v^2 /$ ___ , weil die resultierende Kraft zum Zentrum zeigt.
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Satelliten-Fessel
 TAKEAWAY 1盒（核心总结）：
 

@@ -8,7 +8,7 @@ operatoren: [beschreiben, erklaeren, begruenden]
 klausurrelevant: true
 datum: 2026-09-26
 tags: [EF, Physik, Gravitation]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Gravitation und Satellitenbahnen (L1, Ziel Klausur)
@@ -28,6 +28,12 @@ Hook / Phaenomen: Der Mond faellt staendig zur Erde und trifft sie nie: **Gravit
 
 `Klausur-Satz: Gravitation haelt Bahnen: G m M durch r Quadrat gleich Zentripetalkraft bestimmt Geschwindigkeit aus Bahnradius.`
 
+
+AUFLÖSUNG (nach der Wahl lesen)
+
+C1-Pruefung: Dieser Schritt enthaelt keine vorweggenommene Mechanismus-Erklaerung unter Wahloptionen; Hook und Phaenomen bleiben rein beschreibend, die Deutung folgt erst in Schritt 3.
+
+> 一句话本质: 卫星越靠近地球飞得越快，万有引力正好提供它转弯所需的向心力。
 ## Schritt 2 — entdecken: Ausruestungskiste der Mars-Crew
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
@@ -93,9 +99,13 @@ BEISPIEL (Sandbox Level mit Werkzeug):
 AUFGABE (Levelziel, AFB II): Knacke das Orbit-Level: Ziehe im Sandbox-Labor den Bahnradius $r$ von erdnah bis GEO und beobachte, wie $v$ faellt und $T$ waechst und die Bahn bei jedem $r$ stabil bleibt. Miss $v$ und $T$ an zwei Radien, berechne dann exakt per Gleichgewicht und Kepler-Gesetz und vergleiche Labor mit Rechnung.
 
 HILFE:
-1. Stelle zwei Radien ein und lies $v$ sowie $T$ im Labor ab.
-2. Setze $GMm/r^2 = mv^2/r$ und loese nach $v = \sqrt{GM/r}$ auf.
-3. Berechne $T = 2\pi r/v$, gleiche mit dem Labor ab und deute hoch gegen tief.
+- Richtung: Zuerst Zentralmasse, Bahnradius und Umlaufgroessen trennen und $F_G$ als Zentralkraft erkennen.
+- Richtung: Danach Gravitationsgesetz mit der Kreisbahnbedingung $F_G = F_z$ verknuepfen und nach der gesuchten Groesse aufloesen.
+- Richtung: Erst am Ende Zahlen mit Einheiten einsetzen und Bahnhoehe von $r$ unterscheiden.
+COMPLETION (Lückentext):
+- Die Bahngeschwindigkeit ist $v =$ ___ $\text{m/s}$ aus $G \cdot M / r = v^2$.
+- Die Umlaufdauer ist $T =$ ___ $\text{s}$ aus $T = 2 \cdot \pi \cdot \sqrt{r^3 / (G \cdot M)}$.
+- Die Zentripetalbedingung lautet $F_G = F_z =$ ___ .
 
 MUSTERLOESUNG: Labor zeigt kleineres $r$ mit groesserem $v$ und kleinerem $T$ bestaetigt. Rechnung $v=\sqrt{GM/r}$ und $T=2\pi r/v$ reproduziert die Laborwerte an beiden Radien. Kleineres $r$ liefert groesseres $v$ und kleineres $T$, hoehere Bahnen sind langsamer mit laengerer Umlaufzeit per Kepler-Gesetz.
 
@@ -142,10 +152,24 @@ CHECK (Selbsttest, 3 Fragen mit Antworten):
 ## Schritt 7 — szenario: Klausurtransfer: Gravitation und Satellitenbahnen: Stoss im Dock
 ROLLE: Du bist Praktikant bei einer Raumfahrtagentur.
 SITUATION: Ein Kunde will einen TV-Satelliten, der stets ueber derselben Stadt steht, plant ihn aber in $h = 800\,\mathrm{km}$. Lege in zusammenhaengender Darstellung (ca. 150 Woerter) dar, warum der Plan scheitert, schaetze die Umlaufzeit ab und nenne die korrekte Hoehe mit Begruendung.
+**AUFGABE (herleiten und beurteilen) [AFB II/III]**:
+Leiten Sie $v$ und $T$ einer Kreisbahn aus $F_G = F_z$ her und beurteilen Sie die Eignung einer Bahnhoehe.
+
 RUBRIC (30 XP): Kraeftegleichgewicht genannt (10 XP) | $T$-Abschaetzung mit $T^2 \sim r^3$ (10 XP) | Geostationaere Bedingung $T = 24\,\mathrm{h}$ (5 XP) | Geschlossene Darstellung (5 XP).
 
 `Klausur-Satz: Wer Gleichgewicht ansetzt, Bahngroessen berechnet und Kepler zur Kontrolle nutzt, erhaelt die volle Punktzahl.`
 
+
+ERWARTUNGSHORIZONT:
+Teilleistung | Punkte | Alternativweg
+Gravitationsgesetz als Zentralkraft nennen | 5 NP | Herleitung ueber Kepler-Gesetz akzeptieren
+$v$ und $T$ mit Einheiten berechnen | 6 NP | Zahlenweg mit $g$-Abgleich akzeptieren
+Bahnhoehe als Kompromiss beurteilen | 4 NP | Urteil mit Weltraumschrott-Risiko akzeptieren
+KERNSATZ (auswendig):
+`Auf der Kreisbahn gilt $G \cdot M / r^2 = v^2 / r$, daher folgt $v = \sqrt{G \cdot M / r}$.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Satellit auf Kreisbahn mit Radius $r$ | $F_G = F_z$ gleichsetzen | Geschwindigkeit faellt mit $r$
+- Selbsttest: Auf der Kreisbahn gilt $G \cdot M / r^2 = v^2 /$ ___ , daher folgt $v = \sqrt{G \cdot M / r}$.
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Stoss im Dock
 TAKEAWAY (Kernzusammenfassung):
 

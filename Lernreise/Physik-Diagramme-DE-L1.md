@@ -8,7 +8,7 @@ operatoren: [darstellen, analysieren, interpretieren, beurteilen]
 klausurrelevant: true
 datum: 2026-09-25
 tags: [EF, Physik, Messung]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Diagramme lesen, zeichnen und Messfehler beurteilen (L1, Ziel Klausur)
@@ -28,6 +28,12 @@ Hook / Phaenomen: Punkte streuen, doch das Gesetz liegt gerade dazwischen: Die *
 
 `Klausur-Satz: Diagramme sprechen ueber Steigung und Flaeche: Achsen mit Einheiten entscheiden, was gelesen werden darf.`
 
+
+AUFLÖSUNG (nach der Wahl lesen)
+
+C1-Pruefung: Dieser Schritt enthaelt keine vorweggenommene Mechanismus-Erklaerung unter Wahloptionen; Hook und Phaenomen bleiben rein beschreibend, die Deutung folgt erst in Schritt 3.
+
+> 一句话本质: 图里藏着斜率和面积：斜率是变化率，面积是积累量，轴和单位不能错。
 ## Schritt 2 — entdecken: Ausruestungskiste der Mars-Crew
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
@@ -93,9 +99,13 @@ BEISPIEL (Sandbox Level mit Werkzeug):
 AUFGABE (Levelziel, AFB II): Knacke das Mess-Level: Verstelle im Sandbox-Labor Streustärke und Nullpunktverschiebung und beobachte, wie die Punktwolke um die Gerade streut oder einseitig wandert. Lege die Ausgleichsgerade, bestimme die Geschwindigkeit aus der Steigung und entscheide per Streubild zwischen zufaellig und systematisch. Begruende in einem Satz dein Modellurteil.
 
 HILFE:
-1. Stelle Streuung und Verschiebung ein und verfolge Punktwolke gegen Gerade.
-2. Lege die Ausgleichsgerade und berechne $v = \Delta s/\Delta t$ mit Einheit.
-3. Deute Streuung als zufaellig oder Verschiebung als systematisch und urteile im Rahmen der Unsicherheit.
+- Richtung: Zuerst Diagrammtyp sowie Achsen mit Einheiten identifizieren und Messpunkte von Modellkurve trennen.
+- Richtung: Danach Steigung oder Flaeche als physikalische Groesse deuten und Ausgleichsgerade festlegen.
+- Richtung: Erst am Ende Zahlen ablesen und Fehlerbalken sowie Signifikanz einschaetzen.
+COMPLETION (Lückentext):
+- Die Achsen sind ___ mit Einheit ___ .
+- Die Steigung ist ___ aus $Steigung = \Delta y/\Delta x$.
+- Die Flaeche ist ___ aus $Flaeche =$ ___ .
 
 MUSTERLOESUNG: Labor mit kleiner Streuung liefert Ausgleichsgerade mit $v = 0{,}50\,m/s$, Abweichungen streuen unsystematisch beidseitig. Verschiebung wuerde alle Punkte einseitig verlagern und systematische Ursache verraten. Da die Streuung unsystematisch bleibt, ist das Modell im Rahmen der Unsicherheit bestaetigt.
 
@@ -142,10 +152,24 @@ CHECK (Selbsttest, 3 Fragen mit Antworten):
 ## Schritt 7 — szenario: Klausurtransfer: Diagramme lesen, zeichnen und Messfehler beurteilen: Parabel gegen Gerade
 ROLLE: Du bist Mitglied der Physik-AG und sollst fuer das Schuljahrbuch einen Versuch zur gleichfoermigen Bewegung auswerten und dokumentieren.
 SITUATION: Eine Gruppe hat eine Messreihe ($t$ in $\mathrm{s}$, $s$ in $\mathrm{m}$) aufgenommen; die Punkte streuen leicht um eine Gerade, und ein Schueler nennt das Ergebnis genau $0{,}50\,\mathrm{m/s}$. Beurteile in einer zusammenhaengenden Stellungnahme (ca. 150 Woerter) Darstellung, Geschwindigkeitsbestimmung und Aussagekraft mit Ausgleichsgerade und Messunsicherheit.
+**AUFGABE (darstellen und beurteilen) [AFB II/III]**:
+Stellen Sie Messwerte mit Ausgleichsgerade dar und beurteilen Sie Fehler und Vertrauensbereich.
+
 RUBRIC (30 XP): Korrekte Darstellung mit Achsen, Einheit, Punkten und Gerade (5 XP) | Steigung als Geschwindigkeit mit Rechnung (10 XP) | Einordnung als zufaellig oder systematisch (10 XP) | Eingeschraenktes Fazit statt exakt (5 XP).
 
 `Klausur-Satz: Wer Ausgleichsgerade zeichnet, Fehlerarten trennt und Steigung mit Einheit deutet, erhaelt die volle Punktzahl.`
 
+
+ERWARTUNGSHORIZONT:
+Teilleistung | Punkte | Alternativweg
+Diagrammtyp mit Achsen begruenden | 5 NP | Digitalplot als Alternative akzeptieren
+Wert aus Steigung oder Flaeche bestimmen | 6 NP | Weg ueber Steigungsdreieck akzeptieren
+Messfehler und Folgerung beurteilen | 4 NP | Urteil mit Wiederholung akzeptieren
+KERNSATZ (auswendig):
+`Jede Diagrammgroesse braucht Achse mit Einheit, daher liefern Steigung und Flaeche die Physik.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Messdiagramm mit Achsen | Steigung oder Flaeche deuten | Wert mit Fehlerbalken
+- Selbsttest: Jede Diagrammgroesse braucht Achse mit Einheit, daher liefern ___ und Flaeche die Physik.
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Parabel gegen Gerade
 TAKEAWAY (Kernzusammenfassung):
 

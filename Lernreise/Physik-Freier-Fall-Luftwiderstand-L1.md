@@ -8,7 +8,7 @@ operatoren: [beschreiben, berechnen, deuten]
 klausurrelevant: true
 datum: 2026-09-26
 tags: [EF, Physik, Mechanik]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Freier Fall mit Luftwiderstand (L1, Ziel Klausur)
@@ -34,6 +34,12 @@ Hook / Phaenomen: Hammer und Feder fallen im Vakuum gleich schnell, in Luft nich
 
 `Klausur-Satz: Freier Fall heisst konstante Beschleunigung g; Luftwiderstand bremst bis zum Kraeftegleichgewicht mit konstanter Endgeschwindigkeit.`
 
+
+AUFLÖSUNG (nach der Wahl lesen)
+
+C1-Pruefung: Dieser Schritt enthaelt keine vorweggenommene Mechanismus-Erklaerung unter Wahloptionen; Hook und Phaenomen bleiben rein beschreibend, die Deutung folgt erst in Schritt 3.
+
+> 一句话本质: 真空里轻重同时落地，有空气时阻力把下落变成先加速后匀速。
 ## Schritt 2 — entdecken: Ausruestungskiste der Mars-Crew
 PRETRAINING (Kernbegriffe):
 
@@ -85,9 +91,13 @@ BEISPIEL (vollstaendige Musterloesung):
 AUFGABE (berechnen, AFB II): Eine Kugel der Masse $m = 0{,}50 \, \mathrm{kg}$ faellt mit linearem Widerstandsmodell $F_W = k \cdot v$ und $k = 0{,}75 \, \mathrm{Ns/m}$. Berechnen Sie die Endgeschwindigkeit und vergleichen Sie die Fallgeschwindigkeit nach $1{,}0 \, \mathrm{s}$ mit dem idealisierten Wert.
 
 HILFE:
-1. Schritt 1: Bedingung $m \cdot g = k \cdot v_E$ nach $v_E$ aufloesen.
-2. Schritt 2: Idealisierten Wert $v = g \cdot t$ berechnen.
-3. Schritt 3: Vergleich deuten.
+- Richtung: Zuerst klaeren, ob Luftwiderstand vernachlaessigbar ist, und das passende Fallgesetz waehlen.
+- Richtung: Danach Anfangshoehe, Anfangsbedingung und gesuchte Groesse (Zeit, Geschwindigkeit oder Endlage) festlegen.
+- Richtung: Erst am Ende Zahlen mit Einheiten einsetzen und das Ergebnis mit $g \approx 10 \, \text{m/s}^2$ abschaetzen.
+COMPLETION (Lückentext):
+- Die Fallzeit ist $t =$ ___ $\text{s}$ aus $h = \frac{1}{2} \cdot g \cdot t^2$.
+- Die Aufprallgeschwindigkeit ist $v =$ ___ $\text{m/s}$ aus $v = g \cdot t$.
+- Mit Luftwiderstand naehert sich $v$ der ___ $v_{\text{ Grenz}}$.
 
 MUSTERLOESUNG: Aus $m \cdot g = k \cdot v_E$ folgt $v_E = m \cdot g / k = 0{,}50 \cdot 9{,}81 / 0{,}75 = 6{,}54 \, \mathrm{m/s}$. Idealisiert gilt $v = 9{,}81 \cdot 1{,}0 = 9{,}81 \, \mathrm{m/s}$. Der reale Wert liegt darunter, weil bereits nach einer Sekunde ein erheblicher Teil der Gewichtskraft durch $F_W$ kompensiert wird. Die Kugel kann $9{,}81 \, \mathrm{m/s}$ mit diesem Widerstand nie erreichen, da $v_E = 6{,}54 \, \mathrm{m/s}$ die obere Schranke bildet.
 
@@ -132,10 +142,24 @@ CHECK (drei Fragen mit Antworten):
 ## Schritt 7 — szenario: Klausurtransfer: Freier Fall mit Luftwiderstand: Karussell im Orbit
 ROLLE: Du bist Messassistentin im Physikkurs.
 SITUATION: Zwei $v$-$t$-Diagramme liegen vor: Kurve A ist eine Gerade mit Steigung $g$, Kurve B flacht nach $2 \, \mathrm{s}$ deutlich ab. Entscheide in circa 150 Woertern, welche Kurve zum Fall im Vakuum und welche zum Fall mit Luftwiderstand gehoert, und bestimme graphisch die Endgeschwindigkeit von Kurve B.
+**AUFGABE (berechnen und beurteilen) [AFB II/III]**:
+Berechnen Sie Fallzeit und Aufprallgeschwindigkeit aus gegebener Hoehe und beurteilen Sie den Einfluss des Luftwiderstands.
+
 RUBRIC (30 XP): Richtige Zuordnung beider Kurven (8 XP) | Begruendung mit Kraeftegleichung (10 XP) | Ablesen von $v_E$ aus der Horizontalen (6 XP) | Fachsprachliche Darstellung (6 XP).
 
 `Klausur-Satz: Wer Bewegungsgleichung aufstellt, Endgeschwindigkeit aus dem Gleichgewicht bestimmt und Diagramm deutet, erhaelt die volle Punktzahl.`
 
+
+ERWARTUNGSHORIZONT:
+Teilleistung | Punkte | Alternativweg
+Fallgesetz mit Anfangsbedingung nennen | 5 NP | Herleitung ueber $v$-$t$-Flaeche akzeptieren
+$t$ und $v$ mit Einheiten berechnen | 6 NP | Rechenweg ueber Energiesatz akzeptieren
+Luftwiderstand als Grenzgeschwindigkeit deuten | 4 NP | Urteil mit Modellgrenze akzeptieren
+KERNSATZ (auswendig):
+`Ohne Luftwiderstand gilt $h = \frac{1}{2} \cdot g \cdot t^2$, daher haengt die Fallzeit nur von der Hoehe ab.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Freier Fall aus der Ruhe mit Hoehe $h$ | Weg-Zeit-Gesetz mit $g$ anwenden | Fallzeit ohne Masse aus Hoehe
+- Selbsttest: Ohne Luftwiderstand gilt $h = \frac{1}{2} \cdot g \cdot$ ___ , daher haengt die Fallzeit nur von der Hoehe ab.
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Karussell im Orbit
 TAKEAWAY:
 

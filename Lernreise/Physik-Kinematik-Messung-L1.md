@@ -8,7 +8,7 @@ operatoren: [darstellen, berechnen, interpretieren, beurteilen]
 klausurrelevant: true
 datum: 2026-09-25
 tags: [EF, Physik, Kinematik]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Kinematik: Messung und Diagramme (L1, Ziel Klausur)
@@ -20,7 +20,7 @@ ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
 
 1. 中文：能从一串测量数据判断运动类型——匀速的 s-t 点是直线，匀变速的 s-t 点是抛物线、而 v-t 点是斜直线。
 2. 中文：能说出两张图的读法分工：s-t 图切线斜率读瞬时速度 v，v-t 图线下的面积算路程 s，v-t 图斜率读加速度 a。
-3. 中文：能按"表→图→斜率/面积→单位"四步完整解一道带数字的题，并用德语写出 Ansatz 与结果句。
+3. 中文：能按"表->图->斜率/面积->单位"四步完整解一道带数字的题，并用德语写出 Ansatz 与结果句。
 
 ### Hook / Phaenomen
 
@@ -30,8 +30,14 @@ Hook / Phaenomen: Lichtschranken klicken, das Handy stoppt: Jede **Messung** von
 
 `Klausur-Satz: Kinematik liest Bewegung aus Diagrammen: Steigung gibt Tempo, Flaeche gibt Weg, Mittel gegen Momentan entscheidet Deutung.`
 
+
+AUFLÖSUNG (nach der Wahl lesen)
+
+C1-Pruefung: Dieser Schritt enthaelt keine vorweggenommene Mechanismus-Erklaerung unter Wahloptionen; Hook und Phaenomen bleiben rein beschreibend, die Deutung folgt erst in Schritt 3.
+
+> 一句话本质: 先看清坐标轴和单位，再用斜率读速度、用面积读路程。
 ## Schritt 2 — entdecken: Ausruestungskiste der Mars-Crew
-PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
+PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文->德语，Evidenz：pretraining降认知负荷）：
 
 中文在上，德语在下：
 
@@ -92,9 +98,13 @@ BEISPIEL（正确例题示范，含教具操作与解答）：
 AUFGABE (berechnen, AFB II)：Bei einem Schulexperiment auf der Luftkissenbahn werden zu den Zeiten t = 0 s, 1 s, 2 s, 3 s und 4 s die Strecken s = 0 m; 0,50 m; 2,00 m; 4,50 m und 8,00 m gemessen. Prüfen Sie, ob eine gleichmäßig beschleunigte Bewegung vorliegt, und bestimmen Sie die Beschleunigung a sowie die Momentangeschwindigkeit bei t = 4 s.
 
 HILFE:
-1. Schritt 1: Prüfe mit dem Ansatz s = 0,5*a*t^2, ob a = 2s/t^2 für alle Messpunkte denselben Wert ergibt.
-2. Schritt 2: Setze t = 4 s und s = 8,00 m ein, um a zu bestimmen.
-3. Schritt 3: Für die Momentangeschwindigkeit nutze v = a*t (oder die Tangentensteigung im s-t-Diagramm).
+- Richtung: Zuerst Achsen, Einheiten und Messunsicherheit klaeren und $s$-$t$- sowie $v$-$t$-Diagramm zuordnen.
+- Richtung: Danach Steigung als Geschwindigkeit und Flaeche als Weg auswaehlen und die gesuchte Groesse festlegen.
+- Richtung: Erst am Ende Zahlen mit Einheiten einsetzen und Messfehler abschaetzen.
+COMPLETION (Lückentext):
+- Die Geschwindigkeit ist $v =$ ___ $\text{m/s}$ aus der $v$-$t$-Steigung.
+- Der Weg ist $s =$ ___ $\text{m}$ aus der Flaeche unter $v(t)$.
+- Die Unsicherheit betraegt $\Delta s =$ ___ $\text{m}$.
 
 MUSTERLÖSUNG: Testet man die Daten mit a = 2s/t^2, so ergibt sich für jeden Punkt derselbe Wert: 2*0,50/1^2 = 1,0; 2*2,00/2^2 = 1,0; 2*4,50/3^2 = 1,0; 2*8,00/4^2 = 1,0 (Einheit m/s^2). Da der Quotient konstant bleibt, liegen die s-t-Punkte auf einer Parabel und die Bewegung ist gleichmäßig beschleunigt mit a = 1,0 m/s^2. Die Momentangeschwindigkeit bei t = 4 s folgt aus v = a*t = 1,0 m/s^2 * 4 s = 4,0 m/s. Gegenprobe über das v-t-Diagramm: Die Gerade steigt linear von 0 auf 4,0 m/s, ihre Dreiecksfläche ist 0,5 * 4 s * 4,0 m/s = 8,0 m und stimmt mit der gemessenen Strecke überein.
 
@@ -103,7 +113,7 @@ MUSTERLÖSUNG: Testet man die Daten mit a = 2s/t^2, so ergibt sich für jeden Pu
 ## Schritt 5 — ausprobieren: Duell der Verfahren Training im Simulator
 VERGLEICH辨别实验（双向辨析：斜率眼 vs. 面积眼）：
 
-VERGLEICH: (Weg A quantitativ-rechnerisch gegen Weg B qualitativ-strukturell): Wähle erst das Verfahren — 【选程序】先判断题目给的是哪张图、问的是哪个量：(i) s-t-Verfahren（纵轴是路程 s，问速度 → 读切线斜率 v = Δs/Δt）oder (ii) v-t-Verfahren（纵轴是速度 v，问路程 → 读线下面积 s = Flaeche）—— dann lösen.
+VERGLEICH: (Weg A quantitativ-rechnerisch gegen Weg B qualitativ-strukturell): Wähle erst das Verfahren — 【选程序】先判断题目给的是哪张图、问的是哪个量：(i) s-t-Verfahren（纵轴是路程 s，问速度 -> 读切线斜率 v = Δs/Δt）oder (ii) v-t-Verfahren（纵轴是速度 v，问路程 -> 读线下面积 s = Flaeche）—— dann lösen.
 
 Weg A: Erst Verfahren waehlen, dann rechnen.
 
@@ -113,7 +123,7 @@ Weg B: Alternative Route mit Gegenrechnung.
 
 AUFGABE B：In einem v-t-Diagramm beschleunigt ein Fahrzeug von 0 s bis 4,0 s gleichmäßig von 0 m/s auf 8,0 m/s. Welches Verfahren ist zu wählen, und welchen Weg legt es zurück?
 
-HILFE: A: Die Achse trägt s, gefragt ist v → Verfahren (i), Steigung lesen. B: Die Achse trägt v, gefragt ist s → Verfahren (ii), Dreiecksfläche berechnen.【选程序：纵轴是 s 就用斜率，纵轴是 v 就用面积；先看轴标签再动手。】
+HILFE: A: Die Achse trägt s, gefragt ist v -> Verfahren (i), Steigung lesen. B: Die Achse trägt v, gefragt ist s -> Verfahren (ii), Dreiecksfläche berechnen.【选程序：纵轴是 s 就用斜率，纵轴是 v 就用面积；先看轴标签再动手。】
 
 ANTWORT: A erfordert Verfahren (i): Die Geschwindigkeit ist die Steigung der s-t-Geraden, also v = Δs/Δt = (6,0 m - 0 m) / (4,0 s - 0 s) = 1,5 m/s. B erfordert Verfahren (ii): Der Weg ist die Fläche unter der v-t-Geraden, hier ein Dreieck mit s = 0,5 * 4,0 s * 8,0 m/s = 16 m. Die mittlere Geschwindigkeit wäre hier s/t = 16 m / 4,0 s = 4,0 m/s, also die Hälfte der Endgeschwindigkeit, wie es bei gleichmäßiger Beschleunigung aus der Ruhe sein muss.
 
@@ -143,10 +153,24 @@ CHECK检索默写（自测 3 题，与答案配对）：
 ## Schritt 7 — szenario: Klausurtransfer: Kinematik: Messung und Diagramme: Training im Simulator
 ROLLE: Du bist Tutorin für Physik in der EF und leitest eine Kleingruppe bei der Auswertung eines Fahrbahnexperiments.
 SITUATION: Eine Mitschülerin hat eine Messreihe mit t in s und s in m aufgenommen, aber die Punkte streuen leicht um eine Kurve. Sie fragt dich, wie sie entscheiden soll, ob eine gleichförmige oder eine gleichmäßig beschleunigte Bewegung vorliegt, und wie sie daraus a und v bestimmt. Erkläre ihr das Vorgehen in einer zusammenhängenden Antwort (ca. 150 Wörter) unter Rückgriff auf s-t- und v-t-Diagramm.
+**AUFGABE (darstellen und beurteilen) [AFB II/III]**:
+Stellen Sie eine Messreihe in $s$-$t$- und $v$-$t$-Diagrammen dar und beurteilen Sie Messfehler und Methode.
+
 RUBRIC (30 XP): Benennung des Prüfkriteriums — Gerade (gleichförmig) vs. Parabel (beschleunigt) (5 XP) | Test mit dem Ansatz s = 0,5*a*t^2 bzw. a = 2s/t^2 und Angabe des konstanten Werts (10 XP) | Bestimmung von v als Tangentensteigung bzw. über v = a*t (10 XP) | Sauberes Ergebnis mit Einheit und Gegenprobe über die v-t-Fläche (5 XP).
 
 `Klausur-Satz: Wer Diagramme zeichnet, Steigung und Flaeche auswertet und Messunsicherheit diskutiert, erhaelt die volle Punktzahl.`
 
+
+ERWARTUNGSHORIZONT:
+Teilleistung | Punkte | Alternativweg
+Diagrammtyp mit Achsen und Einheiten waehlen | 5 NP | Digitalmessung als Alternative akzeptieren
+$v$ und $s$ aus Steigung und Flaeche bestimmen | 6 NP | Rechenweg ueber Ausgleichsgerade akzeptieren
+Messfehler und Eignung beurteilen | 4 NP | Urteil mit Wiederholungsvorschlag akzeptieren
+KERNSATZ (auswendig):
+`Im $v$-$t$-Diagramm gibt die Steigung $a$ und die Flaeche $s$, daher gehoert jede Groesse zum passenden Diagrammzugriff.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Messreihe mit $s(t)$ und $v(t)$ | Steigung und Flaeche korrekt zuordnen | Groesse aus passendem Zugriff
+- Selbsttest: Im $v$-$t$-Diagramm gibt die Steigung $a$ und die Flaeche ___ , daher gehoert jede Groesse zum passenden Diagrammzugriff.
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Training im Simulator
 TAKEAWAY 1盒（核心总结）：
 

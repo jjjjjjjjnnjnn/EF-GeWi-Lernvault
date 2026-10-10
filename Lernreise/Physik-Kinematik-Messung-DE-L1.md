@@ -8,7 +8,7 @@ operatoren: [darstellen, berechnen, interpretieren, beurteilen]
 klausurrelevant: true
 datum: 2026-09-25
 tags: [EF, Physik, Kinematik]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Kinematik: Messung und Diagramme (L1, Ziel Klausur)
@@ -28,6 +28,12 @@ Hook / Phaenomen: Lichtschranken klicken, das Handy stoppt: Jede **Messung** von
 
 `Klausur-Satz: Kinematik liest Bewegung aus Diagrammen: Steigung gibt Tempo, Flaeche gibt Weg, Mittel gegen Momentan entscheidet Deutung.`
 
+
+AUFLÖSUNG (nach der Wahl lesen)
+
+C1-Pruefung: Dieser Schritt enthaelt keine vorweggenommene Mechanismus-Erklaerung unter Wahloptionen; Hook und Phaenomen bleiben rein beschreibend, die Deutung folgt erst in Schritt 3.
+
+> 一句话本质: 先看清坐标轴和单位，再用斜率读速度、用面积读路程。
 ## Schritt 2 — entdecken: Ausruestungskiste der Mars-Crew
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
@@ -92,9 +98,13 @@ BEISPIEL (Sandbox Level mit Werkzeug):
 AUFGABE (Levelziel, AFB II): Bei einem Schulexperiment auf der Luftkissenbahn werden zu den Zeiten $t = 0\,\mathrm{s}$, $1\,\mathrm{s}$, $2\,\mathrm{s}$, $3\,\mathrm{s}$ und $4\,\mathrm{s}$ die Strecken $s = 0\,\mathrm{m}$; $0{,}50\,\mathrm{m}$; $2{,}00\,\mathrm{m}$; $4{,}50\,\mathrm{m}$ und $8{,}00\,\mathrm{m}$ gemessen. Pruefen Sie, ob eine gleichmaessig beschleunigte Bewegung vorliegt, und bestimmen Sie die Beschleunigung $a$ sowie die Momentangeschwindigkeit bei $t = 4\,\mathrm{s}$.
 
 HILFE:
-1. Pruefen Sie mit dem Ansatz $s = 0{,}5\cdot a\cdot t^2$, ob $a = 2s/t^2$ fuer alle Messpunkte denselben Wert ergibt.
-2. Setzen Sie $t = 4\,\mathrm{s}$ und $s = 8{,}00\,\mathrm{m}$ ein, um $a$ zu bestimmen.
-3. Nutzen Sie fuer die Momentangeschwindigkeit $v = a\cdot t$ und gegenpruefen Sie per Dreiecksflaeche im $v$-$t$-Diagramm.
+- Richtung: Zuerst Achsen, Einheiten und Messunsicherheit klaeren und $s$-$t$- sowie $v$-$t$-Diagramm zuordnen.
+- Richtung: Danach Steigung als Geschwindigkeit und Flaeche als Weg auswaehlen und die gesuchte Groesse festlegen.
+- Richtung: Erst am Ende Zahlen mit Einheiten einsetzen und Messfehler abschaetzen.
+COMPLETION (Lückentext):
+- Die Geschwindigkeit ist $v =$ ___ $\text{m/s}$ aus der $v$-$t$-Steigung.
+- Der Weg ist $s =$ ___ $\text{m}$ aus der Flaeche unter $v(t)$.
+- Die Unsicherheit betraegt $\Delta s =$ ___ $\text{m}$.
 
 MUSTERLOESUNG: Mit $a = 2s/t^2$ folgt fuer jeden Punkt derselbe Wert: $2\cdot 0{,}50/1^2 = 1{,}0$; $2\cdot 2{,}00/2^2 = 1{,}0$; $2\cdot 4{,}50/3^2 = 1{,}0$; $2\cdot 8{,}00/4^2 = 1{,}0$ (Einheit $\mathrm{m/s^2}$). Daher liegt eine gleichmaessig beschleunigte Bewegung mit $a = 1{,}0\,\mathrm{m/s^2}$ vor. Die Momentangeschwindigkeit bei $t = 4\,\mathrm{s}$ betraegt $v = a\cdot t = 1{,}0\cdot 4 = 4{,}0\,\mathrm{m/s}$. Gegenprobe per $v$-$t$-Flaeche: Dreieck $0{,}5\cdot 4\,\mathrm{s}\cdot 4{,}0\,\mathrm{m/s} = 8{,}0\,\mathrm{m}$ stimmt mit der Messstrecke ueberein.
 
@@ -141,10 +151,24 @@ CHECK (Selbsttest, 3 Fragen mit Antworten):
 ## Schritt 7 — szenario: Klausurtransfer: Kinematik: Messung und Diagramme: Newton am Bremstriebwerk
 ROLLE: Du bist Tutorin fuer Physik in der EF und leitest eine Kleingruppe bei der Auswertung eines Fahrbahnexperiments.
 SITUATION: Eine Mitschuelerin hat eine Messreihe ($t$ in $\mathrm{s}$, $s$ in $\mathrm{m}$) aufgenommen; die Punkte streuen leicht um eine Kurve. Erklaere in einer zusammenhaengenden Antwort (ca. 150 Woerter), wie sie zwischen gleichfoermiger und gleichmaessig beschleunigter Bewegung entscheidet und daraus $a$ und $v$ bestimmt. Nutze $s$-$t$- und $v$-$t$-Diagramm.
+**AUFGABE (darstellen und beurteilen) [AFB II/III]**:
+Stellen Sie eine Messreihe in $s$-$t$- und $v$-$t$-Diagrammen dar und beurteilen Sie Messfehler und Methode.
+
 RUBRIC (30 XP): Pruefkriterium Gerade gegen Parabel (5 XP) | Test mit $s = 0{,}5 \cdot a \cdot t^2$ und konstantem Wert (10 XP) | Bestimmung von $v$ als Tangentensteigung oder $v = a \cdot t$ (10 XP) | Sauberes Ergebnis mit Einheit und Gegenprobe ueber die $v$-$t$-Flaeche (5 XP).
 
 `Klausur-Satz: Wer Diagramme zeichnet, Steigung und Flaeche auswertet und Messunsicherheit diskutiert, erhaelt die volle Punktzahl.`
 
+
+ERWARTUNGSHORIZONT:
+Teilleistung | Punkte | Alternativweg
+Diagrammtyp mit Achsen und Einheiten waehlen | 5 NP | Digitalmessung als Alternative akzeptieren
+$v$ und $s$ aus Steigung und Flaeche bestimmen | 6 NP | Rechenweg ueber Ausgleichsgerade akzeptieren
+Messfehler und Eignung beurteilen | 4 NP | Urteil mit Wiederholungsvorschlag akzeptieren
+KERNSATZ (auswendig):
+`Im $v$-$t$-Diagramm gibt die Steigung $a$ und die Flaeche $s$, daher gehoert jede Groesse zum passenden Diagrammzugriff.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Messreihe mit $s(t)$ und $v(t)$ | Steigung und Flaeche korrekt zuordnen | Groesse aus passendem Zugriff
+- Selbsttest: Im $v$-$t$-Diagramm gibt die Steigung $a$ und die Flaeche ___ , daher gehoert jede Groesse zum passenden Diagrammzugriff.
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Newton am Bremstriebwerk
 TAKEAWAY (Kernzusammenfassung):
 

@@ -8,7 +8,7 @@ operatoren: [beschreiben, erklaeren, beurteilen]
 klausurrelevant: true
 datum: 2026-10-03
 tags: [EF, Physik, Quantenphysik, Doppelspalt, Interferenz, Welle-Teilchen-Dualismus]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Das Doppelspaltexperiment und die Natur von Quantenobjekten (L1, Ziel Klausur)
@@ -30,8 +30,14 @@ Hook / Phaenomen: Schiesst man Tennisbaelle auf eine Wand mit zwei Schlitzen, la
 
 `Klausur-Satz: Das Doppelspaltexperiment mit Einzelelektronen beweist, dass Quantenobjekte weder klassische Massepunkte noch reine Wellen sind, sondern ein Interferenzmuster gemaess einer Wahrscheinlichkeitswelle $\psi$ ausbilden.`
 
+
+AUFLÖSUNG (nach der Wahl lesen)
+
+C1-Pruefung: Dieser Schritt enthaelt keine vorweggenommene Mechanismus-Erklaerung unter Wahloptionen; Hook und Phaenomen bleiben rein beschreibend, die Deutung folgt erst in Schritt 3.
+
+> 一句话本质: 单个电子也会自己跟自己干涉，一看它走哪条缝，条纹立刻消失。
 ## Schritt 2 — entdecken: Ausruestungskiste der Quanten-Unit
-PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
+PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文->德语，Evidenz：pretraining降认知负荷）：
 
 中文在上，德语在下：
 
@@ -99,9 +105,13 @@ In einer Elektronenbeugungsroehre werden Elektronen ($m_e = 9,109 \times 10^{-31
 2. Bestimmen Sie den Abstand $s_1$ des ersten Interferenzmaximums ($k = 1$) vom zentralen Hauptmaximum. (20 BE)
 
 HILFE:
-1. Schritt 1: Kinetische Energie: $E_{\text{kin}} = e \cdot U_B = \frac{1}{2} m_e v^2 \implies v = \sqrt{\frac{2 e U_B}{m_e}}$.
-2. Schritt 2: De-Broglie-Formel: $\lambda = \frac{h}{p} = \frac{h}{m_e \cdot v}$.
-3. Schritt 3: Interferenzabstand: $s_1 = 1 \cdot \frac{\lambda \cdot a}{d}$.
+- Richtung: Zuerst Teilchen- und Wellenaspekt trennen und $\psi$-Beschreibung vom Bahnbegriff abgrenzen.
+- Richtung: Danach De-Broglie-Ansatz und Interferenzbedingung fuer $\lambda$ und $s_k$ waehlen.
+- Richtung: Erst am Ende Zahlen einsetzen und Welcher-Weg-Folgerung ohne Bahnsprache formulieren.
+COMPLETION (Lückentext):
+- Die Wellenlaenge ist $\lambda =$ ___ $\text{m}$ aus $\lambda = h/p$.
+- Der Maximumsabstand ist $s_1 =$ ___ $\text{m}$ aus $s_1 = \lambda a/d$.
+- Mit Welcher-Weg-Info gilt $P =$ ___ statt Interferenz.
 
 MUSTERLÖSUNG:
 1. Berechnung von Geschwindigkeit und De-Broglie-Wellenlaenge:
@@ -140,14 +150,21 @@ PRÜFUNGSSZENARIO (KLP NRW Physik GK/LK Inhaltsfeld 3: Quantenphysik / Kopenhage
 
 Im sogenannten "Delayed-Choice-Gedankenexperiment" (Verzoegerte Entscheidung nach John Archibald Wheeler) entscheidet der Experimentator erst NACHDEM das Photon bzw. Elektron den Doppelspalt passiert hat, aber BEVOR es auf dem Detektorschirm einschlaegt, ob er die Welcher-Weg-Messung zuschaltet oder nicht.
 
-AUFGABE (erklaeren & beurteilen, AFB II/III):
+AUFGABE (erklaeren & beurteilen, [AFB II/III]):
 1. Erklaeren Sie die scheinbare Paradoxie des Delayed-Choice-Experiments aus Sicht der klassischen Kausalitaet. (12 BE)
 2. Beurteilen Sie vor diesem Hintergrund das Konzept der "Realitaet" vor dem Messprozess in der Kopenhagener Deutung. (18 BE)
 
 ERWARTUNGSHORIZONT:
-- AFB II: Klassisch gedacht muesste sich das Quantenobjekt bereits am Doppelspalt entschieden haben, ob es als Welle (durch beide Spalte) oder als Teilchen (durch einen Spalt) hindurchfliegt. Wenn der Experimentator jedoch erst Sekundenbruchteile spaeter im Flug entscheidet, die Spalte zu beobachten, scheint es, als wuerde die spaetere Messung rueckwirkend in die Vergangenheit eingreifen und die fruehere Entscheidung des Teilchens aendern.
-- AFB III: Die Kopenhagener Deutung (Bohr, Heisenberg) loest die Paradoxie auf, indem sie den Begriff der "objektiven Teilchenbahn vor der Messung" als physikalisch sinnlos verwirft. Das Quantenobjekt hat vor dem tatsaechlichen Messereignis keine Vorgeschichte im Sinne klassischer Bahnen! Erst das vollstaendige, geschlossene Gesamtexperiment (inklusive Detektor am Schirm) definiert das physikalische Phaenomen. Nicht die Vergangenheit wird geaendert, sondern das Quantensystem verharrt bis zur endgueltigen Detektion in einer raumzeitlichen Verspassung der Moeglichkeiten.
+Teilleistung | Punkte | Alternativweg
+Wahrscheinlichungs-Deutung mit $\psi$ nennen | 5 NP | Weg ueber Born-Regel akzeptieren
+$\lambda$ und $s_1$ berechnen | 6 NP | Zahlenweg ueber $eU$-Impuls akzeptieren
+Realitaet vor der Messung beurteilen | 4 NP | Urteil mit Komplementaritaet akzeptieren
 
+KERNSATZ (auswendig):
+`Einzelne Quanten bilden $P = |\psi_1 + \psi_2|^2$, daher zerstoert Welcher-Weg-Info den Interferenzterm.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Einzelnes Quant am Doppelspalt | Amplituden statt Bahnen addieren | Muster aus $\psi$-Summe
+- Selbsttest: Einzelne Quanten bilden $P = |\psi_1 + \psi_2|^2$, daher zerstoert ___ den Interferenzterm.
 ## Schritt 7 — check: Format-Check & Scoring
 30 XP Schnelltest zur Verstaendigungssicherung:
 

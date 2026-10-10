@@ -8,7 +8,7 @@ operatoren: [beschreiben, berechnen, begruenden]
 klausurrelevant: true
 datum: 2026-09-25
 tags: [EF, Physik, Methoden]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: CN-Tricks: sechs Verfahren fuer die Physik-Klausur (L1, Ziel Klausur)
@@ -30,8 +30,14 @@ Hook / Phaenomen: Zwei Wagen mit 15 Newton, doch innen zieht die Kupplung nur mi
 
 `Klausur-Satz: Erst das Bild, dann die Formel, dann die Zahl: Kein Ansatz ohne Kraeftediagramm und Systemwahl.`
 
+
+AUFLÖSUNG (nach der Wahl lesen)
+
+C1-Pruefung: Dieser Schritt enthaelt keine vorweggenommene Mechanismus-Erklaerung unter Wahloptionen; Hook und Phaenomen bleiben rein beschreibend, die Deutung folgt erst in Schritt 3.
+
+> 一句话本质: 好成绩靠程序：先画图再选系统，算完检查单位，结论只在条件下用。
 ## Schritt 2 — entdecken: Ausruestungskiste der Mars-Crew
-PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
+PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文->德语，Evidenz：pretraining降认知负荷）：
 
 中文在上，德语在下：
 
@@ -48,7 +54,7 @@ ENTDECKEN（1概念 + 1文字图解）：
 
 中文：中国物理训练强调"程序化"，好处是稳定、不漏步；德国 Klausur 强调"规范表达"，好处是拿步骤分。两者其实互补：中文套路决定"先做什么"，德语 Ansatz 决定"怎么写才给分"。下面六招，每招给一道自编小题和一句德语检验句，检验句就是你写进答卷的那句话。
 
-**Trick 1 受力分析程序** — 按"重力→弹力→摩擦力→外加力"顺序画受力图，画完再列式。
+**Trick 1 受力分析程序** — 按"重力->弹力->摩擦力->外加力"顺序画受力图，画完再列式。
 自编小题：小车 m = 3,0 kg 在 alpha = 30 Grad 的光滑斜面上（sin = 0,50），求下滑加速度。解：F_H = m*g*sin(alpha) = 3,0*10*0,50 = 15 N，a = F_H/m = 5,0 m/s^2。
 德语检验句：`Alle Kraefte werden mit Richtung im Kraeftediagramm dargestellt, dann folgt der Ansatz F_res = m*a.`
 
@@ -113,9 +119,13 @@ BEISPIEL（正确例题示范，含教具操作与解答）：
 AUFGABE (berechnen, AFB II)：Ein Block der Masse m = 5,0 kg liegt auf einer waagerechten Tischplatte. Er wird mit einer horizontalen Zugkraft F_Zug = 20 N gezogen; der Gleitreibungskoeffizient beträgt mu = 0,20, es gilt g = 10 m/s^2. Beschreiben Sie das Kräftediagramm und berechnen Sie die Beschleunigung des Blocks. Prüfen Sie das Ergebnis mit der Dimensionsprobe.
 
 HILFE:
-1. Schritt 1 (Kraeftediagramm): Zeichne Gewichtskraft nach unten, Normalkraft nach oben, Zugkraft nach rechts und Reibung nach links.
-2. Schritt 2 (Ansatz): Senkrecht gilt Kräftegleichgewicht F_N = m*g; waagerecht gilt F_res = F_Zug - mu*F_N = m*a.
-3. Schritt 3 (Zahlen und Dimensionsprobe): Setze die Werte ein und prüfe, ob die Einheit der Beschleunigung m/s^2 ergibt.
+- Richtung: Zuerst Kraeftediagramm und Systemwahl festlegen, bevor eine Formel gewaehlt wird.
+- Richtung: Danach Gesamt- und Teilsystem trennen und Ersatz-, Flaechen- oder Energieverfahren zuordnen.
+- Richtung: Erst am Ende Zahlen einsetzen und jede Stufe mit Dimensionsprobe sichern.
+COMPLETION (Lückentext):
+- Das System ist ___ mit Gesamtmasse $M =$ ___ $\text{kg}$.
+- Die Ersatzgroesse ist ___ aus $Formel =$ ___ .
+- Die Dimensionsprobe lautet $[___] =$ ___ .
 
 MUSTERLÖSUNG: Das Kräftediagramm enthält genau vier Kräfte: die Gewichtskraft F_G = m*g = 5,0 kg * 10 m/s^2 = 50 N nach unten, die gleich große Normalkraft F_N = 50 N nach oben, die Zugkraft F_Zug = 20 N nach rechts und die Gleitreibung F_R = mu*F_N = 0,20 * 50 N = 10 N nach links. Senkrecht gilt Kräftegleichgewicht, waagerecht ist die resultierende Kraft F_res = F_Zug - F_R = 20 N - 10 N = 10 N. Aus F_res = m*a folgt a = F_res/m = 10 N / 5,0 kg = 2,0 m/s^2. Dimensionsprobe: [F_res/m] = (kg*m/s^2)/kg = m/s^2, was der Einheit der Beschleunigung entspricht; die Größenordnung 2,0 m/s^2 ist für einen gezogenen Block plausibel.
 
@@ -134,7 +144,7 @@ Weg B: Alternative Route mit Gegenrechnung.
 
 AUFGABE B：Bei denselben Wagen ist nun die Zugkraft im Verbindungsseil gefragt. Welches Verfahren ist zu wählen?
 
-HILFE: A: Gefragt ist die gemeinsame Beschleunigung des ganzen Systems → Verfahren (i), a = F/(m1+m2). B: Gefragt ist eine Kraft zwischen den Wagen → Verfahren (ii), einen Wagen freischneiden und F_innen = m_teil*a rechnen.【选程序：问整体多快走整体程序；问物体间作用力走隔离程序。】
+HILFE: A: Gefragt ist die gemeinsame Beschleunigung des ganzen Systems -> Verfahren (i), a = F/(m1+m2). B: Gefragt ist eine Kraft zwischen den Wagen -> Verfahren (ii), einen Wagen freischneiden und F_innen = m_teil*a rechnen.【选程序：问整体多快走整体程序；问物体间作用力走隔离程序。】
 
 ANTWORT: A erfordert Verfahren (i): Die beiden Wagen bilden ein System der Gesamtmasse m_ges = 2,0 kg + 4,0 kg = 6,0 kg, die äußere Kraft ist F = 12 N, also a = F/m_ges = 12 N / 6,0 kg = 2,0 m/s^2. B erfordert Verfahren (ii): Man schneidet den hinteren Wagen (m2 = 4,0 kg) frei; auf ihn wirkt nur die Seilkraft als äußere Kraft, und es gilt F_Seil = m2*a = 4,0 kg * 2,0 m/s^2 = 8,0 N. Zur Kontrolle wirkt auf den vorderen Wagen (2,0 kg) die Differenz 12 N - 8,0 N = 4,0 N, was gerade m1*a = 2,0 kg * 2,0 m/s^2 = 4,0 N entspricht.
 
@@ -164,10 +174,24 @@ CHECK检索默写（自测 3 题，与答案配对）：
 ## Schritt 7 — szenario: Klausurtransfer: CN-Tricks: sechs Verfahren fuer die Physik-Klausur: Staub frisst die Messung
 ROLLE: Du bist Nachhilfelehrerin und bringst einer Schülergruppe die chinesischen Verfahren als Lernstrategie für die Physik-Klausur näher.
 SITUATION: Die Gruppe rechnet zwar schnell, verliert aber regelmäßig Punkte, weil die Ansätze fehlen und die Diagramme unvollständig sind. Erkläre in einer zusammenhängenden Stellungnahme (ca. 150 Wörter), wie man die sechs Verfahren mit den deutschen Schreibregeln verbindet, sodass Tempo und Formalkorrektheit zusammenkommen.
+**AUFGABE (auswaehlen und begruenden) [AFB II/III]**:
+Waehlen Sie fuer einen Mehrkoerper-Fall Gesamt- oder Einzelsystem und begruenden Sie die Schnittfuehrung.
+
 RUBRIC (30 XP): Benennung und Zuordnung von mindestens drei Verfahren zu deutschen Schritten (10 XP) | Erlaeuterung, warum der ausgeschriebene Ansatz Punkte sichert (10 XP) | Beispiel zur Wahl zwischen Ganzheits- und Isolationsverfahren (5 XP) | Adressatengerechte, fachsprachlich korrekte Darstellung (5 XP).
 
 `Klausur-Satz: Wer System schneidet, Kraefte bilanziert, Ersatzkraft nutzt und Einheiten prueft, erhaelt die volle Punktzahl.`
 
+
+ERWARTUNGSHORIZONT:
+Teilleistung | Punkte | Alternativweg
+Systemwahl mit Schnitt begruenden | 5 NP | Alternative ueber Nachbar-Trick akzeptieren
+Innere Kraft mit Einheit berechnen | 6 NP | Rechenweg ueber Ersatzkraft akzeptieren
+Bedingung der Kurzregel nennen | 4 NP | Urteil mit Dimensionsprobe akzeptieren
+KERNSATZ (auswendig):
+`Erst Bild und System, dann Formel und Zahl, daher traegt jede Stufe eine eigene Einheitenprobe.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Verfahren mit System und Bild | Trick passend zur Frage waehlen | Ergebnis durch Probe sichern
+- Selbsttest: Erst Bild und System, dann ___ , daher traegt jede Stufe eine eigene Einheitenprobe.
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Staub frisst die Messung
 TAKEAWAY 1盒（核心总结）：
 

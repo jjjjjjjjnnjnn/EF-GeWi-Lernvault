@@ -8,7 +8,7 @@ operatoren: [beschreiben, berechnen, begruenden]
 klausurrelevant: true
 datum: 2026-09-26
 tags: [EF, Physik, CN]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Freier Fall mit und ohne Luftwiderstand (L1, Ziel Klausur)
@@ -32,8 +32,14 @@ Hook / Phaenomen: Hammer und Feder fallen im Vakuum gleich schnell, in Luft nich
 
 `Klausur-Satz: Freier Fall heisst konstante Beschleunigung g; Luftwiderstand bremst bis zum Kraeftegleichgewicht mit konstanter Endgeschwindigkeit.`
 
+
+AUFLÖSUNG (nach der Wahl lesen)
+
+C1-Pruefung: Dieser Schritt enthaelt keine vorweggenommene Mechanismus-Erklaerung unter Wahloptionen; Hook und Phaenomen bleiben rein beschreibend, die Deutung folgt erst in Schritt 3.
+
+> 一句话本质: 真空里轻重同时落地，有空气时阻力把下落变成先加速后匀速。
 ## Schritt 2 — entdecken: Ausruestungskiste der Mars-Crew
-PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
+PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文->德语，Evidenz：pretraining降认知负荷）：
 
 中文在上，德语在下：
 
@@ -112,6 +118,17 @@ HILFE（中德双语步骤）：
 3. 中文：第3步判空气中两值都偏小，关键词：Vergleich。
    Schritt 3 (DE): In Luft liegen beide Werte darunter.
 
+
+HILFE:
+- Richtung: Zuerst klaeren, ob Luftwiderstand vernachlaessigbar ist, und das passende Fallgesetz waehlen.
+- Richtung: Danach Anfangshoehe, Anfangsbedingung und gesuchte Groesse (Zeit, Geschwindigkeit oder Endlage) festlegen.
+- Richtung: Erst am Ende Zahlen mit Einheiten einsetzen und das Ergebnis mit $g \approx 10 \, \text{m/s}^2$ abschaetzen.
+
+COMPLETION (Lückentext):
+- Die Fallzeit ist $t =$ ___ $\text{s}$ aus $h = \frac{1}{2} \cdot g \cdot t^2$.
+- Die Aufprallgeschwindigkeit ist $v =$ ___ $\text{m/s}$ aus $v = g \cdot t$.
+- Mit Luftwiderstand naehert sich $v$ der ___ $v_{\text{ Grenz}}$.
+
 MUSTERLOESUNG：中文：真空下落2秒高度约20米、落地约20米每秒；有空气时风阻吃掉部分加速度，同样时间掉得更浅更慢，速度曲线趴向极限速度。
 
 MUSTERLOESUNG (DE): Aus $h = 0{,}5\,g\,t^2$ folgt $t = 2{,}0\,\mathrm{s}$ bei ca. $20\,\mathrm{m}$ und $v = g\,t \approx 20\,\mathrm{m/s}$. Mit Luft waechst $F_W$ mit $v$, die Kurve flacht bis $v_G$ ab.
@@ -129,7 +146,7 @@ Weg B: Alternative Route mit Gegenrechnung.
 
 AUFGABE B：Ein Fallschirmspringer oeffnet den Schirm; skizzieren Sie $v(t)$ und erklaeren Sie den weiteren Verlauf.
 
-HILFE: A enthaelt evakuiert → Verfahren (i)，三式中时间与质量无关。B 含 Fallschirm → Verfahren (ii)，阻力突增后减速至新的极限速度。【选程序：见真空算三式；见阻力画曲线。】
+HILFE: A enthaelt evakuiert -> Verfahren (i)，三式中时间与质量无关。B 含 Fallschirm -> Verfahren (ii)，阻力突增后减速至新的极限速度。【选程序：见真空算三式；见阻力画曲线。】
 
 ANTWORT: A erfordert Verfahren (i): Beide fallen mit $a = g$, aus $t = \sqrt{2h/g}$ folgt gleiche Fallzeit — sie kommen gleichzeitig an. B erfordert Verfahren (ii): Beim Oeffnen waechst $F_L$ sprunghaft ueber $mg$, also $F_{res}$ nach oben und der Springer wird langsamer; mit sinkendem $v$ sinkt $F_L$ wieder, bis $F_L = mg$ und eine kleinere Grenzgeschwindigkeit $v_G$ als gleichfoermige Sinkgeschwindigkeit erreicht ist.
 
@@ -159,10 +176,24 @@ CHECK检索默写（自测 3 题，与答案配对）：
 ## Schritt 7 — szenario: Klausurtransfer: Freier Fall mit und ohne Luftwiderstand: Gleiten ohne Grip
 ROLLE: Du erklaerst einer 8. Klasse den Unterschied zwischen Ideal und Realitaet.
 SITUATION: Die Klasse glaubt, schwere Koerper fielen immer schneller. Erklaere in einer zusammenhaengenden Darstellung (ca. 150 Woerter) mit dem Feder-Muenz-Versuch und dem Fallschirm-Beispiel, wann die Idealformeln gelten und was der Luftwiderstand qualitativ aendert.
+**AUFGABE (berechnen und beurteilen) [AFB II/III]**:
+Berechnen Sie Fallzeit und Aufprallgeschwindigkeit aus gegebener Hoehe und beurteilen Sie den Einfluss des Luftwiderstands.
+
 RUBRIC (30 XP): Idealgesetze mit Formeln und Bedingung (10 XP) | Rolle des Luftwiderstands und Grenzgeschwindigkeit (10 XP) | Zwei Beispiele (Vakuumroehre, Fallschirm) (6 XP) | Adressatengerechte Sprache (4 XP).
 
 `Klausur-Satz: Wer Bewegungsgleichung aufstellt, Endgeschwindigkeit aus dem Gleichgewicht bestimmt und Diagramm deutet, erhaelt die volle Punktzahl.`
 
+
+ERWARTUNGSHORIZONT:
+Teilleistung | Punkte | Alternativweg
+Fallgesetz mit Anfangsbedingung nennen | 5 NP | Herleitung ueber $v$-$t$-Flaeche akzeptieren
+$t$ und $v$ mit Einheiten berechnen | 6 NP | Rechenweg ueber Energiesatz akzeptieren
+Luftwiderstand als Grenzgeschwindigkeit deuten | 4 NP | Urteil mit Modellgrenze akzeptieren
+KERNSATZ (auswendig):
+`Ohne Luftwiderstand gilt $h = \frac{1}{2} \cdot g \cdot t^2$, daher haengt die Fallzeit nur von der Hoehe ab.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Freier Fall aus der Ruhe mit Hoehe $h$ | Weg-Zeit-Gesetz mit $g$ anwenden | Fallzeit ohne Masse aus Hoehe
+- Selbsttest: Ohne Luftwiderstand gilt $h = \frac{1}{2} \cdot g \cdot$ ___ , daher haengt die Fallzeit nur von der Hoehe ab.
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Gleiten ohne Grip
 TAKEAWAY 1盒（核心总结）：
 

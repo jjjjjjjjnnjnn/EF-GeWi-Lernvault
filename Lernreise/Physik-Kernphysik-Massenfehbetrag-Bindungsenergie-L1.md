@@ -8,7 +8,7 @@ operatoren: [beschreiben, berechnen, beurteilen]
 klausurrelevant: true
 datum: 2026-10-03
 tags: [EF, Physik, Kernphysik, Massendefekt, Bindungsenergie, Einsteins-Formel, Kernspaltung]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Kernphysik: Massendefekt, Bindungsenergie und Kernspaltung (L1, Ziel Klausur)
@@ -28,8 +28,14 @@ Stell dir vor, du kaufst im Supermarkt vier separate Lego-Bausteine: zwei rote u
 
 `Klausur-Satz: Die Masse eines stabilen Atomkerns ist stets kleiner als die Summe der Ruhemassen seiner isolierten Nukleonen; die Massendifferenz entspricht der bei der Kernentstehung freigesetzten Bindungsenergie.`
 
+
+AUFLÖSUNG (nach der Wahl lesen)
+
+C1-Pruefung: Dieser Schritt enthaelt keine vorweggenommene Mechanismus-Erklaerung unter Wahloptionen; Hook und Phaenomen bleiben rein beschreibend, die Deutung folgt erst in Schritt 3.
+
+> 一句话本质: 组装原子核会变轻一点，消失的质量按 E 等于质量乘光速平方变成结合能。
 ## Schritt 2 — entdecken: Grundbegriffe der Kernphysik
-PRETRAINING术语盒（核心4词，先读三遍中德，合书自测中文→德语）：
+PRETRAINING术语盒（核心4词，先读三遍中德，合书自测中文->德语）：
 
 - 质量亏损 — Massendefekt ($\Delta m$): 组成原子核的所有核子的静止质量之和与原子核实际测定质量之间的差值。 Die Differenz zwischen der Gesamtmasse der einzelnen freien Nukleonen und der tatsaechlichen Ruhemasse des gebundenen Kerns: $\Delta m = Z \cdot m_p + N \cdot m_n - m_{\text{Kern}}$.
 - 原子核结合能 — Bindungsenergie ($E_B$): 将一个原子核完全拆散为自由质子和中子所必须提供的能量，也是核子结合成核时释放的能量。 Die Energie, die frei wird, wenn sich freie Nukleonen zu einem Atomkern verbinden ($E_B = \Delta m \cdot c^2$).
@@ -70,6 +76,17 @@ Gegeben sind die Ruhemassen:
 1. Berechne den Massendefekt $\Delta m$ des Helium-Kerns in atomaren Masseneinheiten $u$ und in Kilogramm.
 2. Ermittle die gesamte Bindungsenergie $E_B$ in $\text{MeV}$ sowie die Bindungsenergie pro Nukleon.
 
+
+HILFE:
+- Richtung: Zuerst Nukleonenzahlen $Z$ und $N$ sowie Kern- und Nukleonenmassen sauber trennen.
+- Richtung: Danach Massendefekt $\Delta m$ bilden und ueber $E_B = \Delta m \cdot c^2$ in Energie umrechnen.
+- Richtung: Erst am Ende Zahlen in $u$ und $\text{MeV}$ einsetzen und pro Nukleon vergleichen.
+
+COMPLETION (Lückentext):
+- Der Massendefekt ist $\Delta m =$ ___ $\text{u}$ aus $\Delta m = Z m_p + N m_n - m_{\text{Kern}}$.
+- Die Bindungsenergie ist $E_B =$ ___ $\text{MeV}$ aus $E_B = \Delta m \cdot 931{,}49 \, \text{MeV/u}$.
+- Pro Nukleon gilt $E_B/A =$ ___ $\text{MeV}$.
+
 MUSTERLOESUNG:
 1. Berechnung des Massendefekts:
    - Summe der freien Einzelbausteine ($Z = 2$ Protonen, $N = 2$ Neutronen):
@@ -108,6 +125,9 @@ Wird nach `Energieabgabe bei Kernreaktionen` gefragt, argumentiere immer ueber d
 
 PRUEFUNGSSZENARIO (KLP NRW Physik LK Inhaltsfeld 4: Kernphysik):
 
+**AUFGABE (berechnen und beurteilen) [AFB II/III]**:
+Berechnen Sie $\Delta m$ und $E_B$ eines Kerns und beurteilen Sie Spaltung oder Fusion anhand von $E_B/A$.
+
 ### AFB I: Reaktionsgleichung
 Ergaenze die vollstaendige Spaltungsgleichung fuer Uran-235 beim Einfang eines thermischen Neutrons:
 $^{235}_{92}\text{U} + ^1_0\text{n} \to ^{141}_{56}\text{Ba} + ^{92}_{36}\text{Kr} + x \cdot ^1_0\text{n} + \gamma$
@@ -119,6 +139,17 @@ Berechne die bei dieser Einzelspaltung freiwerdende Energie in Joule, wenn der M
 ### AFB III: Kritisches Gesamturteil
 Diskutiere die zivilisatorische Bedeutung von Fusionskraftwerken gegenueber konventionellen Kernkraftwerken hinsichtlich Rohstoffverfuegbarkeit, inhärenter physikalischer Sicherheit (kein Tschernobyl-Super-GAU moeglich) und Endlagerproblematik.
 
+
+ERWARTUNGSHORIZONT:
+Teilleistung | Punkte | Alternativweg
+Massendefekt mit $Z$ und $N$ aufstellen | 5 NP | Masseweg in $\text{kg}$ akzeptieren
+$E_B$ und $E_B/A$ berechnen | 6 NP | Umweg ueber $1\,u = 931{,}49\,\text{MeV}/c^2$ akzeptieren
+Spaltung oder Fusion anhand der Kurve beurteilen | 4 NP | Urteil mit Abfall-Risiko akzeptieren
+KERNSATZ (auswendig):
+`Der Massendefekt $\Delta m$ liefert $E_B = \Delta m \cdot c^2$, daher misst $E_B/A$ die Kernstabilitaet.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Kern aus $Z$ Protonen und $N$ Neutronen | $\Delta m$ bilden und in $E_B$ umrechnen | Stabilitaet aus $E_B/A$
+- Selbsttest: Der Massendefekt $\Delta m$ liefert $E_B = \Delta m \cdot$ ___ , daher misst $E_B/A$ die Kernstabilitaet.
 ## Schritt 7 — check: Format-Check & Scoring
 
 30 XP Schnelltest zur Verstaendigungssicherung:

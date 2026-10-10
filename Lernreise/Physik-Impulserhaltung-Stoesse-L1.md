@@ -8,7 +8,7 @@ operatoren: [darstellen, berechnen, begruenden]
 klausurrelevant: true
 datum: 2026-09-26
 tags: [EF, Physik, Mechanik]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Impulserhaltung und Stoesse (L1, Ziel Klausur)
@@ -34,6 +34,12 @@ Hook / Phaenomen: Billardkugeln klicken, Autos knirschen: Der **Impuls** wandert
 
 `Klausur-Satz: Impuls bleibt erhalten: Masse mal Geschwindigkeit summiert sich vor und nach dem Stoss zur gleichen Summe.`
 
+
+AUFLÖSUNG (nach der Wahl lesen)
+
+C1-Pruefung: Dieser Schritt enthaelt keine vorweggenommene Mechanismus-Erklaerung unter Wahloptionen; Hook und Phaenomen bleiben rein beschreibend, die Deutung folgt erst in Schritt 3.
+
+> 一句话本质: 碰撞前后的总动量不变，想求速度就把碰撞前后的动量账列相等。
 ## Schritt 2 — entdecken: Ausruestungskiste der Mars-Crew
 PRETRAINING (Kernbegriffe):
 
@@ -79,9 +85,13 @@ BEISPIEL (vollstaendige Musterloesung):
 AUFGABE (berechnen, AFB II): Ein Wagen $m_1 = 2{,}0 \, \mathrm{kg}$ faehrt mit $v_1 = 3{,}0 \, \mathrm{m/s}$ auf einen ruhenden Wagen $m_2 = 1{,}0 \, \mathrm{kg}$ auf. Nach dem vollstaendig unelastischen Stoss kleben beide zusammen. Berechnen Sie die gemeinsame Geschwindigkeit und den Verlust an kinetischer Energie.
 
 HILFE:
-1. Schritt 1: Impulsbilanz $m_1 v_1 = (m_1 + m_2) u$ aufstellen.
-2. Schritt 2: $u$ berechnen.
-3. Schritt 3: $E_{kin}$ vor und nach vergleichen.
+- Richtung: Zuerst System abgrenzen und pruefen, ob aeussere Impulse vernachlaessigbar sind.
+- Richtung: Danach Gesamtimpuls vorher und nachher mit $p = m \cdot v$ bilanzieren und Stoßart (elastisch oder inelastisch) festlegen.
+- Richtung: Erst am Ende Zahlen mit Vorzeichen und Einheiten einsetzen und Richtungssinn pruefen.
+COMPLETION (Lückentext):
+- Der Gesamtimpuls vorher ist $p_{\text{vor}} =$ ___ $\text{kg m/s}$.
+- Die Endgeschwindigkeit ist $v' =$ ___ $\text{m/s}$ aus $p_{\text{vor}} = p_{\text{nach}}$.
+- Beim unelastischen Stoss gilt $v' = (m_1 v_1 + m_2 v_2) /$ ___ .
 
 MUSTERLOESUNG: Es gilt $u = m_1 v_1/(m_1 + m_2) = 2{,}0 \cdot 3{,}0/3{,}0 = 2{,}0 \, \mathrm{m/s}$. Vorher: $E_{vor} = 0{,}5 \cdot 2{,}0 \cdot 9{,}0 = 9{,}0 \, \mathrm{J}$. Nachher: $E_{nach} = 0{,}5 \cdot 3{,}0 \cdot 4{,}0 = 6{,}0 \, \mathrm{J}$. Der Verlust betraegt $3{,}0 \, \mathrm{J}$ und erscheint als Verformungs- und Waermeenergie. Der Impuls $p = 6{,}0 \, \mathrm{Ns}$ bleibt erhalten.
 
@@ -126,10 +136,24 @@ CHECK (drei Fragen mit Antworten):
 ## Schritt 7 — szenario: Klausurtransfer: Impulserhaltung und Stoesse: Kraefte der Landung
 ROLLE: Du bist Praktikantin im Verkehrslabor.
 SITUATION: Zwei Spielzeugwagen stossen auf einer Luftkissenbahn zusammen; Wagen 2 stand vorher. Aus Messwerten sollen Stossart und Energieverlust bestimmt werden. Formuliere in circa 150 Woertern die Auswertung mit Impulsbilanz und Energietest und beurteile, ob ein elastischer Stoss vorliegt.
+**AUFGABE (berechnen und begruenden) [AFB II/III]**:
+Berechnen Sie die Endgeschwindigkeiten eines Stosses aus der Impulsbilanz und begruenden Sie die Wahl des Ansatzes.
+
 RUBRIC (30 XP): Korrekte Impulsbilanz mit Vorzeichen (10 XP) | Energietest mit Zahlen (10 XP) | Urteil zur Stossart mit Begruendung (6 XP) | Fachsprachliche Darstellung (4 XP).
 
 `Klausur-Satz: Wer Impulsbilanz aufstellt, Stossart unterscheidet und Endgeschwindigkeiten berechnet, erhaelt die volle Punktzahl.`
 
+
+ERWARTUNGSHORIZONT:
+Teilleistung | Punkte | Alternativweg
+Impulsbilanz mit Stossart nennen | 5 NP | Zusatzweg ueber Energiesatz akzeptieren
+Endgeschwindigkeiten mit Vorzeichen berechnen | 6 NP | Rechenweg im Schwerpunktsystem akzeptieren
+Elastisch und inelastisch abgrenzen | 4 NP | Urteil mit Verformungsenergie akzeptieren
+KERNSATZ (auswendig):
+`Im abgeschlossenen System gilt $p_{\text{vor}} = p_{\text{nach}}$, daher folgt die Endgeschwindigkeit aus der Impulsbilanz.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Abgeschlossenes Stoss-System | Impulse vorher und nachher gleichsetzen | Endgeschwindigkeit aus Bilanz
+- Selbsttest: Im abgeschlossenen System gilt $p_{\text{vor}} =$ ___ , daher folgt die Endgeschwindigkeit aus der Impulsbilanz.
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Kraefte der Landung
 TAKEAWAY:
 

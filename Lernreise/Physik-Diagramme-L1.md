@@ -8,7 +8,7 @@ operatoren: [darstellen, analysieren, interpretieren, beurteilen]
 klausurrelevant: true
 datum: 2026-09-25
 tags: [EF, Physik, Messung]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Diagramme lesen, zeichnen und Messfehler beurteilen (L1, Ziel Klausur)
@@ -30,8 +30,14 @@ Hook / Phaenomen: Punkte streuen, doch das Gesetz liegt gerade dazwischen: Die *
 
 `Klausur-Satz: Diagramme sprechen ueber Steigung und Flaeche: Achsen mit Einheiten entscheiden, was gelesen werden darf.`
 
+
+AUFLÖSUNG (nach der Wahl lesen)
+
+C1-Pruefung: Dieser Schritt enthaelt keine vorweggenommene Mechanismus-Erklaerung unter Wahloptionen; Hook und Phaenomen bleiben rein beschreibend, die Deutung folgt erst in Schritt 3.
+
+> 一句话本质: 图里藏着斜率和面积：斜率是变化率，面积是积累量，轴和单位不能错。
 ## Schritt 2 — entdecken: Ausruestungskiste der Mars-Crew
-PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
+PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文->德语，Evidenz：pretraining降认知负荷）：
 
 中文在上，德语在下：
 
@@ -91,9 +97,13 @@ BEISPIEL（正确例题示范，含教具操作与解答）：
 AUFGABE (analysieren, AFB II)：Bei einem Versuch mit einem Wagen auf gerader Bahn werden die folgenden Messwerte aufgenommen (t in s; s in m): 0 s / 0 m, 2 s / 1,05 m, 4 s / 1,96 m, 6 s / 3,05 m, 8 s / 3,98 m. Stellen Sie die Messreihe als Punktdiagramm dar, bestimmen Sie die Steigung der Ausgleichsgeraden und beurteilen Sie, ob das Modell der gleichförmigen Bewegung im Rahmen der Messunsicherheit haltbar ist.
 
 HILFE:
-1. Schritt 1: Trage die Punkte in ein s-t-Diagramm ein (Achsen mit Einheit) und lege eine Ausgleichsgerade durch die Punkte.
-2. Schritt 2: Lies die Steigung mit zwei weit auseinanderliegenden Punkten als v = Δs/Δt ab.
-3. Schritt 3: Vergleiche die Messpunkte mit der Geraden und beurteile die Abweichungen als zufällig oder systematisch.
+- Richtung: Zuerst Diagrammtyp sowie Achsen mit Einheiten identifizieren und Messpunkte von Modellkurve trennen.
+- Richtung: Danach Steigung oder Flaeche als physikalische Groesse deuten und Ausgleichsgerade festlegen.
+- Richtung: Erst am Ende Zahlen ablesen und Fehlerbalken sowie Signifikanz einschaetzen.
+COMPLETION (Lückentext):
+- Die Achsen sind ___ mit Einheit ___ .
+- Die Steigung ist ___ aus $Steigung = \Delta y/\Delta x$.
+- Die Flaeche ist ___ aus $Flaeche =$ ___ .
 
 MUSTERLÖSUNG: Trägt man die Punkte in ein s-t-Diagramm ein, so liegen sie nahezu auf einer Geraden durch den Ursprung. Die Steigung der Ausgleichsgeraden bestimmt man mit den äußeren Punkten: v = Δs/Δt = (3,98 m - 0 m) / (8 s - 0 s) = 0,4975 m/s, gerundet 0,50 m/s. Die Zwischenwerte stützen dieses Ergebnis: 1,05 m / 2 s = 0,525 m/s, 1,96 m / 4 s = 0,490 m/s und 3,05 m / 6 s = 0,508 m/s streuen unregelmäßig um 0,50 m/s. Vergleicht man jeden Messpunkt mit der Geraden s = 0,50 m/s * t, so liegt der Punkt bei t = 2 s um 0,05 m über, der bei t = 4 s um 0,04 m unter, der bei t = 6 s um 0,05 m über und der bei t = 8 s um 0,02 m unter der Geraden — die Abweichungen wechseln also das Vorzeichen und sind damit zufällig. Daher ist das Modell der gleichförmigen Bewegung im Rahmen der Messunsicherheit haltbar; eine exakte Aussage ist wegen der Streuung nicht zulässig.
 
@@ -102,7 +112,7 @@ MUSTERLÖSUNG: Trägt man die Punkte in ein s-t-Diagramm ein, so liegen sie nahe
 ## Schritt 5 — ausprobieren: Duell der Verfahren Vermessung des Landeplatzes
 VERGLEICH辨别实验（双向辨析：随机误差眼 vs. 系统误差眼）：
 
-VERGLEICH: (Weg A quantitativ-rechnerisch gegen Weg B qualitativ-strukturell): Wähle erst das Verfahren — 【选程序】先看测量点相对拟合直线的偏离方式：(i) Zufallsfehler-Verfahren（点无规律地散在直线两侧，正负偏差交替出现 → 多次测量取平均）oder (ii) Systemfehler-Verfahren（所有点朝同一方向偏离，直线整体平移或斜率被拉偏 → 找仪器与操作原因）—— dann lösen.
+VERGLEICH: (Weg A quantitativ-rechnerisch gegen Weg B qualitativ-strukturell): Wähle erst das Verfahren — 【选程序】先看测量点相对拟合直线的偏离方式：(i) Zufallsfehler-Verfahren（点无规律地散在直线两侧，正负偏差交替出现 -> 多次测量取平均）oder (ii) Systemfehler-Verfahren（所有点朝同一方向偏离，直线整体平移或斜率被拉偏 -> 找仪器与操作原因）—— dann lösen.
 
 Weg A: Erst Verfahren waehlen, dann rechnen.
 
@@ -112,7 +122,7 @@ Weg B: Alternative Route mit Gegenrechnung.
 
 AUFGABE B：Bei einer Zeitmessung wurde die Stoppuhr bei jedem Durchgang etwa 0,3 s zu spät gestartet, sodass alle Zeitwerte systematisch zu groß sind. Welches Verfahren ist zu wählen, und warum hilft Mittelwertbildung hier nicht?
 
-HILFE: A: Die Punkte streuen ohne Muster → Verfahren (i), Zufallsfehler, Mehrfachmessung mittelt die Streuung heraus. B: Alle Werte sind gleichsinnig verschoben → Verfahren (ii), Systemfehler, der Mittelwert bleibt verschoben.【选程序：偏差正负交替走随机程序；偏差同一方向走系统程序。】
+HILFE: A: Die Punkte streuen ohne Muster -> Verfahren (i), Zufallsfehler, Mehrfachmessung mittelt die Streuung heraus. B: Alle Werte sind gleichsinnig verschoben -> Verfahren (ii), Systemfehler, der Mittelwert bleibt verschoben.【选程序：偏差正负交替走随机程序；偏差同一方向走系统程序。】
 
 ANTWORT: A erfordert Verfahren (i): Da die Punkte unsystematisch um die Ausgleichsgerade streuen, handelt es sich um zufällige Fehler; sie lassen sich durch wiederholte Messung und Mittelwertbildung verkleinern, weil sich positive und negative Abweichungen gegenseitig aufheben. B erfordert Verfahren (ii): Der um 0,3 s zu späte Start verschiebt alle Zeitwerte gleichsinnig, also liegt ein systematischer Fehler vor; die Mittelwertbildung mittelt diese Verschiebung nur mit, der Mittelwert bleibt zu groß. Der Fehler muss an der Ursache behoben werden, indem man den Startzeitpunkt korrigiert oder eine Lichtschranke verwendet.
 
@@ -142,14 +152,28 @@ CHECK检索默写（自测 3 题，与答案配对）：
 ## Schritt 7 — szenario: Klausurtransfer: Diagramme lesen, zeichnen und Messfehler beurteilen: Vermessung des Landeplatzes
 ROLLE: Du bist Mitglied der Physik-AG und sollst für das Schuljahrbuch einen Versuch zur gleichförmigen Bewegung auswerten und dokumentieren.
 SITUATION: Eine Gruppe hat eine Messreihe (t in s, s in m) aufgenommen; die Punkte streuen leicht um eine Gerade, und ein Schüler behauptet, das Ergebnis sei "genau 0,50 m/s". Die Redaktion fragt dich, wie man die Daten korrekt darstellt, die Geschwindigkeit bestimmt und die Aussagekraft der Messung bewertet. Beurteile in einer zusammenhängenden Stellungnahme (ca. 150 Wörter) unter Rückgriff auf Ausgleichsgerade und Messunsicherheit.
+**AUFGABE (darstellen und beurteilen) [AFB II/III]**:
+Stellen Sie Messwerte mit Ausgleichsgerade dar und beurteilen Sie Fehler und Vertrauensbereich.
+
 RUBRIC (30 XP): Beschreibung der korrekten Darstellung (Achsen mit Einheit, Punkte, Ausgleichsgerade) (5 XP) | Bestimmung der Steigung als Geschwindigkeit mit Rechnung (10 XP) | Beurteilung der Abweichungen als zufaellig bzw. systematisch (10 XP) | Eingeschraenktes, kriteriengeleitetes Fazit statt "exakt" (5 XP).
 
 `Klausur-Satz: Wer Ausgleichsgerade zeichnet, Fehlerarten trennt und Steigung mit Einheit deutet, erhaelt die volle Punktzahl.`
 
+
+ERWARTUNGSHORIZONT:
+Teilleistung | Punkte | Alternativweg
+Diagrammtyp mit Achsen begruenden | 5 NP | Digitalplot als Alternative akzeptieren
+Wert aus Steigung oder Flaeche bestimmen | 6 NP | Weg ueber Steigungsdreieck akzeptieren
+Messfehler und Folgerung beurteilen | 4 NP | Urteil mit Wiederholung akzeptieren
+KERNSATZ (auswendig):
+`Jede Diagrammgroesse braucht Achse mit Einheit, daher liefern Steigung und Flaeche die Physik.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Messdiagramm mit Achsen | Steigung oder Flaeche deuten | Wert mit Fehlerbalken
+- Selbsttest: Jede Diagrammgroesse braucht Achse mit Einheit, daher liefern ___ und Flaeche die Physik.
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Vermessung des Landeplatzes
 TAKEAWAY 1盒（核心总结）：
 
-中文：实验题的分数在"规范"两个字上。画图三件套：轴、单位、散点加拟合线；读数靠斜率，结论靠误差。误差分两类：随机误差让点上下乱跳、取平均能压住；系统误差让点整体偏移、只能改仪器改操作。最后那句结论是拿分关键——说"在测量不确定度范围内成立"，而不是"绝对准确"。这套流程不只用于 s-t 图，任何"数据→直线→斜率"的实验都通用。
+中文：实验题的分数在"规范"两个字上。画图三件套：轴、单位、散点加拟合线；读数靠斜率，结论靠误差。误差分两类：随机误差让点上下乱跳、取平均能压住；系统误差让点整体偏移、只能改仪器改操作。最后那句结论是拿分关键——说"在测量不确定度范围内成立"，而不是"绝对准确"。这套流程不只用于 s-t 图，任何"数据->直线->斜率"的实验都通用。
 Takeaway-Satz: `Achsen mit Einheiten, Punkte plus Ausgleichsgerade, Steigung als Ergebnis und ein Urteil nur im Rahmen der Messunsicherheit — so wird aus einer Messreihe ein belastbares Ergebnis.`
 
 REFLEXION 2问：

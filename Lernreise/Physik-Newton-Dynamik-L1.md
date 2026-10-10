@@ -8,7 +8,7 @@ operatoren: [beschreiben, berechnen, begruenden, analysieren]
 klausurrelevant: true
 datum: 2026-09-25
 tags: [EF, Physik, Dynamik]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Newtonsche Gesetze: Kraftzerlegung und Reibung (L1, Ziel Klausur)
@@ -30,8 +30,14 @@ Hook / Phaenomen: Eis, Rampe, Seil: Kraefte ziehen aus allen Richtungen, doch nu
 
 `Klausur-Satz: Newton II verwandelt Kraefte in Bewegung: Resultierende Kraft gleich Masse mal Beschleunigung nach Zerlegung und Reibungsabzug.`
 
+
+AUFLÖSUNG (nach der Wahl lesen)
+
+C1-Pruefung: Dieser Schritt enthaelt keine vorweggenommene Mechanismus-Erklaerung unter Wahloptionen; Hook und Phaenomen bleiben rein beschreibend, die Deutung folgt erst in Schritt 3.
+
+> 一句话本质: 先画全受力图再求合力，合力除以质量就是加速度，斜面上质量会被约掉。
 ## Schritt 2 — entdecken: Ausruestungskiste der Mars-Crew
-PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
+PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文->德语，Evidenz：pretraining降认知负荷）：
 
 中文在上，德语在下：
 
@@ -46,7 +52,7 @@ PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→�
 ## Schritt 3 — entdecken: Wirkungskette hinter Newtonsche Gesetze: Kraftzerlegung und Reibung
 ENTDECKEN（1概念 + 1文字图解）：
 
-中文：动力学只回答一个问题——"为什么这样动"。答案是：合力决定加速度，加速度改变速度。做题先画受力图，顺序固定为"重力→弹力（支持力/拉力）→摩擦力→外加力"，一个箭头都不能多、也不能少。在斜面上，重力必须沿"平行斜面"和"垂直斜面"两个方向分解：平行的分量 F_H = m*g*sin(alpha) 想把物体往下拽，垂直的分量 F_N = m*g*cos(alpha) 压住斜面、并通过摩擦系数决定摩擦力 F_R = mu*F_N。把沿运动方向的力相加得合力，再除以质量就是加速度 a = F_res/m。一个漂亮的结论是：在无摩擦斜面上，a = g*sin(alpha)，与质量完全无关。若合力为零，物体处于平衡，加速度为零，这就是第一定律的情形。
+中文：动力学只回答一个问题——"为什么这样动"。答案是：合力决定加速度，加速度改变速度。做题先画受力图，顺序固定为"重力->弹力（支持力/拉力）->摩擦力->外加力"，一个箭头都不能多、也不能少。在斜面上，重力必须沿"平行斜面"和"垂直斜面"两个方向分解：平行的分量 F_H = m*g*sin(alpha) 想把物体往下拽，垂直的分量 F_N = m*g*cos(alpha) 压住斜面、并通过摩擦系数决定摩擦力 F_R = mu*F_N。把沿运动方向的力相加得合力，再除以质量就是加速度 a = F_res/m。一个漂亮的结论是：在无摩擦斜面上，a = g*sin(alpha)，与质量完全无关。若合力为零，物体处于平衡，加速度为零，这就是第一定律的情形。
 
 补充：牛顿第三定律（Actio = Reactio）说的是两物体之间的作用力与反作用力大小相等、方向相反、作用在不同物体上。它不能和"二力平衡"混用——一对反作用力分别作用在两个物体上，而一对平衡力作用在同一物体上；受力图上如果只研究一个物体，就不要把它的反作用力也画进来。
 
@@ -89,9 +95,13 @@ BEISPIEL（正确例题示范，含教具操作与解答）：
 AUFGABE (berechnen, AFB II)：Ein Kasten der Masse m = 4,0 kg rutscht aus der Ruhe eine schiefe Ebene mit dem Neigungswinkel alpha = 30 Grad hinab. Der Gleitreibungskoeffizient beträgt mu = 0,20, es gilt g = 10 m/s^2, sin(30 Grad) = 0,50 und cos(30 Grad) = 0,87. Berechnen Sie die Beschleunigung a des Kastens und die Geschwindigkeit, die er nach s = 2,0 m zurückgelegter Strecke erreicht.
 
 HILFE:
-1. Schritt 1: Zerlege die Gewichtskraft: F_H = m*g*sin(alpha), F_N = m*g*cos(alpha).
-2. Schritt 2: Bestimme die Reibung F_R = mu*F_N und daraus die resultierende Kraft F_res = F_H - F_R.
-3. Schritt 3: Aus a = F_res/m die Beschleunigung, dann aus v^2 = 2*a*s die Endgeschwindigkeit.
+- Richtung: Zuerst Kraeftediagramm in der Reihenfolge Gewicht, Kontakt, Reibung und Zusatzkraefte zeichnen.
+- Richtung: Danach Gewicht in Hang- und Normalanteil zerlegen und die resultierende Kraft laengs der Bewegung bilden.
+- Richtung: Erst am Ende $a = F_{\text{res}}/m$ mit Einheiten auswerten und $a = 0$ als Gleichgewicht pruefen.
+COMPLETION (Lückentext):
+- Die Hangabtriebskraft ist $F_H =$ ___ $\text{N}$ aus $F_H = m \cdot g \cdot \sin(\alpha)$.
+- Die Beschleunigung ist $a =$ ___ $\text{m/s}^2$ aus $a = F_{\text{res}}/m$.
+- Im Gleichgewicht gilt $F_{\text{res}} =$ ___ .
 
 MUSTERLÖSUNG: Zuerst die Gewichtskraft: F_G = m*g = 4,0 kg * 10 m/s^2 = 40 N. Ihre Zerlegung ergibt F_H = 40 N * 0,50 = 20 N (hangabwärts) und F_N = 40 N * 0,87 = 34,8 N (in die Ebene). Die Gleitreibung beträgt F_R = mu*F_N = 0,20 * 34,8 N = 6,96 N, sie wirkt der Bewegung entgegen. Damit ist F_res = F_H - F_R = 20 N - 6,96 N = 13,04 N, und die Beschleunigung folgt zu a = F_res/m = 13,04 N / 4,0 kg = 3,26 m/s^2, gerundet 3,3 m/s^2. (Kontrolle über die Formel: a = g*(sin(alpha) - mu*cos(alpha)) = 10 m/s^2 * (0,50 - 0,20*0,87) = 3,26 m/s^2.) Nach s = 2,0 m gilt v^2 = 2*a*s = 2 * 3,26 m/s^2 * 2,0 m = 13,04 m^2/s^2, also v = 3,6 m/s.
 
@@ -110,7 +120,7 @@ Weg B: Alternative Route mit Gegenrechnung.
 
 AUFGABE B：Derselbe Kasten wird nun auf eine steilere, glattere Ebene gelegt, sodass er sichtbar beschleunigt hinabrutscht. Welches Verfahren ist zu wählen, und wie lautet der Ansatz?
 
-HILFE: A: Der Kasten bleibt in Ruhe, also a = 0 → Verfahren (i), Kräftegleichgewicht F_res = 0 (Haftreibung hebt die Hangabtriebskraft auf). B: Der Kasten rutscht beschleunigt, also a ungleich 0 → Verfahren (ii), Ansatz F_H - F_R = m*a.【选程序：题说"静止/匀速/不动"走平衡程序；题说"加速/越来越快"走第二定律程序。】
+HILFE: A: Der Kasten bleibt in Ruhe, also a = 0 -> Verfahren (i), Kräftegleichgewicht F_res = 0 (Haftreibung hebt die Hangabtriebskraft auf). B: Der Kasten rutscht beschleunigt, also a ungleich 0 -> Verfahren (ii), Ansatz F_H - F_R = m*a.【选程序：题说"静止/匀速/不动"走平衡程序；题说"加速/越来越快"走第二定律程序。】
 
 ANTWORT: A erfordert Verfahren (i): Bei a = 0 gilt Kräftegleichgewicht längs der Ebene, das heißt die Haftreibung F_R,h ist gerade so groß wie die Hangabtriebskraft F_H = m*g*sin(20 Grad), sodass F_res = 0 und der Kasten in Ruhe bleibt. B erfordert Verfahren (ii): Jetzt übersteigt die Hangabtriebskraft die Gleitreibung, es gilt F_res = m*g*sin(alpha) - mu*m*g*cos(alpha) = m*a, und daraus folgt die Beschleunigung a = g*(sin(alpha) - mu*cos(alpha)) unabhängig von der Masse.
 
@@ -140,10 +150,24 @@ CHECK检索默写（自测 3 题，与答案配对）：
 ## Schritt 7 — szenario: Klausurtransfer: Newtonsche Gesetze: Kraftzerlegung und Reibung: Generalprobe vor dem Fenster
 ROLLE: Du bist Mitglied einer Schülerforschungsgruppe, die einen Rampenversuch für den Tag der offenen Tür plant.
 SITUATION: Auf einer Rampe mit dem Neigungswinkel alpha = 25 Grad soll ein Kasten (m = 3,0 kg) kontrolliert hinabgleiten. Die Gruppe diskutiert, ob eine bestimmte Oberfläche geeignet ist: Bei zu großer Reibung rutscht der Kasten nicht an, bei zu kleiner Reibung wird er zu schnell. Beurteile in einer zusammenhängenden Stellungnahme (ca. 150 Wörter), wovon die Beschleunigung abhängt und wie die Reibung das Ergebnis beeinflusst. Nutze g = 10 m/s^2.
+**AUFGABE (begruenden und beurteilen) [AFB II/III]**:
+Begruenden Sie Beschleunigung oder Gleichgewicht eines Rampenversuchs aus der Zerlegung und beurteilen Sie die Oberflaechenwahl.
+
 RUBRIC (30 XP): Benennung der zerlegten Kräfte F_H und F_N mit Formel (5 XP) | Aufstellen der Bewegungsgleichung F_res = F_H - F_R = m*a (10 XP) | Nachweis, dass a unabhaengig von der Masse ist, und Rechnung mit Zahlen (10 XP) | Kriteriengeleitetes Urteil zur Eignung der Oberflaeche mit Einheit (5 XP).
 
 `Klausur-Satz: Wer zerlegt, bilanziert, Axiom anwendet und s-t- sowie v-t-Deutung liefert, erhaelt die volle Punktzahl.`
 
+
+ERWARTUNGSHORIZONT:
+Teilleistung | Punkte | Alternativweg
+Zerlegung mit $F_H$ und $F_N$ nennen | 5 NP | Herleitung ueber $a = g(\sin\alpha - \mu\cos\alpha)$ akzeptieren
+$a$ und $v$ mit Einheiten berechnen | 6 NP | Zahlenweg ueber $v^2 = 2as$ akzeptieren
+Oberflaeche kriteriengeleitet beurteilen | 4 NP | Urteil mit Haft-Gleit-Abgrenzung akzeptieren
+KERNSATZ (auswendig):
+`Laengs der Ebene gilt $F_{\text{res}} = F_H - F_R$, daher folgt $a = F_{\text{res}}/m$ nach Zerlegung.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Koerper auf schiefer Ebene mit Winkel $\alpha$ | Gewicht zerlegen und $F_{\text{res}}$ bilden | Bewegung aus $a$-Vorzeichen
+- Selbsttest: Laengs der Ebene gilt $F_{\text{res}} = F_H -$ ___ , daher folgt $a = F_{\text{res}}/m$ nach Zerlegung.
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Generalprobe vor dem Fenster
 TAKEAWAY 1盒（核心总结）：
 

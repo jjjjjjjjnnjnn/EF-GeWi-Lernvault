@@ -8,7 +8,7 @@ operatoren: [beschreiben, erklaeren, begruenden]
 klausurrelevant: true
 datum: 2026-09-26
 tags: [EF, Physik, Schwingung]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Federpendel und harmonische Schwingung (L1, Ziel Klausur)
@@ -32,6 +32,12 @@ Hook / Phaenomen: Ein Wagen rauscht ueber eine Bodenwelle: Ohne **Stossdaempfer*
 
 `Klausur-Satz: Rueckstellung erzeugt Schwingung: Federkraft minus D mal x treibt die Masse periodisch zur Ruhelage zurueck.`
 
+
+AUFLÖSUNG (nach der Wahl lesen)
+
+C1-Pruefung: Dieser Schritt enthaelt keine vorweggenommene Mechanismus-Erklaerung unter Wahloptionen; Hook und Phaenomen bleiben rein beschreibend, die Deutung folgt erst in Schritt 3.
+
+> 一句话本质: 平衡位置速度最大、两端速度为零，周期只由质量与劲度系数决定。
 ## Schritt 2 — entdecken: Ausruestungskiste der Mars-Crew
 GRUNDBEGRIFFE (5 Begriffe):
 
@@ -75,9 +81,13 @@ AUFGABE (erklaeren, AFB II): Eine Masse $m = 0{,}25\,\mathrm{kg}$ haengt an eine
 $$T=2\pi\sqrt{m/D}$$
 
 HILFE:
-1. Schritt 1: Schreibe $T = 2\pi\sqrt{\frac{m}{D}}$ hin.
-2. Schritt 2: Setze $m = 0{,}25$ und $D = 25$ ein, berechne $f = \frac{1}{T}$.
-3. Schritt 3: Nutze die Wurzelabhaengigkeit $T \sim \sqrt{m}$ fuer die Prognose.
+- Richtung: Zuerst das Kraftgesetz $F = -D \cdot s$ und die Energieformen $E_{\text{kin}}$ und $E_{\text{spann}}$ benennen.
+- Richtung: Danach die Schwingungsgleichung oder die Energiebilanz fuer die gesuchte Groesse (Auslenkung, Geschwindigkeit oder Periode) waehlen.
+- Richtung: Erst am Ende Zahlen mit Einheiten einsetzen und Amplitude sowie Periode per Plausibilitaet pruefen.
+COMPLETION (Lückentext):
+- Die Winkelgeschwindigkeit ist $\omega =$ ___ $\text{1/s}$ aus $\omega = \sqrt{D / m}$.
+- Die maximale Geschwindigkeit ist $v_{\text{max}} =$ ___ $\text{m/s}$ aus $v_{\text{max}} = A \cdot \omega$.
+- Die Periode ist $T =$ ___ $\text{s}$ aus $T = 2 \cdot \pi \cdot \sqrt{m / D}$.
 
 MUSTERLOESUNG: Es gilt $T = 2\pi\sqrt{\frac{0{,}25}{25}} = 2\pi \cdot 0{,}1 \approx 0{,}628\,\mathrm{s}$ und $f \approx 1{,}59\,\mathrm{Hz}$. Bei doppelter Masse waechst $T$ um $\sqrt{2} \approx 1{,}41$ auf etwa $0{,}89\,\mathrm{s}$, weil nur die Wurzel der Masse eingeht.
 
@@ -124,11 +134,22 @@ CHECK (Selbsttest, 3 Fragen):
 ## Schritt 7 — szenario: Klausurtransfer: Federpendel und harmonische Schwingung: Formel-Notfallkarte
 ROLLE: Du bist Laborassistent im Physikkurs.
 SITUATION: Eine Gruppe meldet $T = 1{,}2\,\mathrm{s}$ fuer $m = 0{,}4\,\mathrm{kg}$ und behauptet $D = 5\,\frac{\mathrm{N}}{\mathrm{m}}$.
-AUFGABE (begruenden, AFB III): Pruefen Sie die Angabe in einer zusammenhaengenden Darstellung (ca. 150 Woerter), berechnen Sie $D$ aus $T$ und beurteilen Sie Messfehlerquellen.
+AUFGABE (begruenden, [AFB III]): Pruefen Sie die Angabe in einer zusammenhaengenden Darstellung (ca. 150 Woerter), berechnen Sie $D$ aus $T$ und beurteilen Sie Messfehlerquellen.
 RUBRIC (30 XP): Umstellung $D = \frac{4\pi^2m}{T^2}$ korrekt (10 XP) | Zahlwert $D \approx 11\,\frac{\mathrm{N}}{\mathrm{m}}$ (10 XP) | Fehlerdiskussion Reibung und Zeitmessung (5 XP) | Geschlossene Darstellung (5 XP).
 
 `Klausur-Satz: Wer Wurzelgesetz anwendet, Isochronie begruendet und Messfehler mit Reibung diskutiert, erhaelt die volle Punktzahl.`
 
+
+ERWARTUNGSHORIZONT:
+Teilleistung | Punkte | Alternativweg
+Kraft- oder Energieansatz mit $F = -D \cdot s$ nennen | 5 NP | Herleitung ueber Differentialgleichung akzeptieren
+$T$ und $v_{\text{max}}$ mit Einheiten berechnen | 6 NP | Zahlenweg ueber Energieerhaltung akzeptieren
+Abhaengigkeit von $m$ und $D$ deuten | 4 NP | Urteil mit Daempfungsvorbehalt akzeptieren
+KERNSATZ (auswendig):
+`Beim Federpendel gilt $T = 2 \cdot \pi \cdot \sqrt{m / D}$, weil Traegheit und Rueckstellung die Schwingung bestimmen.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Freies Federpendel mit Masse $m$ und Feder $D$ | Bewegungsgleichung oder Energiebilanz anwenden | Periode haengt nur von $m$ und $D$ ab
+- Selbsttest: Beim Federpendel gilt $T = 2 \cdot \pi \cdot$ ___ , weil Traegheit und Rueckstellung die Schwingung bestimmen.
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Formel-Notfallkarte
 TAKEAWAY: Merke Rueckstellung, Wurzel, Energie: $F = -Dx$ erzeugt $T = 2\pi\sqrt{m/D}$ und $E = \frac{1}{2}DA^2$. Zeit haengt an $m$ und $D$, Tempo an der Lage im Zyklus.
 

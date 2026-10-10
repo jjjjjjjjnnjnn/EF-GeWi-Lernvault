@@ -8,7 +8,7 @@ operatoren: [herleiten, berechnen, beurteilen]
 klausurrelevant: true
 datum: 2026-10-03
 tags: [EF, Physik, Relativitaetstheorie, Zeitdilatation, Lichtuhr, Lorentzfaktor, Myonenzerfall]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Spezielle Relativitaetstheorie: Lichtuhr, Zeitdilatation und Lorentzfaktor (L1, Ziel Klausur)
@@ -28,8 +28,14 @@ In zehn Kilometern Hoehe ueber der Erde kollidieren energiereiche kosmische Prot
 
 `Klausur-Satz: Da die Lichtgeschwindigkeit c in allen Inertialsystemen invariant ist, vergeht die Zeit in einem relativ zu einem Beobachter bewegten System gedehnt; fuer bewegte Uhren gilt die Zeitdilatation delta t = gamma * delta t_0.`
 
+
+AUFLÖSUNG (nach der Wahl lesen)
+
+C1-Pruefung: Dieser Schritt enthaelt keine vorweggenommene Mechanismus-Erklaerung unter Wahloptionen; Hook und Phaenomen bleiben rein beschreibend, die Deutung folgt erst in Schritt 3.
+
+> 一句话本质: 运动的光钟走得慢，速度越接近光速，时间膨胀因子越大。
 ## Schritt 2 — entdecken: Der relativistische Grundbegriffskasten
-PRETRAINING术语盒（核心4词，先读三遍中德，合书自测中文→德语）：
+PRETRAINING术语盒（核心4词，先读三遍中德，合书自测中文->德语）：
 
 - 相对性原理与光速不变 — Einsteins Postulate: 1. In allen Inertialsystemen gelten dieselben physikalischen Gesetze. 2. Die Vakuumlichtgeschwindigkeit $c$ ist in allen Inertialsystemen exakt gleich gross – vollkommen unabhaengig von der Bewegung der Lichtquelle oder des Beobachters.
 - 光钟思想实验 — Lichtuhr: Eine hypothetische Uhr aus zwei parallelen Spiegeln im Abstand $L$, zwischen denen ein einzelner Lichtblitz auf und ab reflektiert wird; jeder Hin- und Rueckweg definiert einen Zeittakt.
@@ -80,6 +86,17 @@ Lichtgeschwindigkeit: $c = 3{,}00 \times 10^8\,\text{m/s}$.
 2. Ermittle die Lebensdauer $\Delta t$ des Myons aus der Sicht eines irdischen Beobachters.
 3. Berechne die Strecke $s_{\text{Erde}}$, die das Myon waehrend seiner verlaengerten Lebensdauer zuruecklegt, und beweise rechnerisch, dass es die Erdoberflaeche muehelos erreicht.
 
+
+HILFE:
+- Richtung: Zuerst Ruhe- und Laborsystem trennen und Eigenzeit $\tau$ von Koordinatenzeit $t$ unterscheiden.
+- Richtung: Danach Lichtuhr-Geometrie oder Lorentzfaktor $\gamma$ fuer die gesuchte Zeit oder Laenge waehlen.
+- Richtung: Erst am Ende Zahlen einsetzen und $v \ll c$ als klassischen Grenzfall pruefen.
+
+COMPLETION (Lückentext):
+- Der Lorentzfaktor ist $\gamma =$ ___ aus $\gamma = 1/\sqrt{1-v^2/c^2}$.
+- Die dilatierte Zeit ist $t =$ ___ $\text{s}$ aus $t = \gamma \cdot \tau$.
+- Die Laenge ist $L = L_0 /$ ___ .
+
 MUSTERLOESUNG:
 1. Berechnung des Lorentzfaktors:
    $$\frac{v}{c} = 0{,}998 \implies \left(\frac{v}{c}\right)^2 = 0{,}998^2 = 0{,}996004$$
@@ -111,6 +128,9 @@ Wird nach der `Perspektive des Myons selbst` gefragt, erklaere: Aus Sicht des My
 
 PRUEFUNGSSZENARIO (KLP NRW Physik LK Inhaltsfeld 5: Relativitaetstheorie):
 
+**AUFGABE (herleiten und beurteilen) [AFB II/III]**:
+Leiten Sie die Zeitdilatation aus der Lichtuhr her und beurteilen Sie eine Alltagsbehauptung zur Relativitaet.
+
 ### AFB I: Postulate wiedergeben
 Formuliere Einsteins zwei Postulate der Speziellen Relativitaetstheorie in korrekter physikalischer Fachsprache.
 
@@ -122,6 +142,17 @@ Erklaere, warum dieses Szenario kein echter Widerspruch ist und warum die beiden
 Die Atomuhren an Bord von GPS-Satelliten bewegen sich mit ca. $14.000\,\text{km/h}$ relativ zur Erde, wodurch sie gemaess der speziellen Relativitaetstheorie taeglich um rund $7\,\mu\text{s}$ nachgehen.
 Beurteile die fatalen Konsequenzen fuer das weltweite Navigationssystem, wenn die Ingenieure diese relativistische Zeitdilatation in den Satellitencomputern nicht taeglich mathematisch kompensieren wuerden.
 
+
+ERWARTUNGSHORIZONT:
+Teilleistung | Punkte | Alternativweg
+Lichtuhr-Ansatz mit $\gamma$ nennen | 5 NP | Herleitung ueber Pythagoras akzeptieren
+$\gamma$ und $t$ berechnen | 6 NP | Zahlenweg ueber Myonen-Lebensdauer akzeptieren
+Aussage mit Bezugssystem beurteilen | 4 NP | Urteil mit Gleichzeitigkeit akzeptieren
+KERNSATZ (auswendig):
+`Fuer schnelle Uhren gilt $t = \gamma \cdot \tau$ mit $\gamma = 1/\sqrt{1-v^2/c^2}$, daher geht Bewegen langsamer.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Lichtuhr mit Eigenzeit $\tau$ | Geometrie in $\gamma$ uebersetzen | Laborzeit aus $\gamma$
+- Selbsttest: Fuer schnelle Uhren gilt $t = \gamma \cdot$ ___ mit $\gamma = 1/\sqrt{1-v^2/c^2}$, daher geht Bewegen langsamer.
 ## Schritt 7 — check: Format-Check & Scoring
 
 30 XP Schnelltest zur Verstaendigungssicherung:

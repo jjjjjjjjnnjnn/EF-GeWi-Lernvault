@@ -8,7 +8,7 @@ operatoren: [beschreiben, erklaeren, begruenden]
 klausurrelevant: true
 datum: 2026-09-26
 tags: [EF, Physik, Gravitation]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Gravitation und Satellitenbahnen (L1, Ziel Klausur)
@@ -32,6 +32,12 @@ Hook / Phaenomen: Der Mond faellt staendig zur Erde und trifft sie nie: **Gravit
 
 `Klausur-Satz: Gravitation haelt Bahnen: G m M durch r Quadrat gleich Zentripetalkraft bestimmt Geschwindigkeit aus Bahnradius.`
 
+
+AUFLÖSUNG (nach der Wahl lesen)
+
+C1-Pruefung: Dieser Schritt enthaelt keine vorweggenommene Mechanismus-Erklaerung unter Wahloptionen; Hook und Phaenomen bleiben rein beschreibend, die Deutung folgt erst in Schritt 3.
+
+> 一句话本质: 卫星越靠近地球飞得越快，万有引力正好提供它转弯所需的向心力。
 ## Schritt 2 — entdecken: Ausruestungskiste der Mars-Crew
 GRUNDBEGRIFFE (5 Begriffe):
 
@@ -76,9 +82,13 @@ BEISPIEL (Musteraufgabe mit Werkzeug):
 AUFGABE (erklaeren, AFB II): Erklaeren Sie, warum ein Satellit in $h = 400\,\mathrm{km}$ Hoehe schneller kreist als ein geostationaerer Satellit, und berechnen Sie $v$ fuer $r = 6771\,\mathrm{km}$ mit $GM = 3{,}986 \cdot 10^{14}\,\frac{\mathrm{m}^3}{\mathrm{s}^2}$.
 
 HILFE:
-1. Schritt 1: Schreibe das Kraeftegleichgewicht $\frac{mv^2}{r} = G\frac{mM}{r^2}$ hin.
-2. Schritt 2: Loese nach $v = \sqrt{\frac{GM}{r}}$ auf und diskutiere die Abhaengigkeit von $r$.
-3. Schritt 3: Setze $r = 6{,}771 \cdot 10^6\,\mathrm{m}$ ein und deute das Ergebnis.
+- Richtung: Zuerst Zentralmasse, Bahnradius und Umlaufgroessen trennen und $F_G$ als Zentralkraft erkennen.
+- Richtung: Danach Gravitationsgesetz mit der Kreisbahnbedingung $F_G = F_z$ verknuepfen und nach der gesuchten Groesse aufloesen.
+- Richtung: Erst am Ende Zahlen mit Einheiten einsetzen und Bahnhoehe von $r$ unterscheiden.
+COMPLETION (Lückentext):
+- Die Bahngeschwindigkeit ist $v =$ ___ $\text{m/s}$ aus $G \cdot M / r = v^2$.
+- Die Umlaufdauer ist $T =$ ___ $\text{s}$ aus $T = 2 \cdot \pi \cdot \sqrt{r^3 / (G \cdot M)}$.
+- Die Zentripetalbedingung lautet $F_G = F_z =$ ___ .
 
 MUSTERLOESUNG: Aus dem Gleichgewicht folgt $v = \sqrt{\frac{GM}{r}}$; $v$ sinkt mit $\frac{1}{\sqrt{r}}$. Mit den Zahlen gilt $v = \sqrt{\frac{3{,}986 \cdot 10^{14}}{6{,}771 \cdot 10^6}} \approx 7670\,\frac{\mathrm{m}}{\mathrm{s}}$. Der niedrige Satellit braucht nur etwa $T = \frac{2\pi r}{v} \approx 92\,\mathrm{min}$, der geostationaere dagegen $24\,\mathrm{h}$, weil sein $r$ etwa sechsmal groesser ist.
 
@@ -125,11 +135,22 @@ CHECK (Selbsttest, 3 Fragen):
 ## Schritt 7 — szenario: Klausurtransfer: Gravitation und Satellitenbahnen: Kollision der Module
 ROLLE: Du bist Praktikant bei einer Raumfahrtagentur.
 SITUATION: Ein Kunde will einen TV-Satelliten, der immer ueber derselben Stadt steht, plant ihn aber in $h = 800\,\mathrm{km}$.
-AUFGABE (begruenden, AFB III): Lege in einer zusammenhaengenden Darstellung (ca. 150 Woerter) dar, warum dieser Plan scheitert, berechne Umlaufzeit-Groessenordnung und nenne die korrekte Bahnhoehe mit Begruendung.
+AUFGABE (begruenden, [AFB III]): Lege in einer zusammenhaengenden Darstellung (ca. 150 Woerter) dar, warum dieser Plan scheitert, berechne Umlaufzeit-Groessenordnung und nenne die korrekte Bahnhoehe mit Begruendung.
 RUBRIC (30 XP): Kraeftegleichgewicht genannt (10 XP) | $T$-Abschaetzung mit $T^2 \sim r^3$ (10 XP) | Geostationaere Bedingung $T = 24\,\mathrm{h}$ (5 XP) | Geschlossene Darstellung (5 XP).
 
 `Klausur-Satz: Wer Gleichgewicht ansetzt, Bahngroessen berechnet und Kepler zur Kontrolle nutzt, erhaelt die volle Punktzahl.`
 
+
+ERWARTUNGSHORIZONT:
+Teilleistung | Punkte | Alternativweg
+Gravitationsgesetz als Zentralkraft nennen | 5 NP | Herleitung ueber Kepler-Gesetz akzeptieren
+$v$ und $T$ mit Einheiten berechnen | 6 NP | Zahlenweg mit $g$-Abgleich akzeptieren
+Bahnhoehe als Kompromiss beurteilen | 4 NP | Urteil mit Weltraumschrott-Risiko akzeptieren
+KERNSATZ (auswendig):
+`Auf der Kreisbahn gilt $G \cdot M / r^2 = v^2 / r$, daher folgt $v = \sqrt{G \cdot M / r}$.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Satellit auf Kreisbahn mit Radius $r$ | $F_G = F_z$ gleichsetzen | Geschwindigkeit faellt mit $r$
+- Selbsttest: Auf der Kreisbahn gilt $G \cdot M / r^2 = v^2 /$ ___ , daher folgt $v = \sqrt{G \cdot M / r}$.
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Kollision der Module
 TAKEAWAY: Merke die Kette Gleichgewicht, Kuerzen, Wurzel: $\frac{mv^2}{r} = G\frac{mM}{r^2}$ fuehrt zu $v = \sqrt{GM/r}$ und $T^2 = \frac{4\pi^2}{GM}r^3$. Niedrig heisst schnell, hoch heisst langsam.
 

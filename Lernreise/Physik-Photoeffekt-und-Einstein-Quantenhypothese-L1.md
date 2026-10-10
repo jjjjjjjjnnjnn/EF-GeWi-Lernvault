@@ -8,7 +8,7 @@ operatoren: [beschreiben, erklaeren, berechnen]
 klausurrelevant: true
 datum: 2026-10-03
 tags: [EF, Physik, Quantenphysik, Photoeffekt, Einstein, Photon, Gegenfeldmethode]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Der Photoelektrische Effekt und Einsteins Lichtquantenhypothese (L1, Ziel Klausur)
@@ -30,8 +30,14 @@ Hook / Phaenomen: Nimm eine negativ geladene Zinkplatte an einem Elektroskop. Be
 
 `Klausur-Satz: Der photoelektrische Effekt beweist die Teilchennatur des Lichts: Die kinetische Energie herausgeschlagener Photoelektronen haengt ausschliesslich von der Frequenz des Lichts ab, waehrend die Lichtintensitaet lediglich die Anzahl der pro Zeiteinheit ausgeloesten Elektronen bestimmt.`
 
+
+AUFLÖSUNG (nach der Wahl lesen)
+
+C1-Pruefung: Dieser Schritt enthaelt keine vorweggenommene Mechanismus-Erklaerung unter Wahloptionen; Hook und Phaenomen bleiben rein beschreibend, die Deutung folgt erst in Schritt 3.
+
+> 一句话本质: 光是按份撞电子的，份的能量不够大，电子就跳不出来。
 ## Schritt 2 — entdecken: Ausruestungskiste der Photoeffekt-Unit
-PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
+PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文->德语，Evidenz：pretraining降认知负荷）：
 
 中文在上，德语在下：
 
@@ -101,10 +107,13 @@ In einem Schuellerexperiment zur Gegenfeldmethode wird eine Photozelle mit Licht
 2. Bestimmen Sie die Austrittsarbeit $W_A$ der Photokathode in Elektronenvolt (eV) sowie die Grenzfrequenz $f_g$. (20 BE)
 
 HILFE:
-1. Schritt 1: Steigung bestimmen: $m = \frac{\Delta U_G}{\Delta f} = \frac{U_{G,1} - U_{G,2}}{f_1 - f_2} = \frac{h}{e} \implies h = e \cdot \frac{\Delta U_G}{\Delta f}$.
-2. Schritt 2: Austrittsarbeit berechnen: $W_A = h \cdot f_1 - e \cdot U_{G,1}$.
-3. Schritt 3: In eV umrechnen ($1\text{ eV} = 1,602 \times 10^{-19}\text{ J}$).
-4. Schritt 4: Grenzfrequenz: $f_g = \frac{W_A}{h}$.
+- Richtung: Zuerst Grenzfrequenz, Austrittsarbeit und Photonenenergie $E = h \cdot f$ trennen.
+- Richtung: Danach Einstein-Gleichung $h f = W_A + E_{\text{kin}}$ fuer die gesuchte Groesse (Gegenspannung oder $h$) waehlen.
+- Richtung: Erst am Ende Zahlen mit Einheiten einsetzen und Schwellverhalten pruefen.
+COMPLETION (Lückentext):
+- Die Photonenenergie ist $E =$ ___ $\text{eV}$ aus $E = h \cdot f$.
+- Die Gegenspannung ist $U_g =$ ___ $\text{V}$ aus $e U_g = E_{\text{kin}}$.
+- Die Grenzfrequenz ist $f_G =$ ___ .
 
 MUSTERLÖSUNG:
 1. Bestimmung des Planckschen Wirkungsquantums $h$:
@@ -148,21 +157,21 @@ PRÜFUNGSSZENARIO (KLP NRW Physik GK/LK Inhaltsfeld 3: Quantenphysik / Technisch
 
 In der Astrophysik werden schwach leuchtende Sterne mit einem Photomultiplier (Sekundaerelektronenvervielfacher) untersucht. Dabei loest ein einzelnes einfallendes Photon an einer Photokathode ein Primarelektron aus, welches durch eine Kaskade von 10 Dynoden jeweils um den Faktor 4 verstaerkt wird.
 
-AUFGABE (berechnen & erklaeren, AFB II/III):
+AUFGABE (berechnen & erklaeren, [AFB II/III]):
 1. Berechnen Sie die Gesamtanzahl der Elektronen, die nach Durchlaufen der 10 Dynoden an der Anode gemessen werden. (10 BE)
 2. Erklaeren Sie, warum Halbleiter-Solarzellen fuer langwellige Infrarotstrahlung ($h \cdot f < E_{\text{Bandluecke}}$) vollstaendig transparent sind und keinen Strom erzeugen. (20 BE)
 
 ERWARTUNGSHORIZONT:
-- AFB II:
-  - Bei jeder Dynode vervierfacht sich die Anzahl der Sekundaerelektronen ($k = 4$).
-  - Bei $n = 10$ Dynoden betraegt die Gesamtverstaerkung:
-    $$N = k^n = 4^{10} = (2^2)^{10} = 2^{20} = 1.048.576\text{ Elektronen!}$$
-  - Ein einziges Photon erzeugt einen messbaren Stromimpuls von ueber 1 Million Elektronen an der Anode.
-- AFB III:
-  - In einer Halbleiter-Solarzelle (z.B. Silizium) muessen Elektronen vom Valenzband ueber die Bandluecke ($E_g \approx 1,1\text{ eV}$) in das Leitungsband gehoben werden (innerer Photoeffekt).
-  - Gemaess Einsteins Quantenhypothese kann ein Photon nur dann absorbiert werden, wenn seine Energie mindestens der Bandluecke entspricht: $h \cdot f \ge E_g$.
-  - Langwellige Infrarotstrahlung besitzt eine zu geringe Frequenz ($h \cdot f < E_g$). Da ein Elektron nicht zwei Photonen nacheinander "halb" absorbieren kann (Einteilchen-Prozess), kann das Photon mit den Valenzelektronen nicht in Wechselwirkung treten. Der Halbleiter ist fuer dieses Licht optisch transparent; das Licht passiert das Silizium ungehindert ohne Ladungstraegergeneration.
+Teilleistung | Punkte | Alternativweg
+Einstein-Gleichung mit Schwelle nennen | 5 NP | Herleitung ueber Gegenfeldgerade akzeptieren
+$U_g$ oder $h$ mit Einheiten bestimmen | 6 NP | Zahlenweg ueber Steigung $h/e$ akzeptieren
+Wellenbild klassisch widerlegen | 4 NP | Urteil mit Intensitaets-Argument akzeptieren
 
+KERNSATZ (auswendig):
+`Fuer Licht gilt $h \cdot f = W_A + E_{\text{kin}}$, daher beweist die Schwellfrequenz die Quantennatur.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Beleuchtete Kathode mit Schwelle $f_G$ | Einstein-Bilanz $hf$ gegen $W_A$ stellen | Ueberschuss als $E_{\text{kin}}$
+- Selbsttest: Fuer Licht gilt $h \cdot f = W_A +$ ___ , daher beweist die Schwellfrequenz die Quantennatur.
 ## Schritt 7 — check: Format-Check & Scoring
 30 XP Schnelltest zur Verstaendigungssicherung:
 

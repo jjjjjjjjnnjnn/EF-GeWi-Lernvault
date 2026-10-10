@@ -8,7 +8,7 @@ operatoren: [herleiten, berechnen, beurteilen]
 klausurrelevant: true
 datum: 2026-10-03
 tags: [EF, Physik, Elektrodynamik, Lorentzkraft, Massenspektrometer, Magnetfeld]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Lorentzkraft und Massenspektrometrie (L1, Ziel Klausur)
@@ -30,8 +30,14 @@ Hook / Phaenomen: Wie wiegt man ein einzelnes Atom? Kein Mikroskop und keine Lab
 
 `Klausur-Satz: Im homogenen Magnetfeld zwingt die Lorentzkraft geladene Teilchen auf eine Kreisbahn, deren Radius direkt proportional zur spezifischen Masse m/q ist.`
 
+
+AUFLÖSUNG (nach der Wahl lesen)
+
+C1-Pruefung: Dieser Schritt enthaelt keine vorweggenommene Mechanismus-Erklaerung unter Wahloptionen; Hook und Phaenomen bleiben rein beschreibend, die Deutung folgt erst in Schritt 3.
+
+> 一句话本质: 带电粒子拐弯的半径由动量和磁场决定，质谱仪就靠这个区分不同质量。
 ## Schritt 2 — entdecken: Ausruestungskiste der Elektrodynamik-Unit
-PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
+PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文->德语，Evidenz：pretraining降认知负荷）：
 
 中文在上，德语在下：
 
@@ -103,9 +109,13 @@ Einfach positiv geladene Kalium-Ionen ($q = +e = 1,602 \times 10^{-19}\text{ C}$
 2. Berechnen Sie die Geschwindigkeit der Ionen sowie die Masse des leichteren Isotops $^{39}\text{K}$, dessen Bahnradius $r_1 = 16,2\text{ cm}$ betraegt. (20 BE)
 
 HILFE:
-1. Schritt 1: Wien-Filter: Kraeftegleichgewicht $q E = q v B_1 \implies v = E/B_1$.
-2. Schritt 2: Ablenkkammer: Lorentzkraft = Zentripetalkraft $q v B_2 = m v^2/r \implies r = \frac{m v}{q B_2} \implies m = \frac{q B_2 r}{v}$.
-3. Schritt 3: Zahlenwerte einsetzen (Einheiten sauber kuerzen!).
+- Richtung: Zuerst Ladung, Geschwindigkeit und Feldrichtung trennen und die Drei-Finger-Regel zuordnen.
+- Richtung: Danach Lorentzkraft $F_L$ als Zentripetalkraft ansetzen und nach $r$ oder $m$ aufloesen.
+- Richtung: Erst am Ende Zahlen mit Einheiten einsetzen und Vorzeichen der Ablenkung pruefen.
+COMPLETION (Lückentext):
+- Die Lorentzkraft ist $F_L =$ ___ $\text{N}$ aus $F_L = q \cdot v \cdot B$.
+- Der Bahnradius ist $r =$ ___ $\text{m}$ aus $q v B = m v^2 / r$.
+- Die Masse folgt aus $m =$ ___ .
 
 MUSTERLÖSUNG:
 1. Herleitung:
@@ -149,19 +159,21 @@ PRÜFUNGSSZENARIO (KLP NRW Physik GK/LK Inhaltsfeld 3: Elektrodynamik und Quante
 In einem Zyklotron kreisen Protonen im homogenen Magnetfeld $B$. Zur Beschleunigung dient eine hochfrequente Wechselspannung zwischen zwei Duanten (D-foermige Elektroden).
 Die Umlaufzeit eines Protons betraegt $T = \frac{2 \pi m}{q B}$.
 
-AUFGABE (herleiten & problematisieren, AFB II/III):
+AUFGABE (herleiten & problematisieren, [AFB II/III]):
 1. Leiten Sie die Unabhaengigkeit der Umlaufzeit $T$ vom Bahnradius $r$ her. (12 BE)
 2. Problematisieren Sie die physikalische Grenze des klassischen Zyklotrons bei Geschwindigkeiten nahe der Lichtgeschwindigkeit ($v > 0,1 c$). (18 BE)
 
 ERWARTUNGSHORIZONT:
-- AFB II:
-  - Aus $q v B = m \frac{v^2}{r} \implies v = \frac{q B r}{m}$.
-  - Umlaufzeit: $T = \frac{2 \pi r}{v} = \frac{2 \pi r}{\frac{q B r}{m}} = \frac{2 \pi m}{q B}$.
-  - Da sich der Radius $r$ vollstaendig herauskuerzt, ist die Zeit fuer einen halben Umlauf konstant: Zwar wird der Radius bei zunehmender Geschwindigkeit groesser, der Weg verlaengert sich aber im exakt selben Verhaeltnis wie die Geschwindigkeit! Die Beschleunigungsfrequenz kann starr bleiben.
-- AFB III:
-  - Bei relativistischen Geschwindigkeiten ($v > 0,1 c$) waechst die relativistische Masse bzw. Energie des Protons ($m(v) = \frac{m_0}{\sqrt{1 - v^2/c^2}}$).
-  - Dadurch verlaengert sich die Umlaufzeit $T$. Das Teilchen kommt zu spaet am Spalt zwischen den Duanten an und geraet ausser Phase mit der konstanten Hochfrequenz (es wird gebremst statt beschleunigt). Das klassische Zyklotron versagt und muss durch ein Synchrotron ersetzt werden, bei dem Magnetfeld und Hochfrequenz dynamisch an die relativistische Masse angepasst werden.
+Teilleistung | Punkte | Alternativweg
+Lorentz-Ansatz mit Richtung nennen | 5 NP | Herleitung ueber Energievorwahl akzeptieren
+$r$ und $m$ mit Einheiten berechnen | 6 NP | Zahlenweg ueber $v$-Selektor akzeptieren
+Trennung und Grenzen beurteilen | 4 NP | Urteil mit relativistischer Grenze akzeptieren
 
+KERNSATZ (auswendig):
+`Im Magnetfeld gilt $q \cdot v \cdot B = m \cdot v^2 / r$, daher trennt der Radius Ionen nach $m/q$.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Ion mit $q$ und $v$ im Feld $B$ | $F_L$ als $F_z$ ansetzen | Radius aus $m/q$
+- Selbsttest: Im Magnetfeld gilt $q \cdot v \cdot B = m \cdot v^2 /$ ___ , daher trennt der Radius Ionen nach $m/q$.
 ## Schritt 7 — check: Format-Check & Scoring
 30 XP Schnelltest zur Verstaendigungssicherung:
 

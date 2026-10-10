@@ -8,7 +8,7 @@ operatoren: [berechnen, erklaeren]
 klausurrelevant: true
 datum: 2026-09-26
 tags: [EF, Physik, Mechanik]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Gleichfoermige Kreisbewegung (L1, Ziel Klausur)
@@ -28,6 +28,12 @@ Hook / Phaenomen: Kettenkarussell in Voithausen: Die Kette zeigt schraeg nach au
 
 `Klausur-Satz: Kreisbewegung braucht Innenkraft: Zentripetalkraft m v Quadrat durch r haelt die Bahn, Richtung aendert sich staendig.`
 
+
+AUFLÖSUNG (nach der Wahl lesen)
+
+C1-Pruefung: Dieser Schritt enthaelt keine vorweggenommene Mechanismus-Erklaerung unter Wahloptionen; Hook und Phaenomen bleiben rein beschreibend, die Deutung folgt erst in Schritt 3.
+
+> 一句话本质: 绳子拉力提供向心力，转得越快或半径越大，需要的拉力越大。
 ## Schritt 2 — entdecken: Ausruestungskiste der Mars-Crew
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
@@ -93,9 +99,13 @@ BEISPIEL (Sandbox Level mit Werkzeug):
 AUFGABE (Levelziel, AFB II): Ein Auto der Masse $m = 1000\,\mathrm{kg}$ durchfaehrt eine flache Kurve mit Radius $r = 60\,\mathrm{m}$ mit $v = 15\,\mathrm{m/s}$ (Karussell-Modell mit gleichem $r$). Bestimmen Sie Umlaufdauer $T$, Winkelgeschwindigkeit $\omega$ und die erforderliche Zentripetalkraft $F_Z = m v^2/r$ und erklaeren Sie die Verdopplungsregel.
 
 HILFE:
-1. Stelle $r = 60\,\mathrm{m}$ und $v = 15\,\mathrm{m/s}$ ein: Umfang $U = 2\pi r$, dann $T = U/v$ und $\omega = v/r$.
-2. Berechne $v = 2\pi r/T$ und $F_Z = mv^2/r$ Schritt fuer Schritt mit Kontrolle $\omega = 2\pi/T$.
-3. Verdopple $v$, weise vierfaches $F_Z$ nach und deute Haftreibung als Traeger in der Kurve.
+- Richtung: Zuerst Radius, Umlaufdauer und Bahngeschwindigkeit sauber trennen und $v = \omega \cdot r$ zuordnen.
+- Richtung: Danach die zum Zentrum zeigende resultierende Kraft als Zentripetalkraft $F_z$ identifizieren.
+- Richtung: Erst am Ende Zahlen mit Einheiten einsetzen und Richtung von $F_z$ pruefen.
+COMPLETION (Lückentext):
+- Die Bahngeschwindigkeit ist $v =$ ___ $\text{m/s}$ aus $v = 2 \cdot \pi \cdot r / T$.
+- Die Zentripetalkraft ist $F_z =$ ___ $\text{N}$ aus $F_z = m \cdot v^2 / r$.
+- Die Winkelgeschwindigkeit ist $\omega =$ ___ $\text{1/s}$.
 
 MUSTERLOESUNG: Es gilt $U = 2\pi\cdot 60 = 377\,\mathrm{m}$, also $T = 377/15 = 25{,}1\,\mathrm{s}$ und $\omega = v/r = 15/60 = 0{,}25\,\mathrm{1/s}$ mit Kontrolle $f = 1/T = 0{,}0398\,\mathrm{1/s}$. Die Zentripetalkraft betraegt $F_Z = 1000\cdot 15^2/60 = 3750\,\mathrm{N}$, bei doppeltem $v$ das Vierfache $15000\,\mathrm{N}$ wegen des Quadrats. Bahn-Fragen brauchen nur $v$ und $\omega$, Halte-Fragen brauchen $F_Z$ mit Traeger Haftreibung.
 
@@ -142,10 +152,24 @@ CHECK (Selbsttest, 3 Fragen mit Antworten):
 ## Schritt 7 — szenario: Klausurtransfer: Gleichfoermige Kreisbewegung: Schwerkraft-Anker
 ROLLE: Du bist Tutor in der EF und erklaerst einer Mitschuelerin die Kurvenphysik.
 SITUATION: Nach Regen ist ein Auto in flacher Kurve ($r = 60\,\mathrm{m}$) gerutscht. Die Mitschuelerin sagt: Die Fliehkraft zog das Auto hinaus. Nimm in zusammenhaengender Darstellung (ca. 150 Woerter) Stellung, rechne mit $v = 20\,\mathrm{m/s}$, $m = 1000\,\mathrm{kg}$ die noetige $F_Z$ aus und beurteile die Aussage. Schreibe Antwort mit Formeln, Rechnung, Kraftdeutung und Urteil.
+**AUFGABE (berechnen und begruenden) [AFB II/III]**:
+Berechnen Sie $v$ und $F_z$ eines Kreisumlaufs und begruenden Sie, welche reale Kraft die Zentripetalkraft stellt.
+
 RUBRIC (30 XP): Rechnung mit $F_Z = m v^2/r$ (10 XP) | Deutung Haftreibung als Lieferant (10 XP) | Urteil: keine reale Kraft nach aussen, sondern Traegheit bei fehlender $F_Z$ (10 XP).
 
 `Klausur-Satz: Wer Bahn- und Kraftverfahren verbindet, Zentripetalkraft berechnet und Winkelgroessen deutet, erhaelt die volle Punktzahl.`
 
+
+ERWARTUNGSHORIZONT:
+Teilleistung | Punkte | Alternativweg
+Kinematik mit $v$ und $\omega$ aufstellen | 5 NP | Weg ueber Drehfrequenz akzeptieren
+$F_z$ mit Einheit berechnen | 6 NP | Kraftweg ueber $F_z = m \cdot \omega^2 \cdot r$ akzeptieren
+Reale Kraft als $F_z$-Traeger benennen | 4 NP | Urteil mit Fliehkraft-Abgrenzung akzeptieren
+KERNSATZ (auswendig):
+`Fuer die Kreisbahn gilt $F_z = m \cdot v^2 / r$, weil die resultierende Kraft zum Zentrum zeigt.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Gleichfoermiger Umlauf mit Radius $r$ | Resultierende als $F_z$ zum Zentrum deuten | Bahngeschwindigkeit aus $T$ und $r$
+- Selbsttest: Fuer die Kreisbahn gilt $F_z = m \cdot v^2 /$ ___ , weil die resultierende Kraft zum Zentrum zeigt.
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Schwerkraft-Anker
 TAKEAWAY (Kernzusammenfassung):
 

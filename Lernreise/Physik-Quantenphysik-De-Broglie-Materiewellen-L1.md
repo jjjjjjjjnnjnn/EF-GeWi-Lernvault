@@ -8,7 +8,7 @@ operatoren: [herleiten, berechnen, beurteilen]
 klausurrelevant: true
 datum: 2026-10-03
 tags: [EF, Physik, Quantenphysik, De-Broglie, Materiewellen, Elektronenbeugung, Welle-Teilchen-Dualismus]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Quantenphysik: De-Broglie-Hypothese, Materiewellen und Elektronenbeugung (L1, Ziel Klausur)
@@ -28,8 +28,14 @@ Stell dir vor, du feuerst mit einem Maschinengewehr Tausende winzige Stahlkugeln
 
 `Klausur-Satz: Jedem bewegten Materieteilchen mit dem Impuls p ist gemaess der De-Broglie-Gleichung lambda = h / p eine Materiewelle zugeordnet, deren Interferenzfaehigkeit durch Beugungsexperimente an Kristallgittern nachgewiesen wird.`
 
+
+AUFLÖSUNG (nach der Wahl lesen)
+
+C1-Pruefung: Dieser Schritt enthaelt keine vorweggenommene Mechanismus-Erklaerung unter Wahloptionen; Hook und Phaenomen bleiben rein beschreibend, die Deutung folgt erst in Schritt 3.
+
+> 一句话本质: 运动的粒子也带着波长，粒子越重或越快，波长就越短。
 ## Schritt 2 — entdecken: Der quantenmechanische Werkzeugkasten
-PRETRAINING术语盒（核心4词，先读三遍中德，合书自测中文→德语）：
+PRETRAINING术语盒（核心4词，先读三遍中德，合书自测中文->德语）：
 
 - 德布罗意波长 — De-Broglie-Wellenlaenge ($\lambda$): 具有动量 $p = m \cdot v$ 的运动实物粒子所对应的等效物质波波长：$\lambda = \frac{h}{p}$。 Die Wellenlaenge einer quantenmechanischen Materiewelle, umgekehrt proportional zum Impuls des Teilchens.
 - 电子衍射管 — Elektronenbeugungsroehre: 利用数千伏高压加速电子枪射出的电子束穿过多晶石墨靶，从而在荧光屏上观察干涉同心圆环的实验装置。 Eine evakuierte Roehre zur Demonstration von Welleneigenschaften beschleunigter Elektronen an einer duennen polykristallinen Graphitfolie.
@@ -73,6 +79,17 @@ Naturkonstanten:
 2. Berechne die De-Broglie-Wellenlaenge $\lambda$ der Elektronen.
 3. Bestimme den Beugungswinkel $\theta_1$ fuer das Maximum 1. Ordnung ($n = 1$).
 
+
+HILFE:
+- Richtung: Zuerst Impuls $p$ aus Beschleunigungsspannung oder $m v$ bestimmen und Quanten- sowie Wellengroessen trennen.
+- Richtung: Danach $\lambda = h/p$ fuer die Wellenlaenge und $s_k = k \lambda a/d$ fuer das Muster waehlen.
+- Richtung: Erst am Ende Zahlen mit Einheiten einsetzen und Groessenordnung im Nanometerbereich pruefen.
+
+COMPLETION (Lückentext):
+- Der Impuls ist $p =$ ___ $\text{kg m/s}$ aus $eU = p^2/(2m)$.
+- Die Wellenlaenge ist $\lambda =$ ___ $\text{m}$ aus $\lambda = h/p$.
+- Der Streifenabstand ist $s_1 =$ ___ $\text{m}$.
+
 MUSTERLOESUNG:
 1. Geschwindigkeit:
    $$v = \sqrt{\frac{2 \cdot e \cdot U_B}{m_e}} = \sqrt{\frac{2 \cdot 1{,}602 \times 10^{-19}\,\text{C} \cdot 4000\,\text{V}}{9{,}109 \times 10^{-31}\,\text{kg}}} = \sqrt{\frac{1{,}2816 \times 10^{-15}}{9{,}109 \times 10^{-31}}} \approx 3{,}75 \times 10^7\,\text{m/s}$$
@@ -104,6 +121,9 @@ Wird nach `Welle-Teilchen-Dualismus bei Elektronen` gefragt, formuliere praezise
 
 PRUEFUNGSSZENARIO (KLP NRW Physik LK Inhaltsfeld 3: Quantenphysik):
 
+**AUFGABE (berechnen und erklaeren) [AFB II/III]**:
+Berechnen Sie $\lambda$ und $s_1$ fuer Elektronen am Doppelspalt und erklaeren Sie das Einzelteilchen-Muster.
+
 ### AFB I: Faktenwissen
 Erläutere die Formel $\lambda = \frac{h}{p}$ und begruende, warum wir im menschlichen Alltag an Makro-Objekten (z. B. einem rollenden Fussball) niemals Materiewellen-Interferenzen beobachten koennen.
 
@@ -114,6 +134,17 @@ Zeige rechnerisch anhand deiner Ergebnisse aus Schritt 4, um welchen Faktor das 
 ### AFB III: Philosophisch-Wissenschaftliches Urteil
 Bewerte das "Doppelspalt-Experiment mit einzelnen Elektronen" von Joensson (1961) und Tonomura (1989): Wenn zu jedem Zeitpunkt immer nur ein einziges Elektron das Experiment durchquert und trotzdem nach tausend Durchgaengen ein Interferenzmuster entsteht – mit wem oder was interferiert das Elektron dann?
 
+
+ERWARTUNGSHORIZONT:
+Teilleistung | Punkte | Alternativweg
+Impuls- und $\lambda$-Ansatz nennen | 5 NP | Weg ueber $v$-Berechnung akzeptieren
+$\lambda$ und $s_1$ berechnen | 6 NP | Zahlenweg mit Kleinwinkelmethode akzeptieren
+Welcher-Weg-Deutung geben | 4 NP | Urteil mit Born-Deutung akzeptieren
+KERNSATZ (auswendig):
+`Fuer Materie gilt $\lambda = h/p$, daher erzeugt der Doppelspalt messbare Abstaende $s_k = k\lambda a/d$.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Elektron mit Impuls $p$ am Doppelspalt | $\lambda$ und Geometrie verknuepfen | Muster aus $s_k$-Formel
+- Selbsttest: Fuer Materie gilt $\lambda =$ ___ , daher erzeugt der Doppelspalt messbare Abstaende $s_k = k\lambda a/d$.
 ## Schritt 7 — check: Format-Check & Scoring
 
 30 XP Schnelltest zur Verstaendigungssicherung:

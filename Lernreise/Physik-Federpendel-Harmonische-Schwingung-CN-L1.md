@@ -8,7 +8,7 @@ operatoren: [darstellen, berechnen, interpretieren]
 klausurrelevant: true
 datum: 2026-09-26
 tags: [EF, Physik, Schwingung]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Federpendel und harmonische Schwingung (L1, Ziel Klausur)
@@ -30,8 +30,14 @@ Hook / Phaenomen: Ein Wagen rauscht ueber eine Bodenwelle: Ohne **Stossdaempfer*
 
 `Klausur-Satz: Rueckstellung erzeugt Schwingung: Federkraft minus D mal x treibt die Masse periodisch zur Ruhelage zurueck.`
 
+
+AUFLÖSUNG (nach der Wahl lesen)
+
+C1-Pruefung: Dieser Schritt enthaelt keine vorweggenommene Mechanismus-Erklaerung unter Wahloptionen; Hook und Phaenomen bleiben rein beschreibend, die Deutung folgt erst in Schritt 3.
+
+> 一句话本质: 平衡位置速度最大、两端速度为零，周期只由质量与劲度系数决定。
 ## Schritt 2 — entdecken: Ausruestungskiste der Mars-Crew
-PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文→德语，Evidenz：pretraining降认知负荷）：
+PRETRAINING术语盒（核心5词，先读三遍中德，合书自测中文->德语，Evidenz：pretraining降认知负荷）：
 
 中文在上，德语在下：
 
@@ -111,6 +117,17 @@ HILFE（中德双语步骤）：
 3. 中文：第3步判：振幅无关、质量增则周期增，关键词：Folgerung。
    Schritt 3 (DE): Amplitude egal, Masse verlaengert $T$.
 
+
+HILFE:
+- Richtung: Zuerst das Kraftgesetz $F = -D \cdot s$ und die Energieformen $E_{\text{kin}}$ und $E_{\text{spann}}$ benennen.
+- Richtung: Danach die Schwingungsgleichung oder die Energiebilanz fuer die gesuchte Groesse (Auslenkung, Geschwindigkeit oder Periode) waehlen.
+- Richtung: Erst am Ende Zahlen mit Einheiten einsetzen und Amplitude sowie Periode per Plausibilitaet pruefen.
+
+COMPLETION (Lückentext):
+- Die Winkelgeschwindigkeit ist $\omega =$ ___ $\text{1/s}$ aus $\omega = \sqrt{D / m}$.
+- Die maximale Geschwindigkeit ist $v_{\text{max}} =$ ___ $\text{m/s}$ aus $v_{\text{max}} = A \cdot \omega$.
+- Die Periode ist $T =$ ___ $\text{s}$ aus $T = 2 \cdot \pi \cdot \sqrt{m / D}$.
+
 MUSTERLOESUNG：中文：振幅加倍只跑远不跑慢，周期仍为0.50秒；换重砝码质量增大，周期按根号关系变长，弹簧调硬则反之。
 
 MUSTERLOESUNG (DE): Die Schwingung dauert $0{,}50\,\mathrm{s}$ pro Periode und bleibt bei jeder Amplitude gleich schnell, weil $T = 2\pi\sqrt{m/D}$ keine Amplitude enthaelt. Groessere Masse verlaengert $T$.
@@ -158,11 +175,22 @@ CHECK检索默写（自测 3 题，与答案配对）：
 ## Schritt 7 — szenario: Klausurtransfer: Federpendel und harmonische Schwingung: Schwingung im Habitat
 ROLLE: Du bist Tutorin und erklaerst das Federpendel vor der Klausur.
 SITUATION: Ein Mitschueler behauptet, eine doppelt so weit ausgelenkte Feder schwinge doppelt so langsam.
-AUFGABE: Widerlegen Sie das in ca. 150 Woertern mit Formel $T = 2\pi\sqrt{m/D}$ und Energie-Argument und erklaeren Sie, was sich bei groesserer Amplitude wirklich aendert.
+AUFGABE: Widerlegen Sie das in ca. 150 Woertern mit Formel $T = 2\pi\sqrt{m/D}$ und Energie-Argument und erklaeren Sie, was sich bei groesserer Amplitude wirklich aendert. [AFB III]
 RUBRIC (30 XP): Formel korrekt ohne Amplitude (10 XP) | Isochronie erklaert (10 XP) | Energie/Geschwindigkeit als wahre Aenderung genannt (10 XP).
 
 `Klausur-Satz: Wer Wurzelgesetz anwendet, Isochronie begruendet und Messfehler mit Reibung diskutiert, erhaelt die volle Punktzahl.`
 
+
+ERWARTUNGSHORIZONT:
+Teilleistung | Punkte | Alternativweg
+Kraft- oder Energieansatz mit $F = -D \cdot s$ nennen | 5 NP | Herleitung ueber Differentialgleichung akzeptieren
+$T$ und $v_{\text{max}}$ mit Einheiten berechnen | 6 NP | Zahlenweg ueber Energieerhaltung akzeptieren
+Abhaengigkeit von $m$ und $D$ deuten | 4 NP | Urteil mit Daempfungsvorbehalt akzeptieren
+KERNSATZ (auswendig):
+`Beim Federpendel gilt $T = 2 \cdot \pi \cdot \sqrt{m / D}$, weil Traegheit und Rueckstellung die Schwingung bestimmen.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Freies Federpendel mit Masse $m$ und Feder $D$ | Bewegungsgleichung oder Energiebilanz anwenden | Periode haengt nur von $m$ und $D$ ab
+- Selbsttest: Beim Federpendel gilt $T = 2 \cdot \pi \cdot$ ___ , weil Traegheit und Rueckstellung die Schwingung bestimmen.
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Schwingung im Habitat
 TAKEAWAY 1盒（核心总结）：
 

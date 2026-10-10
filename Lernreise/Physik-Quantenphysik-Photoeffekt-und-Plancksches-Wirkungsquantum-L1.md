@@ -8,7 +8,7 @@ operatoren: [beschreiben, auswerten, beurteilen]
 klausurrelevant: true
 datum: 2026-10-03
 tags: [EF, Physik, Quantenphysik, Photoeffekt, Einstein, Lichtquantenhypothese, Gegenfeldmethode, Austrittsarbeit]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Quantenphysik: Der aeussere Photoeffekt, Gegenfeldmethode und Bestimmung von h (L1, Ziel Klausur)
@@ -28,8 +28,14 @@ Stell dir vor, du stehst im Physik-Hoersaal vor einem negativ geladenen Zinkplat
 
 `Klausur-Satz: gemaess Einsteins Lichtquantenhypothese besteht Licht aus diskreten Energiequanten (Photonen) mit E = h * f; beim aeusseren Photoeffekt uebertraegt ein einzelnes Photon seine gesamte Energie in einem unteilbaren Elementarprozess an ein einzelnes Elektron.`
 
+
+AUFLÖSUNG (nach der Wahl lesen)
+
+C1-Pruefung: Dieser Schritt enthaelt keine vorweggenommene Mechanismus-Erklaerung unter Wahloptionen; Hook und Phaenomen bleiben rein beschreibend, die Deutung folgt erst in Schritt 3.
+
+> 一句话本质: 反向电压刚好拦住最快的电子，由此画直线就能称出普朗克常数。
 ## Schritt 2 — entdecken: Das physikalische Vokabular der Photonik
-PRETRAINING术语盒（核心4词，先读三遍中德，合书自测中文→德语）：
+PRETRAINING术语盒（核心4词，先读三遍中德，合书自测中文->德语）：
 
 - 外光电效应 — Aeusserer Photoeffekt (Hallwachs-Effekt): Das Herausschlagen von gebundenen Leitungselektronen aus einer Metalloberflaeche durch Bestrahlung mit elektromagnetischer Strahlung oberhalb einer Grenzfrequenz.
 - 光子能量与普朗克常量 — Photonenenergie & Plancksches Wirkungsquantum ($h$): Die Energie eines Lichtquants ist direkt proportional zu seiner Frequenz ($E = h \cdot f$ mit $h \approx 6{,}626 \cdot 10^{-34}\,\text{J}\cdot\text{s}$).
@@ -78,6 +84,17 @@ $$h = e \cdot m = 1{,}602 \cdot 10^{-19}\,\text{C} \cdot 4{,}16 \cdot 10^{-15}\,
 
 `Klausur-Satz: Bei Aufgaben zu Quantenphysik: Der aeussere Photoeffekt, Gegenfeldmethode und Bestimmung von h muss die theoriegeleitete Begruendung stets durch exakte Fachtermini und empirische Belege abgesichert werden.`
 
+
+HILFE:
+- Richtung: Zuerst Spektrallinien, Gegenspannung und maximale Elektronenenergie sauber zuordnen.
+- Richtung: Danach $eU_g = hf - W_A$ als Gerade $U_g(f)$ lesen und Steigung sowie Achsenabschnitt deuten.
+- Richtung: Erst am Ende Zahlen mit Einheiten einsetzen und $h$ mit Literaturwert vergleichen.
+
+
+COMPLETION (Lückentext):
+- Die Geradensteigung ist $\Delta U_g/\Delta f =$ ___ $\text{Vs}$.
+- Das Wirkungsquantum ist $h =$ ___ $\text{Js}$ aus $h = e \cdot \text{Steigung}$.
+- Die Austrittsarbeit ist $W_A =$ ___ $\text{eV}$.
 ## Schritt 5 — check: Das Konzeptduell
 VERGLEICH: Klassische Wellenlehre versus Einsteins Lichtquantenhypothese
 
@@ -96,6 +113,21 @@ Eine Kalium-Photokathode besitzt eine Austrittsarbeit von $W_A = 2{,}25\,\text{e
 - AFB II: $f_{\text{grenz}} = \frac{W_A}{h} = \frac{2{,}25 \cdot 1{,}602 \cdot 10^{-19}\,\text{J}}{6{,}626 \cdot 10^{-34}\,\text{J}\cdot\text{s}} = 5{,}44 \cdot 10^{14}\,\text{Hz}$. Da $f > f_{\text{grenz}}$, tritt der Photoeffekt ein: $E_{\text{kin,max}} = E_{\text{Ph}} - W_A = 3{,}06\,\text{eV} - 2{,}25\,\text{eV} = 0{,}81\,\text{eV} = 1{,}30 \cdot 10^{-19}\,\text{J}$. Da $E_{\text{kin}} \ll m_e c^2$, reicht nicht-relativistisch: $v_{\text{max}} = \sqrt{\frac{2 \cdot E_{\text{kin}}}{m_e}} = \sqrt{\frac{2 \cdot 1{,}30 \cdot 10^{-19}}{9{,}109 \cdot 10^{-31}}} \approx 5{,}34 \cdot 10^5\,\text{m/s}$.
 - AFB III: (a) Verdopplung der Lichtleistung erhoeht die Photonendichte pro Sekunde; folglich verdoppelt sich der Saettigungsstrom $I_{\text{max}}$. Da die Frequenz unveraendert bleibt, bleibt die kinetische Energie und damit die noetige Gegenspannung $U_g = 0{,}81\,\text{V}$ exakt gleich. (b) Bei $\lambda = 650\,\text{nm}$ ist $f = 4{,}62 \cdot 10^{14}\,\text{Hz} < f_{\text{grenz}}$. Die Photonenenergie betraegt nur $1{,}91\,\text{eV} < 2{,}25\,\text{eV}$; es werden ueberhaupt keine Elektronen ausgeloest ($I = 0\,\text{A}$, kein Gegenfeld messbar).
 
+
+**AUFGABE (auswerten und beurteilen) [AFB II/III]**:
+Werten Sie eine $U_g$-$f$-Kennlinie zur Bestimmung von $h$ aus und beurteilen Sie systematische Fehler.
+
+
+ERWARTUNGSHORIZONT:
+Teilleistung | Punkte | Alternativweg
+Geradenmodell $eU_g = hf - W_A$ nennen | 5 NP | Ausgleichsgerade per Hand akzeptieren
+$h$ und $W_A$ mit Einheiten bestimmen | 6 NP | Zahlenweg ueber zwei Punkte akzeptieren
+Fehler und Kontaktspannung beurteilen | 4 NP | Urteil mit Streulicht-Korrektur akzeptieren
+KERNSATZ (auswendig):
+`Aus $eU_g = h f - W_A$ folgt $h$ als Geradensteigung, daher misst das Gegenfeld das Wirkungsquantum.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Kennlinie $U_g$ ueber $f$ | Gerade mit Steigung $h/e$ lesen | $h$ aus Anstieg
+- Selbsttest: Aus $eU_g = h f - W_A$ folgt $h$ als ___ , daher misst das Gegenfeld das Wirkungsquantum.
 ## Schritt 7 — muendlich: Die muendliche Blitzpruefung
 Simuliere ein muendliches Abiturszenario:
 

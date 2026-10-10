@@ -8,7 +8,7 @@ operatoren: [beschreiben, berechnen, begruenden, analysieren]
 klausurrelevant: true
 datum: 2026-09-25
 tags: [EF, Physik, Dynamik]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Newtonsche Gesetze: Kraftzerlegung und Reibung (L1, Ziel Klausur)
@@ -28,6 +28,12 @@ Hook / Phaenomen: Eis, Rampe, Seil: Kraefte ziehen aus allen Richtungen, doch nu
 
 `Klausur-Satz: Newton II verwandelt Kraefte in Bewegung: Resultierende Kraft gleich Masse mal Beschleunigung nach Zerlegung und Reibungsabzug.`
 
+
+AUFLÖSUNG (nach der Wahl lesen)
+
+C1-Pruefung: Dieser Schritt enthaelt keine vorweggenommene Mechanismus-Erklaerung unter Wahloptionen; Hook und Phaenomen bleiben rein beschreibend, die Deutung folgt erst in Schritt 3.
+
+> 一句话本质: 先画全受力图再求合力，合力除以质量就是加速度，斜面上质量会被约掉。
 ## Schritt 2 — entdecken: Ausruestungskiste der Mars-Crew
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
@@ -92,9 +98,13 @@ BEISPIEL (Sandbox Level mit Werkzeug):
 AUFGABE (Levelziel, AFB II): Knacke das Hang-Level: Ziehe im Sandbox-Labor den Neigungswinkel $\alpha$ von flach bis steil und die Reibungszahl $\mu$ von glatt bis rau und beobachte, wie Hangabtrieb, Normalkraft und Beschleunigung live folgen. Miss $a$ bei zwei Winkeln, berechne dann exakt per Zerlegung und $F=m\cdot a$ und vergleiche Labor mit Rechnung. Erklaere in einem Satz die Winkelwirkung.
 
 HILFE:
-1. Stelle $\alpha$ und $\mu$ ein und lies Hangabtrieb, Normalkraft und $a$ im Labor ab.
-2. Rechne $F_H = mg\sin(\alpha)$, $F_N = mg\cos(\alpha)$ und $F_{res} = F_H-\mu F_N$.
-3. Bilde $a = F_{res}/m$, gleiche mit dem Labor ab und deute die Winkelwirkung.
+- Richtung: Zuerst Kraeftediagramm in der Reihenfolge Gewicht, Kontakt, Reibung und Zusatzkraefte zeichnen.
+- Richtung: Danach Gewicht in Hang- und Normalanteil zerlegen und die resultierende Kraft laengs der Bewegung bilden.
+- Richtung: Erst am Ende $a = F_{\text{res}}/m$ mit Einheiten auswerten und $a = 0$ als Gleichgewicht pruefen.
+COMPLETION (Lückentext):
+- Die Hangabtriebskraft ist $F_H =$ ___ $\text{N}$ aus $F_H = m \cdot g \cdot \sin(\alpha)$.
+- Die Beschleunigung ist $a =$ ___ $\text{m/s}^2$ aus $a = F_{\text{res}}/m$.
+- Im Gleichgewicht gilt $F_{\text{res}} =$ ___ .
 
 MUSTERLOESUNG: Labor zeigt $a$ wachsend mit $\alpha$ und fallend mit $\mu$. Rechnung $F_H=mg\sin(\alpha)$ minus $F_R=\mu mg\cos(\alpha)$ liefert $F_{res}$ und per $F=m\cdot a$ exakt das Labor-$a$. Steilerer Winkel vergroessert den Hanganteil und verkleinert zugleich die Reibung, daher waechst $a$ ueberproportional mit dem Winkel.
 
@@ -141,10 +151,24 @@ CHECK (Selbsttest, 3 Fragen mit Antworten):
 ## Schritt 7 — szenario: Klausurtransfer: Newtonsche Gesetze: Kraftzerlegung und Reibung: Tricks der Navigatorin
 ROLLE: Du bist Mitglied einer Schuelerforschungsgruppe, die einen Rampenversuch fuer den Tag der offenen Tuer plant.
 SITUATION: Auf einer Rampe mit $\alpha = 25^{\circ}$ soll ein Kasten ($m = 3{,}0\,\mathrm{kg}$) kontrolliert hinabgleiten. Die Gruppe diskutiert, ob eine bestimmte Oberflaeche geeignet ist: Bei zu grosser Reibung rutscht der Kasten nicht an, bei zu kleiner Reibung wird er zu schnell. Beurteile in einer zusammenhaengenden Stellungnahme (ca. 150 Woerter), wovon die Beschleunigung abhaengt und wie die Reibung das Ergebnis beeinflusst. Nutze $g = 10\,\mathrm{m/s^2}$.
+**AUFGABE (begruenden und beurteilen) [AFB II/III]**:
+Begruenden Sie Beschleunigung oder Gleichgewicht eines Rampenversuchs aus der Zerlegung und beurteilen Sie die Oberflaechenwahl.
+
 RUBRIC (30 XP): Benennung der zerlegten Kraefte $F_H$ und $F_N$ mit Formel (5 XP) | Aufstellen der Bewegungsgleichung $F_{res} = F_H - F_R = m \cdot a$ (10 XP) | Nachweis der Massenunabhaengigkeit mit Zahlenrechnung (10 XP) | Kriteriengeleitetes Urteil zur Eignung der Oberflaeche mit Einheit (5 XP).
 
 `Klausur-Satz: Wer zerlegt, bilanziert, Axiom anwendet und s-t- sowie v-t-Deutung liefert, erhaelt die volle Punktzahl.`
 
+
+ERWARTUNGSHORIZONT:
+Teilleistung | Punkte | Alternativweg
+Zerlegung mit $F_H$ und $F_N$ nennen | 5 NP | Herleitung ueber $a = g(\sin\alpha - \mu\cos\alpha)$ akzeptieren
+$a$ und $v$ mit Einheiten berechnen | 6 NP | Zahlenweg ueber $v^2 = 2as$ akzeptieren
+Oberflaeche kriteriengeleitet beurteilen | 4 NP | Urteil mit Haft-Gleit-Abgrenzung akzeptieren
+KERNSATZ (auswendig):
+`Laengs der Ebene gilt $F_{\text{res}} = F_H - F_R$, daher folgt $a = F_{\text{res}}/m$ nach Zerlegung.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Koerper auf schiefer Ebene mit Winkel $\alpha$ | Gewicht zerlegen und $F_{\text{res}}$ bilden | Bewegung aus $a$-Vorzeichen
+- Selbsttest: Laengs der Ebene gilt $F_{\text{res}} = F_H -$ ___ , daher folgt $a = F_{\text{res}}/m$ nach Zerlegung.
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Tricks der Navigatorin
 TAKEAWAY (Kernzusammenfassung):
 

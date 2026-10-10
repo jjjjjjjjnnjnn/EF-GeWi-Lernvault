@@ -8,7 +8,7 @@ operatoren: [beschreiben, erklaeren, begruenden]
 klausurrelevant: true
 datum: 2026-09-26
 tags: [EF, Physik, Schwingung]
-version: Lesson-v3
+version: Enterprise-v5
 ---
 
 # Lernreise: Federpendel und harmonische Schwingung (L1, Ziel Klausur)
@@ -28,6 +28,12 @@ Hook / Phaenomen: Ein Wagen rauscht ueber eine Bodenwelle: Ohne **Stossdaempfer*
 
 `Klausur-Satz: Rueckstellung erzeugt Schwingung: Federkraft minus D mal x treibt die Masse periodisch zur Ruhelage zurueck.`
 
+
+AUFLÖSUNG (nach der Wahl lesen)
+
+C1-Pruefung: Dieser Schritt enthaelt keine vorweggenommene Mechanismus-Erklaerung unter Wahloptionen; Hook und Phaenomen bleiben rein beschreibend, die Deutung folgt erst in Schritt 3.
+
+> 一句话本质: 平衡位置速度最大、两端速度为零，周期只由质量与劲度系数决定。
 ## Schritt 2 — entdecken: Ausruestungskiste der Mars-Crew
 PRETRAINING-Box (fuenf Kernbegriffe mit Definitionen):
 
@@ -93,9 +99,13 @@ BEISPIEL (Sandbox Level mit Werkzeug):
 AUFGABE (Levelziel, AFB II): Eine Masse m = 0,50 kg haengt an einer Feder mit D = 20 N/m. Berechnen Sie T und f und weisen Sie nach, dass doppelte Masse die Zeit um Wurzel zwei verlaengert.
 
 HILFE:
-1. Stellen Sie m = 0,50 kg und D = 20 N/m ein und lesen Sie T im Labor ab.
-2. Verdoppeln Sie m auf 1,00 kg und weisen Sie T-Wachstum um Wurzel zwei statt doppelt nach.
-3. Berechnen Sie T = 2 pi Wurzel(m durch D) zu T etwa 0,99 s und gleichen Sie mit dem Labor ab.
+- Richtung: Zuerst das Kraftgesetz $F = -D \cdot s$ und die Energieformen $E_{\text{kin}}$ und $E_{\text{spann}}$ benennen.
+- Richtung: Danach die Schwingungsgleichung oder die Energiebilanz fuer die gesuchte Groesse (Auslenkung, Geschwindigkeit oder Periode) waehlen.
+- Richtung: Erst am Ende Zahlen mit Einheiten einsetzen und Amplitude sowie Periode per Plausibilitaet pruefen.
+COMPLETION (Lückentext):
+- Die Winkelgeschwindigkeit ist $\omega =$ ___ $\text{1/s}$ aus $\omega = \sqrt{D / m}$.
+- Die maximale Geschwindigkeit ist $v_{\text{max}} =$ ___ $\text{m/s}$ aus $v_{\text{max}} = A \cdot \omega$.
+- Die Periode ist $T =$ ___ $\text{s}$ aus $T = 2 \cdot \pi \cdot \sqrt{m / D}$.
 
 MUSTERLOESUNG: Rechnung T = 2 pi Wurzel(0,50 durch 20) = 2 pi mal 0,158 etwa 0,99 s und f etwa 1,01 Hz. Doppelte Masse liefert Faktor Wurzel zwei auf etwa 1,40 s statt doppelter Zeit. Labor und Rechnung stimmen ueberein: Wurzelgesetz schlaegt lineare Intuition.
 
@@ -142,10 +152,24 @@ CHECK (Selbsttest, 3 Fragen mit Antworten):
 ## Schritt 7 — szenario: Klausurtransfer: Federpendel und harmonische Schwingung: Tabellen der Flugschreiber
 ROLLE: Du bist Laborassistent im Physikkurs.
 SITUATION: Eine Gruppe meldet $T = 1{,}2\,\mathrm{s}$ fuer $m = 0{,}4\,\mathrm{kg}$ und behauptet $D = 5\,\frac{\mathrm{N}}{\mathrm{m}}$. Pruefen Sie die Angabe in einer zusammenhaengenden Darstellung (ca. 150 Woerter), berechnen Sie $D$ aus $T$ und beurteilen Sie Messfehlerquellen.
+**AUFGABE (berechnen und interpretieren) [AFB II/III]**:
+Berechnen Sie Periode und Maximalgeschwindigkeit eines Federpendels und interpretieren Sie die Abhaengigkeit von $m$ und $D$.
+
 RUBRIC (30 XP): Umstellung $D = \frac{4\pi^2m}{T^2}$ korrekt (10 XP) | Zahlwert $D \approx 11\,\frac{\mathrm{N}}{\mathrm{m}}$ (10 XP) | Fehlerdiskussion Reibung und Zeitmessung (5 XP) | Geschlossene Darstellung (5 XP).
 
 `Klausur-Satz: Wer Wurzelgesetz anwendet, Isochronie begruendet und Messfehler mit Reibung diskutiert, erhaelt die volle Punktzahl.`
 
+
+ERWARTUNGSHORIZONT:
+Teilleistung | Punkte | Alternativweg
+Kraft- oder Energieansatz mit $F = -D \cdot s$ nennen | 5 NP | Herleitung ueber Differentialgleichung akzeptieren
+$T$ und $v_{\text{max}}$ mit Einheiten berechnen | 6 NP | Zahlenweg ueber Energieerhaltung akzeptieren
+Abhaengigkeit von $m$ und $D$ deuten | 4 NP | Urteil mit Daempfungsvorbehalt akzeptieren
+KERNSATZ (auswendig):
+`Beim Federpendel gilt $T = 2 \cdot \pi \cdot \sqrt{m / D}$, weil Traegheit und Rueckstellung die Schwingung bestimmen.`
+- Zerlegung: Subjekt | Mechanismus | Urteil
+- Freies Federpendel mit Masse $m$ und Feder $D$ | Bewegungsgleichung oder Energiebilanz anwenden | Periode haengt nur von $m$ und $D$ ab
+- Selbsttest: Beim Federpendel gilt $T = 2 \cdot \pi \cdot$ ___ , weil Traegheit und Rueckstellung die Schwingung bestimmen.
 ## Schritt 8 — reflexion: Takeaway & Reflexion: Tabellen der Flugschreiber
 TAKEAWAY (Kernzusammenfassung):
 
