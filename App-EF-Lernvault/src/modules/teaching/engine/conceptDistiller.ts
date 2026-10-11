@@ -1866,6 +1866,226 @@ const DOMAIN_KNOWLEDGE_ENTRIES: DomainKnowledgeEntry[] = [
       ]
     }
   },
+
+  // 13. Sachtextanalyse: Argumentation und Leserlenkung (Deutsch)
+  {
+    id: "deutsch-sachtextanalyse-argumentation",
+    canonicalTitle: "Sachtextanalyse: Argumentation und Leserlenkung",
+    fach: "Deutsch",
+    matchKeywords: [
+      "sachtextanalyse",
+      "argumentation",
+      "argumentationsgang",
+      "konzession",
+      "kontrast",
+      "mittelweg",
+      "metapher",
+      "appell",
+      "leserlenkung",
+      "beleg",
+      "zeilenangabe",
+      "wirkung",
+      "intention",
+      "these",
+      "deutungshypothese"
+    ],
+    data: {
+      topicTitle: "Sachtextanalyse: Argumentation und Leserlenkung",
+      fach: "Deutsch",
+      intuitionDilemma: {
+        scenarioDE: "Zwei Plaene liegen auf dem Tisch. Plan 1: Text treu nacherzaehlen, am Ende zustimmen. Plan 2: These und Gang sichern, zwei Stellen mit Zeile und Wirkung belegen.",
+        scenarioZH: "桌上有两个方案。方案一：忠实复述内容，结尾表态赞同。方案二：锁定论点与论证链，用两处带行号和效果的引证支撑。",
+        questionDE: "Deine Banknachbarin schreibt morgen die Klausur zum Uebungstext \"Pause vom Bildschirm?\". Welche Strategie waehlst du?",
+        questionZH: "你的同桌明天要考练习文本《Pause vom Bildschirm?》。你选哪种策略？",
+        choiceA: {
+          id: "A",
+          textDE: "Ich fasse den Inhalt treu zusammen und schreibe am Ende, dass ich zustimme.",
+          textZH: "我把内容忠实复述一遍，结尾写一句我表示赞同。",
+          reactionDE: "Verstaendlich, aber Klausur-sicht riskant: Wer nur den Inhalt nacherzaehlt, liefert eine Inhaltsangabe (AFB I). Der Operator analysieren verlangt zusaetzlich: Gang + Mittel + Beleg + Zeile + Wirkung.",
+          reactionZH: "可以理解，但考场上危险：只复述内容等于写 Inhaltsangabe（AFB I）。analysieren 要求额外给出：论证链+语言手段+引证+行号+效果判断。"
+        },
+        choiceB: {
+          id: "B",
+          textDE: "Ich sichere These und Gang und belege zwei Stellen mit Zeile und Wirkung.",
+          textZH: "我先锁定论点与论证链，并用两处带行号和效果判断的引证支撑。",
+          reactionDE: "Produktiv: Wer These, Gang und zwei Stellen mit Zeile plus Wirkung sichert, baut das Geruest einer Analyse (AFB II). Die kurze Stellungnahme folgt erst danach (Aufgabenart II).",
+          reactionZH: "有建设性：先锁定论点、论证链和两处带行号+效果的证据，就搭好了分析骨架（AFB II）。简短表态只放在最后（Aufgabenart II 权重）。"
+        },
+        mechanismTakeawayDE: "Sachtextanalyse misst nicht Nacherzaehlen, sondern Nachweisen: Einleitung (3 Saetze) -> Gang (Konzession -> Gegenbeweis -> Mittelweg) -> Sprache (Mittel + Beleg + Zeile + Wirkung) -> kurze Stellungnahme. Jede These ohne Zeile zaehlt AFB I.",
+        mechanismTakeawayZH: "议论文分析考的不是复述而是举证：3句导言 -> 论证链（让步->反驳->折中） -> 语言（手段+引证+行号+效果） -> 简短表态。任何无行号的判断一律按 AFB I 计分。",
+        klpCoreLogicDE: "NRW KLP Deutsch, IF Texte (pragmatische Texte): Argumentationsgang + Leserlenkung + Intention analysieren (AFB II, Operatoren analysieren / deuten); Einleitung in 3 Saetzen (Autor/Jahr/Titel/Textsorte/These); jede Aussage mit Beleg + Zeile + Wirkung.",
+        klpCoreLogicZH: "NRW 考纲 Deutsch，IF Texte（实用文）：论证思路+读者引导+写作意图是 AFB II 分析主体（操作动词 analysieren / deuten）；导言限3句（作者/年份/标题/文体/论点）；每个判断必须带引证+行号+效果。"
+      },
+      mentalModelAnalogy: {
+        analogyTitle: "Der Indizienprozess: Ohne Beweismittel keine Verurteilung",
+        explanationDE: "Sachtextanalyse misst nicht Nacherzaehlen, sondern Nachweisen: Einleitung (3 Saetze) -> Gang (Konzession -> Gegenbeweis -> Mittelweg) -> Sprache (Mittel + Beleg + Zeile + Wirkung) -> kurze Stellungnahme. Jede These ohne Zeile zaehlt AFB I.",
+        explanationZH: "议论文分析考的不是复述而是举证：3句导言 -> 论证链（让步->反驳->折中） -> 语言（手段+引证+行号+效果） -> 简短表态。任何无行号的判断一律按 AFB I 计分。"
+      },
+      konzeptPuzzle: {
+        instructionDE: "Ordne jeder Analyse-Regel den typischen Regelbruch und die Klausur-Konsequenz zu:",
+        instructionZH: "将每条分析铁律与典型违规写法及考场结论配对：",
+        pairs: [
+          {
+            id: "pair-1",
+            premiseDE: "Analyse-Regel: Jede Deutung braucht Beleg + Zeile",
+            premiseZH: "分析铁律：每个解读都必须有引证+行号",
+            realityTermDE: "Bruch: Paraphrase statt Nachweis",
+            realityDE: "Leere Behauptung ohne Stelle (nur Paraphrase, keine Zeile)",
+            realityZH: "无出处空断言（只改写内容，不给行号）",
+            consequenceDE: "Klausur: Wer die Metapher Werkzeug (Z. 8) oder den Appell plant / prueft (Z. 10) mit Zeile zitiert, sichert AFB II-Punkte; wer nur behauptet, faellt auf AFB I zurueck.",
+            consequenceZH: "考场结论：引用隐喻 Werkzeug（Z. 8）或呼吁 plant/prueft（Z. 10）并标行号，才能拿到 AFB II 分；空断言一律掉回 AFB I。"
+          },
+          {
+            id: "pair-2",
+            premiseDE: "Analyse-Regel: Jedes Mittel braucht eine Wirkungsaussage",
+            premiseZH: "分析铁律：每个手段都必须有效果判断",
+            realityTermDE: "Bruch: Benennen statt Deuten",
+            realityDE: "Etikett ohne Wirkung (nur Metapher / Anapher benennen, nichts deuten)",
+            realityZH: "贴标签无效果（只命名隐喻/排比，不解读作用）",
+            consequenceDE: "Klausur: Erst verdeutlicht / suggeriert / appelliert an + Leserichtung (z. B. zur Selbststeuerung) macht aus der Stilbeobachtung eine Analyse der Leserlenkung.",
+            consequenceZH: "考场结论：只有加上 verdeutlicht/suggeriert/appelliert an + 读者被推向何处（如推向自我管理），风格观察才升级为读者引导分析。"
+          },
+          {
+            id: "pair-3",
+            premiseDE: "Analyse-Regel: Der Gang traegt die These (Konzession -> Gegenbeweis -> Loesung)",
+            premiseZH: "分析铁律：论证链托起论点（让步->反驳->方案）",
+            realityTermDE: "Bruch: Referat statt Gang",
+            realityDE: "Reine Inhaltsangabe (Stationen referieren, keine Funktion bestimmen)",
+            realityZH: "纯内容复述（罗列情节，不定段落功能）",
+            consequenceDE: "Klausur: Die Abfolge Z. 2 (Konzession) -> Z. 4-5 (Kontrast) -> Z. 7 (Mittelweg) zeigt, wie der Text zum Urteil fuehrt; ohne Gang bleibt die These eine Behauptung.",
+            consequenceZH: "考场结论：Z. 2（让步）->Z. 4-5（对照）->Z. 7（折中）的序列展示了文本如何导向结论；无链条则论点只是断言。"
+          },
+          {
+            id: "pair-4",
+            premiseDE: "Analyse-Regel: Deutungshypothese aufstellen und am Schluss pruefen",
+            premiseZH: "分析铁律：开头立阐释假设，结尾验证修正",
+            realityTermDE: "Bruch: Werten statt Untersuchen",
+            realityDE: "These raten oder Analyse mit Eroerterung verwechseln (sofort werten statt zu untersuchen)",
+            realityZH: "猜论点或把分析与议论搞混（上来就站队，不拆文本）",
+            consequenceDE: "Klausur: Die Hypothese (Training statt Verbot) ordnet die Lektuere und wird im Schlusssatz bestaetigt oder relativiert; sie ersetzt aber keinen Beleg.",
+            consequenceZH: "考场结论：假设（训练而非禁令）为阅读定向，结尾验证或修正；但它代替不了任何引证。"
+          }
+        ]
+      },
+      examTrapCorrection: {
+        studentAnswerDE: "Der Text handelt von Handys in der Schule. Der Autor findet ein Totalverbot falsch und will Regeln. Am Anfang geht es um unkonzentrierte Jugendliche, in der Mitte um Recherche, am Ende um Selbststeuerung. Ich finde das auch gut, weil Verbote nerven. (0 / 15 NP)",
+        studentAnswerZH: "“这篇文章讲学校里的手机。作者认为全面禁止不对，想要规矩。开头讲不专心的青少年，中间讲检索，结尾讲自我管理。我也觉得对，因为禁令很烦。（0 / 15 NP）”",
+        fatalFlawPointDE: "Jede analytische Aussage braucht Beleg + Zeile + Wirkung; ohne diesen Dreischritt bleibt alles Referat.",
+        fatalFlawPointZH: "每个分析判断都必须带引证+行号+效果三件套；缺此三步，一律按复述判分。",
+        examinerVerdictDE: "0 / 15 NP. Reine Inhaltsangabe (AFB I) statt Analyse (AFB II): kein Beleg mit Zeile, kein benanntes Mittel, keine Wirkungsaussage, kein Gang. Die Operatoren analysieren und deuten sind nicht bedient; die angehaengte Meinung erfuellt nicht die Aufgabenart II.",
+        examinerVerdictZH: "0 / 15 NP。纯内容复述（AFB I）代替分析（AFB II）：无带行号引证、无命名的语言手段、无效果判断、无论证链。analysieren / deuten 两个操作动词均未落实；末尾的个人 opinion 不符合 Aufgabenart II 的篇幅权重。",
+        diagnosticOptions: [
+          {
+            id: "diag-correct",
+            textDE: "Die Antwort bleibt auf der Ebene der Inhaltswiedergabe: Sie referiert Positionen, ohne Textstellen mit Zeilenangabe zu belegen und ohne sprachliche Mittel auf ihre lenkende Wirkung zu befragen.",
+            textZH: "该答案停留在内容复述层面：转述了文中观点，但没有用带行号的文本证据支撑，也没有追问任何语言手段的引导效果。",
+            isCorrect: true,
+            explanationDE: "Korrekt: Die Analyse bleibt im Referat (AFB I) stehen. Es fehlen Textsorte/These-Einleitung, der Gang (Konzession -> Gegenbeweis -> Mittelweg), jede Belegstelle mit Zeile sowie jede Wirkungsaussage zur Leserlenkung. Analyse verlangt: Befund + Beleg + Zeile + Wirkung.",
+            explanationZH: "正确：该答案停留在复述层（AFB I）。缺3句导言、缺论证链（让步->反驳->折中）、缺一切带行号的引证、缺一切读者引导效果判断。分析要求：发现+引证+行号+效果，四件套缺一即按复述判分。"
+          },
+          {
+            id: "diag-distractor-1",
+            textDE: "Der entscheidende Mangel liegt darin, dass die eigene Stellungnahme fehlt: Eine fruehe und ausfuehrliche Pro-und-contra-Abwaegung haette die Antwort gerettet, weil die persoenliche Position das eigentliche Analyseziel darstellt.",
+            textZH: "关键缺陷在于缺少个人表态：一开始就展开详尽的利弊权衡即可挽救该答案，因为个人立场才是本次分析的真正目标。",
+            isCorrect: false,
+            explanationDE: "Falsch: Die Aufgabenart II verlangt zuerst Analyse (AFB II, ca. zwei Drittel) und erst danach ein kurzes eigenes Urteil. Wer die Analyse ueberspringt und sofort wertet, verfehlt den Operator analysieren; die eigene Meinung ersetzt keinen Befund mit Beleg und Zeile.",
+            explanationZH: "错误： Aufgabenart II 要求先分析（AFB II，约三分之二篇幅）再简短表态。跳过分析直接站队，等于用观点代替了带引证的发现，判分时分析部分得零分。"
+          },
+          {
+            id: "diag-distractor-2",
+            textDE: "Der entscheidende Mangel liegt darin, dass keine Deutungshypothese am Anfang formuliert wurde: Ein einleitender Satz ueber die vermutete Textabsicht haette ausgereicht, um die gesamte Analyse als vollstaendig gelten zu lassen.",
+            textZH: "关键缺陷在于开头没有写阐释假设：只要在导言加一句对文本意图的猜测，整个分析即可视为完整。",
+            isCorrect: false,
+            explanationDE: "Falsch: Eine knappe Deutungshypothese gehoert in die Einleitung (Ankuendigung) und wird am Schluss geprueft; sie ersetzt aber weder den Gang noch Beleg + Zeile + Wirkung. Die Hypothese ordnet, sie beweist nicht.",
+            explanationZH: "错误：阐释假设只属于导言的预告、结尾的验证环节，它负责定向但不能代替论证链和引证+行号+效果。假设是地图，不是证据。"
+          }
+        ]
+      },
+      klpTermini: [
+        {
+          termDE: "Argumentationsgang",
+          definitionDE: "Tragende Abfolge der These: Konzession zu Gegenbeweis zu Mittelweg; ohne Gang bleibt jede These eine blosse Behauptung.",
+          termZH: "论证链",
+          definitionZH: "托起论点的序列：让步到反驳到折中；无链条则论点只是断言。"
+        },
+        {
+          termDE: "Konzession",
+          definitionDE: "Eingestaendnis der Gegenposition (hier: Sorge der Erwachsenen), das die eigene Loesung erst glaubwuerdig und abwaegend wirken laesst.",
+          termZH: "让步",
+          definitionZH: "先承认对方立场的合理处，再推出己方方案，使论证显得权衡而可信。"
+        },
+        {
+          termDE: "Metapher",
+          definitionDE: "Bildlicher Ausdruck (hier: Ablenker vs. Werkzeug), dessen Analyse erst durch Beleg mit Zeile plus Wirkungsaussage zur Leserlenkung vollstaendig wird.",
+          termZH: "隐喻",
+          definitionZH: "形象化表达；只有配上带行号的引证与读者引导效果判断，分析才完整。"
+        },
+        {
+          termDE: "Appell",
+          definitionDE: "Direkte Aufforderung an die Leser (hier: plant / prueft), die zur Selbststeuerung statt zum Totalverbot lenkt.",
+          termZH: "呼吁",
+          definitionZH: "直接号召读者行动，把读者推向自我管理而非全面禁令。"
+        },
+        {
+          termDE: "Leserlenkung",
+          definitionDE: "Gesamtwirkung aller Mittel auf die Leserhaltung; Kern des Operators analysieren im AFB II (Befund plus Beleg plus Zeile plus Wirkung).",
+          termZH: "读者引导",
+          definitionZH: "一切手段对读者态度的总体引导效果；analysieren操作动词在AFB II的核心（发现+引证+行号+效果）。"
+        }
+      ],
+      fehlerquellen: [
+        {
+          trapTitleDE: "Referat statt Analyse",
+          trapDescriptionDE: "Reine Inhaltsangabe mit angehaengter Meinung: kein Beleg mit Zeile, kein benanntes Mittel, keine Wirkungsaussage, kein Gang; Operator analysieren nicht bedient.",
+          trapDescriptionZH: "纯内容复述加个人感想：无行号引证、无命名的语言手段、无效果判断、无链条。",
+          howToAvoidDE: "Jede analytische Aussage im Dreischritt Beleg plus Zeile plus Wirkung formulieren; ohne diesen Dreischritt bleibt alles Referat."
+        },
+        {
+          trapTitleDE: "Benennen statt Deuten",
+          trapDescriptionDE: "Mittel werden nur etikettiert (Metapher, Anapher), aber nicht auf ihre lenkende Wirkung befragt; Stilbeobachtung ohne Leserbezug bleibt AFB I.",
+          trapDescriptionZH: "只贴标签不解读：点出隐喻排比之名，不追问其引导效果。",
+          howToAvoidDE: "Hinter jedes Mittel sofort verdeutlicht / suggeriert / appelliert an plus Leserichtung setzen."
+        },
+        {
+          trapTitleDE: "Eroertern statt Analysieren",
+          trapDescriptionDE: "Freie Pro-und-contra-Abwaegung zum Sachproblem (AFB III) ersetzt die Textanalyse; weder Gang noch ein einziges Mittel mit Beleg plus Zeile plus Wirkung.",
+          trapDescriptionZH: "用自由议论代替文本分析：权衡手机禁令利弊，却不拆论证链、不做引证。",
+          howToAvoidDE: "Aufgabenart II verlangt zuerst Analyse (ca. zwei Drittel), erst danach ein kurzes eigenes Urteil."
+        }
+      ],
+      klausurSatz15NP: {
+        musterSatzDE: "Zwar gesteht der Text die Sorge der Erwachsenen in einer Konzession zu (Z. 2: verstaendlich, aber einseitig), dennoch fuehrt der Argumentationsgang ueber den Kontrast in Z. 4-5 zum Mittelweg in Z. 7; die Metapher Ablenker vs. Werkzeug (Z. 8) verdeutlicht diese Wende und der Appell in Z. 10 (plant / prueft) lenkt die Leser konsequent zur Selbststeuerung statt zum Totalverbot.",
+        operator: "analysieren",
+        scoringKeywords: [
+          "Argumentationsgang",
+          "Konzession",
+          "Kontrast",
+          "Mittelweg",
+          "Metapher",
+          "Appell",
+          "Leserlenkung",
+          "Beleg",
+          "Zeile",
+          "Wirkung",
+          "Intention",
+          "These"
+        ],
+        explanationZH: "（先让步承认担忧可理解，再以对照与隐喻论证折中方案，最后以呼吁收束：每个修辞判断都回扣行号与读者引导效果。）"
+      },
+      socraticProbes: [
+        {
+          questionDE: "Reicht es, den Inhalt treu zusammenzufassen und am Ende zuzustimmen?",
+          questionZH: "把内容忠实复述一遍、结尾写一句赞同就够了吗？",
+          counterPerspectiveDE: "Reines Nacherzaehlen liefert eine Inhaltsangabe (AFB I); der Operator analysieren verlangt zusaetzlich Gang plus Mittel plus Beleg plus Zeile plus Wirkung."
+        },
+        {
+          questionDE: "Beweist der Text mit seiner Eingangswarnung ein flaechendeckendes Totalverbot als einzige Konsequenz?",
+          questionZH: "仅凭文本开头的警告就能证明全面禁令是唯一结论吗？",
+          counterPerspectiveDE: "Einseitige Lektuere unterschlaegt Konzession (Z. 2), Gegenbeweis (Z. 4-5) und Mittelweg (Z. 7); Metaphern und Appell sind als Leserlenkung zu deuten."
+        }
+      ]
+    }
+  },
 ];
 
 // ---------------------------------------------------------------------------
@@ -2156,6 +2376,11 @@ export function distillConcept(title: string, fach: string, rawText?: string): D
       if (normalizedSearch.includes(normKw)) {
         score += normKw.length;
       }
+    }
+
+    const normCanonical = normalizeQuery(entry.canonicalTitle);
+    if (normalizedSearch.includes(normCanonical) || normCanonical.includes(normalizedSearch)) {
+      score += 50;
     }
 
     if (score > 0 && fachMatch) {

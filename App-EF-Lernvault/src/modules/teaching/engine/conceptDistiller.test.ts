@@ -187,6 +187,16 @@ describe("Concept Distillation Engine: conceptDistiller", () => {
     expect(res.klausurSatz15NP.operator).toBe("analysieren");
   });
 
+  it("distills Sachtextanalyse: Argumentation und Leserlenkung benchmark (Deutsch)", () => {
+    const res = distillConcept("Sachtextanalyse: Argumentation und Leserlenkung", "Deutsch");
+    validateDistilledConcept(res);
+    expect(res.intuitionDilemma?.scenarioZH).toContain("方案");
+    expect(res.konzeptPuzzle?.pairs.length).toBe(4);
+    expect(res.examTrapCorrection?.diagnosticOptions?.length).toBe(3);
+    expect(res.klausurSatz15NP.scoringKeywords).toContain("Argumentationsgang");
+    expect(res.klausurSatz15NP.scoringKeywords).toContain("Leserlenkung");
+  });
+
   it("distills Differentialrechnung: Tangente & Ableitung (Mathe)", () => {
     const res = distillConcept("Einfuehrung der Ableitung: Differenzenquotient und Tangentensteigung", "Mathe");
     validateDistilledConcept(res);
