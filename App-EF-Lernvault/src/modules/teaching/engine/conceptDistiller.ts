@@ -1656,6 +1656,216 @@ const DOMAIN_KNOWLEDGE_ENTRIES: DomainKnowledgeEntry[] = [
     ]
   }
 },
+
+  // 12. Utilitarismus vs. Kategorischer Imperativ (Philosophie)
+  {
+    id: "utilitarismus-vs-kategorischer-imperativ",
+    canonicalTitle: "Utilitarismus vs. Kategorischer Imperativ",
+    fach: "Philosophie",
+    matchKeywords: [
+      "utilitarismus",
+      "kategorischer imperativ",
+      "konsequentialismus",
+      "nutzenbilanz",
+      "hedonismus",
+      "maxime",
+      "universalisierung",
+      "zweckformel",
+      "menschenwuerde",
+      "mill",
+      "bentham",
+      "kant",
+      "pflichtethik",
+      "weichenfall"
+    ],
+    data: {
+      topicTitle: "Utilitarismus vs. Kategorischer Imperativ",
+      fach: "Philosophie",
+      intuitionDilemma: {
+        scenarioDE: "Eine Strassenbahn ist ausser Kontrolle. Auf dem geraden Gleis arbeiten fuenf Personen, auf dem Ausweichgleis steht ein Unbeteiligter. Nur eine aktive Weichenstellung entscheidet ueber Leben und Tod.",
+        scenarioZH: "一辆失控电车冲来：直行轨道上有五名工人，侧线轨道上有一名无辜路人。只有主动扳道岔才能决定生死。",
+        questionDE: "Soll die Fahrerin die Weiche aktiv umstellen und damit einen Unbeteiligten opfern, um fuenf Gleisarbeiter zu retten?",
+        questionZH: "司机是否应该主动扳道岔、牺牲一名无辜者去救五名养路工？",
+        choiceA: {
+          id: "A",
+          textDE: "A) Du stellst die Weiche um: Fuenf gerettete Leben wiegen schwerer als ein geopfertes Leben.",
+          textZH: "A) 你会扳道岔：救下五条命比牺牲一条命分量更重。",
+          reactionDE: "Alltagsnah gedacht, in der Theorie jedoch folgenblind: Du rechnest nur gerettete Leben gegeneinander auf. Genau so prueft der Utilitarismus: Er fragt nach der Bilanz aller Folgen fuer alle Betroffenen.",
+          reactionZH: "这是日常直觉的算法，但在理论上只看后果：你把人命相加相减。这正是功利主义的检验方式：只问所有受影响者的后果总账。"
+        },
+        choiceB: {
+          id: "B",
+          textDE: "B) Du stellst die Weiche nicht gezielt um: Du darfst niemanden aktiv opfern, auch nicht zur Rettung mehrerer.",
+          textZH: "B) 你不会主动扳道岔：不能为了救多数人而主动牺牲任何一人。",
+          reactionDE: "Alltagsfern, aber pflichtethisch konsequent: Du weigerst dich, einen Unbeteiligten gezielt als Mittel zu gebrauchen. Genau so prueft Kant: Er fragt, ob die Maxime als allgemeines Gesetz bestehen kann und ob sie Menschenwuerde achtet.",
+          reactionZH: "这违反日常直觉，却符合义务论：你拒绝把无辜者当作工具。这正是康德的检验方式：只问准则能否成为普遍法则、是否把人当目的。"
+        },
+        mechanismTakeawayDE: "Der Fall spaltet zwei Prueflogiken: Der Utilitarismus bilanziert Folgen fuer das Gesamtglueck, Kant prueft Maxime und Menschenwuerde unabhaengig vom Nutzen.",
+        mechanismTakeawayZH: "此案撕开两种检验逻辑：功利主义只算总体幸福的后果总账，康德只验准则能否普遍化、是否把人当目的，与效用无关。",
+        klpCoreLogicDE: "Utilitarismus (Folgen-, Utilitaets-, Hedonistisches und Universales Prinzip; Bentham quantitativ -> Mill qualitativ) vs. Kant (Maxime, Universalisierung, Zweckformel, Autonomie); Kriterium Menschenwuerde.",
+        klpCoreLogicZH: "功利主义（后果、效用、快乐主义、普遍性四支柱；边沁量化 -> 密尔质性）对康德（准则、普遍化检验、目的公式、自律）；以人的尊严为评价准绳。"
+      },
+      mentalModelAnalogy: {
+        analogyTitle: "Buchhalter vs. Richter: Bilanzen zaehlen Leben, Maximen pruefen Wuerde",
+        explanationDE: "Der Fall spaltet zwei Prueflogiken: Der Utilitarismus bilanziert Folgen fuer das Gesamtglueck, Kant prueft Maxime und Menschenwuerde unabhaengig vom Nutzen.",
+        explanationZH: "此案撕开两种检验逻辑：功利主义只算总体幸福的后果总账，康德只验准则能否普遍化、是否把人当目的，与效用无关。"
+      },
+      konzeptPuzzle: {
+        instructionDE: "Ordne jedem ethischen Pruefprinzip seine Gegenposition (Einwand) und die Klausur-Konsequenz zu:",
+        instructionZH: "将每条伦理检验原则与其对立诘难及考场结论配对：",
+        pairs: [
+          {
+            id: "pair-1",
+            premiseDE: "Konsequenzprinzip: Richtig ist, was das Gesamtglueck aller Betroffenen maximiert.",
+            premiseZH: "后果原则：对所有受影响者总体幸福最大化的行为才是正当的。",
+            realityDE: "Instrumentalisierungsproblem: Eine Minderheit wird als blosses Rechenobjekt geopfert.",
+            realityZH: "工具化难题：少数人被降格为纯粹的计算对象而牺牲。",
+            consequenceDE: "Klausur: Utilitarismus rechtfertigt die Umstellung prima facie ueber die Leidminimierung, geraet aber unter Druck, sobald ein Unbeteiligter gezielt geopfert wird.",
+            consequenceZH: "考场结论：功利主义凭苦乐最小化 prima facie 支持扳道岔，但一旦涉及主动牺牲无辜者即陷入辩护压力。"
+          },
+          {
+            id: "pair-2",
+            premiseDE: "Benthams quantitatives Kalkuel: Jede Lust zaehlt gleich, nur Menge und Dauer entscheiden.",
+            premiseZH: "边沁量化算盘：一切快乐无高下之分，只计量强度与时长。",
+            realityDE: "Mills qualitative Stufe: Hoehere geistige Freuden und Wuerdebewusstsein wiegen kategorial schwerer (kompetente Richter).",
+            realityZH: "密尔的质性层级：精神快乐与尊严意识在范畴上重于感官满足（胜任裁判官判准）。",
+            consequenceDE: "Klausur: Wer Mill auf Bentham reduziert, verfehlt den qualitativen Hedonismus und die Rolle der kompetenten Richter.",
+            consequenceZH: "考场结论：把密尔压缩为边沁即丢失质性快乐主义与胜任裁判官的认识论判准。"
+          },
+          {
+            id: "pair-3",
+            premiseDE: "Universalisierungstest: Handle nur nach einer Maxime, die zugleich allgemeines Gesetz werden kann.",
+            premiseZH: "普遍化检验：只依同时能意愿其成为普遍法则的准则行动。",
+            realityDE: "Rigorismus-Einwand: Strikte Luegen- und Toetungsverbote wirken in tragischen Faellen wirklichkeitsfremd starr.",
+            realityZH: "严苛主义诘难：在悲剧性两难中，绝对禁令显得脱离现实、过于僵硬。",
+            consequenceDE: "Klausur: Die Maxime der Notluege und der gezielten Opferung scheitert am Selbstwiderspruch und ist daher pflichtwidrig.",
+            consequenceZH: "考场结论：说谎与主动牺牲的准则通不过普遍化检验（自我瓦解），属于违反义务。"
+          },
+          {
+            id: "pair-4",
+            premiseDE: "Zweckformel: Behandle die Menschheit jederzeit zugleich als Zweck, niemals bloss als Mittel.",
+            premiseZH: "目的公式：任何时候把人同时当作目的，绝不仅仅当作手段。",
+            realityDE: "Folgenblindheits-Einwand: Reine Gesinnungspruefung ignoriert die Verantwortung fuer vorhersehbares Massenleid.",
+            realityZH: "后果盲区诘难：纯粹动机检验无视对可预见的大规模苦难的责任。",
+            consequenceDE: "Klausur: Die gezielte Opferung verletzt die Menschenwuerde, weil sie den Unbeteiligten zum Rettungswerkzeug degradiert.",
+            consequenceZH: "考场结论：主动牺牲把无辜者降格为救援工具，直接违反人的尊严。"
+          }
+        ]
+      },
+      examTrapCorrection: {
+        studentAnswerDE: "Kant und Mill sind sich im Grunde einig: Beide erlauben die Notluege und die Opferung eines Unbeteiligten, wenn dadurch fuenf Menschen gerettet werden, weil der gute Wille den groessten Nutzen fuer die meisten will. (0 / 15 NP)",
+        studentAnswerZH: "“康德和密尔本质上一致：只要能救五人，两者都允许说谎并牺牲一名无辜者，因为善良意志就是追求最大多数人的最大幸福。”（0 / 15 分）",
+        fatalFlawPointDE: "Gleichsetzung von Folgenbilanz und Maximenpruefung sowie Umdeutung des guten Willens in ein Nutzenstreben (0 Notenpunkte).",
+        fatalFlawPointZH: "把后果计算等同于准则检验，并把善良意志偷换为逐利意志（直接判 0 分）。",
+        examinerVerdictDE: "Klausur-Regel: Utilitarismus und Pflichtethik folgen entgegengesetzten Prueflogiken (Folgenbilanz vs. Maximenpruefung). Wer beide Positionen in einer Nutzenformel verschmilzt, verfehlt beide Theorien und erhaelt 0 NP: Der gute Wille ist kein Nutzenwille, und die Zweckformel verbietet die Verrechnung von Menschenleben.",
+        examinerVerdictZH: "阅卷规则：功利主义与义务论遵循相反的检验逻辑（后果损益 vs 准则检验）。把两者熔于一炉写成效用公式即双双丢失：善良意志不是逐利意志，目的公式禁止把人命拿来加减。",
+        diagnosticOptions: [
+          {
+            id: "diag-correct",
+            textDE: "Verwechslung der Prueflogiken: Der Satz ersetzt Kants Maximenpruefung durch eine Folgenbilanz und deutet den guten Willen in ein Nutzenstreben um.",
+            textZH: "混淆了检验逻辑：该句用后果损益替换了康德的准则检验，并把善良意志曲解为对效用的追求。",
+            isCorrect: true,
+            explanationDE: "Diagnose exakt richtig: Der Satz vermengt Teleologie mit Deontologie. Utilitarismus prueft Folgenbilanzen, Kant prueft die Verallgemeinerbarkeit der Maxime und verbietet die Instrumentalisierung, unabhaengig vom erhofften Nutzen. Der gute Wille bedeutet Handeln aus Pflicht, nicht Streben nach maximalem Glueck.",
+            explanationZH: "诊断正确：该答卷把后果论与义务论混为一谈。功利主义检验后果损益表，康德检验准则的可普遍化并禁止工具化，且善良意志指纯粹出于义务而行动，而非追求最大幸福。"
+          },
+          {
+            id: "diag-distractor-1",
+            textDE: "Kant wuerde die Notluege im Weichenfall ausnahmsweise billigen, weil die Rettung von fuenf Leben die Achtung der Menschenwuerde des Einzelnen automatisch miterfuellt.",
+            textZH: "康德会在电车案中破例允许说谎与牺牲，因为拯救五人自动就实现了对个体的尊严尊重。",
+            isCorrect: false,
+            explanationDE: "Fehldeutung: Kant verbietet die Notluege gerade deshalb, weil die Maxime des Luagens als allgemeines Gesetz sich selbst widerspricht. Die Zweckformel untersagt, einen Unbeteiligten gezielt als blosses Mittel zu gebrauchen, auch wenn dadurch mehrere Leben gerettet wuerden.",
+            explanationZH: "误读：康德恰恰禁止说谎，因为说谎的准则一旦普遍化会在逻辑上自我瓦解；目的公式禁止把无辜者仅仅当作手段，即使能救更多人。"
+          },
+          {
+            id: "diag-distractor-2",
+            textDE: "Mill wuerde die Umstellung der Weiche allein danach beurteilen, ob der Weichensteller persoenlich Schuldgefuehle vermeidet und sein eigenes Gewissen beruhigt.",
+            textZH: "密尔只会根据扳道工本人能否避免内疚、让自己良心安稳来评判是否应该扳道岔。",
+            isCorrect: false,
+            explanationDE: "Fehldeutung: Mills qualitativer Hedonismus verlangt Unparteilichkeit und die Einbeziehung aller Betroffenen; er ist kein Egoismus des Handelnden. Die Pruefung lautet, ob die Handlung das Gesamtglueck unter Beruecksichtigung hoeherer geistiger Gueter maximiert, nicht ob sie dem Akteur privat nuetzt.",
+            explanationZH: "误读：密尔的质性快乐主义要求不偏不倚地计入所有受影响者的苦乐，属于普遍主义而非自利；检验标准是总体幸福是否最大化，而非行动者个人是否获利。"
+          }
+        ]
+      },
+      klpTermini: [
+        {
+          termDE: "Konsequentialismus",
+          definitionDE: "Utilitaristische Prueflogik: Richtig ist, was das Gesamtglueck aller Betroffenen maximiert (Folgen-, Utilitaets- und universales Prinzip).",
+          termZH: "后果论",
+          definitionZH: "功利主义检验逻辑：对所有受影响者总体幸福最大化的行为才是正当的。"
+        },
+        {
+          termDE: "Maxime",
+          definitionDE: "Subjektiver Handlungsgrundsatz bei Kant; sie muss den Universalisierungstest bestehen, sonst ist die Handlung pflichtwidrig.",
+          termZH: "准则",
+          definitionZH: "康德处的主观行动原则；必须通过普遍化检验，否则行为违反义务。"
+        },
+        {
+          termDE: "Universalisierung",
+          definitionDE: "Kategorischer Imperativ, erste Formel: Handle nur nach einer Maxime, die zugleich allgemeines Gesetz werden kann; Notluege scheitert am Selbstwiderspruch.",
+          termZH: "普遍化检验",
+          definitionZH: "绝对命令第一公式：只依能同时成为普遍法则的准则行动；说谎准则自我瓦解。"
+        },
+        {
+          termDE: "Zweckformel",
+          definitionDE: "Kategorischer Imperativ, zweite Formel: Behandle die Menschheit jederzeit zugleich als Zweck, niemals bloss als Mittel; gezielte Opferung verletzt sie.",
+          termZH: "目的公式",
+          definitionZH: "绝对命令第二公式：任何时候把人同时当目的、绝不只当手段；主动牺牲直接违反它。"
+        },
+        {
+          termDE: "Menschenwuerde",
+          definitionDE: "Unverrechenbarer Wert der Person; begrenzt im eroerternden Urteil die rein quantitative Nutzenbilanz.",
+          termZH: "人的尊严",
+          definitionZH: "人格不可计价的价值；在评价判断中限制纯粹数量化的效用计算。"
+        }
+      ],
+      fehlerquellen: [
+        {
+          trapTitleDE: "Folgenbilanz gleich Maximenpruefung",
+          trapDescriptionDE: "Kants Maximenpruefung wird durch eine Folgenbilanz ersetzt und beide Theorien in einer Nutzenformel verschmolzen; verfehlt beide Theorien (0 NP).",
+          trapDescriptionZH: "用后果损益替换康德的准则检验，把两者熔于一炉写成效用公式，双双丢失。",
+          howToAvoidDE: "Teleologie und Deontologie strikt trennen: Utilitarismus prueft Folgenbilanzen, Kant prueft Verallgemeinerbarkeit plus Zweckformel."
+        },
+        {
+          trapTitleDE: "Guter Wille als Nutzenstreben",
+          trapDescriptionDE: "Der gute Wille (Handeln aus Pflicht) wird in Streben nach maximalem Glueck umgedeutet; Mill wird zum Egoismus des Akteurs verkuerzt.",
+          trapDescriptionZH: "把善良意志曲解为对最大幸福的追求，把密尔降格为行动者自利。",
+          howToAvoidDE: "Guter Wille bedeutet Handeln aus Pflicht, nicht Gluecksmaximierung; Mill verlangt Unparteilichkeit gegenueber allen Betroffenen."
+        },
+        {
+          trapTitleDE: "Kant billigt die Notluege",
+          trapDescriptionDE: "Kant wuerde im Weichenfall ausnahmsweise Luege und Opferung billigen, weil fuenf gerettete Leben die Wuerde des Einzelnen miterfuellten.",
+          trapDescriptionZH: "认为康德会在电车案中破例允许说谎与牺牲，因为救五人自动实现尊严。",
+          howToAvoidDE: "Maxime der Notluege scheitert am Universalisierungstest; die Zweckformel untersagt Instrumentalisierung auch bei groesserem Nutzen."
+        }
+      ],
+      klausurSatz15NP: {
+        musterSatzDE: "Zwar spricht aus utilitaristischer Sicht (Mill) die Minimierung des Gesamtleids fuer die Umstellung der Weiche, dennoch verbietet die kantische Zweckformel die gezielte Opferung eines Unbeteiligten als blosses Mittel, sodass im eroerternden Urteil die Achtung der Menschenwuerde die rein quantitative Nutzenbilanz begrenzt.",
+        operator: "eroertern",
+        scoringKeywords: [
+          "Konsequentialismus",
+          "Nutzenbilanz",
+          "Qualitativer Hedonismus",
+          "Maxime",
+          "Universalisierung",
+          "Zweckformel",
+          "Menschenwuerde"
+        ],
+        explanationZH: "（先以密尔后果损益承认救五人的分量，再以康德目的公式与普遍化检验论证主动牺牲的不可允许性，最后以人的尊严为准绳作出有保留的权衡判断。）"
+      },
+      socraticProbes: [
+        {
+          questionDE: "Soll die Fahrerin die Weiche aktiv umstellen und einen Unbeteiligten opfern, um fuenf zu retten?",
+          questionZH: "司机是否应该主动扳道岔、牺牲一人去救五人？",
+          counterPerspectiveDE: "Der Fall spaltet zwei Prueflogiken: Der Utilitarismus bilanziert Folgen, Kant prueft Maxime und Menschenwuerde unabhaengig vom Nutzen."
+        },
+        {
+          questionDE: "Begrenzt die Achtung der Menschenwuerde die rein quantitative Nutzenbilanz?",
+          questionZH: "人的尊严是否限制纯粹数量化的效用计算？",
+          counterPerspectiveDE: "Im eroerternden Urteil begrenzt die Wuerde die Zahl: Menschenleben lassen sich nicht aufrechnen, auch nicht bei eindeutiger Zahlenlage."
+        }
+      ]
+    }
+  },
 ];
 
 // ---------------------------------------------------------------------------
@@ -1933,25 +2143,40 @@ export function distillConcept(title: string, fach: string, rawText?: string): D
   const normalizedSearch = normalizeQuery(`${cleanedTitle} ${rawText || ""}`);
   const resolvedFach = fach?.trim() || "SoWi";
 
-  // 1. Scan pre-calibrated domain knowledge bank
-  for (const entry of DOMAIN_KNOWLEDGE_ENTRIES) {
-    // Check keyword hits
-    const hit = entry.matchKeywords.some((kw) => {
-      const normKw = normalizeQuery(kw);
-      return normalizedSearch.includes(normKw);
-    });
+  // 1. Scan pre-calibrated domain knowledge bank with best-match scoring
+  let bestEntry: DomainKnowledgeEntry | null = null;
+  let bestScore = 0;
 
-    if (hit) {
-      // Return a refined clone adapting to requested subject if reasonable
-      return enrichConceptWithStudyMateAndNotes(
-        {
-          ...entry.data,
-          topicTitle: cleanedTitle || entry.data.topicTitle,
-          fach: resolvedFach,
-        },
-        resolvedFach
-      );
+  for (const entry of DOMAIN_KNOWLEDGE_ENTRIES) {
+    let score = 0;
+    const fachMatch = entry.fach.toLowerCase() === resolvedFach.toLowerCase();
+
+    for (const kw of entry.matchKeywords) {
+      const normKw = normalizeQuery(kw);
+      if (normalizedSearch.includes(normKw)) {
+        score += normKw.length;
+      }
     }
+
+    if (score > 0 && fachMatch) {
+      score += 15;
+    }
+
+    if (score > bestScore) {
+      bestScore = score;
+      bestEntry = entry;
+    }
+  }
+
+  if (bestEntry) {
+    return enrichConceptWithStudyMateAndNotes(
+      {
+        ...bestEntry.data,
+        topicTitle: cleanedTitle || bestEntry.data.topicTitle,
+        fach: resolvedFach,
+      },
+      resolvedFach
+    );
   }
 
   // 2. Execute smart heuristic synthesis using subject archetype

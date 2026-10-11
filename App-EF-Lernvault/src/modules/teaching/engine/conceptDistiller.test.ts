@@ -170,6 +170,16 @@ describe("Concept Distillation Engine: conceptDistiller", () => {
     expect(res.klausurSatz15NP.operator).toBe("beurteilen");
   });
 
+  it("distills Utilitarismus vs. Kategorischer Imperativ benchmark (Philosophie)", () => {
+    const res = distillConcept("Utilitarismus vs. Kategorischer Imperativ", "Philosophie");
+    validateDistilledConcept(res);
+    expect(res.intuitionDilemma?.scenarioZH).toContain("失控电车");
+    expect(res.konzeptPuzzle?.pairs.length).toBe(4);
+    expect(res.examTrapCorrection?.diagnosticOptions?.length).toBe(3);
+    expect(res.klausurSatz15NP.scoringKeywords).toContain("Konsequentialismus");
+    expect(res.klausurSatz15NP.scoringKeywords).toContain("Menschenwuerde");
+  });
+
   it("distills Sachtextanalyse & Toulmin-Modell (Deutsch)", () => {
     const res = distillConcept("Sachtextanalyse und Argumentationsstruktur nach Toulmin", "Deutsch");
     validateDistilledConcept(res);
