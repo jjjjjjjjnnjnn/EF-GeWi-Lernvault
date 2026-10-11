@@ -304,7 +304,7 @@ stufe: "EF|Q1|Q2"
 - **AFB II（Reorganisation und Transfer）**：`analyse`（Textanalyse/Sprachanalyse）、`explain`、`compare`、`characterise`、`mediate`
 - **AFB III（Reflexion und Problemlösung）**：`comment`、`discuss`、`evaluate`、`assess`、`write a creative text`
 
-> ⚠️ **Operatoren 不在 KLP 内**（见 `00-Design.md §1.2`；KLP §4 仅写「使用本学科 Abitur 适用的 Operatoren」）[已验证]。英语官方表应自 `standardsicherung.schulministerium.nrw.de/zentralabitur-gost/faecher/englisch-gost` 获取，**本项目尚未提取** → 上表为 [据推断]，**待 S6 阶段以官方 Operatorenübersicht 替换**。
+> ⚠️ **Operatoren 不在 KLP 内**（见 `00-Design.md §1.2`；KLP §4 仅写「使用本学科 Abitur 适用的 Operatoren」）[已验证]。英语官方表见已建成的 [`Operatoren-NRW-Alle-Faecher.md`](Operatoren-NRW-Alle-Faecher.md)（Englisch 22 动词；官方声明不按动词分 AFB）→ 上表为 [据推断]，待以该文件为准替换。
 
 ---
 
@@ -312,6 +312,8 @@ stufe: "EF|Q1|Q2"
 
 > 来源：`00_META/INDEX.md` §「主题索引 → Englisch」[已验证]。
 > 现有笔记 **7 篇**。因英语无 Inhaltsfeld，本节**按 Kompetenzbereich 归类**。
+> ✅ **已补（S8 Wave，Blocker E4，2026-09-25）**：Englisch 施工图 **20/20 全数产出**，逐条见 `00_META/S8-Noten-Index.md` §02_Englisch（如 `Sprechen-Muendliche-Abiturpruefung`、`Leseverstehen-Strategien-Implizit`、`Sprachlernkompetenz-Strategien-und-KI-Reflexion`、`Beeinflussungsstrategien-und-WSE-Varietaeten`、`Schreiben-Creative-Writing-und-Re-creation`）。下表「空缺/缺口」列为 S8 前快照，保留作历史记录。
+> 现缺口：**无**（本学科缺口总数已全数产出；全工程残留 4 项非阻塞任务见施工台账 §5，与本学科无关）。
 
 | Kompetenzbereich | 已有笔记 | 覆盖情况 | 缺口 |
 |---|---|---|---|
@@ -341,7 +343,7 @@ stufe: "EF|Q1|Q2"
 
 | 项 | 状态 | 说明 |
 |---|---|---|
-| 英语官方 Operatoren 表（AFB 分级） | **[未获取到]** | §5 的 AFB 分级为 [据推断]，须以 Fachseite `englisch-gost` 官方表替换 |
+| 英语官方 Operatoren 表（AFB 分级） | **✅ 已建成** | 见 [`Operatoren-NRW-Alle-Faecher.md`](Operatoren-NRW-Alle-Faecher.md)（Englisch 22 动词；官方声明不按动词分 AFB）。§5 推断表待以该文件为准替换 |
 | 平时 Klausur 时长（GK/LK 各 Halbjahr） | **[未获取到]** | 在 BASS 13-32 Nr. 6，未提取该科逐项 |
 | Klausur 中 KI 工具的使用规定 | **[未获取到]** | KLP §3/§4 未提；应在 APO-GOSt / Abiturvorgaben |
 | `Eine weitere englischsprachige Bezugskultur` 的具体国家 | **[未获取到]** | **KLP 原文未点名**；「Nigeria」来自现有笔记与 Abiturvorgaben 惯例 [据推断] |

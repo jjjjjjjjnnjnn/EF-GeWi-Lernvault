@@ -15,7 +15,7 @@ cn_mapping: "Mapping/Chemie-DE-CN-Mapping.md"
 
 > 来源：[KLP 官方 PDF](https://lehrplannavigator.nrw.de/system/files/media/document/file/gost_klp_ch_2022_06_07.pdf) · 版本：`2022/23` · Heft `4723`
 > 中文一句话：NRW 化学 Oberstufe 由 **三个 Basiskonzepte（物质结构 / 化学反应 / 能量）** 统摄 **六个 Inhaltsfeld（EF 2 个 + Q 阶段 4 个）**，与 **四个 Kompetenzbereich** 交叉构成；EF 只承载有机基础与动力学/平衡，Q 阶段四领域全开并在 GK/LK 上分叉。
-> 中国对照：[`Mapping/Chemie-DE-CN-Mapping.md`](../Mapping/Chemie-DE-CN-Mapping.md)（**尚未创建** [未获取到]）
+> 中国对照：[`Mapping/Chemie-DE-CN-Mapping.md`](../Mapping/Chemie-DE-CN-Mapping.md)（**已建成**）
 >
 > **时效说明**：本 KLP 由 RdErl. v. **31.05.2022**（Az. 526 - 2022-05-0002010）设定，**2022-08-01 起从 EF 逐级生效**；法源见 ABl. NRW 06/22。[已验证]
 > ⚠️ **Heft 4723 被新旧两版沿用**（2013 版与 2022 版同号），归档时须以 PDF 文件名 `gost_klp_ch_2022_06_07.pdf`（sha256 `24af8d88…`）而非 Heft 号区分。旧版（04.09.2013, ABl. NRW S. 512）已于 **2022-07-31 auslaufend außer Kraft**。[已验证]
@@ -338,7 +338,7 @@ Q2 （Q 阶段 IF-3 + IF-4；有机合成与材料，LK 广度爆炸）
 
 ## 5. CN-Anschluss（中国对应位 — 仅占位）
 
-> 具体对照写在 [`Mapping/Chemie-DE-CN-Mapping.md`](../Mapping/Chemie-DE-CN-Mapping.md)（**尚未创建** [未获取到]）。本节只标高价值差异点。
+> 具体对照写在 [`Mapping/Chemie-DE-CN-Mapping.md`](../Mapping/Chemie-DE-CN-Mapping.md)（**已建成**）。本节只标高价值差异点。
 > **本项目已有 CN-Chemie 系列三篇笔记**（见 §6），说明中国技法侧已有部分积累，可复用性见下。
 
 - 🎯 **中国更深/更系统**（`both-cn-deeper` 候选）：
@@ -364,7 +364,7 @@ Q2 （Q 阶段 IF-3 + IF-4；有机合成与材料，LK 广度爆炸）
 
 ## 6. Klausur / Abitur 形式
 
-- 详见 [`Klausur-Formate/Klausur-und-Abitur-Formate.md`](../Klausur-Formate/Klausur-und-Abitur-Formate.md)（该目录 **尚未创建** [未获取到]）
+- 详见 [`Klausur-Formate/Klausur-und-Abitur-Formate.md`](../Klausur-Formate/Klausur-und-Abitur-Formate.md)（**已建成**）
 - **Abitur 时长**（来自 `01-Quellen.md §A.4`，BASS 13-32 Nr. 6）：**GK 255 min / LK 300 min** [已验证]
 
 ### 化学 Abitur 的**法定题型**（KLP 第 4 章直接规定）[已验证，ch.txt L2005-2017]
@@ -415,7 +415,7 @@ Q2 （Q 阶段 IF-3 + IF-4；有机合成与材料，LK 广度爆炸）
 
 ## 7. Operatoren
 
-详见 [`Operatoren-NRW-Alle-Faecher.md`](Operatoren-NRW-Alle-Faecher.md)（**尚未创建** [未获取到]）
+详见 [`Operatoren-NRW-Alle-Faecher.md`](Operatoren-NRW-Alle-Faecher.md)（**已建成**）
 
 - KLP 第 4 章**不含** Operatoren 表，只指向外部 `Operatorenübersicht`：「Für die Aufgabenstellungen werden die für Abiturprüfungen geltenden Operatoren des Faches verwendet.」[已验证，ch.txt L1966-1968]
 - 已知直链：`https://www.standardsicherung.schulministerium.nrw.de/zentralabitur-gost/faecher/chemie-gost` [据推断，命名规律见 `01-Quellen.md §A.3`]
@@ -426,6 +426,8 @@ Q2 （Q 阶段 IF-3 + IF-4；有机合成与材料，LK 广度爆炸）
 ## 8. 与现有笔记的对应（对接层）
 
 > 依据 `00_META/INDEX.md` 的 Chemie 小节（L106–111）核对。现有 Chemie 笔记共 **8 篇**。
+> ✅ **已补（S8 Wave，Blocker E4，2026-09-25）**：Chemie 施工图 **23/26 主体完成**，逐条见 `00_META/S8-Noten-Index.md` §05_Chemie（如 `Elektrochemie-Q1-Grundlagen`、`Reaktionsmechanismen-GK-radikalische-Substitution-und-elektrophile-Addition`、`Q1-LK-Puffer-Titrationskurve-KL`、`Farbstoffe-Lichtabsorption-und-Chromatografie-LK`、`Moderne-Werkstoffe-Kunststoffe-Recycling-Nanochemie-LK`）。下表「🔴 完全空白 / 零覆盖」为 S8 前快照，保留作历史记录。
+> 现缺口：**余 3 项「改造既有文件」任务**（升级/精简既有 CN-Chemie 文件，非新笔记，见施工台账 `00-Notenproduktion-Plan.md` §5，非阻塞）。
 
 | Inhaltsfeld | 学段 | 已有笔记 | 缺口 |
 |---|---|---|---|

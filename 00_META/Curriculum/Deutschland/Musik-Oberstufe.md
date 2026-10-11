@@ -273,7 +273,7 @@ KLP 列出 12 项 übergreifende Bewertungskriterien（上位评分标准），*
 - **AFB II（Reorganisation und Transfer）**：`analysieren`、`interpretieren`、`erläutern`、`vergleichen`、`einordnen`
 - **AFB III（Reflexion und Problemlösung）**：`erörtern`、`beurteilen`、`begründen`
 
-> ⚠️ **Operatoren 不在 KLP 内**（见 `00-Design.md` §1.2）。Musik 官方 Operatoren 表应从 Fachseite `standardsicherung.schulministerium.nrw.de/zentralabitur-gost/faecher/musik-gost` 获取，**本项目尚未提取该表** → 上表 AFB 分级为 [据推断]，**待 S6 阶段以官方 Operatorenübersicht 替换**。
+> ⚠️ **Operatoren 不在 KLP 内**（见 `00-Design.md` §1.2）。Musik 官方 Operatoren 表见已建成的 [`Operatoren-NRW-Alle-Faecher.md`](Operatoren-NRW-Alle-Faecher.md)（Musik 17 动词，AFB 单值已验证）。§5 上表 AFB 分级待以该文件为准替换。
 
 **AFB 通则** [已验证]（KLP §4 原文明确）：AFB I 复现 / AFB II 自主选择·组织·加工·解释·**迁移到可比新情境** / AFB III 处理复杂事实以达独立结论·塑造·诠释·论证·评价。**三个 AFB 均须覆盖，AFB II 为重点**。
 
@@ -283,7 +283,9 @@ KLP 列出 12 项 übergreifende Bewertungskriterien（上位评分标准），*
 
 > 来源：`00_META/INDEX.md` §「Musik (mündlich)」[已验证] + 直接读取各笔记。
 > ⚠️ **现状**：现有笔记仅 **3 篇**（其中 1 篇为互动课程），**全部集中于 IF1 + IF2，且均为 EF 层**。
-> **IF3 完全空白；QP 层为零。**
+> ✅ **已补（S8 Wave，Blocker E4，2026-09-25）**：Musik 施工图 **14/14 全数产出**，逐条见 `00_META/S8-Noten-Index.md` §09_Musik-mündl（如 `Wirkungsabsichten-und-Stereotype`、`Paradigmenwechsel`、`Aesthetische-Konzeptionen`、`Film-und-Werbemusik`、`Muendliche-Pruefung-Training`）。下文「完全空白 / QP 层为零」为 S8 前快照，保留作历史记录。
+> 现缺口：**无**（本学科缺口总数已全数产出；全工程残留 4 项非阻塞任务见施工台账 §5，与本学科无关）。
+> **IF3 完全空白；QP 层为零。**（S8 前状态，见上）
 
 ### 6.1 按 IF 归类
 
@@ -322,7 +324,7 @@ KLP 列出 12 项 übergreifende Bewertungskriterien（上位评分标准），*
 |---|---|---|
 | **Halbjahr-Thema / 具体作品清单** | **⏳ 待确认** | 项目用户口试方向，主题未定；`Lehrplan.md` 仅记「wahrscheinlich Beethoven/Klassik（未确认）」 |
 | **口试中 Aufgabenart III 的实操形态** | **[未获取到]** | KLP 仅规定口试 Teil 1「以笔试 Aufgabenart 为取向」，未说明现场作曲/呈现方式 |
-| **Musik 官方 Operatoren 表（AFB 分级）** | **[未获取到]** | §5 的 AFB 分级为 [据推断]，须以 Fachseite `musik-gost` 官方表替换 |
+| **Musik 官方 Operatoren 表（AFB 分级）** | **✅ 已建成** | 见 `Operatoren-NRW-Alle-Faecher.md`（17 动词）；§5 推断表待以该文件为准替换 |
 | **平时 Klausur 时长（GK/LK 各 Halbjahr）** | **[未获取到]** | 在 BASS 13-32 Nr. 6，未提取该科逐项 |
 | **GK / LK 在 Kompetenzerwartungen 上的逐条差异** | **[据推断]** | 据 KLP §5 Anhang 三列结构（EF / GK / LK）推断；未逐条比对 |
 | **QP 阶段 Q1 与 Q2 的 IF 分配** | **[据推断]** | KLP **只有 EF 与 Qualifikationsphase 两级**；3 个 IF **整个 QP 全程有效**，具体分配由校方 schulinterner Lehrplan 决定 |

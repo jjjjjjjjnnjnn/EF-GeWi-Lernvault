@@ -357,7 +357,7 @@ Q2  : 会论证 → 会评价（AFB III：论证、推广、模型质量评判�
 
 ## 6. Klausur / Abitur 形式
 
-- 详见 [`Klausur-Formate/Klausur-und-Abitur-Formate.md`](../Klausur-Formate/Klausur-und-Abitur-Formate.md)（该目录 **尚未创建** [未获取到]）
+- 详见 [`Klausur-Formate/Klausur-und-Abitur-Formate.md`](../Klausur-Formate/Klausur-und-Abitur-Formate.md)（**已建成**）
 - **Abitur 时长**（Abitur 2027，来自 `01-Quellen.md §A.4`，BASS 13-32 Nr. 6）：**GK 255 min / LK 300 min** [已验证]
 
 ### 数学 Abitur 的**法定题型**（KLP 第 4 章直接规定，非推断）[已验证，m.txt L1407-1420]
@@ -401,7 +401,7 @@ Q2  : 会论证 → 会评价（AFB III：论证、推广、模型质量评判�
 
 ## 7. Operatoren
 
-详见 [`Operatoren-NRW-Alle-Faecher.md`](Operatoren-NRW-Alle-Faecher.md)（**尚未创建** [未获取到]）
+详见 [`Operatoren-NRW-Alle-Faecher.md`](Operatoren-NRW-Alle-Faecher.md)（**已建成**）
 
 - KLP 第 4 章**不含** Operatoren 表，只指向外部 `Operatorenübersicht` [已验证，m.txt L1362-1363]
 - 已知直链：`https://www.standardsicherung.schulministerium.nrw.de/system/files/media/document/file/m_operatoren_ab_2023_1.pdf` [已验证，见 `01-Quellen.md §A.3`]
@@ -412,6 +412,8 @@ Q2  : 会论证 → 会评价（AFB III：论证、推广、模型质量评判�
 ## 8. 与现有笔记的对应（对接层）
 
 > 依据 `00_META/INDEX.md` 的 Mathe 小节（L96–101）与 `03_Mathe/` 实际文件清单核对。
+> ✅ **已补（S8 Wave，Blocker E4，2026-09-25）**：Mathe 施工图 **23/23 全数产出**，逐条见 `00_META/S8-Noten-Index.md` §03_Mathe（如 `Vektor-Grundlagen-EF`、`Skalarprodukt-und-Ebenen`、`Baumdiagramm-Vierfeldertafel`、`Integralrechnung-Sechs-Konzepte`、`Beurteilende-Statistik-Prognose-und-Konfidenzintervall`）。下表「🔴 零覆盖」为 S8 前快照，保留作历史记录。
+> 现缺口：**无**（本学科缺口总数已全数产出；全工程残留 4 项非阻塞任务见施工台账 §5，与本学科无关）。
 
 | Inhaltsfeld | 已有笔记 | 缺口 |
 |---|---|---|

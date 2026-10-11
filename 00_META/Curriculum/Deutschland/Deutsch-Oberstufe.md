@@ -382,6 +382,8 @@ stufe: "EF|Q1|Q2"
 
 > 来源：`00_META/INDEX.md` §「主题索引 → Deutsch」（第 66–72 行）[已验证]。
 > 现有笔记共 **7 篇**，全部位于 `01_Deutsch/` 下，**全部属 EF 层，QP 层为零**。
+> ✅ **已补（S8 Wave，Blocker E4，2026-09-25）**：Deutsch 施工图 **16/16 全数产出**，逐条见 `00_META/S8-Noten-Index.md` §01_Deutsch（如 `Sprache-Ebenen-und-Varietaeten`、`Medien-Information-und-Partizipation`、`Erzaehltexte-Analyse`、`Kommunikationsmodelle`、`Aufgabenart-III-Eroerterung`）。上段「7 篇 / QP 层为零」为 S8 前快照，保留作历史记录。
+> 现缺口：**无**（本学科缺口总数已全数产出；全工程残留 4 项非阻塞任务见施工台账 §5，与本学科无关）。
 
 ### 6.1 笔记 → IF 归类
 
@@ -404,7 +406,7 @@ stufe: "EF|Q1|Q2"
 | **IF3 Kommunikation** | **2** | Rhetorik-Mediation-Vernetzung、Sachtextanalyse-Leserlenkung | ✅ 修辞/读者引导方向已备。缺：**Kommunikationsmodelle（交际模型：Sender-Empfänger、Schulz von Thun、Watzlawick 等）独立笔记**；缺**对称/非对称交际**、**日常 vs 文学交际** |
 | **IF4 Medien** | **0** | 无 | ⚠️ **完全空白**。缺：`Information`（Geltungsanspruch 检验 / 假消息识别）、`Dimensionen der Partizipation`、`Multimodalität`（Bild-Ton-Text） |
 
-### 6.3 缺口总结（供 S7 阶段排优先级）[据推断]
+### 6.3 缺口总结（S8 前状态，保留作历史记录）[据推断]
 
 > **Deutsch 特殊点**：与 SoWi「EF 满、QP 空」的分布不同，Deutsch 的缺口是**结构性的 IF 缺口**，而非学段缺口——因为 4 个 IF 在 EF 与 QP **全周期复用**，补任一 IF 即同时服务 EF 与 Abitur。
 

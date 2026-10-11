@@ -414,7 +414,7 @@ Sport KLP 有三套并列的「篮子」，必须同时理解 [已验证]：
 - **AFB II（Reorganisation und Transfer）**：`erläutern`、`analysieren`、`strukturieren`、`anwenden`、`begründen`
 - **AFB III（Reflexion und Problemlösung）**：`beurteilen`、`bewerten`、`erörtern`、`reflektieren`、`Stellung beziehen`
 
-> **⚠️ 上表 AFB 分级为 [据推断]**，**待 S6 阶段以官方 Operatorenübersicht 替换**。
+> **⚠️ 上表 AFB 分级为 [据推断]**，以已建成的 [`Operatoren-NRW-Alle-Faecher.md`](Operatoren-NRW-Alle-Faecher.md)（Sport 25 动词，AFB 区间 + 主次标注已验证）为准替换（原「待 S6 阶段」已过时）。
 > **观察到的 KLP 高频动词** [已验证]（§2.4–2.6 原文统计）：`beschreiben`、`erläutern`、`benennen`、`beurteilen`、`begründen`、`präsentieren`、`anwenden`、`erstellen`、`strukturieren`、`reflektieren`。
 
 ---
@@ -423,6 +423,8 @@ Sport KLP 有三套并列的「篮子」，必须同时理解 [已验证]：
 
 > 来源：`00_META/INDEX.md` §「主题索引 → Sport (mündlich)」[已验证]。
 > 现有 Sport 笔记 **2 篇**（不含 `10_Sport-mündl/Lehrplan.md` 这一课程总览）：
+> ✅ **已补（S8 Wave，Blocker E4，2026-09-25）**：Sport 施工图 **26/26 全数产出**，逐条见 `00_META/S8-Noten-Index.md` §10_Sport-mündl（如 `Belastungsgroessen`、`Ausdauertraining-Methoden`、`Gestaltungskriterien-und-Indikatoren`、`LK-Leistungsdiagnostik`、`Muendliche-Pruefung-Training`）。下表「完全空白 / 零覆盖」为 S8 前快照，保留作历史记录。
+> 现缺口：**无**（本学科缺口总数已全数产出；全工程残留 4 项非阻塞任务见施工台账 §5，与本学科无关）。
 > - 正式笔记：[`Sport-Bewegungsanalyse.md`](../../../10_Sport-mündl/Texte-Analyse/Sport-Bewegungsanalyse.md)（Weitsprung 四相/纠错/考官问）
 > - Lernreise：[`Sport-Bewegung-Erklaeren-L1.md`](../../../Lernreise/Sport-Bewegung-Erklaeren-L1.md)（L1「运动解释」）
 > - 课程总览：[`10_Sport-mündl/Lehrplan.md`](../../../10_Sport-mündl/Lehrplan.md)（EF mündlich 概览，含 TODO）
@@ -462,7 +464,7 @@ Sport KLP 有三套并列的「篮子」，必须同时理解 [已验证]：
 | 项 | 状态 | 说明 |
 |---|---|---|
 | 平时 Klausur 时长（GK/LK 各 Halbjahr） | **[未获取到]** | 在 BASS 13-32 Nr. 6，未提取该科逐项 |
-| Sport 官方 Operatoren 表（AFB 分级） | **[未获取到]** | §5 的 AFB 分级为 [据推断]，须以 Fachseite `sport-gost` 官方表替换 |
+| Sport 官方 Operatoren 表（AFB 分级） | **✅ 已建成** | 见 `Operatoren-NRW-Alle-Faecher.md`（25 动词）；§5 推断表待以该文件为准替换 |
 | 本校 Profil bildend 的 2 个 BF/SB | **[未获取到]** | KLP 不规定，由校方 Lehrplan 决定 |
 | 本校 GK 的 2 个 Akzentuierungs-Inhaltsfelder | **[未获取到]** | 同上 |
 | 实际 Anforderungsbereiche 在 Sport 题中的权重分配 | **[据推断]** | KLP 只给通则（AFB II 为重点），未给科目级百分比 |

@@ -255,7 +255,7 @@ fachseiten: [sozialwissenschaften-gost, sozialwissenschaftenwirtschaft-gost]
 - **AFB II（Reorganisation und Transfer）**：`analysieren`、`vergleichen`、`erklären`、`beurteilen`
 - **AFB III（Reflexion und Problemlösung）**：`erörtern`、`bewerten`
 
-> ⚠️ **Operatoren 不在 KLP 内**（见 `00-Design.md` §1.2）。SoWi 官方 Operatoren 表应自 Fachseite `standardsicherung.schulministerium.nrw.de/zentralabitur-gost/faecher/sozialwissenschaften-gost` 获取，**本项目尚未提取该表** → 上表 AFB 分级为 [据推断]，**待 S6 阶段以官方 Operatorenübersicht 替换**。
+> ⚠️ **Operatoren 不在 KLP 内**（见 `00-Design.md` §1.2）。SoWi 官方 Operatoren 表见已建成的 [`Operatoren-NRW-Alle-Faecher.md`](Operatoren-NRW-Alle-Faecher.md)（Sozialwissenschaften 29 动词，AFB 区间已验证；SoWi/Wirtschaft 同一份文件）。§5 上表 AFB 分级待以该文件为准替换。
 
 ---
 
@@ -330,6 +330,8 @@ QP 四个 IF 中 **IF4/IF5/IF6/IF7 的 QP 层笔记全部为零**；按 Abitur 2
 
 > 来源：`00_META/INDEX.md` §「主题索引 → SoWi」[已验证]。
 > 现有笔记共 14 篇（Kap.1–11 + Soziale Ungleichheit + Karikatur 方法/实例 + Abitur-Fokussierungen + Buch-Navigator），**全部位于 EF 层，Q1/Q2 层为零**。
+> ✅ **已补（S8 Wave，Blocker E4，2026-09-25）**：SoWi 施工图 **25/25 全数产出**，逐条见 `00_META/S8-Noten-Index.md` §08_SoWi（如 `Wirtschaftspolitische-Konzeptionen`、`Ungleichheitsmodelle-Theorien`、`EU-Institutionen-Mechanismen`、`Global-Governance`、`IF4xIF6-Synthese`）。上段「Q1/Q2 层为零 / 完全空缺」为 S8 前快照，保留作历史记录。
+> 现缺口：**无**（本学科缺口总数已全数产出；全工程残留 4 项非阻塞任务见施工台账 §5，与本学科无关）。
 
 | Inhaltsfeld | 已有笔记 | 缺口 |
 |---|---|---|
@@ -379,7 +381,7 @@ QP 四个 IF 中 **IF4/IF5/IF6/IF7 的 QP 层笔记全部为零**；按 Abitur 2
 | 项 | 状态 | 说明 |
 |---|---|---|
 | 平时 Klausur 时长（GK/LK 各 Halbjahr） | **[未获取到]** | 在 BASS 13-32 Nr. 6，未提取该科逐项 |
-| SoWi 官方 Operatoren 表（AFB 分级） | **[未获取到]** | §5 的 AFB 分级为 [据推断]，须以 Fachseite 官方表替换 |
+| SoWi 官方 Operatoren 表（AFB 分级） | **✅ 已建成** | 见 `Operatoren-NRW-Alle-Faecher.md`（29 动词）；§5 推断表待以该文件为准替换 |
 | Q1 与 Q2 的 IF 具体分配（IF4+5 → Q1 / IF6+7 → Q2？） | **[据推断]** | KLP 未拆分，由校方 Lehrplan 决定 |
 | 两 Fachseite 页面级内容差异 | **[据推断]** | 本文件据 KLP PDF 的两 Abschnitt 判断；未逐页比对两个 Fachseite 网页 |
 | Abitur 2027 Gestaltungsaufgabe 具体题型 | **[据推断]** | 据 `sozialwissenschaften_2027_gg.pdf` 链接存在推断，未提取正文 |

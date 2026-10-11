@@ -262,7 +262,7 @@ stufe: "EF|Qualifikationsphase"
 - **AFB III（Reflexion und Problemlösung）**：`erörtern`、`beurteilen`、`bewerten`、`Stellung nehmen`
 
 > ⚠️ **Operatoren 不在 KLP 内** [已验证]——KLP §4 仅写「使用本学科 Abitur 适用的 Operatoren（fachspezifische Operatoren）」，并指向外部 **Operatorenübersichten**（在 Schulministerium 网站上）。
-> **`rekonstruieren` 是本学科的标志性动词** [据推断]：在 6 个 IF 的 Sachkompetenz 条目中出现频率极高（几乎每个 IF 都有 2–3 条以 `rekonstruieren` 开头的期望），且 Aufgabenart I/II 的任务描述亦以重构为前提 —— 该词的精确 AFB 归属（I 还是 II）**必须**以官方哲学 Operatorenübersicht 为准。**待 S6 阶段替换。**
+> **`rekonstruieren` 是本学科的标志性动词** [据推断]：在 6 个 IF 的 Sachkompetenz 条目中出现频率极高（几乎每个 IF 都有 2–3 条以 `rekonstruieren` 开头的期望），且 Aufgabenart I/II 的任务描述亦以重构为前提 —— 该词的精确 AFB 归属以官方哲学 Operatorenübersicht 为准，见已建成的 [`Operatoren-NRW-Alle-Faecher.md`](Operatoren-NRW-Alle-Faecher.md)（Philosophie 19 动词，AFB 区间已验证）。
 
 ---
 
@@ -270,6 +270,8 @@ stufe: "EF|Qualifikationsphase"
 
 > 来源：`00_META/INDEX.md` §「主题索引 → Philosophie」[已验证]。
 > 现有笔记共 **8 篇**（其中 7 篇在 `07_Philosophie/`，1 篇在 `07_Philosophie/Texte-Analyse/` 之外的表单；含 1 篇跨学科联网笔记）。
+> ✅ **已补（S8 Wave，Blocker E4，2026-09-25）**：Philosophie 施工图 **21/22 主体完成**，逐条见 `00_META/S8-Noten-Index.md` §07_Philosophie（如 `Empirismus-vs-Rationalismus-EF`、`Kulturrelativismus-vs-Universalismus`、`Leib-Seele-Dualismus-vs-Monismus`、`Kontraktualismus-Hobbes-Locke-Rousseau-Rawls`、`Popper-Falsifikation`）。下文「重大缺口 / 完全空缺 / 全部为零」为 S8 前快照，保留作历史记录。
+> 现缺口：**余 1 项**（见施工台账 `00-Notenproduktion-Plan.md` §5，非阻塞；以后续台账核对为准）。
 > ⚠️ **关键结构性事实**：**8 篇全部落在 QP（IF3–IF5）的题材上，且严格意义上 EF 层（IF1 / IF2）笔记为零。**
 
 ### EF 层归属（IF1 / IF2）
@@ -316,7 +318,7 @@ stufe: "EF|Qualifikationsphase"
 | PDF 文本提取乱码 | **不存在** | ⚠️ 上游调研所称「UTF-8 乱码风险」**未出现**。pypdf 6.16.0 提取 59 页共 108,044 字符，德文含 ä/ö/ü/ß 全部正常（与 SoWi 试点结论一致）。**6 个 IF 标题均为 [已验证]。** |
 | SK / MK / UK 的完整编号范围（SK1–?, MK1–?, UK1–?） | **[未获取到]** | §5 Anhang Progressionstabelle 跨页且编号为嵌入字形；已确认 HK 至少至 HK4，其余待 S6 专项清点 |
 | 平时 Klausur 时长（GK / LK，各 Halbjahr） | **[未获取到]** | **不在 KLP 内**，在 BASS 13-32 Nr. 6，未提取该科逐项 |
-| Philosophie 官方 Operatorenübersicht（AFB 分级） | **[未获取到]** | §5 的 AFB 分级为 [据推断]；须自 Fachseite `standardsicherung.schulministerium.nrw.de/zentralabitur-gost/faecher/philosophie-gost` 获取。**`rekonstruieren` 的 AFB 归属为当前最大不确定项** |
+| Philosophie 官方 Operatorenübersicht（AFB 分级） | **✅ 已建成** | 见 [`Operatoren-NRW-Alle-Faecher.md`](Operatoren-NRW-Alle-Faecher.md)（Philosophie 19 动词，AFB 区间）。§5 推断表待以该文件为准替换 |
 | Q1 与 Q2 的 IF 具体分配（IF3+IF4 → Q1 / IF5+IF6 → Q2？） | **[据推断]** | KLP 只写「Qualifikationsphase」，未拆分；由校方 Lehrplan 决定 |
 | Abitur 2027 Philosophie Fachliche Vorgaben（Schwerpunktthemen） | **[未获取到]** | `01-Quellen.md` 未登记该科 Vorgaben 链接；Abitur 2027 具体聚焦的 IF **未知** —— 这直接决定 QP 复习优先级，**优先级高** |
 | IF 的原文编号 | **[据推断]** | 原文为嵌入字体私有字形（󰆂–󰆇），无法转 ASCII；本文以顺序号 1–6 代指 |

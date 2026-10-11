@@ -319,7 +319,7 @@ EF 的 Erkenntnisgewinnung 要求到 `E14`（借用化学/物理知识）为止�
 
 ## 6. Klausur / Abitur 形式
 
-- 详见 [`Klausur-Formate/Klausur-und-Abitur-Formate.md`](../Klausur-Formate/Klausur-und-Abitur-Formate.md)（该目录**尚未创建** [未获取到]）
+- 详见 [`Klausur-Formate/Klausur-und-Abitur-Formate.md`](../Klausur-Formate/Klausur-und-Abitur-Formate.md)（**已建成**）
 - **Abitur 时长**（Abitur 2027，来自 `01-Quellen.md §A.4`，BASS 13-32 Nr. 6）：**GK 255 min / LK 300 min** [已验证]
 - ⚠️ KLP 明确：**若试卷含「fachpraktische Anteile」，Arbeitszeit 可增加，且须在题目中明示额外时间**。[已验证，bi.txt L2241-2243]
 
@@ -357,7 +357,7 @@ EF 的 Erkenntnisgewinnung 要求到 `E14`（借用化学/物理知识）为止�
 
 ## 7. Operatoren
 
-详见 [`Operatoren-NRW-Alle-Faecher.md`](Operatoren-NRW-Alle-Faecher.md)（**尚未创建** [未获取到]）
+详见 [`Operatoren-NRW-Alle-Faecher.md`](Operatoren-NRW-Alle-Faecher.md)（**已建成**）
 
 - KLP 第 4 章**不含** Operatoren 表，只指向外部 `fachspezifische Operatorenübersicht` [已验证，bi.txt L2190, L2212]
 - Fachseite：`.../zentralabitur-gost/faecher/biologie-gost`（见 `01-Quellen.md §A.3`）[据推断，未实测]
@@ -368,6 +368,8 @@ EF 的 Erkenntnisgewinnung 要求到 `E14`（借用化学/物理知识）为止�
 ## 8. 与现有笔记的对应（对接层）
 
 > 依据 `00_META/INDEX.md` 的 Bio 小节（L93–97）与 `06_Bio/` 实际文件清单核对。
+> ✅ **已补（S8 Wave，Blocker E4，2026-09-25）**：Bio 施工图 **34/34 全数产出**，逐条见 `00_META/S8-Noten-Index.md` §06_Bio（如 `Ruhe-und-Aktionspotenzial`、`Molekulargenetik-Zentraldogma`、`Fotosynthese-und-Calvin-Zyklus`、`Populationsdynamik-Wachstumsmodelle`、`LK-Krebs-Humanevolution-Methoden`）。下表「🔴 零覆盖 / 完全空白」为 S8 前快照，保留作历史记录。
+> 现缺口：**无**（本学科缺口总数已全数产出；全工程残留 4 项非阻塞任务见施工台账 §5，与本学科无关）。
 
 | Inhaltsfeld | 已有笔记 | 缺口 |
 |---|---|---|
