@@ -97,7 +97,7 @@ Aufbau des Bainbridge-Massenspektrometers:
 **Bezug zum Konzept**: `Die elektromagnetische Isotopentrennung im Calutron basiert exakt auf der Massenabhaengigkeit des Bahnradius im transversalen Magnetfeld.`
 
 ## Schritt 4 — ausprobieren: Sandbox-Auftrag Isotopentrennung im Abitur
-Kontinuitaet: Vorher Physik-Gleichfoermige-Kreisbewegung-L1.md | Nachher Physik-Spezielle-Relativitaet-Lichtuhr-L1.md. Krise dieser Episode: Wie wiegt man Atome, die nur ein Millionstel Milliardstel Gramm wiegen? Zielgroessen: Lorentzkraft, Zentripetalkraft, Wien-Filter, Massenspektrometer
+Kontinuitaet: Vorher Physik-Gleichfoermige-Kreisbewegung-L1.md | Nachher Physik-Relativitaet-Zeitdilatation-und-Lorentzfaktor-L1.md. Krise dieser Episode: Wie wiegt man Atome, die nur ein Millionstel Milliardstel Gramm wiegen? Zielgroessen: Lorentzkraft, Zentripetalkraft, Wien-Filter, Massenspektrometer
 
 BEISPIEL（正确例题示范，含教具操作与解答）：
 
