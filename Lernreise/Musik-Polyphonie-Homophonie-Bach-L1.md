@@ -16,7 +16,6 @@ version: Enterprise-v5
 
 # Lernreise: Polyphonie und Homophonie bei Bach (L1, Ziel Klausur)
 
-<!-- Lesson v3: Schritt 1-8 feste Struktur; Fehlvorstellung zwischen Schritt 6 und 7 (Parser skip); [Werkzeug: <id>] interaktiv; Gating: check/szenario nicht bestanden = Weiter grau; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
 ## Schritt 1 — entdecken: Leipziger Thomaskirche, Wachet-auf-Fuge (4 Stimmen, 72 BPM) — 赛场警报
 
@@ -81,7 +80,7 @@ Regel: Fehler frueh = Grenze | Fehler spaet = Ausnutzung
 
 BEISPIEL(含教具操作与解答):
 
-[Werkzeug: oral-timer]
+[Werkzeug: highlighter]
 
 AUFGABE (analysieren, [AFB II]): Analysiere [AFB II] die Target-Probe in 90 Sekunden; belege jede Aussage mit Zahl und Takt. 90-Sekunden-Probe gegen den Timer: Zaehle 4 Einsaetze, weise Quinte 1,498 und Engfuehrung am Target nach.达标线:4 Stimmen, Quinte 1,498, Engfuehrung Takt 24, 90 s Rede。
 

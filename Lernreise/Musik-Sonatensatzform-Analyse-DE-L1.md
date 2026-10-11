@@ -16,7 +16,6 @@ version: Enterprise-v5
 
 # Lernreise: Sonatensatzform analysieren (L1, Ziel Muendlich)
 
-<!-- Lesson v3 Architektur mit 9 Abschnitten: Schritt 1 bis 8 mit fester Struktur; Fehlvorstellung liegt zwischen Schritt 6 und 7 (wird vom Parser uebersprungen, zaehlt nicht als Schritt); unterstuetzt eingebettete [Werkzeug: <id>] Elemente; Gating: check/szenario nicht bestanden = Weiter deaktiviert; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
 ## Schritt 1 — entdecken: Essener Philharmonie, Schueler-Klausurprobe (Haydn Hob. XVI/50, D-Dur) — Die Klausur, die tickt
 
@@ -75,7 +74,7 @@ Regel: Fehler frueh = Grenze | Fehler spaet = Ausnutzung
 
 BEISPIEL (Musteraufgabe mit Loesungsweg):
 
-[Werkzeug: formula]
+[Werkzeug: highlighter]
 
 AUFGABE (analysieren, [AFB II]): Analysiere [AFB II] die Target-Probe in 90 Sekunden; belege jede Aussage mit Zahl und Takt. Protokoll-Regler: Erstelle 20 Belege in 20 Minuten mit Score 1,0 am Target. Erreiche das Target: Haydn D-Dur, 20 Belege, Score 1,0, These in 20 min.
 

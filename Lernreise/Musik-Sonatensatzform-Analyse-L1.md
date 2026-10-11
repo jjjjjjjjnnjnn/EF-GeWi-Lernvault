@@ -16,7 +16,6 @@ version: Enterprise-v5
 
 # Lernreise: Sonatensatzform analysieren (L1, Ziel Muendlich)
 
-<!-- Lesson v3 9步制架构：Schritt 1至8固定结构；Fehlvorstellung 夹在 Schritt 6 与 7 之间（Parser 自动跳过，不占步数）；支持内嵌 [Werkzeug: <id>] 交互教具；Gating: check/szenario 未过 = Weiter 置灰；XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
 ## Schritt 1 — entdecken: Koelner Musikhochschule, Klausurwerkstatt (Mozart KV 283, G-Dur) — 赛场警报
 
@@ -81,7 +80,7 @@ Regel: Fehler frueh = Grenze | Fehler spaet = Ausnutzung
 
 BEISPIEL(含教具操作与解答):
 
-[Werkzeug: formula]
+[Werkzeug: highlighter]
 
 AUFGABE (analysieren, [AFB II]): Analysiere [AFB II] die Target-Probe in 90 Sekunden; belege jede Aussage mit Zahl und Takt. 笔录调节器:25分钟16证据,Score 0,8,达标。达标线:Mozart G-Dur, 16 Belege, Score 0,8, These in 25 min。
 

@@ -16,7 +16,6 @@ version: Enterprise-v5
 
 # Lernreise: Rhythmus Synkopen und Jazz (L1, Ziel Muendlich)
 
-<!-- Lesson v3 architecture: Schritte 1-8 fixed; Fehlvorstellung between Schritt 6 and 7 (parser skipped); embedded [Werkzeug: <id>]; gating: check/szenario failed = Weiter greyed; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
 ## Schritt 1 — entdecken: Koelner Philharmonie, Jazz-Night (Take Five, 176 BPM, 5/4-Takt) — 赛场警报
 
@@ -81,7 +80,7 @@ Regel: Fehler frueh = Grenze | Fehler spaet = Ausnutzung
 
 BEISPIEL(含教具操作与解答):
 
-[Werkzeug: formula]
+[Werkzeug: oral-timer]
 
 AUFGABE (analysieren, [AFB II]): Analysiere [AFB II] die Target-Probe in 90 Sekunden; belege jede Aussage mit Zahl und Takt. Groove-Regler: Miss Delta bei 176 BPM, klatsche Backbeat und weise 3+2-Gliederung am Target nach.达标线:176 BPM, Delta 0,17 s, 3+2-Gliederung, 8 Takte klatschsicher。
 

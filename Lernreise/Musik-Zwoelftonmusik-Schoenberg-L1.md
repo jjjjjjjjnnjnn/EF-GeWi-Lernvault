@@ -16,7 +16,6 @@ version: Enterprise-v5
 
 # Lernreise: Zwoelftonmusik und Schoenberg (L1, Ziel Klausur)
 
-<!-- Lesson v3: Schritt 1-8 feste Struktur; Fehlvorstellung zwischen Schritt 6 und 7 (Parser skip); [Werkzeug: <id>] interaktiv; Gating: check/szenario nicht bestanden = Weiter grau; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
 ## Schritt 1 — entdecken: Frankfurter Alte Oper, Suite op. 25 (Reihe E-F-G-As-B-C) — 赛场警报
 
@@ -81,7 +80,7 @@ Regel: Fehler frueh = Grenze | Fehler spaet = Ausnutzung
 
 BEISPIEL(含教具操作与解答):
 
-[Werkzeug: formula]
+[Werkzeug: highlighter]
 
 AUFGABE (analysieren, [AFB II]): Analysiere [AFB II] die Target-Probe in 90 Sekunden; belege jede Aussage mit Zahl und Takt. Reihen-Regler: Notiere Reihe, bilde 4 Formen und zaehle 48 mit 12! am Target.达标线:op. 25, Reihe 12 Toene, 4 Formen, 48 gesamt。
 

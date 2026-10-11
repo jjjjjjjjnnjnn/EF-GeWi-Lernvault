@@ -16,7 +16,6 @@ version: Enterprise-v5
 
 # Lernreise: Harmonielehre Kadenz und Stufentheorie (L1, Ziel Klausur)
 
-<!-- Lesson v3 9步制架构：Schritt 1至8固定结构；Fehlvorstellung 夹在 Schritt 6 与 7 之间（Parser 自动跳过，不占步数）；支持内嵌 [Werkzeug: <id>] 交互教具；Gating: check/szenario 未过 = Weiter 置灰；XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
 ## Schritt 1 — entdecken: Dresdner Frauenkirche, Pachelbel Kanon D-Dur (Achttakt-Kadenz) — 赛场警报
 
@@ -81,7 +80,7 @@ Regel: Fehler frueh = Grenze | Fehler spaet = Ausnutzung
 
 BEISPIEL(含教具操作与解答):
 
-[Werkzeug: formula]
+[Werkzeug: highlighter]
 
 AUFGABE (analysieren, [AFB II]): Analysiere [AFB II] die Target-Probe in 90 Sekunden; belege jede Aussage mit Zahl und Takt. 终止调节器:定Pachelbel卡农D大调级数,算五度频率,指认阻碍,达标。达标线:Kanon D-Dur, 8 Takte, 4 Stufen korrekt, Trugschluss V-VI。
 

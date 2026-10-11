@@ -16,7 +16,6 @@ version: Enterprise-v5
 
 # Lernreise: Harmonielehre Kadenz und Stufentheorie (L1, Ziel Klausur)
 
-<!-- Lesson v3 Architektur mit 9 Abschnitten: Schritt 1 bis 8 mit fester Struktur; Fehlvorstellung liegt zwischen Schritt 6 und 7 (wird vom Parser uebersprungen, zaehlt nicht als Schritt); unterstuetzt eingebettete [Werkzeug: <id>] Elemente; Gating: check/szenario nicht bestanden = Weiter deaktiviert; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
 ## Schritt 1 — entdecken: Muenchner Herkulessaal, Mozart Klaviersonate C-Dur KV 545 (Alberti-Kadenz) — Der Schluss, der alles verrät
 
@@ -75,7 +74,7 @@ Regel: Fehler frueh = Grenze | Fehler spaet = Ausnutzung
 
 BEISPIEL (Musteraufgabe mit Loesungsweg):
 
-[Werkzeug: formula]
+[Werkzeug: highlighter]
 
 AUFGABE (analysieren, [AFB II]): Analysiere [AFB II] die Target-Probe in 90 Sekunden; belege jede Aussage mit Zahl und Takt. Kadenz-Regler: Bestimme Stufen I-IV-V-I bei KV 545, rechne Quintfrequenz und weise Trugschluss am Target nach. Erreiche das Target: KV 545, 4 Stufen korrekt, Quinte 1,498, Schluss T-S-D-T.
 
