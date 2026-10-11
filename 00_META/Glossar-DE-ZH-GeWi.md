@@ -113,7 +113,7 @@ tags: [EF, Meta]
 | Folgenethik | 后果论/结果伦理 | Philosophie | Die Folgenethik beurteilt Handlungen nach ihren Konsequenzen. |
 | abwägen | 权衡 | Philosophie | Beim Abwägen vergleicht man Lust und Leid aller Betroffenen. |
 
-> 每科笔记的新术语同步回此表一行，保持唯一真相源。
+<!-- 每科笔记的新术语同步回此表一行，保持唯一真相源。 -->
 
 | Gemeinsamer Ausschuss | 联合委员会（紧急议会） | SoWi | Der Gemeinsame Ausschuss tagt nur im Notfall. |
 | Bundesversammlung | 联邦大会 | SoWi | Die Bundesversammlung wählt den Bundespräsidenten. |
@@ -156,7 +156,7 @@ tags: [EF, Meta]
 | Septime | 七度 | Musik | Die Septime zieht stark zur Oktave. |
 | Sonatenhauptsatzform | 奏鸣曲式 | Musik | Exposition, Durchfuehrung und Reprise. |
 | Wiener Klassik | 维也纳古典乐派 | Musik | Haydn, Mozart und Beethoven. |
-| Exposition | 开场 | Deutsch | Die Exposition stellt Figuren und Konflikt vor. |
+| Exposition (Drama) | 开场 | Deutsch | Die Exposition stellt Figuren und Konflikt vor. |
 | Peripetie | 转折点 | Deutsch | Die Peripetie wendet die Handlung. |
 | Figurenkonstellation | 人物关系结构 | Deutsch | Buendnisse und Gegensaetze sichtbar machen. |
 | Subtext | 潜台词 | Deutsch | Der Subtext verraet mehr als das Gesagte. |
@@ -225,7 +225,7 @@ tags: [EF, Meta]
 | Turgor | 膨压 | Bio | Turgor stabilisiert die Pflanze. |
 | Denaturierung | 变性 | Bio | Hitze denaturiert das Enzym irreversibel. |
 | Toleranzbereich | 耐受范围 | Bio | Ausserhalb des Toleranzbereichs sinkt die Fitness. |
-| Exposition | 呈示部 | Musik | Die Exposition stellt zwei Themen in zwei Tonarten vor. |
+| Exposition (Musik) | 呈示部 | Musik | Die Exposition stellt zwei Themen in zwei Tonarten vor. |
 | Durchführung | 展开部 | Musik | Die Durchführung zerlegt das Motiv und moduliert. |
 | Reprise | 再现部 | Musik | Die Reprise holt beide Themen in die Haupttonart zurück. |
 | Absprung | 起跳 | Sport | Entscheidend ist der schnelle Absprung, weil er die Weite bestimmt. |
@@ -251,9 +251,6 @@ tags: [EF, Meta]
 | Kompensationspunkt | 补偿点 | Bio | Am Punkt gilt Fotosynthese gleich Atmung. |
 | Substratspezifität | 底物特异性 | Bio | Ein Enzym passt nur zu einem Substrat. |
 | Ökologische Nische | 生态位 | Bio | Die Nische trennt die Arten. |
-| Leserlenkung | 读者引导 | Deutsch | Der Autor lenkt die Leser mit einer Leitfrage. |
-| Argumentationsgang | 论证思路 | Deutsch | Der Argumentationsgang führt von der Konzession zum Mittelweg. |
-| Faktenargument | 事实论据 | Deutsch | Das Faktenargument untermauert die These mit Beobachtungen. |
 | normatives Argument | 价值规范论据 | Deutsch | Das normative Argument appelliert an die Selbstverantwortung. |
 | relevant aspects | 相关要点 | Englisch | Select only the relevant aspects for your reader. |
 | connectors | 连接词/逻辑衔接词 | Englisch | Connectors structure formal letters and forum posts. |
@@ -514,7 +511,7 @@ tags: [EF, Meta]
 | Handlungsaufbau | 情节结构 | Deutsch | Der Handlungsaufbau wird über Akt- und Szenengliederung beschrieben. |
 | Vergleichsmaßstab | 比较维度 | Deutsch | Ohne gemeinsamen Vergleichsmaßstab bleibt der Vergleich beliebig. |
 | Auktoriale Erzählsituation | 全知叙述情境 | Deutsch | In der auktorialen Erzählsituation kommentiert der Erzähler das Geschehen. |
-| Personale Erzählsituation | 人物视角叙述情境 | Deutsch | In der personalen Erzählsituation bleibt der Erzähler an eine Figur gebunden. |
+| Personale Erzählsituation | 人物视角叙述情境（限制性人物叙事视角） | Deutsch | In der personalen Erzählsituation bleibt der Erzähler an eine Figur gebunden und schildert das Romangeschehen unkommentiert aus ihrer Innensicht. |
 | Ich-Erzählsituation | 第一人称叙述情境 | Deutsch | In der Ich-Erzählsituation ist der Erzähler selbst Teil der Handlung. |
 | Fokalisierung | 聚焦 | Deutsch | Die Fokalisierung legt fest, wessen Wahrnehmung der Text zeigt. |
 | Raffung | 叙事压缩 | Deutsch | Durch Raffung werden Jahre in wenigen Sätzen zusammengefasst. |
@@ -891,7 +888,7 @@ tags: [EF, Meta]
 | Informationsrepertoire | 信息来源组合 | Deutsch | Das Informationsrepertoire beschreibt, wie viele und welche Quellen jemand tatsächlich nutzt. |
 | Bestätigungsfehler | 确认偏误 | Deutsch | Der Bestätigungsfehler bezeichnet die Neigung, widersprechende Informationen zu meiden. |
 | Medienmündigkeit | 媒介素养／媒介自主 | Deutsch | Medienmündigkeit heißt zu bemerken, dass der eigene Feed eine Auswahl ist. |
-> Englisch-Zusatzblock: links deutsche Entsprechung, rechts chinesisch — Fach bleibt Englisch, kein neuer Tabellenkopf.
+<!-- Englisch-Zusatzblock: links deutsche Entsprechung, rechts chinesisch — Fach bleibt Englisch, kein neuer Tabellenkopf. -->
 | attention economy (Aufmerksamkeitsökonomie) | 注意力经济 | Englisch | *"In the attention economy, attention itself is the commodity that is being sold."* |
 | variable reward (variable Belohnung) | 可变奖励／间歇强化 | Englisch | *"Variable reward is why the feed feels like a slot machine."* |
 | displacement hypothesis (Verdrängungshypothese) | 置换假说 | Englisch | *"The displacement hypothesis says scrolling displaces sleep, movement and real conversation."* |
@@ -947,7 +944,6 @@ tags: [EF, Meta]
 | Vita activa | 积极生活的三重境界 | Philosophie | Hannah Arendts Vita activa gliedert die menschliche Tätigkeit in Arbeiten, Herstellen und politisches Handeln. |
 | Pluralität | 人类的复多性 | Philosophie | Pluralität bedeutet, dass viele einzigartige Menschen im gemeinsamen öffentlichen Raum politisch handeln. |
 | corrupted American Dream | 蜕变的美国梦/消费主义神话 | Englisch | The corrupted American Dream equates personal happiness and human worth exclusively with material wealth. |
-| Personale Erzählsituation | 限制性人物叙事视角 | Deutsch | Die personale Erzählsituation schildert das Romangeschehen unkommentiert aus der Innensicht der Figur. |
 | Entfremdung der Arbeit | 劳工异化 | Deutsch | Die Entfremdung der Arbeit degradiert das schöpferische Individuum zum ersetzbaren Rädchen im Getriebe. |
 | realisierte Metapher | 实体化隐喻 | Deutsch | Die realisierte Metapher verwandelt eine bildhafte Redewendung in eine physisch erfahrbare Romantatsache. |
 | promissory note | 期票/法律借据 | Englisch | The promissory note symbolizes the binding constitutional debt America owes to all citizens. |
@@ -963,7 +959,7 @@ tags: [EF, Meta]
 | lokale Änderungsrate | 瞬时变化率/导数 | Mathe | Die lokale Änderungsrate entspricht der Tangentensteigung an einer Stelle und quantifiziert Momentangeschwindigkeit oder Reaktionsrate. |
 | Erhaltungssatz | 守恒定律 | Physik | Ein physikalischer Erhaltungssatz besagt, dass die Gesamtmenge einer fundamentalen Größe in einem abgeschlossenen System zeitlich unveränderlich ist. |
 | Syllogismus | 三段论演绎 | Deutsch | Der Syllogismus ist eine logische Schlussfigur aus Obersatz, Untersatz und notwendiger Konklusion. |
-| Leserlenkung | 读者心理引导/修辞调控 | Deutsch | Die Leserlenkung steuert die Aufmerksamkeit und emotionale Haltung des Rezipienten über gezielte Rhetorik. |
+| Leserlenkung (Rhetorik) | 读者心理引导/修辞调控 | Deutsch | Die Leserlenkung steuert die Aufmerksamkeit und emotionale Haltung des Rezipienten über gezielte Rhetorik. |
 | Fehlschluss | 逻辑谬误（形式或实质假论证） | Philosophie | Ein logischer Fehlschluss verletzt die formale Gültigkeit oder stützt sich auf unbewiesene Prämissen. |
 | Diskursmacht | 话语权力与意识形态霸权 | SoWi | Die Diskursmacht prägt institutionell, welche Positionen in der Öffentlichkeit als legitim und sagbar gelten. |
 | Folgefehler | 后续推导保留分（防连坐机制） | Mathe | Ein Folgefehler beschreibt das Prinzip, dass trotz vorangegangenem Rechenfehler alle formal korrekten Folgeschritte voll bepunktet werden. |
