@@ -210,10 +210,20 @@ describe("Concept Distillation Engine: conceptDistiller", () => {
   });
 
   it("distills Differentialrechnung: Tangente & Ableitung (Mathe)", () => {
-    const res = distillConcept("Einfuehrung der Ableitung: Differenzenquotient und Tangentensteigung", "Mathe");
+    const res = distillConcept("Differentialrechnung: Tangente, Ableitung & Aenderungsrate", "Mathe");
     validateDistilledConcept(res);
     expect(res.mentalModelAnalogy.analogyTitle).toContain("Tachometer");
     expect(res.klausurSatz15NP.operator).toBe("darstellen");
+  });
+
+  it("distills Ableitung als lokale Aenderungsrate benchmark (Mathe)", () => {
+    const res = distillConcept("Ableitung als lokale Aenderungsrate: Von der Sekante zur Tangente", "Mathe");
+    validateDistilledConcept(res);
+    expect(res.fach).toBe("Mathe");
+    expect(res.intuitionDilemma?.scenarioZH).toContain("汉堡到柏林");
+    expect(res.konzeptPuzzle?.pairs.length).toBe(4);
+    expect(res.examTrapCorrection?.diagnosticOptions?.length).toBe(3);
+    expect(res.klausurSatz15NP.scoringKeywords).toContain("Differenzenquotient");
   });
 
   it("distills Energieerhaltungssatz & Dissipation (Physik)", () => {

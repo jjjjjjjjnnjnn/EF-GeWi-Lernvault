@@ -2296,6 +2296,215 @@ const DOMAIN_KNOWLEDGE_ENTRIES: DomainKnowledgeEntry[] = [
       ]
     }
   },
+
+  // 15. Ableitung als lokale Aenderungsrate: Von der Sekante zur Tangente (Mathe)
+  {
+    id: "ableitung-lokale-aenderungsrate-sekante-tangente",
+    canonicalTitle: "Ableitung als lokale Aenderungsrate: Von der Sekante zur Tangente",
+    fach: "Mathe",
+    matchKeywords: [
+      "ableitung",
+      "differenzenquotient",
+      "differentialquotient",
+      "sekante",
+      "tangente",
+      "sekantensteigung",
+      "tangentensteigung",
+      "grenzwert",
+      "momentanrate",
+      "lokale aenderungsrate",
+      "mittlere aenderungsrate",
+      "h gegen 0",
+      "punkt-steigungs-form"
+    ],
+    data: {
+      topicTitle: "Ableitung als lokale Aenderungsrate: Von der Sekante zur Tangente",
+      fach: "Mathe",
+      intuitionDilemma: {
+        scenarioDE: "Du faehrst Hamburg -> Berlin (300 km in 3 h, Schnitt 100 km/h). Ein Blitzer fotografiert dich mit 160 km/h. Du sagst: Mein Schnitt war doch legal!",
+        scenarioZH: "你开车汉堡到柏林（300 公里用了 3 小时，平均 100 km/h）。测速摄像头拍到你 160 km/h。你辩解：我全程平均明明合法！",
+        questionDE: "Zaehlt vor Gericht der Mittelwert ueber die ganze Fahrt oder der Momentanwert im Blitzerpunkt?",
+        questionZH: "法庭上应当采信全程平均值，还是测速点那一瞬间的瞬时值？",
+        choiceA: {
+          id: "A",
+          textDE: "A) Der Strafzettel muss sich am Durchschnittswert ueber die Gesamtstrecke orientieren.",
+          textZH: "A) 罚单应当依据全程区间的平均速度来判定。",
+          reactionDE: "Nachvollziehbar, aber im Grenzfall falsch: Der Tacho zeigt die lokale Momentanrate im Punkt P. Wer den Mittelwert ueber das ganze Intervall [x0, x0+h] nimmt, erhaelt die Sekantensteigung, nicht die Tangentensteigung an der Stelle x0.",
+          reactionZH: "可以理解，但在极限情形下是错的：测速仪拍到的是 P 点处的局部瞬时变化率。用整段区间上的平均值算出来的是割线斜率，不是该点处的切线斜率。"
+        },
+        choiceB: {
+          id: "B",
+          textDE: "B) Der Strafzettel erfasst die Momentanrate in einem einzigen Punkt der Strecke.",
+          textZH: "B) 罚单捕获的是全程中某一个瞬间的瞬时速率。",
+          reactionDE: "Exakt: Die Radarmessung erfasst die lokale Aenderungsrate im Punkt P, also die Grenzlage der Sekanten fuer h gegen 0. Genau dieser Grenzprozess definiert die Ableitung f'(x0).",
+          reactionZH: "完全正确：雷达在 P 点捕获的是局部瞬时变化率，即 h 趋于 0 时割线的极限位置，这个极限过程正是导数 f'(x0) 的定义。"
+        },
+        mechanismTakeawayDE: "Die Sekante verbindet P(x0|f(x0)) und Q(x0+h|f(x0+h)); fuer h gegen 0 wandert Q auf P zu und die Sekante rotiert in die Grenzlage der Tangente mit Steigung f'(x0).",
+        mechanismTakeawayZH: "割线连接定点 P 与动点 Q；当步长 h 趋于 0 时，Q 沿曲线滑向 P，割线旋转收敛到切线的极限位置，其斜率即 f'(x0)。",
+        klpCoreLogicDE: "NRW KLP Mathe IF Analysis (EF-A1): Differenzenquotient als Sekantensteigung -> Grenzprozess h gegen 0 -> Differentialquotient als Tangentensteigung f'(x0).",
+        klpCoreLogicZH: "NRW 考纲数学分析领域 EF-A1：差商即割线斜率 -> 令 h 趋于 0 的极限过程 -> 微商即切线斜率 f'(x0)。"
+      },
+      mentalModelAnalogy: {
+        analogyTitle: "Vom Foto zum Tacho: Der Blitzer misst den Moment, nicht die Strecke",
+        explanationDE: "Die Sekante verbindet P(x0|f(x0)) und Q(x0+h|f(x0+h)); fuer h gegen 0 wandert Q auf P zu und die Sekante rotiert in die Grenzlage der Tangente mit Steigung f'(x0).",
+        explanationZH: "割线连接定点 P 与动点 Q；当步长 h 趋于 0 时，Q 沿曲线滑向 P，割线旋转收敛到切线的极限位置，其斜率即 f'(x0)。"
+      },
+      konzeptPuzzle: {
+        instructionDE: "Ordne jedem Ableitungsschritt (Differenz zu Kuerzen zu Grenzwert) das typische Fehlerbild und die Klausur-Konsequenz zu:",
+        instructionZH: "将导数推导每一步（作差到约分到取极限）与典型错象及考场结论配对：",
+        pairs: [
+          {
+            id: "pair-1",
+            premiseDE: "Sekante: Gerade durch P(x0|f(x0)) und Q(x0+h|f(x0+h)) mit Steigung ms = (f(x0+h)-f(x0))/h",
+            premiseZH: "割线：过定点 P 与动点 Q 的直线，斜率为差商 ms = (f(x0+h)-f(x0))/h",
+            realityDE: "Fehlerbild: ms mit vertauschtem Zaehler oder fehlendem h im Nenner ansetzen",
+            realityZH: "典型错象：分子写反或分母漏掉 h",
+            consequenceDE: "Klausur: Ansatz ms sauber mit Funktionswerten aufstellen; Nenner h nie unterschlagen.",
+            consequenceZH: "考场：差商起手式必须写全函数值，分母 h 绝不允许漏写。"
+          },
+          {
+            id: "pair-2",
+            premiseDE: "Grenzprozess: Q wandert entlang des Graphen auf P zu, es gilt h gegen 0",
+            premiseZH: "极限过程：Q 沿曲线滑向 P，即 h 趋于 0",
+            realityDE: "Fehlerbild: lim-Symbol vor dem Kuerzen streichen und direkt h = 0 einsetzen",
+            realityZH: "典型错象：还没约分就删掉 lim 符号，直接代入 h = 0",
+            consequenceDE: "Klausur: Das Symbol lim(h gegen 0) bis zur Auswertung mitschreiben (formale Strenge).",
+            consequenceZH: "考场：极限符号 lim 必须保留到代入求值为止，否则扣形式严谨分。"
+          },
+          {
+            id: "pair-3",
+            premiseDE: "Kuerzen: Differenzenquotient durch Ausklammern und Kuerzen von h vereinfachen",
+            premiseZH: "约分：对差商因式分解并约去分母上的 h",
+            realityDE: "Fehlerbild: Unmoegliche Division durch h = 0 direkt ausfuehren",
+            realityZH: "典型错象：直接用 h = 0 做除法（无意义的除零运算）",
+            consequenceDE: "Klausur: Zwischenschritt (h-1) bzw. Faktor h explizit zeigen, dann erst Grenzwert bilden.",
+            consequenceZH: "考场：必须展示约分中间步，之后才能取极限。"
+          },
+          {
+            id: "pair-4",
+            premiseDE: "Tangente: Grenzlage der Sekanten mit Steigung mt = f'(x0); Gleichung t(x) = f'(x0)(x-x0)+f(x0)",
+            premiseZH: "切线：割线的极限位置，斜率 mt = f'(x0)；方程 t(x) = f'(x0)(x-x0)+f(x0)",
+            realityDE: "Fehlerbild: Steigung als Funktion f'(x) stehen lassen statt f'(x0) als Zahl",
+            realityZH: "典型错象：斜率停留在含 x 的函数式，未代入具体点求数值",
+            consequenceDE: "Klausur: Erst f'(x0) als Zahl bestimmen, dann Beruehrpunkt P einsetzen, mit Antwortsatz schliessen.",
+            consequenceZH: "考场：先求出具体数值斜率，再代入切点，最后用德语结论句收尾。"
+          }
+        ]
+      },
+      examTrapCorrection: {
+        studentAnswerDE: "Zu f(x) = x^2 - 3x lautet die Tangentensteigung an der Stelle x0 = 1: mt = (f(3)-f(1))/(3-1) = 1, also t(x) = 1*(x-1)-2.",
+        studentAnswerZH: "对 f(x) = x^2 - 3x，求 x0 = 1 处切线斜率：mt = (f(3)-f(1))/(3-1) = 1，所以 t(x) = 1*(x-1)-2。",
+        fatalFlawPointDE: "Verwechslung von mittlerer und lokaler Aenderungsrate: Differenzenquotient ueber [1,3] statt Differentialquotient an der Stelle x0 = 1.",
+        fatalFlawPointZH: "混淆平均变化率与局部变化率：用区间 [1,3] 上的差商代替了 x0 = 1 处的微商。",
+        examinerVerdictDE: "Der Pruefling berechnet die Sekantensteigung statt der Tangentensteigung: Gefragt war die lokale Rate an der Stelle x0 = 1 (f'(1) = -1), nicht der Mittelwert ueber [1, 3]. Zusaetzlich fehlt der gesamte Grenzprozess mit lim(h gegen 0).",
+        examinerVerdictZH: "该生把割线斜率当成了切线斜率：题目要求的是 x0 = 1 处的局部变化率（f'(1) = -1），不是区间 [1,3] 上的平均值；且整个含 lim 的极限过程完全缺失。",
+        diagnosticOptions: [
+          {
+            id: "diag-correct",
+            textDE: "Der Loesungsweg bestimmt die Sekantensteigung ueber dem Intervall [1, 3], waehrend die Aufgabe die Tangentensteigung exakt an der Stelle x0 = 1 verlangt.",
+            textZH: "该解法求的是区间 [1,3] 上的割线斜率，而题目要求的是恰好在 x0 = 1 处的切线斜率。",
+            isCorrect: true,
+            explanationDE: "Treffer: Zum Zeitpunkt bzw. an der Stelle x0 ist stets f'(x0) ueber den Differentialquotienten mit Grenzwertbildung zu bestimmen; der Intervall-Differenzenquotient liefert nur die mittlere Rate.",
+            explanationZH: "诊断正确：凡问某时刻/某点，必须走微商路线（求导再代入）；区间差商只给出平均值，两者几何对象完全不同（切线 vs 割线）。"
+          },
+          {
+            id: "diag-distractor-1",
+            textDE: "Der entscheidende Mangel liegt in der Wahl der Stellen 1 und 3: Mit dem engeren Intervall [1, 1.5] waere dasselbe Verfahren korrekt.",
+            textZH: "关键失误在于选点太宽：若改用更窄的区间 [1, 1.5]，同样的算法就是正确的。",
+            isCorrect: false,
+            explanationDE: "Hochtrabende Falle: Auch ein enges Intervall liefert nur eine Sekantensteigung als Naeherung; exakt wird die lokale Rate erst durch den Grenzprozess h gegen 0.",
+            explanationZH: "高迷惑陷阱：再窄的区间算出的仍是割线斜率（近似值）；只有令 h 趋于 0 取极限，才能得到精确的局部变化率。"
+          },
+          {
+            id: "diag-distractor-2",
+            textDE: "Der Fehler besteht darin, dass die Punkt-Steigungs-Formel t(x) = m*(x-x0)+f(x0) fuer Tangenten grundsaetzlich ungeeignet ist.",
+            textZH: "错误在于切线根本不该用点斜式 t(x) = m*(x-x0)+f(x0) 来表示。",
+            isCorrect: false,
+            explanationDE: "Falsch abgebogen: Die Punkt-Steigungs-Formel ist das korrekte Werkzeug; der Fehler liegt allein in der Steigung m = 1 statt m = f'(1) = -1.",
+            explanationZH: "方向错误：点斜式本身完全正确，错的只是斜率——应当是 m = f'(1) = -1，而不是区间平均值 1。"
+          }
+        ]
+      },
+      klpTermini: [
+        {
+          termDE: "Differenzenquotient",
+          definitionDE: "ms = (f(x0+h)-f(x0))/h: Sekantensteigung als mittlere Aenderungsrate im Intervall; Ansatz stets mit vollen Funktionswerten und Nenner h.",
+          termZH: "差商",
+          definitionZH: "割线斜率，即区间上的平均变化率；起手式必须写全函数值，分母h不许漏。"
+        },
+        {
+          termDE: "Differentialquotient",
+          definitionDE: "lim(h gegen 0) des Differenzenquotienten: Tangentensteigung f'(x0) als lokale Aenderungsrate an der Stelle x0.",
+          termZH: "微商",
+          definitionZH: "差商令h趋于0的极限：切线斜率f'(x0)，即该点处的局部变化率。"
+        },
+        {
+          termDE: "Sekante",
+          definitionDE: "Gerade durch P und Q mit Steigung ms; liefert nur Naeherungen der lokalen Rate, nie den exakten Wert.",
+          termZH: "割线",
+          definitionZH: "过定点P与动点Q的直线；只给出局部变化率的近似值，永不等同精确值。"
+        },
+        {
+          termDE: "Tangente",
+          definitionDE: "Grenzlage der Sekanten fuer h gegen 0 mit t(x) = f'(x0)(x-x0)+f(x0); erst Zahl bestimmen, dann Beruehrpunkt einsetzen.",
+          termZH: "切线",
+          definitionZH: "h趋于0时割线的极限位置；先求具体数值斜率，再代入切点。"
+        },
+        {
+          termDE: "Lokale Aenderungsrate",
+          definitionDE: "Deutung von f'(x0) im Anwendungskontext (Momentangeschwindigkeit, Blitzerwert); Gegenstueck zur mittleren Rate ueber ein Intervall.",
+          termZH: "局部变化率",
+          definitionZH: "f'(x0)在应用语境中的解释（瞬时速度）；对应区间上的平均变化率。"
+        }
+      ],
+      fehlerquellen: [
+        {
+          trapTitleDE: "Mittlere statt lokale Rate",
+          trapDescriptionDE: "Sekantensteigung ueber [1,3] statt f'(1); Intervall-Differenzenquotient liefert nur die mittlere Rate, gefragt war die Tangentensteigung an der Stelle.",
+          trapDescriptionZH: "用区间[1,3]的割线斜率代替x0=1处的切线斜率。",
+          howToAvoidDE: "Bei Stelle bzw. Zeitpunkt stets f'(x0) ueber den Differentialquotienten mit Grenzwertbildung bestimmen."
+        },
+        {
+          trapTitleDE: "lim-Symbol vorzeitig streichen",
+          trapDescriptionDE: "lim(h gegen 0) wird vor dem Kuerzen gestrichen und direkt h = 0 eingesetzt; unmoegliche Division durch null.",
+          trapDescriptionZH: "还没约分就删lim符号、直接代入h=0，构成无意义的除零运算。",
+          howToAvoidDE: "Das lim-Symbol bis zur Auswertung mitschreiben; erst ausklammern und kuerzen, dann erst Grenzwert bilden."
+        },
+        {
+          trapTitleDE: "Steigung als Funktion stehen lassen",
+          trapDescriptionDE: "f'(x) statt f'(x0) als Zahl; Tangente ohne eingesetzten Beruehrpunkt und ohne Antwortsatz.",
+          trapDescriptionZH: "斜率停留在含x的函数式，未代入具体点求数值。",
+          howToAvoidDE: "Erst f'(x0) als Zahl bestimmen, dann Beruehrpunkt P einsetzen, mit Antwortsatz schliessen."
+        }
+      ],
+      klausurSatz15NP: {
+        musterSatzDE: "Zwar beschreibt der Differenzenquotient (f(x0+h)-f(x0))/h zunaechst nur die Sekantensteigung als mittlere Aenderungsrate im Intervall [x0, x0+h], dennoch folgt nach Kuerzen durch h und Grenzwertbildung fuer h gegen 0 die Tangentensteigung f'(x0) = lim(h gegen 0) (f(x0+h)-f(x0))/h als lokale Aenderungsrate an der Stelle x0.",
+        operator: "darstellen",
+        scoringKeywords: [
+          "Differenzenquotient",
+          "Differentialquotient",
+          "Sekante",
+          "Tangente",
+          "Grenzwert h gegen 0",
+          "f'(x0)",
+          "lokale Aenderungsrate"
+        ],
+        explanationZH: "三步推导缺一不可：先列差商并约去分母 h，再令 h 趋于 0 取极限，最后落到切线斜率与局部变化率的解释；符号 lim 必须保留到求值完成，数值必须代入具体点。"
+      },
+      socraticProbes: [
+        {
+          questionDE: "Zaehlt vor Gericht der Mittelwert ueber die ganze Fahrt oder der Momentanwert im Blitzerpunkt?",
+          questionZH: "法庭上采信全程平均值，还是测速点那一瞬间的瞬时值？",
+          counterPerspectiveDE: "Der Tacho zeigt die lokale Momentanrate im Punkt P; der Mittelwert ueber das Intervall ist die Sekantensteigung, nicht die Tangentensteigung."
+        },
+        {
+          questionDE: "Reicht ein enges Intervall wie [1, 1.5] aus, um die Tangentensteigung exakt zu bestimmen?",
+          questionZH: "改用更窄的区间[1,1.5]，同样的算法就算对了吗？",
+          counterPerspectiveDE: "Auch ein enges Intervall liefert nur eine Sekantensteigung als Naeherung; exakt wird die lokale Rate erst durch den Grenzprozess h gegen 0."
+        }
+      ]
+    }
+  },
 ];
 
 // ---------------------------------------------------------------------------
