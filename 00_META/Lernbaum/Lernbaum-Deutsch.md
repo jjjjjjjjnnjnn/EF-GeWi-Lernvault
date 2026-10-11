@@ -445,7 +445,7 @@ DE: Texte ist das Drehkreuz des Abiturs.
   - Operatoren：`analysieren`（I–III）、`untersuchen`（II）、`deuten`（III）
   - Lernweg ZH：**对比辨别**（修辞手段判别卡混排，Rohrer/Foster）；每个手段配一个可迁移的 Beleg-Baustein 句式并默写。
   - Fehlerquelle：只 `nennen` 修辞格不给 Wirkung（卡 AFB I）；或把「修辞手段」写成作者人品评价。
-  - 📓 笔记：✅ `01_Deutsch/Sachtextanalyse-Leserlenkung-und-Rhetorik.md`
+  - 📓 笔记：✅ `01_Deutsch/Texte-Analyse/Sachtextanalyse-Leserlenkung-und-Rhetorik.md`
 
 - **Intention 写作意图** `[EF]`
   - 中文一句话：从内容、形式、语言三路推断作者意图与目标读者。
@@ -861,7 +861,7 @@ DE: Medien stuetzt vor allem Aufgabenart IV und die mediale Variante von Ia; im 
 | `01_Deutsch/Texte-Analyse/Deutsch-Abitur-Aufgabenarten.md` | **跨 IF（元层）** | — | I–IV 全景 + AFB 规划 | ✅ 已有 |
 | `01_Deutsch/Klausur-Training/Deutsch-IQB-Training.md` | **跨 IF（元层）** | IF2 | IIa + IIIa/IVb（轻量版） | ✅ 已有 |
 | `01_Deutsch/Texte-Analyse/Sachtextanalyse-Argumentation.md` | **IF2**（pragmatische Texte） | IF3（Leserlenkung） | **IIa + IIIa** | ✅ 已有 |
-| `01_Deutsch/Sachtextanalyse-Leserlenkung-und-Rhetorik.md` | **IF3**（Leserlenkung/Rhetorik） | IF2（Argumentationsgang） | **IIa + IIIa** | ✅ 已有 |
+| `01_Deutsch/Texte-Analyse/Sachtextanalyse-Leserlenkung-und-Rhetorik.md` | **IF3**（Leserlenkung/Rhetorik） | IF2（Argumentationsgang） | **IIa + IIIa** | ✅ 已有 |
 
 ### 4.2 缺口清单（**共 16 项**，按优先级排序）
 

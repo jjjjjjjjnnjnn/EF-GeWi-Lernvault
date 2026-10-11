@@ -18,9 +18,9 @@ tags: [EF, Meta, S8]
 - [Aufgabenart-III-Eroerterung](../01_Deutsch/Texte-Analyse/Aufgabenart-III-Eroerterung.md)
 - [Drama-Strukturvergleich-QP](../01_Deutsch/Texte-Analyse/Drama-Strukturvergleich-QP.md)
 - [Erzaehltexte-Analyse](../01_Deutsch/Texte-Analyse/Erzaehltexte-Analyse.md)
-- [Fachsprache-Formulierungsbausteine](../01_Deutsch/Fachsprache-Formulierungsbausteine.md)
+- [Fachsprache-Formulierungsbausteine](../01_Deutsch/Texte-Analyse/Fachsprache-Formulierungsbausteine.md)
 - [Gedichtvergleich-Ib](../01_Deutsch/Texte-Analyse/Gedichtvergleich-Ib.md)
-- [Kommunikation-Oeffentlichkeit-und-Manipulation](../01_Deutsch/Kommunikation-Oeffentlichkeit-und-Manipulation.md)
+- [Kommunikation-Oeffentlichkeit-und-Manipulation](../01_Deutsch/Texte-Analyse/Kommunikation-Oeffentlichkeit-und-Manipulation.md)
 - [Kommunikationsmodelle](../01_Deutsch/Texte-Analyse/Kommunikationsmodelle.md)
 - [Literaturgeschichte-Aufklaerung-Gegenwart](../01_Deutsch/Texte-Analyse/Literaturgeschichte-Aufklaerung-Gegenwart.md)
 - [Materialgestuetztes-Verfassen-IV](../01_Deutsch/Texte-Analyse/Materialgestuetztes-Verfassen-IV.md)
@@ -51,8 +51,8 @@ tags: [EF, Meta, S8]
 - [Schreiben-Creative-Writing-und-Re-creation](../02_Englisch/Texte-Analyse/Schreiben-Creative-Writing-und-Re-creation.md)
 - [Sprachlernkompetenz-Strategien-und-KI-Reflexion](../02_Englisch/Texte-Analyse/Sprachlernkompetenz-Strategien-und-KI-Reflexion.md)
 - [Sprachliche-Mittel-Strukturen-und-Orthographie](../02_Englisch/Texte-Analyse/Sprachliche-Mittel-Strukturen-und-Orthographie.md)
-- [Sprechen-Gespraechsstrategien-und-Sicherung](../02_Englisch/Sprechen-Gespraechsstrategien-und-Sicherung.md)
-- [Sprechen-Muendliche-Abiturpruefung](../02_Englisch/Sprechen-Muendliche-Abiturpruefung.md)
+- [Sprechen-Gespraechsstrategien-und-Sicherung](../02_Englisch/Texte-Analyse/Sprechen-Gespraechsstrategien-und-Sicherung.md)
+- [Sprechen-Muendliche-Abiturpruefung](../02_Englisch/Texte-Analyse/Sprechen-Muendliche-Abiturpruefung.md)
 - [Textsortenmerkmale-und-Belegtechniken](../02_Englisch/Texte-Analyse/Textsortenmerkmale-und-Belegtechniken.md)
 
 ## 03_Mathe

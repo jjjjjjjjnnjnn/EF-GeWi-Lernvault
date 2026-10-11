@@ -99,14 +99,14 @@
 - Drama-Ganzschrift: Kandidaten + Werkzeugkasten — [Drama-Ganzschrift-Kandidaten](../01_Deutsch/Texte-Analyse/Drama-Ganzschrift-Kandidaten.md)（Dürrenmatt/Frisch-Shortlist/五段/人物关系/对话分析，待老师定书名）
 - Abitur-Aufgabenarten I-IV + ZKE-Anschluss — [Deutsch-Abitur-Aufgabenarten](../01_Deutsch/Texte-Analyse/Deutsch-Abitur-Aufgabenarten.md)（I-IV/AFB/IV材料写作/Gedichtvergleich/ZKE-D1=IIa）· [IQB-Training](../01_Deutsch/Klausur-Training/Deutsch-IQB-Training.md)（自写150词范文+EHZ）
 - Sachtextanalyse: Argumentation & Leserlenkung — [Sachtextanalyse-Argumentation](../01_Deutsch/Texte-Analyse/Sachtextanalyse-Argumentation.md)（Pause vom Bildschirm?/6 Argumenttypen/10 Verben/AFB II Analyse vs AFB III Erörterung）
-- Sachtextanalyse: Leserlenkung & Rhetorik — [Sachtextanalyse-Leserlenkung-und-Rhetorik](../01_Deutsch/Sachtextanalyse-Leserlenkung-und-Rhetorik.md)（形式-功能-读者效果三位一体/修辞功能链/假托论据识别）
+- Sachtextanalyse: Leserlenkung & Rhetorik — [Sachtextanalyse-Leserlenkung-und-Rhetorik](../01_Deutsch/Texte-Analyse/Sachtextanalyse-Leserlenkung-und-Rhetorik.md)（形式-功能-读者效果三位一体/修辞功能链/假托论据识别）
 
 ### Englisch
 - Role Models — [Role-Models-Analysis](../02_Englisch/Texte-Analyse/Role-Models-Analysis.md)（Teil A三任务链/Summary自查/P.E.E./Comment句型）
 - Political Speech & Rhetoric: Martin Luther King Jr. (I Have a Dream) — [MLK-I-Have-a-Dream-Speech-Analysis](../02_Englisch/Texte-Analyse/MLK-I-Have-a-Dream-Speech-Analysis.md)（商业期票隐喻/四重首语从复/亚里士多德修辞三角/de jure vs de facto辩证评析）
 - Dystopia & Surveillance: George Orwell (1984) — [Orwell-1984-Dystopian-Surveillance](../02_Englisch/Texte-Analyse/Orwell-1984-Dystopian-Surveillance.md)（双向电幕全景监控/双重思想与新话语言控制/物质匮乏作为统治工具/算法监控资本主义批判）
 - Modern Drama: Arthur Miller (Death of a Salesman) — [Miller-Death-of-a-Salesman-American-Dream](../02_Englisch/Texte-Analyse/Miller-Death-of-a-Salesman-American-Dream.md)（推销员人格商品化/微笑与皮鞋隐喻/平民悲剧理论/还清房贷的毁灭性戏剧反讽）
-- Mediation & Kommunikative Strategien — [Mediation-und-Kommunikative-Strategien](../02_Englisch/Mediation-und-Kommunikative-Strategien.md)（Teil B跨文化调解准则/体裁格式契合/文化概念释义）
+- Mediation & Kommunikative Strategien — [Mediation-und-Kommunikative-Strategien](../02_Englisch/Texte-Analyse/Mediation-und-Kommunikative-Strategien.md)（Teil B跨文化调解准则/体裁格式契合/文化概念释义）
 - Klett Bridge→IQB Themenfelder映射 — [Klett-Themenfelder-Mapping](../02_Englisch/Texte-Analyse/Klett-Themenfelder-Mapping.md)（5单元23媒体→Bereich1/2/5/7，混淆ID工作假设待目录页核对）
 - Teil B Doppelpack — [Klausur-Teil-B-Doppelpack](../02_Englisch/Texte-Analyse/Klausur-Teil-B-Doppelpack.md)（Hörverstehen四题型+Mediation三段式，待老师定考轨）
 - Mediation范文两套 — [Mediation-Mustertexte](../02_Englisch/Texte-Analyse/Mediation-Mustertexte.md)（FSJ正式信+Detox论坛帖+双register Connectors）

@@ -395,7 +395,7 @@ stufe: "EF|Q1|Q2"
 | [Deutsch-Abitur-Aufgabenarten](../../../01_Deutsch/Texte-Analyse/Deutsch-Abitur-Aufgabenarten.md) | Texte-Analyse/ | **跨 IF（元层）** | — | **I–IV 全景 + AFB 规划** |
 | [Deutsch-IQB-Training](../../../01_Deutsch/Klausur-Training/Deutsch-IQB-Training.md) | Klausur-Training/ | **跨 IF（元层）** | IF2 | **IIa + IIIa/IVb（轻量版）** |
 | [Sachtextanalyse-Argumentation](../../../01_Deutsch/Texte-Analyse/Sachtextanalyse-Argumentation.md) | Texte-Analyse/ | **IF2**（pragmatische Texte） | **IF3**（Leserlenkung） | **IIa + IIIa** |
-| [Sachtextanalyse-Leserlenkung-und-Rhetorik](../../../01_Deutsch/Sachtextanalyse-Leserlenkung-und-Rhetorik.md) | 01_Deutsch/ 根目录 | **IF3**（Leserlenkung / Rhetorik） | **IF2**（Argumentationsgang） | **IIa + IIIa** |
+| [Sachtextanalyse-Leserlenkung-und-Rhetorik](../../../01_Deutsch/Texte-Analyse/Sachtextanalyse-Leserlenkung-und-Rhetorik.md) | 01_Deutsch/ 根目录 | **IF3**（Leserlenkung / Rhetorik） | **IF2**（Argumentationsgang） | **IIa + IIIa** |
 
 ### 6.2 按 IF 聚合的覆盖度
 
