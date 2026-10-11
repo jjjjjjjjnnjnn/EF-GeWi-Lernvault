@@ -3142,6 +3142,224 @@ const DOMAIN_KNOWLEDGE_ENTRIES: DomainKnowledgeEntry[] = [
       ]
     }
   },
+
+  // 19. Sonatenhauptsatzform: Exposition, Durchfuehrung, Reprise (Musik)
+  {
+    id: "sonatenhauptsatzform-exposition-durchfuehrung-reprise",
+    canonicalTitle: "Sonatenhauptsatzform: Exposition, Durchfuehrung, Reprise",
+    fach: "Musik",
+    matchKeywords: [
+      "sonatenhauptsatzform",
+      "exposition",
+      "durchfuehrung",
+      "reprise",
+      "haupttonart",
+      "dominanttonart",
+      "themen-dualismus",
+      "abspaltung",
+      "sequenz",
+      "modulation",
+      "wiener klassik",
+      "coda"
+    ],
+    data: {
+      topicTitle: "Sonatenhauptsatzform: Exposition, Durchfuehrung, Reprise",
+      fach: "Musik",
+      intuitionDilemma: {
+        scenarioDE: "Konzertsaal: Ein schneller Kopfsatz. Anfangs zwei gegensaetzliche Gedanken, in der Mitte nur Fetzen und Unruhe, am Ende beide Gedanken voellig ruhig vereint.",
+        scenarioZH: "音乐厅：一首快板乐章。开头两个对立乐思，中段只剩碎片与不安，结尾两个乐思平静地汇合。",
+        questionDE: "Hoerausschnitt: Zwei kontrastierende Themen am Anfang, fragmentarischer Mittelteil mit vielen Tonartwechseln, dann beide Themen in gleicher Tonlage. Welcher Deutung stimmen Sie zu?",
+        questionZH: "听例：开头两个对比主题，中段碎片化并频繁转调，结尾两个主题出现在同一调上。你赞同哪种判断？",
+        choiceA: {
+          id: "A",
+          textDE: "Der dritte Abschnitt ist eine woertliche Wiederholung des Anfangs zur Beruhigung.",
+          textZH: "第三段是开头的原样重复，起安抚收尾作用。",
+          reactionDE: "Nachvollziehbar aus Alltagserfahrung: Der dritte Abschnitt klingt bekannt und ruhig, also wirkt er wie eine blosse Wiederholung des Anfangs.",
+          reactionZH: "从日常经验看可以理解：第三段听着熟悉又平静，像是单纯重复开头。"
+        },
+        choiceB: {
+          id: "B",
+          textDE: "Der dritte Abschnitt holt beide Themen in die Haupttonart zurueck und loest damit die Spannung des Tonartgegensatzes.",
+          textZH: "第三段把两个主题都收回主调，从而解决调性对立的 tension。",
+          reactionDE: "Analytisch tragfaehig: Gleiche Themen in neuer Tonartlage veraendern die harmonische Funktion grundlegend.",
+          reactionZH: "分析上成立：相同主题出现在新的调性位置，和声功能已根本改变。"
+        },
+        mechanismTakeawayDE: "Die Reprise ist kein woertliches Wiederholen, sondern ein harmonischer Ausgleich: Beide Themen kehren in die Haupttonart zurueck und loesen die Expositions-Spannung auf.",
+        mechanismTakeawayZH: "再现不是原样重复而是和声层面的解决：两个主题都回到主调，消解呈示部建立的调性对立。",
+        klpCoreLogicDE: "NRW KLP Musik IF Form: Sonatenhauptsatzform wird ueber Themen-Dualismus und Tonartplan Hd->Dd->Hd bestimmt und mit Ausdruckswirkung (IF1) sowie Wiener Klassik (IF2) verknuepft.",
+        klpCoreLogicZH: "NRW音乐考纲IF曲式：奏鸣曲式由主题二元对立与调性布局Hd->Dd->Hd判定，并关联表现意图IF1与维也纳古典IF2。"
+      },
+      mentalModelAnalogy: {
+        analogyTitle: "Heimkehr statt Wiederholung: Die Reprise als harmonische Versoehnung",
+        explanationDE: "Die Reprise ist kein woertliches Wiederholen, sondern ein harmonischer Ausgleich: Beide Themen kehren in die Haupttonart zurueck und loesen die Expositions-Spannung auf.",
+        explanationZH: "再现不是原样重复而是和声层面的解决：两个主题都回到主调，消解呈示部建立的调性对立。"
+      },
+      konzeptPuzzle: {
+        instructionDE: "Ordne jedem Formteil sein hoerbares Kernmerkmal (Themenzahl plus Tonartplan) und die Klausur-Konsequenz zu:",
+        instructionZH: "将每个曲式段落与其可听核心特征（主题数加调性布局）及考场结论配对：",
+        pairs: [
+          {
+            id: "pair-1",
+            premiseDE: "Exposition: Zwei kontrastierende Themen in zwei Tonarten (Hd->Dd)",
+            premiseZH: "呈示：两个对比主题分处两调（主调->属调）",
+            realityDE: "Nur ein Thema oder beide Themen in gleicher Tonart",
+            realityZH: "只有一个主题，或两主题同处一调",
+            consequenceDE: "Klausur: Ohne Fremdtonart beim zweiten Thema keine Exposition, sondern Liedform-Anfang.",
+            consequenceZH: "考场结论：第二主题若无对立调，就不是呈示而只是歌谣式开头。"
+          },
+          {
+            id: "pair-2",
+            premiseDE: "Durchfuehrung: Zerlegung in Fragmente (Abspaltung, Sequenz) mit Modulation",
+            premiseZH: "展开：拆成碎片（分裂、模进）并转调",
+            realityDE: "Freies Fantasieren ohne motivischen Bezug und ohne Ziel",
+            realityZH: "无动机关联、无目标的自由幻想",
+            consequenceDE: "Klausur: Fragmente plus Tonartwechsel bedeuten Durchfuehrung mit Zielrichtung Reprise.",
+            consequenceZH: "考场结论：碎片加转调即展开，方向指向再现。"
+          },
+          {
+            id: "pair-3",
+            premiseDE: "Reprise: Rueckholung beider Themen in die Haupttonart als Ausgleich",
+            premiseZH: "再现：两主题收回主调，实现和解",
+            realityDE: "Woertliche Wiederholung mit Kontrast der Tonarten wie in der Exposition",
+            realityZH: "像呈示那样原样重复并保留调对比",
+            consequenceDE: "Klausur: Gleiche Tonlage beider Themen loest die Expositions-Spannung auf.",
+            consequenceZH: "考场结论：两主题同调即消解呈示 tension，是再现铁证。"
+          },
+          {
+            id: "pair-4",
+            premiseDE: "Wiener Klassik: Formklarheit plus motivische Oekonomie (Haydn/Mozart/Beethoven)",
+            premiseZH: "维也纳古典：曲式清晰加动机经济（海顿/莫扎特/贝多芬）",
+            realityDE: "Durchkomponierte Klangflaeche ohne Formteile und ohne Motivkerne",
+            realityZH: "无段落、无动机核心的通作音响面",
+            consequenceDE: "Klausur: Hoerbare Form plus Motivarbeit stuetzt die Epochenzuordnung IF2.",
+            consequenceZH: "考场结论：可听的曲式加动机加工支撑IF2时代归属。"
+          }
+        ]
+      },
+      examTrapCorrection: {
+        studentAnswerDE: "Das Stueck hat drei Teile: leise, laut, wieder leise. Also ist es eine Sonatenhauptsatzform: Exposition, Durchfuehrung und Reprise.",
+        studentAnswerZH: "“这首曲子分三段：轻、响、再轻。所以是奏鸣曲式：呈示、展开、再现。”",
+        fatalFlawPointDE: "Verwechslung von aeusserer Dreiteiligkeit mit Sonatenhauptsatzform; keine Pruefung von Themenzahl und Tonartrueckkehr.",
+        fatalFlawPointZH: "把外在三段误认为奏鸣曲式；未检验主题数量与调性回归。",
+        examinerVerdictDE: "0 / 15 NP. Der Pruefling beschreibt nur Dreiteiligkeit und Klangsteigerung, benennt aber weder Themen-Dualismus noch Tonartplan Hd->Dd->Hd. Nach KLP Musik IF Form fehlt damit die analytische Kernleistung.",
+        examinerVerdictZH: "0/15分。考生只描述了三段外形和音响增强，未说出主题二元对立与调性布局Hd->Dd->Hd，缺失KLP音乐IF曲式维度的分析核心。",
+        diagnosticOptions: [
+          {
+            id: "diag-correct",
+            textDE: "Der Ausschnitt folgt der Liedform ABA, weil thematischer Kontrast ohne systematischen Tonartplan Hd->Dd->Hd vorliegt.",
+            textZH: "该片段属于三段歌谣式ABA，因为只有主题对比而无系统的从主调到属调再回主调的调性布局。",
+            isCorrect: true,
+            explanationDE: "Der Fehler liegt in der Gleichsetzung von thematischem Dualismus plus Tonartplan mit jeder Dreiteiligkeit: Ohne Hd->Dd->Hd gibt es keine Sonatenhauptsatzform.",
+            explanationZH: "诊断准确：把任何三段都当奏鸣曲式，忽略了主题二元对立加调性布局才是判定标准。"
+          },
+          {
+            id: "diag-distractor-1",
+            textDE: "Der Mittelteil ist eine zweite Exposition, weil er lauter und dichter klingt und deshalb neue Themen vorstellen muss.",
+            textZH: "中段因为更响更密所以必定是第二个呈示部，在介绍新主题。",
+            isCorrect: false,
+            explanationDE: "Die Durchfuehrung ist keine freie Fantasie, sondern motivische Arbeit mit Zielrichtung Reprise; Coda bestaetigt nur die Haupttonart.",
+            explanationZH: "展开部不是自由幻想而是有目标的动机加工，Coda只是主调确认而非第二次展开。"
+          },
+          {
+            id: "diag-distractor-2",
+            textDE: "Der Schlussteil ist eine zweite Durchfuehrung, weil er noch einmal laut und beschleunigend wirkt.",
+            textZH: "结尾段因为再次响亮加速，所以是第二次展开部。",
+            isCorrect: false,
+            explanationDE: "Eine Coda moduliert nicht mehr weg, sondern bestaetigt die Haupttonart; jede weitere Modulation spraeche eher fuer eine fortgesetzte Durchfuehrung.",
+            explanationZH: "尾声不再离调转调，只在主调上确认；若继续转调则更可能是展开延续。"
+          }
+        ]
+      },
+      klpTermini: [
+        {
+          termDE: "Exposition",
+          definitionDE: "Gegenueberstellung zweier kontrastierender Themen in Haupttonart und Dominanttonart (Hd zu Dd); ohne Fremdtonart keine Exposition.",
+          termZH: "呈示部",
+          definitionZH: "两个对比主题分处主调与属调；第二主题若无对立调，就不是呈示。"
+        },
+        {
+          termDE: "Durchfuehrung",
+          definitionDE: "Motivische Arbeit: Abspaltung und Sequenz mit Modulation; Fragmente plus Tonartwechsel mit Zielrichtung Reprise, keine freie Fantasie.",
+          termZH: "展开部",
+          definitionZH: "动机加工：分裂与模进加转调；碎片加转调指向再现，绝非自由幻想。"
+        },
+        {
+          termDE: "Reprise",
+          definitionDE: "Rueckholung beider Themen in die Haupttonart als harmonischer Ausgleich; gleiche Tonlage loest die Expositions-Spannung auf.",
+          termZH: "再现部",
+          definitionZH: "两主题收回主调，实现和声层面的和解；同调即消解呈示的对立。"
+        },
+        {
+          termDE: "Themen-Dualismus",
+          definitionDE: "Zwei kontrastierende Themen als Formkern; nur ein Thema oder gleiche Tonart spricht gegen Sonatenhauptsatzform.",
+          termZH: "主题二元对立",
+          definitionZH: "两个对比主题是曲式核心；只有一个主题或两主题同调即否定奏鸣曲式。"
+        },
+        {
+          termDE: "Modulation",
+          definitionDE: "Tonartwechsel als Richtungsgeber: Exposition weg von Hd, Durchfuehrung unterwegs, Reprise zurueck nach Hd; Coda bestaetigt nur Hd.",
+          termZH: "转调",
+          definitionZH: "调性移动即方向标：呈示离开主调，展开在途中，再现回到主调；尾声只确认主调。"
+        },
+        {
+          termDE: "Wiener Klassik",
+          definitionDE: "Epochenklammer Haydn/Mozart/Beethoven: Formklarheit plus motivische Oekonomie als Zuordnungskriterium (IF2) neben Ausdruckswirkung (IF1).",
+          termZH: "维也纳古典",
+          definitionZH: "海顿/莫扎特/贝多芬时代框架：曲式清晰加动机经济是IF2归属判据，表现意图属IF1。"
+        }
+      ],
+      fehlerquellen: [
+        {
+          trapTitleDE: "Dreiteiligkeit gleich Sonatenform",
+          trapDescriptionDE: "Leise-laut-leise wird mit Exposition-Durchfuehrung-Reprise gleichgesetzt, ohne Themen-Dualismus und ohne Tonartplan Hd zu Dd zu Hd zu pruefen.",
+          trapDescriptionZH: "把轻响再轻的外在三段直接等同于呈示展开再现，不检验主题数与调性布局。",
+          howToAvoidDE: "Stets Themenzahl und Tonartrueckkehr pruefen: Ohne Hd zu Dd zu Hd keine Sonatenhauptsatzform, sondern Liedform-Anfang."
+        },
+        {
+          trapTitleDE: "Durchfuehrung als Fantasie",
+          trapDescriptionDE: "Der Mittelteil wird als freie Fantasie ohne motivischen Bezug gelesen, obwohl Abspaltung und Sequenz mit Zielrichtung Reprise vorliegen.",
+          trapDescriptionZH: "把展开部当成无动机关联的自由幻想，无视其指向再现的严格动机逻辑。",
+          howToAvoidDE: "Fragmente plus Tonartwechsel bedeuten Durchfuehrung mit Zielrichtung Reprise; Coda bestaetigt nur die Haupttonart."
+        },
+        {
+          trapTitleDE: "Reprise als Wiederholung",
+          trapDescriptionDE: "Der Schlussteil wird als woertliche Wiederholung des Anfangs gehoert, obwohl die gleiche Tonlage beider Themen die harmonische Funktion grundlegend veraendert.",
+          trapDescriptionZH: "把再现听成开头的原样重复，无视同调带来的和声功能根本改变。",
+          howToAvoidDE: "Gleiche Tonlage beider Themen als Ausgleich hoeren: Die Expositions-Spannung wird aufgeloest, nicht wiederholt."
+        }
+      ],
+      klausurSatz15NP: {
+        musterSatzDE: "Zwar stellt die Exposition zwei kontrastierende Themen in Haupttonart und Dominanttonart gegenueber, dennoch loest erst die Reprise diese Spannung auf, weil sie beide Themen in die Haupttonart zurueckholt; ich hoere in der Durchfuehrung Abspaltung und Sequenz mit Modulation, das wirkt treibend, weil die Fragmente die Rueckkehr vorbereiten, und ich ordne das Beispiel der Wiener Klassik zu, weil Formklarheit und motivische Oekonomie hoerbar sind.",
+        operator: "analysieren",
+        scoringKeywords: [
+          "Exposition",
+          "Durchfuehrung",
+          "Reprise",
+          "Haupttonart",
+          "Dominanttonart",
+          "Themen-Dualismus",
+          "Abspaltung",
+          "Sequenz",
+          "Modulation",
+          "Wiener Klassik",
+          "Ausdruckswirkung"
+        ],
+        explanationZH: "口试论述先报听辨判据（主题数加调布局），再讲展开的动机加工与转调逻辑，最后落到调性回家的表现含义与维也纳古典归属；评分抓四个维度：Fachwissen术语准、Darstellung结构连贯、Gespraech追问能分层、Sprache句式完整。"
+      },
+      socraticProbes: [
+        {
+          questionDE: "Ist der dritte Abschnitt eine woertliche Wiederholung des Anfangs?",
+          questionZH: "第三段是开头的原样重复吗？",
+          counterPerspectiveDE: "Gleiche Themen in neuer Tonartlage veraendern die harmonische Funktion grundlegend; die Reprise loest die Spannung auf, statt sie zu wiederholen."
+        },
+        {
+          questionDE: "Genuegt die Dreiteiligkeit leise-laut-leise fuer die Diagnose Sonatenhauptsatzform?",
+          questionZH: "仅凭轻响再轻的三段外形就能判定奏鸣曲式吗？",
+          counterPerspectiveDE: "Sonatenhauptsatzform misst man an Themenzahl und Tonartplan, nicht an Lautstaerke oder Dreiteiligkeit allein."
+        }
+      ]
+    }
+  },
 ];
 
 // ---------------------------------------------------------------------------

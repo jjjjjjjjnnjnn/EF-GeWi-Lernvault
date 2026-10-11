@@ -270,6 +270,18 @@ describe("Concept Distillation Engine: conceptDistiller", () => {
     expect(res.klausurSatz15NP.scoringKeywords).toContain("Plasmolyse");
   });
 
+  it("distills Sonatenhauptsatzform benchmark (Musik)", () => {
+    const res = distillConcept("Sonatenhauptsatzform: Exposition, Durchfuehrung, Reprise", "Musik");
+    validateDistilledConcept(res);
+    expect(res.fach).toBe("Musik");
+    expect(res.intuitionDilemma?.scenarioZH).toContain("快板乐章");
+    expect(res.konzeptPuzzle?.pairs.length).toBe(4);
+    expect(res.examTrapCorrection?.diagnosticOptions?.length).toBe(3);
+    expect(res.klausurSatz15NP.operator).toBe("analysieren");
+    expect(res.klausurSatz15NP.scoringKeywords).toContain("Themen-Dualismus");
+    expect(res.klausurSatz15NP.scoringKeywords).toContain("Wiener Klassik");
+  });
+
   it("handles arbitrary topics gracefully via heuristic subject archetypes", () => {
     const arbitrarySoWi = distillConcept("Europaeische Zentralbank und Leitzinssenkung", "SoWi");
     validateDistilledConcept(arbitrarySoWi);
