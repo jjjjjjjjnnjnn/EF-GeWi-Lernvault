@@ -43,10 +43,13 @@ describe("QuestMapTab Component", () => {
       />
     );
 
-    // Scholarly HUD
+    // Scholarly HUD — 真实 store 口径（伪造 fallback 已删：Streak/XP 取真值，空 store 即 0；用 textContent 断言防 DOM 文本节点切分）
     expect(screen.getByText("Quest-Landkarte")).toBeDefined();
-    expect(screen.getByText("Streak: 5 Tage")).toBeDefined();
-    expect(screen.getByText(/480 XP/)).toBeDefined();
+    expect(screen.getByText(/Streak:/).textContent).toBe("Streak: 0 Tage");
+    // HUD XP 精确值断言（/0 XP/ 会误命中 120 XP 等子串，用 textContent 全等定位 HUD 那一项）
+    expect(
+      screen.getAllByText(/0 XP/).some((el) => el.textContent === "0 XP")
+    ).toBe(true);
     expect(screen.getByText(/~12 min \/ Tag/)).toBeDefined();
 
     // Hero Banner & Course Title
