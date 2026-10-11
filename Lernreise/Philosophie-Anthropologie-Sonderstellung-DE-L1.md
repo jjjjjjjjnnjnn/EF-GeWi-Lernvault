@@ -13,7 +13,7 @@ version: Enterprise-v5
 
 # Lernreise: Die Sonderstellung des Menschen bei Gehlen und Plessner (L1, Ziel Klausur)
 
-<!-- Lesson-v3: 8 Schritte plus Anekdote und Fehlvorstellung; Fehlvorstellung zwischen Schritt 6 und 7 (Parser-Skip); interaktives [Werkzeug: <id>]; Gating: check/szenario nicht bestanden = Weiter gesperrt; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+<!-- Lesson-v3: 8 Schritte plus Anekdote und Fehlvorstellung; Fehlvorstellung zwischen Schritt 6 und 7 (Parser-Skip); interaktives [Werkzeug: ethik-waage]; Gating: check/szenario nicht bestanden = Weiter gesperrt; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
 ## Schritt 1 — entdecken: Klage der Zirkusaffen: Wer darf sich Mensch nennen
 
@@ -100,7 +100,7 @@ Bezug zum Konzept: `Die Anekdote veranschaulicht Gehlens Maengelwesen in lebendi
 
 BEISPIEL (geleitete Aufgabe mit Werkzeug):
 
-[Werkzeug: balance-board]
+[Werkzeug: ethik-waage]
 
 Primaertext (vereinfachte deutsche Fassung nach Gehlen und Plessner, 100 bis 200 Woerter):
 
@@ -120,7 +120,7 @@ Primaertext (vereinfachte deutsche Fassung nach Gehlen und Plessner, 100 bis 200
 > (Z.14) Ausgleich durch Institutionen macht ihn lebensfaehig.
 > (Z.15) Freiheit durch Reflexion macht ihn verantwortlich.
 
-AUFGABE Waage-Raetsel (AFB II): Lege Gehlen gegen Plessner auf [Werkzeug: balance-board]. Markiere mit GELB alle Textstellen zu Mangel und Ausgleich (Z.1 bis Z.9) und mit BLAU alle Stellen zu Selbstdistanz und Freiheit (Z.10 bis Z.15). Gewichte Mangel, Handeln und Institutionen gegen Selbstdistanz, Reflexion und Freiheit je 1 bis 5. Target: Beide Seiten mindestens mit Gewicht 8 belegen und an Erklaerungskraft deuten, dann Klausur-Satz formulieren.
+AUFGABE Waage-Raetsel (AFB II): Lege Gehlen gegen Plessner auf [Werkzeug: ethik-waage]. Markiere mit GELB alle Textstellen zu Mangel und Ausgleich (Z.1 bis Z.9) und mit BLAU alle Stellen zu Selbstdistanz und Freiheit (Z.10 bis Z.15). Gewichte Mangel, Handeln und Institutionen gegen Selbstdistanz, Reflexion und Freiheit je 1 bis 5. Target: Beide Seiten mindestens mit Gewicht 8 belegen und an Erklaerungskraft deuten, dann Klausur-Satz formulieren.
 
 HILFE:
 - Erster Zugang: Ordne das Fallmaterial mit Maengelwesen aus Schritt 2, ohne schon zu werten.

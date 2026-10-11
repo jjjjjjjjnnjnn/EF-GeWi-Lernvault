@@ -107,7 +107,7 @@ $$\text{Differenzprinzip: } \text{Ungleichheit } U \text{ ist legitim} \iff \max
 **Bezug zum Konzept**: `Gerechtigkeit ist die erste Tugend sozialer Institutionen, so wie Wahrheit die erste Tugend von Gedankensystemen ist.`
 
 ## Schritt 4 — ausprobieren: Sandbox-Auftrag Der Steuersatz-Konflikt
-Kontinuitaet: Vorher Philo-Bioethik-Hans-Jonas-Verantwortung-L1.md | Nachher Philo-Kants-Wuerde-vs-Preis-L1.md. Krise dieser Episode: Gerechte Verteilung in einer ungleichen Gesellschaft. Zielgroessen: John Rawls, Schleier des Nichtwissens, Differenzprinzip, Maximin-Regel, Urzustand
+Kontinuitaet: Vorher Philosophie-Bioethik-Hans-Jonas-Verantwortung-L1.md | Nachher Philosophie-Kants-Wuerde-vs-Preis-L1.md. Krise dieser Episode: Gerechte Verteilung in einer ungleichen Gesellschaft. Zielgroessen: John Rawls, Schleier des Nichtwissens, Differenzprinzip, Maximin-Regel, Urzustand
 
 BEISPIEL（正确例题示范，含教具操作与解答）：
 
@@ -192,4 +192,4 @@ REFLEXION:
 Du hast das Fundament der modernen politischen Philosophie und Verteilungsgerechtigkeit erobert. Du beherrschst den Schleier des Nichtwissens und kannst sozialpolitische Debatten nun praezise zwischen Fairness, Umverteilung und Eigentumsrechten einordnen.
 
 <!-- reflexion: philosophie-rawls-gerechtigkeit -->
-In der naechsten Episode untersuchen wir, was der Mensch ueberhaupt wert ist: Hat er einen Preis oder eine unverkaeufliche Wuerde? Weiter geht es mit [Philo-Kants-Wuerde-vs-Preis-L1](Philo-Kants-Wuerde-vs-Preis-L1.md).
+In der naechsten Episode untersuchen wir, was der Mensch ueberhaupt wert ist: Hat er einen Preis oder eine unverkaeufliche Wuerde? Weiter geht es mit [Philosophie-Kants-Wuerde-vs-Preis-L1](Philosophie-Kants-Wuerde-vs-Preis-L1.md).

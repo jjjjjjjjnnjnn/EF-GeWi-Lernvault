@@ -102,7 +102,7 @@ $$\text{Modus Tollens: } (H \implies E) \wedge \neg E \implies \neg H \quad (\te
 **Bezug zum Konzept**: `Wahre Wissenschaftler suchen nicht nach Bestaetigung, sondern wagen riskante Prognosen, die scheitern koennen.`
 
 ## Schritt 4 — ausprobieren: Sandbox-Auftrag Der Horoskop-Test
-Kontinuitaet: Vorher Philo-Tierschutz-Peter-Singer-Praeferenzutilitarismus-L1.md | Nachher Philo-Erkenntnistheorie-Rationalismus-vs-Empirismus-L1.md. Krise: Der schwarze Schwan stoppt die Induktion. Zielgroessen: Karl Popper, Falsifikationismus, Abgrenzungskriterium, Induktionsproblem, Vorlaeufigkeit
+Kontinuitaet: Vorher Philosophie-Tierschutz-Peter-Singer-Praeferenzutilitarismus-L1.md | Nachher Philosophie-Erkenntnistheorie-Rationalismus-vs-Empirismus-L1.md. Krise: Der schwarze Schwan stoppt die Induktion. Zielgroessen: Karl Popper, Falsifikationismus, Abgrenzungskriterium, Induktionsproblem, Vorlaeufigkeit
 
 BEISPIEL（正确例题示范，含教具操作与解答）：
 

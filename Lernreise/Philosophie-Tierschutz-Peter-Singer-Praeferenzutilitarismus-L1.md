@@ -105,7 +105,7 @@ $$\text{Moralischer Status: } S(x) > 0 \iff x \text{ ist leidensfaehig (Sentienc
 **Bezug zum Konzept**: `Philosophische Ethik ist keine akademische Theorie, sondern verlangt konsequente Praxis im Alltag.`
 
 ## Schritt 4 — ausprobieren: Sandbox-Auftrag Das Kosmetik-Tierversuchs-Kalkuel
-Kontinuitaet: Vorher Philo-Existentialismus-Sartre-Freiheit-L1.md | Nachher Philo-Wissenschaftstheorie-Popper-Falsifikation-L1.md. Krise dieser Episode: Die Ausbeutung fuehlender Lebewesen. Zielgroessen: Peter Singer, Speziesismus, Praeferenzutilitarismus, Leidensfaehigkeit, Personenbegriff
+Kontinuitaet: Vorher Philosophie-Existentialismus-Sartre-Freiheit-L1.md | Nachher Philosophie-Wissenschaftstheorie-Popper-Falsifikation-L1.md. Krise dieser Episode: Die Ausbeutung fuehlender Lebewesen. Zielgroessen: Peter Singer, Speziesismus, Praeferenzutilitarismus, Leidensfaehigkeit, Personenbegriff
 
 BEISPIEL（正确例题示范，含教具操作与解答）：
 
@@ -186,4 +186,4 @@ REFLEXION:
 Du hast eine der einflussreichsten ethischen Kontroversen der Gegenwart verinnerlicht. Du kannst Tierschutzdebatten, Utilitarismus und Kants Anthropozentrik nun pointiert kontrastieren und ethische Dilemmata scharf nach dem Leidkriterium beurteilen.
 
 <!-- reflexion: philosophie-peter-singer -->
-In der naechsten Episode wenden wir uns der Logik der Wissenschaft selbst zu: Wann ist eine Theorie wahrhaft wissenschaftlich? Weiter geht es mit [Philo-Wissenschaftstheorie-Popper-Falsifikation-L1](Philo-Wissenschaftstheorie-Popper-Falsifikation-L1.md).
+In der naechsten Episode wenden wir uns der Logik der Wissenschaft selbst zu: Wann ist eine Theorie wahrhaft wissenschaftlich? Weiter geht es mit [Philosophie-Wissenschaftstheorie-Popper-Falsifikation-L1](Philosophie-Wissenschaftstheorie-Popper-Falsifikation-L1.md).

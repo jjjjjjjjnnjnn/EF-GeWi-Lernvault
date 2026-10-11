@@ -13,7 +13,7 @@ version: Enterprise-v5
 
 # Lernreise: Utilitarismus vs Kant (L2 Pilot, Lesson v3, Ziel Klausur)
 
-<!-- Lesson-v3-pilot: 8 Schritte plus Anekdote und Fehlvorstellung; Fehlvorstellung zwischen Schritt 6 und 7 (Parser-Skip); interaktives [Werkzeug: <id>]; Gating: check/szenario nicht bestanden = Weiter gesperrt; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+<!-- Lesson-v3-pilot: 8 Schritte plus Anekdote und Fehlvorstellung; Fehlvorstellung zwischen Schritt 6 und 7 (Parser-Skip); interaktives [Werkzeug: ethik-waage]; Gating: check/szenario nicht bestanden = Weiter gesperrt; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
 ## Schritt 1 — entdecken: Nachtzug-Prozess: Weichensteller zwischen fünf und einem
 
@@ -100,7 +100,7 @@ Bezug zum Konzept: `Die Anekdote zeigt die L2-Schaerfung: Vom blossen Rechnen zu
 
 BEISPIEL (geleitete Aufgabe mit Werkzeug):
 
-[Werkzeug: balance-board]
+[Werkzeug: ethik-waage]
 
 Primaertext (vereinfachte deutsche Fassung nach Mill und Kant, L2, 100 bis 200 Woerter):
 
@@ -120,7 +120,7 @@ Primaertext (vereinfachte deutsche Fassung nach Mill und Kant, L2, 100 bis 200 W
 > (Z.14) Verantwortung zaehlt Folgen und prueft Maximen zugleich.
 > (Z.15) Stelle nur, was du als Regel wollen und verantworten kannst.
 
-AUFGABE Waage-Raetsel (AFB II, L2): Lege Stellen gegen Nichtstellen auf [Werkzeug: balance-board]. Markiere mit GELB alle Stellen zur Aktbilanz (Z.1 bis Z.3) und mit BLAU alle Stellen zu Regel und Wuerde (Z.4 bis Z.14). Target: Aktbilanz, Regelblick und Maximenprobe je 1 bis 5 wichten und per Verantwortung entscheiden.
+AUFGABE Waage-Raetsel (AFB II, L2): Lege Stellen gegen Nichtstellen auf [Werkzeug: ethik-waage]. Markiere mit GELB alle Stellen zur Aktbilanz (Z.1 bis Z.3) und mit BLAU alle Stellen zu Regel und Wuerde (Z.4 bis Z.14). Target: Aktbilanz, Regelblick und Maximenprobe je 1 bis 5 wichten und per Verantwortung entscheiden.
 
 HILFE:
 - Erster Zugang: Ordne das Fallmaterial mit Aktutilitarismus aus Schritt 2, ohne schon zu werten.

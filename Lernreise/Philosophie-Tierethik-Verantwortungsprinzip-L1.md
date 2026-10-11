@@ -13,7 +13,7 @@ version: Enterprise-v5
 
 # Lernreise: Tierethik und Verantwortungsprinzip (L1, Ziel Klausur)
 
-<!-- Lesson v3: Schritt 1-8 feste Struktur; Fehlvorstellung zwischen Schritt 6 und 7 (Parser skip); [Werkzeug: <id>] interaktiv; Gating: check/szenario nicht bestanden = Weiter grau; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+<!-- Lesson v3: Schritt 1-8 feste Struktur; Fehlvorstellung zwischen Schritt 6 und 7 (Parser skip); [Werkzeug: ethik-waage] interaktiv; Gating: check/szenario nicht bestanden = Weiter grau; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
 ## Schritt 1 — entdecken: Labor-Prozess: Maus gegen Medikament im Naechtedienst
 
@@ -81,7 +81,7 @@ Klausur-Satz: `Singer begruendet gleiche Ruecksicht aus gleichem Leid, Jonas beg
 
 ## Schritt 4 — ausprobieren: Waage des Labors: Heilung gegen Leid halb singerisch halb jonasisch
 
-[Werkzeug: balance-board]
+[Werkzeug: ethik-waage]
 
 BEISPIEL（正确例题示范）：
 

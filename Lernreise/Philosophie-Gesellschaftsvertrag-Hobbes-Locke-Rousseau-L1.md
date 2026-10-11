@@ -13,7 +13,7 @@ version: Enterprise-v5
 
 # Lernreise: Gesellschaftsvertrag bei Hobbes Locke und Rousseau (L1, Ziel Klausur)
 
-<!-- Lesson v3 architecture: Schritte 1-8 fixed; Fehlvorstellung between Schritt 6 and 7 (parser skipped); embedded [Werkzeug: <id>]; gating: check/szenario failed = Weiter greyed; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+<!-- Lesson v3 architecture: Schritte 1-8 fixed; Fehlvorstellung between Schritt 6 and 7 (parser skipped); embedded [Werkzeug: ethik-waage]; gating: check/szenario failed = Weiter greyed; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
 ## Schritt 1 — entdecken: Blackout-Prozess: Wer darf im Notstand befehlen
 
@@ -80,7 +80,7 @@ Klausur-Satz: `Derselbe Vertragsgedanke legitimiert absolute, liberale und demok
 
 BEISPIEL (vollstaendige Musterloesung mit Waage):
 
-[Werkzeug: balance-board]
+[Werkzeug: ethik-waage]
 
 Primaertext (vereinfachte deutsche Fassung nach Hobbes und Locke, 100 bis 200 Woerter):
 

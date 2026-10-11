@@ -100,7 +100,7 @@ $$\text{Sartres Axiom: } \text{Existenz} \xrightarrow{\text{Freie Taten (Entwurf
 **Bezug zum Konzept**: `Authentische Existenz verlangt den Mut, Konventionen zu verwerfen und die eigene Lebensform radikal selbst zu waehlen.`
 
 ## Schritt 4 — ausprobieren: Sandbox-Auftrag Der Kellner im Cafe
-Kontinuitaet: Vorher Philo-Kants-Wuerde-vs-Preis-L1.md | Nachher Philo-Tierschutz-Peter-Singer-Praeferenzutilitarismus-L1.md. Krise dieser Episode: Die Last der totalen Verantwortung. Zielgroessen: Jean-Paul Sartre, Existenz vor Essenz, Verdammt zur Freiheit, Mauvaise foi, Entwurf
+Kontinuitaet: Vorher Philosophie-Kants-Wuerde-vs-Preis-L1.md | Nachher Philosophie-Tierschutz-Peter-Singer-Praeferenzutilitarismus-L1.md. Krise dieser Episode: Die Last der totalen Verantwortung. Zielgroessen: Jean-Paul Sartre, Existenz vor Essenz, Verdammt zur Freiheit, Mauvaise foi, Entwurf
 
 BEISPIEL（正确例题示范，含教具操作与解答）：
 
@@ -180,4 +180,4 @@ REFLEXION:
 Du hast eine der provokantesten Philosophien der Moderne gemeistert. Du hast verstanden, warum Freiheit Verantwortung bedeutet und wie der Existentialismus jeden Versuch entlarvt, sich hinter faulen Ausreden zu verstecken.
 
 <!-- reflexion: philosophie-existentialismus-sartre -->
-In der naechsten Episode erweitern wir den Kreis der moralischen Ruecksichtnahme ueber den Menschen hinaus: Haben auch Tiere Rechte? Weiter geht es mit [Philo-Tierschutz-Peter-Singer-Praeferenzutilitarismus-L1](Philo-Tierschutz-Peter-Singer-Praeferenzutilitarismus-L1.md).
+In der naechsten Episode erweitern wir den Kreis der moralischen Ruecksichtnahme ueber den Menschen hinaus: Haben auch Tiere Rechte? Weiter geht es mit [Philosophie-Tierschutz-Peter-Singer-Praeferenzutilitarismus-L1](Philosophie-Tierschutz-Peter-Singer-Praeferenzutilitarismus-L1.md).

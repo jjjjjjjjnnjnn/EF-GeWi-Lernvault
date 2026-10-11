@@ -13,7 +13,7 @@ version: Enterprise-v5
 
 # Lernreise: Tierethik und Verantwortungsprinzip (L1, Ziel Klausur)
 
-<!-- Lesson v3 9步制架构：Schritt 1至8固定结构；Fehlvorstellung 夹在 Schritt 6 与 7 之间（Parser 自动跳过，不占步数）；支持内嵌 [Werkzeug: <id>] 交互教具；Gating: check/szenario 未过 = Weiter 置灰；XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+<!-- Lesson v3 9步制架构：Schritt 1至8固定结构；Fehlvorstellung 夹在 Schritt 6 与 7 之间（Parser 自动跳过，不占步数）；支持内嵌 [Werkzeug: ethik-waage] 交互教具；Gating: check/szenario 未过 = Weiter 置灰；XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
 ## Schritt 1 — entdecken: Schweinefabrik vor Gericht: Schnitzel gegen Grundrecht auf Leidfreiheit
 
@@ -104,7 +104,7 @@ Klausur-Satz: `Drei Klagen tragen gemeinsam: Leid verlangt Minderung, Subjekt ve
 
 ## Schritt 4 — ausprobieren: Waage der Schweinefabrik: Schnitzelpreis gegen Leidenszeit
 
-[Werkzeug: balance-board]
+[Werkzeug: ethik-waage]
 
 BEISPIEL（正确例题示范，含教具操作与解答，中文在上、德语在下）：
 

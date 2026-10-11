@@ -93,7 +93,7 @@ $$\Delta t_{\text{unbewusst}} = t_W - t_{RP} = -200\text{ ms} - (-550\text{ ms})
 **Bezug zum Konzept**: `Im deterministischen Weltbild ist das Gefuehl, anders handeln zu koennen, eine reine Illusion bedingt durch menschliche Unwissenheit.`
 
 ## Schritt 4 — ausprobieren: Sandbox-Auftrag Freiheit vs. Kausalitaet
-Kontinuitaet: Vorher Philo-Sonderstellung-des-Menschen.md | Nachher Philo-Staatsphilosophie-Hobbes-Locke-L1.md. Krise dieser Episode: Laplacescher Daemon vs. Libet-Experiment. Zielgroessen: Determinismus, Bereitschaftspotenzial, Kompatibilismus, Autonomie
+Kontinuitaet: Vorher Philosophie-Erkenntnistheorie-Rationalismus-vs-Empirismus-L1.md | Nachher Philosophie-Staatsphilosophie-Hobbes-Locke-L1.md. Krise dieser Episode: Laplacescher Daemon vs. Libet-Experiment. Zielgroessen: Determinismus, Bereitschaftspotenzial, Kompatibilismus, Autonomie
 
 BEISPIEL（正确例题示范，含教具操作与解答）：
 
@@ -169,4 +169,4 @@ REFLEXION:
 Du hast das klassische Kernproblem der philosophischen Anthropologie und Handlungstheorie gemeistert. Du weisst nun, warum das Libet-Experiment kein Todesurteil fuer die Moral ist, und kannst den Kompatibilismus souveraen in Klausuren gegen biologistischen Reduktionismus verteidigen.
 
 <!-- reflexion: philosophie-willensfreiheit -->
-In der naechsten Episode ziehen wir den Bogen vom individuellen Willen zur staatlichen Ordnung: Wenn Menschen frei, aber egoistisch sind — warum brauchen wir dann den Leviathan? Weiter geht es mit [Philo-Staatsphilosophie-Hobbes-Locke-L1](Philo-Staatsphilosophie-Hobbes-Locke-L1.md).
+In der naechsten Episode ziehen wir den Bogen vom individuellen Willen zur staatlichen Ordnung: Wenn Menschen frei, aber egoistisch sind — warum brauchen wir dann den Leviathan? Weiter geht es mit [Philosophie-Staatsphilosophie-Hobbes-Locke-L1](Philosophie-Staatsphilosophie-Hobbes-Locke-L1.md).

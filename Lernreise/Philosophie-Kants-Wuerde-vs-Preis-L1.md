@@ -103,7 +103,7 @@ $$\text{Kantische Dichotomie: } \text{Wert}(x) = \begin{cases} \text{Preis} & \i
 **Bezug zum Konzept**: `Das Instrumentalisierungsverbot (Objektformel) verbietet jede quantitative Verrechnung von Menschenleben.`
 
 ## Schritt 4 — ausprobieren: Sandbox-Auftrag Das Spenderorgan-Dilemma
-Kontinuitaet: Vorher Philo-Gerechtigkeit-Rawls-Schleier-des-Nichtwissens-L1.md | Nachher Philo-Existentialismus-Sartre-Freiheit-L1.md. Krise dieser Episode: Der Mensch als blosse Handelsware. Zielgroessen: Immanuel Kant, Wuerde vs Preis, Zweck-an-sich-Formel, Instrumentalisierungsverbot, Art 1 GG
+Kontinuitaet: Vorher Philosophie-Gerechtigkeit-Rawls-Schleier-des-Nichtwissens-L1.md | Nachher Philosophie-Existentialismus-Sartre-Freiheit-L1.md. Krise dieser Episode: Der Mensch als blosse Handelsware. Zielgroessen: Immanuel Kant, Wuerde vs Preis, Zweck-an-sich-Formel, Instrumentalisierungsverbot, Art 1 GG
 
 BEISPIEL（正确例题示范，含教具操作与解答）：
 
@@ -183,4 +183,4 @@ REFLEXION:
 Du beherrschst nun das Kernstueck der kantischen Moralphilosophie und die theoretische Wurzel der modernen Menschenrechte. Du kannst komplexe Dilemmata zwischen oekonomischer Verwertung und unantastbarer Menschenwuerde in Klausuren fehlerfrei sezieren.
 
 <!-- reflexion: philosophie-kant-wuerde-vs-preis -->
-In der naechsten Episode stuerzen wir uns in die radikale Freiheit des 20. Jahrhunderts: Sind wir zur Freiheit verdammt? Weiter geht es mit [Philo-Existentialismus-Sartre-Freiheit-L1](Philo-Existentialismus-Sartre-Freiheit-L1.md).
+In der naechsten Episode stuerzen wir uns in die radikale Freiheit des 20. Jahrhunderts: Sind wir zur Freiheit verdammt? Weiter geht es mit [Philosophie-Existentialismus-Sartre-Freiheit-L1](Philosophie-Existentialismus-Sartre-Freiheit-L1.md).

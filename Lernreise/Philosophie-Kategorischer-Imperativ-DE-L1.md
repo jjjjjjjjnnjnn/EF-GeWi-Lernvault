@@ -13,7 +13,7 @@ version: Enterprise-v5
 
 # Lernreise: Kants kategorischer Imperativ und die Maximenpruefung (L1, Ziel Klausur)
 
-<!-- Lesson-v3: 8 Schritte plus Anekdote und Fehlvorstellung; Fehlvorstellung zwischen Schritt 6 und 7 (Parser-Skip); interaktives [Werkzeug: <id>]; Gating: check/szenario nicht bestanden = Weiter gesperrt; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+<!-- Lesson-v3: 8 Schritte plus Anekdote und Fehlvorstellung; Fehlvorstellung zwischen Schritt 6 und 7 (Parser-Skip); interaktives [Werkzeug: ethik-waage]; Gating: check/szenario nicht bestanden = Weiter gesperrt; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
 ## Schritt 1 — entdecken: Spickzettel-Kartell: Darf jeder schummeln wie ich
 
@@ -100,7 +100,7 @@ Bezug zum Konzept: `Die Anekdote veranschaulicht Kants Leitidee, dass Moral in d
 
 BEISPIEL (geleitete Aufgabe mit Werkzeug):
 
-[Werkzeug: balance-board]
+[Werkzeug: ethik-waage]
 
 Primaertext (vereinfachte deutsche Fassung nach Kant, Grundlegung, 100 bis 200 Woerter):
 
@@ -120,7 +120,7 @@ Primaertext (vereinfachte deutsche Fassung nach Kant, Grundlegung, 100 bis 200 W
 > (Z.14) Klugheit raet zum tauglichen Mittel fuer deine Ziele.
 > (Z.15) Moral aber gebietet unbedingt, was verallgemeinerbar ist und Wuerde achtet.
 
-AUFGABE Waage-Raetsel (AFB II): Pruefe auf [Werkzeug: balance-board] die Maxime des Schummelns aus Freundschaft im Spickzettel-Kartell. Markiere mit GELB alle Stellen zu Klugheit und Mittelwahl (Z.14) sowie zur Maximenbildung (Z.2 bis Z.3) und mit BLAU alle Stellen zu Universalisierung und Wuerde (Z.4 bis Z.13 und Z.15). Target: Denkbarkeit und Wollbarkeit je 1 bis 5 wichten, Denkwiderspruch nachweisen und Klausur-Satz formulieren.
+AUFGABE Waage-Raetsel (AFB II): Pruefe auf [Werkzeug: ethik-waage] die Maxime des Schummelns aus Freundschaft im Spickzettel-Kartell. Markiere mit GELB alle Stellen zu Klugheit und Mittelwahl (Z.14) sowie zur Maximenbildung (Z.2 bis Z.3) und mit BLAU alle Stellen zu Universalisierung und Wuerde (Z.4 bis Z.13 und Z.15). Target: Denkbarkeit und Wollbarkeit je 1 bis 5 wichten, Denkwiderspruch nachweisen und Klausur-Satz formulieren.
 
 HILFE:
 - Erster Zugang: Ordne das Fallmaterial mit Maxime aus Schritt 2, ohne schon zu werten.

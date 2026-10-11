@@ -99,7 +99,7 @@ $$\text{Hobbes: } \text{Freiheit} \xrightarrow{\text{Vertrag}} \text{Absolute Si
 **Bezug zum Konzept**: `Die existentielle Angst vor gewaltsamem Tod ist bei Hobbes die staerkste Triebfeder fuer den Eintritt in den Staat.`
 
 ## Schritt 4 — ausprobieren: Sandbox-Auftrag Der Gesetzesentwurf
-Kontinuitaet: Vorher Philo-Willensfreiheit-Determinismus-L1.md | Nachher Philo-Gerechtigkeit-Wirtschaftsethik-Vernetzung.md. Krise dieser Episode: Naturzustand als Krieg aller gegen alle. Zielgroessen: Naturzustand, Gesellschaftsvertrag, Leviathan, Gewaltenteilung, Widerstandsrecht
+Kontinuitaet: Vorher Philosophie-Willensfreiheit-Determinismus-L1.md | Nachher Philosophie-Gesellschaftsvertrag-Hobbes-Locke-Rousseau-L1.md. Krise dieser Episode: Naturzustand als Krieg aller gegen alle. Zielgroessen: Naturzustand, Gesellschaftsvertrag, Leviathan, Gewaltenteilung, Widerstandsrecht
 
 BEISPIEL（正确例题示范，含教具操作与解答）：
 

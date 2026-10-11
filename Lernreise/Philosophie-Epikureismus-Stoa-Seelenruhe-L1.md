@@ -13,7 +13,7 @@ version: Enterprise-v5
 
 # Lernreise: Epikureismus und Stoa zur Seelenruhe (L1, Ziel Klausur)
 
-<!-- Lesson v3: Schritt 1-8 feste Struktur; Fehlvorstellung zwischen Schritt 6 und 7 (Parser skip); [Werkzeug: <id>] interaktiv; Gating: check/szenario nicht bestanden = Weiter grau; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+<!-- Lesson v3: Schritt 1-8 feste Struktur; Fehlvorstellung zwischen Schritt 6 und 7 (Parser skip); [Werkzeug: ethik-waage] interaktiv; Gating: check/szenario nicht bestanden = Weiter grau; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
 ## Schritt 1 — entdecken: Burnout vor Gericht: Garten gegen Halle im Pflegerprozess
 
@@ -83,7 +83,7 @@ Klausur-Satz: `Beide Schulen therapieren Angst, Epikur durch Begierdenkritik und
 
 ## Schritt 4 — ausprobieren: Waage der Seelenruhe: Pruefungsangst halb epikureisch halb stoisch
 
-[Werkzeug: balance-board]
+[Werkzeug: ethik-waage]
 
 BEISPIEL（正确例题示范）：
 

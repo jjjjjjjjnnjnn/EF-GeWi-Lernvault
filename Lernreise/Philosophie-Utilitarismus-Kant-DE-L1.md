@@ -13,7 +13,7 @@ version: Enterprise-v5
 
 # Lernreise: Utilitarismus vs Kant (L1, Ziel Klausur)
 
-<!-- Lesson-v3: 8 Schritte plus Anekdote und Fehlvorstellung; Fehlvorstellung zwischen Schritt 6 und 7 (Parser-Skip); interaktives [Werkzeug: <id>]; Gating: check/szenario nicht bestanden = Weiter gesperrt; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+<!-- Lesson-v3: 8 Schritte plus Anekdote und Fehlvorstellung; Fehlvorstellung zwischen Schritt 6 und 7 (Parser-Skip); interaktives [Werkzeug: ethik-waage]; Gating: check/szenario nicht bestanden = Weiter gesperrt; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
 ## Schritt 1 — entdecken: Suendenbock-Prozess: Darf einer fuer alle bluten
 
@@ -100,7 +100,7 @@ Bezug zum Konzept: `Die Anekdote zeigt am selben Fall den Grundgegensatz dieser 
 
 BEISPIEL (geleitete Aufgabe mit Werkzeug):
 
-[Werkzeug: balance-board]
+[Werkzeug: ethik-waage]
 
 Primaertext (vereinfachte deutsche Fassung nach Mill und Kant, 100 bis 200 Woerter):
 
@@ -120,7 +120,7 @@ Primaertext (vereinfachte deutsche Fassung nach Mill und Kant, 100 bis 200 Woert
 > (Z.14) Klugheit rechnet mit Folgen, Moral gebietet Achtung.
 > (Z.15) Der Zweck heiligt nicht jedes Mittel, die Wuerde setzt die Grenze.
 
-AUFGABE Waage-Raetsel (AFB II): Lege den Suendenbock-Fall auf [Werkzeug: balance-board]. Markiere mit GELB alle Stellen zur Folgenbilanz (Z.1 bis Z.4) und mit BLAU alle Stellen zu Maxime und Wuerde (Z.5 bis Z.15). Target: Folgenbilanz und Maximenprobe je 1 bis 5 wichten und per Wuerde entscheiden, ob Nutzen die Pflicht bricht.
+AUFGABE Waage-Raetsel (AFB II): Lege den Suendenbock-Fall auf [Werkzeug: ethik-waage]. Markiere mit GELB alle Stellen zur Folgenbilanz (Z.1 bis Z.4) und mit BLAU alle Stellen zu Maxime und Wuerde (Z.5 bis Z.15). Target: Folgenbilanz und Maximenprobe je 1 bis 5 wichten und per Wuerde entscheiden, ob Nutzen die Pflicht bricht.
 
 HILFE:
 - Erster Zugang: Ordne das Fallmaterial mit Nutzenprinzip aus Schritt 2, ohne schon zu werten.

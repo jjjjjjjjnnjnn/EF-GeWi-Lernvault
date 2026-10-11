@@ -102,7 +102,7 @@ $$\text{Rationalismus: } \text{Vernunft} \xrightarrow{\text{Deduktion}} \text{Er
 **Bezug zum Konzept**: `Die Notwendigkeit, Sinnesdaten und koerperliche Realitaet mit reiner Geistestaetigkeit in Einklang zu bringen.`
 
 ## Schritt 4 — ausprobieren: Sandbox-Auftrag Das Induktionsproblem
-Kontinuitaet: Vorher Philo-Sonderstellung-des-Menschen.md | Nachher Philo-Willensfreiheit-Determinismus-L1.md. Krise dieser Episode: Taeuschung durch die Sinne. Zielgroessen: Rationalismus, Empirismus, Cogito ergo sum, Tabula rasa, Induktionsproblem
+Kontinuitaet: Vorher Philosophie-Wissenschaftstheorie-Popper-Falsifikation-L1.md | Nachher Philosophie-Willensfreiheit-Determinismus-L1.md. Krise dieser Episode: Taeuschung durch die Sinne. Zielgroessen: Rationalismus, Empirismus, Cogito ergo sum, Tabula rasa, Induktionsproblem
 
 BEISPIEL（正确例题示范，含教具操作与解答）：
 
@@ -181,4 +181,4 @@ REFLEXION:
 Du hast das klassische Ringen um Wahrheit und Gewissheit durchdrungen. Du verstehst den methodischen Zweifel als Praezisionswerkzeug und weisst, warum empirische Daten ohne rationale Begriffe blind bleiben.
 
 <!-- reflexion: philosophie-erkenntnistheorie -->
-In der naechsten Episode betrachten wir, welche ethische Verantwortung aus unserer Erkenntnisfaehigkeit fuer die Zukunft der Erde erwaechst: Weiter geht es mit [Philo-Bioethik-Hans-Jonas-Verantwortung-L1](Philo-Bioethik-Hans-Jonas-Verantwortung-L1.md).
+In der naechsten Episode betrachten wir, welche ethische Verantwortung aus unserer Erkenntnisfaehigkeit fuer die Zukunft der Erde erwaechst: Weiter geht es mit [Philosophie-Bioethik-Hans-Jonas-Verantwortung-L1](Philosophie-Bioethik-Hans-Jonas-Verantwortung-L1.md).

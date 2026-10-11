@@ -13,7 +13,7 @@ version: Enterprise-v5
 
 # Lernreise: Die Sonderstellung des Menschen bei Gehlen und Scheler (L1, Ziel Klausur)
 
-<!-- Lesson v3 9步制架构：Schritt 1至8固定结构；Fehlvorstellung 夹在 Schritt 6 与 7 之间（Parser 自动跳过，不占步数）；支持内嵌 [Werkzeug: <id>] 交互教具；Gating: check/szenario 未过 = Weiter 置灰；XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+<!-- Lesson v3 9步制架构：Schritt 1至8固定结构；Fehlvorstellung 夹在 Schritt 6 与 7 之间（Parser 自动跳过，不占步数）；支持内嵌 [Werkzeug: ethik-waage] 交互教具；Gating: check/szenario 未过 = Weiter 置灰；XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
 ## Schritt 1 — entdecken: Anklagebank der Menschheit: Ist Homo sapiens nur ein Tier
 
@@ -88,7 +88,7 @@ Klausur-Satz: `Waehrend Gehlen die Sonderstellung naturalistisch aus dem Mangel 
 
 ## Schritt 4 — ausprobieren: Sandkasten-Verhandlung: Stelle die Waage auf Kompensation oder Transzendenz
 
-[Werkzeug: balance-board]
+[Werkzeug: ethik-waage]
 
 BEISPIEL（正确例题示范，含教具操作与解答，中文在上、德语在下）：
 

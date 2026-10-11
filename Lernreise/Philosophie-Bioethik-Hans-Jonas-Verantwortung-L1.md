@@ -100,7 +100,7 @@ $$\text{Jonas' Formel: } \text{Macht} \times \text{Irreversibilitaet} \implies \
 **Bezug zum Konzept**: `Verantwortung ist bei Jonas keine abstrakte Theorie, sondern gelebte Abwehr existenzieller Katastrophen.`
 
 ## Schritt 4 — ausprobieren: Sandbox-Auftrag Das CRISPR-Keimbahn-Dilemma
-Kontinuitaet: Vorher Philo-Erkenntnistheorie-Rationalismus-vs-Empirismus-L1.md | Nachher Philo-Gerechtigkeit-Rawls-Schleier-des-Nichtwissens-L1.md. Krise dieser Episode: Globale Selbstzerstoerung durch Technik. Zielgroessen: Hans Jonas, Prinzip Verantwortung, Heuristik der Furcht, Oekologischer Imperativ, Zukunftsethik
+Kontinuitaet: Vorher Philosophie-Erkenntnistheorie-Rationalismus-vs-Empirismus-L1.md | Nachher Philosophie-Gerechtigkeit-Rawls-Schleier-des-Nichtwissens-L1.md. Krise dieser Episode: Globale Selbstzerstoerung durch Technik. Zielgroessen: Hans Jonas, Prinzip Verantwortung, Heuristik der Furcht, Oekologischer Imperativ, Zukunftsethik
 
 BEISPIEL（正确例题示范，含教具操作与解答）：
 
@@ -181,4 +181,4 @@ REFLEXION:
 Du hast die modernste und einflussreichste Ethik des Industriezeitalters gemeistert. Du kannst bioethische und oekologische Kontroversen nun souverän mit dem Begriffsapparat von Hans Jonas analysieren und in Klausuren auf hoechstem Niveau argumentieren.
 
 <!-- reflexion: philosophie-hans-jonas -->
-In der naechsten Episode kehren wir zur Frage zurueck, wie Freiheit und Gleichheit in der Gesellschaft gerecht austariert werden: Weiter geht es mit [Philo-Gerechtigkeit-Rawls-Schleier-des-Nichtwissens-L1](Philo-Gerechtigkeit-Rawls-Schleier-des-Nichtwissens-L1.md).
+In der naechsten Episode kehren wir zur Frage zurueck, wie Freiheit und Gleichheit in der Gesellschaft gerecht austariert werden: Weiter geht es mit [Philosophie-Gerechtigkeit-Rawls-Schleier-des-Nichtwissens-L1](Philosophie-Gerechtigkeit-Rawls-Schleier-des-Nichtwissens-L1.md).

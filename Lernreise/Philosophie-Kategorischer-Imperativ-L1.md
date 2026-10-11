@@ -13,7 +13,7 @@ version: Enterprise-v5
 
 # Lernreise: Kants kategorischer Imperativ und die Maximenprüfung (L1, Ziel Klausur)
 
-<!-- Lesson v3 9步制架构：Schritt 1至8固定结构；Fehlvorstellung 夹在 Schritt 6 与 7 之间（Parser 自动跳过，不占步数）；支持内嵌 [Werkzeug: <id>] 交互教具；Gating: check/szenario 未过 = Weiter 置灰；XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+<!-- Lesson v3 9步制架构：Schritt 1至8固定结构；Fehlvorstellung 夹在 Schritt 6 与 7 之间（Parser 自动跳过，不占步数）；支持内嵌 [Werkzeug: ethik-waage] 交互教具；Gating: check/szenario 未过 = Weiter 置灰；XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
 ## Schritt 1 — entdecken: 午夜信贷庭：借钱不还的准则能否成为法则
 
@@ -86,7 +86,7 @@ Klausur-Satz: `Laesst sich die Maxime nicht widerspruchsfrei als allgemeines Ges
 
 ## Schritt 4 — ausprobieren: 天平称承诺：虚假借款的普遍化实验
 
-[Werkzeug: balance-board]
+[Werkzeug: ethik-waage]
 
 BEISPIEL（正确例题示范，含教具操作与解答）：
 

@@ -13,7 +13,7 @@ version: Enterprise-v5
 
 # Lernreise: Das utilitaristische Kalkuel und Mills Qualitaetsunterscheidung (L1, Ziel Klausur)
 
-<!-- Lesson-v3: 8 Schritte plus Anekdote und Fehlvorstellung; Fehlvorstellung zwischen Schritt 6 und 7 (Parser-Skip); interaktives [Werkzeug: <id>]; Gating: check/szenario nicht bestanden = Weiter gesperrt; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+<!-- Lesson-v3: 8 Schritte plus Anekdote und Fehlvorstellung; Fehlvorstellung zwischen Schritt 6 und 7 (Parser-Skip); interaktives [Werkzeug: ethik-waage]; Gating: check/szenario nicht bestanden = Weiter gesperrt; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
 ## Schritt 1 — entdecken: Drohnenlaerm-Prozess: Segen der Mehrheit Fluch der Anwohner
 
@@ -100,7 +100,7 @@ Bezug zum Konzept: `Die Anekdote zeigt den Grundkontrast: Bentham maximiert Meng
 
 BEISPIEL (geleitete Aufgabe mit Werkzeug):
 
-[Werkzeug: balance-board]
+[Werkzeug: ethik-waage]
 
 Primaertext (vereinfachte deutsche Fassung nach Bentham und Mill, 100 bis 200 Woerter):
 
@@ -120,7 +120,7 @@ Primaertext (vereinfachte deutsche Fassung nach Bentham und Mill, 100 bis 200 Wo
 > (Z.14) Darum korrigiert die Qualitaet jede blosse Mengenrechnung.
 > (Z.15) Waehle das groesste Glueck, doch wahre dabei die Wuerde des Menschen.
 
-AUFGABE Waage-Raetsel (AFB II): Lege das Drohnennetz gegen die Nachtruhe auf [Werkzeug: balance-board]. Markiere mit GELB alle Stellen zum Mengenmassstab (Z.1 bis Z.8) und mit BLAU alle Stellen zur Qualitaetskorrektur (Z.9 bis Z.15). Target: Sieben Kriterien je 1 bis 5 wichten, danach Mills Korrektur zuschalten und am Gesamtglueck urteilen.
+AUFGABE Waage-Raetsel (AFB II): Lege das Drohnennetz gegen die Nachtruhe auf [Werkzeug: ethik-waage]. Markiere mit GELB alle Stellen zum Mengenmassstab (Z.1 bis Z.8) und mit BLAU alle Stellen zur Qualitaetskorrektur (Z.9 bis Z.15). Target: Sieben Kriterien je 1 bis 5 wichten, danach Mills Korrektur zuschalten und am Gesamtglueck urteilen.
 
 HILFE:
 - Erster Zugang: Ordne das Fallmaterial mit Nutzenprinzip aus Schritt 2, ohne schon zu werten.

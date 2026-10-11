@@ -13,7 +13,7 @@ version: Enterprise-v5
 
 # Lernreise: Willensfreiheit Libet und Hirnforschung (L1, Ziel Klausur)
 
-<!-- Lesson-v3: 8 Schritte plus Anekdote und Fehlvorstellung; Fehlvorstellung zwischen Schritt 6 und 7 (Parser-Skip); interaktives [Werkzeug: <id>]; Gating: check/szenario nicht bestanden = Weiter gesperrt; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+<!-- Lesson-v3: 8 Schritte plus Anekdote und Fehlvorstellung; Fehlvorstellung zwischen Schritt 6 und 7 (Parser-Skip); interaktives [Werkzeug: ethik-waage]; Gating: check/szenario nicht bestanden = Weiter gesperrt; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
 ## Schritt 1 — entdecken: Scan-Prozess: Wer drueckte den Knopf, ich oder mein Gehirn
 
@@ -100,7 +100,7 @@ Bezug zum Konzept: `Die Anekdote zeigt den Doppelblick: Kurve plus Veto bei Libe
 
 BEISPIEL (geleitete Aufgabe mit Werkzeug):
 
-[Werkzeug: balance-board]
+[Werkzeug: ethik-waage]
 
 Primaertext (vereinfachte deutsche Fassung nach Libet und Frankfurt, 100 bis 200 Woerter):
 
@@ -120,7 +120,7 @@ Primaertext (vereinfachte deutsche Fassung nach Libet und Frankfurt, 100 bis 200
 > (Z.14) Darum entlastet kein Scan den Schummler vor Gericht.
 > (Z.15) Zurechenbar ist, wer stoppen konnte und seinen Willen traegt.
 
-AUFGABE Waage-Raetsel (AFB II): Lege Libet gegen Frankfurt auf [Werkzeug: balance-board]. Markiere mit GELB alle Stellen zur Kurve und zum Veto (Z.1 bis Z.6) und mit BLAU alle Stellen zur Hierarchie und Identifikation (Z.7 bis Z.14). Target: Kurve, Veto und Identifikation je 1 bis 5 wichten und per Zurechenbarkeit entscheiden.
+AUFGABE Waage-Raetsel (AFB II): Lege Libet gegen Frankfurt auf [Werkzeug: ethik-waage]. Markiere mit GELB alle Stellen zur Kurve und zum Veto (Z.1 bis Z.6) und mit BLAU alle Stellen zur Hierarchie und Identifikation (Z.7 bis Z.14). Target: Kurve, Veto und Identifikation je 1 bis 5 wichten und per Zurechenbarkeit entscheiden.
 
 HILFE:
 - Erster Zugang: Ordne das Fallmaterial mit Determinismus aus Schritt 2, ohne schon zu werten.
