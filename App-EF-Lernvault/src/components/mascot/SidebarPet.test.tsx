@@ -5,9 +5,15 @@ import { SidebarPet } from "./SidebarPet";
 
 describe("SidebarPet Companion Desk Pet", () => {
   it("renders desk pet with fox mascot and streak information", () => {
-    render(<SidebarPet lang="zh" currentStreak={18} xpToday={120} />);
+    render(<SidebarPet lang="zh" currentStreak={5} xpToday={60} />);
     expect(screen.getByText("学霸小赤狐")).toBeInTheDocument();
-    expect(screen.getByText("+120 XP")).toBeInTheDocument();
+    expect(screen.getByText("+60 XP")).toBeInTheDocument();
+  });
+
+  it("defaults to zero streak/XP without fabricated fallback", () => {
+    render(<SidebarPet lang="zh" />);
+    expect(screen.getByText("+0 XP")).toBeInTheDocument();
+    expect(screen.getByText("[0d]")).toBeInTheDocument();
   });
 
   it("changes dialogue and triggers callback upon click interaction", async () => {

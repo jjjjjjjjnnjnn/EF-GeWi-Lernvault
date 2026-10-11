@@ -194,8 +194,9 @@ export function matchInteractiveTool(text: string, lessonType: LessonType): {
       };
     }
   }
-  // 伦理辩证类通用偏向天平
-  if (lower.includes("pro") || lower.includes("contra") || lower.includes("debatte") || lower.includes("vergleich")) {
+  // 伦理辩证类通用偏向天平（词边界匹配，避免 "pro" 误杀 Problem/Prozess/Produktion/Prozent）
+  const hasWord = (w: string) => new RegExp(`\\b${w}\\b`, "i").test(text);
+  if (hasWord("pro") || hasWord("contra") || lower.includes("debatte") || lower.includes("vergleich")) {
     return {
       id: "dilemma-balance-scale",
       name: "Diskurs-Waage (价值对决天平)",

@@ -76,6 +76,16 @@ describe("Book Ingest Engine: bookIngestParser", () => {
     expect(fallbackPractice.interactiveType).toBe("logic_blocks");
   });
 
+  it("does not hijack Problem/Prozess/Produktion via pro substring", () => {
+    const p1 = matchInteractiveTool("Problem der Energiewende und Produktionsprozess", "concept");
+    expect(p1.id).not.toBe("dilemma-balance-scale");
+    const p2 = matchInteractiveTool("Prozentuale Messwerte im Laborversuch", "experiment");
+    expect(p2.id).not.toBe("dilemma-balance-scale");
+    // 真词 Pro/Contra 仍命中天平
+    const p3 = matchInteractiveTool("Pro und Contra der Debatte", "concept");
+    expect(p3.id).toBe("dilemma-balance-scale");
+  });
+
   it("ensures all built-in presets are valid and deconstruct into >= 4 quests", () => {
     for (const preset of BOOK_INGEST_PRESETS) {
       const parsed = parseBookToQuests(preset.title, preset.fach, preset.rawContent);

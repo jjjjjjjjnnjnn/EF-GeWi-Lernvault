@@ -294,8 +294,17 @@ describe("Concept Distillation Engine: conceptDistiller", () => {
     expect(res.klausurSatz15NP.scoringKeywords).toContain("Flugparabel");
   });
 
-  it("handles arbitrary topics gracefully via heuristic subject archetypes", () => {
-    const arbitrarySoWi = distillConcept("Europaeische Zentralbank und Leitzinssenkung", "SoWi");
+  it("keeps Chemie/Bio fallback free of SoWi jargon and calculus", () => {
+    const chem = distillConcept("Unbekanntes Spezialthema ohne Bankeintrag", "Chemie");
+    const blob = JSON.stringify(chem);
+    expect(blob).not.toContain("割线极限逼近切线");
+    expect(blob).not.toContain("f'(x)");
+    expect(blob).not.toContain("社会市场经济");
+    const bio = distillConcept("Unbekanntes Spezialthema ohne Bankeintrag", "Bio");
+    expect(JSON.stringify(bio)).not.toContain("割线极限逼近切线");
+  });
+
+  it("handles arbitrary topics gracefully via heuristic subject archetypes", () => {    const arbitrarySoWi = distillConcept("Europaeische Zentralbank und Leitzinssenkung", "SoWi");
     validateDistilledConcept(arbitrarySoWi);
     expect(arbitrarySoWi.fach).toBe("SoWi");
     expect(arbitrarySoWi.topicTitle).toBe("Europaeische Zentralbank und Leitzinssenkung");

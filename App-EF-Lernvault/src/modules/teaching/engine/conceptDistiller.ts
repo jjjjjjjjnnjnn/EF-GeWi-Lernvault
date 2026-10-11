@@ -3812,9 +3812,9 @@ const SUBJECT_ARCHETYPES: Record<string, SubjectFallbackArchetype> = {
 function normalizeQuery(str: string): string {
   return str
     .toLowerCase()
-    .replace(/[äae]/g, "ae")
-    .replace(/[öoe]/g, "oe")
-    .replace(/[üue]/g, "ue")
+    .replace(/ä/g, "ae")
+    .replace(/ö/g, "oe")
+    .replace(/ü/g, "ue")
     .replace(/ß/g, "ss")
     .replace(/[^a-z0-9\s]/g, " ")
     .trim();
@@ -3849,6 +3849,8 @@ export function distillConcept(title: string, fach: string, rawText?: string): D
   for (const entry of DOMAIN_KNOWLEDGE_ENTRIES) {
     let score = 0;
     const fachMatch = entry.fach.toLowerCase() === resolvedFach.toLowerCase();
+    // fach门禁：他科长关键词不得劫持本课（先只计本fach，零命中才放行跨fach）
+    if (!fachMatch) continue;
 
     for (const kw of entry.matchKeywords) {
       const normKw = normalizeQuery(kw);
@@ -3862,13 +3864,34 @@ export function distillConcept(title: string, fach: string, rawText?: string): D
       score += 50;
     }
 
-    if (score > 0 && fachMatch) {
+    if (score > 0) {
       score += 15;
     }
 
     if (score > bestScore) {
       bestScore = score;
       bestEntry = entry;
+    }
+  }
+
+  // 本fach零命中时才允许跨fach兜底（保持旧行为兼容），避免SoWi长词劫持Philo/Deutsch含"Markt"文本
+  if (!bestEntry) {
+    for (const entry of DOMAIN_KNOWLEDGE_ENTRIES) {
+      let score = 0;
+      for (const kw of entry.matchKeywords) {
+        const normKw = normalizeQuery(kw);
+        if (normalizedSearch.includes(normKw)) {
+          score += normKw.length;
+        }
+      }
+      const normCanonical = normalizeQuery(entry.canonicalTitle);
+      if (normalizedSearch.includes(normCanonical) || normCanonical.includes(normalizedSearch)) {
+        score += 50;
+      }
+      if (score > bestScore) {
+        bestScore = score;
+        bestEntry = entry;
+      }
     }
   }
 
@@ -3884,10 +3907,8 @@ export function distillConcept(title: string, fach: string, rawText?: string): D
   }
 
   // 2. Execute smart heuristic synthesis using subject archetype
-  const archetype =
-    SUBJECT_ARCHETYPES[resolvedFach] ||
-    SUBJECT_ARCHETYPES["SoWi"] ||
-    SUBJECT_ARCHETYPES["Philosophie"];
+  // 无archetype的学科（Chemie/Bio/Englisch/Musik/Sport）走学科中性兜底，不再冒充SoWi话术
+  const archetype = SUBJECT_ARCHETYPES[resolvedFach] || null;
 
   const topicName = cleanedTitle || "Grundbegriff";
 
@@ -3913,18 +3934,47 @@ export function distillConcept(title: string, fach: string, rawText?: string): D
     },
   ];
 
-  const traps = archetype.standardTraps(topicName);
-  const musterSatz = archetype.musterSatzTemplate(topicName);
-  const probes = archetype.socraticQuestions(topicName);
+  const traps = archetype
+    ? archetype.standardTraps(topicName)
+    : [
+        {
+          trapTitleDE: `Verwechslung von Alltagsverständnis und KLP-Fachbegriff (${topicName})`,
+          trapDescriptionDE: `Alltagsplausible Deutung ohne systematische Kausalität und ohne KLP-Kriterien.`,
+          trapDescriptionZH: `用日常经验代替考纲定义，缺系统因果与可检验标准。`,
+          howToAvoidDE: `Definiere »${topicName}« mit KLP-Fachbegriffen und weise die Kausalkette schrittweise nach.`,
+          howToAvoidZH: `用考纲术语定义 »${topicName}«，逐步论证因果链条。`,
+        },
+      ];
+  const musterSatz = archetype
+    ? archetype.musterSatzTemplate(topicName)
+    : {
+        operator: "beurteilen" as const,
+        musterSatzDE: `»${topicName}« lässt sich kriteriengeleitet beurteilen, indem Sachurteil (Kausalkette mit Fachbegriffen) und Werturteil (Reflexion nach KLP NRW) verbunden werden.`,
+        explanationZH: `»${topicName}« 满分句：事实评价（考纲术语因果链）+ 价值评价（考纲标准反思）。`,
+        scoringKeywords: [topicName, "Sachurteil", "Werturteil", "KLP NRW"],
+      };
+  const probes = archetype
+    ? archetype.socraticQuestions(topicName)
+    : [
+        {
+          questionDE: `Welche Kausalkette erklärt »${topicName}« nach KLP NRW?`,
+          questionZH: `»${topicName}« 的考纲因果链条是什么？`,
+          counterPerspectiveDE: `Alltagsplausible Deutung ohne KLP-Fachbegriffe und ohne Kausalkette.`,
+        },
+      ];
 
   return enrichConceptWithStudyMateAndNotes(
     {
       topicTitle: topicName,
       fach: resolvedFach,
       mentalModelAnalogy: {
-        analogyTitle: archetype.defaultAnalogyTitle,
-        explanationDE: archetype.analogyTemplateDE(topicName),
-        explanationZH: archetype.analogyTemplateZH(topicName),
+        analogyTitle: archetype?.defaultAnalogyTitle || `Alltagsbrücke zu »${topicName}«`,
+        explanationDE: archetype
+          ? archetype.analogyTemplateDE(topicName)
+          : `Stelle dir »${topicName}« als System aus Ursachen, Mechanismen und Folgen vor – jedes Glied lässt sich im KLP-Kontext prüfen.`,
+        explanationZH: archetype
+          ? archetype.analogyTemplateZH(topicName)
+          : `把 »${topicName}« 理解为“原因—机制—后果”系统，每一环都可在考纲语境中检验。`,
       },
       klpTermini: termini,
       fehlerquellen: traps,
@@ -4024,8 +4074,9 @@ function createFallbackIntuitionDilemma(
     };
   }
 
-  // Mathe / Physik / MINT
-  return {
+  // Mathe / Physik: 微积分两难仅限数理学科（Chemie/Bio/Englisch/Musik/Sport不再误拿割线切线）
+  if (normFach.includes("mathe") || normFach.includes("physik")) {
+    return {
     scenarioDE: `Ein dynamischer Prozess beschleunigt ungleichmäßig. Wie erfassen wir die Veränderung in einem ganz bestimmten, infinitesimalen Augenblick?`,
     scenarioZH: `动态变化过程是不均匀的。如何在某个具体的瞬时点上，精准求出它的即时变化趋势与变化率？`,
     questionDE: `Welcher mathematische Ansatz führt zur exakten Lösung?`,
@@ -4048,6 +4099,33 @@ function createFallbackIntuitionDilemma(
     mechanismTakeawayZH: `从宏观的平均变化率跨越到极限状态下的瞬时导数，是整个高中微积分与现代分析学的核心思想。`,
     klpCoreLogicDE: `Lokale vs. mittlere Änderungsrate; Grenzwertbegriff (Limes); Tangentensteigung f'(x).`,
     klpCoreLogicZH: `差商 vs 微商（导数）；极限思想；切线斜率与瞬时变化率。`,
+    };
+  }
+
+  // 学科中性兜底（Chemie/Bio/Englisch/Musik/Sport及未知）：现象观察 vs 机理建模，绝不套微积分
+  return {
+    scenarioDE: `Ein alltagsnahes Phänomen zu »${_topicTitle || "diesem Thema"}« lässt zwei Deutungen zu: oberflächliche Beschreibung oder systematische Ursachenanalyse. Welchen Weg wählst du?`,
+    scenarioZH: `»${_topicTitle || "本主题"}« 的日常现象有两种解读：停留于表面描述，或深入系统归因。你选哪条路？`,
+    questionDE: `Welcher Zugang führt zur Klausurleistung?`,
+    questionZH: `哪种路径才能拿下会考采分点？`,
+    choiceA: {
+      id: "A",
+      textDE: `A) Phänomen beschreiben: Beobachtungen sammeln und alltagssprachlich wiedergeben.`,
+      textZH: `A) 现象描述：收集观察、用日常语言复述。`,
+      reactionDE: `Das bleibt AFB I ohne Kausalkette: beschreibend, aber nicht erklärend – keine volle Punktzahl.`,
+      reactionZH: `这只停留在 AFB I 描述层：有现象无因果，拿不满分。`,
+    },
+    choiceB: {
+      id: "B",
+      textDE: `B) Mechanismus modellieren: KLP-Fachbegriffe definieren und die Kausalkette schrittweise nachweisen.`,
+      textZH: `B) 机理建模：用考纲术语定义，逐步论证因果链。`,
+      reactionDE: `Das ist der Weg zur vollen Punktzahl: Fachbegriffe plus Kausalkette erfüllen AFB I/II, Reflexion öffnet AFB III.`,
+      reactionZH: `这才是满分路：术语加因果链拿下 AFB I/II，反思打开 AFB III。`,
+    },
+    mechanismTakeawayDE: `Klausurleistung = Phänomenbeobachtung plus systematische Ursachenanalyse mit KLP-Fachbegriffen.`,
+    mechanismTakeawayZH: `会考得分 = 现象观察 + 考纲术语系统归因。`,
+    klpCoreLogicDE: `AFB I-III; Fachbegriffe; Kausalkette.`,
+    klpCoreLogicZH: `AFB I-III；考纲术语；因果链条。`,
   };
 }
 

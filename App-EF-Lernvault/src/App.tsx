@@ -30,6 +30,7 @@ import Labor from "./modules/Labor";
 import { DesignLab } from "./modules/DesignLab";
 import { DailySprintModal } from "./components/DailySprintModal";
 import { getStudyStreak } from "./engine/dailyMix";
+import { getTeachingStudioTotalXp } from "./modules/teaching/engine/teachingStore";
 import Settings from "./modules/Settings";
 import { SubjectWorkspace } from "./modules/SubjectWorkspace";
 import { TeachingStudio } from "./modules/teaching/TeachingStudio";
@@ -757,11 +758,11 @@ export default function App() {
           </button>
         </div>
 
-        {/* 侧端常驻伴学折纸桌宠 (Sidebar Pet Companion) */}
+        {/* 侧端常驻伴学折纸桌宠 (Sidebar Pet Companion) — 真实store口径，无伪造fallback */}
         <SidebarPet
           lang={lang}
-          currentStreak={getStudyStreak().currentStreak || 18}
-          xpToday={120}
+          currentStreak={getStudyStreak().currentStreak}
+          xpToday={getTeachingStudioTotalXp()}
           onOpenFocusSprint={() => setSprintOpen(true)}
         />
 

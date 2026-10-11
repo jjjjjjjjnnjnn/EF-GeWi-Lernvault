@@ -357,12 +357,17 @@ export const InteractiveLessonRunner: React.FC<InteractiveLessonRunnerProps> = (
         );
       case "dilemma_balance":
       case "ethik-waage":
+      case "rawls-sim":
         return <DilemmaBalanceScale title={questNode.title} lang={lang} />;
       case "logic_blocks":
         return <LogicBlockBuilder title={questNode.title} lang={lang} />;
       case "scenario_tree":
       case "dilemma-theatre":
+      case "wahlsystem-sim":
         return <ScenarioDecisionTree title={questNode.title} lang={lang} />;
+      case "gini-allocator":
+      case "orderbuch-sim":
+        return <VariableSliderBox title={questNode.title} lang={lang} />;
       case "markt-sim":
         return (
           <MarktgleichgewichtSim
@@ -1115,16 +1120,16 @@ export const InteractiveLessonRunner: React.FC<InteractiveLessonRunnerProps> = (
               </span>
             )}
 
-            {/* 概念拼图底部提示 */}
+            {/* 概念拼图底部提示（数量跟随真实puzzle数据，不再硬编码4组/完全竞争市场） */}
             {currentStep.type === "puzzle" && (
               <span className="text-[var(--ink-muted)]">
                 {!isPuzzleCompleted
                   ? (lang === "de"
-                      ? "Ordne alle 4 Begriffspaare auf der linken und rechten Seite zu."
-                      : "请将完全竞争市场的 4 组公理前提与现实破绽依次配对。")
+                      ? `Ordne alle ${distilled.konzeptPuzzle?.pairs?.length ?? 4} Begriffspaare auf der linken und rechten Seite zu.`
+                      : `请将左侧与右侧的 ${distilled.konzeptPuzzle?.pairs?.length ?? 4} 组概念配对完成。`)
                   : (lang === "de"
-                      ? "Alle 4 Prämissen erfolgreich zugeordnet! Klicke auf den Button, um zur Challenge zu wechseln."
-                      : "4 组公理前提与现实破绽配对全部完成！点击前往考场挑战。")}
+                      ? "Alle Begriffspaare erfolgreich zugeordnet! Klicke auf den Button, um zur Challenge zu wechseln."
+                      : "概念配对全部完成！点击前往考场挑战。")}
               </span>
             )}
 

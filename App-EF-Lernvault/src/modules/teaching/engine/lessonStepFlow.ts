@@ -225,6 +225,8 @@ export function compileLessonSteps(
   };
 
   // 3. 核心机制挑战 (Phase 2: 考场挑战 - 基于新知与实验现象的精准辨析)
+  // fach自适应：SoWi保留市场/社会国家对决口径，他科走通用考纲术语口径（防跨学科穿帮）
+  const isSoWi = fach === "SoWi";
   const stepConcept: LessonStep = {
     id: `${questNode.id}-step-3`,
     type: "concept",
@@ -233,7 +235,9 @@ export function compileLessonSteps(
     titleDE: "Schritt 3: KLP-Fachbegriff & Mechanismus-Duell",
     titleZH: "第 3 步：考纲专业术语与机制精准对决",
     promptDE: `Welche exakte didaktische Funktion und Kausalität beschreibt den Fachbegriff »${primaryTerm.termDE}« nach KLP NRW?`,
-    promptZH: `依据考纲规范与刚刚的实验探究，专业术语 »${primaryTerm.termDE} (${primaryTerm.termZH})« 在经济机制中发挥的核心调控职能是？`,
+    promptZH: isSoWi
+      ? `依据考纲规范与刚刚的实验探究，专业术语 »${primaryTerm.termDE} (${primaryTerm.termZH})« 在经济机制中发挥的核心调控职能是？`
+      : `依据考纲规范与刚刚的实验探究，专业术语 »${primaryTerm.termDE} (${primaryTerm.termZH})« 的核心内涵与因果机制是？`,
     options: [
       {
         id: "term-correct",
@@ -242,20 +246,25 @@ export function compileLessonSteps(
         isCorrect: true,
         explanationDE:
           "Präzise formuliert! Exakt diese Kausallogik verlangt der Erwartungshorizont in AFB I/II.",
-        explanationZH:
-          "定义极其精确！完全吻合考纲第一与第二认知领域（AFB I/II）标准踩分要求：价格自发出清，实现微观配置效率。",
+        explanationZH: isSoWi
+          ? "定义极其精确！完全吻合考纲第一与第二认知领域（AFB I/II）标准踩分要求：价格自发出清，实现微观配置效率。"
+          : "定义极其精确！完全吻合考纲第一与第二认知领域（AFB I/II）标准踩分要求：抓住该术语的规范内涵与因果链条。",
       },
       {
         id: "term-distractor",
-        textDE:
-          "Als ordnungspolitisches Instrument des Staates, das durch gesetzliche Höchstpreise die Grundversorgung der Bürger sichert.",
-        textZH:
-          "作为国家宏观协调的社会保障工具，通过法定限价与福利干预确保商品不超出居民承受能力。",
+        textDE: isSoWi
+          ? "Als ordnungspolitisches Instrument des Staates, das durch gesetzliche Höchstpreise die Grundversorgung der Bürger sichert."
+          : `Als bloßes Alltagsphänomen ohne systematische Kausalität und ohne prüfbare KLP-Kriterien zu »${primaryTerm.termDE}«.`,
+        textZH: isSoWi
+          ? "作为国家宏观协调的社会保障工具，通过法定限价与福利干预确保商品不超出居民承受能力。"
+          : `把 »${primaryTerm.termZH}« 当作日常经验现象，否认其系统性因果机制与考纲可检验标准。`,
         isCorrect: false,
-        explanationDE:
-          "Achtung, Klausurfalle: Verwechsle nicht das freie Marktmodell mit der staatlichen Sozialpolitik der Sozialen Marktwirtschaft!",
-        explanationZH:
-          "注意考场高频失分陷阱：完全竞争市场模型纯属自发机制，严禁混淆自由市场出清与国家社会福利干预！",
+        explanationDE: isSoWi
+          ? "Achtung, Klausurfalle: Verwechsle nicht das freie Marktmodell mit der staatlichen Sozialpolitik der Sozialen Marktwirtschaft!"
+          : "Achtung, Klausurfalle: Alltagsplausibilität ersetzt keine KLP-Fachbegriffsdefinition mit Kausalkette!",
+        explanationZH: isSoWi
+          ? "注意考场高频失分陷阱：完全竞争市场模型纯属自发机制，严禁混淆自由市场出清与国家社会福利干预！"
+          : "注意考场高频失分陷阱：日常经验不能替代考纲术语定义，必须给出规范内涵与因果链条！",
       },
     ],
     xpReward: 25,
@@ -279,8 +288,9 @@ export function compileLessonSteps(
           {
             id: "trap-correct",
             textDE: trapInfo.howToAvoidDE,
-            textZH:
-              "严密论证前提条件：指出该观点混淆了理论模型的出清效率与现实社会福利，规范引用考纲专业术语。",
+            textZH: isSoWi
+              ? "严密论证前提条件：指出该观点混淆了理论模型的出清效率与现实社会福利，规范引用考纲专业术语。"
+              : "严密论证前提条件：划定理论适用边界并辨析易混概念，规范引用考纲专业术语。",
             isCorrect: true,
             explanationDE:
               "Exzellent! Mit dieser Strategie sicherst du dir die volle Punktzahl in AFB II.",
@@ -326,34 +336,44 @@ export function compileLessonSteps(
         textDE: distilled.klausurSatz15NP.musterSatzDE,
         textZH: distilled.klausurSatz15NP.explanationZH,
         isCorrect: true,
-        explanationDE:
-          "15-NP-Meisterleistung! Perfekte Synthese aus Sachurteil (Allokationseffizienz) und Werturteil (Sozialstaatsgebot nach GG Art. 20).",
-        explanationZH:
-          "15 NP 满分水准！严密融合了事实评价（Sachurteil：市场自发配置效率）与价值评价（Werturteil：基本法第 20 条社会国家原则），达到北威州最高评分标准。",
+        explanationDE: isSoWi
+          ? "15-NP-Meisterleistung! Perfekte Synthese aus Sachurteil (Allokationseffizienz) und Werturteil (Sozialstaatsgebot nach GG Art. 20)."
+          : "15-NP-Meisterleistung! Perfekte Synthese aus Sachurteil (Kausalkette mit Fachbegriffen) und Werturteil (kriteriengeleitete Reflexion nach KLP NRW).",
+        explanationZH: isSoWi
+          ? "15 NP 满分水准！严密融合了事实评价（Sachurteil：市场自发配置效率）与价值评价（Werturteil：基本法第 20 条社会国家原则），达到北威州最高评分标准。"
+          : "15 NP 满分水准！严密融合了事实评价（Sachurteil：规范因果链条）与价值评价（Werturteil：考纲标准反思），达到北威州最高评分标准。",
       },
       {
         id: "muster-distractor-market",
-        textDE:
-          "Der Preismechanismus des vollkommenen Marktes führt stets zu optimalen Wohlfahrtsergebnissen, weshalb staatliche Markteingriffe ausnahmslos als wohlstandsmindernd abzulehnen sind.",
-        textZH:
-          "完全竞争市场的价格机制始终能实现最优福利结果，因此国家任何干预无一例外都会损害经济繁荣，应当予以彻底抵制。",
+        textDE: isSoWi
+          ? "Der Preismechanismus des vollkommenen Marktes führt stets zu optimalen Wohlfahrtsergebnissen, weshalb staatliche Markteingriffe ausnahmslos als wohlstandsmindernd abzulehnen sind."
+          : `Die Einseitigkeitsthese zu »${primaryTerm.termDE}« ohne Gegenperspektive und ohne KLP-Kriterien erfüllt den Erwartungshorizont nicht.`,
+        textZH: isSoWi
+          ? "完全竞争市场的价格机制始终能实现最优福利结果，因此国家任何干预无一例外都会损害经济繁荣，应当予以彻底抵制。"
+          : `对 »${primaryTerm.termZH}« 的片面论述：缺反视角、缺考纲标准，不满足评分细则。`,
         isCorrect: false,
-        explanationDE:
-          "Punktabzug in AFB III: Dies ist eine einseitige Markt-Apologie ohne Werturteil. Im NRW-Abitur muss stets das Spannungsverhältnis zum Sozialstaatsgebot reflektiert werden!",
-        explanationZH:
-          "AFB III 严重扣分项：这是片面的单一效率论述，缺乏价值评判。北威州高考要求必须辩证权衡市场效率与基本法社会国家原则之间的张力！",
+        explanationDE: isSoWi
+          ? "Punktabzug in AFB III: Dies ist eine einseitige Markt-Apologie ohne Werturteil. Im NRW-Abitur muss stets das Spannungsverhältnis zum Sozialstaatsgebot reflektiert werden!"
+          : "Punktabzug in AFB III: Einseitige Darstellung ohne Werturteil und ohne KLP-Kriterien erfüllt den Erwartungshorizont nicht!",
+        explanationZH: isSoWi
+          ? "AFB III 严重扣分项：这是片面的单一效率论述，缺乏价值评判。北威州高考要求必须辩证权衡市场效率与基本法社会国家原则之间的张力！"
+          : "AFB III 严重扣分项：片面论述、缺价值评判与考纲标准，不满足期望视野！",
       },
       {
         id: "muster-distractor-planned",
-        textDE:
-          "Die Soziale Marktwirtschaft erfordert die flächendeckende Ersetzung des freien Preismechanismus durch staatliche Festpreise, um absolute Verteilungsgerechtigkeit zu erzwingen.",
-        textZH:
-          "社会市场经济要求在全行业以国家统制定价彻底取代自由价格机制，以强制实现绝对的结果均等。",
+        textDE: isSoWi
+          ? "Die Soziale Marktwirtschaft erfordert die flächendeckende Ersetzung des freien Preismechanismus durch staatliche Festpreise, um absolute Verteilungsgerechtigkeit zu erzwingen."
+          : `Der Allgemeinplatz zu »${primaryTerm.termDE}« ohne Fachbegriffe und ohne kausale Beweisführung ist keine Klausurleistung.`,
+        textZH: isSoWi
+          ? "社会市场经济要求在全行业以国家统制定价彻底取代自由价格机制，以强制实现绝对的结果均等。"
+          : `对 »${primaryTerm.termZH}« 的空泛议论：无考纲术语、无因果论证，不是会考作答。`,
         isCorrect: false,
-        explanationDE:
-          "Theoriefehler: Die Soziale Marktwirtschaft basiert auf dem Prinzip »So viel Markt wie möglich, so viel Staat wie nötig«. Preiskontrollen zerstören die Signalfunktion.",
-        explanationZH:
-          "概念性严重错误：德国社会市场经济的基石是‘尽可能多的市场，尽可能少的国家’。全面统制定价会直接摧毁价格的信号与出清职能。",
+        explanationDE: isSoWi
+          ? "Theoriefehler: Die Soziale Marktwirtschaft basiert auf dem Prinzip »So viel Markt wie möglich, so viel Staat wie nötig«. Preiskontrollen zerstören die Signalfunktion."
+          : "Theoriefehler: Ohne KLP-Fachbegriffe und Kausalkette gibt es im Erwartungshorizont keine Punkte.",
+        explanationZH: isSoWi
+          ? "概念性严重错误：德国社会市场经济的基石是‘尽可能多的市场，尽可能少的国家’。全面统制定价会直接摧毁价格的信号与出清职能。"
+          : "概念性严重错误：没有考纲术语与因果链条，在评分细则中拿不到分。",
       },
     ],
     klausurMusterSatzDE: distilled.klausurSatz15NP.musterSatzDE,

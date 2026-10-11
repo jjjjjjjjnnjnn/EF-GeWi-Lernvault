@@ -14,7 +14,7 @@ const FOX_DIALOGUES_DE = [
   "Ich passe auf deine Notenpunkte auf!",
   "Bereit für die nächste Klausur-Einheit?",
   "Tipp: Schau dir heute die D2-Ebenentrennung an.",
-  "18 Tage Serie – Spitzenleistung im Gymnasium!",
+  "Jeder Tag zählt – bleib im Rhythmus!",
   "Formelansatz zuerst hinschreiben, dann rechnen!",
   "Konjunktiv I bei Zitaten nicht vergessen!",
 ];
@@ -23,15 +23,15 @@ const FOX_DIALOGUES_ZH = [
   "我正在守护你的 Abitur 战力分！",
   "准备好开启今天的下一轮冲刺了吗？",
   "小提示：今天重点复习 D2 客观描述与评判分流。",
-  "18天连胜达成！继续保持学霸冲刺势头！",
+  "每天进步一点，坚持就是学霸节奏！",
   "理科大题切记：先写通用公式原式，再代入数值！",
   "文科引证切记：间接引语严格使用第一虚拟式！",
 ];
 
 export const SidebarPet: FC<SidebarPetProps> = ({
   lang,
-  currentStreak = 18,
-  xpToday = 120,
+  currentStreak = 0,
+  xpToday = 0,
   onOpenFocusSprint,
   onPetClick,
 }) => {

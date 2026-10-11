@@ -74,6 +74,22 @@ describe("Duolingo-style Lesson Step Flow Compiler", () => {
     expect(totalXp).toBeGreaterThanOrEqual(120);
   });
 
+  it("keeps non-SoWi steps free of SoWi-only economics leakage", () => {
+    const chemQuest: ParsedQuestNode = {
+      ...sampleQuest,
+      id: "q-chem-unknown",
+      title: "Unbekanntes Spezialthema ohne Bankeintrag",
+    };
+    const result = compileLessonSteps(chemQuest, "Chemie");
+    const blob = JSON.stringify(result.steps);
+    expect(blob).not.toContain("经济机制");
+    expect(blob).not.toContain("完全竞争市场");
+    expect(blob).not.toContain("社会市场经济");
+    expect(blob).not.toContain("基本法第 20 条");
+    expect(blob).not.toContain("割线极限逼近切线");
+    expect(blob).not.toContain("f'(x)");
+  });
+
   it("compiles into a lightweight 3-step flow with lecture first in concept_light mode", () => {
     const lightResult = compileLessonSteps(sampleQuest, "SoWi", "concept_light");
     expect(lightResult.flowMode).toBe("concept_light");
