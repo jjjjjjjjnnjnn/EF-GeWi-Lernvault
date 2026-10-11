@@ -80,7 +80,7 @@ Scansion Analysis of Macbeth's "Tomorrow"-Soliloquy (Act 5, Scene 5):
 **Bezug zum Konzept**: `Die Hexen-Beschwoerungen in Macbeth weichen radikal vom regulaeren Blankvers ab: Sie sind in unheimlichem trochaeischem Tetrameter verfasst ("Double, double toil and trouble").`
 
 ## Schritt 4 — ausprobieren: Sandbox-Auftrag Soliloquy-Analyse Macbeth
-Kontinuitaet: Vorher Englisch-Attention-Economy-Focus-L1.md | Nachher Englisch-Abitur-Exam-Training.md. Krise dieser Episode: How does a 400-year-old stage speech reveal the total psychological collapse of a tyrant? Zielgroessen: Blank Verse, Iambic Pentameter, Soliloquy, Metaphor, Hamartia
+Kontinuitaet: Vorher Englisch-Media-Manipulation-Fake-News-L1.md | Nachher Englisch-Shakespeare-Macbeth-Romeo-L1.md. Krise dieser Episode: How does a 400-year-old stage speech reveal the total psychological collapse of a tyrant? Zielgroessen: Blank Verse, Iambic Pentameter, Soliloquy, Metaphor, Hamartia
 
 BEISPIEL（正确例题示范，含教具操作与解答）：
 
