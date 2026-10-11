@@ -30,6 +30,7 @@ Um meine individuelle Vorbereitung exakt abzustimmen, wäre ich Ihnen für eine 
 2. **Englisch**:
    - Welche Lektüre (Young Adult Novel) ist für unseren Kurs vorgesehen?
    - Liegt der Fokus des dritten Bezugskulturraums auf Nigeria oder einem anderen Raum?
+   - Welche Variante gilt für Teil B der Klausur (z. B. Hörverstehen vs. alternative Aufgabe), und sind ein Wörterbuch bzw. Audio-Hilfsmittel zugelassen? (G6/G7)
 
 3. **Musik**:
    - Welches konkrete Rahmenthema bzw. Werkkorpus (z. B. Programmmusik/Affektenlehre oder Filmmusik) steht in diesem Halbjahr im Zentrum?
@@ -66,6 +67,7 @@ Mit freundlichen Grüßen
 | Englisch · Lektüre | | 补 `Textsortenmerkmale-und-Belegtechniken.md` 文学段；更新 `Lernbaum-Englisch.md` §4 | ⬜ |
 | Englisch · 第三文化国家 | | 若 ≠ Nigeria → 重建 `Bezugskultur-Nigeria-LK.md`（约 1 篇）；若 = Nigeria → 去掉 `[据推断]` | ⬜ |
 | Englisch · Teil B 形式 + 日期 | | 填 `02_Englisch/Lehrplan.md` §3；圈定 `Klausur-Teil-B-Doppelpack.md` 对应轨 | ⬜ |
+| Englisch · G7 词典/视听 Hilfsmittel | | 确认 Wörterbuch 与 Hörverstehen-Abspiel 许可后，填 `02_Englisch/Lehrplan.md` §3 并同步 `Klausur-Teil-B-Doppelpack.md` 备考说明 | ⬜ |
 | Musik · Halbjahr-Thema | | 勾选 `09_Musik-mündl/Lehrplan.md` §3；假设 → 确认；重排 `Lernbaum-Musik.md` §4 优先级 | ⬜ |
 | Musik · Hörbeispiele | | 建「例曲 → 对应笔记」对照表 | ⬜ |
 | Musik · 日期/时长/Kurs 类型 | | 填 TODO；若 LK → 检查 LK 专属篇增补 | ⬜ |
@@ -91,3 +93,4 @@ Mit freundlichen Grüßen
 
 - 2026-09-25：创建。含完整版（4 科 13 问）+ 精简版（4 问）+ 回复落地动作表。
 - 2026-10-11：Nachricht Sport 条补 A11 正问一句（2 个 Akzentuierungs-IF 是哪两个）；正文=精简问，15 项全量靠回复落地动作表追问。
+- 2026-10-11：Nachricht Englisch 条补 G6/G7 合并一问（Teil B 二选一 + Wörterbuch/Audio-Hilfsmittel 许可）；落地表加 G7 行。
