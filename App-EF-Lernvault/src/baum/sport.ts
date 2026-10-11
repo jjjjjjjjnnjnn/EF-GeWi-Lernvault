@@ -357,7 +357,7 @@ export const sportBaum: FachBaum = {
                 klausurZH: "口试规则解释题：用自己的话说核心，不背条文",
                 leitfrageDE: "Was regelt die Regel und wozu?",
                 leitfrageZH: "这条规则管什么、为了什么？",
-                noteKeywords: ["regeln", "sinn", "beispiel", "erklaeren"],
+                noteKeywords: ["regeln", "sinn", "beispiel", "erklären"],
                 children: [],
               },
               {

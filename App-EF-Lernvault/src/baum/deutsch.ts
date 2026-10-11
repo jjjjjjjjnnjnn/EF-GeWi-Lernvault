@@ -3,7 +3,7 @@ export const deutschBaum: FachBaum = { fach: "Deutsch", nameDE: "Deutsch", nameZ
 { id: "deutsch/if1", level: 1, code: "IF 1", titleDE: "Sprache", titleZH: "语言", operatoren: [], klausurDE: "", klausurZH: "", leitfrageDE: "", leitfrageZH: "", noteKeywords: [], children: [
 { id: "deutsch/if1/sprachebenen", level: 2, code: "", titleDE: "Sprachebenen", titleZH: "语言层面", operatoren: [], klausurDE: "", klausurZH: "", leitfrageDE: "", leitfrageZH: "", noteKeywords: [], children: [
 { id: "deutsch/if1/sprachebenen/phonologie", level: 3, code: "", titleDE: "Phonologie", titleZH: "语音", operatoren: ["untersuchen", "analysieren"], klausurDE: "Aufgabenart I-II, AFB I-II, Analyse-Baustein Sprache", klausurZH: "任务类型 I-II,AFB I-II,语言分析模块", leitfrageDE: "Welche Lautmittel praegen den Ton?", leitfrageZH: "哪些语音手段塑造了语气?", noteKeywords: ["phonologie", "lautmittel", "sprachebene"], children: [] },
-{ id: "deutsch/if1/sprachebenen/morphologie-syntax", level: 3, code: "", titleDE: "Morphologie-Syntax", titleZH: "词法句法", operatoren: ["untersuchen", "analysieren"], klausurDE: "Aufgabenart I-II, AFB II Schwerpunkt, Analyse-Baustein Form", klausurZH: "任务类型 I-II,AFB II 重点,形式分析模块", leitfrageDE: "Was leistet der Satzbau fuer die Wirkung?", leitfrageZH: "句式为表达效果起什么作用?", noteKeywords: ["morphologie", "syntax", "satzbau"], children: [] },
+{ id: "deutsch/if1/sprachebenen/morphologie-syntax", level: 3, code: "", titleDE: "Morphologie-Syntax", titleZH: "词法句法", operatoren: ["untersuchen", "analysieren"], klausurDE: "Aufgabenart I-II, AFB II Schwerpunkt, Analyse-Baustein Form", klausurZH: "任务类型 I-II,AFB II 重点,形式分析模块", leitfrageDE: "Was leistet der Satzbau für die Wirkung?", leitfrageZH: "句式为表达效果起什么作用?", noteKeywords: ["morphologie", "syntax", "satzbau"], children: [] },
 { id: "deutsch/if1/sprachebenen/semantik-pragmatik", level: 3, code: "", titleDE: "Semantik-Pragmatik", titleZH: "语义语用", operatoren: ["analysieren", "deuten"], klausurDE: "Aufgabenart II, AFB II-III, Uebergang Analyse zu Deutung", klausurZH: "任务类型 II,AFB II-III,由分析到阐释过渡", leitfrageDE: "Was bedeutet die Wortwahl im Kontext?", leitfrageZH: "词语选择在语境中意味着什么?", noteKeywords: ["semantik", "pragmatik", "wortwahl"], children: [] }
 ] },
 { id: "deutsch/if1/sprachvarietaeten", level: 2, code: "", titleDE: "Sprachvarietaeten", titleZH: "语言变体", operatoren: [], klausurDE: "", klausurZH: "", leitfrageDE: "", leitfrageZH: "", noteKeywords: [], children: [
@@ -81,7 +81,7 @@ export const deutschBaum: FachBaum = { fach: "Deutsch", nameDE: "Deutsch", nameZ
         code: "Pruefung",
         titleDE: "Abitur-Aufgabenarten, Sprachphilosophie und digitale Medien",
         titleZH: "会考题型全览、语言哲学与数字媒体",
-        operatoren: ["analysieren", "eroertern", "gestalten"],
+        operatoren: ["analysieren", "erörtern", "gestalten"],
         klausurDE: "Aufgabenarten I-IV, Filterblasen in der digitalen Oeffentlichkeit und Sprachtheorien.",
         klausurZH: "四类官方高考题型、算法回音室过滤器气泡与语言思维哲学分析",
         leitfrageDE: "Wie gestaltet sich sprachliche und mediale Urteilskraft?",

@@ -424,10 +424,10 @@ export const bioBaum: FachBaum = {
         code: "IF 5",
         titleDE: "Neurobiologie, Hormone und Evolution",
         titleZH: "神经生物学、激素调节与进化论",
-        operatoren: ["erklaeren", "beurteilen", "vergleichen"],
+        operatoren: ["erklären", "beurteilen", "vergleichen"],
         klausurDE: "Rezeptorpotenzial, Stressachse (HPA) und synthetische Evolutionstheorie.",
         klausurZH: "感受器电位、应激反应激素调节与综合进化论变异选择",
-        leitfrageDE: "Wie reagiert der Organismus auf Umwelt und wie veraendert er sich ueber Generationen?",
+        leitfrageDE: "Wie reagiert der Organismus auf Umwelt und wie veraendert er sich über Generationen?",
         leitfrageZH: "机体如何感知应激并在世代间进化？",
         noteKeywords: ["hormone", "stressreaktion", "sinneszellen", "rezeptorpotenzial", "evolution", "synthetische evolutionstheorie", "hormone und stressreaktion", "sinneszellen und rezeptorpotenzial"],
         children: []

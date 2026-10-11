@@ -584,7 +584,7 @@ export const sowiBaum: FachBaum = {
         code: "Abitur",
         titleDE: "Abitur-Fokussierungen: Wirtschaftspolitik und Ungleichheit",
         titleZH: "会考深度聚焦：经济政策与社会不平等",
-        operatoren: ["analysieren", "beurteilen", "eroertern"],
+        operatoren: ["analysieren", "beurteilen", "erörtern"],
         klausurDE: "Fokussierungen IF4 Wirtschaftspolitik und IF6 Soziale Ungleichheit.",
         klausurZH: "北威州会考官方聚焦模块与大题专项突破",
         leitfrageDE: "Welche Synthesen verlangt das Abitur in SoWi?",

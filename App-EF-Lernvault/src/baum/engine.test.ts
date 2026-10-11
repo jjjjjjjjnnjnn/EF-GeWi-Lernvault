@@ -133,7 +133,7 @@ describe("baum engine", () => {
     expect(a1.heuhaufen).not.toMatch(/\s{2,}/);
   });
 
-  it("sucheBaum gibt bei leerer Query nichts zurueck", () => {
+  it("sucheBaum gibt bei leerer Query nichts zurück", () => {
     const index = baueSuchIndex([baumFixture()]);
     expect(sucheBaum(index, "")).toEqual([]);
     expect(sucheBaum(index, "   ")).toEqual([]);
@@ -160,7 +160,7 @@ describe("baum engine", () => {
     const baum = baumFixture();
     const a1 = flacheBaum(baum).find((n) => n.id === "a1")!;
     const notizen: NotizStichwort[] = [
-      { id: "n1", fach: "SoWi", thema: "Gini-Koeffizient", text: "Mass fuer Ungleichheit", operatoren: [] },
+      { id: "n1", fach: "SoWi", thema: "Gini-Koeffizient", text: "Mass für Ungleichheit", operatoren: [] },
       { id: "n2", fach: "SoWi", thema: "Wahlrecht", text: "Demokratie und Wahlen", operatoren: [] },
       { id: "n3", fach: "SoWi", thema: "Einkommen", text: "Der GINI steigt weiter", operatoren: [] },
     ];
@@ -179,11 +179,11 @@ describe("baum engine", () => {
     expect(findeNotizen(leer, notizen)).toEqual([]);
   });
 
-  it("masteryFuerKnoten matcht Keyword in Thema und gibt Maximum zurueck", () => {
+  it("masteryFuerKnoten matcht Keyword in Thema und gibt Maximum zurück", () => {
     const k = knoten({ id: "x", noteKeywords: ["gini"] });
     const eintraege: MasteryEintrag[] = [
       { thema: "Gini-Koeffizient anwenden", fach: "SoWi", pMastery: 0.5 },
-      { thema: "Gini-Koeffizient erklaeren", fach: "SoWi", pMastery: 0.9 },
+      { thema: "Gini-Koeffizient erklären", fach: "SoWi", pMastery: 0.9 },
       { thema: "Wahlrecht", fach: "SoWi", pMastery: 0.99 },
     ];
     expect(masteryFuerKnoten(k, eintraege)).toBeCloseTo(0.9);
@@ -195,7 +195,7 @@ describe("baum engine", () => {
     expect(masteryFuerKnoten(k, eintraege)).toBeCloseTo(0.42);
   });
 
-  it("masteryFuerKnoten gibt null ohne Treffer oder ohne Keywords zurueck", () => {
+  it("masteryFuerKnoten gibt null ohne Treffer oder ohne Keywords zurück", () => {
     const k = knoten({ id: "x", noteKeywords: ["gini"] });
     expect(masteryFuerKnoten(k, [{ thema: "Wahlrecht", fach: "SoWi", pMastery: 0.9 }])).toBeNull();
     expect(masteryFuerKnoten(k, [])).toBeNull();

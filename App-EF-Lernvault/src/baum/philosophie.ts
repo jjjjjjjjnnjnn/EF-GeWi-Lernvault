@@ -171,7 +171,7 @@ export const philosophieBaum: FachBaum = {
                 klausurZH: "论证重构：从理性前提推出尊严和自我立法结论，配例子",
                 leitfrageDE: "Warum begründet Vernunft Würde?",
                 leitfrageZH: "理性为什么能推出尊严？",
-                noteKeywords: ["kant", "vernunftwesen", "wuerde", "selbstgesetzgebung"],
+                noteKeywords: ["kant", "vernunftwesen", "würde", "selbstgesetzgebung"],
                 children: [],
               },
               {
@@ -469,7 +469,7 @@ export const philosophieBaum: FachBaum = {
         code: "IF 4",
         titleDE: "Rechts- und Staatsphilosophie, Gerechtigkeit",
         titleZH: "国家政治哲学与正义论",
-        operatoren: ["erlaeutern", "beurteilen"],
+        operatoren: ["erläutern", "beurteilen"],
         klausurDE: "Vertragstheorien (Hobbes, Locke, Rousseau) und Rawls Gerechtigkeitstheorie.",
         klausurZH: "霍布斯洛克社会契约论与罗尔斯无知之幕差异原则",
         leitfrageDE: "Was rechtfertigt staatliche Herrschaft und was ist gerecht?",

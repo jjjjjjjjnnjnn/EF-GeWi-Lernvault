@@ -71,7 +71,7 @@ export const englischBaum: FachBaum = { fach: "Englisch", nameDE: "Englisch", na
         code: "Kultur",
         titleDE: "Target Cultures (UK, USA, Nigeria)",
         titleZH: "英语国家与后殖民文化聚焦",
-        operatoren: ["analysieren", "vergleichen", "erlaeutern"],
+        operatoren: ["analysieren", "vergleichen", "erläutern"],
         klausurDE: "Tradition and change in the UK, American Dream and diversity in Nigeria.",
         klausurZH: "英国社会传统变迁、美国梦与现实、尼日利亚后殖民历史与多元社会",
         leitfrageDE: "How do historical legacies shape modern societies?",

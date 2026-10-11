@@ -64,7 +64,7 @@ export const matheBaum: FachBaum = { fach: "Mathe", nameDE: "Mathematik", nameZH
         titleDE: "Extremwertprobleme und Optimierung",
         titleZH: "最值优化与实际建模",
         operatoren: ["modellieren", "bestimmen"],
-        klausurDE: "Zielfunktion mit Nebenbedingung aufstellen, Extremstelle bestimmen und Randwerte pruefen.",
+        klausurDE: "Zielfunktion mit Nebenbedingung aufstellen, Extremstelle bestimmen und Randwerte prüfen.",
         klausurZH: "目标函数与约束条件构造、求导判定极值与端点检验",
         leitfrageDE: "Wie loest man Optimierungsaufgaben mit Nebenbedingungen?",
         leitfrageZH: "如何利用导数求解带约束条件的最优化问题？",

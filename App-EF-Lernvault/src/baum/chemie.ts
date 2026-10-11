@@ -26,7 +26,7 @@ export const chemieBaum: FachBaum = {
         code: "IF 3",
         titleDE: "Elektrochemie und Redoxprozesse",
         titleZH: "电化学与氧化还原过程",
-        operatoren: ["berechnen", "darstellen", "erklaeren"],
+        operatoren: ["berechnen", "darstellen", "erklären"],
         klausurDE: "Galvanische Zelle, Standardpotenziale, Nernst-Gleichung und Elektrolyse loesen.",
         klausurZH: "原电池、电极电势差与氧化还原电子转移计算",
         leitfrageDE: "Wie wird chemische Energie in elektrische Energie umgewandelt?",
@@ -56,7 +56,7 @@ export const chemieBaum: FachBaum = {
         titleDE: "Thermodynamik und Kinetik",
         titleZH: "化学热力学与反应动力学",
         operatoren: ["berechnen", "auswerten"],
-        klausurDE: "Reaktionsenthalpie ueber Satz von Hess und Bindungsenergien bestimmen.",
+        klausurDE: "Reaktionsenthalpie über Satz von Hess und Bindungsenergien bestimmen.",
         klausurZH: "盖斯定律路径法计算反应焓变与能量守恒",
         leitfrageDE: "Wie berechnet man die Energiebilanz chemischer Reaktionen?",
         leitfrageZH: "如何计算化学反应的能量收支？",
@@ -69,11 +69,11 @@ export const chemieBaum: FachBaum = {
             titleDE: "Hess-Pfadmethode (CN-Methode)",
             titleZH: "盖斯定律路径法 (CN-Methode)",
             operatoren: ["berechnen"],
-            klausurDE: "Reaktionsenthalpien schrittweise ueber Standardbildungsenthalpien ermitteln.",
+            klausurDE: "Reaktionsenthalpien schrittweise über Standardbildungsenthalpien ermitteln.",
             klausurZH: "生成焓与反应焓阶梯计算程序",
             leitfrageDE: "Wie setzt man Hess sche Zyklen an?",
             leitfrageZH: "如何规范列写盖斯循环？",
-            noteKeywords: ["hess-pfadmethode", "ionengleichung in fuenf schritten", "ionengleichung"],
+            noteKeywords: ["hess-pfadmethode", "ionengleichung in fünf schritten", "ionengleichung"],
             children: []
           }
         ]
