@@ -4,124 +4,135 @@ thema: "Sozialstrukturanalyse: Sinus-Milieus, soziale Lagen und moderne Dimensio
 level: 1
 ziel: Klausur
 xp: 100
-operatoren: [analysieren, vergleichen, bewerten]
+operatoren: [analysieren, vergleichen, beurteilen]
 klausurrelevant: true
-datum: 2026-10-03
-tags: [EF, SoWi, Sozialstruktur, Sinus-Milieus, Ungleichheit, soziale-Schichtung, Habitus, Bourdieu]
-version: Lesson-v3
+datum: 2026-10-11
+tags: [EF, SoWi, Sozialstruktur, Sinus-Milieus, Ungleichheit]
+version: Enterprise-v5
 ---
 
-# Lernreise: Sozialstrukturanalyse: Sinus-Milieus, soziale Lagen und moderne Dimensionen von Ungleichheit (L1, Ziel Klausur)
+# Lernreise: Sozialstrukturanalyse: Sinus-Milieus, soziale Lagen und moderne Dimensionen von Ungleichheit (L1, Ziel: Klausur)
 
-<!-- Campaign: Sozialstruktur-und-soziale-Ungleichheit | Episode 4/10 | Krise: Reichen traditionelle Klassen- und Schichtmodelle (Einkommen und Beruf) noch aus, um die zersplitterte Lebenswirklichkeit postmoderner Gesellschaften zu verstehen? | Zielgroessen: Vertikale und horizontale Ungleichheit, Schichtmodelle nach Dahrendorf und Geissler, Sinus-Milieus, Grundorientierung, Habitus nach Bourdieu | Tool: balance-board -->
+> Didaktischer Archetyp A: Sozialwissenschaftliche Spiel- und Kausalschleife (Soziale Lage vs. Grundorientierung -> Lebenswelt -> Milieu)
+> Werkzeug ID: [Werkzeug: balance-board]
 
-## Schritt 1 — entdecken: Die Illusion des einheitlichen Mittelstands
-ZIELE (3条，本节15分钟学完能做到——先读中文，再记德语)：
+---
 
-1. 中文：能深刻剖析德国社会结构分析演进历程：从传统纵向阶层模型（vertikale Schichtmodelle: Dahrendorf-Haus, Geissler）向多元生活环境与生活方式模型（horizontale Differenzierung: Sinus-Milieus）的范式转移。
-2. 中文：能熟练掌握西诺斯环境模型（Sinus-Milieu-Modell）的双轴坐标系：纵轴为社会地位（soziale Lage: Einkommen, Bildung, Beruf），横轴为基本价值取向（Grundorientierung: Tradition, Modernisierung, Neuorientierung）。
-3. 中文：能在高考政治社科大题（AFB I/II/III）中结合布迪厄（Bourdieu）文化资本与惯习理论，批判性评估现代社会不平等的交叉性（Intersektionalitaet: Geschlecht, Migration, Herkunft）与政治极化风险。
+## Schritt 1 — entdecken
 
-### Hook / Phaenomen
+真实案例: 两个40岁居民同住在科隆Ehrenfeld一栋公寓楼的对门。两人税后月收入均为3.800欧元，且都拥有硕士文凭。按传统社会分层理论，两人属于毫无差别的“较高技术中产”。然而，一位是软件工程师，日常在有机食品店采购，骑着电动物流自行车上下班，热衷素食体验店并坚定投票给绿党；另一位是财务审计主管，驾驶大排量柴油SUV，在射击协会吹传统铜管乐，对大都市精英极度不信任，政治立场偏向保守民粹。
 
-Zwei vierzigjaehrige Buerger leben Tuer an Tuer im selben Mehrfamilienhaus in Koeln-Ehrenfeld. Beide verdienen auf den Cent genau 3.800 Euro netto im Monat und besitzen einen aehnlichen akademischen Bildungsabschluss. Nach klassischen soziologischen Schichtmodellen muessten beide exakt derselben 'gehobenen Mittelschicht' angehoeren. Doch waehrend der eine als Software-Ingenieur im oekologischen Bio-Laden einkauft, mit dem Lastenrad zur Arbeit faehrt, vegane Pop-up-Restaurants besucht und die Gruenen waehlt, faehrt der andere als Controller einen hubraumstarken Diesel-SUV, schaetzt traditionelle Blasmusik im Schuetzenverein, misstraut kosmopolitischen Eliten und tendiert zu konservativ-populistischen Positionen. Wie kann es sein, dass zwei Menschen mit voellig identischem Einkommen und Bildungsgrad in zwei voellig inkompatiblen kulturellen und politischen Parallelwelten leben? Die moderne Soziologie belegt: Einkommen und Beruf allein erklaeren laengst nicht mehr, wie Menschen fuehlen, konsumieren und waehlen!
+设问 (Leitfrage): 为什么收入与学历完全相同的两个人，生活在完全割裂的文化消费与政治认同平行世界中？传统阶层论还够用吗？
 
-`Klausur-Satz: Waehrend traditionelle Schichtmodelle soziale Ungleichheit primaer ueber vertikale Kriterien wie Einkommen und Berufsstatus definieren, erfassen die Sinus-Milieus die gesellschaftliche Wirklichkeit ganzheitlich durch die Verknuepfung von sozialer Lage mit alltagsweltlichen Grundorientierungen und Wertewelten.`
+- [Option A] 传统垂直阶层论: 仅以收入与职业地位界定阶层，将两人划入相同的均质中产。
+  - Folge: 忽视文化价值观差异，无法解释当今消费选择与投票行为的深刻分化。
+- [Option B] 西诺斯社会环境论: 将纵轴社会地位与横轴基本价值取向相交叉，判定两人分属完全不同的生活环境。
+  - Folge: 准确捕捉生活方式与政治认同的多元化，解释现代多党竞争下传统政党基本盘的解体。
 
-## Schritt 2 — entdecken: Das soziologische Fachvokabular
-PRETRAINING术语盒（核心4词，先读三遍中德，合书自测中文->德语）：
+生活直觉比喻: 传统阶层模型像一栋垂直住宅楼（Dahrendorf-Haus），只关心你住在第几层；西诺斯模型像一张二维文化地图，既看你住在第几层，又看你在价值罗盘上朝哪个方向探索。
 
-- 纵向与横向不平等 — Vertikale & Horizontale Ungleichheit: Vertikale Kriterien (Einkommen, Vermoegen, formale Bildung, Macht) begruenden hierarchische Besser- bzw. Schlechterstellungen; horizontale Kriterien (Alter, Geschlecht, ethnische Herkunft, Region) differenzieren Lebensrisiken unabhaengig vom Status.
-- 西诺斯社会环境 — Sinus-Milieus: Ein soziologisches Zielgruppenmodell, das Menschen anhand ihrer Wertehaltungen, Lebensstile, Konsumpraeferenzen und Zukunftserwartungen in relationale soziale Milieus clusterartig zusammenfasst.
-- 价值取向 — Grundorientierung: Die normative Werteachse im Sinus-Modell, die von der Festhaltung an Tradition und Pflichterfuellung (Traditionelle Werte) ueber Modernisierung (Konsum, Individualisierung) bis zur Neuorientierung (Postmaterialismus, Experimentierfreude) reicht.
-- 惯习与资本形式 — Habitus & Kapitalformen (Bourdieu): Das durch soziale Herkunft verinnerlichte Denk-, Wahrnehmungs- und Handlungsmuster, welches durch das Verhaeltnis von oekonomischem, kulturellem (Bildung) und sozialem Kapital (Netzwerke) bestimmt wird.
+AUFLÖSUNG (nach der Wahl lesen)
 
-## Schritt 3 — entdecken: Die Milieu-Landschaft auf einen Blick
-ENTDECKEN（1概念 + 1文字图解）：
+Mechanismus zu Option A: Das traditionelle Modell reduziert Ungleichheit auf oekonomisches Kapital (Einkommen, Vermoegen, Berufsstatus). Dies funktionierte in der homogenen Nachkriegsgesellschaft, verfehlt aber die Differenzierung postmoderner Wohlstandsgesellschaften.
+
+Mechanismus zu Option B: Das Sinus-Modell kreuzt die vertikale soziale Lage mit der horizontalen Grundorientierung (Tradition -> Modernisierung -> Neuorientierung). Es macht sichtbar, wie Individuen bei identischem Einkommen aufgrund differierender Werthaltungen und Habitusformen in vollig unterschiedlichen Lebenswelten existieren.
+
+一句话因果本质: 收入决定一个人能在什么经济区间消费，价值取向决定他最终选择消费什么、认同谁以及投给谁。
+
+Klausur-Satz: `Waehrend traditionelle Schichtmodelle soziale Ungleichheit primaer ueber vertikale Kriterien wie Einkommen und Berufsstatus definieren, erfassen die Sinus-Milieus die gesellschaftliche Wirklichkeit ganzheitlich durch die Verknuepfung von sozialer Lage mit alltagsweltlichen Grundorientierungen und Wertewelten.`
+
+---
+
+## Schritt 2 — ausprobieren
+
+交互沙盒: [Werkzeug: balance-board]
+
+AUFGABE (analysieren, AFB II):
+1. Vergleiche im Sinus-Raster drei repraesentative Milieus: Konservativ-Gehobenes Milieu, Adaptiv-Pragmatische Mitte und Prekaeres Milieu anhand ihrer Achsenkoordinaten.
+2. Analysiere, welche Konsumpraeferenzen und politischen Ausrichtungen sich aus der Kreuzung von sozialer Lage und Grundorientierung ergeben.
+
+HILFE:
+- Richtung: Bestimme zuerst die vertikale Einstufung (Oberschicht, Mitte, Unterschicht) und pruefe anschliessend die Werteachse (Pflichtbewusstsein, Pragmatismus, Zukunftsangst).
+- Richtung: Leite daraus die typischen Konsum- und Wahlentscheidungen ab, ohne gesellschaftliche Ausgrenzung auf reinen Lebensstil zu reduzieren.
+
+COMPLETION (Lückentext):
+- Das Konservativ-Gehobene Milieu verbindet eine privilegierte soziale Lage mit ___.
+- Das Prekaere Milieu ist gepraegt von materieller Ausgrenzung, Zukunftsangst und einer hohen ___ bei Wahlen.
+
+MUSTERLOESUNG:
+Das Konservativ-Gehobene Milieu verbindet eine hohe soziale Lage (Oberschicht) mit Verantwortungs- und Ordnungswerten; es waehlt traditionell buergerlich-konservativ. Die Adaptiv-Pragmatische Mitte strebt nach Flexibilitaet und sozialer Absicherung im Mainstream. Das Prekaere Milieu erfahrt reale Benachteiligung, fuehlt sich gesellschaftlich abgehaengt und weist eine ueberdurchschnittlich hohe Nichtwaehler- sowie Protestwaehlerquote auf.
+
+Klausur-Satz: `Die politische Polarisierung entsteht zunehmend im wertebasierten Spannungsfeld zwischen kosmopolitisch-postmateriellen und lokal-sicherheitsorientierten traditionellen oder prekaeren Milieus.`
+
+---
+
+## Schritt 3 — entdecken
+
+中文理解: 西诺斯环境模型不是凭空产生的商业图表，而是社会学为应对“后工业社会阶级认同瓦解”而形成的范式转移：从刚性金字塔演进为流动的社会空间。
 
 ```diagram
-Das Sinus-Milieu-Raster der Bundesrepublik Deutschland:
-
-Soziale Lage (Vertikale Achse: Oberschicht bis Unterschicht):
-  HOCH    |   [ Konservativ-   ]   [ Postmaterielle ]   [ Milieu der      ]
-          |   [ Gehobenes      ]                        [ Performer       ]
-          |   [ Milieu         ]                        [                 ]
-  MITTEL  |   [ Traditionelles ]   [ Adaptiv-       ]   [ Neo-Oekologische]
-          |   [ Milieu         ]   [ Pragmatische   ]   [                 ]
-          |                        [ Mitte          ]
-  UNTEN   |   [ Prekaeres      ]                        [ Dynamische      ]
-          |   [ Milieu         ]                        [ Expeditiven     ]
-          +----------------------------------------------------------------->
-              Traditionelle Werte       Modernisierung          Neuorientierung /
-              (Pflicht, Ordnung)        (Status, Individualismus) Experimentierfreude
-                                    Grundorientierung (Horizontale Werte-Achse)
+[ Traditionelles Schichtmodell: Nur vertikale Achse Einkommen und Beruf ]
+->
+[ Wertewandel und Pluralisierung der Lebensstile seit den 1970er Jahren ]
+->
+[ Sinus-Milieu-Raster: Vertikale soziale Lage kreuzt horizontale Grundorientierung ]
+->
+[ Erklaerung von Konsum, Mediennutzung und Parteibindungs-Zerfall ]
 ```
 
-## Schritt 4 — ausprobieren: Das Milieu-Labor der Lebensstile
-[Werkzeug: balance-board]
-Balanciere auf dem soziologischen Balance-Board die Charakteristika dreier exemplarischer Milieus im Vergleich:
+考纲核心三词 (KLP-Termini):
 
-| Sinus-Milieu | Soziale Lage (Vertikal) | Grundorientierung (Horizontal) | Typische Konsum- und Lebenspraeferenzen | Politische Haltung / Wahlaffinitaet |
-| :--- | :--- | :--- | :--- | :--- |
-| **Konservativ-Gehobenes Milieu** | Oberschicht / Obere Mitte | Bewahrung, Pflichtbewusstsein, Ordnung | Hochwertige Klassiker, Kunstausstellungen, Kulturreisen | Buergerlich-konservativ, Bewahrung von Stabilitaet und Tradition |
-| **Adaptiv-Pragmatische Mitte** | Mittlere Lage | Flexibilitaet, Sicherheit, pragmatische Nuetzlichkeit | Mainstream-Konsum, Familienfokus, technologische Anpassung | Pragmatisch-wechselhaft, Beduerfnis nach sozialer Absicherung |
-| **Prekaeres Milieu** | Untere Lage | Ausgrenzungserfahrungen, Zukunftsangst, Resignation | Discounter-Einkauf, Second-Hand, Gefuehl des Abgehaengtseins | Hohe Nichtwaehlerquote, Anfaelligkeit fuer Protest- und Populismusparteien |
+1. **Sinus-Milieus** (西诺斯社会环境): 一个将人群按价值观念、生活方式、消费偏好与未来预期聚合为群体的社会学目标群模型。
+2. **Grundorientierung** (基本价值取向): 西诺斯模型中的横轴，从传统（义务、秩序）经现代化（地位、个人主义）延伸至重新定向（后物质、多元实验）。
+3. **Habitus & Kulturkapital (Bourdieu)**: 通过家庭出身内化的思维与行为模式，使阶层差异以隐蔽的文化教养和生活品味形式世代再生产。
 
-*Erkenntnis*: Die politische Polarisierung entsteht nicht mehr nur an der Grenze zwischen Arm und Reich, sondern vor allem im Wertekonflikt zwischen universalistisch-kosmopolitischen Milieus (Postmaterielle) und lokal-sicherheitsorientierten Milieus (Prekaere / Traditionelle).
+Klausur-Satz: `Das Sinus-Milieu-Raster ueberwindet rein oekonomische Klassengrenzen, indem es soziale Lagen mit horizontalen Wertewelten verknuepft und so die Fragmentierung moderner Gesellschaften abbildet.`
 
-`Klausur-Satz: Bei Aufgaben zu Sozialstrukturanalyse: Sinus-Milieus, soziale Lagen und moderne Dimensionen von Ungleichheit muss die theoriegeleitete Begruendung stets durch exakte Fachtermini und empirische Belege abgesichert werden.`
+---
 
-## Schritt 5 — check: Das Konzeptduell
-VERGLEICH: Dahrendorf-Haus (Schichtmodell) versus Sinus-Milieus (Lebensweltmodell)
+## Schritt 4 — check
 
-- **Dahrendorf-Haus / Schichtmodelle (1960er Jahre)**: Bildet die Gesellschaft als starres, vertikal geschichtetes Gebaeude mit festen Zimmerdecken und Mauern ab (Elite, Dienstklasse, Arbeiter, Unterschicht). Kriterium ist fast ausschliesslich die berufliche Hierarchie und das Einkommen; kulturelle Diversitaet wird ausgeblendet.
-- **Sinus-Milieus (Gegenwart)**: Bildet die Gesellschaft als dynamisches, vieldimensionales Gelbe-Seiten-Flaechendiagramm ('Kartoffel-Grafik') ab. Grenzen zwischen den Milieus sind poroes und fliessend. Zwei Individuen mit demselben Einkommen koennen volkommen verschiedenen Welten angehoeren, weil ihre Wertvorstellungen differieren.
+中文理解: 很多学生在考试中容易产生极端误区：要么把贫富差距完全庸俗化为“不过是个人的生活品味”，要么以为只要是穷人就一定具有相同的价值诉求。
 
-## Schritt 6 — szenario: Die Klausuraufgabe
-In einer Klausur der Q-Phase analysierst du den Wandel von Wahlergebnissen und Parteibindungen in einer deutschen Grossstadt.
+Fehlvorstellung:
+- 误区: 西诺斯模型证明传统阶级不平等已被彻底消灭，社会底层的处境纯粹是因为他们选择了低俗的生活方式。
+- 考官扣分真相: 阅卷严厉扣除将客观经济压迫主观化的回答。德国财富基尼系数高达约 0.78，贫富分化依然是冷酷的客观现实。西诺斯模型补充了主观层面的认知，绝不能用文化品味去洗白物质匮乏与权力不对称。
 
-1. **AFB I**: Stelle die beiden Achsen des Sinus-Milieu-Modells dar und ordne das 'Milieu der Performer' und das 'Prekaere Milieu' in dieses Koordinatensystem ein.
-2. **AFB II**: Analysiere, warum die traditionellen Volksparteien (SPD und CDU) in den letzten Jahrzehnten dramatisch an Stammwaehlern verloren haben, indem du den Zerfall milieuspezifischer Lebenswelten heranziehst.
-3. **AFB III**: Diskutiere kritisch, ob das Sinus-Milieu-Modell die reale oekonomische Spaltung der Gesellschaft (wie die drastische Vermoegensungleichheit) verharmlost, indem es materielle Noete primaer als 'Lebensstil-Frage' darstellt.
+关卡微测对抗:
 
-`Musterloesungshinweis`:
-- AFB I: Vertikale Achse = Soziale Lage (Unter-, Mittel-, Oberschicht nach Einkommen, Bildung, Beruf). Horizontale Achse = Grundorientierung (Tradition, Modernisierung/Individualisierung, Neuorientierung/Postmaterialismus). Die Performer liegen oben rechts (leistungsorientiert, global, elitisch); das Prekaere Milieu liegt unten links bis mitte (geringes Einkommen, Zukunftsangst, defensive Haltung).
-- AFB II: Frueher waren Parteien fest in Grossmilieus verankert (SPD im katholisch-proletarischen Arbeitermilieu; CDU im laendlichen, buergerlich-konservativen Milieu). Durch Individualisierung, Tertiarisierung und Wertewandel haben sich diese geschlossenen Milieus aufgeloest. Waehler entscheiden sich heute flexibel, milieuuebergreifend und situativ nach konkreten Sachthemen.
-- AFB III: Befuerworter betonen die exzellente Erklaerungskraft fuer Konsum- und Wahlverhalten jenseits des reinen Gehaltszettels. Kritiker wenden jedoch ein, dass das Modell von Marketingagenturen stammt und verschleiert, dass ein Mensch im prekaeren Milieu seine Lebenssituation nicht frei waehlen kann. Die dramatische Vermoegenskonzentration (Gini-Koeffizient des Nettovermoegens von fast 0,78 in Deutschland) bleibt ein hartes vertikales Machtverhaeltnis, das sich nicht in bunte Lifestyles aufloesen laesst.
+`FRAGE: Warum ersetzt das Sinus-Milieu-Modell die Analyse harter Einkommensungleichheit nicht? | ANTWORT: Weil oekonomische Knappheit und Vermoegenskonzentration objektive Barrieren bilden, waehrend Milieus primaer subjektive Lebensstile und Werte beschreiben.`
 
-AUFGABE (analysieren) [AFB I]:
-Analysieren Sie den Fall in einer zusammenhaengenden Stellungnahme (ca. 150 Woerter) mit Fachbegriff, Wirkungskette und kriteriengeleitetem Urteil.
+Klausur-Satz: `Das Sinus-Milieu-Modell ergaenzt die Sozialstrukturanalyse um subjektive Lebenswelten, entbindet jedoch nicht von der Analyse harter vertikaler Ungleichheitsdimensionen wie Einkommens- und Vermoegenskonzentration.`
+
+---
+
+## Schritt 5 — szenario
+
+中文理解: 在北威州高考社科大题（AFB III）中，面对大城市传统全民党选票流失与两极分化，既要能用西诺斯模型分析选民群体的碎裂，又要能从宪政与社会保障角度权衡客观再分配机制。
+
+> ROLLE: Wissenschaftlicher Referent fuer Wahlforschung und Gesellschaftsanalyse.
+> SITUATION: Bei Landtagswahlen in NRW brechen die traditionellen Stammwaehlerschaften der Volksparteien (SPD/CDU) ein, waehrend milieuspezifische Kleinparteien und Nichtwaehleranteile drastisch steigen.
+
+AUFGABE (beurteilen) [AFB III]:
+Beurteilen Sie anhand des Sinus-Milieu-Modells und klassischer Schichttheorien, ob die Aufloesung traditioneller Grossmilieus die Zunahme politischer Polarisierung und Nichtwaehleranteile hinreichend erklaert oder ob materielle Abstiegsrisiken der primaere Treiber sind.
+
+BEWERTUNGSRUBRIK (15 NP):
+1. Sachkriterium (Milieu-Auflösung): Pluralisierung von Lebensstilen und Wertewandel loesen Milieubindungen auf; Waehler agieren flexibel und orientieren sich an Identitaets- und Wertefragen.
+2. Wertkriterium (Materielle Spaltung): Prekarisierung und Abstiegsangst im unteren Segment erzeugen Resignation oder Protestwahl; ungleiche Vermoegensverteilung bleibt treibende Kraft.
+3. Synthese (Intersektionale Urteilsbildung): Milieuanalyse erklaert kulturelle Polarisierung (Kosmopolitismus vs. Kommunitarismus), muss aber mit vertikaler Ungleichheitsanalyse verknuepft werden.
 
 ERWARTUNGSHORIZONT:
 Teilleistung | Punkte | Alternativweg
-Sachanalyse mit Fachbegriff und Wirkungskette aus dem Material | 6 NP | Andere korrekte Begriffs- und Kettenbelege akzeptieren
-Folgen- und Zielkonfliktanalyse mit Verlierern bzw. Trade-offs | 4 NP | Andere plausible Konflikt- und Folgenbelege akzeptieren
-Kriteriengeleitetes Urteil mit Abwaegung und Handlungsempfehlung | 5 NP | Alternative Urteile mit gleicher Abwaegungslogik akzeptieren
+Wertepluralismus: Aufloesung von Stamm-Milieus und Entkoppelung von Parteibindung | 6 NP | Individualisierungsthese nach Beck als Beleg akzeptieren
+Materielle Realitaet: Prekarisierung, Niedriglohnsektor und Vermoegenskonzentration | 4 NP | Bourdieu-Habitus oder Geissler-Schichtung als Beleg akzeptieren
+Synthese: Dialektik aus kultureller Wertedifferenzierung und vertikaler materieller Spaltung | 5 NP | Alternative mit gleicher Abwaegungslogik akzeptieren
+
+15 NP MUSTER-KLAUSURSATZ:
+
+> "Waehrend das Sinus-Milieu-Modell den Zerfall traditioneller Stammwaehlerschaften ueberzeugend aus dem Wertewandel und der Ausdifferenzierung alltagsweltlicher Lebensstile erklaert, greift eine rein kulturalistische Deutung zu kurz, da erst die Verknuepfung mit harter vertikaler Ungleichheit wie Prekarisierung und Vermoegenskonzentration die politische Resignation und Polarisierung im unteren Drittel der Gesellschaft erschoepfend begruendet."
 
 KERNSATZ (auswendig):
-`Musterloesungshinweis`
+`Waehrend traditionelle Schichtmodelle soziale Ungleichheit primaer ueber vertikale Kriterien wie Einkommen definieren, erfassen die Sinus-Milieus die gesellschaftliche Wirklichkeit ganzheitlich durch die Verknuepfung von sozialer Lage mit alltagsweltlichen Grundorientierungen.`
 - Zerlegung: Subjekt | Mechanismus | Urteil
-- Musterloesungshinweis |  | Musterloesungshinweis
-- Selbsttest: Musterloesungshinweis ___
-## Schritt 7 — muendlich: Die muendliche Blitzpruefung
-Simuliere ein muendliches Abiturszenario:
-
-FRAGE: Pruefer: "Erlaeutern Sie, warum Pierre Bourdieus Konzept des 'kulturellen Kapitals' eine Schluesselrolle bei der Erklaerung von Bildungsungleichheit in Deutschland spielt."
-
-ANTWORT: Pruefling: "Bourdieu unterscheidet zwischen oekonomischem Kapital (Geld, Besitz), sozialem Kapital (Beziehungen) und kulturellem Kapital. Letzteres existiert in drei Formen: inkorporiert (Habitus, Sprachduktus, Akzent), objektiviert (Buecher, Gemaelde) und institutionalisiert (akademische Titel). Das deutsche Schulsystem setzt den sprachlichen und kulturellen Habitus des akademischen Bildungsbuergertums stillschweigend als Norm voraus. Kinder aus nicht-akademischen Elternhaeusern verfuegen oft nicht ueber dieses implizite inkorporierte Kulturkapital; ihre Sprache und ihr Verhalten werden in der Schule haeufig unbewusst als Defizit abgewertet. Dadurch reproduziert das Bildungssystem die soziale Klassenspaltung, anstatt sie zu nivellieren."
-
-## Schritt 8 — reflexion: Metakognition und Fehlerschutz
-Reflektiere deine Konzeptbeherrschung mit 3 diagnostischen Kontrollfragen:
-
-1. Verwechselst du 'soziale Schicht' (objektiv vertikal gemessen) nicht faelschlicherweise mit 'sozialem Milieu' (subjektiv-kulturell gemessen)?
-2. Warum fuehrt die blosse Erhoehung des BAfoeG-Hoechstsatzes nicht automatisch zur vollstaendigen Beseitigung der Chancenungleichheit an Universitaeten (Stichwort: Bildungsherkunft & Habitus)?
-3. Kannst du das Phaenomen der 'Prekarisierung' in Abgrenzung zur traditionellen Erwerbslosigkeit praezise definieren?
-
-## Schritt 9 — reflexion: Der Spickzettel fuer die Klausur
-SPICKZETTEL (Maximal 5 Merkpunkte, ideal zum Einpraegen vor dem Klausurbeginn):
-
-- **Zwei Achsen**: Vertikale Achse (Soziale Lage / Status) + Horizontale Achse (Grundorientierung / Werte).
-- **Paradigmenwechsel**: Weg von starren Klassen/Schichten (Dahrendorf) hin zu dynamischen Lebenswelten (Sinus).
-- **Milieu-Typen**: Oben (Performer, Postmaterielle, Konservativ-Etablierte), Mitte (Adaptiv-Pragmatisch), Unten (Prekaere).
-- **Bourdieu-Kapitalien**: Oekonomisches, soziales und vor allem kulturelles Kapital (Habitus) reproduzieren Bildungsungleichheit.
-- **Klausur-Kritik**: Sinus-Modell erklaert Lebensstile exzellent, verharmlost aber mitunter die harte materielle Vermoegensspaltung.
+- Das Sinus-Milieu-Raster | verknuepft vertikale soziale Lage mit horizontaler Werte-Grundorientierung | Kulturelle Lebensstile erklaert es praezise, harte materielle Vermoegensspaltung darf nicht relativiert werden
+- Selbsttest: Waehrend traditionelle Schichtmodelle soziale Ungleichheit primaer ueber vertikale Kriterien wie Einkommen definieren, erfassen die Sinus-Milieus die gesellschaftliche Wirklichkeit ganzheitlich durch die Verknuepfung von sozialer Lage mit alltagsweltlichen ___ .
