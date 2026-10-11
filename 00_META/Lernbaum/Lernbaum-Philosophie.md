@@ -378,7 +378,7 @@ mindmap
   - Operatoren：`rekonstruieren`, `anwenden`, `beurteilen`
   - Lernweg ZH：**四步检验法**——① 提取准则 ② 普遍化公式检验 ③ 目的公式检验 ④ 结论。
   - Fehlerquelle：把「准则」（Maxime）与「习惯」混同；只做普遍化不做目的公式。
-  - 📓 笔记：✅ [`Kant-Kategorischer-Imperativ-und-Maximenpruefung.md`](../../../07_Philosophie/Kant-Kategorischer-Imperativ-und-Maximenpruefung.md)
+  - 📓 笔记：✅ [`Kant-Kategorischer-Imperativ-und-Maximenpruefung.md`](../../../07_Philosophie/Texte-Analyse/Kant-Kategorischer-Imperativ-und-Maximenpruefung.md)
 - **[LK] Unterschiedliche Grundlagen moralischer Orientierungen（道德定向的不同基础）** `[LK]`
   - 中文一句话：道德判断的根据可以是后果、义务、德性、情感——LK 要求系统比较这些基础。
   - Klausur-Anbindung：比较题；`Grundlagen moralischer Orientierung vergleichen`（AFB II）。
@@ -457,7 +457,7 @@ mindmap
   - Operatoren：`rekonstruieren`, `anwenden`, `beurteilen`
   - Lernweg ZH：用「无知之幕」做思想实验，连到 `08_SoWi/` 的社会不平等（跨科联动）。
   - Fehlerquelle：把差异原则误解为「平均主义」（它允许不平等，但有条件）。
-  - 📓 笔记：✅ [`Gerechtigkeit-Wirtschaftsethik-Vernetzung.md`](../../../07_Philosophie/Gerechtigkeit-Wirtschaftsethik-Vernetzung.md)
+  - 📓 笔记：✅ [`Gerechtigkeit-Wirtschaftsethik-Vernetzung.md`](../../../07_Philosophie/Texte-Analyse/Gerechtigkeit-Wirtschaftsethik-Vernetzung.md)
 
 #### L2 Konzepte von Demokratie und sozialer Gerechtigkeit（民主与社会正义构想）
 
@@ -474,7 +474,7 @@ mindmap
   - Operatoren：`analysieren`, `beurteilen`, `Stellung nehmen`
   - Lernweg ZH：做「三种分配原则」对照表，连到 SoWi 的实际政策案例。
   - Fehlerquelle：只谈抽象原则不联系制度设计。
-  - 📓 笔记：🟡 [`Gerechtigkeit-Wirtschaftsethik-Vernetzung.md`](../../../07_Philosophie/Gerechtigkeit-Wirtschaftsethik-Vernetzung.md)
+  - 📓 笔记：🟡 [`Gerechtigkeit-Wirtschaftsethik-Vernetzung.md`](../../../07_Philosophie/Texte-Analyse/Gerechtigkeit-Wirtschaftsethik-Vernetzung.md)
 - **[LK] Bedingungen einer dauerhaften Friedensordnung（持久和平秩序的条件）** `[LK]`
   - 中文一句话：康德《永久和平论》——共和制 + 国家联盟 + 世界公民权，是全球化时代和平秩序的哲学方案。
   - Klausur-Anbindung：评价题；`Kants Friedensschrift auf aktuelle Konflikte beziehen`（AFB III）。
@@ -575,40 +575,40 @@ mindmap
 | # | L3 节点 | 目标笔记文件 | 状态 |
 |---|---|---|---|
 | **EF · IF1（重大缺口）** | | | |
-| 1 | Mensch-Tier-Abgrenzung | [`Sonderstellung-des-Menschen.md`](../../../07_Philosophie/Sonderstellung-des-Menschen.md) | ✅ 已有 |
-| 2 | Kulturrelativismus vs Universalismus | `07_Philosophie/Kulturrelativismus-vs-Universalismus.md` | ⚠️ 缺口（★★★ EF 优先） |
-| 3 | Umfang und Grenzen staatlichen Handelns | `07_Philosophie/Grenzen-staatlichen-Handelns.md` | ⚠️ 缺口（★★★ EF 优先，QP 地基） |
-| 4 | Paternalismus | `07_Philosophie/Paternalismus.md` | ⚠️ 缺口 |
+| 1 | Mensch-Tier-Abgrenzung | [`Sonderstellung-des-Menschen.md`](../../../07_Philosophie/Texte-Analyse/Sonderstellung-des-Menschen.md) | ✅ 已有 |
+| 2 | Kulturrelativismus vs Universalismus | `07_Philosophie/Texte-Analyse/Kulturrelativismus-vs-Universalismus.md` | ⚠️ 缺口（★★★ EF 优先） |
+| 3 | Umfang und Grenzen staatlichen Handelns | `07_Philosophie/Texte-Analyse/Grenzen-staatlichen-Handelns.md` | ⚠️ 缺口（★★★ EF 优先，QP 地基） |
+| 4 | Paternalismus | `07_Philosophie/Texte-Analyse/Paternalismus.md` | ⚠️ 缺口 |
 | **EF · IF2（最大缺口）** | | | |
-| 5 | Metaphysische Probleme / Gottesbeweise | `07_Philosophie/Metaphysische-Probleme-und-Gottesbeweise.md` | ⚠️ 缺口（★★★ EF 优先） |
-| 6 | Empirismus vs Rationalismus (EF) | `07_Philosophie/Empirismus-vs-Rationalismus-EF.md` | ⚠️ 缺口（★★★ EF 优先） |
-| 7 | Prinzipien und Reichweite der Erkenntnis | `07_Philosophie/Reichweite-menschlicher-Erkenntnis.md` | ⚠️ 缺口 |
-| 8 | Abgrenzung Philosophie/Wissenschaft/Religion | `07_Philosophie/Philosophie-Wissenschaft-Religion.md` | ⚠️ 缺口 |
+| 5 | Metaphysische Probleme / Gottesbeweise | `07_Philosophie/Texte-Analyse/Metaphysische-Probleme-und-Gottesbeweise.md` | ⚠️ 缺口（★★★ EF 优先） |
+| 6 | Empirismus vs Rationalismus (EF) | `07_Philosophie/Texte-Analyse/Empirismus-vs-Rationalismus-EF.md` | ⚠️ 缺口（★★★ EF 优先） |
+| 7 | Prinzipien und Reichweite der Erkenntnis | `07_Philosophie/Texte-Analyse/Reichweite-menschlicher-Erkenntnis.md` | ⚠️ 缺口 |
+| 8 | Abgrenzung Philosophie/Wissenschaft/Religion | `07_Philosophie/Texte-Analyse/Philosophie-Wissenschaft-Religion.md` | ⚠️ 缺口 |
 | — | Philosophische Fragetypen | [`Philosophische-Fragen-Typen.md`](../../../07_Philosophie/Texte-Analyse/Philosophische-Fragen-Typen.md) | ✅ 已有 |
 | **QP · IF3（部分覆盖）** | | | |
-| 9 | Leib-Seele: Dualismus vs Monismus | `07_Philosophie/Leib-Seele-Dualismus-vs-Monismus.md` | ⚠️ 缺口（🟡 深度缺口） |
-| 10 | Determinismus vs Indeterminismus | `07_Philosophie/Determinismus-und-Willensfreiheit.md` | ⚠️ 缺口（🟡 深度缺口） |
-| 11 | [LK] Neurowissenschaften und KI | `07_Philosophie/LK-Neurowissenschaften-und-KI.md` | ⚠️ 缺口（LK 专属） |
+| 9 | Leib-Seele: Dualismus vs Monismus | `07_Philosophie/Texte-Analyse/Leib-Seele-Dualismus-vs-Monismus.md` | ⚠️ 缺口（🟡 深度缺口） |
+| 10 | Determinismus vs Indeterminismus | `07_Philosophie/Texte-Analyse/Determinismus-und-Willensfreiheit.md` | ⚠️ 缺口（🟡 深度缺口） |
+| 11 | [LK] Neurowissenschaften und KI | `07_Philosophie/Texte-Analyse/LK-Neurowissenschaften-und-KI.md` | ⚠️ 缺口（LK 专属） |
 | — | Menschenbild | [`Menschenbild-Ueberblick.md`](../../../07_Philosophie/Texte-Analyse/Menschenbild-Ueberblick.md) | ✅ 已有 |
 | **QP · IF4（密度最高）** | | | |
-| 12 | Eudämonismus / Tugendethik | `07_Philosophie/Eudaemonismus-und-Tugendethik.md` | ⚠️ 缺口（🟡 LK 明确要求归入此传统） |
-| 13 | Verantwortung in Anwendungskontexten | `07_Philosophie/Verantwortung-und-Anwendungsethik.md` | ⚠️ 缺口 |
-| 14 | [LK] Grundlagen moralischer Orientierungen | `07_Philosophie/LK-Grundlagen-moralischer-Orientierung.md` | ⚠️ 缺口（LK 专属） |
+| 12 | Eudämonismus / Tugendethik | `07_Philosophie/Texte-Analyse/Eudaemonismus-und-Tugendethik.md` | ⚠️ 缺口（🟡 LK 明确要求归入此传统） |
+| 13 | Verantwortung in Anwendungskontexten | `07_Philosophie/Texte-Analyse/Verantwortung-und-Anwendungsethik.md` | ⚠️ 缺口 |
+| 14 | [LK] Grundlagen moralischer Orientierungen | `07_Philosophie/Texte-Analyse/LK-Grundlagen-moralischer-Orientierung.md` | ⚠️ 缺口（LK 专属） |
 | — | Utilitarismus vs Kant | [`Utilitarismus-vs-Kant.md`](../../../07_Philosophie/Texte-Analyse/Utilitarismus-vs-Kant.md) | ✅ 已有 |
 | — | Ethische Dilemmata | [`Ethische-Dilemmata-Sammlung.md`](../../../07_Philosophie/Texte-Analyse/Ethische-Dilemmata-Sammlung.md) | ✅ 已有 |
-| — | Kant Kategorischer Imperativ | [`Kant-Kategorischer-Imperativ-und-Maximenpruefung.md`](../../../07_Philosophie/Kant-Kategorischer-Imperativ-und-Maximenpruefung.md) | ✅ 已有 |
+| — | Kant Kategorischer Imperativ | [`Kant-Kategorischer-Imperativ-und-Maximenpruefung.md`](../../../07_Philosophie/Texte-Analyse/Kant-Kategorischer-Imperativ-und-Maximenpruefung.md) | ✅ 已有 |
 | **QP · IF5（部分覆盖）** | | | |
-| 15 | Kontraktualismus 四家系统对照 | `07_Philosophie/Kontraktualismus-Hobbes-Locke-Rousseau-Rawls.md` | ⚠️ 缺口（🟡 最高频考点） |
-| 16 | Gemeinschaft / Kommunitarismus | `07_Philosophie/Gemeinschaft-und-Kommunitarismus.md` | ⚠️ 缺口 |
-| 17 | Demokratiemodelle | `07_Philosophie/Demokratiemodelle.md` | ⚠️ 缺口 |
-| 18 | [LK] Friedensordnung | `07_Philosophie/LK-Friedensordnung-Kant.md` | ⚠️ 缺口（LK 专属） |
-| — | Gerechtigkeit / Rawls | [`Gerechtigkeit-Wirtschaftsethik-Vernetzung.md`](../../../07_Philosophie/Gerechtigkeit-Wirtschaftsethik-Vernetzung.md) | ✅ 已有 |
+| 15 | Kontraktualismus 四家系统对照 | `07_Philosophie/Texte-Analyse/Kontraktualismus-Hobbes-Locke-Rousseau-Rawls.md` | ⚠️ 缺口（🟡 最高频考点） |
+| 16 | Gemeinschaft / Kommunitarismus | `07_Philosophie/Texte-Analyse/Gemeinschaft-und-Kommunitarismus.md` | ⚠️ 缺口 |
+| 17 | Demokratiemodelle | `07_Philosophie/Texte-Analyse/Demokratiemodelle.md` | ⚠️ 缺口 |
+| 18 | [LK] Friedensordnung | `07_Philosophie/Texte-Analyse/LK-Friedensordnung-Kant.md` | ⚠️ 缺口（LK 专属） |
+| — | Gerechtigkeit / Rawls | [`Gerechtigkeit-Wirtschaftsethik-Vernetzung.md`](../../../07_Philosophie/Texte-Analyse/Gerechtigkeit-Wirtschaftsethik-Vernetzung.md) | ✅ 已有 |
 | — | Kernstellen（Aristoteles/Kant/Rousseau/Sartre） | [`Philo-Abitur-Kernstellen.md`](../../../07_Philosophie/Texte-Analyse/Philo-Abitur-Kernstellen.md) | ✅ 已有 |
 | **QP · IF6（完全空白）** | | | |
-| 19 | Popper Falsifikation | `07_Philosophie/Popper-Falsifikation.md` | ⚠️ 缺口（★★★ IF6 优先） |
-| 20 | Kuhn Paradigma | `07_Philosophie/Kuhn-Paradigma.md` | ⚠️ 缺口 |
-| 21 | Erkenntnistheoretische Grundlagen (QP) | `07_Philosophie/Wissenschaftliche-Erkenntnistheorie.md` | ⚠️ 缺口 |
-| 22 | [LK] Geisteswissenschaften / Hermeneutik | `07_Philosophie/LK-Geisteswissenschaften-Hermeneutik.md` | ⚠️ 缺口（LK 专属） |
+| 19 | Popper Falsifikation | `07_Philosophie/Texte-Analyse/Popper-Falsifikation.md` | ⚠️ 缺口（★★★ IF6 优先） |
+| 20 | Kuhn Paradigma | `07_Philosophie/Texte-Analyse/Kuhn-Paradigma.md` | ⚠️ 缺口 |
+| 21 | Erkenntnistheoretische Grundlagen (QP) | `07_Philosophie/Texte-Analyse/Wissenschaftliche-Erkenntnistheorie.md` | ⚠️ 缺口 |
+| 22 | [LK] Geisteswissenschaften / Hermeneutik | `07_Philosophie/Texte-Analyse/LK-Geisteswissenschaften-Hermeneutik.md` | ⚠️ 缺口（LK 专属） |
 | **跨 IF / 方法层** | | | |
 | — | 文本分析训练（II B / II C） | [`Philo-Textanalyse-Training.md`](../../../07_Philosophie/Klausur-Training/Philo-Textanalyse-Training.md) | ✅ 已有（命名与官方 Aufgabenart 变体已对齐） |
 | — | 互动课程 | [`Lernreise/Philo-Utilitarismus-Kant-L2.md`](../../../Lernreise/Philo-Utilitarismus-Kant-L2.md) | ✅ 已有 |

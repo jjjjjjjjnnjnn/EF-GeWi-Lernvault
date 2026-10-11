@@ -135,6 +135,6 @@ Auf einem Arbeitsmarkt gilt für gering qualifizierte Arbeit die Nachfragefunkti
 - **上游**：`Soziale-Marktwirtschaft.md`（价格机制是"自由—兜底"张力的起点）· `Konsum-Wirtschaften.md`（消费者行为与需求曲线）。
 - **下游**：`Marktwirtschaft-Krise.md`（最低工资与竞争失灵）· `Wirtschaftspolitik-Instrumente.md`（价格干预作为政策工具）· `Konjunktur-und-Wachstum.md`。
 - **横向 (SoWi ↔ Mathe)**：供求函数联立 `p_N(q) = p_A(q)` 对应一次函数方程组求交点，与 `03_Mathe/Lineare-Gleichungssysteme-und-Loesungsmengen.md` 的求解流程同构。
-- **横向 (SoWi ↔ Philosophie)**：自由价格机制的效率诉求（Adam Smith 的"看不见的手"）↔ 康德义务论与罗尔斯差异原则对弱者尊严的兜底保护，构成 `07_Philosophie/Gerechtigkeit-Wirtschaftsethik-Vernetzung.md` 的评判双轴。
+- **横向 (SoWi ↔ Philosophie)**：自由价格机制的效率诉求（Adam Smith 的"看不见的手"）↔ 康德义务论与罗尔斯差异原则对弱者尊严的兜底保护，构成 `07_Philosophie/Texte-Analyse/Gerechtigkeit-Wirtschaftsethik-Vernetzung.md` 的评判双轴。
 - **互动课程**：`Lernreise/Sowi-Preismechanismus-Markt-L1.md`（9 步闯关，含 balance 教具与限价情境实战）。
 - **术语卡**：见 `08_SoWi/Vokabeln-Anki/SoWi-EF-Basis.csv`（Thema: Preismechanismus）。

@@ -60,3 +60,15 @@ Formulierung der Maxime                Universalisierung                      Wi
 ### 3. 批判性比较与价值裁决（Gegenüberstellung & Philosophisches Urteil / AFB III）
 - Während der teleologische Utilitarismus die Rettung des Menschenlebens durch die Lüge aufgrund der Maximierung des Gesamtwohls legitimiert, verlangt Kant die uneingeschränkte Geltung des moralischen Gebots ohne Rücksicht auf kontingente Folgen.
 - Abschließend ist zu urteilen, dass Kants rigoristischer Ansatz zwar einen unüberwindbaren Schutzschild für die individuelle Würde errichtet, in extremen moralischen Dilemmata jedoch an lebensweltlicher Vermittelbarkeit einbüßt.
+
+---
+
+## Mini-Klausur-Training: Maximenprüfung am Fall (AFB II analysieren)
+
+**AUFGABE (analysieren):** Analysieren Sie mithilfe der Vier-Schritte-Maximenprüfung, ob die Maxime „Ich gebe ein falsches Versprechen, um aus einer Geldnot zu entkommen" moralisch zulässig ist. Prüfen Sie dabei Denk- und Wollenswiderspruch getrennt und benennen Sie die verletzte Pflichtenart.
+
+**HILFE:**
+- Richtung: Zuerst die Maxime explizit formulieren, dann universalisieren, danach Denk- vor Wollenswiderspruch prüfen.
+- Richtung: Den Befund mit der Selbstzweckformel (Mensch als Zweck, niemals bloß Mittel) rückkoppeln und als Urteil festhalten.
+
+**MUSTERLÖSUNG (selbst geschrieben, 只转述不复制):** Die Universalisierung der Lügenmaxime zerstört das Institut des Versprechens selbst: In einer Welt allgemeiner Unwahrheit verliert „Versprechen" jede Bedeutung, sodass die Maxime denklogisch widersprüchlich ist (Denkwiderspruch). Damit verstößt sie gegen eine vollkommene Pflicht und ist strikt verboten — unabhängig vom Nutzen. Zusätzlich degradiert die Täuschung den Gesprächspartner zum bloßen Mittel und verletzt die Selbstzweckformel.

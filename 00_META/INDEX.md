@@ -80,15 +80,15 @@
 - Wertpapierdepot & Orderarten (IF Wirtschaft) — [Wertpapierdepot-und-Orderarten](../08_SoWi/Texte-Analyse/Wertpapierdepot-und-Orderarten.md)（名义负利率/破产隔离Sondervermögen/Xetra撮合/不可能三角，配 Lernreise 探究式微课画卷）
 
 ### Philosophie
-- Gerechtigkeit & Wirtschaftsethik — [Gerechtigkeit-Wirtschaftsethik-Vernetzung](../07_Philosophie/Gerechtigkeit-Wirtschaftsethik-Vernetzung.md)（Rawls差异原则/无知之幕/SoWi不平等再分配跨学科）
+- Gerechtigkeit & Wirtschaftsethik — [Gerechtigkeit-Wirtschaftsethik-Vernetzung](../07_Philosophie/Texte-Analyse/Gerechtigkeit-Wirtschaftsethik-Vernetzung.md)（Rawls差异原则/无知之幕/SoWi不平等再分配跨学科）
 - Entfremdung, Kapitalismus & Ungleichheit — [Entfremdung-Kapital-Ungleichheit-Vernetzung](../07_Philosophie/Texte-Analyse/Entfremdung-Kapital-Ungleichheit-Vernetzung.md)（卡夫卡变形记/马克思异化四维/康德目的公式/社科基尼系数与贫困化/米勒推销员人格商品化全景沙盘）
 - Menschenbild — [Menschenbild-Ueberblick](../07_Philosophie/Texte-Analyse/Menschenbild-Ueberblick.md)
 - Ethik: Utilitarismus vs Kant — [Utilitarismus-vs-Kant](../07_Philosophie/Texte-Analyse/Utilitarismus-vs-Kant.md)
 - Philosophische Fragen stellen (Plickat) — [Philosophische-Fragen-Typen](../07_Philosophie/Texte-Analyse/Philosophische-Fragen-Typen.md)（5 Fragetypen/Operatoren-Mapping）
 - Ethische Dilemmata: Kant vs Utilitarismus — [Ethische-Dilemmata-Sammlung](../07_Philosophie/Texte-Analyse/Ethische-Dilemmata-Sammlung.md)（4案例/双公式检验/快乐计算/8句Merksatz）
 - Ethik: John Stuart Mill (Utilitarismus & Qualitativer Hedonismus) — [Mill-Utilitarismus-Qualitativer-Hedonismus](../07_Philosophie/Texte-Analyse/Mill-Utilitarismus-Qualitativer-Hedonismus.md)（功利四大支柱/边沁纯量化算盘解构/胜任裁判官论证/苏格拉底之猪两难/自动驾驶算法伦理）
-- Kants Kategorischer Imperativ & Maximenprüfung — [Kant-Kategorischer-Imperativ-und-Maximenpruefung](../07_Philosophie/Kant-Kategorischer-Imperativ-und-Maximenpruefung.md)（四步检验法/无矛盾可设想性与可意愿性/人类自为目的公式）
-- Sonderstellung des Menschen — [Sonderstellung-des-Menschen](../07_Philosophie/Sonderstellung-des-Menschen.md)（Gehlen匮乏存在与文化补偿/Scheler世界开放性/Singer动物伦理与物种歧视批判）
+- Kants Kategorischer Imperativ & Maximenprüfung — [Kant-Kategorischer-Imperativ-und-Maximenpruefung](../07_Philosophie/Texte-Analyse/Kant-Kategorischer-Imperativ-und-Maximenpruefung.md)（四步检验法/无矛盾可设想性与可意愿性/人类自为目的公式）
+- Sonderstellung des Menschen — [Sonderstellung-des-Menschen](../07_Philosophie/Texte-Analyse/Sonderstellung-des-Menschen.md)（Gehlen匮乏存在与文化补偿/Scheler世界开放性/Singer动物伦理与物种歧视批判）
 - Abitur-Kernstellen (Aristoteles/Kant/Rousseau/Sartre) — [Philo-Abitur-Kernstellen](../07_Philosophie/Texte-Analyse/Philo-Abitur-Kernstellen.md)（4×3句论证+EF-Anschluss）· [II B/II C Training](../07_Philosophie/Klausur-Training/Philo-Textanalyse-Training.md)（EHZ+Lena-Übung）
 
 ### Deutsch

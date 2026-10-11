@@ -178,4 +178,4 @@ REFLEXION:
 Du hast das Rueckgrat der politischen Philosophie begriffen. Du beherrschst das Denkmodell des Gesellschaftsvertrags und kannst souverän zwischen autoritaerer Ordnungsbegruendung und liberaler Freiheitsgarantie unterscheiden.
 
 <!-- reflexion: philosophie-staatsphilosophie -->
-In der naechsten Einheit widmen wir uns den modernen Modellen sozialer Gerechtigkeit: Wie verteilen wir Wohlstand und Bildung fair in einer Demokratie? Weiter geht es mit [Gerechtigkeit-Wirtschaftsethik-Vernetzung](../07_Philosophie/Gerechtigkeit-Wirtschaftsethik-Vernetzung.md).
+In der naechsten Einheit widmen wir uns den modernen Modellen sozialer Gerechtigkeit: Wie verteilen wir Wohlstand und Bildung fair in einer Demokratie? Weiter geht es mit [Gerechtigkeit-Wirtschaftsethik-Vernetzung](../07_Philosophie/Texte-Analyse/Gerechtigkeit-Wirtschaftsethik-Vernetzung.md).
