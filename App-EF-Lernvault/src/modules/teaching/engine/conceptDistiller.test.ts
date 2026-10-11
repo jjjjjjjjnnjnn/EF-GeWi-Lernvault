@@ -246,6 +246,18 @@ describe("Concept Distillation Engine: conceptDistiller", () => {
     expect(res.klausurSatz15NP.scoringKeywords).toContain("masseunabhaengig");
   });
 
+  it("distills Saeure-Base-Gleichgewichte benchmark (Chemie)", () => {
+    const res = distillConcept("Saeure-Base-Gleichgewichte und pH-Wert", "Chemie");
+    validateDistilledConcept(res);
+    expect(res.fach).toBe("Chemie");
+    expect(res.intuitionDilemma?.scenarioZH).toContain("盐酸 HCl 与醋酸 CH3COOH");
+    expect(res.konzeptPuzzle?.pairs.length).toBe(4);
+    expect(res.examTrapCorrection?.diagnosticOptions?.length).toBe(3);
+    expect(res.klausurSatz15NP.operator).toBe("analysieren");
+    expect(res.klausurSatz15NP.scoringKeywords).toContain("Protonendonator");
+    expect(res.klausurSatz15NP.scoringKeywords).toContain("Dissoziationsgrad");
+  });
+
   it("handles arbitrary topics gracefully via heuristic subject archetypes", () => {
     const arbitrarySoWi = distillConcept("Europaeische Zentralbank und Leitzinssenkung", "SoWi");
     validateDistilledConcept(arbitrarySoWi);

@@ -2715,6 +2715,217 @@ const DOMAIN_KNOWLEDGE_ENTRIES: DomainKnowledgeEntry[] = [
       ]
     }
   },
+
+  // 17. Saeure-Base-Gleichgewichte und pH-Wert (Chemie)
+  {
+    id: "saeure-base-gleichgewichte-ph-wert",
+    canonicalTitle: "Saeure-Base-Gleichgewichte und pH-Wert",
+    fach: "Chemie",
+    matchKeywords: [
+      "saeure",
+      "base",
+      "broensted-lowry",
+      "protonendonator",
+      "dissoziationsgrad",
+      "dissoziation",
+      "ks-wert",
+      "pks",
+      "protolyse",
+      "ph-wert",
+      "logarithmisch",
+      "titration",
+      "aequivalenzpunkt",
+      "neutralisation",
+      "hydrolyse"
+    ],
+    data: {
+      topicTitle: "Saeure-Base-Gleichgewichte und pH-Wert",
+      fach: "Chemie",
+      intuitionDilemma: {
+        scenarioDE: "Im Schullabor stehen zwei farblose Loesungen: Salzsauere HCl und Essigsaeure CH3COOH, beide c0 = 0,1 mol/l. Ein Mitschueler behauptet, beide muessten gleich sauer sein.",
+        scenarioZH: "学校实验室有两杯无色溶液：盐酸 HCl 与醋酸 CH3COOH，初始浓度均为 0,1 mol/l。有同学断言两者酸性必然相同。",
+        questionDE: "Beide Loesungen haben c0 = 0,1 mol/l. Welche Loesung ist saurer?",
+        questionZH: "两杯溶液初始浓度均为 0,1 mol/l，哪一杯更酸？",
+        choiceA: {
+          id: "A",
+          textDE: "A) Beide Loesungen haben denselben pH-Wert, da beide die Konzentration 0,1 mol/l besitzen.",
+          textZH: "A) 两杯溶液 pH 相同，因为两者浓度都是 0,1 mol/l。",
+          reactionDE: "Alltagslogik, aber Modellbruch: Gleiche Konzentration bedeutet nicht gleicher pH. HCl gibt pro Teilchen praktisch ein Proton ab, Essigsaeure nur einen Bruchteil. Stark vs. schwach entscheidet, nicht allein c0.",
+          reactionZH: "日常直觉但模型失效：浓度相同不等于 pH 相同。HCl 每个分子几乎都释放质子，醋酸只有一小部分电离；决定 pH 的是强弱（电离度），而不只是初始浓度。"
+        },
+        choiceB: {
+          id: "B",
+          textDE: "B) Die HCl-Loesung ist deutlich saurer (tieferer pH), obwohl beide Loesungen gleich konzentriert sind.",
+          textZH: "B) HCl 溶液明显更酸（pH 更低），尽管两者浓度相同。",
+          reactionDE: "Exakt richtig: HCl dissoziiert praktisch vollstaendig (alpha ca. 100 %), Essigsaeure stellt ein Protolyse-Gleichgewicht mit Ks ein. Bei gleichem c0 liegt c(H3O+) der HCl-Loesung um Groessenordnungen hoeher, der pH deutlich tiefer.",
+          reactionZH: "完全正确：HCl 近乎 100% 完全电离，醋酸则建立 Ks 动态平衡。相同初始浓度下，HCl 溶液的水合氢离子浓度高出数量级，pH 明显更低。"
+        },
+        mechanismTakeawayDE: "Der pH-Wert folgt nicht der Ausgangskonzentration allein, sondern dem Dissoziationsgrad: Starke Saeuren dissoziieren vollstaendig, schwache Saeuren stellen ein Protolyse-Gleichgewicht (Ks) ein.",
+        mechanismTakeawayZH: "pH 不由初始浓度单独决定，而由电离度决定：强酸完全电离，弱酸建立质子转移平衡（Ks）。",
+        klpCoreLogicDE: "Broensted-Lowry-Konzept (Protonendonator vs. Protonenakzeptor); starke vs. schwache Saeuren (Dissoziationsgrad, Ks/pKs); pH als negativer dekadischer Logarithmus.",
+        klpCoreLogicZH: "布朗斯特-劳里质子转移理论；强酸弱酸之分（电离度、Ks/pKs）；pH 为负常用对数标度。"
+      },
+      mentalModelAnalogy: {
+        analogyTitle: "Volle vs. undichte Leitung: Der Dissoziationsgrad als Hahnstellung",
+        explanationDE: "Der pH-Wert folgt nicht der Ausgangskonzentration allein, sondern dem Dissoziationsgrad: Starke Saeuren dissoziieren vollstaendig, schwache Saeuren stellen ein Protolyse-Gleichgewicht (Ks) ein.",
+        explanationZH: "pH 不由初始浓度单独决定，而由电离度决定：强酸完全电离，弱酸建立质子转移平衡（Ks）。"
+      },
+      konzeptPuzzle: {
+        instructionDE: "Ordne jedem Saeure-Base-Satz (stark vs. schwach) die korrekte Rechen- und Gleichgewichtsrealitaet samt Klausur-Konsequenz zu:",
+        instructionZH: "将每条酸碱论断（强酸 vs 弱酸）与正确的计算及平衡事实、考场结论配对：",
+        pairs: [
+          {
+            id: "pair-1",
+            premiseDE: "Starke Saeuren dissoziieren in verduennter Loesung praktisch vollstaendig (alpha ca. 100 %), daher gilt c(H3O+) = c0.",
+            premiseZH: "强酸在稀溶液中近乎完全电离（电离度约 100%），故 c(H3O+) = c0。",
+            realityDE: "Schwache Saeuren (z. B. Essigsaeure) stellen ein dynamisches Protolyse-Gleichgewicht ein; nur ein Bruchteil gibt Protonen ab (Ks, pKs).",
+            realityZH: "弱酸（如醋酸）建立动态质子转移平衡，只有一小部分释放质子（Ks、pKs）。",
+            consequenceDE: "Klausur: pH-Berechnung ohne MWG, aber mit expliziter Begruendung ueber den Dissoziationsgrad; pH = -lg(c0).",
+            consequenceZH: "考试结论：无需列平衡式、直接计算，但必须写出电离度论证；pH = -lg(c0)。"
+          },
+          {
+            id: "pair-2",
+            premiseDE: "Der pH-Wert ist als negativer dekadischer Logarithmus definiert: pH = -lg(c(H3O+)).",
+            premiseZH: "pH 定义为负常用对数：pH = -lg(c(H3O+))。",
+            realityDE: "Lernende erwarten lineare Proportionalitaet (halbe Konzentration -> halber pH), was der Logarithmusfunktion widerspricht.",
+            realityZH: "初学者常误以为线性正比（浓度减半 -> pH 减半），这与对数函数规律相矛盾。",
+            consequenceDE: "Klausur: Zehnerpotenz-Denken; Verduennung um Faktor 10 -> pH steigt um genau 1 Einheit.",
+            consequenceZH: "考试结论：按数量级思考；稀释 10 倍 -> pH 恰好上升 1 个单位。"
+          },
+          {
+            id: "pair-3",
+            premiseDE: "Fuer reines Wasser gilt Kw = c(H3O+) x c(OH-) = 10^-14 mol2/l2 und pH + pOH = 14 bei 25 Grad C.",
+            premiseZH: "纯水离子积 Kw = c(H3O+) x c(OH-) = 10^-14，25 摄氏度下 pH + pOH = 14。",
+            realityDE: "Bei extrem verduennten Loesungen (c0 unter ca. 10^-6 mol/l) wird die Autoprotolyse relativ bedeutsam und der Grenzwert pH 7 angefahren.",
+            realityZH: "在极稀溶液（c0 低于约 10^-6 mol/l）中，水的自耦电离相对显著，pH 趋向极限值 7。",
+            consequenceDE: "Klausur: Aus pOH von starken Basen folgt pH = 14 - pOH; Neutralpunkt pH 7 nur als Spezialfall.",
+            consequenceZH: "考试结论：由强碱 pOH 推 pH = 14 - pOH；中性点 pH 7 只是特例。"
+          },
+          {
+            id: "pair-4",
+            premiseDE: "Am Aequivalenzpunkt gilt n(H3O+) = n(OH-); bei stark-stark liegt pH 7 vor (H3O+ + OH- -> 2 H2O).",
+            premiseZH: "等当点处 n(H3O+) = n(OH-)；强酸强碱体系 pH 为 7（H3O+ + OH- -> 2 H2O）。",
+            realityDE: "Bei schwachen Partnern hydrolysiert das Salz (z. B. Acetat), sodass der Aequivalenz-pH basisch oder sauer ausfaellt, nicht 7.",
+            realityZH: "弱酸弱碱体系中生成盐会水解（如醋酸根），等当点 pH 偏碱或偏酸，而非 7。",
+            consequenceDE: "Klausur: Stoffmengenansatz c1 x V1 = c2 x V2 liefert V(NaOH) = 25 ml im Musterfall; Titrationskurve mit Sprung am Aequivalenzpunkt.",
+            consequenceZH: "考试结论：用物质的量关系 c1 x V1 = c2 x V2，本例得 V(NaOH) = 25 ml；滴定曲线在等当点出现突跃。"
+          }
+        ]
+      },
+      examTrapCorrection: {
+        studentAnswerDE: "Die HCl-Loesung (c0 = 0,005 mol/l) dissoziiert nur zu etwa 50 %, daher gilt c(H3O+) = 0,0025 mol/l und pH = 2,60. (0 / 15 NP)",
+        studentAnswerZH: "HCl 溶液 (c0 = 0,005 mol/l) 仅约 50% 电离，因此 c(H3O+) = 0,0025 mol/l，pH = 2,60。(0 / 15 NP)",
+        fatalFlawPointDE: "Anwendung des Schwache-Saeure-Gleichgewichtsmodells auf eine starke Saeure; Verwechslung von vollstaendiger Dissoziation und dynamischem Protolyse-Gleichgewicht.",
+        fatalFlawPointZH: "把弱酸平衡模型误用于强酸：混淆了“完全电离”与“动态质子转移平衡”。",
+        examinerVerdictDE: "Klausur-Regel: Starke Saeuren dissoziieren vollstaendig; die Begruendung ueber den Dissoziationsgrad gehoert zwingend zur Berechnung. Erst bei schwachen Saeuren folgt der MWG-Ansatz mit Ks. Die Autoprotolyse des Wassers ist bei dieser Konzentration vernachlaessigbar.",
+        examinerVerdictZH: "阅卷标准：强酸完全电离，计算时必须附带电离度论证；只有弱酸才列 Ks 平衡式。本浓度下水的自耦电离可忽略。",
+        diagnosticOptions: [
+          {
+            id: "diag-correct",
+            textDE: "Unvollstaendige Dissoziation wird zu Unrecht angenommen: HCl dissoziiert in verduennter Loesung praktisch vollstaendig, daher gilt c(H3O+) = c0 = 0,005 mol/l.",
+            textZH: "错误地假设了不完全电离：HCl 在稀溶液中实际上完全电离，因此 c(H3O+) = c0 = 0,005 mol/l。",
+            isCorrect: true,
+            explanationDE: "Exakt diagnostiziert: HCl ist eine sehr starke einprotonige Saeure (pKs ca. -6) und dissoziiert in verduennter Loesung praktisch vollstaendig. Der Ansatz c(H3O+) = c0 ist daher zwingend; ein Massenwirkungsgesetz mit Ks ist nur bei schwachen Saeuren erforderlich.",
+            explanationZH: "诊断正确：HCl 为极强一元酸，在稀溶液中近乎 100% 完全电离，必须直接用 c(H3O+) = c0 计算；只有弱酸才需要列 Ks 平衡式。"
+          },
+          {
+            id: "diag-distractor-1",
+            textDE: "Der Ansatz ist unvollstaendig: Fuer HCl muss zusaetzlich das Massenwirkungsgesetz mit Ks-Wert und pKs-Tabelle angesetzt werden, sonst fehlt die Gleichgewichtskonstante.",
+            textZH: "该计算缺少关键步骤：即使对 HCl 也必须先查 pKs 表、列出 Ks 平衡式，否则缺少平衡常数无法求解。",
+            isCorrect: false,
+            explanationDE: "Fehlschluss: Das MWG mit Ks und pKs gilt fuer schwache Saeuren im dynamischen Gleichgewicht (z. B. Essigsaeure). HCl als sehr starke Saeure liegt praktisch vollstaendig auf der Produktseite; ein Gleichgewichtsansatz verfremdet das System.",
+            explanationZH: "致命误判：Ks/pKs 平衡式只适用于建立动态平衡的弱酸（如醋酸）。HCl 作为强酸几乎完全向产物侧进行，硬套平衡常数属于对象错配。"
+          },
+          {
+            id: "diag-distractor-2",
+            textDE: "Die Rechnung ignoriert die Autoprotolyse des Wassers: Sie liefert zusaetzliche Oxoniumionen, sodass der wahre pH-Wert deutlich naeher bei pH 7 liegt.",
+            textZH: "该计算忽略了水的自耦电离：水会额外提供大量水合氢离子，因此真实 pH 应明显更接近 7。",
+            isCorrect: false,
+            explanationDE: "Fehlschluss: Die Autoprotolyse liefert nur c = 10^-7 mol/l und ist gegenueber 5 x 10^-3 mol/l vernachlaessigbar. Sie dominiert erst bei extrem verduennten Loesungen unter ca. 10^-6 mol/l.",
+            explanationZH: "致命误判：水自耦电离仅贡献 10^-7 mol/l，相对于 5x10^-3 mol/l 完全可忽略；只有在浓度低于约 10^-6 mol/l 的极稀溶液中才需考虑。"
+          }
+        ]
+      },
+      klpTermini: [
+        {
+          termDE: "Protonendonator",
+          definitionDE: "Broensted-Saeure: Teilchen, das Protonen abgibt; die Staerke entscheidet, welcher Bruchteil bei gegebener Konzentration tatsaechlich abgibt.",
+          termZH: "质子供体",
+          definitionZH: "布朗斯特酸：给出质子的粒子；酸的强弱决定给定浓度下实际给出质子的比例。"
+        },
+        {
+          termDE: "Dissoziationsgrad",
+          definitionDE: "Anteil der dissoziierten Saeureteilchen (alpha): ca. 100 % bei starken Saeuren, kleiner Bruchteil bei schwachen Saeuren; gehoert zwingend zur pH-Begruendung.",
+          termZH: "电离度",
+          definitionZH: "已电离酸分子的比例：强酸约100%，弱酸只是一小部分；pH计算必须附带电离度论证。"
+        },
+        {
+          termDE: "Ks / pKs",
+          definitionDE: "Saeurekonstante des Protolyse-Gleichgewichts schwacher Saeuren: Mass fuer die Gleichgewichtslage, nur dort anzusetzen, nie bei starken Saeuren.",
+          termZH: "Ks/pKs",
+          definitionZH: "弱酸质子转移平衡的平衡常数：只适用于弱酸体系，绝不用于强酸。"
+        },
+        {
+          termDE: "Logarithmische pH-Skala",
+          definitionDE: "pH = -lg(c(H3O+)): Verduennung um Faktor 10 hebt den pH um genau 1 Einheit; lineare Proportionalitaet ist ausgeschlossen.",
+          termZH: "对数pH标度",
+          definitionZH: "pH=-lg(c(H3O+))：稀释10倍pH恰升1个单位，不存在线性正比。"
+        },
+        {
+          termDE: "Aequivalenzpunkt",
+          definitionDE: "Stoffmengengleichheit n(H3O+) = n(OH-) bei der Titration; pH 7 gilt nur im stark-stark-Fall, sonst bestimmen Salz-Hydrolyse und Ks den pH.",
+          termZH: "等当点",
+          definitionZH: "滴定中物质的量相等n(H3O+)=n(OH-)；pH=7只适用于强酸强碱，弱体系由盐水解与Ks决定。"
+        }
+      ],
+      fehlerquellen: [
+        {
+          trapTitleDE: "MWG-Ansatz auf starke Saeure",
+          trapDescriptionDE: "Fuer HCl wird ein Protolyse-Gleichgewicht mit Ks angesetzt, obwohl starke Saeuren praktisch vollstaendig dissoziieren und c(H3O+) = c0 direkt gilt.",
+          trapDescriptionZH: "对HCl硬套Ks平衡式，而强酸近乎完全电离，应直接用c(H3O+)=c0。",
+          howToAvoidDE: "Zuerst die Staerke pruefen: stark bedeutet Totaldissoziation ohne MWG; Ks gehoert nur zu schwachen Saeuren."
+        },
+        {
+          trapTitleDE: "pH folgt linear der Konzentration",
+          trapDescriptionDE: "Halbe Konzentration wird mit halbem pH gleichgesetzt, obwohl die logarithmische Skala nur ca. 0,30 Einheiten Aenderung liefert.",
+          trapDescriptionZH: "浓度减半就认为pH减半，无视对数标度下仅约0,30的变化。",
+          howToAvoidDE: "Stets in Zehnerpotenzen denken: Faktor 10 in c0 entspricht genau 1 pH-Einheit."
+        },
+        {
+          trapTitleDE: "Aequivalenz-pH 7 verallgemeinern",
+          trapDescriptionDE: "pH 7 wird als Definitionsmerkmal jedes Aequivalenzpunkts behauptet, obwohl bei schwachen Partnern die Salz-Hydrolyse einen basischen oder sauren pH erzwingt.",
+          trapDescriptionZH: "把pH=7当成一切等当点的定义特征，无视弱体系的盐水解。",
+          howToAvoidDE: "Aequivalenzbedingung (Stoffmenge) und Aequivalenz-pH (Ks/Hydrolyse) strikt trennen."
+        }
+      ],
+      klausurSatz15NP: {
+        musterSatzDE: "Zwar dissoziiert HCl als sehr starke Saeure in verduennter Loesung praktisch vollstaendig, sodass c(H3O+) = c0 gilt und der pH-Wert logarithmisch folgt (pH = 2,30 bei c0 = 0,005 mol/l), dennoch stellt Essigsaeure ein Protolyse-Gleichgewicht mit Ks ein, weshalb bei gleichem c0 ein deutlich hoeherer pH resultiert und am Aequivalenzpunkt einer Titration nur im stark-stark-Fall pH 7 vorliegt.",
+        operator: "analysieren",
+        scoringKeywords: [
+          "Protonendonator",
+          "Dissoziationsgrad",
+          "Ks/pKs",
+          "logarithmische pH-Skala",
+          "Aequivalenzpunkt",
+          "Protolyse-Gleichgewicht",
+          "Neutralisation"
+        ],
+        explanationZH: "（既立足质子转移平衡与 Ks 论证弱酸行为，又用对数标度与强酸完全电离解释定量差异，并限定等当点 pH = 7 只适用于强酸强碱体系。）"
+      },
+      socraticProbes: [
+        {
+          questionDE: "Warum ist die HCl-Loesung deutlich saurer als die gleich konzentrierte Essigsaeure?",
+          questionZH: "浓度同为0,1 mol/l，为什么HCl溶液明显比醋酸更酸？",
+          counterPerspectiveDE: "Gleiche Ausgangskonzentration bedeutet nicht gleiche Protonenabgabe; der Dissoziationsgrad, nicht c0 allein, bestimmt c(H3O+)."
+        },
+        {
+          questionDE: "Gilt die Regel Aequivalenzpunkt gleich pH 7 auch fuer die Titration von Essigsaeure mit Natronlauge?",
+          questionZH: "醋酸对氢氧化钠滴定的等当点也满足pH=7吗？",
+          counterPerspectiveDE: "Die Stoffmengenbilanz gilt universell, der pH-Wert folgt der Chemie des entstandenen Salzes (Acetat-Hydrolyse ergibt basischen pH)."
+        }
+      ]
+    }
+  },
 ];
 
 // ---------------------------------------------------------------------------
