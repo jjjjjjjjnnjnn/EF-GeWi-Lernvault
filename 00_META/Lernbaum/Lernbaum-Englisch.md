@@ -331,7 +331,7 @@ DE: KB1 ist der einzige Bereich, der in allen drei Abitur-Teilen direkt geprueft
   - Operatoren：`outline` · `summarize, sum up` · `present`
   - Lernweg ZH：**检索练习**默写「三段式动笔」一行（谁写给谁 → 只捡题要的点 → 目标格式）；**对比辨别**训练「该转 vs 不该转」判别卡（Rohrer/Foster 混排）。
   - Fehlerquelle：**逐字翻译**（本项目 Fehlerlog 与 `Mediation-und-Kommunikative-Strategien.md` 均列为致命错误）；转述了全文导致超时。
-  - 📓 笔记：✅ `02_Englisch/Mediation-und-Kommunikative-Strategien.md` · ✅ `02_Englisch/Texte-Analyse/Mediation-Mustertexte.md`（两套完整范文）
+  - 📓 笔记：✅ `02_Englisch/Texte-Analyse/Mediation-und-Kommunikative-Strategien.md` · ✅ `02_Englisch/Texte-Analyse/Mediation-Mustertexte.md`（两套完整范文）
 
 - **Kulturelle Erlaeuterungen hinzufuegen 文化释义补充说明** `[EF→Q1]`
   - 中文一句话：为目标读者补充理解所需的文化说明（如 FSJ、Abitur、Duales System 等无对等概念）。
@@ -1053,7 +1053,7 @@ mindmap
 | `02_Englisch/Texte-Analyse/Role-Models-Analysis.md` | **KB1 — Schreiben**（Teil 3 三任务链 + P.E.E.） | 次 KB3（分析工具）、KB5（device 术语） | EF | ✅ 已有（**写作主心骨**） |
 | `02_Englisch/Klausur-Training/Englisch-IQB-Writing-Training.md` | **KB1 — Schreiben**（全流程走一遍） | 次 KB2（Nigeria/Identität 素材） | EF→Q1 | ✅ 已有 |
 | `02_Englisch/Texte-Analyse/Englisch-Abitur-Themenfelder.md` | **KB2 — Orientierungswissen**（UK/USA/Nigeria + Identität/Medien） | 次 KB1（每块 1 句 comment 立场） | Q1-Q2 | ✅ 已有（**唯一触及 QP 层的笔记**） |
-| `02_Englisch/Mediation-und-Kommunikative-Strategien.md` | **KB1 — Sprachmittlung**（跨文化调解准则 / 体裁格式契合 / 文化概念释义） | 次 KB2（跨文化态度）、KB5（语用） | EF | ✅ 已有 |
+| `02_Englisch/Texte-Analyse/Mediation-und-Kommunikative-Strategien.md` | **KB1 — Sprachmittlung**（跨文化调解准则 / 体裁格式契合 / 文化概念释义） | 次 KB2（跨文化态度）、KB5（语用） | EF | ✅ 已有 |
 | `02_Englisch/Texte-Analyse/Mediation-Mustertexte.md` | **KB1 — Sprachmittlung**（FSJ 正式信 + Detox 论坛帖双范文） | 次 KB1-sprachliche Mittel（双 register connectors） | EF | ✅ 已有 |
 | `02_Englisch/Texte-Analyse/Klausur-Teil-B-Doppelpack.md` | **跨域：KB1 — Hörverstehen ⨯ Sprachmittlung**（双轨同篇） | 次 KB4（四阶练法） | EF | ✅ 已有（**跨域节点，不可拆成两篇**） |
 | `02_Englisch/Texte-Analyse/Klett-Themenfelder-Mapping.md` | **KB3 — Text- und Medienkompetenz**（5 单元 23 媒体 → IQB Bereich 1/2/5/6/7） | 次 KB2（文化域素材）、KB1（听力四阶练法） | EF→Q1 | ✅ 已有 · ⚠️ 自述「混淆 ID 工作假设待目录页核对」[据推断] |
