@@ -21,7 +21,7 @@
 - **TeachingStudio 教学工坊与多邻国上课河流全景规范**：[`00_META/TEACHING-STUDIO-SPECIFICATION.md`](00_META/TEACHING-STUDIO-SPECIFICATION.md)（**商业级教学板块设计、拆书排程、4大通用SVG微世界、5步交互上课流与通关奖赏闭环全景规范，外部 AI 对接与扩展必读**）。
 - 目标：德国 NRW Gymnasium EF 十科笔试/口试提分，中德双语，**完全离线**。
 - **内容铁律**：所有题目材料只能来自用户自己的笔记原文 —— **超纲率 = 0**。
-- **当前规模**：笔记 **420** · Anki 卡片 **1942** · 互动课程 **361 篇**（`Lernreise/`，十科全覆盖，含 Lesson-v3 与 Enterprise-v4 全量高阶微课与多学科学术解剖台）· 术语表 **998 行** · 索引链接 **384 条** · 十科图谱 712+ 节点 · 94 套件 727 项全量测试 100% 绿灯 · 考纲体系（NRW 十科 + 中国理科四科 + 中德映射）· 本地真题池 **760 份 PDF (2024–2026 全科 Klausuren + Vorgaben)**。
+- **当前规模**：笔记 **420** · Anki 卡片 **1942** · 互动课程 **361 篇**（`Lernreise/`，十科全覆盖，含 Lesson-v3 与 Enterprise-v4 全量高阶微课与多学科学术解剖台）· 术语表 **977 行** · 索引链接 **388 条** · App `src/baum` 426 节点（EF定制树；Q阶段全量图谱见 `00_META/Lernbaum` 十科Markdown，约674 Klausur-Anbindung节点） · 94 套件 730 项全量测试 100% 绿灯 · 考纲体系（NRW 十科 + 中国理科四科 + 中德映射）· 本地真题池 **1420 份 PDF（全库；其中 CURRICULUM 官方源 218 件）**。
 
 - ✅ **Phase 5.4 App 端 v5 新段落结构化卡片与评分抽屉渲染（2026-10-10 交付）**：
   - **组件模块 (`App-EF-Lernvault/src/components/v5/`)**：
@@ -194,16 +194,19 @@
 ### 1. 先跑门禁建基线（3 条命令，确认「全绿」不是文档声明）
 
 ```bash
-python scripts/vault-check.py                      # 期望 PASS(notes=420, csv_rows=1942, reisen=361, index_links=384)
-cd App-EF-Lernvault && npx vitest run              # 期望 94套件 727项全绿（Wave0口径）
+python scripts/vault-check.py                      # 期望 PASS(notes=420, csv_rows=1942, reisen=361, index_links=388)
+cd App-EF-Lernvault && npx vitest run              # 期望 94套件 730项全绿
 cd App-EF-Lernvault && npm run build               # 期望 ✓ built (0 错误)
 ```
 
 ### 2. 核心主线：Phase 5 A–E 已交付，Wave1/Wave2 已合入，开放方向见下
 
 - **Phase 5 A–E（已交付，见 Journal 2026-10-10-phase-5 系列）**：拆书引擎、4 大通用微世界沙盒、5 步交互微课上课流（`InteractiveLessonRunner`）、通关奖赏河流（`QuestMapTab`）、V5 三 didactic 组件（KernsatzCard / ErwartungshorizontDrawer / AufloesungCard）均已落地。
-- **Wave1 工程加固已合入（c040155）**：vault-check 5 类 warn-only 可观测检查（WARN 363 条不计 ERR，门禁仍 PASS）+ `Templates/` 6 模板唯一来源对齐 + `.gitignore` 64 行确认 + App Tufte 宪法与 `--success` 绿色令牌互冲以行内契约注释消歧 + `--ink-muted`/`--focus` 墨系令牌（未提交部分留 `[App]` 独立 commit）。
+- **Wave1 工程加固已合入（c040155）**：vault-check 5 类 warn-only 可观测检查（WARN 不计 ERR，门禁仍 PASS）+ `Templates/` 6 模板唯一来源对齐 + `.gitignore` 确认 + App Tufte 宪法与 `--success` 绿色令牌互冲以行内契约注释消歧 + `--ink-muted`/`--focus` 墨系令牌（未提交部分留 `[App]` 独立 commit）。
 - **Wave2 内容修复已合入（Musik / Philo / Sport / SoWi / App / Meta 六 commit）**：Musik 18 篇 + Philo 16 篇教具 ID 填充并去 v3 水印；Philo 改名 Philo→Philosophie（30 篇）、SoWi 改名 Sowi→SoWi（12 篇）+ 跨课引用修复；Sport 20 篇教具占位填充；App 宪法批修（去绿卡/shadow/italic/emoji、Fehlerlog 统一 6 列、XP 断点、去伪造 fallback、SVG 保中心）；Meta 文档线（Glossar 去重、问询稿 A11/G6G7、Blocker 恢复 App 线、tags 规则）。
+- **Wave3 文档债已合入三 commit（a628295/a5c00e7/131be0c）**：QuestMapTab伪造fallback断言改真实store口径；十科考纲§6/§8过期表重写；HANDOVER下一步+INDEX日志补缀+Wave2/Wave3日志。
+- **markt-sim互动撞车已修复（f3733bc）**：`MarktgleichgewichtSim`情境化（寒潮默认/能源冲击双使命，靶心50%/30%），Runner按课程选路；94套件730项全绿。
+- **全量审核 Wave4（本轮）**：十路并行审计（vault/Anki/Lernreise/引擎/挂载/仿真/考纲/脚本/文档/门禁）；P0 已修：App伪造Streak/XP兜底（`||18`/`120`→真实store）、`pro`子串误杀（词边界）、quiz/trap经济机制跨学科泄漏（fach分支）、conceptDistiller无archetype学科冒充SoWi+MINT微积分误配（中性兜底）、Runner缺映射（wahlsystem/rawls/gini/orderbuch显式对齐PlayableStudio）、拼图提示硬编码4组；门禁新增WARN-only：INDEX大小写漂移、Werkzeug-id注册表；`.gitignore`收窄`data/`防误删源码。
 - **开放方向（下一会话按此开工）**：Richtung 2 SRS 间隔重复与复习规划器（v5 公理/Kernsatz）；Didaktik Mastery-Checks 与 Abitur-Abschlussprüfung（C3）；Enterprise-v5 模板向剩余例外（SoWi Sinus-Milieus 唯一 v3）与新科推广。
 - **技术规约**：[`00_META/TEACHING-STUDIO-SPECIFICATION.md`](00_META/TEACHING-STUDIO-SPECIFICATION.md)（§8 外部架构评审路线图）；界面 Tufte 纯黑白纸墨风（零 Emoji、零 Tailwind 动态阴影、零 italic、1px 发丝线、纯手绘矢量 SVG）。
 
@@ -231,8 +234,8 @@ cd App-EF-Lernvault && npm run build               # 期望 ✓ built (0 错误)
 |---|---|---|
 | **A 老师问询** | 15 项（4 科内容走向） | 🔄 待老师回复，问询稿已备 |
 | **B 账号权限** | StanSi/SESAM/FWU/eduki 登录墙真题 · Notenlehre Stufe 4 PDF 损坏需重发 | 🔄 部分已由 218 个官方公开 PDF 替代 |
-| **C 真人验收** | V2–V4 走查 · 窄屏真机 · Tauri 首次打包 | ⏸️ 暂缓（涉及 App） |
-| **D App 工程债** | 7 项（worker 零调用方 · chunk 警告 · `.gitignore` 过宽等） | ⏸️ 暂缓（涉及 App） |
+| **C 真人验收** | V2–V4 走查 · 窄屏真机 · Tauri 首次打包 | 🔄 已恢复App线（Wave1起；真机走查仍需人） |
+| **D App 工程债** | 7 项（worker 零调用方 · chunk 警告等；`.gitignore`过宽本轮已收窄） | 🔄 已恢复App线（Wave1起逐项清） |
 
 ⚠️ 未定项在正文一律标 `⏳ 待确认：` 并继续按考纲常规分支展开（**不停摆**）；相关 `Lehrplan.md` 的「待确认」段**不要写成定论**。
 

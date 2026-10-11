@@ -18,8 +18,9 @@ desktop.ini
 _Downloads/
 
 # DeepTutor runtime（家目录必须在vault外，见00_META/DeepTutor.md；误建的data/永不提交）
-data/
-deeptutor-data/
+# 注：必须带前导斜杠，仅忽略vault根目录，严禁匹配App-EF-Lernvault/src/data等源码目录
+/data/
+/deeptutor-data/
 
 # Anki 构建产物（只同步来源 csv/md，不同步 apkg 二进制）
 *.apkg

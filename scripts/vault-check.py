@@ -17,6 +17,18 @@ SKIP_DIRS = {".git", ".obsidian", ".workbuddy-ai", "App-EF-Lernvault", "_Downloa
              "Skills", "Lernreise", "scripts"}
 ERR, WARN = [], []
 
+# Werkzeug-id allowlist (mirrors bookIngestParser TOOL_RULES + InteractiveToolType
+# union + generic/lab kits observed in Lernreise; WARN-only for future drift).
+WERKZEUG_ALLOW = {
+    "wahlsystem-sim", "rawls-sim", "markt-sim", "magisches-viereck",
+    "gini-allocator", "ethik-waage", "tangent-slider", "dilemma-theatre",
+    "orderbuch-sim", "kinematik", "formula", "konzept_puzzle", "variable_slider",
+    "variable-slider-box", "logic_blocks", "scenario_tree", "dilemma_balance",
+    "highlighter", "lego", "oral-timer", "gewi-reading", "text-analyse",
+    "balance-board", "box-optimizer", "schiefe-ebene", "titration-lab",
+    "le-chatelier-sim", "osmose-lab", "kinematik-lab",
+}
+
 REQ_KEYS = ["fach", "thema", "operatoren", "klausurrelevant", "datum", "tags"]
 
 
@@ -108,6 +120,8 @@ def check_index():
         WARN.append("INDEX: stale '356-pian' count text (drift vs actual reisen)")
     if re.search(r"9\s*\u6b65", idx):
         WARN.append("INDEX: stale '9-bu' steps text (Lesson-v3 drift)")
+    if "Lernreise/Sowi-" in idx or "Lernreise/Philo-" in idx:
+        WARN.append("INDEX: 'Sowi-/Philo-' case drift (real files are 'SoWi-/Philosophie-'; Windows-blind, breaks on Linux)")
     return checked, miss
 
 
@@ -147,6 +161,15 @@ def check_reise():
                 ERR.append(f"Lernreise/{p.name}: Enterprise-v4 must contain [Werkzeug: <id>] tag")
         if "[Werkzeug: <id>]" in body:
             WARN.append(f"Lernreise/{p.name}: empty [Werkzeug: <id>] placeholder")
+        # Werkzeug-id allowlist (WARN-only, never ERR): flags future drift while
+        # grandfathering the 22 observed ids (TOOL_RULES 8 + union extras + labs).
+        for wid in set(re.findall(r"\[Werkzeug:\s*([a-zA-Z0-9_\-]+)\]", body)):
+            if wid == "<id>":
+                continue
+            if wid == "orderbuch":
+                WARN.append(f"Lernreise/{p.name}: Werkzeug 'orderbuch' should be 'orderbuch-sim' (registry spelling)")
+            elif wid not in WERKZEUG_ALLOW:
+                WARN.append(f"Lernreise/{p.name}: unregistered Werkzeug '{wid}' (not in TOOL_RULES/union/labs)")
         m_kern = re.search(r"KERNSATZ.*?\n(.*?)(?=##\s*Schritt|\Z)", body, re.S)
         if m_kern is None:
             WARN.append(f"Lernreise/{p.name}: missing KERNSATZ block")

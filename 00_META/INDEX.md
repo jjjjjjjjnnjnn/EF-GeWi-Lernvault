@@ -16,7 +16,7 @@
 ## App（桌面软件，一站式入口）
 - [App-EF-Lernvault](../App-EF-Lernvault/README.md) — EF-Lernvault：六模块 + 命令面板/快捷键/拖拽 + P1接线（顶栏打开真实vault，笔记/背卡/面板全切真实数据）；`npm run dev` 预览（1420）。
 - [LICENSE](../App-EF-Lernvault/LICENSE)（半开源，已定稿） · [NOTICE](../App-EF-Lernvault/NOTICE.md)（第三方署名，实测版本）
-- 互动课程源：[Lernreise/](../Lernreise/) — **十科全覆盖，共 361 篇**（Enterprise-v5：5×v4标杆+1×v3例外）。示例：[Sowi-Soziale-Marktwirtschaft-L1](../Lernreise/Sowi-Soziale-Marktwirtschaft-L1.md) · [Sowi-Preismechanismus-Markt-L1](../Lernreise/Sowi-Preismechanismus-Markt-L1.md) · [Mathe-Sekante-zu-Tangente-L1](../Lernreise/Mathe-Sekante-zu-Tangente-L1.md) · [Philosophie-Utilitarismus-Kant-L2](../Lernreise/Philosophie-Utilitarismus-Kant-L2.md) · [Musik-Sonatenhauptsatzform-L1](../Lernreise/Musik-Sonatenhauptsatzform-L1.md) · [Sport-Weitsprung-L1](../Lernreise/Sport-Weitsprung-L1.md)（vault即课程，App 第 7 模块只读消费）
+- 互动课程源：[Lernreise/](../Lernreise/) — **十科全覆盖，共 361 篇**（Enterprise-v5：5×v4标杆+1×v3例外）。示例：[SoWi-Soziale-Marktwirtschaft-L1](../Lernreise/SoWi-Soziale-Marktwirtschaft-L1.md) · [SoWi-Preismechanismus-Markt-L1](../Lernreise/SoWi-Preismechanismus-Markt-L1.md) · [Mathe-Sekante-zu-Tangente-L1](../Lernreise/Mathe-Sekante-zu-Tangente-L1.md) · [Philosophie-Utilitarismus-Kant-L2](../Lernreise/Philosophie-Utilitarismus-Kant-L2.md) · [Musik-Sonatenhauptsatzform-L1](../Lernreise/Musik-Sonatenhauptsatzform-L1.md) · [Sport-Weitsprung-L1](../Lernreise/Sport-Weitsprung-L1.md)（vault即课程，App 第 7 模块只读消费）
 - 专项教具：`GeWiReadingLab`（文科学术原典精读与六维解剖台）· `EthikWaageSim`（古腾堡力学天平/边沁快乐算盘/康德定言命令检验器）· `RawlsVerteilungsSim`（罗尔斯正义论/无知之幕思想实验/最大最小准则Maximin分配天平与身份抽取沙盘）· `MagischesViereckSim`（1967稳定法§1宏观经济四角形博弈沙盘/菲利普斯两难/危机冲击）· `WahlsystemSim`（德国联邦议院选举与双票制/5%门槛/圣拉古除数法议席分配沙盘）· `BoxOptimizerSim`（极值最优化工坊/4大几何模型/双视窗展开折叠与动态切线图谱）· `OsmoseSimulator`（60FPS粒子动力学微观渗透压实验室）· `OrderbuchSimulator`（Xetra电子订单簿撮合与委托类型仿真）· 14类理科实验沙盒。
 - 约定：App 只读 vault（内容源），不写回；commit 前缀 `[App]`；构建产物与签名密钥永不进 git。
 - P0产物（本地 `src-tauri/target/release/bundle/`，不进git）：`EF-Lernvault_0.1.0_x64-setup.exe`（1.8MB）· MSI（2.7MB），已验启动（窗口标题正常，常驻~25MB）。
@@ -305,6 +305,10 @@
 - [2026-10-10-v5-didactic-components-integration](Journal/2026-10-10-v5-didactic-components-integration.md) — **App 端 v5 新段落结构化卡片与评分抽屉渲染优化**：KernsatzCard + ErwartungshorizontDrawer + AufloesungCard 结构化组件、Blocks 自动聚类解析与 Reise Step 5 场景考场集成（92套件708单测全绿）
 - [2026-10-10-didaktik-entgiftung-und-5-schritte-mikrolearning](Journal/2026-10-10-didaktik-entgiftung-und-5-schritte-mikrolearning.md) — **Didaktik-Entgiftung与5步建构主义微课落地**：KI套话根除+De-Boxing直觉站队+Tufte分屏工作台+4-vs-4概念拼图+0分考场陷阱与15NP金句
 - [2026-10-11-wave0-microlessons](Journal/2026-10-11-wave0-microlessons.md) — **Wave0十科5步微课标杆并行投产与SoWi首单落库**：10科shards并行投产+主线程独立复核10/10全过+单owner集成映射+十科逐单一科一Commit落库（94套件727单测/tsc/vault-check全绿）
+- [2026-10-11-wave1-engineering-hygiene](Journal/2026-10-11-wave1-engineering-hygiene.md) — **Wave1工程加固**：门禁WARN可观测+模板对齐+gitignore+三规范消歧+ID注册表+设计令牌（c040155）
+- [2026-10-11-wave2-content-fixes](Journal/2026-10-11-wave2-content-fixes.md) — **Wave2内容修复**：Musik/Philo/Sport/SoWi/App/Meta六commit（5ee92bf/bea03f1/c4a5c85/515d89f/4febb82/7f70dc5）
+- [2026-10-11-wave3-doc-debt](Journal/2026-10-11-wave3-doc-debt.md) — **Wave3文档债**：测试口径+十科考纲+交接同步三commit（a628295/a5c00e7/131be0c）
+- [2026-10-11-markt-sim-dedup-fix](Journal/2026-10-11-markt-sim-dedup-fix.md) — **markt-sim互动撞车修复**：寒潮/能源冲击双使命情境化（f3733bc，94套件730项）
 - 约定：文件名 `YYYY-MM-DD-<thema>.md`，头部frontmatter（`fach`可空，`tags: [EF, Meta]`）。
 
 
