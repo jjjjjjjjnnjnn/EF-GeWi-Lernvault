@@ -21,7 +21,7 @@
 - **TeachingStudio 教学工坊与多邻国上课河流全景规范**：[`00_META/TEACHING-STUDIO-SPECIFICATION.md`](00_META/TEACHING-STUDIO-SPECIFICATION.md)（**商业级教学板块设计、拆书排程、4大通用SVG微世界、5步交互上课流与通关奖赏闭环全景规范，外部 AI 对接与扩展必读**）。
 - 目标：德国 NRW Gymnasium EF 十科笔试/口试提分，中德双语，**完全离线**。
 - **内容铁律**：所有题目材料只能来自用户自己的笔记原文 —— **超纲率 = 0**。
-- **当前规模**：笔记 **420** · Anki 卡片 **1942** · 互动课程 **361 篇**（`Lernreise/`，十科全覆盖，含 Lesson-v3 与 Enterprise-v4 全量高阶微课与多学科学术解剖台）· 术语表 **998 行** · 索引链接 **382 条** · 十科图谱 712+ 节点 · 94 套件 727 项全量测试 100% 绿灯 · 考纲体系（NRW 十科 + 中国理科四科 + 中德映射）· 本地真题池 **760 份 PDF (2024–2026 全科 Klausuren + Vorgaben)**。
+- **当前规模**：笔记 **420** · Anki 卡片 **1942** · 互动课程 **361 篇**（`Lernreise/`，十科全覆盖，含 Lesson-v3 与 Enterprise-v4 全量高阶微课与多学科学术解剖台）· 术语表 **998 行** · 索引链接 **384 条** · 十科图谱 712+ 节点 · 94 套件 727 项全量测试 100% 绿灯 · 考纲体系（NRW 十科 + 中国理科四科 + 中德映射）· 本地真题池 **760 份 PDF (2024–2026 全科 Klausuren + Vorgaben)**。
 
 - ✅ **Phase 5.4 App 端 v5 新段落结构化卡片与评分抽屉渲染（2026-10-10 交付）**：
   - **组件模块 (`App-EF-Lernvault/src/components/v5/`)**：
@@ -194,7 +194,7 @@
 ### 1. 先跑门禁建基线（3 条命令，确认「全绿」不是文档声明）
 
 ```bash
-python scripts/vault-check.py                      # 期望 PASS(notes=420, csv_rows=1942, reisen=361, index_links=382)
+python scripts/vault-check.py                      # 期望 PASS(notes=420, csv_rows=1942, reisen=361, index_links=384)
 cd App-EF-Lernvault && npx vitest run              # 期望 94套件 727项全绿（Wave0口径）
 cd App-EF-Lernvault && npm run build               # 期望 ✓ built (0 错误)
 ```
