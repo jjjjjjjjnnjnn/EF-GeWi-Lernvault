@@ -31,6 +31,7 @@
 - [TeachingStudio-Spezifikation](TEACHING-STUDIO-SPECIFICATION.md) — **TeachingStudio 教学工坊与多邻国上课河流全景架构规范（商业级拆书排程、4大通用SVG微世界、5步交互上课流与通关奖赏闭环全景规范，外部 AI 对接与扩展必读）**
 - [EXTERNAL-AI-5-STEP-MICROLEARNING-SPEC-AND-PROMPT](EXTERNAL-AI-5-STEP-MICROLEARNING-SPEC-AND-PROMPT.md) — **5 步建构主义互动微课 · 标准化生产规范与外部 AI 批量设计 Prompt（终极标准 v2.0：Zero-Scroll 桌面双栏、零剧透直觉站队、微世界探究、4-vs-4公理拼图、0分答案找茬诊断、15NP双层双语会考金句）**
 - [EXTERNAL-AI-COURSE-PRODUCTION-PROMPT](EXTERNAL-AI-COURSE-PRODUCTION-PROMPT.md) — **外部 AI 课程生产总纲与四大教学模板（Enterprise-v4 破局标准：对标 Anthropic/Brilliant/OpenAI/Study-Mate，五步闭环，四大分科教学模板与40门核心课表生产矩阵，彻底根治假大白话与内容稀碎）** · 模板：[Kurs-Didaktik-Template](../Templates/Kurs-Didaktik-Template.md)
+- [Didaktik-und-Kursdesign-Handbuch](Didaktik-und-Kursdesign-Handbuch.md) — **学科教学论与微课精细化设计全景手册（四大理论基石·四层拆书解构流水线·Enterprise-v5与Obsidian备考指南双轨沉淀规范·外部AI批量设计宪法级规约）**
 - [Plan-接手执行](Plan-接手执行.md) — 接手执行计划（任务状态/铁约束/优先级分层/A–D待办清单）
 - **考纲体系（Curriculum）** — [设计总纲](Curriculum/00-Design.md) · [官方源清单](Curriculum/01-Quellen.md)
   - 德国 NRW Oberstufe（EF–Q2，10 科）：[Deutsch](Curriculum/Deutschland/Deutsch-Oberstufe.md) · [Englisch](Curriculum/Deutschland/Englisch-Oberstufe.md) · [Philosophie](Curriculum/Deutschland/Philosophie-Oberstufe.md) · [SoWi](Curriculum/Deutschland/SoWi-Oberstufe.md) · [Musik](Curriculum/Deutschland/Musik-Oberstufe.md) · [Sport](Curriculum/Deutschland/Sport-Oberstufe.md) · [Mathe](Curriculum/Deutschland/Mathe-Oberstufe.md) · [Physik](Curriculum/Deutschland/Physik-Oberstufe.md) · [Chemie](Curriculum/Deutschland/Chemie-Oberstufe.md) · [Bio](Curriculum/Deutschland/Bio-Oberstufe.md)
