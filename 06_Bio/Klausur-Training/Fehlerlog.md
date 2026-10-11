@@ -2,7 +2,7 @@
 
 | Datum | Aufgabe | Fehler | Korrektur (Operator?) | Wiederholen am |
 |---|---|---|---|---|
-| | | | | |
+| — | noch keine Einträge (ersten echten Klausurfehler hier notieren) | — | — | — |
 
 > 只记可复用的错：Operator verfehlt / Fachbegriff falsch / Beleg fehlt / Zeit falsch verteilt。
 
