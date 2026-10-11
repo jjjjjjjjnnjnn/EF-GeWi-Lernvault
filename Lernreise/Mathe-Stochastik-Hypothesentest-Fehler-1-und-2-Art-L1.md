@@ -96,6 +96,10 @@ COMPLETION (Lückentext):
 - 中文说明：根据上表补全关键数值，不回看上文。
 - Ergaenze: $n = ___$ und $p_1 = ___$, und es gilt $Kontrolle = ___$.
 
+MUSTERLOESUNG:
+Fuer den Test gilt der Stichprobenumfang $n = 100$ und die Alternativwahrscheinlichkeit $p_1 = 0{,}70$. Bei $\alpha = 0{,}05$ liegt der kritische Wert bei $k = 73$, sodass Ablehnungsbereich $\bar{A} = \{0; \dots; 73\}$ und Annahmebereich $A = [74; 100]$ resultieren.
+
+
 `Klausur-Satz: Bei Aufgaben zu Stochastik: Einseitiger und zweiseitiger Hypothesentest sowie Fehler 1. und 2. Art muss die theoriegeleitete Begruendung stets durch exakte Fachtermini und empirische Belege abgesichert werden.`
 
 ## Schritt 5 — check: Das Konzeptduell
