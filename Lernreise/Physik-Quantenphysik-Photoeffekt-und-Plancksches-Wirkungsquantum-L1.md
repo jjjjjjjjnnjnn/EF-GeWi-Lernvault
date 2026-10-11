@@ -95,6 +95,10 @@ COMPLETION (Lückentext):
 - Die Geradensteigung ist $\Delta U_g/\Delta f =$ ___ $\text{Vs}$.
 - Das Wirkungsquantum ist $h =$ ___ $\text{Js}$ aus $h = e \cdot \text{Steigung}$.
 - Die Austrittsarbeit ist $W_A =$ ___ $\text{eV}$.
+
+MUSTERLOESUNG:
+Die Geradensteigung betraegt $\Delta U_g/\Delta f \approx 4{,}16 \cdot 10^{-15}\,\text{V}\cdot\text{s}$. Das Wirkungsquantum folgt ueber $h = e \cdot m \approx 6{,}66 \cdot 10^{-34}\,\text{J}\cdot\text{s}$. Die Austrittsarbeit $W_A = h f_0$ entspricht dem Betrag des Schnittpunkts der Geraden mit der Energieachse (ca. $1{,}98\,\text{eV}$ fuer Caesium).
+
 ## Schritt 5 — check: Das Konzeptduell
 VERGLEICH: Klassische Wellenlehre versus Einsteins Lichtquantenhypothese
 
