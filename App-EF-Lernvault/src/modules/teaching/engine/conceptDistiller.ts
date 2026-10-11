@@ -2926,6 +2926,222 @@ const DOMAIN_KNOWLEDGE_ENTRIES: DomainKnowledgeEntry[] = [
       ]
     }
   },
+
+  // 18. Biomembran, Transportmechanismen und Osmose (Bio)
+  {
+    id: "bio-biomembran-transport-osmose",
+    canonicalTitle: "Biomembran, Transportmechanismen und Osmose",
+    fach: "Bio",
+    matchKeywords: [
+      "biomembran",
+      "fluid-mosaik-modell",
+      "lipiddoppelschicht",
+      "selektiv permeabel",
+      "passiver transport",
+      "aktiver transport",
+      "diffusion",
+      "osmose",
+      "aquaporin",
+      "konzentrationsgefaelle",
+      "hypertonisch",
+      "hypotonisch",
+      "plasmolyse",
+      "deplasmolyse",
+      "turgor"
+    ],
+    data: {
+      topicTitle: "Biomembran, Transportmechanismen und Osmose",
+      fach: "Bio",
+      intuitionDilemma: {
+        scenarioDE: "Zwei Schuesseln Kirschtomaten: eine in stark gesalzenem Wasser, eine in Leitungswasser. Nach 20 Minuten sind die gesalzenen Tomaten schrumpelig, die anderen bleiben prall.",
+        scenarioZH: "两碗小番茄：一碗浓盐水，一碗自来水。20分钟后，盐水中的番茄皱缩，自来水中的依然饱满。",
+        questionDE: "Was geschieht mit den Tomaten im Salzwasser, und wodurch wird die Veraenderung angetrieben?",
+        questionZH: "盐水中的小番茄会发生什么变化？驱动这一变化的动力是什么？",
+        choiceA: {
+          id: "A",
+          textDE: "Sie verlieren Wasser und schrumpfen ein, weil Wasser entlang des osmotischen Gefaelles aus den Zellen nach aussen diffundiert.",
+          textZH: "它们失水皱缩，因为水顺渗透梯度从细胞内向外扩散。",
+          reactionDE: "Diese Spur trifft den Mechanismus: Wasser folgt dem osmotischen Gefaelle durch die selektiv permeable Membran nach aussen, ganz ohne ATP-Verbrauch.",
+          reactionZH: "这个方向抓住了机制：水顺渗透势经选择透过性膜向外扩散，全程不消耗ATP。"
+        },
+        choiceB: {
+          id: "B",
+          textDE: "Sie nehmen Salz auf und werden praller, weil die Zellen Salz aktiv in ihr Inneres pumpen und Wasser dabei nachfolgt.",
+          textZH: "它们主动把盐泵入细胞内部，水随之进入，于是变得更饱满。",
+          reactionDE: "Diese Spur verwechselt die Richtung und den Antrieb: Geladene Teilchen passieren die Lipiddoppelschicht nicht frei, und Wasser wird nicht aktiv gepumpt.",
+          reactionZH: "这个思路混淆了方向与驱动力：带电粒子不能自由穿过脂双层，水也不是被主动泵出去的。"
+        },
+        mechanismTakeawayDE: "Nicht das Salz wandert frei, sondern das Wasser: Es diffundiert passiv entlang des osmotischen Gefaelles durch die selektiv permeable Biomembran. Die Richtung bestimmt allein das Gefaelle, nicht eine Pumpleistung.",
+        mechanismTakeawayZH: "自由移动的不是盐而是水：水经选择透过性生物膜顺渗透梯度被动扩散。方向只由梯度决定，与泵做功无关。",
+        klpCoreLogicDE: "Basiskonzept Struktur-Funktion: Die Fluid-Mosaik-Membran steuert als selektiv permeable Barriere den passiven und aktiven Stofftransport und sichert so die Homoostase der Zelle.",
+        klpCoreLogicZH: "结构-功能基本概念：流动镶嵌膜作为选择透过性屏障调控被动与主动跨膜运输，维持细胞内环境稳态。"
+      },
+      mentalModelAnalogy: {
+        analogyTitle: "Der Tuersteher mit Gaesteliste: Die Membran als selektiver Grenzwall",
+        explanationDE: "Nicht das Salz wandert frei, sondern das Wasser: Es diffundiert passiv entlang des osmotischen Gefaelles durch die selektiv permeable Biomembran. Die Richtung bestimmt allein das Gefaelle, nicht eine Pumpleistung.",
+        explanationZH: "自由移动的不是盐而是水：水经选择透过性生物膜顺渗透梯度被动扩散。方向只由梯度决定，与泵做功无关。"
+      },
+      konzeptPuzzle: {
+        instructionDE: "Ordne jeder falschen Membran-Alltagsannahme die korrekte Transportrealitaet und die Klausur-Konsequenz zu:",
+        instructionZH: "将每条错误的膜常识假设与正确的跨膜运输事实及考场结论配对：",
+        pairs: [
+          {
+            id: "pair-1",
+            premiseDE: "Die Lipiddoppelschicht ist fuer alle geloesten Stoffe gleich durchlaessig.",
+            premiseZH: "脂双层对一切溶质一视同仁、等同透过。",
+            realityDE: "Selektive Permeabilitaet: Nur kleine unpolare Molekuele passieren frei; polare Teilchen und Ionen benoetigen Kanal- oder Carrierproteine.",
+            realityZH: "选择透过性：只有小分子非极性物质自由通过；极性分子与离子必须经通道蛋白或载体蛋白。",
+            consequenceDE: "Klausur: Begruende Transportwege stets ueber Molekuelgroesse, Polaritaet und Proteinausstattung, nicht pauschal ueber die Membran.",
+            consequenceZH: "考场结论：论证运输路径必须依据分子大小、极性与膜蛋白配置，绝不能笼统归于膜本身。"
+          },
+          {
+            id: "pair-2",
+            premiseDE: "Kanal- und Carrierproteine arbeiten grundsaetzlich mit ATP-Verbrauch.",
+            premiseZH: "通道蛋白与载体蛋白工作时原则上都消耗ATP。",
+            realityDE: "Erleichterte Diffusion laeuft entlang des Konzentrationsgefaelles ohne ATP; nur Primaerpumpen wie die Na+/K+-ATPase hydrolysieren direkt ATP.",
+            realityZH: "易化扩散顺浓度梯度进行、不耗ATP；只有钠钾ATP酶等原发性泵直接水解ATP。",
+            consequenceDE: "Klausur: Ordne jeden Transportfall zuerst dem Gefaelle zu: entlang des Gefaelles passiv, gegen das Gefaelle nur mit ATP ueber Pumpen.",
+            consequenceZH: "考场结论：先按梯度归类：顺梯度为被动运输，逆梯度必须经泵耗ATP。"
+          },
+          {
+            id: "pair-3",
+            premiseDE: "Wasser wird von der Zelle aktiv in die gewuenschte Richtung gepumpt.",
+            premiseZH: "细胞把水主动泵向需要的方向。",
+            realityDE: "Osmose ist die passive Diffusion von Wasser durch Aquaporine und die selektiv permeable Membran entlang des osmotischen Potenzials.",
+            realityZH: "渗透是水经水通道蛋白与选择透过性膜、顺渗透势的被动扩散。",
+            consequenceDE: "Klausur: Formuliere Wasserverschiebungen immer als passive Osmose entlang des chemischen Potenzials, nie als Pumpleistung.",
+            consequenceZH: "考场结论：水的移动一律表述为顺化学势的被动渗透，绝不写成泵做功。"
+          },
+          {
+            id: "pair-4",
+            premiseDE: "Die Plasmolyse ist ein irreversibles Absterben der Pflanzenzelle.",
+            premiseZH: "质壁分离意味着植物细胞不可逆死亡。",
+            realityDE: "Deplasmolyse stellt ueber hypotonisches Medium den Turgor wieder her, solange die Membran intakt ist; die Zellwand begrenzt die Aufnahme.",
+            realityZH: "只要膜完整，低渗介质即可使膨压恢复、发生质壁分离复原；细胞壁限定吸水上限。",
+            consequenceDE: "Klausur: Pruefe stets die Reversibilitaet: Intakte Membran plus hypotonisches Medium ergibt Deplasmolyse bis zum maximalen Turgor.",
+            consequenceZH: "考场结论：务必检验可逆性：膜完整加低渗介质即发生质壁分离复原，直至膨压最大。"
+          }
+        ]
+      },
+      examTrapCorrection: {
+        studentAnswerDE: "Bei Zugabe der 1 mol/l KNO3-Loesung pumpt die Zelle aktiv Wasser aus der Vakuole nach aussen, deshalb schrumpft der Zellsaftraum; die Plasmolyse ist ein aktiver Transport mit ATP-Verbrauch.",
+        studentAnswerZH: "加入1 mol/l硝酸钾溶液后，细胞主动把水从液泡泵到细胞外，液泡因此皱缩；质壁分离是一种消耗ATP的主动运输。",
+        fatalFlawPointDE: "Verwechslung der passiven Osmose mit aktivem Transport bei gleichzeitig falscher Wirkungsrichtung einer Pumpleistung.",
+        fatalFlawPointZH: "把被动渗透误判为主动运输，并虚构了泵功的作用方向。",
+        examinerVerdictDE: "0 / 15 NP. Der Wasserausstrom erfolgt passiv entlang des osmotischen Gefaelles ohne ATP; keine Pumpleistung der Zelle. Die starre Zellwand bleibt bestehen, waehrend sich nur der Protoplast zurueckzieht.",
+        examinerVerdictZH: "0/15分。水外流是顺渗透梯度的被动过程，不耗ATP，细胞不做泵功；坚硬细胞壁不动，只有原生质体回缩。",
+        diagnosticOptions: [
+          {
+            id: "diag-correct",
+            textDE: "Osmose verlaeuft passiv entlang des osmotischen Gefaelles ohne ATP; die Zelle pumpt kein Wasser nach aussen.",
+            textZH: "渗透是顺渗透梯度的被动过程，不消耗ATP；细胞并不向外泵水。",
+            isCorrect: true,
+            explanationDE: "Trifft den Kern: Hypertonisches Medium entzieht der Vakuole passiv Wasser durch Tonoplast und Plasmalemma; ATP-Pumpen wie die Na+/K+-ATPase transportieren Ionen, kein Wasser.",
+            explanationZH: "抓住要害：高渗介质经液泡膜与质膜被动抽走液泡水；钠钾ATP酶等泵转运的是离子而非水。"
+          },
+          {
+            id: "diag-distractor-1",
+            textDE: "Der einzige Fehler liegt in der Tonizitaet: Die 1 mol/l KNO3-Loesung ist hypotonisch, daher muesste die Deutung der Wasserbewegung umgekehrt werden.",
+            textZH: "唯一的错误在浓淡判断：1 mol/l硝酸钾溶液是低渗的，因此水的移动方向应反过来解释。",
+            isCorrect: false,
+            explanationDE: "Tonizitaets-Irrtum: 1 mol/l KNO3 ist gegenueber dem Zellsaft stark hypertonisch, nicht hypotonisch; die beobachtete Schrumpfung bestaetigt den Wasserausstrom.",
+            explanationZH: "浓淡误判：相对细胞液，1 mol/l硝酸钾是强高渗而非低渗；观察到的皱缩正证实水外流。"
+          },
+          {
+            id: "diag-distractor-2",
+            textDE: "K+- und NO3--Ionen diffundieren frei durch die Lipiddoppelschicht in die Vakuole und fuellen sie direkt wieder auf.",
+            textZH: "钾离子与硝酸根离子自由穿过脂双层进入液泡，并将其直接重新填满。",
+            isCorrect: false,
+            explanationDE: "Missachtet die selektive Permeabilitaet: Geladene Ionen passieren die Lipiddoppelschicht nicht frei, sondern nur ueber spezifische Kanal- und Carrierproteine.",
+            explanationZH: "无视选择透过性：带电离子不能自由穿过脂双层，只能经特异性通道蛋白或载体蛋白。"
+          }
+        ]
+      },
+      klpTermini: [
+        {
+          termDE: "Konzentrationsgefaelle",
+          definitionDE: "Treiber aller passiven Transporte: Stoffe und Wasser folgen dem Gefaelle von hoher zu niedriger Konzentration, ohne ATP-Verbrauch.",
+          termZH: "浓度梯度",
+          definitionZH: "一切被动运输的驱动力：物质与水顺浓度梯度移动，不耗ATP。"
+        },
+        {
+          termDE: "Osmose",
+          definitionDE: "Passive Diffusion von Wasser durch Aquaporine und die selektiv permeable Membran entlang des osmotischen Potenzials.",
+          termZH: "渗透作用",
+          definitionZH: "水经水通道蛋白与选择透过性膜、顺渗透势的被动扩散，不耗ATP。"
+        },
+        {
+          termDE: "Selektiv permeabel",
+          definitionDE: "Kerndesign der Biomembran: Nur kleine unpolare Molekuele passieren frei; Ionen und polare Stoffe brauchen Kanal- oder Carrierproteine.",
+          termZH: "选择透过性",
+          definitionZH: "生物膜的核心设计：只有小分子非极性物质自由通过，离子与极性物质需通道或载体蛋白。"
+        },
+        {
+          termDE: "Plasmolyse",
+          definitionDE: "Wasserentzug aus der Pflanzenzelle im hypertonischen Medium: Der Protoplast loest sich von der starren Zellwand, reversibel im hypotonischen Medium (Deplasmolyse).",
+          termZH: "质壁分离",
+          definitionZH: "高渗介质中植物细胞失水：原生质体与坚硬细胞壁分离，低渗介质中可复原（质壁分离复原）。"
+        },
+        {
+          termDE: "Turgor",
+          definitionDE: "Innendruck des Protoplasten gegen die Zellwand nach Wasseraufnahme; sichert die Festigkeit krautiger Pflanzen.",
+          termZH: "膨压",
+          definitionZH: "吸水后原生质体对细胞壁的内压力，维持草本植物挺立。"
+        }
+      ],
+      fehlerquellen: [
+        {
+          trapTitleDE: "Osmose als aktive Pumpleistung",
+          trapDescriptionDE: "Wasserbewegungen werden als ATP-verbrauchende Pumpleistung der Zelle beschrieben, obwohl Osmose stets passiv entlang des Gefaelles laeuft.",
+          trapDescriptionZH: "把渗透写成细胞耗ATP的主动泵水，而渗透恒为顺梯度的被动过程。",
+          howToAvoidDE: "Wasserbewegungen stets als passiv entlang des Gefaelles formulieren; ATP gehoert nur zu Transporten gegen das Gefaelle (Primaerpumpen)."
+        },
+        {
+          trapTitleDE: "Ionen passieren die Lipiddoppelschicht frei",
+          trapDescriptionDE: "Geladene Ionen wie K+ und NO3- werden wie Wasser behandelt, obwohl sie die Lipiddoppelschicht nur ueber Kanal- und Carrierproteine passieren.",
+          trapDescriptionZH: "把钾离子、硝酸根等带电离子当成水一样自由穿膜，无视选择透过性。",
+          howToAvoidDE: "Jede Ionenbewegung ueber Proteinausstattung (Groesse, Polaritaet, Kanal/Carrier) begruenden, nie pauschal ueber die Membran."
+        },
+        {
+          trapTitleDE: "Plasmolyse mit Zelltod gleichsetzen",
+          trapDescriptionDE: "Die Plasmolyse wird als irreversibles Absterben gelesen, obwohl sie bei intakter Membran im hypotonischen Medium voll reversibel ist (Deplasmolyse bis zum maximalen Turgor).",
+          trapDescriptionZH: "把质壁分离等同于细胞不可逆死亡，无视其在低渗介质中的完全可逆性。",
+          howToAvoidDE: "Stets die Reversibilitaet pruefen: intakte Membran plus hypotonisches Medium ergibt Deplasmolyse."
+        }
+      ],
+      klausurSatz15NP: {
+        musterSatzDE: "Zwar erfolgt der Wasserausstrom bei der Plasmolyse passiv entlang des osmotischen Gefaelles ohne ATP-Verbrauch, dennoch erklaert erst das Zusammenspiel aus selektiver Permeabilitaet der Biomembran, Turgorverlust des Protoplasten und stuetzender Zellwand, warum destilliertes Wasser als hypotonisches Medium die Deplasmolyse vollstaendig umkehrt.",
+        operator: "darstellen",
+        scoringKeywords: [
+          "Konzentrationsgefaelle",
+          "Osmose",
+          "selektiv permeabel",
+          "hypertonisch",
+          "hypotonisch",
+          "Plasmolyse",
+          "Deplasmolyse",
+          "Turgor",
+          "Protoplast",
+          "Zellwand",
+          "Aquaporin",
+          "passiver Transport"
+        ],
+        explanationZH: "（先承认失水是顺梯度、不耗能的被动渗透，再论证只有选择透过性膜、原生质体收缩与细胞壁支撑三者结合，才能完整解释质壁分离及其可逆性。）"
+      },
+      socraticProbes: [
+        {
+          questionDE: "Warum schrumpfen die Tomaten im Salzwasser, obwohl die Zelle genuegend ATP als Energiereserve besitzt?",
+          questionZH: "盐水中的番茄明明细胞内ATP充足，为什么还是皱缩失水？",
+          counterPerspectiveDE: "ATP treibt nur Transporte gegen das Gefaelle; Wasser folgt stets dem osmotischen Gefaelle, unabhaengig vom zellulaeren Energievorrat."
+        },
+        {
+          questionDE: "Darf die Plasmolyse als Beweis dafuer gelten, dass Pflanzenzellen ihren Wasserhaushalt aktiv steuern?",
+          questionZH: "能否把质壁分离当作植物细胞主动调控水分的证据？",
+          counterPerspectiveDE: "Die Umkehrbarkeit durch blosses Umsetzen in destilliertes Wasser belegt die Passivitaet; aktive Steuerung liegt bei Ionenpumpen und Stomata, nicht beim Wasserstrom selbst."
+        }
+      ]
+    }
+  },
 ];
 
 // ---------------------------------------------------------------------------

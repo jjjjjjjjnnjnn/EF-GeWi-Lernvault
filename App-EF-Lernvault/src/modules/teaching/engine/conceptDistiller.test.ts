@@ -258,6 +258,18 @@ describe("Concept Distillation Engine: conceptDistiller", () => {
     expect(res.klausurSatz15NP.scoringKeywords).toContain("Dissoziationsgrad");
   });
 
+  it("distills Biomembran & Osmose benchmark (Bio)", () => {
+    const res = distillConcept("Biomembran, Transportmechanismen und Osmose", "Bio");
+    validateDistilledConcept(res);
+    expect(res.fach).toBe("Bio");
+    expect(res.intuitionDilemma?.scenarioZH).toContain("小番茄");
+    expect(res.konzeptPuzzle?.pairs.length).toBe(4);
+    expect(res.examTrapCorrection?.diagnosticOptions?.length).toBe(3);
+    expect(res.klausurSatz15NP.operator).toBe("darstellen");
+    expect(res.klausurSatz15NP.scoringKeywords).toContain("Osmose");
+    expect(res.klausurSatz15NP.scoringKeywords).toContain("Plasmolyse");
+  });
+
   it("handles arbitrary topics gracefully via heuristic subject archetypes", () => {
     const arbitrarySoWi = distillConcept("Europaeische Zentralbank und Leitzinssenkung", "SoWi");
     validateDistilledConcept(arbitrarySoWi);
