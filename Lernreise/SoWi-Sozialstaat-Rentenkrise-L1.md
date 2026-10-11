@@ -32,7 +32,7 @@ ZIELE (3 Ziele, nach 15 Minuten erreichbar):
 
 VORAUSSETZUNG: Soziale Marktwirtschaft, Demografiegrundlagen und Umgang mit Operatoren.
 
-VORGAENGER-VERWEIS: Diese Lektion setzt `Sowi-Soziale-Marktwirtschaft-L1.md` voraus und wiederholt sie nicht. Dort wurde die Ordnung aus Markt plus sozialem Ausgleich eingefuehrt. Hier folgt der enge Ausschnitt: nur Sozialstaatsprinzipien plus Rentenfinanzierung im Umlageverfahren; Arbeitsmarkt- oder Gesundheitspolitik gehoeren nicht hierher.
+VORGAENGER-VERWEIS: Diese Lektion setzt `SoWi-Soziale-Marktwirtschaft-L1.md` voraus und wiederholt sie nicht. Dort wurde die Ordnung aus Markt plus sozialem Ausgleich eingefuehrt. Hier folgt der enge Ausschnitt: nur Sozialstaatsprinzipien plus Rentenfinanzierung im Umlageverfahren; Arbeitsmarkt- oder Gesundheitspolitik gehoeren nicht hierher.
 
 Klausur-Satz: `Die Rente im Umlageverfahren haengt vom Verhaeltnis von Beitragszahlern zu Rentenempfaengern ab.`
 

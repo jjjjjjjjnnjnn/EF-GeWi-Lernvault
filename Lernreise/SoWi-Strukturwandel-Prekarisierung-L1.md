@@ -32,7 +32,7 @@ ZIELE (3 Ziele, nach 15 Minuten erreichbar):
 
 VORAUSSETZUNG: Soziale Ungleichheit, Indikatoren und Operatoren darstellen und analysieren.
 
-VORGAENGER-VERWEIS: Diese Lektion setzt `SoWi-Soziale-Ungleichheit-L1.md` und `Sowi-Soziale-Ungleichheit-Gini-L1.md` voraus und wiederholt sie nicht. Dort wurden Messung und Dimensionen von Ungleichheit (Lorenzkurve, $Gini \in [0,1]$) eingefuehrt. Hier folgt der enge Ausschnitt: nur sektoraler Strukturwandel plus Prekarisierung unsicherer Beschaeftigung; Gini-Berechnung gehoert nicht hierher.
+VORGAENGER-VERWEIS: Diese Lektion setzt `SoWi-Soziale-Ungleichheit-L1.md` und `SoWi-Soziale-Ungleichheit-Gini-L1.md` voraus und wiederholt sie nicht. Dort wurden Messung und Dimensionen von Ungleichheit (Lorenzkurve, $Gini \in [0,1]$) eingefuehrt. Hier folgt der enge Ausschnitt: nur sektoraler Strukturwandel plus Prekarisierung unsicherer Beschaeftigung; Gini-Berechnung gehoert nicht hierher.
 
 Klausur-Satz: `Der Strukturwandel verlagert Beschaeftigung in den Dienstleistungssektor und erzeugt dort prekaere Randzonen.`
 

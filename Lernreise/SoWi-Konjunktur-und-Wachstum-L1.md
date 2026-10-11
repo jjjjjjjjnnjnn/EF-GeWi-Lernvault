@@ -82,7 +82,7 @@ $$\text{Konjunkturschwankung: } Y_t = Y_{\text{Trend}} + \Delta Y_{\text{Zyklus}
 **Bezug zum Konzept**: `Gesamtwirtschaftliche Nachfrageluecken in der Rezession koennen private Akteure aus eigener Kraft oft nicht ueberwinden.`
 
 ## Schritt 4 — ausprobieren: Sandbox-Auftrag Krisenmanagement
-Kontinuitaet: Vorher Sowi-Soziale-Marktwirtschaft-L1.md | Nachher Sowi-Preismechanismus-Markt-L1.md. Krise dieser Episode: Ueberhitzung fuehrt in Rezession. Zielgroessen: BIP, Konjunkturphasen, Fruehindikatoren, Fiskalpolitik, Magisches Viereck
+Kontinuitaet: Vorher SoWi-Soziale-Marktwirtschaft-L1.md | Nachher SoWi-Preismechanismus-Markt-L1.md. Krise dieser Episode: Ueberhitzung fuehrt in Rezession. Zielgroessen: BIP, Konjunkturphasen, Fruehindikatoren, Fiskalpolitik, Magisches Viereck
 
 BEISPIEL（正确例题示范，含教具操作与解答）：
 
