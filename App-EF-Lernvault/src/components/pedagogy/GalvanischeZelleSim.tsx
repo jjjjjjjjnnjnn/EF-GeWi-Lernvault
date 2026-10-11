@@ -133,7 +133,7 @@ export function GalvanischeZelleSim({ lang = "de", onExportFinding }: Galvanisch
   };
 
   return (
-    <div className="w-full flex flex-col gap-5 p-4 sm:p-6 bg-[var(--paper)] rounded-xl border border-[var(--line)] shadow-xs font-sans text-[var(--ink)]">
+    <div className="w-full flex flex-col gap-5 p-4 sm:p-6 bg-[var(--paper)] rounded-xl border border-[var(--line)] shadow-none font-sans text-[var(--ink)]">
       {/* 顶部标题栏 */}
       <div className="flex flex-wrap items-center justify-between gap-3 border-b border-[var(--line)] pb-4">
         <div>
@@ -155,7 +155,7 @@ export function GalvanischeZelleSim({ lang = "de", onExportFinding }: Galvanisch
             onClick={() => setIsCircuitClosed(!isCircuitClosed)}
             className={`px-3 py-1.5 text-xs font-bold rounded-lg border transition-colors ${
               isCircuitClosed
-                ? "bg-emerald-500/15 border-emerald-500 text-emerald-700 dark:text-emerald-300"
+                ? "bg-[var(--paper-subtle)] border-[var(--line)] text-[var(--ink)] dark:text-[var(--ink)]"
                 : "bg-red-500/15 border-red-500 text-red-600"
             }`}
           >
@@ -374,7 +374,7 @@ export function GalvanischeZelleSim({ lang = "de", onExportFinding }: Galvanisch
         </div>
 
         {/* 右侧：氧化还原半反应式与能斯特方程推导 (5 列) */}
-        <div className="lg:col-span-5 flex flex-col gap-3 p-4 bg-[var(--paper)] rounded-xl border border-[var(--line)] shadow-xs text-xs">
+        <div className="lg:col-span-5 flex flex-col gap-3 p-4 bg-[var(--paper)] rounded-xl border border-[var(--line)] shadow-none text-xs">
           <div className="border-b border-[var(--line)] pb-3">
             <span className="font-mono text-[var(--gray)] uppercase tracking-wider text-[10px]">
               {isDe ? "Redox-Kinetik & Thermodynamik" : "氧化还原反应动力学与热力学"}
@@ -400,7 +400,7 @@ export function GalvanischeZelleSim({ lang = "de", onExportFinding }: Galvanisch
           </div>
 
           {/* 还原半反应 (Kathode) */}
-          <div className="p-2.5 rounded-lg bg-emerald-500/10 border border-emerald-500/20 text-emerald-900 dark:text-emerald-200">
+          <div className="p-2.5 rounded-lg bg-[var(--paper-subtle)] border border-[var(--line)] text-[var(--ink)] dark:text-[var(--ink)]">
             <span className="font-bold block mb-0.5">
               {isDe ? "⚡ Kathode (Pluspol) · Reduktion / Elektronenaufnahme:" : "⚡ 正极（阴极 Kathode）· 还原反应 / 夺得电子："}
             </span>

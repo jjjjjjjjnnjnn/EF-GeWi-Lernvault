@@ -220,7 +220,7 @@ export function FehlerlogModal({ draft: initialDraft, onClose, lang = "zh" }: Fe
             onClick={handleCopy}
             className={`inline-flex items-center gap-2 rounded-[var(--radius)] border px-4 py-1.5 font-sans text-[13px] font-medium ${
               copied
-                ? "border-[var(--success)] text-[var(--success)]"
+                ? "border-[var(--line)] text-[var(--ink)]"
                 : "border-[var(--accent)] text-[var(--accent)] hover:bg-[var(--paper-subtle)]"
             }`}
           >

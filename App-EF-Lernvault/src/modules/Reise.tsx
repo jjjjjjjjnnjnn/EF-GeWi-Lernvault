@@ -1717,7 +1717,7 @@ export default function ReiseModule({
                       }}
                       className={`px-2.5 py-1 text-xs font-mono rounded-[var(--radius)] border ${
                         isPassed
-                          ? "border-[var(--success)] bg-[var(--success)]/10 text-[var(--success)] font-semibold"
+                          ? "border-[var(--line)] bg-[var(--paper-subtle)] text-[var(--ink)] font-semibold"
                           : "border-[var(--line)] text-[var(--gray)] hover:border-[var(--ink)]"
                       }`}
                     >
@@ -2685,7 +2685,7 @@ export default function ReiseModule({
                               </span>
                             </div>
                             {isDone && (
-                              <span className="text-[var(--success)] shrink-0 font-bold">
+                              <span className="text-[var(--ink)] shrink-0 font-bold">
                                 <CheckMarkSvg />
                               </span>
                             )}
@@ -2745,7 +2745,7 @@ export default function ReiseModule({
                           {s.typ}
                         </span>
                         {isPast && (
-                          <span className="text-[var(--success)]">
+                          <span className="text-[var(--ink)]">
                             {lang === "de" ? "Erledigt" : "已完成"}
                           </span>
                         )}

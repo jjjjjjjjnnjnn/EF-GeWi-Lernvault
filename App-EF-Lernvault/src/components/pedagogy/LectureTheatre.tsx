@@ -235,7 +235,7 @@ export function LectureTheatre({
 
                 {/* 深度理论讲义（Fachliche Vertiefung & Kernaussagen）：教材级系统知识点详解 */}
                 {scene.theory && (
-                  <div className="mb-6 rounded-lg border border-[var(--line)] bg-[var(--surface)] p-4 sm:p-5 shadow-2xs space-y-3.5">
+                  <div className="mb-6 rounded-lg border border-[var(--line)] bg-[var(--surface)] p-4 sm:p-5 shadow-none space-y-3.5">
                     <div className="flex items-center justify-between border-b border-[var(--line)]/70 pb-2">
                       <div className="flex items-center gap-2 font-mono text-[10px] uppercase tracking-wider text-[var(--gray)]">
                         <span className="h-1.5 w-1.5 rounded-full bg-[var(--ink)]" />
@@ -280,7 +280,7 @@ export function LectureTheatre({
                 {/* 双栏工作区：左 60% 互动原理解构看板 + 右 40% 思考验证 */}
                 <div className="flex flex-col gap-6 lg:flex-row items-stretch">
                   {/* 左侧：原理解构与模型模拟器 */}
-                  <div className="flex flex-1 flex-col justify-between rounded-lg border border-[var(--line)] bg-[var(--surface)] p-4 lg:w-[60%] shadow-2xs">
+                  <div className="flex flex-1 flex-col justify-between rounded-lg border border-[var(--line)] bg-[var(--surface)] p-4 lg:w-[60%] shadow-none">
                     {/* 看板顶栏 */}
                     <div className="mb-3 flex items-center justify-between border-b border-[var(--line)]/70 pb-2 text-[11px]">
                       <div className="flex items-center gap-1.5 font-mono text-[10px] text-[var(--gray)] uppercase tracking-wider">
@@ -305,7 +305,7 @@ export function LectureTheatre({
                   </div>
 
                   {/* 右侧：会考考向验证题 */}
-                  <div className="flex flex-col justify-between gap-4 rounded-lg border border-[var(--line)] bg-[var(--surface)] p-4 lg:w-[40%] shadow-2xs text-xs">
+                  <div className="flex flex-col justify-between gap-4 rounded-lg border border-[var(--line)] bg-[var(--surface)] p-4 lg:w-[40%] shadow-none text-xs">
                     {checkpoint && (
                       <div className="flex flex-col justify-between h-full gap-3">
                         <div>
@@ -318,7 +318,7 @@ export function LectureTheatre({
                               <span
                                 className={`rounded px-2 py-0.5 font-mono text-[11px] font-bold border ${
                                   isCorrect
-                                    ? "bg-emerald-100 border-emerald-300 text-emerald-950"
+                                    ? "bg-[var(--paper-subtle)] border-[var(--line)] text-[var(--ink)]"
                                     : "bg-rose-100 border-rose-300 text-rose-950"
                                 }`}
                               >
@@ -351,8 +351,8 @@ export function LectureTheatre({
                                   className={`w-full rounded border px-3 py-2.5 text-left text-xs transition duration-150 ${
                                     selected
                                       ? isOptionCorrect
-                                        ? "border-emerald-600 bg-emerald-50 text-[var(--ink)] font-semibold shadow-xs"
-                                        : "border-rose-600 bg-rose-50 text-[var(--ink)] font-semibold shadow-xs"
+                                        ? "border-[var(--line)] bg-[var(--paper-subtle)] text-[var(--ink)] font-semibold shadow-none"
+                                        : "border-rose-600 bg-rose-50 text-[var(--ink)] font-semibold shadow-none"
                                       : "border-[var(--line)] bg-[var(--paper)] text-[var(--ink)] hover:border-[var(--ink)]/60"
                                   }`}
                                 >
@@ -361,7 +361,7 @@ export function LectureTheatre({
                                       <span
                                         className={`font-mono text-[11px] font-bold ${
                                           selected && isOptionCorrect
-                                            ? "text-emerald-900"
+                                            ? "text-[var(--ink)]"
                                             : selected && !isOptionCorrect
                                             ? "text-rose-900"
                                             : "text-[var(--gray)]"
@@ -376,7 +376,7 @@ export function LectureTheatre({
                                     {selected && (
                                       <span
                                         className={`shrink-0 font-mono text-[11px] font-bold ${
-                                          isOptionCorrect ? "text-emerald-900" : "text-rose-900"
+                                          isOptionCorrect ? "text-[var(--ink)]" : "text-rose-900"
                                         }`}
                                       >
                                         {isOptionCorrect ? "✓" : "✕"}
@@ -401,18 +401,18 @@ export function LectureTheatre({
 
                         {/* 解锁反馈条：高对比深墨与深绿字，彻底告别浅绿发虚 */}
                         {isCorrect && idx + 1 < scenes.length && (
-                          <div className="flex items-center justify-between rounded border border-emerald-400 bg-emerald-100/80 px-3 py-2 text-xs text-emerald-950 font-bold shadow-xs">
+                          <div className="flex items-center justify-between rounded border border-[var(--line)] bg-[var(--paper-subtle)] px-3 py-2 text-xs text-[var(--ink)] font-bold shadow-none">
                             <div className="flex items-center gap-1.5">
-                              <span className="flex h-4 w-4 items-center justify-center rounded-full bg-emerald-800 text-white text-[10px]">
+                              <span className="flex h-4 w-4 items-center justify-center rounded-full bg-[var(--paper-subtle)] text-white text-[10px]">
                                 ✓
                               </span>
-                              <span className="text-emerald-950">
+                              <span className="text-[var(--ink)]">
                                 {de ? "Freigeschaltet" : "下一部分已解锁"}
                               </span>
                             </div>
                             <button
                               onClick={() => scrollToSlide(idx + 1)}
-                              className="font-mono text-[11px] font-bold text-emerald-950 hover:text-black underline"
+                              className="font-mono text-[11px] font-bold text-[var(--ink)] hover:text-black underline"
                             >
                               <span>{de ? "Weiter nach unten ↓" : "向下滑动查看 ↓"}</span>
                             </button>
@@ -421,7 +421,7 @@ export function LectureTheatre({
 
                         {/* 全剧通关 */}
                         {isCorrect && idx === scenes.length - 1 && (
-                          <div className="rounded border border-emerald-400 bg-emerald-100/80 p-2 text-xs text-emerald-950 text-center font-bold shadow-xs">
+                          <div className="rounded border border-[var(--line)] bg-[var(--paper-subtle)] p-2 text-xs text-[var(--ink)] text-center font-bold shadow-none">
                             {de
                               ? "✓ Alle 5 Lektionen erfolgreich gemeistert!"
                               : "✓ 本微课全部 5 节已全部通关掌握！"}
@@ -477,7 +477,7 @@ export function LectureTheatre({
                   <span
                     className={`absolute -left-[18px] top-0.5 flex h-2.5 w-2.5 items-center justify-center rounded-full transition ${
                       isCompleted
-                        ? "bg-emerald-600 ring-2 ring-[var(--paper)]"
+                        ? "bg-[var(--paper-subtle)] ring-2 ring-[var(--paper)]"
                         : isCurrent
                         ? "bg-[var(--ink)] ring-2 ring-[var(--paper)]"
                         : "border border-[var(--line)] bg-[var(--paper)]"

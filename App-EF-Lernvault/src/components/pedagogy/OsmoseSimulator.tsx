@@ -32,7 +32,7 @@ const COL_WATER = "#1e40af"; // Deep sea blue
 const COL_SOLUTE = "#b45309"; // Amber-700
 const COL_WALL = "#3f3f46"; // Zinc-700
 const COL_MEMBRANE = "#0284c7"; // Sky-600
-const COL_TURGOR_GOOD = "#065f46"; // Emerald-800
+const COL_TURGOR_GOOD = "#1a1a1a"; // ink (Tufte monochrome)
 const COL_PLASMOLYSE = "#9f1239"; // Rose-800
 const COL_INK = "#18181b";
 
@@ -524,7 +524,7 @@ export function OsmoseSimulator({
             />
 
             {/* Stage Status Capsule */}
-            <div className="absolute bottom-3 left-3 right-3 flex flex-wrap items-center justify-between gap-2 px-3 py-1.5 bg-white/90 backdrop-blur border border-[var(--line)] rounded text-xs font-mono shadow-xs">
+            <div className="absolute bottom-3 left-3 right-3 flex flex-wrap items-center justify-between gap-2 px-3 py-1.5 bg-white/90 backdrop-blur border border-[var(--line)] rounded text-xs font-mono shadow-none">
               <div className="flex items-center gap-2">
                 <span className="w-2.5 h-2.5 rounded-full" style={{ backgroundColor: statusCol }} />
                 <span className="font-semibold" style={{ color: statusCol }}>
@@ -566,7 +566,7 @@ export function OsmoseSimulator({
                 <button
                   type="button"
                   onClick={() => handlePreset("hypoton")}
-                  className="px-2 py-1 text-left border border-emerald-200 bg-emerald-50/60 hover:bg-emerald-100 text-emerald-900 text-[11px] rounded transition-colors font-medium"
+                  className="px-2 py-1 text-left border border-[var(--line)] bg-[var(--paper-subtle)] hover:bg-[var(--paper-subtle)] text-[var(--ink)] text-[11px] rounded transition-colors font-medium"
                 >
                   {isZh ? "3. 去质壁复原" : "3. Deplasmolyse"}
                 </button>
@@ -629,7 +629,7 @@ export function OsmoseSimulator({
                     <label htmlFor={turgorId} className="cursor-pointer text-[11px]">
                       {isZh ? "细胞壁膨压 Ψp(Turgor):" : "Wandgegendruck Ψp(Turgor):"}
                     </label>
-                    <span className="font-semibold text-emerald-800">+{psiPInnen} MPa</span>
+                    <span className="font-semibold text-[var(--ink)]">+{psiPInnen} MPa</span>
                   </div>
                   <input
                     id={turgorId}
@@ -639,7 +639,7 @@ export function OsmoseSimulator({
                     step="0.05"
                     value={psiPInnen}
                     onChange={(e) => setPsiPInnen(parseFloat(e.target.value))}
-                    className="w-full accent-emerald-700 cursor-pointer"
+                    className="w-full accent-[var(--ink)] cursor-pointer"
                   />
                 </div>
               )}

@@ -93,7 +93,7 @@ export function LibetExperimentSim({ lang = "de", onExportFinding }: LibetExperi
   };
 
   return (
-    <div className="w-full flex flex-col gap-5 p-4 sm:p-6 bg-[var(--surface)] rounded-xl border border-[var(--line)] shadow-xs font-sans text-[var(--ink)]">
+    <div className="w-full flex flex-col gap-5 p-4 sm:p-6 bg-[var(--surface)] rounded-xl border border-[var(--line)] shadow-none font-sans text-[var(--ink)]">
       {/* 顶部标题与时钟控制 */}
       <div className="flex flex-wrap items-center justify-between gap-3 border-b border-[var(--line)] pb-4">
         <div>
@@ -113,7 +113,7 @@ export function LibetExperimentSim({ lang = "de", onExportFinding }: LibetExperi
           <button
             type="button"
             onClick={handleSimulateStandardTrial}
-            className="px-3 py-1.5 text-xs font-mono font-bold rounded bg-[var(--accent)] text-white hover:opacity-90 shadow-xs transition-opacity cursor-pointer"
+            className="px-3 py-1.5 text-xs font-mono font-bold rounded bg-[var(--accent)] text-white hover:opacity-90 shadow-none transition-opacity cursor-pointer"
           >
             {isDe ? "▶ Standard-Versuch" : "▶ 演示标准脑电过程"}
           </button>
@@ -150,7 +150,7 @@ export function LibetExperimentSim({ lang = "de", onExportFinding }: LibetExperi
           </div>
 
           {/* 示波器刻度盘 SVG (Tufte 学术仪表风格) */}
-          <div className="relative w-full aspect-square rounded-lg border border-[var(--line)] bg-[var(--paper)] flex items-center justify-center p-3 overflow-hidden shadow-2xs">
+          <div className="relative w-full aspect-square rounded-lg border border-[var(--line)] bg-[var(--paper)] flex items-center justify-center p-3 overflow-hidden shadow-none">
             <svg className="w-full h-full select-none" viewBox="0 0 260 260">
               {/* 外圈与内圈精细刻度环 */}
               <circle cx="130" cy="130" r="105" fill="none" stroke="var(--ink)" strokeWidth="1" strokeOpacity="0.8" />
@@ -222,7 +222,7 @@ export function LibetExperimentSim({ lang = "de", onExportFinding }: LibetExperi
               />
 
               <circle cx="130" cy="130" r="2.5" fill="var(--ink)" />
-              <text x="130" y="126" textAnchor="middle" fontSize="8" fill="var(--gray)" fontFamily="serif" fontStyle="italic">
+              <text x="130" y="126" textAnchor="middle" fontSize="8" fill="var(--gray)" fontFamily="serif" fontStyle="">
                 Libet 1983
               </text>
             </svg>
@@ -233,7 +233,7 @@ export function LibetExperimentSim({ lang = "de", onExportFinding }: LibetExperi
             <button
               type="button"
               onClick={handleUserCaptureW}
-              className="w-full py-2 px-3 rounded-lg border border-[var(--accent)] bg-[var(--surface)] text-[var(--accent)] hover:bg-[var(--accent)] hover:text-white font-mono font-bold text-xs shadow-2xs transition-colors cursor-pointer"
+              className="w-full py-2 px-3 rounded-lg border border-[var(--accent)] bg-[var(--surface)] text-[var(--accent)] hover:bg-[var(--accent)] hover:text-white font-mono font-bold text-xs shadow-none transition-colors cursor-pointer"
             >
               {isDe ? "⚡ Jetzt! Willensentschluss fassen (W)" : "⚡ 我现在产生了动意！(记录 W 点)"}
             </button>
@@ -245,7 +245,7 @@ export function LibetExperimentSim({ lang = "de", onExportFinding }: LibetExperi
         </div>
 
         {/* 右侧：脑电准备电位 (BP) 示波波形与时间轴 (7 列) */}
-        <div className="lg:col-span-7 flex flex-col gap-3 p-4 bg-[var(--surface)] rounded-xl border border-[var(--line)] shadow-xs">
+        <div className="lg:col-span-7 flex flex-col gap-3 p-4 bg-[var(--surface)] rounded-xl border border-[var(--line)] shadow-none">
           <div className="flex justify-between items-center border-b border-[var(--line)] pb-3">
             <div>
               <span className="font-mono text-[var(--gray)] uppercase tracking-wider text-[10px]">

@@ -99,7 +99,7 @@ export function TrilemmaSim({ lang = "de", onExportFinding }: TrilemmaSimProps) 
   };
 
   return (
-    <div className="w-full flex flex-col gap-5 p-4 sm:p-6 bg-[var(--paper)] rounded-xl border border-[var(--line)] shadow-xs font-sans text-[var(--ink)]">
+    <div className="w-full flex flex-col gap-5 p-4 sm:p-6 bg-[var(--paper)] rounded-xl border border-[var(--line)] shadow-none font-sans text-[var(--ink)]">
       {/* 顶部标题栏 */}
       <div className="flex flex-wrap items-center justify-between gap-3 border-b border-[var(--line)] pb-4">
         <div>
@@ -121,7 +121,7 @@ export function TrilemmaSim({ lang = "de", onExportFinding }: TrilemmaSimProps) 
             onClick={() => handleSelectRegime("floating")}
             className={`px-2.5 py-1 rounded transition-colors ${
               activeRegime === "floating"
-                ? "bg-[var(--paper)] text-[var(--accent)] shadow-xs font-bold"
+                ? "bg-[var(--paper)] text-[var(--accent)] shadow-none font-bold"
                 : "text-[var(--gray)] hover:text-[var(--ink)]"
             }`}
           >
@@ -132,7 +132,7 @@ export function TrilemmaSim({ lang = "de", onExportFinding }: TrilemmaSimProps) 
             onClick={() => handleSelectRegime("union")}
             className={`px-2.5 py-1 rounded transition-colors ${
               activeRegime === "union"
-                ? "bg-[var(--paper)] text-[var(--accent)] shadow-xs font-bold"
+                ? "bg-[var(--paper)] text-[var(--accent)] shadow-none font-bold"
                 : "text-[var(--gray)] hover:text-[var(--ink)]"
             }`}
           >
@@ -143,7 +143,7 @@ export function TrilemmaSim({ lang = "de", onExportFinding }: TrilemmaSimProps) 
             onClick={() => handleSelectRegime("controls")}
             className={`px-2.5 py-1 rounded transition-colors ${
               activeRegime === "controls"
-                ? "bg-[var(--paper)] text-[var(--accent)] shadow-xs font-bold"
+                ? "bg-[var(--paper)] text-[var(--accent)] shadow-none font-bold"
                 : "text-[var(--gray)] hover:text-[var(--ink)]"
             }`}
           >
@@ -341,7 +341,7 @@ export function TrilemmaSim({ lang = "de", onExportFinding }: TrilemmaSimProps) 
         </div>
 
         {/* 右侧：经济学深度因果剖析与考场破局 */}
-        <div className="lg:col-span-6 flex flex-col gap-3 p-4 bg-[var(--paper)] rounded-xl border border-[var(--line)] shadow-xs">
+        <div className="lg:col-span-6 flex flex-col gap-3 p-4 bg-[var(--paper)] rounded-xl border border-[var(--line)] shadow-none">
           {/* 状态徽标与诊断 */}
           <div className="flex items-center justify-between border-b border-[var(--line)] pb-3">
             <div>
@@ -425,8 +425,8 @@ export function TrilemmaSim({ lang = "de", onExportFinding }: TrilemmaSimProps) 
           </div>
 
           {/* 会考高分答题点拨 */}
-          <div className="p-3.5 rounded-lg bg-[var(--paper-subtle)] border-l-4 border-l-emerald-600 border border-[var(--line)] text-xs text-[var(--ink)]">
-            <span className="font-bold text-emerald-800 dark:text-emerald-400 block mb-1">
+          <div className="p-3.5 rounded-lg bg-[var(--paper-subtle)] border-l-4 border-l-[var(--ink)] border border-[var(--line)] text-xs text-[var(--ink)]">
+            <span className="font-bold text-[var(--ink)] dark:text-[var(--ink)] block mb-1">
               {isDe ? "✍️ SoWi-Klausur Merksatz (EHZ-Kern):" : "✍️ 北威州会考采分高频考点点拨："}
             </span>
             <p className="leading-relaxed text-[var(--ink)]">

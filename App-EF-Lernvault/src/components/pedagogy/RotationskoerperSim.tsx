@@ -140,7 +140,7 @@ export function RotationskoerperSim({ lang = "de", onExportFinding }: Rotationsk
   };
 
   return (
-    <div className="w-full flex flex-col gap-5 p-4 sm:p-6 bg-[var(--paper)] rounded-xl border border-[var(--line)] shadow-xs font-sans text-[var(--ink)]">
+    <div className="w-full flex flex-col gap-5 p-4 sm:p-6 bg-[var(--paper)] rounded-xl border border-[var(--line)] shadow-none font-sans text-[var(--ink)]">
       {/* 顶部标题栏与模型切换 */}
       <div className="flex flex-wrap items-center justify-between gap-3 border-b border-[var(--line)] pb-4">
         <div>
@@ -164,7 +164,7 @@ export function RotationskoerperSim({ lang = "de", onExportFinding }: Rotationsk
               onClick={() => setActiveModelId(m.id)}
               className={`px-2.5 py-1 rounded transition-colors ${
                 activeModelId === m.id
-                  ? "bg-[var(--paper)] text-[var(--accent)] font-bold shadow-xs"
+                  ? "bg-[var(--paper)] text-[var(--accent)] font-bold shadow-none"
                   : "text-[var(--gray)] hover:text-[var(--ink)]"
               }`}
             >
@@ -334,7 +334,7 @@ export function RotationskoerperSim({ lang = "de", onExportFinding }: Rotationsk
         </div>
 
         {/* 右侧：定积分推导与误差收敛计算 (5 列) */}
-        <div className="lg:col-span-5 flex flex-col gap-3 p-4 bg-[var(--paper)] rounded-xl border border-[var(--line)] shadow-xs text-xs">
+        <div className="lg:col-span-5 flex flex-col gap-3 p-4 bg-[var(--paper)] rounded-xl border border-[var(--line)] shadow-none text-xs">
           <div className="border-b border-[var(--line)] pb-3">
             <span className="font-mono text-[var(--gray)] uppercase tracking-wider text-[10px]">
               {isDe ? "Konvergenz & Fehleranalyse" : "定积分极限收敛与误差分析"}
@@ -369,13 +369,13 @@ export function RotationskoerperSim({ lang = "de", onExportFinding }: Rotationsk
           <div className="p-2.5 rounded-lg bg-[var(--paper-subtle)]/60 border border-[var(--line)]">
             <div className="flex justify-between items-center mb-1">
               <span className="font-semibold">{isDe ? "Relativer Approximationsfehler:" : "切片近似相对误差："}</span>
-              <span className={`font-mono font-bold ${calculation.errorPct < 2 ? "text-emerald-600" : "text-amber-600"}`}>
+              <span className={`font-mono font-bold ${calculation.errorPct < 2 ? "text-[var(--ink)]" : "text-amber-600"}`}>
                 {calculation.errorPct}% {calculation.errorPct < 2 ? "✓ Hochpräzise" : ""}
               </span>
             </div>
             <div className="w-full bg-[var(--line)] h-2 rounded-full overflow-hidden">
               <div
-                className={`h-full transition-all duration-300 ${calculation.errorPct < 2 ? "bg-emerald-500" : "bg-amber-500"}`}
+                className={`h-full transition-all duration-300 ${calculation.errorPct < 2 ? "bg-[var(--paper-subtle)]" : "bg-amber-500"}`}
                 style={{ width: `${Math.min(100, calculation.errorPct * 10)}%` }}
               />
             </div>

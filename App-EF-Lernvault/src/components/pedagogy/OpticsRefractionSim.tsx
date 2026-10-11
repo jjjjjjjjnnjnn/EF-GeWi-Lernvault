@@ -259,7 +259,7 @@ export function OpticsRefractionSim({ lang, studioMode = true, onExportFinding }
           className={
             "flex flex-wrap items-center justify-between gap-2 rounded-[var(--radius)] border border-[var(--line)] px-3 py-2 font-mono text-xs " +
             (challengeSolved
-              ? "bg-emerald-50 text-emerald-900 dark:bg-emerald-950/40 dark:text-emerald-100"
+              ? "bg-[var(--paper-subtle)] text-[var(--ink)] dark:bg-[var(--paper-subtle)] dark:text-[var(--ink)]"
               : "bg-[var(--surface)] text-[var(--ink)]")
           }
         >

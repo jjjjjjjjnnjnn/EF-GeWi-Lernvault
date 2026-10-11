@@ -400,11 +400,11 @@ export function LeverBalanceSim({ lang, studioMode: _studioMode = true, onExport
               <div
                 className={`flex items-center gap-2 px-2.5 py-1 rounded border font-mono text-xs font-semibold ${
                   metrics.balanced
-                    ? "border-emerald-500/50 bg-emerald-950/60 text-emerald-300"
+                    ? "border-[var(--line)] bg-[var(--paper-subtle)] text-[var(--ink)]"
                     : "border-amber-500/50 bg-amber-950/60 text-amber-300"
                 }`}
               >
-                <span className={`w-2 h-2 rounded-full ${metrics.balanced ? "bg-emerald-400" : "bg-amber-400"}`} />
+                <span className={`w-2 h-2 rounded-full ${metrics.balanced ? "bg-[var(--paper-subtle)]" : "bg-amber-400"}`} />
                 <span>
                   {metrics.balanced
                     ? lang === "de" ? "Gleichgewicht: Summe M = 0" : "平衡：合力矩 ΣM = 0"
@@ -572,7 +572,7 @@ export function LeverBalanceSim({ lang, studioMode: _studioMode = true, onExport
                 </div>
                 <div className="flex justify-between">
                   <span className="text-[var(--gray)]">M_net = M_L − M_R</span>
-                  <span className={`font-bold ${metrics.balanced ? "text-emerald-700" : "text-red-700"}`}>
+                  <span className={`font-bold ${metrics.balanced ? "text-[var(--ink)]" : "text-red-700"}`}>
                     {metrics.torqueNet}
                   </span>
                 </div>

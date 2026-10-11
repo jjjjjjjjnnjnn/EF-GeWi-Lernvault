@@ -1403,7 +1403,7 @@ export function GewiInteractiveWorkbench({
             onClick={() => setActiveTab("interactive")}
             className={`px-3 py-1.5 rounded transition-all flex items-center gap-1.5 cursor-pointer ${
               activeTab === "interactive"
-                ? "bg-[var(--surface)] text-[var(--accent)] font-bold shadow-xs border border-[var(--line)]/50"
+                ? "bg-[var(--surface)] text-[var(--accent)] font-bold shadow-none border border-[var(--line)]/50"
                 : "text-[var(--gray)] hover:text-[var(--ink)]"
             }`}
           >
@@ -1415,7 +1415,7 @@ export function GewiInteractiveWorkbench({
             onClick={() => setActiveTab("causality")}
             className={`px-3 py-1.5 rounded transition-all flex items-center gap-1.5 cursor-pointer ${
               activeTab === "causality"
-                ? "bg-[var(--surface)] text-[var(--accent)] font-bold shadow-xs border border-[var(--line)]/50"
+                ? "bg-[var(--surface)] text-[var(--accent)] font-bold shadow-none border border-[var(--line)]/50"
                 : "text-[var(--gray)] hover:text-[var(--ink)]"
             }`}
           >
@@ -1427,7 +1427,7 @@ export function GewiInteractiveWorkbench({
             onClick={() => setActiveTab("klausur")}
             className={`px-3 py-1.5 rounded transition-all flex items-center gap-1.5 cursor-pointer ${
               activeTab === "klausur"
-                ? "bg-[var(--surface)] text-[var(--accent)] font-bold shadow-xs border border-[var(--line)]/50"
+                ? "bg-[var(--surface)] text-[var(--accent)] font-bold shadow-none border border-[var(--line)]/50"
                 : "text-[var(--gray)] hover:text-[var(--ink)]"
             }`}
           >
@@ -1474,7 +1474,7 @@ export function GewiInteractiveWorkbench({
                   <span
                     className={`inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-mono font-bold border transition-colors ${
                       proWeightSum - contraWeightSum >= 2
-                        ? "border-emerald-500/40 bg-emerald-50 text-emerald-800 dark:bg-emerald-950/40 dark:text-emerald-300"
+                        ? "border-[var(--line)] bg-[var(--paper-subtle)] text-[var(--ink)] dark:bg-[var(--paper-subtle)] dark:text-[var(--ink)]"
                         : contraWeightSum - proWeightSum >= 2
                         ? "border-rose-500/40 bg-rose-50 text-rose-800 dark:bg-rose-950/40 dark:text-rose-300"
                         : "border-amber-500/40 bg-amber-50 text-amber-800 dark:bg-amber-950/40 dark:text-amber-300"
@@ -1560,7 +1560,7 @@ export function GewiInteractiveWorkbench({
                             onClick={() => toggleWeight(w.id)}
                             className={`p-3 rounded-lg border text-xs cursor-pointer transition-all ${
                               isLoaded
-                                ? "border-[var(--accent)] bg-[var(--accent)]/5 shadow-xs"
+                                ? "border-[var(--accent)] bg-[var(--accent)]/5 shadow-none"
                                 : "border-[var(--line)] bg-[var(--surface)] opacity-60 hover:opacity-90"
                             }`}
                           >
@@ -1605,7 +1605,7 @@ export function GewiInteractiveWorkbench({
                             onClick={() => toggleWeight(w.id)}
                             className={`p-3 rounded-lg border text-xs cursor-pointer transition-all ${
                               isLoaded
-                                ? "border-[var(--ink)] bg-[var(--paper-subtle)] shadow-xs"
+                                ? "border-[var(--ink)] bg-[var(--paper-subtle)] shadow-none"
                                 : "border-[var(--line)] bg-[var(--surface)] opacity-60 hover:opacity-90"
                             }`}
                           >
@@ -1665,7 +1665,7 @@ export function GewiInteractiveWorkbench({
                   </div>
                 </div>
 
-                <blockquote className="p-3 rounded bg-[var(--surface)] border-l-2 border-[var(--accent)] font-mono text-xs text-[var(--ink)] leading-relaxed italic">
+                <blockquote className="p-3 rounded bg-[var(--surface)] border-l-2 border-[var(--accent)] font-mono text-xs text-[var(--ink)] leading-relaxed ">
                   "{balanceCase.formulierungshilfe}"
                 </blockquote>
               </div>
@@ -1692,7 +1692,7 @@ export function GewiInteractiveWorkbench({
                     }}
                     className={`font-mono text-xs px-3 py-1 rounded border transition-all cursor-pointer ${
                       selectedKantId === sc.id
-                        ? "border-[var(--accent)] bg-[var(--surface)] text-[var(--accent)] font-bold shadow-xs"
+                        ? "border-[var(--accent)] bg-[var(--surface)] text-[var(--accent)] font-bold shadow-none"
                         : "border-[var(--line)] bg-[var(--surface)]/70 text-[var(--ink)] hover:border-[var(--accent)]/50"
                     }`}
                   >
@@ -1733,7 +1733,7 @@ export function GewiInteractiveWorkbench({
                     <span className="font-mono text-xs font-bold text-[var(--accent)] block">
                       Schritt 1: Subjektive Handlungsmultime (主观行动准则)
                     </span>
-                    <blockquote className="p-3.5 rounded bg-[var(--paper-subtle)] border-l-2 border-[var(--accent)] font-serif text-sm text-[var(--ink)] leading-relaxed italic">
+                    <blockquote className="p-3.5 rounded bg-[var(--paper-subtle)] border-l-2 border-[var(--accent)] font-serif text-sm text-[var(--ink)] leading-relaxed ">
                       {de ? activeKantScenario.maximeDE : activeKantScenario.maximeZH}
                     </blockquote>
                     <p className="text-xs text-[var(--gray)] leading-relaxed font-sans">
@@ -1761,7 +1761,7 @@ export function GewiInteractiveWorkbench({
                         ? "„Handle so, als ob die Maxime deiner Handlung durch deinen Willen zum allgemeinen Naturgesetze werden sollte.“"
                         : "绝对命令普遍法则公式：“你要这样行动，使得你的准则能够通过你的意志成为普遍的自然法则。”"}
                     </p>
-                    <blockquote className="p-3.5 rounded bg-[var(--paper-subtle)] border-l-2 border-amber-500 font-serif text-sm text-[var(--ink)] leading-relaxed italic">
+                    <blockquote className="p-3.5 rounded bg-[var(--paper-subtle)] border-l-2 border-amber-500 font-serif text-sm text-[var(--ink)] leading-relaxed ">
                       {de ? activeKantScenario.naturgesetzDE : activeKantScenario.naturgesetzZH}
                     </blockquote>
                     <div className="flex gap-2">
@@ -1797,7 +1797,7 @@ export function GewiInteractiveWorkbench({
                             className={`px-2 py-0.5 rounded text-[11px] font-bold ${
                               activeKantScenario.widerspruchDenken
                                 ? "bg-rose-100 text-rose-800 dark:bg-rose-950 dark:text-rose-300"
-                                : "bg-emerald-100 text-emerald-800 dark:bg-emerald-950 dark:text-emerald-300"
+                                : "bg-[var(--paper-subtle)] text-[var(--ink)] dark:bg-[var(--paper-subtle)] dark:text-[var(--ink)]"
                             }`}
                           >
                             {activeKantScenario.widerspruchDenken ? "Ja (Widerspruch!)" : "Nein"}
@@ -1816,7 +1816,7 @@ export function GewiInteractiveWorkbench({
                             className={`px-2 py-0.5 rounded text-[11px] font-bold ${
                               activeKantScenario.widerspruchWollen
                                 ? "bg-rose-100 text-rose-800 dark:bg-rose-950 dark:text-rose-300"
-                                : "bg-emerald-100 text-emerald-800 dark:bg-emerald-950 dark:text-emerald-300"
+                                : "bg-[var(--paper-subtle)] text-[var(--ink)] dark:bg-[var(--paper-subtle)] dark:text-[var(--ink)]"
                             }`}
                           >
                             {activeKantScenario.widerspruchWollen ? "Ja (Widerspruch!)" : "Nein"}
@@ -1860,7 +1860,7 @@ export function GewiInteractiveWorkbench({
                         {de ? activeKantScenario.pflichtTyp.toUpperCase() + "E PFLICHT" : activeKantScenario.pflichtTypZH}
                       </span>
                     </div>
-                    <blockquote className="p-3.5 rounded bg-[var(--surface)] border-l-2 border-[var(--accent)] font-mono text-xs text-[var(--ink)] leading-relaxed italic">
+                    <blockquote className="p-3.5 rounded bg-[var(--surface)] border-l-2 border-[var(--accent)] font-mono text-xs text-[var(--ink)] leading-relaxed ">
                       "{activeKantScenario.klausurUrteilDE}"
                     </blockquote>
                     <button
@@ -1896,7 +1896,7 @@ export function GewiInteractiveWorkbench({
                     }}
                     className={`font-mono text-xs px-2.5 py-1 rounded border transition-colors cursor-pointer ${
                       selectedDramaId === dp.id
-                        ? "border-[var(--accent)] bg-[var(--surface)] text-[var(--accent)] font-bold shadow-2xs"
+                        ? "border-[var(--accent)] bg-[var(--surface)] text-[var(--accent)] font-bold shadow-none"
                         : "border-[var(--line)] bg-[var(--surface)] text-[var(--gray)] hover:text-[var(--ink)]"
                     }`}
                   >
@@ -2010,7 +2010,7 @@ export function GewiInteractiveWorkbench({
                 </div>
 
                 {/* 经典台词原句 */}
-                <blockquote className="p-3.5 rounded bg-[var(--paper-subtle)] border-l-2 border-[var(--accent)] font-mono text-xs text-[var(--ink)] leading-relaxed italic">
+                <blockquote className="p-3.5 rounded bg-[var(--paper-subtle)] border-l-2 border-[var(--accent)] font-mono text-xs text-[var(--ink)] leading-relaxed ">
                   {currentAct.quoteDE}
                   <span className="block mt-1 text-[var(--gray)] font-sans not-italic">
                     {currentAct.quoteZH}
@@ -2057,7 +2057,7 @@ export function GewiInteractiveWorkbench({
                     onClick={() => setSelectedPoemId(pm.id)}
                     className={`font-mono text-xs px-2.5 py-1 rounded border transition-colors cursor-pointer ${
                       selectedPoemId === pm.id
-                        ? "border-[var(--accent)] bg-[var(--surface)] text-[var(--accent)] font-bold shadow-2xs"
+                        ? "border-[var(--accent)] bg-[var(--surface)] text-[var(--accent)] font-bold shadow-none"
                         : "border-[var(--line)] bg-[var(--surface)] text-[var(--gray)] hover:text-[var(--ink)]"
                     }`}
                   >
@@ -2113,7 +2113,7 @@ export function GewiInteractiveWorkbench({
                             : ""
                         } ${
                           syl.stressed
-                            ? "border-[var(--accent)] bg-[var(--accent)]/10 text-[var(--accent)] font-bold shadow-xs"
+                            ? "border-[var(--accent)] bg-[var(--accent)]/10 text-[var(--accent)] font-bold shadow-none"
                             : "border-[var(--line)] bg-[var(--surface)] text-[var(--gray)] hover:border-[var(--ink)]"
                         }`}
                       >
@@ -2172,7 +2172,7 @@ export function GewiInteractiveWorkbench({
                     onClick={() => setIsEpischTheater(false)}
                     className={`px-2.5 py-1 rounded transition-colors cursor-pointer ${
                       !isEpischTheater
-                        ? "bg-[var(--paper-subtle)] text-[var(--ink)] font-bold shadow-2xs border border-[var(--line)]"
+                        ? "bg-[var(--paper-subtle)] text-[var(--ink)] font-bold shadow-none border border-[var(--line)]"
                         : "text-[var(--gray)] hover:text-[var(--ink)]"
                     }`}
                   >
@@ -2183,7 +2183,7 @@ export function GewiInteractiveWorkbench({
                     onClick={() => setIsEpischTheater(true)}
                     className={`px-2.5 py-1 rounded transition-colors cursor-pointer ${
                       isEpischTheater
-                        ? "bg-[var(--accent)] text-white font-bold shadow-2xs"
+                        ? "bg-[var(--accent)] text-white font-bold shadow-none"
                         : "text-[var(--gray)] hover:text-[var(--ink)]"
                     }`}
                   >
@@ -2305,7 +2305,7 @@ export function GewiInteractiveWorkbench({
                       onClick={() => toggleVEffekt(eff.id)}
                       className={`p-3 rounded-lg border cursor-pointer transition-all ${
                         isActive
-                          ? "border-[var(--accent)] bg-[var(--surface)] shadow-2xs"
+                          ? "border-[var(--accent)] bg-[var(--surface)] shadow-none"
                           : "border-[var(--line)] bg-[var(--paper-subtle)]/50 opacity-60"
                       }`}
                     >
@@ -2440,7 +2440,7 @@ export function GewiInteractiveWorkbench({
                 </div>
 
                 {/* 右侧：权力与亲情异化解剖 (5 列) */}
-                <div className="lg:col-span-5 flex flex-col gap-3 p-4 bg-[var(--surface)] rounded-xl border border-[var(--line)] shadow-xs text-xs">
+                <div className="lg:col-span-5 flex flex-col gap-3 p-4 bg-[var(--surface)] rounded-xl border border-[var(--line)] shadow-none text-xs">
                   <div className="border-b border-[var(--line)] pb-2">
                     <span className="font-mono text-[var(--gray)] uppercase tracking-wider text-[10px]">
                       {de ? "Soziologische & Psychoanalytische Deutung" : "社会学（物化）与精神分析双重视角"}
@@ -2469,7 +2469,7 @@ export function GewiInteractiveWorkbench({
                           : "萨姆沙一家对长子的所谓温情，完全建立在他能否按月给父亲还债的基础上。劳动力一旦清零，卡夫卡撕下了市民温情的所有伪装，直击冷酷无情的商品拜物教本质。"}
                     </p>
 
-                    <blockquote className="p-2.5 rounded bg-[var(--paper-subtle)] border-l-2 border-[var(--accent)] font-mono text-[11px] text-[var(--ink)] italic">
+                    <blockquote className="p-2.5 rounded bg-[var(--paper-subtle)] border-l-2 border-[var(--accent)] font-mono text-[11px] text-[var(--ink)] ">
                       {activeDoor === "vater"
                         ? "„Es war ein Apfel; gleich flog ihm ein zweiter nach... ein dritter drang in Gregors Rücken ein.“"
                         : activeDoor === "schwester"
@@ -2507,7 +2507,7 @@ export function GewiInteractiveWorkbench({
                     onClick={() => setBorchertExcerpt("draussen")}
                     className={`px-2.5 py-1 rounded transition-colors cursor-pointer ${
                       borchertExcerpt === "draussen"
-                        ? "bg-[var(--accent)] text-white font-bold shadow-2xs"
+                        ? "bg-[var(--accent)] text-white font-bold shadow-none"
                         : "text-[var(--gray)] hover:text-[var(--ink)]"
                     }`}
                   >
@@ -2518,7 +2518,7 @@ export function GewiInteractiveWorkbench({
                     onClick={() => setBorchertExcerpt("brot")}
                     className={`px-2.5 py-1 rounded transition-colors cursor-pointer ${
                       borchertExcerpt === "brot"
-                        ? "bg-[var(--accent)] text-white font-bold shadow-2xs"
+                        ? "bg-[var(--accent)] text-white font-bold shadow-none"
                         : "text-[var(--gray)] hover:text-[var(--ink)]"
                     }`}
                   >
@@ -2592,13 +2592,13 @@ export function GewiInteractiveWorkbench({
                     </div>
                     <div className="p-2 rounded bg-[var(--paper-subtle)] border border-[var(--line)]">
                       <span className="text-[var(--gray)] block text-[10px]">Parataxe-Quote</span>
-                      <strong className="text-emerald-700 dark:text-emerald-300 text-sm">94% (Reihung)</strong>
+                      <strong className="text-[var(--ink)] dark:text-[var(--ink)] text-sm">94% (Reihung)</strong>
                     </div>
                   </div>
                 </div>
 
                 {/* 右侧：废墟文学教学论考点 (5 列) */}
-                <div className="lg:col-span-5 flex flex-col gap-3 p-4 bg-[var(--surface)] rounded-xl border border-[var(--line)] shadow-xs text-xs">
+                <div className="lg:col-span-5 flex flex-col gap-3 p-4 bg-[var(--surface)] rounded-xl border border-[var(--line)] shadow-none text-xs">
                   <div className="border-b border-[var(--line)] pb-2">
                     <span className="font-mono text-[var(--gray)] uppercase tracking-wider text-[10px]">
                       {de ? "Fachdidaktische Merkmale der Trümmerliteratur" : "战后废墟文学核心教学论特征"}
@@ -2720,7 +2720,7 @@ export function GewiInteractiveWorkbench({
                 <div className="p-3.5 rounded-lg border border-[var(--line)] bg-[var(--surface)] space-y-1.5">
                   <div className="flex items-center justify-between font-mono">
                     <strong className="text-[var(--ink)]">[D] Datum (Tatsache)</strong>
-                    <span className="text-[10px] text-emerald-700 bg-emerald-50 px-1.5 py-0.5 rounded font-bold">FAKT</span>
+                    <span className="text-[10px] text-[var(--ink)] bg-[var(--paper-subtle)] px-1.5 py-0.5 rounded font-bold">FAKT</span>
                   </div>
                   <p className="text-[var(--gray)] leading-relaxed">
                     „72% aller Oberstufenschüler in NRW nutzen bereits generative KI zur Bearbeitung von Textaufgaben.“
@@ -2731,7 +2731,7 @@ export function GewiInteractiveWorkbench({
                   onClick={() => setActiveToulminBlocks((p) => ({ ...p, warrant: !p.warrant }))}
                   className={`p-3.5 rounded-lg border cursor-pointer transition-all space-y-1.5 ${
                     activeToulminBlocks.warrant
-                      ? "border-[var(--accent)] bg-[var(--surface)] shadow-2xs"
+                      ? "border-[var(--accent)] bg-[var(--surface)] shadow-none"
                       : "border-[var(--line)] bg-[var(--paper-subtle)] opacity-50"
                   }`}
                 >
@@ -2760,7 +2760,7 @@ export function GewiInteractiveWorkbench({
                 <span className="font-mono font-bold text-[var(--accent)] block">
                   Klausur-Satzbaustein für die Argumentationsanalyse (AFB II):
                 </span>
-                <blockquote className="p-3 rounded bg-[var(--surface)] border-l-2 border-[var(--accent)] font-mono text-[11px] text-[var(--ink)] leading-relaxed italic">
+                <blockquote className="p-3 rounded bg-[var(--surface)] border-l-2 border-[var(--accent)] font-mono text-[11px] text-[var(--ink)] leading-relaxed ">
                   „Der Verfasser stützt seinen zentralen Claim nicht bloß auf empirische Daten [Datum], sondern legitimiert den Schluss durch den pädagogischen Grundsatz [Warrant], wonach Schule lebensweltliche Anschlussfähigkeit garantieren muss. Indem er mögliche Einwände bezüglich akademischer Täuschungsversuche antizipiert und einschränkt [Rebuttal], verleiht er seiner Argumentation eine hohe argumentative Schlüssigkeit.“
                 </blockquote>
               </div>
@@ -2823,7 +2823,7 @@ export function GewiInteractiveWorkbench({
 
           <div className="rounded-lg border border-[var(--line)] bg-[var(--surface)] p-4 space-y-2">
             <h3 className="font-serif text-sm font-bold text-[var(--ink)] flex items-center gap-2">
-              <span className="text-emerald-600 font-mono">EHZ</span>
+              <span className="text-[var(--ink)] font-mono">EHZ</span>
               {de ? "Erwartungshorizont (Kriterienkatalog)" : "考官采分点标准 (Erwartungshorizont)"}
             </h3>
             <ul className="space-y-2 text-xs font-sans text-[var(--gray)]">

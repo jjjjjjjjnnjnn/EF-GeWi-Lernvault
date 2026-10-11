@@ -359,7 +359,7 @@ export function SinusMilieusSim({ lang = "de", onExportFinding }: SinusMilieusSi
   };
 
   return (
-    <div className="w-full flex flex-col gap-5 p-4 sm:p-6 bg-[var(--paper)] rounded-xl border border-[var(--line)] shadow-xs font-sans text-[var(--ink)]">
+    <div className="w-full flex flex-col gap-5 p-4 sm:p-6 bg-[var(--paper)] rounded-xl border border-[var(--line)] shadow-none font-sans text-[var(--ink)]">
       {/* 顶部标题栏与模式切换 */}
       <div className="flex flex-wrap items-center justify-between gap-3 border-b border-[var(--line)] pb-4">
         <div>
@@ -381,7 +381,7 @@ export function SinusMilieusSim({ lang = "de", onExportFinding }: SinusMilieusSi
             onClick={() => setActiveTab("map")}
             className={`px-3 py-1.5 rounded-md transition-all ${
               activeTab === "map"
-                ? "bg-[var(--paper)] text-[var(--accent)] shadow-xs font-semibold"
+                ? "bg-[var(--paper)] text-[var(--accent)] shadow-none font-semibold"
                 : "text-[var(--gray)] hover:text-[var(--ink)]"
             }`}
           >
@@ -392,7 +392,7 @@ export function SinusMilieusSim({ lang = "de", onExportFinding }: SinusMilieusSi
             onClick={() => setActiveTab("persona")}
             className={`px-3 py-1.5 rounded-md transition-all ${
               activeTab === "persona"
-                ? "bg-[var(--paper)] text-[var(--accent)] shadow-xs font-semibold"
+                ? "bg-[var(--paper)] text-[var(--accent)] shadow-none font-semibold"
                 : "text-[var(--gray)] hover:text-[var(--ink)]"
             }`}
           >
@@ -403,7 +403,7 @@ export function SinusMilieusSim({ lang = "de", onExportFinding }: SinusMilieusSi
             onClick={() => setActiveTab("klausur")}
             className={`px-3 py-1.5 rounded-md transition-all ${
               activeTab === "klausur"
-                ? "bg-[var(--paper)] text-[var(--accent)] shadow-xs font-semibold"
+                ? "bg-[var(--paper)] text-[var(--accent)] shadow-none font-semibold"
                 : "text-[var(--gray)] hover:text-[var(--ink)]"
             }`}
           >
@@ -534,7 +534,7 @@ export function SinusMilieusSim({ lang = "de", onExportFinding }: SinusMilieusSi
           </div>
 
           {/* 右侧：所选社群的 360° 学术显微镜 */}
-          <div className="lg:col-span-5 flex flex-col gap-3 p-4 bg-[var(--paper)] rounded-xl border border-[var(--line)] shadow-xs">
+          <div className="lg:col-span-5 flex flex-col gap-3 p-4 bg-[var(--paper)] rounded-xl border border-[var(--line)] shadow-none">
             <div className="flex items-start justify-between gap-2 border-b border-[var(--line)] pb-3">
               <div>
                 <span
@@ -550,7 +550,7 @@ export function SinusMilieusSim({ lang = "de", onExportFinding }: SinusMilieusSi
             </div>
 
             {/* 核心生活格言 */}
-            <div className="p-3 rounded-lg bg-[var(--paper-subtle)] border-l-4 border-l-[var(--ink)] text-xs italic text-[var(--ink)] font-serif leading-relaxed">
+            <div className="p-3 rounded-lg bg-[var(--paper-subtle)] border-l-4 border-l-[var(--ink)] text-xs  text-[var(--ink)] font-serif leading-relaxed">
               "{isDe ? selectedMilieu.mottoDE : selectedMilieu.mottoZH}"
             </div>
 
@@ -629,7 +629,7 @@ export function SinusMilieusSim({ lang = "de", onExportFinding }: SinusMilieusSi
               </div>
 
               {/* 2D 互动画布 */}
-              <div className="relative w-full aspect-4/3 rounded-lg overflow-hidden border border-[var(--line)] bg-[var(--paper)] shadow-inner">
+              <div className="relative w-full aspect-4/3 rounded-lg overflow-hidden border border-[var(--line)] bg-[var(--paper)] shadow-none">
                 <svg className="w-full h-full" viewBox="0 0 600 400">
                   {/* 网格参考线 */}
                   <line x1="200" y1="20" x2="200" y2="380" stroke="var(--line)" strokeDasharray="3,3" strokeOpacity="0.6" />
@@ -639,7 +639,7 @@ export function SinusMilieusSim({ lang = "de", onExportFinding }: SinusMilieusSi
 
                   {/* 阶层跃迁天花板指示线 (Gläserne Decke) */}
                   <line x1="20" y1="110" x2="580" y2="110" stroke="var(--ink)" strokeDasharray="6,4" strokeWidth="1" strokeOpacity="0.25" />
-                  <text x="25" y="105" fontSize="8.5" fill="var(--ink)" fillOpacity="0.6" fontStyle="italic" fontFamily="monospace">
+                  <text x="25" y="105" fontSize="8.5" fill="var(--ink)" fillOpacity="0.6" fontStyle="" fontFamily="monospace">
                     ⚠️ {isDe ? "Gläserne Decke (Habitus-Aufstiegsbarriere nach Bourdieu)" : "阶层跃迁隐形天花板 (Gläserne Decke)"}
                   </text>
 
@@ -876,7 +876,7 @@ export function SinusMilieusSim({ lang = "de", onExportFinding }: SinusMilieusSi
             {/* 右侧 (5 列)：双杠杆微调、布尔迪厄三大资本解构与匹配研报 */}
             <div className="lg:col-span-5 flex flex-col gap-4">
               {/* 杠杆调节器 */}
-              <div className="flex flex-col gap-3 p-4 rounded-xl border border-[var(--line)] bg-[var(--paper)] shadow-xs">
+              <div className="flex flex-col gap-3 p-4 rounded-xl border border-[var(--line)] bg-[var(--paper)] shadow-none">
                 <div>
                   <div className="flex justify-between text-xs font-semibold mb-1">
                     <span className="text-[var(--ink)]">{isDe ? "1. Soziale Lage (Kapital & Status)" : "1. 经济与文化资本（学历/收入/地位）"}</span>
@@ -958,7 +958,7 @@ export function SinusMilieusSim({ lang = "de", onExportFinding }: SinusMilieusSi
               </div>
 
               {/* 实时匹配结果卡片 */}
-              <div className="p-4 rounded-xl border border-[var(--line)] bg-[var(--paper)] flex flex-col gap-2 shadow-xs text-xs">
+              <div className="p-4 rounded-xl border border-[var(--line)] bg-[var(--paper)] flex flex-col gap-2 shadow-none text-xs">
                 <span className="text-[10px] font-mono text-[var(--gray)] uppercase tracking-wider">
                   {isDe ? "Dynamisches Match-Ergebnis" : "社会学算法动态定格社群："}
                 </span>
@@ -974,7 +974,7 @@ export function SinusMilieusSim({ lang = "de", onExportFinding }: SinusMilieusSi
                     ({personaCalculated.matched.share}% dt. Bev.)
                   </span>
                 </div>
-                <p className="text-[var(--ink)] italic leading-relaxed">
+                <p className="text-[var(--ink)]  leading-relaxed">
                   "{isDe ? personaCalculated.matched.mottoDE : personaCalculated.matched.mottoZH}"
                 </p>
 
@@ -1097,7 +1097,7 @@ export function SinusMilieusSim({ lang = "de", onExportFinding }: SinusMilieusSi
                 <span className="font-bold text-[var(--ink)] block mb-1 font-mono">
                   {isDe ? "✍️ 15-Punkte Musterformulierung (Abitur-Niveau):" : "✍️ 15分满分标准句式 (Muster-Formulierung):"}
                 </span>
-                <blockquote className="italic border-l-2 border-[var(--ink)] pl-2 text-[var(--ink)] leading-relaxed bg-[var(--paper)] p-2 rounded">
+                <blockquote className=" border-l-2 border-[var(--ink)] pl-2 text-[var(--ink)] leading-relaxed bg-[var(--paper)] p-2 rounded">
                   {isDe
                     ? "„Das Sinus-Milieu-Modell belegt eindrucksvoll, dass die gesellschaftliche Erosion nicht primär als klassischer Klassenkonflikt, sondern als Fragmentierung von Lebenswelten verstanden werden muss. Während kosmopolitische Eliten (Postmaterielle, Performer) von der Globalisierung profitieren, verharrt das Prekäre Milieu in systemischer Resignation – die Schnittmengen gemeinsamen Wertebewusstseins schrumpfen zusehends.“"
                     : "‘Sinus-Milieus 容积模型有力证明了，当今社会的撕裂不应被狭隘地理解为传统的阶级对立，而应被视为生存生活世界（Lebenswelten）的碎片化。当国际化大都市精英（后物质主义、进取精英）从全球化红利中汲取滋养时，边缘困境阶层却陷入体制性的被剥夺与无力感中——维系社会整合的基础共同价值公约数正显著收缩。’"}

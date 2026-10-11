@@ -155,7 +155,7 @@ export function GiniAllocatorSim({ lang }: GiniAllocatorSimProps) {
             <div className="text-[var(--line)]">→</div>
             <div className="font-mono text-xs">
               <span className="text-[var(--gray)] block">{lang === "de" ? "Nettoeinkommen (nach Transfers)" : "再分配后净收入"}</span>
-              <span className="font-bold text-emerald-700 text-sm">G = {gini}</span>
+              <span className="font-bold text-[var(--ink)] text-sm">G = {gini}</span>
             </div>
           </div>
         </div>
@@ -195,7 +195,7 @@ export function GiniAllocatorSim({ lang }: GiniAllocatorSimProps) {
                   <div
                     style={{ width: `${share * 2}%` }}
                     className={`h-full transition-all duration-300 ${
-                      idx === 0 ? "bg-emerald-500" : idx === 4 ? "bg-amber-600" : "bg-sky-500"
+                      idx === 0 ? "bg-[var(--paper-subtle)]" : idx === 4 ? "bg-amber-600" : "bg-sky-500"
                     }`}
                   />
                 </div>

@@ -194,7 +194,7 @@ export function MarktMechanismusSim({
   return (
     <div
       data-testid="markt-mechanismus-sim"
-      className="flex flex-col gap-4 rounded-xl border border-[var(--line)] bg-[var(--paper)] p-4 sm:p-5 font-sans text-[var(--ink)] shadow-xs"
+      className="flex flex-col gap-4 rounded-xl border border-[var(--line)] bg-[var(--paper)] p-4 sm:p-5 font-sans text-[var(--ink)] shadow-none"
     >
       {/* 1. 顶部学术标头与知识点所属 */}
       <div className="flex flex-wrap items-center justify-between gap-2 border-b border-[var(--line)] pb-3">
@@ -564,7 +564,7 @@ export function MarktMechanismusSim({
                 onClick={() => setPriceControlMode("free")}
                 className={`py-1.5 px-1 rounded border text-center transition-colors text-xs font-mono ${
                   priceControlMode === "free"
-                    ? "border-[var(--ink)] bg-[var(--ink)] text-[var(--paper)] font-bold shadow-xs"
+                    ? "border-[var(--ink)] bg-[var(--ink)] text-[var(--paper)] font-bold shadow-none"
                     : "border-[var(--line)] bg-[var(--paper)] text-[var(--gray)] hover:text-[var(--ink)]"
                 }`}
               >
@@ -578,7 +578,7 @@ export function MarktMechanismusSim({
                 }}
                 className={`py-1.5 px-1 rounded border text-center transition-colors text-xs font-mono ${
                   priceControlMode === "mindestpreis"
-                    ? "border-[var(--ink)] bg-[var(--ink)] text-[var(--paper)] font-bold shadow-xs"
+                    ? "border-[var(--ink)] bg-[var(--ink)] text-[var(--paper)] font-bold shadow-none"
                     : "border-[var(--line)] bg-[var(--paper)] text-[var(--gray)] hover:text-[var(--ink)]"
                 }`}
               >
@@ -592,7 +592,7 @@ export function MarktMechanismusSim({
                 }}
                 className={`py-1.5 px-1 rounded border text-center transition-colors text-xs font-mono ${
                   priceControlMode === "hoechstpreis"
-                    ? "border-[var(--ink)] bg-[var(--ink)] text-[var(--paper)] font-bold shadow-xs"
+                    ? "border-[var(--ink)] bg-[var(--ink)] text-[var(--paper)] font-bold shadow-none"
                     : "border-[var(--line)] bg-[var(--paper)] text-[var(--gray)] hover:text-[var(--ink)]"
                 }`}
               >

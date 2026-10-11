@@ -413,7 +413,7 @@ function InteractiveQuestionCard({ text, lang }: { text: string; lang?: string }
           </button>
         ) : (
           <div className="flex items-start gap-2.5 animate-in fade-in duration-200">
-            <span className="shrink-0 font-mono text-xs font-bold uppercase tracking-wider text-[var(--success)] bg-[var(--success)]/10 px-2 py-0.5 rounded border border-[var(--success)]/20 mt-0.5">
+            <span className="shrink-0 font-mono text-xs font-bold uppercase tracking-wider text-[var(--ink)] bg-[var(--paper-subtle)] px-2 py-0.5 rounded border border-[var(--line)] mt-0.5">
               ANTWORT
             </span>
             <div className="font-serif text-[14.5px] text-[var(--ink)] leading-relaxed flex-1">

@@ -450,7 +450,7 @@ export function HaberBoschLab({ lang }: { lang: Lang }) {
                   key={i}
                   className={`h-1.5 w-3 rounded-full transition-colors ${
                     d
-                      ? "bg-[var(--success)]"
+                      ? "bg-[var(--ink)]"
                       : i === cur
                       ? "bg-[var(--ink)]"
                       : "bg-[var(--line)]"
@@ -471,7 +471,7 @@ export function HaberBoschLab({ lang }: { lang: Lang }) {
                 className={`w-full rounded border p-2.5 text-left text-xs transition ${
                   picked === opt.id
                     ? opt.id === step.correctId
-                      ? "border-emerald-600 bg-emerald-500/10 text-emerald-900 dark:text-emerald-300 font-medium"
+                      ? "border-[var(--line)] bg-[var(--paper-subtle)] text-[var(--ink)] dark:text-[var(--ink)] font-medium"
                       : "border-rose-600 bg-rose-500/10 text-rose-900 dark:text-rose-300"
                     : "border-[var(--line)] bg-[var(--paper-subtle)] text-[var(--gray)] hover:text-[var(--ink)] hover:border-[var(--ink)]"
                 }`}
@@ -483,7 +483,7 @@ export function HaberBoschLab({ lang }: { lang: Lang }) {
           </div>
 
           {correct && (
-            <div className="mt-4 rounded border border-emerald-600/30 bg-emerald-500/10 p-3 text-xs text-emerald-950 dark:text-emerald-200">
+            <div className="mt-4 rounded border border-[var(--line)] bg-[var(--paper-subtle)] p-3 text-xs text-[var(--ink)] dark:text-[var(--ink)]">
               <p className="font-semibold">{de ? "Korrekt!" : "论证严谨正确！"}</p>
               <p className="mt-1 leading-relaxed text-[var(--ink)]">{de ? step.explainDE : step.explainZH}</p>
               {cur < STEPS.length - 1 && (

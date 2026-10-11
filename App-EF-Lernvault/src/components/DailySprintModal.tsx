@@ -230,7 +230,7 @@ export const DailySprintModal: React.FC<DailySprintModalProps> = ({
                   <button type="button" onClick={() => handleCardRate(3)} className="border-t border-[var(--line)] py-1.5 font-mono text-xs text-[var(--ink)]">
                     <Bilingual de={tr.dailyGood} zh={tr.dailyGoodZh} />
                   </button>
-                  <button type="button" onClick={() => handleCardRate(4)} className="border-t border-[var(--success)] py-1.5 font-mono text-xs text-[var(--success)]">
+                  <button type="button" onClick={() => handleCardRate(4)} className="border-t border-[var(--line)] py-1.5 font-mono text-xs text-[var(--ink)]">
                     <Bilingual de={tr.dailyEasy} zh={tr.dailyEasyZh} />
                   </button>
                 </div>
@@ -306,7 +306,7 @@ export const DailySprintModal: React.FC<DailySprintModalProps> = ({
 
           {stepIndex === 3 && (
             <div className="space-y-4 py-8 text-center">
-              <div className="inline-flex items-center gap-2 rounded-[var(--radius)] border border-[var(--success)] px-4 py-2 font-mono text-sm text-[var(--success)]">
+              <div className="inline-flex items-center gap-2 rounded-[var(--radius)] border border-[var(--line)] px-4 py-2 font-mono text-sm text-[var(--ink)]">
                 <CheckIcon />
                 <Bilingual de={tr.dailySuccess} zh={tr.dailySuccessZh} />
               </div>

@@ -275,11 +275,11 @@ export function BalanceBoard({
       <div className="flex flex-wrap items-center justify-between gap-2 border-b border-[var(--line)] pb-3 mb-4">
         <div>
           <div className="flex items-center gap-2">
-            <span className="inline-block w-2.5 h-2.5 rounded-full bg-[var(--success)]" />
+            <span className="inline-block w-2.5 h-2.5 rounded-full bg-[var(--ink)]" />
             <h3 className="font-serif text-base  text-[var(--ink)]">
               {lang === "de" ? "Dialektische Urteils-Waage" : "辩证天平 (Dialektische Waage)"}
             </h3>
-            <span className="rounded-[var(--radius)] bg-[var(--success)]/10 text-[var(--success)] px-2 py-0.5 text-[var(--text-meta)] font-mono uppercase tracking-wider">
+            <span className="rounded-[var(--radius)] bg-[var(--paper-subtle)] text-[var(--ink)] px-2 py-0.5 text-[var(--text-meta)] font-mono uppercase tracking-wider">
               {activeCase.fach} · AFB III
             </span>
           </div>
@@ -297,7 +297,7 @@ export function BalanceBoard({
             setSelectedCaseId(e.target.value);
             resetAll();
           }}
-          className="rounded-[var(--radius)] border border-[var(--line)] bg-[var(--paper)] px-2.5 py-1 text-xs font-mono text-[var(--ink)] focus:border-[var(--success)] cursor-pointer"
+          className="rounded-[var(--radius)] border border-[var(--line)] bg-[var(--paper)] px-2.5 py-1 text-xs font-mono text-[var(--ink)] focus:border-[var(--line)] cursor-pointer"
         >
           {PRESET_CASES.map((c) => (
             <option key={c.id} value={c.id}>
@@ -499,8 +499,8 @@ export function BalanceBoard({
 
       {/* 裁决合成输出卡片 (Synthese Output) */}
       {urteilText && (
-        <div className="rounded-[var(--radius)] border border-[var(--success)] bg-[var(--paper-subtle)] p-3 text-xs leading-relaxed">
-          <div className="flex items-center justify-between font-mono text-[var(--text-meta)] text-[var(--success)] mb-1.5">
+        <div className="rounded-[var(--radius)] border border-[var(--line)] bg-[var(--paper-subtle)] p-3 text-xs leading-relaxed">
+          <div className="flex items-center justify-between font-mono text-[var(--text-meta)] text-[var(--ink)] mb-1.5">
             <span className="flex items-center gap-1 ">
               <svg width="16" height="16" aria-hidden="true" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.6">
                 <path d="M2.5 8.5l3.5 3.5 7.5-7.5" />
@@ -510,7 +510,7 @@ export function BalanceBoard({
             <button
               type="button"
               onClick={handleCopy}
-              className="inline-flex items-center gap-1 rounded-[var(--radius)] border border-[var(--success)] px-2.5 py-0.5 font-sans text-[var(--text-meta)] text-[var(--success)] transition-colors"
+              className="inline-flex items-center gap-1 rounded-[var(--radius)] border border-[var(--line)] px-2.5 py-0.5 font-sans text-[var(--text-meta)] text-[var(--ink)] transition-colors"
             >
               <svg width="16" height="16" aria-hidden="true" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.6">
                 <path d="M11.5 4.5H4.5a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1v-6a1 1 0 0 0-1-1z" />
@@ -524,7 +524,7 @@ export function BalanceBoard({
             „{urteilText}“
           </p>
 
-          <p className="mt-2 text-[var(--text-meta)] font-mono text-[var(--success)]">
+          <p className="mt-2 text-[var(--text-meta)] font-mono text-[var(--ink)]">
             {lang === "de"
               ? "Erfüllt NRW-Operatoren 'beurteilen' und 'bewerten' durch explizite Kriterienoffenlegung. / 满足 NRW 考纲算子 beurteilen / bewerten 要求。"
               : "满足 NRW 考纲算子 beurteilen / bewerten 要求，做到了事实分析、判决准则与价值层级公开。 / Erfüllt NRW-Operatoren durch explizite Kriterienoffenlegung."}

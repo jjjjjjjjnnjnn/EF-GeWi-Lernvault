@@ -132,7 +132,7 @@ export default function FeedbackBox({
             className="text-xs font-mono text-[var(--accent)] hover:underline"
           >
             {copied ? (
-              <span className="inline-flex items-center gap-1 text-[var(--success)]">
+              <span className="inline-flex items-center gap-1 text-[var(--ink)]">
                 <CheckIcon />
                 {lang === "de" ? "Kopiert / 已复制" : "已复制 / Kopiert"}
               </span>
@@ -239,7 +239,7 @@ export function FeedbackFloat({ lang }: { lang: Lang }) {
                 className="text-xs font-mono text-[var(--accent)] hover:underline"
               >
                 {copied ? (
-                  <span className="inline-flex items-center gap-1 text-[var(--success)]">
+                  <span className="inline-flex items-center gap-1 text-[var(--ink)]">
                     <CheckIcon />
                     {lang === "de" ? "Kopiert / 已复制" : "已复制 / Kopiert"}
                   </span>

@@ -240,7 +240,7 @@ function Scene2Stage({ lang }: { lang: Lang }) {
             </div>
             <span className="text-[9px] text-[var(--gray)]">Kaufauftrag</span>
           </div>
-          <span className="text-[9px] text-emerald-950 font-bold">
+          <span className="text-[9px] text-[var(--ink)] font-bold">
             Dividenden ⬅
           </span>
         </div>
@@ -250,7 +250,7 @@ function Scene2Stage({ lang }: { lang: Lang }) {
           <div>
             <div className="flex items-center justify-between border-b border-[var(--line)]/60 pb-1">
               <span className="font-bold text-[var(--ink)]">DEPOT</span>
-              <span className="text-[10px] font-bold text-emerald-950 bg-emerald-100/80 px-1 rounded">
+              <span className="text-[10px] font-bold text-[var(--ink)] bg-[var(--paper-subtle)] px-1 rounded">
                 Sondervermögen
               </span>
             </div>
@@ -265,7 +265,7 @@ function Scene2Stage({ lang }: { lang: Lang }) {
               </div>
             </div>
           </div>
-          <div className="mt-3 rounded border border-emerald-600/40 bg-emerald-50/90 p-1.5 text-[10px] font-bold text-emerald-950">
+          <div className="mt-3 rounded border border-[var(--line)] bg-[var(--paper-subtle)] p-1.5 text-[10px] font-bold text-[var(--ink)]">
             [Sondervermögen] 100% geschützt bei Bankpleite (§ 92 KAGB)
           </div>
         </div>
@@ -313,7 +313,7 @@ function Scene3Stage({ lang }: { lang: Lang }) {
           onClick={() => setSelectedStep(1)}
           className={`cursor-pointer rounded border p-2.5 transition ${
             selectedStep === 1
-              ? "border-[var(--ink)] bg-[var(--surface)] shadow-2xs"
+              ? "border-[var(--ink)] bg-[var(--surface)] shadow-none"
               : "border-[var(--line)] bg-[var(--paper)] opacity-70 hover:opacity-100"
           }`}
         >
@@ -338,7 +338,7 @@ function Scene3Stage({ lang }: { lang: Lang }) {
           onClick={() => setSelectedStep(2)}
           className={`cursor-pointer rounded border p-2.5 transition ${
             selectedStep === 2
-              ? "border-[var(--ink)] bg-[var(--surface)] shadow-2xs"
+              ? "border-[var(--ink)] bg-[var(--surface)] shadow-none"
               : "border-[var(--line)] bg-[var(--paper)] opacity-70 hover:opacity-100"
           }`}
         >
@@ -363,7 +363,7 @@ function Scene3Stage({ lang }: { lang: Lang }) {
           onClick={() => setSelectedStep(3)}
           className={`cursor-pointer rounded border p-2.5 transition ${
             selectedStep === 3
-              ? "border-[var(--ink)] bg-[var(--surface)] shadow-2xs"
+              ? "border-[var(--ink)] bg-[var(--surface)] shadow-none"
               : "border-[var(--line)] bg-[var(--paper)] opacity-70 hover:opacity-100"
           }`}
         >
@@ -476,7 +476,7 @@ function Scene4Stage({ lang }: { lang: Lang }) {
           onClick={triggerMatch}
           className={`rounded border p-2 text-left transition ${
             activeType === "market"
-              ? "border-[var(--ink)] bg-[var(--surface)] shadow-2xs font-bold"
+              ? "border-[var(--ink)] bg-[var(--surface)] shadow-none font-bold"
               : "border-[var(--line)] bg-[var(--paper)] text-[var(--gray)]"
           }`}
         >
@@ -490,7 +490,7 @@ function Scene4Stage({ lang }: { lang: Lang }) {
           onClick={() => setActiveType("limit")}
           className={`rounded border p-2 text-left transition ${
             activeType === "limit"
-              ? "border-[var(--ink)] bg-[var(--surface)] shadow-2xs font-bold"
+              ? "border-[var(--ink)] bg-[var(--surface)] shadow-none font-bold"
               : "border-[var(--line)] bg-[var(--paper)] text-[var(--gray)]"
           }`}
         >
@@ -504,7 +504,7 @@ function Scene4Stage({ lang }: { lang: Lang }) {
           onClick={() => setActiveType("stop")}
           className={`rounded border p-2 text-left transition ${
             activeType === "stop"
-              ? "border-[var(--ink)] bg-[var(--surface)] shadow-2xs font-bold"
+              ? "border-[var(--ink)] bg-[var(--surface)] shadow-none font-bold"
               : "border-[var(--line)] bg-[var(--paper)] text-[var(--gray)]"
           }`}
         >
@@ -634,7 +634,7 @@ function Scene5Stage({ lang }: { lang: Lang }) {
           onClick={() => setSelectedAsset("giro")}
           className={`rounded border p-1.5 text-left transition ${
             selectedAsset === "giro"
-              ? "border-[var(--ink)] bg-[var(--surface)] shadow-2xs font-bold"
+              ? "border-[var(--ink)] bg-[var(--surface)] shadow-none font-bold"
               : "border-[var(--line)] bg-[var(--paper)] text-[var(--gray)]"
           }`}
         >
@@ -646,7 +646,7 @@ function Scene5Stage({ lang }: { lang: Lang }) {
           onClick={() => setSelectedAsset("aktie")}
           className={`rounded border p-1.5 text-left transition ${
             selectedAsset === "aktie"
-              ? "border-[var(--ink)] bg-[var(--surface)] shadow-2xs font-bold"
+              ? "border-[var(--ink)] bg-[var(--surface)] shadow-none font-bold"
               : "border-[var(--line)] bg-[var(--paper)] text-[var(--gray)]"
           }`}
         >
@@ -658,12 +658,12 @@ function Scene5Stage({ lang }: { lang: Lang }) {
           onClick={() => setSelectedAsset("etf")}
           className={`rounded border p-1.5 text-left transition ${
             selectedAsset === "etf"
-              ? "border-emerald-700 bg-emerald-100/90 text-emerald-950 font-bold"
+              ? "border-[var(--line)] bg-[var(--paper-subtle)] text-[var(--ink)] font-bold"
               : "border-[var(--line)] bg-[var(--paper)] text-[var(--gray)]"
           }`}
         >
-          <div className="text-[11px] text-emerald-950 font-bold">Welt-ETF</div>
-          <div className="text-[9px] text-emerald-900 font-medium">Der goldene Kompromiss</div>
+          <div className="text-[11px] text-[var(--ink)] font-bold">Welt-ETF</div>
+          <div className="text-[9px] text-[var(--ink)] font-medium">Der goldene Kompromiss</div>
         </button>
       </div>
     </div>

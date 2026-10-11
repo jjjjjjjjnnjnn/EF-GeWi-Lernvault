@@ -1776,7 +1776,7 @@ export function UniversalInteractiveWorkbench({
                 }}
                 className={`px-3 py-1 rounded border transition-colors ${
                   interactiveTriggered
-                    ? "bg-emerald-600 text-white border-emerald-600"
+                    ? "bg-[var(--paper-subtle)] text-white border-[var(--line)]"
                     : "bg-[var(--surface)] text-[var(--ink)] border-[var(--line)] hover:border-[var(--accent)]"
                 }`}
               >
@@ -3585,7 +3585,7 @@ export function UniversalInteractiveWorkbench({
                 {data.subValue}
               </text>
 
-              <text x="10" y="132" fontSize="6.5" fill="var(--gray)" fontStyle="italic">
+              <text x="10" y="132" fontSize="6.5" fill="var(--gray)" fontStyle="">
                 Gini = Fläche A / (A + B)
               </text>
             </g>
@@ -4489,7 +4489,7 @@ export function UniversalInteractiveWorkbench({
             onClick={() => setActiveTab("workbench")}
             className={`px-3 py-1.5 rounded transition-all flex items-center gap-1.5 cursor-pointer ${
               activeTab === "workbench"
-                ? "bg-[var(--surface)] text-[var(--accent)] font-bold shadow-xs border border-[var(--line)]/50"
+                ? "bg-[var(--surface)] text-[var(--accent)] font-bold shadow-none border border-[var(--line)]/50"
                 : "text-[var(--gray)] hover:text-[var(--ink)]"
             }`}
           >
@@ -4501,7 +4501,7 @@ export function UniversalInteractiveWorkbench({
             onClick={() => setActiveTab("causality")}
             className={`px-3 py-1.5 rounded transition-all flex items-center gap-1.5 cursor-pointer ${
               activeTab === "causality"
-                ? "bg-[var(--surface)] text-[var(--accent)] font-bold shadow-xs border border-[var(--line)]/50"
+                ? "bg-[var(--surface)] text-[var(--accent)] font-bold shadow-none border border-[var(--line)]/50"
                 : "text-[var(--gray)] hover:text-[var(--ink)]"
             }`}
           >
@@ -4513,7 +4513,7 @@ export function UniversalInteractiveWorkbench({
             onClick={() => setActiveTab("klausur")}
             className={`px-3 py-1.5 rounded transition-all flex items-center gap-1.5 cursor-pointer ${
               activeTab === "klausur"
-                ? "bg-[var(--surface)] text-[var(--accent)] font-bold shadow-xs border border-[var(--line)]/50"
+                ? "bg-[var(--surface)] text-[var(--accent)] font-bold shadow-none border border-[var(--line)]/50"
                 : "text-[var(--gray)] hover:text-[var(--ink)]"
             }`}
           >
@@ -4543,7 +4543,7 @@ export function UniversalInteractiveWorkbench({
                   title={de ? p.descDE : p.descZH}
                   className={`text-xs font-mono px-3 py-1 rounded border transition-all cursor-pointer ${
                     isActive
-                      ? "border-[var(--accent)] bg-[var(--surface)] text-[var(--accent)] font-bold shadow-xs"
+                      ? "border-[var(--accent)] bg-[var(--surface)] text-[var(--accent)] font-bold shadow-none"
                       : "border-[var(--line)] bg-[var(--surface)]/70 text-[var(--ink)] hover:border-[var(--accent)]/50 hover:bg-[var(--surface)]"
                   }`}
                 >
@@ -4742,7 +4742,7 @@ export function UniversalInteractiveWorkbench({
       {activeTab === "causality" && (
         <div className="flex flex-col gap-4">
           {/* 1. 四阶段互动因果推演链条导航 (Kausal-Domino) */}
-          <div className="rounded-xl border border-[var(--line)] bg-[var(--surface)] p-4 space-y-3 shadow-xs">
+          <div className="rounded-xl border border-[var(--line)] bg-[var(--surface)] p-4 space-y-3 shadow-none">
             <div className="flex items-center justify-between border-b border-[var(--line)] pb-2.5">
               <h3 className="font-serif text-sm font-bold text-[var(--ink)] flex items-center gap-2">
                 <span className="font-mono text-base">⛓️</span>
@@ -4841,7 +4841,7 @@ export function UniversalInteractiveWorkbench({
           </div>
 
           {/* 2. 核心考纲学术术语库 (Fachbegriffe) */}
-          <div className="rounded-xl border border-[var(--line)] bg-[var(--surface)] p-4 space-y-3 shadow-xs">
+          <div className="rounded-xl border border-[var(--line)] bg-[var(--surface)] p-4 space-y-3 shadow-none">
             <h3 className="font-serif text-sm font-bold text-[var(--ink)] flex items-center gap-2 border-b border-[var(--line)] pb-2">
               <span className="font-mono text-base">📖</span>
               <span>{de ? "Fachbegriffe & Offizielles Prüfungsvokabular" : "官方考纲核心学科术语与精准定义"}</span>
@@ -4872,7 +4872,7 @@ export function UniversalInteractiveWorkbench({
       {activeTab === "klausur" && (
         <div className="flex flex-col gap-4">
           {/* 会考原题题干与分值 */}
-          <div className="rounded-xl border border-[var(--line)] bg-[var(--surface)] p-4 space-y-3 shadow-xs">
+          <div className="rounded-xl border border-[var(--line)] bg-[var(--surface)] p-4 space-y-3 shadow-none">
             <div className="flex items-center justify-between flex-wrap gap-2 border-b border-[var(--line)] pb-2.5">
               <span className="font-mono text-xs uppercase px-2 py-0.5 rounded border border-[var(--line)] bg-[var(--paper-subtle)] text-[var(--ink)] font-bold">
                 NRW Klausuraufgabe · {pedagogy.klausur.afb}
@@ -4890,7 +4890,7 @@ export function UniversalInteractiveWorkbench({
           </div>
 
           {/* 阅卷评分细则 (Erwartungshorizont - EHZ) 与互动自评 */}
-          <div className="rounded-xl border border-[var(--line)] bg-[var(--surface)] p-4 space-y-3 shadow-xs">
+          <div className="rounded-xl border border-[var(--line)] bg-[var(--surface)] p-4 space-y-3 shadow-none">
             <div className="flex items-center justify-between border-b border-[var(--line)] pb-2">
               <h3 className="font-serif text-sm font-bold text-[var(--ink)] flex items-center gap-2">
                 <span className="font-mono text-xs px-1.5 py-0.5 rounded border border-[var(--line)] bg-[var(--paper-subtle)]">EHZ</span>
@@ -4914,18 +4914,18 @@ export function UniversalInteractiveWorkbench({
           </div>
 
           {/* 15分满分答题模版 (Formulierungshilfe) */}
-          <div className="rounded-xl border border-[var(--line)] bg-[var(--surface)] p-4 space-y-2 shadow-xs">
+          <div className="rounded-xl border border-[var(--line)] bg-[var(--surface)] p-4 space-y-2 shadow-none">
             <h3 className="font-serif text-sm font-bold text-[var(--ink)] flex items-center gap-2 border-b border-[var(--line)] pb-2">
               <span className="font-mono text-xs px-1.5 py-0.5 rounded border border-[var(--line)] bg-[var(--paper-subtle)]">15 NP</span>
               <span>{de ? "Muster-Formulierung (Gymnasiale Oberstufe)" : "15分满分德语答题模版与得分句式 (Formulierungshilfe)"}</span>
             </h3>
-            <blockquote className="rounded-lg bg-[var(--paper-subtle)] p-3.5 text-xs font-mono text-[var(--ink)] border-l-4 border-l-[var(--ink)] border border-[var(--line)] leading-relaxed italic">
+            <blockquote className="rounded-lg bg-[var(--paper-subtle)] p-3.5 text-xs font-mono text-[var(--ink)] border-l-4 border-l-[var(--ink)] border border-[var(--line)] leading-relaxed ">
               "{pedagogy.klausur.formulierungshilfe}"
             </blockquote>
           </div>
 
           {/* 中文考点点拨与得分秘籍 */}
-          <div className="rounded-xl border-l-4 border-l-[var(--ink)] border border-[var(--line)] bg-[var(--paper-subtle)] p-4 space-y-1.5 text-xs shadow-xs">
+          <div className="rounded-xl border-l-4 border-l-[var(--ink)] border border-[var(--line)] bg-[var(--paper-subtle)] p-4 space-y-1.5 text-xs shadow-none">
             <h4 className="font-bold text-[var(--ink)] flex items-center gap-1.5">
               <span>💡</span>
               <span>得分陷阱与审题破局点拨 (Tipps & Stolpersteine):</span>

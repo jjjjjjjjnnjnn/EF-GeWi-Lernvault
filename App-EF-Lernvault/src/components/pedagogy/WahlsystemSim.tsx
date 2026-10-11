@@ -1679,7 +1679,7 @@ ${resultSummary.allocations
               <div className="text-[10px] font-mono text-[var(--gray)] uppercase tracking-wider">
                 {isDe ? "OFFIZIELLE KLAUSUR-AUFGABENSTELLUNG" : "考试标准命题母题"}
               </div>
-              <p className="font-serif italic font-medium">
+              <p className="font-serif  font-medium">
                 {isDe
                   ? "„Beurteilen Sie die Reform des Bundeswahlgesetzes 2023 im Spannungsfeld zwischen Wahlkreisrepräsentation (Bürgernähe) und Funktionsfähigkeit des Deutschen Bundestages.“ (Operator: beurteilen / AFB III)"
                   : "“请在选区直选代表性（民意亲和性）与联邦议院工作效能/比例公正之间，评判2023年德国联邦选举法改革的合宪性与合理性。”（动词：beurteilen / AFB III 高阶评判）"}

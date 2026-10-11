@@ -247,7 +247,7 @@ export function OpticsBench({ lang }: { lang: Lang }) {
                   onClick={() => setN1(p.n)}
                   className={`rounded border px-2 py-1 text-xs transition ${
                     Math.abs(n1 - p.n) < 0.05
-                      ? "border-[var(--ink)] bg-[var(--ink)] text-[var(--paper)] font-medium shadow-xs"
+                      ? "border-[var(--ink)] bg-[var(--ink)] text-[var(--paper)] font-medium shadow-none"
                       : "border-[var(--line)] bg-[var(--surface)] text-[var(--gray)] hover:text-[var(--ink)]"
                   }`}
                 >
@@ -265,7 +265,7 @@ export function OpticsBench({ lang }: { lang: Lang }) {
                   onClick={() => setN2(p.n)}
                   className={`rounded border px-2 py-1 text-xs transition ${
                     Math.abs(n2 - p.n) < 0.05
-                      ? "border-[var(--ink)] bg-[var(--ink)] text-[var(--paper)] font-medium shadow-xs"
+                      ? "border-[var(--ink)] bg-[var(--ink)] text-[var(--paper)] font-medium shadow-none"
                       : "border-[var(--line)] bg-[var(--surface)] text-[var(--gray)] hover:text-[var(--ink)]"
                   }`}
                 >
@@ -309,7 +309,7 @@ export function OpticsBench({ lang }: { lang: Lang }) {
                 className={`w-full rounded border p-2 text-left text-xs transition ${
                   quizAnswer === i
                     ? i === QUIZ_CORRECT
-                      ? "border-emerald-600 bg-emerald-500/10 text-emerald-900 dark:text-emerald-300 font-medium"
+                      ? "border-[var(--line)] bg-[var(--paper-subtle)] text-[var(--ink)] dark:text-[var(--ink)] font-medium"
                       : "border-rose-600 bg-rose-500/10 text-rose-900 dark:text-rose-300"
                     : "border-[var(--line)] bg-[var(--paper-subtle)] text-[var(--gray)] hover:text-[var(--ink)] hover:border-[var(--ink)]"
                 }`}

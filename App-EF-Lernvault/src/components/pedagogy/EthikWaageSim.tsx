@@ -276,7 +276,7 @@ export function EthikWaageSim({
               onClick={() => handleSelectDilemma(id)}
               className={`flex-1 min-w-[140px] px-2.5 py-1.5 rounded text-xs font-serif text-left transition-colors cursor-pointer ${
                 active
-                  ? "bg-white text-[var(--ink)] font-semibold shadow-2xs border border-[var(--line)]"
+                  ? "bg-white text-[var(--ink)] font-semibold shadow-none border border-[var(--line)]"
                   : "text-[var(--ink-muted)] hover:text-[var(--ink)] hover:bg-white/60"
               }`}
             >
@@ -351,14 +351,14 @@ export function EthikWaageSim({
             </svg>
 
             {/* Verdict Capsule */}
-            <div className="w-full mt-2 p-2.5 bg-white/90 border border-[var(--line)] rounded text-xs space-y-1 shadow-2xs">
+            <div className="w-full mt-2 p-2.5 bg-white/90 border border-[var(--line)] rounded text-xs space-y-1 shadow-none">
               <div className="flex items-center justify-between text-[11px] font-mono text-[var(--ink-muted)]">
                 <span>{isZh ? "行为准则 (Maxime)" : "Handlungsmaxime"}</span>
                 <span className="font-semibold text-rose-800">
                   {kantPassed ? (isZh ? "康德允许" : "Kantisch zulässig") : (isZh ? "康德严厉禁止" : "Kategorisch verboten")}
                 </span>
               </div>
-              <p className="font-serif italic text-[var(--ink)] text-[12px] leading-relaxed">
+              <p className="font-serif  text-[var(--ink)] text-[12px] leading-relaxed">
                 {isZh ? dilemma.maximeZH : dilemma.maximeDE}
               </p>
             </div>
@@ -445,7 +445,7 @@ export function EthikWaageSim({
               </div>
 
               {/* Bentham Verdict Box */}
-              <div className="p-2 rounded bg-emerald-50/70 border border-emerald-200 text-emerald-950 text-[11px] leading-snug">
+              <div className="p-2 rounded bg-[var(--paper-subtle)] border border-[var(--line)] text-[var(--ink)] text-[11px] leading-snug">
                 <strong>{isZh ? "功利主义判决: " : "Utilitaristisches Urteil: "}</strong>
                 {isZh ? utilVerdictZH : utilVerdict}
               </div>
@@ -505,7 +505,7 @@ export function EthikWaageSim({
                 {activeKantStep === 3 && (
                   <div>
                     <div className="font-bold text-[var(--ink)] mb-0.5">Schritt 3: Widerspruch im Denken?</div>
-                    <p className={dilemma.widerspruchDenken ? "text-rose-900 font-medium" : "text-emerald-900 font-medium"}>
+                    <p className={dilemma.widerspruchDenken ? "text-rose-900 font-medium" : "text-[var(--ink)] font-medium"}>
                       {dilemma.widerspruchDenken
                         ? (isZh ? "❌ 产生概念矛盾：此法则普遍化会导致该制度自我毁灭（如普遍谎言使得承诺不复存在）。" : "❌ Widerspruch im Denken: Begriff zerstört sich selbst.")
                         : (isZh ? "✅ 无逻辑自相矛盾：在思维中可以被设想为一个自然法则。" : "✅ Denkbar ohne logischen Selbstwiderspruch.")}
@@ -515,7 +515,7 @@ export function EthikWaageSim({
                 {activeKantStep === 4 && (
                   <div>
                     <div className="font-bold text-[var(--ink)] mb-0.5">Schritt 4: Widerspruch im Wollen & Würde</div>
-                    <p className={!kantPassed ? "text-rose-900 font-medium" : "text-emerald-900 font-medium"}>
+                    <p className={!kantPassed ? "text-rose-900 font-medium" : "text-[var(--ink)] font-medium"}>
                       {dilemma.instrumentalisierung
                         ? (isZh ? "❌ 违反目的自身公式：受害者被仅仅当作了拯救他人的工具手段，践踏了人的尊严。" : "❌ Verstoß gegen Menschheitszweckformel: Mensch nur als Mittel missbraucht.")
                         : (isZh ? "✅ 符合理性意志：不违背人自为目的的道德自律。" : "✅ Mit vernünftigem Willen vereinbar.")}

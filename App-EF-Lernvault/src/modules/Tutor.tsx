@@ -700,9 +700,9 @@ export default function Tutor({
                   key={`ccr-${lIdx}-${match.index}`}
                   onClick={() => handleExpandCcr(ccrHash)}
                   title={lang === "de" ? `CCR-Original (${ccrHash}) anzeigen` : `展开查看 CCR 无损压缩前原文 (#${ccrHash})`}
-                  className="inline-flex items-center gap-1 font-mono text-[var(--text-meta)] text-[var(--success)] bg-[var(--success)]/10 hover:bg-[var(--success)]/20 px-1.5 py-0.5 rounded-[var(--radius)] mx-1 transition-colors cursor-pointer"
+                  className="inline-flex items-center gap-1 font-mono text-[var(--text-meta)] text-[var(--ink)] bg-[var(--paper-subtle)] hover:bg-[var(--paper-subtle)] px-1.5 py-0.5 rounded-[var(--radius)] mx-1 transition-colors cursor-pointer"
                 >
-                  <span className="w-1.5 h-1.5 rounded-full bg-[var(--success)]" />
+                  <span className="w-1.5 h-1.5 rounded-full bg-[var(--ink)]" />
                   [Ref: #{ccrHash}]
                 </button>
               );
@@ -823,7 +823,7 @@ export default function Tutor({
                           <button
                             type="button"
                             onClick={() => handleSaveRename(sess.id)}
-                            className="text-[var(--text-meta)] text-[var(--success)] hover:underline"
+                            className="text-[var(--text-meta)] text-[var(--ink)] hover:underline"
                           >
                             OK
                           </button>
@@ -918,7 +918,7 @@ export default function Tutor({
               <span
                 aria-hidden="true"
                 className={`h-2 w-2 shrink-0 rounded-full ${
-                  isDegraded ? "bg-[var(--warning)]" : "bg-[var(--success)]"
+                  isDegraded ? "bg-[var(--warning)]" : "bg-[var(--ink)]"
                 }`}
               />
               <span className="truncate flex items-center gap-1.5 font-sans">
@@ -992,7 +992,7 @@ export default function Tutor({
                   }}
                   className={`px-2 py-0.5 rounded-[var(--radius)] text-[var(--text-meta)] font-sans transition-colors cursor-pointer flex items-center gap-1 ${
                     pedagogyMode === "direct"
-                      ? "bg-[var(--success)] text-[var(--surface)] font-medium"
+                      ? "bg-[var(--ink)] text-[var(--surface)] font-medium"
                       : "text-[var(--gray)] hover:text-[var(--ink)]"
                   }`}
                   title={
@@ -1164,19 +1164,19 @@ export default function Tutor({
 
                 {/* Fachübergreifende Vernetzung (Cross-Subject Thought Bridge Capsule) */}
                 {m.vernetzungBridge && (
-                  <div className="mt-3.5 rounded-[var(--radius)] border border-[var(--success)]/25 bg-[var(--paper-subtle)]/30 p-3 text-xs font-sans">
+                  <div className="mt-3.5 rounded-[var(--radius)] border border-[var(--line)] bg-[var(--paper-subtle)]/30 p-3 text-xs font-sans">
                     <div className="flex items-center justify-between">
-                      <div className="flex items-center gap-1.5 text-[var(--success)] font-medium text-xs">
-                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" className="h-3.5 w-3.5 text-[var(--success)]">
+                      <div className="flex items-center gap-1.5 text-[var(--ink)] font-medium text-xs">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" className="h-3.5 w-3.5 text-[var(--ink)]">
                           <path d="M6.5 9.5l3-3M5 11l-1.5 1.5a2.121 2.121 0 0 1-3-3L2 8a2.121 2.121 0 0 1 3-3h1M11 5l1.5-1.5a2.121 2.121 0 0 1 3 3L14 8a2.121 2.121 0 0 1-3 3h-1" />
                         </svg>
                         <span>{lang === "de" ? "Fachübergreifende Vernetzung:" : "跨学科思维桥:"}</span>
-                        <span className="font-semibold text-[var(--success)]">{m.vernetzungBridge.badgeLabel}</span>
+                        <span className="font-semibold text-[var(--ink)]">{m.vernetzungBridge.badgeLabel}</span>
                       </div>
                       <button
                         type="button"
                         onClick={() => onJumpToLibrary?.(cleanCitationTarget(m.vernetzungBridge!.targetNotePath))}
-                        className="text-xs font-mono text-[var(--success)] hover:underline cursor-pointer flex items-center gap-0.5"
+                        className="text-xs font-mono text-[var(--ink)] hover:underline cursor-pointer flex items-center gap-0.5"
                         title={lang === "de" ? "In Notizen öffnen" : "在笔记库中查看"}
                       >
                         <span>[{m.vernetzungBridge.targetSubject}]</span>
@@ -1433,7 +1433,7 @@ export default function Tutor({
           >
             <div className="flex items-center justify-between border-b border-[var(--line)] pb-2 mb-3">
             <div className="flex min-w-0 flex-wrap items-center gap-2">
-                <span aria-hidden="true" className="h-2 w-2 rounded-full bg-[var(--success)]" />
+                <span aria-hidden="true" className="h-2 w-2 rounded-full bg-[var(--ink)]" />
                 <h4 id="ccr-dialog-title" className="font-mono text-xs font-semibold text-[var(--ink)]">
                   CCR #{expandedCcr.hash} (
                   {lang === "de" ? "Originaltext vor Kompression" : "无损还原原文"}

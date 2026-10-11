@@ -327,7 +327,7 @@ export function DilemmaTheatre({ lang, scenarioId, customScenario }: DilemmaThea
                 onClick={() => changeScenario(s.id)}
                 className={`rounded border px-2.5 py-1 text-xs transition ${
                   activeScenarioId === s.id
-                    ? "border-[var(--ink)] bg-[var(--ink)] text-[var(--paper)] font-medium shadow-xs"
+                    ? "border-[var(--ink)] bg-[var(--ink)] text-[var(--paper)] font-medium shadow-none"
                     : "border-[var(--line)] bg-[var(--paper-subtle)] text-[var(--gray)] hover:text-[var(--ink)]"
                 }`}
               >
@@ -449,7 +449,7 @@ export function DilemmaTheatre({ lang, scenarioId, customScenario }: DilemmaThea
 
       {/* 幕次经典引言 */}
       {act.quoteDE && (
-        <blockquote className="rounded-r border-l-2 border-[var(--ink)] bg-[var(--paper-subtle)] p-3 text-xs italic text-[var(--ink)]">
+        <blockquote className="rounded-r border-l-2 border-[var(--ink)] bg-[var(--paper-subtle)] p-3 text-xs  text-[var(--ink)]">
           {de ? act.quoteDE : act.quoteZH}
         </blockquote>
       )}
@@ -482,7 +482,7 @@ export function DilemmaTheatre({ lang, scenarioId, customScenario }: DilemmaThea
               onClick={() => setVerdict(0)}
               className={`rounded border p-2.5 text-left text-xs transition ${
                 verdict === 0
-                  ? "border-[var(--ink)] bg-[var(--ink)] text-[var(--paper)] shadow-xs"
+                  ? "border-[var(--ink)] bg-[var(--ink)] text-[var(--paper)] shadow-none"
                   : "border-[var(--line)] bg-[var(--paper-subtle)] text-[var(--gray)] hover:text-[var(--ink)]"
               }`}
             >
@@ -494,7 +494,7 @@ export function DilemmaTheatre({ lang, scenarioId, customScenario }: DilemmaThea
               onClick={() => setVerdict(1)}
               className={`rounded border p-2.5 text-left text-xs transition ${
                 verdict === 1
-                  ? "border-[var(--ink)] bg-[var(--ink)] text-[var(--paper)] shadow-xs"
+                  ? "border-[var(--ink)] bg-[var(--ink)] text-[var(--paper)] shadow-none"
                   : "border-[var(--line)] bg-[var(--paper-subtle)] text-[var(--gray)] hover:text-[var(--ink)]"
               }`}
             >
@@ -505,7 +505,7 @@ export function DilemmaTheatre({ lang, scenarioId, customScenario }: DilemmaThea
 
           <div className="rounded border border-[var(--line)] bg-[var(--paper-subtle)] p-3 text-xs text-[var(--ink)]">
             <span className="font-mono font-semibold text-[var(--gray)]">{de ? "Klausursatz: " : "考场标准句："}</span>
-            <span className="font-serif italic">{de ? scenario.klausurTemplateDE(verdict) : scenario.klausurTemplateZH(verdict)}</span>
+            <span className="font-serif ">{de ? scenario.klausurTemplateDE(verdict) : scenario.klausurTemplateZH(verdict)}</span>
           </div>
 
           <div className="rounded border border-[var(--line)] bg-[var(--surface)] p-3">
@@ -519,7 +519,7 @@ export function DilemmaTheatre({ lang, scenarioId, customScenario }: DilemmaThea
                   className={`w-full rounded border p-2 text-left text-xs transition ${
                     quizAnswer === i
                       ? i === scenario.quiz.correctIndex
-                        ? "border-emerald-600 bg-emerald-500/10 text-emerald-900 dark:text-emerald-300 font-medium"
+                        ? "border-[var(--line)] bg-[var(--paper-subtle)] text-[var(--ink)] dark:text-[var(--ink)] font-medium"
                         : "border-rose-600 bg-rose-500/10 text-rose-900 dark:text-rose-300"
                       : "border-[var(--line)] bg-[var(--paper-subtle)] text-[var(--gray)] hover:text-[var(--ink)] hover:border-[var(--ink)]"
                   }`}

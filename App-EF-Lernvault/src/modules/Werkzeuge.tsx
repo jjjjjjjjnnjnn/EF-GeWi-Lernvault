@@ -244,7 +244,7 @@ export default function Werkzeuge({
                     {lang === "de" ? activeConfig.badgeDE : activeConfig.badgeZH}
                   </span>
                   {isRecommendedForCurrentSubject && (
-                    <span className="font-mono text-[10px] text-[var(--success)]">
+                    <span className="font-mono text-[10px] text-[var(--ink)]">
                       {lang === "de" ? `Optimal für ${currentFach}` : `针对 ${currentFach} 强化`}
                     </span>
                   )}

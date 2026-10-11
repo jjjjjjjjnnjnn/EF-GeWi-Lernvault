@@ -166,7 +166,7 @@ export function SeeOekologieSim({ lang = "de", onExportFinding }: SeeOekologieSi
   }, [ecoStatus]);
 
   return (
-    <div className="w-full flex flex-col gap-5 p-4 sm:p-6 bg-[var(--surface)] rounded-xl border border-[var(--line)] shadow-xs font-sans text-[var(--ink)]">
+    <div className="w-full flex flex-col gap-5 p-4 sm:p-6 bg-[var(--surface)] rounded-xl border border-[var(--line)] shadow-none font-sans text-[var(--ink)]">
       {/* 顶部标题与控制选项 */}
       <div className="flex flex-wrap items-center justify-between gap-3 border-b border-[var(--line)] pb-4">
         <div>
@@ -188,7 +188,7 @@ export function SeeOekologieSim({ lang = "de", onExportFinding }: SeeOekologieSi
             onClick={() => setSeason("fruehjahr")}
             className={`px-2.5 py-1 rounded transition-colors ${
               season === "fruehjahr"
-                ? "bg-[var(--surface)] font-bold text-[var(--accent)] shadow-xs border border-[var(--line)]"
+                ? "bg-[var(--surface)] font-bold text-[var(--accent)] shadow-none border border-[var(--line)]"
                 : "text-[var(--gray)] hover:text-[var(--ink)]"
             }`}
           >
@@ -199,7 +199,7 @@ export function SeeOekologieSim({ lang = "de", onExportFinding }: SeeOekologieSi
             onClick={() => setSeason("sommer")}
             className={`px-2.5 py-1 rounded transition-colors ${
               season === "sommer"
-                ? "bg-[var(--surface)] font-bold text-[var(--accent)] shadow-xs border border-[var(--line)]"
+                ? "bg-[var(--surface)] font-bold text-[var(--accent)] shadow-none border border-[var(--line)]"
                 : "text-[var(--gray)] hover:text-[var(--ink)]"
             }`}
           >
@@ -210,7 +210,7 @@ export function SeeOekologieSim({ lang = "de", onExportFinding }: SeeOekologieSi
             onClick={() => setSeason("herbst")}
             className={`px-2.5 py-1 rounded transition-colors ${
               season === "herbst"
-                ? "bg-[var(--surface)] font-bold text-[var(--accent)] shadow-xs border border-[var(--line)]"
+                ? "bg-[var(--surface)] font-bold text-[var(--accent)] shadow-none border border-[var(--line)]"
                 : "text-[var(--gray)] hover:text-[var(--ink)]"
             }`}
           >
@@ -221,7 +221,7 @@ export function SeeOekologieSim({ lang = "de", onExportFinding }: SeeOekologieSi
             onClick={() => setSeason("winter")}
             className={`px-2.5 py-1 rounded transition-colors ${
               season === "winter"
-                ? "bg-[var(--surface)] font-bold text-[var(--accent)] shadow-xs border border-[var(--line)]"
+                ? "bg-[var(--surface)] font-bold text-[var(--accent)] shadow-none border border-[var(--line)]"
                 : "text-[var(--gray)] hover:text-[var(--ink)]"
             }`}
           >
@@ -365,7 +365,7 @@ export function SeeOekologieSim({ lang = "de", onExportFinding }: SeeOekologieSi
                   {[60, 110, 160, 210].map((x) => (
                     <line key={x} x1={x} y1="96" x2={x} y2="218" stroke="var(--gray)" strokeWidth="1" strokeDasharray="2,4" />
                   ))}
-                  <text x="145" y="195" textAnchor="middle" fill="var(--gray)" fontSize="7" fontStyle="italic" fontFamily="serif">
+                  <text x="145" y="195" textAnchor="middle" fill="var(--gray)" fontSize="7" fontStyle="" fontFamily="serif">
                     Detritus-Sedimentation ↓
                   </text>
                 </g>
@@ -440,7 +440,7 @@ export function SeeOekologieSim({ lang = "de", onExportFinding }: SeeOekologieSi
         </div>
 
         {/* 右侧：因果链推演与会考采分 (5 列) */}
-        <div className="lg:col-span-5 flex flex-col gap-3 p-4 bg-[var(--surface)] rounded-xl border border-[var(--line)] shadow-xs text-xs">
+        <div className="lg:col-span-5 flex flex-col gap-3 p-4 bg-[var(--surface)] rounded-xl border border-[var(--line)] shadow-none text-xs">
           <div className="flex items-center justify-between border-b border-[var(--line)] pb-3">
             <div>
               <span className="font-mono text-[var(--gray)] uppercase tracking-wider text-[10px]">

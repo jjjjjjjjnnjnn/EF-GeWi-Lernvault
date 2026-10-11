@@ -403,7 +403,7 @@ export function SatzbauLego({
             <div
               className={`mt-2 rounded-[var(--radius)] border p-2 text-[var(--text-meta)] font-mono leading-relaxed transition-colors ${
                 isExactIdeal
-                  ? "border-[var(--success)] bg-[var(--paper-subtle)] text-[var(--success)]"
+                  ? "border-[var(--line)] bg-[var(--paper-subtle)] text-[var(--ink)]"
                   : "border-[var(--warning)] bg-[var(--paper-subtle)] text-[var(--warning)]"
               }`}
             >

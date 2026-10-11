@@ -199,7 +199,7 @@ export function BentoMastery({
               <span>仅默写公式，未给出微观物理碰撞或对数级浓度跃迁原理解析。</span>
             </li>
             <li className="flex items-start gap-2">
-              <span className="font-mono font-bold text-emerald-700 dark:text-emerald-400">✓</span>
+              <span className="font-mono font-bold text-[var(--ink)] dark:text-[var(--ink)]">✓</span>
               <span>严格运用 Operatoren 三段论（Darstellung → Analyse → Urteil）推进。</span>
             </li>
           </ul>

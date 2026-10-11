@@ -445,7 +445,7 @@ export function MoleculeShapeSim({ lang, studioMode = true, onExportFinding }: M
               </div>
               <div
                 className="border-t border-[var(--line)] pt-1 font-bold"
-                style={{ color: compressed ? "var(--warning)" : "var(--success)" }}
+                style={{ color: compressed ? "var(--warning)" : "var(--ink)" }}
               >
                 {compressed
                   ? lang === "de"
@@ -562,7 +562,7 @@ export function MoleculeShapeSim({ lang, studioMode = true, onExportFinding }: M
               </div>
               <div className="flex justify-between border-t border-[var(--line)] pt-1.5">
                 <span className="text-[var(--gray)]">{lang === "de" ? "Winkel (Mess / Ideal)" : "键角（实测 / 理想）"}</span>
-                <strong style={{ color: compressed ? "var(--warning)" : "var(--success)" }}>
+                <strong style={{ color: compressed ? "var(--warning)" : "var(--ink)" }}>
                   {`${measured.toFixed(1)}° / ${cfg.idealDeg.toFixed(1)}°`}
                 </strong>
               </div>

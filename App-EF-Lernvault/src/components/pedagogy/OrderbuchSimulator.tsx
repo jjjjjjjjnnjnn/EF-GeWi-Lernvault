@@ -260,7 +260,7 @@ export function OrderbuchSimulator({ lang }: { lang: Lang }) {
           <div className="grid grid-cols-2 gap-2 text-[11px]">
             {/* 买盘 (Bids / Geld) */}
             <div className="space-y-1">
-              <div className="flex justify-between text-[10px] text-emerald-800 border-b border-emerald-200/50 pb-0.5 font-bold">
+              <div className="flex justify-between text-[10px] text-[var(--ink)] border-b border-[var(--line)] pb-0.5 font-bold">
                 <span>GELD (BID)</span>
                 <span>VOLUMEN</span>
               </div>
@@ -269,8 +269,8 @@ export function OrderbuchSimulator({ lang }: { lang: Lang }) {
                   key={idx}
                   className={`flex justify-between py-0.5 px-1 rounded transition ${
                     tradeFlash && idx === 0 && side === "sell"
-                      ? "bg-emerald-200 text-emerald-950 font-bold"
-                      : "text-emerald-900 bg-emerald-50/50"
+                      ? "bg-[var(--paper-subtle)] text-[var(--ink)] font-bold"
+                      : "text-[var(--ink)] bg-[var(--paper-subtle)]"
                   }`}
                 >
                   <span className="font-bold">{b.price.toFixed(2)} €</span>
@@ -281,7 +281,7 @@ export function OrderbuchSimulator({ lang }: { lang: Lang }) {
 
             {/* 卖盘 (Asks / Brief) */}
             <div className="space-y-1">
-              <div className="flex justify-between text-[10px] text-rose-800 border-b border-rose-200/50 pb-0.5 font-bold">
+              <div className="flex justify-between text-[10px] text-[var(--ink)] border-b border-[var(--line)] pb-0.5 font-bold">
                 <span>BRIEF (ASK)</span>
                 <span>VOLUMEN</span>
               </div>
@@ -290,8 +290,8 @@ export function OrderbuchSimulator({ lang }: { lang: Lang }) {
                   key={idx}
                   className={`flex justify-between py-0.5 px-1 rounded transition ${
                     tradeFlash && idx === 0 && side === "buy"
-                      ? "bg-rose-200 text-rose-950 font-bold"
-                      : "text-rose-900 bg-rose-50/50"
+                      ? "bg-[var(--paper-subtle)] text-[var(--ink)] font-bold"
+                      : "text-[var(--ink)] bg-[var(--paper-subtle)]"
                   }`}
                 >
                   <span className="font-bold">{a.price.toFixed(2)} €</span>
@@ -320,7 +320,7 @@ export function OrderbuchSimulator({ lang }: { lang: Lang }) {
                 onClick={() => setSide("buy")}
                 className={`px-2 py-0.5 text-[11px] font-mono rounded cursor-pointer border ${
                   side === "buy"
-                    ? "bg-emerald-800 text-white border-emerald-800 font-bold"
+                    ? "bg-[var(--paper-subtle)] text-white border-[var(--line)] font-bold"
                     : "bg-[var(--surface)] text-[var(--gray)] border-[var(--line)]"
                 }`}
               >
@@ -331,7 +331,7 @@ export function OrderbuchSimulator({ lang }: { lang: Lang }) {
                 onClick={() => setSide("sell")}
                 className={`px-2 py-0.5 text-[11px] font-mono rounded cursor-pointer border ${
                   side === "sell"
-                    ? "bg-rose-800 text-white border-rose-800 font-bold"
+                    ? "bg-[var(--paper-subtle)] text-white border-[var(--line)] font-bold"
                     : "bg-[var(--surface)] text-[var(--gray)] border-[var(--line)]"
                 }`}
               >
@@ -347,7 +347,7 @@ export function OrderbuchSimulator({ lang }: { lang: Lang }) {
               onClick={() => setOrderType("market")}
               className={`p-1.5 rounded border transition cursor-pointer ${
                 orderType === "market"
-                  ? "bg-[var(--ink)] text-white border-[var(--ink)] font-bold shadow-2xs"
+                  ? "bg-[var(--ink)] text-white border-[var(--ink)] font-bold shadow-none"
                   : "bg-[var(--surface)] text-[var(--ink)] border-[var(--line)] hover:border-[var(--gray)]"
               }`}
             >
@@ -363,7 +363,7 @@ export function OrderbuchSimulator({ lang }: { lang: Lang }) {
               }}
               className={`p-1.5 rounded border transition cursor-pointer ${
                 orderType === "limit"
-                  ? "bg-[var(--ink)] text-white border-[var(--ink)] font-bold shadow-2xs"
+                  ? "bg-[var(--ink)] text-white border-[var(--ink)] font-bold shadow-none"
                   : "bg-[var(--surface)] text-[var(--ink)] border-[var(--line)] hover:border-[var(--gray)]"
               }`}
             >
@@ -380,7 +380,7 @@ export function OrderbuchSimulator({ lang }: { lang: Lang }) {
               }}
               className={`p-1.5 rounded border transition cursor-pointer ${
                 orderType === "stop"
-                  ? "bg-[var(--ink)] text-white border-[var(--ink)] font-bold shadow-2xs"
+                  ? "bg-[var(--ink)] text-white border-[var(--ink)] font-bold shadow-none"
                   : "bg-[var(--surface)] text-[var(--ink)] border-[var(--line)] hover:border-[var(--gray)]"
               }`}
             >
@@ -438,7 +438,7 @@ export function OrderbuchSimulator({ lang }: { lang: Lang }) {
           <button
             type="button"
             onClick={executeOrder}
-            className="w-full py-1.5 px-3 rounded bg-[var(--ink)] text-white font-medium text-xs hover:opacity-90 cursor-pointer shadow-xs transition"
+            className="w-full py-1.5 px-3 rounded bg-[var(--ink)] text-white font-medium text-xs hover:opacity-90 cursor-pointer shadow-none transition"
           >
             {de ? "Order ins Xetra-Orderbuch übermitteln" : "将委托发送至 Xetra 订单簿撮合"}
           </button>
@@ -451,10 +451,10 @@ export function OrderbuchSimulator({ lang }: { lang: Lang }) {
           className={`rounded-md border p-3 text-xs font-mono transition-all ${
             lastOrder.status === "filled"
               ? lastOrder.slippageCost && lastOrder.slippageCost > 0
-                ? "border-amber-400 bg-amber-50/80 text-amber-950"
-                : "border-emerald-300 bg-emerald-50/80 text-emerald-950"
+                ? "border-[var(--line)] bg-[var(--paper-subtle)] text-[var(--ink)]"
+                : "border-[var(--line)] bg-[var(--paper-subtle)] text-[var(--ink)]"
               : lastOrder.status === "triggered"
-              ? "border-rose-400 bg-rose-50 text-rose-950"
+              ? "border-[var(--line)] bg-[var(--paper-subtle)] text-[var(--ink)]"
               : "border-[var(--line)] bg-[var(--surface)] text-[var(--ink)]"
           }`}
         >

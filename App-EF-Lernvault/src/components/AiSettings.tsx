@@ -553,7 +553,7 @@ export default function AiSettings({
                 cfg.engine === "off"
                   ? "bg-[var(--gray)]"
                   : activeEndpoint.status === "online"
-                  ? "bg-[var(--success)]"
+                  ? "bg-[var(--ink)]"
                   : activeEndpoint.status === "offline"
                   ? "bg-[var(--warning)]"
                   : "bg-[var(--warning)]"
@@ -602,13 +602,13 @@ export default function AiSettings({
       <div className="p-4">
         {/* 全局保存反馈提示 */}
         {saveFeedback && (
-          <div className="mb-3 flex items-center justify-between rounded-[var(--radius)] border border-[var(--success)] bg-[var(--paper-subtle)] px-3 py-1.5 font-mono text-xs text-[var(--success)]">
+          <div className="mb-3 flex items-center justify-between rounded-[var(--radius)] border border-[var(--line)] bg-[var(--paper-subtle)] px-3 py-1.5 font-mono text-xs text-[var(--ink)]">
             <span>{saveFeedback}</span>
             <button
               type="button"
               onClick={() => setSaveFeedback(null)}
               aria-label={lang === "de" ? "Hinweis schließen / 关闭提示" : "关闭提示 / Hinweis schließen"}
-              className="rounded-[var(--radius)] text-[var(--success)] hover:opacity-70"
+              className="rounded-[var(--radius)] text-[var(--ink)] hover:opacity-70"
             >
               <CloseIcon />
             </button>
@@ -676,7 +676,7 @@ export default function AiSettings({
                     <span className="font-mono text-xs  text-[var(--ink)]">
                       {lang === "de" ? "LM Studio (Lokal)" : "本机算力 (LM Studio)"}
                     </span>
-                    <span className="text-[var(--text-meta)] font-mono px-1.5 py-0.2 rounded-[var(--radius)] bg-[var(--paper-subtle)] text-[var(--success)]">
+                    <span className="text-[var(--text-meta)] font-mono px-1.5 py-0.2 rounded-[var(--radius)] bg-[var(--paper-subtle)] text-[var(--ink)]">
                       Port 1234
                     </span>
                   </div>
@@ -756,7 +756,7 @@ export default function AiSettings({
                     <span
                       className={`inline-flex items-center gap-1 px-1.5 py-0.5 rounded-[var(--radius)] text-[var(--text-meta)] font-mono ${
                         activeEndpoint.status === "online"
-                          ? "bg-[var(--paper-subtle)] text-[var(--success)]"
+                          ? "bg-[var(--paper-subtle)] text-[var(--ink)]"
                           : activeEndpoint.status === "offline"
                           ? "bg-[var(--paper-subtle)] text-[var(--warning)]"
                           : "bg-[var(--surface)] text-[var(--gray)] border border-[var(--line)]"
@@ -765,7 +765,7 @@ export default function AiSettings({
                       <span
                         className={`w-1.5 h-1.5 rounded-full ${
                           activeEndpoint.status === "online"
-                            ? "bg-[var(--success)]"
+                            ? "bg-[var(--ink)]"
                             : activeEndpoint.status === "offline"
                             ? "bg-[var(--warning)]"
                             : "bg-[var(--gray)]"
@@ -832,7 +832,7 @@ export default function AiSettings({
                         className={`px-1.5 py-0.5 rounded-[var(--radius)] border text-[var(--text-meta)] font-mono cursor-pointer transition-colors ${
                           simpleModelInput === mName
                             ? "bg-[var(--ink)] text-white border-[var(--ink)]"
-                            : "bg-[var(--paper-subtle)] text-[var(--success)] border-[var(--success)] hover:border-[var(--success)]"
+                            : "bg-[var(--paper-subtle)] text-[var(--ink)] border-[var(--line)] hover:border-[var(--line)]"
                         }`}
                       >
                         {mName.split("/").pop()}
@@ -946,7 +946,7 @@ export default function AiSettings({
                   <div
                     className={`rounded-[var(--radius)] border p-2.5 text-xs font-mono leading-relaxed transition-colors ${
                       testResultMap[activeEndpoint.id].ok
-                        ? "border-[var(--success)] bg-[var(--paper-subtle)] text-[var(--success)]"
+                        ? "border-[var(--line)] bg-[var(--paper-subtle)] text-[var(--ink)]"
                         : "border-[var(--warning)] bg-[var(--paper-subtle)] text-[var(--warning)]"
                     }`}
                   >
@@ -1281,7 +1281,7 @@ export default function AiSettings({
                         key={m}
                         type="button"
                         onClick={() => setFormModel(m)}
-                        className="px-1.5 py-0.5 rounded-[var(--radius)] border bg-[var(--paper-subtle)] text-[var(--success)] border-[var(--success)] text-[var(--text-meta)] font-mono cursor-pointer hover:border-[var(--success)]"
+                        className="px-1.5 py-0.5 rounded-[var(--radius)] border bg-[var(--paper-subtle)] text-[var(--ink)] border-[var(--line)] text-[var(--text-meta)] font-mono cursor-pointer hover:border-[var(--line)]"
                       >
                         {m.split("/").pop()}
                       </button>
@@ -1340,7 +1340,7 @@ export default function AiSettings({
                   <div
                     className={`rounded-[var(--radius)] border p-3 text-xs font-mono leading-relaxed transition-colors ${
                       modalTestResult.ok
-                        ? "border-[var(--success)] bg-[var(--paper-subtle)] text-[var(--success)]"
+                        ? "border-[var(--line)] bg-[var(--paper-subtle)] text-[var(--ink)]"
                         : "border-[var(--warning)] bg-[var(--paper-subtle)] text-[var(--warning)]"
                     }`}
                   >
@@ -1530,7 +1530,7 @@ export default function AiSettings({
                               <span
                                 className={`inline-flex items-center gap-1 px-1.5 py-0.5 rounded-[var(--radius)] text-[var(--text-meta)] font-mono ${
                                   ep.status === "online"
-                                    ? "bg-[var(--paper-subtle)] text-[var(--success)]"
+                                    ? "bg-[var(--paper-subtle)] text-[var(--ink)]"
                                     : ep.status === "offline"
                                     ? "bg-[var(--paper-subtle)] text-[var(--warning)]"
                                     : "bg-[var(--paper-subtle)] text-[var(--gray)]"
@@ -1539,7 +1539,7 @@ export default function AiSettings({
                                 <span
                                   className={`w-1.5 h-1.5 rounded-full ${
                                     ep.status === "online"
-                                      ? "bg-[var(--success)]"
+                                      ? "bg-[var(--ink)]"
                                       : ep.status === "offline"
                                       ? "bg-[var(--warning)]"
                                       : "bg-[var(--gray)]"
@@ -1572,7 +1572,7 @@ export default function AiSettings({
                             <div
                               className={`mt-2 rounded-[var(--radius)] border p-2 text-[var(--text-meta)] font-mono leading-relaxed ${
                                 testResultMap[ep.id].ok
-                                  ? "border-[var(--success)] bg-[var(--paper-subtle)] text-[var(--success)]"
+                                  ? "border-[var(--line)] bg-[var(--paper-subtle)] text-[var(--ink)]"
                                   : "border-[var(--warning)] bg-[var(--paper-subtle)] text-[var(--warning)]"
                               }`}
                             >
@@ -1738,17 +1738,17 @@ export default function AiSettings({
                 </span>
               </div>
 
-              <div className="rounded-[var(--radius)] border border-[var(--success)] bg-[var(--paper-subtle)] p-3">
-                <span className="font-mono text-[var(--text-meta)] uppercase tracking-wider text-[var(--success)] block mb-1">
+              <div className="rounded-[var(--radius)] border border-[var(--line)] bg-[var(--paper-subtle)] p-3">
+                <span className="font-mono text-[var(--text-meta)] uppercase tracking-wider text-[var(--ink)] block mb-1">
                   <span className="inline-flex items-center gap-1">
                     <BoltIcon />
                     {lang === "de" ? "CCR Algorithmus-Ersparnis / CCR 压缩节省" : "CCR 压缩算法节省 / CCR Algorithmus-Ersparnis"}
                   </span>
                 </span>
-                <span className="font-mono text-lg  text-[var(--success)]">
+                <span className="font-mono text-lg  text-[var(--ink)]">
                   +{tokenSummary.savedTotalCCR.toLocaleString()}
                 </span>
-                <span className="text-[var(--text-meta)] font-mono text-[var(--success)] block mt-2">
+                <span className="text-[var(--text-meta)] font-mono text-[var(--ink)] block mt-2">
                   {lang === "de" ? "Token durch Headroom CCR gerettet" : "无损缓存已为您省下的 Token"}
                 </span>
               </div>
@@ -1811,7 +1811,7 @@ export default function AiSettings({
                         <th className="p-2">Prompt</th>
                         <th className="p-2">Output</th>
                         <th className="p-2">Total</th>
-                        <th className="p-2 text-[var(--success)]">CCR Saved</th>
+                        <th className="p-2 text-[var(--ink)]">CCR Saved</th>
                       </tr>
                     </thead>
                     <tbody className="divide-y divide-[var(--line)] bg-[var(--surface)]">
@@ -1825,7 +1825,7 @@ export default function AiSettings({
                           <td className="p-2 text-[var(--gray)]">{r.promptTokens}</td>
                           <td className="p-2 text-[var(--gray)]">{r.completionTokens}</td>
                           <td className="p-2  text-[var(--ink)]">{r.totalTokens}</td>
-                          <td className="p-2 text-[var(--success)]">+{r.savedTokensCCR || 0}</td>
+                          <td className="p-2 text-[var(--ink)]">+{r.savedTokensCCR || 0}</td>
                         </tr>
                       ))}
                     </tbody>

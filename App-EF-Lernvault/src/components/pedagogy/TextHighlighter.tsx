@@ -289,7 +289,7 @@ export function TextHighlighter({
 
           {/* 自动生成分析陈述句 */}
           {groupedSpans.these.length > 0 && groupedSpans.argument.length > 0 && (
-            <div className="mt-4 pt-2.5 border-t border-[var(--line)] text-[var(--text-meta)] font-mono text-[var(--success)] bg-[var(--paper-subtle)] p-2.5 rounded-[var(--radius)] border border-[var(--success)]">
+            <div className="mt-4 pt-2.5 border-t border-[var(--line)] text-[var(--text-meta)] font-mono text-[var(--ink)] bg-[var(--paper-subtle)] p-2.5 rounded-[var(--radius)] border border-[var(--line)]">
               <div className="flex items-center justify-between mb-1">
                 <span className=" block">
                   {lang === "de" ? "Synthese für deine Klausur / 考纲分析句雏形" : "考纲分析句雏形 / Synthese für deine Klausur"}
@@ -301,7 +301,7 @@ export function TextHighlighter({
                     navigator.clipboard.writeText(synth);
                     onAnalysisGenerated?.(synth);
                   }}
-                  className="rounded-[var(--radius)] border border-[var(--success)] px-2 py-0.5 font-sans text-[var(--text-meta)] text-[var(--success)] transition-colors"
+                  className="rounded-[var(--radius)] border border-[var(--line)] px-2 py-0.5 font-sans text-[var(--text-meta)] text-[var(--ink)] transition-colors"
                 >
                   {lang === "de" ? "In Chat übernehmen / 带入对话框" : "带入对话框 / In Chat übernehmen"}
                 </button>

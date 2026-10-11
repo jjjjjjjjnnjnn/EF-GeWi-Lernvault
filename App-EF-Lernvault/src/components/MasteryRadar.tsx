@@ -113,7 +113,7 @@ export const MasteryRadar: React.FC<MasteryRadarProps> = ({ fach }) => {
         {stats.map(({ inhaltsfeld, avgMastery, topicCount, status }) => {
           const statusClass =
             status === "mastered"
-              ? "bg-[var(--success)]"
+              ? "bg-[var(--ink)]"
               : status === "progress"
                 ? "bg-[var(--warning)]"
                 : "bg-[var(--gray)]";

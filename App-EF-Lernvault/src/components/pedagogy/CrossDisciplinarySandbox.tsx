@@ -451,7 +451,7 @@ export function CrossDisciplinarySandbox({
                   : "会考评价阶融通论述（15分满分话术破题）"}
               </span>
             </div>
-            <p className="mt-1 font-serif text-xs italic text-[var(--ink)]">
+            <p className="mt-1 font-serif text-xs  text-[var(--ink)]">
               {activeCluster.klausurSynthesisDE}
             </p>
             <p className="mt-0.5 font-sans text-xs text-[var(--gray)]">

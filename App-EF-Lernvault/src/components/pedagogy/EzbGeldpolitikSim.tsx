@@ -100,7 +100,7 @@ export function EzbGeldpolitikSim({ lang = "de", onExportFinding }: EzbGeldpolit
   };
 
   return (
-    <div className="w-full flex flex-col gap-5 p-4 sm:p-6 bg-[var(--paper)] rounded-xl border border-[var(--line)] shadow-xs font-sans text-[var(--ink)]">
+    <div className="w-full flex flex-col gap-5 p-4 sm:p-6 bg-[var(--paper)] rounded-xl border border-[var(--line)] shadow-none font-sans text-[var(--ink)]">
       {/* 顶部标题与外生冲击选择栏 */}
       <div className="flex flex-wrap items-center justify-between gap-3 border-b border-[var(--line)] pb-4">
         <div>
@@ -122,7 +122,7 @@ export function EzbGeldpolitikSim({ lang = "de", onExportFinding }: EzbGeldpolit
             onClick={() => setActiveShock("none")}
             className={`px-2.5 py-1 rounded transition-colors ${
               activeShock === "none"
-                ? "bg-[var(--paper)] text-[var(--accent)] font-bold shadow-xs"
+                ? "bg-[var(--paper)] text-[var(--accent)] font-bold shadow-none"
                 : "text-[var(--gray)] hover:text-[var(--ink)]"
             }`}
           >
@@ -358,7 +358,7 @@ export function EzbGeldpolitikSim({ lang = "de", onExportFinding }: EzbGeldpolit
         </div>
 
         {/* 右侧：调和消费者通胀率 (HVPI) 仪表盘与宏观诊断 (5 列) */}
-        <div className="lg:col-span-5 flex flex-col gap-3 p-4 bg-[var(--paper)] rounded-xl border border-[var(--line)] shadow-xs text-xs">
+        <div className="lg:col-span-5 flex flex-col gap-3 p-4 bg-[var(--paper)] rounded-xl border border-[var(--line)] shadow-none text-xs">
           <div className="border-b border-[var(--line)] pb-3">
             <span className="font-mono text-[var(--gray)] uppercase tracking-wider text-[10px]">
               {isDe ? "Mandat der Preisstabilität" : "法定首要使命：价格稳定性"}

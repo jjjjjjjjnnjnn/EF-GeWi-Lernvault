@@ -348,7 +348,7 @@ Aufgabe: Beurteile diese wirtschaftspolitische Konstellation gemäß § 1 Stabil
         <div className="flex items-center gap-2">
           <div className="flex items-center gap-1.5 px-2.5 py-1 rounded border border-[var(--line)] bg-[var(--paper)] font-mono text-xs">
             <span className="text-[var(--gray)]">{isDe ? "Gesamt-Zielerreichung:" : "综合达成度："}</span>
-            <span className={`font-bold ${goalScores.gesamt >= 80 ? "text-emerald-700" : goalScores.gesamt >= 55 ? "text-amber-700" : "text-rose-700"}`}>
+            <span className={`font-bold ${goalScores.gesamt >= 80 ? "text-[var(--ink)]" : goalScores.gesamt >= 55 ? "text-amber-700" : "text-rose-700"}`}>
               {goalScores.gesamt}%
             </span>
           </div>
@@ -367,7 +367,7 @@ Aufgabe: Beurteile diese wirtschaftspolitische Konstellation gemäß § 1 Stabil
             onClick={() => applyPreset(p)}
             className={`px-2.5 py-1 text-xs font-mono rounded transition-colors ${
               activePreset === p.id
-                ? "bg-[var(--accent)] text-white font-semibold shadow-sm"
+                ? "bg-[var(--accent)] text-white font-semibold shadow-none"
                 : "bg-[var(--surface)] text-[var(--ink)] border border-[var(--line)] hover:bg-[var(--line)]/30"
             }`}
           >
@@ -386,7 +386,7 @@ Aufgabe: Beurteile diese wirtschaftspolitische Konstellation gemäß § 1 Stabil
               <span>{isDe ? "Dynamisches Zielerreichungs-Polygon" : "动态目标达成多边形"}</span>
               <div className="flex items-center gap-3">
                 <span className="flex items-center gap-1">
-                  <span className="inline-block w-2.5 h-2.5 rounded-sm bg-emerald-600/30 border border-emerald-600" />
+                  <span className="inline-block w-2.5 h-2.5 rounded-sm bg-[var(--paper-subtle)] border border-[var(--line)]" />
                   {isDe ? "Zielkorridor (Gesetz)" : "法定目标区"}
                 </span>
                 <span className="flex items-center gap-1">
@@ -503,7 +503,7 @@ Aufgabe: Beurteile diese wirtschaftspolitische Konstellation gemäß § 1 Stabil
             </div>
 
             {activeConflicts.length === 0 ? (
-              <div className="p-2.5 rounded bg-emerald-50 border border-emerald-200 text-xs text-emerald-800 font-serif">
+              <div className="p-2.5 rounded bg-[var(--paper-subtle)] border border-[var(--line)] text-xs text-[var(--ink)] font-serif">
                 {isDe
                   ? "Alle vier Ziele befinden sich in harmonischer Balance (Magisches Gleichgewicht erreicht)."
                   : "四大宏观目标处于协调平衡区间，未触发严重结构性目标冲突（达成魔术四角平衡态）。"}
@@ -763,7 +763,7 @@ Aufgabe: Beurteile diese wirtschaftspolitische Konstellation gemäß § 1 Stabil
             <div className="font-mono font-semibold text-[var(--accent)]">
               {isDe ? "Gesetz zur Förderung der Stabilität und des Wachstums der Wirtschaft (StabG 1967):" : "德国《促进经济稳定与增长法》(1967) 核心条文："}
             </div>
-            <p className="font-serif italic">
+            <p className="font-serif ">
               {isDe
                 ? "„(1) Bund und Länder haben bei ihren wirtschafts- und finanzpolitischen Maßnahmen die Erfordernisse des gesamtwirtschaftlichen Gleichgewichts zu beachten. Die Maßnahmen sind so zu treffen, dass sie im Rahmen der marktwirtschaftlichen Ordnung gleichzeitig zur Stabilität des Preisniveaus, zu einem hohen Beschäftigungsstand und außenwirtschaftlichem Gleichgewicht bei stetigem und angemessenem Wirtschaftswachstum beitragen.“"
                 : "“（1）联邦与各州在采取经济与财政政策措施时，必须顾及全经济整体均衡之要求。措施之施行，应当在市场经济体制框架内，同时促进物价水平稳定、高就业水平、对外经济平衡，以及持续适度之经济增长。”"}
