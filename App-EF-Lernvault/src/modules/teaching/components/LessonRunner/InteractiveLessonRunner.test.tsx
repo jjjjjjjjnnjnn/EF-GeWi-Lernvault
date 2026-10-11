@@ -148,7 +148,7 @@ describe("InteractiveLessonRunner Component", () => {
     localStorage.removeItem("lernvault_session_q-1-1");
   });
 
-  it("renders Study-Mate elements and supports toggling adaptive probes", () => {
+  it("renders flat Intuitions-Konflikt and reveals instant causal mechanism upon choice", () => {
     render(
       <InteractiveLessonRunner
         questNode={sampleQuest}
@@ -160,41 +160,15 @@ describe("InteractiveLessonRunner Component", () => {
       />
     );
 
-    // Verify Story Hook & Intuitions-Check presence
-    expect(screen.getByText(/Story-Szenario & Rolle/i)).toBeInTheDocument();
-    expect(screen.getByText(/Intuitions-Check/i)).toBeInTheDocument();
+    // Verify flat unnested scenario presence
+    expect(screen.getByText(/Reales Alltags-Dilemma/i)).toBeInTheDocument();
 
-    // Select Option A to reveal Feynman-Klartext mechanism breakdown
+    // Select Option A to reveal instant causal feedback panel
     const optionABtn = screen.getByRole("button", { name: /\[ A \]/i });
     fireEvent.click(optionABtn);
-    expect(screen.getByText(/Feynman-Klartext/i)).toBeInTheDocument();
-    expect(screen.getByText(/Zwei Brillen/i)).toBeInTheDocument();
 
-    // Verify Study-Mate 3 adaptive probes are rendered
-    const simplerBtn = screen.getByRole("button", { name: /Einfacher \/ Klartext/i });
-    const deeperBtn = screen.getByRole("button", { name: /Vertiefung \/ Edge Case/i });
-    const quizBtn = screen.getByRole("button", { name: /Check \/ Schnelltest/i });
-
-    expect(simplerBtn).toBeInTheDocument();
-    expect(deeperBtn).toBeInTheDocument();
-    expect(quizBtn).toBeInTheDocument();
-
-    // 1. Click "Einfacher" -> expands simpler probe
-    fireEvent.click(simplerBtn);
-    expect(screen.getByText(/Feynman-Abstraktion senken/i)).toBeInTheDocument();
-
-    // 2. Click "Vertiefung" -> switches to deeper probe
-    fireEvent.click(deeperBtn);
-    expect(screen.getByText(/Kritischer Grenzfall & Paradoxon/i)).toBeInTheDocument();
-
-    // 3. Click "Check" -> switches to quick quiz probe
-    fireEvent.click(quizBtn);
-    expect(screen.getByText(/Sofortige Verständniskontrolle/i)).toBeInTheDocument();
-
-    // Reveal quick quiz answer
-    const revealAnswerBtn = screen.getByRole("button", { name: /Antwort einblenden/i });
-    fireEvent.click(revealAnswerBtn);
-    expect(screen.getByText(/Musterantwort:/i)).toBeInTheDocument();
+    expect(screen.getByText(/Kausale Essenz/i)).toBeInTheDocument();
+    expect(screen.getByText(/KLP-Prüfungskern/i)).toBeInTheDocument();
   });
 
   it("opens, displays and closes attached knowledge note drawer", () => {
@@ -268,25 +242,26 @@ describe("InteractiveLessonRunner Component", () => {
       />
     );
 
-    // Verify Blizzard scenario is rendered in Step 1
-    expect(screen.getByText(/暴风雪导致全城取暖煤气供应中断/i)).toBeInTheDocument();
-    expect(screen.getByText(/如果完全交给‘自由市场（Markt）’，会发生什么？/i)).toBeInTheDocument();
+    // Verify Atlantic Salmon scenario is rendered in Step 1
+    expect(screen.getByText(/大西洋三文鱼/i)).toBeInTheDocument();
+    expect(screen.getByText(/擅自把售价从 10 欧提高到 11 欧/i)).toBeInTheDocument();
 
     // Click Choice A
-    const choiceABtn = screen.getByRole("button", { name: /商家疯狂涨价/i });
+    const choiceABtn = screen.getByRole("button", { name: /温和下滑/i });
     fireEvent.click(choiceABtn);
 
-    // Verify instant mechanism card appears with authentic KLP termini
-    expect(screen.getByText(/这就是完全竞争市场冷酷而高效的本质！/i)).toBeInTheDocument();
-    expect(screen.getByText(/稀缺信号（Knappheitssignal）/i)).toBeInTheDocument();
-    expect(screen.getByText(/Allokationsfunktion/i)).toBeInTheDocument();
+    // Verify instant mechanism card appears with authentic KLP termini, 5 premises, SVG curve, and golden sentence
+    expect(screen.getByText(/现实生活中完全符合常理/i)).toBeInTheDocument();
+    expect(screen.getAllByText(/完全价格弹性/i).length).toBeGreaterThan(0);
+    expect(screen.getByText(/完全竞争市场 5 大公理前提/i)).toBeInTheDocument();
+    expect(screen.getByText(/reiner Preisnehmer \(Mengenanpasser\)/i)).toBeInTheDocument();
 
     // Switch to Choice B
-    const choiceBBtn = screen.getByRole("button", { name: /政府限价 50 欧/i });
+    const choiceBBtn = screen.getByRole("button", { name: /暴跌至 0/i });
     fireEvent.click(choiceBBtn);
 
     // Verify reaction updates to Choice B
-    expect(screen.getByText(/政府限价虽然维持了平价，却直接引发严重的‘超额需求/i)).toBeInTheDocument();
+    expect(screen.getByText(/完全正确！这就是完全竞争模型的冰冷法则/i)).toBeInTheDocument();
 
     // Advance to next step
     const advanceBtn = screen.getByRole("button", { name: /进入互动实验探索/i });
@@ -294,4 +269,136 @@ describe("InteractiveLessonRunner Component", () => {
 
     expect(screen.getByText(/第 2 步/i)).toBeInTheDocument();
   });
+
+  it("walks through all 6 constructivist steps with serialized MicroWorld, Konzept-Puzzle, 0-NP Klausurfalle, and 15-NP Meistersatz", () => {
+    const onComplete = vi.fn();
+    const sampleMarketQuest: ParsedQuestNode = {
+      id: "q-market-walkthrough",
+      chapterId: "chap-sowi-markt",
+      order: 1,
+      title: "Das Modell des vollkommenen Marktes (Angebot & Nachfrage)",
+      lessonType: "concept",
+      estimatedMinutes: 10,
+      prerequisites: [],
+      matchedToolId: "markt-sim",
+      matchedToolName: "Markt-Labor",
+      interactiveType: "markt-sim",
+      summary: "Einführung in Angebot, Nachfrage, Marktgleichgewicht und Preismechanismus.",
+      socraticPrompt: "Warum räumt der freie Preis den Markt, ignoriert aber soziale Gerechtigkeit?",
+      keyConcepts: [],
+      xp: 100,
+    };
+
+    render(
+      <InteractiveLessonRunner
+        questNode={sampleMarketQuest}
+        currentFach="SoWi"
+        lang="zh"
+        isOpen={true}
+        onComplete={onComplete}
+        onClose={vi.fn()}
+      />
+    );
+
+    // Step 1: Intuitions-Konflikt
+    const choiceB = screen.getByRole("button", { name: /暴跌至 0/i });
+    fireEvent.click(choiceB);
+    const advanceBtn1 = screen.getByRole("button", { name: /进入互动实验探索/i });
+    fireEvent.click(advanceBtn1);
+
+    // Step 2: MicroWorld (Pure Curve Sim without distracting sub-tabs)
+    expect(screen.getByText(/第 2 步/i)).toBeInTheDocument();
+    expect(screen.getByTestId("marktgleichgewicht-sim")).toBeInTheDocument();
+    const advanceBtn2 = screen.getByRole("button", { name: /动手实验探究完毕/i });
+    expect(advanceBtn2).toBeDisabled();
+
+    // Adjust cost slider to 50% target to fulfill mission
+    const slider = screen.getByRole("slider");
+    fireEvent.change(slider, { target: { value: "50" } });
+    expect(advanceBtn2).not.toBeDisabled();
+    fireEvent.click(advanceBtn2);
+
+    // Step 3: Standalone 4-Premise Puzzle (Konzept-Puzzle)
+    expect(screen.getByText(/第 3 步/i)).toBeInTheDocument();
+    expect(screen.getByText(/四大假设现实对决拼图/i)).toBeInTheDocument();
+    expect(screen.getByText(/概念机制拼图/i)).toBeInTheDocument();
+    const advanceBtn3 = screen.getByRole("button", { name: /四大假设拼图完成/i });
+    expect(advanceBtn3).toBeDisabled();
+
+    // Match all 4 pairs
+    fireEvent.click(screen.getByText(/完全同质商品/i));
+    fireEvent.click(screen.getByText(/品牌营销/i));
+
+    fireEvent.click(screen.getByText(/完全市场透明度/i));
+    fireEvent.click(screen.getByText(/信息不对称/i));
+
+    fireEvent.click(screen.getByText(/无个人与空间偏好/i));
+    fireEvent.click(screen.getByText(/熟人熟脸信任感/i));
+
+    fireEvent.click(screen.getByText(/自由进出无门槛/i));
+    fireEvent.click(screen.getByText(/高额初始投资/i));
+
+    expect(advanceBtn3).not.toBeDisabled();
+    fireEvent.click(advanceBtn3);
+
+    // Step 4: 0-NP Klausur Error Diagnosis (Absturz-Falle)
+    expect(screen.getByText(/第 4 步/i)).toBeInTheDocument();
+    expect(screen.getByText(/真实考场学生作答摘录/i)).toBeInTheDocument();
+    expect(screen.getByText(/0 \/ 15 NP/i)).toBeInTheDocument();
+    expect(screen.getByText(/生活必需品/i)).toBeInTheDocument();
+
+    const step4DiagnosticOption = screen.getAllByRole("button").find(b => b.textContent?.includes("出清效率") || b.textContent?.includes("社会公正") || b.textContent?.includes("Effizienz"));
+    expect(step4DiagnosticOption).toBeDefined();
+    fireEvent.click(step4DiagnosticOption!);
+    const checkBtn4 = screen.getByRole("button", { name: /核验答案/i });
+    fireEvent.click(checkBtn4);
+
+    expect(screen.getByText(/考官订正示范/i)).toBeInTheDocument();
+    expect(screen.getByText(/致命失分症结/i)).toBeInTheDocument();
+    const advanceBtn4 = screen.getByRole("button", { name: /继续下一步/i });
+    fireEvent.click(advanceBtn4);
+
+    // Step 5: 15-NP Meistersatz
+    expect(screen.getByText(/第 5 步/i)).toBeInTheDocument();
+    expect(screen.getByText(/15 分满分踩分标准/i)).toBeInTheDocument();
+    const step5Option = screen.getAllByRole("button").find(b => b.textContent?.includes("帕累托") || b.textContent?.includes("社会国家原则") || b.textContent?.includes("15 NP"));
+    expect(step5Option).toBeDefined();
+    fireEvent.click(step5Option!);
+    const checkBtn5 = screen.getByRole("button", { name: /核验答案/i });
+    fireEvent.click(checkBtn5);
+    expect(screen.getByText(/15 NP 满分金句/i)).toBeInTheDocument();
+    expect(screen.getAllByText(/Preismechanismus/i).length).toBeGreaterThan(0);
+  });
+
+  it("allows going back to previous step via Zurück / 上一步 button without losing state", () => {
+    render(
+      <InteractiveLessonRunner
+        questNode={sampleQuest}
+        fach="SoWi"
+        lang="de"
+        currentStreak={5}
+        onComplete={vi.fn()}
+        onClose={vi.fn()}
+      />
+    );
+
+    // Step 1: No Zurück button should be present initially
+    expect(screen.queryByRole("button", { name: /Zurück/i })).not.toBeInTheDocument();
+
+    // Advance to Step 2
+    fireEvent.click(screen.getByRole("button", { name: /\[ A \]/i }));
+    fireEvent.click(screen.getByRole("button", { name: /Weiter zum Experiment/i }));
+
+    expect(screen.getByText(/Schritt 2:/i)).toBeInTheDocument();
+
+    // Step 2: Zurück button is present
+    const backBtn = screen.getByRole("button", { name: /Zurück/i });
+    expect(backBtn).toBeInTheDocument();
+
+    // Click Zurück to return to Step 1
+    fireEvent.click(backBtn);
+    expect(screen.getByText(/Schritt 1:/i)).toBeInTheDocument();
+    expect(screen.getByRole("button", { name: /Weiter zum Experiment/i })).toBeInTheDocument();
+  });
 });
+

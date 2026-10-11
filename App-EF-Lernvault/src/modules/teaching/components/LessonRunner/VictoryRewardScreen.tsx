@@ -100,7 +100,7 @@ export const VictoryRewardScreen: React.FC<VictoryRewardScreenProps> = ({
             <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor" stroke="none" aria-hidden="true">
               <path d="M8 1c.5 2 2 3.5 2 6 0 2.2-1.8 4-4 4s-4-1.8-4-4c0-2.5 1.5-4 2-6 .5 1.5 1.5 2.5 2 3 .5-.5 1.5-1.5 2-3z" />
             </svg>
-            <span>{streakDays} <span className="text-xs font-normal">Tage</span></span>
+            <span>{streakDays} <span className="text-xs font-normal">{lang === "de" ? (streakDays === 1 ? "Tag" : "Tage") : "天"}</span></span>
           </span>
         </div>
 

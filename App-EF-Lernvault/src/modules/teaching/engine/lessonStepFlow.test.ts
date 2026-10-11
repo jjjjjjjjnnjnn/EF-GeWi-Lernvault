@@ -86,4 +86,28 @@ describe("Duolingo-style Lesson Step Flow Compiler", () => {
     expect(lightResult.steps[2].stepNumber).toBe(3);
     expect(lightResult.steps[2].xpReward).toBe(45);
   });
+
+  it("serializes markt-sim into 5 sequential steps including dedicated puzzle and trap steps", () => {
+    const marketQuest: ParsedQuestNode = {
+      ...sampleQuest,
+      id: "q-market",
+      title: "Das Modell des vollkommenen Marktes (Angebot & Nachfrage)",
+      interactiveType: "markt-sim",
+      matchedToolId: "markt-sim",
+    };
+
+    const result = compileLessonSteps(marketQuest, "SoWi");
+    expect(result.steps.length).toBe(5);
+    expect(result.steps.map((s) => s.type)).toEqual([
+      "lecture",
+      "microworld",
+      "puzzle",
+      "trap",
+      "quiz",
+    ]);
+    expect(result.steps[2].titleZH).toContain("四大假设现实对决拼图");
+    expect(result.steps[2].stepNumber).toBe(3);
+    expect(result.steps[3].stepNumber).toBe(4);
+    expect(result.steps[4].stepNumber).toBe(5);
+  });
 });

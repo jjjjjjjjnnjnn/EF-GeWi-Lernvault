@@ -15,7 +15,11 @@ export type InteractiveToolType =
   | "variable_slider"
   | "dilemma_balance"
   | "logic_blocks"
-  | "scenario_tree";
+  | "scenario_tree"
+  | "markt-sim"
+  | "kinematik"
+  | "formula"
+  | "konzept_puzzle";
 
 export interface KeyConceptSnippet {
   term: string;
@@ -83,10 +87,16 @@ const TOOL_RULES: ToolRule[] = [
     keywords: ["rawls", "schleier", "urzustand", "differenzprinzip", "gerechtigkeit", "umverteilung", "fairness"],
   },
   {
+    id: "markt-sim",
+    name: "Markt-Labor (微观供求均衡与价格出清)",
+    interactiveType: "markt-sim",
+    keywords: ["markt", "gleichgewicht", "angebot", "nachfrage", "preismechanismus", "raeumung", "marktpreis", "vollkommener markt"],
+  },
+  {
     id: "magisches-viereck",
     name: "Magisches Viereck (宏观经济景气与四大目标沙盘)",
     interactiveType: "magisches-viereck",
-    keywords: ["wirtschaft", "wachstum", "inflation", "arbeitslos", "konjunktur", "markt", "ezb", "preisstabilitaet"],
+    keywords: ["wirtschaft", "wachstum", "inflation", "arbeitslos", "konjunktur", "ezb", "preisstabilitaet", "stabilitätsgesetz", "stabilitaetsgesetz"],
   },
   {
     id: "gini-allocator",

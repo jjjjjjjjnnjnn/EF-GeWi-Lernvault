@@ -89,6 +89,19 @@ describe("Concept Distillation Engine: conceptDistiller", () => {
     expect(res.attachedNote?.feynmanSummaryZH).toBeTruthy();
     expect(res.attachedNote?.methodSnippetZH).toBeTruthy();
     expect(res.attachedNote?.klausurSatzbausteinDE).toBeTruthy();
+
+    // Konzept-Puzzle (Schritt 2) & Exam-Trap (Schritt 4)
+    expect(res.konzeptPuzzle).toBeDefined();
+    expect(res.konzeptPuzzle?.pairs.length).toBeGreaterThanOrEqual(4);
+    for (const p of res.konzeptPuzzle!.pairs) {
+      expect(p.premiseDE).toBeTruthy();
+      expect(p.realityDE).toBeTruthy();
+    }
+
+    expect(res.examTrapCorrection).toBeDefined();
+    expect(res.examTrapCorrection?.studentAnswerDE).toBeTruthy();
+    expect(res.examTrapCorrection?.fatalFlawPointDE).toBeTruthy();
+    expect(res.examTrapCorrection?.examinerVerdictDE).toBeTruthy();
   }
 
   it("lists supported preloaded canonical topics", () => {
@@ -96,15 +109,17 @@ describe("Concept Distillation Engine: conceptDistiller", () => {
     expect(list.length).toBeGreaterThanOrEqual(10);
   });
 
-  it("distills Modell des vollkommenen Marktes (Angebot & Nachfrage) with authentic blizzard dilemma", () => {
+  it("distills Modell des vollkommenen Marktes (Angebot & Nachfrage) with authentic salmon pricing paradox", () => {
     const res = distillConcept("Modell des vollkommenen Marktes (Angebot & Nachfrage)", "SoWi");
     validateDistilledConcept(res);
     expect(res.fach).toBe("SoWi");
-    expect(res.intuitionDilemma?.scenarioZH).toContain("暴风雪导致全城取暖煤气供应中断");
-    expect(res.intuitionDilemma?.choiceA.textZH).toContain("商家疯狂涨价");
-    expect(res.intuitionDilemma?.choiceB.textZH).toContain("政府限价 50 欧");
-    expect(res.intuitionDilemma?.choiceA.reactionZH).toContain("稀缺信号（Knappheitssignal）");
-    expect(res.intuitionDilemma?.choiceB.reactionZH).toContain("超额需求（Nachfrageüberhang）");
+    expect(res.intuitionDilemma?.scenarioZH).toContain("大西洋三文鱼");
+    expect(res.intuitionDilemma?.choiceA.textZH).toContain("温和下滑");
+    expect(res.intuitionDilemma?.choiceB.textZH).toContain("暴跌至 0");
+    expect(res.intuitionDilemma?.choiceA.reactionZH).toContain("现实生活");
+    expect(res.intuitionDilemma?.choiceB.reactionZH).toContain("价格接受者");
+    expect(res.konzeptPuzzle?.pairs.length).toBe(4);
+    expect(res.examTrapCorrection?.fatalFlawPointZH).toContain("Referenzmodell");
     expect(res.klausurSatz15NP.scoringKeywords).toContain("Allokationsfunktion");
   });
 

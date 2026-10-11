@@ -22,3 +22,9 @@ export type {
   DilemmaBalanceScaleProps,
   WeightArgument,
 } from "./DilemmaBalanceScale";
+
+export { KonzeptPuzzle } from "./KonzeptPuzzle";
+export type { KonzeptPuzzleProps } from "./KonzeptPuzzle";
+
+export { MarktgleichgewichtSim } from "./MarktgleichgewichtSim";
+export type { MarktgleichgewichtSimProps } from "./MarktgleichgewichtSim";

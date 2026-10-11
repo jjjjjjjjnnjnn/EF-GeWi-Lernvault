@@ -18,9 +18,10 @@ import {
 export type LessonStepType =
   | "lecture"     // 1. 新知精讲微课 (Phase 1: Vorlesung & Kausalkette - 沉浸阅读吸收)
   | "microworld"  // 2. 互动实验微世界 (Phase 1: Interaktives Labor-Experiment - 动手探究)
-  | "concept"     // 3. 核心机制挑战 (Phase 2: Konzept-Duell - 考纲核心机制精准辨析挑战)
-  | "trap"        // 4. 考场陷阱排雷 (Phase 2: Klausurfalle & Fehlerquellen-Abwehr)
-  | "quiz"        // 5. 15 NP 会考标答 (Phase 2: 15-NP-Meistersatz & Abschluss-Check)
+  | "puzzle"      // 3. 核心公理与现实对决拼图 (Phase 1: Konzept-Puzzle & Prämissen-Check)
+  | "concept"     // 4. 核心机制挑战 (Phase 2: Konzept-Duell - 考纲核心机制精准辨析挑战)
+  | "trap"        // 5. 考场陷阱排雷 (Phase 2: Klausurfalle & Fehlerquellen-Abwehr)
+  | "quiz"        // 6. 15 NP 会考标答 (Phase 2: 15-NP-Meistersatz & Abschluss-Check)
   | "intuition";  // 兼容别名
 
 export type LessonPhase = "learn" | "challenge";
@@ -196,15 +197,29 @@ export function compileLessonSteps(
       toolId: questNode.matchedToolId,
       toolType: questNode.interactiveType,
       missionPromptDE:
-        "Bediene die Parameter oder Gewichte, um die dynamische Ursache-Wirkungs-Kette praktisch zu erfahren.",
+        questNode.interactiveType === "markt-sim"
+          ? "Bediene den Schieberegler, um die Verschiebung der Angebotskurve und die Anpassung des Marktgleichgewichts G* zu beobachten."
+          : "Bediene die Parameter-Schieberegler, um die Systemdynamik und Ursache-Wirkungs-Kette praktisch zu erfahren.",
       missionPromptZH:
-        "拖动滑块或调整平衡砝码，观察动态因果曲线与力矩变化。",
-      targetCriteriaDE: "Parameter im stabilen Zielkorridor justiert.",
-      targetCriteriaZH: "参数已调整至稳态目标区间。",
+        questNode.interactiveType === "markt-sim"
+          ? "拖动右侧【生产成本】滑块，观察供给曲线平移及均衡点 G* 的自发调整。"
+          : "调节参数滑块，观察动态因果曲线与系统稳态演化。",
+      targetCriteriaDE:
+        questNode.interactiveType === "markt-sim"
+          ? "Produktionskosten auf +50% Zielmarke justiert."
+          : "Parameter im stabilen Zielkorridor justiert.",
+      targetCriteriaZH:
+        questNode.interactiveType === "markt-sim"
+          ? "生产成本已调整至 +50% 靶心目标区间。"
+          : "参数已调整至稳态目标区间。",
       learningTakeawayDE:
-        "Erkenntnis: In komplexen Systemen erzeugt jeder Eingriff direkte Wechselwirkungen und erfordert eine differenzierte Abwägung.",
+        questNode.interactiveType === "markt-sim"
+          ? "Erkenntnis: Der Preismechanismus führt bei Angebotskontraktion zu einem höheren Gleichgewichtspreis und räumt den Markt ohne zentrale Steuerung."
+          : "Erkenntnis: In komplexen Systemen erzeugt jeder Eingriff direkte Wechselwirkungen und erfordert eine differenzierte Abwägung.",
       learningTakeawayZH:
-        "实验规律：在复杂系统中，任何变量的微调都会引发联动反应，必须在考场作答中进行多维度权衡。",
+        questNode.interactiveType === "markt-sim"
+          ? "实验规律：供给收缩下价格机制自发推高均衡价格并平抑需求，在无行政命令干预下实现市场出清。"
+          : "实验规律：在复杂系统中，任何变量的微调都会引发联动反应，必须在考场作答中进行多维度权衡。",
     },
     xpReward: 35,
   };
@@ -217,8 +232,8 @@ export function compileLessonSteps(
     stepNumber: 3,
     titleDE: "Schritt 3: KLP-Fachbegriff & Mechanismus-Duell",
     titleZH: "第 3 步：考纲专业术语与机制精准对决",
-    promptDE: `Welche exakte Definition entspricht dem Fachbegriff »${primaryTerm.termDE}« nach KLP NRW?`,
-    promptZH: `根据考纲规范与刚刚的实验探究，专业术语 »${primaryTerm.termDE} (${primaryTerm.termZH})« 的准确核心定义是？`,
+    promptDE: `Welche exakte didaktische Funktion und Kausalität beschreibt den Fachbegriff »${primaryTerm.termDE}« nach KLP NRW?`,
+    promptZH: `依据考纲规范与刚刚的实验探究，专业术语 »${primaryTerm.termDE} (${primaryTerm.termZH})« 在经济机制中发挥的核心调控职能是？`,
     options: [
       {
         id: "term-correct",
@@ -226,27 +241,27 @@ export function compileLessonSteps(
         textZH: primaryTerm.definitionZH,
         isCorrect: true,
         explanationDE:
-          "Präzise formuliert. Das ist die korrekte Definition für Klausuren AFB I/II.",
+          "Präzise formuliert! Exakt diese Kausallogik verlangt der Erwartungshorizont in AFB I/II.",
         explanationZH:
-          "定义极其精确，完全符合会考第一与第二认知领域（AFB I/II）标准踩分要求。",
+          "定义极其精确！完全吻合考纲第一与第二认知领域（AFB I/II）标准踩分要求：价格自发出清，实现微观配置效率。",
       },
       {
         id: "term-distractor",
         textDE:
-          "Ein umgangssprachlicher Sammelbegriff ohne institutionelle oder mathematische Bindung.",
+          "Als ordnungspolitisches Instrument des Staates, das durch gesetzliche Höchstpreise die Grundversorgung der Bürger sichert.",
         textZH:
-          "一个日常通俗的大杂烩词汇，缺乏严格的机制界定与边界约束。",
+          "作为国家宏观协调的社会保障工具，通过法定限价与福利干预确保商品不超出居民承受能力。",
         isCorrect: false,
         explanationDE:
-          "Achtung: Umgangssprachliche Begriffe führen in Klausuren zu Punktabzügen!",
+          "Achtung, Klausurfalle: Verwechsle nicht das freie Marktmodell mit der staatlichen Sozialpolitik der Sozialen Marktwirtschaft!",
         explanationZH:
-          "注意：在德语会考中混淆口语与考纲专业学术术语会导致失分！",
+          "注意考场高频失分陷阱：完全竞争市场模型纯属自发机制，严禁混淆自由市场出清与国家社会福利干预！",
       },
     ],
     xpReward: 25,
   };
 
-  // 4. 考场排雷卡 (Phase 2: 考场挑战 - 会考高频失分雷区精准排雷)
+  // 4. 考场排雷卡 (Phase 2: 考场挑战 - 真实 0 分答案找茬诊断与雷区精准排雷)
   const trapInfo = distilled.fehlerquellen[0] || {
     trapTitleDE: "Verwechslung von Korrelation und Kausalität",
     trapDescriptionDE: "Verfrühte Verallgemeinerung ohne Differenzierung.",
@@ -255,37 +270,44 @@ export function compileLessonSteps(
     howToAvoidDE:
       "Immer die konkreten Rahmenbedingungen und Ausnahmen nennen.",
   };
+
+  const trapOptions: LessonOption[] =
+    distilled.examTrapCorrection?.diagnosticOptions &&
+    distilled.examTrapCorrection.diagnosticOptions.length > 0
+      ? distilled.examTrapCorrection.diagnosticOptions
+      : [
+          {
+            id: "trap-correct",
+            textDE: trapInfo.howToAvoidDE,
+            textZH:
+              "严密论证前提条件：指出该观点混淆了理论模型的出清效率与现实社会福利，规范引用考纲专业术语。",
+            isCorrect: true,
+            explanationDE:
+              "Exzellent! Mit dieser Strategie sicherst du dir die volle Punktzahl in AFB II.",
+            explanationZH:
+              "诊断卓越！用严格的前提边界与概念辨析破除认知陷阱，稳稳拿满 AFB II 采分点。",
+          },
+          {
+            id: "trap-distractor",
+            textDE: trapInfo.trapDescriptionDE,
+            textZH: trapInfo.trapDescriptionZH,
+            isCorrect: false,
+            explanationDE: `Genau dies ist die Fehlerfalle: ${trapInfo.trapTitleDE}!`,
+            explanationZH: `这恰恰是考场中最容易中招的经典雷区：${trapInfo.trapTitleDE}！`,
+          },
+        ];
+
   const stepTrap: LessonStep = {
     id: `${questNode.id}-step-4`,
     type: "trap",
     phase: "challenge",
     stepNumber: 4,
-    titleDE: "Schritt 4: Klausurfalle & Fehlerquellen-Abwehr",
-    titleZH: "第 4 步：会考高频失分雷区精准排雷",
-    promptDE: `Typische Klausurfalle bei »${questNode.title}«: Welches Vorgehen vermeidet den typischen Punktverlust?`,
-    promptZH: `针对 »${questNode.title}« 的考场经典易错点：哪种作答策略能够有效避免失分？`,
-    options: [
-      {
-        id: "trap-correct",
-        textDE: trapInfo.howToAvoidDE,
-        textZH:
-          "严密论证前提条件，区分主要矛盾与次生影响，规范引用考纲专业术语。",
-        isCorrect: true,
-        explanationDE:
-          "Exzellent! Mit dieser Strategie sicherst du dir die volle Punktzahl in AFB II.",
-        explanationZH:
-          "卓越！采用这种作答结构能确保在论述大题中稳稳拿满踩分点。",
-      },
-      {
-        id: "trap-distractor",
-        textDE: trapInfo.trapDescriptionDE,
-        textZH: trapInfo.trapDescriptionZH,
-        isCorrect: false,
-        explanationDE: `Genau dies ist die Fehlerfalle: ${trapInfo.trapTitleDE}!`,
-        explanationZH: `这恰恰是考场中最容易中招的经典雷区：${trapInfo.trapTitleDE}！`,
-      },
-    ],
-    xpReward: 25,
+    titleDE: "Schritt 4: Klausurfalle & 0-NP-Absturz-Diagnose",
+    titleZH: "第 4 步：考场排雷 · 真实 0 分答案诊断 (Absturz-Falle)",
+    promptDE: "Klausur-Absturz · Diagnostiziere den fatalen Denkfehler im 0-NP-Schülerzitat",
+    promptZH: "考场排雷 · 诊断 0 分考卷的致命逻辑漏洞",
+    options: trapOptions,
+    xpReward: 30,
   };
 
   // 5. 15 NP 会考小测卡 (Phase 2: 考场挑战 - 15 NP 会考金句与终局达标考核)
@@ -305,21 +327,33 @@ export function compileLessonSteps(
         textZH: distilled.klausurSatz15NP.explanationZH,
         isCorrect: true,
         explanationDE:
-          "15-NP-Meisterleistung! Alle Kernbegriffe und Kausalbeziehungen sind makellos enthalten.",
+          "15-NP-Meisterleistung! Perfekte Synthese aus Sachurteil (Allokationseffizienz) und Werturteil (Sozialstaatsgebot nach GG Art. 20).",
         explanationZH:
-          "15 NP 满级水准！核心考点、因果链与专业术语严密无缝。",
+          "15 NP 满分水准！严密融合了事实评价（Sachurteil：市场自发配置效率）与价值评价（Werturteil：基本法第 20 条社会国家原则），达到北威州最高评分标准。",
       },
       {
-        id: "muster-distractor",
+        id: "muster-distractor-market",
         textDE:
-          "Das Thema ist wichtig, aber es gibt keine klaren Richtlinien für eine fundierte Urteilsbildung.",
+          "Der Preismechanismus des vollkommenen Marktes führt stets zu optimalen Wohlfahrtsergebnissen, weshalb staatliche Markteingriffe ausnahmslos als wohlstandsmindernd abzulehnen sind.",
         textZH:
-          "该主题虽有一定意义，但缺乏明确的标准，考生只能凭感觉主观发挥。",
+          "完全竞争市场的价格机制始终能实现最优福利结果，因此国家任何干预无一例外都会损害经济繁荣，应当予以彻底抵制。",
         isCorrect: false,
         explanationDE:
-          "Zu oberflächlich: In Oberstufen-Klausuren wird ein differenziertes Sach- und Werturteil gefordert.",
+          "Punktabzug in AFB III: Dies ist eine einseitige Markt-Apologie ohne Werturteil. Im NRW-Abitur muss stets das Spannungsverhältnis zum Sozialstaatsgebot reflektiert werden!",
         explanationZH:
-          "过于空泛：高中阶段要求考生必须结合事实评价（Sachurteil）与价值评价（Werturteil）展开深入论述。",
+          "AFB III 严重扣分项：这是片面的单一效率论述，缺乏价值评判。北威州高考要求必须辩证权衡市场效率与基本法社会国家原则之间的张力！",
+      },
+      {
+        id: "muster-distractor-planned",
+        textDE:
+          "Die Soziale Marktwirtschaft erfordert die flächendeckende Ersetzung des freien Preismechanismus durch staatliche Festpreise, um absolute Verteilungsgerechtigkeit zu erzwingen.",
+        textZH:
+          "社会市场经济要求在全行业以国家统制定价彻底取代自由价格机制，以强制实现绝对的结果均等。",
+        isCorrect: false,
+        explanationDE:
+          "Theoriefehler: Die Soziale Marktwirtschaft basiert auf dem Prinzip »So viel Markt wie möglich, so viel Staat wie nötig«. Preiskontrollen zerstören die Signalfunktion.",
+        explanationZH:
+          "概念性严重错误：德国社会市场经济的基石是‘尽可能多的市场，尽可能少的国家’。全面统制定价会直接摧毁价格的信号与出清职能。",
       },
     ],
     klausurMusterSatzDE: distilled.klausurSatz15NP.musterSatzDE,
@@ -346,6 +380,39 @@ export function compileLessonSteps(
         lightQuiz,
       ],
       flowMode: "concept_light",
+    };
+  }
+
+  // 教学流序列化：针对 markt-sim，将微观供求平衡实验与四大假设拼图串行化为递进 5 步
+  if (questNode.interactiveType === "markt-sim" && distilled.konzeptPuzzle) {
+    const stepPuzzle: LessonStep = {
+      id: `${questNode.id}-step-puzzle`,
+      type: "puzzle",
+      phase: "learn",
+      stepNumber: 3,
+      titleDE: "Schritt 3: 4-Prämissen-Puzzle & Realitäts-Check",
+      titleZH: "第 3 步：四大假设现实对决拼图",
+      promptDE: "Ordne die 4 Modell-Prämissen des vollkommenen Marktes ihren realen Konsequenzen zu.",
+      promptZH: "将完全竞争市场的 4 大理想公理前提与其现实破绽进行精准配对。",
+      xpReward: 30,
+    };
+
+    return {
+      distilled,
+      steps: [
+        stepLecture,
+        stepMicroWorld,
+        stepPuzzle,
+        {
+          ...stepTrap,
+          stepNumber: 4,
+        },
+        {
+          ...stepQuiz,
+          stepNumber: 5,
+        },
+      ],
+      flowMode: "interactive_deep",
     };
   }
 

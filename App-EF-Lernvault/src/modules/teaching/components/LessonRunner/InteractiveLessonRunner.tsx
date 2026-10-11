@@ -11,8 +11,9 @@ import {
   DilemmaBalanceScale,
   LogicBlockBuilder,
   ScenarioDecisionTree,
+  KonzeptPuzzle,
+  MarktgleichgewichtSim,
 } from "../GenericMicroWorlds";
-import { MarktMechanismusSim } from "../../../../components/pedagogy/MarktMechanismusSim";
 import { KinematikSim } from "../../../../components/pedagogy/KinematikSim";
 import { MagischesViereckSim } from "../../../../components/pedagogy/MagischesViereckSim";
 import FormulaScaffold from "../../../../components/pedagogy/FormulaScaffold";
@@ -110,13 +111,12 @@ export const InteractiveLessonRunner: React.FC<InteractiveLessonRunnerProps> = (
   const [showExitConfirm, setShowExitConfirm] = useState(false);
   const [showNoteDrawer, setShowNoteDrawer] = useState(false);
   const [copiedNote, setCopiedNote] = useState(false);
-  const [activeStudyMateProbe, setActiveStudyMateProbe] = useState<
-    "simpler" | "deeper" | "quiz" | null
-  >(null);
-  const [showQuizAnswer, setShowQuizAnswer] = useState(false);
   const [selectedIntuitionChoice, setSelectedIntuitionChoice] = useState<
     "A" | "B" | null
   >(null);
+  const [isMicroWorldCompleted, setIsMicroWorldCompleted] = useState<boolean>(false);
+  const [isPuzzleCompleted, setIsPuzzleCompleted] = useState<boolean>(false);
+  const [completedStepIndices, setCompletedStepIndices] = useState<Set<number>>(new Set());
 
   useEffect(() => {
     if (typeof window !== "undefined" && window.localStorage) {
@@ -150,6 +150,9 @@ export const InteractiveLessonRunner: React.FC<InteractiveLessonRunnerProps> = (
   const currentStep: LessonStep = steps[currentStepIndex] || steps[0];
   const progressPercent = Math.round((currentStepIndex / steps.length) * 100);
 
+  const isMicroWorldGated =
+    currentStep.type === "microworld" && questNode.interactiveType === "markt-sim";
+
   // 选项选择与核验
   const handleSelectOption = (option: LessonOption) => {
     if (isAnswerChecked) return;
@@ -160,10 +163,12 @@ export const InteractiveLessonRunner: React.FC<InteractiveLessonRunnerProps> = (
   // A2 Gentle gating: lecture 步未直觉站队时不推进、不扣 XP（仅门控 lecture，microworld/challenge 不动）
   const handleAdvanceLecture = () => {
     if (currentStep.type === "lecture" && selectedIntuitionChoice === null) return;
-    setActiveStudyMateProbe(null);
-    setShowQuizAnswer(false);
     setSelectedIntuitionChoice(null);
-    setAccumulatedXp((prev) => prev + currentStep.xpReward);
+    setIsMicroWorldCompleted(false);
+    if (!completedStepIndices.has(currentStepIndex)) {
+      setCompletedStepIndices((prev) => new Set(prev).add(currentStepIndex));
+      setAccumulatedXp((prev) => prev + currentStep.xpReward);
+    }
     if (currentStepIndex + 1 < steps.length) {
       setCurrentStepIndex((prev) => prev + 1);
       setSelectedOptionId(null);
@@ -176,13 +181,35 @@ export const InteractiveLessonRunner: React.FC<InteractiveLessonRunnerProps> = (
     }
   };
 
-  // Phase 1 Step 2: 动手探究实验完成，进入 Phase 2 考场挑战
+  // Phase 1 Step 2: 动手探究实验完成，进入后续阶段 (拼图或考场挑战)
   const handleAdvanceMicroWorld = () => {
-    setActiveStudyMateProbe(null);
-    setShowQuizAnswer(false);
+    if (isMicroWorldGated && !isMicroWorldCompleted) return;
     setSelectedIntuitionChoice(null);
     setComboCount((prev) => Math.max(1, prev + 1));
-    setAccumulatedXp((prev) => prev + currentStep.xpReward);
+    if (!completedStepIndices.has(currentStepIndex)) {
+      setCompletedStepIndices((prev) => new Set(prev).add(currentStepIndex));
+      setAccumulatedXp((prev) => prev + currentStep.xpReward);
+    }
+    if (currentStepIndex + 1 < steps.length) {
+      setCurrentStepIndex((prev) => prev + 1);
+      setSelectedOptionId(null);
+      setIsAnswerChecked(false);
+      setIsCorrect(false);
+      setActiveFeedback(null);
+    } else {
+      setIsFinished(true);
+      onComplete(questNode.id, accumulatedXp + currentStep.xpReward, mistakes);
+    }
+  };
+
+  // Phase 1 Step 3: 四大假设拼图完成，推进到 Phase 2 考场挑战
+  const handleAdvancePuzzle = () => {
+    if (!isPuzzleCompleted) return;
+    setComboCount((prev) => Math.max(1, prev + 1));
+    if (!completedStepIndices.has(currentStepIndex)) {
+      setCompletedStepIndices((prev) => new Set(prev).add(currentStepIndex));
+      setAccumulatedXp((prev) => prev + currentStep.xpReward);
+    }
     if (currentStepIndex + 1 < steps.length) {
       setCurrentStepIndex((prev) => prev + 1);
       setSelectedOptionId(null);
@@ -205,6 +232,10 @@ export const InteractiveLessonRunner: React.FC<InteractiveLessonRunnerProps> = (
       handleAdvanceMicroWorld();
       return;
     }
+    if (currentStep.type === "puzzle") {
+      handleAdvancePuzzle();
+      return;
+    }
 
     if (!selectedOptionId) return;
 
@@ -215,7 +246,10 @@ export const InteractiveLessonRunner: React.FC<InteractiveLessonRunnerProps> = (
     if (selectedOpt.isCorrect) {
       setIsCorrect(true);
       setComboCount((prev) => prev + 1);
-      setAccumulatedXp((prev) => prev + currentStep.xpReward);
+      if (!completedStepIndices.has(currentStepIndex)) {
+        setCompletedStepIndices((prev) => new Set(prev).add(currentStepIndex));
+        setAccumulatedXp((prev) => prev + currentStep.xpReward);
+      }
       setActiveFeedback(
         lang === "de" ? selectedOpt.explanationDE : selectedOpt.explanationZH
       );
@@ -237,8 +271,6 @@ export const InteractiveLessonRunner: React.FC<InteractiveLessonRunnerProps> = (
 
   // 步进到下一步或结算
   const handleNextStep = () => {
-    setActiveStudyMateProbe(null);
-    setShowQuizAnswer(false);
     setSelectedIntuitionChoice(null);
     if (currentStepIndex + 1 < steps.length) {
       setCurrentStepIndex((prev) => prev + 1);
@@ -247,9 +279,20 @@ export const InteractiveLessonRunner: React.FC<InteractiveLessonRunnerProps> = (
       setIsCorrect(false);
       setActiveFeedback(null);
     } else {
-      // 5 步全部达成，进入胜利结算屏
+      // 全部达成，进入胜利结算屏
       setIsFinished(true);
       onComplete(questNode.id, accumulatedXp, mistakes);
+    }
+  };
+
+  // 允许随时回退到上一步查看
+  const handlePrevStep = () => {
+    if (currentStepIndex > 0) {
+      setCurrentStepIndex((prev) => prev - 1);
+      setSelectedOptionId(null);
+      setIsAnswerChecked(false);
+      setIsCorrect(false);
+      setActiveFeedback(null);
     }
   };
 
@@ -268,9 +311,10 @@ export const InteractiveLessonRunner: React.FC<InteractiveLessonRunnerProps> = (
     setIsAnswerChecked(false);
     setIsCorrect(false);
     setActiveFeedback(null);
-    setActiveStudyMateProbe(null);
-    setShowQuizAnswer(false);
     setShowNoteDrawer(false);
+    setIsMicroWorldCompleted(false);
+    setIsPuzzleCompleted(false);
+    setCompletedStepIndices(new Set());
     setComboCount(0);
     setAccumulatedXp(0);
     setMistakes([]);
@@ -280,6 +324,16 @@ export const InteractiveLessonRunner: React.FC<InteractiveLessonRunnerProps> = (
   // 动态渲染微世界（A3: 按 interactiveType 精确映射领域仿真；highlighter/tangent-slider/balance 保持现状）
   const renderEmbeddedMicroWorld = () => {
     switch (questNode.interactiveType as string) {
+      case "konzept_puzzle":
+      case "puzzle":
+        return (
+          <KonzeptPuzzle
+            puzzleData={distilled.konzeptPuzzle}
+            title={questNode.title}
+            lang={lang}
+            fach={effectiveFach}
+          />
+        );
       case "dilemma_balance":
       case "ethik-waage":
         return <DilemmaBalanceScale title={questNode.title} lang={lang} />;
@@ -289,7 +343,12 @@ export const InteractiveLessonRunner: React.FC<InteractiveLessonRunnerProps> = (
       case "dilemma-theatre":
         return <ScenarioDecisionTree title={questNode.title} lang={lang} />;
       case "markt-sim":
-        return <MarktMechanismusSim lang={lang} />;
+        return (
+          <MarktgleichgewichtSim
+            lang={lang}
+            onMissionComplete={(completed) => setIsMicroWorldCompleted(completed)}
+          />
+        );
       case "kinematik":
         return <KinematikSim lang={lang} />;
       case "magisches-viereck":
@@ -305,6 +364,16 @@ export const InteractiveLessonRunner: React.FC<InteractiveLessonRunnerProps> = (
       case "variable_slider":
       case "tangent-slider":
       default:
+        if (distilled.konzeptPuzzle) {
+          return (
+            <KonzeptPuzzle
+              puzzleData={distilled.konzeptPuzzle}
+              title={questNode.title}
+              lang={lang}
+              fach={effectiveFach}
+            />
+          );
+        }
         return <VariableSliderBox title={questNode.title} lang={lang} />;
     }
   };
@@ -326,6 +395,8 @@ export const InteractiveLessonRunner: React.FC<InteractiveLessonRunnerProps> = (
       </div>
     );
   }
+
+  const containerMaxWidth = currentStep.type === "lecture" ? "max-w-7xl" : "max-w-4xl";
 
   return (
     <div className="fixed inset-0 z-50 bg-[var(--paper)] text-[var(--ink)] flex flex-col justify-between overflow-hidden">
@@ -435,10 +506,10 @@ export const InteractiveLessonRunner: React.FC<InteractiveLessonRunnerProps> = (
       </header>
 
       {/* 中间核心交互卡片工作区 */}
-      <main className="flex-1 overflow-y-auto px-4 sm:px-8 py-6 max-w-2xl mx-auto w-full flex flex-col justify-start">
-        <div className="border border-[var(--line)] p-5 sm:p-7 bg-[var(--paper)]">
+      <main className="flex-1 overflow-y-auto px-3 sm:px-8 pt-3 sm:pt-4 pb-5 sm:pb-6 w-full flex flex-col justify-start">
+        <div className={`${containerMaxWidth} mx-auto w-full border border-[var(--line)] p-3.5 sm:p-5 bg-[var(--paper)]`}>
           {/* 步骤类别徽章与阶段说明 */}
-          <div className="flex items-center justify-between mb-3 border-b border-[var(--line)] pb-2">
+          <div className="flex items-center justify-between mb-2.5 border-b border-[var(--line)] pb-1.5">
             <div className="flex items-center gap-2">
               <span className="font-mono text-[10px] uppercase tracking-wider px-1.5 py-0.5 bg-[var(--ink)] text-[var(--paper)] font-bold">
                 {currentStep.phase === "learn"
@@ -446,6 +517,10 @@ export const InteractiveLessonRunner: React.FC<InteractiveLessonRunnerProps> = (
                     ? lang === "de"
                       ? "Theorie-Vorlesung"
                       : "新知精讲"
+                    : currentStep.type === "puzzle"
+                    ? lang === "de"
+                      ? "Konzept-Puzzle"
+                      : "概念拼图"
                     : lang === "de"
                     ? "Mikrowelt-Labor"
                     : "动手实验"
@@ -463,403 +538,524 @@ export const InteractiveLessonRunner: React.FC<InteractiveLessonRunnerProps> = (
           </div>
 
           {/* 核心标题引导语 */}
-          <h3 className="text-base sm:text-lg font-bold mb-4 tracking-tight leading-snug">
+          <h3 className={`font-bold tracking-tight leading-snug ${currentStep.type === "microworld" ? "text-xs sm:text-sm mb-2 text-[var(--ink-muted)] font-mono" : "text-base sm:text-lg mb-4"}`}>
             {lang === "de" ? currentStep.promptDE : currentStep.promptZH}
           </h3>
 
-          {/* 1. 若为第一阶段：新知精讲与直觉站队微课 (Phase 1 Intuitions-Check) */}
+          {/* 1. 若为第一阶段：直觉碰撞与场景博弈 (Phase 1 Intuitions-Konflikt: Desktop-Split-Workbench) */}
           {currentStep.type === "lecture" && currentStep.lecturePayload && (() => {
             const dilemma = currentStep.lecturePayload.intuitionDilemma;
+            const scenarioText = dilemma
+              ? (lang === "de" ? dilemma.scenarioDE : dilemma.scenarioZH)
+              : (currentStep.lecturePayload.storyHook
+                  ? (lang === "de" ? currentStep.lecturePayload.storyHook.scenarioDE : currentStep.lecturePayload.storyHook.scenarioZH)
+                  : (lang === "de" ? currentStep.promptDE : currentStep.promptZH));
+            const questionText = dilemma
+              ? (lang === "de" ? dilemma.questionDE : dilemma.questionZH)
+              : (lang === "de" ? currentStep.promptDE : currentStep.promptZH);
+            const isMarketDilemma =
+              questNode.title.toLowerCase().includes("markt") ||
+              (effectiveFach === "SoWi" && (questNode.matchedToolId === "markt-sim" || questNode.title.toLowerCase().includes("preis")));
+
             return (
-              <div className="flex flex-col gap-4 text-xs leading-relaxed">
-                {/* A. 战役情境与角色身份标签 (Story Hook Context) */}
-                {currentStep.lecturePayload.storyHook && (
-                  <div className="flex items-center justify-between pb-2 border-b border-[var(--line)]">
-                    <span className="font-mono text-[10px] uppercase font-bold px-2 py-0.5 bg-[var(--ink)] text-[var(--paper)]">
-                      [ {lang === "de" ? "Story-Szenario & Rolle" : "战役情境与角色代入"} ]
-                    </span>
-                    <span className="font-mono text-[10px] font-bold text-[var(--ink)] border border-[var(--line)] px-2 py-0.5 bg-[var(--paper)]">
-                      {lang === "de"
-                        ? currentStep.lecturePayload.storyHook.roleDE
-                        : currentStep.lecturePayload.storyHook.roleZH}
-                    </span>
-                  </div>
-                )}
-
-                {/* B. 直觉站队场景与两难抉择 (Schritt 1: Intuitions-Check) */}
-                <div className="p-4 border-l-4 border-[var(--ink)] bg-[var(--paper-subtle)]">
-                  <div className="font-mono text-[10px] uppercase font-bold text-[var(--ink-muted)] mb-1.5 flex items-center justify-between">
-                    <span>
-                      [ {lang === "de" ? "Intuitions-Check · Reales Szenario" : "直觉站队 · 真实博弈情境"} ]
-                    </span>
-                    <span className="text-[10px] font-mono text-[var(--ink-muted)]">
-                      {lang === "de" ? "Entscheidung treffen" : "10 秒直觉站队"}
-                    </span>
-                  </div>
-                  <p className="text-xs sm:text-sm font-serif text-[var(--ink)] leading-relaxed mb-3">
-                    {dilemma
-                      ? (lang === "de" ? dilemma.scenarioDE : dilemma.scenarioZH)
-                      : (currentStep.lecturePayload.storyHook
-                          ? (lang === "de" ? currentStep.lecturePayload.storyHook.scenarioDE : currentStep.lecturePayload.storyHook.scenarioZH)
-                          : (lang === "de" ? currentStep.promptDE : currentStep.promptZH))}
-                  </p>
-                  <div className="font-bold text-xs sm:text-sm text-[var(--ink)]">
-                    {dilemma
-                      ? (lang === "de" ? dilemma.questionDE : dilemma.questionZH)
-                      : (lang === "de" ? currentStep.promptDE : currentStep.promptZH)}
-                  </div>
-                </div>
-
-                {/* C. 两个极简直觉选项 (Option A vs Option B) */}
-                <div className="grid grid-cols-1 gap-2.5">
-                  <button
-                    type="button"
-                    onClick={() => setSelectedIntuitionChoice("A")}
-                    className={`text-left p-3.5 border transition-all cursor-pointer ${
-                      selectedIntuitionChoice === "A"
-                        ? "border-2 border-[var(--ink)] bg-[var(--paper)] font-medium"
-                        : "border-[var(--line)] bg-[var(--paper-subtle)] hover:border-[var(--ink)] text-[var(--ink)]"
-                    }`}
-                  >
-                    <div className="flex items-start gap-2.5">
-                      <span
-                        className={`font-mono text-xs font-bold px-2 py-0.5 border shrink-0 ${
-                          selectedIntuitionChoice === "A"
-                            ? "bg-[var(--ink)] text-[var(--paper)] border-[var(--ink)]"
-                            : "bg-[var(--paper)] text-[var(--ink)] border-[var(--line)]"
-                        }`}
-                      >
-                        [ A ]
-                      </span>
-                      <span className="text-xs sm:text-sm leading-relaxed text-[var(--ink)]">
-                        {dilemma
-                          ? (lang === "de" ? dilemma.choiceA.textDE : dilemma.choiceA.textZH)
-                          : "Option A"}
-                      </span>
-                    </div>
-                  </button>
-
-                  <button
-                    type="button"
-                    onClick={() => setSelectedIntuitionChoice("B")}
-                    className={`text-left p-3.5 border transition-all cursor-pointer ${
-                      selectedIntuitionChoice === "B"
-                        ? "border-2 border-[var(--ink)] bg-[var(--paper)] font-medium"
-                        : "border-[var(--line)] bg-[var(--paper-subtle)] hover:border-[var(--ink)] text-[var(--ink)]"
-                    }`}
-                  >
-                    <div className="flex items-start gap-2.5">
-                      <span
-                        className={`font-mono text-xs font-bold px-2 py-0.5 border shrink-0 ${
-                          selectedIntuitionChoice === "B"
-                            ? "bg-[var(--ink)] text-[var(--paper)] border-[var(--ink)]"
-                            : "bg-[var(--paper)] text-[var(--ink)] border-[var(--line)]"
-                        }`}
-                      >
-                        [ B ]
-                      </span>
-                      <span className="text-xs sm:text-sm leading-relaxed text-[var(--ink)]">
-                        {dilemma
-                          ? (lang === "de" ? dilemma.choiceB.textDE : dilemma.choiceB.textZH)
-                          : "Option B"}
-                      </span>
-                    </div>
-                  </button>
-                </div>
-
-                {/* D. 选完即时浮出解析卡片 (Instant Mechanism Revelation Card) */}
-                {selectedIntuitionChoice && dilemma && (
-                  <div className="p-4 border-2 border-[var(--ink)] bg-[var(--paper)] animate-fadeIn">
-                    <div className="flex items-center justify-between mb-2">
-                      <span className="font-mono text-[10px] uppercase font-bold px-1.5 py-0.5 bg-[var(--ink)] text-[var(--paper)]">
-                        [ {lang === "de" ? "Wirkungsmechanismus & KLP-Erkenntnis" : "真实机制剖析 · 考纲因果洞察"} ]
+              <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start animate-fadeIn">
+                {/* 左栏 (45%): 微观博弈场域与直觉站队卡片 */}
+                <div className="lg:col-span-5 flex flex-col gap-5">
+                  <div className="space-y-3">
+                    <div className="flex items-center gap-2">
+                      <span className="font-mono text-[9px] uppercase font-bold px-1.5 py-0.5 bg-[var(--ink)] text-[var(--paper)]">
+                        {lang === "de" ? "Reales Alltags-Dilemma" : "真实生活微观博弈"}
                       </span>
                       <span className="font-mono text-[10px] text-[var(--ink-muted)]">
+                        {lang === "de" ? "Wähle deine intuitive Haltung:" : "凭直觉做出你的抉择："}
+                      </span>
+                    </div>
+
+                    <p className="text-sm font-serif text-[var(--ink)] leading-relaxed">
+                      {scenarioText}
+                    </p>
+
+                    <div className="font-bold text-sm text-[var(--ink)] border-l-2 border-[var(--ink)] pl-3 py-0.5">
+                      {questionText}
+                    </div>
+                  </div>
+
+                  {/* 两个大尺寸直觉卡片 (Option A vs Option B) */}
+                  <div className="grid grid-cols-1 gap-3">
+                    <button
+                      type="button"
+                      onClick={() => setSelectedIntuitionChoice("A")}
+                      className={`text-left p-4 border-2 transition-all cursor-pointer ${
+                        selectedIntuitionChoice === "A"
+                          ? "border-[var(--ink)] bg-[var(--paper)] font-medium"
+                          : "border-[var(--line)] bg-[var(--paper-subtle)] hover:border-[var(--ink)] text-[var(--ink)]"
+                      }`}
+                    >
+                      <div className="flex items-start gap-3">
+                        <span
+                          className={`font-mono text-xs font-bold px-2 py-0.5 border shrink-0 ${
+                            selectedIntuitionChoice === "A"
+                              ? "bg-[var(--ink)] text-[var(--paper)] border-[var(--ink)]"
+                              : "bg-[var(--paper)] text-[var(--ink)] border-[var(--line)]"
+                          }`}
+                        >
+                          [ A ]
+                        </span>
+                        <span className="text-xs sm:text-sm leading-relaxed text-[var(--ink)]">
+                          {dilemma
+                            ? (lang === "de" ? dilemma.choiceA.textDE : dilemma.choiceA.textZH)
+                            : "Option A"}
+                        </span>
+                      </div>
+                    </button>
+
+                    <button
+                      type="button"
+                      onClick={() => setSelectedIntuitionChoice("B")}
+                      className={`text-left p-4 border-2 transition-all cursor-pointer ${
+                        selectedIntuitionChoice === "B"
+                          ? "border-[var(--ink)] bg-[var(--paper)] font-medium"
+                          : "border-[var(--line)] bg-[var(--paper-subtle)] hover:border-[var(--ink)] text-[var(--ink)]"
+                      }`}
+                    >
+                      <div className="flex items-start gap-3">
+                        <span
+                          className={`font-mono text-xs font-bold px-2 py-0.5 border shrink-0 ${
+                            selectedIntuitionChoice === "B"
+                              ? "bg-[var(--ink)] text-[var(--paper)] border-[var(--ink)]"
+                              : "bg-[var(--paper)] text-[var(--ink)] border-[var(--line)]"
+                          }`}
+                        >
+                          [ B ]
+                        </span>
+                        <span className="text-xs sm:text-sm leading-relaxed text-[var(--ink)]">
+                          {dilemma
+                            ? (lang === "de" ? dilemma.choiceB.textDE : dilemma.choiceB.textZH)
+                            : "Option B"}
+                        </span>
+                      </div>
+                    </button>
+                  </div>
+                </div>
+
+                {/* 右栏 (55%): Tufte 纯黑白学术解构工作台 (Split Workbench) */}
+                <div className="lg:col-span-7 flex flex-col gap-4 border-t lg:border-t-0 lg:border-l border-[var(--line)] pt-6 lg:pt-0 pl-0 lg:pl-8">
+                  {!selectedIntuitionChoice ? (
+                    /* 待命待激活线框态 (Dormant State) */
+                    <div className="p-8 border border-dashed border-[var(--line)] bg-[var(--paper-subtle)] text-center flex flex-col items-center justify-center min-h-[360px] gap-3">
+                      <div className="font-mono text-xs uppercase tracking-widest text-[var(--ink-muted)] font-bold">
+                        [ {lang === "de" ? "Theorie-Dekodierung inaktiv" : "理论解析工作台待命"} ]
+                      </div>
+                      <p className="font-serif text-sm text-[var(--ink-muted)] max-w-md leading-relaxed">
                         {lang === "de"
-                          ? `Standpunkt [ ${selectedIntuitionChoice} ] gewählt`
-                          : `已选择立场 [ ${selectedIntuitionChoice} ]`}
-                      </span>
+                          ? "Wähle links deine Position zu Option [ A ] oder [ B ], um das ökonomische Kausaldiagramm, die 5 Prämissen und den Fachsprache-Musterbaustein zu aktivieren."
+                          : "在左侧选定你的初始立场 [ A ] 或 [ B ]，即刻激活微观需求弹性曲线、公理化前提校验与德语会考学科规范金句。"}
+                      </p>
                     </div>
-
-                    {/* 针对立场的即时因果反馈 */}
-                    <div className="text-xs leading-relaxed text-[var(--ink)] font-semibold mb-3 pb-2.5 border-b border-[var(--line)]">
-                      {selectedIntuitionChoice === "A"
-                        ? (lang === "de" ? dilemma.choiceA.reactionDE : dilemma.choiceA.reactionZH)
-                        : (lang === "de" ? dilemma.choiceB.reactionDE : dilemma.choiceB.reactionZH)}
-                    </div>
-
-                    {/* 费曼本质因果与考纲核心逻辑 */}
-                    <div className="flex flex-col gap-2.5 text-xs">
-                      <div>
-                        <span className="font-mono text-[10px] uppercase font-bold text-[var(--ink-muted)] block mb-0.5">
-                          [ {lang === "de" ? "Feynman-Klartext · Die Essenz" : "费曼大白话 · 一句话本质"} ]:
+                  ) : (
+                    /* 激活后的 Tufte 墨黑学术解构看板 */
+                    <div className="flex flex-col gap-4 animate-fadeIn">
+                      {/* 1. 学术结果与立场标签 */}
+                      <div className="flex items-center justify-between pb-2 border-b border-[var(--line)]">
+                        <span className="font-mono text-[10px] uppercase font-bold px-2 py-0.5 bg-[var(--ink)] text-[var(--paper)]">
+                          {selectedIntuitionChoice === "B"
+                            ? (lang === "de" ? "[ Fachlich Präzise ] Mengenanpasser-Logik" : "[ 严密推导 ] 价格接受者逻辑闭环")
+                            : (lang === "de" ? "[ Kognitive Reibung ] Vollkommene Preiselastizität" : "[ 认知交锋 ] 完全价格弹性悖论")}
                         </span>
-                        <p className="text-[11px] sm:text-xs text-[var(--ink)] leading-relaxed font-serif">
-                          {lang === "de" ? dilemma.mechanismTakeawayDE : dilemma.mechanismTakeawayZH}
-                        </p>
-                      </div>
-
-                      <div>
-                        <span className="font-mono text-[10px] uppercase font-bold text-[var(--ink-muted)] block mb-0.5">
-                          [ {lang === "de" ? "KLP-Kernbegriffe & Prüfungskompetenz" : "考纲硬核 · 踩分关键词"} ]:
+                        <span className="font-mono text-[10px] text-[var(--ink-muted)]">
+                          {selectedIntuitionChoice === "B" ? "E = ∞ · P* = 10 €" : "ΔP > 0 → q = 0"}
                         </span>
-                        <p className="font-mono text-[11px] text-[var(--ink)]">
-                          {lang === "de" ? dilemma.klpCoreLogicDE : dilemma.klpCoreLogicZH}
+                      </div>
+
+                      {/* 2. 即时因果深度推演文本 (通俗易懂精炼解构) */}
+                      <div className="p-3 bg-[var(--paper-subtle)] border border-[var(--line)]">
+                        <div className="font-mono text-[10px] font-bold uppercase text-[var(--ink-muted)] mb-1">
+                          {lang === "de" ? "Deduktions-Analyse:" : "机制推导剖析："}
+                        </div>
+                        <p className="text-xs sm:text-sm font-medium text-[var(--ink)] leading-relaxed">
+                          {dilemma
+                            ? (selectedIntuitionChoice === "A"
+                                ? (lang === "de" ? dilemma.choiceA.reactionDE : dilemma.choiceA.reactionZH)
+                                : (lang === "de" ? dilemma.choiceB.reactionDE : dilemma.choiceB.reactionZH))
+                            : ""}
                         </p>
                       </div>
-                    </div>
-                  </div>
-                )}
 
-                {/* E. 辩证双轨对照 (Zwei Brillen / Pro vs Contra) */}
-                {currentStep.lecturePayload.twoBrillen && (
-                  <div className="border border-[var(--line)] p-3 bg-[var(--paper-subtle)]">
-                    <div className="font-mono text-[10px] uppercase font-bold text-[var(--ink-muted)] mb-2 flex items-center justify-between">
-                      <span>
-                        [ {lang === "de" ? "Zwei Brillen · Dialektischer Kontrast" : "辩证双轨 · 两副眼镜视角"} ]
-                      </span>
-                      <span className="text-[10px] font-mono text-[var(--ink-muted)]">
-                        {lang === "de" ? "Perspektivenwechsel" : "正反辩证"}
-                      </span>
-                    </div>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-[11px]">
-                      <div className="p-2 border border-[var(--line)] bg-[var(--paper)]">
-                        <div className="font-bold mb-0.5">
-                          {lang === "de"
-                            ? currentStep.lecturePayload.twoBrillen.perspectiveA.titleDE
-                            : currentStep.lecturePayload.twoBrillen.perspectiveA.titleZH}
-                        </div>
-                        <div className="leading-snug">
-                          {lang === "de"
-                            ? currentStep.lecturePayload.twoBrillen.perspectiveA.corePointDE
-                            : currentStep.lecturePayload.twoBrillen.perspectiveA.corePointZH}
-                        </div>
-                      </div>
-                      <div className="p-2 border border-[var(--line)] bg-[var(--paper)]">
-                        <div className="font-bold mb-0.5">
-                          {lang === "de"
-                            ? currentStep.lecturePayload.twoBrillen.perspectiveB.titleDE
-                            : currentStep.lecturePayload.twoBrillen.perspectiveB.titleZH}
-                        </div>
-                        <div className="leading-snug">
-                          {lang === "de"
-                            ? currentStep.lecturePayload.twoBrillen.perspectiveB.corePointDE
-                            : currentStep.lecturePayload.twoBrillen.perspectiveB.corePointZH}
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                )}
-
-                {/* F. Study-Mate 互动调频探针 (Adaptive Probes: [Einfacher] [Vertiefung] [Check]) */}
-                {currentStep.lecturePayload.studyMateProbes && (
-                  <div className="border border-[var(--line)] p-3 bg-[var(--paper)]">
-                    <div className="font-mono text-[10px] uppercase font-bold text-[var(--ink)] mb-2 flex items-center justify-between">
-                      <span>
-                        [ Study-Mate {lang === "de" ? "Interaktive Sonden" : "互动调频探针"} ]
-                      </span>
-                      <span className="text-[10px] font-mono text-[var(--ink-muted)]">
-                        {lang === "de" ? "Wähle deine Ebene" : "按需点击探究"}
-                      </span>
-                    </div>
-                    <div className="flex flex-wrap items-center gap-2 mb-2">
-                      <button
-                        type="button"
-                        onClick={() => {
-                          setActiveStudyMateProbe(
-                            activeStudyMateProbe === "simpler" ? null : "simpler"
-                          );
-                        }}
-                        className={`px-2.5 py-1 text-xs font-mono border transition-all cursor-pointer ${
-                          activeStudyMateProbe === "simpler"
-                            ? "bg-[var(--ink)] text-[var(--paper)] border-[var(--ink)] font-bold"
-                            : "bg-[var(--paper-subtle)] border-[var(--line)] hover:border-[var(--ink)] text-[var(--ink)]"
-                        }`}
-                      >
-                        [ {lang === "de" ? "Einfacher / Klartext" : "这里没懂 · 费曼白话"} ]
-                      </button>
-                      <button
-                        type="button"
-                        onClick={() => {
-                          setActiveStudyMateProbe(
-                            activeStudyMateProbe === "deeper" ? null : "deeper"
-                          );
-                        }}
-                        className={`px-2.5 py-1 text-xs font-mono border transition-all cursor-pointer ${
-                          activeStudyMateProbe === "deeper"
-                            ? "bg-[var(--ink)] text-[var(--paper)] border-[var(--ink)] font-bold"
-                            : "bg-[var(--paper-subtle)] border-[var(--line)] hover:border-[var(--ink)] text-[var(--ink)]"
-                        }`}
-                      >
-                        [ {lang === "de" ? "Vertiefung / Edge Case" : "太简单了 · 极客反例"} ]
-                      </button>
-                      <button
-                        type="button"
-                        onClick={() => {
-                          if (activeStudyMateProbe === "quiz") {
-                            setActiveStudyMateProbe(null);
-                            setShowQuizAnswer(false);
-                          } else {
-                            setActiveStudyMateProbe("quiz");
-                            setShowQuizAnswer(false);
-                          }
-                        }}
-                        className={`px-2.5 py-1 text-xs font-mono border transition-all cursor-pointer ${
-                          activeStudyMateProbe === "quiz"
-                            ? "bg-[var(--ink)] text-[var(--paper)] border-[var(--ink)] font-bold"
-                            : "bg-[var(--paper-subtle)] border-[var(--line)] hover:border-[var(--ink)] text-[var(--ink)]"
-                        }`}
-                      >
-                        [ {lang === "de" ? "Check / Schnelltest" : "考考我 · 现场快测"} ]
-                      </button>
-                    </div>
-
-                    {/* 探针展开卡片 */}
-                    {activeStudyMateProbe === "simpler" && (
-                      <div className="p-3 border border-[var(--line)] bg-[var(--paper-subtle)] text-xs leading-relaxed animate-fadeIn">
-                        <div className="font-bold font-mono text-[10px] text-[var(--ink-muted)] mb-1">
-                          [ {lang === "de" ? "Feynman-Abstraktion senken" : "通俗生活类比与大白话"} ]
-                        </div>
-                        <p className="text-[11px] text-[var(--ink)] font-medium leading-relaxed">
-                          {lang === "de"
-                            ? currentStep.lecturePayload.studyMateProbes.simplerHintDE
-                            : currentStep.lecturePayload.studyMateProbes.simplerHintZH}
-                        </p>
-                      </div>
-                    )}
-
-                    {activeStudyMateProbe === "deeper" && (
-                      <div className="p-3 border border-[var(--line)] bg-[var(--paper-subtle)] text-xs leading-relaxed animate-fadeIn">
-                        <div className="font-bold font-mono text-[10px] text-[var(--ink-muted)] mb-1">
-                          [ {lang === "de" ? "Kritischer Grenzfall & Paradoxon" : "现实极端反例与批判质问"} ]
-                        </div>
-                        <p className="text-[11px] text-[var(--ink)] font-medium leading-relaxed">
-                          {lang === "de"
-                            ? currentStep.lecturePayload.studyMateProbes.deeperChallengeDE
-                            : currentStep.lecturePayload.studyMateProbes.deeperChallengeZH}
-                        </p>
-                      </div>
-                    )}
-
-                    {activeStudyMateProbe === "quiz" && (
-                      <div className="p-3 border border-[var(--line)] bg-[var(--paper-subtle)] text-xs leading-relaxed animate-fadeIn">
-                        <div className="font-bold font-mono text-[10px] text-[var(--ink-muted)] mb-1">
-                          [ {lang === "de" ? "Sofortige Verständniskontrolle" : "核心得分点现场快测"} ]
-                        </div>
-                        <p className="mb-2 text-[var(--ink)] font-semibold">
-                          {lang === "de"
-                            ? currentStep.lecturePayload.studyMateProbes.quizQuestionDE
-                            : currentStep.lecturePayload.studyMateProbes.quizQuestionZH}
-                        </p>
-                        {!showQuizAnswer ? (
-                          <button
-                            type="button"
-                            onClick={() => setShowQuizAnswer(true)}
-                            className="px-2.5 py-1 text-[11px] font-mono border border-[var(--ink)] bg-[var(--paper)] hover:bg-[var(--ink)] hover:text-[var(--paper)] cursor-pointer transition-colors"
-                          >
-                            [ {lang === "de" ? "Antwort einblenden" : "查看参考答案与关键采分点"} ]
-                          </button>
-                        ) : (
-                          <div className="border-t border-[var(--line)] pt-2 text-[11px] text-[var(--ink)]">
-                            <span className="font-bold font-mono text-[10px]">
-                              [ {lang === "de" ? "Musterantwort: " : "标准答法: "} ]
-                            </span>
-                            <p className="mt-1">
+                      {/* 3. 针对市场主题的水平需求弹性曲线 SVG 图表 */}
+                      {isMarketDilemma && (
+                        <div className="border border-[var(--line)] bg-[var(--paper)] p-3">
+                          <div className="flex items-center justify-between pb-1 mb-2 border-b border-[var(--line)]">
+                            <span className="font-mono text-[10px] font-bold uppercase tracking-wider text-[var(--ink)]">
                               {lang === "de"
-                                ? currentStep.lecturePayload.studyMateProbes.quizAnswerDE
-                                : currentStep.lecturePayload.studyMateProbes.quizAnswerZH}
+                                ? "Individuelle Preisabsatzfunktion (E = ∞)"
+                                : "个体需求曲线：完全价格弹性 (E = ∞)"}
+                            </span>
+                            <span className="font-mono text-[9px] text-[var(--ink-muted)]">
+                              {"P = 10 € → q ∈ [0, q_max] | P > 10 € → q = 0"}
+                            </span>
+                          </div>
+
+                          <div className="w-full flex justify-center py-1">
+                            <svg
+                              viewBox="0 0 460 170"
+                              className="w-full max-w-lg h-auto text-[var(--ink)]"
+                              style={{ transformOrigin: "230px 85px", transformBox: "view-box" }}
+                              aria-label="Vollkommen elastische Nachfragekurve"
+                            >
+                              {/* 坐标轴 */}
+                              <line x1="50" y1="140" x2="430" y2="140" stroke="currentColor" strokeWidth="1.5" />
+                              <line x1="50" y1="140" x2="50" y2="20" stroke="currentColor" strokeWidth="1.5" />
+                              {/* 轴箭头 */}
+                              <polygon points="430,137 438,140 430,143" fill="currentColor" />
+                              <polygon points="47,20 50,12 53,20" fill="currentColor" />
+                              {/* 轴标签 */}
+                              <text x="30" y="24" fontSize="11" fontFamily="serif" fill="currentColor">P (€)</text>
+                              <text x="390" y="155" fontSize="11" fontFamily="serif" fill="currentColor">q (Menge)</text>
+
+                              {/* 均衡价 P* = 10 € 刻度与虚线辅助 */}
+                              <line x1="45" y1="80" x2="50" y2="80" stroke="currentColor" strokeWidth="1.5" />
+                              <text x="10" y="84" fontSize="10" fontFamily="monospace" fill="currentColor">P*=10€</text>
+                              
+                              {/* 水平完全弹性需求线 (E = ∞) */}
+                              <line
+                                x1="50"
+                                y1="80"
+                                x2="410"
+                                y2="80"
+                                stroke="currentColor"
+                                strokeWidth="2.5"
+                                style={{ transformOrigin: "230px 80px", transformBox: "view-box" }}
+                              />
+                              <text x="180" y="72" fontSize="10" fontFamily="sans-serif" fontWeight="bold" fill="currentColor">
+                                Nachfrage d (E = ∞)
+                              </text>
+
+                              {/* 提价 P = 11 € 时的骤降点 */}
+                              <line x1="45" y1="45" x2="50" y2="45" stroke="currentColor" strokeWidth="1.5" />
+                              <text x="22" y="49" fontSize="10" fontFamily="monospace" fill="currentColor">11€</text>
+                              <circle cx="50" cy="45" r="4" fill="currentColor" />
+                              <line x1="50" y1="45" x2="140" y2="45" stroke="currentColor" strokeWidth="1" strokeDasharray="3,3" />
+                              
+                              {/* 标注跌落至 0 */}
+                              <text x="148" y="48" fontSize="10" fontFamily="sans-serif" fill="currentColor">
+                                {"P = 11 € → q = 0 (Kein Absatz)"}
+                              </text>
+                            </svg>
+                          </div>
+                          <div className="text-[10px] font-mono text-[var(--ink-muted)] pt-1 border-t border-[var(--line)]">
+                            {lang === "de"
+                              ? "Erkenntnis: Für den einzelnen Mengenanpasser verläuft die Nachfragekurve horizontal. Jede Preiserhöhung führt zum Totalverlust des Marktes."
+                              : "核心结论：对于单个微观商贩，需求曲线呈绝对水平状态。任何私自涨价将导致客户全部流失，销量归零。"}
+                          </div>
+                        </div>
+                      )}
+
+                      {/* 4. 针对市场主题的 5 大公理前提校验清单 */}
+                      {isMarketDilemma && (
+                        <div className="border border-[var(--line)] p-3 bg-[var(--paper)] space-y-2">
+                          <div className="flex items-center justify-between pb-1 border-b border-[var(--line)]">
+                            <span className="font-mono text-[10px] font-bold uppercase tracking-wider text-[var(--ink)]">
+                              {lang === "de" ? "5 Konstitutive Modell-Prämissen" : "完全竞争市场 5 大公理前提"}
+                            </span>
+                            <span className="font-mono text-[9px] px-1.5 py-0.2 border border-[var(--ink)]">
+                              KLP NRW EF
+                            </span>
+                          </div>
+                          <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-[11px] font-mono">
+                            <div className="p-1.5 border border-[var(--line)] bg-[var(--paper-subtle)]">
+                              <span className="font-bold text-[var(--ink)]">[1] Homogene Güter:</span>
+                              <p className="text-[10px] text-[var(--ink-muted)]">
+                                {lang === "de" ? "Keine qualitativen oder sachlichen Unterschiede" : "完全同质无任何品质与包装差别"}
+                              </p>
+                            </div>
+                            <div className="p-1.5 border border-[var(--line)] bg-[var(--paper-subtle)]">
+                              <span className="font-bold text-[var(--ink)]">[2] Markttransparenz:</span>
+                              <p className="text-[10px] text-[var(--ink-muted)]">
+                                {lang === "de" ? "Vollständige Echtzeit-Information über alle Preise" : "所有参与者享有完全实时的全市场价格信息"}
+                              </p>
+                            </div>
+                            <div className="p-1.5 border border-[var(--line)] bg-[var(--paper-subtle)]">
+                              <span className="font-bold text-[var(--ink)]">[3] Keine Präferenzen:</span>
+                              <p className="text-[10px] text-[var(--ink-muted)]">
+                                {lang === "de" ? "Weder persönliche, räumliche noch zeitliche Vorlieben" : "无任何个人人情、地理距离或等待时间偏好"}
+                              </p>
+                            </div>
+                            <div className="p-1.5 border border-[var(--line)] bg-[var(--paper-subtle)]">
+                              <span className="font-bold text-[var(--ink)]">[4] Sofortige Reaktion:</span>
+                              <p className="text-[10px] text-[var(--ink-muted)]">
+                                {lang === "de" ? "Unendlich schnelle Anpassungsgeschwindigkeit der Akteure" : "买卖双方具备无限快的瞬时迁移与反应速度"}
+                              </p>
+                            </div>
+                          </div>
+                          <div className="p-1.5 border border-[var(--line)] bg-[var(--paper-subtle)] text-[11px] font-mono">
+                            <span className="font-bold text-[var(--ink)]">[5] Freier Marktzutritt & Atomistische Struktur:</span>
+                            <p className="text-[10px] text-[var(--ink-muted)]">
+                              {lang === "de" ? "Hunderte Kleinstanbieter ohne Marktmacht als reine Preisnehmer" : "海量小商贩无任何垄断势力，完全充当价格接受者与产量调整者"}
                             </p>
                           </div>
-                        )}
-                      </div>
-                    )}
-                  </div>
-                )}
+                        </div>
+                      )}
+
+                      {/* 5. 德国文理高中会考标准应试金句 (NRW Klausur-Musterbaustein) */}
+                      {dilemma && (
+                        <div className="border-2 border-[var(--ink)] p-3.5 bg-[var(--paper)] space-y-2">
+                          <div className="flex items-center justify-between pb-1.5 border-b border-[var(--line)]">
+                            <span className="font-mono text-[9px] uppercase font-bold px-1.5 py-0.5 bg-[var(--ink)] text-[var(--paper)]">
+                              {lang === "de" ? "[ Klausur-Musterbaustein · 15 NP ]" : "[ 会考德语标准论述金句 · 15 NP ]"}
+                            </span>
+                            <span className="font-mono text-[10px] text-[var(--ink-muted)]">
+                              Gymnasium EF/Q1 · AFB II/III
+                            </span>
+                          </div>
+
+                          {/* 德语原版高分论述句，核心术语高亮 */}
+                          <blockquote className="text-xs sm:text-sm font-serif leading-relaxed text-[var(--ink)] pl-2.5 border-l-2 border-[var(--ink)]">
+                            {isMarketDilemma ? (
+                              <span>
+                                »Da im Modell die Güter <strong className="font-bold underline decoration-[var(--line)]">völlig homogen</strong> sind und <strong className="font-bold underline decoration-[var(--line)]">vollständige Markttransparenz</strong> herrscht, besitzt der einzelne Anbieter keine Preissetzungsmacht und agiert als <strong className="font-bold underline decoration-[var(--line)]">reiner Preisnehmer (Mengenanpasser)</strong>.«
+                              </span>
+                            ) : (
+                              <span>»{dilemma.mechanismTakeawayDE}«</span>
+                            )}
+                          </blockquote>
+
+                          {/* 通俗易懂中文释义 */}
+                          <p className="text-[11px] font-serif text-[var(--ink-muted)] leading-relaxed">
+                            {dilemma.mechanismTakeawayZH}
+                          </p>
+
+                          <div className="text-[10px] font-mono text-[var(--ink)] pt-1.5 border-t border-[var(--line)] flex flex-wrap items-center justify-between gap-1">
+                            <div>
+                              <span className="font-bold">
+                                {lang === "de" ? "Kausale Essenz: " : "因果本质: "}
+                              </span>
+                              <span>
+                                {lang === "de" ? "Horizontale Nachfrage (E = ∞) zwingt zur Preisübernahme" : "水平需求曲线 E = ∞ 迫使商贩完全丧失定价权"}
+                              </span>
+                            </div>
+                            <div className="text-[var(--ink-muted)]">
+                              <span className="font-bold">
+                                {lang === "de" ? "KLP-Prüfungskern: " : "考纲要点: "}
+                              </span>
+                              <span>
+                                {lang === "de" ? dilemma.klpCoreLogicDE : dilemma.klpCoreLogicZH}
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      )}
+
+                      {/* 6. 辅助笔记入口链接 */}
+                      {distilled.attachedNote && (
+                        <div className="pt-1 flex items-center justify-between">
+                          <button
+                            type="button"
+                            onClick={() => setShowNoteDrawer(true)}
+                            className="text-[11px] font-mono text-[var(--ink-muted)] hover:text-[var(--ink)] underline cursor-pointer"
+                          >
+                            {lang === "de"
+                              ? "→ KLP-Wissensnotiz & Zwei Brillen öffnen"
+                              : "→ 打开搭载知识笔记与辩证双轨小抄"}
+                          </button>
+                        </div>
+                      )}
+                    </div>
+                  )}
+                </div>
               </div>
             );
           })()}
 
           {/* 2. 若为第一阶段：动手探究实验微世界 (Phase 1 MicroWorld) */}
           {currentStep.type === "microworld" && (
-            <div className="flex flex-col gap-4">
-              {/* 实验任务指南 */}
-              <div className="p-3 border border-[var(--line)] bg-[var(--paper-subtle)] text-xs font-mono leading-relaxed">
-                <div className="font-bold text-[var(--ink)] mb-0.5">
-                  [ {lang === "de" ? "Forschungsauftrag & Entdeckungsaufgabe" : "实验探究任务与操作指引"} ]
-                </div>
-                <div className="text-[var(--ink)]">
-                  {lang === "de"
-                    ? currentStep.microWorldPayload?.missionPromptDE
-                    : currentStep.microWorldPayload?.missionPromptZH}
-                </div>
-                <div className="text-[10px] text-[var(--ink-muted)] mt-1">
-                  {lang === "de" ? "Zielkriterium: " : "达成指标："}
-                  {lang === "de"
-                    ? currentStep.microWorldPayload?.targetCriteriaDE
-                    : currentStep.microWorldPayload?.targetCriteriaZH}
-                </div>
-              </div>
-
-              {/* 活体仿真教具画布 */}
-              <div className="border border-[var(--line)] p-3 bg-[var(--paper)]">
-                {renderEmbeddedMicroWorld()}
-              </div>
-
-              {/* 实验规律备忘录 */}
-              {currentStep.microWorldPayload?.learningTakeawayDE && (
-                <div className="p-2.5 border border-[var(--line)] bg-[var(--paper-subtle)] text-[11px] font-mono leading-relaxed">
-                  <span className="font-bold">
-                    {lang === "de" ? "Labor-Notiz: " : "实验规律备忘："}
-                  </span>
-                  <span>
-                    {lang === "de"
-                      ? currentStep.microWorldPayload.learningTakeawayDE
-                      : currentStep.microWorldPayload.learningTakeawayZH}
-                  </span>
-                </div>
-              )}
+            <div className="w-full">
+              {renderEmbeddedMicroWorld()}
             </div>
           )}
 
-          {/* 3. 若为第二阶段：考场闯关与达标实测 (Phase 2 Challenge Cards) */}
+          {/* 3. 若为概念/公理对决拼图 (Phase 1 Puzzle) */}
+          {currentStep.type === "puzzle" && (
+            <div className="w-full">
+              <KonzeptPuzzle
+                puzzleData={distilled.konzeptPuzzle}
+                title={questNode.title}
+                lang={lang}
+                fach={effectiveFach}
+                onAllMatched={() => setIsPuzzleCompleted(true)}
+              />
+            </div>
+          )}
+
+          {/* 4. 若为第二阶段：考场闯关与达标实测 (Phase 2 Challenge Cards) */}
           {currentStep.type !== "lecture" &&
-            currentStep.type !== "microworld" && (
-              <div className="flex flex-col gap-2.5">
-                {currentStep.options?.map((opt) => {
-                  const isSelected = selectedOptionId === opt.id;
-                  let optionStyle =
-                    "border-[var(--line)] bg-[var(--paper)] hover:border-[var(--ink)]";
+            currentStep.type !== "microworld" &&
+            currentStep.type !== "puzzle" && (
+              <div className="flex flex-col gap-3">
+                {/* 针对 Step 4 (trap) 的真实考场 0 分错答展台 */}
+                {currentStep.type === "trap" && distilled.examTrapCorrection && (
+                  <div className="border border-[var(--line)] bg-[var(--paper-subtle)] p-3.5 space-y-2">
+                    <div className="flex items-center justify-between pb-1.5 border-b border-[var(--line)]">
+                      <span className="font-mono text-[9px] uppercase font-bold px-1.5 py-0.5 border border-[var(--ink)] bg-[var(--paper)]">
+                        [ {lang === "de" ? "Auszug aus einer Schülerklausur (AFB II)" : "真实考场学生作答摘录 (AFB II)"} ]
+                      </span>
+                      <span className="font-mono text-xs font-bold px-1.5 py-0.5 bg-[var(--ink)] text-[var(--paper)]">
+                        0 / 15 NP
+                      </span>
+                    </div>
+                    {distilled.examTrapCorrection.taskPromptDE && (
+                      <div className="text-[11px] font-mono text-[var(--ink-muted)] border-b border-[var(--line)] pb-1.5">
+                        <span className="font-bold text-[var(--ink)]">
+                          {lang === "de" ? "Aufgabenstellung: " : "题目设问: "}
+                        </span>
+                        {lang === "de"
+                          ? distilled.examTrapCorrection.taskPromptDE
+                          : distilled.examTrapCorrection.taskPromptZH}
+                      </div>
+                    )}
+                    <blockquote className="text-xs font-serif leading-relaxed pl-2.5 border-l-2 border-[var(--ink)] text-[var(--ink)] space-y-1">
+                      <div className="font-medium text-[var(--ink)]">
+                        {distilled.examTrapCorrection.studentAnswerDE}
+                      </div>
+                      {distilled.examTrapCorrection.studentAnswerZH && (
+                        <div className="text-[11px] text-[var(--ink-muted)]">
+                          {distilled.examTrapCorrection.studentAnswerZH}
+                        </div>
+                      )}
+                    </blockquote>
+                    <div className="text-[10px] font-mono text-[var(--ink-muted)]">
+                      {lang === "de"
+                        ? "Prüfer-Frage: Warum wird diese Argumentation mit 0 Notenpunkten bewertet? Worin liegt die fatale Fehlannahme?"
+                        : "考官提问：该论述为何被直接判 0 分？最致命的认知漏洞是？"}
+                    </div>
+                  </div>
+                )}
 
-                  if (isAnswerChecked) {
-                    if (opt.isCorrect) {
+                {/* 针对 Step 5 (quiz) 的 Operator 与满分导向说明 */}
+                {currentStep.type === "quiz" && (
+                  <div className="flex items-center justify-between pb-1 border-b border-[var(--line)]">
+                    <span className="font-mono text-[10px] uppercase font-bold text-[var(--ink-muted)]">
+                      [ AFB III Operator: {distilled.klausurSatz15NP.operator} ]
+                    </span>
+                    <span className="font-mono text-[10px] text-[var(--ink-muted)]">
+                      {lang === "de" ? "15 Notenpunkte Standard" : "15 分满分踩分标准"}
+                    </span>
+                  </div>
+                )}
+
+                {/* 选项列表 */}
+                <div className="flex flex-col gap-2.5">
+                  {currentStep.options?.map((opt) => {
+                    const isSelected = selectedOptionId === opt.id;
+                    let optionStyle =
+                      "border-[var(--line)] bg-[var(--paper)] hover:border-[var(--ink)]";
+
+                    if (isAnswerChecked) {
+                      if (opt.isCorrect) {
+                        optionStyle =
+                          "border-[var(--ink)] bg-[var(--paper-subtle)] ring-1 ring-[var(--ink)] font-semibold";
+                      } else if (isSelected && !opt.isCorrect) {
+                        optionStyle =
+                          "border-dashed border-[var(--ink)] bg-[var(--paper-subtle)] opacity-70";
+                      }
+                    } else if (isSelected) {
                       optionStyle =
-                        "border-[var(--ink)] bg-[var(--paper-subtle)] ring-1 ring-[var(--ink)] font-semibold";
-                    } else if (isSelected && !opt.isCorrect) {
-                      optionStyle =
-                        "border-dashed border-[var(--ink)] bg-[var(--paper-subtle)] opacity-70";
+                        "border-[var(--ink)] bg-[var(--paper-subtle)] ring-1 ring-[var(--ink)]";
                     }
-                  } else if (isSelected) {
-                    optionStyle =
-                      "border-[var(--ink)] bg-[var(--paper-subtle)] ring-1 ring-[var(--ink)]";
-                  }
 
-                  return (
-                    <button
-                      key={opt.id}
-                      type="button"
-                      disabled={isAnswerChecked}
-                      onClick={() => handleSelectOption(opt)}
-                      className={`p-3.5 border text-left text-xs leading-relaxed transition-all cursor-pointer flex items-start gap-2.5 active:translate-y-[1px] ${optionStyle}`}
-                    >
-                      <span className="font-mono text-[10px] border border-[var(--line)] px-1.5 py-0.5 mt-0.5 shrink-0">
-                        {isSelected ? "●" : "○"}
+                    return (
+                      <button
+                        key={opt.id}
+                        type="button"
+                        disabled={isAnswerChecked}
+                        onClick={() => handleSelectOption(opt)}
+                        className={`p-3.5 border text-left text-xs leading-relaxed transition-all cursor-pointer flex items-start gap-2.5 active:translate-y-[1px] ${optionStyle}`}
+                      >
+                        <span className="font-mono text-[10px] border border-[var(--line)] px-1.5 py-0.5 mt-0.5 shrink-0">
+                          {isSelected ? "●" : "○"}
+                        </span>
+                        <span className="flex-1">
+                          {currentStep.type === "quiz" ? (
+                            lang === "de" ? (
+                              <span className="font-serif leading-relaxed block">
+                                »{opt.textDE}«
+                              </span>
+                            ) : (
+                              <span className="block space-y-1">
+                                <span className="font-serif leading-relaxed block text-[var(--ink)]">
+                                  »{opt.textDE}«
+                                </span>
+                                {opt.textZH && (
+                                  <span className="font-sans text-[11px] text-[var(--ink-muted)] block">
+                                    {opt.textZH.startsWith("（") || opt.textZH.startsWith("(")
+                                      ? opt.textZH
+                                      : `（${opt.textZH}）`}
+                                  </span>
+                                )}
+                              </span>
+                            )
+                          ) : (
+                            lang === "de" ? opt.textDE : opt.textZH
+                          )}
+                        </span>
+                      </button>
+                    );
+                  })}
+                </div>
+
+                {/* Step 4 核验正确后的考官订正与雷区深入诊断 */}
+                {isAnswerChecked && isCorrect && currentStep.type === "trap" && distilled.examTrapCorrection && (
+                  <div className="p-3.5 border-2 border-[var(--ink)] bg-[var(--paper)] animate-fadeIn space-y-2 mt-1">
+                    <div className="flex items-center gap-2">
+                      <span className="font-mono text-[9px] uppercase font-bold px-1.5 py-0.5 bg-[var(--ink)] text-[var(--paper)]">
+                        {lang === "de" ? "[ Muster-Korrektur ]" : "[ 考官订正示范 ]"}
                       </span>
-                      <span className="flex-1">
-                        {lang === "de" ? opt.textDE : opt.textZH}
+                      <span className="font-mono text-[10px] text-[var(--ink-muted)]">
+                        {lang === "de" ? "Klausur-Standard AFB II" : "会考标准作答思路"}
                       </span>
-                    </button>
-                  );
-                })}
+                    </div>
+                    <div className="text-xs font-serif text-[var(--ink)] leading-relaxed">
+                      {lang === "de"
+                        ? distilled.examTrapCorrection.examinerVerdictDE
+                        : distilled.examTrapCorrection.examinerVerdictZH}
+                    </div>
+                    <div className="text-[11px] font-mono text-[var(--ink)] border-t border-[var(--line)] pt-1.5">
+                      <span className="font-bold">
+                        {lang === "de" ? "Fataler Denkfehler: " : "致命失分症结: "}
+                      </span>
+                      {lang === "de"
+                        ? distilled.examTrapCorrection.fatalFlawPointDE
+                        : distilled.examTrapCorrection.fatalFlawPointZH}
+                    </div>
+                  </div>
+                )}
+
+                {/* Step 5 核验正确后的 15 NP 会考金句终局勋章 */}
+                {isAnswerChecked && isCorrect && currentStep.type === "quiz" && (
+                  <div className="p-3.5 border-2 border-[var(--ink)] bg-[var(--paper)] animate-fadeIn space-y-2 mt-1">
+                    <div className="flex items-center justify-between pb-1.5 border-b border-[var(--line)]">
+                      <span className="font-mono text-[9px] uppercase font-bold px-1.5 py-0.5 bg-[var(--ink)] text-[var(--paper)]">
+                        {lang === "de" ? "[ 15-NP-Meistersatz ]" : "[ 15 NP 满分金句 ]"}
+                      </span>
+                      <span className="font-mono text-[10px] text-[var(--ink-muted)]">
+                        {distilled.klausurSatz15NP.operator} · AFB III
+                      </span>
+                    </div>
+                    <div className="text-xs sm:text-sm font-serif font-bold text-[var(--ink)] leading-relaxed">
+                      »{distilled.klausurSatz15NP.musterSatzDE}«
+                    </div>
+                    <div className="text-xs font-serif text-[var(--ink-muted)] leading-relaxed">
+                      （{distilled.klausurSatz15NP.explanationZH}）
+                    </div>
+                    <div className="text-[10px] font-mono text-[var(--ink)] border-t border-[var(--line)] pt-1.5 flex flex-wrap items-center gap-1.5">
+                      <span className="font-bold">
+                        {lang === "de" ? "Schlüssel-Begriffe: " : "踩分要件: "}
+                      </span>
+                      <span>
+                        {distilled.klausurSatz15NP.scoringKeywords.join(", ")}
+                      </span>
+                    </div>
+                  </div>
+                )}
               </div>
             )}
         </div>
@@ -867,7 +1063,7 @@ export const InteractiveLessonRunner: React.FC<InteractiveLessonRunnerProps> = (
 
       {/* 底部即时操作与反馈栏 */}
       <footer className="border-t border-[var(--line)] p-4 sm:px-8 bg-[var(--paper)]">
-        <div className="max-w-2xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-3">
+        <div className={`${containerMaxWidth} mx-auto flex flex-col sm:flex-row items-center justify-between gap-3`}>
           {/* 即时反馈文本 */}
           <div className="text-xs font-mono flex-1">
             {/* 新知精讲微课底部提示 */}
@@ -886,15 +1082,33 @@ export const InteractiveLessonRunner: React.FC<InteractiveLessonRunnerProps> = (
             {/* 动手实验底部提示 */}
             {currentStep.type === "microworld" && (
               <span className="text-[var(--ink-muted)]">
-                {lang === "de"
-                  ? "Bediene die Parameter oben, um die Systemeffekte praktisch zu erfahren."
-                  : "在上方教具中动手操作，观察因果反应，随后进入考场挑战。"}
+                {isMicroWorldGated && !isMicroWorldCompleted
+                  ? (lang === "de"
+                      ? "Bewege den Schieberegler auf die Zielmarke (+50%), um die nächste Stufe freizuschalten."
+                      : "请将生产成本滑块调整至 +50% 靶心目标区间，以解锁下一环节。")
+                  : (lang === "de"
+                      ? "Zielkriterium erfüllt! Klicke auf den Button, um fortzufahren."
+                      : "实验目标已达成！点击按钮前往下一环节。")}
+              </span>
+            )}
+
+            {/* 概念拼图底部提示 */}
+            {currentStep.type === "puzzle" && (
+              <span className="text-[var(--ink-muted)]">
+                {!isPuzzleCompleted
+                  ? (lang === "de"
+                      ? "Ordne alle 4 Begriffspaare auf der linken und rechten Seite zu."
+                      : "请将完全竞争市场的 4 组公理前提与现实破绽依次配对。")
+                  : (lang === "de"
+                      ? "Alle 4 Prämissen erfolgreich zugeordnet! Klicke auf den Button, um zur Challenge zu wechseln."
+                      : "4 组公理前提与现实破绽配对全部完成！点击前往考场挑战。")}
               </span>
             )}
 
             {/* 答题阶段即时反馈 */}
             {currentStep.type !== "lecture" &&
-              currentStep.type !== "microworld" && (
+              currentStep.type !== "microworld" &&
+              currentStep.type !== "puzzle" && (
                 <>
                   {isAnswerChecked && activeFeedback && (
                     <div className="flex items-start gap-2">
@@ -944,7 +1158,11 @@ export const InteractiveLessonRunner: React.FC<InteractiveLessonRunnerProps> = (
                         )}
                       </span>
                       <span className="leading-relaxed text-[var(--ink)]">
-                        {activeFeedback}
+                        {currentStep.type === "trap" && isCorrect
+                          ? (lang === "de"
+                              ? `Diagnose korrekt (+${currentStep.xpReward} XP)! Siehe Prüfer-Musterkorrektur oben.`
+                              : `诊断正确 (+${currentStep.xpReward} XP)！请查看上方考官标准订正示范与失分剖析。`)
+                          : activeFeedback}
                       </span>
                     </div>
                   )}
@@ -961,6 +1179,18 @@ export const InteractiveLessonRunner: React.FC<InteractiveLessonRunnerProps> = (
 
           {/* 主动作按钮 */}
           <div className="flex items-center gap-2 shrink-0 w-full sm:w-auto">
+            {/* 允许随时回退到上一步查看 */}
+            {currentStepIndex > 0 && (
+              <button
+                type="button"
+                onClick={handlePrevStep}
+                className="w-full sm:w-auto px-4 py-2 border border-[var(--line)] bg-[var(--paper-subtle)] hover:border-[var(--ink)] text-xs font-mono active:translate-y-[1px] transition-all cursor-pointer flex items-center justify-center gap-1.5 text-[var(--ink)]"
+              >
+                <span aria-hidden="true">&lt;-</span>
+                <span>{lang === "de" ? "Zurück" : "上一步"}</span>
+              </button>
+            )}
+
             {/* Step 1 Lecture 操作按钮 */}
             {currentStep.type === "lecture" ? (
               <button
@@ -981,12 +1211,32 @@ export const InteractiveLessonRunner: React.FC<InteractiveLessonRunnerProps> = (
               <button
                 type="button"
                 onClick={handleAdvanceMicroWorld}
-                className="w-full sm:w-auto px-6 py-2 bg-[var(--ink)] text-[var(--paper)] text-xs font-bold border-2 border-[var(--ink)] hover:bg-[var(--paper)] hover:text-[var(--ink)] active:translate-y-[1px] transition-all cursor-pointer flex items-center justify-center gap-2"
+                disabled={isMicroWorldGated && !isMicroWorldCompleted}
+                className="w-full sm:w-auto px-6 py-2 bg-[var(--ink)] text-[var(--paper)] text-xs font-bold border-2 border-[var(--ink)] hover:bg-[var(--paper)] hover:text-[var(--ink)] active:translate-y-[1px] disabled:opacity-30 disabled:cursor-not-allowed transition-all cursor-pointer flex items-center justify-center gap-2"
+              >
+                <span>
+                  {steps[currentStepIndex + 1]?.type === "puzzle"
+                    ? lang === "de"
+                      ? "Experiment abgeschlossen -> Weiter zum Puzzle"
+                      : "动手实验探究完毕 -> 前往四大假设拼图"
+                    : lang === "de"
+                    ? "Experiment abgeschlossen -> Jetzt zur Challenge"
+                    : "动手实验探究完毕 -> 前往考场通关挑战"}
+                </span>
+                <span aria-hidden="true">-&gt;</span>
+              </button>
+            ) : currentStep.type === "puzzle" ? (
+              /* Step 3 Puzzle 操作按钮 */
+              <button
+                type="button"
+                onClick={handleAdvancePuzzle}
+                disabled={!isPuzzleCompleted}
+                className="w-full sm:w-auto px-6 py-2 bg-[var(--ink)] text-[var(--paper)] text-xs font-bold border-2 border-[var(--ink)] hover:bg-[var(--paper)] hover:text-[var(--ink)] active:translate-y-[1px] disabled:opacity-30 disabled:cursor-not-allowed transition-all cursor-pointer flex items-center justify-center gap-2"
               >
                 <span>
                   {lang === "de"
-                    ? "Experiment abgeschlossen -> Jetzt zur Challenge"
-                    : "动手实验探究完毕 -> 前往考场通关挑战"}
+                    ? "Puzzle gelöst -> Jetzt zur Challenge"
+                    : "四大假设拼图完成 -> 前往考场通关挑战"}
                 </span>
                 <span aria-hidden="true">-&gt;</span>
               </button>
