@@ -16,10 +16,6 @@ version: Enterprise-v5
 
 # Lernreise: Laktatkurve und aerobe sowie anaerobe Schwelle (L1, Ziel Muendlich)
 
-<!-- Lesson v3 architecture: Schritte 1-8 fixed; Fehlvorstellung between Schritt 6 and 7 (parser skipped); embedded [Werkzeug: <id>]; gating: check/szenario failed = Weiter greyed; XP: entdecken 5
-  / ausprobieren 15
-  / check 20
-  / szenario 30 -->
 
 ## Schritt 1 — entdecken: Freiburger Leistungsdiagnostik-Labor, Laufband-Stufentest (Marathonkader) — 赛场警报
 
@@ -95,7 +91,7 @@ Regel: Knick bei 4,0 mmol/L und 168er Puls lesen | darunter Grundlage bei 4,0 m/
 
 BEISPIEL(含教具操作与解答):
 
-[Werkzeug: formula]
+[Werkzeug: highlighter]
 
 AUFGABE (analysieren, [AFB II]): Analysiere stufentest-Regler: Stufen 3,0 bis 5,0 m/s, lies Knick, IAS und Puls ab. Erreiche das Target und leite zwei Trainingszonen in 90 Sekunden ab.达标线:IAS bei 4,6 m/s, Laktat 4,0 mmol/L, Puls 168/min, Grundlagentempo 4,0 m/s。
 

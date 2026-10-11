@@ -16,10 +16,6 @@ version: Enterprise-v5
 
 # Lernreise: Biomechanische Prinzipien Anfangskraft (L1, Ziel Klausur)
 
-<!-- Lesson v3 9步制架构：Schritt 1至8固定结构；Fehlvorstellung 夹在 Schritt 6 与 7 之间（Parser 自动跳过，不占步数）；支持内嵌 [Werkzeug: <id>] 交互教具；Gating: check/szenario 未过 = Weiter 置灰；XP: entdecken 5
-  / ausprobieren 15
-  / check 20
-  / szenario 30 -->
 
 ## Schritt 1 — entdecken: Oberhofer Rennschlittenbahn, Schul-Bob-Camp — 赛场警报
 
@@ -95,7 +91,7 @@ Regel: Flanke steil in 0,18 s setzen | Schub halten fuer 280 Ns auf 30 m
 
 BEISPIEL(含教具操作与解答):
 
-[Werkzeug: formula]
+[Werkzeug: gewi-reading]
 
 AUFGABE (analysieren, [AFB II]): Analysiere 曲线调节器:对比红蓝队算冲量面积与速度增量,90秒达标。达标线:Anschub 5,8 s auf 30 m, Kraftflanke 0,18 s, Impuls 280 Ns。
 

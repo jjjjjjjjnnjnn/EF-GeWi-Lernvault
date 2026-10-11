@@ -16,7 +16,6 @@ version: Enterprise-v5
 
 # Lernreise: Biomechanische Optimierung des Weitsprungs — Absprung und Flug (L1, Ziel Muendlich)
 
-<!-- Lesson v3 9步制架构：Schritt 1至8固定结构；Fehlvorstellung 夹在 Schritt 6 与 7 之间（Parser 自动跳过，不占步数）；支持内嵌 [Werkzeug: <id>] 交互教具；Gating: check/szenario 未过 = Weiter 置灰；XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
 ## Schritt 1 — entdecken: Berliner Olympiastadion, Weitsprung-Finale der Schulmeisterschaft — 赛场警报
 
@@ -92,7 +91,7 @@ Regel: Absprung setzt die Grenze bei 19 Grad und 0,12 s | Flug und Landung nutze
 
 BEISPIEL(含教具操作与解答):
 
-[Werkzeug: formula]
+[Werkzeug: gewi-reading]
 
 AUFGABE (analysieren, [AFB II]): Analysiere 起跳角调节器:对比平(21度)与陡(30度),v_h=9,4 m/s,读出远度与重心抛物线,用抛物公式90秒论证。达标线:Absprungwinkel 19 Grad, Anlauf 9,4 m/s, Stuetzzeit 0,12 s, Zielweite 7,80 m。
 

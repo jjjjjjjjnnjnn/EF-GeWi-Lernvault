@@ -16,10 +16,6 @@ version: Enterprise-v5
 
 # Lernreise: Doping Ethik und Gesundheitsrisiken (L1, Ziel Klausur)
 
-<!-- Lesson v3 9步制架构：Schritt 1至8固定结构；Fehlvorstellung 夹在 Schritt 6 与 7 之间（Parser 自动跳过，不占步数）；支持内嵌 [Werkzeug: <id>] 交互教具；Gating: check/szenario 未过 = Weiter 置灰；XP: entdecken 5
-  / ausprobieren 15
-  / check 20
-  / szenario 30 -->
 
 ## Schritt 1 — entdecken: Frankfurter Festhalle, Schul-Anti-Doping-Forum — 赛场警报
 

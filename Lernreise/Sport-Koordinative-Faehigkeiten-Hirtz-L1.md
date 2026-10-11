@@ -16,10 +16,6 @@ version: Enterprise-v5
 
 # Lernreise: Koordinative Faehigkeiten nach Hirtz (L1, Ziel Muendlich)
 
-<!-- Lesson v3 architecture: Schritte 1-8 fixed; Fehlvorstellung between Schritt 6 and 7 (parser skipped); embedded [Werkzeug: <id>]; gating: check/szenario failed = Weiter greyed; XP: entdecken 5
-  / ausprobieren 15
-  / check 20
-  / szenario 30 -->
 
 ## Schritt 1 — entdecken: Leipziger DHfK-Halle, Balken-Parcours (Gleichgewichts-Check) — 赛场警报
 

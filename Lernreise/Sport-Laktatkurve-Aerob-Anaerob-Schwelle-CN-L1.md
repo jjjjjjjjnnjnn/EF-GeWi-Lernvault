@@ -16,10 +16,6 @@ version: Enterprise-v5
 
 # Lernreise: Laktatkurve mit aerober und anaerober Schwelle (L1, Ziel Klausur)
 
-<!-- Lesson v3 9步制架构：Schritt 1至8固定结构；Fehlvorstellung 夹在 Schritt 6 与 7 之间（Parser 自动跳过，不占步数）；支持内嵌 [Werkzeug: <id>] 交互教具；Gating: check/szenario 未过 = Weiter 置灰；XP: entdecken 5
-  / ausprobieren 15
-  / check 20
-  / szenario 30 -->
 
 ## Schritt 1 — entdecken: Leverkusener BayArena-Nebenplatz, 5000-m-Kaderlauf — 赛场警报
 
@@ -95,7 +91,7 @@ Regel: Knick bei 4,1 mmol/L und 172er Puls lesen | darunter Grundlage bei 3,6 m/
 
 BEISPIEL(含教具操作与解答):
 
-[Werkzeug: formula]
+[Werkzeug: highlighter]
 
 AUFGABE (analysieren, [AFB II]): Analysiere 逐级调节器:3,0至5,0 m/s,读拐点、无氧阈与脉搏,90秒定两区间。达标线:IAS bei 4,2 m/s, Laktat 4,1 mmol/L, Puls 172/min, Grundlagentempo 3,6 m/s。
 

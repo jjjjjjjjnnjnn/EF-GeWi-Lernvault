@@ -16,7 +16,6 @@ version: Enterprise-v5
 
 # Lernreise: Biomechanische Optimierung des Weitsprungs, Absprung und Flug (L1, Ziel Muendlich)
 
-<!-- Lesson v3 Architektur mit 9 Abschnitten: Schritt 1 bis 8 mit fester Struktur; Fehlvorstellung liegt zwischen Schritt 6 und 7 (wird vom Parser uebersprungen, zaehlt nicht als Schritt); unterstuetzt eingebettete [Werkzeug: <id>] Elemente; Gating: check/szenario nicht bestanden = Weiter deaktiviert; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
 ## Schritt 1 — entdecken: Tokio 1991, Nationalstadion, WM-Finale (Powells 8,95 m-Nacht) — Alarm in der Arena
 
@@ -85,7 +84,7 @@ Regel: Absprung setzt die Grenze bei 21 Grad und 0,12 s | Flug und Landung nutze
 
 BEISPIEL (Musteraufgabe mit Loesungsweg):
 
-[Werkzeug: formula]
+[Werkzeug: gewi-reading]
 
 AUFGABE (analysieren, [AFB II]): Analysiere absprungwinkel-Regler: Vergleiche flach (21 Grad) gegen steil (30 Grad) bei v_h = 9,6 m/s. Lies Weite und KSP-Parabel ab und begruende in 90 Sekunden mit der Wurfformel. Erreiche das Target: Stuetzzeit 0,12 s, Absprungwinkel 21 Grad, Anlauf 9,6 m/s, Zielweite 8,10 m.
 

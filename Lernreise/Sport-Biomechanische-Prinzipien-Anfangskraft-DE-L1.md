@@ -16,7 +16,6 @@ version: Enterprise-v5
 
 # Lernreise: Biomechanische Prinzipien Anfangskraft (L1, Ziel Klausur)
 
-<!-- Lesson v3 Architektur mit 9 Abschnitten: Schritt 1 bis 8 mit fester Struktur; Fehlvorstellung liegt zwischen Schritt 6 und 7 (wird vom Parser uebersprungen, zaehlt nicht als Schritt); unterstuetzt eingebettete [Werkzeug: <id>] Elemente; Gating: check/szenario nicht bestanden = Weiter deaktiviert; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
 ## Schritt 1 — entdecken: Berliner Olympiapark, Bob-Anschubbahn (2er-Bob-Selektion) — Die Zehntel vom Startbalken
 
@@ -85,7 +84,7 @@ Regel: Flanke steil in 0,15 s setzen | Schub halten fuer 320 Ns auf 50 m
 
 BEISPIEL (Musteraufgabe mit Loesungsweg):
 
-[Werkzeug: formula]
+[Werkzeug: gewi-reading]
 
 AUFGABE (analysieren, [AFB II]): Analysiere kurvenregler: Vergleiche Rot gegen Blau mit Flaeche J und rechne Delta-v; erreiche das Target in 90 Sekunden. Erreiche das Target: Anschub 5,2 s auf 50 m, Kraftflanke 0,15 s, Impuls 320 Ns.
 

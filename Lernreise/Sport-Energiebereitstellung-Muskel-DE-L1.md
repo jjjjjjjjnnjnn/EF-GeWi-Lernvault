@@ -16,7 +16,6 @@ version: Enterprise-v5
 
 # Lernreise: Energiebereitstellung im Muskel (L1, Ziel Klausur)
 
-<!-- Lesson v3 Architektur mit 9 Abschnitten: Schritt 1 bis 8 mit fester Struktur; Fehlvorstellung liegt zwischen Schritt 6 und 7 (wird vom Parser uebersprungen, zaehlt nicht als Schritt); unterstuetzt eingebettete [Werkzeug: <id>] Elemente; Gating: check/szenario nicht bestanden = Weiter deaktiviert; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
 ## Schritt 1 — entdecken: Leverkusener Hochleistungszentrum, 400-m-Hallenfinale (46,8 s-Rennen) — Die letzten 80 Meter brennen
 
@@ -85,7 +84,7 @@ Regel: PCr 8 s maximal nutzen | Glykolyse 55 Prozent fuer 46,8 s dosieren
 
 BEISPIEL (Musteraufgabe mit Loesungsweg):
 
-[Werkzeug: formula]
+[Werkzeug: oral-timer]
 
 AUFGABE (analysieren, [AFB II]): Analysiere energieregler: Verteile 46,8 s auf drei Systeme und berechne mit E = P mal t den laktaziden Anteil. Erreiche das Target mit Zonenbegruendung. Erreiche das Target: PCr-Anteil 8 s maximal, Glykolyse 55 Prozent, Zielzeit 46,8 s, Laktat 14 mmol/L.
 

@@ -16,10 +16,6 @@ version: Enterprise-v5
 
 # Lernreise: Doping Ethik und Gesundheitsrisiken (L1, Ziel Klausur)
 
-<!-- Lesson v3: Schritt 1-8 feste Struktur; Fehlvorstellung zwischen Schritt 6 und 7 (Parser skip); [Werkzeug: <id>] interaktiv; Gating: check/szenario nicht bestanden = Weiter grau; XP: entdecken 5
-  / ausprobieren 15
-  / check 20
-  / szenario 30 -->
 
 ## Schritt 1 — entdecken: Koelner Sporthochschule, Anti-Doping-Hoersaal (NADA-Planspiel) — 赛场警报
 

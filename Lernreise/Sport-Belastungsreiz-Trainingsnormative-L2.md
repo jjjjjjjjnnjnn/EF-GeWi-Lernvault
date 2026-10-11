@@ -16,10 +16,6 @@ version: Enterprise-v5
 
 # Lernreise: Belastungsreiz und Trainingsnormative (L2, Ziel Muendlich)
 
-<!-- Lesson v3 architecture: Schritte 1-8 fixed; Fehlvorstellung between Schritt 6 and 7 (parser skipped); embedded [Werkzeug: <id>]; gating: check/szenario failed = Weiter greyed; XP: entdecken 5
-  / ausprobieren 15
-  / check 20
-  / szenario 30 -->
 
 ## Schritt 1 — entdecken: Dortmunder Kraftraum Nord, Hantel-Plateau (Kniebeuge-Testtag) — 赛场警报
 

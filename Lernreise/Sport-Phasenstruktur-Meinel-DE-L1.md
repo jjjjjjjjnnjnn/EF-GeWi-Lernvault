@@ -16,7 +16,6 @@ version: Enterprise-v5
 
 # Lernreise: Die Phasenstruktur der Bewegung und der Beobachtungsbogen (L1, Ziel Muendlich)
 
-<!-- Lesson v3 Architektur mit 9 Abschnitten: Schritt 1 bis 8 mit fester Struktur; Fehlvorstellung liegt zwischen Schritt 6 und 7 (wird vom Parser uebersprungen, zaehlt nicht als Schritt); unterstuetzt eingebettete [Werkzeug: <id>] Elemente; Gating: check/szenario nicht bestanden = Weiter deaktiviert; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
 ## Schritt 1 — entdecken: Goetzis Moesle-Stadion, Mehrkampf-Meeting (Speerwurf-Analyseabend) — Der Wurf, der zu frueh endet
 

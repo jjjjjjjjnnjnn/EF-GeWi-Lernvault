@@ -16,10 +16,6 @@ version: Enterprise-v5
 
 # Lernreise: Energiebereitstellung im Muskel (L1, Ziel Klausur)
 
-<!-- Lesson v3 9步制架构：Schritt 1至8固定结构；Fehlvorstellung 夹在 Schritt 6 与 7 之间（Parser 自动跳过，不占步数）；支持内嵌 [Werkzeug: <id>] 交互教具；Gating: check/szenario 未过 = Weiter 置灰；XP: entdecken 5
-  / ausprobieren 15
-  / check 20
-  / szenario 30 -->
 
 ## Schritt 1 — entdecken: Dortmunder Helmut-Koernig-Halle, Schul-400-m-Finale — 赛场警报
 
@@ -95,7 +91,7 @@ Regel: PCr 7 s maximal nutzen | Glykolyse 50 Prozent fuer 52,4 s dosieren
 
 BEISPIEL(含教具操作与解答):
 
-[Werkzeug: formula]
+[Werkzeug: oral-timer]
 
 AUFGABE (analysieren, [AFB II]): Analysiere 供能调节器:把52,4秒拆给三系统,用E=P·t算糖酵解份额,达标。达标线:PCr-Anteil 7 s maximal, Glykolyse 50 Prozent, Zielzeit 52,4 s, Laktat 12 mmol/L。
 
