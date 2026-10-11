@@ -971,3 +971,6 @@ tags: [EF, Meta]
 | Grundmandatsklausel | 基本议席豁免条款 | SoWi | Die Grundmandatsklausel ermöglichte Parteien unter 5% den Einzug in voller Fraktionsstärke, sofern sie mindestens drei Direktmandate errangen. |
 | Maximin-Regel | 最大最小准则 | Philosophie | Die Maximin-Regel gebietet, unter Ungewissheit stets diejenige Handlungsalternative zu wählen, deren schlechtestmögliches Ergebnis am besten ist. |
 | lexikalischer Vorrang | 词典式优先次序 | Philosophie | Der lexikalische Vorrang ordnet gleiche Grundfreiheiten dem Differenzprinzip strikt übergeordnet zu; Freiheit darf nicht für Wohlstand geopfert werden. |
+| Aquaporin | 水通道蛋白 | Bio | Aquaporine lassen Wasser ohne ATP und ohne Konformationsaenderung passieren. |
+| Grenzplasmolyse | 临界质壁分离 | Bio | Bei 50 Prozent Abloesung entspricht das Aussenpotenzial dem Zellsaftpotenzial. |
+| Tonoplast | 液泡膜 | Bio | Der Tonoplast ist die selektiv permeable Membran um die Vakuole. |
