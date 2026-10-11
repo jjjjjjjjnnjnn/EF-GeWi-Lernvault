@@ -197,6 +197,18 @@ describe("Concept Distillation Engine: conceptDistiller", () => {
     expect(res.klausurSatz15NP.scoringKeywords).toContain("Leserlenkung");
   });
 
+  it("distills Political Speech: Rhetoric and Comment benchmark (Englisch)", () => {
+    const res = distillConcept("Political Speech: Rhetoric and Comment (MLK, I Have a Dream)", "Englisch");
+    validateDistilledConcept(res);
+    expect(res.fach).toBe("Englisch");
+    expect(res.intuitionDilemma?.scenarioZH).toContain("提货券");
+    expect(res.intuitionDilemma?.questionZH).toContain("期票");
+    expect(res.konzeptPuzzle?.pairs.length).toBe(4);
+    expect(res.examTrapCorrection?.diagnosticOptions?.length).toBe(3);
+    expect(res.klausurSatz15NP.scoringKeywords).toContain("promissory note");
+    expect(res.klausurSatz15NP.scoringKeywords).toContain("rhetorical triad");
+  });
+
   it("distills Differentialrechnung: Tangente & Ableitung (Mathe)", () => {
     const res = distillConcept("Einfuehrung der Ableitung: Differenzenquotient und Tangentensteigung", "Mathe");
     validateDistilledConcept(res);

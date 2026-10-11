@@ -2086,6 +2086,216 @@ const DOMAIN_KNOWLEDGE_ENTRIES: DomainKnowledgeEntry[] = [
       ]
     }
   },
+
+  // 14. Political Speech: Rhetoric and Comment (Englisch)
+  {
+    id: "political-speech-rhetoric-mlk",
+    canonicalTitle: "Political Speech: Rhetoric and Comment (MLK, I Have a Dream)",
+    fach: "Englisch",
+    matchKeywords: [
+      "political speech",
+      "rhetoric",
+      "rhetorical triad",
+      "logos",
+      "ethos",
+      "pathos",
+      "anaphora",
+      "antithesis",
+      "metaphor",
+      "promissory note",
+      "i have a dream",
+      "martin luther king",
+      "comment",
+      "de jure",
+      "civil rights"
+    ],
+    data: {
+      topicTitle: "Political Speech: Rhetoric and Comment (MLK, I Have a Dream)",
+      fach: "Englisch",
+      intuitionDilemma: {
+        scenarioDE: "Beim Stadtfest loest du einen 100-Euro-Geschenkgutschein ein. Die Kasse stempelt ihn mit ungedeckter Scheck, waehrend der Inhaber sichtbar im Ueberfluss lebt.",
+        scenarioZH: "你拿着一张100欧提货券去百年老店兑现，店员盖上“资金不足、拒不兑现”，而店主天天山珍海味。你手里的券还算数吗？",
+        questionDE: "Welche argumentative Funktion erfuellt das Finanzbild vom uneingeloesten Schuldschein (promissory note / bad check)?",
+        questionZH: "“未兑现的期票 / 空头支票”这一金融意象在论证中承担什么功能？",
+        choiceA: {
+          id: "A",
+          textDE: "A) Es handelt sich um rein dekorativen Bildschmuck: Die Finanzbilder machen die Rede lediglich anschaulicher und feierlicher.",
+          textZH: "A) 这只是装饰性点缀：金融意象让演讲更生动、更庄重，除此之外没有论证功能。",
+          reactionDE: "Nachvollziehbarer erster Impuls aus dem Alltag: Schmuck klingt nach Verzierung. Doch im Redekontext des Jahres 1963 greift diese Lesart zu kurz: Ein unbezahlter Schuldschein ist im amerikanischen Verstaendnis kein Dekor, sondern ein einklagbarer Rechtsbruch.",
+          reactionZH: "从日常语感看很自然的判断：比喻似乎只是装饰。但放在1963年民权语境中远远不够：在美国契约文化里，一张被拒付的期票不是修辞点缀，而是一项可追索的法律违约指控。"
+        },
+        choiceB: {
+          id: "B",
+          textDE: "B) Es handelt sich um eine einklagbare Anklage: Die Verfassung wird als faelliger Schuldschein definiert, dessen Nichteinloesung einen Verfassungsbruch darstellt.",
+          textZH: "B) 这是一项可追索的指控：宪法被定义为到期应付的期票，拒不兑现即构成对建国契约的违背。",
+          reactionDE: "Genau diese Spur trifft die Konstruktionslogik der Rede: Die Verfassung wird als einklagbarer Schuldschein definiert, ihre Nichterfuellung als Rechtsbruch. Damit wird Gleichberechtigung von einer erbetenen Konzession in eine faellige Schuld verwandelt.",
+          reactionZH: "这一判断切中演讲的构造逻辑：宪法被定义为可强制兑现的期票，拒不兑现即构成违约。平等权利由此从“请求赐予的恩惠”转化为“逾期未偿的债务”。"
+        },
+        mechanismTakeawayDE: "King transponiert das Verfassungsversprechen in die Sprache des Handelsrechts: Wer Buergerrechte verweigert, begeht keinen Stilbruch, sondern einen Vertragsbruch gegen den Gruendungsvertrag der Republik.",
+        mechanismTakeawayZH: "金将宪法承诺平移进商法语言：拒绝民权不是风格问题，而是对共和国建国契约的违约。金融隐喻把道德诉求转化为法律硬债务，直接击中保守派白人的契约信仰。",
+        klpCoreLogicDE: "Rhetorische Triade (Logos: Verfassungsvertrag -> Ethos: Lincoln und Kanzelautoritaet -> Pathos: Ketten und leere Versprechen); Aufgabenart 1.1: Summary -> Analysis -> Comment.",
+        klpCoreLogicZH: "亚里士多德修辞三角（Logos宪法契约 -> Ethos林肯与牧师权威 -> Pathos锁链与空头承诺）；NRW英语会考题型1.1：概括 -> 修辞分析 -> 评论。"
+      },
+      mentalModelAnalogy: {
+        analogyTitle: "Vom Bittsteller zum Glaeubiger: Die Anklage als faelliger Schuldschein",
+        explanationDE: "King transponiert das Verfassungsversprechen in die Sprache des Handelsrechts: Wer Buergerrechte verweigert, begeht keinen Stilbruch, sondern einen Vertragsbruch gegen den Gruendungsvertrag der Republik.",
+        explanationZH: "金将宪法承诺平移进商法语言：拒绝民权不是风格问题，而是对共和国建国契约的违约。金融隐喻把道德诉求转化为法律硬债务，直接击中保守派白人的契约信仰。"
+      },
+      konzeptPuzzle: {
+        instructionDE: "Ordne jedem rhetorischen Mittel seine psychologische Umwandlungsfunktion und die Klausur-Konsequenz zu:",
+        instructionZH: "将每种修辞手段与其心理转化功能及考场结论配对：",
+        pairs: [
+          {
+            id: "pair-1",
+            premiseDE: "Anapher: One hundred years later (vierfach) / I have a dream (achtfach)",
+            premiseZH: "首语从复：One hundred years later（四叠）/ I have a dream（八叠）",
+            realityDE: "Repetitive Syntax im Call-and-response-Rhythmus steigert die emotionale Wucht mit jeder Wiederholung (Pathos).",
+            realityZH: "重复句式按黑人教堂呼应节奏逐层推高情感烈度（Pathos），每一次重复都是一次情感加压。",
+            consequenceDE: "Klausur: Rhythmisches Crescendo im Kanzelstil erzeugt kollektive Mobilisierung und markiert den Umschlag von Klage in Vision.",
+            consequenceZH: "考场结论：布道式节奏渐强实现情感总动员，标志演讲从控诉向愿景的转折，是Pathos的核心引擎。"
+          },
+          {
+            id: "pair-2",
+            premiseDE: "Erweiterte Finanzmetapher: promissory note / bad check / insufficient funds / bank of justice",
+            premiseZH: "扩展金融隐喻：promissory note / bad check / insufficient funds / bank of justice",
+            realityDE: "Kommerzialisierung der Menschenwuerde: Appell an die amerikanische Vertragsmoral entwaffnet konservative Gegner (Logos).",
+            realityZH: "将人的尊严转译为美国人不可侵犯的商业信誉：拒付即欺诈，直接卸下保守派白人的道德心防（Logos）。",
+            consequenceDE: "Klausur: Verlegt den Streit von Geschmack auf Recht; Segregation wird als Verfassungsbruch justiziabel.",
+            consequenceZH: "考场结论：把争论从好恶之争转为契约之争，种族隔离被定性为可追责的宪政违约，这是Logos的核心杀招。"
+          },
+          {
+            id: "pair-3",
+            premiseDE: "Antithese: beacon light of hope / joyous daybreak vs. flames of injustice / long night of captivity",
+            premiseZH: "对偶对照：beacon light of hope / joyous daybreak 对 flames of injustice / long night of captivity",
+            realityDE: "Schroffer Hell-Dunkel-Kontrast erzeugt dramatische moralische Eindeutigkeit ohne Grauzone.",
+            realityZH: "黑白分明的善恶对决制造不容骑墙的道德戏剧张力，听众被迫选边。",
+            consequenceDE: "Klausur: Biblische Licht-Finsternis-Typologie stilisiert Emanzipation als Exodus und Segregation als moralische Finsternis.",
+            consequenceZH: "考场结论：圣经式光明与黑暗对立把解放宣言升格为出埃及式神圣解放，把隔离钉死在道德黑暗面。"
+          },
+          {
+            id: "pair-4",
+            premiseDE: "Anspielung: Five score years ago (Gettysburg) / Emancipation Proclamation (1863)",
+            premiseZH: "典故：Five score years ago（葛底斯堡演说）/ 1863解放宣言",
+            realityDE: "Entlehnung der Gruendervater-Autoritaet und der Kanzelwuerde verleiht dem Redner unantastbares Ethos.",
+            realityZH: "借用国父林肯的神圣性与先知牧师的讲坛威望，为演讲者加冕不可质疑的道德权威（Ethos）。",
+            consequenceDE: "Klausur: Autoritaetstransfer von Lincoln auf King; Angriff auf Segregation wird Verteidigung des Gruendervaters.",
+            consequenceZH: "考场结论：权威转移——林肯的威望直接过户给金；攻击隔离者反而成了背叛国父的人，这是Ethos的基石。"
+          }
+        ]
+      },
+      examTrapCorrection: {
+        studentAnswerDE: "King uses many metaphors, anaphoras and repetitions in his speech. For example there are chains, a bad check and the phrase I have a dream. This makes the speech very vivid and impressive. (0 / 15 NP)",
+        studentAnswerZH: "0-NP-Fall: Namen nennen ohne Funktion.",
+        fatalFlawPointDE: "Aufzaehlung ohne Wirkungsanalyse: Die Antwort benennt Geraete, erklaert aber keinen einzigen psychologischen Umwandlungsmechanismus und liefert keinen Zeilenbeleg.",
+        fatalFlawPointZH: "报菜名式罗列：点出修辞名称，却无任何心理转化链、无行号引文、无受众效果，属于典型低分万能废话。",
+        examinerVerdictDE: "Klausur-Regel: Reine Aufzaehlung von Stilmitteln ohne Funktionsanalyse bleibt auf AFB I stehen. Gefordert sind praeziser Textbeleg mit Zeilenangabe, Wirkungsmechanismus (Logos/Ethos/Pathos) und Publikumsbezug. Task 1 (Summary) darf zudem keine Wertung enthalten.",
+        examinerVerdictZH: "只罗列修辞名称不分析心理转化功能，最多拿AFB I分。必须给出精确行号引文、作用机制与受众效果；Task 1概括部分严禁掺入评价。",
+        diagnosticOptions: [
+          {
+            id: "diag-correct",
+            textDE: "Die Antwort zaehlt Stilmittel lediglich auf und erklaert deren argumentative Umwandlungsfunktion nicht: Weder Zeilenbeleg noch Logos-Ethos-Pathos-Mechanismus noch Publikumsbezug werden entfaltet.",
+            textZH: "该答案只是罗列修辞名称，完全没有展开其论证转化功能：既无行号引文，也无修辞三角机制，更无受众效果分析。",
+            isCorrect: true,
+            explanationDE: "Diagnose exakt richtig. Der Erwartungshorizont verlangt Beleg plus Funktion plus Wirkung; das Pauschalurteil vivid and impressive erfuellt keinen einzigen AFB-II-Deskriptor.",
+            explanationZH: "诊断正确。评分细则要求引文+机制+效果三件套，vivid and impressive类万能套话一条AFB II踩分点都拿不到。"
+          },
+          {
+            id: "diag-distractor-1",
+            textDE: "Der zentrale Fehler liegt in der Verwechslung von Metapher und Simile: Der Pruefling haette saemtliche Bilder als Vergleiche mit like oder as klassifizieren muessen.",
+            textZH: "关键在于隐喻与明喻的区分：考生本应把所有意象都归类为带like/as的明喻，这才是主要的扣分点。",
+            isCorrect: false,
+            explanationDE: "Falsche Faehrte: Der Text arbeitet fast ausschliesslich mit Metaphern ohne like/as. Die Klassendebatte ist nicht der Hauptpunktabzug.",
+            explanationZH: "迷惑项：文本几乎全是无like/as的隐喻，术语归类之争不是主要扣分点，致命伤是缺失功能分析。"
+          },
+          {
+            id: "diag-distractor-2",
+            textDE: "Der Pruefling haette die historische Leistung der Rede uneingeschraenkt preisen und auf jede kritische Gegenwartspruefung verzichten muessen, da Kritik als Respektlosigkeit gilt.",
+            textZH: "考生本应对演讲无条件歌颂、放弃一切当下批判，因为批评属于不敬。",
+            isCorrect: false,
+            explanationDE: "Fataler Fehlgedanke: AFB III verlangt gerade die dialektische Pruefung (de jure vs. de facto). Reine Lobhudelei bleibt unter dem Hoechstniveau.",
+            explanationZH: "致命误区：AFB III恰恰要求辩证检验（法律层面vs实质层面），无脑吹捧拿不到满分。"
+          }
+        ]
+      },
+      klpTermini: [
+        {
+          termDE: "Promissory note",
+          definitionDE: "Erweiterte Finanzmetapher: Die Verfassung als faelliger Schuldschein; Nichterfuellung ist Vertragsbruch, kein Stilbruch.",
+          termZH: "期票隐喻",
+          definitionZH: "扩展金融隐喻：宪法是到期应付的期票，拒不兑现即违约，而非风格问题。"
+        },
+        {
+          termDE: "Rhetorical triad",
+          definitionDE: "Logos (Verfassungsvertrag) plus Ethos (Lincoln- und Kanzelautoritaet) plus Pathos (Ketten-Crescendo); jedes Geraet braucht eine Umwandlungsfunktion.",
+          termZH: "修辞三角",
+          definitionZH: "Logos契约论证加Ethos权威加冕加Pathos情感动员；每种手段都必须有心理转化功能。"
+        },
+        {
+          termDE: "Anaphora",
+          definitionDE: "Syntaktische Wiederholung (One hundred years later, I have a dream) im Call-and-response-Rhythmus als Pathos-Motor der Mobilisierung.",
+          termZH: "首语从复",
+          definitionZH: "句式重复按呼应节奏推高情感，是情感总动员的引擎。"
+        },
+        {
+          termDE: "Antithesis",
+          definitionDE: "Schroffer Hell-Dunkel-Kontrast (beacon light of hope vs. flames of injustice) als biblische Stilisierung von Emanzipation gegen Finsternis.",
+          termZH: "对偶对照",
+          definitionZH: "光明与黑暗的强烈对立，把解放升格为神圣事业，把隔离钉在道德黑暗面。"
+        },
+        {
+          termDE: "De jure vs. de facto",
+          definitionDE: "Dialektischer Massstab des Comments: rechtliche Meilensteine (Civil Rights Act) gegen fortbestehende strukturelle Ungleichheit pruefen.",
+          termZH: "法律层面与实质层面",
+          definitionZH: "评论的辩证标尺：法律里程碑对照依然存在的结构性不平等。"
+        }
+      ],
+      fehlerquellen: [
+        {
+          trapTitleDE: "Aufzaehlung ohne Wirkungsanalyse",
+          trapDescriptionDE: "Stilmittel werden benannt (chains, bad check, I have a dream), aber kein einziger Umwandlungsmechanismus erklaert und kein Zeilenbeleg geliefert; Pauschalurteil vivid and impressive bleibt AFB I.",
+          trapDescriptionZH: "报菜名式罗列修辞名称，无心理转化链、无行号引文，万能套话只值AFB I。",
+          howToAvoidDE: "Jedes Geraet im Dreischritt Beleg plus Funktion (Logos/Ethos/Pathos) plus Publikumsbezug entfalten."
+        },
+        {
+          trapTitleDE: "Wertung in der Summary",
+          trapDescriptionDE: "Task 1 (Summary) wird mit Lob oder Kritik vermischt, obwohl die Zusammenfassung strikt neutral und ohne Wertung zu bleiben hat.",
+          trapDescriptionZH: "Task 1概括混入评价，而概括必须严格中立、无任何价值判断。",
+          howToAvoidDE: "Summary, Analysis und Comment sauber trennen (Aufgabenart 1.1); Wertung gehoert nur in den Comment."
+        },
+        {
+          trapTitleDE: "Lobhudelei statt dialektischer Pruefung",
+          trapDescriptionDE: "Uneingeschraenktes Preisen der Rede ohne Gegenwartspruefung; AFB III verlangt gerade de jure vs. de facto.",
+          trapDescriptionZH: "无条件歌颂演讲、放弃当下检验，而AFB III恰恰要求辩证检验。",
+          howToAvoidDE: "Historische Leistung wuerdigen und zugleich strukturelle Defizite der Gegenwart pruefen."
+        }
+      ],
+      klausurSatz15NP: {
+        musterSatzDE: "Zwar etablierte King durch die Transposition des Verfassungsversprechens in einen faelligen Schuldschein eine bis heute gueltige moralische Verurteilung der Segregation als Vertragsbruch, dennoch bleibt sein Versprechen de facto uneingeloest, solange strukturelle Ungleichheit in Einkommen, Vermoegen und politischer Teilhabe fortbesteht.",
+        operator: "analysieren",
+        scoringKeywords: [
+          "promissory note",
+          "rhetorical triad",
+          "anaphora",
+          "antithesis",
+          "de jure vs. de facto",
+          "Civil Rights Act"
+        ],
+        explanationZH: "既承认法律制度层面（de jure）的里程碑效力，又以经济社会实质层面（de facto）的结构性鸿沟完成辩证限定，一句覆盖修辞功能与历史评价双重踩分点。"
+      },
+      socraticProbes: [
+        {
+          questionDE: "Ist das Finanzbild vom uneingeloesten Schuldschein blosser Bildschmuck?",
+          questionZH: "“未兑现期票”意象只是装饰性点缀吗？",
+          counterPerspectiveDE: "Im amerikanischen Vertragsverstaendnis ist ein unbezahlter Schuldschein kein Dekor, sondern ein einklagbarer Rechtsbruch."
+        },
+        {
+          questionDE: "Hat Kings Rede das Rassismusproblem ein fuer alle Mal geloest?",
+          questionZH: "金的演讲是否一劳永逸地解决了种族问题？",
+          counterPerspectiveDE: "Rechtliche Meilensteine (de jure) stehen gegen fortbestehende strukturelle Ungleichheit (de facto); pauschale Verurteilung ignoriert zudem Civil Rights Act und Voting Rights Act."
+        }
+      ]
+    }
+  },
 ];
 
 // ---------------------------------------------------------------------------
