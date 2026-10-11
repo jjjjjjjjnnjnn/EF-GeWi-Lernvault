@@ -2097,7 +2097,7 @@ export function SkillTreeCanvas({
                                   stroke="var(--ink)"
                                   strokeWidth="1.6"
                                   className="ink-ripple-wave"
-                                  style={{ transformOrigin: "0px 0px" }}
+                                  style={{ transformOrigin: "center", transformBox: "fill-box" }}
                                   data-testid={`ink-ripple-${node.id}`}
                                 />
                               )}
@@ -2328,7 +2328,7 @@ export function SkillTreeCanvas({
                                 stroke="var(--ink)"
                                 strokeWidth="1.4"
                                 className="ink-ripple-wave"
-                                style={{ transformOrigin: "0px 0px" }}
+                                style={{ transformOrigin: "center", transformBox: "fill-box" }}
                                 data-testid={`ink-ripple-${node.id}`}
                               />
                             )}

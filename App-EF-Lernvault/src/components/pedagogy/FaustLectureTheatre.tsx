@@ -17,7 +17,7 @@ function Scene1GelehrteStage({ lang }: { lang: Lang }) {
   return (
     <div className="flex flex-col justify-between gap-4 font-mono select-none">
       {/* 顶部三态演进切换器 */}
-      <div className="flex items-center justify-between border-b border-[var(--line)]/60 pb-3">
+      <div className="flex items-center justify-between border-b border-[var(--line)] pb-3">
         <span className="text-xs font-bold text-[var(--ink)]">
           {de ? "Fausts Seelenzustand im Studierzimmer:" : "浮士德哥特书斋心境演变:"}
         </span>
@@ -38,7 +38,7 @@ function Scene1GelehrteStage({ lang }: { lang: Lang }) {
             onClick={() => setActiveSphere("erdgeist")}
             className={`px-2 py-0.5 border rounded cursor-pointer transition ${
               activeSphere === "erdgeist"
-                ? "bg-rose-900 text-white border-rose-900"
+                ? "bg-[var(--ink)] text-white border-[var(--ink)]"
                 : "bg-[var(--paper-subtle)] text-[var(--gray)] border-[var(--line)]"
             }`}
           >
@@ -49,7 +49,7 @@ function Scene1GelehrteStage({ lang }: { lang: Lang }) {
             onClick={() => setActiveSphere("glocken")}
             className={`px-2 py-0.5 border rounded cursor-pointer transition ${
               activeSphere === "glocken"
-                ? "bg-emerald-900 text-white border-emerald-900"
+                ? "bg-[var(--ink)] text-white border-[var(--ink)]"
                 : "bg-[var(--paper-subtle)] text-[var(--gray)] border-[var(--line)]"
             }`}
           >
@@ -63,10 +63,10 @@ function Scene1GelehrteStage({ lang }: { lang: Lang }) {
         {activeSphere === "buecher" && (
           <div className="space-y-3">
             <div className="flex items-center justify-between">
-              <span className="font-serif italic text-sm text-[var(--ink)]">
+              <span className="font-serif text-sm text-[var(--ink)]">
                 „Habe nun, ach! Philosophie, Juristerei und Medizin, und leider auch Theologie durchaus studiert...“
               </span>
-              <span className="text-[10px] font-mono text-rose-800 bg-rose-50 px-1.5 py-0.5 border border-rose-200">
+              <span className="text-[10px] font-mono text-[var(--ink)] bg-[var(--paper-subtle)] px-1.5 py-0.5 border border-[var(--line)]">
                 Erkenntnisgrenze
               </span>
             </div>
@@ -88,7 +88,7 @@ function Scene1GelehrteStage({ lang }: { lang: Lang }) {
                 <div className="text-[10px] text-[var(--gray)] mt-1">{de ? "Keine Offenbarung" : "失落的信德"}</div>
               </div>
             </div>
-            <div className="text-[11px] text-[var(--gray)] border-t border-[var(--line)]/50 pt-2">
+            <div className="text-[11px] text-[var(--gray)] border-t border-[var(--line)] pt-2">
               {de
                 ? "↳ Erkenntnis: Wissenschaft liefert nur Worte, kein innerstes Lebensgesetz („dass ich erkenne, was die Welt im Innersten zusammenhält“)."
                 : "↳ 核心洞察：四大经院学科只能提供死字句，无法让浮士德洞悉‘宇宙万物由何种内在核心所维系’。"}
@@ -98,11 +98,11 @@ function Scene1GelehrteStage({ lang }: { lang: Lang }) {
 
         {activeSphere === "erdgeist" && (
           <div className="space-y-3">
-            <div className="flex items-center justify-between text-rose-900">
-              <span className="font-serif italic text-sm">
+            <div className="flex items-center justify-between text-[var(--ink)]">
+              <span className="font-serif text-sm">
                 „Du gleichst dem Geist, den du begreifst, nicht mir!“
               </span>
-              <span className="text-[10px] font-mono text-rose-800 bg-rose-50 px-1.5 py-0.5 border border-rose-200">
+              <span className="text-[10px] font-mono text-[var(--ink)] bg-[var(--paper-subtle)] px-1.5 py-0.5 border border-[var(--line)]">
                 Hybris & Scheitern
               </span>
             </div>
@@ -111,7 +111,7 @@ function Scene1GelehrteStage({ lang }: { lang: Lang }) {
                 ? "Faust beschwört den Erdgeist und wähnt sich als Göttergleicher (Titanismus). Der Erdgeist stößt ihn vernichtend zurück: Der endliche Mensch kann die gewaltige Lebensschöpfung nicht fassen."
                 : "浮士德试图以狂飙突进的‘泰坦巨人精神’（Titanismus）与宇宙地灵平起平坐，却遭到毁灭性鄙夷：有限的人类肉身根本无法承受宏大的宇宙生命力。"}
             </p>
-            <div className="rounded border border-rose-300 bg-rose-50/70 p-2 text-xs text-rose-950 font-bold">
+            <div className="rounded border border-[var(--line)] bg-[var(--paper-subtle)] p-2 text-xs text-[var(--ink)] font-bold">
               {de ? "Folge: Faust greift zur Giftphiole (Suizidversuch als Ausbruch)" : "后果：万念俱灰，浮士德举起毒药瓶试图自尽以强行突破肉身桎梏"}
             </div>
           </div>
@@ -119,11 +119,11 @@ function Scene1GelehrteStage({ lang }: { lang: Lang }) {
 
         {activeSphere === "glocken" && (
           <div className="space-y-3">
-            <div className="flex items-center justify-between text-emerald-900">
-              <span className="font-serif italic text-sm">
+            <div className="flex items-center justify-between text-[var(--ink)]">
+              <span className="font-serif text-sm">
                 „Die Träne quillt, die Erde hat mich wieder!“
               </span>
-              <span className="text-[10px] font-mono text-emerald-800 bg-emerald-50 px-1.5 py-0.5 border border-emerald-200">
+              <span className="text-[10px] font-mono text-[var(--ink)] bg-[var(--paper-subtle)] px-1.5 py-0.5 border border-[var(--line)]">
                 Katharsis & Rettung
               </span>
             </div>
@@ -132,7 +132,7 @@ function Scene1GelehrteStage({ lang }: { lang: Lang }) {
                 ? "Die Glocken des Ostermorgens und die Chorgesänge rufen Kindheitserinnerungen an die Unschuld wach. Nicht der christliche Glaube, sondern die irdische Emotionalität entreißt Faust dem Selbstmord."
                 : "复活节清晨的钟声与天使合唱唤醒了童年记忆中的纯真温情。并非出于神圣宗教信仰，而是源于对‘凡间尘世情感’的眷恋，将毒药瓶从唇边夺下。"}
             </p>
-            <div className="rounded border border-emerald-300 bg-emerald-50/70 p-2 text-xs text-emerald-950 font-bold">
+            <div className="rounded border border-[var(--line)] bg-[var(--paper-subtle)] p-2 text-xs text-[var(--ink)] font-bold">
               {de ? "Überleitung: Faust kehrt zurück ins irdische Leben — bereit für Mephisto" : "转折：重回尘世的浮士德，正敞开灵魂等待靡菲斯特的致命敲门"}
             </div>
           </div>
@@ -153,16 +153,16 @@ function Scene2PaktStage({ lang }: { lang: Lang }) {
     <div className="flex flex-col justify-between gap-4 font-mono select-none">
       {/* 核心赌注条款 */}
       <div className="rounded border border-[var(--line)] bg-[var(--paper)] p-4 space-y-3">
-        <div className="flex items-center justify-between border-b border-[var(--line)]/60 pb-2">
+        <div className="flex items-center justify-between border-b border-[var(--line)] pb-2">
           <span className="font-serif font-bold text-sm text-[var(--ink)]">
             {de ? "Die Pakt-Bedingung (Vers 1699–1706)" : "恶魔赌约绝命条款（第1699-1706行）"}
           </span>
-          <span className="text-[10px] text-amber-900 bg-amber-50 border border-amber-200 px-2 py-0.5">
+          <span className="text-[10px] text-[var(--ink)] bg-[var(--paper-subtle)] border border-[var(--line)] px-2 py-0.5">
             Wette um die Seele
           </span>
         </div>
 
-        <div className="bg-[var(--surface)] p-3 border border-[var(--line)] font-serif italic text-xs leading-relaxed text-[var(--ink)]">
+        <div className="bg-[var(--surface)] p-3 border border-[var(--line)] font-serif text-xs leading-relaxed text-[var(--ink)]">
           „Werd ich zum Augenblicke sagen:<br />
           <strong>Verweile doch! du bist so schön!</strong><br />
           Dann magst du mich in Fesseln schlagen,<br />
@@ -171,17 +171,17 @@ function Scene2PaktStage({ lang }: { lang: Lang }) {
 
         {/* 双灵魂两极张力解构 */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-1">
-          <div className="p-2.5 border border-blue-200 bg-blue-50/60 rounded text-xs">
-            <div className="font-bold text-blue-900 mb-1">Trieb 1: Geistiges Streben</div>
-            <div className="text-[11px] text-blue-950 leading-tight">
+          <div className="p-2.5 border border-[var(--line)] bg-[var(--paper-subtle)] rounded text-xs">
+            <div className="font-bold text-[var(--ink)] mb-1">Trieb 1: Geistiges Streben</div>
+            <div className="text-[11px] text-[var(--ink)] leading-tight">
               {de
                 ? "Unendlicher Drang nach Erkenntnis, Erfahrung und Welterfassung (Titanismus)."
                 : "向上探索：对宇宙终极奥秘与崇高境界的不倦求索（泰坦精神）。"}
             </div>
           </div>
-          <div className="p-2.5 border border-rose-200 bg-rose-50/60 rounded text-xs">
-            <div className="font-bold text-rose-900 mb-1">Trieb 2: Sinnliche Gier</div>
-            <div className="text-[11px] text-rose-950 leading-tight">
+          <div className="p-2.5 border border-[var(--line)] bg-[var(--paper-subtle)] rounded text-xs">
+            <div className="font-bold text-[var(--ink)] mb-1">Trieb 2: Sinnliche Gier</div>
+            <div className="text-[11px] text-[var(--ink)] leading-tight">
               {de
                 ? "Haften an der Welt mit klammernden Organen, Rausch und Verführung (Mephisto)."
                 : "向下沉沦：狂暴的感官欲望、肉欲宣泄与恶魔诱惑。"}
@@ -190,7 +190,7 @@ function Scene2PaktStage({ lang }: { lang: Lang }) {
         </div>
 
         {/* 契约签名交互 */}
-        <div className="pt-2 flex items-center justify-between border-t border-[var(--line)]/50">
+        <div className="pt-2 flex items-center justify-between border-t border-[var(--line)]">
           <span className="text-xs text-[var(--gray)]">
             {de ? "Pakt mit Blut besiegelt:" : "羊皮纸血字契约:"}
           </span>
@@ -199,13 +199,13 @@ function Scene2PaktStage({ lang }: { lang: Lang }) {
             onClick={() => setSigned(!signed)}
             className={`px-3 py-1 text-xs border rounded font-mono font-bold transition cursor-pointer ${
               signed
-                ? "bg-rose-900 text-white border-rose-900"
+                ? "bg-[var(--ink)] text-white border-[var(--ink)]"
                 : "bg-[var(--paper-subtle)] hover:bg-[var(--line)] text-[var(--ink)] border-[var(--line)]"
             }`}
           >
             {signed
               ? (de ? "✓ Blutpakt unterzeichnet" : "✓ 已用鲜血签约 (Blut ist ein besondrer Saft)")
-              : (de ? "Blut-Unterschrift leisten ✍" : "按手印血书立约 ✍")}
+              : (de ? "Blut-Unterschrift leisten" : "按手印血书立约")}
           </button>
         </div>
       </div>
@@ -223,7 +223,7 @@ function Scene3VerfuehrungStage({ lang }: { lang: Lang }) {
   return (
     <div className="flex flex-col justify-between gap-4 font-mono select-none">
       {/* 诱惑四阶梯步进器 */}
-      <div className="flex items-center justify-between border-b border-[var(--line)]/60 pb-3 text-xs">
+      <div className="flex items-center justify-between border-b border-[var(--line)] pb-3 text-xs">
         <span className="font-bold text-[var(--ink)]">
           {de ? "Die Verführungskette:" : "靡菲斯特操弄的诱惑链条:"}
         </span>
@@ -252,7 +252,7 @@ function Scene3VerfuehrungStage({ lang }: { lang: Lang }) {
               <span className="font-bold text-xs text-[var(--ink)]">
                 {de ? "1. Hexenküche (Verjüngungstrunk)" : "1. 魔女之室：返老还童魔药"}
               </span>
-              <span className="text-[10px] text-amber-900 bg-amber-50 px-1.5 py-0.5 border border-amber-200">
+              <span className="text-[10px] text-[var(--ink)] bg-[var(--paper-subtle)] px-1.5 py-0.5 border border-[var(--line)]">
                 Sinnliche Transformation
               </span>
             </div>
@@ -270,11 +270,11 @@ function Scene3VerfuehrungStage({ lang }: { lang: Lang }) {
               <span className="font-bold text-xs text-[var(--ink)]">
                 {de ? "2. Begegnung auf der Straße (Distanzüberschreitung)" : "2. 街头拦路：越界的狂妄搭讪"}
               </span>
-              <span className="text-[10px] text-rose-900 bg-rose-50 px-1.5 py-0.5 border border-rose-200">
+              <span className="text-[10px] text-[var(--ink)] bg-[var(--paper-subtle)] px-1.5 py-0.5 border border-[var(--line)]">
                 Übergriffigkeit
               </span>
             </div>
-            <div className="bg-[var(--surface)] p-2.5 border border-[var(--line)] font-serif italic text-xs leading-relaxed">
+            <div className="bg-[var(--surface)] p-2.5 border border-[var(--line)] font-serif text-xs leading-relaxed">
               Faust: „Mein schönes Fräulein, darf ich wagen, meinen Arm und Schutz Ihr anzutragen?“<br />
               Gretchen: „Bin weder Fräulein, weder schön, kann ungeleitet nach Hause gehn.“
             </div>
@@ -292,7 +292,7 @@ function Scene3VerfuehrungStage({ lang }: { lang: Lang }) {
               <span className="font-bold text-xs text-[var(--ink)]">
                 {de ? "3. Das Schmuckkästchen (Infiltration der Unschuld)" : "3. 首饰盒暗入闺房：虚荣心破防"}
               </span>
-              <span className="text-[10px] text-purple-900 bg-purple-50 px-1.5 py-0.5 border border-purple-200">
+              <span className="text-[10px] text-[var(--ink)] bg-[var(--paper-subtle)] px-1.5 py-0.5 border border-[var(--line)]">
                 Verführung durch Luxus
               </span>
             </div>
@@ -310,11 +310,11 @@ function Scene3VerfuehrungStage({ lang }: { lang: Lang }) {
               <span className="font-bold text-xs text-[var(--ink)]">
                 {de ? "4. Die Gretchenfrage (Religions-Kluft)" : "4. 格蕾琴之问：灵魂信仰的根本鸿沟"}
               </span>
-              <span className="text-[10px] text-blue-900 bg-blue-50 px-1.5 py-0.5 border border-blue-200">
+              <span className="text-[10px] text-[var(--ink)] bg-[var(--paper-subtle)] px-1.5 py-0.5 border border-[var(--line)]">
                 Zentrales KLP-Motiv
               </span>
             </div>
-            <div className="bg-[var(--surface)] p-2.5 border border-[var(--line)] font-serif italic text-xs leading-relaxed text-[var(--ink)]">
+            <div className="bg-[var(--surface)] p-2.5 border border-[var(--line)] font-serif text-xs leading-relaxed text-[var(--ink)]">
               „Nun sag, wie hast du's mit der Religion? Du bist ein herzlich guter Mann, allein ich glaub, du hältst nicht viel davon.“
             </div>
             <p className="text-xs text-[var(--gray)]">
@@ -337,43 +337,43 @@ function Scene4KatastropheStage({ lang }: { lang: Lang }) {
 
   return (
     <div className="flex flex-col justify-between gap-4 font-mono select-none">
-      <div className="rounded border border-rose-300 bg-rose-50/50 p-4 space-y-3">
-        <div className="flex items-center justify-between border-b border-rose-200 pb-2">
-          <span className="font-bold text-xs text-rose-950">
+      <div className="rounded border border-[var(--line)] bg-[var(--paper-subtle)] p-4 space-y-3">
+        <div className="flex items-center justify-between border-b border-[var(--line)] pb-2">
+          <span className="font-bold text-xs text-[var(--ink)]">
             {de ? "Die vier Stufen der Gretchentragödie (Die Opfer des Strebens)" : "格蕾琴悲剧的四重血泪连锁（求索的惨重代价）"}
           </span>
-          <span className="text-[10px] text-rose-800 bg-white border border-rose-300 px-2 py-0.5">
+          <span className="text-[10px] text-[var(--ink)] bg-[var(--surface)] border border-[var(--line)] px-2 py-0.5">
             4 Fache Schuld
           </span>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
-          <div className="p-2.5 border border-rose-200 bg-white rounded">
-            <div className="font-bold text-rose-950">1. Tod der Mutter (Schlaftrunk)</div>
+          <div className="p-2.5 border border-[var(--line)] bg-[var(--surface)] rounded">
+            <div className="font-bold text-[var(--ink)]">1. Tod der Mutter (Schlaftrunk)</div>
             <div className="text-[11px] text-[var(--gray)] mt-1">
               {de
                 ? "Um ungestört zu sein, reicht Gretchen ihrer Mutter einen Trank von Faust — die Mutter erwacht nie mehr."
                 : "母亲猝死：为行私会，格蕾琴喂母饮下浮士德配制的安眠药水，致母暴毙。"}
             </div>
           </div>
-          <div className="p-2.5 border border-rose-200 bg-white rounded">
-            <div className="font-bold text-rose-950">2. Brudermord (Valentin)</div>
+          <div className="p-2.5 border border-[var(--line)] bg-[var(--surface)] rounded">
+            <div className="font-bold text-[var(--ink)]">2. Brudermord (Valentin)</div>
             <div className="text-[11px] text-[var(--gray)] mt-1">
               {de
                 ? "Gretchens Bruder verteidigt ihre Ehre. Faust ersticht ihn feige mit Mephistos teuflischer Führung."
                 : "手足相残：兄长瓦伦廷为妹妹名誉拔剑决斗，被浮士德在恶魔幻术暗算下卑劣刺死。"}
             </div>
           </div>
-          <div className="p-2.5 border border-rose-200 bg-white rounded">
-            <div className="font-bold text-rose-950">3. Verstoßung & Dom-Qual</div>
+          <div className="p-2.5 border border-[var(--line)] bg-[var(--surface)] rounded">
+            <div className="font-bold text-[var(--ink)]">3. Verstoßung & Dom-Qual</div>
             <div className="text-[11px] text-[var(--gray)] mt-1">
               {de
                 ? "Gretchen wird von der Gesellschaft als 'Hure' geächtet. Im Dom quält der Böse Geist ihr Gewissen."
                 : "被逐绝境：未婚先孕受尽街坊唾骂；大教堂内在哀歌声中被恶灵折磨至近乎崩溃。"}
             </div>
           </div>
-          <div className="p-2.5 border border-rose-200 bg-white rounded">
-            <div className="font-bold text-rose-950">4. Kindsmord im Wahnsinn</div>
+          <div className="p-2.5 border border-[var(--line)] bg-[var(--surface)] rounded">
+            <div className="font-bold text-[var(--ink)]">4. Kindsmord im Wahnsinn</div>
             <div className="text-[11px] text-[var(--gray)] mt-1">
               {de
                 ? "Im Delirium ertränkt Gretchen ihr neugeborenes Kind im Weiher — sie wird zum Tode verurteilt."
@@ -382,7 +382,7 @@ function Scene4KatastropheStage({ lang }: { lang: Lang }) {
           </div>
         </div>
 
-        <div className="p-2 bg-white/80 border border-rose-200 text-[11px] text-rose-950">
+        <div className="p-2 bg-[var(--surface)] border border-[var(--line)] text-[11px] text-[var(--ink)]">
           <strong>Klausur-Erkenntnis:</strong> Fausts Titanismus bleibt nicht privat — seine unbändige Selbstenfaltung vernichtet die sozial schwächere Frau in der patriarchalen Ständegesellschaft.
         </div>
       </div>
@@ -399,35 +399,35 @@ function Scene5KerkerStage({ lang }: { lang: Lang }) {
   return (
     <div className="flex flex-col justify-between gap-4 font-mono select-none">
       <div className="rounded border border-[var(--line)] bg-[var(--paper)] p-4 space-y-4">
-        <div className="flex items-center justify-between border-b border-[var(--line)]/60 pb-2">
+        <div className="flex items-center justify-between border-b border-[var(--line)] pb-2">
           <span className="font-serif font-bold text-sm text-[var(--ink)]">
             {de ? "Die Kerker-Szene: Die Doppel-Stimme (Gericht vs. Gnade)" : "死牢之夜：双重终审之声（判决与恩典）"}
           </span>
-          <span className="text-[10px] text-blue-900 bg-blue-50 border border-blue-200 px-2 py-0.5">
+          <span className="text-[10px] text-[var(--ink)] bg-[var(--paper-subtle)] border border-[var(--line)] px-2 py-0.5">
             Abitur-Synthese
           </span>
         </div>
 
         {/* 恶魔与上天的终极对峙 */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-          <div className="p-3 border border-rose-300 bg-rose-50/70 rounded">
-            <div className="text-xs font-bold text-rose-900">Mephisto (Irdisches Strafrecht):</div>
-            <div className="font-serif italic text-base text-rose-950 my-1">
+          <div className="p-3 border border-[var(--line)] bg-[var(--paper-subtle)] rounded">
+            <div className="text-xs font-bold text-[var(--ink)]">Mephisto (Irdisches Strafrecht):</div>
+            <div className="font-serif text-base text-[var(--ink)] my-1">
               „Sie ist gerichtet!“
             </div>
-            <div className="text-[11px] text-rose-900/80">
+            <div className="text-[11px] text-[var(--ink)]">
               {de
                 ? "Für die weltliche Ordnung und den Teufel ist Gretchen schuldig des Kindsmordes und dem Henker verfallen."
                 : "就世俗法律与恶魔而言：罪证确凿，杀婴当诛，肉身与灵魂皆入地狱。"}
             </div>
           </div>
 
-          <div className="p-3 border border-emerald-300 bg-emerald-50/70 rounded">
-            <div className="text-xs font-bold text-emerald-900">Stimme von oben (Göttliche Gnade):</div>
-            <div className="font-serif italic text-base text-emerald-950 my-1">
+          <div className="p-3 border border-[var(--line)] bg-[var(--paper-subtle)] rounded">
+            <div className="text-xs font-bold text-[var(--ink)]">Stimme von oben (Göttliche Gnade):</div>
+            <div className="font-serif text-base text-[var(--ink)] my-1">
               „Ist gerettet!“
             </div>
-            <div className="text-[11px] text-emerald-900/80">
+            <div className="text-[11px] text-[var(--ink)]">
               {de
                 ? "Weil sie die Flucht mit Mephisto ablehnt und sich Gott anheimgibt, empfängt Gretchen Erlösung."
                 : "因拒绝恶魔同流合污、坦然承受世俗罪责交托上帝，灵魂获得崇高神圣救赎。"}
@@ -436,7 +436,7 @@ function Scene5KerkerStage({ lang }: { lang: Lang }) {
         </div>
 
         {/* 歌德论证双轨终审天平 */}
-        <div className="border-t border-[var(--line)]/60 pt-3">
+        <div className="border-t border-[var(--line)] pt-3">
           <div className="text-xs font-bold text-[var(--ink)] mb-1.5">
             {de ? "Dialektik der Faust-Tragödie für die Abitur-Klausur:" : "德国高考作文终极双轨辩证总成:"}
           </div>

@@ -269,7 +269,7 @@ export const GEWI_TEXT_REGISTRY: GeWiTextExcerpt[] = [
         explanationDE:
           "Fausts Krise ist keine materielle, sondern eine fundamentale Sinn- und Erkenntniskrise der Moderne.",
         explanationZH:
-          "【✅ 正解依据与文本锚点】\n第 354–359 行直接宣告了经院理性的破产：\n„Habe nun, ach! Philosophie... durchaus studiert... Da steh ich nun, ich armer Tor! Und bin so klug als wie zuvor;“\n1. 四大学科穷尽后的虚无：哲学、法学、医学乃至最高的神学，均无法回答生命的终极意义；\n2. 经院头衔的异化：所谓硕士、博士只是名分标签，在真正的造化真理面前完全苍白无力；\n3. 认识论悲剧：从‘自知其无知’（V. 364: daß wir nichts wissen können）到主体存在的窒息感。\n\n【❌ 干扰项逐项诊断】\n• 选项 B 诊断（庸俗化解构）：浮士德在后续诗行明确表明不求黄金财富（„Weder Geld noch Gut“），将崇高存在主义痛苦歪曲为金钱计较是严重审题失误；\n• 选项 C 诊断（事实性倒错）：书斋四壁皆是发黄故纸书籍（V. 385: tu nicht mehr in Worten kramen），他的痛苦恰恰源于书太多而非书不够。\n\n【🏛 时代思潮与哲学脉络】\n此处标志着从启蒙时代对「理性万能」的崇拜，转向狂飙突进运动（Sturm und Drang）对「生命本真体验」与「自然整体感」的热烈呼唤。",
+          "【正解依据与文本锚点】\n第 354–359 行直接宣告了经院理性的破产：\n„Habe nun, ach! Philosophie... durchaus studiert... Da steh ich nun, ich armer Tor! Und bin so klug als wie zuvor;“\n1. 四大学科穷尽后的虚无：哲学、法学、医学乃至最高的神学，均无法回答生命的终极意义；\n2. 经院头衔的异化：所谓硕士、博士只是名分标签，在真正的造化真理面前完全苍白无力；\n3. 认识论悲剧：从‘自知其无知’（V. 364: daß wir nichts wissen können）到主体存在的窒息感。\n\n【干扰项逐项诊断】\n• 选项 B 诊断（庸俗化解构）：浮士德在后续诗行明确表明不求黄金财富（„Weder Geld noch Gut“），将崇高存在主义痛苦歪曲为金钱计较是严重审题失误；\n• 选项 C 诊断（事实性倒错）：书斋四壁皆是发黄故纸书籍（V. 385: tu nicht mehr in Worten kramen），他的痛苦恰恰源于书太多而非书不够。\n\n【时代思潮与哲学脉络】\n此处标志着从启蒙时代对「理性万能」的崇拜，转向狂飙突进运动（Sturm und Drang）对「生命本真体验」与「自然整体感」的热烈呼唤。",
         klausurSatzDE:
           "Goethe inszeniert Fausts Eingangsmonolog als radikale Abrechnung mit der scholastischen Wissenschaftstradition: Das rationale Wissensstreben scheitert an der Unerkennbarkeit des transzendenten Weltzusammenhangs.",
         klausurSatzZH:
@@ -323,7 +323,7 @@ export const GEWI_TEXT_REGISTRY: GeWiTextExcerpt[] = [
         explanationDE:
           "Das Faustische Streben überwindet den Rationalismus zugunsten pantheistischer Ganzheitserkenntnis.",
         explanationZH:
-          "【✅ 正解依据与文本锚点】\n第 382–385 行是全书乃至歌德自然哲学的最高纲领：\n„Daß ich erkenne, was die Welt / Im Innersten zusammenhält, / Schau alle Wirkenskraft und Samen, / Und tu nicht mehr in Worten kramen.“\n1. 泛神论（Pantheismus）自然观：受斯宾诺莎（Spinoza）影响，歌德视大自然为生机勃勃的神圣整体；\n2. 拒绝死字句（Worten kramen）：科学不应是纸面逻辑的自我繁殖，而应是对原初力量（Urkräfte）的真切感知；\n3. 泰坦式精神（Titanismus）：人类主体以有限身躯，悍然向无限神性宇宙发起冲锋。\n\n【❌ 干扰项逐项诊断】\n• 选项 B 诊断（经院神学倒错）：浮士德在第 356 行已将神学视为最大的失望，绝不可能走回头路去论证教皇通谕；\n• 选项 C 诊断（机械论错位）：牛顿与笛卡尔式的机械钟表宇宙观恰恰是歌德终其一生猛烈批判的对象，浮士德要的是活的有机体（Organismus）而非发条齿轮。\n\n【🏛 时代思潮与哲学脉络】\n魏玛古典主义与早期浪漫主义共同的人文主义理想：人必须在理智与感性之间建立完整和谐，拒斥将世界客体化为无生命的材料。",
+          "【正解依据与文本锚点】\n第 382–385 行是全书乃至歌德自然哲学的最高纲领：\n„Daß ich erkenne, was die Welt / Im Innersten zusammenhält, / Schau alle Wirkenskraft und Samen, / Und tu nicht mehr in Worten kramen.“\n1. 泛神论（Pantheismus）自然观：受斯宾诺莎（Spinoza）影响，歌德视大自然为生机勃勃的神圣整体；\n2. 拒绝死字句（Worten kramen）：科学不应是纸面逻辑的自我繁殖，而应是对原初力量（Urkräfte）的真切感知；\n3. 泰坦式精神（Titanismus）：人类主体以有限身躯，悍然向无限神性宇宙发起冲锋。\n\n【干扰项逐项诊断】\n• 选项 B 诊断（经院神学倒错）：浮士德在第 356 行已将神学视为最大的失望，绝不可能走回头路去论证教皇通谕；\n• 选项 C 诊断（机械论错位）：牛顿与笛卡尔式的机械钟表宇宙观恰恰是歌德终其一生猛烈批判的对象，浮士德要的是活的有机体（Organismus）而非发条齿轮。\n\n【时代思潮与哲学脉络】\n魏玛古典主义与早期浪漫主义共同的人文主义理想：人必须在理智与感性之间建立完整和谐，拒斥将世界客体化为无生命的材料。",
         klausurSatzDE:
           "Das Faustische Streben artikuliert sich als metaphysischer Pantheismus: Ziel der Erkenntnis ist nicht die analytische Sezierung von Phänomenen, sondern das schöpferische Einswerden mit den dynamischen Urkräften des Kosmos.",
         klausurSatzZH:
@@ -524,7 +524,7 @@ export const GEWI_TEXT_REGISTRY: GeWiTextExcerpt[] = [
         explanationDE:
           "Faust bindet sein Seelenheil nicht an Fristen, sondern an den Stillstand seines Strebens.",
         explanationZH:
-          "【✅ 正解依据与文本锚点】\n第 1692–1699 行是全剧的核心法理机制：\n„Werd ich zum Augenblicke sagen: / Verweile doch! du bist so schön! / Dann magst du mich in Fesseln schlagen...“\n1. 赌注是‘精神停滞’：歌德颠覆了1587年民间书固定24年的卖身买卖，将其升华为形而上学意志对决；\n2. 浮士德的胜算底气：他深信有限的肉欲欢愉无法填饱无限的超越性欲望；\n3. 存在主义自律：人唯一的真正毁灭是放弃进取（V. 1703: Wie ich beharre, bin ich Knecht）。\n\n【❌ 干扰项逐项诊断】\n• 选项 B 诊断（小人度君子）：浮士德在此处展现的是坦荡决绝的泰坦英雄气魄，‘视死如归’（Dann will ich gern zugrunde gehn!），绝非钻法律空子的老赖；\n• 选项 C 诊断（解构戏剧张力）：梅菲斯特的超自然身份是全剧推动力，将其视为杂耍彻底消解了悲剧的崇高与沉重。\n\n【🏛 时代思潮与哲学脉络】\n契合魏玛古典主义伦理学：生命即是行动（In der Tat），最大的罪过不是迷惘犯错，而是怠惰与停滞（Trägheit und Stillstand）。",
+          "【正解依据与文本锚点】\n第 1692–1699 行是全剧的核心法理机制：\n„Werd ich zum Augenblicke sagen: / Verweile doch! du bist so schön! / Dann magst du mich in Fesseln schlagen...“\n1. 赌注是‘精神停滞’：歌德颠覆了1587年民间书固定24年的卖身买卖，将其升华为形而上学意志对决；\n2. 浮士德的胜算底气：他深信有限的肉欲欢愉无法填饱无限的超越性欲望；\n3. 存在主义自律：人唯一的真正毁灭是放弃进取（V. 1703: Wie ich beharre, bin ich Knecht）。\n\n【干扰项逐项诊断】\n• 选项 B 诊断（小人度君子）：浮士德在此处展现的是坦荡决绝的泰坦英雄气魄，‘视死如归’（Dann will ich gern zugrunde gehn!），绝非钻法律空子的老赖；\n• 选项 C 诊断（解构戏剧张力）：梅菲斯特的超自然身份是全剧推动力，将其视为杂耍彻底消解了悲剧的崇高与沉重。\n\n【时代思潮与哲学脉络】\n契合魏玛古典主义伦理学：生命即是行动（In der Tat），最大的罪过不是迷惘犯错，而是怠惰与停滞（Trägheit und Stillstand）。",
         klausurSatzDE:
           "Durch die Umwandlung des mittelalterlichen Paktes in eine Wette (V. 1692ff.) emanzipiert sich Faust als autonomes Subjekt: Seine Existenz scheitert erst im Moment passiver Genusssättigung.",
         klausurSatzZH:
@@ -709,7 +709,7 @@ export const GEWI_TEXT_REGISTRY: GeWiTextExcerpt[] = [
         explanationDE:
           "Büchner formuliert einen proto-marxistischen Materialismus: Das Sein bestimmt das moralische Bewusstsein.",
         explanationZH:
-          "【✅ 正解依据与文本锚点】\n第 12–15 行是毕希纳现实主义戏剧的定海神针：\n„Wir arme Leut – Sehn Sie, Herr Hauptmann: Geld, Geld! Wer kein Geld hat – Da setz einmal einer seinesgleichen auf die Moral in der Welt! Man hat auch sein Fleisch und Blut.“\n1. 经济基础决定道德意识（Soziale Determination）：贫困剥夺了穷人遵守市民道德的形式条件；\n2. 伪善的连长话语：连长整天吃饱了撑的叹息时间太多（Langeweile），却要求食不果腹的士兵恪守教规；\n3. 天堂打雷隐喻（Groteske Metapher）：阶级压迫在沃伊采克眼中甚至连上帝的天国都无法赦免。\n\n【❌ 干扰项逐项诊断】\n• 选项 B 诊断（消费主义庸俗化）：沃伊采克每天只靠吃医生给的豌豆、拿几分钱微薄收入补贴家用，把生存绝境曲解为买首饰是典型错误；\n• 选项 C 诊断（彻底颠倒角色立场）：沃伊采克在全场是用圣经真言（Lasset die Kleinen...）猛烈反击长官的伪善，绝非屈膝认同。\n\n【🏛 时代思潮与哲学脉络】\n三月前夕（Vormärz）革命先驱毕希纳在《黑森信使》（Der Hessische Landbote）中提出「和平归于茅舍，战争引向宫廷（Friede den Hütten! Krieg den Palästen!）」，本幕正是这一革命纲领的文学绝响。",
+          "【正解依据与文本锚点】\n第 12–15 行是毕希纳现实主义戏剧的定海神针：\n„Wir arme Leut – Sehn Sie, Herr Hauptmann: Geld, Geld! Wer kein Geld hat – Da setz einmal einer seinesgleichen auf die Moral in der Welt! Man hat auch sein Fleisch und Blut.“\n1. 经济基础决定道德意识（Soziale Determination）：贫困剥夺了穷人遵守市民道德的形式条件；\n2. 伪善的连长话语：连长整天吃饱了撑的叹息时间太多（Langeweile），却要求食不果腹的士兵恪守教规；\n3. 天堂打雷隐喻（Groteske Metapher）：阶级压迫在沃伊采克眼中甚至连上帝的天国都无法赦免。\n\n【干扰项逐项诊断】\n• 选项 B 诊断（消费主义庸俗化）：沃伊采克每天只靠吃医生给的豌豆、拿几分钱微薄收入补贴家用，把生存绝境曲解为买首饰是典型错误；\n• 选项 C 诊断（彻底颠倒角色立场）：沃伊采克在全场是用圣经真言（Lasset die Kleinen...）猛烈反击长官的伪善，绝非屈膝认同。\n\n【时代思潮与哲学脉络】\n三月前夕（Vormärz）革命先驱毕希纳在《黑森信使》（Der Hessische Landbote）中提出「和平归于茅舍，战争引向宫廷（Friede den Hütten! Krieg den Palästen!）」，本幕正是这一革命纲领的文学绝响。",
         klausurSatzDE:
           "Büchner dekonstruiert die bürgerliche Morallehre als ideologisches Herrschaftsinstrument: Woyzecks Replik entlarvt die materielle Gebundenheit jeglicher Ethik (»Geld, Geld!«) und antizipiert den historischen Materialismus.",
         klausurSatzZH:
@@ -835,7 +835,7 @@ export const GEWI_TEXT_REGISTRY: GeWiTextExcerpt[] = [
         explanationDE:
           "Kants Deontologie begründet die Pflicht a priori aus reiner Vernunft, unabhängig von Neigungen und Konsequenzen.",
         explanationZH:
-          "【✅ 正解依据与文本锚点】\n康德伦理学的核心建构：\n1. 假言命令（Hypothetischer Imperativ）：格式为‘如果你想要目的 X，你就必须做手段 Y’。它完全受制于经验爱好（Neigung）与功利结果，不具备普世约束力；\n2. 定言命令（Kategorischer Imperativ）：格式为‘你应当！’（Du sollst!）。无条件的绝对命令（unbedingt），行动自身即是目的，绝不可沦为达成其他目的的工具；\n3. 自律原则（Autonomie des Willens）：道德律令不是上帝或外在社会强加的他律，而是理性存在者自身的实践理性立法。\n\n【❌ 干扰项逐项诊断】\n• 选项 B 诊断（特权阶层误读）：康德的道德律令面向一切具备理性的存在者（alle vernünftigen Wesen），在道德法则面前众生平等，绝无阶级官职差异；\n• 选项 C 诊断（荒诞倒错）：康德哲学是纯粹实践理性的批判（Kritik der reinen praktischen Vernunft），坚决排斥神秘主义与宗教他律盲从。\n\n【🏛 时代思潮与哲学脉络】\n欧洲启蒙运动的核心口号：人作为目的自身（Zweck an sich selbst）。康德以此彻底终结了功利主义把人工具化的可能，奠定了现代人权宪政的哲学基石。",
+          "【正解依据与文本锚点】\n康德伦理学的核心建构：\n1. 假言命令（Hypothetischer Imperativ）：格式为‘如果你想要目的 X，你就必须做手段 Y’。它完全受制于经验爱好（Neigung）与功利结果，不具备普世约束力；\n2. 定言命令（Kategorischer Imperativ）：格式为‘你应当！’（Du sollst!）。无条件的绝对命令（unbedingt），行动自身即是目的，绝不可沦为达成其他目的的工具；\n3. 自律原则（Autonomie des Willens）：道德律令不是上帝或外在社会强加的他律，而是理性存在者自身的实践理性立法。\n\n【干扰项逐项诊断】\n• 选项 B 诊断（特权阶层误读）：康德的道德律令面向一切具备理性的存在者（alle vernünftigen Wesen），在道德法则面前众生平等，绝无阶级官职差异；\n• 选项 C 诊断（荒诞倒错）：康德哲学是纯粹实践理性的批判（Kritik der reinen praktischen Vernunft），坚决排斥神秘主义与宗教他律盲从。\n\n【时代思潮与哲学脉络】\n欧洲启蒙运动的核心口号：人作为目的自身（Zweck an sich selbst）。康德以此彻底终结了功利主义把人工具化的可能，奠定了现代人权宪政的哲学基石。",
         klausurSatzDE:
           "Kant begründet eine deontologische Pflichtethik: Der kategorische Imperativ fordert die Überprüfung der subjektiven Handlungsmaxime auf ihre logische Universalisierbarkeit (Gesetzesformel), frei von heteronomen Zweck-Mittel-Kalkülen.",
         klausurSatzZH:
@@ -957,7 +957,7 @@ export const GEWI_TEXT_REGISTRY: GeWiTextExcerpt[] = [
         explanationDE:
           "In der politischen Theorie von Ernst Fraenkel ist der Kompromiss das Herzstück pluralistischer Demokratien.",
         explanationZH:
-          "【✅ 正解依据与文本锚点】\n第 3–5 行直击现代政治学的核心常识：\n„Wer den Kompromiss verachtet, der verachtet den Kern der parlamentarischen Demokratie... Lassen Sie uns nicht übereinander reden, sondern miteinander!“\n1. 弗兰克尔（Ernst Fraenkel）多元主义民主理论：社会必然存在异质性分歧（Dissens），民主不是消灭分歧，而是规范分歧；\n2. 妥协的崇高价值：妥协不是软弱放弃，而是承认彼此合法性的最高政治智慧；\n3. 警惕民粹主义（Populismus）：民粹派往往宣称代表唯一不可分割的人民公意，将妥协污名化为背叛，这是对民主体制最大的内生性腐蚀。\n\n【❌ 干扰项逐项诊断】\n• 选项 B 诊断（民粹主义负面定性）：将理性妥协抹黑为欺诈，恰恰是施泰因迈尔所猛烈警示与反击的政治极化思潮；\n• 选项 C 诊断（科技幻想乱入）：国家元首旨在捍卫基本法第一条人性尊严与代议民主，绝无可能鼓吹技术威权主义。\n\n【🏛 时代思潮与哲学脉络】\n哈贝马斯（Jürgen Habermas）沟通行动理论（Theorie des kommunikativen Handelns）：民主合法性源自无强迫的商谈与论辩交往过程。",
+          "【正解依据与文本锚点】\n第 3–5 行直击现代政治学的核心常识：\n„Wer den Kompromiss verachtet, der verachtet den Kern der parlamentarischen Demokratie... Lassen Sie uns nicht übereinander reden, sondern miteinander!“\n1. 弗兰克尔（Ernst Fraenkel）多元主义民主理论：社会必然存在异质性分歧（Dissens），民主不是消灭分歧，而是规范分歧；\n2. 妥协的崇高价值：妥协不是软弱放弃，而是承认彼此合法性的最高政治智慧；\n3. 警惕民粹主义（Populismus）：民粹派往往宣称代表唯一不可分割的人民公意，将妥协污名化为背叛，这是对民主体制最大的内生性腐蚀。\n\n【干扰项逐项诊断】\n• 选项 B 诊断（民粹主义负面定性）：将理性妥协抹黑为欺诈，恰恰是施泰因迈尔所猛烈警示与反击的政治极化思潮；\n• 选项 C 诊断（科技幻想乱入）：国家元首旨在捍卫基本法第一条人性尊严与代议民主，绝无可能鼓吹技术威权主义。\n\n【时代思潮与哲学脉络】\n哈贝马斯（Jürgen Habermas）沟通行动理论（Theorie des kommunikativen Handelns）：民主合法性源自无强迫的商谈与论辩交往过程。",
         klausurSatzDE:
           "Steinmeier fundiert seine demokratietheoretische Argumentation auf der Notwendigkeit einer reflexiven Streitkultur: Der Kompromiss fungiert als friedensstiftender Mechanismus pluralistischer Willensbildung, der totalitären Absolutheitsansprüchen vorbeugt.",
         klausurSatzZH:
@@ -1126,7 +1126,7 @@ export const GEWI_TEXT_REGISTRY: GeWiTextExcerpt[] = [
         explanationDE:
           "Shakespeare's tragic hero confronts the nihilistic abyss after violating the natural order (Great Chain of Being).",
         explanationZH:
-          "【✅ 正解依据与文本锚点】\n第 23–28 行是文艺复兴悲剧的至高经典：\n„Out, out, brief candle! / Life's but a walking shadow, a poor player... / It is a tale / Told by an idiot, full of sound and fury, / Signifying nothing.“\n1. 烛火隐喻（Brief candle）：脆弱易逝的物质肉身；\n2. 戏子隐喻（Poor player & Theatrum mundi）：人在命运与权力诱惑面前不过是傀儡戏偶；\n3. 喧哗与骚动（Sound and fury, signifying nothing）：背叛良知篡位夺权的血腥历程，最终被时间归零为纯粹的虚无。\n\n【❌ 干扰项逐项诊断】\n• 选项 B 诊断（字面化降智解构）：将世界文学中最深沉的存在主义形而上学悲叹，误解为对剧场演员的挑剔吐槽；\n• 选项 C 诊断（物质实用主义倒错）：将生命烛火的崇高死亡隐喻曲解为节约蜡烛开销，完全丧失了文学审美感受力。\n\n【🏛 时代思潮与哲学脉络】\n伊丽莎白时代的「巨链存在秩序」（Great Chain of Being）：麦克白弑君篡位破坏了神圣自然伦理，不仅导致苏格兰政治流血，更必然导致篡位者自身精神世界的彻底解体与形而上学荒芜。",
+          "【正解依据与文本锚点】\n第 23–28 行是文艺复兴悲剧的至高经典：\n„Out, out, brief candle! / Life's but a walking shadow, a poor player... / It is a tale / Told by an idiot, full of sound and fury, / Signifying nothing.“\n1. 烛火隐喻（Brief candle）：脆弱易逝的物质肉身；\n2. 戏子隐喻（Poor player & Theatrum mundi）：人在命运与权力诱惑面前不过是傀儡戏偶；\n3. 喧哗与骚动（Sound and fury, signifying nothing）：背叛良知篡位夺权的血腥历程，最终被时间归零为纯粹的虚无。\n\n【干扰项逐项诊断】\n• 选项 B 诊断（字面化降智解构）：将世界文学中最深沉的存在主义形而上学悲叹，误解为对剧场演员的挑剔吐槽；\n• 选项 C 诊断（物质实用主义倒错）：将生命烛火的崇高死亡隐喻曲解为节约蜡烛开销，完全丧失了文学审美感受力。\n\n【时代思潮与哲学脉络】\n伊丽莎白时代的「巨链存在秩序」（Great Chain of Being）：麦克白弑君篡位破坏了神圣自然伦理，不仅导致苏格兰政治流血，更必然导致篡位者自身精神世界的彻底解体与形而上学荒芜。",
         klausurSatzDE:
           "Shakespeare dekonstruiert die hybrisgeladene Tyrannei des tragischen Helden durch die Metaphern des theatralischen Scheins und der flüchtigen Kerze: Der Raub der Krone kulminiert im existentiellen Nihilismus der absoluten Sinnlosigkeit (»Signifying nothing«).",
         klausurSatzZH:

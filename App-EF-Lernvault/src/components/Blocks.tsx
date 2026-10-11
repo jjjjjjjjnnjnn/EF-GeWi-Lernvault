@@ -248,7 +248,7 @@ function renderRichTextTokens(text: string, keyPrefix: string): ReactNode {
       parts.push(
         <span
           key={`${keyPrefix}-p-${match.index}`}
-          className="inline-flex items-center text-xs font-mono px-1.5 py-0.5 rounded border border-[var(--gray)]/40 text-[var(--gray)] mx-1 font-normal align-middle"
+          className="inline-flex items-center text-xs font-mono px-1.5 py-0.5 rounded border border-[var(--line)] text-[var(--gray)] mx-1 font-normal align-middle"
         >
           据推断
         </span>
@@ -377,7 +377,7 @@ function InteractiveQuestionCard({ text, lang }: { text: string; lang?: string }
   const antwort = match[2].trim();
 
   return (
-    <div className="my-3 rounded-[var(--radius)] border border-[var(--line)] bg-[var(--surface)] p-4 transition-all hover:border-[var(--accent)]/40 shadow-none">
+    <div className="my-3 rounded-[var(--radius)] border border-[var(--line)] bg-[var(--surface)] p-4 transition-all hover:border-[var(--line)]">
       <div className="flex items-start gap-2.5">
         <span className="shrink-0 font-mono text-xs font-bold uppercase tracking-wider text-[var(--accent)] bg-[var(--accent)]/10 px-2 py-0.5 rounded border border-[var(--accent)]/20 mt-0.5">
           FRAGE
@@ -387,7 +387,7 @@ function InteractiveQuestionCard({ text, lang }: { text: string; lang?: string }
         </div>
       </div>
 
-      <div className="mt-3 pt-3 border-t border-[var(--line)]/60">
+      <div className="mt-3 pt-3 border-t border-[var(--line)]">
         {!revealed ? (
           <button
             type="button"
@@ -464,7 +464,7 @@ function MarkdownTable({ lines }: { lines: string[] }) {
   const bodyRows = headerIndex >= 0 ? parsedRows.filter((_, i) => i !== headerIndex) : parsedRows.slice(1);
 
   return (
-    <div className="my-4 overflow-x-auto rounded-[var(--radius)] border border-[var(--line)] bg-[var(--surface)] shadow-none">
+    <div className="my-4 overflow-x-auto rounded-[var(--radius)] border border-[var(--line)] bg-[var(--surface)]">
       <table className="w-full border-collapse font-sans text-xs">
         {headers && headers.length > 0 && (
           <thead>
@@ -482,7 +482,7 @@ function MarkdownTable({ lines }: { lines: string[] }) {
         )}
         <tbody className="divide-y divide-[var(--line)]">
           {bodyRows.map((row, rIdx) => (
-            <tr key={rIdx} className="hover:bg-[var(--paper-subtle)]/50 transition-colors">
+            <tr key={rIdx} className="hover:bg-[var(--paper-subtle)] transition-colors">
               {row.map((cell, cIdx) => (
                 <td
                   key={cIdx}
@@ -587,7 +587,7 @@ function renderSingleBlock(
             return (
               <div
                 key={i}
-                className="my-2 p-3.5 rounded-[var(--radius)] border border-[var(--line)] bg-[var(--surface)] hover:border-[var(--accent)]/40 transition-colors shadow-none"
+                className="my-2 p-3.5 rounded-[var(--radius)] border border-[var(--line)] bg-[var(--surface)] hover:border-[var(--line)] transition-colors"
               >
                 <div className="flex flex-wrap items-baseline gap-2 mb-1.5">
                   <span className="font-mono text-xs uppercase tracking-wider px-2 py-0.5 rounded-[var(--radius)] bg-[var(--accent)]/10 text-[var(--accent)] font-semibold border border-[var(--accent)]/30">
@@ -647,7 +647,7 @@ function renderSingleBlock(
         if (b.kind === "diagram") {
           if (renderDiagram) return <div key={i}>{renderDiagram(b.text, i)}</div>;
           return (
-            <div key={i} className="my-3.5 rounded-[var(--radius)] border border-[var(--line)] bg-[var(--paper-subtle)] overflow-hidden shadow-none">
+            <div key={i} className="my-3.5 rounded-[var(--radius)] border border-[var(--line)] bg-[var(--paper-subtle)] overflow-hidden">
               <div className="px-3.5 py-1.5 border-b border-[var(--line)] bg-[var(--surface)] flex items-center justify-between text-xs font-mono uppercase tracking-wider text-[var(--gray)]">
                 <div className="flex items-center gap-1.5">
                   <svg
@@ -690,9 +690,9 @@ function renderSingleBlock(
           return (
             <div
               key={i}
-              className="my-4 rounded-[var(--radius)] border border-[var(--accent)]/30 bg-[var(--accent)]/5 p-4 border-l-4 border-l-[var(--accent)] shadow-none"
+              className="my-4 rounded-[var(--radius)] border border-[var(--line)] bg-[var(--paper-subtle)] p-4 border-l-4 border-l-[var(--ink)]"
             >
-              <div className="flex items-center justify-between mb-1.5 pb-1 border-b border-[var(--accent)]/20">
+              <div className="flex items-center justify-between mb-1.5 pb-1 border-b border-[var(--line)]">
                 <div className="flex items-center gap-1.5">
                   <svg
                     width="16"
@@ -767,9 +767,9 @@ function renderSingleBlock(
           return (
             <div
               key={i}
-              className="my-4 p-4 rounded-[var(--radius)] border border-[var(--line)] bg-[var(--surface)] border-l-3 border-l-[var(--gray)] shadow-none"
+              className="my-4 p-4 rounded-[var(--radius)] border border-[var(--line)] bg-[var(--surface)] border-l-3 border-l-[var(--gray)]"
             >
-              <div className="font-mono text-xs uppercase tracking-wider text-[var(--gray)] font-semibold mb-2 flex items-center gap-1.5 pb-1.5 border-b border-[var(--line)]/60">
+              <div className="font-mono text-xs uppercase tracking-wider text-[var(--gray)] font-semibold mb-2 flex items-center gap-1.5 pb-1.5 border-b border-[var(--line)]">
                 <svg
                   width="16"
                   height="16"

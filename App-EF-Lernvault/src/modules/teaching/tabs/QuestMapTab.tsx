@@ -395,9 +395,10 @@ export const QuestMapTab: React.FC<QuestMapTabProps> = ({
     return allNodes.filter((n) => completedSet.has(n.id)).length;
   }, [allNodes, completedSet]);
 
-  const displayStreak = propStreakDays ?? (storeState.streakDays > 0 ? storeState.streakDays : 5);
-  const displayTotalXp = propTotalXp ?? (storeState.totalXp > 0 ? storeState.totalXp : 480);
-  const displayTodayCompleted = propTodayCompletedCount ?? (masteredCount > 0 ? 1 : storeState.todayCompletedCount);
+  // 真实 store 口径：无伪造 fallback（空态由下方 !activeBook 分支承载）
+  const displayStreak = propStreakDays ?? storeState.streakDays;
+  const displayTotalXp = propTotalXp ?? storeState.totalXp;
+  const displayTodayCompleted = propTodayCompletedCount ?? storeState.todayCompletedCount;
   const dailyTargetMinutes = activePlan?.targetDailyMinutes || 12;
 
   const progressPercent = totalQuests > 0 ? Math.round((masteredCount / totalQuests) * 100) : 0;
@@ -830,6 +831,7 @@ export const QuestMapTab: React.FC<QuestMapTabProps> = ({
                             type="button"
                             onClick={() => handleStartQuest(node)}
                             title={lang === "de" ? "Gemeistert · Klicken zum Wiederholen" : "已掌握 · 点击复习"}
+                            style={{ transformOrigin: "center" }}
                             className="w-12 h-12 rounded-full border-2 border-[var(--ink)] bg-[var(--ink)] text-[var(--paper)] flex items-center justify-center cursor-pointer transition-transform hover:scale-105"
                           >
                             <CheckIcon className="w-5 h-5 text-[var(--paper)]" />
@@ -841,6 +843,7 @@ export const QuestMapTab: React.FC<QuestMapTabProps> = ({
                             type="button"
                             onClick={() => handleStartQuest(node)}
                             title={lang === "de" ? "Aktuell verfuegbar · Jetzt starten" : "当前可挑战 · 立即进入"}
+                            style={{ transformOrigin: "center" }}
                             className="w-12 h-12 rounded-full border-4 border-double border-[var(--ink)] bg-[var(--paper)] text-[var(--ink)] flex items-center justify-center cursor-pointer animate-pulse transition-transform hover:scale-105"
                           >
                             <PlayIcon className="w-4 h-4 text-[var(--ink)] ml-0.5" />

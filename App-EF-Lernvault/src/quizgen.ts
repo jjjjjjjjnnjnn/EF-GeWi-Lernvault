@@ -107,17 +107,31 @@ function formatFehlerlogDefizite(evaluations: readonly FehlerlogDefizit[]): stri
 }
 
 export function buildKlausurFehlerlogPatch(input: KlausurFehlerlogPatchInput): string {
+  const defizite = formatFehlerlogDefizite(input.evaluations);
+  const thema = input.thema.replace(/[|]/g, "/");
+  const header = `| Datum | Fach | Thema | Fehlertyp | Eigener Ansatz | 15NP-Muster |`;
+  const sep = `| :--- | :--- | :--- | :--- | :--- | :--- |`;
+  const row = `| ${input.date} | ${input.fach} | ${thema} | ${defizite.replace(/[|]/g, "/")} | Klausur-Drill Eigenansatz pruefen | Belegstelle ${input.notePath} |`;
   return `--- Fehlerlog.md
 +++ Fehlerlog.md
 + - [ ] [${input.fach}] Thema: ${input.thema} (Klausur-Drill)
 +   - Datum: ${input.date}
 +   - Zeit: ${input.time} (Ziel 45 Min)
-+   - Defizite: ${formatFehlerlogDefizite(input.evaluations)}
++   - Defizite: ${defizite}
 +   - Belegstelle: ${input.notePath}
++ ${header}
++ ${sep}
++ ${row}
 `;
 }
 
 export function buildVergleichFehlerlogPatch(input: VergleichFehlerlogPatchInput): string {
+  const thema = input.thema.replace(/[|]/g, "/");
+  const begruendung = (input.justification.trim() || "(keine Angabe)").replace(/[|]/g, "/");
+  const naechstes = (input.nextTime.trim() || "Erst Operator markieren").replace(/[|]/g, "/");
+  const header = `| Datum | Fach | Thema | Fehlertyp | Eigener Ansatz | 15NP-Muster |`;
+  const sep = `| :--- | :--- | :--- | :--- | :--- | :--- |`;
+  const row = `| ${input.date} | ${input.fach} | ${thema} | Vergleich ${input.isCorrect ? "Richtig" : "Falsch"} Option ${input.selectedOption || "-"} | ${begruendung} | ${naechstes} |`;
   return `--- Fehlerlog.md
 +++ Fehlerlog.md
 + - [ ] [${input.fach}] Vergleich: ${input.thema}
@@ -127,6 +141,9 @@ export function buildVergleichFehlerlogPatch(input: VergleichFehlerlogPatchInput
 +   - Begründung: ${input.justification.trim() || "(keine Angabe)"}
 +   - Nächstes Mal: ${input.nextTime.trim() || "Erst Operator markieren"}
 +   - Belegstelle: ${input.sourceRef}
++ ${header}
++ ${sep}
++ ${row}
 `;
 }
 

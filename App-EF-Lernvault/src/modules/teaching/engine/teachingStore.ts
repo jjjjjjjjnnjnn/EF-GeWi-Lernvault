@@ -132,13 +132,31 @@ export function setActiveBook(book: ParsedBookStructure | null): void {
 
 export function getActiveBookId(): string | null {
   const book = getActiveBook();
-  return book ? book.title : null;
+  if (!book) return null;
+  const id = (book as { id?: unknown }).id;
+  return typeof id === "string" && id.length > 0 ? id : book.title;
 }
 
 export function setActiveBookId(id: string | null): void {
-  // 保持与原有引用兼容
-  if (!id && typeof window !== "undefined" && window.localStorage) {
-    window.localStorage.removeItem(TEACHING_ACTIVE_BOOK_KEY);
+  if (typeof window === "undefined" || !window.localStorage) return;
+  try {
+    if (!id) {
+      window.localStorage.removeItem(TEACHING_ACTIVE_BOOK_KEY);
+      return;
+    }
+    const book = getActiveBook();
+    if (book) {
+      (book as { id?: string }).id = id;
+      window.localStorage.setItem(TEACHING_ACTIVE_BOOK_KEY, JSON.stringify(book));
+    } else {
+      // 无整书缓存时存 id 垫片，getActiveBookId 仍可按 id 取回
+      window.localStorage.setItem(
+        TEACHING_ACTIVE_BOOK_KEY,
+        JSON.stringify({ id, title: id, fach: "SoWi", rawInputLength: 0, chapters: [], totalNodes: 0, totalMinutes: 0, dagEdgesCount: 0, createdAt: new Date().toISOString() })
+      );
+    }
+  } catch {
+    // 保护性容错
   }
 }
 
@@ -215,6 +233,10 @@ export function saveTeachingState(state: TeachingStudioState): void {
 
 /* =========================================================================
    Complete Quest Workflow
+   XP 口径统一（全工坊唯一口径）：首次通关按 quest.xp 全额发放；
+   重复温故仅发放 30%（Math.round 下取整口径一致），防刷分。
+   与 InteractiveLessonRunner.completedStepIndices（localStorage 持久化、
+   单步仅结算一次）配合，杜绝同一 step 重复领取 XP。
    ========================================================================= */
 
 export function completeQuest(

@@ -360,11 +360,11 @@ Aufgabe: Formuliere den mathematischen Beweis für dieses Extremum nach den Oper
           <div className="flex items-center gap-1.5 px-2.5 py-1 rounded border border-[var(--line)] bg-[var(--paper)] font-mono text-xs">
             <span className="text-[var(--gray)]">{isDe ? "Status:" : "状态："}</span>
             {calc.isOptimum ? (
-              <span className="font-bold text-emerald-700">✓ {isDe ? "Optimum erreicht!" : "达成极值！"}</span>
+              <span className="font-bold text-[var(--ink)]">✓ {isDe ? "Optimum erreicht!" : "达成极值！"}</span>
             ) : calc.currentDeriv > 0 ? (
-              <span className="font-bold text-blue-700">↗ {isDe ? "Steigend (f' > 0)" : "持续增长"}</span>
+              <span className="font-bold text-[var(--ink)]">↗ {isDe ? "Steigend (f' > 0)" : "持续增长"}</span>
             ) : (
-              <span className="font-bold text-rose-700">↘ {isDe ? "Fallend (f' < 0)" : "持续下降"}</span>
+              <span className="font-bold text-[var(--ink)]">↘ {isDe ? "Fallend (f' < 0)" : "持续下降"}</span>
             )}
           </div>
         </div>
@@ -382,7 +382,7 @@ Aufgabe: Formuliere den mathematischen Beweis für dieses Extremum nach den Oper
             onClick={() => setModel(m.id)}
             className={`px-2.5 py-1 text-xs font-mono rounded transition-colors ${
               model === m.id
-                ? "bg-[var(--accent)] text-white font-semibold shadow-sm"
+                ? "bg-[var(--accent)] text-white font-semibold"
                 : "bg-[var(--surface)] text-[var(--ink)] border border-[var(--line)] hover:bg-[var(--line)]/30"
             }`}
           >
@@ -409,7 +409,7 @@ Aufgabe: Formuliere den mathematischen Beweis für dieses Extremum nach den Oper
                 {/* Millimeter grid background */}
                 <defs>
                   <pattern id="opt-grid" width="12" height="12" patternUnits="userSpaceOnUse">
-                    <path d="M 12 0 L 0 0 0 12" fill="none" stroke="currentColor" className="text-stone-200" strokeWidth="0.5" />
+                    <path d="M 12 0 L 0 0 0 12" fill="none" stroke="currentColor" className="text-[var(--line)]" strokeWidth="0.5" />
                   </pattern>
                 </defs>
                 <rect width="240" height="240" fill="url(#opt-grid)" rx="6" />
@@ -439,17 +439,17 @@ Aufgabe: Formuliere den mathematischen Beweis für dieses Extremum nach den Oper
                             strokeWidth="1.5"
                           />
 
-                          {/* 4 Cutout corners (amber dashed fill) */}
-                          <rect x="0" y="0" width={cutPx} height={cutPx} fill="#fef3c7" stroke="#b45309" strokeDasharray="3,2" strokeWidth="1" />
-                          <rect x={totalW - cutPx} y="0" width={cutPx} height={cutPx} fill="#fef3c7" stroke="#b45309" strokeDasharray="3,2" strokeWidth="1" />
-                          <rect x="0" y={totalH - cutPx} width={cutPx} height={cutPx} fill="#fef3c7" stroke="#b45309" strokeDasharray="3,2" strokeWidth="1" />
-                          <rect x={totalW - cutPx} y={totalH - cutPx} width={cutPx} height={cutPx} fill="#fef3c7" stroke="#b45309" strokeDasharray="3,2" strokeWidth="1" />
+                          {/* 4 Cutout corners (neutral dashed fill) */}
+                          <rect x="0" y="0" width={cutPx} height={cutPx} fill="var(--paper-subtle)" stroke="var(--ink)" strokeDasharray="3,2" strokeWidth="1" />
+                          <rect x={totalW - cutPx} y="0" width={cutPx} height={cutPx} fill="var(--paper-subtle)" stroke="var(--ink)" strokeDasharray="3,2" strokeWidth="1" />
+                          <rect x="0" y={totalH - cutPx} width={cutPx} height={cutPx} fill="var(--paper-subtle)" stroke="var(--ink)" strokeDasharray="3,2" strokeWidth="1" />
+                          <rect x={totalW - cutPx} y={totalH - cutPx} width={cutPx} height={cutPx} fill="var(--paper-subtle)" stroke="var(--ink)" strokeDasharray="3,2" strokeWidth="1" />
 
-                          {/* Fold lines (dashed blue) */}
-                          <line x1={cutPx} y1="0" x2={cutPx} y2={totalH} stroke="#2563eb" strokeDasharray="3,3" strokeWidth="1" />
-                          <line x1={totalW - cutPx} y1="0" x2={totalW - cutPx} y2={totalH} stroke="#2563eb" strokeDasharray="3,3" strokeWidth="1" />
-                          <line x1="0" y1={cutPx} x2={totalW} y2={cutPx} stroke="#2563eb" strokeDasharray="3,3" strokeWidth="1" />
-                          <line x1="0" y1={totalH - cutPx} x2={totalW} y2={totalH - cutPx} stroke="#2563eb" strokeDasharray="3,3" strokeWidth="1" />
+                          {/* Fold lines (dashed) */}
+                          <line x1={cutPx} y1="0" x2={cutPx} y2={totalH} stroke="var(--gray)" strokeDasharray="3,3" strokeWidth="1" />
+                          <line x1={totalW - cutPx} y1="0" x2={totalW - cutPx} y2={totalH} stroke="var(--gray)" strokeDasharray="3,3" strokeWidth="1" />
+                          <line x1="0" y1={cutPx} x2={totalW} y2={cutPx} stroke="var(--gray)" strokeDasharray="3,3" strokeWidth="1" />
+                          <line x1="0" y1={totalH - cutPx} x2={totalW} y2={totalH - cutPx} stroke="var(--gray)" strokeDasharray="3,3" strokeWidth="1" />
 
                           {/* Box Bottom area */}
                           <rect
@@ -457,17 +457,16 @@ Aufgabe: Formuliere den mathematischen Beweis für dieses Extremum nach den Oper
                             y={cutPx}
                             width={baseW}
                             height={baseH}
-                            fill="#3b82f6"
-                            fillOpacity="0.15"
-                            stroke="#1d4ed8"
+                            fill="var(--paper-subtle)"
+                            stroke="var(--ink)"
                             strokeWidth="1.5"
                           />
 
                           {/* Dimension labels */}
-                          <text x={cutPx / 2} y={cutPx / 2 + 3} textAnchor="middle" className="font-mono text-[9px] fill-[#b45309] font-bold">
+                          <text x={cutPx / 2} y={cutPx / 2 + 3} textAnchor="middle" className="font-mono text-[9px] fill-[var(--ink)] font-bold">
                             x
                           </text>
-                          <text x={totalW / 2} y={totalH / 2} textAnchor="middle" className="font-mono text-[10px] fill-[#1e40af] font-semibold">
+                          <text x={totalW / 2} y={totalH / 2} textAnchor="middle" className="font-mono text-[10px] fill-[var(--ink)] font-semibold">
                             {isDe ? "Boden" : "底面"}: {calc.dim1.toFixed(1)} × {calc.dim2.toFixed(1)} cm
                           </text>
                         </>
@@ -491,8 +490,8 @@ Aufgabe: Formuliere den mathematischen Beweis für dieses Extremum nach den Oper
                             y={-hScale / 2}
                             width={rScale * 2}
                             height={hScale}
-                            fill="#e0e7ff"
-                            stroke="#1e40af"
+                            fill="var(--paper-subtle)"
+                            stroke="var(--ink)"
                             strokeWidth="1.5"
                           />
                           {/* Bottom Ellipse */}
@@ -501,8 +500,8 @@ Aufgabe: Formuliere den mathematischen Beweis für dieses Extremum nach den Oper
                             cy={hScale / 2}
                             rx={rScale}
                             ry={rScale * 0.3}
-                            fill="#c7d2fe"
-                            stroke="#1e40af"
+                            fill="var(--paper-subtle)"
+                            stroke="var(--ink)"
                             strokeWidth="1.5"
                           />
                           {/* Top Ellipse */}
@@ -511,19 +510,19 @@ Aufgabe: Formuliere den mathematischen Beweis für dieses Extremum nach den Oper
                             cy={-hScale / 2}
                             rx={rScale}
                             ry={rScale * 0.3}
-                            fill="#e0e7ff"
-                            stroke="#1e40af"
+                            fill="var(--paper-subtle)"
+                            stroke="var(--ink)"
                             strokeWidth="1.5"
                           />
                           {/* Radius indicator */}
-                          <line x1="0" y1={-hScale / 2} x2={rScale} y2={-hScale / 2} stroke="#b45309" strokeWidth="1.5" />
-                          <circle cx={rScale} cy={-hScale / 2} r="2.5" fill="#b45309" />
-                          <text x={rScale / 2} y={-hScale / 2 - 5} textAnchor="middle" className="font-mono text-[9px] fill-[#b45309] font-bold">
+                          <line x1="0" y1={-hScale / 2} x2={rScale} y2={-hScale / 2} stroke="var(--ink)" strokeWidth="1.5" />
+                          <circle cx={rScale} cy={-hScale / 2} r="2.5" fill="var(--ink)" />
+                          <text x={rScale / 2} y={-hScale / 2 - 5} textAnchor="middle" className="font-mono text-[9px] fill-[var(--ink)] font-bold">
                             r = {calc.currentParam.toFixed(1)} cm
                           </text>
 
                           {/* Height indicator */}
-                          <text x={-rScale - 10} y="3" textAnchor="end" className="font-mono text-[9px] fill-[#1e40af] font-bold">
+                          <text x={-rScale - 10} y="3" textAnchor="end" className="font-mono text-[9px] fill-[var(--ink)] font-bold">
                             h = {calc.height.toFixed(1)} cm
                           </text>
                         </>
@@ -545,8 +544,8 @@ Aufgabe: Formuliere den mathematischen Beweis für dieses Extremum nach den Oper
                       return (
                         <>
                           {/* River */}
-                          <rect x="0" y="0" width="180" height="25" fill="#bae6fd" stroke="#0284c7" strokeWidth="1" />
-                          <text x="90" y="16" textAnchor="middle" className="font-serif italic text-[11px] fill-[#0369a1] font-semibold">
+                          <rect x="0" y="0" width="180" height="25" fill="var(--paper-subtle)" stroke="var(--line)" strokeWidth="1" />
+                          <text x="90" y="16" textAnchor="middle" className="font-serif text-[11px] fill-[var(--ink)] font-semibold">
                             Fluss / 河流 (Kein Zaun nötig)
                           </text>
 
@@ -556,8 +555,8 @@ Aufgabe: Formuliere den mathematischen Beweis für dieses Extremum nach den Oper
                             y="25"
                             width={yNorm}
                             height={xNorm}
-                            fill="#dcfce7"
-                            stroke="#15803d"
+                            fill="var(--paper-subtle)"
+                            stroke="var(--ink)"
                             strokeWidth="2"
                             strokeDasharray="0,0"
                           />
@@ -567,18 +566,18 @@ Aufgabe: Formuliere den mathematischen Beweis für dieses Extremum nach den Oper
                             y1="25"
                             x2={(180 + yNorm) / 2}
                             y2="25"
-                            stroke="#dcfce7"
+                            stroke="var(--paper-subtle)"
                             strokeWidth="2.5"
                           />
 
                           {/* Labels */}
-                          <text x={90} y={25 + xNorm / 2 + 4} textAnchor="middle" className="font-mono text-[10px] fill-[#15803d] font-bold">
+                          <text x={90} y={25 + xNorm / 2 + 4} textAnchor="middle" className="font-mono text-[10px] fill-[var(--ink)] font-bold">
                             A = {calc.currentVal} m²
                           </text>
-                          <text x={(180 - yNorm) / 2 - 8} y={25 + xNorm / 2} textAnchor="end" className="font-mono text-[9px] fill-[#b45309] font-bold">
+                          <text x={(180 - yNorm) / 2 - 8} y={25 + xNorm / 2} textAnchor="end" className="font-mono text-[9px] fill-[var(--ink)] font-bold">
                             x = {calc.currentParam} m
                           </text>
-                          <text x={90} y={25 + xNorm + 14} textAnchor="middle" className="font-mono text-[9px] fill-[#1e40af] font-bold">
+                          <text x={90} y={25 + xNorm + 14} textAnchor="middle" className="font-mono text-[9px] fill-[var(--ink)] font-bold">
                             y = {calc.dim1} m
                           </text>
                         </>
@@ -593,7 +592,7 @@ Aufgabe: Formuliere den mathematischen Beweis für dieses Extremum nach den Oper
             <div className="w-full grid grid-cols-3 gap-2 mt-3 pt-2.5 border-t border-[var(--line)] text-center font-mono">
               <div className="p-1.5 rounded bg-[var(--paper-subtle)] border border-[var(--line)]">
                 <span className="text-[10px] text-[var(--gray)] block">{calc.paramName}</span>
-                <span className="text-xs font-bold text-[#b45309]">{calc.currentParam.toFixed(2)} {calc.paramUnit}</span>
+                <span className="text-xs font-bold text-[var(--ink)]">{calc.currentParam.toFixed(2)} {calc.paramUnit}</span>
               </div>
               <div className="p-1.5 rounded bg-[var(--paper-subtle)] border border-[var(--line)]">
                 <span className="text-[10px] text-[var(--gray)] block">{calc.valName}</span>
@@ -601,7 +600,7 @@ Aufgabe: Formuliere den mathematischen Beweis für dieses Extremum nach den Oper
               </div>
               <div className="p-1.5 rounded bg-[var(--paper-subtle)] border border-[var(--line)]">
                 <span className="text-[10px] text-[var(--gray)] block">{isDe ? "Optimum" : "理论极值"}</span>
-                <span className="text-xs font-bold text-emerald-700">{calc.optVal} {calc.valUnit}</span>
+                <span className="text-xs font-bold text-[var(--ink)]">{calc.optVal} {calc.valUnit}</span>
               </div>
             </div>
           </div>
@@ -615,11 +614,11 @@ Aufgabe: Formuliere den mathematischen Beweis für dieses Extremum nach den Oper
               <span>{isDe ? "Analysis-Graph & Tangentensteigung" : "目标函数曲线与极值驻点跟踪"}</span>
               <div className="flex items-center gap-2">
                 <span className="flex items-center gap-1">
-                  <span className="w-2.5 h-0.5 bg-[#2563eb]" />
+                  <span className="w-2.5 h-0.5 bg-[var(--ink)]" />
                   {calc.valName}
                 </span>
                 <span className="flex items-center gap-1">
-                  <span className="w-2.5 h-0.5 bg-emerald-600 border-t border-dashed" />
+                  <span className="w-2.5 h-0.5 bg-[var(--ink)] border-t border-dashed" />
                   {isDe ? "Optimum" : "极值点"}
                 </span>
               </div>
@@ -629,14 +628,14 @@ Aufgabe: Formuliere den mathematischen Beweis für dieses Extremum nach den Oper
             <div className="w-full aspect-[16/10] flex items-center justify-center relative select-none">
               <svg viewBox="0 0 280 180" className="w-full h-full overflow-visible">
                 {/* Axes */}
-                <line x1={plotOriginX} y1={plotOriginY} x2={plotOriginX + plotW} y2={plotOriginY} stroke="#94a3b8" strokeWidth="1.2" />
-                <line x1={plotOriginX} y1={plotOriginY} x2={plotOriginX} y2={plotOriginY - plotH} stroke="#94a3b8" strokeWidth="1.2" />
+                <line x1={plotOriginX} y1={plotOriginY} x2={plotOriginX + plotW} y2={plotOriginY} stroke="var(--gray)" strokeWidth="1.2" />
+                <line x1={plotOriginX} y1={plotOriginY} x2={plotOriginX} y2={plotOriginY - plotH} stroke="var(--gray)" strokeWidth="1.2" />
 
                 {/* Axis Labels */}
-                <text x={plotOriginX + plotW} y={plotOriginY + 14} textAnchor="end" className="font-mono text-[9px] fill-[#64748b]">
+                <text x={plotOriginX + plotW} y={plotOriginY + 14} textAnchor="end" className="font-mono text-[9px] fill-[var(--gray)]">
                   {calc.paramName} ({calc.paramUnit})
                 </text>
-                <text x={plotOriginX - 6} y={plotOriginY - plotH} textAnchor="end" className="font-mono text-[9px] fill-[#64748b]">
+                <text x={plotOriginX - 6} y={plotOriginY - plotH} textAnchor="end" className="font-mono text-[9px] fill-[var(--gray)]">
                   {calc.valName}
                 </text>
 
@@ -644,18 +643,18 @@ Aufgabe: Formuliere den mathematischen Beweis für dieses Extremum nach den Oper
                 <polyline
                   points={curvePolylineStr}
                   fill="none"
-                  stroke="#2563eb"
+                  stroke="var(--ink)"
                   strokeWidth="2.2"
                 />
 
                 {/* Optimal Point Marker */}
-                <circle cx={optMarker.x} cy={optMarker.y} r="4" fill="#059669" stroke="#ffffff" strokeWidth="1.5" />
+                <circle cx={optMarker.x} cy={optMarker.y} r="4" fill="var(--ink)" stroke="#ffffff" strokeWidth="1.5" />
                 <line
                   x1={optMarker.x}
                   y1={plotOriginY}
                   x2={optMarker.x}
                   y2={optMarker.y}
-                  stroke="#059669"
+                  stroke="var(--ink)"
                   strokeDasharray="2,2"
                   strokeWidth="1"
                 />
@@ -666,11 +665,11 @@ Aufgabe: Formuliere den mathematischen Beweis für dieses Extremum nach den Oper
                   y1={plotOriginY}
                   x2={currentMarker.x}
                   y2={currentMarker.y}
-                  stroke="#b45309"
+                  stroke="var(--gray)"
                   strokeDasharray="2,2"
                   strokeWidth="1"
                 />
-                <circle cx={currentMarker.x} cy={currentMarker.y} r="5" fill="#b45309" stroke="#ffffff" strokeWidth="1.5" />
+                <circle cx={currentMarker.x} cy={currentMarker.y} r="5" fill="var(--ink)" stroke="#ffffff" strokeWidth="1.5" />
 
                 {/* Tangent Line at Current Point */}
                 {(() => {
@@ -684,7 +683,7 @@ Aufgabe: Formuliere den mathematischen Beweis für dieses Extremum nach den Oper
                       y1={currentMarker.y + dy}
                       x2={currentMarker.x + dx}
                       y2={currentMarker.y - dy}
-                      stroke="#dc2626"
+                      stroke="var(--ink)"
                       strokeWidth="1.5"
                     />
                   );
@@ -700,7 +699,7 @@ Aufgabe: Formuliere den mathematischen Beweis für dieses Extremum nach den Oper
                 <label htmlFor={sliderId} className="font-semibold text-[var(--ink)]">
                   {isDe ? `Schnittkante / Parameter ${calc.paramName}:` : `自变量参数 ${calc.paramName}：`}
                 </label>
-                <span className="font-bold text-[#b45309]">
+                <span className="font-bold text-[var(--ink)]">
                   {calc.currentParam.toFixed(2)} {calc.paramUnit}
                 </span>
               </div>
@@ -718,7 +717,7 @@ Aufgabe: Formuliere den mathematischen Beweis für dieses Extremum nach den Oper
                   else if (model === "can") setRCan(val);
                   else if (model === "fence") setXFence(val);
                 }}
-                className="w-full accent-[#b45309] cursor-pointer"
+                className="w-full accent-[var(--ink)] cursor-pointer"
               />
             </div>
 
@@ -727,20 +726,20 @@ Aufgabe: Formuliere den mathematischen Beweis für dieses Extremum nach den Oper
               <div className="space-y-0.5">
                 <div>
                   <span className="text-[var(--gray)]">f'({calc.paramName}) = </span>
-                  <span className={`font-bold ${Math.abs(calc.currentDeriv) < 5 ? "text-emerald-700" : "text-[var(--ink)]"}`}>
+                  <span className={`font-bold ${Math.abs(calc.currentDeriv) < 5 ? "text-[var(--ink)]" : "text-[var(--ink)]"}`}>
                     {calc.currentDeriv > 0 ? `+${calc.currentDeriv}` : calc.currentDeriv}
                   </span>
                 </div>
                 <div>
                   <span className="text-[var(--gray)]">f''({calc.paramName}) = </span>
-                  <span className="font-bold text-[#1e40af]">{calc.currentDeriv2}</span>
+                  <span className="font-bold text-[var(--ink)]">{calc.currentDeriv2}</span>
                 </div>
               </div>
 
               <button
                 type="button"
                 onClick={handleJumpOptimum}
-                className="px-3 py-1.5 rounded border border-emerald-600 bg-emerald-50 text-emerald-800 font-semibold hover:bg-emerald-100 transition-colors text-xs font-mono"
+                className="px-3 py-1.5 rounded border border-[var(--ink)] bg-[var(--ink)] text-white font-semibold hover:opacity-90 transition-opacity text-xs font-mono"
               >
                 {isDe ? `Exaktes Optimum (${calc.optParam} ${calc.paramUnit})` : `跳转理论极值点 (${calc.optParam} ${calc.paramUnit})`}
               </button>
@@ -783,7 +782,7 @@ Aufgabe: Formuliere den mathematischen Beweis für dieses Extremum nach den Oper
                 : "border-transparent text-[var(--gray)] hover:text-[var(--ink)]"
             }`}
           >
-            03 🇨🇳 CN-Methode
+            03 CN-Methode
           </button>
           <button
             type="button"
@@ -873,7 +872,7 @@ Aufgabe: Formuliere den mathematischen Beweis für dieses Extremum nach den Oper
         {activeTab === "cn" && (
           <div className="p-3 bg-[var(--paper-subtle)] rounded-[var(--radius)] text-xs leading-relaxed space-y-2">
             <div className="font-mono font-semibold text-[var(--accent)]">
-              {isDe ? "🇨🇳 CN-Methode: Das 4-Schritte-Extremwert-Protokoll" : "🇨🇳 CN-Methode：极值最优化“四步定乾坤”解题法"}
+              {isDe ? "CN-Methode: Das 4-Schritte-Extremwert-Protokoll" : "CN-Methode：极值最优化“四步定乾坤”解题法"}
             </div>
             <div className="space-y-1 text-[11px]">
               <p><strong>一设立：</strong> 设自变量，确立目标函数（主条件）与几何等式（副条件/Nebenbedingung），写出单变量显函数与定义域。</p>

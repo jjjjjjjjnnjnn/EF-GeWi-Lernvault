@@ -1,9 +1,9 @@
 // DnaPcrSim — 聚合酶链式反应 (PCR) 与琼脂糖凝胶电泳 (Gelelektrophorese) 动态微观实验台
 // 依据分子遗传学与北威州高级文理中学 (Gymnasium Q1) Genetik 考纲标准设计
 // 包含三大核心沉浸机制：
-// 1. 🧬 三温阶梯热循环仪微观动画 (Thermocycler)：95°C 变性解链 → 55°C 引物结合 → 72°C Taq 酶 5'→3' 延伸
-// 2. ⚡ 紫外凝胶电泳跑带槽 (Agarose-Gel-Kammer)：负电荷向正极迁移、分子筛效应、荧光条带发光对比 Marker
-// 3. 📝 北威州遗传学考题与 EHZ 评分标准：DNA复制与体内/体外对比、引物特异性
+// 1. 三温阶梯热循环仪微观动画 (Thermocycler)：95°C 变性解链 → 55°C 引物结合 → 72°C Taq 酶 5'→3' 延伸
+// 2. 紫外凝胶电泳跑带槽 (Agarose-Gel-Kammer)：负电荷向正极迁移、分子筛效应、荧光条带发光对比 Marker
+// 3. 北威州遗传学考题与 EHZ 评分标准：DNA复制与体内/体外对比、引物特异性
 
 import { useState, useEffect } from "react";
 import type { Lang } from "../../i18n";
@@ -125,12 +125,12 @@ export function DnaPcrSim({ lang = "de", onExportFinding }: DnaPcrSimProps) {
   };
 
   return (
-    <div className="w-full flex flex-col gap-5 p-4 sm:p-6 bg-[var(--paper)] rounded-xl border border-[var(--line)] shadow-xs font-sans text-[var(--ink)]">
+    <div className="w-full flex flex-col gap-5 p-4 sm:p-6 bg-[var(--paper)] rounded-xl border border-[var(--line)] font-sans text-[var(--ink)]">
       {/* 顶部标题与控制工具条 */}
       <div className="flex flex-wrap items-center justify-between gap-3 border-b border-[var(--line)] pb-4">
         <div>
           <div className="flex items-center gap-2">
-            <span className="px-2 py-0.5 text-xs font-bold font-mono rounded bg-emerald-500/10 text-emerald-700 dark:text-emerald-300 border border-emerald-500/20">
+            <span className="px-2 py-0.5 text-xs font-bold font-mono rounded bg-[var(--paper-subtle)] text-[var(--ink)] border border-[var(--line)]">
               Biologie Q1 · Molekulargenetik
             </span>
             <span className="text-xs font-mono text-[var(--gray)]">Methodik: Kary Mullis 1983 (Nobelpreis)</span>
@@ -144,27 +144,27 @@ export function DnaPcrSim({ lang = "de", onExportFinding }: DnaPcrSimProps) {
           <button
             type="button"
             onClick={handleNextStep}
-            className="px-3 py-1.5 text-xs font-bold rounded-lg bg-[var(--accent)] text-white shadow-xs hover:opacity-90 transition-opacity"
+            className="px-3 py-1.5 text-xs font-bold rounded-lg bg-[var(--accent)] text-white hover:opacity-90 transition-opacity"
           >
-            {isDe ? "⏭️ Nächster Schritt" : "⏭️ 单步推演"}
+            {isDe ? "Nächster Schritt" : "单步推演"}
           </button>
           <button
             type="button"
             onClick={() => setIsRunningAuto(!isRunningAuto)}
             className={`px-3 py-1.5 text-xs font-bold rounded-lg border transition-colors ${
               isRunningAuto
-                ? "bg-amber-500/15 border-amber-500 text-amber-700 dark:text-amber-300"
+                ? "bg-[var(--ink)] border-[var(--ink)] text-white"
                 : "border-[var(--line)] bg-[var(--paper-subtle)] text-[var(--ink)] hover:border-[var(--accent)]"
             }`}
           >
-            {isRunningAuto ? (isDe ? "⏸️ Pause" : "⏸️ 暂停自动循环") : (isDe ? "▶️ Auto-Zyklus (30x)" : "▶️ 启动30轮连环扩增")}
+            {isRunningAuto ? (isDe ? "Pause" : "暂停自动循环") : (isDe ? "Auto-Zyklus (30x)" : "启动30轮连环扩增")}
           </button>
           <button
             type="button"
             onClick={handleReset}
             className="px-2.5 py-1.5 text-xs rounded-lg border border-[var(--line)] text-[var(--gray)] hover:text-[var(--ink)] transition-colors"
           >
-            {isDe ? "🔄 Reset" : "🔄 重置"}
+            {isDe ? "Reset" : "重置"}
           </button>
         </div>
       </div>
@@ -172,18 +172,12 @@ export function DnaPcrSim({ lang = "de", onExportFinding }: DnaPcrSimProps) {
       {/* 核心双视窗：左侧 PCR 热循环仪微观视图，右侧琼脂糖凝胶电泳槽 */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-5 items-start">
         {/* 左侧：PCR 热循环仪与 DNA 微观链反应 (7 列) */}
-        <div className="lg:col-span-7 flex flex-col gap-3 p-4 bg-[var(--paper-subtle)]/40 rounded-xl border border-[var(--line)]">
+        <div className="lg:col-span-7 flex flex-col gap-3 p-4 bg-[var(--paper-subtle)] rounded-xl border border-[var(--line)]">
           {/* 热循环仪状态仪表盘 */}
           <div className="flex flex-wrap items-center justify-between gap-2 p-3 rounded-lg bg-[var(--paper)] border border-[var(--line)]">
             <div className="flex items-center gap-3">
-              <div className={`px-2.5 py-1 rounded-md text-xs font-mono font-bold flex items-center gap-1.5 ${
-                temp >= 90
-                  ? "bg-red-500/15 text-red-600 border border-red-500/30"
-                  : temp <= 60
-                  ? "bg-sky-500/15 text-sky-600 border border-sky-500/30"
-                  : "bg-emerald-500/15 text-emerald-600 border border-emerald-500/30"
-              }`}>
-                <span>🌡️ {temp} °C</span>
+              <div className={`px-2.5 py-1 rounded-md text-xs font-mono font-bold flex items-center gap-1.5 bg-[var(--paper-subtle)] text-[var(--ink)] border border-[var(--line)]`}>
+                <span>{temp} °C</span>
                 <span className="text-[10px] uppercase font-sans">
                   {phase === "denaturation" ? (isDe ? "Denaturierung" : "变性解链") : phase === "annealing" ? (isDe ? "Primer-Annealing" : "引物复性结合") : (isDe ? "Taq-Elongation" : "聚合酶延伸")}
                 </span>
@@ -208,7 +202,7 @@ export function DnaPcrSim({ lang = "de", onExportFinding }: DnaPcrSimProps) {
               onClick={() => setStepPhase("denaturation")}
               className={`p-2 rounded border transition-colors cursor-pointer ${
                 phase === "denaturation"
-                  ? "bg-rose-50 dark:bg-rose-950/30 border-rose-400 text-rose-800 dark:text-rose-200 font-bold shadow-2xs"
+                  ? "bg-[var(--ink)] text-white border-[var(--ink)] font-bold"
                   : "bg-[var(--paper)] border-[var(--line)] text-[var(--gray)] hover:text-[var(--ink)]"
               }`}
             >
@@ -220,7 +214,7 @@ export function DnaPcrSim({ lang = "de", onExportFinding }: DnaPcrSimProps) {
               onClick={() => setStepPhase("annealing")}
               className={`p-2 rounded border transition-colors cursor-pointer ${
                 phase === "annealing"
-                  ? "bg-sky-50 dark:bg-sky-950/30 border-sky-400 text-sky-800 dark:text-sky-200 font-bold shadow-2xs"
+                  ? "bg-[var(--ink)] text-white border-[var(--ink)] font-bold"
                   : "bg-[var(--paper)] border-[var(--line)] text-[var(--gray)] hover:text-[var(--ink)]"
               }`}
             >
@@ -232,7 +226,7 @@ export function DnaPcrSim({ lang = "de", onExportFinding }: DnaPcrSimProps) {
               onClick={() => setStepPhase("elongation")}
               className={`p-2 rounded border transition-colors cursor-pointer ${
                 phase === "elongation"
-                  ? "bg-emerald-50 dark:bg-emerald-950/30 border-emerald-400 text-emerald-800 dark:text-emerald-200 font-bold shadow-2xs"
+                  ? "bg-[var(--ink)] text-white border-[var(--ink)] font-bold"
                   : "bg-[var(--paper)] border-[var(--line)] text-[var(--gray)] hover:text-[var(--ink)]"
               }`}
             >
@@ -279,7 +273,7 @@ export function DnaPcrSim({ lang = "de", onExportFinding }: DnaPcrSimProps) {
                   </text>
 
                   <rect x="70" y="225" width="360" height="24" rx="4" fill="var(--paper-subtle)" stroke="var(--line)" />
-                  <text x="250" y="241" textAnchor="middle" fontSize="9.5" fill="var(--ink)" fontStyle="italic">
+                  <text x="250" y="241" textAnchor="middle" fontSize="9.5" fill="var(--ink)">
                     {isDe ? "Keine Helikase/Topoisomerase nötig: 95°C Hitze trennt H-Brücken physikalisch." : "无需解旋酶开路：纯物理高温瞬间破坏碱基间氢键！"}
                   </text>
                 </g>
@@ -316,7 +310,7 @@ export function DnaPcrSim({ lang = "de", onExportFinding }: DnaPcrSimProps) {
                   </text>
 
                   <rect x="70" y="225" width="360" height="24" rx="4" fill="var(--paper-subtle)" stroke="var(--line)" />
-                  <text x="250" y="241" textAnchor="middle" fontSize="9.5" fill="var(--ink)" fontStyle="italic">
+                  <text x="250" y="241" textAnchor="middle" fontSize="9.5" fill="var(--ink)">
                     {isDe ? "Künstliche DNA-Primer (ca. 20 nt) definieren die Grenzen des Zielgens exakt." : "人工合成寡核苷酸引物（约20bp）精准锚定目的基因边界。"}
                   </text>
                 </g>
@@ -355,7 +349,7 @@ export function DnaPcrSim({ lang = "de", onExportFinding }: DnaPcrSimProps) {
                   <text x="330" y="178" fontSize="8.5" fill="#15803d" fontWeight="bold" fontFamily="monospace">5' → 3' ▶</text>
 
                   <rect x="70" y="225" width="360" height="24" rx="4" fill="var(--paper-subtle)" stroke="var(--line)" />
-                  <text x="250" y="241" textAnchor="middle" fontSize="9.5" fill="var(--ink)" fontStyle="italic">
+                  <text x="250" y="241" textAnchor="middle" fontSize="9.5" fill="var(--ink)">
                     {isDe ? "Thermus aquaticus Polymerase: Optimale Elongation bei 72°C mit freien dNTPs." : "水生栖热菌聚合酶：耐 95°C 高温，在 72°C 快速将游离 dNTP 链入新链。"}
                   </text>
                 </g>
@@ -364,19 +358,19 @@ export function DnaPcrSim({ lang = "de", onExportFinding }: DnaPcrSimProps) {
           </div>
 
           <div className="flex items-center justify-between text-[11px] text-[var(--gray)] pt-1">
-            <span>💡 提示：按“单步推演”可分步观察 95°C/55°C/72°C 循环分子机理。</span>
+            <span>提示：按“单步推演”可分步观察 95°C/55°C/72°C 循环分子机理。</span>
             <button
               type="button"
               onClick={handleExport}
               className="px-2.5 py-1 text-xs font-medium rounded border border-[var(--line)] bg-[var(--paper)] hover:border-[var(--accent)] transition-colors"
             >
-              {isDe ? "📥 PCR-Befund exportieren" : "📥 导出PCR学报"}
+              {isDe ? "PCR-Befund exportieren" : "导出PCR学报"}
             </button>
           </div>
         </div>
 
         {/* 右侧：琼脂糖凝胶电泳学术检测槽 (5 列) */}
-        <div className="lg:col-span-5 flex flex-col gap-3 p-4 bg-[var(--paper)] rounded-xl border border-[var(--line)] shadow-xs">
+        <div className="lg:col-span-5 flex flex-col gap-3 p-4 bg-[var(--paper)] rounded-xl border border-[var(--line)]">
           <div className="flex items-center justify-between border-b border-[var(--line)] pb-3">
             <div>
               <span className="text-xs font-mono text-[var(--gray)] uppercase tracking-wider">
@@ -392,17 +386,17 @@ export function DnaPcrSim({ lang = "de", onExportFinding }: DnaPcrSimProps) {
                 setGelProgress(0);
                 setIsGelRunning(true);
               }}
-              className="px-2.5 py-1 text-xs font-bold rounded bg-[var(--accent)] text-white hover:opacity-90 transition-opacity shadow-xs cursor-pointer"
+              className="px-2.5 py-1 text-xs font-bold rounded bg-[var(--accent)] text-white hover:opacity-90 transition-opacity cursor-pointer"
             >
-              {isDe ? "⚡ Strom AN (100V)" : "⚡ 通电跑胶"}
+              {isDe ? "Strom AN (100V)" : "通电跑胶"}
             </button>
           </div>
 
           {/* 学术级凝胶槽 (Tufte 极简素描风) */}
-          <div className="relative w-full aspect-3/4 rounded-lg overflow-hidden border border-[var(--line)] bg-[var(--paper-subtle)]/50 p-3 flex flex-col justify-between">
+          <div className="relative w-full aspect-3/4 rounded-lg overflow-hidden border border-[var(--line)] bg-[var(--paper-subtle)] p-3 flex flex-col justify-between">
             {/* 负极顶部 (Kathode -) */}
             <div className="flex justify-between items-center text-[10px] font-mono border-b border-[var(--line)] pb-1.5">
-              <span className="text-rose-700 dark:text-rose-400 font-bold">Kathode (-) 点样端</span>
+              <span className="text-[var(--ink)] font-bold">Kathode (-) 点样端</span>
               <span className="text-[var(--gray)]">100V · 1.5% Agarose-Gel</span>
             </div>
 
@@ -417,7 +411,7 @@ export function DnaPcrSim({ lang = "de", onExportFinding }: DnaPcrSimProps) {
             </div>
 
             {/* 凝胶基质板 (Slab) */}
-            <div className="relative flex-1 my-2 rounded bg-slate-100 dark:bg-slate-800/40 border border-slate-300 dark:border-slate-700">
+            <div className="relative flex-1 my-2 rounded bg-[var(--paper-subtle)] border border-[var(--line)]">
               {/* 标准 Marker 梯级 (分子量阶梯) */}
               <div className="absolute left-6 inset-y-0 w-8 flex flex-col justify-between py-2">
                 {[
@@ -429,7 +423,7 @@ export function DnaPcrSim({ lang = "de", onExportFinding }: DnaPcrSimProps) {
                 ].map((band) => (
                   <div
                     key={band.bp}
-                    className="absolute inset-x-0 h-1.5 bg-slate-800 dark:bg-slate-200 rounded-xs"
+                    className="absolute inset-x-0 h-1.5 bg-[var(--ink)] rounded-xs"
                     style={{ top: `${band.y}%` }}
                   >
                     <span className="absolute -left-12 -top-1 text-[8.5px] font-mono font-medium text-[var(--gray)] whitespace-nowrap">
@@ -445,11 +439,11 @@ export function DnaPcrSim({ lang = "de", onExportFinding }: DnaPcrSimProps) {
                   className="absolute right-6 w-12 h-2 rounded-xs transition-all duration-100"
                   style={{
                     top: `${Math.min(70, 10 + (gelProgress / 100) * 60)}%`,
-                    backgroundColor: "#4338ca",
-                    opacity: cycleCount >= 15 ? 1 : cycleCount >= 5 ? 0.75 : 0.4
+                    backgroundColor: "var(--ink)",
+                    opacity: 1
                   }}
                 >
-                  <span className="absolute -right-22 -top-1 text-[8.5px] font-mono text-indigo-800 dark:text-indigo-300 font-bold whitespace-nowrap">
+                  <span className="absolute -right-22 -top-1 text-[8.5px] font-mono text-[var(--ink)] font-bold whitespace-nowrap">
                     500 bp Amplikon
                   </span>
                 </div>
@@ -458,7 +452,7 @@ export function DnaPcrSim({ lang = "de", onExportFinding }: DnaPcrSimProps) {
 
             {/* 正极底部 (Anode +) */}
             <div className="flex justify-between items-center text-[10px] font-mono border-t border-[var(--line)] pt-1.5">
-              <span className="text-emerald-700 dark:text-emerald-400 font-bold">Anode (+) 阳极端</span>
+              <span className="text-[var(--ink)] font-bold">Anode (+) 阳极端</span>
               <span className="text-[9px] text-[var(--gray)] font-mono">DNA (PO₄³⁻) wandert zu (+)</span>
             </div>
           </div>
@@ -466,7 +460,7 @@ export function DnaPcrSim({ lang = "de", onExportFinding }: DnaPcrSimProps) {
           {/* 会考考点点拨 */}
           <div className="p-2.5 rounded-lg bg-[var(--paper-subtle)] border border-[var(--line)] text-xs text-[var(--ink)] leading-relaxed">
             <span className="font-bold text-[var(--accent)] block mb-0.5">
-              {isDe ? "🏛️ Klausur-Schwerpunkt (EF/Q1):" : "🏛️ 北威州会考核心采分点："}
+              {isDe ? "Klausur-Schwerpunkt (EF/Q1):" : "北威州会考核心采分点："}
             </span>
             <p>
               {isDe

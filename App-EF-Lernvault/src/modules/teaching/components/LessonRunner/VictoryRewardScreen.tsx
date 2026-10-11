@@ -6,6 +6,7 @@ export interface VictoryRewardScreenProps {
   earnedXp: number;
   streakDays: number;
   mistakes: string[];
+  fach?: string;
   lang?: "de" | "zh";
   onContinue: () => void;
   onReviewQuest: () => void;
@@ -16,6 +17,7 @@ export const VictoryRewardScreen: React.FC<VictoryRewardScreenProps> = ({
   earnedXp,
   streakDays,
   mistakes,
+  fach = "SoWi",
   lang = "de",
   onContinue,
   onReviewQuest,
@@ -24,11 +26,22 @@ export const VictoryRewardScreen: React.FC<VictoryRewardScreenProps> = ({
   const [downloadedPatch, setDownloadedPatch] = useState(false);
   const [showReviewDrawer, setShowReviewDrawer] = useState(false);
 
-  // 生成标准的 Obsidian Fehlerlog Markdown 表格补丁行
+  // Obsidian Fehlerlog 统一 6 列 schema：
+  // | Datum | Fach | Thema | Fehlertyp | Eigener Ansatz | 15NP-Muster |
+  // 取全量 mistakes（每条错一条一行），不再只取 mistakes[0]
   const generateFehlerlogPatch = () => {
     const today = new Date().toISOString().split("T")[0];
-    const trap = mistakes[0] || "Fehlerquellen-Verwechslung";
-    return `| ${today} | ${questNode.title} | ${trap} | 11 NP -> 15 NP | Begriffsdefinition & AFB II Kausalkette nachgeschlagen |`;
+    const thema = questNode.title.replace(/[|]/g, "/");
+    const rows = mistakes.length > 0 ? mistakes : ["Keine Fehler — 15 NP ohne Defizit erreicht"];
+    const header = `| Datum | Fach | Thema | Fehlertyp | Eigener Ansatz | 15NP-Muster |`;
+    const sep = `| :--- | :--- | :--- | :--- | :--- | :--- |`;
+    const body = rows
+      .map((m) => {
+        const fehlertyp = m.replace(/\n/g, " ").replace(/[|]/g, "/");
+        return `| ${today} | ${fach} | ${thema} | ${fehlertyp} | Eigener Loesungsansatz im Runner pruefen | 15-NP-Mustersatz der Lektion nachschlagen |`;
+      })
+      .join("\n");
+    return [header, sep, body].join("\n");
   };
 
   const handleCopyPatch = () => {

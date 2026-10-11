@@ -571,7 +571,7 @@ const BASE_READINESS_CONFIGS = [
     fach: "Deutsch",
     nameDE: "Deutsch",
     nameZH: "德语",
-    pillColor: "bg-sky-50 text-sky-800 border-sky-200",
+    pillColor: "bg-[var(--paper-subtle)] text-[var(--ink)] border-[var(--line)]",
     averageMastery: 0.82,
     expectedExamRetention: 0.80,
     recentSimScore: 0.78,
@@ -581,7 +581,7 @@ const BASE_READINESS_CONFIGS = [
     fach: "Mathe",
     nameDE: "Mathematik",
     nameZH: "数学",
-    pillColor: "bg-emerald-50 text-emerald-800 border-emerald-200",
+    pillColor: "bg-[var(--paper-subtle)] text-[var(--ink)] border-[var(--line)]",
     averageMastery: 0.88,
     expectedExamRetention: 0.85,
     recentSimScore: 0.86,
@@ -591,7 +591,7 @@ const BASE_READINESS_CONFIGS = [
     fach: "SoWi",
     nameDE: "SoWi",
     nameZH: "社科",
-    pillColor: "bg-amber-50 text-amber-800 border-amber-200",
+    pillColor: "bg-[var(--paper-subtle)] text-[var(--ink)] border-[var(--line)]",
     averageMastery: 0.72,
     expectedExamRetention: 0.68,
     recentSimScore: 0.70,
@@ -673,7 +673,7 @@ function FocusFlowModal({
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-slate-900/40 backdrop-blur-[2px] p-4">
       <div className="w-full max-w-2xl bg-[var(--surface)] border border-[var(--line)] rounded-2xl shadow-none p-6 space-y-5 text-slate-900 max-h-[90vh] overflow-y-auto">
         {/* 头部标题与步骤指示器 */}
-        <div className="flex items-center justify-between pb-3 border-b border-slate-200/80">
+        <div className="flex items-center justify-between pb-3 border-b border-[var(--line)]">
           <div className="flex items-center gap-2.5">
             <span className="font-mono text-xs font-bold px-2 py-0.5 rounded-full border border-[var(--line)] bg-[var(--paper-subtle)] text-[var(--ink)]">
               {lesson.fach}
@@ -786,7 +786,7 @@ function FocusFlowModal({
                       Aufgabe {exIdx + 1}
                     </span>
                     {answered && (
-                      <span className={`text-[11px] font-mono font-bold px-2 py-0.5 rounded ${isCorrect ? "bg-emerald-100 text-emerald-800" : "bg-amber-100 text-amber-900"}`}>
+                      <span className={`text-[11px] font-mono font-bold px-2 py-0.5 rounded border border-[var(--line)] ${isCorrect ? "bg-[var(--paper-subtle)] text-[var(--ink)]" : "bg-[var(--surface)] text-[var(--ink)]"}`}>
                         {isCorrect ? (de ? "[OK] Richtig (+15 NP)" : "[OK] 正确 (+15 NP 标准)") : (de ? "[Defizit] Erkannt" : "[易错点] 需强化规范")}
                       </span>
                     )}
@@ -809,10 +809,10 @@ function FocusFlowModal({
                           className={`w-full p-2.5 rounded-lg border text-left text-xs transition-all cursor-pointer flex items-start gap-2.5 leading-relaxed font-medium ${
                             answered
                               ? isOptionCorrect
-                                ? "bg-emerald-50 border-emerald-300 text-emerald-950 font-bold"
+                                ? "bg-[var(--paper-subtle)] border-[var(--ink)] text-[var(--ink)] font-bold"
                                 : isOptionSelected
-                                ? "bg-amber-50 border-amber-300 text-amber-950"
-                                : "bg-white border-slate-200 text-slate-500 opacity-60"
+                                ? "bg-[var(--surface)] border-[var(--line)] text-[var(--ink)]"
+                                : "bg-[var(--surface)] border-[var(--line)] text-slate-500"
                               : "bg-white border-slate-200 hover:border-slate-400 text-slate-800"
                           }`}
                         >
@@ -824,7 +824,7 @@ function FocusFlowModal({
                   </div>
 
                   {showExplanations[exIdx] && (
-                    <div className="p-2.5 rounded-lg bg-slate-100/90 border border-slate-200/80 text-[11px] text-slate-700 leading-relaxed">
+                    <div className="p-2.5 rounded-lg bg-[var(--paper-subtle)] border border-[var(--line)] text-[11px] text-slate-700 leading-relaxed">
                       <span className="font-bold text-slate-900 font-mono mr-1">EHZ-Befund:</span>
                       {de ? ex.explanationDE : ex.explanationZH}
                     </div>
@@ -855,12 +855,12 @@ function FocusFlowModal({
         {/* 步骤 3: 满分句式固化 (Sichern) */}
         {step === 3 && (
           <div className="space-y-4 pt-1">
-            <div className="p-4 rounded-xl border border-amber-200/90 bg-amber-50/60 space-y-2">
+            <div className="p-4 rounded-xl border border-[var(--line)] bg-[var(--paper-subtle)] space-y-2">
               <div className="flex items-center justify-between">
-                <span className="text-xs font-mono font-bold uppercase tracking-wider text-amber-900">
+                <span className="text-xs font-mono font-bold uppercase tracking-wider text-[var(--ink)]">
                   {de ? "15-Notenpunkte-Musterformulierung (Satzbaustein)" : "15 NP 满分学术句型 (Satzbaustein)"}
                 </span>
-                <span className="text-[10px] font-mono font-bold bg-amber-100 text-amber-800 px-1.5 py-0.5 rounded">
+                <span className="text-[10px] font-mono font-bold bg-[var(--surface)] text-[var(--ink)] border border-[var(--line)] px-1.5 py-0.5 rounded">
                   Abitur-Standard
                 </span>
               </div>
@@ -876,7 +876,7 @@ function FocusFlowModal({
               <span className="text-slate-600 font-medium">
                 {de ? "Tagesfokus für dieses Modul abgeschlossen" : "今日该考点针对性闭环已就绪"}
               </span>
-              <span className="font-mono font-bold text-amber-800">
+              <span className="font-mono font-bold text-[var(--ink)]">
                 +{lesson.missionId === "m1" ? 40 : lesson.missionId === "m2" ? 80 : 100} XP
               </span>
             </div>
@@ -992,7 +992,7 @@ export function DashboardCockpit({
   return (
     <div className="mx-auto max-w-6xl space-y-6 pb-16 font-sans text-slate-900 transition-all duration-300">
       {/* 1. 顶部刊头 (Header) - 极简学术与人话表达 */}
-      <header className="flex flex-col sm:flex-row sm:items-center justify-between pb-3 border-b border-slate-200/80 gap-4">
+      <header className="flex flex-col sm:flex-row sm:items-center justify-between pb-3 border-b border-[var(--line)] gap-4">
         <div className="flex items-center gap-3.5">
           <div className="flex items-center justify-center w-10 h-10 rounded-xl border border-[var(--line)] bg-[var(--surface)] shrink-0 overflow-hidden shadow-none">
             <MascotFox state="avatar" size={30} />
@@ -1064,7 +1064,7 @@ export function DashboardCockpit({
                     Notenpunkte
                   </span>
                   <div className="flex items-center gap-2 mt-0.5">
-                    <span className="px-2.5 py-0.5 rounded-full text-xs font-bold bg-amber-50 text-amber-900 border border-amber-300">
+                    <span className="px-2.5 py-0.5 rounded-full text-xs font-bold bg-[var(--paper-subtle)] text-[var(--ink)] border border-[var(--line)]">
                       {de ? "Stufe II · Q1-Niveau" : "第二阶 · Q1 进阶期"}
                     </span>
                     <span className="text-xs text-slate-700 font-semibold">
@@ -1078,7 +1078,7 @@ export function DashboardCockpit({
                 <span className="text-xs font-mono font-bold text-slate-700 tabular-nums">
                   <span className="text-sm font-black text-slate-900">{currentXP}</span> / {targetXP} XP
                 </span>
-                <div className="text-[11px] text-amber-800 font-semibold mt-0.5">
+                <div className="text-[11px] text-[var(--ink)] font-semibold mt-0.5">
                   {de ? `Ziel: 13 Notenpunkte (Sehr Gut) · noch ${targetXP - currentXP} XP` : `目标：13 NP (Sehr Gut 档) · 还需 ${targetXP - currentXP} XP`}
                 </div>
               </div>
@@ -1089,9 +1089,9 @@ export function DashboardCockpit({
 
             {/* 真实分级刻度进度槽 */}
             <div className="pt-0.5">
-              <div className="relative w-full h-2.5 bg-slate-100 rounded-full overflow-hidden border border-slate-200/80">
+              <div className="relative w-full h-2.5 bg-slate-100 rounded-full overflow-hidden border border-[var(--line)]">
                 <div
-                  className="h-full bg-gradient-to-r from-amber-500 to-orange-500 rounded-full transition-all duration-500"
+                  className="h-full bg-[var(--ink)] rounded-full transition-all duration-500"
                   style={{ width: mounted ? `${(currentXP / targetXP) * 100}%` : "0%" }}
                 />
               </div>
@@ -1126,9 +1126,9 @@ export function DashboardCockpit({
                   selectedStufeId === "ef_basis" ? "font-extrabold text-slate-900" : "text-slate-600 font-medium hover:text-slate-900"
                 }`}
               >
-                <span className="w-4 h-4 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center shrink-0">
+                <span className="w-4 h-4 rounded-full bg-[var(--paper-subtle)] text-[var(--ink)] border border-[var(--line)] flex items-center justify-center shrink-0">
                   <svg width="9" height="9" viewBox="0 0 12 12" fill="none">
-                    <path d="M2.5 6L5 8.5L9.5 3.5" stroke="#16A34A" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
+                    <path d="M2.5 6L5 8.5L9.5 3.5" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
                   </svg>
                 </span>
                 <span className="tracking-tight">{de ? "Stufe I (EF)" : "第一阶 · 高一导入"}</span>
@@ -1141,12 +1141,12 @@ export function DashboardCockpit({
                 className="relative z-10 flex items-center gap-2 bg-[var(--surface)] px-2 py-0.5 text-xs cursor-pointer"
               >
                 <span className="relative flex h-3 w-3 shrink-0">
-                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-400 opacity-75" />
-                  <span className="relative inline-flex rounded-full h-3 w-3 bg-amber-500" />
+                  <span className="absolute inline-flex h-full w-full rounded-full bg-slate-300" />
+                  <span className="relative inline-flex rounded-full h-3 w-3 bg-[var(--ink)]" />
                 </span>
                 <span className="font-extrabold text-slate-900 tracking-tight">
                   {de ? "Stufe II · Q1" : "第二阶 · 会考进阶"}
-                  <span className="text-[10px] text-amber-700 font-bold ml-1 font-mono">
+                  <span className="text-[10px] text-[var(--ink)] font-bold ml-1 font-mono">
                     {de ? "(Aktiv)" : "(进行中)"}
                   </span>
                 </span>
@@ -1230,7 +1230,7 @@ export function DashboardCockpit({
       <section className="card-elevation p-4 space-y-3">
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-2.5 border-b border-slate-100">
           <div className="flex items-center gap-2">
-            <span className="font-mono text-[10px] font-bold text-amber-900 bg-amber-50 border border-amber-300 px-2 py-0.5 rounded-full uppercase">
+            <span className="font-mono text-[10px] font-bold text-[var(--ink)] bg-[var(--paper-subtle)] border border-[var(--line)] px-2 py-0.5 rounded-full uppercase">
               {de ? "Sprint-Phase" : "考期冲刺"}
             </span>
             <h2 className="font-serif text-sm font-bold text-slate-900 tracking-tight">
@@ -1240,7 +1240,7 @@ export function DashboardCockpit({
 
           <div className="flex items-center gap-3">
             <div className="text-xs font-mono text-slate-700 font-semibold flex items-center gap-1.5">
-              <span className="w-2 h-2 rounded-full bg-amber-500 animate-pulse" />
+              <span className="w-2 h-2 rounded-full bg-[var(--ink)] animate-pulse" />
               <span>{de ? "Noch 12 Tage bis zur Klausurenwoche" : "距首轮大考周还有 12 天"}</span>
             </div>
             <button
@@ -1275,8 +1275,8 @@ export function DashboardCockpit({
                   >
                     <div className="flex items-center justify-between text-[10px] font-mono">
                       <span>Tag {sd.day}</span>
-                      {isPast && <span className="text-[9px] text-emerald-600 font-bold">[OK]</span>}
-                      {isActive && <span className="text-[9px] text-amber-400 font-bold">[AKTIV]</span>}
+                      {isPast && <span className="text-[9px] text-[var(--ink)] font-bold">[OK]</span>}
+                      {isActive && <span className="text-[9px] text-[var(--ink)] font-bold">[AKTIV]</span>}
                     </div>
                     <div className="text-[11px] truncate font-medium">
                       {de ? sd.labelDE.split(": ")[1] : sd.labelZH.split(": ")[1]}
@@ -1414,16 +1414,12 @@ export function DashboardCockpit({
                   {filteredMissions.map((m, idx) => {
                     const done = completedMissions[m.id] || false;
                     const pillColor =
-                      m.fach === "Deutsch"
-                        ? "bg-sky-50 text-sky-800 border-sky-200"
-                        : m.fach === "SoWi"
-                        ? "bg-amber-50 text-amber-800 border-amber-200"
-                        : "bg-emerald-50 text-emerald-800 border-emerald-200";
+                      "bg-[var(--paper-subtle)] text-[var(--ink)] border-[var(--line)]";
 
                     return (
                       <div
                         key={m.id}
-                        className="py-3 px-2 flex items-center justify-between hover:bg-slate-50/80 rounded-lg transition-colors group gap-3"
+                        className="py-3 px-2 flex items-center justify-between hover:bg-[var(--paper-subtle)] rounded-lg transition-colors group gap-3"
                       >
                         {/* 左侧：学科轻量色彩标签 + 标题说明与用时预估 */}
                         <div className="flex items-center gap-3 min-w-0">
@@ -1431,7 +1427,7 @@ export function DashboardCockpit({
                             {m.fach}
                           </span>
                           <div className="min-w-0">
-                            <div className={`text-xs font-bold text-slate-900 tracking-tight group-hover:text-blue-700 transition-colors truncate ${done ? "line-through opacity-50" : ""}`}>
+                            <div className={`text-xs font-bold text-slate-900 tracking-tight group-hover:text-[var(--ink)] transition-colors truncate ${done ? "line-through" : ""}`}>
                               {idx + 1}. {de ? m.titleDE : m.titleZH}
                               {/* 保留历史单测检索锚点 */}
                               {m.id === "m1" && <span className="sr-only">清空 12 张 [D4]</span>}
@@ -1451,7 +1447,7 @@ export function DashboardCockpit({
                             onClick={() => toggleMission(m.id, m.xpReward)}
                             className={`p-1.5 rounded-lg transition-all cursor-pointer text-[11px] font-semibold flex items-center gap-1 ${
                               done
-                                ? "bg-emerald-50 text-emerald-700 font-bold"
+                                ? "bg-[var(--paper-subtle)] text-[var(--ink)] border border-[var(--line)] font-bold"
                                 : "text-slate-400 hover:text-slate-700 hover:bg-slate-100"
                             }`}
                             title={de ? "Erledigt-Status umschalten" : "标记完成状态"}
@@ -1459,7 +1455,7 @@ export function DashboardCockpit({
                             <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
                               <path
                                 d="M2.5 6L5 8.5L9.5 3.5"
-                                stroke={done ? "#16A34A" : "#94A3B8"}
+                                stroke={done ? "currentColor" : "#94A3B8"}
                                 strokeWidth="2.2"
                                 strokeLinecap="round"
                                 strokeLinejoin="round"
@@ -1481,7 +1477,7 @@ export function DashboardCockpit({
                           <button
                             type="button"
                             onClick={() => onNavigateToTab?.(m.targetTab, m.targetContext)}
-                            className="text-xs font-bold text-slate-900 group-hover:text-blue-700 px-3 py-1.5 rounded-lg border border-[var(--line)] bg-[var(--surface)] hover:bg-[var(--paper-subtle)] transition-all cursor-pointer flex items-center gap-1.5 shrink-0 tracking-tight"
+                            className="text-xs font-bold text-slate-900 group-hover:text-[var(--ink)] px-3 py-1.5 rounded-lg border border-[var(--line)] bg-[var(--surface)] hover:bg-[var(--paper-subtle)] transition-all cursor-pointer flex items-center gap-1.5 shrink-0 tracking-tight"
                             aria-label={de ? "Start ->" : "去执行 ->"}
                           >
                             <span>{de ? "Start" : "去执行"}</span>
@@ -1526,10 +1522,10 @@ export function DashboardCockpit({
                   onClick={() => onNavigateToTab?.("reise", { fach: item.fach })}
                   className="flex items-baseline gap-2 py-1 px-1.5 hover:bg-[var(--paper-subtle)] rounded-lg transition-colors cursor-pointer group"
                 >
-                  <span className="text-xs font-extrabold text-slate-900 group-hover:text-blue-700 tracking-tight">
+                  <span className="text-xs font-extrabold text-slate-900 group-hover:text-[var(--ink)] tracking-tight">
                     {item.fach}
                   </span>
-                  <span className="font-mono text-xs font-black text-amber-800">
+                  <span className="font-mono text-xs font-black text-[var(--ink)]">
                     {item.np} NP
                   </span>
                   {idx < 4 && <span className="text-slate-300 font-light hidden sm:inline ml-2">&bull;</span>}
@@ -1597,10 +1593,10 @@ export function DashboardCockpit({
                     <div
                       key={sub.fach}
                       onClick={() => onNavigateToTab?.("reise", { fach: sub.fach })}
-                      className="flex items-center justify-between gap-3 text-xs p-1.5 hover:bg-slate-50/80 rounded-lg transition-colors cursor-pointer group"
+                      className="flex items-center justify-between gap-3 text-xs p-1.5 hover:bg-[var(--paper-subtle)] rounded-lg transition-colors cursor-pointer group"
                     >
                       <div className="flex items-center gap-2 min-w-0 w-24">
-                        <span className={`text-[10px] font-mono font-bold px-1.5 py-0.2 rounded border ${sub.pillColor}`}>
+                        <span className={`text-[10px] font-mono font-bold px-1.5 py-0.2 rounded border bg-[var(--paper-subtle)] text-[var(--ink)] border-[var(--line)]`}>
                           {sub.fach}
                         </span>
                         <span className="font-sans font-medium text-slate-800 truncate">
@@ -1609,7 +1605,7 @@ export function DashboardCockpit({
                       </div>
 
                       <div className="flex-1 mx-2">
-                        <div className="w-full h-2 rounded-full bg-slate-100 overflow-hidden border border-slate-200/60">
+                        <div className="w-full h-2 rounded-full bg-slate-100 overflow-hidden border border-[var(--line)]">
                           <div
                             className="h-full bg-slate-800 rounded-full transition-all duration-500 group-hover:bg-[#D96E3A]"
                             style={{ width: `${sub.pct}%` }}
@@ -1621,7 +1617,7 @@ export function DashboardCockpit({
                         <span className="font-mono text-[11px] font-bold text-slate-900 tabular-nums">
                           {sub.pct}%
                         </span>
-                        <span className="font-mono text-[10px] text-amber-800 font-semibold">
+                        <span className="font-mono text-[10px] text-[var(--ink)] font-semibold">
                           {sub.np} NP
                         </span>
                       </div>
@@ -1649,10 +1645,10 @@ export function DashboardCockpit({
                             <div
                               key={sub.fach}
                               onClick={() => onNavigateToTab?.("reise", { fach: sub.fach })}
-                              className="flex items-center justify-between gap-3 text-xs p-1.5 hover:bg-slate-50/80 rounded-lg transition-colors cursor-pointer group"
+                              className="flex items-center justify-between gap-3 text-xs p-1.5 hover:bg-[var(--paper-subtle)] rounded-lg transition-colors cursor-pointer group"
                             >
                               <div className="flex items-center gap-2 min-w-0 w-24">
-                                <span className={`text-[10px] font-mono font-bold px-1.5 py-0.2 rounded border ${sub.pillColor}`}>
+                                <span className={`text-[10px] font-mono font-bold px-1.5 py-0.2 rounded border bg-[var(--paper-subtle)] text-[var(--ink)] border-[var(--line)]`}>
                                   {sub.fach}
                                 </span>
                                 <span className="font-sans font-medium text-slate-800 truncate">
@@ -1661,7 +1657,7 @@ export function DashboardCockpit({
                               </div>
 
                               <div className="flex-1 mx-2">
-                                <div className="w-full h-2 rounded-full bg-slate-100 overflow-hidden border border-slate-200/60">
+                                <div className="w-full h-2 rounded-full bg-slate-100 overflow-hidden border border-[var(--line)]">
                                   <div
                                     className="h-full bg-slate-800 rounded-full transition-all duration-500 group-hover:bg-[#D96E3A]"
                                     style={{ width: `${sub.pct}%` }}
@@ -1673,7 +1669,7 @@ export function DashboardCockpit({
                                 <span className="font-mono text-[11px] font-bold text-slate-900 tabular-nums">
                                   {sub.pct}%
                                 </span>
-                                <span className="font-mono text-[10px] text-amber-800 font-semibold">
+                                <span className="font-mono text-[10px] text-[var(--ink)] font-semibold">
                                   {sub.np} NP
                                 </span>
                               </div>
@@ -1761,9 +1757,9 @@ export function DashboardCockpit({
               </div>
 
               {/* 2. 重点攻克提示卡 (基于真实考试扣分高发区) */}
-              <div className="p-3 rounded-xl border border-amber-200/80 bg-amber-50/60 space-y-1.5">
+              <div className="p-3 rounded-xl border border-[var(--line)] bg-[var(--paper-subtle)] space-y-1.5">
                 <div className="flex items-center justify-between">
-                  <div className="flex items-center gap-1.5 text-xs font-extrabold text-amber-900">
+                  <div className="flex items-center gap-1.5 text-xs font-extrabold text-[var(--ink)]">
                     <svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor">
                       <path d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1zm.75 3.75a.75.75 0 0 0-1.5 0v4.5a.75.75 0 0 0 1.5 0v-4.5zm-.75 7.5a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5z" />
                     </svg>
@@ -1773,7 +1769,7 @@ export function DashboardCockpit({
                         : de ? "Fokus-Defizit: MINT BE-Genauigkeit" : "重点注意：解题区间规范 (MINT BE)"}
                     </span>
                   </div>
-                  <span className="text-[10px] font-mono text-amber-800 font-bold bg-amber-100/80 px-1.5 py-0.5 rounded">
+                  <span className="text-[10px] font-mono text-[var(--ink)] font-bold bg-[var(--surface)] border border-[var(--line)] px-1.5 py-0.5 rounded">
                     高频扣分
                   </span>
                 </div>

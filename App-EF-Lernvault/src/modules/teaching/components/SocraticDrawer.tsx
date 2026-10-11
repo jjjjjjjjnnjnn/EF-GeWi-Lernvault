@@ -99,7 +99,7 @@ export const SocraticDrawer: React.FC<SocraticDrawerProps> = ({
     return [
       `<!-- EF-Lernvault Fehlerlog & Diagnose-Patch -->`,
       `<!-- Fach: ${fach} | Datum: ${today} | Thema: ${thema} -->`,
-      `| Datum | Fach | Thema | Fehlertyp / Diagnose | Eigener Ansatz | 15-NP-Musterkorrektur |`,
+      `| Datum | Fach | Thema | Fehlertyp | Eigener Ansatz | 15NP-Muster |`,
       `| :--- | :--- | :--- | :--- | :--- | :--- |`,
       `| ${today} | ${fach} | ${thema} | ${trap} | ${userClean} | ${musterClean} |`,
     ].join("\n");

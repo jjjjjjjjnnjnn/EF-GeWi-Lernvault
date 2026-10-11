@@ -116,7 +116,20 @@ export const InteractiveLessonRunner: React.FC<InteractiveLessonRunnerProps> = (
   >(null);
   const [isMicroWorldCompleted, setIsMicroWorldCompleted] = useState<boolean>(false);
   const [isPuzzleCompleted, setIsPuzzleCompleted] = useState<boolean>(false);
-  const [completedStepIndices, setCompletedStepIndices] = useState<Set<number>>(new Set());
+  const [completedStepIndices, setCompletedStepIndices] = useState<Set<number>>(() => {
+    if (typeof window !== "undefined" && window.localStorage) {
+      try {
+        const raw = window.localStorage.getItem(sessionKey);
+        if (raw) {
+          const arr = JSON.parse(raw).completedStepIndices;
+          if (Array.isArray(arr)) return new Set(arr.filter((n) => typeof n === "number"));
+        }
+      } catch {
+        // ignore
+      }
+    }
+    return new Set();
+  });
 
   useEffect(() => {
     if (typeof window !== "undefined" && window.localStorage) {
@@ -129,6 +142,7 @@ export const InteractiveLessonRunner: React.FC<InteractiveLessonRunnerProps> = (
               comboCount,
               accumulatedXp,
               mistakes,
+              completedStepIndices: Array.from(completedStepIndices),
             })
           );
         } else if (isFinished) {
@@ -143,6 +157,7 @@ export const InteractiveLessonRunner: React.FC<InteractiveLessonRunnerProps> = (
     comboCount,
     accumulatedXp,
     mistakes,
+    completedStepIndices,
     isFinished,
     sessionKey,
   ]);
@@ -388,6 +403,7 @@ export const InteractiveLessonRunner: React.FC<InteractiveLessonRunnerProps> = (
           earnedXp={accumulatedXp}
           streakDays={currentStreak}
           mistakes={mistakes}
+          fach={effectiveFach}
           lang={lang}
           onContinue={onClose}
           onReviewQuest={handleReviewQuest}

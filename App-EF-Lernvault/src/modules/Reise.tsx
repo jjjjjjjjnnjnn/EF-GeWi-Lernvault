@@ -1654,7 +1654,7 @@ export default function ReiseModule({
                         }}
                         className={`px-2.5 py-1 text-xs font-mono rounded-[var(--radius)] border transition-all ${
                           !(checkText[item.id] ?? "").trim() || checkScore[item.id]?.loading || kiOff
-                            ? "border-[var(--line)] text-[var(--gray)]/50 cursor-not-allowed"
+                            ? "border-[var(--line)] text-[var(--gray)] cursor-not-allowed"
                             : "border-[var(--accent)] text-[var(--accent)] hover:bg-[var(--accent)]/5 active:scale-95"
                         }`}
                       >
@@ -1697,7 +1697,7 @@ export default function ReiseModule({
                       }}
                       className={`px-2.5 py-1 text-xs font-mono rounded-[var(--radius)] border border-[var(--line)] transition-all ${
                         kiOff
-                          ? "text-[var(--gray)]/50 cursor-not-allowed"
+                          ? "text-[var(--gray)] cursor-not-allowed"
                           : "text-[var(--gray)] hover:border-[var(--accent)] hover:text-[var(--accent)]"
                       }`}
                     >
@@ -1747,7 +1747,13 @@ export default function ReiseModule({
               <button
                 type="button"
                 onClick={() => {
-                  const patch = `- [ ] [${activeCourse.fach}] ${activeCourse.thema}: Check-Fehler nacharbeiten`;
+                  const today = new Date().toISOString().split("T")[0];
+                  const thema = String(activeCourse.thema).replace(/[|]/g, "/");
+                  const patch = [
+                    `| Datum | Fach | Thema | Fehlertyp | Eigener Ansatz | 15NP-Muster |`,
+                    `| :--- | :--- | :--- | :--- | :--- | :--- |`,
+                    `| ${today} | ${activeCourse.fach} | ${thema} | Check-Fehler nacharbeiten | Eigener Loesungsansatz pruefen | 15-NP-Mustersatz der Lektion nachschlagen |`,
+                  ].join("\n");
                   navigator.clipboard.writeText(patch);
                   setCopiedPatch(true);
                   setTimeout(() => setCopiedPatch(false), 2000);
@@ -1759,7 +1765,7 @@ export default function ReiseModule({
               </button>
             </div>
             <code className="block bg-[var(--surface)] border border-[var(--line)] p-2.5 font-mono text-xs text-[var(--ink)] rounded-[var(--radius)]">
-              - [ ] [{activeCourse.fach}] {activeCourse.thema}: Check-Fehler nacharbeiten
+              | Datum | Fach | Thema | Fehlertyp | Eigener Ansatz | 15NP-Muster |
             </code>
           </div>
 
@@ -2044,7 +2050,7 @@ export default function ReiseModule({
                 <button
                   type="button"
                   onClick={stopRecording}
-                  className="px-4 py-2 font-mono text-xs uppercase bg-red-600 text-white rounded-[var(--radius)] hover:bg-red-700 transition-colors"
+                  className="px-4 py-2 font-mono text-xs uppercase bg-[var(--ink)] text-white rounded-[var(--radius)] hover:opacity-90 transition-colors"
                 >
                   Aufnahme stoppen
                 </button>
@@ -2124,7 +2130,7 @@ export default function ReiseModule({
                   : lang === "de" ? "KI bewerten" : "AI批改"}
               </button>
               {oralScore.rounds > 0 && (
-                <span className="font-mono text-[var(--text-meta)] text-[var(--gray)]">
+                <span className="font-mono text-[var(--gray)]">
                   {lang === "de" ? `Durchgang ${oralScore.rounds}` : `第${oralScore.rounds}轮`}
                 </span>
               )}
@@ -2254,7 +2260,7 @@ export default function ReiseModule({
           </div>
 
           {/* Spotlight / New Release Card */}
-          <div className="rounded-[var(--radius)] border border-[var(--accent)]/40 bg-[var(--surface)] p-4 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 shadow-none">
+          <div className="rounded-[var(--radius)] border border-[var(--line)] bg-[var(--surface)] p-4 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
             <div className="space-y-1">
               <div className="flex items-center gap-2">
                 <span className="font-mono text-xs uppercase tracking-wider px-1.5 py-0.5 rounded bg-[var(--accent)] text-[var(--paper)] font-bold">
@@ -2295,12 +2301,12 @@ export default function ReiseModule({
                 onClick={() => setWizardFach("alle")}
                 className={`px-2.5 py-1 text-xs font-mono rounded-[var(--radius)] border transition-all ${
                   wizardFach === "alle"
-                    ? "border-[var(--accent)] text-[var(--accent)] bg-[var(--paper-subtle)]/40 font-medium"
+                    ? "border-[var(--accent)] text-[var(--accent)] bg-[var(--paper-subtle)] font-medium"
                     : "border-[var(--line)] text-[var(--gray)] hover:text-[var(--ink)] hover:border-[var(--ink)]"
                 }`}
               >
                 {lang === "de" ? "Alle Fächer" : "全部学科"}{" "}
-                <span className="text-[var(--text-meta)] opacity-75">({allReisen.length})</span>
+                <span className="text-[var(--gray)]">({allReisen.length})</span>
               </button>
               {FAECHER.map((f) => {
                 const count = allReisen.filter(
@@ -2314,12 +2320,12 @@ export default function ReiseModule({
                     onClick={() => setWizardFach(f.id)}
                     className={`px-2.5 py-1 text-xs font-mono rounded-[var(--radius)] border transition-all ${
                       isSelected
-                        ? "border-[var(--accent)] text-[var(--accent)] bg-[var(--paper-subtle)]/40 font-medium"
+                        ? "border-[var(--accent)] text-[var(--accent)] bg-[var(--paper-subtle)] font-medium"
                         : "border-[var(--line)] text-[var(--gray)] hover:text-[var(--ink)] hover:border-[var(--ink)]"
                     }`}
                   >
                     {f.kurz} · {lang === "de" ? f.nameDE : f.nameZH}{" "}
-                    <span className="text-[var(--text-meta)] opacity-75">({count})</span>
+                    <span className="text-[var(--gray)]">({count})</span>
                   </button>
                 );
               })}
@@ -2370,7 +2376,7 @@ export default function ReiseModule({
                     onClick={() => setWizardEdition(ed.id)}
                     className={`px-2.5 py-1 text-xs font-sans rounded-[var(--radius)] border transition-all ${
                       wizardEdition === ed.id
-                        ? "border-[var(--accent)] text-[var(--accent)] font-medium bg-[var(--paper-subtle)]/40"
+                        ? "border-[var(--accent)] text-[var(--accent)] font-medium bg-[var(--paper-subtle)]"
                         : "border-[var(--line)] text-[var(--gray)] hover:text-[var(--ink)]"
                     }`}
                   >
@@ -2396,7 +2402,7 @@ export default function ReiseModule({
                     onClick={() => setWizardZiel(z.id)}
                     className={`px-2.5 py-1 text-xs font-sans rounded-[var(--radius)] border transition-all ${
                       wizardZiel === z.id
-                        ? "border-[var(--accent)] text-[var(--accent)] font-medium bg-[var(--paper-subtle)]/40"
+                        ? "border-[var(--accent)] text-[var(--accent)] font-medium bg-[var(--paper-subtle)]"
                         : "border-[var(--line)] text-[var(--gray)] hover:text-[var(--ink)]"
                     }`}
                   >
@@ -2594,7 +2600,7 @@ export default function ReiseModule({
                   ))}
 
                   {/* Course Conclusion Card */}
-                  <div className="border border-[var(--line)] bg-[var(--paper-subtle)]/50 p-6 sm:p-8 rounded-[var(--radius)] text-center space-y-4">
+                  <div className="border border-[var(--line)] bg-[var(--paper-subtle)] p-6 sm:p-8 rounded-[var(--radius)] text-center space-y-4">
                     <div className="font-mono text-xs uppercase tracking-wider text-[var(--accent)] font-semibold">
                       {lang === "de" ? "Lektion abgeschlossen" : "课程学习进度"}
                     </div>
@@ -2640,7 +2646,7 @@ export default function ReiseModule({
                       <span className="font-mono text-xs uppercase tracking-wider font-semibold text-[var(--ink)]">
                         {lang === "de" ? "Gliederung" : "大纲目录 · TOC"}
                       </span>
-                      <span className="font-mono text-[var(--text-meta)] text-[var(--gray)]">
+                      <span className="font-mono text-[var(--gray)]">
                         {activeCourse.schritte.length} {lang === "de" ? "Stationen" : "小节"}
                       </span>
                     </div>
@@ -2728,10 +2734,10 @@ export default function ReiseModule({
                         onClick={() => setStepIdx(idx)}
                         className={`flex items-center gap-1.5 px-3 py-1.5 text-xs font-mono rounded-[var(--radius)] transition-all border ${
                           isCurrent
-                            ? "border-[var(--accent)] text-[var(--accent)] bg-[var(--paper-subtle)]/40 font-semibold"
+                            ? "border-[var(--accent)] text-[var(--accent)] bg-[var(--paper-subtle)] font-semibold"
                             : isUnlocked
                             ? "border-[var(--line)] text-[var(--ink)] hover:border-[var(--ink)]"
-                            : "border-[var(--line)]/50 text-[var(--gray)]/40 cursor-not-allowed"
+                            : "border-[var(--line)] text-[var(--gray)] cursor-not-allowed"
                         }`}
                       >
                         <span>0{s.stepNumber}</span>

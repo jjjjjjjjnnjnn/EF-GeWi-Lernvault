@@ -174,7 +174,7 @@ export function AppHeader({
           variant="outline"
           size="sm"
           onClick={onOpenDailySprint}
-          className="border-amber-300 bg-amber-50/50 hover:bg-amber-100/50 text-amber-950 font-bold"
+          className="border-[var(--line)] bg-[var(--paper-subtle)] hover:bg-[var(--surface)] text-[var(--ink)] font-bold"
         >
           <svg width="13" height="13" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
             <path d="M8 2.5v3M8 10.5v3M2.5 8h3M10.5 8h3" />
@@ -182,7 +182,7 @@ export function AppHeader({
           </svg>
           <span>{de ? "Sprint" : "冲刺"}</span>
           {currentStreak > 0 && (
-            <span className="ml-0.5 rounded px-1 py-0.2 font-mono text-[10px] font-extrabold text-amber-800 bg-amber-200/60">
+            <span className="ml-0.5 rounded px-1 py-0.2 font-mono text-[10px] font-extrabold text-[var(--ink)] bg-[var(--surface)] border border-[var(--line)]">
               {currentStreak}d
             </span>
           )}
