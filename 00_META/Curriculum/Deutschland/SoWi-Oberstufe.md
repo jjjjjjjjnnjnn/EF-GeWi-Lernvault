@@ -15,7 +15,7 @@ fachseiten: [sozialwissenschaften-gost, sozialwissenschaftenwirtschaft-gost]
 # SoWi — Gymnasiale Oberstufe 大纲（NRW）
 
 > 来源：[KLP 官方 PDF](https://lehrplannavigator.nrw.de/system/files/media/document/file/klp_gost_sowi.pdf) · 版本：`2013`（Heft 4717，1. Auflage 2014）· 覆盖 EF + Qualifikationsphase
-> 中文一句话：SoWi 以「政治—社会—经济」三学科整合视角，培养作为公民参与社会塑造的**民主能力（Demokratiefähigkeit）**，EF 打基础（微观→宏观的经济/政治/社会化三大领域），Q1–Q2 深化到 4 个宏观领域（经济政策 / 欧盟 / 社会不平等 / 全球结构）。
+> 中文一句话：SoWi 以「政治—社会—经济」三学科整合视角，培养作为公民参与社会塑造的**民主能力（Demokratiefähigkeit）**，EF 打基础（IF1–IF3），Qualifikationsphase（Q1+Q2 四个 Halbjahr 共同承担）深化到 4 个宏观领域（经济政策 / 欧盟 / 社会不平等 / 全球结构，IF4–IF7）。
 
 <!--
 写作规范：

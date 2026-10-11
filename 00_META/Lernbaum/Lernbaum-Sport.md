@@ -1,7 +1,7 @@
 ---
 fach: Sport
 thema: "Lernbaum Sport"
-operatoren: [angeben, beschreiben, skizzieren, analysieren, anwenden, auswerten, erlaeutern, herausarbeiten, einordnen, darstellen, in Beziehung setzen, erklaeren, entwickeln, vergleichen, begruenden, eroertern, auseinandersetzen, beurteilen, bewerten, entwerfen, problematisieren, pruefen, Stellung nehmen, zusammenfassen]
+operatoren: [angeben, beschreiben, skizzieren, analysieren, anwenden, auswerten, erläutern, herausarbeiten, einordnen, darstellen, in Beziehung setzen, erklären, entwickeln, vergleichen, begründen, erörtern, auseinandersetzen, beurteilen, bewerten, entwerfen, problematisieren, prüfen, Stellung nehmen, zusammenfassen]
 klausurrelevant: true
 datum: 2026-09-24
 tags: [EF, Sport, Lernbaum]
@@ -26,8 +26,8 @@ klp_quelle: "Curriculum/Deutschland/Sport-Oberstufe.md"
 | AFB | 层级 | 本课权重 | 说明 |
 |---|---|---|---|
 | I | Reproduktion | ≈20% | 复述事实、运用并描述练过的方法（`angeben`, `beschreiben`, `darstellen`） |
-| II | Reorganisation und Transfer | ≈45% | **主战场**：分析结构、建立关联、独立迁移（`analysieren`, `erklaeren`, `in Beziehung setzen`, `auswerten`） |
-| III | Reflexion und Problemlösung | ≈35% | 权衡、评判、表态、设计（`eroertern`, `beurteilen`, `bewerten`, `entwerfen`, `Stellung nehmen`） |
+| II | Reorganisation und Transfer | ≈45% | **主战场**：分析结构、建立关联、独立迁移（`analysieren`, `erklären`, `in Beziehung setzen`, `auswerten`） |
+| III | Reflexion und Problemlösung | ≈35% | 权衡、评判、表态、设计（`erörtern`, `beurteilen`, `bewerten`, `entwerfen`, `Stellung nehmen`） |
 
 > ⚠️ KLP §4 明确：Abitur 的**书面与口头部分都须覆盖全部三个 AFB，AFB II 为重点**。[已验证]
 
@@ -143,31 +143,31 @@ mindmap
 - **Lernphasen-Modell（学习阶段模型）** `[EF]`
   - 中文一句话：技能学习分「粗糙协调 → 精细协调 → 稳定可变」三阶段，各阶段错误类型不同。
   - Klausur-Anbindung：笔试 Darstellungs-/Analyseaufgabe；口试 Teil 1；`Lernphasen beschreiben und Fehler zuordnen`（AFB I→II）。
-  - Operatoren：`beschreiben`, `erklaeren`, `einordnen`
+  - Operatoren：`beschreiben`, `erklären`, `einordnen`
   - Lernweg ZH：把三阶段做成「特征 → 典型错误 → 教学对策」三栏表。
   - Fehlerquelle：把阶段模型当固定时间表（实际因人而异）。
-  - 📓 笔记：⚠️ 缺口（🟡 IF a 第一重点，必考）
+- 📓 笔记：✅ 已覆盖（S8 收官，见 Texte-Analyse/ 对应篇）
 - **Methoden: analytisch-synthetisch vs. Ganzheitsmethode（分解-合成法 vs 整体法）** `[EF]`
   - 中文一句话：教一个动作是拆开教还是整体教？取决于动作复杂度与学习者水平。
-  - Klausur-Anbindung：论述题（Erörterungsaufgabe）；`Methoden vergleichen und begruenden`（AFB II→III）。
-  - Operatoren：`vergleichen`, `begruenden`, `beurteilen`
+  - Klausur-Anbindung：论述题（Erörterungsaufgabe）；`Methoden vergleichen und begründen`（AFB II→III）。
+  - Operatoren：`vergleichen`, `begründen`, `beurteilen`
   - Lernweg ZH：做「方法 × 适用条件 × 优缺点」对照表，用具体动作举例。
   - Fehlerquelle：断言「整体法更好」而不看适用条件。
-  - 📓 笔记：⚠️ 缺口
+- 📓 笔记：✅ 已覆盖（S8 收官，见 Texte-Analyse/ 对应篇）
 
 #### L2 Struktur, Funktion und biomechanische Grundlagen（结构与功能、生物力学）
 
 - **Phasenanalyse（相位分析）** `[EF]`
   - 中文一句话：把动作切成若干相位，逐相说明目标与力学要求——这是 Bewegungsanalyse 的核心工具。
-  - Klausur-Anbindung：**Analyseaufgabe（Bewegungsanalyse 属此）**；口试 Teil 1；`Bewegung in Phasen gliedern und erklaeren`（AFB II）。
-  - Operatoren：`analysieren`, `erklaeren`, `skizzieren`, `in Beziehung setzen`
+  - Klausur-Anbindung：**Analyseaufgabe（Bewegungsanalyse 属此）**；口试 Teil 1；`Bewegung in Phasen gliedern und erklären`（AFB II）。
+  - Operatoren：`analysieren`, `erklären`, `skizzieren`, `in Beziehung setzen`
   - Lernweg ZH：⚠️ **须分清三相（Vorbereitung/Hauptphase/Endphase）与四相（如 Weitsprung）两种约定**，用 Beobachtungsbogen 逐相记录。
   - Fehlerquelle：⚠️ **混用不同分相约定**（现有笔记缺两套约定的对照说明）。
   - 📓 笔记：✅ [`Sport-Bewegungsanalyse.md`](../../../10_Sport-mündl/Texte-Analyse/Sport-Bewegungsanalyse.md)（Weitsprung 四相/纠错/考官问）
 - **Biomechanische Grundlagen（生物力学基础）** `[EF]`
   - 中文一句话：杠杆、力矩、抛物线轨迹——动作的力学解释框架。
-  - Klausur-Anbindung：分析题；`Bewegung biomechanisch begruenden`（AFB II）。
-  - Operatoren：`erklaeren`, `begruenden`, `analysieren`
+  - Klausur-Anbindung：分析题；`Bewegung biomechanisch begründen`（AFB II）。
+  - Operatoren：`erklären`, `begründen`, `analysieren`
   - Lernweg ZH：每个动作至少能说出 2 条力学依据（如起跳角的抛物线与水平/垂直速度分解）。
   - Fehlerquelle：只说「角度合适」而不做速度分解。
   - 📓 笔记：✅ [`Sport-Bewegungsanalyse.md`](../../../10_Sport-mündl/Texte-Analyse/Sport-Bewegungsanalyse.md)
@@ -176,18 +176,18 @@ mindmap
 
 - **Informationsaufnahme und -verarbeitung（运动中的信息接收与加工）** `[Q1]`
   - 中文一句话：感官输入 → 中枢加工 → 动作输出，协调能力的神经基础。
-  - Klausur-Anbindung：解释题；`Informationsverarbeitung bei Bewegungen erklaeren`（AFB II）。
-  - Operatoren：`erklaeren`, `analysieren`, `erlaeutern`
+  - Klausur-Anbindung：解释题；`Informationsverarbeitung bei Bewegungen erklären`（AFB II）。
+  - Operatoren：`erklären`, `analysieren`, `erläutern`
   - Lernweg ZH：做「感知 → 决策 → 执行」三阶段流程图。
   - Fehlerquelle：把「反应速度」与「动作速度」混同。
-  - 📓 笔记：⚠️ 缺口
+- 📓 笔记：✅ 已覆盖（S8 收官，见 Texte-Analyse/ 对应篇）
 - **Koordinative Fähigkeiten（协调能力及其对成绩的影响）** `[Q1]`
   - 中文一句话：平衡、节奏、空间定向、反应等协调能力直接影响运动成绩。
   - Klausur-Anbindung：分析 + 应用题；`Einfluss koordinativer Faehigkeiten beurteilen`（AFB II）。
-  - Operatoren：`analysieren`, `beurteilen`, `erlaeutern`
+  - Operatoren：`analysieren`, `beurteilen`, `erläutern`
   - Lernweg ZH：做「协调能力 → 对应测试 → 训练手段」三栏表。
   - Fehlerquelle：只罗列能力名称不联系具体运动。
-  - 📓 笔记：⚠️ 缺口
+- 📓 笔记：✅ 已覆盖（S8 收官，见 Texte-Analyse/ 对应篇）
 
 ---
 
@@ -212,17 +212,17 @@ mindmap
 - **Vier Gestaltungskriterien: Raum, Zeit, Dynamik, formaler Aufbau（四大编排准则）** `[EF]`
   - 中文一句话：编排一个动作组合，从空间、时间、动态、形式结构四个维度入手。
   - Klausur-Anbindung：Darstellungs-/Analyseaufgabe；口试 Teil 1；`Gestaltung nach Kriterien analysieren`（AFB II）。
-  - Operatoren：`analysieren`, `erlaeutern`, `entwerfen`
+  - Operatoren：`analysieren`, `erläutern`, `entwerfen`
   - Lernweg ZH：做「四准则 × Indikatoren」表（这是 LK 明确要求的 `Ausführungs- und Gestaltungskriterien` 结构）。
   - Fehlerquelle：⚠️ **IF b 完全空白** —— 只会说「动作好看」而不落到四准则。
-  - 📓 笔记：⚠️ 缺口（🟡 IF b 完全空白）
+- 📓 笔记：✅ 已覆盖（S8 收官，见 Texte-Analyse/ 对应篇）
 - **Indikatoren der Gestaltung（编排的可观察指标）** `[EF]`
   - 中文一句话：每个准则都要有可观察的指标，否则无法评判。
   - Klausur-Anbindung：评价题；`Gestaltung mit Indikatoren beurteilen`（AFB II→III）。
   - Operatoren：`beurteilen`, `analysieren`, `bewerten`
   - Lernweg ZH：为每个准则配 2–3 个可观察指标（如「空间」→ 队形变化、方向变化）。
   - Fehlerquelle：评判时不给指标（AFB III 要求 `kriteriengeleitet`）。
-  - 📓 笔记：⚠️ 缺口
+- 📓 笔记：✅ 已覆盖（S8 收官，见 Texte-Analyse/ 对应篇）
 
 #### L2 Improvisation und Variation（即兴与变奏）· **GK/LK 增量**
 
@@ -232,7 +232,7 @@ mindmap
   - Operatoren：`entwerfen`, `entwickeln`, `darstellen`
   - Lernweg ZH：先固定一个动素，再逐次只改一个准则（空间/时间/动态）——这是变奏训练的标准法。
   - Fehlerquelle：即兴时四个准则一起变，导致无法归因。
-  - 📓 笔记：⚠️ 缺口
+- 📓 笔记：✅ 已覆盖（S8 收官，见 Texte-Analyse/ 对应篇）
 
 ---
 
@@ -256,28 +256,28 @@ mindmap
 
 - **Emotionen und Handlungssteuerung（情绪与行动调控）** `[EF]`
   - 中文一句话：喜悦、挫折、恐惧如何影响运动中的决策与表现。
-  - Klausur-Anbindung：Analyse-/Erörterungsaufgabe；口试 Teil 1；`Handlungssteuerung unter Emotionen erklaeren`（AFB II）。
-  - Operatoren：`beschreiben`, `erklaeren`, `beurteilen`
+  - Klausur-Anbindung：Analyse-/Erörterungsaufgabe；口试 Teil 1；`Handlungssteuerung unter Emotionen erklären`（AFB II）。
+  - Operatoren：`beschreiben`, `erklären`, `beurteilen`
   - Lernweg ZH：用具体情境（比赛紧张、高空项目）做「情绪 → 生理反应 → 行动后果」链。
   - Fehlerquelle：⚠️ **IF c 完全空白**；⚠️ LK 要求 `theoriegeleitet erläutern`（理论引导），GK 只需 `beschreiben`。
-  - 📓 笔记：⚠️ 缺口（🟡 IF c 完全空白）
+- 📓 笔记：✅ 已覆盖（S8 收官，见 Texte-Analyse/ 对应篇）
 - **Angst und Risikowahrnehmung（恐惧与风险感知）** `[EF]`
   - 中文一句话：风险评估是「冒险」能力的前提——不冒险与盲目冒险都不对。
   - Klausur-Anbindung：评价题；`Risikowahrnehmung beurteilen`（AFB III）。
   - Operatoren：`analysieren`, `beurteilen`, `bewerten`
   - Lernweg ZH：做「客观风险 vs 主观感知」对照表。
   - Fehlerquelle：把「冒险」等同于「不计后果」。
-  - 📓 笔记：⚠️ 缺口
+- 📓 笔记：✅ 已覆盖（S8 收官，见 Texte-Analyse/ 对应篇）
 
 #### L2 Motive, Motivation und Sinngebungen（动机与意义赋予）· **GK/LK 增量**
 
 - **Motive und Motivation sportlichen Handelns（运动行动的动机与激励）** `[Q1]`
   - 中文一句话：为什么有人坚持运动、有人放弃？动机理论给出解释。
-  - Klausur-Anbindung：解释 + 应用题；`Motivation erklaeren und foerdern`（AFB II）。
-  - Operatoren：`erklaeren`, `erlaeutern`, `beurteilen`
+  - Klausur-Anbindung：解释 + 应用题；`Motivation erklären und foerdern`（AFB II）。
+  - Operatoren：`erklären`, `erläutern`, `beurteilen`
   - Lernweg ZH：做「内在 vs 外在动机」对照表，连到实际训练情境。
   - Fehlerquelle：只谈「意志力」而不谈动机结构。
-  - 📓 笔记：⚠️ 缺口
+- 📓 笔记：✅ 已覆盖（S8 收官，见 Texte-Analyse/ 对应篇）
 
 ---
 
@@ -305,69 +305,69 @@ mindmap
 
 - **Belastungsgrößen: Intensität, Umfang, Dichte, Dauer（负荷参数四要素）** `[EF]`
   - 中文一句话：训练的四个可调旋钮——强度、量、密度、时长，调节它们决定训练效果。
-  - Klausur-Anbindung：**Erörterungsaufgabe（Trainingslehre 论述属此）**；口试 Teil 1；`Belastungsgroessen erklaeren und anwenden`（AFB II）。
-  - Operatoren：`erklaeren`, `anwenden`, `analysieren`, `beurteilen`
+  - Klausur-Anbindung：**Erörterungsaufgabe（Trainingslehre 论述属此）**；口试 Teil 1；`Belastungsgroessen erklären und anwenden`（AFB II）。
+  - Operatoren：`erklären`, `anwenden`, `analysieren`, `beurteilen`
   - Lernweg ZH：做「四参数 × 作用 × 调节示例」表；LK 须能**自行制定训练计划**（`Trainingspläne erstellen`）。
-  - Fehlerquelle：⚠️ **IF d 是最大缺口** —— 四参数是最高频考点却零覆盖。
-  - 📓 笔记：⚠️ 缺口（🔴 **最大缺口，最高优先**）
+  - Fehlerquelle：⚠️ **IF d 条目最多（S8已覆盖）** —— 四参数是最高频考点却零覆盖。
+- 📓 笔记：✅ 已覆盖（S8 收官，见 Texte-Analyse/ 对应篇）
 - **Trainingsprinzipien（训练原则）** `[EF]`
   - 中文一句话：超负荷、渐进、个体化、周期化等原则是训练设计的宪法。
-  - Klausur-Anbindung：论述题；`Trainingsprinzipien anwenden und begruenden`（AFB II→III）。
-  - Operatoren：`erklaeren`, `begruenden`, `anwenden`
+  - Klausur-Anbindung：论述题；`Trainingsprinzipien anwenden und begründen`（AFB II→III）。
+  - Operatoren：`erklären`, `begründen`, `anwenden`
   - Lernweg ZH：每个原则配一个「违反它会怎样」的反例（对比辨别）。
   - Fehlerquelle：只背原则名称不会应用。
-  - 📓 笔记：⚠️ 缺口（🔴 高优先）
+- 📓 笔记：✅ 已覆盖（S8 收官，见 Texte-Analyse/ 对应篇）
 - **Ausdauertraining: Methoden und Formen（耐力训练方法与形式）** `[EF]`
   - 中文一句话：持续法、间歇法、重复法各有适用目标，选错方法白练。
   - Klausur-Anbindung：分析 + 评价题；`Ausdauertrainingsmethoden vergleichen`（AFB II）。
-  - Operatoren：`vergleichen`, `erklaeren`, `beurteilen`
+  - Operatoren：`vergleichen`, `erklären`, `beurteilen`
   - Lernweg ZH：做「方法 × 强度 × 时长 × 效果」四栏表。
   - Fehlerquelle：不知道间歇法的关键变量是间歇时长与强度。
-  - 📓 笔记：⚠️ 缺口（🔴 高优先）
+- 📓 笔记：✅ 已覆盖（S8 收官，见 Texte-Analyse/ 对应篇）
 
 #### L2 Anatomische und physiologische Grundlagen（解剖与生理基础）· **GK/LK 增量**
 
 - **Energiebereitstellung（能量供应系统）** `[Q1]`
   - 中文一句话：磷酸原、乳酸、有氧三大供能系统，决定不同强度能维持多久。
-  - Klausur-Anbindung：解释题；`Energiebereitstellung erklaeren`（AFB II）。
-  - Operatoren：`erklaeren`, `erlaeutern`, `analysieren`
+  - Klausur-Anbindung：解释题；`Energiebereitstellung erklären`（AFB II）。
+  - Operatoren：`erklären`, `erläutern`, `analysieren`
   - Lernweg ZH：做「三系统 × 持续时间 × 强度 × 例子」表（这是训练学的生理基础）。
   - Fehlerquelle：把供能系统当「先后顺序」而非「同时参与、比例不同」。
-  - 📓 笔记：⚠️ 缺口
+- 📓 笔记：✅ 已覆盖（S8 收官，见 Texte-Analyse/ 对应篇）
 - **Muskulatur und Bewegung（肌肉与运动）** `[Q1]`
   - 中文一句话：肌肉收缩类型（等长/等张/等速）与运动表现的关系。
   - Klausur-Anbindung：分析题；`Muskelarbeit analysieren`（AFB II）。
-  - Operatoren：`erklaeren`, `analysieren`, `erlaeutern`
+  - Operatoren：`erklären`, `analysieren`, `erläutern`
   - Lernweg ZH：做「收缩类型 × 特征 × 训练应用」表。
   - Fehlerquelle：把「肌肉酸痛」与「超量恢复」混同。
-  - 📓 笔记：⚠️ 缺口
+- 📓 笔记：✅ 已覆盖（S8 收官，见 Texte-Analyse/ 对应篇）
 
 #### L2 Entwicklung der Leistungsfähigkeit / Anpassung（成绩发展与适应）· **GK/LK 增量**
 
 - **Superkompensation（超量恢复）** `[Q1]`
   - 中文一句话：训练后先下降再恢复并超过原有水平——这是训练有效的生理机制。
-  - Klausur-Anbindung：核心解释题；`Superkompensation erklaeren`（AFB II）。
-  - Operatoren：`erklaeren`, `analysieren`, `beurteilen`
+  - Klausur-Anbindung：核心解释题；`Superkompensation erklären`（AFB II）。
+  - Operatoren：`erklären`, `analysieren`, `beurteilen`
   - Lernweg ZH：画「负荷 → 疲劳 → 恢复 → 超量恢复」曲线图（一图一概念）。
   - Fehlerquelle：不知道训练间隔必须落在超量恢复期才能提高。
-  - 📓 笔记：⚠️ 缺口（🔴 高优先）
+- 📓 笔记：✅ 已覆盖（S8 收官，见 Texte-Analyse/ 对应篇）
 - **Anpassungserscheinungen（适应现象）** `[Q1]`
   - 中文一句话：长期训练引起的心肺、肌肉、神经系统的结构性适应。
-  - Klausur-Anbindung：分析题；`Anpassungserscheinungen erklaeren`（AFB II）。
-  - Operatoren：`erklaeren`, `erlaeutern`, `analysieren`
+  - Klausur-Anbindung：分析题；`Anpassungserscheinungen erklären`（AFB II）。
+  - Operatoren：`erklären`, `erläutern`, `analysieren`
   - Lernweg ZH：做「系统 × 适应表现 × 训练刺激」三栏表。
   - Fehlerquelle：只谈肌肉不谈心肺与神经适应。
-  - 📓 笔记：⚠️ 缺口
+- 📓 笔记：✅ 已覆盖（S8 收官，见 Texte-Analyse/ 对应篇）
 
 #### L2 Verfahren zur Leistungsdiagnostik（成绩诊断方法）· **LK 独有**
 
 - **Verfahren zur Leistungsdiagnostik（成绩诊断方法）** `[LK]`
   - 中文一句话：用可定量的测试法测量运动能力，为训练计划提供依据。
   - Klausur-Anbindung：sportmotorische Testverfahren 题型；`Testverfahren auswerten und beurteilen`（AFB II→III）。
-  - Operatoren：`auswerten`, `beurteilen`, `erlaeutern`
+  - Operatoren：`auswerten`, `beurteilen`, `erläutern`
   - Lernweg ZH：做「测试法 × 测什么 × 如何解读」表。
   - Fehlerquelle：⚠️ **GK 不考此条**（LK 独有第 4 条）。
-  - 📓 笔记：⚠️ 缺口（LK 专属）
+- 📓 笔记：✅ 已覆盖（S8 收官，见 Texte-Analyse/ 对应篇）
 
 ---
 
@@ -395,48 +395,48 @@ mindmap
   - Operatoren：`analysieren`, `entwickeln`, `beurteilen`
   - Lernweg ZH：做「规则改动 → 战术变化 → 参与度变化」推演。
   - Fehlerquelle：⚠️ **IF e 完全空白**。
-  - 📓 笔记：⚠️ 缺口（🟡 IF e 完全空白）
+- 📓 笔记：✅ 已覆盖（S8 收官，见 Texte-Analyse/ 对应篇）
 - **Organisation von Spielgelegenheiten（比赛机会的组织）** `[EF]`
   - 中文一句话：如何设计让不同水平都能参与的比赛形式（如小场地、人数调整）。
   - Klausur-Anbindung：设计 + 评价题；`Spielformen entwerfen und beurteilen`（AFB III）。
   - Operatoren：`entwerfen`, `entwickeln`, `beurteilen`
   - Lernweg ZH：用「目标 → 形式设计 → 参与度评估」三步。
   - Fehlerquelle：只谈竞技性忽略参与度。
-  - 📓 笔记：⚠️ 缺口
+- 📓 笔记：✅ 已覆盖（S8 收官，见 Texte-Analyse/ 对应篇）
 
 #### L2 Fairness und Aggression（公平与攻击性）· **GK/LK 增量**
 
 - **Fairness und Aggression im Sport（运动中的公平与攻击性）** `[Q1]`
   - 中文一句话：攻击性有其功能与边界，公平是竞技的前提而非装饰。
-  - Klausur-Anbindung：Erörterungsaufgabe；`Fairness und Aggression eroertern`（AFB III）。
-  - Operatoren：`eroertern`, `beurteilen`, `bewerten`, `Stellung nehmen`
+  - Klausur-Anbindung：Erörterungsaufgabe；`Fairness und Aggression erörtern`（AFB III）。
+  - Operatoren：`erörtern`, `beurteilen`, `bewerten`, `Stellung nehmen`
   - Lernweg ZH：做「建设性攻击 vs 破坏性攻击」对照表 + 公平的哲学依据。
   - Fehlerquelle：把「攻击性」一律当负面（竞技中它有功能）。
-  - 📓 笔记：⚠️ 缺口
+- 📓 笔记：✅ 已覆盖（S8 收官，见 Texte-Analyse/ 对应篇）
 - **Fairplay und Regelverstöße（公平竞赛与违规）** `[Q1]`
   - 中文一句话：什么时候违规是「聪明的战术」，什么时候是不道德的？
   - Klausur-Anbindung：评价题；`Regelverstoesse beurteilen`（AFB III）。
   - Operatoren：`beurteilen`, `bewerten`, `problematisieren`
   - Lernweg ZH：用具体案例（如故意犯规）做「规则 → 伦理 → 判断」三步。
   - Fehlerquelle：只做规则判断不做伦理判断。
-  - 📓 笔记：⚠️ 缺口
+- 📓 笔记：✅ 已覆盖（S8 收官，见 Texte-Analyse/ 对应篇）
 
 #### L2 LK-Vertiefung: Spielvermittlung und Manipulation · **LK 独有**
 
 - **Spielvermittlungsmodelle（球类教学模型）** `[LK]`
   - 中文一句话：先教战术还是先教技术？教学模型给出不同答案（如 TGfU 类概念）。
   - Klausur-Anbindung：比较 + 应用题；`Spielvermittlungsmodelle vergleichen`（AFB II→III）。
-  - Operatoren：`vergleichen`, `erlaeutern`, `beurteilen`
+  - Operatoren：`vergleichen`, `erläutern`, `beurteilen`
   - Lernweg ZH：做「技术优先 vs 战术优先」对照表，配教学情境。
   - Fehlerquelle：⚠️ **GK 不考此条**（LK 独有）。
-  - 📓 笔记：⚠️ 缺口（LK 专属）
+- 📓 笔记：✅ 已覆盖（S8 收官，见 Texte-Analyse/ 对应篇）
 - **Formen der Steuerung und Manipulation im Sport（运动中的操控与操纵）** `[LK]`
   - 中文一句话：兴奋剂、赞助、观众利益等外部力量如何影响竞技。
   - Klausur-Anbindung：评价题；`Steuerung und Manipulation beurteilen`（AFB III）。
   - Operatoren：`analysieren`, `beurteilen`, `bewerten`, `problematisieren`
   - Lernweg ZH：做「操控形式 × 利益方 × 后果」矩阵表。
   - Fehlerquelle：⚠️ **GK 不考此条**（LK 独有）。
-  - 📓 笔记：⚠️ 缺口（LK 专属）
+- 📓 笔记：✅ 已覆盖（S8 收官，见 Texte-Analyse/ 对应篇）
 
 ---
 
@@ -461,45 +461,45 @@ mindmap
 
 - **Nutzen des Sporttreibens（运动的健康益处）** `[EF]`
   - 中文一句话：规律运动改善心肺、代谢、心理状态——这是预防医学的核心结论。
-  - Klausur-Anbindung：Darstellungs-/Erörterungsaufgabe；口试 Teil 1；`Gesundheitlichen Nutzen erklaeren`（AFB II）。
-  - Operatoren：`erklaeren`, `erlaeutern`, `begruenden`
+  - Klausur-Anbindung：Darstellungs-/Erörterungsaufgabe；口试 Teil 1；`Gesundheitlichen Nutzen erklären`（AFB II）。
+  - Operatoren：`erklären`, `erläutern`, `begründen`
   - Lernweg ZH：做「系统 → 益处 → 生理机制」三栏表。
   - Fehlerquelle：⚠️ **IF f 完全空白**；只说「运动有益健康」不给机制。
-  - 📓 笔记：⚠️ 缺口（🟡 IF f 完全空白）
+- 📓 笔记：✅ 已覆盖（S8 收官，见 Texte-Analyse/ 对应篇）
 - **Risiken und Prävention（风险与预防）** `[EF]`
   - 中文一句话：运动也有受伤与过劳风险，热身、负荷控制、恢复是防护三件套。
   - Klausur-Anbindung：分析 + 评价题；`Risiken beurteilen und Praevention ableiten`（AFB II→III）。
   - Operatoren：`analysieren`, `beurteilen`, `entwickeln`
   - Lernweg ZH：做「风险源 → 预防措施 → 原理」表。
   - Fehlerquelle：把热身只说成「防止拉伤」而不说生理机制（升温/激活）。
-  - 📓 笔记：⚠️ 缺口
+- 📓 笔记：✅ 已覆盖（S8 收官，见 Texte-Analyse/ 对应篇）
 
 #### L2 Fitness als Basis（体能作为基础）· **GK/LK 增量**
 
 - **Fitness als Basis für Gesundheit und Leistungsfähigkeit（体能作为健康与成绩的基础）** `[Q1]`
   - 中文一句话：体能是健康与运动成绩的共同底座，五要素各有训练手段。
-  - Klausur-Anbindung：分析题；`Fitnesskomponenten erklaeren und zuordnen`（AFB II）。
-  - Operatoren：`erklaeren`, `einordnen`, `analysieren`
+  - Klausur-Anbindung：分析题；`Fitnesskomponenten erklären und zuordnen`（AFB II）。
+  - Operatoren：`erklären`, `einordnen`, `analysieren`
   - Lernweg ZH：做「体能五要素 × 测试 × 训练」表。
   - Fehlerquelle：把「体能」等同于「耐力」。
-  - 📓 笔记：⚠️ 缺口
+- 📓 笔记：✅ 已覆盖（S8 收官，见 Texte-Analyse/ 对应篇）
 
 #### L2 LK-Vertiefung: Gesundheitskonzepte und Doping · **LK 独有**
 
 - **Gesundheitskonzepte（健康概念）** `[LK]`
   - 中文一句话：健康不只是「没病」——WHO 的全面健康观与运动行动的关系。
-  - Klausur-Anbindung：讨论题；`Gesundheitskonzepte eroertern`（AFB III）。
-  - Operatoren：`eroertern`, `beurteilen`, `bewerten`
+  - Klausur-Anbindung：讨论题；`Gesundheitskonzepte erörtern`（AFB III）。
+  - Operatoren：`erörtern`, `beurteilen`, `bewerten`
   - Lernweg ZH：做「消极健康观 vs 积极健康观」对照表。
   - Fehlerquelle：⚠️ **GK 不考此条**（LK 独有）。
-  - 📓 笔记：⚠️ 缺口（LK 专属）
+- 📓 笔记：✅ 已覆盖（S8 收官，见 Texte-Analyse/ 对应篇）
 - **Unphysiologische Maßnahmen zur Leistungssteigerung（非生理性成绩提升手段 / Doping）** `[LK]`
   - 中文一句话：兴奋剂等非生理手段的作用与风险，是竞技伦理的核心议题。
   - Klausur-Anbindung：评价题；`Doping beurteilen und bewerten`（AFB III）。
   - Operatoren：`analysieren`, `beurteilen`, `bewerten`, `Stellung nehmen`, `problematisieren`
   - Lernweg ZH：做「手段 × 作用机制 × 健康风险 × 伦理问题」四栏表。
   - Fehlerquelle：⚠️ **GK 不考此条**（LK 独有，但口试可能涉及健康伦理）。
-  - 📓 笔记：⚠️ 缺口（LK 专属）
+- 📓 笔记：✅ 已覆盖（S8 收官，见 Texte-Analyse/ 对应篇）
 
 ---
 
@@ -511,7 +511,7 @@ mindmap
 |---|---|---|---|---|---|
 | 1 | **重点数扩张** | 每个 IF **仅 1 条**（第一重点） | GK：2–4 条 / LK：全满 | EF 只学骨架 | 按「EF 骨架 → GK 血肉 → LK 全套」三层规划 |
 | 2 | **「6 选 2」机制** 🎯 | EF 无此机制 | GK：**2 个 IF 全教 + 4 个只教第一重点** | 4 个 IF 的第一重点**仍是考点** | ⏳ **先确认本校选哪 2 个**（决定备考重心） |
-| 3 | **理论化程度提升** | GK：`beschreiben`/`erlaeutern` | LK：`theoriegeleitet erläutern` | 从「描述」升级为「理论引导」 | 每个现象都要能说出理论依据 |
+| 3 | **理论化程度提升** | GK：`beschreiben`/`erläutern` | LK：`theoriegeleitet erläutern` | 从「描述」升级为「理论引导」 | 每个现象都要能说出理论依据 |
 | 4 | **自主制定能力** | EF：无 | LK：须**自行制定训练计划**（`Trainingspläne erstellen`） | 从「懂原理」到「会设计」 | 练习用四参数设计一个训练周计划 |
 | 5 | **LK 专属 5 条** | 无 | 成绩诊断 / 球类教学模型 / 操控形式 / 健康概念 / Doping | 备考 LK 者须速补 | 见 §4 缺口清单标 `[LK]` 项 |
 
@@ -540,9 +540,9 @@ mindmap
 
 ---
 
-## 4. 笔记缺口清单（施工图）
+- 📓 笔记：✅ 已覆盖（S8 收官，见 Texte-Analyse/ 对应篇）
 
-> ✅ **本施工图已于 2026-09-25 完成**（S8 十科笔记生产）：全部目标笔记已产出，逐条链接见 [`../S8-Noten-Index.md`](../S8-Noten-Index.md)。下表「⚠️ 缺口」为立项时的状态，保留作历史记录。
+- 📓 笔记：✅ 已覆盖（S8 收官，见 Texte-Analyse/ 对应篇）
 
 > 依据 `00_META/INDEX.md` 与 `10_Sport-mündl/` 实际文件核对。
 > ⚠️ **现状**：现有 2 篇笔记（+1 课程总览）**均归 IF a**；**IF b/c/d/e/f 全空白**。
@@ -550,40 +550,40 @@ mindmap
 | # | L3 节点 | 目标笔记文件 | 状态 |
 |---|---|---|---|
 | **IF a（已起步但不完整）** | | | |
-| 1 | Lernphasen-Modell | `10_Sport-mündl/Texte-Analyse/Motorisches-Lernen-Lernphasen.md` | ⚠️ 缺口（🟡 第一重点，必考） |
-| 2 | Lernmethoden（分析-合成 vs 整体） | `10_Sport-mündl/Texte-Analyse/Lernmethoden-Vergleich.md` | ⚠️ 缺口 |
-| 3 | Informationsaufnahme und -verarbeitung | `10_Sport-mündl/Texte-Analyse/Informationsverarbeitung-im-Sport.md` | ⚠️ 缺口 |
-| 4 | Koordinative Fähigkeiten | `10_Sport-mündl/Texte-Analyse/Koordinative-Faehigkeiten.md` | ⚠️ 缺口 |
+| 1 | Lernphasen-Modell | `10_Sport-mündl/Texte-Analyse/Motorisches-Lernen-Lernphasen.md` | ✅|
+| 2 | Lernmethoden（分析-合成 vs 整体） | `10_Sport-mündl/Texte-Analyse/Lernmethoden-Vergleich.md` | ✅|
+| 3 | Informationsaufnahme und -verarbeitung | `10_Sport-mündl/Texte-Analyse/Informationsverarbeitung-im-Sport.md` | ✅|
+| 4 | Koordinative Fähigkeiten | `10_Sport-mündl/Texte-Analyse/Koordinative-Faehigkeiten.md` | ✅|
 | — | Bewegungsanalyse（Weitsprung 四相） | [`Sport-Bewegungsanalyse.md`](../../../10_Sport-mündl/Texte-Analyse/Sport-Bewegungsanalyse.md) | ✅ 已有 |
 | — | 运动解释（互动课程） | [`Sport-Bewegung-Erklaeren-L1.md`](../../../Lernreise/Sport-Bewegung-Erklaeren-L1.md) | ✅ 已有 |
 | **IF b Bewegungsgestaltung（完全空白）** | | | |
-| 5 | Vier Gestaltungskriterien + Indikatoren | `10_Sport-mündl/Texte-Analyse/Gestaltungskriterien-und-Indikatoren.md` | ⚠️ 缺口（🟡 IF b 完全空白） |
-| 6 | Improvisation und Variation | `10_Sport-mündl/Texte-Analyse/Improvisation-und-Variation.md` | ⚠️ 缺口 |
+| 5 | Vier Gestaltungskriterien + Indikatoren | `10_Sport-mündl/Texte-Analyse/Gestaltungskriterien-und-Indikatoren.md` | ✅|
+| 6 | Improvisation und Variation | `10_Sport-mündl/Texte-Analyse/Improvisation-und-Variation.md` | ✅|
 | **IF c Wagnis und Verantwortung（完全空白）** | | | |
-| 7 | Handlungssteuerung unter Emotionen | `10_Sport-mündl/Texte-Analyse/Handlungssteuerung-unter-Emotionen.md` | ⚠️ 缺口（🟡 IF c 完全空白） |
-| 8 | Motive, Motivation und Sinngebungen | `10_Sport-mündl/Texte-Analyse/Motivation-im-Sport.md` | ⚠️ 缺口 |
-| **IF d Leistung（🔴 最大缺口，最高优先）** | | | |
-| 9 | Belastungsgrößen（四参数） | `10_Sport-mündl/Texte-Analyse/Belastungsgroessen.md` | ⚠️ 缺口（🔴 最高优先） |
-| 10 | Trainingsprinzipien | `10_Sport-mündl/Texte-Analyse/Trainingsprinzipien.md` | ⚠️ 缺口（🔴 高优先） |
-| 11 | Ausdauertraining: Methoden | `10_Sport-mündl/Texte-Analyse/Ausdauertraining-Methoden.md` | ⚠️ 缺口（🔴 高优先） |
-| 12 | Superkompensation / Anpassung | `10_Sport-mündl/Texte-Analyse/Superkompensation-und-Anpassung.md` | ⚠️ 缺口（🔴 高优先） |
-| 13 | Energiebereitstellung | `10_Sport-mündl/Texte-Analyse/Energiebereitstellung.md` | ⚠️ 缺口 |
-| 14 | Muskulatur und Bewegung | `10_Sport-mündl/Texte-Analyse/Muskulatur-und-Bewegung.md` | ⚠️ 缺口 |
-| 15 | [LK] Leistungsdiagnostik | `10_Sport-mündl/Texte-Analyse/LK-Leistungsdiagnostik.md` | ⚠️ 缺口（LK 专属） |
+| 7 | Handlungssteuerung unter Emotionen | `10_Sport-mündl/Texte-Analyse/Handlungssteuerung-unter-Emotionen.md` | ✅|
+| 8 | Motive, Motivation und Sinngebungen | `10_Sport-mündl/Texte-Analyse/Motivation-im-Sport.md` | ✅|
+| **IF d Leistung（🔴 条目最多，S8已覆盖）** | | | |
+| 9 | Belastungsgrößen（四参数） | `10_Sport-mündl/Texte-Analyse/Belastungsgroessen.md` | ✅|
+| 10 | Trainingsprinzipien | `10_Sport-mündl/Texte-Analyse/Trainingsprinzipien.md` | ✅|
+| 11 | Ausdauertraining: Methoden | `10_Sport-mündl/Texte-Analyse/Ausdauertraining-Methoden.md` | ✅|
+| 12 | Superkompensation / Anpassung | `10_Sport-mündl/Texte-Analyse/Superkompensation-und-Anpassung.md` | ✅|
+| 13 | Energiebereitstellung | `10_Sport-mündl/Texte-Analyse/Energiebereitstellung.md` | ✅|
+| 14 | Muskulatur und Bewegung | `10_Sport-mündl/Texte-Analyse/Muskulatur-und-Bewegung.md` | ✅|
+| 15 | [LK] Leistungsdiagnostik | `10_Sport-mündl/Texte-Analyse/LK-Leistungsdiagnostik.md` | ✅ 文件已建（待GK/LK确认启用）（LK 专属） |
 | **IF e Kooperation und Konkurrenz（完全空白）** | | | |
-| 16 | Regeln und Spielgelegenheiten | `10_Sport-mündl/Texte-Analyse/Regeln-und-Spielgelegenheiten.md` | ⚠️ 缺口（🟡 IF e 完全空白） |
-| 17 | Fairness und Aggression | `10_Sport-mündl/Texte-Analyse/Fairness-und-Aggression.md` | ⚠️ 缺口 |
-| 18 | [LK] Spielvermittlungsmodelle | `10_Sport-mündl/Texte-Analyse/LK-Spielvermittlungsmodelle.md` | ⚠️ 缺口（LK 专属） |
-| 19 | [LK] Steuerung und Manipulation | `10_Sport-mündl/Texte-Analyse/LK-Steuerung-und-Manipulation.md` | ⚠️ 缺口（LK 专属） |
+| 16 | Regeln und Spielgelegenheiten | `10_Sport-mündl/Texte-Analyse/Regeln-und-Spielgelegenheiten.md` | ✅|
+| 17 | Fairness und Aggression | `10_Sport-mündl/Texte-Analyse/Fairness-und-Aggression.md` | ✅|
+| 18 | [LK] Spielvermittlungsmodelle | `10_Sport-mündl/Texte-Analyse/LK-Spielvermittlungsmodelle.md` | ✅ 文件已建（待GK/LK确认启用）（LK 专属） |
+| 19 | [LK] Steuerung und Manipulation | `10_Sport-mündl/Texte-Analyse/LK-Steuerung-und-Manipulation.md` | ✅ 文件已建（待GK/LK确认启用）（LK 专属） |
 | **IF f Gesundheit（完全空白）** | | | |
-| 20 | Nutzen und Risiken des Sporttreibens | `10_Sport-mündl/Texte-Analyse/Gesundheit-Nutzen-und-Risiken.md` | ⚠️ 缺口（🟡 IF f 完全空白） |
-| 21 | Fitness als Basis | `10_Sport-mündl/Texte-Analyse/Fitness-als-Basis.md` | ⚠️ 缺口 |
-| 22 | [LK] Gesundheitskonzepte | `10_Sport-mündl/Texte-Analyse/LK-Gesundheitskonzepte.md` | ⚠️ 缺口（LK 专属） |
-| 23 | [LK] Doping / unphysiologische Maßnahmen | `10_Sport-mündl/Texte-Analyse/LK-Doping-und-unphysiologische-Massnahmen.md` | ⚠️ 缺口（LK 专属） |
+| 20 | Nutzen und Risiken des Sporttreibens | `10_Sport-mündl/Texte-Analyse/Gesundheit-Nutzen-und-Risiken.md` | ✅|
+| 21 | Fitness als Basis | `10_Sport-mündl/Texte-Analyse/Fitness-als-Basis.md` | ✅|
+| 22 | [LK] Gesundheitskonzepte | `10_Sport-mündl/Texte-Analyse/LK-Gesundheitskonzepte.md` | ✅ 文件已建（待GK/LK确认启用）（LK 专属） |
+| 23 | [LK] Doping / unphysiologische Maßnahmen | `10_Sport-mündl/Texte-Analyse/LK-Doping-und-unphysiologische-Massnahmen.md` | ✅ 文件已建（待GK/LK确认启用）（LK 专属） |
 | **跨 IF / 方法层** | | | |
-| 24 | 分相约定对照 + Beobachtungsbogen | `10_Sport-mündl/Texte-Analyse/Phasenmodelle-und-Beobachtungsbogen.md` | ⚠️ 缺口（现有笔记缺两套分相约定对照） |
-| 25 | 口试话术库（分 IF 专用术语） | `10_Sport-mündl/Klausur-Training/Muendliche-Pruefung-Training.md` | ⚠️ 缺口（🔴 口试方向必补） |
-| 26 | 训练计划设计实操（LK） | `10_Sport-mündl/Klausur-Training/Trainingsplan-Erstellen.md` | ⚠️ 缺口（LK 专属） |
+- 📓 笔记：✅ 已覆盖（S8 收官，见 Texte-Analyse/ 对应篇）
+| 25 | 口试话术库（分 IF 专用术语） | `10_Sport-mündl/Klausur-Training/Muendliche-Pruefung-Training.md` | ✅|
+| 26 | 训练计划设计实操（LK） | `10_Sport-mündl/Klausur-Training/Trainingsplan-Erstellen-LK.md` | ✅ 文件已建（待GK/LK确认启用）（LK 专属） |
 
 ### 建议补笔记顺序
 

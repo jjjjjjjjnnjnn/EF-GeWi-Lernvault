@@ -309,7 +309,7 @@
 - [2026-10-11-wave2-content-fixes](Journal/2026-10-11-wave2-content-fixes.md) — **Wave2内容修复**：Musik/Philo/Sport/SoWi/App/Meta六commit（5ee92bf/bea03f1/c4a5c85/515d89f/4febb82/7f70dc5）
 - [2026-10-11-wave3-doc-debt](Journal/2026-10-11-wave3-doc-debt.md) — **Wave3文档债**：测试口径+十科考纲+交接同步三commit（a628295/a5c00e7/131be0c）
 - [2026-10-11-markt-sim-dedup-fix](Journal/2026-10-11-markt-sim-dedup-fix.md) — **markt-sim互动撞车修复**：寒潮/能源冲击双使命情境化（f3733bc，94套件730项）
-- 约定：文件名 `YYYY-MM-DD-<thema>.md`，头部frontmatter（`fach`可空，`tags: [EF, Meta]`）。
+- [2026-10-11-wave5-residual-cleanup](Journal/2026-10-11-wave5-residual-cleanup.md) — **Wave5残留清零**：双微世界情境化+课程链+表格词库+文科落位+G6G7+Tufte批量+考纲文档（9 commits，94套件737项）- 约定：文件名 `YYYY-MM-DD-<thema>.md`，头部frontmatter（`fach`可空，`tags: [EF, Meta]`）。
 
 
 

@@ -143,7 +143,7 @@ PDF URL 模板：`https://lehrplannavigator.nrw.de/system/files/media/document/f
 
 | 项 | 状态 |
 |---|---|
-| SoWi / Philosophie / Musik 的精确 Inhaltsfeld 标题 | **部分获取** — PDF 提取 UTF-8 乱码，需人工核对 |
+| SoWi / Philosophie / Musik 的精确 Inhaltsfeld 标题 | ✅ 已解决 — 乱码不存在（见本文件 §1.6 纠错结论 #3/#5/#6/#7：7 个 IF 全部提取成功；Philosophie 6 IF、Musik 3 视角型 IF 均已纠正） |
 | IQB 各科 Bildungsstandards 独立 PDF 直链 | [未获取到] |
 | BASS 各科独立编号（除 Abitur 总规章 Nr.6） | [未获取到] |
 | APO-GOSt § 13–32 全文 | [未获取到] |
