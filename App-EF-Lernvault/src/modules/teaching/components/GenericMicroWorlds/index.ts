@@ -1,4 +1,4 @@
-export { LogicBlockBuilder } from "./LogicBlockBuilder";
+export { LogicBlockBuilder, resolveLogicArchetype, logicMissionFor, LOGIC_MISSIONS } from "./LogicBlockBuilder";
 export type {
   LogicBlockBuilderProps,
   SlotId,
@@ -7,11 +7,12 @@ export type {
   ArchetypeDefinition,
 } from "./LogicBlockBuilder";
 
-export { ScenarioDecisionTree } from "./ScenarioDecisionTree";
+export { ScenarioDecisionTree, resolveDecisionScenarioId } from "./ScenarioDecisionTree";
 export type {
   ScenarioDecisionTreeProps,
   DecisionNode,
   DecisionScenario,
+  DecisionScenarioId,
 } from "./ScenarioDecisionTree";
 
 export { VariableSliderBox } from "./VariableSliderBox";

@@ -2,8 +2,8 @@ import { describe, it, expect, vi } from "vitest";
 import { render, screen, fireEvent } from "@testing-library/react";
 import { VariableSliderBox } from "./VariableSliderBox";
 import { DilemmaBalanceScale } from "./DilemmaBalanceScale";
-import { LogicBlockBuilder } from "./LogicBlockBuilder";
-import { ScenarioDecisionTree } from "./ScenarioDecisionTree";
+import { LogicBlockBuilder, resolveLogicArchetype } from "./LogicBlockBuilder";
+import { ScenarioDecisionTree, resolveDecisionScenarioId } from "./ScenarioDecisionTree";
 
 describe("Generic MicroWorld: VariableSliderBox", () => {
   it("renders with default properties in German and displays formula", () => {
@@ -157,6 +157,19 @@ describe("Generic MicroWorld: LogicBlockBuilder", () => {
 
     expect(screen.getByText("论证结构不完整")).toBeInTheDocument();
   });
+
+  it("mounts distinct presets per course instead of one modus-ponens", () => {
+    // Ethik quest preselects Widerlegung archetype with its own mission
+    render(<LogicBlockBuilder lang="zh" archetypeId="modus_tollens" />);
+    expect(screen.getByText(/反证检验/)).toBeInTheDocument();
+    // Default stays modus_ponens (zero regression)
+    render(<LogicBlockBuilder lang="zh" title="默认对照" />);
+    expect(screen.getByText(/涵摄推演/)).toBeInTheDocument();
+    // Resolver routing
+    expect(resolveLogicArchetype("Kants Kategorischer Imperativ", "")).toBe("modus_tollens");
+    expect(resolveLogicArchetype("Faust Gretchenfrage Szenenanalyse", "")).toBe("disjunctive_syllogism");
+    expect(resolveLogicArchetype("Soziale Marktwirtschaft", "")).toBe("modus_ponens");
+  });
 });
 
 describe("Generic MicroWorld: ScenarioDecisionTree", () => {
@@ -201,6 +214,15 @@ describe("Generic MicroWorld: ScenarioDecisionTree", () => {
     expect(screen.getByText(/SACHURTEIL/i)).toBeInTheDocument();
     expect(screen.getByText(/WERTURTEIL/i)).toBeInTheDocument();
     expect(screen.getByText(/ABITUR-KLAUSURSATZ/i)).toBeInTheDocument();
+  });
+
+  it("mounts preset scenario per course instead of always fiskalpolitik", () => {
+    render(<ScenarioDecisionTree lang="zh" scenarioId="mindestlohn" />);
+    expect(screen.queryByText(/债务刹车/)).not.toBeInTheDocument();
+    // Resolver routing
+    expect(resolveDecisionScenarioId("Mindestlohn und Tarifautonomie", "")).toBe("mindestlohn");
+    expect(resolveDecisionScenarioId("Trolley-Dilemma Kant vs Utilitarismus", "")).toBe("trolley");
+    expect(resolveDecisionScenarioId("Konjunktur und Wachstum", "")).toBe("fiskalpolitik");
   });
 });
 

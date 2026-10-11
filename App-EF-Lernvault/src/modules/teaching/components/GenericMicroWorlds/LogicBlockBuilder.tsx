@@ -4,6 +4,49 @@ export interface LogicBlockBuilderProps {
   title?: string;
   lang?: "de" | "zh";
   onValidate?: (isValid: boolean, conclusion: string) => void;
+  /**
+   * 预设逻辑原型：同一论证引擎在不同课程中挂载不同默认原型与使命。
+   * 缺省 "modus_ponens"（社会国家涵摄，SoWi 现状，零回归）。
+   */
+  archetypeId?: LogicArchetypeId;
+}
+
+/**
+ * 课程→默认原型选路：形式逻辑按论证任务分流，纯函数，可单测；
+ * 未知输入一律回退 modus_ponens（零回归）。
+ */
+export function resolveLogicArchetype(title: string, summary = ""): LogicArchetypeId {
+  const hay = `${title} ${summary}`.toLowerCase();
+  if (/kant|utilitarismus|mill|bentham|trolley|ethik|dilemma|widerleg|kritik|falsifik|theodizee/.test(hay))
+    return "modus_tollens";
+  if (/drama|faust|kafka|lyrik|rhetorik|argumentation|erörterung|comment|mediation|speech|shakespeare|miller|orwell|dystopia/.test(hay))
+    return "disjunctive_syllogism";
+  if (/fehlschluss|trugschluss|fallacy|strohmann|straw|korrelation|kausal|scheinkorrelation/.test(hay))
+    return "affirming_consequent";
+  return "modus_ponens";
+}
+
+export const LOGIC_MISSIONS: Record<string, { missionDe: string; missionZh: string }> = {
+  modus_ponens: {
+    missionDe: "[ Mission: Subsumtion ] Rekonstruiere die sozialstaatliche Argumentation als gültigen Schluss.",
+    missionZh: "[ 任务使命 ] 涵摄推演：将社会国家论证重构为有效三段论。",
+  },
+  modus_tollens: {
+    missionDe: "[ Mission: Widerlegung ] Prüfe die ethische These durch Falsifikation der notwendigen Bedingung.",
+    missionZh: "[ 任务使命 ] 反证检验：以必要条件证伪来审查伦理命题。",
+  },
+  disjunctive_syllogism: {
+    missionDe: "[ Mission: Alternativen-Entscheidung ] Eliminiere die ausgeschlossene Lesart und sichere die Deutung.",
+    missionZh: "[ 任务使命 ] 选言排除：排除被否定的解读，锁定文本立论。",
+  },
+  affirming_consequent: {
+    missionDe: "[ Mission: Fehlschluss-Diagnose ] Entlarve den Diagnosefehler in der vorgelegten Argumentation.",
+    missionZh: "[ 任务使命 ] 谬误诊断：揪出论证中的肯定后件式诊断错误。",
+  },
+};
+
+export function logicMissionFor(archetypeId: LogicArchetypeId): { missionDe: string; missionZh: string } {
+  return LOGIC_MISSIONS[archetypeId] || LOGIC_MISSIONS.modus_ponens;
 }
 
 export type SlotId = "premise1" | "premise2" | "conclusion";
@@ -448,13 +491,16 @@ export const LogicBlockBuilder: React.FC<LogicBlockBuilderProps> = ({
   title,
   lang = "de",
   onValidate,
+  archetypeId = "modus_ponens",
 }) => {
   const isDe = lang === "de";
+  const initialDef = ARCHETYPES[archetypeId] || ARCHETYPES.modus_ponens;
+  const mission = logicMissionFor(initialDef.id);
 
-  // 当前槽位已装载的 block id
-  const [slotP1, setSlotP1] = useState<string>("mp_p1");
-  const [slotP2, setSlotP2] = useState<string>("mp_p2");
-  const [slotConc, setSlotConc] = useState<string>("mp_k");
+  // 当前槽位已装载的 block id（跟随课程预设原型，不再全课同一套 Modus Ponens）
+  const [slotP1, setSlotP1] = useState<string>(initialDef.p1Id);
+  const [slotP2, setSlotP2] = useState<string>(initialDef.p2Id);
+  const [slotConc, setSlotConc] = useState<string>(initialDef.concId);
 
   // 当前活动选择器目标槽位（或 null 表示关闭选择面板）
   const [activePickerSlot, setActivePickerSlot] = useState<SlotId | null>(null);
@@ -472,13 +518,14 @@ export const LogicBlockBuilder: React.FC<LogicBlockBuilderProps> = ({
     klausurSatz: string;
   } | null>({
     checked: true,
-    isValid: true,
-    archetypeId: "modus_ponens",
-    titleText: isDe ? "Valide Deduktion (Modus Ponens)" : "有效演绎推理 (肯定前件律)",
-    npScore: 15,
-    breakdown: { formal: 5, soundness: 5, precision: 5 },
-    explanation: isDe ? ARCHETYPES.modus_ponens.explanationDe : ARCHETYPES.modus_ponens.explanationZh,
-    klausurSatz: isDe ? ARCHETYPES.modus_ponens.klausurSatzDe : ARCHETYPES.modus_ponens.klausurSatzZh,
+    isValid: initialDef.isValid,
+    archetypeId: initialDef.id,
+    titleText: isDe ? initialDef.nameDe : initialDef.nameZh,
+    fallacyName: isDe ? initialDef.fallacyNameDe : initialDef.fallacyNameZh,
+    npScore: initialDef.scoreNP,
+    breakdown: { formal: initialDef.scoreBreakdown.formalValidity, soundness: initialDef.scoreBreakdown.premiseSoundness, precision: initialDef.scoreBreakdown.klausurPrecision },
+    explanation: isDe ? initialDef.explanationDe : initialDef.explanationZh,
+    klausurSatz: isDe ? initialDef.klausurSatzDe : initialDef.klausurSatzZh,
   });
 
   // 获取槽位对象
@@ -607,6 +654,9 @@ export const LogicBlockBuilder: React.FC<LogicBlockBuilderProps> = ({
           <h2 className="text-sm font-bold tracking-tight">
             {title || (isDe ? "Logik-Block-Baukasten (Argumentationsanalyse)" : "论证推理与因果积木")}
           </h2>
+          <div className="text-[11px] font-serif text-[var(--ink)] mt-0.5">
+            {isDe ? mission.missionDe : mission.missionZh}
+          </div>
         </div>
 
         {/* 预设典范快速加载器 */}

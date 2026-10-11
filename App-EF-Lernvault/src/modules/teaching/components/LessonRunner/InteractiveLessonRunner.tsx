@@ -15,6 +15,8 @@ import {
   MarktgleichgewichtSim,
   MARKT_SCENARIOS,
   resolveMarktScenarioId,
+  resolveLogicArchetype,
+  resolveDecisionScenarioId,
 } from "../GenericMicroWorlds";
 import { KinematikSim } from "../../../../components/pedagogy/KinematikSim";
 import { MagischesViereckSim } from "../../../../components/pedagogy/MagischesViereckSim";
@@ -360,11 +362,23 @@ export const InteractiveLessonRunner: React.FC<InteractiveLessonRunnerProps> = (
       case "rawls-sim":
         return <DilemmaBalanceScale title={questNode.title} lang={lang} />;
       case "logic_blocks":
-        return <LogicBlockBuilder title={questNode.title} lang={lang} />;
+        return (
+          <LogicBlockBuilder
+            title={questNode.title}
+            lang={lang}
+            archetypeId={resolveLogicArchetype(questNode.title, questNode.summary)}
+          />
+        );
       case "scenario_tree":
       case "dilemma-theatre":
       case "wahlsystem-sim":
-        return <ScenarioDecisionTree title={questNode.title} lang={lang} />;
+        return (
+          <ScenarioDecisionTree
+            title={questNode.title}
+            lang={lang}
+            scenarioId={resolveDecisionScenarioId(questNode.title, questNode.summary)}
+          />
+        );
       case "gini-allocator":
       case "orderbuch-sim":
         return <VariableSliderBox title={questNode.title} lang={lang} />;

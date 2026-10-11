@@ -4,6 +4,26 @@ export interface ScenarioDecisionTreeProps {
   title?: string;
   lang?: "de" | "zh";
   onNodeSelect?: (nodeId: string, npScore: number) => void;
+  /**
+   * 预设情境：同一决策树引擎在不同课程中挂载不同默认情境。
+   * 缺省 "fiskalpolitik"（SoWi 现状，零回归）；内部切换器仍可手动换。
+   */
+  scenarioId?: string;
+}
+
+export type DecisionScenarioId = "fiskalpolitik" | "trolley" | "mindestlohn";
+
+/**
+ * 课程→默认情境选路：最低工资/关税课程走 mindestlohn，伦理/电车课程走 trolley，
+ * 其余走默认 fiskalpolitik。纯函数，可单测；未知输入一律回退 fiskalpolitik（零回归）。
+ */
+export function resolveDecisionScenarioId(title: string, summary = ""): DecisionScenarioId {
+  const hay = `${title} ${summary}`.toLowerCase();
+  if (/mindestlohn|lohnuntergrenze|tarifautonomie|tarifverhandlung|lohnpolitik|arbeitnehmerschutz/.test(hay))
+    return "mindestlohn";
+  if (/trolley|weichensteller|ethik|kant|utilitarismus|mill|bentham|dilemma|pflichtenkollision|deontologie/.test(hay))
+    return "trolley";
+  return "fiskalpolitik";
 }
 
 export interface DecisionNode {
@@ -868,11 +888,14 @@ export const ScenarioDecisionTree: React.FC<ScenarioDecisionTreeProps> = ({
   title,
   lang = "de",
   onNodeSelect,
+  scenarioId = "fiskalpolitik",
 }) => {
   const isDe = lang === "de";
 
-  // 当前场景选择
-  const [activeScenarioId, setActiveScenarioId] = useState<string>("fiskalpolitik");
+  // 当前场景选择（跟随课程预设情境，不再全课默认财政政策树）
+  const [activeScenarioId, setActiveScenarioId] = useState<string>(
+    SCENARIOS.some((s) => s.id === scenarioId) ? scenarioId : "fiskalpolitik"
+  );
 
   const currentScenario =
     SCENARIOS.find((s) => s.id === activeScenarioId) || SCENARIOS[0];
@@ -881,6 +904,15 @@ export const ScenarioDecisionTree: React.FC<ScenarioDecisionTreeProps> = ({
   const [selectedNodeId, setSelectedNodeId] = useState<string>(
     currentScenario.nodes[0].id
   );
+
+  // 课程切换时跟随新的预设情境
+  React.useEffect(() => {
+    if (SCENARIOS.some((s) => s.id === scenarioId) && scenarioId !== activeScenarioId) {
+      setActiveScenarioId(scenarioId);
+      const scen = SCENARIOS.find((s) => s.id === scenarioId) || SCENARIOS[0];
+      setSelectedNodeId(scen.nodes[0].id);
+    }
+  }, [scenarioId]);
 
   // 场景切换处理
   const handleScenarioChange = (scenarioId: string) => {

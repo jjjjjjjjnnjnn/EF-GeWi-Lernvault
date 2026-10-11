@@ -7,6 +7,8 @@ import {
   DilemmaBalanceScale,
   LogicBlockBuilder,
   ScenarioDecisionTree,
+  resolveLogicArchetype,
+  resolveDecisionScenarioId,
 } from "../components/GenericMicroWorlds";
 
 export interface PlayableStudioTabProps {
@@ -188,6 +190,11 @@ export const PlayableStudioTab: React.FC<PlayableStudioTabProps> = ({
           <LogicBlockBuilder
             title={activeQuest ? `${activeQuest.title} · Argumentationsketten` : undefined}
             lang={lang}
+            archetypeId={
+              activeQuest
+                ? resolveLogicArchetype(activeQuest.title, activeQuest.summary)
+                : undefined
+            }
           />
         );
 
@@ -198,6 +205,11 @@ export const PlayableStudioTab: React.FC<PlayableStudioTabProps> = ({
           <ScenarioDecisionTree
             title={activeQuest ? `${activeQuest.title} · Kaskadenentscheidungen` : undefined}
             lang={lang}
+            scenarioId={
+              activeQuest
+                ? resolveDecisionScenarioId(activeQuest.title, activeQuest.summary)
+                : undefined
+            }
           />
         );
     }

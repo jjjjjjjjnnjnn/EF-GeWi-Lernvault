@@ -420,6 +420,46 @@ describe("InteractiveLessonRunner Component", () => {
     expect(advanceBtn).not.toBeDisabled();
   });
 
+  it("routes logic_blocks/tree quests to per-course presets via Runner", () => {
+    const kantQuest: ParsedQuestNode = {
+      id: "q-kant",
+      chapterId: "chap-kant",
+      order: 1,
+      title: "Kants Kategorischer Imperativ und Maximenprüfung",
+      lessonType: "concept",
+      estimatedMinutes: 10,
+      prerequisites: [],
+      matchedToolId: "logic_blocks",
+      matchedToolName: "Logik-Baukasten",
+      interactiveType: "logic_blocks",
+      summary: "Kategorischer Imperativ, Widerlegung und Maximenprüfung.",
+      socraticPrompt: "Warum gilt die Menschenwürde absolut?",
+      keyConcepts: [],
+      xp: 100,
+    };
+
+    render(
+      <InteractiveLessonRunner
+        questNode={kantQuest}
+        currentFach="Philosophie"
+        lang="zh"
+        isOpen={true}
+        onComplete={vi.fn()}
+        onClose={vi.fn()}
+      />
+    );
+
+    const choiceBtns = screen.getAllByRole("button").filter((b) =>
+      /\[ A \]|\[ B \]/i.test(b.textContent || "")
+    );
+    fireEvent.click(choiceBtns[0]);
+    fireEvent.click(screen.getByRole("button", { name: /进入互动实验探索|动手实验/i }));
+
+    // Kant quest gets Widerlegung mission, not the SoWi Subsumtion default
+    expect(screen.getByText(/反证检验/)).toBeInTheDocument();
+    expect(screen.queryByText(/涵摄推演/)).not.toBeInTheDocument();
+  });
+
   it("allows going back to previous step via Zurück / 上一步 button without losing state", () => {
     render(
       <InteractiveLessonRunner
