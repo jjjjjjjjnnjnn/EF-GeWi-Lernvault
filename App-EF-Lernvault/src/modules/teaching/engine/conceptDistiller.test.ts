@@ -282,6 +282,18 @@ describe("Concept Distillation Engine: conceptDistiller", () => {
     expect(res.klausurSatz15NP.scoringKeywords).toContain("Wiener Klassik");
   });
 
+  it("distills Weitsprung benchmark (Sport)", () => {
+    const res = distillConcept("Bewegungsanalyse Weitsprung: Vier Phasen", "Sport");
+    validateDistilledConcept(res);
+    expect(res.fach).toBe("Sport");
+    expect(res.intuitionDilemma?.scenarioZH).toContain("校运会");
+    expect(res.konzeptPuzzle?.pairs.length).toBe(4);
+    expect(res.examTrapCorrection?.diagnosticOptions?.length).toBe(3);
+    expect(res.klausurSatz15NP.operator).toBe("analysieren");
+    expect(res.klausurSatz15NP.scoringKeywords).toContain("Anlaufgeschwindigkeit");
+    expect(res.klausurSatz15NP.scoringKeywords).toContain("Flugparabel");
+  });
+
   it("handles arbitrary topics gracefully via heuristic subject archetypes", () => {
     const arbitrarySoWi = distillConcept("Europaeische Zentralbank und Leitzinssenkung", "SoWi");
     validateDistilledConcept(arbitrarySoWi);

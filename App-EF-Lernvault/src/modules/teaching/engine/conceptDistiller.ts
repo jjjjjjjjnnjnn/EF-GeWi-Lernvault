@@ -3360,6 +3360,211 @@ const DOMAIN_KNOWLEDGE_ENTRIES: DomainKnowledgeEntry[] = [
       ]
     }
   },
+
+  // 20. Bewegungsanalyse Weitsprung: Vier Phasen (Sport)
+  {
+    id: "bewegungsanalyse-weitsprung-vier-phasen",
+    canonicalTitle: "Bewegungsanalyse Weitsprung: Vier Phasen",
+    fach: "Sport",
+    matchKeywords: [
+      "weitsprung",
+      "bewegungsanalyse",
+      "anlaufgeschwindigkeit",
+      "absprungwinkel",
+      "koerper-schwerpunkt",
+      "flugparabel",
+      "ganzkoerperstreckung",
+      "landung",
+      "absprung",
+      "flughaltung"
+    ],
+    data: {
+      topicTitle: "Bewegungsanalyse Weitsprung: Vier Phasen",
+      fach: "Sport",
+      intuitionDilemma: {
+        scenarioDE: "Schulsportfest: Jonas sprintet maximal, bremst aber vor dem Brett sichtbar ab. Lea laeuft etwas ruhiger, trifft das Brett im Rhythmus und springt flach ab.",
+        scenarioZH: "校运会：Jonas全速冲刺，却在起跳板前明显减速急刹；Lea稍慢但节奏稳定，准板起跳，起跳平缓。",
+        questionDE: "Wer springt beim Schulsportfest weiter?",
+        questionZH: "校运会上谁跳得更远？",
+        choiceA: {
+          id: "A",
+          textDE: "Der schnellste Sprinter springt am weitesten, weil Maximalgeschwindigkeit alles entscheidet.",
+          textZH: "跑得最快的人跳得最远，因为最高速度决定一切。",
+          reactionDE: "Verstaendlich gedacht, doch Temporekorde allein entscheiden nicht: Wer vor dem Brett stemmt, vernichtet die aufgebaute Geschwindigkeit.",
+          reactionZH: "可以理解，但光有极速不够：起跳板前急刹减速会亲手毁掉已积累的速度。"
+        },
+        choiceB: {
+          id: "B",
+          textDE: "Der rhythmisch stabile Laeufer mit flachem schnellem Absprung springt weiter, weil er die Geschwindigkeit sauber umsetzt.",
+          textZH: "节奏稳定、起跳快速平缓的人跳得更远，因为他把速度干净地转化了。",
+          reactionDE: "Genau dort liegt der Schluessel: Rhythmischer Anlauf plus schneller flacher Absprung setzt Geschwindigkeit in Weite um.",
+          reactionZH: "关键正在这里：节奏稳定的助跑加快速平缓的起跳，才能把速度转化为远度。"
+        },
+        mechanismTakeawayDE: "Nach dem Absprung fliegt der KSP auf einer fixen Parabel -> die Weite wird im Anlauf und im Absprung entschieden, nicht in der Luft.",
+        mechanismTakeawayZH: "起跳后身体重心沿固定抛物线飞行 -> 远度在助跑和起跳中决定，不在空中决定。",
+        klpCoreLogicDE: "NRW KLP Sport, IF Bewegungslehre: Bewegung in Phasen gliedern, Merkmale analysieren, Fehler benennen und methodisch korrigieren.",
+        klpCoreLogicZH: "NRW体育考纲运动学领域：按相位划分动作，分析动作特征，指出错误并给出训练学纠正。"
+      },
+      mentalModelAnalogy: {
+        analogyTitle: "Der abgeschossene Pfeil: Nach dem Absprung fliegt die Bahn fest",
+        explanationDE: "Nach dem Absprung fliegt der KSP auf einer fixen Parabel -> die Weite wird im Anlauf und im Absprung entschieden, nicht in der Luft.",
+        explanationZH: "起跳后身体重心沿固定抛物线飞行 -> 远度在助跑和起跳中决定，不在空中决定。"
+      },
+      konzeptPuzzle: {
+        instructionDE: "Ordne jeder der vier Weitsprung-Phasen ihren typischen Bewegungsfehler und die Klausur-Konsequenz zu:",
+        instructionZH: "将跳远四个阶段的每一阶段与其典型动作错误及考场结论配对：",
+        pairs: [
+          {
+            id: "pair-1",
+            premiseDE: "Rhythmischer beschleunigender Anlauf ohne Abbremsen",
+            premiseZH: "节奏均匀加速的助跑，板前不减速",
+            realityDE: "Stemmen und Abbremsen vor dem Brett aus Angst vor Uebertreten",
+            realityZH: "因怕踩线而在板前急刹减速",
+            consequenceDE: "Klausur: Anlauf-Rhythmus mit Markierungen und verkuerztem Anlauf stabilisieren, weil Brett-Treffer und Endgeschwindigkeit erhalten bleiben.",
+            consequenceZH: "考场结论：用标志物与短助跑稳定助跑节奏，因为踩板准确率与末速得以保持。"
+          },
+          {
+            id: "pair-2",
+            premiseDE: "Schneller flacher Absprung mit Ganzkoerperstreckung",
+            premiseZH: "快速平缓的起跳加全身蹬伸",
+            realityDE: "Zu steiler fast vertikaler Absprung wie beim Hochsprung",
+            realityZH: "像跳高一样过陡近乎垂直的起跳",
+            consequenceDE: "Klausur: Flacher Winkel traegt die KSP-Parabel, weil Horizontalgeschwindigkeit in Weite umgesetzt wird.",
+            consequenceZH: "考场结论：平缓角度承载重心抛物线，因为水平速度被转化为远度。"
+          },
+          {
+            id: "pair-3",
+            premiseDE: "KSP fliegt nach Absprung auf fixer Parabel",
+            premiseZH: "起跳后身体重心沿固定抛物线飞行",
+            realityDE: "Vorstellung, in der Luft mit Strampeln noch nachzuhelfen",
+            realityZH: "以为在空中靠蹬踏还能再补力",
+            consequenceDE: "Klausur: In der Luft ist kein Weitengewinn mehr moeglich, weil die Bahn ballistisch determiniert ist.",
+            consequenceZH: "考场结论：腾空已不可能再增加远度，因为轨迹由弹道决定。"
+          },
+          {
+            id: "pair-4",
+            premiseDE: "Aktive Landung nach vorn mit Beugung zum Abfedern",
+            premiseZH: "双脚主动前伸、屈膝缓冲的落地",
+            realityDE: "Rueckfallen und Abstuetzung mit den Haenden hinter dem Koerper",
+            realityZH: "后坐倒地、双手撑于身后",
+            consequenceDE: "Klausur: Vorfuehren plus Beugung sichert Messwert und Gelenke, weil Rueckfallen und Handabstuetzung vermieden werden.",
+            consequenceZH: "考场结论：前伸加屈膝保住丈量成绩并保护关节，因为避免了后坐与手撑。"
+          }
+        ]
+      },
+      examTrapCorrection: {
+        studentAnswerDE: "Beim Weitsprung hole ich in der Luft mit Radfahren nach und stuetze mich bei der Landung mit den Haenden hinten ab, das verlaengert den Flug und sichert die Weite.",
+        studentAnswerZH: "跳远时我在空中做蹬车动作补力，落地时双手撑在身后，这样能延长腾空并保住远度。",
+        fatalFlawPointDE: "Verwechslung von Haltungssteuerung mit Bahnkontrolle: KSP-Parabel nach Absprung unveraenderbar.",
+        fatalFlawPointZH: "把姿态控制误当轨迹控制：起跳后重心抛物线不可再改变。",
+        examinerVerdictDE: "0 / 15 NP. Die Antwort verletzt das ballistische Grundprinzip: Nach dem Absprung ist die KSP-Bahn fixiert. Gefordert waren Phasenanalyse des Absprungs, Fehlerbenennung und methodische Korrektur am Anlauf und an der Landung.",
+        examinerVerdictZH: "0/15分。该答案违反弹道基本原理：起跳后重心轨迹已固定。应考要求是：分相分析起跳、指出错误，并给出助跑与落地的训练纠正方法。",
+        diagnosticOptions: [
+          {
+            id: "diag-correct",
+            textDE: "Der Fehler verwechselt Haltungsoptimierung mit Bahnaenderung: Die KSP-Flugbahn ist nach dem Absprung physikalisch fixiert.",
+            textZH: "该错误把姿态优化误当轨迹改变：起跳后重心飞行轨迹在物理上已固定。",
+            isCorrect: true,
+            explanationDE: "Korrekt: Die KSP-Bahn ist nach dem Absprung ballistisch fixiert und folgt einer Parabel; in der Luft sind nur Haltung und Landungsvorbereitung optimierbar, kein zusaetzlicher Weitengewinn durch Strampeln moeglich.",
+            explanationZH: "正确：起跳后重心轨迹已由弹道固定为抛物线，腾空只能优化姿态与落地准备，蹬踏无法再增加远度。"
+          },
+          {
+            id: "diag-distractor-1",
+            textDE: "Der Absprungwinkel ist fuer die Weite nebensaechlich, entscheidend ist allein die Kraft der Beine in der Luft.",
+            textZH: "起跳角度对远度无足轻重，关键只看腾空阶段腿部发力大小。",
+            isCorrect: false,
+            explanationDE: "Falsch: Der Absprungwinkel ist entscheidend, weil ein zu steiler Winkel Horizontalgeschwindigkeit kostet; flacher Winkel traegt die Parabel, steiler Winkel verkuerzt die Weite.",
+            explanationZH: "错误：起跳角度恰恰关键，过陡会吃掉水平速度；平缓角度承载抛物线，过陡反而缩短远度。"
+          },
+          {
+            id: "diag-distractor-2",
+            textDE: "Die Landung mit Abstuetzung der Haende hinter dem Koerper sichert die Weite und entlastet die Kniegelenke.",
+            textZH: "落地时双手撑于身后能保住远度并减轻膝关节负担。",
+            isCorrect: false,
+            explanationDE: "Falsch: Die Landung mit Haenden hinter dem Koerper verkuerzt die gemessene Weite und belastet das Handgelenk; korrekt ist aktives Vorfuehren der Fuesse mit Beugung zum Abfedern.",
+            explanationZH: "错误：手撑身后会缩短丈量成绩并伤手腕；正确做法是双脚主动前伸、屈膝缓冲。"
+          }
+        ]
+      },
+      klpTermini: [
+        {
+          termDE: "Anlaufgeschwindigkeit",
+          definitionDE: "Aufgebaute Horizontalgeschwindigkeit als Weitenreserve; Stemmen vor dem Brett vernichtet sie.",
+          termZH: "助跑速度",
+          definitionZH: "积累的水平速度即远度储备；板前急刹会亲手毁掉它。"
+        },
+        {
+          termDE: "Absprungwinkel",
+          definitionDE: "Schneller flacher Absprung mit Ganzkoerperstreckung setzt Geschwindigkeit in Weite um; zu steiler Winkel kostet Horizontalgeschwindigkeit.",
+          termZH: "起跳角度",
+          definitionZH: "快速平缓的起跳加全身蹬伸把速度转化为远度；过陡吃掉水平速度。"
+        },
+        {
+          termDE: "Koerper-Schwerpunkt (KSP)",
+          definitionDE: "Referenzpunkt der Analyse: fliegt nach dem Absprung auf fixer Parabel (Flugparabel), ballistisch determiniert.",
+          termZH: "身体重心",
+          definitionZH: "分析参照点：起跳后沿固定抛物线飞行，由弹道决定。"
+        },
+        {
+          termDE: "Flugparabel",
+          definitionDE: "Fixierte KSP-Bahn nach dem Absprung; in der Luft ist kein Weitengewinn mehr moeglich, nur Haltung und Landungsvorbereitung.",
+          termZH: "腾空抛物线",
+          definitionZH: "起跳后固定的重心轨迹；腾空已不可能再增远度，只能优化姿态与落地准备。"
+        },
+        {
+          termDE: "Landung",
+          definitionDE: "Aktives Vorfuehren der Fuesse mit Beugung zum Abfedern; sichert Messwert und Gelenke, vermeidet Rueckfallen und Handabstuetzung.",
+          termZH: "落地",
+          definitionZH: "双脚主动前伸、屈膝缓冲；保住丈量成绩并保护关节，避免后坐与手撑。"
+        }
+      ],
+      fehlerquellen: [
+        {
+          trapTitleDE: "Luft-Nachhilfe",
+          trapDescriptionDE: "Vorstellung, in der Luft mit Strampeln (Radfahren) noch Weite zu gewinnen, obwohl die KSP-Bahn ballistisch fixiert ist.",
+          trapDescriptionZH: "以为腾空蹬车还能再补力增远，而重心轨迹已由弹道固定。",
+          howToAvoidDE: "Haltungssteuerung und Bahnkontrolle trennen: Nach dem Absprung ist die Parabel unveraenderbar."
+        },
+        {
+          trapTitleDE: "Rueckfallen mit Handabstuetzung",
+          trapDescriptionDE: "Landung mit Haenden hinter dem Koerper sichere die Weite, obwohl sie den Messwert verkuerzt und das Handgelenk belastet.",
+          trapDescriptionZH: "手撑身后能保住远度，实则缩短丈量成绩并伤手腕。",
+          howToAvoidDE: "Aktives Vorfuehren plus Beugung: sichert Messwert und Gelenke."
+        },
+        {
+          trapTitleDE: "Tempo gleich Weite",
+          trapDescriptionDE: "Maximalgeschwindigkeit entscheide alles, obwohl Stemmen vor dem Brett und steiler Absprung die Weite vernichten.",
+          trapDescriptionZH: "最高速度决定一切，无视板前急刹与过陡起跳对远度的摧毁。",
+          howToAvoidDE: "Rhythmus plus Brett-Treffer plus flacher Winkel: Geschwindigkeit muss sauber umgesetzt werden."
+        }
+      ],
+      klausurSatz15NP: {
+        musterSatzDE: "Zwar wird die Weite im Weitsprung wesentlich durch hohe Anlaufgeschwindigkeit und deren Umsetzung in einem schnellen flachen Absprung bestimmt, dennoch ist die KSP-Flugbahn danach ballistisch fixiert, sodass Flughaltung und aktive Landung nach vorn mit Beugung nur das Messergebnis und die Sicherheit optimieren.",
+        operator: "analysieren",
+        scoringKeywords: [
+          "Anlaufgeschwindigkeit",
+          "Absprungwinkel",
+          "Koerper-Schwerpunkt",
+          "Flugparabel",
+          "Ganzkoerperstreckung",
+          "Landung"
+        ],
+        explanationZH: "既承认助跑速度与平缓起跳对抛物线的承载作用，又指出腾空不可再加速、落地只优化丈量与安全的边界，构成完整评价。"
+      },
+      socraticProbes: [
+        {
+          questionDE: "Wer springt weiter: der schnellste Sprinter oder die rhythmisch stabile Laeuferin?",
+          questionZH: "跑得最快的人和节奏稳定的选手，谁跳得更远？",
+          counterPerspectiveDE: "Rhythmischer Anlauf plus schneller flacher Absprung setzt Geschwindigkeit in Weite um; Stemmen vernichtet die aufgebaute Geschwindigkeit."
+        },
+        {
+          questionDE: "Laesst sich die Flugbahn des Koerperschwerpunkts durch kraeftiges Radfahren noch verlaengern?",
+          questionZH: "腾空用力蹬车还能延长重心飞行轨迹吗？",
+          counterPerspectiveDE: "Nach dem Absprung ist die KSP-Bahn ballistisch fixiert; Haltung und Landung optimieren nur Messergebnis und Sicherheit."
+        }
+      ]
+    }
+  },
 ];
 
 // ---------------------------------------------------------------------------
