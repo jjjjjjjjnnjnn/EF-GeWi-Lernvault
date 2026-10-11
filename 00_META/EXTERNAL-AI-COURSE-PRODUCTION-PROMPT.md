@@ -685,9 +685,9 @@ Klausur-Satz: `Beim Grenzübergang $h \to 0$ geht die Sekante durch $P(x_0 \mid 
    | # | Canonical ID | 学科/用途 | 退役旧 ID 映射 |
    | :--- | :--- | :--- | :--- |
    | 1 | `magisches-viereck` | SoWi 目标冲突 | — |
-   | 2 | `gini-allocator` | SoWi 分配不均 | `balance-board`（SoWi 课）改用此件 |
+   | 2 | `gini-allocator` | SoWi 分配不均 | 新课优先此件；存量 `balance-board`（SoWi 课）为合法遗留（通用两难天平），可保留 |
    | 3 | `orderbuch-sim` | SoWi 市场出清 | `markt-sim` -> `orderbuch-sim`（库内 `orderbuch` 视为同一件，统一写作 `orderbuch-sim`） |
-   | 4 | `ethik-waage` | Philo 功利/义务权衡 | `balance-board`（Philo 课）改用此件 |
+   | 4 | `ethik-waage` | Philo 功利/义务权衡 | 新课优先此件；存量 `balance-board`（Philo/Bio/Chemie/Physik 课）为合法遗留（通用两难天平，DilemmaBalanceScale 系），可保留 |
    | 5 | `tangent-slider` | Mathe 割线到切线 | — |
    | 6 | `box-optimizer` | Mathe 极值优化 | — |
    | 7 | `kinematik-sim` | Physik/Sport 运动学 | `kinematik` / `kinematik-lab` / `schiefe-ebene` -> `kinematik-sim` |

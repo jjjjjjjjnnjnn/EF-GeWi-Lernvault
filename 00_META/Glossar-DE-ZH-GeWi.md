@@ -12,107 +12,106 @@ tags: [EF, Meta]
 | Deutsch | Chinesisch | Fach | Beispielsatz |
 |---|---|---|---|
 | soziale Ungleichheit | 社会不平等 | SoWi | Soziale Ungleichheit zeigt sich in … |
-| soziale Mobilität | 社会流动 | SoWi | … |
-| These / Antithese / Synthese | 论点/反论点/综合 | Philo | … |
-| Gewissen | 良心 | Philo | … |
-| Verantwortung | 责任 | Philo | … |
-| Sachtext | 说明文/议论文本 | Deutsch | … |
-| Erörterung | 议论文 | Deutsch | … |
-| summary / analysis / comment | 概括/分析/评论 | Englisch | … |
+| soziale Mobilität | 社会流动 | SoWi | Soziale Mobilität beschreibt den Wechsel zwischen Schichten. |
+| These / Antithese / Synthese | 论点/反论点/综合 | Philosophie | These, Antithese und Synthese gliedern die Erörterung. |
+| Gewissen | 良心 | Philosophie | Das Gewissen prüft die eigene Entscheidung. |
+| Verantwortung | 责任 | Philosophie | Verantwortung bedeutet, für Folgen einzustehen. |
+| Sachtext | 说明文/议论文本 | Deutsch | Der Sachtext informiert sachlich über ein Thema. |
+| Erörterung | 议论文 | Deutsch | Die Erörterung wägt Argumente Pro und Kontra ab. |
+| summary / analysis / comment | 概括/分析/评论 | Englisch | Summary, analysis and comment structure the exam. |
 
-| Chancengleichheit | 机会平等 | SoWi | √ |
-| Bildungstrichter | 教育漏斗 | SoWi | √ |
-| Armutsgefährdungsquote | 贫困风险率 | SoWi | √ |
-| Gini-Koeffizient | 基尼系数 | SoWi | √ |
-| Meritokratie | 功绩制 | SoWi | √ |
-| kulturelles Kapital | 文化资本 | SoWi | √ |
-| Umverteilung | 再分配 | SoWi | √ |
+| Chancengleichheit | 机会平等 | SoWi | Chancengleichheit fordert gleiche Startbedingungen. |
+| Bildungstrichter | 教育漏斗 | SoWi | Der Bildungstrichter zeigt die soziale Auswahl im Bildungssystem. |
+| Armutsgefährdungsquote | 贫困风险率 | SoWi | Die Armutsgefährdungsquote misst das Armutsrisiko. |
+| Gini-Koeffizient | 基尼系数 | SoWi | Der Gini-Koeffizient misst die Einkommensungleichheit. |
+| Meritokratie | 功绩制 | SoWi | Die Meritokratie belohnt Leistung und Qualifikation. |
+| kulturelles Kapital | 文化资本 | SoWi | Kulturelles Kapital prägt den Bildungserfolg. |
+| Umverteilung | 再分配 | SoWi | Umverteilung gleicht Einkommen über Steuern an. |
 
-| Ich-Identität | 自我同一性 | SoWi | √ |
-| Rollenpluralismus | 角色多元 | SoWi | √ |
-| außengeleitet | 他导型 | SoWi | √ |
-| Wertewandel | 价值观变迁 | SoWi | √ |
-| Integration/Assimilation | 融合/同化 | SoWi | √ |
-| Vergleichsdruck | 比较压力 | SoWi | √ |
+| Ich-Identität | 自我同一性 | SoWi | Die Ich-Identität verbindet Biografie und Rollen. |
+| Rollenpluralismus | 角色多元 | SoWi | Der Rollenpluralismus verlangt viele Rollen zugleich. |
+| außengeleitet | 他导型 | SoWi | Außengeleitetes Verhalten folgt dem Urteil anderer. |
+| Wertewandel | 价值观变迁 | SoWi | Der Wertewandel verschiebt Normen zwischen Generationen. |
+| Integration/Assimilation | 融合/同化 | SoWi | Integration bewahrt Identität, Assimilation passt vollständig an. |
+| Vergleichsdruck | 比较压力 | SoWi | Der Vergleichsdruck wächst mit sozialen Medien. |
 
-| Sozialisation | 社会化 | SoWi | √ |
-| Homo sociologicus | 社会人 | SoWi | √ |
-| Sanktion | 制裁 | SoWi | √ |
-| Rollenkonflikt | 角色冲突 | SoWi | √ |
-| Rollendistanz | 角色距离 | SoWi | √ |
-| Peer-Group | 同龄群体 | SoWi | √ |
+| Sozialisation | 社会化 | SoWi | Die Sozialisation formt Werte und Rollen. |
+| Homo sociologicus | 社会人 | SoWi | Der Homo sociologicus handelt rollenkonform. |
+| Sanktion | 制裁 | SoWi | Eine Sanktion belohnt oder bestraft Verhalten. |
+| Rollenkonflikt | 角色冲突 | SoWi | Ein Rollenkonflikt entsteht aus widersprüchlichen Erwartungen. |
+| Rollendistanz | 角色距离 | SoWi | Rollendistanz zeigt kritischen Abstand zur Rolle. |
+| Peer-Group | 同龄群体 | SoWi | Die Peer-Group prägt Jugendliche stark. |
 
-| Menschenwürde | 人的尊严 | SoWi | √ |
-| Ewigkeitsklausel | 永恒条款 | SoWi | √ |
-| Verfassungsprinzipien | 宪法原则 | SoWi | √ |
-| Grundrechtskollision | 基本权利冲突 | SoWi | √ |
-| Drittwirkung | 第三方效力 | SoWi | √ |
-| praktische Konkordanz | 实践调和 | SoWi | √ |
+| Menschenwürde | 人的尊严 | SoWi | Die Menschenwürde ist unantastbar nach Artikel 1. |
+| Ewigkeitsklausel | 永恒条款 | SoWi | Die Ewigkeitsklausel schützt Artikel 1 und 20. |
+| Verfassungsprinzipien | 宪法原则 | SoWi | Verfassungsprinzipien binden alle Staatsgewalt. |
+| Grundrechtskollision | 基本权利冲突 | SoWi | Bei einer Grundrechtskollision wägt man beide Rechte ab. |
+| Drittwirkung | 第三方效力 | SoWi | Die Drittwirkung strahlt Grundrechte ins Privatrecht aus. |
+| praktische Konkordanz | 实践调和 | SoWi | Die praktische Konkordanz bringt beide Rechte zum Ausgleich. |
 
-| Zustimmungsgesetz | 需批准法 | SoWi | √ |
-| Einspruchsgesetz | 可反对法 | SoWi | √ |
-| Vermittlungsausschuss | 调解委员会 | SoWi | √ |
-| freies Mandat | 自由委任 | SoWi | √ |
-| Fraktionsdisziplin | 党团纪律 | SoWi | √ |
-| Politikzyklus | 政策周期 | SoWi | √ |
+| Zustimmungsgesetz | 需批准法 | SoWi | Ein Zustimmungsgesetz braucht die Mehrheit im Bundesrat. |
+| Einspruchsgesetz | 可反对法 | SoWi | Gegen ein Einspruchsgesetz kann der Bundesrat Einspruch einlegen. |
+| Vermittlungsausschuss | 调解委员会 | SoWi | Der Vermittlungsausschuss sucht einen Kompromiss zwischen Bundestag und Bundesrat. |
+| freies Mandat | 自由委任 | SoWi | Das freie Mandat bindet Abgeordnete nur an ihr Gewissen. |
+| Fraktionsdisziplin | 党团纪律 | SoWi | Die Fraktionsdisziplin sichert geschlossenes Abstimmen. |
+| Politikzyklus | 政策周期 | SoWi | Der Politikzyklus läuft von Problem bis Evaluation. |
 
-| Willensbildung | 意志形成 | SoWi | √ |
-| Volkspartei | 人民党 | SoWi | √ |
-| Sperrklausel | 门槛条款 | SoWi | √ |
-| Parteienverdrossenheit | 厌党情绪 | SoWi | √ |
-| Transmissionsriemen | 传动带 | SoWi | √ |
-| vierte Gewalt | 第四权 | SoWi | √ |
+| Willensbildung | 意志形成 | SoWi | Die Willensbildung verbindet Bürger und Parteien. |
+| Volkspartei | 人民党 | SoWi | Eine Volkspartei spricht breite Schichten an. |
+| Sperrklausel | 门槛条款 | SoWi | Die Sperrklausel hindert Kleinstparteien am Einzug. |
+| Parteienverdrossenheit | 厌党情绪 | SoWi | Parteienverdrossenheit senkt die Wahlbeteiligung. |
+| Transmissionsriemen | 传动带 | SoWi | Parteien wirken als Transmissionsriemen zwischen Bürger und Staat. |
+| vierte Gewalt | 第四权 | SoWi | Die Medien gelten als vierte Gewalt. |
 
-| E-Partizipation | 电子参与 | SoWi | √ |
-| Volksbegehren | 公民动议 | SoWi | √ |
-| Zustimmungsquorum | 同意门槛 | SoWi | √ |
-| Bürgerrat | 公民委员会 | SoWi | √ |
-| Clicktivism | 点击行动主义 | SoWi | √ |
-| konventionell | 常规的 | SoWi | √ |
+| E-Partizipation | 电子参与 | SoWi | E-Partizipation senkt die Hürde politischer Beteiligung. |
+| Volksbegehren | 公民动议 | SoWi | Ein Volksbegehren startet das Verfahren direktdemokratisch. |
+| Zustimmungsquorum | 同意门槛 | SoWi | Das Zustimmungsquorum verlangt eine Mindestzustimmung. |
+| Bürgerrat | 公民委员会 | SoWi | Ein Bürgerrat berät per Losverfahren über Politik. |
+| Clicktivism | 点击行动主义 | SoWi | Clicktivism bleibt oft bei Likes und Shares stehen. |
+| konventionell | 常规的 | SoWi | Konventionelle Partizipation nutzt Wahlen und Parteien. |
 
-| fdGO | 自由民主基本秩序 | SoWi | √ |
-| Populismus | 民粹主义 | SoWi | √ |
-| Parteiverbot | 政党禁令 | SoWi | √ |
-| Verfassungsschutz | 宪法保卫局 | SoWi | √ |
-| Potentialität | 实现可能性 | SoWi | √ |
-| Radikalismus | 激进主义 | SoWi | √ |
+| fdGO | 自由民主基本秩序 | SoWi | Die fdGO schützt Demokratie und Rechtsstaat. |
+| Populismus | 民粹主义 | SoWi | Der Populismus spaltet in Volk und Elite. |
+| Parteiverbot | 政党禁令 | SoWi | Ein Parteiverbot prüft das Bundesverfassungsgericht. |
+| Verfassungsschutz | 宪法保卫局 | SoWi | Der Verfassungsschutz beobachtet extremistische Bestrebungen. |
+| Potentialität | 实现可能性 | SoWi | Potentialität meint die noch nicht verwirklichte Möglichkeit. |
+| Radikalismus | 激进主义 | SoWi | Der Radikalismus lehnt die Ordnung grundlegend ab. |
 
-| Knappheit | 稀缺 | SoWi | √ |
-| homo oeconomicus | 经济人 | SoWi | √ |
-| Konsumentensouveränität | 消费者主权 | SoWi | √ |
-| Fremdbestimmung | 被操控 | SoWi | √ |
-| Nachhaltigkeit | 可持续性 | SoWi | √ |
-| Verbraucherpolitik | 消费者政策 | SoWi | √ |
+| Knappheit | 稀缺 | SoWi | Knappheit zwingt zum Wirtschaften. |
+| homo oeconomicus | 经济人 | SoWi | Der Homo oeconomicus entscheidet rational und nutzenmaximierend. |
+| Konsumentensouveränität | 消费者主权 | SoWi | Die Konsumentensouveränität lenkt das Angebot über Nachfrage. |
+| Fremdbestimmung | 被操控 | SoWi | Fremdbestimmung durch Werbung begrenzt die Souveränität. |
+| Nachhaltigkeit | 可持续性 | SoWi | Nachhaltigkeit schont Ressourcen für künftige Generationen. |
+| Verbraucherpolitik | 消费者政策 | SoWi | Die Verbraucherpolitik schützt vor Irreführung. |
 
-| unsichtbare Hand | 看不见的手 | SoWi | √ |
-| Preismechanismus | 价格机制 | SoWi | √ |
-| Ordoliberalismus | 秩序自由主义 | SoWi | √ |
-| Tarifautonomie | 劳资自治 | SoWi | √ |
-| Externalität | 外部性 | SoWi | √ |
-| Nachtwächterstaat | 守夜国家 | SoWi | √ |
+| unsichtbare Hand | 看不见的手 | SoWi | Die unsichtbare Hand lenkt Egoismus zum Gemeinwohl. |
+| Preismechanismus | 价格机制 | SoWi | Der Preismechanismus gleicht Angebot und Nachfrage aus. |
+| Ordoliberalismus | 秩序自由主义 | SoWi | Der Ordoliberalismus fordert einen starken Ordnungsrahmen. |
+| Tarifautonomie | 劳资自治 | SoWi | Die Tarifautonomie überlässt Löhne den Tarifparteien. |
+| Externalität | 外部性 | SoWi | Eine Externalität belastet unbeteiligte Dritte. |
+| Nachtwächterstaat | 守夜国家 | SoWi | Der Nachtwächterstaat beschränkt sich auf Schutzfunktionen. |
 
-| Betriebsrat | 企业委员会 | SoWi | √ |
-| Aufsichtsrat | 监事会 | SoWi | √ |
-| Shareholder | 股东 | SoWi | √ |
-| Stakeholder | 利益相关人 | SoWi | √ |
-| Arbeit 4.0 | 工作4.0 | SoWi | √ |
-| Kurzarbeit | 短工制 | SoWi | √ |
+| Betriebsrat | 企业委员会 | SoWi | Der Betriebsrat vertritt die Belegschaft. |
+| Aufsichtsrat | 监事会 | SoWi | Der Aufsichtsrat kontrolliert den Vorstand. |
+| Shareholder | 股东 | SoWi | Shareholder erwarten Rendite auf ihr Kapital. |
+| Stakeholder | 利益相关人 | SoWi | Stakeholder tragen unterschiedliche Interessen an das Unternehmen heran. |
+| Arbeit 4.0 | 工作4.0 | SoWi | Arbeit 4.0 beschreibt digitalisierte Arbeitswelten. |
+| Kurzarbeit | 短工制 | SoWi | Kurzarbeit sichert Jobs in der Krise. |
 
-| Mindestlohnkommission | 最低工资委员会 | SoWi | √ |
-| Aufstocker | 补差救济工 | SoWi | √ |
-| Wettbewerbspolitik | 竞争政策 | SoWi | √ |
-| Energiewende | 能源转型 | SoWi | √ |
-| Versorgungssicherheit | 供应安全 | SoWi | √ |
-| Preisbremse | 价格刹车 | SoWi | √ |
+| Mindestlohnkommission | 最低工资委员会 | SoWi | Die Mindestlohnkommission schlägt die Lohnuntergrenze vor. |
+| Aufstocker | 补差救济工 | SoWi | Aufstocker ergänzen Niedriglohn mit Sozialleistungen. |
+| Wettbewerbspolitik | 竞争政策 | SoWi | Die Wettbewerbspolitik bekämpft Kartelle und Missbrauch. |
+| Energiewende | 能源转型 | SoWi | Die Energiewende ersetzt Fossile durch Erneuerbare. |
+| Versorgungssicherheit | 供应安全 | SoWi | Versorgungssicherheit verlangt stabile Netze und Reserven. |
+| Preisbremse | 价格刹车 | SoWi | Die Preisbremse deckelt Preise in der Krise. |
 
-| Maxime | 准则/行动格言 | Philo | √ |
-| Nutzenprinzip | 功利原则/最大幸福原则 | Philo | √ |
-| kategorischer Imperativ | 绝对命令 | Philo | √ |
-| Menschenwürde | 人的尊严 | Philo | √ |
-| Selbstzweck | 目的自身 | Philo | √ |
-| Universalisierungstest | 普遍化检验 | Philo | √ |
-| Folgenethik | 后果论/结果伦理 | Philo | √ |
-| abwägen | 权衡 | Philo | √ |
+| Maxime | 准则/行动格言 | Philosophie | Eine Maxime ist der subjektive Handlungsgrundsatz. |
+| Nutzenprinzip | 功利原则/最大幸福原则 | Philosophie | Das Nutzenprinzip fordert das größte Glück der größten Zahl. |
+| kategorischer Imperativ | 绝对命令 | Philosophie | Der kategorische Imperativ gebietet unbedingt und allgemein. |
+| Selbstzweck | 目的自身 | Philosophie | Der Mensch ist Selbstzweck, kein bloßes Mittel. |
+| Universalisierungstest | 普遍化检验 | Philosophie | Der Universalisierungstest prüft die Verallgemeinerbarkeit der Maxime. |
+| Folgenethik | 后果论/结果伦理 | Philosophie | Die Folgenethik beurteilt Handlungen nach ihren Konsequenzen. |
+| abwägen | 权衡 | Philosophie | Beim Abwägen vergleicht man Lust und Leid aller Betroffenen. |
 
 > 每科笔记的新术语同步回此表一行，保持唯一真相源。
 
@@ -177,7 +176,6 @@ tags: [EF, Meta]
 | Konzession | 让步 | Deutsch | Die Konzession in Zeile 2 macht den Autor glaubwürdig. |
 | Faktenargument | 事实论据 | Deutsch | Das Faktenargument stützt die These mit Beobachtung. |
 | Plausibilitätsargument | 常识论据 | Deutsch | Das Plausibilitätsargument wirkt alltagsnah, bleibt aber unbelegt. |
-| Kategorischer Imperativ | 绝对命令 | Philosophie | Der kategorische Imperativ gilt unbedingt, ohne Rücksicht auf Folgen. |
 | Universalisierungsformel | 普遍化公式 | Philosophie | Die Universalisierungsformel prüft, ob alle nach derselben Maxime handeln könnten. |
 | Menschheitszweckformel | 人性目的公式 | Philosophie | Nach der Menschheitszweckformel darf man niemanden als bloßes Mittel benutzen. |
 | hedonistisches Kalkül | 快乐计算 | Philosophie | Das hedonistische Kalkül wägt Lust und Leid aller Betroffenen gegeneinander ab. |
@@ -187,9 +185,7 @@ tags: [EF, Meta]
 | Deutung | 解读 | SoWi | Jede Deutung braucht einen Realbezug zum EF-Thema. |
 | Zielkonflikt | 目标冲突 | SoWi | Wachstum oder Umwelt ist ein klassischer Zielkonflikt. |
 | Politikverdrossenheit | 厌党情绪 | SoWi | Politikverdrossenheit trifft Parteien, nicht die Demokratie. |
-| mediation | 转述 | Englisch | Mediation conveys only the relevant facts. |
 | source text | 源文本 | Englisch | Read the German source text twice before writing. |
-| target format | 目标文本格式 | Englisch | Keep the required target format in mind. |
 | to paraphrase | 改述 | Englisch | Paraphrase the German text in your own English words. |
 | register | 语域 | Englisch | A formal letter needs a formal register. |
 | Fokussierung | 聚焦小点 | SoWi | Die Fokussierung grenzt die Prüfungsschwerpunkte ein. |
@@ -264,8 +260,8 @@ tags: [EF, Meta]
 | Differentialquotient | 导数/瞬时变化率 | Mathe | Der Differentialquotient beschreibt die Momentangeschwindigkeit als 1. Ableitung. |
 | Reaktionskinetik | 反应动力学 | Chemie | Die Reaktionskinetik untersucht die Geschwindigkeit chemischer Reaktionen. |
 | Michaelis-Menten-Kinetik | 米氏动力学 | Bio | Die Michaelis-Menten-Kinetik beschreibt die Substratsättigung bei Enzymreaktionen. |
-| Differenzprinzip | 差异原则 | Philo | Nach dem Differenzprinzip sind Ungleichheiten nur gerecht, wenn sie den Schwächsten nützen. |
-| Schleier des Nichtwissens | 无知之幕 | Philo | Hinter dem Schleier des Nichtwissens wählen Menschen faire Grundregeln. |
+| Differenzprinzip | 差异原则 | Philosophie | Nach dem Differenzprinzip sind Ungleichheiten nur gerecht, wenn sie den Schwächsten nützen. |
+| Schleier des Nichtwissens | 无知之幕 | Philosophie | Hinter dem Schleier des Nichtwissens wählen Menschen faire Grundregeln. |
 | Fließgleichgewicht | 动态流平衡 | Bio | Lebende Zellen befinden sich im dynamischen Fließgleichgewicht. |
 | P.E.E.-Schema | 观点-证据-解释结构 | Englisch | The P.E.E. schema structures argumentative paragraphs effectively. |
 | Definitionsbereich | 定义域 | Mathe | Das Definitionsbereich enthaelt alle zulaessigen x-Werte. |
@@ -471,7 +467,6 @@ tags: [EF, Meta]
 | Bildmassstab | 图像比例尺 | Bio | Der Bildmassstab rechnet Zeichenlaenge in Wirklichkeit um. |
 | Spezies | 物种 | Bio | Die Skizze belegt allein keine eindeutige Spezies. |
 | Stoffaustausch | 物质交换 | Bio | Die Biomembran regelt den selektiven Stoffaustausch. |
-| ganzrationale Funktion | 整式多项式函数 | Mathe | Eine ganzrationale Funktion setzt sich aus Potenzen mit natuerlichen Exponenten zusammen. |
 | Kurvendiskussion | 曲线讨论（性质研究） | Mathe | Die Kurvendiskussion untersucht Symmetrie, Nullstellen und Extrempunkte eines Graphen. |
 | Globalverhalten | 全局极限行为 | Mathe | Das Globalverhalten fuer x gegen Unendlich wird durch den hoechsten Exponenten bestimmt. |
 | Achsensymmetrie | 轴对称性 | Mathe | Gilt f von minus x gleich f von x, so liegt Achsensymmetrie zur y-Achse vor. |
@@ -481,8 +476,6 @@ tags: [EF, Meta]
 | Aktionsprinzip | 动量定律（牛顿第二定律） | Physik | Das Aktionsprinzip besagt, dass die resultierende Kraft Masse mal Beschleunigung ist. |
 | Reaktionsprinzip | 反作用力定律（牛顿第三定律） | Physik | Gemaess dem Reaktionsprinzip tritt jede Kraft mit einer gleich grossen Gegenkraft auf. |
 | Hangabtriebskraft | 下滑力 | Physik | Die Hangabtriebskraft beschleunigt den Koerper entlang der geneigten Ebene. |
-| Normalkraft | 法向正压力 | Physik | Die Normalkraft wirkt senkrecht auf die Auflageflaeche. |
-| Gleitreibung | 滑动摩擦 | Physik | Die Gleitreibung bremst die relative Bewegung zweier Oberflaechen. |
 | Protolyse | 质子转移反应 | Chemie | Bei einer Protolyse wird ein Proton von einer Saeure auf eine Base uebertragen. |
 | Protonendonator | 质子供体（酸） | Chemie | Nach Broensted fungiert eine Saeure als Protonendonator. |
 | Protonenakzeptor | 质子受体（碱） | Chemie | Nach Broensted fungiert eine Base als Protonenakzeptor. |
@@ -898,7 +891,7 @@ tags: [EF, Meta]
 | Informationsrepertoire | 信息来源组合 | Deutsch | Das Informationsrepertoire beschreibt, wie viele und welche Quellen jemand tatsächlich nutzt. |
 | Bestätigungsfehler | 确认偏误 | Deutsch | Der Bestätigungsfehler bezeichnet die Neigung, widersprechende Informationen zu meiden. |
 | Medienmündigkeit | 媒介素养／媒介自主 | Deutsch | Medienmündigkeit heißt zu bemerken, dass der eigene Feed eine Auswahl ist. |
-| Englisch (dt. Entsprechung) | Chinesisch | Fach | Beispielsatz |
+> Englisch-Zusatzblock: links deutsche Entsprechung, rechts chinesisch — Fach bleibt Englisch, kein neuer Tabellenkopf.
 | attention economy (Aufmerksamkeitsökonomie) | 注意力经济 | Englisch | *"In the attention economy, attention itself is the commodity that is being sold."* |
 | variable reward (variable Belohnung) | 可变奖励／间歇强化 | Englisch | *"Variable reward is why the feed feels like a slot machine."* |
 | displacement hypothesis (Verdrängungshypothese) | 置换假说 | Englisch | *"The displacement hypothesis says scrolling displaces sleep, movement and real conversation."* |
@@ -930,22 +923,16 @@ tags: [EF, Meta]
 | Pantheismus | 泛神论 | Deutsch | Goethes pantheistisches Weltbild betrachtet Gott und Natur als eine unteilbare, beseelte Einheit. |
 | Gelehrten-Tragödie | 学者悲剧 | Deutsch | Die Gelehrten-Tragödie thematisiert Fausts Verzweiflung an den Grenzen menschlicher Erkenntnisfähigkeit. |
 | intellektuelle Hybris | 智识狂妄/知识分子的傲慢 | Deutsch | Fausts intellektuelle Hybris verleitet ihn dazu, sittliche Schranken im Bund mit Mephisto niederzureißen. |
-| Supranationalismus | 超国家主义 | SoWi | Im Supranationalismus übertragen Mitgliedstaaten Hoheitsrechte auf unabhängige EU-Organe mit bindender Wirkung. |
 | Intergouvernementalismus | 政府间主义 | SoWi | Der Intergouvernementalismus beschreibt die Zusammenarbeit souveräner Staaten unter Wahrung des Vetorechts. |
 | institutionelles Dreieck | 欧盟机构铁三角 | SoWi | Das institutionelle Dreieck aus Kommission, Rat und Europäischem Parlament balanciert die Machtverhältnisse. |
 | Staatenverbund | 国家联合体/特殊实体 | SoWi | Die Europäische Union ist ein staatsrechtlicher Staatenverbund sui generis zwischen Bund und Bundesstaat. |
 | anaphora (Anapher) | 首语重复/首字排比 | Englisch | The deliberate repetition of words at the beginning of successive sentences creates rhythmic resonance. |
-| Naturzustand | 自然状态 | Philosophie | Der Naturzustand ist ein hypothetisches Gedankenexperiment zur Beschreibung des Zusammenlebens vor staatlicher Herrschaft. |
 | bellum omnium contra omnes | 万人对万人的战争 | Philosophie | Bei Hobbes führt das Fehlen einer Ordnungsmacht zum permanenten Krieg aller gegen alle. |
 | Ganztonleiter | 全音阶 | Musik | Die Ganztonleiter besteht nur aus Ganztonschritten und hebt das Gefühl eines tonalen Leittons völlig auf. |
-| Superkompensation | 超量恢复 | Sport | Die Superkompensation beschreibt die überschießende Wiederherstellung über das Ausgangsniveau nach der Regeneration. |
 | Reihungsstil | 并置风格 | Deutsch | Der expressionistische Reihungsstil montiert zusammenhanglose Einzelbilder parataktisch aneinander. |
-| Determinismus | 决定论 | Philosophie | Der Determinismus besagt, dass alle künftigen Ereignisse durch vorangegangene Ursachen eindeutig festgelegt sind. |
 | Bereitschaftspotenzial | 准备电位 | Philosophie | Das Bereitschaftspotenzial im Gehirn tritt messbar vor dem bewussten Entschluss zu einer Willkürbewegung auf. |
-| Kompatibilismus | 兼容论/软决定论 | Philosophie | Der Kompatibilismus behauptet die Vereinbarkeit von kausalem Determinismus und moralischer Verantwortung. |
 | tragic flaw (Hamartia) | 悲剧性缺陷/致命弱点 | Englisch | Hamlet's fatal character flaw of excessive procrastination leads inevitably to the tragedy. |
 | blank verse (Blankvers) | 无韵抑扬格五音步 | Englisch | Shakespeare wrote most of his plays in blank verse consisting of unrhymed iambic pentameter. |
-| Nachfrageorientierung | 需求导向经济政策 | SoWi | Die Nachfrageorientierung nach Keynes bekämpft Rezessionen durch staatliche Konsum- und Investitionsimpulse. |
 | Deficit Spending | 赤字财政支出 | SoWi | Unter Deficit Spending versteht man die schuldenfinanzierte Erhöhung staatlicher Nachfrage in Krisen. |
 | freie Atonalität | 自由无调性 | Musik | In der freien Atonalität löst sich die Musik völlig von Grundtönen und kadenziellen Auflösungen. |
 | Emanzipation der Dissonanz | 不协和音的解放 | Musik | Schönbergs Emanzipation der Dissonanz erklärt Dissonanzen zu eigenständigen, ausdrucksstarken Klängen. |
@@ -973,17 +960,12 @@ tags: [EF, Meta]
 | doublethink | 双重思想 | Englisch | Doublethink describes the mental capacity to hold two contradictory beliefs simultaneously and accept both. |
 | commodification of personality | 人格商品化 | Englisch | The commodification of personality forces the worker to package charm and dignity as a marketable good. |
 | Verdinglichung | 物化与工具化 | Philosophie | Die Verdinglichung bezeichnet die Verwandlung zwischenmenschlicher Beziehungen in bloße Waren- und Dingverhältnisse. |
-| Prekarisierung | 底层贫困化与就业脆弱化 | SoWi | Die Prekarisierung des Arbeitsmarkts entzieht Beschäftigten existenzsichernde und planbare Lebensgrundlagen. |
-| Menschheitszweckformel | 人类目的公式 | Philosophie | Kants Menschheitszweckformel gebietet, die Menschheit stets zugleich als Zweck, niemals bloß als Mittel zu gebrauchen. |
-
 | lokale Änderungsrate | 瞬时变化率/导数 | Mathe | Die lokale Änderungsrate entspricht der Tangentensteigung an einer Stelle und quantifiziert Momentangeschwindigkeit oder Reaktionsrate. |
-| Fließgleichgewicht | 动态流平衡/稳态 | Bio | Das Fließgleichgewicht beschreibt einen dynamischen stationären Zustand offener Systeme mit kontinuierlichem Stoff- und Energiedurchsatz. |
 | Erhaltungssatz | 守恒定律 | Physik | Ein physikalischer Erhaltungssatz besagt, dass die Gesamtmenge einer fundamentalen Größe in einem abgeschlossenen System zeitlich unveränderlich ist. |
 | Syllogismus | 三段论演绎 | Deutsch | Der Syllogismus ist eine logische Schlussfigur aus Obersatz, Untersatz und notwendiger Konklusion. |
 | Leserlenkung | 读者心理引导/修辞调控 | Deutsch | Die Leserlenkung steuert die Aufmerksamkeit und emotionale Haltung des Rezipienten über gezielte Rhetorik. |
 | Fehlschluss | 逻辑谬误（形式或实质假论证） | Philosophie | Ein logischer Fehlschluss verletzt die formale Gültigkeit oder stützt sich auf unbewiesene Prämissen. |
 | Diskursmacht | 话语权力与意识形态霸权 | SoWi | Die Diskursmacht prägt institutionell, welche Positionen in der Öffentlichkeit als legitim und sagbar gelten. |
-| Bewertungseinheit | 采分点（BE） | Mathe | Eine Bewertungseinheit BE ist das kleinste atomare Bepunktungselement im offiziellen NRW-Erwartungshorizont. |
 | Folgefehler | 后续推导保留分（防连坐机制） | Mathe | Ein Folgefehler beschreibt das Prinzip, dass trotz vorangegangenem Rechenfehler alle formal korrekten Folgeschritte voll bepunktet werden. |
 | mathematischer Ansatz | 列式与模型声明 | Mathe | Der mathematische Ansatz deklariert die zu verwendende Grundgleichung oder Theorem vor dem rechnerischen Einsetzen. |
 | Sainte-Laguë-Verfahren | 圣拉古除数配额算法 | SoWi | Das Sainte-Laguë-Verfahren teilt die Zweitstimmen durch ungerade Zahlen (1, 3, 5...), um Parlamentssitze verzerrungsfrei zu verteilen. |
@@ -991,8 +973,5 @@ tags: [EF, Meta]
 | Ausgleichsmandat | 平衡议席（比例矫正席位） | SoWi | Ausgleichsmandate werden anderen Parteien zugewiesen, um das durch Überhangmandate verzerrte proportionale Kräfteverhältnis wiederherzustellen. |
 | Zweitstimmendeckung | 第二票配额覆盖（新选举法规则） | SoWi | Die Zweitstimmendeckung besagt, dass Wahlkreisgewinner nur dann ins Parlament einziehen, wenn ihr Direktmandat durch die Zweitstimmen ihrer Partei gedeckt ist. |
 | Grundmandatsklausel | 基本议席豁免条款 | SoWi | Die Grundmandatsklausel ermöglichte Parteien unter 5% den Einzug in voller Fraktionsstärke, sofern sie mindestens drei Direktmandate errangen. |
-| Urzustand | 原初状态 | Philosophie | Der Urzustand ist ein hypothetisches Gedankenexperiment zur Grundlegung einer fairen und gerechten Gesellschaftsordnung. |
-| Schleier des Nichtwissens | 无知之幕 | Philosophie | Der Schleier des Nichtwissens verbirgt den Entscheidern ihre künftige soziale Klasse, Talente und körperlichen Eigenschaften. |
-| Differenzprinzip | 差异原则 | Philosophie | Das Differenzprinzip legitimiert wirtschaftliche Ungleichheiten nur dann, wenn sie den am wenigsten Begünstigten den größtmöglichen Vorteil bringen. |
 | Maximin-Regel | 最大最小准则 | Philosophie | Die Maximin-Regel gebietet, unter Ungewissheit stets diejenige Handlungsalternative zu wählen, deren schlechtestmögliches Ergebnis am besten ist. |
 | lexikalischer Vorrang | 词典式优先次序 | Philosophie | Der lexikalische Vorrang ordnet gleiche Grundfreiheiten dem Differenzprinzip strikt übergeordnet zu; Freiheit darf nicht für Wohlstand geopfert werden. |

@@ -146,5 +146,7 @@ tags: [EF, Meta, Pruefungspakete]
 | 口试学科范围（现按 Deutsch/Englisch/Musik/Sport） | P4 | 若改 Philosophie/SoWi，六节结构可直接迁移 |
 | 口试评分维度权重（现按 40/25/20/15 假设） | P4 | 标 ⏳，待确认后改 §1 表 |
 | Mathe/Physik/Chemie 积分与摊销是否属 EF 范围 | P1/P3 理科 | 已给「EF 先行子题」分支 |
+| G6 · Englisch Teil B 系（Sprachmittlung vs Hörverstehen） | P1 Englisch、P2 Englisch | 按 A 类问询结果替换 §3 任务链（两份均预留两套写法） |
+| G7 · 词典/视听（口试 Hilfsmittel + 材料是否含视听） | P4 四份 §1 | 改 §1 Hilfsmittel 行；视听材料则准备时间 +10 min |
 
 完整台账见 [`Blocker-Register.md`](Blocker-Register.md) §G。

@@ -34,8 +34,9 @@ Um meine individuelle Vorbereitung exakt abzustimmen, wäre ich Ihnen für eine 
 3. **Musik**:
    - Welches konkrete Rahmenthema bzw. Werkkorpus (z. B. Programmmusik/Affektenlehre oder Filmmusik) steht in diesem Halbjahr im Zentrum?
 
-4. **Sport**:
+4. **Sport**（正文=精简问；15 项全量靠下方回复落地动作表追问）:
    - Welches spezifische Ballspiel im Bereich BF 7 (z. B. Volleyball, Basketball oder Handball) wird neben der Leichtathletik (BF 3) unterrichtet?
+   - Welche zwei Inhaltsfelder (a–f) sind als Akzentuierung für die theoretische Prüfung gewählt? (A11)
 
 Vielen Dank für Ihre Unterstützung und Mühe!
 
@@ -89,3 +90,4 @@ Mit freundlichen Grüßen
 ## 变更记录
 
 - 2026-09-25：创建。含完整版（4 科 13 问）+ 精简版（4 问）+ 回复落地动作表。
+- 2026-10-11：Nachricht Sport 条补 A11 正问一句（2 个 Akzentuierungs-IF 是哪两个）；正文=精简问，15 项全量靠回复落地动作表追问。

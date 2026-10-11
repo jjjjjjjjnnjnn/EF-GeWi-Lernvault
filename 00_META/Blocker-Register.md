@@ -11,7 +11,7 @@ tags: [EF, Meta, Blocker]
 
 > **本文件角色**：全项目所有「非代码可解」阻塞的唯一台账。每条含 **阻断什么 / 已如何脱敏 / 答案到达后的动作**。
 > **配套**：[`Lehrkraft-Anfragen.md`](Lehrkraft-Anfragen.md)（可直接转发给老师的德语问询稿）。
-> **范围说明**：本次仅处理 **A（老师问询）与 B（账号权限）** 两类；**C（真人验收）与 D（App 工程债）本轮暂缓**（用户指示：暂不涉及 web/App）。
+> **范围说明**：**A（老师问询）与 B（账号权限）** 为内容主线；**C（真人验收）与 D（App 工程债）已恢复 App 线（Wave1 起）**。
 
 ---
 
@@ -79,7 +79,7 @@ tags: [EF, Meta, Blocker]
 
 ---
 
-## C. 真人验收类（⏸️ 本轮暂缓 — 涉及 web/App）
+## C. 真人验收类（已恢复 App 线，Wave1 起）
 
 | ID | 项 | 说明 |
 |---|---|---|
@@ -87,11 +87,11 @@ tags: [EF, Meta, Blocker]
 | C2 | 窄屏真机 | 1100px / 640px 换行裁切、480ms 翻卡手感、KaTeX 溢出 |
 | C3 | Tauri 首次打包 | 需 VS2022 C++ workload + rust stable，从未实跑 |
 
-> ⏸️ **用户指示：暂不涉及 web/App** → 本轮不动。恢复时见 `HANDOVER.md` §C。
+> 已恢复 App 线（Wave1 起）→ 见 `HANDOVER.md` 下一步。
 
 ---
 
-## D. 工程债（⏸️ 本轮暂缓 — 全部在 App 侧）
+## D. 工程债（已恢复 App 线，Wave1 起 — 全部在 App 侧）
 
 | ID | 项 |
 |---|---|
@@ -103,7 +103,7 @@ tags: [EF, Meta, Blocker]
 | D6 | `.gitignore` 的 `probe*.py` 过宽 |
 | D7 | **App 侧 `src/baum/*.ts` 架构审计与锁定**：经 2026-10-06 架构审计，App 侧 403 节点保持为 EF 专用定制树（防 Q1/Q2 超纲，严格坚守「超纲率 = 0」铁律）；全库笔记/卡片已由 `export-vault-data.py` 动态同步；Q 阶段全量 Abi-Baum（652 节点）待高二学段升级时再做模态切换 |
 
-> ⏸️ **用户指示：暂不涉及 web/App** → 本轮不动。恢复时见 `HANDOVER.md` §D。
+> 已恢复 App 线（Wave1 起）→ 见 `HANDOVER.md` 下一步。
 
 ---
 

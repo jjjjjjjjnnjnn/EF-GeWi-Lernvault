@@ -41,7 +41,7 @@ tags: [EF, SoWi]      # 首标签=EF，次标签=学科
 ---
 ```
 
-正文规范：中文理解在上、德语Klausur-Satz在下；新术语必须同步到 `00_META/Glossar-DE-ZH-GeWi.md` 加一行；错题只记 `Klausur-Training/Fehlerlog.md`。
+正文规范：中文理解在上、德语Klausur-Satz在下；新术语必须同步到 `00_META/Glossar-DE-ZH-GeWi.md` 加一行；错题只记 `Klausur-Training/Fehlerlog.md`。tags 首标签 EF 为默认，Q1/Q2/QP 为 Q-phase 内容合法值；stufe/kursart 为遗留可选键，新笔记不写，门禁仅 WARN。
 
 ## 3. Anki规范
 
