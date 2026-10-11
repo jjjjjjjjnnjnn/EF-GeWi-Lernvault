@@ -89,7 +89,7 @@ Architektur eines ueberzeugenden Argumentationsblocks:
 **Bezug zum Konzept**: `Antonius nutzte die rhetorische Figur der Ironie und der Repetitio, um trotz vordergruendiger Loyalitaet eine subversive persuasive Wirkung im Zuhoerer zu entfachen.`
 
 ## Schritt 4 — ausprobieren: Sandbox-Auftrag Sachtext-Analyse Leitartikel
-Kontinuitaet: Vorher Deutsch-Drama-Spannungskurve-Freytag-L1.md | Nachher Deutsch-Sprache-Denken-Wirklichkeit-L1.md. Krise dieser Episode: Wie entlarvt man manipulative Meinungsmache in Leitartikeln? Zielgroessen: Argumenttypen, rhetorische Mittel, Intention, Dreischritt, Fazit
+Kontinuitaet: Vorher Deutsch-Drama-Spannungskurve-Freytag-L1.md | Nachher Deutsch-Sprachwandel-Kiezdeutsch-Debatte-L1.md. Krise dieser Episode: Wie entlarvt man manipulative Meinungsmache in Leitartikeln? Zielgroessen: Argumenttypen, rhetorische Mittel, Intention, Dreischritt, Fazit
 
 BEISPIEL（正确例题示范，含教具操作与解答）：
 
