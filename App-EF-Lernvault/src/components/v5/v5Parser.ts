@@ -136,13 +136,13 @@ export function parseAufloesungFromText(text: string): AufloesungData | null {
   let kausaleEssenz: string | undefined;
   let klausurSatz: string | undefined;
 
-  const matchA = /Mechanismus\s+(?:zu\s+)?Option\s+A[:：]\s*([\s\S]*?)(?=(?:Mechanismus\s+(?:zu\s+)?Option\s+B|一句话因果本质|Kausale\s+Essenz|Klausur-Satz|$))/i.exec(text);
+  const matchA = /(?:[-*]\s*)?Mechanismus\s+(?:zu\s+)?(?:Option|Weg)?\s*A[:：]\s*([\s\S]*?)(?=(?:(?:[-*]\s*)?Mechanismus\s+(?:zu\s+)?(?:Option|Weg)?\s*B|(?:[-*]\s*)?(?:一句话因果本质|Kausale\s+Essenz|Ein-Satz-Kern)|Klausur-Satz|$))/i.exec(text);
   if (matchA) mechanismusA = matchA[1].trim();
 
-  const matchB = /Mechanismus\s+(?:zu\s+)?Option\s+B[:：]\s*([\s\S]*?)(?=(?:一句话因果本质|Kausale\s+Essenz|Klausur-Satz|$))/i.exec(text);
+  const matchB = /(?:[-*]\s*)?Mechanismus\s+(?:zu\s+)?(?:Option|Weg)?\s*B[:：]\s*([\s\S]*?)(?=(?:(?:[-*]\s*)?(?:一句话因果本质|Kausale\s+Essenz|Ein-Satz-Kern)|Klausur-Satz|$))/i.exec(text);
   if (matchB) mechanismusB = matchB[1].trim();
 
-  const matchEssenz = /(?:一句话因果本质|Kausale\s+Essenz)[:：]\s*([\s\S]*?)(?=(?:Klausur-Satz|$))/i.exec(text);
+  const matchEssenz = /(?:[-*]\s*)?(?:一句话因果本质|Kausale\s+Essenz|Ein-Satz-Kern)[:：]\s*([\s\S]*?)(?=(?:Klausur-Satz|$))/i.exec(text);
   if (matchEssenz) kausaleEssenz = matchEssenz[1].trim();
 
   const matchSatz = /Klausur-Satz[:：]\s*[`"']?([^`"'\n]+)[`"']?/i.exec(text);

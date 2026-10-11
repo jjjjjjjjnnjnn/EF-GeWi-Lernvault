@@ -88,6 +88,24 @@ Synthese: Direkttransfers statt Giesskannen-Deckel mit Effizienz-Gerechtigkeits-
       expect(parsed?.klausurSatz).toContain("Ein staatlicher Hoechstpreis");
     });
 
+    it("parses hyphenated Aufloesung with Mechanismus A/B and Ein-Satz-Kern", () => {
+      const snippet = `
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg A oder Weg B lesen:
+- Mechanismus A: Kontinuierliche Fortleitung ohne Myelin
+- Mechanismus B: Saltatorische Fortleitung von Schnuerring zu Schnuerring
+- Ein-Satz-Kern: Natrium oeffnet Depolarisation, Kalium schliesst Repolarisation.
+
+Klausur-Satz: \`Natrium oeffnet Depolarisation und Kalium schliesst Repolarisation.\`
+`;
+      const parsed = parseAufloesungFromText(snippet);
+      expect(parsed).not.toBeNull();
+      expect(parsed?.mechanismusA).toContain("Kontinuierliche Fortleitung");
+      expect(parsed?.mechanismusB).toContain("Saltatorische Fortleitung");
+      expect(parsed?.kausaleEssenz).toContain("Natrium oeffnet Depolarisation");
+      expect(parsed?.klausurSatz).toContain("Natrium oeffnet Depolarisation");
+    });
+
     it("parses Erwartungshorizont criteria, points, alternative paths, and model sentence", () => {
       const parsed = parseErwartungshorizontFromText(sowiErwartungshorizontSnippet);
       expect(parsed).not.toBeNull();
