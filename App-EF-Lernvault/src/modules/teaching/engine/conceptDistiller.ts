@@ -2505,6 +2505,216 @@ const DOMAIN_KNOWLEDGE_ENTRIES: DomainKnowledgeEntry[] = [
       ]
     }
   },
+
+  // 16. Gleichmaessig beschleunigte Bewegung und freier Fall (Physik)
+  {
+    id: "gleichmaessig-beschleunigte-bewegung-freier-fall",
+    canonicalTitle: "Gleichmaessig beschleunigte Bewegung und freier Fall",
+    fach: "Physik",
+    matchKeywords: [
+      "beschleunigte bewegung",
+      "gleichmaessig beschleunigt",
+      "freier fall",
+      "erdbeschleunigung",
+      "masseunabhaengig",
+      "s-t-parabel",
+      "v-t-gerade",
+      "tangentensteigung",
+      "flaecheninhalt",
+      "luftwiderstand",
+      "messabweichung",
+      "superpositionsprinzip"
+    ],
+    data: {
+      topicTitle: "Gleichmaessig beschleunigte Bewegung und freier Fall",
+      fach: "Physik",
+      intuitionDilemma: {
+        scenarioDE: "Schulturnier: Eine 1-kg-Eisenkugel und ein 10-g-Holzball werden gleichzeitig aus 20 m Hoehe fallengelassen. Der Wind steht still.",
+        scenarioZH: "校园比赛：1 kg 铁球和 10 g 木球同时从 20 m 高处静止释放，无风。",
+        questionDE: "Welche Kugel erreicht zuerst den Boden?",
+        questionZH: "哪个球先落地？",
+        choiceA: {
+          id: "A",
+          textDE: "Die Eisenkugel erreicht den Boden deutlich frueher als der Holzball.",
+          textZH: "铁球比木球明显更早落地。",
+          reactionDE: "Diese Erwartung ist alltagsnah, aber sie uebertraegt Reibungserfahrungen aus der Luft unreflektiert auf den idealen freien Fall.",
+          reactionZH: "这一预期贴近日常经验，但它把含空气阻力的日常印象不加反思地套用到理想自由落体上。"
+        },
+        choiceB: {
+          id: "B",
+          textDE: "Beide Kugeln erreichen den Boden praktisch gleichzeitig.",
+          textZH: "两球几乎同时落地。",
+          reactionDE: "Diese Einschaetzung trifft die Idealisierung des Modells: Ohne Luftwiderstand zaehlt nur die konstante Beschleunigung g.",
+          reactionZH: "这一判断抓住了模型的理想化要点：没有空气阻力时，起决定作用的只有恒定加速度 g。"
+        },
+        mechanismTakeawayDE: "Bei konstanter Beschleunigung waechst die Geschwindigkeit linear (v = a t + v0), die Strecke aber quadratisch (s = 1/2 a t hoch 2 + v0 t + s0). Im idealen freien Fall gilt a = g masseunabhaengig -> doppelte Zeit bedeutet vierfachen Weg.",
+        mechanismTakeawayZH: "恒定加速度下速度线性增长（v = a t + v0），路程却二次方增长（s = 1/2 a t^2 + v0 t + s0）；理想自由落体中 a = g 与质量无关 -> 时间翻倍则路程变为四倍。",
+        klpCoreLogicDE: "EF-Grundlagen der Mechanik: Der freie Fall ist der Reinfall der gleichmaessig beschleunigten Bewegung mit a = g = konstant; das s-t-Diagramm ist eine Parabel, das v-t-Diagramm eine Gerade mit Steigung g.",
+        klpCoreLogicZH: "EF 力学基础：自由落体是匀加速运动的纯粹情形，a = g 为常量；s-t 图为抛物线，v-t 图为斜率 g 的直线。"
+      },
+      mentalModelAnalogy: {
+        analogyTitle: "Der Fahrstuhl im luftleeren Schacht: Ohne Luft zaehlt nur g",
+        explanationDE: "Bei konstanter Beschleunigung waechst die Geschwindigkeit linear (v = a t + v0), die Strecke aber quadratisch (s = 1/2 a t hoch 2 + v0 t + s0). Im idealen freien Fall gilt a = g masseunabhaengig -> doppelte Zeit bedeutet vierfachen Weg.",
+        explanationZH: "恒定加速度下速度线性增长（v = a t + v0），路程却二次方增长（s = 1/2 a t^2 + v0 t + s0）；理想自由落体中 a = g 与质量无关 -> 时间翻倍则路程变为四倍。"
+      },
+      konzeptPuzzle: {
+        instructionDE: "Ordne jeder Idealisierung des Modells ihre reale Verletzung und die Klausur-Konsequenz zu:",
+        instructionZH: "将模型的每条理想化假设与其现实违背情形及考场结论配对：",
+        pairs: [
+          {
+            id: "pair-1",
+            premiseDE: "Konstante Beschleunigung a = konstant",
+            premiseZH: "加速度恒定 a = 常量",
+            realityDE: "Antriebs- und Reibungskraefte aendern sich mit Geschwindigkeit und Untergrund",
+            realityZH: "驱动力与摩擦力随速度和路面变化",
+            consequenceDE: "Klausur: Aus der Geraden im v-t-Diagramm wird a als Steigung abgelesen; der Weg folgt als Flaecheninhalt, nicht als Steigung.",
+            consequenceZH: "会考：由 v-t 直线斜率读出 a；路程是图线下面积，而非斜率。"
+          },
+          {
+            id: "pair-2",
+            premiseDE: "Luftwiderstand wird vernachlaessigt",
+            premiseZH: "忽略空气阻力",
+            realityDE: "Geschwindigkeitsabhaengige Luftreibung bremst reale Koerper bis zur Grenzgeschwindigkeit",
+            realityZH: "与速度相关的空气阻力使真实物体减速至极限速度",
+            consequenceDE: "Klausur: Reale Fallversuche (Feder gegen Kugel) duerfen nicht als Widerlegung von g zitiert werden, solange der Luftwiderstand nicht kontrolliert ist.",
+            consequenceZH: "会考：羽毛对小球的现实下落实验在未控制空气阻力前，不得用作反驳 g 的论据。"
+          },
+          {
+            id: "pair-3",
+            premiseDE: "Fallbeschleunigung g ist masseunabhaengig",
+            premiseZH: "下落加速度 g 与质量无关",
+            realityDE: "Alltagsbeobachtung Feder gegen Stein tauscht Luftwiderstandseffekt mit Masseneffekt",
+            realityZH: "羽毛对石头的日常观察把空气阻力效应误当质量效应",
+            consequenceDE: "Klausur: Die Masse kuenzt sich aus F = m a heraus; Fallzeit haengt nur von der Fallhoehe ab (t = Wurzel aus 2h/g).",
+            consequenceZH: "会考：质量已从 F = m a 中约去；下落时间只取决于高度（t = 根号 2h/g）。"
+          },
+          {
+            id: "pair-4",
+            premiseDE: "Punktmasse ohne Ausdehnung, Reibung und Messfehler",
+            premiseZH: "无尺度、无摩擦、无测量误差的质点",
+            realityDE: "Reale Koerper rotieren, rollen und erzeugen Messstreuung an Lichtschranken und Stoppuhren",
+            realityZH: "真实物体转动、滚动，光电门与秒表引入测量离散",
+            consequenceDE: "Klausur: Horizontale und vertikale Teilbewegung (Superpositionsprinzip) duerfen getrennt analysiert werden: x = v0 t, y = 1/2 g t hoch 2.",
+            consequenceZH: "会考：水平与竖直分运动（叠加原理）可分开分析：x = v0 t，y = 1/2 g t^2。"
+          }
+        ]
+      },
+      examTrapCorrection: {
+        studentAnswerDE: "Die 1-kg-Eisenkugel faellt aus 80 m Hoehe deutlich schneller als der 10-g-Holzball, weil sie schwerer ist. Die Fallstrecke waechst proportional zur Zeit, also legt die Kugel in doppelter Zeit den doppelten Weg zurueck.",
+        studentAnswerZH: "1 kg 铁球从 80 m 高处下落明显比 10 g 木球快，因为它更重；下落路程与时间成正比，时间翻倍则路程翻倍。",
+        fatalFlawPointDE: "Verwechslung von gleichfoermiger und gleichmaessig beschleunigter Bewegung sowie behauptete Massenabhaengigkeit von g im idealen freien Fall.",
+        fatalFlawPointZH: "混淆匀速与匀加速运动，并断言理想自由落体中 g 与质量有关。",
+        examinerVerdictDE: "Der Satz vermengt zwei Fehlvorstellungen: lineares statt quadratisches Weg-Zeit-Gesetz und behauptete Massenabhaengigkeit der Fallbeschleunigung. Beides widerspricht den Grundgleichungen der gleichmaessig beschleunigten Bewegung.",
+        examinerVerdictZH: "该句混合了两个错误观念：把二次方路程-时间规律说成线性，并断言下落加速度与质量有关；两者都违背匀加速运动基本方程。",
+        diagnosticOptions: [
+          {
+            id: "diag-correct",
+            textDE: "Der Satz verwechselt gleichfoermige mit gleichmaessig beschleunigter Bewegung: Die Fallstrecke waechst quadratisch, nicht proportional zur Zeit, und im idealen freien Fall ist die Beschleunigung masseunabhaengig.",
+            textZH: "该句混淆了匀速运动与匀加速运动：下落路程随时间二次方增长而非线性正比，且理想自由落体的加速度与质量无关。",
+            isCorrect: true,
+            explanationDE: "Die Strecke waechst quadratisch mit der Zeit (s = 1/2 a t hoch 2); doppelte Fallzeit bedeutet vierfachen Weg. Im idealen freien Fall ist g masseunabhaengig, die Masse kuenzt sich aus F = m a heraus.",
+            explanationZH: "位移随时间二次方增长（s = 1/2 a t^2），下落时间翻倍则路程变为四倍；理想自由落体中 g 与质量无关，质量已从 F = m a 中约去。"
+          },
+          {
+            id: "diag-distractor-1",
+            textDE: "Der einzige Fehler liegt in der Vernachlaessigung des Luftwiderstands: Mit Luftwiderstand faellt die Eisenkugel stets schneller, und die Weg-Zeit-Beziehung bleibt im freien Fall linear.",
+            textZH: "唯一错误在于忽略了空气阻力：考虑空气阻力后铁球总是下落更快，且自由落体的路程-时间关系保持线性。",
+            isCorrect: false,
+            explanationDE: "Der Luftwiderstand spielt in der idealisierten Aufgabe definitionsgemaess keine Rolle; die Aufgabe setzt ihn als vernachlaessigbar. Der Denkfehler liegt in der Weg-Zeit-Beziehung und in der behaupteten Massenabhaengigkeit, nicht in der Modellgrenze.",
+            explanationZH: "理想化题目已明确忽略空气阻力；真正错误在于路程-时间关系与所谓质量依赖，而不在于模型边界。"
+          },
+          {
+            id: "diag-distractor-2",
+            textDE: "Der Satz ist im Kern richtig und nur unpraezise formuliert: Die Geschwindigkeit entspricht dem Flaecheninhalt unter der s-t-Kurve, und die doppelte Masse halbiert bei gleicher Kraft die Fallzeit.",
+            textZH: "该句基本正确、只是表述不够精确：速度等于 s-t 曲线下方面积，且在相同受力下双倍质量使下落时间减半。",
+            isCorrect: false,
+            explanationDE: "Im v-t-Diagramm entspricht die Momentangeschwindigkeit der Steigung der Tangente im s-t-Diagramm, waehrend der zurueckgelegte Weg dem Flaecheninhalt unter der v-t-Kurve entspricht. Beide Aussagen zu vertauschen kehrt Steigung und Integral um.",
+            explanationZH: "v-t 图线下方面积才是路程，s-t 图切线斜率才是瞬时速度；两者互换即把微分与积分颠倒了。"
+          }
+        ]
+      },
+      klpTermini: [
+        {
+          termDE: "Gleichmaessig beschleunigte Bewegung",
+          definitionDE: "a = konstant: Geschwindigkeit waechst linear (v = a t plus v0), Strecke quadratisch (s = 1/2 a t hoch 2 plus v0 t plus s0).",
+          termZH: "匀加速运动",
+          definitionZH: "a为常量：速度线性增长，路程二次方增长。"
+        },
+        {
+          termDE: "s-t-Parabel",
+          definitionDE: "Weg-Zeit-Kurve der beschleunigten Bewegung; Momentangeschwindigkeit entspricht der Tangentensteigung, nicht dem Flaecheninhalt.",
+          termZH: "s-t抛物线",
+          definitionZH: "加速运动的路程-时间曲线；瞬时速度是切线斜率，而非面积。"
+        },
+        {
+          termDE: "v-t-Gerade",
+          definitionDE: "Geschwindigkeit-Zeit-Kurve mit Steigung a; der zurueckgelegte Weg entspricht dem Flaecheninhalt unter der Kurve.",
+          termZH: "v-t直线",
+          definitionZH: "速度-时间直线，斜率为a；路程是图线下方面积。"
+        },
+        {
+          termDE: "Masseunabhaengigkeit von g",
+          definitionDE: "Im idealen freien Fall kuenzt sich die Masse aus F = m a heraus; die Fallzeit haengt nur von der Hoehe ab (t = Wurzel aus 2h/g).",
+          termZH: "g的质量无关性",
+          definitionZH: "理想自由落体中质量已从F=ma中约去；下落时间只取决于高度。"
+        },
+        {
+          termDE: "Superpositionsprinzip",
+          definitionDE: "Horizontale und vertikale Teilbewegung duerfen getrennt analysiert werden: x = v0 t, y = 1/2 g t hoch 2.",
+          termZH: "叠加原理",
+          definitionZH: "水平与竖直分运动可分开分析。"
+        }
+      ],
+      fehlerquellen: [
+        {
+          trapTitleDE: "Linear statt quadratisch",
+          trapDescriptionDE: "Fallstrecke waechst proportional zur Zeit (doppelte Zeit gleich doppelter Weg), obwohl s = 1/2 a t hoch 2 quadratisch gilt.",
+          trapDescriptionZH: "把路程-时间说成线性正比（时间翻倍则路程翻倍），而规律是二次方。",
+          howToAvoidDE: "Weg-Zeit-Gesetz stets quadratisch ansetzen: doppelte Fallzeit bedeutet vierfachen Weg."
+        },
+        {
+          trapTitleDE: "Massenabhaengigkeit von g",
+          trapDescriptionDE: "Schwere Koerper fallen grundsaetzlich schneller; Alltagsbeobachtung Feder gegen Stein tauscht Luftwiderstandseffekt mit Masseneffekt.",
+          trapDescriptionZH: "重物原则上落得更快；把羽毛对石头的空气阻力效应误当质量效应。",
+          howToAvoidDE: "Idealisierung nennen: Ohne Luftwiderstand zaehlt nur g; Feder-gegen-Kugel-Versuche sind ohne Kontrolle kein Gegenbeweis."
+        },
+        {
+          trapTitleDE: "Steigung und Flaeche vertauschen",
+          trapDescriptionDE: "Geschwindigkeit entspricht dem Flaecheninhalt unter der s-t-Kurve; s-t-Steigung und v-t-Flaeche werden verwechselt.",
+          trapDescriptionZH: "把速度说成s-t曲线下方面积，颠倒了微分与积分。",
+          howToAvoidDE: "Merksatz: s-t-Steigung ist Geschwindigkeit, v-t-Flaeche ist Weg."
+        }
+      ],
+      klausurSatz15NP: {
+        musterSatzDE: "Zwar bestaetigt die parabelfoermige s-t-Kurve mit der Geraden im v-t-Diagramm (Steigung = a, Flaecheninhalt = Weg) die gleichmaessig beschleunigte Bewegung mit masseunabhaengigem a = g, dennoch gilt diese Idealisierung nur bei vernachlaessigbarem Luftwiderstand, sodass reale Messwerte stets auf systematische Abweichungen zu analysieren sind.",
+        operator: "analysieren",
+        scoringKeywords: [
+          "gleichmaessig beschleunigt",
+          "s-t-Parabel",
+          "v-t-Gerade",
+          "Tangentensteigung",
+          "Flaecheninhalt",
+          "masseunabhaengig",
+          "Erdbeschleunigung",
+          "Luftwiderstand",
+          "Messabweichung"
+        ],
+        explanationZH: "（既用 s-t 抛物线与 v-t 直线斜率/面积论证匀加速本质与质量无关性，又以空气阻力与测量误差为界限定模型适用范围，体现 AFB III 分析评价。）"
+      },
+      socraticProbes: [
+        {
+          questionDE: "Welche Kugel erreicht zuerst den Boden: Eisenkugel oder Holzball?",
+          questionZH: "铁球和木球哪个先落地？",
+          counterPerspectiveDE: "Diese Einschaetzung trifft die Idealisierung: Ohne Luftwiderstand zaehlt nur die konstante Beschleunigung g."
+        },
+        {
+          questionDE: "Gilt die Idealisierung auch bei realen Messwerten mit Luftwiderstand?",
+          questionZH: "含空气阻力的真实测量也适用该理想模型吗？",
+          counterPerspectiveDE: "Reale Fallversuche duerfen nicht als Widerlegung von g zitiert werden, solange der Luftwiderstand nicht kontrolliert ist; Messwerte sind stets auf systematische Abweichungen zu analysieren."
+        }
+      ]
+    }
+  },
 ];
 
 // ---------------------------------------------------------------------------

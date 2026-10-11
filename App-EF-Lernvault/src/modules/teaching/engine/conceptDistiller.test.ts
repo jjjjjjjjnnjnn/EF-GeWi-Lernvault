@@ -233,6 +233,19 @@ describe("Concept Distillation Engine: conceptDistiller", () => {
     expect(res.klausurSatz15NP.operator).toBe("analysieren");
   });
 
+  it("distills Gleichmaessig beschleunigte Bewegung benchmark (Physik)", () => {
+    const res = distillConcept("Gleichmaessig beschleunigte Bewegung und freier Fall", "Physik");
+    validateDistilledConcept(res);
+    expect(res.fach).toBe("Physik");
+    expect(res.intuitionDilemma?.scenarioZH).toContain("铁球");
+    expect(res.intuitionDilemma?.scenarioZH).toContain("木球");
+    expect(res.konzeptPuzzle?.pairs.length).toBe(4);
+    expect(res.examTrapCorrection?.diagnosticOptions?.length).toBe(3);
+    expect(res.klausurSatz15NP.operator).toBe("analysieren");
+    expect(res.klausurSatz15NP.scoringKeywords).toContain("s-t-Parabel");
+    expect(res.klausurSatz15NP.scoringKeywords).toContain("masseunabhaengig");
+  });
+
   it("handles arbitrary topics gracefully via heuristic subject archetypes", () => {
     const arbitrarySoWi = distillConcept("Europaeische Zentralbank und Leitzinssenkung", "SoWi");
     validateDistilledConcept(arbitrarySoWi);
