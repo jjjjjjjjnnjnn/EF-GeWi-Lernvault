@@ -81,6 +81,10 @@ COMPLETION (Lückentext):
 - ___ braucht Sauerstoff, Denitrifikation entlaesst Stickstoff und Eutrophierung kippt Seen.
 - Ordne Sauerstoff als ___ und pruefe die Richtung ohne Rueckblick.
 
+MUSTERLOESUNG:
+Nitrifikation verbraucht Sauerstoff bei der Oxidation von Ammonium zu Nitrat; Denitrifikation entlaesst elementaren Stickstoff unter anaeroben Bedingungen; Eutrophierung fuehrt durch uebermaessige Biomasseproduktion und anschliessenden aeroben Abbau zum Sauerstoffkollaps im Hypolimnion.
+
+
 ERWARTUNGSHORIZONT
 Teilleistung | Punkte | Alternativweg
 Kreislaufbefund mit Stufenanker (Oekologie: Der Stickstoffkreislauf und Eutro) | 5 NP | Skizze mit Achsenbeschriftung als Alternativweg

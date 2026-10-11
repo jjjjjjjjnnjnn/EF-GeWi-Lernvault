@@ -79,6 +79,9 @@ COMPLETION (Lückentext):
 - ___ Selektion waehlt passende B-Zellen und formt Plasma- plus Gedaechtniszellen.
 - Ordne Selektion als ___ und pruefe die Richtung ohne Rueckblick.
 
+MUSTERLOESUNG:
+Klonale Selektion waehlt passende B-Zellen und formt Plasma- plus Gedaechtniszellen. Das Antigen wirkt als Selektionsfaktor, nicht als instruierender Bauplan; die Bindung am variablen Fab-Fragment loest Mitosen und Reifung aus.
+
 ERWARTUNGSHORIZONT
 Teilleistung | Punkte | Alternativweg
 Titerbefund mit Zeit- und Klassenanker (Immunbiologie: Antikoerper-Struktur und Klon) | 5 NP | Skizze mit Achsenbeschriftung als Alternativweg
