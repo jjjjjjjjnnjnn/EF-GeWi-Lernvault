@@ -13,6 +13,8 @@ import {
   ScenarioDecisionTree,
   KonzeptPuzzle,
   MarktgleichgewichtSim,
+  MARKT_SCENARIOS,
+  resolveMarktScenarioId,
 } from "../GenericMicroWorlds";
 import { KinematikSim } from "../../../../components/pedagogy/KinematikSim";
 import { MagischesViereckSim } from "../../../../components/pedagogy/MagischesViereckSim";
@@ -167,6 +169,10 @@ export const InteractiveLessonRunner: React.FC<InteractiveLessonRunnerProps> = (
 
   const isMicroWorldGated =
     currentStep.type === "microworld" && questNode.interactiveType === "markt-sim";
+
+  // 市场仿真情境选路：同一 markt-sim 引擎按课程主题挂载不同使命（默认寒潮供给冲击，社会市场经济主题走能源冲击与社会补偿）
+  const marktScenarioId = resolveMarktScenarioId(questNode.title, questNode.summary);
+  const marktScenario = MARKT_SCENARIOS[marktScenarioId];
 
   // 选项选择与核验
   const handleSelectOption = (option: LessonOption) => {
@@ -361,6 +367,7 @@ export const InteractiveLessonRunner: React.FC<InteractiveLessonRunnerProps> = (
         return (
           <MarktgleichgewichtSim
             lang={lang}
+            scenarioId={marktScenarioId}
             onMissionComplete={(completed) => setIsMicroWorldCompleted(completed)}
           />
         );
@@ -1095,13 +1102,13 @@ export const InteractiveLessonRunner: React.FC<InteractiveLessonRunnerProps> = (
               </span>
             )}
 
-            {/* 动手实验底部提示 */}
+            {/* 动手实验底部提示（目标值跟随当前市场情境，不再硬编码 +50%） */}
             {currentStep.type === "microworld" && (
               <span className="text-[var(--ink-muted)]">
                 {isMicroWorldGated && !isMicroWorldCompleted
                   ? (lang === "de"
-                      ? "Bewege den Schieberegler auf die Zielmarke (+50%), um die nächste Stufe freizuschalten."
-                      : "请将生产成本滑块调整至 +50% 靶心目标区间，以解锁下一环节。")
+                      ? `Bewege den Schieberegler auf die Zielmarke (+${marktScenario.targetPct}%), um die nächste Stufe freizuschalten.`
+                      : `请将滑块调整至 +${marktScenario.targetPct}% 靶心目标区间，以解锁下一环节。`)
                   : (lang === "de"
                       ? "Zielkriterium erfüllt! Klicke auf den Button, um fortzufahren."
                       : "实验目标已达成！点击按钮前往下一环节。")}

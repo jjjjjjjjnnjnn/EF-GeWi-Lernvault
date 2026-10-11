@@ -4,29 +4,118 @@ import type { Lang } from "../../../../i18n";
 export interface MarktgleichgewichtSimProps {
   lang?: Lang;
   onMissionComplete?: (completed: boolean) => void;
+  /**
+   * 情境 ID：同一仿真引擎在不同课程中挂载不同使命。
+   * 缺省 "kaelte"（寒潮供给冲击，Preismechanismus）。"sozial"（能源冲击与社会补偿，Soziale Marktwirtschaft）。
+   */
+  scenarioId?: MarktScenarioId;
+}
+
+export type MarktScenarioId = "kaelte" | "sozial";
+
+export interface MarktScenario {
+  id: MarktScenarioId;
+  missionTitleDE: string;
+  missionTitleZH: string;
+  scenarioDE: string;
+  scenarioZH: string;
+  sliderLabelDE: string;
+  sliderLabelZH: string;
+  /** 靶心目标位移百分比 */
+  targetPct: number;
+  /** 靶心容差（±） */
+  tolerance: number;
+  presetLabelDE: string;
+  presetLabelZH: string;
+  fokusQ2DE: string;
+  fokusQ2ZH: string;
+  takeawayDE: (p: string, q: number) => string;
+  takeawayZH: (p: string, q: number) => string;
+}
+
+export const MARKT_SCENARIOS: Record<MarktScenarioId, MarktScenario> = {
+  kaelte: {
+    id: "kaelte",
+    missionTitleDE: "[ Labor-Mission: Kältewelle & Kostenschock ]",
+    missionTitleZH: "[ 挑战使命 ] 寒潮爆发与成本冲击",
+    scenarioDE:
+      "Aufgrund einer extremen Kältewelle verdoppeln sich die Ausfahrtskosten der Fangflotte. Dies erzeugt einen angebotsseitigen Kostenschock auf dem Markt für Lachs.",
+    scenarioZH:
+      "由于海面极端寒潮爆发，捕鱼船出海燃油与设备维修成本暴涨，整个大西洋三文鱼市场的供给端受到严重负向冲击。",
+    sliderLabelDE: "Produktionskosten / Angebotsverschiebung (S):",
+    sliderLabelZH: "生产成本 / 供给位移 (S):",
+    targetPct: 50,
+    tolerance: 2,
+    presetLabelDE: "Kältewelle",
+    presetLabelZH: "寒潮目标",
+    fokusQ2DE: "Wie steuert der Preismechanismus P* und Q* ohne Eingriff?",
+    fokusQ2ZH: "市场均衡价格 P* 与成交量 Q* 如何自发调整？",
+    takeawayDE: (p, q) =>
+      `Erkenntnis: Der Kostenschock verschiebt die Angebotskurve S nach links-oben. Ohne staatliche Zuteilung steigt der Gleichgewichtspreis auf ${p} € und die Menge sinkt auf ${q} kg (Signal- & Allokationsfunktion)!`,
+    takeawayZH: (p, q) =>
+      `核心规律验证：成本上升驱动 S 左移。在无行政命令干预下，价格机制自发将均衡价推高至 ${p} €，成交量收缩至 ${q} kg，完全出清市场（Signal- & Allokationsfunktion）！`,
+  },
+  sozial: {
+    id: "sozial",
+    missionTitleDE: "[ Labor-Mission: Energieschock & sozialer Ausgleich ]",
+    missionTitleZH: "[ 挑战使命 ] 能源冲击与社会补偿之问",
+    scenarioDE:
+      "Nach einem Energiepreisschock steigen die Produktionskosten sprunghaft; Haushalte mit kleinem Einkommen geraten unter Druck. Der Staat verzichtet bewusst auf einen Höchstpreis: Erst räumt der Markt, dann federt die Sozialpolitik über Transfers ab.",
+    scenarioZH:
+      "能源价格冲击推高生产成本，低收入家庭承压。国家有意放弃限价：先让市场自发出清，再用转移支付兜底社会补偿。",
+    sliderLabelDE: "Energiekosten / Angebotsverschiebung (S):",
+    sliderLabelZH: "能源成本 / 供给位移 (S):",
+    targetPct: 30,
+    tolerance: 2,
+    presetLabelDE: "Energieschock",
+    presetLabelZH: "能源冲击",
+    fokusQ2DE:
+      "Wie steuert der Preismechanismus P* und Q*, wenn der Staat auf einen Höchstpreis verzichtet?",
+    fokusQ2ZH: "国家放弃限价时，价格机制如何自发调节 P* 与 Q*？",
+    takeawayDE: (p, q) =>
+      `Erkenntnis: Der Energieschock verschiebt S nach links-oben; ohne Höchstpreis räumt der Preismechanismus auf ${p} € / ${q} kg — der soziale Ausgleich folgt danach über Transfers, nicht über den Preis (Soziale Marktwirtschaft: Markt + sozialer Ausgleich)!`,
+    takeawayZH: (p, q) =>
+      `核心规律验证：能源冲击驱动 S 左移；在无行政限价下，价格机制自发实现 ${p} € / ${q} kg 出清——社会补偿靠转移支付兜底，而非扭曲价格（社会市场经济：市场+补偿）！`,
+  },
+};
+
+/**
+ * 按课程标题/摘要选择情境：社会市场经济主题（限价/补偿/工资）走 sozial，其余走默认 kaelte。
+ * 纯函数，可单测；未知输入一律回退 kaelte（零回归）。
+ */
+export function resolveMarktScenarioId(title: string, summary = ""): MarktScenarioId {
+  const hay = `${title} ${summary}`.toLowerCase();
+  return /sozial|mindestlohn|mitbestimmung|sozialstaat|umverteilung|sozialer ausgleich|grundgesetz|tarifautonomie/.test(hay)
+    ? "sozial"
+    : "kaelte";
 }
 
 /**
  * MarktgleichgewichtSim (2D 供求平衡与价格出清微世界沙盒)
  * 严格承接微观经济学完全竞争市场导学 (SoWi Inhaltsfeld 2)
  *
- * 挑战情境：极端寒潮冲击捕捞成本（供给侧负向成本冲击）
- * 目标：将生产成本滑块调节至 +50% 靶心区间 (48% ~ 52%)
- * 观察：P* 从 10 € 自发攀升至 14 €，Q* 从 500 kg 降至 300 kg
+ * 使命情境由 scenarioId 参数决定（默认 kaelte：极端寒潮冲击捕捞成本）：
+ * 目标：将成本滑块调节至场景靶心区间 (targetPct ± tolerance)。
+ * 默认场景观察：P* 从 10 € 自发攀升至 14 €，Q* 从 500 kg 降至 300 kg
  * 设计哲学：Tufte 纯黑白学术纸墨风，一屏零滚动（Zero-Scroll Layout），严禁幽灵状态与剧透
  */
 export function MarktgleichgewichtSim({
   lang = "zh",
   onMissionComplete,
+  scenarioId = "kaelte",
 }: MarktgleichgewichtSimProps) {
   const de = lang === "de";
   const sliderId = useId();
+  const scenario = MARKT_SCENARIOS[scenarioId] ?? MARKT_SCENARIOS.kaelte;
+  const targetPct = scenario.targetPct;
+  const tol = scenario.tolerance;
 
   // 生产成本冲击百分比 (0% ~ 100%)
   const [costPercent, setCostPercent] = useState<number>(0);
 
-  // 严格绑定当前滑块位置：48% ~ 52% 靶心区间为达成状态
-  const isTargetAchieved = costPercent >= 48 && costPercent <= 52;
+  // 严格绑定当前滑块位置：靶心区间为达成状态
+  const isTargetAchieved =
+    costPercent >= targetPct - tol && costPercent <= targetPct + tol;
 
   // 动态联动外部门控：滑入靶心解锁下一步，滑出靶心锁定下一步
   useEffect(() => {
@@ -39,6 +128,11 @@ export function MarktgleichgewichtSim({
   const costShift = (costPercent / 50) * 8;
   const eqQ = Math.max(50, Math.min(550, 500 - 25 * costShift));
   const eqP = Math.max(10, Math.min(19, 10 + 0.5 * costShift));
+
+  // 场景靶心处的均衡值（结论区动态展示，与读数栏 toFixed(1) 口径一致）
+  const targetShift = (targetPct / 50) * 8;
+  const targetQ = Math.round(Math.max(50, Math.min(550, 500 - 25 * targetShift)));
+  const targetP = (Math.max(10, Math.min(19, 10 + 0.5 * targetShift))).toFixed(1);
 
   // 紧凑 SVG 坐标转换 (宽高 460 x 210，紧凑无滚动)
   const svgWidth = 460;
@@ -119,14 +213,10 @@ export function MarktgleichgewichtSim({
           {/* 上半部分：任务情境与操作指引 */}
           <div className="space-y-2">
             <div className="font-bold text-xs sm:text-sm text-[var(--ink)] border-b border-[var(--line)] pb-1">
-              {de
-                ? "[ Labor-Mission: Kältewelle & Kostenschock ]"
-                : "[ 挑战使命 ] 寒潮爆发与成本冲击"}
+              {de ? scenario.missionTitleDE : scenario.missionTitleZH}
             </div>
             <p className="font-serif text-[11px] sm:text-xs text-[var(--ink)] leading-relaxed">
-              {de
-                ? "Aufgrund einer extremen Kältewelle verdoppeln sich die Ausfahrtskosten der Fangflotte. Dies erzeugt einen angebotsseitigen Kostenschock auf dem Markt für Lachs."
-                : "由于海面极端寒潮爆发，捕鱼船出海燃油与设备维修成本暴涨，整个大西洋三文鱼市场的供给端受到严重负向冲击。"}
+              {de ? scenario.scenarioDE : scenario.scenarioZH}
             </p>
             <div className="pt-0.5 text-[11px] font-sans">
               <span className="font-bold text-[var(--ink)]">
@@ -134,8 +224,8 @@ export function MarktgleichgewichtSim({
               </span>
               <span className="text-[var(--ink)]">
                 {de
-                  ? "Verschiebe den Schieberegler rechts auf die Zielmarke von +50%."
-                  : "将右侧【生产成本】滑块平移至 +50% 靶心区间。"}
+                  ? `Verschiebe den Schieberegler rechts auf die Zielmarke von +${targetPct}%.`
+                  : `将右侧滑块平移至 +${targetPct}% 靶心区间。`}
               </span>
             </div>
 
@@ -150,9 +240,7 @@ export function MarktgleichgewichtSim({
                     : "供给曲线 S 如何发生位移？"}
                 </li>
                 <li>
-                  {de
-                    ? "Wie steuert der Preismechanismus P* und Q* ohne Eingriff?"
-                    : "市场均衡价格 P* 与成交量 Q* 如何自发调整？"}
+                  {de ? scenario.fokusQ2DE : scenario.fokusQ2ZH}
                 </li>
               </ol>
             </div>
@@ -168,14 +256,14 @@ export function MarktgleichgewichtSim({
                   </span>
                   <span className="text-[var(--ink-muted)]">
                     {de
-                      ? `Soll: +50% | Ist: +${costPercent}%`
-                      : `目标: +50% | 当前: +${costPercent}%`}
+                      ? `Soll: +${targetPct}% | Ist: +${costPercent}%`
+                      : `目标: +${targetPct}% | 当前: +${costPercent}%`}
                   </span>
                 </div>
                 <p className="text-[10px] font-serif text-[var(--ink-muted)] leading-relaxed">
                   {de
-                    ? "Bediene den Schieberegler rechts auf +50% (48%~52%), um die Auswirkung auf P* und Q* freizuschalten."
-                    : "请在右侧拖动滑块至 +50% 靶心刻度，亲眼见证价格自发调节供求的微观动力学。"}
+                    ? `Bediene den Schieberegler rechts auf +${targetPct}% (${targetPct - tol}%~${targetPct + tol}%), um die Auswirkung auf P* und Q* freizuschalten.`
+                    : `请在右侧拖动滑块至 +${targetPct}% 靶心刻度，亲眼见证价格自发调节供求的微观动力学。`}
                 </p>
               </div>
             ) : (
@@ -190,8 +278,8 @@ export function MarktgleichgewichtSim({
                 </div>
                 <p className="font-serif text-[11px] text-[var(--ink)] leading-relaxed">
                   {de
-                    ? "Erkenntnis: Der Kostenschock verschiebt die Angebotskurve S nach links-oben. Ohne staatliche Zuteilung steigt der Gleichgewichtspreis auf 14 € und die Menge sinkt auf 300 kg (Signal- & Allokationsfunktion)!"
-                    : "核心规律验证：成本上升驱动 S 左移。在无行政命令干预下，价格机制自发将均衡价推高至 14 €，成交量收缩至 300 kg，完全出清市场（Signal- & Allokationsfunktion）！"}
+                    ? scenario.takeawayDE(targetP, targetQ)
+                    : scenario.takeawayZH(targetP, targetQ)}
                 </p>
               </div>
             )}
@@ -588,9 +676,7 @@ export function MarktgleichgewichtSim({
           <div className="p-2 sm:p-2.5 border border-[var(--line)] bg-[var(--paper-subtle)] flex flex-col gap-1.5 font-mono text-xs">
             <div className="flex items-center justify-between">
               <label htmlFor={sliderId} className="font-bold text-[11px] text-[var(--ink)]">
-                {de
-                  ? "Produktionskosten / Angebotsverschiebung (S):"
-                  : "生产成本 / 供给位移 (S):"}
+                {de ? scenario.sliderLabelDE : scenario.sliderLabelZH}
               </label>
               <span className="px-1.5 py-0.5 border border-[var(--ink)] bg-[var(--paper)] font-bold text-xs">
                 +{costPercent}%
@@ -619,7 +705,7 @@ export function MarktgleichgewichtSim({
                       : ""
                   }
                 >
-                  [ {de ? "Ziel" : "目标"}: +50% ]
+                  [ {de ? "Ziel" : "目标"}: +{targetPct}% ]
                 </span>
                 <span>+100% ({de ? "Extrem" : "极限"})</span>
               </div>
@@ -639,14 +725,14 @@ export function MarktgleichgewichtSim({
               </button>
               <button
                 type="button"
-                onClick={() => setCostPercent(50)}
+                onClick={() => setCostPercent(targetPct)}
                 className={`px-2 py-0.5 border text-[10px] font-mono transition-colors cursor-pointer font-bold ${
                   isTargetAchieved
                     ? "border-[var(--ink)] bg-[var(--ink)] text-[var(--paper)]"
                     : "border-[var(--ink)] bg-[var(--paper)] hover:bg-[var(--paper-subtle)]"
                 }`}
               >
-                [ +50% {de ? "Kältewelle" : "寒潮目标"} ]
+                [ +{targetPct}% {de ? scenario.presetLabelDE : scenario.presetLabelZH} ]
               </button>
               <button
                 type="button"

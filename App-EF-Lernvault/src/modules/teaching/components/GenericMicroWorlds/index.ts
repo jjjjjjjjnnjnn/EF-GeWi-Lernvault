@@ -26,5 +26,5 @@ export type {
 export { KonzeptPuzzle } from "./KonzeptPuzzle";
 export type { KonzeptPuzzleProps } from "./KonzeptPuzzle";
 
-export { MarktgleichgewichtSim } from "./MarktgleichgewichtSim";
-export type { MarktgleichgewichtSimProps } from "./MarktgleichgewichtSim";
+export { MarktgleichgewichtSim, MARKT_SCENARIOS, resolveMarktScenarioId } from "./MarktgleichgewichtSim";
+export type { MarktgleichgewichtSimProps, MarktScenario, MarktScenarioId } from "./MarktgleichgewichtSim";

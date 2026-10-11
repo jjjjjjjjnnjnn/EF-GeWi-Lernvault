@@ -370,6 +370,56 @@ describe("InteractiveLessonRunner Component", () => {
     expect(screen.getAllByText(/Preismechanismus/i).length).toBeGreaterThan(0);
   });
 
+  it("mounts a distinct sozial mission for Soziale-Marktwirtschaft quests instead of the kaelte default", () => {
+    const sozialQuest: ParsedQuestNode = {
+      id: "q-sowi-sozial",
+      chapterId: "chap-sowi-sozial",
+      order: 1,
+      title: "Soziale Marktwirtschaft: Markt und sozialer Ausgleich",
+      lessonType: "concept",
+      estimatedMinutes: 10,
+      prerequisites: [],
+      matchedToolId: "markt-sim",
+      matchedToolName: "Markt-Labor",
+      interactiveType: "markt-sim",
+      summary: "Mindestlohn, Tarifautonomie und sozialer Ausgleich im Ordnungsrahmen.",
+      socraticPrompt: "Warum verzichtet der Staat auf den Höchstpreis?",
+      keyConcepts: [],
+      xp: 100,
+    };
+
+    render(
+      <InteractiveLessonRunner
+        questNode={sozialQuest}
+        currentFach="SoWi"
+        lang="zh"
+        isOpen={true}
+        onComplete={vi.fn()}
+        onClose={vi.fn()}
+      />
+    );
+
+    // Step 1 -> advance (choice buttons depend on distilled dilemma; pick first available)
+    const choiceBtns = screen.getAllByRole("button").filter((b) =>
+      /\[ A \]|\[ B \]/i.test(b.textContent || "")
+    );
+    fireEvent.click(choiceBtns[0]);
+    fireEvent.click(screen.getByRole("button", { name: /进入互动实验探索|动手实验/i }));
+
+    // Step 2: sozial mission, NOT the kaelte cold-wave mission
+    expect(screen.getByText(/第 2 步/i)).toBeInTheDocument();
+    expect(screen.getByText(/能源冲击与社会补偿之问/i)).toBeInTheDocument();
+    expect(screen.queryByText(/寒潮爆发与成本冲击/i)).not.toBeInTheDocument();
+
+    // +30% unlocks, +50% does not
+    const advanceBtn = screen.getByRole("button", { name: /动手实验探究完毕/i });
+    const slider = screen.getByRole("slider");
+    fireEvent.change(slider, { target: { value: "50" } });
+    expect(advanceBtn).toBeDisabled();
+    fireEvent.change(slider, { target: { value: "30" } });
+    expect(advanceBtn).not.toBeDisabled();
+  });
+
   it("allows going back to previous step via Zurück / 上一步 button without losing state", () => {
     render(
       <InteractiveLessonRunner
