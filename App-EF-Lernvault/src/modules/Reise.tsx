@@ -1962,7 +1962,7 @@ export default function ReiseModule({
 
           {/* Kernsatz Card if present in Step 5 */}
           {stepSzen.kernsatzData && (
-            <KernsatzCard data={stepSzen.kernsatzData} lang={lang} />
+            <KernsatzCard data={stepSzen.kernsatzData} lang={lang} cardId={activeCourse ? `kernsatz:${activeCourse.id}` : undefined} />
           )}
 
           <div className="flex flex-wrap items-center justify-between gap-3 border-t border-[var(--line)] pt-4">

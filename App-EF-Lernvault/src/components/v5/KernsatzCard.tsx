@@ -1,20 +1,37 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import type { KernsatzData } from "./v5Types";
 import { renderFormattedText } from "../Blocks";
+import { getCardState, gradeCard, type Rating, type CardState } from "../../scheduler";
 
 export interface KernsatzCardProps {
   data: KernsatzData;
+  cardId?: string;
   lang?: "de" | "zh";
   className?: string;
 }
 
 export const KernsatzCard: React.FC<KernsatzCardProps> = ({
   data,
+  cardId,
   lang = "de",
   className = "",
 }) => {
   const [copied, setCopied] = useState(false);
   const [showClozeAnswer, setShowClozeAnswer] = useState(false);
+
+  const effectiveCardId = cardId || `kernsatz:${encodeURIComponent(data.text.trim().slice(0, 50))}`;
+  const [fsrsState, setFsrsState] = useState<CardState | undefined>(() => getCardState(effectiveCardId));
+  const [lastInterval, setLastInterval] = useState<number | null>(null);
+
+  useEffect(() => {
+    setFsrsState(getCardState(effectiveCardId));
+  }, [effectiveCardId]);
+
+  const handleGrade = (rating: Rating) => {
+    const res = gradeCard(effectiveCardId, rating);
+    setFsrsState(res.state);
+    setLastInterval(res.intervalDays);
+  };
 
   const handleCopy = () => {
     if (!data.text) return;
@@ -53,6 +70,17 @@ export const KernsatzCard: React.FC<KernsatzCardProps> = ({
           <span className="font-mono text-[10px] uppercase tracking-wider px-1.5 py-0.5 rounded border border-[var(--line)] bg-[var(--paper-subtle)] text-[var(--gray)]">
             Abitur-Standard
           </span>
+          {fsrsState ? (
+            <span className="font-mono text-[10px] uppercase tracking-wider px-1.5 py-0.5 rounded border border-[var(--line)] bg-[var(--paper-subtle)] text-[var(--ink)]">
+              {lang === "de"
+                ? `FSRS: ${fsrsState.reps} Wdh. · S=${fsrsState.stability}d`
+                : `复习 ${fsrsState.reps} 次 · 稳定性 ${fsrsState.stability}天`}
+            </span>
+          ) : (
+            <span className="font-mono text-[10px] uppercase tracking-wider px-1.5 py-0.5 rounded border border-[var(--line)] bg-[var(--paper-subtle)] text-[var(--gray)]">
+              {lang === "de" ? "FSRS: Neu" : "艾宾浩斯: 新考点"}
+            </span>
+          )}
         </div>
 
         {/* Copy Button */}
@@ -189,6 +217,94 @@ export const KernsatzCard: React.FC<KernsatzCardProps> = ({
           </div>
         </div>
       )}
+
+      {/* FSRS Spaced Repetition Rating Controls */}
+      <div className="mt-4 pt-3.5 border-t border-[var(--line)] space-y-2.5">
+        <div className="flex flex-wrap items-center justify-between gap-2">
+          <div className="flex items-center gap-1.5 text-[11px] font-mono uppercase tracking-wider text-[var(--gray)]">
+            <svg
+              width="14"
+              height="14"
+              viewBox="0 0 16 16"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="1.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              aria-hidden="true"
+              className="text-[var(--accent)]"
+            >
+              <circle cx="8" cy="8" r="7" />
+              <polyline points="8 4 8 8 11 10" />
+            </svg>
+            <span>
+              {lang === "de"
+                ? "Spaced Repetition (FSRS-Selbstbewertung):"
+                : "艾宾浩斯间隔复习打卡（主动评级）："}
+            </span>
+          </div>
+
+          {lastInterval !== null && (
+            <span
+              role="status"
+              className="font-mono text-xs text-[var(--ink)] bg-[var(--paper-subtle)] border border-[var(--line)] px-2 py-0.5 rounded font-semibold"
+            >
+              {lang === "de"
+                ? `Eingereiht: Fällig in ${lastInterval} Tag(en)`
+                : `已排程：${lastInterval} 天后复习`}
+            </span>
+          )}
+        </div>
+
+        {/* 4 FSRS Rating Buttons */}
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
+          <button
+            type="button"
+            onClick={() => handleGrade(1)}
+            aria-label="FSRS Rating 1 Nochmal"
+            className="flex flex-col items-center justify-center py-2 px-2.5 rounded-[var(--radius)] border border-[var(--line)] bg-[var(--paper-subtle)] hover:bg-[var(--line)]/30 text-[var(--ink)] font-mono text-xs transition-colors cursor-pointer"
+          >
+            <span className="font-bold text-[11px]">1 · {lang === "de" ? "Nochmal" : "重来"}</span>
+            <span className="text-[10px] text-[var(--gray)]">1 {lang === "de" ? "Tag" : "天"}</span>
+          </button>
+
+          <button
+            type="button"
+            onClick={() => handleGrade(2)}
+            aria-label="FSRS Rating 2 Schwer"
+            className="flex flex-col items-center justify-center py-2 px-2.5 rounded-[var(--radius)] border border-[var(--line)] bg-[var(--paper-subtle)] hover:bg-[var(--line)]/30 text-[var(--ink)] font-mono text-xs transition-colors cursor-pointer"
+          >
+            <span className="font-bold text-[11px]">2 · {lang === "de" ? "Schwer" : "困难"}</span>
+            <span className="text-[10px] text-[var(--gray)]">
+              {fsrsState ? `~${Math.max(1, Math.round(fsrsState.stability * 0.9))}d` : "2d"}
+            </span>
+          </button>
+
+          <button
+            type="button"
+            onClick={() => handleGrade(3)}
+            aria-label="FSRS Rating 3 Gut"
+            className="flex flex-col items-center justify-center py-2 px-2.5 rounded-[var(--radius)] border border-[var(--line)] bg-[var(--paper-subtle)] hover:bg-[var(--line)]/30 text-[var(--ink)] font-mono text-xs transition-colors cursor-pointer"
+          >
+            <span className="font-bold text-[11px]">3 · {lang === "de" ? "Gut" : "掌握"}</span>
+            <span className="text-[10px] text-[var(--gray)]">
+              {fsrsState ? `~${Math.max(1, Math.round(fsrsState.stability * 2.2))}d` : "3d"}
+            </span>
+          </button>
+
+          <button
+            type="button"
+            onClick={() => handleGrade(4)}
+            aria-label="FSRS Rating 4 Einfach"
+            className="flex flex-col items-center justify-center py-2 px-2.5 rounded-[var(--radius)] border border-[var(--line)] bg-[var(--paper-subtle)] hover:bg-[var(--line)]/30 text-[var(--ink)] font-mono text-xs transition-colors cursor-pointer"
+          >
+            <span className="font-bold text-[11px]">4 · {lang === "de" ? "Einfach" : "熟练"}</span>
+            <span className="text-[10px] text-[var(--gray)]">
+              {fsrsState ? `~${Math.max(2, Math.round(fsrsState.stability * 3.5))}d` : "6d"}
+            </span>
+          </button>
+        </div>
+      </div>
     </div>
   );
 };

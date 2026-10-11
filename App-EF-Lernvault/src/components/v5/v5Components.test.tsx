@@ -151,6 +151,23 @@ Klausur-Satz: \`Natrium oeffnet Depolarisation und Kalium schliesst Repolarisati
       expect(screen.getByText("Vollständiger Satz:")).toBeInTheDocument();
       expect(screen.getByText("Lücke wieder verdecken")).toBeInTheDocument();
     });
+
+    it("renders FSRS Spaced Repetition controls and updates card review state upon rating", () => {
+      const parsed = parseKernsatzFromText(sowiKernsatzSnippet)!;
+      const testCardId = "test-kernsatz-fsrs-1";
+      render(<KernsatzCard data={parsed} cardId={testCardId} lang="de" />);
+
+      expect(screen.getByText(/Spaced Repetition/)).toBeInTheDocument();
+      expect(screen.getByText("FSRS: Neu")).toBeInTheDocument();
+
+      // Click "Gut" (Rating 3)
+      const gutBtn = screen.getByRole("button", { name: /FSRS Rating 3 Gut/i });
+      fireEvent.click(gutBtn);
+
+      // Verify FSRS scheduled banner appeared
+      expect(screen.getByText(/Eingereiht: Fällig in/)).toBeInTheDocument();
+      expect(screen.getByText(/FSRS: 1 Wdh\./)).toBeInTheDocument();
+    });
   });
 
   describe("ErwartungshorizontDrawer component tests", () => {
