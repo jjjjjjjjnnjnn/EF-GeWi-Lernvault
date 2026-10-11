@@ -81,6 +81,45 @@ export interface IntuitionDilemmaData {
   klpCoreLogicZH: string;
 }
 
+export interface PuzzlePair {
+  id: string;
+  premiseTermDE?: string;
+  premiseDE: string;
+  premiseZH: string;
+  realityTermDE?: string;
+  realityDE: string;
+  realityZH: string;
+  consequenceDE?: string;
+  consequenceZH?: string;
+}
+
+export interface KonzeptPuzzleData {
+  instructionDE: string;
+  instructionZH: string;
+  pairs: PuzzlePair[];
+}
+
+export interface ExamTrapOption {
+  id: string;
+  textDE: string;
+  textZH: string;
+  isCorrect: boolean;
+  explanationDE: string;
+  explanationZH: string;
+}
+
+export interface ExamTrapCorrectionData {
+  taskPromptDE?: string;
+  taskPromptZH?: string;
+  studentAnswerDE: string;
+  studentAnswerZH: string;
+  fatalFlawPointDE: string;
+  fatalFlawPointZH: string;
+  examinerVerdictDE: string;
+  examinerVerdictZH: string;
+  diagnosticOptions?: ExamTrapOption[];
+}
+
 export interface DistilledConcept {
   topicTitle: string;
   fach: string;
@@ -120,6 +159,8 @@ export interface DistilledConcept {
   funFact?: FunFactData;
   studyMateProbes?: StudyMateProbesData;
   attachedNote?: AttachedNoteData;
+  konzeptPuzzle?: KonzeptPuzzleData;
+  examTrapCorrection?: ExamTrapCorrectionData;
 }
 
 interface DomainKnowledgeEntry {
@@ -163,50 +204,158 @@ const DOMAIN_KNOWLEDGE_ENTRIES: DomainKnowledgeEntry[] = [
       fach: "SoWi",
       intuitionDilemma: {
         scenarioDE:
-          "Ein Jahrhundert-Schneesturm legt die städtische Energieversorgung lahm. Im einzigen Baumarkt gibt es nur noch 100 Gas-Heizstrahler bei 5.000 frierenden Haushalten.",
+          "Auf einem offenen Fischmarkt verkaufen hunderte kleine Stände nebeneinander exakt denselben frischen atlantischen Lachs. Der allgemein akzeptierte Marktpreis liegt bei 10 € pro Fisch.",
         scenarioZH:
-          "暴风雪导致全城取暖煤气供应中断，市面上仅剩最后一批（100 台）取暖器，却有 5000 户居民急需取暖。",
+          "设想在一个热闹的露天鱼市上，数百家小摊贩挨在一起卖完全相同的新鲜大西洋三文鱼，当前公认的市场价格为 10 欧一条。",
         questionDE:
-          "Wenn man die Verteilung vollständig dem 'freien Markt' überlässt, was passiert?",
+          "Was geschieht mit deinem Absatz, wenn du als Einzelner deinen Preis eigenmächtig von 10 € auf 11 € anhebst?",
         questionZH:
-          "如果完全交给‘自由市场（Markt）’，会发生什么？",
+          "若你单方面擅自把售价从 10 欧提高到 11 欧，你的销量会发生什么？",
         choiceA: {
           id: "A",
           textDE:
-            "A) Händler verlangen 2.000 €: Nur wer zahlen kann, kauft. Das Gut ist sofort geräumt, aber Arme frieren.",
+            "A) Dein Absatz sinkt nur moderat: Du verkaufst weiterhin den Großteil deiner Fische.",
           textZH:
-            "A) 商家疯狂涨价至 2000 欧：谁出钱多谁买走。穷人冻死，但商品绝不滞销（市场出清）。",
+            "A) 销量仅温和下滑，依然能卖出大部分三文鱼。",
           reactionDE:
-            "Das ist der unbarmherzige, effiziente Kern des Marktes! Der Preis fungiert als 'Knappheitssignal' (Signalfunktion) und lenkt Güter dorthin, wo die Zahlungsbereitschaft am höchsten ist (Allokationsfunktion). Das Gut ist geräumt (Räumungsfunktion), ignoriert aber Verteilungsgerechtigkeit.",
+            "Im Alltag ein logischer Gedanke – im Modell fatal! Im echten Leben bleiben Stammkunden oft aus Bequemlichkeit. Doch im vollkommenen Markt bricht dein Absatz sofort auf null ein: Da Käufer keinerlei persönliche Präferenzen haben und Preise sekundenschnell vergleichen, weichen ausnahmslos alle zur 10-€-Konkurrenz aus.",
           reactionZH:
-            "这就是完全竞争市场冷酷而高效的本质！价格不是用来做慈善的，而是作为‘稀缺信号（Knappheitssignal）’指示紧缺，并把商品配置给支付意愿最高的人（Allokationsfunktion）。商品流向出价最高者实现市场出清（Räumungsfunktion），但完全不考虑社会公正。",
+            "在现实生活中完全符合常理，但在理论模型推导下将直接失效！真实世界里老顾客可能图近、图方便；但本模型假设顾客完全无偏好且能瞬间比价，只要你贵 1 欧，所有人会瞬间跑去隔壁买 10 欧的。",
         },
         choiceB: {
           id: "B",
           textDE:
-            "B) Staatlicher Preisdeckel auf 50 €: Die ersten 100 in der Schlange kaufen, die restlichen 4.900 gehen leer aus.",
+            "B) Dein Absatz bricht sofort auf null ein: Du verkaufst absolut gar keinen Fisch mehr.",
           textZH:
-            "B) 政府限价 50 欧：人人排长队，前 100 个人买走，剩下的人有钱也买不到，滋生黑市与黄牛。",
+            "B) 销量瞬间暴跌至 0，一条鱼也卖不出去。",
           reactionDE:
-            "Staatliche Höchstpreise verhindern Wucher, erzeugen aber einen massiven Nachfrageüberhang! Weil der Preis nicht steigen darf, verliert er seine Signalfunktion. Es entstehen endlose Warteschlangen, Mangel und Schwarzmärkte.",
+            "Exakt richtig! Das ist die eiskalte Logik des Modells: Weil die Güter völlig homogen sind und vollständige Markttransparenz herrscht, besitzt du als Einzelner null Preissetzungsmacht. Du bist ein reiner Preisnehmer (Mengenanpasser).",
           reactionZH:
-            "政府限价虽然维持了平价，却直接引发严重的‘超额需求（Nachfrageüberhang）’！因为价格被锁死，丧失了配给与出清功能，导致排长队、商品短缺与黄牛黑市蔓延。",
+            "完全正确！这就是完全竞争模型的冰冷法则：在鱼一模一样、价格完全透明的假定下，你没有任何提价空间，只能当一个被动的‘价格接受者兼产量调整者（Preisnehmer / Mengenanpasser）’。",
         },
         mechanismTakeawayDE:
-          "Der Preismechanismus koordiniert Angebot und Nachfrage über den Gleichgewichtspreis. Er garantiert ökonomische Effizienz (Markträumung), ignoriert aber Verteilungsgerechtigkeit – daher greift die Soziale Marktwirtschaft ordnungspolitisch ein.",
+          "Da im Modell die Güter völlig homogen sind und vollständige Markttransparenz herrscht, besitzt der einzelne Anbieter keine Preissetzungsmacht und agiert als reiner Preisnehmer (Mengenanpasser).",
         mechanismTakeawayZH:
-          "价格机制通过供需曲线相交的均衡价格自发协调供求。它能实现资源配置的高效率（市场出清），但完全不顾社会公平——这正是德国必须通过‘社会市场经济’实行国家秩序政策兜底的原因。",
+          "在完全竞争模型中，由于商品完全同质且市场信息完全透明，单个供给者毫无定价权，只能作为纯粹的‘价格接受者兼产量调整者’。",
         klpCoreLogicDE:
-          "Preisfunktionen: Signal-, Allokations-, Räumungs- und Selektionsfunktion; Marktversagen bei Verteilungsungerechtigkeit.",
+          "5 Prämissen (Homogenität, Markttransparenz, keine Präferenzen, sofortige Reaktion, atomistische Struktur); vollkommene Preiselastizität (E = ∞); Preisnehmer vs. Preissetzer.",
         klpCoreLogicZH:
-          "价格四大功能：信号功能（指示稀缺）、配置功能（引导资源）、出清功能（出清供求）、筛选功能；完全市场在分配正义上存在局限。",
+          "5 大假定前提（同质、透明、无偏好、瞬时反应、原子结构）；完全价格弹性 (E = ∞)；价格接受者 (Preisnehmer) 核心考点。",
       },
       mentalModelAnalogy: {
-        analogyTitle: "Der Schneesturm-Stresstest: Der Preis als Knappheitsthermometer",
+        analogyTitle: "Der Lachsstand-Markttest: Der Preisnehmer im gläsernen Markt",
         explanationDE:
-          "Der Marktpreis ist kein Wohltätigkeitsgeschenk, sondern ein Thermometer für Knappheit: Wenn 5.000 Menschen 100 Geräte wollen, steigt der Preis exakt so weit, bis 4.900 Personen freiwillig verzichten.",
+          "Auf einem vollkommenen Markt ist jeder Anbieter ein reiner Preisnehmer (Mengenanpasser): Wer auch nur einen Cent über dem Marktpreis verlangt, verkauft bei vollständiger Markttransparenz und homogenen Gütern absolut gar nichts.",
         explanationZH:
-          "市场价格不是慈善救济金，而是指示稀缺程度的灵敏温度计：当 5000 个人抢 100 台取暖器时，价格会持续上涨，直到刚好有 4900 个人因觉得太贵而主动放弃。",
+          "在完全竞争市场中，任何卖家都只是被动的价格接受者（Preisnehmer）：在商品完全同质且价格完全透明的条件下，只要你比公认市场价多加 1 分钱，你的销量就会瞬间跌为零。",
+      },
+      konzeptPuzzle: {
+        instructionDE:
+          "Ordne die 4 theoretischen Prämissen des vollkommenen Marktes ihren realen Gegenbeispielen (Marktunvollkommenheiten) zu:",
+        instructionZH:
+          "将完全竞争市场的 4 大理想理论假定，与现实中打破该假设的真实案例（市场不完全性）连线配对：",
+        pairs: [
+          {
+            id: "p1",
+            premiseTermDE: "Homogenität der Güter",
+            premiseDE: "Homogene Güter (völlig gleichartige Ware ohne Qualitätsunterschiede)",
+            premiseZH: "完全同质商品（市场上所有产品毫无品质、包装与服务差异）",
+            realityTermDE: "Produktdifferenzierung / Branding",
+            realityDE: "Markenbildung, Werbung & Produktdifferenzierung",
+            realityZH: "品牌营销与差异化设计（通过包装与广告制造主观品质溢价）",
+            consequenceDE: "Hebt die Homogenität auf und verschafft Anbietern monopolistische Preisspielräume.",
+            consequenceZH: "消除同质性并制造主观溢价，使单个商家重新获得自主定价权 (Preissetzungsmacht) 与超额利润。",
+          },
+          {
+            id: "p2",
+            premiseTermDE: "Markttransparenz",
+            premiseDE: "Vollständige Markttransparenz (vollkommene Marktübersicht aller Akteure)",
+            premiseZH: "完全市场透明度（价格信息瞬间全知，不存在任何隐匿）",
+            realityTermDE: "Informationsasymmetrien",
+            realityDE: "Informationsasymmetrien & versteckte Zusatzkosten",
+            realityZH: "信息不对称、价格黑箱与隐性收费",
+            consequenceDE: "Ermöglicht Preisdiskriminierung und verhindert den sofortigen Wechsel zum günstigsten Anbieter.",
+            consequenceZH: "利用信息不对称制造垄断租金，打破了买方全知比价与即时转单能力。",
+          },
+          {
+            id: "p3",
+            premiseTermDE: "Keine Präferenzen",
+            premiseDE: "Keine Präferenzen (weder persönlich, räumlich noch zeitlich)",
+            premiseZH: "无个人与空间偏好（不在乎谁卖在哪卖，无任何主观倾向）",
+            realityTermDE: "Persönliche & Räumliche Präferenzen",
+            realityDE: "Stammkundenbeziehungen & bequeme geografische Nähe",
+            realityZH: "熟人熟脸信任感与就近购买习惯（人情与地利锁定）",
+            consequenceDE: "Kunden akzeptieren höhere Preise bei vertrauten oder nahegelegenen Anbietern (lokale Monopole).",
+            consequenceZH: "人情与地理便利构筑局部微型垄断，消费者自愿为偏好支付额外差价。",
+          },
+          {
+            id: "p4",
+            premiseTermDE: "Freier Marktzutritt",
+            premiseDE: "Freier Marktzutritt & unendliche Reaktionsgeschwindigkeit",
+            premiseZH: "自由进出无门槛与瞬时反应速度（资本与劳动力无摩擦流动）",
+            realityTermDE: "Marktzutrittsschranken (Barrieren)",
+            realityDE: "Hohe Fixkosten, Patente & Markteintrittsbarrieren",
+            realityZH: "高额初始投资、技术专利与准入牌照壁垒",
+            consequenceDE: "Schirmt etablierte Großkonzerne vor neuem Wettbewerb ab und hemmt die Mengenanpassung.",
+            consequenceZH: "准入壁垒形成护城河阻断新资本进入，使市场供给无法自发迅速扩容出清。",
+          },
+        ],
+      },
+      examTrapCorrection: {
+        taskPromptDE:
+          "»Erläutern Sie die Steuerungsfunktion des Preises auf dem vollkommenen Markt.« (AFB II)",
+        taskPromptZH:
+          "»阐释完全竞争市场中价格机制的调控职能。« (AFB II 考查要求)",
+        studentAnswerDE:
+          "»Der Gleichgewichtspreis sorgt dafür, dass alle Bürger mit lebensnotwendigen Gütern versorgt werden und verhindert gleichzeitig ungerechte Unternehmensgewinne durch den Staat.«",
+        studentAnswerZH:
+          "»均衡价格确保了所有公民都能获得生活必需品，并通过国家干预杜绝了不公正的企业暴利。«",
+        fatalFlawPointDE:
+          "Gleichsetzung von theoretischem Referenzmodell und realpolitischem Handlungsziel sowie Verwechslung von Allokationseffizienz und Verteilungsgerechtigkeit (0 Notenpunkte!)",
+        fatalFlawPointZH:
+          "误把纯理论对照基准（Referenzmodell）当成现实政策追求目标，将市场出清效率与社会公平保障混为一谈（阅卷直接判 0 分！）",
+        examinerVerdictDE:
+          "Klausur-Regel: Der vollkommene Markt ist blind für Verteilungsgerechtigkeit. Die Signalfunktion sichert ausschließlich Markträumung und Effizienz. Soziale Grundversorgung ist Aufgabe der staatlichen Sozialpolitik (Soziale Marktwirtschaft), nicht des Preismechanismus!",
+        examinerVerdictZH:
+          "阅卷标准批注：完全竞争市场对分配公正完全盲目。价格机制只负责出清效率与反映稀缺。保障弱势群体与基础生存福利属于‘社会市场经济’的国家再分配范畴，绝非完全市场自身机制！",
+        diagnosticOptions: [
+          {
+            id: "diag-correct",
+            textDE:
+              "Verwechslung von Effizienz und Gerechtigkeit: Der Preismechanismus sichert lediglich die effiziente Markträumung (Knappheitssignal), garantiert jedoch keinerlei soziale Grundversorgung oder faire Verteilung.",
+            textZH:
+              "混淆了概念：价格机制只管「出清效率 (Effizienz)」，绝不保证「社会公正 (Gerechtigkeit)」或人人买得起。",
+            isCorrect: true,
+            explanationDE:
+              "Diagnose exakt richtig! Der vollkommene Markt ist blind für Verteilungsgerechtigkeit. Die soziale Grundversorgung ist Aufgabe der staatlichen Sozialpolitik (Soziale Marktwirtschaft), nicht des Preismechanismus selbst.",
+            explanationZH:
+              "诊断正确！这就是 Klausur 最致命的高频失分陷阱：完全竞争价格只是稀缺信号，它冷酷地淘汰出价低的人；保障底层福利属于社会市场经济的制度再分配，绝非市场内生功能。",
+          },
+          {
+            id: "diag-distractor-state",
+            textDE:
+              "Fehlende Höchstpreisgrenzen: Der Prüfling hätte darlegen müssen, dass der Staat im vollkommenen Markt durch Preishöchstgrenzen die Kaufkraft der ärmeren Haushalte sichert.",
+            textZH:
+              "制度混淆：该考生漏写了政府在完全市场中必须通过最高限价（Höchstpreis）来稳定物价，防止居民生活成本过高。",
+            isCorrect: false,
+            explanationDE:
+              "Fataler Fehlgedanke: Gesetzliche Höchstpreise erzeugen Überschussnachfrage und zerstören die Markträumung. Im vollkommenen Markt herrscht vollständige Preisbildung ohne Staatseingriffe.",
+            explanationZH:
+              "致命失分陷阱：最高限价会造成供不应求与排队短缺；完全竞争市场模型的基本前提就是零行政干预，强加限价直接违背模型公理。",
+          },
+          {
+            id: "diag-distractor-monopoly",
+            textDE:
+              "Unterdrückte Monopolrenten: Der Prüfling hat übersehen, dass Unternehmen im Modell den Preis zur Deckung ihrer Gewinnaufschläge frei nach oben anpassen dürfen.",
+            textZH:
+              "角色误判：以为单个商贩具有主动调控价格以谋求暴利的能力，忽视了其作为「价格接受者 (Preisnehmer)」的被动地位。",
+            isCorrect: false,
+            explanationDE:
+              "Falsch: Bei vollkommener Transparenz und homogenen Gütern sind alle Anbieter reine Mengenanpasser mit null Preissetzungsmacht.",
+            explanationZH:
+              "概念错误：在商品同质与信息透明前提下，所有商家都是纯粹的价格接受者与产量调整者，根本不存在自主加价获取垄断利润的能力。",
+          },
+        ],
       },
       klpTermini: [
         {
@@ -253,18 +402,19 @@ const DOMAIN_KNOWLEDGE_ENTRIES: DomainKnowledgeEntry[] = [
       ],
       klausurSatz15NP: {
         musterSatzDE:
-          "Während der Preismechanismus im theoretischen Modell des vollkommenen Marktes über die Allokations- und Räumungsfunktion zu einem pareto-effizienten Marktgleichgewicht führt, erfordert das Sozialstaatsgebot der Bundesrepublik bei existentiellen Gütern ordnungspolitische Interventionen zur Vermeidung distributiver Marktversagensfolgen.",
+          "Zwar garantiert der vollkommene Preismechanismus eine allokative Effizienz im Sinne des Pareto-Optimums, dennoch erfordert das grundgesetzliche Sozialstaatsprinzip (Art. 20 GG) ordnungspolitische Korrekturen, da der reine Markt weder Verteilungsgerechtigkeit noch soziale Absicherung gewährleistet.",
         operator: "beurteilen",
         scoringKeywords: [
           "Preismechanismus",
           "Allokationsfunktion",
-          "Raeumungsfunktion",
-          "Marktgleichgewicht",
-          "Sozialstaatsgebot",
+          "Allokationseffizienz",
+          "Pareto-Optimum",
+          "Sozialstaatsprinzip",
+          "Verteilungsgerechtigkeit",
           "Marktversagen",
         ],
         explanationZH:
-          "满分 15 NP 评价大题金句：既精确剖析完全市场价格机制在资源配置上的帕累托效率，又立足德国基本法社会国家原则论证秩序政策兜底的不可或缺性。",
+          "既精确剖析完全市场在资源配置上的帕累托效率，又立足基本法社会国家原则论证秩序政策兜底的不可或缺性。",
       },
       socraticProbes: [
         {
@@ -1289,6 +1439,223 @@ const DOMAIN_KNOWLEDGE_ENTRIES: DomainKnowledgeEntry[] = [
       ],
     },
   },
+  {
+  id: "soziale-marktwirtschaft-prinzipien-marktversagen",
+  canonicalTitle: "Soziale Marktwirtschaft: Prinzipien und Marktversagen",
+  fach: "SoWi",
+  matchKeywords: [
+    "soziale marktwirtschaft",
+    "preismechanismus",
+    "allokationsfunktion",
+    "ausgleichsfunktion",
+    "pareto-optimum",
+    "sozialstaatsprinzip",
+    "ordnungspolitik",
+    "marktversagen",
+    "externe effekte",
+    "oeffentliche gueter",
+    "marktmacht",
+    "hoechstpreis"
+  ],
+  data: {
+    topicTitle: "Soziale Marktwirtschaft: Prinzipien und Marktversagen",
+    fach: "SoWi",
+    intuitionDilemma: {
+      scenarioDE: "Eure Stadt deckelt die Miete bei 8 Euro pro qm, der Marktpreis lag bei 12 Euro. Alle jubeln ueber billige Wohnungen.",
+      scenarioZH: "你们城市把租金限在8欧/平米，市场价原本12欧。人人都在为便宜房欢呼。",
+      questionDE: "Wer bekommt nach einem Jahr noch eine Wohnung?",
+      questionZH: "一年之后，谁还能租到房子？",
+      choiceA: {
+        id: "A",
+        textDE: "Gute Nachricht: Mieten sinken, mehr Familien koennen sich die Wohnung leisten, die Versorgung wird gerechter.",
+        textZH: "好消息：租金下降，更多家庭租得起房，供给变得更公平。",
+        reactionDE: "Verstaendlich gedacht: Guenstiger klingt fairer. Doch zum gedeckelten Preis wollen mehr Haushalte mieten, waehrend Vermieter weniger anbieten -> Warteschlangen und Schattenmieten statt Versorgung fuer alle.",
+        reactionZH: "这样想可以理解：更便宜听起来更公平。但在限价下，想租房的家庭变多，房东供给变少 -> 结果是排队与黑市租金，而不是人人有房住。"
+      },
+      choiceB: {
+        id: "B",
+        textDE: "Schlechte Nachricht: Die guenstigen Wohnungen sind sofort weg, Wartelisten wachsen, viele gehen trotz Deckel leer aus.",
+        textZH: "坏消息：便宜房源瞬间被抢光，排队名单越变越长，很多人有价格上限依然租不到房。",
+        reactionDE: "Scharf beobachtet: Unter dem Gleichgewicht sinkt das Angebot und die Nachfrage steigt -> Nachfrageueberhang mit Wartelisten, Beziehungen und Investitionsrueckgang im Wohnungsbau.",
+        reactionZH: "观察敏锐：低于均衡价时供给下降、需求上升 -> 出现需求过剩，伴随排队名单、托关系与住房建设投资退潮。"
+      },
+      mechanismTakeawayDE: "Unter einem bindenden Hoechstpreis ist die Ausgleichsfunktion des Preises ausser Kraft gesetzt: Signal- und Allokationsfunktion lenken das Angebot weg, der Markt raeumt nicht mehr.",
+      mechanismTakeawayZH: "在有约束力的最高限价下，价格的出清功能被阻断：信号与配置功能把供给引向别处，市场不再出清。",
+      klpCoreLogicDE: "NRW KLP SoWi IF2 Marktwirtschaftliche Ordnung: Effizienz des Preismechanismus vs. Gerechtigkeit des Sozialstaatsprinzips (Art. 20 GG) -> Ordnungspolitik korrigiert Marktversagen.",
+      klpCoreLogicZH: "NRW考纲SoWi内容域2市场经济秩序：价格机制的效率 vs 社会国家原则（《基本法》第20条）的正义 -> 秩序政策矫正市场失灵。"
+    },
+    mentalModelAnalogy: {
+      analogyTitle: "Der Schiedsrichter statt Mitspieler: Ordnungspolitik als Spielregelwaechter",
+      explanationDE: "Unter einem bindenden Hoechstpreis ist die Ausgleichsfunktion des Preises ausser Kraft gesetzt: Signal- und Allokationsfunktion lenken das Angebot weg, der Markt raeumt nicht mehr.",
+      explanationZH: "在有约束力的最高限价下，价格的出清功能被阻断：信号与配置功能把供给引向别处，市场不再出清。"
+    },
+    konzeptPuzzle: {
+      instructionDE: "Ordne jedem Ordnungsprinzip der Sozialen Marktwirtschaft seine Marktversagens-Realitaet und die Klausur-Konsequenz zu:",
+      instructionZH: "将社会市场经济的每条秩序原则与其市场失灵现实及考场结论配对：",
+      pairs: [
+        {
+          id: "pair-1",
+          premiseDE: "Funktionsfaehiger Wettbewerb: Viele Anbieter und Nachfrager, freier Marktzutritt; der Staat setzt nur den Ordnungsrahmen (Ordoliberalismus, Eucken).",
+          premiseZH: "有效竞争：众多供给者与需求者、自由准入；国家只制定秩序框架（秩序自由主义，欧肯）。",
+          realityDE: "Marktmacht: Monopol und Oligopol setzen Preise ueber Grenzkosten, schraenken Menge und Auswahl ein.",
+          realityZH: "市场势力：垄断与寡头把价格定在边际成本之上，压缩产量与选择。",
+          consequenceDE: "Klausur: Wettbewerb sichern (Kartellrecht, GWB), statt Preise direkt festzusetzen.",
+          consequenceZH: "考场结论：用卡特尔法维护竞争，而不是由国家直接定价。"
+        },
+        {
+          id: "pair-2",
+          premiseDE: "Preismechanismus: Signal-, Allokations- und Ausgleichsfunktion fuehren ueber flexible Preise zum Gleichgewicht.",
+          premiseZH: "价格机制：信号、配置与出清功能经由弹性价格导向均衡。",
+          realityDE: "Negative externe Effekte: CO2-Kosten traegt die Allgemeinheit, der Verursacherpreis ist zu niedrig -> Ueberproduktion.",
+          realityZH: "负外部性：二氧化碳成本由全社会承担，污染者支付的价格过低 -> 过度生产。",
+          consequenceDE: "Klausur: Externe Kosten per CO2-Preis oder Ordnungsrecht internalisieren, damit das Preissignal die Knappheit ehrlich zeigt.",
+          consequenceZH: "考场结论：用碳价或规制手段把外部成本内部化，让价格信号真实反映稀缺。"
+        },
+        {
+          id: "pair-3",
+          premiseDE: "Private Gueter: Ausschliessbarkeit und Rivalitaet ermoeglichen Tausch ueber den Preismechanismus.",
+          premiseZH: "私人物品：可排他、可竞争，可经由价格机制交换。",
+          realityDE: "Oeffentliche Gueter: Nicht-Ausschliessbarkeit und Nicht-Rivalitaet (z. B. Deiche, Grundlagenforschung) -> Trittbrettfahrer, Unterversorgung.",
+          realityZH: "公共产品：非排他、非竞争（如堤坝、基础研究）-> 搭便车，供给不足。",
+          consequenceDE: "Klausur: Bei oeffentlichen Guetern ist staatliche Bereitstellung oder Regulierung ordnungspolitisch begruendet.",
+          consequenceZH: "考场结论：对公共产品，国家提供或规制具有秩序政策依据。"
+        },
+        {
+          id: "pair-4",
+          premiseDE: "Vollstaendige Information: Alle kennen Preise und Qualitaeten und reagieren unverzerrt.",
+          premiseZH: "完全信息：所有人都知晓价格与质量，并无偏反应。",
+          realityDE: "Informationsasymmetrien: Anbieter wissen mehr als Kauefer (z. B. Gebrauchtwagen, Finanzprodukte) -> Fehlentscheidungen, Vertrauensverlust.",
+          realityZH: "信息不对称：卖方比买方知道得多（如二手车、金融产品）-> 错误决策，信任流失。",
+          consequenceDE: "Klausur: Transparenzregeln und Verbraucherschutz staerken, ohne den Preismechanismus zu ersetzen.",
+          consequenceZH: "考场结论：以透明度规则与消费者保护补强，而非取代价格机制。"
+        }
+      ]
+    },
+    examTrapCorrection: {
+      taskPromptDE: "Beurteilen Sie die folgende Schueleraussage zur Sozialen Marktwirtschaft. Waehlen Sie die zutreffende Diagnose. (AFB III, beurteilen)",
+      taskPromptZH: "评价下面关于社会市场经济的学生表述，选择正确的诊断。（AFB III，评价）",
+      studentAnswerDE: "Der freie Preismechanismus sichert automatisch soziale Gerechtigkeit fuer alle Buerger, deshalb sind sozialpolitische Korrekturen in der Sozialen Marktwirtschaft ueberfluessig.",
+      studentAnswerZH: "自由价格机制能自动保障全体公民的社会正义，因此在社会市场经济中社会政策矫正都是多余的。",
+      fatalFlawPointDE: "Verwechslung von Effizienz und Gerechtigkeit: Allokationseffizienz des Preismechanismus wird mit Verteilungsgerechtigkeit gleichgesetzt.",
+      fatalFlawPointZH: "把效率与正义混为一谈：把价格机制的配置效率等同于分配正义。",
+      examinerVerdictDE: "0 / 15 NP. Der Preismechanismus wird mit sozialpolitischer Umverteilung verwechselt; die normative Begruendung ueber das Sozialstaatsprinzip (Art. 20 GG) und die Diagnose von Marktversagen fehlen vollstaendig.",
+      examinerVerdictZH: "0/15分。把价格机制与社会政策再分配混为一谈；缺失以《基本法》第20条社会国家原则作规范依据，也没有诊断市场失灵。",
+      diagnosticOptions: [
+        {
+          id: "diag-correct",
+          textDE: "Der Satz verwechselt Allokationseffizienz mit Verteilungsgerechtigkeit: Der Preismechanismus raeumt den Markt, garantiert aber weder bezahlbaren Zugang fuer alle noch soziale Absicherung.",
+          textZH: "该句混淆了配置效率与分配正义：价格机制只实现市场出清，并不保证人人负担得起，也不提供社会保障。",
+          isCorrect: true,
+          explanationDE: "Der Preismechanismus sichert nur die marktraeumende Allokationseffizienz; Verteilungsgerechtigkeit und soziale Absicherung folgen aus dem Sozialstaatsprinzip des Art. 20 GG und erfordern ordnungspolitische Korrekturen wie Umverteilung oder Mindeststandards.",
+          explanationZH: "价格机制只保证市场出清的配置效率；分配正义与社会保障源于《基本法》第20条社会国家原则，需要秩序政策层面的再分配与最低标准等矫正。"
+        },
+        {
+          id: "diag-distractor-1",
+          textDE: "Der Fehler liegt in der fehlenden Forderung nach flaechendeckenden staatlichen Festpreisen: Erst verbindliche Festpreise fuer alle Gueter wuerden faire Verteilung und sozialen Ausgleich sichern.",
+          textZH: "错误在于没有要求全面实行国家统制定价：只有对所有商品实行有约束力的统一定价，才能保障公平分配与社会平衡。",
+          isCorrect: false,
+          explanationDE: "Die Soziale Marktwirtschaft setzt auf den Ordnungsrahmen und gezielte Korrekturen bei Marktversagen, nicht auf die Abschaffung freier Preise; flaechendeckende Festpreise wuerden Signal- und Allokationsfunktion ausser Kraft setzen und zu Fehlallokation fuehren.",
+          explanationZH: "社会市场经济依靠秩序框架与针对市场失灵的定点矫正，而非取消自由价格；全面统制定价会使价格的信号与配置功能失效，导致资源错配。"
+        },
+        {
+          id: "diag-distractor-2",
+          textDE: "Der Satz ist nur unvollstaendig, weil er die positive Beschaeftigungswirkung des Mindestlohns verschweigt: Ein Mindestpreis ueber dem Gleichgewicht erhoeht stets auch die nachgefragte Menge an Arbeit.",
+          textZH: "该句只是不完整，因为它没有写出最低工资的积极就业效应：高于均衡价的最低限价总会同时提高劳动力的需求量。",
+          isCorrect: false,
+          explanationDE: "Ein bindender Mindestpreis liegt ueber dem Gleichgewicht und erzeugt einen Angebotsueberhang; auf dem Arbeitsmarkt bedeutet das Arbeitslosigkeit bei gering Qualifizierten. Der Satz blendet diese Mengenwirkung und die normativen Kosten des Eingriffs in Tarifautonomie und Preisbildung aus.",
+          explanationZH: "有约束力的最低限价位于均衡价格之上，会造成供给过剩；在劳动力市场上即低技能群体的失业。该句回避了这一数量效应，也回避了干预对劳资自治与价格形成的规范成本。"
+        }
+      ]
+    },
+    klpTermini: [
+      {
+        termDE: "Preismechanismus",
+        definitionDE: "Signal-, Allokations- und Ausgleichsfunktion fuehren ueber flexible Preise zum Gleichgewicht; sichert Marktraeumung und Effizienz, nie Gerechtigkeit.",
+        termZH: "价格机制",
+        definitionZH: "信号、配置与出清功能经由弹性价格导向均衡；只保证出清与效率，绝不保证正义。"
+      },
+      {
+        termDE: "Sozialstaatsprinzip",
+        definitionDE: "Normative Saeule aus Art. 20 GG: verpflichtet den Staat zu Umverteilung und Mindeststandards, weil der Markt blind fuer Verteilungsgerechtigkeit ist.",
+        termZH: "社会国家原则",
+        definitionZH: "《基本法》第20条的规范支柱：国家必须再分配与兜底，因为市场对分配正义是盲目的。"
+      },
+      {
+        termDE: "Ordnungspolitik",
+        definitionDE: "Ordoliberales Leitbild (Eucken): Staat setzt den Wettbewerbsrahmen und korrigiert Marktversagen gezielt, statt Preise direkt festzusetzen.",
+        termZH: "秩序政策",
+        definitionZH: "秩序自由主义路线：国家制定竞争框架、定点矫正失灵，而非直接定价。"
+      },
+      {
+        termDE: "Marktversagen",
+        definitionDE: "Faelle, in denen der Preismechanismus fehlallokiert: externe Effekte, oeffentliche Gueter, Marktmacht, Informationsasymmetrien.",
+        termZH: "市场失灵",
+        definitionZH: "价格机制错误配置资源的情形：外部性、公共产品、市场势力、信息不对称。"
+      },
+      {
+        termDE: "Externe Effekte",
+        definitionDE: "Unkompensierte Drittfolgen (z. B. CO2-Kosten der Allgemeinheit); Loesung ueber Internalisierung per Preis oder Ordnungsrecht.",
+        termZH: "外部性",
+        definitionZH: "未补偿的第三方后果；出路是经由价格或规制将其内部化。"
+      },
+      {
+        termDE: "Oeffentliche Gueter",
+        definitionDE: "Nicht-Ausschliessbarkeit plus Nicht-Rivalitaet (Deiche, Grundlagenforschung) fuehren zu Trittbrettfahrern und Unterversorgung.",
+        termZH: "公共产品",
+        definitionZH: "非排他加非竞争导致搭便车与供给不足，需国家提供或规制。"
+      }
+    ],
+    fehlerquellen: [
+      {
+        trapTitleDE: "Effizienz gleich Gerechtigkeit",
+        trapDescriptionDE: "Allokationseffizienz des Preismechanismus wird mit Verteilungsgerechtigkeit gleichgesetzt; sozialpolitische Korrekturen gelten als ueberfluessig (0 NP).",
+        trapDescriptionZH: "把价格机制的配置效率等同于分配正义，认为社会政策矫正多余。",
+        howToAvoidDE: "Effizienz und Gerechtigkeit strikt trennen: Der Markt raeumt, das Sozialstaatsprinzip (Art. 20 GG) verteilt."
+      },
+      {
+        trapTitleDE: "Festpreise als Loesung",
+        trapDescriptionDE: "Flaechendeckende staatliche Festpreise sollen faire Verteilung sichern, obwohl sie Signal- und Allokationsfunktion ausser Kraft setzen.",
+        trapDescriptionZH: "要求全面统制定价保障公平，无视其摧毁价格信号与配置功能。",
+        howToAvoidDE: "Soziale Marktwirtschaft haelt am Preismechanismus fest; Korrektur heisst Ordnungsrahmen, nicht Preisabschaffung."
+      },
+      {
+        trapTitleDE: "Mindestlohn ohne Mengenwirkung",
+        trapDescriptionDE: "Ein Mindestpreis ueber dem Gleichgewicht erhoehe stets auch die nachgefragte Menge; Angebotsueberhang und Beschaeftigungsverlust werden ausgeblendet.",
+        trapDescriptionZH: "高于均衡的最低限价总会同时提高需求量，无视供给过剩与就业损失。",
+        howToAvoidDE: "Bindende Preisgrenzen stets mit Mengenwirkung denken: Hoechstpreis zu Nachfrageueberhang, Mindestpreis zu Angebotsueberhang."
+      }
+    ],
+    klausurSatz15NP: {
+      musterSatzDE: "\"Zwar sichert der Preismechanismus der Sozialen Marktwirtschaft allokative Effizienz im Sinne des Pareto-Optimums, dennoch erfordert das Sozialstaatsprinzip (Art. 20 GG) ordnungspolitische Korrekturen, da externe Effekte, oeffentliche Gueter und Marktmacht ohne Eingriff zu Fehlallokation und sozialer Schieflage fuehren.\"",
+      operator: "beurteilen",
+      scoringKeywords: [
+        "Preismechanismus",
+        "Allokationsfunktion",
+        "Ausgleichsfunktion",
+        "Pareto-Optimum",
+        "Sozialstaatsprinzip",
+        "Ordnungspolitik",
+        "Marktversagen",
+        "externe Effekte",
+        "oeffentliche Gueter",
+        "Marktmacht"
+      ],
+      explanationZH: "（既承认价格机制在配置上的帕累托效率，又立足《基本法》社会国家原则，论证对外部性、公共产品与市场势力三类失灵作秩序政策矫正的必要性。）"
+    },
+    socraticProbes: [
+      {
+        questionDE: "Wer bekommt nach einem Jahr noch eine Wohnung, wenn die Miete unter dem Gleichgewicht gedeckelt ist?",
+        questionZH: "租金限在均衡价之下，一年后谁还能租到房？",
+        counterPerspectiveDE: "Unter dem Gleichgewicht sinkt das Angebot und die Nachfrage steigt: Nachfrageueberhang mit Wartelisten statt Versorgung fuer alle."
+      },
+      {
+        questionDE: "Erfordert das Sozialstaatsprinzip die Ersetzung des Preismechanismus durch Festpreise?",
+        questionZH: "社会国家原则是否要求以统制定价取代价格机制？",
+        counterPerspectiveDE: "Das Leitbild lautet Wettbewerb plus sozialer Ausgleich: Wettbewerb sichern, externe Effekte einpreisen, oeffentliche Gueter bereitstellen, Information schuetzen."
+      }
+    ]
+  }
+},
 ];
 
 // ---------------------------------------------------------------------------
@@ -1756,6 +2123,278 @@ function createFallbackIntuitionDilemma(
 }
 
 /**
+ * 为任意未在预设库中的主题生成概念与现实阻碍配对 (Schritt 2: Konzept-Puzzle)
+ */
+export function createFallbackKonzeptPuzzle(
+  title: string,
+  fach: string
+): KonzeptPuzzleData {
+  const normFach = fach.trim().toLowerCase();
+  if (normFach.includes("sowi")) {
+    return {
+      instructionDE: `Ordne die theoretischen Grundannahmen von »${title}« den realen Marktgegebenheiten zu:`,
+      instructionZH: `将 »${title}« 的理论核心假设与现实世界中的真实阻碍案例一一配对：`,
+      pairs: [
+        {
+          id: "p1",
+          premiseTermDE: "Homo Oeconomicus",
+          premiseDE: "Vollkommene Rationalität (Homo Oeconomicus)",
+          premiseZH: "纯理性经济人假设（追求纯收益最优）",
+          realityTermDE: "Behavioral Economics",
+          realityDE: "Emotionale Fehlentscheidungen, Bequemlichkeit & Herdentrieb",
+          realityZH: "非理性冲动消费、从众羊群效应与惰性决策",
+          consequenceDE: "Führt zu systematischen Konsumverzerrungen statt optimaler Allokation.",
+          consequenceZH: "心理偏差破坏了最优资源配置，导致行为经济学视角下的非理性均衡。",
+        },
+        {
+          id: "p2",
+          premiseTermDE: "Markttransparenz",
+          premiseDE: "Vollständige Information & Marktübersicht",
+          premiseZH: "完全对称的信息与市场透明度",
+          realityTermDE: "Informationsasymmetrien",
+          realityDE: "Informationsasymmetrien & manipulative Werbeversprechen",
+          realityZH: "信息不对称、算法茧房与虚假营销包装",
+          consequenceDE: "Ermöglicht Ausbeutung von Wissensvorsprüngen und Preisaufschläge.",
+          consequenceZH: "信息优势方掠夺垄断超额租金，消费者无法获得真实出清价格。",
+        },
+        {
+          id: "p3",
+          premiseTermDE: "Freier Wettbewerb",
+          premiseDE: "Freier Wettbewerb ohne Markteintrittsbarrieren",
+          premiseZH: "完全自由竞争与零准入门槛",
+          realityTermDE: "Marktmacht & Monopole",
+          realityDE: "Monopole, Oligopole & hohe regulatorische Hürden",
+          realityZH: "行业巨头垄断、专利壁垒与高昂初始资金",
+          consequenceDE: "Blockiert Neuanbieter und führt zu überhöhten Preisen ohne Markträumung.",
+          consequenceZH: "既得利益集团阻绝有效市场竞争，价格失去自由弹性调节机能。",
+        },
+        {
+          id: "p4",
+          premiseTermDE: "Internalisierte Kosten",
+          premiseDE: "Keine negativen externen Effekte",
+          premiseZH: "零外部性（所有交易成本由买卖双方完全承担）",
+          realityTermDE: "Negative Externalitäten",
+          realityDE: "Umweltschäden, Ausbeutung & gesellschaftliche Folgekosten",
+          realityZH: "生态环境污染、劳工压榨与社会公共财政买单",
+          consequenceDE: "Marktpreise spiegeln nicht die wahren volkswirtschaftlichen Gesamtkosten wider.",
+          consequenceZH: "市场定价脱离真实社会成本，造成生态破坏与严重市场失灵。",
+        },
+      ],
+    };
+  }
+
+  if (normFach.includes("philo")) {
+    return {
+      instructionDE: `Ordne die normativen Prinzipien von »${title}« den praktischen Spannungsfeldern zu:`,
+      instructionZH: `将 »${title}« 的伦理规范性原则与实际生活中的道德困境一一配对：`,
+      pairs: [
+        {
+          id: "p1",
+          premiseTermDE: "Kategorischer Imperativ",
+          premiseDE: "Kategorischer Imperativ (Absolutes Handlungsgebot)",
+          premiseZH: "康德定言命令（绝对禁止工具化他人）",
+          realityTermDE: "Tragische Dilemmata",
+          realityDE: "Tragische Notstandssituationen & Lebensrettung durch Täuschung",
+          realityZH: "极端紧急避险情境（善意谎言与两难抉择）",
+          consequenceDE: "Reine Deontologie stößt bei existenziellen Notständen an praktische Grenzen.",
+          consequenceZH: "绝对义务论在人命关天的严峻现实冲突中面临严苛的两难伦理拷问。",
+        },
+        {
+          id: "p2",
+          premiseTermDE: "Utilitarismus",
+          premiseDE: "Utilitaristische Nutzenmaximierung",
+          premiseZH: "功利主义效用核算（追求最大多数人最大幸福）",
+          realityTermDE: "Minderheitenschutz",
+          realityDE: "Tyrannei der Mehrheit & Schutz unantastbarer Minderheitenrechte",
+          realityZH: "多数人暴政隐患与少数群体基本权利践踏",
+          consequenceDE: "Kollidiert mit der verfassungsrechtlichen Unantastbarkeit der Menschenwürde (Art. 1 GG).",
+          consequenceZH: "单纯数量加总极易侵害少数群体不可让渡的人的尊严（宪法第 1 条）。",
+        },
+        {
+          id: "p3",
+          premiseTermDE: "Schleier des Nichtwissens",
+          premiseDE: "Schleier des Nichtwissens (Gedankenexperiment)",
+          premiseZH: "罗尔斯无知之幕（假设人人剥离既得利益）",
+          realityTermDE: "Reale Ungleichheit",
+          realityDE: "Etablierte Privilegien & ungleiche Startchancen in der Realität",
+          realityZH: "现实中根深蒂固的阶层特权与起点不平等",
+          consequenceDE: "Gedankliche Urzustände ignorieren gewachsene historische Machtstrukturen.",
+          consequenceZH: "纯粹理论初始状态必须面对现实中路径依赖的深层制度不公。",
+        },
+        {
+          id: "p4",
+          premiseTermDE: "Autonomie des Subjekts",
+          premiseDE: "Autonomie & Vernunftbegabung des Subjekts",
+          premiseZH: "理性主体的绝对道德自律与自由意志",
+          realityTermDE: "Heteronomie & Manipulation",
+          realityDE: "Psychologische Manipulation & soziale Konditionierung",
+          realityZH: "潜意识欲望驱使与社会结构对行为的无形规训",
+          consequenceDE: "Menschliches Handeln ist stets durch Sozialisation und Umwelt vorstrukturiert.",
+          consequenceZH: "个体自由意志总是在家庭、阶层与文化结构的重重塑造中艰难突围。",
+        },
+      ],
+    };
+  }
+
+  if (normFach.includes("deutsch")) {
+    return {
+      instructionDE: `Ordne die poetologischen Konzepte von »${title}« den analytischen Textbeobachtungen zu:`,
+      instructionZH: `将 »${title}« 的文学理论概念与文本解剖的具体观察一一配对：`,
+      pairs: [
+        {
+          id: "p1",
+          premiseTermDE: "Aufklärung",
+          premiseDE: "Aufklärerischer Vernunftoptimismus",
+          premiseZH: "启蒙理智乐观主义（理性能照亮迷蒙）",
+          realityTermDE: "Existenzielle Krise",
+          realityDE: "Fausts Verzweiflung an der Begrenztheit des Wissens",
+          realityZH: "浮士德穷尽四大学科后的幻灭与虚无感",
+          consequenceDE: "Offenbart die Grenzen rein intellektueller Weltaneignung.",
+          consequenceZH: "揭示了纯粹书斋理智在面对浩瀚生命欲望时的深刻局限与虚无。",
+        },
+        {
+          id: "p2",
+          premiseTermDE: "Sturm und Drang",
+          premiseDE: "Sturm-und-Drang-Genieideal",
+          premiseZH: "狂飙突进天才冲动（冲破封建陈腐规训）",
+          realityTermDE: "Tragische Hybris",
+          realityDE: "Zerstörerische Leidenschaft & gesellschaftliche Isolation",
+          realityZH: "野性激情导致的毁灭性冲动与人际悲剧孤立",
+          consequenceDE: "Führt zum unausweichlichen Scheitern an gesellschaftlichen Normen.",
+          consequenceZH: "个体天才意志在冷酷封建礼教秩序碰撞中走向不可逆的悲剧性陨落。",
+        },
+        {
+          id: "p3",
+          premiseTermDE: "Weimarer Klassik",
+          premiseDE: "Klassisches Harmonie- & Humanitätsideal",
+          premiseZH: "古典主义和谐与人道秩序理想",
+          realityTermDE: "Ständekonflikt",
+          realityDE: "Unversöhnliche Ständekonflikte & politische Willkür",
+          realityZH: "残酷的封建等级壁垒与专制强权的冷酷摧残",
+          consequenceDE: "Zeigt die Fragilität humanistischer Ideale in repressiven Machtverhältnissen.",
+          consequenceZH: "反衬出崇高人道主义审美理想在专制强权现实面前的脆弱与沉重代价。",
+        },
+        {
+          id: "p4",
+          premiseTermDE: "Auktoriale Textlenkung",
+          premiseDE: "Auktoriale Textordnung & Botschaft",
+          premiseZH: "作者设定的修辞意图与读者引导",
+          realityTermDE: "Polyvalenz & Offenheit",
+          realityDE: "Vieldeutige Metaphorik & offene Deutungshorizonte",
+          realityZH: "充满张力的多义隐喻与读者接受的多维碰撞",
+          consequenceDE: "Ermöglicht multiple Rezeptionsweisen statt dogmatischer Eindeutigkeit.",
+          consequenceZH: "彻底瓦解单一独断阐释，赋予读者跨越时代的广阔诠释空间。",
+        },
+      ],
+    };
+  }
+
+  // MINT / Mathe / Physik
+  return {
+    instructionDE: `Ordne die mathematisch-physikalischen Modellannahmen von »${title}« ihren realen Randbedingungen zu:`,
+    instructionZH: `将 »${title}« 的数学物理理想模型假设与真实世界的边界条件一一配对：`,
+    pairs: [
+      {
+        id: "p1",
+        premiseTermDE: "Ideales Vakuum",
+        premiseDE: "Reibungsfreies ideales Vakuum",
+        premiseZH: "理想无摩擦真空环境",
+        realityTermDE: "Dissipation & Reibung",
+        realityDE: "Luftwiderstand, Reibungsverluste & Dissipation",
+        realityZH: "空气阻力、摩擦生热与机械能量耗散",
+        consequenceDE: "Erzwingt dissipative Korrekturterme bei realen Bewegungsabläufen.",
+        consequenceZH: "真实动力学必须引入阻尼衰减修正项，能量不可逆地耗散为内能。",
+      },
+      {
+        id: "p2",
+        premiseTermDE: "Sekantensteigung",
+        premiseDE: "Durchschnittliche Rate (Sekantensteigung)",
+        premiseZH: "宏观平均变化率（割线斜率）",
+        realityTermDE: "Differentialquotient",
+        realityDE: "Momentane Spitzenwerte & infinitesimale Dynamik (Tangente)",
+        realityZH: "瞬时加速度峰值与微观变化率（切线斜率）",
+        consequenceDE: "Macht den Grenzwertübergang (Limes) für präzise Momentangeschwindigkeiten unumgänglich.",
+        consequenceZH: "迫使数学建立极限逼近工具，只有切线斜率才能刻画微观瞬时状态。",
+      },
+      {
+        id: "p3",
+        premiseTermDE: "Glatte Kontinuität",
+        premiseDE: "Kontinuierliche differenzierbare Kurve",
+        premiseZH: "理想连续光滑可导曲线",
+        realityTermDE: "Diskrete Messwerte",
+        realityDE: "Diskrete Messpunkte & statistische Messunsicherheiten",
+        realityZH: "离散的实验采样点与测量系统误差",
+        consequenceDE: "Erfordert Regressionsanalysen und Vertrauensintervalle statt reiner Formelauswertung.",
+        consequenceZH: "要求实验科学建立统计置信区间，不能简单用单点代入理想函数。",
+      },
+      {
+        id: "p4",
+        premiseTermDE: "Deterministische Kausalität",
+        premiseDE: "Deterministische Berechenbarkeit",
+        premiseZH: "确定性解析公式计算",
+        realityTermDE: "Nichtlineare Dynamik",
+        realityDE: "Nichtlineare Effekte, Störgrößen & Schwingungen",
+        realityZH: "非线性外部扰动、共振与混沌敏感性",
+        consequenceDE: "Begrenzt Langzeitprognosen und erfordert numerische Näherungsverfahren.",
+        consequenceZH: "对初值的敏感性使得长期精准预报失效，必须依托数值逼近模拟。",
+      },
+    ],
+  };
+}
+
+/**
+ * 为任意未在预设库中的主题生成真实的考场 0 分排雷改错诊断 (Schritt 4: Absturz-Falle)
+ */
+export function createFallbackExamTrapCorrection(
+  title: string,
+  fach: string
+): ExamTrapCorrectionData {
+  const normFach = fach.trim().toLowerCase();
+  if (normFach.includes("sowi")) {
+    return {
+      studentAnswerDE: `»In Bezug auf »${title}« muss der Staat durch direkte Preisfestsetzungen und Regulierungen dafür sorgen, dass niemand Verluste erleidet.«`,
+      studentAnswerZH: `»关于 »${title}«，国家必须通过行政命令直接统制定价并严格管控，确保没有任何市场主体承受亏损。«`,
+      fatalFlawPointDE: "Zerstörung der ökonomischen Lenkungsfunktion und Verletzung des Prinzips der Marktkonformität (0 NP).",
+      fatalFlawPointZH: "摧毁了价格的稀缺信号与资源配置职能，违反了社会市场经济‘符合市场原则’的基本底线（0 分致命伤）。",
+      examinerVerdictDE: "Klausur-Regel: In der Sozialen Marktwirtschaft greift der Staat ordnungspolitisch als Schiedsrichter ein, nicht als Planwirtschaftler. Interventionen müssen marktkonform sein.",
+      examinerVerdictZH: "考官阅卷准则：在德国社会市场经济中，国家是制定竞争规则的裁判员而非包办一切的计划员。干预必须符合市场原则，通过社保与转移支付兜底，而非锁死价格机制。",
+    };
+  }
+
+  if (normFach.includes("philo")) {
+    return {
+      studentAnswerDE: `»Im Kontext von »${title}« ist eine Handlung moralisch gut, solange der Handelnde aus egoistischen Motiven subjektiv glücklich damit ist.«`,
+      studentAnswerZH: `»在 »${title}« 相关的伦理情境中，一项行为只要符合当事人的自利动机并在主观上让他感到快乐，就是道德上正当的。«`,
+      fatalFlawPointDE: "Rückfall in naiven psychologischen Egoismus und Verwechslung von Neigung (subjektiv) mit moralischer Pflicht (objektiv).",
+      fatalFlawPointZH: "跌入庸俗心理利己主义，严重混淆了主观情感偏好（Neigung）与客观道德律令（Pflicht）。",
+      examinerVerdictDE: "Klausur-Regel: Philosophie verlangt intersubjektive Begründung! Weder Kant (Pflicht aus reiner praktischer Vernunft) noch Bentham (größtes Glück aller Betroffenen) billigen bloßen privaten Egoismus.",
+      examinerVerdictZH: "考官阅卷准则：哲学论证必须具备主体间有效性！无论是康德（纯粹实践理性的客观法则）还是功利主义（所有受影响者的普遍福祉），都坚决否定狭隘的主观自私。",
+    };
+  }
+
+  if (normFach.includes("deutsch")) {
+    return {
+      studentAnswerDE: `»Bei der Analyse von »${title}« fasst der Schüler einfach nur nacherzählend zusammen, wer mit wem redet, und bewertet die Figur nach Sympathie.«`,
+      studentAnswerZH: `»在分析 »${title}« 时，考生只是小学作文式地复述谁跟谁说了什么，并凭个人好恶对人物进行道德审判。«`,
+      fatalFlawPointDE: "Reine Inhaltsangabe (AFB I) statt textimmanenter Funktionsanalyse (AFB II) von Sprachgestus und Epochenhintergrund.",
+      fatalFlawPointZH: "纯粹情节复述（AFB I），完全缺少对语言修辞构造、潜台词与时代矛盾的深入解剖（AFB II）。",
+      examinerVerdictDE: "Klausur-Regel: Der Deutsch-Klausur-Dreischritt verlangt zwingend: Beleg (Textstelle) -> sprachliches Mittel / rhetorische Figur -> Funktion für die Figurenkonstellation und Leserlenkung.",
+      examinerVerdictZH: "考官阅卷准则：德语文科大题必须严格落实三步走：原文引证（Beleg） -> 修辞手段（Mittel） -> 人物关系与读者接受功能（Funktion）。",
+    };
+  }
+
+  // MINT
+  return {
+    studentAnswerDE: `»Um die Gesetzmäßigkeit von »${title}« zu beweisen, reicht es aus, eine einzige Messung durchzuführen und einen Schätzwert anzugeben.«`,
+    studentAnswerZH: `»为了证明 »${title}« 的物理/数学规律，只需要做一次实验测量并估算一个大概数值即可。«`,
+    fatalFlawPointDE: "Fehlende Fehlerrechnung, Verwechslung von Einzelfallbeobachtung mit naturwissenschaftlicher Induktion bzw. mathematischem Beweis.",
+    fatalFlawPointZH: "缺失测量误差分析，将个别偶然数据误当成普适性自然科学规律或数学证明。",
+    examinerVerdictDE: "Klausur-Regel: Wissenschaftliche Validität erfordert die saubere Trennung von Modellannahme, Messunsicherheit und formaler mathematischer Deduktion.",
+    examinerVerdictZH: "考官阅卷准则：自然科学结论必须严格区分理论假定前提、测量误差区间与严谨的形式数学推导。",
+  };
+}
+
+/**
  * 赋予任意学科概念生动有趣的 Study-Mate 故事化剧情、费曼人话白话、两副眼镜辩证双轨、趣味历史轶事与搭载考纲笔记
  */
 export function enrichConceptWithStudyMateAndNotes(
@@ -1769,41 +2408,41 @@ export function enrichConceptWithStudyMateAndNotes(
   const intuitionDilemma: IntuitionDilemmaData =
     concept.intuitionDilemma || createFallbackIntuitionDilemma(title, normFach);
 
-  // 2. 剧情角色与战役情景 (Story Hook & Drama)
+  // 2. 剧情角色与学术使命 (Story Hook & Academic Mission - 无中二套话)
   let storyHook: StoryHookData;
   if (normFach.toLowerCase().includes("sowi")) {
     storyHook = {
-      roleDE: "Wirtschaftsberater im Krisenrat",
-      roleZH: "市长直属经济改革规划委员",
-      scenarioDE: `Krise im Stadtrat: Vor der entscheidenden Freitagsabstimmung streiten Parteien und Interessengruppen ueber »${title}«. Finde die Balance zwischen Wettbewerb und sozialem Schutz!`,
-      scenarioZH: `虚拟城邦告急：市议会周五就 »${title}« 展开激辩，利益各方僵持不下。需要你厘清底层因果与制度传导机理，提出兼顾市场效率与社会兜底的破局方案！`,
+      roleDE: "Wirtschaftspolitischer Analyst",
+      roleZH: "宏观制度经济分析员",
+      scenarioDE: `Klausurszenario: Untersuche die Verteilungswirkungen und Anreizstrukturen von »${title}«. Finde die Balance zwischen Wettbewerb und sozialem Schutz!`,
+      scenarioZH: `考场核心研习：剖析 »${title}« 的微观激励机制与制度约束，厘清市场配置效率与社会国家兜底的考纲踩分点。`,
     };
   } else if (normFach.toLowerCase().includes("philo")) {
     storyHook = {
-      roleDE: "Chef-Justiziar im Ethischen Tribunal",
-      roleZH: "首席道德裁决官与思辨法官",
-      scenarioDE: `Ein moralisches Dilemma erschuettert das Gericht: Nutzenkalkuel prallt unversoehnlich auf Pflichtenethik rund um »${title}«. Faelle ein unanfechtbares Sach- und Werturteil!`,
-      scenarioZH: `伦理法庭上的激辩：当功利主义的快乐算盘遇上绝对尊严防线，围绕 »${title}« 的两难抉择亟待你以严密的第一性原理给出事实与价值评价！`,
+      roleDE: "Ethik-Analyst",
+      roleZH: "哲学伦理批判研究员",
+      scenarioDE: `Klausurszenario: Beurteile die moralische Legitimität von »${title}« nach Kants Pflichtenethik und dem Utilitarismus.`,
+      scenarioZH: `考场核心研习：依照康德定言命令与功利主义后果原则，对 »${title}« 展开严谨的第一性原理正当性事实与价值评价。`,
     };
   } else if (normFach.toLowerCase().includes("deutsch")) {
     storyHook = {
-      roleDE: "Dramaturgie-Analyst am Hoftheater",
-      roleZH: "魏玛戏剧解剖顾问与文学侦探",
-      scenarioDE: `Tragoedien-Premiere: Goethes Faust und Mephisto tragen den Widerstreit von Vernunft und Trieb aus. Seziere die rhetorische Dynamik von »${title}«!`,
-      scenarioZH: `浮士德走出书斋，悲剧与赌约序幕拉开：理智与深渊在 »${title}« 处碰撞。需要你化身文学侦探，解剖台词背后的狂飙突进精神与心智暗涌！`,
+      roleDE: "Literaturwissenschaftler",
+      roleZH: "文本修辞与戏剧解剖员",
+      scenarioDE: `Klausurszenario: Untersuche die textuelle Inszenierung, rhetorischen Mittel und Leserlenkung in Bezug auf »${title}«.`,
+      scenarioZH: `考场核心研习：深入解剖与 »${title}« 相关的时代修辞构造、人物核心矛盾与读者接受引导策略。`,
     };
   } else if (normFach.toLowerCase().includes("mathe")) {
     storyHook = {
-      roleDE: "Flugbahn- und Tangenten-Ingenieur",
-      roleZH: "航天轨道与变率计算工程师",
-      scenarioDE: `Raketen-Telemetry meldet Kursabweichung: Durchschnittliche Differenzenquotienten genuegen nicht mehr. Bestimme die exakte lokale Aenderungsrate von »${title}«!`,
-      scenarioZH: `航天轨道遥测告急：平均变化率割线已无法应对瞬时加速度漂移！必须利用导数切线与极限工具求出 »${title}« 的精确瞬时变化率与极值！`,
+      roleDE: "System-Mathematiker",
+      roleZH: "应用数学分析员",
+      scenarioDE: `Klausurszenario: Bestimme die exakte lokale Änderungsrate, das Grenzverhalten und die Extremwerte von »${title}«.`,
+      scenarioZH: `考场核心研习：精确求解 »${title}« 的变化率极限、几何切线斜率与关键驻点。`,
     };
   } else {
     storyHook = {
       roleDE: "KLP-Chefanalyst der Fachkommission",
       roleZH: "考纲学科核心研习领航员",
-      scenarioDE: `Forschungsauftrag: Entschluessle die Gesetzmaessigkeiten und Kausalstrukturen von »${title}« fuer die anstehende Klausurbewertung!`,
+      scenarioDE: `Forschungsauftrag: Entschlüssle die Gesetzmäßigkeiten und Kausalstrukturen von »${title}« für die anstehende Klausurbewertung!`,
       scenarioZH: `学术探究使命：深入解剖 »${title}« 的底层运行规律与因果网络，锁定北威州考场 15 NP 踩分关键！`,
     };
   }
@@ -1929,6 +2568,12 @@ export function enrichConceptWithStudyMateAndNotes(
     tags: ["EF", normFach, "KLP-NRW", "Wissensnotiz"],
   };
 
+  // 8. 概念与现实配对 (Konzept-Puzzle) & 考场找茬排雷 (Exam-Trap)
+  const konzeptPuzzle =
+    concept.konzeptPuzzle || createFallbackKonzeptPuzzle(title, normFach);
+  const examTrapCorrection =
+    concept.examTrapCorrection || createFallbackExamTrapCorrection(title, normFach);
+
   return {
     ...concept,
     intuitionDilemma,
@@ -1941,6 +2586,8 @@ export function enrichConceptWithStudyMateAndNotes(
     funFact: concept.funFact || funFact,
     studyMateProbes: concept.studyMateProbes || studyMateProbes,
     attachedNote: concept.attachedNote || attachedNote,
+    konzeptPuzzle,
+    examTrapCorrection,
   };
 }
 
