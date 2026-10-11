@@ -9,9 +9,12 @@
   --surface: #FFFFFF;
   --overlay: rgba(24, 24, 27, 0.28);
   --ink: #18181B;
+  --ink-muted: #52525B;
   --gray: #71717A;
   --line: #E4E4E7;
   --accent: #2563EB;
+  --focus: #111111;
+  /* --success 保留但课程/仪表盘禁用绿字绿卡，语义正确态用墨字+对勾图标；吉祥物fox-orange/gold/red仅吉祥物豁免 */
   --success: #16A34A;
   --warning: #DC2626;
 

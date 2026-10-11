@@ -187,6 +187,15 @@ tags: [EF, Meta, App, TeachingStudio, Duolingo, Pacing, MicroWorld, Architecture
   - **Step 3: `microworld`（微世界动手目标挑战）**：给出明确的仿真操作目标（如“将失业率控制在 4% 以下且通胀小于 2%”），动态嵌入交互微世界；
   - **Step 4: `trap`（考场陷阱排雷）**：呈现真实考卷中阅卷老师常扣分的易混淆典型错误，要求学生识别并排除；
   - **Step 5: `quiz`（15 NP 标答冲刺）**：核心采分关键词装配与会考范句验证。
+- **步数版本矩阵**（`lessonStepFlow` 支持以下档位，按课型自适应编译）：
+
+  | 步数 | 档位 | 适用场景 |
+  | :--- | :--- | :--- |
+  | 3 步 | `concept_light` | 纯概念辨析、文学修辞、事实性记忆（直觉 -> 概念辨析 -> 15 NP 小测） |
+  | 5 步 | Enterprise-v4 | 默认完整流（直觉 -> 概念 -> 微世界 -> 陷阱 -> 标答） |
+  | 6 步 | didaktik 实装 | 当前实装档位（5 步 + 苏格拉底反思设问） |
+  | 8 步 | v5 存量 | 历史存量版本，维护兼容 |
+  | 9 步 | 遗产 | 最早遗产版本，仅归档参考 |
 
 ### 3.5 全局状态机与持久化桥梁 (`teachingStore.ts`)
 - **职能**：统一管理关卡通关历史、打卡连续天数、总经验值与技能树穿透。
@@ -243,7 +252,7 @@ tags: [EF, Meta, App, TeachingStudio, Duolingo, Pacing, MicroWorld, Architecture
   - 节点排列呈垂直波浪河流，提供 `Starten ->` 与 `Wiederholen ->` 交互；
   - **单元结业里程碑宝箱（Milestone Chest）**：章节末端的圆形宝箱徽章。通关全单元所有关卡后，自动点亮 `+50 XP Meilenstein-Bonus` 并解锁综合会考测评。
 
-### 4.3 多邻国全屏上课运行器 (`InteractiveLessonRunner.tsx`)
+### 4.3 多邻国沉浸式右侧铺满上课运行器（非原生全屏，左侧导航常驻）(`InteractiveLessonRunner.tsx`)
 - **顶部发丝进度与连击指示**：
   - 左侧：优雅退出按钮（触发带有防误触二次确认的弹窗）；
   - 中间：1.5px 发丝级渐进墨黑进度条（`1 / 5`）；
@@ -289,6 +298,7 @@ tags: [EF, Meta, App, TeachingStudio, Duolingo, Pacing, MicroWorld, Architecture
 
 1. **Tufte 纯黑白学术纸墨风**：
    - 严禁出现杂乱彩色背景卡片；严格使用 `--ink`（墨黑）、`--paper`（宣纸白）、`--paper-subtle`（灰底）与 1px `--line`（发丝线）；
+   - 禁浅绿 `emerald-200/300/400` 与低对比度绿（AAA < 7:1），允许深绿 `emerald-950/900` 作动能/正确语义色（禁绿令收敛，互见 PDG §3.1 / SOP §2.1）；
    - 严禁使用 Tailwind 动态投影类名（`shadow-*`）；
    - 严禁使用斜体（`italic`）。
 2. **严格零 Emoji（Zero Emoji Policy）**：
@@ -298,7 +308,7 @@ tags: [EF, Meta, App, TeachingStudio, Duolingo, Pacing, MicroWorld, Architecture
    - 任何 SVG 变换与缩放必须显式绑定几何中心坐标：
      `style={{ transformOrigin: `${cx}px ${cy}px`, transformBox: "view-box" }}`，杜绝悬停右下偏心漂移。
 4. **自动化测试与门禁标准**：
-   - 单测覆盖：`src/modules/teaching/` 下 8 个独立测试套件 76 个测试必须 100% 绿灯；
+   - 单测覆盖：`src/modules/teaching/` 下 8 个独立测试套件 76 个测试必须 100% 绿灯（仅教学域子集）；
    - 契约测试：`modules.test.tsx` 零违规扫描（扫描全站文件禁止 Emoji、阴影、斜体）；
    - 类型检查：`cmd /c "npx tsc -b"` 必须 0 报错；
    - 知识库审计：`python scripts/vault-check.py` 必须输出 `PASS`。

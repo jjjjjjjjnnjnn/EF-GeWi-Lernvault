@@ -62,6 +62,8 @@ tags: [EF, Meta, PhET, Labor, SOP, Architecture]
 
 > ⚠️ **严防弱对比度反面教材**：绝对禁止在浅色背景上使用 `text-emerald-200/300/400` 或黄色荧光文字！任何文本与背景的对比度必须 $\ge 7:1$（WCAG AAA 级）。
 
+> **收敛注（禁绿令收敛）**：禁浅绿 `emerald-200/300/400` 与低对比度绿（AAA < 7:1），允许深绿 `emerald-950/900` 作动能/正确语义色。互见 PDG §3.1。
+
 ### 2.2 视觉排版铁律 (Editorial Spread Layout)
 1. **破除“套娃卡片”（Anti-Box-in-Box）**：严禁在一个容器内部嵌套层叠多个圆角粗边框小卡片；
 2. **纯手写内联 SVG（Zero Emoji Policy）**：
@@ -165,7 +167,7 @@ const handlePointerUp = (e: React.PointerEvent<HTMLCanvasElement>) => {
 
   {/* 3. 中国留学生直觉速记法（CN-Methode） */}
   <div className="p-3 bg-[var(--surface)] border border-[var(--line)]">
-    <div className="font-mono text-[10px] text-[var(--ink-muted)] uppercase mb-1">03 / 🇨🇳 CN-Methode</div>
+    <div className="font-mono text-[10px] text-[var(--ink-muted)] uppercase mb-1">03 / CN-Methode</div>
     <div className="font-serif font-medium text-[var(--ink)] mb-1">{cnMethodTitle}</div>
     <p className="text-[var(--ink-muted)] text-[11px] leading-relaxed">{cnMethodIntuition}</p>
   </div>

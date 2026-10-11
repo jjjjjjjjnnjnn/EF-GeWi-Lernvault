@@ -36,24 +36,47 @@ tags: [EF, Meta]
 ## 三、 系统核心架构设计 (Architecture)
 
 ### 1. 数据结构：有向无环图 (Skill Tree DAG)
+> 接口唯一真相源：`App-EF-Lernvault/src/engine/skillTree.ts:75-111`（`KnowledgeNode`）；
+> DAG 不变量定义见 `00_META/presets/README.md:115-123`。本节为只读镜像，改接口先改 `skillTree.ts`。
+
 ```typescript
 /** 节点通关状态机 */
 export type SkillNodeStatus = "locked" | "available" | "in_progress" | "mastered";
 
-/** 技能图谱节点定义 */
+/** 前置依赖解锁逻辑门（默认 "AND"） */
+export type UnlockLogic = "AND" | "OR";
+
+/** 学段层级（Sek_I → EF → Q1 → Q2 → Uni_Prep） */
+export type CurriculumTier = "Sek_I" | "EF" | "Q1" | "Q2" | "Uni_Prep";
+
+/** 学习流程推进阶段（对齐 skillTree.ts LearningStage） */
+export type LearningStage =
+  | "einfuehrung" | "grundlagen" | "vertiefung" | "synthese" | "klausur_praxis";
+
+/** tierRank：Sek_I=0、EF=1、Q1=2、Q2=3、Uni_Prep=4（由 curriculumTier 派生，见 presets/README §6） */
+
+/** 技能图谱节点定义（富 KnowledgeNode，对齐 skillTree.ts:75-111） */
 export interface CourseSkillNode {
   readonly id: string;                     // 唯一标识，如 "sowi-markt-01"
   readonly fach: FachId;                   // 学科，如 "SoWi", "Mathe"
   readonly titleDE: string;                // 德语名称（会考标准术语）
   readonly titleZH: string;                // 中文名称（通俗认知）
   readonly level: 1 | 2 | 3;               // 难度梯度（AFB I, II, III）
-  readonly xp: number;                     // 通关奖励经验值（如 100 XP）
-  readonly prerequisites: readonly string[];// 前置节点 ID 列表（必须全部通关才解锁）
+  readonly stage: LearningStage;            // 学习流程进阶阶段（einfuehrung/grundlagen/vertiefung/synthese/klausur_praxis）
+  readonly xpReward: number;                // 通关奖励经验值（如 100 XP）
+  readonly prerequisites: readonly string[];// 前置节点 ID 列表
+  readonly unlockLogic?: UnlockLogic;       // 解锁逻辑门，默认 "AND"（"OR" = 任一前置通关即解锁）
+  readonly layerIndex?: number;             // 流程层级（0, 1, 2… 连续整数，越大越靠外环）
+  readonly tierRank?: number;               // 学段秩（由 curriculumTier 派生，0-4）
   readonly linkedReiseId?: string;         // 关联的互动微课 ID（Lernreise）
   readonly linkedNoteId?: string;          // 关联的考纲笔记 ID（Library）
   readonly linkedToolId?: string;          // 关联的认知教具 ID（如 ethik-waage）
   readonly coordinates?: { x: number; y: number }; // 拓扑排布静态或动态坐标
 }
+
+/** DAG 防死锁不变量（构造性保证，与 presets/README.md:115-123 对齐）：
+ *  每条前置依赖必须满足 layerIndex(前置) < layerIndex(本节点) 且 tierRank(前置) <= tierRank(本节点）。
+ *  满足此不变量 ⇒ 图必然是 DAG，detectGraphCycles 不可能报错。违反则拒绝入库。 */
 
 /** 学科图谱全貌 */
 export interface SubjectSkillGraph {
@@ -82,11 +105,17 @@ export function computeGraphUnlockStates(
       continue;
     }
 
-    // 检查所有前置依赖是否全部完成
-    const allPrerequisitesMet = node.prerequisites.every((preId) => completedNodeIds.has(preId));
+    // 解锁逻辑门：AND = 全部前置通关才解锁；OR = 任一前置通关即解锁（默认 AND，对齐 skillTree.ts computeGraphUnlockStates）
+    const logic = node.unlockLogic ?? "AND";
+    const prereqs = node.prerequisites ?? [];
+    const unlocked = prereqs.length === 0
+      ? true
+      : logic === "OR"
+        ? prereqs.some((preId) => completedNodeIds.has(preId))
+        : prereqs.every((preId) => completedNodeIds.has(preId));
 
-    if (allPrerequisitesMet) {
-      statusMap.set(node.id, "available"); // 前置均已满足，解锁可学！
+    if (unlocked) {
+      statusMap.set(node.id, "available"); // 前置满足，解锁可学！
     } else {
       statusMap.set(node.id, "locked");    // 前置未齐，置灰加锁
     }
@@ -133,7 +162,7 @@ export function computeGraphUnlockStates(
 
 * **阶段一：图谱数据拓扑模型与依赖解锁引擎 (Milestone 1)**：
   - 提取十大学科的课程树依赖映射表（已有的 356 门微课 + 412 篇笔记）；
-  - 实现 `skillTree.ts`（DAG 依赖解析器、解锁状态机算法、单测 100% 绿灯）。
+  - 实现 `skillTree.ts`（DAG 依赖解析器、解锁状态机算法、单测绿灯；覆盖率数字待验证）。
 * **阶段二：Tufte 纯黑白原生 SVG 技能树画布研制 (Milestone 2)**：
   - 开发独立组件 `SkillTreeCanvas.tsx`（RPG 通关主干路线、锁止徽标、解锁微光动效、节点卡片、视口平移缩放）；
   - 编写并跑通组件交互单测。

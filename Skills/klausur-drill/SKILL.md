@@ -9,7 +9,7 @@ description: EF-Klausur训练：按NRW Operatoren出题、批改、写Fehlerlog�
 用户说“出题”“模拟考”“帮我改”“Klausur üben”时加载本skill。
 
 ## 步骤
-1. 读目标学科 `Lehrplan.md` 确认EF范围 + 读 `00_META/Operatoren-NRW-GeWi.md` 确认Operatoren。
+1. 读目标学科 `Lehrplan.md` 确认EF范围 + 读 `00_META/Curriculum/Deutschland/Operatoren-NRW-Alle-Faecher.md` 确认Operatoren（230动词AFB分级版；旧文件 `00_META/Operatoren-NRW-GeWi.md` 已降级，仅历史对照）。
 2. 出题必须带Operatoren动词，且三段式：darstellen → analysieren → beurteilen（SoWi/Philo通用）。
 3. 用户作答后批改只抓四类错：Operator verfehlt / Fachbegriff falsch / Beleg fehlt / Vorgehen falsch（程序选择错误，过程维，与结果项等权重），并给Klausur-Satz替换句。
 4. 错题写入该科 `Klausur-Training/Fehlerlog.md` 一行（Datum/Aufgabe/Fehler/Korrektur）。

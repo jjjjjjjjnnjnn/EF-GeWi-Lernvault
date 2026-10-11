@@ -14,6 +14,8 @@ version: Enterprise-v4
 > **核心受众**: 外部顶级大模型（Claude 3.7 Sonnet / GPT-4o / o3-mini）与课程教研架构师。  
 > **使用方式**: 用户可将本文档直接全文复制发送给外部 AI，或截取「第 2 节：外部 AI 核心发卷指令」连同「第 5 节：40 门核心课题矩阵」进行批量分批生产与互联网定向抓取。产出课件直接存入本仓库 `Lernreise/` 根目录下，文件名为 `<Fach>-<Thema-Kebab-Case>-L1.md`。
 
+> **版本声明 / Versionsstand (2026-10-11，`Lernreise/` 实测 361 篇）**：库存事实为 **360× Enterprise-v5（8 步制）+ 1× Lesson-v3 例外，库内 0× v4 成品**——⚠️ 任务简报“5×v4 5步”与实测不符（v4 仅存于本总纲 §4–§5 四范例文本，无独立成品文件）。**新生产默认 v5（8 步）**；v4 模板 A/B/C/D 冻结，仅作标杆参照，不再用于新课。**§8 验收为 v4 口径，仅判 v4 标杆范例；严禁以 §8 五步/单一样式 Option/Archetyp 行卡 v5 新课“违规”**（此即 356 篇误判根源）。
+
 ---
 
 ## 1. 深度教学法与架构剖析：为什么传统网课与早期课件会“稀碎、学不会”？
@@ -659,7 +661,7 @@ Klausur-Satz: `Beim Grenzübergang $h \to 0$ geht die Sekante durch $P(x_0 \mid 
 ---
 
 ### 严格的生产规范（必须 100% 遵照，否则无法通过自动化工程校验）：
-1. **Frontmatter 格式**：必须为标准 YAML，包含 fach, thema, level: 1, ziel: Klausur, xp: 100, operatoren: [...], klausurrelevant: true, datum: 2026-10-10, tags: [EF, <Fach>, ...], version: Enterprise-v4。
+1. **Frontmatter 格式**：必须为标准 YAML，包含 fach, thema, level: 1, ziel: Klausur, xp: 100, operatoren: [...], klausurrelevant: true, datum: <生产当日 YYYY-MM-DD>, tags: [EF, <Fach>, ...], version: Enterprise-v5（新生产默认 v5；仅复刻 §5 四标杆范例时才写 Enterprise-v4）。
 2. **文件名命名法则**：`<Fach>-<Thema-Kebab-Case>-L1.md`（如 `SoWi-Modell-des-vollkommenen-Marktes-L1.md`），严禁变音符号与空格（必须用 ae/oe/ue 代替 ä/ö/ü）。
 3. **语言排版铁律**：中文深度认知理解在上，德语考场高分学术表达（Klausur-Satz）在下。术语必须标注中德双语。
 4. **数学与科学公式规范**：所有变量、方程、物理化学式必须使用标准的 LaTeX KaTeX 语法（行内 `$f'(x)$`，独立行 `$$...$$`）。
@@ -668,16 +670,41 @@ Klausur-Satz: `Beim Grenzübergang $h \to 0$ geht die Sekante durch $P(x_0 \mid 
    - 严禁虚假 RPG 网文剧情（直接切入真实历史案例、司法争议或名篇原句）；
    - 严禁在 Step 1 堆砌大段教材阅读（必须在 10 秒内强制进行 A/B 直觉站队，选后即时弹出机制解析）；
    - 严禁使用 Emoji，所有箭头统一使用 ASCII 字符 `->`。
-6. **完整包含五大步骤**：
+6. **完整包含五大步骤（v4 冻结版；v5 新课为八步制，须另取 v5 生产提示词，不得用本五步指令套写 v5 课）**：
    - ## Schritt 1 — entdecken (Intuitions-Check & Kausaler Dilemma-Anker)
-   - ## Schritt 2 — ausprobieren (Interaktiver Sandkasten & Parameter-Labor mit [Werkzeug: <id>])
+   - ## Schritt 2 — ausprobieren (Interaktiver Sandkasten & Parameter-Labor mit [Werkzeug: <canonical-id, 见第 8 条注册表>])
    - ## Schritt 3 — entdecken (Kausalkette & KLP-Begriffsmatrix)
    - ## Schritt 4 — check (Fehlvorstellung & Anti-Patterns)
    - ## Schritt 5 — szenario (15 NP Klausur-Transfer, Urteilsbildung AFB III)
 7. **语法与标签格式强制约束（预防 Subagent 共性偏差）**：
-   - **教具标签**：必须逐字严格写作 `[Werkzeug: <id>]`（例如 `[Werkzeug: markt-sim]`），严禁漏掉方括号或写作 `Werkzeug ID: xxx`；
-   - **选项标号**：必须逐字严格写作 `- [ Option A ]` 与 `- [ Option B ]`（必须带方括号与空格），理科也必须用此标号，严禁写成 `预测 A`、`选项 A` 或无标号文本；
+   - **教具标签**：必须写作 `[Werkzeug: <canonical-id>]`（例如 `[Werkzeug: orderbuch-sim]`），严禁漏掉方括号或写作 `Werkzeug ID: xxx`；**严禁 `[Werkzeug: <id>]` / `[Werkzeug: <tool-id>]` 等占位符**——id 必须出自本指令第 8 条注册表，旧 ID 按映射表改写；
+   - **选项标号**：`- [Option A]` 与 `- [ Option A ]` **两种均合法**（紧凑/宽松各一；实测全库宽松式零命中，校验器只认一种即全军覆没），A/B 均须带方括号，理科亦同；严禁写成 `预测 A`、`选项 A` 或无标号文本；加粗与否不限；
+   - **Archetyp 行可选**：头部 `> 💡 **Didaktischer Archetyp**: ...` 行为**可选项**（实测全库仅 5 篇含此行），缺失**不得**判违规；
    - **Step 5 角色与题解规范**：模板 A/B/C 强制要求 `ROLLE: ...` 与 `RUBRIC: ...`；模板 D（理科）免除 `ROLLE`，但必须严格包含 `MUSTERLÖSUNG (15 NP Dreischritt: Schritt 1: Ansatz -> Schritt 2: Rechnung -> Schritt 3: Interpretation)` 并给出三步推导要点。
+8. **教具 Canonical ID 注册表（v5 新生产唯一合法表，共 16 件；§6 旧 ID 一律按右列改写）**：
+   | # | Canonical ID | 学科/用途 | 退役旧 ID 映射 |
+   | :--- | :--- | :--- | :--- |
+   | 1 | `magisches-viereck` | SoWi 目标冲突 | — |
+   | 2 | `gini-allocator` | SoWi 分配不均 | `balance-board`（SoWi 课）改用此件 |
+   | 3 | `orderbuch-sim` | SoWi 市场出清 | `markt-sim` -> `orderbuch-sim`（库内 `orderbuch` 视为同一件，统一写作 `orderbuch-sim`） |
+   | 4 | `ethik-waage` | Philo 功利/义务权衡 | `balance-board`（Philo 课）改用此件 |
+   | 5 | `tangent-slider` | Mathe 割线到切线 | — |
+   | 6 | `box-optimizer` | Mathe 极值优化 | — |
+   | 7 | `kinematik-sim` | Physik/Sport 运动学 | `kinematik` / `kinematik-lab` / `schiefe-ebene` -> `kinematik-sim` |
+   | 8 | `haber-bosch` | Chemie 平衡移动 | `le-chatelier-sim` -> `haber-bosch` |
+   | 9 | `osmose-lab` | Bio 渗透/扩散 | — |
+   | 10 | `satzbau-lego` | Deutsch 句式拼装 | 库内 `lego`（语言类）统一写作 `satzbau-lego` |
+   | 11 | `gewi-reading` | GeWi 文本精读 | 库内 `text-analyse`（GeWi 课）改用此件 |
+   | 12 | `oral-timer` | Musik/Sport 口试计时 | — |
+   | 13 | `highlighter` | Deutsch/Englisch 修辞显微镜 | — |
+   | 14 | `rawls-sim` | Philo 无知之幕 | — |
+   | 15 | `titration-lab` | Chemie 滴定 | 库内 `formula`（滴定课）改用此件 |
+   | 16 | `wahlsystem-sim` | SoWi 选举制度 | — |
+   （注：`formula` 为过渡兼容 ID，仅既有理科存量课保留，新课须用对口 canonical；裸 `balance` 已退役，按学科归属改写。）
+9. **超纲红线（EF 范围硬约束，违者整课打回）**：
+   - **SoWi 止于 Viereck**：`Magisches Viereck` 为 EF 讲授上限；`Magisches Sechseck`、Phillips-Kurve、Okun-Gesetz **不得作为新授核心概念**，仅可放入 Q 池/拓展问答（§6 表第 4 行“菲利普斯曲线两难”一句为存量背景表述，特此祖父化，不作新课范例）；
+   - **Physik 自由落体忽略阻力**：EF 自由落体/抛体一律按真空理想模型（Luftwiderstand = 0），空气阻力仅可在“模型边界”一句中声明，不进入计算；
+   - **每课 ≥1 条真实 vault 外链**：正文必须含至少一条指向本仓库真实文件的相对外链（形如 `[...](../01_Deutsch/...)`，目标文件须存在），杜绝空链与纯外部 URL 充数。
 
 请严格参照《master specification》中对应模板的格式与范文，直接输出完整的 Markdown 内容，不要带有任何多余的寒暄或包装性文本。
 ```
@@ -690,11 +717,13 @@ Klausur-Satz: `Beim Grenzübergang $h \to 0$ geht die Sekante durch $P(x_0 \mid 
 
 - [ ] **路径合规**：保存在 `Lernreise/` 根目录下，文件名为 `<Fach>-<Thema-Kebab-Case>-L1.md`；
 - [ ] **无禁用字符**：纯英文 kebab-case，禁用空格，禁用变音符号（ä/ö/ü 必须写作 ae/oe/ue）；
-- [ ] **Frontmatter 完整**：包含 `fach`, `thema`, `level: 1`, `ziel: Klausur`, `xp: 100`, `operatoren`, `tags`, `version: Enterprise-v4`；
-- [ ] **标签格式严格**：头部与第 2 步必须逐字包含 `[Werkzeug: <id>]`（带方括号）；选项必须严格为 `[ Option A ]` / `[ Option B ]`；
-- [ ] **五步完整闭环**：包含 `## Schritt 1` 至 `## Schritt 5` 且小标题与教具标签格式完全符合模板；
+- [ ] **Frontmatter 完整**：包含 `fach`, `thema`, `level: 1`, `ziel: Klausur`, `xp: 100`, `operatoren`, `tags`；`version` 三者居一：`Enterprise-v5`（新课）/ `Enterprise-v4`（仅 §5 标杆复刻）/ `Lesson-v3`（特批例外），**版本与步数必须自洽**（v5=八步，v4=五步）；
+- [ ] **标签格式**：头部与实验步必须包含 `[Werkzeug: <canonical-id>]`（带方括号，id 出自 §7 第 8 条注册表）；**严禁 `[Werkzeug: <id>]` 占位符**；选项接受 `[Option A]` / `[ Option A ]`（及 B）两种，加粗不限；
+- [ ] **Archetyp 行可选**：`Didaktischer Archetyp` 行缺失不判违规（全库仅 5 篇含此行）；
+- [ ] **步数双轨**：v4 标杆=`## Schritt 1` 至 `## Schritt 5` 五步闭环；v5 新课=八步制（`entdecken`/`ausprobieren`/`check`/`reflexion`）；**严禁以本 §8 五步口径判 v5 课违规**；
 - [ ] **Step 5 角色/三步法**：模板 A/B/C 强制包含 `ROLLE` 与 `RUBRIC`；模板 D 免除 `ROLLE`，强制包含 `15 NP Dreischritt` 步骤；
 - [ ] **绝无假费曼空话**：没有出现“齿轮调节系统”、“宏大社会政治体系”等假大空抽象比喻；
 - [ ] **纯黑白纸墨风 (Tufte)**：全局 0 emoji，所有箭头一律使用 ASCII `->`（严禁出现 unicode 箭头如 →、⇒、←）；
+- [ ] **超纲红线**：SoWi 核心讲授止于 Viereck（Sechseck/Phillips/Okun 仅 Q 池）；自由落体计算忽略阻力；全文 ≥1 条指向库内真实文件的相对外链（目标须存在）；
 - [ ] **公式排版**：所有数学与物理表达式均被 `$ ... $` 或 `$$ ... $$` 严密包裹；
 - [ ] **仓库自动化校验通过**：运行 `python scripts/vault-check.py`，必须输出 `PASS`，0 badnames，0 badglossar。

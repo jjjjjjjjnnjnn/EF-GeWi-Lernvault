@@ -55,6 +55,13 @@ def check_notes():
             ERR.append(f"{rel}: bad fach '{meta.get('fach')}'")
         if meta.get("klausurrelevant") not in ("true", "false"):
             ERR.append(f"{rel}: klausurrelevant must be true/false")
+        raw_tags = meta.get("tags", "")
+        inner = raw_tags.strip().strip("[]")
+        first = inner.split(",")[0].strip().strip("'\"") if inner else ""
+        if first not in ("EF", "Q1", "Q2", "QP"):
+            WARN.append(f"{rel}: tags[0]='{first}' not in EF/Q1/Q2/QP")
+        if "stufe" in meta or "kursart" in meta:
+            WARN.append(f"{rel}: has stufe/kursart key (template-spec drift observable)")
     return n
 
 
@@ -97,6 +104,10 @@ def check_index():
             if not (ROOT / l).exists():
                 miss += 1
                 ERR.append(f"INDEX: missing link {l}")
+    if re.search(r"356\s*\u7bc7", idx):
+        WARN.append("INDEX: stale '356-pian' count text (drift vs actual reisen)")
+    if re.search(r"9\s*\u6b65", idx):
+        WARN.append("INDEX: stale '9-bu' steps text (Lesson-v3 drift)")
     return checked, miss
 
 
@@ -108,10 +119,14 @@ def check_reise():
     for p in sorted(d.glob("*.md")):
         if not re.match(r"[A-Z][A-Za-z]+-.+-L\d\.md", p.name):
             WARN.append(f"Lernreise/{p.name}: naming off (Fach-Thema-Ln.md)")
+        if p.name.startswith("Sowi-") or p.name.startswith("Philo-"):
+            WARN.append(f"Lernreise/{p.name}: Fach prefix case-split (use SoWi-/Philosophie-)")
         meta, body = parse_fm(p.read_text(encoding="utf-8"))
         if meta is None or not meta.get("fach") or not meta.get("thema"):
             ERR.append(f"Lernreise/{p.name}: fach/thema required")
             continue
+        if meta.get("version") != "Enterprise-v5":
+            WARN.append(f"Lernreise/{p.name}: version '{meta.get('version')}' is not Enterprise-v5")
         steps = re.findall(r"##\s*Schritt\s*(\d+)\s*[-—]\s*(\w+)", body)
         typs = {s[1].lower() for s in steps}
         if not steps:
@@ -130,6 +145,15 @@ def check_reise():
                 ERR.append(f"Lernreise/{p.name}: Enterprise-v4 must use ASCII '->' instead of unicode arrows")
             if not re.search(r"\[Werkzeug:\s*[a-zA-Z0-9_\-]+\]", body):
                 ERR.append(f"Lernreise/{p.name}: Enterprise-v4 must contain [Werkzeug: <id>] tag")
+        if "[Werkzeug: <id>]" in body:
+            WARN.append(f"Lernreise/{p.name}: empty [Werkzeug: <id>] placeholder")
+        m_kern = re.search(r"KERNSATZ.*?\n(.*?)(?=##\s*Schritt|\Z)", body, re.S)
+        if m_kern is None:
+            WARN.append(f"Lernreise/{p.name}: missing KERNSATZ block")
+        else:
+            km = re.search(r"Kernsatz:\s*`([^`]*)`", m_kern.group(1))
+            if km is not None and len(km.group(1).strip()) < 20:
+                WARN.append(f"Lernreise/{p.name}: KERNSATZ block <20 chars")
         n += 1
     return n
 

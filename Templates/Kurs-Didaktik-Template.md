@@ -13,15 +13,16 @@ version: Enterprise-v4
 
 # Lernreise: <Thema auf Deutsch> (Level 1, Ziel: Klausur)
 
-> 💡 **Didaktischer Archetyp**: 【请选择四类之一：A: 社科博弈与因果闭环 / B: 伦理法庭与第一性原理 / C: 文学戏剧与修辞透镜 / D: 理科 POE 探究与极值定理】
+> 💡 **Didaktischer Archetyp**（可选，缺失不判违规）: 【请选择四类之一：A: 社科博弈与因果闭环 / B: 伦理法庭与第一性原理 / C: 文学戏剧与修辞透镜 / D: 理科 POE 探究与极值定理】
 > 
-> 🎯 **核心教具标号 (Werkzeug ID)**: `[Werkzeug: markt-sim]` / `[Werkzeug: ethik-waage]` / `[Werkzeug: highlighter]` / `[Werkzeug: tangent-slider]` / `[Werkzeug: balance]`
+> 🎯 **核心教具标号 (Werkzeug ID)**（须出自总纲 §7 第 8 条 16 件注册表，严禁 `<id>` 占位）: `[Werkzeug: orderbuch-sim]` / `[Werkzeug: ethik-waage]` / `[Werkzeug: highlighter]` / `[Werkzeug: tangent-slider]` / `[Werkzeug: kinematik-sim]`（旧 ID 映射：`markt-sim`->`orderbuch-sim`、`balance-board`->按学科改对口件、`kinematik-lab`->`kinematik-sim`、`le-chatelier-sim`->`haber-bosch`）
 
 ---
 
 <!-- 
 ================================================================================
 【规范铁律 · 严禁违背】
+0. 版本：新生产默认 Enterprise-v5（八步制）；本模板为 v4 五步冻结版，仅 §5 标杆复刻用，不得用五步指令套写 v5 新课。
 1. 绝对严禁假费曼套话：禁止输出“在社会政治经济体系中如同联动的调节齿轮系统”等形而上假大白话！
    生活比喻必须包含真实的人、具体的买卖交易或物理动作，字数严禁超过 60 字！
 2. 绝对严禁空洞网文剧情：严禁输出“虚拟城邦告急！市长办公室深夜灯火通明！”等虚假 RPG 废话！
@@ -30,6 +31,9 @@ version: Enterprise-v4
    选后立即浮出因果机制与德国考纲核心术语（Kausalkette & KLP-Termini）。
 4. 语言双轨：中文理解在上，德语考场学术表达（Klausur-Satz）在下。
 5. 纯黑白纸墨风：严禁使用 Emoji，所有箭头统一使用 ASCII 字符 `->`。
+6. 选项标号 `[Option A]` 与 `[ Option A ]` 均合法（加粗不限）；Archetyp 行可选，缺失不判违规。
+7. 教具 ID 须出自总纲 §7 第 8 条 16 件注册表，严禁 `<id>`/`<tool-id>` 占位（旧 ID：markt-sim->orderbuch-sim、balance-board->按学科改对口件、kinematik-lab->kinematik-sim、le-chatelier-sim->haber-bosch）。
+8. 超纲红线：SoWi 核心讲授止于 Viereck（Sechseck/Phillips/Okun 仅 Q 池）；自由落体计算忽略阻力；每课 ≥1 条指向库内真实文件的相对外链。
 ================================================================================
 -->
 
@@ -52,7 +56,7 @@ version: Enterprise-v4
 
 ## Schritt 2 — ausprobieren: Interaktiver Sandkasten & Parameter-Labor
 
-> **教具挂载**: `[Werkzeug: <tool-id>]`
+> **教具挂载**: `[Werkzeug: <canonical-id，如 orderbuch-sim；严禁 <id>/<tool-id> 占位，见总纲 §7 第 8 条注册表>]`
 
 **AUFGABE (Experimentieren & Beobachten, AFB II)**:
 - `<明确的教具调节任务：例如将价格从均衡点向下拉低至 6 欧，观察需求量与供给量缺口的变化>`

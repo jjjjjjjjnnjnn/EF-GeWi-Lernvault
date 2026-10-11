@@ -5,12 +5,18 @@ operatoren: []
 klausurrelevant: true
 datum: YYYY-MM-DD
 tags: [EF, Mathe, <IF/领域>]
-stufe: "EF"
 ---
+
+<!-- OBLIGATORISCH vor dem Ausfuellen lesen:
+  Drei Elemente (缺一不可): ① 知识点 (Kernbegriffe+Struktur)
+  ② 解题方法 (Methoden-Entscheidungsbaum, §3) ③ 真题/训练题+BE采分 (Klausur-Training, §5).
+  Nach dem Schreiben drei Syncs: ① INDEX-Link ② Glossar-Zeile
+  ③ Anki-CSV-Zeile — ein Commit. Frontmatter = genau 6 Keys
+  (fach/thema/operatoren/klausurrelevant/datum/tags), keine Zusatzkeys. -->
 
 # <德语标题> (<中文标题>)
 
-> 💡 **直觉破冰与生活隐喻 (Der intuitive Anker / Alltagsanalogie)**：
+> **0. 中文理解 (Der intuitive Anker / Alltagsanalogie)**：
 > <3–5 句。用最接地气的生活经验、物理运动或商业现象打比方，彻底消除对抽象概念的陌生感。中德双通道投影，让德国学生与中国学生都能在 30 秒内建立脑内空间直觉。>
 >
 > **Klausur-Relevanz (Abitur 核心考点定位)**：
@@ -18,7 +24,7 @@ stufe: "EF"
 
 ---
 
-## 1. 核心概念与 SBF 机理解构 (Kernbegriffe & SBF-Modell)
+## 1. 核心概念 (Kernbegriffe; SBF-Modell als Binnengliederung in §1.2)
 
 ### 1.1 术语与中德对齐表
 | 术语 (DE) | 对应中文 | English (US/AP) | 严谨学术定义 (Fachsprache) / 核心公式 | 考场易错标记 |
@@ -32,7 +38,7 @@ stufe: "EF"
 
 ---
 
-## 2. 知识结构与双重编码图解 (Struktur & Visual Schema)
+## 2. 知识结构 (Struktur & Visual Schema)
 
 ```diagram
     <此处放置 ASCII / SVG 空间图、函数拓扑图、回路因果图或受力矢量图>
@@ -46,7 +52,7 @@ stufe: "EF"
 
 ---
 
-## 3. 解题方法与决策树 (Methoden & Entscheidungsbaum)
+## 3. 解题方法 (Methoden & Entscheidungsbaum)
 
 ```diagram
                [考场题目信号词 / 识别判定 (Signalwörter)]
@@ -69,7 +75,7 @@ stufe: "EF"
 
 ---
 
-## 4. 🇨🇳 中德思维桥梁与技法衔接 (CN-Methode & Transfer)
+## 4. CN-Methode & Transfer (中德思维桥梁与技法衔接)
 
 <!-- 理科必填：对比中国教材解法与德国 Abitur 评分逻辑的异同；文科写「不适用（该科无中国对照技法）」并说明德国特色论证要求 -->
 
@@ -80,7 +86,7 @@ stufe: "EF"
 
 ---
 
-## 5. Klausur-Training & Erwartungshorizont (考场全真训练)
+## 5. Klausur-Training & Erwartungshorizont
 
 ### 5.1 官方题型定位
 | 项 | 内容规范 |
@@ -106,7 +112,7 @@ stufe: "EF"
 
 ---
 
-## 6. Fehlerquellen & 易混对抗矩阵 (Pitfalls & Kontrast)
+## 6. Fehlerquellen & Kontrast (易混对抗矩阵 / Pitfalls)
 
 | 混淆概念对 / 典型错误 | 概念本质差异 | 图像/符号表征差异 | 阅卷老师扣分红线与防错绝招 |
 |---|---|---|---|
@@ -115,7 +121,7 @@ stufe: "EF"
 
 ---
 
-## 7. 融会贯通与跨学科迁移 (Vernetzung & Meta-Transfer)
+## 7. Vernetzung & Meta-Transfer (融会贯通与跨学科迁移)
 
 - **学科横向联结 (Interdisziplinär)**：
   - 🔗 物理/化学/生物联结：<微积分在运动学/反应速率/种群动态中的映射>
