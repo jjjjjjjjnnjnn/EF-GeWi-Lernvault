@@ -29,6 +29,7 @@
 - [Aussen-AI-Qualitaets-Audit-und-Anti-Monotonie-Handbuch](Aussen-AI-Qualitaets-Audit-und-Anti-Monotonie-Handbuch.md) — **课件实质质量审查报告与去重深耕重塑手册（针对外部 AI 敷衍套模的根治案）**
 - [Aussen-AI-Simulations-Review-und-Bug-Audit](Aussen-AI-Simulations-Review-und-Bug-Audit.md) — **学生端全链路模拟审查与隐蔽 Bug 排查任务包（Simulation Walkthrough + Scoring + Bug Hunting，269 课分批）**
 - [TeachingStudio-Spezifikation](TEACHING-STUDIO-SPECIFICATION.md) — **TeachingStudio 教学工坊与多邻国上课河流全景架构规范（商业级拆书排程、4大通用SVG微世界、5步交互上课流与通关奖赏闭环全景规范，外部 AI 对接与扩展必读）**
+- [EXTERNAL-AI-5-STEP-MICROLEARNING-SPEC-AND-PROMPT](EXTERNAL-AI-5-STEP-MICROLEARNING-SPEC-AND-PROMPT.md) — **5 步建构主义互动微课 · 标准化生产规范与外部 AI 批量设计 Prompt（终极标准 v2.0：Zero-Scroll 桌面双栏、零剧透直觉站队、微世界探究、4-vs-4公理拼图、0分答案找茬诊断、15NP双层双语会考金句）**
 - [EXTERNAL-AI-COURSE-PRODUCTION-PROMPT](EXTERNAL-AI-COURSE-PRODUCTION-PROMPT.md) — **外部 AI 课程生产总纲与四大教学模板（Enterprise-v4 破局标准：对标 Anthropic/Brilliant/OpenAI/Study-Mate，五步闭环，四大分科教学模板与40门核心课表生产矩阵，彻底根治假大白话与内容稀碎）** · 模板：[Kurs-Didaktik-Template](../Templates/Kurs-Didaktik-Template.md)
 - [Plan-接手执行](Plan-接手执行.md) — 接手执行计划（任务状态/铁约束/优先级分层/A–D待办清单）
 - **考纲体系（Curriculum）** — [设计总纲](Curriculum/00-Design.md) · [官方源清单](Curriculum/01-Quellen.md)
