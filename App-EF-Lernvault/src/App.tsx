@@ -523,6 +523,16 @@ export default function App() {
           setQuery(n.thema);
         },
       })),
+      ...(vault?.reisen ?? defaultVaultReisen).map((r) => ({
+        id: `reise-${r.id}`,
+        group: lang === "de" ? "Lernreisen" : "互动课程",
+        label: r.thema,
+        sub: `${r.fach} · Level ${r.level} · ${r.ziel}`,
+        run: () => {
+          setActiveReiseId(r.id);
+          switchTab("reise");
+        },
+      })),
       {
         id: "act-knowledge-manager",
         group: lang === "de" ? "Aktionen" : "操作",

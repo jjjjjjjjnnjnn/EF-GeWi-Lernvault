@@ -13,94 +13,6 @@ export interface GeneratedNote {
 
 export const allVaultNotes: GeneratedNote[] = [
   {
-    "id": "deutsch-fachsprache-formulierungsbausteine",
-    "fach": "Deutsch",
-    "thema": "Fachsprache und Formulierungsbausteine",
-    "zh": "学科语言与句式库",
-    "operatoren": [
-      "formulieren",
-      "analysieren",
-      "interpretieren",
-      "deuten",
-      "erläutern",
-      "darstellen",
-      "erörtern",
-      "verfassen",
-      "begründen",
-      "beurteilen",
-      "prüfen",
-      "überprüfen",
-      "vergleichen",
-      "in Beziehung setzen",
-      "sich auseinandersetzen mit",
-      "(kritisch) Stellung nehmen"
-    ],
-    "klausurrelevant": true,
-    "bodyDE": [
-      "Die Metapher „Ablenker“ (Z. 8) verdeutlicht die negative Wirkung des Geräts und lenkt den Leser in Richtung der Forderung nach Selbststeuerung.",
-      "Statt „der Text ist überzeugend“ schreibe ich: „Der Text überzeugt durch eine stringente Argumentationsführung mit klarer These-Begründung-Folgerung-Struktur.“",
-      "Ob eine Aufgabe auf AFB II oder III zielt, entscheidet nicht das Verb allein, sondern der Zusatz („inwiefern“, „nehmen Sie Stellung“, „beurteilen Sie“)."
-    ],
-    "bodyZH": [
-      "这是**跨 IF 元层**笔记——不是知识点，而是**一块可直接搬进考场的砖**。",
-      "它对应本项目三大失分点中的**第 ② 项（材料引用不足/复述代替分析）**与**第 ③ 项（Fachsprache 不足 + 语言正确性）**，同时为第 ① 项（AFB 层级误判）提供**同一 Operator 的三档答法对照**。",
-      "核心三件套：① **Beleg-Baustein 句式库**（可整段照抄的骨架句）。"
-    ],
-    "path": "01_Deutsch/Fachsprache-Formulierungsbausteine.md"
-  },
-  {
-    "id": "deutsch-kommunikation-oeffentlichkeit-und-manipulation",
-    "fach": "Deutsch",
-    "thema": "Kommunikation: Öffentlichkeit, Symmetrie und Manipulation (QP + LK)",
-    "zh": "Kommunikation: Öffentlichkeit, Symmetrie und Manipulation (QP + LK)",
-    "operatoren": [
-      "erörtern",
-      "in Beziehung setzen",
-      "(kritisch) Stellung nehmen",
-      "untersuchen",
-      "analysieren",
-      "prüfen",
-      "überprüfen",
-      "erläutern",
-      "charakterisieren",
-      "deuten",
-      "interpretieren",
-      "sich auseinandersetzen mit"
-    ],
-    "klausurrelevant": true,
-    "bodyDE": [
-      "Das Verhältnis von Öffentlichkeit und Privatheit ist nicht als starre Grenze, sondern als fließender Übergang zu verstehen.",
-      "Ob ein Beitrag als privat oder öffentlich gilt, hängt vom Kontext, vom Adressatenkreis und von der Reichweite ab.",
-      "Die Rede ist rhetorisch gestaltet: Sie verbindet einen affektiven Appell mit einer stringenten Argumentationsführung."
-    ],
-    "bodyZH": [
-      "IF3 的 **QP 加深层笔记**。",
-      "KLP QP（GK）把 EF 的「日常 vs 文学交际」升级为四条：**Öffentlichkeit/Privatheit（公共性/私人性）**、**literarisch und rhetorisch gestaltete Kommunikation（文学化与修辞化交际）**、**symmetrisch/asymmetrisch（对称/非对称）**、**Verständigung/Manipulation（理解/操纵）** [已验证，源：`Deutsch-Oberstufe.md` §2 IF3]。",
-      "**LK 再加两条**：`vernetzte Kommunikation`（网络化交际）+ `Autor-Rezipienten-Kommunikation`（作者—接受者交际）[已验证]。"
-    ],
-    "path": "01_Deutsch/Kommunikation-Oeffentlichkeit-und-Manipulation.md"
-  },
-  {
-    "id": "deutsch-sachtextanalyse-leserlenkung-und-rhetorik",
-    "fach": "Deutsch",
-    "thema": "Sachtextanalyse: Leserlenkung, Rhetorik & Argumentationslogik",
-    "zh": "Sachtextanalyse: Leserlenkung, Rhetorik & Argumentationslogik",
-    "operatoren": [
-      "analysieren",
-      "untersuchen",
-      "darstellen",
-      "erörtern"
-    ],
-    "klausurrelevant": true,
-    "bodyDE": [
-      "Thema: Sachtextanalyse: Leserlenkung, Rhetorik & Argumentationslogik (Deutsch). Exam-relevante Wissensnotiz."
-    ],
-    "bodyZH": [
-      "Deutsch 核心考纲笔记：Sachtextanalyse: Leserlenkung, Rhetorik & Argumentationslogik。"
-    ],
-    "path": "01_Deutsch/Sachtextanalyse-Leserlenkung-und-Rhetorik.md"
-  },
-  {
     "id": "deutsch-deutsch-iqb-training",
     "fach": "Deutsch",
     "thema": "IQB-Training: Analyse und Eroerterung (selbst geschrieben)",
@@ -314,6 +226,42 @@ export const allVaultNotes: GeneratedNote[] = [
     "path": "01_Deutsch/Texte-Analyse/Erzaehltexte-Analyse.md"
   },
   {
+    "id": "deutsch-fachsprache-formulierungsbausteine",
+    "fach": "Deutsch",
+    "thema": "Fachsprache und Formulierungsbausteine",
+    "zh": "学科语言与句式库",
+    "operatoren": [
+      "formulieren",
+      "analysieren",
+      "interpretieren",
+      "deuten",
+      "erläutern",
+      "darstellen",
+      "erörtern",
+      "verfassen",
+      "begründen",
+      "beurteilen",
+      "prüfen",
+      "überprüfen",
+      "vergleichen",
+      "in Beziehung setzen",
+      "sich auseinandersetzen mit",
+      "(kritisch) Stellung nehmen"
+    ],
+    "klausurrelevant": true,
+    "bodyDE": [
+      "Die Metapher „Ablenker“ (Z. 8) verdeutlicht die negative Wirkung des Geräts und lenkt den Leser in Richtung der Forderung nach Selbststeuerung.",
+      "Statt „der Text ist überzeugend“ schreibe ich: „Der Text überzeugt durch eine stringente Argumentationsführung mit klarer These-Begründung-Folgerung-Struktur.“",
+      "Ob eine Aufgabe auf AFB II oder III zielt, entscheidet nicht das Verb allein, sondern der Zusatz („inwiefern“, „nehmen Sie Stellung“, „beurteilen Sie“)."
+    ],
+    "bodyZH": [
+      "这是**跨 IF 元层**笔记——不是知识点，而是**一块可直接搬进考场的砖**。",
+      "它对应本项目三大失分点中的**第 ② 项（材料引用不足/复述代替分析）**与**第 ③ 项（Fachsprache 不足 + 语言正确性）**，同时为第 ① 项（AFB 层级误判）提供**同一 Operator 的三档答法对照**。",
+      "核心三件套：① **Beleg-Baustein 句式库**（可整段照抄的骨架句）。"
+    ],
+    "path": "01_Deutsch/Texte-Analyse/Fachsprache-Formulierungsbausteine.md"
+  },
+  {
     "id": "deutsch-gedichtvergleich-ib",
     "fach": "Deutsch",
     "thema": "Gedichtvergleich und Sprechsituation (Aufgabenart Ib)",
@@ -360,6 +308,38 @@ export const allVaultNotes: GeneratedNote[] = [
       "Deutsch 核心考纲笔记：卡夫卡《变形记》叙事文本解剖。"
     ],
     "path": "01_Deutsch/Texte-Analyse/Kafka-Die-Verwandlung-Epik.md"
+  },
+  {
+    "id": "deutsch-kommunikation-oeffentlichkeit-und-manipulation",
+    "fach": "Deutsch",
+    "thema": "Kommunikation: Öffentlichkeit, Symmetrie und Manipulation (QP + LK)",
+    "zh": "Kommunikation: Öffentlichkeit, Symmetrie und Manipulation (QP + LK)",
+    "operatoren": [
+      "erörtern",
+      "in Beziehung setzen",
+      "(kritisch) Stellung nehmen",
+      "untersuchen",
+      "analysieren",
+      "prüfen",
+      "überprüfen",
+      "erläutern",
+      "charakterisieren",
+      "deuten",
+      "interpretieren",
+      "sich auseinandersetzen mit"
+    ],
+    "klausurrelevant": true,
+    "bodyDE": [
+      "Das Verhältnis von Öffentlichkeit und Privatheit ist nicht als starre Grenze, sondern als fließender Übergang zu verstehen.",
+      "Ob ein Beitrag als privat oder öffentlich gilt, hängt vom Kontext, vom Adressatenkreis und von der Reichweite ab.",
+      "Die Rede ist rhetorisch gestaltet: Sie verbindet einen affektiven Appell mit einer stringenten Argumentationsführung."
+    ],
+    "bodyZH": [
+      "IF3 的 **QP 加深层笔记**。",
+      "KLP QP（GK）把 EF 的「日常 vs 文学交际」升级为四条：**Öffentlichkeit/Privatheit（公共性/私人性）**、**literarisch und rhetorisch gestaltete Kommunikation（文学化与修辞化交际）**、**symmetrisch/asymmetrisch（对称/非对称）**、**Verständigung/Manipulation（理解/操纵）** [已验证，源：`Deutsch-Oberstufe.md` §2 IF3]。",
+      "**LK 再加两条**：`vernetzte Kommunikation`（网络化交际）+ `Autor-Rezipienten-Kommunikation`（作者—接受者交际）[已验证]。"
+    ],
+    "path": "01_Deutsch/Texte-Analyse/Kommunikation-Oeffentlichkeit-und-Manipulation.md"
   },
   {
     "id": "deutsch-kommunikationsmodelle",
@@ -623,6 +603,26 @@ export const allVaultNotes: GeneratedNote[] = [
     "path": "01_Deutsch/Texte-Analyse/Sachtextanalyse-Argumentation.md"
   },
   {
+    "id": "deutsch-sachtextanalyse-leserlenkung-und-rhetorik",
+    "fach": "Deutsch",
+    "thema": "Sachtextanalyse: Leserlenkung, Rhetorik & Argumentationslogik",
+    "zh": "Sachtextanalyse: Leserlenkung, Rhetorik & Argumentationslogik",
+    "operatoren": [
+      "analysieren",
+      "untersuchen",
+      "darstellen",
+      "erörtern"
+    ],
+    "klausurrelevant": true,
+    "bodyDE": [
+      "Thema: Sachtextanalyse: Leserlenkung, Rhetorik & Argumentationslogik (Deutsch). Exam-relevante Wissensnotiz."
+    ],
+    "bodyZH": [
+      "Deutsch 核心考纲笔记：Sachtextanalyse: Leserlenkung, Rhetorik & Argumentationslogik。"
+    ],
+    "path": "01_Deutsch/Texte-Analyse/Sachtextanalyse-Leserlenkung-und-Rhetorik.md"
+  },
+  {
     "id": "deutsch-sachtextanalyse-vergleich-iib",
     "fach": "Deutsch",
     "thema": "Sachtextanalyse im Vergleich (Aufgabenart IIb)",
@@ -739,77 +739,6 @@ export const allVaultNotes: GeneratedNote[] = [
       "本笔记是**元层计时训练笔记**：把 100 min 拆成可执行的段落预算，并针对「整数分」设计得分策略。"
     ],
     "path": "01_Deutsch/Texte-Analyse/ZKE-Deutsch-Timing-100min.md"
-  },
-  {
-    "id": "englisch-mediation-und-kommunikative-strategien",
-    "fach": "Englisch",
-    "thema": "Mediation & Communicative Strategies in Transcultural Contexts",
-    "zh": "Mediation & Communicative Strategies in Transcultural Contexts",
-    "operatoren": [
-      "mediate",
-      "summarize",
-      "explain",
-      "comment"
-    ],
-    "klausurrelevant": true,
-    "bodyDE": [
-      "Thema: Mediation & Communicative Strategies in Transcultural Contexts (Englisch). Exam-relevante Wissensnotiz."
-    ],
-    "bodyZH": [
-      "Englisch 核心考纲笔记：Mediation & Communicative Strategies in Transcultural Contexts。"
-    ],
-    "path": "02_Englisch/Mediation-und-Kommunikative-Strategien.md"
-  },
-  {
-    "id": "englisch-sprechen-gespraechsstrategien-und-sicherung",
-    "fach": "Englisch",
-    "thema": "Gesprächsstrategien, Verständigungssicherung und Aussprache",
-    "zh": "会话策略·理解保障·发音语调",
-    "operatoren": [
-      "discuss",
-      "comment",
-      "explain",
-      "illustrate",
-      "point out"
-    ],
-    "klausurrelevant": true,
-    "bodyDE": [
-      "In the interview I aim to be flexible and linguistically varied, not just accurate.",
-      "While it is true that traditions give us stability, I still hold that societies must be allowed to change.",
-      "If I understand you correctly, you are suggesting that identity is negotiated — let me build on that idea."
-    ],
-    "bodyZH": [
-      "KLP 把 `Sprechen` 拆成两条 Teilkompetenz——**`an Gesprächen teilnehmen`（参与对话）**与 `zusammenhängendes Sprechen`（连贯表达）。",
-      "本篇专攻第一条，并覆盖口试**三个附加评分项**中的两项：**Verständigungssicherung（理解保障）**与 **Aussprache und Intonation（发音与语调）** [已验证]。",
-      "它也是 EF 阶段 `mündliche Leistungsüberprüfung`（可替代一次 Klausur [已验证]）的能力底座。"
-    ],
-    "path": "02_Englisch/Sprechen-Gespraechsstrategien-und-Sicherung.md"
-  },
-  {
-    "id": "englisch-sprechen-muendliche-abiturpruefung",
-    "fach": "Englisch",
-    "thema": "Mündliche Abiturprüfung: Vortrag und Prüfungsgespräch",
-    "zh": "口试：报告与考查谈话",
-    "operatoren": [
-      "present",
-      "outline",
-      "discuss",
-      "comment",
-      "evaluate",
-      "illustrate"
-    ],
-    "klausurrelevant": true,
-    "bodyDE": [
-      "The oral exam consists of two parts: a prepared talk assessed as connected speech and an exam interview assessed as interactive speaking.",
-      "In my talk I will first outline the text's main points, then analyse how the author gets the message across, and finally comment on its relevance for the topic.",
-      "That connects to what you just said, because … — which makes me wonder whether … ."
-    ],
-    "bodyZH": [
-      "英语口试通常 **20–30 min**，由两部分组成：**Teil 1 = Vortrag（自行准备的连贯报告）**，主考 KLP 的 `Sprechen / zusammenhängendes Sprechen`。",
-      "**Teil 2 = Prüfungsgespräch（考查谈话）**，主考 `Sprechen / an Gesprächen teilnehmen`，聚焦三大文化域的 `soziokulturelles Orientierungswissen` 并谈**更大专业关联**。",
-      "口试另设**三个附加评分项**：互动口语交际能力 · 理解保障策略 · **发音与语调**。"
-    ],
-    "path": "02_Englisch/Sprechen-Muendliche-Abiturpruefung.md"
   },
   {
     "id": "englisch-englisch-iqb-writing-training",
@@ -1238,6 +1167,26 @@ export const allVaultNotes: GeneratedNote[] = [
     "path": "02_Englisch/Texte-Analyse/Mediation-Mustertexte.md"
   },
   {
+    "id": "englisch-mediation-und-kommunikative-strategien",
+    "fach": "Englisch",
+    "thema": "Mediation & Communicative Strategies in Transcultural Contexts",
+    "zh": "Mediation & Communicative Strategies in Transcultural Contexts",
+    "operatoren": [
+      "mediate",
+      "summarize",
+      "explain",
+      "comment"
+    ],
+    "klausurrelevant": true,
+    "bodyDE": [
+      "Thema: Mediation & Communicative Strategies in Transcultural Contexts (Englisch). Exam-relevante Wissensnotiz."
+    ],
+    "bodyZH": [
+      "Englisch 核心考纲笔记：Mediation & Communicative Strategies in Transcultural Contexts。"
+    ],
+    "path": "02_Englisch/Texte-Analyse/Mediation-und-Kommunikative-Strategien.md"
+  },
+  {
     "id": "englisch-miller-death-of-a-salesman-american-dream",
     "fach": "Englisch",
     "thema": "Arthur Miller Death of a Salesman (American Dream)",
@@ -1503,6 +1452,57 @@ export const allVaultNotes: GeneratedNote[] = [
       "它不单独成题，但**直接计入评分标准的 `Erfüllung fremdsprachlicher Normen` 与 `Sicherheit im Umgang mit der Fremdsprache`** [已验证，KLP §4.3]。"
     ],
     "path": "02_Englisch/Texte-Analyse/Sprachliche-Mittel-Strukturen-und-Orthographie.md"
+  },
+  {
+    "id": "englisch-sprechen-gespraechsstrategien-und-sicherung",
+    "fach": "Englisch",
+    "thema": "Gesprächsstrategien, Verständigungssicherung und Aussprache",
+    "zh": "会话策略·理解保障·发音语调",
+    "operatoren": [
+      "discuss",
+      "comment",
+      "explain",
+      "illustrate",
+      "point out"
+    ],
+    "klausurrelevant": true,
+    "bodyDE": [
+      "In the interview I aim to be flexible and linguistically varied, not just accurate.",
+      "While it is true that traditions give us stability, I still hold that societies must be allowed to change.",
+      "If I understand you correctly, you are suggesting that identity is negotiated — let me build on that idea."
+    ],
+    "bodyZH": [
+      "KLP 把 `Sprechen` 拆成两条 Teilkompetenz——**`an Gesprächen teilnehmen`（参与对话）**与 `zusammenhängendes Sprechen`（连贯表达）。",
+      "本篇专攻第一条，并覆盖口试**三个附加评分项**中的两项：**Verständigungssicherung（理解保障）**与 **Aussprache und Intonation（发音与语调）** [已验证]。",
+      "它也是 EF 阶段 `mündliche Leistungsüberprüfung`（可替代一次 Klausur [已验证]）的能力底座。"
+    ],
+    "path": "02_Englisch/Texte-Analyse/Sprechen-Gespraechsstrategien-und-Sicherung.md"
+  },
+  {
+    "id": "englisch-sprechen-muendliche-abiturpruefung",
+    "fach": "Englisch",
+    "thema": "Mündliche Abiturprüfung: Vortrag und Prüfungsgespräch",
+    "zh": "口试：报告与考查谈话",
+    "operatoren": [
+      "present",
+      "outline",
+      "discuss",
+      "comment",
+      "evaluate",
+      "illustrate"
+    ],
+    "klausurrelevant": true,
+    "bodyDE": [
+      "The oral exam consists of two parts: a prepared talk assessed as connected speech and an exam interview assessed as interactive speaking.",
+      "In my talk I will first outline the text's main points, then analyse how the author gets the message across, and finally comment on its relevance for the topic.",
+      "That connects to what you just said, because … — which makes me wonder whether … ."
+    ],
+    "bodyZH": [
+      "英语口试通常 **20–30 min**，由两部分组成：**Teil 1 = Vortrag（自行准备的连贯报告）**，主考 KLP 的 `Sprechen / zusammenhängendes Sprechen`。",
+      "**Teil 2 = Prüfungsgespräch（考查谈话）**，主考 `Sprechen / an Gesprächen teilnehmen`，聚焦三大文化域的 `soziokulturelles Orientierungswissen` 并谈**更大专业关联**。",
+      "口试另设**三个附加评分项**：互动口语交际能力 · 理解保障策略 · **发音与语调**。"
+    ],
+    "path": "02_Englisch/Texte-Analyse/Sprechen-Muendliche-Abiturpruefung.md"
   },
   {
     "id": "englisch-textsortenmerkmale-und-belegtechniken",
@@ -4677,6 +4677,24 @@ export const allVaultNotes: GeneratedNote[] = [
     "path": "06_Bio/Oekologische-Nische-und-Beziehungen.md"
   },
   {
+    "id": "bio-plasmolyse-deplasmolyse-experiment",
+    "fach": "Bio",
+    "thema": "Plasmolyse und Deplasmolyse im Experiment",
+    "zh": "质壁分离与复原实验",
+    "operatoren": [
+      "analysieren",
+      "erklaeren"
+    ],
+    "klausurrelevant": true,
+    "bodyDE": [
+      "Bei der Grenzplasmolyse entspricht das Wasserpotenzial des Aussenmediums dem des Zellsafts, sodass die 50-%-Abloesequote das Zellsaftpotenzial direkt anzeigt."
+    ],
+    "bodyZH": [
+      "Bio 核心考纲笔记：质壁分离与复原实验。"
+    ],
+    "path": "06_Bio/Plasmolyse-Deplasmolyse-Experiment.md"
+  },
+  {
     "id": "bio-populationsdynamik-wachstumsmodelle",
     "fach": "Bio",
     "thema": "Populationsdynamik und Wachstumsmodelle (种群动力学与增长模型)",
@@ -5166,604 +5184,6 @@ export const allVaultNotes: GeneratedNote[] = [
     "path": "06_Bio/Klausur-Training/Varianten-Training-Bio.md"
   },
   {
-    "id": "philosophie-demokratiemodelle",
-    "fach": "Philosophie",
-    "thema": "Demokratiemodelle (QP)",
-    "zh": "民主模型",
-    "operatoren": [
-      "rekonstruieren",
-      "analysieren",
-      "vergleichen",
-      "einordnen",
-      "erörtern",
-      "beurteilen"
-    ],
-    "klausurrelevant": true,
-    "bodyDE": [
-      "„Während die liberale Demokratie den Schutz individueller Rechte betont, setzt die republikanische auf die Teilhabe der Bürger und die deliberative auf die Kraft der besseren Argumente.\"",
-      "„Die liberale Demokratie schützt Minderheiten durch vorrangige Grundrechte, die deliberative Demokratie durch den Zwang zur Rechtfertigung im Diskurs.\""
-    ],
-    "bodyZH": [
-      "这是 QP IF5 `Zusammenleben in Staat und Gesellschaft` 中 `Konzepte von Demokratie und sozialer Gerechtigkeit` 一条，属 §4 #17。",
-      "[已验证] 核心主张：**民主不只是投票**——自由民主、共和民主、审议民主各有不同的**正当性基础**。",
-      "KLP 要求「理解当前国家秩序背后的理念与原则并给出评判标准」。"
-    ],
-    "path": "07_Philosophie/Demokratiemodelle.md"
-  },
-  {
-    "id": "philosophie-determinismus-und-willensfreiheit",
-    "fach": "Philosophie",
-    "thema": "Determinismus und Willensfreiheit (QP)",
-    "zh": "决定论与意志自由",
-    "operatoren": [
-      "rekonstruieren",
-      "analysieren",
-      "vergleichen",
-      "einordnen",
-      "erörtern",
-      "beurteilen",
-      "Stellung nehmen"
-    ],
-    "klausurrelevant": true,
-    "bodyDE": [
-      "„Wenn alles kausal determiniert ist, so scheint die Annahme der Willensfreiheit und damit die Zurechenbarkeit von Handlungen unhaltbar zu sein.\"",
-      "„Der Kompatibilismus bestreitet, dass Freiheit ein Anderskönnen voraussetzt; frei ist eine Handlung, wenn sie aus dem eigenen Willen hervorgeht und nicht erzwungen wird.\"",
-      "„Während der Hard Determinism die Freiheit opfert, um die Determination zu retten, opfert der Libertarianismus die Determination, um die Freiheit zu retten; der Kompatibilismus versucht beides zu verbinden.\""
-    ],
-    "bodyZH": [
-      "这是 QP IF3 `Das Selbstverständnis des Menschen` 中 `Der Mensch als freies und selbstbestimmtes Wesen` 一条，属 §4 #10 标出的  **QP 深度缺口**。",
-      "[已验证] 核心难题是：**如果一切都被因果决定，人还能自由吗？** 更尖锐的推论是：**若无自由，则无责任**——这直接动摇道德与法律的根基。",
-      "KLP 要求呈现「自然主义-还原论 vs 非还原论」张力在此的形态。"
-    ],
-    "path": "07_Philosophie/Determinismus-und-Willensfreiheit.md"
-  },
-  {
-    "id": "philosophie-empirismus-vs-rationalismus-ef",
-    "fach": "Philosophie",
-    "thema": "Empirismus vs Rationalismus (EF)",
-    "zh": "经验论 vs 唯理论 · EF 入门版",
-    "operatoren": [
-      "rekonstruieren",
-      "vergleichen",
-      "analysieren",
-      "erläutern",
-      "beurteilen"
-    ],
-    "klausurrelevant": true,
-    "bodyDE": [
-      "„Der Rationalismus erklärt die Herkunft sicherer Erkenntnis aus der Vernunft selbst, weil nur das Denken von den Täuschungen der Sinne unabhängig ist.\"",
-      "„Der Empirismus leitet alle Erkenntnis aus der Erfahrung ab, weil der Verstand nach Locke zunächst eine tabula rasa ist.\"",
-      "„Nach Kant entsteht Erkenntnis erst durch das Zusammenwirken von sinnlicher Anschauung und Verstandesbegriffen, weshalb weder reiner Rationalismus noch reiner Empirismus genügt.\""
-    ],
-    "bodyZH": [
-      "这是 EF 理论哲学入门（IF2 `Erkenntnis und ihre Grenzen`）里\"人类认识的原则与范围\"这一条的**核心对照**。",
-      "它问一个看似简单、实则决定一切的问题：**我们的知识从哪里来？** 唯理论（Rationalismus）说来自理性自身（天赋观念、演绎）。",
-      "经验论（Empirismus）说来自感官经验（白板、归纳）。"
-    ],
-    "path": "07_Philosophie/Empirismus-vs-Rationalismus-EF.md"
-  },
-  {
-    "id": "philosophie-eudaemonismus-und-tugendethik",
-    "fach": "Philosophie",
-    "thema": "Eudämonismus und Tugendethik (QP)",
-    "zh": "幸福论与德性伦理",
-    "operatoren": [
-      "rekonstruieren",
-      "einordnen",
-      "vergleichen",
-      "erläutern",
-      "erörtern",
-      "beurteilen"
-    ],
-    "klausurrelevant": true,
-    "bodyDE": [
-      "„Eudaimonia ist nach Aristoteles kein Gefühl, sondern die Tätigkeit der Seele gemäß der Tugend – ein gelingendes Leben als Ganzes.\"",
-      "„Während der Utilitarismus die Folgen und Kant die Maxime beurteilt, fragt die Tugendethik nach dem Charakter des Handelnden.\""
-    ],
-    "bodyZH": [
-      "这是 QP IF4 `Werte und Normen des Handelns` 中 `Grundsätze eines gelingenden Lebens` 一条，属 §4 #12 标出的  **IF4 深度缺口**。",
-      "[已验证] 伦理不只问「该做什么」，还问「**怎样活得好**」——这是古希腊伦理学的起点。",
-      "**LK 明确要求把不同答案「归入 eudämonistisches Denken 传统」**，GK 不要求此归入，但 LK 必考。"
-    ],
-    "path": "07_Philosophie/Eudaemonismus-und-Tugendethik.md"
-  },
-  {
-    "id": "philosophie-gemeinschaft-und-kommunitarismus",
-    "fach": "Philosophie",
-    "thema": "Gemeinschaft und Kommunitarismus (QP)",
-    "zh": "共同体与共同体主义",
-    "operatoren": [
-      "rekonstruieren",
-      "analysieren",
-      "einordnen",
-      "vergleichen",
-      "erörtern",
-      "beurteilen"
-    ],
-    "klausurrelevant": true,
-    "bodyDE": [
-      "„Nach Aristoteles ist der Mensch von Natur aus auf die politische Gemeinschaft angewiesen; erst in der Polis kann er sein Leben gelingend führen.\"",
-      "„Der Kommunitarismus kritisiert den Liberalismus dafür, dass er den Menschen als ungebundenes, von seiner Gemeinschaft losgelöstes Individuum denkt.\""
-    ],
-    "bodyZH": [
-      "这是 QP IF5 `Zusammenleben in Staat und Gesellschaft` 中 `Gemeinschaft als Prinzip staatsphilosophischer Legitimation` 一条，属 §4 #16。",
-      "[已验证] 两条主线：① **古希腊城邦（polis）**把共同体当作国家正当性的来源——「人天生是政治动物」。",
-      "② **共同体主义（Kommunitarismus）**批评自由主义把个体当「原子」，主张个体是被共同体塑造的。"
-    ],
-    "path": "07_Philosophie/Gemeinschaft-und-Kommunitarismus.md"
-  },
-  {
-    "id": "philosophie-gerechtigkeit-wirtschaftsethik-vernetzung",
-    "fach": "Philosophie",
-    "thema": "Gerechtigkeit-Wirtschaftsethik-Vernetzung: Rawls, Marktversagen und Umverteilung",
-    "zh": "分配正义、无知之幕与社科经济政策深度融合",
-    "operatoren": [
-      "erlaeutern",
-      "analysieren",
-      "beurteilen"
-    ],
-    "klausurrelevant": true,
-    "bodyDE": [
-      "Thema: Gerechtigkeit-Wirtschaftsethik-Vernetzung: Rawls, Marktversagen und Umverteilung (Philosophie). Exam-relevante Wissensnotiz."
-    ],
-    "bodyZH": [
-      "社会经济学讨论的是“蛋糕怎么做大、基尼系数如何量化、最低工资对就业有何影响（实证与效率）”。",
-      "哲学伦理学讨论的是“凭什么这样分蛋糕、什么样的贫富差距才具备道义正当性（规范与正义）”。",
-      "- 罗尔斯（John Rawls）的“无知之幕（Schleier des Nichtwissens）”为社会市场经济（Soziale Marktwirtschaft）提供了终极正义根基。"
-    ],
-    "path": "07_Philosophie/Gerechtigkeit-Wirtschaftsethik-Vernetzung.md"
-  },
-  {
-    "id": "philosophie-grenzen-staatlichen-handelns",
-    "fach": "Philosophie",
-    "thema": "Umfang und Grenzen staatlichen Handelns (EF)",
-    "zh": "国家行动的范围与界限",
-    "operatoren": [
-      "analysieren",
-      "rekonstruieren",
-      "erläutern",
-      "erörtern",
-      "beurteilen",
-      "Stellung nehmen"
-    ],
-    "klausurrelevant": true,
-    "bodyDE": [
-      "„Staatliches Handeln ist insofern gerechtfertigt, als es die Freiheit aller schützt; es wird problematisch, wo es die Freiheit des Einzelnen ohne hinreichenden Grund einschränkt.\""
-    ],
-    "bodyZH": [
-      "这是 EF 实践哲学入门（IF1 `Der Mensch und sein Handeln`）中「国家行动的范围与界限」这一条。",
-      "它问：**国家能为了集体利益限制个体自由到什么程度？自由主义的红线在哪？** 这条是 QP IF5（政治哲学）的**地基**——EF 在这里学会\"个体 vs 国家\"的张力，QP 才展开社会契约与正义论。",
-      "[已验证]  **Klausur-Relevanz**：典型 **Aufgabenart II C（案例讨论）**——用具体政策案例（口罩令、限速、安全带、禁烟、禁药）驱动抽象讨论。"
-    ],
-    "path": "07_Philosophie/Grenzen-staatlichen-Handelns.md"
-  },
-  {
-    "id": "philosophie-kant-kategorischer-imperativ-und-maximenpruefung",
-    "fach": "Philosophie",
-    "thema": "Kants Kategorischer Imperativ & Vier-Schritte-Maximenprüfung",
-    "zh": "Kants Kategorischer Imperativ & Vier-Schritte-Maximenprüfung",
-    "operatoren": [
-      "rekonstruieren",
-      "analysieren",
-      "beurteilen",
-      "erörtern"
-    ],
-    "klausurrelevant": true,
-    "bodyDE": [
-      "Thema: Kants Kategorischer Imperativ & Vier-Schritte-Maximenprüfung (Philosophie). Exam-relevante Wissensnotiz."
-    ],
-    "bodyZH": [
-      "Philosophie 核心考纲笔记：Kants Kategorischer Imperativ & Vier-Schritte-Maximenprüfung。"
-    ],
-    "path": "07_Philosophie/Kant-Kategorischer-Imperativ-und-Maximenpruefung.md"
-  },
-  {
-    "id": "philosophie-kontraktualismus-hobbes-locke-rousseau-rawls",
-    "fach": "Philosophie",
-    "thema": "Kontraktualismus: Hobbes, Locke, Rousseau, Rawls (QP)",
-    "zh": "社会契约论四家系统对照",
-    "operatoren": [
-      "rekonstruieren",
-      "vergleichen",
-      "einordnen",
-      "anwenden",
-      "erörtern",
-      "beurteilen"
-    ],
-    "klausurrelevant": true,
-    "bodyDE": [
-      "Thema: Kontraktualismus: Hobbes, Locke, Rousseau, Rawls (QP) (Philosophie). Exam-relevante Wissensnotiz."
-    ],
-    "bodyZH": [
-      "这是 QP IF5 `Zusammenleben in Staat und Gesellschaft` 中「个体利益与社会契约作为国家正当化原则」这一条，也是**全科最高频考点**。",
-      "[已验证] 四家的共同问题是：**国家的正当性从何而来？** 答案都是\"契约\"——但**缔约者是谁、让渡多少权力、能否反抗**，四家答案截然不同。",
-      "现有笔记只零散涉及 Rousseau，本篇补齐 Hobbes/Locke 的系统对照 + Rawls。"
-    ],
-    "path": "07_Philosophie/Kontraktualismus-Hobbes-Locke-Rousseau-Rawls.md"
-  },
-  {
-    "id": "philosophie-kuhn-paradigma",
-    "fach": "Philosophie",
-    "thema": "Kuhn: Paradigma und Wissenschaftsrevolution (QP)",
-    "zh": "库恩：范式与科学革命",
-    "operatoren": [
-      "rekonstruieren",
-      "analysieren",
-      "vergleichen",
-      "einordnen",
-      "erörtern",
-      "beurteilen"
-    ],
-    "klausurrelevant": true,
-    "bodyDE": [
-      "„Kuhn beschreibt Wissenschaft nicht normativ, sondern historisch: Nicht die Logik der Forschung, sondern die tatsächliche Praxis der wissenschaftlichen Gemeinschaft steht im Zentrum.\"",
-      "„Nach Kuhn verläuft Wissenschaft in Zyklen: normale Wissenschaft löst Rätsel innerhalb eines Paradigmas, bis sich Anomalien zur Krise verdichten und eine Revolution das Paradigma ersetzt.\"",
-      "„Inkommensurabilität bedeutet nicht, dass Paradigmen unverständlich sind, sondern dass es keinen neutralen Maßstab gibt, mit dem sich beide zugleich beurteilen ließen.\""
-    ],
-    "bodyZH": [
-      "这是 QP IF6 `Geltungsansprüche der Wissenschaften` 中 `Der Anspruch der Naturwissenschaften auf Objektivität` 一条，对应 §4 #20（IF6 在 S8 前**完全空白**）。",
-      "[已验证] 库恩（Thomas S. Kuhn）在《科学革命的结构》（1962）中提出：科学发展**不是**波普尔式的「永久批判与反驳」，而是「**常规科学 → 异常 → 危机 → 革命 → 新常规科学**」的循环。",
-      "两个核心概念是**范式（Paradigma）**与**不可通约性（Inkommensurabilität）**。"
-    ],
-    "path": "07_Philosophie/Kuhn-Paradigma.md"
-  },
-  {
-    "id": "philosophie-kulturrelativismus-vs-universalismus",
-    "fach": "Philosophie",
-    "thema": "Kulturrelativismus vs Universalismus (EF)",
-    "zh": "文化相对主义 vs 普遍主义",
-    "operatoren": [
-      "rekonstruieren",
-      "vergleichen",
-      "erläutern",
-      "erörtern",
-      "Stellung nehmen",
-      "beurteilen"
-    ],
-    "klausurrelevant": true,
-    "bodyDE": [
-      "„Zwischen einem starken Kulturrelativismus, der jede interkulturelle Kritik unmöglich macht, und einem starken Universalismus, der kulturelle Differenz einebnet, lässt sich ein schwacher Universalismus vertreten, der einen unverhandelbaren Kern (Menschenwürde) von kulturell variablen Fragen unterscheidet.\""
-    ],
-    "bodyZH": [
-      "这是 EF 实践哲学入门（IF1 `Der Mensch und sein Handeln`）中「跨文化语境中行动的价值与规范」这一条的核心争论。",
-      "它问：**道德标准是各文化自己的事，还是存在跨文化的普遍标准？** 这是当代最重要的伦理争论——它决定了人权宣言能否主张\"普世有效\"。",
-      "[已验证]  **Klausur-Relevanz**：典型 **Aufgabenart II**（问题讨论，尤其 II B 论断 / II C 案例），要求你 `abwägen`（权衡）双方最强论证，最后 `Stellung nehmen`。"
-    ],
-    "path": "07_Philosophie/Kulturrelativismus-vs-Universalismus.md"
-  },
-  {
-    "id": "philosophie-lk-friedensordnung-kant",
-    "fach": "Philosophie",
-    "thema": "LK: Kants Friedensordnung (QP)",
-    "zh": "康德：持久和平秩序",
-    "operatoren": [
-      "rekonstruieren",
-      "analysieren",
-      "vergleichen",
-      "einordnen",
-      "anwenden",
-      "erörtern",
-      "beurteilen"
-    ],
-    "klausurrelevant": true,
-    "bodyDE": [
-      "„Nach Kant ist der Friedenszustand kein Naturzustand, sondern muss durch Recht und Institutionen allererst gestiftet werden.\"",
-      "„Die drei Definitivartikel lauten: republikanische Verfassung, Föderalismus freier Staaten und auf Hospitalität eingeschränktes Weltbürgerrecht.\"",
-      "„Die Präliminarartikel sollen den Krieg beenden, die Definitivartikel den Frieden dauerhaft sichern; die Naturgarantie ergänzt dies durch die fördernde Wirkung von Handel und Öffentlichkeit.\""
-    ],
-    "bodyZH": [
-      "这是 QP IF5 `Zusammenleben in Staat und Gesellschaft` 中 **LK 专属**条目 `Bedingungen einer dauerhaften Friedensordnung in einer globalisierten Welt`，对应 §4 #18（**标 [LK] 专属**，全库为零）。",
-      "[已验证] 康德在《永久和平论》（1795）中提出：和平**不是自然状态**，而须**被建立（gestiftet）**。",
-      "其条件是一组**先决条款（Präliminarartikel）**加三条**正式条款（Definitivartikel）**：**共和制 + 自由国家联盟 + 世界公民权**。"
-    ],
-    "path": "07_Philosophie/LK-Friedensordnung-Kant.md"
-  },
-  {
-    "id": "philosophie-lk-geisteswissenschaften-hermeneutik",
-    "fach": "Philosophie",
-    "thema": "Geisteswissenschaften und Hermeneutik (LK)",
-    "zh": "精神科学与解释学 · LK",
-    "operatoren": [
-      "rekonstruieren",
-      "vergleichen",
-      "erläutern",
-      "analysieren",
-      "beurteilen",
-      "erörtern"
-    ],
-    "klausurrelevant": true,
-    "bodyDE": [
-      "„Nach Dilthey unterscheiden sich Natur- und Geisteswissenschaften nicht im Grad ihrer Objektivität, sondern in der Art des Zugangs: Wir erklären die Natur, aber wir verstehen das Seelenleben.\"",
-      "„Erklären ordnet ein Phänomen unter allgemeine Gesetze, Verstehen erschließt den Sinn eines Ausdrucks – beide Zugänge können sich ergänzen.\"",
-      "„Der hermeneutische Zirkel besagt, dass Teil und Ganzes sich wechselseitig erhellen; nach Gadamer ist das Vorurteil keine Störung, sondern die Bedingung des Verstehens.\""
-    ],
-    "bodyZH": [
-      "这是 QP 层 IF6 `Geltungsansprüche der Wissenschaften` 中 **LK 专属**条目 `Erkenntnis in den Geisteswissenschaften`，对应 Lernbaum §4 #22（标 `[LK]`）。",
-      "它问的是：**人文/精神科学（历史、文学、法学、神学）如何获得知识？** 与自然科学不同，它靠的不是**解释（Erklären）**而是**理解（Verstehen）**——从外部原因说明，转向对**意义（Sinn）**的把握。",
-      "解释学（Hermeneutik）正是这门「理解的技艺学」。"
-    ],
-    "path": "07_Philosophie/LK-Geisteswissenschaften-Hermeneutik.md"
-  },
-  {
-    "id": "philosophie-lk-grundlagen-moralischer-orientierung",
-    "fach": "Philosophie",
-    "thema": "Grundlagen moralischer Orientierung (LK)",
-    "zh": "道德定向的不同基础 · LK",
-    "operatoren": [
-      "rekonstruieren",
-      "vergleichen",
-      "einordnen",
-      "beurteilen",
-      "erörtern",
-      "anwenden"
-    ],
-    "klausurrelevant": true,
-    "bodyDE": [
-      "„Je nachdem, worauf moralische Orientierung gegründet wird – Folgen, Pflicht, Tugend oder Gefühl –, können dieselben Handlungen unterschiedlich beurteilt werden.\"",
-      "„Der Utilitarismus gründet Moral auf die Folgen und ist damit eine hedonistische Spielart des eudämonistischen Denkens.\"",
-      "„Kants Pflichtethik ist anti-eudämonistisch: Nicht das Glück, sondern allein die Pflichterfüllung aus Achtung vor dem Gesetz begründet moralischen Wert.\""
-    ],
-    "bodyZH": [
-      "这是 QP 层 IF4 `Werte und Normen des Handelns` 中 **LK 专属**条目 `Unterschiedliche Grundlagen moralischer Orientierungen`，对应 Lernbaum §4 #14（标 `[LK]`）。",
-      "它问的是：**道德判断的最终根据是什么？** —— 后果（Konsequenzen）、义务（Pflicht）、德性（Tugend）、情感（Gefühl），还是商谈程序（Diskurs）？**LK 的整合考点**：不但要能**重构多个答案**、**逐维度比较**，还要把不同答案**归入 eudämonistisches Denken（幸福论）传统**或与它划界。",
-      "[已验证]  **Klausur-Relevanz**：LK 的核心比较 + 归类题（`Grundlagen moralischer Orientierung vergleichen`，AFB II）。"
-    ],
-    "path": "07_Philosophie/LK-Grundlagen-moralischer-Orientierung.md"
-  },
-  {
-    "id": "philosophie-lk-neurowissenschaften-und-ki",
-    "fach": "Philosophie",
-    "thema": "LK: Menschenbild der Neurowissenschaften und der KI (QP)",
-    "zh": "神经科学与人工智能的人之图景",
-    "operatoren": [
-      "rekonstruieren",
-      "analysieren",
-      "vergleichen",
-      "einordnen",
-      "erörtern",
-      "beurteilen",
-      "bewerten"
-    ],
-    "klausurrelevant": true,
-    "bodyDE": [
-      "„Die Neurowissenschaften zeigen neuronale Korrelate mentaler Zustände; daraus folgt jedoch nicht zwingend, dass mentale Zustände vollständig auf neuronale Prozesse reduzierbar sind.\"",
-      "„Der Streit zwischen Reduktionismus und Nicht-Reduktionismus betrifft nicht die Frage, ob das Mentale eine physische Grundlage hat, sondern ob es sich vollständig in physischer Sprache beschreiben lässt.\"",
-      "„Wenn mentale Zustände durch ihre Funktion und nicht durch ihr Material definiert sind, dann ist Denken grundsätzlich nicht an das menschliche Gehirn gebunden.\""
-    ],
-    "bodyZH": [
-      "这是 QP IF3 `Das Selbstverständnis des Menschen` 中 **LK 专属**条目 `Das Menschenbild der Neurowissenschaften und der Forschungen zur Künstlichen Intelligenz`，对应 §4 #11（**标 [LK] 专属**，全库为零）。",
-      "[已验证] 它问两件事：① 脑科学能否**完整解释**心智（还原论争议）？② AI 是否挑战了「人的独特性」（功能主义争议）？KLP 明确要求呈现「**自然主义-还原论 vs 非还原论**」的张力。",
-      "[已验证]  **Klausur-Relevanz**：评价题（`Naturwissenschaftliche Menschenbilder beurteilen`，AFB III）。"
-    ],
-    "path": "07_Philosophie/LK-Neurowissenschaften-und-KI.md"
-  },
-  {
-    "id": "philosophie-leib-seele-dualismus-vs-monismus",
-    "fach": "Philosophie",
-    "thema": "Leib-Seele: Dualismus vs. Monismus (QP)",
-    "zh": "身心关系：二元论 vs 一元论",
-    "operatoren": [
-      "rekonstruieren",
-      "analysieren",
-      "vergleichen",
-      "einordnen",
-      "erörtern",
-      "beurteilen"
-    ],
-    "klausurrelevant": true,
-    "bodyDE": [
-      "„Das Leib-Seele-Problem fragt, ob Körper und Geist zwei verschiedene Substanzen sind oder nur zwei Beschreibungen derselben Wirklichkeit.\"",
-      "„Der Eigenschaftsdualismus nimmt nur eine Substanz an, unterscheidet aber nicht-reduzierbare physische und mentale Eigenschaften.\""
-    ],
-    "bodyZH": [
-      "这是 QP IF3 `Das Selbstverständnis des Menschen` 中 `Das Verhältnis von Leib und Seele` 一条，属 §4 #9 标出的  **QP 深度缺口**。",
-      "[已验证] 核心问题只有一个：**身体（Leib）与心灵（Seele/Geist）是同一种东西，还是两种东西？** 回答分成两大阵营——**二元论**（两种实体）与**一元论**（只有一种）。",
-      "KLP 明确要求呈现「**自然主义-还原论** vs **非还原论**」的张力。"
-    ],
-    "path": "07_Philosophie/Leib-Seele-Dualismus-vs-Monismus.md"
-  },
-  {
-    "id": "philosophie-metaphysische-probleme-und-gottesbeweise",
-    "fach": "Philosophie",
-    "thema": "Metaphysische Probleme und Gottesbeweise (EF)",
-    "zh": "形而上学问题与上帝存在的证明",
-    "operatoren": [
-      "rekonstruieren",
-      "analysieren",
-      "erläutern",
-      "erörtern",
-      "beurteilen"
-    ],
-    "klausurrelevant": true,
-    "bodyDE": [
-      "„Metaphysische Probleme sind dadurch gekennzeichnet, dass ihre Gegenstände jenseits aller möglichen Erfahrung liegen und daher weder empirisch bestätigt noch widerlegt werden können.\"",
-      "„Nach Kant überschreitet die Vernunft ihre Grenzen, wenn sie Gott oder die Unsterblichkeit der Seele theoretisch beweisen will, weil Erkenntnis an mögliche Erfahrung gebunden ist.\""
-    ],
-    "bodyZH": [
-      "这是 EF 理论哲学入门（IF2 `Erkenntnis und ihre Grenzen`）中\"最大缺口\"的一块。",
-      "KLP 把这一块命名为「Metaphysische Probleme als Herausforderung für die Vernunfterkenntnis」——形而上学问题不是\"宗教课内容\"，而是**对理性认识本身的压力测试**：当理性去论证「上帝存在」「灵魂不死」这类超出一切经验的对象时，它到底是在认识，还是在越界？[已验证]  **Klausur-Relevanz**：本题几乎必然以 **Aufgabenart I（文本解读+比较+评判）** 出现——给你一段 Anselm/Thomas/Kant 的文本，要求 `rekonstruieren`（把论证还原成 Prämisse→Konklusion），再与课上已知的另一立场 `vergleichen`，最后 `beurteilen`。",
-      "**会背证明但不重构推理链 = 直接掉到 AFB I。"
-    ],
-    "path": "07_Philosophie/Metaphysische-Probleme-und-Gottesbeweise.md"
-  },
-  {
-    "id": "philosophie-paternalismus",
-    "fach": "Philosophie",
-    "thema": "Paternalismus (EF)",
-    "zh": "家长主义",
-    "operatoren": [
-      "analysieren",
-      "beurteilen",
-      "bewerten",
-      "erörtern",
-      "Stellung nehmen",
-      "vergleichen"
-    ],
-    "klausurrelevant": true,
-    "bodyDE": [
-      "„Der Streit um den Paternalismus ist ein Konflikt zwischen individueller Freiheit und dem Wohl des Einzelnen: Der Staat handelt zum Besten des Bürgers, der Bürger beansprucht aber das Recht, über sein eigenes Leben selbst zu bestimmen.\"",
-      "„Nach Mills Schadensprinzip darf der Staat die Freiheit des Einzelnen nur einschränken, um Schaden für andere zu verhindern; das Wohl des Handelnden selbst rechtfertigt keinen Eingriff.\"",
-      "„Aus Kantischer Sicht verletzt harter Paternalismus die Autonomie des Menschen, weil er den mündigen Bürger wie ein Kind behandelt und damit zum bloßen Mittel fremder Fürsorge macht.\""
-    ],
-    "bodyZH": [
-      "这是 EF 实践哲学入门（IF1 `Der Mensch und sein Handeln`）中「**国家行动的范围与界限**」这一条的核心议题，对应 Lernbaum §4 #4。",
-      "它问的是：**国家能不能以「为你好」为理由，限制你自己对自身的选择？** 若可以，界限在哪？家长主义（Paternalismus，源自 pater「父亲」）指**为了当事人自身的利益、且违背其意愿**而干预其自由。",
-      "EF 只要求你**分清软/硬家长主义**并用统一标准评判。"
-    ],
-    "path": "07_Philosophie/Paternalismus.md"
-  },
-  {
-    "id": "philosophie-philosophie-wissenschaft-religion",
-    "fach": "Philosophie",
-    "thema": "Philosophie, Wissenschaft und Religion (EF)",
-    "zh": "哲学、科学与宗教的划界",
-    "operatoren": [
-      "vergleichen",
-      "einordnen",
-      "erläutern",
-      "analysieren",
-      "beurteilen",
-      "abgrenzen"
-    ],
-    "klausurrelevant": true,
-    "bodyDE": [
-      "„Philosophie, Wissenschaft und Religion stellen ähnliche Grundfragen, unterscheiden sich aber grundlegend in der Art, wie sie diese Fragen beantworten.\"",
-      "„Die Wissenschaft beansprucht intersubjektiv überprüfbares, prinzipiell falsifizierbares Wissen über die erfahrbare Welt.\"",
-      "„Die Religion gründet ihre Wahrheit auf Offenbarung und Glauben, nicht auf empirische Überprüfung; in der Theologie wird sie gleichwohl mit rationalen Mitteln entfaltet.\""
-    ],
-    "bodyZH": [
-      "这是 EF 理论哲学入门（IF2 `Erkenntnis und ihre Grenzen`）中「**哲学提问与思考的特性**」这一条的核心议题，对应 Lernbaum §4 #8。",
-      "它问的是：哲学、科学、宗教都在追问**终极问题**（世界从何而来、人为何在此、何为真实），但它们的**对象、方法与真理主张**有何不同？哲学正是在这种**划界（Abgrenzung）**中确立自身的位置——这正是 KLP 原文的定位。",
-      "[已验证]  **Klausur-Relevanz**：典型是比较题（`Philosophie von Wissenschaft und Religion abgrenzen`，AFB II）与评判题（AFB III）。"
-    ],
-    "path": "07_Philosophie/Philosophie-Wissenschaft-Religion.md"
-  },
-  {
-    "id": "philosophie-popper-falsifikation",
-    "fach": "Philosophie",
-    "thema": "Popper: Falsifikation und Abgrenzung (QP)",
-    "zh": "波普尔：证伪与划界",
-    "operatoren": [
-      "rekonstruieren",
-      "analysieren",
-      "vergleichen",
-      "erläutern",
-      "erörtern",
-      "beurteilen"
-    ],
-    "klausurrelevant": true,
-    "bodyDE": [
-      "„Nach Popper ist ein Satz genau dann wissenschaftlich, wenn er prinzipiell durch Erfahrung falsifiziert werden kann; nicht die Verifizierbarkeit, sondern die Falsifizierbarkeit ist das Abgrenzungskriterium.\"",
-      "„Das Falsifikationsschema folgt dem Modus tollens: Wenn aus der Theorie T die Prognose P folgt und die Beobachtung non-P ergibt, ist T widerlegt.\"",
-      "„Während Popper die Wissenschaft als permanenten Falsifikationsversuch deutet, beschreibt Kuhn sie als Abfolge von Paradigmen, in denen Gegenbeispiele lange toleriert werden.\""
-    ],
-    "bodyZH": [
-      "这是 QP IF6 `Geltungsansprüche der Wissenschaften` 的核心考点，而 IF6 是四个 QP IF 中**唯一笔记完全为零**的一个，约占 Abitur 题材 1/4。",
-      "[已验证] 波普尔（Karl Popper）回答的是**划界问题（Abgrenzungsproblem）**：什么才算**科学**？他的答案惊人：科学不是\"能被证实的\"，而是\"**能被证伪的**\"。",
-      "[已验证]  **Klausur-Relevanz**：核心论证题（`Popper's Falsifikationskriterium rekonstruieren und beurteilen`，AFB II→III）。"
-    ],
-    "path": "07_Philosophie/Popper-Falsifikation.md"
-  },
-  {
-    "id": "philosophie-reichweite-menschlicher-erkenntnis",
-    "fach": "Philosophie",
-    "thema": "Reichweite menschlicher Erkenntnis (EF)",
-    "zh": "人类认识的范围与界限",
-    "operatoren": [
-      "analysieren",
-      "beurteilen",
-      "Stellung nehmen",
-      "erörtern",
-      "überprüfen",
-      "rekonstruieren"
-    ],
-    "klausurrelevant": true,
-    "bodyDE": [
-      "„Bei der Frage nach der Reichweite der Erkenntnis sind drei Grenzen zu unterscheiden: die Grenze der Sinne, die Grenze des Verstandes (Kant) und die Grenze der Sprache.\"",
-      "„Der Skeptizismus ist kein Ergebnis, sondern eine Prüfung: Was auch nach radikalem Zweifel standhält, kann als Fundament der Erkenntnis gelten.\"",
-      "„Nach Kant erkennt der Mensch nur Erscheinungen, nicht die Dinge an sich; die Grenze der Erkenntnis liegt dort, wo keine mögliche Erfahrung mehr gegeben ist.\""
-    ],
-    "bodyZH": [
-      "这是 EF 理论哲学入门（IF2 `Erkenntnis und ihre Grenzen`）中「**认识的原则与范围**」这一条的核心议题，对应 Lernbaum §4 #7。",
-      "它问的是：**感官与理性各自能把握现实的哪一部分？知识的边界在哪里？** 与同 IF 的 `Empirismus-vs-Rationalismus-EF.md` 分工不同——那篇问「知识**从哪里来**」（来源），本篇问「知识**能走多远**」（范围与界限）。",
-      "核心工具是**怀疑论**（作为压力测试）与**康德的界限诊断**。"
-    ],
-    "path": "07_Philosophie/Reichweite-menschlicher-Erkenntnis.md"
-  },
-  {
-    "id": "philosophie-sonderstellung-des-menschen",
-    "fach": "Philosophie",
-    "thema": "Sonderstellung des Menschen",
-    "zh": "人的特殊地位与人兽之辩",
-    "operatoren": [
-      "darstellen",
-      "vergleichen",
-      "beurteilen"
-    ],
-    "klausurrelevant": true,
-    "bodyDE": [
-      "Nach Arnold Gehlen ist der Mensch biologisch ein unfertiges Maengelwesen, das seine organische Mittellosigkeit und Instinktarmut durch planvolles Handeln und die Schaffung entlastender kultureller Institutionen kompensieren muss.",
-      "Im Gegensatz zum instinktgebundenen Tier, das in seine Umwelt eingepasst ist, zeichnet sich der Mensch nach Max Scheler durch Geist und prinzipielle Weltoffenheit aus, die ihm ermoeglicht, sich von Triebimpulsen zu distanzieren und die Welt als objektives Gefuege wahrzunehmen.",
-      "Peter Singer widerlegt eine prinzipielle Sonderstellung des Menschen und postuliert, dass moralische Ruecksichtnahme nicht an Sprachvermoegen oder Rationalitaet gebunden ist, sondern am Kriterium der Leidensfaehigkeit (Prinzip der gleichen Interessenabwaegung)."
-    ],
-    "bodyZH": [
-      "本专题属于北威州高中哲学 EF 阶段 Inhaltsfeld 1（Der Mensch und sein Handeln / Philosophische Anthropologie）。",
-      "核心探究人与动物的本质界限：人究竟是自然界具有超越性精神（Geist）的万物之灵，还是生理器官退化、必须依赖文化制度补偿的「匮乏存在」（Mängelwesen）？在会考中，该考点常以经典人类学文本（如 Max Scheler, Arnold Gehlen）与现代动物伦理批判（如 Peter Singer 的反物种歧视 Speziesismus）进行对照分析（Aufgabenart I/II），要求学生掌握 AFB I 阐明观点、AFB II 比较论证结构与 AFB III 对「人类中心主义」作出权衡评判。",
-      "**Klausur-Relevanz**：EF 阶段人类学（Anthropologie）必考基石，向下衔接 Q 阶段身心问题（Leib-Seele）与责任伦理。"
-    ],
-    "path": "07_Philosophie/Sonderstellung-des-Menschen.md"
-  },
-  {
-    "id": "philosophie-verantwortung-und-anwendungsethik",
-    "fach": "Philosophie",
-    "thema": "Verantwortung und Anwendungsethik (QP)",
-    "zh": "责任与应用伦理",
-    "operatoren": [
-      "analysieren",
-      "anwenden",
-      "rekonstruieren",
-      "erörtern",
-      "beurteilen",
-      "Stellung nehmen"
-    ],
-    "klausurrelevant": true,
-    "bodyDE": [
-      "„Verantwortung lässt sich nur bestimmen, wenn geklärt ist, wem gegenüber, nach welchem Maßstab und für welche Folgen jemand verantwortlich ist.\""
-    ],
-    "bodyZH": [
-      "这是 QP IF4 `Werte und Normen des Handelns` 中 `Verantwortung in ethischen Anwendungskontexten` 一条，属 §4 #13。",
-      "[已验证] 把伦理原则用到**具体领域**（环境、医疗、技术）时，冲突才真正显现——此时「责任」成为评价段的核心标准词。",
-      "KLP 要求「把伦理原则应用到应用语境中并彼此划界」。"
-    ],
-    "path": "07_Philosophie/Verantwortung-und-Anwendungsethik.md"
-  },
-  {
-    "id": "philosophie-wissenschaftliche-erkenntnistheorie",
-    "fach": "Philosophie",
-    "thema": "Wissenschaftliche Erkenntnistheorie (QP)",
-    "zh": "科学认识论基础",
-    "operatoren": [
-      "rekonstruieren",
-      "analysieren",
-      "vergleichen",
-      "erläutern",
-      "einordnen",
-      "beurteilen"
-    ],
-    "klausurrelevant": true,
-    "bodyDE": [
-      "„Während der Empirismus die Erfahrung als Quelle wissenschaftlicher Erkenntnis ansieht, behauptet der Rationalismus, dass sichere Erkenntnis auf Vernunftprinzipien beruht; Kant vermittelt beide, indem er Erkenntnis aus Anschauung und Verstandesbegriffen zusammensetzt.\"",
-      "„Das Induktionsproblem besteht darin, dass sich aus endlich vielen Einzelbeobachtungen kein allgemeiner Satz logisch ableiten lässt.\"",
-      "„Wissenschaftliche Forschung verbindet Deduktion, Induktion und Abduktion; keine dieser Formen allein sichert die Wahrheit einer Theorie.\""
-    ],
-    "bodyZH": [
-      "这是 QP IF6 `Geltungsansprüche der Wissenschaften` 中 `Erkenntnistheoretische Grundlagen der Wissenschaften` 与 `Wissenschaftliche Methode` 两条，对应 §4 #21（IF6 在 S8 前**完全空白**）。",
-      "[已验证] 它追问：科学知识的**基础**是观察还是理论？科学**推理**有哪几种形式（归纳 / 演绎 / 溯因）？以及科学凭什么主张**客观性**？[已验证]  **Klausur-Relevanz**：核心分析 + 比较题（`Erkenntnistheoretische Grundlagen analysieren`，AFB II）。",
-      "几乎必考：① 归纳问题的结构（Hume）。"
-    ],
-    "path": "07_Philosophie/Wissenschaftliche-Erkenntnistheorie.md"
-  },
-  {
     "id": "philosophie-mockklausur-nrw-philosophie",
     "fach": "Philosophie",
     "thema": "KI und Verantwortung — Utilitarismus vs. Kant",
@@ -5806,6 +5226,83 @@ export const allVaultNotes: GeneratedNote[] = [
     "path": "07_Philosophie/Klausur-Training/Philo-Textanalyse-Training.md"
   },
   {
+    "id": "philosophie-demokratiemodelle",
+    "fach": "Philosophie",
+    "thema": "Demokratiemodelle (QP)",
+    "zh": "民主模型",
+    "operatoren": [
+      "rekonstruieren",
+      "analysieren",
+      "vergleichen",
+      "einordnen",
+      "erörtern",
+      "beurteilen"
+    ],
+    "klausurrelevant": true,
+    "bodyDE": [
+      "„Während die liberale Demokratie den Schutz individueller Rechte betont, setzt die republikanische auf die Teilhabe der Bürger und die deliberative auf die Kraft der besseren Argumente.\"",
+      "„Die liberale Demokratie schützt Minderheiten durch vorrangige Grundrechte, die deliberative Demokratie durch den Zwang zur Rechtfertigung im Diskurs.\""
+    ],
+    "bodyZH": [
+      "这是 QP IF5 `Zusammenleben in Staat und Gesellschaft` 中 `Konzepte von Demokratie und sozialer Gerechtigkeit` 一条，属 §4 #17。",
+      "[已验证] 核心主张：**民主不只是投票**——自由民主、共和民主、审议民主各有不同的**正当性基础**。",
+      "KLP 要求「理解当前国家秩序背后的理念与原则并给出评判标准」。"
+    ],
+    "path": "07_Philosophie/Texte-Analyse/Demokratiemodelle.md"
+  },
+  {
+    "id": "philosophie-determinismus-und-willensfreiheit",
+    "fach": "Philosophie",
+    "thema": "Determinismus und Willensfreiheit (QP)",
+    "zh": "决定论与意志自由",
+    "operatoren": [
+      "rekonstruieren",
+      "analysieren",
+      "vergleichen",
+      "einordnen",
+      "erörtern",
+      "beurteilen",
+      "Stellung nehmen"
+    ],
+    "klausurrelevant": true,
+    "bodyDE": [
+      "„Wenn alles kausal determiniert ist, so scheint die Annahme der Willensfreiheit und damit die Zurechenbarkeit von Handlungen unhaltbar zu sein.\"",
+      "„Der Kompatibilismus bestreitet, dass Freiheit ein Anderskönnen voraussetzt; frei ist eine Handlung, wenn sie aus dem eigenen Willen hervorgeht und nicht erzwungen wird.\"",
+      "„Während der Hard Determinism die Freiheit opfert, um die Determination zu retten, opfert der Libertarianismus die Determination, um die Freiheit zu retten; der Kompatibilismus versucht beides zu verbinden.\""
+    ],
+    "bodyZH": [
+      "这是 QP IF3 `Das Selbstverständnis des Menschen` 中 `Der Mensch als freies und selbstbestimmtes Wesen` 一条，属 §4 #10 标出的  **QP 深度缺口**。",
+      "[已验证] 核心难题是：**如果一切都被因果决定，人还能自由吗？** 更尖锐的推论是：**若无自由，则无责任**——这直接动摇道德与法律的根基。",
+      "KLP 要求呈现「自然主义-还原论 vs 非还原论」张力在此的形态。"
+    ],
+    "path": "07_Philosophie/Texte-Analyse/Determinismus-und-Willensfreiheit.md"
+  },
+  {
+    "id": "philosophie-empirismus-vs-rationalismus-ef",
+    "fach": "Philosophie",
+    "thema": "Empirismus vs Rationalismus (EF)",
+    "zh": "经验论 vs 唯理论 · EF 入门版",
+    "operatoren": [
+      "rekonstruieren",
+      "vergleichen",
+      "analysieren",
+      "erläutern",
+      "beurteilen"
+    ],
+    "klausurrelevant": true,
+    "bodyDE": [
+      "„Der Rationalismus erklärt die Herkunft sicherer Erkenntnis aus der Vernunft selbst, weil nur das Denken von den Täuschungen der Sinne unabhängig ist.\"",
+      "„Der Empirismus leitet alle Erkenntnis aus der Erfahrung ab, weil der Verstand nach Locke zunächst eine tabula rasa ist.\"",
+      "„Nach Kant entsteht Erkenntnis erst durch das Zusammenwirken von sinnlicher Anschauung und Verstandesbegriffen, weshalb weder reiner Rationalismus noch reiner Empirismus genügt.\""
+    ],
+    "bodyZH": [
+      "这是 EF 理论哲学入门（IF2 `Erkenntnis und ihre Grenzen`）里\"人类认识的原则与范围\"这一条的**核心对照**。",
+      "它问一个看似简单、实则决定一切的问题：**我们的知识从哪里来？** 唯理论（Rationalismus）说来自理性自身（天赋观念、演绎）。",
+      "经验论（Empirismus）说来自感官经验（白板、归纳）。"
+    ],
+    "path": "07_Philosophie/Texte-Analyse/Empirismus-vs-Rationalismus-EF.md"
+  },
+  {
     "id": "philosophie-entfremdung-kapital-ungleichheit-vernetzung",
     "fach": "Philosophie",
     "thema": "Entfremdung, Kapitalismus und Ungleichheit: Interdisziplinaere Synthese",
@@ -5846,6 +5343,326 @@ export const allVaultNotes: GeneratedNote[] = [
     "path": "07_Philosophie/Texte-Analyse/Ethische-Dilemmata-Sammlung.md"
   },
   {
+    "id": "philosophie-eudaemonismus-und-tugendethik",
+    "fach": "Philosophie",
+    "thema": "Eudämonismus und Tugendethik (QP)",
+    "zh": "幸福论与德性伦理",
+    "operatoren": [
+      "rekonstruieren",
+      "einordnen",
+      "vergleichen",
+      "erläutern",
+      "erörtern",
+      "beurteilen"
+    ],
+    "klausurrelevant": true,
+    "bodyDE": [
+      "„Eudaimonia ist nach Aristoteles kein Gefühl, sondern die Tätigkeit der Seele gemäß der Tugend – ein gelingendes Leben als Ganzes.\"",
+      "„Während der Utilitarismus die Folgen und Kant die Maxime beurteilt, fragt die Tugendethik nach dem Charakter des Handelnden.\""
+    ],
+    "bodyZH": [
+      "这是 QP IF4 `Werte und Normen des Handelns` 中 `Grundsätze eines gelingenden Lebens` 一条，属 §4 #12 标出的  **IF4 深度缺口**。",
+      "[已验证] 伦理不只问「该做什么」，还问「**怎样活得好**」——这是古希腊伦理学的起点。",
+      "**LK 明确要求把不同答案「归入 eudämonistisches Denken 传统」**，GK 不要求此归入，但 LK 必考。"
+    ],
+    "path": "07_Philosophie/Texte-Analyse/Eudaemonismus-und-Tugendethik.md"
+  },
+  {
+    "id": "philosophie-gemeinschaft-und-kommunitarismus",
+    "fach": "Philosophie",
+    "thema": "Gemeinschaft und Kommunitarismus (QP)",
+    "zh": "共同体与共同体主义",
+    "operatoren": [
+      "rekonstruieren",
+      "analysieren",
+      "einordnen",
+      "vergleichen",
+      "erörtern",
+      "beurteilen"
+    ],
+    "klausurrelevant": true,
+    "bodyDE": [
+      "„Nach Aristoteles ist der Mensch von Natur aus auf die politische Gemeinschaft angewiesen; erst in der Polis kann er sein Leben gelingend führen.\"",
+      "„Der Kommunitarismus kritisiert den Liberalismus dafür, dass er den Menschen als ungebundenes, von seiner Gemeinschaft losgelöstes Individuum denkt.\""
+    ],
+    "bodyZH": [
+      "这是 QP IF5 `Zusammenleben in Staat und Gesellschaft` 中 `Gemeinschaft als Prinzip staatsphilosophischer Legitimation` 一条，属 §4 #16。",
+      "[已验证] 两条主线：① **古希腊城邦（polis）**把共同体当作国家正当性的来源——「人天生是政治动物」。",
+      "② **共同体主义（Kommunitarismus）**批评自由主义把个体当「原子」，主张个体是被共同体塑造的。"
+    ],
+    "path": "07_Philosophie/Texte-Analyse/Gemeinschaft-und-Kommunitarismus.md"
+  },
+  {
+    "id": "philosophie-gerechtigkeit-wirtschaftsethik-vernetzung",
+    "fach": "Philosophie",
+    "thema": "Gerechtigkeit-Wirtschaftsethik-Vernetzung: Rawls, Marktversagen und Umverteilung",
+    "zh": "分配正义、无知之幕与社科经济政策深度融合",
+    "operatoren": [
+      "erlaeutern",
+      "analysieren",
+      "beurteilen"
+    ],
+    "klausurrelevant": true,
+    "bodyDE": [
+      "Thema: Gerechtigkeit-Wirtschaftsethik-Vernetzung: Rawls, Marktversagen und Umverteilung (Philosophie). Exam-relevante Wissensnotiz."
+    ],
+    "bodyZH": [
+      "社会经济学讨论的是“蛋糕怎么做大、基尼系数如何量化、最低工资对就业有何影响（实证与效率）”。",
+      "哲学伦理学讨论的是“凭什么这样分蛋糕、什么样的贫富差距才具备道义正当性（规范与正义）”。",
+      "- 罗尔斯（John Rawls）的“无知之幕（Schleier des Nichtwissens）”为社会市场经济（Soziale Marktwirtschaft）提供了终极正义根基。"
+    ],
+    "path": "07_Philosophie/Texte-Analyse/Gerechtigkeit-Wirtschaftsethik-Vernetzung.md"
+  },
+  {
+    "id": "philosophie-grenzen-staatlichen-handelns",
+    "fach": "Philosophie",
+    "thema": "Umfang und Grenzen staatlichen Handelns (EF)",
+    "zh": "国家行动的范围与界限",
+    "operatoren": [
+      "analysieren",
+      "rekonstruieren",
+      "erläutern",
+      "erörtern",
+      "beurteilen",
+      "Stellung nehmen"
+    ],
+    "klausurrelevant": true,
+    "bodyDE": [
+      "„Staatliches Handeln ist insofern gerechtfertigt, als es die Freiheit aller schützt; es wird problematisch, wo es die Freiheit des Einzelnen ohne hinreichenden Grund einschränkt.\""
+    ],
+    "bodyZH": [
+      "这是 EF 实践哲学入门（IF1 `Der Mensch und sein Handeln`）中「国家行动的范围与界限」这一条。",
+      "它问：**国家能为了集体利益限制个体自由到什么程度？自由主义的红线在哪？** 这条是 QP IF5（政治哲学）的**地基**——EF 在这里学会\"个体 vs 国家\"的张力，QP 才展开社会契约与正义论。",
+      "[已验证]  **Klausur-Relevanz**：典型 **Aufgabenart II C（案例讨论）**——用具体政策案例（口罩令、限速、安全带、禁烟、禁药）驱动抽象讨论。"
+    ],
+    "path": "07_Philosophie/Texte-Analyse/Grenzen-staatlichen-Handelns.md"
+  },
+  {
+    "id": "philosophie-kant-kategorischer-imperativ-und-maximenpruefung",
+    "fach": "Philosophie",
+    "thema": "Kants Kategorischer Imperativ & Vier-Schritte-Maximenprüfung",
+    "zh": "Kants Kategorischer Imperativ & Vier-Schritte-Maximenprüfung",
+    "operatoren": [
+      "rekonstruieren",
+      "analysieren",
+      "beurteilen",
+      "erörtern"
+    ],
+    "klausurrelevant": true,
+    "bodyDE": [
+      "Thema: Kants Kategorischer Imperativ & Vier-Schritte-Maximenprüfung (Philosophie). Exam-relevante Wissensnotiz."
+    ],
+    "bodyZH": [
+      "Philosophie 核心考纲笔记：Kants Kategorischer Imperativ & Vier-Schritte-Maximenprüfung。"
+    ],
+    "path": "07_Philosophie/Texte-Analyse/Kant-Kategorischer-Imperativ-und-Maximenpruefung.md"
+  },
+  {
+    "id": "philosophie-kontraktualismus-hobbes-locke-rousseau-rawls",
+    "fach": "Philosophie",
+    "thema": "Kontraktualismus: Hobbes, Locke, Rousseau, Rawls (QP)",
+    "zh": "社会契约论四家系统对照",
+    "operatoren": [
+      "rekonstruieren",
+      "vergleichen",
+      "einordnen",
+      "anwenden",
+      "erörtern",
+      "beurteilen"
+    ],
+    "klausurrelevant": true,
+    "bodyDE": [
+      "Thema: Kontraktualismus: Hobbes, Locke, Rousseau, Rawls (QP) (Philosophie). Exam-relevante Wissensnotiz."
+    ],
+    "bodyZH": [
+      "这是 QP IF5 `Zusammenleben in Staat und Gesellschaft` 中「个体利益与社会契约作为国家正当化原则」这一条，也是**全科最高频考点**。",
+      "[已验证] 四家的共同问题是：**国家的正当性从何而来？** 答案都是\"契约\"——但**缔约者是谁、让渡多少权力、能否反抗**，四家答案截然不同。",
+      "现有笔记只零散涉及 Rousseau，本篇补齐 Hobbes/Locke 的系统对照 + Rawls。"
+    ],
+    "path": "07_Philosophie/Texte-Analyse/Kontraktualismus-Hobbes-Locke-Rousseau-Rawls.md"
+  },
+  {
+    "id": "philosophie-kuhn-paradigma",
+    "fach": "Philosophie",
+    "thema": "Kuhn: Paradigma und Wissenschaftsrevolution (QP)",
+    "zh": "库恩：范式与科学革命",
+    "operatoren": [
+      "rekonstruieren",
+      "analysieren",
+      "vergleichen",
+      "einordnen",
+      "erörtern",
+      "beurteilen"
+    ],
+    "klausurrelevant": true,
+    "bodyDE": [
+      "„Kuhn beschreibt Wissenschaft nicht normativ, sondern historisch: Nicht die Logik der Forschung, sondern die tatsächliche Praxis der wissenschaftlichen Gemeinschaft steht im Zentrum.\"",
+      "„Nach Kuhn verläuft Wissenschaft in Zyklen: normale Wissenschaft löst Rätsel innerhalb eines Paradigmas, bis sich Anomalien zur Krise verdichten und eine Revolution das Paradigma ersetzt.\"",
+      "„Inkommensurabilität bedeutet nicht, dass Paradigmen unverständlich sind, sondern dass es keinen neutralen Maßstab gibt, mit dem sich beide zugleich beurteilen ließen.\""
+    ],
+    "bodyZH": [
+      "这是 QP IF6 `Geltungsansprüche der Wissenschaften` 中 `Der Anspruch der Naturwissenschaften auf Objektivität` 一条，对应 §4 #20（IF6 在 S8 前**完全空白**）。",
+      "[已验证] 库恩（Thomas S. Kuhn）在《科学革命的结构》（1962）中提出：科学发展**不是**波普尔式的「永久批判与反驳」，而是「**常规科学 → 异常 → 危机 → 革命 → 新常规科学**」的循环。",
+      "两个核心概念是**范式（Paradigma）**与**不可通约性（Inkommensurabilität）**。"
+    ],
+    "path": "07_Philosophie/Texte-Analyse/Kuhn-Paradigma.md"
+  },
+  {
+    "id": "philosophie-kulturrelativismus-vs-universalismus",
+    "fach": "Philosophie",
+    "thema": "Kulturrelativismus vs Universalismus (EF)",
+    "zh": "文化相对主义 vs 普遍主义",
+    "operatoren": [
+      "rekonstruieren",
+      "vergleichen",
+      "erläutern",
+      "erörtern",
+      "Stellung nehmen",
+      "beurteilen"
+    ],
+    "klausurrelevant": true,
+    "bodyDE": [
+      "„Zwischen einem starken Kulturrelativismus, der jede interkulturelle Kritik unmöglich macht, und einem starken Universalismus, der kulturelle Differenz einebnet, lässt sich ein schwacher Universalismus vertreten, der einen unverhandelbaren Kern (Menschenwürde) von kulturell variablen Fragen unterscheidet.\""
+    ],
+    "bodyZH": [
+      "这是 EF 实践哲学入门（IF1 `Der Mensch und sein Handeln`）中「跨文化语境中行动的价值与规范」这一条的核心争论。",
+      "它问：**道德标准是各文化自己的事，还是存在跨文化的普遍标准？** 这是当代最重要的伦理争论——它决定了人权宣言能否主张\"普世有效\"。",
+      "[已验证]  **Klausur-Relevanz**：典型 **Aufgabenart II**（问题讨论，尤其 II B 论断 / II C 案例），要求你 `abwägen`（权衡）双方最强论证，最后 `Stellung nehmen`。"
+    ],
+    "path": "07_Philosophie/Texte-Analyse/Kulturrelativismus-vs-Universalismus.md"
+  },
+  {
+    "id": "philosophie-lk-friedensordnung-kant",
+    "fach": "Philosophie",
+    "thema": "LK: Kants Friedensordnung (QP)",
+    "zh": "康德：持久和平秩序",
+    "operatoren": [
+      "rekonstruieren",
+      "analysieren",
+      "vergleichen",
+      "einordnen",
+      "anwenden",
+      "erörtern",
+      "beurteilen"
+    ],
+    "klausurrelevant": true,
+    "bodyDE": [
+      "„Nach Kant ist der Friedenszustand kein Naturzustand, sondern muss durch Recht und Institutionen allererst gestiftet werden.\"",
+      "„Die drei Definitivartikel lauten: republikanische Verfassung, Föderalismus freier Staaten und auf Hospitalität eingeschränktes Weltbürgerrecht.\"",
+      "„Die Präliminarartikel sollen den Krieg beenden, die Definitivartikel den Frieden dauerhaft sichern; die Naturgarantie ergänzt dies durch die fördernde Wirkung von Handel und Öffentlichkeit.\""
+    ],
+    "bodyZH": [
+      "这是 QP IF5 `Zusammenleben in Staat und Gesellschaft` 中 **LK 专属**条目 `Bedingungen einer dauerhaften Friedensordnung in einer globalisierten Welt`，对应 §4 #18（**标 [LK] 专属**，全库为零）。",
+      "[已验证] 康德在《永久和平论》（1795）中提出：和平**不是自然状态**，而须**被建立（gestiftet）**。",
+      "其条件是一组**先决条款（Präliminarartikel）**加三条**正式条款（Definitivartikel）**：**共和制 + 自由国家联盟 + 世界公民权**。"
+    ],
+    "path": "07_Philosophie/Texte-Analyse/LK-Friedensordnung-Kant.md"
+  },
+  {
+    "id": "philosophie-lk-geisteswissenschaften-hermeneutik",
+    "fach": "Philosophie",
+    "thema": "Geisteswissenschaften und Hermeneutik (LK)",
+    "zh": "精神科学与解释学 · LK",
+    "operatoren": [
+      "rekonstruieren",
+      "vergleichen",
+      "erläutern",
+      "analysieren",
+      "beurteilen",
+      "erörtern"
+    ],
+    "klausurrelevant": true,
+    "bodyDE": [
+      "„Nach Dilthey unterscheiden sich Natur- und Geisteswissenschaften nicht im Grad ihrer Objektivität, sondern in der Art des Zugangs: Wir erklären die Natur, aber wir verstehen das Seelenleben.\"",
+      "„Erklären ordnet ein Phänomen unter allgemeine Gesetze, Verstehen erschließt den Sinn eines Ausdrucks – beide Zugänge können sich ergänzen.\"",
+      "„Der hermeneutische Zirkel besagt, dass Teil und Ganzes sich wechselseitig erhellen; nach Gadamer ist das Vorurteil keine Störung, sondern die Bedingung des Verstehens.\""
+    ],
+    "bodyZH": [
+      "这是 QP 层 IF6 `Geltungsansprüche der Wissenschaften` 中 **LK 专属**条目 `Erkenntnis in den Geisteswissenschaften`，对应 Lernbaum §4 #22（标 `[LK]`）。",
+      "它问的是：**人文/精神科学（历史、文学、法学、神学）如何获得知识？** 与自然科学不同，它靠的不是**解释（Erklären）**而是**理解（Verstehen）**——从外部原因说明，转向对**意义（Sinn）**的把握。",
+      "解释学（Hermeneutik）正是这门「理解的技艺学」。"
+    ],
+    "path": "07_Philosophie/Texte-Analyse/LK-Geisteswissenschaften-Hermeneutik.md"
+  },
+  {
+    "id": "philosophie-lk-grundlagen-moralischer-orientierung",
+    "fach": "Philosophie",
+    "thema": "Grundlagen moralischer Orientierung (LK)",
+    "zh": "道德定向的不同基础 · LK",
+    "operatoren": [
+      "rekonstruieren",
+      "vergleichen",
+      "einordnen",
+      "beurteilen",
+      "erörtern",
+      "anwenden"
+    ],
+    "klausurrelevant": true,
+    "bodyDE": [
+      "„Je nachdem, worauf moralische Orientierung gegründet wird – Folgen, Pflicht, Tugend oder Gefühl –, können dieselben Handlungen unterschiedlich beurteilt werden.\"",
+      "„Der Utilitarismus gründet Moral auf die Folgen und ist damit eine hedonistische Spielart des eudämonistischen Denkens.\"",
+      "„Kants Pflichtethik ist anti-eudämonistisch: Nicht das Glück, sondern allein die Pflichterfüllung aus Achtung vor dem Gesetz begründet moralischen Wert.\""
+    ],
+    "bodyZH": [
+      "这是 QP 层 IF4 `Werte und Normen des Handelns` 中 **LK 专属**条目 `Unterschiedliche Grundlagen moralischer Orientierungen`，对应 Lernbaum §4 #14（标 `[LK]`）。",
+      "它问的是：**道德判断的最终根据是什么？** —— 后果（Konsequenzen）、义务（Pflicht）、德性（Tugend）、情感（Gefühl），还是商谈程序（Diskurs）？**LK 的整合考点**：不但要能**重构多个答案**、**逐维度比较**，还要把不同答案**归入 eudämonistisches Denken（幸福论）传统**或与它划界。",
+      "[已验证]  **Klausur-Relevanz**：LK 的核心比较 + 归类题（`Grundlagen moralischer Orientierung vergleichen`，AFB II）。"
+    ],
+    "path": "07_Philosophie/Texte-Analyse/LK-Grundlagen-moralischer-Orientierung.md"
+  },
+  {
+    "id": "philosophie-lk-neurowissenschaften-und-ki",
+    "fach": "Philosophie",
+    "thema": "LK: Menschenbild der Neurowissenschaften und der KI (QP)",
+    "zh": "神经科学与人工智能的人之图景",
+    "operatoren": [
+      "rekonstruieren",
+      "analysieren",
+      "vergleichen",
+      "einordnen",
+      "erörtern",
+      "beurteilen",
+      "bewerten"
+    ],
+    "klausurrelevant": true,
+    "bodyDE": [
+      "„Die Neurowissenschaften zeigen neuronale Korrelate mentaler Zustände; daraus folgt jedoch nicht zwingend, dass mentale Zustände vollständig auf neuronale Prozesse reduzierbar sind.\"",
+      "„Der Streit zwischen Reduktionismus und Nicht-Reduktionismus betrifft nicht die Frage, ob das Mentale eine physische Grundlage hat, sondern ob es sich vollständig in physischer Sprache beschreiben lässt.\"",
+      "„Wenn mentale Zustände durch ihre Funktion und nicht durch ihr Material definiert sind, dann ist Denken grundsätzlich nicht an das menschliche Gehirn gebunden.\""
+    ],
+    "bodyZH": [
+      "这是 QP IF3 `Das Selbstverständnis des Menschen` 中 **LK 专属**条目 `Das Menschenbild der Neurowissenschaften und der Forschungen zur Künstlichen Intelligenz`，对应 §4 #11（**标 [LK] 专属**，全库为零）。",
+      "[已验证] 它问两件事：① 脑科学能否**完整解释**心智（还原论争议）？② AI 是否挑战了「人的独特性」（功能主义争议）？KLP 明确要求呈现「**自然主义-还原论 vs 非还原论**」的张力。",
+      "[已验证]  **Klausur-Relevanz**：评价题（`Naturwissenschaftliche Menschenbilder beurteilen`，AFB III）。"
+    ],
+    "path": "07_Philosophie/Texte-Analyse/LK-Neurowissenschaften-und-KI.md"
+  },
+  {
+    "id": "philosophie-leib-seele-dualismus-vs-monismus",
+    "fach": "Philosophie",
+    "thema": "Leib-Seele: Dualismus vs. Monismus (QP)",
+    "zh": "身心关系：二元论 vs 一元论",
+    "operatoren": [
+      "rekonstruieren",
+      "analysieren",
+      "vergleichen",
+      "einordnen",
+      "erörtern",
+      "beurteilen"
+    ],
+    "klausurrelevant": true,
+    "bodyDE": [
+      "„Das Leib-Seele-Problem fragt, ob Körper und Geist zwei verschiedene Substanzen sind oder nur zwei Beschreibungen derselben Wirklichkeit.\"",
+      "„Der Eigenschaftsdualismus nimmt nur eine Substanz an, unterscheidet aber nicht-reduzierbare physische und mentale Eigenschaften.\""
+    ],
+    "bodyZH": [
+      "这是 QP IF3 `Das Selbstverständnis des Menschen` 中 `Das Verhältnis von Leib und Seele` 一条，属 §4 #9 标出的  **QP 深度缺口**。",
+      "[已验证] 核心问题只有一个：**身体（Leib）与心灵（Seele/Geist）是同一种东西，还是两种东西？** 回答分成两大阵营——**二元论**（两种实体）与**一元论**（只有一种）。",
+      "KLP 明确要求呈现「**自然主义-还原论** vs **非还原论**」的张力。"
+    ],
+    "path": "07_Philosophie/Texte-Analyse/Leib-Seele-Dualismus-vs-Monismus.md"
+  },
+  {
     "id": "philosophie-menschenbild-ueberblick",
     "fach": "Philosophie",
     "thema": "Menschenbild Überblick",
@@ -5862,6 +5679,30 @@ export const allVaultNotes: GeneratedNote[] = [
       "Philosophie 核心考纲笔记：人是什么。"
     ],
     "path": "07_Philosophie/Texte-Analyse/Menschenbild-Ueberblick.md"
+  },
+  {
+    "id": "philosophie-metaphysische-probleme-und-gottesbeweise",
+    "fach": "Philosophie",
+    "thema": "Metaphysische Probleme und Gottesbeweise (EF)",
+    "zh": "形而上学问题与上帝存在的证明",
+    "operatoren": [
+      "rekonstruieren",
+      "analysieren",
+      "erläutern",
+      "erörtern",
+      "beurteilen"
+    ],
+    "klausurrelevant": true,
+    "bodyDE": [
+      "„Metaphysische Probleme sind dadurch gekennzeichnet, dass ihre Gegenstände jenseits aller möglichen Erfahrung liegen und daher weder empirisch bestätigt noch widerlegt werden können.\"",
+      "„Nach Kant überschreitet die Vernunft ihre Grenzen, wenn sie Gott oder die Unsterblichkeit der Seele theoretisch beweisen will, weil Erkenntnis an mögliche Erfahrung gebunden ist.\""
+    ],
+    "bodyZH": [
+      "这是 EF 理论哲学入门（IF2 `Erkenntnis und ihre Grenzen`）中\"最大缺口\"的一块。",
+      "KLP 把这一块命名为「Metaphysische Probleme als Herausforderung für die Vernunfterkenntnis」——形而上学问题不是\"宗教课内容\"，而是**对理性认识本身的压力测试**：当理性去论证「上帝存在」「灵魂不死」这类超出一切经验的对象时，它到底是在认识，还是在越界？[已验证]  **Klausur-Relevanz**：本题几乎必然以 **Aufgabenart I（文本解读+比较+评判）** 出现——给你一段 Anselm/Thomas/Kant 的文本，要求 `rekonstruieren`（把论证还原成 Prämisse→Konklusion），再与课上已知的另一立场 `vergleichen`，最后 `beurteilen`。",
+      "**会背证明但不重构推理链 = 直接掉到 AFB I。"
+    ],
+    "path": "07_Philosophie/Texte-Analyse/Metaphysische-Probleme-und-Gottesbeweise.md"
   },
   {
     "id": "philosophie-mill-utilitarismus-qualitativer-hedonismus",
@@ -5884,6 +5725,32 @@ export const allVaultNotes: GeneratedNote[] = [
     "path": "07_Philosophie/Texte-Analyse/Mill-Utilitarismus-Qualitativer-Hedonismus.md"
   },
   {
+    "id": "philosophie-paternalismus",
+    "fach": "Philosophie",
+    "thema": "Paternalismus (EF)",
+    "zh": "家长主义",
+    "operatoren": [
+      "analysieren",
+      "beurteilen",
+      "bewerten",
+      "erörtern",
+      "Stellung nehmen",
+      "vergleichen"
+    ],
+    "klausurrelevant": true,
+    "bodyDE": [
+      "„Der Streit um den Paternalismus ist ein Konflikt zwischen individueller Freiheit und dem Wohl des Einzelnen: Der Staat handelt zum Besten des Bürgers, der Bürger beansprucht aber das Recht, über sein eigenes Leben selbst zu bestimmen.\"",
+      "„Nach Mills Schadensprinzip darf der Staat die Freiheit des Einzelnen nur einschränken, um Schaden für andere zu verhindern; das Wohl des Handelnden selbst rechtfertigt keinen Eingriff.\"",
+      "„Aus Kantischer Sicht verletzt harter Paternalismus die Autonomie des Menschen, weil er den mündigen Bürger wie ein Kind behandelt und damit zum bloßen Mittel fremder Fürsorge macht.\""
+    ],
+    "bodyZH": [
+      "这是 EF 实践哲学入门（IF1 `Der Mensch und sein Handeln`）中「**国家行动的范围与界限**」这一条的核心议题，对应 Lernbaum §4 #4。",
+      "它问的是：**国家能不能以「为你好」为理由，限制你自己对自身的选择？** 若可以，界限在哪？家长主义（Paternalismus，源自 pater「父亲」）指**为了当事人自身的利益、且违背其意愿**而干预其自由。",
+      "EF 只要求你**分清软/硬家长主义**并用统一标准评判。"
+    ],
+    "path": "07_Philosophie/Texte-Analyse/Paternalismus.md"
+  },
+  {
     "id": "philosophie-philo-abitur-kernstellen",
     "fach": "Philosophie",
     "thema": "Abitur Kernstellen",
@@ -5900,6 +5767,32 @@ export const allVaultNotes: GeneratedNote[] = [
       "Philosophie 核心考纲笔记：Abitur Kernstellen。"
     ],
     "path": "07_Philosophie/Texte-Analyse/Philo-Abitur-Kernstellen.md"
+  },
+  {
+    "id": "philosophie-philosophie-wissenschaft-religion",
+    "fach": "Philosophie",
+    "thema": "Philosophie, Wissenschaft und Religion (EF)",
+    "zh": "哲学、科学与宗教的划界",
+    "operatoren": [
+      "vergleichen",
+      "einordnen",
+      "erläutern",
+      "analysieren",
+      "beurteilen",
+      "abgrenzen"
+    ],
+    "klausurrelevant": true,
+    "bodyDE": [
+      "„Philosophie, Wissenschaft und Religion stellen ähnliche Grundfragen, unterscheiden sich aber grundlegend in der Art, wie sie diese Fragen beantworten.\"",
+      "„Die Wissenschaft beansprucht intersubjektiv überprüfbares, prinzipiell falsifizierbares Wissen über die erfahrbare Welt.\"",
+      "„Die Religion gründet ihre Wahrheit auf Offenbarung und Glauben, nicht auf empirische Überprüfung; in der Theologie wird sie gleichwohl mit rationalen Mitteln entfaltet.\""
+    ],
+    "bodyZH": [
+      "这是 EF 理论哲学入门（IF2 `Erkenntnis und ihre Grenzen`）中「**哲学提问与思考的特性**」这一条的核心议题，对应 Lernbaum §4 #8。",
+      "它问的是：哲学、科学、宗教都在追问**终极问题**（世界从何而来、人为何在此、何为真实），但它们的**对象、方法与真理主张**有何不同？哲学正是在这种**划界（Abgrenzung）**中确立自身的位置——这正是 KLP 原文的定位。",
+      "[已验证]  **Klausur-Relevanz**：典型是比较题（`Philosophie von Wissenschaft und Religion abgrenzen`，AFB II）与评判题（AFB III）。"
+    ],
+    "path": "07_Philosophie/Texte-Analyse/Philosophie-Wissenschaft-Religion.md"
   },
   {
     "id": "philosophie-philosophische-fragen-typen",
@@ -5919,6 +5812,32 @@ export const allVaultNotes: GeneratedNote[] = [
       "Philosophie 核心考纲笔记：Philosophische Fragen stellen (Plickat)。"
     ],
     "path": "07_Philosophie/Texte-Analyse/Philosophische-Fragen-Typen.md"
+  },
+  {
+    "id": "philosophie-popper-falsifikation",
+    "fach": "Philosophie",
+    "thema": "Popper: Falsifikation und Abgrenzung (QP)",
+    "zh": "波普尔：证伪与划界",
+    "operatoren": [
+      "rekonstruieren",
+      "analysieren",
+      "vergleichen",
+      "erläutern",
+      "erörtern",
+      "beurteilen"
+    ],
+    "klausurrelevant": true,
+    "bodyDE": [
+      "„Nach Popper ist ein Satz genau dann wissenschaftlich, wenn er prinzipiell durch Erfahrung falsifiziert werden kann; nicht die Verifizierbarkeit, sondern die Falsifizierbarkeit ist das Abgrenzungskriterium.\"",
+      "„Das Falsifikationsschema folgt dem Modus tollens: Wenn aus der Theorie T die Prognose P folgt und die Beobachtung non-P ergibt, ist T widerlegt.\"",
+      "„Während Popper die Wissenschaft als permanenten Falsifikationsversuch deutet, beschreibt Kuhn sie als Abfolge von Paradigmen, in denen Gegenbeispiele lange toleriert werden.\""
+    ],
+    "bodyZH": [
+      "这是 QP IF6 `Geltungsansprüche der Wissenschaften` 的核心考点，而 IF6 是四个 QP IF 中**唯一笔记完全为零**的一个，约占 Abitur 题材 1/4。",
+      "[已验证] 波普尔（Karl Popper）回答的是**划界问题（Abgrenzungsproblem）**：什么才算**科学**？他的答案惊人：科学不是\"能被证实的\"，而是\"**能被证伪的**\"。",
+      "[已验证]  **Klausur-Relevanz**：核心论证题（`Popper's Falsifikationskriterium rekonstruieren und beurteilen`，AFB II→III）。"
+    ],
+    "path": "07_Philosophie/Texte-Analyse/Popper-Falsifikation.md"
   },
   {
     "id": "philosophie-primaertext-analyse-willensfreiheit",
@@ -5942,6 +5861,55 @@ export const allVaultNotes: GeneratedNote[] = [
     "path": "07_Philosophie/Texte-Analyse/Primaertext-Analyse-Willensfreiheit.md"
   },
   {
+    "id": "philosophie-reichweite-menschlicher-erkenntnis",
+    "fach": "Philosophie",
+    "thema": "Reichweite menschlicher Erkenntnis (EF)",
+    "zh": "人类认识的范围与界限",
+    "operatoren": [
+      "analysieren",
+      "beurteilen",
+      "Stellung nehmen",
+      "erörtern",
+      "überprüfen",
+      "rekonstruieren"
+    ],
+    "klausurrelevant": true,
+    "bodyDE": [
+      "„Bei der Frage nach der Reichweite der Erkenntnis sind drei Grenzen zu unterscheiden: die Grenze der Sinne, die Grenze des Verstandes (Kant) und die Grenze der Sprache.\"",
+      "„Der Skeptizismus ist kein Ergebnis, sondern eine Prüfung: Was auch nach radikalem Zweifel standhält, kann als Fundament der Erkenntnis gelten.\"",
+      "„Nach Kant erkennt der Mensch nur Erscheinungen, nicht die Dinge an sich; die Grenze der Erkenntnis liegt dort, wo keine mögliche Erfahrung mehr gegeben ist.\""
+    ],
+    "bodyZH": [
+      "这是 EF 理论哲学入门（IF2 `Erkenntnis und ihre Grenzen`）中「**认识的原则与范围**」这一条的核心议题，对应 Lernbaum §4 #7。",
+      "它问的是：**感官与理性各自能把握现实的哪一部分？知识的边界在哪里？** 与同 IF 的 `Empirismus-vs-Rationalismus-EF.md` 分工不同——那篇问「知识**从哪里来**」（来源），本篇问「知识**能走多远**」（范围与界限）。",
+      "核心工具是**怀疑论**（作为压力测试）与**康德的界限诊断**。"
+    ],
+    "path": "07_Philosophie/Texte-Analyse/Reichweite-menschlicher-Erkenntnis.md"
+  },
+  {
+    "id": "philosophie-sonderstellung-des-menschen",
+    "fach": "Philosophie",
+    "thema": "Sonderstellung des Menschen",
+    "zh": "人的特殊地位与人兽之辩",
+    "operatoren": [
+      "darstellen",
+      "vergleichen",
+      "beurteilen"
+    ],
+    "klausurrelevant": true,
+    "bodyDE": [
+      "Nach Arnold Gehlen ist der Mensch biologisch ein unfertiges Maengelwesen, das seine organische Mittellosigkeit und Instinktarmut durch planvolles Handeln und die Schaffung entlastender kultureller Institutionen kompensieren muss.",
+      "Im Gegensatz zum instinktgebundenen Tier, das in seine Umwelt eingepasst ist, zeichnet sich der Mensch nach Max Scheler durch Geist und prinzipielle Weltoffenheit aus, die ihm ermoeglicht, sich von Triebimpulsen zu distanzieren und die Welt als objektives Gefuege wahrzunehmen.",
+      "Peter Singer widerlegt eine prinzipielle Sonderstellung des Menschen und postuliert, dass moralische Ruecksichtnahme nicht an Sprachvermoegen oder Rationalitaet gebunden ist, sondern am Kriterium der Leidensfaehigkeit (Prinzip der gleichen Interessenabwaegung)."
+    ],
+    "bodyZH": [
+      "本专题属于北威州高中哲学 EF 阶段 Inhaltsfeld 1（Der Mensch und sein Handeln / Philosophische Anthropologie）。",
+      "核心探究人与动物的本质界限：人究竟是自然界具有超越性精神（Geist）的万物之灵，还是生理器官退化、必须依赖文化制度补偿的「匮乏存在」（Mängelwesen）？在会考中，该考点常以经典人类学文本（如 Max Scheler, Arnold Gehlen）与现代动物伦理批判（如 Peter Singer 的反物种歧视 Speziesismus）进行对照分析（Aufgabenart I/II），要求学生掌握 AFB I 阐明观点、AFB II 比较论证结构与 AFB III 对「人类中心主义」作出权衡评判。",
+      "**Klausur-Relevanz**：EF 阶段人类学（Anthropologie）必考基石，向下衔接 Q 阶段身心问题（Leib-Seele）与责任伦理。"
+    ],
+    "path": "07_Philosophie/Texte-Analyse/Sonderstellung-des-Menschen.md"
+  },
+  {
     "id": "philosophie-utilitarismus-vs-kant",
     "fach": "Philosophie",
     "thema": "Utilitarismus vs Kant",
@@ -5958,6 +5926,56 @@ export const allVaultNotes: GeneratedNote[] = [
       "Philosophie 核心考纲笔记：EF-Ethik最小可用版。"
     ],
     "path": "07_Philosophie/Texte-Analyse/Utilitarismus-vs-Kant.md"
+  },
+  {
+    "id": "philosophie-verantwortung-und-anwendungsethik",
+    "fach": "Philosophie",
+    "thema": "Verantwortung und Anwendungsethik (QP)",
+    "zh": "责任与应用伦理",
+    "operatoren": [
+      "analysieren",
+      "anwenden",
+      "rekonstruieren",
+      "erörtern",
+      "beurteilen",
+      "Stellung nehmen"
+    ],
+    "klausurrelevant": true,
+    "bodyDE": [
+      "„Verantwortung lässt sich nur bestimmen, wenn geklärt ist, wem gegenüber, nach welchem Maßstab und für welche Folgen jemand verantwortlich ist.\""
+    ],
+    "bodyZH": [
+      "这是 QP IF4 `Werte und Normen des Handelns` 中 `Verantwortung in ethischen Anwendungskontexten` 一条，属 §4 #13。",
+      "[已验证] 把伦理原则用到**具体领域**（环境、医疗、技术）时，冲突才真正显现——此时「责任」成为评价段的核心标准词。",
+      "KLP 要求「把伦理原则应用到应用语境中并彼此划界」。"
+    ],
+    "path": "07_Philosophie/Texte-Analyse/Verantwortung-und-Anwendungsethik.md"
+  },
+  {
+    "id": "philosophie-wissenschaftliche-erkenntnistheorie",
+    "fach": "Philosophie",
+    "thema": "Wissenschaftliche Erkenntnistheorie (QP)",
+    "zh": "科学认识论基础",
+    "operatoren": [
+      "rekonstruieren",
+      "analysieren",
+      "vergleichen",
+      "erläutern",
+      "einordnen",
+      "beurteilen"
+    ],
+    "klausurrelevant": true,
+    "bodyDE": [
+      "„Während der Empirismus die Erfahrung als Quelle wissenschaftlicher Erkenntnis ansieht, behauptet der Rationalismus, dass sichere Erkenntnis auf Vernunftprinzipien beruht; Kant vermittelt beide, indem er Erkenntnis aus Anschauung und Verstandesbegriffen zusammensetzt.\"",
+      "„Das Induktionsproblem besteht darin, dass sich aus endlich vielen Einzelbeobachtungen kein allgemeiner Satz logisch ableiten lässt.\"",
+      "„Wissenschaftliche Forschung verbindet Deduktion, Induktion und Abduktion; keine dieser Formen allein sichert die Wahrheit einer Theorie.\""
+    ],
+    "bodyZH": [
+      "这是 QP IF6 `Geltungsansprüche der Wissenschaften` 中 `Erkenntnistheoretische Grundlagen der Wissenschaften` 与 `Wissenschaftliche Methode` 两条，对应 §4 #21（IF6 在 S8 前**完全空白**）。",
+      "[已验证] 它追问：科学知识的**基础**是观察还是理论？科学**推理**有哪几种形式（归纳 / 演绎 / 溯因）？以及科学凭什么主张**客观性**？[已验证]  **Klausur-Relevanz**：核心分析 + 比较题（`Erkenntnistheoretische Grundlagen analysieren`，AFB II）。",
+      "几乎必考：① 归纳问题的结构（Hume）。"
+    ],
+    "path": "07_Philosophie/Texte-Analyse/Wissenschaftliche-Erkenntnistheorie.md"
   },
   {
     "id": "sowi-mockklausur-nrw-sowi",
