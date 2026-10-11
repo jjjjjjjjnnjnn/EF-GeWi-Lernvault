@@ -297,12 +297,14 @@
 - [2026-10-10-external-ai-evaluation-and-phase-5-architecture-refinements](Journal/2026-10-10-external-ai-evaluation-and-phase-5-architecture-refinements.md) — **外部 AI 架构评审吸收与 Phase 5 体验进化技术路线**：用户习惯循环与低摩擦错题归档+微世界宽容度与吸附兜底+主轴探索与温故双轨分离+自适应3步流+高可见度进度条与实体骨架感+智能重排断点恢复
 - [2026-10-10-phase-5-teaching-studio-refinements-and-curriculum-presets](Journal/2026-10-10-phase-5-teaching-studio-refinements-and-curriculum-presets.md) — **Phase 5 全量交付：TeachingStudio 体验进化与全科考纲预设扩充**：轻量3步自适应微课流+Faust与微分全真大纲预设+智能复习欠账平滑衰减+微世界容错吸附与直达推导+一键.md错题下载与内嵌审阅抽屉+3px刻度进度条与会话断点恢复+89套件681测试全绿
 - [2026-10-10-phase-5-1-curriculum-and-experiment-first-quest-architecture](Journal/2026-10-10-phase-5-1-curriculum-and-experiment-first-quest-architecture.md) — **Phase 5.1 教学与实验前置重塑：新知课程与互动实验前置于考场闯关**：解决刷题死板与缺乏知识感痛点+两段式关卡架构（阶段一新知精讲与动手微世界先行、阶段二考场排雷与15NP金句闯关）+89套件682单测/tsc/vault-check全绿
-- [2026-10-10-study-mate-pedagogy-and-embedded-wissensnotiz](Journal/2026-10-10-study-mate-pedagogy-and-embedded-wissensnotiz.md) — **Study-Mate 趣味教学法与常驻搭载考纲知识笔记落地**：融合角色战役剧情(Story Hook)+费曼大白话+辩证双轨(两副眼镜)+趣味历史轶事+三维自适应调频探针([Einfacher]/[Vertiefung]/[Check])+常驻搭载知识笔记抽屉([Notiz]与一键小抄复制)+89套件684单测/tsc/vault-check全绿
+- [2026-10-10-study-mate-pedagogy-and-embedded-wissensnotiz](Journal/2026-10-10-study-mate-pedagogy-and-embedded-wissensnotiz.md) — **Study-Mate 趣味教学法与常驻搭载考纲知识笔记落地**：融合角色战役剧情(Story Hook)+费曼大白话+辩证双轨(两副眼镜)+趣味历史轶事+三维自适应调频探针([Einfacher]/[Vertiefung]/[Check])+常驻搭载知识笔记抽屉([Notiz]与一键小抄复制)+89套件686单测/tsc/vault-check全绿
 - [2026-10-10-curriculum-pedagogy-rework-and-archetype-templates](Journal/2026-10-10-curriculum-pedagogy-rework-and-archetype-templates.md) — **课程教学架构性重塑与四大分科教学模板总纲**：根治“内容稀碎/假大白话/学不会”硬伤+对标Anthropic/Brilliant/OpenAI/Study-Mate+制定社科/哲学/文学/理科四大分科黄金教学模板+发布外部AI生产总纲与40门核心课表矩阵+89套件686单测/tsc/vault-check全绿
 - [2026-10-10-external-ai-batch-1-delivery](Journal/2026-10-10-external-ai-batch-1-delivery.md) — **第一波次外部AI课程生产交付（5门Enterprise-v4）**：SoWi租金管制+物理匀加速+德语强盗+微积分面积+哲学功利主义全量合入，reisen扩充至361篇，v4严格机检+App兼容性闭环验证通过
 - [2026-10-10-reconstruction-dual-track-step1](Journal/2026-10-10-reconstruction-dual-track-step1.md) — **课程双轨与Step 1直觉站队深化**：Step 1无剧透直觉站队A/B设计+核心机制即时浮出
 - [2026-10-10-reconstruction-full-delivery](Journal/2026-10-10-reconstruction-full-delivery.md) — **十科361篇全量v5重构交付与引擎A1-A3加固**：360/361篇v5升级+Musterlösung离线显影+温和门控+仿真映射全绿
 - [2026-10-10-v5-didactic-components-integration](Journal/2026-10-10-v5-didactic-components-integration.md) — **App 端 v5 新段落结构化卡片与评分抽屉渲染优化**：KernsatzCard + ErwartungshorizontDrawer + AufloesungCard 结构化组件、Blocks 自动聚类解析与 Reise Step 5 场景考场集成（92套件708单测全绿）
+- [2026-10-10-didaktik-entgiftung-und-5-schritte-mikrolearning](Journal/2026-10-10-didaktik-entgiftung-und-5-schritte-mikrolearning.md) — **Didaktik-Entgiftung与5步建构主义微课落地**：KI套话根除+De-Boxing直觉站队+Tufte分屏工作台+4-vs-4概念拼图+0分考场陷阱与15NP金句
+- [2026-10-11-wave0-microlessons](Journal/2026-10-11-wave0-microlessons.md) — **Wave0十科5步微课标杆并行投产与SoWi首单落库**：10科shards并行投产+主线程独立复核10/10全过+单owner集成映射+十科逐单一科一Commit落库（94套件727单测/tsc/vault-check全绿）
 - 约定：文件名 `YYYY-MM-DD-<thema>.md`，头部frontmatter（`fach`可空，`tags: [EF, Meta]`）。
 
 
