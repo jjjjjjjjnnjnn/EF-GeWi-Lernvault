@@ -142,7 +142,11 @@ AUFGABE B: Die Region diskutiert einen Mindestlohn oberhalb des Gleichgewichts. 
 
 HILFE: Aufgabe A verlangt Hoechstpreis-Logik: Preis unten, Nachfrage hoch, Angebot knapp, Mangellage. Aufgabe B verlangt Mindestpreis-Logik: Preis oben, Angebot hoch, Nachfrage verhalten, Ueberangebot. Beide Male erst Weg benennen, dann Mengenwirkung in Worten, dann Folgen, dann Urteil am Kriterium.
 
-ANTWORT: Aufgabe A folgt Weg B im Fall Hoechstpreis: Nachfrage steigt, Angebot sinkt, Mangellage mit Schlange und Schattenmarkt, Urteil waegt billige Miete gegen Verknappung. Aufgabe B folgt Weg B im Fall Mindestpreis: Angebot steigt, Nachfrage sinkt, Ueberangebot mit Absatzrisiko, Urteil waegt Existenzschutz gegen Beschaeftigungsfolge. Weg A dient als Vergleichsmassstab der freien Raeumung.
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg A oder Weg B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Mechanismus zu Option A: folgt
+- Mechanismus zu Option B: im Fall Hoechstpreis: Nachfrage steigt, Angebot sinkt, Mangellage mit Schlange und Schattenmarkt, Urteil waegt billige Miete gegen Verknappung. Aufgabe B folgt Weg B im Fall Mindestpreis: Angebot steigt, Nachfrage sinkt, Ueberangebot mit Absatzrisiko, Urteil waegt Existenzschutz gegen Beschaeftigungsfolge. Weg A dient als Vergleichsmassstab der freien Raeumung.
+- Ein-Satz-Kern: Wird ein Höchstpreis unterhalb des Gleichgewichtspreises festgesetzt, entsteht ein Nachfrageüberhang, weil die Nachfrage steigt, das Angebot jedoch sinkt.
 
 Klausur-Satz: `Wird ein Höchstpreis unterhalb des Gleichgewichtspreises festgesetzt, entsteht ein Nachfrageüberhang, weil die Nachfrage steigt, das Angebot jedoch sinkt.`
 

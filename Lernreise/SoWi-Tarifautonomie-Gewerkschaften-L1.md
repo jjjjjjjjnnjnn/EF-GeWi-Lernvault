@@ -123,7 +123,11 @@ AUFGABE B: Der Betriebsrat verlangt Einsicht in die Personalplanung des Werks. W
 
 HILFE: A nennt Branche und Lohn, also Verfahren (i). B nennt Betrieb und Mitwirkung, also Verfahren (ii).
 
-ANTWORT: A erfordert Verfahren (i): Flächentarif mit Verhandlung, Schlichtung und moeglichem Streik. B erfordert Verfahren (ii): Betriebsverfassung mit Informations- und Mitbestimmungsrechten ohne Arbeitskampf.
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg A oder Weg B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Mechanismus zu Option A: Verfahren (i): Flächentarif mit Verhandlung, Schlichtung und moeglichem Streik.
+- Mechanismus zu Option B: Verfahren (ii): Betriebsverfassung mit Informations- und Mitbestimmungsrechten ohne Arbeitskampf.
+- Ein-Satz-Kern: Lohn der Branche gehoert an den Tariftisch, Mitwirkung im Betrieb an den Betriebsrat.
 
 Klausur-Satz: `Lohn der Branche gehoert an den Tariftisch, Mitwirkung im Betrieb an den Betriebsrat.`
 

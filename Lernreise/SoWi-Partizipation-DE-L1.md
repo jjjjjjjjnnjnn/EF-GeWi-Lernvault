@@ -141,7 +141,11 @@ AUFGABE B: Dieselbe Schuelergruppe plant stattdessen eine Demo mit Strassenblock
 
 HILFE: Aufgabe A fragt nach verfasster Form, daher Mandat und Organisation nennen. Aufgabe B fragt nach freier Form, daher Druck und Legalitaetsgrenze nennen. Die Wahl des Weges steht vor jedem Urteil.
 
-ANTWORT: Aufgabe A wird ueber Weg A geloest, weil Wahl und Parteiarbeit dauerhaft binden und Minderheitenschutz wahren, auch wenn der Weg lang ist. Aufgabe B wird ueber Weg B geloest, weil Demo und digitaler Protest schnell Druck erzeugen, doch ziviler Ungehorsam an der Grenze zur Rechtsverletzung sorgfaeltig zu begruenden ist. Erst beide Wege zusammen ergeben ein klausurtaugliches Urteil.
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg A oder Weg B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Mechanismus zu Option A: wird ueber Weg A geloest, weil Wahl und Parteiarbeit dauerhaft binden und Minderheitenschutz wahren, auch wenn der Weg lang ist.
+- Mechanismus zu Option B: wird ueber Weg B geloest, weil Demo und digitaler Protest schnell Druck erzeugen, doch ziviler Ungehorsam an der Grenze zur Rechtsverletzung sorgfaeltig zu begruenden ist. Erst beide Wege zusammen ergeben ein klausurtaugliches Urteil.
+- Ein-Satz-Kern: Der Bürgerrat ergänzt die repräsentative Demokratie, kann sie aber ohne Verbindlichkeit nicht ersetzen.
 
 Klausur-Satz: `Der Bürgerrat ergänzt die repräsentative Demokratie, kann sie aber ohne Verbindlichkeit nicht ersetzen.`
 

@@ -141,7 +141,11 @@ AUFGABE B (AFB II, 8 BE)：Eine Tabelle dokumentiert, dass Familien- und Sicherh
 
 HILFE: A fragt nach dem Werden des Selbst in der Kommunikation (Mead/Goffman) -> Verfahren (i). B fragt nach einer gesellschaftlichen Verschiebung, die auf das Individuum einwirkt -> Verfahren (ii).【选程序：材料问"交往中怎么形成"= 交往程序；材料给的是社会/媒体/时代数据 = 结构程序。】
 
-ANTWORT: A erfordert Verfahren (i): Nach Mead wird sich das Individuum seiner selbst erst bewusst, indem es sich mit den Augen der Anderen sieht; die vielen Spiegelbilder versinnbildlichen, dass das Selbst aus den Reaktionen der Anderen aufgebaut wird, wobei Goffmans Vorder-/Hinterbühne die Inszenierung erklärt. B erfordert Verfahren (ii): Der Befund belegt einen Wertewandel — Familie und Sicherheit gewinnen gegenüber früheren Prioritäten an Gewicht; dieser gesellschaftliche Wandel wirkt als Rahmen, innerhalb dessen Jugendliche ihre eigenen Werte aushandeln (Riesman: Gefahr der Außenleitung).
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg A oder Weg B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Mechanismus zu Option A: Verfahren (i): Nach Mead wird sich das Individuum seiner selbst erst bewusst, indem es sich mit den Augen der Anderen sieht; die vielen Spiegelbilder versinnbildlichen, dass das Selbst aus den Reaktionen der Anderen aufgebaut wird, wobei Goffmans Vorder-/Hinterbühne die Inszenierung erklärt.
+- Mechanismus zu Option B: Verfahren (ii): Der Befund belegt einen Wertewandel — Familie und Sicherheit gewinnen gegenüber früheren Prioritäten an Gewicht; dieser gesellschaftliche Wandel wirkt als Rahmen, innerhalb dessen Jugendliche ihre eigenen Werte aushandeln (Riesman: Gefahr der Außenleitung).
+- Ein-Satz-Kern: Wertewandel bezeichnet die Verschiebung gesellschaftlicher Wertprioritäten, die den Rahmen der individuellen Identitätsarbeit verändert.
 
 Klausur-Satz: `Wertewandel bezeichnet die Verschiebung gesellschaftlicher Wertprioritäten, die den Rahmen der individuellen Identitätsarbeit verändert.`
 

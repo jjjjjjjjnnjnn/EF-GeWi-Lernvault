@@ -141,7 +141,11 @@ AUFGABE B：Ein Text beschreibt, dass Niedriglohnjobs sich auf bestimmte Regione
 
 HILFE: A fragt nach Schulden und Konjunktur -> Verfahren (i) IF4. B fragt nach der Verteilung von Beschaeftigung ueber Gruppen -> Verfahren (ii) IF6.【选程序：问"借钱/工具" -> IF4；问"分层/兜底" -> IF6。】
 
-ANTWORT: A erfordert Verfahren (i): Zu argumentieren ist mit dem magischen Viereck und der Konzeption der Staatsverschuldung — der Staat kann in der Rezession ueber Deficit Spending investieren und so Beschaeftigung und Wachstum stuetzen, muss aber die Zielkonflikte (Preisstabilitaet, Tragbarkeit der Schulden) und die europaeischen Regeln beachten. Das EF-Kapitel 11 liefert die Beispiele. B erfordert Verfahren (ii): Zu argumentieren ist mit den drei Modellen — das Lagenmodell beschreibt die mehrdimensionale Benachteiligung der Niedriglohngruppe, das Milieumodell erklaert die Konzentration nach Lebensstilen und Regionen; als Antwort auf die Ungleichheit dienen sozialstaatliche Instrumente wie Mindestlohn, Wohngeld und progressive Steuern. Hier ist die Ungleichheit-Notiz der Anker.
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg A oder Weg B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Mechanismus zu Option A: Verfahren (i): Zu argumentieren ist mit dem magischen Viereck und der Konzeption der Staatsverschuldung — der Staat kann in der Rezession ueber Deficit Spending investieren und so Beschaeftigung und Wachstum stuetzen, muss aber die Zielkonflikte (Preisstabilitaet, Tragbarkeit der Schulden) und die europaeischen Regeln beachten. Das EF-Kapitel 11 liefert die Beispiele.
+- Mechanismus zu Option B: Verfahren (ii): Zu argumentieren ist mit den drei Modellen — das Lagenmodell beschreibt die mehrdimensionale Benachteiligung der Niedriglohngruppe, das Milieumodell erklaert die Konzentration nach Lebensstilen und Regionen; als Antwort auf die Ungleichheit dienen sozialstaatliche Instrumente wie Mindestlohn, Wohngeld und progressive Steuern. Hier ist die Ungleichheit-Notiz der Anker.
+- Ein-Satz-Kern: Die Fokussierung des Inhaltsfelds 4 fragt nach dem Staatshaushalt und seinen Instrumenten, die des Inhaltsfelds 6 nach den Modellen der Ungleichheit und dem sozialstaatlichen Ausgleich.
 
 Klausur-Satz: `Die Fokussierung des Inhaltsfelds 4 fragt nach dem Staatshaushalt und seinen Instrumenten, die des Inhaltsfelds 6 nach den Modellen der Ungleichheit und dem sozialstaatlichen Ausgleich.`
 

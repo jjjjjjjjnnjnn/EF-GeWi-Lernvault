@@ -124,7 +124,11 @@ AUFGABE B: Eine Studentin jobbt freiwillig zehn Stunden pro Woche im Cafe. Ist d
 
 HILFE: A fragt nach Branchenverschiebung, also Verfahren (i). B fragt nach einem Einzelfall, also Verfahren (ii).
 
-ANTWORT: A erfordert Verfahren (i): Deindustrialisierung plus Tertiaerisierung mit gespaltener Jobqualitaet. B erfordert Verfahren (ii): Trotz Teilzeit fehlt die Kumulation, da Studium die Existenz sichert und die Stelle freiwillig sowie zeitlich begrenzt ist; daher nicht prekaer.
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg A oder Weg B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Mechanismus zu Option A: Verfahren (i): Deindustrialisierung plus Tertiaerisierung mit gespaltener Jobqualitaet.
+- Mechanismus zu Option B: Verfahren (ii): Trotz Teilzeit fehlt die Kumulation, da Studium die Existenz sichert und die Stelle freiwillig sowie zeitlich begrenzt ist; daher nicht prekaer.
+- Ein-Satz-Kern: Branchenwandel verlangt das Strukturverfahren, Einzelfaelle den Vier-Kriterien-Test.
 
 Klausur-Satz: `Branchenwandel verlangt das Strukturverfahren, Einzelfaelle den Vier-Kriterien-Test.`
 

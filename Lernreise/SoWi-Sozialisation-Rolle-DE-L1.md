@@ -142,7 +142,11 @@ AUFGABE B: Zwei Schuelerinnen deuten dieselbe Regel voellig gegensaetzlich und f
 
 HILFE: Aufgabe A verlangt Ordnungserklaerung, daher Weg A mit Internalisierung und Kontrolle. Aufgabe B verlangt Deutungsvergleich am Kriterium, daher beide Wege gegenueberstellen und Erklaerungskraft abwaegen. Die Wahl des Weges steht vor jeder Deutung.
 
-ANTWORT: Aufgabe A folgt Weg A, weil Erwartung plus Sanktion Berechenbarkeit schafft. Aufgabe B verlangt den Vergleich, weil erst Gegenueberstellung von Erwartungsdruck und Aushandlung ein begruendetes Urteil zu Bindung und Spielraum erlaubt.
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg A oder Weg B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Mechanismus zu Option A: folgt Weg A, weil Erwartung plus Sanktion Berechenbarkeit schafft.
+- Mechanismus zu Option B: verlangt den Vergleich, weil erst Gegenueberstellung von Erwartungsdruck und Aushandlung ein begruendetes Urteil zu Bindung und Spielraum erlaubt.
+- Ein-Satz-Kern: Ein Intra-Rollenkonflikt liegt vor, wenn die Erwartungen an ein und dieselbe Position einander widersprechen.
 
 Klausur-Satz: `Ein Intra-Rollenkonflikt liegt vor, wenn die Erwartungen an ein und dieselbe Position einander widersprechen.`
 

@@ -141,7 +141,11 @@ AUFGABE B (AFB II, 8 BE)：Eine Karikatur zeigt eine Person, die versucht, einen
 
 HILFE: A fragt nach dem Schutz einer einzelnen Person gegen eine Benachteiligung (Gleichheitsrecht, Drittwirkung) -> Verfahren (i). B fragt nach der Unabänderbarkeit zentraler Strukturprinzipien -> Verfahren (ii).【选程序：材料问"某项权利受不受保护/怎么冲突"= 权利程序；材料问"能不能改宪法/国家结构"= 原则程序。】
 
-ANTWORT: A erfordert Verfahren (i): Betroffen ist der Gleichheitssatz (Art. 3 Abs. 3 GG, Benachteiligungsverbot wegen Herkunft). Grundrechte wirken zwar primär gegen den Staat, entfalten über die Drittwirkung aber mittelbare Wirkung auch zwischen Privaten, sodass die Benachteiligung rechtlich relevant wird. B erfordert Verfahren (ii): Die Karikatur spielt auf die Ewigkeitsklausel (Art. 79 Abs. 3 GG) an — Art. 1 und Art. 20 sind selbst durch eine Verfassungsänderung nicht angreifbar; der Tresor steht für den unantastbaren Kern, der auch demokratische Mehrheiten bindet.
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg A oder Weg B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Mechanismus zu Option A: Verfahren (i): Betroffen ist der Gleichheitssatz (Art. 3 Abs. 3 GG, Benachteiligungsverbot wegen Herkunft). Grundrechte wirken zwar primär gegen den Staat, entfalten über die Drittwirkung aber mittelbare Wirkung auch zwischen Privaten, sodass die Benachteiligung rechtlich relevant wird.
+- Mechanismus zu Option B: Verfahren (ii): Die Karikatur spielt auf die Ewigkeitsklausel (Art. 79 Abs. 3 GG) an — Art. 1 und Art. 20 sind selbst durch eine Verfassungsänderung nicht angreifbar; der Tresor steht für den unantastbaren Kern, der auch demokratische Mehrheiten bindet.
+- Ein-Satz-Kern: Grundrechte wirken über die Drittwirkung mittelbar auch zwischen Bürgern, während Art. 79 Abs. 3 den Kern der Verfassung gegen jede Änderung schützt.
 
 Klausur-Satz: `Grundrechte wirken über die Drittwirkung mittelbar auch zwischen Bürgern, während Art. 79 Abs. 3 den Kern der Verfassung gegen jede Änderung schützt.`
 

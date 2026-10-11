@@ -130,7 +130,11 @@ AUFGABE B (Sozial-Brille)：Eine alleinerziehende Mutter arbeitet Vollzeit, blei
 
 HILFE: A只准用Preis/Menge/Anreiz词；B只准用Schutz/Bedarf/Ausgleich词。写前先写"Ich wähle Verfahren (i)/(ii), weil …"。
 
-ANTWORT: A = Verfahren (i); Punkte: knappes Angebot -> höherer Preis -> weniger Nachfrage + Anreiz für mehr Angebot. B = Verfahren (ii); Punkte: Marktlohn deckt Bedarf nicht -> sozialer Ausgleich (Sozialversicherung/Umverteilung) legitimiert Eingriff; Tarifautonomie-Grenze nennen genügt.
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg A oder Weg B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Mechanismus zu Option A: Verfahren (i); Punkte: knappes Angebot -> höherer Preis -> weniger Nachfrage + Anreiz für mehr Angebot.
+- Mechanismus zu Option B: Verfahren (ii); Punkte: Marktlohn deckt Bedarf nicht -> sozialer Ausgleich (Sozialversicherung/Umverteilung) legitimiert Eingriff; Tarifautonomie-Grenze nennen genügt.
+- Ein-Satz-Kern: Der Preismechanismus gleicht Angebot und Nachfrage über den Preis aus.
 
 Klausur-Satz: `Der Preismechanismus gleicht Angebot und Nachfrage über den Preis aus.`
 

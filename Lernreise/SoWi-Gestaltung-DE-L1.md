@@ -142,7 +142,11 @@ AUFGABE B: Die Schule diskutiert Einweg gegen Mehrweg als Grundregel mit Pfand u
 
 HILFE: Aufgabe A verlangt schnelle Schritte im Rahmen, daher Weg A mit Machbarkeit. Aufgabe B verlangt Vergleich am Massstab von Tiefe und Fairness, daher beide Wege gegenueberstellen und Abwaegung begruenden. Die Wahl des Weges steht vor jeder Empfehlung.
 
-ANTWORT: Aufgabe A folgt Weg A, weil Trennung und Pfandstationen sofort wirken und zustimmungsfaehig sind. Aufgabe B verlangt den Vergleich, weil erst Gegenueberstellung von schnellem Schritt und neuer Regel ein begruendetes Urteil zu Ursache und Dauer erlaubt.
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg A oder Weg B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Mechanismus zu Option A: folgt Weg A, weil Trennung und Pfandstationen sofort wirken und zustimmungsfaehig sind.
+- Mechanismus zu Option B: verlangt den Vergleich, weil erst Gegenueberstellung von schnellem Schritt und neuer Regel ein begruendetes Urteil zu Ursache und Dauer erlaubt.
+- Ein-Satz-Kern: Der Redebeitrag ueberzeugt ein Publikum mit Bezug und Appell, die Handlungsempfehlung ueberzeugt einen Adressaten mit Daten und Wirkungsketten.
 
 Klausur-Satz: `Der Redebeitrag ueberzeugt ein Publikum mit Bezug und Appell, die Handlungsempfehlung ueberzeugt einen Adressaten mit Daten und Wirkungsketten.`
 

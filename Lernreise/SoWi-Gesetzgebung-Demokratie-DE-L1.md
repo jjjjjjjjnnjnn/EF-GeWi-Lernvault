@@ -141,7 +141,11 @@ AUFGABE B: Derselbe Entwurf zur Entlastung der Kommunen landet im Vermittlungsau
 
 HILFE: Aufgabe A fragt nach Gestaltungstempo, daher Mehrheit und Verantwortung nennen. Aufgabe B fragt nach Ausgleich, daher Vermittlung und Konsens nennen. Die Wahl des Weges steht vor jedem Urteil.
 
-ANTWORT: Aufgabe A wird ueber Weg A geloest, weil die Regierungsmehrheit zuegige Entlastung mit Verantwortung begruendet, solange Laenderrechte formal gewahrt bleiben. Aufgabe B wird ueber Weg B geloest, weil erst der Vermittlungsausschuss Laenderinteressen einbindet und dem Gesetz breite Legitimation gibt. Erst beide Wege zusammen ergeben ein klausurtaugliches Urteil.
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg A oder Weg B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Mechanismus zu Option A: wird ueber Weg A geloest, weil die Regierungsmehrheit zuegige Entlastung mit Verantwortung begruendet, solange Laenderrechte formal gewahrt bleiben.
+- Mechanismus zu Option B: wird ueber Weg B geloest, weil erst der Vermittlungsausschuss Laenderinteressen einbindet und dem Gesetz breite Legitimation gibt. Erst beide Wege zusammen ergeben ein klausurtaugliches Urteil.
+- Ein-Satz-Kern: Je nach demokratietheoretischem Ansatz wird das Gesetzgebungsverfahren unterschiedlich bewertet: republikanisch als Frage der Bürgerbeteiligung, prozedural als Frage der Verfahrensqualität.
 
 Klausur-Satz: `Je nach demokratietheoretischem Ansatz wird das Gesetzgebungsverfahren unterschiedlich bewertet: republikanisch als Frage der Bürgerbeteiligung, prozedural als Frage der Verfahrensqualität.`
 

@@ -140,7 +140,11 @@ AUFGABE B: Der Ausschuss fragt, ob Umverteilung zu rechtfertigen sei. Stelle aus
 
 HILFE: Aufgabe A verlangt Rangfolge aus Form und Wert ohne Ausgleichsurteil. Aufgabe B verlangt belegten Vergleich mit Werkzeug-Ablesung plus Begruendung am Kriterium. Beide Male erst Weg benennen, dann Bogen und Wert beschreiben, dann Anreiz gegen Ausgleich, dann Urteil.
 
-ANTWORT: Aufgabe A folgt Weg A mit Rangfolge aus Bogenform: tiefere Kurve gehoert zu ungleicherer Verteilung, Anreize erklaeren die Spreizung. Aufgabe B folgt Weg B mit Korrektur: Steuern und Transfers heben die Kurve und senken den Wert, Armut und Chancen stuetzten das Ausgleichsurteil unter Wahrung noetiger Anreize.
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg A oder Weg B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Mechanismus zu Option A: folgt Weg A mit Rangfolge aus Bogenform: tiefere Kurve gehoert zu ungleicherer Verteilung, Anreize erklaeren die Spreizung.
+- Mechanismus zu Option B: folgt Weg B mit Korrektur: Steuern und Transfers heben die Kurve und senken den Wert, Armut und Chancen stuetzten das Ausgleichsurteil unter Wahrung noetiger Anreize.
+- Ein-Satz-Kern: Fuer eine reine Rangfolge genuegt der Blick auf die Lorenzkurve, fuer einen begruendeten Vergleich der Verteilung ist der Gini-Koeffizient noetig.
 
 Klausur-Satz: `Fuer eine reine Rangfolge genuegt der Blick auf die Lorenzkurve, fuer einen begruendeten Vergleich der Verteilung ist der Gini-Koeffizient noetig.`
 

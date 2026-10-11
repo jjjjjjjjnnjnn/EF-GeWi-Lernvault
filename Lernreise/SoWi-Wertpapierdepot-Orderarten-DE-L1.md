@@ -104,7 +104,11 @@ AUFGABE B: Eine Berufsanfängerin möchte für ihre private Altersvorsorge in 35
 
 HILFE: A benötigt unmittelbare Liquidität ohne jedes Kursrisiko -> Verfahren (i). B verfügt über einen mehrdekadischen Anlagehorizont zur Überwindung der Inflation -> Verfahren (ii).
 
-ANTWORT: Für A ist Verfahren (i) (Tagesgeld) zwingend: Bei 3 Monaten Fristigkeit dürfen keine Marktschwankungen riskiert werden; der kurzfristige Kaufkraftverlust ist gering. Für B ist Verfahren (ii) (Wertpapierdepot mit breit gestreutem ETF) unverzichtbar: Über 35 Jahre zerstört die Inflation reine Geldguthaben; kurzfristige Kurseinbrüche glätten sich historisch verlässlich aus, während der Zinseszinseffekt voll greift.
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg A oder Weg B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Mechanismus zu Option A: ist Verfahren (i) (Tagesgeld) zwingend: Bei 3 Monaten Fristigkeit dürfen keine Marktschwankungen riskiert werden; der kurzfristige Kaufkraftverlust ist gering.
+- Mechanismus zu Option B: ist Verfahren (ii) (Wertpapierdepot mit breit gestreutem ETF) unverzichtbar: Über 35 Jahre zerstört die Inflation reine Geldguthaben; kurzfristige Kurseinbrüche glätten sich historisch verlässlich aus, während der Zinseszinseffekt voll greift.
+- Ein-Satz-Kern: Kurzfristige Mittel erfordern Liquidität und Sicherheit auf Tagesgeldkonten, während langfristige Sparziele über diversifizierte Depots realisiert werden müssen.
 
 Klausur-Satz: `Kurzfristige Mittel erfordern Liquidität und Sicherheit auf Tagesgeldkonten, während langfristige Sparziele über diversifizierte Depots realisiert werden müssen.`
 

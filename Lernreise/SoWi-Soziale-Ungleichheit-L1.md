@@ -140,7 +140,11 @@ AUFGABE B：Ein Sachtext zeigt, dass Kinder aus armen Familien haeufiger krank s
 
 HILFE: A betont Anreiz und Leistung -> Lesart (i) Funktionalismus. B zeigt einen Teufelskreis und fehlende Startchancen -> Lesart (ii) Konflikttheorie.【选概念：说"激励/合理" -> 功能派；说"固化/不公" -> 冲突派。】
 
-ANTWORT: A erfordert Lesart (i): Der Text argumentiert funktionalistisch im Sinne der Davis-Moore-These — hohe Einkommen werden als notwendiger Anreiz gedeutet, damit sich Qualifikation und Verantwortung lohnen. Ungleichheit erscheint hier als funktional, nicht als ungerecht. B erfordert Lesart (ii): Der Text argumentiert konflikttheoretisch — die Verkettung von Armut, Gesundheit und Bildung zeigt, dass Lebenschancen vererbt werden und die Startbedingungen ungleich sind. Hier wird Ungleichheit als strukturell und korrekturbeduerftig gedeutet, etwa durch Umverteilung (BAfoeG, progressive Steuern).
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg A oder Weg B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Mechanismus zu Option A: Lesart (i): Der Text argumentiert funktionalistisch im Sinne der Davis-Moore-These — hohe Einkommen werden als notwendiger Anreiz gedeutet, damit sich Qualifikation und Verantwortung lohnen. Ungleichheit erscheint hier als funktional, nicht als ungerecht.
+- Mechanismus zu Option B: Lesart (ii): Der Text argumentiert konflikttheoretisch — die Verkettung von Armut, Gesundheit und Bildung zeigt, dass Lebenschancen vererbt werden und die Startbedingungen ungleich sind. Hier wird Ungleichheit als strukturell und korrekturbeduerftig gedeutet, etwa durch Umverteilung (BAfoeG, progressive Steuern).
+- Ein-Satz-Kern: Funktionalistische Ansaetze deuten Ungleichheit als Leistungsanreiz, konflikttheoretische Ansaetze als strukturelle Benachteiligung, die nach Ausgleich verlangt.
 
 Klausur-Satz: `Funktionalistische Ansaetze deuten Ungleichheit als Leistungsanreiz, konflikttheoretische Ansaetze als strukturelle Benachteiligung, die nach Ausgleich verlangt.`
 

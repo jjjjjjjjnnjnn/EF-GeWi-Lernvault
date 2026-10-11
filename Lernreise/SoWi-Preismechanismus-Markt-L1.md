@@ -133,7 +133,11 @@ AUFGABE B：Ein Sachtext beschreibt, dass die Regierung eine Mietpreisbremse ein
 
 HILFE: A fragt nach dem Selbstausgleich über Preise ohne staatliche Preisgrenze -> Verfahren (i). B fragt nach einer staatlich fixierten Preisgrenze und ihren Folgen -> Verfahren (ii).【选程序：无价格上限/下限 = 市场程序；有价格上限/下限 = 干预程序。】
 
-ANTWORT: A erfordert Verfahren (i): Die Missernte verschiebt die Angebotskurve nach links; da die Nachfrage unverändert bleibt, steigt der Preis bis zum neuen Gleichgewicht und rationiert so die knappe Ware über die Zahlungsbereitschaft — der Preis erfüllt seine Signalfunktion. B erfordert Verfahren (ii): Die Mietpreisbremse wirkt als Höchstpreis unterhalb des Gleichgewichts; bei niedrigerem Preis steigt die Nachfrage, während die Vermieter weniger Wohnraum anbieten, sodass ein Nachfrageüberhang entsteht, der sich in Wartelisten, Fehlallokation und Schattenmärkten äußert.
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg A oder Weg B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Mechanismus zu Option A: Verfahren (i): Die Missernte verschiebt die Angebotskurve nach links; da die Nachfrage unverändert bleibt, steigt der Preis bis zum neuen Gleichgewicht und rationiert so die knappe Ware über die Zahlungsbereitschaft — der Preis erfüllt seine Signalfunktion.
+- Mechanismus zu Option B: Verfahren (ii): Die Mietpreisbremse wirkt als Höchstpreis unterhalb des Gleichgewichts; bei niedrigerem Preis steigt die Nachfrage, während die Vermieter weniger Wohnraum anbieten, sodass ein Nachfrageüberhang entsteht, der sich in Wartelisten, Fehlallokation und Schattenmärkten äußert.
+- Ein-Satz-Kern: Wird ein Höchstpreis unterhalb des Gleichgewichtspreises festgesetzt, entsteht ein Nachfrageüberhang, weil die Nachfrage steigt, das Angebot jedoch sinkt.
 
 Klausur-Satz: `Wird ein Höchstpreis unterhalb des Gleichgewichtspreises festgesetzt, entsteht ein Nachfrageüberhang, weil die Nachfrage steigt, das Angebot jedoch sinkt.`
 

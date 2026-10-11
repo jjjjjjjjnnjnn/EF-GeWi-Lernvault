@@ -147,7 +147,11 @@ AUFGABE B (AFB II, 8 BE)：Eine Karikatur zeigt eine Lehrerin, die von ihren Sch
 
 HILFE: A fragt nach dem Erwerb von Normen und dem Lernweg (Verstärkung, primäre Phase) -> Verfahren (i). B fragt nach widersprüchlichen Erwartungen innerhalb einer einzigen Rolle -> Verfahren (ii).【选程序：材料问"怎么学会的"= 社会化程序；材料问"期待打架/怎么处理"= 角色程序。】
 
-ANTWORT: A erfordert Verfahren (i): Das Lob der Eltern wirkt als positive Sanktion bzw. Verstärkung; das Kind verinnerlicht die Norm der Rücksichtnahme, und da dies in der Familie geschieht, gehört der Vorgang zur primären Sozialisation. B erfordert Verfahren (ii): Hier liegt ein Intra-Rollenkonflikt vor, weil sich die beiden Erwartungen „Strenge" und „Verständnis" auf dieselbe Rolle (Lehrkraft) beziehen und nicht gleichzeitig erfüllbar sind; als Ausweg kann die Lehrkraft durch Rollendistanz eine klare, aber nachvollziehbare Haltung aushandeln und die Erwartungen transparent machen.
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg A oder Weg B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Mechanismus zu Option A: Verfahren (i): Das Lob der Eltern wirkt als positive Sanktion bzw. Verstärkung; das Kind verinnerlicht die Norm der Rücksichtnahme, und da dies in der Familie geschieht, gehört der Vorgang zur primären Sozialisation.
+- Mechanismus zu Option B: Verfahren (ii): Hier liegt ein Intra-Rollenkonflikt vor, weil sich die beiden Erwartungen „Strenge" und „Verständnis" auf dieselbe Rolle (Lehrkraft) beziehen und nicht gleichzeitig erfüllbar sind; als Ausweg kann die Lehrkraft durch Rollendistanz eine klare, aber nachvollziehbare Haltung aushandeln und die Erwartungen transparent machen.
+- Ein-Satz-Kern: Ein Intra-Rollenkonflikt liegt vor, wenn die Erwartungen an ein und dieselbe Position einander widersprechen.
 
 Klausur-Satz: `Ein Intra-Rollenkonflikt liegt vor, wenn die Erwartungen an ein und dieselbe Position einander widersprechen.`
 

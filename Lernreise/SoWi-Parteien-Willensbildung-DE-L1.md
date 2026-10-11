@@ -141,7 +141,11 @@ AUFGABE B: Dieselbe Jugendgruppe organisiert eine Klimainitiative mit Demo und P
 
 HILFE: Aufgabe A fragt nach Vermittlung, daher Art. 21 mit Integration und Sozialisation nennen. Aufgabe B fragt nach Bewegung, daher Mobilisierung und Druck nennen. Die Wahl des Weges steht vor jedem Urteil.
 
-ANTWORT: Aufgabe A wird ueber Weg A geloest, weil Parteien Interessen buendeln und regierungsfaehig machen, was Initiativen allein nicht leisten. Aufgabe B wird ueber Weg B geloest, weil Initiativen vernachlaessigte Themen schnell auf die Agenda setzen und Parteien zur Antwort zwingen. Erst beide Wege zusammen ergeben ein klausurtaugliches Urteil.
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg A oder Weg B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Mechanismus zu Option A: wird ueber Weg A geloest, weil Parteien Interessen buendeln und regierungsfaehig machen, was Initiativen allein nicht leisten.
+- Mechanismus zu Option B: wird ueber Weg B geloest, weil Initiativen vernachlaessigte Themen schnell auf die Agenda setzen und Parteien zur Antwort zwingen. Erst beide Wege zusammen ergeben ein klausurtaugliches Urteil.
+- Ein-Satz-Kern: Die Erosion der Volksparteien zeigt sich im sinkenden Stimmenanteil, weil Wechselwähler zunehmen und Stammwähler schmelzen.
 
 Klausur-Satz: `Die Erosion der Volksparteien zeigt sich im sinkenden Stimmenanteil, weil Wechselwähler zunehmen und Stammwähler schmelzen.`
 

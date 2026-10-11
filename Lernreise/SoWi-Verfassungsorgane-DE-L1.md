@@ -141,7 +141,11 @@ AUFGABE B: Dieselbe Reform zur Verkleinerung des Bundestages steht zur Pruefung.
 
 HILFE: Aufgabe A fragt nach Gestaltung, daher Mehrheit und Funktionsfaehigkeit nennen. Aufgabe B fragt nach Begrenzung, daher foederative Mitwirkung und richterliche Pruefung nennen. Die Wahl des Weges steht vor jedem Urteil.
 
-ANTWORT: Aufgabe A wird ueber Weg A geloest, weil eine handlungsfaehige Mehrheit die Verkleinerung mit Funktionsfaehigkeit begruendet, solange Wahlen frei bleiben. Aufgabe B wird ueber Weg B geloest, weil Bundesrat und Gericht pruefen, ob Repraesentation und Minderheitenschutz gewahrt sind. Erst beide Wege zusammen ergeben ein klausurtaugliches Urteil.
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg A oder Weg B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Mechanismus zu Option A: wird ueber Weg A geloest, weil eine handlungsfaehige Mehrheit die Verkleinerung mit Funktionsfaehigkeit begruendet, solange Wahlen frei bleiben.
+- Mechanismus zu Option B: wird ueber Weg B geloest, weil Bundesrat und Gericht pruefen, ob Repraesentation und Minderheitenschutz gewahrt sind. Erst beide Wege zusammen ergeben ein klausurtaugliches Urteil.
+- Ein-Satz-Kern: Beim Zustimmungsgesetz kann der Bundesrat ein Vorhaben blockieren, beim Einspruchsgesetz kann der Bundestag den Einspruch überstimmen.
 
 Klausur-Satz: `Beim Zustimmungsgesetz kann der Bundesrat ein Vorhaben blockieren, beim Einspruchsgesetz kann der Bundestag den Einspruch überstimmen.`
 

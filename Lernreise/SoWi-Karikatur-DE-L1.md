@@ -142,7 +142,11 @@ AUFGABE B: Beurteile die Bildaussage nach dem Kriterium der Teilhabe: Kritisiert
 
 HILFE: Aufgabe A verlangt nur Sichten und Zuordnen, daher Weg A mit Elementen und Symbolen. Aufgabe B verlangt Abwaegung am Massstab, daher Weg B mit Satire-Blick und Haltungskritik. Die Wahl des Weges steht vor jeder Deutung.
 
-ANTWORT: Aufgabe A folgt Weg A, weil saubere Erfassung und Deutung mit Beleg genuegen. Aufgabe B verlangt Weg B, weil erst Deutung von Uebertreibung und Appell plus Abwaegung am Kriterium ein begruendetes Urteil erlaubt.
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg A oder Weg B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Mechanismus zu Option A: folgt Weg A, weil saubere Erfassung und Deutung mit Beleg genuegen.
+- Mechanismus zu Option B: verlangt Weg B, weil erst Deutung von Uebertreibung und Appell plus Abwaegung am Kriterium ein begruendetes Urteil erlaubt.
+- Ein-Satz-Kern: Ein Verteilungskonflikt fragt nach der gerechten Aufteilung, ein Zielkonflikt nach der Prioritaet zwischen zwei erstrebenswerten Guetern.
 
 Klausur-Satz: `Ein Verteilungskonflikt fragt nach der gerechten Aufteilung, ein Zielkonflikt nach der Prioritaet zwischen zwei erstrebenswerten Guetern.`
 

@@ -137,7 +137,11 @@ AUFGABE B: Dieselbe Ratsmehrheit will die Versammlung dauerhaft verbannen. Loese
 
 HILFE: Aufgabe A fragt nach demokratischer Legitimation, daher Mehrheitsargument mit Wechselchance nennen. Aufgabe B fragt nach rechtlicher Grenze, daher Art. 1 und Art. 79 Abs. 3 mit Minderheitenschutz nennen. Die Wahl des Weges steht vor jedem Urteil.
 
-ANTWORT: Aufgabe A wird ueber Weg A geloest, weil Mehrheitsregel und Repraesentation die Entscheidung tragen, solange der Rechtsweg offen bleibt. Aufgabe B wird ueber Weg B geloest, weil Ewigkeitsklausel und Wesensgehalt der Mehrheit den dauerhaften Ausschluss einer Minderheit verbieten. Erst beide Wege zusammen ergeben ein klausurtaugliches Urteil.
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg A oder Weg B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Mechanismus zu Option A: wird ueber Weg A geloest, weil Mehrheitsregel und Repraesentation die Entscheidung tragen, solange der Rechtsweg offen bleibt.
+- Mechanismus zu Option B: wird ueber Weg B geloest, weil Ewigkeitsklausel und Wesensgehalt der Mehrheit den dauerhaften Ausschluss einer Minderheit verbieten. Erst beide Wege zusammen ergeben ein klausurtaugliches Urteil.
+- Ein-Satz-Kern: Die Mehrheit legitimiert die Entscheidung, doch Art. 1 und Art. 79 Abs. 3 GG begrenzen jede Mehrheit durch Minderheitenschutz und materielle Gerechtigkeit.
 
 Klausur-Satz: `Die Mehrheit legitimiert die Entscheidung, doch Art. 1 und Art. 79 Abs. 3 GG begrenzen jede Mehrheit durch Minderheitenschutz und materielle Gerechtigkeit.`
 

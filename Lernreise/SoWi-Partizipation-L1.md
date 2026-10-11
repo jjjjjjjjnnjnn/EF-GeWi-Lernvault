@@ -150,7 +150,11 @@ AUFGABE B (AFB II, 8 BE)：Eine Karikatur zeigt einen ausgelosten Bürger, der e
 
 HILFE: A fragt nach dem Ablauf und den Hürden -> Verfahren (i). B fragt nach der Legitimation und Wirkung eines Beteiligungsgremiums -> Verfahren (ii).【选程序：材料问"怎么走流程/门槛多少"= 程序程序；材料问"有没有用/有没有授权"= 抽选程序。】
 
-ANTWORT: A erfordert Verfahren (i): Nach erfolgreichem Volksbegehren folgt der Volksentscheid, bei dem neben der Mehrheit auch ein Zustimmungsquorum (etwa 10 bis 20 Prozent) erreicht werden muss; zuvor galt für das Begehren ein Unterschriftenquorum von rund 0,5 Prozent. Beide Hürden wirken als Filter. B erfordert Verfahren (ii): Der Bürgerrat besteht aus per Los ausgewählten Bürgern, die nach Expertenanhörungen Empfehlungen abgeben. Die Karikatur kritisiert, dass diesen Empfehlungen die Verbindlichkeit fehlt, weil der Bürgerrat keine demokratische Legitimation durch Wahl besitzt und das Parlament letztlich entscheidet.
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg A oder Weg B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Mechanismus zu Option A: Verfahren (i): Nach erfolgreichem Volksbegehren folgt der Volksentscheid, bei dem neben der Mehrheit auch ein Zustimmungsquorum (etwa 10 bis 20 Prozent) erreicht werden muss; zuvor galt für das Begehren ein Unterschriftenquorum von rund 0,5 Prozent. Beide Hürden wirken als Filter.
+- Mechanismus zu Option B: Verfahren (ii): Der Bürgerrat besteht aus per Los ausgewählten Bürgern, die nach Expertenanhörungen Empfehlungen abgeben. Die Karikatur kritisiert, dass diesen Empfehlungen die Verbindlichkeit fehlt, weil der Bürgerrat keine demokratische Legitimation durch Wahl besitzt und das Parlament letztlich entscheidet.
+- Ein-Satz-Kern: Der Bürgerrat ergänzt die repräsentative Demokratie, kann sie aber ohne Verbindlichkeit nicht ersetzen.
 
 Klausur-Satz: `Der Bürgerrat ergänzt die repräsentative Demokratie, kann sie aber ohne Verbindlichkeit nicht ersetzen.`
 

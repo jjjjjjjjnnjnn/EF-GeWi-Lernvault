@@ -114,7 +114,11 @@ AUFGABE B：Eine 17-jaehrige Auszubildende moechte fuer ihre Altersvorsorge in 4
 
 HILFE: A benoetigt kurzfristige Liquiditaet und absolute Kurssicherheit -> Verfahren (i). B hat einen 40-jaehrigen Anlagehorizont und muss die Inflation schlagen -> Verfahren (ii).
 
-ANTWORT: Fuer A ist Verfahren (i) (Tagesgeld) optimal: Bei einem Horizont von 3 Monaten duerfen keine Kursrisiken eingegangen werden; die Inflation ist kurzfristig vernachlaessigbar. Fuer B ist Verfahren (ii) (Wertpapierdepot mit Sparplan auf Welt-ETF) zwingend: Ueber 40 Jahre wuerde die Inflation Sparguthaben zerstoeren; Kursschwankungen gleichen sich langfristig aus, und der Zinseszinseffekt entfaltet maximale Wirkung.
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg A oder Weg B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Mechanismus zu Option A: ist Verfahren (i) (Tagesgeld) optimal: Bei einem Horizont von 3 Monaten duerfen keine Kursrisiken eingegangen werden; die Inflation ist kurzfristig vernachlaessigbar.
+- Mechanismus zu Option B: ist Verfahren (ii) (Wertpapierdepot mit Sparplan auf Welt-ETF) zwingend: Ueber 40 Jahre wuerde die Inflation Sparguthaben zerstoeren; Kursschwankungen gleichen sich langfristig aus, und der Zinseszinseffekt entfaltet maximale Wirkung.
+- Ein-Satz-Kern: Kurzfristige Mittel erfordern Liquidität und Sicherheit auf Tagesgeldkonten, während langfristige Sparziele über diversifizierte Depots realisiert werden müssen.
 
 Klausur-Satz: `Kurzfristige Mittel erfordern Liquidität und Sicherheit auf Tagesgeldkonten, während langfristige Sparziele über diversifizierte Depots realisiert werden müssen.`
 

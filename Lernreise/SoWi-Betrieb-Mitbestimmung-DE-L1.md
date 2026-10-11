@@ -140,7 +140,11 @@ AUFGABE B: Der Betriebsrat schlaegt Kurzarbeit mit Qualifizierung statt Entlassu
 
 HILFE: Aufgabe A verlangt erst Tempolob, dann Teilhabepruefung mit milderen Mitteln. Aufgabe B verlangt erst Friedensbegruendung, dann Tempopruefung mit Kostenblick. Beide Male erst Weg benennen, dann Rechte und Folgen, dann Urteil am Kriterium SozialerFrieden.
 
-ANTWORT: Aufgabe A folgt erst Weg A mit Tempobegruendung, dann Weg B mit Aufdeckung von Mitspracherechten und Kurzarbeit als milderem Mittel; Ergebnis waegt schnelle Kostensenkung gegen Vertrauensbruch. Aufgabe B folgt erst Weg B mit Friedensbegruendung durch Erhalt von Wissen, dann Weg A mit Kosten- und Zeitpruefung; Ergebnis waegt Stabilitaet gegen Tempoverlust.
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg A oder Weg B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Mechanismus zu Option A: folgt erst Weg A mit Tempobegruendung, dann
+- Mechanismus zu Option B: mit Aufdeckung von Mitspracherechten und Kurzarbeit als milderem Mittel; Ergebnis waegt schnelle Kostensenkung gegen Vertrauensbruch. Aufgabe B folgt erst Weg B mit Friedensbegruendung durch Erhalt von Wissen, dann Weg A mit Kosten- und Zeitpruefung; Ergebnis waegt Stabilitaet gegen Tempoverlust.
+- Ein-Satz-Kern: Der Betriebsrat besitzt Mitbestimmungsrechte, aber kein Streikrecht, weil er der Friedenspflicht unterliegt.
 
 Klausur-Satz: `Der Betriebsrat besitzt Mitbestimmungsrechte, aber kein Streikrecht, weil er der Friedenspflicht unterliegt.`
 

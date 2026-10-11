@@ -144,7 +144,11 @@ AUFGABE B (AFB II, 8 BE)：Eine Karikatur zeigt einen Betriebsrat, der mit einem
 
 HILFE: A fragt nach dem Leitbild des Unternehmens -> Verfahren (i). B fragt nach den Rechten und Grenzen der betrieblichen Mitbestimmung -> Verfahren (ii).【选程序：材料问"为谁负责"= 模式程序；材料问"怎么参与/有什么权"= 共决程序。】
 
-ANTWORT: A erfordert Verfahren (i): Das Handeln folgt dem Stakeholder-Ansatz, weil das Unternehmen nicht nur die Rendite der Anteilseigner, sondern auch Mitarbeiter, Lieferanten und weitere Betroffene berücksichtigt; Investitionen in Weiterbildung und faire Preise dienen dem langfristigen Bestand des Unternehmens. B erfordert Verfahren (ii): Der Betriebsrat hat Informations-, Beratungs- und Mitbestimmungsrechte, etwa bei Kündigungen und Arbeitszeiten; das Megafon steht jedoch für das Streikrecht, das ihm gerade fehlt, weil er der Friedenspflicht unterliegt. Streiken kann nur die Gewerkschaft im Rahmen der Tarifpolitik.
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg A oder Weg B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Mechanismus zu Option A: Verfahren (i): Das Handeln folgt dem Stakeholder-Ansatz, weil das Unternehmen nicht nur die Rendite der Anteilseigner, sondern auch Mitarbeiter, Lieferanten und weitere Betroffene berücksichtigt; Investitionen in Weiterbildung und faire Preise dienen dem langfristigen Bestand des Unternehmens.
+- Mechanismus zu Option B: Verfahren (ii): Der Betriebsrat hat Informations-, Beratungs- und Mitbestimmungsrechte, etwa bei Kündigungen und Arbeitszeiten; das Megafon steht jedoch für das Streikrecht, das ihm gerade fehlt, weil er der Friedenspflicht unterliegt. Streiken kann nur die Gewerkschaft im Rahmen der Tarifpolitik.
+- Ein-Satz-Kern: Der Betriebsrat besitzt Mitbestimmungsrechte, aber kein Streikrecht, weil er der Friedenspflicht unterliegt.
 
 Klausur-Satz: `Der Betriebsrat besitzt Mitbestimmungsrechte, aber kein Streikrecht, weil er der Friedenspflicht unterliegt.`
 

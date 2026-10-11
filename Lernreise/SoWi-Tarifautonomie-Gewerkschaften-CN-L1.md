@@ -153,7 +153,11 @@ AUFGABE B：War der Streik sinnvoll? Beurteilen Sie seine Wirksamkeit.
 
 HILFE: A 问 rechtmaessig -> Verfahren (i) 走四要件。B 问 sinnvoll -> Verfahren (ii) 讲筹码与代价。【选程序：问合法查要件；问值否算得失。】
 
-ANTWORT: A erfordert Verfahren (i): Nur die Viererpruefung (Traeger, Tarifziel, ultima ratio, Verhaeltnismaessigkeit) entscheidet; Ergebnis und Sympathie sind irrelevant. B erfordert Verfahren (ii): Hoher Organisationsgrad plus schwer ersetzbare Arbeit erhoeht Druck, lange Dauer und Fremdschaeden (Pendler, Kliniken) senken Legitimation; ein kurzer Warnstreik vor neuer Runde ist oft wirksamer als ein Erzwingungsstreik. Rechtmaessig heisst nicht automatisch sinnvoll — und umgekehrt.
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg A oder Weg B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Mechanismus zu Option A: Verfahren (i): Nur die Viererpruefung (Traeger, Tarifziel, ultima ratio, Verhaeltnismaessigkeit) entscheidet; Ergebnis und Sympathie sind irrelevant.
+- Mechanismus zu Option B: Verfahren (ii): Hoher Organisationsgrad plus schwer ersetzbare Arbeit erhoeht Druck, lange Dauer und Fremdschaeden (Pendler, Kliniken) senken Legitimation; ein kurzer Warnstreik vor neuer Runde ist oft wirksamer als ein Erzwingungsstreik. Rechtmaessig heisst nicht automatisch sinnvoll — und umgekehrt.
+- Ein-Satz-Kern: Rechtmaessigkeit folgt den Kampfregeln, Sinnhaftigkeit den Kosten und dem Druck.
 
 Klausur-Satz: `Rechtmaessigkeit folgt den Kampfregeln, Sinnhaftigkeit den Kosten und dem Druck.`
 

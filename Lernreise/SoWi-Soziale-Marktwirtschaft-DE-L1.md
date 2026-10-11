@@ -145,7 +145,11 @@ AUFGABE B: Der Mindestlohn soll vor Armut trotz Arbeit schuetzen, doch kleine Be
 
 HILFE: Frage zuerst nach dem Ziel: Geht es um Effizienz und Anpassung, beginne mit Weg A. Geht es um Schutz und Teilhabe, beginne mit Weg B. Jedes Klausur-Urteil braucht beide Wege und ein Kriterium.
 
-ANTWORT: Aufgabe A verlangt beide Wege, weil erst der Markt die Verknappung erklaert und dann die Ordnungspolitik den Schutz bewertet. Aufgabe B verlangt beide Wege, weil erst der Markt das Beschaeftigungsrisiko zeigt und dann die Ordnungspolitik die sozialvertraegliche Korrektur begruendet.
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg A oder Weg B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Mechanismus zu Option A: verlangt beide Wege, weil erst der Markt die Verknappung erklaert und dann die Ordnungspolitik den Schutz bewertet.
+- Mechanismus zu Option B: verlangt beide Wege, weil erst der Markt das Beschaeftigungsrisiko zeigt und dann die Ordnungspolitik die sozialvertraegliche Korrektur begruendet.
+- Ein-Satz-Kern: Der Mindestlohn schützt vor Armut trotz Arbeit, greift aber in Preisbildung und Tarifautonomie ein.
 
 Klausur-Satz: `Der Mindestlohn schützt vor Armut trotz Arbeit, greift aber in Preisbildung und Tarifautonomie ein.`
 

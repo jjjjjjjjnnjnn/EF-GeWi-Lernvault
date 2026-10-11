@@ -153,7 +153,11 @@ AUFGABE B：Beurteilen Sie den Vorschlag, die Rente voll auf Kapitaldeckung umzu
 
 HILFE: A 只动年龄旋钮 -> Verfahren (i)。B 换融资原理 -> Verfahren (ii)，需讲双重负担。【选程序：调参数讲代价；换制度讲成本。】
 
-ANTWORT: A erfordert Verfahren (i): Spaeterer Renteneintritt senkt Empfaengerzahl und Bezugsdauer, entlastet den Beitrag, belastet aber koerperlich Arbeitende und den Arbeitsmarkt — intergenerativ umstritten, aber systemimmanent. B erfordert Verfahren (ii): Kapitaldeckung entkoppelt von Demografie, erzeugt aber Uebergangskosten (eine Generation zahlt doppelt) plus Kapitalmarktrisiko; sie loest das Problem nicht, sondern tauscht Demografierisiko gegen Marktrisiko.
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg A oder Weg B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Mechanismus zu Option A: Verfahren (i): Spaeterer Renteneintritt senkt Empfaengerzahl und Bezugsdauer, entlastet den Beitrag, belastet aber koerperlich Arbeitende und den Arbeitsmarkt — intergenerativ umstritten, aber systemimmanent.
+- Mechanismus zu Option B: Verfahren (ii): Kapitaldeckung entkoppelt von Demografie, erzeugt aber Uebergangskosten (eine Generation zahlt doppelt) plus Kapitalmarktrisiko; sie loest das Problem nicht, sondern tauscht Demografierisiko gegen Marktrisiko.
+- Ein-Satz-Kern: Parametrisch bleibt die Last im Umlage-Dreieck, systemisch wandert sie an den Kapitalmarkt.
 
 Klausur-Satz: `Parametrisch bleibt die Last im Umlage-Dreieck, systemisch wandert sie an den Kapitalmarkt.`
 

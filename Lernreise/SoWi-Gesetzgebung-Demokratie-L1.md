@@ -144,7 +144,11 @@ AUFGABE B：M2 behauptet, das Gesetzgebungsverfahren sei zu langsam und entmacht
 
 HILFE: A fragt nach der Route und den Stationen -> Verfahren (i). B fragt nach einer Bewertung von Tempo und Buergerbeteiligung -> Verfahren (ii).【选程序：问"怎么走" -> 程序路线；问"好不好/民主不民主" -> 理论坐标。】
 
-ANTWORT: A erfordert Verfahren (i): Zu beschreiben ist die Stationenfolge — 1. Lesung, Ausschuss, 2. Lesung, 3. Lesung, dann Bundesrat mit der Unterscheidung von Zustimmungs- und Einspruchsgesetz, ggf. Vermittlungsausschuss und schliesslich die Ausfertigung durch den Bundespraesidenten. Der Bundesrat greift also nach der Schlussabstimmung ein. B erfordert Verfahren (ii): Die Behauptung muss mit einer demokratietheoretischen Koordinate geprueft werden. Aus republikanischer Sicht waere eine schmale Beteiligung tatsaechlich ein Problem, weil sie die Selbstregierung der Buerger schwaercht. Aus prozeduraler Sicht (Dahl) entscheidend ist dagegen, ob freie Wahlen, Wettbewerb und Beteiligungsrechte gewahrt bleiben — die Arbeit von Fraktionen und Ausschuessen ist Teil dieser Verfahren, kein Widerspruch zur Demokratie.
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg A oder Weg B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Mechanismus zu Option A: Verfahren (i): Zu beschreiben ist die Stationenfolge — 1. Lesung, Ausschuss, 2. Lesung, 3. Lesung, dann Bundesrat mit der Unterscheidung von Zustimmungs- und Einspruchsgesetz, ggf. Vermittlungsausschuss und schliesslich die Ausfertigung durch den Bundespraesidenten. Der Bundesrat greift also nach der Schlussabstimmung ein.
+- Mechanismus zu Option B: Verfahren (ii): Die Behauptung muss mit einer demokratietheoretischen Koordinate geprueft werden. Aus republikanischer Sicht waere eine schmale Beteiligung tatsaechlich ein Problem, weil sie die Selbstregierung der Buerger schwaercht. Aus prozeduraler Sicht (Dahl) entscheidend ist dagegen, ob freie Wahlen, Wettbewerb und Beteiligungsrechte gewahrt bleiben — die Arbeit von Fraktionen und Ausschuessen ist Teil dieser Verfahren, kein Widerspruch zur Demokratie.
+- Ein-Satz-Kern: Je nach demokratietheoretischem Ansatz wird das Gesetzgebungsverfahren unterschiedlich bewertet: republikanisch als Frage der Buergerbeteiligung, prozedural als Frage der Verfahrensqualitaet.
 
 Klausur-Satz: `Je nach demokratietheoretischem Ansatz wird das Gesetzgebungsverfahren unterschiedlich bewertet: republikanisch als Frage der Buergerbeteiligung, prozedural als Frage der Verfahrensqualitaet.`
 

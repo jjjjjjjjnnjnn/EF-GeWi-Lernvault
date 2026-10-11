@@ -132,7 +132,11 @@ AUFGABE B：Ein Bericht dokumentiert, dass eine Organisation seit Jahren demokra
 
 HILFE: A fragt nach einem Verbot und nach der Zuständigkeit -> Verfahren (ii). B fragt nach Beobachtung und Berichterstattung -> Verfahren (i).【选程序：要禁 -> 禁程序（只有 BVerfG + 双重门槛）；只观察/报告 -> 观察程序。】
 
-ANTWORT: A erfordert Verfahren (ii): Ein Verbot kann nur das Bundesverfassungsgericht aussprechen, und zwar erst bei doppelter Hürde — Verfassungswidrigkeit plus Potentialität. Eine bloße Einstufung als Verdachtsfall genügt dafür nicht; die Forderung überspringt die Zuständigkeit und verkennt die Verhältnismäßigkeit. B erfordert Verfahren (i): Verfassungsschutz und Berichte dürfen eine Organisation beobachten und dokumentieren, ohne dass daraus automatisch ein Verbotsverfahren folgt. Beobachtung und Verbot sind zwei getrennte Stufen — die Beobachtung ist die präventive Vorstufe, das Verbot die letzte, seltene Eskalation.
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg A oder Weg B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Mechanismus zu Option A: Verfahren (ii): Ein Verbot kann nur das Bundesverfassungsgericht aussprechen, und zwar erst bei doppelter Hürde — Verfassungswidrigkeit plus Potentialität. Eine bloße Einstufung als Verdachtsfall genügt dafür nicht; die Forderung überspringt die Zuständigkeit und verkennt die Verhältnismäßigkeit.
+- Mechanismus zu Option B: Verfahren (i): Verfassungsschutz und Berichte dürfen eine Organisation beobachten und dokumentieren, ohne dass daraus automatisch ein Verbotsverfahren folgt. Beobachtung und Verbot sind zwei getrennte Stufen — die Beobachtung ist die präventive Vorstufe, das Verbot die letzte, seltene Eskalation.
+- Ein-Satz-Kern: Nur das Bundesverfassungsgericht darf ein Parteiverbot verhängen, und es verlangt zusätzlich zur Verfassungswidrigkeit eine reale Durchsetzungschance.
 
 Klausur-Satz: `Nur das Bundesverfassungsgericht darf ein Parteiverbot verhängen, und es verlangt zusätzlich zur Verfassungswidrigkeit eine reale Durchsetzungschance.`
 

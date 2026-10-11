@@ -140,7 +140,11 @@ AUFGABE B: Ein Buendnis fordert NWI und HDI als Leitmass neben dem BIP. Stelle a
 
 HILFE: Aufgabe A verlangt erst Wachstumsfreude, dann Vier-Punkte-Kritik mit Alternative. Aufgabe B verlangt erst Korrektur, dann Wuerdigung von Output. Beide Male erst Weg benennen, dann Kreislaufbezug, dann Kritik in vier Punkten, dann Urteil am Kriterium Wohlfahrt.
 
-ANTWORT: Aufgabe A folgt erst Weg A mit Output- und Joblob, dann Weg B mit Aufdeckung von Umweltminus, Sorge-Minus und Verteilungsblindheit; Ergebnis lehnt Gleichsetzung von BIP-Plus und Wohlfahrts-Plus ab. Aufgabe B folgt erst Weg B mit NWI- und HDI-Begruendung, dann Weg A mit Restlob fuer Jobs; Ergebnis plaediert fuer Doppelblick aus Marktleistung plus Wohlfahrt.
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg A oder Weg B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Mechanismus zu Option A: folgt erst Weg A mit Output- und Joblob, dann
+- Mechanismus zu Option B: mit Aufdeckung von Umweltminus, Sorge-Minus und Verteilungsblindheit; Ergebnis lehnt Gleichsetzung von BIP-Plus und Wohlfahrts-Plus ab. Aufgabe B folgt erst Weg B mit NWI- und HDI-Begruendung, dann Weg A mit Restlob fuer Jobs; Ergebnis plaediert fuer Doppelblick aus Marktleistung plus Wohlfahrt.
+- Ein-Satz-Kern: Wachstum des BIP ist ohne Verteilungs-, Umwelt- und Sozialindikatoren kein Beweis fuer mehr Wohlfahrt.
 
 Klausur-Satz: `Wachstum des BIP ist ohne Verteilungs-, Umwelt- und Sozialindikatoren kein Beweis fuer mehr Wohlfahrt.`
 

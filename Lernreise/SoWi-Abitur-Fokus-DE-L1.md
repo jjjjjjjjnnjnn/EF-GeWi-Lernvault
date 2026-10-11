@@ -142,7 +142,11 @@ AUFGABE B: Waeege Effizienz gegen Legitimitaet ab und begruende kriteriengeleite
 
 HILFE: Aufgabe A verlangt Herleitung ohne Wertung, daher Weg A mit Kette und Beleg. Aufgabe B verlangt Abwaegung am Massstab, daher Weg B mit Pro und Contra und Urteil. Die Wahl des Weges steht vor jeder Deutung.
 
-ANTWORT: Aufgabe A folgt Weg A, weil Kausalableitung mit Modellen und Material genuegt. Aufgabe B verlangt Weg B, weil erst Abwaegung von Wirkung und Zustimmung ein begruendetes Urteil zu Eingriff oder Zurueckhaltung erlaubt.
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg A oder Weg B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Mechanismus zu Option A: folgt Weg A, weil Kausalableitung mit Modellen und Material genuegt.
+- Mechanismus zu Option B: verlangt Weg B, weil erst Abwaegung von Wirkung und Zustimmung ein begruendetes Urteil zu Eingriff oder Zurueckhaltung erlaubt.
+- Ein-Satz-Kern: Die Fokussierung des Inhaltsfelds 4 fragt nach dem Staatshaushalt und seinen Instrumenten, die des Inhaltsfelds 6 nach den Modellen der Ungleichheit und dem sozialstaatlichen Ausgleich.
 
 Klausur-Satz: `Die Fokussierung des Inhaltsfelds 4 fragt nach dem Staatshaushalt und seinen Instrumenten, die des Inhaltsfelds 6 nach den Modellen der Ungleichheit und dem sozialstaatlichen Ausgleich.`
 

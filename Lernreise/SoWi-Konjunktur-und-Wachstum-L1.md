@@ -120,6 +120,15 @@ VERGLEICH: Nachfrageorientierung vs. Angebotsorientierung
 Entscheidungsregel fuer die Klausur:
 Wird nach `Beurteilen` gefragt, in Klausuren niemals einseitig urteilen, sondern beide Konzepte gegeneinander abwaegen (Keynes fuer kurzfristiges Krisenfeuerloeschen, Angebotspolitik fuer langfristige Standortqualitaet)!
 
+
+
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg A oder Weg B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Mechanismus zu Option A: Diagnose: Markt neigt zu chronischer Instabilitaet und Nachfragemangel. Therapie: Staat greift aktiv mit antizyklischer Ausgabenpolitik ein (Deficit Spending). Ziel: Kurzfristige Beseitigung von Unter
+- Mechanismus zu Option B: Diagnose: Maerkte sind grundsaetzlich selbstregulierend; Staatseingriffe verzerren das System. Therapie: Verbesserung der Angebotsbedingungen (Steuersenkungen fuer Unternehmen, Deregulierung, flexible
+- Ein-Satz-Kern: Wird nach `Beurteilen` gefragt, in Klausuren niemals einseitig urteilen, sondern beide Konzepte gegeneinander abwaegen (Keynes fuer kurzfristiges Krisenfeuerloeschen, Angebotspolitik fuer langfristige
+
+Klausur-Satz: `Der Konjunkturzyklus beschreibt die wellenfoermigen Schwankungen der gesamtwirtschaftlichen Aktivitaet (gemessen am realen BIP) um den langfristigen Wachstumstrend.`
 ## Schritt 6 — check: Klausur-Transfer Wirtschaftspolitik
 PRÜFUNGSSZENARIO (KLP NRW SoWi EF Inhaltsfeld 1 / Q1 Inhaltsfeld 3):
 

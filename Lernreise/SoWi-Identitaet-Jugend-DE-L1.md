@@ -142,7 +142,11 @@ AUFGABE B: Eine Klasse diskutiert, ob ein Like-Verzicht die Klassengemeinschaft 
 
 HILFE: Aufgabe A verlangt Einordnung ohne Zahlbeleg, daher Weg A mit Ausgleichslogik. Aufgabe B verlangt Abwaegung zweier Erklaerungen am Kriterium, daher beide Wege vergleichen und Gewichtung begruenden. Die Wahl des Weges steht vor jeder Deutung.
 
-ANTWORT: Aufgabe A folgt Weg A, weil aktiver Ausgleich von Wunsch und Anforderung im Zentrum steht. Aufgabe B verlangt den Vergleich, weil erst Gegenueberstellung von Ausgleichsleistung und Vergleichsdruck ein begruendetes Urteil zu Gewinn oder Verlust erlaubt.
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg A oder Weg B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Mechanismus zu Option A: folgt Weg A, weil aktiver Ausgleich von Wunsch und Anforderung im Zentrum steht.
+- Mechanismus zu Option B: verlangt den Vergleich, weil erst Gegenueberstellung von Ausgleichsleistung und Vergleichsdruck ein begruendetes Urteil zu Gewinn oder Verlust erlaubt.
+- Ein-Satz-Kern: Wertewandel bezeichnet die Verschiebung gesellschaftlicher Wertprioritaeten, die den Rahmen der individuellen Identitaetsarbeit veraendert.
 
 Klausur-Satz: `Wertewandel bezeichnet die Verschiebung gesellschaftlicher Wertprioritaeten, die den Rahmen der individuellen Identitaetsarbeit veraendert.`
 

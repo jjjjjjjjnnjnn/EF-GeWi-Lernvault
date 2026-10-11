@@ -142,7 +142,11 @@ AUFGABE B (AFB II, 8 BE)：Eine Karikatur zeigt Abgeordnete, die an unsichtbaren
 
 HILFE: A fragt nach dem Weg und der Rolle des Bundesrats -> Verfahren (i). B fragt nach der Bindung des einzelnen Abgeordneten -> Verfahren (ii).【选程序：材料问"走什么程序/谁点头"= 程序程序；材料问"议员听谁/能不能自由投票"= 委任程序。】
 
-ANTWORT: A erfordert Verfahren (i): Da das Gesetz die Länderfinanzen berührt, liegt ein Zustimmungsgesetz vor, das ohne die Zustimmung des Bundesrats nicht zustande kommt; verweigert der Bundesrat die Zustimmung, kann der Vermittlungsausschuss angerufen werden, der einen Kompromiss suchen soll. B erfordert Verfahren (ii): Die Marionetten-Fäden stehen für die Fraktionsdisziplin, die Abgeordnete faktisch auf eine Linie verpflichtet; dem steht das freie Mandat des Art. 38 GG gegenüber, nach dem Abgeordnete nur ihrem Gewissen unterworfen sind — bei echten Gewissensfragen wird die Fraktionsdisziplin daher aufgehoben.
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg A oder Weg B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Mechanismus zu Option A: Verfahren (i): Da das Gesetz die Länderfinanzen berührt, liegt ein Zustimmungsgesetz vor, das ohne die Zustimmung des Bundesrats nicht zustande kommt; verweigert der Bundesrat die Zustimmung, kann der Vermittlungsausschuss angerufen werden, der einen Kompromiss suchen soll.
+- Mechanismus zu Option B: Verfahren (ii): Die Marionetten-Fäden stehen für die Fraktionsdisziplin, die Abgeordnete faktisch auf eine Linie verpflichtet; dem steht das freie Mandat des Art. 38 GG gegenüber, nach dem Abgeordnete nur ihrem Gewissen unterworfen sind — bei echten Gewissensfragen wird die Fraktionsdisziplin daher aufgehoben.
+- Ein-Satz-Kern: Beim Zustimmungsgesetz kann der Bundesrat ein Vorhaben blockieren, beim Einspruchsgesetz kann der Bundestag den Einspruch überstimmen.
 
 Klausur-Satz: `Beim Zustimmungsgesetz kann der Bundesrat ein Vorhaben blockieren, beim Einspruchsgesetz kann der Bundestag den Einspruch überstimmen.`
 

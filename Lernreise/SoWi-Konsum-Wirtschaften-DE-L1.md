@@ -140,7 +140,11 @@ AUFGABE B: Die Stadt plant eine Kampagne zum Fussabdruck mit Label, Pfand und Re
 
 HILFE: Aufgabe A verlangt erst Nutzenlob, dann Kritik der Nebenkosten. Aufgabe B verlangt erst Zukunftsbegruendung, dann Freiheitspruefung. Beide Male erst Weg benennen, dann Kaufmotiv mit Signalwirkung, dann Folgen fuer Natur und Budget, dann Urteil am Kriterium.
 
-ANTWORT: Aufgabe A folgt erst Weg A mit Preis- und Wettbewerbslob, dann Weg B mit Aufdeckung von Nebenkosten und Fussabdruck; Ergebnis ist ein Plaedoyer fuer ehrliches Label als mildes Mittel. Aufgabe B folgt erst Weg B mit Zukunftsbegruendung, dann Weg A mit Souveraenitaetspruefung; Ergebnis waegt Anreiz gegen Verbot und sichert Wahlfreiheit mit Information.
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg A oder Weg B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Mechanismus zu Option A: folgt erst Weg A mit Preis- und Wettbewerbslob, dann
+- Mechanismus zu Option B: mit Aufdeckung von Nebenkosten und Fussabdruck; Ergebnis ist ein Plaedoyer fuer ehrliches Label als mildes Mittel. Aufgabe B folgt erst Weg B mit Zukunftsbegruendung, dann Weg A mit Souveraenitaetspruefung; Ergebnis waegt Anreiz gegen Verbot und sichert Wahlfreiheit mit Information.
+- Ein-Satz-Kern: Ein Werbeverbot ist ein starkes staatliches Instrument, während ein Label das mildere Mittel darstellt.
 
 Klausur-Satz: `Ein Werbeverbot ist ein starkes staatliches Instrument, während ein Label das mildere Mittel darstellt.`
 

@@ -108,6 +108,15 @@ VERGLEICH: Supranationale Integration vs. Intergouvernementale Kooperation (选�
 Entscheidungsregel fuer die Klausur:
 Wird nach `Demokratiedefizit und Handlungsfaehigkeit der EU` gefragt, analysiere immer das Spannungsverhaeltnis: Je mehr intergouvernementales Vetorecht besteht, desto hoeher ist die nationale Souveraenitaet, aber desto gelaehmter ist die Union in akuten Krisensituationen!
 
+
+
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg A oder Weg B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Mechanismus zu Option A: Institutionen: EU-Kommission, Europaeisches Parlament, Europaeischer Gerichtshof (EuGH). Ziel: Vereinigte Staaten von Europa, staerkere Mehrheitsbeschluesse, Abbau nationaler Blockaden. Staerke: Handl
+- Mechanismus zu Option B: Institutionen: Europaeischer Rat, nationale Parlamente, Einstimmigkeitserfordernis. Ziel: Europa der Vaterlaender, Bewahrung nationaler Souveraenitaet und Eigenstaendigkeit. Staerke: Hohe nationale de
+- Ein-Satz-Kern: Wird nach `Demokratiedefizit und Handlungsfaehigkeit der EU` gefragt, analysiere immer das Spannungsverhaeltnis: Je mehr intergouvernementales Vetorecht besteht, desto hoeher ist die nationale Souvera
+
+Klausur-Satz: `Die Europaeische Union konstituiert sich als Staatenverbund sui generis, dessen institutionelles Gefuege permanent zwischen supranationaler Gemeinschaftslogik und intergouvernementaler Souveraenitaetswahrung austariert werden muss.`
 ## Schritt 6 — check: Klausur-Transfer Einstimmigkeitsprinzip in der Aussenpolitik
 
 PRUEFUNGSSZENARIO (KLP NRW SoWi LK Inhaltsfeld 5: Europaeische Union):

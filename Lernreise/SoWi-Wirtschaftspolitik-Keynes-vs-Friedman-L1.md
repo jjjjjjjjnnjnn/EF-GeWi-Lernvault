@@ -107,6 +107,15 @@ VERGLEICH: Nachfrageorientierung (Keynesianismus) vs. Angebotsorientierung (Mone
 Entscheidungsregel fuer die Klausur:
 Wird nach einer `wirtschaftspolitischen Beurteilung im Abitur` gefragt, ergreife niemals einseitig Partei; zeige immer auf, dass eine moderne Wirtschaftspolitik Elemente beider Schulen synthetisieren muss (z. B. investitionsfreundliche Rahmenbedingungen plus gezielte soziale Absicherung und oekologische Lenkung)!
 
+
+
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg A oder Weg B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Mechanismus zu Option A: Diagnose: Marktneigung zu chronischer Unterbeschaeftigung; Preise und Loehne sind nach unten unelastisch (Sticky Wages). Loesung: Staatliche Nachfragebelebung, Staerkung der Gewerkschaften, hohe Loehn
+- Mechanismus zu Option B: Diagnose: Maerkte sind grundsaetzlich stabil und tendieren zum Vollbeschaeftigungsgleichgewicht, wenn der Staat nicht stoert. Loesung: Verbesserung der Angebotsbedingungen, Lohnzurueckhaltung, Foerder
+- Ein-Satz-Kern: Wird nach einer `wirtschaftspolitischen Beurteilung im Abitur` gefragt, ergreife niemals einseitig Partei; zeige immer auf, dass eine moderne Wirtschaftspolitik Elemente beider Schulen synthetisieren 
+
+Klausur-Satz: `Waehrend der Keynesianismus Marktversagen durch staatliche antizyklische Nachfragesteuerung ausgleichen will, vertraut die Angebotsorientierung auf die Selbstheilungskraefte des Marktes durch Deregulierung und investitionsfreundliche Rahmenbedingungen.`
 ## Schritt 6 — check: Klausur-Transfer Schuldenbremse und Zukunftsinvestitionen
 
 PRUEFUNGSSZENARIO (KLP NRW SoWi LK Inhaltsfeld 4: Wirtschaftspolitik):

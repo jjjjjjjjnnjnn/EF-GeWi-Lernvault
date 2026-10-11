@@ -135,6 +135,15 @@ VERGLEICH: Starre Sozialschicht vs. Dynamisches Milieu
 Entscheidungsregel fuer die Klausur:
 Wird nach `politischer Repraesentation und Wahlverhalten` gefragt, immer mit **Milieus** argumentieren (warum z.B. Arbeiter nicht mehr automatisch SPD waehlen)! Geht es um `materielle Armut und Vermoegensverteilung`, mit **Schichten und Gini-Koeffizient** argumentieren!
 
+
+
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg A oder Weg B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Mechanismus zu Option A: Messgroessen: Vorwiegend "harte", quantifizierbare Faktoren: Nettoeinkommen, Ausbildungsabschluss, Berufsprestige. Gesellschaftsbild: Vertikal geordnete Schubladen ("Oberschicht", "Mittelschicht", "Un
+- Mechanismus zu Option B: Messgroessen: "Weiche", lebensweltliche Faktoren: Werte, Lebensziele, Konsummuster, Musikgeschmack, moralische Einstellungen. Gesellschaftsbild: Horizontale Vielfalt; Menschen mit aehnlichem Einkommen
+- Ein-Satz-Kern: Wird nach `politischer Repraesentation und Wahlverhalten` gefragt, immer mit **Milieus** argumentieren (warum z.B. Arbeiter nicht mehr automatisch SPD waehlen)! Geht es um `materielle Armut und Vermoe
+
+Klausur-Satz: `Waehrend klassische Schichtmodelle Ungleichheit rein ueber vertikale Parameter (Einkommen, Beruf, Bildung) erfassen, integrieren moderne Sinus-Milieus die horizontale Werteorientierung zur ganzheitlichen Lebensweltanalyse.`
 ## Schritt 6 — check: Klausur-Transfer Milieu-Wandel & Wahlerfolg
 PRÜFUNGSSZENARIO (KLP NRW SoWi EF/Q1 Inhaltsfeld 2: Gesellschaftsstruktur und sozialer Wandel):
 

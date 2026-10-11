@@ -153,7 +153,11 @@ AUFGABE B：Ein Ratgeber behauptet, jeder Minijobber solle sich nur mehr anstren
 
 HILFE: A 问 trotz sinkender Zahl -> Verfahren (i)。B 是个体论断 -> Verfahren (ii) 反驳。【选程序：问总量结构讲转型；问个人努力辨归因。】
 
-ANTWORT: A erfordert Verfahren (i): Die Arbeitslosenzahl sinkt, weil Normalarbeitsverhaeltnisse in mehrere Kleinstjobs zerlegt werden; Beschaeftigungsstatistik steigt, Schutzstatistik sinkt — Tertiarisierung erklaert das Paradox. B erfordert Verfahren (ii) als Kritik: Fleiss aendert nichts an Tarifbindung, Befristungsrecht und Plattformmacht; individuelle Anstrengung kann Einkommen erhoehen, ersetzt aber keine strukturelle Sicherung. Beide Ebenen gelten zugleich, duerfen aber nicht verwechselt werden.
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg A oder Weg B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Mechanismus zu Option A: Verfahren (i): Die Arbeitslosenzahl sinkt, weil Normalarbeitsverhaeltnisse in mehrere Kleinstjobs zerlegt werden; Beschaeftigungsstatistik steigt, Schutzstatistik sinkt — Tertiarisierung erklaert das Paradox.
+- Mechanismus zu Option B: Verfahren (ii) als Kritik: Fleiss aendert nichts an Tarifbindung, Befristungsrecht und Plattformmacht; individuelle Anstrengung kann Einkommen erhoehen, ersetzt aber keine strukturelle Sicherung. Beide Ebenen gelten zugleich, duerfen aber nicht verwechselt werden.
+- Ein-Satz-Kern: Struktur erklaert die Lage der Jobs, Individuum nur die Lage einzelner in ihnen.
 
 Klausur-Satz: `Struktur erklaert die Lage der Jobs, Individuum nur die Lage einzelner in ihnen.`
 

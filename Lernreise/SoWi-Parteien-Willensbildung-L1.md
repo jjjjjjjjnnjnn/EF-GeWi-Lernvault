@@ -147,7 +147,11 @@ AUFGABE B (AFB II, 8 BE)：Eine Tabelle zeigt, dass der Stimmenanteil der beiden
 
 HILFE: A fragt nach der programmatischen Grundhaltung -> Verfahren (i). B fragt nach einem statistischen Befund und seiner Deutung -> Verfahren (ii).【选程序：材料给的是"主张/纲领"= 纲领程序；材料给的是"数字/图表"= 统计程序。】
 
-ANTWORT: A erfordert Verfahren (i): Die Forderung nach höheren Steuern für Spitzenverdiener folgt der sozialistischen Leitidee (Umverteilung, Gleichheit), die Forderung nach Steuersenkung und Stärkung des Marktes der liberalen Leitidee (Freiheit, Eigenverantwortung). B erfordert Verfahren (ii): Der sinkende Stimmenanteil belegt die Erosion der Volksparteien, weil sie ihre Stammwähler über Schichten und Regionen hinweg verlieren; dies schwächt ihre Fähigkeit, breite gesellschaftliche Gruppen zu binden.
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg A oder Weg B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Mechanismus zu Option A: Verfahren (i): Die Forderung nach höheren Steuern für Spitzenverdiener folgt der sozialistischen Leitidee (Umverteilung, Gleichheit), die Forderung nach Steuersenkung und Stärkung des Marktes der liberalen Leitidee (Freiheit, Eigenverantwortung).
+- Mechanismus zu Option B: Verfahren (ii): Der sinkende Stimmenanteil belegt die Erosion der Volksparteien, weil sie ihre Stammwähler über Schichten und Regionen hinweg verlieren; dies schwächt ihre Fähigkeit, breite gesellschaftliche Gruppen zu binden.
+- Ein-Satz-Kern: Die Erosion der Volksparteien zeigt sich im sinkenden Stimmenanteil, weil Wechselwähler zunehmen und Stammwähler schmelzen.
 
 Klausur-Satz: `Die Erosion der Volksparteien zeigt sich im sinkenden Stimmenanteil, weil Wechselwähler zunehmen und Stammwähler schmelzen.`
 

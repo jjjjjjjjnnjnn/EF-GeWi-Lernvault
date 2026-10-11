@@ -124,7 +124,11 @@ AUFGABE B: Was geschieht bei gleichbleibendem Beitrag und alternder Bevoelkerung
 
 HILFE: A fragt nach der Saeulenlogik, also Verfahren (i). B fragt nach Geldstroemen, also Verfahren (ii).
 
-ANTWORT: A erfordert Verfahren (i): Grundsicherung ist steuerfinanzierte Fuersorge bei Beduerftigkeit, nicht beitragsbezogene Versicherung. B erfordert Verfahren (ii): Das Niveau muss sinken oder die Luecke aus Steuern kommen, sonst ist die Gleichung verletzt.
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg A oder Weg B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Mechanismus zu Option A: Verfahren (i): Grundsicherung ist steuerfinanzierte Fuersorge bei Beduerftigkeit, nicht beitragsbezogene Versicherung.
+- Mechanismus zu Option B: Verfahren (ii): Das Niveau muss sinken oder die Luecke aus Steuern kommen, sonst ist die Gleichung verletzt.
+- Ein-Satz-Kern: Saeulenzuordnung klaert die normative Logik, Umlagegleichung klaert die finanzielle Tragfaehigkeit.
 
 Klausur-Satz: `Saeulenzuordnung klaert die normative Logik, Umlagegleichung klaert die finanzielle Tragfaehigkeit.`
 

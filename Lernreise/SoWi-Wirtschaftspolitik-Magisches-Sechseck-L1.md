@@ -118,7 +118,11 @@ AUFGABE B: Beurteilen Sie eine Zinserhoehung $i \uparrow$ bei $\pi = 5\,\%$.
 
 HILFE: A nennt Staatshaushalt, also Verfahren (i). B nennt Zins und Inflation, also Verfahren (ii).
 
-ANTWORT: A erfordert Verfahren (i): $G \uparrow$ hebt $Y$ direkt, senkt $u$, erhöht aber $Defizit$ und $\pi$. B erfordert Verfahren (ii): $i \uparrow$ senkt $I$ und $\pi$, bremst aber $Y$ und hebt $u$.
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg A oder Weg B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Mechanismus zu Option A: Verfahren (i): $G \uparrow$ hebt $Y$ direkt, senkt $u$, erhöht aber $Defizit$ und $\pi$.
+- Mechanismus zu Option B: Verfahren (ii): $i \uparrow$ senkt $I$ und $\pi$, bremst aber $Y$ und hebt $u$.
+- Ein-Satz-Kern: Hohe Arbeitslosigkeit ruft Fiskal, hohe Inflation ruft Geldpolitik.
 
 Klausur-Satz: `Hohe Arbeitslosigkeit ruft Fiskal, hohe Inflation ruft Geldpolitik.`
 

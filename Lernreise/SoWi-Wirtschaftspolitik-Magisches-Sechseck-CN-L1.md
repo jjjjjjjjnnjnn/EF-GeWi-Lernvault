@@ -152,7 +152,11 @@ AUFGABE B：Der Staat senkt Steuern zur Job-Rettung in der Rezession. Welche Sec
 
 HILFE: A bremst Nachfrage -> Konzept (ii). B pumpt Nachfrage -> Konzept (i).【选概念：题干出现 Zinsen hoch / Sparen / Inflation bekaempfen 选紧缩；出现 Ausgaben hoch / Steuern runter / Jobs retten 选扩张。】
 
-ANTWORT: A erfordert Konzept (ii): Preise stabilisiert, aber Wachstum und Beschaeftigung leiden. B erfordert Konzept (i): Jobs und Wachstum besser, aber Preise und Umwelt schlechter.
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg A oder Weg B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Mechanismus zu Option A: Konzept (ii): Preise stabilisiert, aber Wachstum und Beschaeftigung leiden.
+- Mechanismus zu Option B: Konzept (i): Jobs und Wachstum besser, aber Preise und Umwelt schlechter.
+- Ein-Satz-Kern: Expansiv hilft Jobs, restriktiv hilft Preisen: Jede Richtung hat ihren Preis im Sechseck.
 
 Klausur-Satz: `Expansiv hilft Jobs, restriktiv hilft Preisen: Jede Richtung hat ihren Preis im Sechseck.`
 

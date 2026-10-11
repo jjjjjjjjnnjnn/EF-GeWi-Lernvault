@@ -138,7 +138,11 @@ AUFGABE B：„In der Rolle eines Gutachters sollen Sie dem Bundestag zwei Massn
 
 HILFE: A nennt eine Person im Saal und verlangt Reaktion auf einen Vorredner -> Format (i) Redebeitrag. B nennt eine Gutachterrolle und verlangt Massnahmen -> Format (ii) Handlungsempfehlung.【选程序：题干给"人/回应" -> 发言稿；给"数据/两条措施" -> 建议书。】
 
-ANTWORT: A erfordert Format (i): Der Aufbau folgt der Redebeitrag-Logik — Anlass und Adressat nennen, dann auf die These des Vorredners konkret reagieren (hier: widersprechen und mit dem Argument der Aufstocker begruenden), danach einen eigenen Vorschlag ergaenzen und mit einem Appell an das Publikum schliessen. Der Ton ist rhetorisch, bleibt aber widerspruchsfrei. B erfordert Format (ii): Der Aufbau folgt der Handlungsempfehlung — zuerst eine Datenkappe, falls Material vorliegt, dann zwei konkrete Massnahmen mit je einer Wirkungskette und Nebenfolge, und am Ende die Pruefung der Adressatenkompetenz: Der Bundestag kann Steuern und Transferleistungen gestalten, aber nicht einfach Renten von der Europaeischen Zentralbank verlangen.
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg A oder Weg B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Mechanismus zu Option A: Format (i): Der Aufbau folgt der Redebeitrag-Logik — Anlass und Adressat nennen, dann auf die These des Vorredners konkret reagieren (hier: widersprechen und mit dem Argument der Aufstocker begruenden), danach einen eigenen Vorschlag ergaenzen und mit einem Appell an das Publikum schliessen. Der Ton ist rhetorisch, bleibt aber widerspruchsfrei.
+- Mechanismus zu Option B: Format (ii): Der Aufbau folgt der Handlungsempfehlung — zuerst eine Datenkappe, falls Material vorliegt, dann zwei konkrete Massnahmen mit je einer Wirkungskette und Nebenfolge, und am Ende die Pruefung der Adressatenkompetenz: Der Bundestag kann Steuern und Transferleistungen gestalten, aber nicht einfach Renten von der Europaeischen Zentralbank verlangen.
+- Ein-Satz-Kern: Der Redebeitrag ueberzeugt ein Publikum mit Bezug und Appell, die Handlungsempfehlung ueberzeugt einen Adressaten mit Daten und Wirkungsketten.
 
 Klausur-Satz: `Der Redebeitrag ueberzeugt ein Publikum mit Bezug und Appell, die Handlungsempfehlung ueberzeugt einen Adressaten mit Daten und Wirkungsketten.`
 

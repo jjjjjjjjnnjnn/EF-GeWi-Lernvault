@@ -140,7 +140,11 @@ AUFGABE B：M2 nennt fuer drei Laender die Quintilsanteile und fragt nach einem 
 
 HILFE: A verlangt nur eine Rangfolge aus der Kurvenform -> Verfahren (i). B verlangt einen belastbaren Vergleich, also Indikatoren -> Verfahren (ii).【选程序：只问"谁更弯" -> 读曲线；要"比较并论证" -> 算系数。】
 
-ANTWORT: A erfordert Verfahren (i): Da die Kurve von 2024 sichtbar tiefer durchhaengt, liegt sie weiter von der Diagonalen entfernt; die Flaeche zwischen Diagonale und Kurve ist groesser, also war die Verteilung 2024 ungleicher. Es genuegt die qualitative Aussage, ein Zahlenwert ist nicht verlangt. B erfordert Verfahren (ii): Fuer einen belastbaren Vergleich muessen aus den Quintilsanteilen erst die kumulierten Anteile gebildet, dann mit der Trapezmethode die Flaeche B bestimmt und schliesslich der Gini-Koeffizient berechnet werden. Erst der Vergleich der Gini-Werte liefert ein begruendetes Urteil, welche Verteilung am ungleichsten ist.
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg A oder Weg B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Mechanismus zu Option A: Verfahren (i): Da die Kurve von 2024 sichtbar tiefer durchhaengt, liegt sie weiter von der Diagonalen entfernt; die Flaeche zwischen Diagonale und Kurve ist groesser, also war die Verteilung 2024 ungleicher. Es genuegt die qualitative Aussage, ein Zahlenwert ist nicht verlangt.
+- Mechanismus zu Option B: Verfahren (ii): Fuer einen belastbaren Vergleich muessen aus den Quintilsanteilen erst die kumulierten Anteile gebildet, dann mit der Trapezmethode die Flaeche B bestimmt und schliesslich der Gini-Koeffizient berechnet werden. Erst der Vergleich der Gini-Werte liefert ein begruendetes Urteil, welche Verteilung am ungleichsten ist.
+- Ein-Satz-Kern: Fuer eine reine Rangfolge genuegt der Blick auf die Lorenzkurve, fuer einen begruendeten Vergleich der Verteilung ist der Gini-Koeffizient noetig.
 
 Klausur-Satz: `Fuer eine reine Rangfolge genuegt der Blick auf die Lorenzkurve, fuer einen begruendeten Vergleich der Verteilung ist der Gini-Koeffizient noetig.`
 

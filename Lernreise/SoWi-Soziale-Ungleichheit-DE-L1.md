@@ -140,7 +140,11 @@ AUFGABE B: Zwei Haushalte mit gleichem Einkommen leben voellig verschieden: oeko
 
 HILFE: Aufgabe A verlangt erst Schichtlogik mit Trichter, dann Milieu als Verstaerker. Aufgabe B verlangt erst Milieulogik mit Stil, dann Schicht als Grenze. Beide Male erst Weg benennen, dann Dimension mit Beispiel, dann Anreiz gegen Ausgleich, dann Urteil am Kriterium Chancengerechtigkeit.
 
-ANTWORT: Aufgabe A folgt erst Weg A mit Nachweis aus Schichten: Einkommen plus Bildung plus Netz praegen Start und Trichter. Weg B ergaenzt als Verstaerker ueber Sprache und Haltung. Aufgabe B folgt erst Weg B mit Stil-Deutung: gleiche Mittel, verschiedene Werte. Weg A begrenzt als Struktur: ohne Geld und Abschluss bleibt Stil folgenlos. Beide Male entscheidet das Kriterium, ob Ausgleich noetig ist.
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg A oder Weg B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Mechanismus zu Option A: folgt erst Weg A mit Nachweis aus Schichten: Einkommen plus Bildung plus Netz praegen Start und Trichter.
+- Mechanismus zu Option B: ergaenzt als Verstaerker ueber Sprache und Haltung. Aufgabe B folgt erst Weg B mit Stil-Deutung: gleiche Mittel, verschiedene Werte. Weg A begrenzt als Struktur: ohne Geld und Abschluss bleibt Stil folgenlos. Beide Male entscheidet das Kriterium, ob Ausgleich noetig ist.
+- Ein-Satz-Kern: Funktionalistische Ansaetze deuten Ungleichheit als Leistungsanreiz, konflikttheoretische Ansaetze als strukturelle Benachteiligung, die nach Ausgleich verlangt.
 
 Klausur-Satz: `Funktionalistische Ansaetze deuten Ungleichheit als Leistungsanreiz, konflikttheoretische Ansaetze als strukturelle Benachteiligung, die nach Ausgleich verlangt.`
 

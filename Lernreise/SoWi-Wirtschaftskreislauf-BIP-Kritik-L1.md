@@ -133,7 +133,11 @@ AUFGABE B：Beurteilen Sie die Aussage: Ein steigendes BIP bedeutet automatisch 
 
 HILFE: A nennt skizzieren plus Steuern/Ersparnis/Exporte -> Verfahren (i), Kreislauf zeichnen. B nennt beurteilen plus Wohlfahrt/automatisch -> Verfahren (ii), Kritik plus Urteil.【选程序：题干出现 Kreislauf / Sektor / Strom 选循环画图；出现 Kritik / Wohlfahrt / beurteilen / Nachhaltigkeit 选四点批判。】
 
-ANTWORT: A erfordert Verfahren (i): Fuenf Sektoren mit Geldstrom im Uhrzeigersinn und Gueterstrom dagegen; Steuern zum Staat, Ersparnis zu Banken, Exporte zum Ausland. B erfordert Verfahren (ii): Nein, das BIP ignoriert Hausarbeit und Ehrenamt, zieht Umweltschaeden nicht ab, verdeckt Verteilung und zaehlt auch schaedliche Umsaetze als Plus; NWI und HDI korrigieren dies ueber Umwelt-, Verteilungs-, Bildungs- und Gesundheitsindikatoren. Urteil: Wachstum ist nicht gleich Wohlfahrt.
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg A oder Weg B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Mechanismus zu Option A: Verfahren (i): Fuenf Sektoren mit Geldstrom im Uhrzeigersinn und Gueterstrom dagegen; Steuern zum Staat, Ersparnis zu Banken, Exporte zum Ausland.
+- Mechanismus zu Option B: Verfahren (ii): Nein, das BIP ignoriert Hausarbeit und Ehrenamt, zieht Umweltschaeden nicht ab, verdeckt Verteilung und zaehlt auch schaedliche Umsaetze als Plus; NWI und HDI korrigieren dies ueber Umwelt-, Verteilungs-, Bildungs- und Gesundheitsindikatoren. Urteil: Wachstum ist nicht gleich Wohlfahrt.
+- Ein-Satz-Kern: Wachstum des BIP ist ohne Verteilungs-, Umwelt- und Sozialindikatoren kein Beweis fuer mehr Wohlfahrt.
 
 Klausur-Satz: `Wachstum des BIP ist ohne Verteilungs-, Umwelt- und Sozialindikatoren kein Beweis fuer mehr Wohlfahrt.`
 

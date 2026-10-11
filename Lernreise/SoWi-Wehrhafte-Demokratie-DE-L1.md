@@ -141,7 +141,11 @@ AUFGABE B: Dieselbe Partei verbreitet voelkische Positionen gegen Minderheitenre
 
 HILFE: Aufgabe A fragt nach Aushalten, daher Freiheit und Bildung nennen. Aufgabe B fragt nach Eingreifen, daher Angriff auf die Grundordnung plus reale Chance nennen. Die Wahl des Weges steht vor jedem Urteil.
 
-ANTWORT: Aufgabe A wird ueber Weg A geloest, weil offener Streit und Bildung tragen, solange kein aktiver Kampf gegen die Ordnung mit realer Chance belegt ist. Aufgabe B wird ueber Weg B geloest, weil bei aktivem Kampf gegen Wahlen und Minderheitenrechte mit realer Chance der Entzug missbrauchter Rechte verhaeltnismaessig wird. Erst beide Wege zusammen ergeben ein klausurtaugliches Urteil.
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg A oder Weg B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Mechanismus zu Option A: wird ueber Weg A geloest, weil offener Streit und Bildung tragen, solange kein aktiver Kampf gegen die Ordnung mit realer Chance belegt ist.
+- Mechanismus zu Option B: wird ueber Weg B geloest, weil bei aktivem Kampf gegen Wahlen und Minderheitenrechte mit realer Chance der Entzug missbrauchter Rechte verhaeltnismaessig wird. Erst beide Wege zusammen ergeben ein klausurtaugliches Urteil.
+- Ein-Satz-Kern: Nur das Bundesverfassungsgericht darf ein Parteiverbot verhängen, und es verlangt zusätzlich zur Verfassungswidrigkeit eine reale Durchsetzungschance.
 
 Klausur-Satz: `Nur das Bundesverfassungsgericht darf ein Parteiverbot verhängen, und es verlangt zusätzlich zur Verfassungswidrigkeit eine reale Durchsetzungschance.`
 

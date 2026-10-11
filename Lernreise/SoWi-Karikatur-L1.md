@@ -137,7 +137,11 @@ AUFGABE B：Eine Karikatur zeigt eine Waage, auf deren einer Seite ein voller Ge
 
 HILFE: A stellt zwei gute Ziele gegenueber -> Verfahren (ii) Zielkonflikt. B stellt Frage nach Verteilung -> Verfahren (i) Verteilungskonflikt.【选程序：分蛋糕 -> 分配冲突；两个好目标打架 -> 目标冲突。】
 
-ANTWORT: A erfordert Verfahren (ii): Der Baum steht fuer die oekologische Lebensgrundlage, Saege und Schornstein fuer Wachstums- und Beschaeftigungsinteressen; es handelt sich um einen Zielkonflikt, nicht um Verteilung. Gedeutet wird er ueber die Externalitaet: Der CO2-Ausstoss wird im Preis nicht abgebildet, es liegt Marktversagen vor, und der Karikaturist kritisiert, dass kurzfristiges Wachstum die langfristige Lebensgrundlage verbraucht. B erfordert Verfahren (i): Die Waage symbolisiert die Verteilungsfrage, der volle Geldsack gegen den leeren Teller die ungleiche Verteilung von Einkommen und Vermoegen; die Familie in abgetragener Kleidung verweist auf relative Armut. Gedeutet wird ueber die Armutsgefaehrdungsquote und die Umverteilung; der Karikaturist kritisiert, dass die Verteilung nicht dem Gerechtigkeitsempfinden entspricht.
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg A oder Weg B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Mechanismus zu Option A: Verfahren (ii): Der Baum steht fuer die oekologische Lebensgrundlage, Saege und Schornstein fuer Wachstums- und Beschaeftigungsinteressen; es handelt sich um einen Zielkonflikt, nicht um Verteilung. Gedeutet wird er ueber die Externalitaet: Der CO2-Ausstoss wird im Preis nicht abgebildet, es liegt Marktversagen vor, und der Karikaturist kritisiert, dass kurzfristiges Wachstum die langfristige Lebensgrundlage verbraucht.
+- Mechanismus zu Option B: Verfahren (i): Die Waage symbolisiert die Verteilungsfrage, der volle Geldsack gegen den leeren Teller die ungleiche Verteilung von Einkommen und Vermoegen; die Familie in abgetragener Kleidung verweist auf relative Armut. Gedeutet wird ueber die Armutsgefaehrdungsquote und die Umverteilung; der Karikaturist kritisiert, dass die Verteilung nicht dem Gerechtigkeitsempfinden entspricht.
+- Ein-Satz-Kern: Ein Verteilungskonflikt fragt nach der gerechten Aufteilung, ein Zielkonflikt nach der Prioritaet zwischen zwei erstrebenswerten Guetern.
 
 Klausur-Satz: `Ein Verteilungskonflikt fragt nach der gerechten Aufteilung, ein Zielkonflikt nach der Prioritaet zwischen zwei erstrebenswerten Guetern.`
 

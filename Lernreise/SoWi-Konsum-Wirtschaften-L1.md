@@ -145,7 +145,11 @@ AUFGABE B (AFB II, 8 BE)：Eine Karikatur zeigt eine Ampel, an der ein Verbotssc
 
 HILFE: A fragt nach dem Kaufverhalten selbst -> Verfahren (i). B fragt nach staatlichen Instrumenten und ihrer Eingriffsintensität -> Verfahren (ii).【选程序：材料讲"这个人怎么买"= 消费程序；材料讲"国家怎么管"= 政策程序。】
 
-ANTWORT: A erfordert Verfahren (i): Der Kauf des Statussymbols zeigt Fremdbestimmung, weil die Kaufentscheidung dem sozialen Druck und dem Wunsch nach Anerkennung folgt, nicht einem eigenen Nutzenkalkül. Zugleich wird aus dem Bedürfnis nach Zugehörigkeit erst durch die vorhandene Kaufkraft ein Bedarf, der sich in Nachfrage am Markt umsetzt. B erfordert Verfahren (ii): Das Werbeverbot ist ein hartes, eingriffsintensives Instrument, weil es die Kommunikation der Anbieter staatlich begrenzt; die freiwillige Selbstverpflichtung dagegen ist ein mildes Instrument, das auf Einsicht und Eigenverantwortung setzt. Beide gehören in dasselbe Spektrum, unterscheiden sich aber in der Eingriffstiefe.
+AUFLÖSUNG (nach der Wahl lesen)
+Erst nach der Wahl von Weg A oder Weg B lesen; hier steht der ueberfuehrte Mechanismus vor dem Ein-Satz-Kern:
+- Mechanismus zu Option A: Verfahren (i): Der Kauf des Statussymbols zeigt Fremdbestimmung, weil die Kaufentscheidung dem sozialen Druck und dem Wunsch nach Anerkennung folgt, nicht einem eigenen Nutzenkalkül. Zugleich wird aus dem Bedürfnis nach Zugehörigkeit erst durch die vorhandene Kaufkraft ein Bedarf, der sich in Nachfrage am Markt umsetzt.
+- Mechanismus zu Option B: Verfahren (ii): Das Werbeverbot ist ein hartes, eingriffsintensives Instrument, weil es die Kommunikation der Anbieter staatlich begrenzt; die freiwillige Selbstverpflichtung dagegen ist ein mildes Instrument, das auf Einsicht und Eigenverantwortung setzt. Beide gehören in dasselbe Spektrum, unterscheiden sich aber in der Eingriffstiefe.
+- Ein-Satz-Kern: Ein Werbeverbot ist ein starkes staatliches Instrument, während ein Label das mildere Mittel darstellt.
 
 Klausur-Satz: `Ein Werbeverbot ist ein starkes staatliches Instrument, während ein Label das mildere Mittel darstellt.`
 
