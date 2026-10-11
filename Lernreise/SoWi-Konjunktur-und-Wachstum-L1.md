@@ -160,4 +160,4 @@ REFLEXION:
 Du verstehst nun die makrooekonomische Dynamik des Konjunkturzyklus und beherrschst die klassischen Instrumente der Wirtschaftspolitik. Du kannst Konjunkturdaten im Dreischritt souverän diagnostizieren und geld- sowie finanzpolitische Zielkonflikte auf Abitur-Niveau darlegen.
 
 <!-- reflexion: sowi-konjunktur-und-wachstum -->
-In der naechsten Episode betrachten wir, wer von wirtschaftlichem Wachstum profitiert und wer abgehaengt wird: Wir oeffnen das Kapitel der sozialen Schichtung und Einkommensverteilung mit [SoWi-Soziale-Ungleichheit-Modelle-L1](SoWi-Soziale-Ungleichheit-Modelle-L1.md).
+In der naechsten Episode betrachten wir, wer von wirtschaftlichem Wachstum profitiert und wer abgehaengt wird: Wir oeffnen das Kapitel der sozialen Schichtung und Einkommensverteilung mit [SoWi-Soziale-Ungleichheit-Modelle-Schichten-und-Milieus-L1](SoWi-Soziale-Ungleichheit-Modelle-Schichten-und-Milieus-L1.md).

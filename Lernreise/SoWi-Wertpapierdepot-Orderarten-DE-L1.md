@@ -13,9 +13,9 @@ version: Enterprise-v5
 
 # Lernreise: Wertpapierdepot und Orderarten (L1, Ziel Klausur)
 
-> Kampagne *Virtuelle Stadt-Tycoon — Von der Apfelmarkt-Fehde zum modernen Sozialstaat*: Akt I-II — Vermögensaufbau und Finanzmärkte — Episode 28, Cast: Vermögensberaterin Dr. Elena Weber. Werkzeug dieser Episode: [Werkzeug: orderbuch].
+> Kampagne *Virtuelle Stadt-Tycoon — Von der Apfelmarkt-Fehde zum modernen Sozialstaat*: Akt I-II — Vermögensaufbau und Finanzmärkte — Episode 28, Cast: Vermögensberaterin Dr. Elena Weber. Werkzeug dieser Episode: [Werkzeug: orderbuch-sim].
 
-<!-- Lesson-v3: Schritt 1 bis 8 feste Struktur; Fehlvorstellung zwischen Schritt 6 und 7; [Werkzeug: orderbuch] interaktiv; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
+<!-- Lesson-v3: Schritt 1 bis 8 feste Struktur; Fehlvorstellung zwischen Schritt 6 und 7; [Werkzeug: orderbuch-sim] interaktiv; XP: entdecken 5 / ausprobieren 15 / check 20 / szenario 30 -->
 
 ## Schritt 1 — entdecken: Alarm in Tycoon City: Die schleichende Geldentwertung
 
@@ -69,7 +69,7 @@ Klausur-Satz: `Wertpapiere im Depot gelten als Sondervermögen und bleiben bei e
 
 ## Schritt 4 — ausprobieren: Interaktive Praxis: Xetra-Orderbuch & Auftragsarten im Praxistest
 
-[Werkzeug: orderbuch]
+[Werkzeug: orderbuch-sim]
 
 TARGET: Teste im interaktiven Xetra-Orderbuch die Ausführung von Billigst-/Bestens-Orders, Limit-Orders und Stop-Loss-Orders. Beobachte die Auswirkung des Spreads und die Gefahren von Slippage bei mangelnder Liquidität.
 

@@ -84,7 +84,7 @@ Sinus-Milieu-Raster der bundesdeutschen Gesellschaft:
 **Bezug zum Konzept**: `Marketingstrategien und politische Wahlkaempfe nutzen Sinus-Milieus, um ueber habitusspezifische Codes distinkte Zielgruppen anzusprechen.`
 
 ## Schritt 4 — ausprobieren: Sandbox-Auftrag Schicht- vs. Milieuanalyse
-Kontinuitaet: Vorher SoWi-Konjunktur-und-Wachstum-L1.md | Nachher SoWi-Sozialstaat-Herausforderungen-L1.md. Krise dieser Episode: Gibt es die "Klassengesellschaft" noch oder bestimmt der Lebensstil, wer wir sind? Zielgroessen: Vertikale vs. Horizontale Ungleichheit, Geissler-Haus, Sinus-Milieus, Habitus, Bourdieu
+Kontinuitaet: Vorher SoWi-Konjunktur-und-Wachstum-L1.md | Nachher SoWi-Sozialstaat-Rentenkrise-L1.md. Krise dieser Episode: Gibt es die "Klassengesellschaft" noch oder bestimmt der Lebensstil, wer wir sind? Zielgroessen: Vertikale vs. Horizontale Ungleichheit, Geissler-Haus, Sinus-Milieus, Habitus, Bourdieu
 
 BEISPIEL（正确例题示范，含教具操作与解答）：
 
