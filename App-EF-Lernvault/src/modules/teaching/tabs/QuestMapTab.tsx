@@ -606,7 +606,7 @@ export const QuestMapTab: React.FC<QuestMapTabProps> = ({
                 onClick={onGoToWorkshop}
                 className="flex items-center gap-1 px-3 py-1 border border-[var(--ink)] bg-[var(--paper)] hover:bg-[var(--ink)] hover:text-[var(--paper)] transition-colors text-xs font-mono font-bold cursor-pointer ml-1"
               >
-                <span>{lang === "de" ? "+ Neues Buch zerlegen" : "+ 拆解新书"}</span>
+                <span>{lang === "de" ? "+ Neues Buch zerlegen" : "+ 导入/拆解课纲"}</span>
               </button>
             )}
           </div>

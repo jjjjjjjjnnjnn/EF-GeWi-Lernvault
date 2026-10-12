@@ -222,20 +222,25 @@ describe("BookIngestWorkshopTab & TeachingStudio UI", () => {
     expect(calledPlan.pacingMode).toBe("sprint");
   });
 
-  it("renders TeachingStudio container and navigates across tabs", () => {
+  it("renders TeachingStudio with QuestMap as sole home base and opens ingest drawer", () => {
     render(<TeachingStudio currentFach="SoWi" lang="zh" />);
 
-    expect(screen.getByText(/Teaching Studio/i)).toBeInTheDocument();
-    expect(screen.getByText("书籍拆解与无痛节奏")).toBeInTheDocument();
-
-    // 切换到关卡探索图谱
-    const mapTabBtn = screen.getByRole("button", { name: "关卡探索图谱" });
-    fireEvent.click(mapTabBtn);
+    // 默认唯一直面关卡探索图谱 (Zero Friction Home Base)
     expect(screen.getByRole("heading", { name: /关卡探索图谱/i })).toBeInTheDocument();
+    expect(screen.getByText(/今日聚焦任务/i)).toBeInTheDocument();
+    expect(screen.getByRole("button", { name: /开启今日研习/i })).toBeInTheDocument();
 
-    // 切换到微世界教具总台
-    const laborTabBtn = screen.getByRole("button", { name: "仿真教具总台" });
-    fireEvent.click(laborTabBtn);
-    expect(screen.getByRole("heading", { name: /微世界与仿真教具总台/i })).toBeInTheDocument();
+    // 点击右上角 [+ 导入/拆解课纲]，呼出抽屉工坊
+    const drawerTrigger = screen.getByRole("button", { name: /\+ 导入\/拆解课纲/i });
+    fireEvent.click(drawerTrigger);
+
+    // 抽屉展开
+    expect(screen.getByText("课纲与教材拆解工坊 (配置后台)")).toBeInTheDocument();
+    expect(screen.getByText("书籍与考纲智能拆解工坊")).toBeInTheDocument();
+
+    // 关闭抽屉
+    const closeBtn = screen.getByRole("button", { name: /\[X\] 关闭/i });
+    fireEvent.click(closeBtn);
+    expect(screen.queryByText("课纲与教材拆解工坊 (配置后台)")).not.toBeInTheDocument();
   });
 });
