@@ -251,6 +251,8 @@ export default function App() {
   });
   const [selectedFach, setSelectedFach] = useState<string>("alle");
   const [selectedNoteId, setSelectedNoteId] = useState<string | undefined>(undefined);
+  const [studioTopicId, setStudioTopicId] = useState<string | undefined>(undefined);
+  const [studioNoteId, setStudioNoteId] = useState<string | undefined>(undefined);
   const [activeReiseId, setActiveReiseId] = useState<string | null>(null);
   const [activeLaborSimId, setActiveLaborSimId] = useState<LaborSimId | null>(null);
   const tr = t(lang);
@@ -433,6 +435,22 @@ export default function App() {
     if (targetNoteId) {
       setSelectedNoteId(targetNoteId);
     }
+  };
+
+  const handleNavigateToTab = (
+    targetTab: string,
+    opts?: { fach?: string; query?: string; noteId?: string; topicId?: string }
+  ) => {
+    if (opts?.fach) setSelectedFach(opts.fach);
+    if (opts?.query) setQuery(opts.query);
+    if (opts?.noteId) {
+      setSelectedNoteId(opts.noteId);
+      setStudioNoteId(opts.noteId);
+    }
+    if (opts?.topicId) {
+      setStudioTopicId(opts.topicId);
+    }
+    switchTab(targetTab as Tab);
   };
 
   const finishOnboarding = (r: OnboardingResult) => {
@@ -837,13 +855,7 @@ export default function App() {
               <DashboardCockpit
                 lang={lang}
                 onNavigateToTab={(targetTab, context) => {
-                  if (context?.fach) {
-                    setSelectedFach(context.fach);
-                  }
-                  if (targetTab === "library" && context?.query) {
-                    setQuery(context.query);
-                  }
-                  switchTab(targetTab as Tab);
+                  handleNavigateToTab(targetTab, context);
                 }}
                 onSwitchToLegacy={() => setUseCockpitHome(false)}
               />
@@ -867,10 +879,7 @@ export default function App() {
               currentFach={selectedFach}
               onSubjectChange={(fachId) => setSelectedFach(fachId)}
               onNavigateToTab={(targetTab, opts) => {
-                if (opts?.fach) setSelectedFach(opts.fach);
-                if (opts?.query) setQuery(opts.query);
-                if (opts?.noteId) setSelectedNoteId(opts.noteId);
-                switchTab(targetTab as Tab);
+                handleNavigateToTab(targetTab, opts);
               }}
               lang={lang}
             />
@@ -885,10 +894,7 @@ export default function App() {
               onClearQuery={() => setQuery("")}
               onSubjectChange={setSelectedFach}
               onNavigateToTab={(targetTab, opts) => {
-                if (opts?.fach) setSelectedFach(opts.fach);
-                if (opts?.query) setQuery(opts.query);
-                if (opts?.noteId) setSelectedNoteId(opts.noteId);
-                switchTab(targetTab as Tab);
+                handleNavigateToTab(targetTab, opts);
               }}
               lang={lang}
             />
@@ -966,12 +972,11 @@ export default function App() {
             <TeachingStudio
               currentFach={selectedFach === "alle" ? "SoWi" : selectedFach}
               lang={lang}
+              initialTopicId={studioTopicId}
+              initialNoteId={studioNoteId}
               onSubjectChange={(fachId) => setSelectedFach(fachId)}
               onNavigateToTab={(targetTab, opts) => {
-                if (opts?.fach) setSelectedFach(opts.fach as string);
-                if (opts?.query) setQuery(opts.query as string);
-                if (opts?.noteId) setSelectedNoteId(opts.noteId as string);
-                switchTab(targetTab as Tab);
+                handleNavigateToTab(targetTab, opts as Record<string, string>);
               }}
             />
           )}
@@ -1053,6 +1058,9 @@ export default function App() {
         onOpenNote={(noteId) => {
           switchTab("library");
           setSelectedNoteId(noteId);
+        }}
+        onOpenStudio={(fach, topicId, noteId) => {
+          handleNavigateToTab("studio", { fach, topicId, noteId });
         }}
         onOpenTool={() => {
           switchTab("werkzeuge");

@@ -33,6 +33,7 @@ export interface SkillTreeCanvasProps {
   readonly onSubjectChange?: (fach: SubjectKey) => void;
   readonly onStartCourse?: (reiseId: string) => void;
   readonly onOpenNote?: (noteId: string) => void;
+  readonly onOpenStudio?: (fach?: string, topicId?: string, noteId?: string) => void;
   readonly onOpenTool?: (toolId: string) => void;
   readonly className?: string;
   readonly masteredNodeIds?: Set<string> | readonly string[];
@@ -103,6 +104,7 @@ export function SkillTreeCanvas({
   onSubjectChange,
   onStartCourse,
   onOpenNote,
+  onOpenStudio,
   onOpenTool,
   className = "",
   masteredNodeIds: masteredNodeIdsProp,
@@ -3164,6 +3166,28 @@ export function SkillTreeCanvas({
                     </svg>
                   </button>
                 )}
+
+                <button
+                  type="button"
+                  onClick={() => {
+                    onOpenStudio?.(
+                      displayDrawerNode.fach || (selectedFach === "ALL" ? "SoWi" : selectedFach),
+                      displayDrawerNode.id,
+                      displayDrawerNode.linkedNoteId
+                    );
+                  }}
+                  className="w-full py-1.5 px-3 rounded-[var(--radius)] border border-[var(--ink)] bg-[var(--paper-subtle)] hover:bg-[var(--ink)] text-[var(--ink)] hover:text-[var(--paper)] font-mono text-xs flex items-center justify-between transition-colors cursor-pointer"
+                  data-testid="drawer-action-jump-to-studio"
+                >
+                  <div className="flex items-center gap-1.5">
+                    <svg width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true">
+                      <path d="M2.5 8a5.5 5.5 0 0 1 9.3-3.9L13.5 6M13.5 2v4H9.5" />
+                      <path d="M13.5 8a5.5 5.5 0 0 1-9.3 3.9L2.5 10M2.5 14v-4h4" />
+                    </svg>
+                    <span>{de ? "In Lern-Loop bearbeiten" : "进入互动研习工坊"}</span>
+                  </div>
+                  <span className="text-[10px] font-mono">Loop -&gt;</span>
+                </button>
 
                 {displayDrawerNode.linkedReiseId && (
                   <button

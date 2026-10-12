@@ -10,6 +10,7 @@ export interface SkillTreeModalProps {
   readonly initialFach?: SubjectKey;
   readonly onStartCourse?: (reiseId: string) => void;
   readonly onOpenNote?: (noteId: string) => void;
+  readonly onOpenStudio?: (fach?: string, topicId?: string, noteId?: string) => void;
   readonly onOpenTool?: (toolId: string) => void;
 }
 
@@ -20,6 +21,7 @@ export function SkillTreeModal({
   initialFach = "SoWi",
   onStartCourse,
   onOpenNote,
+  onOpenStudio,
   onOpenTool,
 }: SkillTreeModalProps) {
   const de = lang === "de";
@@ -101,6 +103,10 @@ export function SkillTreeModal({
           onOpenNote={(noteId) => {
             onClose();
             onOpenNote?.(noteId);
+          }}
+          onOpenStudio={(fach, topicId, noteId) => {
+            onClose();
+            onOpenStudio?.(fach, topicId, noteId);
           }}
           onOpenTool={(toolId) => {
             onClose();

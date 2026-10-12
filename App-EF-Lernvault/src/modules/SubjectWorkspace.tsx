@@ -16,8 +16,8 @@ export interface SubjectWorkspaceProps {
   initialSubTab?: WorkspaceSubTab;
   onSubjectChange?: (fach: string) => void;
   onNavigateToTab?: (
-    tab: "library" | "flashcards" | "klausursim" | "quiz" | "labor" | "tutor" | "reise",
-    opts?: { fach?: string; query?: string; noteId?: string }
+    tab: "library" | "flashcards" | "klausursim" | "quiz" | "labor" | "tutor" | "reise" | "studio",
+    opts?: { fach?: string; query?: string; noteId?: string; topicId?: string }
   ) => void;
   lang?: Lang;
 }
@@ -176,6 +176,24 @@ export const SubjectWorkspace: React.FC<SubjectWorkspaceProps> = ({
           {/* 快捷行动条 */}
           <div className="flex flex-wrap items-center gap-2">
             <Button
+              variant="default"
+              size="sm"
+              onClick={() =>
+                onNavigateToTab?.("studio", {
+                  fach: activeFachInfo.id === "alle" ? (activeNote?.fach || "SoWi") : activeFachInfo.id,
+                  topicId: activeNote?.id,
+                  noteId: activeNote?.id,
+                })
+              }
+              className="font-mono text-[11px] h-7 px-2.5 flex items-center gap-1.5"
+            >
+              <svg width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true">
+                <path d="M2.5 8a5.5 5.5 0 0 1 9.3-3.9L13.5 6M13.5 2v4H9.5" />
+                <path d="M13.5 8a5.5 5.5 0 0 1-9.3 3.9L2.5 10M2.5 14v-4h4" />
+              </svg>
+              <span>{de ? "In Lern-Loop bearbeiten" : "进入互动研习工坊"}</span>
+            </Button>
+            <Button
               variant="outline"
               size="sm"
               onClick={() => onNavigateToTab?.("flashcards", { fach: activeFachInfo.id })}
@@ -184,7 +202,7 @@ export const SubjectWorkspace: React.FC<SubjectWorkspaceProps> = ({
               <span>{de ? "Karten drillen (Alt 3)" : "开启词卡背诵 (Alt 3)"}</span>
             </Button>
             <Button
-              variant="default"
+              variant="outline"
               size="sm"
               onClick={() => onNavigateToTab?.("klausursim", { fach: activeFachInfo.id })}
               className="font-mono text-[11px] h-7 px-2.5"
@@ -220,6 +238,13 @@ export const SubjectWorkspace: React.FC<SubjectWorkspaceProps> = ({
               onOpenNote={(noteId) => {
                 setSelectedNoteId(noteId);
                 setSubTab("notes");
+              }}
+              onOpenStudio={(fach, topicId, noteId) => {
+                onNavigateToTab?.("studio", {
+                  fach: fach || activeFachInfo.id,
+                  topicId,
+                  noteId,
+                });
               }}
               onStartCourse={(courseId) => {
                 onNavigateToTab?.("reise", { query: courseId, fach: activeFachInfo.id });
@@ -299,6 +324,24 @@ export const SubjectWorkspace: React.FC<SubjectWorkspaceProps> = ({
                             {note.thema}
                           </div>
                           <div className="flex items-center gap-1 shrink-0">
+                            <button
+                              type="button"
+                              onClick={(e) => {
+                                e.stopPropagation();
+                                onNavigateToTab?.("studio", {
+                                  fach: note.fach,
+                                  topicId: note.id,
+                                  noteId: note.id,
+                                });
+                              }}
+                              title={de ? "In Lern-Loop bearbeiten" : "进入互动研习工坊"}
+                              className="text-[var(--gray)] hover:text-[var(--ink)] p-0.5 rounded hover:bg-[var(--paper-subtle)] cursor-pointer"
+                            >
+                              <svg width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true">
+                                <path d="M2.5 8a5.5 5.5 0 0 1 9.3-3.9L13.5 6M13.5 2v4H9.5" />
+                                <path d="M13.5 8a5.5 5.5 0 0 1-9.3 3.9L2.5 10M2.5 14v-4h4" />
+                              </svg>
+                            </button>
                             {isAllFaecher && (
                               <Badge variant="outline" className="text-[9px] px-1 py-0 font-mono">
                                 {note.fach}
@@ -346,9 +389,45 @@ export const SubjectWorkspace: React.FC<SubjectWorkspaceProps> = ({
               {activeNote ? (
                 <div className="flex-1 min-h-0 overflow-y-auto px-6 py-6 sm:px-10 lg:px-14">
                   <div className="space-y-4 max-w-none">
-                    <h2 className="font-serif text-2xl font-bold tracking-tight text-[var(--ink)]">
-                      {activeNote.thema}
-                    </h2>
+                    <div className="flex flex-wrap items-center justify-between gap-3 border-b border-[var(--line)] pb-4">
+                      <div>
+                        <div className="flex items-center gap-2 mb-1.5">
+                          <Badge variant="outline" className="font-mono text-[10px]">
+                            {activeNote.fach}
+                          </Badge>
+                          {activeNote.klausurrelevant && (
+                            <Badge variant="default" className="font-mono text-[10px]">
+                              Klausurrelevant
+                            </Badge>
+                          )}
+                          <span className="font-mono text-[11px] text-[var(--gray)]">
+                            {activeNote.datum}
+                          </span>
+                        </div>
+                        <h2 className="font-serif text-2xl font-bold tracking-tight text-[var(--ink)]">
+                          {activeNote.thema}
+                        </h2>
+                      </div>
+
+                      <Button
+                        variant="default"
+                        size="sm"
+                        onClick={() =>
+                          onNavigateToTab?.("studio", {
+                            fach: activeNote.fach,
+                            topicId: activeNote.id,
+                            noteId: activeNote.id,
+                          })
+                        }
+                        className="font-mono text-xs h-8 px-3.5 flex items-center gap-2 shadow-none cursor-pointer"
+                      >
+                        <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true">
+                          <path d="M2.5 8a5.5 5.5 0 0 1 9.3-3.9L13.5 6M13.5 2v4H9.5" />
+                          <path d="M13.5 8a5.5 5.5 0 0 1-9.3 3.9L2.5 10M2.5 14v-4h4" />
+                        </svg>
+                        <span>{de ? "In Lern-Loop bearbeiten" : "进入互动研习工坊"}</span>
+                      </Button>
+                    </div>
 
                     <div className="prose max-w-none space-y-3 text-sm leading-relaxed">
                       <Blocks blocks={activeNote.blocks} pureGerman={de} />
