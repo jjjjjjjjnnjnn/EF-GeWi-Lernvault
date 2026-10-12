@@ -1,4 +1,4 @@
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
 import { t, type Lang } from "../i18n";
 import { EnergySkateParkSim } from "../components/pedagogy/EnergySkateParkSim";
 import { PendulumLabSim } from "../components/pedagogy/PendulumLabSim";
@@ -74,11 +74,18 @@ export type { LaborSimId, SimEntry };
 export interface LaborProps {
   lang: Lang;
   onDiscussInTutor?: (prompt: string) => void;
+  initialSimId?: LaborSimId | null;
 }
 
-export function Labor({ lang, onDiscussInTutor }: LaborProps) {
+export function Labor({ lang, onDiscussInTutor, initialSimId }: LaborProps) {
   const tr = t(lang);
-  const [activeSimId, setActiveSimId] = useState<LaborSimId | null>(null);
+  const [activeSimId, setActiveSimId] = useState<LaborSimId | null>(() => initialSimId ?? null);
+
+  useEffect(() => {
+    if (initialSimId) {
+      setActiveSimId(initialSimId);
+    }
+  }, [initialSimId]);
   const [searchQuery, setSearchQuery] = useState("");
   const [fachFilter, setFachFilter] = useState<string>("alle");
   const [kategorieFilter, setKategorieFilter] = useState<string>("alle");

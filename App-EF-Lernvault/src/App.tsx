@@ -27,6 +27,7 @@ import { defaultVaultReisen } from "./reise";
 import { KlausurSim } from "./modules/KlausurSim";
 import Werkzeuge from "./modules/Werkzeuge";
 import Labor from "./modules/Labor";
+import { SIMULATION_REGISTRY, type LaborSimId } from "./modules/laborRegistry";
 import { DesignLab } from "./modules/DesignLab";
 import { DailySprintModal } from "./components/DailySprintModal";
 import { getStudyStreak } from "./engine/dailyMix";
@@ -251,6 +252,7 @@ export default function App() {
   const [selectedFach, setSelectedFach] = useState<string>("alle");
   const [selectedNoteId, setSelectedNoteId] = useState<string | undefined>(undefined);
   const [activeReiseId, setActiveReiseId] = useState<string | null>(null);
+  const [activeLaborSimId, setActiveLaborSimId] = useState<LaborSimId | null>(null);
   const tr = t(lang);
 
   type PrimaryWorkspace = "home" | "lernen" | "wiederholen" | "ueben" | "einstellungen";
@@ -531,6 +533,16 @@ export default function App() {
         run: () => {
           setActiveReiseId(r.id);
           switchTab("reise");
+        },
+      })),
+      ...SIMULATION_REGISTRY.map((s) => ({
+        id: `sim-${s.id}`,
+        group: lang === "de" ? "Experimente & Labore" : "互动实验",
+        label: `${lang === "de" ? s.titleDE : s.titleZH}${lang === "de" ? "" : ` (${s.titleDE})`}`,
+        sub: `${s.fach} · ${lang === "de" ? s.themenDE : s.themenZH} · ${s.tags.join(" / ")}`,
+        run: () => {
+          setActiveLaborSimId(s.id);
+          switchTab("labor");
         },
       })),
       {
@@ -947,6 +959,7 @@ export default function App() {
             <Labor
               lang={lang}
               onDiscussInTutor={jumpToTutor}
+              initialSimId={activeLaborSimId}
             />
           )}
           {tab === "studio" && (
