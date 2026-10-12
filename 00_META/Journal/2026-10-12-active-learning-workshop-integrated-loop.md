@@ -36,7 +36,13 @@ tags: [EF, Meta, App]
    - 严格消除所有 emoji 与违规字符，采用纯黑白纸墨对比；
    - SVG 悬停放大显式绑定几何中心（`transformOrigin` 与 `transformBox: "view-box"`）。
 
+5. **信息架构去套娃大瘦身 (IA 解耦与极致收敛)**：
+   - 彻底废除 7 层套娃 Header 与冗余学科下拉菜单，将【关卡探索图谱 (QuestMapTab)】扶正为唯一日常主视图（零心智阻尼，一眼看到 Streak/XP 与【今日聚焦任务】卡片）；
+   - 点击【开启今日研习 ->】或河流任意关卡节点时，全屏拉起双栏交互微课播放器 (`InteractiveLessonRunner`)，彻底屏蔽侧边栏与顶栏干扰，专注于读题与做题推演；
+   - 将【书籍拆解与排程】降级为模态抽屉，点击右上角 `[+ 导入/拆解课纲]` 按需呼出，用完即收；
+   - 将仿真教具总台归位到侧边栏实验室，不平铺占用日常学习主视觉。
+
 ## 门禁验证结果
 - `python scripts/vault-check.py`：**PASS**
-- `npx vitest run`：**96 个测试套件，763 项测试 100% 全部通过**
+- `npx vitest run src/modules/teaching/`：**12 套件，138 项测试 100% 全部通过**
 - `npm run build` (`tsc -b && vite build`)：**零错误通过**
